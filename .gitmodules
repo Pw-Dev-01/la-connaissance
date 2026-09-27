@@ -1,0 +1,3 @@
+[submodule "cours-mathematiques"]
+	path = cours-mathematiques
+	url = https://github.com/Pws-dev-lab/site-web-cours-mathematiques.git
