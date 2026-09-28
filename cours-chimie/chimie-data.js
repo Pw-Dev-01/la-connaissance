@@ -8,6 +8,7 @@ window.courseCatalog = [
         id: 'modele-atomique',
         title: 'Atome, cortège électronique et isotopes',
         field: 'Structure · bases',
+        page: 'structure-matiere.html',
         summary: 'Constitution du noyau, cortège électronique, isotopes et nombre de masse.',
         lesson: {
           sections: [
@@ -173,6 +174,7 @@ window.courseCatalog = [
         id: 'bilan-matiere-avancement',
         title: 'Tableau d’avancement et réactif limitant',
         field: 'Réactions · bases',
+        page: 'index.html',
         summary: 'Équilibrage de réaction, avancement ξ, état final et réactif en défaut.',
         lesson: {
           sections: [
@@ -256,6 +258,7 @@ window.courseCatalog = [
         id: 'acide-base-ph',
         title: 'Réactions acido-basiques et calcul de pH',
         field: 'Solutions · bases',
+        page: 'acides-bases.html',
         summary: 'Définition de Brønsted, couples acide/base, produit ionique de l’eau et échelle de pH.',
         lesson: {
           sections: [

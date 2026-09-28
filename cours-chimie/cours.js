@@ -4,6 +4,11 @@ const chapter = branch?.chapters.find((item) => item.id === chapterId);
 const lessonTitle = document.querySelector('#lesson-title');
 const lessonContainer = document.querySelector('#chapter-lesson');
 
+// Les chapitres disposant d'une page de cours complète y renvoient directement.
+if (chapter?.page) {
+  window.location.replace(chapter.page);
+}
+
 const addText = (parent, tag, className, text) => {
   const element = document.createElement(tag);
   if (className) element.className = className;

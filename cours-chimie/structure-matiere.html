@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours de chimie sur la structure de l'atome : noyau, cortège électronique, isotopes, configuration électronique et tableau périodique.">
+    <title>Structure de l'atome | Cours de chimie</title>
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au premier cours de chimie">
+        <span class="wordmark-mark" aria-hidden="true">⇌</span>
+        <span>LE COURS DE CHIMIE</span>
+      </a>
+      <span class="edition">LYCÉE · SPÉCIALITÉ PHYSIQUE-CHIMIE</span>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout" id="debut">
+      <aside class="course-sidebar" aria-label="Navigation des cours">
+        <p class="sidebar-label">LES COURS</p>
+        <a class="course-link" href="programmes.html"><span class="course-order">∞</span><span>Tous les programmes</span></a>
+        <nav class="course-list" aria-label="Cours de chimie">
+          <a class="course-link" href="index.html"><span class="course-order">01</span><span>Réaction & avancement</span></a>
+          <a class="course-link" href="acides-bases.html"><span class="course-order">02</span><span>Acides, bases & pH</span></a>
+          <a class="course-link is-current" href="structure-matiere.html" aria-current="page"><span class="course-order">03</span><span>Structure de l'atome</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sommaire du cours sur la structure de l'atome">
+          <a href="#noyau">01 <span>Le noyau</span></a>
+          <a href="#cortege">02 <span>Le cortège électronique</span></a>
+          <a href="#configuration">03 <span>Configuration électronique</span></a>
+          <a href="#isotopes">04 <span>Isotopes et masse molaire</span></a>
+          <a href="#periodique">05 <span>Le tableau périodique</span></a>
+          <a href="#exercices">06 <span>S’entraîner</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">Z</span>
+          <p>Le numéro atomique Z fixe l’élément ; le nombre de masse A précise l’isotope et donc la masse du noyau.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> STRUCTURE DE LA MATIÈRE · CHAPITRE 03</p>
+          <h1>Comprendre<br><span>la structure de l’atome</span></h1>
+          <p class="course-intro">Toute la chimie repose sur un objet unique : l’atome. Comprendre sa composition, la répartition de ses électrons et sa place dans le tableau périodique permet de prévoir les ions qu'il forme et les liaisons qu'il engage.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>LECTURE · 11 MIN</span><span>ATOME · IONS · PÉRIODICITÉ</span></div>
+        </header>
+        <section class="lesson-section" id="noyau" aria-labelledby="noyau-title">
+          <p class="section-index">01 / L’ÉCHELLE NUCLÉAIRE</p>
+          <h2 id="noyau-title">Le noyau et ses nucléons</h2>
+          <p>L’atome est électriquement neutre et essentiellement constitué de vide. Sa masse est concentrée dans un <strong>noyau</strong> de rayon voisin de 10<sup>−15</sup> m, environ 100 000 fois plus petit que l’atome lui-même (10<sup>−10</sup> m).</p>
+          <p>Le noyau contient deux types de <strong>nucléons</strong> :</p>
+          <ul>
+            <li>Les <strong>protons</strong>, de charge <span class="math">+e</span> et de masse <span class="math">m<sub>p</sub> ≈ 1,67 × 10<sup>−27</sup> kg</span>.</li>
+            <li>Les <strong>neutrons</strong>, électriquement neutres et de masse très voisine de celle du proton.</li>
+          </ul>
+          <p>Un noyau est entièrement décrit par deux nombres : le <strong>numéro atomique Z</strong> (nombre de protons, qui fixe l’élément) et le <strong>nombre de masse A</strong> (nombre total de nucléons). L’écriture symbolique complète s’écrit :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ÉCRITURE SYMBOLIQUE D’UN NOYAU</span>
+            <span class="math-display"><sup>A</sup><sub>Z</sub>X &nbsp; avec &nbsp; A = Z + N</span>
+          </div>
+          <p>où <em>X</em> est le symbole de l’élément et <em>N</em> le nombre de neutrons. La charge du noyau est <span class="math">+Z·e</span>, avec <span class="math">e = 1,60 × 10<sup>−19</sup> C</span>.</p>
+          <div class="formula-pair">
+            <div class="formula-block">
+              <span class="formula-label">CHARGE DU NOYAU</span>
+              <span class="math-display">Q = +Z · e</span>
+            </div>
+            <div class="formula-block">
+              <span class="formula-label">NEUTRES DANS LE NOYAU</span>
+              <span class="math-display">N = A − Z</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="cortege" aria-labelledby="cortege-title">
+          <p class="section-index">02 / LES ÉLECTRONS</p>
+          <h2 id="cortege-title">Le cortège électronique et les ions</h2>
+          <p>Autour du noyau gravitent <strong>Z électrons</strong>, de charge <span class="math">−e</span> et de masse négligeable devant celle des nucléons : elle représente environ 1/2000 de la masse d’un proton. Puisque l’atome est neutre, le nombre d’électrons est égal au nombre de protons.</p>
+          <p>Les électrons ne sont pas répartis au hasard : ils occupent des <strong>niveaux d’énergie</strong> quantifiés, numérotés par le nombre quantique principal <em>n</em> (1, 2, 3…), qui sont subdivisés en sous-couches <em>s</em>, <em>p</em>, <em>d</em> et <em>f</em>.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Capacité maximale des sous-couches les plus courantes</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Sous-couche</th>
+                  <th scope="col">s</th>
+                  <th scope="col">p</th>
+                  <th scope="col">d</th>
+                  <th scope="col">f</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Électrons maximaux</th>
+                  <td>2</td>
+                  <td>6</td>
+                  <td>10</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cases quantiques</th>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Lorsqu’un atome perd ou gagne des électrons, il devient un <strong>ion monoatomique</strong> : un <em>cation</em> s’il perd des électrons (charge positive), un <em>anion</em> s’il en gagne (charge négative). Le noyau n’est jamais modifié lors de la formation d’un ion.</p>
+          <div class="callout"><strong>Repère utile</strong><p>Les atomes des colonnes 1, 2 et 13 perdent naturellement des électrons pour ressembler au gaz noble le plus proche ; les colonnes 15, 16 et 17 en gagnent. C’est le point de départ de toute la réactivité chimique.</p></div>
+        </section>
+
+        <section class="lesson-section" id="configuration" aria-labelledby="configuration-title">
+          <p class="section-index">03 / REMPLIR LES COUCHES</p>
+          <h2 id="configuration-title">La configuration électronique</h2>
+          <p>On remplit les sous-couches dans l’ordre des <strong>énergies croissantes</strong>. Cet ordre suit la <em>règle de Klechkowski</em> : on classe les sous-couches par valeur croissante de <span class="math">n + ℓ</span>, puis par valeur croissante de <em>n</em> en cas d’égalité.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ORDRE DE REMPLISSAGE</span>
+            <span class="math-display">1s → 2s → 2p → 3s → 3p → 4s → 3d → 4p → 5s → 4d → 5p…</span>
+          </div>
+          <p>Deux règles complémentaires précisent le remplissage d’une même sous-couche :</p>
+          <div class="case-list">
+            <div class="case-row">
+              <span class="case-symbol">Pauli</span>
+              <p>Deux électrons d’un même atome ne peuvent pas avoir leurs quatre nombres quantiques identiques. Une case quantique contient donc <strong>au maximum 2 électrons</strong>, de spins opposés.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-symbol negative">Hund</span>
+              <p>Pour une sous-couche donnée, les électrons occupent d’abord des cases quantiques différentes avec des spins parallèles : l’atome cherche la configuration la plus stable.</p>
+            </div>
+          </div>
+          <h3>Exemple : le phosphore</h3>
+          <p>Le phosphore a pour numéro atomique <span class="math">Z = 15</span>, soit 15 électrons à placer. On remplit 1s² (2), 2s² (4), 2p⁶ (10), 3s² (12) puis 3p³ (15) :</p>
+          <div class="formula-block">
+            <span class="formula-label">CONFIGURATION DU PHOSPHORE</span>
+            <span class="math-display">P : 1s² 2s² 2p⁶ 3s² 3p³ &nbsp; ou &nbsp; [Ne] 3s² 3p³</span>
+          </div>
+          <p>Sa couche de valence est la couche 3, et elle contient <span class="math">2 + 3 = 5</span> <strong>électrons de valence</strong>.</p>
+        </section>
+
+        <section class="lesson-section" id="isotopes" aria-labelledby="isotopes-title">
+          <p class="section-index">04 / MÊME ÉLÉMENT, MASSES DIFFÉRENTES</p>
+          <h2 id="isotopes-title">Isotopes et masse molaire atomique</h2>
+          <p>Deux <strong>isotopes</strong> possèdent le même numéro atomique <em>Z</em> (donc le même élément et les mêmes propriétés chimiques) mais un nombre de masse <em>A</em> différent : seul le nombre de neutrons change.</p>
+          <p>Exemples classiques : l’hydrogène possède trois isotopes (¹₁H, deutérium ²₁H et tritium ³₁H) ; le carbone existe sous les formes ¹²₆C, ¹³₆C et ¹⁴₆C.</p>
+          <p>La <strong>masse molaire atomique</strong> d’un élément est la moyenne des masses molaires de ses isotopes, pondérée par leur abondance naturelle :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">MASSE MOLAIRE MOYENNE</span>
+            <span class="math-display">M = Σ (x<sub>i</sub> × M<sub>i</sub>) &nbsp; avec Σ x<sub>i</sub> = 1</span>
+          </div>
+          <p>La <strong>masse molaire moléculaire</strong> s’obtient en additionnant les masses molaires atomiques de tous les atomes de la molécule. Par exemple <span class="math">M(H₂O) = 2 × 1,0 + 16,0 = 18,0 g·mol⁻¹</span>.</p>
+          <h3>Exemple calculé détaillé</h3>
+          <p>Le chlore naturel contient 75 % de ³⁵Cl (M = 35,0 g·mol⁻¹) et 25 % de ³⁷Cl (M = 37,0 g·mol⁻¹). Calculons sa masse molaire moyenne :</p>
+          <div class="worked-result">
+            <span class="math">M(Cl) = 0,75 × 35,0 + 0,25 × 37,0 = 26,25 + 9,25 = 35,5 g·mol⁻¹</span>
+            <strong>La masse molaire du chlore naturel vaut 35,5 g·mol⁻¹.</strong>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="periodique" aria-labelledby="periodique-title">
+          <p class="section-index">05 / LA CLASSIFICATION</p>
+          <h2 id="periodique-title">Le tableau périodique et la périodicité</h2>
+          <p>Le tableau périodique classe les éléments par <strong>numéro atomique Z croissant</strong>. Cette disposition n’est pas arbitraire : elle fait apparaître une périodicité des propriétés chimiques, dictée par la configuration électronique de valence.</p>
+          <ul>
+            <li>Les <strong>lignes</strong> sont les <em>périodes</em>. Elles correspondent au remplissage successif d’une même couche électronique ; le numéro de période est le nombre quantique principal <em>n</em> de la couche de valence.</li>
+            <li>Les <strong>colonnes</strong> sont les <em>familles</em>. Les éléments d’une même colonne partagent le même nombre d’électrons de valence, donc des propriétés chimiques très semblables.</li>
+          </ul>
+          <div class="case-list">
+            <div class="case-row">
+              <span class="case-symbol">Colonne 1</span>
+              <p><strong>Alcalins</strong> : un seul électron de valence, ils perdent facilement un électron pour donner des cations <span class="math">M⁺</span>.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-symbol negative">Colonne 17</span>
+              <p><strong>Halogènes</strong> : sept électrons de valence, ils gagnent volontiers un électron pour former des anions <span class="math">X⁻</span>.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-symbol zero">Colonne 18</span>
+              <p><strong>Gaz nobles</strong> : couche de valence saturée, ils sont chimiquement très stables et forment peu de composés.</p>
+            </div>
+          </div>
+          <p>L’<strong>électronégativité</strong> mesure la tendance d’un atome à attirer le doublet d’électrons d’une liaison covalente. Elle augmente globalement de la gauche vers la droite d’une période et du bas vers le haut d’une colonne : le fluor est l’élément le plus électronégatif du tableau.</p>
+          <div class="formula-pair">
+            <div class="formula-block">
+              <span class="formula-label">TAILLE DE L’ATOME</span>
+              <span class="math-display">décroît → sur une période ; croît ↓ sur une colonne</span>
+            </div>
+            <div class="formula-block">
+              <span class="formula-label">ÉLECTRONÉGATIVITÉ</span>
+              <span class="math-display">croît → sur une période ; croît ↑ sur une colonne</span>
+            </div>
+          </div>
+          <p>Les deux grandeurs évoluent en sens opposé : plus l’atome est petit, plus ses électrons de valence sont proches du noyau et plus il attire fortement les électrons d’une liaison.</p>
+        </section>
+
+        <section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">06 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">À toi de jouer</h2>
+          <p>Essaie chaque question sur une feuille avant d’ouvrir la correction détaillée.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Le noyau d’un atome de fer est noté ⁵⁶₂₆Fe. Donner sa composition complète et la charge de son noyau.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer">
+              <p><span class="math">Z = 26</span> donc le noyau contient <strong>26 protons</strong>. <span class="math">N = A − Z = 56 − 26 = 30</span> donc <strong>30 neutrons</strong>. L’atome étant neutre, il possède aussi <strong>26 électrons</strong>.<br>
+              Charge du noyau : <span class="math">Q = +Z · e = +26 × 1,60 × 10<sup>−19</sup> = +4,16 × 10<sup>−18</sup> C</span>.<br>
+              <strong>Réponse : 26 protons, 30 neutrons et 26 électrons.</strong></p>
+            </div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Écrire la configuration électronique du magnésium Mg (Z = 12), puis celle de l’ion Mg²⁺.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer">
+              <p>Pour Z = 12, on remplit 1s², 2s², 2p⁶ puis 3s² : <span class="math">Mg : 1s² 2s² 2p⁶ 3s²</span>.<br>
+              L’ion Mg²⁺ a perdu les deux électrons de valence les plus externes, ceux de la sous-couche 3s : <span class="math">Mg²⁺ : 1s² 2s² 2p⁶</span>.<br>
+              <strong>Remarque :</strong> sa configuration est exactement celle du néon, un gaz noble.</p>
+            </div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Le cuivre naturel contient 69,2 % de ⁶³Cu (M = 63,0 g·mol⁻¹) et 30,8 % de ⁶⁵Cu (M = 65,0 g·mol⁻¹). Calculer sa masse molaire moyenne.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer">
+              <p>On applique la moyenne pondérée : <span class="math">M = 0,692 × 63,0 + 0,308 × 65,0</span>.<br>
+              <span class="math">M = 43,60 + 20,02 = 63,62 g·mol⁻¹</span>.<br>
+              <strong>Réponse : M(Cu) ≈ 63,6 g·mol⁻¹.</strong></p>
+            </div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Classer le sodium Na, le chlore Cl et le fluor F par électronégativité croissante, en justifiant par la position dans le tableau périodique.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer">
+              <p>Na appartient à la colonne 1 (période 3) : c’est un métal alcalin, très peu électronégatif. Cl et F sont des halogènes ; F est situé au-dessus de Cl dans la colonne 17, il est donc plus électronégatif.<br>
+              <strong>Ordre croissant : Na &lt; Cl &lt; F.</strong> Le fluor est l’élément le plus électronégatif du tableau périodique.</p>
+            </div>
+          </details>
+        </section>
+
+
+        <footer class="course-footer"><span>FIN DU CHAPITRE</span><a href="#debut">Revenir au début ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

@@ -29,10 +29,10 @@ window.courseCatalog.forEach((branch) => {
   branch.chapters.forEach((chapter, index) => {
     const link = document.createElement('a');
     link.className = 'chapter-link';
-    link.href = `cours.html?id=${encodeURIComponent(chapter.id)}`;
+    link.href = chapter.page || `cours.html?id=${encodeURIComponent(chapter.id)}`;
     link.innerHTML = `<span class="chapter-number">${String(index + 1).padStart(2, '0')}</span><span class="chapter-title"></span><span class="chapter-field"></span><span class="chapter-arrow" aria-hidden="true">↗</span>`;
     link.querySelector('.chapter-title').textContent = chapter.title;
-    link.querySelector('.chapter-field').textContent = chapter.field;
+    link.querySelector('.chapter-field').textContent = chapter.page ? `${chapter.field} · COURS COMPLET` : chapter.field;
     chapterList.append(link);
   });
 

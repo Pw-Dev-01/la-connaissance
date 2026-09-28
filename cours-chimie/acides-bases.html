@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours de chimie sur les acides et les bases : couples acido-basiques, pH, constante d'acidité, acides forts et faibles, titrages colorimétriques.">
+    <title>Acides, bases et pH | Cours de chimie</title>
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au premier cours de chimie">
+        <span class="wordmark-mark" aria-hidden="true">⇌</span>
+        <span>LE COURS DE CHIMIE</span>
+      </a>
+      <span class="edition">LYCÉE · SPÉCIALITÉ PHYSIQUE-CHIMIE</span>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout" id="debut">
+      <aside class="course-sidebar" aria-label="Navigation des cours">
+        <p class="sidebar-label">LES COURS</p>
+        <a class="course-link" href="programmes.html"><span class="course-order">∞</span><span>Tous les programmes</span></a>
+        <nav class="course-list" aria-label="Cours de chimie">
+          <a class="course-link" href="index.html"><span class="course-order">01</span><span>Réaction & avancement</span></a>
+          <a class="course-link is-current" href="acides-bases.html" aria-current="page"><span class="course-order">02</span><span>Acides, bases & pH</span></a>
+          <a class="course-link" href="structure-matiere.html"><span class="course-order">03</span><span>Structure de l'atome</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sommaire du cours sur les acides et les bases">
+          <a href="#bronsted">01 <span>Acides et bases</span></a>
+          <a href="#ph">02 <span>Le pH</span></a>
+          <a href="#force">03 <span>Acides forts et faibles</span></a>
+          <a href="#titrage">04 <span>Le titrage</span></a>
+          <a href="#methode">05 <span>La méthode</span></a>
+          <a href="#exercices">06 <span>S’entraîner</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">pH</span>
+          <p>Le pH mesure la concentration en ions oxonium : chaque unité perdue multiplie cette concentration par 10.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ÉQUILIBRES EN SOLUTION · CHAPITRE 02</p>
+          <h1>Comprendre<br><span>les acides, les bases et le pH</span></h1>
+          <p class="course-intro">Un acide cède un proton, une base le capte : tout échange acido-basique se décrit par un transfert de H⁺. Ce chapitre relie cette définition au pH mesurable et à la méthode du titrage.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>LECTURE · 13 MIN</span><span>SOLUTIONS AQUEUSES</span></div>
+        </header>
+
+        <section class="lesson-section" id="bronsted" aria-labelledby="bronsted-title">
+          <p class="section-index">01 / LE TRANSFERT DE PROTON</p>
+          <h2 id="bronsted-title">Acides et bases selon Brønsted</h2>
+          <p>La définition de Brønsted s’appuie sur une seule idée : le transfert d’un <strong>proton</strong> H⁺, c’est-à-dire d’un atome d’hydrogène ayant perdu son électron.</p>
+          <ul>
+            <li>Un <strong>acide</strong> est une espèce chimique capable de <em>céder</em> un proton H⁺.</li>
+            <li>Une <strong>base</strong> est une espèce chimique capable de <em>capter</em> un proton H⁺.</li>
+          </ul>
+          <p>Un acide et une base qui se transforment l’un en l’autre par échange d’un proton forment un <strong>couple acide/base</strong>, noté <span class="math">AH / A⁻</span>. La réaction acido-basique est un transfert de proton entre les deux couples mis en jeu :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">RÉACTION ACIDO-BASIQUE GÉNÉRALE</span>
+            <span class="math-display">AH₁ + A₂⁻ ⟶ A₁⁻ + AH₂</span>
+          </div>
+          <p>Dans l’eau, l’acide cède son proton au solvant qui se comporte alors comme une base. Le proton n’existe jamais libre en solution : il est toujours hydraté sous la forme de l’<strong>ion oxonium</strong> H₃O⁺. L’eau appartient donc au couple <span class="math">H₃O⁺ / H₂O</span> et peut jouer le rôle d’acide comme celui de base : c’est une espèce <em>amphotère</em>.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Quelques couples acide/base à connaître</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Acide</th>
+                  <th scope="col">Base</th>
+                  <th scope="col">Milieu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">H₃O⁺</th>
+                  <td>H₂O</td>
+                  <td>Eau</td>
+                </tr>
+                <tr>
+                  <th scope="row">CH₃COOH</th>
+                  <td>CH₃COO⁻</td>
+                  <td>Acide éthanoïque</td>
+                </tr>
+                <tr>
+                  <th scope="row">NH₄⁺</th>
+                  <td>NH₃</td>
+                  <td>Ammoniac</td>
+                </tr>
+                <tr>
+                  <th scope="row">H₂O</th>
+                  <td>HO⁻</td>
+                  <td>Eau / hydroxyde</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="ph" aria-labelledby="ph-title">
+          <p class="section-index">02 / MESURER L’ACIDITÉ</p>
+          <h2 id="ph-title">Le pH et la concentration en ions oxonium</h2>
+          <p>Le <strong>pH</strong> est une grandeur sans unité, comprise en général entre 0 et 14 dans l’eau, qui quantifie l’acidité d’une solution. Il est défini à partir de la concentration en ions oxonium :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">DÉFINITION DU pH</span>
+            <span class="math-display">pH = − log [H₃O⁺] &nbsp; ⟺ &nbsp; [H₃O⁺] = 10<sup>−pH</sup></span>
+          </div>
+          <p>La concentration <span class="math">[H₃O⁺]</span> s’exprime en mol·L⁻¹. Du fait du logarithme décimal, chaque unité de pH correspond à un facteur <strong>10</strong> sur la concentration :</p>
+          <div class="case-list">
+            <div class="case-row">
+              <span class="case-symbol">pH = 3</span>
+              <p><span class="math">[H₃O⁺] = 10<sup>−3</sup> mol·L⁻¹</span> : la solution est <strong>acide</strong>.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-symbol zero">pH = 7</span>
+              <p><span class="math">[H₃O⁺] = 10<sup>−7</sup> mol·L⁻¹</span> : la solution est <strong>neutre</strong> à 25 °C.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-symbol negative">pH = 11</span>
+              <p><span class="math">[H₃O⁺] = 10<sup>−11</sup> mol·L⁻¹</span> : la solution est <strong>basique</strong>.</p>
+            </div>
+          </div>
+          <p>Le pH dépend de la température : la neutralité à 25 °C correspond à pH = 7, mais à 37 °C elle se situe autour de 6,8. Retiens aussi que multiplier la concentration par 10 <em>diminue</em> le pH d’une unité, et non l’inverse.</p>
+        </section>
+
+        <section class="lesson-section" id="force" aria-labelledby="force-title">
+          <p class="section-index">03 / FORCE D’UN ACIDE</p>
+          <h2 id="force-title">Acides forts et acides faibles</h2>
+          <p>Un acide est dit <strong>fort</strong> lorsque sa réaction avec l’eau est <em>totale</em> : toutes ses molécules cèdent leur proton. Un acide est dit <strong>faible</strong> lorsque la réaction est <em>limitée</em> et conduit à un équilibre chimique.</p>
+          <div class="case-list">
+            <div class="case-row">
+              <span class="case-symbol">Acide fort</span>
+              <p>La réaction est totale : <span class="math">AH + H₂O → A⁻ + H₃O⁺</span>. Comme chaque molécule libère un proton, on a directement <span class="math">[H₃O⁺] = C</span> et donc <strong>pH = −log C</strong>.</p>
+            </div>
+            <div class="case-row">
+              <span class="case-symbol zero">Acide faible</span>
+              <p>La réaction est limitée : <span class="math">AH + H₂O ⇌ A⁻ + H₃O⁺</span>. Seule une fraction des molécules est ionisée, donc <span class="math">[H₃O⁺] &lt; C</span> et le pH est <strong>plus grand</strong> que −log C.</p>
+            </div>
+          </div>
+          <p>L’équilibre d’un acide faible est caractérisé par sa <strong>constante d’acidité K<sub>A</sub></strong>, qui ne dépend que de la température :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CONSTANTE D’ACIDITÉ ET pK<sub>A</sub></span>
+            <span class="math-display">K<sub>A</sub> = [A⁻][H₃O⁺] / [AH] &nbsp; | &nbsp; pK<sub>A</sub> = − log K<sub>A</sub></span>
+          </div>
+          <p>Plus l’acide est fort, plus <span class="math">K<sub>A</sub></span> est grande et plus <span class="math">pK<sub>A</sub></span> est petit. Le diagramme de prédominance permet de lire directement l’espèce majoritaire :</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Diagramme de prédominance du couple AH / A⁻</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Zone</th>
+                  <th scope="col">pH</th>
+                  <th scope="col">Espèce majoritaire</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Acide</th>
+                  <td>pH &lt; pK<sub>A</sub></td>
+                  <td>AH</td>
+                </tr>
+                <tr>
+                  <th scope="row">Équimolaire</th>
+                  <td>pH = pK<sub>A</sub></td>
+                  <td>[AH] = [A⁻]</td>
+                </tr>
+                <tr>
+                  <th scope="row">Basique</th>
+                  <td>pH &gt; pK<sub>A</sub></td>
+                  <td>A⁻</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Les <strong>bases</strong> suivent exactement le même raisonnement : une base forte (comme HO⁻) réagit totalement avec l’eau, tandis qu’une base faible (comme NH₃) établit un équilibre avec son acide conjugué.</p>
+        </section>
+
+        <section class="lesson-section" id="titrage" aria-labelledby="titrage-title">
+          <p class="section-index">04 / DOSER UNE SOLUTION</p>
+          <h2 id="titrage-title">Le titrage acido-basique</h2>
+          <p>Un <strong>titrage</strong> consiste à déterminer la concentration inconnue d’une espèce en la faisant réagir <em>totalement</em> avec une solution de concentration connue, appelée <em>solution titrante</em>, versée à la burette.</p>
+          <p>À l’<strong>équivalence</strong>, les réactifs ont été introduits dans les proportions stœchiométriques de l’équation de titrage : il n’en reste aucun des deux. Pour un titrage d’un acide AH par une solution titrante de base forte, la relation à l’équivalence s’écrit :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">RELATION À L’ÉQUIVALENCE</span>
+            <span class="math-display">C<sub>A</sub> · V<sub>A</sub> = C<sub>B</sub> · V<sub>E</sub></span>
+          </div>
+          <p>Deux méthodes permettent de repérer l’équivalence :</p>
+          <ul>
+            <li><strong>Le changement de couleur d’un indicateur coloré</strong>, dont la zone de virage encadre le pH à l’équivalence.</li>
+            <li><strong>Le suivi pH-métrique</strong>, où l’équivalence correspond au point d’inflexion de la courbe pH = f(V) et au maximum de sa dérivée.</li>
+          </ul>
+          <div class="callout"><strong>Cas particulier d’un acide faible</strong><p>À la demi-équivalence, la moitié de l’acide faible a été neutralisée : on a alors <span class="math">[AH] = [A⁻]</span>, donc <span class="math">pH = pK<sub>A</sub></span>. C’est la méthode la plus simple pour déterminer expérimentalement un pK<sub>A</sub>.</p></div>
+        </section>
+
+        <section class="lesson-section" id="methode" aria-labelledby="methode-title">
+          <p class="section-index">05 / LA MÉTHODE</p>
+          <h2 id="methode-title">Calculer un pH en 4 étapes</h2>
+          <ol class="method-list">
+            <li><strong>Identifier la nature de l’espèce.</strong><span>Acide fort, acide faible, base forte ou base faible ? Cette étape fixe la formule à utiliser.</span></li>
+            <li><strong>Choisir la relation adaptée.</strong><span>Acide fort : <span class="math">pH = −log C</span>. Base forte : <span class="math">pH = 14 + log C</span>. Acide faible : résoudre l’équilibre avec <span class="math">K<sub>A</sub></span>.</span></li>
+            <li><strong>Vérifier les hypothèses.</strong><span>Pour un acide faible peu dissocié, on admet <span class="math">[AH] ≈ C</span>, ce qui donne <span class="math">[H₃O⁺] = √(K<sub>A</sub> · C)</span>.</span></li>
+            <li><strong>Contrôler le résultat.</strong><span>Un acide faible doit donner un pH <em>plus grand</em> que celui d’un acide fort de même concentration. Sinon, l’hypothèse est fausse.</span></li>
+          </ol>
+          <h3>Les erreurs fréquentes à éviter</h3>
+          <ul class="mistake-list">
+            <li><strong>Appliquer pH = −log C à un acide faible :</strong> cette formule n’est valable que pour un acide <em>fort</em>, totalement dissocié.</li>
+            <li><strong>Oublier les unités de concentration :</strong> une concentration en mmol·L⁻¹ doit être convertie en mol·L⁻¹ avant le calcul du logarithme.</li>
+            <li><strong>Confondre pK<sub>A</sub> et pH :</strong> le pK<sub>A</sub> caractérise le couple et ne dépend que de la température ; le pH dépend de la solution.</li>
+            <li><strong>Inverser la relation à l’équivalence :</strong> la formule <span class="math">C<sub>A</sub>V<sub>A</sub> = C<sub>B</sub>V<sub>E</sub></span> n’est valable que si les coefficients stœchiométriques valent 1.</li>
+            <li><strong>Négliger la température :</strong> <span class="math">K<sub>A</sub></span> et le pH de neutralité varient avec la température.</li>
+          </ul>
+        </section>
+
+        <section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">06 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">À toi de jouer</h2>
+          <p>Résous chaque exercice avant d’ouvrir la correction détaillée.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Calculer le pH d’une solution d’acide chlorhydrique HCl de concentration <span class="math">C = 2,0 × 10<sup>−3</sup> mol·L⁻¹</span>.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer">
+              <p>HCl est un acide fort : sa réaction avec l’eau est totale, donc <span class="math">[H₃O⁺] = C = 2,0 × 10<sup>−3</sup> mol·L⁻¹</span>.<br>
+              <span class="math">pH = −log(2,0 × 10<sup>−3</sup>) = −(log 2,0 + log 10<sup>−3</sup>) = −(0,30 − 3) = 2,7</span>.<br>
+              <strong>Réponse : pH ≈ 2,7.</strong></p>
+            </div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Dans un titrage, on verse 12,0 mL d’une solution de soude NaOH à <span class="math">1,0 × 10<sup>−1</sup> mol·L⁻¹</span> pour atteindre l’équivalence avec 20,0 mL d’acide chlorhydrique. Quelle est la concentration de l’acide ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer">
+              <p>Les coefficients valant 1 dans les deux couples, on applique <span class="math">C<sub>A</sub> · V<sub>A</sub> = C<sub>B</sub> · V<sub>E</sub></span>.<br>
+              <span class="math">C<sub>A</sub> = (C<sub>B</sub> × V<sub>E</sub>) / V<sub>A</sub> = (0,10 × 12,0) / 20,0 = 6,0 × 10<sup>−2</sup> mol·L⁻¹</span>.<br>
+              <strong>Réponse : C<sub>A</sub> = 0,060 mol·L⁻¹.</strong></p>
+            </div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Un acide faible AH de concentration <span class="math">C = 1,0 × 10<sup>−2</sup> mol·L⁻¹</span> a un <span class="math">pK<sub>A</sub> = 4,8</span>. Calculer le pH de la solution.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer">
+              <p>L’acide étant faible et peu dissocié, on utilise <span class="math">[H₃O⁺] = √(K<sub>A</sub> · C)</span>.<br>
+              <span class="math">K<sub>A</sub> = 10<sup>−pK<sub>A</sub></sup> = 10<sup>−4,8</sup> = 1,6 × 10<sup>−5</sup></span>.<br>
+              <span class="math">[H₃O⁺] = √(1,6 × 10<sup>−5</sup> × 1,0 × 10<sup>−2</sup>) = √(1,6 × 10<sup>−7</sup>) = 4,0 × 10<sup>−4</sup> mol·L⁻¹</span>.<br>
+              <span class="math">pH = −log(4,0 × 10<sup>−4</sup>) ≈ 3,4</span>.<br>
+              <strong>Réponse : pH ≈ 3,4</strong>, bien supérieur au pH 2,0 d’un acide fort de même concentration.</p>
+            </div>
+          </details>
+        </section>
+
+        <footer class="course-footer"><span>FIN DU CHAPITRE</span><a href="#debut">Revenir au début ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>
