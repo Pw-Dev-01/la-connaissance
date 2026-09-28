@@ -22,6 +22,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Check catalog data files
+        run: |
+          for file in cours-chimie/chimie-data.js cours-physique/physique-data.js cours-mathematiques/programme-data.js; do
+            node --check "$file"
+            echo "Syntaxe valide : $file"
+          done
+
       - name: Assemble static site
         run: |
           mkdir -p dist
