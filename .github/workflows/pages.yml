@@ -24,7 +24,13 @@ jobs:
 
       - name: Check catalog data files
         run: |
-          for file in cours-chimie/chimie-data.js cours-physique/physique-data.js cours-mathematiques/programme-data.js; do
+          shopt -s nullglob
+          files=(cours-*/*-data.js)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "Aucun fichier de catalogue trouve (cours-*/*-data.js)"
+            exit 1
+          fi
+          for file in "${files[@]}"; do
             node --check "$file"
             echo "Syntaxe valide : $file"
           done
@@ -33,7 +39,7 @@ jobs:
         run: |
           mkdir -p dist
           cp index.html portal.css portal.js README.md dist/
-          cp -R cours-mathematiques cours-physique cours-chimie dist/
+          cp -R cours-*/ dist/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
