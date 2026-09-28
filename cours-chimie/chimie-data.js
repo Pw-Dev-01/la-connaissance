@@ -3,6 +3,7 @@ window.courseCatalog = [
     id: 'structure-matiere',
     title: 'Structure de la matière',
     note: 'L’atome, les électrons, la classification périodique et la mole.',
+    source: 'https://www.pccl.fr/programme_2e_physique_chimie_seconde_BO_gouv_reforme_2019.htm',
     chapters: [
       {
         id: 'modele-atomique',
@@ -86,6 +87,7 @@ window.courseCatalog = [
     id: 'liaisons-etats',
     title: 'Liaisons chimiques et états de la matière',
     note: 'Liaisons covalentes, forces intermoléculaires et solutions.',
+    source: 'https://www.pccl.fr/programme_1e_specialite_physique_chimie_premiere_BO_gouv_reforme_2019.htm',
     chapters: [
       {
         id: 'liaisons-covalentes-lewis',
@@ -169,6 +171,7 @@ window.courseCatalog = [
     id: 'transformations-chimiques',
     title: 'Transformations chimiques et stœchiométrie',
     note: 'Équations-bilans, réactif limitant, thermochimie et cinétique.',
+    source: 'https://www.pccl.fr/programme_1e_specialite_physique_chimie_premiere_BO_gouv_reforme_2019.htm',
     chapters: [
       {
         id: 'bilan-matiere-avancement',
@@ -253,6 +256,7 @@ window.courseCatalog = [
     id: 'equilibres-solutions',
     title: 'Équilibres chimiques en solution aqueuse',
     note: 'Acides et bases, pH, oxydoréduction et précipitation.',
+    source: 'https://www.pccl.fr/terminale_programme_physique_chimie.pdf',
     chapters: [
       {
         id: 'acide-base-ph',
@@ -337,6 +341,7 @@ window.courseCatalog = [
     id: 'chimie-organique',
     title: 'Chimie organique et mécanismes',
     note: 'Familles fonctionnelles, isomérie et grands mécanismes de synthèse.',
+    source: 'https://www.pccl.fr/terminale_programme_physique_chimie.pdf',
     chapters: [
       {
         id: 'familles-fonctionnelles-nomenclature',

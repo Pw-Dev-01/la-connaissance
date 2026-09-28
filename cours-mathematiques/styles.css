@@ -384,6 +384,18 @@ h1 span {
   display: none;
 }
 
+/* Liens de contenu (sources et références des cours) */
+.lesson-section a {
+  color: inherit;
+  text-decoration-color: var(--coral);
+  text-underline-offset: 4px;
+}
+
+.lesson-section a:hover,
+.lesson-section a:focus-visible {
+  color: #ad482f;
+}
+
 .lesson-section {
   padding: 42px 0 48px;
   border-bottom: 1px solid var(--line);

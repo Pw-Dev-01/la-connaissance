@@ -36,6 +36,7 @@
           <a href="#titrage">04 <span>Le titrage</span></a>
           <a href="#methode">05 <span>La méthode</span></a>
           <a href="#exercices">06 <span>S’entraîner</span></a>
+          <a href="#sources">07 <span>Sources</span></a>
         </nav>
         <div class="sidebar-note">
           <span class="note-mark" aria-hidden="true">pH</span>
@@ -109,7 +110,7 @@
             <span class="formula-label">DÉFINITION DU pH</span>
             <span class="math-display">pH = − log [H₃O⁺] &nbsp; ⟺ &nbsp; [H₃O⁺] = 10<sup>−pH</sup></span>
           </div>
-          <p>La concentration <span class="math">[H₃O⁺]</span> s’exprime en mol·L⁻¹. Du fait du logarithme décimal, chaque unité de pH correspond à un facteur <strong>10</strong> sur la concentration :</p>
+          <p>En toute rigueur, le pH mesure l’<em>activité</em> de l’ion oxonium ; dans les solutions diluées étudiées ici, cette activité se confond pratiquement avec la concentration. <span class="math">[H₃O⁺]</span> s’exprime en mol·L⁻¹. Du fait du logarithme décimal, chaque unité de pH correspond à un facteur <strong>10</strong> sur la concentration :</p>
           <div class="case-list">
             <div class="case-row">
               <span class="case-symbol">pH = 3</span>
@@ -124,7 +125,7 @@
               <p><span class="math">[H₃O⁺] = 10<sup>−11</sup> mol·L⁻¹</span> : la solution est <strong>basique</strong>.</p>
             </div>
           </div>
-          <p>Le pH dépend de la température : la neutralité à 25 °C correspond à pH = 7, mais à 37 °C elle se situe autour de 6,8. Retiens aussi que multiplier la concentration par 10 <em>diminue</em> le pH d’une unité, et non l’inverse.</p>
+          <p>Le pH dépend de la température : l’autoprotolyse de l’eau est une réaction <em>endothermique</em>, donc le produit ionique de l’eau augmente quand la température s’élève. La neutralité correspond à pH = 7 à 25 °C, mais à environ 6,8 à 37 °C. Retiens aussi que multiplier la concentration par 10 <em>diminue</em> le pH d’une unité, et non l’inverse.</p>
         </section>
 
         <section class="lesson-section" id="force" aria-labelledby="force-title">
@@ -134,7 +135,7 @@
           <div class="case-list">
             <div class="case-row">
               <span class="case-symbol">Acide fort</span>
-              <p>La réaction est totale : <span class="math">AH + H₂O → A⁻ + H₃O⁺</span>. Comme chaque molécule libère un proton, on a directement <span class="math">[H₃O⁺] = C</span> et donc <strong>pH = −log C</strong>.</p>
+              <p>La réaction est totale : <span class="math">AH + H₂O → A⁻ + H₃O⁺</span>. Comme chaque molécule libère un proton, on a directement <span class="math">[H₃O⁺] = C</span> et donc <strong>pH = −log C</strong>. Cette relation suppose une solution suffisamment concentrée (<span class="math">C ≥ 10<sup>−6</sup> mol·L⁻¹</span>), faute de quoi l’autoprotolyse de l’eau ne peut plus être négligée.</p>
             </div>
             <div class="case-row">
               <span class="case-symbol zero">Acide faible</span>
@@ -201,7 +202,7 @@
           <h2 id="methode-title">Calculer un pH en 4 étapes</h2>
           <ol class="method-list">
             <li><strong>Identifier la nature de l’espèce.</strong><span>Acide fort, acide faible, base forte ou base faible ? Cette étape fixe la formule à utiliser.</span></li>
-            <li><strong>Choisir la relation adaptée.</strong><span>Acide fort : <span class="math">pH = −log C</span>. Base forte : <span class="math">pH = 14 + log C</span>. Acide faible : résoudre l’équilibre avec <span class="math">K<sub>A</sub></span>.</span></li>
+            <li><strong>Choisir la relation adaptée.</strong><span>Acide fort : <span class="math">pH = −log C</span>. Base forte : <span class="math">pH = 14 + log C</span>. Ces deux formules supposent une solution à 25 °C et assez concentrée (<span class="math">C ≥ 10<sup>−6</sup> mol·L⁻¹</span>), pour que l’autoprotolyse de l’eau reste négligeable. Acide faible : résoudre l’équilibre avec <span class="math">K<sub>A</sub></span>.</span></li>
             <li><strong>Vérifier les hypothèses.</strong><span>Pour un acide faible peu dissocié, on admet <span class="math">[AH] ≈ C</span>, ce qui donne <span class="math">[H₃O⁺] = √(K<sub>A</sub> · C)</span>.</span></li>
             <li><strong>Contrôler le résultat.</strong><span>Un acide faible doit donner un pH <em>plus grand</em> que celui d’un acide fort de même concentration. Sinon, l’hypothèse est fausse.</span></li>
           </ol>
@@ -245,6 +246,17 @@
               <strong>Réponse : pH ≈ 3,4</strong>, bien supérieur au pH 2,0 d’un acide fort de même concentration.</p>
             </div>
           </details>
+        </section>
+
+        <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">07 / SOURCES</p>
+          <h2 id="sources-title">Sources et références</h2>
+          <ul>
+            <li><strong>Définition du pH, couples acide/base, K<sub>A</sub> et pK<sub>A</sub></strong> : <a href="https://fr.wikipedia.org/wiki/Potentiel_hydrog%C3%A8ne" target="_blank" rel="noreferrer">« Potentiel hydrogène »</a> — le pH y est défini par l’activité de l’ion hydrogène, avec les formules approchées pour les acides et les bases forts et faibles.</li>
+            <li><strong>Produit ionique de l’eau et effet de la température</strong> : <a href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Equilibria/Acid-Base_Equilibria/3._The_Ionic_Product_for_Water" target="_blank" rel="noreferrer">« The Ionic Product for Water »</a> (LibreTexts Chemistry) — K<sub>w</sub> = 1,008 × 10<sup>−14</sup> à 25 °C (pH neutre 7,00), 1,471 × 10<sup>−14</sup> à 30 °C (pH 6,92) et 2,916 × 10<sup>−14</sup> à 40 °C (pH 6,77).</li>
+            <li><strong>Titrage par suivi pH-métrique</strong> : <a href="https://dlatreyte.github.io/terminales-pc/chap-4/7-titrage-acide-base/" target="_blank" rel="noreferrer">cours de terminale spécialité physique-chimie</a> — conditions de validité d’une réaction support de titrage, point d’équivalence, équation de titrage et allure de la courbe pH = f(V).</li>
+            <li><strong>Programme officiel</strong> : les titrages avec repérage <em>colorimétrique</em> de l’équivalence relèvent du <a href="https://www.pccl.fr/programme_1e_specialite_physique_chimie_premiere_BO_gouv_reforme_2019.htm" target="_blank" rel="noreferrer">programme de première spécialité</a> ; les acides et bases faibles, la constante d’acidité et le titrage avec suivi pH-métrique relèvent de la terminale (voir le <a href="https://www.pccl.fr/terminale_programme_physique_chimie.pdf" target="_blank" rel="noreferrer">document de programme publié par PCCL</a>).</li>
+          </ul>
         </section>
 
         <footer class="course-footer"><span>FIN DU CHAPITRE</span><a href="#debut">Revenir au début ↑</a></footer>

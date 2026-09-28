@@ -31,6 +31,14 @@ if (!branch || !chapter) {
   document.querySelector('#lesson-level-label').textContent = branch.title.toLocaleUpperCase('fr-FR');
   document.querySelector('#lesson-footer').textContent = `${branch.title.toLocaleUpperCase('fr-FR')} · ${chapter.field.toLocaleUpperCase('fr-FR')}`;
 
+  // Lien vers le texte officiel du programme (B.O.) reproduit par PCCL.
+  const sourceLink = document.querySelector('#lesson-source');
+  if (branch.source) {
+    sourceLink.href = branch.source;
+    sourceLink.title = 'Texte du programme officiel reproduit par PCCL';
+    sourceLink.hidden = false;
+  }
+
   branch.chapters.forEach((sibling) => {
     const link = document.createElement('a');
     link.href = `cours.html?id=${encodeURIComponent(sibling.id)}`;
