@@ -4,10 +4,10 @@ const chapters = window.courseCatalog.flatMap((branch) => branch.chapters);
 
 document.querySelector('#catalogue-count').textContent = `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES`;
 
-window.courseCatalog.forEach((branch) => {
+window.courseCatalog.forEach((branch, branchIndex) => {
   const branchLink = document.createElement('a');
   branchLink.href = `#${branch.id}`;
-  branchLink.innerHTML = `<span>${String(branch.chapters.length).padStart(2, '0')}</span>${branch.title}`;
+  branchLink.innerHTML = `<span>${String(branchIndex + 1).padStart(2, '0')}</span>${branch.title}`;
   levelNavigation.append(branchLink);
 
   const section = document.createElement('section');

@@ -82,7 +82,7 @@ window.courseCatalog = [
         }
       }
     ]
-  ,
+  },
   {
     id: 'liaisons-etats',
     title: 'Liaisons chimiques et états de la matière',
@@ -177,7 +177,7 @@ window.courseCatalog = [
         id: 'bilan-matiere-avancement',
         title: 'Tableau d’avancement et réactif limitant',
         field: 'Réactions · bases',
-        page: 'index.html',
+        page: 'reaction-avancement.html',
         summary: 'Équilibrage de réaction, avancement ξ, état final et réactif en défaut.',
         lesson: {
           sections: [
