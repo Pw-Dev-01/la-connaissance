@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours de mathématiques sur les limites de fonctions : limites en un point, à l'infini, calculs, formes indéterminées et asymptotes.">
+    <title>Limites de fonctions | Cours de mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au premier cours">
+        <span class="wordmark-mark" aria-hidden="true">x²</span>
+        <span>LE COURS DE MATHS</span>
+      </a>
+      <span class="edition">PREMIÈRE · SPÉCIALITÉ</span>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout" id="debut">
+      <aside class="course-sidebar" aria-label="Navigation des cours">
+        <p class="sidebar-label">LES COURS</p>
+        <a class="course-link" href="programmes.html"><span class="course-order">∞</span><span>Tous les programmes</span></a>
+        <nav class="course-list" aria-label="Cours de mathématiques">
+          <a class="course-link" href="index.html"><span class="course-order">01</span><span>Second degré</span></a>
+          <a class="course-link is-current" href="limites.html" aria-current="page"><span class="course-order">02</span><span>Limites</span></a>
+          <a class="course-link" href="derivees.html"><span class="course-order">03</span><span>Dérivées</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Chapitres du cours sur les limites">
+          <a href="#notion">01 <span>Comprendre une limite</span></a>
+          <a href="#infini">02 <span>Limites à l’infini</span></a>
+          <a href="#calculs">03 <span>Règles de calcul</span></a>
+          <a href="#indeterminations">04 <span>Formes indéterminées</span></a>
+          <a href="#asymptotes">05 <span>Asymptotes</span></a>
+          <a href="#exercices">06 <span>S’entraîner</span></a>
+        </nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">→</span><p>Une limite décrit ce que devient f(x) quand x se rapproche d’une valeur ou s’éloigne vers l’infini.</p></div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ANALYSE · CHAPITRE 02</p>
+          <h1>Les limites<br><span>de fonctions</span></h1>
+          <p class="course-intro">Une limite décrit le comportement d’une fonction près d’un point ou très loin sur l’axe. Elle aide à comprendre les asymptotes, les valeurs interdites et l’allure générale d’une courbe.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>LECTURE · 10 MIN</span><span>FONCTIONS RÉELLES</span></div>
+        </header>
+
+        <section class="lesson-section" id="notion" aria-labelledby="notion-title">
+          <p class="section-index">01 / L’IDÉE DE LIMITE</p>
+          <h2 id="notion-title">Comprendre une limite</h2>
+          <p>Étudier la limite de <em>f(x)</em> quand <em>x</em> tend vers un nombre <em>a</em>, c’est observer les valeurs de <em>f(x)</em> lorsque <em>x</em> se rapproche de <em>a</em>. On ne demande pas forcément ce que vaut <em>f(a)</em> : la fonction peut même ne pas être définie en <em>a</em>.</p>
+          <div class="formula-block"><span class="formula-label">LIMITE FINIE EN a</span><span class="math-display">lim<sub>x → a</sub> f(x) = L</span></div>
+          <p>Cette écriture signifie que les valeurs de <em>f(x)</em> se rapprochent autant que l’on veut de <em>L</em> quand <em>x</em> se rapproche de <em>a</em>. Par exemple, si <span class="math">f(x) = x + 2</span>, alors quand <em>x</em> tend vers 3, <em>f(x)</em> tend vers 5.</p>
+          <p>On peut aussi étudier une limite à gauche, notée <span class="math">x → a<sup>−</sup></span>, ou à droite, notée <span class="math">x → a<sup>+</sup></span>. Les deux comportements peuvent être différents. Pour <span class="math">f(x) = 1 / (x − 2)</span>, quand <em>x</em> approche 2 par la gauche, le dénominateur est négatif et proche de zéro : la fonction tend vers <span class="math">−∞</span>. Par la droite, elle tend vers <span class="math">+∞</span>.</p>
+          <div class="callout"><strong>Limite et valeur de la fonction</strong><p>Une limite décrit un comportement autour d’un point, pas nécessairement la valeur de la fonction en ce point. Par exemple, <span class="math">(x² − 1) / (x − 1)</span> n’est pas défini en 1, mais sa limite quand <span class="math">x → 1</span> existe.</p></div>
+        </section>
+
+        <section class="lesson-section" id="infini" aria-labelledby="infini-title">
+          <p class="section-index">02 / QUAND x S’ÉLOIGNE</p>
+          <h2 id="infini-title">Les limites à l’infini</h2>
+          <p>Quand <em>x</em> devient très grand en valeur absolue, les termes d’une expression n’ont pas tous la même importance. Pour un polynôme, le terme de plus haut degré finit par dominer les autres.</p>
+          <div class="formula-block formula-accent"><span class="formula-label">TERMES DOMINANTS</span><span class="math-display">Quand |x| grandit, x<sup>3</sup> domine x<sup>2</sup>, qui domine x, qui domine 1.</span></div>
+          <p>Ainsi, pour <span class="math">f(x) = 2x<sup>3</sup> − 5x + 1</span>, le terme dominant est <span class="math">2x<sup>3</sup></span>. Quand <span class="math">x → +∞</span>, ce terme tend vers <span class="math">+∞</span>, donc <em>f(x)</em> tend vers <span class="math">+∞</span>. Quand <span class="math">x → −∞</span>, <span class="math">2x<sup>3</sup></span> tend vers <span class="math">−∞</span>, donc <em>f(x)</em> aussi.</p>
+          <h3>Quelques limites de référence</h3>
+          <div class="case-list">
+            <div class="case-row"><span class="case-symbol positive">x → +∞</span><p>Si <span class="math">n &gt; 0</span>, alors <span class="math">x<sup>n</sup> → +∞</span>.</p></div>
+            <div class="case-row"><span class="case-symbol negative">x → −∞</span><p>Pour une puissance paire, <span class="math">x<sup>n</sup> → +∞</span> ; pour une puissance impaire, <span class="math">x<sup>n</sup> → −∞</span>.</p></div>
+            <div class="case-row"><span class="case-symbol zero">x → ±∞</span><p>Pour <span class="math">n &gt; 0</span>, <span class="math">1 / x<sup>n</sup> → 0</span>. La fraction se rapproche de zéro sans nécessairement l’atteindre.</p></div>
+          </div>
+          <h3>Le cas d’un quotient de polynômes</h3>
+          <p>Pour une fraction rationnelle, compare les degrés du numérateur et du dénominateur. À l’infini, les termes de plus haut degré dominent. Si les degrés sont égaux, la limite est le quotient des coefficients dominants. Si le degré du numérateur est plus petit, la limite vaut zéro.</p>
+          <div class="worked-result"><span class="math">(3x<sup>2</sup> + x) / (2x<sup>2</sup> − 1)</span><span class="math">→ 3 / 2 quand x → ±∞</span></div>
+          <p>Si le degré du numérateur est plus grand, la fraction peut tendre vers l’infini ; il faut alors étudier le signe et l’écart des degrés.</p>
+        </section>
+
+        <section class="lesson-section" id="calculs" aria-labelledby="calculs-title">
+          <p class="section-index">03 / COMBINER DES LIMITES</p>
+          <h2 id="calculs-title">Les règles de calcul</h2>
+          <p>Quand les limites des fonctions <em>u</em> et <em>v</em> sont connues, on peut souvent en déduire la limite de leur somme, produit ou quotient. Les règles suivantes s’appliquent lorsque les opérations ont un sens ; les cas indéterminés demandent une étude supplémentaire.</p>
+          <div class="formula-block"><span class="formula-label">LIMITE FINIE ET SOMME</span><span class="math-display">Si u → L et v → M, alors u + v → L + M.</span></div>
+          <div class="case-list">
+            <div class="case-row"><span class="case-symbol positive">SOMME</span><p>Une limite finie s’ajoute terme à terme. Une quantité qui tend vers <span class="math">+∞</span>, additionnée à un nombre fixe, tend encore vers <span class="math">+∞</span>.</p></div>
+            <div class="case-row"><span class="case-symbol zero">PRODUIT</span><p>On multiplie les limites finies. Le produit d’une quantité qui tend vers <span class="math">+∞</span> par une constante positive tend vers <span class="math">+∞</span> ; si la constante est négative, il tend vers <span class="math">−∞</span>.</p></div>
+            <div class="case-row"><span class="case-symbol negative">QUOTIENT</span><p>Si le dénominateur tend vers une limite non nulle <em>M</em>, le quotient tend vers <span class="math">L / M</span>. Si le dénominateur tend vers zéro, il faut étudier son signe.</p></div>
+          </div>
+          <p>Exemple : quand <span class="math">x → 2</span>, <span class="math">x² + 3x</span> tend vers <span class="math">2² + 3 × 2 = 10</span>. Pour les polynômes, on peut remplacer directement <em>x</em> par la valeur vers laquelle il tend.</p>
+          <p>Autre exemple : quand <span class="math">x → +∞</span>, <span class="math">(5x + 1) / (x − 2)</span> tend vers 5, car les deux polynômes sont de même degré et le quotient des coefficients dominants vaut <span class="math">5 / 1</span>.</p>
+        </section>
+
+        <section class="lesson-section" id="indeterminations" aria-labelledby="indeterminations-title">
+          <p class="section-index">04 / QUAND LA RÈGLE NE SUFFIT PAS</p>
+          <h2 id="indeterminations-title">Les formes indéterminées</h2>
+          <p>Une forme indéterminée signifie que les règles usuelles ne permettent pas, à elles seules, de conclure. Ce n’est pas le résultat de la limite : c’est un signal qu’il faut transformer ou simplifier l’expression.</p>
+          <div class="formula-pair">
+            <div class="formula-block formula-accent"><span class="formula-label">FORME INDETERMINÉE</span><span class="math-display">∞ − ∞</span></div>
+            <div class="formula-block formula-accent"><span class="formula-label">FORME INDETERMINÉE</span><span class="math-display">0 / 0</span></div>
+            <div class="formula-block formula-accent"><span class="formula-label">FORME INDETERMINÉE</span><span class="math-display">∞ / ∞</span></div>
+            <div class="formula-block formula-accent"><span class="formula-label">FORME INDETERMINÉE</span><span class="math-display">0 × ∞</span></div>
+          </div>
+          <h3>Exemple : lever une forme 0 / 0</h3>
+          <p>Quand <span class="math">x → 1</span>, le numérateur <span class="math">x² − 1</span> tend vers zéro et le dénominateur <span class="math">x − 1</span> aussi. On obtient la forme <span class="math">0 / 0</span> : impossible de conclure tout de suite. On factorise le numérateur :</p>
+          <div class="formula-block"><span class="formula-label">FACTORISER, PUIS SIMPLIFIER POUR x ≠ 1</span><span class="math-display">(x<sup>2</sup> − 1) / (x − 1) = (x − 1)(x + 1) / (x − 1) = x + 1</span></div>
+          <p>Pour <span class="math">x ≠ 1</span>, la fraction vaut donc <span class="math">x + 1</span>, qui tend vers 2 lorsque <span class="math">x → 1</span>. La limite cherchée est 2, même si la fraction de départ n’est pas définie en 1.</p>
+          <h3>Les bons réflexes</h3>
+          <ul class="mistake-list">
+            <li>Pour une différence de polynômes, factorise par le terme dominant ou mets les expressions au même dénominateur.</li>
+            <li>Pour une fraction en <span class="math">0 / 0</span>, factorise et simplifie, ou utilise une identité remarquable.</li>
+            <li>Pour une fraction en <span class="math">∞ / ∞</span>, divise le numérateur et le dénominateur par la plus grande puissance de <em>x</em>.</li>
+            <li>Ne simplifie jamais en un point où le dénominateur est nul sans préciser que l’égalité vaut pour les valeurs autorisées autour de ce point.</li>
+          </ul>
+        </section>
+
+        <section class="lesson-section" id="asymptotes" aria-labelledby="asymptotes-title">
+          <p class="section-index">05 / LIRE LA COURBE</p>
+          <h2 id="asymptotes-title">Les asymptotes</h2>
+          <p>Une asymptote est une droite dont la courbe se rapproche indéfiniment. Les limites permettent de les repérer et d’écrire leur équation.</p>
+          <h3>Asymptote verticale</h3>
+          <p>Si <em>f(x)</em> tend vers <span class="math">+∞</span> ou <span class="math">−∞</span> quand <span class="math">x → a</span> (à gauche, à droite ou des deux côtés), la droite d’équation <span class="math">x = a</span> est une asymptote verticale. Par exemple, pour <span class="math">f(x) = 1 / (x − 2)</span>, la droite <span class="math">x = 2</span> est une asymptote verticale.</p>
+          <figure class="math-figure">
+            <svg viewBox="0 0 420 220" role="img" aria-labelledby="vertical-limit-title vertical-limit-desc">
+              <title id="vertical-limit-title">Courbe de f(x) = 1 / (x − 2)</title>
+              <desc id="vertical-limit-desc">La courbe se rapproche de la droite verticale x égale 2, sans la toucher, et de l’axe horizontal y égale 0 à l’infini.</desc>
+              <path class="graph-axis" d="M 30 110 H 395 M 80 20 V 200" />
+              <path class="graph-asymptote" d="M 260 18 V 202" />
+              <path class="graph-curve graph-up" d="M 35 109 C 120 109 195 112 235 124 C 250 131 255 151 258 198" />
+              <path class="graph-curve graph-up" d="M 262 22 C 265 69 270 88 285 96 C 325 108 360 109 395 109" />
+              <text class="graph-label" x="399" y="106">x</text>
+              <text class="graph-label" x="83" y="16">y</text>
+              <text class="graph-label" x="264" y="214">x = 2</text>
+            </svg>
+            <figcaption>Près de 2, la courbe s’approche de la droite pointillée sans jamais la couper. À gauche elle descend vers −∞ ; à droite elle monte vers +∞.</figcaption>
+          </figure>
+          <h3>Asymptote horizontale</h3>
+          <p>Si <span class="math">f(x) → L</span> quand <span class="math">x → +∞</span> (ou quand <span class="math">x → −∞</span>), la droite <span class="math">y = L</span> est une asymptote horizontale dans cette direction. Comme <span class="math">(3x² + x) / (2x² − 1) → 3 / 2</span>, sa courbe admet la droite <span class="math">y = 3 / 2</span> comme asymptote horizontale aux deux infinis.</p>
+          <div class="callout callout-coral"><strong>Attention</strong><p>Une fonction peut avoir des limites différentes en <span class="math">+∞</span> et en <span class="math">−∞</span>. Il faut donc étudier séparément les deux directions avant de conclure.</p></div>
+        </section>
+
+        <section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">06 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">À toi de jouer</h2>
+          <p>Commence par identifier la situation : substitution directe, comportement à l’infini, ou forme indéterminée ? Ouvre ensuite la correction pour comparer ta démarche.</p>
+          <details class="exercise"><summary><span class="exercise-number">A</span><span>Calculer <span class="math">lim<sub>x → 2</sub> (x² + 3x − 1)</span>.</span><span class="reveal-label">Voir la correction</span></summary><div class="exercise-answer"><p>Un polynôme est défini et continu en 2 : on remplace <em>x</em> par 2. <span class="math">2² + 3 × 2 − 1 = 4 + 6 − 1 = 9</span>. <strong>La limite vaut 9.</strong></p></div></details>
+          <details class="exercise"><summary><span class="exercise-number">B</span><span>Calculer <span class="math">lim<sub>x → 1</sub> (x² − 1) / (x − 1)</span>.</span><span class="reveal-label">Voir la correction</span></summary><div class="exercise-answer"><p>La substitution donne <span class="math">0 / 0</span>, une forme indéterminée. Pour <span class="math">x ≠ 1</span>, on factorise : <span class="math">(x² − 1) / (x − 1) = x + 1</span>. La limite de <span class="math">x + 1</span> en 1 vaut 2. <strong>La limite vaut 2.</strong></p></div></details>
+          <details class="exercise"><summary><span class="exercise-number">C</span><span>Calculer <span class="math">lim<sub>x → +∞</sub> (4x² − x) / (2x² + 5)</span>.</span><span class="reveal-label">Voir la correction</span></summary><div class="exercise-answer"><p>Les degrés du numérateur et du dénominateur sont égaux. Le quotient tend vers le quotient des coefficients dominants : <span class="math">4 / 2 = 2</span>. <strong>La limite vaut 2.</strong></p></div></details>
+          <details class="exercise"><summary><span class="exercise-number">D</span><span>Quelle est l’asymptote verticale de <span class="math">f(x) = 3 / (x + 4)</span> ?</span><span class="reveal-label">Voir la correction</span></summary><div class="exercise-answer"><p>Le dénominateur s’annule en <span class="math">x = −4</span>. À proximité, la fonction devient infiniment grande en valeur absolue. <strong>La droite x = −4 est l’asymptote verticale.</strong></p></div></details>
+        </section>
+
+        <footer class="course-footer"><span>COURS 02 / 03</span><a href="derivees.html">Cours suivant : les dérivées →</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

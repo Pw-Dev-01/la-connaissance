@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Catalogue des cours de mathématiques, de Première spécialité aux classes préparatoires scientifiques.">
+    <title>Programmes · Cours de mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="programme-data.js" defer></script>
+    <script src="programmes.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Premier cours, second degré">
+        <span class="wordmark-mark" aria-hidden="true">x²</span>
+        <span>LE COURS DE MATHS</span>
+      </a>
+      <span class="edition">PREMIÈRE · TERMINALE · PRÉPA</span>
+    </header>
+    <main class="catalogue-layout">
+      <aside class="course-sidebar" aria-label="Niveaux scolaires">
+        <p class="sidebar-label">PROGRAMMES</p>
+        <nav class="catalogue-levels" id="catalogue-levels"></nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">∑</span><p>Choisis un niveau, puis un chapitre pour ouvrir sa page dédiée.</p></div>
+      </aside>
+      <article class="catalogue-content">
+        <header class="course-heading catalogue-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BIBLIOTHÈQUE · MATHÉMATIQUES</p>
+          <h1>Du lycée<br><span>à la prépa</span></h1>
+          <p class="course-intro">Les chapitres sont regroupés par classe et filière. Les programmes de Première et Terminale indiquent leur année d’application ; les parcours de prépa suivent leurs filières respectives.</p>
+          <div class="course-meta"><span id="catalogue-count">PROGRAMMES NATIONAUX</span><span>SPÉCIALITÉ MATHS</span></div>
+        </header>
+        <div id="programme-sections"></div>
+        <footer class="course-footer"><span>PROGRAMMES DE MATHÉMATIQUES</span><a href="index.html">Ouvrir le cours sur le second degré ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

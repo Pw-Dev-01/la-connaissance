@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours de Première spécialité mathématiques : équations et inéquations du second degré, discriminant, racines et tableaux de signes.">
+    <title>Équations et inéquations du second degré | Cours de mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="#debut" aria-label="Retour au début du cours">
+        <span class="wordmark-mark" aria-hidden="true">x²</span>
+        <span>LE COURS DE MATHS</span>
+      </a>
+      <span class="edition">PREMIÈRE · SPÉCIALITÉ</span>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout" id="debut">
+      <aside class="course-sidebar" aria-label="Navigation des cours">
+        <p class="sidebar-label">LES COURS</p>
+        <a class="course-link" href="programmes.html"><span class="course-order">∞</span><span>Tous les programmes</span></a>
+        <nav class="course-list" aria-label="Cours de mathématiques">
+          <a class="course-link is-current" href="index.html" aria-current="page"><span class="course-order">01</span><span>Second degré</span></a>
+          <a class="course-link" href="limites.html"><span class="course-order">02</span><span>Limites</span></a>
+          <a class="course-link" href="derivees.html"><span class="course-order">03</span><span>Dérivées</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Chapitres du cours sur le second degré">
+          <a href="#forme">01 <span>La forme générale</span></a>
+          <a href="#discriminant">02 <span>Le discriminant</span></a>
+          <a href="#factoriser">03 <span>Factoriser</span></a>
+          <a href="#inequations">04 <span>Les inéquations</span></a>
+          <a href="#methode">05 <span>La méthode</span></a>
+          <a href="#exercices">06 <span>S’entraîner</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">∑</span>
+          <p>Une idée essentielle : le discriminant relie les racines, la factorisation et le signe.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ALGÈBRE · CHAPITRE 04</p>
+          <h1>Équations et<br><span>inéquations</span><br>du second degré</h1>
+          <p class="course-intro">Comment savoir si un trinôme s’annule ? Comment résoudre une inéquation sans tester des dizaines de valeurs ? Le discriminant donne la réponse, puis les racines permettent de lire le signe.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>LECTURE · 12 MIN</span><span>ENSEMBLE DES RÉELS ℝ</span></div>
+        </header>
+
+        <section class="lesson-section" id="forme" aria-labelledby="forme-title">
+          <p class="section-index">01 / RECONNAÎTRE</p>
+          <h2 id="forme-title">La forme générale</h2>
+          <p>Une expression du second degré, aussi appelée <strong>trinôme du second degré</strong>, s’écrit sous la forme :</p>
+          <div class="formula-block"><span class="formula-label">FORME DÉVELOPPÉE RÉDUITE</span><span class="math-display">f(x) = ax<sup>2</sup> + bx + c &nbsp; avec a ≠ 0</span></div>
+          <p>Les nombres <em>a</em>, <em>b</em> et <em>c</em> sont les coefficients. Le coefficient <em>a</em> ne peut pas être nul : si <em>a = 0</em>, il ne reste plus de terme en <em>x</em> au carré et l’expression n’est plus du second degré.</p>
+          <p>Pour lire les coefficients, il faut d’abord remettre l’expression dans l’ordre <em>x²</em>, <em>x</em>, puis terme constant. Par exemple, dans <span class="math">3x<sup>2</sup> − 5x + 2</span>, on a <span class="math">a = 3</span>, <span class="math">b = −5</span> et <span class="math">c = 2</span>. Attention : le signe fait partie du coefficient.</p>
+          <div class="callout"><strong>Objectif du chapitre</strong><p>Résoudre <span class="math">ax<sup>2</sup> + bx + c = 0</span>, factoriser le trinôme lorsque c’est possible dans ℝ, puis déterminer où il est positif ou négatif.</p></div>
+        </section>
+
+        <section class="lesson-section" id="discriminant" aria-labelledby="discriminant-title">
+          <p class="section-index">02 / RÉSOUDRE UNE ÉQUATION</p>
+          <h2 id="discriminant-title">Le discriminant et les racines</h2>
+          <p>Pour résoudre <span class="math">ax<sup>2</sup> + bx + c = 0</span>, on calcule d’abord le <strong>discriminant</strong>, noté Δ (delta). Il résume l’information nécessaire pour savoir combien de solutions réelles possède l’équation.</p>
+          <div class="formula-block formula-accent"><span class="formula-label">CALCUL DU DISCRIMINANT</span><span class="math-display">Δ = b<sup>2</sup> − 4ac</span></div>
+          <div class="case-list">
+            <div class="case-row"><span class="case-symbol positive">Δ &gt; 0</span><p><strong>Deux solutions réelles distinctes.</strong> Le trinôme s’annule en deux valeurs différentes, appelées racines.</p></div>
+            <div class="case-row"><span class="case-symbol zero">Δ = 0</span><p><strong>Une solution réelle double.</strong> Les deux racines se confondent en <span class="math">x<sub>0</sub> = −b / 2a</span>.</p></div>
+            <div class="case-row"><span class="case-symbol negative">Δ &lt; 0</span><p><strong>Aucune solution réelle.</strong> Le trinôme ne s’annule jamais sur ℝ.</p></div>
+          </div>
+          <h3>Ce que montrent les paraboles</h3>
+          <p>Le coefficient <em>a</em> indique le sens d’ouverture : si <span class="math">a &gt; 0</span>, les branches montent ; si <span class="math">a &lt; 0</span>, elles descendent. Le discriminant indique combien de fois la courbe coupe l’axe des abscisses : deux fois si <span class="math">Δ &gt; 0</span>, une fois si <span class="math">Δ = 0</span>, jamais si <span class="math">Δ &lt; 0</span>.</p>
+          <figure class="parabola-figure">
+            <div class="parabola-grid" role="group" aria-label="Comparaison de six paraboles selon le signe de a et du discriminant">
+              <figure class="parabola-case">
+                <figcaption><strong>a &gt; 0 · Δ &gt; 0</strong><span>f(x) = x² − 1</span></figcaption>
+                <svg viewBox="0 0 200 140" role="img" aria-label="Parabole ouverte vers le haut, coupant l’axe des abscisses en deux points">
+                  <path class="graph-axis" d="M 18 68 H 182 M 100 12 V 128" />
+                  <path class="graph-curve graph-up" d="M 30 -10 C 53 48 77 82 100 94 C 123 82 147 48 170 -10" />
+                  <circle class="graph-root" cx="65" cy="68" r="3" /><circle class="graph-root" cx="135" cy="68" r="3" />
+                  <text class="graph-label" x="184" y="64">x</text><text class="graph-label" x="104" y="12">y</text>
+                </svg>
+              </figure>
+              <figure class="parabola-case">
+                <figcaption><strong>a &gt; 0 · Δ = 0</strong><span>f(x) = x²</span></figcaption>
+                <svg viewBox="0 0 200 140" role="img" aria-label="Parabole ouverte vers le haut, tangente à l’axe des abscisses en un point">
+                  <path class="graph-axis" d="M 18 68 H 182 M 100 12 V 128" />
+                  <path class="graph-curve graph-up" d="M 30 -36 C 53 22 77 56 100 68 C 123 56 147 22 170 -36" />
+                  <circle class="graph-root" cx="100" cy="68" r="3" />
+                  <text class="graph-label" x="184" y="64">x</text><text class="graph-label" x="104" y="12">y</text>
+                </svg>
+              </figure>
+              <figure class="parabola-case">
+                <figcaption><strong>a &gt; 0 · Δ &lt; 0</strong><span>f(x) = x² + 1</span></figcaption>
+                <svg viewBox="0 0 200 140" role="img" aria-label="Parabole ouverte vers le haut, entièrement au-dessus de l’axe des abscisses">
+                  <path class="graph-axis" d="M 18 68 H 182 M 100 12 V 128" />
+                  <path class="graph-curve graph-up" d="M 30 -62 C 53 -4 77 30 100 42 C 123 30 147 -4 170 -62" />
+                  <text class="graph-label" x="184" y="64">x</text><text class="graph-label" x="104" y="12">y</text>
+                </svg>
+              </figure>
+              <figure class="parabola-case">
+                <figcaption><strong>a &lt; 0 · Δ &gt; 0</strong><span>f(x) = −x² + 1</span></figcaption>
+                <svg viewBox="0 0 200 140" role="img" aria-label="Parabole ouverte vers le bas, coupant l’axe des abscisses en deux points">
+                  <path class="graph-axis" d="M 18 68 H 182 M 100 12 V 128" />
+                  <path class="graph-curve graph-down" d="M 30 146 C 53 88 77 54 100 42 C 123 54 147 88 170 146" />
+                  <circle class="graph-root" cx="65" cy="68" r="3" /><circle class="graph-root" cx="135" cy="68" r="3" />
+                  <text class="graph-label" x="184" y="64">x</text><text class="graph-label" x="104" y="12">y</text>
+                </svg>
+              </figure>
+              <figure class="parabola-case">
+                <figcaption><strong>a &lt; 0 · Δ = 0</strong><span>f(x) = −x²</span></figcaption>
+                <svg viewBox="0 0 200 140" role="img" aria-label="Parabole ouverte vers le bas, tangente à l’axe des abscisses en un point">
+                  <path class="graph-axis" d="M 18 68 H 182 M 100 12 V 128" />
+                  <path class="graph-curve graph-down" d="M 30 172 C 53 114 77 80 100 68 C 123 80 147 114 170 172" />
+                  <circle class="graph-root" cx="100" cy="68" r="3" />
+                  <text class="graph-label" x="184" y="64">x</text><text class="graph-label" x="104" y="12">y</text>
+                </svg>
+              </figure>
+              <figure class="parabola-case">
+                <figcaption><strong>a &lt; 0 · Δ &lt; 0</strong><span>f(x) = −x² − 1</span></figcaption>
+                <svg viewBox="0 0 200 140" role="img" aria-label="Parabole ouverte vers le bas, entièrement au-dessous de l’axe des abscisses">
+                  <path class="graph-axis" d="M 18 68 H 182 M 100 12 V 128" />
+                  <path class="graph-curve graph-down" d="M 30 198 C 53 140 77 106 100 94 C 123 106 147 140 170 198" />
+                  <text class="graph-label" x="184" y="64">x</text><text class="graph-label" x="104" y="12">y</text>
+                </svg>
+              </figure>
+            </div>
+            <figcaption class="parabola-caption">Les points marqués sont les racines, c’est-à-dire les intersections avec l’axe des abscisses. Quand Δ &lt; 0, le trinôme garde partout le signe de <em>a</em>.</figcaption>
+          </figure>
+          <h3>Quand Δ est positif</h3>
+          <p>Si <span class="math">Δ &gt; 0</span>, les deux solutions sont obtenues avec la formule suivante. Le signe « ± » signifie que l’on effectue un calcul avec « + », puis un autre avec « − ».</p>
+          <div class="formula-pair"><div class="formula-block"><span class="formula-label">PREMIÈRE RACINE</span><span class="math-display">x<sub>1</sub> = (−b − √Δ) / 2a</span></div><div class="formula-block"><span class="formula-label">SECONDE RACINE</span><span class="math-display">x<sub>2</sub> = (−b + √Δ) / 2a</span></div></div>
+          <h3>Exemple : deux racines</h3>
+          <p>Résolvons <span class="math">x<sup>2</sup> − 5x + 6 = 0</span>. Ici, <span class="math">a = 1</span>, <span class="math">b = −5</span> et <span class="math">c = 6</span>. On calcule <span class="math">Δ = (−5)<sup>2</sup> − 4 × 1 × 6 = 25 − 24 = 1</span>. Comme <span class="math">Δ &gt; 0</span>, il y a deux solutions :</p>
+          <div class="worked-result"><span class="math">x<sub>1</sub> = (5 − 1) / 2 = 2</span><span class="math">x<sub>2</sub> = (5 + 1) / 2 = 3</span><strong>Solutions : {2 ; 3}</strong></div>
+          <h3>Exemple : racine double ou aucune racine</h3>
+          <p>Pour <span class="math">−3x<sup>2</sup> + 12x − 12 = 0</span>, on trouve <span class="math">Δ = 12<sup>2</sup> − 4 × (−3) × (−12) = 0</span>. L’unique solution est <span class="math">x<sub>0</sub> = −12 / (2 × −3) = 2</span>.</p>
+          <p>Pour <span class="math">2x<sup>2</sup> + 2x + 3 = 0</span>, on trouve <span class="math">Δ = 2<sup>2</sup> − 4 × 2 × 3 = −20</span>. Comme le discriminant est négatif, l’équation n’a aucune solution réelle.</p>
+          <div class="callout callout-coral"><strong>Vérification utile</strong><p>Quand tu as trouvé des racines, remplace <em>x</em> dans l’équation de départ. Une racine doit rendre le trinôme égal à zéro.</p></div>
+        </section>
+
+        <section class="lesson-section" id="factoriser" aria-labelledby="factoriser-title">
+          <p class="section-index">03 / PASSER AUX FACTEURS</p>
+          <h2 id="factoriser-title">Relier racines et factorisation</h2>
+          <p>Une racine <em>r</em> est une valeur pour laquelle <span class="math">f(r) = 0</span>. Cela signifie que le facteur <span class="math">(x − r)</span> apparaît dans la factorisation du trinôme. Le discriminant indique précisément quelle forme de factorisation utiliser.</p>
+          <div class="formula-block"><span class="formula-label">SI Δ &gt; 0 : DEUX RACINES x₁ ET x₂</span><span class="math-display">ax<sup>2</sup> + bx + c = a(x − x<sub>1</sub>)(x − x<sub>2</sub>)</span></div>
+          <div class="formula-block"><span class="formula-label">SI Δ = 0 : UNE RACINE DOUBLE x₀</span><span class="math-display">ax<sup>2</sup> + bx + c = a(x − x<sub>0</sub>)<sup>2</sup></span></div>
+          <p>Dans l’exemple précédent, les racines de <span class="math">x<sup>2</sup> − 5x + 6</span> sont 2 et 3. On peut donc écrire <span class="math">x<sup>2</sup> − 5x + 6 = (x − 2)(x − 3)</span>. Développer cette forme redonne bien le trinôme de départ.</p>
+          <p>Si <span class="math">Δ &lt; 0</span>, il n’y a pas de racine réelle : le trinôme ne peut pas se factoriser en produit de deux facteurs du premier degré à coefficients réels. Cela n’empêche pas de connaître son signe : il est toujours celui de <em>a</em>.</p>
+          <div class="callout"><strong>À retenir</strong><p>Résoudre l’équation, c’est trouver les racines. Factoriser, c’est réécrire l’expression à l’aide de ces racines. Ces deux résultats serviront ensuite à étudier le signe.</p></div>
+        </section>
+
+        <section class="lesson-section" id="inequations" aria-labelledby="inequations-title">
+          <p class="section-index">04 / ÉTUDIER LE SIGNE</p>
+          <h2 id="inequations-title">Résoudre une inéquation</h2>
+          <p>Une inéquation demande pour quelles valeurs de <em>x</em> le trinôme est positif, négatif, ou nul. La règle de signe se lit à partir des racines et du signe de <em>a</em>. Elle vient du fait que, dans la forme factorisée, le signe change à chaque racine simple.</p>
+          <h3>Deux racines distinctes : Δ &gt; 0</h3>
+          <p>On range d’abord les racines dans l’ordre <span class="math">x<sub>1</sub> &lt; x<sub>2</sub></span>. À l’extérieur de l’intervalle entre elles, le trinôme a le signe de <em>a</em>. Entre les deux racines, il a le signe contraire. Aux racines, il vaut zéro.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Signe de ax² + bx + c lorsque x₁ &lt; x₂</caption>
+              <thead><tr><th scope="col">x</th><th scope="col">−∞</th><th scope="col">x₁</th><th scope="col">Entre x₁ et x₂</th><th scope="col">x₂</th><th scope="col">+∞</th></tr></thead>
+              <tbody><tr><th scope="row">Signe du trinôme</th><td>signe de a</td><td>0</td><td>signe contraire de a</td><td>0</td><td>signe de a</td></tr></tbody>
+            </table>
+          </div>
+          <p class="table-note">Si <span class="math">a &gt; 0</span>, le signe est donc <strong>+ / − / +</strong>. Si <span class="math">a &lt; 0</span>, il est <strong>− / + / −</strong>.</p>
+          <h3>Une racine double : Δ = 0</h3>
+          <p>Le trinôme s’écrit <span class="math">a(x − x<sub>0</sub>)<sup>2</sup></span>. Un carré est toujours positif ou nul : le trinôme garde donc le signe de <em>a</em> des deux côtés de <span class="math">x<sub>0</sub></span>, et s’annule seulement en ce point.</p>
+          <h3>Aucune racine réelle : Δ &lt; 0</h3>
+          <p>Le trinôme ne s’annule jamais et ne change pas de signe. Il garde partout le signe de son coefficient <em>a</em>.</p>
+          <h3>Exemple détaillé</h3>
+          <p>Résolvons <span class="math">2x<sup>2</sup> − 8x + 6 ≤ 0</span>. On factorise : <span class="math">2x<sup>2</sup> − 8x + 6 = 2(x − 1)(x − 3)</span>. Les racines sont 1 et 3, et le coefficient directeur du terme de degré 2 vaut <span class="math">a = 2 &gt; 0</span>. Le signe est donc positif à l’extérieur des racines et négatif entre elles.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table example-table">
+              <caption>Tableau de signes de 2(x − 1)(x − 3)</caption>
+              <thead><tr><th scope="col">x</th><th scope="col">−∞</th><th scope="col">1</th><th scope="col">Entre 1 et 3</th><th scope="col">3</th><th scope="col">+∞</th></tr></thead>
+              <tbody><tr><th scope="row">2(x − 1)(x − 3)</th><td>+</td><td>0</td><td>−</td><td>0</td><td>+</td></tr></tbody>
+            </table>
+          </div>
+          <p>On cherche les valeurs où l’expression est négative <strong>ou nulle</strong>. Les deux racines sont donc incluses : l’ensemble des solutions est <span class="answer">[1 ; 3]</span>.</p>
+          <div class="callout callout-coral"><strong>Le signe de l’inégalité compte</strong><p>Pour <span class="math">≤</span> ou <span class="math">≥</span>, on inclut les racines quand elles annulent le trinôme. Pour <span class="math">&lt;</span> ou <span class="math">&gt;</span>, on les exclut.</p></div>
+        </section>
+
+        <section class="lesson-section" id="methode" aria-labelledby="methode-title">
+          <p class="section-index">05 / SUIVRE LES ÉTAPES</p>
+          <h2 id="methode-title">Une méthode qui marche</h2>
+          <p>Pour éviter de te perdre dans les calculs, garde toujours le même ordre. L’étude du signe ne commence qu’une fois les racines calculées et rangées.</p>
+          <ol class="method-list">
+            <li><strong>Mettre l’expression sous forme développée réduite.</strong><span>Repère <em>a</em>, <em>b</em> et <em>c</em>, sans oublier leurs signes, et vérifie que <span class="math">a ≠ 0</span>.</span></li>
+            <li><strong>Calculer le discriminant.</strong><span>Écris <span class="math">Δ = b<sup>2</sup> − 4ac</span> en remplaçant chaque coefficient avec ses parenthèses.</span></li>
+            <li><strong>Conclure sur le nombre de racines.</strong><span>Compare Δ à zéro avant d’appliquer une formule.</span></li>
+            <li><strong>Calculer puis ordonner les racines.</strong><span>Quand il y en a deux, écris clairement <span class="math">x<sub>1</sub> &lt; x<sub>2</sub></span>.</span></li>
+            <li><strong>Établir le signe du trinôme.</strong><span>Commence et termine par le signe de <em>a</em> ; entre deux racines simples, le signe est contraire.</span></li>
+            <li><strong>Lire l’ensemble solution.</strong><span>Respecte le symbole de l’inégalité et inclus les racines seulement si l’inégalité est large (<span class="math">≤</span> ou <span class="math">≥</span>).</span></li>
+          </ol>
+          <h3>Les erreurs à éviter</h3>
+          <ul class="mistake-list">
+            <li><strong>Oublier un signe :</strong> si <span class="math">b = −5</span>, alors <span class="math">b² = (−5)² = 25</span>.</li>
+            <li><strong>Confondre une racine et son facteur :</strong> la racine 3 donne le facteur <span class="math">(x − 3)</span>, pas <span class="math">(x + 3)</span>.</li>
+            <li><strong>Inverser le signe à l’extérieur :</strong> à l’extérieur des racines, c’est le signe de <em>a</em> ; à l’intérieur, son contraire.</li>
+            <li><strong>Inclure une borne à tort :</strong> une racine n’appartient pas à la solution d’une inégalité stricte si elle annule l’expression.</li>
+            <li><strong>Oublier le cas Δ &lt; 0 :</strong> aucune racine réelle ne signifie pas « aucun signe » ; le trinôme garde le signe de <em>a</em>.</li>
+          </ul>
+        </section>
+
+        <section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">06 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">À toi de jouer</h2>
+          <p>Essaie chaque question avant d’ouvrir la correction. Pour les inéquations, écris d’abord le signe du trinôme, puis traduis le signe demandé en intervalles.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Résoudre <span class="math">x<sup>2</sup> + 2x − 8 = 0</span>.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>On a <span class="math">a = 1</span>, <span class="math">b = 2</span>, <span class="math">c = −8</span>. Alors <span class="math">Δ = 2<sup>2</sup> − 4 × 1 × (−8) = 36</span>, donc <span class="math">√Δ = 6</span>. Les racines sont <span class="math">(−2 − 6) / 2 = −4</span> et <span class="math">(−2 + 6) / 2 = 2</span>. <strong>Solutions : {−4 ; 2}.</strong></p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Résoudre <span class="math">x<sup>2</sup> − 6x + 9 ≥ 0</span>.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Le discriminant vaut <span class="math">Δ = 36 − 36 = 0</span>. La racine double est <span class="math">x<sub>0</sub> = 3</span>, et le trinôme s’écrit <span class="math">(x − 3)<sup>2</sup></span>. Un carré étant toujours positif ou nul, l’inégalité est vraie pour tout réel. <strong>Solutions : ℝ.</strong></p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Résoudre <span class="math">−2x<sup>2</sup> + 2x + 4 &gt; 0</span>.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>On factorise : <span class="math">−2x<sup>2</sup> + 2x + 4 = −2(x − 2)(x + 1)</span>. Les racines sont <span class="math">−1</span> et <span class="math">2</span>, et <span class="math">a = −2 &lt; 0</span>. Le trinôme est positif entre les racines. L’inégalité est stricte, donc les bornes sont exclues. <strong>Solutions : ]−1 ; 2[.</strong></p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Résoudre <span class="math">x<sup>2</sup> + 4x + 7 &lt; 0</span>.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Le discriminant vaut <span class="math">Δ = 4<sup>2</sup> − 4 × 1 × 7 = −12</span>. Il est négatif, donc le trinôme garde le signe de <span class="math">a = 1</span> : il est toujours strictement positif. Il ne peut donc jamais être inférieur à zéro. <strong>Solutions : ∅.</strong></p></div>
+          </details>
+        </section>
+
+        <footer class="course-footer"><span>FIN DU CHAPITRE</span><a href="#debut">Revenir au début ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

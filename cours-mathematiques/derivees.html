@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours de mathématiques sur les dérivées : taux de variation, tangente, formules, dérivation et variations des fonctions.">
+    <title>Dérivées | Cours de mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au premier cours">
+        <span class="wordmark-mark" aria-hidden="true">x²</span>
+        <span>LE COURS DE MATHS</span>
+      </a>
+      <span class="edition">PREMIÈRE · SPÉCIALITÉ</span>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout" id="debut">
+      <aside class="course-sidebar" aria-label="Navigation des cours">
+        <p class="sidebar-label">LES COURS</p>
+        <a class="course-link" href="programmes.html"><span class="course-order">∞</span><span>Tous les programmes</span></a>
+        <nav class="course-list" aria-label="Cours de mathématiques">
+          <a class="course-link" href="index.html"><span class="course-order">01</span><span>Second degré</span></a>
+          <a class="course-link" href="limites.html"><span class="course-order">02</span><span>Limites</span></a>
+          <a class="course-link is-current" href="derivees.html" aria-current="page"><span class="course-order">03</span><span>Dérivées</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Chapitres du cours sur les dérivées">
+          <a href="#sens">01 <span>Le taux de variation</span></a>
+          <a href="#tangente">02 <span>La tangente</span></a>
+          <a href="#formules">03 <span>Les formules</span></a>
+          <a href="#calculer">04 <span>Calculer une dérivée</span></a>
+          <a href="#variations">05 <span>Variations</span></a>
+          <a href="#exercices">06 <span>S’entraîner</span></a>
+        </nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">f′</span><p>La dérivée donne la pente de la tangente et indique si la fonction monte ou descend.</p></div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ANALYSE · CHAPITRE 03</p>
+          <h1>Comprendre<br><span>les dérivées</span></h1>
+          <p class="course-intro">La dérivée mesure comment une fonction varie à un instant précis. Géométriquement, c’est la pente de la tangente à la courbe. Son signe permet aussi d’étudier les variations de la fonction.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>LECTURE · 11 MIN</span><span>FONCTIONS DÉRIVABLES</span></div>
+        </header>
+
+        <section class="lesson-section" id="sens" aria-labelledby="sens-title">
+          <p class="section-index">01 / MESURER UNE VARIATION</p>
+          <h2 id="sens-title">Du taux de variation à la dérivée</h2>
+          <p>Entre deux points d’abscisses <em>a</em> et <em>a + h</em>, le taux de variation de <em>f</em> est la variation des ordonnées divisée par la variation des abscisses. Il correspond à la pente de la droite sécante à la courbe.</p>
+          <div class="formula-block"><span class="formula-label">TAUX DE VARIATION ENTRE a ET a + h</span><span class="math-display">[f(a + h) − f(a)] / h &nbsp; avec h ≠ 0</span></div>
+          <p>Pour obtenir la pente au point d’abscisse <em>a</em>, on rapproche le deuxième point du premier : <em>h</em> tend vers zéro. Si le quotient se rapproche d’un nombre réel, ce nombre est la dérivée de <em>f</em> en <em>a</em>, notée <span class="math">f′(a)</span>.</p>
+          <div class="formula-block formula-accent"><span class="formula-label">NOMBRE DÉRIVÉ EN a</span><span class="math-display">f′(a) = lim<sub>h → 0</sub> [f(a + h) − f(a)] / h</span></div>
+          <h3>Exemple avec la fonction carré</h3>
+          <p>Pour <span class="math">f(x) = x²</span>, calculons le taux de variation entre <em>a</em> et <em>a + h</em> :</p>
+          <div class="formula-block"><span class="formula-label">ON DÉVELOPPE ET ON SIMPLIFIE</span><span class="math-display">[(a + h)<sup>2</sup> − a<sup>2</sup>] / h = (2ah + h<sup>2</sup>) / h = 2a + h</span></div>
+          <p>Quand <span class="math">h → 0</span>, l’expression <span class="math">2a + h</span> tend vers <span class="math">2a</span>. La fonction carré est donc dérivable et <span class="math">f′(a) = 2a</span>. En un point d’abscisse 3, sa pente vaut 6.</p>
+          <div class="callout"><strong>Vocabulaire</strong><p><span class="math">f′(a)</span> est le nombre dérivé au point <em>a</em>. <span class="math">f′</span> désigne la fonction dérivée, qui associe à chaque <em>x</em> le nombre dérivé <span class="math">f′(x)</span>.</p></div>
+        </section>
+
+        <section class="lesson-section" id="tangente" aria-labelledby="tangente-title">
+          <p class="section-index">02 / INTERPRÉTATION GÉOMÉTRIQUE</p>
+          <h2 id="tangente-title">L’équation de la tangente</h2>
+          <p>Au point de la courbe d’abscisse <em>a</em>, la tangente est la droite qui approche le mieux la courbe autour de ce point. Son coefficient directeur est le nombre dérivé <span class="math">f′(a)</span>, et elle passe par le point de coordonnées <span class="math">(a ; f(a))</span>.</p>
+          <div class="formula-block formula-accent"><span class="formula-label">TANGENTE À LA COURBE AU POINT D’ABSCISSE a</span><span class="math-display">y = f′(a)(x − a) + f(a)</span></div>
+          <h3>Exemple : tangente à une parabole</h3>
+          <p>Soit <span class="math">f(x) = x²</span> et <span class="math">a = 3</span>. On a <span class="math">f(3) = 9</span> et, puisque <span class="math">f′(x) = 2x</span>, <span class="math">f′(3) = 6</span>. La tangente passe par <span class="math">(3 ; 9)</span> et a pour pente 6 :</p>
+          <div class="worked-result"><span class="math">y = 6(x − 3) + 9</span><strong>Équation : y = 6x − 9</strong></div>
+          <figure class="math-figure">
+            <svg viewBox="0 0 420 220" role="img" aria-labelledby="tangent-plot-title tangent-plot-desc">
+              <title id="tangent-plot-title">Tangente à la parabole y = x² au point d’abscisse 3</title>
+              <desc id="tangent-plot-desc">La parabole verte et sa tangente rouge se touchent au point de coordonnées 3 et 9. La pente de la tangente vaut 6.</desc>
+              <path class="graph-axis" d="M 35 180 H 398 M 80 18 V 205" />
+              <path class="graph-curve graph-up" d="M 80 180 C 153 164 227 116 300 36" />
+              <path class="graph-curve graph-tangent" d="M 112 230 L 365 0" />
+              <circle class="graph-root" cx="245" cy="99" r="4" />
+              <text class="graph-label" x="400" y="176">x</text>
+              <text class="graph-label" x="84" y="15">y</text>
+              <text class="graph-label" x="250" y="115">(3 ; 9)</text>
+              <text class="graph-label" x="292" y="27">y = x²</text>
+              <text class="graph-label" x="329" y="68">y = 6x − 9</text>
+            </svg>
+            <figcaption>Au point de contact (3 ; 9), la courbe et sa tangente ont la même pente : f′(3) = 6.</figcaption>
+          </figure>
+          <p>Vérification : pour <span class="math">x = 3</span>, l’équation de la tangente donne <span class="math">y = 9</span>, comme la courbe. La droite et la courbe ont aussi la même pente au point de contact.</p>
+          <div class="callout"><strong>Signe de la pente</strong><p>Si <span class="math">f′(a) &gt; 0</span>, la tangente monte de gauche à droite. Si <span class="math">f′(a) &lt; 0</span>, elle descend. Si <span class="math">f′(a) = 0</span>, elle est horizontale.</p></div>
+        </section>
+
+        <section class="lesson-section" id="formules" aria-labelledby="formules-title">
+          <p class="section-index">03 / LES OUTILS DE CALCUL</p>
+          <h2 id="formules-title">Les formules de dérivation</h2>
+          <p>Les fonctions usuelles ont des dérivées de référence. Les règles de somme, de produit et de quotient permettent ensuite de dériver des expressions plus complexes. Dans les formules, <em>u</em> et <em>v</em> sont des fonctions dérivables.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table derivative-table">
+              <caption>Fonctions usuelles et leurs dérivées</caption>
+              <thead><tr><th scope="col">Fonction f(x)</th><th scope="col">Dérivée f′(x)</th><th scope="col">Condition</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">k, constante</th><td>0</td><td>k réel</td></tr>
+                <tr><th scope="row">x</th><td>1</td><td></td></tr>
+                <tr><th scope="row">x<sup>n</sup></th><td>n x<sup>n − 1</sup></td><td>n entier positif</td></tr>
+                <tr><th scope="row">1 / x</th><td>−1 / x<sup>2</sup></td><td>x ≠ 0</td></tr>
+                <tr><th scope="row">√x</th><td>1 / (2√x)</td><td>x &gt; 0</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="case-list">
+            <div class="case-row"><span class="case-symbol positive">SOMME</span><p><span class="math">(u + v)′ = u′ + v′</span>. On dérive chaque terme séparément. Plus généralement, <span class="math">(ku)′ = ku′</span> pour une constante <em>k</em>.</p></div>
+            <div class="case-row"><span class="case-symbol zero">PRODUIT</span><p><span class="math">(uv)′ = u′v + uv′</span>. On dérive le premier facteur en gardant le second, puis on ajoute le premier multiplié par la dérivée du second.</p></div>
+            <div class="case-row"><span class="case-symbol negative">QUOTIENT</span><p><span class="math">(u / v)′ = (u′v − uv′) / v²</span>, lorsque <span class="math">v ≠ 0</span>. Au numérateur, retiens : « dérivée du haut fois le bas, moins le haut fois dérivée du bas ».</p></div>
+          </div>
+          <div class="callout callout-coral"><strong>Une erreur fréquente</strong><p>La dérivée d’un produit n’est pas <span class="math">u′v′</span>. Il faut appliquer la formule <span class="math">u′v + uv′</span>.</p></div>
+        </section>
+
+        <section class="lesson-section" id="calculer" aria-labelledby="calculer-title">
+          <p class="section-index">04 / APPLIQUER LES RÈGLES</p>
+          <h2 id="calculer-title">Calculer une dérivée</h2>
+          <p>Commence par repérer la structure de l’expression : somme, produit ou quotient. Applique la règle correspondante, puis simplifie. Pour un polynôme, dérive chaque terme ; un terme constant disparaît et la puissance descend devant le <em>x</em>.</p>
+          <h3>Exemple : un polynôme</h3>
+          <p>Soit <span class="math">f(x) = 3x<sup>4</sup> − 2x² + 5x − 7</span>. On dérive terme à terme :</p>
+          <div class="formula-block"><span class="formula-label">PUISSANCE, SOMME ET CONSTANTE</span><span class="math-display">f′(x) = 12x<sup>3</sup> − 4x + 5</span></div>
+          <p>Le terme constant <span class="math">−7</span> a pour dérivée zéro. Pour <span class="math">3x<sup>4</sup></span>, on multiplie 3 par 4 et on diminue l’exposant d’une unité : <span class="math">12x³</span>.</p>
+          <h3>Exemple : un produit</h3>
+          <p>Pour <span class="math">g(x) = (x² + 1)(2x − 3)</span>, posons <span class="math">u = x² + 1</span> et <span class="math">v = 2x − 3</span>. Alors <span class="math">u′ = 2x</span> et <span class="math">v′ = 2</span>. La règle du produit donne :</p>
+          <div class="formula-block"><span class="formula-label">APPLIQUER (uv)′ = u′v + uv′</span><span class="math-display">g′(x) = 2x(2x − 3) + 2(x<sup>2</sup> + 1) = 6x<sup>2</sup> − 6x + 2</span></div>
+          <p>On pouvait aussi développer d’abord <em>g</em>, puis dériver le polynôme obtenu. Les deux méthodes donnent le même résultat.</p>
+        </section>
+
+        <section class="lesson-section" id="variations" aria-labelledby="variations-title">
+          <p class="section-index">05 / ÉTUDIER LE SENS DE VARIATION</p>
+          <h2 id="variations-title">Du signe de f′ aux variations</h2>
+          <p>Sur un intervalle, le signe de la dérivée donne le sens de variation de la fonction. Cette propriété transforme le calcul de <span class="math">f′(x)</span> en outil pour décrire le comportement de <em>f</em>.</p>
+          <div class="case-list">
+            <div class="case-row"><span class="case-symbol positive">f′ &gt; 0</span><p>La fonction <em>f</em> est strictement croissante : quand <em>x</em> augmente, <em>f(x)</em> augmente.</p></div>
+            <div class="case-row"><span class="case-symbol negative">f′ &lt; 0</span><p>La fonction <em>f</em> est strictement décroissante : quand <em>x</em> augmente, <em>f(x)</em> diminue.</p></div>
+            <div class="case-row"><span class="case-symbol zero">f′ = 0</span><p>Si la dérivée est nulle sur tout un intervalle, la fonction y est constante. Si elle s’annule en un seul point, il faut regarder son signe avant et après pour déterminer s’il y a un extremum.</p></div>
+          </div>
+          <h3>Exemple : trouver un minimum</h3>
+          <p>Soit <span class="math">f(x) = x² − 4x + 1</span>. Sa dérivée est <span class="math">f′(x) = 2x − 4 = 2(x − 2)</span>. Elle est négative quand <span class="math">x &lt; 2</span>, nulle en 2, puis positive quand <span class="math">x &gt; 2</span>. La fonction décroît donc jusqu’à 2, puis croît : elle atteint un minimum en 2.</p>
++          <div class="worked-result"><span class="math">f(2) = 4 − 8 + 1 = −3</span><strong>Minimum : −3 atteint pour x = 2</strong></div>
++          <div class="callout"><strong>Le signe avant et après compte</strong><p>Une dérivée nulle ne suffit pas à prouver qu’il y a un maximum ou un minimum. Il faut vérifier que son signe change : de − à + pour un minimum, de + à − pour un maximum.</p></div>
++        </section>
++
++        <section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
++          <p class="section-index">06 / S’ENTRAÎNER</p>
++          <h2 id="exercices-title">À toi de jouer</h2>
++          <p>Pour chaque exercice, annonce d’abord la règle utilisée. Pour les variations, étudie le signe de la dérivée avant de conclure.</p>
++          <details class="exercise"><summary><span class="exercise-number">A</span><span>Dériver <span class="math">f(x) = 5x³ − 2x + 4</span>.</span><span class="reveal-label">Voir la correction</span></summary><div class="exercise-answer"><p>On dérive terme à terme : <span class="math">(5x³)′ = 15x²</span>, <span class="math">(−2x)′ = −2</span> et <span class="math">4′ = 0</span>. <strong>Donc f′(x) = 15x² − 2.</strong></p></div></details>
++          <details class="exercise"><summary><span class="exercise-number">B</span><span>Déterminer l’équation de la tangente à <span class="math">f(x) = x² + 1</span> au point d’abscisse 2.</span><span class="reveal-label">Voir la correction</span></summary><div class="exercise-answer"><p>On a <span class="math">f′(x) = 2x</span>, donc <span class="math">f′(2) = 4</span>, et <span class="math">f(2) = 5</span>. La tangente vérifie <span class="math">y = 4(x − 2) + 5</span>. <strong>Son équation est y = 4x − 3.</strong></p></div></details>
++          <details class="exercise"><summary><span class="exercise-number">C</span><span>Étudier les variations de <span class="math">g(x) = x² − 6x + 8</span>.</span><span class="reveal-label">Voir la correction</span></summary><div class="exercise-answer"><p><span class="math">g′(x) = 2x − 6 = 2(x − 3)</span>. La dérivée est négative si <span class="math">x &lt; 3</span>, nulle en 3 et positive si <span class="math">x &gt; 3</span>. <em>g</em> décroît puis croît ; son minimum vaut <span class="math">g(3) = 9 − 18 + 8 = −1</span>. <strong>Minimum : −1 atteint en x = 3.</strong></p></div></details>
++          <details class="exercise"><summary><span class="exercise-number">D</span><span>Dériver <span class="math">h(x) = (x + 1)(x² − 2)</span>.</span><span class="reveal-label">Voir la correction</span></summary><div class="exercise-answer"><p>Avec la règle du produit, <span class="math">u = x + 1</span> et <span class="math">v = x² − 2</span>, donc <span class="math">u′ = 1</span> et <span class="math">v′ = 2x</span>. Alors <span class="math">h′ = x² − 2 + 2x(x + 1) = 3x² + 2x − 2</span>. <strong>h′(x) = 3x² + 2x − 2.</strong></p></div></details>
++        </section>
++
++        <footer class="course-footer"><span>COURS 03 / 03</span><a href="index.html">Revenir au premier cours ↑</a></footer>
++      </article>
++    </main>
++  </body>
++</html>

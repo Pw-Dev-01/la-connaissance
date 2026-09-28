@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Fiche de cours de mathématiques du lycée et des classes préparatoires scientifiques.">
+    <title>Cours de mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="programme-data.js" defer></script>
+    <script src="cours.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Premier cours, second degré">
+        <span class="wordmark-mark" aria-hidden="true">x²</span>
+        <span>LE COURS DE MATHS</span>
+      </a>
+      <a class="edition catalogue-back" href="programmes.html">TOUS LES PROGRAMMES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+    <main class="lesson-layout">
+      <aside class="course-sidebar" aria-label="Navigation du programme">
+        <p class="sidebar-label" id="lesson-level-label">PROGRAMME</p>
+        <nav class="chapter-nav" id="lesson-chapter-nav"></nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">∑</span><p>Reviens au catalogue pour choisir un autre niveau ou une autre filière.</p></div>
+      </aside>
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span id="lesson-eyebrow">FICHE DE COURS</span></p>
+          <h1 id="lesson-title">Cours de mathématiques</h1>
+          <p class="course-intro" id="lesson-summary"></p>
+          <div class="course-meta"><span id="lesson-field"></span><span id="lesson-level"></span></div>
+          <a class="course-source" id="lesson-source" target="_blank" rel="noreferrer" hidden>Programme officiel de référence ↗</a>
+        </header>
+        <div id="chapter-lesson" hidden></div>
+        <div id="lesson-generic">
+        <section class="lesson-section" aria-labelledby="repere-title">
+          <p class="section-index">REPÈRES DU PROGRAMME</p>
+          <h2 id="repere-title">Ce qu’il faut comprendre</h2>
+          <p id="lesson-main-point"></p>
+          <div class="callout"><strong>Avant de commencer</strong><p id="lesson-prerequisite"></p></div>
+        </section>
+        <section class="lesson-section" aria-labelledby="methode-title">
+          <p class="section-index">TRAVAILLER LE CHAPITRE</p>
+          <h2 id="methode-title">Une démarche efficace</h2>
+          <ol class="method-list" id="lesson-method"></ol>
+        </section>
+        <section class="lesson-section" aria-labelledby="suite-title">
+          <p class="section-index">POUR CONTINUER</p>
+          <h2 id="suite-title">Dans le même programme</h2>
+          <p>Utilise le menu à gauche pour passer au chapitre suivant, ou retourne au catalogue pour changer de classe.</p>
+        </section>
+        </div>
+        <footer class="course-footer"><span id="lesson-footer"></span><a href="programmes.html">Retour aux programmes ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>
