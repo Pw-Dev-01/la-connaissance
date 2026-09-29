@@ -4,10 +4,10 @@ const totalChapters = window.courseCatalog.reduce((total, programme) => total + 
 
 document.querySelector('#catalogue-count').textContent = `${totalChapters} INTITULÉS · ${window.courseCatalog.length} NIVEAUX`;
 
-window.courseCatalog.forEach((programme) => {
+window.courseCatalog.forEach((programme, index) => {
   const levelLink = document.createElement('a');
   levelLink.href = `#${programme.id}`;
-  levelLink.innerHTML = `<span>${String(programme.chapters.length).padStart(2, '0')}</span>${programme.title}`;
+  levelLink.innerHTML = `<span>${index + 1}</span>${programme.title}`;
   levelNavigation.append(levelLink);
 
   const section = document.createElement('section');
