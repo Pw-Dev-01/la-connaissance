@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours de géologie : minéraux, roches, tectonique des plaques, séismes et mesure du temps géologique, avec relations expliquées et sources ouvertes.">
+    <title>Programmes · Cours de géologie</title>
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      .catalogue-levels a.is-current {
+        border-left-color: var(--coral);
+        color: #ad482f;
+      }
+    </style>
+    <script src="geologie-data.js" defer></script>
+    <script src="catalogue.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Catalogue des cours de géologie">
+        <span class="wordmark-mark" aria-hidden="true">◈</span>
+        <span>LE COURS DE GÉOLOGIE</span>
+      </a>
+      <a class="edition catalogue-back" href="../index.html">TOUTES LES DISCIPLINES ↗</a>
+    </header>
+    <main class="catalogue-layout">
+      <aside class="course-sidebar" aria-label="Branches de la géologie">
+        <p class="sidebar-label">LES BRANCHES</p>
+        <nav class="catalogue-levels" id="catalogue-levels"></nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">◈</span><p>Des échantillons observables aux processus planétaires : choisis une branche et explore ses notions.</p></div>
+      </aside>
+      <article class="catalogue-content">
+        <header class="course-heading catalogue-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BIBLIOTHÈQUE · SCIENCES DE LA TERRE</p>
+          <h1>Comprendre<br><span>la Terre solide</span></h1>
+          <p class="course-intro">La géologie relie les observations de terrain à des processus : minéraux, roches, plaques, séismes et temps profonds. Chaque chapitre présente les notions, une relation essentielle, un exemple guidé et un exercice corrigé.</p>
+          <div class="course-meta"><span id="catalogue-count">3 BRANCHES · 6 CHAPITRES</span><span>BASES → APPROFONDISSEMENT</span></div>
+        </header>
+        <div id="programme-sections"></div>
+        <footer class="course-footer"><span>COURS DE GÉOLOGIE</span><a href="cours.html?id=mineraux">Ouvrir le premier cours ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

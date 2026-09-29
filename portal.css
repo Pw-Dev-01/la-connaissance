@@ -79,6 +79,8 @@ h2 { margin: 0; font-family: var(--serif); font-size: 36px; font-weight: 400; li
 .entry-symbol { width: 49px; aspect-ratio: 1; display: grid; place-items: center; background: var(--ink); color: var(--paper); font-family: var(--serif); font-size: 22px; }
 .physics-entry .entry-symbol { background: var(--forest); }
 .chemistry-entry .entry-symbol { background: var(--rust); }
+.economics-entry .entry-symbol { background: #657b55; }
+.geology-entry .entry-symbol { background: #6b5844; }
 
 .entry-copy { display: grid; gap: 7px; }
 .entry-copy strong { font-family: var(--serif); font-size: 25px; font-weight: 400; }
