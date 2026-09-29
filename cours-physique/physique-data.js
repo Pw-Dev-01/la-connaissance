@@ -96,3 +96,92 @@ window.courseCatalog = [
     ]
   }
 ];
+
+const stellarChapter = window.courseCatalog
+  .flatMap((branch) => branch.chapters)
+  .find((chapter) => chapter.id === 'etoiles');
+
+stellarChapter.summary = 'Naissance, structure, types spectraux, durées de vie et évolution jusqu’aux naines blanches, étoiles à neutrons ou trous noirs.';
+stellarChapter.lesson = {
+  sections: [
+    'Une étoile se forme par effondrement d’une région dense d’un nuage moléculaire. Quand son cœur devient assez chaud, la fusion de l’hydrogène démarre : l’étoile entre sur la séquence principale, où elle passe la majeure partie de sa vie. L’équilibre hydrostatique est un équilibre local entre le gradient de pression, dirigé vers l’extérieur, et la gravitation, dirigée vers le centre ; ce n’est pas un équilibre entre fusion et gravité prises comme deux forces ponctuelles.',
+    'Dans le cœur, l’hydrogène fusionne en hélium, principalement par la chaîne proton-proton dans les étoiles de masse proche ou inférieure à celle du Soleil, et avec une contribution croissante du cycle CNO dans les étoiles plus chaudes et massives. L’énergie produite est transportée vers l’extérieur puis rayonnée. La luminosité, le rayon et la température effective sont liés par la loi de Stefan-Boltzmann. Les équations de structure ci-dessous expriment, dans le modèle sphérique, l’équilibre de pression et l’accumulation de masse.',
+    'Les classes spectrales O, B, A, F, G, K et M classent les étoiles selon leur spectre et leur température de surface, des plus chaudes (O) aux plus froides (M). Elles ne sont pas les étapes successives d’une vie. « Géante rouge » décrit un stade évolutif ; « naine blanche », « étoile à neutrons » et « trou noir » désignent des résidus. La couleur seule ne permet donc pas de prédire la fin d’une étoile.',
+    'La masse contrôle fortement la durée de vie : une étoile massive a davantage de combustible, mais sa luminosité et son rythme de fusion sont beaucoup plus élevés. Ordres de grandeur de durée sur la séquence principale, d’après des modèles stellaires : type O5, environ 40 M☉, 1 million d’années ; B0, 16 M☉, 10 millions d’années ; A0, 3,3 M☉, 500 millions d’années ; F0, 1,7 M☉, 2,7 milliards d’années ; G0, 1,1 M☉, 9 milliards d’années ; K0, 0,8 M☉, 14 milliards d’années ; M0, 0,4 M☉, 200 milliards d’années. Ce sont des valeurs représentatives, pas une table universelle : composition, masse exacte et modèle modifient les résultats. Les naines rouges les moins massives peuvent vivre jusqu’à environ 14 000 milliards d’années ; l’Univers étant âgé d’environ 13,8 milliards d’années, aucune n’a encore achevé toute son évolution prévue.',
+    'Le Soleil, étoile de type G, a environ 4,6 milliards d’années et devrait rester sur la séquence principale encore environ 5 milliards d’années. Après l’épuisement de l’hydrogène central, son cœur se contractera tandis que ses couches externes gonfleront : il deviendra une géante rouge, puis éjectera une partie de son enveloppe. Le gaz éjecté peut former une nébuleuse planétaire ; le cœur résiduel deviendra une naine blanche, principalement composée de carbone et d’oxygène, qui se refroidira lentement. Une naine blanche stable ne dépasse pas la limite de Chandrasekhar, proche de 1,4 M☉. Le Soleil ne finira pas en supernova ni en trou noir.',
+    'Les étoiles suffisamment massives peuvent poursuivre la fusion des éléments dans des couches successives jusqu’à former un cœur riche en fer. La fusion du fer ne fournit plus l’énergie nécessaire pour soutenir le cœur : celui-ci s’effondre et l’étoile peut subir une supernova par effondrement du cœur. Le résidu compact est une étoile à neutrons si la matière du cœur peut être soutenue par la matière nucléaire dense ; si le résidu est trop massif, l’effondrement peut former un trou noir. Les limites dépendent des modèles, de la perte de masse et d’éventuelles interactions dans un système binaire : il n’existe pas de correspondance exacte et universelle entre masse initiale et résidu final. Une étoile à neutrons peut être observée comme pulsar si son rayonnement balaie périodiquement notre ligne de visée.',
+    'Un trou noir stellaire est un objet dont l’horizon des événements délimite la région d’où aucun signal ne peut ressortir. Pour un trou noir idéal, non chargé et non rotatif (solution de Schwarzschild), le rayon de cet horizon est Rₛ = 2GM/c². Il vaut environ 2,95 km par masse solaire. C’est un rayon, non un diamètre, et l’horizon n’est pas une surface matérielle. Cette formule n’est pas le rayon d’une étoile ordinaire ni la description complète d’un trou noir en rotation. À grande distance, le champ gravitationnel dépend de la masse comme celui de tout autre objet de même masse : un trou noir n’aspire pas toute matière environnante.',
+    'Les astronomes étudient les étoiles par leur spectre, leur luminosité, leur température, leur distance et leur évolution dans le diagramme de Hertzsprung-Russell. La luminosité est la puissance totale émise par l’étoile ; le flux est la puissance reçue par unité de surface et diminue comme le carré de la distance.'
+  ],
+  formula: {
+    label: 'STRUCTURE STELLAIRE ET RAYON DE SCHWARZSCHILD',
+    text: 'dP/dr = −G Mᵣρ/r²  |  dMᵣ/dr = 4πr²ρ  |  L = 4πR²σTₑff⁴  |  tₘₛ ≈ 10¹⁰ ans × (M/M☉)/(L/L☉)  |  F = L/(4πd²)  |  Rₛ = 2GM/c² ≈ 2,95 km × (M/M☉)'
+  },
+  equationDetails: [
+    {
+      title: 'Équilibre hydrostatique',
+      formula: 'dP/dr = −G Mᵣρ/r²',
+      explanation: 'Dans une étoile sphérique stable, la pression augmente vers le centre pour soutenir les couches contre la gravitation. Le signe négatif indique que la pression décroît quand le rayon r augmente.',
+      parameters: 'P : pression (Pa) ; r : distance au centre (m) ; Mᵣ : masse contenue à l’intérieur du rayon r (kg) ; ρ : masse volumique locale (kg·m⁻³) ; G = 6,67430 × 10⁻¹¹ m³·kg⁻¹·s⁻².',
+      example: 'Dans un point d’un modèle stellaire, prenons r = 10⁹ m, Mᵣ = 10³⁰ kg et ρ = 10⁵ kg·m⁻³. Alors dP/dr = −(6,67430 × 10⁻¹¹ × 10³⁰ × 10⁵)/(10⁹)².',
+      result: 'Le gradient vaut environ −6,67 × 10⁶ Pa·m⁻¹ : la pression diminue vers l’extérieur à ce point.'
+    },
+    {
+      title: 'Masse contenue dans une étoile sphérique',
+      formula: 'dMᵣ/dr = 4πr²ρ',
+      explanation: 'Une mince coquille sphérique de rayon r et d’épaisseur dr a pour volume environ 4πr²dr. Sa masse vaut donc ρ fois ce volume ; l’équation exprime la masse ajoutée quand on augmente légèrement r.',
+      parameters: 'Mᵣ : masse à l’intérieur de r (kg) ; r : rayon mesuré depuis le centre (m) ; ρ : masse volumique de la coquille (kg·m⁻³). La dérivée dMᵣ/dr s’exprime en kg·m⁻¹.',
+      example: 'Pour une coquille située à r = 10⁸ m et de masse volumique ρ = 10⁵ kg·m⁻³, dMᵣ/dr = 4π × (10⁸)² × 10⁵.',
+      result: 'La masse augmente d’environ 1,26 × 10²² kg par mètre de rayon à cet endroit.'
+    },
+    {
+      title: 'Luminosité et température effective',
+      formula: 'L = 4πR²σTₑff⁴',
+      explanation: 'C’est la loi de Stefan-Boltzmann appliquée à une étoile sphérique : la puissance émise par unité de surface vaut σTₑff⁴, puis on la multiplie par la surface totale 4πR². Tₑff est la température d’un corps noir qui émettrait le même flux surfacique que l’étoile.',
+      parameters: 'L : luminosité, puissance totale rayonnée (W) ; R : rayon de l’étoile (m) ; σ = 5,670374419 × 10⁻⁸ W·m⁻²·K⁻⁴ : constante de Stefan-Boltzmann ; Tₑff : température effective (K).',
+      example: 'Pour le Soleil, prenons R = 6,96 × 10⁸ m et Tₑff = 5 772 K. L = 4π(6,96 × 10⁸)² × (5,670374419 × 10⁻⁸) × 5 772⁴.',
+      result: 'On obtient L ≈ 3,83 × 10²⁶ W, proche de la luminosité solaire mesurée.'
+    },
+    {
+      title: 'Durée de vie sur la séquence principale',
+      formula: 'tₘₛ ≈ 10¹⁰ ans × (M/M☉)/(L/L☉)',
+      explanation: 'Cette estimation compare la quantité de combustible disponible, proportionnelle à la masse M, au rythme auquel il est consommé, lié à la luminosité L. Elle donne un ordre de grandeur de la durée de fusion de l’hydrogène au cœur, pas la durée totale incluant les phases de géante et de résidu.',
+      parameters: 'tₘₛ : durée sur la séquence principale (ans) ; M : masse de l’étoile ; L : sa luminosité ; M☉ et L☉ : masse et luminosité du Soleil. Les rapports M/M☉ et L/L☉ sont sans unité. La valeur 10¹⁰ ans est une normalisation approximative pour le Soleil.',
+      example: 'Pour une étoile modèle de masse M = 2 M☉ et de luminosité L = 16 L☉, tₘₛ ≈ 10¹⁰ × 2/16 ans.',
+      result: 'La durée estimée est d’environ 1,25 × 10⁹ ans, soit 1,25 milliard d’années.'
+    },
+    {
+      title: 'Luminosité et flux reçu',
+      formula: 'F = L/(4πd²)',
+      explanation: 'Si la source rayonne de façon isotrope et que la lumière se propage sans absorption, sa puissance se répartit sur une sphère de rayon d. L’aire de cette sphère est 4πd² ; le flux diminue donc comme l’inverse du carré de la distance.',
+      parameters: 'F : flux reçu, puissance par unité de surface (W·m⁻²) ; L : luminosité intrinsèque de la source (W) ; d : distance à la source (m).',
+      example: 'À la distance moyenne Terre-Soleil d ≈ 1,496 × 10¹¹ m, avec L☉ ≈ 3,83 × 10²⁶ W, F = 3,83 × 10²⁶/[4π(1,496 × 10¹¹)²].',
+      result: 'On trouve environ 1,36 × 10³ W·m⁻², soit 1,36 kW·m⁻², avant les effets de l’atmosphère terrestre.'
+    },
+    {
+      title: 'Rayon de Schwarzschild',
+      formula: 'Rₛ = 2GM/c²',
+      explanation: 'Pour un trou noir idéal, non chargé et non rotatif, cette solution de la relativité générale donne le rayon de l’horizon des événements. L’horizon est une frontière causale, pas une surface matérielle ; Rₛ est un rayon, et non un diamètre.',
+      parameters: 'Rₛ : rayon de l’horizon (m) ; G = 6,67430 × 10⁻¹¹ m³·kg⁻¹·s⁻² ; M : masse du trou noir (kg) ; c = 299 792 458 m·s⁻¹ : vitesse de la lumière dans le vide. Pour M = M☉, Rₛ ≈ 2,95 km.',
+      example: 'Pour M = 10 M☉, Rₛ ≈ 2,95 km × 10.',
+      result: 'Le rayon est d’environ 29,5 km ; le diamètre correspondant est d’environ 59 km.'
+    }
+  ],
+  example: {
+    statement: 'Quel serait le rayon de Schwarzschild d’un trou noir non rotatif de 10 M☉ ?',
+    calculation: 'On utilise Rₛ ≈ 2,95 km × (M/M☉). Pour M = 10 M☉, Rₛ ≈ 2,95 × 10 km = 29,5 km.',
+    answer: 'Le rayon de l’horizon serait d’environ 29,5 km, soit un diamètre d’environ 59 km.'
+  },
+  exercise: {
+    question: 'Estimer le rayon de Schwarzschild d’un trou noir non rotatif de 4 M☉.',
+    answer: 'Rₛ ≈ 2,95 km × 4 = 11,8 km. Cette estimation utilise le modèle de Schwarzschild, pour un objet non chargé et non rotatif.'
+  },
+  sources: [
+    { title: 'NASA — Star Basics', url: 'https://science.nasa.gov/universe/stars/' },
+    { title: 'NASA — Star Types', url: 'https://science.nasa.gov/universe/stars/types/' },
+    { title: 'OpenStax Astronomy 2e — Lifetimes on the Main Sequence', url: 'https://openstax.org/books/astronomy-2e/pages/22-1-evolution-from-the-main-sequence-to-red-giants' },
+    { title: 'OpenStax Astronomy 2e — The Death of Low-Mass Stars', url: 'https://openstax.org/books/astronomy-2e/pages/23-1-the-death-of-low-mass-stars' },
+    { title: 'OpenStax Astronomy 2e — Evolution of Massive Stars', url: 'https://openstax.org/books/astronomy-2e/pages/23-2-evolution-of-massive-stars-an-explosive-finish' },
+    { title: 'OpenStax Astronomy 2e — Black Holes and Schwarzschild radius', url: 'https://openstax.org/books/astronomy-2e/pages/24-5-black-holes' }
+  ]
+};

@@ -49,9 +49,32 @@ if (!branch || !chapter) {
   theory.append(formula);
   lessonContainer.append(theory);
 
+  const hasEquationDetails = Boolean(chapter.lesson.equationDetails?.length);
+  if (hasEquationDetails) {
+    const equationSection = document.createElement('section');
+    equationSection.className = 'lesson-section';
+    addText(equationSection, 'p', 'section-index', '02 / ÉQUATIONS DÉTAILLÉES');
+    addText(equationSection, 'h2', '', 'Formules, paramètres et applications');
+    chapter.lesson.equationDetails.forEach((equation) => {
+      addText(equationSection, 'h3', '', equation.title);
+      const equationFormula = document.createElement('div');
+      equationFormula.className = 'formula-block';
+      addText(equationFormula, 'span', 'math-display', equation.formula);
+      equationSection.append(equationFormula);
+      addText(equationSection, 'p', '', equation.explanation);
+      addText(equationSection, 'p', '', `Paramètres et unités : ${equation.parameters}`);
+      addText(equationSection, 'p', '', `Exemple : ${equation.example}`);
+      const result = document.createElement('div');
+      result.className = 'worked-result';
+      addText(result, 'strong', '', equation.result);
+      equationSection.append(result);
+    });
+    lessonContainer.append(equationSection);
+  }
+
   const example = document.createElement('section');
   example.className = 'lesson-section';
-  addText(example, 'p', 'section-index', '02 / EXEMPLE GUIDÉ');
+  addText(example, 'p', 'section-index', `${hasEquationDetails ? '03' : '02'} / EXEMPLE GUIDÉ`);
   addText(example, 'h2', '', 'Méthode pas à pas');
   addText(example, 'p', '', chapter.lesson.example.statement);
   addText(example, 'p', '', chapter.lesson.example.calculation);
@@ -63,7 +86,7 @@ if (!branch || !chapter) {
 
   const practice = document.createElement('section');
   practice.className = 'lesson-section exercise-section';
-  addText(practice, 'p', 'section-index', '03 / S’ENTRAÎNER');
+  addText(practice, 'p', 'section-index', `${hasEquationDetails ? '04' : '03'} / S’ENTRAÎNER`);
   addText(practice, 'h2', '', 'À toi de jouer');
   const exercise = document.createElement('details');
   exercise.className = 'exercise';
@@ -80,4 +103,20 @@ if (!branch || !chapter) {
   });
   practice.append(exercise);
   lessonContainer.append(practice);
+
+  if (chapter.lesson.sources?.length) {
+    const references = document.createElement('section');
+    references.className = 'lesson-section';
+    addText(references, 'p', 'section-index', `${hasEquationDetails ? '05' : '04'} / RÉFÉRENCES`);
+    addText(references, 'h2', '', 'Sources scientifiques');
+    chapter.lesson.sources.forEach((source) => {
+      const paragraph = document.createElement('p');
+      const link = addText(paragraph, 'a', '', source.title);
+      link.href = source.url;
+      link.target = '_blank';
+      link.rel = 'noreferrer';
+      references.append(paragraph);
+    });
+    lessonContainer.append(references);
+  }
 }
