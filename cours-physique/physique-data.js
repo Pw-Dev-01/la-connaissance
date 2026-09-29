@@ -3,7 +3,7 @@ window.courseCatalog = [
     id: 'mecanique', title: 'Mécanique', note: 'Décrire le mouvement, ses causes et les échanges d’énergie.',
     chapters: [
       { id: 'cinematique', title: 'Cinématique du point', field: 'Classique · bases', summary: 'Position, vitesse et accélération en une et plusieurs dimensions.', lesson: { sections: ['La cinématique décrit un mouvement sans chercher ses causes. On choisit un référentiel, une origine des dates et un repère ; la position devient alors une fonction du temps.', 'La vitesse est la dérivée de la position et l’accélération la dérivée de la vitesse. En mouvement rectiligne uniformément accéléré, l’accélération est constante.'], formula: { label: 'MOUVEMENT À ACCÉLÉRATION CONSTANTE', text: 'v(t) = v₀ + at  |  x(t) = x₀ + v₀t + ½at²' }, example: { statement: 'Un véhicule part du repos et accélère à 2 m·s⁻² pendant 5 s. Quelle distance parcourt-il ?', calculation: 'Avec v₀ = 0 et x₀ = 0, x(5) = ½ × 2 × 5².', answer: 'Il parcourt 25 m.' }, exercise: { question: 'Un objet a v₀ = 3 m·s⁻¹ et a = 2 m·s⁻² pendant 4 s. Quelle est sa vitesse finale ?', answer: 'v = 3 + 2 × 4 = 11 m·s⁻¹.' } } },
-      { id: 'lois-newton', title: 'Lois de Newton et forces', field: 'Classique · bases', summary: 'Bilan des forces, inertie, dynamique et action-réaction.', lesson: { sections: ['Une force modélise une interaction. Pour étudier un objet, on isole le système, on dresse le bilan des forces extérieures puis on applique la deuxième loi de Newton.', 'Dans un référentiel galiléen, la somme vectorielle des forces détermine l’accélération. Si la résultante est nulle, la vitesse reste constante : c’est le principe d’inertie.'], formula: { label: 'DEUXIÈME LOI DE NEWTON', text: 'ΣF⃗ext = m a⃗' }, example: { statement: 'Une masse de 4 kg subit une force horizontale résultante de 12 N. Quelle est son accélération ?', calculation: 'a = F/m = 12/4.', answer: 'a = 3 m·s⁻² dans la direction de la résultante.' }, exercise: { question: 'Quelle résultante faut-il pour accélérer une masse de 2 kg à 5 m·s⁻² ?', answer: 'F = ma = 2 × 5 = 10 N.' } } },
+      { id: 'lois-newton', title: 'Lois de Newton et forces', field: 'Classique · bases', summary: 'Bilan des forces, inertie, dynamique et action-réaction.', lesson: { sections: ['Une force modélise une interaction. Pour étudier un objet, on isole le système, on dresse le bilan des forces extérieures puis on applique la deuxième loi de Newton.', 'Dans un référentiel galiléen, la somme vectorielle des forces détermine l’accélération. Si la résultante est nulle, la vitesse reste constante : c’est le principe d’inertie.'], formula: { label: 'DEUXIÈME LOI DE NEWTON', text: 'Σ F⃗ₑₓₜ = m a⃗' }, example: { statement: 'Une masse de 4 kg subit une force horizontale résultante de 12 N. Quelle est son accélération ?', calculation: 'a = F/m = 12/4.', answer: 'a = 3 m·s⁻² dans la direction de la résultante.' }, exercise: { question: 'Quelle résultante faut-il pour accélérer une masse de 2 kg à 5 m·s⁻² ?', answer: 'F = ma = 2 × 5 = 10 N.' } } },
       { id: 'energie-mecanique', title: 'Travail, énergie et puissance', field: 'Classique · intermédiaire', summary: 'Travail d’une force, énergie cinétique, potentielle et conservation.', lesson: { sections: ['L’énergie cinétique dépend de la masse et de la vitesse. Le travail d’une force mesure le transfert d’énergie associé à un déplacement.', 'Le théorème de l’énergie cinétique relie la variation d’énergie cinétique au travail total des forces. En l’absence de dissipation, l’énergie mécanique se conserve.'], formula: { label: 'ÉNERGIES ET THÉORÈME', text: 'Ec = ½mv²  |  ΔEc = ΣW(F)  |  Em = Ec + Ep' }, example: { statement: 'Un objet de 2 kg passe de 3 à 5 m·s⁻¹. Quelle est la variation de son énergie cinétique ?', calculation: 'ΔEc = ½ × 2 × (5² − 3²) = 25 − 9.', answer: 'ΔEc = 16 J.' }, exercise: { question: 'Calculer Ec pour m = 0,5 kg et v = 4 m·s⁻¹.', answer: 'Ec = ½ × 0,5 × 4² = 4 J.' } } }
     ]
   },
@@ -185,3 +185,613 @@ stellarChapter.lesson = {
     { title: 'OpenStax Astronomy 2e — Black Holes and Schwarzschild radius', url: 'https://openstax.org/books/astronomy-2e/pages/24-5-black-holes' }
   ]
 };
+
+const quantumChapters = Object.fromEntries(
+  window.courseCatalog
+    .flatMap((branch) => branch.chapters)
+    .filter((chapter) => ['photons', 'dualite-onde-corpuscule', 'atomes-niveaux'].includes(chapter.id))
+    .map((chapter) => [chapter.id, chapter])
+);
+
+quantumChapters.photons.summary = 'Énergie des photons, effet photoélectrique, fonction de travail et fréquence ou longueur d’onde seuil.';
+quantumChapters.photons.lesson.sections = [
+  'Un photon de fréquence f transporte une énergie E = hf. À fréquence fixée, augmenter l’intensité d’une lumière augmente surtout le nombre de photons reçus par unité de temps, pas l’énergie de chacun. Dans le vide, la fréquence et la longueur d’onde sont liées par c = fλ.',
+  'Dans l’effet photoélectrique, un photon peut céder son énergie à un électron du matériau. Une partie sert à extraire l’électron (fonction de travail φ) ; le reste devient son énergie cinétique. Il existe donc une fréquence seuil propre au matériau. Au seuil idéal, l’électron sort avec une énergie cinétique nulle ; en dessous, augmenter l’intensité ne suffit pas à extraire des électrons.',
+  'Le potentiel d’arrêt est la valeur absolue de la tension inverse nécessaire pour empêcher même les photoélectrons les plus énergétiques d’atteindre l’électrode collectrice. Il donne une mesure de leur énergie cinétique maximale. Les équations ci-dessous supposent le modèle photoélectrique à un photon, sans pertes supplémentaires de l’électron dans le matériau.'
+];
+quantumChapters.photons.lesson.formula = {
+  label: 'ÉNERGIE DU PHOTON',
+  text: 'Eγ = hf = hc/λ'
+};
+quantumChapters.photons.lesson.example = {
+  statement: 'Un photon a une fréquence f = 5,00 × 10¹⁴ Hz. Calculer son énergie et sa longueur d’onde dans le vide.',
+  calculation: 'Avec h = 6,626 × 10⁻³⁴ J·s et c = 2,998 × 10⁸ m·s⁻¹ : E = hf = 3,313 × 10⁻¹⁹ J ; λ = c/f = 6,00 × 10⁻⁷ m.',
+  answer: 'E ≈ 2,07 eV et λ ≈ 600 nm.'
+};
+quantumChapters.photons.lesson.exercise = {
+  question: 'Une surface de travail φ = 2,00 eV reçoit une lumière de longueur d’onde 400 nm. Quelle est l’énergie cinétique maximale des photoélectrons ?',
+  answer: 'Eγ = hc/λ ≈ 1239,84/400 = 3,10 eV. Kmax = Eγ − φ ≈ 3,10 − 2,00 = 1,10 eV.'
+};
+quantumChapters.photons.lesson.equationDetails = [
+  {
+    title: 'Énergie et longueur d’onde du photon',
+    formula: 'Eγ = hf = hc/λ ; c = fλ',
+    explanation: 'La première égalité donne l’énergie quantique du photon ; la seconde forme utilise la relation de propagation d’une onde électromagnétique dans le vide. Une fréquence plus élevée, donc une longueur d’onde plus courte, correspond à un photon plus énergétique.',
+    parameters: 'Eγ : énergie du photon (J ou eV) ; h = 6,62607015 × 10⁻³⁴ J·s : constante de Planck ; f : fréquence (Hz = s⁻¹) ; c = 299 792 458 m·s⁻¹ : vitesse de la lumière dans le vide ; λ : longueur d’onde dans le vide (m). hc ≈ 1239,84 eV·nm.',
+    example: 'Pour f = 5,00 × 10¹⁴ Hz, Eγ = hf = 3,313 × 10⁻¹⁹ J. Avec 1 eV = 1,602176634 × 10⁻¹⁹ J, cela vaut 2,07 eV ; λ = c/f = 600 nm.',
+    result: 'Le photon transporte environ 3,31 × 10⁻¹⁹ J, soit 2,07 eV, et sa longueur d’onde dans le vide est 600 nm.'
+  },
+  {
+    title: 'Bilan d’énergie de l’effet photoélectrique',
+    formula: 'Kmax = hf − φ, si hf ≥ φ',
+    explanation: 'Dans le modèle d’Einstein, un photon transfère son énergie à un électron. Le travail nécessaire pour extraire cet électron est la fonction de travail φ ; l’énergie restante est la borne supérieure de l’énergie cinétique des électrons émis. Si hf < φ, aucune émission photoélectrique à un photon n’est possible.',
+    parameters: 'Kmax : énergie cinétique maximale de l’électron émis (J ou eV) ; h : constante de Planck ; f : fréquence incidente (Hz) ; φ : fonction de travail du matériau, énergie minimale d’extraction (J ou eV). Les énergies doivent être dans les mêmes unités.',
+    example: 'Pour une surface hypothétique de φ = 2,00 eV éclairée à λ = 400 nm, Eγ = hc/λ ≈ 1239,84/400 = 3,10 eV, donc Kmax ≈ 3,10 − 2,00.',
+    result: 'Kmax ≈ 1,10 eV. La valeur φ = 2,00 eV est ici une donnée d’exercice, pas l’attribution à un métal particulier.'
+  },
+  {
+    title: 'Fréquence seuil',
+    formula: 'f₀ = φ/h',
+    explanation: 'La fréquence seuil correspond au cas limite hf₀ = φ : chaque photon apporte juste l’énergie d’extraction. Au seuil idéal, Kmax = 0 ; une fréquence strictement supérieure donne des électrons avec une énergie cinétique positive.',
+    parameters: 'f₀ : fréquence seuil (Hz) ; φ : fonction de travail (J) ; h : constante de Planck (J·s). Si φ est donnée en eV, utiliser h ≈ 4,135667696 × 10⁻¹⁵ eV·s.',
+    example: 'Pour φ = 2,00 eV, f₀ = 2,00/(4,135667696 × 10⁻¹⁵) s⁻¹.',
+    result: 'f₀ ≈ 4,84 × 10¹⁴ Hz.'
+  },
+  {
+    title: 'Longueur d’onde seuil',
+    formula: 'λ₀ = c/f₀ = hc/φ',
+    explanation: 'Cette relation exprime le même seuil en longueur d’onde. Comme f = c/λ dans le vide, le photoeffet est possible pour λ < λ₀ ; à λ = λ₀, le modèle idéal donne Kmax = 0.',
+    parameters: 'λ₀ : longueur d’onde seuil dans le vide (m ou nm) ; c : vitesse de la lumière (m·s⁻¹) ; f₀ : fréquence seuil (Hz) ; h : constante de Planck ; φ : fonction de travail. Utiliser des unités cohérentes pour hc et φ.',
+    example: 'Pour φ = 2,00 eV, λ₀ ≈ (1239,84 eV·nm)/(2,00 eV).',
+    result: 'λ₀ ≈ 620 nm. Une longueur d’onde plus grande ne produit pas de photoélectrons dans ce modèle, même si l’intensité augmente.'
+  },
+  {
+    title: 'Mesure par le potentiel d’arrêt',
+    formula: 'Kmax = eVs',
+    explanation: 'Un champ électrique inverse freine les photoélectrons. Au potentiel d’arrêt, le travail électrique compense exactement leur énergie cinétique maximale. Vs désigne ici la valeur positive de la tension de freinage ; le signe de la tension appliquée dépend du branchement.',
+    parameters: 'Kmax : énergie cinétique maximale (J) ; e = 1,602176634 × 10⁻¹⁹ C : valeur absolue de la charge élémentaire ; Vs : valeur absolue du potentiel d’arrêt (V). Comme 1 eV = e × 1 V, la valeur numérique en eV est égale à celle en volts.',
+    example: 'Si le potentiel d’arrêt mesuré vaut Vs = 1,10 V, alors Kmax = e × 1,10 V.',
+    result: 'Kmax = 1,10 eV, soit environ 1,76 × 10⁻¹⁹ J.'
+  }
+];
+quantumChapters.photons.lesson.sources = [
+  { title: 'OpenStax University Physics, vol. 3 — Blackbody Radiation and Planck’s hypothesis', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation' },
+  { title: 'OpenStax University Physics, vol. 3 — Photoelectric Effect', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect' },
+  { title: 'NIST — CODATA recommended values of the fundamental constants', url: 'https://physics.nist.gov/cuu/Constants/' }
+];
+
+quantumChapters['dualite-onde-corpuscule'].summary = 'Longueur d’onde de de Broglie, limites de localisation et dualité observée par diffraction et interférences.';
+quantumChapters['dualite-onde-corpuscule'].lesson.sections = [
+  'À une particule de quantité de mouvement p est associée une longueur d’onde λ = h/p. Cette onde de matière n’est pas une vague matérielle : la mécanique quantique utilise une fonction d’onde pour calculer des probabilités. Les interférences et la diffraction d’électrons en révèlent le caractère ondulatoire, tandis que des détections localisées révèlent leur aspect corpusculaire.',
+  'Pour une particule lente devant la lumière, p ≈ mv ; lorsque la vitesse approche c, il faut utiliser la quantité de mouvement relativiste p = γmv. La formule de de Broglie reste λ = h/p dans les deux cas : c’est l’approximation utilisée pour calculer p qui change.',
+  'Une particule localisée est décrite par un paquet d’ondes. Réduire la dispersion de ses positions exige une plus grande dispersion des quantités de mouvement possibles. La relation d’incertitude donne une borne minimale intrinsèque aux écarts-types ; ce n’est pas simplement une imperfection des instruments de mesure.',
+  'Dans le modèle semi-classique de Bohr, l’onde associée à l’électron doit se refermer sur son orbite : un nombre entier de longueurs d’onde tient sur la circonférence. Cette condition explique la quantification des orbites dans ce modèle historique ; en mécanique quantique moderne, l’électron n’est pas décrit comme une bille parcourant une trajectoire circulaire déterminée.'
+];
+quantumChapters['dualite-onde-corpuscule'].lesson.formula = {
+  label: 'LONGUEUR D’ONDE DE DE BROGLIE',
+  text: 'λ = h/p'
+};
+quantumChapters['dualite-onde-corpuscule'].lesson.example = {
+  statement: 'Estimer la longueur d’onde de de Broglie d’un électron de vitesse 1,00 × 10⁶ m·s⁻¹.',
+  calculation: 'Comme v ≪ c, p ≈ mv = (9,109 × 10⁻³¹ kg)(1,00 × 10⁶ m·s⁻¹) = 9,109 × 10⁻²⁵ kg·m·s⁻¹. Alors λ = h/p.',
+  answer: 'λ ≈ 7,27 × 10⁻¹⁰ m, soit 0,727 nm.'
+};
+quantumChapters['dualite-onde-corpuscule'].lesson.exercise = {
+  question: 'Un électron est localisé avec un écart-type Δx = 0,10 nm. Quelle est la plus petite valeur permise de Δp par la relation de Heisenberg ?',
+  answer: 'Δp ≥ ℏ/(2Δx) = (1,055 × 10⁻³⁴ J·s)/(2 × 1,0 × 10⁻¹⁰ m) ≈ 5,27 × 10⁻²⁵ kg·m·s⁻¹.'
+};
+quantumChapters['dualite-onde-corpuscule'].lesson.equationDetails = [
+  {
+    title: 'Longueur d’onde de de Broglie',
+    formula: 'λ = h/p ; p = mv si v ≪ c',
+    explanation: 'La longueur d’onde associée à la matière est inversement proportionnelle à sa quantité de mouvement. Pour une particule non relativiste, on calcule p avec la mécanique classique ; à vitesse relativiste, p = γmv avec γ = 1/√(1 − v²/c²).',
+    parameters: 'λ : longueur d’onde de matière (m) ; h = 6,62607015 × 10⁻³⁴ J·s : constante de Planck ; p : norme de la quantité de mouvement (kg·m·s⁻¹) ; m : masse (kg) ; v : vitesse (m·s⁻¹) ; c : vitesse de la lumière ; γ : facteur de Lorentz.',
+    example: 'Pour un électron de masse mₑ = 9,109 × 10⁻³¹ kg se déplaçant à v = 1,00 × 10⁶ m·s⁻¹, v/c ≈ 0,0033, donc p ≈ mₑv = 9,109 × 10⁻²⁵ kg·m·s⁻¹ et λ = h/p.',
+    result: 'λ ≈ 7,27 × 10⁻¹⁰ m = 0,727 nm. L’approximation non relativiste est justifiée ici car v est très inférieure à c.'
+  },
+  {
+    title: 'Principe d’incertitude position-impulsion',
+    formula: 'Δx Δp ≥ ℏ/2',
+    explanation: 'Δx et Δp représentent les écarts-types de position et de quantité de mouvement dans un même état quantique. Leur produit ne peut pas être inférieur à ℏ/2 ; certaines fonctions d’onde, comme une gaussienne, atteignent cette borne. La limite est intrinsèque à l’état quantique, pas une erreur de fabrication de l’appareil.',
+    parameters: 'Δx : incertitude-type de position (m) ; Δp : incertitude-type de quantité de mouvement (kg·m·s⁻¹) ; ℏ = h/(2π) ≈ 1,055 × 10⁻³⁴ J·s : constante de Planck réduite.',
+    example: 'Si Δx = 0,10 nm = 1,0 × 10⁻¹⁰ m, alors Δp ≥ ℏ/(2Δx) ≈ (1,055 × 10⁻³⁴)/(2,0 × 10⁻¹⁰).',
+    result: 'Δp ≥ 5,27 × 10⁻²⁵ kg·m·s⁻¹.'
+  },
+  {
+    title: 'Onde stationnaire dans le modèle de Bohr',
+    formula: '2πrₙ = nλ ; Lₙ = nℏ',
+    explanation: 'Dans l’image semi-classique de Bohr, l’onde de de Broglie se referme sans rupture après un tour : la circonférence contient n longueurs d’onde. En remplaçant λ par h/p, on retrouve la quantification du moment cinétique orbital de ce modèle.',
+    parameters: 'rₙ : rayon de l’orbite n (m) ; n : entier positif (indice d’orbite) ; λ : longueur d’onde de de Broglie (m) ; Lₙ : moment cinétique orbital (J·s) ; ℏ = h/(2π).',
+    example: 'Pour l’état fondamental n = 1 de l’hydrogène dans le modèle de Bohr, r₁ = a₀ = 0,529 Å. La condition donne λ = 2πr₁.',
+    result: 'λ ≈ 3,32 Å. Cette représentation est celle du modèle de Bohr, pas une trajectoire réelle dans la description quantique moderne.'
+  }
+];
+quantumChapters['dualite-onde-corpuscule'].lesson.sources = [
+  { title: 'OpenStax University Physics, vol. 3 — De Broglie’s Matter Waves', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-5-de-broglies-matter-waves' },
+  { title: 'OpenStax University Physics, vol. 3 — Wave-Particle Duality', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-6-wave-particle-duality' },
+  { title: 'OpenStax University Physics, vol. 3 — The Heisenberg Uncertainty Principle', url: 'https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle' },
+  { title: 'OpenStax University Physics, vol. 3 — Bohr’s Model of the Hydrogen Atom', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-4-bohrs-model-of-the-hydrogen-atom' }
+];
+
+quantumChapters['atomes-niveaux'].summary = 'Niveaux d’énergie de l’hydrogène, transitions quantiques, photons et raies spectrales.';
+quantumChapters['atomes-niveaux'].lesson.sections = [
+  'Un atome ne peut occuper que certains états d’énergie. Dans l’atome d’hydrogène, le modèle de Bohr donne des niveaux discrets Eₙ = −13,6 eV/n², avec n entier positif. Cette formule décrit correctement les niveaux principaux de l’hydrogène dans l’approximation non relativiste ; les atomes à plusieurs électrons ont des interactions et des corrections supplémentaires.',
+  'Lors d’une transition, l’énergie de l’atome change de ΔE_atome = E_final − E_initial. Le photon émis emporte l’énergie perdue par l’atome ; un photon absorbé doit apporter exactement l’écart vers un état supérieur. Les raies spectrales correspondent ainsi à des longueurs d’onde bien déterminées.',
+  'Pour l’émission dans l’hydrogène, un électron descend d’un niveau nᵢ vers un niveau plus bas n_f. La série de Balmer correspond à n_f = 2 ; la transition nᵢ = 3 vers n_f = 2 produit la raie Hα rouge vers 656 nm. Le modèle de Bohr est un modèle semi-classique utile pour l’hydrogène, tandis que la mécanique quantique décrit les états par des fonctions d’onde plutôt que par des orbites planétaires.'
+];
+quantumChapters['atomes-niveaux'].lesson.formula = {
+  label: 'ÉNERGIE D’UNE TRANSITION',
+  text: '|ΔE| = hf = hc/λ'
+};
+quantumChapters['atomes-niveaux'].lesson.example = {
+  statement: 'Un atome émet un photon lors d’une transition d’énergie 3,00 eV. Calculer sa fréquence et sa longueur d’onde.',
+  calculation: 'λ = hc/|ΔE| ≈ 1239,84 eV·nm/3,00 eV = 413,28 nm ; f = |ΔE|/h ≈ 3,00/(4,13567 × 10⁻¹⁵) Hz.',
+  answer: 'λ ≈ 413 nm et f ≈ 7,25 × 10¹⁴ Hz.'
+};
+quantumChapters['atomes-niveaux'].lesson.exercise = {
+  question: 'Dans le modèle de Bohr de l’hydrogène, quelle énergie faut-il fournir pour faire passer l’électron de n = 1 à n = 2 ?',
+  answer: 'E₁ = −13,6 eV et E₂ = −13,6/4 = −3,40 eV. Il faut fournir ΔE = E₂ − E₁ = 10,2 eV.'
+};
+quantumChapters['atomes-niveaux'].lesson.equationDetails = [
+  {
+    title: 'Niveaux d’énergie de l’hydrogène',
+    formula: 'Eₙ = −13,6 eV/n², n = 1, 2, 3, …',
+    explanation: 'Dans le modèle de Bohr, l’énergie liée de l’électron est négative et ne prend que ces valeurs discrètes ; E = 0 correspond à l’électron libre, juste ionisé. Cette expression vaut pour l’hydrogène dans l’approximation usuelle ; elle ne s’applique pas telle quelle à un atome neutre à plusieurs électrons.',
+    parameters: 'Eₙ : énergie totale de l’état n (eV) ; n : nombre quantique principal, entier positif ; −13,6 eV : énergie fondamentale de l’hydrogène dans ce modèle. Les petites corrections de structure fine et de masse réduite ne sont pas incluses.',
+    example: 'Pour n = 2, E₂ = −13,6/2² eV.',
+    result: 'E₂ = −3,40 eV. L’électron est moins lié qu’au niveau fondamental E₁ = −13,6 eV.'
+  },
+  {
+    title: 'Énergie et longueur d’onde d’une transition',
+    formula: '|ΔE| = hf = hc/λ',
+    explanation: 'La valeur absolue de la variation d’énergie atomique est égale à l’énergie du photon émis ou absorbé. À l’émission, l’atome perd cette énergie ; à l’absorption, il la reçoit. Le signe de ΔE_atome dépend donc du sens de la transition, contrairement à l’énergie du photon qui est positive.',
+    parameters: '|ΔE| : écart d’énergie (J ou eV) ; h = 6,62607015 × 10⁻³⁴ J·s ; f : fréquence du photon (Hz) ; c = 299 792 458 m·s⁻¹ dans le vide ; λ : longueur d’onde (m). En unités pratiques, hc ≈ 1239,84 eV·nm.',
+    example: 'Pour |ΔE| = 3,00 eV, λ ≈ 1239,84/3,00 nm et f ≈ 3,00/(4,13567 × 10⁻¹⁵) Hz.',
+    result: 'Le photon a λ ≈ 413 nm et f ≈ 7,25 × 10¹⁴ Hz.'
+  },
+  {
+    title: 'Raies de l’hydrogène (formule de Rydberg)',
+    formula: '1/λ = R_H(1/n_f² − 1/n_i²), n_i > n_f',
+    explanation: 'Cette relation donne les longueurs d’onde émises lorsqu’un électron de l’hydrogène passe du niveau initial supérieur nᵢ au niveau final inférieur n_f. Elle découle de la différence entre les niveaux d’énergie et de |ΔE| = hc/λ. Pour une absorption, les niveaux sont parcourus dans le sens inverse et on prend la valeur absolue de la différence.',
+    parameters: 'λ : longueur d’onde dans le vide (m) ; R_H ≈ 1,09737 × 10⁷ m⁻¹ : constante de Rydberg pour l’hydrogène ; nᵢ et n_f : nombres quantiques principaux entiers positifs ; nᵢ > n_f pour l’émission.',
+    example: 'Pour la raie Hα, nᵢ = 3 et n_f = 2 : 1/λ = R_H(1/2² − 1/3²) = R_H(5/36).',
+    result: 'Avec R_H ≈ 1,09737 × 10⁷ m⁻¹, λ ≈ 656,1 nm, dans le rouge visible ; cette transition appartient à la série de Balmer.'
+  }
+];
+quantumChapters['atomes-niveaux'].lesson.sources = [
+  { title: 'OpenStax University Physics, vol. 3 — Bohr’s Model of the Hydrogen Atom', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-4-bohrs-model-of-the-hydrogen-atom' },
+  { title: 'OpenStax University Physics, vol. 3 — The Hydrogen Atom', url: 'https://openstax.org/books/university-physics-volume-3/pages/8-1-the-hydrogen-atom' },
+  { title: 'OpenStax University Physics, vol. 3 — Atomic Spectra and X-rays', url: 'https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays' },
+  { title: 'NIST — CODATA recommended values of the fundamental constants', url: 'https://physics.nist.gov/cuu/Constants/' }
+];
+
+const additionalPhysicsDetails = {
+  cinematique: {
+    equations: [
+      { title: 'Vitesse à accélération constante', formula: 'v(t) = v₀ + at', explanation: 'Cette relation donne la vitesse après une durée t lorsque l’accélération a reste constante.', parameters: 'v(t) : vitesse à l’instant t (m·s⁻¹) ; v₀ : vitesse initiale (m·s⁻¹) ; a : accélération algébrique constante (m·s⁻²) ; t : durée (s). Les signes dépendent de l’axe orienté choisi.', example: 'Un véhicule part du repos avec a = 2 m·s⁻² pendant 5 s : v = 0 + 2 × 5.', result: 'v = 10 m·s⁻¹.' },
+      { title: 'Position à accélération constante', formula: 'x(t) = x₀ + v₀t + ½at²', explanation: 'La position résulte de la position initiale, du déplacement dû à la vitesse initiale et du déplacement dû à l’accélération constante.', parameters: 'x(t), x₀ : position et position initiale sur l’axe (m) ; v₀ : vitesse initiale (m·s⁻¹) ; a : accélération constante (m·s⁻²) ; t : durée (s).', example: 'Pour x₀ = 0, v₀ = 0, a = 2 m·s⁻² et t = 5 s : x = ½ × 2 × 5².', result: 'Le déplacement est 25 m.' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 1 — Motion with Constant Acceleration', url: 'https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration' }]
+  },
+  'lois-newton': {
+    equations: [
+      { title: 'Deuxième loi de Newton', formula: 'Σ F⃗ₑₓₜ = m a⃗', explanation: 'Dans un référentiel galiléen, la somme vectorielle des forces extérieures appliquées à un système est égale à sa masse fois son accélération. Seule la résultante détermine l’accélération.', parameters: 'Σ F⃗ₑₓₜ : résultante des forces extérieures (N) ; m : masse inertielle (kg) ; a⃗ : accélération du centre de masse (m·s⁻²). 1 N = 1 kg·m·s⁻².', example: 'Une résultante de 12 N agit sur une masse de 4 kg : a = F/m = 12/4.', result: 'L’accélération vaut 3 m·s⁻² dans la direction de la résultante.' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 1 — Newton’s Second Law', url: 'https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law' }]
+  },
+  'energie-mecanique': {
+    equations: [
+      { title: 'Énergie cinétique', formula: 'E꜀ = ½mv²', explanation: 'L’énergie cinétique est l’énergie associée au mouvement de translation d’un corps dans le cadre classique.', parameters: 'E꜀ : énergie cinétique (J) ; m : masse (kg) ; v : vitesse par rapport au référentiel choisi (m·s⁻¹).', example: 'Pour m = 2 kg et v = 5 m·s⁻¹ : E꜀ = ½ × 2 × 5².', result: 'E꜀ = 25 J.' },
+      { title: 'Théorème de l’énergie cinétique', formula: 'ΔE꜀ = ΣW(F)', explanation: 'La variation d’énergie cinétique entre deux positions égale le travail total des forces appliquées au système ponctuel, ou au centre de masse dans les conditions usuelles du cours.', parameters: 'ΔE꜀ : énergie cinétique finale moins initiale (J) ; W(F) : travail d’une force sur le trajet (J) ; la somme porte sur les forces considérées.', example: 'Si le travail total des forces sur un trajet vaut 16 J, alors la variation d’énergie cinétique sur ce trajet vaut 16 J.', result: 'L’énergie cinétique augmente de 16 J.' },
+      { title: 'Énergie mécanique', formula: 'Eₘ = E꜀ + Eₚ', explanation: 'L’énergie mécanique est la somme de l’énergie cinétique et des énergies potentielles associées aux interactions conservatives retenues. Elle se conserve si le travail des forces non conservatives est nul.', parameters: 'Eₘ, E꜀, Eₚ : énergies mécanique, cinétique et potentielle (J) ; le zéro de l’énergie potentielle dépend du choix de référence.', example: 'Un objet possède E꜀ = 12 J et Eₚ = 8 J : Eₘ = 12 + 8.', result: 'Eₘ = 20 J. Cette valeur reste constante uniquement si les forces dissipatives ne fournissent pas de travail net.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Kinetic Energy', url: 'https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy' },
+      { title: 'OpenStax University Physics, vol. 1 — Work-Energy Theorem', url: 'https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem' },
+      { title: 'OpenStax University Physics, vol. 1 — Conservation of Energy', url: 'https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy' }
+    ]
+  },
+  'gaz-parfaits': {
+    equations: [
+      { title: 'Équation d’état du gaz parfait', formula: 'PV = nRT', explanation: 'Le modèle du gaz parfait relie pression, volume, quantité de matière et température absolue. Il est une approximation adaptée notamment aux gaz peu denses et suffisamment éloignés de la liquéfaction.', parameters: 'P : pression absolue (Pa) ; V : volume (m³) ; n : quantité de matière (mol) ; R = 8,314462618 J·mol⁻¹·K⁻¹ : constante des gaz parfaits ; T : température absolue (K).', example: 'Pour n = 1,00 mol, T = 300 K et V = 24,0 L = 0,0240 m³ : P = nRT/V.', result: 'P ≈ 1,04 × 10⁵ Pa.' },
+      { title: 'Conversion Celsius-kelvin', formula: 'T(K) = θ(°C) + 273,15', explanation: 'L’échelle kelvin et l’échelle Celsius ont la même taille de degré ; leurs origines diffèrent de 273,15 degrés.', parameters: 'T : température thermodynamique (K) ; θ : température Celsius (°C) ; un écart de 1 K équivaut à un écart de 1 °C.', example: 'Pour θ = 20,00 °C : T = 20,00 + 273,15.', result: 'T = 293,15 K.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 2 — Molecular Model of an Ideal Gas', url: 'https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas' },
+      { title: 'OpenStax University Physics, vol. 2 — Pressure, Temperature, and RMS Speed', url: 'https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed' },
+      { title: 'NIST — CODATA recommended values of the fundamental constants', url: 'https://physics.nist.gov/cuu/Constants/' }
+    ]
+  },
+  'premier-principe': {
+    equations: [
+      { title: 'Premier principe de la thermodynamique', formula: 'ΔU = Q + W', explanation: 'Pour un système fermé, la variation d’énergie interne égale la chaleur reçue plus le travail reçu. Cette écriture utilise la convention « reçue par le système positive ».', parameters: 'ΔU : variation d’énergie interne (J) ; Q : transfert thermique reçu (J) ; W : travail reçu (J). Si le système fournit du travail, W est négatif avec cette convention.', example: 'Le système reçoit Q = +500 J et fournit 120 J de travail, donc W = −120 J : ΔU = 500 − 120.', result: 'ΔU = +380 J.' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 2 — First Law of Thermodynamics', url: 'https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics' }]
+  },
+  'second-principe': {
+    equations: [
+      { title: 'Second principe pour un système isolé', formula: 'ΔS ≥ 0', explanation: 'L’entropie totale d’un système isolé ne diminue pas. Elle reste constante dans une évolution réversible idéale et augmente lors d’une évolution irréversible.', parameters: 'ΔS : variation d’entropie du système isolé (J·K⁻¹) ; l’inégalité porte sur l’évolution complète entre les états initial et final.', example: 'Deux corps à températures différentes échangent spontanément de la chaleur dans un ensemble isolé : cette évolution est irréversible, donc ΔS_total > 0.', result: 'L’entropie totale augmente ; le transfert inverse ne se produit pas spontanément.' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 2 — Entropy', url: 'https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy' }]
+  },
+  'circuits-electriques': {
+    equations: [
+      { title: 'Loi d’Ohm', formula: 'U = RI', explanation: 'Pour un dipôle ohmique à température et conditions physiques fixées, la tension est proportionnelle au courant.', parameters: 'U : tension aux bornes (V) ; R : résistance (Ω) ; I : courant (A). La loi n’est pas universelle pour tout composant ni tout régime.', example: 'Pour R = 6 Ω traversée par I = 2 A : U = RI = 6 × 2.', result: 'U = 12 V.' },
+      { title: 'Puissance électrique', formula: 'P = UI', explanation: 'La puissance électrique transférée à un dipôle est le produit de la tension par le courant selon la convention récepteur. Pour une résistance ohmique, la loi d’Ohm permet d’écrire les formes équivalentes.', parameters: 'P : puissance (W) ; U : tension (V) ; I : courant (A) ; R : résistance (Ω). Avec la convention générateur, le signe dépend du sens choisi pour courant et tension.', example: 'Pour U = 12 V et I = 2 A : P = UI = 24 W ; avec R = 6 Ω, RI² = 24 W également.', result: 'Le dipôle dissipe 24 W dans cette situation résistive.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 2 — Ohm’s Law', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law' },
+      { title: 'OpenStax University Physics, vol. 2 — Electrical Energy and Power', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power' }
+    ]
+  },
+  'champ-electrique': {
+    equations: [
+      { title: 'Loi de Coulomb', formula: 'F = k|q₁q₂|/r²', explanation: 'Cette forme donne la norme de la force électrostatique entre deux charges ponctuelles dans le vide. La force est portée par la droite joignant les charges ; son sens est répulsif pour deux charges de même signe et attractif pour des signes opposés.', parameters: 'F : norme de la force (N) ; q₁, q₂ : charges (C) ; r : distance entre charges (m) ; k = 1/(4πε₀) ≈ 8,988 × 10⁹ N·m²·C⁻² dans le vide.', example: 'Deux charges de module 1,0 μC séparées de 0,10 m subissent une force de norme F = k(1,0 × 10⁻⁶)²/(0,10)².', result: 'F ≈ 0,90 N ; le sens dépend des signes des deux charges.' },
+      { title: 'Définition du champ électrique', formula: 'E⃗ = F⃗/qₜ', explanation: 'Le champ électrique en un point est la force électrique par unité de charge test positive placée en ce point, dans la limite où cette charge ne perturbe pas les sources.', parameters: 'E⃗ : champ électrique (N·C⁻¹ ou V·m⁻¹) ; F⃗ : force électrique (N) ; qₜ : charge test signée (C). La force sur une charge q vaut F⃗ = qE⃗.', example: 'Une charge q = +2,0 μC placée dans un champ uniforme E = 300 N·C⁻¹ subit F = qE.', result: 'La norme de la force est 6,0 × 10⁻⁴ N, dans le sens du champ.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 2 — Coulomb’s Law', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law' },
+      { title: 'OpenStax University Physics, vol. 2 — Electric Field', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field' }
+    ]
+  },
+  induction: {
+    equations: [
+      { title: 'Loi de Faraday-Lenz', formula: 'e = −N dΦ/dt', explanation: 'Une variation du flux magnétique à travers une bobine induit une force électromotrice. Le signe moins traduit la loi de Lenz : l’effet induit s’oppose à la variation de flux qui le produit.', parameters: 'e : force électromotrice induite (V) ; N : nombre de spires ; Φ : flux magnétique par spire (Wb) ; t : temps (s). Pour une seule spire, N = 1 ; pour des variations moyennes, e_moy = −NΔΦ/Δt.', example: 'Une bobine de 20 spires subit une variation de flux par spire de 0,040 Wb en 0,20 s : |e_moy| = 20 × 0,040/0,20.', result: 'La valeur absolue de la f.é.m. moyenne est 4,0 V ; son signe dépend de l’orientation choisie.' },
+      { title: 'Flux d’un champ uniforme', formula: 'Φ = BA cos θ', explanation: 'Le flux mesure la composante du champ magnétique traversant la surface. L’angle θ est entre le champ et la normale à la surface, non entre le champ et le plan lui-même.', parameters: 'Φ : flux magnétique (Wb) ; B : champ magnétique uniforme (T) ; A : aire de la surface (m²) ; θ : angle champ-normale.', example: 'Pour B = 0,50 T, A = 0,020 m² et θ = 60° : Φ = 0,50 × 0,020 × cos 60°.', result: 'Φ = 5,0 × 10⁻³ Wb par spire.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 2 — Faraday’s Law', url: 'https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law' },
+      { title: 'OpenStax University Physics, vol. 2 — Lenz’s Law', url: 'https://openstax.org/books/university-physics-volume-2/pages/13-2-lenzs-law' }
+    ]
+  },
+  oscillations: {
+    equations: [
+      { title: 'Période et fréquence', formula: 'f = 1/T ; ω = 2πf', explanation: 'La fréquence compte le nombre de cycles par seconde ; la pulsation exprime la vitesse angulaire de phase de l’oscillation.', parameters: 'T : période (s) ; f : fréquence (Hz = s⁻¹) ; ω : pulsation (rad·s⁻¹).', example: 'Pour T = 4,0 ms = 0,0040 s : f = 1/T = 250 Hz, puis ω = 2π × 250.', result: 'f = 250 Hz et ω ≈ 1,57 × 10³ rad·s⁻¹.' },
+      { title: 'Position harmonique', formula: 'x(t) = A cos(ωt + φ)', explanation: 'Cette fonction décrit un oscillateur harmonique idéal, sans amortissement, autour de sa position d’équilibre.', parameters: 'x(t) : déplacement (m) ; A : amplitude maximale (m) ; ω : pulsation (rad·s⁻¹) ; t : temps (s) ; φ : phase initiale (rad).', example: 'Avec A = 0,050 m, f = 250 Hz et φ = 0, à t = 0 : x(0) = A cos 0.', result: 'x(0) = 0,050 m, à l’extrémité positive de l’oscillation.' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 1 — Simple Harmonic Motion', url: 'https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion' }]
+  },
+  interferences: {
+    equations: [
+      { title: 'Interfrange de Young', formula: 'i = λD/a', explanation: 'Pour deux fentes proches, des petits angles et un écran suffisamment éloigné, l’écart entre franges successives est proportionnel à la longueur d’onde et à la distance écran-fentes, et inversement proportionnel à l’écartement des fentes.', parameters: 'i : interfrange (m) ; λ : longueur d’onde dans le milieu (m) ; D : distance fentes-écran (m) ; a : écartement des fentes (m).', example: 'Pour λ = 600 nm, D = 2,0 m et a = 0,50 mm : i = (600 × 10⁻⁹ × 2,0)/(0,50 × 10⁻³).', result: 'i = 2,4 mm.' },
+      { title: 'Minimum de diffraction par une fente', formula: 'a sin θ = mλ, m = 1, 2, …', explanation: 'Pour une fente de largeur a, les minima de diffraction se produisent selon cette condition. Le premier minimum est m = 1 ; pour petits angles, sin θ ≈ θ en radians.', parameters: 'a : largeur de la fente (m) ; θ : angle du minimum par rapport à l’axe central ; λ : longueur d’onde dans le milieu (m) ; m : ordre entier non nul.', example: 'Avec a = 0,50 mm et λ = 600 nm, le premier minimum vérifie sin θ = 600 × 10⁻⁹/(0,50 × 10⁻³).', result: 'θ ≈ 1,2 × 10⁻³ rad, soit environ 0,069°.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Interference of Waves', url: 'https://openstax.org/books/university-physics-volume-1/pages/16-5-interference-of-waves' },
+      { title: 'OpenStax University Physics, vol. 3 — Young’s Double-Slit Interference', url: 'https://openstax.org/books/university-physics-volume-3/pages/3-1-youngs-double-slit-interference' },
+      { title: 'OpenStax University Physics, vol. 3 — Single-Slit Diffraction', url: 'https://openstax.org/books/university-physics-volume-3/pages/4-1-single-slit-diffraction' }
+    ]
+  },
+  acoustique: {
+    equations: [
+      { title: 'Niveau d’intensité sonore', formula: 'L = 10 log₁₀(I/I₀) dB', explanation: 'Le niveau sonore est une échelle logarithmique comparant l’intensité mesurée à une intensité de référence. Chaque augmentation de 10 dB correspond à une intensité multipliée par 10.', parameters: 'L : niveau sonore (dB) ; I : intensité acoustique (W·m⁻²) ; I₀ = 10⁻¹² W·m⁻² : intensité de référence usuelle dans l’air.', example: 'Pour I = 10⁻⁶ W·m⁻² : I/I₀ = 10⁶, donc L = 10 log₁₀(10⁶).', result: 'L = 60 dB.' },
+      { title: 'Effet Doppler du son', formula: 'fₒ = fₛ (v ± vₒ)/(v ∓ vₛ)', explanation: 'Cette forme classique s’applique à une onde sonore dans un milieu au repos. Les signes du numérateur et du dénominateur sont coordonnés : utiliser le signe supérieur pour un rapprochement et le signe inférieur pour un éloignement.', parameters: 'fₒ : fréquence observée (Hz) ; fₛ : fréquence émise (Hz) ; v : vitesse du son dans le milieu (m·s⁻¹) ; vₒ : vitesse de l’observateur par rapport au milieu ; vₛ : vitesse de la source par rapport au milieu. Cette formule sonore n’est pas la formule Doppler relativiste de la lumière.', example: 'Un klaxon de 150 Hz s’approche d’un observateur fixe à 35 m·s⁻¹ dans l’air où v = 340 m·s⁻¹ : fₒ = 150 × 340/(340 − 35).', result: 'La fréquence reçue est environ 167 Hz.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Sound Intensity', url: 'https://openstax.org/books/university-physics-volume-1/pages/17-3-sound-intensity' },
+      { title: 'OpenStax University Physics, vol. 1 — The Doppler Effect', url: 'https://openstax.org/books/university-physics-volume-1/pages/17-7-the-doppler-effect' }
+    ]
+  },
+  'optique-geometrique': {
+    equations: [
+      { title: 'Relation de conjugaison d’une lentille mince', formula: '1/OA′ − 1/OA = 1/OF′', explanation: 'Cette relation de Descartes relie les positions orientées de l’objet et de son image par rapport au centre optique à la distance focale image. Elle s’emploie dans l’approximation des lentilles minces et des rayons paraxiaux.', parameters: 'OA : abscisse orientée de l’objet (m ou cm) ; OA′ : abscisse orientée de l’image ; OF′ = f′ : distance focale image ; pour une lentille convergente f′ > 0 ; un objet réel placé avant la lentille a généralement OA < 0 avec cette convention.', example: 'Pour f′ = 10 cm et OA = −30 cm : 1/OA′ − 1/(−30) = 1/10, donc 1/OA′ = 1/10 − 1/30 = 1/15.', result: 'OA′ = +15 cm : l’image se forme à 15 cm derrière la lentille et elle est réelle.' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 3 — Thin Lenses', url: 'https://openstax.org/books/university-physics-volume-3/pages/2-4-thin-lenses' }]
+  },
+  refraction: {
+    equations: [
+      { title: 'Loi de Snell-Descartes', formula: 'n₁ sin i₁ = n₂ sin i₂', explanation: 'À une interface plane entre deux milieux transparents isotropes, le rayon transmis change de direction selon cette relation. Les angles d’incidence et de réfraction sont mesurés depuis la normale à l’interface.', parameters: 'n₁, n₂ : indices de réfraction des milieux, sans unité ; i₁, i₂ : angles mesurés depuis la normale ; n = c/v_phase dans le modèle usuel.', example: 'De l’air (n₁ ≈ 1,00) vers le verre (n₂ = 1,50), avec i₁ = 30° : sin i₂ = (1,00/1,50) sin 30° = 1/3.', result: 'i₂ ≈ 19,5°.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 3 — The Law of Reflection', url: 'https://openstax.org/books/university-physics-volume-3/pages/1-2-the-law-of-reflection' },
+      { title: 'OpenStax University Physics, vol. 3 — Refraction', url: 'https://openstax.org/books/university-physics-volume-3/pages/1-3-refraction' }
+    ]
+  },
+  'optique-ondulatoire': {
+    equations: [
+      { title: 'Interférences lumineuses', formula: 'δ = kλ : constructive ; δ = (k + ½)λ : destructive', explanation: 'Deux ondes cohérentes interfèrent de manière constructive lorsque leur différence de marche est un multiple entier de la longueur d’onde, et destructive pour un multiple demi-entier.', parameters: 'δ : différence de marche (m) ; λ : longueur d’onde dans le milieu (m) ; k : entier relatif. Les deux sources doivent conserver une différence de phase stable pour observer des franges.', example: 'Pour δ = 2λ, on a k = 2, un entier.', result: 'L’interférence est constructive.' },
+      { title: 'Polarisation par un analyseur (loi de Malus)', formula: 'I = I₀ cos² θ', explanation: 'Pour une lumière déjà polarisée linéairement qui traverse un analyseur idéal, l’intensité transmise suit cette loi.', parameters: 'I₀ : intensité incidente polarisée (W·m⁻²) ; I : intensité transmise ; θ : angle entre la direction de polarisation incidente et l’axe de transmission de l’analyseur.', example: 'Si θ = 60° et I₀ = 8 W·m⁻², alors I = 8 cos²60°.', result: 'I = 2 W·m⁻².' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 3 — Young’s Double-Slit Interference', url: 'https://openstax.org/books/university-physics-volume-3/pages/3-1-youngs-double-slit-interference' },
+      { title: 'OpenStax University Physics, vol. 3 — Polarization', url: 'https://openstax.org/books/university-physics-volume-3/pages/1-7-polarization' }
+    ]
+  },
+  hydrostatique: {
+    equations: [
+      { title: 'Pression hydrostatique', formula: 'p = p₀ + ρgh', explanation: 'Dans un fluide homogène au repos, la pression augmente avec la profondeur h sous une surface où la pression vaut p₀. La relation suppose g et la masse volumique constantes sur la hauteur considérée.', parameters: 'p : pression à la profondeur h (Pa) ; p₀ : pression à la surface (Pa) ; ρ : masse volumique du fluide (kg·m⁻³) ; g : accélération de la pesanteur (m·s⁻²) ; h : profondeur verticale (m).', example: 'Dans l’eau, à h = 2,0 m, avec ρ = 1000 kg·m⁻³, g = 9,81 m·s⁻² et p₀ = 1,013 × 10⁵ Pa : p = p₀ + ρgh.', result: 'p ≈ 1,21 × 10⁵ Pa en pression absolue ; la surpression vaut environ 1,96 × 10⁴ Pa.' },
+      { title: 'Poussée d’Archimède', formula: 'Fₐ = ρfluide g Vdéplacé', explanation: 'La poussée exercée par un fluide sur un corps immergé est égale au poids du fluide déplacé et dirigée vers le haut.', parameters: 'Fₐ : norme de la poussée (N) ; ρfluide : masse volumique du fluide (kg·m⁻³) ; g : pesanteur (m·s⁻²) ; Vdéplacé : volume de fluide déplacé (m³), égal au volume immergé.', example: 'Un corps déplace 2,0 L d’eau, soit 0,0020 m³ : Fₐ = 1000 × 9,81 × 0,0020.', result: 'Fₐ = 19,62 N.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Fluids, Density, and Pressure', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-1-fluids-density-and-pressure' },
+      { title: 'OpenStax University Physics, vol. 1 — Archimedes’ Principle and Buoyancy', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-4-archimedes-principle-and-buoyancy' }
+    ]
+  },
+  bernoulli: {
+    equations: [
+      { title: 'Conservation du débit pour un fluide incompressible', formula: 'Q = Sv ; S₁v₁ = S₂v₂', explanation: 'Dans un écoulement permanent d’un fluide incompressible sans fuite, le débit volumique se conserve entre les sections du conduit.', parameters: 'Q : débit volumique (m³·s⁻¹) ; S : aire de section (m²) ; v : vitesse moyenne normale à la section (m·s⁻¹).', example: 'Un conduit passe de S₁ = 4 cm² à S₂ = 1 cm², avec v₁ = 1 m·s⁻¹ : v₂ = S₁v₁/S₂.', result: 'v₂ = 4 m·s⁻¹.' },
+      { title: 'Équation de Bernoulli', formula: 'p + ½ρv² + ρgz = constante', explanation: 'Le long d’une ligne de courant, cette somme de pression statique, pression dynamique et énergie potentielle volumique se conserve pour un fluide parfait, incompressible et en écoulement permanent. Des pertes visqueuses exigent un terme supplémentaire.', parameters: 'p : pression (Pa) ; ρ : masse volumique (kg·m⁻³) ; v : vitesse (m·s⁻¹) ; g : pesanteur (m·s⁻²) ; z : altitude (m). Chaque terme s’exprime en Pa = J·m⁻³.', example: 'Dans un conduit horizontal à même altitude, si v passe de 2 à 4 m·s⁻¹ dans l’eau (ρ = 1000 kg·m⁻³), alors p₂ − p₁ = ½ρ(v₁² − v₂²).', result: 'La pression baisse de 6000 Pa dans ce modèle idéal.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Fluid Dynamics', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-5-fluid-dynamics' },
+      { title: 'OpenStax University Physics, vol. 1 — Bernoulli’s Equation', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation' }
+    ]
+  },
+  viscosite: {
+    equations: [
+      { title: 'Nombre de Reynolds', formula: 'Re = ρvL/μ', explanation: 'Ce nombre sans dimension compare les effets inertiels aux effets visqueux. Il aide à caractériser un écoulement, mais la valeur de transition dépend de la géométrie et des conditions.', parameters: 'Re : nombre de Reynolds (sans unité) ; ρ : masse volumique (kg·m⁻³) ; v : vitesse caractéristique (m·s⁻¹) ; L : longueur caractéristique (m) ; μ : viscosité dynamique (Pa·s).', example: 'Pour l’eau, ρ = 1000 kg·m⁻³, v = 0,10 m·s⁻¹, L = 0,010 m et μ = 10⁻³ Pa·s : Re = 1000 × 0,10 × 0,010/10⁻³.', result: 'Re = 1000. Dans un tube circulaire lisse, c’est généralement un régime laminaire, mais les seuils sont indicatifs et propres à la configuration.' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 1 — Viscosity and Turbulence', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-7-viscosity-and-turbulence' }]
+  }
+};
+
+for (const [chapterId, details] of Object.entries(additionalPhysicsDetails)) {
+  const chapter = window.courseCatalog.flatMap((branch) => branch.chapters).find((item) => item.id === chapterId);
+  chapter.lesson.equationDetails = details.equations;
+  chapter.lesson.sources = details.sources;
+}
+
+const remainingPhysicsDetails = {
+  radioactivite: {
+    equations: [
+      { title: 'Loi de décroissance radioactive', formula: 'N(t) = N₀ exp(−λt)', explanation: 'Pour un grand ensemble de noyaux identiques, le nombre moyen de noyaux non désintégrés suit une décroissance exponentielle, si la constante de désintégration reste constante.', parameters: 'N(t) : nombre moyen de noyaux non désintégrés à la date t ; N₀ : nombre initial ; λ : constante de désintégration (s⁻¹ ou autre inverse de temps) ; t : durée dans l’unité cohérente avec λ.', example: 'Pour N₀ = 800 et une demi-vie de 5 jours, après 10 jours deux demi-vies se sont écoulées : N = 800 exp(−λt) = 800/4.', result: 'Il reste en moyenne 200 noyaux.' },
+      { title: 'Lien entre demi-vie et constante de désintégration', formula: 't₁/₂ = ln(2)/λ', explanation: 'La demi-vie est le temps nécessaire pour que l’effectif moyen ou l’activité d’un échantillon soit divisée par deux.', parameters: 't₁/₂ : demi-vie (s, min, jours, etc.) ; λ : constante de désintégration dans l’unité réciproque ; ln(2) ≈ 0,693.', example: 'Si λ = 0,20 jour⁻¹ : t₁/₂ = 0,693/0,20.', result: 't₁/₂ ≈ 3,47 jours.' },
+      { title: 'Activité radioactive', formula: 'A = λN', explanation: 'L’activité est le nombre moyen de désintégrations par unité de temps. Elle est positive ; la variation de population est dN/dt = −λN.', parameters: 'A : activité (becquerels, Bq = s⁻¹) ; λ : constante (s⁻¹) ; N : nombre moyen de noyaux radioactifs présents.', example: 'Pour λ = 1,0 × 10⁻⁶ s⁻¹ et N = 1,0 × 10⁹ noyaux : A = λN.', result: 'A = 1,0 × 10³ Bq, soit 1000 désintégrations par seconde en moyenne.' }
+    ],
+    sources: [
+      { title: 'OpenStax Chemistry 2e — Radioactive Decay', url: 'https://openstax.org/books/chemistry-2e/pages/21-3-radioactive-decay' },
+      { title: 'OpenStax Chemistry 2e — Nuclear Structure and Stability', url: 'https://openstax.org/books/chemistry-2e/pages/21-1-nuclear-structure-and-stability' }
+    ]
+  },
+  'energie-nucleaire': {
+    equations: [
+      { title: 'Équivalence masse-énergie', formula: 'ΔE = Δm c²', explanation: 'Une variation de masse au repos Δm correspond à une variation d’énergie ΔE. Dans une réaction nucléaire, le bilan d’énergie doit inclure les énergies de masse et les énergies cinétiques des produits.', parameters: 'ΔE : énergie (J) ; Δm : variation de masse (kg), avec le signe défini par le bilan ; c = 299 792 458 m·s⁻¹ : vitesse de la lumière dans le vide. Une masse perdue par les produits correspond à une énergie libérée.', example: 'Un défaut de masse de 1,0 × 10⁻²⁹ kg correspond à E = Δm c² = 1,0 × 10⁻²⁹ × (2,998 × 10⁸)².', result: 'L’énergie correspondante vaut environ 8,99 × 10⁻¹³ J.' },
+      { title: 'Énergie de liaison d’un noyau', formula: 'B = [Zmₚ + (A − Z)mₙ − m_noyau]c²', explanation: 'L’énergie de liaison est l’énergie minimale à fournir pour séparer un noyau en nucléons libres ; elle est égale à l’énergie libérée lors de leur assemblage. La masse des constituants doit être comparée à celle du noyau avec une convention cohérente.', parameters: 'B : énergie de liaison (J ou eV) ; Z : nombre de protons ; A : nombre total de nucléons ; A − Z : nombre de neutrons ; mₚ, mₙ et m_noyau : masses des protons, neutrons et du noyau ; c : vitesse de la lumière.', example: 'Pour l’hélium ⁴He, la différence entre la masse de deux protons et deux neutrons libres et celle du noyau correspond à un défaut de masse d’environ 0,0305 u ; la conversion par c² donne l’énergie de liaison.', result: 'L’énergie de liaison de ⁴He est environ 28,4 MeV, soit 7,10 MeV par nucléon.' }
+    ],
+    sources: [
+      { title: 'OpenStax Chemistry 2e — Nuclear Structure and Stability', url: 'https://openstax.org/books/chemistry-2e/pages/21-1-nuclear-structure-and-stability' },
+      { title: 'OpenStax Chemistry 2e — Transmutation and Nuclear Energy', url: 'https://openstax.org/books/chemistry-2e/pages/21-4-transmutation-and-nuclear-energy' },
+      { title: 'OpenStax University Physics, vol. 3 — Relativistic Energy', url: 'https://openstax.org/books/university-physics-volume-3/pages/5-9-relativistic-energy' }
+    ]
+  },
+  'particules-elementaires': {
+    equations: [
+      { title: 'Composition en quarks des nucléons', formula: 'Proton : uud ; neutron : udd', explanation: 'Dans le modèle des quarks, u désigne un quark up et d un quark down. Un proton et un neutron sont des baryons formés de trois quarks de valence ; ils contiennent aussi des gluons et des paires quark-antiquark dans leur description complète.', parameters: 'Charge de u : +⅔e ; charge de d : −⅓e ; e : charge élémentaire positive ; les lettres indiquent les saveurs des quarks, pas des charges électriques.', example: 'Charge du proton uud : (+⅔e) + (+⅔e) + (−⅓e) = +e. Charge du neutron udd : (+⅔e) − (⅓e) − (⅓e) = 0.', result: 'Le proton porte +e et le neutron est électriquement neutre.' }
+    ],
+    sources: [{ title: 'CERN — The Standard Model', url: 'https://home.cern/science/physics/standard-model' }]
+  },
+  'relativite-restreinte': {
+    equations: [
+      { title: 'Facteur de Lorentz', formula: 'γ = 1/√(1 − v²/c²)', explanation: 'Ce facteur relie certaines mesures faites dans deux référentiels inertiels en mouvement relatif. Il est défini pour une vitesse relative v inférieure à c.', parameters: 'γ : facteur sans unité ; v : vitesse relative des référentiels (m·s⁻¹) ; c = 299 792 458 m·s⁻¹ : vitesse de la lumière dans le vide.', example: 'Pour v = 0,60c : γ = 1/√(1 − 0,60²) = 1/0,80.', result: 'γ = 1,25.' },
+      { title: 'Dilatation du temps', formula: 'Δt = γΔτ', explanation: 'Δτ est le temps propre mesuré dans le référentiel où les deux événements ont lieu au même endroit ; Δt est le temps mesuré dans un référentiel où ce dispositif est en mouvement uniforme.', parameters: 'Δt, Δτ : intervalles de temps (s) ; γ : facteur de Lorentz ; v : vitesse relative ; la formule s’applique à des référentiels inertiels en mouvement relatif.', example: 'Si une horloge en mouvement mesure Δτ = 2,0 s à v = 0,60c, alors Δt = 1,25 × 2,0.', result: 'L’intervalle mesuré dans l’autre référentiel vaut 2,5 s.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 3 — Time Dilation', url: 'https://openstax.org/books/university-physics-volume-3/pages/5-3-time-dilation' },
+      { title: 'OpenStax University Physics, vol. 3 — Length Contraction', url: 'https://openstax.org/books/university-physics-volume-3/pages/5-4-length-contraction' }
+    ]
+  },
+  'espace-temps': {
+    equations: [
+      { title: 'Intervalle d’espace-temps', formula: 's² = c²Δt² − Δx² − Δy² − Δz²', explanation: 'Avec la convention de signe +--- utilisée ici, l’intervalle est invariant par transformation de Lorentz. Il permet de classer la séparation de deux événements : s² > 0 de type temps, s² = 0 de type lumière, s² < 0 de type espace. Certains ouvrages utilisent la convention de signe opposée.', parameters: 's² : intervalle au carré (m²) ; Δt : différence de temps coordonnée (s) ; Δx, Δy, Δz : différences de coordonnées spatiales (m) ; c : vitesse de la lumière (m·s⁻¹).', example: 'Pour Δt = 2,0 μs, Δx = 300 m et Δy = Δz = 0 : cΔt ≈ 600 m, donc s² = 600² − 300².', result: 's² = 270 000 m² > 0 : la séparation est de type temps avec cette convention.' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 3 — The Lorentz Transformation and Spacetime', url: 'https://openstax.org/books/university-physics-volume-3/pages/5-5-the-lorentz-transformation' }]
+  },
+  'relativite-generale': {
+    equations: [
+      { title: 'Champ gravitationnel newtonien, limite faible', formula: 'g = GM/r²', explanation: 'Cette relation est la norme de l’accélération gravitationnelle newtonienne créée par une masse sphérique, à l’extérieur de celle-ci. Elle sert ici de limite d’approximation faible de la relativité générale ; ce n’est pas l’équation complète d’Einstein.', parameters: 'g : accélération gravitationnelle (m·s⁻²) ; G = 6,67430 × 10⁻¹¹ m³·kg⁻¹·s⁻² ; M : masse de l’astre (kg) ; r : distance au centre (m).', example: 'À la surface terrestre, avec M ≈ 5,97 × 10²⁴ kg et r ≈ 6,37 × 10⁶ m : g = GM/r².', result: 'g ≈ 9,82 m·s⁻².' }
+    ],
+    sources: [
+      { title: 'Einstein Online, Max Planck Institute — Einstein’s geometric gravity', url: 'https://www.einstein-online.info/en/GeomGravity/' },
+      { title: 'Einstein Online, Max Planck Institute — The equivalence principle', url: 'https://www.einstein-online.info/en/spotlight/equivalence_principle/' },
+      { title: 'OpenStax University Physics, vol. 1 — Newton’s Law of Universal Gravitation', url: 'https://openstax.org/books/university-physics-volume-1/pages/13-introduction' }
+    ]
+  },
+  'structures-cristallines': {
+    equations: [
+      { title: 'Loi de Bragg', formula: 'mλ = 2d sin θ', explanation: 'Cette condition donne les maxima d’interférence des rayons X réfléchis par des familles de plans cristallins parallèles. L’angle θ est mesuré entre le rayon et le plan cristallin, comme dans la convention de Bragg.', parameters: 'm : ordre entier positif ; λ : longueur d’onde des rayons X (m) ; d : distance entre plans cristallins (m) ; θ : angle de Bragg.', example: 'Pour m = 1, d = 0,252 nm et θ = 18,1° : λ = 2d sin θ.', result: 'λ ≈ 0,157 nm.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 3 — X-Ray Diffraction', url: 'https://openstax.org/books/university-physics-volume-3/pages/4-6-x-ray-diffraction' },
+      { title: 'OpenStax University Physics, vol. 3 — Bonding in Crystalline Solids', url: 'https://openstax.org/books/university-physics-volume-3/pages/9-3-bonding-in-crystalline-solids' }
+    ]
+  },
+  'bandes-energie': {
+    equations: [
+      { title: 'Énergie du photon et seuil de bande interdite', formula: 'Eγ = hf ; Eγ ≥ E_g', explanation: 'Un photon a l’énergie hf. Dans le modèle simplifié, cette énergie doit atteindre au moins la largeur Eg de la bande interdite pour qu’une excitation de valence vers conduction soit énergétiquement possible. Cette condition d’énergie seule ne garantit pas une transition : dans un semi-conducteur à gap indirect, la conservation de quantité de mouvement peut aussi faire intervenir un phonon.', parameters: 'Eγ : énergie du photon (J ou eV) ; h : constante de Planck ; f : fréquence (Hz) ; Eg : largeur de la bande interdite (J ou eV). Comparer des énergies exprimées dans la même unité.', example: 'Pour Eg = 1,1 eV et Eγ = 2,0 eV, on a Eγ > Eg.', result: 'L’énergie suffit au franchissement du gap dans le modèle direct simplifié ; la probabilité réelle dépend aussi de la structure des bandes et des règles de transition.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 3 — Band Theory of Solids', url: 'https://openstax.org/books/university-physics-volume-3/pages/9-5-band-theory-of-solids' },
+      { title: 'OpenStax University Physics, vol. 3 — Semiconductors and Doping', url: 'https://openstax.org/books/university-physics-volume-3/pages/9-6-semiconductors-and-doping' }
+    ]
+  },
+  supraconductivite: {
+    equations: [
+      { title: 'Résistivité sous la température critique', formula: 'T < T꜀ ⇒ ρ = 0 (état supraconducteur idéal)', explanation: 'Sous sa température critique, un matériau peut entrer dans l’état supraconducteur. La condition ne suffit pas à elle seule : le champ magnétique et le courant doivent aussi rester dans les limites critiques du matériau.', parameters: 'T : température du matériau (K) ; Tc : température critique propre au matériau (K) ; ρ : résistivité (Ω·m). Pour un échantillon homogène, ρ = 0 implique une résistance R nulle dans le modèle idéal.', example: 'Un matériau de Tc = 9,2 K est refroidi à T = 4,2 K et soumis à un champ inférieur à son champ critique : T < Tc.', result: 'Il peut être supraconducteur ; si ses limites critiques ne sont pas dépassées, sa résistivité est nulle dans le modèle.' },
+      { title: 'Puissance Joule', formula: 'P = RI²', explanation: 'Dans un dipôle résistif, la puissance dissipée par effet Joule est le produit de sa résistance par le carré du courant.', parameters: 'P : puissance dissipée (W) ; R : résistance (Ω) ; I : courant efficace en régime continu ou résistance instantanée et courant instantané selon l’usage. En régime alternatif, la puissance moyenne nécessite généralement les valeurs efficaces et le facteur de puissance.', example: 'Dans le modèle idéal, si R = 0 Ω et I = 10 A, alors P = 0 × 10².', result: 'La dissipation Joule est nulle dans l’idéal. Les conducteurs réels et leurs connexions peuvent toutefois avoir des pertes.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 3 — Superconductivity', url: 'https://openstax.org/books/university-physics-volume-3/pages/9-8-superconductivity' },
+      { title: 'OpenStax University Physics, vol. 2 — Superconductors', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-6-superconductors' }
+    ]
+  },
+  'gravitation-orbites': {
+    equations: [
+      { title: 'Loi de gravitation universelle', formula: 'F = GMm/r²', explanation: 'Deux masses ponctuelles s’attirent avec une force dirigée selon la droite qui les relie. Pour une distribution sphérique, la formule s’applique à l’extérieur en remplaçant la distribution par sa masse totale au centre.', parameters: 'F : norme de la force (N) ; G = 6,67430 × 10⁻¹¹ m³·kg⁻¹·s⁻² ; M, m : masses (kg) ; r : distance entre leurs centres (m).', example: 'À la surface terrestre, une masse m = 1,0 kg subit F ≈ GMₑm/Rₑ² avec Mₑ = 5,97 × 10²⁴ kg et Rₑ = 6,37 × 10⁶ m.', result: 'F ≈ 9,82 N.' },
+      { title: 'Troisième loi de Kepler', formula: 'T²/a³ = constante', explanation: 'Pour des corps orbitant autour du même astre central dominant, le carré de la période est proportionnel au cube du demi-grand axe. Pour une masse centrale M et des masses orbitales négligeables devant M, la constante vaut 4π²/(GM).', parameters: 'T : période orbitale (s) ; a : demi-grand axe (m) ; la constante dépend de la masse centrale M et vaut 4π²/(GM) dans l’approximation képlérienne.', example: 'Autour du Soleil, si a passe de 1 UA à 2 UA, T₂ = T₁ × (2)³⁄². En prenant T₁ = 1 an, T₂ ≈ 2,83 ans.', result: 'La période orbitale est environ 2,83 ans.' },
+      { title: 'Vitesse sur une orbite circulaire', formula: 'v = √(GM/r)', explanation: 'Cette vitesse s’obtient en égalant l’accélération centripète à l’accélération gravitationnelle. Elle vaut pour une orbite circulaire autour d’une masse centrale M, en négligeant les autres corps.', parameters: 'v : vitesse orbitale (m·s⁻¹) ; G : constante gravitationnelle ; M : masse centrale (kg) ; r : rayon orbital depuis le centre (m).', example: 'Si r est multiplié par 4 à M constant, v₂/v₁ = √(r₁/(4r₁)).', result: 'La vitesse circulaire est divisée par 2.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Newton’s Law of Universal Gravitation', url: 'https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation' },
+      { title: 'OpenStax University Physics, vol. 1 — Kepler’s Laws of Planetary Motion', url: 'https://openstax.org/books/university-physics-volume-1/pages/13-5-keplers-laws-of-planetary-motion' }
+    ]
+  },
+  cosmologie: {
+    equations: [
+      { title: 'Loi de Hubble-Lemaître à faible distance cosmologique', formula: 'v ≈ H₀d', explanation: 'Pour des galaxies suffisamment proches, leur vitesse de récession moyenne est approximativement proportionnelle à leur distance. La relation est une approximation locale ; à grand décalage vers le rouge, il faut utiliser un modèle d’expansion cosmologique, et les vitesses particulières des galaxies ajoutent des écarts.', parameters: 'v : vitesse de récession estimée (km·s⁻¹) ; H₀ : constante de Hubble actuelle (km·s⁻¹·Mpc⁻¹) ; d : distance (Mpc). La valeur de H₀ dépend des méthodes et données utilisées.', example: 'Avec la valeur pédagogique H₀ = 70 km·s⁻¹·Mpc⁻¹ et d = 10 Mpc : v ≈ 70 × 10.', result: 'v ≈ 700 km·s⁻¹ dans cette approximation locale.' }
+    ],
+    sources: [
+      { title: 'NASA — The Universe Is Expanding Faster These Days', url: 'https://science.nasa.gov/universe/the-universe-is-expanding-faster-these-days-and-dark-energy-is-responsible-so-what-is-dark-energy/' },
+      { title: 'NASA — Galaxy Basics', url: 'https://science.nasa.gov/universe/galaxies/' }
+    ]
+  },
+  'unites-dimensions': {
+    equations: [
+      { title: 'Dimension d’une vitesse', formula: '[v] = L·T⁻¹', explanation: 'La dimension indique la nature physique d’une grandeur indépendamment des unités choisies. Une vitesse est une longueur parcourue par unité de temps.', parameters: '[v] : dimension de la vitesse ; L : dimension longueur ; T : dimension temps.', example: 'Pour v = d/t, on a [v] = L/T.', result: '[v] = L·T⁻¹, cohérent avec une vitesse.' },
+      { title: 'Dimension d’une accélération', formula: '[a] = L·T⁻²', explanation: 'L’accélération est la variation de vitesse par unité de temps.', parameters: '[a] : dimension de l’accélération ; L : longueur ; T : temps.', example: 'Pour a = Δv/Δt, [a] = (L·T⁻¹)/T.', result: '[a] = L·T⁻².' },
+      { title: 'Dimension d’une force', formula: '[F] = M·L·T⁻²', explanation: 'Par la deuxième loi de Newton, une force a la dimension d’une masse multipliée par une accélération.', parameters: '[F] : dimension de la force ; M : masse ; L : longueur ; T : temps.', example: 'Avec F = ma : [F] = M × (L·T⁻²).', result: '[F] = M·L·T⁻² ; l’unité SI équivalente est le newton, kg·m·s⁻².' }
+    ],
+    sources: [{ title: 'OpenStax University Physics, vol. 1 — Dimensional Analysis', url: 'https://openstax.org/books/university-physics-volume-1/pages/1-4-dimensional-analysis' }]
+  },
+  incertitudes: {
+    equations: [
+      { title: 'Incertitude relative', formula: 'uᵣ(x) = u(x)/|x|', explanation: 'L’incertitude relative compare l’incertitude absolue à la valeur mesurée. Elle est sans dimension et s’exprime souvent en pourcentage.', parameters: 'uᵣ(x) : incertitude relative (sans unité) ; u(x) : incertitude absolue ou incertitude-type, dans la même unité que x ; x : valeur mesurée, non nulle.', example: 'Une longueur vaut x = 20,0 cm avec u(x) = 0,2 cm : uᵣ = 0,2/20,0.', result: 'uᵣ = 0,010 = 1,0 %.' },
+      { title: 'Écriture d’une mesure avec incertitude', formula: 'x = x_mesurée ± u(x)', explanation: 'Cette notation communique une valeur mesurée et une incertitude associée ; son interprétation dépend de la méthode et du niveau de couverture utilisés pour déterminer u.', parameters: 'x_mesurée : estimation de la grandeur ; u(x) : incertitude avec la même unité que x. Les chiffres conservés doivent être cohérents avec la précision annoncée.', example: 'Pour une longueur mesurée x = 20,0 cm avec u(x) = 0,2 cm, on écrit x = (20,0 ± 0,2) cm.', result: 'L’incertitude relative correspondante est 1,0 %.' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Units and Standards', url: 'https://openstax.org/books/university-physics-volume-1/pages/1-2-units-and-standards' },
+      { title: 'OpenStax University Physics, vol. 1 — Significant Figures', url: 'https://openstax.org/books/university-physics-volume-1/pages/1-6-significant-figures' }
+    ]
+  },
+  'experimentation-modelisation': {
+    equations: [
+      { title: 'Résidu d’un modèle', formula: 'r = valeur mesurée − valeur prédite', explanation: 'Le résidu est l’écart signé entre une observation et la prédiction du modèle pour les mêmes conditions. Son analyse aide à repérer biais, dispersion et inadéquation du modèle ; elle ne suffit pas seule à établir une causalité.', parameters: 'r : résidu, dans l’unité de la grandeur ; valeur mesurée : résultat expérimental ; valeur prédite : résultat du modèle pour les mêmes paramètres et unités.', example: 'Le modèle prédit 9,8 m·s⁻² et la mesure donne 9,7 m·s⁻² : r = 9,7 − 9,8.', result: 'r = −0,1 m·s⁻².' }
+    ],
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Solving Problems in Physics', url: 'https://openstax.org/books/university-physics-volume-1/pages/1-7-solving-problems-in-physics' },
+      { title: 'NIST — Guidelines for Evaluating and Expressing the Uncertainty of NIST Measurement Results', url: 'https://www.nist.gov/pml/nist-technical-note-1297' }
+    ]
+  }
+};
+
+for (const [chapterId, details] of Object.entries(remainingPhysicsDetails)) {
+  const chapter = window.courseCatalog.flatMap((branch) => branch.chapters).find((item) => item.id === chapterId);
+  chapter.lesson.equationDetails = details.equations;
+  chapter.lesson.sources = details.sources;
+}
+
+const unicodeFormulaChapters = Object.fromEntries(
+  window.courseCatalog.flatMap((branch) => branch.chapters).map((chapter) => [chapter.id, chapter])
+);
+
+unicodeFormulaChapters['lois-newton'].lesson.formula.text = 'Σ F⃗ₑₓₜ = m a⃗';
+unicodeFormulaChapters['lois-newton'].lesson.formula.mathML = 'newton-second-law';
+unicodeFormulaChapters['lois-newton'].lesson.equationDetails[0].formula = 'Σ F⃗ₑₓₜ = m a⃗';
+unicodeFormulaChapters['lois-newton'].lesson.equationDetails[0].mathML = 'newton-second-law';
+unicodeFormulaChapters.radioactivite.lesson.formula.mathML = 'radioactive-decay-summary';
+unicodeFormulaChapters.radioactivite.lesson.equationDetails.find((equation) => equation.title === 'Loi de décroissance radioactive').mathML = 'radioactive-decay-law';
+unicodeFormulaChapters.radioactivite.lesson.equationDetails.find((equation) => equation.title === 'Lien entre demi-vie et constante de désintégration').mathML = 'radioactive-half-life';
+
+const energyLesson = unicodeFormulaChapters['energie-mecanique'].lesson;
+energyLesson.formula.text = 'E꜀ = ½mv²  |  ΔE꜀ = ΣW(F)  |  Eₘ = E꜀ + Eₚ';
+for (const key of ['sections', 'example', 'exercise']) {
+  const value = energyLesson[key];
+  if (Array.isArray(value)) {
+    energyLesson[key] = value.map((text) => text.replaceAll('ΔEc', 'ΔE꜀').replaceAll('Ec', 'E꜀').replaceAll('Em', 'Eₘ').replaceAll('Ep', 'Eₚ'));
+  } else {
+    for (const field of Object.keys(value)) {
+      value[field] = value[field].replaceAll('ΔEc', 'ΔE꜀').replaceAll('Ec', 'E꜀').replaceAll('Em', 'Eₘ').replaceAll('Ep', 'Eₚ');
+    }
+  }
+}
+
+unicodeFormulaChapters.hydrostatique.lesson.formula.text = 'p = p₀ + ρgh  |  Fₐ = ρ (fluide) g V (déplacé)';
+unicodeFormulaChapters.hydrostatique.lesson.equationDetails.find((equation) => equation.title === 'Poussée d’Archimède').formula = 'Fₐ = ρ (fluide) g V (déplacé)';
+unicodeFormulaChapters.hydrostatique.lesson.example.calculation = 'V = 0,002 m³ ; Fₐ = 1000 × 9,81 × 0,002.';
+unicodeFormulaChapters.radioactivite.lesson.formula.text = 'N(t) = N₀ exp(−λt)  |  t₁/₂ = ln(2)/λ';
+
+const hydrogenLesson = unicodeFormulaChapters['atomes-niveaux'].lesson;
+hydrogenLesson.sections = hydrogenLesson.sections.map((paragraph) => paragraph.replaceAll('nᵢ', 'n₁').replaceAll('n_f', 'n₂'));
+const rydbergEquation = hydrogenLesson.equationDetails.find((equation) => equation.title === 'Raies de l’hydrogène (formule de Rydberg)');
+rydbergEquation.formula = '1/λ = Rₕ(1/n₂² − 1/n₁²), n₁ > n₂';
+for (const field of ['explanation', 'parameters', 'example', 'result']) {
+  rydbergEquation[field] = rydbergEquation[field].replaceAll('R_H', 'Rₕ').replaceAll('nᵢ', 'n₁').replaceAll('n_f', 'n₂').replaceAll('nᵢ', 'n₁');
+}
+
+const photonLesson = unicodeFormulaChapters.photons.lesson;
+photonLesson.exercise.answer = photonLesson.exercise.answer.replaceAll('Kmax', 'Kₘₐₓ');
+for (const equation of photonLesson.equationDetails) {
+  for (const field of ['formula', 'explanation', 'parameters', 'example', 'result']) {
+    equation[field] = equation[field].replaceAll('Kmax', 'Kₘₐₓ');
+  }
+}
+
+const nuclearBindingEquation = unicodeFormulaChapters['energie-nucleaire'].lesson.equationDetails.find((equation) => equation.title === 'Énergie de liaison d’un noyau');
+nuclearBindingEquation.formula = 'B = [Zmₚ + (A − Z)mₙ − m(noyau)]c²';
+const bandGapEquation = unicodeFormulaChapters['bandes-energie'].lesson.equationDetails[0];
+bandGapEquation.formula = 'Eγ = hf ; Eγ ≥ E(gap)';
+unicodeFormulaChapters['bandes-energie'].lesson.formula.text = 'E = hf ; absorption possible si E ≥ E(gap)';
+unicodeFormulaChapters.supraconductivite.lesson.formula.text = 'T < T꜀  ⇒  R = 0 (dans le modèle idéal)';
+unicodeFormulaChapters.incertitudes.lesson.equationDetails.find((equation) => equation.title === 'Écriture d’une mesure avec incertitude').formula = 'x = xₘ ± u(x)';
+
+const buoyancyEquation = unicodeFormulaChapters.hydrostatique.lesson.equationDetails.find((equation) => equation.title === 'Poussée d’Archimède');
+buoyancyEquation.parameters = buoyancyEquation.parameters.replaceAll('ρfluide', 'ρ (fluide)').replaceAll('Vdéplacé', 'V (déplacé)');
+unicodeFormulaChapters.hydrostatique.lesson.equationDetails[1].example = 'Un corps déplace 2,0 L d’eau, soit 0,0020 m³ : Fₐ = 1000 × 9,81 × 0,0020.';
+
+const nuclearBinding = unicodeFormulaChapters['energie-nucleaire'].lesson.equationDetails.find((equation) => equation.title === 'Énergie de liaison d’un noyau');
+nuclearBinding.parameters = nuclearBinding.parameters.replace('m_noyau', 'm(noyau)');
+
+for (const equation of unicodeFormulaChapters.supraconductivite.lesson.equationDetails) {
+  for (const field of ['formula', 'explanation', 'parameters', 'example', 'result']) {
+    equation[field] = equation[field].replaceAll('Tc', 'T꜀');
+  }
+}
+
+const measurementEquation = unicodeFormulaChapters.incertitudes.lesson.equationDetails.find((equation) => equation.title === 'Écriture d’une mesure avec incertitude');
+measurementEquation.parameters = measurementEquation.parameters.replace('x_mesurée', 'xₘ');
+
+const generalRelativityLesson = unicodeFormulaChapters['relativite-generale'].lesson;
+unicodeFormulaChapters['relativite-generale'].summary = 'Géométrie dynamique de l’espace-temps, principe d’équivalence et équation d’Einstein reliant courbure et énergie-impulsion.';
+generalRelativityLesson.sections = [
+  'En relativité générale, la gravitation n’est pas décrite comme une force newtonienne fondamentale : matière et énergie sont liées à la géométrie de l’espace-temps, et les corps en chute libre suivent ses géodésiques. L’analogie du « drap creusé » peut aider à visualiser une courbure spatiale, mais ne représente pas littéralement la géométrie quadridimensionnelle.',
+  'Le principe d’équivalence affirme localement qu’un laboratoire en chute libre reproduit les lois de la relativité restreinte, tant que les effets de marée dus à la variation du champ sur sa taille et sa durée d’observation sont négligeables. Les effets de marée sont précisément une manifestation de la courbure qu’on ne peut pas éliminer dans une région étendue.',
+  'L’équation d’Einstein des champs relie, à chaque événement, le tenseur de courbure G₍μν₎ et la constante cosmologique Λ au tenseur énergie-impulsion T₍μν₎. C’est une équation tensorielle : μ et ν parcourent les quatre coordonnées de l’espace-temps. En quatre dimensions, la symétrie laisse dix composantes indépendantes, couplées et non linéaires. G₍μν₎ est construit à partir du tenseur de Ricci R₍μν₎, de son scalaire R et du tenseur métrique g₍μν₎.',
+  'Le membre droit décrit la densité et les flux d’énergie et de quantité de mouvement, ainsi que les contraintes et pressions. Il ne s’agit donc pas seulement de la masse au repos : pression et flux d’énergie contribuent aussi à la gravitation. La constante Λ représente un terme géométrique uniforme ; dans les applications locales du Système solaire, on la néglige habituellement.',
+  'La relativité générale ne remplace pas systématiquement la mécanique de Newton : lorsque le champ est faible, les vitesses sont petites devant c et les mesures sont faites loin d’un horizon, elle retrouve l’approximation newtonienne avec une grande précision. L’exemple de la pesanteur terrestre ci-dessous utilise cette limite, et non une résolution directe de l’équation tensorielle.'
+];
+generalRelativityLesson.formula = {
+  label: 'ÉQUATION D’EINSTEIN DES CHAMPS',
+  text: 'G₍μν₎ + Λg₍μν₎ = (8πG/c⁴)T₍μν₎',
+  mathML: 'einstein-field-equation'
+};
+generalRelativityLesson.equationDetails = [
+  {
+    title: 'Équation d’Einstein des champs',
+    formula: 'G₍μν₎ + Λg₍μν₎ = (8πG/c⁴)T₍μν₎',
+    mathML: 'einstein-field-equation',
+    explanation: 'Cette équation locale décrit comment la géométrie de l’espace-temps est liée à son contenu matériel et énergétique. Le coefficient 8πG/c⁴ fixe le couplage gravitationnel. Certains textes emploient une convention différente pour le signe de la courbure ; l’équation affichée correspond à une convention standard, cohérente avec la limite newtonienne indiquée plus bas.',
+    parameters: 'G₍μν₎ : tenseur d’Einstein, grandeur géométrique construite à partir de la courbure ; Λ : constante cosmologique (m⁻²) ; g₍μν₎ : tenseur métrique, qui définit les intervalles d’espace-temps ; G : constante gravitationnelle de Newton, ici à ne pas confondre avec G₍μν₎ ; c : vitesse de la lumière dans le vide ; T₍μν₎ : tenseur énergie-impulsion (densité et flux d’énergie, densité de quantité de mouvement et contraintes). μ, ν = 0, 1, 2, 3 repèrent les coordonnées temporelle et spatiales.',
+    example: 'Dans le vide à l’extérieur d’un corps, on peut poser T₍μν₎ = 0. À l’échelle locale, si l’on néglige Λ, l’équation impose G₍μν₎ = 0.',
+    result: 'Cela ne signifie pas que l’espace-temps y est plat : à l’extérieur d’une masse sphérique, le tenseur de Ricci peut être nul alors que la courbure de marée (tenseur de Riemann) reste non nulle.'
+  },
+  {
+    title: 'Définition du tenseur d’Einstein',
+    formula: 'G₍μν₎ = R₍μν₎ − ½Rg₍μν₎',
+    mathML: 'einstein-tensor-definition',
+    explanation: 'Le tenseur d’Einstein rassemble le tenseur de Ricci et sa trace de façon à satisfaire une loi locale de conservation. Il constitue la partie géométrique standard de l’équation de champ avec constante cosmologique.',
+    parameters: 'R₍μν₎ : tenseur de Ricci, contraction du tenseur de courbure de Riemann (m⁻²) ; R = gᵐⁿR₍μν₎ : scalaire de Ricci, trace de R₍μν₎ (m⁻²) ; g₍μν₎ : métrique ; ½ : facteur numérique. Les indices répétés sont contractés selon la convention d’Einstein.',
+    example: 'Pour l’extérieur vide de Schwarzschild, R₍μν₎ = 0, donc R = 0 et la définition donne G₍μν₎ = 0.',
+    result: 'Le tenseur d’Einstein s’annule dans cette région, bien que le champ gravitationnel et les effets de marée ne soient pas nuls.'
+  },
+  {
+    title: 'Limite newtonienne : champ d’une masse sphérique',
+    formula: 'g ≈ GₙM/r²',
+    explanation: 'Dans un champ faible, pour des vitesses lentes et à l’extérieur d’une masse sphérique, la relativité générale redonne la valeur de l’accélération gravitationnelle de Newton. Cette formule est une approximation de la relativité générale, pas son équation fondamentale.',
+    parameters: 'g : norme de l’accélération gravitationnelle (m·s⁻²) ; Gₙ = 6,67430 × 10⁻¹¹ m³·kg⁻¹·s⁻² : constante de Newton ; M : masse centrale (kg) ; r : distance au centre (m).',
+    example: 'À la surface terrestre, prenons M = 5,972 × 10²⁴ kg et r = 6,371 × 10⁶ m : g ≈ GₙM/r².',
+    result: 'g ≈ 9,82 m·s⁻², proche de la valeur usuelle 9,81 m·s⁻² ; la valeur locale varie avec l’altitude et la latitude.'
+  }
+];
+generalRelativityLesson.example = {
+  statement: 'Estimer l’accélération gravitationnelle à la surface de la Terre à l’aide de la limite newtonienne.',
+  calculation: 'g ≈ (6,67430 × 10⁻¹¹ × 5,972 × 10²⁴)/(6,371 × 10⁶)² m·s⁻².',
+  answer: 'g ≈ 9,82 m·s⁻². Ce calcul illustre la limite de champ faible ; il ne résout pas directement l’équation tensorielle d’Einstein.'
+};
+generalRelativityLesson.exercise = {
+  question: 'Dans l’approximation newtonienne, comment varie g si l’on double la distance r au centre de la Terre ?',
+  answer: 'Comme g ∝ 1/r², doubler r divise g par 2² : g devient environ 9,82/4 ≈ 2,46 m·s⁻².'
+};
+generalRelativityLesson.sources = [
+  { title: 'OpenStax University Physics, vol. 1 — Einstein’s Theory of Gravity', url: 'https://openstax.org/books/university-physics-volume-1/pages/13-7-einsteins-theory-of-gravity' },
+  { title: 'Einstein Online, Max Planck Institute — Einstein’s geometric gravity', url: 'https://www.einstein-online.info/en/GeomGravity/' },
+  { title: 'Einstein Online, Max Planck Institute — The equivalence principle', url: 'https://www.einstein-online.info/en/spotlight/equivalence_principle/' }
+];

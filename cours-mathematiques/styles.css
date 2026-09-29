@@ -472,6 +472,16 @@ h3 {
   line-height: 1.4;
 }
 
+.mathml-display {
+  display: block;
+  max-width: 100%;
+  color: var(--ink);
+  font-family: math;
+  font-size: 26px;
+  line-height: 1.4;
+  overflow-x: auto;
+}
+
 .math-display sup,
 .math-display sub,
 .math sup,
@@ -1018,6 +1028,10 @@ h3 {
     line-height: 1.04;
   }
 
+  .course-heading h1.is-long-title {
+    font-size: 40px;
+  }
+
   .course-intro {
     font-size: 18px;
   }
@@ -1100,6 +1114,10 @@ h3 {
 
   h1 {
     font-size: 43px;
+  }
+
+  .course-heading h1.is-long-title {
+    font-size: 36px;
   }
 
   .edition {
