@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours de climatologie : bilan radiatif, effet de serre, circulation générale, océan, El Niño, paléoclimats et changement climatique, avec relations expliquées et sources ouvertes.">
+    <title>Programmes · Cours de climatologie</title>
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      .catalogue-levels a.is-current {
+        border-left-color: var(--sky, #3d7ea6);
+        color: #2f6b8f;
+      }
+    </style>
+    <script src="climatologie-data.js" defer></script>
+    <script src="catalogue.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Catalogue des cours de climatologie">
+        <span class="wordmark-mark" aria-hidden="true">◈</span>
+        <span>LE COURS DE CLIMATOLOGIE</span>
+      </a>
+      <a class="edition catalogue-back" href="../index.html">TOUTES LES DISCIPLINES ↗</a>
+    </header>
+    <main class="catalogue-layout">
+      <aside class="course-sidebar" aria-label="Branches de la climatologie">
+        <p class="sidebar-label">LES BRANCHES</p>
+        <nav class="catalogue-levels" id="catalogue-levels"></nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">◈</span><p>Du bilan énergétique de la planète aux scénarios de fin de siècle : choisis une branche et explore ses notions.</p></div>
+      </aside>
+      <article class="catalogue-content">
+        <header class="course-heading catalogue-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BIBLIOTHÈQUE · SCIENCES DU CLIMAT</p>
+          <h1>Comprendre<br><span>le système climatique</span></h1>
+          <p class="course-intro">La climatologie relie la physique du rayonnement, la dynamique de l'atmosphère et de l'océan et l'histoire de la planète. Chaque chapitre présente les notions, une relation essentielle, un exemple guidé et des exercices corrigés.</p>
+          <div class="course-meta"><span id="catalogue-count">3 BRANCHES · 9 CHAPITRES</span><span>BASES → APPROFONDISSEMENT</span></div>
+        </header>
+        <div id="programme-sections"></div>
+        <footer class="course-footer"><span>COURS DE CLIMATOLOGIE</span><a href="cours.html?id=bilan-radiatif">Ouvrir le premier cours ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

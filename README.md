@@ -1,6 +1,6 @@
 # La connaissance
 
-Portail statique réunissant les cours de plusieurs disciplines : mathématiques, physique, chimie, et toute nouvelle matière ajoutée selon le même principe.
+Portail statique réunissant les cours de plusieurs disciplines : mathématiques, physique, chimie, économie, géologie, climatologie, et toute nouvelle matière ajoutée selon le même principe.
 
 ## Ouvrir le portail
 
