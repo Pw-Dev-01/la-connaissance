@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi de géodynamique et d'histoire de la planète : structure interne, chaleur et convection, isostasie, champ magnétique, cinématique des plaques, cycle de Wilson, datations isotopiques et temps géologiques, avec équations en MathML et sources vérifiées.">
+    <title>Géodynamique et histoire de la planète | Cours de géologie</title>
+    <!-- Cette page réutilise la feuille de style et le script partagés du cours
+         de mathématiques : même format visuel, même menu latéral numéroté,
+         même barre de progression et mêmes exercices repliables. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte 16 entrées de navigation : la barre latérale devient
+         défilable quand la hauteur de l'écran ne suffit plus à les afficher.
+         Sous 700 px, la mise en page partagée la transforme déjà en bandeau
+         horizontal défilable, d'où le seuil complémentaire ci-dessous. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de géologie">
+        <span class="wordmark-mark" aria-hidden="true">◈</span>
+        <span>LE COURS DE GÉOLOGIE</span>
+      </a>
+      <a class="edition catalogue-back" href="../index.html">TOUTES LES DISCIPLINES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE GÉOLOGIE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branches du cours de géologie">
+          <a class="course-link" href="index.html#materiaux-terrestres"><span class="course-order">01</span><span>Matériaux terrestres</span></a>
+          <a class="course-link" href="index.html#dynamique-interne"><span class="course-order">02</span><span>Dynamique interne</span></a>
+          <a class="course-link" href="index.html#temps-geologiques"><span class="course-order">03</span><span>Temps géologiques</span></a>
+          <a class="course-link is-current" href="geodynamique-histoire-planete.html" aria-current="page"><span class="course-order">04</span><span>Géodynamique et histoire</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours de géodynamique">
+          <a href="#cadre">01 <span>Le cadre chronologique</span></a>
+          <a href="#architecture">02 <span>L'architecture interne</span></a>
+          <a href="#chaleur">03 <span>Le moteur thermique</span></a>
+          <a href="#isostasie">04 <span>L'isostasie</span></a>
+          <a href="#magnetisme">05 <span>Le champ magnétique</span></a>
+          <a href="#cinematique">06 <span>La cinématique des plaques</span></a>
+          <a href="#forces">07 <span>Les forces motrices</span></a>
+          <a href="#wilson">08 <span>Le cycle de Wilson</span></a>
+          <a href="#deformation">09 <span>Plis, failles et orogenèse</span></a>
+          <a href="#archives">10 <span>Les archives sédimentaires</span></a>
+          <a href="#datations">11 <span>Les datations isotopiques</span></a>
+          <a href="#hadeen-archeen">12 <span>Hadéen et Archéen</span></a>
+          <a href="#proterozoique">13 <span>Le Protérozoïque</span></a>
+          <a href="#phanerozoique">14 <span>Le Phanérozoïque</span></a>
+          <a href="#exercices">15 <span>S'entraîner</span></a>
+          <a href="#sources">16 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">◈</span>
+          <p>Une idée essentielle : le moteur thermique de l'intérieur écrit, milliard après milliard, l'histoire que les roches conservent.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> GÉODYNAMIQUE · COURS APPROFONDI</p>
+          <h1 class="is-long-title">Géodynamique<br><span>et histoire</span><br>de la planète</h1>
+          <p class="course-intro">D'où vient l'énergie qui fait bouger les plaques ? Comment les océans s'ouvrent-ils puis se referment-ils ? Comment dater des événements vieux de plusieurs milliards d'années ? Ce cours relie le moteur interne de la Terre à son histoire, de la structure du globe aux grandes étapes des temps géologiques.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>14 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+        <section class="lesson-section" id="cadre" aria-labelledby="cadre-title">
+          <p class="section-index">01 / LE CADRE CHRONOLOGIQUE</p>
+          <h2 id="cadre-title">Le temps profond et sa mesure</h2>
+          <p>La géodynamique étudie les transferts d'énergie et de matière à l'intérieur de la Terre et leurs effets en surface : ouverture et fermeture des océans, chaînes de montagnes, volcanisme, séismes. L'histoire de la planète est le récit de ces processus sur des milliards d'années. Pour la lire, il faut un cadre chronologique commun : la <strong>Charte chronostratigraphique internationale</strong>, référence officielle de la Commission internationale de stratigraphie (ICS, version 2024/12), qui découpe le temps en éons, ères, périodes et étages datés.</p>
+          <p>Les durées se comptent en <strong>Ma</strong> (millions d'années) et en <strong>Ga</strong> (milliards d'années). La Terre a environ 4 566 millions d'années (manuel ouvert <em>Historical Geology</em>) : même les dinosaures n'occupent qu'une fraction infime de cette durée. Le mot « Précambrien » regroupe informellement tout ce qui précède le Phanérozoïque, soit les éons Hadéen, Archéen et Protérozoïque.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Échelle des temps géologiques (bornes d'après la charte ICS 2024/12)</caption>
+              <thead><tr><th scope="col">Éon et ère</th><th scope="col">Bornes (Ma)</th><th scope="col">Contenu et repères</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Hadéen</th><td>4 567 – 4 031</td><td>Accrétion de la Terre, océan magmatique, noyau et manteau</td></tr>
+                <tr><th scope="row">Archéen</th><td>4 031 – 2 500</td><td>Premières croûtes stables, premières traces de vie</td></tr>
+                <tr><th scope="row">Protérozoïque</th><td>2 500 – 538,8</td><td>Grande Oxydation, supercontinents, glaciations globales</td></tr>
+                <tr><th scope="row">Paléozoïque</th><td>538,8 – 251,902</td><td>Explosion cambrienne, conquête des continents</td></tr>
+                <tr><th scope="row">Mésozoïque</th><td>251,902 – 66,0</td><td>Domination des dinosaures, ouverture de l'Atlantique</td></tr>
+                <tr><th scope="row">Cénozoïque</th><td>66,0 – 0</td><td>Mammifères, glaciations quaternaires</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Lecture : « Ma » = millions d'années avant le présent ; la borne basse d'une unité est la borne haute de la suivante.</p>
+          <div class="callout callout-coral"><strong>Trois archives complémentaires</strong><p>Les roches donnent la nature et l'ordre des événements (datation relative), les fossiles corrèlent les couches entre régions, les isotopes radioactifs fournissent des âges en années (datation isotopique). Aucune des trois ne suffit seule : c'est leur croisement qui fonde l'échelle des temps.</p></div>
+        </section>
+
+        <section class="lesson-section" id="architecture" aria-labelledby="architecture-title">
+          <p class="section-index">02 / L'ARCHITECTURE INTERNE</p>
+          <h2 id="architecture-title">Ce que les ondes sismiques révèlent</h2>
+          <p>Personne n'a vu l'intérieur de la Terre, mais les ondes sismiques le dessinent : les ondes P (compression) et S (cisaillement) changent de vitesse en traversant des milieux de rigidité différente, et les ondes S ne traversent pas les liquides. Leurs temps d'arrivée, enregistrés dans le monde entier, révèlent une planète en couches concentriques (USGS, <em>This Dynamic Earth</em>).</p>
+          <p>La <strong>croûte</strong>, rigide et mince, n'a qu'environ 5 km d'épaisseur sous les océans, contre environ 30 km en moyenne sous les continents et jusqu'à 100 km sous les grandes chaînes comme les Alpes. Sous elle s'étend le <strong>manteau</strong>, environ 2 900 km de roches denses, chaudes et semi-solides, plus riches en fer, magnésium et calcium que la croûte. Au centre, le <strong>noyau</strong> métallique (fer et nickel), près de deux fois plus dense que le manteau, se divise en un noyau externe liquide d'environ 2 200 km et un noyau interne solide d'environ 1 250 km de rayon.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les grandes enveloppes de la Terre (USGS, Physical Geology)</caption>
+              <thead><tr><th scope="col">Enveloppe</th><th scope="col">Épaisseur</th><th scope="col">État</th><th scope="col">Nature</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Croûte océanique</th><td>≈ 5 km</td><td>Solide rigide</td><td>Basaltes</td></tr>
+                <tr><th scope="row">Croûte continentale</th><td>≈ 30 km, jusqu'à ≈ 100 km</td><td>Solide rigide</td><td>Granites, roches métamorphiques et sédimentaires</td></tr>
+                <tr><th scope="row">Manteau</th><td>≈ 2 900 km</td><td>Solide qui flue lentement</td><td>Roches riches en Fe, Mg et Ca</td></tr>
+                <tr><th scope="row">Noyau externe</th><td>≈ 2 200 km</td><td>Liquide</td><td>Alliage fer-nickel</td></tr>
+                <tr><th scope="row">Noyau interne</th><td>≈ 1 250 km de rayon</td><td>Solide (pression)</td><td>Alliage fer-nickel, plus de 6 000 °C</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Une seconde découpe, mécanique, se superpose à la découpe chimique : la <strong>lithosphère</strong>, rigide, regroupe la croûte et le manteau supérieur soudé à sa base, sur au moins 80 km — c'est elle qui est découpée en plaques. Sous elle, l'<strong>asthénosphère</strong> est fragilisée par de minuscules quantités de fusion : elle flue très lentement et laisse la lithosphère dériver. La limite croûte–manteau, marquée par un saut de vitesse des ondes, est la discontinuité de Mohorovičić. Le noyau interne, presque aussi chaud que la surface du Soleil, reste solide parce que la pression empêche la fusion.</p>
+        </section>
+
+        <section class="lesson-section" id="chaleur" aria-labelledby="chaleur-title">
+          <p class="section-index">03 / LE MOTEUR THERMIQUE</p>
+          <h2 id="chaleur-title">Géotherme, conduction et convection</h2>
+          <p>La chaleur qui s'échappe de l'intérieur fournit l'énergie des montagnes, des volcans, des continents et des bassins océaniques (OpenStax, <em>Astronomy 2e</em>). Elle a deux origines : la <strong>chaleur résiduelle</strong> de la formation de la planète (accrétion, impacts, différenciation) et la <strong>désintégration radioactive</strong> des éléments instables de la croûte et du manteau. La température croît donc avec la profondeur, jusqu'aux quelque 3 500 à plus de 6 000 °C du noyau.</p>
+          <p>La <strong>conduction</strong> transfère la chaleur de proche en proche, sans déplacement de matière, sous l'effet d'une différence de température : elle domine dans la croûte rigide et la lithosphère. La <strong>convection</strong> la transfère par le mouvement lent de la matière elle-même : c'est le régime du manteau ductile. La convection transporte la chaleur bien plus vite que la conduction, et c'est cette efficacité qui entretient la tectonique des plaques.</p>
+          <div class="formula-block"><span class="formula-label">CONDUCTION · LOI DE FOURIER</span><math class="mathml-display" display="block" aria-label="Flux thermique conductif égal à la conductivité thermique fois la différence de température divisée par l'épaisseur"><mrow><mi>q</mi><mo>=</mo><mi>k</mi><mo>·</mo><mfrac><mrow><mi>Δ</mi><mi>T</mi></mrow><mi>d</mi></mfrac></mrow></math><span class="math-display">q = k · ΔT / d</span></div>
+          <p><strong>Paramètres et unités :</strong> q : flux thermique surfacique (W·m⁻²) ; k : conductivité thermique de la roche (W·m⁻¹·K⁻¹) ; ΔT : écart de température (K ou °C) ; d : distance (m). <strong>Exemple :</strong> à conductivité égale, une région à 30 °C/km évacue deux fois plus de chaleur qu'une région à 15 °C/km. <strong>Résultat :</strong> le flux suit le gradient.</p>
+          <p>Trois points structurent la suite. D'abord, la convection est <strong>indispensable</strong> à la tectonique : elle maintient l'asthénosphère faible et mobile, et son organisation (manteau entier, deux niveaux, ou mélange) reste débattue. Ensuite, elle s'arrêtera quand le noyau aura assez refroidi : c'est déjà fait sur Mercure, Mars et la Lune. Enfin, là où la croûte épaisse isole, la chaleur fragilise la lithosphère : un ingrédient du déchirement des continents (section 08).</p>
+        </section>
+
+        <section class="lesson-section" id="isostasie" aria-labelledby="isostasie-title">
+          <p class="section-index">04 / L'ISOSTASIE</p>
+          <h2 id="isostasie-title">L'équilibre flottant de la lithosphère</h2>
+          <p>Les reliefs ne tiennent pas « posés » sur le manteau : ils y flottent, comme un iceberg sur l'eau, selon le principe d'Archimède. C'est l'<strong>isostasie</strong> : tout excès de masse en surface (chaîne de montagnes, calotte glaciaire) est compensé en profondeur, et tout allègement (érosion, fonte des glaces) provoque un soulèvement. Deux variantes du modèle coexistent : le modèle d'<strong>Airy</strong>, où la compensation se fait par une racine crustale légère qui s'enfonce sous les reliefs, et le modèle de <strong>Pratt</strong>, où la croûte garde une épaisseur constante mais sa densité varie latéralement.</p>
+          <div class="formula-block"><span class="formula-label">ISOSTASIE · MODÈLE D'AIRY</span><math class="mathml-display" display="block" aria-label="Épaisseur de la racine crustale égale à la masse volumique de la croûte fois la hauteur du relief, divisée par la différence des masses volumiques du manteau et de la croûte"><mrow><mi>r</mi><mo>=</mo><mfrac><mrow><msub><mi>ρ</mi><mi>c</mi></msub><mo>·</mo><mi>h</mi></mrow><mrow><msub><mi>ρ</mi><mi>m</mi></msub><mo>−</mo><msub><mi>ρ</mi><mi>c</mi></msub></mrow></mfrac></mrow></math><span class="math-display">r = ρ<sub>c</sub> · h / (ρ<sub>m</sub> − ρ<sub>c</sub>)</span></div>
+          <p><strong>Paramètres et unités :</strong> r : épaisseur de la racine crustale (m) ; h : altitude du relief (m) ; ρ<sub>c</sub> et ρ<sub>m</sub> : masses volumiques de la croûte et du manteau (kg·m⁻³). <strong>Exemple :</strong> avec les valeurs usuelles ρ<sub>c</sub> = 2 800 et ρ<sub>m</sub> = 3 300 kg·m⁻³, une chaîne de 5 km d'altitude s'enracine d'environ 28 km. <strong>Résultat :</strong> la racine vaut plus de cinq fois la hauteur visible.</p>
+          <p>La preuve la plus directe est le <strong>rebond post-glaciaire</strong> : la calotte laurentide, épaisse de plus de 3 000 m, a quitté la région de la baie d'Hudson il y a environ 8 000 ans, et la croûte y remonte encore à près de 2 cm par an. Autour, les régions refoulées par le manteau déplacé s'affaissent en retour. L'érosion agit de même : décaper une montagne l'allège, le manteau remonte, et le relief ne s'abaisse que lentement — c'est pourquoi les chaînes anciennes gardent longtemps une topographie.</p>
+        </section>
+
+        <section class="lesson-section" id="magnetisme" aria-labelledby="magnetisme-title">
+          <p class="section-index">05 / LE CHAMP MAGNÉTIQUE</p>
+          <h2 id="magnetisme-title">Géodynamo, inversions et paléomagnétisme</h2>
+          <p>La Terre est un aimant géant dont la source est interne : le noyau externe est un alliage fer-nickel liquide, conducteur, animé de mouvements de convection et entraîné par la rotation de la planète. Ces mouvements brassent des charges électriques et entretiennent le <strong>champ magnétique</strong> : c'est la géodynamo. Le champ protège la surface et l'atmosphère en déviant une grande partie des particules chargées du vent solaire.</p>
+          <p>Ce champ n'est pas figé : au cours du passé géologique, il s'est <strong>inversé à de nombreuses reprises</strong>, le nord magnétique devenant sud et inversement. Les roches enregistrent ces bascules : en refroidissant, les minéraux magnétiques (comme la magnétite) figent la direction du champ ambiant, et les sédiments orientent leurs grains magnétiques au dépôt. C'est le <strong>paléomagnétisme</strong>, une boussole fossile qui sert à la fois à dater et à repositionner les continents.</p>
+          <p>L'enregistrement le plus lisible se trouve de part et d'autre des dorsales océaniques : la croûte nouvellement formée, aimantée dans le sens du champ du moment, dessine des <strong>bandes magnétiques symétriques</strong>, alternativement normales et inversées, comme un code-barres du temps. En connaissant la durée approximative des inversions, on convertit la largeur des bandes en vitesse d'expansion des fonds océaniques : c'est l'une des mesures fondatrices de la cinématique des plaques (section 06). La même logique permet de retrouver la latitude d'un fragment continental au moment où ses roches se sont formées.</p>
+        </section>
+
+        <section class="lesson-section" id="cinematique" aria-labelledby="cinematique-title">
+          <p class="section-index">06 / LA CINÉMATIQUE DES PLAQUES</p>
+          <h2 id="cinematique-title">Limites, vitesses et mesures modernes</h2>
+          <p>La lithosphère est découpée en grandes plaques rigides qui se déplacent les unes par rapport aux autres sur l'asthénosphère. Leurs contacts définissent quatre types de limites : <strong>divergentes</strong> (les plaques s'écartent, la croûte nouvelle naît du manteau), <strong>convergentes</strong> (une plaque plonge sous l'autre, la croûte est détruite), <strong>transformantes</strong> (glissement horizontal sans création ni destruction) et <strong>zones diffuses</strong>, larges ceintures où la limite est mal définie.</p>
+          <p>Ces mouvements, de quelques centimètres par an, s'additionnent en milliers de kilomètres sur des millions d'années. La dorsale médio-atlantique s'écarte à environ 2,5 cm par an, soit 25 km par million d'années ; la dorsale arctique est encore plus lente (moins de 2,5 cm/an), tandis que la dorsale du Pacifique Est dépasse 15 cm/an. L'océan Atlantique, né d'un mince bras de mer il y a 100 à 200 millions d'années, s'est ouvert à ce rythme (USGS, <em>This Dynamic Earth</em>).</p>
+          <div class="formula-block"><span class="formula-label">VITESSE D'EXPANSION</span><math class="mathml-display" display="block" aria-label="Vitesse égale à la distance divisée par la durée"><mrow><mi>v</mi><mo>=</mo><mfrac><mi>d</mi><mi>t</mi></mfrac></mrow></math><span class="math-display">v = d / t</span></div>
+          <p><strong>Paramètres et unités :</strong> v : vitesse relative des plaques (m·an⁻¹, ou cm·an⁻¹) ; d : distance parcourue (m) ; t : durée (an). <strong>Exemple :</strong> à 2,5 cm par an, ouvrir un bras de mer de 1 000 km demande 1 000 000 m / 0,025 m·an⁻¹ = 40 millions d'années. <strong>Résultat :</strong> les vitesses géologiques « lentes » construisent des océans.</p>
+          <p>Aujourd'hui, on mesure ces déplacements en direct : par interférométrie, télémétrie laser et surtout <strong>GPS</strong>, dont chaque station capte au moins quatre satellites pour se positionner au millimètre près. Les vitesses ainsi suivies pendant quelques années concordent avec celles moyennées sur des millions d'années : la cinématique des plaques est un mouvement continu, pas une succession de saccades.</p>
+        </section>
+
+        <section class="lesson-section" id="forces" aria-labelledby="forces-title">
+          <p class="section-index">07 / LES FORCES MOTRICES</p>
+          <h2 id="forces-title">Ce qui fait bouger les plaques</h2>
+          <p>C'est la question que Wegener n'avait pas su résoudre : quelle force déplace des masses de roche de plusieurs dizaines de kilomètres d'épaisseur ? La réponse moderne combine plusieurs moteurs, tous alimentés par la chaleur interne. La <strong>convection du manteau</strong> entraîne la base de la lithosphère ; la <strong>poussée des dorsales</strong> fait glisser les plaques le long du relief de la dorsale ; la <strong>traction du panneau plongeant</strong> tire la plaque vers la fosse quand la lithosphère océanique, froide et dense, s'enfonce dans le manteau.</p>
+          <p>Ces mécanismes s'articulent dans le modèle de l'expansion–subduction : la croûte nouvelle naît aux dorsales, dérive comme sur un tapis roulant, puis replonge dans les fosses où elle est recyclée dans le manteau. Ce recyclage explique trois observations qui avaient embarrassé les premiers océanographes : la Terre ne grossit pas malgré la création continue de croûte, les sédiments des fonds océaniques restent minces, et les roches océaniques sont bien plus jeunes que les roches continentales.</p>
+          <div class="callout callout-coral"><strong>Une question toujours ouverte</strong><p>La tectonique des plaques est acceptée par toute la communauté scientifique, mais la part exacte de chaque moteur reste débattue, tout comme son fonctionnement aux premiers temps de la Terre ou sur d'autres planètes (USGS, <em>This Dynamic Earth</em>). En science, un modèle unificateur n'interdit pas les questions : il les organise.</p></div>
+        </section>
+
+        <section class="lesson-section" id="wilson" aria-labelledby="wilson-title">
+          <p class="section-index">08 / LE CYCLE DE WILSON</p>
+          <h2 id="wilson-title">Supercontinents : assembler, disperser, recommencer</h2>
+          <p>Les continents ne dérivent pas au hasard : ils s'assemblent en <strong>supercontinents</strong> puis se dispersent, en un cycle qui porte le nom du géophysicien John Tuzo Wilson. L'histoire est lisible sur la marge est de l'Amérique du Nord : au Mésoprotérozoïque, l'orogenèse de Grenville soude des fragments continentaux et assemble le supercontinent <strong>Rodinia</strong> ; au Néoprotérozoïque, Rodinia se déchire, et ce rifting laisse des épanchements basaltiques ; au Paléozoïque, les orogenèses appalachiennes ferment un nouvel océan ; au Trias, la <strong>Pangée</strong> commence à son tour à se disloquer (manuel <em>Historical Geology</em>).</p>
+          <p>La Pangée, « toutes les terres » en grec, est le supercontinent le mieux documenté. Proposée par Wegener en 1912 dans sa théorie de la <strong>dérive des continents</strong>, elle s'appuyait sur des preuves convergentes : l'emboîtement des côtes, des fossiles identiques de part et d'autre de l'Atlantique (alors que ces organismes n'auraient pas pu le traverser), des fougères <em>Glossopteris</em> en régions aujourd'hui polaires, du charbon tropical en Antarctique et des dépôts glaciaires en Afrique australe. Sa dislocation commence il y a environ 225 à 200 millions d'années, et l'Atlantique s'ouvre depuis, pouce par pouce (USGS, <em>This Dynamic Earth</em>).</p>
+          <p>Chaque étape du cycle laisse des signatures reconnaissables : extension et failles normales, dykes mafiques et bassins de rift à l'ouverture ; plissement, chevauchements, plutons granitiques et sutures à la fermeture ; épanchements basaltiques quand un rift avorte. Former puis disloquer un supercontinent perturbe profondément le cycle du carbone : c'est ce qui relie la tectonique aux glaciations globales du Protérozoïque (section 13). Les bassins de rift « ratés », comme ceux de la côte est américaine, restent visibles en cicatrices dans la croûte.</p>
+        </section>
+
+        <section class="lesson-section" id="deformation" aria-labelledby="deformation-title">
+          <p class="section-index">09 / PLIS, FAILLES ET OROGENÈSE</p>
+          <h2 id="deformation-title">Quand la croûte se déforme</h2>
+          <p>Aux limites convergentes, la croûte encaisse la collision : soumise à une <strong>contrainte</strong>, elle se <strong>déforme</strong>, d'abord élastiquement puis durablement. La déformation ductile plisse les couches en anticlinaux et synclinaux ; la déformation cassante les rompt en failles. Trois familles de failles correspondent à trois régimes de contrainte : les failles <strong>normales</strong> en extension (un compartiment s'affaisse), les failles <strong>inverses</strong> et chevauchements en compression (un compartiment monte sur l'autre), les <strong>décrochements</strong> en coulissage horizontal.</p>
+          <p>L'accumulation de ces déformations construit les <strong>chaînes de montagnes</strong> : épaississement crustal, empilement de nappes, intrusion de plutons granitiques et métamorphisme régional. Les zones de subduction se signalent en profondeur par des plans de séismes inclinés de 40 à 60° sur plusieurs centaines de kilomètres, les zones de Wadati-Benioff, qui dessinent le panneau plongeant. En surface, volcans, séismes et reliefs suivent fidèlement les limites de plaques : c'est ce qui a permis, avant même la tectonique des plaques, de les cartographier.</p>
+          <div class="callout callout-coral"><strong>Lire une chaîne comme un rapport d'accident</strong><p>Plis serrés, failles inverses, ophiolites (lambeaux de croûte océanique) et granites d'anatexie racontent la fermeture d'un océan puis la collision ; failles normales, dykes et basaltes racontent l'ouverture. Une chaîne de montagnes est le procès-verbal d'un cycle de Wilson arrivé à son terme.</p></div>
+        </section>
+
+        <section class="lesson-section" id="archives" aria-labelledby="archives-title">
+          <p class="section-index">10 / LES ARCHIVES SÉDIMENTAIRES</p>
+          <h2 id="archives-title">Ce que les couches racontent</h2>
+          <p>Les sédiments s'accumulent en couches dans des milieux variés — deltas, plates-formes, plaines abyssales — et conservent la trace des conditions de dépôt : granulométrie, figures sédimentaires, fossiles. Une pile de couches est donc une archive ordonnée : le principe de <strong>superposition</strong> affirme qu'une couche est plus récente que celle qu'elle recouvre, et les principes de <strong>recoupement</strong> et d'<strong>inclusion</strong> ordonnent failles, intrusions et fragments remaniés. Les <strong>fossiles stratigraphiques</strong>, abondants et d'extension temporelle courte, corrèlent des affleurements éloignés.</p>
+          <p>Ces archives ont fourni une preuve décisive de la jeunesse des océans : les sondages de l'Atlantique ont trouvé une couche de sédiments bien plus mince qu'attendu si les océans existaient depuis 4 milliards d'années. La réponse, apportée par l'expansion des fonds océaniques, est que la croûte océanique est en permanence recyclée : les sédiments marins n'ont jamais le temps de s'épaissir comme sur les continents (USGS, <em>This Dynamic Earth</em>).</p>
+          <p>La méthode de lecture est systématique : repérer les contacts, ordonner couches et structures, identifier les <strong>discordances</strong> (surfaces d'érosion signalant une lacune : dépôt, émersion, érosion, reprise de la sédimentation), puis caler la séquence locale dans l'échelle stratigraphique grâce aux fossiles. Elle ne donne que des ordres, jamais des durées : les années relèvent des horloges isotopiques (section 11).</p>
+        </section>
+
+        <section class="lesson-section" id="datations" aria-labelledby="datations-title">
+          <p class="section-index">11 / LES DATATIONS ISOTOPIQUES</p>
+          <h2 id="datations-title">Les horloges de la décroissance radioactive</h2>
+          <p>Certains noyaux atomiques sont instables et se transforment spontanément : c'est la <strong>décroissance radioactive</strong> (émissions alpha, bêta, gamma), qui convertit un noyau père en noyau fils. La probabilité de désintégration par unité de temps est constante pour un isotope donné : la décroissance est donc proportionnelle au nombre de noyaux restants, ce qui donne une loi exponentielle et la notion de <strong>demi-vie</strong>, durée au bout de laquelle la moitié des noyaux pères a disparu (OpenStax, <em>Chemistry 2e</em>).</p>
+          <div class="formula-block"><span class="formula-label">DÉCROISSANCE ET DEMI-VIE</span><math class="mathml-display" display="block" aria-label="Nombre de noyaux restants égal au nombre initial fois l'exponentielle de moins lambda t, et demi-vie égale au logarithme népérien de deux divisé par lambda"><mtable><mtr><mtd><mrow><mi>N</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mi>λ</mi><mi>t</mi></mrow></msup></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>t</mi><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>ln</mi><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mi>λ</mi></mfrac></mrow></mtd></mtr></mtable></math><span class="math-display">N(t) = N₀ · e^(−λt)  |  t(1/2) = ln(2) / λ</span></div>
+          <p><strong>Paramètres et unités :</strong> N : noyaux pères restants ; N₀ : noyaux initiaux ; λ : constante de désintégration (an⁻¹) ; t : temps (an) ; t(1/2) : demi-vie (an). <strong>Exemple :</strong> après une demi-vie, il reste la moitié des pères ; après deux, un quart ; après trois, un huitième. <strong>Résultat :</strong> mesurer le rapport fils/parent, c'est compter les demi-vies écoulées.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Couples père–fils usuels (demi-vies, ordres de grandeur)</caption>
+              <thead><tr><th scope="col">Couple</th><th scope="col">Demi-vie</th><th scope="col">Matériaux datés</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Uranium-plomb (²³⁸U → ²⁰⁶Pb)</th><td>≈ 4,5 Ga</td><td>Zircons, roches très anciennes</td></tr>
+                <tr><th scope="row">Potassium-argon (⁴⁰K → ⁴⁰Ar)</th><td>≈ 1,25 Ga</td><td>Roches volcaniques, laves</td></tr>
+                <tr><th scope="row">Rubidium-strontium (⁸⁷Rb → ⁸⁷Sr)</th><td>≈ 49 Ga</td><td>Roches magmatiques et métamorphiques</td></tr>
+                <tr><th scope="row">Carbone 14 (¹⁴C → ¹⁴N)</th><td>≈ 5 730 ans</td><td>Matériaux organiques récents uniquement</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Chaque couple a son domaine : on ne date pas un granite au carbone 14, ni une poterie à l'uranium-plomb. Deux garde-fous s'imposent : vérifier que le système est resté <strong>fermé</strong> (ni perte ni apport depuis la formation, faute de quoi l'âge est faussé) et croiser <strong>deux couples indépendants</strong> sur le même échantillon — si les âges coïncident, la confiance est grande ; s'ils divergent, le système a été perturbé. C'est ainsi qu'on date la Terre elle-même à environ 4,566 milliards d'années.</p>
+        </section>
+
+        <section class="lesson-section" id="hadeen-archeen" aria-labelledby="hadeen-archeen-title">
+          <p class="section-index">12 / HADÉEN ET ARCHÉEN</p>
+          <h2 id="hadeen-archeen-title">La formation d'une planète habitable</h2>
+          <p>Il y a 4 567 millions d'années, la Terre s'assemble par <strong>accrétion</strong> de poussières et de planétésimaux. L'énergie des impacts et de la compression chauffe le jeune globe jusqu'à le fondre en surface : l'<strong>océan magmatique</strong> permet la <strong>différenciation</strong>, les métaux lourds (fer, nickel) s'enfonçant pour former le noyau tandis que les silicates légers flottent pour former manteau et croûte. La Lune naît probablement d'un impact géant, avec un corps de la taille de Mars, qui arrache et met en orbite une partie du manteau terrestre.</p>
+          <p>L'eau et l'atmosphère primitive arrivent par plusieurs voies : <strong>dégazage volcanique</strong> de l'intérieur, apports de <strong>comètes</strong> glacées et de <strong>météorites</strong> hydratées. La signature isotopique de l'eau terrestre ressemble davantage à celle des météorites qu'à celle des comètes : c'est un indice, pas encore une preuve définitive, que les trois sources ont pu contribuer (manuel <em>Historical Geology</em>).</p>
+          <p>La vie apparaît tôt, dans un monde sans oxygène libre, sous une atmosphère riche en dioxyde de carbone et en méthane. Les indices chimiques la signalent déjà vers 3,9 milliards d'années, et les <strong>stromatolites</strong> — colonies bactériennes photosynthétiques fossilisées — sont établies à 3,5 milliards d'années (OpenStax, <em>Astronomy 2e</em>). L'Archéen construit les premières croûtes continentales stables : les <strong>cratons</strong>, cœurs anciens des continents, dont la plupart seront en place au Protérozoïque.</p>
+        </section>
+
+        <section class="lesson-section" id="proterozoique" aria-labelledby="proterozoique-title">
+          <p class="section-index">13 / LE PROTÉROZOÏQUE</p>
+          <h2 id="proterozoique-title">Oxygène, supercontinents et glaces globales</h2>
+          <p>Le Protérozoïque (2 500 à 538,8 Ma) est l'éon des bascules planétaires. D'abord la <strong>Grande Oxydation</strong> : les cyanobactéries photosynthétiques rejettent de l'oxygène, déchet de leur métabolisme. Cet oxygène réagit avec tout ce qui s'oxyde — carbone, silice, fer dissous, qui précipite en oxydes et forme les gisements de fer rubanés — puis, les tampons épuisés, s'accumule dans l'atmosphère. Pour les microbes anaérobies, c'est un poison mortel : beaucoup disparaissent, ne survivant que dans les milieux confinés sans oxygène (manuel <em>Introduction to Historical Geology</em>).</p>
+          <p>Le même éon assemble les premiers supercontinents et connaît les plus grandes glaciations connues. L'épisode huronien (environ 2,4 à 2,1 Ga, tillite de Gowganda vers 2,3 Ga) frappe le Paléoprotérozoïque, puis le Cryogénien (720 à 635 Ma) porte les <strong>Terres boules de neige</strong> : Sturtien (≈ 720–690 Ma), Marinoan (660–635 Ma) et Gaskiers, plus limité et plus récent. Les preuves convergent : tillites et diamictites, blocs lâchés par les icebergs, stries glaciaires, carbonates de coiffe qui scellent chaque déglaciation, et paléomagnétisme qui place les glaces jusque sous les basses latitudes.</p>
+          <p>Pendant ce temps, la vie se complexifie : cellules à noyau (<strong>eucaryotes</strong>) il y a 2,1 à 1,6 milliards d'années, reproduction sexuée vers 1,2 Ga, puis faune d'Édiacara (635,5 à 541 Ma), premiers organismes multicellulaires à corps mou, méduses et vers possibles, dont une partie s'éteint et l'autre préfigure la vie moderne. La transition vers des organismes à parties dures, à la limite du Phanérozoïque, ouvre soudain le registre fossile (manuel <em>Historical Geology</em>).</p>
+        </section>
+
+        <section class="lesson-section" id="phanerozoique" aria-labelledby="phanerozoique-title">
+          <p class="section-index">14 / LE PHANÉROZOÏQUE</p>
+          <h2 id="phanerozoique-title">L'histoire visible et ses crises</h2>
+          <p>Le Phanérozoïque (538,8 Ma à aujourd'hui) est l'éon de la vie visible : l'apparition des parties dures multiplie les fossiles et rend l'histoire lisible en continu. Le Paléozoïque voit la conquête des continents par les plantes puis les animaux, et l'assemblage de la Pangée ; le Mésozoïque, la domination des dinosaures et l'ouverture de l'Atlantique ; le Cénozoïque, l'expansion des mammifères puis les glaciations quaternaires.</p>
+          <p>Cette histoire est ponctuée de <strong>crises d'extinction</strong>, dont cinq majeures (« Big Five »). La plus grave, à la limite Permien-Trias (251,902 Ma), élimine une immense part du vivant marin — les brachiopodes déclinent de 96 % — dans un contexte de volcanisme colossal, d'anoxie des océans et probablement de destruction de la couche d'ozone : les mers du Trias inférieur, vidées, sont brièvement dominées par un seul bivalve opportuniste, <em>Claraia</em>. À la limite Trias-Jurassique, environ la moitié des genres marins disparaît et libère la place aux dinosaures ; à la limite Crétacé-Paléogène (66,0 Ma), un impact majeur coïncide avec la fin des dinosaures non aviens (manuel <em>Historical Geology</em>).</p>
+          <div class="callout callout-coral"><strong>Un système couplé</strong><p>Tectonique, climat et vivant interagissent en permanence : la position des continents règle les courants et le carbone atmosphérique, les glaciations suivent les supercontinents, l'oxygène photosynthétique a empoisonné puis protégé le vivant. L'histoire de la planète n'est pas une suite d'événements, c'est une dynamique.</p></div>
+        </section>
+
+        <section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">15 / S'ENTRAÎNER</p>
+          <h2 id="exercices-title">À toi de jouer</h2>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Deux dorsales s'écartent respectivement à 2,5 et 15 cm par an. En un million d'années, quelle largeur de croûte nouvelle chacune produit-elle ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>La première produit 2,5 cm/an × 1 000 000 ans = 25 km ; la seconde 15 cm/an × 1 000 000 ans = 150 km. C'est l'écart entre une dorsale lente et une dorsale rapide.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Dans le modèle d'Airy, une chaîne de 4 km s'enracine de combien avec ρc = 2 800 et ρm = 3 300 kg·m⁻³, et que conclure si la sismique mesure une croûte totale de 65 km sous cette chaîne ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>La racine vaut 2 800 × 4 000 / 500 ≈ 22 km, soit environ 52 km avec une croûte de référence de 30 km : une mesure de 65 km signale un épaississement tectonique réel, pas seulement isostatique.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Un zircon contient autant de plomb 206 que d'uranium 238 restant. Quel âge a-t-il, en demi-vies puis en années ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Autant de fils que de pères : une demi-vie s'est écoulée, soit environ 4,5 milliards d'années pour le couple ²³⁸U–²⁰⁶Pb.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Pourquoi les sédiments des fonds océaniques sont-ils minces alors que les océans reçoivent des apports depuis des centaines de millions d'années ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Parce que la croûte océanique est recyclée : née aux dorsales, elle plonge dans les fosses au bout de quelques centaines de millions d'années au plus. Les sédiments n'ont jamais le temps de s'épaissir.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">E</span><span>La baie d'Hudson remonte de près de 2 cm par an depuis environ 8 000 ans. Quel processus ce mouvement enregistre-t-il ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>On mesure le rebond isostatique post-glaciaire : la croûte, délestée de la calotte laurentide partie il y a environ 8 000 ans, remonte encore aujourd'hui pendant que le manteau reflue.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">F</span><span>Deux couples isotopiques donnent 298 ± 5 Ma et 315 ± 5 Ma sur le même minéral. Que conclure ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Les âges sont discordants au-delà des incertitudes : le système a été perturbé (perte ou apport), l'âge simple est rejeté et l'échantillon doit être réexaminé.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">G</span><span>Qu'est-ce qui prouve que les glaciations du Cryogénien ont atteint les basses latitudes, et non seulement les pôles ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Le paléomagnétisme des dépôts glaciaires (tillites, diamictites, blocs lâchés) enregistre leur latitude de formation : sous les tropiques pour le Sturtien et le Marinoan, d'où l'hypothèse « Terre boule de neige ».</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">H</span><span>Pourquoi la Grande Oxydation a-t-elle été une extinction de masse pour les microbes de son temps ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Parce que l'oxygène libre, déchet de la photosynthèse des cyanobactéries, est un poison pour les organismes anaérobies : une fois les tampons géochimiques épuisés, son accumulation a éliminé les microbes incapables de le tolérer.</p></div>
+          </details>
+        </section>
+
+        <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">16 / SOURCES</p>
+          <h2 id="sources-title">Sources scientifiques</h2>
+          <p>Chaque fait de ce cours est issu d'une source ouverte vérifiable ci-dessous. OpenStax est utilisé en priorité (astronomie, chimie, physique) ; la géologie de terrain suit le manuel ouvert <em>Physical Geology</em> (Steven Earle, BCcampus, CC BY 4.0) et ses adaptations, complétés par l'USGS et la charte officielle de la Commission internationale de stratigraphie.</p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/8-2-earths-crust" target="_blank" rel="noreferrer">OpenStax, Astronomy 2e — 8.2 Earth's Crust : croûte océanique et continentale, tectonique des plaques, chaleur interne, failles et volcanisme (CC BY-NC-SA)</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/8-4-life-chemical-evolution-and-climate-change" target="_blank" rel="noreferrer">OpenStax, Astronomy 2e — 8.4 Life, Chemical Evolution, and Climate Change : origine de la vie, atmosphère primitive, oxygène et ozone (CC BY-NC-SA)</a></p>
+          <p><a href="https://openstax.org/books/chemistry-2e/pages/21-3-radioactive-decay" target="_blank" rel="noreferrer">OpenStax, Chemistry 2e — 21.3 Radioactive Decay : modes de décroissance, demi-vie et datations radiométriques (CC BY-NC-SA)</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer" target="_blank" rel="noreferrer">OpenStax, University Physics vol. 2 — 1.6 Mechanisms of Heat Transfer : conduction, convection, rayonnement et loi de Fourier (CC BY-NC-SA)</a></p>
+          <p><a href="https://opentextbc.ca/physicalgeology2ed/" target="_blank" rel="noreferrer">Steven Earle, Physical Geology, 2e éd., BCcampus, 2019 (CC BY 4.0) : ch. 6 sédiments, ch. 8 temps géologiques, ch. 9 intérieur de la Terre, ch. 10 tectonique, ch. 12 structures, ch. 22 origine de la Terre</a></p>
+          <p><a href="https://geo.libretexts.org/Bookshelves/Geology/Physical_Geology_(Panchuk)/03%3A_Earths_Interior/3.05%3A_Isostasy" target="_blank" rel="noreferrer">Karla Panchuk, Physical Geology — 3.5 Isostasy (miroir LibreTexts, CC BY-NC-SA) : modèles d'Airy et de Pratt, rebond post-glaciaire</a></p>
+          <p><a href="https://pubs.usgs.gov/gip/dynamic/inside.html" target="_blank" rel="noreferrer">USGS, This Dynamic Earth — Inside the Earth : couches, lithosphère, asthénosphère, champ magnétique</a></p>
+          <p><a href="https://pubs.usgs.gov/gip/dynamic/historical.html" target="_blank" rel="noreferrer">USGS, This Dynamic Earth — Historical perspective : Wegener 1912, preuves de la dérive, dislocation de la Pangée</a></p>
+          <p><a href="https://pubs.usgs.gov/gip/dynamic/developing.html" target="_blank" rel="noreferrer">USGS, This Dynamic Earth — Developing the theory : expansion océanique, inversions magnétiques, zones de Wadati-Benioff</a></p>
+          <p><a href="https://pubs.usgs.gov/gip/dynamic/understanding.html" target="_blank" rel="noreferrer">USGS, This Dynamic Earth — Understanding plate motions : limites, vitesses (2,5 à plus de 15 cm/an), GPS</a></p>
+          <p><a href="https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf" target="_blank" rel="noreferrer">Commission internationale de stratigraphie — Charte chronostratigraphique internationale v2024/12 : noms et bornes des unités (PDF)</a></p>
+          <p><a href="https://geo.libretexts.org/Bookshelves/Geology/Historical_Geology_(Bentley_et_al.)/02%3A_A_Brief_History_of_Earth" target="_blank" rel="noreferrer">Bentley et coll., Historical Geology — ch. 2 A Brief History of Earth (miroir LibreTexts, CC BY-NC 4.0) : Hadéen, Archéen, Protérozoïque, Phanérozoïque</a></p>
+          <p><a href="https://geo.libretexts.org/Bookshelves/Geology/Historical_Geology_(Bentley_et_al.)/06%3A_Plate_Tectonics" target="_blank" rel="noreferrer">Bentley et coll., Historical Geology — ch. 6 Plate Tectonics, § 6.7 Wilson Cycles : supercontinents, Rodinia, Pangée</a></p>
+          <p><a href="https://geo.libretexts.org/Bookshelves/Geology/Historical_Geology_(Bentley_et_al.)/07%3A_Geologic_Time" target="_blank" rel="noreferrer">Bentley et coll., Historical Geology — ch. 7 Geologic Time : âge de la Terre (4,566 Ga), principes de datation</a></p>
+          <p><a href="https://geo.libretexts.org/Bookshelves/Geology/Historical_Geology_(Bentley_et_al.)/11%3A_Mass_Extinctions" target="_blank" rel="noreferrer">Bentley et coll., Historical Geology — ch. 11 Mass Extinctions, § 11.2 The Big Five : crises Permien-Trias, Trias-Jurassique, Crétacé-Paléogène</a></p>
+          <p><a href="https://geo.libretexts.org/Bookshelves/Geology/Historical_Geology_(Bentley_et_al.)/20%3A_(Case_Study)_Snowball_Earth_glaciations/20.06%3A_When_were_the_Snowballs" target="_blank" rel="noreferrer">Bentley et coll., Historical Geology — § 20.6 When were the Snowballs? : Sturtien, Marinoan, Gaskiers, glaciation huronienne</a></p>
+          <p><a href="https://geo.libretexts.org/Bookshelves/Geology/Introduction_to_Historical_Geology_(Ruppert_Lacy_and_Haddad)/11%3A_Proterozoic_Eon/11.03%3A_Proterozoic_Atmosphere" target="_blank" rel="noreferrer">Ruppert, Lacy et Haddad, Introduction to Historical Geology — § 11.3 Proterozoic Atmosphere (miroir LibreTexts, CC BY-NC 4.0) : Grande Oxydation, fers rubanés</a></p>
+          <p><a href="https://geo.libretexts.org/Bookshelves/Geology/Introduction_to_Historical_Geology_(Ruppert_Lacy_and_Haddad)/11%3A_Proterozoic_Eon/11.02%3A_Proterozoic_Glaciations" target="_blank" rel="noreferrer">Ruppert, Lacy et Haddad — § 11.2 Proterozoic Glaciations : preuves glaciaires, carbonates de coiffe, mécanisme de sortie</a></p>
+        </section>
+
+
+
+        <footer class="course-footer"><span>GÉODYNAMIQUE ET HISTOIRE DE LA PLANÈTE</span><a href="index.html">Retour aux branches ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

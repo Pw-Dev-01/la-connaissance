@@ -1,9 +1,10 @@
-// Catalogue du cours de géologie : 3 branches, 6 chapitres.
-// Sources scientifiques en bas de chaque leçon (bloc « RÉFÉRENCES »).
-// OpenStax ne publie pas de manuel de géologie : les contenus ci-dessous
-// suivent le manuel ouvert « Physical Geology » (2e éd., Steven Earle,
-// BCcampus, CC BY 4.0), complété par le manuel OpenStax « Chemistry 2e »
-// pour les notions atomiques et par l'USGS pour la magnitude de moment.
+// Catalogue du cours de géologie : 3 branches, 6 chapitres et 1 cours approfondi.
+// Sources scientifiques en bas de chaque leçon (bloc « RÉFÉRENCES ») et à la fin
+// du cours approfondi (bloc « SOURCES »). Le cours approfondi « Géodynamique et
+// histoire de la planète » est une page dédiée : son entrée utilise « href » et
+// « sections » au lieu de « chapters » (voir catalogue.js). OpenStax est utilisé
+// en priorité (Astronomy 2e, Chemistry 2e), complété par le manuel ouvert
+// « Physical Geology » (2e éd., Steven Earle, BCcampus, CC BY 4.0) et par l'USGS.
 window.courseCatalog = [
   {
     id: 'materiaux-terrestres',
@@ -204,7 +205,7 @@ window.courseCatalog = [
           ],
           sources: [
             { title: 'Physical Geology, 2e éd. — Chapitre 10 : Plate Tectonics', url: 'https://opentextbc.ca/physicalgeology2ed/chapter/10-plate-tectonics/' },
-            { title: 'OpenStax Astronomy — Earth as a Planet (chapitre 8)', url: 'https://openstax.org/books/astronomy/pages/8-earth-as-a-planet' }
+            { title: 'OpenStax Astronomy 2e — 8.2 Earth’s Crust : croûte, tectonique des plaques, chaleur interne', url: 'https://openstax.org/books/astronomy-2e/pages/8-2-earths-crust' }
           ]
         }
       } // FIN CHAPITRE tectonique
@@ -391,4 +392,29 @@ window.courseCatalog = [
       } // FIN CHAPITRE isotopique
     ] // FIN BRANCHE temps
   } // FIN BRANCHE 3
+  ,
+  {
+    id: 'geodynamique-histoire-planete',
+    title: 'Géodynamique et histoire de la planète',
+    note: 'Moteur thermique, cinématique des plaques, cycle de Wilson, archives et horloges isotopiques : un cours approfondi en 14 sections, avec exercices et sources.',
+    href: 'geodynamique-histoire-planete.html',
+    sections: [
+      { anchor: 'cadre', title: 'Le cadre chronologique' },
+      { anchor: 'architecture', title: 'L’architecture interne' },
+      { anchor: 'chaleur', title: 'Le moteur thermique' },
+      { anchor: 'isostasie', title: 'L’isostasie' },
+      { anchor: 'magnetisme', title: 'Le champ magnétique' },
+      { anchor: 'cinematique', title: 'La cinématique des plaques' },
+      { anchor: 'forces', title: 'Les forces motrices' },
+      { anchor: 'wilson', title: 'Le cycle de Wilson' },
+      { anchor: 'deformation', title: 'Plis, failles et orogenèse' },
+      { anchor: 'archives', title: 'Les archives sédimentaires' },
+      { anchor: 'datations', title: 'Les datations isotopiques' },
+      { anchor: 'hadeen-archeen', title: 'Hadéen et Archéen' },
+      { anchor: 'proterozoique', title: 'Le Protérozoïque' },
+      { anchor: 'phanerozoique', title: 'Le Phanérozoïque' },
+      { anchor: 'exercices', title: 'S’entraîner' },
+      { anchor: 'sources', title: 'Sources' }
+    ]
+  } // FIN COURS APPROFONDI géodynamique
 ];

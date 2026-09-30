@@ -1,10 +1,14 @@
 // Catalogue : navigation latérale + sections générées depuis geologie-data.js.
 // Même structure que les autres disciplines (physique, chimie, économie).
+// Une entrée peut être un « cours approfondi » rendu par une page dédiée : elle
+// utilise alors « href » (la page) et « sections » (ses ancres) au lieu de
+// « chapters ». Ces sections sont comptées et numérotées comme les chapitres.
 const levelNavigation = document.querySelector('#catalogue-levels');
 const programmeSections = document.querySelector('#programme-sections');
-const chapters = window.courseCatalog.flatMap((branch) => branch.chapters);
+const chapters = window.courseCatalog.flatMap((branch) => branch.chapters || branch.sections || []);
+const deepCourses = window.courseCatalog.filter((branch) => branch.href);
 
-document.querySelector('#catalogue-count').textContent = `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES`;
+document.querySelector('#catalogue-count').textContent = `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} COURS APPROFONDI` : ''}`;
 
 window.courseCatalog.forEach((branch, branchIndex) => {
   const branchLink = document.createElement('a');
@@ -19,24 +23,36 @@ window.courseCatalog.forEach((branch, branchIndex) => {
 
   const heading = document.createElement('div');
   heading.className = 'programme-section-heading';
-  heading.innerHTML = `<h2 id="${branch.id}-title"></h2><span>${branch.chapters.length} CHAPITRES</span>`;
+  heading.innerHTML = `<h2 id="${branch.id}-title"></h2><span>${(branch.chapters || branch.sections || []).length} ${branch.href ? 'SECTIONS' : 'CHAPITRES'}</span>`;
   heading.querySelector('h2').textContent = branch.title;
   section.append(heading);
   section.append(Object.assign(document.createElement('p'), { className: 'programme-note', textContent: branch.note }));
 
   const chapterList = document.createElement('div');
   chapterList.className = 'chapter-list';
-  chapterList.setAttribute('aria-label', `Chapitres de ${branch.title}`);
+  chapterList.setAttribute('aria-label', `${branch.href ? 'Sections' : 'Chapitres'} de ${branch.title}`);
 
-  branch.chapters.forEach((chapter, index) => {
-    const link = document.createElement('a');
-    link.className = 'chapter-link';
-    link.href = `cours.html?id=${encodeURIComponent(chapter.id)}`;
-    link.innerHTML = `<span class="chapter-number">${String(index + 1).padStart(2, '0')}</span><span class="chapter-title"></span><span class="chapter-field"></span><span class="chapter-arrow" aria-hidden="true">↗</span>`;
-    link.querySelector('.chapter-title').textContent = chapter.title;
-    link.querySelector('.chapter-field').textContent = chapter.field;
-    chapterList.append(link);
-  });
+  if (branch.href) {
+    branch.sections.forEach((item, index) => {
+      const link = document.createElement('a');
+      link.className = 'chapter-link';
+      link.href = `${branch.href}#${item.anchor}`;
+      link.innerHTML = `<span class="chapter-number">${String(index + 1).padStart(2, '0')}</span><span class="chapter-title"></span><span class="chapter-field"></span><span class="chapter-arrow" aria-hidden="true">↗</span>`;
+      link.querySelector('.chapter-title').textContent = item.title;
+      link.querySelector('.chapter-field').textContent = 'Cours approfondi';
+      chapterList.append(link);
+    });
+  } else {
+    branch.chapters.forEach((chapter, index) => {
+      const link = document.createElement('a');
+      link.className = 'chapter-link';
+      link.href = `cours.html?id=${encodeURIComponent(chapter.id)}`;
+      link.innerHTML = `<span class="chapter-number">${String(index + 1).padStart(2, '0')}</span><span class="chapter-title"></span><span class="chapter-field"></span><span class="chapter-arrow" aria-hidden="true">↗</span>`;
+      link.querySelector('.chapter-title').textContent = chapter.title;
+      link.querySelector('.chapter-field').textContent = chapter.field;
+      chapterList.append(link);
+    });
+  }
 
   section.append(chapterList);
   programmeSections.append(section);
