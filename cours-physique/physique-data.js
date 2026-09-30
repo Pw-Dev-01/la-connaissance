@@ -48,11 +48,33 @@ window.courseCatalog = [
     ]
   },
   {
-    id: 'physique-quantique', title: 'Physique quantique et atomique', note: 'Quand l’énergie et la matière se décrivent à l’échelle microscopique.',
+    id: 'physique-quantique', title: 'Physique quantique et atomique', note: 'Quand l’énergie et la matière se décrivent à l’échelle microscopique. Un cours approfondi en vingt sections prolonge cette branche, du corps noir au laser.', href: 'physique-quantique-atomique.html',
     chapters: [
       { id: 'photons', title: 'Photons et effet photoélectrique', field: 'Quantique · bases', summary: 'Quantification de la lumière, énergie des photons et seuil d’extraction.', lesson: { sections: ['La lumière échange de l’énergie par paquets appelés photons. L’énergie de chaque photon dépend de sa fréquence, pas de l’intensité lumineuse.', 'Dans l’effet photoélectrique, un métal émet un électron si le photon apporte au moins l’énergie d’extraction. Une fréquence seuil existe donc.'], formula: { label: 'ÉNERGIE DU PHOTON', text: 'E = hf = hc/λ' }, example: { statement: 'Calculer l’énergie d’un photon de fréquence 5×10¹⁴ Hz avec h = 6,63×10⁻³⁴ J·s.', calculation: 'E = 6,63×10⁻³⁴ × 5×10¹⁴.', answer: 'E ≈ 3,32×10⁻¹⁹ J, soit environ 2,07 eV.' }, exercise: { question: 'L’énergie d’un photon augmente-t-elle quand sa longueur d’onde diminue ?', answer: 'Oui : E = hc/λ, donc l’énergie est inversement proportionnelle à λ.' } } },
       { id: 'dualite-onde-corpuscule', title: 'Dualité onde-corpuscule et de Broglie', field: 'Quantique · intermédiaire', summary: 'Comportement ondulatoire des particules et longueur d’onde associée.', lesson: { sections: ['La dualité onde-corpuscule associe des propriétés ondulatoires aux particules et des propriétés corpusculaires à la lumière.', 'La longueur d’onde de de Broglie est d’autant plus courte que la quantité de mouvement est grande ; les effets ondulatoires sont surtout visibles à petite échelle.'], formula: { label: 'LONGUEUR D’ONDE DE DE BROGLIE', text: 'λ = h/p' }, example: { statement: 'Comment évolue λ si la quantité de mouvement p est multipliée par 4 ?', calculation: 'La relation λ = h/p montre que la longueur d’onde est inversement proportionnelle à p.', answer: 'λ est divisée par 4.' }, exercise: { question: 'Que devient la longueur d’onde associée à une particule immobile ?', answer: 'Dans le modèle non relativiste, p tend vers 0 et λ = h/p devient très grande ; une particule localisée ne peut toutefois pas être exactement immobile.' } } },
       { id: 'atomes-niveaux', title: 'Atomes et niveaux d’énergie', field: 'Quantique · intermédiaire', summary: 'États quantifiés, transitions et spectres d’émission ou d’absorption.', lesson: { sections: ['Dans un atome, les électrons ne peuvent occuper que certains états d’énergie. Une transition entre deux niveaux s’accompagne de l’émission ou de l’absorption d’un photon.', 'La fréquence de la lumière émise dépend de l’écart d’énergie entre les deux niveaux ; le spectre sert ainsi de signature aux éléments.'], formula: { label: 'TRANSITION ÉNERGÉTIQUE', text: '|ΔE| = hf = hc/λ' }, example: { statement: 'Un atome émet un photon lors d’une transition de 3,0 eV. Quelle est sa longueur d’onde approximative ?', calculation: 'λ ≈ 1240 eV·nm / 3,0 eV.', answer: 'λ ≈ 413 nm.' }, exercise: { question: 'Lors d’une émission, l’énergie de l’atome augmente-t-elle ou diminue-t-elle ?', answer: 'Elle diminue de l’énergie emportée par le photon.' } } }
+    ],
+    sections: [
+      { anchor: 'corps-noir', title: 'Le rayonnement du corps noir' },
+      { anchor: 'photoelectrique', title: 'L’effet photoélectrique' },
+      { anchor: 'compton', title: 'L’effet Compton' },
+      { anchor: 'bohr', title: 'Le modèle de Bohr' },
+      { anchor: 'ondes-matiere', title: 'Les ondes de matière' },
+      { anchor: 'dualite', title: 'Dualité onde-particule' },
+      { anchor: 'fonction-onde', title: 'La fonction d’onde' },
+      { anchor: 'incertitude', title: 'Le principe d’incertitude' },
+      { anchor: 'schrodinger', title: 'L’équation de Schrödinger' },
+      { anchor: 'puits', title: 'La particule dans un puits' },
+      { anchor: 'oscillateur', title: 'L’oscillateur harmonique' },
+      { anchor: 'tunnel', title: 'L’effet tunnel' },
+      { anchor: 'nombres-quantiques', title: 'Les nombres quantiques' },
+      { anchor: 'spin', title: 'Le spin de l’électron' },
+      { anchor: 'exclusion', title: 'Le principe d’exclusion' },
+      { anchor: 'atomes', title: 'L’hydrogène et les atomes lourds' },
+      { anchor: 'spectres', title: 'Spectres et rayons X' },
+      { anchor: 'laser', title: 'Le laser' },
+      { anchor: 'exercices', title: 'S’entraîner' },
+      { anchor: 'sources', title: 'Sources' }
     ]
   },
   {
