@@ -82,6 +82,7 @@ h2 { margin: 0; font-family: var(--serif); font-size: 36px; font-weight: 400; li
 .economics-entry .entry-symbol { background: #657b55; }
 .geology-entry .entry-symbol { background: #6b5844; }
 .climatology-entry .entry-symbol { background: #2f6b8f; }
+.anthropology-entry .entry-symbol { background: #536b60; }
 
 .entry-copy { display: grid; gap: 7px; }
 .entry-copy strong { font-family: var(--serif); font-size: 25px; font-weight: 400; }

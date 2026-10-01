@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Leçon d’anthropologie avec notions, étude guidée, exercice corrigé et sources institutionnelles.">
+    <title>Cours d’anthropologie</title>
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      @media (max-width: 320px) {
+        body {
+          min-width: 0;
+        }
+      }
+    </style>
+    <script src="anthropologie-data.js" defer></script>
+    <script src="cours.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue d’anthropologie">
+        <span class="wordmark-mark" aria-hidden="true">A</span>
+        <span>LE COURS D’ANTHROPOLOGIE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+    <main class="lesson-layout">
+      <aside class="course-sidebar" aria-label="Navigation des chapitres d’anthropologie">
+        <p class="sidebar-label" id="lesson-level-label">ANTHROPOLOGIE</p>
+        <nav class="chapter-nav" id="lesson-chapter-nav" aria-label="Chapitres de la rubrique"></nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">A</span><p>Choisis un autre chapitre de cette rubrique ou retourne au catalogue d’anthropologie.</p></div>
+      </aside>
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span id="lesson-eyebrow">FICHE D’ANTHROPOLOGIE</span></p>
+          <h1 id="lesson-title">Cours d’anthropologie</h1>
+          <p class="course-intro" id="lesson-summary"></p>
+          <div class="course-meta"><span id="lesson-field"></span><span>BASES → APPROFONDISSEMENT</span></div>
+        </header>
+        <div id="chapter-lesson"></div>
+        <footer class="course-footer"><span id="lesson-footer">ANTHROPOLOGIE</span><a href="index.html">Retour au catalogue ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>
