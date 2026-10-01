@@ -1,6 +1,17 @@
+// Leçon de physique : notions, relation fondamentale, exemple résolu,
+// exercice corrigé et références éventuelles (même gabarit que les autres
+// disciplines du site). Les entrées « cours approfondi » (href + sections,
+// sans chapters) ne sont pas rendues ici : elles sont redirigées vers leur
+// page dédiée, et une branche sans chapitres ne casse pas la recherche.
 const chapterId = new URLSearchParams(window.location.search).get('id');
-const branch = window.courseCatalog.find((item) => item.chapters.some((chapter) => chapter.id === chapterId));
-const chapter = branch?.chapters.find((item) => item.id === chapterId);
+const branch = window.courseCatalog.find((item) => (item.chapters || []).some((chapter) => chapter.id === chapterId));
+const deepCourse = !branch && chapterId
+  ? window.courseCatalog.find((item) => item.href && (item.id === chapterId || (item.sections || []).some((entry) => entry.anchor === chapterId)))
+  : null;
+if (deepCourse) {
+  window.location.replace(`${deepCourse.href}#${encodeURIComponent(chapterId)}`);
+}
+const chapter = branch?.chapters?.find((item) => item.id === chapterId);
 const lessonTitle = document.querySelector('#lesson-title');
 const lessonContainer = document.querySelector('#chapter-lesson');
 

@@ -8,10 +8,10 @@ const programmeSections = document.querySelector('#programme-sections');
 const chapters = window.courseCatalog.flatMap((branch) => branch.chapters || []);
 const deepSections = window.courseCatalog.flatMap((branch) => branch.sections || []);
 const deepCourses = window.courseCatalog.filter((branch) => branch.href);
+const deepCourseLabel = deepCourses.length === 1 ? 'COURS APPROFONDI' : 'COURS APPROFONDIS';
 
 document.querySelector('#catalogue-count').textContent =
-  `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} COURS APPROFONDI · ${deepSections.length} SECTIONS` : ''}`;
-const deepCourseLabel = deepCourses.length === 1 ? 'COURS APPROFONDI' : 'COURS APPROFONDIS';
+  `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} ${deepCourseLabel} · ${deepSections.length} SECTIONS` : ''}`;
 document.querySelector('#domain-statistics').textContent = `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES · ${deepCourses.length} ${deepCourseLabel} · ${deepSections.length} SECTIONS`;
 
 window.courseCatalog.forEach((branch, branchIndex) => {

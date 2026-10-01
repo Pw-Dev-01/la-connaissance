@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi d'astrophysique des hautes énergies : spectre, observation au-dessus de l'atmosphère, rayons X, freinage et Compton, rayons cosmiques, synchrotron, binaires de rayons X, pulsars, trous noirs, sursauts gamma, jets et ciel multimessager, avec équations en MathML et sources vérifiées.">
+    <title>Astrophysique des hautes énergies | Cours de physique</title>
+    <!-- Format identique aux autres cours approfondis. Règle du site : la liste
+         des chapitres (menu gauche) n'est pas numérotée, les sous-rubriques de
+         la page le sont. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte quinze entrées de navigation : la barre latérale devient
+         défilable quand la hauteur de l'écran ne suffit plus à les afficher.
+         Sous 700 px, la mise en page partagée la transforme déjà en bandeau. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto ;
+        }
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+        <span class="wordmark-mark" aria-hidden="true">φ</span>
+        <span>LE COURS DE PHYSIQUE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche astrophysique du cours de physique">
+          <!-- Liste des chapitres, sans numérotation -->
+          <a class="course-link" href="index.html#astrophysique-cosmologie"><span>Astrophysique et cosmologie</span></a>
+          <a class="course-link" href="cours.html?id=gravitation-orbites"><span>Gravitation et mécanique orbitale</span></a>
+          <a class="course-link" href="cours.html?id=etoiles"><span>Étoiles et évolution stellaire</span></a>
+          <a class="course-link" href="cours.html?id=cosmologie"><span>Galaxies et expansion de l’Univers</span></a>
+          <a class="course-link is-current" href="astrophysique-hautes-energies.html" aria-current="page"><span>Astrophysique des hautes énergies</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours d’astrophysique des hautes énergies">
+          <a href="#introduction">01 <span>Le spectre des hautes énergies</span></a>
+          <a href="#telescopes">02 <span>Observer au-dessus de l’atmosphère</span></a>
+          <a href="#plasmas-chauds">03 <span>Chaleur extrême et rayons X</span></a>
+          <a href="#mecanismes">04 <span>Freinage, raies et diffusion Compton</span></a>
+          <a href="#rayons-cosmiques">05 <span>Les rayons cosmiques</span></a>
+          <a href="#spectre-energie">06 <span>Le spectre et ses hautes énergies</span></a>
+          <a href="#synchrotron">07 <span>Le rayonnement synchrotron</span></a>
+          <a href="#binaires-x">08 <span>Binaires de rayons X</span></a>
+          <a href="#pulsars">09 <span>Pulsars et étoiles à neutrons</span></a>
+          <a href="#trous-noirs">10 <span>Trous noirs et horizons</span></a>
+          <a href="#sursauts-gamma">11 <span>Sursauts gamma</span></a>
+          <a href="#agn-jets">12 <span>Noyaux actifs et jets</span></a>
+          <a href="#multimessager">13 <span>Le ciel multimessager</span></a>
+          <a href="#exercices">14 <span>S’entraîner</span></a>
+          <a href="#sources">15 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">φ</span>
+          <p>Une idée essentielle : chaque messager — lumière, particule, onde — révèle une part du ciel violent que les autres ne disent pas.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ASTROPHYSIQUE DES HAUTES ÉNERGIES · COURS APPROFONDI</p>
+          <h1 class="is-long-title">Astrophysique<br><span>des hautes</span><br>énergies</h1>
+          <p class="course-intro">Qu’est-ce qui émet des photons de milliers d’électronvolts ? D’où viennent les noyaux qui frappent l’atmosphère avec des énergies qu’aucun accélérateur terrestre n’atteint ? Ce cours suit le ciel des hautes énergies — rayons X, rayons gamma, rayons cosmiques — depuis les instruments placés au-dessus de l’atmosphère jusqu’aux sources qui transforment gravité, friction et champs magnétiques en accélérateurs : disques d’accrétion, pulsars, trous noirs, sursauts gamma, jets de noyaux actifs, et le ciel multimessager.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>15 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+        <section class="lesson-section" id="introduction" aria-labelledby="introduction-title">
+          <p class="section-index">01 / LE SPECTRE DES HAUTES ÉNERGIES</p>
+          <h2 id="introduction-title">Au-delà du visible : de l’électronvolt au téraélectronvolt</h2>
+          <p>La lumière se range dans un spectre continu, des ondes radio aux rayons gamma. Par convention, les <strong>rayons X</strong> couvrent les longueurs d’onde comprises entre 0,01 nm et 10 nm ; les <strong>rayons gamma</strong>, celles qui ne dépassent pas 0,01 nm (OpenStax, <em>Astronomy</em> 2e, § 5.2). Le mot « gamma » leur vient de ce qu’ils furent la troisième radiation repérée dans la désintégration des noyaux radioactifs : ils portent beaucoup d’énergie et peuvent endommager les tissus vivants. Dans le ciel, ces photons ne sont pas des curiosités de laboratoire : ils traduisent des températures de millions de degrés, des champs magnétiques extrêmes ou des particules lancées près de la vitesse de la lumière.</p>
+          <p>Pour comparer des sources, l’énergie des photons s’exprime en <strong>électronvolts</strong> (eV) plutôt qu’en joules : 1 eV est l’énergie qu’un électron acquiert en franchissant une tension d’un volt, soit 1,602 × 10⁻¹⁹ J. On emploie le kiloélectronvolt (keV) pour les rayons X, le mégaelectronvolt (MeV) et le gigaelectronvolt (GeV) pour les rayons gamma, le téraélectronvolt (TeV) pour les particules les plus énergétiques. L’énergie d’un photon est proportionnelle à sa fréquence et inversement proportionnelle à sa longueur d’onde (OpenStax, <em>University Physics</em> vol. 3, § 6.1 et § 8.5).</p>
+          <div class="formula-block"><span class="formula-label">ÉNERGIE DU PHOTON</span><math class="mathml-display" display="block" aria-label="Énergie du photon E égale h fois f égale h c divisé lambda"><mrow><mi>E</mi><mo>=</mo><mi>h</mi><mi>f</mi><mo>=</mo><mfrac><mrow><mi>h</mi><mi>c</mi></mrow><mi>λ</mi></mrow></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> E : énergie du photon (J ou eV) ; h : constante de Planck, 6,626 × 10⁻³⁴ J·s ; f : fréquence (Hz) ; c : vitesse de la lumière dans le vide, 3,00 × 10⁸ m·s⁻¹ ; λ : longueur d’onde (m). Le produit hc vaut 1 240 eV·nm, d’où le raccourci λ (nm) ≈ 1 240 / E (eV), utilisé tout au long de ce cours (OpenStax, <em>University Physics</em> vol. 3, § 8.5).</p>
+          <div class="worked-result"><strong>EXEMPLE · UN PHOTON X DE 6 keV</strong><span class="math">E = 6 keV = 6 000 eV</span><span class="math">λ ≈ 1 240 / 6 000 ≈ 0,21 nm</span><span class="math">E = 6 000 × 1,602 × 10⁻¹⁹ ≈ 9,6 × 10⁻¹⁶ J</span></div>
+          <div class="callout"><strong>Trois fenêtres, une même physique</strong><p>Un photon de 6 keV (0,21 nm) appartient au domaine des rayons X ; des photons de MeV à GeV sont des rayons gamma ; enfin les <strong>rayons cosmiques</strong> sont des <em>particules</em> — noyaux et électrons — dont l’énergie va bien au-delà (sections 05 et 06). L’astrophysique des hautes énergies étudie les trois ensemble, car une même source — un trou noir en accrétion, un reste de supernova, un jet de galaxie — produit souvent les trois à la fois.</p></div>
+        </section>
+
+        <section class="lesson-section" id="telescopes" aria-labelledby="telescopes-title">
+          <p class="section-index">02 / OBSERVER AU-DESSUS DE L’ATMOSPHÈRE</p>
+          <h2 id="telescopes-title">Une atmosphère protectrice… et opaque</h2>
+          <p>L’atmosphère arrête les rayons X : ils « sont stoppés par le grand nombre d’atomes de l’atmosphère terrestre avec lesquels ils interagissent », et l’astronomie X n’a pu se développer qu’après l’envoi d’instruments au-dessus d’elle (OpenStax, <em>Astronomy</em> 2e, § 5.2). Les rayons gamma venant du ciel subissent le même sort : ils ne s’étudient directement que depuis l’espace. Le centre de rayons X Chandra le confirme : les rayons X d’origine spatiale sont presque entièrement absorbés par l’atmosphère, si bien que l’astronomie X n’a commencé qu’avec les fusées et les satellites du milieu du XX<sup>e</sup> siècle (Chandra X-ray Center, <em>X-ray 101</em>).</p>
+          <p>Deux conséquences techniques. D’abord, les télescopes X se placent en orbite : Chandra observe depuis l’espace et renvoie ses données via le réseau Deep Space Network. Ensuite, leurs miroirs recueillent les photons en <strong>incidence rasante</strong>, sous de très faibles angles, plutôt que de face (Chandra X-ray Center, <em>X-ray 101</em>). La discipline a progressé très vite : en 36 ans, la sensibilité de l’astronomie X s’est améliorée d’un facteur 100 millions (Chandra X-ray Center, <em>X-ray 101</em>).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Quelques instruments du ciel des hautes énergies (détails vérifiés en section 15)</caption>
+              <thead><tr><th scope="col">Instrument</th><th scope="col">Domaine</th><th scope="col">Repère vérifié</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">CGRO (NASA, 1991)</th><td>Rayons gamma</td><td>Plus de 16 tonnes ; ≈ 1 sursaut détecté par jour</td></tr>
+                <tr><th scope="row">BeppoSAX (1996)</th><td>X et gamma</td><td>Premier après-sursaut X en février 1997, 8 h après l’événement</td></tr>
+                <tr><th scope="row">Swift</th><td>X et ultraviolet</td><td>Repérage automatique de l’après-sursaut en quelques minutes</td></tr>
+                <tr><th scope="row">Fermi (GBM / LAT)</th><td>Rayons gamma</td><td>GBM : ≈ 240 sursauts/an, de 8 keV à 40 MeV ; LAT : ≈ 10/an, de 30 MeV à 300 GeV</td></tr>
+                <tr><th scope="row">Pierre Auger (Argentine)</th><td>Rayons cosmiques</td><td>215 030 événements au-dessus de 2,5 × 10¹⁸ eV en 14 ans ; détection hybride</td></tr>
+                <tr><th scope="row">IceCube (pôle Sud)</th><td>Neutrinos</td><td>1 km³ de glace, plus de 5 000 modules optiques jusqu’à 2,5 km de profondeur</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Au sol, les télescopes gamma (HAWC, H.E.S.S., MAGIC, VERITAS) et les réseaux de surface comme Pierre Auger ne reçoivent pas directement la particule d’origine : ils observent les effets secondaires produits dans l’atmosphère — gerbes de particules et lumière émise par ces gerbes (NASA/HEASARC ; IceCube, liste des observatoires ayant participé à l’identification de la source de TXS 0506+056).</p>
+          <div class="callout callout-coral"><strong>Protéger, c’est aussi masquer</strong><p>Le même rideau d’atmosphère qui nous épargne les rayons gamma cache au sol la majeure partie du ciel des hautes énergies : protection et obstacle sont les deux faces d’un même fait physique, d’où la nécessité d’installer les détecteurs X et gamma dans l’espace (OpenStax, <em>Astronomy</em> 2e, § 5.2 ; Chandra X-ray Center).</p></div>
+        </section>
+
+        <section class="lesson-section" id="plasmas-chauds" aria-labelledby="plasmas-chauds-title">
+          <p class="section-index">03 / CHALEUR EXTRÊME ET RAYONS X</p>
+          <h2 id="plasmas-chauds-title">Quand des millions de degrés deviennent visibles en X</h2>
+          <p>« Des températures très élevées (des millions de degrés Celsius) produisent des rayons X » : c’est la règle de premier niveau de l’astronomie X (Chandra X-ray Center, <em>Field Guide</em>). Un gaz chauffé émet un spectre de corps noir dont le maximum se déplace vers les courtes longueurs d’onde quand la température monte — c’est la loi de Wien, déjà mobilisée dans le cours de physique quantique et atomique (OpenStax, <em>University Physics</em> vol. 3, § 6.1). L’énergie typique des chocs dans le gaz, elle, vaut k<sub>B</sub>T : elle donne immédiatement l’échelle, en keV, des photons émis.</p>
+          <div class="formula-block"><span class="formula-label">MAXIMUM DE WIEN ET ÉNERGIE THERMIQUE</span><math class="mathml-display" display="block" aria-label="Longueur d’onde du maximum égale b divisé par T, et énergie thermique égale k indice B fois T"><mtable><mtr><mtd><mrow><msub><mi>λ</mi><mtext>max</mtext></msub><mo>=</mo><mfrac><mi>b</mi><mi>T</mi></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mi>E</mi><mo>=</mo><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow></mtd></mtr></mtable></math></div>
+          <p><strong>Paramètres et unités :</strong> λ<sub>max</sub> : longueur d’onde du maximum (m) ; b = 2,898 × 10⁻³ m·K (loi de Wien, OpenStax vol. 3, § 6.1) ; T : température (K) ; k<sub>B</sub> = 1,381 × 10⁻²³ J·K⁻¹, soit 8,617 × 10⁻⁵ eV·K⁻¹ (constante de Boltzmann, CODATA) ; E : énergie thermique (J ou eV).</p>
+          <div class="worked-result"><strong>EXEMPLE · UN DISQUE D’ACCRÉTION À 10⁸ K</strong><span class="math">k<sub>B</sub>T ≈ 8,6 × 10⁻⁵ × 10⁸ eV ≈ 8,6 keV</span><span class="math">λ<sub>max</sub> = 2,898 × 10⁻³ / 10⁸ ≈ 2,9 × 10⁻¹¹ m ≈ 0,03 nm</span><span class="math">=> rayons X durs</span></div>
+          <p>Dans les binaires de rayons X, voici le scénario : le frottement interne de la matière qui tourbillonne vers le centre « la chauffe à des températures de l’ordre de 100 millions de kelvins », et cette matière incandescente émet des rayons X qui scintillent (OpenStax, <em>Astronomy</em> 2e, § 24.6). À l’inverse, lorsqu’une étoile massive explose, son cœur devient si dense que la lumière y reste piégée : c’est par ses <strong>neutrinos</strong>, et non par sa lumière, que l’événement se révèle.</p>
+          <div class="callout"><strong>SN 1987A, observée par ses neutrinos</strong><p>Le cœur de la supernova affichait une température d’environ 200 milliards de kelvins. Les détecteurs souterrains ont capté 19 neutrinos seulement, issus des quelque 10⁵⁸ émis par l’événement — soit environ 30 milliards de neutrinos par centimètre carré de surface terrestre. Les neutrinos interagissent si rarement avec la matière qu’ils traversent une étoile entière là où la lumière reste enfermée (OpenStax, <em>Astronomy</em> 2e, § 23.3 ; IceCube sur la faible probabilité d’interaction).</p></div>
+        </section>
+
+        <section class="lesson-section" id="mecanismes" aria-labelledby="mecanismes-title">
+          <p class="section-index">04 / FREINAGE, RAIES ET DIFFUSION COMPTON</p>
+          <h2 id="mecanismes-title">Trois façons de fabriquer un photon X</h2>
+          <p><strong>Le freinage (Bremsstrahlung).</strong> Quand un électron rapide frôle un noyau — le centre Chandra cite la collision haute vitesse entre un électron et un proton —, son mouvement change brusquement : il décelère et l’énergie perdue part en photon. C’est le « rayonnement de freinage », du mot allemand <em>Bremsstrahlung</em>, l’un des principaux mécanismes d’émission des gaz chauds (Chandra X-ray Center, <em>X-rays &amp; Light</em> et <em>Field Guide</em>).</p>
+          <p><strong>Les raies atomiques.</strong> Un photon produit à une énergie précise dessine une raie. Lorsqu’un électron comble une lacune d’une couche interne, l’atome se réémet à une énergie propre à l’élément : c’est la fluorescence. Autour des trous noirs, des photons X arrachent un électron interne à des atomes de fer présents dans la poussière voisine, et la raie qui en résulte livre un diagnostic direct du matériau (Chandra X-ray Center, <em>Field Guide</em> ; pour les séries K, K<sub>α</sub> et K<sub>β</sub>, OpenStax, <em>University Physics</em> vol. 3, § 8.5).</p>
+          <p><strong>La diffusion Compton.</strong> Un photon qui se diffuse sur un électron en lui cédant une partie de son énergie ressort plus long : c’est l’effet Compton, dont le décalage dépend seulement de l’angle de diffusion (OpenStax, <em>University Physics</em> vol. 3, § 6.3 ; cours approfondi de physique quantique, section 03).</p>
+          <div class="formula-block"><span class="formula-label">DÉCALAGE COMPTON</span><math class="mathml-display" display="block" aria-label="Delta lambda égale h divisé par masse de l’électron fois c, fois ouvert parenthèse un moins cosinus theta, virgule lambda indice c égale deux virgule quatre trois picomètres"><mrow><mi mathvariant="normal">Δ</mi><mi>λ</mi><mo>=</mo><mfrac><mi>h</mi><mrow><msub><mi>m</mi><mi>e</mi></msub><mi>c</mi></mrow></mfrac><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mo>cos</mo><mi>θ</mi><mo>)</mo></mrow><mo>,</mo><mspace width="0.8em"></mspace><msub><mi>λ</mi><mi>c</mi></msub><mo>=</mo><mn>2.43</mn><mspace width="0.3em"></mspace><mtext>pm</mtext></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> Δλ : allongement du photon (m) ; h : constante de Planck ; m<sub>e</sub> : masse de l’électron, 9,109 × 10⁻³¹ kg ; c : vitesse de la lumière ; θ : angle de diffusion ; λ<sub>c</sub> = h/(m<sub>e</sub>c) = 2,43 pm est la longueur d’onde de Compton de l’électron (OpenStax vol. 3, § 6.3).</p>
+          <p><strong>La diffusion Compton inverse.</strong> Si l’électron emporte beaucoup plus d’énergie que le photon, l’échange s’inverse : « si les électrons ont plus d’énergie que les photons, la collision peut augmenter l’énergie des photons ». Ce processus, important autour des trous noirs où la matière est chauffée à des millions de degrés, transforme des photons doux en photons X ou gamma (Chandra X-ray Center, <em>Field Guide</em> et <em>X-rays &amp; Light</em>).</p>
+          <div class="worked-result"><strong>EXEMPLE · UN PHOTON DE 100 keV REBROUSSÉ CHEMIN</strong><span class="math">θ = 180° => Δλ = 2λ<sub>c</sub> = 4,86 pm</span><span class="math">λ = 1 240 / 100 000 = 0,0124 nm</span><span class="math">λ′ ≈ 0,0173 nm => E′ ≈ 72 keV</span></div>
+          <div class="callout callout-coral"><strong>Chercher la source, c’est choisir son mécanisme</strong><p>Un spectre continu de gaz chaud (freinage), des raies fines (fluorescence), un spectre qui décroît lentement (synchrotron, section 07) : l’analyse spectrale distingue ces mécanismes, comme les empreintes digitales d’un crime selon l’image du centre Chandra — les astronomes parlent de spectres, « les empreintes digitales » de l’Univers (Chandra X-ray Center, <em>X-ray 101</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="rayons-cosmiques" aria-labelledby="rayons-cosmiques-title">
+          <p class="section-index">05 / LES RAYONS COSMIQUES</p>
+          <h2 id="rayons-cosmiques-title">Des particules, pas de la lumière</h2>
+          <p>Les rayons cosmiques furent découverts en 1911 par Victor Hess, qui embarqua ses instruments dans des ballons pour montrer que des particules très rapides arrivent du ciel — un vol de 1912 atteignait l’altitude de 5,3 km (OpenStax, <em>Astronomy</em> 2e, § 20.4). Le mot « rayon » est trompeur : ce sont des <strong>particules</strong>, presque le même mélange que le gaz interstellaire — près de 90 % de protons d’hydrogène dépouillés, environ 9 % d’hélium et de noyaux plus lourds, et environ 1 % de particules de la masse de l’électron (dont 10 à 20 % de positrons, antimatière). Des vitesses proches de 90 % de c sont courantes (OpenStax, § 20.4).</p>
+          <p>Deux signatures. D’abord, le lithium, le béryllium et le bore y sont bien plus abondants que dans les étoiles : ils naissent quand des noyaux de carbone, d’azote et d’oxygène percutent des protons interstellaires et se fragmentent. Ensuite, leur direction d’arrivée n’apprend presque rien : les champs magnétiques courbent leurs trajectoires, et de basses énergies peuvent tourner plusieurs fois autour de la Terre avant d’entrer dans l’atmosphère (OpenStax, § 20.4). La force en jeu suit la loi de Lorentz (OpenStax, <em>College Physics</em> 2e, § 22.4).</p>
+          <div class="formula-block"><span class="formula-label">FORCE MAGNÉTIQUE SUR UNE PARTICULE CHARGÉE</span><math class="mathml-display" display="block" aria-label="Force magnétique F égale q fois v fois B fois sinus de theta"><mrow><mi>F</mi><mo>=</mo><mi>q</mi><mi>v</mi><mi>B</mi><mo>sin</mo><mi>θ</mi></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> F : force magnétique (N) ; q : charge de la particule (C) ; v : vitesse (m·s⁻¹) ; B : champ magnétique (T) ; θ : angle entre v et B. Le champ magnétique terrestre vaut environ 5 × 10⁻⁵ T (OpenStax, <em>College Physics</em> 2e, § 22.4).</p>
+          <div class="worked-result"><strong>EXEMPLE · UN PROTON DE 0,9c DANS LE CHAMP TERRESTRE</strong><span class="math">v = 0,9c ≈ 2,7 × 10⁸ m·s⁻¹</span><span class="math">F = 1,6 × 10⁻¹⁹ × 2,7 × 10⁸ × 5 × 10⁻⁵</span><span class="math">F ≈ 2,2 × 10⁻¹⁵ N (θ = 90°)</span></div>
+          <p><strong>Origine.</strong> Les champs magnétiques interstellaires retiennent tous les rayons cosmiques sauf les plus énergétiques : l’essentiel semble donc produit dans la Galaxie, à l’exception des plus énergétiques, qui peuvent s’échapper — et être nés ailleurs. La fragmentation des noyaux donne une horloge : il faut environ 30 tours de la Galaxie, soit 3 à 10 millions d’années à près de la vitesse de la lumière, pour accumuler autant de collisions. Le meilleur candidat comme fabrique est l’<strong>explosion de supernova</strong> : le materiel éjecté lance une onde de choc dans le milieu interstellaire ; des particules chargées y sont piégées, rebondissent de part et d’autre du front de choc et gagnent de l’énergie à chaque passage, jusqu’à s’échapper presque à la vitesse de la lumière (OpenStax, § 20.4).</p>
+          <div class="callout"><strong>Une énergie comparable à la lumière des étoiles</strong><p>L’énergie déposée par les rayons cosmiques dans l’atmosphère terrestre n’est qu’environ un milliardième de l’énergie solaire reçue — mais elle est du même ordre que l’énergie apportée par la lumière des étoiles : ces particules font partie du bilan énergétique de la Galaxie (OpenStax, § 20.4).</p></div>
+        </section>
+
+        <section class="lesson-section" id="spectre-energie" aria-labelledby="spectre-energie-title">
+          <p class="section-index">06 / LE SPECTRE ET SES HAUTES ÉNERGIES</p>
+          <h2 id="spectre-energie-title">Une chute vertigineuse du flux, et des records inexpliqués</h2>
+          <p>Le flux de rayons cosmiques décroît très rapidement avec l’énergie : plus l’événement est énergétique, plus il est rare. L’observatoire Pierre Auger a mesuré ce spectre au-dessus de 2,5 × 10¹⁸ eV avec 215 030 événements enregistrés sur plus de 14 ans, calibrés par la lumière de fluorescence des gerbes (Pierre Auger Observatory, 2020). Deux accidents structurent la courbe : un assombrissement vers 10¹⁹ eV, lié à la contribution des différents noyaux accélérés, puis une forte atténuation au-dessus de 5 × 10¹⁹ eV, expliquée par l’épuisement des sources les plus puissantes et par l’<strong>effet Greisen–Zatsepin–Kuzmin</strong> (Pierre Auger Observatory, 2020).</p>
+          <p>Cet effet tient à un fait simple : les particules les plus énergétiques interagissent avec le fond diffus cosmologique de 3 kelvins — le rayonnement de fond cosmique — et perdent de l’énergie en route ; elles ne peuvent donc pas provenir de très loin, seulement « quelques pourcents de l’horizon de l’Univers » (NASA/HEASARC). De même, le champ magnétique galactique est trop faible pour retenir les plus énergétiques, et aucun mécanisme galactique connu ne les accélère : leur origine est probablement extragalactique (NASA/HEASARC).</p>
+          <div class="formula-block"><span class="formula-label">CONVERSION D’ÉNERGIE</span><math class="mathml-display" display="block" aria-label="Énergie en joules égale énergie en électronvolts fois 1,602 exposant moins 19 joules par électronvolt"><mrow><mi>E</mi><mo>=</mo><msub><mi>E</mi><mtext>eV</mtext></msub><mo>×</mo><mn>1.602</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>19</mn></mrow></msup><mspace width="0.3em"></mspace><mtext>J/eV</mtext></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> E : énergie en joules ; E<sub>eV</sub> : même énergie en électronvolts ; 1 eV = 1,602 × 10⁻¹⁹ J (CODATA). Le dossier HEASARC donne un repère saisissant : l’événement le plus énergétique détecté, 3 × 10²⁰ eV, équivaut à « environ 12 calories », plus de dix millions de fois l’énergie maximale des grands accélérateurs terrestres prévus ; sept autres événements au-dessus de 10²⁰ eV seulement y sont recensés.</p>
+          <div class="worked-result"><strong>EXEMPLE · 3 × 10²⁰ eV</strong><span class="math">E = 3 × 10²⁰ × 1,602 × 10⁻¹⁹ ≈ 48 J</span><span class="math">48 J / 4,184 ≈ 12 calories</span><span class="math">= énergie cinétique d’une masse de 1 kg lancée à ≈ 9,8 m·s⁻¹</span></div>
+          <p><strong>Détection.</strong> Une particule d’arrivée pénètre l’atmosphère et y produit « une cascade de millions de particules secondaires » qui se propagent à la vitesse de la lumière et émettent une lumière de fluorescence, observable depuis le sol ou l’espace : c’est le principe des observatoires hybrides (NASA/HEASARC). Pierre Auger combine des détecteurs de surface — le signal est mesuré à 1 000 m du centre de la gerbe — et des télescopes de fluorescence, l’échelle d’énergie étant fixée par 3 338 événements hybrides de qualité (Pierre Auger Observatory, 2020).</p>
+          <div class="callout callout-coral"><strong>Une direction à peine dessinée</strong><p>Au-dessus de 8 × 10¹⁸ eV, Auger observe une première anisotropie : les arrivées ne sont plus tout à fait uniformes sur le ciel. C’est le début de la cartographie des sources — les rayons gamma (photons) et les neutrinos apportant ensuite des repères directionnels nets (section 13).</p></div>
+        </section>
+
+        <section class="lesson-section" id="synchrotron" aria-labelledby="synchrotron-title">
+          <p class="section-index">07 / LE RAYONNEMENT SYNCHROTRON</p>
+          <h2 id="synchrotron-title">Des électrons en spirale qui ne heurtent rien</h2>
+          <p>Au début des accélérateurs de particules, les physiciens ont découvert que des électrons produisent des photons <em>sans collisionner</em> : le champ magnétique les force à tourner en grandes spirales autour de ses lignes de force, et tout mouvement accéléré rayonne. Ce rayonnement synchrotron est aujourd’hui l’une des signatures majeures du ciel des hautes énergies (Chandra X-ray Center, <em>Field Guide</em> et <em>X-rays &amp; Light</em>).</p>
+          <p>Les électrons cosmiques, accélérés par les champs électriques et magnétiques jusqu’à proches de la vitesse de la lumière, produisent ainsi des photons « allant des ondes radio jusqu’aux énergies X et gamma » (Chandra X-ray Center, <em>Field Guide</em>). Le spectre qui en résulte a une forme particulière : il décroît avec l’énergie <em>moins vite</em> que celui d’un gaz chaud — c’est le critère qui permet de distinguer une source non thermique d’un plasma émetteur thermique (section 03), et de révéler la population d’électrons énergétiques ainsi que les champs magnétiques des restes de supernova et des jets (Chandra X-ray Center, <em>Field Guide</em>).</p>
+          <div class="callout"><strong>Le jet de M 87, une image au synchrotron</strong><p>Dans la galaxie géante M 87, la lumière que l’on voit du jet « est produite par des électrons qui tournent le long des lignes de champ magnétique du jet, un processus connu sous le nom de rayonnement synchrotron », d’où sa teinte bleutée ; ce jet s’observe simultanément en radio, en lumière visible et en rayons X (OpenStax, <em>Astronomy</em> 2e, § 27.1). Les mêmes ingrédients — électrons relativistes et champ magnétique — éclairent les restes de supernova et les noyaux actifs étudiés en section 12.</p></div>
+          <p>Le lien avec la section précédente est direct : la force magnétique qui fait tourner les électrons en spirale est celle de la loi de Lorentz F = qvB sin θ, et le même mécanisme <em>retient</em> les rayons cosmiques dans la Galaxie. L’accélération au choc et le rayonnement qui l’accompagne sont les deux versants d’une même physique des plasmas magnétisés.</p>
+        </section>
+
+        <section class="lesson-section" id="binaires-x" aria-labelledby="binaires-x-title">
+          <p class="section-index">08 / BINAIRES DE RAYONS X</p>
+          <h2 id="binaires-x-title">Une étoile normale qui nourrit un objet compact</h2>
+          <p>Une binaire de rayons X est un couple à deux visages : d’un côté une étoile ordinaire, de l’autre un objet effondré — naine blanche, étoile à neutrons ou trou noir. Lorsque l’étoile compagne s’étend en géante rouge ou perd du vent stellaire, sa matière rejoint l’objet compact ; la révolution mutuelle l’empêche d’aller droit au but, et elle tournoie en <strong>disque d’accrétion</strong>. Dans la partie interne de ce disque, la matière tourne si vite que le frottement interne la chauffe à des températures de l’ordre de 100 millions de kelvins : elle émet des rayons X clignotants (OpenStax, <em>Astronomy</em> 2e, § 24.6).</p>
+          <p>Ces sources sont invisibles depuis le sol : « les rayons X ne pénètrent pas l’atmosphère terrestre », il faut donc des télescopes spatiaux pour les localiser et les attribuer à un système binaire (OpenStax, <em>Astronomy</em> 2e, § 24.6).</p>
+          <p><strong>Cygne X-1, le premier trou noir binaire.</strong> Le système le plus célèbre fut identifié ainsi : la compagne visible, de type spectral O, montre par effet Doppler qu’elle tourne autour d’un objet invisible ; les rayons X qui scintillent trahissent un objet effondré de masse d’environ 21 fois celle du Soleil — trop lourd pour être une naine blanche (toujours inférieure à 1,4 M<sub>☉</sub>) ou une étoile à neutrons (toujours comprise entre 1,4 et 3 M<sub>☉</sub> selon le tableau d’OpenStax) : la conclusion s’impose, un trou noir (OpenStax, <em>Astronomy</em> 2e, § 24.6 et § 23.4).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Candidats trous noirs en binaires (OpenStax, Astronomy 2e, § 24.6, tableau 24.1)</caption>
+              <thead><tr><th scope="col">Système</th><th scope="col">Compagne</th><th scope="col">Période (jours)</th><th scope="col">Masse du trou noir (M<sub>☉</sub>)</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">LMC X-1</th><td>Géante O</td><td>3,9</td><td>10,9</td></tr>
+                <tr><th scope="row">Cygne X-1</th><td>Supergéante O</td><td>5,6</td><td>21</td></tr>
+                <tr><th scope="row">LMC X-3</th><td>Naine B</td><td>1,7</td><td>7</td></tr>
+                <tr><th scope="row">GRS 1915+105</th><td>Géante K</td><td>33,5</td><td>14</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="worked-result"><strong>EXEMPLE · POURQUOI PAS UNE ÉTOILE À NEUTRONS ?</strong><span class="math">Masse mesurée (Cygne X-1) ≈ 21 M<sub>☉</sub></span><span class="math">Limite des étoiles à neutrons : M &lt; 3 M<sub>☉</sub> (OpenStax, § 23.4)</span><span class="math">21 ≫ 3 => objet plus lourd que toute naine blanche ou étoile à neutrons</span></div>
+        </section>
+
+        <section class="lesson-section" id="pulsars" aria-labelledby="pulsars-title">
+          <p class="section-index">09 / PULSARS ET ÉTOILES À NEUTRONS</p>
+          <h2 id="pulsars-title">Des horloges de dix kilomètres</h2>
+          <p>Après l’explosion d’une supernova de type II, il ne reste qu’une étoile à neutrons ou un trou noir. L’étoile à neutrons est l’objet le plus dense connu : la gravité en surface y est 10¹¹ fois celle de la Terre, sa structure est faite d’environ 95 % de neutrons, et sa masse, de l’ordre de 10⁵⁷ masses de proton, tient dans un rayon de 10 km (OpenStax, <em>Astronomy</em> 2e, § 23.4).</p>
+          <p>En septembre 1967, Jocelyn Bell repère « un bout de gribouillis » — un signal radio d’une régularité extrême, répété exactement toutes les 1,33728 secondes ; la piste d’un signal artificiel (« little green men ») fut écartée quand d’autres sources semblables apparurent. On les appela <strong>pulsars</strong> ; plus de 4 000 sont connus aujourd’hui, avec des périodes allant de un peu plus d’une milliseconde à près de 10 secondes (OpenStax, § 23.4).</p>
+          <p>Le pulsar du centre de la nébuleuse du Crabe — relique de la supernova de 1054, notée par les astronomes chinois — émet ses impulsions 30 fois par seconde, en radio, en visible et en rayons X. Son énergie vient de la <strong>rotation</strong> de l’étoile à neutrons : au fil des années, le pulsar ralentit, les impulsions s’espacent, et le calcul du ralentissement donne directement l’énergie perdue — « même un ralentissement minuscule représente une perte d’énergie immense » (OpenStax, § 23.4).</p>
+          <div class="formula-block"><span class="formula-label">MASSE VOLUMIQUE D’UNE ÉTOILE À NEUTRONS</span><math class="mathml-display" display="block" aria-label="Masse volumique rho égale masse M divisé par quatre tiers pi fois R au cube"><mrow><mi>ρ</mi><mo>=</mo><mfrac><mi>M</mi><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>R</mi><mn>3</mn></msup></mrow></mfrac></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> ρ : masse volumique (kg·m⁻³) ; M : masse de l’étoile (kg) ; R : rayon (m). Les valeurs du tableau d’OpenStax (§ 23.4) : masse toujours comprise entre 1,4 et 3 M<sub>☉</sub>, rayon 10 km, densité 10¹⁴ g·cm⁻³.</p>
+          <div class="worked-result"><strong>EXEMPLE · 1,4 M<sub>☉</sub> DANS 10 km</strong><span class="math">M = 1,4 × 1,99 × 10³⁰ ≈ 2,8 × 10³⁰ kg</span><span class="math">V = 4/3 × π × (10⁴)³ ≈ 4,2 × 10¹² m³</span><span class="math">ρ ≈ 6,6 × 10¹⁷ kg·m⁻³ ≈ 6,6 × 10¹⁴ g·cm⁻³</span></div>
+          <div class="callout callout-coral"><strong>Magnétars : le record de champ</strong><p>Une classe d’étoiles à neutrons, les magnétars, affiche des champs « environ 800 trillions de fois plus forts que le champ de la Terre ». En 2004, la rupture de la croûte d’un tel objet (SGR 1806-20) libéra une telle gerbe de radiation qu’un astronaume situé à 0,1 année-lumière aurait reçu une dose mortelle en moins d’une seconde (OpenStax, § 23.4).</p></div>
+        </section>
+
+        <section class="lesson-section" id="trous-noirs" aria-labelledby="trous-noirs-title">
+          <p class="section-index">10 / TROUS NOIRS ET HORIZONS</p>
+          <h2 id="trous-noirs-title">Quand la vitesse de fuite dépasse celle de la lumière</h2>
+          <p>Partons d’une expérience de pensée d’OpenStax (<em>Astronomy</em> 2e, § 24.5) : sur Terre, rien ne s’échappe si l’on lance à moins de 11 km·s⁻¹ ; sur le Soleil, il faut 618 km·s⁻¹. Compressez le Soleil jusqu’au diamètre d’une étoile à neutrons (environ 20 km) : la vitesse de fuite atteint la moitié de celle de la lumière. Compressez encore : elle dépasse c, rien ne s’en échappe, ni la lumière. C’est la définition d’un <strong>trou noir</strong>. Si le cœur effondré d’une étoile dépasse environ 3 M<sub>☉</sub>, rien ne peut arrêter cet effondrement (OpenStax, § 24.5).</p>
+          <p>La frontière de l’objet s’appelle l’<strong>horizon des événements</strong> : elle ne dépend que de la masse, et ne rétrécit plus une fois formée. Karl Schwarzschild en donna la première solution exacte des équations d’Einstein en 1916, l’année de sa mort ; son nom a été donné au rayon de l’horizon (OpenStax, § 24.5).</p>
+          <div class="formula-block"><span class="formula-label">RAYON DE SCHWARZSCHILD</span><math class="mathml-display" display="block" aria-label="Rayon de Schwarzschild R indice S égale deux G M divisé par c au carré"><mrow><msub><mi>R</mi><mi>S</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>G</mi><mi>M</mi></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> R<sub>S</sub> : rayon de l’horizon (m) ; G : constante de gravitation, 6,67 × 10⁻¹¹ N·m²·kg⁻² ; M : masse du trou noir (kg) ; c : vitesse de la lumière. Seul M varie d’un trou noir à l’autre (OpenStax, § 24.5).</p>
+          <div class="worked-result"><strong>EXEMPLE · SGR A*, LE TROU NOIR GALACTIQUE</strong><span class="math">M = 4 × 10⁶ M<sub>☉</sub> = 4 × 10⁶ × 1,99 × 10³⁰ kg</span><span class="math">R<sub>S</sub> = 2GM/c² ≈ 1,18 × 10¹⁰ m (calcul OpenStax)</span><span class="math">Soleil : R<sub>S</sub> ≈ 3 km (doublez la masse => 6 km)</span></div>
+          <div class="callout"><strong>Pas d’aspirateur cosmique</strong><p>Loin de l’horizon, la gravitation ne dépend que de la masse et de la distance, exactement comme autour du Soleil : un trou noir n’« aspire » pas davantage qu’une étoile de même masse. Ce qui change à l’horizon, c’est l’issue : retourner vers l’extérieur devient impossible, car il faudrait dépasser c (OpenStax, § 24.5).</p></div>
+        </section>
+
+        <section class="lesson-section" id="sursauts-gamma" aria-labelledby="sursauts-gamma-title">
+          <p class="section-index">11 / SURSAUTS GAMMA</p>
+          <h2 id="sursauts-gamma-title">Les explosions les plus lumineuses de l’Univers</h2>
+          <p>Les sursauts gamma furent découverts par hasard : les satellites Vela, chargés de surveiller les essais nucléaires dans l’espace, détectèrent des éclairs venus de directions aléatoires — la découverte fut publiée en 1973 (OpenStax, <em>Astronomy</em> 2e, § 23.6). Leur répartition, parfaitement isotrope sur le ciel, exclut une origine dans le plan de la Galaxie ; le Compton Gamma-Ray Observatory (lancé en 1991, plus de 16 tonnes) en détectait à peu près un par jour, des durées allant d’une fraction de seconde à plusieurs centaines de secondes (OpenStax, § 23.6).</p>
+          <p>L’Italo-Néerlandais BeppoSAX (1996) changea tout : en février 1997, en 8 heures il localisa un sursaut et repéra une source X qui s’effaçait — le premier <strong>après-sursaut</strong> (position à ≈ 40 secondes d’arc près) ; en mai, le télescope Keck obtenait en 2 jours un spectre montrant un objet distant de 4 milliards d’années-lumière (OpenStax, § 23.6). On distingue aujourd’hui deux familles, selon la durée : <strong>courts</strong> (moins de 2 secondes, souvent une fraction de seconde) et <strong>longs</strong> (plus de 2 secondes, souvent environ une minute) (OpenStax, § 23.6).</p>
+          <p><strong>Origines.</strong> Les longs naissent de la mort d’une étoile massive rare, qui produit une supernova de type Ibc dotée de jets relativistes ; les courts viennent de la fusion d’une binaire d’étoiles à neutrons — un processus lent qui explique leur présence dans les vieilles galaxies (OpenStax, § 23.6 ; NASA Fermi). Fermi en tire le profil statistique : le GBM détecte ≈ 240 sursauts par an de 8 keV à 40 MeV, le LAT ≈ 10 par an de 30 MeV à 300 GeV, et les sursauts vont jusqu’au décalage vers le rouge 9,4 (NASA Fermi).</p>
+          <div class="formula-block"><span class="formula-label">ÉNERGIE ISOTROPE D’UN SURSAUT BRILLANT</span><math class="mathml-display" display="block" aria-label="Énergie égale masse fois c au carré"><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> E : énergie (J) ; m : masse convertie (kg) ; c = 3,00 × 10⁸ m·s⁻¹. Pour un sursaut brillant, l’énergie émise en rayons gamma, si l’on suppose une émission dans toutes les directions, « équivaudrait à celle produite si toute la masse d’une étoile semblable au Soleil était soudain convertie en rayonnement pur » — l’obscurité du problème justifie l’hypothèse d’un <strong>faisceau</strong> (jet collimé) qui réduit l’énergie réelle (OpenStax, § 23.6).</p>
+          <div class="worked-result"><strong>EXEMPLE · M<sub>☉</sub> c²</strong><span class="math">E = 1,99 × 10³⁰ × (3 × 10⁸)²</span><span class="math">E ≈ 1,8 × 10⁴⁷ J</span><span class="math">90 % de l’énergie des sursauts courts : premières 2 s (NASA Fermi)</span></div>
+          <div class="callout callout-coral"><strong>2017 : le jour où tout s’est accordé</strong><p>Depuis 2015, les ondes gravitationnelles s’observent — les premiers événements venaient de fusions de trous noirs. En 2017, des ondes gravitationnelles furent repérées à la même date et au même endroit qu’un sursaut gamma ; la source contenait deux objets de masse d’étoile à neutrons, une « supernova rouge » (kilonova) fut observée, et le matériel éjecté était riche en éléments lourds : la preuve finale de l’origine des sursauts gamma courts (OpenStax, § 23.6).</p></div>
+        </section>
+
+        <section class="lesson-section" id="agn-jets" aria-labelledby="agn-jets-title">
+          <p class="section-index">12 / NOYAUX ACTIFS ET JETS</p>
+          <h2 id="agn-jets-title">Des trous noirs géants qui lancent des jets</h2>
+          <p>En 1963, à l’observatoire de Palomar, Maarten Schmidt résout le puzzle du spectre de la source radio 3C 273 : les raies de Balmer de l’hydrogène y sont décalées vers le rouge au point que l’effet Doppler donnerait une vitesse d’éloignement de 45 000 km·s⁻¹,≈ 15 % de c — une valeur inimaginable pour une étoile. La lumière met 2,5 milliards d’années à nous parvenir, ce qui en fait pourtant l’un des quasars les plus proches ; son jet s’étend sur 200 000 années-lumière (OpenStax, <em>Astronomy</em> 2e, § 27.1).</p>
+          <p>Pour un objet très distant, la relativité relie décalage et vitesse par la relation donnée par OpenStax (§ 27.1) :</p>
+          <div class="formula-block"><span class="formula-label">DÉCALAGE VERS LE ROUGE RELATIVISTE</span><math class="mathml-display" display="block" aria-label="Vitesse sur c égale ouvert crochets z plus un fermé au carré moins un, sur ouvert crochets z plus un fermé au carré plus un"><mrow><mfrac><mi>v</mi><mi>c</mi></mfrac><mo>=</mo><mfrac><mrow><msup><mrow><mo>(</mo><mi>z</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><msup><mrow><mo>(</mo><mi>z</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> v : vitesse d’éloignement ; c : vitesse de la lumière ; z : décalage vers le rouge, z = Δλ/λ<sub>émission</sub>. Exemple d’OpenStax : pour z = 3, v/c = (4²−1)/(4²+1) = 15/17 = 0,882.</p>
+          <div class="worked-result"><strong>EXEMPLE · UNE SOURCE À z = 3</strong><span class="math">z + 1 = 4</span><span class="math">v/c = (16 −1)/(16 +1) = 15/17</span><span class="math">v ≈ 0,88 c ≈ 264 000 km·s⁻¹</span></div>
+          <p><strong>Les jets.</strong> Dans l’elliptique NGC 4261 (amas de la Vierge,≈ 100 millions d’années-lumière), un trou noir de 1,2 milliard de masses solaires est entouré d’un anneau de poussière et de gaz ; les observations radio montrent deux jets émerger perpendiculairement à ce plan (OpenStax, § 27.2). Les jets contiennent de la matière « se déplaçant à une vitesse proche de celle de la lumière » ; bien que leur formation exacte fasse débat, la matière s’échappe plus facilement perpendiculairement au disque (OpenStax, § 27.2). Dans M 87, la lumière du jet est un rayonnement synchrotron bleuté visible en radio, en visible et en X (section 07 ; OpenStax, § 27.1).</p>
+          <div class="callout"><strong>Du trou noir au blazar</strong><p>Les noyaux actifs regroupent quasars, galaxies de Seyfert et blazars — tous alimentés par l’accrétion sur un trou noir supermassif. C’est ainsi qu’une galaxie à noyau actif, TXS 0506+056, est apparue comme source d’un neutrino de haute énergie en 2017 (section 13 ; IceCube).</p></div>
+        </section>
+
+        <section class="lesson-section" id="multimessager" aria-labelledby="multimessager-title">
+          <p class="section-index">13 / LE CIEL MULTIMESSAGER</p>
+          <h2 id="multimessager-title">Croiser les témoignages</h2>
+          <p>Aucun messager n’est suffisant seul. Les <strong>rayons cosmiques</strong>, chargés, ont leurs trajectoires brouillées par les champs magnétiques : impossible de remonter à leur source (OpenStax, § 20.4 ; IceCube). Les <strong>photons</strong> voyagent en ligne droite mais sont absorbés par l’atmosphère aux hautes énergies (section 02). Les <strong>neutrinos</strong>, eux, ne portent pas de charge et interagissent si rarement qu’ils traversent presque tout : ils pointeraient directement vers l’accélérateur. Enfin les <strong>ondes gravitationnelles</strong>, déformations de l’espace-temps elles-mêmes, ouvrent une fenêtre entièrement nouvelle depuis 2015 (OpenStax, § 23.6 ; IceCube).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Quatre messagers, quatre témoins (sources en section 15)</caption>
+              <thead><tr><th scope="col">Messager</th><th scope="col">Nature</th><th scope="col">Détecteur cité</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Rayons X et gamma</th><td>Photons</td><td>Télescopes spatiaux (CGRO, Chandra, Fermi)</td></tr>
+                <tr><th scope="row">Rayons cosmiques</th><td>Noyaux et électrons chargés</td><td>Réseaux au sol (Pierre Auger)</td></tr>
+                <tr><th scope="row">Neutrinos</th><td>Leptons neutres</td><td>Glace (IceCube, ANTARES)</td></tr>
+                <tr><th scope="row">Ondes gravitationnelles</th><td>Déformation de l’espace-temps</td><td>Détecteurs depuis 2015</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Le cas TXS 0506+056.</strong> Le 22 septembre 2017, IceCube émet une alerte en temps réel à partir d’un événement baptisé IceCube-170922A. Les observations convergent vers une galaxie à noyau actif (blazar) du même nom : deux articles publiés dans <em>Science</em> en 2018 y apportent « la première preuve d’une source connue de neutrinos de haute énergie et de rayons cosmiques ». Environ 20 observatoires, de HAWC à Fermi en passant par H.E.S.S. et MAGIC, ont participé à l’identification (IceCube, communiqué du 12 juillet 2018).</p>
+          <p>Le détecteur : un kilomètre cube de glace antarctique, plus de 5 000 modules optiques de 35 cm de diamètre disposés jusqu’à 2,5 km de profondeur, pesant plus d’un milliard de tonnes — chacun capte l’éclair émis quand un neutrino interagit avec la glace (IceCube).</p>
+          <div class="callout callout-coral"><strong>« L’ère de l’astrophysique multimessager est là »</strong><p>Francis Halzen, responsable d’IceCube, qualifie de « convaincante » la preuve apportée ; France Córdova, directrice de la NSF, conclut : chaque messager — rayonnement électromagnétique, ondes gravitationnelles et désormais neutrinos — donne une image plus complète de l’Univers (IceCube, 12 juillet 2018). La fusion de 2017 (section 11) avait déjà uni ondes gravitationnelles, sursaut gamma et kilonova.</p></div>
+        </section>
+
+        <section class="lesson-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">14 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">Exercices corrigés</h2>
+          <p>Huit exercices couvrant tout le cours, du spectre des photons aux jets. Essaie de répondre avant d’ouvrir la correction : le but est de manipuler les relations, pas de les relire.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Un photon X a une énergie de 6 keV. Quelle est sa longueur d’onde ? Et celle d’un photon de 1 keV ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>λ (nm) ≈ 1 240 / E (eV). Pour 6 keV = 6 000 eV : λ ≈ 1 240 /6 000 ≈ 0,21 nm. Pour 1 keV = 1 000 eV : λ ≈ 1,24 nm. Un photon plus énergétique est plus court (section 01).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Dans un disque d’accrétion à T = 10⁸ K, quelle est l’énergie thermique k<sub>B</sub>T en keV, et où se situe le maximum d’émission selon la loi de Wien ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>k<sub>B</sub>T = 8,617 × 10⁻⁵ eV·K⁻¹ × 10⁸ K ≈ 8,6 × 10³ eV, soit ≈ 8,6 keV. λ<sub>max</sub> = 2,898 × 10⁻³ m·K /10⁸ K ≈ 2,9 × 10⁻¹¹ m ≈ 0,029 nm : au cœur du domaine des rayons X (section 03).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Un photon de 100 keV est diffusé à 180°. Quelle est sa nouvelle longueur d’onde et sa nouvelle énergie ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>À 180°, Δλ = 2λ<sub>c</sub> = 4,86 pm. λ initial = 1 240 /100 000 = 0,0124 nm, donc λ′ = 0,0124 +0,00486 ≈ 0,0173 nm, et E′ = 1 240 /0,0173 ≈ 72 keV : le photon a cédé ≈ 28 keV à l’électron de recul (section 04).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Quel est le rayon de Schwarzschild d’un trou noir de masse 21 M<sub>☉</sub> (Cygne X-1) ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>R<sub>S</sub> = 2GM/c² avec G = 6,67 × 10⁻¹¹, M = 21 × 1,99 × 10³⁰ ≈ 4,18 × 10³¹ kg : R<sub>S</sub> = 2 × 6,67 × 10⁻¹¹ × 4,18 × 10³¹ / (9 × 10¹⁶) ≈ 6,2 × 10⁴ m, soit environ 62 km — minuscule face à l’étoile compagne (section 10).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">E</span><span>Convertissez le record de rayon cosmique de 3 × 10²⁰ eV en joules, puis en calories (1 cal = 4,184 J).</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>E = 3 × 10²⁰ × 1,602 × 10⁻¹⁹ ≈ 48 J, soit 48 /4,184 ≈ 12 calories — l’« environ 12 calories » du dossier HEASARC (section 06).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">F</span><span>Quelle énergie correspond à la conversion de toute la masse du Soleil en rayonnement (E = mc²) ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>E = 1,99 × 10³⁰ × (3 × 10⁸)² ≈ 1,8 × 10⁴⁷ J : c’est l’énergie isotrope supposée d’un sursaut gamma brillant, trop grande pour être réelle — d’où l’hypothèse du faisceau (section 11).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">G</span><span>Le pulsar du Crabe émet 30 impulsions par seconde. Quelle est sa période, et combien de tours effectue-t-il en une journée ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>P = 1/30 ≈ 0,033 s (33 ms). En une journée de 86 400 s : N = 86 400 × 30 = 2 592 000 ≈ 2,6 × 10⁶ tours (section 09).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">H</span><span>Quelle force magnétique subit un proton de 0,9c traversant le champ terrestre (5 × 10⁻⁵ T) perpendiculairement ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>F =qvB = 1,6 × 10⁻¹⁹ × 2,7 × 10⁸ × 5 × 10⁻⁵ ≈ 2,2 × 10⁻¹⁵ N : une force minuscule, mais qui dévie sans cesse les particules chargées — et les piège dans les champs de la Galaxie (sections 05 et 07).</p></div>
+          </details>
+        </section>
+
+        <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">15 / SOURCES</p>
+          <h2 id="sources-title">Sources vérifiées</h2>
+          <p>Chaque affirmation scientifique de ce cours renvoie à l’une des sources ci-dessous. OpenStax fait référence lorsque le sujet y figure ; les observatoires et centres de données complètent pour les instruments et les résultats récents.</p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/5-2-the-electromagnetic-spectrum" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 5.2 The Electromagnetic Spectrum : rayons X de 0,01 à 10 nm, rayons gamma au-delà de 0,01 nm, absorption atmosphérique et astronomie spatiale</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/20-4-cosmic-rays" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 20.4 Cosmic Rays : Hess (1911-1912,5,3 km), composition (90 % protons, 9 % hélium et lourds, 1 % masse électronique), Li-Be-B, 30 tours de la Galaxie en 3-10 millions d’années, ondes de choc de supernova</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/23-3-supernova-observations" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 23.3 Supernova Observations : SN 1987A, 19 neutrinos détectés, 10⁵⁸ émis, cœur à 200 milliards de kelvins</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/23-4-pulsars-and-the-discovery-of-neutron-stars" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 23.4 Pulsars : Bell 1967, période 1,33728 s, plus de 4 000 pulsars, Crabe 30 impulsions/s et SN 1054, énergie de rotation, tableau naine blanche/étoile à neutrons, magnétar SGR 1806-20 (27 décembre 2004)</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/23-6-the-mystery-of-the-gamma-ray-bursts" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 23.6 The Gamma-Ray Bursts : Vela (1973), CGRO 1991, BeppoSAX et premier après-sursaut 1997, classes &lt; 2 s / &gt; 2 s, fusion de 2017, énergie isotrope et faisceaux</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/24-5-black-holes" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 24.5 Black Holes : vitesses de fuite (11 et 618 km·s⁻¹), R<sub>S</sub> = 2GM/c², Soleil ≈ 3 km, Sgr A* ≈ 1,18 × 10¹⁰ m, Schwarzschild 1916</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/24-6-evidence-for-black-holes" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 24.6 Evidence for Black Holes : disque d’accrétion chauffé à 100 millions de K, Cygne X-1 (O, 5,6 j, 21 M<sub>☉</sub>), tableau des candidats LMC X-1, LMC X-3, GRS 1915+105</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/27-1-quasars" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 27.1 Quasars : 3C 273 (Schmidt 1963,45 000 km·s⁻¹,2,5 milliards d’années, jet de 200 000 années-lumière), relation Doppler relativiste, jet synchrotron de M 87</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/27-2-supermassive-black-holes-what-quasars-really-are" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 27.2 Supermassive Black Holes : NGC 4261 (1,2 milliard de M<sub>☉</sub>), jets perpendiculaires au disque, matière relativiste</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 6.1 Blackbody Radiation : corps noir et loi de Wien (b = 2,898 × 10⁻³ m·K)</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/6-3-the-compton-effect" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 6.3 The Compton Effect : Δλ = (h/m<sub>e</sub>c)(1 − cos θ), longueur d’onde de Compton 2,43 pm</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 8.5 Atomic Spectra and X-rays : hc = 1 240 eV·nm, séries et raies K, K<sub>α</sub>, K<sub>β</sub></a></p>
+          <p><a href="https://openstax.org/books/college-physics-2e/pages/22-4-magnetic-field-strength-force-on-a-moving-charge-in-a-magnetic-field" target="_blank" rel="noreferrer">OpenStax, <em>College Physics</em> 2e, § 22.4 Force on a Moving Charge : F = qvB sin θ, tesla, champ terrestre ≈ 5 × 10⁻⁵ T</a></p>
+          <p><a href="https://physics.nist.gov/cuu/Constants/" target="_blank" rel="noreferrer">NIST, <em>CODATA Recommended Values of the Fundamental Physical Constants</em> : h, c, k<sub>B</sub>, e, G — conversions eV/joule et constante de Boltzmann</a></p>
+          <p><a href="https://www.chandra.harvard.edu/xray_astro/xrays.html" target="_blank" rel="noreferrer">Chandra X-ray Center, <em>Field Guide to X-ray Astronomy — X-rays: Another Form of Light</em> : rayonnement de freinage, raies et fluorescence, diffusion Compton inverse, synchrotron</a></p>
+          <p><a href="https://chandra.harvard.edu/resources/illustrations/x-raysLight.html" target="_blank" rel="noreferrer">Chandra X-ray Center, illustrations <em>X-rays &amp; Light</em> : Bremsstrahlung (« braking radiation »), Compton inverse, synchrotron, émission atomique</a></p>
+          <p><a href="https://chandra.harvard.edu/edu/xray101/xray101.html" target="_blank" rel="noreferrer">Chandra X-ray Center, <em>X-ray 101</em> : absorption atmosphérique des rayons X, miroirs à incidence rasante, gain de sensibilité × 100 millions en 36 ans, spectres-« empreintes digitales »</a></p>
+          <p><a href="https://fermi.gsfc.nasa.gov/science/eteu/grbs/" target="_blank" rel="noreferrer">NASA, <em>Fermi Gamma-ray Space Telescope — Investigating Gamma-Ray Bursts</em> : GBM ≈ 240/an de 8 keV à 40 MeV, LAT ≈ 10/an de 30 MeV à 300 GeV, décalages vers le rouge 0,03 à 9,4,90 % de l’énergie des sursauts courts dans les 2 premières secondes</a></p>
+          <p><a href="https://icecube.wisc.edu/news/press-releases/2018/07/icecube-neutrinos-point-to-long-sought-cosmic-ray-accelerator/" target="_blank" rel="noreferrer">IceCube, communiqué du 12 juillet 2018 : IceCube-170922A (22 septembre 2017), blazar TXS 0506+056, détecteur 1 km³ (&gt; 5 000 modules de 35 cm, jusqu’à 2,5 km),≈ 20 observatoires associés</a></p>
+          <p><a href="https://www.auger.org/news/scientific-highlights/261-most-precise-measurement-of-the-cosmic-ray-energy-spectrum-at-ultra-high-energies" target="_blank" rel="noreferrer">Pierre Auger Observatory (2020) : spectre au-delà de 2,5 × 10¹⁸ eV, 215 030 événements en 14 ans, assombrissement à 10¹⁹ eV, atténuation au-dessus de 5 × 10¹⁹ eV (accélération maximale + effet GZK), anisotropie au-dessus de 8 × 10¹⁸ eV</a></p>
+          <p><a href="https://heasarc.gsfc.nasa.gov/docs/cgro/epo/brochures/new_win/nw16.html" target="_blank" rel="noreferrer">NASA/HEASARC, <em>Mystery of the Highest Energy Cosmic Rays</em> : record à 3 × 10²⁰ eV (≈ 12 calories), sept événements au-dessus de 10²⁰ eV, absorption par le fond diffus cosmologique, gerbes atmosphériques et fluorescence</a></p>
+          <p>Repères historiques cités, tels que les rapportent ces sources : Hess (1911-1912), Bell et Hewish (1967), Schmidt et Sandage (1963), satellites Vela (publication 1973), CGRO (1991), BeppoSAX (1996-1997), Keck (mai 1997), SGR 1806-20 (27 décembre 2004), détection des ondes gravitationnelles (2015), fusion neutron-neutron et sursaut gamma associé (2017), IceCube-170922A (2017, publication 2018), mesure du spectre d’Auger (2020).</p>
+        </section>
+
+        <footer class="course-footer"><span>ASTROPHYSIQUE DES HAUTES ÉNERGIES</span><a href="index.html">Retour aux branches ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

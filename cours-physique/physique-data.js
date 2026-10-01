@@ -102,11 +102,34 @@ window.courseCatalog = [
     ]
   },
   {
-    id: 'astrophysique', title: 'Astrophysique et cosmologie', note: 'Des systèmes planétaires à l’évolution de l’Univers.',
+    id: 'astrophysique-cosmologie', title: 'Astrophysique et cosmologie', note: 'Des systèmes planétaires à l’évolution de l’Univers.',
     chapters: [
       { id: 'gravitation-orbites', title: 'Gravitation et mécanique orbitale', field: 'Astrophysique · bases', summary: 'Force gravitationnelle, orbites circulaires et lois de Kepler.', lesson: { sections: ['La gravitation est une interaction attractive entre deux masses. Pour un satellite en orbite circulaire, la force gravitationnelle fournit l’accélération centripète.', 'Les lois de Kepler décrivent les orbites planétaires ; pour des orbites autour du même astre, le carré de la période est proportionnel au cube du demi-grand axe.'], formula: { label: 'GRAVITATION ET TROISIÈME LOI DE KEPLER', text: 'F = GMm/r²  |  T²/a³ = constante' }, example: { statement: 'Un satellite orbite à une distance r du centre. Comment varie sa vitesse circulaire si le rayon orbital est multiplié par 4 ?', calculation: 'v = √(GM/r). Remplacer r par 4r divise la vitesse par √4.', answer: 'La vitesse est divisée par 2.' }, exercise: { question: 'Quelle force maintient une planète sur son orbite autour du Soleil ?', answer: 'La force gravitationnelle exercée par le Soleil.' } } },
       { id: 'etoiles', title: 'Étoiles et évolution stellaire', field: 'Astrophysique · intermédiaire', summary: 'Équilibre hydrostatique, fusion nucléaire et étapes de vie des étoiles.', lesson: { sections: ['Une étoile est une boule de plasma maintenue par la gravitation et chauffée par les réactions nucléaires de son cœur. L’équilibre hydrostatique oppose la pression interne à la gravité.', 'La masse initiale détermine largement l’évolution : les étoiles peu massives finissent en naines blanches, les plus massives peuvent exploser en supernova.'], formula: { label: 'LUMINOSITÉ ET FLUX', text: 'F = L/(4πd²)' }, example: { statement: 'À quelle fraction du flux initial s’attend-on si la distance à une étoile double ?', calculation: 'Le flux varie comme 1/d² ; pour 2d, il est divisé par 4.', answer: 'Le flux reçu vaut un quart du flux initial.' }, exercise: { question: 'Quel mécanisme fournit l’énergie d’une étoile de la séquence principale ?', answer: 'La fusion nucléaire, principalement la fusion de l’hydrogène en hélium.' } } },
       { id: 'cosmologie', title: 'Galaxies et expansion de l’Univers', field: 'Cosmologie · approfondissement', summary: 'Décalage vers le rouge, expansion cosmique et histoire de l’Univers.', lesson: { sections: ['À grande échelle, les galaxies s’éloignent les unes des autres dans un Univers en expansion. Le décalage vers le rouge de leur lumière renseigne sur leur vitesse d’éloignement.', 'La loi de Hubble-Lemaître relie approximativement la vitesse d’éloignement à la distance pour les galaxies proches à l’échelle cosmologique.'], formula: { label: 'LOI DE HUBBLE-Lemaître', text: 'v ≈ H₀d' }, example: { statement: 'Avec H₀ = 70 km·s⁻¹·Mpc⁻¹, estimer la vitesse d’éloignement d’une galaxie située à 10 Mpc.', calculation: 'v ≈ 70 × 10.', answer: 'v ≈ 700 km·s⁻¹.' }, exercise: { question: 'Dans ce modèle, que devient la vitesse si la distance double ?', answer: 'Elle double, car v est proportionnelle à d.' } } }
+    ]
+  },
+  {
+    id: 'astrophysique',
+    title: 'Astrophysique des hautes énergies',
+    note: 'Rayons X et gamma, rayons cosmiques, pulsars, trous noirs et sursauts : observer l’Univers au-delà du visible. Un cours approfondi en quinze sections, avec exercices et sources vérifiées.',
+    href: 'astrophysique-hautes-energies.html',
+    sections: [
+      { anchor: 'introduction', title: 'Le spectre des hautes énergies' },
+      { anchor: 'telescopes', title: 'Observer au-dessus de l’atmosphère' },
+      { anchor: 'plasmas-chauds', title: 'Chaleur extrême et rayons X' },
+      { anchor: 'mecanismes', title: 'Freinage, raies et diffusion Compton' },
+      { anchor: 'rayons-cosmiques', title: 'Les rayons cosmiques' },
+      { anchor: 'spectre-energie', title: 'Le spectre et ses hautes énergies' },
+      { anchor: 'synchrotron', title: 'Le rayonnement synchrotron' },
+      { anchor: 'binaires-x', title: 'Binaires de rayons X' },
+      { anchor: 'pulsars', title: 'Pulsars et étoiles à neutrons' },
+      { anchor: 'trous-noirs', title: 'Trous noirs et horizons' },
+      { anchor: 'sursauts-gamma', title: 'Sursauts gamma' },
+      { anchor: 'agn-jets', title: 'Noyaux actifs et jets' },
+      { anchor: 'multimessager', title: 'Le ciel multimessager' },
+      { anchor: 'exercices', title: 'S’entraîner' },
+      { anchor: 'sources', title: 'Sources' }
     ]
   },
   {
