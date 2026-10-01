@@ -1,69 +1,72 @@
 const catalog = window.courseCatalog || [];
-const discipline = catalog.length === 1 && Array.isArray(catalog[0].chapters) ? catalog[0] : null;
-const chapters = discipline
-  ? discipline.chapters
-  : catalog.flatMap((entry) => entry.chapters || []);
-const deepCourses = catalog.filter((entry) => entry.href);
-const deepSections = catalog.flatMap((entry) => entry.sections || []);
-const deepCourseLabel = deepCourses.length === 1 ? 'COURS APPROFONDI' : 'COURS APPROFONDIS';
+const chapters = catalog.flatMap((entry) => entry.chapters || []);
+const rubricDetails = {
+  microeconomie: { title: 'Microéconomie', note: 'Choix individuels, marchés et réactions des quantités.' },
+  macroeconomie: { title: 'Macroéconomie', note: 'Production, prix et activité à l’échelle d’une économie.' },
+  'grands-economistes': { title: 'Les grands économistes', note: 'Une sélection de penseurs et de contributions qui ont marqué l’histoire de la pensée économique. Cette sélection n’est pas exhaustive.' }
+};
+const rubrics = Object.entries(rubricDetails)
+  .map(([id, details]) => ({ id, ...details, chapters: chapters.filter((chapter) => chapter.branch === id) }))
+  .filter((rubric) => rubric.chapters.length > 0);
 
 const levelNavigation = document.querySelector('#catalogue-levels');
 const programmeSections = document.querySelector('#programme-sections');
 const catalogueCount = document.querySelector('#catalogue-count');
 
 if (catalogueCount) {
-  catalogueCount.textContent = `${chapters.length} CHAPITRES`;
+  catalogueCount.textContent = `${rubrics.length} RUBRIQUES · ${chapters.length} CHAPITRES`;
 }
-document.querySelector('#domain-statistics').textContent = `${catalog.length} ${catalog.length === 1 ? 'BRANCHE' : 'BRANCHES'} · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} ${deepCourseLabel} · ${deepSections.length} SECTIONS` : ''}`;
+document.querySelector('#domain-statistics').textContent = `${rubrics.length} RUBRIQUES · ${chapters.length} CHAPITRES`;
 
-if (!discipline || !chapters.length) {
+if (!chapters.length || !rubrics.length) {
   const empty = document.createElement('p');
   empty.className = 'programme-note';
   empty.textContent = 'Aucun chapitre disponible pour le moment.';
   programmeSections.append(empty);
 } else {
-  chapters.forEach((chapter, index) => {
-    const number = String(index + 1).padStart(2, '0');
-
+  rubrics.forEach((rubric, rubricIndex) => {
+    const rubricNumber = String(rubricIndex + 1).padStart(2, '0');
     const levelLink = document.createElement('a');
-    levelLink.href = `#${chapter.id}`;
+    levelLink.href = `#${rubric.id}`;
     const levelOrder = document.createElement('span');
-    levelOrder.textContent = number;
-    levelLink.append(levelOrder, document.createTextNode(chapter.title));
+    levelOrder.textContent = rubricNumber;
+    levelLink.append(levelOrder, document.createTextNode(rubric.title));
     levelNavigation.append(levelLink);
 
     const section = document.createElement('section');
     section.className = 'programme-section';
-    section.id = chapter.id;
-    section.setAttribute('aria-labelledby', `${chapter.id}-title`);
+    section.id = rubric.id;
+    section.setAttribute('aria-labelledby', `${rubric.id}-title`);
 
     const heading = document.createElement('div');
     heading.className = 'programme-section-heading';
     const title = document.createElement('h2');
-    title.id = `${chapter.id}-title`;
-    title.textContent = chapter.title;
-    const field = document.createElement('span');
-    field.textContent = (chapter.field || '').toLocaleUpperCase('fr-FR');
-    heading.append(title, field);
+    title.id = `${rubric.id}-title`;
+    title.textContent = rubric.title;
+    const count = document.createElement('span');
+    count.textContent = `${rubric.chapters.length} CHAPITRES`;
+    heading.append(title, count);
     section.append(heading);
 
     const note = document.createElement('p');
     note.className = 'programme-note';
-    note.textContent = chapter.summary;
+    note.textContent = rubric.note;
     section.append(note);
 
     const chapterList = document.createElement('div');
     chapterList.className = 'chapter-list';
-    chapterList.setAttribute('aria-label', `Ouvrir : ${chapter.title}`);
+    chapterList.setAttribute('aria-label', `Chapitres de ${rubric.title}`);
 
-    const link = document.createElement('a');
-    link.className = 'chapter-link';
-    link.href = `cours.html?id=${encodeURIComponent(chapter.id)}`;
-    link.innerHTML = '<span class="chapter-number"></span><span class="chapter-title"></span><span class="chapter-field"></span><span class="chapter-arrow" aria-hidden="true">↗</span>';
-    link.querySelector('.chapter-number').textContent = number;
-    link.querySelector('.chapter-title').textContent = chapter.title;
-    link.querySelector('.chapter-field').textContent = chapter.field || 'OUVRIR LE COURS';
-    chapterList.append(link);
+    rubric.chapters.forEach((chapter, chapterIndex) => {
+      const link = document.createElement('a');
+      link.className = 'chapter-link';
+      link.href = `cours.html?id=${encodeURIComponent(chapter.id)}`;
+      link.innerHTML = '<span class="chapter-number"></span><span class="chapter-title"></span><span class="chapter-field"></span><span class="chapter-arrow" aria-hidden="true">↗</span>';
+      link.querySelector('.chapter-number').textContent = String(chapterIndex + 1).padStart(2, '0');
+      link.querySelector('.chapter-title').textContent = chapter.title;
+      link.querySelector('.chapter-field').textContent = chapter.field || 'OUVRIR LE COURS';
+      chapterList.append(link);
+    });
 
     section.append(chapterList);
     programmeSections.append(section);

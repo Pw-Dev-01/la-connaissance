@@ -1,12 +1,13 @@
 const chapterId = new URLSearchParams(window.location.search).get('id');
 const catalog = window.courseCatalog || [];
-const discipline = catalog.length === 1 && Array.isArray(catalog[0].chapters) ? catalog[0] : null;
-const chapter = discipline?.chapters.find((item) => item.id === chapterId);
+const chapters = catalog.flatMap((entry) => entry.chapters || []);
+const chapter = chapters.find((item) => item.id === chapterId);
 const lessonTitle = document.querySelector('#lesson-title');
 const lessonContainer = document.querySelector('#chapter-lesson');
 const branchTitles = {
   microeconomie: 'MICROÉCONOMIE',
-  macroeconomie: 'MACROÉCONOMIE'
+  macroeconomie: 'MACROÉCONOMIE',
+  'grands-economistes': 'LES GRANDS ÉCONOMISTES'
 };
 
 const addText = (parent, tag, className, text) => {
@@ -17,7 +18,7 @@ const addText = (parent, tag, className, text) => {
   return element;
 };
 
-if (!discipline || !chapter) {
+if (!chapter) {
   document.title = 'Leçon introuvable · Cours d’économie';
   lessonTitle.textContent = 'Leçon introuvable';
   document.querySelector('#lesson-summary').textContent = 'Ce chapitre ne figure pas dans le catalogue. Retourne à la page des chapitres pour choisir une leçon.';
@@ -30,11 +31,13 @@ if (!discipline || !chapter) {
   document.querySelector('#lesson-summary').textContent = chapter.summary;
   document.querySelector('#lesson-eyebrow').textContent = `COURS D’ÉCONOMIE · ${chapter.field}`;
   document.querySelector('#lesson-field').textContent = chapter.field;
-  document.querySelector('#lesson-level').textContent = 'MICROÉCONOMIE → MACROÉCONOMIE';
+  document.querySelector('#lesson-level').textContent = chapter.branch === 'grands-economistes'
+    ? 'PENSÉE ÉCONOMIQUE'
+    : 'MICROÉCONOMIE → MACROÉCONOMIE';
   document.querySelector('#lesson-level-label').textContent = branchTitles[chapter.branch];
   document.querySelector('#lesson-footer').textContent = `ÉCONOMIE · ${(chapter.field || '').toLocaleUpperCase('fr-FR')}`;
 
-  discipline.chapters
+  chapters
     .filter((item) => item.branch === chapter.branch)
     .forEach((sibling, index) => {
     const link = document.createElement('a');
@@ -52,11 +55,13 @@ if (!discipline || !chapter) {
   addText(theory, 'p', 'section-index', '01 / COMPRENDRE');
   addText(theory, 'h2', '', 'Les notions essentielles');
   chapter.lesson.sections.forEach((paragraph) => addText(theory, 'p', '', paragraph));
-  const formula = document.createElement('div');
-  formula.className = 'formula-block formula-accent';
-  addText(formula, 'span', 'formula-label', chapter.lesson.formula.label);
-  addText(formula, 'span', 'math-display', chapter.lesson.formula.text);
-  theory.append(formula);
+  if (chapter.lesson.formula) {
+    const formula = document.createElement('div');
+    formula.className = 'formula-block formula-accent';
+    addText(formula, 'span', 'formula-label', chapter.lesson.formula.label);
+    addText(formula, 'span', 'math-display', chapter.lesson.formula.text);
+    theory.append(formula);
+  }
   lessonContainer.append(theory);
 
   const hasEquationDetails = Boolean(chapter.lesson.equationDetails?.length);
