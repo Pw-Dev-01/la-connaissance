@@ -4,6 +4,10 @@ const discipline = catalog.length === 1 && Array.isArray(catalog[0].chapters) ? 
 const chapter = discipline?.chapters.find((item) => item.id === chapterId);
 const lessonTitle = document.querySelector('#lesson-title');
 const lessonContainer = document.querySelector('#chapter-lesson');
+const branchTitles = {
+  microeconomie: 'MICROÉCONOMIE',
+  macroeconomie: 'MACROÉCONOMIE'
+};
 
 const addText = (parent, tag, className, text) => {
   const element = document.createElement(tag);
@@ -27,13 +31,15 @@ if (!discipline || !chapter) {
   document.querySelector('#lesson-eyebrow').textContent = `COURS D’ÉCONOMIE · ${chapter.field}`;
   document.querySelector('#lesson-field').textContent = chapter.field;
   document.querySelector('#lesson-level').textContent = 'MICROÉCONOMIE → MACROÉCONOMIE';
-  document.querySelector('#lesson-level-label').textContent = 'ÉCONOMIE';
+  document.querySelector('#lesson-level-label').textContent = branchTitles[chapter.branch];
   document.querySelector('#lesson-footer').textContent = `ÉCONOMIE · ${(chapter.field || '').toLocaleUpperCase('fr-FR')}`;
 
-  discipline.chapters.forEach((sibling) => {
+  discipline.chapters
+    .filter((item) => item.branch === chapter.branch)
+    .forEach((sibling, index) => {
     const link = document.createElement('a');
     link.href = `cours.html?id=${encodeURIComponent(sibling.id)}`;
-    link.textContent = sibling.title;
+    link.textContent = `${String(index + 1).padStart(2, '0')} ${sibling.title}`;
     if (sibling.id === chapter.id) {
       link.classList.add('is-active');
       link.setAttribute('aria-current', 'page');

@@ -8,60 +8,91 @@
     <title>Paléontologie | La connaissance</title>
     <link rel="stylesheet" href="../cours-mathematiques/styles.css">
     <style>
-      @media (min-width: 701px) {
-        .course-sidebar {
-          max-height: calc(100vh - 56px);
-          overflow-y: auto;
-        }
+      .catalogue-levels a.is-current {
+        border-left-color: var(--coral);
+        color: #ad482f;
+      }
+      .catalogue-content > .lesson-section,
+      .catalogue-content > section[aria-labelledby="course-content-title"],
+      #methodes {
+        display: none;
       }
     </style>
     <script src="../cours-mathematiques/script.js" defer></script>
   </head>
   <body>
-    <header class="topbar">
+    <header class="topbar topbar-with-statistics">
       <a class="wordmark" href="../index.html" aria-label="Retour à La connaissance">
         <span class="wordmark-mark" aria-hidden="true">✳</span>
         <span>LE COURS DE PALÉONTOLOGIE</span>
       </a>
-      <a class="edition catalogue-back" href="../index.html">TOUTES LES DISCIPLINES ↗</a>
+      <span class="edition domain-statistics">3 RUBRIQUES · 9 CHAPITRES</span>
     </header>
     <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
 
-    <main class="course-layout">
-      <aside class="course-sidebar" aria-label="Sommaire du cours de paléontologie">
-        <p class="sidebar-label">LES SCIENCES DU PASSÉ</p>
-        <nav class="course-list" aria-label="Domaines associés">
-          <a class="course-link" href="../cours-geologie/index.html"><span class="course-order">05</span><span>Géologie</span></a>
-          <a class="course-link is-current" href="index.html" aria-current="page"><span class="course-order">07</span><span>Paléontologie</span></a>
+    <main class="catalogue-layout">
+      <aside class="course-sidebar" aria-label="Rubriques de paléontologie">
+        <p class="sidebar-label">LES RUBRIQUES</p>
+        <nav class="catalogue-levels" aria-label="Navigation des rubriques">
+          <a href="#archives"><span>01</span>Fossiles et archives</a>
+          <a href="#terrain-et-temps"><span>02</span>Terrain et temps</a>
+          <a href="#histoire-vivant"><span>03</span>Histoire du vivant</a>
         </nav>
-        <p class="sidebar-label chapter-label">DANS CE COURS</p>
-        <nav class="chapter-nav" aria-label="Sections numérotées">
-          <a href="#discipline">01 <span>La discipline et ses archives</span></a>
-          <a href="#types">02 <span>Les catégories de fossiles</span></a>
-          <a href="#fossilisation">03 <span>La fossilisation et ses biais</span></a>
-          <a href="#terrain">04 <span>Du terrain à la collection</span></a>
-          <a href="#stratigraphie">05 <span>Stratigraphie et corrélations</span></a>
-          <a href="#datation">06 <span>Datations et échelles de temps</span></a>
-          <a href="#evolution">07 <span>Fossiles et évolution</span></a>
-          <a href="#paleoenvironnements">08 <span>Paléoécologie</span></a>
-          <a href="#biodiversite">09 <span>Biodiversité et extinctions</span></a>
-          <a href="#limites">10 <span>Interpréter sans surinterpréter</span></a>
-          <a href="#exercices">11 <span>S'entraîner</span></a>
-          <a href="#sources">12 <span>Sources</span></a>
-        </nav>
-        <div class="sidebar-note">
-          <span class="note-mark" aria-hidden="true">✳</span>
-          <p>Un fossile s’interprète avec son contexte : la roche qui le contient, sa position et les transformations qu’il a subies.</p>
-        </div>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">✳</span><p>Choisis une rubrique, puis un chapitre pour rejoindre son contenu détaillé.</p></div>
       </aside>
 
-      <article class="course-content">
-        <header class="course-heading">
+      <article class="catalogue-content">
+        <header class="course-heading catalogue-heading">
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> SCIENCES DE LA TERRE · COURS APPROFONDI</p>
-          <h1>Lire les archives<br><span>du vivant</span></h1>
+          <h1>Explorer<br><span>la paléontologie</span></h1>
           <p class="course-intro">La paléontologie étudie les êtres vivants du passé à partir des fossiles et de leur contexte géologique. Ce cours suit les étapes qui relient une trace conservée dans une roche aux questions scientifiques qu’elle permet d’étudier : diversité du vivant, évolution et milieux anciens.</p>
-          <div class="course-meta"><span>COURS COMPLET</span><span>10 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+          <div class="course-meta"><span>3 RUBRIQUES · 9 CHAPITRES</span><span>EXERCICES · SOURCES</span></div>
         </header>
+
+        <div class="programme-sections" aria-label="Catalogue des chapitres">
+          <section class="programme-section" id="archives" aria-labelledby="archives-title">
+            <div class="programme-section-heading"><h2 id="archives-title">Fossiles et archives</h2><span>03 CHAPITRES</span></div>
+            <p class="programme-note">Reconnaître les types de fossiles et comprendre les conditions de leur conservation.</p>
+            <div class="chapter-list" aria-label="Chapitres de la rubrique Fossiles et archives">
+              <a class="chapter-link" href="cours.html?id=discipline"><span class="chapter-number">01</span><span class="chapter-title">La discipline et ses archives</span><span class="chapter-field">Introduction</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+              <a class="chapter-link" href="cours.html?id=types"><span class="chapter-number">02</span><span class="chapter-title">Les catégories de fossiles</span><span class="chapter-field">Fossiles corporels et traces</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+              <a class="chapter-link" href="cours.html?id=fossilisation"><span class="chapter-number">03</span><span class="chapter-title">La fossilisation et ses biais</span><span class="chapter-field">Conservation</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </section>
+
+          <section class="programme-section" id="terrain-et-temps" aria-labelledby="terrain-et-temps-title">
+            <div class="programme-section-heading"><h2 id="terrain-et-temps-title">Terrain et temps</h2><span>03 CHAPITRES</span></div>
+            <p class="programme-note">Relier chaque découverte à son contexte géologique et à la chronologie des couches.</p>
+            <div class="chapter-list" aria-label="Chapitres de la rubrique Terrain et temps">
+              <a class="chapter-link" href="cours.html?id=terrain"><span class="chapter-number">04</span><span class="chapter-title">Du terrain à la collection</span><span class="chapter-field">Méthodes de terrain</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+              <a class="chapter-link" href="cours.html?id=stratigraphie"><span class="chapter-number">05</span><span class="chapter-title">Stratigraphie et corrélations</span><span class="chapter-field">Datation relative</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+              <a class="chapter-link" href="cours.html?id=datation"><span class="chapter-number">06</span><span class="chapter-title">Datations et échelles de temps</span><span class="chapter-field">Datation numérique</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </section>
+
+          <section class="programme-section" id="histoire-vivant" aria-labelledby="histoire-vivant-title">
+            <div class="programme-section-heading"><h2 id="histoire-vivant-title">Histoire du vivant</h2><span>03 CHAPITRES</span></div>
+            <p class="programme-note">Utiliser les fossiles pour étudier l’évolution, les milieux anciens et les changements de biodiversité.</p>
+            <div class="chapter-list" aria-label="Chapitres de la rubrique Histoire du vivant">
+              <a class="chapter-link" href="cours.html?id=evolution"><span class="chapter-number">07</span><span class="chapter-title">Fossiles et évolution</span><span class="chapter-field">Parentés et caractères</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+              <a class="chapter-link" href="cours.html?id=paleoenvironnements"><span class="chapter-number">08</span><span class="chapter-title">Paléoécologie</span><span class="chapter-field">Milieux anciens</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+              <a class="chapter-link" href="cours.html?id=biodiversite"><span class="chapter-number">09</span><span class="chapter-title">Biodiversité et extinctions</span><span class="chapter-field">Registre fossile</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </section>
+
+          <section class="programme-section" id="methodes" aria-labelledby="methodes-title">
+            <div class="programme-section-heading"><h2 id="methodes-title">Méthodes d’interprétation</h2><span>01 CHAPITRE</span></div>
+            <p class="programme-note">Évaluer la portée des observations et distinguer les données des hypothèses.</p>
+            <div class="chapter-list" aria-label="Chapitres de la rubrique Méthodes d’interprétation">
+              <a class="chapter-link" href="#limites"><span class="chapter-number">10</span><span class="chapter-title">Interpréter sans surinterpréter</span><span class="chapter-field">Limites des données</span><span class="chapter-arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </section>
+        </div>
+
+        <section class="programme-section" aria-labelledby="course-content-title">
+          <div class="programme-section-heading"><h2 id="course-content-title">Cours détaillé</h2><span>9 CHAPITRES</span></div>
+          <p class="programme-note">Les exercices et les sources suivent les chapitres.</p>
+        </section>
 
         <section class="lesson-section" id="discipline" aria-labelledby="discipline-title">
           <p class="section-index">01 / LA DISCIPLINE ET SES ARCHIVES</p>
@@ -225,7 +256,7 @@
           <p class="table-note">OpenStax, manuels diffusés sous licence Creative Commons BY-NC-SA 4.0 sauf indication contraire. Les pages du Natural History Museum sont des ressources de référence destinées à l’éducation; la charte ICS précise que les âges numériques sont susceptibles d’être révisés.</p>
         </section>
 
-        <footer class="course-footer"><span>PALÉONTOLOGIE · COURS APPROFONDI</span><a href="../index.html">Retour aux disciplines ↑</a></footer>
+        <footer class="course-footer"><span>PALÉONTOLOGIE · CATALOGUE</span><a href="cours.html?id=discipline">Ouvrir le premier chapitre ↑</a></footer>
       </article>
     </main>
   </body>

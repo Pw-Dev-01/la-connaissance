@@ -6,6 +6,7 @@ window.courseCatalog = [
     chapters: [
       {
         id: 'rareté-choix',
+        branch: 'microeconomie',
         title: 'Rareté, choix et coût d’opportunité',
         field: 'Microéconomie · bases',
         summary: 'Ressources limitées, arbitrages individuels et contrainte budgétaire.',
@@ -52,6 +53,7 @@ window.courseCatalog = [
       },
       {
         id: 'offre-demande',
+        branch: 'microeconomie',
         title: 'Offre, demande et équilibre',
         field: 'Microéconomie · bases',
         summary: 'Prix, quantités demandées et offertes, équilibre et déséquilibres de marché.',
@@ -97,6 +99,7 @@ window.courseCatalog = [
       },
       {
         id: 'elasticite-prix',
+        branch: 'microeconomie',
         title: 'Élasticité-prix',
         field: 'Microéconomie · intermédiaire',
         summary: 'Mesure de la réaction des quantités demandées ou offertes à une variation de prix.',
@@ -134,6 +137,7 @@ window.courseCatalog = [
       },
       {
         id: 'pib-croissance',
+        branch: 'macroeconomie',
         title: 'PIB, prix et croissance',
         field: 'Macroéconomie · bases',
         summary: 'Composantes du PIB, distinction entre valeurs nominales et réelles, et croissance réelle.',

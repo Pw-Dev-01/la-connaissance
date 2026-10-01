@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Leçon de paléontologie avec notions, exemple guidé, exercice corrigé et sources.">
+    <title>Cours de paléontologie</title>
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <script src="../cours-mathematiques/script.js" defer></script>
+    <script src="paleontologie-data.js" defer></script>
+    <script src="cours.js" defer></script>
+  </head>
+  <body data-course-label="Cours de paléontologie">
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue de paléontologie">
+        <span class="wordmark-mark" aria-hidden="true">✳</span>
+        <span>LE COURS DE PALÉONTOLOGIE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+    <main class="lesson-layout">
+      <aside class="course-sidebar" aria-label="Navigation des chapitres de paléontologie">
+        <p class="sidebar-label" id="lesson-level-label">PALÉONTOLOGIE</p>
+        <nav class="chapter-nav" id="lesson-chapter-nav" aria-label="Chapitres de paléontologie"></nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">✳</span><p>Choisis un autre chapitre ou retourne au catalogue de paléontologie.</p></div>
+      </aside>
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span id="lesson-eyebrow">FICHE DE PALÉONTOLOGIE</span></p>
+          <h1 id="lesson-title">Cours de paléontologie</h1>
+          <p class="course-intro" id="lesson-summary"></p>
+          <div class="course-meta"><span id="lesson-field"></span><span id="lesson-level">BASES → APPROFONDISSEMENT</span></div>
+        </header>
+        <div id="chapter-lesson"></div>
+        <footer class="course-footer"><span id="lesson-footer">PALÉONTOLOGIE</span><a href="index.html">Retour au catalogue ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

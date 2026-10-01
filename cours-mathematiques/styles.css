@@ -41,6 +41,17 @@ body {
   border-bottom: 1px solid var(--line);
 }
 
+.topbar-with-statistics {
+  gap: 18px;
+}
+
+.domain-statistics {
+  max-width: 70%;
+  margin-left: auto;
+  line-height: 1.5;
+  text-align: right;
+}
+
 .wordmark {
   display: inline-flex;
   align-items: center;
@@ -912,6 +923,25 @@ h3 {
   .topbar {
     width: calc(100% - 36px);
     min-height: 66px;
+  }
+
+  .topbar-with-statistics {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    padding-block: 10px;
+  }
+
+  .topbar-with-statistics .domain-statistics {
+    order: 3;
+    flex: 1 0 100%;
+    max-width: none;
+    margin-left: 0;
+    text-align: right;
+  }
+
+  .topbar-with-statistics > .catalogue-back {
+    margin-left: auto;
   }
 
   .edition {

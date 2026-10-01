@@ -3,6 +3,9 @@ const discipline = catalog.length === 1 && Array.isArray(catalog[0].chapters) ? 
 const chapters = discipline
   ? discipline.chapters
   : catalog.flatMap((entry) => entry.chapters || []);
+const deepCourses = catalog.filter((entry) => entry.href);
+const deepSections = catalog.flatMap((entry) => entry.sections || []);
+const deepCourseLabel = deepCourses.length === 1 ? 'COURS APPROFONDI' : 'COURS APPROFONDIS';
 
 const levelNavigation = document.querySelector('#catalogue-levels');
 const programmeSections = document.querySelector('#programme-sections');
@@ -11,6 +14,7 @@ const catalogueCount = document.querySelector('#catalogue-count');
 if (catalogueCount) {
   catalogueCount.textContent = `${chapters.length} CHAPITRES`;
 }
+document.querySelector('#domain-statistics').textContent = `${catalog.length} ${catalog.length === 1 ? 'BRANCHE' : 'BRANCHES'} · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} ${deepCourseLabel} · ${deepSections.length} SECTIONS` : ''}`;
 
 if (!discipline || !chapters.length) {
   const empty = document.createElement('p');

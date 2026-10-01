@@ -11,6 +11,8 @@ const deepCourses = window.courseCatalog.filter((branch) => branch.href);
 
 document.querySelector('#catalogue-count').textContent =
   `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} COURS APPROFONDI · ${deepSections.length} SECTIONS` : ''}`;
+const deepCourseLabel = deepCourses.length === 1 ? 'COURS APPROFONDI' : 'COURS APPROFONDIS';
+document.querySelector('#domain-statistics').textContent = `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES · ${deepCourses.length} ${deepCourseLabel} · ${deepSections.length} SECTIONS`;
 
 window.courseCatalog.forEach((branch, branchIndex) => {
   const branchChapters = branch.chapters || [];

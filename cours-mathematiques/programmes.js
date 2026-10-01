@@ -3,11 +3,12 @@ const programmeSections = document.querySelector('#programme-sections');
 const totalChapters = window.courseCatalog.reduce((total, programme) => total + programme.chapters.length, 0);
 
 document.querySelector('#catalogue-count').textContent = `${totalChapters} INTITULÉS · ${window.courseCatalog.length} NIVEAUX`;
+document.querySelector('#domain-statistics').textContent = `${window.courseCatalog.length} PROGRAMMES · ${totalChapters} CHAPITRES`;
 
 window.courseCatalog.forEach((programme, index) => {
   const levelLink = document.createElement('a');
   levelLink.href = `#${programme.id}`;
-  levelLink.innerHTML = `<span>${index + 1}</span>${programme.title}`;
+  levelLink.innerHTML = `<span>${String(index + 1).padStart(2, '0')}</span>${programme.title}`;
   levelNavigation.append(levelLink);
 
   const section = document.createElement('section');
