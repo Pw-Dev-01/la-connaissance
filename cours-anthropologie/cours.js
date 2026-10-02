@@ -29,7 +29,11 @@ if (!branch || !chapter) {
   lessonSummary.textContent = chapter.summary;
   document.querySelector('#lesson-eyebrow').textContent = `ANTHROPOLOGIE · ${branch.title.toLocaleUpperCase('fr-FR')}`;
   document.querySelector('#lesson-field').textContent = chapter.field;
-  document.querySelector('#lesson-level-label').textContent = branch.title.toLocaleUpperCase('fr-FR');
+  // L'étiquette de domaine, au-dessus de la liste des chapitres, renvoie à la
+  // rubrique correspondante du catalogue d'anthropologie.
+  const levelLabel = document.querySelector('#lesson-level-label');
+  levelLabel.textContent = branch.title.toLocaleUpperCase('fr-FR');
+  levelLabel.href = `index.html#${branch.id}`;
   document.querySelector('#lesson-footer').textContent = `ANTHROPOLOGIE · ${chapter.field.toLocaleUpperCase('fr-FR')}`;
 
   branch.chapters.forEach((sibling) => {

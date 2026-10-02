@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi de cosmologie des particules : modèle standard des particules, histoire thermique de l’Univers, nucléosynthèse primordiale, fond diffus cosmologique, matière noire, énergie noire, plasma quark-gluon, neutrinos cosmologiques, baryogenèse et inflation, avec équations en MathML et sources vérifiées.">
+    <title>Cosmologie des particules | Cours de physique</title>
+    <!-- Format identique aux autres cours approfondis de physique. Règle du site :
+         la liste des chapitres (menu gauche) n'est pas numérotée, les
+         sous-rubriques de la page le sont. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte seize entrées de navigation : la barre latérale devient
+         défilable quand la hauteur de l'écran ne suffit plus à les afficher.
+         Sous 700 px, la mise en page partagée la transforme déjà en bandeau. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+        <span class="wordmark-mark" aria-hidden="true">φ</span>
+        <span>LE COURS DE PHYSIQUE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche astrophysique et cosmologie du cours de physique">
+          <!-- Liste des chapitres du domaine, sans numérotation -->
+          <a class="course-link" href="index.html#astrophysique-cosmologie"><span>Astrophysique et cosmologie</span></a>
+          <a class="course-link" href="cours.html?id=gravitation-orbites"><span>Gravitation et mécanique orbitale</span></a>
+          <a class="course-link" href="cours.html?id=etoiles"><span>Étoiles et évolution stellaire</span></a>
+          <a class="course-link" href="cours.html?id=cosmologie"><span>Galaxies et expansion de l’Univers</span></a>
+          <a class="course-link is-current" href="cosmologie-particules.html" aria-current="page"><span>Cosmologie des particules</span></a>
+          <a class="course-link" href="astrophysique-hautes-energies.html"><span>Astrophysique des hautes énergies</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours de cosmologie des particules">
+          <a href="#introduction">01 <span>La cosmologie des particules</span></a>
+          <a href="#modele-cosmologique">02 <span>Le modèle standard de la cosmologie</span></a>
+          <a href="#modele-particules">03 <span>Le modèle standard des particules</span></a>
+          <a href="#expansion-redshift">04 <span>Expansion et décalage vers le rouge</span></a>
+          <a href="#densite-critique">05 <span>Densité critique et paramètres</span></a>
+          <a href="#histoire-thermique">06 <span>L’histoire thermique de l’Univers</span></a>
+          <a href="#nucleosynthese">07 <span>La nucléosynthèse primordiale</span></a>
+          <a href="#fond-diffus">08 <span>Recombinaison et fond diffus</span></a>
+          <a href="#matiere-noire">09 <span>La matière noire</span></a>
+          <a href="#energie-noire">10 <span>L’énergie noire</span></a>
+          <a href="#plasma-quark-gluon">11 <span>Le plasma quark-gluon</span></a>
+          <a href="#neutrinos-cosmologiques">12 <span>Les neutrinos cosmologiques</span></a>
+          <a href="#baryogenese">13 <span>La baryogenèse</span></a>
+          <a href="#inflation">14 <span>L’inflation</span></a>
+          <a href="#exercices">15 <span>S’entraîner</span></a>
+          <a href="#sources">16 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">φ</span>
+          <p>Une idée directrice : les particules et les interactions étudiées au laboratoire ont façonné l’Univers dans ses premières fractions de seconde.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> COSMOLOGIE DES PARTICULES · COURS APPROFONDI</p>
+          <h1>Cosmologie<br><span>des particules</span></h1>
+          <p class="course-intro">Pourquoi l’Univers contient-il de la matière plutôt que rien ? D’où vient l’hélium qui n’a jamais été fabriqué par les étoiles ? Ce cours relie la physique des particules et la cosmologie : il part du modèle standard des particules, suit le refroidissement de l’Univers depuis le plasma quark-gluon jusqu’au fond diffus cosmologique, et confronte chaque étape aux observations — abondances des éléments légers, spectre du fond diffus, structure à grande échelle, matière noire et énergie noire.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>16 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+        <section class="lesson-section" id="introduction" aria-labelledby="introduction-title">
+          <p class="section-index">01 / LA COSMOLOGIE DES PARTICULES</p>
+          <h2 id="introduction-title">Deux disciplines, un même objet d’étude</h2>
+          <p>La <strong>cosmologie des particules</strong> étudie l’Univers primordial avec les outils de la physique des particules. Les deux domaines ne sont pas séparés : produire des particules isolées exige des énergies énormes, et ces énergies ont existé partout dans les premiers instants de l’Univers ; la matière que nous observons aujourd’hui a été façonnée en partie par la nature et les interactions des particules alors créées (OpenStax, <em>University Physics</em> vol. 3, ch. 11).</p>
+          <p>L’Univers en expansion se refroidit : chaque époque correspond à une température, donc à une énergie typique par particule. Une particule de masse <em>m</em> ne peut être produite en abondance que si l’énergie thermique disponible atteint son énergie de repos, soit <em>k</em><sub>B</sub><em>T</em> ≳ <em>mc</em>². En remontant le temps, on traverse ainsi des seuils successifs : électrons et positrons, puis protons et neutrons, puis les quarks et les gluons eux-mêmes.</p>
+          <p>Deux familles d’observations servent de test : les <strong>abondances des éléments légers</strong>, fixées dans les premières minutes, et le <strong>fond diffus cosmologique</strong>, émis environ 380 000 ans plus tard (OpenStax, <em>Astronomy</em> 2e, § 29.3 et § 29.4). Les modèles de l’Univers primordial ne sont donc pas des récits : ce sont des calculs de physique nucléaire et de physique des particules, confrontés à des mesures.</p>
+          <div class="formula-block"><span class="formula-label">ÉNERGIE THERMIQUE ET ÉCHELLE DE TEMPÉRATURE</span><math class="mathml-display" display="block" aria-label="Énergie thermique égale k indice B fois T, et un électronvolt correspond à environ onze mille six cents kelvins"><mrow><msub><mi>E</mi><mtext>th</mtext></msub><mo>=</mo><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi><mspace width="1em"></mspace><mo>,</mo><mspace width="0.6em"></mspace><mn>1</mn><mspace width="0.3em"></mspace><mtext>eV</mtext><mo>↔</mo><mn>1.16</mn><mo>×</mo><msup><mn>10</mn><mn>4</mn></msup><mspace width="0.3em"></mspace><mtext>K</mtext></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> E<sub>th</sub> : énergie thermique typique (J ou eV) ; k<sub>B</sub> = 1,381 × 10⁻²³ J·K⁻¹ = 8,617 × 10⁻⁵ eV·K⁻¹ : constante de Boltzmann ; T : température (K). La correspondance 1 eV ↔ 1,16 × 10⁴ K découle directement de k<sub>B</sub> ; 1 eV = 1,602 × 10⁻¹⁹ J (NIST, CODATA).</p>
+          <div class="worked-result"><strong>EXEMPLE · À 10¹² KELVINS</strong><span class="math">k<sub>B</sub>T = 8,617 × 10⁻⁵ × 10¹² eV ≈ 8,6 × 10⁷ eV</span><span class="math">soit ≈ 86 MeV</span><span class="math">énergie comparable à celle des pions, très au-dessus de l’énergie de repos de l’électron (0,511 MeV)</span></div>
+          <div class="callout"><strong>Le laboratoire et le ciel</strong><p>Le Grand collisionneur de hadrons (LHC) du CERN, installé à plus de 150 m sous terre près de Genève, est la machine la plus puissante jamais construite pour étudier les interactions des particules élémentaires (OpenStax, <em>University Physics</em> vol. 3, ch. 11). Dans l’Univers primordial, ces énergies n’étaient pas concentrées en un point : elles régnaient partout.</p></div>
+        </section>
+
+        <section class="lesson-section" id="modele-cosmologique" aria-labelledby="modele-cosmologique-title">
+          <p class="section-index">02 / LE MODÈLE STANDARD DE LA COSMOLOGIE</p>
+          <h2 id="modele-cosmologique-title">Un modèle construit sur le principe cosmologique</h2>
+          <p>Le <strong>principe cosmologique</strong> postule qu’à très grande échelle l’Univers est homogène et isotrope : aucune direction ni aucun lieu ne sont privilégiés. La relativité générale décrit alors l’ensemble par une métrique dont le facteur d’échelle <em>a</em>(<em>t</em>) traduit l’expansion, et l’équation de Friedmann relie le taux d’expansion <em>H</em> = <em>ȧ</em>/<em>a</em> au contenu de l’Univers et à sa courbure.</p>
+          <p>Le modèle dit de <strong>concordance</strong> (ΛCDM) décrit l’Univers par quelques paramètres : densité de matière ordinaire, densité de matière noire, densité d’énergie noire, courbure spatiale et taux d’expansion. Il « rend compte de l’existence et de la structure du fond diffus cosmologique, des abondances des éléments légers deutérium, hélium et lithium, et de l’accélération de l’expansion » ; toutes les observations disponibles le confortent (OpenStax, <em>Astronomy</em> 2e, § 29.5).</p>
+          <div class="formula-block"><span class="formula-label">ÉQUATION DE FRIEDMANN</span><math class="mathml-display" display="block" aria-label="H au carré égale huit pi G rho divisé par trois, moins k c carré sur a carré, plus lambda c carré sur trois"><mrow><msup><mi>H</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>8</mn><mi>π</mi><mi>G</mi><mi>ρ</mi></mrow><mn>3</mn></mfrac><mo>−</mo><mfrac><mrow><mi>k</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><msup><mi>a</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mrow><mi>Λ</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> H = ȧ/a : taux d’expansion (s⁻¹) ; G = 6,674 × 10⁻¹¹ m³·kg⁻¹·s⁻² : constante de gravitation ; ρ : densité totale d’énergie (kg·m⁻³) ; k : courbure spatiale (m⁻² ; k = 0 pour un Univers plat) ; a : facteur d’échelle (sans dimension par convention) ; Λ : constante cosmologique (m⁻²). Constantes du CODATA (NIST).</p>
+          <div class="worked-result"><strong>EXEMPLE · CONVERTIR H₀</strong><span class="math">H₀ = 67,4 km·s⁻¹·Mpc⁻¹ = 67,4 × 10³ / 3,086 × 10²² s⁻¹</span><span class="math">H₀ ≈ 2,18 × 10⁻¹⁸ s⁻¹</span><span class="math">temps de Hubble : 1/H₀ ≈ 4,6 × 10¹⁷ s ≈ 14,5 milliards d’années</span></div>
+          <p>La valeur H₀ = 67,4 ± 0,5 km·s⁻¹·Mpc⁻¹ est celle déduite du fond diffus cosmologique par l’analyse Planck 2018 des paramètres cosmologiques. L’âge obtenu en intégrant le modèle vaut 13,8 milliards d’années, un peu moins que le temps de Hubble, car l’expansion n’a pas été constante : elle a été freinée par la matière, puis accélérée par l’énergie noire (OpenStax, <em>Astronomy</em> 2e, § 29.1 ; Planck Collaboration, 2018).</p>
+          <div class="callout callout-coral"><strong>Un écart encore discuté</strong><p>Les mesures locales du taux d’expansion, fondées sur les céphéides et les supernovas de type Ia, donnent une valeur plus élevée que celle du fond diffus. Cet écart, souvent appelé « tension de Hubble », reste ouvert : il peut signaler une erreur systématique dans l’une des mesures, ou une physique non encore décrite (Planck Collaboration, 2018).</p></div>
+        </section>
+
+        <section class="lesson-section" id="modele-particules" aria-labelledby="modele-particules-title">
+          <p class="section-index">03 / LE MODÈLE STANDARD DES PARTICULES</p>
+          <h2 id="modele-particules-title">Douze fermions, des bosons d’interaction</h2>
+          <p>Le <strong>modèle standard</strong> décrit la matière avec douze fermions de spin ½ — six quarks et six leptons, groupés en trois familles de masse croissante — et les interactions par échange de bosons de jauge : le photon (interaction électromagnétique), les bosons W et Z (interaction faible) et les huit gluons (interaction forte). Le boson de Higgs est associé au mécanisme qui donne leur masse aux particules (OpenStax, <em>University Physics</em> vol. 3, § 11.3 et § 11.5).</p>
+          <p>Les quarks ne sont jamais observés isolés : ils sont confinés dans les hadrons. Le proton est un état lié <em>uud</em>, le neutron <em>udd</em>. Les réactions entre particules obéissent à des lois de conservation strictes : charge électrique, énergie et impulsion, moment cinétique, nombre baryonique (1/3 par quark, −1/3 par antiquark) et, pour l’interaction faible, nombres leptoniques (OpenStax, <em>University Physics</em> vol. 3, § 11.2).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Le modèle standard : fermions de matière et bosons d’interaction (OpenStax, University Physics vol. 3, § 11.3 et § 11.5)</caption>
+              <thead><tr><th scope="col">Famille</th><th scope="col">Particules</th><th scope="col">Charge</th><th scope="col">Interactions</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Quarks de type haut</th><td>u, c, t</td><td>+2/3</td><td>forte, faible, électromagnétique</td></tr>
+                <tr><th scope="row">Quarks de type bas</th><td>d, s, b</td><td>−1/3</td><td>forte, faible, électromagnétique</td></tr>
+                <tr><th scope="row">Leptons chargés</th><td>e, μ, τ</td><td>−1</td><td>faible, électromagnétique</td></tr>
+                <tr><th scope="row">Neutrinos</th><td>ν<sub>e</sub>, ν<sub>μ</sub>, ν<sub>τ</sub></td><td>0</td><td>faible</td></tr>
+                <tr><th scope="row">Bosons de jauge</th><td>γ, W<sup>±</sup>, Z, gluons</td><td>0 ; ±1 ; 0 ; 0</td><td>véhiculent les interactions</td></tr>
+                <tr><th scope="row">Boson de Higgs</th><td>H</td><td>0</td><td>origine des masses</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="formula-block"><span class="formula-label">SEUIL DE PRODUCTION D’UNE PARTICULE</span><math class="mathml-display" display="block" aria-label="k indice B fois T supérieur ou égal à m c carré"><mrow><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi><mo>≥</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> m : masse de la particule (kg) ; mc² : énergie de repos (J ou eV) ; k<sub>B</sub>T : énergie thermique (J ou eV). Énergies de repos utiles : électron 0,511 MeV ; proton 938,3 MeV (NIST, CODATA ; OpenStax, <em>University Physics</em> vol. 3, § 11.3).</p>
+          <div class="worked-result"><strong>EXEMPLE · QUAND LES PROTONS DEVIENNENT ABONDANTS</strong><span class="math">m<sub>p</sub>c² = 938,3 MeV = 9,383 × 10⁸ eV</span><span class="math">T = 9,383 × 10⁸ / 8,617 × 10⁻⁵ ≈ 1,09 × 10¹³ K</span><span class="math">au-dessus de cette température, les paires proton-antiproton et neutron-antineutron se créent en abondance</span></div>
+          <div class="callout"><strong>Deux règles pour lire le ciel primordial</strong><p>Première règle : une particule n’existe en abondance que tant que l’énergie thermique dépasse son énergie de repos. Seconde règle : tant qu’une réaction est possible, elle se produit ; les abondances finales dépendent donc de la vitesse de l’expansion, qui fixe le moment où les réactions cessent (OpenStax, <em>University Physics</em> vol. 3, § 11.7).</p></div>
+        </section>
+
+        <section class="lesson-section" id="expansion-redshift" aria-labelledby="expansion-redshift-title">
+          <p class="section-index">04 / EXPANSION ET DÉCALAGE VERS LE ROUGE</p>
+          <h2 id="expansion-redshift-title">Ce que mesure un décalage vers le rouge</h2>
+          <p>L’expansion n’est pas un mouvement des galaxies dans un espace fixe : c’est l’espace lui-même qui s’étire, et les longueurs d’onde des photons qui le traversent s’étirent avec lui. Le <strong>facteur d’échelle</strong> <em>a</em>(<em>t</em>) mesure cet étirement ; le <strong>décalage vers le rouge</strong> <em>z</em> compare la longueur d’onde observée à celle émise. Pour les galaxies proches, la loi de Hubble-Lemaître relie la vitesse d’éloignement à la distance : <em>v</em> ≈ <em>H</em>₀<em>d</em> (OpenStax, <em>Astronomy</em> 2e, § 29.1).</p>
+          <p>Le décalage vers le rouge est aussi un thermomètre : le rayonnement se refroidit avec l’expansion, si bien que la température du fond diffus suit <em>T</em>(<em>z</em>) = <em>T</em>₀(1 + <em>z</em>). Un décalage mesuré sur les raies d’absorption de galaxies lointaines indique donc directement à quelle époque, et à quelle température, on observe l’Univers.</p>
+          <div class="formula-block"><span class="formula-label">DÉCALAGE VERS LE ROUGE ET REFROIDISSEMENT</span><math class="mathml-display" display="block" aria-label="un plus z égale a zéro divisé par a de t, égale lambda observé sur lambda émis, et T de z égale T zéro fois un plus z"><mtable><mtr><mtd><mrow><mn>1</mn><mo>+</mo><mi>z</mi><mo>=</mo><mfrac><msub><mi>a</mi><mn>0</mn></msub><mrow><mi>a</mi><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mfrac><mo>=</mo><mfrac><msub><mi>λ</mi><mtext>obs</mtext></msub><msub><mi>λ</mi><mtext>émis</mtext></msub></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mi>T</mi><mo>(</mo><mi>z</mi><mo>)</mo><mo>=</mo><msub><mi>T</mi><mn>0</mn></msub><mo>(</mo><mn>1</mn><mo>+</mo><mi>z</mi><mo>)</mo></mrow></mtd></mtr></mtable></math></div>
+          <p><strong>Paramètres et unités :</strong> z : décalage vers le rouge (sans dimension) ; a : facteur d’échelle au moment de l’émission ; a₀ = 1 par convention aujourd’hui ; λ : longueurs d’onde observée et émise (m) ; T₀ = 2,7255 K : température actuelle du fond diffus cosmologique (Fixsen, 2009).</p>
+          <div class="worked-result"><strong>EXEMPLE · LE FOND DIFFUS EST NÉ VERS 3 000 K</strong><span class="math">T(z) = 3 000 K et T₀ = 2,7255 K</span><span class="math">1 + z = 3 000 / 2,7255 ≈ 1 101</span><span class="math">z ≈ 1 100 : la lumière du fond diffus a été émise quand l’Univers était environ 1 100 fois plus « serré »</span></div>
+          <div class="callout"><strong>Le fond diffus, refroidi mais intact</strong><p>Les photons du fond diffus n’ont pas perdu d’énergie par interaction : leur longueur d’onde a simplement suivi l’expansion. Le rayonnement observé aujourd’hui, dans le domaine des micro-ondes (λ<sub>max</sub> ≈ 1,06 mm), correspond à un corps noir à 2,7255 K — la trace directe de l’Univers à 3 000 K (OpenStax, <em>Astronomy</em> 2e, § 29.4 ; Fixsen, 2009).</p></div>
+        </section>
+
+        <section class="lesson-section" id="densite-critique" aria-labelledby="densite-critique-title">
+          <p class="section-index">05 / DENSITÉ CRITIQUE ET PARAMÈTRES DE DENSITÉ</p>
+          <h2 id="densite-critique-title">La densité qui décide de la géométrie</h2>
+          <p>L’équation de Friedmann fait apparaître une densité particulière, la <strong>densité critique</strong> ρ<sub>c</sub>, pour laquelle l’Univers est spatialement plat (<em>k</em> = 0). Chaque composante s’y compare par un <strong>paramètre de densité</strong> Ω<sub>i</sub> = ρ<sub>i</sub>/ρ<sub>c</sub> : matière ordinaire (baryons), matière noire, rayonnement, énergie noire. Le modèle de concordance donne Ω<sub>m</sub> ≈ 0,315 pour la matière totale et Ω<sub>Λ</sub> ≈ 0,685 pour l’énergie noire, la somme valant 1 à la précision des mesures : l’Univers est plat (Planck Collaboration, 2018).</p>
+          <p>Cette densité critique est très faible à l’échelle humaine : environ 8,5 × 10⁻²⁷ kg·m⁻³, soit l’équivalent de cinq protons par mètre cube. Les baryons n’en représentent qu’environ 5 % ; la matière ordinaire est donc, en masse, une petite minorité du contenu de l’Univers (OpenStax, <em>Astronomy</em> 2e, § 29.5).</p>
+          <div class="formula-block"><span class="formula-label">DENSITÉ CRITIQUE ET PARAMÈTRES DE DENSITÉ</span><math class="mathml-display" display="block" aria-label="rho indice c égale trois H zéro au carré divisé par huit pi G, et oméga indice i égale rho indice i divisé par rho indice c"><mtable><mtr><mtd><mrow><msub><mi>ρ</mi><mi>c</mi></msub><mo>=</mo><mfrac><mrow><mn>3</mn><msubsup><mi>H</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mrow><mn>8</mn><mi>π</mi><mi>G</mi></mrow></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>Ω</mi><mi>i</mi></msub><mo>=</mo><mfrac><msub><mi>ρ</mi><mi>i</mi></msub><msub><mi>ρ</mi><mi>c</mi></msub></mfrac><mspace width="1em"></mspace><mo>,</mo><mspace width="0.6em"></mspace><msub><mi>Ω</mi><mi>m</mi></msub><mo>+</mo><msub><mi>Ω</mi><mi>Λ</mi></msub><mo>+</mo><msub><mi>Ω</mi><mi>r</mi></msub><mo>=</mo><mn>1</mn></mrow></mtd></mtr></mtable></math></div>
+          <p><strong>Paramètres et unités :</strong> ρ<sub>c</sub> : densité critique (kg·m⁻³) ; H₀ : taux d’expansion actuel (s⁻¹) ; G : constante de gravitation ; ρ<sub>i</sub> : densité de la composante i ; Ω<sub>i</sub> : paramètre de densité (sans dimension). La dernière égalité suppose un Univers plat ; le rayonnement est négligeable aujourd’hui (Ω<sub>r</sub> ≈ 10⁻⁴).</p>
+          <div class="worked-result"><strong>EXEMPLE · DE LA DENSITÉ CRITIQUE À LA DENSITÉ BARYONIQUE</strong><span class="math">ρ<sub>c</sub> = 3 × (2,18 × 10⁻¹⁸)² / (8π × 6,674 × 10⁻¹¹) ≈ 8,5 × 10⁻²⁷ kg·m⁻³</span><span class="math">soit 8,5 × 10⁻²⁷ / 1,673 × 10⁻²⁷ ≈ 5 protons par mètre cube</span><span class="math">avec Ω<sub>b</sub> ≈ 0,049 : ρ<sub>b</sub> ≈ 0,049 × 8,5 × 10⁻²⁷ ≈ 4,2 × 10⁻²⁸ kg·m⁻³, environ 0,25 baryon par mètre cube</span></div>
+          <div class="callout"><strong>95 % du contenu échappe au visible</strong><p>Étoiles et gaz lumineux comptent pour moins de 1 % de la densité critique ; l’hydrogène et l’hélium intergalactiques ajoutent environ 4 %. La matière noire en représente environ 27 % et l’énergie noire environ 68 % : la plus grande part du contenu de l’Univers n’a jamais été détectée en laboratoire (OpenStax, <em>Astronomy</em> 2e, § 29.5).</p></div>
+        </section>
+
+        <section class="lesson-section" id="histoire-thermique" aria-labelledby="histoire-thermique-title">
+          <p class="section-index">06 / L’HISTOIRE THERMIQUE DE L’UNIVERS</p>
+          <h2 id="histoire-thermique-title">Une horloge qui se refroidit</h2>
+          <p>Pendant l’ère dominée par le rayonnement, la température décroît comme l’inverse du facteur d’échelle : <em>T</em> ∝ 1/<em>a</em>. Le temps écoulé depuis le début de l’expansion varie alors comme l’inverse du carré de la température : une température dix fois plus élevée correspond à un Univers cent fois plus jeune. Cette correspondance permet de dater les grandes étapes (OpenStax, <em>University Physics</em> vol. 3, § 11.7).</p>
+          <p>Les repères s’enchaînent : à une seconde, l’Univers est à environ 10¹⁰ K (<em>k</em><sub>B</sub><em>T</em> ≈ 1 MeV) et les neutrinos se découplent ; vers quatre minutes, la fusion des noyaux légers s’achève (OpenStax, <em>Astronomy</em> 2e, § 29.4) ; vers 380 000 ans, la température atteint 3 000 K et l’Univers devient transparent ; aujourd’hui, le fond diffus est à 2,7255 K.</p>
+          <div class="formula-block"><span class="formula-label">TEMPS ET TEMPÉRATURE (ÈRE DU RAYONNEMENT)</span><math class="mathml-display" display="block" aria-label="T proportionnel à un sur a, et t environ égal à une seconde fois T sur dix puissance dix kelvins, le tout puissance moins deux"><mtable><mtr><mtd><mrow><mi>T</mi><mo>∝</mo><mfrac><mn>1</mn><mi>a</mi></mfrac></mrow></mtd></mtr><mtr><mtd><mrow><mi>t</mi><mo>≈</mo><mn>1</mn><mspace width="0.3em"></mspace><mtext>s</mtext><mo>×</mo><msup><mrow><mo>(</mo><mfrac><mi>T</mi><mrow><msup><mn>10</mn><mn>10</mn></msup><mspace width="0.3em"></mspace><mtext>K</mtext></mrow></mfrac><mo>)</mo></mrow><mrow><mo>−</mo><mn>2</mn></mrow></msup></mrow></mtd></mtr></mtable></math></div>
+          <p><strong>Paramètres et unités :</strong> T : température (K) ; a : facteur d’échelle ; t : temps depuis le début de l’expansion (s). La seconde relation est une estimation d’ordre de grandeur valable pendant l’ère du rayonnement ; elle sert à situer les époques, pas à calculer un âge précis.</p>
+          <div class="worked-result"><strong>EXEMPLE · À 10¹² KELVINS</strong><span class="math">t ≈ 1 × (10¹² / 10¹⁰)⁻² s = 10⁻⁴ s</span><span class="math">soit environ 100 microsecondes : c’est l’époque du plasma quark-gluon (section 11)</span></div>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Quatre repères de l’histoire thermique (OpenStax, Astronomy 2e, § 29.4 ; University Physics vol. 3, § 11.7)</caption>
+              <thead><tr><th scope="col">Temps</th><th scope="col">Température</th><th scope="col">Énergie thermique</th><th scope="col">Événement</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">≈ 1 s</th><td>≈ 10¹⁰ K</td><td>≈ 1 MeV</td><td>découplage des neutrinos</td></tr>
+                <tr><th scope="row">≈ 4 min</th><td>≈ 10⁹ K</td><td>≈ 0,1 MeV</td><td>fin de la nucléosynthèse primordiale</td></tr>
+                <tr><th scope="row">≈ 380 000 ans</th><td>≈ 3 000 K</td><td>≈ 0,3 eV</td><td>recombinaison et émission du fond diffus</td></tr>
+                <tr><th scope="row">≈ 13,8 milliards d’années</th><td>2,7255 K</td><td>≈ 2,3 × 10⁻⁴ eV</td><td>aujourd’hui</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="nucleosynthese" aria-labelledby="nucleosynthese-title">
+          <p class="section-index">07 / LA NUCLÉOSYNTHÈSE PRIMORDIALE</p>
+          <h2 id="nucleosynthese-title">Les premiers noyaux, en quatre minutes</h2>
+          <p>Entre environ une seconde et quatre minutes après le début de l’expansion, la température descend de 10¹⁰ K à environ 10⁹ K : c’est la fenêtre où les réactions nucléaires peuvent fabriquer des noyaux sans être aussitôt détruites par les photons. Le deutérium se forme le premier, puis l’hélium-3, l’hélium-4 et des traces de lithium-7 ; la fusion s’arrête quand la densité et la température deviennent trop faibles (OpenStax, <em>Astronomy</em> 2e, § 29.3 et § 29.4).</p>
+          <p>Le résultat le plus solide est la proportion d’hélium-4 : environ un quart de la masse de la matière ordinaire, une valeur fixée avant la formation des étoiles. Tout dépend du rapport entre neutrons et protons au moment où les réactions se figent : les neutrons libres disparaissent par désintégration bêta (demi-vie d’environ dix minutes), et ceux qui survivent finissent presque tous dans l’hélium-4. Comme les abondances dépendent de la densité de baryons, la nucléosynthèse primordiale fournit une mesure indépendante de Ω<sub>b</sub>, en accord avec celle du fond diffus (Planck Collaboration, 2018 ; PDG, revue <em>Big-Bang Nucleosynthesis</em>).</p>
+          <div class="formula-block"><span class="formula-label">RAPPORT NEUTRONS-PROTONS À L’ÉQUILIBRE</span><math class="mathml-display" display="block" aria-label="n indice n sur n indice p égale exponentielle de moins delta m c carré divisé par k indice B T"><mrow><mfrac><msub><mi>n</mi><mi>n</mi></msub><msub><mi>n</mi><mi>p</mi></msub></mfrac><mo>=</mo><msup><mi>e</mi><mrow><mo>−</mo><mi>Δ</mi><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup><mo>/</mo><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow></msup></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> n<sub>n</sub>/n<sub>p</sub> : rapport du nombre de neutrons au nombre de protons ; Δm = 1,293 MeV/c² : différence de masse entre le neutron et le proton ; k<sub>B</sub>T : énergie thermique. La relation décrit l’équilibre des réactions faibles ; elle cesse d’être valable quand ces réactions se figent (NIST, CODATA ; OpenStax, <em>Astronomy</em> 2e, § 29.3).</p>
+          <div class="worked-result"><strong>EXEMPLE · DU RAPPORT NEUTRONS-PROTONS À L’HÉLIUM</strong><span class="math">pour k<sub>B</sub>T ≈ 0,8 MeV : n<sub>n</sub>/n<sub>p</sub> = e<sup>−1,293/0,8</sup> ≈ 0,20</span><span class="math">après figement et désintégrations, ce rapport tombe vers 1/7</span><span class="math">si tous les neutrons finissent dans ⁴He : Y ≈ 2 × (1/7) / (1 + 1/7) ≈ 0,25, soit 25 % de la masse baryonique</span></div>
+          <div class="callout callout-coral"><strong>Le lithium-7, écart encore ouvert</strong><p>Les abondances observées de deutérium et d’hélium-4 s’accordent bien avec les calculs, mais la quantité de lithium-7 déduite des observations d’étoiles anciennes reste inférieure aux prévisions : c’est le « problème du lithium cosmologique », discuté dans les revues de référence sur la nucléosynthèse primordiale (PDG, revue <em>Big-Bang Nucleosynthesis</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="fond-diffus" aria-labelledby="fond-diffus-title">
+          <p class="section-index">08 / RECOMBINAISON ET FOND DIFFUS</p>
+          <h2 id="fond-diffus-title">Le plus vieux rayonnement observé</h2>
+          <p>Pendant les premières centaines de milliers d’années, l’Univers reste chaud et opaque : les photons sont diffusés en permanence par les électrons libres. Vers 380 000 ans, la température est descendue à environ 3 000 K et la densité des noyaux à un millier par centimètre cube : les électrons se lient alors aux noyaux pour former des atomes stables d’hydrogène et d’hélium. Faute d’électrons libres, la lumière cesse d’être diffusée : matière et rayonnement se découplent et l’Univers devient transparent (OpenStax, <em>Astronomy</em> 2e, § 29.4).</p>
+          <p>Ce rayonnement de découplage nous parvient encore : c’est le <strong>fond diffus cosmologique</strong>. Il suit un spectre de corps noir presque parfait à 2,7255 K, dont le maximum se situe dans les micro-ondes (Fixsen, 2009). Les infimes variations de température d’une région à l’autre — de l’ordre de 10⁻⁵ K — portent l’empreinte des fluctuations primordiales : leur analyse fixe la géométrie de l’Univers (plate) et sa composition (Planck Collaboration, 2018).</p>
+          <div class="formula-block"><span class="formula-label">LOI DE WIEN ET FOND DIFFUS</span><math class="mathml-display" display="block" aria-label="lambda maximum égale b divisé par T"><mrow><msub><mi>λ</mi><mtext>max</mtext></msub><mo>=</mo><mfrac><mi>b</mi><mi>T</mi></mfrac></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> λ<sub>max</sub> : longueur d’onde du maximum d’émission (m) ; b = 2,898 × 10⁻³ m·K : constante de Wien ; T : température du corps noir (K). Le fond diffus étant un corps noir, sa température se déduit directement de son spectre (OpenStax, <em>University Physics</em> vol. 3, § 6.1).</p>
+          <div class="worked-result"><strong>EXEMPLE · OÙ SE SITUE LE MAXIMUM DU FOND DIFFUS</strong><span class="math">λ<sub>max</sub> = 2,898 × 10⁻³ / 2,7255 ≈ 1,06 × 10⁻³ m</span><span class="math">soit environ 1,06 mm : domaine des micro-ondes</span><span class="math">au moment de l’émission (3 000 K), le même rayonnement culminait à ≈ 0,97 µm, dans le proche infrarouge</span></div>
+          <div class="callout"><strong>Le corps noir le plus parfait connu</strong><p>Les mesures du satellite COBE, et notamment de l’instrument FIRAS, montrent que le spectre du fond diffus suit un corps noir avec des écarts inférieurs à 10⁻⁴ : aucune autre source astronomique n’approche cette perfection, ce qui confirme l’équilibre thermique de l’Univers primordial (Fixsen, 2009 ; OpenStax, <em>Astronomy</em> 2e, § 29.4).</p></div>
+        </section>
+
+        <section class="lesson-section" id="matiere-noire" aria-labelledby="matiere-noire-title">
+          <p class="section-index">09 / LA MATIÈRE NOIRE</p>
+          <h2 id="matiere-noire-title">Une masse qui se voit par ses effets</h2>
+          <p>Les vitesses de rotation des galaxies spirales restent élevées jusqu’à leur bord, alors que la lumière stellaire y devient rare : la masse déduite de la dynamique croît avec le rayon bien au-delà de la matière visible. Le même déséquilibre apparaît dans les amas de galaxies, dans les déformations d’images par lentille gravitationnelle, dans les fluctuations du fond diffus et dans la formation des grandes structures : la matière noire aide les galaxies à se former rapidement dans l’Univers jeune (OpenStax, <em>Astronomy</em> 2e, § 29.5).</p>
+          <p>Cette composante représente environ 27 % de la densité critique, contre environ 5 % pour la matière ordinaire. Comme la nucléosynthèse primordiale fixe la quantité de baryons, l’essentiel de la matière noire ne peut pas être constitué de protons, de neutrons ou de gaz non lumineux : elle est <strong>non baryonique</strong>. Les candidats proposés — particules massives interagissant faiblement, axions, neutrinos stériles — font l’objet de recherches actives, mais aucune n’a été détectée en laboratoire (OpenStax, <em>Astronomy</em> 2e, § 29.5 ; PDG, revue <em>Big-Bang Cosmology</em>).</p>
+          <div class="formula-block"><span class="formula-label">VITESSE ORBITALE ET MASSE ENFERMÉE</span><math class="mathml-display" display="block" aria-label="v égale racine de G M de r divisé par r"><mrow><mi>v</mi><mo>=</mo><msqrt><mfrac><mrow><mi>G</mi><mspace width="0.3em"></mspace><mi>M</mi><mo>(</mo><mi>r</mi><mo>)</mo></mrow><mi>r</mi></mfrac></msqrt></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> v : vitesse orbitale circulaire (m·s⁻¹) ; G : constante de gravitation ; M(r) : masse enfermée dans le rayon r (kg) ; r : distance au centre (m). Une courbe de rotation plate (v constante) implique M(r) ∝ r : la masse continue d’augmenter là où l’on ne voit presque plus d’étoiles.</p>
+          <div class="worked-result"><strong>EXEMPLE · LA MASSE INTÉRIEURE À L’ORBITE DU SOLEIL</strong><span class="math">v ≈ 220 km·s⁻¹ et r ≈ 8 kpc = 8 × 3,086 × 10¹⁹ m ≈ 2,47 × 10²⁰ m</span><span class="math">M = v²r/G = (2,2 × 10⁵)² × 2,47 × 10²⁰ / 6,674 × 10⁻¹¹</span><span class="math">M ≈ 1,8 × 10⁴¹ kg ≈ 9 × 10¹⁰ masses solaires</span></div>
+          <div class="callout"><strong>Pourquoi pas des « objets sombres ordinaires » ?</strong><p>Naines brunes, trous noirs stellaires ou gaz froid ne suffisent pas : leur masse totale serait comptée dans les 5 % de baryons fixés par la nucléosynthèse primordiale, alors que la dynamique réclame environ 27 % de la densité critique. C’est cet écart, et non une préférence théorique, qui impose une composante non baryonique (OpenStax, <em>Astronomy</em> 2e, § 29.5 ; PDG, revue <em>Big-Bang Cosmology</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="energie-noire" aria-labelledby="energie-noire-title">
+          <p class="section-index">10 / L’ÉNERGIE NOIRE</p>
+          <h2 id="energie-noire-title">Une expansion qui accélère</h2>
+          <p>À la fin des années 1990, l’étude des supernovas de type Ia à grand décalage vers le rouge a montré que l’expansion de l’Univers ne ralentit pas : elle <strong>accélère</strong>. Ce résultat a conduit à réintroduire la constante cosmologique Λ, terme de répulsion introduit puis abandonné par Einstein, comme description la plus simple d’une composante d’énergie qui s’oppose à la gravitation (OpenStax, <em>Astronomy</em> 2e, § 29.1).</p>
+          <p>Cette composante, appelée <strong>énergie noire</strong>, représenterait environ 68 % de la densité critique. Son équation d’état est proche de <em>p</em> = −ρ<em>c</em>² (paramètre <em>w</em> ≈ −1), ce qui la distingue de la matière, dont la pression est négligeable. Comme la densité de matière diminue avec l’expansion alors que la densité associée à Λ reste constante, l’énergie noire finit par dominer : le passage s’est produit lorsque l’Univers avait environ un tiers de son âge actuel (Planck Collaboration, 2018).</p>
+          <div class="formula-block"><span class="formula-label">ÉQUATION D’ÉTAT ET ÉGALITÉ MATIÈRE-ÉNERGIE NOIRE</span><math class="mathml-display" display="block" aria-label="p égale w rho c carré, et oméga indice m fois un plus z au cube égale oméga lambda"><mtable><mtr><mtd><mrow><mi>p</mi><mo>=</mo><mi>w</mi><mspace width="0.3em"></mspace><mi>ρ</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></mtd></mtr><mtr><mtd><mrow><msub><mi>Ω</mi><mi>m</mi></msub><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>z</mi><mo>)</mo></mrow><mn>3</mn></msup><mo>=</mo><msub><mi>Ω</mi><mi>Λ</mi></msub></mrow></mtd></mtr></mtable></math></div>
+          <p><strong>Paramètres et unités :</strong> p : pression (Pa) ; ρ : densité d’énergie (kg·m⁻³) ; w : paramètre d’équation d’état (w = 0 pour la matière, w = −1 pour une constante cosmologique) ; Ω<sub>m</sub> et Ω<sub>Λ</sub> : paramètres de densité de la matière et de l’énergie noire ; z : décalage vers le rouge. La seconde relation repère l’époque où les deux composantes s’équilibrent.</p>
+          <div class="worked-result"><strong>EXEMPLE · QUAND L’ÉNERGIE NOIRE PREND LE DESSUS</strong><span class="math">Ω<sub>m</sub> ≈ 0,315 et Ω<sub>Λ</sub> ≈ 0,685</span><span class="math">(1 + z)³ = 0,685 / 0,315 ≈ 2,17</span><span class="math">1 + z ≈ 1,30, soit z ≈ 0,30 : l’expansion est passée du ralentissement à l’accélération bien après la formation des premières galaxies</span></div>
+          <div class="callout"><strong>Trois observations, une même conclusion</strong><p>Le fond diffus cosmologique, les supernovas de type Ia et la distribution des galaxies à grande échelle donnent des valeurs cohérentes pour Ω<sub>m</sub> et Ω<sub>Λ</sub>. C’est cet accord entre sondes indépendantes qui donne sa solidité au modèle de concordance — même si la nature de l’énergie noire reste inconnue (OpenStax, <em>Astronomy</em> 2e, § 29.5 ; Planck Collaboration, 2018).</p></div>
+        </section>
+
+        <section class="lesson-section" id="plasma-quark-gluon" aria-labelledby="plasma-quark-gluon-title">
+          <p class="section-index">11 / LE PLASMA QUARK-GLUON</p>
+          <h2 id="plasma-quark-gluon-title">Quand les hadrons n’existent pas encore</h2>
+          <p>Aux températures les plus élevées, la force forte ne parvient plus à confiner les quarks dans des hadrons : la matière prend la forme d’un <strong>plasma de quarks et de gluons</strong>, où ces particules se déplacent librement sur des distances grandes devant la taille d’un proton. Cet état a existé quelques microsecondes après le début de l’expansion ; le CERN le reproduit aujourd’hui en faisant entrer en collision des noyaux de plomb au Grand collisionneur de hadrons (CERN, <em>Heavy ions and quark-gluon plasma</em>).</p>
+          <p>En refroidissant sous une énergie de l’ordre de 200 MeV, le plasma se transforme : les quarks et les gluons se lient à nouveau pour former des protons, des neutrons et des mésons — c’est l’<strong>hadronisation</strong>. Cette étape ne laisse pas de fossile direct, mais elle précède immédiatement la nucléosynthèse primordiale et fixe le décor dans lequel le rapport neutrons-protons va se figer (OpenStax, <em>University Physics</em> vol. 3, § 11.7 ; CERN, <em>Heavy ions and quark-gluon plasma</em>).</p>
+          <div class="formula-block"><span class="formula-label">ÉCHELLE D’ÉNERGIE DU PLASMA QUARK-GLUON</span><math class="mathml-display" display="block" aria-label="k indice B T environ égal à deux cents mégaélectronvolts, soit environ deux virgule trois fois dix puissance douze kelvins"><mrow><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi><mo>≈</mo><mn>200</mn><mspace width="0.3em"></mspace><mtext>MeV</mtext><mspace width="1em"></mspace><mo>⇒</mo><mspace width="0.6em"></mspace><mi>T</mi><mo>≈</mo><mn>2.3</mn><mo>×</mo><msup><mn>10</mn><mn>12</mn></msup><mspace width="0.3em"></mspace><mtext>K</mtext></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> k<sub>B</sub>T : énergie thermique (eV) ; T : température (K). L’énergie de 200 MeV correspond à environ un cinquième de l’énergie de repos du proton : les quarks ne sont plus liés en hadrons stables (OpenStax, <em>University Physics</em> vol. 3, § 11.3 ; NIST, CODATA).</p>
+          <div class="worked-result"><strong>EXEMPLE · DATER LE PLASMA QUARK-GLUON</strong><span class="math">T = 200 MeV / 8,617 × 10⁻⁵ eV·K⁻¹ ≈ 2,3 × 10¹² K</span><span class="math">t ≈ 1 s × (2,3 × 10¹² / 10¹⁰)⁻² ≈ 1,9 × 10⁻⁵ s</span><span class="math">soit une vingtaine de microsecondes après le début de l’expansion</span></div>
+          <div class="callout"><strong>Un état de la matière étudié au laboratoire</strong><p>Les expériences du programme « ions lourds » du LHC analysent les milliers de particules produites dans chaque collision pour caractériser ce plasma : température, densité, temps de vie. C’est un cas rare où la cosmologie et la physique des hautes énergies se rejoignent directement dans une expérience de laboratoire (CERN, <em>Heavy ions and quark-gluon plasma</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="neutrinos-cosmologiques" aria-labelledby="neutrinos-cosmologiques-title">
+          <p class="section-index">12 / LES NEUTRINOS COSMOLOGIQUES</p>
+          <h2 id="neutrinos-cosmologiques-title">Un fond invisible, témoin d’une seconde après le Big Bang</h2>
+          <p>Quand la température descend vers 10¹⁰ K (<em>k</em><sub>B</sub><em>T</em> ≈ 1 MeV, environ une seconde après le début de l’expansion), les neutrinos cessent d’interagir avec la matière : ils se découplent, comme les photons le feront 380 000 ans plus tard. Depuis, ils se propagent librement : ce <strong>fond de neutrinos cosmologiques</strong> devrait remplir l’Univers entier (PDG, revue <em>Big-Bang Cosmology</em>).</p>
+          <p>Son spectre est celui d’un corps noir, mais à une température plus basse que celle des photons : après l’annihilation des paires électron-positron, qui a réchauffé le rayonnement électromagnétique sans toucher les neutrinos, le rapport des températures vaut (4/11)<sup>1/3</sup>. Les neutrinos contribuent donc au contenu de l’Univers en rayonnement, et leurs masses — aujourd’hui bornées à une somme inférieure à 0,12 eV — influencent l’expansion pendant la nucléosynthèse primordiale et la croissance des structures (Planck Collaboration, 2018).</p>
+          <div class="formula-block"><span class="formula-label">TEMPÉRATURE DU FOND DE NEUTRINOS</span><math class="mathml-display" display="block" aria-label="T indice neutrino égale quatre onzièmes puissance un tiers fois T indice gamma"><mrow><msub><mi>T</mi><mi>ν</mi></msub><mo>=</mo><msup><mrow><mo>(</mo><mfrac><mn>4</mn><mn>11</mn></mfrac><mo>)</mo></mrow><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><msub><mi>T</mi><mi>γ</mi></msub></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> T<sub>ν</sub> : température du fond de neutrinos (K) ; T<sub>γ</sub> = 2,7255 K : température du fond diffus de photons ; le facteur (4/11)<sup>1/3</sup> ≈ 0,714 vient du réchauffement du rayonnement par l’annihilation des paires électron-positron (PDG, revue <em>Big-Bang Cosmology</em>).</p>
+          <div class="worked-result"><strong>EXEMPLE · TEMPÉTATURE ET DENSITÉ DU FOND DE NEUTRINOS</strong><span class="math">T<sub>ν</sub> = 0,714 × 2,7255 K ≈ 1,95 K</span><span class="math">soit environ 112 neutrinos et antineutrinos par centimètre cube et par famille</span><span class="math">trois familles : environ 336 particules par centimètre cube, traversant la matière sans interagir</span></div>
+          <div class="callout"><strong>Une prédiction pas encore observée</strong><p>Le fond de neutrinos cosmologiques est une conséquence directe du modèle de l’Univers chaud, au même titre que le fond diffus : sa température et sa densité se déduisent des mêmes calculs. Sa détection directe reste un objectif expérimental, car ces neutrinos sont aujourd’hui très peu énergétiques et interagissent extrêmement rarement (PDG, revue <em>Big-Bang Cosmology</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="baryogenese" aria-labelledby="baryogenese-title">
+          <p class="section-index">13 / LA BARYOGENÈSE</p>
+          <h2 id="baryogenese-title">Pourquoi reste-t-il de la matière ?</h2>
+          <p>L’Univers observable contient des protons, des neutrons et des électrons, mais pratiquement pas d’antiprotons ni de positrons en proportion comparable. Si matière et antimatière avaient été créées en quantités égales, les annihilations auraient laissé un rayonnement sans matière. Il faut donc une asymétrie initiale : le rapport entre le nombre de baryons et le nombre de photons vaut environ 6 × 10⁻¹⁰, valeur déduite à la fois de la nucléosynthèse primordiale et des fluctuations du fond diffus (PDG, revue <em>Big-Bang Cosmology</em>).</p>
+          <p>Trois conditions, formulées par Andreï Sakharov en 1967, sont nécessaires pour engendrer une telle asymétrie à partir d’un Univers symétrique : la violation du nombre baryonique, la violation des symétries <em>C</em> et <em>CP</em>, et une sortie de l’équilibre thermique. La violation de <em>CP</em> est observée dans le secteur des quarks, mais son amplitude mesurée est très insuffisante pour produire l’asymétrie constatée : l’origine de celle-ci reste une question ouverte, qui motive la recherche de physique au-delà du modèle standard (PDG, revue <em>Big-Bang Cosmology</em>).</p>
+          <div class="formula-block"><span class="formula-label">RAPPORT BARYONS-PHOTONS</span><math class="mathml-display" display="block" aria-label="êta égale n indice b divisé par n indice gamma, environ six fois dix puissance moins dix"><mrow><mi>η</mi><mo>=</mo><mfrac><msub><mi>n</mi><mi>b</mi></msub><msub><mi>n</mi><mi>γ</mi></msub></mfrac><mo>≈</mo><mn>6</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>10</mn></mrow></msup></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> η : rapport du nombre de baryons au nombre de photons (sans dimension) ; n<sub>b</sub> : densité de baryons ; n<sub>γ</sub> : densité de photons. Le rapport se conserve au cours de l’expansion, car baryons et photons se diluent de la même façon. La valeur indiquée est celle qui découle des abondances primordiales et du fond diffus (Planck Collaboration, 2018 ; PDG, revue <em>Big-Bang Nucleosynthesis</em>).</p>
+          <div class="worked-result"><strong>EXEMPLE · UN BARYON POUR COMBIEN DE PHOTONS ?</strong><span class="math">η ≈ 6 × 10⁻¹⁰</span><span class="math">1/η ≈ 1,7 × 10⁹</span><span class="math">il reste environ un baryon pour 1,7 milliard de photons : la matière est le résidu d’une annihilation presque complète</span></div>
+          <div class="callout callout-coral"><strong>Un fait mesuré, une origine inconnue</strong><p>L’asymétrie n’est pas une hypothèse : elle se lit dans les abondances des éléments légers et dans le fond diffus. En revanche, le mécanisme qui l’a produite — la baryogenèse — n’est pas établi. Le modèle standard de la physique des particules ne contient pas de source suffisante de violation de <em>CP</em> à cette échelle (PDG, revue <em>Big-Bang Cosmology</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="inflation" aria-labelledby="inflation-title">
+          <p class="section-index">14 / L’INFLATION</p>
+          <h2 id="inflation-title">Deux problèmes que l’expansion classique n’explique pas</h2>
+          <p>Le fond diffus présente la même température moyenne dans des régions qui n’ont jamais pu communiquer : séparées par plus d’un horizon causal, elles n’ont pas eu le temps d’échanger de l’énergie. C’est le <strong>problème de l’horizon</strong>. Le second problème est celui de la <strong>platitude</strong> : toute déviation de Ω par rapport à 1 s’accroît avec le temps, si bien qu’une valeur si proche de 1 aujourd’hui exige une valeur initiale extraordinairement ajustée (OpenStax, <em>Astronomy</em> 2e, § 29.6).</p>
+          <p>L’<strong>inflation</strong> propose qu’une phase d’expansion accélérée, dans les tout premiers instants, ait étiré une petite région causalement connectée jusqu’à dépasser la taille de l’Univers observable, tout en aplatissant sa géométrie. Ce scénario conduit à des prédictions vérifiables : un Univers plat, des fluctuations primordiales presque invariantes d’échelle et l’absence de monopôles magnétiques. Les anisotropies du fond diffus sont compatibles avec ces prédictions — l’indice spectral mesuré vaut environ 0,965 — mais la nature du champ responsable de l’inflation reste inconnue (OpenStax, <em>Astronomy</em> 2e, § 29.6 ; Planck Collaboration, 2018).</p>
+          <div class="formula-block"><span class="formula-label">EXPANSION ACCÉLÉRÉE ET ÉCART À LA PLATITUDE</span><math class="mathml-display" display="block" aria-label="a de t proportionnel à exponentielle de H t, et valeur absolue de oméga moins un proportionnel à t puissance deux tiers pendant l'ère de matière"><mtable><mtr><mtd><mrow><mi>a</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>∝</mo><msup><mi>e</mi><mrow><mi>H</mi><mi>t</mi></mrow></msup></mrow></mtd></mtr><mtr><mtd><mrow><mo>|</mo><mi>Ω</mi><mo>−</mo><mn>1</mn><mo>|</mo><mo>∝</mo><msup><mi>t</mi><mrow><mn>2</mn><mo>/</mo><mn>3</mn></mrow></msup></mrow></mtd></mtr></mtable></math></div>
+          <p><strong>Paramètres et unités :</strong> a(t) : facteur d’échelle ; H : taux d’expansion pendant l’inflation (s⁻¹) ; Ω : paramètre de densité total ; t : temps (s). La seconde relation vaut pendant l’ère dominée par la matière : plus on remonte le temps, plus l’Univers devait être proche de la platitude.</p>
+          <div class="worked-result"><strong>EXEMPLE · L’AJUSTEMENT INITIAL DE LA PLATITUDE</strong><span class="math">aujourd’hui : |Ω − 1| ≲ 0,005 (Planck Collaboration, 2018)</span><span class="math">pendant l’ère de matière, |Ω − 1| ∝ t<sup>2/3</sup> : facteur (4,4 × 10¹⁷ / 1)<sup>2/3</sup> ≈ 5,8 × 10¹¹</span><span class="math">à t = 1 s, il fallait donc |Ω − 1| ≈ 0,005 / 5,8 × 10¹¹ ≈ 10⁻¹⁵</span></div>
+          <div class="callout"><strong>Ce que l’inflation explique — et ce qu’elle laisse ouvert</strong><p>L’inflation rend naturel un Univers plat et homogène à grande échelle, et elle fournit le mécanisme des fluctuations qui ont engendré les galaxies. Elle ne dit pas quel champ en est responsable ni comment le raccorder de façon complète à la gravitation quantique : c’est pourquoi elle reste un cadre théorique testé indirectement, et non un modèle achevé (OpenStax, <em>Astronomy</em> 2e, § 29.6).</p></div>
+        </section>
+
+        <section class="lesson-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">15 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">Exercices corrigés</h2>
+          <p>Huit exercices couvrant tout le cours, de l’échelle des températures à la baryogenèse. Essaie de répondre avant d’ouvrir la correction : le but est de manipuler les relations, pas de les relire.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>À quelle énergie thermique correspond une température de 10¹⁰ K ? À quelle époque de l’Univers cette valeur renvoie-t-elle ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>k<sub>B</sub>T = 8,617 × 10⁻⁵ eV·K⁻¹ × 10¹⁰ K ≈ 8,6 × 10⁵ eV ≈ 0,86 MeV. D’après la section 06, cette température correspond à environ une seconde après le début de l’expansion : c’est l’époque du découplage des neutrinos.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Le fond diffus cosmologique a été émis à environ 3 000 K. Quel est son décalage vers le rouge ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>1 + z = T<sub>émis</sub>/T₀ = 3 000 / 2,7255 ≈ 1 101, donc z ≈ 1 100. L’Univers était alors environ 1 100 fois plus « serré » qu’aujourd’hui (section 04).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Calculer la densité critique de l’Univers pour H₀ = 67,4 km·s⁻¹·Mpc⁻¹, puis l’exprimer en protons par mètre cube.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>H₀ ≈ 2,18 × 10⁻¹⁸ s⁻¹. ρ<sub>c</sub> = 3H₀²/(8πG) = 3 × (2,18 × 10⁻¹⁸)² / (8π × 6,674 × 10⁻¹¹) ≈ 8,5 × 10⁻²⁷ kg·m⁻³. En divisant par la masse du proton (1,673 × 10⁻²⁷ kg), on obtient environ 5 protons par mètre cube (section 05).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Quel est le rapport neutrons-protons à l’équilibre lorsque k<sub>B</sub>T = 1 MeV ? Que devient-il après le figement des réactions ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>n<sub>n</sub>/n<sub>p</sub> = e<sup>−1,293/1</sup> ≈ 0,27, soit environ un neutron pour quatre protons. Les réactions faibles se figent ensuite et les neutrons libres se désintègrent (demi-vie ≈ 10 min) : le rapport descend vers 1/7 au moment où la nucléosynthèse commence (section 07).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">E</span><span>Avec Ω<sub>m</sub> ≈ 0,315 et Ω<sub>Λ</sub> ≈ 0,685, à quel décalage vers le rouge la matière et l’énergie noire s’équilibrent-elles ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Ω<sub>m</sub>(1 + z)³ = Ω<sub>Λ</sub> donne (1 + z)³ = 0,685/0,315 ≈ 2,17, donc 1 + z ≈ 1,30 et z ≈ 0,30. L’expansion est passée du ralentissement à l’accélération bien après la formation des premières galaxies (section 10).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">F</span><span>Quelle est la température attendue du fond de neutrinos cosmologiques, sachant que celle des photons vaut 2,7255 K ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>T<sub>ν</sub> = (4/11)<sup>1/3</sup> × T<sub>γ</sub> = 0,714 × 2,7255 K ≈ 1,95 K. Cette différence vient du réchauffement du rayonnement électromagnétique par l’annihilation des paires électron-positron, après le découplage des neutrinos (section 12).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">G</span><span>Le rapport baryons-photons vaut η ≈ 6 × 10⁻¹⁰. Combien de photons correspondent à un baryon ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>1/η ≈ 1,7 × 10⁹ : environ 1,7 milliard de photons par baryon. La matière observable est donc un résidu très minoritaire de l’annihilation matière-antimatière (section 13).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">H</span><span>À quelle température l’énergie thermique atteint-elle l’énergie de repos du proton (938,3 MeV) ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>T = mc²/k<sub>B</sub> = 9,383 × 10⁸ eV / 8,617 × 10⁻⁵ eV·K⁻¹ ≈ 1,09 × 10¹³ K. Au-dessus de cette température, les paires proton-antiproton et neutron-antineutron se créent en abondance (sections 03 et 06).</p></div>
+          </details>
+        </section>
+
+        <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">16 / SOURCES</p>
+          <h2 id="sources-title">Sources vérifiées</h2>
+          <p>Chaque affirmation scientifique de ce cours renvoie à l’une des sources ci-dessous. OpenStax fait référence lorsque le sujet y figure ; les valeurs numériques précises proviennent de la collaboration Planck, du Particle Data Group, du NIST et du CERN.</p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/11-introduction" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, ch. 11 <em>Particle Physics and Cosmology</em> (§ 11.1 à § 11.7) : modèle standard des particules, quarks et confinement, bosons de jauge et boson de Higgs, lois de conservation, Grand collisionneur de hadrons (LHC) et détecteur ATLAS installé à plus de 150 m sous terre, physique du Big Bang et évolution de l’Univers primordial</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/29-1-the-age-of-the-universe" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 29.1 <em>The Age of the Universe</em> : âge de 13,8 milliards d’années déduit du taux d’expansion, constante cosmologique introduite puis abandonnée par Einstein, accélération de l’expansion</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/29-3-the-beginning-of-the-universe" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 29.3 <em>The Beginning of the Universe</em> : modèle de « l’atome primitif » de Georges Lemaître, travaux de Gamow et Alpher (1948), formation des premiers noyaux dans les premières minutes, premières galaxies quelques centaines de millions d’années après le Big Bang</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/29-4-the-cosmic-microwave-background" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 29.4 <em>The Cosmic Microwave Background</em> : fusion de l’hélium et du lithium achevée vers quatre minutes, découplage environ 380 000 ans après le Big Bang, température de 3 000 K et densité de 1 000 noyaux par centimètre cube, Univers devenu transparent</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/29-5-what-is-the-universe-really-made-of" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 29.5 <em>What Is the Universe Really Made Of?</em> : moins de 1 % de matière lumineuse, 4 % d’hydrogène et d’hélium intergalactiques, 27 % de matière noire, 68 % d’énergie noire, modèle de concordance, candidats de matière noire non baryonique</a></p>
+          <p><a href="https://openstax.org/books/astronomy-2e/pages/29-6-the-inflationary-universe" target="_blank" rel="noreferrer">OpenStax, <em>Astronomy</em> 2e, § 29.6 <em>The Inflationary Universe</em> : problème de la densité critique et problème de l’horizon, uniformité du fond diffus à environ une partie sur 100 000, expansion accélérée de l’Univers primordial, les quatre interactions fondamentales</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 6.1 <em>Blackbody Radiation</em> : loi de Wien, constante b = 2,898 × 10⁻³ m·K, spectre du corps noir</a></p>
+          <p><a href="https://physics.nist.gov/cuu/Constants/" target="_blank" rel="noreferrer">NIST, <em>CODATA Recommended Values of the Fundamental Physical Constants</em> : h, c, k<sub>B</sub>, e, G, masses du proton et de l’électron, conversions entre électronvolts, joules et kelvins</a></p>
+          <p><a href="https://arxiv.org/abs/1807.06209" target="_blank" rel="noreferrer">Planck Collaboration (2018), <em>Planck 2018 results. VI. Cosmological parameters</em> : Ω<sub>m</sub> = 0,315, Ω<sub>Λ</sub> = 0,685, H₀ = 67,4 ± 0,5 km·s⁻¹·Mpc⁻¹, Ω<sub>b</sub>h² = 0,0224, âge de 13,8 milliards d’années, |Ω − 1| &lt; 0,005, somme des masses des neutrinos &lt; 0,12 eV, indice spectral 0,965, écart avec les mesures locales du taux d’expansion</a></p>
+          <p><a href="https://pdg.lbl.gov/2024/reviews/rpp2024-rev-bbang-cosmology.pdf" target="_blank" rel="noreferrer">Particle Data Group, revue <em>Big-Bang Cosmology</em> : rapport baryons-photons de l’ordre de 6 × 10⁻¹⁰, conditions de Sakharov (violation du nombre baryonique, violation de <em>CP</em>, sortie de l’équilibre thermique), insuffisance de la violation de <em>CP</em> mesurée, matière noire non baryonique, fond de neutrinos cosmologiques et sa température (4/11)<sup>1/3</sup></a></p>
+          <p><a href="https://pdg.lbl.gov/2024/reviews/rpp2024-rev-bbang-nucleosynthesis.pdf" target="_blank" rel="noreferrer">Particle Data Group, revue <em>Big-Bang Nucleosynthesis</em> : abondances primordiales du deutérium, de l’hélium-4 et du lithium-7, contrainte sur la densité de baryons, problème du lithium cosmologique</a></p>
+          <p><a href="https://home.cern/science/physics/heavy-ions-and-quark-gluon-plasma/" target="_blank" rel="noreferrer">CERN, <em>Heavy ions and quark-gluon plasma</em> : plasma de quarks et de gluons, collisions d’ions lourds (noyaux de plomb) au LHC, état de la matière présent quelques microsecondes après le Big Bang</a></p>
+          <p><a href="https://iopscience.iop.org/article/10.1088/0004-637X/707/2/916" target="_blank" rel="noreferrer">D. J. Fixsen (2009), <em>The Temperature of the Cosmic Microwave Background</em> : T = 2,7255 ± 0,0006 K, spectre de corps noir mesuré par COBE/FIRAS avec des écarts inférieurs à 10⁻⁴</a></p>
+          <p>Repères cités, tels que les rapportent ces sources : Lemaître (1927-1931), Gamow, Alpher et Bethe (1948), Sakharov (1967), découverte du rayonnement de fond (1964-1965), résultats de COBE (1992), analyse Planck 2018, collisions d’ions lourds au LHC.</p>
+        </section>
+
+        <footer class="course-footer"><span>COSMOLOGIE DES PARTICULES</span><a href="index.html">Retour aux branches ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

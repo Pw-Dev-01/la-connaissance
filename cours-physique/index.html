@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f4f5ed">
-    <meta name="description" content="Cours de physique couvrant la mécanique, la thermodynamique, l’électromagnétisme, les ondes, l’optique, les fluides, le quantique, le nucléaire, la relativité, les matériaux, l’astrophysique et les méthodes expérimentales, avec deux cours approfondis : physique quantique et atomique (vingt sections) et astrophysique des hautes énergies (quinze sections), équations en MathML et sources vérifiées.">
+    <meta name="description" content="Cours de physique couvrant la mécanique, la thermodynamique, l’électromagnétisme, les ondes, l’optique, les fluides, le quantique, le nucléaire, la relativité, les matériaux, l’astrophysique et les méthodes expérimentales, avec trois cours approfondis : physique quantique et atomique (vingt sections), cosmologie des particules (seize sections) et astrophysique des hautes énergies (quinze sections), équations en MathML et sources vérifiées.">
     <title>Programmes · Cours de physique</title>
     <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Le catalogue compte treize branches : la barre latérale devient
+         défilable quand la hauteur de l'écran ne suffit plus à les afficher,
+         sinon les dernières branches restent hors d'atteinte. Sous 700 px, la
+         mise en page partagée la transforme déjà en bandeau horizontal. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+    </style>
     <script src="physique-data.js" defer></script>
     <script src="catalogue.js" defer></script>
   </head>
@@ -28,7 +40,7 @@
         <header class="course-heading catalogue-heading">
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BIBLIOTHÈQUE · SCIENCES PHYSIQUES</p>
           <h1>Comprendre<br><span>le monde physique</span></h1>
-          <p class="course-intro">La physique relie les observations à des modèles : mouvement, chaleur, lumière, matière et Univers. Chaque chapitre présente les notions, une relation fondamentale, un exemple calculé et un exercice corrigé ; deux cours approfondis prolongent le catalogue — physique quantique et atomique (vingt sections, du corps noir au laser) et astrophysique des hautes énergies (quinze sections, des rayons X aux sursauts gamma) — avec les équations en MathML.</p>
+          <p class="course-intro">La physique relie les observations à des modèles : mouvement, chaleur, lumière, matière et Univers. Chaque chapitre présente les notions, une relation fondamentale, un exemple calculé et un exercice corrigé ; trois cours approfondis prolongent le catalogue — physique quantique et atomique (vingt sections, du corps noir au laser), cosmologie des particules (seize sections, des particules à l’Univers primordial) et astrophysique des hautes énergies (quinze sections, des rayons X aux sursauts gamma) — avec les équations en MathML.</p>
           <div class="course-meta"><span id="catalogue-count">13 BRANCHES · 36 CHAPITRES · 2 COURS APPROFONDIS · 35 SECTIONS</span><span>BASES → APPROFONDISSEMENT</span></div>
         </header>
         <div id="programme-sections"></div>

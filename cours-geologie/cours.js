@@ -105,7 +105,11 @@ if (!branch || !chapter) {
   document.querySelector('#lesson-eyebrow').textContent = `${branch.title.toLocaleUpperCase('fr-FR')} · ${chapter.field}`;
   document.querySelector('#lesson-field').textContent = chapter.field;
   document.querySelector('#lesson-level').textContent = 'BASES → APPROFONDISSEMENT';
-  document.querySelector('#lesson-level-label').textContent = branch.title.toLocaleUpperCase('fr-FR');
+  // L'étiquette de domaine, au-dessus de la liste des chapitres, renvoie à la
+  // section de cette branche dans le catalogue de géologie.
+  const levelLabel = document.querySelector('#lesson-level-label');
+  levelLabel.textContent = branch.title.toLocaleUpperCase('fr-FR');
+  levelLabel.href = `index.html#${branch.id}`;
   document.querySelector('#lesson-footer').textContent = `${branch.title.toLocaleUpperCase('fr-FR')} · ${chapter.field.toLocaleUpperCase('fr-FR')}`;
 
   branch.chapters.forEach((sibling) => {

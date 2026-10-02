@@ -127,6 +127,22 @@ body {
   margin: 0 0 17px;
 }
 
+/* Étiquette de domaine : le libellé placé au-dessus de la liste des chapitres
+   renvoie à la section de ce domaine dans le catalogue de la discipline. */
+.sidebar-label a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 140ms ease;
+}
+
+.sidebar-label a:hover,
+.sidebar-label a:focus-visible {
+  color: #ad482f;
+  text-decoration: underline;
+  text-decoration-color: var(--coral);
+  text-underline-offset: 4px;
+}
+
 .catalogue-levels {
   display: grid;
   gap: 3px;

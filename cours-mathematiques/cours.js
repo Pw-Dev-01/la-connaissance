@@ -108,7 +108,11 @@ if (notFound) {
   document.querySelector('#lesson-prerequisite').textContent = programme.id.includes('mpsi') || programme.id.includes('mp') || programme.id.includes('pcsi') || programme.id === 'pc' || programme.id === 'psi'
     ? `Rappelle les définitions du lycée liées à « ${chapter.title} », puis précise les hypothèses des résultats employés.`
     : `Avant les exercices sur « ${chapter.title} », vérifie les définitions, les notations et les calculs de base associés au chapitre.`;
-  document.querySelector('#lesson-level-label').textContent = programme.id.toLocaleUpperCase('fr-FR');
+  // L'étiquette de domaine, au-dessus de la liste des chapitres, renvoie à la
+  // section de ce programme dans le catalogue de mathématiques.
+  const levelLabel = document.querySelector('#lesson-level-label');
+  levelLabel.textContent = programme.id.toLocaleUpperCase('fr-FR');
+  levelLabel.href = `programmes.html#${programme.id}`;
   document.querySelector('#lesson-footer').textContent = `${programme.title.toLocaleUpperCase('fr-FR')} · ${chapter.field || 'MATHÉMATIQUES'}`;
   const sourceLink = document.querySelector('#lesson-source');
   if (programme.source) {

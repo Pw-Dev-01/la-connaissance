@@ -107,6 +107,33 @@ window.courseCatalog = [
       { id: 'gravitation-orbites', title: 'Gravitation et mécanique orbitale', field: 'Astrophysique · bases', summary: 'Force gravitationnelle, orbites circulaires et lois de Kepler.', lesson: { sections: ['La gravitation est une interaction attractive entre deux masses. Pour un satellite en orbite circulaire, la force gravitationnelle fournit l’accélération centripète.', 'Les lois de Kepler décrivent les orbites planétaires ; pour des orbites autour du même astre, le carré de la période est proportionnel au cube du demi-grand axe.'], formula: { label: 'GRAVITATION ET TROISIÈME LOI DE KEPLER', text: 'F = GMm/r²  |  T²/a³ = constante' }, example: { statement: 'Un satellite orbite à une distance r du centre. Comment varie sa vitesse circulaire si le rayon orbital est multiplié par 4 ?', calculation: 'v = √(GM/r). Remplacer r par 4r divise la vitesse par √4.', answer: 'La vitesse est divisée par 2.' }, exercise: { question: 'Quelle force maintient une planète sur son orbite autour du Soleil ?', answer: 'La force gravitationnelle exercée par le Soleil.' } } },
       { id: 'etoiles', title: 'Étoiles et évolution stellaire', field: 'Astrophysique · intermédiaire', summary: 'Équilibre hydrostatique, fusion nucléaire et étapes de vie des étoiles.', lesson: { sections: ['Une étoile est une boule de plasma maintenue par la gravitation et chauffée par les réactions nucléaires de son cœur. L’équilibre hydrostatique oppose la pression interne à la gravité.', 'La masse initiale détermine largement l’évolution : les étoiles peu massives finissent en naines blanches, les plus massives peuvent exploser en supernova.'], formula: { label: 'LUMINOSITÉ ET FLUX', text: 'F = L/(4πd²)' }, example: { statement: 'À quelle fraction du flux initial s’attend-on si la distance à une étoile double ?', calculation: 'Le flux varie comme 1/d² ; pour 2d, il est divisé par 4.', answer: 'Le flux reçu vaut un quart du flux initial.' }, exercise: { question: 'Quel mécanisme fournit l’énergie d’une étoile de la séquence principale ?', answer: 'La fusion nucléaire, principalement la fusion de l’hydrogène en hélium.' } } },
       { id: 'cosmologie', title: 'Galaxies et expansion de l’Univers', field: 'Cosmologie · approfondissement', summary: 'Décalage vers le rouge, expansion cosmique et histoire de l’Univers.', lesson: { sections: ['À grande échelle, les galaxies s’éloignent les unes des autres dans un Univers en expansion. Le décalage vers le rouge de leur lumière renseigne sur leur vitesse d’éloignement.', 'La loi de Hubble-Lemaître relie approximativement la vitesse d’éloignement à la distance pour les galaxies proches à l’échelle cosmologique.'], formula: { label: 'LOI DE HUBBLE-Lemaître', text: 'v ≈ H₀d' }, example: { statement: 'Avec H₀ = 70 km·s⁻¹·Mpc⁻¹, estimer la vitesse d’éloignement d’une galaxie située à 10 Mpc.', calculation: 'v ≈ 70 × 10.', answer: 'v ≈ 700 km·s⁻¹.' }, exercise: { question: 'Dans ce modèle, que devient la vitesse si la distance double ?', answer: 'Elle double, car v est proportionnelle à d.' } } }
+    ],
+    // Cours approfondi rattaché à la branche : modèle standard des particules,
+    // histoire thermique de l’Univers, nucléosynthèse, fond diffus, matière
+    // noire, énergie noire, neutrinos, baryogenèse et inflation (16 sections).
+    deepCourses: [
+      {
+        title: 'Cosmologie des particules',
+        href: 'cosmologie-particules.html',
+        sections: [
+          { anchor: 'introduction', title: 'La cosmologie des particules' },
+          { anchor: 'modele-cosmologique', title: 'Le modèle standard de la cosmologie' },
+          { anchor: 'modele-particules', title: 'Le modèle standard des particules' },
+          { anchor: 'expansion-redshift', title: 'Expansion et décalage vers le rouge' },
+          { anchor: 'densite-critique', title: 'Densité critique et paramètres' },
+          { anchor: 'histoire-thermique', title: 'L’histoire thermique de l’Univers' },
+          { anchor: 'nucleosynthese', title: 'La nucléosynthèse primordiale' },
+          { anchor: 'fond-diffus', title: 'Recombinaison et fond diffus' },
+          { anchor: 'matiere-noire', title: 'La matière noire' },
+          { anchor: 'energie-noire', title: 'L’énergie noire' },
+          { anchor: 'plasma-quark-gluon', title: 'Le plasma quark-gluon' },
+          { anchor: 'neutrinos-cosmologiques', title: 'Les neutrinos cosmologiques' },
+          { anchor: 'baryogenese', title: 'La baryogenèse' },
+          { anchor: 'inflation', title: 'L’inflation' },
+          { anchor: 'exercices', title: 'S’entraîner' },
+          { anchor: 'sources', title: 'Sources' }
+        ]
+      }
     ]
   },
   {

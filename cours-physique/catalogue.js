@@ -8,11 +8,16 @@ const programmeSections = document.querySelector('#programme-sections');
 const chapters = window.courseCatalog.flatMap((branch) => branch.chapters || []);
 const deepSections = window.courseCatalog.flatMap((branch) => branch.sections || []);
 const deepCourses = window.courseCatalog.filter((branch) => branch.href);
-const deepCourseLabel = deepCourses.length === 1 ? 'COURS APPROFONDI' : 'COURS APPROFONDIS';
+// Cours approfondis rattachés via « deepCourses » (tableau de pages par branche).
+const extraDeepPages = window.courseCatalog.flatMap((branch) => (Array.isArray(branch.deepCourses) ? branch.deepCourses : []));
+const extraDeepSections = extraDeepPages.flatMap((page) => page.sections || []);
+const allDeepCoursesCount = deepCourses.length + extraDeepPages.length;
+const allDeepSectionsCount = deepSections.length + extraDeepSections.length;
+const deepCourseLabel = allDeepCoursesCount === 1 ? 'COURS APPROFONDI' : 'COURS APPROFONDIS';
 
 document.querySelector('#catalogue-count').textContent =
-  `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} ${deepCourseLabel} · ${deepSections.length} SECTIONS` : ''}`;
-document.querySelector('#domain-statistics').textContent = `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES · ${deepCourses.length} ${deepCourseLabel} · ${deepSections.length} SECTIONS`;
+  `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES${allDeepCoursesCount ? ` · ${allDeepCoursesCount} ${deepCourseLabel} · ${allDeepSectionsCount} SECTIONS` : ''}`;
+document.querySelector('#domain-statistics').textContent = `${window.courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES · ${allDeepCoursesCount} ${deepCourseLabel} · ${allDeepSectionsCount} SECTIONS`;
 
 window.courseCatalog.forEach((branch, branchIndex) => {
   const branchChapters = branch.chapters || [];
@@ -39,7 +44,41 @@ window.courseCatalog.forEach((branch, branchIndex) => {
   section.append(heading);
   section.append(Object.assign(document.createElement('p'), { className: 'programme-note', textContent: branch.note }));
 
-  // Chapitres de la branche, puis sections du cours approfondi éventuel.
+  // Chapitres de la branche, puis sections des cours approfondis éventuels.
+  // Une branche peut aussi regrouper plusieurs cours approfondis : propriété
+  // « deepCourses » (tableau de pages), chacun avec ses propres ancres.
+  const deepCoursePages = Array.isArray(branch.deepCourses)
+    ? branch.deepCourses
+    : (branch.href ? [{ title: branch.title, href: branch.href, sections: branch.sections || [] }] : []);
+  const deepSectionsCount = deepCoursePages.reduce((total, page) => total + (page.sections || []).length, 0);
+
+  if (deepCoursePages.length === 1) {
+    heading.querySelector('span').textContent =
+      `${branchChapters.length ? `${branchChapters.length} CHAPITRES + ` : ''}1 COURS APPROFONDI · ${deepSectionsCount} SECTIONS`;
+  } else if (deepCoursePages.length > 1) {
+    heading.querySelector('span').textContent =
+      `${branchChapters.length ? `${branchChapters.length} CHAPITRES + ` : ''}${deepCoursePages.length} COURS APPROFONDIS · ${deepSectionsCount} SECTIONS`;
+  }
+
+  // Chapitres de la branche, puis les cours approfondis rattachés.
+  // Deux cas, sans jamais doubler les mêmes lignes :
+  //  — la branche porte elle-même « href » + « sections » : le cours approfondi
+  //    EST la branche, ses sections sont déjà listées par « branchSections » ;
+  //  — la branche possède « deepCourses » (tableau de pages) : chaque cours
+  //    n'apparaît qu'UNE seule fois dans le catalogue, comme un simple lien vers
+  //    sa page ; ses sections restent listées dans le menu de gauche de cette
+  //    page, où elles sont numérotées.
+  const attachedDeepEntries = Array.isArray(branch.deepCourses)
+    ? branch.deepCourses.map((page) => {
+      const firstSection = (page.sections || [])[0];
+      return {
+        href: firstSection ? `${page.href}#${firstSection.anchor}` : page.href,
+        title: firstSection ? firstSection.title : (page.title || 'Cours approfondi'),
+        field: page.title || 'Cours approfondi'
+      };
+    })
+    : [];
+
   const entries = [
     ...branchChapters.map((chapter) => ({
       href: `cours.html?id=${encodeURIComponent(chapter.id)}`,
@@ -50,7 +89,8 @@ window.courseCatalog.forEach((branch, branchIndex) => {
       href: `${branch.href}#${item.anchor}`,
       title: item.title,
       field: 'Cours approfondi'
-    }))
+    })),
+    ...attachedDeepEntries
   ];
 
   const chapterList = document.createElement('div');

@@ -28,7 +28,11 @@ if (!branch || !chapter) {
   document.querySelector('#lesson-eyebrow').textContent = `${branch.title.toLocaleUpperCase('fr-FR')} · ${chapter.field}`;
   document.querySelector('#lesson-field').textContent = chapter.field;
   document.querySelector('#lesson-level').textContent = 'BASES → APPROFONDISSEMENT';
-  document.querySelector('#lesson-level-label').textContent = branch.title.toLocaleUpperCase('fr-FR');
+  // L'étiquette de domaine, au-dessus de la liste des chapitres, renvoie à la
+  // section de cette branche dans le catalogue de chimie.
+  const levelLabel = document.querySelector('#lesson-level-label');
+  levelLabel.textContent = branch.title.toLocaleUpperCase('fr-FR');
+  levelLabel.href = `programmes.html#${branch.id}`;
   document.querySelector('#lesson-footer').textContent = `${branch.title.toLocaleUpperCase('fr-FR')} · ${chapter.field.toLocaleUpperCase('fr-FR')}`;
 
   // Lien vers le texte officiel du programme (B.O.) reproduit par PCCL.

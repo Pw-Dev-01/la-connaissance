@@ -34,7 +34,11 @@ if (!chapter) {
   document.querySelector('#lesson-level').textContent = chapter.branch === 'grands-economistes'
     ? 'PENSÉE ÉCONOMIQUE'
     : 'MICROÉCONOMIE → MACROÉCONOMIE';
-  document.querySelector('#lesson-level-label').textContent = branchTitles[chapter.branch];
+  // L'étiquette de domaine, au-dessus de la liste des chapitres, renvoie à la
+  // rubrique correspondante du catalogue d'économie.
+  const levelLabel = document.querySelector('#lesson-level-label');
+  levelLabel.textContent = branchTitles[chapter.branch];
+  levelLabel.href = `index.html#${chapter.branch}`;
   document.querySelector('#lesson-footer').textContent = `ÉCONOMIE · ${(chapter.field || '').toLocaleUpperCase('fr-FR')}`;
 
   chapters
