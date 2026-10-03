@@ -583,7 +583,16 @@ h3 {
   background: var(--surface);
 }
 
+/* Une ligne .math d'un bloc « résultat » est souvent une phrase de calcul
+   entière : le white-space: nowrap hérité de .math la faisait déborder de la
+   boîte dès que la largeur manquait (mode mobile, colonne étroite). La ligne
+   peut donc se replier ici. Comme la composition d'un élément flexible se
+   décide sur sa largeur max-content, une ligne qui tient déjà sur une seule
+   ligne reste identique ; les formules insérées dans le texte, hors de ce
+   bloc, restent insécables. */
 .worked-result .math {
+  white-space: normal;
+  overflow-wrap: break-word;
   font-size: 17px;
 }
 

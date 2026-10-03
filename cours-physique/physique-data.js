@@ -79,28 +79,34 @@ window.courseCatalog = [
   },
   {
     id: 'physique-nucleaire', title: 'Physique nucléaire et particules', note: 'Noyaux, radioactivité, réactions nucléaires et, en cours approfondi, les constituants élémentaires de la matière.',
-    // Cours approfondi de la branche, rendu par particules-elementaires.html
-    // (même mécanisme que la branche quantique) : seize sections numérotées.
-    // « cours.html?id=… » redirige vers la page quand l'id correspond à l'une
-    // de ces sections.
-    href: 'particules-elementaires.html',
-    sections: [
-      { anchor: 'particules-elementaires', title: 'Les particules élémentaires' },
-      { anchor: 'modele-standard', title: 'Le modèle standard' },
-      { anchor: 'quarks', title: 'Les six quarks' },
-      { anchor: 'leptons', title: 'Les six leptons' },
-      { anchor: 'hadrons', title: 'Hadrons : baryons et mésons' },
-      { anchor: 'antimatiere', title: 'L’antimatière' },
-      { anchor: 'interactions', title: 'Les quatre interactions' },
-      { anchor: 'bosons-porteurs', title: 'Les bosons porteurs' },
-      { anchor: 'chromodynamique', title: 'La chromodynamique quantique' },
-      { anchor: 'interaction-faible', title: 'L’interaction faible' },
-      { anchor: 'boson-higgs', title: 'Le boson de Higgs' },
-      { anchor: 'conservation', title: 'Lois de conservation' },
-      { anchor: 'production-detection', title: 'Production et détection' },
-      { anchor: 'decouvertes', title: 'Chronologie des découvertes' },
-      { anchor: 'exercices', title: 'S’entraîner' },
-      { anchor: 'sources', title: 'Sources' }
+    // Cours approfondi rattaché à la branche, rendu par particules-elementaires.html
+    // (même mécanisme que « cosmologie-particules.html ») : le catalogue n'affiche
+    // que les trois rubriques de la branche — les deux chapitres ci-dessous puis ce
+    // cours —, tandis que ses seize sections restent numérotées dans le menu de
+    // gauche de la page.
+    deepCourses: [
+      {
+        title: 'Nucléaire · approfondissement',
+        href: 'particules-elementaires.html',
+        sections: [
+          { anchor: 'particules-elementaires', title: 'Les particules élémentaires' },
+          { anchor: 'modele-standard', title: 'Le modèle standard' },
+          { anchor: 'quarks', title: 'Les six quarks' },
+          { anchor: 'leptons', title: 'Les six leptons' },
+          { anchor: 'hadrons', title: 'Hadrons : baryons et mésons' },
+          { anchor: 'antimatiere', title: 'L’antimatière' },
+          { anchor: 'interactions', title: 'Les quatre interactions' },
+          { anchor: 'bosons-porteurs', title: 'Les bosons porteurs' },
+          { anchor: 'chromodynamique', title: 'La chromodynamique quantique' },
+          { anchor: 'interaction-faible', title: 'L’interaction faible' },
+          { anchor: 'boson-higgs', title: 'Le boson de Higgs' },
+          { anchor: 'conservation', title: 'Lois de conservation' },
+          { anchor: 'production-detection', title: 'Production et détection' },
+          { anchor: 'decouvertes', title: 'Chronologie des découvertes' },
+          { anchor: 'exercices', title: 'S’entraîner' },
+          { anchor: 'sources', title: 'Sources' }
+        ]
+      }
     ],
     chapters: [
       { id: 'radioactivite', title: 'Radioactivité et décroissance', field: 'Nucléaire · bases', summary: 'Désintégration spontanée, demi-vie et loi de décroissance radioactive.', lesson: { sections: ['La désintégration radioactive est aléatoire pour un noyau isolé, mais prévisible statistiquement pour un grand ensemble de noyaux.', 'La demi-vie est la durée au bout de laquelle la moitié des noyaux radioactifs initiaux se sont désintégrés.'], formula: { label: 'LOI DE DÉCROISSANCE', text: 'N(t) = N₀e^(−λt)  |  t₁/₂ = ln(2)/λ' }, example: { statement: 'Un échantillon contient 800 noyaux radioactifs. Combien en reste-t-il après deux demi-vies ?', calculation: 'Après chaque demi-vie, la quantité est divisée par deux : 800 → 400 → 200.', answer: 'Il reste en moyenne 200 noyaux.' }, exercise: { question: 'Quelle fraction reste après trois demi-vies ?', answer: 'Il reste (1/2)³ = 1/8 de la quantité initiale.' } } },

@@ -6,7 +6,7 @@ Quatre cours approfondis complètent le catalogue : `physique-quantique-atomique
 
 ## Ouvrir le catalogue
 
-Ouvre `index.html` dans un navigateur puis choisis une branche et un chapitre (`cours.html?id=...`). Le catalogue liste les 3 chapitres de la branche quantique puis les 20 sections du cours approfondi, numérotées à la suite (04 à 23) et liées directement à leur ancre. Aucun serveur ni installation n’est nécessaire.
+Ouvre `index.html` dans un navigateur puis choisis une branche et un chapitre (`cours.html?id=...`). Le catalogue liste les 3 chapitres de la branche quantique puis les 20 sections du cours approfondi, numérotées à la suite (04 à 23) et liées directement à leur ancre. La branche « Physique nucléaire et particules » suit l’autre convention du catalogue : elle n’affiche que ses trois rubriques — ses deux chapitres puis le cours approfondi `particules-elementaires.html`, lié comme une seule entrée —, ses seize sections restant numérotées dans le menu de gauche de la page. Aucun serveur ni installation n’est nécessaire.
 
 Le site réutilise la feuille de style partagée de `cours-mathematiques` pour conserver le même format visuel : même menu latéral numéroté, même barre de progression, mêmes exercices repliables (la barre latérale du cours approfondi devient défilable au-delà de 700 px, car elle compte 20 entrées).
 
