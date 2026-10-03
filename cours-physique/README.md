@@ -1,8 +1,8 @@
 # Cours de physique
 
-Catalogue pédagogique organisé en 12 branches et 36 chapitres, des bases classiques aux sujets contemporains. Chaque leçon contient les notions essentielles, une formule, un exemple résolu et un exercice corrigé.
+Catalogue pédagogique organisé en 13 branches et 35 chapitres, des bases classiques aux sujets contemporains. Chaque leçon contient les notions essentielles, une formule, un exemple résolu et un exercice corrigé.
 
-Un cours approfondi complète la branche « Physique quantique et atomique » : `physique-quantique-atomique.html`, vingt sections numérotées qui vont du rayonnement du corps noir au laser, avec équations en MathML, tableaux de données, huit exercices corrigés et un bloc « SOURCES ».
+Quatre cours approfondis complètent le catalogue : `physique-quantique-atomique.html` (vingt sections, du corps noir au laser), `cosmologie-particules.html` (seize sections, des particules à l’Univers primordial), `astrophysique-hautes-energies.html` (quinze sections, des rayons X aux sursauts gamma) et `particules-elementaires.html` (seize sections numérotées, des quarks au boson de Higgs : modèle standard, leptons, hadrons, antimatière, interactions, détection et chronologie), avec équations en MathML, tableaux de données, exercices corrigés et un bloc « SOURCES ».
 
 ## Ouvrir le catalogue
 

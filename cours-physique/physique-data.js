@@ -78,11 +78,33 @@ window.courseCatalog = [
     ]
   },
   {
-    id: 'physique-nucleaire', title: 'Physique nucléaire et particules', note: 'Noyaux, radioactivité, réactions et constituants de la matière.',
+    id: 'physique-nucleaire', title: 'Physique nucléaire et particules', note: 'Noyaux, radioactivité, réactions nucléaires et, en cours approfondi, les constituants élémentaires de la matière.',
+    // Cours approfondi de la branche, rendu par particules-elementaires.html
+    // (même mécanisme que la branche quantique) : seize sections numérotées.
+    // « cours.html?id=… » redirige vers la page quand l'id correspond à l'une
+    // de ces sections.
+    href: 'particules-elementaires.html',
+    sections: [
+      { anchor: 'particules-elementaires', title: 'Les particules élémentaires' },
+      { anchor: 'modele-standard', title: 'Le modèle standard' },
+      { anchor: 'quarks', title: 'Les six quarks' },
+      { anchor: 'leptons', title: 'Les six leptons' },
+      { anchor: 'hadrons', title: 'Hadrons : baryons et mésons' },
+      { anchor: 'antimatiere', title: 'L’antimatière' },
+      { anchor: 'interactions', title: 'Les quatre interactions' },
+      { anchor: 'bosons-porteurs', title: 'Les bosons porteurs' },
+      { anchor: 'chromodynamique', title: 'La chromodynamique quantique' },
+      { anchor: 'interaction-faible', title: 'L’interaction faible' },
+      { anchor: 'boson-higgs', title: 'Le boson de Higgs' },
+      { anchor: 'conservation', title: 'Lois de conservation' },
+      { anchor: 'production-detection', title: 'Production et détection' },
+      { anchor: 'decouvertes', title: 'Chronologie des découvertes' },
+      { anchor: 'exercices', title: 'S’entraîner' },
+      { anchor: 'sources', title: 'Sources' }
+    ],
     chapters: [
       { id: 'radioactivite', title: 'Radioactivité et décroissance', field: 'Nucléaire · bases', summary: 'Désintégration spontanée, demi-vie et loi de décroissance radioactive.', lesson: { sections: ['La désintégration radioactive est aléatoire pour un noyau isolé, mais prévisible statistiquement pour un grand ensemble de noyaux.', 'La demi-vie est la durée au bout de laquelle la moitié des noyaux radioactifs initiaux se sont désintégrés.'], formula: { label: 'LOI DE DÉCROISSANCE', text: 'N(t) = N₀e^(−λt)  |  t₁/₂ = ln(2)/λ' }, example: { statement: 'Un échantillon contient 800 noyaux radioactifs. Combien en reste-t-il après deux demi-vies ?', calculation: 'Après chaque demi-vie, la quantité est divisée par deux : 800 → 400 → 200.', answer: 'Il reste en moyenne 200 noyaux.' }, exercise: { question: 'Quelle fraction reste après trois demi-vies ?', answer: 'Il reste (1/2)³ = 1/8 de la quantité initiale.' } } },
-      { id: 'energie-nucleaire', title: 'Énergie de liaison et réactions nucléaires', field: 'Nucléaire · intermédiaire', summary: 'Défaut de masse, énergie de liaison, fission et fusion.', lesson: { sections: ['La masse d’un noyau lié est inférieure à la somme des masses de ses nucléons libres. La différence correspond à l’énergie de liaison.', 'Lors d’une réaction nucléaire, la différence de masse entre états initial et final se transforme en énergie. Une réaction libère de l’énergie si les produits sont plus liés.'], formula: { label: 'ÉQUIVALENCE MASSE-ÉNERGIE', text: 'E = Δmc²' }, example: { statement: 'Une réaction présente un défaut de masse de 1,0×10⁻²⁹ kg. Estimer l’énergie libérée.', calculation: 'E = Δmc² ≈ 1,0×10⁻²⁹ × (3,0×10⁸)².', answer: 'E ≈ 9,0×10⁻¹³ J.' }, exercise: { question: 'Pourquoi une petite perte de masse peut-elle libérer beaucoup d’énergie ?', answer: 'Parce que l’énergie vaut Δmc² et que c² est très grand.' } } },
-      { id: 'particules-elementaires', title: 'Particules élémentaires', field: 'Nucléaire · approfondissement', summary: 'Quarks, leptons, interactions fondamentales et antimatière.', lesson: { sections: ['Le modèle standard décrit les particules élémentaires connues et trois interactions fondamentales : électromagnétique, faible et forte. La gravitation n’y est pas intégrée.', 'Les protons et neutrons sont composés de quarks liés par l’interaction forte ; les électrons appartiennent à la famille des leptons.'], formula: { label: 'CONTENU DU PROTON', text: 'Proton : uud  |  Neutron : udd' }, example: { statement: 'Quelle est la charge électrique totale des quarks d’un proton ?', calculation: 'Deux quarks u portent chacun +2/3 e et un quark d porte −1/3 e.', answer: '2×(2/3)e − (1/3)e = +e.' }, exercise: { question: 'Quelle est la charge totale des quarks d’un neutron udd ?', answer: '(2/3)e − (1/3)e − (1/3)e = 0.' } } }
+      { id: 'energie-nucleaire', title: 'Énergie de liaison et réactions nucléaires', field: 'Nucléaire · intermédiaire', summary: 'Défaut de masse, énergie de liaison, fission et fusion.', lesson: { sections: ['La masse d’un noyau lié est inférieure à la somme des masses de ses nucléons libres. La différence correspond à l’énergie de liaison.', 'Lors d’une réaction nucléaire, la différence de masse entre états initial et final se transforme en énergie. Une réaction libère de l’énergie si les produits sont plus liés.'], formula: { label: 'ÉQUIVALENCE MASSE-ÉNERGIE', text: 'E = Δmc²' }, example: { statement: 'Une réaction présente un défaut de masse de 1,0×10⁻²⁹ kg. Estimer l’énergie libérée.', calculation: 'E = Δmc² ≈ 1,0×10⁻²⁹ × (3,0×10⁸)².', answer: 'E ≈ 9,0×10⁻¹³ J.' }, exercise: { question: 'Pourquoi une petite perte de masse peut-elle libérer beaucoup d’énergie ?', answer: 'Parce que l’énergie vaut Δmc² et que c² est très grand.' } } }
     ]
   },
   {
@@ -170,7 +192,7 @@ window.courseCatalog = [
 ];
 
 const stellarChapter = window.courseCatalog
-  .flatMap((branch) => branch.chapters)
+  .flatMap((branch) => branch.chapters || [])
   .find((chapter) => chapter.id === 'etoiles');
 
 stellarChapter.summary = 'Naissance, structure, types spectraux, durées de vie et évolution jusqu’aux naines blanches, étoiles à neutrons ou trous noirs.';
@@ -260,7 +282,7 @@ stellarChapter.lesson = {
 
 const quantumChapters = Object.fromEntries(
   window.courseCatalog
-    .flatMap((branch) => branch.chapters)
+    .flatMap((branch) => branch.chapters || [])
     .filter((chapter) => ['photons', 'dualite-onde-corpuscule', 'atomes-niveaux'].includes(chapter.id))
     .map((chapter) => [chapter.id, chapter])
 );
@@ -598,7 +620,7 @@ const additionalPhysicsDetails = {
 };
 
 for (const [chapterId, details] of Object.entries(additionalPhysicsDetails)) {
-  const chapter = window.courseCatalog.flatMap((branch) => branch.chapters).find((item) => item.id === chapterId);
+  const chapter = window.courseCatalog.flatMap((branch) => branch.chapters || []).find((item) => item.id === chapterId);
   chapter.lesson.equationDetails = details.equations;
   chapter.lesson.sources = details.sources;
 }
@@ -625,12 +647,6 @@ const remainingPhysicsDetails = {
       { title: 'OpenStax Chemistry 2e — Transmutation and Nuclear Energy', url: 'https://openstax.org/books/chemistry-2e/pages/21-4-transmutation-and-nuclear-energy' },
       { title: 'OpenStax University Physics, vol. 3 — Relativistic Energy', url: 'https://openstax.org/books/university-physics-volume-3/pages/5-9-relativistic-energy' }
     ]
-  },
-  'particules-elementaires': {
-    equations: [
-      { title: 'Composition en quarks des nucléons', formula: 'Proton : uud ; neutron : udd', explanation: 'Dans le modèle des quarks, u désigne un quark up et d un quark down. Un proton et un neutron sont des baryons formés de trois quarks de valence ; ils contiennent aussi des gluons et des paires quark-antiquark dans leur description complète.', parameters: 'Charge de u : +⅔e ; charge de d : −⅓e ; e : charge élémentaire positive ; les lettres indiquent les saveurs des quarks, pas des charges électriques.', example: 'Charge du proton uud : (+⅔e) + (+⅔e) + (−⅓e) = +e. Charge du neutron udd : (+⅔e) − (⅓e) − (⅓e) = 0.', result: 'Le proton porte +e et le neutron est électriquement neutre.' }
-    ],
-    sources: [{ title: 'CERN — The Standard Model', url: 'https://home.cern/science/physics/standard-model' }]
   },
   'relativite-restreinte': {
     equations: [
@@ -736,13 +752,13 @@ const remainingPhysicsDetails = {
 };
 
 for (const [chapterId, details] of Object.entries(remainingPhysicsDetails)) {
-  const chapter = window.courseCatalog.flatMap((branch) => branch.chapters).find((item) => item.id === chapterId);
+  const chapter = window.courseCatalog.flatMap((branch) => branch.chapters || []).find((item) => item.id === chapterId);
   chapter.lesson.equationDetails = details.equations;
   chapter.lesson.sources = details.sources;
 }
 
 const unicodeFormulaChapters = Object.fromEntries(
-  window.courseCatalog.flatMap((branch) => branch.chapters).map((chapter) => [chapter.id, chapter])
+  window.courseCatalog.flatMap((branch) => branch.chapters || []).map((chapter) => [chapter.id, chapter])
 );
 
 unicodeFormulaChapters['lois-newton'].lesson.formula.text = 'Σ F⃗ₑₓₜ = m a⃗';

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi de particules élémentaires : modèle standard, quarks, leptons, hadrons, antimatière, interactions fondamentales, bosons de jauge, chromodynamique quantique, boson de Higgs, lois de conservation et détection, avec équations en MathML et sources vérifiées.">
+    <title>Particules élémentaires | Cours de physique</title>
+    <!-- Format identique aux autres cours approfondis de physique. Règle du site :
+         la liste des chapitres (menu gauche) n'est pas numérotée, les
+         sous-rubriques de la page le sont. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte seize entrées de navigation : la barre latérale devient
+         défilable quand la hauteur de l'écran ne suffit plus à les afficher.
+         Sous 700 px, la mise en page partagée la transforme déjà en bandeau. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+      /* Couleur demandée pour cette page : le lien parent « Toutes les branches »
+         et les quatre entrées du domaine s'affichent en gris clair (var(--muted),
+         #67716a — contraste AA sur fond papier). La bordure corail signale
+         toujours le chapitre courant au survol ou en cours de lecture. */
+      .course-sidebar > .course-link span,
+      .course-list .course-link span {
+        color: var(--muted);
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+        <span class="wordmark-mark" aria-hidden="true">φ</span>
+        <span>LE COURS DE PHYSIQUE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche physique nucléaire et particules du cours de physique">
+          <!-- Liste des chapitres du domaine, sans numérotation -->
+          <a class="course-link" href="index.html#physique-nucleaire"><span>Physique nucléaire et particules</span></a>
+          <a class="course-link" href="cours.html?id=radioactivite"><span>Radioactivité et décroissance</span></a>
+          <a class="course-link" href="cours.html?id=energie-nucleaire"><span>Énergie de liaison et réactions nucléaires</span></a>
+          <a class="course-link is-current" href="particules-elementaires.html" aria-current="page"><span>Particules élémentaires</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours de particules élémentaires">
+          <a href="#particules-elementaires">01 <span>Les particules élémentaires</span></a>
+          <a href="#modele-standard">02 <span>Le modèle standard</span></a>
+          <a href="#quarks">03 <span>Les six quarks</span></a>
+          <a href="#leptons">04 <span>Les six leptons</span></a>
+          <a href="#hadrons">05 <span>Hadrons : baryons et mésons</span></a>
+          <a href="#antimatiere">06 <span>L’antimatière</span></a>
+          <a href="#interactions">07 <span>Les quatre interactions</span></a>
+          <a href="#bosons-porteurs">08 <span>Les bosons porteurs</span></a>
+          <a href="#chromodynamique">09 <span>La chromodynamique quantique</span></a>
+          <a href="#interaction-faible">10 <span>L’interaction faible</span></a>
+          <a href="#boson-higgs">11 <span>Le boson de Higgs</span></a>
+          <a href="#conservation">12 <span>Lois de conservation</span></a>
+          <a href="#production-detection">13 <span>Production et détection</span></a>
+          <a href="#decouvertes">14 <span>Chronologie des découvertes</span></a>
+          <a href="#exercices">15 <span>S’entraîner</span></a>
+          <a href="#sources">16 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">φ</span>
+          <p>Une idée directrice : tout ce qui nous est familier — noyaux, atomes, lumière — provient de quelques particules élémentaires et de trois interactions réunies dans un seul modèle.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PARTICULES ÉLÉMENTAIRES · COURS APPROFONDI</p>
+          <h1>Particules<br><span>élémentaires</span></h1>
+          <p class="course-intro">De quoi est faite la matière ? Pourquoi tous les électrons sont-ils identiques ? Ce cours présente le modèle standard de la physique des particules : les six quarks et six leptons, les bosons qui véhiculent les interactions, l’antimatière, le confinement et le boson de Higgs — puis montre comment ces particules sont produites et détectées, de l’électron de 1897 aux collisions du Grand collisionneur de hadrons. Chaque valeur est confrontée au Particle Data Group, au CERN et à OpenStax.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>16 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+        <section class="lesson-section" id="particules-elementaires" aria-labelledby="particules-elementaires-title">
+          <p class="section-index">01 / LES PARTICULES ÉLÉMENTAIRES</p>
+          <h2 id="particules-elementaires-title">Ce que l’on appelle une particule élémentaire</h2>
+          <p>La <strong>physique des particules élémentaires</strong> étudie les briques fondamentales de la matière et leurs interactions. Elle ne s’intéresse ni aux cellules, ni aux molécules, ni même aux atomes : ses objets se situent à des échelles plus petites que le noyau atomique, et ses questions vont de la structure de la matière à l’origine des masses (OpenStax, <em>University Physics</em> vol. 3, § 11.1).</p>
+          <p>Une particule est dite <strong>élémentaire</strong> lorsqu’aucune structure interne n’a été mise en évidence à l’échelle sondée. Toute la matière ordinaire stable se construit avec les particules de la première génération : les quarks up et down, l’électron et le neutrino électronique. Les particules des générations suivantes sont plus massives et se désintègrent rapidement vers la première (CERN, <em>The Standard Model</em>).</p>
+          <p>Quelques repères fixent la naissance de la discipline : l’électron est identifié par J. J. Thomson dans les rayons cathodiques en 1897 (nobelprize.org, prix de physique 1937) ; l’équation de Dirac de 1928 annonce une antiparticule de même masse mais de charge opposée, le positron, observé par Carl Anderson en 1932 (CERN, <em>Antimatter</em>) ; le neutrino, prédit dans les années 1930, est détecté pour la première fois en 1956 par Clyde Cowan et Frederick Reines (nobelprize.org, parcours Reines) ; les hadrons révèlent leur structure de quarks dans les années 1960 (OpenStax, vol. 3, § 11.3) ; le boson de Higgs, prédit en 1964, est découvert en 2012 (CERN, <em>The Higgs boson</em>).</p>
+          <div class="callout"><strong>Voir l’invisible : les rayons cosmiques</strong><p>Avant les grands accélérateurs, ce sont les rayons cosmiques qui ont livré de nouvelles particules. En plaquant des émulsions photographiques au sommet des montagnes, Marietta Blau, puis Cecil Powell et ses collaborateurs ont enregistré des traces de protons et découvert de nouvelles particules, comme le méson — une étape décisive vers la connaissance des hadrons (OpenStax, <em>University Physics</em> vol. 3, § 11.1).</p></div>
+        </section>
+
+        <section class="lesson-section" id="modele-standard" aria-labelledby="modele-standard-title">
+          <p class="section-index">02 / LE MODÈLE STANDARD</p>
+          <h2 id="modele-standard-title">Un modèle pour trois interactions</h2>
+          <p>Le <strong>modèle standard</strong>, développé au début des années 1970, réunit la théorie électrofaible — qui fusionne électrodynamique quantique et interaction faible — et la chromodynamique quantique, théorie de l’interaction forte. Il a réussi à expliquer presque tous les résultats expérimentaux et à prédire avec précision une grande variété de phénomènes (CERN, <em>The Standard Model</em> ; OpenStax, <em>University Physics</em> vol. 3, § 11.5).</p>
+          <p>La matière s’organise en deux familles de six particules chacune — les <strong>quarks</strong> et les <strong>leptons</strong> — réparties en trois générations de masse croissante : la première contient les particules stables de la matière ordinaire, les deux autres se désintègrent vers la première (CERN). Les interactions sont portées par des bosons : le photon, les huit gluons, les bosons W et Z ; le boson de Higgs, associé au mécanisme qui donne leur masse aux particules, complète l’inventaire. En comptant chaque type une fois — douze fermions, photon, gluons, W et Z, Higgs — on dénombre <strong>dix-sept particules élémentaires</strong>.</p>
+          <p>Trois des quatre interactions fondamentales sont donc réunies dans le modèle : forte, électromagnétique et faible. La gravitation lui reste étrangère : personne n’a rendu compatible la mécanique quantique du micro monde et la relativité générale du macro monde. D’autres questions restent ouvertes — la nature de la matière noire, le devenir de l’antimatière après le Big Bang, le nombre de générations (CERN, <em>The Standard Model</em>).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Inventaire du modèle standard (CERN, <em>The Standard Model</em> ; OpenStax, <em>University Physics</em> vol. 3, § 11.5)</caption>
+              <thead><tr><th scope="col">Famille</th><th scope="col">Particules</th><th scope="col">Charge (e)</th><th scope="col">Rôle</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Quarks de type haut</th><td>u, c, t</td><td>+2/3</td><td>composants des hadrons</td></tr>
+                <tr><th scope="row">Quarks de type bas</th><td>d, s, b</td><td>−1/3</td><td>composants des hadrons</td></tr>
+                <tr><th scope="row">Leptons chargés</th><td>e, μ, τ</td><td>−1</td><td>électromagnétique et faible</td></tr>
+                <tr><th scope="row">Neutrinos</th><td>ν<sub>e</sub>, ν<sub>μ</sub>, ν<sub>τ</sub></td><td>0</td><td>interaction faible seulement</td></tr>
+                <tr><th scope="row">Photon</th><td>γ</td><td>0</td><td>porte l’interaction électromagnétique</td></tr>
+                <tr><th scope="row">Gluons</th><td>g (8 types)</td><td>0</td><td>portent l’interaction forte</td></tr>
+                <tr><th scope="row">Bosons W et Z</th><td>W<sup>±</sup>, Z</td><td>±1 ; 0</td><td>portent l’interaction faible</td></tr>
+                <tr><th scope="row">Boson de Higgs</th><td>H</td><td>0</td><td>origine des masses des particules</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="quarks" aria-labelledby="quarks-title">
+          <p class="section-index">03 / LES SIX QUARKS</p>
+          <h2 id="quarks-title">Six saveurs, trois générations, trois couleurs</h2>
+          <p>Dans les années 1960, les physiciens réalisent que les hadrons ne sont pas élémentaires : ils sont composés de <strong>quarks</strong>. Murray Gell-Mann trouve ce nom dans <em>Finnegans Wake</em> de James Joyce. Six saveurs suffisent, réparties en trois générations : up (u) et down (d) d’abord, puis charm (c) et strange (s), enfin bottom (b) et top (t) — le même nombre que les leptons (OpenStax, <em>University Physics</em> vol. 3, § 11.3).</p>
+          <p>Tous les quarks sont des fermions de spin ½ avec un nombre baryonique B = +1/3 et une charge fractionnaire : +2/3 e pour u, c, t et −1/3 e pour d, s, b. Chacun possède un antiquark de même masse mais de charge opposée (OpenStax, vol. 3, § 11.3). Leurs masses s’étalent sur plus de cinq ordres de grandeur : quelques MeV pour u et d, jusqu’à 172,57 ± 0,29 GeV pour le quark top. Ce dernier se désintègre trop vite pour se lier à d’autres quarks : aucun baryon de quark top n’existe (PDG, tableaux récapitulatifs 2024 ; OpenStax, vol. 3, § 11.3).</p>
+          <p>Les quarks portent en outre une charge de « couleur », qui intervient dans l’interaction forte ; ils ne se combinent que pour former des objets incolores, ce qui explique pourquoi aucun quark n’est jamais observé isolé (CERN, <em>The Standard Model</em>). Le détail de cette force fait l’objet de la section 09.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les six quarks (charges et nombres : OpenStax, <em>University Physics</em> vol. 3, § 11.3 ; masses : PDG, tableaux récapitulatifs 2024)</caption>
+              <thead><tr><th scope="col">Saveur</th><th scope="col">Génération</th><th scope="col">Charge (e)</th><th scope="col">Masse (PDG 2024)</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Up (u)</th><td>1<sup>re</sup></td><td>+2/3</td><td>2,16 MeV</td></tr>
+                <tr><th scope="row">Down (d)</th><td>1<sup>re</sup></td><td>−1/3</td><td>4,70 MeV</td></tr>
+                <tr><th scope="row">Strange (s)</th><td>2<sup>e</sup></td><td>−1/3</td><td>93,5 MeV</td></tr>
+                <tr><th scope="row">Charm (c)</th><td>2<sup>e</sup></td><td>+2/3</td><td>1,273 GeV</td></tr>
+                <tr><th scope="row">Bottom (b)</th><td>3<sup>e</sup></td><td>−1/3</td><td>4,183 GeV</td></tr>
+                <tr><th scope="row">Top (t)</th><td>3<sup>e</sup></td><td>+2/3</td><td>172,57 ± 0,29 GeV</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="formula-block"><span class="formula-label">CHARGE DU PROTON</span><math class="mathml-display" display="block" aria-label="Q de p égale deux tiers plus deux tiers moins un tiers égale un"><mrow><mi>Q</mi><mo>(</mo><mi>p</mi><mo>)</mo><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>+</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>=</mo><mn>1</mn></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> Q(p) : charge du proton, exprimée en unités de la charge élémentaire e ; u : quark up, d : quark down. La charge du proton est la somme des charges de ses trois quarks de valence ; les antiquarks ont l’charge opposée (OpenStax, <em>University Physics</em> vol. 3, § 11.3).</p>
+          <div class="worked-result"><strong>EXEMPLE · LA CHARGE DU PROTON</strong><span class="math">proton = uud : deux quarks up à +2/3 e, un quark down à −1/3 e</span><span class="math">2/3 + 2/3 − 1/3 = 1</span><span class="math">le proton porte exactement +e, et le neutron udd porte 0</span></div>
+          <div class="callout callout-coral"><strong>Pourquoi parle-t-on de « saveurs » ?</strong><p>Up, down, strange, charm, bottom, top ne sont pas des charges : ce sont des saveurs, comme le sont électron, muon et tau côté leptons. Seule la charge de couleur intervient dans l’interaction forte ; les saveurs se transforment, elles, par l’interaction faible (OpenStax, <em>University Physics</em> vol. 3, § 11.5).</p></div>
+        </section>
+
+        <section class="lesson-section" id="leptons" aria-labelledby="leptons-title">
+          <p class="section-index">04 / LES SIX LEPTONS</p>
+          <h2 id="leptons-title">Électrons, muons, taus et neutrinos</h2>
+          <p>Six leptons complètent les quarks : l’électron et son neutrino, le muon et son neutrino, le tau et son neutrino. Les trois leptons chargés (e, μ, τ) portent la charge −1 e et possèdent une masse appréciable ; les neutrinos sont neutres et leur masse est très faible (CERN, <em>The Standard Model</em>). Aucun lepton n’essuie l’interaction forte : les électrons et les neutrinos n’y participent pas (OpenStax, vol. 3, § 11.1).</p>
+          <p>Les mesures du Particle Data Group donnent m<sub>e</sub> = 0,510 998 950 69 MeV, m<sub>μ</sub> = 105,658 375 5 MeV et m<sub>τ</sub> = 1 776,86 ± 0,12 MeV. Le muon vit en moyenne 2,196 981 1 µs, le tau seulement 290,3 × 10⁻¹⁵ s (PDG, table des leptons).</p>
+          <p>Les oscillations de neutrinos — prix Nobel de physique 2015 « pour la découverte des oscillations de neutrinos, qui montre que les neutrinos ont une masse » — établissent que les neutrinos sont massifs. Leur masse échappe encore à la mesure directe : l’expérience KATRIN n’a posé en mai 2025 que la limite m(ν<sub>e</sub>) &lt; 0,45 eV au niveau de confiance de 90 %, soit plus d’un million de fois moins que la masse de l’électron (nobelprize.org, prix 2015 ; PDG, table des leptons).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les six leptons (masses, durées de vie et limites : PDG, table des leptons)</caption>
+              <thead><tr><th scope="col">Lepton</th><th scope="col">Charge (e)</th><th scope="col">Masse</th><th scope="col">Durée de vie</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Électron e</th><td>−1</td><td>0,510 998 950 69 MeV</td><td>aucune désintégration observée</td></tr>
+                <tr><th scope="row">Neutrino ν<sub>e</sub></th><td>0</td><td>&lt; 0,45 eV (KATRIN, 2025)</td><td>—</td></tr>
+                <tr><th scope="row">Muon μ</th><td>−1</td><td>105,658 375 5 MeV</td><td>2,196 981 1 µs</td></tr>
+                <tr><th scope="row">Neutrino ν<sub>μ</sub></th><td>0</td><td>&lt; 0,19 MeV</td><td>—</td></tr>
+                <tr><th scope="row">Tau τ</th><td>−1</td><td>1 776,86 ± 0,12 MeV</td><td>290,3 × 10⁻¹⁵ s</td></tr>
+                <tr><th scope="row">Neutrino ν<sub>τ</sub></th><td>0</td><td>&lt; 18,2 MeV</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="formula-block"><span class="formula-label">DÉCROISSANCE EXPONENTIELLE D’UNE PARTICULE</span><math class="mathml-display" display="block" aria-label="N de t égale N zéro multiplié par exponentielle de moins t sur tau"><mrow><mi>N</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mi>t</mi><mi>τ</mi></mfrac></mrow></msup></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> N(t) : nombre de particules restantes au temps t ; N₀ : nombre initial ; t : temps (s) ; τ : durée de vie moyenne (s) — 2,196 981 1 µs pour le muon, 290,3 × 10⁻¹⁵ s pour le tau (PDG). Après un temps égal à τ, il reste environ 37 % des particules : la loi est la même que celle de la décroissance radioactive de la branche nucléaire.</p>
+          <div class="worked-result"><strong>EXEMPLE · APRÈS TROIS DURÉES DE VIE</strong><span class="math">N/N₀ = e<sup>−3</sup> ≈ 0,051</span><span class="math">environ 5 % des muons produits subsistent encore</span><span class="math">c’est ce même taux de décroissance que mesurent les expériences de durée de vie</span></div>
+        </section>
+
+        <section class="lesson-section" id="hadrons" aria-labelledby="hadrons-title">
+          <p class="section-index">05 / HADRONS : BARYONS ET MÉSONS</p>
+          <h2 id="hadrons-title">Des particules faites de quarks</h2>
+          <p>Protons, neutrons, pions, kaons ne sont pas élémentaires : ce sont des <strong>hadrons</strong>, assemblages de quarks. Un <strong>baryon</strong> réunit trois quarks ; un <strong>méson</strong> associe un quark et un antiquark (OpenStax, <em>University Physics</em> vol. 3, § 11.3).</p>
+          <p>Le proton est l’état lié <em>uud</em>, le neutron l’état <em>udd</em> ; leurs masses valent 938,3 MeV et 939,6 MeV. Le pion π⁺ se lit <em>u</em> d̄ — un quark up et un antiquark down — et sa charge vaut 2/3 + 1/3 = +1 e (OpenStax, vol. 3, § 11.3 et tableau 11.4 ; PDG). À ces trois quarks de valence s’ajoutent les gluons qui les lient et les paires quark-antiquark qui se créent et s’annihilent en permanence.</p>
+          <p>La masse surprend : la somme des trois quarks de valence ne vaut que quelques MeV, alors que le proton pèse 938,3 MeV. L’essentiel de la masse hadronique vient de l’énergie de l’interaction forte entre quarks et gluons, convertie en masse par l’équivalence masse-énergie E = mc² (masses des quarks : PDG ; masse du proton : NIST, CODATA ; OpenStax, tableau 11.4).</p>
+          <div class="formula-block"><span class="formula-label">MASSE D’UN HADRON</span><math class="mathml-display" display="block" aria-label="masse du proton approximement égale à la somme des masses des quarks u, u et d plus l’énergie d’interaction divisée par c carré"><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>≈</mo><msub><mi>m</mi><mi>u</mi></msub><mo>+</mo><msub><mi>m</mi><mi>u</mi></msub><mo>+</mo><msub><mi>m</mi><mi>d</mi></msub><mo>+</mo><mfrac><msub><mi>E</mi><mtext>int</mtext></msub><msup><mi>c</mi><mn>2</mn></msup></mfrac></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> m<sub>p</sub> : masse du proton (MeV/c²) ; m<sub>u</sub> ≈ 2,16 MeV/c² et m<sub>d</sub> ≈ 4,70 MeV/c² : masses des quarks (PDG) ; E<sub>int</sub> : énergie de l’interaction forte entre quarks et gluons (J). L’égalité est approchée : les masses de quarks dépendent de l’échelle de lecture, tandis que la masse mesurée du proton est une grandeur fixe.</p>
+          <div class="worked-result"><strong>EXEMPLE · D’OÙ VIENT LA MASSE DU PROTON</strong><span class="math">somme des quarks de valence : 2,16 + 2,16 + 4,70 ≈ 9,0 MeV/c²</span><span class="math">mesure : m<sub>p</sub> = 938,3 MeV/c²</span><span class="math">la part des quarks est inférieure à 1 % : plus de 99 % de la masse vient de l’énergie d’interaction (E = mc²)</span></div>
+          <div class="callout"><strong>Le confinement</strong><p>Les quarks ne sont jamais observés isolés : ils ne se combinent que pour former des objets incolores comme les hadrons, et l’échelle de cette force reste celle du noyau, environ 10⁻¹⁵ m (CERN, <em>The Standard Model</em> ; OpenStax, <em>University Physics</em> vol. 3, ch. 11 et tableau 11.6).</p></div>
+        </section>
+
+        <section class="lesson-section" id="antimatiere" aria-labelledby="antimatiere-title">
+          <p class="section-index">06 / L’ANTIMATIÈRE</p>
+          <h2 id="antimatiere-title">Une antiparticule pour chaque particule</h2>
+          <p>En 1928, Paul Dirac écrit une équation qui réunit théorie quantique et relativité pour décrire l’électron. Comme l’équation x² = 4 admet deux solutions, elle admet deux solutions de charge : l’une décrit l’électron, l’autre une particule de même masse mais de charge positive. Carl Anderson observe le positron en 1932 : l’antimatière existe (CERN, <em>Antimatter</em>).</p>
+          <p>Chaque particule de matière possède son <strong>antiparticule</strong> : propriétés identiques, charge électrique opposée. Matière et antimatière se créent en paires et s’annihilent au contact, libérant de l’énergie principalement sous forme de photons et de pions — le rendement de cette conversion est presque parfait (CERN, <em>Antimatter</em>).</p>
+          <p>Un électron et un positron au repos ne peuvent donner qu’un seul photon : l’impulsion ne serait pas conservée (OpenStax, vol. 3, § 11.2). Ils produisent donc deux photons dont l’énergie vaut l’énergie de repos de chacun : 0,511 MeV (PDG, masse de l’électron).</p>
+          <p>Après le Big Bang, un léger excès de matière — environ une particule de matière par milliard d’antiparticules — aurait survécu à l’annihilation généralisée : tout ce que nous observons en est le résidu. Au CERN, l’Antiproton Decelerator ralentit des antiprotons pour fabriquer et étudier de l’antihydrogène (CERN, <em>Antimatter</em>).</p>
+          <div class="formula-block"><span class="formula-label">ÉNERGIE DES PHOTONS D’ANNIHILATION</span><math class="mathml-display" display="block" aria-label="énergie du photon égale masse de l'électron multipliée par c carré"><mrow><msub><mi>E</mi><mi>γ</mi></msub><mo>=</mo><msub><mi>m</mi><mi>e</mi></msub><msup><mi>c</mi><mn>2</mn></msup></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> E<sub>γ</sub> : énergie de chaque photon produit (MeV) ; m<sub>e</sub> = 0,511 MeV/c² : masse de l’électron (PDG) ; c : vitesse de la lumière. L’énergie totale disponible est 2m<sub>e</sub>c², répartie entre les deux photons (OpenStax, vol. 3, § 11.2).</p>
+          <div class="worked-result"><strong>EXEMPLE · PAIRE ÉLECTRON-POSITRON AU REPOS</strong><span class="math">énergie totale : 2 × 0,511 MeV = 1,022 MeV</span><span class="math">deux photons de 0,511 MeV chacun</span><span class="math">émis en directions opposées pour conserver l’impulsion nulle du système</span></div>
+        </section>
+
+        <section class="lesson-section" id="interactions" aria-labelledby="interactions-title">
+          <p class="section-index">07 / LES QUATRE INTERACTIONS</p>
+          <h2 id="interactions-title">Force, portée, intensité</h2>
+          <p>Les interactions entre particules s’expriment par quatre <strong>forces fondamentales</strong>. Par ordre d’intensité décroissante : la force nucléaire forte, la force électromagnétique, la force nucléaire faible et la gravitation (OpenStax, <em>University Physics</em> vol. 3, § 11.1).</p>
+          <p>Chaque force possède sa portée et son intensité relative. La force forte n’agit qu’à l’échelle du noyau, environ 10⁻¹⁵ m ; l’électromagnétique et la gravitation s’étendent à l’infini ; la faible, elle, reste confinée à environ 10⁻¹⁸ m. Le tableau ci-dessous reprend les valeurs d’OpenStax, où la force forte sert de référence (intensité 1) (OpenStax, vol. 3, tableau 11.6).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les quatre forces fondamentales (OpenStax, <em>University Physics</em> vol. 3, § 11.1 et tableau 11.6)</caption>
+              <thead><tr><th scope="col">Interaction</th><th scope="col">Force relative</th><th scope="col">Porteur</th><th scope="col">Portée</th><th scope="col">Particules concernées</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Forte</th><td>1</td><td>gluons</td><td>10⁻¹⁵ m</td><td>quarks</td></tr>
+                <tr><th scope="row">Électromagnétique</th><td>1/137</td><td>photon</td><td>infinie</td><td>particules chargées</td></tr>
+                <tr><th scope="row">Faible</th><td>10⁻¹⁰</td><td>bosons W et Z</td><td>10⁻¹⁸ m</td><td>quarks, leptons, neutrinos</td></tr>
+                <tr><th scope="row">Gravitation</th><td>10⁻³⁸</td><td>graviton (non observé)</td><td>infinie</td><td>toutes — hors modèle standard</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Lecture du tableau :</strong> la force relative compare chaque interaction à l’interaction forte à l’échelle nucléaire ; l’électromagnétique vaut environ 1/137 de la forte — c’est la constante de structure fine — et la gravitation est si faible qu’elle est négligeable dès qu’un seul atome est en jeu (OpenStax, vol. 3, tableau 11.6).</p>
+          <div class="callout"><strong>Trois interactions sur quatre</strong><p>Le modèle standard réunit l’électromagnétique, la faible et la forte, avec leurs porteurs. La gravitation lui reste étrangère : ajuster la relativité générale et la mécanique quantique dans un même cadre n’a jamais réussi. Heureusement, à l’échelle des particules, l’effet gravitationnel est si faible qu’il est négligeable (CERN, <em>The Standard Model</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="bosons-porteurs" aria-labelledby="bosons-porteurs-title">
+          <p class="section-index">08 / LES BOSONS PORTEURS</p>
+          <h2 id="bosons-porteurs-title">Photon, gluons, W et Z</h2>
+          <p>Dans le modèle standard, les interactions se transmettent par échange de <strong>bosons</strong> : les photons — sans masse, portée théoriquement infinie — portent l’électromagnétisme ; huit gluons sans masse portent la force forte entre les quarks colorés ; les bosons W et Z, massifs, portent l’interaction faible (OpenStax, vol. 3, § 11.5 ; CERN, <em>The Standard Model</em>).</p>
+          <p>Les mesures du Particle Data Group donnent une masse d’environ 80,4 GeV/c² pour le boson W et 91,2 GeV/c² pour le boson Z, soit près de quatre-vingts fois et quatre-vingt-dix fois la masse du proton — alors que photon et gluons sont sans masse (PDG, tableaux récapitulatifs 2024 ; masse du proton : NIST, CODATA). La masse de ces porteurs explique la très courte portée de l’interaction faible, calculée dans la section 10.</p>
+          <p>Le graviton, porteur hypothétique de la gravitation, figure dans les tableaux pour mémoire mais ne fait pas partie du modèle standard : il n’a jamais été observé (OpenStax, vol. 3, tableau 11.6).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les bosons de jauge (OpenStax, <em>University Physics</em> vol. 3, § 11.5 et tableau 11.6 ; masses : PDG 2024)</caption>
+              <thead><tr><th scope="col">Boson</th><th scope="col">Interaction</th><th scope="col">Masse</th><th scope="col">Portée et remarque</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Photon γ</th><td>électromagnétique</td><td>0</td><td>infinie</td></tr>
+                <tr><th scope="row">Gluon g</th><td>forte</td><td>0</td><td>8 types ; confinés dans les hadrons</td></tr>
+                <tr><th scope="row">Boson W<sup>±</sup></th><td>faible</td><td>≈ 80,4 GeV</td><td>≈ 10⁻¹⁸ m</td></tr>
+                <tr><th scope="row">Boson Z</th><td>faible</td><td>≈ 91,2 GeV</td><td>≈ 10⁻¹⁸ m</td></tr>
+                <tr><th scope="row">Graviton</th><td>gravitation</td><td>—</td><td>hypothétique, hors modèle standard</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="chromodynamique" aria-labelledby="chromodynamique-title">
+          <p class="section-index">09 / LA CHROMODYNAMIQUE QUANTIQUE</p>
+          <h2 id="chromodynamique-title">La force de couleur</h2>
+          <p>La <strong>chromodynamique quantique</strong> (QCD) décrit l’interaction forte : la force qui agit entre les charges de couleur (OpenStax, <em>University Physics</em> vol. 3, § 11.5). Les quarks portent trois « couleurs » et les huit gluons sans masse transportent la force entre quarks : contrairement aux photons, cette force ne faiblit pas avec la distance à l’échelle nucléaire (CERN, <em>The Standard Model</em> ; OpenStax, vol. 3, § 11.5).</p>
+          <p>La portée observée de l’interaction forte vaut environ 10⁻¹⁵ m — l’échelle des hadrons et des noyaux (OpenStax, tableau 11.6). À très courte distance, en revanche, l’interaction entre quarks devient faible : c’est la <strong>liberté asymptotique</strong>, découverte par David Gross, David Politzer et Frank Wilczek et récompensée par le prix Nobel de physique 2004 « pour la découverte de la liberté asymptotique dans la théorie de l’interaction forte » (nobelprize.org, prix 2004).</p>
+          <p>À l’échelle des hadrons, la force lie les quarks si étroitement qu’aucun quark libre n’a jamais été détecté : les quarks ne se combinent que pour former des objets incolores — protons, neutrons, pions et autres hadrons (CERN, <em>The Standard Model</em> ; OpenStax, vol. 3, ch. 11). C’est le confinement, la propriété la plus visible de la QCD.</p>
+          <div class="callout"><strong>L’interaction qui tient les noyaux ensemble</strong><p>Sans l’interaction forte, les protons chargés se repousseraient électromagnétiquement et les noyaux se disloqueraient. La force forte les lie à l’intérieur du noyau — et c’est aussi elle qui lie les quarks à l’intérieur des protons et des neutrons (OpenStax, <em>University Physics</em> vol. 3, § 11.1).</p></div>
+        </section>
+
+        <section class="lesson-section" id="interaction-faible" aria-labelledby="interaction-faible-title">
+          <p class="section-index">10 / L’INTERACTION FAIBLE</p>
+          <h2 id="interaction-faible-title">Changer de saveur, désintégrer</h2>
+          <p>L’<strong>interaction faible</strong> agit sur les quarks, les leptons et les neutrinos ; sa force relative ne vaut que 10⁻¹⁰ de celle de l’interaction forte et sa portée avoisine 10⁻¹⁸ m (OpenStax, <em>University Physics</em> vol. 3, tableau 11.6). Elle est portée par les bosons W et Z massifs — c’est cette masse qui impose la courte portée (OpenStax, vol. 3, § 11.5).</p>
+          <p>Sa manifestation la plus familière est la <strong>désintégration bêta</strong> : le neutron se transforme en proton en émettant un électron et un antineutrino électronique, n → p + e⁻ + ν̄<sub>e</sub>. Cette voie représente la totalité des désintégrations du neutron ; la durée de vie moyenne du neutron vaut environ 880 s et l’énergie libérée, égale à la différence de masse neutron-proton, vaut 1,2933 MeV (PDG, pdgLive <em>neutron</em>).</p>
+          <p>Le muon se désintègre lui aussi par échange d’un boson W : μ⁻ → e⁻ + ν̄<sub>e</sub> + ν<sub>μ</sub>, avec une durée de vie de 2,197 µs (OpenStax, vol. 3, § 11.5 ; PDG). Assez longue pour que les muons des rayons cosmiques traversent l’atmosphère et atteignent le sol grâce à la dilatation du temps — l’exemple type des mesures de relativité restreinte (OpenStax, vol. 3, § 5.3).</p>
+          <div class="formula-block"><span class="formula-label">PORTRÉE DE L’INTERACTION FAIBLE</span><math class="mathml-display" display="block" aria-label="lambda environ égale à h bar c divisé par la masse du boson W multipliée par c carré"><mrow><mi>λ</mi><mo>≈</mo><mfrac><mrow><mi>ħ</mi><mi>c</mi></mrow><mrow><msub><mi>m</mi><mi>W</mi></msub><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> λ : portée de l’interaction (fm) ; ħc ≈ 197,3 MeV·fm : produit de la constante de Planck réduite par c (NIST, CODATA) ; m<sub>W</sub>c² ≈ 80,4 GeV = 8,04 × 10⁴ MeV : énergie de repos du boson W (PDG). Une masse m du porteur impose une portée de l’ordre de ħ/(mc) : plus le porteur est lourd, plus la portée est courte.</p>
+          <div class="worked-result"><strong>EXEMPLE · L’ORDRE DE GRANDEUR DE LA PORTÉE</strong><span class="math">λ ≈ 197,3 MeV·fm / 80 400 MeV ≈ 2,5 × 10⁻³ fm</span><span class="math">soit 2,5 × 10⁻¹⁸ m</span><span class="math">même ordre de grandeur que les 10⁻¹⁸ m d’OpenStax : la portée est fixée par la masse du porteur</span></div>
+        </section>
+
+        <section class="lesson-section" id="boson-higgs" aria-labelledby="boson-higgs-title">
+          <p class="section-index">11 / LE BOSON DE HIGGS</p>
+          <h2 id="boson-higgs-title">Le dernier maillon du modèle</h2>
+          <p>Le <strong>champ de Higgs</strong>, proposé en 1964, remplit l’Univers. Les particules acquièrent leur masse en interagissant avec lui : plus l’interaction est forte, plus la particule est lourde. Le photon n’interagit pas avec ce champ et reste sans masse (CERN, <em>The Higgs boson</em>).</p>
+          <p>Le boson de Higgs est l’excitation de ce champ. Le 4 juillet 2012, les collaborations ATLAS et CMS annoncent la découverte d’une nouvelle particule ; en mars 2013, l’analyse d’un jeu de données deux fois et demi plus important confirme un spin nul, signature attendue. Le prix Nobel de physique 2013 est décerné le 8 octobre 2013 à François Englert et Peter Higgs « pour la découverte théorique d’un mécanisme qui contribue à notre compréhension de l’origine de la masse des particules subatomiques » (CERN, <em>The Standard Model</em> et <em>The Higgs boson</em>).</p>
+          <p>Sa masse mesurée vaut 125,13 ± 0,11 GeV/c² (PDG, pdgLive <em>H</em>). Le boson de Higgs est rare : environ une collision du LHC sur un milliard en produit un (CERN, <em>The Higgs boson</em>). Une fois produit, il se désintègre presque immédiatement dans d’autres particules, dont les voies principales sont mesurées avec précision.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Principales voies de désintégration du boson de Higgs (PDG, pdgLive <em>H</em>)</caption>
+              <thead><tr><th scope="col">Voie de désintégration</th><th scope="col">Fraction</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">b b̄</th><td>(53 ± 8) %</td></tr>
+                <tr><th scope="row">W W*</th><td>(25,7 ± 2,5) %</td></tr>
+                <tr><th scope="row">τ⁺ τ⁻</th><td>(6,0 +0,8 −0,7) %</td></tr>
+                <tr><th scope="row">Z Z*</th><td>(2,80 ± 0,30) %</td></tr>
+                <tr><th scope="row">γ γ</th><td>(2,50 ± 0,20) × 10⁻³</td></tr>
+                <tr><th scope="row">μ⁺ μ⁻</th><td>(3,0 ± 0,9) × 10⁻⁴</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout callout-coral"><strong>Une particule de spin nul</strong><p>Le boson de Higgs est la seule particule fondamentale de spin 0 connue : tous les autres constituents élémentaires sont des fermions de spin ½ ou des bosons de spin 1. C’est cette caractéristique qui a permis de confirmer l’identité de la particule observée en 2013 (CERN, <em>The Higgs boson</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="conservation" aria-labelledby="conservation-title">
+          <p class="section-index">12 / LOIS DE CONSERVATION</p>
+          <h2 id="conservation-title">Ce qui ne change jamais</h2>
+          <p>Avant toute transformation, une vérification s’impose : l’énergie, l’impulsion et le moment cinétique sont conservés dans toutes les interactions de particules. Ainsi, un électron et un positron au repos ne peuvent s’annihiler en un seul photon — l’impulsion ne serait pas conservée (OpenStax, <em>University Physics</em> vol. 3, § 11.2).</p>
+          <p>À ces grandeurs classiques s’ajoutent des nombres quantiques conservés. La <strong>charge électrique</strong> l’est partout, sans exception. Le <strong>nombre baryonique</strong> B vaut +1 pour les baryons, −1 pour les antibaryons et 0 pour tout le reste : il interdit la désintégration du neutron en paire e⁺e⁻, qui respecterait pourtant la charge, l’énergie et l’impulsion (OpenStax, vol. 3, § 11.2).</p>
+          <p>Les <strong>nombres leptoniques</strong> L<sub>e</sub>, L<sub>μ</sub> et L<sub>τ</sub> se conservent séparément, saveur par saveur ; l’<strong>étrangeté</strong> S compte les quarks strange et explique la longévité des kaons et des lambda. Ces nombres permettent de classer les réactions autorisées et les réactions interdites (OpenStax, vol. 3, § 11.2).</p>
+          <div class="formula-block"><span class="formula-label">RÈGLES DE CONSERVATION</span><math class="mathml-display" display="block" aria-label="somme des charges avant égale somme des charges après, somme des nombres baryoniques avant égale après, somme des nombres leptoniques avant égale après"><mtable><mtr><mtd><mrow><munder><mo>∑</mo><mtext>avant</mtext></munder><mi>Q</mi><mo>=</mo><munder><mo>∑</mo><mtext>après</mtext></munder><mi>Q</mi></mrow></mtd></mtr><mtr><mtd><mrow><munder><mo>∑</mo><mtext>avant</mtext></munder><mi>B</mi><mo>=</mo><munder><mo>∑</mo><mtext>après</mtext></munder><mi>B</mi></mrow></mtd></mtr><mtr><mtd><mrow><munder><mo>∑</mo><mtext>avant</mtext></munder><mi>L</mi><mo>=</mo><munder><mo>∑</mo><mtext>après</mtext></munder><mi>L</mi></mrow></mtd></mtr></mtable></math></div>
+          <p><strong>Paramètres et unités :</strong> Q : charge électrique (en unités de e) ; B : nombre baryonique (sans dimension) ; L : nombre leptonique, conservé séparément pour chaque saveur (L<sub>e</sub>, L<sub>μ</sub>, L<sub>τ</sub>) (OpenStax, <em>University Physics</em> vol. 3, § 11.2). Une réaction n’a lieu que si ces trois sommes sont identiques avant et après.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Nombres quantiques conservés de quelques particules (OpenStax, <em>University Physics</em> vol. 3, tableau 11.2)</caption>
+              <thead><tr><th scope="col">Particule</th><th scope="col">L<sub>e</sub></th><th scope="col">L<sub>μ</sub></th><th scope="col">L<sub>τ</sub></th><th scope="col">B</th><th scope="col">Étrangeté S</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Électron e⁻</th><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><th scope="row">Neutrino ν<sub>e</sub></th><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><th scope="row">Muon μ⁻</th><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><th scope="row">Pion π⁺</th><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><th scope="row">Kaon K⁺</th><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+                <tr><th scope="row">Proton p</th><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+                <tr><th scope="row">Neutron n</th><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+                <tr><th scope="row">Lambda Λ⁰</th><td>0</td><td>0</td><td>0</td><td>1</td><td>−1</td></tr>
+                <tr><th scope="row">Oméga Ω⁻</th><td>0</td><td>0</td><td>0</td><td>1</td><td>−3</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="worked-result"><strong>EXEMPLE · UNE RÉACTION INTERDITE</strong><span class="math">avant : neutron — B = 1, Q = 0</span><span class="math">après : e⁺ + e⁻ — B = 0, Q = 0</span><span class="math">la charge est conservée mais pas le nombre baryonique : n → e⁺ + e⁻ n’a jamais été observée</span></div>
+          <div class="callout"><strong>Deux particules de plus, deux nombres de moins</strong><p>Les lois de conservation ne se contentent pas d’interdire : elles imposent aussi des produits. Ainsi, la désintégration bêta du neutron doit produire un électron et une autre particule pour conserver à la fois la charge, le nombre baryonique et le nombre leptonique — c’est ainsi que le neutrino a été postulé avant d’être détecté (OpenStax, <em>University Physics</em> vol. 3, § 11.2).</p></div>
+        </section>
+
+        <section class="lesson-section" id="production-detection" aria-labelledby="production-detection-title">
+          <p class="section-index">13 / PRODUCTION ET DÉTECTION</p>
+          <h2 id="production-detection-title">Créer, suivre, mesurer</h2>
+          <p>Produire des particules isolées exige des énergies énormes — celles qui régnaient dans les premiers instants de l’Univers. Le Grand collisionneur de hadrons (LHC), installé à plus de 150 m sous terre près de Genève, est la machine la plus puissante jamais construite pour étudier les interactions des particules élémentaires (OpenStax, <em>University Physics</em> vol. 3, ch. 11).</p>
+          <p>Un accélérateur linéaire fait passer les particules par une succession de cavités accélératrices à radiofréquence qui les poussent comme une vague sur un océan ; les faisceaux circulent ensuite dans un anneau avant d’entrer en collision au cœur du détecteur (OpenStax, vol. 3, § 11.4). ATLAS, l’un des deux grands détecteurs du LHC, est un cylindre de 46 m de long et 25 m de diamètre, de 7 000 tonnes, creusé à 100 m sous terre : six sous-détecteurs concentriques y enregistrent trajectoire, impulsion et énergie, et un puissant système d’aimants courbe les trajectoires des particules chargées pour permettre la mesure de leur impulsion (CERN, ATLAS <em>Detector &amp; Technology</em>).</p>
+          <p>Les collisions sont si denses — plus d’un milliard d’interactions par seconde — qu’une seule sur un million est retenue pour analyse. Le trajectographe interne reconstitue les trajectoires, les calorimètres captent l’énergie, le spectromètre à muons identifie les particules les plus pénétrantes (CERN, ATLAS <em>Detector &amp; Technology</em> ; OpenStax, vol. 3, § 11.4).</p>
+          <div class="formula-block"><span class="formula-label">IMPULSION ET COURBURE DE TRAJECTOIRE</span><math class="mathml-display" display="block" aria-label="rayon de courbure égale impulsion divisée par zéro virgule deux neuf neuf huit fois B fois Q"><mrow><mi>r</mi><mo>=</mo><mfrac><mi>p</mi><mrow><mn>0.2998</mn><mspace width="0.25em"></mspace><mi>B</mi><mspace width="0.25em"></mspace><mi>Q</mi></mrow></mfrac></mrow></math></div>
+          <p><strong>Paramètres et unités :</strong> r : rayon de courbure de la trajectoire (m) ; p : impulsion de la particule (GeV/c) ; B : intensité du champ magnétique (T) ; Q : charge de la particule (en unités de e). Le facteur 0,2998 GeV·m⁻¹·T⁻¹ traduit la relation p = qBr dans les unités des physiciens (OpenStax, <em>University Physics</em> vol. 3, § 11.4 : mesure de l’impulsion par la courbure d’une trajectoire chargée).</p>
+          <div class="worked-result"><strong>EXEMPLE · TRAJECTOIRE D’UN MUON</strong><span class="math">p = 3,0 GeV/c ; B = 1,0 T ; Q = 1</span><span class="math">r = 3,0 / (0,2998 × 1,0 × 1) ≈ 10,0 m</span><span class="math">plus l’impulsion est grande, plus la trajectoire est peu courbée : les particules les plus énergétiques se reconnaissent à leur rayon</span></div>
+          <div class="callout"><strong>ATLAS en quatre chiffres</strong><p>46 m de long, 25 m de diamètre, 7 000 tonnes, 100 m sous terre — et jusqu’à 7 TeV par faisceau. Le détecteur est conçu pour reconstituer l’histoire de chaque collision, particule par particule (CERN, ATLAS <em>Detector &amp; Technology</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="decouvertes" aria-labelledby="decouvertes-title">
+          <p class="section-index">14 / CHRONOLOGIE DES DÉCOUVERTES</p>
+          <h2 id="decouvertes-title">De l’électron au boson de Higgs</h2>
+          <p>Chaque étape de cette chronologie suit le même scénario : une anomalie ou une prédiction théorique, puis une expérience, puis une confirmation. Les dates ci-dessous sont celles rapportées par les sources du cours — CERN, OpenStax et Académie Nobel.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Repères de la physique des particules (nobelprize.org ; CERN ; OpenStax, <em>University Physics</em> vol. 3, § 11.3)</caption>
+              <thead><tr><th scope="col">Date</th><th scope="col">Découverte</th><th scope="col">Où et par qui</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">1897</th><td>Électron</td><td>J. J. Thomson, rayons cathodiques (nobelprize.org, prix 1937)</td></tr>
+                <tr><th scope="row">1932</th><td>Positron</td><td>Carl Anderson, prédit par Dirac en 1928 (CERN, <em>Antimatter</em>)</td></tr>
+                <tr><th scope="row">1956</th><td>Neutrino</td><td>Clyde Cowan et Frederick Reines (nobelprize.org, parcours Reines)</td></tr>
+                <tr><th scope="row">Années 1960</th><td>Quarks</td><td>postulés parmi les hadrons, Murray Gell-Mann (OpenStax, vol. 3, § 11.3)</td></tr>
+                <tr><th scope="row">1983</th><td>Bosons W et Z</td><td>UA1 et UA2 au CERN (CERN, <em>The Standard Model</em>)</td></tr>
+                <tr><th scope="row">1990</th><td>Preuves des quarks</td><td>diffusion profondément inélastique — Nobel de Friedman, Kendall et Taylor (nobelprize.org, prix 1990)</td></tr>
+                <tr><th scope="row">1995</th><td>Quark top</td><td>détecteur CDF (CERN, <em>The Standard Model</em>)</td></tr>
+                <tr><th scope="row">2012</th><td>Boson de Higgs</td><td>ATLAS et CMS au CERN (CERN, <em>The Higgs boson</em>)</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout"><strong>Un modèle abouti mais incomplet</strong><p>Le modèle standard a réussi presque tous ses tests — mais il reste silencieux sur la matière noire, sur l’asymétrie antimatière-matière, sur l’origine des trois générations et sur la gravitation. Les collisions du LHC continuent de chercher la physique qui le dépasse (CERN, <em>The Standard Model</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">15 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">Exercices corrigés</h2>
+          <p>Six exercices couvrant tout le cours, des charges de quarks à la courbure des trajectoires. Essaie de répondre avant d’ouvrir la correction : le but est de manipuler les règles, pas de les relire.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Quelle est la charge électrique totale des trois quarks du proton (uud) ? Et celle du neutron (udd) ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Proton : 2/3 + 2/3 − 1/3 = +1, soit +e. Neutron : 2/3 − 1/3 − 1/3 = 0. Le proton porte donc exactement une charge élémentaire et le neutron est neutre — c’est la composition en quarks qui l’explique (section 03).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>La réaction n → e⁺ + e⁻ conserve-t-elle la charge, l’énergie et l’impulsion ? Pourquoi n’a-t-elle jamais été observée ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Oui : la charge vaut 0 des deux côtés et les grandeurs énergétiques peuvent s’accorder. Mais le nombre baryonique passe de 1 (neutron) à 0 (paire e⁺e⁻) : il n’est pas conservé, donc la réaction est interdite (section 12 ; OpenStax, vol. 3, § 11.2).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Le pion π⁺ est composé d’un quark up (u) et d’un antiquark down (d̄). Quelle est sa charge, en unités de e ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Le quark up porte +2/3 e ; l’antiquark down porte l’opposé de −1/3 e, soit +1/3 e. Charge totale : 2/3 + 1/3 = +1 e. Un méson est bien chargé en unités entières, comme toute particule libre (sections 03 et 05).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Un muon d’impulsion 6,0 GeV/c traverse un champ magnétique de 0,50 T. Quel rayon de courbure décrit sa trajectoire (charge |Q| = 1) ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>r = p / (0,2998 × B × Q) = 6,0 / (0,2998 × 0,50 × 1) ≈ 40 m. Une impulsion deux fois plus grande donnerait un rayon deux fois plus grand : les trajectoires les plus droites correspondent aux particules les plus énergétiques (section 13).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">E</span><span>Estimer la portée de l’interaction faible en prenant m<sub>W</sub>c² ≈ 80,4 GeV et ħc ≈ 197,3 MeV·fm. Que vaut-elle en mètres ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>λ ≈ ħc / (m<sub>W</sub>c²) = 197,3 MeV·fm / 80 400 MeV ≈ 2,5 × 10⁻³ fm, soit 2,5 × 10⁻¹⁸ m. C’est le même ordre de grandeur que les 10⁻¹⁸ m indiqués par OpenStax : la portée d’une interaction est fixée par la masse de son porteur (sections 08 et 10).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">F</span><span>Un électron et un positron au repos s’annihilent. Quelle énergie totale est disponible, et quelle énergie porte chacun des deux photons produits ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Énergie totale : 2m<sub>e</sub>c² = 2 × 0,511 MeV = 1,022 MeV. La conservation de l’impulsion impose deux photons émis en directions opposées, chacun portant 0,511 MeV — l’énergie de repos de l’électron (section 06 ; OpenStax, vol. 3, § 11.2).</p></div>
+          </details>
+        </section>
+
+        <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">16 / SOURCES</p>
+          <h2 id="sources-title">Sources vérifiées</h2>
+          <p>Chaque affirmation scientifique de ce cours renvoie à l’une des sources ci-dessous. OpenStax fait référence lorsque le sujet y figure ; les valeurs numériques précises proviennent du Particle Data Group, du CERN et de l’Académie Nobel, qui jalonne l’histoire de la discipline.</p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/11-introduction" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, ch. 11 <em>Particle Physics and Cosmology</em> : étude des énergies énormes nécessaires pour produire des particules isolées, Grand collisionneur de hadrons (LHC) et détecteur ATLAS</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/11-1-introduction-to-particle-physics" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 11.1 <em>Introduction to Particle Physics</em> : les quatre forces fondamentales et leur ordre d’intensité, fermions et bosons, familles de quarks et de leptons, rayons cosmiques et émulsions nucléaires</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/11-2-particle-conservation-laws" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 11.2 <em>Particle Conservation Laws</em> : conservation de la charge, du nombre baryonique, des nombres leptoniques et de l’étrangeté ; annihilation e⁺e⁻ à un photon impossible ; tableau 11.2</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/11-3-quarks" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 11.3 <em>Quarks</em> : six saveurs et leurs charges, nombre baryonique 1/3, baryons et mésons (tableaux 11.4 et 11.5), proton uud à 0,938 GeV, absence de baryons de quark top</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/11-4-particle-accelerators-and-detectors" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 11.4 <em>Particle Accelerators and Detectors</em> : accélérateurs linéaires et à cavités radiofréquence, collisionneurs, mesure de l’impulsion par la courbure d’une trajectoire chargée</a></p>
+          <p><a href="https://openstax.org/books/university-physics-volume-3/pages/11-5-the-standard-model" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 3, § 11.5 <em>The Standard Model</em> : théorie électrofaible et chromodynamique quantique, bosons sans masse et bosons massifs, tableau 11.6 des quatre forces (portées 10⁻¹⁵ m et 10⁻¹⁸ m, forces relatives 1, 1/137, 10⁻¹⁰, 10⁻³⁸)</a></p>
+          <p><a href="https://home.cern/science/physics/standard-model" target="_blank" rel="noreferrer">CERN, <em>The Standard Model</em> : quarks et leptons en trois générations, huit gluons, gravitation exclue, W et Z découverts en 1983 (UA1 et UA2), quark top en 1995 (CDF), boson de Higgs annoncé le 4 juillet 2012, Nobel 2013</a></p>
+          <p><a href="https://home.cern/science/physics/antimatter" target="_blank" rel="noreferrer">CERN, <em>Antimatter</em> : équation de Dirac de 1928, découverte du positron par Carl Anderson en 1932, création en paires et annihilation, excès d’environ une particule de matière par milliard, Antiproton Decelerator</a></p>
+          <p><a href="https://home.cern/science/physics/higgs-boson" target="_blank" rel="noreferrer">CERN, <em>The Higgs boson</em> : champ proposé en 1964, mécanisme Brout-Englert-Higgs, photon sans masse, annonce du 4 juillet 2012, spin nul confirmé en mars 2013, Nobel du 8 octobre 2013, environ une collision sur un milliard</a></p>
+          <p><a href="https://atlas.cern/discover/detector" target="_blank" rel="noreferrer">CERN, ATLAS <em>Detector &amp; Technology</em> : cylindre de 46 m sur 25 m, 7 000 tonnes, cavernes à 100 m sous terre, six sous-détecteurs concentriques, courbure des trajectoires par aimants, plus d’un milliard d’interactions par seconde, une sur un million enregistrée</a></p>
+          <p><a href="https://pdg.lbl.gov/2024/tables/tables.html" target="_blank" rel="noreferrer">Particle Data Group, <em>Review of Particle Physics</em> — tableaux récapitulatifs 2024 : masses des six quarks (u 2,16 MeV à t 172,57 ± 0,29 GeV), masses et durées de vie des leptons, limites de masses des neutrinos</a></p>
+          <p><a href="https://pdgprod.lbl.gov/pdgprod/pdgLive/Particle.action?home=&amp;node=S126" target="_blank" rel="noreferrer">Particle Data Group, pdgLive, boson de Higgs : masse 125,13 ± 0,11 GeV, fractions de désintégration (b b̄, W W*, τ⁺τ⁻, Z Z*, γ γ, μ⁺μ⁻), couplages et propriétés de spin</a></p>
+          <p><a href="https://pdgprod.lbl.gov/pdgprod/pdgLive/Particle.action?home=&amp;node=S017" target="_blank" rel="noreferrer">Particle Data Group, pdgLive, neutron : composition uud et udd, masse 939,565 421 9 MeV, différence de masse n − p = 1,293 332 5 MeV, mode de désintégration p e⁻ ν̄<sub>e</sub> à 100 %</a></p>
+          <p><a href="https://www.nobelprize.org/prizes/physics/1937/summary/" target="_blank" rel="noreferrer">Académie Nobel, prix de physique 1937 : J. J. Thomson et la découverte de l’électron en 1897 dans les rayons cathodiques</a></p>
+          <p><a href="https://www.nobelprize.org/prizes/physics/1995/reines/facts/" target="_blank" rel="noreferrer">Académie Nobel, Frederick Reines : détection du neutrino pour la première fois en 1956 par Clyde Cowan et Frederick Reines</a></p>
+          <p><a href="https://www.nobelprize.org/prizes/physics/1990/summary/" target="_blank" rel="noreferrer">Académie Nobel, prix de physique 1990 : Jerome Friedman, Henry Kendall et Richard Taylor « pour leurs investigations pionnières sur la diffusion profondément inélastique des électrons sur les protons et les neutrons liés », essentielle au modèle des quarks</a></p>
+          <p><a href="https://www.nobelprize.org/prizes/physics/2004/summary/" target="_blank" rel="noreferrer">Académie Nobel, prix de physique 2004 : David Gross, David Politzer et Frank Wilczek « pour la découverte de la liberté asymptotique dans la théorie de l’interaction forte »</a></p>
+          <p><a href="https://www.nobelprize.org/prizes/physics/2015/summary/" target="_blank" rel="noreferrer">Académie Nobel, prix de physique 2015 : Takaaki Kajita et Arthur McDonald « pour la découverte des oscillations de neutrinos, qui montre que les neutrinos ont une masse »</a></p>
+          <p><a href="https://physics.nist.gov/cuu/Constants/" target="_blank" rel="noreferrer">NIST, <em>CODATA Recommended Values of the Fundamental Physical Constants</em> : ħ, c, conversion entre joules et électronvolts, produit ħc ≈ 197,3 MeV·fm, masse du proton</a></p>
+          <p>Repères cités, tels que les rapportent ces sources : Thomson (1897), Dirac (1928), Anderson (1932), Cowan et Reines (1956), Gell-Mann et les quarks (années 1960), champ de Higgs (1964), bosons W et Z (1983), quark top (1995), boson de Higgs (2012), limite KATRIN sur la masse du neutrino électronique (2025).</p>
+        </section>
+
+        <footer class="course-footer"><span>PARTICULES ÉLÉMENTAIRES</span><a href="index.html">Retour aux branches ↑</a></footer>
+
+      </article>
+    </main>
+  </body>
+</html>
