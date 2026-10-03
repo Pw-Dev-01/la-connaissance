@@ -13,6 +13,40 @@ window.courseCatalog = [
       { id: 'gaz-parfaits', title: 'Température et gaz parfaits', field: 'Thermique · bases', summary: 'État d’un gaz, pression, volume, température absolue et équation d’état.', lesson: { sections: ['Un gaz parfait est un modèle de particules ponctuelles sans interaction à distance, sauf lors des collisions. Son état macroscopique est décrit par la pression P, le volume V, la température absolue T et la quantité de matière n.', 'La température dans l’équation d’état s’exprime en kelvins. Une hausse de température à volume constant augmente la pression ; une hausse de volume à température constante la diminue.'], formula: { label: 'ÉQUATION D’ÉTAT DU GAZ PARFAIT', text: 'PV = nRT  |  T(K) = θ(°C) + 273,15' }, example: { statement: '1 mol de gaz parfait occupe 24,0 L à 300 K. Estimer sa pression avec R = 8,314 J·mol⁻¹·K⁻¹.', calculation: 'P = nRT/V = 1 × 8,314 × 300 / 0,024.', answer: 'P ≈ 1,04 × 10⁵ Pa.' }, exercise: { question: 'Convertir 20 °C en kelvins.', answer: 'T = 20 + 273,15 = 293,15 K.' } } },
       { id: 'premier-principe', title: 'Premier principe et bilans d’énergie', field: 'Thermique · intermédiaire', summary: 'Énergie interne, chaleur, travail reçu et transformations.', lesson: { sections: ['Le premier principe exprime la conservation de l’énergie pour un système thermodynamique. La variation d’énergie interne est égale aux transferts reçus sous forme de chaleur et de travail.', 'Il faut annoncer clairement la convention de signe utilisée. Ici, Q et W sont positifs lorsque le système reçoit de l’énergie.'], formula: { label: 'PREMIER PRINCIPE', text: 'ΔU = Q + W' }, example: { statement: 'Un système reçoit 500 J de chaleur et fournit 120 J de travail au milieu extérieur. Quelle est la variation de son énergie interne ?', calculation: 'Q = +500 J. Comme le système fournit le travail, W = −120 J. Donc ΔU = 500 − 120.', answer: 'ΔU = +380 J.' }, exercise: { question: 'Un système reçoit 200 J de travail et perd 50 J de chaleur. Calculer ΔU.', answer: 'ΔU = Q + W = −50 + 200 = +150 J.' } } },
       { id: 'second-principe', title: 'Entropie et second principe', field: 'Thermique · approfondissement', summary: 'Sens d’évolution spontanée, irréversibilité et entropie.', lesson: { sections: ['Le premier principe conserve l’énergie mais ne donne pas le sens d’une évolution. Le second principe introduit l’entropie, une grandeur d’état qui quantifie la dispersion de l’énergie.', 'Pour un système isolé, l’entropie totale ne diminue pas : elle reste constante dans une transformation réversible idéale et augmente dans une transformation irréversible.'], formula: { label: 'BILAN D’ENTROPIE D’UN SYSTÈME ISOLÉ', text: 'ΔS ≥ 0  |  égalité : transformation réversible' }, example: { statement: 'Deux corps à températures différentes sont placés en contact dans un système isolé. Dans quel sens l’échange thermique se produit-il spontanément ?', calculation: 'La chaleur se transfère spontanément du corps le plus chaud vers le plus froid, jusqu’à l’équilibre thermique.', answer: 'L’entropie totale augmente ; le processus inverse ne se produit pas spontanément.' }, exercise: { question: 'Une transformation spontanée d’un système isolé peut-elle diminuer son entropie ?', answer: 'Non. Le second principe impose ΔS ≥ 0.' } } }
+    ],
+    // Cours approfondi rattaché à la branche, rendu par
+    // thermodynamique-approfondie.html : le catalogue affiche ses 22 sections
+    // numérotées à la suite des trois chapitres de la branche, comme pour le
+    // cours quantique. Même mécanisme que « deepCourses » de la branche nucléaire.
+    deepCourses: [
+      {
+        title: 'Thermodynamique et transferts thermiques',
+        href: 'thermodynamique-approfondie.html',
+        sections: [
+          { anchor: 'temperature-equilibre', title: 'Température et équilibre thermique' },
+          { anchor: 'echelles-temperature', title: 'Les échelles de température' },
+          { anchor: 'dilatation-thermique', title: 'La dilatation thermique' },
+          { anchor: 'chaleur-calorimetrie', title: 'Chaleur et calorimétrie' },
+          { anchor: 'changements-etat', title: 'Les changements d’état' },
+          { anchor: 'conduction', title: 'La conduction thermique' },
+          { anchor: 'convection-rayonnement', title: 'Convection et rayonnement' },
+          { anchor: 'gaz-parfait', title: 'Le gaz parfait' },
+          { anchor: 'theorie-cinetique', title: 'La théorie cinétique' },
+          { anchor: 'vitesses-moleculaires', title: 'Vitesses moléculaires' },
+          { anchor: 'energie-interne-equipartition', title: 'Énergie interne et équipartition' },
+          { anchor: 'capacites-thermiques-gaz', title: 'Capacités thermiques des gaz' },
+          { anchor: 'premier-principe', title: 'Travail, chaleur, premier principe' },
+          { anchor: 'transformations-pv', title: 'Transformations et diagramme pV' },
+          { anchor: 'transformations-adiabatiques', title: 'Transformations adiabatiques' },
+          { anchor: 'machines-thermiques', title: 'Machines thermiques' },
+          { anchor: 'cycle-carnot', title: 'Le cycle de Carnot' },
+          { anchor: 'second-principe-enonces', title: 'Irréversibilité et second principe' },
+          { anchor: 'entropie', title: 'L’entropie' },
+          { anchor: 'entropie-microscopique', title: 'Entropie microscopique' },
+          { anchor: 'exercices', title: 'S’entraîner' },
+          { anchor: 'sources', title: 'Sources' }
+        ]
+      }
     ]
   },
   {
@@ -86,7 +120,7 @@ window.courseCatalog = [
     // gauche de la page.
     deepCourses: [
       {
-        title: 'Nucléaire · approfondissement',
+        title: 'Particules élémentaires',
         href: 'particules-elementaires.html',
         sections: [
           { anchor: 'particules-elementaires', title: 'Les particules élémentaires' },

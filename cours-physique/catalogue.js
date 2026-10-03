@@ -69,14 +69,14 @@ window.courseCatalog.forEach((branch, branchIndex) => {
   //    sa page ; ses sections restent listées dans le menu de gauche de cette
   //    page, où elles sont numérotées.
   const attachedDeepEntries = Array.isArray(branch.deepCourses)
-    ? branch.deepCourses.map((page) => {
-      const firstSection = (page.sections || [])[0];
-      return {
-        href: firstSection ? `${page.href}#${firstSection.anchor}` : page.href,
-        title: firstSection ? firstSection.title : (page.title || 'Cours approfondi'),
-        field: page.title || 'Cours approfondi'
-      };
-    })
+    ? branch.deepCourses.map((page) => ({
+      // Le cours approfondi apparaît comme un lien vers sa page, sous son propre
+      // titre (et non sous le titre de sa première section) : c'est ce titre qui
+      // identifie la page dans le catalogue.
+      href: page.href,
+      title: page.title || 'Cours approfondi',
+      field: 'Cours approfondi'
+    }))
     : [];
 
   const entries = [

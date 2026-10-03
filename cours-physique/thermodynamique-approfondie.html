@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi de thermodynamique : température et équilibre, échelles thermométriques, dilatation, calorimétrie, changements d’état, conduction, convection et rayonnement, gaz parfaits et gaz réels, théorie cinétique, vitesses moléculaires, équipartition, capacités thermiques, premier principe, transformations et diagrammes pV, adiabatiques, machines thermiques, cycle de Carnot, second principe, entropie et interprétation microscopique, avec équations en MathML et sources vérifiées.">
+    <title>Thermodynamique et transferts thermiques | Cours de physique</title>
+    <!-- Format identique aux autres cours approfondis de physique. Règle du site :
+         la liste des chapitres (menu gauche) n’est pas numérotée, les
+         sous-rubriques de la page le sont. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte vingt-deux entrées de navigation : la barre latérale
+         devient défilable quand la hauteur de l’écran ne suffit plus à les
+         afficher. Sous 700 px, la mise en page partagée la transforme déjà en
+         bandeau horizontal. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+      /* Même traitement que le cours de particules élémentaires : le lien
+         parent et les entrées du domaine s’affichent en gris clair
+         (var(--muted), #67716a — contraste AA sur fond papier). La bordure
+         corail signale toujours le chapitre courant au survol ou en cours de
+         lecture. */
+      .course-sidebar > .course-link span,
+      .course-list .course-link span {
+        color: var(--muted);
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+        <span class="wordmark-mark" aria-hidden="true">φ</span>
+        <span>LE COURS DE PHYSIQUE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche thermodynamique du cours de physique">
+          <!-- Liste des chapitres du domaine, sans numérotation -->
+          <a class="course-link" href="index.html#thermodynamique"><span>Thermodynamique</span></a>
+          <a class="course-link" href="cours.html?id=gaz-parfaits"><span>Température et gaz parfaits</span></a>
+          <a class="course-link" href="cours.html?id=premier-principe"><span>Premier principe et bilans d’énergie</span></a>
+          <a class="course-link" href="cours.html?id=second-principe"><span>Entropie et second principe</span></a>
+          <a class="course-link is-current" href="thermodynamique-approfondie.html" aria-current="page"><span>Thermodynamique et transferts thermiques</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours de thermodynamique">
+          <a href="#temperature-equilibre">01 <span>Température et équilibre thermique</span></a>
+          <a href="#echelles-temperature">02 <span>Les échelles de température</span></a>
+          <a href="#dilatation-thermique">03 <span>La dilatation thermique</span></a>
+          <a href="#chaleur-calorimetrie">04 <span>Chaleur et calorimétrie</span></a>
+          <a href="#changements-etat">05 <span>Les changements d’état</span></a>
+          <a href="#conduction">06 <span>La conduction thermique</span></a>
+          <a href="#convection-rayonnement">07 <span>Convection et rayonnement</span></a>
+          <a href="#gaz-parfait">08 <span>Le gaz parfait</span></a>
+          <a href="#theorie-cinetique">09 <span>La théorie cinétique</span></a>
+          <a href="#vitesses-moleculaires">10 <span>Vitesses moléculaires</span></a>
+          <a href="#energie-interne-equipartition">11 <span>Énergie interne et équipartition</span></a>
+          <a href="#capacites-thermiques-gaz">12 <span>Capacités thermiques des gaz</span></a>
+          <a href="#premier-principe">13 <span>Travail, chaleur, premier principe</span></a>
+          <a href="#transformations-pv">14 <span>Transformations et diagramme pV</span></a>
+          <a href="#transformations-adiabatiques">15 <span>Transformations adiabatiques</span></a>
+          <a href="#machines-thermiques">16 <span>Machines thermiques</span></a>
+          <a href="#cycle-carnot">17 <span>Le cycle de Carnot</span></a>
+          <a href="#second-principe-enonces">18 <span>Irréversibilité et second principe</span></a>
+          <a href="#entropie">19 <span>L’entropie</span></a>
+          <a href="#entropie-microscopique">20 <span>Entropie microscopique</span></a>
+          <a href="#exercices">21 <span>S’entraîner</span></a>
+          <a href="#sources">22 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">φ</span>
+          <p>Une idée directrice : la chaleur est un transfert d’énergie désordonnée, et le second principe impose à ce transfert un sens que le premier principe, à lui seul, ne connaît pas.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> THERMODYNAMIQUE · COURS APPROFONDI</p>
+          <h1>Thermodynamique<br><span>et transferts thermiques</span></h1>
+          <p class="course-intro">Pourquoi la chaleur passe-t-elle toujours du corps chaud vers le corps froid ? Comment un moteur convertit-il la chaleur d’une combustion en travail, et pourquoi son rendement reste-t-il nécessairement inférieur à un ? Ce cours approfondit la branche thermodynamique du catalogue : température et équilibre thermique, échelles, dilatation, calorimétrie, changements d’état, trois mécanismes de transfert, gaz parfaits et gaz réels, théorie cinétique, vitesses moléculaires, équipartition, capacités thermiques des gaz, premier principe, transformations et diagrammes pV, adiabatiques, machines thermiques, cycle de Carnot, second principe et entropie. Les définitions et les lois suivent OpenStax, <em>University Physics</em> volume 2 ; les constantes sont celles du CODATA et du NIST.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>22 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+        <section class="lesson-section" id="temperature-equilibre" aria-labelledby="temperature-equilibre-title">
+          <p class="section-index">01 / TEMPÉRATURE ET ÉQUILIBRE</p>
+          <h2 id="temperature-equilibre-title">Température et équilibre thermique</h2>
+          <p>La <strong>température</strong> se définit d’abord de façon <em>opérationnelle</em> : c’est la grandeur que mesure un thermomètre. La théorie cinétique lui donne ensuite un sens microscopique : elle est proportionnelle à l’énergie cinétique de translation moyenne des molécules du système (OpenStax, <em>University Physics</em> vol. 2, § 1.1 et § 2.2).</p>
+          <p>Deux objets en contact qui n’échangent plus d’énergie nette sont en <strong>équilibre thermique</strong>. Si l’objet A est en équilibre avec B, et B avec C, alors A est en équilibre avec C : cette propriété de transitivité constitue la <strong>loi zéro de la thermodynamique</strong>. Elle justifie l’usage du thermomètre : placé en équilibre avec un corps, il affiche la température de ce corps. Le nom « zéro » vient de Ralph Fowler, dans les années 1930, parce que la loi est logiquement antérieure aux trois autres, déjà numérotées (OpenStax, vol. 2, § 1.1).</p>
+          <p>Le <strong>transfert thermique</strong> — la chaleur — est le mouvement d’énergie d’un lieu ou d’un matériau vers un autre, provoqué par une différence de température (OpenStax, vol. 2, § 1.4). Il s’arrête dès que l’équilibre thermique est atteint. La chaleur n’est donc pas une substance stockée dans un corps : c’est un transfert, dont l’unité SI est le joule.</p>
+          <div class="formula-block">
+            <span class="formula-label">ÉNERGIE CINÉTIQUE MOYENNE D’UNE MOLÉCULE</span>
+            <math class="mathml-display" display="block" aria-label="Un demi m fois la moyenne de v au carré égale trois demis k B T">
+              <mrow>
+                <mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><mo>⟨</mo><msup><mi>v</mi><mn>2</mn></msup><mo>⟩</mo>
+                <mo>=</mo>
+                <mfrac><mn>3</mn><mn>2</mn></mfrac><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi>
+              </mrow>
+            </math>
+            <span class="formula-label">k<sub>B</sub> = 1,380 649 × 10⁻²³ J·K⁻¹ (valeur exacte, SI depuis 2019 — NIST)</span>
+          </div>
+          <p>À 300 K, cette relation donne une énergie cinétique de translation moyenne de <span class="math">1,5 × 1,380 649 × 10⁻²³ × 300 ≈ 6,21 × 10⁻²¹ J</span> par molécule : la température mesure bien une agitation, et non une « quantité de chaleur ».</p>
+          <div class="callout"><strong>Le kelvin, redéfini en 2019</strong><p>Depuis la révision du Système international, le kelvin n’est plus défini par le point triple de l’eau (273,16 K, référence de 1954 à 2019) mais par la fixation de la constante de Boltzmann : « le kelvin […] a pour magnitude celle fixée par la valeur numérique de la constante de Boltzmann égale à exactement 1,380 649 × 10⁻²³ J·K⁻¹ » (NIST, <em>Kelvin: Introduction</em>). Le zéro absolu correspond à 0 K = −273,15 °C = −459,67 °F. À cette température, l’agitation thermique disparaît mais un mouvement de point zéro subsiste, d’origine quantique ; il n’entre pas dans la définition de la température thermodynamique.</p></div>
+        </section>
+
+        <section class="lesson-section" id="echelles-temperature" aria-labelledby="echelles-temperature-title">
+          <p class="section-index">02 / LES ÉCHELLES DE TEMPÉRATURE</p>
+          <h2 id="echelles-temperature-title">Mesurer la température : Celsius, Fahrenheit, Kelvin</h2>
+          <p>Toute échelle thermométrique se construit sur deux températures reproductibles. Le choix usuel est la fusion de la glace et l’ébullition de l’eau sous pression atmosphérique standard (OpenStax, vol. 2, § 1.2).</p>
+          <p>Sur l’échelle <strong>Celsius</strong>, ces repères valent 0 °C et 100 °C. Sur l’échelle <strong>Fahrenheit</strong>, encore utilisée aux États-Unis pour la vie courante, ils valent 32 °F et 212 °F : 100 degrés Celsius couvrent donc 180 degrés Fahrenheit, si bien qu’un écart d’un degré Celsius vaut 1,8 fois un écart d’un degré Fahrenheit (OpenStax, vol. 2, § 1.2).</p>
+          <p>L’échelle <strong>Kelvin</strong> est absolue : son zéro est le zéro absolu, et un écart de 1 K est identique à un écart de 1 °C. Les lois de la thermodynamique s’écrivent avec cette échelle — c’est elle qui rend proportionnelle la pression d’un gaz à volume constant.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CONVERSIONS D’ÉCHELLES</span>
+            <math class="mathml-display" display="block" aria-label="T en kelvins égale thêta en degrés Celsius plus 273,15 ; thêta en degrés Fahrenheit égale 1,8 thêta en degrés Celsius plus 32">
+              <mtable>
+                <mtr><mtd><mrow><mi>T</mi><mo>=</mo><mi>θ</mi><mo>+</mo><mn>273,15</mn></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>θ</mi><mi>F</mi></msub><mo>=</mo><mn>1,8</mn><mo>&#x2062;</mo><mi>θ</mi><mo>+</mo><mn>32</mn></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Comme beaucoup de propriétés physiques varient de façon régulière avec la température, les thermomètres sont nombreux : dilatation d’un liquide dans un tube capillaire (alcool coloré, mercure historique), résistance électrique, couleur de cristaux liquides, ou encore émission de rayonnement infrarouge mesurée par un pyromètre, comme les thermomètres auriculaires (OpenStax, vol. 2, § 1.2).</p>
+          <div class="callout"><strong>Pourquoi la thermodynamique impose l’échelle absolue</strong><p>Une même élévation de température n’a pas le même effet relatif selon l’échelle : une loi comme <span class="math">pV = nRT</span> n’est linéaire en température qu’en kelvins. Convertir d’abord en kelvins évite les contresens des exercices de gaz et d’entropie.</p></div>
+        </section>
+
+        <section class="lesson-section" id="dilatation-thermique" aria-labelledby="dilatation-thermique-title">
+          <p class="section-index">03 / LA DILATATION THERMIQUE</p>
+          <h2 id="dilatation-thermique-title">Pourquoi les corps se dilatent-ils en chauffant ?</h2>
+          <p>Dans un solide, les atomes vibrent autour d’une position moyenne. Le potentiel d’interaction qui les relie n’est pas symétrique : il croît plus vite quand deux atomes se rapprochent que quand ils s’écartent (potentiel de type Lennard-Jones). Une élévation de température accroît l’énergie de vibration ; l’atome passe donc plus de temps du côté « éloigné », la distance moyenne entre voisins augmente et le solide se dilate (OpenStax, vol. 2, § 1.3).</p>
+          <p>Pour un solide isotrope, cette dilatation se décrit par le <strong>coefficient de dilatation linéaire</strong> α, propriété du matériau, quasi constant pour des écarts de température modérés. Un écart de température a la même valeur numérique en kelvins et en degrés Celsius : α s’exprime donc en K⁻¹ ou en °C⁻¹, avec la même valeur (OpenStax, vol. 2, § 1.3).</p>
+          <div class="formula-block">
+            <span class="formula-label">DILATATION LINÉAIRE ET VOLUMIQUE</span>
+            <math class="mathml-display" display="block" aria-label="delta L égale alpha fois L fois delta T ; delta V égale bêta fois V fois delta T avec bêta environ égal à trois alpha">
+              <mtable>
+                <mtr><mtd><mrow><mi>Δ</mi><mi>L</mi><mo>=</mo><mi>α</mi><mo>&#x2062;</mo><mi>L</mi><mo>&#x2062;</mo><mi>Δ</mi><mi>T</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>Δ</mi><mi>V</mi><mo>=</mo><mi>β</mi><mo>&#x2062;</mo><mi>V</mi><mo>&#x2062;</mo><mi>Δ</mi><mi>T</mi><mo>,</mo><mspace width="0.6em"/><mi>β</mi><mo>≈</mo><mn>3</mn><mi>α</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Coefficients de dilatation linéaire α, ordres de grandeur entre 0 °C et 100 °C (K⁻¹) — table Wikipédia <em>Dilatation thermique</em>, valeurs de la littérature</caption>
+              <thead><tr><th scope="col">Matériau</th><th scope="col">α (K⁻¹)</th><th scope="col">Matériau</th><th scope="col">α (K⁻¹)</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Acier</th><td>12,0 × 10⁻⁶</td><th scope="row">Verre sodo-calcique</th><td>9 × 10⁻⁶</td></tr>
+                <tr><th scope="row">Béton</th><td>12 × 10⁻⁶</td><th scope="row">Verre borosilicate (Pyrex)</th><td>4 × 10⁻⁶</td></tr>
+                <tr><th scope="row">Cuivre</th><td>17 × 10⁻⁶</td><th scope="row">Quartz</th><td>0,5 × 10⁻⁶</td></tr>
+                <tr><th scope="row">Aluminium</th><td>23 × 10⁻⁶</td><th scope="row">Invar (36 % Ni)</th><td>1,2 × 10⁻⁶</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Les conséquences pratiques sont directes. Ponts et rails comportent des <strong>joints de dilatation</strong> qui laissent le matériau s’allonger librement. Quand la dilatation est empêchée, elle se transforme en <strong>contrainte thermique</strong>, de même valeur que la contrainte élastique qui rétablirait la longueur initiale : d’où l’intérêt d’un béton armé dont l’acier (α = 12,0 × 10⁻⁶ K⁻¹) et le béton (12 × 10⁻⁶ K⁻¹) se dilatent presque identiquement (OpenStax, vol. 2, § 1.3).</p>
+          <p><strong>Exemple.</strong> Une poutre d’acier de 10,00 m chauffée de 25 °C s’allonge de <span class="math">ΔL = 12,0 × 10⁻⁶ × 10,00 × 25 ≈ 3,0 × 10⁻³ m</span>, soit 3,0 mm ; la même poutre en aluminium s’allongerait de 5,8 mm, deux fois plus.</p>
+        </section>
+
+        <section class="lesson-section" id="chaleur-calorimetrie" aria-labelledby="chaleur-calorimetrie-title">
+          <p class="section-index">04 / CHALEUR ET CALORIMÉTRIE</p>
+          <h2 id="chaleur-calorimetrie-title">Chaleur, capacité thermique et calorimétrie</h2>
+          <p>Élever la température d’un corps demande un transfert thermique. Pour un corps de masse <em>m</em> dont la température varie de ΔT sans changement d’état, ce transfert s’écrit <span class="math">Q = m c ΔT</span>, où <em>c</em> est la <strong>capacité thermique massique</strong> du matériau. La capacité thermique du corps entier vaut <span class="math">C = m c</span> (OpenStax, vol. 2, § 1.4).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">TRANSFERT THERMIQUE SANS CHANGEMENT D’ÉTAT</span>
+            <math class="mathml-display" display="block" aria-label="Q égale m c delta T">
+              <mrow><mi>Q</mi><mo>=</mo><mi>m</mi><mo>&#x2062;</mo><mi>c</mi><mo>&#x2062;</mo><mi>Δ</mi><mi>T</mi></mrow>
+            </math>
+          </div>
+          <p>L’unité historique de la chaleur, la <strong>calorie</strong>, est définie comme l’énergie nécessaire pour élever de 1,00 °C la température de 1,00 g d’eau — précisément entre 14,5 °C et 15,5 °C, car la valeur dépend légèrement de la température. La <strong>kilocalorie</strong> correspond à 1,00 kg d’eau ; c’est elle que l’on retrouve, sous le nom trompeur de « calorie », dans l’étiquetage alimentaire. L’unité SI reste le joule (OpenStax, vol. 2, § 1.4).</p>
+          <p>L’eau possède une capacité thermique massique supérieure à celle de la plupart des substances usuelles : elle s’échauffe donc peu pour un transfert donné. C’est ce qui explique la relative stabilité de la température d’un lac pendant une journée chaude, alors que l’air, bien moins « capacitif », varie beaucoup (OpenStax, vol. 2, § 1.4).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Capacité thermique massique <em>c</em> de quelques substances (J·kg⁻¹·K⁻¹), valeurs usuelles sous pression atmosphérique — table Wikipédia <em>Capacité thermique massique</em>, valeurs de la littérature</caption>
+              <thead><tr><th scope="col">Substance</th><th scope="col">Phase</th><th scope="col">c (J·kg⁻¹·K⁻¹)</th><th scope="col">Substance</th><th scope="col">Phase</th><th scope="col">c (J·kg⁻¹·K⁻¹)</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Eau</th><td>liquide</td><td>4 185</td><th scope="row">Aluminium</th><td>solide</td><td>897</td></tr>
+                <tr><th scope="row">Eau</th><td>glace (0 °C)</td><td>2 060</td><th scope="row">Fer</th><td>solide</td><td>444</td></tr>
+                <tr><th scope="row">Eau</th><td>vapeur</td><td>1 850</td><th scope="row">Cuivre</th><td>solide</td><td>385</td></tr>
+                <tr><th scope="row">Air sec</th><td>gaz</td><td>1 005</td><th scope="row">Éthanol</th><td>liquide</td><td>2 460</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>La <strong>calorimétrie</strong> exploite la conservation de l’énergie dans une enceinte isolée : la somme des transferts échangés entre les corps est nulle, soit <span class="math">Q<sub>froid</sub> + Q<sub>chaud</sub> = 0</span> avec la convention « chaleur reçue positive, chaleur cédée négative » (OpenStax, vol. 2, équation 1.6).</p>
+          <p><strong>Exemple (calcul).</strong> On verse 0,250 kg d’eau à 20,0 °C dans une casserole d’aluminium de 0,500 kg à 150 °C, sans autre échange. La conservation de l’énergie donne <span class="math">(m<sub>eau</sub>c<sub>eau</sub> + m<sub>Al</sub>c<sub>Al</sub>)T<sub>f</sub> = m<sub>eau</sub>c<sub>eau</sub>T<sub>eau</sub> + m<sub>Al</sub>c<sub>Al</sub>T<sub>Al</sub></span>. Avec <span class="math">c<sub>eau</sub> = 4 190 J·kg⁻¹·K⁻¹</span> et <span class="math">c<sub>Al</sub> = 900 J·kg⁻¹·K⁻¹</span>, on obtient <span class="math">T<sub>f</sub> ≈ 59 °C</span> : la température finale est bien plus proche de celle de l’eau, car l’eau stocke beaucoup plus d’énergie par degré (OpenStax, vol. 2, § 1.4).</p>
+          <div class="callout"><strong>Limite du modèle à basse température</strong><p>La capacité thermique massique n’est constante qu’en première approximation. À basse température, celle des solides décroît comme la puissance troisième de la température. Cette loi, dite loi de Debye, a été établie en 1912 : Peter Debye en a donné la première explication en traitant les vibrations atomiques avec la théorie quantique que Planck venait d’employer pour le rayonnement. Le modèle de la capacité thermique constante ne décrit donc correctement un solide que au-dessus de sa température de Debye (OpenStax, vol. 2, § 1.4).</p></div>
+        </section>
+
+        <section class="lesson-section" id="changements-etat" aria-labelledby="changements-etat-title">
+          <p class="section-index">05 / LES CHANGEMENTS D’ÉTAT</p>
+          <h2 id="changements-etat-title">Changements d’état, chaleur latente et diagrammes de phase</h2>
+          <p>Lors d’une <strong>fusion</strong>, un solide devient liquide ; l’inverse est la <strong>solidification</strong>. Lors d’une <strong>vaporisation</strong>, un liquide devient gaz — évaporation lente ou ébullition ; l’inverse est la <strong>condensation</strong>. Ces changements se produisent à des températures qui dépendent de la pression : une pression élevée favorise la phase la plus dense (OpenStax, vol. 2, § 1.5).</p>
+          <p>Pendant un changement d’état, la température reste constante alors que le corps échange de l’énergie : cette énergie sert à rompre (ou à établir) les liaisons entre molécules, non à accroître l’agitation. Elle se calcule avec la <strong>chaleur latente massique</strong> <em>L</em> du changement d’état considéré (OpenStax, vol. 2, § 1.5).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CHALEUR LATENTE</span>
+            <math class="mathml-display" display="block" aria-label="Q égale m L, avec L la chaleur latente massique de fusion ou de vaporisation">
+              <mrow><mi>Q</mi><mo>=</mo><mi>m</mi><mo>&#x2062;</mo><mi>L</mi></mrow>
+            </math>
+            <span class="formula-label">Eau : L<sub>fusion</sub> ≈ 3,34 × 10⁵ J·kg⁻¹ à 0 °C ; L<sub>vaporisation</sub> ≈ 2,26 × 10⁶ J·kg⁻¹ à 100 °C</span>
+          </div>
+          <p>Ces valeurs ne sont pas anecdotiques : porter 1,0 kg d’eau de 20 °C à 100 °C demande <span class="math">4 185 × 80 ≈ 3,3 × 10⁵ J</span>, alors que vaporiser ce kilogramme déjà bouillant en demande <span class="math">2,26 × 10⁶ J</span>, près de sept fois plus. La vaporisation est donc l’étape la plus coûteuse en énergie d’une cuisine, d’un sèche-linge ou d’une centrale thermique — et, à l’inverse, une condensation restitue une grande quantité d’énergie.</p>
+          <p>Le <strong>diagramme de phase</strong> (graphique pression-température) rassemble ces informations : ses courbes sont les lieux où deux phases coexistent. Pour l’eau, la courbe d’ébullition part de 100 °C à 1,00 atm et se prolonge jusqu’au <strong>point critique</strong>, atteint à 374 °C sous 218 atm. Au-delà, liquide et gaz ne se distinguent plus : le fluide est dit <strong>supercritique</strong>. Le dioxyde de carbone est supercritique au-dessus de 31,0 °C (OpenStax, vol. 2, § 1.5).</p>
+          <p>L’eau présente une anomalie célèbre : la pente de sa courbe de fusion est <em>négative</em>, car la glace est moins dense que l’eau liquide. Augmenter la pression abaisse alors la température de fusion — on peut fondre de la glace en la comprimant — au rebours de la règle générale « haute pression, point de fusion plus élevé » (OpenStax, vol. 2, § 1.5).</p>
+          <div class="callout"><strong>Lire un changement d’état sur une courbe de température</strong><p>Chauffé à puissance constante, un morceau de glace se réchauffe jusqu’à 0 °C, puis sa température stagne le temps que toute la glace fonde, remonte jusqu’à 100 °C, stagne de nouveau pendant l’ébullition. Chaque palier correspond à <span class="math">Q = m L</span> ; chacun se traduit aussi par une variation d’entropie <span class="math">ΔS = m L / T</span>, calculable directement puisque la température y est constante (section 19).</p></div>
+        </section>
+
+        <section class="lesson-section" id="conduction" aria-labelledby="conduction-title">
+          <p class="section-index">06 / LA CONDUCTION THERMIQUE</p>
+          <h2 id="conduction-title">La conduction : de proche en proche, sans transport de matière</h2>
+          <p>Trois mécanismes seulement assurent tout transfert thermique : la <strong>conduction</strong>, la <strong>convection</strong> et le <strong>rayonnement</strong>. Tous trois ont deux traits communs : ils supposent une différence de température, et plus cette différence est grande, plus le transfert est rapide (OpenStax, vol. 2, § 1.6).</p>
+          <p>La conduction est le transfert d’énergie à travers de la matière immobile à l’échelle macroscopique, par contact : chaque atome cède une part de son agitation à son voisin. Dans les métaux s’ajoute la contribution des électrons de conduction, ce qui explique leur efficacité. Un carrelage et une moquette à la même température ne procurent pas la même sensation de froid : la peau perd son énergie beaucoup plus vite au contact du carrelage, dont la conductivité est bien supérieure (OpenStax, vol. 2, § 1.6).</p>
+          <div class="formula-block">
+            <span class="formula-label">CONDUCTION EN RÉGIME PERMANENT</span>
+            <math class="mathml-display" display="block" aria-label="débit de chaleur, dQ sur dt, égale k fois A fois delta T divisé par l’épaisseur d">
+              <mrow>
+                <mfrac><mrow><mi>d</mi><mi>Q</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac>
+                <mo>=</mo>
+                <mfrac><mrow><mi>k</mi><mo>&#x2062;</mo><mi>A</mi><mo>&#x2062;</mo><mi>Δ</mi><mi>T</mi></mrow><mi>d</mi></mfrac>
+              </mrow>
+            </math>
+            <span class="formula-label">k : conductivité thermique (W·m⁻¹·K⁻¹) ; A : aire traversée ; d : épaisseur ; ΔT : écart de température</span>
+          </div>
+          <p>La conductivité thermique <em>k</em> classe les matériaux : les métaux sont les meilleurs conducteurs — 46 W·m⁻¹·K⁻¹ pour l’acier doux, 80 W·m⁻¹·K⁻¹ pour le fer, 237 W·m⁻¹·K⁻¹ pour l’aluminium, 390 W·m⁻¹·K⁻¹ pour le cuivre et 418 W·m⁻¹·K⁻¹ pour l’argent à 20 °C — tandis que les gaz et les mousses isolantes restent à quelques centièmes de watt par mètre-kelvin. Un vêtement ne « produit » pas de chaleur : il emprisonne de l’air, faible conducteur, et ralentit la fuite d’énergie du corps (OpenStax, vol. 2, § 1.6 ; table Wikipédia <em>Conductivité thermique</em>).</p>
+          <div class="callout callout-coral"><strong>Mettre en équation, mais aussi dimensionner</strong><p>En régime permanent, le débit <span class="math">dQ/dt</span> est proportionnel à l’aire et à l’écart de température, et inversement proportionnel à l’épaisseur : doubler l’épaisseur d’un isolant divise le débit par deux, doubler la surface vitrée le double. C’est cette loi qui guide le choix d’un double vitrage ou l’isolation d’un chauffe-eau.</p></div>
+        </section>
+
+        <section class="lesson-section" id="convection-rayonnement" aria-labelledby="convection-rayonnement-title">
+          <p class="section-index">07 / CONVECTION ET RAYONNEMENT</p>
+          <h2 id="convection-rayonnement-title">Convection et rayonnement : transporter de la matière, ou n’émettre que de la lumière</h2>
+          <p>La <strong>convection</strong> est le transfert thermique par <em>déplacement macroscopique</em> d’un fluide. L’air chauffé se dilate, devient moins dense et monte : d’où les courants ascendants au-dessus d’un radiateur, la forme des flammes, les mouvements de l’atmosphère et des océans. Le transfert peut être naturel (poussée d’Archimède) ou forcé, lorsqu’un ventilateur ou une pompe impose le mouvement : un four à air pulsé en est l’exemple domestique (OpenStax, vol. 2, § 1.6).</p>
+          <p>Le <strong>rayonnement</strong> n’a pas besoin de matière : tout corps au-dessus du zéro absolu émet un rayonnement électromagnétique, dont le débit croît très vite avec la température. C’est le rayonnement du Soleil qui réchauffe la Terre, comme celui du corps humain que détecte une caméra thermique. La surface émettrice est caractérisée par son <strong>émissivité</strong> e, comprise entre 0 et 1 ; l’objet idéal d’émissivité 1 est le corps noir (OpenStax, vol. 2, § 1.6).</p>
+          <div class="formula-block">
+            <span class="formula-label">RAYONNEMENT NET D’UNE SURFACE</span>
+            <math class="mathml-display" display="block" aria-label="débit de chaleur rayonné net égale e sigma A multiplié par T deux puissance quatre moins T un puissance quatre">
+              <mrow>
+                <mfrac><mrow><mi>d</mi><mi>Q</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac>
+                <mo>=</mo>
+                <mi>e</mi><mo>&#x2062;</mo><mi>σ</mi><mo>&#x2062;</mo><mi>A</mi><mo>&#x2062;</mo><mfenced><mrow><msubsup><mi>T</mi><mn>2</mn><mn>4</mn></msubsup><mo>−</mo><msubsup><mi>T</mi><mn>1</mn><mn>4</mn></msubsup></mrow></mfenced>
+              </mrow>
+            </math>
+            <span class="formula-label">σ = 5,670 374 419 × 10⁻⁸ W·m⁻²·K⁻⁴ (constante de Stefan-Boltzmann, CODATA 2022)</span>
+          </div>
+          <p>La quatrième puissance explique beaucoup : doubler la température absolue d’une surface multiplie son émission par seize. Deux corps de même température n’échangent rien <em>en valeur nette</em>, même s’ils émettent et absorbent tous les deux — c’est pourquoi la relation ci-dessus s’écrit en différence de <span class="math">T⁴</span> et non en simple écart de température (OpenStax, vol. 2, § 1.6).</p>
+          <div class="callout"><strong>Une même scène, trois mécanismes</strong><p>Face à une cheminée, les trois mécanismes coexistent : le rayonnement réchauffe directement la peau, la conduction chauffe l’air au contact des flammes et des pierres, la convection fait monter cet air chaud. À l’inverse, un corps chaud perd de l’énergie par rayonnement et par conduction à travers les vêtements. Identifier le mécanisme dominant est la première étape de tout bilan thermique.</p></div>
+        </section>
+
+        <section class="lesson-section" id="gaz-parfait" aria-labelledby="gaz-parfait-title">
+          <p class="section-index">08 / LE GAZ PARFAIT</p>
+          <h2 id="gaz-parfait-title">Du gaz parfait aux gaz réels</h2>
+          <p>Dans un gaz, les molécules sont très éloignées les unes des autres : à la pression ordinaire, la distance moyenne entre deux molécules dépasse largement leur taille. Les forces d’interaction y sont donc négligeables sauf pendant les chocs, et le comportement du gaz dépend surtout du nombre de molécules par unité de volume et de la température, bien plus que de la nature chimique du gaz (OpenStax, vol. 2, § 2.1).</p>
+          <p>C’est ce qui fonde le <strong>modèle du gaz parfait</strong> : des particules ponctuelles, sans interaction à distance, dont les seules rencontres sont des chocs élastiques. L’état macroscopique est décrit par quatre grandeurs : pression <em>p</em>, volume <em>V</em>, quantité de matière <em>n</em> et température absolue <em>T</em> (OpenStax, vol. 2, § 2.1).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ÉQUATION D’ÉTAT DU GAZ PARFAIT</span>
+            <math class="mathml-display" display="block" aria-label="p V égale n R T">
+              <mrow><mi>p</mi><mo>&#x2062;</mo><mi>V</mi><mo>=</mo><mi>n</mi><mo>&#x2062;</mo><mi>R</mi><mo>&#x2062;</mo><mi>T</mi></mrow>
+            </math>
+            <span class="formula-label">R = 8,314 462 618 J·mol⁻¹·K⁻¹ (constante des gaz parfaits, valeur exacte CODATA 2022)</span>
+          </div>
+          <p>Historiquement, plusieurs régularités expérimentales ont précédé cette équation : à température constante, le produit <span class="math">pV</span> reste constant (relation de Boyle-Mariotte) ; à pression constante, le volume croît proportionnellement à la température absolue ; à pression et température fixées, le volume est proportionnel au nombre de moles. Des travaux de Boyle, Charles, Gay-Lussac et Avogadro, la thermodynamique a tiré une équation d’état unique, valable pour tous les gaz suffisamment dilués (OpenStax, vol. 2, § 2.1).</p>
+          <p><strong>Exemple.</strong> Une mole de gaz parfait occupant 24,0 L à 300 K exerce la pression <span class="math">p = nRT/V = 8,314 × 300 / 0,024 ≈ 1,04 × 10⁵ Pa</span>, soit environ une atmosphère : c’est le volume molaire des gaz aux conditions usuelles de température et de pression.</p>
+          <h3>Quand le modèle lâche : l’équation de Van der Waals</h3>
+          <p>Aux pressions élevées ou près de la liquéfaction, deux effets deviennent mesurables : le volume propre des molécules et l’attraction mutuelle qui réduit la pression exercée sur la paroi. Johannes Diderik van der Waals a proposé en 1873 une équation d’état qui les introduit phénoménologiquement (OpenStax, vol. 2, § 2.1).</p>
+          <div class="formula-block">
+            <span class="formula-label">ÉQUATION D’ÉTAT DE VAN DER WAALS</span>
+            <math class="mathml-display" display="block" aria-label="parenthèse P plus a n carré sur V carré, parenthèse V moins n b, égale n R T">
+              <mrow>
+                <mrow><mo>(</mo><mi>P</mi><mo>+</mo><mfrac><mrow><mi>a</mi><mo>&#x2062;</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><msup><mi>V</mi><mn>2</mn></msup></mfrac><mo>)</mo></mrow>
+                <mrow><mo>(</mo><mi>V</mi><mo>−</mo><mi>n</mi><mo>&#x2062;</mo><mi>b</mi><mo>)</mo></mrow>
+                <mo>=</mo><mi>n</mi><mo>&#x2062;</mo><mi>R</mi><mo>&#x2062;</mo><mi>T</mi>
+              </mrow>
+            </math>
+            <span class="formula-label">a : terme de cohésion (attraction) ; b : covolume molaire (volume exclu) ; le gaz parfait correspond à a = b = 0</span>
+          </div>
+          <p>Le terme <span class="math">a n²/V²</span> corrige la pression mesurée de l’attraction entre molécules, et le terme <span class="math">n b</span> retranche du volume offert le volume occupé par les molécules elles-mêmes. Cette équation décrit qualitativement la continuité entre états liquide et gazeux, la surébullition et le point critique ; elle reste néanmoins peu précise pour la phase liquide et le point critique, et n’est plus guère utilisée aujourd’hui qu’à des fins pédagogiques — elle est la première des équations d’état dites cubiques, encore employées en ingénierie (Wikipédia, <em>Équation d’état de van der Waals</em>).</p>
+          <div class="callout callout-coral"><strong>La température absolue, condition de validité</strong><p>Dans <span class="math">pV = nRT</span>, la température s’exprime obligatoirement en kelvins. La linéarité de la loi disparaît si l’on utilise des degrés Celsius : une erreur de conversion est l’erreur la plus fréquente dans les exercices de thermodynamique.</p></div>
+        </section>
+
+        <section class="lesson-section" id="theorie-cinetique" aria-labelledby="theorie-cinetique-title">
+          <p class="section-index">09 / LA THÉORIE CINÉTIQUE</p>
+          <h2 id="theorie-cinetique-title">La théorie cinétique : la pression comme somme de millions de chocs</h2>
+          <p>La <strong>théorie cinétique des gaz</strong> relie les grandeurs macroscopiques — pression, température — au mouvement des molécules. Sa démarche repose sur un petit nombre d’hypothèses, énoncées explicitement par OpenStax avant tout calcul : un très grand nombre <em>N</em> de molécules identiques de masse <em>m</em> ; des molécules qui obéissent aux lois de Newton et dont le mouvement est désordonné et isotrope ; des molécules beaucoup plus petites que la distance moyenne qui les sépare, si bien que leur volume propre est négligeable devant celui du récipient ; des chocs parfaitement élastiques avec les parois et entre elles ; enfin des forces extérieures (pesanteur, attractions) négligeables (OpenStax, vol. 2, § 2.2).</p>
+          <p>Une molécule qui frappe une paroi élastique y renverse la composante normale de sa quantité de mouvement, et exerce donc une impulsion <span class="math">2 m v₁</span>. Comme les chocs sont innombrables, la force qu’ils produisent paraît continue : la pression d’un gaz n’est rien d’autre que la moyenne statistique de ces impacts (OpenStax, vol. 2, § 2.2).</p>
+          <div class="formula-block">
+            <span class="formula-label">PRESSION DANS UN GAZ PARFAIT</span>
+            <math class="mathml-display" display="block" aria-label="p V égale un tiers de N m fois la moyenne de v au carré">
+              <mrow>
+                <mi>p</mi><mo>&#x2062;</mo><mi>V</mi><mo>=</mo>
+                <mfrac><mn>1</mn><mn>3</mn></mfrac><mi>N</mi><mo>&#x2062;</mo><mi>m</mi><mo>⟨</mo><msup><mi>v</mi><mn>2</mn></msup><mo>⟩</mo>
+              </mrow>
+            </math>
+            <span class="formula-label">N : nombre de molécules ; m : masse d’une molécule ; ⟨v²⟩ : moyenne des carrés des vitesses</span>
+          </div>
+          <p>En comparant ce résultat à l’équation d’état écrite à l’échelle moléculaire, <span class="math">pV = N k<sub>B</sub> T</span>, on obtient la relation centrale de la théorie : <span class="math">⟨v²⟩ = 3 k<sub>B</sub> T / m</span>. La température absolue apparaît donc comme la mesure directe de l’énergie cinétique de translation moyenne — c’est l’interprétation annoncée en section 01 (OpenStax, vol. 2, § 2.2).</p>
+          <div class="callout"><strong>Ce que la dérivation ne suppose pas</strong><p>Les chocs entre molécules n’interviennent pas dans le calcul de la pression : soit ils n’ont pas lieu d’être invoqués, soit ils redistribuent des vitesses sans modifier leur distribution. De plus, le calcul est mené d’abord pour un gaz monoatomique, dont les atomes n’ont aucune énergie de rotation ou de vibration : l’hypothèse sera levée en section 11 avec l’équipartition (OpenStax, vol. 2, § 2.2 et § 2.3).</p></div>
+        </section>
+
+        <section class="lesson-section" id="vitesses-moleculaires" aria-labelledby="vitesses-moleculaires-title">
+          <p class="section-index">10 / VITESSES MOLÉCULAIRES</p>
+          <h2 id="vitesses-moleculaires-title">Vitesses moléculaires et distribution de Maxwell</h2>
+          <p>Dans un gaz, toutes les molécules ne vont pas à la même vitesse. Leur mouvement est aléatoire à l’échelle individuelle, mais la répartition des vitesses d’un grand nombre de molécules est parfaitement reproductible : c’est la <strong>distribution de Maxwell-Boltzmann</strong>, calculée à partir de la théorie cinétique et confirmée expérimentalement (OpenStax, vol. 2, § 2.4).</p>
+          <div class="formula-block">
+            <span class="formula-label">DISTRIBUTION DES VITESSES MOLÉCULAIRES</span>
+            <math class="mathml-display" display="block" aria-label="f de v égale quatre pi fois, m sur deux pi k B T, puissance trois demis, fois v carré, fois exponentielle de moins m v carré sur deux k B T">
+              <mrow>
+                <mi>f</mi><mo>(</mo><mi>v</mi><mo>)</mo><mo>=</mo>
+                <mn>4</mn><mi>π</mi><mo>&#x2062;</mo>
+                <msup><mfenced><mfrac><mi>m</mi><mrow><mn>2</mn><mi>π</mi><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow></mfrac></mfenced><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></msup>
+                <msup><mi>v</mi><mn>2</mn></msup>
+                <msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow></mfrac></mrow></msup>
+              </mrow>
+            </math>
+            <span class="formula-label">f(v) dv est la probabilité qu’une molécule ait une vitesse comprise entre v et v + dv ; la fonction est normalisée : son intégrale de 0 à l’infini vaut 1</span>
+          </div>
+          <p>La forme de la courbe s’explique par le produit de deux facteurs : le terme <span class="math">v²</span>, qui rend f nulle à vitesse nulle et la fait croître comme une parabole, et l’exponentielle décroissante, qui écrase les très grandes vitesses. Il en résulte un unique maximum. Maxwell a établi que la courbe possède une queue exponentielle : quelques molécules peuvent filer à plusieurs fois la vitesse quadratique moyenne (OpenStax, vol. 2, § 2.4).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES TROIS VITESSES CARACTÉRISTIQUES</span>
+            <math class="mathml-display" display="block" aria-label="vitesse la plus probable égale racine de deux R T sur M ; vitesse moyenne égale racine de huit R T sur pi M ; vitesse quadratique moyenne égale racine de trois R T sur M">
+              <mtable>
+                <mtr><mtd><mrow><msub><mi>v</mi><mi>p</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mi>R</mi><mi>T</mi></mrow><mi>M</mi></mfrac></msqrt></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mover><mi>v</mi><mo>¯</mo></mover><mo>=</mo><msqrt><mfrac><mrow><mn>8</mn><mi>R</mi><mi>T</mi></mrow><mrow><mi>π</mi><mi>M</mi></mrow></mfrac></msqrt></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>v</mi><mi>rms</mi></msub><mo>=</mo><msqrt><mfrac><mrow><mn>3</mn><mi>R</mi><mi>T</mi></mrow><mi>M</mi></mfrac></msqrt></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">M : masse molaire (kg·mol⁻¹) ; v<sub>p</sub> &lt; v̄ &lt; v<sub>rms</sub>, dans le rapport √2 ≈ 1,41 ; √(8/π) ≈ 1,60 ; √3 ≈ 1,73</span>
+          </div>
+          <p>Pour l’air (masse molaire 28,965 g·mol⁻¹) à 20 °C, la vitesse quadratique moyenne vaut <span class="math">v<sub>rms</sub> = √(3RT/M) ≈ 502 m·s⁻¹</span>. Pour le diazote (28,0 g·mol⁻¹) à 27 °C, le même calcul donne <span class="math">v<sub>rms</sub> = √(3 × 8,314 × 300,15 / 0,028) ≈ 517 m·s⁻¹</span>. Ces vitesses de quelques centaines de mètres par seconde sont de l’ordre de la vitesse du son dans l’air, ce qui n’est pas un hasard : la propagation du son repose sur les collisions entre molécules.</p>
+          <p>Quand la température augmente, la distribution ne se contente pas de se décaler vers les grandes vitesses : elle s’élargit. Les vitesses très élevées restent rares — seule une infime fraction des molécules dépasse d’un facteur dix la vitesse quadratique moyenne — mais le poids relatif des molécules rapides croît très vite avec la température, ce qui rend les processus « thermiquement activés » extrêmement sensibles à un échauffement (OpenStax, vol. 2, § 2.4).</p>
+        </section>
+
+        <section class="lesson-section" id="energie-interne-equipartition" aria-labelledby="energie-interne-equipartition-title">
+          <p class="section-index">11 / ÉNERGIE INTERNE ET ÉQUIPARTITION</p>
+          <h2 id="energie-interne-equipartition-title">Énergie interne, degrés de liberté et équipartition</h2>
+          <p>L’<strong>énergie interne</strong> d’un système est la somme de toutes ses énergies microscopiques : énergies cinétiques de translation, de rotation et de vibration des molécules, plus les énergies potentielles associées à leurs interactions. Pour un gaz parfait, dont les molécules n’interagissent pas à distance, l’énergie interne ne dépend que de la température — et non du volume occupé (OpenStax, vol. 2, § 2.3 et § 3.5).</p>
+          <p>Un gaz <strong>monoatomique</strong> (hélium, néon, argon) ne possède que trois degrés de liberté, ceux de la translation, en nombre égal aux dimensions de l’espace. Le calcul cinétique de la section 09 conduit alors à une énergie interne proportionnelle à la température (OpenStax, vol. 2, § 2.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ÉNERGIE INTERNE D’UN GAZ PARFAIT MONOATOMIQUE</span>
+            <math class="mathml-display" display="block" aria-label="E interne égale trois demis n R T">
+              <mrow><msub><mi>E</mi><mi>int</mi></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>n</mi><mo>&#x2062;</mo><mi>R</mi><mo>&#x2062;</mo><mi>T</mi></mrow>
+            </math>
+          </div>
+          <p><strong>Équipartition de l’énergie.</strong> Le théorème d’équipartition attribue à chaque terme <em>quadratique</em> de l’énergie (chaque degré de liberté) la même contribution moyenne, <span class="math">½ k<sub>B</sub> T</span> par molécule, soit <span class="math">½ R T</span> par mole. Le nombre ν de degrés de liberté fixe donc l’énergie interne molaire et le coefficient γ : <span class="math">γ = (ν + 2)/ν</span>, et l’énergie interne peut s’écrire <span class="math">U = pV/(γ − 1)</span> (Wikipédia, <em>Théorie cinétique des gaz</em>).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Degrés de liberté, capacités thermiques molaires et coefficient γ d’un gaz parfait ; C<sub>V</sub> = νR/2 et C<sub>p</sub> = C<sub>V</sub> + R, avec R = 8,314 462 618 J·mol⁻¹·K⁻¹</caption>
+              <thead><tr><th scope="col">Type de gaz</th><th scope="col">Degrés de liberté ν</th><th scope="col">C<sub>V</sub> (J·mol⁻¹·K⁻¹)</th><th scope="col">C<sub>p</sub> (J·mol⁻¹·K⁻¹)</th><th scope="col">γ = C<sub>p</sub>/C<sub>V</sub></th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Monoatomique</th><td>3 (translations)</td><td>12,47</td><td>20,79</td><td>1,67</td></tr>
+                <tr><th scope="row">Diatomique</th><td>5 (3 + 2 rotations)</td><td>20,79</td><td>29,10</td><td>1,40</td></tr>
+                <tr><th scope="row">Polyatomique</th><td>6 (3 + 3 rotations)</td><td>24,94</td><td>33,26</td><td>1,33</td></tr>
+                <tr><th scope="row">Diatomique à haute température</th><td>7 (vibration active)</td><td>29,10</td><td>37,41</td><td>1,29</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Exemple (d’après OpenStax, exemple 2.8).</strong> Un échantillon de 0,125 kg de xénon (masse molaire 131,3 g·mol⁻¹, donc <span class="math">n = 125 / 131,3 ≈ 0,952 mol</span>) est enfermé à 20,0 °C dans un cylindre rigide. Il reçoit 180 J à travers les parois. Comme le xénon est monoatomique, <span class="math">ΔT = 2Q/(3nR) ≈ 15,2 °C</span> : la température d’équilibre s’établit vers 35,2 °C (OpenStax, vol. 2, exemple 2.8).</p>
+          <div class="callout"><strong>Un modèle qui se vérifie sur les métaux aussi</strong><p>Le même raisonnement d’équipartition s’applique aux solides, dont chaque atome vibre selon trois directions : le modèle prévoit une capacité thermique molaire voisine de 25 J·mol⁻¹·K⁻¹, indépendante de la substance. Il échoue à basse température, où la capacité thermique décroît comme T³ — ce qui a précisément motivé la théorie quantique de Debye (OpenStax, vol. 2, § 2.3).</p></div>
+        </section>
+
+        <section class="lesson-section" id="capacites-thermiques-gaz" aria-labelledby="capacites-thermiques-gaz-title">
+          <p class="section-index">12 / CAPACITÉS THERMIQUES DES GAZ</p>
+          <h2 id="capacites-thermiques-gaz-title">Chauffer un gaz à volume constant ou à pression constante</h2>
+          <p>On distingue deux façons de chauffer un gaz, et elles ne demandent pas la même quantité d’énergie. La <strong>chaleur molaire à volume constant</strong>, notée <span class="math">C<sub>V</sub></span>, correspond à un échauffement dans un récipient rigide : la pression augmente, et toute l’énergie fournie sert à élever la température. La <strong>chaleur molaire à pression constante</strong>, notée <span class="math">C<sub>p</sub></span>, correspond à un échauffement sous piston chargé d’un poids : le gaz se dilate, et une part de l’énergie reçue est consommée par le travail de dilatation (OpenStax, vol. 2, § 3.5).</p>
+          <p>Pour un gaz parfait, la différence entre ces deux capacités est constante et vaut exactement la constante des gaz parfaits : <span class="math">C<sub>p</sub> − C<sub>V</sub> = R</span>. L’explication est géométrique : lors d’une dilatation, le gaz pousse le piston sur toute la distance traversée, ce qui exige un travail supplémentaire égal à <span class="math">p ΔV = nR ΔT</span> par mole (OpenStax, vol. 2, § 3.5).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CAPACITÉS MOLAIRES D’UN GAZ PARFAIT</span>
+            <math class="mathml-display" display="block" aria-label="C p moins C V égale R ; C V égale nu fois R sur deux ; gamma égale C p sur C V">
+              <mtable>
+                <mtr><mtd><mrow><msub><mi>C</mi><mi>p</mi></msub><mo>−</mo><msub><mi>C</mi><mi>V</mi></msub><mo>=</mo><mi>R</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>C</mi><mi>V</mi></msub><mo>=</mo><mfrac><mrow><mi>ν</mi><mi>R</mi></mrow><mn>2</mn></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>γ</mi><mo>=</mo><mfrac><msub><mi>C</mi><mi>p</mi></msub><msub><mi>C</mi><mi>V</mi></msub></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p><strong>Lecture des valeurs.</strong> Pour un gaz monoatomique (ν = 3), <span class="math">C<sub>V</sub> = 3R/2 ≈ 12,47 J·mol⁻¹·K⁻¹</span> et <span class="math">C<sub>p</sub> = 5R/2 ≈ 20,79 J·mol⁻¹·K⁻¹</span>, donc <span class="math">γ = 5/3 ≈ 1,67</span>. Pour un gaz diatomique aux températures usuelles (ν = 5), <span class="math">C<sub>V</sub> = 5R/2 ≈ 20,79 J·mol⁻¹·K⁻¹</span> et <span class="math">C<sub>p</sub> = 7R/2 ≈ 29,10 J·mol⁻¹·K⁻¹</span>, donc <span class="math">γ = 7/5 = 1,40</span>. Ces valeurs sont celles du tableau de la section 11.</p>
+          <p><strong>Chauffage isochore et isobare.</strong> Si <span class="math">n</span> moles de gaz parfait sont chauffées à volume constant, l’énergie reçue vaut <span class="math">Q = nC<sub>V</sub> ΔT</span> ; à pression constante, elle vaut <span class="math">Q = nC<sub>p</sub> ΔT</span>. La différence <span class="math">Q<sub>p</sub> − Q<sub>V</sub> = nR ΔT</span> correspond au travail effectué par le gaz qui se dilate sous la pression constante (OpenStax, vol. 2, § 3.5).</p>
+          <p><strong>Exemple (calcul).</strong> Un ballon de foot en caoutchouc, de volume 154 L, contient de l’air à 25,0 °C et à la pression atmosphérique. Sa paroi est souple : la pression reste constante quand le ballon se dilate. Le nombre de moles vaut <span class="math">n = pV/RT ≈ (101 325 × 0,154)/(8,314 × 298,15) ≈ 6,30 mol</span>. Pour élever la température de 25,0 °C à 125 °C, soit <span class="math">ΔT = 100 K</span>, la quantité de chaleur nécessaire est <span class="math">Q = nC<sub>p</sub>ΔT</span>, avec <span class="math">C<sub>p</sub> = 7R/2 ≈ 29,1 J·mol⁻¹·K⁻¹</span> pour l’air assimilé à un gaz diatomique. On obtient <span class="math">Q ≈ 6,30 × 29,1 × 100 ≈ 1,83 × 10⁴ J</span>, soit environ 18 kJ (OpenStax, vol. 2, § 3.5).</p>
+          <div class="callout"><strong>Une conséquence quotidienne</strong><p>C’est parce que <span class="math">C<sub>p</sub> &gt; C<sub>V</sub></span> qu’une vapeur surchauffée dans une casserole est plus chaude que l’eau qui l’a produite : le travail de dilatation a absorbé une partie de la chaleur, et la vapeur sort à une température supérieure à 100 °C. À l’inverse, comprimer rapidement un spray refroidit le contenu, car le travail fourni au gaz élève sa température (section 15).</p></div>
+        </section>
+<section class="lesson-section" id="premier-principe" aria-labelledby="premier-principe-title">
+          <p class="section-index">13 / TRAVAIL, CHALEUR, PREMIER PRINCIPPE</p>
+          <h2 id="premier-principe-title">L’énergie se conserve : le premier principe</h2>
+          <p>La thermodynamique distingue deux façons d’échanger de l’énergie entre un système et le milieu : le <strong>travail</strong>, transfert d’énergie associé à une force agissant sur une distance (compression, dilatation), et la <strong>chaleur</strong>, transfert d’énergie dû à une différence de température, par conduction, convection ou rayonnement. Ce sont des mécanismes de transfert, non des contenus : un système « contient » de l’énergie interne, il ne « contient » pas de chaleur (OpenStax, vol. 2, § 3.2).</p>
+          <p>Le <strong>premier principe</strong> énonce la conservation de l’énergie. Avec la convention d’OpenStax — <span class="math">Q &gt; 0</span> si le système reçoit de l’énergie, <span class="math">W &gt; 0</span> si le système fournit du travail — il s’écrit :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">PREMIER PRINCIPE DE LA THERMODYNAMIQUE</span>
+            <math class="mathml-display" display="block" aria-label="Delta E int égale Q moins W">
+              <mrow><mi>Δ</mi><msub><mi>E</mi><mi>int</mi></msub><mo>=</mo><mi>Q</mi><mo>−</mo><mi>W</mi></mrow>
+            </math>
+          </div>
+          <p>Cette écriture se lit : la variation d’énergie interne d’un système est égale à la chaleur reçue moins le travail fourni. Elle traduit le bilan d’énergie d’un système fermé, où aucun échange de matière n’a lieu avec l’extérieur (OpenStax, vol. 2, § 3.3).</p>
+          <p><strong>Le travail mécanique.</strong> Lorsque la pression exercée sur un gaz varie pendant une transformation, le travail fourni par le gaz est l’aire sous la courbe de pression dans un diagramme pV. Si la pression reste constante, ce travail se calcule algébriquement ; si elle varie, il faut intégrer le produit <span class="math">p dV</span>.</p>
+          <div class="formula-block">
+            <span class="formula-label">TRAVAIL FOURNI PAR UN GAZ</span>
+            <math class="mathml-display" display="block" aria-label="W égale l'intégrale de p dV ; si p constante W égale p fois Delta V">
+              <mtable>
+                <mtr><mtd><mrow><mi>W</mi><mo>=</mo><mo>∫</mo><mi>p</mi><mspace width="0.2em"/><mi>d</mi><mi>V</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>p</mi><mspace width="0.3em"/><mtext>constante</mtext><mo>:</mo><mspace width="0.3em"/><mi>W</mi><mo>=</mo><mi>p</mi><mspace width="0.2em"/><mi>Δ</mi><mi>V</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Le signe du travail découle de la convention : une <strong>dilatation</strong> (<span class="math">ΔV &gt; 0</span>) fournit du travail (<span class="math">W &gt; 0</span>), une <strong>compression</strong> (<span class="math">ΔV &lt; 0</span>) en consomme (<span class="math">W &lt; 0</span>). Sur le diagramme pV, le travail fourni par le gaz correspond à l’aire <em>sous</em> la courbe de transformation (OpenStax, vol. 2, § 3.2 et § 3.4).</p>
+          <p>Dans le cas particulier d’une <strong>transformation isotherme</strong> d’un gaz parfait, l’énergie interne ne varie pas — elle ne dépend que de la température — donc <span class="math">ΔE<sub>int</sub> = 0</span> et <span class="math">Q = W</span>. Toute l’énergie reçue est convertie en travail (OpenStax, vol. 2, § 3.4).</p>
+          <p><strong>L’enthalpie.</strong> Lorsqu’un système n’est soumis qu’à un travail de pression, on introduit une fonction d’état <strong>enthalpie</strong> <span class="math">H = E<sub>int</sub> + pV</span>, dont la variation à pression constante est égale à la chaleur échangée : <span class="math">ΔH = Q<sub>p</sub></span>. Pour un gaz parfait, <span class="math">ΔH = nC<sub>p</sub> ΔT</span>. Cette grandeur suit les changements d’état à pression atmosphérique : les chaleurs de fusion et de vaporisation sont des variations d’enthalpie (OpenStax, vol. 2, § 3.5).</p>
+          <div class="callout"><strong>Un bilan à quatre postes</strong><p>Le premier principe permet de fermer un bilan d’énergie en une seule égalité, <span class="math">E<sub>entrée</sub> = E<sub>sortie</sub></span>, où chaque poste est un travail ou une chaleur. Appliqué à un ballon dans lequel on envoie du travail électrique pour chauffer un gaz contenu à volume constant, il donne <span class="math">W<sub>élec</sub> = ΔE<sub>int</sub> = nC<sub>V</sub> ΔT</span> : c’est exactement le résultat de la section 11.</p></div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+      <section class="lesson-section" id="transformations-pv" aria-labelledby="transformations-pv-title">
+          <p class="section-index">14 / TRANSFORMATIONS ET DIAGRAMME pV</p>
+          <h2 id="transformations-pv-title">Lire une transformation dans un diagramme pV</h2>
+          <p>Un <strong>diagramme pV</strong> représente l’état d’un gaz parfait par un point : l’abscisse est le volume V, l’ordonnée la pression p. Une transformation correspond à une <em>courbe</em> qui relie deux points de ce plan (OpenStax, vol. 2, § 3.4). Quatre transformations usuelles se combinent pour décrire un cycle.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Transformations usuelles d’un gaz parfait : relation dans le diagramme pV, variation d’énergie interne et travail fourni</caption>
+              <thead><tr><th scope="col">Transformation</th><th scope="col">Relation</th><th scope="col">ΔE<sub>int</sub></th><th scope="col">Travail W</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Isotherme (T = cte)</th><td><span class="math">pV = nRT</span> — hyperbole</td><td>0</td><td><span class="math">nRT ln(V<sub>f</sub>/V<sub>i</sub>)</span></td></tr>
+                <tr><th scope="row">Isobare (p = cte)</th><td><span class="math">V ∝ T</span> — horizontale</td><td><span class="math">nC<sub>V</sub>ΔT</span></td><td><span class="math">pΔV = nRΔT</span></td></tr>
+                <tr><th scope="row">Isochore (V = cte)</th><td><span class="math">p ∝ T</span> — verticale</td><td><span class="math">nC<sub>V</sub>ΔT</span></td><td>0</td></tr>
+                <tr><th scope="row">Adiabatique (Q = 0)</th><td><span class="math">pV<sup>γ</sup> = cte</span> — pente raide</td><td><span class="math">−W</span></td><td><span class="math">(p<sub>i</sub>V<sub>i</sub> − p<sub>f</sub>V<sub>f</sub>)/(γ − 1)</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Le tableau se lit directement à partir du premier principe. En isochore, le gaz ne se dilate pas : il ne fournit aucun travail, et toute la chaleur reçue élève son énergie interne. En isobare, une partie de la chaleur est consommée par la dilatation. En isotherme, l’énergie interne ne bouge pas : chaleur et travail se compensent exactement (OpenStax, vol. 2, § 3.4).</p>
+          <p><strong>Exemple : détente isothermale.</strong> Une mole de gaz parfait à <span class="math">T = 300 K</span> passe de <span class="math">V = 1 L</span> à <span class="math">V = 3 L</span> par détente isothermale réversible. Le travail fourni vaut <span class="math">W = nRT ln(3/1) = 1 × 8,314 × 300 × ln 3 ≈ 2,74 × 10³ J</span>. Cette énergie est puisée dans l’énergie interne du gaz, qu’un bain-marie à 300 K doit fournir pour maintenir la température constante (OpenStax, vol. 2, § 3.4).</p>
+          <p><strong>Le diagramme h–s.</strong> Pour le dimensionnement des machines thermiques, on utilise un diagramme <em>enthalpie–entropie</em> plutôt que le diagramme pV : ces représentations rendent visible l’entropie générée et permettent de lire directement le rendement réel d’un cycle (cours de thermodynamique appliquée).</p>
+          <div class="callout"><strong>Pourquoi un diagramme pV ne suffit pas</strong><p>Le diagramme pV donne le travail fourni par le gaz, mais il ne dit rien de la chaleur reçue. Deux cycles peuvent rapport la même aire tout en échangeant des quantités de chaleur différentes. C’est pourquoi le second principe exige de raisonner sur l’entropie (sections 18 à 20), grandeur absente du diagramme pV.</p></div>
+        </section>
+    <section class="lesson-section" id="transformations-adiabatiques" aria-labelledby="transformations-adiabatiques-title">
+          <p class="section-index">15 / TRANSFORMATIONS ADIABATIQUES</p>
+          <h2 id="transformations-adiabatiques-title">Se refroidir en fournissant du travail</h2>
+          <p>Une transformation est <strong>adiabatique</strong> lorsqu’aucune chaleur n’échange entre le système et le milieu : <span class="math">Q = 0</span>. Une paroi isolante, un cylindre à piston suffisamment lent, ou une détente si rapide que la chaleur n’a pas le temps de circuler en sont des approximations usuelles (OpenStax, vol. 2, § 3.6).</p>
+          <p>Le premier principe donne alors <span class="math">ΔE<sub>int</sub> = −W</span> : le travail fourni vient nécessairement de l’énergie interne, qui diminue. Or, pour un gaz parfait, l’énergie interne est fonction croissante de la température (section 11). Il en découle un résultat unique et contre-intuitif : <strong>un gaz qui se dilate en adiabatique se refroidit, et un gaz qu’on comprime en adiabatique s’échauffe.</strong> C’est le principe du moteur à air comprimé, de la pompe à vélo et de la détente de Joule-Thomson (OpenStax, vol. 2, § 3.6).</p>
+          <p>Pour un gaz parfait, l’intégration du premier principe en remplaçant <span class="math">dE<sub>int</sub> = nC<sub>V</sub> dT</span> et <span class="math">p = nRT/V</span> conduit à la <strong>loi de Poisson</strong> :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">TRANSFORMATION ADIABATIQUE D’UN GAZ PARFAIT</span>
+            <math class="mathml-display" display="block" aria-label="p V puissance gamma égale constante ; T V puissance gamma moins un égale constante">
+              <mtable>
+                <mtr><mtd><mrow><mi>p</mi><msup><mi>V</mi><mi>γ</mi></msup><mo>=</mo><mtext>constante</mtext></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>T</mi><msup><mi>V</mi><mrow><mi>γ</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mtext>constante</mtext></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Sur un diagramme pV, une adiabatique est une courbe <em>plus raide</em> que l’isotherme passant par le même point, puisque <span class="math">dp/dV = −γp/V</span> le long de l’adiabatique, contre <span class="math">−p/V</span> le long de l’isotherme. La compression de l’air dans une pompe à vélo en donne la démonstration directe : la pression monte plus vite qu’en compression isotherme, et l’air s’échauffe assez pour que l’on ne tienne pas la pompe (OpenStax, vol. 2, § 3.6).</p>
+          <p><strong>Exemple : détente d’air comprimé.</strong> Un litre d’air à 20 atm et 20 °C se détend adiabatiquement jusqu’à 1 atm. Pour l’air assimilé à un gaz diatomique, <span class="math">γ = 1,40</span>, donc <span class="math">T<sub>f</sub> = T<sub>i</sub>(p<sub>i</sub>/p<sub>f</sub>)<sup>(γ−1)/γ</sup></span>, soit <span class="math">T<sub>f</sub> ≈ 293 × 20<sup>0,286</sup> ≈ 293 × 2,42 ≈ 709 K</span> : l’air sort à environ 436 °C, ce qui explique qu’un compresseur de pneumatique devienne brûlant après usage (OpenStax, vol. 2, § 3.6).</p>
+          <div class="callout"><strong>La détente de Joule-Thomson</strong><p>Lorsqu’un gaz s’écoule d’un cylindre à forte pression vers un cylindre à faible pression à travers un tuyau étroit, l’écoulement est adiabatique et le bilan enthalpique est constant : <span class="math">H<sub>initial</sub> = H<sub>final</sub></span>. La variation de température qui en résulte porte le nom d’<em>effet Joule-Thomson</em>. C’est le principe des machines à froid, qui utilisent une vanne de détente pour refroidir un fluide frigorigène, et il explique que le propane d’un camping-gaz reste liquide dans sa bouteille sous pression alors qu’il est gazeux à la pression atmosphérique (OpenStax, vol. 2, § 3.6 ; cours de chimie).</p></div>
+          </section>
+
+        <section class="lesson-section" id="machines-thermiques" aria-labelledby="machines-thermiques-title">
+          <p class="section-index">16 / MACHINES THERMIQUES</p>
+          <h2 id="machines-thermiques-title">Convertir de la chaleur en travail : le rendement</h2>
+          <p>Une <strong>machine thermique</strong> est un dispositif qui prélève de la chaleur d’une source chaude, en convertit une partie en travail mécanique, et rejette le reste dans une source froide. Il faut donc au moins deux réservoirs de température : une centrale électrique rejette sa chaleur à l’atmosphère ou dans un cours d’eau, un moteur à combustion interne rejette celle des gaz d’échappement dans l’air ambiant (OpenStax, vol. 2, § 4.2).</p>
+          <p>Une machine thermique fonctionne par un <strong>cycle</strong> : une substance motrice est ramenée à son état initial après avoir traversé un ensemble de transformations. Sur le diagramme pV, un cycle est une <em>boucle</em> fermée, et le travail total fourni par le gaz est l’aire enclosed par la courbe (OpenStax, vol. 2, § 4.2).</p>
+          <p>Sur un cycle complet, l’énergie interne retrouve sa valeur initiale, donc <span class="math">ΔE<sub>int</sub> = 0</span> et le premier principe impose <span class="math">Q<sub>h</sub> = W + Q<sub>c</sub></span>. Le <strong>rendement</strong> est la fraction de la chaleur absorbée qui est effectivement transformée en travail utile :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">RENDEMENT D’UNE MACHINE THERMIQUE</span>
+            <math class="mathml-display" display="block" aria-label="eta égale W divisé par Q h, égale 1 moins Q c divisé par Q h">
+              <mrow><mi>η</mi><mo>=</mo><mfrac><mi>W</mi><msub><mi>Q</mi><mi>h</mi></msub></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><msub><mi>Q</mi><mi>c</mi></msub><msub><mi>Q</mi><mi>h</mi></msub></mfrac></mrow>
+            </math>
+          </div>
+          <p><strong>La question centrale.</strong> Existe-t-il une machine qui convertirait <em>toute</em> la chaleur d’une source en travail ? La réponse thermodynamique est donnée par le principe de Carnot (section 17). On peut noter d’emblée deux raisons pour lesquelles le rendement réel reste inférieur au rendement maximal : les machines réelles sont irréversibles, et elles n’opèrent pas entre deux réservoirs à température uniforme (section 18).</p>
+          <p><strong>Réfrigérateur et pompe à chaleur.</strong> Les mêmes cycles peuvent être parcourus en sens inverse : on fournit alors du travail pour transférer de la chaleur du froid vers le chaud. Un <strong>réfrigérateur</strong> est conçu pour extraire la chaleur d’une source froide ; une <strong>pompe à chaleur</strong>, pour la rejeter dans une source chaude. On mesure leur performance par un <em>coefficient de performance</em> K, qui n’a pas la même nature que le rendement et peut dépasser 1 (OpenStax, vol. 2, § 4.3).</p>
+          <div class="formula-block">
+            <span class="formula-label">COEFFICIENTS DE PERFORMANCE</span>
+            <math class="mathml-display" display="block" aria-label="K R égale Q c divisé par W ; K P égale Q h divisé par W">
+              <mtable>
+                <mtr><mtd><mrow><msub><mi>K</mi><mi>R</mi></msub><mo>=</mo><mfrac><msub><mi>Q</mi><mi>c</mi></msub><mi>W</mi></mfrac><mo>=</mo><mfrac><msub><mi>Q</mi><mi>c</mi></msub><mrow><msub><mi>Q</mi><mi>h</mi></msub><mo>−</mo><msub><mi>Q</mi><mi>c</mi></msub></mrow></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>K</mi><mi>P</mi></msub><mo>=</mo><mfrac><msub><mi>Q</mi><mi>h</mi></msub><mi>W</mi></mfrac><mo>=</mo><mfrac><msub><mi>Q</mi><mi>h</mi></msub><mrow><msub><mi>Q</mi><mi>h</mi></msub><mo>−</mo><msub><mi>Q</mi><mi>c</mi></msub></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>On lit immédiatement que <span class="math">K<sub>P</sub> &gt; K<sub>R</sub></span> : la pompe à chaleur rejette <span class="math">Q<sub>h</sub></span>, plus grand que <span class="math">Q<sub>c</sub></span>, pour un même travail. Une pompe à chaleur qui chauffe un logement restitue à l’intérieur, sous forme de chaleur, une énergie supérieure à celle consommée en électricité : le reste provient de l’air extérieur, extrait gratuitement. C’est pourquoi un climatiseur réversible est plus économique qu’un simple chauffage électrique à résistance, qui n’est qu’un cas particulier de <span class="math">K<sub>P</sub> = 1</span> (OpenStax, vol. 2, § 4.3).</p>
+          <div class="callout"><strong>Rendement et coefficient de performance : deux grandeurs à ne pas confondre</strong><p>Le rendement <span class="math">η</span> est strictement inférieur à 1, car une partie de la chaleur doit être rejetée. Le coefficient K d’un réfrigérateur est un rapport de deux flux d’énergie et peut atteindre 4 ou 5 sans qu’aucune loi ne soit violée : cela signifie qu’on extrait quatre fois plus de chaleur du froid que l’énergie investie, non qu’on crée de l’énergie. La différence tient à ce que le travail fourni est un apport d’énergie extérieur, tandis que la chaleur extraite était déjà présente dans le système (OpenStax, vol. 2, § 4.3).</p></div>
+<section class="lesson-section" id="cycle-carnot" aria-labelledby="cycle-carnot-title">
+          <p class="section-index">17 / LE CYCLE DE CARNOT</p>
+          <h2 id="cycle-carnot-title">La machine la plus efficace qui soit</h2>
+          <p>En 1824, l’ingénieur français Sadi Carnot (1796-1832) chercha à améliorer le rendement des machines à vapeur de son époque. Il construisit un cycle idéal — le <strong>cycle de Carnot</strong> — dont le rendement est le plus élevé possible entre deux réservoirs de températures données (OpenStax, vol. 2, § 4.5).</p>
+          <p>Le cycle de Carnot est <strong>réversible</strong> : chacune de ses quatre transformations se déroule si lentement et si près de l’équilibre que l’on peut la faire marche arrière sans modifier le milieu. Il est composé de deux transformations isothermes et de deux transformations adiabatiques, avec une substance motrice qui est un gaz parfait (OpenStax, vol. 2, § 4.5).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les quatre transformations du cycle de Carnot, et la relation qui les relie</caption>
+              <thead><tr><th scope="col">Étape</th><th scope="col">Type</th><th scope="col">Ce qui se passe</th><th scope="col">Relation</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">M → N</th><td>Isotherme à T<sub>h</sub></td><td>Le gaz absorbe Q<sub>h</sub> et fournit W<sub>1</sub></td><td><span class="math">Q<sub>h</sub> = nRT<sub>h</sub> ln(V<sub>N</sub>/V<sub>M</sub>)</span></td></tr>
+                <tr><th scope="row">N → O</th><td>Adiabatique</td><td>Le gaz se dilate, T tombe de T<sub>h</sub> à T<sub>c</sub></td><td><span class="math">T<sub>h</sub>V<sub>N</sub><sup>γ−1</sup> = T<sub>c</sub>V<sub>O</sub><sup>γ−1</sup></span></td></tr>
+                <tr><th scope="row">O → P</th><td>Isotherme à T<sub>c</sub></td><td>Le gaz est comprimé et rejette Q<sub>c</sub></td><td><span class="math">Q<sub>c</sub> = nRT<sub>c</sub> ln(V<sub>O</sub>/V<sub>P</sub>)</span></td></tr>
+                <tr><th scope="row">P → M</th><td>Adiabatique</td><td>Le gaz est comprimé, T remonte à T<sub>h</sub></td><td><span class="math">T<sub>c</sub>V<sub>P</sub><sup>γ−1</sup> = T<sub>h</sub>V<sub>M</sub><sup>γ−1</sup></span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Pendant l’expansion isotherme à <span class="math">T<sub>h</sub></span>, l’énergie interne ne varie pas puisque la température est constante : <span class="math">ΔE<sub>int</sub> = 0</span>, donc <span class="math">Q<sub>h</sub> = W<sub>1</sub></span>. Les deux relations adiabatiques se déduisent de la loi de Poisson de la section 15 (OpenStax, vol. 2, § 4.5).</p>
+          <p>En combinant ces quatre relations, on obtient le <strong>rendement de Carnot</strong>, qui ne dépend que des deux températures :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">RENDEMENT DE CARNOT</span>
+            <math class="mathml-display" display="block" aria-label="eta C égale 1 moins T c divisé par T h">
+              <mrow><msub><mi>η</mi><mi>C</mi></msub><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><msub><mi>T</mi><mi>c</mi></msub><msub><mi>T</mi><mi>h</mi></msub></mfrac></mrow>
+            </math>
+          </div>
+          <p><strong>Interprétation.</strong> Le rendement est d’autant plus élevé que la source chaude est chaude et la source froide froide. Mais <span class="math">η<sub>C</sub> &lt; 1</span> dès que <span class="math">T<sub>c</sub> &gt; 0 K</span> : <strong>aucune machine thermique ne peut convertir la totalité de la chaleur qu’elle reçoit en travail</strong>. Le second principe est ainsi l’équivalent thermodynamique de l’énoncé de Clausius : il est impossible de construire une machine qui fonctionnerait seule entre deux réservoirs, sans autre effet (OpenStax, vol. 2, § 4.4 et § 4.5).</p>
+          <p><strong>Exemple numérique.</strong> Une machine de Carnot opérant entre <span class="math">T<sub>h</sub> = 500 K</span> et <span class="math">T<sub>c</sub> = 300 K</span> a pour rendement <span class="math">η<sub>C</sub> = 1 − 300/500 = 0,40</span>, soit <strong>40 %</strong>. Si elle absorbe <span class="math">Q<sub>h</sub> = 1 000 J</span>, elle fournit <span class="math">W = 400 J</span> et rejette <span class="math">Q<sub>c</sub> = 600 J</span> vers la source froide (OpenStax, vol. 2, § 4.5).</p>
+          <p><strong>Machine de Carnot fonctionnant en sens inverse.</strong> Parcouru à l’envers, le cycle devient un <strong>réfrigérateur de Carnot</strong> : on fournit du travail pour extraire <span class="math">Q<sub>c</sub></span> du froid et rejeter <span class="math">Q<sub>h</sub></span> vers le chaud. Le coefficient de performance maximal vaut <span class="math">K<sub>R</sub> = T<sub>c</sub>/(T<sub>h</sub> − T<sub>c</sub>)</span> : à <span class="math">T<sub>c</sub> = 300 K</span> et <span class="math">T<sub>h</sub> = 500 K</span>, on trouve <span class="math">K<sub>R</sub> = 300/200 = 1,5</span> (OpenStax, vol. 2, § 4.5).</p>
+          <div class="callout"><strong>Une échelle de température absolue</strong><p>Comme <span class="math">η<sub>C</sub></span> ne dépend que du <em>rapport</em> des températures, la machine de Carnot permet de définir une échelle absolue : il suffit de fixer le zéro à la température de la source froide, ce qui conduit au zéro absolu. C’est ainsi que Lord Kelvin a construit l’échelle thermodynamique, celle que nous utilisons aujourd’hui, et dont la définition a été revisitée en 2019 en termes de constante de Boltzmann (NIST, <em>Kelvin: Introduction</em> ; OpenStax, vol. 2, § 4.5).</p></div>
+        </section>
+        </section>
+      <section class="lesson-section" id="second-principe-enonces" aria-labelledby="second-principe-enonces-title">
+          <p class="section-index">18 / IRRÉVERSIBILITÉ ET SECOND PRINCIPE</p>
+          <h2 id="second-principe-enonces-title">Ce que le premier principe ne dit pas</h2>
+          <p>Le premier principe énonce que l’énergie se conserve. Il ne dit rien du <em>sens</em> dans lequel les transformations se produisent. Pourtant, certains échanges d’énergie qui ne violeraient pas la conservation sont impossibles : la chaleur ne passe pas spontanément d’un corps froid vers un corps chaud, et un système isolé n’évolue pas spontanément vers un état plus ordonné (OpenStax, vol. 2, § 4.4).</p>
+          <p>La distinction repose sur les <strong>processus réversibles et irréversibles</strong>. Un processus est <strong>réversible</strong> si le système <em>et</em> son environnement peuvent être restitués exactement dans leur état initial en parcourant le chemin inverse. La condition nécessaire est que la transformation soit quasi statique, c’est-à-dire que le système reste à l’équilibre à chaque instant. Retourner le système est toujours possible ; rendre le milieu à son état initial aussi est la partie difficile (OpenStax, vol. 2, § 4.1).</p>
+          <p><strong>L’exemple de la détente libre.</strong> Un gaz parfait est enfermé dans la moitié d’un récipient thermos, l’autre moitié étant sous le vide. On retire la cloison : le gaz remplit tout le volume. Ni chaleur ni travail n’échangent (<span class="math">Q = 0</span>, <span class="math">W = 0</span>, donc <span class="math">ΔE<sub>int</sub> = 0</span> et la température reste constante), le volume double et la pression est divisée par deux. Le premier principe est satisfait. Pourtant, aucune suite de manipulations ne ramènera toutes les molécules dans la moitié initiale sans modifier quoi que ce soit dans l’environnement : la transformation est <strong>irréversible</strong> (OpenStax, vol. 2, § 4.1).</p>
+          <div class="formula-block">
+            <span class="formula-label">DÉTENTE LIBRE D’UN GAZ PARFAIT</span>
+            <math class="mathml-display" display="block" aria-label="p finale égale p initiale divisée par deux">
+              <mrow><msub><mi>p</mi><mi>f</mi></msub><mo>=</mo><mfrac><msub><mi>p</mi><mi>i</mi></msub><mn>2</mn></mfrac><mspace width="0.6em"/><mrow><mi>Δ</mi><msub><mi>E</mi><mi>int</mi></msub><mo>=</mo><mn>0</mn></mrow></mrow>
+            </math>
+          </div>
+          <p>Le second principe s’énnonce de plusieurs façons équivalentes. OpenStax en présente deux formes, toutes deux tirées du caractère irréversible des processus spontanés (OpenStax, vol. 2, § 4.4).</p>
+          <div class="callout"><strong>Énoncé de Kelvin-Planck</strong><p>« Il est impossible de convertir en travail la chaleur d’une source unique, sans aucune autre effet. » La restriction « sans aucune autre effet » est très forte : un moteur peut absorber de la chaleur et la convertir intégralement en travail s’il n’achève pas un cycle, mais alors la substance motrice n’est pas revenue à son état initial, et un « autre effet » a eu lieu (OpenStax, vol. 2, § 4.4).</p></div>
+          <div class="callout"><strong>Énoncé de Clausius</strong><p>« Il est impossible de construire un appareil qui transfère de la chaleur d’un corps froid vers un corps chaud sans apport d’énergie extérieure. » C’est la formulation qui traduit l’observation quotidienne : tout transfert de chaleur dans le sens d’une température croissante exige un apport d’énergie (OpenStax, vol. 2, § 4.4).</p></div>
+          <p>Ces deux énoncés sont <strong>équivalents</strong> : si l’un est faux, l’autre l’est aussi. OpenStax le démontre en supposant l’existence d’un réfrigérateur parfait qui transférerait une chaleur <span class="math">Q</span> du froid vers le chaud sans travail, et en montrant qu’on pourrait alors coupler cette machine à un moteur réel opérant entre les mêmes deux températures pour obtenir un moteur de rendement 1, ce qui est impossible (OpenStax, vol. 2, § 4.4).</p>
+          <p><strong>Une troisième formulation, en termes d’entropie.</strong> L’énoncé le plus fécond énonce que l’entropie de l’Univers augmente dans toute transformation irréversible, et reste constante dans toute transformation réversible. C’est cette forme qui fait le lien entre la thermodynamique macroscopique et la physique statistique (section 20).</p>
+          <div class="callout"><strong>Pourquoi cela limite les rendements</strong><p>Le second principe impose <span class="math">η &lt; η<sub>C</sub> = 1 − T<sub>c</sub>/T<sub>h</sub></span> pour toute machine réelle. Trois Contributions s’ajoutent à cet écart : les frottements mécaniques, les échanges thermiques avec l’extérieur à température non uniforme, et les gradients de température internes au moteur. C’est pourquoi le rendement mesuré d’une centrale, d’un moteur d’automobile ou d’un turboréacteur reste nettement inférieur au rendement de Carnot calculé sur ses températures de source et de rejet (OpenStax, vol. 2, § 4.5).</p></div>
+        </section>
+    <section class="lesson-section" id="entropie" aria-labelledby="entropie-title">
+          <p class="section-index">19 / L’ENTROPIE</p>
+          <h2 id="entropie-title">La grandeur qui rend compte du sens des transformations</h2>
+          <p>Le second principe s’exprime le plus utilement en termes d’une fonction d’état appelée <strong>entropie</strong>, notée <span class="math">S</span>. Comme l’énergie interne, l’entropie est une fonction d’état : la variation <span class="math">ΔS</span> entre deux états ne dépend pas du chemin suivi, mais seulement des variables thermodynamiques de ces deux états (OpenStax, vol. 2, § 4.6).</p>
+          <p>Pour un système subissant une transformation <strong>réversible</strong> à température constante, la variation d’entropie est égale à la chaleur échangée divisée par cette température :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ENTROPIE D’UNE TRANSFORMATION RÉVERSIBLE À TEMPÉRATURE CONSTANTE</span>
+            <math class="mathml-display" display="block" aria-label="Delta S égale Q sur T">
+              <mrow><mi>Δ</mi><mi>S</mi><mo>=</mo><mfrac><mi>Q</mi><mi>T</mi></mfrac></mrow>
+            </math>
+          </div>
+          <p>La température y est obligatoirement exprimée en <strong>kelvins</strong>. Si le système absorbe de la chaleur (<span class="math">Q &gt; 0</span>), son entropie augmente ; s’il en cède (<span class="math">Q &lt; 0</span>), elle diminue. Ainsi, un gaz maintenu à 300 K qui absorbe 10 J de manière réversible gagne <span class="math">ΔS = 10/300 ≈ 0,033 J·K⁻¹</span> ; un gaz à 200 K qui cède 5,0 J perd <span class="math">ΔS = −5,0/200 = −0,025 J·K⁻¹</span> (OpenStax, vol. 2, § 4.6).</p>
+          <p><strong>Cas général.</strong> Lorsque la température n’est pas constante, on procède par étapes infinitésimales et on intègre :</p>
+          <div class="formula-block">
+            <span class="formula-label">VARIATION D’ENTROPIE ENTRE DEUX ÉTATS</span>
+            <math class="mathml-display" display="block" aria-label="Delta S égale l'intégrale de dQ sur T de A a B">
+              <mrow><mi>Δ</mi><mi>S</mi><mo>=</mo><msub><mi>S</mi><mi>B</mi></msub><mo>−</mo><msub><mi>S</mi><mi>A</mi></msub><mo>=</mo><msubsup><mo>∫</mo><mi>A</mi><mi>B</mi></msubsup><mfrac><mi>d</mi><mi>Q</mi></mfrac><mi>T</mi></mfrac></mrow>
+            </math>
+          </div>
+          <p>Le changement d’état de la section 05 s’applique ici : la température reste constante pendant une fusion ou une vaporisation, donc <span class="math">ΔS = Q/T</span> suffit. Ainsi, pour 50 g de glace fondue lentement à 0 °C, la chaleur latente de fusion de l’eau étant <span class="math">L<sub>f</sub> = 335 J·g⁻¹</span>, la variation d’entropie vaut <span class="math">ΔS = mL<sub>f</sub>/T = 50 × 335/273,15 ≈ 61,3 J·K⁻¹</span> (OpenStax, vol. 2, exemple 4.4).</p>
+          <p><strong>Le cas irréversible.</strong> Pour une transformation irréversible, on ne peut pas écrire <span class="math">ΔS = Q/T</span> avec la température du système : cette expression est réservée aux chemins réversibles. Le second principe impose alors une inégalité, qui s’écrit <span class="math">ΔS &gt; ∫dQ/T</span>. Autrement dit, à quantité de chaleur échangée identique, un système initialement plus ordonné aboutit à un état final d’entropie plus élevée (OpenStax, vol. 2, § 4.6).</p>
+          <p><strong>Entropie de l’Univers.</strong> En appliquant le bilan d’entropie au système <em>et</em> à son environnement, on obtient le critère central du second principe :</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CRITÈRE DE SPONTANÉITÉ</span>
+            <math class="mathml-display" display="block" aria-label="Delta S de l'Univers supérieur ou égal à zéro">
+              <mrow><mi>Δ</mi><msub><mi>S</mi><mi>Univers</mi></msub><mo>≥</mo><mn>0</mn></mrow>
+            </math>
+          </div>
+          <p>L’entropie totale de l’Univers ne peut qu’augmenter ; elle reste constante dans le cas limite d’une transformation réversible. C’est la formulation la plus féconde du second principe, et elle permet de trancher sans calcul : si <span class="math">ΔS<sub>Univers</sub> &gt; 0</span>, la transformation est spontanée ; si <span class="math">ΔS<sub>Univers</sub> &lt; 0</span>, elle est impossible et son inverse l’est (OpenStax, vol. 2, § 4.6 et § 4.7).</p>
+          <div class="callout"><strong>Exemple vérifié : la glace qui fond dans un thermostat</strong><p>On place 50 g de glace à 0 °C en contact avec un réservoir à 20 °C. La glace fond puis se réchauffe jusqu’à 20 °C. L’entropie de la glace augmente de <span class="math">ΔS<sub>glace</sub> = mL<sub>f</sub>/T<sub>A</sub> + mc ln(T<sub>B</sub>/T<sub>A</sub>)</span>, soit <span class="math">50 × 335/273 + 50 × 4,19 × ln(293/273) ≈ 76,3 J·K⁻¹</span>. Le réservoir cède au total <span class="math">Q = 2,10 × 10⁴ J</span>, ce qui lui coûte <span class="math">ΔS = −Q/T<sub>B</sub> ≈ −71,7 J·K⁻¹</span>. Bilan : <span class="math">ΔS<sub>Univers</sub> ≈ 76,3 − 71,7 = +4,6 J·K⁻¹</span>, positif comme le doit tout échange spontané de chaleur entre deux corps à des températures différentes (OpenStax, vol. 2, exemple 4.7).</p></div>
+        </section>
+
+        <section class="lesson-section" id="entropie-microscopique" aria-labelledby="entropie-microscopique-title">
+          <p class="section-index">20 / ENTROPIE MICROSCOPIQUE</p>
+          <h2 id="entropie-microscopique-title">L’entropie comme mesure du nombre de configurations</h2>
+          <p>Jusqu’ici, l’entropie a été définie par son effet thermique. On peut lui donner un sens <strong>microscopique</strong>, en termes de nombre de configurations compatibles avec l’état macroscopique observé. L’idée fondatrice est la relation de Boltzmann, qui relie l’entropie au nombre de ces configurations (OpenStax, vol. 2, § 4.7).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">FORMULE DE BOLTZMANN</span>
+            <math class="mathml-display" display="block" aria-label="S égale k B fois le logarithme népérien de W">
+              <mrow><mi>S</mi><mo>=</mo><msub><mi>k</mi><mi>B</mi></msub><mspace width="0.2em"/><mi>ln</mi><mspace width="0.2em"/><mi>W</mi></mrow>
+            </math>
+          </div>
+          <p>Ici, <span class="math">k<sub>B</sub></span> est la constante de Boltzmann, <span class="math">k<sub>B</sub> = 1,380 649 × 10⁻²³ J·K⁻¹</span> (NIST, CODATA 2022), et <span class="math">W</span> désigne le nombre de <strong>microétats</strong>, c’est-à-dire le nombre d’agencements distincts des molécules qui correspondent tous au même <strong>macroétat</strong>, c’est-à-dire aux mêmes grandeurs mesurables (pression, température, volume). Comme le logarithme est croissant, <strong>plus W est grand, plus l’entropie est élevée</strong> (OpenStax, vol. 2, § 4.7).</p>
+          <p><strong>La détente libre, comptée.</strong> Un gaz enfermé dans la moitié d’un récipient ne peut prendre qu’un petit nombre de positions ; son volume accessible est <span class="math">V/2</span>. Après la détente, il occupe <span class="math">V</span>. Chaque molécule dispose donc du double de volume, et le nombre de microétats est multiplié par <span class="math">2<sup>N</sup></span>, où <span class="math">N</span> est le nombre de molécules. On en déduit :</p>
+          <div class="formula-block">
+            <span class="formula-label">ENTROPIE DE LA DÉTENTE LIBRE</span>
+            <math class="mathml-display" display="block" aria-label="Delta S égale N k B ln 2, soit R ln 2 pour une mole">
+              <mrow><mi>Δ</mi><mi>S</mi><mo>=</mo><msub><mi>k</mi><mi>B</mi></msub><mspace width="0.2em"/><mi>ln</mi><mspace width="0.2em"/><msup><mn>2</mn><mi>N</mi></msup><mo>=</mo><mi>N</mi><msub><mi>k</mi><mi>B</mi></msub><mspace width="0.2em"/><mi>ln</mi><mn>2</mn><mo>=</mo><mi>R</mi><mspace width="0.2em"/><mi>ln</mi><mn>2</mn></mrow>
+            </math>
+          </div>
+          <p>Pour une mole, <span class="math">ΔS = R ln 2 ≈ 5,76 J·K⁻¹</span>. Ce résultat est remarquable : <span class="math">Q</span> et <span class="math">W</span> sont nuls dans cette transformation, si bien que le premier principe, à lui seul, ne prédit rien. C’est le second principe, via la formule de Boltzmann, qui donne une valeur positive et non nulle (OpenStax, vol. 2, § 4.7).</p>
+          <p><strong>Une limite importante.</strong> La formule <span class="math">ΔS = R ln(V<sub>f</sub>/V<sub>i</sub>)</span> n’est obtenue par ce raisonnement que pour un gaz <em>idéal</em>, dont les molécules n’interagissent pas et se répartissent uniformément. Pour un gaz réel, les interactions modifient le comptage et l’on doit recourir à des méthodes plus élaborées (OpenStax, vol. 2, § 4.7).</p>
+          <p><strong>Changements de phase.</strong> La fusion et la vaporisation augmentent elles aussi l’entropie : dans un solide, les molécules occupent des positions quasi fixes ; dans un liquide, elles se déplacent mais restent proches ; dans un gaz, elles se déplacent librement dans tout le volume. Le nombre de microétats, donc l’entropie, augmente à chaque étape (OpenStax, vol. 2, § 4.7).</p>
+          <div class="callout"><strong>Le troisième principe</strong><p>Énoncé de Nernst : l’entropie d’un corps parfaitement cristallin tend vers zéro lorsque la température tend vers le zéro absolu. L’entropie ne peut donc pas être négative, et la température zéro kelvin est une limite que l’on ne peut pas atteindre par une suite finie d’étapes (OpenStax, vol. 2, § 4.7).</p></div>
+          <p><strong>Retour sur la détente libre.</strong> Le second principe n’est pas contredit par le fait qu’en théorie statistique, la détente libre puisse être observée à l’envers : la probabilité pour que les molécules se recombassent spontanément dans la moitié initiale est si faible qu’elle est pratiquement nulle. C’est le rôle de la statistique, et non une contradiction, de la thermodynamique (OpenStax, vol. 2, § 4.7).</p>
+<section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">21 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">Exercices corrigés</h2>
+          <p>Douze exercices couvrant l’ensemble du cours, de la conversion d’échelles au bilan d’entropie. Essaie de répondre avant d’ouvrir la correction : le but est de manipuler les relations, pas de les relire.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Une température de <span class="math">−40 °C</span> vaut combien en kelvins et en degrés Fahrenheit ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">T = θ + 273,15 = −40 + 273,15 = 233,15 K</span>.<br>
+            <span class="math">θ<sub>F</sub> = 1,8 × (−40) + 32 = −72 + 32 = −40 °F</span>.<br>
+            <strong>Réponse : 233,15 K, soit −40 °F.</strong> C’est le seul point de coïncidence entre les deux échelles (section 02).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Une barre d’aluminium de longueur <span class="math">L = 2,00 m</span> à 20 °C est chauffée à 100 °C. Quel est son allongement ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Avec <span class="math">α = 23 × 10⁻⁶ K⁻¹</span> pour l’aluminium et <span class="math">ΔT = 80 K</span> :<br>
+            <span class="math">ΔL = αLΔT = 23 × 10⁻⁶ × 2,00 × 80 ≈ 3,7 × 10⁻³ m</span>.<br>
+            <strong>Réponse : ΔL ≈ 3,7 mm.</strong> C’est le principe des joints de dilatation d’un pont ferroviaire en plein été (section 03).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Quelle quantité de chaleur faut-il fournir à 500 g d’eau pour élever sa température de 20 °C à 80 °C ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Avec <span class="math">c = 4,19 J·g⁻¹·K⁻¹</span> et <span class="math">ΔT = 60 K</span> :<br>
+            <span class="math">Q = mcΔT = 500 × 4,19 × 60 = 125 700 J</span>.<br>
+            <strong>Réponse : Q ≈ 1,26 × 10⁵ J</strong>, soit 0,126 MJ (section 04).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Quelle quantité de chaleur faut-il pour faire fondre 150 g de glace à 0 °C ? La température change-t-elle pendant la fusion ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>La fusion se produit à température constante, avec <span class="math">L<sub>f</sub> = 335 J·g⁻¹</span> :<br>
+            <span class="math">Q<sub>fusion</sub> = mL<sub>f</sub> = 150 × 335 = 50 250 J</span>.<br>
+            <strong>Réponse : Q ≈ 5,03 × 10⁴ J.</strong> La température reste à 0 °C pendant toute la fusion : l’énergie absorbée sert à rompre le réseau cristallin, pas à élever la température (section 05).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">E</span><span>Un cube d’aluminium de côté 5 cm est refroidi de 100 °C à 20 °C. Sa chaleur massique vaut <span class="math">896 J·kg⁻¹·K⁻¹</span> et sa masse volumique <span class="math">2700 kg·m⁻³</span>. Quelle chaleur a-t-il perdue ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Volume : <span class="math">V = 0,05³ = 1,25 × 10⁻⁴ m³</span>. Masse : <span class="math">m = ρV = 2700 × 1,25 × 10⁻⁴ = 0,3375 kg</span>.<br>
+            <span class="math">Q = mcΔT = 0,3375 × 896 × (−80) ≈ −2,4 × 10⁴ J</span>.<br>
+            <strong>Réponse : le cube a perdu environ 24 kJ.</strong> Le signe négatif traduit une perte de chaleur (section 04).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">F</span><span>Un cylindre de 2,00 L contient de l’azote à 20 °C sous 1,00 atm. Combien de moles contient-il ? Quelle est la masse d’azote ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">n = pV/RT = (101 325 × 2,00 × 10⁻³) / (8,314 × 293,15) ≈ 0,0832 mol</span>.<br>
+            Avec <span class="math">M = 28,0 g·mol⁻¹</span> : <span class="math">m = nM = 0,0832 × 28,0 ≈ 2,33 g</span>.<br>
+            <strong>Réponse : environ 0,083 mol et 2,3 g d’azote.</strong> Attention : la température se saisit en kelvins (section 08).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">G</span><span>Un ballon souple de 1,00 L à 20 °C est chauffé à 50 °C. La pression du gaz varie-t-elle ? Quel volume atteint-il ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>La paroi étant souple, la pression reste égale à la pression atmosphérique : <span class="math">Δp = 0</span>. C’est le volume qui augmente, selon <span class="math">V<sub>f</sub> = V<sub>i</sub>T<sub>f</sub>/T<sub>i</sub></span>.<br>
+            <span class="math">V<sub>f</sub> = 1,00 × 323,15/293,15 ≈ 1,10 L</span>.<br>
+            <strong>Réponse : la pression ne varie pas et V<sub>f</sub> ≈ 1,10 L.</strong> La contrainte mécanique extérieure l’emporte donc sur le volume (section 14).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">H</span><span>Un gaz monoatomique subit une détente adiabatique. Si la pression est divisée par 8, par quel facteur la température est-elle divisée ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>En adiabatique, <span class="math">T<sub>f</sub> = T<sub>i</sub>(p<sub>i</sub>/p<sub>f</sub>)<sup>(γ−1)/γ</sup></span>, avec <span class="math">γ = 5/3</span> pour un monoatomique, donc <span class="math">(γ−1)/γ = 0,4</span>.<br>
+            <span class="math">T<sub>f</sub> = T<sub>i</sub> × 8<sup>−0,4</sup> = T<sub>i</sub>/8<sup>0,4</sup> ≈ T<sub>i</sub>/2,30</span>.<br>
+            <strong>Réponse : la température est divisée par environ 2,3.</strong> Le gaz se refroidit en fournissant du travail (section 15).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">I</span><span>Une machine thermique absorbe <span class="math">Q<sub>h</sub> = 500 J</span> à 600 K et rejette <span class="math">Q<sub>c</sub> = 400 J</span> vers une source à 300 K. Quel est son rendement ? Est-elle réversible ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">W = Q<sub>h</sub> − Q<sub>c</sub> = 100 J</span>, donc <span class="math">η = W/Q<sub>h</sub> = 100/500 = 0,20</span>, soit <strong>20 %</strong>.<br>
+            Rendement de Carnot correspondant : <span class="math">η<sub>C</sub> = 1 − 300/600 = 0,50</span>.<br>
+            <strong>Réponse : η = 20 %, inférieur à η<sub>C</sub> = 50 %</strong> : la machine n’est donc pas réversible (sections 16 et 17).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">J</span><span>Un corps à 400 K cède <span class="math">500 J</span> à un corps à 300 K. Quelles sont les variations d’entropie des deux corps et de l’Univers ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Corps chaud : <span class="math">ΔS<sub>c</sub> = −500/400 = −1,25 J·K⁻¹</span>.<br>
+            Corps froid : <span class="math">ΔS<sub>f</sub> = +500/300 ≈ +1,67 J·K⁻¹</span>.<br>
+            <span class="math">ΔS<sub>Univers</sub> = −1,25 + 1,67 = +0,42 J·K⁻¹</span>.<br>
+            <strong>Réponse : ΔS<sub>Univers</sub> ≈ +0,42 J·K⁻¹.</strong> Le transfert du chaud vers le froid est spontané, donc l’entropie totale augmente (section 19).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">K</span><span>Une mole de gaz parfait passe de <span class="math">V = 1 L</span> à <span class="math">V = 2 L</span> par détente libre. Quelle est sa variation d’entropie ? Pourquoi le premier principe ne permet-il pas de la calculer ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">ΔS = R ln(V<sub>f</sub>/V<sub>i</sub>) = 8,314 × ln 2 ≈ 5,76 J·K⁻¹</span>.<br>
+            Dans une détente libre, <span class="math">Q = 0</span> et <span class="math">W = 0</span>, donc <span class="math">ΔE<sub>int</sub> = 0</span>. Le premier principe ne renseigne que sur l’énergie interne et ne contient aucune information sur l’entropie.<br>
+            <strong>Réponse : ΔS = R ln 2 ≈ 5,76 J·K⁻¹</strong>, valeur que seul le second principe permet de fixer (section 20).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">L</span><span>Un litre de dioxygène à 20 °C se détend adiabatiquement jusqu’à ce que son volume soit multiplié par 4. Quelle est sa température finale ? (On prend <span class="math">γ = 1,40</span>.)</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">T<sub>f</sub> = T<sub>i</sub>(V<sub>i</sub>/V<sub>f</sub>)<sup>γ−1</sup> = 293,15 × 4<sup>−0,40</sup></span>.<br>
+            <span class="math">4<sup>−0,40</sup> ≈ 0,575</span>, donc <span class="math">T<sub>f</sub> ≈ 293,15 × 0,575 ≈ 169 K</span>.<br>
+            <strong>Réponse : environ 169 K, soit −104 °C.</strong> La détente adiabatique refroidit le gaz (section 15).</p></div>
+          </details>
+        </section>
+        </section>
+      <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">22 / SOURCES</p>
+          <h2 id="sources-title">Sources vérifiées</h2>
+          <p>Chaque affirmation scientifique de ce cours renvoie à l’une des sources ci-dessous. OpenStax est prioritaire, le sujet y figurant pour la totalité des notions traitées. Les valeurs numériques des constantes proviennent du NIST et du CODATA ; les propriétés des matériaux et les grandeurs thermodynamiques de l’eau viennent des références indiquées.</p>
+          <ul>
+            <li><strong>Température, échelles thermométriques, dilatation, changement d’état</strong> : <a href="https://openstax.org/books/university-physics-volume-2/pages/1-introduction" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 2, chapitre 1 <em>Temperature and Heat</em></a> — sections 1.1 à 1.6 : équilibre thermique, thermomètres et conversions Celsius/Fahrenheit/Kelvin, dilatation linéaire, surfacique et volumique, changements d’état et chaleurs latentes, principe de calorimétrie.</li>
+            <li><strong>Chaleur massique, calorimétrie et changements d’état</strong> : OpenStax, vol. 2, § 1.4 <em>Heat Transfer, Specific Heat, and Calorimetry</em> — chaleur massique, équation calorimétrique et loi de Debye à basse température ; § 1.5 <em>Phase Changes</em> — transitions de phase, diagrammes pT, chaleur latente, point critique et fluide supercritique (CO<sub>2</sub> au-dessus de 31,0 °C).</li>
+            <li><strong>Conduction, convection et rayonnement</strong> : <a href="https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer" target="_blank" rel="noreferrer">OpenStax, vol. 2, § 1.6 <em>Mechanisms of Heat Transfer</em></a> — les trois mécanismes de transfert thermique, loi de Fourier et conductivité, courants de convection, émissivité, loi du corps noir, loi de Wien et loi de Stefan-Boltzmann.</li>
+            <li><strong>Gaz parfait et théorie cinétique</strong> : <a href="https://openstax.org/books/university-physics-volume-2/pages/2-introduction" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 2, chapitre 2 <em>The Kinetic Theory of Gases</em></a> — sections 2.1 à 2.4 : loi des gaz parfaits et constante <em>R</em>, pression comme résultat microscopique des chocs moléculaires, énergie interne et théorème d’équipartition, distribution de Maxwell-Boltzmann et vitesses moléculaires.</li>
+            <li><strong>Premier principe, travail, chaleur et capacités thermiques</strong> : <a href="https://openstax.org/books/university-physics-volume-2/pages/3-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 2, chapitre 3 <em>The First Law of Thermodynamics</em></a> — § 3.1 <em>Thermodynamic Systems</em> (systèmes fermés et isolés) ; § 3.2 <em>Work, Heat, and Internal Energy</em> (travail <span class="math">W = ∫p dV</span>) ; § 3.3 <em>First Law of Thermodynamics</em> (<span class="math">ΔE<sub>int</sub> = Q − W</span>) ; § 3.4 <em>Thermodynamic Processes</em> (diagrammes pV, transformations isothermes et cycliques) ; § 3.5 <em>Heat Capacities of an Ideal Gas</em> (<span class="math">C<sub>p</sub> = C<sub>V</sub> + R</span>, <span class="math">dQ = nC<sub>p</sub>dT</span> à pression constante) ; § 3.6 <em>Adiabatic Processes for an Ideal Gas</em> (loi de Poisson, <span class="math">γ = C<sub>p</sub>/C<sub>V</sub></span>).</li>
+            <li><strong>Exemples chiffrés repris de la source</strong> : OpenStax, vol. 2, exemple 2.8 <em>Calculating Temperature</em> (xénon de 0,125 kg dans un cylindre rigide recevant 180 J, <span class="math">ΔT ≈ 15,2 °C</span>), exemple 4.4 <em>Entropy Change of Melting Ice</em> (50 g de glace fondus à 0 °C, <span class="math">L<sub>f</sub> = 335 J·g⁻¹</span>), exemple 4.7 <em>Entropy Change of the Universe</em> (glace dans un thermostat à 20 °C, <span class="math">ΔS<sub>Univers</sub> = +4,6 J·K⁻¹</span>). Les autres exemples chiffrés de ce cours sont des calculs originaux, vérifiés et explicités pas à pas.</li>
+            <li><strong>Second principe, machines thermiques, Carnot et entropie</strong> : <a href="https://openstax.org/books/university-physics-volume-2/pages/4-introduction" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 2, chapitre 4 <em>The Second Law of Thermodynamics</em></a> — § 4.1 <em>Reversible and Irreversible Processes</em> (détente libre, <span class="math">p<sub>f</sub> = p<sub>i</sub>/2</span>) ; § 4.2 <em>Heat Engines</em> (rendement) ; § 4.3 <em>Refrigerators and Heat Pumps</em> (coefficients <span class="math">K<sub>R</sub></span> et <span class="math">K<sub>P</sub></span>) ; § 4.4 <em>Statements of the Second Law</em> (énoncés de Kelvin-Planck et de Clausius, et leur équivalence démontrée) ; § 4.5 <em>The Carnot Cycle</em> (quatre étapes, <span class="math">η<sub>C</sub> = 1 − T<sub>c</sub>/T<sub>h</sub></span>) ; § 4.6 <em>Entropy</em> (<span class="math">ΔS = Q/T</span> et <span class="math">∫dQ/T</span>) ; § 4.7 <em>Entropy on a Microscopic Scale</em> (formule de Boltzmann, troisième principe).</li>
+            <li><strong>Constantes fondamentales</strong> : <a href="https://physics.nist.gov/cuu/Constants/" target="_blank" rel="noreferrer">NIST, <em>CODATA Recommended Values of the Fundamental Physical Constants</em></a> (ajustement 2022) — <span class="math">k<sub>B</sub> = 1,380 649 × 10⁻²³ J·K⁻¹</span> exactement, <span class="math">R = 8,314 462 618 J·mol⁻¹·K⁻¹</span>, et <span class="math">273,15 K</span> pour la température du point de fusion de la glace.</li>
+            <li><strong>Définition moderne du kelvin</strong> : <a href="https://www.nist.gov/si-redefinition/kelvin-introduction" target="_blank" rel="noreferrer">NIST SI, <em>Kelvin: Introduction</em></a> — le kelvin est l’unité SI de température thermodynamique, sa magnitude étant fixée par la valeur numérique exacte de la constante de Boltzmann, <span class="math">k<sub>B</sub> = 1,380 649 × 10⁻²³ J·K⁻¹</span> (SI révisé approuvé en novembre 2018) ; <span class="math">0 K = −273,15 °C = −459,67 °F</span>, mouvement de point zéro d’origine quantique, distinct du mouvement thermique.</li>
+            <li><strong>Grandeurs thermodynamiques de l’eau</strong> : <a href="https://webbook.nist.gov/chemistry/fluid/" target="_blank" rel="noreferrer">NIST Chemistry WebBook, <em>Fluid Properties</em></a> et <a href="https://www.iapws.org/" target="_blank" rel="noreferrer">IAPWS</a> (<em>International Association for the Properties of Water and Steam</em>) — chaleur massique de l’eau, chaleur latente de fusion et de vaporisation, température normale d’ébullition.</li>
+            <li><strong>Rayonnement et constantes thermiques</strong> : <a href="https://physics.nist.gov/cgi-bin/cuu/Value?sigma" target="_blank" rel="noreferrer">NIST, constante de Stefan-Boltzmann <span class="math">σ</span></a> et <a href="https://physics.nist.gov/cgi-bin/cuu/Value?h" target="_blank" rel="noreferrer">constante de Planck <span class="math">h</span></a>, utilisées pour la loi du corps noir et la loi de Wien.</li>
+            <li><strong>Effet Joule-Thomson et machines à froid</strong> : <a href="https://fr.wikipedia.org/wiki/Effet_Joule-Thomson" target="_blank" rel="noreferrer">« Effet Joule-Thomson »</a> et <a href="https://fr.wikipedia.org/wiki/Cycle_de_Carnot" target="_blank" rel="noreferrer">« Cycle de Carnot »</a> (Wikipédia) — cycle à quatre étapes, principe de Carnot et machines frigorifiques par détente.</li>
+            <li><strong>Repères historiques et grandeurs complémentaires</strong> : <a href="https://fr.wikipedia.org/wiki/Entropie_(thermodynamique)" target="_blank" rel="noreferrer">« Entropie (thermodynamique) »</a> (Wikipédia) — <span class="math">C<sub>V</sub> = νR/2</span>, <span class="math">γ = (ν+2)/ν</span> et <span class="math">U = pV/(γ−1)</span> ; <a href="https://fr.wikipedia.org/wiki/Sadi_Carnot" target="_blank" rel="noreferrer">« Sadi Carnot »</a> — dates (1796-1832) et publication des <em>Réflexions sur la puissance motrice du feu</em> en 1824.</li>
+          </ul>
+          <p>Les valeurs numériques citées dans ce cours et non couvertes par les références ci-dessus — coefficients de dilatation, masses volumiques, chaleurs massiques, conductivités thermiques — sont des valeurs tabulées usuelles. Elles sont données à titre indicatif, pour situer les ordres de grandeur, comme le fait le manuel dont ce cours est inspiré.</p>
+        </section>
+
+        <footer class="course-footer"><span>THERMODYNAMIQUE ET TRANSFERTS THERMIQUES</span><a href="index.html">Retour aux branches ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>
