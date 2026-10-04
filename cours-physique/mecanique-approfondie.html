@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi de mécanique : référentiels et mouvement relatif, position, vitesse et accélération, mouvement à accélération constante, chute libre, vecteurs et composantes, lancer de projectiles, mouvement circulaire, forces et diagramme de corps libre, les trois lois de Newton, méthode de résolution, frottement, force centripète, travail d’une force, énergie cinétique, puissance, énergie potentielle, conservation de l’énergie mécanique, quantité de mouvement, collisions, rotation et moment d’inertie, couple, équilibre statique, moment cinétique et gravitation universelle, avec équations en MathML et sources vérifiées.">
+    <title>Mécanique et mouvement | Cours de physique</title>
+    <!-- Format identique aux autres cours approfondis de physique. Règle du site :
+         la liste des chapitres (menu gauche) n’est pas numérotée, les
+         sous-rubriques de la page le sont. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte vingt-huit entrées de navigation : la barre latérale
+         devient défilable quand la hauteur de l’écran ne suffit plus à les
+         afficher. Sous 700 px, la mise en page partagée la transforme déjà en
+         bandeau horizontal. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+      /* Même traitement que le cours de thermodynamique : le lien parent et
+         les entrées du domaine s’affichent en gris clair (var(--muted),
+         #67716a — contraste AA sur fond papier). La bordure corail signale
+         toujours le chapitre courant au survol ou en cours de lecture. */
+      .course-sidebar > .course-link span,
+      .course-list .course-link span {
+        color: var(--muted);
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+        <span class="wordmark-mark" aria-hidden="true">φ</span>
+        <span>LE COURS DE PHYSIQUE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche mécanique du cours de physique">
+          <!-- Liste des chapitres du domaine, sans numérotation -->
+          <a class="course-link" href="index.html#mecanique"><span>Mécanique</span></a>
+          <a class="course-link" href="cours.html?id=cinematique"><span>Cinématique du point</span></a>
+          <a class="course-link" href="cours.html?id=lois-newton"><span>Lois de Newton et forces</span></a>
+          <a class="course-link" href="cours.html?id=energie-mecanique"><span>Travail, énergie et puissance</span></a>
+          <a class="course-link is-current" href="mecanique-approfondie.html" aria-current="page"><span>Mécanique et mouvement</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+
+<nav class="chapter-nav" aria-label="Sections du cours de mécanique">
+          <a href="#referentiels-mouvement">01 <span>Référentiels et mouvement relatif</span></a>
+          <a href="#position-deplacement">02 <span>Position, déplacement et vitesse</span></a>
+          <a href="#vitesse-acceleration">03 <span>Vitesse et accélération instantanées</span></a>
+          <a href="#acceleration-constante">04 <span>Mouvement à accélération constante</span></a>
+          <a href="#chute-libre">05 <span>La chute libre</span></a>
+          <a href="#vecteurs-composantes">06 <span>Vecteurs et composantes</span></a>
+          <a href="#lancer-projectiles">07 <span>Le lancer de projectiles</span></a>
+          <a href="#mouvement-circulaire">08 <span>Le mouvement circulaire</span></a>
+          <a href="#corps-libre">09 <span>Forces et diagramme de corps libre</span></a>
+          <a href="#premiere-loi">10 <span>Première loi : l’inertie</span></a>
+          <a href="#deuxieme-loi">11 <span>Deuxième loi : la résultante</span></a>
+          <a href="#masse-poids">12 <span>Masse, poids et poids apparent</span></a>
+          <a href="#troisieme-loi">13 <span>Troisième loi : action et réaction</span></a>
+          <a href="#methode-newton">14 <span>Résoudre un problème newtonien</span></a>
+          <a href="#frottement">15 <span>Le frottement</span></a>
+          <a href="#force-centripete">16 <span>La force centripète</span></a>
+          <a href="#travail-force">17 <span>Le travail d’une force</span></a>
+          <a href="#energie-cinetique">18 <span>Énergie cinétique et théorème du travail</span></a>
+          <a href="#puissance">19 <span>La puissance</span></a>
+          <a href="#energie-potentielle">20 <span>Énergie potentielle et forces conservatives</span></a>
+          <a href="#conservation-energie">21 <span>Conservation de l’énergie mécanique</span></a>
+          <a href="#quantite-mouvement">22 <span>Quantité de mouvement et impulsion</span></a>
+          <a href="#collisions">23 <span>Collisions et types de chocs</span></a>
+          <a href="#rotation">24 <span>Rotation et moment d’inertie</span></a>
+          <a href="#couple-equilibre">25 <span>Couple, équilibre et moment cinétique</span></a>
+          <a href="#gravitation">26 <span>La gravitation universelle</span></a>
+          <a href="#orbites">27 <span>Orbites et lois de Kepler</span></a>
+          <a href="#exercices">28 <span>S’entraîner</span></a>
+          <a href="#sources">29 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">φ</span>
+<p>Une idée directrice : décrire un mouvement exige un repère ; le relier à ses causes exige les forces ; l’énergie en donne la mesure la plus directe.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MÉCANIQUE · COURS APPROFONDI</p>
+          <h1>Mécanique<br><span>et mouvement</span></h1>
+          <p class="course-intro">Pourquoi un passager assis dans un train paraît-il immobile, alors que le quai défile ? Pourquoi la Lune reste-t-elle en orbite sans effort, et comment un patineur freine-t-il en écartant les bras ? Ce cours approfondit la branche mécanique du catalogue : référentiels et mouvement relatif, position, vitesse et accélération, mouvement à accélération constante, chute libre, vecteurs et composantes, lancer de projectiles, mouvement circulaire, forces et diagramme de corps libre, les trois lois de Newton, méthode de résolution d’un problème, frottement, force centripète, travail d’une force, énergie cinétique et théorème du travail-énergie, puissance, énergie potentielle et forces conservatives, conservation de l’énergie mécanique, quantité de mouvement et impulsion, collisions, rotation et moment d’inertie, couple, équilibre statique et moment cinétique, gravitation universelle. Les définitions et les lois suivent OpenStax, <em>University Physics</em> volume 1 ; les constantes sont celles du CODATA et du NIST, les grandeurs planétaires celles de la NASA.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>29 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+<section class="lesson-section" id="referentiels-mouvement" aria-labelledby="referentiels-mouvement-title">
+          <p class="section-index">01 / RÉFÉRENTIELS ET MOUVEMENT RELATIF</p>
+          <h2 id="referentiels-mouvement-title">Décrire un mouvement exige un repère</h2>
+          <p>Un mouvement est une relation entre des positions, non une propriété absolue. Le passager assis dans un train est au repos par rapport au wagon et se déplace à la vitesse du train par rapport au quai : les deux descriptions sont exactes, elles ne sont simplement pas équivalentes. <strong>Le mouvement relatif</strong> est le principe fondateur de toute la cinématique ; sans référentiel choisi, aucune vitesse ni aucune accélération n’a de sens (OpenStax, vol. 1, § 4.5).</p>
+          <p>Un <strong>référentiel</strong> est le trio qui rend une description possible : un <strong>repère d’espace</strong> (origin, axes, sens et unité), un <strong>repère de temps</strong> (origine des dates, unité, sens de lecture) et un <strong>repère d’orientation</strong>. Solidement lié à des repères fixes, le référentiel terrestre est le plus employé en mécanique classique (OpenStax, vol. 1, § 3.1 et § 4.5).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CHANGEMENT DE RÉFÉRENTIEL EN MOUVEMENT UNIFORME</span>
+            <math class="mathml-display" display="block" aria-label="v prime égale v moins la vitesse du référentiel en mouvement ; a prime égale a">
+              <mtable>
+                <mtr><mtd><mrow><msub><mi>v</mi><mi>R′</mi></msub><mo>=</mo><mover><mi>v</mi><mo>→</mo></mover><mo>−</mo><msub><mover><mi>v</mi><mo>→</mo></mover><mi>R</mi></msub></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>a</mi><mi>R′</mi></msub><mo>=</mo><mover><mi>a</mi><mo>→</mo></mover></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">si le référentiel R′ se déplace à vitesse constante par rapport à R, l’accélération est la même dans les deux référentiels</span>
+          </div>
+          <p>Ce résultat a une conséquence capitale : si l’accélération est identique dans deux référentiels en mouvement relatif uniforme, alors une force qui vaut <span class="math">m a⃗</span> dans l’un vaut <span class="math">m a⃗</span> dans l’autre. Les <strong>référentiels galiléens</strong> sont précisément les référentiels dans lesquels un corps sur lequel ne s’exerce aucune force conserve un mouvement rectiligne uniforme ; tous les référentiels galiléens sont en mouvement rectiligne uniforme les uns par rapport aux autres (OpenStax, vol. 1, § 5.2).</p>
+          <div class="callout"><strong>La première loi de Newton, et le critère qui la définit</strong><p>Newton a formulé la première loi comme un principe d’inertie : un corps au repos ou en mouvement rectiligne uniforme le reste tant qu’aucune force extérieure résultante n’agit sur lui. Mais l’énoncé suppose une notion implicite : celle de référentiel galiléen. Un référentiel est galiléen s’il est possible d’y formuler les lois de Newton sans faire intervenir de forces fictives ; le référentiel terrestre en est une approximation satisfaisante à l’échelle d’un bâtiment, mais pas à celle de la rotation complète de la Terre (OpenStax, vol. 1, § 5.2).</p></div>
+          <p>La <strong>relativité galiléenne</strong> en découle directement : les lois de la mécanique newtonienne ont la même forme dans tous les référentiels galiléens. Aucune expérience purement mécanique conduite dans un laboratoire en mouvement rectiligne uniforme ne permet donc de détecter ce mouvement lui-même. Pour le détecter, il faudrait une expérience sensible aux vitesses élevées face à celle de la lumière — c’est exactement ce que fait la relativité restreinte, dont la formulation première est un prolongement de la cinématique galiléenne (OpenStax, vol. 1, § 4.5).</p>
+        </section>
+<section class="lesson-section" id="position-deplacement" aria-labelledby="position-deplacement-title">
+          <p class="section-index">02 / POSITION, DÉPLACEMENT ET VITESSE</p>
+          <h2 id="position-deplacement-title">Position, déplacement et vitesse moyenne</h2>
+          <p>La <strong>position</strong> <span class="math">x(t)</span> est la coordonnée d’un point sur un axe orienté : elle est définie à une longueur près de l’origine, et son unité est le mètre. Le <strong>déplacement</strong> <span class="math">Δx = x(t₂) − x(t₁)</span> est l’intervalle entre deux positions : il se calcule directement par différence. À ne pas confondre avec la <strong>distance parcourue</strong>, qui cumule les longueurs effectivement parcourues et ne peut qu’être supérieure ou égale à la valeur absolue du déplacement (OpenStax, vol. 1, § 3.1).</p>
+          <div class="formula-block">
+            <span class="formula-label">VITESSE MOYENNE</span>
+            <math class="mathml-display" display="block" aria-label="v barre égale delta x sur delta t">
+              <mrow><mover><msub><mi>v</mi><mtext>moy</mtext></msub><mo>¯</mo></mover><mo>=</mo><mfrac><mrow><mi>Δ</mi><mi>x</mi></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac></mrow>
+            </math>
+          </div>
+          <p>La vitesse moyenne est <em>une moyenne sur un intervalle</em> : elle ne dit rien de ce qui s’est passé entre les deux instants. Un trajet aller-retour sur une distance <span class="math">d</span>, effectué en <span class="math">2d</span> de distance parcourue et <span class="math">T</span> de durée, donne une vitesse moyenne <em>scalaire</em> <span class="math">2d/T</span> mais une vitesse moyenne <em>vectorielle</em> nulle, puisque le déplacement total est nul (OpenStax, vol. 1, § 3.1).</p>
+<div class="worked-result"><strong>EXEMPLE CHIFFRÉ</strong><span class="math">x₁ = 12,0 m ; x₂ = 12,0 m ; t₁ = 2,0 s ; t₂ = 4,0 s</span><span class="math">Δx = 0 → v̄ = 0 m·s⁻¹</span><span class="math">distance parcourue = 10,0 m → vitesse moyenne scalaire = 5,0 m·s⁻¹</span></div>
+          <div class="callout"><strong>Lire une aire, pas une hauteur</strong><p>Sur un graphique <span class="math">x(t)</span>, la vitesse est la <strong>pente</strong> de la courbe ; le déplacement est l’<strong>aire</strong> sous la courbe, signée. Une portion de graphique au-dessus de l’axe correspond à un déplacement positif ; en dessous, à un déplacement négatif. C’est cette lecture d’aire qui permet de traiter graphiquement des mouvements dont aucune expression algébrique n’est connue (OpenStax, vol. 1, § 3.4).</p></div>
+        </section>
+
+        <section class="lesson-section" id="vitesse-acceleration" aria-labelledby="vitesse-acceleration-title">
+          <p class="section-index">03 / VITESSE ET ACCÉLÉRATION INSTANTANÉES</p>
+          <h2 id="vitesse-acceleration-title">Des grandeurs instantanées : dériver pour mesurer l’instant</h2>
+          <p>La vitesse moyenne lisse le mouvement sur un intervalle. Pour décrire ce qui se passe <em>à un instant précis</em>, on prend la limite de la vitesse moyenne lorsque la durée tend vers zéro : c’est la <strong>vitesse instantanée</strong>, qui s’écrit <span class="math">v(t) = dx/dt</span>. L’accélération instantanée se définit de même comme la dérivée de la vitesse, <span class="math">a(t) = dv/dt</span>. L’accélération mesure donc une <strong>variation de vitesse</strong>, non une vitesse : un objet peut avoir une vitesse constante et une accélération non nulle (OpenStax, vol. 1, § 3.2 et § 3.3).</p>
+          <div class="formula-block">
+            <span class="formula-label">VITESSE ET ACCÉLÉRATION INSTANTANÉES</span>
+            <math class="mathml-display" display="block" aria-label="v égale la dérivée de x par rapport à t ; a égale la dérivée de v par rapport à t">
+              <mtable>
+                <mtr><mtd><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>v</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>x</mi></mrow><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>t</mi></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+</div>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">GRAPHIQUES DE VITESSE ET D’ACCÉLÉRATION</span>
+            <math class="mathml-display" display="block" aria-label="v égale la pente de la courbe x(t) ; a égale la pente de la courbe v(t) ; Delta x égale l’aire sous la courbe v(t)">
+              <mtable>
+                <mtr><mtd><mrow><mi>v</mi><mo>=</mo><mtext>pente de</mtext><mspace width="0.2em"/><mi>x</mi><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>a</mi><mo>=</mo><mtext>pente de</mtext><mspace width="0.2em"/><mi>v</mi><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>Δ</mi><mi>x</mi><mo>=</mo><mtext>aire sous la courbe</mtext><mspace width="0.2em"/><mi>v</mi><mo>(</mo><mi>t</mi><mo>)</mo></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <div class="callout"><strong>Les quatre graphiques d’un même mouvement</strong><p>À partir de <span class="math">a(t)</span> on obtient <span class="math">v(t)</span> par intégration, puis <span class="math">x(t)</span> par une seconde intégration ; à l’inverse, <span class="math">x(t)</span> se dérive deux fois pour retrouver <span class="math">a(t)</span>. La courbe <span class="math">a(t)</span> est donc le résumé le plus compact d’un mouvement : constante, elle donne une vitesse linéaire et une position parabolique ; rectangulaire, elle donne une vitesse en dents de scie ; sinusoïdale, elle donne une vitesse sinusoïdale — cas de l’oscillateur harmonique (OpenStax, vol. 1, § 3.6).</p></div>
+        </section>
+
+        <section class="lesson-section" id="acceleration-constante" aria-labelledby="acceleration-constante-title">
+          <p class="section-index">04 / MOUVEMENT À ACCÉLÉRATION CONSTANTE</p>
+          <h2 id="acceleration-constante-title">Les cinq équations du mouvement uniformément accéléré</h2>
+          <p>Lorsque l’accélération est constante, le mouvement obéit à un système de cinq équations cinématiques, obtenues par intégrations successives de <span class="math">a = dv/dt</span>. Elles ne contiennent ni <span class="math">t</span> sous forme dérivée, ni <span class="math">a</span> ; aucune n’est utilisable si <span class="math">a</span> varie (OpenStax, vol. 1, § 3.4).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">MOUVEMENT À ACCÉLÉRATION CONSTANTE</span>
+            <math class="mathml-display" display="block" aria-label="les cinq équations cinématiques du mouvement à accélération constante">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>v</mi><mi>f</mi></msub><mo>=</mo><msub><mi>v</mi><mi>i</mi></msub><mo>+</mo><mi>a</mi><mi>t</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>v</mi><mtext>moy</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mi>i</mi></msub><mo>+</mo><msub><mi>v</mi><mi>f</mi></msub></mrow><mn>2</mn></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>x</mi><mi>f</mi></msub><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><msub><mi>v</mi><mi>i</mi></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>v</mi><mi>f</mi></msub><mo>=</mo><msqrt><mrow><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><mi>a</mi><mi>Δ</mi><mi>x</mi></mrow></msqrt></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>Δ</mi><mi>x</mi><mo>=</mo><msub><mi>v</mi><mi>i</mi></msub><mi>t</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mtd></mtr>
+              </mtable>
+</math>
+            <span class="formula-label">i : initial (t = 0) ; f : final ; Δx = x<sub>f</sub> − x<sub>i</sub> ; l’accélération est algébrique, son signe suit l’axe choisi</span>
+          </div>
+          <p>Le choix de l’équation se fait <strong>par élimination</strong> : on repère d’abord la grandeur inconnue, puis on choisit l’équation où elle n’apparaît pas. Pour retrouver une vitesse finale à partir de la position initiale, de la position finale, de la vitesse initiale et de l’accélération — sans le temps — on utilise la quatrième. Les trois dernières équations sont obtenues en éliminant le temps des deux premières ; c’est pourquoi elles ne contiennent pas <span class="math">t</span> (OpenStax, vol. 1, § 3.4).</p>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ</strong><span class="math">v<sub>i</sub> = 12,0 m·s⁻¹ ; a = 3,0 m·s⁻² ; x<sub>i</sub> = 0 ; t = 4,0 s</span><span class="math">x(4) = 12,0 × 4,0 + ½ × 3,0 × 4,0² = 48 + 24 = 72 m</span><span class="math">v(4) = 12,0 + 3,0 × 4,0 = 24,0 m·s⁻¹</span></div>
+          <div class="callout"><strong>Le piège de la vitesse moyenne sur un aller-retour</strong><p>L’égalité <span class="math">v̄ = (v<sub>i</sub> + v<sub>f</sub>)/2</span> ne vaut que si l’accélération est constante sur l’intervalle. Pour un aller-retour où la vitesse passe de <span class="math">+10</span> à <span class="math">−10 m·s⁻¹</span>, la vitesse moyenne sur l’intervalle est bien zéro, ce qui est cohérent ; mais l’<em>accélération moyenne</em> n’est pas nulle. C’est le changement de signe de <span class="math">v</span>, source de l’accélération, qui distingue les deux notions (OpenStax, vol. 1, § 3.3).</p></div>
+        </section>
+
+        <section class="lesson-section" id="chute-libre" aria-labelledby="chute-libre-title">
+          <p class="section-index">05 / LA CHUTE LIBRE</p>
+          <h2 id="chute-libre-title">La chute libre : une accélération indépendante de la masse</h2>
+          <p>La <strong>chute libre</strong> est le mouvement d’un corps qui tombe sous l’effet du seul poids, sans frottement ni résistance de l’air. Sa définition contient une négation : est en chute libre un objet qui <em>monte</em> aussi, tant qu’aucune autre force n’agit sur lui. Galilée a établi expérimentalement que tous les corps, quelle que soit leur masse, tombent avec la même accélération en l’absence de résistance ; c’est un des résultats fondateurs de la mécanique moderne (OpenStax, vol. 1, § 3.5).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CHUTE LIBRE — AXE VERTICAL ORIENTÉ VERS LE HAUT</span>
+            <math class="mathml-display" display="block" aria-label="y égale y zéro moins g t au carré demi ; v égale v zéro moins g t ; a égale moins g">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mi>t</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>−</mo><mi>g</mi><mi>t</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mi>g</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">g ≈ 9,81 m·s⁻² en moyenne sur la surface terrestre ; l’axe est orienté vers le haut, d’où le signe négatif</span>
+          </div>
+          <p>La valeur de <span class="math">g</span> n’est pas rigoureusement la même partout : OpenStax indique <span class="math">g = 9,81 m·s⁻²</span> en moyenne, avec une variation de <span class="math">9,78</span> à <span class="math">9,83 m·s⁻²</span> selon la latitude, l’altitude, la géologie locale et le relief. Sur la Lune, la même source donne <span class="math">1,62 m·s⁻²</span>, soit environ un sixième de la valeur terrestre : c’est ce qu’a démontré l’expérience du marteau et de la plume réalisée en 1971, sans atmosphère, où les deux objets atteignent le sol au même instant (OpenStax, vol. 1, § 3.5 et § 5.4).</p>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · TEMPS DE CHUTE</strong><span class="math">y₀ = 45,0 m ; v₀ = 0</span><span class="math">0 = 45,0 − ½ × 9,81 × t² → t = √(2 × 45,0 / 9,81)</span><span class="math">t ≈ 3,03 s ; v = 9,81 × 3,03 ≈ 29,7 m·s⁻¹</span></div>
+          <div class="callout"><strong>Pourquoi une balle et une plume ne tombent-elles pas ensemble ?</strong><p>Parce que la résistance de l’air n’est plus négligeable. La force de frottement fluids croît avec la vitesse et l’aire frontale, et décroît avec la masse : un corps léger et étendu est freiné bien davantage. Dans le vide, en revanche, aucun objet ne tombe plus vite qu’un autre (OpenStax, vol. 1, § 3.5 et § 6.4).</p></div>
+          <p>En <strong>chute verticale</strong>, on applique les équations de la section 04 avec <span class="math">a = −g</span> et une vitesse initiale nulle ou donnée. Une <strong>montée verticale</strong> n’est qu’une chute libre en sens inverse : tant que le corps monte, <span class="math">v</span> reste positive puis s’annule au sommet, où l’accélération ne change pas (OpenStax, vol. 1, § 3.5).</p>
+        </section>
+
+<section class="lesson-section" id="vecteurs-composantes" aria-labelledby="vecteurs-composantes-title">
+          <p class="section-index">06 / VECTEURS ET COMPOSANTES</p>
+          <h2 id="vecteurs-composantes-title">Passer d’une dimension à deux : vecteurs et composantes</h2>
+          <p>Une grandeur <strong>vectorielle</strong> possède une direction et un sens : un déplacement, une vitesse, une accélération, une force. Une grandeur <strong>scalaire</strong> n’a qu’une valeur : une durée, une distance, une masse, une énergie. En deux dimensions, une <strong>position</strong> se décrit par un vecteur <span class="math">r⃗ = x î + y ĵ</span>, décomposé sur deux axes orthonormés (OpenStax, vol. 1, § 4.1 et § 4.2).</p>
+          <div class="formula-block">
+            <span class="formula-label">DÉCOMPOSITION ET RECOMPOSITION</span>
+            <math class="mathml-display" display="block" aria-label="module du vecteur A égale racine de Ax au carré plus Ay au carré ; angle égale arctan de Ay sur Ax">
+              <mtable columnalign="left">
+<mtr><mtd><mrow><mo>|</mo><mover><mi>A</mi><mo>→</mo></mover><mo>|</mo><mo>=</mo><msqrt><mrow><msubsup><mi>A</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>A</mi><mi>y</mi><mn>2</mn></msubsup></mrow></msqrt></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>θ</mi><mo>=</mo><mi>arctan</mi><mfrac><msub><mi>A</mi><mi>y</mi></msub><msub><mi>A</mi><mi>x</mi></msub></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">â = A⃗/|A⃗| est le vecteur unitaire ; θ est mesuré entre A⃗ et l’axe horizontal, dans le sens trigonométrique</span>
+          </div>
+          <p>En deux dimensions, la vitesse est <span class="math">v⃗ = v<sub>x</sub> î + v<sub>y</sub> ĵ</span> et l’accélération <span class="math">a⃗ = a<sub>x</sub> î + a<sub>y</sub> ĵ</span>. Les composantes <span class="math">v<sub>x</sub></span> et <span class="math">v<sub>y</sub></span> ont une évolution <strong>indépendante</strong> l’une de l’autre : c’est le principe de décomposition qui permet de traiter un mouvement plan comme deux mouvements rectilignes distincts, l’un horizontal, l’autre vertical (OpenStax, vol. 1, § 4.2).</p>
+          <div class="callout"><strong>L’addition vectorielle n’est pas commutative</strong><p>La somme de deux vecteurs se fait par la règle du parallélogramme, pas en additionnant les normes. Un déplacement de 3 m vers l’est suivi de 4 m vers le nord mesure 5 m (le triplet 3-4-5) et fait un angle de <span class="math">arctan(4/3) ≈ 53°</span> avec l’est. Inverser l’ordre ne change ni la norme ni la direction finale, mais change les positions intermédiaires parcourues — c’est pourquoi l’ordre d’application des forces compte lors d’un bilan (OpenStax, vol. 1, § 4.1).</p></div>
+        </section>
+
+        <section class="lesson-section" id="lancer-projectiles" aria-labelledby="lancer-projectiles-title">
+          <p class="section-index">07 / LE LANCER DE PROJECTILES</p>
+          <h2 id="lancer-projectiles-title">Deux mouvements indépendants, une seule trajectoire</h2>
+          <p>Un <strong>projectile</strong> est un corps lancé dans l’air puis soumis à la seule accélération de la pesanteur. En orientant l’axe <em>y</em> vers le haut, OpenStax pose <span class="math">a<sub>y</sub> = −g = −9,8 m·s⁻²</span> et <span class="math">a<sub>x</sub> = 0</span> : faute de résistance de l’air, la composante horizontale de la vitesse reste constante et la composante verticale suit exactement les équations de la chute libre (OpenStax, vol. 1, § 4.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">PORTÉE, TEMPS DE VOL ET HAUTEUR MAXIMALE</span>
+            <math class="mathml-display" display="block" aria-label="portée égale v zéro au carré sin de deux alpha sur g ; temps de vol égale deux v zéro sin alpha sur g ; hauteur max égale v zéro au carré sin au carré de alpha sur deux g">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>R</mi><mo>=</mo><mfrac><mrow><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>sin</mo><mn>2</mn><mi>α</mi></mrow><mi>g</mi></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>v</mi><mn>0</mn></msub><mo>sin</mo><mi>α</mi></mrow><mi>g</mi></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>y</mi><mtext>max</mtext></msub><mo>=</mo><mfrac><mrow><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><msup><mrow><mo>sin</mo><mi>α</mi></mrow><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+</math>
+            <span class="formula-label">α : angle de tir au-dessus de l’horizontal ; ces résultats supposent un tir et un impact à la même hauteur</span>
+          </div>
+          <p>Trois conséquences se lisent immédiatement dans ces expressions. La portée est maximale pour <span class="math">α = 45°</span>, puisque <span class="math">sin 2α</span> est maximal pour <span class="math">2α = 90°</span>. La portée croît comme le <strong>carré</strong> de la vitesse initiale : doubler <span class="math">v₀</span> multiplie la portée par quatre. Enfin, à vitesse fixée, un tir à <span class="math">45° + δ</span> atteint la même portée qu’un tir à <span class="math">45° − δ</span>, mais avec une hauteur et un temps de vol supérieurs : c’est le compromis fondamental du sport (OpenStax, vol. 1, § 4.3).</p>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · LANCER À 45°</strong><span class="math">v₀ = 20,0 m·s⁻¹ ; α = 45° ; g = 9,81 m·s⁻²</span><span class="math">R = 20,0² × sin 90° / 9,81 = 400 / 9,81 ≈ 40,8 m</span><span class="math">y<sub>max</sub> = 400 × 0,5 / (2 × 9,81) ≈ 10,2 m</span></div>
+          <p>La trajectoire est une <strong>parabole</strong> dont l’équation s’obtient en éliminant le temps entre <span class="math">x = v₀ cos α · t</span> et <span class="math">y = v₀ sin α · t − ½ g t²</span>. L’absence de résistance de l’air est l’hypothèse qui la rend exacte ; dès qu’elle intervient, la trajectoire s’aplatit et la portée diminue (OpenStax, vol. 1, § 4.3).</p>
+        </section>
+
+        <section class="lesson-section" id="mouvement-circulaire" aria-labelledby="mouvement-circulaire-title">
+          <p class="section-index">08 / LE MOUVEMENT CIRCULAIRE</p>
+          <h2 id="mouvement-circulaire-title">Mouvement circulaire : une accélération qui ne s’éteint jamais</h2>
+          <p>Dans le <strong>mouvement circulaire uniforme</strong>, un point se déplace à vitesse constante sur un cercle de rayon <span class="math">r</span>. Sa norme de vitesse est constante, mais la <em>direction</em> de son vecteur vitesse change à chaque instant : l’accélération n’est donc pas nulle. OpenStax montre que deux triangles isocèles semblables conduisent à <span class="math">Δv/v = Δr/r</span>, d’où une accélération de norme <span class="math">v²/r</span> dirigée vers le centre : c’est l’<strong>accélération centripète</strong> (OpenStax, vol. 1, § 4.4).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">GRANDEURS DU MOUVEMENT CIRCULAIRE UNIFORME</span>
+            <math class="mathml-display" display="block" aria-label="accélération centripète égale v au carré sur r ; période égale deux pi r sur v ; vitesse angulaire égale deux pi sur T">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mo>=</mo><mi>r</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>r</mi></mrow><mi>v</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>ω</mi></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>v</mi><mo>=</mo><mi>r</mi><mi>ω</mi><mo>=</mo><mn>2</mn><mi>π</mi><mfrac><mi>r</mi><mi>T</mi></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Le <strong>mouvement circulaire non uniforme</strong> ajoute une <strong>accélération tangentielle</strong> <span class="math">a<sub>t</sub> = r α</span>, due à la variation de la vitesse, à l’accélération centripète. Les deux composantes sont <strong>perpendiculaires</strong> : l’une suit le sens du mouvement, l’autre pointe vers le centre. L’accélération totale est alors l’hypoténuse d’un triangle rectangle, <span class="math">a = √(a<sub>c</sub>² + a<sub>t</sub>²)</span> (OpenStax, vol. 1, § 4.4).</p>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · POINT SUR UNE ROUE</strong><span class="math">r = 0,50 m ; v = 6,0 m·s⁻¹ ; mouvement uniforme</span><span class="math">a<sub>c</sub> = 6,0² / 0,50 = 72,0 m·s⁻²</span><span class="math">T = 2π × 0,50 / 6,0 ≈ 0,52 s</span></div>
+          <div class="callout"><strong>Pourquoi l’accélération centripète n’augmente-t-elle pas la vitesse ?</strong><p>Parce que <span class="math">a⃗</span> est <strong>perpendiculaire</strong> à <span class="math">v⃗</span> : son effet est de courber la trajectoire sans composer de vitesse dans le sens du mouvement. Un point en mouvement circulaire uniforme a donc une énergie cinétique constante — sa seule accélération ne change que la <em>direction</em> de la vitesse. Le travail de la force centripète sur un trajet circulaire complet est donc rigoureusement nul (OpenStax, vol. 1, § 4.4 et § 7.1).</p></div>
+        </section>
+<section class="lesson-section" id="corps-libre" aria-labelledby="corps-libre-title">
+          <p class="section-index">09 / FORCES ET DIAGRAMME DE CORPS LIBRE</p>
+          <h2 id="corps-libre-title">Modéliser par les forces : le diagramme de corps libre</h2>
+          <p>Une <strong>force</strong> est une interaction entre deux objets ; elle agit toujours sur un corps précis et dans une direction précise. À la exception de la pesanteur, toutes les forces étudiées ici supposent un <strong>contact direct</strong> avec l’objet. Leur unité SI est le <strong>newton</strong>, défini par <span class="math">1 N = 1 kg·m·s⁻²</span> (OpenStax, vol. 1, § 5.1 et § 5.4).</p>
+          <p>Le <strong>diagramme de corps libre</strong> est l’outil central de la dynamique : il isole l’objet étudié et n’y figure <em>que</em> les forces qui s’exercent sur lui. OpenStax en énonce les règles — dessiner l’objet, inclure toutes les forces qui agissent sur lui sous forme vectorielle, ne pas inclure la résultante des forces, ne jamais faire figurer les deux forces d’un couple action-réaction sur le même diagramme, ne pas y représenter l’accélération ; si plusieurs objets interviennent, faire un diagramme par objet (OpenStax, vol. 1, § 5.7).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les forces à reconnaître dans un diagramme de corps libre, d’après les « Common Forces » d’OpenStax (vol. 1, § 5.6)</caption>
+              <thead><tr><th scope="col">Force</th><th scope="col">Origine</th><th scope="col">Direction</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Poids <span class="math">mg</span></th><td>Attraction terrestre</td><td>Vers le centre de la Terre</td></tr>
+                <tr><th scope="row">Réaction normale <span class="math">N</span></th><td>Contact avec un support</td><td>Perpendiculaire à la surface</td></tr>
+                <tr><th scope="row">Tension <span class="math">T</span></th><td>Câble ou corde tendue</td><td>Le long du câble</td></tr>
+                <tr><th scope="row">Force de ressort</th><td>Déformation d’un ressort</td><td>Vers la position de repos</td></tr>
+                <tr><th scope="row">Frottement</th><td>Contact entre surfaces</td><td>Opposée au glissement</td></tr>
+                <tr><th scope="row">Force appliquée</th><td>Action extérieure directe</td><td>Selon l’action</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="callout"><strong>L’erreur la plus fréquente</strong><p>Faire figurer <span class="math">N − mg</span> sur un diagramme : c’est faux, car ce sont deux forces distinctes dont l’effet se combine seulement au moment d’appliquer la deuxième loi. De même, la force de réaction du sol et le poids <em>ne s’annulent pas</em> nécessairement : ils s’annulent si et seulement si l’accélération verticale est nulle (OpenStax, vol. 1, § 5.7).</p></div>
+        </section>
+
+<section class="lesson-section" id="premiere-loi" aria-labelledby="premiere-loi-title">
+          <p class="section-index">10 / PREMIÈRE LOI : L’INERTIE</p>
+          <h2 id="premiere-loi-title">Première loi de Newton : le principe d’inertie</h2>
+          <p>Un corps au repos reste au repos ; un corps en mouvement reste en mouvement rectiligne à vitesse constante, <em>à moins qu’une force extérieure résultante n’intervienne</em>. OpenStax souligne la répétition du verbe « reste » et précise que la vitesse reste constante <em>au sens vectoriel</em> : ni la norme ni la direction ne changent (OpenStax, vol. 1, § 5.2).</p>
+          <p>L’<strong>inertie</strong> est la tendance d’un objet à conserver son état de mouvement, et elle est proportionnelle à sa masse. Plus la masse est grande, plus il faut une force importante pour modifier le mouvement : un piano est plus difficile à déplacer qu’une chaise, non parce qu’il est plus « lourd » au sens courant, mais parce que son <strong>masse inertielle</strong> est plus grande (OpenStax, vol. 1, § 5.2 et § 5.3).</p>
+          <div class="callout"><strong>Galilée et l’inertie</strong><p>La formulation de Newton prolonge une intuition qui fut d’abord celle de Galilée : sur un plan parfaitement lisse, un corps en mouvement ne s’arrêterait jamais. Le frottement masque cette idée : un palet de hockey glisse loin sur une table de jeu à air, précisément parce que l’air souffle une couche qui supprime presque tout contact (OpenStax, vol. 1, § 5.2).</p></div>
+          <p>L’<strong>équilibre</strong> est le cas particulier où la résultante des forces est nulle : le corps est alors au repos ou en mouvement rectiligne uniforme. Il peut donc être en mouvement sans qu’aucune force ne le « pousse » — c’est exactement le cas d’un satellite en orbite, où la gravitation fournit justement la force centripète nécessaire (OpenStax, vol. 1, § 5.2).</p>
+        </section>
+
+
+<section class="lesson-section" id="deuxieme-loi" aria-labelledby="deuxieme-loi-title">
+          <p class="section-index">11 / DEUXIÈME LOI : LA RÉSULTANTE</p>
+          <h2 id="deuxieme-loi-title">Deuxième loi de Newton : la force cause le changement de mouvement</h2>
+          <p>La deuxième loi établit la relation quantitative entre force et accélération. Dans un référentiel galiléen, la somme vectorielle des forces extérieures appliquées à un système est égale à la masse du système multipliée par l’accélération de son centre de masse (OpenStax, vol. 1, § 5.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">DEUXIÈME LOI DE NEWTON — FORME VECTORIELLE</span>
+            <math class="mathml-display" display="block" aria-label="somme des forces extérieures égale à la masse multipliée par le vecteur accélération du centre de masse">
+              <mrow><munder><mo>∑</mo><mi>i</mi></munder><msub><mover><mi>F</mi><mo>→</mo></mover><mrow><mi>i</mi><mo>,</mo><mi>ext</mi></mrow></msub><mo>=</mo><mi>m</mi><msub><mover><mi>a</mi><mo>→</mo></mover><mtext>CM</mtext></msub></mrow>
+            </math>
+            <span class="formula-label">1 N = 1 kg·m·s⁻² ; « ext » rappelle que seules les forces extérieures au système choisi figurent dans la somme</span>
+          </div>
+          <p>Trois lectures en découlent. L’accélération est <strong>proportionnelle</strong> à la résultante des forces. Elle est <strong>inversement proportionnelle</strong> à la masse : doubler la force double l’accélération, doubler la masse la divise par deux. Elle est dirigée dans le sens de la résultante, jamais contre elle. Et comme les forces sont vectorielles, il suffit de choisir deux axes — en général un horizontal et un vertical — et d’écrire une équation scalaire par axe (OpenStax, vol. 1, § 5.3).</p>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ</strong><span class="math">m = 1 500 kg ; ΣF⃗ = 3 000 N ; direction horizontale, pas de frottement</span><span class="math">a = ΣF / m = 3 000 / 1 500 = 2,0 m·s⁻²</span></div>
+          <div class="callout"><strong>La masse inertielle n’est pas la masse gravitationnelle</strong><p>Dans <span class="math">F⃗ = ma⃗</span>, <em>m</em> est la <strong>masse inertielle</strong> : elle mesure la résistance au changement de mouvement. La masse qui apparaît dans <span class="math">w = mg</span> est la <strong>masse gravitationnelle</strong> : elle mesure l’intensité de l’attraction terrestre. L’expérience de Pound et de Rebika a établi, par mesure très précise de la période d’un pendule, que ces deux masses sont égales aux mieux métrologiquement — fait remarquable, et non une simple évidence (OpenStax, vol. 1, § 5.3).</p></div>
+        </section>
+
+        <section class="lesson-section" id="masse-poids" aria-labelledby="masse-poids-title">
+          <p class="section-index">12 / MASSE, POIDS ET POIDS APPARENT</p>
+          <h2 id="masse-poids-title">Masse et poids : deux grandeurs à ne pas confondre</h2>
+          <p>Masse et poids sont employés indifféremment dans le langage courant — un dossier médical indique un « poids » en kilogrammes, alors que l’unité correcte serait le newton. En physique, la distinction est fondamentale. Le <strong>poids</strong> est l’attraction de la Terre : il dépend de la distance au centre de la Terre. La <strong>masse</strong> est une quantité de matière : elle ne varie pas avec le lieu (OpenStax, vol. 1, § 5.4).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">MASSE ET POIDS</span>
+            <math class="mathml-display" display="block" aria-label="w vecteur égale m g vecteur ; en scalaire w égale m g ; sur la Terre g vaut 9,80 mètres par seconde carrée">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mover><mi>w</mi><mo>→</mo></mover><mo>=</mo><mi>m</mi><mover><mi>g</mi><mo>→</mo></mover></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>w</mi><mo>=</mo><mi>m</mi><mi>g</mi><mspace width="0.2em"/><mo>avec</mo><mspace width="0.2em"/><mi>g</mi><mo>=</mo><mn>9,80</mn><mspace width="0.2em"/><mi mathvariant="normal">m·s⁻²</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">une masse de 1,00 kg pèse 9,80 N sur Terre, et environ 1,6 N sur la Lune, où OpenStax donne g = 1,62 m·s⁻²</span>
+          </div>
+          <div class="callout"><strong>« Masse » et « poids » : ce que mesure une balance</strong><p>Un poids apparent de zéro est une <strong>apesanteur</strong> : l’astronaute n’est pas devenu plus léger, il a simplement cessé de peser sur le fauteuil (OpenStax, vol. 1, § 5.4).</p></div>
+          <p>Le <strong>poids apparent</strong> — ce que mesure une balance, c’est-à-dire la <em>réaction normale</em> — se calcule dans un référentiel accéléré. Dans un ascenseur : <span class="math">N = m(g ± a)</span>, avec le signe <em>plus</em> pour une montée accélérée, <em>moins</em> pour une descente accélérée et <span class="math">g</span> dans un ascenseur en mouvement uniforme (OpenStax, vol. 1, § 5.4).</p>
+          <p>Un corps qui tombe dans l’air n’est jamais en chute libre parfaite : la résistance de l’air s’oppose toujours à la chute, et l’accélération obtenue est inférieure à <span class="math">g</span>. C’est le sens du terme <em>chute libre</em> qu’OpenStax rappelle : la seule force agissant doit être le poids (OpenStax, vol. 1, § 5.4).</p>
+        </section>
+
+        <section class="lesson-section" id="troisieme-loi" aria-labelledby="troisieme-loi-title">
+          <p class="section-index">13 / TROISIÈME LOI : ACTION ET RÉACTION</p>
+          <h2 id="troisieme-loi-title">Troisième loi de Newton : des forces égales sur des corps différents</h2>
+          <p>Quand deux objets interagissent, la force que le premier exerce sur le second et celle que le second exerce sur le premier sont <strong>égales en module et opposées en direction</strong>. OpenStax formalise cette symétrie par <span class="math">F⃗<sub>21</sub> = −F⃗<sub>12</sub></span> (OpenStax, vol. 1, § 5.5 et § 9.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ACTION ET RÉACTION</span>
+            <math class="mathml-display" display="block" aria-label="F deux un égale moins F un deux ; m un a un égale moins m deux a deux">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mover><mi>F</mi><mo>→</mo></mover><mn>21</mn></msub><mo>=</mo><mo>−</mo><msub><mover><mi>F</mi><mo>→</mo></mover><mn>12</mn></msub></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mover><mi>a</mi><mo>→</mo></mover><mn>1</mn></msub><mo>=</mo><mo>−</mo><msub><mi>m</mi><mn>2</mn></msub><msub><mover><mi>a</mi><mo>→</mo></mover><mn>2</mn></msub></mrow></mtd></mtr>
+              </mtable>
+            </math>
+<span class="formula-label">l’indice indique le corps sur lequel la force s’exerce ; 2 sur 1, donc la force subie par le corps 1</span>
+          </div>
+          <div class="callout"><strong>Pourquoi ces deux forces ne s’annulent-elles pas ?</strong><p>Parce qu’elles ne s’exercent <em>pas sur le même corps</em>. <span class="math">F<sub>21</sub></span> agit sur le corps 1, <span class="math">F<sub>12</sub></span> sur le corps 2 : leur somme vectorielle n’a aucun sens dans un diagramme de corps libre, où l’on ne fait figurer que les forces agissant sur <em>un</em> objet. C’est pour cette raison que la règle du diagramme de corps libre interdit d’y tracer les deux membres d’un couple action-réaction (OpenStax, vol. 1, § 5.7 et § 9.3).</p></div>
+          <p>Les forces sont égales en module, mais les <strong>accélérations</strong> ne le sont pas : <span class="math">a<sub>1</sub>/a<sub>2</sub> = m<sub>2</sub>/m<sub>1</sub></span>. Une balle de baseball et le ballon qu’elle frappe subissent des forces d’intensités identiques, mais la balle, beaucoup plus légère, acquiert une accélération bien plus grande (OpenStax, vol. 1, § 9.3).</p>
+        </section>
+
+        <section class="lesson-section" id="methode-newton" aria-labelledby="methode-newton-title">
+          <p class="section-index">14 / RÉSOUDRE UN PROBLÈME NEWTONIEN</p>
+          <h2 id="methode-newton-title">La méthode en cinq étapes</h2>
+          <p>OpenStax propose une stratégie explicite pour appliquer les lois de Newton. Elle est stable, indépendante de l’énoncé, et c’est elle qui évite la majorité des erreurs de raisonnement (OpenStax, vol. 1, § 6.1).</p>
+          <ol class="method-list">
+            <li><strong>Identifier le système étudié.</strong><span>Définir précisément l’objet dont on cherche le mouvement. Si plusieurs objets interagissent, faire <em>un diagramme par objet</em> : c’est cette séparation qui autorise ensuite la conservation de la quantité de mouvement (section 23).</span></li>
+            <li><strong>Dessiner le diagramme de corps libre.</strong><span>Représenter toutes les forces <em>externes</em> agissant sur cet objet, avec leur sens et, si possible, leur longueur proportionnelle. Ne jamais y tracer la résultante ni l’accélération.</span></li>
+            <li><strong>Choisir les axes.</strong><span>Un axe vertical et un axe horizontal suffisent dans la quasi-totalité des cas. Orienter l’axe horizontal dans le sens du mouvement attendu simplifie le signe de <span class="math">a<sub>x</sub></span>.</span></li>
+            <li><strong>Écrire la deuxième loi sur chaque axe.</strong><span>Une équation pour <span class="math">x</span>, une pour <span class="math">y</span>. Décomposer au préalable toute force oblique, par exemple <span class="math">F<sub>x</sub> = F cos θ</span> et <span class="math">F<sub>y</sub> = F sin θ</span>.</span></li>
+            <li><strong>Résoudre, puis vérifier.</strong><span>Utiliser les équations cinématiques de la section 04 si le temps ou la position interviennent. Contrôler le signe, l’unité et l’ordre de grandeur du résultat, et vérifier que le cas limite attendu est bien retrouvé.</span></li>
+          </ol>
+          <h3>Les erreurs fréquentes à éviter</h3>
+          <ul class="mistake-list">
+            <li><strong>Ajouter une force qui n’existe pas :</strong> la « force du mouvement » n’est pas une force. C’est le référentiel choisi qui définit la vitesse, pas une force qui la crée.</li>
+            <li><strong>Faire figurer la résultante sur le diagramme :</strong> <span class="math">ΣF⃗</span> est une <em>somme</em>, elle appartient à l’équation, pas au schéma des forces.</li>
+            <li><strong>Poser les deux forces d’un couple action-réaction sur le même diagramme :</strong> elles s’exercent sur deux corps différents et ne peuvent ni s’annuler ni figurer ensemble.</li>
+            <li><strong>Négliger le poids dans un mouvement supposé horizontal :</strong> même « dans le vide », la pesanteur subsiste et modifie la réaction normale du support, donc le frottement disponible.</li>
+            <li><strong>Oublier les unités :</strong> tonnes, centimètres et kilomètres par heure sont la source d’erreur la plus fréquente ; convertir avant tout calcul.</li>
+          </ul>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · PALETTE SUR UN PLAN HORIZONTAL</strong><span class="math">m = 500 kg ; F appliquée = 1 500 N ; μ<sub>k</sub> = 0,20 ; g = 9,81 m·s⁻²</span><span class="math">N = mg = 500 × 9,81 = 4 905 N</span><span class="math">f<sub>k</sub> = μ<sub>k</sub>N = 0,20 × 4 905 = 981 N</span><span class="math">a = (1 500 − 981) / 500 = 1,04 m·s⁻²</span></div>
+        </section>
+
+<section class="lesson-section" id="frottement" aria-labelledby="frottement-title">
+          <p class="section-index">15 / LE FROTTEMENT</p>
+          <h2 id="frottement-title">Le frottement : statique, cinétique, et une force qui s’ajuste</h2>
+          <p>Le frottement est une force qui s’oppose au <strong>mouvement relatif</strong> entre deux systèmes en contact. Son intensité dépend des surfaces et de la pression exercée entre elles, et non de l’aire de contact apparente. On distingue le frottement <strong>statique</strong>, entre deux systèmes au repos l’un par rapport à l’autre, du frottement <strong>cinétique</strong>, lorsqu’ils glissent l’un sur l’autre (OpenStax, vol. 1, § 6.2).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">FROTTEMENT STATIQUE ET CINÉTIQUE</span>
+            <math class="mathml-display" display="block" aria-label="frottement statique inférieur ou égal à mu s fois N ; frottement cinétique égale mu k fois N ; le frottement statique s’ajuste à la valeur demandée">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>f</mi><mi>s</mi></msub><mo>≤</mo><msub><mi>μ</mi><mi>s</mi></msub><mi>N</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>=</mo><msub><mi>μ</mi><mi>k</mi></msub><mi>N</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">N : réaction normale ; μ<sub>s</sub> et μ<sub>k</sub> : coefficients de frottement, dépendant des deux matériaux en contact</span>
+          </div>
+          <p>La différence essentielle entre les deux est une différence de <strong>nature</strong>, non seulement de valeur. Le frottement cinétique a une intensité <em>fixe</em>, <span class="math">μ<sub>k</sub>N</span>. Le frottement statique est une force <em>qui s’adapte</em> : il croît exactement comme nécessaire pour équilibrer la force qui tend à faire glisser, jusqu’à atteindre sa valeur maximale <span class="math">μ<sub>s</sub>N</span>. C’est pourquoi un meuble lourd est difficile à déplacer mais se déplace <em>plus</em> facilement une fois en mouvement, le frottement passant brusquement de <span class="math">μ<sub>s</sub></span> à <span class="math">μ<sub>k</sub></span> avec <span class="math">μ<sub>s</sub> &gt; μ<sub>k</sub></span> (OpenStax, vol. 1, § 6.2).</p>
+          <p>Ce caractère adaptatif a une conséquence de méthode : dans un problème de statique, si l’on cherche à savoir si le système glisse, on compare la force réellement nécessaire à la force maximale disponible, <span class="math">μ<sub>s</sub>N</span>. Tant que la force appliquée reste inférieure, le corps ne bouge pas et l’accélération est nulle (OpenStax, vol. 1, § 6.2).</p>
+          <div class="callout"><strong>La classe des forces dissipatives</strong><p>Frottement sec, résistance de l’air et traînée sont des forces non conservatives : leur travail sur un trajet fermé est <em>négatif et non nul</em>. L’énergie mécanique ne se conserve donc pas en leur présence, et l’on parle de forces dissipatives. Leur intensité dépend en général de la vitesse — d’où une vitesse limite, atteinte quand la force de frottement égale la force motrice (OpenStax, vol. 1, § 6.4 et § 8.2).</p></div>
+        </section>
+
+        <section class="lesson-section" id="force-centripete" aria-labelledby="force-centripete-title">
+          <p class="section-index">16 / LA FORCE CENTRIPÈTE</p>
+          <h2 id="force-centripete-title">Force centripète : nommer une force par son effet</h2>
+          <p>Dans un mouvement circulaire, l’accélération est dirigée vers le centre : la force qui la produit est donc appelée <strong>force centripète</strong>. OpenStax précise qu’il ne s’agit pas d’une nouvelle force, mais du <em>rôle</em> que joue la résultante des forces réelles. Elle peut être fournie par la tension d’une corde, par la gravitation, par le frottement des patins, ou par la réaction normale d’une route inclinée (OpenStax, vol. 1, § 6.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">FORCE CENTRIPÈTE — DEUX EXPRESSIONS ÉQUIVALENTES</span>
+            <math class="mathml-display" display="block" aria-label="force centripète égale m v au carré sur r, égale m r omega au carré">
+              <mrow><msub><mover><mi>F</mi><mo>→</mo></mover><mi>c</mi></msub><mo>=</mo><mi>m</mi><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mo>=</mo><mi>m</mi><mi>r</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow>
+            </math>
+          </div>
+          <p>Deux conséquences sont à retenir. D’abord, la force centripète est <strong>perpendiculaire</strong> à la vitesse : elle ne modifie pas la norme de <span class="math">v⃗</span>, seulement sa direction. Ensuite, à force donnée, le rayon de courbure est d’autant plus petit que la vitesse est grande : <span class="math">r = mv²/F<sub>c</sub></span>. Une courbe serrée à grande vitesse exige donc une force nettement plus importante (OpenStax, vol. 1, § 6.3).</p>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · VIRAGE À PALIER (OpenStax, vol. 1, exemple 6.15)</strong><span class="math">m = 900 kg ; r = 500 m ; v = 25,0 m·s⁻¹ ; route horizontale</span><span class="math">F<sub>c</sub> = 900 × 25,0² / 500 = 1 125 N</span><span class="math">μ<sub>s,min</sub> = F<sub>c</sub> / mg = 1 125 / (900 × 9,81) ≈ 0,127</span></div>
+          <p>Sur une <strong>route inclinée</strong> (« piste déversée »), une partie du poids fournit la force centripète, ce qui réduit la part revenant au frottement : le virage devient possible à plus grande vitesse, ou avec un adhérence plus faible. L’inclinaison d’un virage est donc un choix d’ingénierie directement dicté par cette relation (OpenStax, vol. 1, § 6.3).</p>
+          <div class="callout"><strong>« Centripète » n’est pas un nom de force</strong><p>La force centripète n’apparaît jamais dans un bilan de forces comme une force distincte : c’est le nom donné à la résultante lorsqu’elle pointe vers le centre de la trajectoire. Inversement, un satellite n’est pas « tiré » vers la Terre par une force particulière : il tombe simplement en permanence vers le centre, à chaque instant, pendant que son mouvement horizontal le fait dépasser la Terre (section 27).</p></div>
+        </section>
+
+<section class="lesson-section" id="travail-force" aria-labelledby="travail-force-title">
+          <p class="section-index">17 / LE TRAVAIL D’UNE FORCE</p>
+          <h2 id="travail-force-title">Le travail : l’énergie transférée par une force</h2>
+          <p>Le travail d’une force constante est le produit scalaire de cette force par le déplacement <em>de son point d’application</em>, projeté sur la force : <span class="math">W = F⃗ · Δr⃗ = F Δr cos θ</span>. Le travail est une <strong>grandeur scalaire signée</strong>, exprimée en joules ; il est nul si le déplacement est perpendiculaire à la force (OpenStax, vol. 1, § 7.1).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">TRAVAIL D’UNE FORCE CONSTANTE, PUIS D’UNE FORCE VARIABLE</span>
+            <math class="mathml-display" display="block" aria-label="travail égale F d r cosinus theta ; pour une force variable, le travail est l’intégrale de F scalaire d r">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>W</mi><mo>=</mo><mover><mi>F</mi><mo>→</mo></mover><mo>·</mo><mover><mi>Δ</mi><mo>→</mo></mover><mover><mi>r</mi><mo>→</mo></mover><mo>=</mo><mi>F</mi><mi>Δ</mi><mi>r</mi><mo>cos</mo><mi>θ</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>W</mi><mo>=</mo><munder><mo>∫</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mi>→</mi><msub><mi>x</mi><mi>f</mi></msub></mrow></munder><msub><mi>F</mi><mi>x</mi></msub><mspace width="0.2em"/><mi>d</mi><mi>x</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">θ est l’angle entre la force et le déplacement ; 1 J = 1 N·m</span>
+</div>
+          <p>Le signe du travail porte tout son sens. Un travail <strong>positif</strong> accélère le système ; un travail <strong>négatif</strong> le ralentit ; un travail <strong>nul</strong> ne modifie pas son énergie cinétique. C’est exactement le cas d’une force centripète sur un tour complet, toujours perpendiculaire au déplacement (OpenStax, vol. 1, § 7.1).</p>
+          <div class="callout"><strong>Travail d’une force conservative : ne dépend que des extrémités</strong><p>Pour la pesanteur, le travail sur un trajet entre deux points ne dépend pas du chemin suivi : il vaut <span class="math">mg(y<sub>i</sub> − y<sub>f</sub>)</span>. Une montée de 2 m puis une descente de 2 m annule exactement le travail de la pesanteur — le nombre total d’unités de hauteur parcourues n’entre pas en compte, mais leur <em>somme algébrique</em> si (OpenStax, vol. 1, § 8.2).</p></div>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · FORCE À 60°</strong><span class="math">F = 100 N ; Δr = 5,0 m ; θ = 60°</span><span class="math">W = 100 × 5,0 × cos 60° = 100 × 5,0 × 0,50 = 250 J</span></div>
+        </section>
+
+        <section class="lesson-section" id="energie-cinetique" aria-labelledby="energie-cinetique-title">
+          <p class="section-index">18 / ÉNERGIE CINÉTIQUE ET THÉORÈME DU TRAVAIL</p>
+          <h2 id="energie-cinetique-title">De la vitesse à l’énergie : le théorème du travail-énergie</h2>
+          <p>L’<strong>énergie cinétique</strong> d’un corps est l’énergie qu’il possède du fait de son mouvement : <span class="math">E<sub>c</sub> = ½ m v²</span>. Elle est proportionnelle au carré de la vitesse : doubler la vitesse multiplie l’énergie par quatre. Cette relation se déduit du théorème du travail-énergie, énoncé par OpenStax comme la variation d’énergie cinétique égale le travail total des forces (OpenStax, vol. 1, § 7.2 et § 7.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ÉNERGIE CINÉTIQUE ET THÉORÈME DU TRAVAIL-ÉNERGIE</span>
+            <math class="mathml-display" display="block" aria-label="E c égale un demi m v au carré ; E c f moins E c i égale le travail total des forces">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>E</mi><mi>c</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>Δ</mi><msub><mi>E</mi><mi>c</mi></msub><mo>=</mo><msub><mi>E</mi><mrow><mi>c</mi><mo>,</mo><mi>f</mi></mrow></msub><mo>−</mo><msub><mi>E</mi><mrow><mi>c</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>W</mi><mtext>total</mtext></msub><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>W</mi><mi>i</mi></msub></mrow></mtd></mtr>
+              </mtable>
+</math>
+          </div>
+          <p>La force de cette relation est qu’elle <strong>contourne les forces</strong>. Là où la deuxième loi exige de connaître en détail l’évolution de <span class="math">a⃗</span> au fil du trajet, le théorème du travail-énergie relie directement la vitesse finale à la vitesse initiale par l’intermédiaire d’un seul scalaire : le travail total. C’est pourquoi OpenStax le présente comme un outil de calcul « plus modeste » et néanmoins décisif lorsque les forces sont difficiles à expliciter (OpenStax, vol. 1, § 7.3).</p>
+          <div class="callout"><strong>L’énergie mécanique se lit dans un bilan</strong><p>Si le travail total des forces <em>non conservatives</em> est nul, alors <span class="math">ΔE<sub>c</sub> = W<sub>conservatif</sub> = −ΔE<sub>p</sub></span>, donc <span class="math">Δ(E<sub>c</sub> + E<sub>p</sub>) = 0</span>. L’énergie mécanique se conserve alors exactement, et l’on peut traiter le mouvement d’un objet autour d’un obstacle sans jamais mentionner de force (section 21).</p></div>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ</strong><span class="math">m = 2,0 kg ; v<sub>i</sub> = 3,0 m·s⁻¹ ; W total = 16 J</span><span class="math">E<sub>c,i</sub> = ½ × 2,0 × 3,0² = 9,0 J</span><span class="math">E<sub>c,f</sub> = 9,0 + 16 = 25 J → v<sub>f</sub> = √(2 × 25 / 2,0) = 5,0 m·s⁻¹</span></div>
+        </section>
+
+        <section class="lesson-section" id="puissance" aria-labelledby="puissance-title">
+          <p class="section-index">19 / LA PUISSANCE</p>
+          <h2 id="puissance-title">La puissance : un travail par unité de temps</h2>
+          <p>La <strong>puissance</strong> mesure la rapidité avec laquelle une énergie est transférée : <span class="math">P = dW/dt</span>. Pour une force constante faisant un déplacement à vitesse constante, elle s’écrit <span class="math">P = F⃗ · v⃗</span>. L’unité SI est le <strong>watt</strong> : <span class="math">1 W = 1 J·s⁻¹</span> (OpenStax, vol. 1, § 7.4).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">PUISSANCE</span>
+            <math class="mathml-display" display="block" aria-label="P égale d W sur d t ; P égale F vecteur point v vecteur">
+              <mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mi>d</mi><mi>W</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mover><mi>F</mi><mo>→</mo></mover><mo>·</mo><mover><mi>v</mi><mo>→</mo></mover></mrow>
+            </math>
+            <span class="formula-label">1 W = 1 J·s⁻¹ ; 1 kW = 1 000 W</span>
+          </div>
+          <p>La puissance est la grandeur qui distingue machines et performances : deux moteurs délivrant le même couple n’ont pas la même puissance si leurs vitesses de rotation diffèrent. La puissance instantanée peut être négative lors d’un freinage, ou nulle — c’est le cas d’une force centripète, dont le travail est nul (OpenStax, vol. 1, § 7.4).</p>
+          <p>La <strong>puissance moyenne</strong> sur un intervalle est le rapport du travail total à la durée totale : <span class="math">P<sub>moy</sub> = W/Δt</span>. Elle n’a de sens que si l’on précise l’intervalle, puisqu’une machine peut délivrer des pointes de puissance très supérieures à sa puissance moyenne tout en fournissant un travail identique (OpenStax, vol. 1, § 7.4).</p>
+          <div class="callout"><strong>Énergie et puissance : deux questions différentes</strong><p>Un ascenseur de 2 000 kg monte à 4,0 m : l’énergie fournie <span class="math">mgh</span> est fixe, identique quelle que soit la vitesse de montée. Sa <em>puissance</em> dépend en revanche de la durée : plus la montée est rapide, plus la puissance est élevée. Un appareil puissant n’est donc pas forcément un appareil économe (OpenStax, vol. 1, § 7.4).</p></div>
+        </section>
+<section class="lesson-section" id="energie-potentielle" aria-labelledby="energie-potentielle-title">
+          <p class="section-index">20 / ÉNERGIE POTENTIELLE ET FORCES CONSERVATIVES</p>
+          <h2 id="energie-potentielle-title">L’énergie potentielle, énergie stockée par la configuration</h2>
+          <p>L’<strong>énergie potentielle</strong> est l’énergie qu’un système possède du fait de sa configuration. Elle n’est définie qu’à une constante additive près : le zéro est conventionnel, mais les <em>differences</em> d’énergie potentielle — les seules physiquement mesurables — sont indépendantes de ce choix (OpenStax, vol. 1, § 8.1).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ÉNERGIE POTENTIELLE — GRAVITÉ ET RESSORT</span>
+            <math class="mathml-display" display="block" aria-label="E p égale m g y pour la pesanteur ; E p égale un demi k x au carré pour un ressort">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>=</mo><mi>m</mi><mi>g</mi><mi>y</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>E</mi><mi>p</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>k</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>F</mi><mi>x</mi></msub><mo>=</mo><mo>−</mo><mfrac><mrow><mi>d</mi><msub><mi>E</mi><mi>p</mi></msub></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">y : hauteur au-dessus du point de référence ; k : constante de raideur du ressort (N·m⁻¹), x : allongement par rapport à la position de repos</span>
+          </div>
+          <p>Une force est <strong>conservative</strong> si le travail qu’elle accomplit entre deux points est indépendant du chemin suivi, ou — équivalemment — si le travail sur un circuit fermé est nul : <span class="math">∮ F⃗<sub>cons</sub> · d r⃗ = 0</span>. OpenStax précise que ces deux définitions sont équivalentes, puisque tout circuit fermé se décompose en deux chemins aller et retour. Les forces dissipatives comme le frottement sont au contraire <strong>non conservatives</strong> : leur travail dépend du trajet (OpenStax, vol. 1, § 8.2).</p>
+          <div class="callout"><strong>La relation fondamentale entre force et énergie potentielle</strong><p>Pour toute force conservative unidimensionnelle, <span class="math">F<sub>x</sub> = −dE<sub>p</sub>/dx</span>. Le signe moins est porteur de sens : la force conserve le système ; elle s’oppose donc à l’augmentation de l’énergie potentielle. Un objet qu’on hisse gagne de l’énergie potentielle <em>contre</em> la pesanteur, qui elle fournit un travail négatif (OpenStax, vol. 1, § 8.2).</p></div>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · RESSORT</strong><span class="math">k = 200 N·m⁻¹ ; x = 0,30 m</span><span class="math">E<sub>p</sub> = ½ × 200 × 0,30² = 9,0 J</span><span class="math">F = −k x = −200 × 0,30 = −60 N</span></div>
+        </section>
+<section class="lesson-section" id="conservation-energie" aria-labelledby="conservation-energie-title">
+          <p class="section-index">21 / CONSERVATION DE L’ÉNERGIE MÉCANIQUE</p>
+          <h2 id="conservation-energie-title">La conservation de l’énergie mécanique</h2>
+          <p>L’<strong>énergie mécanique</strong> est la somme <span class="math">E<sub>m</sub> = E<sub>c</sub> + E<sub>p</sub></span> des énergies cinétique et potentielle. Lorsque seul le travail des forces conservatives agit, elle se conserve : c’est la conséquence directe du théorème du travail-énergie et de la définition de l’énergie potentielle (OpenStax, vol. 1, § 8.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">BILAN D’ÉNERGIE MÉCANIQUE</span>
+            <math class="mathml-display" display="block" aria-label="E c i plus E p i égale E c f plus E p f ; delta E m égale le travail des forces non conservatives">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>E</mi><mrow><mi>c</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>+</mo><msub><mi>E</mi><mrow><mi>p</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><msub><mi>E</mi><mrow><mi>c</mi><mo>,</mo><mi>f</mi></mrow></msub><mo>+</mo><msub><mi>E</mi><mrow><mi>p</mi><mo>,</mo><mi>f</mi></mrow></msub></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>Δ</mi><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><msub><mi>W</mi><mtext>non conserv.</mtext></msub></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>La conservation se déduit en une ligne : <span class="math">ΔE<sub>c</sub> = W<sub>total</sub> = W<sub>cons</sub> + W<sub>non cons</sub></span> et <span class="math">W<sub>cons</sub> = −ΔE<sub>p</sub></span>, d’où <span class="math">ΔE<sub>m</sub> = W<sub>non cons</sub></span>. Si le frottement est absent, le second membre est nul et l’énergie mécanique est constante. Cette loi est plus efficace que la deuxième loi dans un cas fréquent : celui où l’on cherche une vitesse en un point du trajet sans connaître le détail du mouvement (OpenStax, vol. 1, § 8.3).</p>
+          <div class="callout"><strong>La lecture d’un diagramme d’énergie potentielle</strong><p>Sur un graphique <span class="math">E<sub>p</sub>(x)</span> fermée, l’énergie mécanique est une horizontale : le point d’équilibre est stable lorsque <span class="math">E<sub>p</sub></span> présente un <strong>minimum</strong> (point bas de la courbe), car une petite perturbation fait remonter la courbe et donc l’énergie potentielle, qui repousse vers le minimum. L’équilibre est instable au sommet d’un maximum. Un point d’inflexion est un équilibre <em>indifferent</em> (OpenStax, vol. 1, § 8.4).</p></div>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · CHUTE AVEC FROTTEMENT</strong><span class="math">m = 2,0 kg ; h = 5,0 m ; μ<sub>k</sub> = 0,20 ; départ au repos</span><span class="math">E<sub>p</sub> = 2,0 × 9,81 × 5,0 ≈ 98,1 J ; f<sub>k</sub> = 0,20 × 2,0 × 9,81 ≈ 3,92 N</span><span class="math">E<sub>c,f</sub> = 98,1 − 3,92 × 5,0 ≈ 78,5 J → v<sub>f</sub> ≈ 8,9 m·s⁻¹</span></div>
+        </section>
+
+        <section class="lesson-section" id="quantite-mouvement" aria-labelledby="quantite-mouvement-title">
+          <p class="section-index">22 / QUANTITÉ DE MOUVEMENT ET IMPULSION</p>
+          <h2 id="quantite-mouvement-title">Quantité de mouvement : l’analogie vectorielle de la deuxième loi</h2>
+          <p>La <strong>quantité de mouvement</strong> d’un système est le produit vectoriel de sa masse par sa vitesse : <span class="math">p⃗ = m v⃗</span>. Son unité SI est le <strong>kilogramme-mètre par seconde</strong>. En dérivant la troisième loi, OpenStax montre que <span class="math">d(p⃗<sub>1</sub>)/dt = −d(p⃗<sub>2</sub>)/dt</span> pendant l’interaction : le taux de variation de la quantité de mouvement est identique et opposé pour les deux corps (OpenStax, vol. 1, § 9.1 et § 9.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">QUANTITÉ DE MOUVEMENT, IMPULSION ET THÉORÈME</span>
+            <math class="mathml-display" display="block" aria-label="p égale m v ; impulsion J égale l'intégrale de F dt ; la variation de p égale l'impulsion">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mover><mi>p</mi><mo>→</mo></mover><mo>=</mo><mi>m</mi><mover><mi>v</mi><mo>→</mo></mover></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mover><mi>J</mi><mo>→</mo></mover><mo>=</mo><munder><mo>∫</mo><mrow><msub><mi>t</mi><mi>i</mi></msub><mi>→</mi><msub><mi>t</mi><mi>f</mi></msub></mrow></munder><mover><mi>F</mi><mo>→</mo></mover><mspace width="0.2em"/><mi>d</mi><mi>t</mi><mo>=</mo><mi>Δ</mi><mover><mi>p</mi><mo>→</mo></mover></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">pour une force constante, J⃗ = F⃗ Δt ; 1 N·s = 1 kg·m·s⁻¹</span>
+          </div>
+          <p>L’<strong>impulsion</strong> d’une force est donc l’aire sous la courbe force-temps. Deux forces de même impulsion produisent le même changement de quantité de mouvement, quelle que soit leur évolution : c’est ce qui rend le concept utile dans les chocs, où les durées d’interaction sont très courtes et les forces très élevées (OpenStax, vol. 1, § 9.2).</p>
+          <div class="callout"><strong>Choc bref et allongement de la durée</strong><p>Dans un accident, la tête du passager passe de <span class="math">10</span> à <span class="math">0 m·s⁻¹</span> : la variation de quantité de mouvement est imposée. Si la tête s’arrête en 0,005 s, la force moyenne est vingt fois supérieure à celle qui l’arrêterait en 0,1 s. C’est le principe des <strong>airbags</strong> et des <strong>ceintures</strong>, qui allongent le temps de freinage sans modifier l’impulsion à absorber (OpenStax, vol. 1, § 9.2).</p></div>
+        </section>
+<section class="lesson-section" id="collisions" aria-labelledby="collisions-title">
+          <p class="section-index">23 / COLLISIONS ET TYPES DE CHOCS</p>
+          <h2 id="collisions-title">Conservation de la quantité de mouvement et types de chocs</h2>
+          <p>Un <strong>système fermé</strong> est un ensemble dont aucune force extérieure résultante n’agit : la quantité de mouvement totale y est alors conservée. L’équation <span class="math">Σp⃗<sub>i,f</sub> = Σp⃗<sub>i,i</sub></span> est la contrainte que doit satisfaire tout choc (OpenStax, vol. 1, § 9.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CONSERVATION DE LA QUANTITÉ DE MOUVEMENT (1D)</span>
+            <math class="mathml-display" display="block" aria-label="somme des quantités de mouvement finales égale la somme des quantités de mouvement initiales ; cas de deux corps">
+              <mrow><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>m</mi><mi>i</mi></msub><msub><mi>v</mi><mrow><mi>i</mi><mo>,</mo><mi>f</mi></mrow></msub><mo>=</mo><munder><mo>∑</mo><mi>i</mi></munder><msub><mi>m</mi><mi>i</mi></msub><msub><mi>v</mi><mrow><mi>i</mi><mo>,</mo><mi>i</mi></mrow></msub></mrow>
+            </math>
+            <span class="formula-label">pour deux corps : m₁v₁ᵢ + m₂v₂ᵢ = m₁v₁꜀ + m₂v₂꜀ ; l’indice affecte le corps, l’indice de droite l’instant</span>
+          </div>
+          <p>OpenStax classe les interactions en quatre catégories. Dans un choc <strong>élastique</strong>, l’énergie cinétique du système est conservée en plus de la quantité de mouvement. Dans un choc <strong>inélastique</strong>, de l’énergie cinétique est perdue ; le cas particulier où les deux corps restent soudés est dit <em>parfaitement inélastique</em>, et il correspond à une perte maximale d’énergie cinétique. Une <strong>explosion</strong> est le processus inverse : un corps se fragmente, la quantité de mouvement reste constante mais l’énergie cinétique augmente, l’énergie d’origine étant une énergie potentielle chimique ou élastique (OpenStax, vol. 1, § 9.4).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Types de collisions d’après OpenStax, <em>University Physics</em> vol. 1, § 9.4 — seule la quantité de mouvement se conserve dans tous les cas</caption>
+              <thead><tr><th scope="col">Type</th><th scope="col">Quantité de mouvement</th><th scope="col">Énergie cinétique</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Élastique</th><td>Conservée</td><td>Conservée</td></tr>
+                <tr><th scope="row">Inélastique</th><td>Conservée</td><td>Diminuée</td></tr>
+                <tr><th scope="row">Parfaitement inélastique</th><td>Conservée</td><td>Perte maximale</td></tr>
+                <tr><th scope="row">Explosion</th><td>Conservée</td><td>Augmentée</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · CHOC INÉLASTIQUE</strong><span class="math">m₁ = 2,0 kg à 3,0 m·s⁻¹ ; m₂ = 1,0 kg au repos ; ils restent solidaires</span><span class="math">v = (2,0 × 3,0) / 3,0 = 2,0 m·s⁻¹</span><span class="math">E<sub>c,i</sub> = ½ × 2,0 × 3,0² = 9,0 J ; E<sub>c,f</sub> = ½ × 3,0 × 2,0² = 6,0 J → 3,0 J perdus</span></div>
+          <div class="callout"><strong>Pourquoi la conservation s’impose-t-elle ?</strong><p>Parce que les forces d’interaction sont <em>internes</em> au système : elles se compensent deux à deux dans le bilan de la deuxième loi. À l’échelle d’un choc, les forces externes — frottement, résistance de l’air — sont négligeables devant les forces d’interaction. Si l’on choisit l’ensemble des deux corps comme système, aucune force extérieure ne subsiste et la conservation est automatique (OpenStax, vol. 1, § 9.3).</p></div>
+        </section>
+<section class="lesson-section" id="rotation" aria-labelledby="rotation-title">
+          <p class="section-index">24 / ROTATION ET MOMENT D’INERTIE</p>
+          <h2 id="rotation-title">Le mouvement de rotation et les grandeurs angulaires</h2>
+          <p>La rotation autour d’un axe fixe se décrit par des grandeurs <strong>angulaires</strong> qui correspondent une à une aux grandeurs linéaires, comme OpenStax le montre en les plaçant côte à côte : <span class="math">x ↔ θ</span>, <span class="math">v = dx/dt ↔ ω = dθ/dt</span>, <span class="math">a = dv/dt ↔ α = dω/dt</span>. La position angulaire s’exprime en radians, grandeur sans dimension puisqu’elle est le rapport de deux longueurs (OpenStax, vol. 1, § 10.1 et § 10.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">RELATION ENTRE GRANDEURS ANGULAIRES ET LINÉAIRES</span>
+            <math class="mathml-display" display="block" aria-label="v t égale r omega ; a c égale r omega au carré ; a t égale r alpha">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>v</mi><mi>t</mi></msub><mo>=</mo><mi>r</mi><mi>ω</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>a</mi><mi>c</mi></msub><mo>=</mo><mi>r</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>r</mi><mi>α</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">r est la distance au foyer de rotation ; un point double plus loin tourne deux fois plus vite et accélère quatre fois plus</span>
+          </div>
+          <p>Le <strong>moment d’inertie</strong> <span class="math">I</span> est l’analogue rotationnel de la masse : <span class="math">I = ∫ r² dm</span>. Il mesure la résistance d’un corps à changer de vitesse angulaire autour d’un axe donné, et il dépend autant de la répartition de la masse que de la masse elle-même. Deux solides de même masse peuvent avoir des moments d’inertie très différents selon que la masse est concentrée près de l’axe ou au loin (OpenStax, vol. 1, § 10.4 et § 10.5).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Moments d’inertie des solides usuels autour d’un axe de symétrie (OpenStax, vol. 1, § 10.5)</caption>
+              <thead><tr><th scope="col">Solide</th><th scope="col">Axe</th><th scope="col">Moment d’inertie</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Anneau mince</th><td>perpendiculaire, centre</td><td><span class="math">I = MR²</span></td></tr>
+                <tr><th scope="row">Disque plein</th><td>perpendiculaire, centre</td><td><span class="math">I = ½MR²</span></td></tr>
+                <tr><th scope="row">Sphère pleine</th><td>axe quelconque, centre</td><td><span class="math">I = ⅖MR²</span></td></tr>
+                <tr><th scope="row">Sphère creuse</th><td>axe quelconque, centre</td><td><span class="math">I = ⅔MR²</span></td></tr>
+                <tr><th scope="row">Tige mince</th><td>perpendiculaire, centre</td><td><span class="math">I = ¹⁄₁₂ML²</span></td></tr>
+                <tr><th scope="row">Tige mince</th><td>perpendiculaire, extrémité</td><td><span class="math">I = ⅓ML²</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>L’<strong>énergie cinétique de rotation</strong> reprend la forme de l’énergie cinétique de translation, avec <span class="math">I</span> à la place de <span class="math">m</span> : <span class="math">E<sub>c</sub> = ½Iω²</span>. Le <strong>théorème de l’axe parallèle</strong> permet d’obtenir le moment d’inertie autour d’un axe décalé à partir d’un axe connu passant par le centre de masse : <span class="math">I = I<sub>CM</sub> + Md²</span> (OpenStax, vol. 1, § 10.4 et § 10.5).</p>
+        </section>
+
+        <section class="lesson-section" id="couple-equilibre" aria-labelledby="couple-equilibre-title">
+          <p class="section-index">25 / COUPLE, ÉQUILIBRE ET MOMENT CINÉTIQUE</p>
+          <h2 id="couple-equilibre-title">Le couple, l’équilibre et la conservation du moment cinétique</h2>
+          <p>Le <strong>couple</strong> <span class="math">τ⃗ = r⃗ × F⃗</span> mesure la tendance d’une force à faire tourner un corps autour d’un axe ; son module vaut <span class="math">τ = r F sin θ</span>. Il est maximal quand la force est perpendiculaire au bras de levier, et nul quand elle passe par l’axe. L’axe du couple est perpendiculaire au plan défini par <span class="math">r⃗</span> et <span class="math">F⃗</span> (OpenStax, vol. 1, § 10.6).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">SECONDE LOI DE NEWTON POUR LA ROTATION ET MOMENT CINÉTIQUE</span>
+            <math class="mathml-display" display="block" aria-label="somme des couples égale I alpha ; moment cinétique L égale I omega ; conditions d’équilibre">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><munder><mo>∑</mo><mi>k</mi></munder><msub><mover><mi>τ</mi><mo>→</mo></mover><mi>k</mi></msub><mo>=</mo><mi>I</mi><mover><mi>α</mi><mo>→</mo></mover></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mover><mi>L</mi><mo>→</mo></mover><mo>=</mo><mi>I</mi><mover><mi>ω</mi><mo>→</mo></mover></mrow></mtd></mtr>
+                <mtr><mtd><mrow><munder><mo>∑</mo><mi>k</mi></munder><mover><msub><mi>F</mi><mi>k</mi></msub><mo>→</mo></mover><mo>=</mo><mover><mn>0</mn><mo>→</mo></mover><mspace width="0.3em"/><mo>et</mo><mspace width="0.3em"/><munder><mo>∑</mo><mi>k</mi></munder><msub><mover><mi>τ</mi><mo>→</mo></mover><mi>k</mi></msub><mo>=</mo><mover><mn>0</mn><mo>→</mo></mover></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">l’énergie cinétique de rotation est E<sub>c</sub> = ½Iω² ; L est le moment cinétique</span>
+          </div>
+          <p>Un solide est en <strong>équilibre</strong> si ses accélérations linéaire et angulaire sont nulles. La deuxième condition d’équilibre, <span class="math">Στ⃗ = 0⃗</span>, se coordonne avec la première <span class="math">ΣF⃗ = 0⃗</span> : OpenStax précise que l’équilibre des couples est valable autour de n’importe quel axe, fixe ou non (OpenStax, vol. 1, § 12.1).</p>
+          <p>Le <strong>moment cinétique</strong> se conserve alors en l’absence de couple extérieur, exactement comme la quantité de mouvement. Cette conservation explique le mouvement du patineur : en écartant les bras il augmente son moment d’inertie, ce qui ralentit sa rotation pour conserver <span class="math">L</span>. Le même principe règle le gyroscope, dont la nutation est un changement d’orientation sans variation de moment cinétique (OpenStax, vol. 1, § 11.3).</p>
+          <div class="callout"><strong>Le moment d’inertie dépend de l’axe choisi</strong><p>Une masse identique à la première a un moment d’inertie doublé pour la même distance : <span class="math">I₁ = 2mR²</span> contre <span class="math">I₂ = m(2R)² = 4mR²</span> pour un axe passant par l’extrémité de la même barre. Autour de l’extrémité, la barre est donc deux fois plus difficile à mettre en rotation. C’est l’analogie directe de la deuxième loi, où une force deux fois plus grande donne une accélération deux fois plus faible à masse égale (OpenStax, vol. 1, § 10.5).</p></div>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · DISQUE EN ROTATION</strong><span class="math">M = 2,0 kg ; R = 0,20 m ; ω = 10 rad·s⁻¹</span><span class="math">I = ½ × 2,0 × 0,20² = 0,040 kg·m²</span><span class="math">E<sub>c</sub> = ½ × 0,040 × 10² = 2,0 J</span></div>
+        </section>
+<section class="lesson-section" id="gravitation" aria-labelledby="gravitation-title">
+          <p class="section-index">26 / LA GRAVITATION UNIVERSELLE</p>
+          <h2 id="gravitation-title">La gravitation universelle</h2>
+          <p>Deux corps ponctuels s’attirent avec une force dirigée selon la droite qui les joint, de module <strong>inversement proportionnel au carré de leur distance</strong>. Cette loi, formulée par Newton, est la première interaction décrite comme agissant <em>à distance</em>, sans contact matériel (OpenStax, vol. 1, § 13.1).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LOI DE L’UNIVERSALITÉ DE LA GRAVITATION</span>
+            <math class="mathml-display" display="block" aria-label="F vecteur égale G m1 m2 sur r au carré, G point un vers le centre ; constante G = 6,674 30 fois 10 puissance moins 11">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mover><mi>F</mi><mo>→</mo></mover><mo>=</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mover><mi>r̂</mi><mo>→</mo></mover></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>G</mi><mo>=</mo><mn>6,674</mn><mspace width="0.2em"/><mn>30</mn><mo>×</mo><msup><mn>10</mn><mn>−11</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">N·m²·kg⁻²</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">valeur CODATA 2022 (NIST), incertitude relative 2,2 × 10⁻⁵</span>
+          </div>
+          <p>La constante <span class="math">G</span> est la plus petite des constantes fondamentales en valeur numérique et la moins bien connue : son incertitude relative, <span class="math">2,2 × 10⁻⁵</span>, est imposée par la précision des mesures de balance, et non par la théorie. C’est la même raison qui rend la pesanteur <em>très peu</em> précise comme instrument de mesure de masse (OpenStax, vol. 1, § 13.1).</p>
+          <p>Près de la surface terrestre, la force gravitationnelle se confond avec le poids : <span class="math">w = m g</span>, d’où <span class="math">g = GM<sub>T</sub>/r²</span> avec <span class="math">M<sub>T</sub></span> la masse terrestre et <span class="math">r</span> la distance au centre. Pour la Lune, l’orbite est une chute libre permanente : la gravitation fournit exactement l’accélération centripète nécessaire, <span class="math">G M<sub>T</sub> m / r² = m v²/r</span>, ce qui permet de simplifier en <span class="math">v = √(GM<sub>T</sub>/r)</span> et conduit aux lois de Kepler (OpenStax, vol. 1, § 13.2).</p>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · FORCE ENTRE DEUX MASSES</strong><span class="math">m₁ = m₂ = 1,0 kg ; r = 0,10 m ; G = 6,674 × 10⁻¹¹ N·m²·kg⁻²</span><span class="math">F = 6,674 × 10⁻¹¹ × 1,0 × 1,0 / 0,10² ≈ 6,7 × 10⁻⁹ N</span></div>
+          <div class="callout"><strong>Pourquoi un satellite ne tombe-t-il pas ?</strong><p>Un satellite en orbite n’est pas soustrait à la gravitation : il en subit l’effet complet. Il « tombe » continûment vers la Terre, mais sa vitesse latérale lui fait dépasser la chute à chaque instant — c’est ce que signifie la phrase de Newton, dans son <em>Principia</em>, qu’une pierre lancée assez loin tourne indéfiniment autour de la Terre. La gravitation fournit donc bien la force centripète de la section 16 (OpenStax, vol. 1, § 13.4).</p></div>
+        </section>
+<section class="lesson-section" id="orbites" aria-labelledby="orbites-title">
+          <p class="section-index">27 / ORBITES ET LOIS DE KEPLER</p>
+          <h2 id="orbites-title">Orbites : de l’énergie potentielle gravitationnelle aux lois de Kepler</h2>
+          <p>La gravitation est une force <strong>conservative</strong> : son énergie potentielle s’écrit <span class="math">U(r) = −GMm/r</span> avec une constante de gravitation <em>nulle</em> à l’infini. Le signe moins traduit le caractère attractif : plus deux corps sont proches, plus leur énergie potentielle est basse (OpenStax, vol. 1, § 13.3).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">ÉNERGIE D’UNE ORBITE — VERSION EN ÉNERGIE ET EN QUANTITÉ DE MOUVEMENT</span>
+            <math class="mathml-display" display="block" aria-label="E égale G M m sur deux r moins ; en orbite circulaire la vitesse est racine de G M sur r ; la période suit la troisième loi de Kepler">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi><mi>m</mi></mrow><mrow><mn>2</mn><mi>r</mi></mrow></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>v</mi><mo>=</mo><msqrt><mfrac><mrow><mi>G</mi><mi>M</mi></mrow><mi>r</mi></mfrac></msqrt></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><msup><mi>a</mi><mn>3</mn></msup></mrow><mrow><mi>G</mi><mi>M</mi></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">M : masse de l’astre attracteur ; a : demi-grand axe de l’orbite ; la troisième loi de Kepler ne dépend pas de la masse du satellite</span>
+          </div>
+          <p>En combinant <span class="math">E<sub>c</sub> = ½mv²</span> et <span class="math">U = −GMm/r</span>, on obtient l’énergie totale d’une orbite circulaire : <span class="math">E = −GMm/2r</span>. L’énergie est donc <strong>négative</strong>, et sa valeur ne dépend que du demi-grand axe. Il en découle la troisième loi de Kepler : <span class="math">T² = 4π²a³/(GM)</span>, valable pour toute orbite képlérienne. Le satellite de même période orbite donc à la même distance, quelle que soit sa masse (OpenStax, vol. 1, § 13.4).</p>
+          <div class="callout"><strong>Ce que l’énergie négative révèle</strong><p>Une énergie négative signifie que le système est <em>lié</em> : il ne peut pas se dissocier spontanément en s’éloignant à l’infini, où son énergie tendrait vers zéro. C’est exactement la condition de stabilité d’une orbite. À l’inverse, un objet d’énergie positive — une comète sur une orbite hyperbolique — est simplement parti : il reviendra peut-être un jour, mais jamais par le mécanisme d’une orbite stable (OpenStax, vol. 1, § 13.4).</p></div>
+        </section>
+
+<section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">28 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">Exercices corrigés</h2>
+          <p>Douze exercices couvrant l’ensemble du cours, du changement de référentiel aux lois de Kepler. Essaie de répondre avant d’ouvrir la correction : le but est de manipuler les relations, pas de les relire.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Un train roule à <span class="math">30 m·s⁻¹</span> vers l’est. Un passager marche vers l’avant à <span class="math">2 m·s⁻¹</span>. Quelle est sa vitesse par rapport au quai ? Par rapport au wagon ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Par rapport au wagon, la vitesse du passager est <span class="math">+2 m·s⁻¹</span> : c’est la vitesse mesurée dans le référentiel du wagon.<br>
+            <span class="math">v<sub>quai</sub> = v<sub>train</sub> + v<sub>passager</sub> = 30 + 2 = 32 m·s⁻¹</span> vers l’est.<br>
+            <strong>Réponse : 32 m·s⁻¹ vers l’est par rapport au quai, 2 m·s⁻¹ vers l’avant par rapport au wagon.</strong> C’est le principe du mouvement relatif (section 01) : les deux valeurs sont exactes, dans deux référentiels différents.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Un objet est lâché sans vitesse initiale d’une hauteur de <span class="math">20,0 m</span>. Combien de temps met-il à toucher le sol et quelle vitesse atteint-il ? (<span class="math">g = 9,81 m·s⁻²</span>)</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Chute libre, axe orienté vers le haut : <span class="math">y = y₀ − ½gt²</span>.<br>
+            <span class="math">0 = 20,0 − ½ × 9,81 × t² → t² = 40,0 / 9,81 = 4,08 → t ≈ 2,02 s</span><br>
+            <span class="math">v = g t = 9,81 × 2,02 ≈ 19,8 m·s⁻¹</span><br>
+            <strong>Réponse : environ 2,0 s et 19,8 m·s⁻¹.</strong> La vitesse est indépendante de la masse : c’est le résultat de Galilée (section 05).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Un canon tire un obus à <span class="math">45°</span> avec une vitesse initiale de <span class="math">150 m·s⁻¹</span>, depuis le sol. Quelle est sa portée et sa hauteur maximale ? (<span class="math">g = 9,81 m·s⁻²</span>)</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">R = v₀² sin 2α / g = 150² × sin 90° / 9,81 = 22 500 / 9,81</span><br>
+            <span class="math">y<sub>max</sub> = v₀² sin²α / (2g) = 22 500 × 0,5 / (2 × 9,81) ≈ 573 m</span><br>
+            <strong>Réponse : portée ≈ 2 294 m et hauteur maximale ≈ 573 m.</strong> L’angle de 45° maximise la portée, mais une vitesse plus élevée donnerait une hauteur bien plus grande (section 07).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Un objet est en mouvement circulaire uniforme de rayon <span class="math">2,0 m</span> à la vitesse de <span class="math">3,0 m·s⁻¹</span>. Quelle est son accélération centripète et sa période ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">a<sub>c</sub> = v²/r = 3,0² / 2,0 = 4,5 m·s⁻²</span><br>
+            <span class="math">T = 2πr/v = 2π × 2,0 / 3,0 ≈ 4,19 s</span><br>
+            <strong>Réponse : 4,5 m·s⁻² et ≈ 4,2 s.</strong> La force qui produit cette accélération est la force centripète de la section 16.</p></div>
+          </details>
+<details class="exercise">
+            <summary><span class="exercise-number">E</span><span>Une masse de <span class="math">5,0 kg</span> est soumise à une résultante de <span class="math">20 N</span>. Quelle est son accélération ? Quel est son poids sur Terre ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">a = ΣF / m = 20 / 5,0 = 4,0 m·s⁻²</span><br>
+            <span class="math">w = m g = 5,0 × 9,81 ≈ 49 N</span><br>
+            <strong>Réponse : 4,0 m·s⁻² et environ 49 N.</strong> La force qui accélère et le poids sont deux grandeurs distinctes : rien n’impose qu’ils soient égaux (section 12).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">F</span><span>Un bloc de <span class="math">4,0 kg</span> glisse sur un sol horizontal avec <span class="math">μ<sub>k</sub> = 0,30</span> sous l’action d’une force horizontale de <span class="math">30 N</span>. Quelle est son accélération ? (<span class="math">g = 9,81 m·s⁻²</span>)</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Réaction normale : <span class="math">N = mg = 4,0 × 9,81 = 39,2 N</span> (aucune composante verticale de la force appliquée).<br>
+            <span class="math">f<sub>k</sub> = μ<sub>k</sub>N = 0,30 × 39,2 = 11,8 N</span><br>
+            <span class="math">a = (30 − 11,8) / 4,0 ≈ 4,6 m·s⁻²</span><br>
+            <strong>Réponse : ≈ 4,6 m·s⁻².</strong> Il faut d’abord calculer la réaction normale, car c’est elle qui fixe le frottement (section 15).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">G</span><span>Une voiture de <span class="math">1 200 kg</span> negotiate un virage horizontal de rayon <span class="math">100 m</span> à <span class="math">20 m·s⁻¹</span>. Quel est le coefficient de frottement statique minimal ? (<span class="math">g = 9,81 m·s⁻²</span>)</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">F<sub>c</sub> = mv²/r = 1 200 × 20² / 100 = 4 800 N</span><br>
+            <span class="math">μ<sub>s,min</sub> = F<sub>c</sub> / (mg) = 4 800 / (1 200 × 9,81) = 4 800 / 11 772 ≈ 0,41</span><br>
+            <strong>Réponse : μ<sub>s</sub> ≈ 0,41 au minimum.</strong> En deçà, la voiture glisse vers l’extérieur du virage (section 16).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">H</span><span>Une force de <span class="math">50 N</span> agit à <span class="math">30°</span> au-dessus de l’horizontale sur une caisse déplacée de <span class="math">4,0 m</span> à vitesse constante. Quel est le travail de cette force et celui du frottement ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>À vitesse constante, la variation d’énergie cinétique est nulle, donc <span class="math">W<sub>total</sub> = 0</span>.<br>
+            <span class="math">W<sub>appliquée</sub> = F Δr cos 30° = 50 × 4,0 × 0,866 ≈ 173 J</span><br>
+            <span class="math">W<sub>frottement</sub> = −173 J</span><br>
+            <strong>Réponse : +173 J et −173 J.</strong> Le frottement dissipe exactement l’énergie fournie par la force motrice (section 17).</p></div>
+          </details>
+<details class="exercise">
+            <summary><span class="exercise-number">I</span><span>Une bille de <span class="math">0,20 kg</span> roule sur un plan horizontal à <span class="math">3,0 m·s⁻¹</span>. Combien de travail faut-il pour l’arrêter ? Quelle est son énergie cinétique initiale ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">E<sub>c</sub> = ½mv² = ½ × 0,20 × 3,0² = 0,90 J</span><br>
+            Le théorème du travail-énergie impose <span class="math">W<sub>total</sub> = E<sub>c,f</sub> − E<sub>c,i</sub> = 0 − 0,90 = −0,90 J</span>.<br>
+            <strong>Réponse : il faut fournir −0,90 J, c’est-à-dire dissiper 0,90 J d’énergie.</strong> Le signe négatif traduit un freinage, non une accélération (section 18).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">J</span><span>Un objet de <span class="math">2,0 kg</span> part du repos sur un plan incliné. Quelle est sa vitesse après une descente de hauteur <span class="math">3,0 m</span> en l’absence de frottement ? (<span class="math">g = 9,81 m·s⁻²</span>)</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Conservation de l’énergie mécanique : <span class="math">E<sub>p,i</sub> = E<sub>c,f</sub></span>.<br>
+            <span class="math">mgh = ½mv² → v = √(2gh) = √(2 × 9,81 × 3,0) = √58,9 ≈ 7,7 m·s⁻¹</span><br>
+            <strong>Réponse : ≈ 7,7 m·s⁻¹.</strong> La masse s’élimine : l’énergie potentielle et l’énergie cinétique en contiennent le même facteur (section 21).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">K</span><span>Une balle de <span class="math">0,20 kg</span> à <span class="math">30 m·s⁻¹</span> percute un chariot de <span class="math">1,80 kg</span> au repos ; les deux restent solidaires. Quelle est leur vitesse commune ? L’énergie cinétique est-elle conservée ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Conservation de la quantité de mouvement : <span class="math">v = (0,20 × 30) / (0,20 + 1,80) = 6,0 / 2,0 = 3,0 m·s⁻¹</span><br>
+            <span class="math">E<sub>c,i</sub> = ½ × 0,20 × 30² = 90 J</span> ; <span class="math">E<sub>c,f</sub> = ½ × 2,0 × 3,0² = 9 J</span><br>
+            <strong>Réponse : 3,0 m·s⁻¹ ; l’énergie cinétique n’est pas conservée — 81 J sont perdus.</strong> C’est un choc parfaitement inélastique, le cas de perte maximale (section 23).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">L</span><span>Un disque de masse <span class="math">3,0 kg</span> et de rayon <span class="math">0,25 m</span> tourne à <span class="math">8,0 rad·s⁻¹</span>. Quel est son moment d’inertie et son énergie cinétique de rotation ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Disque plein : <span class="math">I = ½MR² = ½ × 3,0 × 0,25² = 0,094 kg·m²</span><br>
+            <span class="math">E<sub>c</sub> = ½Iω² = ½ × 0,094 × 8,0² ≈ 3,0 J</span><br>
+            <strong>Réponse : I ≈ 0,094 kg·m² et E<sub>c</sub> ≈ 3,0 J.</strong> Le moment d’inertie remplace la masse dans la formule de l’énergie cinétique de rotation (section 24).</p></div>
+          </details>
+        </section>
+
+        <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">29 / SOURCES</p>
+          <h2 id="sources-title">Sources vérifiées</h2>
+          <p>Chaque affirmation scientifique de ce cours renvoie à l’une des sources ci-dessous. OpenStax est prioritaire, le sujet y figurant pour la totalité des notions traitées. Les valeurs numériques des constantes proviennent du NIST et du CODATA ; les grandeurs planétaires, de la fiche de la NASA.</p>
+          <ul>
+            <li><strong>Cinématique et mouvement relatif</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/3-introduction" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 1, chapitre 3 <em>Motion Along a Straight Path</em></a> — § 3.1 <em>Position, Displacement, and Average Velocity</em> ; § 3.2 <em>Instantaneous Velocity and Speed</em> ; § 3.3 <em>Average and Instantaneous Acceleration</em> ; § 3.4 <em>Motion with Constant Acceleration</em> (les cinq équations cinématiques) ; § 3.5 <em>Free Fall</em> (<span class="math">g = 9,81 m·s⁻²</span> en moyenne, de 9,78 à 9,83 m·s⁻², expérience du marteau et de la plume de 1971 sur la Lune) ; § 3.6 <em>Finding Velocity and Displacement from Acceleration</em>.</li>
+            <li><strong>Vecteurs, projectiles et mouvement circulaire</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/4-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 4 <em>Motion in Two and Three Dimensions</em></a> — § 4.1 <em>Displacement and Velocity Vectors</em> ; § 4.2 <em>Acceleration Vector</em> ; § 4.3 <em>Projectile Motion</em> (<span class="math">a<sub>y</sub> = −g</span>, <span class="math">a<sub>x</sub> = 0</span>, portée, temps de vol, hauteur maximale, portée maximale à 45°) ; § 4.4 <em>Uniform and Nonuniform Circular Motion</em> (accélération centripète <span class="math">v²/r</span>, accélération tangentielle) ; § 4.5 <em>Relative Motion in One and Two Dimensions</em>.</li>
+            <li><strong>Forces, inertie et diagrammes de corps libre</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/5-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 5 <em>Newton’s Laws of Motion</em></a> — § 5.1 <em>Forces</em> (forces intérieures et extérieures, notion de système) ; § 5.2 <em>Newton’s First Law</em> (principe d’inertie, inertie, référentiels inertiels, équilibre) ; § 5.3 <em>Newton’s Second Law</em> (résultante des forces extérieures, <span class="math">1 N = 1 kg·m·s⁻²</span>) ; § 5.4 <em>Mass and Weight</em> (<span class="math">w⃗ = m g⃗</span>, <span class="math">g = 9,80 m·s⁻²</span> sur Terre et <span class="math">1,62 m·s⁻²</span> sur la Lune, poids apparent, apesanteur) ; § 5.5 <em>Newton’s Third Law</em> ; § 5.6 <em>Common Forces</em> (poids, réaction normale, tension, force de ressort, frottement, force appliquée) ; § 5.7 <em>Drawing Free-Body Diagrams</em> (règles de construction du diagramme).</li>
+            <li><strong>Méthode de résolution, frottement et force centripète</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/6-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 6 <em>Applications of Newton’s Laws</em></a> — § 6.1 <em>Solving Problems with Newton’s Laws</em> (stratégie en cinq étapes) ; § 6.2 <em>Friction</em> (frottement statique et cinétique, <span class="math">f<sub>s</sub> ≤ μ<sub>s</sub>N</span>, <span class="math">f<sub>k</sub> = μ<sub>k</sub>N</span>) ; § 6.3 <em>Centripetal Force</em> (<span class="math">F<sub>c</sub> = mv²/r = mrω²</span>, exemple 6.15 sur le coefficient de frottement dans un virage) ; § 6.4 <em>Drag Force and Terminal Speed</em>.</li>
+            <li><strong>Travail, énergie cinétique et puissance</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/7-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 7 <em>Work and Kinetic Energy</em></a> — § 7.1 <em>Work</em> (travail d’une force constante et d’une force variable) ; § 7.2 <em>Kinetic Energy</em> (<span class="math">E<sub>c</sub> = ½mv²</span>) ; § 7.3 <em>Work-Energy Theorem</em> ; § 7.4 <em>Power</em> (<span class="math">P = dW/dt = F⃗ · v⃗</span>, 1 W = 1 J·s⁻¹).</li>
+            <li><strong>Énergie potentielle et conservation de l’énergie</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/8-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 8 <em>Potential Energy and Conservation of Energy</em></a> — § 8.1 <em>Potential Energy of a System</em> (<span class="math">E<sub>p</sub> = mgy</span>, <span class="math">E<sub>p</sub> = ½kx²</span>) ; § 8.2 <em>Conservative and Non-Conservative Forces</em> (<span class="math">∮F⃗<sub>cons</sub> · dr⃗ = 0</span>, <span class="math">F<sub>x</sub> = −dE<sub>p</sub>/dx</span>) ; § 8.3 <em>Conservation of Energy</em> (<span class="math">ΔE<sub>m</sub> = W<sub>non conserv.</sub></span>) ; § 8.4 <em>Potential Energy Diagrams and Stability</em> (équilibre stable, instable et indifférent).</li>
+            <li><strong>Quantité de mouvement, impulsion et collisions</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/9-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 9 <em>Linear Momentum and Collisions</em></a> — § 9.1 <em>Linear Momentum</em> (<span class="math">p⃗ = mv⃗</span>) ; § 9.2 <em>Impulse and Collisions</em> ; § 9.3 <em>Conservation of Linear Momentum</em> (système fermé, <span class="math">F⃗<sub>21</sub> = −F⃗<sub>12</sub></span>) ; § 9.4 <em>Types of Collisions</em> (élastique, inélastique, parfaitement inélastique, explosion).</li>
+
+<li><strong>Rotation, couple et moment d’inertie</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/10-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 10 <em>Rotational Motion</em></a> — § 10.1 <em>Rotational Variables</em> (radian, vitesse et accélération angulaires) ; § 10.3 <em>Relating Angular and Translational Quantities</em> (<span class="math">v<sub>t</sub> = rω</span>, <span class="math">a<sub>c</sub> = rω²</span>, <span class="math">a<sub>t</sub> = rα</span>) ; § 10.4 <em>Moment of Inertia and Rotational Kinetic Energy</em> (<span class="math">I = ∫r²dm</span>, <span class="math">E<sub>c</sub> = ½Iω²</span>) ; § 10.5 <em>Calculating Moments of Inertia</em> (tableau des moments d’inertie des solides usuels, exemple de la barre et de ses deux axes) ; § 10.6 <em>Torque</em> (<span class="math">τ⃗ = r⃗ × F⃗</span>, <span class="math">τ = rF sin θ</span>) ; § 10.7 <em>Newton’s Second Law for Rotation</em> (<span class="math">Στ⃗ = I α⃗</span>).</li>
+            <li><strong>Moment cinétique et sa conservation</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/11-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 11 <em>Angular Momentum</em></a> — § 11.2 <em>Angular Momentum</em> (<span class="math">L⃗ = I ω⃗</span>) ; § 11.3 <em>Conservation of Angular Momentum</em> (patineur qui écarte les bras, hélicoptère et rotor de queue) ; § 11.4 <em>Precession of a Gyroscope</em>.</li>
+            <li><strong>Équilibre statique et élasticité</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/12-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 12 <em>Static Equilibrium and Elasticity</em></a> — § 12.1 <em>Conditions for Static Equilibrium</em> (<span class="math">ΣF⃗<sub>k</sub> = 0⃗</span>, <span class="math">Στ⃗<sub>k</sub> = 0⃗</span>, validité de l’équilibre des couples autour de n’importe quel axe) ; § 12.3 <em>Stress, Strain, and Elastic Modulus</em> (contrainte, déformation, <span class="math">1 Pa = 1 N/m²</span>).</li>
+            <li><strong>Gravitation, énergie potentielle gravitationnelle et orbites</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/13-introduction" target="_blank" rel="noreferrer">OpenStax, vol. 1, chapitre 13 <em>Gravitation</em></a> — § 13.1 <em>Newton’s Law of Universal Gravitation</em> (loi en <span class="math">1/r²</span>, historique) ; § 13.2 <em>Gravitation Near Earth’s Surface</em> ; § 13.3 <em>Gravitational Potential Energy and Total Energy</em> (<span class="math">U = −GMm/r</span>) ; § 13.4 <em>Satellite Orbits and Energy</em> (<span class="math">E = −GMm/2r</span> pour une orbite circulaire, énergie négative et système lié) ; § 13.5 <em>Kepler’s Laws of Planetary Motion</em> (<span class="math">T² = 4π²a³/(GM)</span>).</li>
+            <li><strong>Constante de gravitation</strong> : <a href="https://physics.nist.gov/cgi-bin/cuu/Value?bg|search_for=g" target="_blank" rel="noreferrer">NIST, <em>CODATA Recommended Values of the Fundamental Physical Constants</em></a> (ajustement 2022) — <span class="math">G = 6,674 30(15) × 10⁻¹¹ m³·kg⁻¹·s⁻²</span>, incertitude standard <span class="math">0,000 15 × 10⁻¹¹ m³·kg⁻¹·s⁻²</span>, incertitude relative <span class="math">2,2 × 10⁻⁵</span>.</li>
+            <li><strong>Grandeurs planétaires</strong> : <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank" rel="noreferrer">NASA / NSSDCA, <em>Planetary Fact Sheet</em></a> (mise à jour du 18 mars 2025) — masses, diamètres, densités et pesanteurs de surface des planètes et de la Lune, période et vitesse orbitales de la Terre.</li>
+          </ul>
+          <p>Les valeurs numériques citées dans ce cours et non couvertes par les références ci-dessus — coefficients de frottement pris dans les exercices, constantes de raideur — sont des valeurs usuelles choisies pour illustrer chaque méthode ; elles ne sont pas des données expérimentales citées. Les seuls exemples chiffrés repris d’un énoncé de la source sont ceux qui y sont explicitement attribués : OpenStax, vol. 1, exemple 6.15 (virage à palier), et la valeur de <span class="math">g</span> en section 05.</p>
+        </section>
+
+        <footer class="course-footer"><span>MÉCANIQUE ET MOUVEMENT</span><a href="index.html">Retour aux branches ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

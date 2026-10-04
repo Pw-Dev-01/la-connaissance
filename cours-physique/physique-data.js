@@ -5,6 +5,47 @@ window.courseCatalog = [
       { id: 'cinematique', title: 'Cinématique du point', field: 'Classique · bases', summary: 'Position, vitesse et accélération en une et plusieurs dimensions.', lesson: { sections: ['La cinématique décrit un mouvement sans chercher ses causes. On choisit un référentiel, une origine des dates et un repère ; la position devient alors une fonction du temps.', 'La vitesse est la dérivée de la position et l’accélération la dérivée de la vitesse. En mouvement rectiligne uniformément accéléré, l’accélération est constante.'], formula: { label: 'MOUVEMENT À ACCÉLÉRATION CONSTANTE', text: 'v(t) = v₀ + at  |  x(t) = x₀ + v₀t + ½at²' }, example: { statement: 'Un véhicule part du repos et accélère à 2 m·s⁻² pendant 5 s. Quelle distance parcourt-il ?', calculation: 'Avec v₀ = 0 et x₀ = 0, x(5) = ½ × 2 × 5².', answer: 'Il parcourt 25 m.' }, exercise: { question: 'Un objet a v₀ = 3 m·s⁻¹ et a = 2 m·s⁻² pendant 4 s. Quelle est sa vitesse finale ?', answer: 'v = 3 + 2 × 4 = 11 m·s⁻¹.' } } },
       { id: 'lois-newton', title: 'Lois de Newton et forces', field: 'Classique · bases', summary: 'Bilan des forces, inertie, dynamique et action-réaction.', lesson: { sections: ['Une force modélise une interaction. Pour étudier un objet, on isole le système, on dresse le bilan des forces extérieures puis on applique la deuxième loi de Newton.', 'Dans un référentiel galiléen, la somme vectorielle des forces détermine l’accélération. Si la résultante est nulle, la vitesse reste constante : c’est le principe d’inertie.'], formula: { label: 'DEUXIÈME LOI DE NEWTON', text: 'Σ F⃗ₑₓₜ = m a⃗' }, example: { statement: 'Une masse de 4 kg subit une force horizontale résultante de 12 N. Quelle est son accélération ?', calculation: 'a = F/m = 12/4.', answer: 'a = 3 m·s⁻² dans la direction de la résultante.' }, exercise: { question: 'Quelle résultante faut-il pour accélérer une masse de 2 kg à 5 m·s⁻² ?', answer: 'F = ma = 2 × 5 = 10 N.' } } },
       { id: 'energie-mecanique', title: 'Travail, énergie et puissance', field: 'Classique · intermédiaire', summary: 'Travail d’une force, énergie cinétique, potentielle et conservation.', lesson: { sections: ['L’énergie cinétique dépend de la masse et de la vitesse. Le travail d’une force mesure le transfert d’énergie associé à un déplacement.', 'Le théorème de l’énergie cinétique relie la variation d’énergie cinétique au travail total des forces. En l’absence de dissipation, l’énergie mécanique se conserve.'], formula: { label: 'ÉNERGIES ET THÉORÈME', text: 'Ec = ½mv²  |  ΔEc = ΣW(F)  |  Em = Ec + Ep' }, example: { statement: 'Un objet de 2 kg passe de 3 à 5 m·s⁻¹. Quelle est la variation de son énergie cinétique ?', calculation: 'ΔEc = ½ × 2 × (5² − 3²) = 25 − 9.', answer: 'ΔEc = 16 J.' }, exercise: { question: 'Calculer Ec pour m = 0,5 kg et v = 4 m·s⁻¹.', answer: 'Ec = ½ × 0,5 × 4² = 4 J.' } } }
+    ],
+    // Cours approfondi rattaché à la branche, rendu par
+    // mecanique-approfondie.html : le catalogue n'affiche qu'une seule entrée
+    // (le titre du cours), et ses 29 sections restent numérotées dans le menu
+    // de gauche de la page. Même convention que la branche nucléaire.
+    deepCourses: [
+      {
+        title: 'Mécanique et mouvement',
+        href: 'mecanique-approfondie.html',
+        sections: [
+          { anchor: 'referentiels-mouvement', title: 'Référentiels et mouvement relatif' },
+          { anchor: 'position-deplacement', title: 'Position, déplacement et vitesse' },
+          { anchor: 'vitesse-acceleration', title: 'Vitesse et accélération instantanées' },
+          { anchor: 'acceleration-constante', title: 'Mouvement à accélération constante' },
+          { anchor: 'chute-libre', title: 'La chute libre' },
+          { anchor: 'vecteurs-composantes', title: 'Vecteurs et composantes' },
+          { anchor: 'lancer-projectiles', title: 'Le lancer de projectiles' },
+          { anchor: 'mouvement-circulaire', title: 'Le mouvement circulaire' },
+          { anchor: 'corps-libre', title: 'Forces et diagramme de corps libre' },
+          { anchor: 'premiere-loi', title: 'Première loi : l’inertie' },
+          { anchor: 'deuxieme-loi', title: 'Deuxième loi : la résultante' },
+          { anchor: 'masse-poids', title: 'Masse, poids et poids apparent' },
+          { anchor: 'troisieme-loi', title: 'Troisième loi : action et réaction' },
+          { anchor: 'methode-newton', title: 'Résoudre un problème newtonien' },
+          { anchor: 'frottement', title: 'Le frottement' },
+          { anchor: 'force-centripete', title: 'La force centripète' },
+          { anchor: 'travail-force', title: 'Le travail d’une force' },
+          { anchor: 'energie-cinetique', title: 'Énergie cinétique et théorème du travail' },
+          { anchor: 'puissance', title: 'La puissance' },
+          { anchor: 'energie-potentielle', title: 'Énergie potentielle et forces conservatives' },
+          { anchor: 'conservation-energie', title: 'Conservation de l’énergie mécanique' },
+          { anchor: 'quantite-mouvement', title: 'Quantité de mouvement et impulsion' },
+          { anchor: 'collisions', title: 'Collisions et types de chocs' },
+          { anchor: 'rotation', title: 'Rotation et moment d’inertie' },
+          { anchor: 'couple-equilibre', title: 'Couple, équilibre et moment cinétique' },
+          { anchor: 'gravitation', title: 'La gravitation universelle' },
+          { anchor: 'orbites', title: 'Orbites et lois de Kepler' },
+          { anchor: 'exercices', title: 'S’entraîner' },
+          { anchor: 'sources', title: 'Sources' }
+        ]
+      }
     ]
   },
   {
@@ -503,26 +544,53 @@ const additionalPhysicsDetails = {
   cinematique: {
     equations: [
       { title: 'Vitesse à accélération constante', formula: 'v(t) = v₀ + at', explanation: 'Cette relation donne la vitesse après une durée t lorsque l’accélération a reste constante.', parameters: 'v(t) : vitesse à l’instant t (m·s⁻¹) ; v₀ : vitesse initiale (m·s⁻¹) ; a : accélération algébrique constante (m·s⁻²) ; t : durée (s). Les signes dépendent de l’axe orienté choisi.', example: 'Un véhicule part du repos avec a = 2 m·s⁻² pendant 5 s : v = 0 + 2 × 5.', result: 'v = 10 m·s⁻¹.' },
-      { title: 'Position à accélération constante', formula: 'x(t) = x₀ + v₀t + ½at²', explanation: 'La position résulte de la position initiale, du déplacement dû à la vitesse initiale et du déplacement dû à l’accélération constante.', parameters: 'x(t), x₀ : position et position initiale sur l’axe (m) ; v₀ : vitesse initiale (m·s⁻¹) ; a : accélération constante (m·s⁻²) ; t : durée (s).', example: 'Pour x₀ = 0, v₀ = 0, a = 2 m·s⁻² et t = 5 s : x = ½ × 2 × 5².', result: 'Le déplacement est 25 m.' }
+      { title: 'Position à accélération constante', formula: 'x(t) = x₀ + v₀t + ½at²', explanation: 'La position résulte de la position initiale, du déplacement dû à la vitesse initiale et du déplacement dû à l’accélération constante.', parameters: 'x(t), x₀ : position et position initiale sur l’axe (m) ; v₀ : vitesse initiale (m·s⁻¹) ; a : accélération constante (m·s⁻²) ; t : durée (s).', example: 'Pour x₀ = 0, v₀ = 0, a = 2 m·s⁻² et t = 5 s : x = ½ × 2 × 5².', result: 'Le déplacement est 25 m.' },
+      { title: 'Vitesse instantanée', formula: 'v(t) = dx/dt', explanation: 'La vitesse instantanée est la limite de la vitesse moyenne lorsque l’intervalle de temps tend vers zéro ; elle se lit comme la pente de la courbe x(t), le déplacement étant l’aire sous cette courbe.', parameters: 'v(t) : vitesse à l’instant t (m·s⁻¹) ; x(t) : position (m) ; t : date (s).', example: 'Pour x(t) = 2t², la dérivée est dx/dt = 4t ; à t = 3 s la vitesse vaut 12 m·s⁻¹.', result: 'v(3 s) = 12 m·s⁻¹.' },
+      { title: 'Accélération instantanée', formula: 'a(t) = dv/dt', explanation: 'L’accélération mesure une variation de vitesse, non une vitesse : un objet peut avoir une vitesse constante et une accélération non nulle, par exemple en mouvement circulaire uniforme.', parameters: 'a(t) : accélération (m·s⁻²) ; v(t) : vitesse (m·s⁻¹) ; t : date (s). L’accélération est la pente de la courbe v(t).', example: 'Pour v(t) = 5 − 3t, l’accélération vaut dv/dt = −3 m·s⁻² pendant tout le mouvement.', result: 'a = −3 m·s⁻² : la vitesse décroît linéairement.' }
     ],
-    sources: [{ title: 'OpenStax University Physics, vol. 1 — Motion with Constant Acceleration', url: 'https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration' }]
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Position, Displacement, and Average Velocity', url: 'https://openstax.org/books/university-physics-volume-1/pages/3-1-position-displacement-and-average-velocity' },
+      { title: 'OpenStax University Physics, vol. 1 — Instantaneous Velocity and Speed', url: 'https://openstax.org/books/university-physics-volume-1/pages/3-2-instantaneous-velocity-and-speed' },
+      { title: 'OpenStax University Physics, vol. 1 — Average and Instantaneous Acceleration', url: 'https://openstax.org/books/university-physics-volume-1/pages/3-3-average-and-instantaneous-acceleration' },
+      { title: 'OpenStax University Physics, vol. 1 — Motion with Constant Acceleration', url: 'https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration' },
+      { title: 'OpenStax University Physics, vol. 1 — Free Fall', url: 'https://openstax.org/books/university-physics-volume-1/pages/3-5-free-fall' }
+    ]
   },
   'lois-newton': {
     equations: [
-      { title: 'Deuxième loi de Newton', formula: 'Σ F⃗ₑₓₜ = m a⃗', explanation: 'Dans un référentiel galiléen, la somme vectorielle des forces extérieures appliquées à un système est égale à sa masse fois son accélération. Seule la résultante détermine l’accélération.', parameters: 'Σ F⃗ₑₓₜ : résultante des forces extérieures (N) ; m : masse inertielle (kg) ; a⃗ : accélération du centre de masse (m·s⁻²). 1 N = 1 kg·m·s⁻².', example: 'Une résultante de 12 N agit sur une masse de 4 kg : a = F/m = 12/4.', result: 'L’accélération vaut 3 m·s⁻² dans la direction de la résultante.' }
+      { title: 'Deuxième loi de Newton', formula: 'Σ F⃗ₑₓₜ = m a⃗', explanation: 'Dans un référentiel galiléen, la somme vectorielle des forces extérieures appliquées à un système est égale à sa masse fois son accélération. Seule la résultante détermine l’accélération.', parameters: 'Σ F⃗ₑₓₜ : résultante des forces extérieures (N) ; m : masse inertielle (kg) ; a⃗ : accélération du centre de masse (m·s⁻²). 1 N = 1 kg·m·s⁻².', example: 'Une résultante de 12 N agit sur une masse de 4 kg : a = F/m = 12/4.', result: 'L’accélération vaut 3 m·s⁻² dans la direction de la résultante.' },
+      { title: 'Poids d’un corps', formula: 'w⃗ = m g⃗', explanation: 'Le poids est la force de attraction terrestre : il dépend du lieu, alors que la masse ne varie pas. OpenStax donne g = 9,80 m·s⁻² sur Terre et 1,62 m·s⁻² sur la Lune.', parameters: 'w⃗ : poids (N) ; m : masse (kg) ; g⃗ : accélération de la pesanteur (m·s⁻²). Le poids apparent, mesuré par une balance, vaut N = m(g ± a) dans un référentiel accéléré.', example: 'Une masse de 5,0 kg pèse 5,0 × 9,81 ≈ 49 N sur Terre.', result: 'w ≈ 49 N ; le même corps pèse environ 8,1 N sur la Lune.' },
+      { title: 'Frottement statique et cinétique', formula: 'fₛ ≤ μₛ N  et  fₖ = μₖ N', explanation: 'Le frottement statique s’adapte exactement à la force qui tend à faire glisser, jusqu’à sa valeur maximale ; le frottement cinétique a une intensité fixe une fois le glissement commencé. On a toujours μₛ > μₖ.', parameters: 'fₛ : frottement statique (N) ; fₖ : frottement cinétique (N) ; μₛ, μₖ : coefficients de frottement des deux matériaux ; N : réaction normale (N).', example: 'Un bloc de 4,0 kg sur un sol horizontal avec μₖ = 0,30 : N = 4,0 × 9,81 = 39,2 N donc fₖ = 11,8 N.', result: 'fₖ ≈ 11,8 N, opposée au mouvement.' },
+      { title: 'Force centripète', formula: 'F꜀ = m v²/r', explanation: 'Dans un mouvement circulaire, la force centripète est le nom donné à la résultante des forces lorsqu’elle pointe vers le centre ; elle est perpendiculaire à la vitesse et ne modifie que sa direction.', parameters: 'F꜀ : force centripète (N) ; m : masse (kg) ; v : vitesse (m·s⁻¹) ; r : rayon de la trajectoire (m). Également F꜀ = m r ω².', example: 'Pour m = 900 kg, r = 500 m et v = 25,0 m·s⁻¹ (OpenStax, vol. 1, exemple 6.15).', result: 'F꜀ = 900 × 25,0² / 500 = 1 125 N.' }
     ],
-    sources: [{ title: 'OpenStax University Physics, vol. 1 — Newton’s Second Law', url: 'https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law' }]
+    sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Newton’s First Law', url: 'https://openstax.org/books/university-physics-volume-1/pages/5-2-newtons-first-law' },
+      { title: 'OpenStax University Physics, vol. 1 — Newton’s Second Law', url: 'https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law' },
+      { title: 'OpenStax University Physics, vol. 1 — Mass and Weight', url: 'https://openstax.org/books/university-physics-volume-1/pages/5-4-mass-and-weight' },
+      { title: 'OpenStax University Physics, vol. 1 — Drawing Free-Body Diagrams', url: 'https://openstax.org/books/university-physics-volume-1/pages/5-7-drawing-free-body-diagrams' },
+      { title: 'OpenStax University Physics, vol. 1 — Friction', url: 'https://openstax.org/books/university-physics-volume-1/pages/6-2-friction' },
+      { title: 'OpenStax University Physics, vol. 1 — Centripetal Force', url: 'https://openstax.org/books/university-physics-volume-1/pages/6-3-centripetal-force' }
+    ]
   },
   'energie-mecanique': {
     equations: [
       { title: 'Énergie cinétique', formula: 'E꜀ = ½mv²', explanation: 'L’énergie cinétique est l’énergie associée au mouvement de translation d’un corps dans le cadre classique.', parameters: 'E꜀ : énergie cinétique (J) ; m : masse (kg) ; v : vitesse par rapport au référentiel choisi (m·s⁻¹).', example: 'Pour m = 2 kg et v = 5 m·s⁻¹ : E꜀ = ½ × 2 × 5².', result: 'E꜀ = 25 J.' },
       { title: 'Théorème de l’énergie cinétique', formula: 'ΔE꜀ = ΣW(F)', explanation: 'La variation d’énergie cinétique entre deux positions égale le travail total des forces appliquées au système ponctuel, ou au centre de masse dans les conditions usuelles du cours.', parameters: 'ΔE꜀ : énergie cinétique finale moins initiale (J) ; W(F) : travail d’une force sur le trajet (J) ; la somme porte sur les forces considérées.', example: 'Si le travail total des forces sur un trajet vaut 16 J, alors la variation d’énergie cinétique sur ce trajet vaut 16 J.', result: 'L’énergie cinétique augmente de 16 J.' },
-      { title: 'Énergie mécanique', formula: 'Eₘ = E꜀ + Eₚ', explanation: 'L’énergie mécanique est la somme de l’énergie cinétique et des énergies potentielles associées aux interactions conservatives retenues. Elle se conserve si le travail des forces non conservatives est nul.', parameters: 'Eₘ, E꜀, Eₚ : énergies mécanique, cinétique et potentielle (J) ; le zéro de l’énergie potentielle dépend du choix de référence.', example: 'Un objet possède E꜀ = 12 J et Eₚ = 8 J : Eₘ = 12 + 8.', result: 'Eₘ = 20 J. Cette valeur reste constante uniquement si les forces dissipatives ne fournissent pas de travail net.' }
+      { title: 'Énergie mécanique', formula: 'Eₘ = E꜀ + Eₚ', explanation: 'L’énergie mécanique est la somme de l’énergie cinétique et des énergies potentielles associées aux interactions conservatives retenues. Elle se conserve si le travail des forces non conservatives est nul.', parameters: 'Eₘ, E꜀, Eₚ : énergies mécanique, cinétique et potentielle (J) ; le zéro de l’énergie potentielle dépend du choix de référence.', example: 'Un objet possède E꜀ = 12 J et Eₚ = 8 J : Eₘ = 12 + 8.', result: 'Eₘ = 20 J. Cette valeur reste constante uniquement si les forces dissipatives ne fournissent pas de travail net.' },
+      { title: 'Travail d’une force', formula: 'W = F⃗ · Δr⃗ = F Δr cos θ', explanation: 'Le travail est le produit scalaire de la force par le déplacement de son point d’application, projeté sur la force. Il est nul lorsque le déplacement est perpendiculaire à la force.', parameters: 'W : travail (J) ; F : force (N) ; Δr : déplacement (m) ; θ : angle entre la force et le déplacement. 1 J = 1 N·m.', example: 'Une force de 100 N déplace un objet de 5,0 m à 60° de sa direction : W = 100 × 5,0 × cos 60°.', result: 'W = 250 J : le travail est positif, l’énergie est fournie au système.' },
+      { title: 'Puissance', formula: 'P = dW/dt = F⃗ · v⃗', explanation: 'La puissance mesure la rapidité avec laquelle une énergie est transférée ; elle peut être négative lors d’un freinage, ou nulle si la force est perpendiculaire à la vitesse.', parameters: 'P : puissance (W) ; W : travail (J) ; t : durée (s). 1 W = 1 J·s⁻¹.', example: 'Un moteur de 2 000 kg élève une charge de 4,0 m en 10 s : W = mgh ≈ 78 500 J.', result: 'P ≈ 7,8 × 10³ W ; à durée égale, plus la montée est rapide, plus la puissance est élevée.' },
+      { title: 'Énergie potentielle de pesanteur', formula: 'Eₚ = m g y', explanation: 'L’énergie potentielle n’est définie qu’à une constante près : le zéro est conventionnel, mais les différences d’énergie potentielle sont indépendantes de ce choix.', parameters: 'Eₚ : énergie potentielle (J) ; m : masse (kg) ; g = 9,81 m·s⁻² ; y : hauteur au-dessus du point de référence (m).', example: 'Un objet de 2,0 kg placé 3,0 m au-dessus du niveau de référence : Eₚ = 2,0 × 9,81 × 3,0.', result: 'Eₚ ≈ 58,9 J.' },
+      { title: 'Quantité de mouvement', formula: 'p⃗ = m v⃗', explanation: 'La quantité de mouvement est l’analogue vectoriel de la deuxième loi : dans un système fermé, la quantité de mouvement totale se conserve, quelle que soit l’évolution du mouvement.', parameters: 'p⃗ : quantité de mouvement (kg·m·s⁻¹) ; m : masse (kg) ; v⃗ : vitesse (m·s⁻¹).', example: 'Une balle de 0,20 kg à 30 m·s⁻¹ percute un chariot de 1,80 kg au repos ; ils restent solidaires.', result: 'v = 6,0 / 2,0 = 3,0 m·s⁻¹ ; l’énergie cinétique passe de 90 J à 9 J, la différence étant dissipée.' }
     ],
     sources: [
+      { title: 'OpenStax University Physics, vol. 1 — Work', url: 'https://openstax.org/books/university-physics-volume-1/pages/7-1-work' },
       { title: 'OpenStax University Physics, vol. 1 — Kinetic Energy', url: 'https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy' },
       { title: 'OpenStax University Physics, vol. 1 — Work-Energy Theorem', url: 'https://openstax.org/books/university-physics-volume-1/pages/7-3-work-energy-theorem' },
-      { title: 'OpenStax University Physics, vol. 1 — Conservation of Energy', url: 'https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy' }
+      { title: 'OpenStax University Physics, vol. 1 — Power', url: 'https://openstax.org/books/university-physics-volume-1/pages/7-4-power' },
+      { title: 'OpenStax University Physics, vol. 1 — Potential Energy of a System', url: 'https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system' },
+      { title: 'OpenStax University Physics, vol. 1 — Conservation of Energy', url: 'https://openstax.org/books/university-physics-volume-1/pages/8-3-conservation-of-energy' },
+      { title: 'OpenStax University Physics, vol. 1 — Linear Momentum', url: 'https://openstax.org/books/university-physics-volume-1/pages/9-1-linear-momentum' },
+      { title: 'OpenStax University Physics, vol. 1 — Types of Collisions', url: 'https://openstax.org/books/university-physics-volume-1/pages/9-4-types-of-collisions' }
     ]
   },
   'gaz-parfaits': {
