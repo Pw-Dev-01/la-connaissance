@@ -268,6 +268,41 @@ window.courseCatalog = [
       { id: 'unites-dimensions', title: 'Unités et analyse dimensionnelle', field: 'Méthodes · bases', summary: 'Système international, dimensions et vérification d’équations physiques.', lesson: { sections: ['Une grandeur physique s’exprime avec une valeur numérique et une unité. L’analyse dimensionnelle vérifie que les deux membres d’une relation ont les mêmes dimensions.', 'Elle permet de repérer une erreur d’unité ou de construire une forme possible pour une loi, mais ne suffit pas à déterminer ses constantes numériques.'], formula: { label: 'DIMENSIONS FONDAMENTALES', text: '[v] = L·T⁻¹  |  [a] = L·T⁻²  |  [F] = M·L·T⁻²' }, example: { statement: 'La formule v = d/t est-elle homogène ?', calculation: '[d/t] = L/T, qui est bien la dimension d’une vitesse.', answer: 'Oui, la relation est dimensionnellement homogène.' }, exercise: { question: 'L’expression d = vt + ½at² est-elle homogène ?', answer: 'vt a la dimension L ; at² vaut aussi L. Les deux termes sont des longueurs.' } } },
       { id: 'incertitudes', title: 'Incertitudes et chiffres significatifs', field: 'Méthodes · intermédiaire', summary: 'Précision des mesures, incertitude absolue et relative, propagation.', lesson: { sections: ['Une mesure expérimentale n’est jamais parfaitement exacte. On décrit sa précision par une incertitude, qui dépend de l’instrument et du protocole.', 'L’incertitude relative compare l’incertitude absolue à la valeur mesurée. Elle permet de comparer la qualité de mesures de tailles différentes.'], formula: { label: 'INCERTITUDE RELATIVE', text: 'uᵣ(x) = u(x)/|x|' }, example: { statement: 'Une longueur est mesurée à 20,0 ± 0,2 cm. Calculer l’incertitude relative.', calculation: 'uᵣ = 0,2/20,0 = 0,01.', answer: 'L’incertitude relative est 1 %.' }, exercise: { question: 'Une masse de 50 g est connue à ±1 g. Quelle est l’incertitude relative ?', answer: '1/50 = 0,02, soit 2 %.' } } },
       { id: 'experimentation-modelisation', title: 'Expérimentation et modélisation', field: 'Méthodes · pratique', summary: 'Protocole, variables, ajustement de données et validation d’un modèle.', lesson: { sections: ['Une expérience scientifique précise une question, les grandeurs mesurées, les variables contrôlées et le protocole. Répéter les mesures aide à estimer la dispersion.', 'Un modèle propose une relation mathématique entre grandeurs. On le confronte aux observations en examinant les résidus, les incertitudes et son domaine de validité.'], formula: { label: 'RÉSIDU D’UN MODÈLE', text: 'résidu = valeur mesurée − valeur prédite' }, example: { statement: 'Un modèle prédit 9,8 m·s⁻² et une mesure donne 9,7 m·s⁻². Quel est le résidu ?', calculation: 'r = 9,7 − 9,8.', answer: 'Le résidu vaut −0,1 m·s⁻².' }, exercise: { question: 'Pourquoi répéter une mesure plusieurs fois ?', answer: 'Pour estimer la variabilité expérimentale et réduire l’influence d’une erreur aléatoire.' } } }
+    ],
+    // Cours approfondi rattaché à la branche, rendu par
+    // constantes-physiques-approfondie.html : le catalogue n'affiche qu'une
+    // seule entrée (le titre du cours), et ses 22 sections restent numérotées
+    // dans le menu de gauche de la page. Même convention que la branche
+    // nucléaire.
+    deepCourses: [
+      {
+        title: 'Les 20 principales constantes',
+        href: 'constantes-physiques-approfondie.html',
+        sections: [
+          { anchor: 'nature-constante', title: 'Qu’est-ce qu’une constante ?' },
+          { anchor: 'exactitude-incertitude', title: 'Exactitude, incertitude, notation CODATA' },
+          { anchor: 'unites-base', title: 'Les sept unités de base du SI' },
+          { anchor: 'redefinition-2019', title: 'Le redéfinissement du SI en 2019' },
+          { anchor: 'classer-constantes', title: 'Définies, mesurées, dérivées' },
+          { anchor: 'constante-lumiere', title: 'c — la vitesse de la lumière' },
+          { anchor: 'constante-planck', title: 'h et ħ — la constante de Planck' },
+          { anchor: 'charge-elementaire', title: 'e — la charge élémentaire' },
+          { anchor: 'constante-mole', title: 'N_A, R et F — les constantes de la mole' },
+          { anchor: 'constante-boltzmann', title: 'k_B — la constante de Boltzmann' },
+          { anchor: 'constante-gravitation', title: 'G — la constante de gravitation' },
+          { anchor: 'structure-fine', title: 'α — la constante de structure fine' },
+          { anchor: 'constantes-electromagnetiques', title: 'μ₀, ε₀ et Z₀' },
+          { anchor: 'constantes-rayonnement', title: 'σ et b — les constantes du rayonnement' },
+          { anchor: 'pesanteur-standard', title: 'g₀ — la pesanteur standard' },
+          { anchor: 'constantes-masses', title: 'mₑ, m_p, m_n et u — les masses' },
+          { anchor: 'grandeurs-derivees', title: 'Grandeurs dérivées de la physique atomique' },
+          { anchor: 'constantes-dimensionnement', title: 'Constantes et analyse dimensionnelle' },
+          { anchor: 'relations-constantes', title: 'Comment les constantes se relient' },
+          { anchor: 'tableau-recapitulatif', title: 'Tableau récapitulatif' },
+          { anchor: 'exercices', title: 'S’entraîner' },
+          { anchor: 'sources', title: 'Sources' }
+        ]
+      }
     ]
   }
 ];

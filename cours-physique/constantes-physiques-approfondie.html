@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi sur les 20 principales constantes de la physique : nature et définition d’une constante fondamentale, exactitude et incertitude selon la nomenclature CODATA, les sept unités de base du SI, le redéfinissement du kelvin, de l’ampère, du mole et du kilogramme en 2019, puis les constantes elles-mêmes — c, h, ħ, e, N_A, R, F, k_B, G, α, μ₀, ε₀, Z₀, σ, b, g₀, mₑ, m_p, m_n et u — avec leurs valeurs CODATA 2022 vérifiées, leurs relations et leurs applications, en équations MathML.">
+    <title>Les 20 principales constantes de la physique | Cours de physique</title>
+    <!-- Format identique aux autres cours approfondis de physique. Règle du site :
+         la liste des chapitres (menu gauche) n’est pas numérotée, les
+         sous-rubriques de la page le sont. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte vingt-deux entrées de navigation : la barre latérale
+         devient défilable quand la hauteur de l’écran ne suffit plus à les
+         afficher. Sous 700 px, la mise en page partagée la transforme déjà en
+         bandeau horizontal. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+      /* Même traitement que les autres cours approfondis : le lien parent et
+         les entrées du domaine s’affichent en gris clair (var(--muted),
+         #67716a — contraste AA sur fond papier). La bordure corail signale
+         toujours le chapitre courant au survol ou en cours de lecture. */
+      .course-sidebar > .course-link span,
+      .course-list .course-link span {
+        color: var(--muted);
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+        <span class="wordmark-mark" aria-hidden="true">φ</span>
+        <span>LE COURS DE PHYSIQUE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche mesures et méthodes du cours de physique">
+          <!-- Liste des chapitres du domaine, sans numérotation -->
+          <a class="course-link" href="index.html#mesures-methodes"><span>Mesures, unités et méthodes expérimentales</span></a>
+          <a class="course-link" href="cours.html?id=unites-dimensions"><span>Unités et analyse dimensionnelle</span></a>
+          <a class="course-link" href="cours.html?id=incertitudes"><span>Incertitudes et chiffres significatifs</span></a>
+          <a class="course-link" href="cours.html?id=experimentation-modelisation"><span>Expérimentation et modélisation</span></a>
+          <a class="course-link is-current" href="constantes-physiques-approfondie.html" aria-current="page"><span>Les 20 principales constantes</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours sur les constantes de la physique">
+          <a href="#nature-constante">01 <span>Qu’est-ce qu’une constante ?</span></a>
+          <a href="#exactitude-incertitude">02 <span>Exactitude, incertitude, notation CODATA</span></a>
+          <a href="#unites-base">03 <span>Les sept unités de base du SI</span></a>
+          <a href="#redefinition-2019">04 <span>Le redéfinissement du SI en 2019</span></a>
+          <a href="#classer-constantes">05 <span>Définies, mesurées, dérivées</span></a>
+          <a href="#constante-lumiere">06 <span>c — la vitesse de la lumière</span></a>
+          <a href="#constante-planck">07 <span>h et ħ — la constante de Planck</span></a>
+          <a href="#charge-elementaire">08 <span>e — la charge élémentaire</span></a>
+          <a href="#constante-mole">09 <span>N_A, R et F — les constantes de la mole</span></a>
+          <a href="#constante-boltzmann">10 <span>k_B — la constante de Boltzmann</span></a>
+          <a href="#constante-gravitation">11 <span>G — la constante de gravitation</span></a>
+          <a href="#structure-fine">12 <span>α — la constante de structure fine</span></a>
+          <a href="#constantes-electromagnetiques">13 <span>μ₀, ε₀ et Z₀</span></a>
+          <a href="#constantes-rayonnement">14 <span>σ et b — les constantes du rayonnement</span></a>
+          <a href="#pesanteur-standard">15 <span>g₀ — la pesanteur standard</span></a>
+          <a href="#constantes-masses">16 <span>mₑ, m_p, m_n et u — les masses</span></a>
+          <a href="#grandeurs-derivees">17 <span>Grandeurs dérivées de la physique atomique</span></a>
+          <a href="#constantes-dimensionnement">18 <span>Constantes et analyse dimensionnelle</span></a>
+          <a href="#relations-constantes">19 <span>Comment les constantes se relient</span></a>
+          <a href="#tableau-recapitulatif">20 <span>Tableau récapitulatif</span></a>
+          <a href="#exercices">21 <span>S’entraîner</span></a>
+          <a href="#sources">22 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">φ</span>
+          <p>Une idée directrice : une constante n’est pas un nombre secret de la nature, c’est une convention fixant une unité. Quatre d’entre elles sont désormais définies, non mesurées.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MESURES, UNITÉS ET MÉTHODES · COURS APPROFONDI</p>
+          <h1>Les 20 principales<br><span>constantes de la physique</span></h1>
+          <p class="course-intro">Combien de nombres faut-il pour décrire l’Univers ? Ce cours approfondit la branche « Mesures, unités et méthodes expérimentales » du catalogue à travers les 20 constantes dont dépend l’essentiel de la physique quantitative : ce qu’est une constante fondamentale et ce qui la distingue d’un simple paramètre, comment on écrit une valeur et son incertitude selon la nomenclature CODATA, ce qu’a changé le redéfinissement du Système international de 2019, puis chaque constante prise une à une — c, h, ħ, e, N_A, R, F, k_B, G, α, μ₀, ε₀, Z₀, σ, b, g₀, mₑ, m_p, m_n et u — avec sa valeur exacte ou mesurée, son incertitude, ses ordres de grandeur et ses applications. Toutes les valeurs numériques proviennent de l’ajustement CODATA 2022 publié par le NIST.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>22 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+<section class="lesson-section" id="nature-constante" aria-labelledby="nature-constante-title">
+          <p class="section-index">01 / NATURE D’UNE CONSTANTE</p>
+          <h2 id="nature-constante-title">Qu’est-ce qu’une constante physique ?</h2>
+          <p>Une <strong>constante physique</strong> est une grandeur dont la valeur ne dépend ni du lieu, ni du moment, ni des conditions expérimentales : elle ne change pas d’un laboratoire à l’autre, d’une étoile à l’autre, ni au cours du temps. C’est cette universalité qui distingue une constante d’un simple paramètre. La masse d’un objet, la longueur d’une tige ou la température d’un fluide sont des <em>paramètres</em> : ils varient d’une situation à l’autre. La charge de l’électron, la constante de gravitation ou la vitesse de la lumière sont des <em>constantes</em> (OpenStax, vol. 1, § 1.2 <em>Units and Standards</em>).</p>
+          <p>Une constante est dite <strong>fondamentale</strong> lorsqu’elle ne peut pas être exprimée à partir d’autres grandeurs par les seules lois de la physique : sa valeur doit donc être fixée soit par <em>convention</em>, soit par <em>mesure</em>. C’est cette exigence qui a conduit le Système international à retenir sept unités de base et un petit nombre de constantes définies (OpenStax, vol. 1, § 1.2).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">DÉCOMPOSITION D’UNE GRANDEUR PHYSIQUE</span>
+            <math class="mathml-display" display="block" aria-label="une grandeur Q est égale à sa valeur numérique q multipliée par son unité">
+              <mrow><mi>Q</mi><mo>=</mo><mi>q</mi><mo>×</mo><msub><mi>U</mi><mi>Q</mi></msub></mrow>
+            </math>
+            <span class="formula-label">q : valeur numérique ; U<sub>Q</sub> : unité. Changer d’unité change q, jamais la grandeur Q elle-même</span>
+          </div>
+          <div class="callout"><strong>Une constante n’est pas un nombre, mais un couple nombre-unité</strong><p>Dire que la vitesse de la lumière vaut <span class="math">3 × 10⁸ m·s⁻¹</span> n’a de sens que rattaché à une unité. Ce qui est universel, c’est le <em>rapport</em> entre deux grandeurs physiques : la vitesse de la lumière divisée par elle-même vaut 1 dans n’importe quel système d’unités. Une constante n’acquiert un contenu physique qu’à partir du moment où l’on fixe une unité — d’où la possibilité de <em>définir</em> sa valeur plutôt que de la mesurer.</p></div>
+          <p>Une constante peut aussi être <strong>adimensionnelle</strong> : c’est le cas de la constante de structure fine, un nombre pur. Dans ce cas, aucune unité ne lui est associée et sa valeur est réellement indépendante de tout choix de convention.</p>
+        </section>
+
+        <section class="lesson-section" id="exactitude-incertitude" aria-labelledby="exactitude-incertitude-title">
+          <p class="section-index">02 / EXACTITUDE, INCERTITUDE, NOTATION CODATA</p>
+          <h2 id="exactitude-incertitude-title">Écrire une valeur correctement : valeur, incertitude, chiffres</h2>
+          <p>Toute valeur expérimentale s’accompagne d’une <strong>incertitude</strong> : un intervalle dans lequel la valeur vraie se trouve avec une probabilité donnée. La valeur publiée par le CODATA (<em>Committee on Data for Science and Technology</em>) suit une règle de notation précise et constante : les chiffres entre parenthèses indiquent l’incertitude portant sur les <em>derniers chiffres significatifs</em> du nombre (OpenStax, vol. 1, § 1.5 <em>Estimate Errors in Numerical Calculations</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">NOTATION CODATA — LECTURE D’UNE VALEUR MESURÉE</span>
+            <math class="mathml-display" display="block" aria-label="constante de gravitation égale 6,674 30 fois 10 puissance moins 11 ; incertitude standard 0,000 15 fois 10 puissance moins 11 ; incertitude relative 2,2 fois 10 puissance moins 5">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>G</mi><mo>=</mo><mn>6,674</mn><mspace width="0.3em"/><mn>30</mn><mo>(</mo><mn>15</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−11</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>u</mi><mo>(</mo><mi>G</mi><mo>)</mo><mo>=</mo><mn>0,000</mn><mspace width="0.3em"/><mn>15</mn><mo>×</mo><msup><mn>10</mn><mn>−11</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>u</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><mi>u</mi><mo>(</mo><mi>G</mi><mo>)</mo></mrow><mi>G</mi></mfrac><mo>=</mo><mn>2,2</mn><mo>×</mo><msup><mn>10</mn><mn>−5</mn></msup></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">unités : m³·kg⁻¹·s⁻² — incertitude standard relative 2,2 × 10⁻⁵, soit 22 parties par million</span>
+          </div>
+          <p>La lecture est la suivante : les deux derniers chiffres significatifs, <span class="math">30</span>, sont incertains à deux unités près, puisque l’incertitude porte sur les deux derniers chiffres, <span class="math">15</span>. L’incertitude <strong>relative</strong> est le rapport de l’incertitude à la valeur : c’est elle qui permet de comparer la précision de deux grandeurs de nature ou d’échelle différentes, et constitue le critère de comparaison le plus pertinent entre deux mesures (OpenStax, vol. 1, § 1.6 <em>Significant Figures</em>).</p>
+          <div class="callout"><strong>Valeur exacte et valeur mesurée</strong><p>Certaines constantes sont <strong>exactes</strong> : elles ne sont pas issues d’une mesure mais d’une définition, et s’écrivent donc sans incertitude. C’est le cas de <span class="math">c = 299 792 458 m·s⁻¹</span>, où tous les chiffres sont significatifs, et où le NIST porte explicitement la mention « (exact) ». D’autres sont <strong>mesurées</strong> et portent une incertitude, comme <span class="math">G</span>. Confondre les deux revient soit à attribuer une précision fictive à une convention, soit à soupçonner d’erreur une valeur qui ne peut pas en produire.</p></div>
+          <div class="worked-result"><strong>EXEMPLE CHIFFRÉ · TROIS RÉGIMES DE PRÉCISION</strong><span class="math">c : exacte → uᵣ = 0</span><span class="math">α : uᵣ ≈ 1,5 × 10⁻¹⁰ → la mieux connue</span><span class="math">G : uᵣ = 2,2 × 10⁻⁵ → 22 parties par million</span></div>
+          <p>Le chiffre significatif n’est donc pas une question de commodité d’écriture : il indique le degré de confiance réel dans le dernier chiffre publié. Écrire <span class="math">G</span> avec plus de chiffres significatifs que l’incertitude n’en autorise revient à annoncer une précision que l’on n’a pas acquise.</p>
+        </section>
+
+        <section class="lesson-section" id="unites-base" aria-labelledby="unites-base-title">
+          <p class="section-index">03 / LES SEPT UNITÉS DE BASE DU SI</p>
+          <h2 id="unites-base-title">Les sept unités de base et leur définition actuelle</h2>
+          <p>Le Système international repose sur sept <strong>grandeurs de base</strong> : longueur, masse, temps, courant électrique, température thermodynamique, quantité de matière et intensité lumineuse. Toute autre grandeur se déduit des précédentes par une expression algébrique : ses unités sont alors dites <strong>dérivées</strong> (OpenStax, vol. 1, § 1.2 <em>Units and Standards</em>).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les sept unités de base du SI et la constante qui définit aujourd’hui chacune d’elles (d’après NIST, <em>Definitions of SI Base Units</em>)</caption>
+              <thead><tr><th scope="col">Grandeur</th><th scope="col">Symbole</th><th scope="col">Defining constant</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Longueur</th><td>m</td><td><span class="math">c</span></td></tr>
+                <tr><th scope="row">Masse</th><td>kg</td><td><span class="math">h</span></td></tr>
+                <tr><th scope="row">Temps</th><td>s</td><td><span class="math">Δν<sub>Cs</sub></span></td></tr>
+                <tr><th scope="row">Courant électrique</th><td>A</td><td><span class="math">e</span></td></tr>
+                <tr><th scope="row">Température thermodynamique</th><td>K</td><td><span class="math">k</span></td></tr>
+                <tr><th scope="row">Quantité de matière</th><td>mol</td><td><span class="math">N<sub>A</sub></span></td></tr>
+                <tr><th scope="row">Intensité lumineuse</th><td>cd</td><td><span class="math">K<sub>cd</sub></span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Le NIST donne la définition littérale du <strong>mètre</strong> : il « est défini par la valeur numérique fixée de la vitesse de la lumière dans le vide <span class="math">c</span>, égale à <span class="math">299 792 458</span> lorsqu’elle est exprimée dans l’unité <span class="math">m·s⁻¹</span> ». Le <strong>seconde</strong> est défini par la valeur numérique fixée de la fréquence du Césium 133, <span class="math">Δν<sub>Cs</sub> = 9 192 631 770 Hz</span>, pour la transition hyperfine de l’état fondamental non perturbé (NIST, <em>Definitions of SI Base Units</em>).</p>
+          <div class="worked-result"><strong>LES TROIS UNITÉS DÉJÀ LIÉES À UNE CONSTANTE AVANT 2019</strong><span class="math">m : c = 299 792 458 m·s⁻¹ (exacte)</span><span class="math">s : Δν<sub>Cs</sub> = 9 192 631 770 Hz (exacte)</span><span class="math">cd : K<sub>cd</sub> = 683 lm·W⁻¹ à 540 THz (exacte)</span></div>
+          <p>Le <strong>newton</strong>, unité dérivée de force, vaut <span class="math">kg·m·s⁻²</span> ; le <span class="math">joule</span>, unité d’énergie, vaut <span class="math">kg·m²·s⁻²</span>. Ce sont donc bien des unités dérivées, construites à partir des sept unités de base (OpenStax, vol. 1, § 1.2).</p>
+        </section>
+
+        <section class="lesson-section" id="redefinition-2019" aria-labelledby="redefinition-2019-title">
+          <p class="section-index">04 / LE REDÉFINITION DU SI EN 2019</p>
+          <h2 id="redefinition-2019-title">Le 20 mai 2019 : quatre unités changent de définition</h2>
+          <p>Jusqu’en 2019, quatre unités de base reposaient sur des <em>objets</em> ou des <em>procédés</em> de laboratoire. Le kilogramme, en particulier, était défini par la masse d’un cylindre de platine-iridium, le « Prototype international du kilogramme », coulé en 1879 et conservé à Sèvres. Or cet objet dérivait lentement : la masse de chaque étalon national changeait au cours du temps, ce qui limitait la précision de toute mesure de masse (NIST, <em>Kilogram: Introduction</em>).</p>
+          <p>En novembre 2018, à Versailles, soixante pays ont adopté à l’unanimité un nouveau Système international, entré en vigueur le <strong>20 mai 2019</strong>. Les unités de <strong>kilogramme</strong>, <strong>kelvin</strong>, <strong>ampère</strong> et <strong>mole</strong> ont été redéfinies à partir de constantes de la nature ; le NIST précise que les trois restantes — seconde, mètre et candela — « sont déjà fondées sur des constantes universelles » (NIST, <em>SI Redefinition</em>).</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les quatre nouvelles définitions, d’après le texte du NIST (<em>Definitions of SI Base Units</em>) ; les valeurs numériques sont celles de l’ajustement CODATA 2022</caption>
+              <thead><tr><th scope="col">Unité</th><th scope="col">Constante et valeur fixée</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Kilogramme (kg)</th><td><span class="math">h = 6,626 070 15 × 10⁻³⁴ J·s</span>, unité <span class="math">kg·m²·s⁻¹</span></td></tr>
+                <tr><th scope="row">Ampère (A)</th><td><span class="math">e = 1,602 176 634 × 10⁻¹⁹ C</span>, unité <span class="math">A·s</span></td></tr>
+                <tr><th scope="row">Kelvin (K)</th><td><span class="math">k = 1,380 649 × 10⁻²³ J·K⁻¹</span>, unité <span class="math">kg·m²·s⁻²·K⁻¹</span></td></tr>
+                <tr><th scope="row">Mole (mol)</th><td><span class="math">N<sub>A</sub> = 6,022 140 76 × 10²³ mol⁻¹</span> : nombre d’entités élémentaires</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Le <strong>kilogramme</strong> est ainsi « défini par la valeur numérique fixée de la constante de Planck <span class="math">h</span>, égale à <span class="math">6,626 070 15 × 10⁻³⁴</span> lorsqu’elle est exprimée dans l’unité <span class="math">J·s</span> » (NIST, <em>Definitions of SI Base Units</em>). L’<strong>ampère</strong> l’est « par la valeur numérique fixée de la charge élémentaire <span class="math">e</span>, égale à <span class="math">1,602 176 634 × 10⁻¹⁹</span> lorsqu’elle est exprimée dans l’unité <span class="math">C</span> », et le <strong>kelvin</strong> « par la valeur numérique fixée de la constante de Boltzmann <span class="math">k</span>, égale à <span class="math">1,380 649 × 10⁻²³</span> lorsqu’elle est exprimée dans l’unité <span class="math">J·K⁻¹</span> ».</p>
+          <div class="callout"><strong>Ce qui change avec une définition fixée par convention</strong><p>Ces quatre unités ne sont plus fixées par la matière : elles le sont par un nombre, choisi une fois pour toutes. Aucun artefact matériel ne peut donc dériver. En revanche, l’unité ne se réalise plus <em>immédiatement</em> : il faut construire l’appareil qui met en œuvre la constante — une balance de Kibble pour la masse, un dispositif de comptage d’électrons pour le courant, un thermomètre acoustique ou à bruit de Johnson pour la température (NIST, <em>Kilogram: The Kibble Balance</em> ; <em>Ampere: The Quantum Metrology Triangle</em>). Le gain est la reproductibilité ; le prix est la nécessité d’une métrologie de très haute précision.</p></div>
+          <div class="worked-result"><strong>APPLICATION CHIFFRÉE</strong><span class="math">1 A × 1 s = 1 C = 6,241 509 074… × 10¹⁸ e</span><span class="math">soit environ 6,24 × 10¹⁸ charges élémentaires par coulomb (NIST)</span></div>
+        </section>
+
+        <section class="lesson-section" id="classer-constantes" aria-labelledby="classer-constantes-title">
+          <p class="section-index">05 / DÉFINIES, MESURÉES, DÉRIVÉES</p>
+          <h2 id="classer-constantes-title">Trois statuts pour une constante</h2>
+          <p>Toutes les constantes ne se valent pas. On en distingue trois statuts, et la confusion entre eux est une source d’erreur fréquente.</p>
+          <ol class="method-list">
+            <li><strong>Les constantes définies.</strong><span>Leur valeur est fixée <em>par convention</em> au sein du SI, sans aucune mesure. Elles sont exactes et ne portent aucune incertitude : <span class="math">c</span>, <span class="math">h</span>, <span class="math">ħ</span>, <span class="math">e</span>, <span class="math">k</span>, <span class="math">N<sub>A</sub></span>, <span class="math">R</span>, <span class="math">F</span>, <span class="math">σ</span>, <span class="math">b</span> et <span class="math">g</span><sub>0</sub> (NIST, ajustement CODATA 2022).</span></li>
+            <li><strong>Les constantes mesurées.</strong><span>Leur valeur est déterminée expérimentalement et accompagnée d’une incertitude : <span class="math">G</span>, <span class="math">α</span>, les masses <span class="math">m<sub>e</sub></span>, <span class="math">m<sub>p</sub></span>, <span class="math">m<sub>n</sub></span>, <span class="math">u</span>, ainsi que les constantes électromagnétiques <span class="math">μ<sub>0</sub></span> et <span class="math">ε<sub>0</sub></span>.</span></li>
+            <li><strong>Les grandeurs dérivées.</strong><span>Elles s’expriment exactement à partir des précédentes et ne sont donc pas indépendantes : <span class="math">ħ = h/2π</span>, <span class="math">R = N<sub>A</sub>k</span>, <span class="math">F = N<sub>A</sub>e</span>, <span class="math">ε<sub>0</sub> = 1/(μ<sub>0</sub>c²)</span>, <span class="math">Z<sub>0</sub> = μ<sub>0</sub>c</span>.</span></li>
+          </ol>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES QUATRE RELATIONS QUI FONT DÉPENDRE LE PLUSIEUR DES AUTRES</span>
+            <math class="mathml-display" display="block" aria-label="hbar égale h divisé par deux pi ; R égale N A fois k ; F égale N A fois e ; epsilon zero égale un divisé par mu zéro fois c au carré">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>ħ</mi><mo>=</mo><mfrac><mi>h</mi><mrow><mn>2</mn><mi>π</mi></mrow></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>R</mi><mo>=</mo><msub><mi>N</mi><mi>A</mi></msub><mi>k</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>F</mi><mo>=</mo><msub><mi>N</mi><mi>A</mi></msub><mi>e</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>ε</mi><mn>0</mn></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>μ</mi><mn>0</mn></msub><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <div class="callout"><strong>Pourquoi le kelvin et l’ampère sont-ils encore mesurés ?</strong><p>Parce que <span class="math">k</span> et <span class="math">e</span> ont été <em>choisis</em>, non <em>trouvés</em>. Pour le kelvin, le NIST indique que la valeur de <span class="math">k</span> est celle qui « correspond exactement à <span class="math">1,380 649 × 10⁻²³ J·K⁻¹</span> ». L’unité a ainsi été <em>calée</em> sur la thermodynamique : c’est la décision de 2019 qui a fait passer le thermomètre à eau bouillante du statut de définition à celui de réalisation pratique.</p></div>
+          <p>Conséquence logique : parmi ces nombres, un seul est réellement « naturel » dans la liste — <span class="math">G</span>, obtenu par la mesure de forces entre masses. Les autres sont, pour l’essentiel, des choix rationnels rendus reproductibles. C’est ce que le NIST résume en parlant de constants comme d’« invariants de la nature » (NIST, <em>SI Redefinition</em>).</p>
+        </section>
+
+        <section class="lesson-section" id="constante-lumiere" aria-labelledby="constante-lumiere-title">
+          <p class="section-index">06 / c — LA VITESSE DE LA LUMIÈRE</p>
+          <h2 id="constante-lumiere-title">c : la plus grande vitesse et la seule « exacte par définition »</h2>
+          <p>La vitesse de la lumière dans le vide est la seule constante choisie comme <em>définissante</em> pour une unité de base : le mètre. Sa valeur exacte est fixée à <span class="math">299 792 458 m·s⁻¹</span>, et le NIST la note « (exact) » dans l’ajustement CODATA 2022. Aucune mesure n’a servi à la déterminer : elle est la convention qui définit le mètre (NIST, <em>Definitions of SI Base Units</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">VITESSE DE LA LUMIÈRE — VALEUR ET ÉQUIVALENCES</span>
+            <math class="mathml-display" display="block" aria-label="c égale 299 792 458 mètres par seconde ; une année-lumière vaut 9,460 73 fois 10 puissance 15 mètres">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>c</mi><mo>=</mo><mn>299</mn><mspace width="0.2em"/><mn>792</mn><mspace width="0.2em"/><mn>458</mn><mspace width="0.2em"/><mi mathvariant="normal">m·s⁻¹</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mn>1</mn><mspace width="0.2em"/><mi mathvariant="normal">année-lumière</mi><mo>=</mo><mn>9,460 73</mn><mo>×</mo><msup><mn>10</mn><mn>15</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">m</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Dans la théorie de la relativité restreinte, <span class="math">c</span> n’est pas seulement une vitesse : c’est la <strong>vitesse limite</strong> invariante du signal, celle que nul observateur ne peut dépasser. Elle intervient donc dans toute la mécanique relativiste, et son invariance impose la transformation des intervalles de temps et d’espace (OpenStax, vol. 3, ch. 5, <em>Special Relativity</em>).</p>
+          <div class="callout"><strong>Ne pas confondre c et la vitesse de la lumière dans un milieu</strong><p>Dans l’eau ou le verre, la lumière se propage à une vitesse <em>inférieure</em> à <span class="math">c</span> : la valeur <span class="math">c</span> désigne uniquement la propagation dans le vide. C’est un rappel utile, car l’expression « vitesse de la lumière » est souvent employée abusivement dans les exercices d’optique géométrique.</p></div>
+          <div class="worked-result"><strong>ORDRE DE GRANDEUR</strong><span class="math">c ≈ 3,00 × 10⁸ m·s⁻¹ — soit environ 1,08 × 10⁹ km·h⁻¹</span><span class="math">la lumière franchit la distance Terre–Soleil (1,50 × 10⁸ km) en ≈ 8 min 20 s</span></div>
+        </section>
+
+        <section class="lesson-section" id="constante-planck" aria-labelledby="constante-planck-title">
+          <p class="section-index">07 / h ET ħ — LA CONSTANTE DE PLANCK</p>
+          <h2 id="constante-planck-title">h et ħ : la constante de Planck et sa version réduite</h2>
+          <p>La constante de Planck <span class="math">h</span> lie l’énergie d’un quantum à sa fréquence : <span class="math">E = hf</span>. Elle définit aujourd’hui le <strong>kilogramme</strong> et sa valeur est <em>exacte</em> : <span class="math">h = 6,626 070 15 × 10⁻³⁴ J·Hz⁻¹</span> (NIST, CODATA 2022). La constante de Planck <strong>réduite</strong> <span class="math">ħ = h/2π</span>, également exacte, vaut <span class="math">1,054 571 817… × 10⁻³⁴ J·s</span>.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CONSTANTE DE PLANCK ET SES DEUX FORMES</span>
+            <math class="mathml-display" display="block" aria-label="h égale 6,626 070 15 fois 10 puissance moins 34 joule hertz puissance moins 1 ; hbar égale h divisé par deux pi">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>h</mi><mo>=</mo><mn>6,626 070 15</mn><mo>×</mo><msup><mn>10</mn><mn>−34</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">J·Hz⁻¹</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>ħ</mi><mo>=</mo><mfrac><mi>h</mi><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><mo>=</mo><mn>1,054 571 817</mn><mo>…</mo><mo>×</mo><msup><mn>10</mn><mn>−34</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">J·s</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">1 Hz = 1 s⁻¹ ; la relation E = hν est la définition même du quantum d’énergie</span>
+          </div>
+          <p>La différence entre <span class="math">h</span> et <span class="math">ħ</span> est un simple facteur <span class="math">2π</span>, mais elle est source de confusions : <span class="math">h</span> convient aux relations en fréquence <span class="math">ν</span> (ondes, photons, atomes), <span class="math">ħ</span> aux relations en pulsation <span class="math">ω</span> (mécanique ondulatoire, équation de Schrödinger). Écrire <span class="math">E = ħν</span> au lieu de <span class="math">E = hν</span> revient à commettre une erreur d’un facteur <span class="math">2π</span>.</p>
+          <div class="callout"><strong>Pourquoi définir la masse par une constante de Planck ?</strong><p>Parce que <span class="math">h</span> possède la bonne dimension, <span class="math">kg·m²·s⁻¹</span>, et qu’elle relie ainsi la masse à la mécanique. En combinaison avec <span class="math">c</span>, elle permet aussi d’écrire l’énergie d’une masse au repos sous la forme <span class="math">E = mc²</span> avec un facteur <span class="math">1/2</span> absent de la relation <span class="math">E = hν</span> (OpenStax, vol. 3, ch. 5).</p></div>
+        </section>
+
+        <section class="lesson-section" id="charge-elementaire" aria-labelledby="charge-elementaire-title">
+          <p class="section-index">08 / e — LA CHARGE ÉLÉMENTAIRE</p>
+          <h2 id="charge-elementaire-title">e : la charge de l’électron et la définition de l’ampère</h2>
+          <p>La charge élémentaire est la magnitude de la charge portée par un électron ou un proton. Sa valeur est <em>exacte</em> depuis 2019 : <span class="math">e = 1,602 176 634 × 10⁻¹⁹ C</span> (NIST, CODATA 2022). Elle définit aujourd’hui l’<strong>ampère</strong>, et non plus la force entre deux conducteurs parallèles comme le faisait la définition de 1948 (NIST, <em>Ampere: Introduction</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CHARGE ÉLÉMENTAIRE ET SES CONSÉQUENCES</span>
+            <math class="mathml-display" display="block" aria-label="e égale 1,602 176 634 fois 10 puissance moins 19 coulomb ; un coulomb contient environ 6,24 fois 10 puissance 18 charges élémentaires">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>e</mi><mo>=</mo><mn>1,602 176 634</mn><mo>×</mo><msup><mn>10</mn><mn>−19</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">C</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mn>1</mn><mspace width="0.2em"/><mi mathvariant="normal">C</mi><mo>≈</mo><mn>6,24</mn><mo>×</mo><msup><mn>10</mn><mn>18</mn></msup><mspace width="0.2em"/><mi>e</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mn>1</mn><mspace width="0.2em"/><mi>e</mi><mo>=</mo><mn>1,602</mn><mo>×</mo><msup><mn>10</mn><mn>−19</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">A·s</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">la charge de l’électron est négative : qₑ = −e ; celle du proton est positive : qₚ = +e</span>
+          </div>
+          <p>La <strong>quantification</strong> de la charge est une constatation expérimentale : toute charge mesurée est un multiple entier de <span class="math">e</span>. Aucun corps de charge non entière n’a jamais été observé, et c’est là une des motivations de la définition par comptage d’électrons. En unités de charge élémentaire, l’électron porte exactement la charge <span class="math">−1</span> (OpenStax, vol. 2, § 15.1 <em>Electric Charge</em>).</p>
+          <div class="callout"><strong>La constante la plus petite, et la plus souvent mal lue</strong><p><span class="math">e ≈ 1,6 × 10⁻¹⁹ C</span> est extrêmement petite. L’erreur de lecture la plus fréquente consiste à la confondre avec la charge de l’électron <em>en coulombs</em>, enoubliant que cette charge est négative pour l’électron et positive pour le proton (NIST, <em>Ampere: Introduction</em>).</p></div>
+          <div class="worked-result"><strong>APPLICATION CHIFFRÉE</strong><span class="math">charge d’un électron : q = −1,602 176 634 × 10⁻¹⁹ C</span><span class="math">nombre d’électrons dans 1 C : 1/e ≈ 6,24 × 10¹⁸</span></div>
+        </section>
+
+        <section class="lesson-section" id="constante-mole" aria-labelledby="constante-mole-title">
+          <p class="section-index">09 / N_A, R ET F — LES CONSTANTES DE LA MOLE</p>
+          <h2 id="constante-mole-title">Avogadro, la constante des gaz parfaits et celle de Faraday</h2>
+          <p>Trois constantes exactes sont liées par deux relations algébriques simples : <span class="math">R = N<sub>A</sub>k</span> et <span class="math">F = N<sub>A</sub>e</span>. Elles ne constituent donc pas trois degrés de liberté indépendants, mais trois façons d’exprimer la même information métrologique.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">N_A, R ET F — TROIS CONSTANTES EXACTES LIÉES</span>
+            <math class="mathml-display" display="block" aria-label="N A égale 6,022 140 76 fois 10 puissance 23 mol puissance moins 1 ; R égale N A fois k ; F égale N A fois e">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>N</mi><mi>A</mi></msub><mo>=</mo><mn>6,022 140 76</mn><mo>×</mo><msup><mn>10</mn><mn>23</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">mol⁻¹</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>R</mi><mo>=</mo><msub><mi>N</mi><mi>A</mi></msub><mi>k</mi><mo>=</mo><mn>8,314 462 618</mn><mo>…</mo><mspace width="0.2em"/><mi mathvariant="normal">J·mol⁻¹·K⁻¹</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>F</mi><mo>=</mo><msub><mi>N</mi><mi>A</mi></msub><mi>e</mi><mo>=</mo><mn>96 485,332 12</mn><mo>…</mo><mspace width="0.2em"/><mi mathvariant="normal">C·mol⁻¹</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">valeurs NIST CODATA 2022, toutes notées « (exact) » ; les points de suspension figurent tels quels dans la publication</span>
+          </div>
+          <p>La <strong>constante d’Avogadro</strong> <span class="math">N<sub>A</sub></span> est le nombre d’entités élémentaires par mole : une mole contient exactement <span class="math">6,022 140 76 × 10²³</span> entités (NIST, <em>Definitions of SI Base Units</em>). La <strong>constante des gaz parfaits</strong> <span class="math">R</span> intervient dans l’équation d’état <span class="math">PV = nRT</span>. La <strong>constante de Faraday</strong> <span class="math">F</span> donne la charge d’une mole d’électrons : <span class="math">Q = nF</span> dans une électrolyse.</p>
+          <div class="worked-result"><strong>APPLICATION CHIFFRÉE</strong><span class="math">n = 2 mol d’électrons → Q = 2 × 96 485,33 C ≈ 1,93 × 10⁵ C</span><span class="math">soit 24 L de dichlore mis en réaction avec 2 mol d’hydrogène (OpenStax, vol. 2, ch. 17)</span></div>
+          <div class="callout"><strong>Pourquoi Avogadro n’est-elle plus une mesure ?</strong><p>Avant 2019, <span class="math">N<sub>A</sub></span> se mesurait par diffraction cristalline sur une sphère de silicium. Cette méthode a précisément fourni la valeur qui a permis de fixer <span class="math">k</span> de façon exacte (NIST, <em>Kilogram: Silicon Spheres and the International Avogadro Project</em>). La mesure a donc servi à <em>choisir</em> la constante, après quoi celle-ci a servi à définir l’unité : la frontière entre mesure et convention s’est déplacée, sans disparaître.</p></div>
+        </section>
+
+        <section class="lesson-section" id="constante-boltzmann" aria-labelledby="constante-boltzmann-title">
+          <p class="section-index">10 / k_B — LA CONSTANTE DE BOLTZMANN</p>
+          <h2 id="constante-boltzmann-title">k_B : le pont entre la microscopicité et la thermodynamique</h2>
+          <p>La constante de Boltzmann vaut exactement <span class="math">k = 1,380 649 × 10⁻²³ J·K⁻¹</span> (NIST, CODATA 2022). Elle définit le <strong>kelvin</strong> et intervient partout où une température devient une énergie — notamment dans la théorie cinétique des gaz, où la température est proportionnelle à l’énergie cinétique moyenne des molécules (OpenStax, vol. 2, § 2.1).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">k_B ET SES TROIS USAGES</span>
+            <math class="mathml-display" display="block" aria-label="k égale 1,380 649 fois 10 puissance moins 23 joule kelvin puissance moins 1 ; énergie moyenne d'une molécule égale trois demis k T ; énergie moyenne d'une mole égale trois demis R T">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>k</mi><mo>=</mo><mn>1,380 649</mn><mo>×</mo><msup><mn>10</mn><mn>−23</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">J·K⁻¹</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mover><mi>E</mi><mo>¯</mo></mover><mtext>molécule</mtext></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>k</mi><mi>T</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mover><mi>E</mi><mo>¯</mo></mover><mtext>mole</mtext></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>R</mi><mi>T</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Le facteur <span class="math">3/2</span> traduit les trois degrés de liberté de translation d’une molécule ponctuelle d’un gaz parfait. La valeur numérique donne un ordre de grandeur parlant : à <span class="math">300 K</span>, l’énergie cinétique moyenne d’une molécule vaut <span class="math">6,21 × 10⁻²¹ J</span> — une fraction minuscule d’un eV, ce qui explique qu’une seule molécule soit difficile à détecter individuellement.</p>
+          <div class="callout"><strong>Comment une température devient-elle une énergie ?</strong><p>Un corps à <span class="math">T</span> K a une énergie d’agitation d’ordre <span class="math">kT</span>. Cette équivalence n’est pas une analogie : c’est la définition thermodynamique du kelvin depuis 2019, où <span class="math">k</span> a la valeur exacte <span class="math">1,380 649 × 10⁻²³ J·K⁻¹</span>. L’unité de température est ainsi <em>calée</em> sur la microscopicité (NIST, <em>Kelvin: Introduction</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="constante-gravitation" aria-labelledby="constante-gravitation-title">
+          <p class="section-index">11 / G — LA CONSTANTE DE GRAVITATION</p>
+          <h2 id="constante-gravitation-title">G : la moins bien connue des constantes fondamentales</h2>
+          <p>La constante de gravitation <span class="math">G</span> est la seule constante <em>réellement mesurée</em> de cette liste, et la moins bien connue : le NIST lui attribue une incertitude standard relative de <span class="math">2,2 × 10⁻⁵</span>, soit 22 parties par million — près de cinq ordres de grandeur moins bonne que la constante de structure fine (NIST, CODATA 2022).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CONSTANTE DE GRAVITATION</span>
+            <math class="mathml-display" display="block" aria-label="G égale 6,674 30 fois 10 puissance moins 11 mètres cubiques par kilogramme seconde moins 2 ; incertitude relative 2,2 fois 10 puissance moins 5">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>G</mi><mo>=</mo><mn>6,674 30</mn><mo>(</mo><mn>15</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−11</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">m³·kg⁻¹·s⁻²</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>u</mi><mi>r</mi></msub><mo>=</mo><mn>2,2</mn><mo>×</mo><msup><mn>10</mn><mn>−5</mn></msup></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">la parenthèse donne l’incertitude sur les deux derniers chiffres : 0,000 15 × 10⁻¹¹ m³·kg⁻¹·s⁻²</span>
+          </div>
+          <p>Cette incertitude n’est pas un défaut de la théorie mais une limite de l’expérience : la seule façon connue de mesurer <span class="math">G</span> est de comparer des attractions gravitationnelles, très faibles, à des forces électromagnétiques bien plus fortes. C’est aussi pourquoi une pesanteur est un instrument médiocre pour mesurer une masse, alors qu’elle peut la comparer très précisément (OpenStax, vol. 1, § 13.1 <em>Newton’s Law of Universal Gravitation</em>).</p>
+          <div class="callout"><strong>Pourquoi ne définit-on pas G par convention ?</strong><p>Parce qu’on le pourrait : rien n’empêcherait de fixer <span class="math">G = 6,674 30 × 10⁻¹¹</span> exactement et de mesurer ensuite la masse de la Terre avec une précision bien meilleure. Ce n’a pas été fait, car cela aurait fait perdre à la pesanteur son statut de mesure <em>indépendante</em> de la masse : on ne pourrait plus mesurer indépendamment <span class="math">G</span> et <span class="math">M</span>. Le statu quo préserve donc un degré de liberté métrologique, au prix d’une constante médiocrement connue.</p></div>
+          <div class="worked-result"><strong>APPLICATION CHIFFRÉE</strong><span class="math">deux masses de 1 kg à 10 cm : F = 6,674 × 10⁻¹¹ × 1 × 1 / 0,1² ≈ 6,7 × 10⁻⁹ N</span><span class="math">soit 6,7 × 10⁻⁹ N, le poids d’une masse de 0,68 microgramme seulement</span></div>
+        </section>
+
+        <section class="lesson-section" id="structure-fine" aria-labelledby="structure-fine-title">
+          <p class="section-index">12 / α — LA CONSTANTE DE STRUCTURE FINE</p>
+          <h2 id="structure-fine-title">α : la meilleure connue, et un pur nombre</h2>
+          <p>La constante de structure fine est le seul nombre <em>adimensionnel</em> de cette liste : elle n’a pas d’unité, et sa valeur est donc indépendante de tout choix d’unité. Le NIST donne <span class="math">α = 7,297 352 5643(11) × 10⁻³</span>, soit une incertitude relative d’environ <span class="math">1,5 × 10⁻¹⁰</span> — la meilleure précision atteinte pour une constante non définie par convention.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CONSTANTE DE STRUCTURE FINE ET SON INVERSE</span>
+            <math class="mathml-display" display="block" aria-label="alpha égale 7,297 352 5643 fois 10 puissance moins 3 ; son inverse vaut 137,035 999 177 ; alpha égale e au carré divisé par quatre pi epsilon zero h c">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>α</mi><mo>=</mo><mn>7,297 352 5643</mn><mo>(</mo><mn>11</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−3</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mfrac><mn>1</mn><mi>α</mi></mfrac><mo>=</mo><mn>137,035 999 177</mn><mspace width="0.2em"/><mo>(</mo><mn>21</mn><mo>)</mo></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>α</mi><mo>=</mo><mfrac><msup><mi>e</mi><mn>2</mn></msup><mrow><mn>4</mn><mi>π</mi><msub><mi>ε</mi><mn>0</mn></msub><mi>h</mi><mi>c</mi></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Sa définition la relie à quatre autres constantes : <span class="math">α = e²/(4πε<sub>0</sub>hc)</span>. L’inverse, <span class="math">1/α ≈ 137,036</span>, figure depuis toujours dans les textes de physique : c’est le rapport de la vitesse d’un électron dans l’atome d’hydrogène, à la première approximation, à celle de la lumière (OpenStax, vol. 3, § 8.2 <em>Bohr’s Model of the Hydrogen Atom</em>).</p>
+          <div class="callout"><strong>Pourquoi α est-elle si bien mesurée ?</strong><p>Parce qu’elle est <em>adimensionnelle</em>. On la détermine en comparant une fréquence mesurée par une méthode spectroscopique à une fréquence déterminée par une balance, les deux grandeurs ayant la même dimension. Toutes les incertitudes expérimentales se simplifient alors, et il ne reste qu’à comparer des nombres. C’est un cas d’école où la suppression d’une unité — par un choix de définition — améliore la mesure.</p></div>
+          <div class="worked-result"><strong>PORTÉE DE LA CONNAISSANCE</strong><span class="math">α est connue à environ 10⁻¹⁰ près</span><span class="math">soit les 10 premiers chiffres significatifs</span></div>
+        </section>
+
+        <section class="lesson-section" id="constantes-electromagnetiques" aria-labelledby="constantes-electromagnetiques-title">
+          <p class="section-index">13 / μ₀, ε₀ ET Z₀</p>
+          <h2 id="constantes-electromagnetiques-title">Les trois constantes de l’électromagnétisme</h2>
+          <p>Les constantes <span class="math">μ<sub>0</sub></span> (perméabilité du vide) et <span class="math">ε<sub>0</sub></span> (permittivité du vide) figurent dans les lois de l’électromagnétisme ; l’impédance caractéristique du vide <span class="math">Z<sub>0</sub></span> en est une combinaison. Elles ne sont pas indépendantes : <span class="math">ε<sub>0</sub> = 1/(μ<sub>0</sub>c²)</span> et <span class="math">Z<sub>0</sub> = μ<sub>0</sub>c</span>.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CONSTANTES ÉLECTROMAGNÉTIQUES DU VIDE</span>
+            <math class="mathml-display" display="block" aria-label="mu zéro égale 1,256 637 061 27 fois 10 puissance moins 6 henry par mètre ; epsilon zéro égale 8,854 187 8188 fois 10 puissance moins 12 farad par mètre ; Z zéro égale 376,730 313 412 ohms">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>μ</mi><mn>0</mn></msub><mo>=</mo><mn>1,256 637 061 27</mn><mo>(</mo><mn>20</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−6</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">H·m⁻¹</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>ε</mi><mn>0</mn></msub><mo>=</mo><mn>8,854 187 8188</mn><mo>(</mo><mn>14</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−12</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">F·m⁻¹</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>Z</mi><mn>0</mn></msub><mo>=</mo><mn>376,730 313 412</mn><mo>(</mo><mn>59</mn><mo>)</mo><mspace width="0.2em"/><mi mathvariant="normal">Ω</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">valeurs NIST CODATA 2022 ; les parenthèses donnent l’incertitude sur les derniers chiffres</span>
+          </div>
+          <p><span class="math">μ<sub>0</sub></span> entre dans la loi de Biot et Savart et l’induction de Faraday ; <span class="math">ε<sub>0</sub></span> dans la loi de Coulomb et le champ d’un condensateur. L’impédance <span class="math">Z<sub>0</sub></span> est le rapport <span class="math">E/B</span> d’une onde plane dans le vide : sa valeur, proche de 377 ohms, est le point de départ de tous les calculs d’antennes (OpenStax, vol. 2, § 16.1 <em>Maxwell’s Equations and Electromagnetic Waves</em>).</p>
+          <div class="callout"><strong>La question qui fâche : μ₀ est-il exact ?</strong><p>Non. Malgré ce que certains manuels affirment parfois, <span class="math">μ<sub>0</sub></span> porte une incertitude publiée par le NIST, et ce n’est qu’après 2019 qu’elle est devenue mesurable de façon indépendante. Avant le redéfinissement, <span class="math">μ<sub>0</sub></span> était <em>exacte</em> par définition — <span class="math">4π × 10⁻⁷ H·m⁻¹</span> — et la valeur mesurée s’en écartait de l’ordre de <span class="math">10⁻⁹</span> en valeur relative. La nouvelle définition a fait passer cet écart dans l’incertitude de la mesure. C’est le triomphe du triplet <span class="math">(c, e, h)</span> : les unités se déduisent désormais des constantes, et non l’inverse.</p></div>
+          <div class="worked-result"><strong>VÉRIFICATION DE COHÉRENCE</strong><span class="math">1/(μ₀c²) ≈ 1/(1,256 637 × 10⁻⁶ × (2,998 × 10⁸)²) ≈ 8,854 × 10⁻¹² F·m⁻¹</span><span class="math">valeur cohérente avec ε₀ publié</span></div>
+        </section>
+
+        <section class="lesson-section" id="constantes-rayonnement" aria-labelledby="constantes-rayonnement-title">
+          <p class="section-index">14 / σ ET b — LES CONSTANTES DU RAYONNEMENT</p>
+          <h2 id="constantes-rayonnement-title">Stefan-Boltzmann et Wien : les deux constantes du corps noir</h2>
+          <p>Deux constantes exactes gouvernent l’émission d’un corps noir. La <strong>constante de Stefan-Boltzmann</strong> <span class="math">σ</span> donne la puissance émise par unité de surface, proportionnelle à la puissance quatrième de la température. La <strong>constante de déplacement de Wien</strong> <span class="math">b</span> donne la longueur d’onde du maximum de l’émissivité.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LOI DE STEFAN-BOLTZMANN ET LOI DE WIEN</span>
+            <math class="mathml-display" display="block" aria-label="sigma égale 5,670 374 419 fois 10 puissance moins 8 watts par mètre carré kelvin puissance moins 4 ; b égale 2,897 771 955 fois 10 puissance moins 3 mètre kelvin">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>σ</mi><mo>=</mo><mn>5,670 374 419</mn><mo>…</mo><mo>×</mo><msup><mn>10</mn><mn>−8</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">W·m⁻²·K⁻⁴</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>b</mi><mo>=</mo><mn>2,897 771 955</mn><mo>…</mo><mo>×</mo><msup><mn>10</mn><mn>−3</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">m·K</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Ces deux valeurs sont <em>exactes</em> depuis 2019 : elles découlent de <span class="math">c</span>, <span class="math">h</span>, <span class="math">k</span> et de la constante adimensionnelle de Stefan-Boltzmann <span class="math">π²/60</span>. C’est pourquoi OpenStax peut annoncer la loi de Wien avec <span class="math">b = 2,898 × 10⁻³ m·K</span> comme une valeur de référence exacte (OpenStax, vol. 3, § 6.1 <em>Blackbody Radiation</em>).</p>
+          <div class="worked-result"><strong>APPLICATION CHIFFRÉE · TEMPÉRATURE D’EFFET</strong><span class="math">λ<sub>max</sub> = b/T ; pour T = 5800 K : λ<sub>max</sub> = 2,898 × 10⁻³ / 5800 ≈ 5,0 × 10⁻⁷ m</span><span class="math">soit 500 nm, dans le vert — d’où la couleur du Soleil, proche de celle d’un corps à 5800 K</span></div>
+          <div class="callout"><strong>Puissance quatrième, et pourquoi</strong><p>La dépendance en <span class="math">T⁴</span> de <span class="math">σ</span> explique qu’une petite hausse de température fasse considérablement augmenter les pertes : doubler la température multiplie la puissance émise par seize. C’est la raison physique pour laquelle un corps très chaud brûle et pour laquelle le refroidissement radiatif domine à haute température (OpenStax, vol. 2, § 1.6 <em>Mechanisms of Heat Transfer</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="pesanteur-standard" aria-labelledby="pesanteur-standard-title">
+          <p class="section-index">15 / g₀ — LA PESANTEUR STANDARD</p>
+          <h2 id="pesanteur-standard-title">g₀ : une convention, pas une mesure de terrain</h2>
+          <p>La pesanteur <em>standard</em> <span class="math">g<sub>0</sub></span> vaut exactement <span class="math">9,806 65 m·s⁻²</span> (NIST, CODATA 2022). Elle ne décrit le poids d’aucun objet réel : la pesanteur effective varie avec l’altitude, la latitude et la géologie locale, et OpenStax rappelle que <span class="math">g</span> varie de <span class="math">9,78</span> à <span class="math">9,83 m·s⁻²</span> selon ces facteurs, pour une valeur moyenne de <span class="math">9,81 m·s⁻²</span> (OpenStax, vol. 1, § 3.5 <em>Free Fall</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">PESANTEUR STANDARD ET SES DEUX EMPLOIS</span>
+            <math class="mathml-display" display="block" aria-label="g zéro égale 9,806 65 mètres par seconde carrée, exacte ; un poids standard de 1 kilogramme vaut 9,806 65 newtons">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>g</mi><mn>0</mn></msub><mo>=</mo><mn>9,806 65</mn><mspace width="0.2em"/><mi mathvariant="normal">m·s⁻²</mi><mspace width="0.2em"/><mo>(</mo><mtext>exacte</mtext><mo>)</mo></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>w</mi><mo>=</mo><mi>m</mi><msub><mi>g</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mspace width="0.2em"/><mi mathvariant="normal">kg</mi><mo>×</mo><mn>9,806 65</mn><mo>=</mo><mn>9,806 65</mn><mspace width="0.2em"/><mi mathvariant="normal">N</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p><span class="math">g<sub>0</sub></span> a deux emplois distincts. Le premier est la définition d’une unité conventionnelle : un kilogramme-force vaut exactement <span class="math">9,806 65 N</span>, et cette valeur sert de référence pour exprimer des pressions atmosphériques. Le second est celui d’un <em>étalon de comparaison</em> : on mesure une pression ou une force par rapport à cette valeur, comme on mesurait une masse par rapport au prototype de kilogramme avant 2019.</p>
+          <div class="callout"><strong>Ne pas confondre g₀ et g</strong><p><span class="math">g</span> est une <em>mesure</em> locale, qui dépend du lieu. <span class="math">g<sub>0</sub></span> est une <em>convention</em>, exacte et universelle. Dans un calcul de poids, on utilise <span class="math">g</span> si l’on veut la valeur réelle au point considéré, et <span class="math">g<sub>0</sub></span> si l’on veut une référence reproductible (NIST, CODATA 2022).</p></div>
+        </section>
+
+        <section class="lesson-section" id="constantes-masses" aria-labelledby="constantes-masses-title">
+          <p class="section-index">16 / mₑ, m_p, m_n ET u — LES CONSTANTES DE MASSE</p>
+          <h2 id="constantes-masses-title">Les masses élémentaires et l’unité de masse atomique</h2>
+          <p>Les masses de l’électron, du proton et du neutron ne sont pas <em>définies</em> : elles sont <em>mesurées</em>, et chacune porte une incertitude. L’unité de masse atomique <span class="math">u</span> est, elle, une <strong>constante définie</strong> depuis 2019 : elle vaut exactement un douzième de la masse d’un atome de carbone 12 (NIST, CODATA 2022).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CONSTANTES DE MASSE — VALEURS MESURÉES ET UNITÉ DÉFINIE</span>
+            <math class="mathml-display" display="block" aria-label="masse de l'électron 9,109 383 7139 fois 10 puissance moins 31 kg ; masse du proton 1,672 621 925 95 fois 10 puissance moins 27 kg ; masse du neutron 1,674 927 500 56 fois 10 puissance moins 27 kg ; masse atomique 1,660 539 068 92 fois 10 puissance moins 27 kg">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>m</mi><mi>e</mi></msub><mo>=</mo><mn>9,109 383 7139</mn><mo>(</mo><mn>28</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−31</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">kg</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>m</mi><mi>p</mi></msub><mo>=</mo><mn>1,672 621 925 95</mn><mo>(</mo><mn>52</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−27</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">kg</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>m</mi><mi>n</mi></msub><mo>=</mo><mn>1,674 927 500 56</mn><mo>(</mo><mn>85</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−27</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">kg</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>u</mi><mo>=</mo><mn>1,660 539 068 92</mn><mo>(</mo><mn>52</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−27</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">kg</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+          </div>
+          <p>Les rapports entre ces masses sont des nombres purs et très instructifs : le proton est environ <span class="math">1 836</span> fois plus lourd que l’électron, et le neutron est légèrement plus lourd que le proton. C’est cet excès de masse du neutron qui explique la stabilité des noyaux : sans lui, aucun élément au-delà de l’hydrogène ne tiendrait (OpenStax, vol. 3, ch. 10, <em>Nuclear Physics</em>).</p>
+          <div class="worked-result"><strong>ORDRES DE GRANDEUR</strong><span class="math">m<sub>e</sub> ≈ 9,11 × 10⁻³¹ kg → environ 5,45 × 10⁻⁴ u</span><span class="math">m<sub>p</sub> ≈ 1,673 × 10⁻²⁷ kg → 1,007 u ; m<sub>n</sub> ≈ 1,675 × 10⁻²⁷ kg → 1,009 u</span><span class="math">u = 1,6605 × 10⁻²⁷ kg : 12 atomes de carbone 12 pèsent exactement 12 u</span></div>
+          <div class="callout"><strong>Pourquoi l’unité de masse atomique est-elle définie, et les masses mesurées ?</strong><p>Parce que le carbone 12 est facile à préparer et à compter par spectroscopie de masse. En fixer la masse à exactement <span class="math">12 u</span> rend <span class="math">u</span> exacte, et permet d’exprimer <span class="math">m<sub>p</sub></span> ou <span class="math">m<sub>n</sub></span> en unités de <span class="math">u</span> sans introduire d’incertitude supplémentaire. C’est un arbitrage typiquement métrologique : la commodité l’emporte, au prix d’une perte d’exactitude minime.</p></div>
+        </section>
+
+        <section class="lesson-section" id="grandeurs-derivees" aria-labelledby="grandeurs-derivees-title">
+          <p class="section-index">17 / GRANDEURS DÉRIVÉES DE LA PHYSIQUE ATOMIQUE</p>
+          <h2 id="grandeurs-derivees-title">Cinq grandeurs qui ne sont pas des constantes indépendantes</h2>
+          <p>Les grandeurs suivantes ne figurent pas parmi les 20 constantes du titre, parce qu’elles se déduisent exactement d’autres constantes déjà citées. Elles sont néanmoins omniprésentes en physique atomique, et les citer évite de les recalculer à chaque exercice.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CINQ GRANDEURS DÉRIVÉES ET LEURS FORMULES</span>
+            <math class="mathml-display" display="block" aria-label="rayon de Bohr a zéro égale epsilon zéro h bar sur m e e au carré ; rayon classique r e ; constante de Rydberg ; longueur d'onde de Compton ; énergie de Hartree">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mfrac><mrow><msub><mi>ε</mi><mn>0</mn></msub><mi>ħ</mi></mrow><mrow><msub><mi>m</mi><mi>e</mi></msub><msup><mi>e</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mn>5,291 772 105 44</mn><mo>(</mo><mn>82</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−11</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">m</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>r</mi><mi>e</mi></msub><mo>=</mo><mn>2,817 940 3205</mn><mo>(</mo><mn>13</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−15</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">m</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>R</mi><mi>∞</mi></msub><mo>=</mo><mn>10 973 731,568 157</mn><mo>(</mo><mn>12</mn><mo>)</mo><mspace width="0.2em"/><mi mathvariant="normal">m⁻¹</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>λ</mi><mi>C</mi></msub><mo>=</mo><mn>2,426 310 235 38</mn><mo>(</mo><mn>76</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−12</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">m</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>E</mi><mi>h</mi></msub><mo>=</mo><mn>4,359 744 722 2060</mn><mo>(</mo><mn>48</mn><mo>)</mo><mo>×</mo><msup><mn>10</mn><mn>−18</mn></msup><mspace width="0.2em"/><mi mathvariant="normal">J</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">valeurs NIST CODATA 2022 ; ce sont des grandeurs dérivées, pas des constantes indépendantes</span>
+          </div>
+          <p>Le <strong>rayon de Bohr</strong> <span class="math">a<sub>0</sub></span> est la taille de l’atome d’hydrogène dans le modèle de Bohr ; le <strong>rayon classique de l’électron</strong> <span class="math">r<sub>e</sub></span> est celui qu’on lui attribuerait en le considérant comme une boule de charge ; la <strong>longueur d’onde de Compton</strong> <span class="math">λ<sub>C</sub></span> est la longueur d’onde associée à un électron au repos. Ces trois longueurs sont très inégales : <span class="math">λ<sub>C</sub></span> est environ <span class="math">137</span> fois plus petite que <span class="math">a<sub>0</sub></span> (OpenStax, vol. 3, § 6.5 et § 8.2).</p>
+          <div class="worked-result"><strong>HIÉRARCHIE DES ÉCHELLES</strong><span class="math">λ<sub>C</sub> = 2,43 pm &lt; r<sub>e</sub> = 2,82 fm &lt; a<sub>0</sub> = 52,9 pm</span><span class="math">soit du plus petit au plus grand : 2,43 × 10⁻¹² m ; 2,82 × 10⁻¹⁵ m ; 5,29 × 10⁻¹¹ m</span></div>
+          <p>L’<strong>énergie de Hartree</strong> <span class="math">E<sub>h</sub></span> vaut environ <span class="math">27,2 eV</span> : c’est l’énergie d’ionisation de l’atome d’hydrogène dans le modèle de Bohr. C’est l’échelle naturelle de la chimie quantique (OpenStax, vol. 3, § 8.2).</p>
+        </section>
+
+        <section class="lesson-section" id="constantes-dimensionnement" aria-labelledby="constantes-dimensionnement-title">
+          <p class="section-index">18 / CONSTANTES ET ANALYSE DIMENSIONNELLE</p>
+          <h2 id="constantes-dimensionnement-title">La dimension d’une constante ne vous est pas libre</h2>
+          <p>L’analyse dimensionnelle permet de <em>vérifier</em> une relation physique sans la connaître : les deux membres d’une égalité doivent avoir les mêmes dimensions (OpenStax, vol. 1, § 1.4 <em>Dimensional Analysis</em>). Cette méthode impose une contrainte souvent oubliée : la dimension d’une constante est <strong>déduite</strong> de la loi où elle apparaît.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">DIMENSION DES QUATRE CONSTANTES DE LA MÉCANIQUE</span>
+            <math class="mathml-display" display="block" aria-label="dimensions de h, de G, de k et de e déduites des lois correspondantes">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>E</mi><mo>=</mo><mi>h</mi><mi>ν</mi><mo>→</mo><mo>[</mo><mi>h</mi><mo>]</mo><mo>=</mo><mi>M</mi><mo>·</mo><msup><mi>L</mi><mn>2</mn></msup><mo>·</mo><msup><mi>T</mi><mn>−1</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>F</mi><mo>=</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>→</mo><mo>[</mo><mi>G</mi><mo>]</mo><mo>=</mo><msup><mi>L</mi><mn>3</mn></msup><mo>·</mo><msup><mi>M</mi><mn>−1</mn></msup><mo>·</mo><msup><mi>T</mi><mn>−2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>E</mi><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>k</mi><mi>T</mi><mo>→</mo><mo>[</mo><mi>k</mi><mo>]</mo><mo>=</mo><mi>M</mi><mo>·</mo><msup><mi>L</mi><mn>2</mn></msup><mo>·</mo><msup><mi>T</mi><mn>−2</mn></msup><mo>·</mo><msup><mi>Θ</mi><mn>−1</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>F</mi><mo>=</mo><mi>q</mi><mi>E</mi><mo>→</mo><mo>[</mo><mi>e</mi><mo>]</mo><mo>=</mo><mi>Q</mi><mo>·</mo><mi>Θ</mi><mo>·</mo><msup><mi>L</mi><mn>−2</mn></msup><mo>·</mo><msup><mi>M</mi><mn>−1</mn></msup><mo>·</mo><msup><mi>T</mi><mn>−2</mn></msup></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">Θ : dimension de la température thermodynamique ; Q : dimension de la charge électrique</span>
+          </div>
+          <div class="callout"><strong>Pourquoi <span class="math">ε<sub>0</sub></span> et <span class="math">μ<sub>0</sub></span> ne sont-elles pas indépendantes ?</strong><p>Leurs dimensions sont <span class="math">[ε<sub>0</sub>] = Q²T²M⁻¹L⁻³</span> et <span class="math">[μ<sub>0</sub>] = QM L T⁻²</span>. Leur produit <span class="math">μ<sub>0</sub>ε<sub>0</sub></span> a la dimension <span class="math">T⁻²L⁻²</span>, celle de l’inverse du carré d’une vitesse : il ne pouvait donc que s’écrire <span class="math">1/c²</span>. L’analyse dimensionnelle <em>prédit</em> la relation <span class="math">ε<sub>0</sub> = 1/(μ<sub>0</sub>c²)</span> avant même toute mesure.</p></div>
+          <p>La contrepartie utile : l’analyse dimensionnelle donne la forme possible d’une loi, mais <strong>jamais</strong> le nombre. Aucune analyse ne prédit que la constante vaut <span class="math">6,674 30 × 10⁻¹¹</span> plutôt que <span class="math">1</span> — la valeur numérique d’une constante est une donnée expérimentale ou une convention, jamais un résultat du calcul dimensionnel (OpenStax, vol. 1, § 1.4).</p>
+        </section>
+
+        <section class="lesson-section" id="relations-constantes" aria-labelledby="relations-constantes-title">
+          <p class="section-index">19 / COMMENT LES CONSTANTES SE RELIENT</p>
+          <h2 id="relations-constantes-title">Un nombre, un rayon et une masse : le triplet de la physique atomique</h2>
+          <p>En physique atomique, la connaissance de trois grandeurs suffit à construire toutes les autres : la masse de l’électron, la charge élémentaire et la constante de Planck. C’est ce que montre le <strong>rayon de Bohr</strong>, qui se combine en un seul paramètre.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE RAYON DE BOHR, OU TOUT SE JOINT</span>
+            <math class="mathml-display" display="block" aria-label="a zéro égale epsilon zéro h barre sur m e e au carré, égale le lambda de Compton divisé par deux pi alpha ; l'énergie de liaison vaut treize six dixièmes d'eV">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>=</mo><mfrac><mrow><msub><mi>ε</mi><mn>0</mn></msub><mi>ħ</mi></mrow><mrow><msub><mi>m</mi><mi>e</mi></msub><msup><mi>e</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><msub><mi>λ</mi><mi>C</mi></msub><mrow><mn>2</mn><mi>π</mi><mi>α</mi></mrow></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>E</mi><mo>=</mo><mn>13,6</mn><mspace width="0.2em"/><mi mathvariant="normal">eV</mi><mo>=</mo><mn>2,18</mn><mo>×</mo><msup><mn>10</mn><mn>−18</mn></msup><mspace width="0.2em"/<mi mathvariant="normal">J</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">λ<sub>C</sub> : longueur d’onde de Compton ; α : constante de structure fine ; E : énergie d’ionisation de l’hydrogène</span>
+          </div>
+          <p>Cette structure n’est pas une coïncidence : elle traduit le fait que l’électron est un objet quantique dont la longueur d’onde naturelle est <span class="math">λ<sub>C</sub></span>, et que l’énergie du système est fixée par le rapport de deux grandeurs, <span class="math">e²</span> et <span class="math">λ<sub>C</sub></span>. L’énergie d’ionisation de l’hydrogène, <span class="math">13,6 eV</span>, en découle directement, et se retrouve à la racine de l’échelle énergétique de la chimie.</p>
+          <div class="callout"><strong>La recette du physicien : trois unités et deux nombres</strong><p>Pour construire un problème à l’échelle atomique, on choisit <span class="math">(c, h, e, m<sub>e</sub>)</span> comme briques de base. Tout le reste — longueurs, énergies, fréquences — s’en déduit par des combinaisons de <span class="math">h</span>, <span class="math">c</span>, <span class="math">e</span> et <span class="math">m<sub>e</sub></span>, parfois par l’intermédiaire de <span class="math">α</span>. Ce sont ces combinaisons qui fixent les ordres de grandeur, indépendamment des détails du système étudié.</p></div>
+          <p>En gravitation et en relativité, la structure est analogue mais avec <span class="math">G</span> et <span class="math">c</span> : la longueur naturelle <span class="math">c²/G</span> et le temps <span class="math">c³/G</span> définissent des échelles cosmologiques que l’on retrouve ensuite, avec quelques ordres de grandeur, dans la taille et l’âge de l’Univers (OpenStax, vol. 1, § 13.1 ; vol. 3, ch. 5).</p>
+        </section>
+
+        <section class="lesson-section" id="tableau-recapitulatif" aria-labelledby="tableau-recapitulatif-title">
+          <p class="section-index">20 / TABLEAU RÉCAPITULATIF</p>
+          <h2 id="tableau-recapitulatif-title">Les 20 principales constantes en un tableau</h2>
+          <p>Voici la synthèse du cours. Toutes les valeurs proviennent de l’ajustement <strong>CODATA 2022</strong> publié par le NIST ; la colonne « statut » indique si la constante est définie par convention ou mesurée expérimentalement.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les 20 principales constantes de la physique — valeurs NIST, ajustement CODATA 2022. La mention « exacte » signale une valeur fixée par convention, sans incertitude.</caption>
+              <thead><tr><th scope="col">Symbole</th><th scope="col">Nom</th><th scope="col">Valeur (2022)</th><th scope="col">Statut</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">c</th><td>Vitesse de la lumière</td><td><span class="math">299 792 458 m·s⁻¹</span></td><td>exacte</td></tr>
+                <tr><th scope="row">h</th><td>Constante de Planck</td><td><span class="math">6,626 070 15 × 10⁻³⁴ J·Hz⁻¹</span></td><td>exacte</td></tr>
+                <tr><th scope="row">ħ</th><td>Constante de Planck réduite</td><td><span class="math">1,054 571 817… × 10⁻³⁴ J·s</span></td><td>exacte</td></tr>
+                <tr><th scope="row">e</th><td>Charge élémentaire</td><td><span class="math">1,602 176 634 × 10⁻¹⁹ C</span></td><td>exacte</td></tr>
+                <tr><th scope="row">N<sub>A</sub></th><td>Constante d’Avogadro</td><td><span class="math">6,022 140 76 × 10²³ mol⁻¹</span></td><td>exacte</td></tr>
+                <tr><th scope="row">R</th><td>Constante des gaz parfaits</td><td><span class="math">8,314 462 618… J·mol⁻¹·K⁻¹</span></td><td>exacte</td></tr>
+                <tr><th scope="row">F</th><td>Constante de Faraday</td><td><span class="math">96 485,332 12… C·mol⁻¹</span></td><td>exacte</td></tr>
+                <tr><th scope="row">k</th><td>Constante de Boltzmann</td><td><span class="math">1,380 649 × 10⁻²³ J·K⁻¹</span></td><td>exacte</td></tr>
+                <tr><th scope="row">g<sub>0</sub></th><td>Pesanteur standard</td><td><span class="math">9,806 65 m·s⁻²</span></td><td>exacte</td></tr>
+                <tr><th scope="row">σ</th><td>Constante de Stefan-Boltzmann</td><td><span class="math">5,670 374 419… × 10⁻⁸ W·m⁻²·K⁻⁴</span></td><td>exacte</td></tr>
+                <tr><th scope="row">b</th><td>Déplacement de Wien</td><td><span class="math">2,897 771 955… × 10⁻³ m·K</span></td><td>exacte</td></tr>
+                <tr><th scope="row">G</th><td>Constante de gravitation</td><td><span class="math">6,674 30(15) × 10⁻¹¹ m³·kg⁻¹·s⁻²</span></td><td>mesurée, u<sub>r</sub> = 2,2 × 10⁻⁵</td></tr>
+                <tr><th scope="row">α</th><td>Constante de structure fine</td><td><span class="math">7,297 352 5643(11) × 10⁻³</span></td><td>mesurée, sans unité</td></tr>
+                <tr><th scope="row">μ<sub>0</sub></th><td>Perméabilité du vide</td><td><span class="math">1,256 637 061 27(20) × 10⁻⁶ H·m⁻¹</span></td><td>mesurée</td></tr>
+                <tr><th scope="row">ε<sub>0</sub></th><td>Permittivité du vide</td><td><span class="math">8,854 187 8188(14) × 10⁻¹² F·m⁻¹</span></td><td>mesurée</td></tr>
+                <tr><th scope="row">Z<sub>0</sub></th><td>Impédance du vide</td><td><span class="math">376,730 313 412(59) Ω</span></td><td>mesurée</td></tr>
+                <tr><th scope="row">m<sub>e</sub></th><td>Masse de l’électron</td><td><span class="math">9,109 383 7139(28) × 10⁻³¹ kg</span></td><td>mesurée</td></tr>
+                <tr><th scope="row">m<sub>p</sub></th><td>Masse du proton</td><td><span class="math">1,672 621 925 95(52) × 10⁻²⁷ kg</span></td><td>mesurée</td></tr>
+                <tr><th scope="row">m<sub>n</sub></th><td>Masse du neutron</td><td><span class="math">1,674 927 500 56(85) × 10⁻²⁷ kg</span></td><td>mesurée</td></tr>
+                <tr><th scope="row">u</th><td>Masse atomique</td><td><span class="math">1,660 539 068 92(52) × 10⁻²⁷ kg</span></td><td>mesurée</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Lecture : onze constantes sont <em>exactes</em> — leur valeur est fixée par convention et ne porte aucune incertitude — et neuf sont <em>mesurées</em>. Les points de suspension figurent dans la publication du NIST : ils signalent un nombre décimal exact dont l’affichage est abrégé.</p>
+        </section>
+
+        <section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">21 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">Exercices corrigés</h2>
+          <p>Douze exercices couvrant l’ensemble du cours, de la lecture de la notation CODATA au calcul d’une énergie de liaison. Essaie de répondre avant d’ouvrir la correction : le but est de manipuler les constantes, pas de les recopier.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Écrivez la valeur de <span class="math">G</span> avec son incertitude, puis donnez l’incertitude standard relative.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">G = 6,674 30(15) × 10⁻¹¹ m³·kg⁻¹·s⁻²</span><br>
+            <span class="math">u(G) = 0,000 15 × 10⁻¹¹ m³·kg⁻¹·s⁻²</span><br>
+            <span class="math">u<sub>r</sub> = 0,000 15 / 6,674 30 ≈ 2,2 × 10⁻⁵</span><br>
+            <strong>Réponse : 2,2 × 10⁻⁵, soit 22 parties par million.</strong> L’incertitude porte sur les deux derniers chiffres significatifs (section 02).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Quelle est la longueur d’onde du rayonnement d’un corps à <span class="math">3000 K</span> ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Loi de Wien : <span class="math">λ<sub>max</sub> = b/T</span>.<br>
+            <span class="math">λ<sub>max</sub> = 2,898 × 10⁻³ / 3000 ≈ 9,66 × 10⁻⁷ m</span><br>
+            <strong>Réponse : environ 966 nm, dans le proche infrarouge.</strong> Une température double divise la longueur d’onde par deux (section 14).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Une mole de gaz parfait à <span class="math">T</span> kelvins. Exprimer son énergie cinétique moyenne en fonction de <span class="math">R</span> et de <span class="math">T</span>.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Pour une mole : <span class="math">Ē = 3/2 R T</span>.<br>
+            <span class="math">à T = 300 K : Ē = 1,5 × 8,314 × 300 ≈ 3,74 × 10³ J</span><br>
+            <strong>Réponse : 3/2 RT.</strong> Le facteur 3/2 vient des trois degrés de liberté de translation ; le passage de <span class="math">k</span> à <span class="math">R</span> vient de <span class="math">R = N<sub>A</sub>k</span> (sections 05 et 10).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Combien d’électrons faut-il pour transporter une charge de <span class="math">1,00 C</span> ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">N = Q/e = 1,00 / (1,602 176 634 × 10⁻¹⁹) ≈ 6,24 × 10¹⁸</span><br>
+            <strong>Réponse : environ 6,24 × 10¹⁸ électrons.</strong> L’inverse de <span class="math">e</span> donne le nombre de charges élémentaires par coulomb, et ce nombre est exact puisque <span class="math">e</span> l’est (section 08).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">E</span><span>Une masse de <span class="math">2,0 kg</span> est placée sur Terre. Quel est son poids ? Même question sur la Lune, où <span class="math">g</span> vaut <span class="math">1,62 m·s⁻²</span>.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Sur Terre : <span class="math">w = mg = 2,0 × 9,81 ≈ 19,6 N</span>.<br>
+            Sur la Lune : <span class="math">w = 2,0 × 1,62 ≈ 3,2 N</span>.<br>
+            <strong>Réponse : 19,6 N puis 3,2 N.</strong> La masse ne change pas, seul le poids varie : c’est la distinction essentielle entre <span class="math">m</span> et <span class="math">w</span> (section 15).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">F</span><span>Calculer la constante de Boltzmann à partir de <span class="math">R</span> et de <span class="math">N<sub>A</sub></span>, et comparer à la valeur tabulée.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">k = R/N<sub>A</sub> = 8,314 462 618 / (6,022 140 76 × 10²³) ≈ 1,380 649 × 10⁻²³ J·K⁻¹</span><br>
+            <strong>Réponse : on retrouve exactement <span class="math">1,380 649 × 10⁻²³</span>.</strong> La valeur tabulée est <em>exacte</em> : ce calcul ne fournit donc aucune information nouvelle, il vérifie la relation <span class="math">R = N<sub>A</sub>k</span> (section 09).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">G</span><span>Vérifier la cohérence de <span class="math">ε<sub>0</sub></span> avec <span class="math">μ<sub>0</sub></span> et <span class="math">c</span>.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">1/(μ<sub>0</sub>c²) = 1/(1,256 637 × 10⁻⁶ × (2,998 × 10⁸)²)</span><br>
+            <span class="math">= 1/(1,256 637 × 10⁻⁶ × 8,988 × 10¹⁶) ≈ 8,854 × 10⁻¹² F·m⁻¹</span><br>
+            <strong>Réponse : 8,854 × 10⁻¹² F·m⁻¹</strong>, valeur cohérente avec <span class="math">ε<sub>0</sub></span> publié. C’est la relation que l’analyse dimensionnelle impose (sections 13 et 18).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">H</span><span>Quelle est l’énergie d’un photon de longueur d’onde <span class="math">500 nm</span> ? Exprimer le résultat en eV.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">E = hc/λ = (6,626 × 10⁻³⁴ × 2,998 × 10⁸) / (500 × 10⁻⁹) ≈ 3,97 × 10⁻¹⁹ J</span><br>
+            Avec <span class="math">1 eV = 1,602 × 10⁻¹⁹ J</span> : <span class="math">E ≈ 2,48 eV</span><br>
+            <strong>Réponse : environ 2,5 eV, dans le vert.</strong> Le calcul fait intervenir <span class="math">h</span> et <span class="math">c</span>, tous deux exacts (section 07).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">I</span><span>Combien de moles d’électrons sont nécessaires pour déposer <span class="math">1,00 A</span> pendant une heure ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">Q = I Δt = 1,00 × 3 600 = 3 600 C</span><br>
+            <span class="math">n = Q/F = 3 600 / 96 485,33 ≈ 0,0373 mol</span><br>
+            <strong>Réponse : environ 3,73 × 10⁻² mol d’électrons.</strong> Le même résultat s’obtient avec <span class="math">Q/n = N<sub>A</sub>e</span> (section 09).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">J</span><span>Exprimer le rayon de Bohr à partir de la longueur d’onde de Compton et de la constante de structure fine.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">a<sub>0</sub> = λ<sub>C</sub> / (2πα) = 2,426 × 10⁻¹² / (2π × 7,297 × 10⁻³)</span><br>
+            <span class="math">≈ 2,426 × 10⁻¹² / 0,04585 ≈ 5,29 × 10⁻¹¹ m</span><br>
+            <strong>Réponse : 5,29 × 10⁻¹¹ m</strong>, valeur cohérente avec <span class="math">a<sub>0</sub> = 5,291 772 105 44 × 10⁻¹¹ m</span>. Le facteur <span class="math">1/α ≈ 137</span> explique que <span class="math">a<sub>0</sub></span> soit environ 137 fois plus grand que <span class="math">λ<sub>C</sub></span> (sections 17 et 19).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">K</span><span>Une expérience mesure <span class="math">G</span> avec une incertitude de <span class="math">5 × 10⁻³</span> sur une mesure isolée. Combien de mesures indépendantes faut-il pour atteindre <span class="math">5 × 10⁻⁴</span> ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Si l’incertitude sur une mesure est <span class="math">σ</span>, celle de la moyenne de <span class="math">n</span> mesures indépendantes vaut <span class="math">σ/√n</span>.<br>
+            <span class="math">5 × 10⁻³ / √n = 5 × 10⁻⁴ → √n = 10 → n = 100</span><br>
+            <strong>Réponse : 100 mesures indépendantes.</strong> Multiplier le nombre de mesures par dix ne fait gagner qu’un facteur <span class="math">√10</span> sur la précision (section 02).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">L</span><span>Quelle est la masse d’un électron exprimée en unités de masse atomique ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">m<sub>e</sub>/u = 9,109 383 7139 × 10⁻³¹ / (1,660 539 068 92 × 10⁻²⁷) ≈ 5,486 × 10⁻⁴</span><br>
+            <strong>Réponse : environ 5,486 × 10⁻⁴ u.</strong> L’électron est environ 1 836 fois moins massif que le proton (section 16).</p></div>
+          </details>
+        </section>
+
+        <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">22 / SOURCES</p>
+          <h2 id="sources-title">Sources vérifiées</h2>
+          <p>Chaque valeur numérique de ce cours provient directement de l’ajustement CODATA 2022 publié par le NIST, et chaque définition d’unité du texte officiel du NIST sur le redéfinissement du SI. Les notions pédagogiques renvoient à OpenStax, <em>University Physics</em>, dont le chapitre 1 du volume 1 traite des unités et de l’analyse dimensionnelle.</p>
+          <ul>
+            <li><strong>Valeurs des 20 constantes et des grandeurs dérivées citées</strong> : <a href="https://physics.nist.gov/cuu/Constants/" target="_blank" rel="noreferrer">NIST, <em>CODATA Recommended Values of the Fundamental Physical Constants</em></a> (ajustement 2022, liste complète) — <span class="math">c</span>, <span class="math">h</span>, <span class="math">ħ</span>, <span class="math">e</span>, <span class="math">N<sub>A</sub></span>, <span class="math">R</span>, <span class="math">F</span>, <span class="math">k</span>, <span class="math">g</span><sub>0</sub>, <span class="math">σ</span>, <span class="math">b</span>, <span class="math">G</span>, <span class="math">α</span>, <span class="math">μ<sub>0</sub></span>, <span class="math">ε<sub>0</sub></span>, <span class="math">Z<sub>0</sub></span>, <span class="math">m<sub>e</sub></span>, <span class="math">m<sub>p</sub></span>, <span class="math">m<sub>n</sub></span>, <span class="math">u</span>, <span class="math">a<sub>0</sub></span>, <span class="math">r<sub>e</sub></span>, <span class="math">R<sub>∞</sub></span>, <span class="math">λ<sub>C</sub></span>, <span class="math">E<sub>h</sub></span>. La mention « (exact) » et les points de suspension sont ceux de la publication.</li>
+            <li><strong>Constante de gravitation : valeur et incertitude</strong> : <a href="https://physics.nist.gov/cgi-bin/cuu/Value?bg|search_for=g" target="_blank" rel="noreferrer">NIST, valeur de la constante newtonienne de gravitation</a> — <span class="math">G = 6,674 30(15) × 10⁻¹¹ m³·kg⁻¹·s⁻²</span>, incertitude relative <span class="math">2,2 × 10⁻⁵</span>.</li>
+            <li><strong>Définitions officielles des sept unités de base</strong> : <a href="https://www.nist.gov/si-redefinition/definitions-si-base-units" target="_blank" rel="noreferrer">NIST, <em>Definitions of SI Base Units</em></a> — texte verbatim des définitions du mètre (<span class="math">c</span>), de la seconde (<span class="math">Δν<sub>Cs</sub></span>), du kilogramme (<span class="math">h</span>), de l’ampère (<span class="math">e</span>), du kelvin (<span class="math">k</span>), du mole (<span class="math">N<sub>A</sub></span>) et de la candela (<span class="math">K<sub>cd</sub></span>).</li>
+            <li><strong>Calendrier et portée du redéfinissement</strong> : <a href="https://www.nist.gov/si-redefinition" target="_blank" rel="noreferrer">NIST, <em>SI Redefinition</em></a> — adoption à Versailles le 16 novembre 2018 par soixante pays, entrée en vigueur le 20 mai 2019 ; kilogramme, kelvin, ampère et mole redéfinis, seconde, mètre et candela déjà fondés sur des constantes universelles.</li>
+            <li><strong>Du prototype du kilogramme à la constante de Planck</strong> : <a href="https://www.nist.gov/si-redefinition/kilogram-introduction" target="_blank" rel="noreferrer">NIST, <em>Kilogram: Introduction</em></a> — Prototype international du kilogramme, cylindre de platine-iridium coulé en 1879, dérive des étalons nationaux.</li>
+            <li><strong>Passage de l’ampère au comptage d’électrons</strong> : <a href="https://www.nist.gov/si-redefinition/ampere-introduction" target="_blank" rel="noreferrer">NIST, <em>Ampere: Introduction</em></a> — définition de 1948 fondée sur la force entre conducteurs parallèles, remplacée depuis le 20 mai 2019 par la charge élémentaire.</li>
+            <li><strong>Calibration du kelvin par la constante de Boltzmann</strong> : <a href="https://www.nist.gov/si-redefinition/kelvin-introduction" target="_blank" rel="noreferrer">NIST, <em>Kelvin: Introduction</em></a> — magnitude fixée par la valeur numérique exacte de <span class="math">k = 1,380 649 × 10⁻²³ J·K⁻¹</span>.</li>
+            <li><strong>Détermination expérimentale de <span class="math">N<sub>A</sub></span></strong> : <a href="https://www.nist.gov/si-redefinition/kilogram-silicon-spheres-and-the-international-avogadro-project" target="_blank" rel="noreferrer">NIST, <em>Silicon Spheres and the International Avogadro Project</em></a> — diffraction cristalline sur sphère de silicium, mesure ayant fourni la valeur de <span class="math">k</span> retenue en 2019.</li>
+            <li><strong>Unités, incertitudes et chiffres significatifs</strong> : <a href="https://openstax.org/books/university-physics-volume-1/pages/1-introduction" target="_blank" rel="noreferrer">OpenStax, <em>University Physics</em> vol. 1, chapitre 1 <em>Units, Accuracy, and Numerical Manipulation</em></a> — § 1.2 <em>Units and Standards</em> ; § 1.4 <em>Dimensional Analysis</em> ; § 1.5 <em>Estimate Errors in Numerical Calculations</em> ; § 1.6 <em>Significant Figures</em>.</li>
+            <li><strong>Chute libre et pesanteur locale</strong> : OpenStax, vol. 1, § 3.5 <em>Free Fall</em> — <span class="math">g = 9,81 m·s⁻²</span> en moyenne, de 9,78 à <span class="math">9,83 m·s⁻²</span> selon la latitude, l’altitude et la géologie.</li>
+            <li><strong>Masse, poids et pesanteur lunaire</strong> : OpenStax, vol. 1, § 5.4 <em>Mass and Weight</em> — <span class="math">w⃗ = m g⃗</span>, <span class="math">1,62 m·s⁻²</span> sur la Lune, poids apparent et apesanteur.</li>
+            <li><strong>Gravitation universelle</strong> : OpenStax, vol. 1, § 13.1 <em>Newton’s Law of Universal Gravitation</em> — loi en <span class="math">1/r²</span> et limites expérimentales de <span class="math">G</span>.</li>
+            <li><strong>Corps noir, loi de Wien et loi de Stefan-Boltzmann</strong> : OpenStax, vol. 3, § 6.1 <em>Blackbody Radiation</em> ; OpenStax, vol. 2, § 1.6 <em>Mechanisms of Heat Transfer</em> — <span class="math">b = 2,898 × 10⁻³ m·K</span> et <span class="math">P = σAT⁴</span>.</li>
+            <li><strong>Rayon de Bohr, énergie d’ionisation et structure fine</strong> : OpenStax, vol. 3, § 8.2 <em>Bohr’s Model of the Hydrogen Atom</em> — <span class="math">a<sub>0</sub></span>, <span class="math">13,6 eV</span>, <span class="math">1/α ≈ 137,036</span>.</li>
+            <li><strong>Longueur d’onde de Compton et stabilité nucléaire</strong> : OpenStax, vol. 3, § 6.5 et chapitre 10 <em>Nuclear Physics</em> — <span class="math">λ<sub>C</sub></span>, rapport <span class="math">m<sub>p</sub>/m<sub>e</sub></span>, excès de masse du neutron.</li>
+            <li><strong>Charge élémentaire et sa quantification</strong> : OpenStax, vol. 2, § 15.1 <em>Electric Charge</em> — <span class="math">e = 1,602 × 10⁻¹⁹ C</span> et caractère entier de toute charge mesurée.</li>
+            <li><strong>Constante des gaz parfaits et théorie cinétique</strong> : OpenStax, vol. 2, chapitre 2 <em>The Kinetic Theory of Gases</em> — <span class="math">R</span> et énergie cinétique moyenne <span class="math">3/2 kT</span>.</li>
+          </ul>
+          <p>Les valeurs reprises dans les exercices sont des applications numériques directes des constantes tabulées ci-dessus. La seule donnée de service citée qui ne provienne pas du NIST est la température de surface du Soleil, <span class="math">5800 K</span>, employée en section 14 pour illustrer la loi de Wien : c’est une valeur d’usage astronomique, et non une constante métrologique.</p>
+        </section>
+
+        <footer class="course-footer"><span>LES 20 PRINCIPALES CONSTANTES</span><a href="index.html">Retour aux branches ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>
