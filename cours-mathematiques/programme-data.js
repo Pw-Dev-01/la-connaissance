@@ -143,6 +143,38 @@ window.courseCatalog = [
       { id: 'psi-probabilites', title: 'Probabilités et variables aléatoires', field: 'Probabilités', summary: 'Lois discrètes, espérance et variance.' },
       { id: 'psi-calcul-differentiel', title: 'Calcul différentiel et optimisation', field: 'Analyse', summary: 'Gradient, dérivées partielles et extremums.' }
     ]
+  },
+  {
+    id: 'grands-mathematiciens',
+    title: 'Les grands mathématiciens',
+    note: 'Vingt mathématiciens classés par date de naissance, d’Euclide à Grothendieck, avec leurs contributions et leurs dates vérifiées.',
+    href: 'grands-mathematiciens-approfondie.html',
+    sections: [
+      { anchor: 'methode-selection', title: 'Comment établir une telle liste ?' },
+      { anchor: 'euclide', title: 'Euclide — les Éléments' },
+      { anchor: 'al-khwarizmi', title: 'Al-Khwarizmi — l’algèbre' },
+      { anchor: 'omar-khayyam', title: 'Omar Khayyam — les cubiques' },
+      { anchor: 'fibonacci', title: 'Fibonacci — le Liber abaci' },
+      { anchor: 'descartes', title: 'Descartes — la géométrie analytique' },
+      { anchor: 'fermat', title: 'Fermat — le dernier théorème' },
+      { anchor: 'pascal', title: 'Pascal — le calcul des probabilités' },
+      { anchor: 'leibniz', title: 'Leibniz — le calcul différentiel' },
+      { anchor: 'euler', title: 'Euler — l’identité et la méthode' },
+      { anchor: 'lagrange', title: 'Lagrange — la mécanique analytique' },
+      { anchor: 'sophie-germain', title: 'Sophie Germain — la première preuve' },
+      { anchor: 'gauss', title: 'Gauss — la géométrie des nombres' },
+      { anchor: 'boole', title: 'Boole — l’algèbre de la logique' },
+      { anchor: 'cantor', title: 'Cantor — l’infini dénombrable' },
+      { anchor: 'hilbert', title: 'Hilbert — les fondations' },
+      { anchor: 'emmy-noether', title: 'Emmy Noether — les symétries' },
+      { anchor: 'kolmogorov', title: 'Kolmogorov — le hasard axiomatisé' },
+      { anchor: 'godel', title: 'Gödel — l’incomplétude' },
+      { anchor: 'turing', title: 'Turing — la machine' },
+      { anchor: 'grothendieck', title: 'Grothendieck — les schémas' },
+      { anchor: 'tableau-chronologique', title: 'Tableau chronologique' },
+      { anchor: 'exercices', title: 'S’entraîner' },
+      { anchor: 'sources', title: 'Sources' }
+    ]
   }
 ];
 

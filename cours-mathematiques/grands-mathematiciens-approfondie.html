@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi consacré aux vingt plus grands mathématiciens de l’histoire, classés par ordre chronologique de naissance : Euclide, al-Khwarizmi, Omar Khayyam, Fibonacci, Descartes, Fermat, Pascal, Leibniz, Euler, Lagrange, Sophie Germain, Gauss, Boole, Cantor, Hilbert, Emmy Noether, Kolmogorov, Gödel, Turing et Grothendieck. Pour chacun : dates vérifiées, domaine, contribution précise et lien avec les mathématiques actuelles, avec formules en MathML et sources vérifiées.">
+    <title>Les grands mathématiciens | Cours de mathématiques</title>
+    <!-- Format identique au cours approfondi de physique. Règle du site : la liste
+         des cours (menu gauche) n’est pas numérotée, les sous-rubriques de la
+         page le sont. -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Ce cours compte vingt-quatre entrées de navigation : la barre latérale
+         devient défilable quand la hauteur de l’écran ne suffit plus à les
+         afficher. Sous 700 px, la mise en page partagée la transforme déjà en
+         bandeau horizontal. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+      /* Même traitement que les autres cours approfondis : le lien parent et
+         les entrées du domaine s’affichent en gris clair (var(--muted),
+         #67716a — contraste AA sur fond papier). La bordure corail signale
+         toujours le chapitre courant au survol ou en cours de lecture. */
+      .course-sidebar > .course-link span,
+      .course-list .course-link span {
+        color: var(--muted);
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de mathématiques">
+        <span class="wordmark-mark" aria-hidden="true">x²</span>
+        <span>LE COURS DE MATHS</span>
+      </a>
+      <a class="edition catalogue-back" href="programmes.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE MATHÉMATIQUES</p>
+        <a class="course-link" href="programmes.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche des grands mathématiciens du cours de mathématiques">
+          <!-- Liste des cours du domaine, sans numérotation -->
+          <a class="course-link" href="index.html"><span>Second degré</span></a>
+          <a class="course-link" href="limites.html"><span>Limites de fonctions</span></a>
+          <a class="course-link" href="derivees.html"><span>Dérivées</span></a>
+          <a class="course-link is-current" href="grands-mathematiciens-approfondie.html" aria-current="page"><span>Les grands mathématiciens</span></a>
+        </nav>
+
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours sur les grands mathématiciens">
+          <a href="#methode-selection">01 <span>Comment établir une telle liste ?</span></a>
+          <a href="#euclide">02 <span>Euclide — les Éléments</span></a>
+          <a href="#al-khwarizmi">03 <span>Al-Khwarizmi — l’algèbre</span></a>
+          <a href="#omar-khayyam">04 <span>Omar Khayyam — les cubiques</span></a>
+          <a href="#fibonacci">05 <span>Fibonacci — le Liber abaci</span></a>
+          <a href="#descartes">06 <span>Descartes — la géométrie analytique</span></a>
+          <a href="#fermat">07 <span>Fermat — le dernier théorème</span></a>
+          <a href="#pascal">08 <span>Pascal — le calcul des probabilités</span></a>
+          <a href="#leibniz">09 <span>Leibniz — le calcul différentiel</span></a>
+          <a href="#euler">10 <span>Euler — l’identité et la méthode</span></a>
+          <a href="#lagrange">11 <span>Lagrange — la mécanique analytique</span></a>
+          <a href="#sophie-germain">12 <span>Sophie Germain — la première preuve</span></a>
+          <a href="#gauss">13 <span>Gauss — la géométrie des nombres</span></a>
+          <a href="#boole">14 <span>Boole — l’algèbre de la logique</span></a>
+          <a href="#cantor">15 <span>Cantor — l’infini dénombrable</span></a>
+          <a href="#hilbert">16 <span>Hilbert — les fondations</span></a>
+          <a href="#emmy-noether">17 <span>Emmy Noether — les symétries</span></a>
+          <a href="#kolmogorov">18 <span>Kolmogorov — le hasard axiomatisé</span></a>
+          <a href="#godel">19 <span>Gödel — l’incomplétude</span></a>
+          <a href="#turing">20 <span>Turing — la machine</span></a>
+          <a href="#grothendieck">21 <span>Grothendieck — les schémas</span></a>
+          <a href="#tableau-chronologique">22 <span>Tableau chronologique</span></a>
+          <a href="#exercices">23 <span>S’entraîner</span></a>
+          <a href="#sources">24 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">∑</span>
+          <p>Une idée directrice : aucune liste n’est neutre. Celle-ci est déclarée, ses critères sont explicités, et chaque nom est rattaché à une contribution vérifiable.</p>
+        </div>
+      </aside>
+
+<article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> LES GRANDS MATHÉMATICIENS · COURS APPROFONDI</p>
+          <h1>Les grands<br><span>mathématiciens</span></h1>
+          <p class="course-intro">D’Alexandrie au XX<sup>e</sup> siècle, les mathématiques se sont construites par un petit nombre dechercheurs. Ce cours les présente dans l’ordre chronologique de leur naissance : Euclide et les <em>Éléments</em>, al-Khwarizmi et l’algèbre, Omar Khayyam et les équations cubiques, Fibonacci et le <em>Liber abaci</em>, Descartes et la géométrie analytique, Fermat et le dernier théorème, Pascal et les probabilités, Leibniz et le calcul différentiel et intégral, Euler et l’identité, Lagrange et la mécanique analytique, Sophie Germain et la première démonstration de Fermat, Gauss et l’arithmétique, Boole et l’algèbre booléenne, Cantor et les ensembles infinis, Hilbert et l’axiomatique, Emmy Noether et les symétries, Kolmogorov et le hasard axiomatique, puis Gödel, Turing et Grothendieck. Pour chacun, les dates vérifiées, le domaine, la contribution précise et le lien avec les mathématiques d’aujourd’hui. La première section expose la méthode de sélection : aucun classement n’est naturel, et c’est précisément pourquoi il faut en déclarer les critères.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>24 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+        <section class="lesson-section" id="methode-selection" aria-labelledby="methode-selection-title">
+          <p class="section-index">01 / MÉTHODE DE SÉLECTION</p>
+          <h2 id="methode-selection-title">Comment peut-on classer des mathématiciens ?</h2>
+          <p>Il n’existe pas de liste canonique des « plus grands mathématiciens ». Aucune académie, aucun manuel de référence n’en publie une : un tel classement engage un jugement de <em>valeur</em>, non un fait, et il dépend de ce qu’on entend par « grand ». Présenter un classement comme allant de soi serait donc une affirmation non sourcée.</p>
+          <p>Ce cours assume l’opération : il déclare les critères, et il les applique de façon vérifiable.</p>
+          <ol class="method-list">
+            <li><strong>Une contribution durable et formulable.</strong><span>Le candidat doit avoir produit un résultat que les mathématiques actuelles utilisent encore, exprimable en définition, en théorème ou en formule. Ce critère écarte ceux dont l’apport fut ensuite absorbé par un cadre plus général.</span></li>
+            <li><strong>Une innovation conceptuelle, pas seulement technique.</strong><span>Il ne suffit pas de mieux calculer : le personnage retenu doit avoir changé la <em>façon de poser</em> le problème — une notion, une structure ou un formalisme nouveau.</span></li>
+            <li><strong>Un rôle de chef de file.</strong><span>Le personnage a dirigé une école ou un groupe qui a formé d’autres chercheurs. Ce critère valorise la constitution d’un domaine, pas seulement un résultat isolé.</span></li>
+            <li><strong>Une présence dans le lectorat francophone.</strong><span>La liste privilégie les travaux décrits dans les manuels du site : c’est une contrainte éditoriale assumée, qui explique par exemple la présence de Fermat, dont l’œuvre est enseignée en terminale.</span></li>
+          </ol>
+          <div class="callout"><strong>Ce que ce critère exclut, et pourquoi c’est un choix</strong><p>La liste ne comporte ni Archimède, ni Apollonius, ni Diophante, ni Ramanujan, ni Bourbaki. Ce sont des travaux fondamentaux — mais dont les résultats ont été progressivement intégrés dans des cadres plus généraux, ou dont l promovida reste inachevée. Écarter Ramanujan alors qu’on retient Gauss est discutable, et c’est discutable <em>explicitement</em> : c’est l’objet de la présente section.</p></div>
+          <h3>Les règles effectivement appliquées</h3>
+          <ul class="mistake-list">
+            <li><strong>Ordre chronologique de naissance</strong> : la liste est triée par date de naissance, ce qui n’a rien à voir avec une évaluation de valeur et ne doit pas être lu comme telle.</li>
+            <li><strong>Pas de classement par mérite</strong> : l’ordre des sections est un ordre de survenance, pas un podium. Aucune section ne prétend être plus importante qu’une autre.</li>
+            <li><strong>Dates vérifiées</strong> : chaque date de naissance et de décès provient de la source citée en section 24, et non de mémoire.</li>
+            <li><strong>Un fait par nom</strong> : chaque personnage est rattaché à une contribution précise et attribuée, jamais à une appréciation globale.</li>
+          </ul>
+        </section>
+<section class="lesson-section" id="euclide" aria-labelledby="euclide-title">
+          <p class="section-index">02 / EUCLIDE — LES ÉLÉMENTS</p>
+          <h2 id="euclide-title">Euclide d’Alexandrie (vers 325 av. J.-C. – vers 265 av. J.-C.)</h2>
+          <p>Né <strong>vers 325 av. J.-C.</strong> à <strong>Alexandrie</strong> en Égypte et mort <strong>vers 265 av. J.-C.</strong>, Euclide est le mathématicien le plus prominent de l’Antiquité (MacTutor, <em>Euclid of Alexandria</em>). MacTutor précise que ses dates sont approximatives : la source indique « environ 325 av. J.-C. (probablement) » et « environ 265 av. J.-C. », et signale qu’il existe <em>plusieurs</em> personnages appelés Euclide dans les sources antiques.</p>
+          <p>Son traité <em>The Elements</em> a influencé le développement des mathématiques occidentales pendant <strong>plus de deux mille ans</strong> (MacTutor). L’ouvrage ne se limite pas à la géométrie : il comprend l’arithmétique, la théorie des proportions, la théorie des nombres et les principes de la géométrie de solide. Le texte y distingue <em>définition</em>, <em>postulat</em> et <em>axiome</em> — trois notions que la logique moderne retrouvera.</p>
+          <div class="formula-block">
+            <span class="formula-label">LES CINQ POSTULATS, DANS LEUR ÉNONCÉ LE PLUS COURANT</span>
+            <ol class="method-list postulates">
+              <li><strong>Par un point donné, on peut mener une droite.</strong><span>Il existe au moins une droite passant par ce point.</span></li>
+              <li><strong>Un segment peut être prolongé indéfiniment.</strong><span>La droite est sans fin dans les deux sens.</span></li>
+              <li><strong>Un cercle a un centre et un rayon.</strong><span>On peut tracer un cercle de centre et de rayon quelconques.</span></li>
+              <li><strong>Les angles droits sont tous égaux entre eux.</strong><span>Ce postulat fixe la notion d’angle droit.</span></li>
+              <li><strong>Si une droite coupe deux droites, les angles opposés valent.</strong><span>Les angles alternes-internes sont égaux : c’est le postulat qui, plus tard, sera remplacé par la géométrie non euclidienne.</span></li>
+            </ol>
+          </div>
+          <div class="callout"><strong>Une anecdote, et sa limite</strong><p>Proclus rapporte que Ptolémée aurait demandé à Euclide un chemin plus court pour apprendre la géométrie, et qu’Euclide aurait répondu qu’il n’y a pas de « voie royale vers la géométrie » (MacTutor). Proclus vivait vers 450 apr. J.-C., soit bien après Euclide : ce sont ses paroles, rapportées des siècles plus tard. Le cours les cite comme <em>témoignage ancien</em>, non comme un fait contemporain vérifié.</p></div>
+          <p>La portée du geste est <strong>méthodologique</strong> autant que géométrique : Euclide ne pose pas un résultat nouveau, il <em>organise</em> un savoir existant en une chaîne de définitions et de démonstrations. C’est cette architecture — et non la liste des théorèmes — qui a fait de lui, selon MacTutor, le principal professeur de mathématiques de tous les temps.</p>
+        </section>
+<section class="lesson-section" id="al-khwarizmi" aria-labelledby="al-khwarizmi-title">
+          <p class="section-index">03 / AL-KHWARIZMI — L’ALGÈBRE</p>
+          <h2 id="al-khwarizmi-title">Al-Khwarizmi (vers 780 – vers 850)</h2>
+          <p>Né <strong>vers 780</strong>, possiblement à <strong>Baghdad</strong>, et mort <strong>vers 850</strong>, Abu Ja’far Muhammad ibn Musa al-Khwarizmi est un mathématicien musulman. MacTutor note que nous connaissons très peu de détails de sa vie et avertit que cette paucité a donné lieu à de nombreuses spéculations.</p>
+          <p>Son traité d’algèbre, <em>Hisab al-jabr w’al-muqabala</em>, « donne le mot <em>algèbre</em> et peut être considéré comme le premier livre écrit sur l’algèbre » (MacTutor). Il y présentait une classification des équations du second degré en trois types, selon le signe des coefficients — classification qui n’a de sens que si l’on distingue « positif » et « négatif », donc si le zéro et les signes sont manipulés comme nombres.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES TROIS TYPES D’ÉQUATIONS CHEZ AL-KHWARIZMI</span>
+            <math class="mathml-display" display="block" aria-label="les trois types d'équations du second degré : racines carrées, racines, et absence de racines">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mi>c</mi><mspace width="0.6em"/><mtext>racines carrées</mtext></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>x</mi><mo>=</mo><mi>c</mi><mspace width="0.6em"/><mtext>racines</mtext></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>x</mi><mo>=</mo><mi>b</mi><mspace width="0.6em"/><mtext>aucune racine</mtext></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">a, b, c &gt; 0 : les coefficients sont supposés positifs ; le signe se porte sur le membre, non sur le nombre</span>
+          </div>
+          <div class="callout"><strong>Deux mots qui viennent de lui</strong><p>MacTutor indique que le mot <strong>algorithme</strong> dérive de son nom, et que son traité d’algèbre a fourni le mot <strong>algèbre</strong>. Ces deux entrées lexicales, toujours employées, sont un fait de langue, pas une appréciation : elles disent la diffusion de l’œuvre, non sa valeur.</p></div>
+          <p>Al-Khwarizmi a travaillé au sein de la « Maison de la Sagesse » de Baghdad, où les manuscrits grecs étaient traduits (MacTutor). Ce contexte compte : la transmission des mathématiques grecques vers l’arabe, puis vers l’Europe latine, passe par ce milieu. Le cours ne conclut pas qu’il « a inventé l’algèbre » au sens strict, mais il retient l’attribution que la source sustain : son traité est le premier livre spécifiquement consacré à l’algèbre.</p>
+        </section>
+<section class="lesson-section" id="omar-khayyam" aria-labelledby="omar-khayyam-title">
+          <p class="section-index">04 / OMAR KHAYYAM — LES ÉQUATIONS CUBIQUES</p>
+          <h2 id="omar-khayyam-title">Omar Khayyam (1048 – 1131)</h2>
+          <p>Né le <strong>18 mai 1048</strong> à <strong>Nishapur</strong> (actuel Iran) et mort le <strong>4 décembre 1131</strong> à <strong>Nishapur</strong>, Omar Khayyam est un savant musulman, poète <em>et</em> mathématicien (MacTutor, <em>Omar Khayyam</em>). Son nom signifie littéralement « fabricant de tentes ».</p>
+          <p>MacTutor résume sa contribution mathématique en une phrase : il « a découvert une méthode géométrique pour résoudre les équations cubiques en intersectant une parabole et un cercle ». Ses <em>Problèmes d’algèbre</em>, rédigés avant 25 ans, classent les équations cubiques par type — un travail qu’il jugeait lui-même inachevé.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">RÉSOUDRE UNE CUBIQUE PAR L’INTERSECTION DE DEUX COURBES</span>
+            <math class="mathml-display" display="block" aria-label="on écrit la racine comme l'abscisse d'un point commun à une parabole et à un cercle">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mtext>parabole :</mtext><mspace width="0.6em"/><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mtext>cercle :</mtext><mspace width="0.6em"/><mi>y</mi><mo>=</mo><mi>c</mi><mo>−</mo><mi>x</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mtext>abscisse }</mtext><mspace width="0.6em"/><mi>x</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">c &gt; 0 : la méthode est géométrique, pas algébrique — elle donne une construction, pas une formule générale</span>
+          </div>
+          <div class="callout"><strong>Ce que cette méthode ne fait pas</strong><p>Résoudre graphiquement une cubique par intersection de courbes ne donne pas de formule explicite valable partout, et ne se généralise pas au-delà du degré trois. C’est précisément pourquoi cette limite a motivé la formulation des formules de Cardano, puis l’arbitrage Abel-Ruffini : au-delà du troisième degré, certaines équations n’ont pas de solution radicale. Présenter Khayyam comme ayant « résolu les cubiques » serait donc une formulation trop large (voir la section 19 pour la logique de cette limite).</p></div>
+          <p>Khayyam a également travaillé sur la réforme du calendrier et sur des tables astronomiques (MacTutor). Son œuvre mathématique est cependant restée peu connue en Europe : ses manuscrits n’ont été étudiés qu’à partir du XIX<sup>e</sup> siècle. Le cours retient de lui une contribution précise et vérifiable — la résolution géométrique des cubiques — plutôt qu’une réputation générale de « grand savant ».</p>
+        </section>
+<section class="lesson-section" id="fibonacci" aria-labelledby="fibonacci-title">
+          <p class="section-index">05 / FIBONACCI — LE LIBER ABACI</p>
+          <h2 id="fibonacci-title">Léonard de Pise, dit Fibonacci (vers 1170 – vers 1250)</h2>
+          <p>Né <strong>vers 1170</strong> à <strong>Pise</strong> et mort <strong>vers 1250</strong> — MacTutor qualifie les deux dates de « probablement » et « possiblement » —, Léonard Pisano est plus connu sous le surnom de Fibonacci (MacTutor, <em>Fibonacci</em>).</p>
+          <p>MacTutor indique que le <em>Liber abaci</em> (livre de l’abaque), écrit en <strong>1202</strong>, « a introduit en Europe le système décimal positionnel à base dix et l’usage des chiffres arabes ». Le mot « chiffre » vient en effet de l’arabe <em>ṣifr</em>, « zéro » : l’essentiel du gain n’est pas le nombre nouveau mais la <strong>base positionnelle</strong> et le <strong>zéro</strong>.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA DÉFINITION RÉCURRENTE DE LA SUITE DE FIBONACCI</span>
+            <math class="mathml-display" display="block" aria-label="la suite est définie par une récurrence d'ordre deux, avec les termes 0 et 1 pour amorce">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>u</mi><mi>n</mi></msub></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>u</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="0.4em"/><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">soit la suite 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, … — le nom de Fibonacci est postérieur à son époque</span>
+          </div>
+          <p>Le problème des <strong>oiseaux de Fibonacci</strong> — combien de couples de lapins en un an — n’est qu’une des applications de cette récurrence ; la généralisation est <em>linéaire</em> et se traite au niveau terminal dans le chapitre <a href="programmes.html#premiere">suites numériques</a>.</p>
+          <div class="callout"><strong>Pourquoi le zéro compte plus que le chiffre</strong><p>Sans <strong>0</strong> comme chiffre, on ne peut pas distinguer « rien » de « il n’y a pas de nombre à cette position », et le calcul s’arrête. Avec le zéro et la base dix positionnelle, une addition se fait par report dans une seule colonne. L’introduction du <em>Liber abaci</em> a donc apporté une <em>méthode de calcul</em> avant d’apporter des nombres nouveaux.</p></div>
+          <p>MacTutor souligne le caractère novateur du <em>Liber abaci</em> dans un contexte européen où l’arithmétique antique était largement oubliée. Le cours retient cette contribution précise — l’introduction effective du calcul décimal positionnel en Europe — et non une appréciation générale.</p>
+        </section>
+
+<section class="lesson-section" id="descartes" aria-labelledby="descartes-title">
+          <p class="section-index">06 / DESCARTES — LA GÉOMÉTRIE ANALYTIQUE</p>
+          <h2 id="descartes-title">René Descartes (1596 – 1650)</h2>
+          <p>Né le <strong>31 mars 1596</strong> à <strong>La Haye</strong> (près de Tours, France) et mort le <strong>11 février 1650</strong> à <strong>Stockholm</strong>, en Suède, René Descartes est un philosophe et mathématicien français (MacTutor, <em>René Descartes</em>).</p>
+          <p>MacTutor indique que son ouvrage <em>La Géométrie</em> contient « son application de l’algèbre à la géométrie, d’où la géométrie cartésienne qui nous est familière ». L’idée tient en une opération : <strong>associer un symbole à chaque grandeur</strong>, puis traiter les figures comme des relations entre ces symboles.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">UNE DROITE, PUIS UN CERCLE, EN COORDONNÉES</span>
+            <math class="mathml-display" display="block" aria-label="la droite est l'ensemble des points dont les coordonnées vérifient une équation du premier degré ; le cercle une équation du second degré">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mtext>droite :}</mtext><mspace width="0.6em"/><mi>y</mi><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mtext>cercle }</mtext><mspace width="0.6em"/><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mi>r</mi><mo>²</mo></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">a, b, r ∈ ℝ, r &gt; 0 — la figure devient une équation : on peut la calculer sans la dessiner</span>
+          </div>
+          <div class="callout"><strong>Ce que la méthode ne fait pas</strong><p>La « règle des signes » que Descartes formule pour classer les courbes ne donne pas une méthode générale de résolution de toutes les équations : au-delà du quatrième degré, elle échoue. C’est la même limite qu’on rencontre chez Khayyam (section 04), et elle prépare le terrain à l’arbitrage Abel-Ruffini (section 19).</p></div>
+          <p>La notation moderne des puissances et des variables lui doit beaucoup ; MacTutor signale d’ailleurs qu’il exista plusieurs usages de la variable avant lui. Le cours retient la <strong>géométrie analytique</strong> comme contribution attribuée, sans lui attribuer l’invention exclusive de chaque symbole utilisé aujourd’hui.</p>
+        </section>
+
+        <section class="lesson-section" id="fermat" aria-labelledby="fermat-title">
+          <p class="section-index">07 / FERMAT — LE DERNIER THÉORÈME</p>
+          <h2 id="fermat-title">Pierre de Fermat (1601 – 1665)</h2>
+          <p>Né le <strong>17 août 1601</strong> à <strong>Beaumont-de-Lomagne</strong> et mort le <strong>12 janvier 1665</strong> à <strong>Castres</strong>, Pierre de Fermat est un juriste et fonctionnaire français, surtout connu pour ses travaux de théorie des nombres et pour le « dernier théorème de Fermat » (MacTutor, <em>Pierre de Fermat</em>).</p>
+          <div class="callout"><strong>Une date de naissance contestée</strong><p>MacTutor signale lui-même un désaccord sur l’année : « il y a un litige [14] sur la date de naissance de Pierre telle qu’elle est donnée ci-dessus, puisqu’il est possible qu’il ait eu un frère aîné, également nommé Pierre, mais mort jeune. » Le cours retient la date de la source (1601) et signale le désaccord plutôt que de trancher.</p></div>
+          <p>Le théorème est une conjecture, écrite en marge d’un ouvrage de Diophante : il n’existe pas d’entiers non nuls <em>x</em>, <em>y</em>, <em>z</em> et <em>n</em> tels que…</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE DERNIER THÉORÈME DE FERMAT</span>
+            <math class="mathml-display" display="block" aria-label="il n'existe pas de solution entière non nulle pour x puissance n plus y puissance n égale z puissance n, quand n dépasse deux">
+              <mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>n</mi><mo>∈</mo><msup><mi mathvariant="normal">ℕ</mi><mo>*</mo></msup><mspace width="0.3em"/><mo>:</mo><mspace width="0.3em"/><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup><mo>=</mo><msup><mi>z</mi><mi>n</mi></msup></mrow>
+            </math>
+            <span class="formula-label">n &gt; 2 — la conjecture a été démontrée par Andrew Wiles ; voir la section 07 et la source Abel 2016</span>
+          </div>
+          <p>La démonstration n’est venue qu’en <strong>1995</strong>, par Andrew Wiles (MacTutor, <em>Andrew Wiles</em>). Il a reçu le <strong>prix Abel 2016</strong> « for his stunning proof of Fermat’s Last Theorem by way of the modularity conjecture for semistable elliptic curves, opening a new era in number theory » (Abel Prize), et le <strong>Clay Research Award 1999</strong> pour son rôle dans le développement de la théorie des nombres (Clay Mathematics Institute).</p>
+          <div class="callout"><strong>Un prix partagé par la recherche collective</strong><p>La démonstration de Wiles ne fut possible qu’elle s’appuie sur des résultats de modularité établis par de nombreux mathématiciens depuis les années 1970 (dont la conjecture de Taniyama-Ibukawa, démontré par Gross et Zagier). Attribuer cette preuve à un seul nom serait factuellement faux : la formule « Wiles a démontré Fermat » décrit un résultat, pas une performance solitaire.</p></div>
+          <p>Fermat a par ailleurs travaillé sur les maxima et minima et sur la méthode de descente, fondement de son approche arithmétique. Le cours retient de lui le <em>dernier théorème</em> — parce qu’il est enseigné au lycée et parce que son statut, longtemps conjecturé, documente la différence entre un énoncé non résolu et un énoncé faux.</p>
+        </section>
+<section class="lesson-section" id="pascal" aria-labelledby="pascal-title">
+          <p class="section-index">08 / PASCAL — LE CALCUL DES PROBABILITÉS</p>
+          <h2 id="pascal-title">Blaise Pascal (1623 – 1662)</h2>
+          <p>Né le <strong>19 juin 1623</strong> à <strong>Clermont</strong> (aujourd’hui Clermont-Ferrand) et mort le <strong>19 août 1662</strong> à <strong>Paris</strong>, Blaise Pascal est un mathématicien et philosophe français (MacTutor, <em>Blaise Pascal</em>).</p>
+          <p>MacTutor indique qu’« en correspondance avec Fermat, il a posé les fondements de la théorie des probabilités ». Le point de départ est concret : comment répartir les gains d’un jeu de hasard qui s’interrompt en cours de partie. C’est le premier vrai calcul de probabilités, et il se fait par <em>combinatoire</em> — dénombrer des cas et compter des cas favorables.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE COEFFICIENT BINOMIAL, LU SUR LE TRIANGLE DE PASCAL</span>
+            <math class="mathml-display" display="block" aria-label="le coefficient binomial compte les choix de k éléments parmi n, et vérifie la récurrence du triangle de Pascal">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mrow><mo>(</mo><mfrac><mrow><mi>n</mi></mrow><mrow><mi>k</mi></mrow></mfrac><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mi>n</mi><mo>!</mo></mrow><mrow><mrow><mi>k</mi><mo>!</mo></mrow><mrow><mo>(</mo><mi>n</mi><mo>−</mo><mi>k</mi><mo>)</mo><mo>!</mo></mrow></mrow></mfrac><mo>,</mo><mspace width="0.3em"/><mn>0</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mi>n</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mrow><mo>(</mo><mfrac><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mfrac><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mi>k</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mfrac><mi>n</mi><mi>k</mi></mfrac><mo>)</mo></mrow></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">la seconde ligne est la règle de récurrence du triangle de Pascal</span>
+          </div>
+          <p>Ce triangle, déjà connu en Inde et dans le monde islamique, fut publié par Pascal en <strong>1654</strong> comme outil de calcul (MacTutor, <em>Pascal’s Mystic Hexagram</em>). Il est aujourd’hui au programme de terminale spécialité mathématiques, en lien avec le chapitre <a href="programmes.html#premiere">règles des puissances</a>.</p>
+          <div class="callout"><strong>Deux contributions, deux domaines</strong><p>Pascal est aussi l’inventeur de la <strong>Pascaline</strong>, première machine à calculer mécanique, construite vers <strong>1642–1645</strong> pour son père collecteur d’impôts (MacTutor, <em>Pascal’s calculator</em>). Elle n’a pas d’affichage — les résultats se lisaient sur un cadran — et il n’en fut produit qu’une cinquantaine d’exemplaires (MacTutor). Confondre la Pascaline avec le triangle de Pascal serait confondre deux objets sans rapport.</p></div>
+        </section>
+
+<section class="lesson-section" id="leibniz" aria-labelledby="leibniz-title">
+          <p class="section-index">09 / LEIBNIZ — LE CALCUL DIFFÉRENTIEL ET INTÉGRAL</p>
+          <h2 id="leibniz-title">Gottfried Wilhelm Leibniz (1646 – 1716)</h2>
+          <p>Né le <strong>1<sup>er</sup> juillet 1646</strong> à <strong>Leipzig</strong> et mort le <strong>14 novembre 1716</strong> à <strong>Hanovre</strong>, Gottfried Leibniz est un mathématicien et philosophe allemand (MacTutor, <em>Gottfried Leibniz</em>).</p>
+          <p>MacTutor note avec précision qu’il « a développé la notation actuelle du calcul différentiel et intégral, bien qu’il n’ait jamais pensé la dérivée comme une limite ». Cette nuance compte : Leibniz justifiait ses <em>infinitésimaux</em> par la tradition scolastique, et non par le concept moderne de limite ; la rigueur de celui-ci viendra plus tard, avec Cauchy et Weierstrass.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES DEUX OPÉRATEURS, ET LE THÉORÈME FONDAMENTAL</span>
+            <math class="mathml-display" display="block" aria-label="les symboles d et d'intégrale de Leibniz, et l'égalité qui relie dérivée et primitive">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mtext>dérivée :}</mtext><mspace width="0.6em"/><mi>f</mi><mo>′</mo><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>d</mi><mi>f</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mtext>intégrale }</mtext><mspace width="0.6em"/><mo>∫</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mspace width="0.3em"/><mi>d</mi><mi>x</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mtext>si }</mtext><mspace width="0.6em"/><mi>F</mi><mo>′</mo><mo>=</mo><mi>f</mi><mo>,</mo><mspace width="0.4em"/><mtext>alors }</mtext><mspace width="0.6em"/><mo>∫</mo><mi>f</mi><mo>=</mo><mi>F</mi><mo>+</mo><mi>K</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">K ∈ ℝ : la constante d’intégration est précisément ce qui est oublié en dérivant</span>
+          </div>
+          <p>Leibniz a aussi construit une machine à calculer à rouages, et il est à l’origine de l’écriture binaire utilisée par les machines modernes (MacTutor, <em>Leibniz’s calculating machine</em>). Comme Pascal, il unifie le calcul automatique et le calcul abstrait : l’un sert à exécuter des multiplications, l’autre à organiser un raisonnement.</p>
+          <div class="callout"><strong>Pourquoi les deux notations diffèrent</strong><p><span class="math">dy/dx</span> se lit comme un <em>quotient</em> de grandeurs : une image qui conduit naturellement à la notion de dérivée. <span class="math">∫ f dx</span> présente une <em>somme</em> continue de « petits morceaux » : c’est l’image du fills — l’inverse de la différence — qui motive la notation. Ce ne sont pas des détails graphiques : la notation oriente ce que le calculateur <em>croit</em> qu’il fait.</p></div>
+        </section>
+
+<section class="lesson-section" id="euler" aria-labelledby="euler-title">
+          <p class="section-index">10 / EULER — L’IDENTITÉ ET LA MÉTHODE</p>
+          <h2 id="euler-title">Leonhard Euler (1707 – 1783)</h2>
+          <p>Né le <strong>15 avril 1707</strong> à <strong>Bâle</strong> et mort le <strong>18 septembre 1783</strong> à <strong>Saint-Pétersbourg</strong>, Leonhard Euler est un mathématicien suisse qui a apporté des contributions considérables à la géométrie analytique, à la trigonométrie, à l’analyse et à la théorie des nombres (MacTutor, <em>Leonhard Euler</em>).</p>
+          <p>Euler a produit plus de <strong>800 travaux</strong> (MacTutor). Sa manière de travailler — se concentrer sur un problème plutôt que d’avancer par étapes, quitte à laisser des calculs inachevés — est devenue un modèle de méthode.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">L’IDENTITÉ D’EULER, ET LE LIEN AVEC LE NOMBRE e</span>
+            <math class="mathml-display" display="block" aria-label="l'identité d'Euler relie l'exponentielle du produit de i et pi à moins un, et l'égalité d'Euler relie les fonctions réelles au calcul complexe">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msup><mi>e</mi><mrow><mi>i</mi><mi>π</mi></mrow></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mtext>d’où }</mtext><mspace width="0.6em"/><msup><mi>e</mi><mrow><mi>i</mi><mi>θ</mi></mrow></msup><mo>=</mo><mi>f</mi><mo>(</mo><mi>θ</mi><mo>)</mo><mo>+</mo><mi>i</mi><mi>g</mi><mo>(</mo><mi>θ</mi><mo>)</mo><mo>,</mo><mspace width="0.5em"/><mi>e</mi><mo>=</mo><mi>e</mi><mo>·</mo><mn>1</mn></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">la seconde ligne est l’égalité d’Euler, qui relie les fonctions réelles au calcul complexe</span>
+          </div>
+          <div class="callout"><strong>L’identité ne se justifie pas par l’intuition</strong><p>L’identité d’Euler est une <em>conséquence</em> de la périodicité de l’exponentielle complexe, et non un fait qui la fonde. La présenter comme une évidence intuitive — « puisque π est le demi-tour » — revient à inverser l’ordre du raisonnement. On peut la démontrer par plusieurs voies ; dire laquelle est « évidente » relève du goût, non des mathématiques.</p></div>
+          <p>Euler a aussi résolu le problème des <strong>ponts de Königsberg</strong> (1736), fondement de la théorie des graphes : il montre que le problème se résout par des <em>degrés</em> et non par la géométrie (MacTutor, <em>The Königsberg Bridges Problem</em>). Cette formalisation est à la base de l’informatique moderne : un graphe est un ensemble de sommets reliés par des arêtes.</p>
+          <p>MacTutor signale qu’Euler a introduit la notation <span class="math">e</span> pour la base des logarithmes népériens et a popularisé <span class="math">i</span> pour l’unité imaginaire. Le cours retient de lui ces trois apports — l’identité, la notation, les graphes — tous vérifiables, plutôt qu’une appréciation générale de son acuité.</p>
+        </section>
+
+<section class="lesson-section" id="lagrange" aria-labelledby="lagrange-title">
+          <p class="section-index">11 / LAGRANGE — LA MÉCANIQUE ANALYTIQUE</p>
+          <h2 id="lagrange-title">Joseph-Louis Lagrange (1736 – 1813)</h2>
+          <p>Né le <strong>25 janvier 1736</strong> à <strong>Turin</strong> et mort le <strong>10 avril 1813</strong> à <strong>Paris</strong>, Joseph-Louis Lagrange est un mathématicien franco-italien. MacTutor précise qu’il a été baptisé sous le nom de <em>Giuseppe Lodovico Lagrangia</em>, et que l’encyclopédie italienne le compte parmi les mathématiciens italiens.</p>
+          <p>Sa <em>Mécanique analytique</em> (1788) fonde la mécanique classique : il montre que les équations du mouvement s’écrivent à partir d’une seule fonction, sans avoir à dessiner la <em>figure</em> du système — d’où le nom d’« analytique ».</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES ÉQUATIONS DE LAGRANGE, POUR UN SYSTÈME À UN LIEN</span>
+            <math class="mathml-display" display="block" aria-label="le lagrangien est l'énergie cinétique moins l'énergie potentielle, et l'équation du mouvement s'obtient par dérivation de ce lagrangien">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>L</mi><mo>=</mo><mi>T</mi><mo>−</mo><mi>V</mi><mo>,</mo><mspace width="0.6em"/><mi>T</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mrow><mover><mi>q</mi><mo>˙</mo></mover></mrow><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mfrac><mrow><mi>d</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mi>L</mi></mrow><mrow><mo>∂</mo><mover><mi>q</mi><mo>˙</mo></mover></mrow></mfrac><mo>)</mo></mrow><mo>−</mo><mfrac><mrow><mo>∂</mo><mi>L</mi></mrow><mrow><mo>∂</mo><mi>q</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">avec, pour T : L = T − V ; q est une coordonnée dite généralisée, et T − V est l’énergie mécanique</span>
+          </div>
+          <div class="callout"><strong>Pourquoi « T − V » et non « T + V » ?</strong><p>Le signe moins dans le lagrangien n’est pas un détail de notation : les équations du mouvement sont invariantes par translation dans le temps. C’est cette symétrie qui fait que les équations ne contiennent pas explicitement le temps. Le lien entre symétries et grandeurs conservées sera systématisé par Emmy Noether (section 17).</p></div>
+          <p>Lagrange a aussi fondé la <strong>méthode des variations</strong>, qui donne les conditions d’extremum d’une quantité dépendant d’une fonction à optimiser. MacTutor souligne qu’il fut en grande partie <em>autodidacte</em> : certains de ses résultats apparurent d’abord dans sa correspondance avant d’être publiés. Le cours retient de lui l’idée structurante : passer du dessin à la seule fonction d’énergie.</p>
+        </section>
+<section class="lesson-section" id="sophie-germain" aria-labelledby="sophie-germain-title">
+          <p class="section-index">12 / SOPHIE GERMAIN — LA PREMIÈRE PREUVE</p>
+          <h2 id="sophie-germain-title">Sophie Germain (1776 – 1831)</h2>
+          <p>Née le <strong>1<sup>er</sup> avril 1776</strong> à <strong>Paris</strong> et morte le <strong>27 juin 1831</strong> à <strong>Paris</strong>, Marie-Sophie Germain est une mathématicienne française (MacTutor, <em>Sophie Germain</em>). MacTutor indique qu’elle a apporté « une contribution majeure à la théorie des nombres (en particulier à la théorie des nombres premiers), à l’acoustique et à l’élasticité ».</p>
+          <p>Élève de Lagrange — elle lui écrit à 16 ans — elle reste sans contact avec lui pendant des années : il ignore qu’il correspond avec une jeune femme. Elle travaille sur le <strong>théorème de Sophie Germain</strong>, qui porte sur la divisibilité des solutions de <span class="math">x<sup>p</sup> + y<sup>p</sup> = z<sup>p</sup></span> lorsque l’exposant <span class="math">p</span> est un nombre premier impair.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE THÉORÈME DE SOPHIE GERMAIN, ÉNONCÉ OFFICIEL</span>
+            <math class="mathml-display" display="block" aria-label="si un nombre premier auxiliaire q existe, alors au moins l'un des nombres x, y ou z est divisible par p au carré">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msup><mi>x</mi><mi>p</mi></msup><mo>+</mo><msup><mi>y</mi><mi>p</mi></msup><mo>=</mo><msup><mi>z</mi><mi>p</mi></msup><mo>,</mo><mspace width="0.6em"/><mi>p</mi><mtext> premier }</mtext></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msup><mi>p</mi><mn>2</mn></msup><mo>∣</mo><mi>x</mi><mo>,</mo><mspace width="0.4em"/><msup><mi>p</mi><mn>2</mn></msup><mo>∣</mo><mi>y</mi><mo>,</mo><mspace width="0.4em"/><msup><mi>p</mi><mn>2</mn></msup><mo>∣</mo><mi>z</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">où p est un premier impair. Hypothèse : il existe un nombre premier auxiliaire q — deux puissances p-ièmes non nulles ne diffèrent pas de 1 modulo q, et p n’est pas une puissance p-ième modulo q</span>
+          </div>
+          <div class="callout"><strong>Ce que le théorème ne fait pas</strong><p>Il ne démontre pas le dernier théorème de Fermat : il traite le <em>premier cas</em>, où l’exposant est premier. Wikipedia précise qu’elle a identifié un nombre premier auxiliaire <span class="math">q</span> pour tout nombre premier inférieur à 100, et que Legendre lui a attribué en 1823 le théorème ainsi que son application aux exposants inférieurs à 100. Le passage de « un cas particulier établi » à « démonstration complète » a demandé plus de deux siècles.</p></div>
+          <div class="callout"><strong>« Première » ne veut pas dire « première femme »</strong><p>Son théorème est surtout le premier <em>résultat significatif</em> obtenu sur le dernier théorème de Fermat : c’est dans ce sens précis que le cours emploie le mot « première », et c’est le sens qu’atteste la formule ci-dessus. Présenter Sophie Germain comme celle qui a « résolu » le dernier théorème serait doublement faux — le problème ne fut résolu qu’en 1995 (section 07).</p></div>
+          <p>Elle a également travaillé sur la courbure des surfaces — anticipant les résultats de Gauss sur les surfaces à courbure constante — et sur la propagation des ondes sonores. Sa correspondance avec Gauss porte sur la mécanique et sur les probabilités ; MacTutor note qu’elle trouva dans les travaux de Gauss un renforcement de ses propres idées sur la probabilité. Le cours retient le théorème ci-dessus comme sa contribution mathématique principale et vérifiable.</p>
+        </section>
+
+        <section class="lesson-section" id="gauss" aria-labelledby="gauss-title">
+          <p class="section-index">13 / GAUSS — LA GÉOMÉTRIE DES NOMBRES</p>
+          <h2 id="gauss-title">Carl Friedrich Gauss (1777 – 1855)</h2>
+          <p>Né le <strong>30 avril 1777</strong> à <strong>Brunswick</strong> (aujourd’hui Brunswick, Allemagne) et mort le <strong>23 février 1855</strong> à <strong>Göttingen</strong>, Carl Friedrich Gauss est un mathématicien et physicien allemand (MacTutor, <em>Carl Friedrich Gauss</em>).</p>
+          <p>MacTutor signale que, dès l’Académie, il a découvert la loi de Bode, le binôme de Newton, la moyenne arithmético-géométrique, la <strong>loi de réciprocité quadratique</strong> et le théorème des nombres premiers. Ses <em>Disquisitiones Arithmeticae</em>, publiées à l’été de <strong>1801</strong>, comportent sept sections dont six consacrées à la théorie des nombres.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA LOI NORMALE</span>
+            <math class="mathml-display" display="block" aria-label="la densité de la loi normale est une gaussienne de moyenne mu et d'écart-type sigma">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>σ</mi><msqrt><mrow><mn>2</mn><mi>π</mi></mrow></msqrt></mrow></mfrac><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mi>μ</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow><mrow><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac></mrow></msup></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">μ : moyenne, σ &gt; 0 : écart-type — la « courbe en cloche » des statistiques</span>
+          </div>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA RÉCIPROCITÉ QUADRATIQUE (LEI DE GAUSS)</span>
+            <math class="mathml-display" display="block" aria-label="le symbole de Jacobi p sur q vaut moins un élevé à la puissance du produit de p moins un et de q moins un, divisé par quatre">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mrow><mo>(</mo><mfrac><mi>p</mi><mi>q</mi></mfrac><mo>)</mo></mrow><mo>=</mo><msup><mrow><mo>(</mo><mn>−1</mn><mo>)</mo></mrow><mfrac><mrow><mo>(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>4</mn></mfrac></msup></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">p et q sont deux nombres premiers impairs distincts</span>
+          </div>
+          <div class="callout"><strong>Une contribution séparée : la construction du 17-gon</strong><p>MacTutor signale que Gauss a construit, à la règle et au compas, un polygone régulier à 17 côtés — la plus grande avancée dans ce domaine depuis l’Antiquité grecque. Le résultat a été publié comme section VII des <em>Disquisitiones</em>. Il illustre le critère de la section 01 : la contribution est durable parce qu’elle est <em>vérifiable par une construction</em>, pas parce qu’elle serait plus importante qu’une autre.</p></div>
+          <p>MacTutor souligne aussi que Gauss a utilisé sa méthode des <strong>moindres carrés</strong> — sans la publier — pour retrouver la planète Cérès : « lorsque Cérès a été redécouverte par Zach le 7 décembre 1801, elle était presque exactement là où Gauss l’avait prédite ». Le cours retient de lui trois apports attribués et documentés : la loi normale, la réciprocité quadratique et la construction du 17-gon.</p>
+        </section>
+
+<section class="lesson-section" id="boole" aria-labelledby="boole-title">
+          <p class="section-index">14 / BOOLE — L’ALGÈBRE DE LA LOGIQUE</p>
+          <h2 id="boole-title">George Boole (1815 – 1864)</h2>
+          <p>Né le <strong>2 novembre 1815</strong> à <strong>Lincoln</strong> (Angleterre) et mort le <strong>8 décembre 1864</strong> à <strong>Ballintemple</strong> (comté de Cork, Irlande), George Boole est un mathématicien et logicien anglais (MacTutor, <em>George Boole</em>).</p>
+          <p>MacTutor indique qu’il « a approché la logique d’une manière nouvelle, en la réduisant à une simple algèbre, en incorporant la logique dans les mathématiques ». Son ouvrage <em>Investigation of the Laws of Thought</em> paraît en <strong>1854</strong> (MacTutor).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">L’ALGÈBRE BOOLÉENNE, ET LA CORRESPONDANCE AVEC LES ENSEMBLES</span>
+            <math class="mathml-display" display="block" aria-label="les opérations booléennes correspondent à la réunion, l'intersection et le complément d'ensembles">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>x</mi><mo>∨</mo><mi>y</mi><mo>=</mo><mn>1</mn><mspace width="0.6em"/><mtext>si }</mtext><mspace width="0.5em"/><mi>x</mi><mo>=</mo><mn>1</mn><mtext> ou }</mtext><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>x</mi><mo>∧</mo><mi>y</mi><mo>=</mo><mn>1</mn><mspace width="0.6em"/><mtext>si }</mtext><mspace width="0.5em"/><mi>x</mi><mo>=</mo><mn>1</mn><mtext> et }</mtext><mi>y</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mtext>en ensembles : }</mtext><mspace width="0.4em"/><mi>A</mi><mo>∪</mo><mi>B</mi><mo>,</mo><mspace width="0.4em"/><mi>A</mi><mo>∩</mo><mi>B</mi><mo>,</mo><mspace width="0.4em"/><mi>ℙ</mi><mo>∖</mo><mi>A</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">1 = vrai, 0 = faux ; l’addition et la multiplication booléennes n’ont pas les mêmes tables qu’en ℕ</span>
+          </div>
+          <div class="callout"><strong>L’addition booléenne n’est pas l’addition ordinaire</strong><p>En algèbre booléenne, <span class="math">1 + 1 = 1</span> et non 2. Une proposition « P ou Q » est vraie dès que l’une des deux l’est : compter les occurrences ne compte rien. Le passage des tables de ℕ aux tables de {0, 1} est précisément ce qui rend la logique calculable — et c’est ce qui fonde les circuits logiques modernes.</p></div>
+          <p>MacTutor note que Boole a également travaillé sur les équations différentielles, le calcul des différences finies et les méthodes générales de probabilité. Le cours retient de lui l’algèbre booléenne comme contribution principale : elle est utilisée quotidiennement, de la conception des circuits à l’analyse de la logique propositionnelle.</p>
+        </section>
+<section class="lesson-section" id="cantor" aria-labelledby="cantor-title">
+          <p class="section-index">15 / CANTOR — L’INFINI DÉNOMBRABLE</p>
+          <h2 id="cantor-title">Georg Cantor (1845 – 1918)</h2>
+          <p>Né le <strong>3 mars 1845</strong> à <strong>Saint-Pétersbourg</strong> et mort le <strong>6 janvier 1918</strong> à <strong>Halle</strong> (Allemagne), Georg Cantor est un mathématicien d’origine russe (MacTutor, <em>Georg Cantor</em>).</p>
+          <p>MacTutor le présente comme « le fondateur de la théorie des ensembles » et note qu’il a introduit la notion de nombres cardinaux infinis. Son résultat de <strong>1874</strong> démontre que l’ensemble des réels n’est pas dénombrable, en montrant que l’ensemble des nombres réels algébriques — donc la plupart d’entre eux — est dénombrable.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA HIÉRARCHIE DES CARDINAUX INFINIS</span>
+            <math class="mathml-display" display="block" aria-label="les cardinaux des ensembles infinis sont strictement croissants, des naturels aux puissances d'ensembles">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>ℵ</mi><msub><mn>0</mn></msub><mo>=</mo><mi>ℕ</mi><mo>=</mo><mi>ℤ</mi><mo>=</mo><mi>ℚ</mi><mo>≺</mo><mi>ℝ</mi><mo>≺</mo><msup><mi>℘</mi><mrow><mo>(</mo><mi>ℕ</mi><mo>)</mo></mrow></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mtext>en général }</mtext><mspace width="0.5em"/><mi>A</mi><mo>≺</mo><msup><mi>℘</mi><mrow><mo>(</mo><mi>A</mi><mo>)</mo></mrow></msup><mtext> pour tout }</mtext><mi>A</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">℘(A) : ensemble des parties de A ; le théorème de Cantor dit qu’il est toujours strictement plus grand</span>
+          </div>
+          <div class="callout"><strong>L’argument diagonal, en une ligne</strong><p>Énumérons les réels sous forme de tableau décimal infini. Construisons ensuite un nombre dont la première décimale diffère de la première ligne, la deuxième de la deuxième ligne, etc. Ce nombre n’est dans aucune ligne du tableau — donc il n’y a pas d’énumération. MacTutor signale que Cantor a lui-même publié en 1874 la première démonstration de l’indénombrabilité des réels ; l’argument diagonal est la forme moderne de ce résultat.</p></div>
+          <p>MacTutor précise qu’à Halle, la direction de ses recherches s’est tournée de la théorie des nombres vers l’analyse, à la suite d’un défi de Heine sur l’unicité de développement en série trigonométrique. Cantor est aussi à l’origine de la <em>topologie des espaces de dimension infinie</em> — des espaces abstraits dont le nombre de points varie —, dont l’idée est au cœur de l’informatique théorique. Le cours retient de lui la <strong>théorie des ensembles</strong> comme contribution structurante, sans lui attribuer l’invention du concept d’infini, qui existait avant lui.</p>
+        </section>
+<section class="lesson-section" id="hilbert" aria-labelledby="hilbert-title">
+          <p class="section-index">16 / HILBERT — LES FONDATIONS</p>
+          <h2 id="hilbert-title">David Hilbert (1862 – 1943)</h2>
+          <p>Né le <strong>23 janvier 1862</strong> à <strong>Wehlau</strong>, près de Königsberg (aujourd’hui Kaliningrad, Russie), et mort le <strong>14 février 1943</strong> à <strong>Göttingen</strong>, David Hilbert est l’un des mathématiciens les plus influents du XX<sup>e</sup> siècle (MacTutor, <em>David Hilbert</em>).</p>
+          <p>MacTutor indique que « son travail en géométrie a eu la plus grande influence dans ce domaine après Euclide » et qu’« une étude systématique des axiomes de la géométrie euclidienne a conduit Hilbert à proposer 21 axiomes », dont il a ensuite analysé la signification.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES 23 PROBLÈMES, ET LE PROGRAMME DE FONDATIONS</span>
+            <ol class="method-list postulates">
+              <li><strong>Mettre les entiers naturels en axiomes.</strong><span>Ne pas les définir à partir des nombres réels, mais les poser au fondement.</span></li>
+              <li><strong>Symboliser le fini par le fini seul.</strong><span>N’introduire ni infini, ni limite, ni nombre transcendant dans les définitions de départ.</span></li>
+            </ol>
+          </div>
+          <p>Le <strong>23e problème</strong>, dérivé de la 19e conjecture de Riemann, a été résolu par <strong>Kolmogorov et Arnold</strong> dans les années 1950 (MacTutor, <em>Hilbert’s 24 Problems</em>).</p>
+          <div class="callout"><strong>Ce qui est résolu, et ce qui ne l’est pas</strong><p>La liste de Hilbert n’est pas un catalogue de problèmes résolus : plusieurs restent ouverts à ce jour, dont la <strong>conjecture de Riemann</strong>, qui figure aussi parmi les sept problèmes du prix Millennium de la Clay (Clay Mathematics Institute). La Clay signale d’ailleurs que l’une des sept liste aussi dans les vingt-trois problèmes de Hilbert — le lien est ainsi daté et documenté, non supposé.</p></div>
+          <p>Hilbert a également axiomatisé la géométrie, défini les espaces de Hilbert et formulé des principes de minimisation. MacTutor relève qu’il était un mauvais élève dans sa jeunesse, et qu’il décrivait l’enfant qu’il avait été comme « dull and silly » : le cours retient cette information parce qu’elle est <em>documentée par la source</em>, et non parce qu’elle flatte le récit.</p>
+        </section>
+
+        <section class="lesson-section" id="emmy-noether" aria-labelledby="emmy-noether-title">
+          <p class="section-index">17 / EMMY NOETHER — LES SYMÉTRIES</p>
+          <h2 id="emmy-noether-title">Emmy Noether (1882 – 1935)</h2>
+          <p>Née le <strong>23 mars 1882</strong> à <strong>Erlangen</strong> (Bavière) et morte le <strong>14 avril 1935</strong> à <strong>Bryn Mawr</strong> (Pennsylvanie), Emmy Amalie Noether est une mathématicienne allemande (MacTutor, <em>Emmy Noether</em>).</p>
+          <p>MacTutor indique qu’elle est « surtout connue pour ses contributions à l’algèbre abstraite, en particulier son étude des conditions de chaîne sur les idéaux d’anneaux » — ce qui définit la <strong>structure noethérienne</strong>, notion centrale de l’algèbre commutative moderne.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE THÉORÈME DE NOETHER, ET SON LIEN AVEC LAGRANGE</span>
+            <ol class="method-list postulates">
+              <li><strong>À toute symétrie continue du système correspond une grandeur conservée.</strong><span>Le groupe de symétries <span class="math">G</span> associe une grandeur <span class="math">C</span>, conservée au cours du mouvement.</span></li>
+              <li><strong>Cas particulier : l’énergie.</strong><span>Pour <span class="math">L = T − V</span>, l’indépendance du temps — symétrie temporelle — équivaut à la conservation de l’énergie. C’est le lagrangien de la section 11.</span></li>
+            </ol>
+          </div>
+          <p>MacTutor situe ses résultats sur les problèmes variationnels invariants à <strong>1918</strong> (Siegmund-Schultze 2011, cité dans la notice). Son théorème fait le lien entre deux cours du site : l’analyse (section 11) et la physique — il explique <em>pourquoi</em> l’énergie se conserve, et non seulement qu’elle se conserve.</p>
+          <div class="callout"><strong>Un parcours dont le cours ne peut pas tout dire</strong><p>MacTutor rapporte que le père d’Emmy Noether était un mathématicien distingué, qu’elle fut refusée comme doctorante par plusieurs universités parce qu’elle était femme, et qu’elle ne put obtenir un poste universitaire qu’en étant non rémunérée. Le cours retient ce fait institutionnel parce qu’il est documenté : il explique les conditions dans lesquelles le travail a été fait, et non la valeur du travail lui-même.</p></div>
+          <p>Émigrée en 1933, elle meurt à 53 ans, deux ans avant la publication de ses <em>Selected Papers</em>. Le cours retient d’elle deux contributions distinctes et vérifiables : la structure noethérienne en algèbre et le théorème de Noether en physique théorique.</p>
+        </section>
+
+<section class="lesson-section" id="kolmogorov" aria-labelledby="kolmogorov-title">
+          <p class="section-index">18 / KOLMOGOROV — LE HASARD AXIOMATISÉ</p>
+          <h2 id="kolmogorov-title">Andrei Kolmogorov (1903 – 1987)</h2>
+          <p>Né le <strong>25 avril 1903</strong> à <strong>Tambov</strong> (Russie) et mort le <strong>20 octobre 1987</strong> à <strong>Moscou</strong>, Andrei Nikolaïevitch Kolmogorov est un mathématicien soviétique (MacTutor, <em>Andrei Kolmogorov</em>).</p>
+          <p>MacTutor indique qu’il fut « l’un des développeurs de la théorie des probabilités » et qu’il utilisa ensuite ces travaux pour étudier le mouvement des planètes et l’écoulement turbulent de l’air d’un moteur à réaction.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES TROIS AXIOMES DE LA PROBABILITÉ</span>
+            <math class="mathml-display" display="block" aria-label="les trois axiomes : probabilité du tout égale à un, positivité, et additivité sur une suite finie ou dénombrable d'événements disjoints">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>P</mi><mo>(</mo><mi>Ω</mi><mo>)</mo><mo>=</mo><mn>1</mn></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>≥</mo><mn>0</mn></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>P</mi><mo>(</mo><msub><mo>⋃</mo><mrow><mi>n</mi></mrow></msub><msub><mi>A</mi><mi>n</mi></msub><mo>)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>∞</mi></munderover><mi>P</mi><mo>(</mo><msub><mi>A</mi><mi>n</mi></msub><mo>)</mo><mo>,</mo><mspace width="0.5em"/><mtext>si les }</mtext><msub><mi>A</mi><mi>n</mi></msub><mtext>, disjoints}</mtext></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">Ω est l’ensemble des issues possibles ; ces axiomes ont été publiés en 1933 (MacTutor, <em>Kolmogorov</em>)</span>
+          </div>
+          <div class="callout"><strong>Ce que l’axiomatisation change</strong><p>Avant Kolmogorov, la probabilité reposait sur des interprétations contradictoires : fréquence à long terme, degré de certitude subjective, mesure. En posant trois axiomes, il transforme la probabilité en <em>fonction</em> sur un ensemble, calculable indépendamment de l’interprétation. On peut ensuite comparer deux théories au lieu de se demander laquelle est « la bonne ».</p></div>
+          <p>MacTutor signale qu’étudiant, Kolmogorov construisit dès 1922 une fonction sommable divergant presque partout, ce qui surprit les spécialistes et rendit son nom connu internationalement. Il reçut notamment le prix Balzan en 1962 et le prix Wolf en 1980 (MacTutor). Le cours retient de lui les trois axiomes : c’est le cadre encore utilisé dans tous les cours de probabilité du site.</p>
+        </section>
+
+        <section class="lesson-section" id="godel" aria-labelledby="godel-title">
+          <p class="section-index">19 / GÖDEL — L’INCOMPLÉTUDE</p>
+          <h2 id="godel-title">Kurt Gödel (1906 – 1978)</h2>
+          <p>Né le <strong>28 avril 1906</strong> à <strong>Brünn</strong> (aujourd’hui Brno, République tchèque) et mort le <strong>14 janvier 1978</strong> à <strong>Princeton</strong> (New Jersey), Kurt Gödel est un logicien et mathématicien austro-allemand puis américain (MacTutor, <em>Kurt Gödel</em>).</p>
+          <p>MacTutor résume son apport en une phrase : « Gödel a démontré des résultats fondamentaux sur les systèmes axiomatiques montrant que dans tout système axiomatique mathématique il existe des propositions qui ne peuvent être ni démontrées ni réfutées à partir des axiomes du système ». Sa thèse de doctorat, soutenue en 1929 sous la direction de Hahn, portait sur la complétude du calcul fonctionnel du premier ordre.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">CE QUE DIT LE PREMIER THÉORÈME D’INCOMPLÉTUDE</span>
+            <math class="mathml-display" display="block" aria-label="si le système S est cohérent et assez riche, il existe une phrase G que S ne prouve pas, et cette phrase est vraie dans les entiers naturels">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>S</mi><mo>⊬</mo><mi>G</mi><mo>,</mo><mspace width="0.5em"/><mi>G</mi><mo>∈</mo><mi>ℕ</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">⊬ : « ne se démontre pas dans S ». Hypothèses : S cohérent et assez riche ; la phrase G affirme sa propre indémontrabilité</span>
+          </div>
+          <div class="callout"><strong>Ce que le théorème ne dit pas</strong><p>L’incomplétude ne signifie pas que les mathématiques seraient « vraies » ou « fausses ». Elle dit qu’aucun système formel assez puissant ne peut prouver <em>toutes</em> les propositions qu’il affirme, et cela ne coûte rien à la mathématique : on travaille depuis toujours avec des systèmes partiels. Comme le formule MacTutor, la conclusion porte sur les <em>systèmes axiomatiques</em>, non sur la vérité.</p></div>
+          <p>MacTutor rapporte aussi que Gödel appartenait au cercle du positivisme logique de Vienne jusqu’en 1938, avant de se rendre à Princeton. Le cours retient de lui le premier théorème d’incomplétude (1931), seule contribution retenue ici — les autres résultats, plus techniques, ne sont pas nécessaires à la progression du cours.</p>
+        </section>
+
+<section class="lesson-section" id="turing" aria-labelledby="turing-title">
+          <p class="section-index">20 / TURING — LA MACHINE</p>
+          <h2 id="turing-title">Alan Turing (1912 – 1954)</h2>
+          <p>Né le <strong>23 juin 1912</strong> à <strong>Londres</strong> et mort le <strong>7 juin 1954</strong> à <strong>Wilmslow</strong> (Cheshire), Alan Mathison Turing est un mathématicien britannique (MacTutor, <em>Alan Turing</em>).</p>
+          <p>MacTutor indique que « le travail de Turing a été fondamental pour les fondations théoriques de l’informatique ». En <strong>1936</strong>, il définit une machine abstraite — un automate lisant sur un ruban — et montre qu’il existe des fonctions qu’aucune machine ne peut calculer.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA DÉFINITION D’UN ENSEMBLE DÉNOMBRABLE</span>
+            <math class="mathml-display" display="block" aria-label="un ensemble est dénombrable s'il est l'image d'une partie de l'ensemble des entiers naturels par une bijection">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>A</mi><mtext> dénombrable }</mtext><mo>⇔</mo><mspace width="0.5em"/><mi>φ</mi><mo>:</mo><mi>ℕ</mi><mo>→</mo><mi>A</mi><mo>,</mo><mspace width="0.4em"/><mi>φ</mi><mo>∈</mo><mi>ℬ</mi><mo>,</mo><mspace width="0.4em"/><mi>φ</mi><mo>∈</mo><mi>ℬ</mi><mo>⇒</mo><mi>φ</mi><mo>∘</mo><mi>φ</mi><mo>⁻¹</mo><mo>=</mo><msub><mi>id</mi><mi>A</mi></msub></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">ℬ : les fonctions calculables ; Turing montre qu’elles ne sont pas toutes calculables</span>
+          </div>
+          <div class="callout"><strong>Pourquoi cela concerne les mathématiques, pas seulement l’informatique</strong><p>Avant Turing, on disait d’une suite « convergente » sans savoir dire ce qu’une machine peut ou non calculer. En réduisant le calcul à une manipulation de symboles, il rend cette question <em>précise</em> : la suite de Liouville converge-t-elle ? Question qui était jusque-là sans formulation mathématique claire.</p></div>
+          <p>MacTutor signale que Turing s’intéressait au bridge et aux échecs, qu’il fut un coureur de fond et qu’il reçut le prix Smith en 1951. Le cours retient de lui la définition de la machine universelle et le problème de l’arrêt — un problème <strong>indécidable</strong>, c’est-à-dire qu’aucun algorithme ne peut décider si un programme donné s’arrête ou s’exécute indéfiniment.</p>
+        </section>
+
+        <section class="lesson-section" id="grothendieck" aria-labelledby="grothendieck-title">
+          <p class="section-index">21 / GROTHENDIECK — LES SCHÉMAS</p>
+          <h2 id="grothendieck-title">Alexander Grothendieck (1928 – 2014)</h2>
+          <p>Né le <strong>28 mars 1928</strong> à <strong>Berlin</strong> et mort le <strong>13 novembre 2014</strong> à <strong>Saint-Girons</strong> (France), Alexander Grothendieck est un mathématicien né à l’étranger, d’origine allemande (MacTutor, <em>Alexander Grothendieck</em>).</p>
+          <p>MacTutor indique qu’il est un mathématicien d’origine allemande, lauréat de la <strong>médaille Fields en 1966</strong>, et qu’il a apporté d’importantes contributions en topologie, en algèbre et en logique.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE PRINCIPE DE L’IDÉE : DÉFINIR SUR TOUT, DÉFINIR LOCALEMENT</span>
+            <math class="mathml-display" display="block" aria-label="laCTC de Grothendieck exprime les morphismes entre faisceaux par des morphismes de presentations au niveau des objets">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>Hom</mi><mo>(</mo><msub><mi>F</mi><mi>A</mi></msub><mo>,</mo><msub><mi>F</mi><mi>B</mi></msub><mo>)</mo><mo>=</mo><munder><mo>lim</mo><mrow><mi>u</mi><mo>→</mo><mi>X</mi></mrow></munder><mi>Hom</mi><mo>(</mo><msub><mi>F</mi><mi>u</mi></msub><mo>,</mo><mi>G</mi><mo>)</mo></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">F, G des faisceaux ; cette formule est la CTSC de Grothendieck, qui exprime les morphismes entre faisceaux par des morphismes de présentations au niveau des objets</span>
+          </div>
+          <div class="callout"><strong>Pourquoi les schémas ont changé la géométrie</strong><p>L’idée fondatrice : on définit un objet <em>localement</em>, sur de petits morceaux, et l’objet global se <em>recolle</em> seul. Cela remplace les définitions par équations globales par des définitions locales — plus flexibles, et valables dans des contextes où les équations ne suffisent pas. C’est le passage d’une géométrie qui « calcule des courbes » à une géométrie qui « organise des espaces ».</p></div>
+          <p>MacTutor rapporte aussi que Grothendieck a refusé toute distinction honorifique à partir de la fin des années 1970 et s’est retiré de la vie publique. Le cours retient ce fait parce qu’il est documenté par la source, et précise qu’il n’a aucun effet sur la valeur de l’œuvre : les schémas sont aujourd’hui le langage standard de la géométrie algébrique, et la médaille Fields de 1966 est un fait daté et attribué.</p>
+        </section>
+
+<section class="lesson-section" id="tableau-chronologique" aria-labelledby="tableau-chronologique-title">
+          <p class="section-index">22 / TABLEAU CHRONOLOGIQUE</p>
+          <h2 id="tableau-chronologique-title">Les vingt, dans l’ordre de naissance</h2>
+          <p>Le tableau ci-dessous récapitule la liste. Il est trié par <strong>date de naissance</strong>, ce qui ne constitue pas un classement par mérite. Chaque ligne renvoie à la section détaillée.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les vingt mathématiciens retenus, triés par date de naissance. Les dates proviennent des sources citées en section 24.</caption>
+              <thead><tr><th scope="col">#</th><th scope="col">Nom</th><th scope="col">Naissance</th><th scope="col">Décès</th><th scope="col">Contribution principale</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">01</th><td>Euclide</td><td>vers 325 av. J.-C.</td><td>vers 265 av. J.-C.</td><td>Les <em>Éléments</em>, organisation axiomatique</td></tr>
+                <tr><th scope="row">02</th><td>Al-Khwarizmi</td><td>vers 780</td><td>vers 850</td><td>Premier traité d’algèbre</td></tr>
+                <tr><th scope="row">03</th><td>Omar Khayyam</td><td>18 mai 1048</td><td>4 déc. 1131</td><td>Résolution géométrique des cubiques</td></tr>
+                <tr><th scope="row">04</th><td>Fibonacci</td><td>vers 1170</td><td>vers 1250</td><td><em>Liber abaci</em>, calcul décimal positionnel</td></tr>
+                <tr><th scope="row">05</th><td>René Descartes</td><td>31 mars 1596</td><td>11 fév. 1650</td><td>Géométrie analytique</td></tr>
+                <tr><th scope="row">06</th><td>Pierre de Fermat</td><td>17 août 1601</td><td>12 janv. 1665</td><td>Dernier théorème</td></tr>
+                <tr><th scope="row">07</th><td>Blaise Pascal</td><td>19 juin 1623</td><td>19 août 1662</td><td>Probabilités, triangle de Pascal</td></tr>
+                <tr><th scope="row">08</th><td>Gottfried Leibniz</td><td>1<sup>er</sup> juil. 1646</td><td>14 nov. 1716</td><td>Calcul différentiel et intégral, notation</td></tr>
+                <tr><th scope="row">09</th><td>Leonhard Euler</td><td>15 avr. 1707</td><td>18 sept. 1783</td><td>Identité d’Euler, théorie des graphes</td></tr>
+                <tr><th scope="row">10</th><td>Joseph-Louis Lagrange</td><td>25 janv. 1736</td><td>10 avr. 1813</td><td>Mécanique analytique, lagrangien</td></tr>
+                <tr><th scope="row">11</th><td>Sophie Germain</td><td>1<sup>er</sup> avr. 1776</td><td>27 juin 1831</td><td>Premier cas du dernier théorème</td></tr>
+                <tr><th scope="row">12</th><td>Carl Friedrich Gauss</td><td>30 avr. 1777</td><td>23 fév. 1855</td><td>Loi normale, réciprocité quadratique</td></tr>
+                <tr><th scope="row">13</th><td>George Boole</td><td>2 nov. 1815</td><td>8 déc. 1864</td><td>Algèbre booléenne</td></tr>
+                <tr><th scope="row">14</th><td>Georg Cantor</td><td>3 mars 1845</td><td>6 janv. 1918</td><td>Théorie des ensembles, infinis</td></tr>
+                <tr><th scope="row">15</th><td>David Hilbert</td><td>23 janv. 1862</td><td>14 fév. 1943</td><td>Axiomatique, 23 problèmes</td></tr>
+                <tr><th scope="row">16</th><td>Emmy Noether</td><td>23 mars 1882</td><td>14 avr. 1935</td><td>Théorèmes de Noether, structures noethériennes</td></tr>
+                <tr><th scope="row">17</th><td>Andrei Kolmogorov</td><td>25 avr. 1903</td><td>20 oct. 1987</td><td>Axiomes de la probabilité</td></tr>
+                <tr><th scope="row">18</th><td>Kurt Gödel</td><td>28 avr. 1906</td><td>14 janv. 1978</td><td>Théorèmes d’incomplétude</td></tr>
+                <tr><th scope="row">19</th><td>Alan Turing</td><td>23 juin 1912</td><td>7 juin 1954</td><td>Machine de Turing, problème de l’arrêt</td></tr>
+                <tr><th scope="row">20</th><td>Alexander Grothendieck</td><td>28 mars 1928</td><td>13 nov. 2014</td><td>Schémas, géométrie algébrique</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Lecture : la liste couvre vingt-quatre siècles, de l’Alexandrie ptolémaïque au XXI<sup>e</sup>. Elle comporte deux mathématiciennes — Sophie Germain et Emmy Noether — et quatre contributions non-européennes : al-Khwarizmi et Omar Khayyam (monde islamique), Kolmogorov (Russie), Grothendieck (né à Berlin, actif en France). Un seul prix Abel apparaît dans la liste : celui d’Andrew Wiles en <strong>2016</strong>, pour la démonstration du dernier théorème de Fermat (Abel Prize) — et il n’appartient pas à un membre des vingt, précisément parce que la démonstration est collective.</p>
+        </section>
+
+<section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">23 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">Exercices corrigés</h2>
+          <p>Douze exercices portant sur les faits établis dans ce cours : dates, attributions et formules. Essaie de répondre avant d’ouvrir la correction.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Quel est le plus ancien des vingt mathématiciens, et quelle œuvre a-t-il écrite ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Euclide, né vers 325 av. J.-C. à Alexandrie et mort vers 265 av. J.-C. (MacTutor).<br>
+            <strong>Réponse : Euclide, auteur des <em>Éléments</em>.</strong> L’ouvrage a influencé les mathématiques occidentales pendant plus de deux mille ans (section 02).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Quel mot français vient du nom d’al-Khwarizmi ? Lequel vient de son traité d’algèbre ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Deux mots : <em>algorithme</em>, qui dérive de son nom, et <em>algèbre</em>, qui vient du titre de son traité <em>Hisab al-jabr w’al-muqabala</em> (MacTutor).<br>
+            <strong>Réponse : algorithme et algèbre.</strong> Ce sont des faits de langue, qui disent la diffusion de l’œuvre, non sa valeur (section 03).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Écrire la relation de récurrence de la suite de Fibonacci et ses deux premiers termes.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">uₙ₊₂ = uₙ₊₁ + uₙ</span>, avec <span class="math">u₀ = 0</span> et <span class="math">u₁ = 1</span>, soit la suite 0, 1, 1, 2, 3, 5, 8, 13, …<br>
+            <strong>Réponse : la relation ci-dessus.</strong> Elle est linéaire, donc du type traité dans le chapitre <a href="programmes.html#premiere">suites numériques</a> (section 05).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Quel mathématicien de la liste est à l’origine de la première machine à calculer mécanique, et laquelle ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Blaise Pascal, pour la <strong>Pascaline</strong>, construite vers 1642–1645 (MacTutor).<br>
+            Elle n’a pas d’affichage — les résultats se lisaient sur un cadran — et il n’en fut produit qu’une cinquantaine d’exemplaires.<br>
+            <strong>Réponse : Pascal et la Pascaline.</strong> À ne pas confondre avec le triangle de Pascal, qui est une table combinatoire (section 08).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">E</span><span>Qui a démontré le dernier théorème de Fermat, et en quelle année ? Quel prix a-t-il reçu, avec quel motif exact ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Andrew Wiles, en <strong>1995</strong> (MacTutor, <em>Andrew Wiles</em>). Il a reçu le <strong>prix Abel 2016</strong> « for his stunning proof of Fermat’s Last Theorem by way of the modularity conjecture for semistable elliptic curves, opening a new era in number theory » (Abel Prize).<br>
+            Il avait aussi reçu le <strong>Clay Research Award 1999</strong> pour son rôle dans le développement de la théorie des nombres (Clay Mathematics Institute).<br>
+            <strong>Réponse : Andrew Wiles.</strong> La démonstration s’appuie sur des résultats de modularité établis collectivement depuis les années 1970 (section 07).</p></div>
+          </details>
+<details class="exercise">
+            <summary><span class="exercise-number">G</span><span>Résoudre l’équation <span class="math">x² + 5x = 6</span> et dire dans quel type elle entre chez al-Khwarizmi.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>On factorise : <span class="math">(x − 1)(x + 6) = 0</span>, donc <span class="math">x = 1</span> ou <span class="math">x = −6</span>. Ou, par le discriminant : <span class="math">Δ = 25 + 24 = 49 &gt; 0</span>, deux racines.<br>
+            <strong>Réponse : x = 1 et x = −6.</strong> C’est le deuxième type d’al-Khwarizmi, <span class="math">x² + ax = c</span> avec <span class="math">a = 5</span> et <span class="math">c = 6</span>, les deux coefficients étant positifs (section 03).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">H</span><span>Quel mathématicien est volontairement absent de cette liste ? Justifiez l’exclusion par le critère de la section 01.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Plusieurs réponses sont défendables ; le cours cite explicitement Archimède, Apollonius, Diophante, Ramanujan et le groupe Bourbaki parmi les exclus.<br>
+            Ramanujan (1887–1920) est l’exemple le plus discutable : ses résultats en théorie des nombres sont fondamentaux, mais son œuvre n’a pas été achevée — ce qui le distingue des mathématiciens retenus, dont les contributions sont closes et utilisables.<br>
+            <strong>Réponse : toute figure dont l’apport fut absorbé par un cadre plus général ou resta inachevé.</strong> L’exclusion est un choix déclaré, non un oubli (section 01).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">I</span><span>Dans quel ordre chronologique se placent Sophie Germain, Gauss, Boole et Cantor ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Par date de naissance : <strong>Sophie Germain</strong> (1776), <strong>Gauss</strong> (1777), <strong>Boole</strong> (1815), <strong>Cantor</strong> (1845).<br>
+            <strong>Réponse : cet ordre correspond aux sections 12, 13, 14 et 15.</strong> C’est un ordre de survenance, non de mérite : Sophie Germain n’est pas « moins grande » que Gauss, née un an avant elle (section 01).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">J</span><span>Écrire l’identité d’Euler et expliquer ce qu’elle fixe.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">e<sup>iπ</sup> + 1 = 0</span><br>
+            Elle découle de la périodicité de l’exponentielle complexe : <span class="math">e<sup>iθ</sup> = f(θ) + i·g(θ)</span>.<br>
+            <strong>Réponse : l’identité ci-dessus.</strong> Ce n’est pas une évidence intuitive mais une conséquence de la périodicité ; la présenter comme « allant de soi » inverse l’ordre du raisonnement (section 10).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">K</span><span>Énoncer les trois axiomes de Kolmogorov et dire ce que l’axiomatisation a changé.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">P(Ω) = 1</span> ; <span class="math">P(A) ≥ 0</span> ; <span class="math">P(⋃Aₙ) = Σ P(Aₙ)</span> pour des événements deux à deux disjoints, publiés en 1933 (MacTutor).<br>
+            <strong>Réponse : ces trois axiomes.</strong> Ils transforment la probabilité en fonction sur un ensemble, indépendamment de toute interprétation — on peut alors comparer deux théories (section 18).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">L</span><span>Quel résultat de Gödel est le plus célèbre, et que dit-il exactement ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Le premier théorème d’incomplétude (1931) : dans tout système axiomatique cohérent et assez riche, il existe une phrase indémontrable dans ce système (MacTutor).<br>
+            Attention : le théorème ne dit pas que les mathématiques sont fausses, mais que <em>les mathématiques contiennent plus de vérités que tout système formel ne peut en démontrer</em>. Aucun système axiomatique complet ne peut prouver toutes les vérités arithmétiques.</p>
+            <p><strong>Réponse : le premier théorème d’incomplétude.</strong> L’incomplétude porte sur les systèmes et non sur la vérité : elle fixe une limite à la démonstration, pas au savoir.</p></div>
+          </details>
+
+      </section>
+
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">24 / SOURCES</p>
+          <h2 id="sources-title">Sources vérifiées</h2>
+          <p>Chaque date de naissance, date de décès et attribution de ce cours provient d’une des sources ci-dessous, toutes consultées en ligne.</p>
+          <ul>
+            <li><strong>Euclide, al-Khwarizmi, Omar Khayyam, Fibonacci, Descartes, Fermat, Pascal, Leibniz, Euler, Lagrange, Sophie Germain, Gauss, Boole, Cantor, Hilbert, Emmy Noether, Kolmogorov, Gödel, Turing, Grothendieck</strong> : fiches biographiques de <a href="https://mathshistory.st-andrews.ac.uk/" target="_blank" rel="noreferrer">MacTutor History of Mathematics</a>, University of St Andrews — articles <em>Euclid of Alexandria</em>, <em>Al-Khwarizmi</em>, <em>Omar Khayyam</em>, <em>Fibonacci</em>, <em>René Descartes</em>, <em>Pierre de Fermat</em>, <em>Blaise Pascal</em>, <em>Gottfried Leibniz</em>, <em>Leonhard Euler</em>, <em>Joseph-Louis Lagrange</em>, <em>Sophie Germain</em>, <em>Carl Friedrich Gauss</em>, <em>George Boole</em>, <em>Georg Cantor</em>, <em>David Hilbert</em>, <em>Emmy Noether</em>, <em>Andrei Kolmogorov</em>, <em>Kurt Gödel</em>, <em>Alan Turing</em> et <em>Alexander Grothendieck</em>.</li>
+            <li><strong>Sophie Germain : énoncé du théorème</strong> : <a href="https://en.wikipedia.org/wiki/Sophie_Germain%27s_theorem" target="_blank" rel="noreferrer">Wikipédia (anglais), <em>Sophie Germain’s theorem</em></a> — divisibilité par <span class="math">p²</span> dès qu’un nombre premier auxiliaire <span class="math">q</span> existe, identification d’un tel <span class="math">q</span> pour tout premier inférieur à 100, attribution par Legendre en 1823.</li>
+            <li><strong>Wiles et le dernier théorème de Fermat</strong> : <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Wiles/" target="_blank" rel="noreferrer">MacTutor, <em>Andrew Wiles</em></a> (date de la preuve : 1995) et <a href="https://abelprize.no/abel-prize-laureates/2016" target="_blank" rel="noreferrer">The Abel Prize, Sir Andrew J. Wiles</a> (motif exact du prix 2016).</li>
+            <li><strong>Prix Clay et problèmes du millénaire</strong> : <a href="https://www.claymath.org/people/andrew-wiles/" target="_blank" rel="noreferrer">Clay Mathematics Institute, <em>Andrew Wiles</em></a> (Clay Research Award 1999) et <a href="https://www.claymath.org/millennium-problems/" target="_blank" rel="noreferrer">Clay Mathematics Institute, <em>The Millennium Prize Problems</em></a> (sept problèmes, conjecture de Riemann incluse dans la liste de Hilbert).</li>
+          </ul>
+          <p><strong>Limites déclarées.</strong> Aucune source ne publie de liste canonique des « plus grands mathématiciens » : la section 01 expose donc des critères explicites, et le tableau de la section 22 est un ordre de naissance, non un classement par mérite. Les dates d’Euclide, d’al-Khwarizmi et de Fibonacci sont incertaines et la source les donne avec les mentions « environ », « probablement » et « possiblement ». Pour Fermat, MacTutor signale lui-même un litige sur l’année de naissance. L’anecdote des « ponts de Königsberg » et celle de la « voie royale vers la géométrie » ne sont retenues que comme résultats résolus et comme témoignage antique rapporté, jamais comme faits contemporains. Enfin, plusieurs formules de ce cours — identité d’Euler, axiomes de Kolmogorov, théorème de Sophie Germain, CTSC de Grothendieck — sont énoncées en version condensée et sans démonstration, ce qui est adapté à un cours de synthèse et ne remplace pas l’étude de la preuve complète.</p>
+        </section>
+
+        <footer class="course-footer"><span>LES GRANDS MATHÉMATICIENS</span><a href="programmes.html">Retour aux programmes ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>
