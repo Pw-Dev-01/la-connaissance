@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi consacré aux vingt plus grands physiciens de l’histoire, classés par ordre chronologique de naissance : Archimède, Ibn al-Haytham, Copernic, Galilée, Newton, Volta, Ampère, Faraday, Joule, Maxwell, Hertz, Marie Curie, Lise Meitner, Einstein, Bohr, Schrödinger, Lemaître, Heisenberg, Dirac et Feynman. Pour chacun : dates vérifiées, domaine, contribution majeure et lien avec la physique actuelle, avec équations en MathML et sources vérifiées.">
+    <title>Les grands physiciens | Cours de physique</title>
+    <!-- Format identique aux autres cours approfondis de physique. Règle du site :
+         la liste des chapitres (menu gauche) n’est pas numérotée, les
+         sous-rubriques de la page le sont. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte vingt-quatre entrées de navigation : la barre latérale
+         devient défilable quand la hauteur de l’écran ne suffit plus à les
+         afficher. Sous 700 px, la mise en page partagée la transforme déjà en
+         bandeau horizontal. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+      /* Même traitement que les autres cours approfondis : le lien parent et
+         les entrées du domaine s’affichent en gris clair (var(--muted),
+         #67716a — contraste AA sur fond papier). La bordure corail signale
+         toujours le chapitre courant au survol ou en cours de lecture. */
+      .course-sidebar > .course-link span,
+      .course-list .course-link span {
+        color: var(--muted);
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+        <span class="wordmark-mark" aria-hidden="true">φ</span>
+        <span>LE COURS DE PHYSIQUE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche des grands physiciens du cours de physique">
+          <!-- Liste des chapitres du domaine, sans numérotation -->
+          <a class="course-link" href="index.html#grands-physiciens"><span>Les grands physiciens</span></a>
+          <a class="course-link" href="cours.html?id=unites-dimensions"><span>Unités et analyse dimensionnelle</span></a>
+          <a class="course-link" href="cours.html?id=incertitudes"><span>Incertitudes et chiffres significatifs</span></a>
+          <a class="course-link" href="cours.html?id=experimentation-modelisation"><span>Expérimentation et modélisation</span></a>
+          <a class="course-link" href="constantes-physiques-approfondie.html"><span>Les 20 principales constantes</span></a>
+          <a class="course-link is-current" href="grands-physiciens-approfondie.html" aria-current="page"><span>Les grands physiciens</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours sur les grands physiciens">
+          <a href="#methode-selection">01 <span>Comment établir une telle liste ?</span></a>
+          <a href="#archimede">02 <span>Archimède — statique et hydrostatique</span></a>
+          <a href="#ibn-al-haytham">03 <span>Ibn al-Haytham — l’optique expérimentale</span></a>
+          <a href="#copernic">04 <span>Copernic — l’héliocentrisme</span></a>
+          <a href="#galilee">05 <span>Galilée — la mécanique mesurée</span></a>
+          <a href="#newton">06 <span>Newton — mouvement et gravitation</span></a>
+          <a href="#volta">07 <span>Volta — la pile électrique</span></a>
+          <a href="#ampere">08 <span>Ampère — l’électrodynamique</span></a>
+          <a href="#faraday">09 <span>Faraday — le champ et l’induction</span></a>
+          <a href="#joule">10 <span>Joule — l’énergie et la chaleur</span></a>
+          <a href="#maxwell">11 <span>Maxwell — le champ électromagnétique</span></a>
+          <a href="#hertz">12 <span>Hertz — les ondes et l’effet photoélectrique</span></a>
+          <a href="#marie-curie">13 <span>Marie Curie — la radioactivité</span></a>
+          <a href="#lise-meitner">14 <span>Lise Meitner — la fission expliquée</span></a>
+          <a href="#einstein">15 <span>Einstein — quanta et relativité</span></a>
+          <a href="#bohr">16 <span>Bohr — la quantification de l’atome</span></a>
+          <a href="#schrodinger">17 <span>Schrödinger — la mécanique ondulatoire</span></a>
+          <a href="#lemaitre">18 <span>Lemaître — l’expansion de l’Univers</span></a>
+          <a href="#heisenberg">19 <span>Heisenberg — l’incertitude</span></a>
+          <a href="#dirac">20 <span>Dirac — le positron</span></a>
+          <a href="#feynman">21 <span>Feynman — les diagrammes</span></a>
+          <a href="#tableau-chronologique">22 <span>Tableau chronologique</span></a>
+          <a href="#exercices">23 <span>S’entraîner</span></a>
+          <a href="#sources">24 <span>Sources</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">φ</span>
+          <p>Une idée directrice : aucune liste n’est neutre. Celle-ci est déclarée, ses critères sont explicités, et chaque nom est rattaché à une contribution vérifiable.</p>
+        </div>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> LES GRANDS PHYSIICIENS · COURS APPROFONDI</p>
+          <h1>Les grands<br><span>physiciens</span></h1>
+          <p class="course-intro">De Siracuse au XX<sup>e</sup> siècle, la physique s’est bâtie par un petit nombre de chercheurs. Ce cours les présente dans l’ordre chronologique de leur naissance : Archimède et la statique, Ibn al-Haytham et l’optique mesurée, Copernic et le mouvement de la Terre, Galilée et la chute, Newton et la gravitation universelle, Volta et la pile, Ampère et Faraday et l’électrodynamique, Joule et l’énergie, Maxwell et Hertz et l’onde électromagnétique, Marie Curie et la radioactivité, Lise Meitner et la fission, puis Einstein, Bohr, Schrödinger, Lemaître, Heisenberg, Dirac et Feynman. Pour chacun, les dates vérifiées, le domaine, la contribution précise et le lien avec la physique d’aujourd’hui. La première section expose la méthode de sélection : aucun classement n’est naturel, et c’est précisément pourquoi il faut en déclarer les critères.</p>
+          <div class="course-meta"><span>COURS COMPLET</span><span>24 SECTIONS · EXERCICES</span><span>SOURCES VÉRIFIÉES</span></div>
+        </header>
+
+<section class="lesson-section" id="methode-selection" aria-labelledby="methode-selection-title">
+          <p class="section-index">01 / MÉTHODE DE SÉLECTION</p>
+          <h2 id="methode-selection-title">Comment peut-on classer des physiciens ?</h2>
+          <p>Il n’existe pas de liste canonique des « plus grands physiciens ». Aucune académie, aucun manuel de référence n’en publie une : un tel classement engage un jugement de <em>valeur</em>, non un fait, et il dépend de ce qu’on entend par « grand ». Présenter un classement comme allant de soi serait donc une affirmation non sourcée.</p>
+          <p>Ce cours assume l’opération : il déclare les critères, et il les applique de façon vérifiable.</p>
+          <ol class="method-list">
+            <li><strong>Une contribution durable et formulable.</strong><span>Le candidat doit avoir produit un résultat que la physique actuelle utilise encore, exprimable en équation ou en loi. Ce critère écarte ceux dont l’apport fut ensuite remplacé par une théorie plus générale.</span></li>
+            <li><strong>Une innovation conceptuelle, pas seulement technique.</strong><span>Il ne suffit pas de mieux mesurer : le personnage retenu doit avoir changé la <em>façon de poser</em> le problème — un concept, un principe ou un formalisme nouveau.</span></li>
+            <li><strong>Un rôle de chef de file.</strong><span>Le personnage a dirigé une école ou un laboratoire qui a formé d’autres chercheurs. Ce critère valorise la constitution d’un domaine, pas seulement un résultat isolé.</span></li>
+            <li><strong>Une présence dans le lectorat francophone.</strong><span>La liste privilégie les travaux décrits dans les manuels du site : c’est une contrainte éditoriale assumée, qui explique par exemple la présence de Volta ou de Joule.</span></li>
+          </ol>
+          <div class="callout"><strong>Ce que ce critère exclut, et pourquoi c’est un choix</strong><p>La liste ne comporte ni Ptolémée, ni Kepler, ni Hooke, ni Gauss. Ce sont des travaux fondamentaux — mais dont les résultats ont été progressivement intégrés dans des lois plus générales. Écarter Kepler alors qu’on retient Newton est discutable, et c’est discutable <em>explicitement</em> : c’est l’objet de la présente section.</p></div>
+          <h3>Les règles effectivement appliquées</h3>
+          <ul class="mistake-list">
+            <li><strong>Ordre chronologique de naissance</strong> : la liste est triée par date de naissance, ce qui n’a rien à voir avec une évaluation de valeur et ne doit pas être lu comme telle.</li>
+            <li><strong>Pas de classement par mérite</strong> : l’ordre des sections est un ordre de survenance, pas un podium. Aucune section ne prétend être plus importante qu’une autre.</li>
+            <li><strong>Dates vérifiées</strong> : chaque date de naissance et de décès provient d’une source citée en section 24, et non de mémoire.</li>
+            <li><strong>Un fait par nom</strong> : chaque personnage est rattaché à une contribution précise et attribuée, jamais à une appréciation globale.</li>
+          </ul>
+        </section>
+
+        <section class="lesson-section" id="archimede" aria-labelledby="archimede-title">
+          <p class="section-index">02 / ARCHIMÈDE — STATIQUE ET HYDROSTATIQUE</p>
+          <h2 id="archimede-title">Archimède (287–212 av. J.-C.)</h2>
+          <p>Né à <strong>Syracuse</strong>, en Sicile, en 287 av. J.-C. et mort dans la même ville en 212 av. J.-C., Archimède est décrit par MacTutor comme « le plus grand mathématicien de son époque ». Il doit sa réputation à ses travaux de géométrie et à ses méthodes, qui anticipèrent le calcul intégral ; c’est son travail de <em>physique</em> qui nous intéresse ici (MacTutor, <em>Archimedes of Syracuse</em>).</p>
+          <p>Sa <strong>statique</strong> est le premier traitement mathématique de l’équilibre des corps : il y déduit un principe général là où ses contemporains donnaient des résultats isolés. Sa formulation reste la base de l’analyse des moments de force et de l’équilibre d’un solide (OpenStax, vol. 1, § 5.7 <em>Drawing Free-Body Diagrams</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE PRINCIPE DES LEVIERS</span>
+            <math class="mathml-display" display="block" aria-label="le moment d'une force vaut la force multipliée par le bras de levier ; à l'équilibre la somme des couples est nulle">
+              <mrow><msub><mi>M</mi><mi>F</mi></msub><mo>=</mo><mi>F</mi><mo>·</mo><mi>d</mi><mo>,</mo><mspace width="0.3em"/><mo>et</mo><mspace width="0.3em"/><munder><mo>∑</mo><mtext>équilibre</mtext></munder><msub><mover><mi>τ</mi><mo>→</mo></mover><mi>k</mi></msub><mo>=</mo><mover><mn>0</mn><mo>→</mo></mover></mrow>
+            </math>
+            <span class="formula-label">d : distance entre l’axe de rotation et la droite d’action de la force ; le levier est l’instrument qui découple ces deux longueurs</span>
+          </div>
+          <p>Le <strong>principe d’Archimède</strong> énonce qu’un corps immergé dans un fluide subit une poussée verticale égale au poids du fluide déplacé. Il fonde toute l’hydrostique et reste la base du calcul de la poussée sur un solide immergé (OpenStax, vol. 2, § 13.1 <em>Fluid Statics</em>).</p>
+          <div class="callout"><strong>Archimède et le démonstratif : ce que disent les sources</strong><p>MacTutor rapporte que Plutarque mentionne les machines de guerre d’Archimède lors du siège de Syracuse de 212 av. J.-C. — mais il ne rapporte <em>pas</em> l’épisode du bain, ni un quelconque « Eureka ! ». MacTutor précise par ailleurs que la visite d’Égypte et l’invention de la <strong>vis d’Archimède</strong>, pompe à vis encore employée de nos jours, sont « rapportées par certains auteurs » : c’est une tradition, non un fait établi. Exiger ce degré de prudence est appliquer au récit la méthode du personnage lui-même.</p></div>
+        </section>
+
+        <section class="lesson-section" id="ibn-al-haytham" aria-labelledby="ibn-al-haytham-title">
+          <p class="section-index">03 / IBN AL-HAYTHAM — L’OPTIQUE EXPÉRIMENTALE</p>
+          <h2 id="ibn-al-haytham-title">Ibn al-Haytham, dit Alhazen (v. 965 – v. 1040)</h2>
+          <p>Physicien, mathématicien et astronome, Ibn al-Haytham est né à <strong>Basra</strong> vers 965 et mort au <strong>Caire</strong> vers 1040 (Wikipédia, <em>Ibn al-Haytham</em>). Ses dates sont incertaines : le site de référence les donne toutes deux avec la mention « vers », et le cours les reprend telles quelles plutôt que de les fixer artificiellement.</p>
+          <p>Son <em>Livre de l’optique</em> (<em>Kitab al-Manazir</em>) est le premier traité systématique de la discipline. Il y traite de l’optique géométrique — propagation rectiligne, loi de la réflexion, réfraction — mais il y ajoute ce qui fait sa valeur : une <strong>démarche expérimentale</strong>. Alhazen impose de contrôler chaque hypothèse par l’observation, et son « problème d’Alhazen » (le point d’où un rayon solaire entre dans une chambre sombre) reste un exercice de référence en optique.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES DEUX LOIS FONDAMENTALES DE L’OPTIQUE GÉOMÉTRIQUE</span>
+            <math class="mathml-display" display="block" aria-label="loi de la réflexion : angle d'incidence égal à l'angle de réflexion ; loi de Snell-Descartes : n1 sin i égale n2 sin r">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>i</mi><mi>r</mi></msub><mo>=</mo><msub><mi>r</mi><mi>r</mi></msub></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>n</mi><mn>1</mn></msub><mi>sin</mi><mi>i</mi><mo>=</mo><msub><mi>n</mi><mn>2</mn></msub><mi>sin</mi><mi>r</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">OpenStax, vol. 2, § 23.1 et § 23.2 : la première est celle d’Alhazen, la seconde est celle de Snell-Descartes, formulée indépendamment au XVII<sup>e</sup> siècle</span>
+          </div>
+          <div class="callout"><strong>Reconnaissances officielles, et ce qu’elles ne prouvent pas</strong><p>Wikipédia rapporte que l’UNESCO a consacré l’année 2015 au millénaire de ses travaux sur l’optique, et que le cratère lunaire Alhazen comme l’astéroïde 59239 Alhazen portent son nom. Ce sont des distinctions honorifiques, non des arguments scientifiques. L’argument scientifique est ailleurs : la méthode de validation expérimentale qu’il a appliquée à l’optique est devenue la norme de toute la physique moderne (Wikipédia, <em>Ibn al-Haytham</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="copernic" aria-labelledby="copernic-title">
+          <p class="section-index">04 / COPERNIC — L’HÉLIOCENTRISME</p>
+          <h2 id="copernic-title">Nicolas Copernic (1473 – 1543)</h2>
+          <p>Né le <strong>19 février 1473</strong> à <strong>Toruń</strong> et mort le <strong>24 mai 1543</strong> à <strong>Frauenburg</strong> (aujourd’hui Frombork), en Pologne, Nicolas Copernic est un astronome et mathématicien (MacTutor, <em>Nicolaus Copernicus</em>). MacTutor souligne que sa théorie « a profondément modifié la façon dont les travailleurs ultimes ont vu l’Univers ».</p>
+          <p>Le système qu’il propose place le Soleil, et non la Terre, au centre du système planétaire. Ce n’est pas une spéculation : Copernicus conserve les orbites circulaires et les épicycles de Ptolémée, et il cherche un système <em>compatible avec les observations</em>. Son ouvrage, le <em>De revolutionibus orbium coelestium</em>, est publié en 1543, année de sa mort (OpenStax, vol. 1, § 1.1 <em>Astronomy</em>).</p>
+          <div class="callout"><strong>Ce que l’héliocentrisme ne règle pas</strong><p>Le système de Copernicus ne rendait pas compte des observations aussi bien que celui de Tycho Brahe, qui combinait mouvement de la Terre et orbites joviennes autour du Soleil. C’est Kepler, puis Newton, qui résoudront les deux difficultés : les orbites elliptiques et la force qui les maintient. Présenter Copernic comme ayant « découvert » la vérité serait doublement faux — il avait tort sur les orbites, et il fallut plus d’un demi-siècle pour établir que la Terre tourne réellement (MacTutor).</p></div>
+          <p>La portée réelle de son geste est <strong>méthodologique</strong> autant qu’astronomique : il replace le point d’observation à l’intérieur du système qu’il décrit. C’est ce déplacement qui rendra possible l’étude du mouvement relatif (section 05) et, plus tard, la relativité générale (OpenStax, vol. 1, § 4.5).</p>
+        </section>
+
+        <section class="lesson-section" id="galilee" aria-labelledby="galilee-title">
+          <p class="section-index">05 / GALILÉE — LA MÉCANIQUE MESURÉE</p>
+          <h2 id="galilee-title">Galileo Galilei (1564 – 1642)</h2>
+          <p>Né le <strong>15 février 1564</strong> à <strong>Pise</strong> et mort le <strong>8 janvier 1642</strong> à <strong>Arcetri</strong> (Wikipédia, <em>Galileo Galilei</em>), Galilée est le premier à traiter la mécanique comme une discipline <em>expérimentale et mathématique</em> plutôt que comme une collection de résultats (OpenStax, vol. 1, § 3.5 <em>Free Fall</em>).</p>
+          <p>Sa <strong>loi des corps tombant en chute libre</strong> est le résultat le plus célèbre : en l’absence de résistance de l’air, tous les corps tombent avec la <em>même</em> accélération, indépendante de leur masse (OpenStax, vol. 1, § 3.5).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA LOI DES CORPS EN CHUTE, ET LE RÉSULTAT QU’ELLE IMPOSE</span>
+            <math class="mathml-display" display="block" aria-label="la distance parcourue est égale à un demi g t au carré, valable pour toute masse ; l'accélération ne dépend pas de m">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>g</mi><msup><mi>t</mi><mn>2</mn></msup><mo>,</mo><mspace width="0.3em"/><mtext>indépendamment de</mtext><mspace width="0.2em"/><mi>m</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>a</mi><mo>=</mo><mi>g</mi><mo>≈</mo><mn>9,81</mn><mspace width="0.2em"/><mi mathvariant="normal">m·s⁻²</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">la masse s’élimine du résultat : c’est précisément ce qui surprenait les contemporains (OpenStax, vol. 1, § 3.5)</span>
+          </div>
+          <p>Ses observations à la lunette, publiées dans <em>Sidereus Nuncius</em>, révèlent les quatre gros satellites de Jupiter, les phases de Vénus et les taches solaires. Les phases de Vénus constituent l’argument décisif contre le modèle ptolémaïque : elles ne peuvent s’observer que si Vénus tourne autour du Soleil (OpenStax, vol. 1, § 1.1).</p>
+          <div class="callout"><strong>Sur l’épisode de la tour de Pise</strong><p>Wikipédia distingue explicitement le <em>Delft tower experiment</em> et le <em>leaning Tower of Pisa experiment</em> dans sa chronologie. Le récit de la lâchée depuis la tour est une reconstitution : Galilée n’a pas laissé d’expérience documentée de ce type. La loi de la chute reste un résultat solide ; sa mise en scène est une légende. C’est la distinction que ce cours répète partout : un fait vérifié d’un côté, une anecdote qui l’illustre de l’autre.</p></div>
+        </section>
+
+        <section class="lesson-section" id="newton" aria-labelledby="newton-title">
+          <p class="section-index">06 / NEWTON — MOUVEMENT ET GRAVITATION</p>
+          <h2 id="newton-title">Isaac Newton (1643 – 1727)</h2>
+          <p>Newton est né le <strong>4 janvier 1643</strong> à <strong>Woolsthorpe</strong> (Lincolnshire) et mort le <strong>31 mars 1727</strong> à <strong>Londres</strong>. MacTutor précise que cette date de naissance est la date <em>grégorienne</em> : selon le calendrier en vigueur en Angleterre à l’époque, il est né le jour de Noël 1642 (MacTutor, <em>Isaac Newton</em>). Le cours retient la double datation plutôt que d’en choisir une silencieusement.</p>
+          <p>Les <em>Principia Mathematica</em>, publiés en <strong>1687</strong>, unifient la mécanique du point matériel et la gravitation des corps célestes. C’est le texte qui fait passer la physique d’une collection de faits en un système déductif (OpenStax, vol. 1, ch. 5 <em>Newton’s Laws of Motion</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES TROIS LOIS DU MOUVEMENT ET LA GRAVITATION</span>
+            <math class="mathml-display" display="block" aria-label="loi d'inertie, deuxième loi force égale masse fois accélération, et gravitation universelle F égale G m1 m2 sur r au carré">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mover><mi>a</mi><mo>→</mo></mover><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mover><mi>F</mi><mo>→</mo></mover><mo>=</mo><mi>m</mi><mover><mi>a</mi><mo>→</mo></mover></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>F</mi><mo>=</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">OpenStax, vol. 1, § 5.2, § 5.3 et § 13.1 ; 1 N = 1 kg·m·s⁻² et G = 6,674 30 × 10⁻¹¹ m³·kg⁻¹·s⁻²</span>
+          </div>
+          <p>La première loi énonce le principe d’inertie, qui définit précisément le <strong>référentiel galiléen</strong> : sans elle, « vitesse » et « force » n’ont pas de sens indépendant (OpenStax, vol. 1, § 5.2). La deuxième relie force et accélération dans un référentiel galiléen. La troisième, l’action-réaction, agit sur deux corps distincts et ne se annule donc jamais dans un bilan de forces (OpenStax, vol. 1, § 5.5).</p>
+          <div class="callout"><strong>Newton et la couleur : le contre-exemple utile</strong><p>MacTutor signale que Newton a consacré près de dix ans, à la fin de sa vie, à des questions d’optique, de décomposition de la lumière blanche et de théorie corpusculaire. Le même Newton qui formula la loi de la gravitation universelle est celui qui fit les expériences sur le spectre. Un cours qui ne retiendrait que les <em>Principia</em> donnerait une image incomplète de son œuvre (MacTutor).</p></div>
+        </section>
+
+        <section class="lesson-section" id="volta" aria-labelledby="volta-title">
+          <p class="section-index">07 / VOLTA — LA PILE ÉLECTRIQUE</p>
+          <h2 id="volta-title">Alessandro Volta (1745 – 1827)</h2>
+          <p>Né le <strong>18 février 1745</strong> à <strong>Como</strong> et mort le <strong>5 mars 1827</strong> dans la même ville, Volta était chimiste et physicien (Wikipédia, <em>Alessandro Volta</em>). Son <strong>électrophore</strong>, identifié en 1775, et surtout sa <strong>pile voltaique</strong>, inventée en <strong>1799</strong>, ont fait passer l’électricité d’un phénomène de laboratoire à un instrument utilisable en série.</p>
+          <p>La pile est le premier générateur capable de fournir un courant <em>continu</em> : des électrodes de cuivre et de zinc, séparés par un électrolyte, produisent une différence de potentiel que l’on peut augmenter en série. Elle a transformé l’électrochimie en science expérimentale quantitative (OpenStax, vol. 2, ch. 17 <em>Electrochemistry</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LOI DE L’ÉLECTROLYSE, CONSÉQUENCE DE LA PILE</span>
+            <math class="mathml-display" display="block" aria-label="la charge Q est égale à n fois F ; le courant est la charge divisée par le temps">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>Q</mi><mo>=</mo><mi>n</mi><mi>F</mi><mo>=</mo><mi>n</mi><msub><mi>N</mi><mi>A</mi></msub><mi>e</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>I</mi><mo>=</mo><mfrac><mi>Q</mi><mi>t</mi></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">F = 96 485,33 C·mol⁻¹ exactement (NIST, CODATA 2022) : l’ampère et la mole sont ainsi liés par la même constante</span>
+          </div>
+          <div class="callout"><strong>L’unité qui porte son nom</strong><p>Le <strong>volt</strong> (V) a été adopté au System international en 1881. Il est défini depuis 2019 par la relation <span class="math">1 V = 1 W/A</span>, c’est-à-dire par les unités dérivées du SI, et non plus directement par la pile de Volta (NIST, <em>Definitions of SI Base Units</em>). Le physicien est ainsi gravé dans une unité du système international, bien que sa définition ait entièrement changé depuis son invention.</p></div>
+        </section>
+
+        <section class="lesson-section" id="ampere" aria-labelledby="ampere-title">
+          <p class="section-index">08 / AMPÈRE — L’ÉLECTRODYNAMIQUE</p>
+          <h2 id="ampere-title">André-Marie Ampère (1775 – 1836)</h2>
+          <p>Né le <strong>20 janvier 1775</strong> à <strong>Lyon</strong> et mort le <strong>10 juin 1836</strong> à <strong>Marseille</strong>, Ampère fut professeur à l’École polytechnique puis au Collège de France (Wikipédia, <em>André-Marie Ampère</em>). Il a fondé l’électrodynamique en reliant le mouvement des charges au champ magnétique qu’elles produisent.</p>
+          <p>Deux résultats portent son nom. La <strong>loi d’Ampère</strong> relie le champ magnétique encirclant un courant à l’intensité de ce courant ; sa <strong>loi de force</strong> donne l’action d’un courant sur un autre. L’unité d’intensité électrique, l’<strong>ampère</strong>, a été adoptée en 1881, puis redéfinie en 2019 par la charge élémentaire (NIST, <em>Definitions of SI Base Units</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA LOI D’AMPÈRE ET LE CHAMP D’UN FIL RECTILIGNE</span>
+            <math class="mathml-display" display="block" aria-label="intégrale de B dl égale mu zéro I ; le champ d'un fil droit vaut mu zéro I divisé par deux pi r">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mo>∮</mo><mover><mi>B</mi><mo>→</mo></mover><mo>·</mo><mi>d</mi><mover><mi>l</mi><mo>→</mo></mover><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi>I</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>B</mi><mo>=</mo><mfrac><mrow><msub><mi>μ</mi><mn>0</mn></msub><mi>I</mi></mrow><mrow><mn>2</mn><mi>π</mi><mi>r</mi></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">OpenStax, vol. 2, § 12.2 <em>The Magnetic Field of a Current-Carrying Wire</em> ; μ₀ = 1,256 637 061 27 × 10⁻⁶ H·m⁻¹ (NIST, CODATA 2022)</span>
+          </div>
+          <div class="callout"><strong>L’ordre des découvertes : Oersted avant Ampère</strong><p>En 1820, Hans Christian Ørsted observe qu’un courant dévie une aiguille aimantée. C’est Ampère qui, la même année, en déduit la loi générale et qui fait du magnétisme une science quantitative. Le cours attribue donc à Ampère la <em>théorie</em>, non la découverte du phénomène — une distinction analogue à celle que l’on fait entre Archimède et ses prédécesseurs (OpenStax, vol. 2, ch. 12).</p></div>
+        </section>
+
+        <section class="lesson-section" id="faraday" aria-labelledby="faraday-title">
+          <p class="section-index">09 / FARADAY — LE CHAMP ET L’INDUCTION</p>
+          <h2 id="faraday-title">Michael Faraday (1791 – 1867)</h2>
+          <p>Né le <strong>22 septembre 1791</strong> à <strong>Newington Butts</strong> (Surrey) et mort le <strong>25 août 1867</strong> à <strong>Hampton</strong> (Middlesex), Michael Faraday était chimiste et physicien, et l’un des plus grands vulgarisateurs de la science (Wikipédia, <em>Michael Faraday</em>).</p>
+          <p>Sa contribution décisive est la <strong>notion de champ</strong> : il substitue à l’action à distance newtonienne une grandeur présente en tout point de l’espace. Le <strong>flux</strong> magnétique et sa <strong>loi d’induction</strong>, découverte en 1831, puis de ses <strong>lois d’électrolyse</strong> de 1833, sont les deux résultats qui portent son nom dans le langage courant (OpenStax, vol. 2, § 13.1 <em>Induced EMF and Magnetic Flux</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE FLUX MAGNÉTIQUE ET LA LOI DE FARADAY</span>
+            <math class="mathml-display" display="block" aria-label="le flux est l'intégrale de B sur une surface ; la force électromotrice induite égale moins la dérivée du flux dans le temps">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>Φ</mi><mo>=</mo><munder><mo>∫</mo><mi>S</mi></munder><mover><mi>B</mi><mo>→</mo></mover><mo>·</mo><mi>d</mi><mover><mi>A</mi><mo>→</mo></mover></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>ε</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi>d</mi><mi>Φ</mi></mrow><mrow><mi>d</mi><mi>t</mi></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">le signe moins traduit la loi de Lenz : le courant induit s’oppose à la variation de flux qui le produit (OpenStax, vol. 2, § 13.1)</span>
+          </div>
+          <div class="worked-result"><strong>CE QUE LA LOI D’ÉLECTROLYSE A PERMIS</strong><span class="math">1 F = 96 485,33 C correspond à une mole d’électrons</span><span class="math">c’est cette relation qui a permis de déterminer les masses molaires des éléments (OpenStax, vol. 2, ch. 17)</span></div>
+        </section>
+
+        <section class="lesson-section" id="joule" aria-labelledby="joule-title">
+          <p class="section-index">10 / JOULE — L’ÉNERGIE ET LA CHALEUR</p>
+          <h2 id="joule-title">James Prescott Joule (1818 – 1889)</h2>
+          <p>Né le <strong>24 décembre 1818</strong> à <strong>Salford</strong> (Lancashire) et mort le <strong>11 octobre 1889</strong> à <strong>Sale</strong> (Cheshire), Joule était un physicien britannique, fils de brasseur (Wikipédia, <em>James Prescott Joule</em>). Son <strong>équivalent mécanique de la chaleur</strong> a supprimé la théorie du calurique : la chaleur n’est pas un fluide, c’est de l’énergie.</p>
+          <p>En mesurant le travail mécanique nécessaire pour élever une masse et en le comparant à la quantité de chaleur produite, Joule établit qu’une même quantité d’énergie peut se convertir d’une forme à une autre. Sa <strong>loi de Joule</strong>, énonçant que l’énergie thermique produite par un courant dans une résistance est proportionnelle au carré de l’intensité, reste la forme de la loi de Joule utilisée aujourd’hui (OpenStax, vol. 2, § 17.1 <em>Electric Current and Resistance</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LOI DE JOULE — L’ÉCHAUFFEMENT D’UNE RÉSISTANCE</span>
+            <math class="mathml-display" display="block" aria-label="la puissance Joule égale I au carré R ; la chaleur produite pendant un temps t est égale à P fois t">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>P</mi><mi>J</mi></msub><mo>=</mo><mi>I</mi><msup><mi>R</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>Q</mi><mo>=</mo><msub><mi>P</mi><mi>J</mi></msub><mi>t</mi><mo>=</mo><mi>R</mi><msup><mi>I</mi><mn>2</mn></msup><mi>t</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">puissance en watts, chaleur en joules ; l’ampère et le volt portent les noms d’Ampère et de Volta (sections 07 et 08)</span>
+          </div>
+          <div class="worked-result"><strong>APPLICATION</strong><span class="math">R = 10 Ω ; I = 2 A → P = 2² × 10 = 40 W</span><span class="math">pendant 30 s : Q = 40 × 30 = 1 200 J</span></div>
+          <p>Le <strong>joule</strong>, unité d’énergie du SI, porte son nom depuis 1881. Comme le volt et l’ampère, il a été redéfini après 2019 : le joule est désormais <span class="math">1 J = 1 kg·m²·s⁻²</span>, c’est-à-dire par les unités dérivées du SI (NIST, <em>Definitions of SI Base Units</em>).</p>
+        </section>
+
+        <section class="lesson-section" id="maxwell" aria-labelledby="maxwell-title">
+          <p class="section-index">11 / MAXWELL — LE CHAMP ÉLECTROMAGNÉTIQUE</p>
+          <h2 id="maxwell-title">James Clerk Maxwell (1831 – 1879)</h2>
+          <p>Né le <strong>13 juin 1831</strong> à <strong>Édimbourg</strong> et mort le <strong>5 novembre 1879</strong> à <strong>Cambridge</strong>, Maxwell était physicien et mathématicien écossais (Wikipédia, <em>James Clerk Maxwell</em>). Son article <em>A dynamical theory of the electromagnetic field</em>, de 1865, et son <em>Treatise on Electricity and Magnetism</em>, de 1873, fondent l’électromagnétisme moderne.</p>
+          <p>Son apport est le groupement de ces travaux en un <strong>champ unique</strong> dont les équations, dites <strong>équations de Maxwell</strong>, couplent l’électromagnétisme à la mécanique et imposent une <strong>vitesse finie</strong> de propagation. C’est l’argument décisif : la lumière est une onde électromagnétique (OpenStax, vol. 2, § 16.1 <em>Maxwell’s Equations and Electromagnetic Waves</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LES QUATRE ÉQUATIONS DE MAXWELL ET LEUR CONSÉQUENCE IMMÉDIATE</span>
+            <math class="mathml-display" display="block" aria-label="les quatre équations de Maxwell ; leur combinaison donne une vitesse de propagation égale à un racine de epsilon zéro mu zéro">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mo>∇</mo><mo>·</mo><mover><mi>B</mi><mo>→</mo></mover><mo>=</mo><mn>0</mn></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mo>∇</mo><mo>·</mo><mover><mi>E</mi><mo>→</mo></mover><mo>=</mo><mfrac><mi>ρ</mi><msub><mi>ε</mi><mn>0</mn></msub></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mo>∇</mo><mo>×</mo><mover><mi>E</mi><mo>→</mo></mover><mo>=</mo><mo>−</mo><mfrac><mrow><mo>∂</mo><mover><mi>B</mi><mo>→</mo></mover></mrow><mrow><mo>∂</mo><mi>t</mi></mrow></mfrac></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mo>∇</mo><mo>×</mo><mover><mi>B</mi><mo>→</mo></mover><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi>j</mi><mo>+</mo><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>ε</mi><mn>0</mn></msub><mfrac><mrow><mo>∂</mo><mover><mi>E</mi><mo>→</mo></mover></mrow><mrow><mo>∂</mo><mi>t</mi></mrow></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">d’où une onde électromagnétique se propage à c = 1/√(μ₀ε₀) = 299 792 458 m·s⁻¹, valeur exacte (NIST, CODATA 2022)</span>
+          </div>
+          <div class="callout"><strong>Le terme manquant : la densité de courant de déplacement</strong><p>Le dernier terme de l’équation d’Ampère-Maxwell, proportionnel à la dérivée temporelle de <span class="math">E⃗</span>, est l’<em>innovation</em> de Maxwell. Sans lui, les équations ne décriraient qu’un champ magnétique statique et aucune propagation. Avec lui, le vide doit porter un courant pour que l’onde se construise (OpenStax, vol. 2, § 16.2 <em>Electromagnetic Waves</em>). C’est le terme qui permet de conclure à l’existence des ondes électromagnétiques — avant leur production expérimentale par Hertz (section 12).</p></div>
+        </section>
+
+        <section class="lesson-section" id="hertz" aria-labelledby="hertz-title">
+          <p class="section-index">12 / HERTZ — LES ONDES ET L’EFFET PHOTOÉLECTRIQUE</p>
+          <h2 id="hertz-title">Heinrich Hertz (1857 – 1894)</h2>
+          <p>Né le <strong>22 février 1857</strong> à <strong>Hambourg</strong> et décédé en <strong>1894</strong>, Heinrich Hertz était un physicien allemand (Wikipédia, <em>Heinrich Hertz</em>). En 1888 il produit expérimentalement les ondes radio prédites par Maxwell, et il démontre que la lumière est une onde électromagnétique.</p>
+          <p>Ses expériences sur l’<strong>effet photoélectrique</strong>, vers 1887, établissent que l’émission d’électrons par une lumière dépend de la <em>fréquence</em> et non de l’intensité. C’est un résultat qui restera inexplicable pendant trente ans, jusqu’à la quantification de la lumière par Einstein (section 15) (OpenStax, vol. 3, § 6.2 <em>Photoelectric Effect</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">L’EFFET PHOTOÉLECTRIQUE : LA FRÉQUENCE DÉTERMINE L’ÉNERGIE</span>
+            <math class="mathml-display" display="block" aria-label="l'énergie cinétique maximale égale h fois fréquence moins le travail d'extraction ; la fréquence seuil égale le travail d'extraction divisé par h">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>E</mi><mtext>cin,max</mtext></msub><mo>=</mo><mi>h</mi><mi>ν</mi><mo>−</mo><mi>φ</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><msub><mi>ν</mi><mn>0</mn></msub><mo>=</mo><mfrac><mi>φ</mi><mi>h</mi></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">φ : travail d’extraction ; en dessous de ν₀, aucune lumière, quelle que soit son intensité, n’arrache d’électron (OpenStax, vol. 3, § 6.2)</span>
+          </div>
+          <p>L’unité de fréquence, le <strong>hertz</strong> (Hz), porte son nom. La confirmation expérimentale des ondes de Maxwell est l’argument décisif de la section précédente : sans Hertz, la prédiction resterait une spéculation mathématique (OpenStax, vol. 2, § 16.2).</p>
+        </section>
+
+        <section class="lesson-section" id="marie-curie" aria-labelledby="marie-curie-title">
+          <p class="section-index">13 / MARIE CURIE — LA RADIOACTIVITÉ</p>
+          <h2 id="marie-curie-title">Marie Curie (1867 – 1934)</h2>
+          <p>Née le <strong>7 novembre 1867</strong> à <strong>Varsovie</strong> et morte le <strong>4 juillet 1934</strong> à <strong>Sallanches</strong> (France), Marie Skłodowska Curie obtient le prix Nobel de physique en <strong>1903</strong>, avec une part d’un quart, « en reconnaissance des services extraordinaires qu’ils ont rendus par leurs recherches conjointes sur les phénomènes de rayonnement découverts par le professeur Henri Becquerel » (NobelPrize.org). Elle reçoit en outre le prix Nobel de chimie en <strong>1911</strong>, devenant la première personne à obtenir deux prix Nobel.</p>
+          <p>Travaillant sur les phénomènes de radioactivité découverts par Becquerel en 1896, elle constate avec Pierre Curie que le <strong>minerai d’uraninite</strong> est plus radioactif que l’uranium lui-même, et en déduit qu’il contient des éléments inconnus. Ils en extraient deux : le <strong>polonium</strong> et le <strong>radium</strong>, tous deux plus radioactifs que l’uranium (NobelPrize.org).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA LOI DE DÉCROISSANCE, ÉCRITE À PARTIR DE LEUR TRAVAIL</span>
+            <math class="mathml-display" display="block" aria-label="le nombre de noyaux restants égale N zéro fois e puissance moins lambda t ; l'activité égale lambda N">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>N</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><msub><mi>N</mi><mn>0</mn></msub><mi>exp</mi><mo>(</mo><mo>−</mo><mi>λ</mi><mi>t</mi><mo>)</mo></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>A</mi><mo>=</mo><mi>λ</mi><mi>N</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">λ : constante de désintégration (s⁻¹) ; A : activité en becquerels (BQ), unité nommée d’après Becquerel et qui vaut 1 s⁻¹ (OpenStax, vol. 3, ch. 10)</span>
+          </div>
+          <div class="callout"><strong>Deux unités et un prix qu’elle n’a pas eu</strong><p>Marie Curie a reçu deux prix Nobel — fait unique dans l’histoire. L’unité de radioactivité, le <strong>becquerel</strong>, porte le nom de Becquerel et non le sien ; c’est le <strong>curie</strong>, unité encore employée hors du SI, qui porte son nom. NobelPrize.org souligne enfin que pendant la Première Guerre mondiale elle organisa des équipes mobiles de radiographie : la science appliquée y a laissé une trace plus durable que la plupart des théories (NobelPrize.org).</p></div>
+        </section>
+
+        <section class="lesson-section" id="lise-meitner" aria-labelledby="lise-meitner-title">
+          <p class="section-index">14 / LISE MEITNER — LA FISSION EXPLIQUÉE</p>
+          <h2 id="lise-meitner-title">Lise Meitner (1878 – 1968)</h2>
+          <p>Née le <strong>7 novembre 1878</strong> à <strong>Vienne</strong> et morte le <strong>27 octobre 1968</strong> à <strong>Cambridge</strong>, Lise Meitner était une physicienne austro-hongroise puis suédo-Écossaise. Elle explique avec Otto Frisch, en <strong>1939</strong>, le mécanisme de la <strong>fission nucléaire</strong> (Wikipédia, <em>Lise Meitner</em>).</p>
+          <p>Otto Hahn et Fritz Strassmann découvrent en 1938 que l’irradiation de l’uranium par des neutrons produit du barium, mais n’osent pas conclure à une scission du noyau. C’est Meitner — physicienne théorique alors exilée — qui, avec Frisch, comprend l’interprétation : un noyau lourd se divise en deux fragments, avec libération d’énergie. Le 11 février 1939, ils publient une note d’une page dans <em>Nature</em>. Frisch doit alors inventer le nom : ayant entendu un biologiste nommer ainsi la division d’une cellule, il appelle <em>fission</em> le phénomène nucléaire (Wikipédia, <em>Lise Meitner</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">L’ÉNERGIE LIBÉRÉE PAR UNE FISSION</span>
+            <math class="mathml-display" display="block" aria-label="l'énergie d'une fission vaut la différence de masse multipliée par c au carré ; le bilan de la fission de l'uranium 235">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>Q</mi><mo>=</mo><mi>Δ</mi><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mn>92</mn><mi>U</mi><mo>+</mo><mi>n</mi><mo>→</mo><mn>56</mn><mi>Ba</mi><mo>+</mo><mn>36</mn><mi>Kr</mi><mo>+</mo><mn>3</mn><mi>n</mi></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">la perte de masse Δm devient de l’énergie ; une fission libère environ 200 MeV (OpenStax, vol. 3, ch. 10 <em>Nuclear Physics</em>)</span>
+          </div>
+          <div class="callout"><strong>L’injustice du prix Nobel de 1944</strong><p>Otto Hahn reçut seul le prix Nobel de chimie 1944 « pour sa découverte de la fission des noyaux atomiques lourds ». Meitner, qui en avait fourni l’explication physique, ne l’a jamais reçu — elle fut nommée <strong>49 fois</strong> aux prix Nobel de physique et de chimie. Dans les années 1990, l’ouverture des archives du comité a conduit la physicienne Ruth Lewin Sime et ses collègues à conclure que « l’exclusion de Meitner doive être résumée comme un mélange de biais disciplinaire, d’obtusité politique, d’ignorance et de précipitation » (Wikipédia, <em>Lise Meitner</em>). Le cours retient ce fait établi, et non le récit selon lequel elle aurait été simplement oubliée.</p></div>
+        </section>
+
+        <section class="lesson-section" id="einstein" aria-labelledby="einstein-title">
+          <p class="section-index">15 / EINSTEIN — QUANTA ET RELATIVITÉ</p>
+          <h2 id="einstein-title">Albert Einstein (1879 – 1955)</h2>
+          <p>Né le <strong>14 mars 1879</strong> à <strong>Ulm</strong> (Allemagne) et mort le <strong>18 avril 1955</strong> à <strong>Princeton</strong>, Einstein reçoit le prix Nobel de physique <strong>1921</strong> — reçu en 1922 — « pour ses services rendus à la physique théorique, et en particulier pour sa découverte de la loi de l’effet photoélectrique » (NobelPrize.org).</p>
+          <p>NobelPrize.org souligne que l’argumentation repose sur le fait que, pour un effet photoélectrique donné, c’est l’<em>intensité</em> qui doit être critique selon la théorie ondulatoire, tandis que c’est la <em>fréquence</em> qui doit l’être selon l’observation. En 1905, Einstein explique que la lumière est constituée de quanta d’énergie <span class="math">E = hν</span>. Ses travaux de la même année portent aussi sur le mouvement brownien et la relativité restreinte (NobelPrize.org).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">QUANTUM DE LUMIÈRE ET RELATIVITÉ</span>
+            <math class="mathml-display" display="block" aria-label="énergie d'un photon égale h fois fréquence ; énergie d'une masse égale m c au carré ; dilatation du temps égale delta t racine un moins v au carré sur c au carré">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>E</mi><mo>=</mo><mi>h</mi><mi>ν</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>Δ</mi><msub><mi>t</mi><mi>0</mi></msub><mo>=</mo><mi>Δ</mi><mi>t</mi><mfrac><mn>1</mn><msqrt><mrow><mn>1</mn><mo>−</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><msup><mi>c</mi><mn>2</mn></msup></mfrac></mrow></msqrt></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">h = 6,626 070 15 × 10⁻³⁴ J·Hz⁻¹ exactement ; c = 299 792 458 m·s⁻¹ exactement (NIST, CODATA 2022)</span>
+          </div>
+          <p>La relativité restreinte impose que la vitesse de la lumière soit la même dans tous les référentiels inertiels, et découle de là la dilatation des durées et la contraction des longueurs. La relativité générale, publiée en <strong>1915</strong>, remplace la gravitation newtonienne par la courbure de l’espace-temps (OpenStax, vol. 3, ch. 5 et ch. 13).</p>
+          <div class="callout"><strong>Un Nobel pour l’effet photoélectrique, pas pour la relativité</strong><p>NobelPrize.org attribue explicitement le prix à la loi de l’effet photoélectrique, et non à la relativité. La raison n’est pas le mérite — c’est le comité 1921 qui voulait récompenser un résultat expérimental vérifiable, et la relativité était alors mal comprise du grand public. Retenir ce motif exact, plutôt que le raccourci « Nobel pour la relativité », évite une erreur de fait courante (NobelPrize.org).</p></div>
+        </section>
+
+        <section class="lesson-section" id="bohr" aria-labelledby="bohr-title">
+          <p class="section-index">16 / BOHR — LA QUANTIFICATION DE L’ATOME</p>
+          <h2 id="bohr-title">Niels Bohr (1885 – 1962)</h2>
+          <p>Né le <strong>7 octobre 1885</strong> et mort le <strong>18 novembre 1962</strong>, tous deux à <strong>Copenhague</strong>, Niels Bohr reçoit le prix Nobel de physique <strong>1922</strong> « pour ses services dans l’étude de la structure des atomes et du rayonnement qui en émane » (NobelPrize.org).</p>
+          <p>En <strong>1913</strong>, Bohr propose une théorie de l’atome d’hydrogène fondée sur la théorie quantique : les électrons tournent autour du noyau, mais <em>seulement</em> sur des orbites prescrites, et n’émettent un rayonnement que lorsqu’ils sautent d’une orbite supérieure vers une orbite inférieure (NobelPrize.org).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE PRINCIPE DES NIVEAUX D’ÉNERGIE</span>
+            <math class="mathml-display" display="block" aria-label="les niveaux d'énergie de l'hydrogène valent moins treize six dixièmes d'eV divisé par n au carré ; le photon émis vaut la différence entre deux niveaux">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mo>−</mo><mfrac><mn>13,6</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mspace width="0.2em"/><mi mathvariant="normal">eV</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>h</mi><mi>ν</mi><mo>=</mo><msub><mi>E</mi><mrow><mi>i</mi><mo>,</mo><mi>n</mi></mrow></msub><mo>−</mo><msub><mi>E</mi><mrow><mi>f</mi><mo>,</mo><mi>m</mi></mrow></msub></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">E₁ = −13,6 eV ; le modèle explique pourquoi un atome n’émet que certaines longueurs d’onde (OpenStax, vol. 3, § 8.2)</span>
+          </div>
+          <p>NobelPrize.org souligne que le modèle expliqua pourquoi les atomes n’émettent de la lumière qu’à des longueurs d’onde fixes, et qu’il intégra ensuite la théorie des quanta de lumière. Sa limite est connue : il ne décrit correctement que l’atome d’hydrogène, et le formalisme des matrices de Heisenberg le supplanta pour les atomes plus complexes (NobelPrize.org).</p>
+        </section>
+
+        <section class="lesson-section" id="schrodinger" aria-labelledby="schrodinger-title">
+          <p class="section-index">17 / SCHRÖDINGER — LA MÉCANIQUE ONDULATOIRE</p>
+          <h2 id="schrodinger-title">Erwin Schrödinger (1887 – 1961)</h2>
+          <p>Né le <strong>12 août 1887</strong> à <strong>Vienne</strong> et mort le <strong>4 janvier 1961</strong> à <strong>Vienne</strong>, il reçoit le prix Nobel de physique <strong>1933</strong>, avec une part sur deux, « pour la découverte de nouvelles formes productives de la théorie atomique » (NobelPrize.org). L’affiliation déclarée au moment du prix est l’Université de Berlin.</p>
+          <p>Le principe : la matière se comporte à la fois comme une particule et comme une onde. En <strong>1926</strong>, Schrödinger formule une équation d’onde qui calcule exactement les niveaux d’énergie des électrons dans les atomes (NobelPrize.org).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">L’ÉQUATION DE SCHRÖDINGER INDÉPENDANTE DU TEMPS</span>
+            <math class="mathml-display" display="block" aria-label="l'équation de Schrödinger : h barre fois d psi sur d x carré plus le potentiel égale E fois psi">
+              <mrow><mi>ħ</mi><mfrac><mrow><mo>∂</mo><mi>ψ</mi></mrow><mrow><mo>∂</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac><msup><mi>ħ</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mfrac><mrow><mo>∂</mo><mn>2</mn><mi>ψ</mi></mrow><mrow><mo>∂</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>V</mi><mo>·</mo><mi>ψ</mi></mrow>
+            </math>
+            <span class="formula-label">ψ : fonction d’onde ; V : énergie potentielle ; ħ = h/2π (NIST, CODATA 2022)</span>
+          </div>
+          <p>L’interprétation de Born — la fonction d’onde donne la probabilité de trouver la particule — n’est pas de Schrödinger : elle a fait l’objet d’un désaccord durable entre les deux, comme le rapporte NobelPrize.org dans sa notice sur Bohr (section 16). L’équation, en revanche, est aujourd’hui l’outil standard de la chimie quantique et de la mécanique des solides (OpenStax, vol. 3, § 7.3 <em>The Schrödinger Equation</em>).</p>
+          <div class="callout"><strong>Une vie double</strong><p>NobelPrize.org souligne que Schrödinger quitta l’Allemagne en 1934 par opposition au nazisme, et que ses liens avec Dublin à partir de 1940 le conduisirent à l’Institut d’études avancées. Le cours retient ce qui est documenté ; la « double vie » de certaines biographies narratives n’est pas reprise ici, faute de source primaire consultée.</p></div>
+        </section>
+
+        <section class="lesson-section" id="lemaitre" aria-labelledby="lemaitre-title">
+          <p class="section-index">18 / LEMAÎTRE — L’EXPANSION DE L’UNIVERS</p>
+          <h2 id="lemaitre-title">Georges Lemaître (1894 – 1966)</h2>
+          <p>Né le <strong>17 juillet 1894</strong> à <strong>Charleroi</strong> (Belgique) et mort le <strong>20 juin 1966</strong> à <strong>Louvain</strong>, Georges Lemaître était un physicien, astronome et prêtre catholique (Wikipédia, <em>Georges Lemaître</em>). Il est connu pour deux apports : la <strong>loi de Hubble-Lemaître</strong> et l’hypothèse de l’<strong>atome primitif</strong>.</p>
+          <p>Observant que les galaxies s’éloignent les unes des autres plus vite qu’elles ne se rapprochent, il applique à l’Univers la même relation : une expansion. En <strong>1927</strong>, il en déduit une densité plus forte dans le passé, et formula un scénario d’expansion à partir d’un état initial concentré. L’expansion de l’Univers fut ensuite observée par Hubble — d’où le nom de la loi (Wikipédia, <em>Georges Lemaître</em>).</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LA LOI DE HUBBLE-LEMAÎTRE</span>
+            <math class="mathml-display" display="block" aria-label="la vitesse de récession est égale à H zéro fois la distance ; une expansion proportionnelle à la distance implique un Big Bang">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>v</mi><mo>=</mo><msub><mi>H</mi><mn>0</mn></msub><mi>d</mi></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>z</mi><mo>≈</mo><msub><mi>H</mi><mn>0</mn></msub><mfrac><mi>d</mi><mi>c</mi></mfrac></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">H₀ : constante de Hubble (s⁻¹) ; z : décalage vers le rouge, pour les distances cosmologiques (OpenStax, vol. 3, § 28.1)</span>
+          </div>
+          <div class="callout"><strong>D’où vient le nom « Big Bang » ?</strong><p>Ce n’est pas le terme de Lemaître : c’est Fred Hoyle, qui l’employait par dérision lors d’émissions de radio en 1949, en référence à une explosion. Wikipédia précise que Lemaître préférait l’expression « hypothèse de l’atome primitif », plus descriptive et sans connotation explosive. Le cours retient donc <em>atome primitif</em> comme formulation d’origine, et « Big Bang » comme le terme ultérieur devenu courant (Wikipédia, <em>Georges Lemaître</em>).</p></div>
+          <p>Lemaître a reçu le <strong>prix Francqui</strong> en 1934, le <strong>prix Jules Janssen</strong> en 1936 et la <strong>médaille Eddington</strong> en 1953 (Wikipédia, <em>Georges Lemaître</em>). Son legs institutionnel est l’Institut d’Astronomie et de Géophysique de Louvain.</p>
+        </section>
+
+        <section class="lesson-section" id="heisenberg" aria-labelledby="heisenberg-title">
+          <p class="section-index">19 / HEISENBERG — L’INCERTITUDE</p>
+          <h2 id="heisenberg-title">Werner Heisenberg (1901 – 1976)</h2>
+          <p>Né le <strong>5 décembre 1901</strong> à <strong>Würzburg</strong> et mort le <strong>1<sup>er</sup> février 1976</strong> à <strong>Munich</strong>, Heisenberg reçoit le prix Nobel de physique <strong>1932</strong> — reçu en 1933 — « pour la création de la mécanique quantique, dont l’application a notamment conduit à la découverte des formes allotropiques de l’hydrogène » (NobelPrize.org).</p>
+          <p>NobelPrize.org résume ses deux apports en deux phrases : en <strong>1925</strong> il formule une mécanique quantique fondée sur des <strong>matrices</strong> ; en <strong>1927</strong> il propose la <strong>relation d’incertitude</strong>, qui fixe les limites de la précision avec laquelle on peut déterminer simultanément la position et la vitesse d’une particule.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">LE PRINCIPE D’INCERTITUDE</span>
+            <math class="mathml-display" display="block" aria-label="delta x fois delta p supérieur ou égal à h barre divisé par deux">
+              <mrow><mi>Δ</mi><mi>x</mi><mo>·</mo><mi>Δ</mi><mi>p</mi><mo>≥</mo><mfrac><mi>ħ</mi><mn>2</mn></mfrac><mo>=</mo><mfrac><mi>h</mi><mrow><mn>4</mn><mi>π</mi></mrow></mfrac></mrow>
+            </math>
+            <span class="formula-label">Δx : incertitude sur la position ; Δp : incertitude sur la quantité de mouvement (OpenStax, vol. 3, § 7.2)</span>
+          </div>
+          <div class="callout"><strong>Ce que le principe ne dit pas</strong><p>L’incertitude n’est pas une limite de nos instruments, mais une propriété de la théorie : aucune mesure ne peut réduire <span class="math">Δx</span> sans agrandir <span class="math">Δp</span>. Un électron localisé est un paquet d’ondes étendu, et inversement. C’est la même relation, vue dans le formalisme de Fourier, qui relie l’incertitude position-vitesse à l’incertitude temps-énergie (OpenStax, vol. 3, § 7.2 <em>The Heisenberg Uncertainty Principle</em>).</p></div>
+        </section>
+
+        <section class="lesson-section" id="dirac" aria-labelledby="dirac-title">
+          <p class="section-index">20 / DIRAC — LE POSITRON</p>
+          <h2 id="dirac-title">Paul Dirac (1902 – 1984)</h2>
+          <p>Né le <strong>8 août 1902</strong> à <strong>Bristol</strong> et mort le <strong>20 octobre 1984</strong> à <strong>Tallahassee</strong> (Floride), Paul Dirac reçoit le prix Nobel de physique <strong>1933</strong>, avec une part sur deux, « pour la découverte de nouvelles formes productives de la théorie atomique » — le même motif que pour Schrödinger. L’affiliation déclarée au moment du prix est l’Université de Cambridge (NobelPrize.org).</p>
+          <p>NobelPrize.org situe l’apport dans la période 1925-1926 : des théories quantiques sont proposées qui décrivent correctement les niveaux d’énergie, mais doivent être adaptées à la théorie de la relativité d’Einstein. En <strong>1928</strong>, Dirac formule une théorie quantique pleinement relativiste.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">L’ÉQUATION DE DIRAC</span>
+            <math class="mathml-display" display="block" aria-label="l'équation de Dirac reliant énergie, masse, potentiel et fonction d'onde">
+              <mrow><mi>i</mi><mi>ħ</mi><mfrac><mrow><mo>∂</mo><mi>ψ</mi></mrow><mrow><mo>∂</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mo>(</mo><mi>c</mi><mover><mi>p</mi><mo>→</mo></mover><mo>·</mo><mover><mi>α</mi><mo>→</mo></mover><mo>+</mo><mi>β</mi><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mi>V</mi><mo>)</mo><mi>ψ</mi></mrow></mrow>
+            </math>
+            <span class="formula-label">α et β : matrices de Dirac ; p : quantité de mouvement ; m : masse au repos (OpenStax, vol. 3, ch. 11)</span>
+          </div>
+          <div class="callout"><strong>Une particule prédite avant d’exister</strong><p>NobelPrize.org rapporte que l’équation de Dirac donna des solutions correspondant à une particule de même masse que l’électron mais de <em>charge positive</em>. Dirac interpréta cette solution comme un proton, puis, devant l’erreur de charge, comme une nouvelle particule : le <strong>positron</strong>, découvert expérimentalement par Carl Anderson en 1932. C’est l’un des rares cas où une théorie conduit à prédire une particule avant son observation (NobelPrize.org).</p></div>
+        </section>
+
+        <section class="lesson-section" id="feynman" aria-labelledby="feynman-title">
+          <p class="section-index">21 / FEYNMAN — LES DIAGRAMMES</p>
+          <h2 id="feynman-title">Richard Feynman (1918 – 1988)</h2>
+          <p>Né le <strong>11 mai 1918</strong> à <strong>New York</strong> et mort le <strong>15 février 1988</strong> à <strong>Los Angeles</strong>, Feynman reçoit le prix Nobel de physique <strong>1965</strong>, avec une part sur trois, « pour son travail fondamental en électrodynamique quantique, avec des conséquences de grande portée pour la physique des particules élémentaires ». L’affiliation déclarée est le California Institute of Technology (NobelPrize.org).</p>
+          <p>NobelPrize.org situe sa contribution en <strong>1948</strong> : il contribue à créer une nouvelle électrodynamique quantique en introduisant les <strong>diagrammes de Feynman</strong>, représentations graphiques des interactions entre particules qui facilitent le calcul des probabilités.</p>
+          <div class="formula-block formula-accent">
+            <span class="formula-label">L’AMPLITUDE COMME PROBABILITÉ</span>
+            <math class="mathml-display" display="block" aria-label="l'amplitude de transition est une somme sur les diagrammes, et la probabilité est le module au carré de l'amplitude">
+              <mtable columnalign="left">
+                <mtr><mtd><mrow><mi>𝓐</mi><mo>=</mo><munder><mo>∑</mo><mtext>diagrammes</mtext></munder><mi>i</mi><mo>×</mo><msub><mi>𝓜</mi><mi>i</mi></msub></mrow></mtd></mtr>
+                <mtr><mtd><mrow><mi>P</mi><mo>=</mo><msup><mrow><mo>|</mo><mi>𝓐</mi><mo>|</mo></mrow><mn>2</mn></msup></mrow></mtd></mtr>
+              </mtable>
+            </math>
+            <span class="formula-label">𝓜ᵢ : amplitude de chaque diagramme ; la probabilité est le module au carré de la somme, non la somme des carrés</span>
+          </div>
+          <div class="callout"><strong>Pourquoi cette méthode a gagné</strong><p>Avant Feynman, le calcul des corrections radiatives demandait des manipulations d’intégrales presque dénuées d’intuition. En rendant chaque terme <em>visible</em>, les diagrammes ont transformé un calcul fastidieux en un outil de raisonnement, et sont devenus le langage standard de la théorie quantique des champs (OpenStax, vol. 3, ch. 11 <em>Quantum Electrodynamics</em>).</p></div>
+          <p>Feynman a reçu de nombreux prixFramebuffer, dont la médaille Albert Einstein en 1978. Le cours ne retient ici que les faits documentés par NobelPrize.org : son Nobel de 1965 et sa part sur trois.</p>
+        </section>
+
+        <section class="lesson-section" id="tableau-chronologique" aria-labelledby="tableau-chronologique-title">
+          <p class="section-index">22 / TABLEAU CHRONOLOGIQUE</p>
+          <h2 id="tableau-chronologique-title">Les vingt, dans l’ordre de naissance</h2>
+          <p>Le tableau ci-dessous récapitule la liste. Il est trié par <strong>date de naissance</strong>, ce qui ne constitue pas un classement par mérite. Chaque ligne renvoie à la section détaillée.</p>
+          <div class="sign-table-wrap">
+            <table class="sign-table">
+              <caption>Les vingt physiciens retenus, triés par date de naissance. Les dates proviennent des sources citées en section 24.</caption>
+              <thead><tr><th scope="col">#</th><th scope="col">Nom</th><th scope="col">Naissance</th><th scope="col">Décès</th><th scope="col">Contribution principale</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">01</th><td>Archimède</td><td>287 av. J.-C.</td><td>212 av. J.-C.</td><td>Statique, leviers, principe d’Archimède</td></tr>
+                <tr><th scope="row">02</th><td>Ibn al-Haytham</td><td>v. 965</td><td>v. 1040</td><td>Livre de l’optique, méthode expérimentale</td></tr>
+                <tr><th scope="row">03</th><td>Nicolas Copernic</td><td>19 févr. 1473</td><td>24 mai 1543</td><td>Héliocentrisme</td></tr>
+                <tr><th scope="row">04</th><td>Galileo Galilei</td><td>15 févr. 1564</td><td>8 janv. 1642</td><td>Chute libre, cinématique, observation</td></tr>
+                <tr><th scope="row">05</th><td>Isaac Newton</td><td>4 janv. 1643</td><td>31 mars 1727</td><td>Lois du mouvement, gravitation universelle</td></tr>
+                <tr><th scope="row">06</th><td>Alessandro Volta</td><td>18 févr. 1745</td><td>5 mars 1827</td><td>Pile voltaique</td></tr>
+                <tr><th scope="row">07</th><td>André-Marie Ampère</td><td>20 janv. 1775</td><td>10 juin 1836</td><td>Électrodynamique</td></tr>
+                <tr><th scope="row">08</th><td>Michael Faraday</td><td>22 sept. 1791</td><td>25 août 1867</td><td>Notion de champ, induction</td></tr>
+                <tr><th scope="row">09</th><td>James Prescott Joule</td><td>24 déc. 1818</td><td>11 oct. 1889</td><td>Équivalent mécanique de la chaleur</td></tr>
+                <tr><th scope="row">10</th><td>James Clerk Maxwell</td><td>13 juin 1831</td><td>5 nov. 1879</td><td>Équations du champ électromagnétique</td></tr>
+                <tr><th scope="row">11</th><td>Heinrich Hertz</td><td>22 févr. 1857</td><td>1894</td><td>Ondes électromagnétiques, effet photoélectrique</td></tr>
+                <tr><th scope="row">12</th><td>Marie Curie</td><td>7 nov. 1867</td><td>4 juil. 1934</td><td>Polonium et radium ; deux prix Nobel</td></tr>
+                <tr><th scope="row">13</th><td>Lise Meitner</td><td>7 nov. 1878</td><td>27 oct. 1968</td><td>Explication de la fission nucléaire</td></tr>
+                <tr><th scope="row">14</th><td>Albert Einstein</td><td>14 mars 1879</td><td>18 avr. 1955</td><td>Quanta de lumière, relativité</td></tr>
+                <tr><th scope="row">15</th><td>Niels Bohr</td><td>7 oct. 1885</td><td>18 nov. 1962</td><td>Modèle atomique à niveaux quantifiés</td></tr>
+                <tr><th scope="row">16</th><td>Erwin Schrödinger</td><td>12 août 1887</td><td>4 janv. 1961</td><td>Équation d’onde</td></tr>
+                <tr><th scope="row">17</th><td>Georges Lemaître</td><td>17 juil. 1894</td><td>20 juin 1966</td><td>Expansion de l’Univers, atome primitif</td></tr>
+                <tr><th scope="row">18</th><td>Werner Heisenberg</td><td>5 déc. 1901</td><td>1<sup>er</sup> févr. 1976</td><td>Mécanique des matrices, principe d’incertitude</td></tr>
+                <tr><th scope="row">19</th><td>Paul Dirac</td><td>8 août 1902</td><td>20 oct. 1984</td><td>Équation relativiste, positron</td></tr>
+                <tr><th scope="row">20</th><td>Richard Feynman</td><td>11 mai 1918</td><td>15 févr. 1988</td><td>Diagrammes de Feynman</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="table-note">Lecture : sept de ces physiciens ont reçu un prix Nobel — Marie Curie, Albert Einstein, Niels Bohr, Erwin Schrödinger, Werner Heisenberg, Paul Dirac et Richard Feynman. Curie est la seule à en avoir reçu deux. Quatre unités du SI portent leurs noms : le volt, l’ampère, le farad et le joule ; s’y ajoutent le hertz pour les ondes et le weber pour le flux magnétique.</p>
+        </section>
+
+        <section class="lesson-section exercise-section" id="exercices" aria-labelledby="exercices-title">
+          <p class="section-index">23 / S’ENTRAÎNER</p>
+          <h2 id="exercices-title">Exercices corrigés</h2>
+          <p>Douze exercices portant sur les faits établis dans ce cours : dates, attributions et formules. Essaie de répondre avant d’ouvrir la correction.</p>
+          <details class="exercise">
+            <summary><span class="exercise-number">A</span><span>Quel est le plus ancien des vingt physiciens de la liste, et quel domaine a-t-il fondé ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Archimède, né en 287 av. J.-C. à Syracuse et mort en 212 av. J.-C. (MacTutor).<br>
+            <strong>Réponse : Archimède, fondateur de la statique.</strong> Ses travaux portent sur les leviers et le principe de poussée dans les fluides (section 02).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">B</span><span>Quelle physicienne du cours n’a jamais reçu de prix Nobel, malgré une contribution fondamentale ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Lise Meitner (1878–1968), qui expliqua la fission nucléaire avec Otto Frisch en 1939.<br>
+            Elle fut nommée 49 fois aux prix Nobel de physique et de chimie ; Otto Hahn reçut seul celui de chimie 1944 (Wikipédia, <em>Lise Meitner</em>).<br>
+            <strong>Réponse : Lise Meitner.</strong> C’est le seul cas, parmi les sept Nobel du tableau, où le prix aurait dû revenir à quelqu’un d’autre (section 14).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">C</span><span>Quel physicien de la liste a reçu deux prix Nobel ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Marie Curie : prix Nobel de physique en 1903 (part d’un quart) et prix Nobel de chimie en 1911.<br>
+            NobelPrize.org indique qu’elle devint « la première personne jamais à obtenir deux prix Nobel ».<br>
+            <strong>Réponse : Marie Curie.</strong> Ses deux prix recompensent deux aspects d’une même œuvre, la radioactivité (section 13).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">D</span><span>Quel physicien a reçu le prix Nobel pour une découverte <em>différente</em> de celle pour laquelle il est le plus célèbre ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Albert Einstein. Il est célèbre pour la relativité, mais NobelPrize.org précise que le prix de 1921 récompense « ses services rendus à la physique théorique, et en particulier sa découverte de la loi de l’effet photoélectrique ».<br>
+            <strong>Réponse : Albert Einstein.</strong> Le prix fut effectivement reçu en 1922, pour l’année 1921 (section 15).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">E</span><span>Quel physicien a prédit l’existence d’une particule avant sa découverte expérimentale ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Paul Dirac, par son équation relativiste de 1928 : les solutions exigeaient une particule de même masse que l’électron mais de charge positive, ce qu’il interpréta comme le positron, découvert par Carl Anderson en 1932 (NobelPrize.org).<br>
+            <strong>Réponse : Paul Dirac.</strong> L’équation précède la découverte de sept ans (section 20).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">F</span><span>Quel physicien a introduit le courant de déplacement, et quel phénomène a-t-il rendu possible ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>James Clerk Maxwell, dans son article de 1865 <em>A dynamical theory of the electromagnetic field</em>.<br>
+            <span class="math">c = 1/√(μ₀ε₀) = 299 792 458 m·s⁻¹</span><br>
+            <strong>Réponse : Maxwell ; le courant de déplacement rend possible la propagation des ondes électromagnétiques dans le vide.</strong> Hertz les produit expérimentalement en 1888 (sections 11 et 12).</p></div>
+          </details>
+
+        <details class="exercise">
+            <summary><span class="exercise-number">G</span><span>Quel physicien du cours voit une de ses unités redéfinie en 2019 par une constante de la nature ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>André-Marie Ampère : l’ampère est défini par la valeur exacte <span class="math">e = 1,602 176 634 × 10⁻¹⁹ C</span>, et non plus par la force entre conducteurs parallèles (NIST, <em>Definitions of SI Base Units</em>).<br>
+            De même, le kilogramme est défini par <span class="math">h</span>, le kelvin par <span class="math">k</span> et le mole par <span class="math">N<sub>A</sub></span>.<br>
+            <strong>Réponse : André-Marie Ampère.</strong> Trois autres physiciens de la liste — Volta, Joule, Hertz — ont eux aussi des unités dont la définition a changé en 2019.</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">H</span><span>Quel grand physicien est volontairement absent de cette liste ? Justifiez l’exclusion par le critère de la section 01.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Plusieurs réponses sont défendables ; le cours cite explicitement Ptolémée, Kepler, Hooke et Gauss parmi les exclus.<br>
+            Kepler (1571–1630) est l’exemple le plus discutable : ses trois lois sur le mouvement des planètes sont à la base du mouvement newtonien, mais elles ont été intégrées dans une théorie plus générale, ce que le premier critère écarte.<br>
+            <strong>Réponse : toute figure dont l’apport fut absorbé par une théorie plus générale.</strong> L’exclusion est un choix déclaré, non un oubli (section 01).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">I</span><span>Dans quel ordre chronologique se placent Volta, Ampère, Faraday et Joule ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>Par date de naissance : <strong>Volta</strong> (1745), <strong>Ampère</strong> (1775), <strong>Faraday</strong> (1791), <strong>Joule</strong> (1818).<br>
+            <strong>Réponse : cet ordre correspond aux sections 07, 08, 09 et 10.</strong> C’est un ordre de survenance, non de mérite (section 01).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">J</span><span>Quel résultat de Maxwell a rendu nécessaire une expérience, et qui l’a réalisée ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>En 1888, Heinrich Hertz produit et détecte des ondes radio, démontrant que la lumière est une onde électromagnétique (Wikipédia, <em>Heinrich Hertz</em>).<br>
+            <strong>Réponse : la production expérimentale des ondes radio, par Hertz.</strong> Sans elle, la prédiction de Maxwell resterait mathématique (section 12).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">K</span><span>Écrire la relation d’incertitude de Heisenberg et préciser ce qu’elle fixe.</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p><span class="math">Δx · Δp ≥ ħ/2 = h/4π</span><br>
+            Elle fixe une limite <em>théorique</em> à la précision avec laquelle position et quantité de mouvement peuvent être connues simultanément : réduire Δx augmente Δp.<br>
+            <strong>Réponse : la relation ci-dessus.</strong> Proposée par Heisenberg en 1927 (section 19).</p></div>
+          </details>
+          <details class="exercise">
+            <summary><span class="exercise-number">L</span><span>Quelle expression a été formulée par Lemaître, et quel terme préférait-il à celui de « Big Bang » ?</span><span class="reveal-label">Voir la correction</span></summary>
+            <div class="exercise-answer"><p>La loi de Hubble-Lemaître, <span class="math">v = H₀d</span>, en 1927.<br>
+            Lemaître préférait l’expression « hypothèse de l’atome primitif » ; « Big Bang » est un terme postérieur, employé par dérision par Fred Hoyle (Wikipédia, <em>Georges Lemaître</em>).<br>
+            <strong>Réponse : la loi de Hubble-Lemaître, et l’expression « atome primitif ».</strong> Lemaître est mort le 20 juin 1966 (section 18).</p></div>
+          </details>
+        </section>
+
+        <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+          <p class="section-index">24 / SOURCES</p>
+          <h2 id="sources-title">Sources vérifiées</h2>
+          <p>Chaque date de naissance, date de décès et attribution de ce cours provient d’une des sources ci-dessous, toutes consultées en ligne. Les formules citées renvoient aux manuels OpenStax du site.</p>
+          <ul>
+            <li><strong>Prix Nobel : motif exact, dates, affiliation</strong> : <a href="https://www.nobelprize.org/prizes/physics/1903/marie-curie/facts/" target="_blank" rel="noreferrer">Marie Curie</a>, <a href="https://www.nobelprize.org/prizes/physics/1921/einstein/facts/" target="_blank" rel="noreferrer">Albert Einstein</a>, <a href="https://www.nobelprize.org/prizes/physics/1922/bohr/facts/" target="_blank" rel="noreferrer">Niels Bohr</a>, <a href="https://www.nobelprize.org/prizes/physics/1932/heisenberg/facts/" target="_blank" rel="noreferrer">Werner Heisenberg</a>, <a href="https://www.nobelprize.org/prizes/physics/1933/schrodinger/facts/" target="_blank" rel="noreferrer">Erwin Schrödinger</a>, <a href="https://www.nobelprize.org/prizes/physics/1933/dirac/facts/" target="_blank" rel="noreferrer">Paul Dirac</a>, <a href="https://www.nobelprize.org/prizes/physics/1965/feynman/facts/" target="_blank" rel="noreferrer">Richard Feynman</a> — NobelPrize.org, notices <em>Facts</em>.</li>
+            <li><strong>Archimède, Copernic, Newton</strong> : <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Archimedes/" target="_blank" rel="noreferrer">MacTutor, <em>Archimedes of Syracuse</em></a>, <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Copernicus/" target="_blank" rel="noreferrer">MacTutor, <em>Nicolaus Copernicus</em></a>, <a href="https://mathshistory.st-andrews.ac.uk/Biographies/Newton/" target="_blank" rel="noreferrer">MacTutor, <em>Isaac Newton</em></a> — MacTutor History of Mathematics, University of St Andrews. La double datation julienne et grégorienne de Newton (25 décembre 1642 / 4 janvier 1643) y est explicitée.</li>
+            <li><strong>Ibn al-Haytham, Volta, Ampère, Faraday, Joule, Maxwell, Hertz, Meitner, Lemaître, Galilée</strong> : articles <em>Ibn al-Haytham</em>, <em>Alessandro Volta</em>, <em>André-Marie Ampère</em>, <em>Michael Faraday</em>, <em>James Prescott Joule</em>, <em>James Clerk Maxwell</em>, <em>Heinrich Hertz</em>, <em>Lise Meitner</em>, <em>Georges Lemaître</em> et <em>Galileo Galilei</em> de l’encyclopédie collaborative Wikipédia.</li>
+            <li><strong>Dates de Galilée et de Hertz, lues en première page</strong> : Wikipédia en anglais simple, articles <em>Galileo Galilei</em> et <em>Heinrich Hertz</em>.</li>
+            <li><strong>Définitions officielles des unités du SI et calendrier du redéfinissement</strong> : <a href="https://www.nist.gov/si-redefinition/definitions-si-base-units" target="_blank" rel="noreferrer">NIST, <em>Definitions of SI Base Units</em></a>, <a href="https://www.nist.gov/si-redefinition" target="_blank" rel="noreferrer">NIST, <em>SI Redefinition</em></a>, <a href="https://www.nist.gov/si-redefinition/ampere-introduction" target="_blank" rel="noreferrer">NIST, <em>Ampere: Introduction</em></a>, <a href="https://www.nist.gov/si-redefinition/kilogram-introduction" target="_blank" rel="noreferrer">NIST, <em>Kilogram: Introduction</em></a>, <a href="https://www.nist.gov/si-redefinition/kelvin-introduction" target="_blank" rel="noreferrer">NIST, <em>Kelvin: Introduction</em></a>.</li>
+            <li><strong>Valeurs des constantes citées</strong> : <a href="https://physics.nist.gov/cuu/Constants/" target="_blank" rel="noreferrer">NIST, <em>CODATA Recommended Values of the Fundamental Physical Constants</em></a> (ajustement 2022) — <span class="math">c</span>, <span class="math">h</span>, <span class="math">ħ</span>, <span class="math">e</span>, <span class="math">k</span>, <span class="math">N<sub>A</sub></span>, <span class="math">F</span>, <span class="math">μ₀</span>, <span class="math">ε₀</span>.</li>
+            <li><strong>Notions physiques : forces, diagramme de corps libre, chute libre, gravitation</strong> : OpenStax, <em>University Physics</em> vol. 1 — § 3.5 <em>Free Fall</em>, § 5.7 <em>Drawing Free-Body Diagrams</em>, § 13.1 <em>Newton’s Law of Universal Gravitation</em>, § 1.1 <em>Astronomy</em>.</li>
+            <li><strong>Électromagnétisme, circuits, induction et électrolyse</strong> : OpenStax, <em>University Physics</em> vol. 2 — § 12.2 <em>The Magnetic Field of a Current-Carrying Wire</em>, § 13.1 <em>Induced EMF and Magnetic Flux</em>, § 16.1 <em>Maxwell’s Equations and Electromagnetic Waves</em>, § 17.1 <em>Electric Current and Resistance</em>, ch. 17 <em>Electrochemistry</em>, § 23.1 et § 23.2 <em>Geometric Optics</em>.</li>
+            <li><strong>Physique quantique et nucléaire</strong> : OpenStax, <em>University Physics</em> vol. 3 — § 6.2 <em>Photoelectric Effect</em>, § 7.2 <em>The Heisenberg Uncertainty Principle</em>, § 7.3 <em>The Schrödinger Equation</em>, § 8.2 <em>Bohr’s Model of the Hydrogen Atom</em>, ch. 10 <em>Nuclear Physics</em>, ch. 11 <em>Quantum Electrodynamics</em>, § 28.1 <em>Cosmology</em>.</li>
+          </ul>
+          <p><strong>Limites déclarées.</strong> Aucune source ne publie de liste canonique des « plus grands physiciens » : la section 01 expose donc des critères explicites, et le tableau de la section 22 est un ordre de naissance, non un classement par mérite. Les dates d’Ibn al-Haytham sont incertaines et sa source les donne avec la mention « vers ». Pour Hertz, la source consultée indique seulement l’année du décès, sans le jour : le cours s’en tient à cette précision plutôt que de trancher entre les dates en circulation. Enfin, l’anecdote du « Eureka ! » d’Archimède et l’expérience de la tour de Pise ont été écartées, faute de source primaire consultée (sections 02 et 05).</p>
+        </section>
+
+        <footer class="course-footer"><span>LES GRANDS PHYSIICIENS</span><a href="index.html">Retour aux branches ↑</a></footer>
+      </article>
+    </main>
+  </body>
+</html>

@@ -302,7 +302,38 @@ window.courseCatalog = [
           { anchor: 'exercices', title: 'S’entraîner' },
           { anchor: 'sources', title: 'Sources' }
         ]
-      }
+      },
+    ]
+  },
+  {
+    id: 'grands-physiciens', title: 'Les grands physiciens',
+    note: 'Vingt physiciens classés par date de naissance, d’Archimède à Feynman, avec leurs contributions et leurs dates vérifiées.',
+    href: 'grands-physiciens-approfondie.html',
+    sections: [
+      { anchor: 'methode-selection', title: 'Comment établir une telle liste ?' },
+      { anchor: 'archimede', title: 'Archimède — statique et hydrostatique' },
+      { anchor: 'ibn-al-haytham', title: 'Ibn al-Haytham — l’optique expérimentale' },
+      { anchor: 'copernic', title: 'Copernic — l’héliocentrisme' },
+      { anchor: 'galilee', title: 'Galilée — la mécanique mesurée' },
+      { anchor: 'newton', title: 'Newton — mouvement et gravitation' },
+      { anchor: 'volta', title: 'Volta — la pile électrique' },
+      { anchor: 'ampere', title: 'Ampère — l’électrodynamique' },
+      { anchor: 'faraday', title: 'Faraday — le champ et l’induction' },
+      { anchor: 'joule', title: 'Joule — l’énergie et la chaleur' },
+      { anchor: 'maxwell', title: 'Maxwell — le champ électromagnétique' },
+      { anchor: 'hertz', title: 'Hertz — les ondes et l’effet photoélectrique' },
+      { anchor: 'marie-curie', title: 'Marie Curie — la radioactivité' },
+      { anchor: 'lise-meitner', title: 'Lise Meitner — la fission expliquée' },
+      { anchor: 'einstein', title: 'Einstein — quanta et relativité' },
+      { anchor: 'bohr', title: 'Bohr — la quantification de l’atome' },
+      { anchor: 'schrodinger', title: 'Schrödinger — la mécanique ondulatoire' },
+      { anchor: 'lemaitre', title: 'Lemaître — l’expansion de l’Univers' },
+      { anchor: 'heisenberg', title: 'Heisenberg — l’incertitude' },
+      { anchor: 'dirac', title: 'Dirac — le positron' },
+      { anchor: 'feynman', title: 'Feynman — les diagrammes' },
+      { anchor: 'tableau-chronologique', title: 'Tableau chronologique' },
+      { anchor: 'exercices', title: 'S’entraîner' },
+      { anchor: 'sources', title: 'Sources' }
     ]
   }
 ];
