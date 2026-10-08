@@ -6,10 +6,30 @@
     <meta name="theme-color" content="#f4f5ed">
     <meta name="description" content="Leçon de physique avec notions, formule fondamentale, exemple résolu et exercice corrigé.">
     <title>Cours de physique</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+
+    <!-- Données générales de la physique -->
     <script src="physique-data.js" defer></script>
+
+    <!-- ⚠️ Tous les cours approfondis doivent être chargés ici -->
+    <script src="grands-physiciens-approfondie.js" defer></script>
+    <script src="constantes-physiques-approfondie.js" defer></script>
+    <script src="physique-quantique-atomique.js" defer></script>
+    <script src="mecanique-approfondie.js" defer></script>
+    <script src="cosmologie-particules.js" defer></script>
+    <script src="astrophysique-hautes-energies.js" defer></script>
+    <script src="particules-elementaires.js" defer></script>
+    <script src="thermodynamique-approfondie.js" defer></script>
+
+    <!-- ⚠️ Ton nouveau cours : Les grands livres de la physique -->
+    <script src="physique-grands-livres.js" defer></script>
+
+    <!-- Script qui affiche la leçon -->
     <script src="cours.js" defer></script>
   </head>
+
   <body>
     <header class="topbar">
       <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
@@ -18,13 +38,14 @@
       </a>
       <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
     </header>
+
     <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
     <main class="lesson-layout">
       <aside class="course-sidebar" aria-label="Navigation de la branche">
         <p class="sidebar-label"><a id="lesson-level-label" href="index.html">PHYSIQUE</a></p>
         <nav class="chapter-nav" id="lesson-chapter-nav"></nav>
-        <!-- Cours approfondis du catalogue : liens sans numérotation, conformément
-             à la règle « la liste des chapitres sur la gauche n’a pas de numéro ». -->
+
         <p class="sidebar-label chapter-label">COURS APPROFONDIS</p>
         <nav class="course-list" aria-label="Cours approfondis de physique">
           <a class="course-link" href="grands-physiciens-approfondie.html"><span>Les grands physiciens</span></a>
@@ -35,18 +56,37 @@
           <a class="course-link" href="astrophysique-hautes-energies.html"><span>Astrophysique des hautes énergies</span></a>
           <a class="course-link" href="particules-elementaires.html"><span>Particules élémentaires</span></a>
           <a class="course-link" href="thermodynamique-approfondie.html"><span>Thermodynamique et transferts thermiques</span></a>
+
+          <!-- Ton nouveau cours apparaît automatiquement ici si tu ajoutes son HTML -->
+          <!-- Exemple : grands-livres-physique.html -->
         </nav>
-        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">φ</span><p>Choisis un autre chapitre de cette branche ou retourne au catalogue général.</p></div>
+
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">φ</span>
+          <p>Choisis un autre chapitre de cette branche ou retourne au catalogue général.</p>
+        </div>
       </aside>
+
       <article class="course-content">
         <header class="course-heading">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span id="lesson-eyebrow">FICHE DE PHYSIQUE</span></p>
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="lesson-eyebrow">FICHE DE PHYSIQUE</span>
+          </p>
           <h1 id="lesson-title">Cours de physique</h1>
           <p class="course-intro" id="lesson-summary"></p>
-          <div class="course-meta"><span id="lesson-field"></span><span id="lesson-level"></span></div>
+          <div class="course-meta">
+            <span id="lesson-field"></span>
+            <span id="lesson-level"></span>
+          </div>
         </header>
+
         <div id="chapter-lesson"></div>
-        <footer class="course-footer"><span id="lesson-footer"></span><a href="index.html">Retour aux branches ↑</a></footer>
+
+        <footer class="course-footer">
+          <span id="lesson-footer"></span>
+          <a href="index.html">Retour aux branches ↑</a>
+        </footer>
       </article>
     </main>
   </body>
