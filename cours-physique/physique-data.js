@@ -1,4 +1,17 @@
 window.courseCatalog = [
+{
+  id: "newton-principia",
+  title: "Philosophiæ Naturalis Principia Mathematica",
+  field: "Isaac Newton · 1687",
+  summary: "Isaac Newton, 1687.",
+  lesson: {
+    sections: [...],
+    example: { statement: "", calculation: "", answer: "" },
+    exercise: { question: "", answer: "" },
+    sources: [...]
+  }
+},
+
   {
     id: 'mecanique', title: 'Mécanique', note: 'Décrire le mouvement, ses causes et les échanges d’énergie.',
     chapters: [
