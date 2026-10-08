@@ -18,10 +18,6 @@ if (!course) {
     }
   }
 };
-// 1) Recherche d’un chapitre classique
-let branch = window.courseCatalog.find((item) =>
-  (item.chapters || []).some((chapter) => chapter.id === chapterId)
-);
 
 // 2) Recherche d’un cours approfondi (nouveau comportement corrigé)
 let deepCourse = null;
