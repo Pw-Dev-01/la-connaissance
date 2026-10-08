@@ -107,3 +107,10 @@ if (!chapter) {
   });
   lessonContainer.append(references);
 }
+
+const branchTitles = {
+  archives: 'FOSSILES ET ARCHIVES',
+  'terrain-et-temps': 'TERRAIN ET TEMPS',
+  'histoire-vivant': 'HISTOIRE DU VIVANT',
+  'grands-livres': 'GRANDS LIVRES'
+};
