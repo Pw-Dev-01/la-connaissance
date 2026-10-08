@@ -1,8 +1,23 @@
 // exercice corrigé et références éventuelles.
 
 // Récupération de l’ID dans l’URL
-const chapterId = new URLSearchParams(window.location.search).get('id');
+const id = new URLSearchParams(location.search).get('id');
 
+// 1) Chercher un cours principal
+let course = window.courseCatalog.find(c => c.id === id);
+
+// 2) Si rien trouvé → chercher dans les chapters
+if (!course) {
+  for (const branch of window.courseCatalog) {
+    if (branch.chapters) {
+      const found = branch.chapters.find(ch => ch.id === id);
+      if (found) {
+        course = found;
+        break;
+      }
+    }
+  }
+};
 // 1) Recherche d’un chapitre classique
 let branch = window.courseCatalog.find((item) =>
   (item.chapters || []).some((chapter) => chapter.id === chapterId)
