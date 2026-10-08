@@ -1,11 +1,389 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Les grands livres de la physique</title>
-    <script>
-      window.location.href = "cours.html?id=physique-grands-livres";
-    </script>
-  </head>
-  <body></body>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5ed">
+  <meta name="description" content="Dix ouvrages de référence de la physique, de Galilée à Hawking : titre, auteur, édition, date de parution, résumé et notices bibliographiques.">
+  <title>Les grands livres de la physique | Cours de physique</title>
+  <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+  <style>
+   @media (min-width: 701px) {
+     .course-sidebar { max-height: calc(100vh - 56px); overflow-y: auto; }
+   }
+   .course-sidebar > .course-link span, .course-list .course-link span { color: var(--muted); }
+   .book-fiche {
+     margin: 1.5rem 0 2rem;
+     overflow-x: auto;
+   }
+   .book-fiche table, .table-wrap table {
+     width: 100%;
+     border-collapse: collapse;
+     border: 1px solid rgba(40,48,43,.16);
+   }
+   .book-fiche th, .book-fiche td, .table-wrap th, .table-wrap td {
+     padding: .8rem .9rem;
+     border-bottom: 1px solid rgba(40,48,43,.12);
+     vertical-align: top;
+     text-align: left;
+   }
+   .book-fiche th {
+     width: 22%;
+     font-weight: 700;
+     color: var(--ink);
+     background: rgba(40,48,43,.035);
+   }
+   .book-fiche a, .callout a, .source-list a { overflow-wrap: anywhere; }
+   .table-wrap { overflow-x: auto; margin-top: 1.5rem; }
+   .source-list { padding-left: 1.25rem; }
+   .source-list li { margin: .8rem 0; }
+  </style>
+  <script src="../cours-mathematiques/script.js" defer></script>
+ </head>
+ <body>
+  <header class="topbar">
+   <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+    <span class="wordmark-mark" aria-hidden="true">φ</span>
+    <span>LE COURS DE PHYSIQUE</span>
+   </a>
+   <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+  </header>
+  <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+  <main class="course-layout">
+   <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+    <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+    <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+    <nav class="course-list" aria-label="Branche des grands livres de la physique">
+     <a class="course-link is-current" href="grands-livres-physique.html" aria-current="page"><span>Les grands livres de la physique</span></a>
+     <a class="course-link" href="cours.html?id=unites-dimensions"><span>Unités et analyse dimensionnelle</span></a>
+     <a class="course-link" href="cours.html?id=incertitudes"><span>Incertitudes et chiffres significatifs</span></a>
+     <a class="course-link" href="cours.html?id=experimentation-modelisation"><span>Expérimentation et modélisation</span></a>
+     <a class="course-link" href="constantes-physiques-approfondie.html"><span>Les 20 principales constantes</span></a>
+    </nav>
+    <p class="sidebar-label chapter-label">DANS CE COURS</p>
+    <nav class="chapter-nav" aria-label="Sections du cours sur les grands livres de la physique">
+       <a href="#galilee-deux-sciences-nouvelles">01 <span>Discorsi e dimostrazioni matematiche intorno a due nuove scienze</span></a>
+       <a href="#newton-principia">02 <span>Philosophiæ Naturalis Principia Mathematica</span></a>
+       <a href="#huygens-traite-de-la-lumiere">03 <span>Traité de la lumière</span></a>
+       <a href="#carnot-puissance-motrice-du-feu">04 <span>Réflexions sur la puissance motrice du feu</span></a>
+       <a href="#maxwell-electricite-magnetisme">05 <span>A Treatise on Electricity and Magnetism</span></a>
+       <a href="#curie-traite-de-radioactivite">06 <span>Traité de radioactivité</span></a>
+       <a href="#einstein-relativite">07 <span>Über die spezielle und die allgemeine Relativitätstheorie</span></a>
+       <a href="#dirac-principes-mecanique-quantique">08 <span>The Principles of Quantum Mechanics</span></a>
+       <a href="#feynman-lectures-on-physics">09 <span>The Feynman Lectures on Physics</span></a>
+       <a href="#hawking-breve-histoire-du-temps">10 <span>A Brief History of Time</span></a>
+     <a href="#tableau-chronologique">12 <span>Tableau chronologique</span></a>
+     <a href="#sources">13 <span>Sources</span></a>
+    </nav>
+    <div class="sidebar-note">
+     <span class="note-mark" aria-hidden="true">φ</span>
+     <p>Dix ouvrages de référence, présentés avec leurs informations bibliographiques et les résumés fournis dans le livre source.</p>
+    </div>
+   </aside>
+
+   <article class="course-content">
+    <header class="course-heading">
+     <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> LES GRANDS LIVRES DE LA PHYSIQUE · COURS APPROFONDI</p>
+     <h1>Les grands livres<br><span>de la physique</span></h1>
+     <p class="course-intro">Dix ouvrages de référence, de Galilée à Hawking : titre, auteur, édition, date de parution et résumé de chaque livre. La page reprend la structure du modèle fourni : navigation latérale, en-tête de cours, sections numérotées, fiches bibliographiques, tableau chronologique et sources.</p>
+     <div class="course-meta"><span>10 OUVRAGES</span><span>13 SECTIONS</span><span>NOTICES BIBLIOGRAPHIQUES</span></div>
+    </header>
+
+     <section class="lesson-section" id="galilee-deux-sciences-nouvelles" aria-labelledby="galilee-deux-sciences-nouvelles-title">
+      <p class="section-index">02 / GALILEO GALILEI · 1638</p>
+      <h2 id="galilee-deux-sciences-nouvelles-title">Discorsi e dimostrazioni matematiche intorno a due nuove scienze</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>Discorsi e dimostrazioni matematiche, intorno à due nuove scienze attenenti alla mecanica &amp; i movimenti locali</td></tr>
+          <tr><th scope="row">Auteur</th><td>Galileo Galilei (1564-1642)</td></tr>
+          <tr><th scope="row">Édition</th><td>Leida (Leiden), Appresso gli Elsevirii (Abraham et Bonaventure Elzevier), édition originale.</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1638</td></tr>
+          <tr><th scope="row">Résumé</th><td>Dernier grand ouvrage de Galilée, il fonde la résistance des matériaux et la cinématique, sous la forme d’un dialogue entre Salviati, Sagredo et Simplicio.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://lccn.loc.gov/55003623" target="_blank" rel="noreferrer">https://lccn.loc.gov/55003623</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Dernier livre de Galilée, présenté comme un testament scientifique : il reprend une grande partie de ses travaux de physique des trente années précédentes.</p>
+        <p>Il fonde deux « sciences nouvelles » : la résistance des matériaux et la cinématique, science mathématique du mouvement.</p>
+      <div class="callout">
+       <strong>Discorsi e dimostrazioni matematiche intorno a due nuove scienze — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://lccn.loc.gov/55003623" target="_blank" rel="noreferrer">Library of Congress — Discorsi e dimostrazioni matematiche (Leida, Elsevir, 1638)</a></li>
+          <li><a href="https://www.christies.com.cn/lot/lot-1794974" target="_blank" rel="noreferrer">Christie’s — notice de l’édition originale (Leyde, Elzevier, 1638)</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="newton-principia" aria-labelledby="newton-principia-title">
+      <p class="section-index">03 / ISAAC NEWTON · 1687</p>
+      <h2 id="newton-principia-title">Philosophiæ Naturalis Principia Mathematica</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>Philosophiæ Naturalis Principia Mathematica</td></tr>
+          <tr><th scope="row">Auteur</th><td>Isaac Newton (1642-1727)</td></tr>
+          <tr><th scope="row">Édition</th><td>Londres, imprimé par Joseph Streater pour la Royal Society, vendu notamment chez le libraire Samuel Smith, première édition.</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1687</td></tr>
+          <tr><th scope="row">Résumé</th><td>Newton y énonce les trois lois de la dynamique et la loi de la gravitation universelle, unifiant les mouvements terrestres et célestes en trois livres.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://catalog.hathitrust.org/Record/001157847" target="_blank" rel="noreferrer">https://catalog.hathitrust.org/Record/001157847</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Newton y énonce les trois lois de la dynamique et la loi de la gravitation universelle, et montre qu’une même loi mathématique explique le mouvement des corps sur Terre et celui des astres, en prolongeant les travaux de Copernic, de Galilée et de Kepler.</p>
+        <p>Edmond Halley a encouragé Newton à l’écrire, a suivi l’impression et a pris en charge son coût.</p>
+      <div class="callout">
+       <strong>Philosophiæ Naturalis Principia Mathematica — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://library.chethams.com/?p=1933" target="_blank" rel="noreferrer">Chetham’s Library — le Principia, première édition</a></li>
+          <li><a href="https://www.christies.com.cn/lot/lot-1640068" target="_blank" rel="noreferrer">Christie’s — notice de la première édition (Londres, 1687)</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="huygens-traite-de-la-lumiere" aria-labelledby="huygens-traite-de-la-lumiere-title">
+      <p class="section-index">04 / CHRISTIAAN HUYGENS · 1690</p>
+      <h2 id="huygens-traite-de-la-lumiere-title">Traité de la lumière</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>Traité de la lumière. Où sont expliquées les causes de ce qui luy arrive dans la reflexion, &amp; dans la refraction. Et particulierement dans l’etrange refraction du cristal d’Islande. Avec un discours de la cause de la pesanteur</td></tr>
+          <tr><th scope="row">Auteur</th><td>Christiaan Huygens (1629-1695)</td></tr>
+          <tr><th scope="row">Édition</th><td>Leyde, chez Pierre (Pieter) van der Aa, édition originale en deux parties (Traité + Discours de la cause de la pesanteur).</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1690</td></tr>
+          <tr><th scope="row">Résumé</th><td>Première formulation complète de la théorie ondulatoire de la lumière, expliquant réflexion, réfraction et double réfraction du cristal d’Islande, avec un discours sur la pesanteur.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://catalogue.bnf.fr/ark:/12148/cb30631295b" target="_blank" rel="noreferrer">https://catalogue.bnf.fr/ark:/12148/cb30631295b</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Huygens y expose sa théorie ondulatoire de la lumière : la lumière est une série d’impulsions qui se propage dans l’éther avec une vitesse très grande, mais finie.</p>
+        <p>La seconde partie, le Discours de la cause de la pesanteur, propose une explication mécanique de la gravité par des tourbillons.</p>
+      <div class="callout">
+       <strong>Traité de la lumière — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://find.library.upenn.edu/catalog/99390953503681" target="_blank" rel="noreferrer">Penn Libraries — notice de l’édition originale</a></li>
+          <li><a href="https://historyofinformation.com/detail.php?id=2635" target="_blank" rel="noreferrer">History of Information — Huygens et la théorie ondulatoire de la lumière</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="carnot-puissance-motrice-du-feu" aria-labelledby="carnot-puissance-motrice-du-feu-title">
+      <p class="section-index">05 / SADI CARNOT · 1824</p>
+      <h2 id="carnot-puissance-motrice-du-feu-title">Réflexions sur la puissance motrice du feu</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>Réflexions sur la puissance motrice du feu et sur les machines propres à développer cette puissance</td></tr>
+          <tr><th scope="row">Auteur</th><td>Sadi Carnot (Nicolas Léonard Sadi Carnot, 1796-1832)</td></tr>
+          <tr><th scope="row">Édition</th><td>Paris, chez Bachelier, libraire, 118 pages, tirage d’environ 600 exemplaires, édition originale.</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1824</td></tr>
+          <tr><th scope="row">Résumé</th><td>Carnot y cherche la limite théorique de la puissance motrice que l’on peut tirer de la chaleur et introduit le cycle de Carnot, fondant la thermodynamique.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://donum.uliege.be/handle/2268.1/13610" target="_blank" rel="noreferrer">https://donum.uliege.be/handle/2268.1/13610</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Publié alors que Carnot n’avait que 28 ans, ce livre est motivé par l’amélioration des machines à vapeur.</p>
+        <p>Il est considéré comme l’œuvre fondatrice de la thermodynamique.</p>
+      <div class="callout">
+       <strong>Réflexions sur la puissance motrice du feu — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://donum.uliege.be/handle/2268.1/13610" target="_blank" rel="noreferrer">ULiège (Donum) — notice de l’édition de 1824</a></li>
+          <li><a href="https://journals.openedition.org/bibnum/858" target="_blank" rel="noreferrer">BibNum (OpenEdition) — Réflexions sur la puissance motrice du feu</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="maxwell-electricite-magnetisme" aria-labelledby="maxwell-electricite-magnetisme-title">
+      <p class="section-index">06 / JAMES CLERK MAXWELL · 1873</p>
+      <h2 id="maxwell-electricite-magnetisme-title">A Treatise on Electricity and Magnetism</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>A Treatise on Electricity and Magnetism</td></tr>
+          <tr><th scope="row">Auteur</th><td>James Clerk Maxwell (1831-1879)</td></tr>
+          <tr><th scope="row">Édition</th><td>Oxford, Clarendon Press, deux volumes, première édition (1873).</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1873</td></tr>
+          <tr><th scope="row">Résumé</th><td>Traité en deux volumes qui rassemble l’électricité et le magnétisme connus à l’époque et présente pour la première fois les équations de Maxwell sous une forme pleinement développée.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://lccn.loc.gov/03015568" target="_blank" rel="noreferrer">https://lccn.loc.gov/03015568</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Traité en deux volumes qui rassemble l’essentiel de ce que l’on savait de l’électricité et du magnétisme à l’époque, et qui introduit la théorie électromagnétique de façon méthodique et progressive.</p>
+        <p>Maxwell y avance l’hypothèse que la lumière et l’électricité sont de même nature : les ondes électromagnétiques se propagent comme la lumière et à la même vitesse.</p>
+      <div class="callout">
+       <strong>A Treatise on Electricity and Magnetism — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://en.wikipedia.org/wiki/A_Treatise_on_Electricity_and_Magnetism" target="_blank" rel="noreferrer">Wikipédia (en) — A Treatise on Electricity and Magnetism</a></li>
+          <li><a href="https://www.baumanrarebooks.com/rare-books/maxwell-james-clerk/treatise-on-electricity-and-magnetism/109587.aspx" target="_blank" rel="noreferrer">Bauman Rare Books — notice de la première édition (Oxford, 1873)</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="curie-traite-de-radioactivite" aria-labelledby="curie-traite-de-radioactivite-title">
+      <p class="section-index">07 / MARIE CURIE · 1910</p>
+      <h2 id="curie-traite-de-radioactivite-title">Traité de radioactivité</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>Traité de radioactivité, par Madame P. Curie</td></tr>
+          <tr><th scope="row">Auteur</th><td>Marie Curie (Marie Sklodowska Curie, 1867-1934), signant « Madame P. Curie »</td></tr>
+          <tr><th scope="row">Édition</th><td>Paris, Gauthier-Villars, deux tomes (tome I : xiii + 426 pages ; tome II : 548 pages), près de mille pages, édition originale.</td></tr>
+          <tr><th scope="row">Date de parution</th><td>Fin 1910</td></tr>
+          <tr><th scope="row">Résumé</th><td>Synthèse systématique des travaux sur la radioactivité, où Marie Curie admet pleinement la théorie des transformations radioactives et fixe les méthodes de mesure et de laboratoire.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://wellcomecollection.org/works/etcf9krh" target="_blank" rel="noreferrer">https://wellcomecollection.org/works/etcf9krh</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Sept ans après sa thèse de 1903 (un volume de 142 pages), Marie Curie présente dans ce traité un exposé ordonné et systématique de la masse de données accumulées sur la radioactivité.</p>
+        <p>Le livre paraît sept ans après le prix Nobel de physique de 1903 (partagé avec Pierre Curie et Henri Becquerel) et un an avant son prix Nobel de chimie, en 1911, pour l’isolement du radium et du polonium.</p>
+      <div class="callout">
+       <strong>Traité de radioactivité — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://www.nature.com/articles/086001a0" target="_blank" rel="noreferrer">Nature — compte rendu du Traité de radioactivité (1911)</a></li>
+          <li><a href="https://wellcomecollection.org/works/etcf9krh" target="_blank" rel="noreferrer">Wellcome Collection — notice bibliographique</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="einstein-relativite" aria-labelledby="einstein-relativite-title">
+      <p class="section-index">08 / ALBERT EINSTEIN · 1917</p>
+      <h2 id="einstein-relativite-title">Über die spezielle und die allgemeine Relativitätstheorie</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>Über die spezielle und die allgemeine Relativitätstheorie (gemeinverständlich)</td></tr>
+          <tr><th scope="row">Auteur</th><td>Albert Einstein</td></tr>
+          <tr><th scope="row">Édition</th><td>Braunschweig (Brunswick), Friedr. Vieweg &amp; Sohn, collection « Sammlung Vieweg », n° 38, première édition.</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1917 (texte daté de décembre 1916)</td></tr>
+          <tr><th scope="row">Résumé</th><td>Exposé accessible de la relativité restreinte puis générale, destiné à des lecteurs ayant un niveau secondaire et de la patience, sans appareil mathématique avancé.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://einsteinpapers.press.princeton.edu/vol6-doc/448" target="_blank" rel="noreferrer">https://einsteinpapers.press.princeton.edu/vol6-doc/448</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Einstein y présente lui-même la théorie de la relativité à des lecteurs qui s’intéressent à la théorie d’un point de vue scientifique général ou philosophique, sans maîtriser l’appareil mathématique de la physique théorique.</p>
+        <p>Le livre comprend une première partie sur la relativité restreinte et une seconde sur la relativité générale.</p>
+      <div class="callout">
+       <strong>Über die spezielle und die allgemeine Relativitätstheorie — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://einsteinpapers.press.princeton.edu/vol6-doc/448" target="_blank" rel="noreferrer">Einstein Papers Project (Princeton) — notice du texte</a></li>
+          <li><a href="https://relbib.de/Record/324473729" target="_blank" rel="noreferrer">Notice de bibliothèque (Vieweg, 1917, Sammlung Vieweg 38)</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="dirac-principes-mecanique-quantique" aria-labelledby="dirac-principes-mecanique-quantique-title">
+      <p class="section-index">09 / PAUL A. M. DIRAC · 1930</p>
+      <h2 id="dirac-principes-mecanique-quantique-title">The Principles of Quantum Mechanics</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>The Principles of Quantum Mechanics</td></tr>
+          <tr><th scope="row">Auteur</th><td>Paul Adrien Maurice Dirac (1902-1984)</td></tr>
+          <tr><th scope="row">Édition</th><td>Oxford, Clarendon Press, collection « The International Series of Monographs on Physics », première édition (1930).</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1930</td></tr>
+          <tr><th scope="row">Résumé</th><td>Monographie fondatrice qui présente la mécanique quantique comme un cadre mathématique autonome, laissant la physique classique après le premier chapitre.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://catalog.hathitrust.org/Record/001480020" target="_blank" rel="noreferrer">https://catalog.hathitrust.org/Record/001480020</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Monographie sur les principes fondamentaux de la mécanique quantique, écrite par l’un de ses créateurs.</p>
+        <p>L’éditeur la présente, dès la troisième édition (1947), comme un classique de la théorie physique moderne dont l’originalité a été reconnue dès la première édition en 1930.</p>
+      <div class="callout">
+       <strong>The Principles of Quantum Mechanics — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://en.wikipedia.org/wiki/The_Principles_of_Quantum_Mechanics" target="_blank" rel="noreferrer">Wikipédia (en) — The Principles of Quantum Mechanics</a></li>
+          <li><a href="https://libop-nifs.nifs.ac.jp/opac/opac_link/bibid/1000082189" target="_blank" rel="noreferrer">Notice de bibliothèque (4e édition, Clarendon Press, 1958)</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="feynman-lectures-on-physics" aria-labelledby="feynman-lectures-on-physics-title">
+      <p class="section-index">10 / RICHARD P. FEYNMAN, ROBERT B. LEIGHTON ET MATTHEW SANDS · 1963</p>
+      <h2 id="feynman-lectures-on-physics-title">The Feynman Lectures on Physics</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>The Feynman Lectures on Physics</td></tr>
+          <tr><th scope="row">Auteur</th><td>Richard P. Feynman, Robert B. Leighton et Matthew Sands</td></tr>
+          <tr><th scope="row">Édition</th><td>Reading (Massachusetts), Addison-Wesley, trois volumes, première édition 1963-1965.</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1963-1965 (trois volumes)</td></tr>
+          <tr><th scope="row">Résumé</th><td>Cours de physique issu des leçons de Feynman à Caltech pour les premières et deuxièmes années, couvrant mécanique, rayonnement, chaleur, électromagnétisme, matière et mécanique quantique.</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://catalog.hathitrust.org/Record/000613692" target="_blank" rel="noreferrer">https://catalog.hathitrust.org/Record/000613692</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Manuel issu du cours de physique que Feynman a donné aux étudiants de première et de deuxième année du California Institute of Technology (Caltech), pendant deux années universitaires à partir de 1961.</p>
+        <p>Il est souvent présenté comme l’un des livres de physique les plus populaires jamais écrits, et il a trouvé un public bien au-delà des étudiants.</p>
+      <div class="callout">
+       <strong>The Feynman Lectures on Physics — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://feynmanlectures.caltech.edu" target="_blank" rel="noreferrer">The Feynman Lectures on Physics — édition en ligne (Caltech)</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/The_Feynman_Lectures_on_Physics" target="_blank" rel="noreferrer">Wikipédia (en) — The Feynman Lectures on Physics</a></li>
+       </ul>
+      </div>
+     </section>
+     <section class="lesson-section" id="hawking-breve-histoire-du-temps" aria-labelledby="hawking-breve-histoire-du-temps-title">
+      <p class="section-index">11 / STEPHEN HAWKING · 1988</p>
+      <h2 id="hawking-breve-histoire-du-temps-title">A Brief History of Time</h2>
+      <div class="book-fiche">
+       <table>
+        <tbody>
+          <tr><th scope="row">Titre complet</th><td>A Brief History of Time: From the Big Bang to Black Holes</td></tr>
+          <tr><th scope="row">Auteur</th><td>Stephen W. Hawking (1942-2018)</td></tr>
+          <tr><th scope="row">Édition</th><td>Londres (Bantam Press) et New York (Bantam Books), publiés simultanément, avec une introduction de Carl Sagan.</td></tr>
+          <tr><th scope="row">Date de parution</th><td>1988</td></tr>
+          <tr><th scope="row">Résumé</th><td>Premier livre de Hawking pour le grand public, présentant le big bang, l’expansion de l’Univers, la mécanique quantique, les trous noirs, la flèche du temps et la recherche d’une théorie unifiée, avec une seule équation (E = mc²).</td></tr>
+          <tr><th scope="row">Lien bibliographique</th><td><a href="https://shapero.com/products/hawking-brief-history-of-time-first-edition-1988-113271" target="_blank" rel="noreferrer">https://shapero.com/products/hawking-brief-history-of-time-first-edition-1988-113271</a></td></tr>
+        </tbody>
+       </table>
+      </div>
+        <p>Premier livre que Hawking a écrit pour le grand public. Plutôt que des équations (le livre n’en contient qu’une, E = mc²), il s’appuie sur le récit et les illustrations pour présenter le big bang, l’expansion de l’Univers, la mécanique quantique, les trous noirs, la flèche du temps et la recherche d’une théorie unifiée de la physique.</p>
+        <p>Les chapitres de l’édition française vont de « Notre vision de l’univers » à « L’unification de la physique ». Le premier tirage comportait des erreurs ; il a été retiré et remplacé.</p>
+      <div class="callout">
+       <strong>A Brief History of Time — notice bibliographique</strong>
+       <ul>
+          <li><a href="https://shapero.com/products/hawking-brief-history-of-time-first-edition-1988-113271" target="_blank" rel="noreferrer">Notice de l’édition originale (Shapero Rare Books)</a></li>
+          <li><a href="https://ci.nii.ac.jp/ncid/BA07983066" target="_blank" rel="noreferrer">Notice de l’édition française (Flammarion, 1989)</a></li>
+       </ul>
+      </div>
+     </section>
+
+     <section class="lesson-section" id="tableau-chronologique" aria-labelledby="tableau-chronologique-title">
+      <p class="section-index">12 / TABLEAU CHRONOLOGIQUE</p>
+      <h2 id="tableau-chronologique-title">Les dix ouvrages dans l’ordre de parution</h2>
+      <div class="table-wrap">
+       <table>
+        <thead><tr><th>Ordre</th><th>Ouvrage</th><th>Auteur</th><th>Date</th></tr></thead>
+        <tbody>
+         <tr><td>1</td><td>Discorsi e dimostrazioni matematiche intorno a due nuove scienze</td><td>Galileo Galilei (1564-1642)</td><td>1638</td></tr>
+         <tr><td>2</td><td>Philosophiæ Naturalis Principia Mathematica</td><td>Isaac Newton (1642-1727)</td><td>1687</td></tr>
+         <tr><td>3</td><td>Traité de la lumière</td><td>Christiaan Huygens (1629-1695)</td><td>1690</td></tr>
+         <tr><td>4</td><td>Réflexions sur la puissance motrice du feu</td><td>Sadi Carnot (Nicolas Léonard Sadi Carnot, 1796-1832)</td><td>1824</td></tr>
+         <tr><td>5</td><td>A Treatise on Electricity and Magnetism</td><td>James Clerk Maxwell (1831-1879)</td><td>1873</td></tr>
+         <tr><td>6</td><td>Traité de radioactivité</td><td>Marie Curie (Marie Sklodowska Curie, 1867-1934), signant « Madame P. Curie »</td><td>Fin 1910</td></tr>
+         <tr><td>7</td><td>Über die spezielle und die allgemeine Relativitätstheorie</td><td>Albert Einstein</td><td>1917 (texte daté de décembre 1916)</td></tr>
+         <tr><td>8</td><td>The Principles of Quantum Mechanics</td><td>Paul Adrien Maurice Dirac (1902-1984)</td><td>1930</td></tr>
+         <tr><td>9</td><td>The Feynman Lectures on Physics</td><td>Richard P. Feynman, Robert B. Leighton et Matthew Sands</td><td>1963-1965 (trois volumes)</td></tr>
+         <tr><td>10</td><td>A Brief History of Time</td><td>Stephen W. Hawking (1942-2018)</td><td>1988</td></tr>
+        </tbody>
+       </table>
+      </div>
+     </section>
+
+     <section class="lesson-section" id="sources" aria-labelledby="sources-title">
+      <p class="section-index">13 / SOURCES</p>
+      <h2 id="sources-title">Notices bibliographiques</h2>
+      <p>Les informations de cette page proviennent du contenu fourni dans le livre source. Les liens ci-dessous reprennent les notices bibliographiques associées à chaque ouvrage.</p>
+      <ul class="source-list">
+       <li><strong>Discorsi e dimostrazioni matematiche intorno a due nuove scienze</strong> — <a href="https://lccn.loc.gov/55003623" target="_blank" rel="noreferrer">Library of Congress — Discorsi e dimostrazioni matematiche (Leida, Elsevir, 1638)</a>; <a href="https://www.christies.com.cn/lot/lot-1794974" target="_blank" rel="noreferrer">Christie’s — notice de l’édition originale (Leyde, Elzevier, 1638)</a></li>
+       <li><strong>Philosophiæ Naturalis Principia Mathematica</strong> — <a href="https://library.chethams.com/?p=1933" target="_blank" rel="noreferrer">Chetham’s Library — le Principia, première édition</a>; <a href="https://www.christies.com.cn/lot/lot-1640068" target="_blank" rel="noreferrer">Christie’s — notice de la première édition (Londres, 1687)</a></li>
+       <li><strong>Traité de la lumière</strong> — <a href="https://find.library.upenn.edu/catalog/99390953503681" target="_blank" rel="noreferrer">Penn Libraries — notice de l’édition originale</a>; <a href="https://historyofinformation.com/detail.php?id=2635" target="_blank" rel="noreferrer">History of Information — Huygens et la théorie ondulatoire de la lumière</a></li>
+       <li><strong>Réflexions sur la puissance motrice du feu</strong> — <a href="https://donum.uliege.be/handle/2268.1/13610" target="_blank" rel="noreferrer">ULiège (Donum) — notice de l’édition de 1824</a>; <a href="https://journals.openedition.org/bibnum/858" target="_blank" rel="noreferrer">BibNum (OpenEdition) — Réflexions sur la puissance motrice du feu</a></li>
+       <li><strong>A Treatise on Electricity and Magnetism</strong> — <a href="https://en.wikipedia.org/wiki/A_Treatise_on_Electricity_and_Magnetism" target="_blank" rel="noreferrer">Wikipédia (en) — A Treatise on Electricity and Magnetism</a>; <a href="https://www.baumanrarebooks.com/rare-books/maxwell-james-clerk/treatise-on-electricity-and-magnetism/109587.aspx" target="_blank" rel="noreferrer">Bauman Rare Books — notice de la première édition (Oxford, 1873)</a></li>
+       <li><strong>Traité de radioactivité</strong> — <a href="https://www.nature.com/articles/086001a0" target="_blank" rel="noreferrer">Nature — compte rendu du Traité de radioactivité (1911)</a>; <a href="https://wellcomecollection.org/works/etcf9krh" target="_blank" rel="noreferrer">Wellcome Collection — notice bibliographique</a></li>
+       <li><strong>Über die spezielle und die allgemeine Relativitätstheorie</strong> — <a href="https://einsteinpapers.press.princeton.edu/vol6-doc/448" target="_blank" rel="noreferrer">Einstein Papers Project (Princeton) — notice du texte</a>; <a href="https://relbib.de/Record/324473729" target="_blank" rel="noreferrer">Notice de bibliothèque (Vieweg, 1917, Sammlung Vieweg 38)</a></li>
+       <li><strong>The Principles of Quantum Mechanics</strong> — <a href="https://en.wikipedia.org/wiki/The_Principles_of_Quantum_Mechanics" target="_blank" rel="noreferrer">Wikipédia (en) — The Principles of Quantum Mechanics</a>; <a href="https://libop-nifs.nifs.ac.jp/opac/opac_link/bibid/1000082189" target="_blank" rel="noreferrer">Notice de bibliothèque (4e édition, Clarendon Press, 1958)</a></li>
+       <li><strong>The Feynman Lectures on Physics</strong> — <a href="https://feynmanlectures.caltech.edu" target="_blank" rel="noreferrer">The Feynman Lectures on Physics — édition en ligne (Caltech)</a>; <a href="https://en.wikipedia.org/wiki/The_Feynman_Lectures_on_Physics" target="_blank" rel="noreferrer">Wikipédia (en) — The Feynman Lectures on Physics</a></li>
+       <li><strong>A Brief History of Time</strong> — <a href="https://shapero.com/products/hawking-brief-history-of-time-first-edition-1988-113271" target="_blank" rel="noreferrer">Notice de l’édition originale (Shapero Rare Books)</a>; <a href="https://ci.nii.ac.jp/ncid/BA07983066" target="_blank" rel="noreferrer">Notice de l’édition française (Flammarion, 1989)</a></li>
+      </ul>
+     </section>
+
+    <footer class="course-footer"><span>LES GRANDS LIVRES DE LA PHYSIQUE</span><a href="index.html">Retour aux branches ↑</a></footer>
+   </article>
+  </main>
+ </body>
 </html>
+
