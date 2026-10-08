@@ -1,4 +1,30 @@
 window.courseCatalog = [
+{
+  id: 'grands-livres',
+  title: 'Les grands livres de la physique',
+  note: 'Ouvrages fondateurs, manuels de référence et textes historiques.',
+  deepCourses: [
+    {
+      title: 'Les grands livres de la physique',
+      href: 'grands-livres-approfondie.html',
+      sections: [
+        { anchor: 'principia-newton', title: 'Newton — Principia (1687)' },
+        { anchor: 'opticks-newton', title: 'Newton — Opticks (1704)' },
+        { anchor: 'maxwell-treatise', title: 'Maxwell — Treatise on Electricity and Magnetism (1873)' },
+        { anchor: 'boltzmann-gas-theory', title: 'Boltzmann — Lectures on Gas Theory (1896)' },
+        { anchor: 'einstein-relativite', title: 'Einstein — Relativité (1905–1916)' },
+        { anchor: 'feynman-lectures', title: 'Feynman — The Feynman Lectures on Physics (1964)' },
+        { anchor: 'schrodinger-waves', title: 'Schrödinger — Wave Mechanics (1926)' },
+        { anchor: 'dirac-quantum', title: 'Dirac — The Principles of Quantum Mechanics (1930)' },
+        { anchor: 'landau-lifshitz', title: 'Landau & Lifshitz — Course of Theoretical Physics (1930–1980)' },
+        { anchor: 'hawking-universe', title: 'Hawking — A Brief History of Time (1988)' },
+
+        // Section finale
+        { anchor: 'sources', title: 'Sources et références' }
+      ]
+    }
+  ]
+},
   {
     id: 'mecanique', title: 'Mécanique', note: 'Décrire le mouvement, ses causes et les échanges d’énergie.',
     chapters: [
