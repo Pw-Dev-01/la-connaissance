@@ -5,10 +5,10 @@ window.courseCatalog = [
   field: "Isaac Newton · 1687",
   summary: "Isaac Newton, 1687.",
   lesson: {
-    sections: [cccc],
+    sections: [],
     example: { statement: "", calculation: "", answer: "" },
     exercise: { question: "", answer: "" },
-    sources: [ccc]
+    sources: []
   }
 },
 
