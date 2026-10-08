@@ -1,0 +1,155 @@
+`html
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours approfondi consacré aux grands livres de la physique : ouvrages fondateurs, manuels de référence et textes historiques qui ont façonné la compréhension moderne du monde physique. Pour chacun : auteur, date, domaine, apport majeur et lien avec la physique actuelle, avec références bibliographiques vérifiées.">
+    <title>Les grands livres | Cours de physique</title>
+    <!-- Format identique aux autres cours approfondis de physique. Règle du site :
+         la liste des chapitres (menu gauche) n’est pas numérotée, les
+         sous-rubriques de la page le sont. -->
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      /* Ce cours compte de nombreuses entrées de navigation : la barre latérale
+         devient défilable quand la hauteur de l’écran ne suffit plus à les
+         afficher. Sous 700 px, la mise en page partagée la transforme déjà en
+         bandeau horizontal. */
+      @media (min-width: 701px) {
+        .course-sidebar {
+          max-height: calc(100vh - 56px);
+          overflow-y: auto;
+        }
+      }
+      /* Même traitement que les autres cours approfondis : le lien parent et
+         les entrées du domaine s’affichent en gris clair (var(--muted),
+         #67716a — contraste AA sur fond papier). La bordure corail signale
+         toujours le chapitre courant au survol ou en cours de lecture. */
+      .course-sidebar > .course-link span,
+      .course-list .course-link span {
+        color: var(--muted);
+      }
+    </style>
+    <script src="../cours-mathematiques/script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
+        <span class="wordmark-mark" aria-hidden="true">φ</span>
+        <span>LE COURS DE PHYSIQUE</span>
+      </a>
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+    </header>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+
+    <main class="course-layout">
+      <aside class="course-sidebar" aria-label="Navigation du cours approfondi">
+        <p class="sidebar-label">LES COURS DE PHYSIQUE</p>
+        <a class="course-link" href="index.html"><span class="course-order">∞</span><span>Toutes les branches</span></a>
+        <nav class="course-list" aria-label="Branche des grands livres du cours de physique">
+          <!-- Liste des chapitres du domaine, sans numérotation -->
+          <a class="course-link" href="index.html#grands-physiciens"><span>Les grands physiciens</span></a>
+          <a class="course-link" href="index.html#grands-livres"><span>Les grands livres</span></a>
+          <a class="course-link" href="cours.html?id=unites-dimensions"><span>Unités et analyse dimensionnelle</span></a>
+          <a class="course-link" href="cours.html?id=incertitudes"><span>Incertitudes et chiffres significatifs</span></a>
+          <a class="course-link" href="cours.html?id=experimentation-modelisation"><span>Expérimentation et modélisation</span></a>
+          <a class="course-link" href="constantes-physiques-approfondie.html"><span>Les 20 principales constantes</span></a>
+          <a class="course-link" href="grands-physiciens-approfondie.html"><span>Les grands physiciens</span></a>
+          <a class="course-link is-current" href="grands-livres-approfondie.html" aria-current="page"><span>Les grands livres</span></a>
+        </nav>
+        <p class="sidebar-label chapter-label">DANS CE COURS</p>
+        <nav class="chapter-nav" aria-label="Sections du cours sur les grands livres de physique">
+          <!-- Numérotation des sous-rubriques du cours.
+               À synchroniser avec physique-grands-livres.js (anchors identiques). -->
+          <a href="#methode-selection">01 <span>Comment choisir les grands livres ?</span></a>
+          <a href="#livres-fondateurs">02 <span>Les textes fondateurs de la mécanique</span></a>
+          <a href="#thermodynamique-classique">03 <span>Thermodynamique et chaleur</span></a>
+          <a href="#electromagnetisme-classique">04 <span>Électricité et électromagnétisme</span></a>
+          <a href="#ondes-optique">05 <span>Ondes, acoustique et optique</span></a>
+          <a href="#relativite">06 <span>Relativité restreinte et générale</span></a>
+          <a href="#quantique-naissante">07 <span>Les débuts de la physique quantique</span></a>
+          <a href="#quantique-moderne">08 <span>Manuels de mécanique quantique</span></a>
+          <a href="#physique-statistique">09 <span>Physique statistique et entropie</span></a>
+          <a href="#physique-nucleaire">10 <span>Noyaux, radioactivité et particules</span></a>
+          <a href="#cosmologie">11 <span>Cosmologie et structure de l’Univers</span></a>
+          <a href="#livres-experimentation">12 <span>Livres de méthodes expérimentales</span></a>
+          <a href="#manuels-generaux">13 <span>Grands manuels de physique générale</span></a>
+          <a href="#vulgarisation-classique">14 <span>Ouvrages de vulgarisation classiques</span></a>
+          <a href="#vulgarisation-moderne">15 <span>Vulgarisation contemporaine</span></a>
+          <a href="#histoire-science">16 <span>Histoire de la physique et des idées</span></a>
+          <a href="#epistemologie">17 <span>Épistémologie et philosophie de la physique</span></a>
+          <a href="#maths-pour-physique">18 <span>Ouvrages de mathématiques pour physiciens</span></a>
+          <a href="#collections">19 <span>Collections et séries de référence</span></a>
+          <a href="#bibliotheque-essentielle">20 <span>Construire une bibliothèque essentielle</span></a>
+          <a href="#lecture-niveau-licence">21 <span>Lectures recommandées niveau licence</span></a>
+          <a href="#lecture-niveau-master">22 <span>Lectures recommandées niveau master</span></a>
+          <a href="#lecture-autodidactes">23 <span>Lectures pour autodidactes</span></a>
+          <a href="#traductions">24 <span>Traductions et éditions critiques</span></a>
+          <a href="#criteres-bibliographiques">25 <span>Critères bibliographiques et fiabilité</span></a>
+          <a href="#organisation-lecture">26 <span>Organiser un parcours de lecture</span></a>
+          <a href="#ressources-numeriques">27 <span>Ressources numériques et archives</span></a>
+          <a href="#conclusion">28 <span>Conclusion — héritage des grands livres</span></a>
+          <a href="#sources">29 <span>Sources et références</span></a>
+        </nav>
+      </aside>
+
+      <article class="course-content">
+        <header class="course-header">
+          <h1>Les grands livres de la physique</h1>
+          <p class="course-intro">
+            Ce cours approfondi présente une sélection de grands livres de physique :
+            textes historiques, manuels de référence et ouvrages de vulgarisation
+            qui ont marqué l’apprentissage et la pratique de la discipline.
+            Chaque section renvoie à des titres précis, avec auteur, date,
+            domaine, apport majeur et conseils de lecture.
+          </p>
+        </header>
+
+        <!-- 01 — Méthode de sélection -->
+        <section id="methode-selection">
+          <h2>01. Comment choisir les grands livres ?</h2>
+          <p>
+            La notion de « grand livre » dépend à la fois de l’impact historique,
+            de la clarté pédagogique et de la profondeur scientifique.
+            Ce cours privilégie les ouvrages qui ont façonné durablement
+            la manière de penser la physique, tout en restant accessibles
+            à un lectorat motivé.
+          </p>
+        </section>
+
+        <!-- 02 et suivantes : à remplir en cohérence avec physique-grands-livres.js -->
+        <section id="livres-fondateurs">
+          <h2>02. Les textes fondateurs de la mécanique</h2>
+          <p>
+            Cette section présente les ouvrages qui ont établi les bases
+            de la mécanique classique, depuis les traités historiques
+            jusqu’aux manuels modernes structurés autour des lois de Newton
+            et des principes de conservation.
+          </p>
+        </section>
+
+        <section id="thermodynamique-classique">
+          <h2>03. Thermodynamique et chaleur</h2>
+          <p>
+            Sélection d’ouvrages consacrés à la thermodynamique,
+            aux gaz, aux machines thermiques et au second principe,
+            avec un accent sur la rigueur des bilans d’énergie
+            et la notion d’entropie.
+          </p>
+        </section>
+
+        <!-- … autres sections à détailler selon ton fichier JS physique-grands-livres.js … -->
+
+        <section id="sources">
+          <h2>29. Sources et références</h2>
+          <p>
+            La liste complète des ouvrages cités, avec références bibliographiques
+            normalisées (auteur, titre, éditeur, année, ISBN) et, lorsque c’est
+            possible, liens vers des éditions numériques ou des archives ouvertes.
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
