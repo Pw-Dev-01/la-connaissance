@@ -33,7 +33,7 @@ window.paleontologyCatalog = [
     }
   },
   {
-    id: 'terrain', branch: 'terrain-et-temps', number: '04', title: 'Du terrain à la collection', field: 'Méthodes de terrain',
+    id: 'terrain', branch: 'terrain-et-temps', number: '01', title: 'Du terrain à la collection', field: 'Méthodes de terrain',
     summary: 'Documenter le lieu, la couche et les conditions de découverte d’un spécimen.',
     lesson: {
       heading: 'Conserver le contexte de découverte',
@@ -44,7 +44,7 @@ window.paleontologyCatalog = [
     }
   },
   {
-    id: 'stratigraphie', branch: 'terrain-et-temps', number: '05', title: 'Stratigraphie et corrélations', field: 'Datation relative',
+    id: 'stratigraphie', branch: 'terrain-et-temps', number: '02', title: 'Stratigraphie et corrélations', field: 'Datation relative',
     summary: 'Ordonner les couches et comparer les successions fossiles entre sites.',
     lesson: {
       heading: 'Ordonner les couches et comparer les sites',
@@ -55,7 +55,7 @@ window.paleontologyCatalog = [
     }
   },
   {
-    id: 'datation', branch: 'terrain-et-temps', number: '06', title: 'Datations et échelles de temps', field: 'Datation numérique',
+    id: 'datation', branch: 'terrain-et-temps', number: '03', title: 'Datations et échelles de temps', field: 'Datation numérique',
     summary: 'Distinguer datation relative et datation radiométrique, et lire une demi-vie.',
     lesson: {
       heading: 'Relier les fossiles au temps géologique',
@@ -66,7 +66,7 @@ window.paleontologyCatalog = [
     }
   },
   {
-    id: 'evolution', branch: 'histoire-vivant', number: '07', title: 'Fossiles et évolution', field: 'Parentés et caractères',
+    id: 'evolution', branch: 'histoire-vivant', number: '01', title: 'Fossiles et évolution', field: 'Parentés et caractères',
     summary: 'Comparer les caractères fossiles et comprendre leur rôle dans l’étude de l’évolution.',
     lesson: {
       heading: 'Comparer les formes au cours du temps',
@@ -77,7 +77,7 @@ window.paleontologyCatalog = [
     }
   },
   {
-    id: 'paleoenvironnements', branch: 'histoire-vivant', number: '08', title: 'Paléoécologie', field: 'Milieux anciens',
+    id: 'paleoenvironnements', branch: 'histoire-vivant', number: '02', title: 'Paléoécologie', field: 'Milieux anciens',
     summary: 'Associer fossiles et données géologiques pour étudier les environnements du passé.',
     lesson: {
       heading: 'Reconstituer les milieux anciens',
@@ -88,7 +88,7 @@ window.paleontologyCatalog = [
     }
   },
   {
-    id: 'biodiversite', branch: 'histoire-vivant', number: '09', title: 'Biodiversité et extinctions', field: 'Registre fossile',
+    id: 'biodiversite', branch: 'histoire-vivant', number: '03', title: 'Biodiversité et extinctions', field: 'Registre fossile',
     summary: 'Interpréter les apparitions et disparitions observées dans un registre incomplet.',
     lesson: {
       heading: 'Apparitions, disparitions et registre incomplet',
@@ -99,114 +99,103 @@ window.paleontologyCatalog = [
     }
   },
   {
-    id: "cuvier-ossemens-fossiles", branch: 'grands-livres', number: '10', title: "Recherches sur les ossemens fossiles de quadrupèdes", field: 'Grands livres',
+    id: "cuvier-ossemens-fossiles", branch: 'grands-livres', number: '01', title: "Recherches sur les ossemens fossiles de quadrupèdes", field: 'Les grands livres',
     summary: "Georges Cuvier, 1812.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Georges Cuvier</p><p><strong>Édition :</strong> Deterville (Paris)</p><p><strong>Parution :</strong> 1812</p><p>Fondateur de la paléontologie des vertébrés, Cuvier applique l’anatomie comparée pour reconstituer des animaux disparus à partir d’ossements. Il établit la réalité des extinctions.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "Un organisme est un tout cohérent : à partir de quelques os, on peut déduire le reste de l’animal.", answer: "L’extinction d’espèces est un fait réel, démontré par l’anatomie comparée." },
-      exercises: [{ question: "Quelle méthode permet à Cuvier de reconstituer un animal à partir de quelques os ?", answer: "L’anatomie comparée : on met en relation la forme des os avec ceux d’espèces actuelles." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> Recherches sur les ossemens fossiles de quadrupèdes, où l’on rétablit les caractères de plusieurs espèces d’animaux que les révolutions du globe paroissent avoir détruites</p><p><strong>Auteur :</strong> Georges Cuvier (l’essai sur la géographie minéralogique des environs de Paris est écrit en collaboration avec Alexandre Brongniart)</p><p><strong>Édition :</strong> Paris, chez Deterville. Édition originale en quatre volumes in-quarto, illustrée de planches gravées.</p><p><strong>Date de parution :</strong> 1812</p><p><strong>Résumé :</strong> Cuvier y réunit ses travaux sur les ossements fossiles de quadrupèdes (éléphants, mammouths, rhinocéros, ruminants, carnivores…), mêlant paléontologie, ostéologie et stratigraphie. En comparant les fossiles aux squelettes des espèces vivantes, il établit que des espèces ont disparu, et il avance que des « révolutions » naturelles du globe ont pu les détruire.</p><p>Dans le discours qui ouvre le premier volume, Cuvier exprime l’ambition de franchir les limites du temps pour retrouver l’histoire de la Terre avant l’humanité. L’ouvrage est considéré comme l’un des textes fondateurs de la paléontologie des vertébrés.</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Whipple Library (Université de Cambridge) — Cuvier, Recherches sur les ossemens fossiles", url: "https://www.whipplelib.hps.cam.ac.uk/special/exhibitions-and-displays/exploring-deep-history/cuvier" }, { title: "Smithsonian Libraries — exemplaire numérisé (tome 3)", url: "https://library.si.edu/es/digital-library/book/recherchessurles31812cuvi" }]
     }
   },
   {
-    id: "darwin-origine-des-especes", branch: 'grands-livres', number: '11', title: "On the Origin of Species (L’Origine des espèces)", field: 'Grands livres',
+    id: "darwin-origine-des-especes", branch: 'grands-livres', number: '02', title: "On the Origin of Species", field: 'Les grands livres',
     summary: "Charles Darwin, 1859.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Charles Darwin</p><p><strong>Édition :</strong> John Murray (Londres)</p><p><strong>Parution :</strong> 1859</p><p>Darwin y expose la sélection naturelle. Il discute aussi les lacunes de l’archive fossile, débat qui nourrit encore la paléontologie.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "Les espèces descendent d’ancêtres communs et se modifient par sélection naturelle.", answer: "Les fossiles sont des témoins de la descendance avec modification, malgré une archive incomplète." },
-      exercises: [{ question: "Pourquoi Darwin insiste-t-il sur les lacunes de l’archive fossile ?", answer: "Parce que la fossilisation est rare : l’absence de formes intermédiaires s’explique en partie par ce biais de conservation." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> On the Origin of Species by Means of Natural Selection, or the Preservation of Favoured Races in the Struggle for Life</p><p><strong>Auteur :</strong> Charles Darwin</p><p><strong>Édition :</strong> Londres, John Murray. Première édition, tirée à 1 250 exemplaires. Traduction française : <em>De l’origine des espèces</em>, par Clémence Royer, Paris, Guillaumin et Masson, 1862 (première édition française).</p><p><strong>Date de parution :</strong> Novembre 1859</p><p><strong>Résumé :</strong> Darwin y présente sa théorie de l’évolution : les espèces ne sont pas fixes, elles se transforment au fil des générations, et la sélection naturelle est le mécanisme principal de ces transformations. Il présente lui-même le livre comme un résumé de ses vues.</p><p>Deux chapitres concernent directement les fossiles : le chapitre IX sur l’imperfection des archives géologiques (<em>On the Imperfection of the Geological Record</em>) et le chapitre X sur la succession géologique des êtres organisés (<em>On the Geological Succession of Organic Beings</em>).</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Darwin Correspondence Project — l’édition française de 1862 (Royer)", url: "https://www.darwinproject.ac.uk/view/letters/DCP-LETT-3250" }, { title: "Darwin Correspondence Project — John Murray, éditeur de l’Origin", url: "https://www.darwinproject.ac.uk/taxonomy/term/63" }]
     }
   },
   {
-    id: "simpson-tempo-and-mode", branch: 'grands-livres', number: '12', title: "Tempo and Mode in Evolution", field: 'Grands livres',
+    id: "simpson-tempo-and-mode", branch: 'grands-livres', number: '03', title: "Tempo and Mode in Evolution", field: 'Les grands livres',
     summary: "George Gaylord Simpson, 1944.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> George Gaylord Simpson</p><p><strong>Édition :</strong> Columbia University Press</p><p><strong>Parution :</strong> 1944</p><p>Simpson rapproche paléontologie et génétique des populations. Il analyse rythmes et modes de l’évolution à partir des fossiles et contribue à la théorie synthétique.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "Les fossiles montrent des rythmes d’évolution variables (lents, rapides) que la génétique doit expliquer.", answer: "La paléontologie est une source de données indispensable à la théorie synthétique de l’évolution." },
-      exercises: [{ question: "Que signifient « tempo » et « mode » dans le titre ?", answer: "Le tempo est la vitesse de l’évolution ; le mode est la manière dont elle se déroule (types de changements, ramifications)." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> Tempo and Mode in Evolution</p><p><strong>Auteur :</strong> George Gaylord Simpson</p><p><strong>Édition :</strong> New York, Columbia University Press, collection « Columbia Biological Series », n° 15 (xviii + 237 pages). Réédité en 1984 par Columbia University Press avec une nouvelle introduction de l’auteur.</p><p><strong>Date de parution :</strong> 1944</p><p><strong>Résumé :</strong> Simpson confronte les données de la paléontologie à celles de la génétique. Il distingue le « tempo » de l’évolution (vitesses d’évolution, accélérations et ralentissements) de son « mode » (la manière et le schéma selon lesquels elle se déroule).</p><p>Il soutient que les mécanismes étudiés par la génétique des populations suffisent à expliquer les grands schémas observés dans les fossiles. L’ouvrage est une contribution majeure à la théorie synthétique de l’évolution.</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Wellcome Collection — notice bibliographique", url: "https://works.wellcomecollection.org/works/nej9t35x" }, { title: "Notice de la réédition de 1984 (UC San Diego, Anthropogeny)", url: "https://carta.anthropogeny.org/node/1472" }]
     }
   },
   {
-    id: "gould-wonderful-life", branch: 'grands-livres', number: '13', title: "Wonderful Life: The Burgess Shale and the Nature of History", field: 'Grands livres',
+    id: "gould-wonderful-life", branch: 'grands-livres', number: '04', title: "Wonderful Life: The Burgess Shale and the Nature of History", field: 'Les grands livres',
     summary: "Stephen Jay Gould, 1989.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Stephen Jay Gould</p><p><strong>Édition :</strong> W. W. Norton (trad. fr. : La Vie est belle, Seuil, 1991)</p><p><strong>Parution :</strong> 1989</p><p>À partir de la faune cambrienne des schistes de Burgess, Gould défend le rôle de la contingence : rejouer le film de l’évolution donnerait un autre résultat.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "L’histoire de la vie dépend de hasards : la contingence compte autant que la sélection.", answer: "Les schistes de Burgess révèlent une grande diversité de plans d’organisation au Cambrien." },
-      exercises: [{ question: "Quelle idée résume la « rejouée du film de la vie » ?", answer: "Si l’on repartait des mêmes conditions de départ, de petits hasards produiraient une histoire différente." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> Wonderful Life: The Burgess Shale and the Nature of History</p><p><strong>Auteur :</strong> Stephen Jay Gould</p><p><strong>Édition :</strong> New York, W. W. Norton &amp; Company, première édition (347 pages). Traduction française : <em>La Vie est belle</em>, Éditions du Seuil, 1991.</p><p><strong>Date de parution :</strong> 1989</p><p><strong>Résumé :</strong> Le Burgess Shale est un gisement des Rocheuses canadiennes (Colombie-Britannique) qui a livré des animaux du Cambrien. Il a été découvert en 1909 par Charles D. Walcott, qui avait rattaché ses fossiles à des groupes d’animaux actuels. Plus de soixante ans plus tard, trois chercheurs britanniques les ont réexaminés, avec des résultats qui ont modifié la vision de l’histoire de la vie.</p><p>Gould s’appuie sur ce réexamen pour défendre le rôle de la contingence dans l’histoire de la vie : si l’on pouvait « rembobiner la bande de la vie » et la rejouer, le résultat pourrait être très différent.</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Publishers Weekly — notice du livre", url: "https://www.publishersweekly.com/9780393027051" }, { title: "Notice de bibliothèque (1re éd., Norton, 1989)", url: "https://library.usi.edu/record/129953" }]
     }
   },
   {
-    id: "benton-vertebrate-palaeontology", branch: 'grands-livres', number: '14', title: "Vertebrate Palaeontology", field: 'Grands livres',
+    id: "benton-vertebrate-palaeontology", branch: 'grands-livres', number: '05', title: "Vertebrate Palaeontology", field: 'Les grands livres',
     summary: "Michael J. Benton, 1990.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Michael J. Benton</p><p><strong>Édition :</strong> Chapman & Hall (Londres) ; 4e éd. Wiley-Blackwell, 2015</p><p><strong>Parution :</strong> 1990</p><p>Manuel universitaire de référence sur l’histoire des vertébrés, des premiers poissons aux mammifères, avec méthodes de classification et de datation.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "Un manuel suit l’histoire des vertébrés en combinant fossiles, phylogénie et datation.", answer: "C’est l’ouvrage de base pour une vue d’ensemble des vertébrés fossiles." },
-      exercises: [{ question: "Quels grands groupes de vertébrés ce manuel couvre-t-il ?", answer: "Des poissons aux tétrapodes, puis reptiles, dinosaures, oiseaux et mammifères." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> Vertebrate Palaeontology: Biology and Evolution (titre de la 1re édition)</p><p><strong>Auteur :</strong> Michael J. Benton (Université de Bristol)</p><p><strong>Édition :</strong> Londres, Unwin Hyman, 1re édition (xii + 377 pages). Le manuel a connu cinq éditions successives, de 1990 à 2024.</p><p><strong>Date de parution :</strong> 1990 (1re édition)</p><p><strong>Résumé :</strong> Manuel universitaire de paléontologie des vertébrés, destiné aux cours de biologie et de géologie. Il présente l’histoire évolutive des vertébrés avec une approche fortement phylogénétique, et montre comment les paléontologues obtiennent leurs informations.</p><p>Les éditions successives ont été mises à jour avec les découvertes et les travaux publiés depuis la précédente.</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Notice de bibliothèque (Unwin Hyman, 1990)", url: "https://lib.ecu.edu/catalog-preview/catalog/474688" }, { title: "Wikipédia (en) — Vertebrate Palaeontology (book)", url: "https://en.wikipedia.org/wiki/Vertebrate_Palaeontology_(book)" }]
     }
   },
   {
-    id: "alvarez-t-rex-crater-of-doom", branch: 'grands-livres', number: '15', title: "T. rex and the Crater of Doom", field: 'Grands livres',
+    id: "alvarez-t-rex-crater-of-doom", branch: 'grands-livres', number: '06', title: "T. rex and the Crater of Doom", field: 'Les grands livres',
     summary: "Walter Alvarez, 1997.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Walter Alvarez</p><p><strong>Édition :</strong> Princeton University Press</p><p><strong>Parution :</strong> 1997</p><p>Le géologue raconte comment l’équipe Alvarez a mis en évidence l’impact d’un astéroïde à l’origine de l’extinction de la fin du Crétacé, il y a 66 millions d’années.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "Une couche riche en iridium à la limite Crétacé-Paléogène signe un impact extraterrestre.", answer: "Un impact d’astéroïde est une cause majeure de l’extinction de la fin du Crétacé." },
-      exercises: [{ question: "Quel indice géochimique est au cœur de l’hypothèse de l’impact ?", answer: "Une anomalie en iridium dans l’argile de la limite Crétacé-Paléogène." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> T. rex and the Crater of Doom</p><p><strong>Auteur :</strong> Walter Alvarez (géologue, Université de Californie à Berkeley)</p><p><strong>Édition :</strong> Princeton (New Jersey), Princeton University Press (xii + 185 pages).</p><p><strong>Date de parution :</strong> 1997</p><p><strong>Résumé :</strong> Walter Alvarez, l’un des scientifiques de Berkeley qui ont découvert les premiers indices d’un impact, raconte comment l’hypothèse d’un impact d’astéroïde ou de comète à la fin du Crétacé (environ 65 millions d’années dans le livre) s’est construite pour expliquer l’extinction des dinosaures. Controversée dans les années 1980, elle a été confirmée par la découverte du cratère de Chicxulub, au nord de la péninsule du Yucatán.</p><p>Ce cratère avait été repéré en 1950 par des géologues mexicains, mais il est resté presque inconnu des autres scientifiques jusqu’en 1991. Le livre a figuré parmi les « Notable Books » du New York Times en 1997.</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Princeton University Press — présentation du livre", url: "https://press.princeton.edu/node/57521" }, { title: "Notice de bibliothèque (Princeton University Press, 1997)", url: "https://library.usi.edu/record/192911" }]
     }
   },
   {
-    id: "fortey-trilobite", branch: 'grands-livres', number: '16', title: "Trilobite! Eyewitness to Evolution", field: 'Grands livres',
+    id: "fortey-trilobite", branch: 'grands-livres', number: '07', title: "Trilobite! Eyewitness to Evolution", field: 'Les grands livres',
     summary: "Richard Fortey, 2000.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Richard Fortey</p><p><strong>Édition :</strong> HarperCollins (Londres)</p><p><strong>Parution :</strong> 2000</p><p>Un paléontologue du Natural History Museum retrace l’histoire des trilobites, arthropodes marins du Paléozoïque, et montre ce qu’ils révèlent de l’évolution et du travail de terrain.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "Les trilobites, très diversifiés et bien conservés, sont d’excellents témoins de l’évolution.", answer: "Un groupe fossile abondant permet d’étudier l’évolution et de dater les roches." },
-      exercises: [{ question: "Pourquoi les trilobites sont-ils utiles aux paléontologues ?", answer: "Ils sont nombreux, variés et bien conservés dans les roches paléozoïques, ce qui en fait des marqueurs d’évolution et de datation." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> Trilobite! Eyewitness to Evolution</p><p><strong>Auteur :</strong> Richard Fortey (paléontologue, Natural History Museum, Londres)</p><p><strong>Édition :</strong> Londres, HarperCollins, 2000 (édition britannique). Édition américaine : New York, Alfred A. Knopf, parue le 6 novembre 2000.</p><p><strong>Date de parution :</strong> 2000</p><p><strong>Résumé :</strong> Richard Fortey, spécialiste des trilobites, consacre ce livre à ces arthropodes marins du Paléozoïque, qui ont duré environ trois cents millions d’années. Il évoque l’histoire de leur recherche, leur anatomie (leurs yeux étaient faits de calcite), son parcours de chercheur et de voyageur, et ce que ces fossiles apprennent sur l’évolution et sur la géographie des anciens océans et continents.</p><p>Le titre fait des trilobites des « témoins oculaires de l’évolution », dont l’abondance, la longévité et la variété sont centrales pour comprendre comment l’évolution s’est déroulée.</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Kirkus Reviews — Trilobite!", url: "https://www.kirkusreviews.com/book-reviews/richard-fortey/trilobite" }, { title: "Notice de bibliothèque (Knopf, 2000)", url: "https://library.usi.edu/record/245633" }]
     }
   },
   {
-    id: "benton-when-life-nearly-died", branch: 'grands-livres', number: '17', title: "When Life Nearly Died: The Greatest Mass Extinction of All Time", field: 'Grands livres',
+    id: "benton-when-life-nearly-died", branch: 'grands-livres', number: '08', title: "When Life Nearly Died: The Greatest Mass Extinction of All Time", field: 'Les grands livres',
     summary: "Michael J. Benton, 2003.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Michael J. Benton</p><p><strong>Édition :</strong> Thames & Hudson</p><p><strong>Parution :</strong> 2003</p><p>Synthèse sur l’extinction du Permien-Trias, il y a environ 252 millions d’années, la plus grave de l’histoire de la vie, avec ses causes possibles et la reconstruction des écosystèmes.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "La crise du Permien-Trias a éliminé la grande majorité des espèces marines.", answer: "La vie met des millions d’années à se reconstruire après une extinction de masse." },
-      exercises: [{ question: "À quelle époque se situe la plus grande extinction de masse décrite par Benton ?", answer: "À la limite Permien-Trias, il y a environ 252 millions d’années." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> When Life Nearly Died: The Greatest Mass Extinction of All Time</p><p><strong>Auteur :</strong> Michael J. Benton (Université de Bristol)</p><p><strong>Édition :</strong> Londres, Thames &amp; Hudson, 1re édition (336 pages).</p><p><strong>Date de parution :</strong> 2003</p><p><strong>Résumé :</strong> Le livre est consacré à l’extinction de masse de la fin du Permien, il y a environ 251 millions d’années (date retenue dans le livre), au cours de laquelle environ 90 % des espèces auraient disparu, sur terre comme en mer. Benton retrace l’histoire des idées sur le catastrophisme, puis les recherches menées du terrain (Groenland, Russie) au laboratoire.</p><p>Il examine les causes possibles — impact d’une météorite ou d’une comète, ou longue activité volcanique en Sibérie — et donne son verdict à la fin du livre. Le dernier chapitre s’interroge sur une éventuelle « sixième extinction de masse ».</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Notice de bibliothèque (Thames & Hudson, 2003)", url: "https://library.usi.edu/record/267414" }, { title: "SERC (Carleton College) — résumé de l’ouvrage", url: "https://serc.carleton.edu/resources/1321.html" }]
     }
   },
   {
-    id: "rudwick-bursting-the-limits-of-time", branch: 'grands-livres', number: '18', title: "Bursting the Limits of Time", field: 'Grands livres',
+    id: "rudwick-bursting-the-limits-of-time", branch: 'grands-livres', number: '09', title: "Bursting the Limits of Time", field: 'Les grands livres',
     summary: "Martin J. S. Rudwick, 2005.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Martin J. S. Rudwick</p><p><strong>Édition :</strong> University of Chicago Press</p><p><strong>Parution :</strong> 2005</p><p>Histoire de la découverte du temps profond et de la naissance de la géologie et de la paléontologie, de la fin du XVIIIe siècle aux années 1820.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "La Terre est ancienne : le temps profond a été reconnu grâce aux strates et aux fossiles.", answer: "La paléontologie est née en même temps que l’idée d’un passé de la Terre très long." },
-      exercises: [{ question: "Qu’appelle-t-on « temps profond » ?", answer: "L’idée que l’histoire de la Terre se compte en millions d’années, bien au-delà de l’histoire humaine." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> Bursting the Limits of Time: The Reconstruction of Geohistory in the Age of Revolution</p><p><strong>Auteur :</strong> Martin J. S. Rudwick</p><p><strong>Édition :</strong> Chicago et Londres, University of Chicago Press (xxiv + 708 pages). Livre issu des Tarner Lectures données au Trinity College (Cambridge) en 1996.</p><p><strong>Date de parution :</strong> 2005</p><p><strong>Résumé :</strong> Étude historique sur la manière dont les savants de la fin du XVIIIe et du début du XIXe siècle ont reconstruit l’histoire de la Terre (la « géohistoire ») et reconnu ce que l’on appelle aujourd’hui le temps profond. Le récit part de la création datée de 4004 av. J.-C. par l’archevêque Ussher en 1650, croyance qui n’a été définitivement abandonnée qu’au cours de cette période.</p><p>L’ouvrage couvre environ quarante ans autour de la Révolution française et des guerres napoléoniennes, et montre comment des géologues et des paléontologues ont assemblé peu à peu cette histoire.</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Wellcome Collection — notice bibliographique", url: "https://identity.wellcomecollection.org/works/tb7zmwz4" }, { title: "Notice de bibliothèque (University of Chicago Press, 2005)", url: "https://library.usi.edu/record/326986" }]
     }
   },
   {
-    id: "shubin-your-inner-fish", branch: 'grands-livres', number: '19', title: "Your Inner Fish", field: 'Grands livres',
+    id: "shubin-your-inner-fish", branch: 'grands-livres', number: '10', title: "Your Inner Fish", field: 'Les grands livres',
     summary: "Neil Shubin, 2008.",
     lesson: {
-      heading: 'Présentation de l’ouvrage',
-      content: "<p><strong>Auteur :</strong> Neil Shubin</p><p><strong>Édition :</strong> Pantheon Books</p><p><strong>Parution :</strong> 2008</p><p>Le codécouvreur de Tiktaalik, forme de transition entre poissons et tétrapodes, montre comment fossiles et anatomie humaine révèlent nos origines lointaines.</p>",
-      example: { statement: 'Ce qu’il faut retenir de ce livre.', calculation: "Notre anatomie conserve des traces de nos ancêtres poissons.", answer: "Les fossiles de transition comme Tiktaalik éclairent le passage de l’eau à la terre." },
-      exercises: [{ question: "Quel fossile illustre le passage des poissons aux tétrapodes ?", answer: "Tiktaalik, découvert dans l’Arctique canadien, qui a des caractères de poisson et de tétrapode." }],
-      sources: []
+      heading: 'Fiche du livre',
+      content: "<p><strong>Titre complet :</strong> Your Inner Fish: A Journey into the 3.5-Billion-Year History of the Human Body</p><p><strong>Auteur :</strong> Neil Shubin (paléontologue et professeur d’anatomie, Université de Chicago)</p><p><strong>Édition :</strong> New York, Pantheon Books, 1re édition (229 pages).</p><p><strong>Date de parution :</strong> 2008</p><p><strong>Résumé :</strong> Neil Shubin, codécouvreur de <em>Tiktaalik</em> (un poisson fossile d’environ 375 millions d’années découvert en 2004 au Nunavut, dans l’Arctique canadien, et annoncé en avril 2006), raconte l’histoire de l’évolution en suivant les organes du corps humain.</p><p>En s’appuyant sur les fossiles et sur l’ADN, il montre que nos mains rappellent des nageoires de poissons, que l’organisation de notre tête évoque celle d’un poisson sans mâchoire disparu et que des parties importantes de notre génome ressemblent à celles de vers et de bactéries.</p>",
+      sourcesHeading: 'Notices bibliographiques',
+      sources: [{ title: "Notice de bibliothèque (Pantheon Books, 2008)", url: "https://lib.ecu.edu/catalog-preview/catalog/1345623" }, { title: "Canadian Medical Association Journal — compte rendu", url: "https://www.cmaj.ca/content/180/4/434" }]
     }
   }
 ];
-
