@@ -1,28 +1,3 @@
-// cours.js — version complète 
-// Convertit automatiquement les vecteurs \vec{x} en MathML propre
-
-function renderVectorEquation(text) {
-  // Remplace \vec{x} par un bloc MathML
-  const mathML = text.replace(/\\vec\{([a-zA-Z])\}/g, (match, letter) => {
-    return `
-      <mover>
-        <mi>${letter}</mi>
-        <mo>→</mo>
-      </mover>
-    `;
-  });
-
-  return `
-    <div class="formula-block formula-accent">
-      <math display="block">
-        <mrow>
-          ${mathML}
-        </mrow>
-      </math>
-    </div>
-  `;
-}
-
 (function () {
   const $ = (sel) => document.querySelector(sel);
   const setText = (sel, value) => { const el = $(sel); if (el) el.textContent = value; };
@@ -138,109 +113,32 @@ function renderVectorEquation(text) {
       container.append(s);
     }
 
-    // Formule principale — ENCADRÉ CORAIL (MathML corrigé)
+    // Formule principale — ENCADRÉ CORAIL
     if (lesson.formula && lesson.formula.text) {
-      const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
+  const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
 
-      const box = el('div', 'formula-block formula-accent');
-      box.append(el('span', 'formula-label', lesson.formula.label || 'Formule'));
+  const box = el('div', 'formula-block formula-accent');
+  box.append(el('span', 'formula-label', lesson.formula.label || 'Formule'));
 
-// Si la formule contient un vecteur, on utilise le bloc MathML automatique
-if (lesson.formula.text.includes("\\vec")) {
-  const html = renderVectorEquation(lesson.formula.text);
-  const wrapper = document.createElement('div');
-  wrapper.innerHTML = html;
-  box.append(wrapper.firstElementChild);
+  if (lesson.formula.mathML) {
+    const math = el('math', 'mathml-display');
+    math.setAttribute('display', 'block');
+    math.innerHTML = lesson.formula.mathML;
+    box.append(math);
+  }
+
+  box.append(el('span', 'math-display', lesson.formula.text));
 
   s.append(box);
   container.append(s);
-  return; // On stoppe ici pour ne pas afficher le texte brut
 }
-
-      // Exemple : si l’identifiant de la formule correspond à la 2e loi de Newton,
-      // on force un MathML propre.
-      if (lesson.formula.id === 'newton-second-law') {
-        lesson.formula.mathML = `
-<math display="block">
-  <mrow>
-    <mo>∑</mo>
-    <msub>
-      <mi>F</mi>
-      <mi>ext</mi>
-    </msub>
-    <mo>=</mo>
-    <mi>m</mi>
-    <mo>&#x2062;</mo>
-    <mi>a</mi>
-  </mrow>
-</math>`;
-      }
-
-      // Exemple : mouvement à accélération constante
-      if (lesson.formula.id === 'uniform-acceleration') {
-        lesson.formula.mathML = `
-<math display="block">
-  <mrow>
-    <mi>v</mi>
-    <mo>(</mo><mi>t</mi><mo>)</mo>
-    <mo>=</mo>
-    <msub><mi>v</mi><mn>0</mn></msub>
-    <mo>+</mo>
-    <mi>a</mi><mi>t</mi>
-    <mo>|</mo>
-    <mi>x</mi>
-    <mo>(</mo><mi>t</mi><mo>)</mo>
-    <mo>=</mo>
-    <msub><mi>x</mi><mn>0</mn></msub>
-    <mo>+</mo>
-    <msub><mi>v</mi><mn>0</mn></msub><mi>t</mi>
-    <mo>+</mo>
-    <mfrac>
-      <mn>1</mn>
-      <mn>2</mn>
-    </mfrac>
-    <mi>a</mi>
-    <msup><mi>t</mi><mn>2</mn></msup>
-  </mrow>
-</math>`;
-      }
-
-      if (lesson.formula.mathML) {
-        const math = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'math');
-        math.setAttribute('display', 'block');
-        // On insère le contenu interne du MathML fourni
-        math.innerHTML = lesson.formula.mathML
-          .replace(/^<math[^>]*>/i, '')
-          .replace(/<\/math>\s*$/i, '');
-        math.classList.add('mathml-display');
-        box.append(math);
-      }
-
-      s.append(box);
-      container.append(s);
-    }
-
     // Équations détaillées — ENCADRÉ CORAIL
     if (lesson.equationDetails && lesson.equationDetails.length) {
       const s = makeSection(++n, 'ÉQUATIONS', 'Les équations en détail');
       lesson.equationDetails.forEach((eq) => {
         const box = el('div', 'equation-detail');
         box.append(el('h3', '', eq.title));
-
-        // Si eq.formula contient du MathML, on peut aussi le traiter proprement :
-        if (eq.mathML) {
-          const math = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'math');
-          math.setAttribute('display', 'block');
-          math.innerHTML = eq.mathML
-            .replace(/^<math[^>]*>/i, '')
-            .replace(/<\/math>\s*$/i, '');
-          const f = el('div', 'formula-block formula-accent');
-          f.append(math);
-          box.append(f);
-        } else {
-          box.append(el('div', 'formula-block formula-accent', eq.formula));
-        }
-
+        box.append(el('div', 'formula-block formula-accent', eq.formula));
         if (eq.explanation) box.append(el('p', '', eq.explanation));
         if (eq.parameters) box.append(el('p', '', 'Paramètres : ' + eq.parameters));
         if (eq.example) box.append(el('p', '', 'Exemple : ' + eq.example));
