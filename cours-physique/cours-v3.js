@@ -1,4 +1,27 @@
-// cours.js — version complète avec bloc MathML corrigé
+// cours.js — version complète 
+// Convertit automatiquement les vecteurs \vec{x} en MathML propre
+
+function renderVectorEquation(text) {
+  // Remplace \vec{x} par un bloc MathML
+  const mathML = text.replace(/\\vec\{([a-zA-Z])\}/g, (match, letter) => {
+    return `
+      <mover>
+        <mi>${letter}</mi>
+        <mo>→</mo>
+      </mover>
+    `;
+  });
+
+  return `
+    <div class="formula-block formula-accent">
+      <math display="block">
+        <mrow>
+          ${mathML}
+        </mrow>
+      </math>
+    </div>
+  `;
+}
 
 (function () {
   const $ = (sel) => document.querySelector(sel);
@@ -122,6 +145,18 @@
       const box = el('div', 'formula-block formula-accent');
       box.append(el('span', 'formula-label', lesson.formula.label || 'Formule'));
 
+// Si la formule contient un vecteur, on utilise le bloc MathML automatique
+if (lesson.formula.text.includes("\\vec")) {
+  const html = renderVectorEquation(lesson.formula.text);
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = html;
+  box.append(wrapper.firstElementChild);
+
+  s.append(box);
+  container.append(s);
+  return; // On stoppe ici pour ne pas afficher le texte brut
+}
+
       // Exemple : si l’identifiant de la formule correspond à la 2e loi de Newton,
       // on force un MathML propre.
       if (lesson.formula.id === 'newton-second-law') {
@@ -180,8 +215,6 @@
         math.classList.add('mathml-display');
         box.append(math);
       }
-
-      box.append(el('span', 'math-display', lesson.formula.text));
 
       s.append(box);
       container.append(s);
