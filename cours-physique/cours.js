@@ -1,193 +1,188 @@
-// Récupération de l’ID dans l’URL
-const id = new URLSearchParams(location.search).get('id');
+(function () {
+  const $ = (sel) => document.querySelector(sel);
+  const setText = (sel, value) => { const el = $(sel); if (el) el.textContent = value; };
 
-// ------------------------------------------------------------
-// 1) COURS CLASSIQUE (cours simples dans window.courseCatalog)
-// ------------------------------------------------------------
-let course = window.courseCatalog.find(c => c.id === id);
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
 
-// ------------------------------------------------------------
-// 2) CHAPTERS (sous-chapitres dans branch.chapters)
-// ------------------------------------------------------------
-let branch = null;
-let chapter = null;
+  function makeSection(index, label, title, extraClass) {
+    const section = el('section', 'lesson-section' + (extraClass ? ' ' + extraClass : ''));
+    section.append(el('p', 'section-index', `${String(index).padStart(2, '0')} / ${label}`));
+    section.append(el('h2', '', title));
+    return section;
+  }
 
-if (!course) {
-  for (const item of window.courseCatalog) {
-    if (item.chapters) {
-      const found = item.chapters.find(ch => ch.id === id);
-      if (found) {
-        branch = item;
-        chapter = found;
-        break;
-      }
+  const id = new URLSearchParams(location.search).get('id');
+  const catalog = window.courseCatalog || [];
+
+  // 1) Cours simple
+  let course = catalog.find((c) => c.id === id);
+  let branch = null;
+  let chapter = null;
+
+  // 2) Chapitre d'une branche
+  if (!course) {
+    for (const item of catalog) {
+      const found = (item.chapters || []).find((ch) => ch.id === id);
+      if (found) { branch = item; chapter = found; break; }
     }
   }
-}
 
-// ------------------------------------------------------------
-// 3) COURS APPROFONDIS (deepCourse avec sections/anchors)
-// ------------------------------------------------------------
-if (!course && !chapter) {
-  course = window.courseCatalog.find(item =>
-    item.sections && item.sections.some(entry => entry.anchor === id)
-  );
-}
+  // 3) Cours approfondi via ancre
+  if (!course && !chapter) {
+    course = catalog.find((item) => (item.sections || []).some((s) => s.anchor === id));
+  }
 
-// ------------------------------------------------------------
-// 4) AFFICHAGE : COURS APPROFONDI
-// ------------------------------------------------------------
-if (course && course.sections) {
-  document.title = `${course.title} · Cours de physique`;
-  document.querySelector('#lesson-title').textContent = course.title;
-  document.querySelector('#lesson-summary').textContent = course.note || course.summary;
-  document.querySelector('#lesson-eyebrow').textContent = course.title.toUpperCase('fr-FR');
-  document.querySelector('#lesson-field').textContent = 'COURS APPROFONDI';
-  document.querySelector('#lesson-level').textContent = 'APPROFONDISSEMENT';
+  // 4) Branche / cours approfondi : sommaire
+  if (!chapter && course && course.sections) {
+    document.title = `${course.title} · Cours de physique`;
+    setText('#lesson-title', course.title);
+    setText('#lesson-summary', course.note || course.summary || '');
+    setText('#lesson-eyebrow', course.title.toUpperCase());
+    setText('#lesson-field', 'COURS APPROFONDI');
+    setText('#lesson-level', 'APPROFONDISSEMENT');
 
-  const container = document.querySelector('#chapter-lesson');
+    const container = $('#chapter-lesson');
+    const intro = makeSection(1, 'SOMMAIRE', 'Chapitres du cours');
+    intro.append(el('p', '', course.note || ''));
+    container.append(intro);
 
-  const intro = document.createElement('section');
-  intro.className = 'lesson-section';
-  intro.innerHTML = `
-    <p class="section-index">01 / SOMMAIRE</p>
-    <h2>Chapitres du cours</h2>
-    <p>${course.note || ''}</p>
-  `;
-  container.append(intro);
-
-  const list = document.createElement('nav');
-  list.className = 'chapter-nav';
-
-  course.chapters?.forEach((ch) => {
-    const link = document.createElement('a');
-    link.href = `cours.html?id=${encodeURIComponent(ch.id)}`;
-    link.textContent = ch.title;
-    list.append(link);
-  });
-
-  container.append(list);
-  return;
-}
-
-// ------------------------------------------------------------
-// 5) AFFICHAGE : CHAPITRE CLASSIQUE
-// ------------------------------------------------------------
-if (branch && chapter) {
-  document.title = `${chapter.title} · Cours de physique`;
-  document.querySelector('#lesson-title').textContent = chapter.title;
-  document.querySelector('#lesson-summary').textContent = chapter.summary;
-  document.querySelector('#lesson-eyebrow').textContent =
-    `${branch.title.toUpperCase('fr-FR')} · ${chapter.field}`;
-  document.querySelector('#lesson-field').textContent = chapter.field;
-  document.querySelector('#lesson-level').textContent = 'BASES → APPROFONDISSEMENT';
-
-  const levelLabel = document.querySelector('#lesson-level-label');
-  levelLabel.textContent = branch.title.toUpperCase('fr-FR');
-  levelLabel.href = `index.html#${branch.id}`;
-
-  document.querySelector('#lesson-footer').textContent =
-    `${branch.title.toUpperCase('fr-FR')} · ${chapter.field.toUpperCase('fr-FR')}`;
-
-  // Navigation latérale
-  branch.chapters.forEach((sibling) => {
-    const link = document.createElement('a');
-    link.href = `cours.html?id=${encodeURIComponent(sibling.id)}`;
-    link.textContent = sibling.title;
-    if (sibling.id === chapter.id) {
-      link.classList.add('is-active');
-      link.setAttribute('aria-current', 'page');
-    }
-    document.querySelector('#lesson-chapter-nav').append(link);
-  });
-
-  // Construction du contenu
-  const lessonContainer = document.querySelector('#chapter-lesson');
-
-  // SECTION 01 : COMPRENDRE
-  const theory = document.createElement('section');
-  theory.className = 'lesson-section';
-  theory.innerHTML = `
-    <p class="section-index">01 / COMPRENDRE</p>
-    <h2>Les notions essentielles</h2>
-  `;
-  chapter.lesson.sections.forEach((paragraph) => {
-    const p = document.createElement('p');
-    p.textContent = paragraph;
-    theory.append(p);
-  });
-  lessonContainer.append(theory);
-
-  // SECTION 02 : EXEMPLE GUIDÉ
-  const example = document.createElement('section');
-  example.className = 'lesson-section';
-  example.innerHTML = `
-    <p class="section-index">02 / EXEMPLE GUIDÉ</p>
-    <h2>Méthode pas à pas</h2>
-    <p>${chapter.lesson.example.statement}</p>
-    <p>${chapter.lesson.example.calculation}</p>
-  `;
-  const result = document.createElement('div');
-  result.className = 'worked-result';
-  result.textContent = chapter.lesson.example.answer;
-  example.append(result);
-  lessonContainer.append(example);
-
-  // SECTION 03 : EXERCICE
-  const practice = document.createElement('section');
-  practice.className = 'lesson-section exercise-section';
-  practice.innerHTML = `
-    <p class="section-index">03 / S’ENTRAÎNER</p>
-    <h2>À toi de jouer</h2>
-  `;
-  const exercise = document.createElement('details');
-  exercise.className = 'exercise';
-  const summary = document.createElement('summary');
-  summary.innerHTML = `
-    <span class="exercise-number">A</span>
-    <span>${chapter.lesson.exercise.question}</span>
-    <span class="reveal-label">Voir la correction</span>
-  `;
-  exercise.append(summary);
-  const answer = document.createElement('div');
-  answer.className = 'exercise-answer';
-  answer.textContent = chapter.lesson.exercise.answer;
-  exercise.append(answer);
-  exercise.addEventListener('toggle', () => {
-    summary.querySelector('.reveal-label').textContent =
-      exercise.open ? 'Masquer la correction' : 'Voir la correction';
-  });
-  practice.append(exercise);
-  lessonContainer.append(practice);
-
-  // SECTION 04 : RÉFÉRENCES
-  if (chapter.lesson.sources?.length) {
-    const references = document.createElement('section');
-    references.className = 'lesson-section';
-    references.innerHTML = `
-      <p class="section-index">04 / RÉFÉRENCES</p>
-      <h2>Sources scientifiques</h2>
-    `;
-    chapter.lesson.sources.forEach((source) => {
-      const p = document.createElement('p');
-      const link = document.createElement('a');
-      link.href = source.url;
-      link.textContent = source.title;
-      link.target = '_blank';
-      link.rel = 'noreferrer';
-      p.append(link);
-      references.append(p);
+    const nav = el('nav', 'chapter-nav');
+    (course.chapters || []).forEach((ch) => {
+      const a = el('a', '', ch.title);
+      a.href = `cours.html?id=${encodeURIComponent(ch.id)}`;
+      nav.append(a);
     });
-    lessonContainer.append(references);
+    container.append(nav);
+    return;
   }
 
-  return;
-}
+  // 5) Chapitre
+  if (branch && chapter) {
+    const lesson = chapter.lesson || {};
+    document.title = `${chapter.title} · Cours de physique`;
+    setText('#lesson-title', chapter.title);
+    setText('#lesson-summary', chapter.summary || '');
+    setText('#lesson-eyebrow', `${branch.title.toUpperCase()} · ${chapter.field || ''}`);
+    setText('#lesson-field', chapter.field || '');
+    setText('#lesson-level', 'BASES → APPROFONDISSEMENT');
 
-// ------------------------------------------------------------
-// 6) ERREUR : rien trouvé
-// ------------------------------------------------------------
-document.title = 'Leçon introuvable · Cours de physique';
-document.querySelector('#lesson-title').textContent = 'Leçon introuvable';
-document.querySelector('#lesson-summary').textContent =
-  'Ce chapitre ne figure pas dans le catalogue.';
+    const levelLabel = $('#lesson-level-label');
+    if (levelLabel) {
+      levelLabel.textContent = branch.title.toUpperCase();
+      levelLabel.href = `index.html#${branch.id}`;
+    }
+    setText('#lesson-footer', `${branch.title.toUpperCase()} · ${(chapter.field || '').toUpperCase()}`);
+
+    const sideNav = $('#lesson-chapter-nav');
+    if (sideNav) {
+      branch.chapters.forEach((sibling) => {
+        const a = el('a', '', sibling.title);
+        a.href = `cours.html?id=${encodeURIComponent(sibling.id)}`;
+        if (sibling.id === chapter.id) {
+          a.classList.add('is-active');
+          a.setAttribute('aria-current', 'page');
+        }
+        sideNav.append(a);
+      });
+    }
+
+    const container = $('#chapter-lesson');
+    let n = 0;
+
+    // Fiche bibliographique (grands livres)
+    if (lesson.fiche && lesson.fiche.length) {
+      const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
+      const dl = el('dl', 'book-fiche');
+      lesson.fiche.forEach(([label, value]) => {
+        dl.append(el('dt', '', label));
+        dl.append(el('dd', '', value));
+      });
+      s.append(dl);
+      container.append(s);
+    }
+
+    // Notions
+    if (lesson.sections && lesson.sections.length) {
+      const s = makeSection(++n, lesson.fiche ? 'RÉSUMÉ' : 'COMPRENDRE',
+        lesson.fiche ? 'De quoi parle ce livre' : 'Les notions essentielles');
+      lesson.sections.forEach((p) => s.append(el('p', '', p)));
+      container.append(s);
+    }
+
+    // Formule principale
+    if (lesson.formula && lesson.formula.text) {
+      const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
+      s.append(el('div', 'worked-result', lesson.formula.text));
+      container.append(s);
+    }
+
+    // Détail des équations
+    if (lesson.equationDetails && lesson.equationDetails.length) {
+      const s = makeSection(++n, 'ÉQUATIONS', 'Les équations en détail');
+      lesson.equationDetails.forEach((eq) => {
+        const box = el('div', 'equation-detail');
+        box.append(el('h3', '', eq.title));
+        box.append(el('div', 'worked-result', eq.formula));
+        if (eq.explanation) box.append(el('p', '', eq.explanation));
+        if (eq.parameters) box.append(el('p', '', 'Paramètres : ' + eq.parameters));
+        if (eq.example) box.append(el('p', '', 'Exemple : ' + eq.example));
+        if (eq.result) box.append(el('p', '', 'Résultat : ' + eq.result));
+        s.append(box);
+      });
+      container.append(s);
+    }
+
+    // Exemple guidé
+    if (lesson.example) {
+      const s = makeSection(++n, 'EXEMPLE GUIDÉ', 'Méthode pas à pas');
+      if (lesson.example.statement) s.append(el('p', '', lesson.example.statement));
+      if (lesson.example.calculation) s.append(el('p', '', lesson.example.calculation));
+      if (lesson.example.answer) s.append(el('div', 'worked-result', lesson.example.answer));
+      container.append(s);
+    }
+
+    // Exercice
+    if (lesson.exercise) {
+      const s = makeSection(++n, 'S’ENTRAÎNER', 'À toi de jouer', 'exercise-section');
+      const details = el('details', 'exercise');
+      const summary = el('summary');
+      summary.append(el('span', 'exercise-number', 'A'));
+      summary.append(el('span', '', lesson.exercise.question));
+      const reveal = el('span', 'reveal-label', 'Voir la correction');
+      summary.append(reveal);
+      details.append(summary);
+      details.append(el('div', 'exercise-answer', lesson.exercise.answer));
+      details.addEventListener('toggle', () => {
+        reveal.textContent = details.open ? 'Masquer la correction' : 'Voir la correction';
+      });
+      s.append(details);
+      container.append(s);
+    }
+
+    // Sources
+    if (lesson.sources && lesson.sources.length) {
+      const s = makeSection(++n, 'RÉFÉRENCES', lesson.sourcesHeading || 'Sources scientifiques');
+      lesson.sources.forEach((src) => {
+        const p = el('p');
+        const a = el('a', '', src.title);
+        a.href = src.url;
+        a.target = '_blank';
+        a.rel = 'noreferrer';
+        p.append(a);
+        s.append(p);
+      });
+      container.append(s);
+    }
+    return;
+  }
+
+  // 6) Introuvable
+  document.title = 'Leçon introuvable · Cours de physique';
+  setText('#lesson-title', 'Leçon introuvable');
+  setText('#lesson-summary', 'Ce chapitre ne figure pas dans le catalogue.');
+})();
