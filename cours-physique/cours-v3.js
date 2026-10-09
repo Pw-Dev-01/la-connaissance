@@ -93,17 +93,116 @@
     const container = $('#chapter-lesson');
     let n = 0;
 
-    // Fiche bibliographique
-    if (lesson.fiche && lesson.fiche.length) {
-      const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
-      const dl = el('dl', 'book-fiche');
-      lesson.fiche.forEach(([label, value]) => {
-        dl.append(el('dt', '', label));
-        dl.append(el('dd', '', value));
-      });
-      s.append(dl);
-      container.append(s);
+    (function () {
+  const $ = (sel) => document.querySelector(sel);
+  const setText = (sel, value) => { const el = $(sel); if (el) el.textContent = value; };
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined) node.textContent = text;
+    return node;
+  }
+
+  function makeSection(index, label, title, extraClass) {
+    const section = el('section', 'lesson-section' + (extraClass ? ' ' + extraClass : ''));
+    section.append(el('p', 'section-index', `${String(index).padStart(2, '0')} / ${label}`));
+    section.append(el('h2', '', title));
+    return section;
+  }
+
+  const id = new URLSearchParams(location.search).get('id');
+  const catalog = window.courseCatalog || [];
+
+  // 1) Chapitre d'une branche
+  let course = null;
+  let branch = null;
+  let chapter = null;
+  for (const item of catalog) {
+    const found = (item.chapters || []).find((ch) => ch.id === id);
+    if (found) { branch = item; chapter = found; break; }
+  }
+
+  // 2) Sinon : cours simple
+  if (!chapter) course = catalog.find((c) => c.id === id) || null;
+
+  // 3) Cours approfondi via ancre
+  if (!course && !chapter) {
+    course = catalog.find((item) => (item.sections || []).some((s) => s.anchor === id));
+  }
+
+  // 4) Sommaire d’un cours approfondi
+  if (!chapter && course && course.sections) {
+    document.title = `${course.title} · Cours de géologie`;
+    setText('#lesson-title', course.title);
+    setText('#lesson-summary', course.note || course.summary || '');
+    setText('#lesson-eyebrow', course.title.toUpperCase());
+    setText('#lesson-field', 'COURS APPROFONDI');
+    setText('#lesson-level', 'APPROFONDISSEMENT');
+
+    const container = $('#chapter-lesson');
+    const intro = makeSection(1, 'SOMMAIRE', 'Chapitres du cours');
+    intro.append(el('p', '', course.note || ''));
+    container.append(intro);
+
+    const nav = el('nav', 'chapter-nav');
+    (course.chapters || []).forEach((ch) => {
+      const a = el('a', '', ch.title);
+      a.href = `cours.html?id=${encodeURIComponent(ch.id)}`;
+      nav.append(a);
+    });
+    container.append(nav);
+    return;
+  }
+
+  // 5) Chapitre normal
+  if (branch && chapter) {
+    const lesson = chapter.lesson || {};
+    document.title = `${chapter.title} · Cours de géologie`;
+    setText('#lesson-title', chapter.title);
+    setText('#lesson-summary', chapter.summary || '');
+    setText('#lesson-eyebrow', `${branch.title.toUpperCase()} · ${chapter.field || ''}`);
+    setText('#lesson-field', chapter.field || '');
+    setText('#lesson-level', 'BASES → APPROFONDISSEMENT');
+
+    const levelLabel = $('#lesson-level-label');
+    if (levelLabel) {
+      levelLabel.textContent = branch.title.toUpperCase();
+      levelLabel.href = `index.html#${branch.id}`;
     }
+    setText('#lesson-footer', `${branch.title.toUpperCase()} · ${(chapter.field || '').toUpperCase()}`);
+
+    const sideNav = $('#lesson-chapter-nav');
+    if (sideNav) {
+      branch.chapters.forEach((sibling) => {
+        const a = el('a', '', sibling.title);
+        a.href = `cours.html?id=${encodeURIComponent(sibling.id)}`;
+        if (sibling.id === chapter.id) {
+          a.classList.add('is-active');
+          a.setAttribute('aria-current', 'page');
+        }
+        sideNav.append(a);
+      });
+    }
+
+    const container = $('#chapter-lesson');
+    let n = 0;
+
+    // Fiche bibliographique — style paléontologie
+if (lesson.fiche && lesson.fiche.length) {
+  const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
+
+  const ficheContainer = el('div', 'book-fiche');
+
+  lesson.fiche.forEach(([label, value]) => {
+    const p = document.createElement('p');
+    p.innerHTML = `<strong>${label} :</strong> ${value}`;
+    ficheContainer.append(p);
+  });
+
+  s.append(ficheContainer);
+  container.append(s);
+}
 
     // Sections
     if (lesson.sections && lesson.sections.length) {
