@@ -93,21 +93,19 @@
     const container = $('#chapter-lesson');
     let n = 0;
 
-    // Fiche bibliographique
+    // Fiche bibliographique — style paléontologie
 if (lesson.fiche && lesson.fiche.length) {
   const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
-  const dl = el('dl', 'book-fiche');
+
+  const ficheContainer = el('div', 'book-fiche');
 
   lesson.fiche.forEach(([label, value]) => {
-    const dt = el('dt'); // clé technique, peut rester vide ou contenir le label
-    dt.textContent = label; // utile pour l’accessibilité, mais pas affiché
-    const dd = el('dd');
-    dd.innerHTML = `<strong>${label} :</strong> ${value}`;
-    dl.append(dt);
-    dl.append(dd);
+    const p = document.createElement('p');
+    p.innerHTML = `<strong>${label} :</strong> ${value}`;
+    ficheContainer.append(p);
   });
 
-  s.append(dl);
+  s.append(ficheContainer);
   container.append(s);
 }
 
