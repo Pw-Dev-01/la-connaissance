@@ -99,9 +99,10 @@ if (lesson.fiche && lesson.fiche.length) {
   const dl = el('dl', 'book-fiche');
 
   lesson.fiche.forEach(([label, value]) => {
-    const dt = el('dt');
-    dt.innerHTML = `<strong>${label} :</strong>`;
-    const dd = el('dd', '', value);
+    const dt = el('dt'); // clé technique, peut rester vide ou contenir le label
+    dt.textContent = label; // utile pour l’accessibilité, mais pas affiché
+    const dd = el('dd');
+    dd.innerHTML = `<strong>${label} :</strong> ${value}`;
     dl.append(dt);
     dl.append(dd);
   });
