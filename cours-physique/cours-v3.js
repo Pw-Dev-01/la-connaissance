@@ -186,7 +186,9 @@
       lesson.equationDetails.forEach((eq) => {
         const box = el('div', 'equation-detail');
         box.append(el('h3', '', eq.title));
-        box.append(rich('div', 'formula-block formula-accent', eq.formula));
+        const formulaBox = el('div', 'formula-block formula-accent');
+        formulaBox.append(rich('span', 'math-display', eq.formula));
+        box.append(formulaBox);
         if (eq.explanation) box.append(rich('p', '', eq.explanation));
         if (eq.parameters) box.append(rich('p', '', 'Paramètres : ' + eq.parameters));
         if (eq.example) box.append(rich('p', '', 'Exemple : ' + eq.example));
@@ -201,7 +203,11 @@
       const s = makeSection(++n, 'EXEMPLE GUIDÉ', 'Méthode pas à pas');
       if (lesson.example.statement) s.append(rich('p', '', lesson.example.statement));
       if (lesson.example.calculation) s.append(rich('p', '', lesson.example.calculation));
-      if (lesson.example.answer) s.append(rich('div', 'worked-result', lesson.example.answer));
+      if (lesson.example.answer) {
+        const result = el('div', 'worked-result');
+        result.append(rich('span', '', lesson.example.answer));
+        s.append(result);
+      }
       container.append(s);
     }
 
