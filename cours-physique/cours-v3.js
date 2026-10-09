@@ -203,7 +203,7 @@ if (lesson.fiche && lesson.fiche.length) {
   s.append(ficheContainer);
   container.append(s);
 }
-
+  
     // Sections
     if (lesson.sections && lesson.sections.length) {
       const s = makeSection(++n, lesson.fiche ? 'RÉSUMÉ' : 'COMPRENDRE',
