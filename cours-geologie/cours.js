@@ -115,11 +115,23 @@
 
     // Formule principale — ENCADRÉ CORAIL
     if (lesson.formula && lesson.formula.text) {
-      const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
-      s.append(el('div', 'formula-block formula-accent', lesson.formula.text));
-      container.append(s);
-    }
+  const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
 
+  const box = el('div', 'formula-block formula-accent');
+  box.append(el('span', 'formula-label', lesson.formula.label || 'Formule'));
+
+  if (lesson.formula.mathML) {
+    const math = el('math', 'mathml-display');
+    math.setAttribute('display', 'block');
+    math.innerHTML = lesson.formula.mathML;
+    box.append(math);
+  }
+
+  box.append(el('span', 'math-display', lesson.formula.text));
+
+  s.append(box);
+  container.append(s);
+}
     // Équations détaillées — ENCADRÉ CORAIL
     if (lesson.equationDetails && lesson.equationDetails.length) {
       const s = makeSection(++n, 'ÉQUATIONS', 'Les équations en détail');
