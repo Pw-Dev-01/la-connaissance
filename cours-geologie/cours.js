@@ -94,16 +94,21 @@
     let n = 0;
 
     // Fiche bibliographique
-    if (lesson.fiche && lesson.fiche.length) {
-      const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
-      const dl = el('dl', 'book-fiche');
-      lesson.fiche.forEach(([label, value]) => {
-        dl.append(el('dt', '', label));
-        dl.append(el('dd', '', value));
-      });
-      s.append(dl);
-      container.append(s);
-    }
+if (lesson.fiche && lesson.fiche.length) {
+  const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
+  const dl = el('dl', 'book-fiche');
+
+  lesson.fiche.forEach(([label, value]) => {
+    const dt = el('dt');
+    dt.innerHTML = `<strong>${label} :</strong>`;
+    const dd = el('dd', '', value);
+    dl.append(dt);
+    dl.append(dd);
+  });
+
+  s.append(dl);
+  container.append(s);
+}
 
     // Sections
     if (lesson.sections && lesson.sections.length) {
