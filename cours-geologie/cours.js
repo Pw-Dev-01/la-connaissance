@@ -116,7 +116,7 @@
     // Formule principale
     if (lesson.formula && lesson.formula.text) {
       const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
-      s.append(el('div', 'worked-result', lesson.formula.text));
+      s.append(el('div', 'formula-block formula-accent', lesson.formula.text));
       container.append(s);
     }
 
@@ -126,7 +126,7 @@
       lesson.equationDetails.forEach((eq) => {
         const box = el('div', 'equation-detail');
         box.append(el('h3', '', eq.title));
-        box.append(el('div', 'worked-result', eq.formula));
+box.append(el('div', 'formula-block formula-accent', eq.formula));
         if (eq.explanation) box.append(el('p', '', eq.explanation));
         if (eq.parameters) box.append(el('p', '', 'Paramètres : ' + eq.parameters));
         if (eq.example) box.append(el('p', '', 'Exemple : ' + eq.example));
@@ -190,3 +190,4 @@
     ' ; présent = ' + ids.includes(id) +
     ' ; branches portant cet id = ' + catalog.filter((b) => b.id === id).length);
 })();
+
