@@ -19,7 +19,7 @@
   const id = new URLSearchParams(location.search).get('id');
   const catalog = window.courseCatalog || [];
 
-  // 1) Chapitre d'une branche (prioritaire)
+  // 1) Chapitre d'une branche
   let course = null;
   let branch = null;
   let chapter = null;
@@ -28,7 +28,7 @@
     if (found) { branch = item; chapter = found; break; }
   }
 
-  // 2) Sinon : branche / cours simple
+  // 2) Sinon : cours simple
   if (!chapter) course = catalog.find((c) => c.id === id) || null;
 
   // 3) Cours approfondi via ancre
@@ -36,9 +36,9 @@
     course = catalog.find((item) => (item.sections || []).some((s) => s.anchor === id));
   }
 
-  // 4) Branche / cours approfondi : sommaire
+  // 4) Sommaire d’un cours approfondi
   if (!chapter && course && course.sections) {
-    document.title = `${course.title} · Cours de physique`;
+    document.title = `${course.title} · Cours de géologie`;
     setText('#lesson-title', course.title);
     setText('#lesson-summary', course.note || course.summary || '');
     setText('#lesson-eyebrow', course.title.toUpperCase());
@@ -60,10 +60,10 @@
     return;
   }
 
-  // 5) Chapitre
+  // 5) Chapitre normal
   if (branch && chapter) {
     const lesson = chapter.lesson || {};
-    document.title = `${chapter.title} · Cours de physique`;
+    document.title = `${chapter.title} · Cours de géologie`;
     setText('#lesson-title', chapter.title);
     setText('#lesson-summary', chapter.summary || '');
     setText('#lesson-eyebrow', `${branch.title.toUpperCase()} · ${chapter.field || ''}`);
@@ -93,7 +93,7 @@
     const container = $('#chapter-lesson');
     let n = 0;
 
-    // Fiche bibliographique (grands livres)
+    // Fiche bibliographique
     if (lesson.fiche && lesson.fiche.length) {
       const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
       const dl = el('dl', 'book-fiche');
@@ -105,7 +105,7 @@
       container.append(s);
     }
 
-    // Notions
+    // Sections
     if (lesson.sections && lesson.sections.length) {
       const s = makeSection(++n, lesson.fiche ? 'RÉSUMÉ' : 'COMPRENDRE',
         lesson.fiche ? 'De quoi parle ce livre' : 'Les notions essentielles');
@@ -113,20 +113,32 @@
       container.append(s);
     }
 
-    // Formule principale
+    // Formule principale — ENCADRÉ CORAIL
     if (lesson.formula && lesson.formula.text) {
-      const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
-      s.append(el('div', 'worked-result', lesson.formula.text));
-      container.append(s);
-    }
+  const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
 
-    // Détail des équations
+  const box = el('div', 'formula-block formula-accent');
+  box.append(el('span', 'formula-label', lesson.formula.label || 'Formule'));
+
+  if (lesson.formula.mathML) {
+    const math = el('math', 'mathml-display');
+    math.setAttribute('display', 'block');
+    math.innerHTML = lesson.formula.mathML;
+    box.append(math);
+  }
+
+  box.append(el('span', 'math-display', lesson.formula.text));
+
+  s.append(box);
+  container.append(s);
+}
+    // Équations détaillées — ENCADRÉ CORAIL
     if (lesson.equationDetails && lesson.equationDetails.length) {
       const s = makeSection(++n, 'ÉQUATIONS', 'Les équations en détail');
       lesson.equationDetails.forEach((eq) => {
         const box = el('div', 'equation-detail');
         box.append(el('h3', '', eq.title));
-        box.append(el('div', 'worked-result', eq.formula));
+        box.append(el('div', 'formula-block formula-accent', eq.formula));
         if (eq.explanation) box.append(el('p', '', eq.explanation));
         if (eq.parameters) box.append(el('p', '', 'Paramètres : ' + eq.parameters));
         if (eq.example) box.append(el('p', '', 'Exemple : ' + eq.example));
@@ -181,7 +193,7 @@
   }
 
   // 6) Introuvable
-  document.title = 'Leçon introuvable · Cours de physique';
+  document.title = 'Leçon introuvable · Cours de géologie';
   setText('#lesson-title', 'Leçon introuvable');
   const ids = catalog.flatMap((b) => (b.chapters || []).map((c) => c.id));
   setText('#lesson-summary',
