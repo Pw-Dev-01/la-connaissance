@@ -1,6 +1,10 @@
 (function () {
+  // ⚠️ Seule ligne à adapter selon le cours : 'physique' ou 'géologie'.
+  const DISCIPLINE = 'géologie';
+  const SUFFIX = `Cours de ${DISCIPLINE}`;
+
   const $ = (sel) => document.querySelector(sel);
-  const setText = (sel, value) => { const el = $(sel); if (el) el.textContent = value; };
+  const setText = (sel, value) => { const node = $(sel); if (node) node.textContent = value; };
 
   function el(tag, className, text) {
     const node = document.createElement(tag);
@@ -9,6 +13,45 @@
     return node;
   }
 
+  // ---------------------------------------------------------------------------
+  // Texte « riche » : rend correctement
+  //  - les vecteurs  (lettre + U+20D7, ex. F⃗) : flèche dessinée en CSS ;
+  //  - les indices Unicode (ₑₓ, ₘ, ₚ, ₕ, ₁, ₂…) : vraies balises <sub> ;
+  //  - le faux « c » en indice (U+A700, ex. E꜀) : <sub>c</sub>.
+  // Les polices du site n'ont pas ces caractères : ils s'affichaient en carrés.
+  // ---------------------------------------------------------------------------
+  const RICH = /(\S)\u20D7|([\u2080-\u209C\u1D62]+)|\uA700/g;
+
+  function addRich(parent, text) {
+    const re = new RegExp(RICH.source, 'g');
+    let last = 0;
+    let m;
+    while ((m = re.exec(text))) {
+      if (m.index > last) parent.append(document.createTextNode(text.slice(last, m.index)));
+      if (m[1]) parent.append(el('span', 'vec', m[1]));
+      else if (m[2]) parent.append(el('sub', '', m[2].normalize('NFKD')));
+      else parent.append(el('sub', '', 'c'));
+      last = re.lastIndex;
+    }
+    if (last < text.length) parent.append(document.createTextNode(text.slice(last)));
+    return parent;
+  }
+
+  function rich(tag, className, text) {
+    return addRich(el(tag, className), String(text));
+  }
+
+  // Style des vecteurs et indices, injecté ici : pas besoin de modifier styles.css.
+  const style = document.createElement('style');
+  style.textContent = `
+    .vec { position: relative; display: inline-block; line-height: 1; padding-top: .28em; }
+    .vec::before { content: "\\2192"; position: absolute; top: -.1em; left: 50%;
+      transform: translateX(-50%); font-size: .62em; line-height: 1; font-style: normal; }
+    .formula-block sub, .lesson-section sub { font-size: .72em; line-height: 0; }
+    .book-fiche p { margin: .55rem 0; }
+  `;
+  document.head.append(style);
+
   function makeSection(index, label, title, extraClass) {
     const section = el('section', 'lesson-section' + (extraClass ? ' ' + extraClass : ''));
     section.append(el('p', 'section-index', `${String(index).padStart(2, '0')} / ${label}`));
@@ -16,10 +59,16 @@
     return section;
   }
 
+  // La clé « mathML » des données est souvent un simple identifiant
+  // (ex. 'newton-second-law') et non du balisage : on ne l'affiche que si c'est du MathML.
+  function isMarkup(value) {
+    return typeof value === 'string' && value.trim().startsWith('<');
+  }
+
   const id = new URLSearchParams(location.search).get('id');
   const catalog = window.courseCatalog || [];
 
-  // 1) Chapitre d'une branche
+  // 1) Chapitre d'une branche (prioritaire)
   let course = null;
   let branch = null;
   let chapter = null;
@@ -28,7 +77,7 @@
     if (found) { branch = item; chapter = found; break; }
   }
 
-  // 2) Sinon : cours simple
+  // 2) Sinon : branche / cours simple
   if (!chapter) course = catalog.find((c) => c.id === id) || null;
 
   // 3) Cours approfondi via ancre
@@ -36,9 +85,9 @@
     course = catalog.find((item) => (item.sections || []).some((s) => s.anchor === id));
   }
 
-  // 4) Sommaire d’un cours approfondi
+  // 4) Sommaire d'une branche / d'un cours approfondi
   if (!chapter && course && course.sections) {
-    document.title = `${course.title} · Cours de géologie`;
+    document.title = `${course.title} · ${SUFFIX}`;
     setText('#lesson-title', course.title);
     setText('#lesson-summary', course.note || course.summary || '');
     setText('#lesson-eyebrow', course.title.toUpperCase());
@@ -60,10 +109,10 @@
     return;
   }
 
-  // 5) Chapitre normal
+  // 5) Chapitre
   if (branch && chapter) {
     const lesson = chapter.lesson || {};
-    document.title = `${chapter.title} · Cours de géologie`;
+    document.title = `${chapter.title} · ${SUFFIX}`;
     setText('#lesson-title', chapter.title);
     setText('#lesson-summary', chapter.summary || '');
     setText('#lesson-eyebrow', `${branch.title.toUpperCase()} · ${chapter.field || ''}`);
@@ -93,60 +142,57 @@
     const container = $('#chapter-lesson');
     let n = 0;
 
-    // Fiche bibliographique — style paléontologie
-if (lesson.fiche && lesson.fiche.length) {
-  const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
-
-  const ficheContainer = el('div', 'book-fiche');
-
-  lesson.fiche.forEach(([label, value]) => {
-    const p = document.createElement('p');
-    p.innerHTML = `<strong>${label} :</strong> ${value}`;
-    ficheContainer.append(p);
-  });
-
-  s.append(ficheContainer);
-  container.append(s);
-}
-
-    // Sections
-    if (lesson.sections && lesson.sections.length) {
-      const s = makeSection(++n, lesson.fiche ? 'RÉSUMÉ' : 'COMPRENDRE',
-        lesson.fiche ? 'De quoi parle ce livre' : 'Les notions essentielles');
-      lesson.sections.forEach((p) => s.append(el('p', '', p)));
+    // Fiche bibliographique : « Libellé : valeur », libellé en gras, même ligne.
+    if (lesson.fiche && lesson.fiche.length) {
+      const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
+      const fiche = el('div', 'book-fiche');
+      lesson.fiche.forEach(([label, value]) => {
+        const p = el('p');
+        p.append(el('strong', '', label + ' : '), document.createTextNode(value));
+        fiche.append(p);
+      });
+      s.append(fiche);
       container.append(s);
     }
 
-    // Formule principale — ENCADRÉ CORAIL
+    // Notions
+    if (lesson.sections && lesson.sections.length) {
+      const s = makeSection(++n, lesson.fiche ? 'RÉSUMÉ' : 'COMPRENDRE',
+        lesson.fiche ? 'De quoi parle ce livre' : 'Les notions essentielles');
+      lesson.sections.forEach((p) => s.append(rich('p', '', p)));
+      container.append(s);
+    }
+
+    // Formule principale (encadré)
     if (lesson.formula && lesson.formula.text) {
-  const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
+      const s = makeSection(++n, 'FORMULE', lesson.formula.label || 'Formule');
+      const box = el('div', 'formula-block formula-accent');
+      box.append(el('span', 'formula-label', lesson.formula.label || 'Formule'));
+      if (isMarkup(lesson.formula.mathML)) {
+        const math = document.createElementNS('http://www.w3.org/1998/Math/MathML', 'math');
+        math.setAttribute('display', 'block');
+        math.innerHTML = lesson.formula.mathML;
+        box.append(math);
+      } else {
+        box.append(rich('span', 'math-display', lesson.formula.text));
+      }
+      s.append(box);
+      container.append(s);
+    }
 
-  const box = el('div', 'formula-block formula-accent');
-  box.append(el('span', 'formula-label', lesson.formula.label || 'Formule'));
-
-  if (lesson.formula.mathML) {
-    const math = el('math', 'mathml-display');
-    math.setAttribute('display', 'block');
-    math.innerHTML = lesson.formula.mathML;
-    box.append(math);
-  }
-
-  box.append(el('span', 'math-display', lesson.formula.text));
-
-  s.append(box);
-  container.append(s);
-}
-    // Équations détaillées — ENCADRÉ CORAIL
+    // Équations détaillées
     if (lesson.equationDetails && lesson.equationDetails.length) {
       const s = makeSection(++n, 'ÉQUATIONS', 'Les équations en détail');
       lesson.equationDetails.forEach((eq) => {
         const box = el('div', 'equation-detail');
         box.append(el('h3', '', eq.title));
-        box.append(el('div', 'formula-block formula-accent', eq.formula));
-        if (eq.explanation) box.append(el('p', '', eq.explanation));
-        if (eq.parameters) box.append(el('p', '', 'Paramètres : ' + eq.parameters));
-        if (eq.example) box.append(el('p', '', 'Exemple : ' + eq.example));
-        if (eq.result) box.append(el('p', '', 'Résultat : ' + eq.result));
+        const formulaBox = el('div', 'formula-block formula-accent');
+        formulaBox.append(rich('span', 'math-display', eq.formula));
+        box.append(formulaBox);
+        if (eq.explanation) box.append(rich('p', '', eq.explanation));
+        if (eq.parameters) box.append(rich('p', '', 'Paramètres : ' + eq.parameters));
+        if (eq.example) box.append(rich('p', '', 'Exemple : ' + eq.example));
+        if (eq.result) box.append(rich('p', '', 'Résultat : ' + eq.result));
         s.append(box);
       });
       container.append(s);
@@ -155,27 +201,36 @@ if (lesson.fiche && lesson.fiche.length) {
     // Exemple guidé
     if (lesson.example) {
       const s = makeSection(++n, 'EXEMPLE GUIDÉ', 'Méthode pas à pas');
-      if (lesson.example.statement) s.append(el('p', '', lesson.example.statement));
-      if (lesson.example.calculation) s.append(el('p', '', lesson.example.calculation));
-      if (lesson.example.answer) s.append(el('div', 'worked-result', lesson.example.answer));
+      if (lesson.example.statement) s.append(rich('p', '', lesson.example.statement));
+      if (lesson.example.calculation) s.append(rich('p', '', lesson.example.calculation));
+      if (lesson.example.answer) {
+        const result = el('div', 'worked-result');
+        result.append(rich('span', '', lesson.example.answer));
+        s.append(result);
+      }
       container.append(s);
     }
 
-    // Exercice
-    if (lesson.exercise) {
+    // Exercices : « exercises » (liste) si présent, sinon « exercise » (un seul).
+    const exercises = (lesson.exercises && lesson.exercises.length)
+      ? lesson.exercises
+      : (lesson.exercise ? [lesson.exercise] : []);
+    if (exercises.length) {
       const s = makeSection(++n, 'S’ENTRAÎNER', 'À toi de jouer', 'exercise-section');
-      const details = el('details', 'exercise');
-      const summary = el('summary');
-      summary.append(el('span', 'exercise-number', 'A'));
-      summary.append(el('span', '', lesson.exercise.question));
-      const reveal = el('span', 'reveal-label', 'Voir la correction');
-      summary.append(reveal);
-      details.append(summary);
-      details.append(el('div', 'exercise-answer', lesson.exercise.answer));
-      details.addEventListener('toggle', () => {
-        reveal.textContent = details.open ? 'Masquer la correction' : 'Voir la correction';
+      exercises.forEach((ex, i) => {
+        const details = el('details', 'exercise');
+        const summary = el('summary');
+        summary.append(el('span', 'exercise-number', String.fromCharCode(65 + i)));
+        summary.append(rich('span', '', ex.question));
+        const reveal = el('span', 'reveal-label', 'Voir la correction');
+        summary.append(reveal);
+        details.append(summary);
+        details.append(rich('div', 'exercise-answer', ex.answer));
+        details.addEventListener('toggle', () => {
+          reveal.textContent = details.open ? 'Masquer la correction' : 'Voir la correction';
+        });
+        s.append(details);
       });
-      s.append(details);
       container.append(s);
     }
 
@@ -197,12 +252,7 @@ if (lesson.fiche && lesson.fiche.length) {
   }
 
   // 6) Introuvable
-  document.title = 'Leçon introuvable · Cours de géologie';
+  document.title = `Leçon introuvable · ${SUFFIX}`;
   setText('#lesson-title', 'Leçon introuvable');
-  const ids = catalog.flatMap((b) => (b.chapters || []).map((c) => c.id));
-  setText('#lesson-summary',
-    'Ce chapitre ne figure pas dans le catalogue. [debug] id demandé = ' + JSON.stringify(id) +
-    ' ; branches = ' + catalog.length + ' ; chapitres = ' + ids.length +
-    ' ; présent = ' + ids.includes(id) +
-    ' ; branches portant cet id = ' + catalog.filter((b) => b.id === id).length);
+  setText('#lesson-summary', 'Ce chapitre ne figure pas dans le catalogue.');
 })();
