@@ -1,18 +1,5 @@
 window.courseCatalog = [
-{
-  id: "newton-principia",
-  title: "Philosophiæ Naturalis Principia Mathematica",
-  field: "Isaac Newton · 1687",
-  summary: "Isaac Newton, 1687.",
-  lesson: {
-    sections: [],
-    example: { statement: "", calculation: "", answer: "" },
-    exercise: { question: "", answer: "" },
-    sources: []
-  }
-},
-
-  {
+ {
     id: 'mecanique', title: 'Mécanique', note: 'Décrire le mouvement, ses causes et les échanges d’énergie.',
     chapters: [
       { id: 'cinematique', title: 'Cinématique du point', field: 'Classique · bases', summary: 'Position, vitesse et accélération en une et plusieurs dimensions.', lesson: { sections: ['La cinématique décrit un mouvement sans chercher ses causes. On choisit un référentiel, une origine des dates et un repère ; la position devient alors une fonction du temps.', 'La vitesse est la dérivée de la position et l’accélération la dérivée de la vitesse. En mouvement rectiligne uniformément accéléré, l’accélération est constante.'], formula: { label: 'MOUVEMENT À ACCÉLÉRATION CONSTANTE', text: 'v(t) = v₀ + at  |  x(t) = x₀ + v₀t + ½at²' }, example: { statement: 'Un véhicule part du repos et accélère à 2 m·s⁻² pendant 5 s. Quelle distance parcourt-il ?', calculation: 'Avec v₀ = 0 et x₀ = 0, x(5) = ½ × 2 × 5².', answer: 'Il parcourt 25 m.' }, exercise: { question: 'Un objet a v₀ = 3 m·s⁻¹ et a = 2 m·s⁻² pendant 4 s. Quelle est sa vitesse finale ?', answer: 'v = 3 + 2 × 4 = 11 m·s⁻¹.' } } },
