@@ -467,5 +467,226 @@ window.courseCatalog = [
         }
       }
     ]
+  },
+
+  {
+    id: 'grands-livres',
+    title: 'Les grands livres de l’anthropologie',
+    note: 'Dix ouvrages de référence de l’anthropologie, avec auteur, édition, date de parution et résumé.',
+    chapters: [
+      {
+        id: 'tylor-primitive-culture',
+        title: 'Primitive Culture',
+        field: 'Edward B. Tylor · 1871',
+        summary: 'Edward B. Tylor, 1871.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : Primitive Culture: Researches into the Development of Mythology, Philosophy, Religion, Art, and Custom`,
+            `Auteur : Edward Burnett Tylor (1832-1917)`,
+            `Édition : Londres, John Murray. Première édition d’avril 1871, en deux volumes.`,
+            `Date de parution : 1871`,
+            `Résumé : Tylor y poursuit l’enquête commencée avec ses Researches into the Early History of Mankind (1870) et l’étend à la croyance, à l’art et aux coutumes. L’ouvrage s’ouvre sur « la science de la culture » : l’auteur y considère les phénomènes de la culture ou de la civilisation comme des faits que l’on peut classer et comparer, et il en étudie le développement ainsi que les survivances.`,
+            `Le livre est un texte fondateur de l’anthropologie culturelle, à lire dans le contexte intellectuel de son époque.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Wellcome Collection — notice bibliographique', url: 'https://wellcomecollection.org/works/c6a3bgjt' },
+            { title: 'Project Gutenberg — texte de la première édition (vol. 1)', url: 'https://gutenberg.org/files/70458/70458-h/70458-h.htm' }
+          ]
+        }
+      },
+      {
+        id: 'boas-mind-of-primitive-man',
+        title: 'The Mind of Primitive Man',
+        field: 'Franz Boas · 1911',
+        summary: 'Franz Boas, 1911.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : The Mind of Primitive Man: A Course of Lectures Delivered before the Lowell Institute, Boston, Mass., and the National University of Mexico, 1910-1911`,
+            `Auteur : Franz Boas (1858-1942)`,
+            `Édition : New York, The Macmillan Company (x + 294 pages). Une édition révisée a paru chez Macmillan en 1938.`,
+            `Date de parution : 1911`,
+            `Résumé : Le livre reprend des conférences données en 1910-1911 à la Lowell Institute de Boston et à l’Université nationale du Mexique. Boas y soutient que les études fondées sur les critères d’observateurs occidentaux sont largement subjectives : chaque société et chaque culture résultent de développements historiques qui lui sont propres. Il défend aussi qu’il n’existe pas de race « pure » ni de race supérieure.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Berkeley Law Library — notice bibliographique', url: 'https://lawcat.berkeley.edu/record/29442' },
+            { title: 'WorldCat — The mind of primitive man (1911)', url: 'https://search.worldcat.org/oclc/1171659' }
+          ]
+        }
+      },
+      {
+        id: 'malinowski-argonauts',
+        title: 'Argonauts of the Western Pacific',
+        field: 'Bronisław Malinowski · 1922',
+        summary: 'Bronisław Malinowski, 1922.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : Argonauts of the Western Pacific: An Account of Native Enterprise and Adventure in the Archipelagoes of Melanesian New Guinea`,
+            `Auteur : Bronisław Malinowski (1884-1942), avec une préface de Sir James George Frazer`,
+            `Édition : Londres, G. Routledge & Sons ; New York, E. P. Dutton & Co. (xxxi + 527 pages, avec 5 cartes, 65 illustrations et 2 figures).`,
+            `Date de parution : 1922`,
+            `Résumé : L’ouvrage décrit en détail les échanges dans les îles de Mélanésie, avec le kula pour fil conducteur, et présente les habitants des îles Trobriand, leurs pirogues, leurs expéditions et l’organisation sociale du kula. Il est aussi considéré comme un manifeste de l’anthropologie moderne : Malinowski y défend l’idée que l’ethnographe doit chercher à saisir le point de vue des personnes qu’il étudie.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Wellcome Collection — notice bibliographique (1922)', url: 'https://wellcomecollection.org/works/gm5beef5' },
+            { title: 'Routledge — présentation de l’édition Routledge Classics', url: 'https://www.routledge.com/Argonauts-of-the-Western-Pacific-1st-Edition/Malinowski-Kuper/p/book/9780415738644' }
+          ]
+        }
+      },
+      {
+        id: 'mead-coming-of-age-in-samoa',
+        title: 'Coming of Age in Samoa',
+        field: 'Margaret Mead · 1928',
+        summary: 'Margaret Mead, 1928.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : Coming of Age in Samoa: A Psychological Study of Primitive Youth for Western Civilisation`,
+            `Auteur : Margaret Mead (1901-1978), avec une préface de Franz Boas`,
+            `Édition : New York, William Morrow & Company (xv + 297 pages).`,
+            `Date de parution : 1928`,
+            `Résumé : Mead y étudie l’enfance et l’adolescence dans l’archipel de Manua, aux Samoa, à partir de trois villages de l’île de Taʻū. L’essentiel du livre porte sur les jeunes filles et sur la période de l’adolescence, avec plusieurs études de cas et des annexes méthodologiques. Elle y soutient que la culture a une influence majeure sur le développement des adolescents.`,
+            `Le livre a rendu Mead célèbre, puis son terrain et ses conclusions ont fait l’objet de critiques et de débats.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Notice de bibliothèque (W. Morrow & Company, 1928)', url: 'https://library.usi.edu/record/99516' },
+            { title: 'eHRAF World Cultures (Yale) — résumé du livre', url: 'https://ehrafworldcultures.yale.edu/cultures/ou08/documents/003' }
+          ]
+        }
+      },
+      {
+        id: 'benedict-patterns-of-culture',
+        title: 'Patterns of Culture',
+        field: 'Ruth Benedict · 1934',
+        summary: 'Ruth Benedict, 1934.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : Patterns of Culture`,
+            `Auteur : Ruth Benedict (1887-1948)`,
+            `Édition : Boston et New York, Houghton Mifflin Company. Des rééditions ultérieures ajoutent une préface de Margaret Mead ; l’édition de 1989 (xxi + 290 pages) comporte aussi un avant-propos de Mary Catherine Bateson.`,
+            `Date de parution : 1934`,
+            `Résumé : Benedict compare trois cultures très contrastées : les Pueblos du Nouveau-Mexique (Zuñi), les habitants de l’île de Dobu en Mélanésie et les peuples de la côte nord-ouest de l’Amérique du Nord (Kwakiutl). Elle y avance l’idée qu’une culture forme un tout intégré, qu’elle compare à une personnalité à grande échelle.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Bibliothèque nationale de France — notice (éd. 1989, cop. 1934)', url: 'https://catalogue.bnf.fr/ark:/12148/cb37359733z' },
+            { title: 'Kyushu University Library — notice et résumé', url: 'https://catalog.lib.kyushu-u.ac.jp/ja/recordID/1000110995' }
+          ]
+        }
+      },
+      {
+        id: 'evans-pritchard-azande',
+        title: 'Witchcraft, Oracles and Magic among the Azande',
+        field: 'E. E. Evans-Pritchard · 1937',
+        summary: 'E. E. Evans-Pritchard, 1937.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : Witchcraft, Oracles and Magic among the Azande`,
+            `Auteur : Edward Evan Evans-Pritchard (1902-1973), avec une préface de C. G. Seligman`,
+            `Édition : Oxford, Clarendon Press (environ 558 pages et 34 planches).`,
+            `Date de parution : 1937`,
+            `Résumé : Evans-Pritchard y étudie la sorcellerie, les oracles et la magie chez les Azande, un peuple d’agriculteurs du sud du Soudan, dans la haute vallée du Nil. Il examine les relations entre ces pratiques et ces croyances pour montrer qu’elles forment un système cohérent, et comment ce système se reflète dans le comportement social. Il a effectué trois séjours chez les Azande, soit vingt mois de résidence au total.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Bibliothèque nationale de France — notice (Clarendon Press, 1937)', url: 'https://catalogue.bnf.fr/ark:/12148/cb32086225n' },
+            { title: 'eHRAF World Cultures (Yale) — résumé du livre', url: 'https://ehrafworldcultures.yale.edu/cultures/fo07/documents/071' }
+          ]
+        }
+      },
+      {
+        id: 'levi-strauss-tristes-tropiques',
+        title: 'Tristes Tropiques',
+        field: 'Claude Lévi-Strauss · 1955',
+        summary: 'Claude Lévi-Strauss, 1955.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : Tristes tropiques`,
+            `Auteur : Claude Lévi-Strauss (1908-2009)`,
+            `Édition : Paris, Plon, collection « Terre humaine » (n° 3), illustré de photographies de l’auteur. Cette collection a été créée en 1954 par Jean Malaurie. Traduction anglaise par John et Doreen Weightman (New York, Atheneum, 1973).`,
+            `Date de parution : 1955`,
+            `Résumé : Le livre est à la fois un témoignage sur les voyages de Lévi-Strauss et une réflexion sur son travail d’ethnologue. L’auteur y raconte comment il est devenu ethnologue dans les années 1930 et revient sur ses séjours auprès des peuples du Brésil et d’Amazonie.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Bibliothèque numérique du ministère de la Défense — notice (Plon, 1955, Terre humaine)', url: 'https://bibliotheques-numeriques.defense.gouv.fr/impression/document/11d3ee6c-04ae-40fa-b0ab-79ef320e9c90' },
+            { title: 'BnF — la collection « Terre humaine »', url: 'https://www.bnf.fr/fr/agenda/la-collection-terre-humaine' }
+          ]
+        }
+      },
+      {
+        id: 'douglas-purity-and-danger',
+        title: 'Purity and Danger',
+        field: 'Mary Douglas · 1966',
+        summary: 'Mary Douglas, 1966.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : Purity and Danger: An Analysis of the Concepts of Pollution and Taboo`,
+            `Auteur : Mary Douglas (1921-2007)`,
+            `Édition : Londres, Routledge & Kegan Paul (première édition, 196 pages). Réédité en 2002 dans la collection Routledge Classics, avec une nouvelle préface de l’auteure. Traduction française : De la souillure. Essais sur les notions de pollution et de tabou, Paris, Maspero, 1971.`,
+            `Date de parution : 1966`,
+            `Résumé : Douglas fait du souci de pureté un thème central de toute société et en montre l’effet sur nos attitudes envers la société, les valeurs, la cosmologie et le savoir. Elle propose d’interpréter des règles comme celles du Lévitique comme une manière de maintenir des frontières symboliques. Dans la préface de 2002, elle est revenue sur l’une de ses explications des règles alimentaires du Lévitique.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Centre canadien d’architecture — notice (Routledge Classics, 2002)', url: 'https://www.cca.qc.ca/en/search/details/library/publication/50333732' },
+            { title: 'Wikipedia (en) — Purity and Danger', url: 'https://en.wikipedia.org/wiki/Purity_and_Danger' }
+          ]
+        }
+      },
+      {
+        id: 'geertz-interpretation-of-cultures',
+        title: 'The Interpretation of Cultures',
+        field: 'Clifford Geertz · 1973',
+        summary: 'Clifford Geertz, 1973.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : The Interpretation of Cultures: Selected Essays`,
+            `Auteur : Clifford Geertz (1926-2006)`,
+            `Édition : New York, Basic Books (ix + 470 pages). Certaines éditions plus récentes comportent une préface de l’auteur datée de 2000.`,
+            `Date de parution : 1973`,
+            `Résumé : Recueil d’essais dans lequel Geertz développe un nouveau concept de culture. Il s’ouvre sur « Thick Description: Toward an Interpretive Theory of Culture » et rassemble des textes sur la religion et l’idéologie comme systèmes culturels, sur Java et Bali, et sur l’œuvre de Claude Lévi-Strauss. Le dernier essai est « Deep Play: Notes on the Balinese Cockfight ».`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Wellcome Collection — notice bibliographique', url: 'https://identity.wellcomecollection.org/works/rkkcjyj7' },
+            { title: 'CiNii (NII, Japon) — notice et table des matières', url: 'https://ci.nii.ac.jp/ncid/BA03405942?l=en' }
+          ]
+        }
+      },
+      {
+        id: 'descola-par-dela-nature-et-culture',
+        title: 'Par-delà nature et culture',
+        field: 'Philippe Descola · 2005',
+        summary: 'Philippe Descola, 2005.',
+        lesson: {
+          heading: 'Fiche du livre',
+          sections: [
+            `Titre complet : Par-delà nature et culture`,
+            `Auteur : Philippe Descola (né en 1949)`,
+            `Édition : Paris, Gallimard, collection « Bibliothèque des sciences humaines » (623 pages). Traduction anglaise : Beyond Nature and Culture, par Janet Lloyd, avec un avant-propos de Marshall Sahlins, Chicago, University of Chicago Press, 2013.`,
+            `Date de parution : 2005`,
+            `Résumé : Descola propose une approche des manières de répartir continuités et discontinuités entre l’humain et son environnement, à partir des ressemblances et des contrastes que les personnes perçoivent. Il montre que l’opposition occidentale entre nature et culture n’est qu’une vision du monde parmi d’autres. Il s’appuie en particulier sur son terrain chez les Achuar et décrit quatre grands modes de relation : l’animisme, le totémisme, le naturalisme et l’analogisme.`
+          ],
+          sourcesHeading: 'Notices bibliographiques',
+          sources: [
+            { title: 'Collège de France — bibliographie de Philippe Descola', url: 'https://www.college-de-france.fr/sites/default/files/documents/philippe-descola/UPL2129087158209563068_Bibliographie_pd_2017.pdf' },
+            { title: 'Bibliothèques de la Ville de Paris — notice', url: 'https://bibliotheques.paris.fr/Default/doc/SYRACUSE/288633/par-dela-nature-et-culture' },
+            { title: 'Notice de la traduction anglaise (University of Chicago Press, 2013)', url: 'https://catalog.lib.ecu.edu/catalog/3367930' }
+          ]
+        }
+      }
+    ]
   }
-];
+],
