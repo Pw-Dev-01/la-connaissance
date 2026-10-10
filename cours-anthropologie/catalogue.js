@@ -61,3 +61,17 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-18% 0px -68% 0px' });
 
 programmeSections.querySelectorAll('.programme-section').forEach((section) => sectionObserver.observe(section));
+
+const catalogueCount = document.querySelector('#catalogue-count');
+
+if (catalogueCount) {
+  catalogueCount.textContent =
+    `${validBranches.length} RUBRIQUES · ${chapters.length} CHAPITRES`;
+}
+
+const headerCount = document.querySelector('#catalogue-count-header');
+
+if (headerCount) {
+  headerCount.textContent =
+    `${validBranches.length} RUBRIQUES · ${chapters.length} CHAPITRES`;
+}
