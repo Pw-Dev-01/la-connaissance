@@ -401,105 +401,256 @@ window.courseCatalog = [
         }
       }
     ]
+  },
+
+// ====================================================
+// Chaque chapitre utilise lesson.fiche, que cours.js affiche déjà
+// au format « 01 / FICHE — Fiche de l’ouvrage ».
+// ====================================================
+  {
+    id: 'grands-ouvrages',
+    title: 'Les grands ouvrages de l’économie',
+    note: 'Dix ouvrages de référence de la pensée économique, présentés par leur fiche bibliographique vérifiée. Cette sélection n’est pas exhaustive.',
+    chapters: [
+      {
+        id: 'ouvrage-smith-richesse-des-nations',
+        branch: 'grands-ouvrages',
+        title: 'La Richesse des nations (Smith, 1776)',
+        field: 'Ouvrages de référence · économie classique',
+        summary: 'Le grand ouvrage d’Adam Smith sur les sources de la richesse d’une nation.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'An Inquiry into the Nature and Causes of the Wealth of Nations (en deux volumes)'],
+            ['Auteur', 'Adam Smith (1723-1790)'],
+            ['Édition', 'Londres, W. Strahan et T. Cadell, 2 vol. in-4°'],
+            ['Date de parution', '9 mars 1776']
+          ],
+          sections: [
+            'L’ouvrage examine comment une nation crée de la richesse : il traite notamment de la division du travail, des échanges et du rôle des prix dans l’allocation des ressources.',
+            'Le livre a connu cinq éditions du vivant de Smith, mort en 1790.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'Université de St Andrews — première édition de The Wealth of Nations', url: 'https://university-collections.wp.st-andrews.ac.uk/2015/12/15/where-we-find-new-old-books-chapter-4-william-creech-and-a-new-first-edition-of-adam-smiths-wealth-of-nations/' },
+            { title: 'Internet Archive — exemplaire numérisé de la première édition (1776)', url: 'https://archive.org/details/inquiryintonatur02smit_0' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-malthus-essai-population',
+        branch: 'grands-ouvrages',
+        title: 'Essai sur le principe de population (Malthus, 1798)',
+        field: 'Ouvrages de référence · économie classique',
+        summary: 'L’essai de Malthus sur la croissance de la population et les subsistances.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'An Essay on the Principle of Population, as it affects the Future Improvement of Society, with Remarks on the Speculations of Mr. Godwin, M. Condorcet, and other Writers'],
+            ['Auteur', 'Thomas Robert Malthus (1766-1834), publié anonymement'],
+            ['Édition', 'Londres, J. Johnson, St Paul’s Church-Yard, in-8° (396 pages)'],
+            ['Date de parution', '1798']
+          ],
+          sections: [
+            'Malthus soutient que la population tend à croître plus vite que les subsistances : selon lui, la première augmente de façon géométrique et les secondes de façon arithmétique. Il en déduit un risque de famine et de maladie pour les plus pauvres. Il s’agit de la thèse de Malthus, qui a été largement discutée.',
+            'Le titre indique que l’essai répond aux spéculations de Godwin et de Condorcet sur l’amélioration de la société. Malthus publie en 1803 une seconde édition profondément remaniée ; six éditions paraissent entre 1798 et 1826.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'New York Public Library — notice de la première édition (1798)', url: 'https://www.nypl.org/research/research-catalog/bib/b14096146' },
+            { title: 'Econlib — textes des première et sixième éditions', url: 'https://www.econlib.org/library/Malthus/malPop.html' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-ricardo-principes',
+        branch: 'grands-ouvrages',
+        title: 'Principes de l’économie politique et de l’impôt (Ricardo, 1817)',
+        field: 'Ouvrages de référence · économie classique',
+        summary: 'L’ouvrage de Ricardo sur la rente, le profit, les salaires, le commerce et l’impôt.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'On the Principles of Political Economy, and Taxation'],
+            ['Auteur', 'David Ricardo (1772-1823)'],
+            ['Édition', 'Londres, John Murray, in-8° (viii-589 pages). Tirage de 750 exemplaires.'],
+            ['Date de parution', '19 avril 1817']
+          ],
+          sections: [
+            'Ricardo cherche à déterminer les lois qui règlent le cours naturel de la rente, du profit et des salaires. Le livre traite aussi de la théorie de la valeur-travail, de l’avantage comparatif dans le commerce international, de la monnaie et des effets de l’impôt.',
+            'Il a été rédigé en un peu plus de six mois, à l’instigation d’amis dont James Mill.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'New York Public Library — notice de la première édition (1817)', url: 'https://catalog.nypl.org/record=b13613582~S1' },
+            { title: 'Wikipédia (anglais) — On the Principles of Political Economy and Taxation', url: 'https://en.wikipedia.org/wiki/On_the_Principles_of_Political_Economy_and_Taxation' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-mill-principes',
+        branch: 'grands-ouvrages',
+        title: 'Principes d’économie politique (Mill, 1848)',
+        field: 'Ouvrages de référence · économie classique',
+        summary: 'Le traité de John Stuart Mill, manuel de référence de l’économie anglophone au XIXe siècle.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'Principles of Political Economy, with some of their Applications to Social Philosophy (en deux volumes)'],
+            ['Auteur', 'John Stuart Mill (1806-1873)'],
+            ['Édition', 'Londres, John W. Parker, 2 vol. in-8° (xvi-593 et xv-549 pages)'],
+            ['Date de parution', '1848']
+          ],
+          sections: [
+            'Le traité est organisé en livres consacrés à la production, à la répartition, à l’échange, puis aux effets du progrès de la société sur la production et la répartition. Mill y aborde aussi le rôle de l’État dans les affaires économiques.',
+            'L’ouvrage est resté la référence de l’enseignement de l’économie dans le monde anglophone jusqu’à la publication des Principles of Economics de Marshall, en 1890.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'Morgan Library — notice de la première édition (1848)', url: 'https://www.themorgan.org/printed-books/79658' },
+            { title: 'WorldCat — Principles of political economy, 1848', url: 'https://search.worldcat.org/title/948263597' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-marx-le-capital',
+        branch: 'grands-ouvrages',
+        title: 'Le Capital, livre I (Marx, 1867)',
+        field: 'Ouvrages de référence · critique politique',
+        summary: 'Le premier livre du Capital, seul publié du vivant de Karl Marx.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'Das Kapital. Kritik der politischen Oekonomie. Erster Band. Buch I : Der Produktionsprocess des Kapitals'],
+            ['Auteur', 'Karl Marx (1818-1883)'],
+            ['Édition', 'Hambourg, Otto Meissner, in-8°. Imprimé à Leipzig, tirage de 1 000 exemplaires.'],
+            ['Date de parution', 'Septembre 1867']
+          ],
+          sections: [
+            'Le livre I est consacré au « processus de production du capital », selon les termes de Marx dans une lettre d’avril 1867. Seul ce premier volume paraît du vivant de l’auteur.',
+            'Les notions qu’il analyse, comme la marchandise, le travail et la valeur, restent discutées : la théorie de la valeur-travail doit être présentée comme une proposition de Marx, dont la validité est contestée.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'Marx-Engels-Gesamtausgabe (BBAW) — lettre de Marx, 30 avril 1867', url: 'https://megadigital.bbaw.de/store/M0000258.pdf' },
+            { title: 'German History in Documents and Images — page de titre de la première édition', url: 'https://germanhistorydocs.org/de/reichsgruendung-bismarcks-deutschland-1866-1890/karl-marx-das-kapital-titel-der-ersten-ausgabe-1867' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-marshall-principles',
+        branch: 'grands-ouvrages',
+        title: 'Principles of Economics (Marshall, 1890)',
+        field: 'Ouvrages de référence · économie néoclassique',
+        summary: 'Le traité d’Alfred Marshall, longtemps ouvrage de référence de l’économie.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'Principles of Economics, Volume I'],
+            ['Auteur', 'Alfred Marshall (1842-1924)'],
+            ['Édition', 'Londres, Macmillan, in-8° (xxviii-754 pages)'],
+            ['Date de parution', '18 juillet 1890']
+          ],
+          sections: [
+            'Le volume I est publié le 18 juillet 1890. Un second volume, prévu à l’origine, a été formellement abandonné au moment de la sixième édition (1910). Huit éditions se succèdent jusqu’en 1920.',
+            'Marshall est réputé avoir introduit des graphiques simples pour expliquer l’offre et la demande.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'Bibliothèque nationale d’Irlande — notice de la première édition', url: 'https://catalogue.nli.ie/Record/vtls000446410' },
+            { title: 'Groenewegen, « Writing and Revising the Principles » (Palgrave Macmillan)', url: 'https://link.springer.com/chapter/10.1057/9780230593060_6' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-keynes-theorie-generale',
+        branch: 'grands-ouvrages',
+        title: 'Théorie générale de l’emploi, de l’intérêt et de la monnaie (Keynes, 1936)',
+        field: 'Ouvrages de référence · macroéconomie',
+        summary: 'L’ouvrage de Keynes sur le niveau d’emploi, l’épargne, l’investissement et la monnaie.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'The General Theory of Employment, Interest and Money'],
+            ['Auteur', 'John Maynard Keynes (1883-1946)'],
+            ['Édition', 'Londres, Macmillan, in-8° (xii-403 pages)'],
+            ['Date de parution', 'Février 1936']
+          ],
+          sections: [
+            'Keynes soutient que le niveau d’emploi n’est pas déterminé par le prix du travail, comme dans le schéma classique, et que le plein-emploi n’est pas le résultat naturel de marchés concurrentiels en équilibre.',
+            'Le livre étudie l’interaction entre l’épargne, l’investissement et la liquidité, c’est-à-dire la monnaie. Beaucoup de ses innovations restent centrales en macroéconomie.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'Wikipédia (anglais) — The General Theory of Employment, Interest and Money', url: 'https://en.wikipedia.org/wiki/The_General_Theory_of_Employment,_Interest_and_Money' },
+            { title: 'Shapero Rare Books — première édition, Macmillan, 1936', url: 'https://shapero.com/products/keynes-general-theory-employment-1936-first-edition-109128' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-hayek-route-servitude',
+        branch: 'grands-ouvrages',
+        title: 'La Route de la servitude (Hayek, 1944)',
+        field: 'Ouvrages de référence · institutions',
+        summary: 'L’essai de Hayek sur les risques de la planification économique centralisée.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'The Road to Serfdom'],
+            ['Auteur', 'Friedrich August von Hayek (1899-1992)'],
+            ['Édition', 'Londres, Routledge, première édition britannique. L’édition américaine suit chez University of Chicago Press en septembre 1944.'],
+            ['Date de parution', 'Mars 1944']
+          ],
+          sections: [
+            'Hayek soutient que la planification économique centralisée donne à l’État un pouvoir sur l’individu et menace les libertés ; il voit dans cette planification une racine commune au fascisme et au socialisme. Ces affirmations sont des thèses de Hayek, discutées depuis la parution du livre.',
+            'Publié pendant la Seconde Guerre mondiale, en période de rationnement du papier, le livre fut très demandé. Une version abrégée parue dans le Reader’s Digest en avril 1945 l’a fait connaître d’un public plus large.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'Wikipédia (anglais) — The Road to Serfdom', url: 'https://en.wikipedia.org/wiki/The_Road_to_Serfdom' },
+            { title: 'Raptis Rare Books — première édition britannique, Routledge, 1944', url: 'https://www.raptisrarebooks.com/product/the-road-to-serfdom-friedrich-a-hayek-british-first-edition' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-friedman-schwartz-monetary-history',
+        branch: 'grands-ouvrages',
+        title: 'A Monetary History of the United States (Friedman et Schwartz, 1963)',
+        field: 'Ouvrages de référence · économie monétaire',
+        summary: 'L’histoire monétaire américaine de 1867 à 1960 par Friedman et Schwartz.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'A Monetary History of the United States, 1867-1960'],
+            ['Auteurs', 'Milton Friedman (1912-2006) et Anna Jacobson Schwartz (1915-2012)'],
+            ['Édition', 'Princeton, Princeton University Press, pour le National Bureau of Economic Research (xxiv-860 pages)'],
+            ['Date de parution', '1963']
+          ],
+          sections: [
+            'Les auteurs s’appuient sur de longues séries historiques pour soutenir que les variations de la masse monétaire ont profondément influencé l’économie américaine, en particulier ses fluctuations.',
+            'Le chapitre 7, « The Great Contraction », consacré à la Grande Dépression, a été publié séparément en 1965.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'Princeton University Press — A Monetary History of the United States', url: 'https://press.princeton.edu/node/21811' },
+            { title: 'East Carolina University — notice catalographique (1963)', url: 'https://lib.ecu.edu/catalog-preview/catalog/229811' }
+          ]
+        }
+      },
+      {
+        id: 'ouvrage-piketty-capital-xxie',
+        branch: 'grands-ouvrages',
+        title: 'Le Capital au XXIe siècle (Piketty, 2013)',
+        field: 'Ouvrages de référence · inégalités',
+        summary: 'L’ouvrage de Thomas Piketty sur la dynamique du capital et des inégalités.',
+        lesson: {
+          fiche: [
+            ['Titre complet', 'Le Capital au XXIe siècle'],
+            ['Auteur', 'Thomas Piketty (né en 1971)'],
+            ['Édition', 'Paris, Éditions du Seuil, coll. « Les livres du Nouveau Monde » (970 pages)'],
+            ['Date de parution', 'Septembre 2013']
+          ],
+          sections: [
+            'Piketty soutient que la divergence des niveaux de revenu et de capital l’emporte mécaniquement lorsque la croissance de l’économie est plus faible que le rendement du capital. Il propose un impôt progressif sur le capital à l’échelle mondiale.',
+            'Ses thèses et ses méthodes ont suscité de nombreuses critiques et discussions parmi les économistes.'
+          ],
+          sourcesHeading: 'Sources bibliographiques',
+          sources: [
+            { title: 'Lectures (OpenEdition) — compte rendu, Seuil, 2013', url: 'https://journals.openedition.org/lectures/12931' },
+            { title: 'La finance pour tous — fiche de lecture, Seuil, 2013', url: 'https://www.lafinancepourtous.com/outils/bibliotheque/le-capital-au-xxie-siecle/' }
+          ]
+        }
+      }
+    ]
   }
-];
-// ============================================================
-// FICHES DES OUVRAGES DE RÉFÉRENCE — Les grands de l'économie
-// À coller À LA FIN du fichier contenant window.courseCatalog
-// (après le "];" final). Ne modifie aucune donnée existante.
-// Données vérifiées : catalogues de bibliothèques (NYPL, BnIr, Morgan
-// Library, Sudoc), archives (MEGA, St Andrews) et libraires spécialisés.
-// Quand une donnée n'a pas pu être confirmée, elle est omise.
-// ============================================================
-window.ouvragesReference = [
-  {
-    id: "smith-richesse-des-nations",
-    economiste: "adam-smith",
-    numero: "01",
-    titreComplet: "An Inquiry into the Nature and Causes of the Wealth of Nations (en deux volumes)",
-    auteur: "Adam Smith (1723-1790)",
-    edition: "Londres, W. Strahan et T. Cadell, 2 vol. in-4°.",
-    dateParution: "9 mars 1776"
-  },
-  {
-    id: "malthus-essai-population",
-    economiste: "thomas-malthus",
-    numero: "02",
-    titreComplet: "An Essay on the Principle of Population, as it affects the Future Improvement of Society, with Remarks on the Speculations of Mr. Godwin, M. Condorcet, and other Writers",
-    auteur: "Thomas Robert Malthus (1766-1834), publié anonymement",
-    edition: "Londres, J. Johnson, St Paul's Church-Yard, in-8° (396 pages).",
-    dateParution: "1798"
-  },
-  {
-    id: "ricardo-principes",
-    economiste: "david-ricardo",
-    numero: "03",
-    titreComplet: "On the Principles of Political Economy, and Taxation",
-    auteur: "David Ricardo (1772-1823)",
-    edition: "Londres, John Murray, in-8° (viii-589 pages). Tirage de 750 exemplaires.",
-    dateParution: "19 avril 1817"
-  },
-  {
-    id: "mill-principes",
-    economiste: "john-stuart-mill",
-    numero: "04",
-    titreComplet: "Principles of Political Economy, with some of their Applications to Social Philosophy (en deux volumes)",
-    auteur: "John Stuart Mill (1806-1873)",
-    edition: "Londres, John W. Parker, 2 vol. in-8° (xvi-593 et xv-549 pages).",
-    dateParution: "1848"
-  },
-  {
-    id: "marx-le-capital",
-    economiste: "karl-marx",
-    numero: "05",
-    titreComplet: "Das Kapital. Kritik der politischen Oekonomie. Erster Band. Buch I : Der Produktionsprocess des Kapitals",
-    auteur: "Karl Marx (1818-1883)",
-    edition: "Hambourg, Otto Meissner, in-8°. Imprimé à Leipzig, tirage de 1 000 exemplaires. Seul le tome I paraît du vivant de Marx.",
-    dateParution: "Septembre 1867"
-  },
-  {
-    id: "marshall-principes",
-    economiste: "alfred-marshall",
-    numero: "06",
-    titreComplet: "Principles of Economics, Volume I",
-    auteur: "Alfred Marshall (1842-1924)",
-    edition: "Londres, Macmillan, in-8° (xxviii-754 pages). Seul le volume I a été publié : le second, prévu, a été abandonné.",
-    dateParution: "18 juillet 1890"
-  },
-  {
-    id: "keynes-theorie-generale",
-    economiste: "john-maynard-keynes",
-    numero: "07",
-    titreComplet: "The General Theory of Employment, Interest and Money",
-    auteur: "John Maynard Keynes (1883-1946)",
-    edition: "Londres, Macmillan, in-8° (xii-403 pages).",
-    dateParution: "Février 1936"
-  },
-  {
-    id: "hayek-route-de-la-servitude",
-    economiste: "friedrich-hayek",
-    numero: "08",
-    titreComplet: "The Road to Serfdom",
-    auteur: "Friedrich August von Hayek (1899-1992)",
-    edition: "Londres, Routledge, première édition britannique. L'édition américaine suit chez University of Chicago Press en septembre 1944.",
-    dateParution: "Mars 1944"
-  },
-  {
-    id: "friedman-schwartz-monetary-history",
-    economiste: "milton-friedman",
-    numero: "09",
-    titreComplet: "A Monetary History of the United States, 1867-1960",
-    auteur: "Milton Friedman (1912-2006) et Anna Jacobson Schwartz (1915-2012)",
-    edition: "Princeton, Princeton University Press, pour le National Bureau of Economic Research (xxiv-860 pages).",
-    dateParution: "1963"
-  },
-  {
-    id: "piketty-capital-xxie",
-    economiste: "thomas-piketty",
-    numero: "10",
-    titreComplet: "Le Capital au XXIe siècle",
-    auteur: "Thomas Piketty (né en 1971)",
-    edition: "Paris, Éditions du Seuil, coll. « Les livres du Nouveau Monde » (970 pages).",
-    dateParution: "Septembre 2013"
-  }
-];
