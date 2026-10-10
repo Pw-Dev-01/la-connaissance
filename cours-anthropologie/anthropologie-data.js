@@ -693,4 +693,5 @@ window.courseCatalog = [
         }
       }
     ]
-  },
+  }
+];
