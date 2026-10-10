@@ -1189,5 +1189,6 @@ window.courseCatalog = [
         }
       }
     ]
-  },
+  }
+]
 
