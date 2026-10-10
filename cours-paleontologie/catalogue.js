@@ -18,7 +18,7 @@ const rubricDetails = {
     note: 'Utiliser les fossiles pour étudier l’évolution, les milieux anciens et les changements de biodiversité.'
   },
   'grands-livres': {
-    title: 'Les grands livres',
+    title: 'Les grands livres de la paléontologie',
     note: 'Dix ouvrages de référence de la paléontologie, avec auteur, édition, date de parution et résumé.'
   }
 };
