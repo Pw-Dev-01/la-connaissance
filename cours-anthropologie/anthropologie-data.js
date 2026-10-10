@@ -469,6 +469,11 @@ window.courseCatalog = [
     ]
   },
 
+// ====================================================
+// Chaque chapitre utilise lesson.fiche, que cours.js affiche déjà
+// au format « 01 / FICHE — Fiche de l’ouvrage ».
+// ====================================================
+
   {
     id: 'grands-livres',
     title: 'Les grands livres de l’anthropologie',
@@ -688,5 +693,4 @@ window.courseCatalog = [
         }
       }
     ]
-  }
-],
+  },
