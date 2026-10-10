@@ -746,7 +746,7 @@ window.courseCatalog = [
   }
 
 ],
-,
+
   {
     "id": "grands-livres",
     "title": "Les grands livres de la climatologie",
