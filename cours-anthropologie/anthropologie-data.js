@@ -463,9 +463,12 @@ window.courseCatalog = [
             { title: 'OpenStax Introduction to Sociology 3e — 3.2 Elements of Culture', url: 'https://openstax.org/books/introduction-sociology-3e/pages/3-2-elements-of-culture' },
             { title: 'OpenStax Introduction to Sociology 3e — 3.3 High, Low, Pop, Sub, Counter-culture and Cultural Change', url: 'https://openstax.org/books/introduction-sociology-3e/pages/3-3-high-low-pop-sub-counter-culture-and-cultural-change' },
             { title: 'American Anthropological Association — Membership: linguistic research as an anthropological approach', url: 'https://americananthro.org/membership/' }
-    
+          ]
+        }
+      }
     ]
   },
+    
 
 // ====================================================
 // Chaque chapitre utilise lesson.fiche, que cours.js affiche déjà
@@ -687,6 +690,7 @@ window.courseCatalog = [
             { title: 'Collège de France — bibliographie de Philippe Descola', url: 'https://www.college-de-france.fr/sites/default/files/documents/philippe-descola/UPL2129087158209563068_Bibliographie_pd_2017.pdf' },
             { title: 'Bibliothèques de la Ville de Paris — notice', url: 'https://bibliotheques.paris.fr/Default/doc/SYRACUSE/288633/par-dela-nature-et-culture' },
             { title: 'Notice de la traduction anglaise (University of Chicago Press, 2013)', url: 'https://catalog.lib.ecu.edu/catalog/3367930' }
+          ]
         }
       }
     ]
