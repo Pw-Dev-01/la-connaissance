@@ -745,9 +745,12 @@ window.courseCatalog = [
     ] // FIN BRANCHE oceans-et-variabilite
   }
 ,
+
   {
-    "id": "grands-livres",
-    "title": "Les grands livres de la climatologie",
+    "id": "grands-livres"
+,
+    "title": "Les grands livres de la climatologie"
+,
     "note": "Dix ouvrages de référence de la climatologie, avec auteur, édition, date de parution et résumé.",
     "chapters": [
       {
