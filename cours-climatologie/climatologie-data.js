@@ -745,4 +745,449 @@ window.courseCatalog = [
     ] // FIN BRANCHE oceans-et-variabilite
   }
 
-];
+],
+,
+  {
+    "id": "grands-livres",
+    "title": "Les grands livres de la climatologie",
+    "note": "Dix ouvrages de référence de la climatologie, avec auteur, édition, date de parution et résumé.",
+    "chapters": [
+      {
+        "id": "arrhenius-worlds-in-the-making",
+        "title": "Worlds in the Making",
+        "field": "Svante Arrhenius · 1908",
+        "summary": "Svante Arrhenius, 1908.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "Worlds in the Making: The Evolution of the Universe"
+            ],
+            [
+              "Auteur",
+              "Svante Arrhenius (1859-1927), directeur de l’Institut Nobel de physico-chimie à Stockholm selon la page de titre"
+            ],
+            [
+              "Édition",
+              "New York et Londres, Harper & Brothers, mars 1908 (xiii + 229 pages). Traduction par H. Borns de l’ouvrage suédois Världarnas utveckling."
+            ],
+            [
+              "Date de parution",
+              "1908"
+            ]
+          ],
+          "sections": [
+            "Ce livre n’est pas un traité de climatologie : c’est un ouvrage sur l’évolution de l’univers et des mondes. Il est cité ici parce que sa table des matières comporte des sections sur l’effet de l’atmosphère qui retient la chaleur, sur le rôle du dioxyde de carbone atmosphérique, sur les âges géologiques chauds et froids et sur les variations de la teneur de l’air en dioxyde de carbone."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Project Gutenberg — texte de l’édition de 1908 (Harper & Brothers)",
+              "url": "https://gutenberg.org/cache/epub/69022/pg69022-images.html"
+            },
+            {
+              "title": "Bibliothèque nationale d’Irlande — notice (New York et Londres, Harper, 1908)",
+              "url": "https://catalogue.nli.ie/Record/vtls000389394"
+            }
+          ]
+        }
+      },
+      {
+        "id": "milankovic-kanon-der-erdbestrahlung",
+        "title": "Kanon der Erdbestrahlung und seine Anwendung auf das Eiszeitenproblem",
+        "field": "Milutin Milanković · 1941",
+        "summary": "Milutin Milanković, 1941.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "Kanon der Erdbestrahlung und seine Anwendung auf das Eiszeitenproblem (Canon de l’insolation de la Terre et son application au problème des périodes glaciaires)"
+            ],
+            [
+              "Auteur",
+              "Milutin Milanković (1879-1958)"
+            ],
+            [
+              "Édition",
+              "Belgrade, Académie royale serbe, 1941. Traductions anglaises : Canon of Insolation and the Ice-Age Problem, Israel Program for Scientific Translations, Washington D. C., 1969 ; Belgrade, Zavod Nastavna Sredstva, 1998 (éd. N. Pantić)."
+            ],
+            [
+              "Date de parution",
+              "1941"
+            ]
+          ],
+          "sections": [
+            "Considéré comme l’œuvre maîtresse de Milanković, ce livre rassemble les éléments mathématiques de la théorie dite des « cycles de Milanković » : les variations de l’orbite terrestre modifient la quantité de rayonnement solaire reçu et ont pu jouer un rôle dans le déclenchement des glaciations. Le livre est le fruit de près de quarante ans de recherches mathématiques sur le climat.",
+            "Milanković avait déjà présenté une première version de sa théorie en 1930 dans Mathematische Klimalehre und astronomische Theorie der Klimaschwankungen, contribution au Handbuch der Klimatologie (Berlin, Gebrüder Borntraeger). Le manuscrit du Kanon fut remis à l’imprimeur le 2 avril 1941, quatre jours avant le bombardement de Belgrade : l’imprimerie fut détruite, mais presque toutes les feuilles imprimées étaient intactes.",
+            "La théorie n’a été largement acceptée qu’après l’article de Hays, Imbrie et Shackleton, « Variations in the Earth’s Orbit: Pacemaker of the Ice Ages » (Science, 1976), qui a mis en relation des carottes de sédiments marins avec les variations orbitales."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Union européenne des géosciences (EGU) — portrait de Milutin Milanković",
+              "url": "https://www.egu.eu/awards-medals/portrait/milutin-milankovic/"
+            },
+            {
+              "title": "Garrison-Morton (Jeremy Norman) — notice du Kanon der Erdbestrahlung",
+              "url": "https://beta.historyofmedicine.com/id/15277"
+            },
+            {
+              "title": "History of Information — Milanković et le Kanon der Erdbestrahlung",
+              "url": "https://historyofinformation.com/detail.php?id=5340"
+            }
+          ]
+        }
+      },
+      {
+        "id": "le-roy-ladurie-histoire-du-climat",
+        "title": "Histoire du climat depuis l’an mil",
+        "field": "Emmanuel Le Roy Ladurie · 1967",
+        "summary": "Emmanuel Le Roy Ladurie, 1967.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "Histoire du climat depuis l’an mil"
+            ],
+            [
+              "Auteur",
+              "Emmanuel Le Roy Ladurie (1929-2023), préface de Pierre Pédelaborde"
+            ],
+            [
+              "Édition",
+              "Paris, Flammarion, collection « Nouvelle bibliothèque scientifique ». Version anglaise révisée et mise à jour : Times of Feast, Times of Famine: A History of Climate since the Year 1000 (1971)."
+            ],
+            [
+              "Date de parution",
+              "1967"
+            ]
+          ],
+          "sections": [
+            "L’auteur est historien : il aborde l’histoire de faits physiques, ceux du climat, avec les méthodes de l’histoire des sociétés humaines. Le livre porte sur l’histoire du climat depuis l’an mil.",
+            "Le Roy Ladurie y insiste sur le fait que les rapports entre le climat et l’histoire humaine ne sont pas encore résolus, et prend ses distances avec un déterminisme grossier. Le climatologue Hubert Lamb en a rendu compte dans la revue Nature en 1968, sous le titre « Weather Long Ago »."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Wellcome Collection — notice bibliographique",
+              "url": "https://wellcomecollection.org/works/dph5yxhb"
+            },
+            {
+              "title": "Cahiers de géographie du Québec — compte rendu (1968)",
+              "url": "https://www.erudit.org/fr/revues/cgq/1968-v12-n25-cgq2599/020804ar.pdf"
+            },
+            {
+              "title": "Nature — H. Lamb, « Weather Long Ago » (1968)",
+              "url": "https://www.nature.com/articles/217687a0"
+            }
+          ]
+        }
+      },
+      {
+        "id": "lamb-climate-present-past-future",
+        "title": "Climate: Present, Past and Future",
+        "field": "Hubert H. Lamb · 1972-1977",
+        "summary": "Hubert H. Lamb, 1972 et 1977.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "Climate: Present, Past and Future"
+            ],
+            [
+              "Auteur",
+              "Hubert H. Lamb"
+            ],
+            [
+              "Édition",
+              "Londres, Methuen, 2 volumes : volume 1 « Fundamentals and Climate Now » (1972, xxxi + 613 pages) et volume 2 « Climatic History and the Future » (1977). Distribué aux États-Unis par Barnes & Noble. Réédité par Routledge dans la collection Routledge Revivals."
+            ],
+            [
+              "Date de parution",
+              "1972 (volume 1) ; 1977 (volume 2)"
+            ]
+          ],
+          "sections": [
+            "Le volume 1 traite des fondements de la climatologie (rayonnement et apport de chaleur à la Terre, circulation de l’atmosphère, saisons, stratosphère, océans, cycle de l’eau, causes observées des variations climatiques) puis présente les climats du XXe siècle, avec des données de référence et une classification des climats.",
+            "Le volume 2 couvre les deux dernières parties de l’étude : l’histoire du climat et l’avenir. L’auteur y replace dans leur contexte certaines prévisions pessimistes alors disponibles."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Université de Pennsylvanie — notice de la collection en deux volumes",
+              "url": "https://find.library.upenn.edu/catalog/994941203503681"
+            },
+            {
+              "title": "Routledge — présentation et table des matières du volume 1",
+              "url": "https://www.routledge.com/products/9780203804315"
+            }
+          ]
+        }
+      },
+      {
+        "id": "peixoto-oort-physics-of-climate",
+        "title": "Physics of Climate",
+        "field": "José P. Peixoto et Abraham H. Oort · 1992",
+        "summary": "José P. Peixoto et Abraham H. Oort, 1992.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "Physics of Climate"
+            ],
+            [
+              "Auteur",
+              "José P. Peixoto et Abraham H. Oort, avec un avant-propos d’Edward N. Lorenz"
+            ],
+            [
+              "Édition",
+              "New York, American Institute of Physics (xxxix + 520 pages)."
+            ],
+            [
+              "Date de parution",
+              "1992"
+            ]
+          ],
+          "sections": [
+            "L’ouvrage décrit en profondeur la circulation atmosphérique et la façon dont les phénomènes de l’environnement mondial interagissent dans un seul système. Son approche intégrée réunit les grands éléments du système climatique — océans, atmosphère et cryosphère — pour expliquer la structure et le comportement du climat au cours du temps.",
+            "Il s’adresse aux étudiants et aux professionnels de la météorologie, de l’océanographie, de la géophysique et de la physique."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Springer — présentation du livre",
+              "url": "https://link.springer.com/book/9780883187128"
+            },
+            {
+              "title": "Bibliothèque de l’Université de Kyushu — notice bibliographique",
+              "url": "https://catalog.lib.kyushu-u.ac.jp/ja/recordID/1000642709"
+            }
+          ]
+        }
+      },
+      {
+        "id": "hartmann-global-physical-climatology",
+        "title": "Global Physical Climatology",
+        "field": "Dennis L. Hartmann · 1994",
+        "summary": "Dennis L. Hartmann, 1994.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "Global Physical Climatology"
+            ],
+            [
+              "Auteur",
+              "Dennis L. Hartmann (université de Washington, Seattle)"
+            ],
+            [
+              "Édition",
+              "San Diego et Londres, Academic Press, collection « International Geophysics Series », volume 56 (411 pages)."
+            ],
+            [
+              "Date de parution",
+              "1994"
+            ]
+          ],
+          "sections": [
+            "Manuel introductif consacré aux principes physiques fondamentaux et aux problèmes de la sensibilité et du changement climatiques. Il traite notamment du bilan énergétique global, de la théorie des paramètres orbitaux pour expliquer les changements climatiques passés, et des modèles climatiques globaux.",
+            "Selon l’auteur, la plupart des manuels de climatologie sont descriptifs et écrits par des géographes ; celui-ci est écrit du point de vue d’un physicien."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Elsevier — présentation du livre",
+              "url": "https://www.elsevier.com/books/catalog/isbn/9780123285300"
+            },
+            {
+              "title": "Karlsruher Institut für Technologie — notice bibliographique",
+              "url": "https://katalog.bibliothek.kit.edu/bib/128253"
+            }
+          ]
+        }
+      },
+      {
+        "id": "houghton-global-warming-complete-briefing",
+        "title": "Global Warming: The Complete Briefing",
+        "field": "John Houghton · 1994",
+        "summary": "John Houghton, 1994.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "Global Warming: The Complete Briefing"
+            ],
+            [
+              "Auteur",
+              "John Theodore Houghton (1931-2020)"
+            ],
+            [
+              "Édition",
+              "Première édition : Oxford, Lion Publishing, 1994 (192 pages). Deuxième édition : Cambridge University Press, 1997 ; puis troisième (2004), quatrième (2009) et cinquième (2015) éditions."
+            ],
+            [
+              "Date de parution",
+              "1994"
+            ]
+          ],
+          "sections": [
+            "Guide de la science du réchauffement climatique : l’auteur expose les bases scientifiques du réchauffement, puis les impacts probables du changement climatique sur les sociétés humaines, avant d’aborder les actions que gouvernements, industries et individus peuvent mener pour en atténuer les effets.",
+            "La deuxième édition a été entièrement mise à jour pour tenir compte des dernières évaluations du GIEC et ajoute des questions à la fin des chapitres."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Wellcome Collection — notice de la première édition (Lion, 1994)",
+              "url": "https://content.wellcomecollection.org/works/hetjwdze"
+            },
+            {
+              "title": "Cambridge University Press — mentions d’édition (5e édition, 2015)",
+              "url": "https://assets.cambridge.org/97811070/91672/copyright/9781107091672_copyright_info.pdf"
+            }
+          ]
+        }
+      },
+      {
+        "id": "alley-two-mile-time-machine",
+        "title": "The Two-Mile Time Machine",
+        "field": "Richard B. Alley · 2000",
+        "summary": "Richard B. Alley, 2000.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "The Two-Mile Time Machine: Ice Cores, Abrupt Climate Change, and Our Future"
+            ],
+            [
+              "Auteur",
+              "Richard B. Alley (Pennsylvania State University)"
+            ],
+            [
+              "Édition",
+              "Princeton (New Jersey), Princeton University Press (viii + 229 pages, 18 chapitres en 5 parties). Réédité en 2014 dans la collection Princeton Science Library."
+            ],
+            [
+              "Date de parution",
+              "2000"
+            ]
+          ],
+          "sections": [
+            "Alley raconte l’histoire des changements climatiques mondiaux révélés par la lecture des couches annuelles de carottes de glace forées au Groenland. Dans les années 1990, avec ses collègues, il a montré que la dernière glaciation avait pris fin brusquement, en l’espace de trois ans environ.",
+            "Les carottes, longues de plus de trois kilomètres au total, ont permis de reconstituer des phénomènes comme le régime des vents et les précipitations sur environ 110 000 ans. L’auteur en conclut que le climat peut changer brutalement et termine par une réflexion sur le climat futur et sur ce que l’on peut faire."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Pennsylvania State University — fiche de publication",
+              "url": "https://pure.psu.edu/en/publications/the-two-mile-time-machine-ice-cores-abrupt-climate-change-and-our/"
+            },
+            {
+              "title": "Notice de bibliothèque (Princeton University Press, 2000)",
+              "url": "https://library.usi.edu/record/241335"
+            },
+            {
+              "title": "Notice avec table des matières (18 chapitres)",
+              "url": "https://opac.nwic.edu/eg/opac/record/24400"
+            }
+          ]
+        }
+      },
+      {
+        "id": "weart-discovery-of-global-warming",
+        "title": "The Discovery of Global Warming",
+        "field": "Spencer R. Weart · 2003",
+        "summary": "Spencer R. Weart, 2003.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "The Discovery of Global Warming"
+            ],
+            [
+              "Auteur",
+              "Spencer R. Weart (né en 1942), physicien de formation devenu historien des sciences"
+            ],
+            [
+              "Édition",
+              "Cambridge (Massachusetts), Harvard University Press, collection « New histories of science, technology, and medicine » (x + 228 pages). Édition révisée et augmentée : Harvard University Press, 2008."
+            ],
+            [
+              "Date de parution",
+              "2003"
+            ]
+          ],
+          "sections": [
+            "Weart y présente l’histoire de la science du changement climatique, en racontant comment les scientifiques en sont venus à comprendre le réchauffement planétaire au cours du XXe siècle. Les chapitres vont de « How could climate change? » à « The discovery confirmed », en passant par « The erratic beast » et « Breaking into politics ».",
+            "Une version du livre a été mise en ligne en août 2003 sur le site de l’American Institute of Physics."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Notice de bibliothèque avec table des matières (Harvard University Press, 2003)",
+              "url": "https://lib.ecu.edu/catalog-preview/catalog/943242"
+            },
+            {
+              "title": "American Institute of Physics — notice et biographie de l’auteur",
+              "url": "https://history.aip.org/catalog/icos/26174.html"
+            },
+            {
+              "title": "Publishers Weekly — compte rendu (2003)",
+              "url": "https://publishersweekly.com/978-0-674-01157-1"
+            }
+          ]
+        }
+      },
+      {
+        "id": "pierrehumbert-principles-of-planetary-climate",
+        "title": "Principles of Planetary Climate",
+        "field": "Raymond T. Pierrehumbert · 2010",
+        "summary": "Raymond T. Pierrehumbert, 2010.",
+        "lesson": {
+          "heading": "Fiche du livre",
+          "fiche": [
+            [
+              "Titre complet",
+              "Principles of Planetary Climate"
+            ],
+            [
+              "Auteur",
+              "Raymond T. Pierrehumbert (né en 1954), université de Chicago au moment de la publication"
+            ],
+            [
+              "Édition",
+              "Cambridge, Cambridge University Press (xxv + 652 pages)."
+            ],
+            [
+              "Date de parution",
+              "2010"
+            ]
+          ],
+          "sections": [
+            "Manuel qui présente les éléments physiques de base nécessaires pour comprendre le climat actuel et passé de la Terre, les climats des planètes du Système solaire et ceux des planètes extrasolaires : thermodynamique, transfert radiatif infrarouge, diffusion, transferts de chaleur à la surface et processus qui gouvernent l’évolution de la composition de l’atmosphère.",
+            "Il commence par un traitement très élémentaire, puis devient progressivement plus exigeant. Près de quatre cents problèmes accompagnent le texte."
+          ],
+          "sourcesHeading": "Notices bibliographiques",
+          "sources": [
+            {
+              "title": "Cambridge University Press — présentation du livre",
+              "url": "https://www.cambridge.org/core/books/principles-of-planetary-climate/preface/3706FAD5101C3733C2FF2ADE9F214943"
+            },
+            {
+              "title": "Bibliothèque universitaire de Nantes — notice (Cambridge UP, 2010)",
+              "url": "https://nantilus.univ-nantes.fr/vufind/Record/PPN150092792"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
