@@ -4,7 +4,7 @@ const rubricDetails = {
   microeconomie: { title: 'Microéconomie', note: 'Choix individuels, marchés et réactions des quantités.' },
   macroeconomie: { title: 'Macroéconomie', note: 'Production, prix et activité à l’échelle d’une économie.' },
   'grands-economistes': { title: 'Les grands économistes', note: 'Une sélection de penseurs et de contributions qui ont marqué l’histoire de la pensée économique. Cette sélection n’est pas exhaustive.' },
-  'grands-ouvrages': { title: 'Les grands ouvrages de l’économie', note: 'Dix ouvrages de référence de la pensée économique, présentés par leur fiche bibliographique vérifiée. Cette sélection n’est pas exhaustive.' }
+  'grands-ouvrages': { title: 'Les grands livres de l’économie', note: 'Dix ouvrages de référence de la pensée économique, présentés par leur fiche bibliographique vérifiée. Cette sélection n’est pas exhaustive.' }
 };
 const rubrics = Object.entries(rubricDetails)
   .map(([id, details]) => ({ id, ...details, chapters: chapters.filter((chapter) => chapter.branch === id) }))
