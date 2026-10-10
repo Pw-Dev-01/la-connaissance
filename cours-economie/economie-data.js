@@ -403,3 +403,103 @@ window.courseCatalog = [
     ]
   }
 ];
+// ============================================================
+// FICHES DES OUVRAGES DE RÉFÉRENCE — Les grands de l'économie
+// À coller À LA FIN du fichier contenant window.courseCatalog
+// (après le "];" final). Ne modifie aucune donnée existante.
+// Données vérifiées : catalogues de bibliothèques (NYPL, BnIr, Morgan
+// Library, Sudoc), archives (MEGA, St Andrews) et libraires spécialisés.
+// Quand une donnée n'a pas pu être confirmée, elle est omise.
+// ============================================================
+window.ouvragesReference = [
+  {
+    id: "smith-richesse-des-nations",
+    economiste: "adam-smith",
+    numero: "01",
+    titreComplet: "An Inquiry into the Nature and Causes of the Wealth of Nations (en deux volumes)",
+    auteur: "Adam Smith (1723-1790)",
+    edition: "Londres, W. Strahan et T. Cadell, 2 vol. in-4°.",
+    dateParution: "9 mars 1776"
+  },
+  {
+    id: "malthus-essai-population",
+    economiste: "thomas-malthus",
+    numero: "02",
+    titreComplet: "An Essay on the Principle of Population, as it affects the Future Improvement of Society, with Remarks on the Speculations of Mr. Godwin, M. Condorcet, and other Writers",
+    auteur: "Thomas Robert Malthus (1766-1834), publié anonymement",
+    edition: "Londres, J. Johnson, St Paul's Church-Yard, in-8° (396 pages).",
+    dateParution: "1798"
+  },
+  {
+    id: "ricardo-principes",
+    economiste: "david-ricardo",
+    numero: "03",
+    titreComplet: "On the Principles of Political Economy, and Taxation",
+    auteur: "David Ricardo (1772-1823)",
+    edition: "Londres, John Murray, in-8° (viii-589 pages). Tirage de 750 exemplaires.",
+    dateParution: "19 avril 1817"
+  },
+  {
+    id: "mill-principes",
+    economiste: "john-stuart-mill",
+    numero: "04",
+    titreComplet: "Principles of Political Economy, with some of their Applications to Social Philosophy (en deux volumes)",
+    auteur: "John Stuart Mill (1806-1873)",
+    edition: "Londres, John W. Parker, 2 vol. in-8° (xvi-593 et xv-549 pages).",
+    dateParution: "1848"
+  },
+  {
+    id: "marx-le-capital",
+    economiste: "karl-marx",
+    numero: "05",
+    titreComplet: "Das Kapital. Kritik der politischen Oekonomie. Erster Band. Buch I : Der Produktionsprocess des Kapitals",
+    auteur: "Karl Marx (1818-1883)",
+    edition: "Hambourg, Otto Meissner, in-8°. Imprimé à Leipzig, tirage de 1 000 exemplaires. Seul le tome I paraît du vivant de Marx.",
+    dateParution: "Septembre 1867"
+  },
+  {
+    id: "marshall-principes",
+    economiste: "alfred-marshall",
+    numero: "06",
+    titreComplet: "Principles of Economics, Volume I",
+    auteur: "Alfred Marshall (1842-1924)",
+    edition: "Londres, Macmillan, in-8° (xxviii-754 pages). Seul le volume I a été publié : le second, prévu, a été abandonné.",
+    dateParution: "18 juillet 1890"
+  },
+  {
+    id: "keynes-theorie-generale",
+    economiste: "john-maynard-keynes",
+    numero: "07",
+    titreComplet: "The General Theory of Employment, Interest and Money",
+    auteur: "John Maynard Keynes (1883-1946)",
+    edition: "Londres, Macmillan, in-8° (xii-403 pages).",
+    dateParution: "Février 1936"
+  },
+  {
+    id: "hayek-route-de-la-servitude",
+    economiste: "friedrich-hayek",
+    numero: "08",
+    titreComplet: "The Road to Serfdom",
+    auteur: "Friedrich August von Hayek (1899-1992)",
+    edition: "Londres, Routledge, première édition britannique. L'édition américaine suit chez University of Chicago Press en septembre 1944.",
+    dateParution: "Mars 1944"
+  },
+  {
+    id: "friedman-schwartz-monetary-history",
+    economiste: "milton-friedman",
+    numero: "09",
+    titreComplet: "A Monetary History of the United States, 1867-1960",
+    auteur: "Milton Friedman (1912-2006) et Anna Jacobson Schwartz (1915-2012)",
+    edition: "Princeton, Princeton University Press, pour le National Bureau of Economic Research (xxiv-860 pages).",
+    dateParution: "1963"
+  },
+  {
+    id: "piketty-capital-xxie",
+    economiste: "thomas-piketty",
+    numero: "10",
+    titreComplet: "Le Capital au XXIe siècle",
+    auteur: "Thomas Piketty (né en 1971)",
+    edition: "Paris, Éditions du Seuil, coll. « Les livres du Nouveau Monde » (970 pages).",
+    dateParution: "Septembre 2013"
+  }
+];
