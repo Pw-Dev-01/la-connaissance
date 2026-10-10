@@ -654,3 +654,4 @@ window.courseCatalog = [
       }
     ]
   }
+];
