@@ -16,13 +16,41 @@ const renderDetailedLesson = (lesson) => {
   const container = document.querySelector('#chapter-lesson');
   container.hidden = false;
 
+  // Numérotation automatique des sections : 01 / …, 02 / …, etc.
+  let sectionCount = 0;
+  const nextIndex = (label) => {
+    sectionCount += 1;
+    return `${String(sectionCount).padStart(2, '0')} / ${label}`;
+  };
+
+  // --- Fiche d'identité d'un ouvrage (rubriques « grands livres ») ---------
+  if (lesson.fiche) {
+    const fiche = document.createElement('section');
+    fiche.className = 'lesson-section';
+    fiche.append(
+      createTextElement('p', 'section-index', nextIndex('FICHE DE L’OUVRAGE')),
+      createTextElement('h2', '', 'Identité du livre')
+    );
+    const list = document.createElement('dl');
+    list.className = 'book-fiche';
+    lesson.fiche.forEach(([label, value]) => {
+      list.append(
+        createTextElement('dt', '', label),
+        createTextElement('dd', '', value)
+      );
+    });
+    fiche.append(list);
+    container.append(fiche);
+  }
+
+  // --- Texte principal : « notions essentielles » ou « résumé » ------------
   const theory = document.createElement('section');
   theory.className = 'lesson-section';
   theory.append(
-    createTextElement('p', 'section-index', '01 / COMPRENDRE'),
-    createTextElement('h2', '', 'Les notions essentielles')
+    createTextElement('p', 'section-index', nextIndex(lesson.fiche ? 'RÉSUMÉ' : 'COMPRENDRE')),
+    createTextElement('h2', '', lesson.fiche ? 'De quoi parle ce livre' : 'Les notions essentielles')
   );
-  lesson.sections.forEach((paragraph) => theory.append(createTextElement('p', '', paragraph)));
+  (lesson.sections || []).forEach((paragraph) => theory.append(createTextElement('p', '', paragraph)));
   container.append(theory);
 
   if (lesson.formula) {
@@ -35,43 +63,73 @@ const renderDetailedLesson = (lesson) => {
     theory.append(formula);
   }
 
-  const example = document.createElement('section');
-  example.className = 'lesson-section';
-  example.append(
-    createTextElement('p', 'section-index', '02 / EXEMPLE GUIDÉ'),
-    createTextElement('h2', '', 'Méthode pas à pas'),
-    createTextElement('p', '', lesson.example.statement),
-    createTextElement('p', '', lesson.example.calculation)
-  );
-  const result = document.createElement('div');
-  result.className = 'worked-result';
-  result.append(createTextElement('strong', '', lesson.example.answer));
-  example.append(result);
-  container.append(example);
+  // --- Exemple guidé (facultatif) -------------------------------------------
+  if (lesson.example) {
+    const example = document.createElement('section');
+    example.className = 'lesson-section';
+    example.append(
+      createTextElement('p', 'section-index', nextIndex('EXEMPLE GUIDÉ')),
+      createTextElement('h2', '', 'Méthode pas à pas'),
+      createTextElement('p', '', lesson.example.statement),
+      createTextElement('p', '', lesson.example.calculation)
+    );
+    const result = document.createElement('div');
+    result.className = 'worked-result';
+    result.append(createTextElement('strong', '', lesson.example.answer));
+    example.append(result);
+    container.append(example);
+  }
 
-  const practice = document.createElement('section');
-  practice.className = 'lesson-section exercise-section';
-  practice.append(
-    createTextElement('p', 'section-index', '03 / S’ENTRAÎNER'),
-    createTextElement('h2', '', 'À toi de jouer')
-  );
-  const exercise = document.createElement('details');
-  exercise.className = 'exercise';
-  const summary = document.createElement('summary');
-  summary.append(
-    createTextElement('span', 'exercise-number', 'A'),
-    createTextElement('span', '', lesson.exercise.question),
-    createTextElement('span', 'reveal-label', 'Voir la correction')
-  );
-  const answer = document.createElement('div');
-  answer.className = 'exercise-answer';
-  answer.append(createTextElement('p', '', lesson.exercise.answer));
-  exercise.append(summary, answer);
-  exercise.addEventListener('toggle', () => {
-    summary.querySelector('.reveal-label').textContent = exercise.open ? 'Masquer la correction' : 'Voir la correction';
-  });
-  practice.append(exercise);
-  container.append(practice);
+  // --- Exercice (facultatif) ------------------------------------------------
+  if (lesson.exercise) {
+    const practice = document.createElement('section');
+    practice.className = 'lesson-section exercise-section';
+    practice.append(
+      createTextElement('p', 'section-index', nextIndex('S’ENTRAÎNER')),
+      createTextElement('h2', '', 'À toi de jouer')
+    );
+    const exercise = document.createElement('details');
+    exercise.className = 'exercise';
+    const summary = document.createElement('summary');
+    summary.append(
+      createTextElement('span', 'exercise-number', 'A'),
+      createTextElement('span', '', lesson.exercise.question),
+      createTextElement('span', 'reveal-label', 'Voir la correction')
+    );
+    const answer = document.createElement('div');
+    answer.className = 'exercise-answer';
+    answer.append(createTextElement('p', '', lesson.exercise.answer));
+    exercise.append(summary, answer);
+    exercise.addEventListener('toggle', () => {
+      summary.querySelector('.reveal-label').textContent = exercise.open ? 'Masquer la correction' : 'Voir la correction';
+    });
+    practice.append(exercise);
+    container.append(practice);
+  }
+
+  // --- Sources de vérification (facultatif) ---------------------------------
+  if (lesson.sources && lesson.sources.length) {
+    const sources = document.createElement('section');
+    sources.className = 'lesson-section lesson-sources';
+    sources.append(
+      createTextElement('p', 'section-index', nextIndex('SOURCES')),
+      createTextElement('h2', '', lesson.sourcesHeading || 'Sources')
+    );
+    const list = document.createElement('ul');
+    list.className = 'source-list';
+    lesson.sources.forEach((source) => {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = source.url;
+      link.textContent = source.title;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      item.append(link);
+      list.append(item);
+    });
+    sources.append(list);
+    container.append(sources);
+  }
 };
 
 if (notFound) {
