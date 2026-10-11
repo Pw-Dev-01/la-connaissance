@@ -1,5 +1,6 @@
 const chapterId = new URLSearchParams(window.location.search).get('id');
-const programme = window.courseCatalog.find((item) => item.chapters.some((chapter) => chapter.id === chapterId));
+const programme = (window.courseCatalog || []).find((item) => (item.chapters || []).some((chapter) => chapter.id === chapterId));
+
 const chapter = programme?.chapters.find((item) => item.id === chapterId);
 
 const titleElement = document.querySelector('#lesson-title');
