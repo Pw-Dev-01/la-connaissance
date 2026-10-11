@@ -32,13 +32,15 @@ const renderDetailedLesson = (lesson) => {
       createTextElement('p', 'section-index', nextIndex('FICHE DE L’OUVRAGE')),
       createTextElement('h2', '', 'Identité du livre')
     );
-    const list = document.createElement('dl');
+       const list = document.createElement('div');
     list.className = 'book-fiche';
     lesson.fiche.forEach(([label, value]) => {
-      list.append(
-        createTextElement('dt', '', label),
-        createTextElement('dd', '', value)
+      const line = document.createElement('p');
+      line.append(
+        createTextElement('strong', '', `${label} : `),
+        document.createTextNode(value)
       );
+      list.append(line);
     });
     fiche.append(list);
     container.append(fiche);
