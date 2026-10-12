@@ -3,117 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f1f3ec">
-    <meta name="description" content="La connaissance : un espace de cours pour explorer les mathématiques, la physique, la chimie, l'économie, la géologie, la climatologie, la paléontologie, l'anthropologie et l'histoire.">
-    <title>La connaissance · Explorer les cours</title>
-    <link rel="stylesheet" href="portal.css">
-    <script src="portal.js" defer></script>
+    <meta name="theme-color" content="#f4f5ed">
+    <meta name="description" content="Cours d’histoire : Mésopotamie, Égypte, vallée de l’Indus, Grèce, Rome et Chine anciennes, avec repères chronologiques, exercices corrigés et sources.">
+    <title>Programmes · Cours d’histoire</title>
+    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <style>
+      .catalogue-levels a.is-current {
+        border-left-color: var(--coral);
+        color: #ad482f;
+      }
+    </style>
+    <script src="histoire-data.js" defer></script>
+    <script src="catalogue.js" defer></script>
   </head>
   <body>
-    <header class="masthead">
-      <a class="brand" href="index.html" aria-label="La connaissance, accueil">
-        <span class="brand-mark" aria-hidden="true">K</span>
-        <span>LA CONNAISSANCE</span>
+    <header class="topbar topbar-with-statistics">
+      <a class="wordmark" href="index.html" aria-label="Catalogue des cours d’histoire">
+        <span class="wordmark-mark" aria-hidden="true">H</span>
+        <span>LE COURS D’HISTOIRE</span>
       </a>
-      <nav class="top-navigation" aria-label="Navigation principale">
-        <a href="#cours">Explorer</a>
-        <a href="#suite">À venir</a>
-      </nav>
-      <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
+      <span class="edition domain-statistics" id="domain-statistics">1 BRANCHE · 6 CHAPITRES</span>
     </header>
-
-    <main>
-      <section class="opening" aria-labelledby="page-title">
-        <div class="opening-copy">
-          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> APPRENDRE · COMPRENDRE · RELIER</p>
-          <h1 id="page-title">La<br><em>connaissance</em></h1>
-          <p class="opening-intro">Des cours pour éclairer les idées, des disciplines qui se répondent, un espace qui grandit au fil des découvertes.</p>
-          <a class="opening-link" href="#cours">Entrer dans les cours <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="opening-art" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="axis axis-horizontal"></div>
-          <div class="axis axis-vertical"></div>
-          <span class="art-symbol symbol-one">x²</span>
-          <span class="art-symbol symbol-two">φ</span>
-          <span class="art-symbol symbol-three">λ</span>
-          <span class="art-coordinate">Nº 001<br>48°51′N</span>
-        </div>
-      </section>
-
-      <section class="course-section" id="cours" aria-labelledby="courses-title">
-        <div class="section-heading">
-          <div><p class="eyebrow">LE CATALOGUE</p><h2 id="courses-title">Choisir une discipline</h2></div>
-          <span class="section-index">01 — 09</span>
-        </div>
-        <div class="course-list">
-          <a class="course-entry math-entry" href="cours-mathematiques/programmes.html">
-            <span class="entry-number">01</span>
-            <span class="entry-symbol" aria-hidden="true">x²</span>
-            <span class="entry-copy"><strong>Mathématiques</strong><span>Du lycée à la prépa scientifique · 89 chapitres</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="course-entry physics-entry" href="cours-physique/index.html">
-            <span class="entry-number">02</span>
-            <span class="entry-symbol" aria-hidden="true">φ</span>
-            <span class="entry-copy"><strong>Physique</strong><span>Des lois fondamentales aux sciences de l’Univers · 35 chapitres et 8 cours approfondis</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="course-entry chemistry-entry" href="cours-chimie/programmes.html">
-            <span class="entry-number">03</span>
-            <span class="entry-symbol" aria-hidden="true">⇌</span>
-            <span class="entry-copy"><strong>Chimie</strong><span>Des constituants de la matière aux synthèses moléculaires · 18 chapitres</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="course-entry economics-entry" href="cours-economie/index.html">
-            <span class="entry-number">04</span>
-            <span class="entry-symbol" aria-hidden="true">€</span>
-            <span class="entry-copy"><strong>Économie</strong><span>Microéconomie, macroéconomie et grands économistes · 3 rubriques · 11 chapitres</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="course-entry geology-entry" href="cours-geologie/index.html">
-            <span class="entry-number">05</span>
-            <span class="entry-symbol" aria-hidden="true">◈</span>
-            <span class="entry-copy"><strong>Géologie</strong><span>Des minéraux aux temps profonds · 6 chapitres et 1 cours approfondi</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="course-entry climatology-entry" href="cours-climatologie/index.html">
-            <span class="entry-number">06</span>
-            <span class="entry-symbol" aria-hidden="true">☀</span>
-            <span class="entry-copy"><strong>Climatologie</strong><span>Du bilan radiatif au changement climatique · 9 chapitres</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="course-entry paleontology-entry" href="cours-paleontologie/index.html">
-            <span class="entry-number">07</span>
-            <span class="entry-symbol" aria-hidden="true">✳</span>
-            <span class="entry-copy"><strong>Paléontologie</strong><span>Des fossiles aux archives de l’histoire du vivant · 1 cours approfondi</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="course-entry anthropology-entry" href="cours-anthropologie/index.html">
-            <span class="entry-number">08</span>
-            <span class="entry-symbol" aria-hidden="true">A</span>
-            <span class="entry-copy"><strong>Anthropologie</strong><span>Des traces du passé aux sociétés et aux langues · 5 rubriques · 14 chapitres</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="course-entry history-entry" href="cours-histoire/index.html">
-            <span class="entry-number">09</span>
-            <span class="entry-symbol" aria-hidden="true">H</span>
-            <span class="entry-copy"><strong>Histoire</strong><span>Des premières cités aux grands empires · 1 rubrique · 6 chapitres</span></span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="next-section" id="suite" aria-labelledby="next-title">
-        <div class="next-heading"><p class="eyebrow">LE CHAMP S’ÉLARGIT</p><h2 id="next-title">Et ensuite</h2></div>
-        <div class="next-list" aria-label="Disciplines à venir">
-          <div class="next-entry"><span>10</span><strong>Sciences du vivant</strong><span class="coming-label">À VENIR</span></div>
-          <div class="next-entry"><span>11</span><strong>Informatique</strong><span class="coming-label">À VENIR</span></div>
-        </div>
-      </section>
+    <main class="catalogue-layout">
+      <aside class="course-sidebar" aria-label="Branches de l’histoire">
+        <p class="sidebar-label">LES BRANCHES</p>
+        <nav class="catalogue-levels" id="catalogue-levels"></nav>
+        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">H</span><p>Des premières cités aux grands empires : choisis une branche et explore ses chapitres.</p></div>
+      </aside>
+      <article class="catalogue-content">
+        <header class="course-heading catalogue-heading">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BIBLIOTHÈQUE · SCIENCES HUMAINES</p>
+          <h1>Comprendre<br><span>les civilisations</span></h1>
+          <p class="course-intro">L’histoire relie des sources (textes, objets, sites archéologiques) à des repères chronologiques. Chaque chapitre présente les notions essentielles, un exemple de chronologie guidé, des exercices corrigés et ses références ; les dates discutées par les historiens sont signalées plutôt que tranchées.</p>
+          <div class="course-meta"><span id="catalogue-count">1 BRANCHE · 6 CHAPITRES</span><span>ANTIQUITÉ</span></div>
+        </header>
+        <div id="programme-sections"></div>
+        <footer class="course-footer"><span>COURS D’HISTOIRE</span><a href="cours.html?id=mesopotamie">Ouvrir le premier cours ↑</a></footer>
+      </article>
     </main>
-
-    <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">K</span><span>LA CONNAISSANCE</span></a><span>UNE DISCIPLINE APRÈS L’AUTRE</span><a href="#page-title">Retour en haut ↑</a></footer>
   </body>
 </html>
