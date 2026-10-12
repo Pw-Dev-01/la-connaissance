@@ -278,3 +278,251 @@ window.courseCatalog = [
     ] // FIN BRANCHE histoire-des-civilisations
   } // FIN BRANCHE 1
 ];
+
+// ============================================================================
+// BRANCHE 2 : « L’Antiquité : empires et monde méditerranéen » (5 chapitres)
+// À COLLER dans histoire-data.js, juste après la ligne :
+//     } // FIN BRANCHE 1
+// et AVANT la ligne finale :
+//     ];
+// Ne pas oublier la virgule : la ligne « } // FIN BRANCHE 1 » doit être suivie
+// d’une virgule (le bloc ci-dessous commence par « , » pour cela).
+// Convention : av. J.-C., plus le nombre est grand, plus la date est ancienne ;
+// ap. J.-C., c’est l’inverse. Il n’y a pas d’année 0 (1 av. J.-C. est suivi de 1 ap. J.-C.).
+// Les écarts entre sources sont signalés dans le texte plutôt que tranchés.
+// ============================================================================
+  ,
+  {
+    id: 'antiquite',
+    title: 'L’Antiquité : empires et monde méditerranéen',
+    note: 'De l’empire perse à la fin de l’Antiquité tardive : cinq chapitres sur les grands empires, leurs repères chronologiques, leurs sources et les dates discutées.',
+    chapters: [
+      {
+        id: 'empire-achemenide',
+        title: 'Empire achéménide : le premier empire perse',
+        field: 'Iran et Proche-Orient · 550–330 av. J.-C.',
+        summary: 'Cyrus, Darius, satrapies et Persépolis : un empire multiethnique jusqu’à Alexandre.',
+        lesson: {
+          sections: [
+            'L’empire achéménide, ou premier empire perse, est fondé par Cyrus II, dit « le Grand ». Son nom vient d’Achéménès, ancêtre de la dynastie. Les Perses s’installent en Perside, au sud-ouest du plateau iranien, vers le VIIe siècle av. J.-C. Selon la version officielle, Cyrus devient roi de Perside en 559 av. J.-C. et bat son suzerain, le roi des Mèdes Astyage, en 550 : on date donc l’empire de 550 (la date la plus citée) ou de 559 (début du règne). Cyrus soumet ensuite la Lydie et la Babylonie (prise de Babylone en 539, voir le chapitre « Mésopotamie ») ; il meurt vers 530 av. J.-C. (530 ou 529 selon les ouvrages).',
+            'Son fils Cambyse II conquiert l’Égypte en 525 av. J.-C. À la mort de Cambyse en 522, Darius Ier, un parent éloigné, prend le trône et règne jusqu’en 486, soit 36 ans : l’empire atteint alors son apogée. Darius l’organise en satrapies, provinces qui servent aussi de circonscriptions fiscales, et standardise poids et mesures. Il fait graver vers 520 av. J.-C. l’inscription de Behistun, grand relief rupestre multilingue (vieux-perse, élamite, babylonien) dont le déchiffrement a servi de clé pour lire le cunéiforme.',
+            'Darius fait bâtir Persépolis, capitale cérémonielle de l’empire, et un palais à Suse. Les travaux de Persépolis commencent en 518 av. J.-C. selon la World History Encyclopedia ; d’autres sources placent ses plus anciens vestiges vers 515 : les sources divergent de quelques années. Le site est inscrit au patrimoine mondial de l’UNESCO en 1979.',
+            'Sous Darius puis son fils Xerxès Ier (roi dès 486), l’empire affronte les cités grecques : défaite perse à Marathon en 490, puis expédition de Xerxès en 480-479 (voir le chapitre « Grèce antique »). L’expansion de l’empire s’arrête sous le règne de Xerxès.',
+            'Alexandre le Grand envahit l’empire en 334 av. J.-C. Le roi Darius III (336-330) est vaincu à Issos en 333 puis à Gaugamèles en 331, et il est assassiné en 330 : cette date marque la fin de l’empire achéménide. Après la mort d’Alexandre, l’essentiel de ses territoires passe aux Ptolémées et aux Séleucides. Retenir : l’empire a duré environ 220 ans (550-330) et rassemblait des peuples très divers ; « perse » désigne ici une dynastie et un empire, pas seulement un peuple.'
+          ],
+          example: {
+            statement: 'Ordonner du plus ancien au plus récent : bataille de Gaugamèles (331 av. J.-C.), accession de Darius Ier (522), fondation de l’empire par Cyrus (550), conquête de l’Égypte par Cambyse II (525).',
+            calculation: 'Avant J.-C., plus le nombre est grand, plus la date est ancienne : 550 > 525 > 522 > 331.',
+            answer: 'Fondation par Cyrus, conquête de l’Égypte, accession de Darius Ier, Gaugamèles.'
+          },
+          exercise: {
+            question: 'Darius Ier règne de 522 à 486 av. J.-C. Combien d’années dure son règne ?',
+            answer: '36 ans (522 − 486).'
+          },
+          exercises: [
+            {
+              question: 'Darius Ier règne de 522 à 486 av. J.-C. Combien d’années dure son règne ?',
+              answer: '36 ans (522 − 486).'
+            },
+            {
+              question: 'L’empire achéménide existe de 550 à 330 av. J.-C. Quelle est sa durée approximative ?',
+              answer: 'Environ 220 ans (550 − 330).'
+            },
+            {
+              question: 'Une source date le début de Persépolis de 518, une autre ses plus anciens vestiges de 515. Faut-il en retenir une seule ?',
+              answer: 'Non : on écrit « vers 518-515 » et on signale que les sources diffèrent de quelques années, au lieu de trancher.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Timeline : Darius I', url: 'https://www.worldhistory.org/timeline/Darius_I/' },
+            { title: 'Livius.org — The Achaemenid Empire', url: 'https://www.livius.org/articles/dynasty/achaemenids' },
+            { title: 'World History Edu — Achaemenid Empire : Timeline and Major Facts', url: 'https://worldhistoryedu.com/achaemenid-empire-timeline/' }
+          ]
+        }
+      } // FIN CHAPITRE empire-achemenide
+      ,
+      {
+        id: 'pheniciens-et-carthage',
+        title: 'Phéniciens et Carthage : marins, alphabet et guerres puniques',
+        field: 'Méditerranée · XIe siècle–146 av. J.-C.',
+        summary: 'Cités phéniciennes, alphabet de 22 lettres, fondation de Carthage et lutte contre Rome.',
+        lesson: {
+          sections: [
+            'Les Phéniciens occupent la bande côtière entre la Méditerranée et les montagnes du Liban. Ils ne forment pas un État unique mais un ensemble de cités concurrentes, dont Tyr, Byblos et Sidon, et sont surtout des commerçants et des navigateurs. Les mots grecs et latins qui désignent leurs descendants de Carthage (Phoinix, Punicus) ont donné l’adjectif « punique ».',
+            'Selon l’Encyclopaedia Britannica, l’alphabet phénicien dérive de l’alphabet nord-sémitique : il compte 22 lettres, s’écrit de droite à gauche et ne note que les consonnes (c’est un abjad). Chaque signe note un son, et non un mot ou une syllabe, ce qui le distingue du cunéiforme. La plus ancienne inscription phénicienne conservée est l’épitaphe d’Ahiram, à Byblos (XIe siècle av. J.-C.). Cet alphabet est l’ancêtre probable de l’alphabet grec, donc de tous les alphabets occidentaux ; il est employé en Phénicie jusque vers le Ier siècle av. J.-C.',
+            'Selon la tradition romaine, Carthage (en phénicien Qart-hadasht, « ville nouvelle ») est fondée vers 814 av. J.-C. par des colons de Tyr conduits par la reine Élissa, dite Didon. La date de 814 est traditionnelle et l’historicité de Didon est discutée, mais la fondation est située à cette époque. La ville grandit surtout après la destruction de Tyr, sa métropole, par Alexandre en 332 av. J.-C. : des réfugiés phéniciens y affluent. Elle domine des colonies en Afrique du Nord, en Sicile et en Espagne.',
+            'Rome et Carthage s’affrontent dans trois guerres, dites puniques (264-146 av. J.-C.). Première guerre (264-241) : Carthage cède la Sicile, première province romaine hors d’Italie. Deuxième guerre (218-201) : Hannibal, qui commande l’armée de Carthage en Espagne depuis 221, envahit l’Italie par les Alpes et l’emporte à Cannes en 216 ; Scipion l’Africain porte la guerre en Afrique (204) et le bat à Zama le 19 octobre 202 (on trouve 218-202 ou 218-201 pour cette guerre ; la bataille de Zama est bien de 202). Troisième guerre (149-146) : Carthage, assiégée, est détruite en 146.',
+            'Après 146, le territoire de Carthage devient la province romaine d’Afrique ; History.com indique qu’environ 50 000 survivants sont vendus comme esclaves. La ville est ensuite refondée par les Romains et reste une grande cité de l’Empire (Carthage romaine, de 146 av. J.-C. à 439 ap. J.-C. selon la World History Encyclopedia). Le punique, lui, continue d’être écrit jusque vers le IIIe siècle ap. J.-C.'
+          ],
+          example: {
+            statement: 'Ordonner du plus ancien au plus récent : bataille de Zama (202 av. J.-C.), destruction de Tyr par Alexandre (332), destruction de Carthage (146), fondation traditionnelle de Carthage (vers 814).',
+            calculation: 'Avant J.-C., plus le nombre est grand, plus la date est ancienne : 814 > 332 > 202 > 146.',
+            answer: 'Fondation de Carthage, destruction de Tyr, bataille de Zama, destruction de Carthage.'
+          },
+          exercise: {
+            question: 'La première guerre punique dure de 264 à 241 av. J.-C. Combien d’années ?',
+            answer: '23 ans (264 − 241).'
+          },
+          exercises: [
+            {
+              question: 'La première guerre punique dure de 264 à 241 av. J.-C. Combien d’années ?',
+              answer: '23 ans (264 − 241).'
+            },
+            {
+              question: 'Combien d’années séparent la fondation traditionnelle de Carthage (vers 814) de sa destruction (146) ?',
+              answer: 'Environ 668 ans (814 − 146).'
+            },
+            {
+              question: 'Pourquoi trouve-t-on 218-202 et 218-201 pour la deuxième guerre punique ?',
+              answer: 'Les ouvrages ne s’accordent pas sur la borne de fin ; la bataille décisive de Zama est de 202. On signale l’écart au lieu de trancher.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Timeline : Carthage', url: 'https://worldhistory.org/timeline/carthage' },
+            { title: 'History.com — Punic Wars', url: 'https://www.history.com/articles/punic-wars' },
+            { title: 'Encyclopaedia Britannica — Phoenician alphabet', url: 'https://www.britannica.com/print/article/457154' },
+            { title: 'Vikidia — Phéniciens (synthèse pédagogique, à recouper)', url: 'https://fr.vikidia.org/wiki/Ph%C3%A9niciens' }
+          ]
+        }
+      } // FIN CHAPITRE pheniciens-et-carthage
+      ,
+      {
+        id: 'alexandre-et-hellenisme',
+        title: 'Alexandre le Grand et le monde hellénistique',
+        field: 'Méditerranée orientale et Asie · 336–30 av. J.-C.',
+        summary: 'Conquête de l’empire perse, Diadoques, royaumes hellénistiques et Alexandrie.',
+        lesson: {
+          sections: [
+            'Alexandre III de Macédoine naît en juillet 356 av. J.-C. à Pella, fils de Philippe II et d’Olympias ; Aristote est son précepteur. Il devient roi en 336 av. J.-C., à 20 ans, après l’assassinat de son père (voir le chapitre « Grèce antique » pour Chéronée, en 338).',
+            'Au printemps 334, Alexandre passe en Asie. Il bat les Perses au Granique (mai 334), puis Darius III à Issos (333) et à Gaugamèles (1er octobre 331). Il assiège Tyr en 332 et passe en Égypte (332-331 selon les sources), où il fonde Alexandrie en 331. Darius est assassiné en 330 ; Alexandre poursuit jusqu’en Inde, où il bat le roi Poros à l’Hydaspe (326). Il meurt à Babylone en juin 323 av. J.-C., à 32 ans : les sources donnent le 10, 11, 12 ou 13 juin.',
+            'À sa mort, son empire éclate entre ses généraux, les Diadoques (« successeurs »), qui se font la guerre pendant des décennies. En 312, Séleucos prend Babylone et fonde la dynastie séleucide. En 301, à Ipsos (Phrygie), Lysimaque et Séleucos battent Antigone Ier, qui est tué : l’espoir de réunifier l’empire disparaît. Trois grands royaumes dominent alors : les Ptolémées en Égypte (305-30), les Séleucides au Proche-Orient (312-63) et les Antigonides en Macédoine et en Grèce (276-168).',
+            'Ces monarchies mêlent traditions grecques et locales, et la culture grecque se diffuse sur la Méditerranée et en Asie occidentale. Alexandrie, capitale des Ptolémées, devient un centre intellectuel avec le Mouseion et sa Bibliothèque, au IIIe siècle av. J.-C. Selon la World History Encyclopedia, l’idée vient de Ptolémée Ier Sôter et la construction date de Ptolémée II Philadelphe ; d’autres sources attribuent la fondation à Ptolémée Ier, et les dates de règne varient de quelques années. Zénodote en est le premier bibliothécaire ; Pergame, sous les Attalides, a sa propre bibliothèque.',
+            'On date l’époque hellénistique de 323 (mort d’Alexandre) à 31 av. J.-C. (bataille d’Actium) ou 30 (mort de Cléopâtre VII et annexion de l’Égypte par Rome). D’autres bornes sont proposées : 146 (Corinthe détruite), 330 ap. J.-C. (Constantinople), voire 138 ap. J.-C. (mort d’Hadrien). « Hellénistique » ne désigne pas la seule Grèce, mais tous les territoires sous influence grecque, en particulier le Proche-Orient hellénisé après les conquêtes d’Alexandre.'
+          ],
+          example: {
+            statement: 'Ordonner du plus ancien au plus récent : bataille d’Ipsos (301 av. J.-C.), mort d’Alexandre (323), bataille du Granique (334), bataille de Gaugamèles (331).',
+            calculation: 'Avant J.-C., plus le nombre est grand, plus la date est ancienne : 334 > 331 > 323 > 301.',
+            answer: 'Granique, Gaugamèles, mort d’Alexandre, Ipsos.'
+          },
+          exercise: {
+            question: 'Alexandre règne de 336 à 323 av. J.-C. Combien d’années dure son règne ?',
+            answer: '13 ans (336 − 323).'
+          },
+          exercises: [
+            {
+              question: 'Alexandre règne de 336 à 323 av. J.-C. Combien d’années dure son règne ?',
+              answer: '13 ans (336 − 323).'
+            },
+            {
+              question: 'Combien d’années séparent la bataille d’Issos (333) de celle d’Ipsos (301) ?',
+              answer: '32 ans (333 − 301).'
+            },
+            {
+              question: 'Pourquoi trouve-t-on 31 et 30 av. J.-C. pour la fin de l’époque hellénistique ?',
+              answer: '31 est la date de la bataille d’Actium, 30 celle de l’annexion de l’Égypte par Rome après la mort de Cléopâtre VII. Les deux marquent la fin de l’époque selon l’événement choisi.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Timeline : Alexander the Great', url: 'https://www.worldhistory.org/timeline/Alexander_the_Great' },
+            { title: 'University of Warwick — Chronology of Alexander’s Reign', url: 'https://warwick.ac.uk/fac/arts/classics/intranets/students/modules/alex/chronology' },
+            { title: 'World History Encyclopedia — Timeline : Hellenistic Period', url: 'https://worldhistory.org/timeline/Hellenistic_Period' },
+            { title: 'Penn Museum — Hellenistic Period (323-31 av. J.-C.)', url: 'https://penn.museum/sites/greek_world/time-06.html' },
+            { title: 'World History Encyclopedia — Library of Alexandria', url: 'https://www.worldhistory.org/audioplayer/en/1-10883/' }
+          ]
+        }
+      } // FIN CHAPITRE alexandre-et-hellenisme
+      ,
+      {
+        id: 'empire-romain-principat',
+        title: 'Empire romain : du Principat à la crise du IIIe siècle',
+        field: 'Empire romain · 27 av. J.-C.–284 ap. J.-C.',
+        summary: 'Auguste, Julio-Claudiens, apogée sous Trajan, citoyenneté de 212 et crise du IIIe siècle.',
+        lesson: {
+          sections: [
+            'En 27 av. J.-C., Octavien reçoit le titre d’Auguste : c’est le début du régime impérial, ou Principat (voir le chapitre « Rome antique »). Les provinces sont réparties entre Auguste et le Sénat ; Auguste garde notamment l’Espagne, la Gaule, la Syrie et l’Égypte. Il meurt en 14 ap. J.-C. et son beau-fils Tibère lui succède. Les Julio-Claudiens règnent jusqu’en 68 : Tibère (14-37), Caligula (37-41, assassiné), Claude (41-54), Néron (54-68).',
+            'Claude lance en 43 ap. J.-C. la conquête de la Bretagne (l’Angleterre actuelle). Une révolte menée par la reine Boudicca éclate vers 60-61. En 64, un grand incendie ravage Rome sous Néron. Néron est chassé en 68 ; l’année 69 est celle des quatre empereurs (Galba, Othon, Vitellius, Vespasien) et Vespasien l’emporte. En 79, sous Titus, l’éruption du Vésuve détruit Pompéi et Herculanum.',
+            'Le IIe siècle est celui de l’apogée : Nerva, Trajan, Hadrien, Antonin le Pieux et Marc Aurèle se succèdent. Sous Trajan (98-117), l’Empire atteint sa plus grande extension en 117, avec la Dacie, l’Arménie et la Mésopotamie ; Hadrien (117-138) rend l’Arménie et la Mésopotamie aux Parthes et consolide les frontières. Le mur d’Hadrien, en Bretagne, est commencé en 122 (les travaux sont datés de 122-127 dans certains atlas) ; sous Antonin le Pieux, le mur d’Antonin est bâti plus au nord, en Écosse (vers 142).',
+            'En 212, Caracalla accorde la citoyenneté romaine à tous les hommes libres de l’Empire (édit appelé Constitutio Antoniniana). La distinction entre citoyens et sujets des provinces s’efface ainsi presque entièrement.',
+            'De 235 à 284 ap. J.-C., l’Empire traverse une période d’instabilité, dite crise du IIIe siècle ou anarchie militaire : empereurs qui se succèdent, guerres civiles et menaces extérieures. L’empereur Valérien est capturé par les Perses vers 259-260. Deux sécessions apparaissent : l’empire gaulois (260-274) et l’empire de Palmyre (260-272). L’ordre est rétabli sous Dioclétien, qui prend le pouvoir en 284 (voir le chapitre « Antiquité tardive »).'
+          ],
+          example: {
+            statement: 'Ordonner du plus ancien au plus récent : édit de Caracalla (212 ap. J.-C.), mur d’Hadrien (122), éruption du Vésuve (79), mort d’Auguste (14).',
+            calculation: 'Après J.-C., c’est l’inverse de l’avant J.-C. : plus le nombre est petit, plus la date est ancienne : 14 < 79 < 122 < 212.',
+            answer: 'Mort d’Auguste, Vésuve, mur d’Hadrien, édit de Caracalla.'
+          },
+          exercise: {
+            question: 'Trajan règne de 98 à 117 ap. J.-C. Combien d’années dure son règne ?',
+            answer: '19 ans (117 − 98).'
+          },
+          exercises: [
+            {
+              question: 'Trajan règne de 98 à 117 ap. J.-C. Combien d’années dure son règne ?',
+              answer: '19 ans (117 − 98).'
+            },
+            {
+              question: 'Combien d’années séparent le titre d’Auguste (27 av. J.-C.) de sa mort (14 ap. J.-C.) ?',
+              answer: '40 ans : 27 + 14 − 1, car il n’y a pas d’année 0 entre 1 av. J.-C. et 1 ap. J.-C.'
+            },
+            {
+              question: 'La crise du IIIe siècle dure de 235 à 284. Quelle est sa durée ?',
+              answer: '49 ans (284 − 235).'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Timeline : Roman Empire', url: 'https://worldhistory.org/timeline/Roman_Empire' },
+            { title: 'Heritage History — Height of the Empire, timeline 14 à 235 ap. J.-C. (PDF)', url: 'https://catholic.heritage-history.com/site/hclass/ancient_rome/empire/timeline.pdf' },
+            { title: 'Tacitus.nu — Historical Atlas of Rome', url: 'https://www.tacitus.nu/historical-atlas/rome2.htm' },
+            { title: 'Classics Unveiled — Roman Historical Timelines (à recouper)', url: 'https://www.classicsunveiled.com/romeh/html/timelines2.html' }
+          ]
+        }
+      } // FIN CHAPITRE empire-romain-principat
+      ,
+      {
+        id: 'antiquite-tardive',
+        title: 'Antiquité tardive : de Dioclétien à Justinien',
+        field: 'Empire romain tardif · 284–565 ap. J.-C.',
+        summary: 'Tétrarchie, Constantin, christianisme, invasions, chute de l’Occident et Justinien.',
+        lesson: {
+          sections: [
+            'Dioclétien règne de 284 à 305 ap. J.-C. et met fin à la crise du IIIe siècle. Il établit vers 293 la tétrarchie, un gouvernement à plusieurs empereurs, et persécute les chrétiens ; il abdique en 305. En 311, l’empereur Galerius publie à Nicomédie un édit de tolérance qui met fin à ces persécutions.',
+            'Constantin, proclamé Auguste par ses légions en 306, bat Maxence au pont Milvius en 312, puis devient seul empereur en 324 ; il meurt en 337. En 313, un texte appelé traditionnellement « édit de Milan » accorde la liberté religieuse aux chrétiens. Mais les historiens notent qu’il ne s’agit pas d’un édit : la version conservée est une lettre de l’empereur Licinius aux gouverneurs de l’Orient, affichée à Nicomédie le 13 juin 313. Le texte légalise le culte chrétien sans faire du christianisme la religion de l’État. Le concile de Nicée (325) traite de la querelle arienne et produit le Credo de Nicée ; Constantinople est inaugurée comme capitale en 330.',
+            'En 378, à Andrinople, les Goths battent l’armée romaine et tuent l’empereur Valens. Théodose Ier règne de 379 à 395. Par l’édit de Thessalonique, le 27 février 380, il fait du christianisme nicéen la religion de l’État ; un concile à Constantinople confirme le Credo de Nicée en 381. À sa mort, en 395, l’Empire est partagé de façon durable entre Orient et Occident.',
+            'En Occident, les invasions se multiplient. Les Wisigoths d’Alaric pillent Rome en 410 ; les Vandales commencent en 429 la conquête de l’Afrique du Nord, puis pillent Rome en 455. Le 4 septembre 476, selon la date traditionnelle, le chef germanique Odoacre dépose Romulus Augustule, dernier empereur d’Occident (seule l’année 476 est à retenir). En 493, Théodoric fonde un royaume ostrogoth en Italie.',
+            'En Orient, Justinien Ier règne de 527 à 565. Son Code (Codex Justinianus) paraît en première version en 529 et en version définitive en 534 ; le Digeste, recueil de textes juridiques plus anciens, date de 533, et l’ensemble forme le Corpus iuris civilis. Il fait reconquérir l’Afrique vandale en 533-534 et construire Sainte-Sophie à Constantinople de 532 à 537. Comme pour d’autres périodes, les bornes de l’Antiquité tardive sont discutées : on retient 476 comme date traditionnelle, mais certains historiens prolongent la période jusqu’à la fin du VIe siècle, avec Justinien.'
+          ],
+          example: {
+            statement: 'Ordonner du plus ancien au plus récent : sac de Rome par Alaric (410 ap. J.-C.), concile de Nicée (325), bataille d’Andrinople (378), publication du Code de Justinien (529), chute de l’Empire d’Occident (476).',
+            calculation: 'Après J.-C., plus le nombre est petit, plus la date est ancienne : 325 < 378 < 410 < 476 < 529.',
+            answer: 'Nicée, Andrinople, sac de Rome, chute de l’Occident, Code de Justinien.'
+          },
+          exercise: {
+            question: 'Combien d’années séparent l’inauguration de Constantinople (330) de la chute de l’Empire d’Occident (476) ?',
+            answer: '146 ans (476 − 330).'
+          },
+          exercises: [
+            {
+              question: 'Combien d’années séparent l’inauguration de Constantinople (330) de la chute de l’Empire d’Occident (476) ?',
+              answer: '146 ans (476 − 330).'
+            },
+            {
+              question: 'Combien d’années séparent la lettre de Licinius, dite « édit de Milan » (313), de l’édit de Thessalonique (380) ?',
+              answer: '67 ans (380 − 313).'
+            },
+            {
+              question: 'Pourquoi dit-on que l’« édit de Milan » n’a pas fait du christianisme la religion de l’État ?',
+              answer: 'Parce qu’il accorde seulement la liberté de culte, sans privilège officiel. C’est l’édit de Thessalonique, en 380, qui fait du christianisme nicéen la religion de l’État.'
+            }
+          ],
+          sources: [
+            { title: 'Wikipédia (en) — Edict of Milan', url: 'https://en.wikipedia.org/wiki/Edict_of_Milan' },
+            { title: 'Wikipédia (en) — Edict of Thessalonica', url: 'https://en.wikipedia.org/wiki/Edict_of_Thessalonica' },
+            { title: 'Heritage History — Fall of the West, timeline 235 à 565 (PDF)', url: 'https://catholic.heritage-history.com/site/hclass/ancient_rome/fall/timeline.pdf' },
+            { title: 'McKay, A History of Western Society — Chronologie du chapitre 7', url: 'https://digfir-published.macmillanusa.com/mckaywest12e/asset/chrono/chrono_ch7.html' },
+            { title: 'SparkNotes — Timeline : la chute de Rome', url: 'https://sparknotes.com/history/european/rome4/timeline' },
+            { title: 'Vikidia — Justinien Ier (synthèse pédagogique, à recouper)', url: 'https://fr.vikidia.org/wiki/Justinien_Ier' }
+          ]
+        }
+      } // FIN CHAPITRE antiquite-tardive
+    ] // FIN BRANCHE antiquite
+  } // FIN BRANCHE 2
+
