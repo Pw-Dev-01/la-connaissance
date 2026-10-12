@@ -277,7 +277,7 @@ window.courseCatalog = [
       } // FIN CHAPITRE chine
     ] // FIN BRANCHE histoire-des-civilisations
   } // FIN BRANCHE 1
-];
+,
 
 // ============================================================================
 // BRANCHE 2 : « L’Antiquité : empires et monde méditerranéen » (5 chapitres)
@@ -291,7 +291,7 @@ window.courseCatalog = [
 // ap. J.-C., c’est l’inverse. Il n’y a pas d’année 0 (1 av. J.-C. est suivi de 1 ap. J.-C.).
 // Les écarts entre sources sont signalés dans le texte plutôt que tranchés.
 // ============================================================================
-  ,
+  
   {
     id: 'antiquite',
     title: 'L’Antiquité : empires et monde méditerranéen',
@@ -526,3 +526,4 @@ window.courseCatalog = [
     ] // FIN BRANCHE antiquite
   } // FIN BRANCHE 2
 
+];
