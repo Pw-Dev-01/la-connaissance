@@ -524,6 +524,77 @@ window.courseCatalog = [
         }
       } // FIN CHAPITRE antiquite-tardive
     ] // FIN BRANCHE antiquite
-  } // FIN BRANCHE 2
+  }, // FIN BRANCHE 2
+// ============================================================================
+// BRANCHE 3 : « Asie centrale et routes de la soie » (1 chapitre)
+// À COLLER dans histoire-data.js, juste après la ligne :
+//     } // FIN BRANCHE 2
+// et AVANT la ligne finale :
+//     ];
+// Ne pas oublier la virgule : la ligne « } // FIN BRANCHE 2 » doit être suivie
+// d’une virgule (le bloc ci-dessous commence par « , » pour cela).
+// Convention : av. J.-C., plus le nombre est grand, plus la date est ancienne ;
+// ap. J.-C., c’est l’inverse. Toute date av. J.-C. précède toute date ap. J.-C.
+// Il n’y a pas d’année 0 (1 av. J.-C. est suivi de 1 ap. J.-C.).
+// Les écarts entre sources sont signalés dans le texte plutôt que tranchés.
+// ============================================================================
+,
+
+  {
+    id: 'asie-centrale-et-routes-de-la-soie',
+    title: 'Asie centrale et routes de la soie',
+    note: 'D’Alexandre à Timur : steppes, oasis et routes de la soie. Un chapitre sur l’Asie centrale, ses repères chronologiques, ses sources et les dates discutées.',
+    chapters: [
+      {
+        id: 'asie-centrale',
+        title: 'Asie centrale : d’Alexandre aux Mongols et à Timur',
+        field: 'Asie centrale · IVe siècle av. J.-C.–XVe siècle ap. J.-C.',
+        summary: 'Alexandre en Sogdiane, royaume gréco-bactrien, mission de Zhang Qian, routes de la soie, empire mongol et Timur.',
+        lesson: {
+          sections: [
+            'L’Asie centrale est un vaste espace de steppes, de déserts, de montagnes et d’oasis, situé entre la Chine, l’Inde, l’Iran et la Méditerranée. Ses limites varient selon les époques et les auteurs ; ce chapitre suit surtout la Bactriane (Afghanistan actuel), la Sogdiane et la vallée de Ferghana (Ouzbékistan et Tadjikistan actuels) et la Transoxiane, région à peu près équivalente à l’Ouzbékistan actuel selon la World History Encyclopedia. Il court d’Alexandre à Timur : il couvre donc l’Antiquité et le Moyen Âge, d’où des dates avant et après J.-C. dans la même leçon.',
+            'La Sogdiane est l’angle nord-est de l’empire achéménide quand Alexandre arrive (voir les chapitres « Empire achéménide » et « Alexandre le Grand et le monde hellénistique »). En 329 av. J.-C., il atteint le Iaxarte (Syr-Daria) et bat en octobre les Saces, nomades de l’autre rive. Il fonde alors Alexandrie Eschaté (« Alexandrie la Plus Lointaine »), près de Khodjent, dans le Tadjikistan actuel, sur le site de la ville de Cyropolis. L’année 329 est bien établie, mais le mois varie (juillet dans la chronologie de la World History Encyclopedia, août selon Wikipédia). Le texte de cet article donne même 339, ce qui est impossible : Alexandre n’entre en Asie qu’en 334.',
+            'Vers 250 av. J.-C., Diodote, satrape de Bactriane, se révolte contre le pouvoir séleucide : c’est le début du royaume gréco-bactrien, qui dure jusque vers 130 av. J.-C. Vers 230, Euthydème renverse la dynastie de Diodote et étend son territoire vers la Sogdiane et la Ferghana. Le séleucide Antiochos III assiège Bactres, puis reconnaît Euthydème comme roi en 206 (la World History Encyclopedia place le siège vers 208-206 dans sa chronologie, vers 210 dans le texte de l’article, et date ailleurs le règne d’Euthydème de 260 à 195 : on écrit donc « vers »). Vers 171, Eucratide renverse le roi en place ; il est assassiné par son fils en 145, et les Yuezhi, nomades, prennent le contrôle de la Bactriane vers 130. Des rois gréco-bactriens règnent aussi plus au sud-est, en Inde du Nord-Ouest : ce sont les royaumes indo-grecs, qui apparaissent vers 190.',
+            'Les Han (voir le chapitre « Chine ancienne ») sont harcelés par les Xiongnu, nomades du nord et de l’ouest. En 138 av. J.-C., l’empereur Wu envoie Zhang Qian chez les Yuezhi chercher une alliance contre eux. Capturé et retenu une dizaine d’années par les Xiongnu, Zhang Qian revient après treize ans d’absence, selon l’Encyclopaedia Britannica, avec le premier récit fiable sur la Ferghana, la Bactriane et la Sogdiane ; ses informations ouvrent la voie à des échanges d’ambassades entre les Han et ces États. La World History Encyclopedia fixe l’ouverture officielle des routes de la soie à 130 av. J.-C. : c’est une convention, car des routes existaient déjà (la route royale perse sous les Achéménides, par exemple). Les Parthes, maîtres de la Mésopotamie vers 129 selon cette encyclopédie, deviennent les principaux intermédiaires entre la Chine et l’Occident, et la soie est très recherchée à Rome sous Auguste. L’expression elle-même est récente : « Seidenstrasse » est forgée en 1877 par le géographe allemand Ferdinand von Richthofen, et les historiens préfèrent le pluriel (« routes de la soie »), car il ne s’agit pas d’une route unique.',
+            'Né vers 1162, Temüdjin est reconnu Gengis Khan, « souverain universel », par une assemblée de chefs (kurultai) en 1206 : c’est la date de naissance de l’empire mongol (1206-1368). Son armée attaque l’empire khorezmien, en Asie centrale, à partir de 1218 (World History Encyclopedia) ou de 1219 (autres sources) ; Boukhara et Samarcande sont prises au début de 1220, et l’empire khorezmien s’effondre en 1220-1221. Gengis Khan meurt en 1227. Il avait partagé son empire entre ses fils : le khanat de Djaghataï (vers 1227-1363), le plus resté fidèle à ses racines nomades selon la World History Encyclopedia, domine l’Asie centrale. Tamerlan naît en 1336 près de Samarcande, alors dans ce khanat : il prend la Transoxiane avec Amir Husayn en 1366, puis en détient seul le pouvoir vers 1370, date de la fondation de l’empire timouride (1370-1507), dont Samarcande est la capitale. Il bat la Horde d’Or sur le Terek le 14 avril 1395, pille Delhi en 1398-1399, et meurt à Otrar (Kazakhstan actuel) le 19 février 1405, en route pour attaquer la Chine des Ming. Son tombeau, le Gur-e Mir, est à Samarcande. Retenir : l’Asie centrale est un carrefour dont l’histoire se lit à travers ses conquérants, ses routes et ses villes, et les dates anciennes y dépendent de chronologies qui divergent de quelques années.'
+          ],
+          example: {
+            statement: 'Ordonner du plus ancien au plus récent : mort de Timur (1405 ap. J.-C.), fondation d’Alexandrie Eschaté (329 av. J.-C.), mission de Zhang Qian (138 av. J.-C.), proclamation de Gengis Khan (1206 ap. J.-C.).',
+            calculation: 'Toute date avant J.-C. précède toute date après J.-C. Avant J.-C., plus le nombre est grand, plus la date est ancienne : 329 > 138. Après J.-C., plus le nombre est petit, plus la date est ancienne : 1206 < 1405.',
+            answer: 'Alexandrie Eschaté, mission de Zhang Qian, proclamation de Gengis Khan, mort de Timur.'
+          },
+          exercise: {
+            question: 'Le khanat de Djaghataï dure d’environ 1227 à 1363 ap. J.-C. Quelle est sa durée approximative ?',
+            answer: 'Environ 136 ans (1363 − 1227).'
+          },
+          exercises: [
+            {
+              question: 'Le khanat de Djaghataï dure d’environ 1227 à 1363 ap. J.-C. Quelle est sa durée approximative ?',
+              answer: 'Environ 136 ans (1363 − 1227).'
+            },
+            {
+              question: 'Combien d’années séparent le départ de Zhang Qian (138 av. J.-C.) de la proclamation de Gengis Khan (1206 ap. J.-C.) ?',
+              answer: '1 343 ans : 138 + 1206 − 1, car il n’y a pas d’année 0 entre 1 av. J.-C. et 1 ap. J.-C.'
+            },
+            {
+              question: 'Un article donne 339 av. J.-C. pour la fondation d’Alexandrie Eschaté, d’autres sources 329. Laquelle retenir et pourquoi ?',
+              answer: '329 av. J.-C. : c’est la date donnée par la chronologie de l’encyclopédie elle-même et par les autres sources, et 339 est impossible, car Alexandre n’entre en Asie qu’en 334. Quand une source se contredit, on le signale plutôt que de recopier la date.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Silk Road', url: 'https://www.worldhistory.org/Silk_Road/' },
+            { title: 'World History Encyclopedia — Greco-Bactrian Kingdom', url: 'https://www.worldhistory.org/Greco-Bactria/' },
+            { title: 'World History Encyclopedia — Mongol Empire', url: 'https://www.worldhistory.org/Mongol_Empire/' },
+            { title: 'World History Encyclopedia — Timur', url: 'https://www.worldhistory.org/Timur/' },
+            { title: 'Encyclopaedia Britannica — Zhang Qian', url: 'https://www.britannica.com/biography/Zhang-Qian' },
+            { title: 'Wikipédia (en) — Alexandria Eschate', url: 'https://en.wikipedia.org/wiki/Alexandria_Eschate' },
+            { title: 'Wikipédia (en) — Syr Darya', url: 'https://en.wikipedia.org/wiki/Syr_Darya' },
+            { title: 'Wikipédia (en) — Mongol invasion of Khorasan', url: 'https://en.wikipedia.org/wiki/Mongol_invasion_of_Khorasan' }
+          ]
+        }
+      } // FIN CHAPITRE asie-centrale
+    ] // FIN BRANCHE asie-centrale-et-routes-de-la-soie
+  } // FIN BRANCHE 3
+
 
 ];
