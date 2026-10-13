@@ -528,13 +528,12 @@ window.courseCatalog = [
 
 // ============================================================================
 // BRANCHE 3 : « Asie centrale et routes de la soie » (6 chapitres)
-// REMPLACE le bloc précédent « histoire-branche3-asie-centrale.js » (ne pas coller les deux).
 // À COLLER dans histoire-data.js, juste après la ligne :
 //     } // FIN BRANCHE 2
 // et AVANT la ligne finale :
 //     ];
 // Ne pas oublier la virgule : la ligne « } // FIN BRANCHE 2 » doit être suivie
-// d’une virgule (le bloc ci-dessous commence par « , » pour cela).
+// d’une virgule
 // Convention : av. J.-C., plus le nombre est grand, plus la date est ancienne ;
 // ap. J.-C., c’est l’inverse. Toute date av. J.-C. précède toute date ap. J.-C.
 // Il n’y a pas d’année 0 (1 av. J.-C. est suivi de 1 ap. J.-C.).
@@ -543,12 +542,12 @@ window.courseCatalog = [
 ,
 
   {
-    id: 'asie-centrale-et-routes-de-la-soie',
+    id: 'asie-centrale',
     title: 'Asie centrale et routes de la soie',
     note: 'Des Scythes à Timur : six chapitres sur l’Asie centrale (steppes, oasis et routes de la soie), leurs repères chronologiques, leurs sources et les dates discutées.',
     chapters: [
       {
-        id: 'asie-centrale',
+        id: 'asie-centrale-alexandre',
         title: 'Asie centrale : d’Alexandre aux Mongols et à Timur',
         field: 'Asie centrale · IVe siècle av. J.-C.–XVe siècle ap. J.-C.',
         summary: 'Alexandre en Sogdiane, royaume gréco-bactrien, mission de Zhang Qian, routes de la soie, empire mongol et Timur.',
@@ -594,7 +593,7 @@ window.courseCatalog = [
             { title: 'Wikipédia (en) — Mongol invasion of Khorasan', url: 'https://en.wikipedia.org/wiki/Mongol_invasion_of_Khorasan' }
           ]
         }
-      } // FIN CHAPITRE asie-centrale
+      } // FIN CHAPITRE alexandre
       ,
       {
         id: 'scythes-et-saces',
