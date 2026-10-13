@@ -1,4 +1,4 @@
-// Données du cours d'histoire (histoire-data.js) : 1 branche « Histoire des civilisations », 6 chapitres.
+// Données du cours d'histoire (histoire-data.js) : x branches , x ch
 // Même format que le cours de géologie (voir cours.js) : sections, exemple guidé,
 // exercices et bloc « RÉFÉRENCES » en bas de chaque leçon.
 // Convention de datation : les dates avant J.-C. sont données avec « vers » dès
@@ -7,6 +7,266 @@
 // Rappel : en av. J.-C., plus le nombre est grand, plus l'événement est ancien.
 // ⚠️ Dans cours.js, remplacer : const DISCIPLINE = 'histoire';
 window.courseCatalog = [
+
+// BRANCHE 1 
+
+  {
+    id: 'prehistoire',
+    title: 'Préhistoire : des premiers outils aux premières sociétés agricoles',
+    note: 'Six chapitres sur les origines humaines, les outils de pierre, Homo sapiens, l’art préhistorique, le Mésolithique et le Néolithique. Les dates sont approximatives et les évolutions varient selon les régions.',
+    chapters: [
+      {
+        id: 'origines-humaines',
+        title: 'Les origines humaines et les premiers outils',
+        field: 'Préhistoire · Premiers hominines à plusieurs millions d’années avant le présent',
+        summary: 'Comprendre les premières techniques, la fabrication des outils de pierre et les limites des repères chronologiques.',
+        lesson: {
+          sections: [
+            'La Préhistoire désigne conventionnellement la période antérieure aux premières sources écrites dans une société donnée. Elle ne commence donc pas partout au même moment. Pour les périodes les plus anciennes, les chercheurs s’appuient surtout sur les fossiles, les outils, les traces d’occupation et les autres vestiges archéologiques.',
+            'Les plus anciens outils de pierre largement reconnus dans les chronologies de World History Encyclopedia remontent à environ 2,6 millions d’années. Ils sont associés à des hominines vivant en Afrique. Ces outils taillés pouvaient servir à couper, racler ou traiter des matières animales et végétales.',
+            'Les techniques évoluent progressivement. L’Oldowayen est notamment associé à des outils de pierre relativement simples. L’Acheuléen se caractérise entre autres par des bifaces. Il ne faut cependant pas imaginer une évolution identique et simultanée dans toutes les régions : plusieurs traditions techniques ont coexisté.'
+          ],
+          example: {
+            statement: 'Une chronologie situe les premiers outils de pierre vers 2,6 millions d’années avant le présent. Un autre vestige est daté d’environ 1,76 million d’années avant le présent. Quel est le plus ancien repère ?',
+            calculation: 'Pour des durées exprimées en années avant le présent, le nombre le plus grand correspond au repère le plus ancien.',
+            answer: 'Le repère de 2,6 millions d’années est le plus ancien. Ces chiffres sont des estimations chronologiques, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi les outils de pierre sont-ils importants pour étudier les périodes sans écriture ?',
+            answer: 'Ils constituent des vestiges matériels permettant d’étudier les techniques et certaines activités des populations anciennes.'
+          },
+          exercises: [
+            {
+              question: 'Vers combien d’années avant le présent les premiers outils de pierre largement reconnus sont-ils datés dans la chronologie de World History Encyclopedia ?',
+              answer: 'Vers 2,6 millions d’années avant le présent.'
+            },
+            {
+              question: 'Qu’est-ce qu’un biface ?',
+              answer: 'Un outil de pierre travaillé sur ses deux faces.'
+            },
+            {
+              question: 'Les mêmes techniques apparaissent-elles nécessairement au même moment partout dans le monde ?',
+              answer: 'Non. Les traditions techniques et leur chronologie varient selon les régions.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Paleolithic', url: 'https://www.worldhistory.org/Paleolithic/' },
+            { title: 'World History Encyclopedia — Stone Age', url: 'https://www.worldhistory.org/Stone_Age/' },
+            { title: 'World History Encyclopedia — Stone Age Tools', url: 'https://www.worldhistory.org/article/998/stone-age-tools/' },
+            { title: 'World History Encyclopedia — Oldowan Tools', url: 'https://www.worldhistory.org/timeline/Oldowan_Tools/' }
+          ]
+        }
+      },
+      {
+        id: 'paleolithique',
+        title: 'Le Paléolithique : chasse, cueillette et adaptation',
+        field: 'Préhistoire · Paléolithique, jusqu’à la fin de la dernière période glaciaire',
+        summary: 'Découvrir les modes de vie des groupes de chasseurs-cueilleurs, les outils et l’adaptation à des environnements changeants.',
+        lesson: {
+          sections: [
+            'Le Paléolithique, ou âge de la pierre ancienne, constitue la première grande période de l’âge de pierre. La chronologie de World History Encyclopedia le fait commencer avec les premiers outils de pierre connus, vers 2,6 millions d’années avant le présent, et le relie à la fin de la dernière période glaciaire, vers 12 000 ans avant le présent.',
+            'Les populations paléolithiques vivent notamment de la chasse, de la pêche et de la collecte de ressources sauvages. Leurs activités dépendent des milieux, des saisons et des ressources disponibles. Les groupes peuvent se déplacer pour trouver de la nourriture, mais les modes de vie ne sont pas uniformes et peuvent varier selon les lieux et les époques.',
+            'Les outils sont fabriqués à partir de matériaux disponibles, dont la pierre, le bois et l’os. Les vestiges archéologiques permettent d’étudier certaines techniques, mais ils ne révèlent pas tous les aspects de la vie quotidienne. Les subdivisions du Paléolithique correspondent à des cadres archéologiques utiles, et non à des frontières chronologiques universelles.'
+          ],
+          example: {
+            statement: 'Une chronologie place la fin de la dernière période glaciaire vers 12 000 ans avant le présent. Un outil est daté d’environ 40 000 ans avant le présent. Quel repère est le plus ancien ?',
+            calculation: 'Pour des repères exprimés en années avant le présent, 40 000 est supérieur à 12 000.',
+            answer: 'L’outil daté d’environ 40 000 ans avant le présent est plus ancien que le repère de 12 000 ans.'
+          },
+          exercise: {
+            question: 'Pourquoi les chasseurs-cueilleurs devaient-ils adapter leurs activités à leur environnement ?',
+            answer: 'Parce que les ressources alimentaires, le climat et les milieux disponibles variaient selon les saisons et les régions.'
+          },
+          exercises: [
+            {
+              question: 'Que signifie le terme Paléolithique ?',
+              answer: 'Âge de la pierre ancienne.'
+            },
+            {
+              question: 'Cite deux activités permettant aux chasseurs-cueilleurs d’obtenir des ressources.',
+              answer: 'Par exemple, la chasse et la collecte de plantes sauvages. La pêche est également possible.'
+            },
+            {
+              question: 'Les subdivisions du Paléolithique sont-elles des frontières exactes et universelles ?',
+              answer: 'Non. Elles servent à organiser les vestiges et les traditions techniques, dont la chronologie varie selon les régions.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Paleolithic', url: 'https://www.worldhistory.org/Paleolithic/' },
+            { title: 'World History Encyclopedia — Stone Age', url: 'https://www.worldhistory.org/Stone_Age/' },
+            { title: 'World History Encyclopedia — Paleolithic Timeline', url: 'https://www.worldhistory.org/timeline/Paleolithic/' }
+          ]
+        }
+      },
+      {
+        id: 'homo-sapiens',
+        title: 'Homo sapiens : origines et peuplement du monde',
+        field: 'Préhistoire · Évolution humaine et migrations préhistoriques',
+        summary: 'Étudier l’apparition de Homo sapiens en Afrique, les migrations et les interactions entre différentes populations humaines.',
+        lesson: {
+          sections: [
+            'Homo sapiens est l’espèce humaine actuelle. La chronologie de World History Encyclopedia situe l’apparition de formes reconnaissables de Homo sapiens en Afrique vers 200 000 ans avant le présent. Cette date est un repère approximatif : les origines de notre espèce résultent d’une histoire évolutive qui ne se résume pas à un événement unique.',
+            'Au cours de la Préhistoire, des populations humaines se déplacent hors d’Afrique et gagnent différentes régions du monde. La chronologie citée situe vers 55 000 ans avant le présent une migration majeure dont descendent la plupart des populations non africaines actuelles. D’autres déplacements ont eu lieu et les itinéraires, les dates et les relations entre groupes font l’objet de recherches.',
+            'Homo sapiens a coexisté avec d’autres groupes humains, notamment les Néandertaliens et les Dénisoviens. Les recherches génétiques ont mis en évidence des métissages entre certaines de ces populations. Les fossiles, l’archéologie et la génétique apportent des informations complémentaires, mais certaines questions demeurent débattues.'
+          ],
+          example: {
+            statement: 'La chronologie de World History Encyclopedia situe l’apparition de formes reconnaissables de Homo sapiens vers 200 000 ans avant le présent et une migration majeure hors d’Afrique vers 55 000 ans avant le présent. Quel repère est le plus ancien ?',
+            calculation: '200 000 est supérieur à 55 000 lorsqu’on exprime les deux repères en années avant le présent.',
+            answer: 'Le repère d’environ 200 000 ans avant le présent est le plus ancien. Les deux dates sont approximatives.'
+          },
+          exercise: {
+            question: 'Pourquoi faut-il éviter de présenter l’apparition de Homo sapiens comme un événement survenu à une date exacte ?',
+            answer: 'Parce que l’évolution humaine est un processus long et complexe, reconstruit à partir de fossiles et d’autres indices dont les dates sont estimées.'
+          },
+          exercises: [
+            {
+              question: 'Sur quel continent les formes anciennes de Homo sapiens sont-elles situées dans la chronologie citée ?',
+              answer: 'En Afrique.'
+            },
+            {
+              question: 'Vers quand cette chronologie situe-t-elle une migration majeure hors d’Afrique ?',
+              answer: 'Vers 55 000 ans avant le présent.'
+            },
+            {
+              question: 'Quels types de données aident à étudier le peuplement humain ancien ?',
+              answer: 'Les fossiles, les vestiges archéologiques et les données génétiques, entre autres.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Homo Sapiens', url: 'https://www.worldhistory.org/Homo_Sapiens/' },
+            { title: 'World History Encyclopedia — Homo Sapiens Timeline', url: 'https://www.worldhistory.org/timeline/Homo_Sapiens/' },
+            { title: 'World History Encyclopedia — Prehistoric Period', url: 'https://www.worldhistory.org/index/period/1/prehistoric/' }
+          ]
+        }
+      },
+      {
+        id: 'art-prehistorique',
+        title: 'L’art préhistorique : peintures, gravures et représentations',
+        field: 'Préhistoire · Art du Paléolithique supérieur',
+        summary: 'Découvrir les peintures et gravures préhistoriques, les vestiges de Lascaux et les limites de leur interprétation.',
+        lesson: {
+          sections: [
+            'L’art préhistorique est connu grâce à des vestiges comme les peintures, les gravures et certaines figurines. Ces objets et représentations témoignent de pratiques culturelles anciennes. Leur conservation dépend notamment des matériaux employés et des conditions dans lesquelles ils ont été préservés.',
+            'La grotte de Lascaux, dans le sud-ouest de la France, est célèbre pour ses peintures et ses gravures, principalement des représentations animales. World History Encyclopedia situe les peintures de Lascaux vers 17 000 à 15 000 av. J.-C. Il s’agit d’une datation approximative présentée dans sa chronologie.',
+            'La signification exacte des images préhistoriques est souvent difficile à établir. Des interprétations rituelles ou symboliques ont été proposées, mais il faut distinguer les vestiges observables des hypothèses sur leur sens. Les chercheurs confrontent les images à leur contexte archéologique et aux autres traces disponibles.'
+          ],
+          example: {
+            statement: 'Les peintures de Lascaux sont datées approximativement de 17 000 à 15 000 av. J.-C. Quelle borne est la plus ancienne ?',
+            calculation: 'Pour les dates av. J.-C., plus le nombre est grand, plus la date est ancienne.',
+            answer: '17 000 av. J.-C. est la borne la plus ancienne. La fourchette ne signifie pas que toutes les peintures ont été réalisées la même année.'
+          },
+          exercise: {
+            question: 'Pourquoi ne peut-on pas toujours affirmer avec certitude ce que signifiait une peinture préhistorique ?',
+            answer: 'Parce que les images ne sont pas accompagnées d’explications écrites contemporaines et que plusieurs interprétations peuvent être proposées à partir des vestiges.'
+          },
+          exercises: [
+            {
+              question: 'Dans quelle région de France se trouve la grotte de Lascaux ?',
+              answer: 'Dans le sud-ouest de la France, en Dordogne.'
+            },
+            {
+              question: 'Quels animaux sont notamment représentés dans les peintures de Lascaux ?',
+              answer: 'Des chevaux, des cervidés, des aurochs, des bisons et d’autres animaux.'
+            },
+            {
+              question: 'Quelle différence faut-il faire entre une observation archéologique et une interprétation ?',
+              answer: 'L’observation décrit ce qui est conservé et étudié ; l’interprétation propose une explication qui peut rester incertaine.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Lascaux Cave Timeline', url: 'https://www.worldhistory.org/timeline/Lascaux_Cave/' },
+            { title: 'World History Encyclopedia — Stone Age', url: 'https://www.worldhistory.org/Stone_Age/' },
+            { title: 'World History Encyclopedia — Prehistoric Period', url: 'https://www.worldhistory.org/index/period/1/prehistoric/' }
+          ]
+        }
+      },
+      {
+        id: 'mesolithique',
+        title: 'Le Mésolithique : s’adapter à un monde qui se réchauffe',
+        field: 'Préhistoire · Fin de la dernière période glaciaire et Holocène',
+        summary: 'Comprendre les changements environnementaux, l’adaptation des chasseurs-cueilleurs et la diversité des transitions vers l’agriculture.',
+        lesson: {
+          sections: [
+            'Le Mésolithique est généralement associé à la période qui suit la dernière période glaciaire et précède l’adoption de l’agriculture dans une région. World History Encyclopedia situe le début du réchauffement marquant la fin de la dernière grande phase glaciaire autour de 12 000 ans avant le présent, avec des repères calendaires proches de 10 000 av. J.-C. selon les conventions utilisées.',
+            'Le réchauffement modifie les paysages et les ressources. Les forêts s’étendent dans certaines régions, les littoraux évoluent avec la montée du niveau marin et des populations humaines s’adaptent à de nouveaux environnements. Les activités de chasse, de pêche et de collecte continuent, mais leur organisation varie selon les milieux.',
+            'Le Mésolithique ne se termine pas partout au même moment. Dans certaines régions du Proche-Orient, l’adoption de l’agriculture commence tôt ; en Europe du Nord, la transition vers l’agriculture se produit plus tard. Le terme est donc utile pour décrire certaines trajectoires régionales, mais ne constitue pas une période universelle aux limites fixes.'
+          ],
+          example: {
+            statement: 'Une chronologie place la fin de la dernière grande phase glaciaire vers 12 000 ans avant le présent. Pourquoi ne peut-on pas donner une date unique de fin du Mésolithique pour le monde entier ?',
+            calculation: 'La fin du Mésolithique est généralement liée à la transition vers l’agriculture, dont les dates varient selon les régions.',
+            answer: 'Parce que les sociétés ont adopté l’agriculture à des moments différents. Le Mésolithique est un cadre régional, pas une période qui se termine partout simultanément.'
+          },
+          exercise: {
+            question: 'Quel changement environnemental a influencé les populations après la dernière période glaciaire ?',
+            answer: 'Le réchauffement climatique a transformé les paysages, les écosystèmes et la disponibilité des ressources.'
+          },
+          exercises: [
+            {
+              question: 'À quelle grande transformation climatique le Mésolithique est-il souvent associé ?',
+              answer: 'À la fin de la dernière période glaciaire et au réchauffement qui suit.'
+            },
+            {
+              question: 'Les populations mésolithiques abandonnent-elles partout immédiatement la chasse et la collecte ?',
+              answer: 'Non. Les modes de vie et les transitions varient selon les régions.'
+            },
+            {
+              question: 'Pourquoi les dates du Mésolithique varient-elles selon les régions ?',
+              answer: 'Parce que les environnements, les traditions et le passage à l’agriculture n’évoluent pas partout au même rythme.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Stone Age Tools', url: 'https://www.worldhistory.org/article/998/stone-age-tools/' },
+            { title: 'World History Encyclopedia — Paleolithic', url: 'https://www.worldhistory.org/Paleolithic/' },
+            { title: 'World History Encyclopedia — Homo Sapiens Timeline', url: 'https://www.worldhistory.org/timeline/Homo_Sapiens/' }
+          ]
+        }
+      },
+      {
+        id: 'neolithique',
+        title: 'Le Néolithique : agriculture, élevage et villages',
+        field: 'Préhistoire · Débuts de l’agriculture à des dates variables selon les régions',
+        summary: 'Étudier la domestication des plantes et des animaux, la sédentarisation et la diversité des sociétés néolithiques.',
+        lesson: {
+          sections: [
+            'Le Néolithique est notamment associé au développement de l’agriculture, à la domestication de certains animaux et à l’utilisation d’outils de pierre polie. Dans plusieurs régions, des populations commencent à cultiver des plantes et à gérer des troupeaux. Ces changements se déroulent sur de longues périodes et ne constituent pas une révolution instantanée.',
+            'World History Encyclopedia situe les débuts de l’agriculture au Proche-Orient autour de 10 000 av. J.-C., avec des étapes ultérieures comme la culture de céréales et la domestication de plusieurs espèces animales. D’autres régions du monde développent aussi des pratiques agricoles, avec des plantes, des animaux et des chronologies qui leur sont propres.',
+            'La production de nourriture favorise dans certaines régions des installations plus durables et des villages. Elle ne remplace cependant pas immédiatement toutes les activités de chasse, de pêche et de collecte. Les sociétés néolithiques sont diverses et leurs évolutions diffèrent selon les ressources, les milieux et les échanges.'
+          ],
+          example: {
+            statement: 'La chronologie de World History Encyclopedia situe des débuts de l’agriculture au Proche-Orient autour de 10 000 av. J.-C. et la culture de céréales sauvages dans le Croissant fertile vers 9 000 av. J.-C. Quel repère est le plus ancien ?',
+            calculation: 'Pour les dates av. J.-C., plus le nombre est grand, plus la date est ancienne.',
+            answer: '10 000 av. J.-C. est le repère le plus ancien. Ces repères décrivent des étapes différentes et approximatives.'
+          },
+          exercise: {
+            question: 'Pourquoi le développement de l’agriculture ne signifie-t-il pas que toutes les sociétés deviennent immédiatement sédentaires ?',
+            answer: 'Parce que les transitions sont graduelles et régionales ; certaines populations continuent à combiner agriculture, chasse, pêche et collecte, ou conservent d’autres modes de vie.'
+          },
+          exercises: [
+            {
+              question: 'Cite deux transformations souvent associées au Néolithique.',
+              answer: 'Le développement de l’agriculture et la domestication de certains animaux. L’usage d’outils de pierre polie est également caractéristique.'
+            },
+            {
+              question: 'Vers quelle date la chronologie citée situe-t-elle les débuts de l’agriculture au Proche-Orient ?',
+              answer: 'Autour de 10 000 av. J.-C.'
+            },
+            {
+              question: 'L’agriculture est-elle apparue partout au même moment ?',
+              answer: 'Non. Les pratiques agricoles se développent à des dates différentes selon les régions.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Neolithic', url: 'https://www.worldhistory.org/Neolithic/' },
+            { title: 'World History Encyclopedia — Neolithic Timeline', url: 'https://www.worldhistory.org/timeline/Neolithic/' },
+            { title: 'World History Encyclopedia — Dynamics of the Neolithic Revolution', url: 'https://www.worldhistory.org/article/1937/dynamics-of-the-neolithic-revolution/' },
+            { title: 'World History Encyclopedia — Agriculture Timeline', url: 'https://www.worldhistory.org/timeline/Agriculture/' }
+          ]
+        }
+      }
+    ]
+  }, // FIN BRANCHE 1
+
+// BRANCHE 2 
   {
     id: 'histoire-des-civilisations',
     title: 'Histoire des civilisations',
@@ -276,17 +536,11 @@ window.courseCatalog = [
         }
       } // FIN CHAPITRE chine
     ] // FIN BRANCHE histoire-des-civilisations
-  } // FIN BRANCHE 1
-,
+  }, // FIN BRANCHE 2
+
 
 // ============================================================================
-// BRANCHE 2 : « L’Antiquité : empires et monde méditerranéen » (5 chapitres)
-// À COLLER dans histoire-data.js, juste après la ligne :
-//     } // FIN BRANCHE 1
-// et AVANT la ligne finale :
-//     ];
-// Ne pas oublier la virgule : la ligne « } // FIN BRANCHE 1 » doit être suivie
-// d’une virgule (le bloc ci-dessous commence par « , » pour cela).
+// BRANCHE 3 : « L’Antiquité : empires et monde méditerranéen » (5 chapitres)
 // Convention : av. J.-C., plus le nombre est grand, plus la date est ancienne ;
 // ap. J.-C., c’est l’inverse. Il n’y a pas d’année 0 (1 av. J.-C. est suivi de 1 ap. J.-C.).
 // Les écarts entre sources sont signalés dans le texte plutôt que tranchés.
@@ -524,22 +778,16 @@ window.courseCatalog = [
         }
       } // FIN CHAPITRE antiquite-tardive
     ] // FIN BRANCHE antiquite
-  } // FIN BRANCHE 2
+  }, // FIN BRANCHE 3 
 
 // ============================================================================
-// BRANCHE 3 : « Asie centrale et routes de la soie » (6 chapitres)
-// À COLLER dans histoire-data.js, juste après la ligne :
-//     } // FIN BRANCHE 2
-// et AVANT la ligne finale :
-//     ];
-// Ne pas oublier la virgule : la ligne « } // FIN BRANCHE 2 » doit être suivie
-// d’une virgule
+// BRANCHE 4 : « Asie centrale et routes de la soie » (6 chapitres)
+
 // Convention : av. J.-C., plus le nombre est grand, plus la date est ancienne ;
 // ap. J.-C., c’est l’inverse. Toute date av. J.-C. précède toute date ap. J.-C.
 // Il n’y a pas d’année 0 (1 av. J.-C. est suivi de 1 ap. J.-C.).
 // Les écarts entre sources sont signalés dans le texte plutôt que tranchés.
 // ============================================================================
-,
 
   {
     id: 'asie-centrale',
@@ -817,6 +1065,5 @@ window.courseCatalog = [
         }
       } // FIN CHAPITRE timur-et-timourides
     ] // FIN BRANCHE asie-centrale-et-routes-de-la-soie
-  } // FIN BRANCHE 3
+  },  // FIN BRANCHE 4
 ];
-
