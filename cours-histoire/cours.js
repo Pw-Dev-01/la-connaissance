@@ -72,10 +72,21 @@
   let course = null;
   let branch = null;
   let chapter = null;
-  for (const item of catalog) {
-    const found = (item.chapters || []).find((ch) => ch.id === id);
-    if (found) { branch = item; chapter = found; break; }
+  
+for (const item of catalog) {
+  if (!item) continue;
+
+  const found = (item.chapters || []).find(
+    (ch) => ch && ch.id === id
+  );
+
+  if (found) {
+    branch = item;
+    chapter = found;
+    break;
   }
+}
+
 
   // 2) Sinon : branche / cours simple
   if (!chapter) course = catalog.find((c) => c.id === id) || null;
