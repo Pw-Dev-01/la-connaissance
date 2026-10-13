@@ -524,7 +524,7 @@ window.courseCatalog = [
         }
       } // FIN CHAPITRE antiquite-tardive
     ] // FIN BRANCHE antiquite
-  }, // FIN BRANCHE 2
+  } // FIN BRANCHE 2
 
 // ============================================================================
 // BRANCHE 3 : « Asie centrale et routes de la soie » (6 chapitres)
@@ -817,6 +817,6 @@ window.courseCatalog = [
         }
       } // FIN CHAPITRE timur-et-timourides
     ] // FIN BRANCHE asie-centrale-et-routes-de-la-soie
-  }, // FIN BRANCHE 3
+  } // FIN BRANCHE 3
 ];
 
