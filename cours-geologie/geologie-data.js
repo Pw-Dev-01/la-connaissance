@@ -416,7 +416,110 @@ window.courseCatalog = [
       { anchor: 'exercices', title: 'S’entraîner' },
       { anchor: 'sources', title: 'Sources' }
     ]
-  } // FIN COURS APPROFONDI géodynamique
+  }, // FIN COURS APPROFONDI géodynamique
+// ============================================================================
+// NOUVELLE BRANCHE : « Outils et méthodes » (1 chapitre)
+// À COLLER dans géologie-data.js, juste après la dernière branche existante,
+// AVANT la ligne finale « ]; ».
+// Ne pas oublier la virgule après la branche précédente : le bloc ci-dessous
+// commence par « , » pour cela.
+// Même format que les autres chapitres : sections, formula, equationDetails,
+// exercise, exercises, sources.
+// Convention : les valeurs numériques citées viennent des sources listées en bas
+// de leçon ; les écarts entre sources sont signalés dans le texte.
+// ============================================================================
+,
+
+  {
+    id: 'outils-et-methodes',
+    title: 'Outils et méthodes',
+    note: 'Mesurer la Terre aujourd’hui : géodésie spatiale, radar, laser et gravimétrie.',
+    chapters: [
+      {
+        id: 'nouveaux-outils-de-mesure',
+        title: 'Les nouveaux outils de mesure',
+        field: 'Géodésie et télédétection · bases',
+        summary: 'GNSS, InSAR, LiDAR et GRACE-FO : mesurer des déplacements de quelques millimètres à quelques centimètres.',
+        lesson: {
+          sections: [
+            'Longtemps, la géologie a reposé sur l’observation de terrain et sur des mesures ponctuelles. Aujourd’hui, des instruments mesurent en continu, depuis le sol ou depuis l’espace, de très petits mouvements de la croûte. L’USGS emploie ainsi le LIDAR, le GPS, l’interférométrie radar (InSAR) et des instruments de terrain comme les creepmètres, et précise que les mesures géodésiques permettent d’observer des processus liés aux séismes que la sismologie seule ne montre pas : le mouvement lent de fond entre les plaques, ou le glissement continu de failles comme celle de Hayward, de l’ordre de plusieurs millimètres par an.',
+            'Le GNSS (système de positionnement par satellites, dont le GPS) mesure la position d’une station au millimètre près. Selon l’IRIS, le GPS détecte des mouvements de plaques de 1 ou 2 mm par an ; une présentation de l’USGS annonce une précision meilleure que 1 mm par an sur la vitesse, ce qui n’est pas tout à fait la même grandeur (plus petit mouvement détectable et précision de la vitesse). Le réseau américain Plate Boundary Observatory d’EarthScope comptait environ 1 100 stations GPS : mesurer chaque jour, plutôt qu’une semaine par an comme dans les campagnes anciennes, change la qualité des séries. Une station apparaît comme une série temporelle de sa position, dont la pente donne la vitesse.',
+            'L’InSAR compare deux images radar d’un même lieu prises à des dates différentes. Un déplacement du sol change la distance entre le satellite et le sol, donc la phase du signal. Une frange (un cycle de couleurs sur l’interférogramme) correspond à un déplacement égal à la moitié de la longueur d’onde, car le signal fait l’aller-retour. Pour Sentinel-1, en bande C, la longueur d’onde est de 5,56 cm, soit environ 2,8 cm par frange (NASA/JPL). Attention : l’InSAR ne mesure que la composante du mouvement le long de la ligne de visée du satellite (Sentinel-1 regarde le sol à environ 40° de la verticale), et les résultats rapides publiés après un séisme sont qualifiés de préliminaires.',
+            'Le LiDAR envoie des impulsions laser, mesure leur temps d’aller-retour et en déduit une distance : c’est le temps de vol. Comme l’impulsion fait l’aller et le retour, la distance est la vitesse de la lumière multipliée par le temps, divisée par deux (OpenTopography). Un LiDAR aéroporté peut émettre jusqu’à 100 000 impulsions par seconde (valeur citée par une documentation universitaire), et un filtrage dit « de sol nu » retire les arbres et les bâtiments pour obtenir un modèle numérique de terrain. Il sert à repérer failles, glissements de terrain, volcans ou anciens lits de rivière.',
+            'GRACE-FO (NASA et GFZ, lancée le 22 mai 2018) est une paire de satellites qui se suivent à environ 220 km et mesurent leur distance par signaux micro-ondes, avec une précision de l’ordre du micromètre (NASA/JPL : environ 1 micron ; l’AWI parle de quelques micromètres). Quand le premier survole une zone de gravité un peu plus forte, il s’éloigne du second : ces variations de distance servent à construire des cartes mensuelles du champ de gravité, donc des déplacements de masse, surtout d’eau (nappes, glaciers, calottes). Retenir : chaque outil mesure une grandeur indirecte (position, phase, temps, distance entre satellites) ; on les combine, et on donne toujours une valeur avec son incertitude.'
+          ],
+          formula: {
+            label: 'DISTANCE PAR TEMPS DE VOL (LIDAR)',
+            text: 'd = c × t / 2'
+          },
+          equationDetails: [
+            {
+              title: 'LiDAR : de la durée d’un écho à une distance',
+              formula: 'd = c × t / 2',
+              explanation: 'L’impulsion laser fait un aller-retour entre le capteur et la surface : la distance parcourue est c × t, et la distance au sol est la moitié.',
+              parameters: 'd : distance capteur–surface ; c : vitesse de la lumière, environ 300 000 km/s ; t : durée de l’aller-retour.',
+              example: 'Un écho revient après 2 × 10⁻⁶ s : d = 3 × 10⁸ × 2 × 10⁻⁶ / 2 = 300 m.',
+              result: 'Ne pas oublier la division par deux, sinon la distance est doublée.'
+            },
+            {
+              title: 'InSAR : compter les franges',
+              formula: 'déplacement le long de la ligne de visée = N × λ / 2',
+              explanation: 'Une frange correspond à un déplacement d’une demi-longueur d’onde, car le trajet radar est un aller-retour.',
+              parameters: 'N : nombre de franges comptées ; λ : longueur d’onde du radar (Sentinel-1, bande C : 5,56 cm).',
+              example: 'Quatre franges : 4 × 5,56 / 2 ≈ 11 cm le long de la ligne de visée.',
+              result: 'C’est un déplacement relatif, projeté sur la ligne de visée, et non le déplacement réel du sol.'
+            },
+            {
+              title: 'GNSS : une vitesse à partir d’une série de positions',
+              formula: 'vitesse = déplacement / durée',
+              explanation: 'La pente de la position d’une station en fonction du temps donne sa vitesse, en mm par an.',
+              parameters: 'déplacement en mm ; durée en années.',
+              example: 'Une station se déplace d’environ 20 mm en 3 ans : 20 / 3 ≈ 6,7 mm par an.',
+              result: 'Donner la vitesse avec une incertitude, jamais avec dix décimales.'
+            },
+            {
+              title: 'GRACE-FO : une précision relative',
+              formula: 'précision relative = précision de la mesure / distance mesurée',
+              explanation: 'Comparer l’incertitude à la grandeur mesurée donne une idée de la qualité d’un instrument.',
+              parameters: 'précision d’environ 1 µm = 10⁻⁶ m ; distance entre satellites d’environ 220 km = 2,2 × 10⁵ m.',
+              example: '10⁻⁶ / 2,2 × 10⁵ ≈ 4,5 × 10⁻¹².',
+              result: 'Les variations de distance détectées sont de l’ordre d’un millionième de mètre sur 220 km.'
+            }
+          ],
+          exercise: {
+            question: 'Un écho LiDAR revient après 4 × 10⁻⁶ s. Quelle est la distance entre le capteur et la surface (c ≈ 3 × 10⁸ m/s) ?',
+            answer: 'd = c × t / 2 = 3 × 10⁸ × 4 × 10⁻⁶ / 2 = 600 m.'
+          },
+          exercises: [
+            {
+              question: 'Un écho LiDAR revient après 4 × 10⁻⁶ s. Quelle est la distance entre le capteur et la surface (c ≈ 3 × 10⁸ m/s) ?',
+              answer: 'd = c × t / 2 = 3 × 10⁸ × 4 × 10⁻⁶ / 2 = 600 m.'
+            },
+            {
+              question: 'Un interférogramme Sentinel-1 montre 6 franges autour d’un séisme. Quel déplacement le long de la ligne de visée cela représente-t-il (1 frange ≈ 2,8 cm) ?',
+              answer: '6 × 2,8 ≈ 17 cm le long de la ligne de visée ; ce n’est pas forcément le déplacement réel du sol, car l’InSAR n’en mesure que la composante projetée.'
+            },
+            {
+              question: 'Une station GNSS se déplace de 35 mm en 5 ans. Quelle est sa vitesse moyenne ?',
+              answer: '35 / 5 = 7 mm par an.'
+            }
+          ],
+          sources: [
+            { title: 'OpenTopography — What is Lidar?', url: 'https://opentopography.org/lidar_basics' },
+            { title: 'NASA Earthdata (OPERA, Sentinel-1) — Displacement maps : longueur d’onde 5,56 cm et franges', url: 'https://gis.earthdata.nasa.gov/gis05/rest/services/DISASTERS_202606_EARTHQUAKE_VENEZUELA/202611_opera_displacement/ImageServer' },
+            { title: 'Wikipédia (en) — Interferometric synthetic-aperture radar (à recouper)', url: 'https://en.wikipedia.org/wiki/Interferometric_synthetic-aperture_radar' },
+            { title: 'IRIS — Measuring Plate Tectonic Motions with GPS', url: 'https://www.iris.edu/hq/inclass/animation/measuring_plate_tectonics_with_gps' },
+            { title: 'USGS — Deformation (Earthquake Hazards Program)', url: 'https://www.usgs.gov/programs/earthquake-hazards/science/deformation' },
+            { title: 'USGS / CGSIC — Tracking Ground Movement with GNSS (Hothem, 2018)', url: 'https://www.gps.gov/cgsic/meetings/2018/hothem.pdf' },
+            { title: 'EarthScope — Exploring a Changing Continent Using a Plate Boundary Observatory', url: 'https://earthscope-program-2003-2018.org/articles/exploring_continent_with_PBO.html' },
+            { title: 'NASA/JPL — GRACE-FO mission', url: 'https://grace.jpl.nasa.gov/mission/grace-fo' },
+            { title: 'Alfred Wegener Institute — Keeping a Close Eye on Ice Loss', url: 'https://www.awi.de/en/about-us/service/press/single-view/keeping-a-close-eye-on-ice-loss.html' }
+          ]
+        }
+      } // FIN CHAPITRE nouveaux-outils-de-mesure
+    ] // FIN BRANCHE outils-et-methodes
+  } // FIN BRANCHE outils-et-methodes
+
 ];
 
 // ---------------------------------------------------------------------------
