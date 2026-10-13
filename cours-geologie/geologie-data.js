@@ -1,4 +1,4 @@
-// Catalogue du cours de géologie : 3 branches, 6 chapitres et 1 cours approfondi.
+// Catalogue du cours de géologie 
 // Sources scientifiques en bas de chaque leçon (bloc « RÉFÉRENCES ») et à la fin
 // du cours approfondi (bloc « SOURCES »). Le cours approfondi « Géodynamique et
 // histoire de la planète » est une page dédiée : son entrée utilise « href » et
@@ -428,8 +428,6 @@ window.courseCatalog = [
 // Convention : les valeurs numériques citées viennent des sources listées en bas
 // de leçon ; les écarts entre sources sont signalés dans le texte.
 // ============================================================================
-,
-
   {
     id: 'outils-et-methodes',
     title: 'Outils et méthodes',
@@ -778,3 +776,4 @@ window.courseCatalog.push({
     }
   ]
 });
+
