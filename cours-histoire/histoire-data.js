@@ -730,7 +730,7 @@ window.courseCatalog = [
       } // FIN CHAPITRE sassanides-kidarites-hephtalites-turcs
       ,
       {
-        id: 'mongols-asie-centrale',
+        id: 'asie-centrale-mongols',
         title: 'Empire mongol en Asie centrale : de Gengis Khan au khanat de Djaghataï',
         field: 'Asie centrale et Eurasie · 1206–1368',
         summary: 'Gengis Khan, conquête du Khwarezm, Karakorum, partage en khanats et khanat de Djaghataï.',
@@ -817,5 +817,6 @@ window.courseCatalog = [
         }
       } // FIN CHAPITRE timur-et-timourides
     ] // FIN BRANCHE asie-centrale-et-routes-de-la-soie
-  } // FIN BRANCHE 3
+  }, // FIN BRANCHE 3
 ];
+
