@@ -31,13 +31,13 @@ catalogueStyle.textContent = `
   .branch-overview { margin: 0 0 2.5rem; }
   .branch-overview-title { margin: 0 0 .9rem; font-size: .78rem; font-weight: 700;
     letter-spacing: .14em; text-transform: uppercase; opacity: .7; }
-  .branch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem; }
+  .branch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; }
   .branch-card { display: flex; flex-direction: column; gap: .4rem; padding: 1rem 1.05rem;
     border: 1.5px solid rgba(23, 33, 27, .22); background: rgba(255, 255, 255, .55);
     color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
   .branch-card:hover, .branch-card:focus-visible { border-color: var(--accent, #ef7455); transform: translateY(-2px); }
   .branch-card-number { font-size: .8rem; font-weight: 700; letter-spacing: .12em; color: var(--accent, #ef7455); }
-  .branch-card-title { font-size: 1.05rem; font-weight: 700; line-height: 1.25; }
+  .branch-card-title { font-size: 0.9rem; font-weight: 700; line-height: 1.2; }
   .branch-card-count { font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .65; }
   .programme-section { scroll-margin-top: 1rem; }
   .programme-section-heading { border-top: 3px solid var(--accent, #ef7455); padding-top: 1rem; }
