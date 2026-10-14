@@ -1066,6 +1066,372 @@ window.courseCatalog = [
       } // FIN CHAPITRE timur-et-timourides
     ] // FIN BRANCHE asie-centrale-et-routes-de-la-soie
   },  // FIN BRANCHE 4
+
+// BRANCHE 5
+
+{
+  id: 'egypte-antique',
+  title: 'Égypte antique : le Nil, les pharaons et une civilisation millénaire',
+  note: 'Six chapitres approfondis sur la formation de l’État égyptien, le Nil et l’économie, le pouvoir royal, l’architecture, les croyances religieuses et l’écriture. Les dates sont approximatives. Les chronologies peuvent différer selon les spécialistes et les périodes ne se sont pas toutes caractérisées par le même degré d’unité politique.',
+  chapters: [
+    {
+      id: 'naissance-egypte-antique',
+      title: 'La naissance de la civilisation égyptienne',
+      field: 'Égypte antique · Période prédynastique et formation de l’État, vers 4500-3100 av. J.-C.',
+      summary: 'Étudier les sociétés prédynastiques, l’importance du Nil, les premières formes de pouvoir et la formation progressive d’un État égyptien unifié.',
+      lesson: {
+        sections: [
+          'L’Égypte antique se développe dans le nord-est de l’Afrique, autour de la vallée et du delta du Nil. Le contraste entre le fleuve et les régions désertiques environnantes a profondément marqué l’organisation du territoire. Les terres cultivables se concentraient surtout le long du cours du fleuve et dans son delta, tandis que les déserts orientaux et occidentaux constituaient des milieux difficiles à exploiter pour l’agriculture. Ils n’étaient cependant pas infranchissables : des pistes permettaient d’accéder à des carrières, à des ressources minérales et à des routes commerciales.',
+          'Bien avant l’apparition de l’État pharaonique, des populations vivaient dans la région et exploitaient les ressources du fleuve. À partir du Néolithique, des communautés pratiquaient progressivement l’agriculture et l’élevage. La période prédynastique, conventionnellement située vers 4500-3100 av. J.-C. dans certaines chronologies, voit se développer des villages, des productions artisanales, des échanges à longue distance et des différences croissantes de richesse. Les objets déposés dans certaines tombes témoignent de ces transformations. Les sociétés de Haute-Égypte et de Basse-Égypte ne se sont toutefois pas développées partout au même rythme.',
+          'La Haute-Égypte correspond principalement à la vallée méridionale du Nil, en amont du delta. La Basse-Égypte désigne la région septentrionale du delta. Ces noms peuvent surprendre : la Haute-Égypte se trouve plus au sud parce que le fleuve descend vers le nord. La vallée et le delta possédaient des caractéristiques géographiques différentes, mais entretenaient des relations économiques et culturelles. Leur rapprochement politique a été un processus historique plutôt qu’un événement dont tous les détails seraient connus.',
+          'Vers la fin du IVe millénaire av. J.-C., certains centres régionaux deviennent particulièrement importants, notamment Hiérakonpolis, Abydos et Nagada. Des objets cérémoniels, des tombes et des inscriptions témoignent de l’affirmation de dirigeants. La palette de Narmer, généralement datée du début de l’époque dynastique, représente un souverain portant des couronnes associées à la Haute-Égypte et à la Basse-Égypte. Elle est une source majeure pour étudier l’idéologie royale et la représentation de l’unification. Elle ne constitue cependant pas un récit complet et neutre des événements historiques.',
+          'Le nom de Narmer est solidement attesté dans les sources archéologiques. L’identification de Narmer au personnage traditionnellement appelé Ménès, auquel des traditions ultérieures attribuent l’unification, reste discutée. Les spécialistes ne disposent pas d’un récit contemporain détaillé permettant de reconstituer avec certitude toutes les étapes de la formation de l’État. Une date proche de 3100 av. J.-C. est donc un repère conventionnel utile pour situer les débuts de l’époque dynastique, et non une date exacte démontrant qu’une unification complète aurait eu lieu en une seule journée.',
+          'L’apparition de l’écriture accompagne la formation de structures politiques plus complexes. Les premières inscriptions égyptiennes connues remontent à la fin du IVe millénaire av. J.-C. Elles sont notamment associées à des objets cérémoniels et à des marques administratives. L’écriture permet progressivement d’enregistrer des noms, des ressources et des informations institutionnelles. Son développement s’inscrit dans un ensemble de transformations comprenant la centralisation du pouvoir, les échanges, la spécialisation des métiers et la construction de monuments.'
+        ],
+        example: {
+          statement: 'Une frise chronologique indique le début conventionnel de l’époque dynastique vers 3100 av. J.-C. et le début du Nouvel Empire vers 1570 av. J.-C. Combien d’années environ séparent ces deux repères ?',
+          calculation: '3100 - 1570 = 1530',
+          answer: 'Environ 1530 ans séparent ces repères. Il s’agit d’une durée approximative calculée à partir de dates conventionnelles.'
+        },
+        exercise: {
+          question: 'Explique pourquoi la naissance de l’État égyptien doit être comprise comme un processus historique et non comme un événement parfaitement connu.',
+          answer: 'Les données archéologiques montrent une évolution progressive des communautés, des centres régionaux, des échanges et du pouvoir. Les sources contemporaines sont limitées et ne permettent pas de reconstituer avec certitude toutes les étapes de l’unification ni d’attribuer l’ensemble du processus à un seul souverain.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle partie du continent africain la civilisation égyptienne s’est-elle développée ?',
+            answer: 'Dans le nord-est de l’Afrique, principalement le long de la vallée et du delta du Nil.'
+          },
+          {
+            question: 'Quelle différence géographique distingue la Haute-Égypte de la Basse-Égypte ?',
+            answer: 'La Haute-Égypte correspond principalement à la vallée méridionale du Nil, tandis que la Basse-Égypte correspond à la région septentrionale du delta.'
+          },
+          {
+            question: 'Pourquoi le Nil a-t-il favorisé l’installation de communautés agricoles ?',
+            answer: 'Il fournissait de l’eau, des terres cultivables et une voie de circulation. Les dépôts de sédiments liés aux crues contribuaient à la fertilité de certaines terres.'
+          },
+          {
+            question: 'Que représente la palette de Narmer pour les historiens ?',
+            answer: 'C’est un objet cérémoniel important pour étudier la royauté et les représentations de l’unification de l’Égypte.'
+          },
+          {
+            question: 'Peut-on affirmer que Narmer et Ménès sont certainement une seule et même personne ?',
+            answer: 'Non. Cette identification est discutée par les spécialistes.'
+          },
+          {
+            question: 'Quel lien peut-on établir entre l’écriture et la formation de l’État ?',
+            answer: 'L’écriture a notamment permis d’enregistrer des noms, des ressources et des informations administratives, contribuant au fonctionnement d’institutions de plus en plus complexes.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Ancient Egypt', url: 'https://www.worldhistory.org/egypt/' },
+          { title: 'The Metropolitan Museum of Art — Egypt, 8000–2000 B.C.', url: 'https://www.metmuseum.org/de/toah/ht/02/afe' },
+          { title: 'The Metropolitan Museum of Art — Egypt, 8000–2000 B.C. (chronologie)', url: 'https://www.metmuseum.org/toah/ht/02/afe' }
+        ]
+      }
+    },
+    {
+      id: 'nil-agriculture-societe',
+      title: 'Le Nil, l’agriculture et la société égyptienne',
+      field: 'Égypte antique · Environnement, économie, métiers et organisation sociale',
+      summary: 'Comprendre les effets du milieu naturel sur l’agriculture, les échanges, la collecte des ressources, les métiers et les conditions de vie des habitants.',
+      lesson: {
+        sections: [
+          'Le Nil constitue l’un des principaux axes de la civilisation égyptienne. Il relie des régions éloignées et facilite les déplacements de personnes, de marchandises et d’informations. Le courant du fleuve s’écoule généralement vers le nord, tandis que les vents dominants permettent souvent aux embarcations à voile de remonter le cours du fleuve. Cette complémentarité a favorisé les circulations, sans supprimer les difficultés liées aux distances, aux saisons et aux conditions de navigation.',
+          'Les crues du Nil ont longtemps joué un rôle majeur dans l’agriculture. Lorsque les eaux se retiraient, elles laissaient des sédiments qui contribuaient à la fertilité des terres. Les résultats agricoles dépendaient toutefois de plusieurs facteurs : la hauteur et le calendrier de la crue, les sols, les techniques d’irrigation, les semences, la main-d’œuvre et le stockage. Il serait donc inexact de présenter le fleuve comme une garantie automatique de récoltes abondantes chaque année.',
+          'Les habitants cultivaient notamment des céréales, dont le blé amidonnier et l’orge, ainsi que d’autres plantes utiles à l’alimentation et à la production de matériaux. Les récoltes pouvaient servir à nourrir les familles, à payer certaines obligations en nature, à approvisionner des institutions et à constituer des réserves. La gestion des greniers et des ressources demandait des opérations de mesure, d’enregistrement et de redistribution. Les pratiques variaient selon les lieux, les époques et les institutions concernées.',
+          'L’économie égyptienne ne reposait pas uniquement sur l’agriculture. L’élevage, la pêche, la chasse, l’artisanat, la construction, l’exploitation des carrières et les échanges contribuaient aussi à la vie économique. Les artisans travaillaient notamment la pierre, le bois, les métaux, le textile et la céramique. Certaines matières premières étaient disponibles localement ; d’autres provenaient de régions extérieures. Le cuivre, les pierres dures, le bois de qualité et diverses matières précieuses pouvaient faire l’objet d’approvisionnements organisés à différentes échelles.',
+          'La société était hiérarchisée, mais elle ne se résumait pas à une pyramide sociale uniforme valable pendant trois millénaires. Le roi occupait le sommet de l’ordre politique. Les hauts responsables, les administrateurs, les scribes et les prêtres pouvaient disposer de fonctions et de ressources importantes. Les soldats, les artisans, les commerçants, les paysans et les travailleurs assuraient des activités diverses. Le statut, les droits, les obligations et les possibilités d’accès aux ressources variaient selon les individus et les périodes.',
+          'Les scribes occupaient une place importante parce que la maîtrise de l’écriture demandait une formation spécialisée. Ils pouvaient rédiger des documents, tenir des comptes, enregistrer des livraisons ou participer à l’administration des domaines. Leur travail ne signifie pas que tous les habitants étaient incapables de communiquer ou de compter, mais que les institutions avaient besoin de personnes formées pour produire et conserver certains documents. Les sources écrites disponibles reflètent donc particulièrement les activités des institutions et des groupes capables de laisser des archives.',
+          'La vie quotidienne dépendait fortement du statut social et du contexte local. Les maisons, les vêtements, l’alimentation et l’accès aux biens différaient. Les données archéologiques provenant des villages de travailleurs, des habitations et des cimetières permettent de compléter les textes officiels. Elles rappellent que l’histoire de l’Égypte ne concerne pas seulement les souverains et les monuments : elle comprend aussi le travail, les familles, les besoins matériels et les adaptations des populations.'
+        ],
+        example: {
+          statement: 'Un grenier fictif reçoit 480 sacs de céréales. L’administration en réserve 120 pour une période ultérieure et affecte 90 sacs à un autre usage. Combien de sacs restent disponibles ?',
+          calculation: '480 - 120 - 90 = 270',
+          answer: 'Il reste 270 sacs disponibles. Cet exemple illustre un calcul de gestion des réserves ; les quantités sont fictives et ne correspondent pas à un document historique précis.'
+        },
+        exercise: {
+          question: 'Montre comment le Nil, l’agriculture et l’administration étaient liés dans le fonctionnement de l’Égypte antique.',
+          answer: 'Le Nil fournissait de l’eau et facilitait les transports. L’agriculture produisait une partie importante des ressources alimentaires. Les récoltes pouvaient être stockées, mesurées et redistribuées par des familles et des institutions. L’administration utilisait notamment des documents et des scribes pour suivre certaines ressources et organiser des obligations.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle direction le Nil s’écoule-t-il généralement ?',
+            answer: 'Du sud vers le nord, en direction de la Méditerranée.'
+          },
+          {
+            question: 'Pourquoi les crues du Nil étaient-elles importantes pour l’agriculture ?',
+            answer: 'Elles apportaient de l’eau et pouvaient déposer des sédiments favorables à la fertilité des terres.'
+          },
+          {
+            question: 'Les crues garantissaient-elles toujours une bonne récolte ?',
+            answer: 'Non. Les résultats dépendaient aussi de l’importance de la crue, des sols, du travail, de l’irrigation et d’autres conditions.'
+          },
+          {
+            question: 'Cite trois activités économiques autres que la culture des céréales.',
+            answer: 'Par exemple, l’élevage, la pêche, la poterie, le travail des métaux, le textile, la construction ou le commerce.'
+          },
+          {
+            question: 'Pourquoi les scribes étaient-ils utiles à l’administration ?',
+            answer: 'Ils pouvaient enregistrer des ressources, rédiger des documents et tenir des comptes.'
+          },
+          {
+            question: 'Pourquoi faut-il étudier les habitations et les cimetières en plus des textes royaux ?',
+            answer: 'Ces vestiges permettent de mieux connaître les conditions de vie et les activités de populations souvent moins visibles dans les inscriptions officielles.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Ancient Egypt', url: 'https://www.worldhistory.org/egypt/' },
+          { title: 'The Metropolitan Museum of Art — Egyptian Tombs: Life Along the Nile', url: 'https://www.metmuseum.org/fr/essays/egyptian-tombs-life-along-the-nile' },
+          { title: 'The Metropolitan Museum of Art — The Art of Ancient Egypt: A Resource for Educators', url: 'https://resources.metmuseum.org/resources/metpublications/pdf/The_Art_of_Ancient_Egypt_A_Resource_for_Educators.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'pharaons-royaute',
+      title: 'Les pharaons, le pouvoir et les grandes périodes historiques',
+      field: 'Égypte antique · Institutions royales, administration et évolution politique, vers 3100-30 av. J.-C.',
+      summary: 'Étudier les responsabilités du roi, l’administration, les périodes d’unité et de fragmentation, les relations extérieures et les principales transformations politiques.',
+      lesson: {
+        sections: [
+          'Le roi occupe une place centrale dans l’organisation politique de l’Égypte antique. Il est présenté dans les textes et les images royales comme un garant de l’ordre du pays et de l’équilibre cosmique. Le concept de maât exprime notamment l’ordre, la justice, l’équilibre et la régularité qui doivent structurer le monde. Cette conception religieuse du pouvoir ne signifie pas que le roi gérait seul toutes les affaires : son autorité dépendait d’administrateurs, de responsables locaux, de prêtres et d’autres agents.',
+          'Le vizir est l’un des hauts responsables de l’administration royale. Selon les périodes, les fonctionnaires supervisent différentes tâches : gestion des terres et des ressources, organisation de travaux, contrôle de certaines activités, justice et transmission des décisions. Les institutions n’étaient pas identiques durant toute l’histoire égyptienne. Il faut donc éviter de projeter un modèle administratif unique sur trois millénaires d’évolution.',
+          'L’histoire est généralement divisée en grandes périodes pour faciliter son étude. L’époque dynastique ancienne suit la formation de l’État, vers 3100 av. J.-C. L’Ancien Empire, souvent daté approximativement de 2613 à 2181 av. J.-C. dans une chronologie courante, est associé à la construction des grandes pyramides royales. Le Moyen Empire, situé autour de 2040-1782 av. J.-C. dans la chronologie de World History Encyclopedia, est marqué par une nouvelle consolidation du pouvoir. Les bornes exactes varient selon les spécialistes.',
+          'Entre les périodes de royaume, l’Égypte connaît des phases dites intermédiaires. Ces phases sont associées à des changements de pouvoir, à la montée de dirigeants régionaux et parfois à plusieurs centres politiques concurrents. Le terme « période intermédiaire » est une catégorie moderne utilisée par les historiens. Il ne signifie pas nécessairement que toute activité économique ou culturelle s’est arrêtée. Les sources témoignent au contraire de continuités et de transformations qui diffèrent selon les régions.',
+          'Le Nouvel Empire, conventionnellement situé vers 1570-1069 av. J.-C. dans certaines chronologies, est une période de forte puissance internationale. Des souverains comme Thoutmôsis III mènent des campagnes militaires et étendent l’influence égyptienne. Hatchepsout développe notamment les relations commerciales et les grands programmes de construction. Sous Amenhotep III, l’art royal et la diplomatie connaissent un développement important. Ramsès II, connu pour son long règne et ses monuments, participe également à des conflits et à des négociations diplomatiques.',
+          'Les relations extérieures sont essentielles à l’histoire égyptienne. L’Égypte entretient des contacts avec la Nubie au sud, le Levant au nord-est et d’autres régions de la Méditerranée orientale. Ces relations comprennent le commerce, les échanges diplomatiques, les mariages dynastiques, les expéditions et les guerres. Elles ne peuvent pas être résumées à une opposition permanente entre l’Égypte et tous ses voisins : les formes de relation évoluent selon les intérêts politiques et les circonstances.',
+          'Au cours du Ier millénaire av. J.-C., l’autorité politique est parfois exercée par des dynasties d’origine libyenne ou nubienne, puis l’Égypte connaît notamment des dominations assyrienne et perse. En 332 av. J.-C., Alexandre le Grand conquiert l’Égypte. Après sa mort, la dynastie des Ptolémées gouverne le pays. Cléopâtre VII est la dernière souveraine de cette dynastie à exercer le pouvoir avant l’annexion romaine de 30 av. J.-C. Cette date marque la fin conventionnelle de l’Égypte ptolémaïque indépendante, et non la disparition immédiate de la culture égyptienne.'
+        ],
+        example: {
+          statement: 'Une chronologie situe l’Ancien Empire vers 2613-2181 av. J.-C. et le Moyen Empire vers 2040-1782 av. J.-C. Quel intervalle approximatif sépare la fin de l’Ancien Empire du début du Moyen Empire ?',
+          calculation: '2181 - 2040 = 141',
+          answer: 'Les repères conventionnels indiquent un intervalle d’environ 141 ans. Cette estimation ne signifie pas que l’Égypte aurait été dépourvue de pouvoir ou d’activité pendant toute cette période.'
+        },
+        exercise: {
+          question: 'Explique pourquoi l’histoire politique de l’Égypte antique ne correspond pas à une succession continue de souverains disposant toujours du même pouvoir.',
+          answer: 'Le pays a connu des périodes de centralisation, de fragmentation et de domination par des pouvoirs régionaux ou étrangers. Les institutions, les frontières et les relations extérieures ont changé au cours des siècles.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie le concept de maât dans la pensée égyptienne ?',
+            answer: 'Il renvoie notamment à l’ordre, à la justice et à l’équilibre que le roi et la société doivent contribuer à préserver.'
+          },
+          {
+            question: 'Quel rôle le vizir pouvait-il exercer ?',
+            answer: 'Il faisait partie des hauts responsables de l’administration royale et supervisait des domaines administratifs selon les institutions de son époque.'
+          },
+          {
+            question: 'À quelle grande période associe-t-on les pyramides royales de Gizeh ?',
+            answer: 'À l’Ancien Empire.'
+          },
+          {
+            question: 'Pourquoi les périodes intermédiaires ne doivent-elles pas être décrites comme des périodes sans histoire ?',
+            answer: 'Elles comprennent des transformations politiques, des pouvoirs régionaux et des continuités culturelles et économiques.'
+          },
+          {
+            question: 'Cite deux souverains du Nouvel Empire.',
+            answer: 'Par exemple, Hatchepsout, Thoutmôsis III, Amenhotep III ou Ramsès II.'
+          },
+          {
+            question: 'En quelle année Alexandre le Grand conquiert-il l’Égypte ?',
+            answer: 'En 332 av. J.-C.'
+          },
+          {
+            question: 'Quelle date marque la fin conventionnelle de l’Égypte ptolémaïque indépendante ?',
+            answer: '30 av. J.-C., lorsque l’Égypte est annexée par Rome.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Kingdoms and Periods of Ancient Egypt', url: 'https://www.worldhistory.org/collection/235/kingdoms-and-periods-of-ancient-egypt/' },
+          { title: 'World History Encyclopedia — Egyptian Government', url: 'https://www.worldhistory.org/timeline/Egyptian_Government/' },
+          { title: 'The Metropolitan Museum of Art — Egypt in the Middle Kingdom', url: 'https://www.metmuseum.org/fr/essays/egypt-in-the-middle-kingdom-2030-1640-b-c' },
+          { title: 'World History Encyclopedia — New Kingdom of Egypt', url: 'https://www.worldhistory.org/New_Kingdom_of_Egypt/' }
+        ]
+      }
+    },
+    {
+      id: 'pyramides-monuments',
+      title: 'Les pyramides, les temples et les monuments',
+      field: 'Égypte antique · Architecture, techniques, travail et pratiques funéraires',
+      summary: 'Comprendre les fonctions des monuments, les moyens mobilisés pour les construire, les techniques architecturales et les informations apportées par l’archéologie.',
+      lesson: {
+        sections: [
+          'L’architecture monumentale égyptienne est étroitement liée au pouvoir royal et aux croyances religieuses. Les tombeaux, les temples et les complexes funéraires sont des constructions différentes, même s’ils peuvent être réunis dans un même ensemble. Les tombeaux accueillent les sépultures et les dispositifs liés au culte funéraire. Les temples sont consacrés au culte des divinités et à des cérémonies. Les monuments royaux peuvent remplir plusieurs fonctions symboliques et politiques.',
+          'Avant les grandes pyramides de Gizeh, des souverains ont fait construire des monuments funéraires dont la forme et les techniques ont évolué. Sous le roi Djéser, la pyramide à degrés de Saqqarah constitue un jalon important de l’architecture monumentale en pierre. Elle est traditionnellement associée à l’architecte et haut responsable Imhotep. Les pyramides de Dahchour témoignent ensuite d’expérimentations architecturales, avant la construction des grandes pyramides de Gizeh sous Khéops, Khéphren et Mykérinos, durant l’Ancien Empire.',
+          'La Grande Pyramide de Gizeh est associée au roi Khéops. Les pyramides de Khéphren et de Mykérinos font partie du même paysage funéraire royal. Ces monuments ne sont pas isolés : ils appartiennent à des complexes comprenant notamment des temples, des chaussées et d’autres aménagements. Leur implantation, leur orientation, leur maçonnerie et leurs inscriptions fournissent des informations sur les capacités techniques et les choix symboliques des bâtisseurs.',
+          'La construction d’un grand monument nécessitait une organisation du travail, l’extraction et le transport des matériaux, l’approvisionnement en eau et en nourriture, ainsi que la coordination de nombreux métiers. Les outils, les traces de carrière, les restes de logements et les inscriptions permettent aux archéologues d’étudier ces activités. Les chercheurs débattent encore de certains détails des méthodes utilisées pour déplacer et mettre en place les blocs. Il est donc nécessaire de distinguer les données archéologiques établies des hypothèses concernant des procédés précis.',
+          'Il est inexact d’affirmer sans nuance que les pyramides ont été construites uniquement par des esclaves. Les découvertes archéologiques, notamment les installations liées aux travailleurs de Gizeh, témoignent de groupes de travailleurs organisés, nourris et logés. Les modalités du recrutement, les obligations de travail et les conditions variaient selon les époques et les statuts. Ces données ne permettent pas pour autant d’affirmer que tous les travailleurs avaient les mêmes conditions de vie ou qu’aucune forme de contrainte n’existait.',
+          'Les temples de Karnak et de Louxor illustrent l’importance des sanctuaires dans la religion et la représentation du pouvoir. Le complexe de Karnak s’est développé pendant de nombreux siècles : il ne résulte pas d’un chantier unique. Des souverains successifs ont ajouté des bâtiments, des obélisques, des statues et des inscriptions. Les temples étaient des espaces religieux, mais aussi des institutions disposant de terres, de personnels et de ressources. Leur rôle économique et politique variait selon les périodes.',
+          'Les tombes royales et privées nous renseignent sur les conceptions de l’au-delà et sur la place des morts dans la société. Certaines tombes contiennent des peintures, des textes, des objets et des offrandes. Les décors représentent des activités quotidiennes, des cérémonies, des divinités ou des scènes idéalisées. Ils constituent des sources précieuses, mais leur interprétation doit tenir compte des conventions artistiques et des intentions religieuses. Une image funéraire ne doit pas être lue comme une photographie exacte de la vie réelle.',
+          'La conservation des monuments est inégale. Les temples ont parfois été transformés, démontés ou réutilisés par des souverains postérieurs. Les tombes ont été pillées à différentes époques et certaines ont subi des dégradations naturelles. L’absence d’un objet dans une tombe ne prouve donc pas qu’il n’a jamais existé. L’archéologie confronte les vestiges matériels, les inscriptions et les données environnementales pour reconstruire, avec des degrés de certitude variables, l’histoire des constructions.'
+        ],
+        example: {
+          statement: 'Une équipe fictive doit transporter 360 blocs. Elle en déplace 45 par jour à rythme constant. Combien de jours lui faut-il pour achever cette tâche ?',
+          calculation: '360 / 45 = 8',
+          answer: 'Il faut 8 jours dans cet exemple mathématique. Ce résultat n’est pas une estimation historique du temps nécessaire à la construction d’une pyramide.'
+        },
+        exercise: {
+          question: 'Explique comment l’étude des monuments permet de connaître à la fois les techniques, la société et les croyances de l’Égypte antique.',
+          answer: 'Les matériaux et les traces de construction renseignent sur les techniques et l’organisation du travail. Les inscriptions et les décors renseignent sur le pouvoir et la religion. Les installations de travailleurs, les objets et les tombes apportent des informations sur l’approvisionnement, les métiers et certaines conditions de vie.'
+        },
+        exercises: [
+          {
+            question: 'À quel roi associe-t-on la Grande Pyramide de Gizeh ?',
+            answer: 'Au roi Khéops.'
+          },
+          {
+            question: 'Pourquoi la pyramide à degrés de Saqqarah est-elle importante ?',
+            answer: 'Elle constitue un jalon majeur de l’architecture monumentale en pierre et est associée au roi Djéser.'
+          },
+          {
+            question: 'Quelle différence générale existe entre une tombe et un temple ?',
+            answer: 'Une tombe accueille une sépulture et des dispositifs funéraires, tandis qu’un temple est consacré au culte des divinités et aux cérémonies religieuses.'
+          },
+          {
+            question: 'Quelles données permettent d’étudier l’organisation du travail sur les grands chantiers ?',
+            answer: 'Les traces de carrières, les outils, les installations de travailleurs, les inscriptions et les restes archéologiques liés à l’approvisionnement.'
+          },
+          {
+            question: 'Peut-on affirmer que tous les travailleurs des pyramides étaient des esclaves ?',
+            answer: 'Non. Les données archéologiques témoignent de groupes de travailleurs organisés. Les conditions de recrutement et de travail doivent être étudiées selon les périodes et les contextes.'
+          },
+          {
+            question: 'Pourquoi faut-il interpréter les peintures funéraires avec prudence ?',
+            answer: 'Elles suivent des conventions artistiques et religieuses et ne représentent pas nécessairement les activités quotidiennes de manière neutre ou exhaustive.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Ancient Egypt', url: 'https://www.worldhistory.org/egypt/' },
+          { title: 'World History Encyclopedia — Old Kingdom of Egypt', url: 'https://www.worldhistory.org/timeline/Old_Kingdom_of_Egypt/' },
+          { title: 'The Metropolitan Museum of Art — Egyptian Tombs: Life Along the Nile', url: 'https://www.metmuseum.org/fr/essays/egyptian-tombs-life-along-the-nile' },
+          { title: 'The Metropolitan Museum of Art — The Art of Ancient Egypt: A Resource for Educators', url: 'https://resources.metmuseum.org/resources/metpublications/pdf/The_Art_of_Ancient_Egypt_A_Resource_for_Educators.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'religion-momification',
+      title: 'Les dieux, les croyances et la vie après la mort',
+      field: 'Égypte antique · Polythéisme, maât, rites funéraires et pratiques de momification',
+      summary: 'Étudier les divinités, les conceptions de l’ordre cosmique, les rites funéraires et les transformations des croyances religieuses.',
+      lesson: {
+        sections: [
+          'La religion égyptienne antique comprend de nombreuses divinités dont les fonctions, les formes et les relations varient selon les lieux et les époques. Rê est associé au Soleil, Osiris au monde des morts et à la renaissance, Isis à la protection et à la maternité, tandis qu’Anubis est étroitement lié aux rites funéraires. Ces associations constituent des repères utiles, mais les divinités peuvent posséder plusieurs fonctions et être rapprochées d’autres dieux dans des traditions différentes.',
+          'Les temples jouent un rôle essentiel dans les pratiques religieuses. Ils sont considérés comme des lieux où les divinités sont honorées par des rites, des offrandes et des cérémonies. Les prêtres accomplissent des fonctions rituelles et participent à l’entretien des cultes. Les temples possèdent aussi des terres, des ateliers et des ressources dans certains contextes. Leur rôle ne se limite donc pas à celui d’un lieu de rassemblement comparable à une institution religieuse moderne.',
+          'Le concept de maât exprime un ordre juste et équilibré auquel le roi et les humains doivent contribuer. Il concerne notamment la justice, la vérité et l’harmonie du monde. Dans l’idéologie royale, le souverain doit préserver cet ordre contre le désordre. La maât possède une dimension religieuse et politique : elle aide à comprendre comment les Égyptiens représentaient la responsabilité du roi et l’organisation idéale de la société.',
+          'Les croyances concernant l’existence après la mort évoluent au cours de l’histoire. Les tombes, les inscriptions et les textes funéraires témoignent de représentations complexes du devenir du défunt. La préservation du corps, les rites, les offrandes et les formules écrites pouvaient contribuer à assurer une existence posthume favorable. Les pratiques et les ressources mises en œuvre variaient selon les périodes, les moyens des familles et les traditions funéraires.',
+          'La momification vise à préserver le corps du défunt. Les techniques ont changé au cours du temps et ne peuvent pas être décrites comme une procédure identique pendant toute l’histoire égyptienne. La préparation pouvait comprendre des traitements du corps, l’emploi de substances desséchantes, des textiles et des résines. Les méthodes exactes différaient selon les périodes et les moyens disponibles. Les analyses modernes des momies permettent de mieux comprendre ces pratiques et d’étudier également la santé, l’alimentation et certaines conditions de vie.',
+          'Les tombes pouvaient contenir des objets personnels, des amulettes, des récipients, des meubles, des aliments ou des textes. Ces dépôts répondaient à différentes fonctions religieuses, symboliques et sociales. Ils ne doivent pas être interprétés comme une liste universelle d’objets obligatoires. Certaines sépultures sont très riches, tandis que d’autres comprennent peu de biens. Les différences peuvent refléter le statut social, les ressources, les choix rituels et l’état de conservation des vestiges.',
+          'Les textes funéraires ont changé au fil des siècles. Les Textes des pyramides sont associés à des monuments royaux de l’Ancien Empire. Les Textes des sarcophages apparaissent dans des contextes funéraires ultérieurs, notamment au Moyen Empire. Ce que l’on appelle aujourd’hui le Livre des morts rassemble des formules funéraires utilisées sur des supports tels que des papyrus à partir du Nouvel Empire et durant les périodes suivantes. Il ne s’agit pas d’un livre unique, rédigé une fois pour toutes, avec un contenu identique dans toutes les tombes.',
+          'L’étude de la religion égyptienne exige enfin de croiser les sources. Les textes royaux, les images de temples, les objets funéraires et les vestiges humains n’apportent pas le même type d’information. Les inscriptions officielles présentent souvent une vision idéalisée de l’ordre et du pouvoir. Les restes archéologiques permettent de compléter cette vision, mais leur interprétation demeure parfois incertaine. Les chercheurs doivent donc distinguer ce qui est directement attesté de ce qui constitue une reconstruction probable.'
+        ],
+        example: {
+          statement: 'Un archéologue découvre une tombe avec des amulettes, des inscriptions et des restes de textiles. Peut-il conclure que tous les Égyptiens étaient enterrés exactement de cette manière ?',
+          calculation: 'Une conclusion historique exige de comparer plusieurs tombes, périodes, régions et contextes sociaux.',
+          answer: 'Non. La découverte fournit des informations sur cette sépulture précise. Il faut la comparer à d’autres données avant de proposer une généralisation.'
+        },
+        exercise: {
+          question: 'Pourquoi les pratiques funéraires sont-elles essentielles à l’étude des croyances égyptiennes, et quelles limites faut-il respecter dans leur interprétation ?',
+          answer: 'Les tombes conservent des textes, des objets, des décors et parfois des restes humains qui renseignent sur les rites et les conceptions de l’au-delà. Cependant, les pratiques varient selon les époques et les statuts sociaux. Les vestiges ne permettent pas toujours de connaître les convictions personnelles de chaque défunt.'
+        },
+        exercises: [
+          {
+            question: 'Quel dieu est notamment associé au monde des morts et à la renaissance ?',
+            answer: 'Osiris.'
+          },
+          {
+            question: 'À quelles fonctions associe-t-on couramment Anubis ?',
+            answer: 'Aux rites funéraires et à la protection des défunts.'
+          },
+          {
+            question: 'Que désigne la maât ?',
+            answer: 'Un principe d’ordre, de justice, de vérité et d’équilibre.'
+          },
+          {
+            question: 'Quel était l’objectif principal de la momification ?',
+            answer: 'Préserver le corps du défunt selon les pratiques et les croyances funéraires de l’époque.'
+          },
+          {
+            question: 'Le Livre des morts était-il un ouvrage identique dans toutes les tombes ?',
+            answer: 'Non. Il s’agit d’un ensemble de formules funéraires dont la sélection et la présentation pouvaient varier.'
+          },
+          {
+            question: 'Pourquoi les objets trouvés dans une tombe doivent-ils être interprétés dans leur contexte ?',
+            answer: 'Leur sens dépend notamment de la période, du statut du défunt, des pratiques funéraires et de leur association avec d’autres vestiges.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Ancient Egypt', url: 'https://www.worldhistory.org/egypt/' },
+          { title: 'The Metropolitan Museum of Art — Egyptian Tombs: Life Along the Nile', url: 'https://www.metmuseum.org/fr/essays/egyptian-tombs-life-along-the-nile' },
+          { title: 'The Metropolitan Museum of Art — Egypt in the Middle Kingdom', url: 'https://www.metmuseum.org/fr/essays/egypt-in-the-middle-kingdom-2030-1640-b-c' }
+        ]
+      }
+    },
+    {
+      id: 'ecriture-savoirs',
+      title: 'Les hiéroglyphes, les scribes et les savoirs',
+      field: 'Égypte antique · Écriture, administration, littérature et connaissances',
+      summary: 'Comprendre les systèmes d’écriture égyptiens, le travail des scribes, les supports écrits et la transmission des connaissances.',
+      lesson: {
+        sections: [
+          'Les premières attestations de l’écriture égyptienne remontent à la fin du IVe millénaire av. J.-C. Leur apparition accompagne la formation de structures politiques et administratives plus complexes. Les signes servent à noter des noms, des informations et des textes de différentes natures. Les premières inscriptions connues ne permettent pas de reconstituer toutes les étapes de l’invention de l’écriture : il est donc préférable de parler de traces anciennes attestées plutôt que d’un jour précis où les hiéroglyphes auraient été inventés.',
+          'Les hiéroglyphes constituent un système d’écriture combinant plusieurs types de signes. Certains représentent des sons, d’autres peuvent représenter des mots, et des déterminatifs précisent le sens d’un terme sans nécessairement se prononcer. L’écriture hiéroglyphique est employée notamment sur les monuments, les objets cérémoniels et les supports religieux. Sa disposition peut varier : les signes peuvent être organisés en lignes ou en colonnes et se lire selon leur orientation.',
+          'Les Égyptiens ont également employé des écritures cursives. Le hiératique est une forme liée aux hiéroglyphes, adaptée à des usages manuscrits. Le démotique apparaît plus tard, au cours du Ier millénaire av. J.-C., et devient important dans divers documents administratifs et privés. Ces écritures ne remplacent pas nécessairement les hiéroglyphes dans tous les contextes : les choix dépendent de la période, du support, de la fonction du texte et des habitudes des scribes.',
+          'Les supports écrits sont variés. Les inscriptions monumentales sont gravées ou peintes sur la pierre. Le papyrus, fabriqué à partir d’une plante poussant notamment dans les zones humides du Nil, sert à produire des feuilles pouvant être assemblées en rouleaux. Des textes sont également écrits sur des ostraca, c’est-à-dire des fragments de pierre ou de céramique, qui peuvent servir de supports pratiques. Les documents conservés représentent seulement une partie de la production écrite ancienne, car de nombreux supports ont disparu.',
+          'Les scribes apprennent à lire et à écrire grâce à une formation spécialisée. Leur travail peut inclure la rédaction de documents administratifs, le calcul de quantités, l’enregistrement de livraisons, la copie de textes et la préparation d’inscriptions. L’écriture ne sert donc pas seulement à transmettre des idées religieuses : elle intervient aussi dans la gestion des ressources, la diplomatie, la littérature et l’exercice du pouvoir. Les compétences et les responsabilités des scribes diffèrent selon leur formation et leur position.',
+          'Les textes égyptiens conservés comprennent des hymnes, des récits, des instructions, des documents juridiques, des lettres, des listes administratives et des textes funéraires. Les textes littéraires ne doivent pas être considérés comme des comptes rendus directs de la vie quotidienne. Ils possèdent des conventions, des objectifs et des contextes de composition propres. Les documents administratifs, quant à eux, peuvent éclairer la gestion des ressources, mais ils ne décrivent pas toujours l’ensemble de la société.',
+          'Les Égyptiens ont développé des connaissances pratiques en mathématiques, en médecine, en observation du ciel et en mesure des terres. Les besoins administratifs et les activités artisanales favorisaient notamment le calcul des quantités, des surfaces et des volumes. Des papyrus médicaux conservés présentent des observations, des diagnostics et des traitements. Il faut cependant éviter d’attribuer à tous les Égyptiens un savoir uniforme : les connaissances variaient selon les spécialistes, les époques et les domaines étudiés.',
+          'La pierre de Rosette joue un rôle majeur dans le déchiffrement moderne des hiéroglyphes. Elle porte un décret de 196 av. J.-C. présenté en trois versions : en écriture hiéroglyphique, en démotique et en grec ancien. La présence du grec, que les chercheurs pouvaient lire, permet de comparer les versions. Jean-François Champollion publie une avancée décisive dans le déchiffrement en 1822. Ce résultat repose aussi sur des travaux antérieurs et sur l’étude d’autres inscriptions : la pierre de Rosette n’a pas, à elle seule, livré instantanément toutes les règles de l’écriture.',
+          'Le déchiffrement a transformé l’étude de l’Égypte antique. Les chercheurs peuvent désormais lire de nombreux textes anciens et comparer les informations écrites avec les objets et les monuments. Il reste néanmoins des difficultés d’interprétation, car les mots, les expressions, les institutions et les croyances doivent être replacés dans leur contexte historique. La traduction d’un texte ne suffit pas toujours à établir le sens exact d’un passage ou l’intention de son auteur.'
+        ],
+        example: {
+          statement: 'La pierre de Rosette date de 196 av. J.-C. et Champollion annonce une avancée majeure dans le déchiffrement des hiéroglyphes en 1822 apr. J.-C. Combien d’années séparent ces deux repères en tenant compte de l’absence d’année zéro ?',
+          calculation: '196 + 1822 - 1 = 2017',
+          answer: 'Les deux repères sont séparés de 2017 ans. Le calcul tient compte du passage direct de 1 av. J.-C. à 1 apr. J.-C.'
+        },
+        exercise: {
+          question: 'Explique comment l’écriture a contribué au fonctionnement de la civilisation égyptienne et pourquoi le déchiffrement des hiéroglyphes a transformé son étude moderne.',
+          answer: 'L’écriture permettait notamment d’enregistrer des ressources, de rédiger des documents, de transmettre des textes et de réaliser des inscriptions monumentales. Le déchiffrement a rendu accessibles de nombreuses sources anciennes, qui peuvent être comparées aux vestiges archéologiques pour mieux comprendre les institutions, les croyances et la vie quotidienne.'
+        },
+        exercises: [
+          {
+            question: 'À quelle période remontent les premières attestations de l’écriture égyptienne ?',
+            answer: 'À la fin du IVe millénaire av. J.-C.'
+          },
+          {
+            question: 'Quels types de signes peuvent apparaître dans l’écriture hiéroglyphique ?',
+            answer: 'Des signes phonétiques, des signes représentant des mots et des déterminatifs.'
+          },
+          {
+            question: 'Qu’est-ce que le hiératique ?',
+            answer: 'Une écriture cursive apparentée aux hiéroglyphes, utilisée notamment pour des documents manuscrits.'
+          },
+          {
+            question: 'Sur quels supports les Égyptiens écrivaient-ils ?',
+            answer: 'Entre autres sur la pierre, le papyrus et des fragments de céramique ou de pierre appelés ostraca.'
+          },
+          {
+            question: 'Pourquoi les scribes occupaient-ils une place importante dans les institutions ?',
+            answer: 'Leurs compétences permettaient de rédiger des textes, de tenir des comptes et d’enregistrer des informations utiles à l’administration et à d’autres activités.'
+          },
+          {
+            question: 'Pourquoi la pierre de Rosette a-t-elle été déterminante ?',
+            answer: 'Elle présente un décret en hiéroglyphes, en démotique et en grec ancien, ce qui a permis de comparer les versions et de progresser dans le déchiffrement.'
+          },
+          {
+            question: 'Quel chercheur est associé à une avancée majeure du déchiffrement en 1822 ?',
+            answer: 'Jean-François Champollion.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Egyptian Hieroglyphs', url: 'https://www.worldhistory.org/Egyptian_Hieroglyphs/' },
+          { title: 'World History Encyclopedia — Rosetta Stone', url: 'https://www.worldhistory.org/Rosetta_Stone/' },
+          { title: 'World History Encyclopedia — Writing in Ancient Egypt', url: 'https://www.worldhistory.org/collection/245/writing-in-ancient-egypt/' },
+          { title: 'The British Museum — The Rosetta Stone', url: 'https://www.britishmuseum.org/collection/egypt/rosetta-stone' }
+        ]
+      }
+    }
+  ]
+}, / FIN BRANCHE 5
 ];
 
 // Adaptation au catalogue générique : regroupe les leçons par branche.
