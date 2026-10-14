@@ -1431,6 +1431,7 @@ window.courseCatalog = [
       }
     }
   ]
-}, / FIN BRANCHE 5
+}, // FIN BRANCHE 5
 ];
+
 
