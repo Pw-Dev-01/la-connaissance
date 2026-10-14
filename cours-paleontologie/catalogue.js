@@ -39,8 +39,13 @@ catalogueStyle.textContent = `
   .branch-card-count { font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .65; }
   .programme-section { scroll-margin-top: 1rem; }
   .programme-section-heading { border-top: 3px solid var(--accent, #ef7455); padding-top: 1rem; }
-  .programme-section-heading .branch-number { display: inline-block; margin-right: .6rem;
-    font-size: .8em; letter-spacing: .1em; color: var(--accent, #ef7455); }
+  .programme-section-heading h2 { margin: 0; line-height: 1.15; }
+  .programme-section-heading h2 .branch-number { display: block; margin: 0 0 .45rem;
+    font-family: inherit; font-size: .85rem; font-weight: 700; letter-spacing: .14em;
+    text-transform: none; font-style: normal; color: var(--accent, #ef7455); }
+  .programme-section-heading h2 .branch-name { display: block;
+    font-size: clamp(1.7rem, 6.5vw, 2.25rem); font-weight: 400; line-height: 1.15;
+    letter-spacing: normal; text-transform: none; font-style: normal; color: #17211b; }
 `;
 document.head.append(catalogueStyle);
 
