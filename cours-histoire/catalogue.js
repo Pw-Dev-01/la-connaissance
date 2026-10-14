@@ -6,6 +6,7 @@
 // Une entrée peut être un « cours approfondi » rendu par une page dédiée : elle
 // utilise alors « href » (la page) et « sections » (ses ancres) au lieu de
 // « chapters ». Ces sections sont comptées et numérotées comme les chapitres.
+
 const courseCatalog = (window.courseCatalog || []).filter(Boolean);
 if (!courseCatalog.length) console.error('catalogue.js : window.courseCatalog est vide ou absent. Le fichier data est-il chargé avant catalogue.js ?');
 
@@ -46,6 +47,11 @@ catalogueStyle.textContent = `
   .programme-section-heading h2 .branch-name { display: block;
     font-size: clamp(1.7rem, 6.5vw, 2.25rem); font-weight: 400; line-height: 1.15;
     letter-spacing: normal; text-transform: none; font-style: normal; color: #17211b; }
+
+  /* ⭐ Correction : rendre visible le NOUVEAU lien ajouté dans cours.html */
+  .topbar .edition.catalogue-back + .edition.catalogue-back {
+    margin-left: 1rem;
+  }
 `;
 document.head.append(catalogueStyle);
 
@@ -53,8 +59,7 @@ function chapterCount(branch) {
   return (branch.chapters || branch.sections || []).length;
 }
 
-// Bandeau « Les branches » : un conteneur #branch-overview peut exister dans la page ;
-// sinon il est créé juste avant la liste des sections.
+// Bandeau « Les branches »
 if (programmeSections && courseCatalog.length) {
   let overview = document.querySelector('#branch-overview');
   if (!overview) {
