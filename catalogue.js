@@ -151,4 +151,4 @@ if (levelNavigation && programmeSections) {
     { rootMargin: '-18% 0px -68% 0px' }
   );
   programmeSections.querySelectorAll('.programme-section').forEach((section) => sectionObserver.observe(section));
-}}
+}})();
