@@ -9,7 +9,6 @@
 
 (function () {
 const courseCatalog = (window.courseCatalog || []).filter(Boolean);
-const courseCatalog = (window.courseCatalog || []).filter(Boolean);
 if (!courseCatalog.length) console.error('catalogue.js : window.courseCatalog est vide ou absent. Le fichier data est-il chargé avant catalogue.js ?');
 
 const levelNavigation = document.querySelector('#catalogue-levels');
