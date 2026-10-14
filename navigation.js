@@ -1,24 +1,28 @@
-function afficherNavigation(urlPremierCours) {
-const conteneur = document.getElementById("topbar-links");
-if (!conteneur) return;
-
-const liens = [
-{
-texte: "Accueil général ↗",
-url: "/index.html"
-},
-{
-texte: "Accueil cours ↗",
-url: "../index.html"
-},
+const NAVIGATION_LIENS = [
+  {
+    texte: "Accueil général ↗",
+    cle: "homeUrl"
+  },
+  {
+    texte: "Accueil cours ↗",
+    cle: "courseHomeUrl"
+  }
 ];
 
-conteneur.replaceChildren();
+function afficherNavigation() {
+  document.querySelectorAll("[data-navigation]").forEach((conteneur) => {
+    conteneur.replaceChildren();
 
-liens.forEach(({ texte, url }) => {
-const lien = document.createElement("a");
-lien.textContent = texte;
-lien.href = url;
-conteneur.appendChild(lien);
-});
+    NAVIGATION_LIENS.forEach(({ texte, cle }) => {
+      const url = conteneur.dataset[cle];
+      if (!url) return;
+
+      const lien = document.createElement("a");
+      lien.textContent = texte;
+      lien.href = url;
+      conteneur.appendChild(lien);
+    });
+  });
 }
+
+document.addEventListener("DOMContentLoaded", afficherNavigation);
