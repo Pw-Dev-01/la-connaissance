@@ -1,39 +1,69 @@
+
 <!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f4f5ed">
-    <meta name="description" content="Leçon d’histoire avec notions, exemple chronologique guidé, exercices corrigés et sources.">
+
+    <meta
+      name="description"
+      content="Leçon d’histoire avec notions, exemple chronologique guidé, exercices corrigés et sources."
+    >
+
     <title>Cours d’histoire</title>
-    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
-    <script src="histoire-data.js" defer></script>
+
+    <link rel="stylesheet" href="../styles.css">
+
+    <script src="./histoire-data.js" defer></script>
     <script src="../cours.js" defer></script>
+    <script src="../navigation.js" defer></script>
   </head>
+
   <body data-course-label="Cours d’histoire">
     <header class="topbar">
-  <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours d’histoire">
-    <span class="wordmark-mark" aria-hidden="true">H</span>
-    <span>LE COURS D’HISTOIRE</span>
-  </a>
 
-  <a class="edition catalogue-back" href="index.html">Toutes les branches ↗</a>
-  <a class="edition catalogue-back" href="../index.html">Catalogue général ↗</a>
-</header>
+      <a
+        class="wordmark"
+        href="index.html"
+        aria-label="Retour au catalogue des cours d’histoire"
+      >
+        <span class="wordmark-mark" aria-hidden="true">H</span>
+        <span>LE COURS D’HISTOIRE</span>
+      </a>
+
+      <nav
+        class="topbar-links"
+        data-navigation
+        aria-label="Navigation secondaire"
+      ></nav>
+
+    </header>
 
     <div class="reading-track" aria-hidden="true">
       <span id="reading-progress"></span>
     </div>
 
     <main class="lesson-layout">
-      <aside class="course-sidebar" aria-label="Navigation de la branche">
+      <aside
+        class="course-sidebar"
+        aria-label="Navigation de la branche"
+      >
         <p class="sidebar-label">
           <a id="lesson-level-label" href="index.html">HISTOIRE</a>
         </p>
-        <nav class="chapter-nav" id="lesson-chapter-nav"></nav>
+
+        <nav
+          class="chapter-nav"
+          id="lesson-chapter-nav"
+        ></nav>
+
         <div class="sidebar-note">
           <span class="note-mark" aria-hidden="true">H</span>
-          <p>Choisis un autre chapitre de cette branche ou retourne au catalogue général.</p>
+          <p>
+            Choisis un autre chapitre de cette branche ou retourne
+            au catalogue général.
+          </p>
         </div>
       </aside>
 
@@ -43,8 +73,10 @@
             <span class="status-dot" aria-hidden="true"></span>
             <span id="lesson-eyebrow">FICHE D’HISTOIRE</span>
           </p>
+
           <h1 id="lesson-title">Cours d’histoire</h1>
           <p class="course-intro" id="lesson-summary"></p>
+
           <div class="course-meta">
             <span id="lesson-field"></span>
             <span id="lesson-level"></span>
