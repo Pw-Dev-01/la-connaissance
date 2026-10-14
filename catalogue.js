@@ -68,7 +68,6 @@ catalogueStyle.textContent = `
   margin-top: 1.4rem;        /* espace vertical entre les deux liens */
   right: 0;                  /* toujours aligné à droite */
 }
-`;
 
 `;
 document.head.append(catalogueStyle);
