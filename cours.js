@@ -134,7 +134,7 @@
 
     .topbar .edition.catalogue-back {
       position: absolute;
-      top: 0;
+      top: 5px;
       right: 0;
       display: block;
       margin: 0;
@@ -145,7 +145,7 @@
 
     /* Deuxième lien : placé sous le premier. */
     .topbar .edition.catalogue-back + .edition.catalogue-back {
-      top: 1.4rem;
+      top: calc(1.4rem + 5px);
       right: 0;
       margin: 0;
     }
