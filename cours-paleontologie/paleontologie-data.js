@@ -130,10 +130,11 @@ window.paleontologyCatalog = [
 
 {
   id: 'outils-et-methodes',
+  branch:'outils',
+  number:'01',
   title: 'Outils et méthodes',
   note: 'Du terrain au laboratoire : découvrir, préparer, observer et documenter les fossiles.',
-  chapters: [
-    {
+  chapter: [
       id: 'nouveaux-outils-de-mesure',
       title: 'Les nouveaux outils d’étude des fossiles',
       field: 'Paléontologie · préparation, imagerie et documentation',
