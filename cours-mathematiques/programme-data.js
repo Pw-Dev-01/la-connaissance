@@ -16,38 +16,6 @@ window.courseCatalog = [
       { id: 'premiere-geometrie-reperee', title: 'Géométrie repérée', field: 'Géométrie', summary: 'Vecteur normal à une droite, équation de cercle et projection orthogonale.', lesson: { sections: ['Une équation cartésienne de droite s’écrit ax + by + c = 0. Le vecteur n = (a ; b) est normal à la droite : il lui est perpendiculaire.', 'Un cercle de centre Ω(h ; k) et de rayon r regroupe les points M(x ; y) dont la distance à Ω vaut r. La formule de distance donne directement son équation.'], formula: { label: 'ÉQUATIONS REPÉRÉES', text: 'Droite : ax + by + c = 0  |  Cercle : (x − h)² + (y − k)² = r²' }, example: { statement: 'Écrire l’équation du cercle de centre Ω(1 ; −2) et de rayon 3.', calculation: 'On remplace h par 1, k par −2 et r par 3 dans la formule du cercle.', answer: '(x − 1)² + (y + 2)² = 9.' }, exercise: { question: 'Donner un vecteur normal à la droite 2x − 3y + 5 = 0.', answer: 'Les coefficients de x et y donnent le vecteur normal n = (2 ; −3).' } } },
       { id: 'premiere-probabilites-conditionnelles', title: 'Probabilités conditionnelles et indépendance', field: 'Probabilités', summary: 'Conditionnement, indépendance, formule des probabilités totales et répétition d’épreuves.', lesson: { sections: ['La probabilité de B sachant A se note P_A(B). Elle décrit la probabilité de B lorsqu’on sait déjà que A est réalisé. Dans un arbre, on multiplie les probabilités le long d’une branche.', 'Deux événements A et B sont indépendants si le fait de connaître la réalisation de l’un ne change pas la probabilité de l’autre. Un arbre pondéré aide à organiser les cas et à totaliser les probabilités.'], formula: { label: 'CONDITIONNEMENT, INDÉPENDANCE ET TOTALES', text: 'P_A(B) = P(A ∩ B) / P(A)  |  Indépendance : P(A ∩ B) = P(A)P(B)  |  P(B) = P(A)P_A(B) + P(non A)P_non A(B)' }, example: { statement: 'Une usine produit 60 % des pièces sur A avec 2 % de défauts, et le reste sur B avec 5 % de défauts. Quelle est la proportion totale de défauts ?', calculation: 'P(D) = 0,60 × 0,02 + 0,40 × 0,05 = 0,012 + 0,020.', answer: '3,2 % des pièces sont défectueuses.' }, exercise: { question: 'Avec ces données, calculer la probabilité qu’une pièce défectueuse vienne de A.', answer: 'P(A sachant D) = P(A ∩ D)/P(D) = 0,012/0,032 = 0,375, soit 37,5 %.' } } },
 
-{
-  id: 'premiere-derivees',
-  title: 'Les dérivées',
-  field: 'Analyse',
-  summary: 'Taux de variation, nombre dérivé, tangente, formules de dérivation, étude du signe de f\' et applications aux extremums.',
-  lesson: {
-    sections: [
-      "La dérivée d’une fonction f en un point a mesure la rapidité avec laquelle f varie autour de ce point. Elle correspond à la pente de la tangente à la courbe représentant f.",
-      "Le taux de variation entre a et a + h est [f(a + h) − f(a)] / h. Lorsque h tend vers 0, si ce quotient se stabilise vers un nombre réel, ce nombre est le nombre dérivé f'(a).",
-      "Interprétation géométrique : la tangente en a est la droite qui approche le mieux la courbe localement. Elle passe par (a ; f(a)) et a pour coefficient directeur f'(a).",
-      "Les fonctions usuelles possèdent des dérivées de référence : constante → 0 ; x → 1 ; xⁿ → n xⁿ⁻¹ ; 1/x → −1/x² ; √x → 1/(2√x). Les règles de somme, produit et quotient permettent de dériver des expressions plus complexes.",
-      "Le signe de f' permet d’étudier les variations : f' > 0 ⇒ f croît ; f' < 0 ⇒ f décroît ; f' = 0 ⇒ point stationnaire. Un extremum apparaît lorsque le signe de f' change.",
-      "Une dérivée nulle ne garantit pas un extremum : il faut analyser le signe de f' avant et après le point. Un changement de signe de − à + indique un minimum ; de + à − un maximum."
-    ],
-
-    formula: {
-      label: 'DÉRIVÉE ET TANGENTE',
-      text: "f'(a) = lim_{h→0} [f(a + h) − f(a)] / h   |   Tangente : y = f'(a)(x − a) + f(a)"
-    },
-
-    example: {
-      statement: "Étudier f(x) = x² − 4x + 1 : dérivée, variations et extremum.",
-      calculation: "La dérivée vaut f'(x) = 2x − 4 = 2(x − 2). Elle est négative si x < 2, nulle en 2, positive si x > 2. La fonction décroît jusqu’à 2 puis croît. Le minimum est atteint en x = 2. On calcule f(2) = 4 − 8 + 1 = −3.",
-      answer: "Minimum : −3 atteint pour x = 2. La fonction décroît sur (−∞, 2) et croît sur (2, +∞)."
-    },
-
-    exercise: {
-      question: "Dériver g(x) = (x² + 1)(2x − 3) et étudier ses variations.",
-      answer: "Avec u = x² + 1 et v = 2x − 3, on a u' = 2x et v' = 2. Donc g'(x) = 2x(2x − 3) + 2(x² + 1) = 6x² − 6x + 2. Le signe de g' dépend du trinôme 6x² − 6x + 2, dont le discriminant est Δ = (−6)² − 4×6×2 = 36 − 48 = −12 < 0. Le trinôme est toujours positif : g est strictement croissante sur ℝ."
-    }
-  }
-},
       { id: 'premiere-variables-aleatoires', title: 'Variables aléatoires réelles', field: 'Probabilités', summary: 'Loi, espérance, variance, écart-type et interprétation de ces indicateurs.', lesson: { sections: ['Une variable aléatoire associe un nombre à chaque issue d’une expérience. Sa loi donne les valeurs possibles et la probabilité de chacune ; la somme des probabilités vaut 1.', 'L’espérance représente une moyenne théorique à long terme. La variance et l’écart-type mesurent la dispersion autour de cette moyenne.'], formula: { label: 'ESPÉRANCE ET VARIANCE', text: 'E(X) = Σ xᵢpᵢ  |  V(X) = Σ (xᵢ − E(X))²pᵢ  |  σ(X) = √V(X)' }, example: { statement: 'On lance un dé équilibré à six faces. Calculer son espérance.', calculation: 'Chaque valeur de 1 à 6 a la probabilité 1/6 : E(X) = (1 + 2 + 3 + 4 + 5 + 6)/6.', answer: 'E(X) = 3,5.' }, exercise: { question: 'Une variable vaut 0 avec probabilité 0,7 et 10 avec probabilité 0,3. Calculer son espérance.', answer: 'E(X) = 0 × 0,7 + 10 × 0,3 = 3.' } } },
       { id: 'premiere-echantillonnage', title: 'Échantillonnage et simulation', field: 'Probabilités', summary: 'Simuler une expérience, étudier une fréquence et interpréter la fluctuation d’échantillonnage.', lesson: { sections: ['Une fréquence observée dans un échantillon varie d’un échantillon à l’autre, même si la probabilité théorique p reste la même. Plus la taille n de l’échantillon augmente, plus la fréquence tend à se rapprocher de p.', 'Une simulation informatique répète l’expérience un grand nombre de fois. Elle aide à observer cette fluctuation, mais ne remplace pas une justification mathématique.'], formula: { label: 'ORDRE DE GRANDEUR DE LA FLUCTUATION', text: 'Écart-type de la fréquence : σ = √(p(1 − p) / n)' }, example: { statement: 'Une pièce équilibrée est lancée 100 fois. Quelle est l’échelle de variation attendue de la fréquence de piles ?', calculation: 'p = 0,5 et n = 100, donc σ = √(0,5 × 0,5 / 100) = 0,05. Deux écarts-types valent environ 0,10.', answer: 'Une fréquence proche de 0,5, souvent entre 0,4 et 0,6, est cohérente avec ce modèle.' }, exercise: { question: 'Pour p = 0,4 et n = 100, calculer l’écart-type de la fréquence.', answer: 'σ = √(0,4 × 0,6 / 100) ≈ 0,049.' } } }
     ]
