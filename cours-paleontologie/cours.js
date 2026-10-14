@@ -1,7 +1,11 @@
 (function () {
-  // ⚠️ Seule ligne à adapter selon le cours : 
-  const DISCIPLINE = 'paléonthologie';
-  const SUFFIX = `Cours de ${DISCIPLINE}`;
+  // Fichier COMMUN à toutes les disciplines : ne plus le modifier.
+  // La discipline vient du data (window.courseDiscipline). À défaut, on reprend
+  // le suffixe déjà présent dans le <title> de la page (« … · Cours de géologie »).
+  const baseTitle = document.title || '';
+  const SUFFIX = window.courseDiscipline
+    ? `Cours de ${window.courseDiscipline}`
+    : (baseTitle.includes('·') ? baseTitle.split('·').pop().trim() : 'Cours');
 
   const $ = (sel) => document.querySelector(sel);
   const setText = (sel, value) => { const node = $(sel); if (node) node.textContent = value; };
@@ -14,11 +18,7 @@
   }
 
   // ---------------------------------------------------------------------------
-  // Texte « riche » : rend correctement
-  //  - les vecteurs  (lettre + U+20D7, ex. F⃗) : flèche dessinée en CSS ;
-  //  - les indices Unicode (ₑₓ, ₘ, ₚ, ₕ, ₁, ₂…) : vraies balises <sub> ;
-  //  - le faux « c » en indice (U+A700, ex. E꜀) : <sub>c</sub>.
-  // Les polices du site n'ont pas ces caractères : ils s'affichaient en carrés.
+  // Texte « riche » : vecteurs (lettre + U+20D7), indices Unicode, faux « c » (U+A700).
   // ---------------------------------------------------------------------------
   const RICH = /(\S)\u20D7|([\u2080-\u209C\u1D62]+)|\uA700/g;
 
@@ -41,7 +41,6 @@
     return addRich(el(tag, className), String(text));
   }
 
-  // Style des vecteurs et indices, injecté ici : pas besoin de modifier styles.css.
   const style = document.createElement('style');
   style.textContent = `
     .vec { position: relative; display: inline-block; line-height: 1; padding-top: .28em; }
@@ -49,6 +48,10 @@
       transform: translateX(-50%); font-size: .62em; line-height: 1; font-style: normal; }
     .formula-block sub, .lesson-section sub { font-size: .72em; line-height: 0; }
     .book-fiche p { margin: .55rem 0; }
+    .lesson-html p { margin: .8rem 0; }
+    .lesson-html table { width: 100%; border-collapse: collapse; font-size: .9em; display: block; overflow-x: auto; }
+    .lesson-html th, .lesson-html td { border: 1px solid rgba(0,0,0,.15); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+    .lesson-html th { background: rgba(0,0,0,.05); }
   `;
   document.head.append(style);
 
@@ -59,51 +62,43 @@
     return section;
   }
 
-  // La clé « mathML » des données est souvent un simple identifiant
-  // (ex. 'newton-second-law') et non du balisage : on ne l'affiche que si c'est du MathML.
   function isMarkup(value) {
     return typeof value === 'string' && value.trim().startsWith('<');
   }
 
   const id = new URLSearchParams(location.search).get('id');
-  const catalog = window.courseCatalog || [];
+  const catalog = (window.courseCatalog || []).filter(Boolean);
 
   // 1) Chapitre d'une branche (prioritaire)
   let course = null;
   let branch = null;
   let chapter = null;
-  
-for (const item of catalog) {
-  if (!item) continue;
 
-  const found = (item.chapters || []).find(
-    (ch) => ch && ch.id === id
-  );
-
-  if (found) {
-    branch = item;
-    chapter = found;
-    break;
+  for (const item of catalog) {
+    const found = (item.chapters || []).find((ch) => ch && ch.id === id);
+    if (found) {
+      branch = item;
+      chapter = found;
+      break;
+    }
   }
-}
-
 
   // 2) Sinon : branche / cours simple
   if (!chapter) course = catalog.find((c) => c.id === id) || null;
 
   // 3) Cours approfondi via ancre
   if (!course && !chapter) {
-    course = catalog.find((item) => (item.sections || []).some((s) => s.anchor === id));
+    course = catalog.find((item) => (item.sections || []).some((s) => s.anchor === id)) || null;
   }
 
   // 4) Sommaire d'une branche / d'un cours approfondi
-  if (!chapter && course && course.sections) {
+  if (!chapter && course && (course.sections || course.chapters)) {
     document.title = `${course.title} · ${SUFFIX}`;
     setText('#lesson-title', course.title);
     setText('#lesson-summary', course.note || course.summary || '');
     setText('#lesson-eyebrow', course.title.toUpperCase());
-    setText('#lesson-field', 'COURS APPROFONDI');
-    setText('#lesson-level', 'APPROFONDISSEMENT');
+    setText('#lesson-field', course.sections ? 'COURS APPROFONDI' : 'BRANCHE');
+    setText('#lesson-level', course.sections ? 'APPROFONDISSEMENT' : 'SOMMAIRE');
 
     const container = $('#chapter-lesson');
     const intro = makeSection(1, 'SOMMAIRE', 'Chapitres du cours');
@@ -139,7 +134,7 @@ for (const item of catalog) {
 
     const sideNav = $('#lesson-chapter-nav');
     if (sideNav) {
-      branch.chapters.forEach((sibling) => {
+      (branch.chapters || []).forEach((sibling) => {
         const a = el('a', '', sibling.title);
         a.href = `cours.html?id=${encodeURIComponent(sibling.id)}`;
         if (sibling.id === chapter.id) {
@@ -153,7 +148,7 @@ for (const item of catalog) {
     const container = $('#chapter-lesson');
     let n = 0;
 
-    // Fiche bibliographique : « Libellé : valeur », libellé en gras, même ligne.
+    // Fiche bibliographique : [[libellé, valeur], …]
     if (lesson.fiche && lesson.fiche.length) {
       const s = makeSection(++n, 'FICHE', 'Fiche de l’ouvrage');
       const fiche = el('div', 'book-fiche');
@@ -166,10 +161,19 @@ for (const item of catalog) {
       container.append(s);
     }
 
-    // Notions
+    // Contenu HTML : lesson.content (+ lesson.heading)
+    if (typeof lesson.content === 'string' && lesson.content.trim()) {
+      const s = makeSection(++n, 'COURS', lesson.heading || 'Les notions essentielles');
+      const body = el('div', 'lesson-html');
+      body.innerHTML = lesson.content;
+      s.append(body);
+      container.append(s);
+    }
+
+    // Notions en paragraphes : lesson.sections
     if (lesson.sections && lesson.sections.length) {
       const s = makeSection(++n, lesson.fiche ? 'RÉSUMÉ' : 'COMPRENDRE',
-        lesson.fiche ? 'De quoi parle ce livre' : 'Les notions essentielles');
+        lesson.fiche ? 'De quoi parle ce livre' : (lesson.heading || 'Les notions essentielles'));
       lesson.sections.forEach((p) => s.append(rich('p', '', p)));
       container.append(s);
     }
@@ -222,7 +226,7 @@ for (const item of catalog) {
       container.append(s);
     }
 
-    // Exercices : « exercises » (liste) si présent, sinon « exercise » (un seul).
+    // Exercices : « exercises » (liste) sinon « exercise » (un seul)
     const exercises = (lesson.exercises && lesson.exercises.length)
       ? lesson.exercises
       : (lesson.exercise ? [lesson.exercise] : []);
