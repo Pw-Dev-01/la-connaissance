@@ -49,11 +49,18 @@ catalogueStyle.textContent = `
     font-size: clamp(1.7rem, 6.5vw, 2.25rem); font-weight: 400; line-height: 1.15;
     letter-spacing: normal; text-transform: none; font-style: normal; color: #17211b; }
 
-/* Correction : rendre visible le nouveau lien en haut à droite */
-  .topbar .edition.catalogue-back + .edition.catalogue-back {
-    position: relative;
-    margin-left: 1rem;
-  }
+/* Correction : lien en minuscules et bien à droite */
+.topbar .edition.catalogue-back {
+  text-transform: lowercase;   /* met le texte en minuscules */
+  position: absolute;
+  right: 0;                    /* collé à droite */
+  top: 0;
+}
+
+/* deuxième lien, on le décale proprement */
+.topbar .edition.catalogue-back + .edition.catalogue-back {
+  right: 7.5rem;               /* espace pour le second lien */
+}
 `;
 
 `;
