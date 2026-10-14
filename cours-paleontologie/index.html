@@ -13,6 +13,32 @@
         color: #ad482f;
       }
     </style>
+
+<script>
+(function () {
+  var lines = [];
+  function show() {
+    var box = document.getElementById('diag') || document.createElement('pre');
+    box.id = 'diag';
+    box.style.cssText = 'position:fixed;left:0;right:0;bottom:0;margin:0;padding:10px;background:#000;color:#0f0;font:12px/1.4 monospace;white-space:pre-wrap;z-index:99999';
+    box.textContent = lines.join('\n');
+    if (document.body) document.body.append(box);
+  }
+  window.addEventListener('error', function (e) {
+    var t = e.target;
+    if (t && t.src) lines.push('NON CHARGÉ : ' + t.src);
+    else lines.push('ERREUR JS : ' + e.message + ' (' + (e.filename || '').split('/').pop() + ':' + e.lineno + ')');
+    show();
+  }, true);
+  window.addEventListener('load', function () {
+    lines.push('courseCatalog : ' + (window.courseCatalog ? window.courseCatalog.length + ' branches' : 'ABSENT'));
+    lines.push('ancien data (paleontologyCatalog) : ' + (window.paleontologyCatalog ? 'OUI' : 'non'));
+    lines.push('compteur : ' + (document.getElementById('domain-statistics') || {}).textContent);
+    show();
+  });
+})();
+</script>
+
     <script src="paleontologie-data.js" defer></script>
     <script src="../catalogue.js" defer></script>
   </head>
