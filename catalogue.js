@@ -31,7 +31,7 @@ catalogueStyle.textContent = `
   .branch-overview { margin: 0 0 2.5rem; }
   .branch-overview-title { margin: 0 0 .9rem; font-size: .78rem; font-weight: 700;
     letter-spacing: .14em; text-transform: uppercase; opacity: .7; }
-  .branch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .75rem; }
+  .branch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem; }
   .branch-card { display: flex; flex-direction: column; gap: .4rem; padding: 1rem 1.05rem;
     border: 1.5px solid rgba(23, 33, 27, .22); background: rgba(255, 255, 255, .55);
     color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
