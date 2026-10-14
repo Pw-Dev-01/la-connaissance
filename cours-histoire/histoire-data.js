@@ -1434,22 +1434,3 @@ window.courseCatalog = [
 }, / FIN BRANCHE 5
 ];
 
-// Adaptation au catalogue générique : regroupe les leçons par branche.
-(() => {
-  const BRANCHES = {
-    'archives': ['Les archives fossiles', 'Ce que sont les fossiles, comment ils se forment et ce que le registre fossile permet de conclure.'],
-    'terrain-et-temps': ['Terrain et temps', 'Documenter les découvertes, ordonner les couches et situer les fossiles dans le temps.'],
-    'histoire-vivant': ['Histoire du vivant', 'Évolution, milieux anciens, biodiversité et extinctions.'],
-    'outils': ['Outils et méthodes', 'Du terrain au laboratoire : découvrir, préparer, observer et documenter les fossiles.'],
-    'grands-livres': ['Les grands livres', 'Dix ouvrages qui ont marqué la paléontologie.']
-  };
-
-  window.courseCatalog = Object.entries(BRANCHES).map(([branchId, [title, note]]) => ({
-    id: branchId,
-    title,
-    note,
-    chapters: window.paleontologyCatalog
-      .filter((lesson) => lesson.branch === branchId)
-      .map(({ id, number, title, field, summary, lesson }) => ({ id, number, title, field, summary, lesson }))
-  }));
-})();
