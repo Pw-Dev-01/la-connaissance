@@ -48,6 +48,14 @@ catalogueStyle.textContent = `
   .programme-section-heading h2 .branch-name { display: block;
     font-size: clamp(1.7rem, 6.5vw, 2.25rem); font-weight: 400; line-height: 1.15;
     letter-spacing: normal; text-transform: none; font-style: normal; color: #17211b; }
+
+/* Correction : rendre visible le nouveau lien en haut à droite */
+  .topbar .edition.catalogue-back + .edition.catalogue-back {
+    position: relative;
+    margin-left: 1rem;
+  }
+`;
+
 `;
 document.head.append(catalogueStyle);
 
