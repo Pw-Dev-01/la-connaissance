@@ -1,41 +1,46 @@
-
 const NAVIGATION_LIENS = [
-  {
-    texte: "Accueil général ↗",
-    url: "/index.html"
-  },
-  {
-    texte: "Accueil cours ↗",
-    url: "discipline"
-  }
+{
+texte: "Accueil général ↗",
+url: "accueil-general"
+},
+{
+texte: "Accueil cours ↗",
+url: "discipline"
+}
 ];
 
 function afficherNavigation() {
-  const conteneurs = document.querySelectorAll("[data-navigation]");
+const conteneurs = document.querySelectorAll("[data-navigation]");
 
-  conteneurs.forEach((conteneur) => {
-    const chemin = window.location.pathname;
-    const segments = chemin.split("/").filter(Boolean);
+conteneurs.forEach((conteneur) => {
+const chemin = window.location.pathname;
+const segments = chemin.split("/").filter(Boolean);
 
-    // Le dossier de la discipline est le dossier parent
-    // de la page HTML courante.
-    const dossierDiscipline =
-      segments.length > 1 ? segments[segments.length - 2] : "";
+// Détecte la base du site, par exemple /la-connaissance/
+const baseSite = segments.length > 0
+  ? `/${segments[0]}/`
+  : "/";
 
-    conteneur.replaceChildren();
+// Détecte le dossier de la discipline
+const dossierDiscipline =
+  segments.length >= 2 ? segments[segments.length - 2] : "";
 
-    NAVIGATION_LIENS.forEach(({ texte, url }) => {
-      const lien = document.createElement("a");
+conteneur.replaceChildren();
 
-      lien.textContent = texte;
-      lien.href =
-        url === "discipline"
-          ? `/${dossierDiscipline}/index.html`
-          : url;
+NAVIGATION_LIENS.forEach(({ texte, url }) => {
+  const lien = document.createElement("a");
+  lien.textContent = texte;
 
-      conteneur.appendChild(lien);
-    });
-  });
+  if (url === "accueil-general") {
+    lien.href = `${baseSite}index.html`;
+  } else {
+    lien.href = `${baseSite}${dossierDiscipline}/index.html`;
+  }
+
+  conteneur.appendChild(lien);
+});
+
+});
 }
 
 document.addEventListener("DOMContentLoaded", afficherNavigation);
