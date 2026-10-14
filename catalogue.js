@@ -6,6 +6,9 @@
 // Une entrée peut être un « cours approfondi » rendu par une page dédiée : elle
 // utilise alors « href » (la page) et « sections » (ses ancres) au lieu de
 // « chapters ». Ces sections sont comptées et numérotées comme les chapitres.
+
+(function () {
+const courseCatalog = (window.courseCatalog || []).filter(Boolean);
 const courseCatalog = (window.courseCatalog || []).filter(Boolean);
 if (!courseCatalog.length) console.error('catalogue.js : window.courseCatalog est vide ou absent. Le fichier data est-il chargé avant catalogue.js ?');
 
@@ -149,4 +152,4 @@ if (levelNavigation && programmeSections) {
     { rootMargin: '-18% 0px -68% 0px' }
   );
   programmeSections.querySelectorAll('.programme-section').forEach((section) => sectionObserver.observe(section));
-}
+}}
