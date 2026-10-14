@@ -1,6 +1,6 @@
 (function () {
-  // ⚠️ Seule ligne à adapter selon le cours : 'histoire' ou 'géologie'.
-  const DISCIPLINE = 'histoire';
+  // ⚠️ Seule ligne à adapter selon le cours : 
+  const DISCIPLINE = 'paléonthologie';
   const SUFFIX = `Cours de ${DISCIPLINE}`;
 
   const $ = (sel) => document.querySelector(sel);
