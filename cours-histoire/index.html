@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="fr">
   <head>
@@ -12,71 +13,18 @@
 
     <title>Programmes · Cours d’histoire</title>
 
-    <link
-      rel="stylesheet"
-      href="../cours-mathematiques/styles.css"
-    >
+    <link rel="stylesheet" href="../styles.css">
 
     <style>
       .catalogue-levels a.is-current {
         border-left-color: var(--coral);
         color: #ad482f;
       }
-
-      /* Barre supérieure */
-      .topbar {
-        position: relative;
-      }
-
-      /* Deux liens empilés en haut à droite */
-      .topbar-links {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 0.4rem;
-        z-index: 2;
-      }
-
-      .topbar-links a {
-        color: var(--muted, #637168);
-        text-decoration: none;
-        font-size: 0.5rem;
-        font-weight: 700;
-        text-transform: lowercase;
-        letter-spacing: 0.04em;
-      }
-
-      .topbar-links a:hover,
-      .topbar-links a:focus-visible {
-        text-decoration: underline;
-      }
-
-      /* Réserve de la place pour les liens */
-      .topbar .domain-statistics {
-        margin-right: 12rem;
-      }
-
-      /* Adaptation aux petits écrans */
-      @media (max-width: 600px) {
-        .topbar-links {
-          position: static;
-          transform: none;
-          margin-left: auto;
-          padding-left: 0.5rem;
-        }
-
-        .topbar .domain-statistics {
-          display: none;
-        }
-      }
     </style>
 
     <script src="./histoire-data.js?v=6" defer></script>
     <script src="../catalogue.js" defer></script>
+    <script src="../navigation.js" defer></script>
   </head>
 
   <body>
@@ -92,12 +40,12 @@
       </a>
 
       <nav
-        class="topbar-links"
-        aria-label="Navigation secondaire"
-      >
-        <a href="../index.html">Accueil ↗</a>
-        <a href="cours.html?id=mesopotamie">Premier cours ↗</a>
-      </nav>
+  class="topbar-links"
+  data-navigation
+  data-home-url="../index.html"
+  data-course-home-url="index.html"
+  aria-label="Navigation secondaire"
+></nav>
 
       <span
         class="edition domain-statistics"
