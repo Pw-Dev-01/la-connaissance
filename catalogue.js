@@ -49,17 +49,24 @@ catalogueStyle.textContent = `
     font-size: clamp(1.7rem, 6.5vw, 2.25rem); font-weight: 400; line-height: 1.15;
     letter-spacing: normal; text-transform: none; font-style: normal; color: #17211b; }
 
-/* Correction : lien en minuscules et bien à droite */
-.topbar .edition.catalogue-back {
-  text-transform: lowercase;   /* met le texte en minuscules */
-  position: absolute;
-  right: 0;                    /* collé à droite */
-  top: 0;
+/* Correction : deux liens en colonne, alignés à droite */
+.topbar {
+  position: relative;
 }
 
-/* deuxième lien, on le décale proprement */
+/* Conteneur vertical pour les deux liens */
+.topbar .edition.catalogue-back {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: lowercase; /* met le texte en minuscules */
+  display: block;            /* force l'empilement vertical */
+}
+
+/* Le second lien passe en dessous du premier */
 .topbar .edition.catalogue-back + .edition.catalogue-back {
-  right: 7.5rem;               /* espace pour le second lien */
+  margin-top: 1.4rem;        /* espace vertical entre les deux liens */
+  right: 0;                  /* toujours aligné à droite */
 }
 `;
 
