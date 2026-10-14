@@ -38,7 +38,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p dist
-          cp index.html style.css portal.css portal.js catalogue.js cours.js navigation.js README.md dist/
+          cp index.html styles.css portal.css portal.js catalogue.js cours.js navigation.js README.md dist/
           cp -R cours-*/ dist/
 
       - name: Upload Pages artifact
