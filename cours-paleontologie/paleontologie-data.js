@@ -113,109 +113,35 @@ window.paleontologyCatalog = [
   },
 
 
-/*
- * BRANCHE : outils-et-methodes
- * Introduction :
- * La paléontologie mobilise des méthodes de terrain, de laboratoire
- * et d'imagerie pour découvrir, préparer, conserver et étudier les fossiles.
- * Les outils numériques complètent les méthodes traditionnelles :
- * la microtomographie permet d'examiner certaines structures internes,
- * tandis que la photogrammétrie et la numérisation 3D documentent
- * les surfaces et facilitent le partage des données.
- *
- * Sources de référence :
- * MNHN / CR2P, AMNH, Smithsonian National Museum of Natural History,
- * National Park Service.
- */
+/* BRANCHE OUTILS ET MÉTHODES
+   ============================================================ */
 
 {
-  id: 'outils-et-methodes',
-  branch:'outils',
-  number:'01',
-  title: 'Outils et méthodes',
-  note: 'Du terrain au laboratoire : découvrir, préparer, observer et documenter les fossiles.',
-  chapter: [{
-      id: 'nouveaux-outils-de-mesure',
-      title: 'Les nouveaux outils d’étude des fossiles',
-      field: 'Paléontologie · préparation, imagerie et documentation',
-      summary: 'Fouilles, préparation mécanique et chimique, microtomographie, photogrammétrie et modèles 3D : comprendre les méthodes utilisées pour étudier les fossiles.',
-      lesson: {
-        sections: [
-          'La découverte d’un fossile ne suffit pas à permettre son étude. Le spécimen doit être documenté, extrait avec précaution si nécessaire, puis préparé pour rendre ses caractères observables. Les fossiles sont fréquemment conservés dans une roche appelée gangue ou matrice. Au laboratoire, les spécialistes choisissent les techniques de dégagement en fonction de la nature du fossile, de la roche et des objectifs scientifiques. Le Centre de recherche en paléontologie de Paris, rattaché au MNHN, au CNRS et à Sorbonne Université, décrit notamment les techniques mécaniques, les traitements chimiques, la préparation des microfossiles et la réalisation de moulages. La préparation doit préserver autant que possible les informations anatomiques et les traces de conservation.',
-          'La préparation mécanique consiste à retirer progressivement la roche qui entoure le fossile à l’aide d’outils adaptés. Selon le spécimen, les spécialistes peuvent employer des aiguilles, des outils de précision, des micrograveurs ou des dispositifs d’abrasion. La préparation chimique repose sur des différences de comportement entre le fossile et sa matrice : elle n’est donc pas adaptée à tous les matériaux. Le choix d’une méthode exige de connaître les propriétés du spécimen et de la roche. Le Natural History Museum de Londres souligne que la préparation peut demander un travail prolongé et que des gestes mal adaptés risquent d’endommager le fossile. La préparation est une opération scientifique de conservation et d’observation, pas seulement une opération esthétique.',
-          'La microtomographie aux rayons X, souvent appelée micro-CT ou microtomographie X, permet d’obtenir des images de sections internes d’un objet sans devoir le découper systématiquement. Une série de projections radiographiques acquises sous différents angles est reconstruite informatiquement pour produire un volume numérique. Ce volume peut ensuite être exploré en coupes et servir à reconstruire certaines structures en trois dimensions. L’American Museum of Natural History décrit son intérêt pour l’étude de l’anatomie interne, notamment lorsque le dégagement mécanique risquerait d’endommager le spécimen. Cette technique ne fonctionne cependant pas aussi bien pour tous les fossiles : la géométrie, la composition des matériaux et le contraste entre le fossile et la roche influencent la qualité des images.',
-          'La photogrammétrie permet de reconstruire la surface tridimensionnelle d’un objet à partir de plusieurs photographies prises depuis des points de vue différents. Des logiciels repèrent des caractéristiques communes entre les images et estiment leur géométrie pour calculer un modèle 3D. Le National Park Service décrit l’utilisation de cette méthode pour documenter des os, des dents, des empreintes et d’autres traces fossiles. La qualité du modèle dépend notamment des photographies, de la couverture des surfaces, de l’éclairage, de la texture de l’objet et de l’échelle de référence. Un modèle photogrammétrique représente les surfaces effectivement documentées ; il ne révèle pas, à lui seul, les structures internes cachées dans la roche.',
-          'La numérisation 3D et l’impression 3D complètent ces méthodes. Un modèle numérique peut être utilisé pour visualiser un spécimen, effectuer certaines mesures, préparer une comparaison morphologique ou produire une réplique. Le modèle imprimé n’est toutefois pas le fossile original : il dépend des données d’acquisition, du traitement informatique et des capacités de l’imprimante. L’AMNH décrit l’emploi de modèles issus de scans de surface ou de microtomographies pour reproduire des formes fossiles et faciliter leur étude. Les répliques sont particulièrement utiles lorsque la manipulation de l’original doit être limitée. Il faut néanmoins distinguer les informations réellement enregistrées par le scan des éléments reconstitués ou interprétés lors du traitement.',
-          'La valeur scientifique d’un fossile dépend aussi des informations qui accompagnent le spécimen. Le lieu et les conditions de découverte, le niveau géologique lorsqu’il est connu, les photographies de terrain, les numéros d’inventaire et l’historique de préparation contribuent à sa traçabilité. Un modèle 3D ne remplace donc pas automatiquement les observations de terrain ni la documentation de la collection. Les méthodes doivent être choisies selon la question scientifique : dégager une structure anatomique, observer l’intérieur d’un objet, mesurer une surface ou conserver une trace numérique. Une étude rigoureuse indique les limites de la méthode, les transformations appliquées aux données et les incertitudes pertinentes.'
-        ],
-        formula: {
-          label: 'ÉCHELLE D’UNE IMAGE',
-          text: 'échelle = dimension sur l’image / dimension réelle'
-        },
-        equationDetails: [
-          {
-            title: 'Déterminer une dimension réelle à partir d’une image calibrée',
-            formula: 'dimension réelle = dimension mesurée sur l’image / échelle',
-            explanation: 'Lorsqu’une image possède une échelle connue et que les deux dimensions sont mesurées dans la même unité sur l’image, le rapport permet de retrouver la dimension réelle. Pour une photographie numérique, il faut connaître la calibration ou utiliser une échelle de référence présente dans des conditions de prise de vue appropriées.',
-            parameters: 'Dimension sur l’image : longueur mesurée dans l’image ; dimension réelle : longueur correspondante sur le spécimen ; échelle : rapport entre la dimension sur l’image et la dimension réelle.',
-            example: 'Exemple pédagogique : une structure mesure 30 mm sur une représentation dont l’échelle vaut 3. Sa dimension réelle est 30 / 3 = 10 mm.',
-            result: 'Une mesure sur image n’est exploitable quantitativement que si l’échelle et les conditions de mesure sont connues. Une image redimensionnée sans calibration peut rendre la mesure incorrecte.'
-          }
-        ],
-        exercises: [
-          {
-            question: 'Une structure fossile mesure 24 mm sur une image calibrée à l’échelle 4. Quelle est sa dimension réelle ?',
-            answer: 'Dimension réelle = 24 / 4 = 6 mm.'
-          },
-          {
-            question: 'Deux photographies montrent le même fossile, mais la seconde a été redimensionnée. Peut-on comparer directement les longueurs mesurées en pixels ?',
-            answer: 'Non. Il faut calibrer chaque image ou utiliser une référence d’échelle fiable. Le nombre de pixels ne correspond pas à une longueur réelle constante lorsque le grossissement ou le redimensionnement varie.'
-          },
-          {
-            question: 'Un fossile est enfermé dans une gangue et sa structure interne doit être étudiée sans le dégager entièrement. Quelle méthode d’imagerie peut être envisagée ?',
-            answer: 'La microtomographie aux rayons X peut être envisagée si les propriétés du fossile et de la matrice permettent d’obtenir un contraste suffisant. Son efficacité doit être évaluée pour le spécimen concerné.'
-          },
-          {
-            question: 'Quel est l’intérêt d’un modèle photogrammétrique d’une empreinte fossile ?',
-            answer: 'Il permet de documenter la géométrie de la surface, de réaliser certaines mesures et de partager une représentation numérique. Il ne révèle pas automatiquement les structures internes et sa précision dépend de l’acquisition et de l’échelle.'
-          }
-        ],
-        sources: [
-          {
-            title: 'MNHN / CNRS / Sorbonne Université — Dégagement, préparation et moulage',
-            url: 'https://paleo.mnhn.fr/fr/degagement-preparation-et-moulage-373'
-          },
-          {
-            title: 'MNHN / CR2P — Imagerie 3D',
-            url: 'https://paleo.mnhn.fr/en/node/375'
-          },
-          {
-            title: 'American Museum of Natural History — Digital Preparation',
-            url: 'https://www.amnh.org/research/paleontology/vertebrate/fossil-preparation/revealing/techniques/digital-preparation'
-          },
-          {
-            title: 'American Museum of Natural History — Fossil Preparation',
-            url: 'https://www.amnh.org/research/paleontology/vertebrate/fossil-preparation'
-          },
-          {
-            title: 'Natural History Museum — Fossil preparation',
-            url: 'https://www.nhm.ac.uk/discover/fossil-preparation.html'
-          },
-          {
-            title: 'Smithsonian National Museum of Natural History — Fossil Preparation from Field to Museum',
-            url: 'https://naturalhistory.si.edu/education/teaching-resources/paleontology/fossil-preparation-field-museum'
-          },
-          {
-            title: 'U.S. National Park Service — Photogrammetry: Fossils in 3D',
-            url: 'https://www.nps.gov/subjects/fossils/photogrammetry.htm'
-          }
-        ]
-      }
+    id: 'nouveaux-outils-de-mesure', branch: 'outils', number: '01', title: 'Les nouveaux outils d’étude des fossiles', field: 'Préparation, imagerie et documentation',
+    summary: 'Fouilles, préparation mécanique et chimique, microtomographie, photogrammétrie et modèles 3D : comprendre les méthodes utilisées pour étudier les fossiles.',
+    lesson: {
+      heading: 'Découvrir, préparer, observer et documenter',
+      content: `<p>La découverte d’un fossile ne suffit pas à permettre son étude. Le spécimen doit être documenté, extrait avec précaution si nécessaire, puis préparé pour rendre ses caractères observables. Les fossiles sont fréquemment conservés dans une roche appelée <strong>gangue</strong> ou <strong>matrice</strong>. Au laboratoire, les spécialistes choisissent les techniques de dégagement en fonction de la nature du fossile, de la roche et des objectifs scientifiques. Le Centre de recherche en paléontologie de Paris, rattaché au MNHN, au CNRS et à Sorbonne Université, décrit notamment les techniques mécaniques, les traitements chimiques, la préparation des microfossiles et la réalisation de moulages. La préparation doit préserver autant que possible les informations anatomiques et les traces de conservation.</p><p>La <strong>préparation mécanique</strong> consiste à retirer progressivement la roche qui entoure le fossile à l’aide d’outils adaptés. Selon le spécimen, les spécialistes peuvent employer des aiguilles, des outils de précision, des micrograveurs ou des dispositifs d’abrasion. La <strong>préparation chimique</strong> repose sur des différences de comportement entre le fossile et sa matrice : elle n’est donc pas adaptée à tous les matériaux. Le choix d’une méthode exige de connaître les propriétés du spécimen et de la roche. Le Natural History Museum de Londres souligne que la préparation peut demander un travail prolongé et que des gestes mal adaptés risquent d’endommager le fossile. La préparation est une opération scientifique de conservation et d’observation, pas seulement une opération esthétique.</p><p>La <strong>microtomographie aux rayons X</strong>, souvent appelée micro-CT, permet d’obtenir des images de sections internes d’un objet sans devoir le découper systématiquement. Une série de projections radiographiques acquises sous différents angles est reconstruite informatiquement pour produire un volume numérique. Ce volume peut ensuite être exploré en coupes et servir à reconstruire certaines structures en trois dimensions. L’American Museum of Natural History décrit son intérêt pour l’étude de l’anatomie interne, notamment lorsque le dégagement mécanique risquerait d’endommager le spécimen. Cette technique ne fonctionne cependant pas aussi bien pour tous les fossiles : la géométrie, la composition des matériaux et le contraste entre le fossile et la roche influencent la qualité des images.</p><p>La <strong>photogrammétrie</strong> permet de reconstruire la surface tridimensionnelle d’un objet à partir de plusieurs photographies prises depuis des points de vue différents. Des logiciels repèrent des caractéristiques communes entre les images et estiment leur géométrie pour calculer un modèle 3D. Le National Park Service décrit l’utilisation de cette méthode pour documenter des os, des dents, des empreintes et d’autres traces fossiles. La qualité du modèle dépend notamment des photographies, de la couverture des surfaces, de l’éclairage, de la texture de l’objet et de l’échelle de référence. Un modèle photogrammétrique représente les surfaces effectivement documentées ; il ne révèle pas, à lui seul, les structures internes cachées dans la roche.</p><p>La <strong>numérisation 3D</strong> et l’<strong>impression 3D</strong> complètent ces méthodes. Un modèle numérique peut être utilisé pour visualiser un spécimen, effectuer certaines mesures, préparer une comparaison morphologique ou produire une réplique. Le modèle imprimé n’est toutefois pas le fossile original : il dépend des données d’acquisition, du traitement informatique et des capacités de l’imprimante. L’AMNH décrit l’emploi de modèles issus de scans de surface ou de microtomographies pour reproduire des formes fossiles et faciliter leur étude. Les répliques sont particulièrement utiles lorsque la manipulation de l’original doit être limitée. Il faut néanmoins distinguer les informations réellement enregistrées par le scan des éléments reconstitués ou interprétés lors du traitement.</p><p>La valeur scientifique d’un fossile dépend aussi des informations qui accompagnent le spécimen. Le lieu et les conditions de découverte, le niveau géologique lorsqu’il est connu, les photographies de terrain, les numéros d’inventaire et l’historique de préparation contribuent à sa traçabilité. Un modèle 3D ne remplace donc pas automatiquement les observations de terrain ni la documentation de la collection. Les méthodes doivent être choisies selon la question scientifique : dégager une structure anatomique, observer l’intérieur d’un objet, mesurer une surface ou conserver une trace numérique. Une étude rigoureuse indique les limites de la méthode, les transformations appliquées aux données et les incertitudes pertinentes.</p><div class="formula-block"><span class="formula-label">ÉCHELLE D’UNE IMAGE</span><span class="math-display">échelle = dimension sur l’image / dimension réelle</span></div><p><strong>Déterminer une dimension réelle à partir d’une image calibrée.</strong> dimension réelle = dimension mesurée sur l’image / échelle. Lorsqu’une image possède une échelle connue et que les deux dimensions sont mesurées dans la même unité sur l’image, le rapport permet de retrouver la dimension réelle. Pour une photographie numérique, il faut connaître la calibration ou utiliser une échelle de référence présente dans des conditions de prise de vue appropriées.</p><p>Paramètres : la dimension sur l’image est la longueur mesurée dans l’image ; la dimension réelle est la longueur correspondante sur le spécimen ; l’échelle est le rapport entre la dimension sur l’image et la dimension réelle. Une mesure sur image n’est exploitable quantitativement que si l’échelle et les conditions de mesure sont connues : une image redimensionnée sans calibration peut rendre la mesure incorrecte.</p>`,
+      example: { statement: 'Une structure mesure 30 mm sur une représentation dont l’échelle vaut 3. Quelle est sa dimension réelle ?', calculation: 'Dimension réelle = dimension mesurée sur l’image / échelle = 30 / 3.', answer: 'Sa dimension réelle est 10 mm.' },
+      exercises: [
+        { question: 'Une structure fossile mesure 24 mm sur une image calibrée à l’échelle 4. Quelle est sa dimension réelle ?', answer: 'Dimension réelle = 24 / 4 = 6 mm.' },
+        { question: 'Deux photographies montrent le même fossile, mais la seconde a été redimensionnée. Peut-on comparer directement les longueurs mesurées en pixels ?', answer: 'Non. Il faut calibrer chaque image ou utiliser une référence d’échelle fiable. Le nombre de pixels ne correspond pas à une longueur réelle constante lorsque le grossissement ou le redimensionnement varie.' },
+        { question: 'Un fossile est enfermé dans une gangue et sa structure interne doit être étudiée sans le dégager entièrement. Quelle méthode d’imagerie peut être envisagée ?', answer: 'La microtomographie aux rayons X peut être envisagée si les propriétés du fossile et de la matrice permettent d’obtenir un contraste suffisant. Son efficacité doit être évaluée pour le spécimen concerné.' },
+        { question: 'Quel est l’intérêt d’un modèle photogrammétrique d’une empreinte fossile ?', answer: 'Il permet de documenter la géométrie de la surface, de réaliser certaines mesures et de partager une représentation numérique. Il ne révèle pas automatiquement les structures internes et sa précision dépend de l’acquisition et de l’échelle.' }
+      ],
+      sources: [
+        { title: 'MNHN / CNRS / Sorbonne Université — Dégagement, préparation et moulage', url: 'https://paleo.mnhn.fr/fr/degagement-preparation-et-moulage-373' },
+        { title: 'MNHN / CR2P — Imagerie 3D', url: 'https://paleo.mnhn.fr/en/node/375' },
+        { title: 'American Museum of Natural History — Digital Preparation', url: 'https://www.amnh.org/research/paleontology/vertebrate/fossil-preparation/revealing/techniques/digital-preparation' },
+        { title: 'American Museum of Natural History — Fossil Preparation', url: 'https://www.amnh.org/research/paleontology/vertebrate/fossil-preparation' },
+        { title: 'Natural History Museum — Fossil preparation', url: 'https://www.nhm.ac.uk/discover/fossil-preparation.html' },
+        { title: 'Smithsonian National Museum of Natural History — Fossil Preparation from Field to Museum', url: 'https://naturalhistory.si.edu/education/teaching-resources/paleontology/fossil-preparation-field-museum' },
+        { title: 'U.S. National Park Service — Photogrammetry: Fossils in 3D', url: 'https://www.nps.gov/subjects/fossils/photogrammetry.htm' }
+      ]
     }
-  ]
-}
-// FIN BRANCHE outils-et-methodes
+  }
 
+// BRANCHE GRANDS-LIVRES
 
   ,{
     id: "cuvier-ossemens-fossiles", branch: 'grands-livres', number: '01', title: "Recherches sur les ossemens fossiles de quadrupèdes", field: 'Les grands livres',
@@ -318,3 +244,5 @@ window.paleontologyCatalog = [
     }
   }
 ];
+
+
