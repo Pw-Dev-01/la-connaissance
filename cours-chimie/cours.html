@@ -4,37 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f4f5ed">
-    <meta name="description" content="Leçon de chimie avec notions, relation clé, exemple résolu et exercice corrigé.">
+    <meta name="description" content="Leçon de chimie avec notions, relation clé, exemple résolu, exercice corrigé et sources.">
     <title>Cours de chimie</title>
-    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
-    <script src="chimie-data.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="chimie-data.js?v=2" defer></script>
     <script src="../cours.js" defer></script>
+    <script src="../navigation.js" defer></script>
   </head>
-  <body>
+  <body data-course-label="Cours de chimie">
     <header class="topbar">
-      <a class="wordmark" href="programmes.html" aria-label="Retour au catalogue des cours de chimie">
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de chimie">
         <span class="wordmark-mark" aria-hidden="true">⇌</span>
         <span>LE COURS DE CHIMIE</span>
       </a>
-      <a class="edition catalogue-back" href="programmes.html">TOUTES LES BRANCHES ↗</a>
+      <nav class="topbar-links" data-navigation aria-label="Navigation secondaire"></nav>
     </header>
-    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+    <div class="reading-track" aria-hidden="true">
+      <span id="reading-progress"></span>
+    </div>
     <main class="lesson-layout">
       <aside class="course-sidebar" aria-label="Navigation de la branche">
-        <p class="sidebar-label"><a id="lesson-level-label" href="programmes.html">CHIMIE</a></p>
+        <p class="sidebar-label">
+          <a id="lesson-level-label" href="index.html">CHIMIE</a>
+        </p>
         <nav class="chapter-nav" id="lesson-chapter-nav"></nav>
-        <div class="sidebar-note"><span class="note-mark" aria-hidden="true">⇌</span><p>Choisis un autre chapitre de cette branche ou retourne au catalogue général.</p></div>
+        <div class="sidebar-note">
+          <span class="note-mark" aria-hidden="true">⇌</span>
+          <p>Choisis un autre chapitre de cette branche ou retourne au catalogue général.</p>
+        </div>
       </aside>
       <article class="course-content">
         <header class="course-heading">
-          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span><span id="lesson-eyebrow">FICHE DE CHIMIE</span></p>
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="lesson-eyebrow">FICHE DE CHIMIE</span>
+          </p>
           <h1 id="lesson-title">Cours de chimie</h1>
           <p class="course-intro" id="lesson-summary"></p>
-          <div class="course-meta"><span id="lesson-field"></span><span id="lesson-level"></span></div>
-          <a class="course-source" id="lesson-source" target="_blank" rel="noreferrer" hidden>Programme officiel de référence ↗</a>
+          <div class="course-meta">
+            <span id="lesson-field"></span>
+            <span id="lesson-level"></span>
+          </div>
         </header>
         <div id="chapter-lesson"></div>
-        <footer class="course-footer"><span id="lesson-footer"></span><a href="programmes.html">Retour aux branches ↑</a></footer>
+        <footer class="course-footer">
+          <span id="lesson-footer"></span>
+          <a href="index.html">Retour aux branches ↑</a>
+        </footer>
       </article>
     </main>
   </body>
