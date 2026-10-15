@@ -7,44 +7,38 @@
 
     <meta
       name="description"
-      content="Cours de physique couvrant la mécanique, la thermodynamique, l’électromagnétisme, les ondes, l’optique, les fluides, le quantique, le nucléaire, la relativité, les matériaux, l’astrophysique et les méthodes expérimentales, avec huit cours approfondis : mécanique et mouvement (vingt-neuf sections), les 20 principales constantes de la physique (vingt-deux sections), les grands physiciens (trente sections), physique quantique et atomique (vingt sections), cosmologie des particules (seize sections), astrophysique des hautes énergies (quinze sections), particules élémentaires (seize sections) et thermodynamique et transferts thermiques (vingt-deux sections), équations en MathML et sources vérifiées."
+      content="Leçon de physique avec notions, formule fondamentale, exemple résolu et exercice corrigé."
     >
 
-    <title>Programmes · Cours de physique</title>
+    <title>Cours de physique</title>
 
     <link rel="stylesheet" href="../styles.css">
 
+    <!-- Style MathML : indispensable pour un rendu propre -->
     <style>
-      .catalogue-levels a.is-current {
-        border-left-color: var(--coral);
-        color: #ad482f;
+      math {
+        font-size: 1.15rem;
+        margin: 1.2rem 0;
+        display: block;
       }
-
-      /* Le catalogue compte de nombreuses branches : la barre latérale
-         devient défilable quand la hauteur de l’écran ne suffit plus à les
-         afficher, sinon les dernières branches restent hors d’atteinte.
-         Sous 700 px, la mise en page partagée la transforme déjà en bandeau
-         horizontal. */
-      @media (min-width: 701px) {
-        .course-sidebar {
-          max-height: calc(100vh - 56px);
-          overflow-y: auto;
-        }
+      .mathml-display {
+        display: block;
+        margin: 1.2rem 0;
       }
     </style>
 
     <script src="./physique-data.js?v=3" defer></script>
-    <script src="../catalogue.js" defer></script>
+    <script src="../cours.js" defer></script>
     <script src="../navigation.js" defer></script>
   </head>
 
-  <body>
-    <header class="topbar topbar-with-statistics">
+  <body data-course-label="Cours de physique">
+    <header class="topbar">
 
       <a
         class="wordmark"
         href="index.html"
-        aria-label="Catalogue des cours de physique"
+        aria-label="Retour au catalogue des cours de physique"
       >
         <span class="wordmark-mark" aria-hidden="true">φ</span>
         <span>LE COURS DE PHYSIQUE</span>
@@ -56,83 +50,72 @@
         aria-label="Navigation secondaire"
       ></nav>
 
-      <span
-        class="edition domain-statistics"
-        id="domain-statistics"
-      >
-        15 BRANCHES · 65 CHAPITRES · 8 COURS APPROFONDIS · 170 SECTIONS
-      </span>
-
     </header>
 
-    <main class="catalogue-layout">
+    <div class="reading-track" aria-hidden="true">
+      <span id="reading-progress"></span>
+    </div>
 
+    <main class="lesson-layout">
       <aside
         class="course-sidebar"
-        aria-label="Branches de la physique"
+        aria-label="Navigation de la branche"
       >
-        <p class="sidebar-label">LES BRANCHES</p>
+        <p class="sidebar-label">
+          <a id="lesson-level-label" href="index.html">PHYSIQUE</a>
+        </p>
 
         <nav
-          class="catalogue-levels"
-          id="catalogue-levels"
+          class="chapter-nav"
+          id="lesson-chapter-nav"
         ></nav>
+
+        <p class="sidebar-label chapter-label">COURS APPROFONDIS</p>
+        <nav
+          class="course-list"
+          aria-label="Cours approfondis de physique"
+        >
+          <a class="course-link" href="grands-physiciens-approfondie.html"><span>Les grands physiciens</span></a>
+          <a class="course-link" href="constantes-physiques-approfondie.html"><span>Les 20 principales constantes</span></a>
+          <a class="course-link" href="cours.html?id=quant-corps-noir"><span>Physique quantique et atomique</span></a>
+          <a class="course-link" href="cours.html?id=meca-referentiels-mouvement"><span>Mécanique et mouvement</span></a>
+          <a class="course-link" href="cosmologie-particules.html"><span>Cosmologie des particules</span></a>
+          <a class="course-link" href="cours.html?id=astro-introduction"><span>Astrophysique des hautes énergies</span></a>
+          <a class="course-link" href="cours.html?id=part-particules-elementaires"><span>Particules élémentaires</span></a>
+          <a class="course-link" href="cours.html?id=thermo-temperature-equilibre"><span>Thermodynamique et transferts thermiques</span></a>
+        </nav>
 
         <div class="sidebar-note">
           <span class="note-mark" aria-hidden="true">φ</span>
           <p>
-            Des modèles classiques aux questions contemporaines :
-            choisis une branche et explore ses notions.
+            Choisis un autre chapitre de cette branche ou retourne
+            au catalogue général.
           </p>
         </div>
       </aside>
 
-      <article class="catalogue-content">
-
-        <header class="course-heading catalogue-heading">
+      <article class="course-content">
+        <header class="course-heading">
           <p class="eyebrow">
             <span class="status-dot" aria-hidden="true"></span>
-            BIBLIOTHÈQUE · SCIENCES PHYSIQUES
+            <span id="lesson-eyebrow">FICHE DE PHYSIQUE</span>
           </p>
 
-          <h1>
-            Comprendre<br>
-            <span>le monde physique</span>
-          </h1>
-
-          <p class="course-intro">
-            La physique relie les observations à des modèles : mouvement,
-            chaleur, lumière, matière et Univers. Chaque chapitre présente
-            les notions, une relation fondamentale, un exemple calculé et
-            un exercice corrigé ; huit cours approfondis prolongent le
-            catalogue — mécanique et mouvement (vingt-neuf sections, des
-            référentiels aux lois de Kepler), les 20 principales constantes
-            de la physique (vingt-deux sections), les grands physiciens
-            (trente sections), physique quantique et atomique (vingt
-            sections), cosmologie des particules (seize sections),
-            astrophysique des hautes énergies (quinze sections), particules
-            élémentaires (seize sections), thermodynamique et transferts
-            thermiques (vingt-deux sections), de l’équilibre thermique à
-            l’entropie microscopique — avec les équations en MathML.
-          </p>
+          <h1 id="lesson-title">Cours de physique</h1>
+          <p class="course-intro" id="lesson-summary"></p>
 
           <div class="course-meta">
-            <span id="catalogue-count">
-              15 BRANCHES · 65 CHAPITRES · 8 COURS APPROFONDIS · 170 SECTIONS
-            </span>
-            <span>BASES → APPROFONDISSEMENT</span>
+            <span id="lesson-field"></span>
+            <span id="lesson-level"></span>
           </div>
         </header>
 
-        <div id="programme-sections"></div>
+        <div id="chapter-lesson"></div>
 
         <footer class="course-footer">
-          <span>LE COURS DE PHYSIQUE</span>
-          <a href="cours.html?id=cinematique">
-            Ouvrir le premier cours ↑
-          </a>
+          <span id="lesson-footer"></span>
+          <a href="index.html">Retour aux branches ↑</a>
         </footer>
-
       </article>
     </main>
   </body>
