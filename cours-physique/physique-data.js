@@ -1,4 +1,4 @@
-window.courseCatalog = [
+﻿window.courseCatalog = [
  {
     id: 'mecanique', title: 'Mécanique', note: 'Décrire le mouvement, ses causes et les échanges d’énergie.',
     chapters: [
@@ -213,7 +213,10 @@ window.courseCatalog = [
     ],
     // Cours approfondi rattaché à la branche : modèle standard des particules,
     // histoire thermique de l’Univers, nucléosynthèse, fond diffus, matière
-    // noire, énergie noire, neutrinos, baryogenèse et inflation (16 sections).
+    // noire, énergie noire, neutrinos, baryogenèse et inflation (16 sections),
+    // puis un second cours approfondi, « Astrophysique des hautes énergies »
+    // (astrophysique-hautes-energies.html, 15 sections) : rayons X et gamma,
+    // rayons cosmiques, pulsars, trous noirs, sursauts et ciel multimessager.
     deepCourses: [
       {
         title: 'Cosmologie des particules',
@@ -236,30 +239,28 @@ window.courseCatalog = [
           { anchor: 'exercices', title: 'S’entraîner' },
           { anchor: 'sources', title: 'Sources' }
         ]
+      },
+      {
+        title: 'Astrophysique des hautes énergies',
+        href: 'astrophysique-hautes-energies.html',
+        sections: [
+          { anchor: 'introduction', title: 'Le spectre des hautes énergies' },
+          { anchor: 'telescopes', title: 'Observer au-dessus de l’atmosphère' },
+          { anchor: 'plasmas-chauds', title: 'Chaleur extrême et rayons X' },
+          { anchor: 'mecanismes', title: 'Freinage, raies et diffusion Compton' },
+          { anchor: 'rayons-cosmiques', title: 'Les rayons cosmiques' },
+          { anchor: 'spectre-energie', title: 'Le spectre et ses hautes énergies' },
+          { anchor: 'synchrotron', title: 'Le rayonnement synchrotron' },
+          { anchor: 'binaires-x', title: 'Binaires de rayons X' },
+          { anchor: 'pulsars', title: 'Pulsars et étoiles à neutrons' },
+          { anchor: 'trous-noirs', title: 'Trous noirs et horizons' },
+          { anchor: 'sursauts-gamma', title: 'Sursauts gamma' },
+          { anchor: 'agn-jets', title: 'Noyaux actifs et jets' },
+          { anchor: 'multimessager', title: 'Le ciel multimessager' },
+          { anchor: 'exercices', title: 'S’entraîner' },
+          { anchor: 'sources', title: 'Sources' }
+        ]
       }
-    ]
-  },
-  {
-    id: 'astrophysique',
-    title: 'Astrophysique des hautes énergies',
-    note: 'Rayons X et gamma, rayons cosmiques, pulsars, trous noirs et sursauts : observer l’Univers au-delà du visible. Un cours approfondi en quinze sections, avec exercices et sources vérifiées.',
-    href: 'astrophysique-hautes-energies.html',
-    sections: [
-      { anchor: 'introduction', title: 'Le spectre des hautes énergies' },
-      { anchor: 'telescopes', title: 'Observer au-dessus de l’atmosphère' },
-      { anchor: 'plasmas-chauds', title: 'Chaleur extrême et rayons X' },
-      { anchor: 'mecanismes', title: 'Freinage, raies et diffusion Compton' },
-      { anchor: 'rayons-cosmiques', title: 'Les rayons cosmiques' },
-      { anchor: 'spectre-energie', title: 'Le spectre et ses hautes énergies' },
-      { anchor: 'synchrotron', title: 'Le rayonnement synchrotron' },
-      { anchor: 'binaires-x', title: 'Binaires de rayons X' },
-      { anchor: 'pulsars', title: 'Pulsars et étoiles à neutrons' },
-      { anchor: 'trous-noirs', title: 'Trous noirs et horizons' },
-      { anchor: 'sursauts-gamma', title: 'Sursauts gamma' },
-      { anchor: 'agn-jets', title: 'Noyaux actifs et jets' },
-      { anchor: 'multimessager', title: 'Le ciel multimessager' },
-      { anchor: 'exercices', title: 'S’entraîner' },
-      { anchor: 'sources', title: 'Sources' }
     ]
   },
   {
@@ -344,9 +345,11 @@ window.courseCatalog = [
   }
 ];
 
+
 const stellarChapter = window.courseCatalog
   .flatMap((branch) => branch.chapters || [])
   .find((chapter) => chapter.id === 'etoiles');
+
 
 stellarChapter.summary = 'Naissance, structure, types spectraux, durées de vie et évolution jusqu’aux naines blanches, étoiles à neutrons ou trous noirs.';
 stellarChapter.lesson = {
@@ -433,12 +436,14 @@ stellarChapter.lesson = {
   ]
 };
 
+
 const quantumChapters = Object.fromEntries(
   window.courseCatalog
     .flatMap((branch) => branch.chapters || [])
     .filter((chapter) => ['photons', 'dualite-onde-corpuscule', 'atomes-niveaux'].includes(chapter.id))
     .map((chapter) => [chapter.id, chapter])
 );
+
 
 quantumChapters.photons.summary = 'Énergie des photons, effet photoélectrique, fonction de travail et fréquence ou longueur d’onde seuil.';
 quantumChapters.photons.lesson.sections = [
@@ -507,6 +512,7 @@ quantumChapters.photons.lesson.sources = [
   { title: 'NIST — CODATA recommended values of the fundamental constants', url: 'https://physics.nist.gov/cuu/Constants/' }
 ];
 
+
 quantumChapters['dualite-onde-corpuscule'].summary = 'Longueur d’onde de de Broglie, limites de localisation et dualité observée par diffraction et interférences.';
 quantumChapters['dualite-onde-corpuscule'].lesson.sections = [
   'À une particule de quantité de mouvement p est associée une longueur d’onde λ = h/p. Cette onde de matière n’est pas une vague matérielle : la mécanique quantique utilise une fonction d’onde pour calculer des probabilités. Les interférences et la diffraction d’électrons en révèlent le caractère ondulatoire, tandis que des détections localisées révèlent leur aspect corpusculaire.',
@@ -560,6 +566,7 @@ quantumChapters['dualite-onde-corpuscule'].lesson.sources = [
   { title: 'OpenStax University Physics, vol. 3 — Bohr’s Model of the Hydrogen Atom', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-4-bohrs-model-of-the-hydrogen-atom' }
 ];
 
+
 quantumChapters['atomes-niveaux'].summary = 'Niveaux d’énergie de l’hydrogène, transitions quantiques, photons et raies spectrales.';
 quantumChapters['atomes-niveaux'].lesson.sections = [
   'Un atome ne peut occuper que certains états d’énergie. Dans l’atome d’hydrogène, le modèle de Bohr donne des niveaux discrets Eₙ = −13,6 eV/n², avec n entier positif. Cette formule décrit correctement les niveaux principaux de l’hydrogène dans l’approximation non relativiste ; les atomes à plusieurs électrons ont des interactions et des corrections supplémentaires.',
@@ -611,6 +618,7 @@ quantumChapters['atomes-niveaux'].lesson.sources = [
   { title: 'OpenStax University Physics, vol. 3 — Atomic Spectra and X-rays', url: 'https://openstax.org/books/university-physics-volume-3/pages/8-5-atomic-spectra-and-x-rays' },
   { title: 'NIST — CODATA recommended values of the fundamental constants', url: 'https://physics.nist.gov/cuu/Constants/' }
 ];
+
 
 const additionalPhysicsDetails = {
   cinematique: {
@@ -799,11 +807,13 @@ const additionalPhysicsDetails = {
   }
 };
 
+
 for (const [chapterId, details] of Object.entries(additionalPhysicsDetails)) {
   const chapter = window.courseCatalog.flatMap((branch) => branch.chapters || []).find((item) => item.id === chapterId);
   chapter.lesson.equationDetails = details.equations;
   chapter.lesson.sources = details.sources;
 }
+
 
 const remainingPhysicsDetails = {
   radioactivite: {
@@ -931,15 +941,18 @@ const remainingPhysicsDetails = {
   }
 };
 
+
 for (const [chapterId, details] of Object.entries(remainingPhysicsDetails)) {
   const chapter = window.courseCatalog.flatMap((branch) => branch.chapters || []).find((item) => item.id === chapterId);
   chapter.lesson.equationDetails = details.equations;
   chapter.lesson.sources = details.sources;
 }
 
+
 const unicodeFormulaChapters = Object.fromEntries(
   window.courseCatalog.flatMap((branch) => branch.chapters || []).map((chapter) => [chapter.id, chapter])
 );
+
 
 unicodeFormulaChapters['lois-newton'].lesson.formula.text = 'Σ F⃗ₑₓₜ = m a⃗';
 unicodeFormulaChapters['lois-newton'].lesson.formula.mathML = 'newton-second-law';
@@ -948,6 +961,7 @@ unicodeFormulaChapters['lois-newton'].lesson.equationDetails[0].mathML = 'newton
 unicodeFormulaChapters.radioactivite.lesson.formula.mathML = 'radioactive-decay-summary';
 unicodeFormulaChapters.radioactivite.lesson.equationDetails.find((equation) => equation.title === 'Loi de décroissance radioactive').mathML = 'radioactive-decay-law';
 unicodeFormulaChapters.radioactivite.lesson.equationDetails.find((equation) => equation.title === 'Lien entre demi-vie et constante de désintégration').mathML = 'radioactive-half-life';
+
 
 const energyLesson = unicodeFormulaChapters['energie-mecanique'].lesson;
 energyLesson.formula.text = 'E꜀ = ½mv²  |  ΔE꜀ = ΣW(F)  |  Eₘ = E꜀ + Eₚ';
@@ -962,10 +976,12 @@ for (const key of ['sections', 'example', 'exercise']) {
   }
 }
 
+
 unicodeFormulaChapters.hydrostatique.lesson.formula.text = 'p = p₀ + ρgh  |  Fₐ = ρ (fluide) g V (déplacé)';
 unicodeFormulaChapters.hydrostatique.lesson.equationDetails.find((equation) => equation.title === 'Poussée d’Archimède').formula = 'Fₐ = ρ (fluide) g V (déplacé)';
 unicodeFormulaChapters.hydrostatique.lesson.example.calculation = 'V = 0,002 m³ ; Fₐ = 1000 × 9,81 × 0,002.';
 unicodeFormulaChapters.radioactivite.lesson.formula.text = 'N(t) = N₀ exp(−λt)  |  t₁/₂ = ln(2)/λ';
+
 
 const hydrogenLesson = unicodeFormulaChapters['atomes-niveaux'].lesson;
 hydrogenLesson.sections = hydrogenLesson.sections.map((paragraph) => paragraph.replaceAll('nᵢ', 'n₁').replaceAll('n_f', 'n₂'));
@@ -975,6 +991,7 @@ for (const field of ['explanation', 'parameters', 'example', 'result']) {
   rydbergEquation[field] = rydbergEquation[field].replaceAll('R_H', 'Rₕ').replaceAll('nᵢ', 'n₁').replaceAll('n_f', 'n₂').replaceAll('nᵢ', 'n₁');
 }
 
+
 const photonLesson = unicodeFormulaChapters.photons.lesson;
 photonLesson.exercise.answer = photonLesson.exercise.answer.replaceAll('Kmax', 'Kₘₐₓ');
 for (const equation of photonLesson.equationDetails) {
@@ -982,6 +999,7 @@ for (const equation of photonLesson.equationDetails) {
     equation[field] = equation[field].replaceAll('Kmax', 'Kₘₐₓ');
   }
 }
+
 
 const nuclearBindingEquation = unicodeFormulaChapters['energie-nucleaire'].lesson.equationDetails.find((equation) => equation.title === 'Énergie de liaison d’un noyau');
 nuclearBindingEquation.formula = 'B = [Zmₚ + (A − Z)mₙ − m(noyau)]c²';
@@ -991,12 +1009,15 @@ unicodeFormulaChapters['bandes-energie'].lesson.formula.text = 'E = hf ; absorpt
 unicodeFormulaChapters.supraconductivite.lesson.formula.text = 'T < T꜀  ⇒  R = 0 (dans le modèle idéal)';
 unicodeFormulaChapters.incertitudes.lesson.equationDetails.find((equation) => equation.title === 'Écriture d’une mesure avec incertitude').formula = 'x = xₘ ± u(x)';
 
+
 const buoyancyEquation = unicodeFormulaChapters.hydrostatique.lesson.equationDetails.find((equation) => equation.title === 'Poussée d’Archimède');
 buoyancyEquation.parameters = buoyancyEquation.parameters.replaceAll('ρfluide', 'ρ (fluide)').replaceAll('Vdéplacé', 'V (déplacé)');
 unicodeFormulaChapters.hydrostatique.lesson.equationDetails[1].example = 'Un corps déplace 2,0 L d’eau, soit 0,0020 m³ : Fₐ = 1000 × 9,81 × 0,0020.';
 
+
 const nuclearBinding = unicodeFormulaChapters['energie-nucleaire'].lesson.equationDetails.find((equation) => equation.title === 'Énergie de liaison d’un noyau');
 nuclearBinding.parameters = nuclearBinding.parameters.replace('m_noyau', 'm(noyau)');
+
 
 for (const equation of unicodeFormulaChapters.supraconductivite.lesson.equationDetails) {
   for (const field of ['formula', 'explanation', 'parameters', 'example', 'result']) {
@@ -1004,8 +1025,10 @@ for (const equation of unicodeFormulaChapters.supraconductivite.lesson.equationD
   }
 }
 
+
 const measurementEquation = unicodeFormulaChapters.incertitudes.lesson.equationDetails.find((equation) => equation.title === 'Écriture d’une mesure avec incertitude');
 measurementEquation.parameters = measurementEquation.parameters.replace('x_mesurée', 'xₘ');
+
 
 const generalRelativityLesson = unicodeFormulaChapters['relativite-generale'].lesson;
 unicodeFormulaChapters['relativite-generale'].summary = 'Géométrie dynamique de l’espace-temps, principe d’équivalence et équation d’Einstein reliant courbure et énergie-impulsion.';
@@ -1063,6 +1086,7 @@ generalRelativityLesson.sources = [
   { title: 'Einstein Online, Max Planck Institute — Einstein’s geometric gravity', url: 'https://www.einstein-online.info/en/GeomGravity/' },
   { title: 'Einstein Online, Max Planck Institute — The equivalence principle', url: 'https://www.einstein-online.info/en/spotlight/equivalence_principle/' }
 ];
+
 
 // Rubrique « Les grandes constantes  de la physique »
 window.courseCatalog.push({id: "grandes-constantes-physique",
@@ -1571,6 +1595,7 @@ window.courseCatalog.push({id: "grandes-constantes-physique",
     }
   ]
 });
+
 
 // ---------------------------------------------------------------------------
 // Rubrique « Les grands livres de la physique » : dix ouvrages de référence,
