@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
@@ -6,15 +6,16 @@
     <meta name="theme-color" content="#f4f5ed">
     <meta name="description" content="Cours de géologie : minéraux, roches, tectonique des plaques, séismes, mesure du temps géologique, géodynamique et histoire de la planète, avec relations expliquées et sources ouvertes.">
     <title>Programmes · Cours de géologie</title>
-    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <style>
       .catalogue-levels a.is-current {
         border-left-color: var(--coral);
         color: #ad482f;
       }
     </style>
-    <script src="geologie-data.js" defer></script>
-    <script src="catalogue.js" defer></script>
+    <script src="geologie-data.js?v=2" defer></script>
+    <script src="../catalogue.js" defer></script>
+    <script src="../navigation.js" defer></script>
   </head>
   <body>
     <header class="topbar topbar-with-statistics">
@@ -22,6 +23,7 @@
         <span class="wordmark-mark" aria-hidden="true">◈</span>
         <span>LE COURS DE GÉOLOGIE</span>
       </a>
+      <nav class="topbar-links" data-navigation aria-label="Navigation secondaire"></nav>
       <span class="edition domain-statistics" id="domain-statistics">4 BRANCHES · 22 CHAPITRES · 1 COURS APPROFONDI · 16 SECTIONS</span>
     </header>
     <main class="catalogue-layout">
@@ -34,7 +36,7 @@
         <header class="course-heading catalogue-heading">
           <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> BIBLIOTHÈQUE · SCIENCES DE LA TERRE</p>
           <h1>Comprendre<br><span>la Terre solide</span></h1>
-          <p class="course-intro">La géologie relie les observations de terrain à des processus : minéraux, roches, plaques, séismes, temps profonds et histoire de la planète. Chaque chapitre présente les notions, une relation essentielle, un exemple guidé et un exercice corrigé ; le cours approfondi de géodynamique explore le moteur interne et 4,5 milliards d'années d'histoire.</p>
+          <p class="course-intro">La géologie relie les observations de terrain à des processus : minéraux, roches, plaques, séismes, temps profonds et histoire de la planète. Chaque chapitre présente les notions, une relation essentielle, un exemple guidé et un exercice corrigé ; la branche de géodynamique explore le moteur interne et 4,5 milliards d'années d'histoire.</p>
           <div class="course-meta"><span id="catalogue-count">4 BRANCHES · 22 CHAPITRES · 1 COURS APPROFONDI</span><span>BASES → APPROFONDISSEMENT</span></div>
         </header>
         <div id="programme-sections"></div>
