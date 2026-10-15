@@ -1229,3 +1229,8 @@ gap: 3px;
 font-size: 9px;
 }
 }
+
+/* Ajustement du titre long sur mobile */ @media (max-width: 700px) { .course-heading h1.is-long-title { font-size: clamp(27px, 7.5vw, 38px); line-height: 1.08; max-width: 100%; overflow-wrap: break-word; hyphens: auto; }
+.course-heading h1.is-long-title span { display: inline; } }
+@media (max-width: 380px) { .course-heading h1.is-long-title { font-size: 27px; } }
+
