@@ -70,7 +70,9 @@ const deepCourses = [
 const deepSections = deepCourses.flatMap((course) => course.sections || []);
 const deepCourseLabel = deepCourses.length === 1 ? 'COURS APPROFONDI' : 'COURS APPROFONDIS';
 
-const countText = `${courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} ${deepCourseLabel} · ${deepSections.length} SECTIONS` : ''}`;
+// Le saut de ligne (\n) place « N SECTIONS » sur sa propre ligne ; il est affiché
+// grâce à « white-space: pre-line » (voir le style injecté plus bas).
+const countText = `${courseCatalog.length} BRANCHES · ${chapters.length} CHAPITRES${deepCourses.length ? ` · ${deepCourses.length} ${deepCourseLabel}\n${deepSections.length} SECTIONS` : ''}`;
 const statsText = countText;
 const countNode = document.querySelector('#catalogue-count');
 const statsNode = document.querySelector('#domain-statistics');
@@ -80,6 +82,7 @@ if (statsNode) statsNode.textContent = statsText;
 // Style injecté ici : pas besoin de modifier styles.css.
 const catalogueStyle = document.createElement('style');
 catalogueStyle.textContent = `
+  #domain-statistics, #catalogue-count { white-space: pre-line; }
   .branch-overview { margin: 0 0 2.5rem; }
   .branch-overview-title { margin: 0 0 .9rem; font-size: .78rem; font-weight: 700;
     letter-spacing: .14em; text-transform: uppercase; opacity: .7; }
