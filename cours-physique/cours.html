@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f4f5ed">
-
-    <meta
-      name="description"
-      content="Leçon de physique avec notions, formule fondamentale, exemple résolu et exercice corrigé."
-    >
-
+    <meta name="description" content="Leçon de physique avec notions, formule fondamentale, exemple résolu et exercice corrigé.">
     <title>Cours de physique</title>
 
+    <!-- Styles -->
     <link rel="stylesheet" href="../styles.css">
 
     <!-- Style MathML : indispensable pour un rendu propre -->
@@ -27,70 +23,47 @@
       }
     </style>
 
-    <script src="./physique-data.js?v=3" defer></script>
+    <!-- Données de la physique -->
+    <script src="physique-data.js?v=4" defer></script>
+
+    <!-- Script qui affiche la leçon -->
     <script src="../cours.js" defer></script>
+
+    <!-- Navigation -->
     <script src="../navigation.js" defer></script>
   </head>
 
-  <body data-course-label="Cours de physique">
+  <body>
     <header class="topbar">
-
-      <a
-        class="wordmark"
-        href="index.html"
-        aria-label="Retour au catalogue des cours de physique"
-      >
+      <a class="wordmark" href="index.html" aria-label="Retour au catalogue des cours de physique">
         <span class="wordmark-mark" aria-hidden="true">φ</span>
         <span>LE COURS DE PHYSIQUE</span>
       </a>
-
-      <nav
-        class="topbar-links"
-        data-navigation
-        aria-label="Navigation secondaire"
-      ></nav>
-
+      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
     </header>
 
-    <div class="reading-track" aria-hidden="true">
-      <span id="reading-progress"></span>
-    </div>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
 
     <main class="lesson-layout">
-      <aside
-        class="course-sidebar"
-        aria-label="Navigation de la branche"
-      >
-        <p class="sidebar-label">
-          <a id="lesson-level-label" href="index.html">PHYSIQUE</a>
-        </p>
-
-        <nav
-          class="chapter-nav"
-          id="lesson-chapter-nav"
-        ></nav>
+      <aside class="course-sidebar" aria-label="Navigation de la branche">
+        <p class="sidebar-label"><a id="lesson-level-label" href="index.html">PHYSIQUE</a></p>
+        <nav class="chapter-nav" id="lesson-chapter-nav"></nav>
 
         <p class="sidebar-label chapter-label">COURS APPROFONDIS</p>
-        <nav
-          class="course-list"
-          aria-label="Cours approfondis de physique"
-        >
+        <nav class="course-list" aria-label="Cours approfondis de physique">
           <a class="course-link" href="grands-physiciens-approfondie.html"><span>Les grands physiciens</span></a>
           <a class="course-link" href="constantes-physiques-approfondie.html"><span>Les 20 principales constantes</span></a>
-          <a class="course-link" href="physique-quantique-atomique.html"><span>Physique quantique et atomique</span></a>
-          <a class="course-link" href="mecanique-approfondie.html"><span>Mécanique et mouvement</span></a>
+          <a class="course-link" href="cours.html?id=quant-corps-noir"><span>Physique quantique et atomique</span></a>
+          <a class="course-link" href="cours.html?id=meca-referentiels-mouvement"><span>Mécanique et mouvement</span></a>
           <a class="course-link" href="cosmologie-particules.html"><span>Cosmologie des particules</span></a>
-          <a class="course-link" href="astrophysique-hautes-energies.html"><span>Astrophysique des hautes énergies</span></a>
-          <a class="course-link" href="particules-elementaires.html"><span>Particules élémentaires</span></a>
-          <a class="course-link" href="thermodynamique-approfondie.html"><span>Thermodynamique et transferts thermiques</span></a>
+          <a class="course-link" href="cours.html?id=astro-introduction"><span>Astrophysique des hautes énergies</span></a>
+          <a class="course-link" href="cours.html?id=part-particules-elementaires"><span>Particules élémentaires</span></a>
+          <a class="course-link" href="cours.html?id=thermo-temperature-equilibre"><span>Thermodynamique et transferts thermiques</span></a>
         </nav>
 
         <div class="sidebar-note">
           <span class="note-mark" aria-hidden="true">φ</span>
-          <p>
-            Choisis un autre chapitre de cette branche ou retourne
-            au catalogue général.
-          </p>
+          <p>Choisis un autre chapitre de cette branche ou retourne au catalogue général.</p>
         </div>
       </aside>
 
@@ -100,10 +73,8 @@
             <span class="status-dot" aria-hidden="true"></span>
             <span id="lesson-eyebrow">FICHE DE PHYSIQUE</span>
           </p>
-
           <h1 id="lesson-title">Cours de physique</h1>
           <p class="course-intro" id="lesson-summary"></p>
-
           <div class="course-meta">
             <span id="lesson-field"></span>
             <span id="lesson-level"></span>
