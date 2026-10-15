@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
@@ -6,9 +6,10 @@
     <meta name="theme-color" content="#f4f5ed">
     <meta name="description" content="Leçon de géologie avec notions, relation essentielle, exemple guidé, exercice corrigé et sources.">
     <title>Cours de géologie</title>
-    <link rel="stylesheet" href="../cours-mathematiques/styles.css">
-    <script src="geologie-data.js" defer></script>
-    <script src="cours.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="geologie-data.js?v=2" defer></script>
+    <script src="../cours.js" defer></script>
+    <script src="../navigation.js" defer></script>
   </head>
   <body data-course-label="Cours de géologie">
     <header class="topbar">
@@ -16,7 +17,7 @@
         <span class="wordmark-mark" aria-hidden="true">◈</span>
         <span>LE COURS DE GÉOLOGIE</span>
       </a>
-      <a class="edition catalogue-back" href="index.html">TOUTES LES BRANCHES ↗</a>
+      <nav class="topbar-links" data-navigation aria-label="Navigation secondaire"></nav>
     </header>
     <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
     <main class="lesson-layout">
