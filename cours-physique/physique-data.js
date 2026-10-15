@@ -1061,7 +1061,515 @@ generalRelativityLesson.exercise = {
 generalRelativityLesson.sources = [
   { title: 'OpenStax University Physics, vol. 1 — Einstein’s Theory of Gravity', url: 'https://openstax.org/books/university-physics-volume-1/pages/13-7-einsteins-theory-of-gravity' },
   { title: 'Einstein Online, Max Planck Institute — Einstein’s geometric gravity', url: 'https://www.einstein-online.info/en/GeomGravity/' },
-  { title: 'Einstein Online, Max Planck Institute — The equivalence principle', url: 'https://www.einstein-online.info/en/spotlight/equivalence_principle/' }
+  { title: 'Einstein Online, Max Planck Institute — The equivalence principle', url: 'https://www.einstein-online.info/en/spotlight/equivalence_principle/' },
+
+// LES GRANDES CONSTANTES
+{
+  id: "grandes-constantes-physique",
+  title: "Les grandes constantes de la physique",
+  note: "Comprendre les constantes physiques, leurs valeurs CODATA 2022, leur statut métrologique, leurs relations et leurs applications.",
+  chapters: [
+    {
+      id: "vitesse-lumiere",
+      title: "c — Vitesse de la lumière",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Relativité et définition du mètre.",
+      lesson: {
+        sections: [
+          "c = 299 792 458 m·s⁻¹ (exacte). Dans le vide, c est la vitesse limite de propagation des signaux et définit le mètre.",
+          "Une année-lumière vaut environ 9,46073 × 10¹⁵ m. La lumière met environ 8 min 20 s pour parcourir la distance Terre–Soleil."
+        ],
+        formula: {
+          label: "Vitesse de la lumière — valeur et relation",
+          text: "c = 299 792 458 m·s⁻¹ (exacte)"
+        },
+        example: {
+          statement: "Combien de temps met la lumière pour parcourir 3,00 × 10⁸ m ?",
+          calculation: "t = d/c",
+          answer: "t ≈ 1,00 s."
+        },
+        exercise: {
+          question: "Combien de temps met la lumière pour parcourir 3,00 × 10⁸ m ?",
+          answer: "t = d/c ≈ 1,00 s."
+        }
+      }
+    },
+    {
+      id: "planck",
+      title: "h — Constante de Planck",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Quanta d’énergie et définition du kilogramme.",
+      lesson: {
+        sections: [
+          "h = 6,626 070 15 × 10⁻³⁴ J·s (exacte). Elle relie l’énergie d’un photon à sa fréquence : E = hν.",
+          "Pour λ = 500 nm, E = hc/λ ≈ 3,97 × 10⁻¹⁹ J, soit environ 2,5 eV."
+        ],
+        formula: {
+          label: "Constante de Planck — valeur et relation",
+          text: "h = 6,626 070 15 × 10⁻³⁴ J·s ; E = hν"
+        },
+        example: {
+          statement: "Quelle est l’énergie d’un photon de fréquence 6,0 × 10¹⁴ Hz ?",
+          calculation: "E = hν",
+          answer: "E ≈ 3,98 × 10⁻¹⁹ J."
+        },
+        exercise: {
+          question: "Quelle est l’énergie d’un photon de fréquence 6,0 × 10¹⁴ Hz ?",
+          answer: "E = hν ≈ 3,98 × 10⁻¹⁹ J."
+        }
+      }
+    },
+    {
+      id: "planck-reduite",
+      title: "ħ — Constante de Planck réduite",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "La version de h adaptée aux pulsations et à la mécanique quantique.",
+      lesson: {
+        sections: [
+          "ħ = h/(2π) ≈ 1,054 571 817… × 10⁻³⁴ J·s.",
+          "Elle apparaît notamment dans les relations formulées avec la pulsation ω : E = ħω. Puisque ω = 2πν, cette relation équivaut à E = hν."
+        ],
+        formula: {
+          label: "Constante de Planck réduite",
+          text: "ħ = h/(2π) ; E = ħω"
+        },
+        example: {
+          statement: "Exprimer ħ à partir de h.",
+          calculation: "On divise h par 2π.",
+          answer: "ħ = h/(2π)."
+        },
+        exercise: {
+          question: "Exprimer ħ à partir de h.",
+          answer: "ħ = h/(2π)."
+        }
+      }
+    },
+    {
+      id: "charge-elementaire",
+      title: "e — Charge élémentaire",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Charge de l’électron et définition de l’ampère.",
+      lesson: {
+        sections: [
+          "e = 1,602 176 634 × 10⁻¹⁹ C (exacte). L’électron porte qₑ = −e et le proton qₚ = +e.",
+          "Un coulomb correspond à environ 6,24 × 10¹⁸ charges élémentaires en valeur absolue."
+        ],
+        formula: {
+          label: "Charge élémentaire — valeur et relation",
+          text: "e = 1,602 176 634 × 10⁻¹⁹ C"
+        },
+        example: {
+          statement: "Combien de charges élémentaires correspondent à 1,00 C ?",
+          calculation: "N = Q/e",
+          answer: "N ≈ 6,24 × 10¹⁸."
+        },
+        exercise: {
+          question: "Combien de charges élémentaires correspondent à 1,00 C ?",
+          answer: "N = Q/e ≈ 6,24 × 10¹⁸."
+        }
+      }
+    },
+    {
+      id: "avogadro",
+      title: "N_A — Constante d’Avogadro",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Nombre d’entités dans une mole et définition de la mole.",
+      lesson: {
+        sections: [
+          "N_A = 6,022 140 76 × 10²³ mol⁻¹ (exacte). Une mole contient exactement ce nombre d’entités élémentaires.",
+          "La relation N = nN_A permet de passer d’une quantité de matière au nombre d’entités."
+        ],
+        formula: {
+          label: "Constante d’Avogadro",
+          text: "N_A = 6,022 140 76 × 10²³ mol⁻¹ ; N = nN_A"
+        },
+        example: {
+          statement: "Combien d’entités contient 0,50 mol ?",
+          calculation: "N = nN_A",
+          answer: "N ≈ 3,01 × 10²³ entités."
+        },
+        exercise: {
+          question: "Combien d’entités contient 0,50 mol ?",
+          answer: "N = 0,50 × N_A ≈ 3,01 × 10²³ entités."
+        }
+      }
+    },
+    {
+      id: "gaz-parfaits",
+      title: "R — Constante des gaz parfaits",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Lien entre pression, volume, température et quantité de matière.",
+      lesson: {
+        sections: [
+          "R = 8,314 462 618… J·mol⁻¹·K⁻¹, avec R = N_A k_B.",
+          "Elle intervient dans l’équation d’état des gaz parfaits : PV = nRT."
+        ],
+        formula: {
+          label: "Constante des gaz parfaits",
+          text: "PV = nRT ; R = N_A k_B"
+        },
+        example: {
+          statement: "Calculer PV pour n = 1,0 mol et T = 300 K.",
+          calculation: "PV = nRT = 1,0 × 8,314 × 300",
+          answer: "PV ≈ 2,49 × 10³ J."
+        },
+        exercise: {
+          question: "Calculer PV pour n = 1,0 mol et T = 300 K.",
+          answer: "PV ≈ 2,49 × 10³ J."
+        }
+      }
+    },
+    {
+      id: "faraday",
+      title: "F — Constante de Faraday",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Charge électrique portée par une mole de charges élémentaires.",
+      lesson: {
+        sections: [
+          "F ≈ 96 485,332 12 C·mol⁻¹ et F = N_A e.",
+          "En électrolyse, la charge transférée est reliée à la quantité de matière d’électrons par Q = nF."
+        ],
+        formula: {
+          label: "Constante de Faraday",
+          text: "F = N_A e ; Q = nF"
+        },
+        example: {
+          statement: "Quelle charge correspond à 0,10 mol d’électrons ?",
+          calculation: "Q = nF = 0,10 × 96 485",
+          answer: "Q ≈ 9,65 × 10³ C."
+        },
+        exercise: {
+          question: "Quelle charge correspond à 0,10 mol d’électrons ?",
+          answer: "Q = nF ≈ 9,65 × 10³ C."
+        }
+      }
+    },
+    {
+      id: "boltzmann",
+      title: "k_B — Constante de Boltzmann",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Relier température thermodynamique et énergie microscopique.",
+      lesson: {
+        sections: [
+          "k_B = 1,380 649 × 10⁻²³ J·K⁻¹ (exacte). Elle définit le kelvin depuis 2019.",
+          "Pour un gaz parfait monoatomique, l’énergie cinétique moyenne de translation par molécule vaut ⟨E⟩ = 3/2 k_BT."
+        ],
+        formula: {
+          label: "Constante de Boltzmann",
+          text: "k_B = 1,380 649 × 10⁻²³ J·K⁻¹ ; ⟨E⟩ = 3/2 k_BT"
+        },
+        example: {
+          statement: "Évaluer 3/2 k_BT à T = 300 K.",
+          calculation: "⟨E⟩ = 3/2 × k_B × 300",
+          answer: "⟨E⟩ ≈ 6,21 × 10⁻²¹ J."
+        },
+        exercise: {
+          question: "Évaluer 3/2 k_BT à T = 300 K.",
+          answer: "⟨E⟩ ≈ 6,21 × 10⁻²¹ J."
+        }
+      }
+    },
+    {
+      id: "gravitation",
+      title: "G — Constante de gravitation",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Intensité de l’interaction gravitationnelle et loi de Newton.",
+      lesson: {
+        sections: [
+          "G = 6,674 30(15) × 10⁻¹¹ m³·kg⁻¹·s⁻².",
+          "La loi de Newton s’écrit F = Gm₁m₂/r². La constante G possède une incertitude de mesure."
+        ],
+        formula: {
+          label: "Constante de gravitation",
+          text: "F = Gm₁m₂/r²"
+        },
+        example: {
+          statement: "Calculer la force entre deux masses de 1 kg séparées de 1 m.",
+          calculation: "F = G × 1 × 1 / 1²",
+          answer: "F ≈ 6,67 × 10⁻¹¹ N."
+        },
+        exercise: {
+          question: "Calculer la force entre deux masses de 1 kg séparées de 1 m.",
+          answer: "F ≈ 6,67 × 10⁻¹¹ N."
+        }
+      }
+    },
+    {
+      id: "structure-fine",
+      title: "α — Constante de structure fine",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Constante sans dimension de l’interaction électromagnétique.",
+      lesson: {
+        sections: [
+          "α ≈ 7,297 352 5643 × 10⁻³ ; 1/α ≈ 137,036. C’est un nombre sans unité.",
+          "Elle caractérise la force de l’interaction électromagnétique et intervient notamment en physique atomique."
+        ],
+        formula: {
+          label: "Constante de structure fine",
+          text: "α = e²/(4πε₀ħc) ; 1/α ≈ 137,036"
+        },
+        example: {
+          statement: "Donner un ordre de grandeur de l’inverse de α.",
+          calculation: "1/α ≈ 1/(7,297 × 10⁻³)",
+          answer: "1/α ≈ 137."
+        },
+        exercise: {
+          question: "Donner un ordre de grandeur de l’inverse de α.",
+          answer: "1/α ≈ 137."
+        }
+      }
+    },
+    {
+      id: "permeabilite-vide",
+      title: "μ₀ — Perméabilité du vide",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Constante magnétique intervenant dans l’électromagnétisme.",
+      lesson: {
+        sections: [
+          "μ₀ ≈ 1,256 637 061 27 × 10⁻⁶ H·m⁻¹ selon les valeurs CODATA 2022.",
+          "Depuis la redéfinition du SI, μ₀ n’est plus exacte par définition. Elle est liée à ε₀ et c."
+        ],
+        formula: {
+          label: "Perméabilité du vide",
+          text: "ε₀ = 1/(μ₀c²) ; Z₀ = μ₀c"
+        },
+        example: {
+          statement: "Quelle relation relie μ₀, ε₀ et c ?",
+          calculation: "On utilise la relation électromagnétique entre ces constantes.",
+          answer: "ε₀ = 1/(μ₀c²)."
+        },
+        exercise: {
+          question: "Quelle relation relie μ₀, ε₀ et c ?",
+          answer: "ε₀ = 1/(μ₀c²)."
+        }
+      }
+    },
+    {
+      id: "permittivite-vide",
+      title: "ε₀ — Permittivité du vide",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Constante électrique intervenant dans les lois de l’électrostatique.",
+      lesson: {
+        sections: [
+          "ε₀ ≈ 8,854 187 8188 × 10⁻¹² F·m⁻¹ selon les valeurs CODATA 2022.",
+          "Elle apparaît notamment dans la loi de Coulomb et vérifie ε₀ = 1/(μ₀c²)."
+        ],
+        formula: {
+          label: "Permittivité du vide",
+          text: "ε₀ = 1/(μ₀c²)"
+        },
+        example: {
+          statement: "Calculer ε₀ avec μ₀ ≈ 1,2566 × 10⁻⁶ H·m⁻¹ et c ≈ 3,00 × 10⁸ m·s⁻¹.",
+          calculation: "ε₀ = 1/(μ₀c²)",
+          answer: "ε₀ ≈ 8,85 × 10⁻¹² F·m⁻¹."
+        },
+        exercise: {
+          question: "Quelle relation permet de calculer ε₀ à partir de μ₀ et c ?",
+          answer: "ε₀ = 1/(μ₀c²)."
+        }
+      }
+    },
+    {
+      id: "impedance-vide",
+      title: "Z₀ — Impédance caractéristique du vide",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Rapport entre les champs électrique et magnétique d’une onde électromagnétique dans le vide.",
+      lesson: {
+        sections: [
+          "Z₀ ≈ 376,730 313 412 Ω selon les valeurs CODATA 2022.",
+          "Elle est reliée aux autres constantes par Z₀ = μ₀c et caractérise la propagation des ondes électromagnétiques dans le vide."
+        ],
+        formula: {
+          label: "Impédance caractéristique du vide",
+          text: "Z₀ = μ₀c"
+        },
+        example: {
+          statement: "Quelles grandeurs permettent de calculer Z₀ ?",
+          calculation: "Z₀ = μ₀c",
+          answer: "La perméabilité du vide μ₀ et la vitesse de la lumière c."
+        },
+        exercise: {
+          question: "À l’aide de Z₀ = μ₀c, quelles grandeurs faut-il connaître ?",
+          answer: "μ₀ et c."
+        }
+      }
+    },
+    {
+      id: "stefan-boltzmann",
+      title: "σ — Constante de Stefan-Boltzmann",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Puissance rayonnée par un corps noir.",
+      lesson: {
+        sections: [
+          "σ ≈ 5,670 374 419 × 10⁻⁸ W·m⁻²·K⁻⁴.",
+          "La loi de Stefan-Boltzmann s’écrit P = σAT⁴ pour un corps noir idéal."
+        ],
+        formula: {
+          label: "Loi de Stefan-Boltzmann",
+          text: "P = σAT⁴"
+        },
+        example: {
+          statement: "Par quel facteur la puissance surfacique est-elle multipliée si la température double ?",
+          calculation: "P est proportionnelle à T⁴, donc le facteur vaut 2⁴.",
+          answer: "La puissance est multipliée par 16."
+        },
+        exercise: {
+          question: "Par quel facteur la puissance surfacique est-elle multipliée si la température double ?",
+          answer: "Par 2⁴ = 16."
+        }
+      }
+    },
+    {
+      id: "wien",
+      title: "b — Constante de déplacement de Wien",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Relier température d’un corps noir au maximum de son spectre.",
+      lesson: {
+        sections: [
+          "b ≈ 2,897 771 955 × 10⁻³ m·K.",
+          "La loi de Wien donne λ_max = b/T. Pour T = 3000 K, λ_max ≈ 9,66 × 10⁻⁷ m, soit environ 966 nm."
+        ],
+        formula: {
+          label: "Loi de déplacement de Wien",
+          text: "λ_max = b/T"
+        },
+        example: {
+          statement: "Calculer λ_max pour T = 5800 K.",
+          calculation: "λ_max = 2,898 × 10⁻³ / 5800",
+          answer: "λ_max ≈ 5,00 × 10⁻⁷ m, soit environ 500 nm."
+        },
+        exercise: {
+          question: "Calculer λ_max pour T = 5800 K.",
+          answer: "λ_max ≈ 5,00 × 10⁻⁷ m, soit environ 500 nm."
+        }
+      }
+    },
+    {
+      id: "pesanteur-standard",
+      title: "g₀ — Pesanteur standard",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Valeur conventionnelle de référence pour l’accélération de la pesanteur.",
+      lesson: {
+        sections: [
+          "g₀ = 9,806 65 m·s⁻² (exacte par convention).",
+          "Contrairement à g, la pesanteur locale mesurée, g₀ ne varie pas selon le lieu. Pour le poids réel, on utilise le g local."
+        ],
+        formula: {
+          label: "Pesanteur standard",
+          text: "g₀ = 9,806 65 m·s⁻² ; P = mg"
+        },
+        example: {
+          statement: "Quel est le poids approximatif d’une masse de 2,0 kg avec g = 9,81 m·s⁻² ?",
+          calculation: "P = mg = 2,0 × 9,81",
+          answer: "P ≈ 19,6 N."
+        },
+        exercise: {
+          question: "Quel est le poids approximatif d’une masse de 2,0 kg avec g = 9,81 m·s⁻² ?",
+          answer: "P ≈ 19,6 N."
+        }
+      }
+    },
+    {
+      id: "masse-electron",
+      title: "mₑ — Masse de l’électron",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Masse de la particule légère présente dans les atomes.",
+      lesson: {
+        sections: [
+          "mₑ ≈ 9,109 383 7139 × 10⁻³¹ kg selon les valeurs CODATA 2022.",
+          "Le proton est environ 1836 fois plus massif que l’électron."
+        ],
+        formula: {
+          label: "Masse de l’électron",
+          text: "mₑ ≈ 9,109 383 7139 × 10⁻³¹ kg"
+        },
+        example: {
+          statement: "Quelle est la masse approximative de l’électron en unité de masse atomique ?",
+          calculation: "On utilise la conversion entre kilogrammes et u.",
+          answer: "mₑ ≈ 5,486 × 10⁻⁴ u."
+        },
+        exercise: {
+          question: "Estimer mₑ en unité de masse atomique u.",
+          answer: "mₑ ≈ 5,486 × 10⁻⁴ u."
+        }
+      }
+    },
+    {
+      id: "masse-proton",
+      title: "mₚ — Masse du proton",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Masse du proton, constituant du noyau atomique.",
+      lesson: {
+        sections: [
+          "mₚ ≈ 1,672 621 925 95 × 10⁻²⁷ kg selon les valeurs CODATA 2022.",
+          "Le proton porte une charge +e et constitue, avec le neutron, les nucléons du noyau."
+        ],
+        formula: {
+          label: "Masse du proton",
+          text: "mₚ ≈ 1,672 621 925 95 × 10⁻²⁷ kg"
+        },
+        example: {
+          statement: "Comparer l’ordre de grandeur de mₚ à celui de mₑ.",
+          calculation: "mₚ est de l’ordre de 10⁻²⁷ kg, mₑ de l’ordre de 10⁻³¹ kg.",
+          answer: "Le proton est environ 1836 fois plus massif que l’électron."
+        },
+        exercise: {
+          question: "Comparer l’ordre de grandeur de mₚ à celui de mₑ.",
+          answer: "Le proton est environ 1836 fois plus massif que l’électron."
+        }
+      }
+    },
+    {
+      id: "masse-neutron",
+      title: "mₙ — Masse du neutron",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Masse du neutron, particule neutre du noyau atomique.",
+      lesson: {
+        sections: [
+          "mₙ ≈ 1,674 927 500 56 × 10⁻²⁷ kg selon les valeurs CODATA 2022.",
+          "La masse du neutron est légèrement supérieure à celle du proton."
+        ],
+        formula: {
+          label: "Masse du neutron",
+          text: "mₙ ≈ 1,674 927 500 56 × 10⁻²⁷ kg"
+        },
+        example: {
+          statement: "Le neutron est-il plus ou moins massif que le proton ?",
+          calculation: "Comparer mₙ et mₚ.",
+          answer: "Le neutron est légèrement plus massif."
+        },
+        exercise: {
+          question: "Le neutron est-il plus ou moins massif que le proton ?",
+          answer: "Il est légèrement plus massif."
+        }
+      }
+    },
+    {
+      id: "unite-masse-atomique",
+      title: "u — Unité de masse atomique unifiée",
+      field: "Constantes physiques · CODATA 2022",
+      summary: "Unité pratique pour exprimer les masses des atomes et particules.",
+      lesson: {
+        sections: [
+          "u ≈ 1,660 539 068 92 × 10⁻²⁷ kg selon le tableau CODATA 2022 fourni.",
+          "Elle correspond au douzième de la masse d’un atome de carbone 12 et permet d’exprimer les masses atomiques avec des nombres pratiques."
+        ],
+        formula: {
+          label: "Unité de masse atomique unifiée",
+          text: "1 u ≈ 1,660 539 068 92 × 10⁻²⁷ kg"
+        },
+        example: {
+          statement: "Pourquoi exprime-t-on souvent les masses atomiques en u plutôt qu’en kilogrammes ?",
+          calculation: "L’unité u est adaptée à l’échelle des atomes et particules.",
+          answer: "Les valeurs numériques sont plus commodes et proches de l’unité."
+        },
+        exercise: {
+          question: "Pourquoi exprime-t-on souvent les masses atomiques en u plutôt qu’en kilogrammes ?",
+          answer: "Parce que les valeurs numériques sont plus commodes et proches de l’unité."
+        }
+      }
+    ]
+  }
 ];
 
 // ---------------------------------------------------------------------------
@@ -1178,4 +1686,5 @@ window.courseCatalog.push({
       }
   ]
 });
+
 
