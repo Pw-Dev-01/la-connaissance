@@ -1061,11 +1061,11 @@ generalRelativityLesson.exercise = {
 generalRelativityLesson.sources = [
   { title: 'OpenStax University Physics, vol. 1 — Einstein’s Theory of Gravity', url: 'https://openstax.org/books/university-physics-volume-1/pages/13-7-einsteins-theory-of-gravity' },
   { title: 'Einstein Online, Max Planck Institute — Einstein’s geometric gravity', url: 'https://www.einstein-online.info/en/GeomGravity/' },
-  { title: 'Einstein Online, Max Planck Institute — The equivalence principle', url: 'https://www.einstein-online.info/en/spotlight/equivalence_principle/' },
+  { title: 'Einstein Online, Max Planck Institute — The equivalence principle', url: 'https://www.einstein-online.info/en/spotlight/equivalence_principle/' }
+];
 
-// LES GRANDES CONSTANTES
-{
-  id: "grandes-constantes-physique",
+// Rubrique « Les grandes constantes  de la physique »
+window.courseCatalog.push({id: "grandes-constantes-physique",
   title: "Les grandes constantes de la physique",
   note: "Comprendre les constantes physiques, leurs valeurs CODATA 2022, leur statut métrologique, leurs relations et leurs applications.",
   chapters: [
@@ -1568,9 +1568,9 @@ generalRelativityLesson.sources = [
           answer: "Parce que les valeurs numériques sont plus commodes et proches de l’unité."
         }
       }
-    ]
-  }
-];
+    }
+  ]
+});
 
 // ---------------------------------------------------------------------------
 // Rubrique « Les grands livres de la physique » : dix ouvrages de référence,
@@ -1686,5 +1686,3 @@ window.courseCatalog.push({
       }
   ]
 });
-
-
