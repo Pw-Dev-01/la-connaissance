@@ -366,7 +366,6 @@ h3,
 p {
 margin-top: 0;
 }
-
 h1 {
 max-width: 760px;
 margin-bottom: 25px;
@@ -374,6 +373,8 @@ font-family: var(--serif);
 font-size: 68px;
 font-weight: 400;
 line-height: 1.02;
+overflow-wrap: break-word;
+hyphens: auto;
 }
 
 h1 span {
@@ -1077,7 +1078,7 @@ line-height: 1.04;
 }
 
 .course-heading h1.is-long-title {
-font-size: 40px;
+font-size: clamp(26px, 9vw, 40px);
 }
 
 .course-intro {
@@ -1165,8 +1166,9 @@ font-size: 43px;
 }
 
 .course-heading h1.is-long-title {
-font-size: 36px;
+font-size: clamp(26px, 9vw, 34px);
 }
+
 
 .edition {
 max-width: 110px;
