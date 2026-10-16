@@ -1698,5 +1698,272 @@ window.courseCatalog = [
         }
       }
     ]
+  },
+
+// BRANCHE — LA RÉVOLUTION INDUSTRIELLE
+  {
+    id: 'revolution-industrielle',
+    title: 'La révolution industrielle',
+    note: 'Six chapitres sur les transformations économiques, techniques et sociales amorcées en Grande-Bretagne au XVIIIe siècle puis diffusées, à des rythmes différents, dans d’autres régions : mécanisation, vapeur, usines, transports, conditions de travail et nouvelles formes de production. Les dates sont des repères conventionnels : l’industrialisation fut un processus progressif et inégal, non un événement instantané.',
+    chapters: [
+      {
+        id: 'origines-industrialisation',
+        title: 'Pourquoi l’industrialisation commence-t-elle en Grande-Bretagne ?',
+        field: 'Histoire économique et sociale · Grande-Bretagne · XVIIIe siècle',
+        summary: 'Étudier plusieurs facteurs combinés — charbon, production agricole, capitaux, marchés, travail et savoir-faire — sans attribuer l’industrialisation à une cause unique.',
+        lesson: {
+          sections: [
+            'La révolution industrielle désigne la transformation progressive d’économies principalement agricoles et artisanales en économies où la production mécanisée et l’industrie occupent une place croissante. Le processus commence en Grande-Bretagne au XVIIIe siècle, puis se diffuse ailleurs à des dates et à des rythmes différents. Les historiens discutent les limites exactes de cette période, car les changements ne se produisent ni partout au même moment ni dans tous les secteurs à la fois.',
+            'La Grande-Bretagne possède plusieurs conditions favorables. Des gisements de charbon accessibles fournissent une source d’énergie importante, tandis que le fer est nécessaire à la fabrication de machines et d’équipements. L’usage du coke dans la production du fer se développe au début du XVIIIe siècle ; Abraham Darby joue un rôle notable dans l’emploi du coke dans un haut fourneau à Coalbrookdale en 1709. Ces ressources ne suffisent pas à elles seules : elles prennent de l’importance avec les compétences techniques, les investissements et la demande.',
+            'Les changements agricoles, la croissance démographique, les réseaux commerciaux et l’existence de marchés contribuent également à transformer l’économie. La hausse de la demande pour les textiles et d’autres biens incite certains entrepreneurs à accroître la production. Le commerce britannique et l’empire colonial ont aussi participé à cette expansion ; ils sont liés à des rapports de pouvoir et à l’exploitation, notamment dans des économies atlantiques marquées par l’esclavage. Une explication historique complète doit tenir compte de ces dimensions plutôt que raconter l’industrialisation comme un progrès isolé.',
+            'Les inventeurs, artisans, entrepreneurs et ouvriers apportent des savoir-faire complémentaires. Une invention ne devient pas automatiquement une technologie largement utilisée : elle doit être construite avec des matériaux disponibles, financée, entretenue et adaptée aux besoins des producteurs. Les améliorations techniques résultent souvent de plusieurs contributions successives, et non du travail d’une seule personne.',
+            'La Grande-Bretagne n’est pas le seul territoire à connaître des activités manufacturières ou des innovations avant le XVIIIe siècle. Ce qui change progressivement, c’est la combinaison de plusieurs facteurs et l’extension de la production mécanisée. Il faut donc éviter d’expliquer le phénomène par une prétendue supériorité naturelle d’une population : les conditions économiques, politiques, énergétiques et commerciales ont une importance centrale.'
+          ],
+          example: {
+            statement: 'Pourquoi la présence de charbon n’explique-t-elle pas, à elle seule, le début de la révolution industrielle en Grande-Bretagne ?',
+            calculation: 'Pour expliquer un phénomène historique, il faut comparer plusieurs facteurs : ressources énergétiques, capitaux, compétences, marchés, organisation du travail et décisions d’investissement.',
+            answer: 'Le charbon fournit une énergie utile, mais il faut aussi des machines, des travailleurs formés, des investissements, des réseaux de transport et une demande suffisante pour développer une industrie mécanisée.'
+          },
+          exercise: {
+            question: 'Cite trois facteurs qui ont favorisé l’industrialisation britannique.',
+            answer: 'Par exemple : l’accès au charbon, des savoir-faire techniques, les investissements, les marchés commerciaux, les transformations agricoles ou la demande de produits manufacturés.'
+          },
+          exercises: [
+            {
+              question: 'Dans quel pays la première industrialisation a-t-elle commencé au XVIIIe siècle ?',
+              answer: 'En Grande-Bretagne.'
+            },
+            {
+              question: 'À quoi sert le charbon dans les premières industries mécanisées ?',
+              answer: 'Il fournit un combustible, notamment pour produire de la vapeur et pour certains procédés métallurgiques.'
+            },
+            {
+              question: 'Pourquoi est-il trompeur de présenter l’industrialisation comme le résultat d’une invention unique ?',
+              answer: 'Parce qu’elle résulte de plusieurs innovations, investissements, ressources, marchés et changements sociaux qui se renforcent mutuellement.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution industrielle britannique', url: 'https://www.worldhistory.org/trans/fr/1-21828/revolution-industrielle-britannique/' },
+            { title: 'World History Encyclopedia — Why the Industrial Revolution Started in Britain', url: 'https://www.worldhistory.org/article/2221/why-the-industrial-revolution-started-in-britain/' },
+            { title: 'Encyclopaedia Britannica — Industrial Revolution', url: 'https://www.britannica.com/event/Industrial-Revolution' }
+          ]
+        }
+      },
+      {
+        id: 'textile-machines-usines',
+        title: 'Le textile et la naissance de l’usine mécanisée',
+        field: 'Histoire des techniques et du travail · Textile · XVIIIe-XIXe siècles',
+        summary: 'Comprendre comment les machines de filage et de tissage augmentent la production et favorisent la concentration du travail dans des établissements spécialisés.',
+        lesson: {
+          sections: [
+            'Avant l’industrialisation, une grande partie des textiles est fabriquée dans des foyers, de petits ateliers ou des manufactures. Le travail peut être réparti entre plusieurs étapes : préparation des fibres, filage, tissage et finition. La production domestique et artisanale ne disparaît pas dès l’apparition des usines ; pendant longtemps, différents systèmes coexistent.',
+            'Au XVIIIe siècle, plusieurs inventions transforment le filage et le tissage en Grande-Bretagne. La spinning jenny, associée à James Hargreaves dans les années 1760, permet de filer plusieurs fils à la fois. Richard Arkwright contribue au développement et à la diffusion de machines de filage actionnées par une source d’énergie mécanique. La water frame utilise d’abord la force de l’eau dans des installations adaptées. Ces innovations augmentent la capacité de production, mais leur diffusion dépend des coûts, des compétences et de l’organisation des entreprises.',
+            'Le métier à tisser mécanique de Edmund Cartwright, breveté à partir de 1785 puis amélioré, participe à la mécanisation du tissage. Les innovations ne sont pas toujours immédiatement efficaces : des ajustements techniques et des investissements sont nécessaires avant une utilisation rentable à grande échelle. Les progrès dans le filage et le tissage peuvent aussi se produire à des rythmes différents, ce qui crée des déséquilibres dans la chaîne de production.',
+            'L’usine rassemble machines, énergie, matières premières et travailleurs dans un même lieu. Cette organisation facilite la surveillance de la production, l’entretien des équipements et la coordination des tâches. Elle impose aussi des horaires plus réguliers, une discipline de travail et un rythme souvent déterminé par la machine. Le passage à l’usine est donc une transformation de l’organisation du travail, pas seulement un changement d’outillage.',
+            'La mécanisation accroît la quantité de textiles pouvant être fabriqués et contribue à réduire certains coûts unitaires. Ses bénéfices et ses effets sont toutefois inégalement répartis. Les entrepreneurs peuvent gagner en productivité, tandis que certains travailleurs qualifiés voient leur métier transformé ou leur rémunération fragilisée. Les conditions varient selon les entreprises, les régions, les périodes et les groupes de travailleurs.'
+          ],
+          example: {
+            statement: 'Une machine peut filer plusieurs fils en même temps alors qu’un outil manuel n’en file qu’un à la fois. Quel changement économique cela peut-il favoriser ?',
+            calculation: 'Si les autres conditions restent comparables, une machine capable de traiter plusieurs fils simultanément peut augmenter la quantité produite par unité de temps. Le gain réel dépend cependant des arrêts, de la qualité, de l’énergie et du coût de la machine.',
+            answer: 'Elle peut accroître la productivité du filage et encourager une production plus concentrée dans des ateliers ou des usines mécanisés.'
+          },
+          exercise: {
+            question: 'En quoi l’usine change-t-elle l’organisation du travail par rapport à la production domestique ?',
+            answer: 'Elle rassemble les travailleurs et les machines dans un même lieu, coordonne les étapes de production et impose souvent des horaires et des rythmes communs.'
+          },
+          exercises: [
+            {
+              question: 'Quel secteur joue un rôle majeur dans les premières phases de l’industrialisation britannique ?',
+              answer: 'L’industrie textile, notamment le coton.'
+            },
+            {
+              question: 'Quel est l’intérêt général d’une machine de filage multipliant le nombre de fils traités simultanément ?',
+              answer: 'Elle augmente la capacité de filage par unité de temps.'
+            },
+            {
+              question: 'Les ateliers domestiques disparaissent-ils immédiatement avec les usines ?',
+              answer: 'Non. Les formes de production domestique, artisanale et industrielle coexistent pendant une longue période.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution industrielle britannique', url: 'https://www.worldhistory.org/trans/fr/1-21828/revolution-industrielle-britannique/' },
+            { title: 'Musée des Arts et Métiers — Dossier de l’enseignant : La Révolution industrielle', url: 'https://www.arts-et-metiers.net/musee/dossier-de-lenseignant-la-revolution-industrielle' },
+            { title: 'Encyclopaedia Britannica — Industrial Revolution', url: 'https://www.britannica.com/event/Industrial-Revolution' }
+          ]
+        }
+      },
+      {
+        id: 'vapeur-charbon-fer',
+        title: 'Charbon, fer et machine à vapeur',
+        field: 'Histoire des techniques · Énergie et métallurgie · XVIIIe siècle',
+        summary: 'Suivre le rôle de la vapeur dans les mines et les usines, et distinguer les contributions de Newcomen et de Watt.',
+        lesson: {
+          sections: [
+            'Les mines de charbon et de métaux sont essentielles à l’industrialisation, mais elles posent des difficultés techniques, notamment l’infiltration d’eau dans les galeries. Au début du XVIIIe siècle, Thomas Newcomen met au point une machine atmosphérique efficace pour pomper l’eau des mines. Une machine de ce type est installée près de Dudley en 1712. Elle consomme beaucoup de combustible, mais répond à un besoin industriel important.',
+            'James Watt ne crée pas la machine à vapeur à partir de rien. Dans les années 1760, il travaille à améliorer les machines existantes et développe un condenseur séparé, qui réduit certaines pertes d’énergie. Son partenariat commercial avec Matthew Boulton contribue à la fabrication et à la diffusion de machines améliorées. Des perfectionnements ultérieurs permettent d’utiliser la vapeur pour produire un mouvement rotatif adapté à diverses machines industrielles.',
+            'La vapeur transforme les possibilités d’implantation des usines. Les premières installations mécanisées peuvent dépendre de cours d’eau pour obtenir de l’énergie hydraulique. Une machine à vapeur permet davantage de flexibilité, même si elle exige du charbon, de l’eau, des capitaux, des réparations et une infrastructure appropriée. La transition vers la vapeur est progressive et ne remplace pas immédiatement l’énergie hydraulique.',
+            'Le charbon joue également un rôle dans la métallurgie. Le coke, obtenu en chauffant le charbon pour en réduire les impuretés volatiles, peut servir de combustible dans les hauts fourneaux. L’amélioration de la production du fer fournit des matériaux pour les machines, les rails, les ponts et les outils. Les besoins des mines, des usines et des transports stimulent ainsi les secteurs les uns les autres.',
+            'La vapeur et le charbon ont un coût environnemental. La combustion du charbon émet des fumées et des polluants ; l’extraction minière transforme les paysages et comporte des risques pour les travailleurs. Ces conséquences font partie de l’histoire industrielle et rappellent que les gains de production s’accompagnent de coûts sociaux et écologiques.'
+          ],
+          example: {
+            statement: 'Pourquoi le condenseur séparé développé par James Watt a-t-il été important pour la machine à vapeur ?',
+            calculation: 'Dans les machines antérieures, le cylindre devait être refroidi puis réchauffé au cours du cycle. Séparer la condensation du cylindre permet de réduire une partie de cette dépense thermique.',
+            answer: 'Le condenseur séparé améliore l’efficacité de la machine en limitant les pertes de chaleur liées au refroidissement répété du cylindre.'
+          },
+          exercise: {
+            question: 'Quelle différence faut-il faire entre les contributions de Thomas Newcomen et de James Watt ?',
+            answer: 'Newcomen a mis au point une machine atmosphérique pratique au début du XVIIIe siècle ; Watt a ensuite apporté des améliorations importantes, notamment le condenseur séparé.'
+          },
+          exercises: [
+            {
+              question: 'À quel problème les premières machines de Newcomen répondent-elles notamment ?',
+              answer: 'Au pompage de l’eau dans les mines.'
+            },
+            {
+              question: 'Pourquoi la machine à vapeur facilite-t-elle l’implantation de certaines usines ?',
+              answer: 'Elle réduit leur dépendance à la proximité immédiate d’un cours d’eau, à condition de disposer de combustible et d’infrastructures.'
+            },
+            {
+              question: 'Cite une conséquence environnementale de l’usage massif du charbon.',
+              answer: 'La pollution de l’air liée à la combustion ou les transformations des paysages provoquées par l’extraction minière.'
+            }
+          ],
+          sources: [
+            { title: 'Science Museum Group — Newcomen Atmospheric Engine', url: 'https://collection.sciencemuseumgroup.org.uk/objects/co50900/newcomen-atmospheric-engine' },
+            { title: 'Science Museum Group — Haydock Colliery Steam Engine', url: 'https://collection.sciencemuseumgroup.org.uk/objects/co8404624/haydock-colliery-steam-engine' },
+            { title: 'World History Encyclopedia — Révolution industrielle britannique', url: 'https://www.worldhistory.org/trans/fr/1-21828/revolution-industrielle-britannique/' }
+          ]
+        }
+      },
+      {
+        id: 'transports-chemins-fer',
+        title: 'Révolutionner les transports : canaux, chemins de fer et vapeur',
+        field: 'Histoire des transports · Infrastructures · XVIIIe-XIXe siècles',
+        summary: 'Expliquer comment les nouvelles infrastructures et la locomotive à vapeur facilitent le transport des matières premières, des marchandises et des personnes.',
+        lesson: {
+          sections: [
+            'L’industrialisation dépend de la capacité à transporter charbon, minerais, matières premières et produits finis. Avant le développement du chemin de fer, les routes, les rivières et les canaux jouent des rôles complémentaires. Les canaux peuvent réduire le coût du transport de marchandises lourdes, mais leur construction exige des capitaux, des travaux importants et des conditions géographiques favorables.',
+            'Au début du XIXe siècle, des ingénieurs perfectionnent les locomotives à vapeur et les voies ferrées. Le chemin de fer relie des mines, des villes industrielles, des ports et des marchés. La ligne entre Stockton et Darlington, ouverte en 1825, est célèbre pour son usage de locomotives à vapeur dans un service ferroviaire public, même si le transport de marchandises et de passagers s’organise alors selon des modalités différentes de celles des réseaux modernes.',
+            'La ligne Liverpool-Manchester, ouverte en 1830, est une étape majeure du transport ferroviaire régulier de passagers et de marchandises. Les chemins de fer réduisent souvent les durées de trajet et permettent des flux plus prévisibles. Ils stimulent aussi la demande de charbon, de fer et de travaux de construction, ce qui renforce les liens entre les secteurs industriels.',
+            'Les bateaux à vapeur se développent également au XIXe siècle et modifient certains transports fluviaux et maritimes. Leur adoption varie selon les routes, les coûts, les technologies et les conditions de navigation. Le rail et la vapeur n’effacent pas les autres modes de transport ; ils les complètent ou les concurrencent selon les usages.',
+            'Les infrastructures transforment la géographie économique et sociale. Les régions mieux reliées peuvent attirer des entreprises, tandis que les villes et les ports changent avec l’augmentation des échanges. Ces transformations ne profitent pas de façon identique à tous les territoires : certaines régions s’industrialisent rapidement, d’autres restent davantage rurales ou sont intégrées aux réseaux selon des rapports économiques inégaux.'
+          ],
+          example: {
+            statement: 'Une usine doit acheminer régulièrement de grandes quantités de charbon. Pourquoi un canal ou une ligne ferroviaire peut-il modifier son coût de production ?',
+            calculation: 'Le coût total dépend notamment du prix du transport, du temps nécessaire et de la régularité des livraisons. Une infrastructure efficace peut réduire le coût par tonne et limiter les retards.',
+            answer: 'Un canal ou un chemin de fer peut rendre le transport de grandes quantités de charbon moins coûteux ou plus fiable, ce qui facilite l’approvisionnement de l’usine.'
+          },
+          exercise: {
+            question: 'Comment les chemins de fer contribuent-ils au développement industriel ?',
+            answer: 'Ils transportent les matières premières, les produits et les personnes, relient les marchés et stimulent la demande de charbon, de fer et de matériel.'
+          },
+          exercises: [
+            {
+              question: 'Quelle ligne ferroviaire britannique est ouverte en 1830 entre Liverpool et Manchester ?',
+              answer: 'La ligne Liverpool-Manchester.'
+            },
+            {
+              question: 'Pourquoi les canaux sont-ils importants avant l’extension des chemins de fer ?',
+              answer: 'Ils facilitent le transport de marchandises lourdes, notamment le charbon et les matières premières.'
+            },
+            {
+              question: 'Les nouveaux transports profitent-ils de manière identique à toutes les régions ?',
+              answer: 'Non. Les effets dépendent de la présence d’infrastructures, des activités économiques et de l’intégration aux réseaux.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution industrielle britannique', url: 'https://www.worldhistory.org/trans/fr/1-21828/revolution-industrielle-britannique/' },
+            { title: 'Musée des Arts et Métiers — Dossier de l’enseignant : La Révolution industrielle', url: 'https://www.arts-et-metiers.net/musee/dossier-de-lenseignant-la-revolution-industrielle' },
+            { title: 'Encyclopaedia Britannica — Industrial Revolution', url: 'https://www.britannica.com/event/Industrial-Revolution' }
+          ]
+        }
+      },
+      {
+        id: 'conditions-vie-travail',
+        title: 'Usines, villes et conditions de vie ouvrières',
+        field: 'Histoire sociale · Travail et urbanisation · XVIIIe-XIXe siècles',
+        summary: 'Étudier les transformations de la vie quotidienne, l’urbanisation rapide, les risques du travail industriel et la diversité des expériences ouvrières.',
+        lesson: {
+          sections: [
+            'L’industrialisation transforme l’organisation du travail. Dans de nombreuses usines, les horaires sont fixés par l’employeur et le rythme dépend des machines. Les journées peuvent être longues, les salaires faibles et les conditions dangereuses, particulièrement dans certaines mines et usines. Toutefois, les expériences diffèrent selon les métiers, les régions, les entreprises, le sexe, l’âge et la période.',
+            'Les enfants travaillent dans plusieurs secteurs, notamment dans les mines et les filatures, parce que les employeurs peuvent leur confier certaines tâches pour des salaires bas. Les dangers comprennent les accidents, la fatigue et l’exposition à des environnements malsains. Des enquêtes publiques, des campagnes de réforme et des lois viennent progressivement limiter certains abus, mais les protections sont incomplètes et leur application varie.',
+            'La croissance des villes industrielles est liée à la recherche d’emploi et à la concentration des activités. Les logements peuvent être construits rapidement et manquer d’espace, d’eau potable ou d’assainissement. La surpopulation et les infrastructures insuffisantes favorisent certaines maladies. Il ne faut cependant pas supposer que toutes les villes ou tous les quartiers connaissent exactement les mêmes conditions.',
+            'Les travailleurs ne restent pas passifs face aux changements. Ils développent des solidarités, des sociétés d’entraide, des mouvements de protestation et des organisations collectives. Les premières revendications portent notamment sur les salaires, la durée du travail, la sécurité et le droit de s’organiser. Les formes de mobilisation et leur légalité évoluent selon les pays et les périodes.',
+            'À long terme, l’industrialisation contribue à transformer la structure sociale, avec l’expansion des groupes ouvriers et bourgeois. Les améliorations du niveau de vie ne sont ni immédiates ni uniformes : elles dépendent des salaires, du coût des biens, des conditions sanitaires, des droits politiques et des politiques publiques. Une analyse historique doit considérer à la fois les augmentations de production et les inégalités qui les accompagnent.'
+          ],
+          example: {
+            statement: 'Pourquoi l’augmentation de la production industrielle ne signifie-t-elle pas nécessairement une amélioration immédiate des conditions de vie de tous les travailleurs ?',
+            calculation: 'Pour évaluer le niveau de vie, il faut examiner ensemble les revenus, les prix, la durée du travail, la santé, le logement, la sécurité et la stabilité de l’emploi.',
+            answer: 'La production peut augmenter alors que les salaires restent bas, que les journées sont longues et que les logements ou les conditions de travail demeurent dangereux. Les bénéfices sont répartis de manière inégale.'
+          },
+          exercise: {
+            question: 'Cite deux difficultés rencontrées par une partie des ouvriers au début de l’industrialisation.',
+            answer: 'Par exemple : longues journées, faibles salaires, accidents, travail des enfants, logements surpeuplés ou manque d’assainissement.'
+          },
+          exercises: [
+            {
+              question: 'Pourquoi de nombreuses villes industrielles grandissent-elles rapidement ?',
+              answer: 'Parce que les usines et les activités connexes attirent des personnes en quête de travail, tandis que les populations se déplacent vers les régions industrielles.'
+            },
+            {
+              question: 'Comment les travailleurs tentent-ils d’améliorer leurs conditions ?',
+              answer: 'Par des protestations, des sociétés d’entraide, des pétitions et des organisations collectives, selon les contextes.'
+            },
+            {
+              question: 'Les conditions ouvrières sont-elles identiques dans tous les pays et à toutes les époques ?',
+              answer: 'Non. Elles varient selon les secteurs, les lieux, les périodes, les lois et les groupes de travailleurs.'
+            }
+          ],
+          sources: [
+            { title: 'OpenStax — World History, Inventions, Innovations, and Mechanization', url: 'https://openstax.org/books/world-history-volume-2/pages/10-1-inventions-innovations-and-mechanization' },
+            { title: 'Larousse — Révolution industrielle', url: 'https://www.larousse.fr/encyclopedie/divers/r%C3%A9volution_industrielle/61047' },
+            { title: 'Musée des Arts et Métiers — Dossier de l’enseignant : La Révolution industrielle', url: 'https://www.arts-et-metiers.net/musee/dossier-de-lenseignant-la-revolution-industrielle' }
+          ]
+        }
+      },
+      {
+        id: 'diffusion-deuxieme-revolution',
+        title: 'La diffusion de l’industrialisation et la deuxième révolution industrielle',
+        field: 'Histoire mondiale et économique · XIXe siècle-début du XXe siècle',
+        summary: 'Comprendre la diffusion inégale de l’industrie hors de Grande-Bretagne et les nouvelles sources d’énergie, matériaux et secteurs de la fin du XIXe siècle.',
+        lesson: {
+          sections: [
+            'L’industrialisation se diffuse progressivement hors de Grande-Bretagne au cours du XIXe siècle. La Belgique, certaines régions françaises, les territoires allemands et les États-Unis connaissent des développements industriels importants, mais à des rythmes différents. La proximité du charbon et du fer, les infrastructures, les investissements, les politiques publiques, les compétences et l’accès aux marchés influencent cette diffusion.',
+            'Le développement industriel ne suit pas un modèle unique. Certaines régions s’appuient d’abord sur le textile, d’autres sur le charbon, la métallurgie, les machines ou les chemins de fer. Les États et les entrepreneurs investissent dans les infrastructures et l’éducation technique, tandis que les réseaux commerciaux relient les économies nationales et internationales. Les avantages et les coûts de l’industrialisation restent inégalement répartis.',
+            'À partir de la seconde moitié du XIXe siècle, de nouvelles technologies et industries prennent de l’importance. L’acier devient plus facile à produire en grande quantité grâce à des procédés comme celui de Bessemer, breveté en 1856. La chimie industrielle progresse, notamment dans les colorants et les produits chimiques. Ces changements complètent les industries plus anciennes du charbon, du fer et du textile.',
+            'L’électricité et le pétrole jouent un rôle croissant dans les transformations de la fin du XIXe siècle et du début du XXe siècle. Les réseaux électriques permettent de nouvelles formes d’éclairage et d’entraînement des machines, tandis que les moteurs à combustion interne favorisent le développement de nouveaux véhicules. Ces changements sont souvent désignés par l’expression « deuxième révolution industrielle », même si les historiens discutent aussi la pertinence de cette division en étapes distinctes.',
+            'L’industrialisation modifie profondément les échanges mondiaux et les rapports de puissance. Les pays industrialisés demandent des matières premières et cherchent des débouchés, dans un contexte marqué par le colonialisme et des inégalités internationales. Les nouvelles technologies créent des biens et des emplois, mais entraînent aussi des pollutions, des conflits sociaux et des transformations du travail. Les effets doivent donc être étudiés à l’échelle locale et mondiale.'
+          ],
+          example: {
+            statement: 'Pourquoi les historiens distinguent-ils parfois une première et une deuxième révolution industrielle ?',
+            calculation: 'Ils comparent les principales sources d’énergie, les matériaux, les secteurs dominants et les techniques qui se diffusent selon les périodes.',
+            answer: 'La distinction souligne le rôle croissant de l’acier, de la chimie, de l’électricité et du pétrole à partir de la seconde moitié du XIXe siècle. Elle reste une convention utile, mais ne décrit pas une rupture simultanée partout.'
+          },
+          exercise: {
+            question: 'Cite deux innovations ou secteurs associés à l’industrialisation de la fin du XIXe siècle.',
+            answer: 'Par exemple : la production d’acier en grande quantité, la chimie industrielle, l’électricité ou les moteurs à combustion interne.'
+          },
+          exercises: [
+            {
+              question: 'L’industrialisation se diffuse-t-elle à la même vitesse dans toutes les régions ?',
+              answer: 'Non. Les rythmes dépendent notamment des ressources, des investissements, des infrastructures, des politiques et des marchés.'
+            },
+            {
+              question: 'Quel procédé, breveté par Henry Bessemer en 1856, contribue à produire de l’acier à grande échelle ?',
+              answer: 'Le procédé Bessemer.'
+            },
+            {
+              question: 'Pourquoi l’histoire de l’industrialisation doit-elle aussi prendre en compte les relations mondiales ?',
+              answer: 'Parce que les échanges de matières premières, de produits, de capitaux et de main-d’œuvre, ainsi que les rapports coloniaux, ont contribué à façonner les économies industrielles.'
+            }
+          ],
+          sources: [
+            { title: 'Musée des Arts et Métiers — Dossier de l’enseignant : La Révolution industrielle', url: 'https://www.arts-et-metiers.net/musee/dossier-de-lenseignant-la-revolution-industrielle' },
+            { title: 'Encyclopaedia Britannica — Industrial Revolution', url: 'https://www.britannica.com/event/Industrial-Revolution' },
+            { title: 'World History Encyclopedia — Révolution industrielle britannique', url: 'https://www.worldhistory.org/trans/fr/1-21828/revolution-industrielle-britannique/' }
+          ]
+        }
+      }
+    ]
   }
 ];
