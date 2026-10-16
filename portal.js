@@ -216,17 +216,28 @@ function getChapters(catalog) {
 function getChapterUrl(chapter, config) {
   const folderUrl = new URL(config.folder, document.baseURI);
 
-  if (chapter.page) {
-    return new URL(chapter.page, folderUrl).href;
+  const target =
+    chapter.page ||
+    chapter.url ||
+    chapter.href ||
+    chapter.link ||
+    chapter.file ||
+    chapter.path;
+
+  if (target) {
+    return new URL(target, folderUrl).href;
   }
 
-  const fallbackUrl = new URL(config.fallback, folderUrl);
+  if (chapter.slug) {
+    return new URL(`${chapter.slug}.html`, folderUrl).href;
+  }
 
   if (chapter.id) {
-    fallbackUrl.searchParams.set('id', chapter.id);
+    return new URL(`${chapter.id}.html`, folderUrl).href;
   }
 
-  return fallbackUrl.href;
+  console.warn('Chapitre sans lien :', chapter);
+  return new URL(config.fallback, folderUrl).href;
 }
 
 /* =========================================================
