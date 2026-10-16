@@ -1965,5 +1965,269 @@ window.courseCatalog = [
         }
       }
     ]
-  }
+  },
+
+// BRANCHE — HISTOIRE DE L’ÉCOSSE (à coller à la suite de la dernière branche du catalogue)
+
+  {
+    id: 'histoire-ecosse',
+    title: 'Histoire de l’Écosse : des premiers peuplements à la dévolution',
+    note: 'Six chapitres sur le peuplement ancien, les Romains et les Pictes, les guerres d’indépendance, la Réforme et l’Union des couronnes, l’Union de 1707 avec le jacobitisme, puis la dévolution. Les dates anciennes sont approximatives et certains récits fondateurs restent débattus.',
+    chapters: [
+      {
+        id: 'ecosse-peuplement-ancien',
+        title: 'Les premiers peuplements et les sociétés néolithiques',
+        field: 'Écosse ancienne · Du Paléolithique supérieur à l’âge du fer',
+        summary: 'Comprendre comment l’archéologie éclaire l’Écosse avant l’écriture : campements saisonniers, villages de pierre des Orcades, âge du bronze et âge du fer.',
+        lesson: {
+          sections: [
+            'L’Écosse correspond aujourd’hui à la partie nord de la Grande-Bretagne et comprend aussi des îles comme les Hébrides et les Orcades. Selon World History Encyclopedia, il n’existe pas d’histoire écrite locale avant l’arrivée des Romains, à la fin du Ier siècle de notre ère. Le passé plus ancien est connu par les pierres dressées, les campements et les sépultures. Le site de Howburn Farm, près de Biggar, est présenté comme la plus ancienne preuve d’occupation humaine de la fin du Paléolithique supérieur, vers 12 000 av. J.-C. Il s’agit d’un camp de chasse saisonnier. Au Mésolithique, les habitants sont considérés comme des chasseurs-pêcheurs nomades qui utilisaient notamment le silex, l’os et le bois de cerf.',
+            'Au Néolithique, les installations deviennent plus durables. Sur l’île de Papa Westray, dans les Orcades, le site de Knap of Howar a été occupé entre 3700 et 2800 av. J.-C. et abrite ce que World History Encyclopedia décrit comme la plus ancienne maison en pierre d’Europe du Nord. Le village de Skara Brae est daté d’environ 3100 av. J.-C. et le complexe du Ness of Brodgar d’environ 3500 av. J.-C. ; ce dernier est fouillé depuis 2003. Les matériaux dépendent de la région : pierre dans le nord, bois plus au sud, comme à Balbridie, dans l’Aberdeenshire. Les sépultures en pierre sèche (cairns, tombes à chambre) se retrouvent dans tout le pays.',
+            'Vers 2500 av. J.-C., des migrants appelés Beaker People arrivent sur la côte est selon World History Encyclopedia ; le bronze est introduit depuis l’Irlande vers 2000 av. J.-C. Le fer arrive ensuite et l’article l’associe à des migrations celtiques, dont l’origine exacte est débattue. Cette période voit apparaître des structures défensives : crannogs (habitations bâties sur des îlots artificiels de lac), forts de colline et brochs, tours circulaires en pierre sèche à une seule entrée. Le Mousa Broch, dans les Shetland, en est l’exemple le plus célèbre et pouvait atteindre une douzaine de mètres de haut.'
+          ],
+          example: {
+            statement: 'Knap of Howar a été occupé entre 3700 et 2800 av. J.-C. Pendant combien de temps environ ?',
+            calculation: 'Pour des dates avant notre ère, les années décroissent vers le présent : on soustrait la date la plus récente de la plus ancienne. 3700 − 2800 = 900.',
+            answer: 'Environ 900 ans. Il s’agit d’une estimation fondée sur des datations archéologiques, pas d’une durée exacte.'
+          },
+          exercise: {
+            question: 'Pourquoi l’histoire de l’Écosse ancienne repose-t-elle surtout sur l’archéologie ?',
+            answer: 'Parce qu’il n’existe pas de sources écrites locales avant l’arrivée des Romains : on s’appuie donc sur les sites, les sépultures, les pierres dressées et d’autres vestiges matériels.'
+          },
+          exercises: [
+            {
+              question: 'Quel site des Orcades est présenté comme abritant la plus ancienne maison en pierre d’Europe du Nord ?',
+              answer: 'Knap of Howar, sur l’île de Papa Westray.'
+            },
+            {
+              question: 'Qu’est-ce qu’un broch ?',
+              answer: 'Une tour circulaire en pierre sèche, à murs creux et à entrée unique, typique de l’âge du fer. Le Mousa Broch, dans les Shetland, est le plus célèbre.'
+            },
+            {
+              question: 'Pourquoi la position actuelle de Skara Brae, près de la mer, ne prouve-t-elle pas qu’il a été construit sur le rivage ?',
+              answer: 'Parce que l’érosion a modifié le trait de côte : selon World History Encyclopedia, ces sites se trouvaient à l’origine plus à l’intérieur des terres.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Écosse Ancienne', url: 'https://www.worldhistory.org/trans/fr/1-103/ecosse-ancienne/' },
+            { title: 'World History Encyclopedia — Knap of Howar', url: 'https://www.worldhistory.org/trans/fr/1-11444/knap-of-howar/' },
+            { title: 'World History Encyclopedia — Ness of Brodgar', url: 'https://www.worldhistory.org/trans/fr/1-11445/ness-of-brodgar/' },
+            { title: 'World History Encyclopedia — Skara Brae', url: 'https://www.worldhistory.org/trans/fr/1-11449/skara-brae/' }
+          ]
+        }
+      },
+      {
+        id: 'ecosse-romains-pictes-royaumes',
+        title: 'Romains, Pictes, Scots et naissance du royaume',
+        field: 'Écosse · Ier–IXe siècle apr. J.-C.',
+        summary: 'Comprendre les incursions romaines au nord du mur d’Hadrien, le rôle des Pictes et de Dál Riata, l’arrivée du christianisme et la tradition de Kenneth MacAlpin.',
+        lesson: {
+          sections: [
+            'Au nord du mur d’Hadrien, les Romains connaissaient le territoire sous le nom de Calédonie. Selon World History Encyclopedia, Julius Agricola, gouverneur de la Bretagne romaine, envahit l’Écosse en 79/80 apr. J.-C. et affronte en 83 le chef picte Calgacus à la bataille du Mons Graupius. L’historien Tacite relate ces événements dans l’Agricola, en 98, ce qui en fait le premier récit écrit de l’histoire écossaise. Rome ne parvient pas à conserver durablement ces territoires : le mur d’Hadrien est construit en 122, puis le mur d’Antonin en 142, entre les rivières Clyde et Forth. Les Romains se replient ensuite vers le sud.',
+            'Selon la même source, la tribu irlandaise des Scotti s’installe avant et après le départ de Rome et fonde le royaume de Dál Riata, qui inclut Argyll. Il atteint son apogée sous Áedán mac Gabráin (574–608). Le nord reste dominé par les Pictes. Le christianisme se diffuse par l’Irlande : Bède attribue à Ninian une mission chez les Pictes en 397, et saint Columba est associé à la conversion vers 563. Il faut rappeler que ces récits mêlent faits historiques et traditions hagiographiques.',
+            'World History Encyclopedia présente Kenneth MacAlpin (843–858) comme celui qui aurait uni les Scots de Dál Riata et les Pictes et serait devenu le premier roi d’Écosse. Elle précise que son existence est certaine mais que son histoire a été enjolivée au fil des siècles, au point qu’il est souvent considéré comme semi-légendaire. La formation du royaume est donc un processus progressif, que les sources anciennes ne permettent de reconstituer que partiellement.'
+          ],
+          example: {
+            statement: 'Le Mons Graupius est daté de 83 apr. J.-C. et le mur d’Hadrien de 122. Combien d’années les séparent ?',
+            calculation: 'Pour des dates après J.-C., on soustrait la plus ancienne de la plus récente : 122 − 83 = 39.',
+            answer: '39 ans. Ces repères sont ceux de World History Encyclopedia ; certaines datations antiques peuvent varier selon les sources.'
+          },
+          exercise: {
+            question: 'Pourquoi peut-on dire que l’Agricola de Tacite est un texte important pour l’histoire de l’Écosse ?',
+            answer: 'Parce que, selon World History Encyclopedia, il contient le premier compte rendu écrit de l’histoire écossaise, avec le récit de la bataille du Mons Graupius.'
+          },
+          exercises: [
+            {
+              question: 'Entre quelles rivières le mur d’Antonin a-t-il été construit, et en quelle année ?',
+              answer: 'Entre la Clyde et le Forth, en 142 apr. J.-C.'
+            },
+            {
+              question: 'Qui était Calgacus ?',
+              answer: 'Un chef picte affronté par Agricola à la bataille du Mons Graupius, en 83 apr. J.-C., d’après Tacite.'
+            },
+            {
+              question: 'Quel royaume les Scotti, venus d’Irlande, ont-ils établi en Écosse ?',
+              answer: 'Le royaume de Dál Riata, qui incluait notamment Argyll.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Écosse Ancienne', url: 'https://www.worldhistory.org/trans/fr/1-103/ecosse-ancienne/' },
+            { title: 'World History Encyclopedia — Scotland (Ancient)', url: 'https://www.worldhistory.org/Scotland_(Ancient)/' },
+            { title: 'World History Encyclopedia — Mur d’Hadrien', url: 'https://www.worldhistory.org/trans/fr/1-11580/mur-dhadrien/' },
+            { title: 'World History Encyclopedia — Mur d’Antonin', url: 'https://www.worldhistory.org/trans/fr/1-11459/mur-dantonin/' }
+          ]
+        }
+      },
+      {
+        id: 'ecosse-guerres-independance-arbroath',
+        title: 'Les guerres d’indépendance et la Déclaration d’Arbroath',
+        field: 'Écosse médiévale · 1296–1357 et 1320',
+        summary: 'Comprendre le conflit avec l’Angleterre d’Édouard Ier, les victoires de Stirling Bridge et de Bannockburn, et la lettre des barons écossais au pape en 1320.',
+        lesson: {
+          sections: [
+            'Les guerres d’indépendance écossaises naissent de la crise dynastique qui suit la mort du roi Alexandre III, en 1286. En 1292, Édouard Ier d’Angleterre se proclame suzerain de l’Écosse et accorde la couronne à John Balliol. Face à ses prétentions, la noblesse écossaise prend le pouvoir à Balliol en 1295. En 1296, Édouard Ier intervient militairement et Balliol renonce à la couronne : c’est le début de la longue guerre.',
+            'En 1297, la rébellion menée par William Wallace et Andrew Murray remporte la bataille de Stirling Bridge. Édouard Ier n’abandonne pas pour autant sa campagne : il envahit de nouveau l’Écosse en 1303-1304, prend le château de Stirling et obtient la soumission de la plupart des nobles. En 1306, Robert Bruce tue John Comyn et s’empare du trône. Sa victoire de Bannockburn, en juin 1314, contre l’armée d’Édouard II, renforce sa position, mais l’Angleterre ne reconnaît pas pour autant l’indépendance écossaise ni son titre royal.',
+            'Le 6 avril 1320, des barons écossais envoient depuis l’abbaye d’Arbroath une lettre au pape Jean XXII. Elle répond à l’excommunication de Robert Ier et demande au pape de reconnaître l’indépendance de l’Écosse et Robert Bruce comme roi légitime. D’après les Archives nationales d’Écosse, elle a probablement été rédigée par Bernard, abbé d’Arbroath. Le texte affirme, en substance, que l’on combat non pour la gloire, la richesse ou les honneurs, mais pour la liberté seule. Les guerres s’achèvent avec le traité de Berwick, en 1357, qui permet la libération de David II, capturé par les Anglais en 1346.'
+          ],
+          example: {
+            statement: 'La bataille de Bannockburn a eu lieu en 1314 et la Déclaration d’Arbroath date de 1320. Combien d’années les séparent ?',
+            calculation: '1320 − 1314 = 6.',
+            answer: '6 ans. La Déclaration est donc postérieure à Bannockburn, mais elle est envoyée alors que la guerre et le conflit diplomatique se poursuivent.'
+          },
+          exercise: {
+            question: 'Pourquoi la Déclaration d’Arbroath a-t-elle été adressée au pape ?',
+            answer: 'Elle faisait partie d’une offensive diplomatique après l’excommunication de Robert Ier : les Écossais demandaient au pape de reconnaître leur indépendance et Robert Bruce comme roi légitime.'
+          },
+          exercises: [
+            {
+              question: 'Qui dirige la rébellion victorieuse à Stirling Bridge en 1297 ?',
+              answer: 'William Wallace et Andrew Murray.'
+            },
+            {
+              question: 'Quelle bataille de 1314 renforce la position de Robert Bruce, et contre quelle armée ?',
+              answer: 'La bataille de Bannockburn, contre une armée anglaise commandée par Édouard II.'
+            },
+            {
+              question: 'À qui la Déclaration d’Arbroath est-elle adressée et à quelle date ?',
+              answer: 'Au pape Jean XXII, le 6 avril 1320.'
+            }
+          ],
+          sources: [
+            { title: 'National Records of Scotland — The Declaration of Arbroath', url: 'https://www.nrscotland.gov.uk/learning-and-events/the-declaration-of-arbroath/' },
+            { title: 'Historic Environment Scotland — Declaration of Arbroath Trail', url: 'https://www.historicenvironment.scot/media/6123/declaration-arbroath-trail.pdf' },
+            { title: 'University of Guelph — Wars of Scottish Independence', url: 'https://scottishcharters.lib.uoguelph.ca/exhibits/show/signedsealed/wars-of-scottish-independence/overview' },
+            { title: 'Wikipedia — Declaration of Arbroath', url: 'https://en.wikipedia.org/wiki/Declaration_of_Arbroath' }
+          ]
+        }
+      },
+      {
+        id: 'ecosse-reforme-marie-stuart-union-couronnes',
+        title: 'La Réforme, Marie Stuart et l’Union des couronnes',
+        field: 'Écosse moderne · 1542–1603',
+        summary: 'Comprendre le tournant protestant de 1560, le règne de Marie Stuart et l’accession de Jacques VI au trône d’Angleterre en 1603.',
+        lesson: {
+          sections: [
+            'Marie Stuart devient reine d’Écosse en 1542, alors qu’elle est encore un nourrisson. Sa mère, Marie de Guise, assure la régence de 1554 à 1560. En avril 1558, Marie épouse le dauphin François, ce qui renforce l’alliance entre l’Écosse et la France. Au même moment, le mouvement réformateur progresse, avec des figures comme John Knox, qui revient en Écosse en 1559 après un séjour sur le continent.',
+            'En 1560, après la mort de Marie de Guise et la défaite des forces françaises au siège de Leith, les Lords de la Congrégation, favorables à la Réforme, dominent la scène politique. Le Parlement se réunit à Édimbourg le 1er août 1560. Il approuve la Confession de foi écossaise (27 août), abolit l’autorité du pape sur l’Église d’Écosse et interdit la messe. La Confession est le fruit d’un travail collectif de six réformateurs, même si son écriture est traditionnellement attribuée à Knox. Marie, catholique, revient en Écosse en août 1561 et refuse de ratifier ces lois.',
+            'En juillet 1567, des nobles contraignent Marie à abdiquer en faveur de son fils Jacques VI. Elle meurt en 1587. Le 24 mars 1603, Jacques VI hérite du trône d’Angleterre à la mort d’Élisabeth Ire et devient aussi Jacques Ier d’Angleterre. C’est l’Union des couronnes. Les deux royaumes restent toutefois distincts, avec des parlements séparés, jusqu’en 1707.'
+          ],
+          example: {
+            statement: 'Marie Stuart règne de 1542 à 1567. Combien d’années dure son règne ?',
+            calculation: '1567 − 1542 = 25.',
+            answer: '25 ans, dont une grande partie sous régence ou en dehors d’Écosse : elle ne revient en Écosse qu’en 1561.'
+          },
+          exercise: {
+            question: 'Pourquoi l’Union des couronnes de 1603 ne crée-t-elle pas un royaume unique ?',
+            answer: 'Parce qu’il s’agit d’une union personnelle : un même souverain règne sur deux royaumes qui conservent chacun leur parlement et leur gouvernement jusqu’en 1707.'
+          },
+          exercises: [
+            {
+              question: 'À quelle date le Parlement écossais se réunit-il pour consacrer la Réforme ?',
+              answer: 'Le 1er août 1560, à Édimbourg.'
+            },
+            {
+              question: 'Qui est traditionnellement considéré comme l’auteur de la Confession de foi écossaise de 1560 ?',
+              answer: 'John Knox, même si le texte est le résultat du travail de six réformateurs.'
+            },
+            {
+              question: 'Qui devient roi d’Écosse après l’abdication de Marie Stuart en 1567 ?',
+              answer: 'Son fils, Jacques VI.'
+            }
+          ],
+          sources: [
+            { title: 'EBSCO Research Starters — Scottish Reformation', url: 'https://ebsco.com/research-starters/history/scottish-reformation' },
+            { title: 'Scottish Storytelling Centre — John Knox House', url: 'https://www.scottishstorytellingcentre.com/john-knox-house/history-of-the-house/' },
+            { title: 'Wikipedia — Book of Discipline (Church of Scotland)', url: 'https://en.wikipedia.org/wiki/Book_of_Discipline_(Church_of_Scotland)' },
+            { title: 'New World Encyclopedia — Acts of Union 1707', url: 'https://www.newworldencyclopedia.org/entry/Acts_of_Union_1707' }
+          ]
+        }
+      },
+      {
+        id: 'ecosse-union-1707-jacobitisme',
+        title: 'L’Union de 1707 et le jacobitisme',
+        field: 'Écosse · 1707–1746',
+        summary: 'Comprendre la naissance de la Grande-Bretagne en 1707, le sens du mot « jacobite » et la bataille de Culloden en 1746.',
+        lesson: {
+          sections: [
+            'Les Actes d’Union sont deux lois : l’Union with Scotland Act 1706, votée par le Parlement d’Angleterre, et l’Union with England Act 1707, votée par le Parlement d’Écosse. Elles mettent en œuvre un traité négocié en 1706 par des commissaires des deux pays et entrent en vigueur le 1er mai 1707. Les deux parlements fusionnent alors en un Parlement de Grande-Bretagne, siégeant à Westminster, et les deux royaumes forment un seul royaume. Trois tentatives d’union antérieures, en 1606, 1667 et 1689, n’avaient pas abouti. En 1705, le Parlement anglais avait adopté l’Alien Act, qui menaçait d’imposer des sanctions économiques à l’Écosse.',
+            'Le terme « jacobite » vient de Jacobus, la forme latine de Jacques. Il désigne les partisans du rétablissement de la maison Stuart sur le trône. L’Act of Settlement de 1701 réservait la couronne aux protestants et la reine Anne, dernière souveraine Stuart, meurt en 1714. En juillet 1745, Charles Édouard Stuart, surnommé « Bonnie Prince Charlie », débarque à Eriskay, dans les Hébrides, pour tenter de reconquérir le trône au nom de son père.',
+            'Le 16 avril 1746, à Culloden, sur la lande de Drummossie près d’Inverness, l’armée jacobite est battue de manière décisive par les troupes gouvernementales du duc de Cumberland, fils de George II. Cette défaite met fin au soulèvement de 1745. Charles Édouard doit se cacher dans les Highlands avant de regagner la France. Le gouvernement britannique adopte ensuite des mesures de désarmement et de répression qui touchent la société des Highlands, notamment les armes et le costume traditionnel.'
+          ],
+          example: {
+            statement: 'L’Union des couronnes date de 1603 et les Actes d’Union de 1707. Pendant combien d’années les deux royaumes ont-ils partagé un souverain avant de fusionner leurs parlements ?',
+            calculation: '1707 − 1603 = 104.',
+            answer: '104 ans. Pendant cette période, les deux royaumes avaient le même monarque mais des parlements séparés.'
+          },
+          exercise: {
+            question: 'Quels changements les Actes d’Union de 1707 introduisent-ils ?',
+            answer: 'Ils fusionnent les parlements d’Écosse et d’Angleterre en un Parlement de Grande-Bretagne siégeant à Westminster et unissent les deux royaumes en un seul.'
+          },
+          exercises: [
+            {
+              question: 'À quelle date les Actes d’Union prennent-ils effet ?',
+              answer: 'Le 1er mai 1707.'
+            },
+            {
+              question: 'Que désigne le mot « jacobite » ?',
+              answer: 'Un partisan du rétablissement de la maison Stuart sur le trône ; le mot vient de Jacobus, forme latine de Jacques.'
+            },
+            {
+              question: 'Quel événement met fin au soulèvement jacobite de 1745 ?',
+              answer: 'La bataille de Culloden, le 16 avril 1746.'
+            }
+          ],
+          sources: [
+            { title: 'New World Encyclopedia — Acts of Union 1707', url: 'https://www.newworldencyclopedia.org/entry/Acts_of_Union_1707' },
+            { title: 'Royal Collection Trust — The Battle of Culloden', url: 'https://rct.uk/collection/exhibitions/the-first-georgians/the-queens-gallery-buckingham-palace/explore-the-exhibition/the-early-georgians-at-war/the-jacobite-rising-of-1745/the-battle-of-culloden' },
+            { title: 'Wikipedia — Battle of Culloden', url: 'https://en.wikipedia.org/wiki/Battle_of_Culloden' },
+            { title: 'Wikipedia — Union of the Crowns (Simple English)', url: 'https://simple.wikipedia.com/wiki/Union_of_the_Crowns' }
+          ]
+        }
+      },
+      {
+        id: 'ecosse-devolution-referendum-2014',
+        title: 'La dévolution et le référendum de 2014',
+        field: 'Écosse contemporaine · 1997–2014',
+        summary: 'Comprendre le rétablissement d’un Parlement écossais en 1999 et le référendum sur l’indépendance du 18 septembre 2014.',
+        lesson: {
+          sections: [
+            'Un premier référendum sur la dévolution, en 1979, n’atteint pas le seuil requis. Après la victoire travailliste aux élections générales de mai 1997, un nouveau référendum a lieu le 11 septembre 1997. Environ 74,3 % des votants approuvent la création d’un Parlement écossais et environ 63,5 % approuvent qu’il dispose de pouvoirs fiscaux. Le Parlement britannique adopte ensuite le Scotland Act 1998, qui crée le Parlement et l’exécutif écossais.',
+            'Les premières élections ont lieu le 6 mai 1999 et le Parlement tient sa première séance le 12 mai 1999. Il compte 129 membres et dispose de compétences étendues dans des domaines comme la santé ou l’éducation, tandis que certaines matières restent réservées au Parlement du Royaume-Uni. Le Scotland Act 2012 puis le Scotland Act 2016 élargissent ensuite ses pouvoirs.',
+            'Le Scottish National Party remporte la majorité des sièges en 2011 avec un engagement à organiser un référendum. En octobre 2012, les gouvernements britannique et écossais s’accordent pour que le Parlement écossais ait le pouvoir de l’organiser. Le référendum a lieu le 18 septembre 2014 ; la question posée est « Should Scotland be an independent country? ». Les jeunes de 16 et 17 ans peuvent voter. Le non l’emporte avec environ 55,3 % des voix ; le oui recueille environ 44,7 %. La Commission Smith publie ensuite des recommandations de nouveaux transferts de pouvoirs.'
+          ],
+          example: {
+            statement: 'Le Parlement d’Écosse est dissous en 1707 et se réunit de nouveau en 1999. Combien d’années séparent ces deux dates ?',
+            calculation: '1999 − 1707 = 292.',
+            answer: 'Environ 292 ans. Le calcul est approximatif car il ne tient pas compte des mois et jours exacts.'
+          },
+          exercise: {
+            question: 'Quelle différence y a-t-il entre l’issue du référendum de 1979 et celle de 1997 ?',
+            answer: 'En 1979, le résultat n’atteint pas le seuil fixé par la loi de 1978. En 1997, une majorité nette approuve le Parlement et ses pouvoirs fiscaux, ce qui conduit au Scotland Act 1998.'
+          },
+          exercises: [
+            {
+              question: 'Quelle loi crée le Parlement écossais actuel ?',
+              answer: 'Le Scotland Act 1998.'
+            },
+            {
+              question: 'Quel est le résultat approximatif du référendum du 18 septembre 2014 ?',
+              answer: 'Le non l’emporte avec environ 55,3 % des voix, contre environ 44,7 % pour le oui.'
+            },
+            {
+              question: 'Quelle question était posée lors du référendum de 2014 ?',
+              answer: '« Should Scotland be an independent country? », c’est-à-dire : « L’Écosse doit-elle être un pays indépendant ? »'
+            }
+          ],
+          sources: [
+            { title: 'Scottish Government — Scotland’s Future', url: 'https://www.gov.scot/publications/scotlands-future/pages/16/' },
+            { title: 'Wikipedia — Scottish devolution', url: 'https://en.wikipedia.org/wiki/Scottish_devolution' },
+            { title: 'Wikipedia — 2014 Scottish independence referendum', url: 'https://en.wikipedia.org/wiki/2014_Scottish_independence_referendum' },
+            { title: 'Parliament of Australia — Scottish referendum (FlagPost)', url: 'https://www.aph.gov.au/About_Parliament/Parliamentary_Departments/Parliamentary_Library/FlagPost/2014/September/Scottish_referendum' }
+          ]
+        }
+      }
+    ]
+  },
+
 ];
+
