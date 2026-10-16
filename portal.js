@@ -266,7 +266,7 @@ return fallbackUrl.href;
 
 function displayChapters(disciplineId, chapters, config) {
 const submenu = document.querySelector(
-"[data-submenu-for="${disciplineId}"]"
+'[data-submenu-for="${disciplineId}"]'
 );
 
 if (!submenu) {
@@ -318,7 +318,7 @@ submenu.appendChild(list);
 async function initialiseMobileChapters() {
 for (const [disciplineId, config] of Object.entries(disciplines)) {
 const submenu = document.querySelector(
-"[data-submenu-for="${disciplineId}"]"
+'[data-submenu-for="${disciplineId}"]'
 );
 
 if (!submenu) {
