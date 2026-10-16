@@ -10,17 +10,81 @@
     <script src="portal.js" defer></script>
   </head>
   <body>
-    <header class="masthead">
-      <a class="brand" href="index.html" aria-label="La connaissance, accueil">
-        <span class="brand-mark" aria-hidden="true">K</span>
-        <span>LA CONNAISSANCE</span>
-      </a>
-      <nav class="top-navigation" aria-label="Navigation principale">
-        <a href="#cours">Explorer</a>
-        <a href="#suite">À venir</a>
-      </nav>
-      <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
-    </header>
+    
+<header class="masthead">
+  <a class="brand" href="index.html" aria-label="La connaissance, accueil">
+    <span class="brand-mark" aria-hidden="true">K</span>
+    <span>LA CONNAISSANCE</span>
+  </a>
+
+  <nav class="top-navigation" aria-label="Navigation principale">
+    <a href="#cours">Explorer</a>
+    <a href="#suite">À venir</a>
+  </nav>
+
+  <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
+
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="mobile-navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<nav
+  class="mobile-navigation"
+  id="mobile-navigation"
+  aria-label="Index des disciplines"
+  aria-hidden="true"
+  inert
+>
+  <div class="mobile-navigation-inner">
+    <p class="eyebrow">INDEX DU PORTAIL</p>
+
+    <a href="#cours" class="mobile-nav-link">
+      <span>00</span> Explorer les cours
+    </a>
+    <a href="cours-mathematiques/programmes.html" class="mobile-nav-link">
+      <span>01</span> Mathématiques
+    </a>
+    <a href="cours-physique/index.html" class="mobile-nav-link">
+      <span>02</span> Physique
+    </a>
+    <a href="cours-chimie/index.html" class="mobile-nav-link">
+      <span>03</span> Chimie
+    </a>
+    <a href="cours-economie/index.html" class="mobile-nav-link">
+      <span>04</span> Économie
+    </a>
+    <a href="cours-geologie/index.html" class="mobile-nav-link">
+      <span>05</span> Géologie
+    </a>
+    <a href="cours-climatologie/index.html" class="mobile-nav-link">
+      <span>06</span> Climatologie
+    </a>
+    <a href="cours-paleontologie/index.html" class="mobile-nav-link">
+      <span>07</span> Paléontologie
+    </a>
+    <a href="cours-anthropologie/index.html" class="mobile-nav-link">
+      <span>08</span> Anthropologie
+    </a>
+    <a href="cours-histoire/index.html" class="mobile-nav-link">
+      <span>09</span> Histoire
+    </a>
+
+    <a href="#suite" class="mobile-nav-link mobile-nav-coming">
+      <span>10+</span> Les disciplines à venir
+    </a>
+  </div>
+</nav>
+
 
     <main>
       <section class="opening" aria-labelledby="page-title">
