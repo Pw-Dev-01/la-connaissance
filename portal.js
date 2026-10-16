@@ -17,6 +17,7 @@ entry.classList.remove('is-focused');
 
 /* =========================================================
 2. MENU HAMBURGER
+Fonctionnement conservé
 ========================================================= */
 
 const menuToggle = document.querySelector('.menu-toggle');
@@ -37,24 +38,24 @@ mobileNavigation.inert = !isOpen;
 }
 
 if (menuToggle && mobileNavigation) {
-// Initialise l'état du menu.
+function setMenuOpenInitialState() {
 const initiallyOpen =
 menuToggle.getAttribute('aria-expanded') === 'true';
 
 setMenuOpen(initiallyOpen);
 
-// Ouvre et ferme le menu hamburger.
-menuToggle.addEventListener('click', (event) => {
-event.preventDefault();
+}
 
+setMenuOpenInitialState();
+
+menuToggle.addEventListener('click', () => {
 const isOpen =
-  menuToggle.getAttribute('aria-expanded') === 'true';
+menuToggle.getAttribute('aria-expanded') === 'true';
 
 setMenuOpen(!isOpen);
 
 });
 
-// Ferme le menu avec la touche Échap.
 document.addEventListener('keydown', (event) => {
 if (
 event.key === 'Escape' &&
@@ -65,14 +66,12 @@ menuToggle.focus();
 }
 });
 
-// Ferme le menu lorsque la fenêtre passe en affichage bureau.
 window.addEventListener('resize', () => {
 if (window.innerWidth > 760) {
 setMenuOpen(false);
 }
 });
 
-// Gestion des clics dans la navigation mobile.
 mobileNavigation.addEventListener('click', (event) => {
 const target = event.target;
 
@@ -80,13 +79,11 @@ if (!(target instanceof Element)) return;
 
 const button = target.closest('.mobile-nav-expand');
 
-// Gestion des boutons d'ouverture des sous-menus.
 if (button && mobileNavigation.contains(button)) {
   event.preventDefault();
   event.stopPropagation();
 
   const submenuId = button.getAttribute('aria-controls');
-
   const submenu = submenuId
     ? document.getElementById(submenuId)
     : null;
@@ -115,7 +112,6 @@ if (button && mobileNavigation.contains(button)) {
   return;
 }
 
-// Ferme le hamburger lorsqu'un lien est sélectionné.
 if (target.closest('a')) {
   setMenuOpen(false);
 }
@@ -125,68 +121,67 @@ if (target.closest('a')) {
 
 /* =========================================================
 3. CONFIGURATION DES DISCIPLINES
-Les fichiers de données sont dans les dossiers enfants.
+Seuls les chemins des fichiers data.js sont modifiés.
 ========================================================= */
 
 const disciplines = {
 mathematiques: {
 file: './cours-mathematiques/mathematiques-data.js',
-folder: './cours-mathematiques/',
+folder: 'cours-mathematiques/',
 fallback: 'programmes.html'
 },
 
 physique: {
 file: './cours-physique/physique-data.js',
-folder: './cours-physique/',
+folder: 'cours-physique/',
 fallback: 'index.html'
 },
 
 chimie: {
 file: './cours-chimie/chimie-data.js',
-folder: './cours-chimie/',
+folder: 'cours-chimie/',
 fallback: 'index.html'
 },
 
 economie: {
 file: './cours-economie/economie-data.js',
-folder: './cours-economie/',
+folder: 'cours-economie/',
 fallback: 'index.html'
 },
 
 geologie: {
 file: './cours-geologie/geologie-data.js',
-folder: './cours-geologie/',
+folder: 'cours-geologie/',
 fallback: 'index.html'
 },
 
 climatologie: {
 file: './cours-climatologie/climatologie-data.js',
-folder: './cours-climatologie/',
+folder: 'cours-climatologie/',
 fallback: 'index.html'
 },
 
 paleontologie: {
 file: './cours-paleontologie/paleontologie-data.js',
-folder: './cours-paleontologie/',
+folder: 'cours-paleontologie/',
 fallback: 'index.html'
 },
 
 anthropologie: {
 file: './cours-anthropologie/anthropologie-data.js',
-folder: './cours-anthropologie/',
+folder: 'cours-anthropologie/',
 fallback: 'cours.html'
 },
 
 histoire: {
 file: './cours-histoire/histoire-data.js',
-folder: './cours-histoire/',
+folder: 'cours-histoire/',
 fallback: 'index.html'
 }
 };
 
 /* =========================================================
 4. CHARGEMENT DES FICHIERS DE DONNÉES
-Chaque fichier doit définir window.courseCatalog.
 ========================================================= */
 
 function loadDisciplineData(file) {
@@ -194,7 +189,6 @@ return new Promise((resolve, reject) => {
 window.courseCatalog = undefined;
 
 const script = document.createElement('script');
-
 script.src = new URL(file, document.baseURI).href;
 script.async = true;
 
@@ -274,7 +268,7 @@ return fallbackUrl.href;
 }
 
 /* =========================================================
-7. AFFICHAGE DES CHAPITRES DANS LES SOUS-MENUS
+7. AFFICHAGE DES CHAPITRES
 ========================================================= */
 
 function displayChapters(disciplineId, chapters, config) {
@@ -325,7 +319,7 @@ submenu.appendChild(list);
 }
 
 /* =========================================================
-8. INITIALISATION DE TOUS LES SOUS-MENUS
+8. INITIALISATION DES SOUS-MENUS
 ========================================================= */
 
 async function initialiseMobileChapters() {
@@ -357,7 +351,6 @@ try {
   );
 
   const message = document.createElement('p');
-
   message.className = 'mobile-chapter-error';
   message.textContent =
     'Impossible de charger les chapitres.';
