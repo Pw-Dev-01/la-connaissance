@@ -195,18 +195,15 @@ function loadDisciplineData(file) {
    5. EXTRACTION DES CHAPITRES
    ========================================================= */
 
-function getChapters(catalog) {
-  const branches = Array.isArray(catalog)
-    ? catalog
-    : Object.values(catalog || {});
+function getChapterUrl(chapter, config) {
+  const folderUrl = new URL(config.folder, document.baseURI);
+  const url = new URL(config.coursePage || 'cours.html', folderUrl);
 
-  return branches.flatMap((branch) => {
-    if (!branch || !Array.isArray(branch.chapters)) {
-      return [];
-    }
+  if (chapter.id) {
+    url.searchParams.set('id', chapter.id);
+  }
 
-    return branch.chapters;
-  });
+  return url.href;
 }
 
 /* =========================================================
