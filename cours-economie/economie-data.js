@@ -408,8 +408,8 @@ window.courseCatalog = [
 // au format « 01 / FICHE — Fiche de l’ouvrage ».
 // ====================================================
   {
-    id: 'grands-ouvrages',
-    title: 'Les grands ouvrages de l’économie',
+    id: 'grands-livres',
+    title: 'Les grands livres de l’économie',
     note: 'Dix ouvrages de référence de la pensée économique, présentés par leur fiche bibliographique vérifiée. Cette sélection n’est pas exhaustive.',
     chapters: [
       {
