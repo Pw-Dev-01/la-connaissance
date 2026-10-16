@@ -1,10 +1,14 @@
+
 <!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f1f3ec">
-    <meta name="description" content="La connaissance : un espace de cours pour explorer les mathématiques, la physique, la chimie, l'économie, la géologie, la climatologie, la paléontologie, l'anthropologie et l'histoire.">
+    <meta
+      name="description"
+      content="La connaissance : un espace de cours pour explorer les mathématiques, la physique, la chimie, l'économie, la géologie, la climatologie, la paléontologie, l'anthropologie et l'histoire."
+    >
     <title>La connaissance · Explorer les cours</title>
     <link rel="stylesheet" href="portal.css">
     <script src="portal.js" defer></script>
@@ -52,36 +56,193 @@
           <span>00</span> Explorer les cours
         </a>
 
-        <a href="cours-mathematiques/programmes.html" class="mobile-nav-link">
-          <span>01</span> Mathématiques
-        </a>
+        <!-- Mathématiques -->
+        <div class="mobile-nav-group" data-discipline="mathematiques">
+          <div class="mobile-nav-row">
+            <a
+              href="cours-mathematiques/programmes.html"
+              class="mobile-nav-link"
+            >
+              <span>01</span> Mathématiques
+            </a>
 
-        <a href="cours-physique/index.html" class="mobile-nav-link">
-          <span>02</span> Physique
-        </a>
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres de mathématiques"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-mathematiques"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
 
-        <a href="cours-chimie/index.html" class="mobile-nav-link">
-          <span>03</span> Chimie
-        </a>
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-mathematiques"
+            data-submenu-for="mathematiques"
+            hidden
+          ></div>
+        </div>
 
-        <a href="cours-economie/index.html" class="mobile-nav-link">
-          <span>04</span> Économie
-        </a>
+        <!-- Physique -->
+        <div class="mobile-nav-group" data-discipline="physique">
+          <div class="mobile-nav-row">
+            <a href="cours-physique/index.html" class="mobile-nav-link">
+              <span>02</span> Physique
+            </a>
 
-        <a href="cours-geologie/index.html" class="mobile-nav-link">
-          <span>05</span> Géologie
-        </a>
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres de physique"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-physique"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
 
-        <a href="cours-climatologie/index.html" class="mobile-nav-link">
-          <span>06</span> Climatologie
-        </a>
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-physique"
+            data-submenu-for="physique"
+            hidden
+          ></div>
+        </div>
 
-        <a href="cours-paleontologie/index.html" class="mobile-nav-link">
-          <span>07</span> Paléontologie
-        </a>
+        <!-- Chimie -->
+        <div class="mobile-nav-group" data-discipline="chimie">
+          <div class="mobile-nav-row">
+            <a href="cours-chimie/index.html" class="mobile-nav-link">
+              <span>03</span> Chimie
+            </a>
 
-        <!-- Anthropologie avec sous-menu dépliant -->
-        <div class="mobile-nav-group">
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres de chimie"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-chimie"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-chimie"
+            data-submenu-for="chimie"
+            hidden
+          ></div>
+        </div>
+
+        <!-- Économie -->
+        <div class="mobile-nav-group" data-discipline="economie">
+          <div class="mobile-nav-row">
+            <a href="cours-economie/index.html" class="mobile-nav-link">
+              <span>04</span> Économie
+            </a>
+
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres d’économie"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-economie"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-economie"
+            data-submenu-for="economie"
+            hidden
+          ></div>
+        </div>
+
+        <!-- Géologie -->
+        <div class="mobile-nav-group" data-discipline="geologie">
+          <div class="mobile-nav-row">
+            <a href="cours-geologie/index.html" class="mobile-nav-link">
+              <span>05</span> Géologie
+            </a>
+
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres de géologie"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-geologie"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-geologie"
+            data-submenu-for="geologie"
+            hidden
+          ></div>
+        </div>
+
+        <!-- Climatologie -->
+        <div class="mobile-nav-group" data-discipline="climatologie">
+          <div class="mobile-nav-row">
+            <a href="cours-climatologie/index.html" class="mobile-nav-link">
+              <span>06</span> Climatologie
+            </a>
+
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres de climatologie"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-climatologie"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-climatologie"
+            data-submenu-for="climatologie"
+            hidden
+          ></div>
+        </div>
+
+        <!-- Paléontologie -->
+        <div class="mobile-nav-group" data-discipline="paleontologie">
+          <div class="mobile-nav-row">
+            <a href="cours-paleontologie/index.html" class="mobile-nav-link">
+              <span>07</span> Paléontologie
+            </a>
+
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres de paléontologie"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-paleontologie"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-paleontologie"
+            data-submenu-for="paleontologie"
+            hidden
+          ></div>
+        </div>
+
+        <!-- Anthropologie -->
+        <div class="mobile-nav-group" data-discipline="anthropologie">
           <div class="mobile-nav-row">
             <a href="cours-anthropologie/index.html" class="mobile-nav-link">
               <span>08</span> Anthropologie
@@ -101,109 +262,36 @@
           <div
             class="mobile-nav-submenu"
             id="mobile-submenu-anthropologie"
+            data-submenu-for="anthropologie"
             hidden
-          >
-            <a href="cours-anthropologie/cours.html?id=champ">
-              Le champ de l’anthropologie
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=methodes">
-              Questions, méthodes et preuves
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=ethique">
-              Éthique et responsabilités
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=primates">
-              Primates et comparaisons biologiques
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=evolution-humaine">
-              Évolution humaine et lignées
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=variation-biologique">
-              Variation biologique et populations
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=culture">
-              Culture, normes et symboles
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=ethnographie">
-              Ethnographie et enquête de terrain
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=comparaison-culturelle">
-              Comparaison et relativisme culturel
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=traces-materielles">
-              Archéologie et traces matérielles
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=contexte-provenance">
-              Contexte, provenance et association
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=projets-chronologie">
-              Projets archéologiques et chronologie
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=langue-societe">
-              Langue, signes et vie sociale
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=variation-langues">
-              Variation et changement linguistiques
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=tylor-primitive-culture">
-              Primitive Culture
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=boas-mind-of-primitive-man">
-              The Mind of Primitive Man
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=malinowski-argonauts">
-              Argonauts of the Western Pacific
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=mead-coming-of-age-in-samoa">
-              Coming of Age in Samoa
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=benedict-patterns-of-culture">
-              Patterns of Culture
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=evans-pritchard-azande">
-              Witchcraft, Oracles and Magic among the Azande
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=levi-strauss-tristes-tropiques">
-              Tristes Tropiques
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=douglas-purity-and-danger">
-              Purity and Danger
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=geertz-interpretation-of-cultures">
-              The Interpretation of Cultures
-            </a>
-
-            <a href="cours-anthropologie/cours.html?id=descola-par-dela-nature-et-culture">
-              Par-delà nature et culture
-            </a>
-          </div>
+          ></div>
         </div>
 
-        <a href="cours-histoire/index.html" class="mobile-nav-link">
-          <span>09</span> Histoire
-        </a>
+        <!-- Histoire -->
+        <div class="mobile-nav-group" data-discipline="histoire">
+          <div class="mobile-nav-row">
+            <a href="cours-histoire/index.html" class="mobile-nav-link">
+              <span>09</span> Histoire
+            </a>
+
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres d’histoire"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-histoire"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-histoire"
+            data-submenu-for="histoire"
+            hidden
+          ></div>
+        </div>
 
         <a href="#suite" class="mobile-nav-link mobile-nav-coming">
           <span>10+</span> Les disciplines à venir
@@ -243,7 +331,11 @@
         </div>
       </section>
 
-      <section class="course-section" id="cours" aria-labelledby="courses-title">
+      <section
+        class="course-section"
+        id="cours"
+        aria-labelledby="courses-title"
+      >
         <div class="section-heading">
           <div>
             <p class="eyebrow">LE CATALOGUE</p>
@@ -253,7 +345,10 @@
         </div>
 
         <div class="course-list">
-          <a class="course-entry math-entry" href="cours-mathematiques/programmes.html">
+          <a
+            class="course-entry math-entry"
+            href="cours-mathematiques/programmes.html"
+          >
             <span class="entry-number">01</span>
             <span class="entry-symbol" aria-hidden="true">x²</span>
             <span class="entry-copy">
@@ -303,7 +398,10 @@
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
 
-          <a class="course-entry climatology-entry" href="cours-climatologie/index.html">
+          <a
+            class="course-entry climatology-entry"
+            href="cours-climatologie/index.html"
+          >
             <span class="entry-number">06</span>
             <span class="entry-symbol" aria-hidden="true">☀</span>
             <span class="entry-copy">
@@ -313,7 +411,10 @@
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
 
-          <a class="course-entry paleontology-entry" href="cours-paleontologie/index.html">
+          <a
+            class="course-entry paleontology-entry"
+            href="cours-paleontologie/index.html"
+          >
             <span class="entry-number">07</span>
             <span class="entry-symbol" aria-hidden="true">✳</span>
             <span class="entry-copy">
@@ -323,7 +424,10 @@
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
 
-          <a class="course-entry anthropology-entry" href="cours-anthropologie/index.html">
+          <a
+            class="course-entry anthropology-entry"
+            href="cours-anthropologie/index.html"
+          >
             <span class="entry-number">08</span>
             <span class="entry-symbol" aria-hidden="true">A</span>
             <span class="entry-copy">
