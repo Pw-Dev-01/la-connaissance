@@ -86,7 +86,7 @@ if (menuToggle && mobileNavigation) {
       button.setAttribute('aria-expanded', String(shouldOpen));
       button.setAttribute(
         'aria-label',
-        shouldOpen ? 'Masquer les chapitres' : 'Afficher les chapitres'
+        shouldOpen ? 'Masquer les rubriques' : 'Afficher les rubriques'
       );
 
       submenu.hidden = !shouldOpen;
@@ -192,43 +192,40 @@ function loadDisciplineData(file) {
 }
 
 /* =========================================================
-   5. EXTRACTION DES CHAPITRES
+   5. EXTRACTION DES SOUS-RUBRIQUES (BRANCHES)
    ========================================================= */
 
-function getChapters(catalog) {
+function getBranches(catalog) {
   const branches = Array.isArray(catalog)
     ? catalog
     : Object.values(catalog || {});
 
-  return branches.flatMap((branch) => {
-    if (!branch || !Array.isArray(branch.chapters)) {
-      return [];
-    }
-
-    return branch.chapters;
-  });
+  return branches.filter((branch) => branch && branch.title);
 }
 
 /* =========================================================
-   6. CRÉATION DES LIENS VERS LES CHAPITRES
+   6. CRÉATION DES LIENS VERS LES SOUS-RUBRIQUES
+   Ouvre la page d'accueil de la discipline, positionnée sur
+   la branche (?branche=id et ancre #id).
    ========================================================= */
 
-function getChapterUrl(chapter, config) {
+function getBranchUrl(branch, config) {
   const folderUrl = new URL(config.folder, document.baseURI);
-  const url = new URL(config.coursePage || 'cours.html', folderUrl);
+  const url = new URL(config.branchPage || 'index.html', folderUrl);
 
-  if (chapter.id) {
-    url.searchParams.set('id', chapter.id);
+  if (branch.id) {
+    url.searchParams.set('branche', branch.id);
+    url.hash = branch.id;
   }
 
   return url.href;
 }
 
 /* =========================================================
-   7. AFFICHAGE DES CHAPITRES
+   7. AFFICHAGE DES SOUS-RUBRIQUES
    ========================================================= */
 
-function displayChapters(disciplineId, chapters, config) {
+function displayBranches(disciplineId, branches, config) {
   const submenu = document.querySelector(
     `[data-submenu-for="${disciplineId}"]`
   );
@@ -243,25 +240,21 @@ function displayChapters(disciplineId, chapters, config) {
   const list = document.createElement('ul');
   list.className = 'mobile-chapter-list';
 
-  const validChapters = chapters.filter(
-    (chapter) => chapter && chapter.title
-  );
-
-  if (validChapters.length === 0) {
+  if (branches.length === 0) {
     const item = document.createElement('li');
-    item.textContent = 'Aucun chapitre disponible.';
+    item.textContent = 'Aucune rubrique disponible.';
 
     list.appendChild(item);
     submenu.appendChild(list);
     return;
   }
 
-  validChapters.forEach((chapter) => {
+  branches.forEach((branch) => {
     const item = document.createElement('li');
     const link = document.createElement('a');
 
-    link.href = getChapterUrl(chapter, config);
-    link.textContent = chapter.title;
+    link.href = getBranchUrl(branch, config);
+    link.textContent = branch.title;
     link.className = 'mobile-chapter-link';
 
     item.appendChild(link);
@@ -288,15 +281,15 @@ async function initialiseMobileChapters() {
 
     try {
       const catalog = await loadDisciplineData(config.file);
-      const chapters = getChapters(catalog);
+      const branches = getBranches(catalog);
 
-      displayChapters(disciplineId, chapters, config);
+      displayBranches(disciplineId, branches, config);
     } catch (error) {
       console.error(`Erreur de chargement pour ${disciplineId} :`, error);
 
       const message = document.createElement('p');
       message.className = 'mobile-chapter-error';
-      message.textContent = 'Impossible de charger les chapitres.';
+      message.textContent = 'Impossible de charger les rubriques.';
 
       submenu.replaceChildren(message);
     }
