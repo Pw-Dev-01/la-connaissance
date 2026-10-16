@@ -1432,6 +1432,271 @@ window.courseCatalog = [
     }
   ]
 }, // FIN BRANCHE 5
+
+
+  // BRANCHE — LA RÉVOLUTION SCIENTIFIQUE
+  {
+    id: 'revolution-scientifique',
+    title: 'La révolution scientifique',
+    note: 'Six chapitres sur les transformations des savoirs en Europe aux XVIe et XVIIe siècles : astronomie, instruments, méthodes d’enquête, anatomie, physique et circulation des connaissances. Les dates sont des repères ; les historiens discutent les limites et l’unité de cette « révolution », qui fut progressive et incomplète.',
+    chapters: [
+      {
+        id: 'nouvelle-vision-univers',
+        title: 'Une nouvelle vision de l’Univers : Copernic, Kepler et Galilée',
+        field: 'Histoire des sciences · Astronomie · XVIe-XVIIe siècles',
+        summary: 'Comprendre comment l’héliocentrisme et les observations astronomiques ont remis en question des modèles anciens sans faire disparaître immédiatement toutes les conceptions antérieures.',
+        lesson: {
+          sections: [
+            'Pendant des siècles, le modèle géocentrique de Ptolémée a servi de cadre majeur aux calculs astronomiques : la Terre y occupe une position centrale. Ce modèle s’inscrivait dans des traditions antiques et médiévales diverses. Il ne faut toutefois pas réduire les savoirs du Moyen Âge à une simple répétition des Anciens : les astronomes ont aussi développé des techniques de calcul et des observations précises.',
+            'En 1543, Nicolas Copernic publie De revolutionibus orbium coelestium. Il y présente un modèle dans lequel la Terre tourne sur elle-même et effectue une révolution annuelle autour du Soleil. Cette proposition héliocentrique ne s’impose pas immédiatement : elle soulève des difficultés d’observation, de physique et d’interprétation, et ses premières versions ne résolvent pas toutes les questions astronomiques.',
+            'Johannes Kepler exploite notamment les observations très précises de Tycho Brahe. Il établit que les planètes suivent des orbites elliptiques, et non des cercles parfaits. Cette conclusion améliore les prédictions astronomiques et rompt avec un idéal ancien de mouvements célestes nécessairement circulaires.',
+            'À partir de 1609, Galilée utilise une lunette astronomique améliorée pour observer le ciel. Il décrit notamment des reliefs lunaires, les satellites de Jupiter et les phases de Vénus. Ces observations fragilisent plusieurs éléments de la cosmologie traditionnelle et soutiennent certains aspects du modèle copernicien, mais elles ne démontrent pas à elles seules toutes ses propositions.',
+            'L’affaire Galilée montre que les débats ne se résument pas à une opposition simple entre science et religion. Galilée est jugé par l’Inquisition romaine en 1633 et contraint d’abjurer la défense du copernicianisme. Les convictions religieuses, les interprétations des textes, les enjeux institutionnels et les arguments scientifiques interagissent dans ce conflit.'
+          ],
+          example: {
+            statement: 'Une planète est observée à plusieurs moments de son parcours. Quel modèle décrit mieux les résultats de Kepler : une orbite circulaire ou une orbite elliptique ?',
+            calculation: 'Il faut comparer les positions calculées à partir de chaque modèle avec les observations disponibles, plutôt que choisir un modèle uniquement parce qu’il paraît plus parfait.',
+            answer: 'Le modèle elliptique de Kepler décrit mieux les observations. Ses lois précisent la forme des orbites et les variations du mouvement planétaire.'
+          },
+          exercise: {
+            question: 'Pourquoi les observations de Galilée ont-elles compté dans les débats sur le modèle géocentrique ?',
+            answer: 'Elles ont révélé des phénomènes difficiles à concilier avec certaines conceptions traditionnelles, notamment les satellites de Jupiter et les phases de Vénus.'
+          },
+          exercises: [
+            {
+              question: 'Que signifie « héliocentrique » ?',
+              answer: 'Un modèle dans lequel le Soleil occupe la position centrale du système planétaire considéré, autour duquel la Terre et les autres planètes orbitent.'
+            },
+            {
+              question: 'Quelle forme Kepler attribue-t-il aux orbites des planètes ?',
+              answer: 'Des ellipses.'
+            },
+            {
+              question: 'Les observations télescopiques de Galilée ont-elles, à elles seules, réglé tous les débats astronomiques ?',
+              answer: 'Non. Elles ont apporté des preuves importantes, mais les interprétations et les modèles ont continué à être discutés.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution scientifique', url: 'https://www.worldhistory.org/trans/fr/1-21157/revolution-scientifique/' },
+            { title: 'World History Encyclopedia — Astronomy in the Scientific Revolution', url: 'https://www.worldhistory.org/article/2306/astronomy-in-the-scientific-revolution/' },
+            { title: 'Stanford Encyclopedia of Philosophy — Galileo Galilei', url: 'https://plato.stanford.edu/entries/galileo/' }
+          ]
+        }
+      },
+      {
+        id: 'instruments-et-observation',
+        title: 'Voir autrement : télescope, microscope et instruments de mesure',
+        field: 'Histoire des sciences · Instruments · XVIIe siècle',
+        summary: 'Étudier comment les instruments ont élargi les observations et rendu possibles de nouvelles comparaisons, tout en posant des questions sur la fiabilité des mesures.',
+        lesson: {
+          sections: [
+            'La révolution scientifique s’appuie sur des instruments qui étendent les capacités des sens et rendent certains phénomènes mesurables. Le télescope permet d’observer des objets célestes avec davantage de détails ; le microscope révèle des structures trop petites pour être vues à l’œil nu. Ces instruments ne donnent pas automatiquement une vérité incontestable : il faut apprendre à les fabriquer, les régler, interpréter leurs images et comparer les observations.',
+            'Les premiers télescopes connus apparaissent aux Pays-Bas vers 1608. Galilée en construit et en améliore des modèles, puis les utilise pour l’astronomie. Les observations des reliefs de la Lune et des satellites de Jupiter montrent que le ciel présente des phénomènes plus variés que ne le suggéraient certaines représentations héritées.',
+            'Le microscope ouvre un autre domaine d’observation. En 1665, Robert Hooke publie Micrographia, ouvrage illustré d’observations microscopiques. Antonie van Leeuwenhoek réalise ensuite des observations remarquables de micro-organismes et de cellules sanguines à l’aide de microscopes qu’il perfectionne. Les mots et les catégories scientifiques se développent progressivement à partir de ces pratiques.',
+            'Les instruments de mesure évoluent aussi. Le baromètre, associé aux travaux d’Evangelista Torricelli au XVIIe siècle, permet d’étudier la pression atmosphérique. Blaise Pascal contribue à établir que cette pression varie avec l’altitude. Les thermomètres et les horloges plus précises favorisent des mesures répétables et la comparaison de résultats.',
+            'Un instrument n’est utile que dans un ensemble de pratiques : étalonnage, description des conditions d’observation, répétition et communication des résultats. Les scientifiques doivent aussi débattre des artefacts, des erreurs de mesure et des limites des appareils. La confiance dans l’observation instrumentale se construit donc par un travail collectif.'
+          ],
+          example: {
+            statement: 'Deux observateurs examinent le même phénomène avec des microscopes différents et obtiennent des images légèrement différentes. Quelle démarche est la plus fiable ?',
+            calculation: 'Comparer les instruments, répéter les observations, décrire les conditions et vérifier si d’autres observateurs obtiennent des résultats compatibles.',
+            answer: 'Il faut comparer et répéter les observations, vérifier les instruments et publier les conditions de l’expérience. Une image isolée ne suffit pas à établir une conclusion générale.'
+          },
+          exercise: {
+            question: 'Pourquoi un instrument scientifique ne garantit-il pas automatiquement une observation exacte ?',
+            answer: 'Il peut présenter des limites ou des défauts, et les résultats dépendent aussi du réglage, de la méthode et de l’interprétation.'
+          },
+          exercises: [
+            {
+              question: 'Quel est l’apport principal du télescope dans l’astronomie du XVIIe siècle ?',
+              answer: 'Il permet d’observer des détails et des objets célestes auparavant invisibles à l’œil nu.'
+            },
+            {
+              question: 'Quel ouvrage de Robert Hooke, publié en 1665, présente des observations microscopiques ?',
+              answer: 'Micrographia.'
+            },
+            {
+              question: 'Cite deux pratiques qui rendent une mesure plus fiable.',
+              answer: 'Par exemple : répéter les mesures, vérifier l’instrument, décrire les conditions et comparer les résultats avec ceux d’autres observateurs.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution scientifique', url: 'https://www.worldhistory.org/trans/fr/1-21157/revolution-scientifique/' },
+            { title: 'World History Encyclopedia — Astronomy in the Scientific Revolution', url: 'https://www.worldhistory.org/article/2306/astronomy-in-the-scientific-revolution/' },
+            { title: 'Royal Society — History of the Royal Society', url: 'https://royalsociety.org/about-us/history/' }
+          ]
+        }
+      },
+      {
+        id: 'methodes-scientifiques',
+        title: 'Expérimenter, raisonner, démontrer : de Bacon à Descartes',
+        field: 'Histoire des sciences · Méthodes et philosophie naturelle · XVIIe siècle',
+        summary: 'Distinguer l’observation, l’expérimentation, l’induction, la déduction et la formalisation mathématique sans réduire la science à une recette unique.',
+        lesson: {
+          sections: [
+            'La transformation des sciences ne correspond pas à l’invention soudaine d’une méthode universelle. Les savants combinent des pratiques anciennes et nouvelles : observation, mesure, expérience, raisonnement logique, calcul mathématique et discussion des résultats. Les méthodes varient selon les problèmes étudiés.',
+            'Francis Bacon défend une enquête organisée sur la nature. Dans Novum Organum, publié en 1620, il critique les raisonnements qui s’appuient trop vite sur des idées reçues et encourage la collecte méthodique d’observations et d’expériences. Son programme vise notamment à construire des connaissances utiles, en évitant de généraliser à partir de trop peu de cas.',
+            'René Descartes accorde une place majeure au raisonnement, à l’analyse des problèmes et aux mathématiques. Son approche ne se confond pas avec celle de Bacon : les débats du XVIIe siècle opposent et combinent diverses façons de produire du savoir. Il serait donc inexact de dire que tous les savants adoptent une méthode unique ou que la science moderne repose uniquement sur l’expérience ou uniquement sur la raison.',
+            'L’expérience devient particulièrement importante lorsqu’elle permet de départager des explications concurrentes. Pour être convaincante, elle doit être décrite avec assez de précision pour que d’autres puissent l’examiner, la répéter ou en discuter les limites. Les échanges écrits, les démonstrations publiques et les publications contribuent à cette évaluation collective.',
+            'Les mathématiques jouent un rôle croissant dans la formulation des régularités naturelles. Elles permettent d’exprimer des relations quantitatives et de comparer des prédictions aux mesures. L’idéal d’une connaissance démontrée évolue toutefois au fil des disciplines : l’astronomie, la mécanique, la médecine et l’histoire naturelle ne disposent pas toutes des mêmes types de preuves.'
+          ],
+          example: {
+            statement: 'Un chercheur pense qu’un phénomène se produit toujours dans les mêmes conditions. Comment peut-il examiner cette idée de façon rigoureuse ?',
+            calculation: 'Il formule clairement l’affirmation, définit ce qu’il peut observer ou mesurer, répète les essais dans des conditions décrites et compare les résultats à l’affirmation initiale.',
+            answer: 'Il doit confronter son idée à des observations et des expériences répétées, décrire sa démarche et accepter de modifier sa conclusion si les résultats la contredisent.'
+          },
+          exercise: {
+            question: 'Quelle différence générale peut-on faire entre l’induction et la déduction ?',
+            answer: 'L’induction part de cas observés pour proposer une généralisation ; la déduction tire une conséquence particulière à partir de prémisses ou d’un modèle général.'
+          },
+          exercises: [
+            {
+              question: 'Quel ouvrage de Francis Bacon paraît en 1620 ?',
+              answer: 'Novum Organum.'
+            },
+            {
+              question: 'Pourquoi faut-il rendre compte des conditions d’une expérience ?',
+              answer: 'Pour permettre aux autres d’évaluer la démarche, de comprendre ses limites et, si possible, de la répéter.'
+            },
+            {
+              question: 'La révolution scientifique a-t-elle imposé une méthode identique dans toutes les disciplines ?',
+              answer: 'Non. Les méthodes se sont diversifiées et combinent, selon les domaines, observation, expérimentation, raisonnement et mathématiques.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution scientifique', url: 'https://www.worldhistory.org/trans/fr/1-21157/revolution-scientifique/' },
+            { title: 'Stanford Encyclopedia of Philosophy — Scientific Revolutions', url: 'https://plato.stanford.edu/entries/scientific-revolutions/' }
+          ]
+        }
+      },
+      {
+        id: 'anatomie-et-circulation',
+        title: 'Observer le corps : anatomie et circulation sanguine',
+        field: 'Histoire des sciences · Médecine et anatomie · XVIe-XVIIe siècles',
+        summary: 'Découvrir comment les dissections, les observations et les raisonnements sur la circulation ont contribué à réviser des autorités médicales anciennes.',
+        lesson: {
+          sections: [
+            'La médecine européenne de la Renaissance s’appuie largement sur des textes antiques, notamment ceux de Galien, mais les praticiens poursuivent aussi leurs propres observations. Les connaissances médicales ne changent pas d’un seul coup : les nouvelles descriptions coexistent longtemps avec des traditions anciennes, et les progrès anatomiques ne signifient pas que les médecins savent déjà traiter efficacement toutes les maladies.',
+            'En 1543, André Vésale publie De humani corporis fabrica, ouvrage fondé sur une étude anatomique détaillée du corps humain. Il corrige plusieurs descriptions héritées de Galien, dont certaines reposaient sur la dissection d’animaux plutôt que sur celle de corps humains. L’importance de Vésale tient notamment à la place donnée à l’observation anatomique directe.',
+            'William Harvey expose en 1628, dans De Motu Cordis, son argumentation en faveur de la circulation du sang. Il s’appuie sur des observations et des calculs concernant le cœur et le mouvement du sang. Sa proposition contredit des éléments importants de la physiologie traditionnelle et suscite des discussions.',
+            'Au XVIIe siècle, le microscope permet d’observer des structures trop petites pour être distinguées à l’œil nu. En 1661, Marcello Malpighi décrit des capillaires dans les poumons de la grenouille. Ces observations aident à comprendre la continuité entre les artères et les veines et apportent un élément important à l’explication de la circulation proposée par Harvey.',
+            'Ces changements illustrent l’importance de confronter les textes aux observations, sans supposer que les livres anciens sont toujours faux ou que les nouvelles observations suffisent immédiatement à résoudre toutes les questions. La médecine de cette période reste limitée par les techniques disponibles et par une compréhension encore partielle des maladies.'
+          ],
+          example: {
+            statement: 'Une description anatomique ancienne ne correspond pas à ce qu’un observateur constate lors d’une dissection. Quelle attitude est la plus rigoureuse ?',
+            calculation: 'Décrire précisément l’observation, vérifier les conditions et la répétabilité, puis comparer le résultat aux descriptions antérieures et aux observations d’autres praticiens.',
+            answer: 'Il faut examiner la différence et la documenter. Une autorité ancienne ne remplace pas la vérification, mais une observation isolée doit elle aussi être contrôlée.'
+          },
+          exercise: {
+            question: 'Pourquoi l’observation anatomique a-t-elle joué un rôle important dans l’évolution de la médecine ?',
+            answer: 'Elle a permis de comparer directement les descriptions du corps avec les structures observées et de corriger certaines erreurs transmises par les textes.'
+          },
+          exercises: [
+            {
+              question: 'Quel ouvrage anatomique Vésale publie-t-il en 1543 ?',
+              answer: 'De humani corporis fabrica.'
+            },
+            {
+              question: 'Quelle idée majeure William Harvey défend-il dans son ouvrage de 1628 ?',
+              answer: 'La circulation du sang dans le corps.'
+            },
+            {
+              question: 'Pourquoi les observations microscopiques de Malpighi sont-elles importantes ?',
+              answer: 'La description des capillaires contribue à expliquer la continuité entre les artères et les veines.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution scientifique', url: 'https://www.worldhistory.org/trans/fr/1-21157/revolution-scientifique/' },
+            { title: 'Encyclopaedia Britannica — Andreas Vesalius', url: 'https://www.britannica.com/biography/Andreas-Vesalius' },
+            { title: 'Encyclopaedia Britannica — William Harvey', url: 'https://www.britannica.com/biography/William-Harvey' }
+          ]
+        }
+      },
+      {
+        id: 'physique-mathematiques-newton',
+        title: 'Mesurer la nature : Pascal, Boyle, Huygens et Newton',
+        field: 'Histoire des sciences · Physique et mathématiques · XVIIe siècle',
+        summary: 'Suivre l’essor des mesures quantitatives, de l’étude de la pression atmosphérique et du vide à la mécanique et à la gravitation de Newton.',
+        lesson: {
+          sections: [
+            'Au XVIIe siècle, de nombreux chercheurs cherchent à expliquer les phénomènes naturels par des relations mesurables. Cette approche ne remplace pas immédiatement toutes les autres formes de raisonnement, mais elle permet de formuler des modèles qui peuvent être confrontés à des observations et à des expériences.',
+            'Evangelista Torricelli met au point en 1643 une expérience à la colonne de mercure qui conduit au développement du baromètre. Blaise Pascal contribue à montrer que la pression atmosphérique varie avec l’altitude. Ces travaux aident à comprendre que l’air exerce une pression et que les phénomènes observés ne s’expliquent pas seulement par des idées héritées.',
+            'Robert Boyle et Robert Hooke utilisent une pompe à air pour étudier le comportement des gaz. Les expériences de Boyle conduisent à une relation entre pression et volume pour une quantité donnée de gaz à température constante : lorsque la pression augmente, le volume diminue, dans les conditions décrites par cette loi. La formulation exacte dépend des conditions expérimentales.',
+            'Christiaan Huygens contribue à la mécanique et à la mesure du temps, notamment avec l’horloge à pendule mise au point en 1656-1657. Une mesure plus régulière du temps aide à comparer des mouvements et à améliorer certaines observations. La précision des instruments constitue donc une condition importante du progrès expérimental.',
+            'En 1687, Isaac Newton publie les Principia, où il formule les lois du mouvement et la loi de la gravitation universelle. Son travail réunit des résultats de mécanique et d’astronomie dans un cadre mathématique commun. Il permet d’expliquer à l’aide des mêmes principes des mouvements terrestres et célestes, sans pour autant répondre à toutes les questions sur la nature profonde de la gravité.'
+          ],
+          example: {
+            statement: 'À température constante, une quantité donnée de gaz occupe un volume plus petit quand sa pression augmente. Quelle relation générale cela illustre-t-il ?',
+            calculation: 'Pour une quantité fixe de gaz dans les conditions de la loi de Boyle, la pression et le volume varient en sens inverse : P × V reste constant dans le modèle idéal considéré.',
+            answer: 'Il s’agit de la loi de Boyle : à température constante, la pression est inversement proportionnelle au volume pour une quantité donnée de gaz.'
+          },
+          exercise: {
+            question: 'Pourquoi la formulation mathématique des phénomènes est-elle importante pour la physique de cette période ?',
+            answer: 'Elle permet d’exprimer précisément des relations, de comparer les modèles aux mesures et de produire des prédictions vérifiables.'
+          },
+          exercises: [
+            {
+              question: 'Que permet de mesurer un baromètre ?',
+              answer: 'La pression atmosphérique.'
+            },
+            {
+              question: 'Quelle condition est essentielle à l’énoncé usuel de la loi de Boyle ?',
+              answer: 'La température doit rester constante et la quantité de gaz considérée doit être fixe.'
+            },
+            {
+              question: 'Quel ouvrage majeur Newton publie-t-il en 1687 ?',
+              answer: 'Les Philosophiae Naturalis Principia Mathematica, généralement appelés les Principia.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution scientifique', url: 'https://www.worldhistory.org/trans/fr/1-21157/revolution-scientifique/' },
+            { title: 'Encyclopaedia Britannica — Isaac Newton', url: 'https://www.britannica.com/biography/Isaac-Newton' },
+            { title: 'Royal Society — History of the Royal Society', url: 'https://royalsociety.org/about-us/history/' }
+          ]
+        }
+      },
+      {
+        id: 'institutions-diffusion-limites',
+        title: 'Faire circuler les savoirs : académies, livres et controverses',
+        field: 'Histoire des sciences · Institutions et sociétés savantes · XVIIe siècle',
+        summary: 'Comprendre comment les sociétés savantes, les publications et les correspondances ont contribué à la circulation des résultats, tout en gardant à l’esprit les limites sociales et géographiques de cette transformation.',
+        lesson: {
+          sections: [
+            'Les progrès scientifiques reposent aussi sur des réseaux de personnes, de livres, d’instruments et d’institutions. Les correspondances permettent aux chercheurs de partager des observations, de demander des avis et de discuter des résultats à distance. L’imprimerie facilite la diffusion des textes, même si leur accès demeure inégal selon les lieux, les langues, les ressources et le niveau d’instruction.',
+            'Des sociétés savantes se structurent au XVIIe siècle. L’Accademia del Cimento est fondée à Florence en 1657 ; la Royal Society se constitue à Londres dans les années 1660, avec une charte royale en 1662 ; l’Académie royale des sciences est créée à Paris en 1666. Ces institutions organisent des réunions, des démonstrations, des échanges et la conservation de comptes rendus.',
+            'La publication et la discussion des résultats favorisent l’examen critique, mais il serait anachronique d’assimiler directement les pratiques du XVIIe siècle aux systèmes contemporains d’évaluation par les pairs. Les formes de contrôle, les critères de preuve et les possibilités d’accès aux institutions varient selon les périodes et les milieux.',
+            'La révolution scientifique est principalement étudiée à partir des transformations en Europe, mais les savoirs circulent dans un monde plus vaste. Les échanges commerciaux, les voyages, les traductions et les entreprises impériales mettent en contact des connaissances issues de différentes régions. Il faut éviter de raconter l’histoire comme si les sciences européennes s’étaient développées dans un isolement complet, ou comme si tous les groupes avaient bénéficié de manière égale de ces échanges.',
+            'Enfin, l’expression « révolution scientifique » est une catégorie historiographique. Beaucoup d’historiens reconnaissent des transformations majeures entre le XVIe et le XVIIe siècle, mais discutent leur rythme, leur cohérence et leurs limites. Des continuités avec les périodes précédentes subsistent, et les nouvelles méthodes ne remplacent pas partout et immédiatement les pratiques anciennes.'
+          ],
+          example: {
+            statement: 'Un savant publie une observation dans un ouvrage, puis d’autres chercheurs la répètent et discutent leurs résultats. En quoi cette circulation peut-elle renforcer les connaissances ?',
+            calculation: 'La comparaison entre plusieurs observations permet de repérer les erreurs possibles, de préciser les conditions et d’identifier les résultats qui résistent à la vérification.',
+            answer: 'La circulation rend les résultats accessibles à la critique et à la vérification collective. Elle ne garantit pas l’absence d’erreur, mais permet de mieux les détecter et de corriger les conclusions.'
+          },
+          exercise: {
+            question: 'Pourquoi faut-il présenter la révolution scientifique comme une transformation progressive plutôt que comme une rupture instantanée ?',
+            answer: 'Parce que les changements se sont étalés sur plusieurs générations, que les anciennes et nouvelles approches ont coexisté et que les historiens débattent de ses limites.'
+          },
+          exercises: [
+            {
+              question: 'Cite une institution scientifique fondée au XVIIe siècle et son lieu.',
+              answer: 'Par exemple : l’Accademia del Cimento à Florence, la Royal Society à Londres ou l’Académie royale des sciences à Paris.'
+            },
+            {
+              question: 'Quel rôle les correspondances et les publications jouent-elles dans les sciences ?',
+              answer: 'Elles permettent de diffuser des résultats, de confronter les observations et de discuter les méthodes.'
+            },
+            {
+              question: 'Pourquoi le terme « révolution scientifique » est-il discuté par les historiens ?',
+              answer: 'Parce qu’il peut donner l’impression d’une rupture unique et complète, alors que les changements furent progressifs, divers et liés à des continuités.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Révolution scientifique', url: 'https://www.worldhistory.org/trans/fr/1-21157/revolution-scientifique/' },
+            { title: 'Stanford Encyclopedia of Philosophy — Scientific Revolutions', url: 'https://plato.stanford.edu/entries/scientific-revolutions/' },
+            { title: 'Royal Society — History of the Royal Society', url: 'https://royalsociety.org/about-us/history/' }
+          ]
+        }
+      }
+    ]
+  }
 ];
-
-
