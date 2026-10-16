@@ -1,3 +1,8 @@
+/* =========================================================
+
+1. FOCUS DES ENTRÉES DE COURS
+   ========================================================= */
+
 const courseEntries = document.querySelectorAll('.course-entry');
 
 courseEntries.forEach((entry) => {
@@ -9,6 +14,10 @@ entry.addEventListener('blur', () => {
 entry.classList.remove('is-focused');
 });
 });
+
+/* =========================================================
+2. MENU HAMBURGER
+========================================================= */
 
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileNavigation = document.querySelector('#mobile-navigation');
@@ -28,16 +37,24 @@ mobileNavigation.inert = !isOpen;
 }
 
 if (menuToggle && mobileNavigation) {
-setMenuOpen(false);
-
-menuToggle.addEventListener('click', () => {
-const isOpen =
+// Initialise l'état du menu.
+const initiallyOpen =
 menuToggle.getAttribute('aria-expanded') === 'true';
+
+setMenuOpen(initiallyOpen);
+
+// Ouvre et ferme le menu hamburger.
+menuToggle.addEventListener('click', (event) => {
+event.preventDefault();
+
+const isOpen =
+  menuToggle.getAttribute('aria-expanded') === 'true';
 
 setMenuOpen(!isOpen);
 
 });
 
+// Ferme le menu avec la touche Échap.
 document.addEventListener('keydown', (event) => {
 if (
 event.key === 'Escape' &&
@@ -48,12 +65,14 @@ menuToggle.focus();
 }
 });
 
+// Ferme le menu lorsque la fenêtre passe en affichage bureau.
 window.addEventListener('resize', () => {
 if (window.innerWidth > 760) {
 setMenuOpen(false);
 }
 });
 
+// Gestion des clics dans la navigation mobile.
 mobileNavigation.addEventListener('click', (event) => {
 const target = event.target;
 
@@ -61,11 +80,13 @@ if (!(target instanceof Element)) return;
 
 const button = target.closest('.mobile-nav-expand');
 
+// Gestion des boutons d'ouverture des sous-menus.
 if (button && mobileNavigation.contains(button)) {
   event.preventDefault();
   event.stopPropagation();
 
   const submenuId = button.getAttribute('aria-controls');
+
   const submenu = submenuId
     ? document.getElementById(submenuId)
     : null;
@@ -79,6 +100,7 @@ if (button && mobileNavigation.contains(button)) {
     button.getAttribute('aria-expanded') !== 'true';
 
   button.setAttribute('aria-expanded', String(shouldOpen));
+
   button.setAttribute(
     'aria-label',
     shouldOpen
@@ -93,6 +115,7 @@ if (button && mobileNavigation.contains(button)) {
   return;
 }
 
+// Ferme le hamburger lorsqu'un lien est sélectionné.
 if (target.closest('a')) {
   setMenuOpen(false);
 }
@@ -100,17 +123,17 @@ if (target.closest('a')) {
 });
 }
 
-/*
+/* =========================================================
+3. CONFIGURATION DES DISCIPLINES
+Les fichiers de données sont dans les dossiers enfants.
+========================================================= */
 
-* Configuration des disciplines.
-* Chaque fichier de données se trouve dans son dossier de cours.
-  */
-  const disciplines = {
-  mathematiques: {
-  file: './cours-mathematiques/mathematiques-data.js',
-  folder: './cours-mathematiques/',
-  fallback: 'programmes.html'
-  },
+const disciplines = {
+mathematiques: {
+file: './cours-mathematiques/mathematiques-data.js',
+folder: './cours-mathematiques/',
+fallback: 'programmes.html'
+},
 
 physique: {
 file: './cours-physique/physique-data.js',
@@ -161,58 +184,58 @@ fallback: 'index.html'
 }
 };
 
-/*
+/* =========================================================
+4. CHARGEMENT DES FICHIERS DE DONNÉES
+Chaque fichier doit définir window.courseCatalog.
+========================================================= */
 
-* Charge un fichier de données.
+function loadDisciplineData(file) {
+return new Promise((resolve, reject) => {
+window.courseCatalog = undefined;
 
-* Chaque fichier doit définir window.courseCatalog.
-  */
-  function loadDisciplineData(file) {
-  return new Promise((resolve, reject) => {
-  window.courseCatalog = undefined;
-  
-  const script = document.createElement('script');
-  script.src = new URL(file, document.baseURI).href;
-  script.async = true;
-  
-  script.onload = () => {
+const script = document.createElement('script');
+
+script.src = new URL(file, document.baseURI).href;
+script.async = true;
+
+script.onload = () => {
   const catalog = window.courseCatalog;
-  
+
   script.remove();
   window.courseCatalog = undefined;
-  
+
   if (!catalog) {
-  reject(
-  new Error("Aucun catalogue trouvé dans ${file}")
-  );
-  return;
+    reject(
+      new Error(`Aucun catalogue trouvé dans ${file}`)
+    );
+    return;
   }
-  
+
   resolve(catalog);
-  };
-  
-  script.onerror = () => {
+};
+
+script.onerror = () => {
   script.remove();
   window.courseCatalog = undefined;
-  
+
   reject(
-  new Error("Impossible de charger ${file}")
+    new Error(`Impossible de charger ${file}`)
   );
-  };
-  
-  document.head.appendChild(script);
-  });
-  }
+};
 
-/*
+document.head.appendChild(script);
 
-* Récupère les chapitres, que le catalogue soit un tableau
-* ou un objet contenant des branches.
-  */
-  function getChapters(catalog) {
-  const branches = Array.isArray(catalog)
-  ? catalog
-  : Object.values(catalog || {});
+});
+}
+
+/* =========================================================
+5. EXTRACTION DES CHAPITRES
+========================================================= */
+
+function getChapters(catalog) {
+const branches = Array.isArray(catalog)
+? catalog
+: Object.values(catalog || {});
 
 return branches.flatMap((branch) => {
 if (!branch || !Array.isArray(branch.chapters)) {
@@ -224,16 +247,15 @@ return branch.chapters;
 });
 }
 
-/*
+/* =========================================================
+6. CRÉATION DES LIENS VERS LES CHAPITRES
+========================================================= */
 
-* Construit l'URL de chaque chapitre.
-* La propriété page est résolue depuis le dossier de la discipline.
-  */
-  function getChapterUrl(chapter, config) {
-  const folderUrl = new URL(
-  config.folder,
-  document.baseURI
-  );
+function getChapterUrl(chapter, config) {
+const folderUrl = new URL(
+config.folder,
+document.baseURI
+);
 
 if (chapter.page) {
 return new URL(chapter.page, folderUrl).href;
@@ -251,14 +273,14 @@ fallbackUrl.searchParams.set('id', chapter.id);
 return fallbackUrl.href;
 }
 
-/*
+/* =========================================================
+7. AFFICHAGE DES CHAPITRES DANS LES SOUS-MENUS
+========================================================= */
 
-* Affiche les chapitres dans le sous-menu correspondant.
-  */
-  function displayChapters(disciplineId, chapters, config) {
-  const submenu = document.querySelector(
-  "[data-submenu-for="${disciplineId}"]"
-  );
+function displayChapters(disciplineId, chapters, config) {
+const submenu = document.querySelector(
+"[data-submenu-for="${disciplineId}"]"
+);
 
 if (!submenu) {
 console.error(
@@ -279,9 +301,11 @@ const validChapters = chapters.filter(
 if (validChapters.length === 0) {
 const item = document.createElement('li');
 item.textContent = 'Aucun chapitre disponible.';
+
 list.appendChild(item);
 submenu.appendChild(list);
 return;
+
 }
 
 validChapters.forEach((chapter) => {
@@ -300,43 +324,52 @@ list.appendChild(item);
 submenu.appendChild(list);
 }
 
-/*
+/* =========================================================
+8. INITIALISATION DE TOUS LES SOUS-MENUS
+========================================================= */
 
-* Initialise les sous-menus en chargeant les fichiers
+async function initialiseMobileChapters() {
+for (const [disciplineId, config] of Object.entries(disciplines)) {
+const submenu = document.querySelector(
+"[data-submenu-for="${disciplineId}"]"
+);
 
-* de données les uns après les autres.
-  */
-  async function initialiseMobileChapters() {
-  for (const [disciplineId, config] of Object.entries(disciplines)) {
-  const submenu = document.querySelector(
-  "[data-submenu-for="${disciplineId}"]"
+if (!submenu) {
+  console.warn(
+    `Sous-menu absent pour ${disciplineId}`
   );
-  
-  if (!submenu) continue;
-  
-  try {
+  continue;
+}
+
+try {
   const catalog = await loadDisciplineData(config.file);
   const chapters = getChapters(catalog);
-  
+
   displayChapters(
-  disciplineId,
-  chapters,
-  config
+    disciplineId,
+    chapters,
+    config
   );
-  } catch (error) {
+} catch (error) {
   console.error(
-  "Erreur pour la discipline ${disciplineId} :",
-  error
+    `Erreur de chargement pour ${disciplineId} :`,
+    error
   );
-  
+
   const message = document.createElement('p');
+
   message.className = 'mobile-chapter-error';
   message.textContent =
-  'Impossible de charger les chapitres.';
-  
+    'Impossible de charger les chapitres.';
+
   submenu.replaceChildren(message);
-  }
-  }
-  }
+}
+
+}
+}
+
+/* =========================================================
+9. LANCEMENT
+========================================================= */
 
 initialiseMobileChapters();
