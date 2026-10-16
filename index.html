@@ -1,4 +1,4 @@
-,<!doctype html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
@@ -9,91 +9,228 @@
     <link rel="stylesheet" href="portal.css">
     <script src="portal.js" defer></script>
   </head>
+
   <body>
-    
-<header class="masthead">
-  <a class="brand" href="index.html" aria-label="La connaissance, accueil">
-    <span class="brand-mark" aria-hidden="true">K</span>
-    <span>LA CONNAISSANCE</span>
-  </a>
+    <header class="masthead">
+      <a class="brand" href="index.html" aria-label="La connaissance, accueil">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span>LA CONNAISSANCE</span>
+      </a>
 
-  <nav class="top-navigation" aria-label="Navigation principale">
-    <a href="#cours">Explorer</a>
-    <a href="#suite">À venir</a>
-  </nav>
+      <nav class="top-navigation" aria-label="Navigation principale">
+        <a href="#cours">Explorer</a>
+        <a href="#suite">À venir</a>
+      </nav>
 
-  <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
+      <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
 
-  <button
-    class="menu-toggle"
-    type="button"
-    aria-label="Ouvrir le menu"
-    aria-expanded="false"
-    aria-controls="mobile-navigation"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</header>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mobile-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
 
-<nav
-  class="mobile-navigation"
-  id="mobile-navigation"
-  aria-label="Index des disciplines"
-  aria-hidden="true"
-  inert
->
-  <div class="mobile-navigation-inner">
-    <p class="eyebrow">INDEX DU PORTAIL</p>
+    <nav
+      class="mobile-navigation"
+      id="mobile-navigation"
+      aria-label="Index des disciplines"
+      aria-hidden="true"
+      inert
+    >
+      <div class="mobile-navigation-inner">
+        <p class="eyebrow">INDEX DU PORTAIL</p>
 
-    <a href="#cours" class="mobile-nav-link">
-      <span>00</span> Explorer les cours
-    </a>
-    <a href="cours-mathematiques/programmes.html" class="mobile-nav-link">
-      <span>01</span> Mathématiques
-    </a>
-    <a href="cours-physique/index.html" class="mobile-nav-link">
-      <span>02</span> Physique
-    </a>
-    <a href="cours-chimie/index.html" class="mobile-nav-link">
-      <span>03</span> Chimie
-    </a>
-    <a href="cours-economie/index.html" class="mobile-nav-link">
-      <span>04</span> Économie
-    </a>
-    <a href="cours-geologie/index.html" class="mobile-nav-link">
-      <span>05</span> Géologie
-    </a>
-    <a href="cours-climatologie/index.html" class="mobile-nav-link">
-      <span>06</span> Climatologie
-    </a>
-    <a href="cours-paleontologie/index.html" class="mobile-nav-link">
-      <span>07</span> Paléontologie
-    </a>
-    <a href="cours-anthropologie/index.html" class="mobile-nav-link">
-      <span>08</span> Anthropologie
-    </a>
-    <a href="cours-histoire/index.html" class="mobile-nav-link">
-      <span>09</span> Histoire
-    </a>
+        <a href="#cours" class="mobile-nav-link">
+          <span>00</span> Explorer les cours
+        </a>
 
-    <a href="#suite" class="mobile-nav-link mobile-nav-coming">
-      <span>10+</span> Les disciplines à venir
-    </a>
-  </div>
-</nav>
+        <a href="cours-mathematiques/programmes.html" class="mobile-nav-link">
+          <span>01</span> Mathématiques
+        </a>
 
+        <a href="cours-physique/index.html" class="mobile-nav-link">
+          <span>02</span> Physique
+        </a>
+
+        <a href="cours-chimie/index.html" class="mobile-nav-link">
+          <span>03</span> Chimie
+        </a>
+
+        <a href="cours-economie/index.html" class="mobile-nav-link">
+          <span>04</span> Économie
+        </a>
+
+        <a href="cours-geologie/index.html" class="mobile-nav-link">
+          <span>05</span> Géologie
+        </a>
+
+        <a href="cours-climatologie/index.html" class="mobile-nav-link">
+          <span>06</span> Climatologie
+        </a>
+
+        <a href="cours-paleontologie/index.html" class="mobile-nav-link">
+          <span>07</span> Paléontologie
+        </a>
+
+        <!-- Anthropologie avec sous-menu dépliant -->
+        <div class="mobile-nav-group">
+          <div class="mobile-nav-row">
+            <a href="cours-anthropologie/index.html" class="mobile-nav-link">
+              <span>08</span> Anthropologie
+            </a>
+
+            <button
+              class="mobile-nav-expand"
+              type="button"
+              aria-label="Afficher les chapitres d’anthropologie"
+              aria-expanded="false"
+              aria-controls="mobile-submenu-anthropologie"
+            >
+              <span aria-hidden="true">⌄</span>
+            </button>
+          </div>
+
+          <div
+            class="mobile-nav-submenu"
+            id="mobile-submenu-anthropologie"
+            hidden
+          >
+            <a href="cours-anthropologie/cours.html?id=champ">
+              Le champ de l’anthropologie
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=methodes">
+              Questions, méthodes et preuves
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=ethique">
+              Éthique et responsabilités
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=primates">
+              Primates et comparaisons biologiques
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=evolution-humaine">
+              Évolution humaine et lignées
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=variation-biologique">
+              Variation biologique et populations
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=culture">
+              Culture, normes et symboles
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=ethnographie">
+              Ethnographie et enquête de terrain
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=comparaison-culturelle">
+              Comparaison et relativisme culturel
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=traces-materielles">
+              Archéologie et traces matérielles
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=contexte-provenance">
+              Contexte, provenance et association
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=projets-chronologie">
+              Projets archéologiques et chronologie
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=langue-societe">
+              Langue, signes et vie sociale
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=variation-langues">
+              Variation et changement linguistiques
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=tylor-primitive-culture">
+              Primitive Culture
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=boas-mind-of-primitive-man">
+              The Mind of Primitive Man
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=malinowski-argonauts">
+              Argonauts of the Western Pacific
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=mead-coming-of-age-in-samoa">
+              Coming of Age in Samoa
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=benedict-patterns-of-culture">
+              Patterns of Culture
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=evans-pritchard-azande">
+              Witchcraft, Oracles and Magic among the Azande
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=levi-strauss-tristes-tropiques">
+              Tristes Tropiques
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=douglas-purity-and-danger">
+              Purity and Danger
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=geertz-interpretation-of-cultures">
+              The Interpretation of Cultures
+            </a>
+
+            <a href="cours-anthropologie/cours.html?id=descola-par-dela-nature-et-culture">
+              Par-delà nature et culture
+            </a>
+          </div>
+        </div>
+
+        <a href="cours-histoire/index.html" class="mobile-nav-link">
+          <span>09</span> Histoire
+        </a>
+
+        <a href="#suite" class="mobile-nav-link mobile-nav-coming">
+          <span>10+</span> Les disciplines à venir
+        </a>
+      </div>
+    </nav>
 
     <main>
       <section class="opening" aria-labelledby="page-title">
         <div class="opening-copy">
-          <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> APPRENDRE · COMPRENDRE · RELIER</p>
+          <p class="eyebrow">
+            <span class="live-dot" aria-hidden="true"></span>
+            APPRENDRE · COMPRENDRE · RELIER
+          </p>
+
           <h1 id="page-title">La<br><em>connaissance</em></h1>
-          <p class="opening-intro">Des cours pour éclairer les idées, des disciplines qui se répondent, un espace qui grandit au fil des découvertes.</p>
-          <a class="opening-link" href="#cours">Entrer dans les cours <span aria-hidden="true">↓</span></a>
+
+          <p class="opening-intro">
+            Des cours pour éclairer les idées, des disciplines qui se répondent,
+            un espace qui grandit au fil des découvertes.
+          </p>
+
+          <a class="opening-link" href="#cours">
+            Entrer dans les cours <span aria-hidden="true">↓</span>
+          </a>
         </div>
+
         <div class="opening-art" aria-hidden="true">
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
@@ -108,77 +245,135 @@
 
       <section class="course-section" id="cours" aria-labelledby="courses-title">
         <div class="section-heading">
-          <div><p class="eyebrow">LE CATALOGUE</p><h2 id="courses-title">Choisir une discipline</h2></div>
+          <div>
+            <p class="eyebrow">LE CATALOGUE</p>
+            <h2 id="courses-title">Choisir une discipline</h2>
+          </div>
           <span class="section-index">01 — 09</span>
         </div>
+
         <div class="course-list">
           <a class="course-entry math-entry" href="cours-mathematiques/programmes.html">
             <span class="entry-number">01</span>
             <span class="entry-symbol" aria-hidden="true">x²</span>
-            <span class="entry-copy"><strong>Mathématiques</strong><span>Du lycée à la prépa scientifique · 89 chapitres</span></span>
+            <span class="entry-copy">
+              <strong>Mathématiques</strong>
+              <span>Du lycée à la prépa scientifique · 89 chapitres</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
+
           <a class="course-entry physics-entry" href="cours-physique/index.html">
             <span class="entry-number">02</span>
             <span class="entry-symbol" aria-hidden="true">φ</span>
-            <span class="entry-copy"><strong>Physique</strong><span>Des lois fondamentales aux sciences de l’Univers · 35 chapitres et 8 cours approfondis</span></span>
+            <span class="entry-copy">
+              <strong>Physique</strong>
+              <span>Des lois fondamentales aux sciences de l’Univers · 35 chapitres et 8 cours approfondis</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
+
           <a class="course-entry chemistry-entry" href="cours-chimie/index.html">
             <span class="entry-number">03</span>
             <span class="entry-symbol" aria-hidden="true">⇌</span>
-            <span class="entry-copy"><strong>Chimie</strong><span>Des constituants de la matière aux synthèses moléculaires · 18 chapitres</span></span>
+            <span class="entry-copy">
+              <strong>Chimie</strong>
+              <span>Des constituants de la matière aux synthèses moléculaires · 18 chapitres</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
+
           <a class="course-entry economics-entry" href="cours-economie/index.html">
             <span class="entry-number">04</span>
             <span class="entry-symbol" aria-hidden="true">€</span>
-            <span class="entry-copy"><strong>Économie</strong><span>Microéconomie, macroéconomie et grands économistes · 3 rubriques · 11 chapitres</span></span>
+            <span class="entry-copy">
+              <strong>Économie</strong>
+              <span>Microéconomie, macroéconomie et grands économistes · 3 rubriques · 11 chapitres</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
+
           <a class="course-entry geology-entry" href="cours-geologie/index.html">
             <span class="entry-number">05</span>
             <span class="entry-symbol" aria-hidden="true">◈</span>
-            <span class="entry-copy"><strong>Géologie</strong><span>Des minéraux aux temps profonds · 6 chapitres et 1 cours approfondi</span></span>
+            <span class="entry-copy">
+              <strong>Géologie</strong>
+              <span>Des minéraux aux temps profonds · 6 chapitres et 1 cours approfondi</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
+
           <a class="course-entry climatology-entry" href="cours-climatologie/index.html">
             <span class="entry-number">06</span>
             <span class="entry-symbol" aria-hidden="true">☀</span>
-            <span class="entry-copy"><strong>Climatologie</strong><span>Du bilan radiatif au changement climatique · 9 chapitres</span></span>
+            <span class="entry-copy">
+              <strong>Climatologie</strong>
+              <span>Du bilan radiatif au changement climatique · 9 chapitres</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
+
           <a class="course-entry paleontology-entry" href="cours-paleontologie/index.html">
             <span class="entry-number">07</span>
             <span class="entry-symbol" aria-hidden="true">✳</span>
-            <span class="entry-copy"><strong>Paléontologie</strong><span>Des fossiles aux archives de l’histoire du vivant · 1 cours approfondi</span></span>
+            <span class="entry-copy">
+              <strong>Paléontologie</strong>
+              <span>Des fossiles aux archives de l’histoire du vivant · 1 cours approfondi</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
+
           <a class="course-entry anthropology-entry" href="cours-anthropologie/index.html">
             <span class="entry-number">08</span>
             <span class="entry-symbol" aria-hidden="true">A</span>
-            <span class="entry-copy"><strong>Anthropologie</strong><span>Des traces du passé aux sociétés et aux langues · 5 rubriques · 14 chapitres</span></span>
+            <span class="entry-copy">
+              <strong>Anthropologie</strong>
+              <span>Des traces du passé aux sociétés et aux langues · 5 rubriques · 14 chapitres</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
+
           <a class="course-entry history-entry" href="cours-histoire/index.html">
             <span class="entry-number">09</span>
             <span class="entry-symbol" aria-hidden="true">H</span>
-            <span class="entry-copy"><strong>Histoire</strong><span>Des premières cités aux grands empires · 1 rubrique · 6 chapitres</span></span>
+            <span class="entry-copy">
+              <strong>Histoire</strong>
+              <span>Des premières cités aux grands empires · 1 rubrique · 6 chapitres</span>
+            </span>
             <span class="entry-arrow" aria-hidden="true">↗</span>
           </a>
         </div>
       </section>
 
       <section class="next-section" id="suite" aria-labelledby="next-title">
-        <div class="next-heading"><p class="eyebrow">LE CHAMP S’ÉLARGIT</p><h2 id="next-title">Et ensuite</h2></div>
+        <div class="next-heading">
+          <p class="eyebrow">LE CHAMP S’ÉLARGIT</p>
+          <h2 id="next-title">Et ensuite</h2>
+        </div>
+
         <div class="next-list" aria-label="Disciplines à venir">
-          <div class="next-entry"><span>10</span><strong>Sciences du vivant</strong><span class="coming-label">À VENIR</span></div>
-          <div class="next-entry"><span>11</span><strong>Informatique</strong><span class="coming-label">À VENIR</span></div>
+          <div class="next-entry">
+            <span>10</span>
+            <strong>Sciences du vivant</strong>
+            <span class="coming-label">À VENIR</span>
+          </div>
+
+          <div class="next-entry">
+            <span>11</span>
+            <strong>Informatique</strong>
+            <span class="coming-label">À VENIR</span>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">K</span><span>LA CONNAISSANCE</span></a><span>UNE DISCIPLINE APRÈS L’AUTRE</span><a href="#page-title">Retour en haut ↑</a></footer>
+    <footer class="site-footer">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span>LA CONNAISSANCE</span>
+      </a>
+      <span>UNE DISCIPLINE APRÈS L’AUTRE</span>
+      <a href="#page-title">Retour en haut ↑</a>
+    </footer>
   </body>
 </html>
-
