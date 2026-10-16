@@ -205,8 +205,8 @@ script.onerror = () => {
   window.courseCatalog = undefined;
 
   reject(
-    new Error(`Impossible de charger ${file}`)
-  );
+  new Error(`Impossible de charger ${file} — URL : ${script.src}`)
+);
 };
 
 document.head.appendChild(script);
