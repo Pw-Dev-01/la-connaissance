@@ -1,4 +1,20 @@
 
+
+function getChapterLinks(courseCatalog, basePath) {
+  if (!Array.isArray(courseCatalog)) return [];
+
+  return courseCatalog.flatMap((branch) =>
+    (branch.chapters || [])
+      .filter((chapter) => chapter.id && chapter.title)
+      .map((chapter) => ({
+        title: chapter.title,
+        url: `${basePath}/cours.html?id=${encodeURIComponent(chapter.id)}`
+      }))
+  );
+}
+
+
+
 const courseEntries = document.querySelectorAll('.course-entry');
 
 courseEntries.forEach((entry) => {
