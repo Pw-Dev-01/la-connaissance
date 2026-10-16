@@ -56,3 +56,28 @@ if (menuToggle && mobileNavigation) {
     }
   });
 }
+
+
+document.querySelectorAll('.submenu-toggle').forEach((button) => {
+  const submenuId = button.getAttribute('aria-controls');
+  const submenu = document.getElementById(submenuId);
+
+  if (!submenu) return;
+
+  button.addEventListener('click', () => {
+    const isOpen =
+      button.getAttribute('aria-expanded') === 'true';
+
+    button.setAttribute('aria-expanded', String(!isOpen));
+    submenu.classList.toggle('is-open', !isOpen);
+    submenu.inert = isOpen;
+
+    button.setAttribute(
+      'aria-label',
+      isOpen
+        ? 'Afficher les cours'
+        : 'Masquer les cours'
+    );
+  });
+});
+
