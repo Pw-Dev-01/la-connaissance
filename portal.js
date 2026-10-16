@@ -107,7 +107,13 @@ if (button && mobileNavigation.contains(button)) {
 
   submenu.hidden = !shouldOpen;
   submenu.inert = !shouldOpen;
-  submenu.classList.toggle('is-open', shouldOpen);
+submenu.classList.toggle('is-open', shouldOpen);
+
+if (shouldOpen) {
+  submenu.style.display = 'block';
+} else {
+  submenu.style.display = 'none';
+}
 
   return;
 }
