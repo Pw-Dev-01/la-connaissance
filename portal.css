@@ -628,7 +628,7 @@ h2 {
   padding: 10px 8px;
   color: var(--muted);
   font-family: var(--sans);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.45;
   text-decoration: none;
   overflow-wrap: anywhere;
@@ -808,6 +808,11 @@ h2 {
     height: 34px;
     min-width: 34px;
   }
+
+.mobile-chapter-link {
+  font-size: 15px;
+ }
+
 }
 
 /* Respect des préférences de mouvement */
@@ -827,3 +832,4 @@ h2 {
     transition: none;
   }
 }
+
