@@ -93,6 +93,11 @@ if (button && mobileNavigation.contains(button)) {
     return;
   }
 
+console.log('Bouton cliqué :', button);
+console.log('ID du sous-menu :', submenuId);
+console.log('Élément trouvé :', submenu);
+console.log('Contenu du sous-menu :', submenu?.innerHTML);
+
   const shouldOpen =
     button.getAttribute('aria-expanded') !== 'true';
 
