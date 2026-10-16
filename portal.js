@@ -195,6 +195,24 @@ function loadDisciplineData(file) {
    5. EXTRACTION DES CHAPITRES
    ========================================================= */
 
+function getChapters(catalog) {
+  const branches = Array.isArray(catalog)
+    ? catalog
+    : Object.values(catalog || {});
+
+  return branches.flatMap((branch) => {
+    if (!branch || !Array.isArray(branch.chapters)) {
+      return [];
+    }
+
+    return branch.chapters;
+  });
+}
+
+/* =========================================================
+   6. CRÉATION DES LIENS VERS LES CHAPITRES
+   ========================================================= */
+
 function getChapterUrl(chapter, config) {
   const folderUrl = new URL(config.folder, document.baseURI);
   const url = new URL(config.coursePage || 'cours.html', folderUrl);
@@ -204,37 +222,6 @@ function getChapterUrl(chapter, config) {
   }
 
   return url.href;
-}
-
-/* =========================================================
-   6. CRÉATION DES LIENS VERS LES CHAPITRES
-   ========================================================= */
-
-function getChapterUrl(chapter, config) {
-  const folderUrl = new URL(config.folder, document.baseURI);
-
-  const target =
-    chapter.page ||
-    chapter.url ||
-    chapter.href ||
-    chapter.link ||
-    chapter.file ||
-    chapter.path;
-
-  if (target) {
-    return new URL(target, folderUrl).href;
-  }
-
-  if (chapter.slug) {
-    return new URL(`${chapter.slug}.html`, folderUrl).href;
-  }
-
-  if (chapter.id) {
-    return new URL(`${chapter.id}.html`, folderUrl).href;
-  }
-
-  console.warn('Chapitre sans lien :', chapter);
-  return new URL(config.fallback, folderUrl).href;
 }
 
 /* =========================================================
