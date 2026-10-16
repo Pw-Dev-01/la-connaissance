@@ -125,59 +125,51 @@ Seuls les chemins des fichiers data.js sont modifiés.
 ========================================================= */
 
 const disciplines = {
-mathematiques: {
-file: './cours-mathematiques/mathematiques-data.js',
-folder: 'cours-mathematiques/',
-fallback: 'programmes.html'
-},
-
-physique: {
-file: './cours-physique/physique-data.js',
-folder: 'cours-physique/',
-fallback: 'index.html'
-},
-
-chimie: {
-file: './cours-chimie/chimie-data.js',
-folder: 'cours-chimie/',
-fallback: 'index.html'
-},
-
-economie: {
-file: './cours-economie/economie-data.js',
-folder: 'cours-economie/',
-fallback: 'index.html'
-},
-
-geologie: {
-file: './cours-geologie/geologie-data.js',
-folder: 'cours-geologie/',
-fallback: 'index.html'
-},
-
-climatologie: {
-file: './cours-climatologie/climatologie-data.js',
-folder: 'cours-climatologie/',
-fallback: 'index.html'
-},
-
-paleontologie: {
-file: './cours-paleontologie/paleontologie-data.js',
-folder: 'cours-paleontologie/',
-fallback: 'index.html'
-},
-
-anthropologie: {
-file: './cours-anthropologie/anthropologie-data.js',
-folder: 'cours-anthropologie/',
-fallback: 'cours.html'
-},
-
-histoire: {
-file: './cours-histoire/histoire-data.js',
-folder: 'cours-histoire/',
-fallback: 'index.html'
-}
+  mathematiques: {
+    file: './cours-mathematiques/mathematiques-data.js',
+    folder: 'cours-mathematiques/',
+    fallback: 'programmes.html'
+  },
+  physique: {
+    file: './cours-physique/physique-data.js',
+    folder: 'cours-physique/',
+    fallback: 'index.html'
+  },
+  chimie: {
+    file: './cours-chimie/chimie-data.js',
+    folder: 'cours-chimie/',
+    fallback: 'index.html'
+  },
+  economie: {
+    file: './cours-economie/economie-data.js',
+    folder: 'cours-economie/',
+    fallback: 'index.html'
+  },
+  geologie: {
+    file: './cours-geologie/geologie-data.js',
+    folder: 'cours-geologie/',
+    fallback: 'index.html'
+  },
+  climatologie: {
+    file: './cours-climatologie/climatologie-data.js',
+    folder: 'cours-climatologie/',
+    fallback: 'index.html'
+  },
+  paleontologie: {
+    file: './cours-paleontologie/paleontologie-data.js',
+    folder: 'cours-paleontologie/',
+    fallback: 'index.html'
+  },
+  anthropologie: {
+    file: './cours-anthropologie/anthropologie-data.js',
+    folder: 'cours-anthropologie/',
+    fallback: 'cours.html'
+  },
+  histoire: {
+    file: './cours-histoire/histoire-data.js',
+    folder: 'cours-histoire/',
+    fallback: 'index.html'
+  }
 };
 
 /* =========================================================
