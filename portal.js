@@ -1,20 +1,4 @@
 
-
-function getChapterLinks(courseCatalog, basePath) {
-  if (!Array.isArray(courseCatalog)) return [];
-
-  return courseCatalog.flatMap((branch) =>
-    (branch.chapters || [])
-      .filter((chapter) => chapter.id && chapter.title)
-      .map((chapter) => ({
-        title: chapter.title,
-        url: `${basePath}/cours.html?id=${encodeURIComponent(chapter.id)}`
-      }))
-  );
-}
-
-
-
 const courseEntries = document.querySelectorAll('.course-entry');
 
 courseEntries.forEach((entry) => {
@@ -30,30 +14,24 @@ courseEntries.forEach((entry) => {
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileNavigation = document.querySelector('#mobile-navigation');
 
+function setMenuOpen(isOpen) {
+  if (!menuToggle || !mobileNavigation) return;
+
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
+  menuToggle.setAttribute(
+    'aria-label',
+    isOpen ? 'Fermer le menu' : 'Ouvrir le menu'
+  );
+
+  mobileNavigation.classList.toggle('is-open', isOpen);
+  mobileNavigation.setAttribute('aria-hidden', String(!isOpen));
+  mobileNavigation.inert = !isOpen;
+}
+
 if (menuToggle && mobileNavigation) {
-  function setMenuOpen(isOpen) {
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-    menuToggle.setAttribute(
-      'aria-label',
-      isOpen ? 'Fermer le menu' : 'Ouvrir le menu'
-    );
-
-    mobileNavigation.classList.toggle('is-open', isOpen);
-    mobileNavigation.setAttribute('aria-hidden', String(!isOpen));
-    mobileNavigation.inert = !isOpen;
-  }
-
   menuToggle.addEventListener('click', () => {
-    const isOpen =
-      menuToggle.getAttribute('aria-expanded') === 'true';
-
+    const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
     setMenuOpen(!isOpen);
-  });
-
-  mobileNavigation.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      setMenuOpen(false);
-    });
   });
 
   document.addEventListener('keydown', (event) => {
@@ -73,27 +51,37 @@ if (menuToggle && mobileNavigation) {
   });
 }
 
-
-document.querySelectorAll('.submenu-toggle').forEach((button) => {
+// Boutons qui ouvrent et ferment les sous-menus des disciplines.
+document.querySelectorAll('.mobile-nav-expand').forEach((button) => {
   const submenuId = button.getAttribute('aria-controls');
   const submenu = document.getElementById(submenuId);
 
   if (!submenu) return;
 
   button.addEventListener('click', () => {
-    const isOpen =
-      button.getAttribute('aria-expanded') === 'true';
+    const isOpen = button.getAttribute('aria-expanded') === 'true';
+    const shouldOpen = !isOpen;
 
-    button.setAttribute('aria-expanded', String(!isOpen));
-    submenu.classList.toggle('is-open', !isOpen);
-    submenu.inert = isOpen;
-
+    button.setAttribute('aria-expanded', String(shouldOpen));
     button.setAttribute(
       'aria-label',
-      isOpen
-        ? 'Afficher les cours'
-        : 'Masquer les cours'
+      shouldOpen
+        ? 'Masquer les chapitres'
+        : 'Afficher les chapitres'
     );
+
+    submenu.hidden = !shouldOpen;
+    submenu.classList.toggle('is-open', shouldOpen);
+    submenu.inert = !shouldOpen;
   });
 });
 
+// Ferme le menu mobile après avoir suivi un lien.
+// Les boutons de dépliage ne sont pas concernés.
+if (mobileNavigation && menuToggle) {
+  mobileNavigation.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      setMenuOpen(false);
+    });
+  });
+}
