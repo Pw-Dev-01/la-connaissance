@@ -389,3 +389,111 @@ h2 { margin: 0; font-family: var(--serif); font-size: 36px; font-weight: 400; li
 }
 
 
+/* Bouton d'ouverture des chapitres : triangle plein orange */
+.mobile-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mobile-nav-row .mobile-nav-link {
+  flex: 1;
+  min-width: 0;
+}
+
+.mobile-nav-expand {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f28c28;
+  border-radius: 10px;
+  background: #f28c28;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.mobile-nav-expand span {
+  display: inline-block;
+  font-size: 0;
+  line-height: 1;
+}
+
+.mobile-nav-expand span::before {
+  content: "▼";
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  color: #ffffff;
+  transform: rotate(0deg);
+  transition: transform 180ms ease;
+}
+
+.mobile-nav-expand[aria-expanded="true"] span::before {
+  transform: rotate(180deg);
+}
+
+.mobile-nav-expand:hover {
+  background: #d96f12;
+  border-color: #d96f12;
+}
+
+.mobile-nav-expand:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
+
+.mobile-nav-expand:active {
+  transform: scale(0.94);
+}
+
+/* Affichage des chapitres */
+.mobile-nav-submenu[hidden] {
+  display: none !important;
+}
+
+.mobile-nav-submenu.is-open {
+  display: block;
+}
+
+.mobile-chapter-list {
+  list-style: none;
+  margin: 0.4rem 0 0.8rem;
+  padding: 0 0 0 1rem;
+  border-left: 2px solid #f28c28;
+}
+
+.mobile-chapter-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-chapter-link {
+  display: block;
+  padding: 0.65rem 0.5rem;
+  line-height: 1.4;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.mobile-chapter-link:hover,
+.mobile-chapter-link:focus-visible {
+  color: #d96f12;
+  text-decoration: underline;
+}
+
+
+
