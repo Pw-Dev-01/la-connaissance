@@ -536,7 +536,7 @@
       const s = makeSection(
         ++n,
         'RÉFÉRENCES',
-        lesson.sourcesHeading || 'Sources scientifiques'
+        lesson.sourcesHeading || 'Sources de référence'
       );
 
       lesson.sources.forEach((src) => {
