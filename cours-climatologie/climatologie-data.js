@@ -1340,7 +1340,33 @@ window.courseCatalog = [
           }
         }
       }
+    ],
+
+{
+  "sourcesHeading": "Notices bibliographiques",
+  "sources": [
+    {
+      "title": "Cambridge University Press — An Introduction to Atmospheric Physics, David G. Andrews (2e édition, 2010)",
+      "url": "https://www.cambridge.org/core/books/an-introduction-to-atmospheric-physics/3F0120AB397D07A552C821158930ACB8"
+    },
+    {
+      "title": "Cambridge University Press — Atmospheric and Oceanic Fluid Dynamics, Geoffrey K. Vallis (2e édition, 2017)",
+      "url": "https://www.cambridge.org/core/books/atmospheric-and-oceanic-fluid-dynamics/41379BDDC4257CBE11143C466F6428A4"
+    },
+    {
+      "title": "NASA — Atmospheric Composition",
+      "url": "https://www.nasa.gov/ames/earth-science/missions/atmospheric-composition/"
+    },
+    {
+      "title": "NASA Science — Earth's Atmosphere: A Multi-layered Cake",
+      "url": "https://science.nasa.gov/earth/earth-atmosphere/earths-atmosphere-a-multi-layered-cake/"
+    },
+    {
+      "title": "Organisation météorologique mondiale (OMM) — State of the Global Climate",
+      "url": "https://wmo.int/publication-series/state-of-global-climate"
+     }
     ]
+   }
   }
 ];
 
