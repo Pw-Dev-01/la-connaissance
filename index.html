@@ -1,5 +1,5 @@
-
 <!doctype html>
+
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
@@ -7,477 +7,513 @@
     <meta name="theme-color" content="#f1f3ec">
     <meta
       name="description"
-      content="La connaissance : un espace de cours pour explorer les mathématiques, la physique, la chimie, l'économie, la géologie, la climatologie, la paléontologie, l'anthropologie et l'histoire."
+      content="La connaissance : un espace de cours pour explorer les mathématiques, la physique, la chimie, l'économie, la géologie, la climatologie, la paléontologie, l'anthropologie, l'histoire et la philosophie."
     >
     <title>La connaissance · Explorer les cours</title>
     <link rel="stylesheet" href="portal.css">
     <script src="portal.js" defer></script>
-  </head>
-
-  <body>
+  </head>  <body>
     <header class="masthead">
       <a class="brand" href="index.html" aria-label="La connaissance, accueil">
         <span class="brand-mark" aria-hidden="true">K</span>
         <span>LA CONNAISSANCE</span>
-      </a>
+      </a>  <nav class="top-navigation" aria-label="Navigation principale">
+    <a href="#cours">Explorer</a>
+    <a href="#suite">À venir</a>
+  </nav>
 
-      <nav class="top-navigation" aria-label="Navigation principale">
-        <a href="#cours">Explorer</a>
-        <a href="#suite">À venir</a>
-      </nav>
+  <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
 
-      <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="mobile-navigation"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Ouvrir le menu"
-        aria-expanded="false"
-        aria-controls="mobile-navigation"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
+<nav
+  class="mobile-navigation"
+  id="mobile-navigation"
+  aria-label="Index des disciplines"
+  aria-hidden="true"
+  inert
+>
+  <div class="mobile-navigation-inner">
+    <p class="eyebrow">INDEX DU PORTAIL</p>
 
-    <nav
-      class="mobile-navigation"
-      id="mobile-navigation"
-      aria-label="Index des disciplines"
-      aria-hidden="true"
-      inert
-    >
-      <div class="mobile-navigation-inner">
-        <p class="eyebrow">INDEX DU PORTAIL</p>
+    <a href="#cours" class="mobile-nav-link">
+      <span>00</span> Explorer les cours
+    </a>
 
-        <a href="#cours" class="mobile-nav-link">
-          <span>00</span> Explorer les cours
+    <!-- Mathématiques -->
+    <div class="mobile-nav-group" data-discipline="mathematiques">
+      <div class="mobile-nav-row">
+        <a
+          href="cours-mathematiques/programmes.html"
+          class="mobile-nav-link"
+        >
+          <span>01</span> Mathématiques
         </a>
 
-        <!-- Mathématiques -->
-        <div class="mobile-nav-group" data-discipline="mathematiques">
-          <div class="mobile-nav-row">
-            <a
-              href="cours-mathematiques/programmes.html"
-              class="mobile-nav-link"
-            >
-              <span>01</span> Mathématiques
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres de mathématiques"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-mathematiques"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-mathematiques"
-            data-submenu-for="mathematiques"
-            hidden
-          ></div>
-        </div>
-
-        <!-- Physique -->
-        <div class="mobile-nav-group" data-discipline="physique">
-          <div class="mobile-nav-row">
-            <a href="cours-physique/index.html" class="mobile-nav-link">
-              <span>02</span> Physique
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres de physique"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-physique"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-physique"
-            data-submenu-for="physique"
-            hidden
-          ></div>
-        </div>
-
-        <!-- Chimie -->
-        <div class="mobile-nav-group" data-discipline="chimie">
-          <div class="mobile-nav-row">
-            <a href="cours-chimie/index.html" class="mobile-nav-link">
-              <span>03</span> Chimie
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres de chimie"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-chimie"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-chimie"
-            data-submenu-for="chimie"
-            hidden
-          ></div>
-        </div>
-
-        <!-- Économie -->
-        <div class="mobile-nav-group" data-discipline="economie">
-          <div class="mobile-nav-row">
-            <a href="cours-economie/index.html" class="mobile-nav-link">
-              <span>04</span> Économie
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres d’économie"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-economie"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-economie"
-            data-submenu-for="economie"
-            hidden
-          ></div>
-        </div>
-
-        <!-- Géologie -->
-        <div class="mobile-nav-group" data-discipline="geologie">
-          <div class="mobile-nav-row">
-            <a href="cours-geologie/index.html" class="mobile-nav-link">
-              <span>05</span> Géologie
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres de géologie"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-geologie"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-geologie"
-            data-submenu-for="geologie"
-            hidden
-          ></div>
-        </div>
-
-        <!-- Climatologie -->
-        <div class="mobile-nav-group" data-discipline="climatologie">
-          <div class="mobile-nav-row">
-            <a href="cours-climatologie/index.html" class="mobile-nav-link">
-              <span>06</span> Climatologie
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres de climatologie"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-climatologie"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-climatologie"
-            data-submenu-for="climatologie"
-            hidden
-          ></div>
-        </div>
-
-        <!-- Paléontologie -->
-        <div class="mobile-nav-group" data-discipline="paleontologie">
-          <div class="mobile-nav-row">
-            <a href="cours-paleontologie/index.html" class="mobile-nav-link">
-              <span>07</span> Paléontologie
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres de paléontologie"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-paleontologie"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-paleontologie"
-            data-submenu-for="paleontologie"
-            hidden
-          ></div>
-        </div>
-
-        <!-- Anthropologie -->
-        <div class="mobile-nav-group" data-discipline="anthropologie">
-          <div class="mobile-nav-row">
-            <a href="cours-anthropologie/index.html" class="mobile-nav-link">
-              <span>08</span> Anthropologie
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres d’anthropologie"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-anthropologie"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-anthropologie"
-            data-submenu-for="anthropologie"
-            hidden
-          ></div>
-        </div>
-
-        <!-- Histoire -->
-        <div class="mobile-nav-group" data-discipline="histoire">
-          <div class="mobile-nav-row">
-            <a href="cours-histoire/index.html" class="mobile-nav-link">
-              <span>09</span> Histoire
-            </a>
-
-            <button
-              class="mobile-nav-expand"
-              type="button"
-              aria-label="Afficher les chapitres d’histoire"
-              aria-expanded="false"
-              aria-controls="mobile-submenu-histoire"
-            >
-              <span aria-hidden="true">⌄</span>
-            </button>
-          </div>
-
-          <div
-            class="mobile-nav-submenu"
-            id="mobile-submenu-histoire"
-            data-submenu-for="histoire"
-            hidden
-          ></div>
-        </div>
-
-        <a href="#suite" class="mobile-nav-link mobile-nav-coming">
-          <span>10+</span> Les disciplines à venir
-        </a>
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres de mathématiques"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-mathematiques"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
       </div>
-    </nav>
 
-    <main>
-      <section class="opening" aria-labelledby="page-title">
-        <div class="opening-copy">
-          <p class="eyebrow">
-            <span class="live-dot" aria-hidden="true"></span>
-            APPRENDRE · COMPRENDRE · RELIER
-          </p>
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-mathematiques"
+        data-submenu-for="mathematiques"
+        hidden
+      ></div>
+    </div>
 
-          <h1 id="page-title">La<br><em>connaissance</em></h1>
+    <!-- Physique -->
+    <div class="mobile-nav-group" data-discipline="physique">
+      <div class="mobile-nav-row">
+        <a href="cours-physique/index.html" class="mobile-nav-link">
+          <span>02</span> Physique
+        </a>
 
-          <p class="opening-intro">
-            Des cours pour éclairer les idées, des disciplines qui se répondent,
-            un espace qui grandit au fil des découvertes.
-          </p>
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres de physique"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-physique"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
 
-          <a class="opening-link" href="#cours">
-            Entrer dans les cours <span aria-hidden="true">↓</span>
-          </a>
-        </div>
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-physique"
+        data-submenu-for="physique"
+        hidden
+      ></div>
+    </div>
 
-        <div class="opening-art" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="axis axis-horizontal"></div>
-          <div class="axis axis-vertical"></div>
-          <span class="art-symbol symbol-one">x²</span>
-          <span class="art-symbol symbol-two">φ</span>
-          <span class="art-symbol symbol-three">λ</span>
-          <span class="art-coordinate">Nº 001<br>48°51′N</span>
-        </div>
-      </section>
+    <!-- Chimie -->
+    <div class="mobile-nav-group" data-discipline="chimie">
+      <div class="mobile-nav-row">
+        <a href="cours-chimie/index.html" class="mobile-nav-link">
+          <span>03</span> Chimie
+        </a>
 
-      <section
-        class="course-section"
-        id="cours"
-        aria-labelledby="courses-title"
-      >
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">LE CATALOGUE</p>
-            <h2 id="courses-title">Choisir une discipline</h2>
-          </div>
-          <span class="section-index">01 — 09</span>
-        </div>
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres de chimie"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-chimie"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
 
-        <div class="course-list">
-          <a
-            class="course-entry math-entry"
-            href="cours-mathematiques/programmes.html"
-          >
-            <span class="entry-number">01</span>
-            <span class="entry-symbol" aria-hidden="true">x²</span>
-            <span class="entry-copy">
-              <strong>Mathématiques</strong>
-              <span>Du lycée à la prépa scientifique · 89 chapitres</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-chimie"
+        data-submenu-for="chimie"
+        hidden
+      ></div>
+    </div>
 
-          <a class="course-entry physics-entry" href="cours-physique/index.html">
-            <span class="entry-number">02</span>
-            <span class="entry-symbol" aria-hidden="true">φ</span>
-            <span class="entry-copy">
-              <strong>Physique</strong>
-              <span>Des lois fondamentales aux sciences de l’Univers · 35 chapitres et 8 cours approfondis</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
+    <!-- Économie -->
+    <div class="mobile-nav-group" data-discipline="economie">
+      <div class="mobile-nav-row">
+        <a href="cours-economie/index.html" class="mobile-nav-link">
+          <span>04</span> Économie
+        </a>
 
-          <a class="course-entry chemistry-entry" href="cours-chimie/index.html">
-            <span class="entry-number">03</span>
-            <span class="entry-symbol" aria-hidden="true">⇌</span>
-            <span class="entry-copy">
-              <strong>Chimie</strong>
-              <span>Des constituants de la matière aux synthèses moléculaires · 18 chapitres</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres d’économie"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-economie"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
 
-          <a class="course-entry economics-entry" href="cours-economie/index.html">
-            <span class="entry-number">04</span>
-            <span class="entry-symbol" aria-hidden="true">€</span>
-            <span class="entry-copy">
-              <strong>Économie</strong>
-              <span>Microéconomie, macroéconomie et grands économistes · 3 rubriques · 11 chapitres</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-economie"
+        data-submenu-for="economie"
+        hidden
+      ></div>
+    </div>
 
-          <a class="course-entry geology-entry" href="cours-geologie/index.html">
-            <span class="entry-number">05</span>
-            <span class="entry-symbol" aria-hidden="true">◈</span>
-            <span class="entry-copy">
-              <strong>Géologie</strong>
-              <span>Des minéraux aux temps profonds · 6 chapitres et 1 cours approfondi</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
+    <!-- Géologie -->
+    <div class="mobile-nav-group" data-discipline="geologie">
+      <div class="mobile-nav-row">
+        <a href="cours-geologie/index.html" class="mobile-nav-link">
+          <span>05</span> Géologie
+        </a>
 
-          <a
-            class="course-entry climatology-entry"
-            href="cours-climatologie/index.html"
-          >
-            <span class="entry-number">06</span>
-            <span class="entry-symbol" aria-hidden="true">☀</span>
-            <span class="entry-copy">
-              <strong>Climatologie</strong>
-              <span>Du bilan radiatif au changement climatique · 9 chapitres</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres de géologie"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-geologie"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
 
-          <a
-            class="course-entry paleontology-entry"
-            href="cours-paleontologie/index.html"
-          >
-            <span class="entry-number">07</span>
-            <span class="entry-symbol" aria-hidden="true">✳</span>
-            <span class="entry-copy">
-              <strong>Paléontologie</strong>
-              <span>Des fossiles aux archives de l’histoire du vivant · 1 cours approfondi</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-geologie"
+        data-submenu-for="geologie"
+        hidden
+      ></div>
+    </div>
 
-          <a
-            class="course-entry anthropology-entry"
-            href="cours-anthropologie/index.html"
-          >
-            <span class="entry-number">08</span>
-            <span class="entry-symbol" aria-hidden="true">A</span>
-            <span class="entry-copy">
-              <strong>Anthropologie</strong>
-              <span>Des traces du passé aux sociétés et aux langues · 5 rubriques · 14 chapitres</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
+    <!-- Climatologie -->
+    <div class="mobile-nav-group" data-discipline="climatologie">
+      <div class="mobile-nav-row">
+        <a href="cours-climatologie/index.html" class="mobile-nav-link">
+          <span>06</span> Climatologie
+        </a>
 
-          <a class="course-entry history-entry" href="cours-histoire/index.html">
-            <span class="entry-number">09</span>
-            <span class="entry-symbol" aria-hidden="true">H</span>
-            <span class="entry-copy">
-              <strong>Histoire</strong>
-              <span>Des premières cités aux grands empires · 1 rubrique · 6 chapitres</span>
-            </span>
-            <span class="entry-arrow" aria-hidden="true">↗</span>
-          </a>
-        </div>
-      </section>
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres de climatologie"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-climatologie"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
 
-      <section class="next-section" id="suite" aria-labelledby="next-title">
-        <div class="next-heading">
-          <p class="eyebrow">LE CHAMP S’ÉLARGIT</p>
-          <h2 id="next-title">Et ensuite</h2>
-        </div>
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-climatologie"
+        data-submenu-for="climatologie"
+        hidden
+      ></div>
+    </div>
 
-        <div class="next-list" aria-label="Disciplines à venir">
-          <div class="next-entry">
-            <span>10</span>
-            <strong>Sciences du vivant</strong>
-            <span class="coming-label">À VENIR</span>
-          </div>
+    <!-- Paléontologie -->
+    <div class="mobile-nav-group" data-discipline="paleontologie">
+      <div class="mobile-nav-row">
+        <a href="cours-paleontologie/index.html" class="mobile-nav-link">
+          <span>07</span> Paléontologie
+        </a>
 
-          <div class="next-entry">
-            <span>11</span>
-            <strong>Informatique</strong>
-            <span class="coming-label">À VENIR</span>
-          </div>
-        </div>
-      </section>
-    </main>
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres de paléontologie"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-paleontologie"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
 
-    <footer class="site-footer">
-      <a class="brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true">K</span>
-        <span>LA CONNAISSANCE</span>
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-paleontologie"
+        data-submenu-for="paleontologie"
+        hidden
+      ></div>
+    </div>
+
+    <!-- Anthropologie -->
+    <div class="mobile-nav-group" data-discipline="anthropologie">
+      <div class="mobile-nav-row">
+        <a href="cours-anthropologie/index.html" class="mobile-nav-link">
+          <span>08</span> Anthropologie
+        </a>
+
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres d’anthropologie"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-anthropologie"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
+
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-anthropologie"
+        data-submenu-for="anthropologie"
+        hidden
+      ></div>
+    </div>
+
+    <!-- Histoire -->
+    <div class="mobile-nav-group" data-discipline="histoire">
+      <div class="mobile-nav-row">
+        <a href="cours-histoire/index.html" class="mobile-nav-link">
+          <span>09</span> Histoire
+        </a>
+
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres d’histoire"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-histoire"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
+
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-histoire"
+        data-submenu-for="histoire"
+        hidden
+      ></div>
+    </div>
+
+    <!-- Philosophie -->
+    <div class="mobile-nav-group" data-discipline="philosophie">
+      <div class="mobile-nav-row">
+        <a href="cours-philosophie/index.html" class="mobile-nav-link">
+          <span>10</span> Philosophie
+        </a>
+
+        <button
+          class="mobile-nav-expand"
+          type="button"
+          aria-label="Afficher les chapitres de philosophie"
+          aria-expanded="false"
+          aria-controls="mobile-submenu-philosophie"
+        >
+          <span aria-hidden="true">⌄</span>
+        </button>
+      </div>
+
+      <div
+        class="mobile-nav-submenu"
+        id="mobile-submenu-philosophie"
+        data-submenu-for="philosophie"
+        hidden
+      ></div>
+    </div>
+
+    <a href="#suite" class="mobile-nav-link mobile-nav-coming">
+      <span>11+</span> Les disciplines à venir
+    </a>
+  </div>
+</nav>
+
+<main>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="opening-copy">
+      <p class="eyebrow">
+        <span class="live-dot" aria-hidden="true"></span>
+        APPRENDRE · COMPRENDRE · RELIER
+      </p>
+
+      <h1 id="page-title">La<br><em>connaissance</em></h1>
+
+      <p class="opening-intro">
+        Des cours pour éclairer les idées, des disciplines qui se répondent,
+        un espace qui grandit au fil des découvertes.
+      </p>
+
+      <a class="opening-link" href="#cours">
+        Entrer dans les cours <span aria-hidden="true">↓</span>
       </a>
-      <span>UNE DISCIPLINE APRÈS L’AUTRE</span>
-      <a href="#page-title">Retour en haut ↑</a>
-    </footer>
+    </div>
+
+    <div class="opening-art" aria-hidden="true">
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+      <div class="axis axis-horizontal"></div>
+      <div class="axis axis-vertical"></div>
+      <span class="art-symbol symbol-one">x²</span>
+      <span class="art-symbol symbol-two">φ</span>
+      <span class="art-symbol symbol-three">λ</span>
+      <span class="art-coordinate">Nº 001<br>48°51′N</span>
+    </div>
+  </section>
+
+  <section
+    class="course-section"
+    id="cours"
+    aria-labelledby="courses-title"
+  >
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">LE CATALOGUE</p>
+        <h2 id="courses-title">Choisir une discipline</h2>
+      </div>
+      <span class="section-index">01 — 10</span>
+    </div>
+
+    <div class="course-list">
+      <a
+        class="course-entry math-entry"
+        href="cours-mathematiques/programmes.html"
+      >
+        <span class="entry-number">01</span>
+        <span class="entry-symbol" aria-hidden="true">x²</span>
+        <span class="entry-copy">
+          <strong>Mathématiques</strong>
+          <span>Du lycée à la prépa scientifique · 89 chapitres</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="course-entry physics-entry" href="cours-physique/index.html">
+        <span class="entry-number">02</span>
+        <span class="entry-symbol" aria-hidden="true">φ</span>
+        <span class="entry-copy">
+          <strong>Physique</strong>
+          <span>Des lois fondamentales aux sciences de l’Univers · 35 chapitres et 8 cours approfondis</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="course-entry chemistry-entry" href="cours-chimie/index.html">
+        <span class="entry-number">03</span>
+        <span class="entry-symbol" aria-hidden="true">⇌</span>
+        <span class="entry-copy">
+          <strong>Chimie</strong>
+          <span>Des constituants de la matière aux synthèses moléculaires · 18 chapitres</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="course-entry economics-entry" href="cours-economie/index.html">
+        <span class="entry-number">04</span>
+        <span class="entry-symbol" aria-hidden="true">€</span>
+        <span class="entry-copy">
+          <strong>Économie</strong>
+          <span>Microéconomie, macroéconomie et grands économistes · 3 rubriques · 11 chapitres</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="course-entry geology-entry" href="cours-geologie/index.html">
+        <span class="entry-number">05</span>
+        <span class="entry-symbol" aria-hidden="true">◈</span>
+        <span class="entry-copy">
+          <strong>Géologie</strong>
+          <span>Des minéraux aux temps profonds · 6 chapitres et 1 cours approfondi</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        class="course-entry climatology-entry"
+        href="cours-climatologie/index.html"
+      >
+        <span class="entry-number">06</span>
+        <span class="entry-symbol" aria-hidden="true">☀</span>
+        <span class="entry-copy">
+          <strong>Climatologie</strong>
+          <span>Du bilan radiatif au changement climatique · 9 chapitres</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        class="course-entry paleontology-entry"
+        href="cours-paleontologie/index.html"
+      >
+        <span class="entry-number">07</span>
+        <span class="entry-symbol" aria-hidden="true">✳</span>
+        <span class="entry-copy">
+          <strong>Paléontologie</strong>
+          <span>Des fossiles aux archives de l’histoire du vivant · 1 cours approfondi</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        class="course-entry anthropology-entry"
+        href="cours-anthropologie/index.html"
+      >
+        <span class="entry-number">08</span>
+        <span class="entry-symbol" aria-hidden="true">A</span>
+        <span class="entry-copy">
+          <strong>Anthropologie</strong>
+          <span>Des traces du passé aux sociétés et aux langues · 5 rubriques · 14 chapitres</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a class="course-entry history-entry" href="cours-histoire/index.html">
+        <span class="entry-number">09</span>
+        <span class="entry-symbol" aria-hidden="true">H</span>
+        <span class="entry-copy">
+          <strong>Histoire</strong>
+          <span>Des premières cités aux grands empires · 1 rubrique · 6 chapitres</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+
+      <a
+        class="course-entry philosophy-entry"
+        href="cours-philosophie/index.html"
+      >
+        <span class="entry-number">10</span>
+        <span class="entry-symbol" aria-hidden="true">Φ</span>
+        <span class="entry-copy">
+          <strong>Philosophie</strong>
+          <span>Conscience, liberté, vérité, justice et morale · Explorer les grandes questions de la pensée</span>
+        </span>
+        <span class="entry-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="next-section" id="suite" aria-labelledby="next-title">
+    <div class="next-heading">
+      <p class="eyebrow">LE CHAMP S’ÉLARGIT</p>
+      <h2 id="next-title">Et ensuite</h2>
+    </div>
+
+    <div class="next-list" aria-label="Disciplines à venir">
+      <div class="next-entry">
+        <span>11</span>
+        <strong>Sciences du vivant</strong>
+        <span class="coming-label">À VENIR</span>
+      </div>
+
+      <div class="next-entry">
+        <span>12</span>
+        <strong>Informatique</strong>
+        <span class="coming-label">À VENIR</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true">K</span>
+    <span>LA CONNAISSANCE</span>
+  </a>
+  <span>UNE DISCIPLINE APRÈS L’AUTRE</span>
+  <a href="#page-title">Retour en haut ↑</a>
+</footer>
+
   </body>
 </html>
