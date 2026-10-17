@@ -435,6 +435,12 @@ text-underline-offset: 4px;
 color: #ad482f;
 }
 
+.lesson-section a,
+.lesson-section p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .lesson-section {
 padding: 42px 0 48px;
 border-bottom: 1px solid var(--line);
