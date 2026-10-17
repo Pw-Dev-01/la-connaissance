@@ -16,8 +16,16 @@
 //     listées et numérotées à la suite des chapitres (ex. thermodynamique).
 
 (function () {
+
+(function () {
 const courseCatalog = (window.courseCatalog || []).filter(Boolean);
-if (!courseCatalog.length) console.error('catalogue.js : window.courseCatalog est vide ou absent. Le fichier data est-il chargé avant catalogue.js ?');
+
+const catalogChrono = [...courseCatalog].sort(
+  (a, b) => a.sortYear - b.sortYear
+);
+
+if (!catalogChrono.length) console.error('catalogue.js : window.courseCatalog est vide ou absent. Le fichier data est-il chargé avant catalogue.js ?');
+
 
 const levelNavigation = document.querySelector('#catalogue-levels');
 const programmeSections = document.querySelector('#programme-sections');
