@@ -151,6 +151,11 @@ const disciplines = {
     file: './cours-histoire/histoire-data.js',
     folder: 'cours-histoire/',
     fallback: 'index.html'
+  },
+  philosophie: {
+    file: './cours-philosophie/philosophie-data.js',
+    folder: 'cours-philosophie/',
+    fallback: 'index.html'
   }
 };
 
