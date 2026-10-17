@@ -123,6 +123,13 @@ top: 28px;
 padding-top: 11px;
 }
 
+@media (min-width: 701px) {
+  .course-sidebar {
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+  }
+}
+
 .sidebar-label {
 margin: 0 0 17px;
 }
