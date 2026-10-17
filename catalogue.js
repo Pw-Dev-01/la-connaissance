@@ -39,23 +39,6 @@
     console.error(
       'catalogue.js : window.courseCatalog est vide ou absent. Le fichier data est-il chargé avant catalogue.js ?'
     );
-
-console.table(
-  courseCatalog.map((branch) => ({
-    id: branch.id,
-    titre: branch.title,
-    sortYear: branch.sortYear,
-    type: typeof branch.sortYear
-  }))
-);
-
-console.table(
-  catalogChrono.map((branch, index) => ({
-    position: index + 1,
-    id: branch.id,
-    sortYear: branch.sortYear
-  }))
-);
   }
 
   const levelNavigation = document.querySelector('#catalogue-levels');
