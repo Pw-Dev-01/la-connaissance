@@ -2229,5 +2229,397 @@ window.courseCatalog = [
     ]
   },
 
-];
+// BRANCHE LE SIECLE DES LUMIÈRES
 
+  {
+    id: 'siecle-des-lumieres',
+    title: 'Le siècle des Lumières',
+    note: 'Huit chapitres sur les origines scientifiques et intellectuelles des Lumières, leurs idées, leurs grandes figures, l’Encyclopédie, la circulation des idées, les combats concrets, le despotisme éclairé, puis les Révolutions et les débats sur l’héritage. Les bornes chronologiques des Lumières varient selon les auteurs et les pays : les dates données sont des repères.',
+    chapters: [
+      {
+        id: 'racines-des-lumieres',
+        title: 'Aux origines des Lumières : révolution scientifique et pensée critique',
+        field: 'Lumières · Du dernier quart du XVIIe siècle au XVIIIe siècle',
+        summary: 'Situer les Lumières dans le temps, identifier leurs précurseurs (Bacon, Descartes, Locke, Newton) et comprendre pourquoi leurs bornes chronologiques sont une convention.',
+        lesson: {
+          sections: [
+            'Les Lumières désignent un mouvement de pensée qui a transformé la philosophie, la science et la politique en Europe et en Amérique du Nord. World History Encyclopedia le date généralement du dernier quart du XVIIe siècle au dernier quart du XVIIIe siècle. Le nom vient d’une image : selon Larousse, les philosophes européens du XVIIIe siècle voulaient combattre « les ténèbres de l’ignorance » par la diffusion du savoir. Le mouvement existe sous des noms différents selon les pays, Enlightenment en Angleterre et Aufklärung en Allemagne, et il a connu une intensité particulière en France, en Angleterre et en Allemagne. Il s’agit donc d’un mouvement européen et non d’une école unique : ses penseurs ne sont presque jamais d’accord entre eux, et il n’y a jamais eu de consensus sur les réponses aux questions qu’ils posaient.',
+            'Les Lumières ne surgissent pas de rien. World History Encyclopedia rappelle qu’elles se développent à partir de l’humanisme de la Renaissance (1400-1600), qui tournait intellectuels et artistes vers l’Antiquité et mettait en avant la vertu civique. Elles profitent aussi de la Réforme protestante (1517-1648), qui a réduit le pouvoir traditionnel de l’Église chrétienne dans la vie quotidienne. Il faut éviter un contresens : la plupart des penseurs éclairés ne voulaient pas supprimer l’Église, mais obtenir plus de liberté religieuse et de tolérance. L’image d’un Moyen Âge « sombre », que les Lumières aiment utiliser pour se valoriser, est aujourd’hui nuancée par les historiens : la période médiévale n’était sans doute pas aussi obscure qu’on l’a dit.',
+            'Un groupe de penseurs, souvent appelés « pré-Lumières », a posé des fondations essentielles. Selon World History Encyclopedia, Francis Bacon (1561-1626) défend une méthode fondée sur l’observation et l’expérience ; Thomas Hobbes (1588-1679) imagine un état de nature et un contrat social, et affirme la nécessité d’une autorité politique très forte, son « Léviathan » ; René Descartes (1596-1650) soumet toute connaissance au doute et aboutit à « Je pense, donc je suis » ; Baruch Spinoza (1632-1677) critique les superstitions et réclame la tolérance religieuse ; John Locke (1632-1704) veut limiter le pouvoir de l’État pour protéger certaines libertés, dont le droit de propriété, et soutient que le gouvernement repose sur le consentement du peuple. Les philosophes des Lumières reprennent, discutent ou combattent ces idées, mais ils partent d’elles.',
+            'La science joue un rôle moteur. World History Encyclopedia présente les Principia Mathematica d’Isaac Newton (1687) comme l’un des premiers textes du siècle des Lumières et comme le point culminant de la révolution scientifique : le monde peut être compris, et les mathématiques et l’observation sont les meilleurs outils pour y parvenir. Newton montre aussi qu’il existe de l’ordre et de l’harmonie dans la nature, ce que les philosophes cherchent ensuite à retrouver dans la société humaine. Larousse insiste sur l’attitude d’esprit commune aux hommes des Lumières, inspirée de l’expérimentalisme de Newton et de Locke : chercher par l’enquête empirique les rapports et les lois que les préjugés masquaient. Le CNRS rappelle qu’Émilie du Châtelet fut la première traductrice de Newton en français.',
+            'Le contexte politique compte aussi. Larousse souligne que l’Angleterre offre l’image d’un pays libre : deux révolutions (1642-1649, puis 1688-1689 avec la Déclaration des droits, ou Bill of Rights) y ont détruit le régime de l’absolutisme et de l’intolérance. Les philosophes français, fascinés par ce libéralisme, en diffusent les idées sur le continent. Dès la fin du XVIIe siècle apparaît aussi une pensée critique en France : Fontenelle publie ses Entretiens sur la pluralité des mondes en 1686, et Pierre Bayle son Dictionnaire historique et critique en 1697. Ces œuvres montrent que le goût du doute et de la vulgarisation scientifique précède de plusieurs décennies la grande période des Lumières.'
+          ],
+          example: {
+            statement: 'Les Principia de Newton sont publiés en 1687 et la réponse de Kant à la question « Qu’est-ce que les Lumières ? » en 1784. Combien d’années séparent ces deux textes ?',
+            calculation: 'On soustrait les deux années : 1784 − 1687 = 97.',
+            answer: '97 ans. Ces deux textes se situent à l’intérieur de la période généralement attribuée aux Lumières, du dernier quart du XVIIe siècle au dernier quart du XVIIIe siècle.'
+          },
+          exercise: {
+            question: 'Pourquoi ne peut-on pas donner une date exacte de début et de fin des Lumières ?',
+            answer: 'Parce qu’il s’agit d’un mouvement progressif et européen, dont les bornes sont des conventions. World History Encyclopedia le situe généralement du dernier quart du XVIIe siècle au dernier quart du XVIIIe siècle, et propose ailleurs la fourchette approximative c. 1675 – c. 1825.'
+          },
+          exercises: [
+            {
+              question: 'Quel ouvrage de Newton, publié en 1687, est présenté comme l’un des premiers textes du siècle des Lumières ?',
+              answer: 'Les Principia Mathematica (Principes mathématiques de la philosophie naturelle).'
+            },
+            {
+              question: 'Quel philosophe « pré-Lumières » aboutit à la formule « Je pense, donc je suis » en appliquant le doute à toute connaissance ?',
+              answer: 'René Descartes (1596-1650).'
+            },
+            {
+              question: 'Quelle révolution anglaise de 1688-1689 a produit la Déclaration des droits (Bill of Rights) et nourri l’image d’une Angleterre libre ?',
+              answer: 'La révolution de 1688-1689, qui a mis fin à l’absolutisme et à l’intolérance selon Larousse.'
+            },
+            {
+              question: 'Les penseurs éclairés voulaient-ils tous supprimer l’Église ?',
+              answer: 'Non. Selon World History Encyclopedia, la plupart ne voulaient pas la remplacer, mais obtenir plus de liberté religieuse et de tolérance.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Siècle des Lumières (Mark Cartwright)', url: 'https://www.worldhistory.org/trans/fr/1-22613/siecle-des-lumieres/' },
+            { title: 'Larousse — Siècle des Lumières', url: 'https://www.larousse.fr/encyclopedie/divers/si%C3%A8cle_des_Lumi%C3%A8res/130660' },
+            { title: 'CNRS Le journal — Les Lumières brillent-elles encore au XXIe siècle ?', url: 'https://lejournal.cnrs.fr/articles/les-lumieres-brillent-elles-encore-au-xxie-siecle' },
+            { title: 'Le Robert — Les Lumières (fiche de synthèse)', url: 'https://passeurs-de-textes-lycee.lerobert.com/9782321014058/asset/04_Les_Lumieres.pdf' }
+          ]
+        }
+      },
+      {
+        id: 'raison-progres-tolerance',
+        title: 'Raison, progrès, tolérance : les idées centrales des Lumières',
+        field: 'Lumières · Idées et valeurs · XVIIIe siècle',
+        summary: 'Comprendre la confiance dans la raison, la méthode expérimentale, le déisme, la recherche du bonheur et l’idée de progrès, ainsi que les désaccords entre philosophes.',
+        lesson: {
+          sections: [
+            'Pour World History Encyclopedia, l’idée centrale des Lumières est que la raison, plutôt que la superstition et le dogme, est le meilleur outil pour accroître la connaissance, la liberté et le bonheur. Larousse décrit la même démarche sous l’angle de la méthode : la connaissance passe par l’observation, l’analyse et la comparaison. D’où l’importance du voyage, le souci de classer les faits et de construire des tableaux. Buffon en donne un exemple avec son Histoire naturelle en trente-six volumes. La raison étant jugée universelle, les sciences humaines se développent à côté des sciences naturelles : ethnologie, psychologie, linguistique, démographie. Montesquieu, dans L’Esprit des lois, invente selon Larousse une sociologie politique en étudiant le lien entre les mœurs d’un peuple et la forme de son gouvernement.',
+            'En 1784, Emmanuel Kant répond à la question « Qu’est-ce que les Lumières ? » dans la revue allemande Berlinische Monatsschrift. Il les définit comme la sortie de l’homme hors de la « minorité » dont il est lui-même responsable, c’est-à-dire de l’incapacité à se servir de son intelligence sans la direction d’autrui. Cette minorité vient, dit-il, non d’un manque d’intelligence mais d’un manque de décision et de courage. Sa devise, Sapere aude, « aie le courage de te servir de ta propre intelligence », est empruntée au poète latin Horace. Larousse rappelle que, pour Kant, la philosophie est « l’usage public de la raison » : à la fois un débat ouvert et contradictoire, et un effort pour convaincre et répandre les idées nouvelles.',
+            'Sur la religion, les Lumières ne se confondent pas avec l’athéisme. Larousse explique qu’elles rejettent les dogmes et refusent la prétention de la religion à tout expliquer, mais que la plupart des intellectuels éclairés restent déistes : l’Univers leur apparaît comme une mécanique si bien réglée qu’il suppose une intelligence ordonnatrice. Voltaire en donne l’image fameuse d’une horloge qui suppose un horloger. Les Lumières distinguent aussi les sphères de la réalité (naturelle, politique, domestique, religieuse), chacune avec ses lois et ses méthodes. Des positions plus radicales existent cependant : Larousse oppose le déisme de Voltaire au matérialisme de Diderot et de d’Holbach. World History Encyclopedia ajoute que les penseurs éclairés étaient appelés « libres penseurs » parce qu’ils remettaient en question les croyances reçues.',
+            'Le bonheur et le progrès forment l’autre pilier. Selon Larousse, les Lumières remplacent la recherche chrétienne du salut dans l’au-delà par la quête du bonheur individuel ici-bas, et jugent utile ce qui fait le bien des autres. Elles reposent sur un optimisme : la science, croient-elles, fait avancer l’humanité. Ce sentiment s’appuie sur des changements réels : Larousse mentionne un recul de la famine, de la guerre et de la peste, une baisse générale de la mortalité et un allongement de la durée de vie d’environ dix ans en moyenne dans la seconde moitié du XVIIIe siècle. World History Encyclopedia résume trois idées : la raison comprend mieux le monde que les sens et les émotions, tous les hommes sont égaux et les gouvernements doivent protéger la liberté et promouvoir le bonheur, et les citoyens ont des droits naturels que l’État ne doit pas supprimer.',
+            'Ces idées n’ont jamais formé un système unique. Larousse note des lignes de partage : entre déisme et matérialisme, mais aussi entre une revendication générale de liberté (Voltaire) et un souci d’égalité et de justice sociale (Rousseau). Rousseau se distingue encore en défendant, face à la raison collective, les droits du « moi sensible ». Hume élargit la notion de raison pour y inclure l’émotion, et Burke souligne le rôle de l’histoire et de l’intuition, selon World History Encyclopedia. Kant, enfin, limite la prétention de la raison en montrant que certaines connaissances, comme l’espace et le temps, sont indépendantes de l’expérience. Étudier les Lumières, c’est donc étudier un débat permanent et non une doctrine figée.'
+          ],
+          example: {
+            statement: 'L’Esprit des lois de Montesquieu paraît en 1748 et la réponse de Kant à « Qu’est-ce que les Lumières ? » en 1784. Quel intervalle sépare ces deux dates ?',
+            calculation: 'On soustrait les deux années : 1784 − 1748 = 36.',
+            answer: '36 ans. Entre ces deux dates, la réflexion sur la raison et la liberté s’est étendue de la France à l’Allemagne, ce qui illustre le caractère européen du mouvement.'
+          },
+          exercise: {
+            question: 'Que signifie la devise « Sapere aude » dans le texte de Kant de 1784 ?',
+            answer: 'Elle signifie « aie le courage de te servir de ta propre intelligence » : sortir de la minorité en pensant par soi-même plutôt qu’en dépendant de la direction d’autrui.'
+          },
+          exercises: [
+            {
+              question: 'Que signifie être « déiste » à l’époque des Lumières ?',
+              answer: 'C’est croire en une intelligence ordonnatrice de l’Univers tout en rejetant les dogmes et les vérités révélées.'
+            },
+            {
+              question: 'Quelle opposition Larousse relève-t-il entre Voltaire et Rousseau ?',
+              answer: 'Voltaire met surtout en avant la liberté, tandis que Rousseau insiste sur l’égalité et la justice sociale.'
+            },
+            {
+              question: 'Quel changement démographique Larousse associe-t-il à l’optimisme des Lumières ?',
+              answer: 'Une baisse générale de la mortalité, avec un allongement de la durée de vie d’environ dix ans en moyenne dans la seconde moitié du XVIIIe siècle.'
+            },
+            {
+              question: 'Les philosophes des Lumières pensaient-ils tous la même chose ?',
+              answer: 'Non. Ils s’opposaient sur la religion (déisme ou matérialisme), sur la liberté ou l’égalité, sur la place de la raison et de l’émotion.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Siècle des Lumières (Mark Cartwright)', url: 'https://www.worldhistory.org/trans/fr/1-22613/siecle-des-lumieres/' },
+            { title: 'Larousse — Siècle des Lumières', url: 'https://www.larousse.fr/encyclopedie/divers/si%C3%A8cle_des_Lumi%C3%A8res/130660' },
+            { title: 'Universalis — Qu’est-ce que les Lumières ? (Kant), fiche de lecture', url: 'https://www.universalis.fr/encyclopedie/qu-est-ce-que-les-lumieres/' },
+            { title: 'SchoolMouv — Qu’est-ce que les Lumières ? (Kant), fiche œuvre', url: 'https://www.schoolmouv.fr/fiches-de-lecture/qu-est-ce-que-les-lumieres-emmanuel-kant/fiche-oeuvre' }
+          ]
+        }
+      },
+      {
+        id: 'philosophes-et-oeuvres',
+        title: 'Montesquieu, Voltaire, Rousseau, Diderot : penseurs et œuvres majeures',
+        field: 'Lumières · Philosophes français · 1721-1784',
+        summary: 'Connaître les principales œuvres et idées de Montesquieu, Voltaire, Rousseau et Diderot, et situer d’autres penseurs européens comme Hume, Smith, Kant ou Beccaria.',
+        lesson: {
+          sections: [
+            'Charles de Montesquieu (1689-1757) s’inquiète avant tout du risque de gouvernement autoritaire. Il publie les Lettres persanes en 1721, puis De l’esprit des lois en 1748. Selon Larousse, il y analyse tous les régimes politiques et établit les rapports qui unissent les lois d’un pays à ses mœurs, à son climat et à son économie. World History Encyclopedia le crédite d’avoir formulé la séparation des pouvoirs exécutif, législatif et judiciaire. Larousse précise qu’il admire la monarchie modérée de type anglais, où la loi protège le citoyen contre l’arbitraire. Son libéralisme reste toutefois limité aux élites : il propose que clergé, noblesse et parlements servent de « pouvoirs intermédiaires » face au roi. L’Esprit des lois fut mis à l’Index des livres interdits de l’Église catholique en 1751.',
+            'Voltaire (1694-1778) est, selon l’historien cité par World History Encyclopedia, celui qui incarnait le plus les Lumières aux yeux de ses contemporains. Il critique le pouvoir de l’Église catholique, réclame plus de liberté individuelle et de tolérance religieuse, et défend la capacité de la raison. Il reproche aussi aux philosophes de ne pas proposer de solutions pratiques. Son œuvre est abondante : le conte Zadig (1747), Le Siècle de Louis XIV (1751), le conte Candide (1759), le Traité sur la tolérance (1763) écrit à l’occasion de l’affaire Calas. Larousse le range parmi les déistes. Il écrit en 1765 qu’une « révolution dans les esprits » s’est faite et que la lumière s’étend de tous côtés.',
+            'Jean-Jacques Rousseau (1712-1778), penseur de langue française né à Genève, occupe une place à part. Dans le Discours sur l’origine et les fondements de l’inégalité parmi les hommes (1755), il soutient que la vie sociale, en créant des inégalités, a corrompu une nature humaine bonne à l’origine. Il publie La Nouvelle Héloïse (1761), puis Du contrat social et Émile ou De l’éducation (1762), et rédige Les Confessions (1782-1789 selon la chronologie de Larousse). Selon World History Encyclopedia, il imagine des hommes libres et égaux à l’état de nature, et une communauté fondée sur le consentement et orientée vers le bien commun, où la « volonté générale » prime. Larousse souligne que son souci d’égalité et de justice sociale le distingue de Voltaire.',
+            'Denis Diderot (1713-1784) est le maître d’œuvre de l’Encyclopédie, dont le chapitre suivant retrace l’histoire. World History Encyclopedia résume sa pensée comme une croyance humaniste en l’autonomie individuelle et dans l’usage d’arguments modernes, non religieux et, si possible, scientifiques pour mettre en cause les connaissances fondées sur la foi seule. Larousse le classe parmi les matérialistes et cite sa Lettre sur les aveugles (1749), ainsi que son drame Le Fils naturel (1757). Diderot a aussi travaillé comme conseiller de Catherine II de Russie, ce qui l’a confronté de près aux limites du « despotisme éclairé » étudié plus loin.',
+            'Le mouvement dépasse largement la France. World History Encyclopedia évoque David Hume (1711-1776), pour qui nous possédons un sens moral naturel et qui reste sceptique sur l’utilité de la religion ; Adam Smith (1723-1790), qui fait de l’économie une science et défend le libre-échange ; Emmanuel Kant (1724-1804) ; Edmund Burke (1729-1797) ; Thomas Paine (1737-1809) ; Cesare Beccaria (1738-1794), qui réclame une réforme des prisons et la fin des punitions excessives ; Jeremy Bentham (1748-1832) et son principe du plus grand bonheur pour le plus grand nombre ; Mary Wollstonecraft (1759-1797), qui demande l’égalité des chances en matière d’éducation. Larousse ajoute Condillac (Traité des sensations, 1754) et Helvétius (De l’esprit, 1758). Il faut retenir que ces penseurs se contredisent souvent : le mouvement vit de ses débats.'
+          ],
+          example: {
+            statement: 'De l’esprit des lois de Montesquieu paraît en 1748 et Du contrat social de Rousseau en 1762. Combien d’années séparent ces deux publications ?',
+            calculation: 'On soustrait les deux années : 1762 − 1748 = 14.',
+            answer: '14 ans. Le Discours sur l’inégalité de Rousseau (1755) paraît entre les deux, ce qui montre que Rousseau réfléchit aux fondements de la société pendant les années où l’Encyclopédie sort.'
+          },
+          exercise: {
+            question: 'Quelle idée politique célèbre est associée à Montesquieu dans L’Esprit des lois ?',
+            answer: 'La séparation des pouvoirs en trois : exécutif, législatif et judiciaire, pour protéger la liberté contre l’arbitraire.'
+          },
+          exercises: [
+            {
+              question: 'Quels deux grands auteurs des Lumières meurent en 1778 ?',
+              answer: 'Voltaire et Jean-Jacques Rousseau.'
+            },
+            {
+              question: 'Quelles œuvres Rousseau publie-t-il en 1762 ?',
+              answer: 'Du contrat social et Émile ou De l’éducation.'
+            },
+            {
+              question: 'Quelle œuvre de Voltaire de 1763 fait suite à l’affaire Calas ?',
+              answer: 'Le Traité sur la tolérance.'
+            },
+            {
+              question: 'En quelle année L’Esprit des lois a-t-il été mis à l’Index par l’Église catholique ?',
+              answer: 'En 1751, selon World History Encyclopedia.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Siècle des Lumières (Mark Cartwright)', url: 'https://www.worldhistory.org/trans/fr/1-22613/siecle-des-lumieres/' },
+            { title: 'Larousse — Siècle des Lumières (dont chronologie)', url: 'https://www.larousse.fr/encyclopedie/divers/si%C3%A8cle_des_Lumi%C3%A8res/130660' },
+            { title: 'Larousse — Affaire Calas (1762-1765)', url: 'https://www.larousse.fr/encyclopedie/divers/affaire_Calas/110852' }
+          ]
+        }
+      },
+      {
+        id: 'encyclopedie-diderot-dalembert',
+        title: 'L’Encyclopédie de Diderot et d’Alembert (1751-1772)',
+        field: 'Lumières · France · 1751-1772',
+        summary: 'Comprendre l’origine, l’organisation, les obstacles et le succès de l’Encyclopédie, entreprise emblématique des Lumières.',
+        lesson: {
+          sections: [
+            'L’Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers, est considérée par Larousse comme le meilleur symbole de la volonté des Lumières de rassembler toutes les connaissances disponibles et de les diffuser auprès d’un public éclairé. Dirigée par Diderot et d’Alembert, elle est précédée d’un Discours préliminaire de d’Alembert. World History Encyclopedia la décrit comme souvent surnommée la « Bible des Lumières ». Diderot en résume le but : rassembler les connaissances éparses sur la Terre, en exposer le système à ses contemporains et le transmettre aux générations futures, afin que leurs descendants soient plus instruits, plus vertueux et plus heureux. C’est donc à la fois une entreprise de savoir et un combat intellectuel.',
+            'Le projet naît de la traduction et de l’adaptation en français de la Cyclopaedia (1728) de l’Anglais Ephraim Chambers, confiée à Diderot et d’Alembert par le libraire Le Breton. Rapidement, l’idée de traduire est abandonnée : une œuvre originale s’annonce. Pour atteindre une exactitude technique irréprochable, l’équipe s’adresse à des spécialistes de chaque question. Larousse parle d’environ 150 savants, philosophes et spécialistes divers, parmi lesquels Rousseau, Voltaire, l’architecte Blondel, l’astronome Le Roy ou le juriste Toussaint. Diderot reste le maître d’œuvre : il relit, corrige et coordonne plus de 71 000 articles. D’Alembert l’assiste surtout pendant les premières années.',
+            'La publication s’étend sur une vingtaine d’années. Les volumes paraissent de 1751 à 1772, soit vingt et un ans entre la sortie du premier et celle du dernier. L’ouvrage comprend au final 17 volumes de textes et 11 volumes de planches, auxquels s’ajoutent 2 volumes d’index et 5 volumes de suppléments, soit 35 volumes au total. Les illustrations ont pris une importance plus grande que prévu : lors de la première offre aux souscripteurs en 1750, on annonçait seulement 2 volumes de planches pour 8 volumes de texte. Elles montrent des machines démontées et des outils expliqués, et participent à un éloge du génie humain à travers les métiers et les techniques.',
+            'Cette aventure éditoriale fut loin d’être tranquille. Larousse explique que les atteintes à la religion et les professions de foi matérialistes présentes dans l’ouvrage ont provoqué des procès, des demandes d’interdiction, des pamphlets et un arrêt du Conseil d’État. La parution des volumes a été plusieurs fois interrompue et menacée, et l’imprimeur, craignant la Bastille, a supprimé de sa propre initiative des passages jugés dangereux. L’entreprise bénéficie pourtant de hautes protections : dans l’entourage de Louis XV, Mme de Pompadour et Malesherbes, directeur de la Librairie et responsable de la censure royale, la soutiennent, tandis que la reine et les jésuites cherchent à la ruiner. L’Encyclopédie montre ainsi que la censure de l’Ancien Régime était réelle mais pas toujours efficace.',
+            'Le succès commercial est considérable pour l’époque. Larousse indique qu’au moment où paraît le premier volume, environ 1 000 personnes s’engagent à acheter l’ouvrage et avancent 20 % du prix. Le nombre de souscripteurs augmente ensuite jusqu’à se stabiliser autour de 2 500. L’Encyclopédie est imprimée à plus de 4 000 exemplaires, et un peu plus de la moitié du tirage est vendue ferme avant d’arriver en librairie. Des imitations et des traductions diffusent ensuite l’ouvrage dans toute l’Europe, ce qui contribue à propager l’esprit des Lumières. Au total, l’Encyclopédie est à la fois un grand succès de librairie et un instrument de diffusion des idées nouvelles auprès d’un public cultivé.'
+          ],
+          example: {
+            statement: 'L’Encyclopédie comprend 17 volumes de textes, 11 volumes de planches, 2 volumes d’index et 5 volumes de suppléments. Combien de volumes compte-t-elle au total ? Et combien d’années séparent la parution du premier volume (1751) de celle du dernier (1772) ?',
+            calculation: 'Total des volumes : 17 + 11 + 2 + 5 = 35. Durée : 1772 − 1751 = 21.',
+            answer: '35 volumes, publiés sur 21 ans.'
+          },
+          exercise: {
+            question: 'Pourquoi l’Encyclopédie est-elle considérée comme le symbole des Lumières ?',
+            answer: 'Parce qu’elle rassemble les connaissances de son temps, y compris scientifiques et techniques, pour les diffuser auprès d’un public large, et qu’elle défend la raison face à l’autorité et à la superstition.'
+          },
+          exercises: [
+            {
+              question: 'Quel ouvrage anglais de 1728 est à l’origine du projet de l’Encyclopédie ?',
+              answer: 'La Cyclopaedia d’Ephraim Chambers.'
+            },
+            {
+              question: 'Qui sont les deux directeurs de l’Encyclopédie ?',
+              answer: 'Denis Diderot et Jean Le Rond d’Alembert.'
+            },
+            {
+              question: 'Pourquoi les planches ont-elles posé un problème financier ?',
+              answer: 'Parce que leur abondance et leur qualité d’exécution ont entraîné des frais importants, alors que l’on avait prévu au départ 2 volumes de planches pour 8 volumes de textes.'
+            },
+            {
+              question: 'Qui, dans l’entourage de Louis XV, soutenait l’entreprise ?',
+              answer: 'Notamment Mme de Pompadour et Malesherbes, directeur de la Librairie.'
+            }
+          ],
+          sources: [
+            { title: 'Larousse — Siècle des Lumières, partie « L’Encyclopédie »', url: 'https://www.larousse.fr/encyclopedie/divers/si%C3%A8cle_des_Lumi%C3%A8res/130660' },
+            { title: 'World History Encyclopedia — Siècle des Lumières (Mark Cartwright)', url: 'https://www.worldhistory.org/trans/fr/1-22613/siecle-des-lumieres/' },
+            { title: 'CNRS Le journal — Les Lumières brillent-elles encore au XXIe siècle ?', url: 'https://lejournal.cnrs.fr/articles/les-lumieres-brillent-elles-encore-au-xxie-siecle' }
+          ]
+        }
+      },
+      {
+        id: 'espace-public-salons-presse',
+        title: 'Salons, cafés, académies, loges et presse : la circulation des idées',
+        field: 'Lumières · Sociabilité et espace public · XVIIIe siècle',
+        summary: 'Comprendre comment les idées des Lumières circulent grâce à l’imprimerie, aux salons, aux cafés, aux académies, aux loges maçonniques et à la presse, malgré la censure.',
+        lesson: {
+          sections: [
+            'Les Lumières se distinguent des mouvements intellectuels précédents par leur destinataire : l’opinion publique. Larousse explique que Voltaire, Diderot et leurs amis sont des « agitateurs d’idées » qui veulent discuter et convaincre. Les progrès de l’alphabétisation et de la lecture favorisent l’apparition d’un « espace public » : les débats intellectuels et politiques sortent du cercle restreint de l’administration et des élites pour toucher peu à peu des milieux plus larges. World History Encyclopedia ajoute que l’imprimerie permet de diffuser à bas prix non seulement des livres, mais aussi des traités, des pamphlets et des magazines. Les idées, et surtout les réactions critiques qu’elles suscitent, circulent plus vite qu’avant.',
+            'Les cafés et les salons sont des lieux majeurs de discussion. Larousse cite le café Procope, à Paris, où se réunissent notamment Fontenelle, Voltaire, Diderot et Marmontel. Les salons sont tenus par des femmes qui reçoivent artistes, savants et philosophes : Larousse mentionne l’hôtel de la marquise de Lambert au début du siècle, puis Mme de Tencin, Mme Geoffrin, Mme du Deffand, Julie de Lespinasse et Mme Necker. Chaque hôtesse a son jour, sa spécialité et ses invités. World History Encyclopedia souligne que ces salons mélangent des couches sociales qui se croisaient peu : intellectuels, artistes, aristocrates et personnes fortunées, ce qui débouche souvent sur du mécénat.',
+            'Les académies sont des sociétés savantes qui diffusent le savoir. Larousse rappelle les fondations monarchiques du XVIIe siècle en France : Académie française (1634), Académie des inscriptions et belles-lettres (1663), Académie royale des sciences (1666), Académie royale d’architecture (1671). Au XVIIIe siècle naissent notamment l’Académie royale de chirurgie (1731) et la Société royale de médecine (1776). Les académies de province passent de 9 en 1710 à 35 en 1789 ; leurs membres sont à 37 % des nobles, à 20 % des gens d’Église et à 43 % des roturiers, ce qui montre que les privilégiés y sont moins dominants qu’à Paris. Ces sociétés échangent livres, correspondance et concours de recherche, et forment des réseaux à l’échelle de l’Europe.',
+            'La franc-maçonnerie est, selon Larousse, le réseau éclairé le plus développé, bien que réservé aux couches supérieures et aux hommes. Née en Angleterre et en Écosse, elle est théiste, tolérante, libérale et humaniste, et compte des milliers de loges en Europe en 1789. À cette époque, elle n’est ni anticléricale (elle le sera au XIXe siècle) ni révolutionnaire, mais elle contribue à diffuser l’esprit de réforme dans des milieux politiquement stratégiques. Les élites y font l’apprentissage de l’égalité des talents et de l’élévation par le mérite plutôt que par la naissance. S’y ajoutent les bibliothèques publiques, les chambres de lecture et la presse (Journal des savants, Mercure de France), qui diffusent comptes rendus et débats, même éloignés des centres de création.',
+            'Cette circulation a des limites. Larousse note que la censure reste toujours active. Le français devient la langue des Lumières et remplace le latin comme langue internationale de communication pour les élites cultivées, mais le mouvement n’atteint dans beaucoup d’États européens qu’une partie des élites. Le CNRS rappelle aussi que les femmes étaient exclues des académies et des universités, hormis quelques cas exceptionnels comme Laura Bassi à Bologne, même si certaines participaient à des cercles de discussion savants. L’espace public des Lumières est donc ouvert pour l’époque, mais loin d’être universel.'
+          ],
+          example: {
+            statement: 'Dans les académies de province, les membres sont à 37 % des nobles, 20 % des gens d’Église et 43 % des roturiers. Quelle part des membres appartient à la noblesse et au clergé réunis ? Et combien d’académies de province ont été créées entre 1710 (9 académies) et 1789 (35 académies) ?',
+            calculation: 'Noblesse et clergé : 37 + 20 = 57 %. Contrôle : 57 + 43 = 100 %. Académies : 35 − 9 = 26.',
+            answer: '57 % des membres sont nobles ou gens d’Église, et 26 académies de province de plus existent en 1789 qu’en 1710.'
+          },
+          exercise: {
+            question: 'Pourquoi les salons ont-ils joué un rôle important dans la diffusion des Lumières ?',
+            answer: 'Parce qu’ils permettaient à des philosophes, des artistes, des aristocrates et des gens fortunés de se rencontrer, de discuter et de tester leurs idées, souvent sous l’impulsion de femmes qui recevaient.'
+          },
+          exercises: [
+            {
+              question: 'Quel café parisien Larousse cite-t-il comme lieu de rencontre de Voltaire et de Diderot ?',
+              answer: 'Le Procope.'
+            },
+            {
+              question: 'Quelle langue remplace le latin comme langue internationale des élites au XVIIIe siècle ?',
+              answer: 'Le français.'
+            },
+            {
+              question: 'Quelles institutions diffusent le savoir et forment des réseaux entre villes européennes ?',
+              answer: 'Les académies et les sociétés savantes, ainsi que les loges maçonniques.'
+            },
+            {
+              question: 'Les femmes pouvaient-elles entrer dans les académies ?',
+              answer: 'Non, en général. Selon le CNRS, elles étaient exclues des académies, même si certaines animaient des salons ou participaient à des cercles savants.'
+            }
+          ],
+          sources: [
+            { title: 'Larousse — Siècle des Lumières, partie « La diffusion des Lumières »', url: 'https://www.larousse.fr/encyclopedie/divers/si%C3%A8cle_des_Lumi%C3%A8res/130660' },
+            { title: 'World History Encyclopedia — Siècle des Lumières (Mark Cartwright)', url: 'https://www.worldhistory.org/trans/fr/1-22613/siecle-des-lumieres/' },
+            { title: 'CNRS Le journal — Les Lumières brillent-elles encore au XXIe siècle ?', url: 'https://lejournal.cnrs.fr/articles/les-lumieres-brillent-elles-encore-au-xxie-siecle' }
+          ]
+        }
+      },
+      {
+        id: 'combats-des-lumieres',
+        title: 'Justice, tolérance, esclavage : les combats concrets des Lumières',
+        field: 'Lumières · Affaire Calas, réforme de la justice, débats sur l’esclavage · XVIIIe siècle',
+        summary: 'Étudier comment les philosophes passent de la théorie à l’action : affaire Calas, critique de la torture, débat sur l’esclavage, place des femmes, et limites de ces combats.',
+        lesson: {
+          sections: [
+            'Les Lumières ne se limitent pas à des idées abstraites. Larousse indique que certains philosophes interviennent dans des affaires judiciaires et militent pour l’abolition des peines infamantes, de la torture et de l’esclavage. World History Encyclopedia résume cette orientation : penser un monde meilleur était la priorité au début, mais au fil du siècle c’est sa construction concrète qui devient l’enjeu. Parmi les résultats pratiques cités à long terme figurent la fin de la persécution des hérétiques, la fin des bûchers pour les sorcières, la fin du servage et la suppression de la torture dans les procédures judiciaires. Il faut cependant lire ces listes comme des tendances de long terme, qui varient selon les États et ne se réalisent pas partout au même moment.',
+            'L’affaire Calas est l’exemple le plus célèbre. D’après Larousse, en 1761, Jean Calas, marchand protestant de Toulouse, découvre son fils aîné Marc-Antoine, 29 ans, pendu dans son magasin ; il cache le suicide pour sauver l’honneur de sa famille. La rumeur, nourrie par le fanatisme religieux, l’accuse d’avoir tué son fils pour l’empêcher de se convertir au catholicisme. Le parlement de Toulouse le condamne au supplice de la roue et il est exécuté le 10 mars 1762. Voltaire se mobilise : il accueille la veuve et deux enfants à Ferney, lance une campagne d’opinion, écrit le Traité sur la tolérance (1763) et sollicite des personnalités influentes. Le 4 juin 1764, le Conseil du roi casse l’arrêt du parlement de Toulouse, et Calas est réhabilité en 1765.',
+            'La réflexion sur la justice dépasse l’affaire Calas. Cesare Beccaria publie Des délits et des peines en 1764, ouvrage cité par Larousse pour sa dénonciation des vices de la justice criminelle ; World History Encyclopedia retient son appel à réformer les prisons et à mettre fin aux punitions excessives. Larousse précise que des souverains inspirés par les Lumières ont humanisé la justice dans le sens voulu par Beccaria, Voltaire et Montesquieu, avec des peines moins sévères et la suppression de la torture. Ces réformes se font souvent par l’action de l’État et non par une démocratisation du pouvoir, ce que le chapitre sur le despotisme éclairé permet de mieux comprendre.',
+            'L’esclavage et le système colonial sont objet de critiques, mais aussi de contradictions. Larousse cite l’abbé Raynal, dont l’Histoire philosophique et politique des établissements et du commerce des Européens dans les deux Indes (1770) condamne le despotisme, le fanatisme et le système colonial, ainsi que Condorcet, qui publie des brochures contre l’esclavage et pour les droits des femmes. World History Encyclopedia précise que Thomas Paine dénonçait l’esclavage. Le CNRS apporte un regard critique : une partie de la révolution scientifique a été financée par de l’argent issu de la traite négrière, et le siècle a produit à la fois des savants abolitionnistes comme Condorcet et des savants qui ont défendu une hiérarchie des races. Il y a donc un débat entre une vision universaliste de la raison et une hiérarchisation raciale.',
+            'La place des femmes illustre les mêmes tensions. Mary Wollstonecraft (1759-1797) réclame l’égalité des chances en matière d’éducation entre hommes et femmes, et souligne les bénéfices que la société tirerait de leur situation améliorée (World History Encyclopedia). Les salons donnent un rôle essentiel à de nombreuses femmes (Larousse), mais le CNRS note qu’elles restent exclues des académies et souvent invisibles dans les livres de science. Émilie du Châtelet, première traductrice de Newton en français, montre pourtant qu’elles participaient à la production du savoir. Pour étudier les Lumières, il faut donc tenir ensemble les principes proclamés et les exclusions réelles de l’époque.'
+          ],
+          example: {
+            statement: 'Jean Calas est exécuté le 10 mars 1762. Le Conseil du roi casse l’arrêt du parlement de Toulouse le 4 juin 1764. Combien de temps s’écoule entre ces deux dates ?',
+            calculation: 'Du 10 mars 1762 au 10 mars 1764 : 2 ans. Du 10 mars 1764 au 10 mai 1764 : 2 mois. Du 10 mai au 4 juin 1764 : 25 jours.',
+            answer: '2 ans, 2 mois et 25 jours, soit un peu plus de deux ans. L’arrêt est cassé quand Calas est déjà mort : la réhabilitation (1765) corrige une erreur judiciaire, sans pouvoir réparer l’exécution.'
+          },
+          exercise: {
+            question: 'Quel rôle Voltaire joue-t-il dans l’affaire Calas ?',
+            answer: 'Il sensibilise l’opinion publique, accueille la famille de Calas à Ferney, écrit le Traité sur la tolérance (1763) et sollicite des personnalités influentes, ce qui contribue à la cassation de l’arrêt en 1764.'
+          },
+          exercises: [
+            {
+              question: 'Quelle religion pratiquait Jean Calas et pourquoi cela a-t-il compté dans l’accusation ?',
+              answer: 'Il était protestant ; la rumeur, attisée par le fanatisme religieux, l’accusait d’avoir tué son fils pour l’empêcher de devenir catholique.'
+            },
+            {
+              question: 'Quel ouvrage de Beccaria paraît en 1764 ?',
+              answer: 'Des délits et des peines.'
+            },
+            {
+              question: 'Quels deux auteurs Larousse cite-t-il comme critiques de l’esclavage ou du système colonial ?',
+              answer: 'L’abbé Raynal (Histoire des deux Indes, 1770) et Condorcet.'
+            },
+            {
+              question: 'Quelle nuance le CNRS apporte-t-il sur le rapport des Lumières à l’esclavage ?',
+              answer: 'Une partie de la révolution scientifique a été financée par l’argent de la traite, et les savants étaient divisés entre abolitionnistes et défenseurs de hiérarchies raciales.'
+            }
+          ],
+          sources: [
+            { title: 'Larousse — Affaire Calas (1762-1765)', url: 'https://www.larousse.fr/encyclopedie/divers/affaire_Calas/110852' },
+            { title: 'Larousse — Siècle des Lumières', url: 'https://www.larousse.fr/encyclopedie/divers/si%C3%A8cle_des_Lumi%C3%A8res/130660' },
+            { title: 'Larousse — Despotisme éclairé', url: 'https://www.larousse.fr/encyclopedie/divers/despotisme_%C3%A9clair%C3%A9/42561' },
+            { title: 'World History Encyclopedia — Siècle des Lumières (Mark Cartwright)', url: 'https://www.worldhistory.org/trans/fr/1-22613/siecle-des-lumieres/' },
+            { title: 'CNRS Le journal — Les Lumières brillent-elles encore au XXIe siècle ?', url: 'https://lejournal.cnrs.fr/articles/les-lumieres-brillent-elles-encore-au-xxie-siecle' }
+          ]
+        }
+      },
+      {
+        id: 'despotisme-eclaire',
+        title: 'Le despotisme éclairé : réformer par le pouvoir d’un souverain',
+        field: 'Lumières · Prusse, Russie, Autriche, Espagne · XVIIIe siècle',
+        summary: 'Comprendre l’alliance entre les philosophes et certains souverains, les réformes menées, leurs limites et la fin du modèle après 1789.',
+        lesson: {
+          sections: [
+            'Larousse définit le despotisme éclairé comme un régime où le souverain se conduit en maître absolu tout en pratiquant une politique inspirée des Lumières. Il s’agit de subordonner les intérêts privilégiés et les coutumes à un État censé représenter le bien public, de favoriser le progrès économique, de diffuser l’enseignement et de combattre les préjugés. Frédéric II, roi de Prusse de 1740 à 1786, est présenté comme le premier monarque à se proclamer disciple des Lumières. D’autres souverains se réclament d’une doctrine semblable : Catherine II, tsarine de 1762 à 1796 ; Marie-Thérèse (1740-1780) puis Joseph II (1780-1790) à la tête des États autrichiens ; Charles III, à Naples puis en Espagne (1759-1788).',
+            'Pourquoi les philosophes acceptent-ils un pouvoir fort ? Larousse explique qu’ils veulent libérer, instruire et améliorer l’homme, et qu’au service de cette liberté ils admettent un pouvoir fort dans les grands États. Frédéric II déclare à Wolff que les philosophes enseignent ce qui doit être et que les rois sont là pour l’exécuter. Il estime aussi que le souverain doit voir, penser et agir pour toute la communauté. Voltaire a conseillé Frédéric II ; Diderot a conseillé Catherine II, selon Larousse et World History Encyclopedia. Les souverains ont, de leur côté, intérêt à flatter les intellectuels français, qui sont des maîtres de l’opinion européenne.',
+            'Les réformes sont réelles. Larousse cite la proclamation de la tolérance religieuse, le contrôle de l’Église romaine, la suppression d’ordres monastiques, notamment de la Compagnie de Jésus, la réduction des privilèges de la noblesse, la centralisation de l’administration, le développement de l’instruction, la création de manufactures et de banques nationales, et une justice plus humaine (peines moins sévères, suppression de la torture). Ces monarques s’appuient sur le progrès de l’idée d’État : l’obéissance et le dévouement à l’État deviennent un devoir suprême. Même de petits États suivent ce modèle, comme le Portugal de Pombal, la Toscane du grand-duc Léopold, le Danemark de Struensee ou la Suède de Gustave III.',
+            'Mais ce modèle comporte des limites importantes. Larousse note que le servage est parfois étendu, à rebours des idéaux émancipateurs des Lumières, et que l’État, mieux obéi, lève davantage d’impôts et de soldats, ce qui permet de nouvelles conquêtes. Les philosophes qui croyaient jouer un rôle positif auprès des princes, comme Voltaire auprès de Frédéric II ou Diderot auprès de Catherine II, perdent vite leurs illusions : ce qu’ils avaient pris pour l’avènement de la raison est en réalité celui de la raison d’État. Le despotisme éclairé réalise une émancipation contrôlée : il libère l’homme des cadres traditionnels pour mieux le soumettre à l’État.',
+            'Il existe une autre voie. Montesquieu défend une monarchie modérée de type anglais, avec séparation des pouvoirs, et non un monarque réformateur (Larousse). Larousse relève le paradoxe suivant : le despotisme éclairé n’a pas pu s’imposer en France ni en Angleterre, berceaux idéologiques des Lumières, où les structures en place et les privilèges acquis ont résisté, alors qu’il a trouvé plus de liberté d’action en Europe centrale, orientale et méditerranéenne, où la bourgeoisie était peu nombreuse. Larousse place la fin du despotisme éclairé immédiatement après 1789 : les rois rejettent alors l’esprit philosophique, jugé en partie responsable de la Révolution française.'
+          ],
+          example: {
+            statement: 'Frédéric II règne de 1740 à 1786, Catherine II de 1762 à 1796 et Joseph II de 1780 à 1790. Lequel de ces trois souverains a régné le plus longtemps, et combien d’années ?',
+            calculation: 'Frédéric II : 1786 − 1740 = 46. Catherine II : 1796 − 1762 = 34. Joseph II : 1790 − 1780 = 10.',
+            answer: 'Frédéric II, pendant environ 46 ans (calcul sur les années civiles).'
+          },
+          exercise: {
+            question: 'Pourquoi parle-t-on de « despotisme » éclairé et non de démocratie éclairée ?',
+            answer: 'Parce que les réformes inspirées des Lumières sont décidées par un souverain qui garde un pouvoir absolu et ne partage pas le pouvoir avec les sujets : l’avis des sujets compte moins que la volonté de l’État.'
+          },
+          exercises: [
+            {
+              question: 'Quel roi de Prusse (1740-1786) est présenté par Larousse comme le premier monarque à se proclamer disciple des Lumières ?',
+              answer: 'Frédéric II.'
+            },
+            {
+              question: 'Citez deux réformes menées par des despotes éclairés selon Larousse.',
+              answer: 'Par exemple : tolérance religieuse, suppression de la torture, réduction des privilèges de la noblesse, développement de l’instruction, suppression de l’ordre des jésuites.'
+            },
+            {
+              question: 'Quelle limite majeure Larousse relève-t-il à propos du servage ?',
+              answer: 'Il est parfois étendu, à rebours des idéaux émancipateurs des Lumières.'
+            },
+            {
+              question: 'Quel modèle politique Montesquieu préfère-t-il au despotisme éclairé ?',
+              answer: 'Une monarchie modérée de type anglais, avec séparation des pouvoirs exécutif, législatif et judiciaire.'
+            }
+          ],
+          sources: [
+            { title: 'Larousse — Despotisme éclairé', url: 'https://www.larousse.fr/encyclopedie/divers/despotisme_%C3%A9clair%C3%A9/42561' },
+            { title: 'Larousse — Siècle des Lumières, partie « Pour un despotisme éclairé… »', url: 'https://www.larousse.fr/encyclopedie/divers/si%C3%A8cle_des_Lumi%C3%A8res/130660' },
+            { title: 'World History Encyclopedia — Siècle des Lumières (Mark Cartwright)', url: 'https://www.worldhistory.org/trans/fr/1-22613/siecle-des-lumieres/' }
+          ]
+        }
+      },
+      {
+        id: 'revolutions-limites-heritage',
+        title: 'Des Lumières aux Révolutions : critiques et héritage',
+        field: 'Lumières · Fin du XVIIIe siècle et regards actuels',
+        summary: 'Comprendre le rapport entre les Lumières et les Révolutions américaine et française, les critiques adressées au mouvement, et les débats actuels sur son héritage.',
+        lesson: {
+          sections: [
+            'Après 1775, le mouvement atteint, selon Larousse, sa diffusion maximale, géographique et sociale. Les grands écrivains disparaissent (Voltaire et Rousseau en 1778, Diderot en 1784), mais l’opinion se politise et prend leurs idées au mot : « la philosophie est sur la place publique ». L’Histoire des deux Indes de Raynal (1770) rencontre un grand succès, et Condorcet allie réflexion scientifique, combat politique et réflexion sur le progrès. Une nouvelle génération, les Idéologues, tente à la fin du siècle d’articuler théorie et pratique, en cherchant une science de l’homme au service de réformes politiques et culturelles. Les Lumières passent ainsi de la discussion à l’action.',
+            'World History Encyclopedia voit dans la Révolution française et la guerre d’indépendance des États-Unis les deux exemples les plus nets d’action en faveur d’un monde meilleur. Dans les deux cas, les révolutionnaires s’inspirent d’œuvres de philosophes éclairés et les citent souvent ; la Déclaration des droits française et la Déclaration d’indépendance américaine reprennent des expressions comme « droits inaliénables » et « recherche du bonheur ». Thomas Paine, dans Le Sens commun, appelle les colonies américaines à se rebeller contre la domination britannique. Il serait toutefois excessif de dire que les Lumières « causent » les révolutions : elles fournissent un vocabulaire et des arguments, dans un contexte politique et social plus large.',
+            'Dès le XVIIIe siècle, les Lumières sont critiquées. Le CNRS rappelle que les réactionnaires leur reprochaient de perturber l’ordre social, politique et religieux de l’absolutisme, et que les « anti-Lumières » jugeaient la rationalité trop réductrice. Burke estimait que les institutions étaient le fruit d’une longue histoire qu’une génération ne devait pas rejeter. World History Encyclopedia évoque aussi le romantisme (1775-1830) comme réaction à la domination de la raison, avec des formes d’expression plus émotionnelles et spontanées. Les Lumières ont également eu une réflexion critique sur les limites de la raison, notamment chez Kant dans la Critique de la raison pure (1781).',
+            'Les historiens contemporains sont critiques mais nuancés. Le CNRS souligne que l’on s’éloigne d’une vision triomphaliste des Lumières : la science de l’époque a été en partie financée par l’argent de la traite négrière, les femmes étaient largement exclues des académies, et le siècle a connu une tension entre hiérarchisation raciale et visée universaliste d’une « commune humanité ». Le CNRS mentionne aussi des critiques actuelles qui reprochent aux Lumières d’avoir ouvert la voie à un usage incontrôlé de la science, tout en précisant qu’il s’agit d’interprétations qui changent selon les époques. World History Encyclopedia note que certains penseurs éclairés avaient déjà perçu le « côté sombre » du progrès, comme l’individualisme excessif ou la technologie contrôlée par des minorités.',
+            'L’héritage est durable mais pas automatique. World History Encyclopedia attribue aux Lumières l’idée que certains domaines de la vie ne relèvent pas de l’État, base des démocraties libérales modernes, ainsi que des progrès pratiques à long terme : plus d’universités et de bibliothèques, une Église séparée de l’État dans certaines régions, notamment en France, et des systèmes électoraux plus équitables. L’historien Chisick, cité par la même source, rappelle que les valeurs des Lumières ne sont pas acquises une fois pour toutes : chaque génération doit se les approprier pour qu’elles ne se perdent pas. Il convient donc d’étudier les Lumières à la fois comme une source de libertés et comme un objet de débat historique.'
+          ],
+          example: {
+            statement: 'Voltaire et Rousseau meurent en 1778, et Diderot en 1784. La Révolution française commence en 1789. Combien d’années séparent la mort de Voltaire de 1789 ? Et celle de Diderot ?',
+            calculation: 'Voltaire : 1789 − 1778 = 11. Diderot : 1789 − 1784 = 5.',
+            answer: '11 ans pour Voltaire et 5 ans pour Diderot. Aucun de ces trois auteurs n’a donc vécu la Révolution française : ses acteurs ont lu leurs œuvres et les ont réinterprétées.'
+          },
+          exercise: {
+            question: 'Pourquoi ne faut-il pas dire que les Lumières « ont causé » la Révolution française ?',
+            answer: 'Parce que les révolutionnaires ont utilisé et cité les idées des Lumières, mais la Révolution résulte d’un contexte politique, social et économique plus large. Les Lumières ont fourni des idées et un vocabulaire, pas une cause unique.'
+          },
+          exercises: [
+            {
+              question: 'Quelles expressions des déclarations américaine et française World History Encyclopedia relie-t-elle au vocabulaire des philosophes éclairés ?',
+              answer: '« Droits inaliénables » et « recherche du bonheur ».'
+            },
+            {
+              question: 'Quel mouvement artistique et littéraire (1775-1830) est présenté comme une réaction à la domination de la raison ?',
+              answer: 'Le romantisme.'
+            },
+            {
+              question: 'Citez deux critiques actuelles que le CNRS rapporte à propos des Lumières.',
+              answer: 'Par exemple : le financement de la science par la traite négrière, l’exclusion des femmes des académies, la tension entre hiérarchie raciale et universalisme.'
+            },
+            {
+              question: 'Que veut dire Chisick quand il affirme que les valeurs des Lumières ne sont pas acquises une fois pour toutes ?',
+              answer: 'Que chaque génération doit se les approprier ; sinon, elles peuvent être submergées ou perdues.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Siècle des Lumières (Mark Cartwright)', url: 'https://www.worldhistory.org/trans/fr/1-22613/siecle-des-lumieres/' },
+            { title: 'Larousse — Siècle des Lumières', url: 'https://www.larousse.fr/encyclopedie/divers/si%C3%A8cle_des_Lumi%C3%A8res/130660' },
+            { title: 'Larousse — Despotisme éclairé', url: 'https://www.larousse.fr/encyclopedie/divers/despotisme_%C3%A9clair%C3%A9/42561' },
+            { title: 'CNRS Le journal — Les Lumières brillent-elles encore au XXIe siècle ?', url: 'https://lejournal.cnrs.fr/articles/les-lumieres-brillent-elles-encore-au-xxie-siecle' },
+            { title: 'Universalis — Qu’est-ce que les Lumières ? (Kant), fiche de lecture', url: 'https://www.universalis.fr/encyclopedie/qu-est-ce-que-les-lumieres/' }
+          ]
+        }
+      }
+    ]
+  },
+
+
+];
