@@ -3,7 +3,7 @@ window.courseCatalog = [
 
   {
     id: 'grands-philosophes',
-    title: 'Grands philosophes : des premières questions à la philosophie moderne',
+    title: 'Les grands philosophes : des premières questions à la philosophie moderne',
     note: 'Neuf chapitres sur la définition de la philosophie, les présocratiques, Socrate, Platon, Aristote, le stoïcisme, la pensée chinoise ancienne, Descartes et Kant. Les dates antiques sont approximatives, certaines biographies reposent sur des témoignages tardifs et les interprétations varient selon les spécialistes.',
     chapters: [
       {
