@@ -179,6 +179,11 @@ border-left-color: var(--coral);
 color: #ad482f;
 }
 
+.catalogue-levels a.is-current {
+        border-left-color: var(--coral);
+        color: #ad482f;
+      }
+
 .catalogue-heading {
 padding-bottom: 32px;
 }
