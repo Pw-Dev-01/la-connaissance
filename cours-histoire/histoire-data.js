@@ -1,5 +1,4 @@
-// Données du cours d'histoire (histoire-data.js) : x branches , x ch
-// Même format que le cours de géologie (voir cours.js) : sections, exemple guidé,
+// Données du cours d'histoire (histoire-data.js) : x branches , x chapitres.
 // exercices et bloc « RÉFÉRENCES » en bas de chaque leçon.
 // Convention de datation : les dates avant J.-C. sont données avec « vers » dès
 // qu'elles dépendent d'une chronologie discutée par les historiens ; les écarts
@@ -321,7 +320,7 @@ window.courseCatalog = [
       ,
       {
         id: 'egypte-ancienne',
-        sortYear: -3100,
+        sortYear: -31000,
         title: 'Égypte ancienne : du Nil à Rome',
         field: 'Afrique du Nord-Est · vers 3100–30 av. J.-C.',
         summary: 'Unification, Empires, pyramides, Ptolémées et pierre de Rosette.',
