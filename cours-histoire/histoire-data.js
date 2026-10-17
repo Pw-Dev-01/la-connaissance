@@ -320,7 +320,6 @@ window.courseCatalog = [
       ,
       {
         id: 'egypte-ancienne',
-        sortYear: -31000,
         title: 'Égypte ancienne : du Nil à Rome',
         field: 'Afrique du Nord-Est · vers 3100–30 av. J.-C.',
         summary: 'Unification, Empires, pyramides, Ptolémées et pierre de Rosette.',
@@ -1075,6 +1074,7 @@ window.courseCatalog = [
 
 {
   id: 'egypte-antique',
+  sortYear: -3100,
   title: 'Égypte antique : le Nil, les pharaons et une civilisation millénaire',
   note: 'Six chapitres approfondis sur la formation de l’État égyptien, le Nil et l’économie, le pouvoir royal, l’architecture, les croyances religieuses et l’écriture. Les dates sont approximatives. Les chronologies peuvent différer selon les spécialistes et les périodes ne se sont pas toutes caractérisées par le même degré d’unité politique.',
   chapters: [
@@ -2631,4 +2631,3 @@ window.courseCatalog = [
 
 
 ];
-
