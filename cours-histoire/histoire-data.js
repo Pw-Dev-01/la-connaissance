@@ -12,6 +12,7 @@ window.courseCatalog = [
 
   {
     id: 'prehistoire',
+    sortYear: -2600000,
     title: 'Préhistoire : des premiers outils aux premières sociétés agricoles',
     note: 'Six chapitres sur les origines humaines, les outils de pierre, Homo sapiens, l’art préhistorique, le Mésolithique et le Néolithique. Les dates sont approximatives et les évolutions varient selon les régions.',
     chapters: [
@@ -269,6 +270,7 @@ window.courseCatalog = [
 // BRANCHE 2 
   {
     id: 'histoire-des-civilisations',
+    sortYear: -3500,
     title: 'Histoire des civilisations',
     note: 'De la Mésopotamie à la Chine des Han : six grandes civilisations de l’Antiquité, leurs repères chronologiques, leurs sources et les dates discutées.',
     chapters: [
@@ -319,6 +321,7 @@ window.courseCatalog = [
       ,
       {
         id: 'egypte-ancienne',
+        sortYear: -3100,
         title: 'Égypte ancienne : du Nil à Rome',
         field: 'Afrique du Nord-Est · vers 3100–30 av. J.-C.',
         summary: 'Unification, Empires, pyramides, Ptolémées et pierre de Rosette.',
@@ -548,6 +551,7 @@ window.courseCatalog = [
   
   {
     id: 'antiquite',
+    sortYear: -800,
     title: 'L’Antiquité : empires et monde méditerranéen',
     note: 'De l’empire perse à la fin de l’Antiquité tardive : cinq chapitres sur les grands empires, leurs repères chronologiques, leurs sources et les dates discutées.',
     chapters: [
@@ -791,6 +795,7 @@ window.courseCatalog = [
 
   {
     id: 'asie-centrale',
+    sortYear: -130,
     title: 'Asie centrale et routes de la soie',
     note: 'Des Scythes à Timur : six chapitres sur l’Asie centrale (steppes, oasis et routes de la soie), leurs repères chronologiques, leurs sources et les dates discutées.',
     chapters: [
@@ -1437,6 +1442,7 @@ window.courseCatalog = [
   // BRANCHE — LA RÉVOLUTION SCIENTIFIQUE
   {
     id: 'revolution-scientifique',
+    sortYear: 1550,
     title: 'La révolution scientifique',
     note: 'Six chapitres sur les transformations des savoirs en Europe aux XVIe et XVIIe siècles : astronomie, instruments, méthodes d’enquête, anatomie, physique et circulation des connaissances. Les dates sont des repères ; les historiens discutent les limites et l’unité de cette « révolution », qui fut progressive et incomplète.',
     chapters: [
@@ -1703,6 +1709,7 @@ window.courseCatalog = [
 // BRANCHE — LA RÉVOLUTION INDUSTRIELLE
   {
     id: 'revolution-industrielle',
+    sortYear: 1760,
     title: 'La révolution industrielle',
     note: 'Six chapitres sur les transformations économiques, techniques et sociales amorcées en Grande-Bretagne au XVIIIe siècle puis diffusées, à des rythmes différents, dans d’autres régions : mécanisation, vapeur, usines, transports, conditions de travail et nouvelles formes de production. Les dates sont des repères conventionnels : l’industrialisation fut un processus progressif et inégal, non un événement instantané.',
     chapters: [
@@ -1971,6 +1978,7 @@ window.courseCatalog = [
 
   {
     id: 'histoire-ecosse',
+    sortYear: -10000,
     title: 'Histoire de l’Écosse : des premiers peuplements à la dévolution',
     note: 'Six chapitres sur le peuplement ancien, les Romains et les Pictes, les guerres d’indépendance, la Réforme et l’Union des couronnes, l’Union de 1707 avec le jacobitisme, puis la dévolution. Les dates anciennes sont approximatives et certains récits fondateurs restent débattus.',
     chapters: [
@@ -2233,6 +2241,7 @@ window.courseCatalog = [
 
   {
     id: 'siecle-des-lumieres',
+    sortYear: 1715,
     title: 'Le siècle des Lumières',
     note: 'Huit chapitres sur les origines scientifiques et intellectuelles des Lumières, leurs idées, leurs grandes figures, l’Encyclopédie, la circulation des idées, les combats concrets, le despotisme éclairé, puis les Révolutions et les débats sur l’héritage. Les bornes chronologiques des Lumières varient selon les auteurs et les pays : les dates données sont des repères.',
     chapters: [
@@ -2623,3 +2632,4 @@ window.courseCatalog = [
 
 
 ];
+
