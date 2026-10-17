@@ -192,17 +192,44 @@ function loadDisciplineData(file) {
 }
 
 /* =========================================================
-   5. EXTRACTION DES SOUS-RUBRIQUES (BRANCHES)
+   5. EXTRACTION ET TRI DES SOUS-RUBRIQUES (BRANCHES)
    ========================================================= */
 
 function getBranches(catalog) {
-  const branches = Array.isArray(catalog)
-    ? catalog
-    : Object.values(catalog || {});
+  const branches = (
+    Array.isArray(catalog)
+      ? catalog
+      : Object.values(catalog || {})
+  ).filter((branch) => branch && branch.title);
 
-  return branches.filter((branch) => branch && branch.title);
+  // Si aucune branche n'a de sortYear, conserver l'ordre d'origine.
+  const hasSortYear = branches.some(
+    (branch) =>
+      typeof branch.sortYear === 'number' &&
+      Number.isFinite(branch.sortYear)
+  );
+
+  if (!hasSortYear) {
+    return branches;
+  }
+
+  // Tri chronologique, sans modifier le catalogue d'origine.
+  return [...branches].sort((a, b) => {
+    const yearA = a.sortYear;
+    const yearB = b.sortYear;
+
+    const validA =
+      typeof yearA === 'number' && Number.isFinite(yearA);
+    const validB =
+      typeof yearB === 'number' && Number.isFinite(yearB);
+
+    if (validA && validB) return yearA - yearB;
+    if (validA) return -1;
+    if (validB) return 1;
+
+    return 0;
+  });
 }
-
 /* =========================================================
    6. CRÉATION DES LIENS VERS LES SOUS-RUBRIQUES
    Ouvre la page d'accueil de la discipline, positionnée sur
