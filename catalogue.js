@@ -21,9 +21,19 @@
 
   // Tri chronologique des branches à partir de sortYear.
   // Le catalogue d'origine n'est pas modifié.
-  const catalogChrono = [...courseCatalog].sort(
-    (a, b) => a.sortYear - b.sortYear
-  );
+  const catalogChrono = [...courseCatalog].sort((a, b) => {
+  const yearA = a.sortYear;
+  const yearB = b.sortYear;
+
+  const validA = typeof yearA === 'number' && Number.isFinite(yearA);
+  const validB = typeof yearB === 'number' && Number.isFinite(yearB);
+
+  if (validA && validB) return yearA - yearB;
+  if (validA) return -1;
+  if (validB) return 1;
+
+  return 0;
+});
 
   if (!catalogChrono.length) {
     console.error(
