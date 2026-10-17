@@ -1339,7 +1339,7 @@ window.courseCatalog = [
             text: 'NO₂ + lumière → NO + O ; O + O₂ → O₃',
             explanation: 'Ces réactions schématisent une étape du cycle photochimique. La production nette d’ozone dépend d’autres réactions, notamment de la présence de composés organiques volatils et de la chimie des oxydes d’azote ; cette écriture seule ne décrit pas toute la chimie atmosphérique.'
           },
-          sourcesHeading: 'Notices bibliographiques',
+          sourcesHeading: 'Sources scientifiques',
           sources: [
             {
               title: 'Cambridge University Press — An Introduction to Atmospheric Physics, David G. Andrews (2e édition, 2010)',
