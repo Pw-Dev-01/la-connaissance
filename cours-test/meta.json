@@ -1,0 +1,9 @@
+{
+  "title": "Informatique",
+  "symbol": "</>",
+  "description": "Algorithmique et programmation · 12 chapitres",
+  "order": 11,
+  "entry": "index.html",
+  "dataFile": "informatique-data.js",
+  "class": ""
+}
