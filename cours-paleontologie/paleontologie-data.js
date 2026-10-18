@@ -827,6 +827,318 @@ window.courseCatalog = [
     ]
   },
 
+// BRANCHE — LES PREMIERS HOMMES
+
+  {
+    id: 'hominides',
+    title: 'Les premiers hommes',
+    note: 'Sept chapitres sur les australopithèques, Homo habilis, les premiers outils de pierre, Homo erectus, les Néandertaliens, Homo sapiens et la diversité des hominines. Les dates sont des estimations en années avant le présent et la classification des espèces reste débattue.',
+    chapters: [
+      {
+        id: 'australopitheques-lucy',
+        title: 'Avant le genre Homo : les australopithèques et la marche debout',
+        field: 'Afrique · Vers 4,4 à 2,9 millions d’années avant le présent',
+        summary: 'Comprendre ce que sont les hominines, ce que Lucy a montré sur la marche debout et pourquoi elle n’est pas le début de l’histoire.',
+        lesson: {
+          sections: [
+            'Les paléoanthropologues emploient le mot « hominine » (hominin en anglais) pour désigner un groupe qui comprend les humains et leurs parents fossiles. Les australopithèques en font partie. Australopithecus afarensis, l’espèce de la célèbre « Lucy », a vécu il y a environ 3,8 à 2,9 millions d’années dans la région correspondant aujourd’hui à l’Éthiopie, au Kenya et à la Tanzanie, selon un essai de la chercheuse Denise Su publié par Sapiens. Il ne faut pas confondre ces espèces avec le genre Homo, qui apparaît plus tard.',
+            'Lucy a été découverte le 24 novembre 1974 à Hadar, en Éthiopie. Elle est datée d’environ 3,2 millions d’années et était, au moment de sa découverte, l’ancêtre humain le plus ancien et le plus complet connu. Elle mesurait environ 110 cm, d’après World History Encyclopedia (WHE). Selon le Smithsonian, ses pieds compacts pouvaient supporter tout son poids pendant la marche debout, mais ses os d’orteils longs et courbes ressemblent à ceux d’un singe grimpeur : elle pouvait marcher debout au sol et grimper aux arbres, ce qui lui donnait accès à des milieux variés.',
+            'La marche debout précède l’augmentation du volume du cerveau : d’après Sapiens, de grands cerveaux n’apparaissent dans notre lignée que plus d’un million d’années après Lucy. Des pistes d’empreintes fossiles de 3,6 millions d’années, découvertes en 1978 en Tanzanie et attribuées à son espèce, vont dans le même sens. Par ailleurs, un os de pied fossile de 3,2 millions d’années trouvé à Hadar indique, selon l’Arizona State University, la présence d’une voûte plantaire permanente chez Australopithecus afarensis.',
+            'Lucy n’est pas le début de l’histoire. Selon l’Arizona State University, Ardipithecus ramidus (4,4 millions d’années, Éthiopie) est le plus ancien ancêtre humain bien représenté par des restes squelettiques, et Australopithecus anamensis est présent au Kenya et en Éthiopie il y a 4,2 à 4 millions d’années. History.com rappelle que certains scientifiques pensent avoir trouvé des fragments d’os qui feraient remonter les origines de l’humanité jusqu’à 7 millions d’années. Enfin, le site de Hadar a livré plus de 370 spécimens d’Australopithecus afarensis, l’une des plus grandes collections d’une seule espèce d’hominine fossile en Afrique.'
+          ],
+          example: {
+            statement: 'Ardipithecus ramidus est daté d’environ 4,4 millions d’années et Lucy d’environ 3,2 millions d’années. Quel écart sépare ces deux repères ?',
+            calculation: 'Pour des durées exprimées en années avant le présent, on soustrait : 4,4 − 3,2 = 1,2 million d’années.',
+            answer: 'Environ 1,2 million d’années, soit 1 200 000 ans. Ces chiffres sont des estimations, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi Lucy est-elle importante pour comprendre l’évolution humaine ?',
+            answer: 'Son squelette relativement complet montre une locomotion bipède bien avant l’apparition de grands cerveaux : la marche debout a précédé l’augmentation du volume cérébral.'
+          },
+          exercises: [
+            {
+              question: 'Où et quand Lucy a-t-elle été découverte ?',
+              answer: 'À Hadar, en Éthiopie, le 24 novembre 1974.'
+            },
+            {
+              question: 'Quel âge approximatif a Lucy ?',
+              answer: 'Environ 3,2 millions d’années.'
+            },
+            {
+              question: 'Que révèlent les pieds et les os d’orteils de Lucy, d’après le Smithsonian ?',
+              answer: 'Qu’elle pouvait marcher debout au sol tout en étant capable de grimper aux arbres.'
+            }
+          ],
+          sources: [
+            { title: 'Sapiens — Lessons From Lucy (Denise Su)', url: 'https://sapiens.org/biology/lucy-australopithecus-afarensis-lessons' },
+            { title: 'Smithsonian (via Google Arts & Culture) — Australopithecus afarensis skeleton (« Lucy »)', url: 'https://artsandculture.google.com/asset/australopithecus-afarensis-skeleton-lucy/0wHswJvC_I0gtw' },
+            { title: 'Arizona State University — On their own 2 feet: Fossil reveals early human bipedalism', url: 'https://news.asu.edu/content/their-own-2-feet-fossil-reveals-early-human-bipedalism' },
+            { title: 'History.com — How the « Lucy » Fossil Rewrote the Story of Human Origins', url: 'https://www.history.com/articles/lucy-fossil-discovery-human-origins' },
+            { title: 'World History Encyclopedia — Homo Erectus', url: 'https://www.worldhistory.org/Homo_Erectus/' }
+          ]
+        }
+      },
+      {
+        id: 'homo-habilis',
+        title: 'Homo habilis : un des plus anciens représentants du genre Homo ?',
+        field: 'Afrique de l’Est et du Sud · Vers 2,3 à 1,5 million d’années avant le présent',
+        summary: 'Comprendre ce que l’on sait d’Homo habilis, pourquoi sa place dans l’arbre évolutif est discutée et ce que cela dit de la diversité des premiers humains.',
+        lesson: {
+          sections: [
+            'Homo habilis (« l’homme habile ») est une espèce humaine éteinte qui a vécu en Afrique de l’Est et du Sud entre 2,3 et 1,5 million d’années, d’après World History Encyclopedia (WHE). Le genre Homo serait apparu vers 2,5 millions d’années. Longtemps, habilis a été vu comme l’un des premiers membres du genre et comme l’ancêtre d’Homo erectus, donc de notre propre espèce. Cette idée est aujourd’hui débattue. History.com signale d’ailleurs une mâchoire de 2,8 millions d’années attribuée au genre Homo, ce qui rappelle que l’origine du genre n’est pas figée.',
+            'Homo habilis a été décrit en 1964 par Louis Leakey et ses collègues. Avec sa femme Mary, il explore depuis le début des années 1950 les gorges d’Olduvai, en Tanzanie, et y a déjà trouvé des outils de pierre de ce qu’il appelle l’Oldowayen. Au début des années 1960, leur fils Jonathan découvre dans la même couche des fragments de crâne, de mâchoire et des os de main. L’équipe juge ces restes plus proches du genre Homo que des australopithèques : posture verticale, marche bipède et dextérité suffisante pour fabriquer des outils. Le cerveau est toutefois plus petit que celui des Homo connus alors, et elle propose d’assouplir ce critère. Le nom vient du latin pour « habile ».',
+            'Le cerveau d’Homo habilis a une capacité crânienne moyenne d’environ 640 cm³, nettement supérieure à celle des australopithèques mais inférieure à celle d’Homo erectus. Le registre fossile est fragmentaire : on dispose de crânes et de fragments de crâne, mais seulement de trois squelettes postcrâniens, tous incomplets, et le fémur est inconnu. Les restes mêlent des traits d’Australopithecus et d’Homo. Homo habilis marchait debout, probablement plus efficacement que les australopithèques Australopithecus afarensis et A. africanus, mais il restait un bon grimpeur, aux mains fortes.',
+            'Le classement d’Homo habilis est l’objet d’un débat. Homo rudolfensis, autre espèce précoce (vers 2,5 à 1,8 million d’années) aux dents plus robustes, complique le tableau. Certains scientifiques regroupent tous les premiers Homo en une seule espèce ; la majorité des chercheurs maintient aujourd’hui la distinction habilis/rudolfensis. D’autres proposent de rattacher habilis aux australopithèques ou à un nouveau genre. Sur la filiation, Bernard Wood estime que l’espèce est trop différente d’Homo erectus pour en être l’ancêtre immédiat : un schéma linéaire simple devient de moins en moins probable. Enfin, WHE rappelle que le volume du cerveau n’est qu’un critère parmi d’autres, comme le montrent Homo floresiensis (découvert en 2003) et Homo naledi (2013), tous deux de petit cerveau.',
+            'Les restes d’Homo habilis ont été trouvés à Olduvai, à Koobi Fora (Kenya), en Éthiopie et à Sterkfontein (Afrique du Sud), peut-être aussi à Swartkrans. Vers 1,8 million d’années, Olduvai ressemblait à l’actuel Serengeti : une savane avec des buissons et un couvert végétal arboré. Les prédateurs étaient nombreux : un pied d’habilis découvert à Olduvai porte les traces d’un crocodile, et un os de jambe attribué à habilis ou à Paranthropus boisei a été mâché par un léopard. Le régime alimentaire était varié : insectes ou herbivores, fruits, aliments durs et fibreux, et de la viande, comme l’indiquent des os portant des traces de découpe. Un usage délibéré du feu reste incertain : des traces de feu existent sur quelques sites oldowayens, mais elles peuvent venir de la foudre ou d’incendies naturels.'
+          ],
+          example: {
+            statement: 'Les ossements attribués à Homo habilis sont datés d’entre 2,3 et 1,5 million d’années. Quelle durée couvre cette fourchette ?',
+            calculation: 'Pour des durées exprimées en années avant le présent, on soustrait : 2,3 − 1,5 = 0,8 million d’années.',
+            answer: 'Environ 800 000 ans. Ces chiffres sont des estimations chronologiques, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi le classement d’Homo habilis dans le genre Homo est-il débattu ?',
+            answer: 'Ses restes mêlent des traits d’Homo et d’Australopithecus, son cerveau est relativement petit et le registre fossile est fragmentaire.'
+          },
+          exercises: [
+            {
+              question: 'Qui a décrit Homo habilis en 1964 et où ses premiers restes ont-ils été découverts ?',
+              answer: 'Louis Leakey et ses collègues ; dans les gorges d’Olduvai, en Tanzanie.'
+            },
+            {
+              question: 'Quelle est la capacité crânienne moyenne d’Homo habilis selon World History Encyclopedia ?',
+              answer: 'Environ 640 cm³.'
+            },
+            {
+              question: 'Peut-on affirmer aujourd’hui qu’Homo habilis est l’ancêtre direct d’Homo erectus ?',
+              answer: 'Non. Cette idée, longtemps répandue, est aujourd’hui débattue.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Homo Habilis', url: 'https://www.worldhistory.org/Homo_Habilis/' },
+            { title: 'World History Encyclopedia — Homo Erectus', url: 'https://www.worldhistory.org/Homo_Erectus/' },
+            { title: 'History.com — How the « Lucy » Fossil Rewrote the Story of Human Origins', url: 'https://www.history.com/articles/lucy-fossil-discovery-human-origins' }
+          ]
+        }
+      },
+      {
+        id: 'premiers-outils-de-pierre',
+        title: 'Les premiers outils de pierre : de Lomekwi à l’Oldowayen',
+        field: 'Afrique · Vers 3,4 à 1 million d’années avant le présent',
+        summary: 'Comprendre comment les premiers outils ont été fabriqués, ce qu’ils permettaient et pourquoi leur fabrication n’a pas été uniquement humaine.',
+        lesson: {
+          sections: [
+            'L’Oldowayen (Oldowan en anglais) est l’industrie de pierre taillée la plus connue des débuts de la technologie. World History Encyclopedia (WHE) le date d’environ 2,6 à 1 million d’années. Il se superpose à plusieurs espèces : Homo habilis, Homo rudolfensis, Homo erectus et des australopithèques tardifs ont pu employer des outils de pierre à des degrés divers. La plupart des scientifiques pensent pourtant que les Homo, dont habilis, fabriquaient et utilisaient des outils plus habituellement, car leurs dents ont diminué et leur cerveau a presque doublé de volume au cours du premier million d’années de l’Oldowayen. Découper la nourriture réduit en effet le besoin de dents massives.',
+            'Les outils oldowayens étaient obtenus de deux façons. La percussion directe dure consiste à détacher des éclats d’un bloc de pierre avec une autre pierre. La technique bipolaire consiste à poser le bloc sur une enclume de pierre et à le frapper avec un percuteur. Les matières les plus courantes étaient la lave volcanique, le quartz et le quartzite. Les éclats ont pu servir à dépecer des animaux, à travailler le bois ou à couper des végétaux tendres ; les percuteurs, à casser des os pour atteindre la moelle ; les galets aménagés (choppers), peut-être comme bâtons à fouir ou pour couper des branches. WHE souligne toutefois qu’il est difficile d’attribuer un usage direct à un outil.',
+            'Des os portant des traces de découpe attestent que des carcasses ont été traitées, depuis de petits mammifères jusqu’à de très gros animaux, de la taille d’un éléphant. On ignore si ces animaux étaient charognés ou chassés. Des concentrations de pierres et d’os à certains endroits ont aussi été relevées sur des sites oldowayens ; leur origine est difficile à établir : campements de base, lieux de collecte, caches de pierres, accumulations de carnivores ou lieux choisis pour l’ombre, l’eau ou la nourriture. Il s’agit d’hypothèses. WHE ajoute que l’usage d’outils a rendu l’espèce moins dépendante de son environnement et plus tournée vers la culture.',
+            'L’Oldowayen n’est pas la plus ancienne industrie connue. En 2010, des fouilles à Dikika (Éthiopie) ont révélé des traces de découpe sur des os, laissées par des outils de pierre il y a 3,39 millions d’années. En 2015, le site de Lomekwi 3, à l’ouest du lac Turkana (Kenya), a livré des artefacts de pierre datés de 3,3 millions d’années. Ces dates sont antérieures à l’apparition du genre Homo : la fabrication d’outils n’a donc jamais été une activité uniquement humaine, selon WHE. Plus tard, Homo erectus est associé à l’Acheuléen et aux premiers bifaces, considérés comme la première grande innovation de la technologie lithique ; l’Arizona State University signale par ailleurs d’abondants outils oldowayens d’environ 2,3 millions d’années à Hadar.'
+          ],
+          example: {
+            statement: 'Les artefacts de Lomekwi 3 sont datés de 3,3 millions d’années avant le présent et le début de l’Oldowayen de 2,6 millions d’années. Quel écart sépare ces deux repères ?',
+            calculation: 'Pour des durées exprimées en années avant le présent, on soustrait : 3,3 − 2,6 = 0,7 million d’années.',
+            answer: 'Environ 700 000 ans. Ces chiffres sont des estimations chronologiques, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi la découverte de Lomekwi 3 change-t-elle l’image de la fabrication d’outils ?',
+            answer: 'Ses artefacts de 3,3 millions d’années sont antérieurs au genre Homo : la fabrication d’outils n’a pas été uniquement une activité humaine.'
+          },
+          exercises: [
+            {
+              question: 'Comment fabriquait-on les outils oldowayens ?',
+              answer: 'Par percussion dure, en détachant des éclats d’un bloc avec une autre pierre, ou par la technique bipolaire sur une enclume.'
+            },
+            {
+              question: 'Les traces de découpe sur les os permettent-elles de savoir si les animaux étaient chassés ou charognés ?',
+              answer: 'Non. Elles montrent que des carcasses ont été traitées, mais pas si les animaux ont été chassés ou charognés.'
+            },
+            {
+              question: 'Un outil oldowayen prouve-t-il qu’une espèce précise l’a fabriqué ?',
+              answer: 'Non. L’Oldowayen recoupe plusieurs espèces, dont Homo habilis, Homo rudolfensis, Homo erectus et des australopithèques tardifs.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Homo Habilis', url: 'https://www.worldhistory.org/Homo_Habilis/' },
+            { title: 'World History Encyclopedia — Homo Erectus', url: 'https://www.worldhistory.org/Homo_Erectus/' },
+            { title: 'Arizona State University — On their own 2 feet: Fossil reveals early human bipedalism', url: 'https://news.asu.edu/content/their-own-2-feet-fossil-reveals-early-human-bipedalism' }
+          ]
+        }
+      },
+      {
+        id: 'homo-erectus',
+        title: 'Homo erectus : le premier grand voyageur',
+        field: 'Afrique et Eurasie · Vers 1,9 million d’années avant le présent jusqu’au Pléistocène moyen',
+        summary: 'Comprendre l’expansion, l’anatomie, le mode de vie et les débats de classification autour d’Homo erectus.',
+        lesson: {
+          sections: [
+            'Homo erectus (« l’homme debout ») est une espèce humaine éteinte dont les premiers restes apparaissent il y a environ 1,9 million d’années et dont les derniers ont survécu jusqu’au Pléistocène moyen, selon World History Encyclopedia (WHE). Les premiers fossiles classés comme Pithecanthropus (aujourd’hui Homo) erectus sont ceux d’Eugène Dubois, trouvés dans les années 1890 à Trinil, à Java. D’autres fossiles ont ensuite été découverts en Indonésie, puis en Chine, et à partir des années 1960 en Afrique. L’espèce descend probablement d’une espèce plus ancienne de Homo, le plus souvent Homo habilis, en Afrique de l’Est ou peut-être en Eurasie.',
+            'La classification d’Homo erectus est débattue. Les fossiles attribués à l’espèce s’étendent sur une très longue durée et sur un vaste espace, avec de fortes variations. Certains défendent une définition large, avec une seule espèce de l’Asie du Sud-Est à l’Afrique. D’autres proposent de réserver le nom d’Homo erectus aux fossiles asiatiques et de nommer Homo ergaster les fossiles africains, que cette thèse relie à la lignée menant à Homo sapiens. À ce jour, selon WHE, l’hypothèse d’une espèce unique, au sens large, tient encore, mais l’espèce ne doit pas devenir une catégorie « fourre-tout ». Les fossiles de Dmanisi (Géorgie) brouillent particulièrement les frontières entre habilis, rudolfensis et erectus.',
+            'On pense qu’Homo erectus a quitté l’Afrique il y a environ 1,9 à 1,8 million d’années, traversé le Moyen-Orient et le Caucase, puis atteint l’Asie de l’Est, avec l’Indonésie et la Chine atteintes vers 1,7 à 1,6 million d’années. Une étude de 2016 propose que l’espèce suivait les grands herbivores et les gisements de silex, en évitant au début les zones très peuplées de carnivores. Comme erectus apparaît à peu près au même moment en Afrique de l’Est et en Eurasie, son origine pourrait aussi être eurasiatique. Certains fossiles d’Europe occidentale ont été rangés parmi les erectus, mais ils correspondent plutôt à Homo heidelbergensis.',
+            'Homo erectus était plus grand et plus intelligent que les humains précédents. Son squelette est pratiquement moderne, plus trapu. Il est le premier à présenter des proportions des membres et du tronc proches des nôtres, et il avait perdu les adaptations à l’escalade. Sa taille variait d’environ 145 à 185 cm pour un poids de 40 à 68 kg ; la moyenne atteint 170 cm pour la partie africaine. Lucy, une Australopithecus afarensis, ne mesurait que 110 cm. La capacité crânienne des premiers erectus est de 600 à 800 cm³, mais la plupart des plus récents dépassent 1 000 cm³. Les arcades sourcilières sont épaisses et la voûte crânienne basse.',
+            'Homo erectus vivait de chasse et de cueillette. Des os portant des traces de boucherie montrent qu’il accédait régulièrement à des carcasses, sans doute par charognage et par chasse, depuis au moins 1,75 million d’années. Les plus anciennes traces d’usage du feu par des hominines remontent à environ 1,8 million d’années ; la cuisson se répand à partir d’environ 500 000 ans, et il y a 400 000 ans les humains manipulent visiblement et délibérément le feu. Homo erectus est associé à l’Oldowayen, mais plus souvent à l’Acheuléen (environ 1,7 million à 250 000 ans), et souvent à l’invention des premiers bifaces. Quant au langage, on ne peut ni le prouver ni l’exclure : les indices anatomiques sont insuffisants et, faute d’ADN, le gène FOXP2 ne peut être testé.'
+          ],
+          example: {
+            statement: 'Selon la chronologie de WHE, l’industrie acheuléenne s’étend d’environ 1 700 000 ans à 250 000 ans avant le présent. Quelle durée cela représente-t-il ?',
+            calculation: 'Pour des durées exprimées en années avant le présent, on soustrait : 1 700 000 − 250 000 = 1 450 000.',
+            answer: 'Environ 1 450 000 ans. Ces chiffres sont des estimations chronologiques, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi la classification d’Homo erectus est-elle discutée ?',
+            answer: 'Les fossiles attribués à l’espèce couvrent un temps et un espace très vastes et montrent de fortes variations ; certains proposent donc de séparer les fossiles africains sous le nom d’Homo ergaster.'
+          },
+          exercises: [
+            {
+              question: 'Qui a découvert les premiers fossiles classés comme Homo erectus et où ?',
+              answer: 'Eugène Dubois, dans les années 1890, à Trinil, sur l’île de Java (Indonésie).'
+            },
+            {
+              question: 'Quelle industrie de pierre est surtout associée à Homo erectus ?',
+              answer: 'L’Acheuléen, souvent associé aux premiers bifaces.'
+            },
+            {
+              question: 'Peut-on affirmer qu’Homo erectus parlait ?',
+              answer: 'Non. Les indices anatomiques ne permettent ni de le prouver ni de l’exclure, et l’absence d’ADN empêche de tester le gène FOXP2.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Homo Erectus', url: 'https://www.worldhistory.org/Homo_Erectus/' },
+            { title: 'World History Encyclopedia — Homo Habilis', url: 'https://www.worldhistory.org/Homo_Habilis/' },
+            { title: 'World History Encyclopedia — Neanderthal', url: 'https://www.worldhistory.org/Neanderthal/' }
+          ]
+        }
+      },
+      {
+        id: 'neandertaliens',
+        title: 'Les Néandertaliens : des humains adaptés à l’Europe glaciaire',
+        field: 'Eurasie occidentale · Environ 400 000 à 40 000 ans avant le présent',
+        summary: 'Comprendre qui étaient les Néandertaliens, ce que l’on sait de leur culture et pourquoi leur disparition a plusieurs causes.',
+        lesson: {
+          sections: [
+            'Les Néandertaliens sont un groupe humain éteint apparu en Eurasie occidentale au Pléistocène moyen. Ils ont côtoyé les premiers humains modernes arrivés en Europe vers 45 000 ans, puis ont disparu des archives fossiles vers 40 000 ans, selon World History Encyclopedia (WHE). Il n’y a pas de date précise d’apparition : les premiers traits néandertaliens apparaissent entre environ 600 000 et 400 000 ans, sont nets entre 200 000 et 100 000 ans, et le Néandertalien « classique » n’apparaît qu’il y a environ 70 000 ans. Ils partagent avec Homo sapiens un ancêtre commun en Afrique il y a environ 550 000 à 765 000 ans selon les estimations, et les Dénisoviens sont leur groupe frère.',
+            'Les premiers fossiles ont été exhumés au XIXe siècle : l’enfant d’Engis en 1830 et l’adulte de Forbes Quarry en 1848. On ne les a pas reconnus d’emblée comme des humains archaïques : on a expliqué leur anatomie particulière par des maladies comme le rachitisme. Après la découverte d’un squelette dans la vallée de Neander, en Allemagne, en 1856, et la parution de L’Origine des espèces de Darwin en 1859, la recherche a progressé. En 1864, ces restes sont rattachés à l’espèce Homo neanderthalensis.',
+            'Les Néandertaliens étaient petits et trapus : environ 169 cm pour les hommes et 160 cm pour les femmes, avec un thorax large et profond, de fortes arcades sourcilières, un grand visage et pas de menton. Ils avaient de grands cerveaux, même plus volumineux que les nôtres. La plupart des squelettes d’adultes bien conservés portent des traces de traumatismes, souvent à la tête ou au cou, probablement liées à une chasse de près. Comme beaucoup de lésions sont cicatrisées, les individus blessés ont été soignés par le groupe. L’espérance de vie moyenne à l’âge adulte était pourtant faible.',
+            'Les Néandertaliens étaient d’actifs chasseurs, consommant surtout de la viande d’herbivores (bison, bovidés sauvages, renne, cerf, bouquetin, sanglier), parfois même des mammouths et des rhinocéros laineux, complétée par des végétaux. Ils cuisaient leurs aliments. Leurs outils relèvent le plus souvent de la technologie moustérienne : des éclats de silex transformés en racloirs, en pointes retouchées et en petits bifaces. Ils maîtrisaient le feu depuis au moins 200 000 ans, âge où il sert à produire du brai d’écorce de bouleau. Leurs foyers éclairaient surtout des grottes ou d’autres abris naturels.',
+            'L’image de brutes primitives est aujourd’hui abandonnée. Les Néandertaliens chassaient de façon coordonnée, soignaient leurs blessés, utilisaient le feu de façon élaborée, enterraient intentionnellement leurs morts, perforaient et coloraient des coquillages marins, et auraient utilisé l’ocre rouge à Maastricht-Belvédère il y a 200 000 à 250 000 ans. Les anneaux de stalagmites de la grotte de Bruniquel, en France, datés de 176 500 ans, témoignent de planification et peut-être d’un usage symbolique.',
+            'Vers 55 000 ans, la principale vague d’humains modernes sortis d’Afrique rencontre les Néandertaliens au Proche et au Moyen-Orient, où des croisements ont lieu. Les humains modernes atteignent l’Europe au plus tôt vers 45 000 ans, en plus grand nombre que les Néandertaliens, et ceux-ci disparaissent vers 40 000 ans. Plusieurs facteurs ont pu jouer : la concurrence pour les ressources, un climat très instable et des croisements qui auraient en partie « absorbé » les Néandertaliens. Les humains non africains portent en moyenne environ 2 % d’ADN néandertalien. La disparition ne s’explique donc pas par une seule cause.'
+          ],
+          example: {
+            statement: 'Selon WHE, les humains modernes arrivent en Europe vers 45 000 ans avant le présent et les Néandertaliens disparaissent des archives fossiles vers 40 000 ans. Quelle durée de coexistence cela représente-t-il environ ?',
+            calculation: 'Pour des durées exprimées en années avant le présent, on soustrait : 45 000 − 40 000 = 5 000.',
+            answer: 'Environ 5 000 ans. Ces chiffres sont des estimations chronologiques, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi l’image de Néandertaliens « brutes primitives » est-elle remise en cause ?',
+            answer: 'Parce que les Néandertaliens chassaient de façon coordonnée, soignaient leurs blessés, utilisaient le feu de façon élaborée, enterraient leurs morts et laissent des traces d’usage de l’ocre, de coquillages parés et de constructions comme à Bruniquel.'
+          },
+          exercises: [
+            {
+              question: 'Dans quelle vallée a-t-on découvert en 1856 un squelette qui a donné son nom aux Néandertaliens ?',
+              answer: 'Dans la vallée de Neander, en Allemagne.'
+            },
+            {
+              question: 'Quelle proportion d’ADN néandertalien portent en moyenne les humains non africains ?',
+              answer: 'Environ 2 %.'
+            },
+            {
+              question: 'Peut-on expliquer la disparition des Néandertaliens par une seule cause ?',
+              answer: 'Non. WHE évoque une combinaison de facteurs : concurrence, environnement difficile et, en partie, croisements avec les humains modernes.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Neanderthal', url: 'https://www.worldhistory.org/Neanderthal/' },
+            { title: 'World History Encyclopedia — Homo Sapiens', url: 'https://www.worldhistory.org/Homo_Sapiens/' }
+          ]
+        }
+      },
+      {
+        id: 'homo-sapiens',
+        title: 'Homo sapiens : origines, migrations et comportements modernes',
+        field: 'Afrique puis monde entier · Environ 200 000 ans avant le présent et après',
+        summary: 'Comprendre d’où vient notre espèce, comment elle s’est répandue sur la planète et pourquoi la « modernité » est apparue progressivement.',
+        lesson: {
+          sections: [
+            'Homo sapiens (« l’homme sage ») est la seule espèce humaine encore présente aujourd’hui. Selon World History Encyclopedia (WHE), elle est apparue en Afrique il y a environ 200 000 ans. L’Afrique a longtemps été négligée à cause du manque de fossiles, mais de nouvelles découvertes, de meilleures datations et la génétique ont montré que notre origine commune s’y trouve. L’opinion dominante est que des humains archaïques, le plus souvent Homo heidelbergensis, lui-même issu d’Homo erectus, ont évolué progressivement vers Homo sapiens en Afrique de l’Est ou du Sud. Le crâne haut et arrondi caractéristique des humains modernes apparaît à Omo Kibish (Omo 1), en Éthiopie, il y a environ 195 000 ans.',
+            'Les humains modernes ont un squelette plus gracile que leurs prédécesseurs, un cerveau très volumineux (environ 1 300 cm³ en moyenne), un front haut et vertical, presque pas d’arcades sourcilières, un menton marqué et un visage placé sous la boîte crânienne. Après l’apparition des premiers traits vers 200 000 ans, les crânes de l’époque ont déjà adopté la forme moderne vers 150 000 ans. WHE souligne que notre définition d’espèce reste difficile : les humains modernes continuent d’évoluer, et le volume du cerveau a diminué depuis 20 000 ans.',
+            'Les premiers Homo sapiens connus hors d’Afrique se trouvent à Skhul et à Qafzeh, en Israël, avec des sépultures datées de plus de 100 000 ans, peut-être jusqu’à 130 000 ans. La principale vague de migration hors d’Afrique n’a lieu que vers 55 000 ans, avec des groupes plus nombreux. L’Eurasie orientale est atteinte il y a au moins 40 000 ans ; l’Australie il y a 53 000 à 41 000 ans (un groupe plus ancien aurait peut-être atteint le nord de l’Australie dès 65 000 ans) ; l’Europe vers 45 000 ans ; les Amériques il y a environ 15 000 à 14 000 ans. Sur la route, Homo sapiens a rencontré d’autres espèces humaines, dont les Néandertaliens et les Dénisoviens, avec lesquels il s’est croisé.',
+            'Quand sommes-nous devenus des humains au comportement moderne ? WHE explique qu’aucune définition universelle n’existe, mais qu’un élément central est la communication dans un monde organisé par des symboles. La modernité n’est pas apparue d’un coup : des sépultures symboliques existent dès environ 115 000 ans (grotte de Skhul, Israël), avec peut-être un usage symbolique de l’ocre rouge peu après. Vers 60 000 ans, la plupart des aspects associés à la modernité (outils complexes, rituels, traitement élaboré des morts) sont apparus, en des combinaisons variables. Vers 40 000 ans au moins, un comportement pleinement moderne, avec art figuratif, imagerie rituelle ou mythique et instruments de musique, est visible dans tout l’Ancien Monde. Les grottes ornées d’Europe, comme Chauvet et Lascaux, en sont des exemples.',
+            'Les premiers Homo sapiens étaient des chasseurs-cueilleurs. Environ 9 000 ans avant le présent, le Néolithique voit naître l’agriculture et un mode de vie plus sédentaire. Les outils sont passés des éclats retouchés du Paléolithique moyen aux outils en os, en bois de cervidé et en ivoire du Paléolithique supérieur (aiguilles à coudre, propulseurs), puis aux outils agricoles. Les Néandertaliens eux aussi ont montré certains aspects de la modernité ; mais après environ 30 000 ans, Homo sapiens est la seule espèce humaine restante. Le moment exact d’apparition du langage reste très difficile à établir.'
+          ],
+          example: {
+            statement: 'Homo sapiens apparaît en Afrique vers 200 000 ans avant le présent et arrive en Europe vers 45 000 ans. Combien de temps sépare ces deux repères ?',
+            calculation: 'Pour des durées exprimées en années avant le présent, on soustrait : 200 000 − 45 000 = 155 000.',
+            answer: 'Environ 155 000 ans. Ces chiffres sont des estimations chronologiques, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi considère-t-on aujourd’hui l’Afrique comme le berceau de notre espèce ?',
+            answer: 'Parce que de nouvelles découvertes archéologiques, de meilleures datations et des données génétiques convergent vers une origine africaine commune.'
+          },
+          exercises: [
+            {
+              question: 'Où et vers quand Homo sapiens est-il apparu ?',
+              answer: 'En Afrique, vers 200 000 ans avant le présent.'
+            },
+            {
+              question: 'Vers quand la principale vague de migration hors d’Afrique a-t-elle eu lieu ?',
+              answer: 'Vers 55 000 ans avant le présent.'
+            },
+            {
+              question: 'Les comportements « modernes » sont-ils apparus partout en même temps ?',
+              answer: 'Non. Ils sont apparus progressivement, selon les lieux et les époques, comme le montrent les sépultures symboliques d’environ 115 000 ans puis l’art figuratif d’au moins 40 000 ans.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Homo Sapiens', url: 'https://www.worldhistory.org/Homo_Sapiens/' },
+            { title: 'World History Encyclopedia — Neanderthal', url: 'https://www.worldhistory.org/Neanderthal/' },
+            { title: 'World History Encyclopedia — Homo Erectus', url: 'https://www.worldhistory.org/Homo_Erectus/' }
+          ]
+        }
+      },
+      {
+        id: 'diversite-et-metissages',
+        title: 'Une évolution en réseau : diversité des hominines et métissages',
+        field: 'Afrique, Asie et Europe · Du Pléistocène ancien à la fin du Pléistocène',
+        summary: 'Comprendre pourquoi l’évolution humaine ne se résume pas à une ligne droite : espèces contemporaines, nouvelles découvertes et croisements entre populations.',
+        lesson: {
+          sections: [
+            'L’évolution humaine n’est pas une échelle qui mènerait d’une espèce à la suivante. World History Encyclopedia (WHE) rappelle qu’Homo habilis partageait son monde avec Australopithecus africanus, Homo rudolfensis, Paranthropus boisei et Homo erectus. Le registre fossile de cette époque est encore trop mince pour régler tous les débats, mais il montre que plusieurs espèces d’hominines ont coexisté.',
+            'Depuis une vingtaine d’années, plusieurs espèces ont été découvertes qui compliquent l’histoire. Homo floresiensis, surnommé « hobbit » parce qu’il ne mesurait qu’environ un mètre, a été découvert en 2003. Homo naledi, trouvé en 2013 dans la grotte de Rising Star, en Afrique du Sud, a lui aussi un petit cerveau. Ces découvertes illustrent, selon WHE, que le volume du cerveau n’est qu’une partie de l’histoire : l’organisation du cerveau, la vie en groupe et l’usage d’outils comptent aussi.',
+            'Les Dénisoviens sont un groupe humain éteint, connu à ce jour seulement à partir de la grotte de Denisova, dans les montagnes de l’Altaï, en Sibérie. Ils sont le groupe frère des Néandertaliens, dont ils se sont séparés il y a plus de 390 000 ans, peut-être entre 430 000 et 473 000 ans. En 2012, un fragment d’os long daté d’entre 80 000 et 120 000 ans environ y a été trouvé : il appartenait à une femme dont la mère était néandertalienne et le père dénisovien. La chronologie de WHE situe aussi un croisement entre Dénisoviens et ancêtres des Mélanésiens actuels, probablement en Asie du Sud-Est, entre 54 000 et 44 000 ans.',
+            'Les croisements entre populations humaines ont été fréquents. Les humains non africains portent en moyenne environ 2 % d’ADN néandertalien, et nous nous sommes aussi croisés avec les Dénisoviens. WHE signale des échanges génétiques avec les Néandertaliens vers 100 000 ans, probablement au Proche-Orient, puis vers 55 000 ans, qui a laissé la plus forte empreinte. Ces croisements ont aidé les humains modernes à s’adapter au climat plus froid de l’Europe en influençant la peau et les cheveux, mais des recherches indiquent aussi une fertilité réduite et des fausses couches lorsque des garçons possédaient un chromosome Y néandertalien.',
+            'Pour WHE, la leçon principale est la diversité des premiers hominines. Le paléoanthropologue Ian Tattersall estime qu’on ne comprendra la situation qu’en admettant que cette diversité dépasse ce que les genres Homo et Australopithecus peuvent contenir. L’image d’un arbre évolutif est donc de plus en plus abandonnée au profit d’un modèle plus fluide, comparable à un ruisseau tressé (avec en plus des impasses pour les populations éteintes) : les espèces se sont croisées, se sont séparées et ont été reliées dans leur développement.'
+          ],
+          example: {
+            statement: 'Un fragment d’os long trouvé dans la grotte de Denisova est daté d’entre 80 000 et 120 000 ans environ. Quelle est la largeur de cette fourchette de datation ?',
+            calculation: 'On soustrait la borne basse à la borne haute : 120 000 − 80 000 = 40 000.',
+            answer: 'La fourchette est de 40 000 ans. Une datation donne un intervalle d’estimation, pas une date exacte.'
+          },
+          exercise: {
+            question: 'Pourquoi remplace-t-on l’image d’un arbre évolutif par celle d’un ruisseau tressé ?',
+            answer: 'Parce que les espèces humaines ne forment pas une ligne droite : elles ont coexisté, se sont croisées et ont été interconnectées, avec aussi des impasses pour les populations éteintes.'
+          },
+          exercises: [
+            {
+              question: 'Dans quelle grotte a-t-on découvert en 2012 un os d’un individu dont la mère était néandertalienne et le père dénisovien ?',
+              answer: 'Dans la grotte de Denisova, dans les montagnes de l’Altaï, en Sibérie.'
+            },
+            {
+              question: 'En quelle année Homo naledi a-t-il été découvert et dans quel pays ?',
+              answer: 'En 2013, dans la grotte de Rising Star, en Afrique du Sud.'
+            },
+            {
+              question: 'Que montrent Homo floresiensis et Homo naledi à propos du volume du cerveau ?',
+              answer: 'Qu’un petit corps et un petit cerveau n’empêchent pas d’être humain : le volume du cerveau n’est qu’un critère parmi d’autres.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Homo Habilis', url: 'https://www.worldhistory.org/Homo_Habilis/' },
+            { title: 'World History Encyclopedia — Neanderthal', url: 'https://www.worldhistory.org/Neanderthal/' },
+            { title: 'World History Encyclopedia — Homo Sapiens', url: 'https://www.worldhistory.org/Homo_Sapiens/' }
+          ]
+        }
+      }
+    ]
+  },
+
+
 ];
 
  
