@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Generate course list
+        run: node scan-courses.mjs
 
       - name: Check catalog data files
         run: |
@@ -38,7 +40,7 @@ jobs:
       - name: Assemble static site
         run: |
           mkdir -p dist
-          cp index.html styles.css portal.css portal.js catalogue.js cours.js navigation.js README.md dist/
+          cp index.html styles.css portal.css portal.js catalogue.js cours.js navigation.js README.md courses.js courses-render.js dist/
           cp -R cours-*/ dist/
 
       - name: Upload Pages artifact
