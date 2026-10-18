@@ -397,5 +397,389 @@ window.courseCatalog = [
         }
       }
     ]
-  }
+  },
+
+
+{
+  id: 'histoire-philosophie',
+  title: 'Histoire de la philosophie : des premières écoles de pensée à la philosophie contemporaine',
+  note: 'Six chapitres consacrés aux grandes traditions philosophiques mondiales, aux penseurs majeurs et à l’évolution des questions sur la connaissance, la réalité, la morale, la politique et la liberté. Les dates sont approximatives lorsque les sources historiques ne permettent pas une précision supérieure. Les traditions grecques, indiennes, chinoises, médiévales, modernes et contemporaines sont présentées dans leur contexte, sans supposer que toutes suivent une évolution identique.',
+
+  chapters: [
+    {
+      id: 'naissance-philosophie',
+      title: 'Les origines de la philosophie et les grandes traditions antiques',
+      field: 'Antiquité · Du premier millénaire avant notre ère aux derniers siècles de l’Antiquité',
+      summary: 'Étudier l’apparition de la réflexion philosophique, les présocratiques, Socrate, Platon, Aristote et les traditions de pensée de l’Inde et de la Chine anciennes.',
+
+      lesson: {
+        sections: [
+          'La philosophie cherche à examiner rationnellement les questions fondamentales relatives à la réalité, à la connaissance, à la morale et à la vie collective. Le mot philosophie vient du grec philosophia, généralement traduit par « amour de la sagesse ». Son histoire ne commence cependant pas par un événement unique dont la date serait certaine. Des traditions intellectuelles se sont développées dans plusieurs régions du monde, avec des textes, des pratiques et des objectifs parfois différents. Les réflexions égyptiennes et mésopotamiennes sur la justice, la mort et la condition humaine constituent notamment un arrière-plan ancien important. Il faut toutefois distinguer les textes de sagesse, les récits religieux et les systèmes philosophiques explicitement argumentés, sans supposer que ces catégories étaient séparées dans toutes les sociétés anciennes.',
+          'Dans le monde grec, les penseurs présocratiques, notamment Thalès, Anaximandre et Héraclite, cherchent à comprendre l’organisation de la nature et les principes du changement. Ils proposent des explications différentes sur ce qui constitue le monde et sur la manière dont il évolue. Les fragments conservés sont souvent incomplets et transmis par des auteurs postérieurs : leur interprétation exige donc de la prudence. Socrate, qui vécut à Athènes au Ve siècle avant notre ère, est connu principalement par les écrits de Platon, de Xénophon et par des témoignages comiques. Il interroge les définitions du courage, de la justice et de la vertu, et met à l’épreuve les convictions de ses interlocuteurs. Il n’a laissé aucun ouvrage connu de sa main. La méthode socratique consiste notamment à examiner les réponses, à rechercher leurs contradictions et à reconnaître ce qui reste à démontrer.',
+          'Platon, disciple de Socrate, développe une philosophie qui aborde la connaissance, la justice, l’éducation, la politique et la réalité. Ses dialogues mettent souvent en scène une enquête plutôt qu’une exposition doctrinale unique. Dans plusieurs dialogues, il distingue les réalités intelligibles des objets sensibles changeants, mais la portée exacte de cette distinction varie selon les textes et fait l’objet de discussions savantes. Aristote, élève de Platon, élabore une approche différente : il étudie la logique, la nature, les causes, les êtres vivants, la vertu et l’organisation politique. Pour lui, comprendre quelque chose suppose notamment d’examiner ses causes et ses caractéristiques. Les deux philosophes ont profondément influencé les traditions ultérieures, sans pour autant défendre les mêmes conceptions de la connaissance ou de la réalité.',
+          'La philosophie antique ne se limite pas à Platon et Aristote. En Inde, les traditions védiques et les Upanishads développent des interrogations sur le soi, la réalité et la libération. Le bouddhisme examine notamment la souffrance, l’impermanence et les conditions de l’expérience ; le jaïnisme développe entre autres une réflexion sur la connaissance et la non-violence. En Chine, Confucius met l’accent sur la formation morale, les relations humaines, les rites et la responsabilité politique. Le taoïsme, associé notamment aux textes du Daodejing et du Zhuangzi, interroge les conventions humaines et la manière de vivre en accord avec le Dao. Ces traditions sont diverses et ont évolué au cours des siècles : il serait incorrect de les réduire à une doctrine unique ou de considérer qu’elles sont simplement des versions orientales de la philosophie grecque.',
+          'La période hellénistique voit se développer plusieurs écoles qui font du mode de vie une question centrale. Les stoïciens, dont l’école est fondée par Zénon de Citium vers 300 avant notre ère, articulent logique, étude de la nature et éthique. Ils distinguent notamment ce qui dépend de nos jugements et de nos choix de ce qui ne dépend pas entièrement de nous. Les épicuriens recherchent une vie heureuse fondée sur la compréhension des désirs, l’amitié et la diminution des troubles. Les sceptiques examinent les raisons qui peuvent conduire à suspendre son jugement lorsque les arguments opposés semblent équilibrés. Ces écoles proposent des réponses différentes à une question commune : comment conduire sa vie avec discernement dans un monde incertain ?'
+        ],
+
+        example: {
+          statement: 'Un élève affirme : « Socrate et Aristote cherchent tous les deux à comprendre comment bien vivre ; ils défendent donc nécessairement la même philosophie. » Cette conclusion est-elle justifiée ?',
+          calculation: 'Il faut distinguer un objectif commun d’une identité doctrinale. On compare les questions étudiées, les méthodes employées et les réponses proposées, plutôt que de déduire une identité de pensée à partir d’un seul point commun.',
+          answer: 'Non. Socrate et Aristote s’intéressent tous deux à la vie bonne, mais ils ne travaillent pas exactement de la même manière et ne défendent pas nécessairement les mêmes thèses. Un thème commun ne suffit pas à établir une identité philosophique.'
+        },
+
+        exercise: {
+          question: 'Pourquoi ne peut-on pas attribuer l’origine de toute philosophie à un seul philosophe ou à une seule civilisation ?',
+          answer: 'Parce que plusieurs traditions de réflexion se sont développées dans différentes sociétés. Les sources disponibles ne permettent pas d’identifier un commencement universel unique, et les formes de pensée ne se sont pas toutes développées de la même manière.'
+        },
+
+        exercises: [
+          {
+            question: 'Quel philosophe grec est notamment connu pour examiner les définitions de la justice et de la vertu par le dialogue ?',
+            answer: 'Socrate, tel qu’il est principalement présenté dans les dialogues de Platon et dans d’autres témoignages antiques.'
+          },
+          {
+            question: 'Quelle différence générale peut-on établir entre Platon et Aristote concernant leur approche de la connaissance ?',
+            answer: 'Platon accorde une place importante aux réalités intelligibles dans plusieurs dialogues. Aristote étudie notamment les êtres concrets, leurs caractéristiques et leurs causes. Cette distinction générale ne résume pas à elle seule toute leur philosophie.'
+          },
+          {
+            question: 'Quelles sont les trois écoles hellénistiques abordées dans ce chapitre ?',
+            answer: 'Le stoïcisme, l’épicurisme et le scepticisme.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'World History Encyclopedia — Philosophie',
+            url: 'https://www.worldhistory.org/trans/fr/1-340/philosophie/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Ancient Theories of Soul',
+            url: 'https://plato.stanford.edu/entries/ancient-soul/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Stoicism',
+            url: 'https://plato.stanford.edu/entries/stoicism/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Chinese Philosophy: Overview of History',
+            url: 'https://iep.utm.edu/chinese-philosophy-overview-of-history/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'philosophie-antique-approfondie',
+      title: 'La philosophie antique : logique, connaissance, vertu et politique',
+      field: 'Antiquité · Philosophie grecque, hellénistique et romaine',
+      summary: 'Approfondir la logique aristotélicienne, la théorie platonicienne de la connaissance, les conceptions antiques de la vertu et les liens entre philosophie et citoyenneté.',
+
+      lesson: {
+        sections: [
+          'La philosophie antique contribue à organiser plusieurs domaines de réflexion qui demeurent importants aujourd’hui. La logique étudie les formes de raisonnement et les conditions dans lesquelles une conclusion découle de prémisses. Aristote développe notamment une théorie du syllogisme : dans un raisonnement valide, si les prémisses sont vraies, la conclusion ne peut pas être fausse. La validité logique ne garantit cependant pas que les prémisses soient effectivement vraies. Cette distinction permet de séparer la qualité formelle d’un raisonnement de la vérité des affirmations utilisées. Les philosophes antiques discutent également de la démonstration, de l’expérience, de l’opinion et des limites de la connaissance humaine.',
+          'Dans les dialogues de Platon, la connaissance est souvent distinguée de la simple opinion. Le dialogue Ménon examine notamment la possibilité de rechercher ce que l’on ne connaît pas encore, tandis que la République développe une réflexion sur l’éducation et la compréhension du juste. La distinction platonicienne entre le monde sensible et les réalités intelligibles occupe une place importante dans plusieurs interprétations de sa pensée. Il faut toutefois éviter de transformer tous ses dialogues en une doctrine uniforme : les personnages, les arguments et les conclusions diffèrent selon les œuvres. L’étude de Platon demande donc de replacer chaque argument dans son dialogue et de distinguer les propos d’un personnage de ce que l’on peut attribuer avec certitude à l’auteur.',
+          'Aristote définit la vertu morale comme une disposition acquise qui concerne les choix et qui se situe, dans de nombreux cas, entre deux formes d’excès. Le courage, par exemple, ne correspond ni à une peur paralysante ni à une témérité sans discernement. Le juste milieu n’est pas une moyenne mathématique applicable mécaniquement à toutes les situations : il dépend des circonstances et d’un jugement pratique approprié. Dans l’Éthique à Nicomaque, la réflexion sur la vertu est liée à la finalité de la vie humaine et à l’exercice de la raison. La formation morale suppose ainsi des habitudes, une éducation et une capacité à délibérer, plutôt que la simple mémorisation de règles.',
+          'La philosophie politique antique interroge les formes de gouvernement, la justice et la relation entre l’individu et la communauté. Dans la République, Platon analyse la justice dans la cité et dans l’âme. Dans la Politique, Aristote examine différentes constitutions et s’intéresse à la vie collective. Leurs analyses prennent place dans des sociétés anciennes où la citoyenneté était limitée et où l’esclavage existait : leurs conceptions historiques ne doivent donc pas être confondues avec les principes contemporains d’égalité politique. L’étude de ces textes permet à la fois de comprendre des notions fondamentales et d’évaluer de manière critique les limites des sociétés dans lesquelles elles ont été formulées.',
+          'Les écoles hellénistiques et romaines prolongent ces débats en accordant une place particulière à la pratique. Le stoïcisme affirme que la qualité morale de nos choix importe davantage que la possession de biens extérieurs. L’épicurisme ne recommande pas la recherche illimitée des plaisirs : il distingue les désirs, réfléchit à leurs conséquences et valorise une vie mesurée. Le scepticisme examine les limites de nos raisons de croire et peut conduire à suspendre son jugement. Ces écoles ne partagent ni les mêmes théories de la nature ni les mêmes conceptions du bonheur. Leur comparaison montre qu’une question philosophique importante peut recevoir plusieurs réponses argumentées.'
+        ],
+
+        example: {
+          statement: 'Tous les êtres humains sont mortels. Socrate est un être humain. Quelle conclusion découle de ces deux prémisses ?',
+          calculation: 'Prémisse 1 : tous les êtres humains sont mortels. Prémisse 2 : Socrate est un être humain. La seconde prémisse permet d’appliquer à Socrate la propriété énoncée dans la première.',
+          answer: 'Socrate est mortel. Le raisonnement est valide : si les deux prémisses sont vraies, la conclusion l’est nécessairement.'
+        },
+
+        exercise: {
+          question: 'Pourquoi la validité logique d’un raisonnement ne suffit-elle pas à garantir la vérité de sa conclusion dans tous les cas ?',
+          answer: 'Un raisonnement valide peut partir de prémisses fausses. La validité indique que la conclusion suit logiquement des prémisses ; elle ne prouve pas, à elle seule, que ces prémisses décrivent correctement la réalité.'
+        },
+
+        exercises: [
+          {
+            question: 'Quel est le rôle de la logique dans un raisonnement ?',
+            answer: 'Elle permet d’examiner les relations entre les prémisses et la conclusion, ainsi que la validité des inférences.'
+          },
+          {
+            question: 'Que signifie le juste milieu chez Aristote ?',
+            answer: 'Il désigne une disposition vertueuse ajustée aux circonstances, située entre des excès opposés dans de nombreux cas. Il ne s’agit pas d’une moyenne numérique.'
+          },
+          {
+            question: 'L’épicurisme recommande-t-il de satisfaire sans limite tous les désirs ?',
+            answer: 'Non. Il propose de réfléchir aux désirs et à leurs conséquences, et privilégie une vie mesurée qui réduit les troubles.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'World History Encyclopedia — Philosophie',
+            url: 'https://www.worldhistory.org/trans/fr/1-340/philosophie/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Aristotle',
+            url: 'https://plato.stanford.edu/entries/aristotle/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Stoicism',
+            url: 'https://plato.stanford.edu/entries/stoicism/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'philosophie-medievale',
+      title: 'La philosophie médiévale : raison, foi et transmission du savoir',
+      field: 'Moyen Âge · Environ Ve-XVe siècles, avec des chronologies différentes selon les régions',
+      summary: 'Étudier les traditions philosophiques chrétiennes, musulmanes et juives, les traductions des textes antiques et les débats sur la raison, la connaissance et l’existence de Dieu.',
+
+      lesson: {
+        sections: [
+          'La philosophie médiévale ne constitue pas une tradition unique. Elle comprend notamment des courants grecs, latins, arabophones et juifs, qui se développent dans des contextes intellectuels et religieux différents. Les frontières chronologiques du Moyen Âge sont conventionnelles et varient selon les régions. Les philosophes héritent de textes antiques, les traduisent, les commentent et les critiquent. La transmission du savoir passe par des centres d’étude, des bibliothèques, des communautés religieuses et des réseaux de traduction. Les rapports entre philosophie et religion ne sont pas uniformes : certains penseurs cherchent à montrer leur compatibilité, tandis que d’autres discutent leurs domaines respectifs et les limites de la démonstration rationnelle.',
+          'Dans la tradition chrétienne latine, Augustin d’Hippone, qui vécut de 354 à 430, reprend et transforme plusieurs thèmes du platonisme. Il examine notamment le temps, la mémoire, la volonté, le mal et les rapports entre la connaissance humaine et Dieu. Au XIIIe siècle, Thomas d’Aquin mobilise largement la philosophie d’Aristote dans une réflexion théologique systématique. Il distingue des vérités accessibles à la raison de vérités relevant de la révélation, tout en soutenant que la vérité ne peut être réellement contradictoire avec elle-même. Ses arguments sur l’existence de Dieu reposent sur des analyses métaphysiques de la causalité, du mouvement et de la contingence. Leur validité et leurs présupposés restent discutés dans la philosophie ultérieure.',
+          'Dans le monde islamique médiéval, des penseurs comme Al-Farabi, Avicenne et Averroès étudient la logique, la métaphysique, la médecine, la connaissance et la politique. Avicenne développe notamment une analyse de l’existence et de la distinction entre essence et existence dans les êtres contingents. Averroès rédige des commentaires importants sur Aristote et défend la valeur de l’enquête philosophique. Ces penseurs ne représentent pas une position unique et leurs œuvres suscitent des débats entre philosophes, théologiens et juristes. Les traductions et les commentaires circulent ensuite entre différentes régions et contribuent aux discussions intellectuelles en Europe médiévale.',
+          'La philosophie juive médiévale participe elle aussi à ces échanges. Maïmonide, au XIIe siècle, cherche à articuler l’interprétation de la tradition religieuse, la philosophie aristotélicienne et une réflexion rigoureuse sur le langage employé à propos de Dieu. Il met notamment en garde contre l’attribution naïve de caractéristiques humaines à la divinité. La diversité des traditions médiévales montre que les questions philosophiques sont souvent abordées dans plusieurs langues et cadres religieux. Elle invite à éviter une histoire limitée à l’Europe chrétienne et à reconnaître la pluralité des réseaux de transmission et de critique.',
+          'Les universités médiévales contribuent progressivement à structurer l’enseignement de la logique, de la philosophie naturelle et de la théologie. La méthode scolastique utilise fréquemment la formulation d’une question, l’examen d’objections, la présentation d’arguments et la formulation d’une réponse. Elle ne consiste pas simplement à répéter des autorités : elle peut servir à préciser les concepts et à confronter des arguments. Les penseurs médiévaux discutent aussi de l’universalité des concepts, du statut des individus, de la causalité et de la connaissance. Leur héritage nourrit la philosophie ultérieure, même lorsque des auteurs modernes contestent certaines de leurs conclusions.'
+        ],
+
+        example: {
+          statement: 'Un philosophe médiéval examine un argument sur l’existence de Dieu et en étudie les prémisses. Est-il nécessairement en train de remplacer la foi par la raison ?',
+          calculation: 'Il faut distinguer l’utilisation de la raison pour examiner un argument et l’affirmation selon laquelle la raison serait la seule source de toute connaissance. Le fait d’évaluer des prémisses ne détermine pas à lui seul la position générale du philosophe.',
+          answer: 'Non. De nombreux penseurs médiévaux cherchent à articuler raison et foi, mais leurs positions diffèrent. L’analyse rationnelle d’un argument ne signifie pas nécessairement le rejet de la foi.'
+        },
+
+        exercise: {
+          question: 'Pourquoi est-il inexact de réduire la philosophie médiévale à la seule pensée chrétienne d’Europe occidentale ?',
+          answer: 'Parce que des traditions philosophiques grecques, latines, arabophones et juives ont participé à son développement. Elles ont échangé, traduit et critiqué des idées dans des contextes différents.'
+        },
+
+        exercises: [
+          {
+            question: 'Quel philosophe chrétien médiéval a largement mobilisé la pensée d’Aristote dans son œuvre ?',
+            answer: 'Thomas d’Aquin, notamment dans sa synthèse philosophique et théologique du XIIIe siècle.'
+          },
+          {
+            question: 'Quel rôle Avicenne a-t-il joué dans l’histoire de la philosophie ?',
+            answer: 'Il a développé des travaux majeurs en métaphysique, en logique et dans d’autres disciplines, notamment une analyse de la distinction entre essence et existence.'
+          },
+          {
+            question: 'Qu’est-ce que la méthode scolastique ?',
+            answer: 'Une méthode de discussion structurée qui formule des questions, examine des objections et des arguments, puis développe une réponse raisonnée.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Medieval Philosophy',
+            url: 'https://plato.stanford.edu/entries/medieval-philosophy/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Avicenna',
+            url: 'https://plato.stanford.edu/entries/ibn-sina/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Maimonides',
+            url: 'https://plato.stanford.edu/entries/maimonides/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'renaissance-philosophie-moderne',
+      title: 'Renaissance et philosophie moderne : méthode, science et connaissance',
+      field: 'XVe-XVIIe siècles · Humanisme, révolution scientifique et rationalisme',
+      summary: 'Comprendre les transformations intellectuelles de la Renaissance, l’essor de la méthode scientifique et les nouvelles théories de la connaissance chez Descartes, Spinoza, Leibniz et les empiristes.',
+
+      lesson: {
+        sections: [
+          'La Renaissance européenne est marquée par le renouvellement des études antiques, le développement de l’imprimerie, les échanges savants et les transformations des connaissances sur la nature. Elle ne constitue pas une rupture instantanée avec le Moyen Âge : plusieurs méthodes et institutions anciennes persistent, tandis que de nouvelles pratiques se développent. L’humanisme encourage notamment l’étude critique des textes et des langues. Les débats sur la dignité humaine, l’éducation, la politique et la religion accompagnent des changements culturels importants. Dans les sciences, l’observation, la mesure, les modèles mathématiques et l’expérimentation acquièrent une place croissante, sans suivre partout un processus uniforme.',
+          'Au XVIIe siècle, René Descartes cherche une méthode permettant d’établir des connaissances suffisamment justifiées. Dans le Discours de la méthode, publié en 1637, et les Méditations métaphysiques, publiées en 1641, il examine la possibilité de mettre provisoirement en doute certaines croyances. Le doute méthodique n’est pas un simple refus de toute connaissance : il vise à identifier un point de départ qui résiste au doute. Descartes formule alors le célèbre argument du cogito, selon lequel l’acte même de penser atteste l’existence du sujet pensant au moment où il pense. Il défend aussi une distinction entre l’esprit et le corps, qui soulève le problème de leur relation.',
+          'Le rationalisme moderne accorde une place centrale à la raison dans la construction du savoir. Baruch Spinoza développe une philosophie systématique de la substance, de la nature, de l’esprit et de la liberté. Gottfried Wilhelm Leibniz défend notamment une théorie des monades et réfléchit aux principes de raison suffisante et de non-contradiction. Ces auteurs ne partagent pas exactement la même conception de Dieu, de la nature ou de la connaissance. Le rationalisme ne signifie donc pas simplement que les sens sont inutiles ; il désigne plutôt différentes manières de soutenir que la raison joue un rôle essentiel dans l’explication et la justification de certaines connaissances.',
+          'Les empiristes britanniques, notamment John Locke, George Berkeley et David Hume, accordent une importance particulière à l’expérience dans l’analyse des idées et des connaissances. Locke examine l’origine et les limites des idées humaines. Berkeley critique l’idée d’une matière existant indépendamment de toute perception, tandis que Hume étudie la causalité, l’induction, les passions et les limites de la raison. Hume souligne notamment que l’observation de la succession de deux événements ne donne pas directement accès à une nécessité causale observable. L’empirisme n’est pas une doctrine identique chez tous ces auteurs, mais une famille de positions qui interrogent les sources de nos idées et les limites de ce que nous pouvons justifier.',
+          'La philosophie moderne transforme aussi les débats sur la politique, la tolérance et l’autorité. Thomas Hobbes analyse l’ordre politique à partir d’une conception de la condition humaine et de la nécessité d’une autorité commune. John Locke défend des thèses importantes sur les droits, le gouvernement et le consentement. Ces auteurs divergent sur la nature du pouvoir légitime et sur les conditions dans lesquelles une société politique peut être organisée. Il faut enfin rappeler que les expressions « rationalisme » et « empirisme » sont des catégories historiographiques utiles, mais simplificatrices : les philosophes classés dans chaque courant peuvent accorder une place à la raison et à l’expérience, tout en s’opposant sur des questions fondamentales.'
+        ],
+
+        example: {
+          statement: 'Descartes doute provisoirement de certaines croyances. Peut-on conclure qu’il considère que toute connaissance est impossible ?',
+          calculation: 'On distingue le doute utilisé comme méthode d’examen et la conclusion sceptique selon laquelle aucune connaissance ne serait possible. Il faut examiner le but de la démarche cartésienne et le rôle du cogito dans son argumentation.',
+          answer: 'Non. Descartes utilise le doute méthodique pour rechercher un fondement certain à la connaissance. Il ne présente pas cette démarche comme une démonstration définitive de l’impossibilité de connaître.'
+        },
+
+        exercise: {
+          question: 'Quelle différence générale distingue le rationalisme de l’empirisme dans les débats modernes sur la connaissance ?',
+          answer: 'Le rationalisme souligne le rôle fondamental de la raison dans la justification de certaines connaissances. L’empirisme insiste sur le rôle de l’expérience dans la formation et l’évaluation des idées. Ces catégories regroupent toutefois des positions diverses.'
+        },
+
+        exercises: [
+          {
+            question: 'Dans quelle œuvre de 1637 Descartes présente-t-il sa méthode philosophique ?',
+            answer: 'Le Discours de la méthode.'
+          },
+          {
+            question: 'Que cherche à établir le cogito cartésien ?',
+            answer: 'Que l’existence du sujet pensant ne peut pas être niée au moment même où il pense.'
+          },
+          {
+            question: 'Pourquoi Hume est-il important dans les débats sur la causalité ?',
+            answer: 'Parce qu’il analyse les limites de ce que l’expérience permet de justifier au sujet de la connexion causale et de l’induction.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Stanford Encyclopedia of Philosophy — René Descartes',
+            url: 'https://plato.stanford.edu/entries/descartes/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — John Locke',
+            url: 'https://plato.stanford.edu/entries/locke/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — David Hume',
+            url: 'https://plato.stanford.edu/entries/hume/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Spinoza',
+            url: 'https://plato.stanford.edu/entries/spinoza/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'lumieres-philosophie-politique',
+      title: 'Les Lumières et la philosophie politique : liberté, raison et droits',
+      field: 'XVIIIe siècle · Philosophie des Lumières et transformations politiques modernes',
+      summary: 'Étudier la critique de l’autorité, la liberté de conscience, les droits, la souveraineté, le contrat social et les fondements de la morale chez Rousseau, Montesquieu, Voltaire et Kant.',
+
+      lesson: {
+        sections: [
+          'Le mouvement des Lumières regroupe des auteurs et des courants variés qui accordent une place importante à l’examen critique des croyances, des institutions et des formes d’autorité. Il ne s’agit ni d’une école parfaitement unifiée ni d’un mouvement identique dans tous les pays. Les philosophes discutent de l’éducation, de la religion, des sciences, du droit, de l’économie et de l’organisation politique. Plusieurs défendent la liberté de discussion et la lutte contre l’arbitraire, mais ils ne s’accordent pas sur toutes les questions de morale ou de gouvernement. Leur héritage doit être étudié dans le contexte des sociétés de l’époque, qui demeuraient marquées par des hiérarchies sociales et des exclusions politiques.',
+          'Montesquieu, dans De l’esprit des lois, publié en 1748, étudie les rapports entre les lois, les institutions et les conditions historiques des sociétés. Il défend notamment une organisation du pouvoir qui évite sa concentration excessive. Voltaire critique l’intolérance et certains abus judiciaires et religieux, tout en intervenant dans les controverses de son temps. Leurs méthodes et leurs objectifs ne sont pas identiques : Montesquieu développe une analyse comparative des institutions, tandis que Voltaire recourt fréquemment à la polémique et à l’intervention publique. Ces auteurs participent à une réflexion plus large sur les conditions de la liberté et sur les limites de l’autorité.',
+          'Jean-Jacques Rousseau examine l’inégalité, l’éducation et la légitimité politique. Dans Du contrat social, publié en 1762, il cherche à comprendre comment une association politique peut préserver la liberté tout en établissant une autorité commune. Sa notion de volonté générale ne doit pas être assimilée sans précaution à la simple addition des préférences individuelles ou à toute décision prise par une majorité. Elle désigne, dans son argumentation, l’orientation de la communauté vers ce qui est commun à ses membres en tant que citoyens. L’interprétation de cette notion, notamment ses conséquences pour la liberté individuelle, fait l’objet de débats importants.',
+          'Emmanuel Kant transforme la réflexion sur la connaissance et la morale. Dans la Critique de la raison pure, publiée en 1781 puis remaniée en 1787, il examine les conditions qui rendent possible l’expérience et les limites de la connaissance humaine. Dans les Fondements de la métaphysique des mœurs, publiés en 1785, il soutient que la morale doit être fondée sur des principes rationnels qui peuvent être universalisés. Son impératif catégorique invite notamment à examiner si la maxime d’une action peut être voulue comme loi universelle et à traiter l’humanité comme une fin, jamais simplement comme un moyen. Ces formulations sont liées à une théorie exigeante de l’autonomie morale et nécessitent une interprétation précise.',
+          'Les Lumières contribuent à l’histoire des droits et des institutions modernes, mais leurs auteurs ne défendent pas tous une conception identique de l’égalité. Certains textes de l’époque coexistent avec des sociétés esclavagistes, des restrictions de citoyenneté et des conceptions inégalitaires des sexes. Des penseuses comme Mary Wollstonecraft critiquent l’exclusion des femmes de l’éducation et de la citoyenneté. Il est donc essentiel de distinguer les principes généraux proclamés, les institutions effectivement mises en place et les personnes qui en sont exclues. Cette tension historique nourrit encore les discussions sur la portée universelle des droits et sur la cohérence entre les idéaux politiques et leur application.'
+        ],
+
+        example: {
+          statement: 'Une règle autorise une personne à mentir dès que cela lui procure un avantage. Comment une approche kantienne examinerait-elle cette règle ?',
+          calculation: 'Il faut formuler la maxime de l’action, puis se demander si elle peut être universalisée sans contradiction et si elle respecte les personnes comme des fins. L’analyse porte sur le principe de l’action, pas uniquement sur son résultat favorable pour l’agent.',
+          answer: 'Une approche kantienne mettrait en question une maxime autorisant le mensonge opportuniste, car sa généralisation menace les conditions de confiance nécessaires à la pratique de la promesse et de la communication. L’application précise de l’argument dépend de la formulation de la maxime et de l’analyse retenue.'
+        },
+
+        exercise: {
+          question: 'Pourquoi faut-il distinguer la volonté générale de la simple addition des préférences individuelles chez Rousseau ?',
+          answer: 'Parce que la volonté générale concerne, dans la théorie de Rousseau, ce qui est commun aux citoyens et l’intérêt collectif. Elle ne se réduit pas à l’addition mécanique des intérêts particuliers.'
+        },
+
+        exercises: [
+          {
+            question: 'Quel ouvrage de Montesquieu étudie notamment les lois et les institutions politiques ?',
+            answer: 'De l’esprit des lois, publié en 1748.'
+          },
+          {
+            question: 'Quel problème Rousseau examine-t-il dans Du contrat social ?',
+            answer: 'Comment concevoir une association politique légitime qui permette aux individus de vivre sous des lois communes tout en préservant leur liberté politique.'
+          },
+          {
+            question: 'Que signifie l’autonomie morale dans la philosophie de Kant ?',
+            answer: 'Elle désigne la capacité de la volonté rationnelle à se déterminer selon des principes moraux, plutôt que de dépendre uniquement de désirs ou d’intérêts particuliers.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Immanuel Kant',
+            url: 'https://plato.stanford.edu/entries/kant/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Jean-Jacques Rousseau',
+            url: 'https://plato.stanford.edu/entries/rousseau/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Montesquieu',
+            url: 'https://plato.stanford.edu/entries/montesquieu/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Mary Wollstonecraft',
+            url: 'https://plato.stanford.edu/entries/wollstonecraft/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'philosophie-contemporaine',
+      title: 'Du XIXe siècle à nos jours : existence, société, langage et responsabilité',
+      field: 'XIXe-XXIe siècles · Philosophie contemporaine et diversité des courants',
+      summary: 'Découvrir les critiques de la modernité, la dialectique, le matérialisme historique, l’existentialisme, la phénoménologie, la philosophie analytique et les débats contemporains sur la justice et les techniques.',
+
+      lesson: {
+        sections: [
+          'Au XIXe siècle, la philosophie se transforme au contact des révolutions politiques, de l’industrialisation, des sciences et de nouvelles conceptions de l’histoire. Georg Wilhelm Friedrich Hegel développe une philosophie systématique dans laquelle les contradictions et les transformations historiques jouent un rôle central. Karl Marx reprend de manière critique certains éléments de la philosophie allemande et analyse les rapports entre production, classes sociales, institutions et idéologie. Sa pensée ne se limite pas à une théorie économique : elle comporte aussi une critique des rapports sociaux et de l’aliénation. Les interprétations de Hegel et de Marx sont nombreuses, et il serait réducteur de résumer leurs travaux à une seule formule ou à une doctrine politique unique.',
+          'Friedrich Nietzsche critique plusieurs valeurs morales et traditions métaphysiques de la culture européenne. Il étudie notamment la généalogie des valeurs, le ressentiment, les rapports entre connaissance et interprétation, et la possibilité de réévaluer les normes héritées. Ses écrits utilisent des formes variées, notamment l’aphorisme et la polémique, ce qui rend leur interprétation particulièrement discutée. Il ne suffit donc pas de citer une formule célèbre pour établir sa position complète sur la morale, la religion ou la société. La lecture de Nietzsche exige de replacer les passages dans leur contexte et de distinguer ses analyses historiques des prescriptions que certains lecteurs lui attribuent.',
+          'Au XXe siècle, la phénoménologie, associée notamment à Edmund Husserl, cherche à décrire les structures de l’expérience et la manière dont les choses apparaissent à la conscience. Martin Heidegger transforme cette enquête en une réflexion sur l’existence humaine, le monde et la question de l’être. L’existentialisme, associé à des penseurs comme Jean-Paul Sartre et Simone de Beauvoir, examine la liberté, la responsabilité, les relations avec autrui et les conditions historiques de l’existence. Ces auteurs ne partagent pas tous les mêmes thèses. Beauvoir, en particulier, analyse la construction sociale de la condition des femmes et la manière dont les rapports sociaux limitent ou façonnent les possibilités de liberté.',
+          'La philosophie analytique se développe notamment autour de l’analyse logique, du langage et des arguments. Bertrand Russell, Ludwig Wittgenstein et d’autres philosophes interrogent la signification, la référence, les règles du langage et les rapports entre pensée et réalité. Les travaux ultérieurs en philosophie du langage, de l’esprit et des sciences étendent ces questionnements. Il ne faut toutefois pas opposer de manière absolue la philosophie analytique à toute la philosophie dite continentale : ces catégories historiques recouvrent des traditions variées et des échanges nombreux. Les méthodes diffèrent selon les auteurs et les problèmes examinés.',
+          'La philosophie contemporaine aborde des questions de justice sociale, d’éthique appliquée, de démocratie, d’environnement, de médecine, d’intelligence artificielle et de responsabilité collective. John Rawls, par exemple, propose une théorie de la justice qui utilise une situation hypothétique de choix pour examiner des principes équitables d’organisation sociale. D’autres philosophes critiquent certaines limites des théories libérales, en insistant sur les rapports de pouvoir, les identités, les inégalités ou les obligations envers les générations futures. En éthique des techniques, les questions portent notamment sur la responsabilité des concepteurs, la protection des personnes, la transparence et les conséquences sociales. Il n’existe pas de réponse philosophique universellement admise à ces problèmes : la démarche consiste à clarifier les concepts, à examiner les arguments et à évaluer les conséquences.'
+        ],
+
+        example: {
+          statement: 'Une technologie est efficace, mais son utilisation risque de porter atteinte à la vie privée de certaines personnes. Le seul fait qu’elle fonctionne suffit-il à la justifier moralement ?',
+          calculation: 'Il faut distinguer l’efficacité technique de la justification morale. On examine les bénéfices, les risques, les droits concernés, les personnes affectées, les solutions alternatives et la répartition des conséquences.',
+          answer: 'Non. L’efficacité technique ne suffit pas à justifier moralement une technologie. Il faut aussi évaluer ses conséquences, le respect des droits, les risques et les responsabilités des acteurs concernés.'
+        },
+
+        exercise: {
+          question: 'Pourquoi la philosophie contemporaine ne peut-elle pas être réduite à un seul courant de pensée ?',
+          answer: 'Parce qu’elle rassemble des traditions et des méthodes différentes, qui abordent des problèmes variés et défendent parfois des positions opposées. Les débats contemporains concernent notamment le langage, l’existence, la justice, les sciences, les techniques et l’environnement.'
+        },
+
+        exercises: [
+          {
+            question: 'Quel thème occupe une place importante dans la critique sociale de Karl Marx ?',
+            answer: 'L’analyse des rapports de production, des classes sociales et des formes d’aliénation dans les sociétés.'
+          },
+          {
+            question: 'Quelle question générale la phénoménologie cherche-t-elle notamment à examiner ?',
+            answer: 'La manière dont les phénomènes apparaissent dans l’expérience et les structures de cette expérience.'
+          },
+          {
+            question: 'Pourquoi l’efficacité d’une technologie ne suffit-elle pas à démontrer qu’elle est moralement acceptable ?',
+            answer: 'Parce que son évaluation morale implique également les droits, les risques, les conséquences, les responsabilités et la manière dont les bénéfices et les préjudices sont répartis.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Hegel',
+            url: 'https://plato.stanford.edu/entries/hegel/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Karl Marx',
+            url: 'https://plato.stanford.edu/entries/marx/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Friedrich Nietzsche',
+            url: 'https://plato.stanford.edu/entries/nietzsche/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Phenomenology',
+            url: 'https://plato.stanford.edu/entries/phenomenology/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Existentialism',
+            url: 'https://plato.stanford.edu/entries/existentialism/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — John Rawls',
+            url: 'https://plato.stanford.edu/entries/rawls/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
 ];
+
