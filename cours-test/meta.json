@@ -4,6 +4,6 @@
   "description": "Histoire...",
   "order": 11,
   "entry": "index.html",
-  "dataFile": "histoire-data.js",
+  "dataFile": "test-data.js",
   "class": ""
 }
