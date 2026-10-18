@@ -2629,5 +2629,401 @@ window.courseCatalog = [
     ]
   },
 
+// BRANCHE — HISTOIRE DE L’ÉCRITURE
+
+  {
+    id: 'histoire-ecriture',
+    sortYear: -3500,
+    title: 'Histoire de l’écriture',
+    note: 'Neuf chapitres sur l’invention de l’écriture en Mésopotamie, son déchiffrement, les hiéroglyphes égyptiens, l’écriture chinoise, la naissance de l’alphabet, l’écriture maya et l’imprimerie. Les dates sont approximatives, les sources n’emploient pas toujours les mêmes repères et certaines origines restent débattues.',
+    chapters: [
+      {
+        id: 'invention-ecriture-uruk',
+        title: 'L’invention de l’écriture en Mésopotamie : Uruk et la comptabilité',
+        field: 'Mésopotamie · Fin du IVe millénaire av. J.-C.',
+        summary: 'Comprendre pourquoi les premiers signes écrits sont nés dans l’administration des grandes cités et comment le principe du rébus a permis de noter des sons.',
+        lesson: {
+          sections: [
+            'Dans le sud de la Mésopotamie, la seconde moitié du IVe millénaire av. J.-C. voit une très forte augmentation du nombre de sites habités. Selon le Metropolitan Museum of Art, la ville d’Uruk dépasse alors tous les autres centres urbains : elle couvre environ 250 hectares et a été qualifiée de « première ville de l’histoire du monde ». Elle est dominée par de grands domaines liés aux temples, qui ont besoin de comptabiliser et de distribuer des revenus. C’est ce besoin qui conduit à enregistrer des données économiques sur des tablettes d’argile.',
+            'Les plus anciens signes sont des pictogrammes tracés avec un roseau ou un bâtonnet dans l’argile humide. Certains représentent des denrées à compter, comme des céréales, des poissons ou divers animaux. On connaît aujourd’hui environ 6 000 tablettes proto-cunéiformes, qui totalisent plus de 38 000 lignes de texte, dans les zones associées à la culture d’Uruk. L’argile s’est imposée parce qu’elle était abondante, peu coûteuse et durable par rapport à d’autres supports. Un des plus anciens textes d’Uruk est une liste de 120 fonctionnaires, dont le chef de la cité.',
+            'Un progrès décisif survient lorsqu’un signe ne représente plus seulement l’objet dessiné, mais aussi un son ou un groupe de sons : c’est le principe du rébus. Le Met donne un exemple moderne : en anglais, le dessin d’un œil peut noter à la fois « eye » (œil) et le pronom « I », qui se prononcent de la même façon. Les premiers usages du rébus datent d’entre 3200 et 3000 av. J.-C. ; son emploi systématique n’apparaît nettement qu’après 2600 av. J.-C. Vers le milieu du IIIe millénaire, le cunéiforme est employé pour des documents économiques, religieux, politiques, littéraires et savants.',
+            'Les datations varient selon les sources. World History Encyclopedia situe les débuts du cunéiforme vers 3600/3500 av. J.-C. et son développement à Uruk vers 3200 av. J.-C., alors que les tablettes proto-cunéiformes de la collection du Met sont datées d’environ 3100–2900 av. J.-C. Le Met précise aussi que l’identification des tablettes d’Uruk avec les Sumériens est la théorie la plus répandue, mais qu’elle n’est pas unanimement acceptée. Enfin, des recherches récentes suggèrent que des systèmes proto-cunéiformes ont pu exister en Syrie et en Turquie dès le milieu du IVe millénaire, hypothèse que de nouvelles fouilles devront confirmer.'
+          ],
+          example: {
+            statement: 'Selon le Met, les premiers exemples de rébus apparaissent dès 3200 av. J.-C. et son usage systématique n’est net qu’après 2600 av. J.-C. Combien d’années séparent ces deux repères ?',
+            calculation: 'Les deux dates sont avant notre ère : le nombre le plus grand est le plus ancien, et on soustrait directement : 3200 − 2600 = 600.',
+            answer: 'Environ 600 ans. Ce sont des repères approximatifs, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi les premières écritures sont-elles liées à l’administration ?',
+            answer: 'Parce que les grands domaines de temples d’Uruk devaient compter et distribuer des biens : l’écriture a d’abord servi d’outil de comptabilité.'
+          },
+          exercises: [
+            {
+              question: 'Qu’est-ce que le principe du rébus ?',
+              answer: 'Un signe note non seulement l’objet qu’il représente, mais aussi un son ou un groupe de sons, ce qui permet d’écrire des noms, des verbes et des idées abstraites.'
+            },
+            {
+              question: 'Pourquoi l’argile est-elle devenue le support privilégié des premiers scribes mésopotamiens ?',
+              answer: 'Elle était abondante, peu coûteuse et durable par rapport à d’autres supports.'
+            },
+            {
+              question: 'Pourquoi les dates données pour les débuts du cunéiforme diffèrent-elles selon les sources ?',
+              answer: 'Parce que ce sont des estimations : les sources retiennent des repères différents, et le Met rappelle que de nouvelles fouilles pourraient modifier le tableau.'
+            }
+          ],
+          sources: [
+            { title: 'The Metropolitan Museum of Art — The Origins of Writing (Ira Spar)', url: 'https://www.metmuseum.org/essays/the-origins-of-writing' },
+            { title: 'World History Encyclopedia — Cuneiform', url: 'https://www.worldhistory.org/cuneiform/' }
+          ]
+        }
+      },
+      {
+        id: 'cuneiforme-ecoles-litterature',
+        title: 'Le cunéiforme : écoles de scribes, langues et littérature',
+        field: 'Mésopotamie · Vers 2900 av. J.-C. – après 100 av. J.-C.',
+        summary: 'Comprendre comment le cunéiforme s’est enrichi, a été enseigné dans les écoles de scribes et a servi à écrire plusieurs langues et des textes littéraires.',
+        lesson: {
+          sections: [
+            'Le mot « cunéiforme » vient du latin cuneus, « coin » : un stylet taillé est enfoncé dans l’argile molle et laisse des empreintes en forme de coin. Le Met précise que ce terme a été donné par des savants du XIXe siècle. D’après World History Encyclopedia (WHE), les pictogrammes sont remplacés par des phonogrammes à Uruk vers 3200 av. J.-C., et l’écriture gagne en complexité à l’époque des dynasties archaïques (vers 2900 – vers 2350/2334 av. J.-C.). Toujours selon WHE, le nombre de signes aurait été ramené de plus de 1 000 à environ 600 pour simplifier l’écriture.',
+            'Les premières tablettes sont administratives : listes de fournitures, reçus, comptes de transactions. Le spécialiste Jeremy Black, cité par WHE, souligne que pendant des siècles l’écriture a eu une fonction exclusivement administrative, au service des comptables et des fonctionnaires plutôt que de la grande littérature. Paul Kriwaczek donne un exemple : une note du type « deux moutons, temple, dieu Inanna » ne dit pas si les moutons sont livrés au temple ou reçus de lui, ni s’ils sont vivants ou morts. Pour exprimer ces relations, l’écriture a dû se perfectionner.',
+            'Selon WHE, des écoles de scribes, les edubba (« maisons des tablettes »), apparaissent pendant la période des dynasties archaïques. D’abord installées dans des maisons privées, elles occupent ensuite des bâtiments spécialement destinés à l’enseignement, avec un programme standardisé. Les garçons de famille aisée (parfois des filles) y entraient vers huit ans pour des études d’environ douze ans. Les élèves apprenaient d’abord à tracer les différents types de traits en coin, puis des signes, des mots et des phrases, tout en étudiant les mathématiques, la comptabilité, l’histoire et la religion. Samuel Noah Kramer note que l’enseignement reposait sur des listes de mots classés par thèmes (arbres, animaux, pays, villes, pierres) que les élèves devaient mémoriser et copier.',
+            'Le cunéiforme n’a pas servi à une seule langue. WHE cite parmi les langues qui l’ont utilisé le sumérien, l’akkadien, l’élamite, le hittite et le hourrite, entre autres. Selon la même source, il a été abandonné au profit de l’écriture alphabétique à un moment situé après 100 av. J.-C.',
+            'Dans la chronologie de WHE, la prêtresse-poétesse Enheduanna (vers 2300 av. J.-C.), fille de Sargon d’Akkad, est présentée comme la première autrice connue par son nom. Les récits qui ont nourri l’Épopée de Gilgamesh sont datés d’environ 2100 à 1400 av. J.-C., et une vaste collection de tablettes, la bibliothèque d’Assurbanipal à Ninive, est constituée vers 647–629 av. J.-C. Ces textes montrent que le cunéiforme pouvait exprimer bien plus que des comptes : hymnes, mythes, récits et textes savants.'
+          ],
+          example: {
+            statement: 'Selon WHE, un élève entre à l’edubba vers 8 ans et y étudie pendant environ douze ans. À quel âge termine-t-il approximativement ses études ?',
+            calculation: 'On additionne l’âge d’entrée et la durée des études : 8 + 12 = 20.',
+            answer: 'Vers 20 ans. Il s’agit d’un ordre de grandeur donné par WHE, pas d’une règle valable pour tous les lieux et toutes les époques.'
+          },
+          exercise: {
+            question: 'Que signifie edubba ?',
+            answer: 'Maison des tablettes : c’est le nom de l’école de scribes en Mésopotamie.'
+          },
+          exercises: [
+            {
+              question: 'D’où vient le mot « cunéiforme » ?',
+              answer: 'Du latin cuneus, « coin », à cause de la forme des empreintes laissées par le stylet dans l’argile.'
+            },
+            {
+              question: 'Pourquoi une note « deux moutons, temple, dieu Inanna » est-elle insuffisante, selon Kriwaczek ?',
+              answer: 'Elle ne précise pas si les moutons sont livrés au temple ou reçus de lui, ni leur état.'
+            },
+            {
+              question: 'Quelle fonction l’écriture a-t-elle eue pendant les premiers siècles, selon Jeremy Black ?',
+              answer: 'Une fonction exclusivement administrative : aider les comptables et les fonctionnaires.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Cuneiform', url: 'https://www.worldhistory.org/cuneiform/' },
+            { title: 'The Metropolitan Museum of Art — The Origins of Writing (Ira Spar)', url: 'https://www.metmuseum.org/essays/the-origins-of-writing' }
+          ]
+        }
+      },
+      {
+        id: 'dechiffrement-cuneiforme',
+        title: 'Le déchiffrement du cunéiforme au XIXe siècle',
+        field: 'Proche-Orient ancien · XIXe siècle',
+        summary: 'Comprendre comment plusieurs savants ont rendu lisibles les tablettes cunéiformes et comment ces lectures ont renouvelé la connaissance de l’Antiquité.',
+        lesson: {
+          sections: [
+            'Selon World History Encyclopedia (WHE), la découverte et le déchiffrement des tablettes cunéiformes au XIXe siècle ont profondément transformé la compréhension de l’histoire. Avant cela, la Bible était considérée comme le plus ancien livre et l’on ne savait rien de la civilisation sumérienne. Les grandes œuvres littéraires de Mésopotamie, comme Atrahasis, la Descente d’Inanna, l’Enuma Elish ou l’Épopée de Gilgamesh, étaient restées inconnues jusqu’au milieu du XIXe siècle.',
+            'WHE cite plusieurs savants. Georg Friedrich Grotefend (1775–1853) a déchiffré du cunéiforme avant 1823. Henry Creswicke Rawlinson (1810–1895) a travaillé sur l’inscription de Behistun : ses traductions de textes mésopotamiens sont présentées à la Royal Asiatic Society de Londres en 1837 puis en 1839. Edward Hincks (1792–1866) s’est consacré au cunéiforme perse, dont il a établi des régularités et identifié des voyelles. Jules Oppert (1825–1905) a établi la grammaire du cunéiforme assyrien. Ces attributions sont simplifiées : le déchiffrement a été un travail collectif étalé sur plusieurs décennies.',
+            'En 1846, Rawlinson collabore avec l’archéologue Austen Henry Layard aux fouilles de Ninive et se charge des premières traductions de la bibliothèque d’Assurbanipal découverte sur ce site (WHE). George Smith (1840–1876), traducteur autodidacte, publie en 1872 la traduction de la version mésopotamienne du récit du déluge, que l’on croyait jusque-là propre au Livre de la Genèse. Cette traduction a permis d’interpréter plus justement d’autres tablettes et a ouvert la voie à une étude plus objective de l’histoire du Proche-Orient.',
+            'WHE présente aussi Le Chant d’amour de Shu-Sin, daté d’environ 2000 av. J.-C., comme le plus ancien poème d’amour reconnu, bien antérieur au Cantique des cantiques. La même source rapproche les récits mésopotamiens de certains récits bibliques, dans des formulations parfois très tranchées : ces comparaisons relèvent de l’interprétation des historiens et il convient de les lire avec prudence. Le fait établi est que les textes cunéiformes, une fois lus, ont fourni une immense documentation écrite sur des civilisations jusque-là presque inconnues.'
+          ],
+          example: {
+            statement: 'George Smith est né en 1840 et a publié en 1872 la traduction du récit mésopotamien du déluge. Quel âge avait-il environ à ce moment-là ?',
+            calculation: 'On soustrait l’année de naissance à l’année de publication : 1872 − 1840 = 32.',
+            answer: 'Environ 32 ans (31 ou 32 selon son jour de naissance, qui n’est pas donné ici).'
+          },
+          exercise: {
+            question: 'Pourquoi l’Épopée de Gilgamesh est-elle restée inconnue jusqu’au XIXe siècle ?',
+            answer: 'Parce qu’elle était écrite en cunéiforme, une écriture que l’on ne savait plus lire : elle n’a pu être connue qu’après son déchiffrement.'
+          },
+          exercises: [
+            {
+              question: 'Quel savant est associé à l’inscription de Behistun dans l’article de WHE ?',
+              answer: 'Henry Creswicke Rawlinson.'
+            },
+            {
+              question: 'Quel site Rawlinson a-t-il fouillé avec Layard en 1846 ?',
+              answer: 'Ninive, d’où provient la bibliothèque d’Assurbanipal.'
+            },
+            {
+              question: 'Pourquoi ne peut-on pas attribuer le déchiffrement du cunéiforme à une seule personne ?',
+              answer: 'Parce que plusieurs savants (Grotefend, Hincks, Rawlinson, Oppert, Smith…) y ont contribué à des étapes différentes et sur différentes formes de cunéiforme.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Cuneiform', url: 'https://www.worldhistory.org/cuneiform/' },
+            { title: 'The Metropolitan Museum of Art — The Origins of Writing (Ira Spar)', url: 'https://www.metmuseum.org/essays/the-origins-of-writing' }
+          ]
+        }
+      },
+      {
+        id: 'hieroglyphes-egyptiens',
+        title: 'Les hiéroglyphes égyptiens, le hiératique et le démotique',
+        field: 'Égypte ancienne · Vers 3300 av. J.-C. – IVe siècle apr. J.-C.',
+        summary: 'Comprendre l’apparition de l’écriture en Égypte, ses trois formes principales et sa disparition progressive.',
+        lesson: {
+          sections: [
+            'Les plus anciens exemples connus d’écriture égyptienne proviennent d’Abydos, sous forme d’étiquettes d’os et d’ivoire, de vases et d’empreintes de sceaux. La tombe U-j, découverte en 1988 par une équipe de l’Institut archéologique allemand dirigée par Günter Dreyer, date de la fin de la période prédynastique, vers 3100 av. J.-C. selon The Past et World History Encyclopedia. Elle contenait environ 150 étiquettes gravées de signes. Selon les sources, les inscriptions sont datées de 3320–3150 av. J.-C. ou d’environ 3250 av. J.-C. : les datations varient.',
+            'Les étiquettes de la tombe U-j attestent déjà des signes phonétiques et l’emploi du principe du rébus. L’écriture égyptienne avait donc connu des étapes de développement antérieures, qui n’ont pas été retrouvées. Une étude paléographique consacrée aux débuts de l’écriture en Égypte souligne que l’on a souvent supposé une influence de l’écriture mésopotamienne, mais que les premiers témoignages égyptiens sont différents des mésopotamiens et plus nettement figuratifs, ce qui suggère un développement indépendant.',
+            'Le mot « hiéroglyphe » vient du grec hieros (« sacré ») et glyphos (« signe »). Les Égyptiens appelaient leur écriture mdju netjer, « paroles des dieux » (Virginia Museum of Fine Arts). Le système combine des phonogrammes, qui notent des sons, et des idéogrammes, qui représentent des objets ou des idées ; le même musée évalue le nombre de signes à 700–800. Les hiéroglyphes demandaient beaucoup de temps et de compétence : ils étaient surtout maîtrisés par les scribes, les prêtres et les fonctionnaires.',
+            'Deux écritures cursives dérivent des hiéroglyphes. Selon WHE, le hiératique (« sacerdotal ») naît de la volonté de prêtres et de scribes de temple de simplifier l’écriture, et garde des traces de l’aspect imagé des hiéroglyphes. Le démotique (« populaire »), encore plus abrégé et sans trace pictographique, est employé à partir du VIIe siècle av. J.-C. ; il remplace progressivement le hiératique, sauf pour les textes religieux et funéraires. Le papyrus apparaît sous la Ire dynastie (vers 3000–2890 av. J.-C.). La dernière inscription hiéroglyphique connue date du 23 août 394 apr. J.-C. ; l’écriture copte a fini par remplacer les hiéroglyphes, dont la lecture s’est perdue jusqu’en 1822.'
+          ],
+          example: {
+            statement: 'Les plus anciens signes de la tombe U-j datent d’environ 3100 av. J.-C. et la dernière inscription hiéroglyphique connue de 394 apr. J.-C. Combien d’années d’usage cela représente-t-il environ ?',
+            calculation: 'Une date av. J.-C. et une date apr. J.-C. : on additionne, puis on retire 1 car il n’y a pas d’année zéro : 3100 + 394 − 1 = 3493.',
+            answer: 'Environ 3 500 ans, soit plus de trois millénaires. Les dates de départ restent approximatives.'
+          },
+          exercise: {
+            question: 'Quelle différence y a-t-il entre le hiératique et le démotique ?',
+            answer: 'Le hiératique est une écriture cursive « sacerdotale » qui garde des traces des hiéroglyphes ; le démotique, apparu vers le VIIe siècle av. J.-C., est plus abrégé encore et n’a plus de trace pictographique.'
+          },
+          exercises: [
+            {
+              question: 'Où a-t-on trouvé les plus anciens exemples connus d’écriture égyptienne ?',
+              answer: 'À Abydos, notamment dans la tombe U-j.'
+            },
+            {
+              question: 'Que veut dire l’expression égyptienne mdju netjer ?',
+              answer: '« Paroles des dieux » : c’est le nom que les Égyptiens donnaient à leur écriture.'
+            },
+            {
+              question: 'Quelle écriture a fini par remplacer les hiéroglyphes ?',
+              answer: 'L’écriture copte.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Egyptian Hieroglyphs', url: 'https://www.worldhistory.org/hieroglyphics/' },
+            { title: 'The Past — The discovery of Tomb U-j', url: 'https://the-past.com/shorts/the-picture-desk/the-discovery-of-tomb-u-j' },
+            { title: 'History of Information — The Earliest Known Egyptian Writing', url: 'https://historyofinformation.com/detail.php?id=3428' },
+            { title: 'Virginia Museum of Fine Arts — Egyptian writing', url: 'https://vmfa.museum/learn-archive/?p=2882' },
+            { title: 'History of Information — The Rosetta Stone', url: 'https://historyofinformation.com/detail.php?id=438' }
+          ]
+        }
+      },
+      {
+        id: 'rosette-champollion',
+        title: 'La pierre de Rosette et le déchiffrement des hiéroglyphes',
+        field: 'Égypte · 196 av. J.-C. – 1822',
+        summary: 'Comprendre le rôle de la pierre de Rosette, le travail de Champollion et le caractère collectif du déchiffrement des hiéroglyphes.',
+        lesson: {
+          sections: [
+            'La pierre de Rosette porte un décret daté de 196 av. J.-C., sous Ptolémée V, rédigé en hiéroglyphes (langue des prêtres), en démotique (écriture usuelle) et en grec (langue de l’administration hellénistique). Elle est découverte en juillet 1799 à Rosette (aujourd’hui Rachid) par des soldats de l’armée de Napoléon Bonaparte. Elle passe aux Britanniques en 1801, après la défaite française en Égypte (traité d’Alexandrie), et forme le noyau de la collection égyptienne du British Museum.',
+            'Le grec pouvait être lu : la pierre est donc devenue un point d’appui pour comprendre les deux écritures égyptiennes. Mais les trois textes ne sont qu’à peu près parallèles. Antoine-Isaac Silvestre de Sacy, Johan David Åkerblad et Thomas Young ont mené des recherches sur le texte. Young a notamment compris que les noms enfermés dans des cartouches s’écrivaient phonétiquement. En 1819, il publie un long article « Egypt » dans un supplément de l’Encyclopaedia Britannica.',
+            'Jean-François Champollion émet l’hypothèse que les hiéroglyphes combinent des mots, des signes simples et des syllabes ou phonèmes. Cela lui permet de lire les noms de « Ptolémée » et de « Cléopâtre », puis d’autres souverains. Il présente ses résultats à l’Académie des inscriptions et belles-lettres le 27 septembre 1822 dans sa Lettre à M. Dacier. Deux ans plus tard, son Précis du système hiéroglyphique des anciens Égyptiens (1824) étend son système jusqu’aux premiers pharaons. National Geographic souligne que sa connaissance du copte, descendant de l’égyptien ancien, l’a aidé à l’emporter sur ses rivaux britanniques.',
+            'Le déchiffrement n’est pas l’œuvre d’un seul homme. Le Guinness World Records rappelle que Champollion s’appuie sur le travail de dizaines de figures : Ibn Wahshiyya, Abu al-Qasim, Athanasius Kircher, William Warburton, Carsten Niebuhr, Jørgen Zoëga, Silvestre de Sacy, Åkerblad et Thomas Young. D’autres documents bilingues grec-égyptien, comme l’obélisque de Philae (dit « de Bankes ») et le papyrus Casati, l’ont aidé à franchir l’étape finale. La date de 1822 marque donc un tournant décisif, pas un commencement à partir de zéro.'
+          ],
+          example: {
+            statement: 'Le décret de la pierre de Rosette date de 196 av. J.-C. et Champollion présente sa lecture en 1822. Combien d’années séparent ces deux dates ?',
+            calculation: 'Une date av. J.-C. et une date apr. J.-C. : on additionne et on retire 1 car il n’y a pas d’année zéro : 196 + 1822 − 1 = 2017.',
+            answer: 'Environ 2 017 ans, soit un peu plus de deux millénaires.'
+          },
+          exercise: {
+            question: 'Pourquoi la présence du grec sur la pierre de Rosette a-t-elle été décisive ?',
+            answer: 'Le grec pouvait être lu : il servait de point d’appui pour comprendre les deux écritures égyptiennes du même décret.'
+          },
+          exercises: [
+            {
+              question: 'Quelles sont les trois écritures de la pierre de Rosette ?',
+              answer: 'Les hiéroglyphes, le démotique et le grec.'
+            },
+            {
+              question: 'Quand et devant quelle institution Champollion a-t-il présenté sa lecture en 1822 ?',
+              answer: 'Le 27 septembre 1822, devant l’Académie des inscriptions et belles-lettres à Paris.'
+            },
+            {
+              question: 'Pourquoi ne peut-on pas attribuer le déchiffrement des hiéroglyphes à une seule personne ?',
+              answer: 'Parce que Champollion s’appuyait sur les travaux de nombreux savants (Silvestre de Sacy, Åkerblad, Young, Kircher…) et sur d’autres documents bilingues.'
+            }
+          ],
+          sources: [
+            { title: 'History of Information — The Rosetta Stone: Key to the Decipherment of Egyptian Hieroglyphs', url: 'https://historyofinformation.com/detail.php?id=438' },
+            { title: 'History of Information — Champollion Deciphers Egyptian Hieroglyphs', url: 'https://historyofinformation.com/detail.php?id=452' },
+            { title: 'Guinness World Records — First deciphered Egyptian hieroglyphs', url: 'https://www.guinnessworldrecords.com/world-records/740489-first-deciphered-egyptian-hieroglyphs' },
+            { title: 'National Geographic — Hieroglyphics were a mystery until this man solved the riddle of the Rosetta Stone', url: 'https://www.nationalgeographic.com/history/history-magazine/article/hieroglyphics-were-a-mystery-until-he-solved-the-rosetta-stone' },
+            { title: 'BBC Science Focus — Rosetta Stone: A history of translating ancient Egyptian hieroglyphs', url: 'https://www.sciencefocus.com/science/rosetta-stone-a-history-of-translating-ancient-egyptian-hieroglyphs' }
+          ]
+        }
+      },
+      {
+        id: 'ecriture-chinoise-os-oraculaires',
+        title: 'L’écriture chinoise : les os oraculaires de la dynastie Shang',
+        field: 'Chine · Vers 1250–1050 av. J.-C.',
+        summary: 'Comprendre ce que sont les os oraculaires, pourquoi ils constituent les plus anciens témoignages connus d’écriture chinoise et quelles limites doivent être gardées en tête.',
+        lesson: {
+          sections: [
+            'Les plus anciens exemples connus d’écriture chinoise sont gravés sur des os oraculaires : omoplates de bovidés et plastrons de tortue datés de la fin de la dynastie Shang, d’environ 1250 à 1050 av. J.-C. Ils proviennent surtout d’Anyang, dans la province du Henan, dernière capitale des Shang. Ils servaient à des rituels de divination de la maison royale.',
+            'On a reconnu en 1899 que les marques de ces os étaient une forme d’écriture. Des villageois des environs d’Anyang, qui les prenaient pour des « os de dragon », en avaient déterré au XIXe siècle, et beaucoup avaient été broyés pour la médecine traditionnelle avant que les antiquaires ne s’y intéressent. Les recherches menées dans les années 1920 et 1930 pour retrouver leur origine ont conduit à la découverte, à Anyang, de fondations en terre damée d’un grand complexe palatial de l’âge du bronze.',
+            'Ces inscriptions consignent des divinations liées aux derniers rois Shang, à partir de Wu Ding, dont l’avènement est daté de 1250 ou de 1200 av. J.-C. selon les spécialistes. Avec quelques inscriptions de style différent coulées sur des bronzes, elles forment le plus ancien corpus significatif d’écriture chinoise. L’écriture sur os oraculaires est considérée comme l’ancêtre direct de l’écriture chinoise et d’une douzaine d’autres écritures d’Asie orientale ; les inscriptions sur bronzes rituels deviennent abondantes sous la dynastie Zhou.',
+            'Il faut rester prudent sur trois points. D’abord, l’écriture chinoise est probablement plus ancienne que ces exemples : les os d’Anyang sont les plus anciens témoignages conservés, pas nécessairement le tout début. Ensuite, des signes gravés trouvés sur des sites néolithiques de Chine n’ont pas été démontrés comme ancêtres de l’écriture des os d’Anyang. Enfin, les décomptes des fragments varient fortement selon les sources (environ 13 000 pour certains, environ 150 000 pour d’autres), ce qui rappelle que ces chiffres sont des estimations.'
+          ],
+          example: {
+            statement: 'Les os oraculaires de la fin des Shang sont datés d’environ 1250–1050 av. J.-C. Quelle durée couvre cette période ?',
+            calculation: 'Les deux dates sont avant notre ère : on soustrait directement 1250 − 1050 = 200.',
+            answer: 'Environ 200 ans. Les spécialistes constatent d’ailleurs une évolution de l’écriture au cours de cette période.'
+          },
+          exercise: {
+            question: 'À quoi servaient les os oraculaires ?',
+            answer: 'À des rituels de divination de la maison royale Shang ; les inscriptions gardent la trace de ces divinations.'
+          },
+          exercises: [
+            {
+              question: 'Pourquoi les os oraculaires sont-ils importants pour l’histoire de l’écriture ?',
+              answer: 'Ils contiennent les plus anciens exemples connus d’écriture chinoise.'
+            },
+            {
+              question: 'En quelle année a-t-on reconnu que les marques des « os de dragon » étaient une forme d’écriture ?',
+              answer: 'En 1899.'
+            },
+            {
+              question: 'Peut-on conclure que l’écriture chinoise est apparue exactement vers 1250 av. J.-C. ?',
+              answer: 'Non. Ce sont les plus anciens exemples conservés ; l’écriture est probablement plus ancienne.'
+            }
+          ],
+          sources: [
+            { title: 'History.com — 7 Everyday Objects From the Shang Dynasty', url: 'https://www.history.com/news/everyday-objects-shang-dynasty' },
+            { title: 'Live Science — Oracle bones: 3,250-year-old engraved bones and tortoise shells from ancient China', url: 'https://livescience.com/archaeology/oracle-bones-3-250-year-old-engraved-bones-and-tortoise-shells-from-ancient-china-were-used-to-foretell-the-future' },
+            { title: 'Wikipedia — Oracle bone script', url: 'https://en.wikipedia.org/wiki/Oracle_bone_script' }
+          ]
+        }
+      },
+      {
+        id: 'alphabet-phenicien-grec-latin',
+        title: 'De l’alphabet phénicien aux alphabets grec et latin',
+        field: 'Méditerranée orientale · Vers 1700 av. J.-C. – VIIe siècle av. J.-C.',
+        summary: 'Comprendre comment un système de signes consonantiques a été adapté par les Grecs, puis transmis aux Étrusques et aux Romains.',
+        lesson: {
+          sections: [
+            'World History Encyclopedia (WHE) rappelle que, dès 2700 av. J.-C., l’écriture égyptienne comptait environ 22 hiéroglyphes notant une consonne initiale, la voyelle éventuelle étant fournie par le locuteur. Un système apparemment « alphabétique », dit proto-sinaïtique, aurait été élaboré vers 1700 av. J.-C. en Égypte centrale pour ou par des travailleurs sémites ; mais un seul de ces écrits a été déchiffré et leur nature reste discutée. Cette écriture a donné l’alphabet proto-cananéen, puis l’alphabet phénicien. Aucun de ces systèmes n’est considéré comme un alphabet au sens strict, car ils ne notent pas les voyelles.',
+            'L’alphabet phénicien compte 22 signes consonantiques et s’écrit de droite à gauche ; WHE y voit la première grande écriture phonémique. Selon les sources, il est daté d’environ 1200 av. J.-C. (Deutsche Nationalbibliothek) ou de 1100 av. J.-C. (chronologie de WHE) ; le sarcophage d’Ahiram, roi de Byblos, vers 1000 av. J.-C., porte la plus ancienne inscription phénicienne connue de cette chronologie. Les marchands phéniciens l’ont diffusé en Méditerranée. Comme il note des sons et non des mots, il pouvait servir à écrire de nombreuses langues.',
+            'Les Grecs adaptent l’alphabet phénicien à leur langue. Selon WHE, ils réaffectent des lettres qui notaient des consonnes absentes du grec pour représenter les voyelles. Cette innovation est datée vers 800 av. J.-C. par la Deutsche Nationalbibliothek et par l’université Brown, et du VIIIe siècle av. J.-C. par History.com. Beaucoup de spécialistes y voient le premier alphabet « véritable », avec voyelles et consonnes notées explicitement. Le grec s’écrit d’abord de droite à gauche, puis en boustrophédon, où le sens alterne à chaque ligne.',
+            'La forme grecque dite de Cumes est transportée en Italie par des colons venus d’Eubée et donne naissance à des alphabets utilisés pour les langues italiques (WHE). Selon la Deutsche Nationalbibliothek, l’alphabet grec passe par les Étrusques jusqu’aux Romains au VIIe siècle av. J.-C. ; les Romains adoptent la lecture de gauche à droite et mettent au point les majuscules latines. Le grec a aussi donné le cyrillique (History.com). Une nuance importante : selon Peter Stein, cité par la Deutsche Nationalbibliothek, il n’existe pas « l’alphabet », mais trois types distincts (syllabaire, écriture consonantique, alphabet véritable), qui ne forment pas une évolution linéaire.'
+          ],
+          example: {
+            statement: 'Selon la chronologie de WHE, la mort d’Ahiram de Byblos se situe vers 1000 av. J.-C. et les plus anciens exemples d’écriture alphabétique grecque vers 800 av. J.-C. Combien d’années séparent ces deux repères ?',
+            calculation: 'Les deux dates sont avant notre ère : le nombre le plus grand est le plus ancien, et on soustrait directement : 1000 − 800 = 200.',
+            answer: 'Environ 200 ans. Ce sont des repères approximatifs.'
+          },
+          exercise: {
+            question: 'Quelle innovation les Grecs ont-ils apportée à l’alphabet phénicien ?',
+            answer: 'Ils ont noté les voyelles, en réaffectant des lettres phéniciennes qui représentaient des consonnes absentes du grec.'
+          },
+          exercises: [
+            {
+              question: 'Combien de signes comptait l’alphabet phénicien et que notaient-ils ?',
+              answer: '22 signes, qui notaient des consonnes.'
+            },
+            {
+              question: 'Dans quel sens l’alphabet phénicien s’écrivait-il ?',
+              answer: 'De droite à gauche.'
+            },
+            {
+              question: 'Pourquoi l’alphabet phénicien pouvait-il servir à écrire plusieurs langues ?',
+              answer: 'Parce qu’il note des sons (phonèmes) et non des mots ou des idées, ce qui permet de l’adapter à d’autres langues.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Alphabet', url: 'https://www.worldhistory.org/alphabet/' },
+            { title: 'World History Encyclopedia — Alphabet (chronologie)', url: 'https://worldhistory.org/timeline/alphabet' },
+            { title: 'History.com — Who Created the First Alphabet?', url: 'https://www.history.com/articles/who-created-the-first-alphabet' },
+            { title: 'Deutsche Nationalbibliothek — Alphabet', url: 'https://mediengeschichte.dnb.de/DBSMZBN/Content/EN/SoundsSymbolsScript/01-alphabet-en.html' },
+            { title: 'Brown University (Joukowsky Institute) — Greek Alphabet', url: 'https://webhelper.brown.edu/joukowsky/courses/greekpast/4739.html' }
+          ]
+        }
+      },
+      {
+        id: 'ecriture-maya',
+        title: 'L’écriture maya : un système de glyphes déchiffré au XXe siècle',
+        field: 'Mésoamérique · Vers 300 av. J.-C. – XVIe siècle apr. J.-C.',
+        summary: 'Comprendre les premières traces de l’écriture maya, la méprise de Diego de Landa et l’apport de Knorozov au déchiffrement.',
+        lesson: {
+          sections: [
+            'En 2006, William Saturno, David Stuart et Boris Beltrán ont publié dans la revue Science la découverte, à San Bartolo (Guatemala), de glyphes peints. Les datations au radiocarbone, croisées avec celles des couches du site, indiquent qu’ils ont été peints entre 300 et 200 av. J.-C. : c’est l’un des plus anciens exemples d’écriture maya solidement datés. La salle des peintures murales voisine est datée d’environ 100 av. J.-C. Saturno a toutefois précisé que cette découverte ne résout pas l’origine de l’écriture en Mésoamérique : une écriture plus ancienne a été signalée dans la vallée d’Oaxaca (vers 600 av. J.-C.), datation encore débattue.',
+            'L’écriture maya est faite de glyphes, qui combinent des logogrammes (signes notant des mots) et des signes syllabiques (signes notant des syllabes). Selon World History Encyclopedia, les Mayas lisaient leurs glyphes de gauche à droite et de haut en bas. Les glyphes sont souvent regroupés en blocs : la « conflation » combine deux glyphes ou plus en simplifiant certains éléments, pour obtenir un ensemble lisible qui tienne dans l’espace disponible.',
+            'Au XVIe siècle, l’évêque du Yucatán Diego de Landa a demandé à un scribe maya d’écrire un « alphabet » : il dictait des lettres espagnoles et le scribe traçait un glyphe. Landa croyait que l’écriture maya était alphabétique, ce qui n’est pas le cas. Cette hypothèse erronée a longtemps égaré les chercheurs. Landa est aussi connu pour avoir fait détruire de nombreux livres mayas.',
+            'Le tournant a lieu en 1952. D’après l’exposition de la bibliothèque de l’université de Caroline du Nord, le linguiste soviétique Yuri Knorozov affirme alors que les glyphes ont une composante phonétique et que la liste de Landa recense des syllabes plutôt que des lettres. Cela contredisait l’opinion admise selon laquelle les glyphes représentaient des mots. L’opposition du grand mayaniste J. Eric S. Thompson et la méfiance de la guerre froide envers un chercheur soviétique ont ralenti l’acceptation de ses idées. Elles ont néanmoins été reprises et prolongées par Tatiana Proskouriakoff, Michael Coe, Linda Schele et David Stuart.'
+          ],
+          example: {
+            statement: 'Les glyphes de San Bartolo sont datés d’environ 300–200 av. J.-C. En prenant le milieu de cette fourchette (250 av. J.-C.), combien d’années le séparent de l’article de Knorozov, publié en 1952 ?',
+            calculation: 'Une date av. J.-C. et une date apr. J.-C. : on additionne et on retire 1 car il n’y a pas d’année zéro : 250 + 1952 − 1 = 2201.',
+            answer: 'Environ 2 200 ans. Les datations de San Bartolo sont des estimations issues d’analyses au radiocarbone.'
+          },
+          exercise: {
+            question: 'Pourquoi l’« alphabet » de Landa a-t-il d’abord induit les chercheurs en erreur ?',
+            answer: 'Landa supposait que l’écriture maya était alphabétique ; or ses signes notent surtout des syllabes ou des mots.'
+          },
+          exercises: [
+            {
+              question: 'Quel chercheur a affirmé en 1952 que les glyphes mayas avaient une composante phonétique ?',
+              answer: 'Yuri Knorozov.'
+            },
+            {
+              question: 'Dans quel sens lit-on un bloc de glyphes mayas, d’après World History Encyclopedia ?',
+              answer: 'De gauche à droite et de haut en bas.'
+            },
+            {
+              question: 'Que montre l’exemple du mot maya cutz (« dinde ») ?',
+              answer: 'Que les signes notent des syllabes : le signe cu suivi du signe tzu donne cutz.'
+            }
+          ],
+          sources: [
+            { title: 'Mesoweb — Early Maya Writing at San Bartolo', url: 'https://www.mesoweb.org/reports/SanBartoloWriting.html' },
+            { title: 'Science News — Getting a read on early Maya writing', url: 'https://www.sciencenews.org/?p=407' },
+            { title: 'World History Encyclopedia — How to Read a Maya Glyph', url: 'https://www.worldhistory.org/article/789/how-to-read-a-maya-glyph/' },
+            { title: 'University of North Carolina — Yuri V. Knorozov (1922–1999)', url: 'https://exhibits.lib.unc.edu/exhibits/show/maya/decipherment/sistema-pisma-drevnikh-maiia' },
+            { title: 'Maya Archaeologist — Maya writing system', url: 'https://www.mayaarchaeologist.co.uk/school-resources/maya-world/maya-writing-system/' }
+          ]
+        }
+      },
+      {
+        id: 'imprimerie-xylographie-gutenberg',
+        title: 'De la xylographie à l’imprimerie à caractères mobiles',
+        field: 'Asie orientale et Europe · IXe–XVe siècle',
+        summary: 'Comprendre les étapes de l’imprimerie, du Sûtra du Diamant de 868 aux caractères mobiles chinois, coréens et européens.',
+        lesson: {
+          sections: [
+            'Le Sûtra du Diamant est un texte bouddhique de Dunhuang, en Chine. Le 11 mai 868, un scribe nommé Wang Jie en publie une édition : comme il y a inscrit la date, cet exemplaire est le plus ancien livre imprimé complet et daté connu. Il a été imprimé par xylographie, avec des planches de bois gravées à l’envers. Scellé dans une grotte près de Dunhuang avant l’an 1000, il a été retrouvé dans la grotte 17 de Mogao vers 1900 par Wang Yuanlu, vendu en 1907 à l’archéologue Aurel Stein et conservé aujourd’hui à la British Library.',
+            'Les caractères mobiles remplacent les planches gravées par des signes individuels réutilisables. Ils sont attribués à Bi Sheng, de Yingshan (Hubei), qui a vécu approximativement de 970 à 1051. La plus ancienne mention de son procédé figure dans les Notes du ruisseau des rêves (Dream Pool Essays), écrites en 1086 par le savant Shen Kuo, qui rapporte que ses neveux avaient hérité des caractères de Bi Sheng après sa mort. Certaines synthèses datent cette invention d’environ 1040 et précisent que les caractères étaient d’abord en argile.',
+            'Le nombre très élevé de caractères chinois rendait la composition en caractères mobiles difficile : la xylographie est restée très employée en Chine. En Corée, le Jikji, anthologie d’enseignements bouddhiques zen, a été imprimé en 1377 avec des caractères mobiles en métal, soit près de quatre-vingts ans avant la Bible de Gutenberg selon l’article cité en source.',
+            'En Europe, Johannes Gutenberg, à Mayence, remplace le bois par le métal pour fabriquer les lettres : c’est la version européenne des caractères mobiles. Son livre le plus célèbre, la Bible dite à 42 lignes, est imprimé vers 1455. Il faut éviter une idée trop simple : l’imprimerie n’est pas née d’un seul coup en Europe au XVe siècle. Le Sûtra du Diamant n’est d’ailleurs pas le plus ancien imprimé connu (un sûtra coréen sur bois, le Mugujeonggwang Dharani, est daté entre 704 et 751), mais le plus ancien imprimé complet qui porte une date.'
+          ],
+          example: {
+            statement: 'Le Sûtra du Diamant est daté de 868 apr. J.-C. et la Bible de Gutenberg a été imprimée vers 1455. Combien d’années séparent ces deux repères ?',
+            calculation: 'Les deux dates sont après notre ère : on soustrait directement 1455 − 868 = 587.',
+            answer: 'Environ 587 ans, soit plus de cinq siècles. La date de la Bible de Gutenberg est approximative.'
+          },
+          exercise: {
+            question: 'Quelle différence y a-t-il entre la xylographie et les caractères mobiles ?',
+            answer: 'La xylographie grave toute une page sur une planche de bois ; les caractères mobiles sont des signes individuels réutilisables que l’on assemble pour composer chaque page.'
+          },
+          exercises: [
+            {
+              question: 'Pourquoi le Sûtra du Diamant est-il célèbre ?',
+              answer: 'Daté du 11 mai 868, c’est le plus ancien livre imprimé complet et daté connu.'
+            },
+            {
+              question: 'Qui est associé à l’invention des caractères mobiles en Chine, et où en trouve-t-on la plus ancienne mention ?',
+              answer: 'Bi Sheng (vers 970–1051), mentionné en 1086 par Shen Kuo dans les Notes du ruisseau des rêves.'
+            },
+            {
+              question: 'Pourquoi la xylographie est-elle restée très utilisée en Chine ?',
+              answer: 'Parce que le très grand nombre de caractères chinois rendait la composition en caractères mobiles difficile.'
+            }
+          ],
+          sources: [
+            { title: 'Linda Hall Library — The Diamond Sutra', url: 'https://www.lindahall.org/about/news/scientist-of-the-day/the-diamond-sutra/' },
+            { title: 'History.com — Printing Press', url: 'https://www.history.com/topics/renaissance/printing-press' },
+            { title: 'Rosenbach — Another Installment About Old, Old Books', url: 'https://wpsite.rosenbach.org/?p=1336' },
+            { title: 'Book printing before Gutenberg: The Asian roots of printing technology', url: 'https://fabriziomusacchio.com/weekend_stories/told/2024/2024-12-22-chinese_and_korean_bookprinting' },
+            { title: 'The very first Printed Book (Diamond Sutra, 868)', url: 'https://knowledgestore2.fbk.eu/pikes-demo/eswc2016/wes2015.d169.naf.html' }
+          ]
+        }
+      }
+    ]
+  },
 
 ];
