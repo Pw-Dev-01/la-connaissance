@@ -1,9 +1,9 @@
 {
-  "title": "Informatique",
+  "title": "Histoire-test",
   "symbol": "</>",
-  "description": "Algorithmique et programmation · 12 chapitres",
+  "description": "Histoire...",
   "order": 11,
   "entry": "index.html",
-  "dataFile": "informatique-data.js",
+  "dataFile": "histoire-data.js",
   "class": ""
 }
