@@ -387,5 +387,371 @@ window.courseCatalog = [
         }
       }
     ]
-  }
+  },
+// BRANCHE : LES LICHENS
+// À coller à la suite des autres branches du tableau window.courseCatalog (après la virgule de la branche précédente).
+
+  {
+    id: 'lichens',
+    title: 'Les Lichens',
+    note: 'Sept chapitres sur la nature symbiotique des lichens, l’histoire de leur découverte, leur structure, leur reproduction, leur écologie, leur usage comme bioindicateurs et leur histoire fossile. Les nombres d’espèces et les âges fossiles sont des estimations qui varient selon les sources et les méthodes.',
+    chapters: [
+      {
+        id: 'lichens-symbiose',
+        title: 'Qu’est-ce qu’un lichen ? Une symbiose entre un champignon et un photobionte',
+        field: 'Biologie · Symbiose, mycobionte et photobionte',
+        summary: 'Comprendre pourquoi un lichen n’est pas un organisme unique, quels sont ses partenaires et ce que chacun apporte à l’association.',
+        lesson: {
+          sections: [
+            'Un lichen n’est pas un organisme unique : c’est une symbiose entre un champignon et une algue ou une cyanobactérie. Le partenaire qui contient de la chlorophylle s’appelle le photobionte ; le partenaire fongique s’appelle le mycobionte. Les cyanobactéries, parfois appelées « algues bleues », sont en réalité des bactéries, distinctes des algues. La plupart des lichens associent un mycobionte et un photobionte, mais certains possèdent plus d’un photobionte.',
+            'Au microscope, le champignon apparaît formé de filaments cellulaires appelés hyphes, qui poussent par extension et se ramifient en gardant un diamètre constant. Les photobiontes peuvent être eux aussi filamenteux, ou formés de chaînes ou d’amas de cellules plus ou moins sphériques. Le thalle, c’est-à-dire le corps du lichen, résulte de l’association de ces deux types de cellules, si étroitement unies qu’on a l’impression de regarder un seul organisme.',
+            'Les échanges reposent d’abord sur le carbone. Grâce à la photosynthèse, l’algue ou la cyanobactérie fabrique des glucides à partir de la lumière ; un champignon, lui, ne fabrique pas ses propres glucides et doit puiser son carbone dans de la matière organique déjà existante. Dans un lichen, une partie des glucides du photobionte est donc « récoltée » par le mycobionte. En contrepartie, selon la note de Taylor et de ses collègues publiée dans Nature en 1995, le photobionte reçoit protection, nutriments et eau. Cette relation va du mutualisme au parasitisme contrôlé : elle n’est pas toujours équilibrée.',
+            'Les lichens sont classés avec les champignons, c’est pourquoi on parle de champignons lichénisés. Les champignons impliqués sont en très grande majorité des ascomycètes, avec très peu de basidiomycètes. On connaît entre 18 000 et un peu plus de 20 000 espèces de lichens dans le monde selon les sources, dont plus de 3 000 en Australie. D’après l’Australian National Botanic Gardens, les champignons qui forment des lichens ne se rencontrent pas dans la nature comme organismes indépendants, alors que plusieurs photobiontes, en particulier des algues, vivent à l’état libre.',
+            'Un lichen est plus que la somme de ses parties. Il possède des structures qu’aucun des deux partenaires ne forme seul et il produit des substances généralement absentes quand le champignon et le photobionte sont cultivés séparément : les lichens synthétisent plus de 800 substances, dont beaucoup ne se trouvent nulle part ailleurs dans la nature. On sait cultiver séparément les deux partenaires, mais il est difficile de refaire un lichen en laboratoire. La resynthèse a réussi lorsque le champignon et le photobionte étaient soumis à un stress (eau et nutriments réduits), ce qui suggère, selon l’ANBG, que ces associations se sont formées à l’origine pour surmonter l’adversité.',
+            'Plusieurs noms trompent. La « mousse d’Islande » (Cetraria islandica) et la « mousse des rennes » (Cladina rangifera) sont des lichens et non des mousses : les mousses sont des végétaux, alors que les lichens sont classés avec les champignons. Les maladies de peau dont le nom contient « lichen » (le lichen plan, par exemple) n’ont aucun lien avec les lichens, hormis le nom : le mot vient d’un terme grec qui désignait déjà à la fois des organismes poussant sur les arbres et une affection cutanée pustuleuse.'
+          ],
+          example: {
+            statement: 'Un lichen est formé d’un champignon et d’une cyanobactérie. Est-ce un seul organisme ? Quel partenaire fabrique les glucides par photosynthèse ?',
+            calculation: 'On distingue les rôles : le mycobionte (le champignon) ne fabrique pas ses propres glucides ; le photobionte (algue ou cyanobactérie) contient de la chlorophylle et réalise la photosynthèse.',
+            answer: 'Non : un lichen est une symbiose entre plusieurs organismes. Les glucides sont fabriqués par le photobionte (ici la cyanobactérie), et une partie est utilisée par le champignon.'
+          },
+          exercise: {
+            question: 'Pourquoi appelle-t-on les lichens des « champignons lichénisés » ?',
+            answer: 'Parce qu’ils sont classés avec les champignons : le partenaire fongique détermine leur classification, et ce champignon vit associé à une algue ou à une cyanobactérie.'
+          },
+          exercises: [
+            {
+              question: 'Comment s’appellent le partenaire fongique et le partenaire photosynthétique d’un lichen ?',
+              answer: 'Le mycobionte (le champignon) et le photobionte (l’algue ou la cyanobactérie).'
+            },
+            {
+              question: 'Un lichen contient-il toujours un seul photobionte ?',
+              answer: 'Non. La plupart des lichens associent un mycobionte et un photobionte, mais certains possèdent plus d’un photobionte.'
+            },
+            {
+              question: 'D’après l’Australian National Botanic Gardens, les champignons lichénisés vivent-ils librement dans la nature ? Et les photobiontes ?',
+              answer: 'Les champignons qui forment des lichens ne se rencontrent pas dans la nature comme organismes indépendants, alors que plusieurs photobiontes, notamment des algues, vivent à l’état libre.'
+            },
+            {
+              question: 'La « mousse d’Islande » est-elle une mousse ?',
+              answer: 'Non. C’est un lichen (Cetraria islandica). Les mousses sont des végétaux, alors que les lichens sont classés avec les champignons.'
+            }
+          ],
+          sources: [
+            { title: 'Australian National Botanic Gardens — What is a lichen?', url: 'https://anbg.gov.au/lichen/what-is-lichen.html' },
+            { title: 'Taylor, Hass, Remy & Kerp (1995), Nature 378 : 244 — The oldest fossil lichen', url: 'https://www-archiv.fdm.uni-hamburg.de/b-online/kerp/nature.html' },
+            { title: 'Botany Brisbane — Lichen basics', url: 'https://www.botanybrisbane.com/?p=16574' },
+            { title: 'Hawksworth & Grube — Lichens redefined as complex ecosystems (New Phytologist, PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7497170' }
+          ]
+        }
+      },
+
+      {
+        id: 'lichens-decouverte',
+        title: 'De Schwendener à la levure : l’histoire d’une découverte',
+        field: 'Histoire des sciences · De 1867 à aujourd’hui',
+        summary: 'Retracer comment la nature composite des lichens a été reconnue, puis comment la découverte de partenaires supplémentaires a remis en question la définition classique.',
+        lesson: {
+          sections: [
+            'Pendant longtemps, les lichens ont été classés comme des êtres vivants uniques. La reconnaissance de leur nature double, une association entre un champignon et une algue, est attribuée au botaniste suisse Simon Schwendener, en 1867 (certaines sources citent 1868).',
+            'Le mot « symbiose » est lui-même né de l’étude des lichens. Albert Bernhard Frank l’a employé au sens biologique, sous la forme « Symbiotismus », après avoir étudié au microscope cinq lichens crustacés, au milieu des années 1870 (1876 ou 1877 selon les publications). Anton de Bary est souvent cité comme l’inventeur du terme à cause d’une conférence donnée à la fin des années 1870, mais il connaissait le travail de Frank. Le sens général de « vie en commun d’organismes différents » est donc issu de ces débats sur les lichens.',
+            'L’image d’un duo champignon-photobionte reste utile, mais elle est aujourd’hui considérée comme une simplification. On a trouvé dans les thalles des lichens d’autres organismes : des champignons lichénicoles, des levures et des bactéries associées. Cette diversité est l’une des raisons pour lesquelles des auteurs ont proposé de revoir la définition même du mot « lichen ».',
+            'En 2016, une équipe dirigée par Toby Spribille publie dans Science (volume 353, pages 488-492) un article intitulé « Basidiomycete yeasts in the cortex of ascomycete macrolichens ». L’enquête était partie d’une différence entre deux lichens du genre Bryoria, Bryoria fremontii et Bryoria tortuosa, que l’on avait regroupés comme « espèces » synonymes mais qui diffèrent par leur production d’acide vulpinique. Une analyse des transcriptomes a révélé des séquences d’un champignon basidiomycète. Des sondes d’hybridation (FISH) ont ensuite montré que ce champignon était abondant, sous forme de levures, dans le cortex du lichen.',
+            'Les auteurs ont détecté ce groupe de levures dans une grande variété de lichens grâce à des amorces PCR spécifiques. Ils en ont conclu qu’il constitue un composant intégral du cortex supérieur, et ils ont proposé que chaque espèce de lichen porte une souche génétiquement distincte. Cette lignée a été rattachée à un nouvel ordre de basidiomycètes, les Cyphobasidiales ; le genre Cyphobasidium n’était auparavant connu que comme champignon formant des galles sur des lichens.',
+            'Le rôle exact de cette levure reste incertain et plusieurs spécialistes discutent encore de sa place dans l’association : en faire un « troisième partenaire » est une hypothèse, pas un fait établi. En 2020, David Hawksworth et Martin Grube ont proposé de considérer le lichen comme un écosystème complexe (un holobionte), qui inclut le mycobionte, le photobionte et d’autres organismes associés.'
+          ],
+          example: {
+            statement: 'La nature double des lichens est reconnue en 1867. Frank étudie la symbiose chez cinq lichens crustacés en 1876. Combien d’années séparent ces deux dates ?',
+            calculation: 'On soustrait les deux années : 1876 − 1867 = 9.',
+            answer: 'Neuf ans (dix ans si l’on retient la date de 1877, que certaines publications donnent pour le travail de Frank).'
+          },
+          exercise: {
+            question: 'Pourquoi la découverte de 2016 a-t-elle remis en cause la définition classique du lichen ?',
+            answer: 'Parce qu’elle a montré la présence, dans le cortex de nombreux macrolichens, d’une levure de basidiomycète en plus du champignon ascomycète et du photobionte, ce qui suggérait un partenaire supplémentaire.'
+          },
+          exercises: [
+            {
+              question: 'Quel botaniste est associé à la reconnaissance de la nature double des lichens en 1867 ?',
+              answer: 'Simon Schwendener.'
+            },
+            {
+              question: 'Sur quel type de lichens Albert Bernhard Frank a-t-il étudié la symbiose ?',
+              answer: 'Sur cinq lichens crustacés, étudiés au microscope.'
+            },
+            {
+              question: 'Dans quels lichens la levure basidiomycète a-t-elle d’abord été découverte en 2016 ?',
+              answer: 'Dans deux macrolichens du genre Bryoria, Bryoria fremontii et Bryoria tortuosa, avant d’être détectée dans de nombreux autres lichens.'
+            },
+            {
+              question: 'Le rôle de cette levure dans le lichen est-il établi ?',
+              answer: 'Non. Son rôle exact reste incertain et sa place dans l’association est encore discutée.'
+            }
+          ],
+          sources: [
+            { title: 'Hawksworth & Grube — Lichens redefined as complex ecosystems (New Phytologist, PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7497170' },
+            { title: 'IMA Fungus — Transcriptomics leads to discovery of basidiomycete yeasts on lichen cortices', url: 'https://imafungus.biomedcentral.com/articles/10.1007/BF03449421' },
+            { title: 'Botany One — Lichens now 50% bigger…', url: 'https://botany.one/2016/11/lichens-now-50-bigger/' },
+            { title: 'Science Notes — What is a lichen? Definition and facts', url: 'https://sciencenotes.org/what-is-a-lichen-definition-and-facts/' }
+          ]
+        }
+      },
+
+      {
+        id: 'lichens-structure',
+        title: 'Structure du thalle et formes de croissance',
+        field: 'Biologie · Morphologie des lichens',
+        summary: 'Reconnaître les grandes formes de croissance des lichens et comprendre l’organisation interne d’un thalle.',
+        lesson: {
+          sections: [
+            'On décrit les lichens par leur forme de croissance, c’est-à-dire par la forme de leur thalle. Trois types sont très courants. Les lichens fruticuleux sont dressés ou pendants et nettement tridimensionnels (le genre Usnea en est un exemple). Les lichens crustacés sont nettement bidimensionnels et fixés au substrat par toute leur face inférieure, ce qui empêche de voir celle-ci : ils ressemblent à une fine croûte (le genre orange Caloplaca en est un exemple). Les lichens foliacés se situent entre les deux : tridimensionnels mais étalés en feuillets souvent lobés, ils ne sont pas fixés par toute leur face inférieure, et certains ne sont attachés que par le centre (Xanthoparmelia substrigosa en est un exemple).',
+            'D’autres termes complètent cette liste. Un lichen squamuleux ressemble à un semis de petites écailles sur le substrat : c’est souvent le cas du genre Cladonia, dont les espèces produisent aussi des structures dressées appelées podétions. Un lichen byssoïde a un aspect laineux, comme du coton légèrement étiré. Un lichen lépreux est poudreux ou granuleux. Un lichen placodioïde est crustacé au centre et un peu foliacé sur les bords (Placopsis perrugosa en est un exemple). Ces termes sont utiles mais imprécis : on discute encore de leurs limites, et certains spécialistes considèrent les formes squamuleuses et placodioïdes comme de simples variantes de lichens crustacés.',
+            'Les termes macrolichen et microlichen ne désignent pas la taille. Grosso modo, un macrolichen est un lichen foliacé ou fruticuleux, et tous les autres sont des microlichens. Une espèce foliacée qui atteint un centimètre de diamètre est un macrolichen, alors qu’une espèce crustacée dépassant 10 centimètres de diamètre reste un microlichen.',
+            'Examinons la coupe d’un lichen foliacé. La face supérieure est formée d’hyphes serrées, le cortex supérieur. Juste en dessous se trouve une couche de cellules du photobionte, puis la médulle, une zone d’hyphes lâches où le champignon stocke les nutriments qu’il a récoltés. La face inférieure est un second cortex, d’où partent les rhizines : des faisceaux d’hyphes en forme de racines qui ancrent le thalle au substrat. Les lichens n’ont ni racines, ni tiges, ni feuilles au sens des plantes.',
+            'Cette organisation varie selon les formes. Un lichen crustacé n’a pas de cortex inférieur. Chez un lichen fruticuleux, on ne peut pas parler de face supérieure ou inférieure : le cortex forme la couche externe de chaque branche, les cellules du photobionte sont juste en dessous et la médulle occupe le centre. Certaines espèces n’ont pas de rhizines, comme Xanthoparmelia convoluta, un lichen vagabond qui repose librement sur le sol et peut être déplacé par le vent ou par l’eau. Dans quelques genres seulement, les cellules du photobionte sont dispersées dans tout le thalle au lieu de former une seule bande.',
+            'Il faut distinguer le thalle, partie végétative du lichen, des organes de reproduction du champignon. Les apothécies, par exemple, sont des disques où le champignon produit ses spores ; elles ne font pas partie du thalle. En général, une espèce garde la même forme de croissance partout où elle pousse, mais on observe parfois des variations. Siphula coriacea est ainsi formée de lobes dressés gris-bleu, de plus d’un centimètre dans les endroits humides et abrités, et de quelques millimètres seulement dans les zones plus sèches de l’intérieur de l’Australie ; une forme à thalles en disques a même été trouvée dans le parc national d’Idalia (Queensland).'
+          ],
+          example: {
+            statement: 'On observe un lichen plat, lobé, attaché au rocher par un seul point central. On voit facilement ses deux faces. De quelle forme de croissance s’agit-il ?',
+            calculation: 'Un lichen crustacé adhère par toute sa face inférieure, donc on ne voit pas celle-ci. Un lichen fruticuleux est dressé ou pendant. Un lichen plat et lobé, dont on voit les deux faces, correspond au type intermédiaire.',
+            answer: 'Il s’agit d’un lichen foliacé.'
+          },
+          exercise: {
+            question: 'Pourquoi ne peut-on pas voir la face inférieure d’un lichen crustacé ?',
+            answer: 'Parce qu’il est fixé au substrat par toute sa face inférieure : il ressemble à une croûte collée à la surface et n’a pas de cortex inférieur.'
+          },
+          exercises: [
+            {
+              question: 'Quel est le rôle des rhizines ?',
+              answer: 'Ce sont des faisceaux d’hyphes en forme de racines qui ancrent le thalle au substrat. Ce ne sont pas de vraies racines, car les lichens n’en ont pas.'
+            },
+            {
+              question: 'Un microlichen est-il forcément petit ?',
+              answer: 'Non. Les termes macrolichen et microlichen ne désignent pas la taille : un lichen crustacé de plus de 10 centimètres reste un microlichen, alors qu’un lichen foliacé d’un centimètre est un macrolichen.'
+            },
+            {
+              question: 'Dans quelle zone du thalle d’un lichen foliacé le champignon stocke-t-il les nutriments récoltés ?',
+              answer: 'Dans la médulle, une zone d’hyphes lâches située sous la couche des cellules du photobionte.'
+            },
+            {
+              question: 'Que montre l’exemple de Siphula coriacea ?',
+              answer: 'Qu’une espèce peut changer de forme selon le milieu : ses lobes dressés sont plus longs dans les zones humides et abritées et très courts dans les zones plus sèches, et une forme en disques a été observée dans un milieu particulier.'
+            }
+          ],
+          sources: [
+            { title: 'Australian National Botanic Gardens — What is a lichen?', url: 'https://anbg.gov.au/lichen/what-is-lichen.html' },
+            { title: 'Botany Brisbane — Lichen basics', url: 'https://www.botanybrisbane.com/?p=16574' },
+            { title: 'Science Notes — What is a lichen? Definition and facts', url: 'https://sciencenotes.org/what-is-a-lichen-definition-and-facts/' }
+          ]
+        }
+      },
+
+      {
+        id: 'lichens-reproduction',
+        title: 'Reproduction et dispersion des lichens',
+        field: 'Biologie · Reproduction végétative et sexuée',
+        summary: 'Distinguer les modes de reproduction des lichens, comprendre pourquoi une spore ne suffit pas à former un lichen et voir comment les lichens se dispersent.',
+        lesson: {
+          sections: [
+            'Les lichens peuvent se reproduire de façon asexuée (on dit aussi végétative) par plusieurs moyens. Un fragment détaché d’un thalle peut donner un nouveau thalle, génétiquement identique à celui dont il provient. Beaucoup de lichens sont cassants lorsqu’ils sont secs, et se fragmentent facilement, par exemple quand un animal marche dessus ; cela vaut surtout pour les formes foliacées et crustacées. Cette fragmentation est une forme « accidentelle » de reproduction végétative.',
+            'D’autres moyens sont plus spécialisés. Les sorédies sont de minuscules granules poudreux visibles à la surface du thalle, chacune formée de quelques cellules du photobionte entourées de filaments fongiques. Les isidies sont de petites excroissances simples ou ramifiées du thalle, elles aussi faites de cellules fongiques et de cellules du photobionte. Sorédies et isidies se détachent et se dispersent facilement, et contiennent tout ce qui est nécessaire pour former un nouveau thalle. Certaines espèces ne produisent ni les unes ni les autres, d’autres produisent les deux, d’autres une seule des deux sortes.',
+            'Seul le partenaire fongique se reproduit de façon sexuée. Les spores sont souvent produites dans une structure durable en forme de soucoupe, l’apothécie, visible à l’œil nu chez beaucoup d’espèces. Certains lichens produisent leurs spores dans des périthèces, de petites pustules hémisphériques, en général noires, à l’intérieur desquelles se forment les asques. Les lichens graphidés ont des apothécies allongées et étroites, les lirelles, qui ressemblent à de courts traits d’écriture sur le thalle : le nom « graphidé » vient d’un mot grec qui désigne l’écriture.',
+            'Une spore de lichen ne contient que le champignon. Pour former un lichen, elle doit rencontrer un photobionte compatible dans son environnement. À l’inverse, les fragments, les sorédies et les isidies emportent déjà les deux partenaires. Selon une synthèse du Département indien des sciences et technologies, un lichen qui se reproduit par fragments conserve probablement la même espèce de photobionte partout où on le trouve, tandis que les lichens qui se reproduisent par spores doivent « choisir » leur photobionte dans le milieu environnant.',
+            'Les spores fongiques sont très petites et, une fois éjectées dans l’air, elles peuvent être emportées par le moindre souffle. L’eau est un autre agent de dispersion, et les animaux en sont un troisième : des oiseaux migrateurs peuvent ramasser par inadvertance des propagules végétatives et les transporter sur de longues distances.',
+            'Il en résulte divers types de répartition géographique : espèces endémiques d’une région, espèces gondwaniennes, espèces bipolaires, espèces pratiquement cosmopolites et bien d’autres modèles. Certaines espèces à large répartition le sont naturellement, d’autres ont été dispersées involontairement par l’être humain.'
+          ],
+          example: {
+            statement: 'Un lichen produit des sorédies. Cette reproduction est-elle sexuée ? Pourquoi une sorédie peut-elle donner un nouveau lichen à elle seule ?',
+            calculation: 'Une sorédie est faite de quelques cellules du photobionte entourées de filaments fongiques : elle contient donc les deux partenaires et n’a pas besoin de rencontrer un photobionte.',
+            answer: 'La reproduction par sorédies est végétative (asexuée). Une sorédie porte déjà le champignon et le photobionte, donc elle contient tout ce qu’il faut pour former un nouveau thalle.'
+          },
+          exercise: {
+            question: 'Quel partenaire du lichen se reproduit de façon sexuée ?',
+            answer: 'Seul le partenaire fongique (le champignon) : il produit des spores, souvent dans des apothécies.'
+          },
+          exercises: [
+            {
+              question: 'Quelle est la différence entre une sorédie et une isidie ?',
+              answer: 'Une sorédie est un minuscule granule poudreux formé de quelques cellules du photobionte entourées de filaments fongiques ; une isidie est une petite excroissance du thalle, simple ou ramifiée. Les deux contiennent des cellules des deux partenaires.'
+            },
+            {
+              question: 'Qu’est-ce qu’une apothécie ?',
+              answer: 'Une structure fongique durable, souvent en forme de soucoupe ou de disque, où le champignon produit ses spores. Elle est visible à l’œil nu chez beaucoup d’espèces.'
+            },
+            {
+              question: 'Pourquoi une spore de lichen ne suffit-elle pas à former un lichen ?',
+              answer: 'Parce qu’une spore ne contient que le champignon : elle doit rencontrer un photobionte compatible dans son environnement.'
+            },
+            {
+              question: 'Que signifie le terme « graphidé » ?',
+              answer: 'Il vient d’un mot grec qui désigne l’écriture : les apothécies allongées de ces lichens (les lirelles) ressemblent à de courts traits sur le thalle.'
+            }
+          ],
+          sources: [
+            { title: 'Australian National Botanic Gardens — What is a lichen?', url: 'https://anbg.gov.au/lichen/what-is-lichen.html' },
+            { title: 'Science Notes — What is a lichen? Definition and facts', url: 'https://sciencenotes.org/what-is-a-lichen-definition-and-facts/' },
+            { title: 'India Science, Technology & Innovation — Photobiont diversity in lichens occurring in varied ecological conditions', url: 'https://www.indiascienceandtechnology.gov.in/research/photobiont-diversity-lichens-occurring-varied-ecological-conditions-india' }
+          ]
+        }
+      },
+
+      {
+        id: 'lichens-ecologie',
+        title: 'Écologie : habitats, pionniers et résistance aux conditions extrêmes',
+        field: 'Écologie · Lichens et milieux',
+        summary: 'Comprendre où vivent les lichens, quel est leur rôle dans les écosystèmes et pourquoi ils tolèrent des conditions que peu d’organismes supportent.',
+        lesson: {
+          sections: [
+            'On trouve des lichens dans presque toutes les régions terrestres, des zones polaires libres de glace jusqu’aux tropiques, des forêts tropicales aux déserts sans dunes mobiles. Quelques espèces sont aquatiques. Les substrats sont très variés : sol, roche, bois, os, mais aussi bitume, béton, verre, toile ou métal. Il faut penser non seulement aux grands habitats, mais aussi aux microhabitats : en forêt tropicale, certaines espèces ne poussent que sur les feuilles de plantes à fleurs, d’autres seulement sur l’écorce.',
+            'Les lichens font partie des premiers organismes à coloniser des surfaces nues, comme des talus de route, des affleurements rocheux ou des cendres volcaniques. Ils retiennent l’humidité et les débris organiques apportés par le vent, puis contribuent aux dépôts organiques quand ils meurent et se décomposent, préparant ainsi l’installation de plantes ultérieures. Il s’agit d’un rôle actuel dans les écosystèmes, qu’il ne faut pas confondre avec l’histoire ancienne des lichens, abordée au dernier chapitre.',
+            'L’azote représente environ 80 % du volume de l’atmosphère, mais la plupart des organismes ne peuvent pas l’utiliser directement. Les cyanobactéries en sont capables : on dit qu’elles fixent l’azote atmosphérique. Les lichens dont le photobionte est une cyanobactérie fixent donc de l’azote, qui devient disponible pour les plantes après la mort et la décomposition du thalle, ou par les excréments des herbivores qui en consomment. Même sans fixer l’azote, les lichens contribuent aux cycles des nutriments : ils absorbent des éléments minéraux par leur thalle, et dans les forêts où les arbres sont couverts de lichens épiphytes, leur grande surface capte efficacement la brume et la pluie.',
+            'Les lichens jouent d’autres rôles. Des vertébrés en mangent : le renne et le caribou, en Amérique du Nord et en Eurasie, se nourrissent de Cladina rangifera pendant l’hiver, quand la végétation est rare ; ils maigrissent quand même en hiver, mais ce lichen est essentiel à leur survie. Certains lichens fixent le sable et le sol et aident à stabiliser les dunes et à limiter l’érosion. Dans les régions arides et semi-arides, associés à des bryophytes, ils forment de vastes croûtes biologiques qui maintiennent la structure du sol. Les colonies de lichens offrent aussi des niches à de nombreux invertébrés, souvent minuscules, qui sont mangés par d’autres animaux.',
+            'Beaucoup de lichens tolèrent des conditions extrêmes. L’un des traits de cette résistance est la poïkilohydrie : le lichen n’a pas de mécanisme pour réguler sa teneur en eau, et il supporte donc une dessiccation extrême tout en tolérant aussi de forts rayonnements ultraviolets (UV). Quand les conditions sont très dures, il peut rester en état latent ; si l’humidité revient et que la température se rapproche de l’optimum (autour de 10 °C selon un résumé de la mission Foton M-2), le lichen déshydraté reprend la photosynthèse.',
+            'Cette résistance a été testée dans l’espace. Dans l’expérience LICHENS (2005), des échantillons de Rhizocarpon geographicum et de Xanthoria elegans, récoltés à plus de 2 000 m d’altitude dans les montagnes d’Espagne centrale, ainsi que des communautés endolithiques des Vallées sèches de l’Antarctique, ont été exposés sur la plate-forme BIOPAN-5 du satellite russe Foton-M2, lancé depuis Baïkonour le 31 mai 2005. Après 16 jours dans l’espace, tous les lichens exposés montraient une activité photosynthétique presque identique à celle d’avant le vol, et après une déshydratation extrême provoquée par le vide, ils ont retrouvé toute leur activité métabolique en 24 heures. Les auteurs en concluent que la plupart des cellules de champignons et d’algues lichénisés peuvent survivre dans l’espace, sous des conditions d’UV et de rayonnement cosmique létales pour les bactéries et d’autres micro-organismes. Il s’agit d’une exposition de 16 jours, et non d’une preuve d’invulnérabilité.'
+          ],
+          example: {
+            statement: 'L’expérience LICHENS (2005) a duré 16 jours en orbite. L’expérience LIFE, sur la plate-forme EXPOSE-E de la Station spatiale internationale, a duré environ un an et demi. Environ combien de fois la seconde est-elle plus longue que la première ?',
+            calculation: 'Un an et demi correspond à environ 1,5 × 365 = 547 jours. On calcule 547 ÷ 16 ≈ 34.',
+            answer: 'Environ 34 fois plus longue.'
+          },
+          exercise: {
+            question: 'Que signifie « poïkilohydrie » et pourquoi cette propriété est-elle utile à un lichen ?',
+            answer: 'Le lichen ne régule pas sa teneur en eau : il peut supporter une dessiccation extrême en restant en état latent, puis reprendre son activité quand l’humidité revient. Cela lui permet de vivre dans des milieux très secs, froids ou exposés aux UV.'
+          },
+          exercises: [
+            {
+              question: 'Pourquoi les lichens à cyanobactéries enrichissent-ils les milieux en azote ?',
+              answer: 'Parce que les cyanobactéries fixent l’azote atmosphérique. Cet azote devient disponible pour les plantes après la mort et la décomposition du thalle, ou par les excréments des herbivores qui mangent le lichen.'
+            },
+            {
+              question: 'Quel lichen est mangé par les rennes et les caribous en hiver ?',
+              answer: 'Cladina rangifera. Les animaux maigrissent malgré tout, mais ce lichen est essentiel à leur survie hivernale.'
+            },
+            {
+              question: 'Pourquoi dit-on que les lichens sont des organismes pionniers ?',
+              answer: 'Parce qu’ils figurent parmi les premiers organismes à coloniser des surfaces nues (talus, affleurements rocheux, cendres volcaniques) : ils retiennent l’humidité et les débris organiques, puis contribuent aux dépôts organiques en mourant, ce qui prépare l’arrivée de plantes.'
+            },
+            {
+              question: 'Qu’a montré l’expérience LICHENS de 2005 sur Foton-M2 ?',
+              answer: 'Que Rhizocarpon geographicum et Xanthoria elegans, exposés 16 jours dans l’espace, retrouvaient une activité photosynthétique presque identique à celle d’avant le vol, et reprenaient toute leur activité métabolique en 24 heures après déshydratation par le vide.'
+            }
+          ],
+          sources: [
+            { title: 'Australian National Botanic Gardens — What is a lichen?', url: 'https://anbg.gov.au/lichen/what-is-lichen.html' },
+            { title: 'Sancho et al. (2007), Astrobiology 7 : 443-454 — Lichens survive in space: results from the 2005 LICHENS experiment (DLR)', url: 'https://elib.dlr.de/52968/' },
+            { title: 'de la Torre, Horneck, Sancho — The Lichens experiment at Foton M-2 mission: survival capacity in space (COSPAR 2006)', url: 'https://meetings.copernicus.org/www.cosis.net/abstracts/COSPAR2006/03636/COSPAR2006-A-03636.pdf' },
+            { title: 'Springer — Morphological and anatomical traits of lichens used in astrobiological research (Origins of Life and Evolution of Biospheres)', url: 'https://link.springer.com/doi/10.1007/s11084-013-9337-2' },
+            { title: 'Astronomy.com — Antarctic fungi survive Martian conditions on ISS', url: 'https://www.astronomy.com/science/antarctic-fungi-survive-martian-conditions-on-iss/' }
+          ]
+        }
+      },
+
+      {
+        id: 'lichens-bioindicateurs',
+        title: 'Les lichens, témoins de l’air et du temps : bioindication et lichénométrie',
+        field: 'Environnement et géologie · Pollution de l’air et datation',
+        summary: 'Voir comment les lichens servent à surveiller la qualité de l’air et à estimer l’âge de surfaces rocheuses, et pourquoi ces méthodes ont des limites.',
+        lesson: {
+          sections: [
+            'Les lichens concentrent des nutriments à partir de sources très diluées et absorbent sans distinction de nombreuses substances toxiques de l’atmosphère, comme le dioxyde de soufre, les fluorures et les métaux lourds. Beaucoup d’espèces sont très sensibles à la pollution de l’air, en particulier au dioxyde de soufre. Le soufre endommage la chlorophylle ; si le niveau est assez élevé, le photobionte meurt, ce qui entraîne la mort du champignon, incapable de survivre seul. En règle générale, les lichens fruticuleux sont les moins résistants à la pollution et les lichens crustacés les plus résistants.',
+            'Comme les espèces diffèrent par leur sensibilité, noter celles qui poussent dans une zone et leur état de santé permet de surveiller les niveaux de pollution. L’idée d’utiliser les lichens ainsi a été formulée dès 1859 au moins, puis développée plus systématiquement en 1866 par le lichénologue finlandais William Nylander, à la suite de ses études autour de Paris. Selon l’Encyclopédie de l’environnement, Nylander a constaté entre 1866 et 1896 la disparition totale des lichens du jardin du Luxembourg, alors qu’une trentaine d’espèces y étaient présentes au départ.',
+            'En 1970, David Hawksworth et Francis Rose publient dans Nature (volume 227, pages 145-148) une échelle qualitative pour estimer la pollution de l’air par le dioxyde de soufre en Angleterre et au pays de Galles à partir des lichens épiphytes. C’est une échelle à dix niveaux, testée lors d’enquêtes pilotes en Angleterre et au pays de Galles, dans le sud-est de l’Angleterre et dans la ville de Leicester. C’était la méthode la plus utilisée de ce type.',
+            'À la fin des années 1980, les niveaux de dioxyde de soufre dans l’air ont fortement baissé et les lichens ont recommencé à apparaître sur les arbres du jardin du Luxembourg, puis dans d’autres villes françaises. La méthode de Hawksworth et Rose ne pouvait donc plus être utilisée telle quelle. Un indice fondé sur la biodiversité des lichens épiphytes (calculé à partir de la présence ou de l’absence, de la fréquence et du recouvrement des espèces) l’a remplacée. D’autres polluants sont étudiés de la même façon : autour de Grenoble, on a ainsi établi trois classes de sensibilité des lichens au dioxyde d’azote émis par la circulation.',
+            'Les lichens servent aussi à estimer l’âge de surfaces : c’est la lichénométrie. Le principe est de mesurer le diamètre du plus grand thalle d’une espèce donnée sur une roche et d’en déduire depuis combien de temps cette roche est exposée, d’après une vitesse de croissance radiale supposée. On utilise surtout des lichens du groupe Rhizocarpon geographicum (le lichen cartographique). La méthode est associée à Roland Beschel, qui publie en 1950, à propos des Alpes, le premier article consacré exclusivement à ce sujet. Elle a surtout servi à dater des formes glaciaires de l’Holocène récent (environ les derniers 1 000 ans), notamment les moraines du « Petit Âge glaciaire ».',
+            'La lichénométrie a de sérieuses limites. Il faut construire pour chaque région une courbe de croissance à partir de surfaces d’âge connu. Les vitesses de croissance varient dans l’espace et dans le temps, et celle de Rhizocarpon diminue avec l’âge du thalle. Une courbe de croissance construite dans la chaîne des Cascades (États-Unis) montre ainsi trois phases de croissance de plus en plus lentes : rapide de 8 à 20 ans, linéaire de 20 à 145 ans, lente au-delà, avec une incertitude sur les très vieux thalles. Des lichens peuvent aussi avoir commencé à pousser avant que le bloc soit déposé dans une moraine (problème d’héritage). Des valeurs de 0,12 mm par an et de 0,14 mm par an ont été obtenues en Alaska à partir d’une pierre tombale de 1950 et d’un engin immobile depuis 30 ans, et ne donnent que des âges minimaux. L’article « Lichenometric dating: science or pseudo-science? » (Quaternary Research, 2015) montre que la méthode reste débattue.'
+          ],
+          example: {
+            statement: 'Sur un bloc de moraine, le plus grand thalle de Rhizocarpon geographicum mesure 18 mm de diamètre. On suppose, de façon simplifiée, une croissance constante de 0,12 mm par an (valeur obtenue localement en Alaska). Quel âge minimal obtient-on ?',
+            calculation: 'Âge = diamètre ÷ vitesse de croissance = 18 ÷ 0,12 = 150 ans.',
+            answer: 'Environ 150 ans, comme âge minimal. Ce calcul est très simplifié : la vitesse de croissance varie et le lichen a mis un certain temps à s’installer sur la roche.'
+          },
+          exercise: {
+            question: 'Pourquoi la mort du photobionte entraîne-t-elle celle du champignon d’un lichen exposé au dioxyde de soufre ?',
+            answer: 'Parce que le soufre endommage la chlorophylle du photobionte. Quand celui-ci meurt, le champignon ne reçoit plus de glucides et il est incapable de survivre seul.'
+          },
+          exercises: [
+            {
+              question: 'Qui a développé l’usage des lichens comme moniteurs de la pollution de l’air en 1866, et à partir de quelle ville ?',
+              answer: 'Le lichénologue finlandais William Nylander, à la suite de ses études des lichens autour de Paris.'
+            },
+            {
+              question: 'Qu’ont publié Hawksworth et Rose en 1970 ?',
+              answer: 'Une échelle qualitative à dix niveaux, publiée dans Nature, pour estimer la pollution de l’air par le dioxyde de soufre à partir des lichens épiphytes, testée en Angleterre et au pays de Galles, dans le sud-est de l’Angleterre et à Leicester.'
+            },
+            {
+              question: 'Pourquoi les lichens sont-ils revenus sur les arbres du jardin du Luxembourg à la fin des années 1980 ?',
+              answer: 'Parce que les niveaux de dioxyde de soufre dans l’air avaient fortement baissé.'
+            },
+            {
+              question: 'Citez deux limites de la lichénométrie.',
+              answer: 'Les vitesses de croissance varient dans l’espace et dans le temps (et celle de Rhizocarpon diminue avec l’âge) ; des lichens peuvent avoir commencé à pousser avant le dépôt du bloc (héritage). Il faut aussi une courbe d’étalonnage propre à chaque région.'
+            }
+          ],
+          sources: [
+            { title: 'Australian National Botanic Gardens — What is a lichen?', url: 'https://anbg.gov.au/lichen/what-is-lichen.html' },
+            { title: 'Hawksworth & Rose (1970), Nature 227 : 145-148 — Qualitative scale for estimating sulphur dioxide air pollution using epiphytic lichens', url: 'https://www.nature.com/articles/227145a0' },
+            { title: 'Encyclopédie de l’environnement — Lichens and environmental quality', url: 'https://www.encyclopedie-environnement.org/en/life/lichens-environmental-quality/' },
+            { title: 'Antarctic Glaciers — Lichenometry', url: 'https://www.antarcticglaciers.org/glacial-geology/dating-glacial-sediments-2/cryospheric-geomorphology-dating-glacial-landforms/lichenometry/' },
+            { title: 'Quaternary Research — A Rhizocarpon geographicum growth curve for the Cascade Range of Washington and northern Oregon', url: 'https://resolve.cambridge.org/core/journals/quaternary-research/article/rhizocarpon-geographicum-growth-curve-for-the-cascade-range-of-washington-and-northern-oregon-usa/35DFED8C0006E3464F5527886D186B79' },
+            { title: 'GSA 2002 — Dating of glacial landforms using lichenometry, Matanuska Glacier, Alaska', url: 'https://gsa.confex.com/gsa/2002NC/webprogram/Paper32236.html' },
+            { title: 'EPFL Graph Search — Lichenometry (concept)', url: 'https://graphsearch.epfl.ch/en/concept/1354256' },
+            { title: 'Land (2023) — Lichenometric dating and its limitations and problems: a guide for practitioners', url: 'https://doi.org/10.3390/land12030611' }
+          ]
+        }
+      },
+
+      {
+        id: 'lichens-fossiles',
+        title: 'Origine et fossiles des lichens : ce que disent les archives géologiques',
+        field: 'Paléontologie · Du Précambrien au Cénozoïque',
+        summary: 'Situer les plus anciens lichens connus, comprendre pourquoi leur registre fossile est rare et distinguer les fossiles certains des interprétations discutées.',
+        lesson: {
+          sections: [
+            'Les registres fossiles de lichens sont rares. D’après le Musée de paléontologie de l’Université de Californie à Berkeley (UCMP), la plupart des habitats où les lichens dominent (toundra, montagnes, déserts) ont très peu de chances de fournir des fossiles. Cela explique que l’on dispose de peu de fossiles, et que leur interprétation soit souvent discutée.',
+            'Des microfossiles filamenteux du Protérozoïque inférieur, trouvés dans le Witwatersrand (Afrique du Sud) et datés de 2,2 à 2,7 milliards d’années, ont été interprétés comme des associations de type lichen entre deux microbes différents. Mais les filaments ne mesurent que 1 à 2 micromètres de diamètre, ce qui est plus petit que la plupart des champignons et proche de la taille de bactéries filamenteuses. De plus, des microstructures similaires peuvent être produites en laboratoire par des réactions chimiques, et certains paléontologues doutent qu’il s’agisse de vrais fossiles. S’ils sont réels, ils ne sont peut-être pas des lichens au sens habituel du terme.',
+            'Le plus ancien fossile de lichen certain date du Dévonien inférieur, il y a environ 400 millions d’années, dans le Rhynie Chert près d’Aberdeen, en Écosse (Taylor, Hass, Remy et Kerp, Nature, 1995). Dans leur note, les auteurs le décrivent comme le plus ancien lichen fossile sans équivoque. Le thalle fossile forme des bandes d’environ 1 à 2 mm d’épaisseur où les hyphes sont étroitement serrées ; à la surface, de nombreuses poches contiennent un réseau tridimensionnel d’hyphes, d’environ 25 micromètres de diamètre en moyenne. Les hyphes, sans cloisons, mesurent 1 à 4 micromètres de diamètre. Le photobionte fossile, une cyanobactérie, partage de nombreux traits avec des cyanobactéries actuelles comme Gloeocapsa ou Chroococcidiopsis.',
+            'Ce fossile a été nommé Winfrenatia reticulata par Taylor, Hass et Kerp en 1997 ; le genre ne contient qu’une seule espèce, dont le nom fait référence à l’aspect réticulé de sa surface. Un réexamen de lames minces du Rhynie Chert, publié dans Paleontological Journal en 2009, a conduit à une interprétation plus complexe : deux cyanobactéries distinctes partageraient l’association avec un seul champignon, ce qui ferait de Winfrenatia une symbiose à trois partenaires plutôt qu’un lichen classique. Selon l’article Wikipédia consacré à ce fossile, aucun lichen actuel n’associe un champignon de type glomeromycète à la fois à des cyanobactéries filamenteuses et à des cyanobactéries coccoïdes.',
+            'À peu près à la même époque vivaient sur terre plusieurs organismes énigmatiques : les nématophytes (en tapis), les spongiophytes (en croûtes) et le gigantesque Prototaxites, d’abord décrit comme un tronc de conifère. Ils sont constitués de filaments entremêlés, et certains paléontologues ont proposé que ce soient des lichens inhabituels. Selon l’UCMP, les spongiophytes pourraient plausiblement être des lichens (Stein et coll., 1993), alors que les filaments des nématophytes et de Prototaxites n’ont pas le type de ramification des hyphes de champignons, et représenteraient plutôt des branches isolées d’une lignée d’algues, des « expériences ratées » de colonisation terrestre. La nature de ces organismes reste un sujet de discussion.',
+            'Quelques fossiles de lichens sont connus dans des roches du Mésozoïque et du Cénozoïque. Ils comprennent au moins deux genres dans l’ambre de la Baltique, et un fossile de Lobaria dans des roches du Miocène de Redding Creek (Californie), que l’UCMP rapproche d’un Lobaria pulmonaria actuel.',
+            'Il existe aussi des indices plus anciens et plus discutés. En 2005, Yuan, Xiao et Taylor ont décrit dans Science une « symbiose de type lichen » vieille d’environ 600 millions d’années, dans la formation de Doushantuo, au sud de la Chine. Trois spécimens marins, issus d’un milieu sous-marin peu profond riche en algues, montrent des partenaires fongiques et algaux ; selon Shuhai Xiao, il s’agit d’une association « de type lichen » lâche. Il n’est pas certain que cette association soit l’ancêtre direct des lichens de 400 millions d’années. Enfin, l’hypothèse de Retallack (1994), qui voyait dans les fossiles de l’Édiacarien des lichens ou des organismes proches, a été critiquée par Waggoner (1995) et n’a pas été largement acceptée.'
+          ],
+          example: {
+            statement: 'Le lichen de Rhynie date d’environ 400 millions d’années et l’association de Doushantuo d’environ 600 millions d’années. Quelle est la différence d’âge, en millions d’années ?',
+            calculation: 'On soustrait : 600 − 400 = 200.',
+            answer: 'Environ 200 millions d’années. Ces chiffres sont des estimations, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi le fossile de Rhynie est-il qualifié de « plus ancien lichen sans équivoque » alors que d’autres structures sont plus anciennes ?',
+            answer: 'Parce que les structures plus anciennes (Witwatersrand, Doushantuo, Édiacarien) sont des interprétations discutées, ou ont été décrites comme associations « de type lichen », alors que le fossile de Rhynie montre clairement un champignon et un photobionte cyanobactérien dans un même thalle.'
+          },
+          exercises: [
+            {
+              question: 'Quel est l’âge du plus ancien lichen fossile certain, et où a-t-il été trouvé ?',
+              answer: 'Environ 400 millions d’années (Dévonien inférieur), dans le Rhynie Chert près d’Aberdeen, en Écosse.'
+            },
+            {
+              question: 'Pourquoi le registre fossile des lichens est-il pauvre ?',
+              answer: 'Parce que les habitats où les lichens dominent (toundra, montagnes, déserts) ont très peu de chances de produire des fossiles.'
+            },
+            {
+              question: 'L’hypothèse selon laquelle les fossiles de l’Édiacarien seraient des lichens est-elle acceptée ?',
+              answer: 'Non. Proposée par Retallack en 1994, elle a été critiquée par Waggoner en 1995 et n’a pas été largement acceptée.'
+            },
+            {
+              question: 'Pourquoi Winfrenatia est-il un cas particulier selon le réexamen de 2009 ?',
+              answer: 'Parce que deux cyanobactéries distinctes partageraient l’association avec un seul champignon : ce serait une symbiose à trois partenaires plutôt qu’un lichen classique.'
+            }
+          ],
+          sources: [
+            { title: 'UCMP Berkeley — Lichens: fossil record', url: 'https://ucmp.berkeley.edu/fungi/lichens/lichenfr.html' },
+            { title: 'Taylor, Hass, Remy & Kerp (1995), Nature 378 : 244 — The oldest fossil lichen', url: 'https://www-archiv.fdm.uni-hamburg.de/b-online/kerp/nature.html' },
+            { title: 'Wikipedia — Winfrenatia', url: 'https://en.wikipedia.org/wiki/Winfrenatia' },
+            { title: 'Virginia Tech — Evidence of 600-million-year old fungi-algae symbiosis discovered in marine fossils', url: 'https://vtechworks.lib.vt.edu/handle/10919/21808' },
+            { title: 'University of Aberdeen — Evidence for plant-animal interactions (Rhynie chert)', url: 'https://abdn.ac.uk/geosciences/departments/geology/evidence-for-plantanimal-interactions-1903.php' }
+          ]
+        }
+      }
+    ]
+  },
+
 ];
+
