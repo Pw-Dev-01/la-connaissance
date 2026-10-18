@@ -19,6 +19,35 @@ const DEFAULTS = {
 
 const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
+const escHtml = (v) =>
+  String(v).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+// Génère index.html et cours.html depuis modele/ pour les dossiers qui ont un
+// meta.json mais pas encore ces pages. Les fichiers existants ne sont jamais modifiés.
+function generatePages(folder, c) {
+  for (const page of ["index.html", "cours.html"]) {
+    const target = join(folder, page);
+    const modelPath = join("modele", page);
+    if (existsSync(target)) continue;
+    if (!existsSync(modelPath)) {
+      console.warn(`⚠ modèle ${modelPath} introuvable : ${target} non généré`);
+      continue;
+    }
+    const values = {
+      TITLE: c.title,
+      TITLE_UPPER: c.title.toLocaleUpperCase("fr"),
+      LETTER: c.letter || Array.from(c.title)[0].toLocaleUpperCase("fr"),
+      DESCRIPTION: c.description || c.title,
+      DATAFILE: c.dataFile,
+      ID: c.id,
+    };
+    let html = readFileSync(modelPath, "utf8");
+    for (const [k, v] of Object.entries(values)) html = html.split(`{{${k}}}`).join(escHtml(v));
+    writeFileSync(target, html);
+    console.log(`+ ${target} généré depuis ${modelPath}`);
+  }
+}
+
 const folders = readdirSync(".").filter(
   (n) => /^cours-/.test(n) && statSync(n).isDirectory()
 );
@@ -45,6 +74,7 @@ const courses = folders.map((folder) => {
     ...d,
     ...meta,
   };
+  if (existsSync(metaPath)) generatePages(folder, merged);
   merged.href = `${folder}/${merged.entry}`;
   if (!existsSync(join(folder, merged.entry))) {
     console.warn(`⚠ ${merged.href} introuvable (lien cassé ?)`);
