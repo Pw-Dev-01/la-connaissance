@@ -1,7 +1,7 @@
 {
   "title": "Littérature",
   "symbol": "📚",
-  "description": "Les grands écrivains français, américains et russes : œuvres majeures, courants littéraires et contexte historique, avec leçons, exemples et exercices corrigés.",
+  "description": "Écrivains, poètes et œuvres majeures, courants littéraires et contexte historique, avec leçons, exemples et exercices corrigés.",
   "order": 11,
   "entry": "index.html",
   "dataFile": "litterature-data.js",
