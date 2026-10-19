@@ -896,6 +896,215 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'ecrivains-allemagne',
+  sortYear: 1749,
+  title: 'Les grands écrivains allemands',
+  note: 'Parcours en quatre chapitres consacré à des écrivains majeurs de langue allemande, du classicisme de Weimar à la littérature moderne. Les dates sont des repères historiques ; la littérature de langue allemande s’est développée dans plusieurs espaces culturels, notamment en Autriche et à Prague.',
+  chapters: [
+    {
+      id: 'goethe-schiller-classicisme',
+      title: 'Goethe, Schiller et le classicisme de Weimar',
+      field: 'Littérature allemande · XVIIIe et XIXe siècles',
+      summary: 'Étudier Goethe et Schiller, leurs œuvres majeures, leur conception de la liberté et leur contribution au classicisme de Weimar.',
+      lesson: {
+        sections: [
+          'Johann Wolfgang von Goethe (1749-1832) est un écrivain allemand dont l’œuvre comprend poésie, théâtre, roman et écrits scientifiques. Les Souffrances du jeune Werther, publié en 1774, contribue à sa notoriété européenne. Faust, élaboré sur une longue période, interroge le désir de connaissance, l’ambition, la responsabilité et les limites humaines. Sa première partie paraît en 1808 et sa seconde en 1832.',
+          'Friedrich Schiller (1759-1805) est poète, dramaturge et penseur de l’esthétique. Les Brigands et Guillaume Tell abordent la liberté, la justice, le pouvoir et les conflits entre l’individu et la société. Ses réflexions sur l’éducation esthétique étudient les rapports entre sensibilité et raison. Ses pièces mettent en scène des dilemmes moraux et politiques plutôt que de proposer de simples récits historiques.',
+          'Goethe et Schiller deviennent des partenaires intellectuels importants à Weimar à partir des années 1790. Le classicisme de Weimar désigne une orientation littéraire associée notamment à la formation de l’individu, à la recherche d’équilibre artistique et au dialogue avec l’Antiquité. Goethe avait auparavant participé au Sturm und Drang, mouvement qui accordait une place importante à l’émotion et à l’affirmation individuelle. Ces trajectoires montrent que les mouvements littéraires ne résument jamais toute la carrière d’un écrivain.'
+        ],
+        example: {
+          statement: 'La première partie de Faust paraît en 1808 et la seconde en 1832. Quel intervalle sépare ces publications ?',
+          calculation: '1832 - 1808 = 24 ans.',
+          answer: 'Les deux publications sont séparées par 24 ans. La seconde paraît l’année de la mort de Goethe.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il réducteur de présenter Goethe uniquement comme l’auteur de Faust ?',
+          answer: 'Son œuvre comprend également des romans, des poèmes, des pièces de théâtre et des écrits scientifiques.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Les Souffrances du jeune Werther sont-elles publiées ?',
+            answer: 'En 1774.'
+          },
+          {
+            question: 'Quels thèmes retrouve-t-on dans les drames de Schiller ?',
+            answer: 'La liberté, la justice et les conflits entre l’individu, le pouvoir et la société.'
+          },
+          {
+            question: 'Que désigne le classicisme de Weimar ?',
+            answer: 'Une orientation littéraire associée notamment à Goethe et Schiller, qui valorise la formation de l’individu, la réflexion esthétique et le dialogue avec l’Antiquité.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — Johann Wolfgang von Goethe',
+            url: 'https://www.britannica.com/biography/Johann-Wolfgang-von-Goethe'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Friedrich Schiller',
+            url: 'https://www.britannica.com/biography/Friedrich-Schiller'
+          },
+          {
+            title: 'Goethe-Institut — Littérature',
+            url: 'https://www.goethe.de/en/kul/lit.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'romantisme-grimm-heine',
+      title: 'Le romantisme allemand : les frères Grimm et Heinrich Heine',
+      field: 'Littérature allemande · Fin du XVIIIe et XIXe siècles',
+      summary: 'Découvrir les traditions populaires, les contes, la poésie romantique et le regard critique porté sur la société.',
+      lesson: {
+        sections: [
+          'Le romantisme allemand se développe à la fin du XVIIIe siècle et au début du XIXe siècle. Ses écrivains explorent notamment la nature, le rêve, le mystère, l’histoire, l’imagination et les traditions culturelles. Il ne constitue pas un mouvement uniforme : les auteurs partagent certaines préoccupations, mais leurs objectifs et leurs styles diffèrent. Les transformations politiques et culturelles de l’Europe contribuent à façonner ce contexte littéraire.',
+          'Jacob Grimm (1785-1863) et Wilhelm Grimm (1786-1859) sont connus pour leurs recueils de contes, notamment les Kinder- und Hausmärchen, dont le premier volume paraît en 1812. Leur travail participe à l’intérêt pour les traditions orales, les langues et l’histoire culturelle. Les contes ont été révisés au fil des éditions : il serait inexact de considérer chaque récit comme une transcription intégrale et inchangée d’une seule version orale.',
+          'Heinrich Heine (1797-1856) est un poète et essayiste dont l’écriture associe lyrisme, ironie et critique sociale. Son Livre des chants paraît en 1827. Ses textes peuvent reprendre certains thèmes romantiques tout en prenant leurs distances avec l’idéalisation du passé. Installé à Paris à partir de 1831, Heine illustre aussi les échanges culturels entre les espaces littéraires européens.'
+        ],
+        example: {
+          statement: 'Les contes des frères Grimm paraissent en 1812 et le Livre des chants de Heine en 1827. Quel ouvrage paraît en premier ?',
+          calculation: '1827 - 1812 = 15 ans.',
+          answer: 'Le recueil des frères Grimm paraît en premier, 15 ans avant le Livre des chants.'
+        },
+        exercise: {
+          question: 'Pourquoi ne faut-il pas dire que les frères Grimm ont simplement inventé les contes qu’ils publient ?',
+          answer: 'Leur travail s’appuie en partie sur des récits et traditions préexistants, qu’ils collectent, remanient et publient dans différentes éditions.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’un des objectifs du travail des frères Grimm ?',
+            answer: 'Recueillir et publier des contes populaires et contribuer à l’étude des langues et des traditions.'
+          },
+          {
+            question: 'En quelle année paraît la première édition des Kinder- und Hausmärchen ?',
+            answer: 'En 1812.'
+          },
+          {
+            question: 'Quels procédés caractérisent souvent l’écriture de Heine ?',
+            answer: 'Le lyrisme, l’ironie et l’observation critique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — Brothers Grimm',
+            url: 'https://www.britannica.com/biography/Brothers-Grimm'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Heinrich Heine',
+            url: 'https://www.britannica.com/biography/Heinrich-Heine'
+          },
+          {
+            title: 'Encyclopaedia Britannica — German literature',
+            url: 'https://www.britannica.com/art/German-literature'
+          }
+        ]
+      }
+    },
+    {
+      id: 'kafka-thomas-mann-modernite',
+      title: 'Kafka et Thomas Mann : inquiétude moderne et crise de la société',
+      field: 'Littérature de langue allemande · Fin du XIXe et XXe siècles',
+      summary: 'Étudier Kafka et Thomas Mann, deux écrivains qui explorent de manière différente l’identité, les institutions, la culture et les transformations de la société moderne.',
+      lesson: {
+        sections: [
+          'Franz Kafka (1883-1924), né à Prague dans l’Empire austro-hongrois, écrit principalement en allemand. La Métamorphose paraît en 1915 et Le Procès est publié à titre posthume en 1925. Ses récits mettent souvent en scène des personnages confrontés à des règles obscures, à l’isolement ou à des situations difficiles à comprendre. Le terme « kafkaïen » évoque fréquemment ce sentiment d’être confronté à un système opaque, mais ne résume pas toute la complexité de son œuvre.',
+          'Thomas Mann (1875-1955) développe une œuvre qui associe observation sociale, ironie et réflexion intellectuelle. Les Buddenbrook, publié en 1901, suit le déclin d’une famille de négociants. La Mort à Venise paraît en 1912 et La Montagne magique en 1924. Mann examine les relations entre l’individu, la culture, la maladie et les transformations historiques. Il reçoit le prix Nobel de littérature en 1929, notamment en reconnaissance de son roman Les Buddenbrook.',
+          'Kafka et Mann ne relèvent pas d’une méthode unique. Kafka construit fréquemment des situations déstabilisantes et des mondes aux règles incertaines. Mann privilégie souvent des constructions romanesques plus amples, nourries d’histoire sociale et de débats intellectuels. Leurs œuvres permettent d’étudier différentes façons dont la littérature moderne interroge l’identité, les institutions et les limites de la compréhension humaine.'
+        ],
+        example: {
+          statement: 'La Métamorphose paraît en 1915 et Le Procès en 1925. Quel intervalle sépare ces publications ?',
+          calculation: '1925 - 1915 = 10 ans.',
+          answer: 'Dix ans séparent les deux publications. Le Procès paraît après la mort de Kafka, survenue en 1924.'
+        },
+        exercise: {
+          question: 'Quelle différence générale peut-on établir entre Kafka et Thomas Mann ?',
+          answer: 'Kafka met souvent en scène des situations opaques et déstabilisantes, tandis que Mann développe fréquemment une observation historique, sociale et intellectuelle plus ample.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle langue Kafka a-t-il principalement écrit ?',
+            answer: 'En allemand.'
+          },
+          {
+            question: 'Quel roman de Thomas Mann suit le déclin d’une famille de négociants ?',
+            answer: 'Les Buddenbrook, publié en 1901.'
+          },
+          {
+            question: 'En quelle année Thomas Mann reçoit-il le prix Nobel de littérature ?',
+            answer: 'En 1929.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — Franz Kafka',
+            url: 'https://www.britannica.com/biography/Franz-Kafka'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Thomas Mann',
+            url: 'https://www.britannica.com/biography/Thomas-Mann'
+          },
+          {
+            title: 'Nobel Prize — Thomas Mann',
+            url: 'https://www.nobelprize.org/prizes/literature/1929/mann/facts/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'brecht-boell-litterature-engagee',
+      title: 'Bertolt Brecht et Heinrich Böll : théâtre, guerre et responsabilité',
+      field: 'Littérature allemande · XXe siècle',
+      summary: 'Explorer le théâtre engagé de Brecht et les récits de Böll sur la guerre, la responsabilité individuelle et la société allemande d’après-guerre.',
+      lesson: {
+        sections: [
+          'Bertolt Brecht (1898-1956) est un dramaturge et poète dont le théâtre rend visibles des mécanismes sociaux et politiques. L’Opéra de quat’sous est créé en 1928 et Mère Courage et ses enfants est créée en 1941. Ces œuvres abordent notamment l’argent, la guerre, les intérêts économiques et les choix moraux. Le théâtre épique associé à Brecht cherche à encourager le public à examiner de façon critique les situations représentées plutôt qu’à recevoir la scène comme une simple illusion réaliste.',
+          'Heinrich Böll (1917-1985) écrit des nouvelles et des romans sur les conséquences de la guerre, le retour à la vie civile, les hypocrisies sociales et les rapports entre individus et institutions. Le Train était à l’heure paraît en 1949. L’Honneur perdu de Katharina Blum, publié en 1974, examine notamment les effets des médias et de la violence publique sur une personne. Böll reçoit le prix Nobel de littérature en 1972.',
+          'Brecht et Böll illustrent deux formes différentes d’engagement littéraire. Brecht utilise souvent le théâtre pour examiner les structures du pouvoir et les rapports économiques. Böll s’intéresse fréquemment aux conséquences concrètes des événements politiques sur les individus. Pour étudier leurs œuvres, il faut distinguer les dates d’écriture, de création scénique et de publication, qui ne coïncident pas toujours.'
+        ],
+        example: {
+          statement: 'L’Opéra de quat’sous est créé en 1928 et L’Honneur perdu de Katharina Blum paraît en 1974. Quel intervalle sépare ces repères ?',
+          calculation: '1974 - 1928 = 46 ans.',
+          answer: 'Quarante-six ans séparent ces deux repères littéraires.'
+        },
+        exercise: {
+          question: 'Comment la littérature peut-elle examiner la responsabilité politique sans se réduire à un discours théorique ?',
+          answer: 'Elle représente des situations, des conflits et leurs conséquences à travers des personnages, des choix et des procédés narratifs ou théâtraux.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’un des objectifs du théâtre épique associé à Brecht ?',
+            answer: 'Encourager le public à examiner de manière critique les situations sociales et politiques.'
+          },
+          {
+            question: 'Quel thème revient fréquemment dans l’œuvre de Böll ?',
+            answer: 'Les conséquences de la guerre et les tensions morales et sociales de l’Allemagne d’après-guerre.'
+          },
+          {
+            question: 'En quelle année Heinrich Böll reçoit-il le prix Nobel de littérature ?',
+            answer: 'En 1972.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — Bertolt Brecht',
+            url: 'https://www.britannica.com/biography/Bertolt-Brecht'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Heinrich Böll',
+            url: 'https://www.britannica.com/biography/Heinrich-Boll'
+          },
+          {
+            title: 'Nobel Prize — Heinrich Böll',
+            url: 'https://www.nobelprize.org/prizes/literature/1972/boll/facts/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 
 ];
 
