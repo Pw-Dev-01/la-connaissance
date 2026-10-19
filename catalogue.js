@@ -19,21 +19,32 @@
 (function () {
   const courseCatalog = (window.courseCatalog || []).filter(Boolean);
 
+  
   // Tri chronologique des branches à partir de sortYear.
+  // La branche grands-livres est toujours placée en dernier.
   // Le catalogue d'origine n'est pas modifié.
   const catalogChrono = [...courseCatalog].sort((a, b) => {
-  const yearA = a.sortYear;
-  const yearB = b.sortYear;
+    const isGrandLivreA = a.id === 'grands-livres';
+    const isGrandLivreB = b.id === 'grands-livres';
 
-  const validA = typeof yearA === 'number' && Number.isFinite(yearA);
-  const validB = typeof yearB === 'number' && Number.isFinite(yearB);
+    if (isGrandLivreA && !isGrandLivreB) return 1;
+    if (!isGrandLivreA && isGrandLivreB) return -1;
 
-  if (validA && validB) return yearA - yearB;
-  if (validA) return -1;
-  if (validB) return 1;
+    const yearA = a.sortYear;
+    const yearB = b.sortYear;
 
-  return 0;
-});
+    const validA =
+      typeof yearA === 'number' && Number.isFinite(yearA);
+    const validB =
+      typeof yearB === 'number' && Number.isFinite(yearB);
+
+    if (validA && validB) return yearA - yearB;
+    if (validA) return -1;
+    if (validB) return 1;
+
+    return 0;
+  });
+
 
   if (!catalogChrono.length) {
     console.error(
