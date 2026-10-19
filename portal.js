@@ -195,6 +195,7 @@ function loadDisciplineData(file) {
    ========================================================= */
 
 
+
 function getBranches(catalog) {
   const branches = (
     Array.isArray(catalog)
@@ -202,40 +203,46 @@ function getBranches(catalog) {
       : Object.values(catalog || {})
   ).filter((branch) => branch && branch.title);
 
+  // Identifier la branche Grands-livres grâce à son ID.
+  const ordinaryBranches = branches.filter(
+    (branch) => branch.id !== 'grands-livres'
+  );
 
-  // Si aucune branche n'a de sortYear, conserver l'ordre d'origine.
-  const hasSortYear = branches.some(
+  const grandLivreBranches = branches.filter(
+    (branch) => branch.id === 'grands-livres'
+  );
+
+  // Vérifier si un tri chronologique est nécessaire.
+  const hasSortYear = ordinaryBranches.some(
     (branch) =>
       typeof branch.sortYear === 'number' &&
       Number.isFinite(branch.sortYear)
   );
 
+  let sortedBranches = ordinaryBranches;
 
-  if (!hasSortYear) {
-    return branches;
+  if (hasSortYear) {
+    sortedBranches = [...ordinaryBranches].sort((a, b) => {
+      const yearA = a.sortYear;
+      const yearB = b.sortYear;
+
+      const validA =
+        typeof yearA === 'number' && Number.isFinite(yearA);
+      const validB =
+        typeof yearB === 'number' && Number.isFinite(yearB);
+
+      if (validA && validB) return yearA - yearB;
+      if (validA) return -1;
+      if (validB) return 1;
+
+      return 0;
+    });
   }
 
-
-  // Tri chronologique, sans modifier le catalogue d'origine.
-  return [...branches].sort((a, b) => {
-    const yearA = a.sortYear;
-    const yearB = b.sortYear;
-
-
-    const validA =
-      typeof yearA === 'number' && Number.isFinite(yearA);
-    const validB =
-      typeof yearB === 'number' && Number.isFinite(yearB);
-
-
-    if (validA && validB) return yearA - yearB;
-    if (validA) return -1;
-    if (validB) return 1;
-
-
-    return 0;
-  });
+  // Toujours placer Grands-livres en dernier.
+  return [...sortedBranches, ...grandLivreBranches];
 }
+
 /* =========================================================
    6. CRÉATION DES LIENS VERS LES SOUS-RUBRIQUES
    Ouvre la page d'accueil de la discipline, positionnée sur
