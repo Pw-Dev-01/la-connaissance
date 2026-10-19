@@ -684,207 +684,211 @@ window.courseCatalog = [
   },
 
 {
-  id: 'ecrivains-allemagne',
-  sortYear: 1749,
-  title: 'Les grands écrivains allemands',
-  note: 'Parcours en quatre chapitres consacré à des écrivains majeurs de langue allemande, du classicisme de Weimar à la littérature moderne. Les dates sont des repères historiques ; la littérature de langue allemande s’est développée dans plusieurs espaces culturels, notamment en Autriche et à Prague.',
+  id: 'ecrivains-angleterre',
+  sortYear: 1343,
+  title: 'Les grands écrivains anglais',
+  note: 'Parcours en quatre chapitres consacré à la tradition littéraire anglaise, du Moyen Âge au XXe siècle. La branche porte sur la littérature anglaise et non sur tous les écrivains anglophones : plusieurs auteurs de langue anglaise viennent d’Écosse, d’Irlande, du pays de Galles ou d’autres régions.',
   chapters: [
     {
-      id: 'goethe-schiller-classicisme',
-      title: 'Goethe, Schiller et le classicisme de Weimar',
-      field: 'Littérature allemande · XVIIIe et XIXe siècles',
-      summary: 'Étudier Goethe et Schiller, leurs œuvres majeures, leur conception de la liberté et leur contribution au classicisme de Weimar.',
+      id: 'chaucer-shakespeare',
+      title: 'De Chaucer à Shakespeare : naissance d’une grande tradition littéraire',
+      field: 'Littérature anglaise · XIVe et XVIe siècles',
+      summary: 'Découvrir Geoffrey Chaucer et William Shakespeare, deux figures majeures de périodes différentes, et comprendre l’évolution de la poésie narrative et du théâtre anglais.',
       lesson: {
         sections: [
-          'Johann Wolfgang von Goethe (1749-1832) est un écrivain allemand dont l’œuvre comprend poésie, théâtre, roman et écrits scientifiques. Les Souffrances du jeune Werther, publié en 1774, contribue à sa notoriété européenne. Faust, élaboré sur une longue période, interroge le désir de connaissance, l’ambition, la responsabilité et les limites humaines. Sa première partie paraît en 1808 et sa seconde en 1832.',
-          'Friedrich Schiller (1759-1805) est poète, dramaturge et penseur de l’esthétique. Les Brigands et Guillaume Tell abordent la liberté, la justice, le pouvoir et les conflits entre l’individu et la société. Ses réflexions sur l’éducation esthétique étudient les rapports entre sensibilité et raison. Ses pièces mettent en scène des dilemmes moraux et politiques plutôt que de proposer de simples récits historiques.',
-          'Goethe et Schiller deviennent des partenaires intellectuels importants à Weimar à partir des années 1790. Le classicisme de Weimar désigne une orientation littéraire associée notamment à la formation de l’individu, à la recherche d’équilibre artistique et au dialogue avec l’Antiquité. Goethe avait auparavant participé au Sturm und Drang, mouvement qui accordait une place importante à l’émotion et à l’affirmation individuelle. Ces trajectoires montrent que les mouvements littéraires ne résument jamais toute la carrière d’un écrivain.'
+          'Geoffrey Chaucer (vers 1340-1400) est une figure centrale de la littérature anglaise médiévale. Les Contes de Canterbury présentent des pèlerins dont les récits font apparaître une diversité de milieux sociaux, de tons et de genres. L’œuvre est écrite en moyen anglais, une forme historique de la langue très différente de l’anglais contemporain. Chaucer contribue au développement de cette langue comme moyen d’expression littéraire à une époque où le latin et le français occupent encore des fonctions importantes dans la vie savante et administrative.',
+          'William Shakespeare (1564-1616) écrit des tragédies, des comédies, des pièces historiques et des poèmes. Hamlet, Othello, Le Roi Lear et Macbeth explorent notamment l’ambition, la jalousie, le pouvoir et les conséquences des décisions. Le Songe d’une nuit d’été combine quiproquos, imagination et réflexion sur les relations humaines. Ses pièces sont destinées à la scène : le jeu des acteurs, la mise en scène et les réactions du public contribuent à leur sens.',
+          'Chaucer et Shakespeare appartiennent à des contextes séparés par plus de deux siècles. La langue, l’imprimerie, les institutions culturelles et les formes de spectacle ont évolué. Il faut également distinguer la rédaction d’une pièce, sa première représentation et sa publication imprimée, car ces événements peuvent avoir lieu à des dates différentes.'
         ],
         example: {
-          statement: 'La première partie de Faust paraît en 1808 et la seconde en 1832. Quel intervalle sépare ces publications ?',
-          calculation: '1832 - 1808 = 24 ans.',
-          answer: 'Les deux publications sont séparées par 24 ans. La seconde paraît l’année de la mort de Goethe.'
+          statement: 'Chaucer meurt en 1400 et Shakespeare naît en 1564. Quel intervalle sépare ces deux repères ?',
+          calculation: '1564 - 1400 = 164 ans.',
+          answer: 'Cent soixante-quatre ans séparent la mort de Chaucer de la naissance de Shakespeare.'
         },
         exercise: {
-          question: 'Pourquoi est-il réducteur de présenter Goethe uniquement comme l’auteur de Faust ?',
-          answer: 'Son œuvre comprend également des romans, des poèmes, des pièces de théâtre et des écrits scientifiques.'
+          question: 'Pourquoi les pièces de Shakespeare doivent-elles être étudiées comme des textes destinés à la scène ?',
+          answer: 'Parce que le jeu des acteurs, la mise en scène, le rythme et les réactions du public contribuent à leur sens et à leurs effets dramatiques.'
         },
         exercises: [
           {
-            question: 'En quelle année Les Souffrances du jeune Werther sont-elles publiées ?',
-            answer: 'En 1774.'
+            question: 'Dans quelle langue historique Chaucer écrit-il les Contes de Canterbury ?',
+            answer: 'En moyen anglais.'
           },
           {
-            question: 'Quels thèmes retrouve-t-on dans les drames de Schiller ?',
-            answer: 'La liberté, la justice et les conflits entre l’individu, le pouvoir et la société.'
+            question: 'Cite deux tragédies de Shakespeare.',
+            answer: 'Par exemple Hamlet et Macbeth.'
           },
           {
-            question: 'Que désigne le classicisme de Weimar ?',
-            answer: 'Une orientation littéraire associée notamment à Goethe et Schiller, qui valorise la formation de l’individu, la réflexion esthétique et le dialogue avec l’Antiquité.'
+            question: 'Pourquoi la date de création d’une pièce peut-elle différer de sa date de publication ?',
+            answer: 'Une pièce peut être écrite et jouée avant d’être imprimée, parfois plusieurs années plus tard.'
           }
         ],
         sources: [
           {
-            title: 'Encyclopaedia Britannica — Johann Wolfgang von Goethe',
-            url: 'https://www.britannica.com/biography/Johann-Wolfgang-von-Goethe'
+            title: 'Encyclopaedia Britannica — Geoffrey Chaucer',
+            url: 'https://www.britannica.com/biography/Geoffrey-Chaucer'
           },
           {
-            title: 'Encyclopaedia Britannica — Friedrich Schiller',
-            url: 'https://www.britannica.com/biography/Friedrich-Schiller'
+            title: 'Encyclopaedia Britannica — William Shakespeare',
+            url: 'https://www.britannica.com/biography/William-Shakespeare'
           },
           {
-            title: 'Goethe-Institut — Littérature',
-            url: 'https://www.goethe.de/en/kul/lit.html'
+            title: 'British Library — Collection',
+            url: 'https://www.bl.uk/'
           }
         ]
       }
     },
     {
-      id: 'romantisme-grimm-heine',
-      title: 'Le romantisme allemand : les frères Grimm et Heinrich Heine',
-      field: 'Littérature allemande · Fin du XVIIIe et XIXe siècles',
-      summary: 'Découvrir les traditions populaires, les contes, la poésie romantique et le regard critique porté sur la société.',
+      id: 'milton-swift-blake',
+      title: 'Milton, Swift et Blake : poésie, satire et imagination',
+      field: 'Littérature anglaise · XVIIe et XVIIIe siècles',
+      summary: 'Étudier trois auteurs qui abordent la religion, le pouvoir, les travers sociaux, l’imagination et les transformations de leur époque.',
       lesson: {
         sections: [
-          'Le romantisme allemand se développe à la fin du XVIIIe siècle et au début du XIXe siècle. Ses écrivains explorent notamment la nature, le rêve, le mystère, l’histoire, l’imagination et les traditions culturelles. Il ne constitue pas un mouvement uniforme : les auteurs partagent certaines préoccupations, mais leurs objectifs et leurs styles diffèrent. Les transformations politiques et culturelles de l’Europe contribuent à façonner ce contexte littéraire.',
-          'Jacob Grimm (1785-1863) et Wilhelm Grimm (1786-1859) sont connus pour leurs recueils de contes, notamment les Kinder- und Hausmärchen, dont le premier volume paraît en 1812. Leur travail participe à l’intérêt pour les traditions orales, les langues et l’histoire culturelle. Les contes ont été révisés au fil des éditions : il serait inexact de considérer chaque récit comme une transcription intégrale et inchangée d’une seule version orale.',
-          'Heinrich Heine (1797-1856) est un poète et essayiste dont l’écriture associe lyrisme, ironie et critique sociale. Son Livre des chants paraît en 1827. Ses textes peuvent reprendre certains thèmes romantiques tout en prenant leurs distances avec l’idéalisation du passé. Installé à Paris à partir de 1831, Heine illustre aussi les échanges culturels entre les espaces littéraires européens.'
+          'John Milton (1608-1674) est un poète et intellectuel du XVIIe siècle. Son épopée Paradise Lost paraît en 1667. Elle reprend le récit biblique de la chute d’Adam et Ève et interroge la liberté, la désobéissance, le mal et la responsabilité. L’ampleur du poème, son vocabulaire et ses références classiques l’inscrivent dans la tradition épique, tout en donnant une forme littéraire à des questions religieuses et politiques de son temps.',
+          'Jonathan Swift (1667-1745), écrivain anglo-irlandais, est connu pour Les Voyages de Gulliver, publiés en 1726. Les voyages imaginaires du personnage principal permettent de critiquer la politique, les prétentions intellectuelles et les habitudes humaines. La satire utilise notamment l’ironie et l’exagération pour exposer des contradictions. Swift ne doit pas être réduit à un auteur pour enfants : l’œuvre possède une portée politique et philosophique, même si certaines adaptations ultérieures en ont fait un récit d’aventures destiné à la jeunesse.',
+          'William Blake (1757-1827) est poète, artiste et graveur. Songs of Innocence paraît en 1789 et Songs of Experience en 1794. Ces recueils confrontent différentes visions de l’enfance, de l’expérience, de l’autorité et des institutions. Les textes et les images sont étroitement liés dans ses livres enluminés. Son œuvre associe imagination symbolique, critique sociale et visions spirituelles personnelles.'
         ],
         example: {
-          statement: 'Les contes des frères Grimm paraissent en 1812 et le Livre des chants de Heine en 1827. Quel ouvrage paraît en premier ?',
-          calculation: '1827 - 1812 = 15 ans.',
-          answer: 'Le recueil des frères Grimm paraît en premier, 15 ans avant le Livre des chants.'
+          statement: 'Paradise Lost paraît en 1667 et Les Voyages de Gulliver en 1726. Quel intervalle sépare ces publications ?',
+          calculation: '1726 - 1667 = 59 ans.',
+          answer: 'Cinquante-neuf ans séparent les deux publications. Elles utilisent des genres différents : l’épopée poétique et la satire narrative.'
         },
         exercise: {
-          question: 'Pourquoi ne faut-il pas dire que les frères Grimm ont simplement inventé les contes qu’ils publient ?',
-          answer: 'Leur travail s’appuie en partie sur des récits et traditions préexistants, qu’ils collectent, remanient et publient dans différentes éditions.'
+          question: 'Comment la satire se distingue-t-elle d’un récit qui cherche seulement à divertir ?',
+          answer: 'Elle utilise notamment l’ironie, l’exagération et des situations fictives pour exposer ou critiquer des défauts sociaux, politiques ou intellectuels.'
         },
         exercises: [
           {
-            question: 'Quel est l’un des objectifs du travail des frères Grimm ?',
-            answer: 'Recueillir et publier des contes populaires et contribuer à l’étude des langues et des traditions.'
+            question: 'Quel récit biblique est au centre de Paradise Lost ?',
+            answer: 'Le récit de la chute d’Adam et Ève.'
           },
           {
-            question: 'En quelle année paraît la première édition des Kinder- und Hausmärchen ?',
-            answer: 'En 1812.'
+            question: 'Quel procédé est particulièrement important dans Les Voyages de Gulliver ?',
+            answer: 'La satire, notamment par l’ironie et l’exagération.'
           },
           {
-            question: 'Quels procédés caractérisent souvent l’écriture de Heine ?',
-            answer: 'Le lyrisme, l’ironie et l’observation critique.'
+            question: 'Pourquoi les images sont-elles importantes dans l’œuvre de Blake ?',
+            answer: 'Parce qu’il associe poésie, gravure et composition visuelle dans ses livres enluminés.'
           }
         ],
         sources: [
           {
-            title: 'Encyclopaedia Britannica — Brothers Grimm',
-            url: 'https://www.britannica.com/biography/Brothers-Grimm'
+            title: 'Encyclopaedia Britannica — John Milton',
+            url: 'https://www.britannica.com/biography/John-Milton'
           },
           {
-            title: 'Encyclopaedia Britannica — Heinrich Heine',
-            url: 'https://www.britannica.com/biography/Heinrich-Heine'
+            title: 'Encyclopaedia Britannica — Jonathan Swift',
+            url: 'https://www.britannica.com/biography/Jonathan-Swift'
           },
           {
-            title: 'Encyclopaedia Britannica — German literature',
-            url: 'https://www.britannica.com/art/German-literature'
+            title: 'Encyclopaedia Britannica — William Blake',
+            url: 'https://www.britannica.com/biography/William-Blake'
           }
         ]
       }
     },
     {
-      id: 'kafka-thomas-mann-modernite',
-      title: 'Kafka et Thomas Mann : inquiétude moderne et crise de la société',
-      field: 'Littérature de langue allemande · Fin du XIXe et XXe siècles',
-      summary: 'Étudier Kafka et Thomas Mann, deux écrivains qui explorent de manière différente l’identité, les institutions, la culture et les transformations de la société moderne.',
+      id: 'austen-dickens-brontes',
+      title: 'Jane Austen, Charles Dickens et les sœurs Brontë : société et roman',
+      field: 'Littérature anglaise · Fin du XVIIIe et XIXe siècles',
+      summary: 'Comprendre comment le roman étudie les conventions sociales, les rapports de classe, l’éducation, la famille et la place des femmes.',
       lesson: {
         sections: [
-          'Franz Kafka (1883-1924), né à Prague dans l’Empire austro-hongrois, écrit principalement en allemand. La Métamorphose paraît en 1915 et Le Procès est publié à titre posthume en 1925. Ses récits mettent souvent en scène des personnages confrontés à des règles obscures, à l’isolement ou à des situations difficiles à comprendre. Le terme « kafkaïen » évoque fréquemment ce sentiment d’être confronté à un système opaque, mais ne résume pas toute la complexité de son œuvre.',
-          'Thomas Mann (1875-1955) développe une œuvre qui associe observation sociale, ironie et réflexion intellectuelle. Les Buddenbrook, publié en 1901, suit le déclin d’une famille de négociants. La Mort à Venise paraît en 1912 et La Montagne magique en 1924. Mann examine les relations entre l’individu, la culture, la maladie et les transformations historiques. Il reçoit le prix Nobel de littérature en 1929, notamment en reconnaissance de son roman Les Buddenbrook.',
-          'Kafka et Mann ne relèvent pas d’une méthode unique. Kafka construit fréquemment des situations déstabilisantes et des mondes aux règles incertaines. Mann privilégie souvent des constructions romanesques plus amples, nourries d’histoire sociale et de débats intellectuels. Leurs œuvres permettent d’étudier différentes façons dont la littérature moderne interroge l’identité, les institutions et les limites de la compréhension humaine.'
+          'Jane Austen (1775-1817) observe les usages sociaux, les choix matrimoniaux, les intérêts économiques et la position des femmes dans les milieux qu’elle décrit. Raison et Sentiments paraît en 1811 et Orgueil et Préjugés en 1813. L’ironie narrative fait apparaître les écarts entre les premières impressions, les jugements sociaux et les motivations des personnages. Ses romans analysent aussi les contraintes économiques et les règles de comportement qui influencent les décisions individuelles.',
+          'Charles Dickens (1812-1870) décrit les inégalités, la pauvreté urbaine et les effets des transformations sociales du XIXe siècle. Oliver Twist paraît en épisodes entre 1837 et 1839 ; David Copperfield est publié en feuilleton entre 1849 et 1850 ; De grandes espérances paraît entre 1860 et 1861. La publication en feuilleton influence le rythme narratif et le suspense, puisque les lecteurs découvrent l’histoire au fil des livraisons. Dickens associe souvent humour, émotion et critique sociale.',
+          'Charlotte Brontë (1816-1855) et Emily Brontë (1818-1848) explorent la vie intérieure, les contraintes sociales et les rapports de pouvoir. Jane Eyre de Charlotte et Les Hauts de Hurlevent d’Emily paraissent tous deux en 1847. Jane Eyre suit le parcours d’une narratrice en quête d’indépendance et de dignité. Les Hauts de Hurlevent développe une histoire complexe de conflits familiaux, de passions et de mémoire. Ces romans accordent une place importante à la voix narrative, à l’atmosphère et à la psychologie.'
         ],
         example: {
-          statement: 'La Métamorphose paraît en 1915 et Le Procès en 1925. Quel intervalle sépare ces publications ?',
-          calculation: '1925 - 1915 = 10 ans.',
-          answer: 'Dix ans séparent les deux publications. Le Procès paraît après la mort de Kafka, survenue en 1924.'
+          statement: 'Orgueil et Préjugés paraît en 1813 et Oliver Twist commence à paraître en 1837. Quel intervalle sépare ces dates ?',
+          calculation: '1837 - 1813 = 24 ans.',
+          answer: 'Vingt-quatre ans séparent ces repères de publication.'
         },
         exercise: {
-          question: 'Quelle différence générale peut-on établir entre Kafka et Thomas Mann ?',
-          answer: 'Kafka met souvent en scène des situations opaques et déstabilisantes, tandis que Mann développe fréquemment une observation historique, sociale et intellectuelle plus ample.'
+          question: 'Comment un roman peut-il critiquer une société sans interrompre constamment le récit pour donner des leçons ?',
+          answer: 'Il peut montrer les conséquences des règles sociales à travers les décisions, les conflits, les dialogues et le destin des personnages.'
         },
         exercises: [
           {
-            question: 'Dans quelle langue Kafka a-t-il principalement écrit ?',
-            answer: 'En allemand.'
+            question: 'En quelle année Orgueil et Préjugés est-il publié ?',
+            answer: 'En 1813.'
           },
           {
-            question: 'Quel roman de Thomas Mann suit le déclin d’une famille de négociants ?',
-            answer: 'Les Buddenbrook, publié en 1901.'
+            question: 'Pourquoi le feuilleton a-t-il influencé la lecture des romans de Dickens ?',
+            answer: 'Les épisodes paraissaient successivement, ce qui favorisait le suspense et l’attente entre les livraisons.'
           },
           {
-            question: 'En quelle année Thomas Mann reçoit-il le prix Nobel de littérature ?',
-            answer: 'En 1929.'
+            question: 'Cite un roman de Charlotte Brontë et un roman d’Emily Brontë.',
+            answer: 'Jane Eyre de Charlotte Brontë et Les Hauts de Hurlevent d’Emily Brontë.'
           }
         ],
         sources: [
           {
-            title: 'Encyclopaedia Britannica — Franz Kafka',
-            url: 'https://www.britannica.com/biography/Franz-Kafka'
+            title: 'Encyclopaedia Britannica — Jane Austen',
+            url: 'https://www.britannica.com/biography/Jane-Austen'
           },
           {
-            title: 'Encyclopaedia Britannica — Thomas Mann',
-            url: 'https://www.britannica.com/biography/Thomas-Mann'
+            title: 'Encyclopaedia Britannica — Charles Dickens',
+            url: 'https://www.britannica.com/biography/Charles-Dickens-British-novelist'
           },
           {
-            title: 'Nobel Prize — Thomas Mann',
-            url: 'https://www.nobelprize.org/prizes/literature/1929/mann/facts/'
+            title: 'Encyclopaedia Britannica — Charlotte Brontë',
+            url: 'https://www.britannica.com/biography/Charlotte-Bronte'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Emily Brontë',
+            url: 'https://www.britannica.com/biography/Emily-Bronte'
           }
         ]
       }
     },
     {
-      id: 'brecht-boell-litterature-engagee',
-      title: 'Bertolt Brecht et Heinrich Böll : théâtre, guerre et responsabilité',
-      field: 'Littérature allemande · XXe siècle',
-      summary: 'Explorer le théâtre engagé de Brecht et les récits de Böll sur la guerre, la responsabilité individuelle et la société allemande d’après-guerre.',
+      id: 'woolf-orwell-modernite',
+      title: 'Virginia Woolf et George Orwell : conscience, pouvoir et société moderne',
+      field: 'Littérature anglaise · XXe siècle',
+      summary: 'Découvrir deux écrivains qui renouvellent le roman et l’essai : Woolf explore la conscience et le temps vécu, tandis qu’Orwell analyse la domination, la propagande et les inégalités.',
       lesson: {
         sections: [
-          'Bertolt Brecht (1898-1956) est un dramaturge et poète dont le théâtre rend visibles des mécanismes sociaux et politiques. L’Opéra de quat’sous est créé en 1928 et Mère Courage et ses enfants est créée en 1941. Ces œuvres abordent notamment l’argent, la guerre, les intérêts économiques et les choix moraux. Le théâtre épique associé à Brecht cherche à encourager le public à examiner de façon critique les situations représentées plutôt qu’à recevoir la scène comme une simple illusion réaliste.',
-          'Heinrich Böll (1917-1985) écrit des nouvelles et des romans sur les conséquences de la guerre, le retour à la vie civile, les hypocrisies sociales et les rapports entre individus et institutions. Le Train était à l’heure paraît en 1949. L’Honneur perdu de Katharina Blum, publié en 1974, examine notamment les effets des médias et de la violence publique sur une personne. Böll reçoit le prix Nobel de littérature en 1972.',
-          'Brecht et Böll illustrent deux formes différentes d’engagement littéraire. Brecht utilise souvent le théâtre pour examiner les structures du pouvoir et les rapports économiques. Böll s’intéresse fréquemment aux conséquences concrètes des événements politiques sur les individus. Pour étudier leurs œuvres, il faut distinguer les dates d’écriture, de création scénique et de publication, qui ne coïncident pas toujours.'
+          'Virginia Woolf (1882-1941) est une romancière et essayiste associée au modernisme. Dans Mrs Dalloway (1925) et Vers le phare (1927), la narration accorde une grande place aux perceptions, aux souvenirs et aux mouvements de la conscience. L’action extérieure peut être limitée alors que la vie intérieure des personnages se révèle complexe. Dans Une chambre à soi, essai publié en 1929, Woolf réfléchit aux conditions matérielles et culturelles qui influencent l’accès des femmes à la création littéraire.',
+          'George Orwell (1903-1950), nom de plume d’Eric Arthur Blair, écrit des romans, des essais et des textes journalistiques. La Ferme des animaux paraît en 1945 et utilise une fable politique pour examiner la révolution, la propagande et la concentration du pouvoir. 1984, publié en 1949, imagine un régime totalitaire qui surveille la population et cherche à contrôler le langage et l’information. Ces œuvres invitent à réfléchir aux mécanismes du pouvoir sans qu’il soit nécessaire de les assimiler automatiquement à chaque événement contemporain.',
+          'Woolf et Orwell emploient des formes différentes pour étudier la modernité. Woolf privilégie souvent la perception subjective et la structure du temps narratif. Orwell utilise fréquemment une prose plus directe et des procédés satiriques ou dystopiques. La littérature peut ainsi examiner les liens entre expérience individuelle, langage, institutions et pouvoir, même lorsque les méthodes artistiques des auteurs diffèrent fortement.'
         ],
         example: {
-          statement: 'L’Opéra de quat’sous est créé en 1928 et L’Honneur perdu de Katharina Blum paraît en 1974. Quel intervalle sépare ces repères ?',
-          calculation: '1974 - 1928 = 46 ans.',
-          answer: 'Quarante-six ans séparent ces deux repères littéraires.'
+          statement: 'Mrs Dalloway paraît en 1925 et 1984 en 1949. Quel intervalle sépare ces publications ?',
+          calculation: '1949 - 1925 = 24 ans.',
+          answer: 'Vingt-quatre ans séparent les deux publications.'
         },
         exercise: {
-          question: 'Comment la littérature peut-elle examiner la responsabilité politique sans se réduire à un discours théorique ?',
-          answer: 'Elle représente des situations, des conflits et leurs conséquences à travers des personnages, des choix et des procédés narratifs ou théâtraux.'
+          question: 'Quelle différence de méthode peut-on relever entre Woolf et Orwell ?',
+          answer: 'Woolf explore souvent les perceptions et la conscience intérieure, tandis qu’Orwell utilise fréquemment le récit politique, la satire et la dystopie pour examiner le pouvoir et l’information.'
         },
         exercises: [
           {
-            question: 'Quel est l’un des objectifs du théâtre épique associé à Brecht ?',
-            answer: 'Encourager le public à examiner de manière critique les situations sociales et politiques.'
+            question: 'Quel essai de Virginia Woolf paraît en 1929 ?',
+            answer: 'Une chambre à soi.'
           },
           {
-            question: 'Quel thème revient fréquemment dans l’œuvre de Böll ?',
-            answer: 'Les conséquences de la guerre et les tensions morales et sociales de l’Allemagne d’après-guerre.'
+            question: 'En quelle année 1984 est-il publié ?',
+            answer: 'En 1949.'
           },
           {
-            question: 'En quelle année Heinrich Böll reçoit-il le prix Nobel de littérature ?',
-            answer: 'En 1972.'
+            question: 'Quel rôle joue la propagande dans les œuvres politiques d’Orwell ?',
+            answer: 'Elle illustre comment le pouvoir peut manipuler l’information, façonner les croyances et limiter la pensée indépendante.'
           }
         ],
         sources: [
           {
-            title: 'Encyclopaedia Britannica — Bertolt Brecht',
-            url: 'https://www.britannica.com/biography/Bertolt-Brecht'
+            title: 'Encyclopaedia Britannica — Virginia Woolf',
+            url: 'https://www.britannica.com/biography/Virginia-Woolf'
           },
           {
-            title: 'Encyclopaedia Britannica — Heinrich Böll',
-            url: 'https://www.britannica.com/biography/Heinrich-Boll'
+            title: 'Encyclopaedia Britannica — George Orwell',
+            url: 'https://www.britannica.com/biography/George-Orwell'
           },
           {
-            title: 'Nobel Prize — Heinrich Böll',
-            url: 'https://www.nobelprize.org/prizes/literature/1972/boll/facts/'
+            title: 'British Library',
+            url: 'https://www.bl.uk/'
           }
         ]
       }
@@ -892,4 +896,7 @@ window.courseCatalog = [
   ]
 },
 
+
 ];
+
+
