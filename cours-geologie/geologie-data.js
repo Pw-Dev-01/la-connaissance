@@ -520,8 +520,8 @@ window.courseCatalog = [
 // BRANCHE — PÉRIODES GÉOLOGIQUES (sortYear = false : clé volontairement absente)
 
   {
-    id: 'periodes geologiques',
-    title: 'Les périodes-géologiques',
+    id: 'periodes-geologiques',
+    title: 'Les périodes géologiques',
     note: 'Sept chapitres sur la mesure du temps géologique, le Précambrien, le Paléozoïque, le Mésozoïque, le Cénozoïque et le Quaternaire. Les âges suivent l’échelle chronostratigraphique internationale de l’ICS (version 2024/12 pour les valeurs citées) et restent révisables ; les pourcentages d’extinction sont des estimations qui varient selon les méthodes.',
     chapters: [
       {
