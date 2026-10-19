@@ -3026,4 +3026,373 @@ window.courseCatalog = [
     ]
   },
 
+// BRANCHE CELTE
+
+{
+  id: 'histoire-celte',
+  sortYear: -1300,
+  title: 'La civilisation celte',
+  note: 'Sept chapitres sur les origines des cultures associées aux Celtes, Hallstatt et La Tène, les langues, la société, les échanges, les arts, les croyances et les transformations liées à Rome. Les dates sont approximatives et les réalités celtiques varient selon les régions. Les Celtes ne formaient pas un État unifié et les cultures archéologiques ne correspondent pas exactement à des peuples définis.',
+  chapters: [
+    {
+      id: 'origines-des-celtes',
+      title: 'Les origines des Celtes : des Champs d’urnes à Hallstatt',
+      field: 'Europe centrale et occidentale · Fin de l’âge du bronze et âge du fer · À partir d’environ 1300 av. J.-C.',
+      summary: 'Comprendre les origines progressives des cultures associées aux Celtes, le rôle des Champs d’urnes et de Hallstatt, et les limites des preuves archéologiques.',
+      lesson: {
+        sections: [
+          'Le mot « Celtes » désigne un ensemble diversifié de peuples et de communautés de l’Europe ancienne, surtout connus pour les langues celtiques et pour certaines ressemblances dans les objets, les pratiques et les formes artistiques. Ils ne formaient pas un royaume unique et toutes les communautés auxquelles les chercheurs associent des objets celtiques ne partageaient pas nécessairement la même identité. Les sources écrites sont souvent extérieures à ces sociétés, notamment grecques et romaines ; l’archéologie est donc essentielle, mais elle ne permet pas toujours de connaître le nom ou la langue des personnes qui ont fabriqué un objet.',
+          'Parmi les cultures antérieures souvent mises en relation avec les origines celtiques figure la culture des Champs d’urnes, présente autour du Danube supérieur à partir d’environ 1300 av. J.-C. Son nom vient d’une pratique funéraire répandue : après la crémation, les restes étaient placés dans des urnes et enterrés. Cette pratique constitue un indice archéologique important, mais elle ne prouve pas à elle seule que toutes les communautés concernées parlaient une langue celtique. Les liens entre les Champs d’urnes et les populations celtiques ultérieures doivent donc être présentés comme une reconstruction historique, et non comme une filiation parfaitement démontrée.',
+          'La culture de Hallstatt, nommée d’après un site situé en Autriche actuelle, est généralement associée à la première partie de l’âge du fer en Europe centrale. Les chronologies de référence la situent approximativement entre 1200 et 450 av. J.-C., avec un développement particulièrement important entre les 8e et 6e siècles av. J.-C. Les régions concernées comprennent notamment l’Autriche, le sud de l’Allemagne, la Suisse et l’est de la France, avec des variations selon les phases et les classifications archéologiques. Il est plus exact de parler de cultures et de réseaux en évolution que d’une migration unique qui aurait créé partout une civilisation homogène.',
+          'Les ressources naturelles ont contribué à la prospérité de certains centres. Le sel, le cuivre et le fer pouvaient être exploités, transformés ou échangés, tandis que les cours d’eau facilitaient le déplacement des personnes et des marchandises. Des objets importés du monde méditerranéen, notamment des productions grecques et étrusques, retrouvés dans des tombes riches montrent que certaines élites participaient à des réseaux commerciaux étendus. Ces échanges transmettaient aussi des techniques, des styles et des idées ; ils ne signifient pas que les communautés locales étaient simplement des copies des sociétés méditerranéennes.'
+        ],
+        example: {
+          statement: 'Un repère situe l’apparition de la culture des Champs d’urnes vers 1300 av. J.-C. et un autre situe la période de La Tène vers 450 av. J.-C. Quel repère est le plus ancien ?',
+          calculation: 'Pour des dates avant notre ère, le nombre le plus grand correspond au repère le plus ancien : 1300 est antérieur à 450.',
+          answer: 'Le repère d’environ 1300 av. J.-C. est le plus ancien. Ces dates sont des estimations utilisées pour situer des cultures archéologiques, et non les dates de naissance d’un peuple celte unifié.'
+        },
+        exercise: {
+          question: 'Pourquoi la culture des Champs d’urnes ne suffit-elle pas à prouver que toutes les personnes qui la pratiquaient étaient celtes ?',
+          answer: 'Parce qu’une pratique funéraire identifiée par l’archéologie ne permet pas, à elle seule, de déterminer la langue ou l’identité de chaque communauté. Le lien avec les Celtes est une hypothèse historique fondée sur plusieurs indices.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi appelle-t-on cette culture les Champs d’urnes ?',
+            answer: 'En raison de l’usage fréquent d’urnes pour déposer les restes incinérés des défunts.'
+          },
+          {
+            question: 'Où se trouve le site qui a donné son nom à la culture de Hallstatt ?',
+            answer: 'En Autriche actuelle, dans la région du Salzkammergut.'
+          },
+          {
+            question: 'Les Celtes ont-ils formé un État unique ?',
+            answer: 'Non. Ils étaient répartis en communautés et groupes politiques distincts, dont les alliances et les relations variaient.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopédie de l’Histoire du Monde — Anciens Celtes',
+            url: 'https://www.worldhistory.org/trans/fr/1-140/anciens-celtes/'
+          },
+          {
+            title: 'World History Encyclopedia — La Tène Culture',
+            url: 'https://www.worldhistory.org/La_Tene_Culture_/'
+          },
+          {
+            title: 'British Museum — La Tène',
+            url: 'https://www.britishmuseum.org/collection/term/x111161'
+          }
+        ]
+      }
+    },
+    {
+      id: 'hallstatt-et-la-tene',
+      title: 'Hallstatt et La Tène : cultures, territoires et échanges',
+      field: 'Europe centrale et occidentale · Âge du fer · Environ 1200 à 50 av. J.-C.',
+      summary: 'Distinguer les cultures archéologiques de Hallstatt et de La Tène et comprendre leur diffusion sans les confondre avec une identité celtique uniforme.',
+      lesson: {
+        sections: [
+          'Hallstatt et La Tène sont des noms archéologiques tirés de sites où des objets caractéristiques ont été découverts. Ils servent à classer des assemblages matériels et des évolutions culturelles dans le temps. Hallstatt est généralement associé à une phase ancienne de l’âge du fer en Europe centrale, tandis que La Tène correspond à une phase plus récente, souvent datée d’environ 450 à 50 av. J.-C. Les limites exactes peuvent varier selon les régions et les systèmes de classement utilisés.',
+          'La culture de La Tène est reconnue par des formes d’objets et des décors particuliers, notamment des motifs courbes, végétaux, géométriques et entrelacés sur des pièces métalliques. Des objets associés à cette culture ont été retrouvés dans un vaste espace allant de l’Europe occidentale à l’Europe centrale. Cependant, cette distribution ne signifie pas que tous les habitants de ces régions parlaient une langue celtique : les styles artistiques et les techniques pouvaient être adoptés par le commerce, l’imitation, les alliances ou les déplacements de population.',
+          'Les contacts avec les sociétés grecques, étrusques puis romaines ont contribué à transformer les communautés de l’âge du fer. Les objets importés pouvaient être des biens prestigieux, utilisés dans les échanges diplomatiques, les festins ou les pratiques funéraires. Les artisans locaux ne se contentaient pas de reproduire les modèles étrangers : ils les adaptaient à leurs propres traditions. Le résultat fut une grande diversité régionale, visible dans les bijoux, les armes, les récipients, les monnaies et les décors.',
+          'Les oppida, grands sites souvent fortifiés qui se développent particulièrement aux 2e et 1er siècles av. J.-C., illustrent la complexité croissante de certains territoires. Selon les lieux, ils pouvaient servir de centres d’artisanat, d’échanges, de stockage et de rassemblement. Tous les peuples celtiques ne vivaient cependant pas dans des oppida : les habitats ruraux et les fermes demeuraient essentiels. Il faut donc éviter de présenter ces centres comme des villes identiques ou comme une organisation commune à l’ensemble du monde celte.'
+        ],
+        example: {
+          statement: 'La Tène est généralement datée d’environ 450 à 50 av. J.-C. Combien d’années séparent approximativement ces deux repères ?',
+          calculation: '450 - 50 = 400 ans.',
+          answer: 'Ces repères couvrent environ 400 ans. Il s’agit d’une durée conventionnelle : les changements culturels ne se sont pas produits partout aux mêmes dates.'
+        },
+        exercise: {
+          question: 'Pourquoi les archéologues évitent-ils d’assimiler automatiquement La Tène à tous les Celtes ?',
+          answer: 'Parce que des objets et des styles de La Tène apparaissent aussi dans des régions où l’identité ou la langue celtique n’est pas établie. Une culture matérielle ne correspond pas nécessairement à un peuple unique.'
+        },
+        exercises: [
+          {
+            question: 'Quel site a donné son nom à la culture de La Tène ?',
+            answer: 'Un site situé au bord du lac de Neuchâtel, en Suisse actuelle.'
+          },
+          {
+            question: 'Quel type de décor est fréquemment associé à l’art de La Tène ?',
+            answer: 'Des motifs courbes, végétaux, géométriques et entrelacés.'
+          },
+          {
+            question: 'À quoi pouvaient servir certains oppida ?',
+            answer: 'À concentrer des activités artisanales et commerciales, à stocker des ressources et à offrir un lieu défendable.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — La Tène Culture',
+            url: 'https://www.worldhistory.org/La_Tene_Culture_/'
+          },
+          {
+            title: 'British Museum — La Tène',
+            url: 'https://www.britishmuseum.org/collection/term/x111161'
+          },
+          {
+            title: 'Encyclopédie de l’Histoire du Monde — Anciens Celtes',
+            url: 'https://www.worldhistory.org/trans/fr/1-140/anciens-celtes/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'langues-et-societes-celtiques',
+      title: 'Langues celtiques et organisation des sociétés',
+      field: 'Europe occidentale et centrale · Âge du fer et Antiquité',
+      summary: 'Découvrir les langues celtiques, les communautés politiques diverses et les limites des sources écrites disponibles.',
+      lesson: {
+        sections: [
+          'Les langues celtiques appartiennent à la famille indo-européenne. Les spécialistes distinguent habituellement les langues celtiques continentales, comme le gaulois, et les langues celtiques insulaires, parlées dans les îles Britanniques et en Bretagne à des périodes différentes. Le gaulois est connu grâce à des inscriptions, à des noms propres et à des témoignages gréco-romains ; le corpus reste limité par rapport à celui du latin. Les langues celtiques continentales ont progressivement cessé d’être largement parlées, tandis que plusieurs langues celtiques insulaires ont perduré.',
+          'Il n’existait pas une société celte identique partout. Les communautés étaient organisées autour de tribus, de chefferies, de royaumes ou d’alliances, selon les régions et les époques. Les relations entre groupes pouvaient prendre la forme d’échanges, de mariages, de rivalités, de dépendance ou de guerre. Les dirigeants s’appuyaient parfois sur des élites guerrières et sur des réseaux de fidélité. Il serait inexact de décrire ces peuples comme une fédération permanente ou comme une société dotée d’un gouvernement commun.',
+          'Les vestiges archéologiques indiquent une différenciation sociale dans plusieurs communautés : certaines sépultures contiennent des objets prestigieux, des équipements importés ou des bijoux qui témoignent de la richesse et du statut du défunt. Les agriculteurs et les éleveurs formaient une part importante de nombreuses populations rurales ; les artisans spécialisés et les commerçants contribuaient aux échanges. Les détails de cette organisation varient et les objets funéraires ne permettent pas, à eux seuls, de reconstituer précisément la vie de chaque individu.',
+          'Les informations écrites doivent être utilisées avec prudence. Une grande partie des récits antiques sur les Celtes provient d’auteurs grecs et romains qui écrivaient depuis leur propre contexte politique et culturel. Leurs descriptions peuvent être sélectives, stéréotypées ou liées à des conflits. Les confronter aux données archéologiques et épigraphiques permet de réduire le risque de prendre un récit extérieur pour une description valable de toutes les communautés celtiques.'
+        ],
+        example: {
+          statement: 'Un historien dispose d’un texte romain et d’une inscription gauloise. Pourquoi est-il utile de comparer ces deux types de sources ?',
+          calculation: 'Aucun calcul numérique n’est nécessaire : il s’agit de confronter des sources de nature, d’origine et de fonction différentes.',
+          answer: 'Le texte romain apporte un regard extérieur, tandis que l’inscription fournit une trace directe de l’usage écrit d’une langue locale. Leur comparaison aide à repérer les biais et les limites de chaque témoignage.'
+        },
+        exercise: {
+          question: 'Pourquoi ne peut-on pas appliquer à toutes les sociétés celtiques la description d’un seul auteur antique ?',
+          answer: 'Parce que les auteurs observaient des groupes précis à des moments donnés et depuis un point de vue extérieur. Les sociétés celtiques étaient diverses et changeaient selon les régions et les époques.'
+        },
+        exercises: [
+          {
+            question: 'À quelle famille linguistique appartiennent les langues celtiques ?',
+            answer: 'À la famille des langues indo-européennes.'
+          },
+          {
+            question: 'Quelle langue celtique continentale est particulièrement bien documentée ?',
+            answer: 'Le gaulois.'
+          },
+          {
+            question: 'Les sociétés celtiques avaient-elles toutes le même système politique ?',
+            answer: 'Non. Les formes d’organisation politique variaient selon les communautés et les périodes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopédie de l’Histoire du Monde — Anciens Celtes',
+            url: 'https://www.worldhistory.org/trans/fr/1-140/anciens-celtes/'
+          },
+          {
+            title: 'World History Encyclopedia — The Celts of Ancient Europe',
+            url: 'https://www.worldhistory.org/collection/117/the-celts-of-ancient-europe/'
+          },
+          {
+            title: 'British Museum — La Tène',
+            url: 'https://www.britishmuseum.org/collection/term/x111161'
+          }
+        ]
+      }
+    },
+    {
+      id: 'economie-et-commerce-celtes',
+      title: 'Agriculture, artisanat et commerce dans le monde celte',
+      field: 'Europe centrale et occidentale · Âge du fer · Surtout du 8e au 1er siècle av. J.-C.',
+      summary: 'Comprendre la place de l’agriculture, des ressources naturelles, des artisans et des réseaux commerciaux dans les sociétés celtiques.',
+      lesson: {
+        sections: [
+          'L’agriculture et l’élevage formaient la base matérielle de nombreuses communautés de l’âge du fer. Les récoltes, les animaux domestiques et les produits fabriqués localement soutenaient les familles et permettaient de dégager des surplus dans certaines régions. Les pratiques dépendaient des sols, du climat, des ressources et des traditions locales ; il ne faut donc pas imaginer un système agricole identique dans toute l’Europe celtique.',
+          'Les ressources minérales jouaient un rôle important dans certaines économies. Le sel était notamment exploité dans la région de Hallstatt, tandis que le fer et le cuivre servaient à produire des outils, des équipements et des objets de prestige. Les artisans travaillaient aussi le bronze, l’or, le verre et d’autres matériaux. La qualité des objets métalliques témoigne de compétences techniques spécialisées, mais les techniques et l’accès aux matières premières variaient d’un centre à l’autre.',
+          'Les échanges reliaient des communautés celtiques entre elles et avec des partenaires méditerranéens. Les données archéologiques montrent des contacts avec les colonies grecques du sud de la Gaule et avec les sociétés étrusques d’Italie. Le sel, les métaux, les animaux, les tissus et d’autres produits circulaient selon les réseaux et les périodes. Des récipients, des céramiques et des objets de luxe importés pouvaient être échangés contre des ressources locales. Les voies fluviales facilitaient une partie du transport, sans être les seules routes utilisées.',
+          'Le commerce ne concernait pas seulement les biens : il favorisait aussi la circulation de techniques, de styles artistiques et de pratiques monétaires. Certaines communautés celtiques ont frappé leurs propres monnaies, notamment dans des contextes où les échanges et les relations politiques le rendaient utile. Les monnaies ne doivent cependant pas être interprétées comme la preuve d’une économie uniforme ou d’un usage généralisé dans toutes les communautés. La richesse issue des échanges pouvait renforcer certaines élites et accentuer la compétition pour les ressources et les itinéraires commerciaux.'
+        ],
+        example: {
+          statement: 'Des objets grecs sont retrouvés dans une sépulture de l’âge du fer en Europe centrale. Que permet raisonnablement d’en déduire ?',
+          calculation: 'Il s’agit d’une interprétation archéologique, sans calcul numérique : on examine le contexte de découverte, la datation et la provenance des objets.',
+          answer: 'Ces objets constituent un indice de contacts ou d’échanges à longue distance. À eux seuls, ils ne prouvent ni la présence d’une colonie grecque ni l’identité ethnique de la personne enterrée.'
+        },
+        exercise: {
+          question: 'Comment le commerce a-t-il pu transformer les sociétés celtiques ?',
+          answer: 'Il a facilité l’accès aux matières premières et aux produits importés, favorisé la circulation des techniques et des styles, et contribué dans certains lieux à renforcer la richesse et le pouvoir de certaines élites.'
+        },
+        exercises: [
+          {
+            question: 'Cite une ressource importante exploitée dans la région de Hallstatt.',
+            answer: 'Le sel, notamment, ainsi que des ressources métalliques comme le fer et le cuivre.'
+          },
+          {
+            question: 'Quels partenaires méditerranéens sont attestés dans les échanges avec les communautés de l’âge du fer ?',
+            answer: 'Notamment les Grecs et les Étrusques.'
+          },
+          {
+            question: 'Les échanges commerciaux transportaient-ils uniquement des marchandises ?',
+            answer: 'Non. Ils favorisaient aussi la circulation de techniques, de motifs artistiques et de pratiques comme la frappe monétaire.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Trade in Ancient Celtic Europe',
+            url: 'https://www.worldhistory.org/article/1719/trade-in-ancient-celtic-europe/'
+          },
+          {
+            title: 'Encyclopédie de l’Histoire du Monde — Anciens Celtes',
+            url: 'https://www.worldhistory.org/trans/fr/1-140/anciens-celtes/'
+          },
+          {
+            title: 'British Museum — La Tène',
+            url: 'https://www.britishmuseum.org/collection/term/x111161'
+          }
+        ]
+      }
+    },
+    {
+      id: 'artisanat-et-art-celte',
+      title: 'L’art celtique : métal, parures et motifs décoratifs',
+      field: 'Europe occidentale et centrale · Âge du fer · Hallstatt et La Tène',
+      summary: 'Étudier les savoir-faire artisanaux et les styles décoratifs sans réduire l’art celtique à un ensemble de motifs identiques.',
+      lesson: {
+        sections: [
+          'L’expression « art celtique » regroupe des productions variées qui se sont développées dans plusieurs régions et à différentes périodes. Les artisans travaillaient notamment le fer, le bronze, l’or, la pierre, le bois et la céramique. Les objets pouvaient être utilitaires, cérémoniels, funéraires ou liés à l’affichage du statut. Le contexte archéologique est essentiel pour comprendre leur fonction : un objet déposé dans une tombe ne remplissait pas nécessairement le même rôle qu’un objet utilisé au quotidien.',
+          'Les objets métalliques témoignent de techniques spécialisées : moulage, gravure, martelage, incrustation et autres procédés de décoration. Les torques, les fibules, les récipients et certains équipements sont parmi les objets souvent associés aux cultures de l’âge du fer. Les matériaux importés, comme le verre ou l’ambre dans certains contextes, montrent également l’existence de réseaux d’échange. Les techniques et les formes variaient selon les ateliers, les ressources et les influences régionales.',
+          'L’art de La Tène est particulièrement connu pour ses lignes courbes, ses formes végétales stylisées, ses compositions géométriques et ses motifs entrelacés. Les représentations animales et humaines apparaissent aussi sur divers objets. Les artisans celtiques ont entretenu des contacts avec des traditions artistiques grecques, étrusques, scythes et romaines, entre autres. Ces influences ont été réinterprétées localement : les objets ne sont donc pas de simples copies de modèles étrangers.',
+          'Les objets décorés pouvaient avoir plusieurs fonctions simultanées. Une parure pouvait indiquer une position sociale, servir de cadeau, participer à une cérémonie ou être déposée dans une tombe. Certains objets étaient offerts dans des lieux considérés comme sacrés. Il faut néanmoins éviter d’attribuer automatiquement une signification religieuse à chaque motif : l’interprétation dépend des comparaisons archéologiques, du lieu de découverte et des informations disponibles.'
+        ],
+        example: {
+          statement: 'Une fibule décorée est découverte dans une tombe avec d’autres objets. Quelles informations faut-il étudier avant de lui attribuer une fonction précise ?',
+          calculation: 'Aucun calcul n’est requis. Il faut examiner la datation, la position de l’objet, son état, les autres vestiges et les comparaisons avec des découvertes similaires.',
+          answer: 'Ces indices permettent de proposer une interprétation prudente, par exemple un usage vestimentaire ou une fonction de prestige. La présence dans une tombe ne suffit pas à déterminer avec certitude tous les usages de l’objet.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il étudier le contexte de découverte d’un objet d’art celtique ?',
+          answer: 'Parce que sa matière, sa datation, son emplacement et les autres vestiges aident à distinguer les fonctions possibles : usage quotidien, parure, échange, cérémonie ou dépôt funéraire.'
+        },
+        exercises: [
+          {
+            question: 'Cite 2 matériaux utilisés par les artisans de l’âge du fer associés aux Celtes.',
+            answer: 'Par exemple le bronze et l’or ; le fer, la pierre, le bois et la céramique étaient également utilisés.'
+          },
+          {
+            question: 'Quels motifs sont fréquents dans l’art de La Tène ?',
+            answer: 'Des motifs courbes, végétaux stylisés, géométriques et entrelacés.'
+          },
+          {
+            question: 'Un objet importé prouve-t-il que la communauté qui le possédait était étrangère ?',
+            answer: 'Non. Il peut témoigner d’un échange, d’un cadeau, d’un déplacement ou d’une réutilisation.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopédie de l’Histoire du Monde — Anciens Celtes',
+            url: 'https://www.worldhistory.org/trans/fr/1-140/anciens-celtes/'
+          },
+          {
+            title: 'World History Encyclopedia — La Tène Culture',
+            url: 'https://www.worldhistory.org/La_Tene_Culture_/'
+          },
+          {
+            title: 'British Museum — La Tène',
+            url: 'https://www.britishmuseum.org/collection/term/x111161'
+          }
+        ]
+      }
+    },
+    {
+      id: 'religion-et-druides',
+      title: 'Croyances, lieux sacrés et druides',
+      field: 'Europe celtique · Âge du fer et période romaine · Chronologies variables selon les régions',
+      summary: 'Présenter les croyances et les pratiques religieuses connues par l’archéologie et les auteurs antiques, en signalant les incertitudes documentaires.',
+      lesson: {
+        sections: [
+          'Les communautés celtiques de l’Antiquité pratiquaient des formes de polythéisme, mais leurs croyances n’étaient pas uniformes. Les noms et les fonctions des divinités pouvaient varier selon les régions et les périodes. Notre connaissance repose sur des inscriptions, des objets, des sanctuaires et des textes gréco-romains, complétés avec prudence par des traditions littéraires plus tardives. Il ne subsiste pas de corpus complet de textes sacrés celtiques antiques permettant de reconstituer une doctrine commune à tous les groupes.',
+          'Des sources, des rivières, des confluents, des bosquets et d’autres espaces naturels semblent avoir eu une importance religieuse dans certaines communautés. Des objets précieux et des armes ont été déposés dans des eaux ou dans des lieux particuliers, ce qui peut correspondre à des offrandes rituelles. L’interprétation dépend toutefois du contexte : tous les dépôts ne peuvent pas être expliqués de la même manière, et les pratiques ont changé avec le temps et les contacts culturels.',
+          'Les druides sont décrits par les auteurs antiques comme des spécialistes religieux et des dépositaires de savoirs. Les sources leur attribuent des fonctions rituelles, juridiques ou éducatives dans certaines sociétés. Mais ces descriptions sont limitées et souvent extérieures ; elles ne permettent pas de supposer que les druides avaient partout les mêmes responsabilités. La transmission orale est généralement considérée comme importante, mais les détails de leur formation et de leur organisation restent difficiles à établir précisément.',
+          'À partir des contacts avec Rome, les pratiques religieuses ont pu se transformer et certains dieux locaux ont été identifiés ou associés à des divinités romaines. Dans les territoires intégrés à l’Empire, des sanctuaires ont évolué et des inscriptions ont conservé des noms divins locaux. L’expansion du christianisme a ensuite profondément transformé les pratiques religieuses en Europe occidentale. Les traditions ne disparaissent pas partout au même moment et les continuités doivent être établies au cas par cas plutôt que supposées automatiquement.'
+        ],
+        example: {
+          statement: 'Des objets métalliques sont retrouvés dans une source. Quelle conclusion est la plus prudente ?',
+          calculation: 'Aucun calcul numérique n’est nécessaire. Il faut comparer le contexte du dépôt avec d’autres sites et examiner la datation des objets.',
+          answer: 'Le dépôt peut avoir une fonction rituelle, mais cette interprétation doit être étayée par le contexte archéologique et ne peut pas être généralisée à tous les dépôts en milieu aquatique.'
+        },
+        exercise: {
+          question: 'Pourquoi les historiens restent-ils prudents lorsqu’ils décrivent la religion des anciens Celtes ?',
+          answer: 'Parce que les sources écrites directes sont rares et que beaucoup de récits viennent d’auteurs extérieurs. L’archéologie fournit des indices, mais le sens exact de nombreuses pratiques demeure incertain.'
+        },
+        exercises: [
+          {
+            question: 'Quel type de religion pratiquaient de nombreuses communautés celtiques de l’Antiquité ?',
+            answer: 'Des formes de polythéisme, avec des variations régionales et chronologiques.'
+          },
+          {
+            question: 'Quelles sources permettent d’étudier les pratiques religieuses celtiques ?',
+            answer: 'Les vestiges archéologiques, les inscriptions, les sanctuaires et les textes antiques, en tenant compte de leurs limites.'
+          },
+          {
+            question: 'Peut-on supposer que tous les druides avaient exactement les mêmes fonctions ?',
+            answer: 'Non. Les informations sont limitées et les rôles ont pu varier selon les lieux et les époques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopédie de l’Histoire du Monde — Ancienne religion celtique',
+            url: 'https://www.worldhistory.org/trans/fr/1-19451/ancienne-religion-celtique/'
+          },
+          {
+            title: 'Encyclopédie de l’Histoire du Monde — Sites sacrés et rituels dans l’ancienne religion celte',
+            url: 'https://www.worldhistory.org/trans/fr/2-1710/sites-sacres-et-rituels-dans-lancienne-religion-ce/'
+          },
+          {
+            title: 'World History Encyclopedia — The Celts of Ancient Europe',
+            url: 'https://www.worldhistory.org/collection/117/the-celts-of-ancient-europe/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'conflits-rome-et-heritages',
+      title: 'Conflits, conquêtes romaines et héritages celtiques',
+      field: 'Europe occidentale et centrale · Du 4e siècle av. J.-C. à l’Antiquité tardive et au Moyen Âge',
+      summary: 'Comprendre les migrations, les conflits avec Rome, la conquête de la Gaule et la persistance de langues et de traditions celtiques dans certaines régions.',
+      lesson: {
+        sections: [
+          'À partir du 4e siècle av. J.-C., des groupes celtiques se déplacent vers différentes régions d’Europe, dans des mouvements qui ne constituent pas une migration unique et coordonnée. Les causes pouvaient comprendre la recherche de terres, de ressources, de nouvelles possibilités commerciales ou des conflits régionaux. Certains groupes s’installèrent dans le nord de l’Italie et dans les Balkans ; d’autres atteignirent l’Anatolie, où des populations connues sous le nom de Galates sont attestées. Ces déplacements s’inscrivent dans une histoire complexe de contacts, d’alliances et d’affrontements.',
+          'Les relations entre les peuples celtiques et Rome alternèrent entre guerre, diplomatie, commerce et service militaire. Des récits antiques rapportent notamment le sac de Rome par des Gaulois au début du 4e siècle av. J.-C., traditionnellement daté de 390 av. J.-C., même si les détails dépendent des sources anciennes. Des groupes celtiques servirent aussi comme mercenaires dans différentes armées. Il faut éviter de réduire ces relations à une opposition permanente entre 2 blocs homogènes : les alliances et les intérêts politiques variaient.',
+          'Au 2e et au 1er siècle av. J.-C., Rome étendit son contrôle sur plusieurs territoires de Gaule. Jules César mena les campagnes qui aboutirent à la conquête romaine de la majeure partie de la Gaule indépendante entre 58 et 50 av. J.-C. La résistance menée par Vercingétorix culmina avec le siège d’Alésia en 52 av. J.-C. Cette conquête transforma les structures politiques, l’armée, les échanges et les villes. Les changements furent progressifs et variables ; les populations locales ne perdirent pas instantanément toutes leurs pratiques ou leurs langues.',
+          'L’intégration à l’Empire romain entraîna dans de nombreuses régions continentales une diffusion du latin, des institutions romaines et de nouveaux modes de vie urbains. Des traditions locales persistèrent ou furent transformées, notamment dans les pratiques religieuses et l’art. En Irlande et dans certaines parties de la Grande-Bretagne, des langues celtiques ont perduré et se sont développées au fil des siècles. Le breton, le gallois, le cornique, l’irlandais, le gaélique écossais et le mannois appartiennent à des histoires linguistiques distinctes ; ils ne doivent pas être présentés comme des langues inchangées depuis l’âge du fer.'
+        ],
+        example: {
+          statement: 'La conquête romaine de la Gaule indépendante est généralement située entre 58 et 50 av. J.-C. Quel est l’écart entre ces 2 repères ?',
+          calculation: '58 - 50 = 8 ans.',
+          answer: 'Les campagnes principales s’étendent sur environ 8 ans selon ces repères conventionnels. La romanisation et les transformations sociales se poursuivirent bien après les opérations militaires.'
+        },
+        exercise: {
+          question: 'Pourquoi la conquête romaine ne signifie-t-elle pas la disparition immédiate de toutes les traditions celtiques ?',
+          answer: 'Parce que les changements linguistiques, religieux et sociaux se déroulent sur des durées différentes. Certaines pratiques furent transformées ou intégrées, tandis que des langues celtiques continuèrent à être parlées dans plusieurs régions.'
+        },
+        exercises: [
+          {
+            question: 'Quel chef gaulois est associé à la résistance contre César en 52 av. J.-C. ?',
+            answer: 'Vercingétorix.'
+          },
+          {
+            question: 'Les relations entre Rome et les peuples celtiques se limitaient-elles à la guerre ?',
+            answer: 'Non. Elles comprenaient aussi le commerce, la diplomatie, les alliances et le service militaire.'
+          },
+          {
+            question: 'Donne 2 langues celtiques encore parlées aujourd’hui.',
+            answer: 'Par exemple le gallois et l’irlandais ; le breton, le gaélique écossais et le mannois en sont d’autres.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopédie de l’Histoire du Monde — Anciens Celtes',
+            url: 'https://www.worldhistory.org/trans/fr/1-140/anciens-celtes/'
+          },
+          {
+            title: 'World History Encyclopedia — The Celts of Ancient Europe',
+            url: 'https://www.worldhistory.org/collection/117/the-celts-of-ancient-europe/'
+          },
+          {
+            title: 'World History Encyclopedia — La Tène Culture',
+            url: 'https://www.worldhistory.org/La_Tene_Culture_/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
 ];
