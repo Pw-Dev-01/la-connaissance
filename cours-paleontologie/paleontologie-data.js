@@ -357,7 +357,7 @@ window.courseCatalog = [
      ===================================================================== */
   {
     id: 'grands-livres',
-    title: 'Les grands livres',
+    title: 'Les grands livres de la paléontologie',
     note: 'Dix ouvrages qui ont marqué la paléontologie, présentés sous forme de fiches.',
     chapters: [
       {
