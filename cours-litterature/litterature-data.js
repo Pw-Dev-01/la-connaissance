@@ -1105,6 +1105,888 @@ window.courseCatalog = [
   ]
 },
 
+// BRANCHE POÈTES FRANCE
+
+  {
+    id: 'poetes-france',
+    sortYear: 1456,
+    title: 'Les grands poètes français',
+    note: 'Cinq chapitres et dix poètes : Villon, Ronsard, La Fontaine, Chénier, Lamartine, Hugo, Baudelaire, Rimbaud, Apollinaire et Éluard. Les dates sont celles des premières publications connues ; certaines dates de composition restent discutées et plusieurs œuvres ont paru après la mort de leur auteur.',
+    chapters: [
+      {
+        id: 'villon-ronsard',
+        title: 'Du Moyen Âge à la Renaissance : François Villon et Pierre de Ronsard',
+        field: 'Poésie française · XVe–XVIe siècle',
+        summary: 'Découvrir la poésie personnelle de Villon, puis l’ambition de Ronsard et de la Pléiade de faire du français une grande langue poétique.',
+        lesson: {
+          sections: [
+            'François Villon, né à Paris en 1431, est connu surtout par des documents judiciaires. Il porte le nom de son tuteur, Guillaume de Villon, et devient maître ès arts en 1452. En 1455, il blesse mortellement un prêtre au cours d’une rixe et obtient ensuite des lettres de rémission. Vers 1456, il quitte Paris après un vol au collège de Navarre et compose Le Lais, une suite de legs satiriques adressés à ses proches et à ses ennemis.',
+            'Le Testament (1461), long poème d’environ deux mille vers en huitains entrecoupé de ballades, mêle confession, ironie, méditation sur la mort et sur la fuite du temps. On y trouve la Ballade des dames du temps jadis, dont le refrain évoque les « neiges d’antan », et la célèbre Épitaphe Villon, souvent appelée Ballade des pendus, écrite alors qu’il attend un sort incertain. Condamné à être pendu en 1463, il voit sa peine commuée en dix ans de bannissement de Paris, puis on perd sa trace.',
+            'Pierre de Ronsard (1524-1585), né près de Vendôme, appartient à la Pléiade, groupe de poètes qui veut enrichir le français en imitant les Anciens (Pindare, Horace) et les Italiens (Pétrarque). Ses Odes paraissent en 1550, ses Amours en 1552 (poèmes dédiés à Cassandre), sa Continuation des Amours en 1555. Le poème « Mignonne, allons voir si la rose » figure dans l’édition de 1553 des Amours ; il développe le thème du carpe diem, invitation à profiter de la jeunesse.',
+            'Poète de cour sous Charles IX, Ronsard écrit aussi des Hymnes et, en 1562, les Discours des misères de ce temps, où il prend parti pendant les guerres de Religion. Sa Franciade (1572), épopée nationale, reste inachevée. Ses Sonnets pour Hélène (1578), dont « Quand vous serez bien vieille », renouvellent le thème de la brièveté de la vie. Il meurt le 27 décembre 1585 au prieuré de Saint-Cosme, près de Tours. Villon écrit une poésie confessionnelle et populaire, Ronsard une poésie savante et ambitieuse.'
+          ],
+          example: {
+            statement: 'Le Testament de Villon date de 1461 et les Odes de Ronsard de 1550. Combien d’années séparent ces deux publications ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1550 − 1461 = 89.',
+            answer: '89 ans séparent Le Testament des Odes.'
+          },
+          exercise: {
+            question: 'Quel thème Ronsard développe-t-il dans « Mignonne, allons voir si la rose » ?',
+            answer: 'Le carpe diem : la beauté et la jeunesse sont brèves, il faut en profiter avant qu’elles se fanent.'
+          },
+          exercises: [
+            {
+              question: 'Quel poème de Villon contient la Ballade des dames du temps jadis ?',
+              answer: 'Le Testament (1461).'
+            },
+            {
+              question: 'Quel groupe de poètes Ronsard et Joachim du Bellay ont-ils animé au XVIe siècle ?',
+              answer: 'La Pléiade.'
+            },
+            {
+              question: 'En quelle année paraissent Les Amours de Ronsard, dédiées à Cassandre ?',
+              answer: 'En 1552.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — François Villon', url: 'https://www.britannica.com/biography/Francois-Villon' },
+            { title: 'Encyclopædia Britannica — Pierre de Ronsard', url: 'https://www.britannica.com/biography/Pierre-de-Ronsard' },
+            { title: 'Encyclopædia Britannica — La Pléiade', url: 'https://www.britannica.com/art/Pleiade' }
+          ]
+        }
+      },
+      {
+        id: 'la-fontaine-chenier',
+        title: 'Du Grand Siècle aux Lumières : Jean de La Fontaine et André Chénier',
+        field: 'Poésie française · XVIIe–XVIIIe siècle',
+        summary: 'Comprendre l’art des Fables de La Fontaine et la poésie néoclassique et sensible d’André Chénier, publiée après sa mort.',
+        lesson: {
+          sections: [
+            'Jean de La Fontaine, né à Château-Thierry en 1621, publie d’abord des Contes en vers (1665). En 1668 paraît le premier recueil des Fables choisies, mises en vers, dédié au Dauphin : six livres et 124 fables. Il puise chez Ésope et Phèdre, deux fabulistes de l’Antiquité. Un second recueil (livres VII à XI) paraît en 1678-1679, puis un douzième livre en 1693. L’ensemble compte plus de 240 fables.',
+            'La Fontaine écrit en vers de longueurs variées, ce qui donne à ses récits un rythme vif et naturel. Ses animaux, « Le Corbeau et le Renard », « La Cigale et la Fourmi », « Le Loup et l’Agneau », « Le Lièvre et la Tortue », « Les Animaux malades de la peste », servent à observer les travers de la société de cour sous Louis XIV. Protégé du surintendant Fouquet, il lui reste fidèle après sa disgrâce en 1661. Il entre à l’Académie française en 1684 et meurt le 13 avril 1695.',
+            'André Chénier, né en 1762 à Constantinople d’un père français et d’une mère grecque, grandit à Paris et se nourrit de poésie grecque et latine. Il écrit des Bucoliques, des Élégies et des poèmes inspirés de l’Antiquité, mais très peu paraissent de son vivant. Favorable à la Révolution à ses débuts, il critique ensuite ses excès, notamment dans des articles et des poèmes satiriques.',
+            'Arrêté en mars 1794, il est emprisonné à Saint-Lazare, où il compose « La Jeune Captive » et les Iambes, poèmes d’indignation. Il est guillotiné le 25 juillet 1794, deux jours avant la chute de Robespierre. Ses Poésies, publiées en 1819, fascinent les romantiques (Hugo, Vigny, Lamartine) : Chénier allie des thèmes antiques à une sensibilité personnelle, ce qui en fait un pont entre classicisme et romantisme.'
+          ],
+          example: {
+            statement: 'Le premier recueil des Fables paraît en 1668 et les Poésies de Chénier en 1819. Combien d’années séparent ces deux publications ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1819 − 1668 = 151.',
+            answer: '151 ans séparent le premier recueil des Fables des Poésies de Chénier.'
+          },
+          exercise: {
+            question: 'Pourquoi les Fables de La Fontaine ne parlent-elles pas seulement d’animaux ?',
+            answer: 'Les animaux servent de masques pour décrire les défauts des hommes et de la société, et pour en tirer une morale.'
+          },
+          exercises: [
+            {
+              question: 'À qui La Fontaine dédie-t-il le premier recueil des Fables en 1668 ?',
+              answer: 'Au Dauphin, fils de Louis XIV.'
+            },
+            {
+              question: 'Dans quelle prison Chénier écrit-il « La Jeune Captive » et les Iambes ?',
+              answer: 'À Saint-Lazare, à Paris.'
+            },
+            {
+              question: 'Pourquoi dit-on que les Poésies de Chénier ont influencé les romantiques ?',
+              answer: 'Publiées en 1819, elles ont montré une poésie antique par ses thèmes, mais personnelle et sensible, ce qui a séduit des poètes comme Hugo, Vigny et Lamartine.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Jean de La Fontaine', url: 'https://www.britannica.com/biography/Jean-de-La-Fontaine' },
+            { title: 'Encyclopædia Britannica — André Chénier', url: 'https://www.britannica.com/biography/Andre-Chenier' },
+            { title: 'Encyclopædia Britannica — Fable', url: 'https://www.britannica.com/art/fable' }
+          ]
+        }
+      },
+      {
+        id: 'lamartine-hugo',
+        title: 'Le romantisme : Alphonse de Lamartine et Victor Hugo',
+        field: 'Poésie française · XIXe siècle',
+        summary: 'Découvrir la poésie lyrique de Lamartine et l’œuvre poétique de Hugo, de l’intimité des Contemplations à l’épopée de La Légende des siècles.',
+        lesson: {
+          sections: [
+            'Alphonse de Lamartine, né à Mâcon en 1790, publie en 1820 les Méditations poétiques, qui rencontrent un succès immense. Ce recueil exprime avec musicalité les sentiments personnels : amour, mélancolie, fuite du temps, foi. « Le Lac » évoque le lac du Bourget et Julie Charles, que Lamartine a rencontrée à Aix-les-Bains en 1816 et qui est morte en 1817. Le poème invite le temps à suspendre son vol.',
+            'Lamartine publie ensuite les Harmonies poétiques et religieuses (1830), puis des poèmes plus longs comme Jocelyn (1836). Élu à l’Académie française en 1829, il s’engage en politique ; en 1848, il est ministre des Affaires étrangères du gouvernement provisoire de la Deuxième République. Il meurt en 1869. Avec lui, la poésie lyrique devient l’expression d’un moi sensible.',
+            'Victor Hugo, né à Besançon en 1802, domine tout le siècle. Après ses Odes et poésies diverses (1822), il publie Les Orientales (1829), Les Feuilles d’automne (1831), puis d’autres recueils. Sa fille Léopoldine meurt noyée à Villequier en 1843 ; le poème « Demain, dès l’aube… », publié dans Les Contemplations, évoque ce deuil. Hugo mêle dans son œuvre drame, lyrisme et engagement.',
+            'Opposant à Napoléon III après le coup d’État de décembre 1851, Hugo s’exile à Bruxelles, puis à Jersey et à Guernesey, jusqu’en 1870. Il y publie Les Châtiments (1853), satire contre l’empereur, Les Contemplations (1856), souvenirs d’une vie d’homme, et La Légende des siècles (première série en 1859), vaste épopée de l’humanité. Rentré en France le 5 septembre 1870, il meurt le 22 mai 1885 et reçoit des funérailles nationales avant son entrée au Panthéon.'
+          ],
+          example: {
+            statement: 'Les Méditations poétiques de Lamartine paraissent en 1820 et Les Contemplations de Hugo en 1856. Combien d’années séparent ces deux recueils ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1856 − 1820 = 36.',
+            answer: '36 ans séparent les Méditations poétiques des Contemplations.'
+          },
+          exercise: {
+            question: 'Quel événement personnel Hugo évoque-t-il dans « Demain, dès l’aube… » ?',
+            answer: 'La mort de sa fille Léopoldine, noyée à Villequier en 1843.'
+          },
+          exercises: [
+            {
+              question: 'Quel recueil de Lamartine, publié en 1820, contient « Le Lac » ?',
+              answer: 'Les Méditations poétiques.'
+            },
+            {
+              question: 'Quel recueil de Hugo attaque Napoléon III depuis l’exil ?',
+              answer: 'Les Châtiments (1853).'
+            },
+            {
+              question: 'Quelle fonction politique Lamartine occupe-t-il en 1848 ?',
+              answer: 'Ministre des Affaires étrangères du gouvernement provisoire de la Deuxième République.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Alphonse de Lamartine', url: 'https://www.britannica.com/biography/Alphonse-de-Lamartine' },
+            { title: 'Encyclopædia Britannica — Victor Hugo', url: 'https://www.britannica.com/biography/Victor-Hugo' },
+            { title: 'Encyclopædia Britannica — Romanticism', url: 'https://www.britannica.com/art/Romanticism' }
+          ]
+        }
+      },
+      {
+        id: 'baudelaire-rimbaud',
+        title: 'Vers la modernité : Charles Baudelaire et Arthur Rimbaud',
+        field: 'Poésie française · XIXe siècle',
+        summary: 'Comprendre comment Baudelaire fait de la ville et du mal la matière de la poésie, et comment Rimbaud invente une poésie de la « voyance ».',
+        lesson: {
+          sections: [
+            'Charles Baudelaire, né à Paris en 1821, est aussi critique d’art et traducteur d’Edgar Allan Poe. Son recueil Les Fleurs du mal paraît en 1857. Le procès a lieu le 20 août 1857 : l’auteur et ses éditeurs sont condamnés pour outrage à la morale publique, et six poèmes sont supprimés. Une seconde édition augmentée, avec une nouvelle section « Tableaux parisiens », paraît en 1861. Les six poèmes interdits ne sont officiellement réhabilités qu’en 1949.',
+            'Le recueil est composé de sections : « Spleen et Idéal », « Tableaux parisiens », « Le Vin », « Fleurs du mal », « Révolte », « La Mort ». On y lit « L’Albatros », « Correspondances », « Spleen » ou « L’Invitation au voyage ». Baudelaire y oppose l’aspiration à l’idéal et l’ennui ; il fait de la ville moderne un sujet poétique. Il compose aussi des poèmes en prose, publiés après sa mort sous le titre Le Spleen de Paris (1869). Il meurt le 31 août 1867.',
+            'Arthur Rimbaud, né à Charleville en 1854, écrit ses premiers poèmes à l’adolescence : « Le Dormeur du val » (1870), « Ma Bohème », « Le Bateau ivre » (1871). Dans ses lettres dites « du voyant » (13 et 15 mai 1871), il affirme que le poète doit devenir voyant par un long « dérèglement de tous les sens » et écrit « Je est un autre ». Il rencontre Paul Verlaine en 1871 ; en juillet 1873, à Bruxelles, Verlaine le blesse d’un coup de revolver.',
+            'Rimbaud publie Une saison en enfer en 1873 ; c’est le seul livre dont il supervise l’impression. Ses Illuminations, poèmes en prose composés vers 1873-1875, paraissent seulement en 1886. Il cesse d’écrire vers vingt ans et voyage : Java, Chypre, puis Aden et Harar, où il fait du commerce. Atteint d’une tumeur au genou, il est amputé de la jambe à Marseille en 1891 et meurt le 10 novembre 1891, à 37 ans.'
+          ],
+          example: {
+            statement: 'Les Fleurs du mal paraissent en 1857 et Une saison en enfer en 1873. Combien d’années séparent ces deux publications ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1873 − 1857 = 16.',
+            answer: '16 ans séparent Les Fleurs du mal d’Une saison en enfer.'
+          },
+          exercise: {
+            question: 'Pourquoi Baudelaire est-il poursuivi en justice en 1857 ?',
+            answer: 'Pour outrage à la morale publique : certains poèmes des Fleurs du mal sont jugés contraires aux bonnes mœurs, et six sont retirés du recueil.'
+          },
+          exercises: [
+            {
+              question: 'Quel titre porte le recueil de poèmes en prose de Baudelaire publié en 1869 ?',
+              answer: 'Le Spleen de Paris (Petits poèmes en prose).'
+            },
+            {
+              question: 'Quelle formule de Rimbaud résume sa conception du poète en 1871 ?',
+              answer: 'Le poète doit être « voyant » par un « dérèglement de tous les sens » ; il écrit aussi « Je est un autre ».'
+            },
+            {
+              question: 'En quelle année paraissent les Illuminations de Rimbaud ?',
+              answer: 'En 1886.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Charles Baudelaire', url: 'https://www.britannica.com/biography/Charles-Baudelaire' },
+            { title: 'Encyclopædia Britannica — Arthur Rimbaud', url: 'https://www.britannica.com/biography/Arthur-Rimbaud' },
+            { title: 'Encyclopædia Britannica — Paul Verlaine', url: 'https://www.britannica.com/biography/Paul-Verlaine' }
+          ]
+        }
+      },
+      {
+        id: 'apollinaire-eluard',
+        title: 'Le XXe siècle : Guillaume Apollinaire et Paul Éluard',
+        field: 'Poésie française · XXe siècle',
+        summary: 'Découvrir la poésie d’avant-garde d’Apollinaire, puis l’aventure surréaliste et la poésie de la Résistance chez Éluard.',
+        lesson: {
+          sections: [
+            'Guillaume Apollinaire, né à Rome en 1880 sous le nom de Wilhelm de Kostrowitzky, s’installe en France et fréquente les peintres de son temps (Picasso, Braque, Marie Laurencin). Il publie Les Peintres cubistes (1913). Son recueil Alcools (1913) rassemble des poèmes écrits sur plusieurs années, comme « Zone », « La Chanson du mal-aimé » et « Le Pont Mirabeau ». Il supprime la ponctuation, ce qui donne aux vers un rythme fluide et ambigu.',
+            'Engagé dans la Grande Guerre, Apollinaire est naturalisé français en 1916 et blessé à la tête en mars de la même année. Calligrammes (1918) mêle poèmes de guerre et poèmes dont le texte dessine un objet ou une pluie. Il emploie le mot « surréalisme » en 1917 pour caractériser son drame Les Mamelles de Tirésias. Il meurt de la grippe espagnole le 9 novembre 1918, deux jours avant l’armistice.',
+            'Paul Éluard, né en 1895 à Saint-Denis sous le nom d’Eugène Grindel, séjourne dans un sanatorium à Davos, où il rencontre Gala. Proche de Dada, puis du surréalisme avec André Breton, il publie Capitale de la douleur (1926) et L’Amour la poésie (1929), où figure le vers « La terre est bleue comme une orange ». Ses poèmes mêlent images oniriques, amour et simplicité de langage.',
+            'Pendant l’Occupation, Éluard rejoint la Résistance et le Parti communiste (1942). Son poème « Liberté », publié en 1942 dans Poésie et Vérité 1942, est diffusé clandestinement et, selon de nombreux témoignages, parachuté par la Royal Air Force au-dessus de la France. En 1944 paraît Au rendez-vous allemand, aux Éditions de Minuit, maison clandestine. Éluard meurt le 18 novembre 1952.'
+          ],
+          example: {
+            statement: 'Alcools paraît en 1913 et Calligrammes en 1918. Combien d’années séparent ces deux recueils ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1918 − 1913 = 5.',
+            answer: '5 ans séparent Alcools de Calligrammes.'
+          },
+          exercise: {
+            question: 'Qu’est-ce qu’un calligramme ?',
+            answer: 'Un poème dont la disposition typographique dessine l’objet dont il parle.'
+          },
+          exercises: [
+            {
+              question: 'Quel recueil d’Apollinaire de 1913 contient « Le Pont Mirabeau » ?',
+              answer: 'Alcools.'
+            },
+            {
+              question: 'Avec quel écrivain Éluard participe-t-il au mouvement surréaliste ?',
+              answer: 'André Breton.'
+            },
+            {
+              question: 'Quel poème d’Éluard publié en 1942 devient un symbole de la Résistance ?',
+              answer: '« Liberté ».'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Guillaume Apollinaire', url: 'https://www.britannica.com/biography/Guillaume-Apollinaire' },
+            { title: 'Encyclopædia Britannica — Paul Éluard', url: 'https://www.britannica.com/biography/Paul-Eluard' },
+            { title: 'Encyclopædia Britannica — Surrealism', url: 'https://www.britannica.com/art/Surrealism' }
+          ]
+        }
+      }
+    ]
+  },
+// BRANCHE POÈTES ALLEMAGNE
+
+  {
+    id: 'poetes-allemagne',
+    sortYear: 1190,
+    title: 'Les grands poètes allemands',
+    note: 'Cinq chapitres et dix poètes de langue allemande : Walther von der Vogelweide, Gryphius, Goethe, Schiller, Hölderlin, Novalis, Heine, Droste-Hülshoff, Rilke et Celan. Les dates du Moyen Âge sont approximatives, et plusieurs œuvres ont paru après la mort de leur auteur.',
+    chapters: [
+      {
+        id: 'walther-gryphius',
+        title: 'Du Minnesang au baroque : Walther von der Vogelweide et Andreas Gryphius',
+        field: 'Poésie de langue allemande · XIIe–XVIIe siècle',
+        summary: 'Découvrir la poésie courtoise médiévale de Walther von der Vogelweide, puis la poésie baroque de Gryphius marquée par la guerre de Trente Ans.',
+        lesson: {
+          sections: [
+            'Walther von der Vogelweide, né vers 1170 et mort vers 1230, est le plus célèbre des Minnesänger, poètes-chanteurs de langue allemande qui célèbrent l’amour courtois (Minne). On pense qu’il débute à la cour de Vienne vers 1190, puis mène une vie itinérante au service de divers protecteurs. Il écrit en moyen haut allemand, la langue littéraire de son époque.',
+            'Son œuvre comprend des chansons d’amour et des Sprüche, strophes de réflexion politique et morale. Dans « Under der linden », poème souvent cité, une jeune femme raconte une rencontre amoureuse sous un tilleul. Il prend aussi parti dans les conflits entre l’empereur et la papauté et écrit un Palästinalied, chant lié aux croisades. Ses poèmes nous sont parvenus dans plusieurs manuscrits, dont le Codex Manesse (XIVe siècle). Il aurait reçu un fief de l’empereur Frédéric II vers 1220.',
+            'Andreas Gryphius (1616-1664), né à Glogau, en Silésie, grandit pendant la guerre de Trente Ans (1618-1648), qui ravage les territoires allemands. Il publie des sonnets en 1637 et compose des pièces de théâtre, comme Leo Armenius (1650). Juriste, il devient syndic de sa ville en 1650. Il écrit en allemand moderne et fait du sonnet une forme majeure de la poésie baroque allemande.',
+            'Ses sonnets expriment le thème baroque de la vanité : tout passe, la gloire comme les villes. Dans « Es ist alles eitel » (Tout est vanité) et « Tränen des Vaterlandes » (Larmes de la patrie, écrit en 1636), il décrit la dévastation causée par la guerre, les ruines et la mort. Gryphius meurt à Glogau en 1664. Les deux poètes montrent comment la poésie allemande passe de l’amour courtois à la méditation sur la précarité de la vie.'
+          ],
+          example: {
+            statement: 'Gryphius publie ses sonnets en 1637 et la guerre de Trente Ans se termine en 1648. Combien d’années séparent ces deux dates ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1648 − 1637 = 11.',
+            answer: '11 ans séparent la publication de ces sonnets de la fin de la guerre de Trente Ans.'
+          },
+          exercise: {
+            question: 'Qu’est-ce que le Minnesang ?',
+            answer: 'La poésie lyrique courtoise de langue allemande du Moyen Âge, composée et chantée par des Minnesänger, qui célèbre l’amour (Minne).'
+          },
+          exercises: [
+            {
+              question: 'Dans quelle langue Walther von der Vogelweide écrit-il ?',
+              answer: 'En moyen haut allemand.'
+            },
+            {
+              question: 'Quel conflit marque la vie et l’œuvre d’Andreas Gryphius ?',
+              answer: 'La guerre de Trente Ans (1618-1648).'
+            },
+            {
+              question: 'Quel thème baroque domine les sonnets de Gryphius ?',
+              answer: 'La vanité : tout est éphémère, et la guerre rappelle la fragilité de la vie.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Walther von der Vogelweide', url: 'https://www.britannica.com/biography/Walther-von-der-Vogelweide' },
+            { title: 'Encyclopædia Britannica — Andreas Gryphius', url: 'https://www.britannica.com/biography/Andreas-Gryphius' },
+            { title: 'Encyclopædia Britannica — Minnesinger', url: 'https://www.britannica.com/art/minnesinger' }
+          ]
+        }
+      },
+      {
+        id: 'goethe-schiller',
+        title: 'Le classicisme de Weimar : Johann Wolfgang von Goethe et Friedrich Schiller',
+        field: 'Poésie de langue allemande · XVIIIe siècle',
+        summary: 'Comprendre l’œuvre poétique de Goethe, du Sturm und Drang à Faust, et celle de Schiller, de l’« Ode à la joie » aux ballades.',
+        lesson: {
+          sections: [
+            'Johann Wolfgang von Goethe, né à Francfort en 1749, appartient d’abord au Sturm und Drang, mouvement qui valorise le sentiment et l’expression personnelle. Ses poèmes du début des années 1770, liés notamment à Friederike Brion, comme « Willkommen und Abschied » ou « Mailied », renouvellent la poésie lyrique. Les Souffrances du jeune Werther (1774) le rendent célèbre dans toute l’Europe. En 1775, il s’installe à Weimar à l’invitation du duc Charles-Auguste.',
+            'Dans la maturité, Goethe publie des ballades, comme « Erlkönig » (1782), des Élégies romaines et, en 1819, le West-östlicher Divan, recueil inspiré par le poète persan Hafez. Il travaille toute sa vie à Faust : la première partie paraît en 1808, la seconde après sa mort, en 1832. Cette tragédie en vers raconte le pacte d’un savant avec Méphistophélès. Goethe meurt à Weimar le 22 mars 1832.',
+            'Friedrich Schiller, né en 1759 à Marbach, est à la fois poète, dramaturge et historien. Il écrit l’ode « An die Freude » (« À la joie ») en 1785 ; Beethoven en reprend des vers dans le final de sa Neuvième Symphonie, créée à Vienne en 1824. Auteur de pièces comme Les Brigands (1781) et Guillaume Tell (1804), Schiller est aussi un grand poète philosophique.',
+            'À partir de 1794, Schiller et Goethe nouent une amitié féconde. Ils collaborent à des revues, et 1797 est appelée l’« année des ballades » : Schiller écrit « Der Taucher », « Die Bürgschaft » et « Die Kraniche des Ibykus », Goethe « Der Zauberlehrling ». Schiller publie « Das Lied von der Glocke » en 1799. Il meurt en 1805. Leur duo incarne le classicisme de Weimar : équilibre, harmonie et idéal humaniste.'
+          ],
+          example: {
+            statement: 'La première partie de Faust paraît en 1808 et la seconde en 1832. Combien d’années séparent ces deux publications ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1832 − 1808 = 24.',
+            answer: '24 ans séparent la publication des deux parties de Faust.'
+          },
+          exercise: {
+            question: 'Quel lien existe entre l’ode « An die Freude » de Schiller et Beethoven ?',
+            answer: 'Beethoven a repris des vers de cette ode dans le final de sa Neuvième Symphonie, créée en 1824.'
+          },
+          exercises: [
+            {
+              question: 'Quel recueil de Goethe (1819) est inspiré par le poète persan Hafez ?',
+              answer: 'Le West-östlicher Divan (Divan occidental-oriental).'
+            },
+            {
+              question: 'Comment appelle-t-on l’année 1797 dans l’amitié entre Goethe et Schiller ?',
+              answer: 'L’« année des ballades » (Balladenjahr).'
+            },
+            {
+              question: 'Dans quelle ville Goethe s’installe-t-il en 1775 ?',
+              answer: 'À Weimar.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Johann Wolfgang von Goethe', url: 'https://www.britannica.com/biography/Johann-Wolfgang-von-Goethe' },
+            { title: 'Encyclopædia Britannica — Friedrich Schiller', url: 'https://www.britannica.com/biography/Friedrich-Schiller' },
+            { title: 'Encyclopædia Britannica — Sturm und Drang', url: 'https://www.britannica.com/art/Sturm-und-Drang' }
+          ]
+        }
+      },
+      {
+        id: 'holderlin-novalis',
+        title: 'Entre classicisme et romantisme : Friedrich Hölderlin et Novalis',
+        field: 'Poésie de langue allemande · fin du XVIIIe siècle',
+        summary: 'Découvrir la poésie visionnaire de Hölderlin et la poésie mystique de Novalis, figure de la première génération romantique.',
+        lesson: {
+          sections: [
+            'Friedrich Hölderlin, né à Lauffen en 1770, étudie la théologie au Stift de Tübingen, où il se lie d’amitié avec Hegel et Schelling. Il admire la Grèce antique, qu’il considère comme un modèle d’harmonie entre l’homme et la nature. Il publie le roman épistolaire Hyperion (1797-1799), dont le héros est un Grec engagé dans la lutte pour l’indépendance, et écrit des odes et des hymnes.',
+            'Ses poèmes, comme « Brod und Wein », « Der Rhein » ou « Patmos », mêlent mythologie grecque, christianisme et méditation sur le sacré. Le court poème « Hälfte des Lebens », publié en 1805, oppose un paysage d’été à un hiver glacé et suggère la fracture d’une vie. Hölderlin sombre dans la maladie mentale ; à partir de 1807 et jusqu’à sa mort en 1843, il vit à Tübingen dans une tour au bord du Neckar, chez le menuisier Zimmer.',
+            'Novalis, de son vrai nom Friedrich von Hardenberg, naît en 1772. Ingénieur des mines et poète, il fréquente le cercle des premiers romantiques d’Iéna. Il est profondément marqué par la mort en 1797 de sa fiancée Sophie von Kühn, âgée de quinze ans. Cette perte nourrit ses Hymnes à la nuit, publiés en 1800, textes en prose et en vers où la nuit devient symbole de l’amour, de la mort et d’une vie spirituelle.',
+            'Novalis laisse aussi des Chants spirituels et le roman inachevé Heinrich von Ofterdingen (publié en 1802), qui fait de la « fleur bleue » le symbole du désir poétique infini. Il meurt de tuberculose le 25 mars 1801, à 28 ans. Hölderlin et Novalis, chacun à sa manière, élèvent la poésie au rang de connaissance du monde et du sacré.'
+          ],
+          example: {
+            statement: 'Hölderlin meurt en 1843 et vit dans la tour de Tübingen à partir de 1807. Combien d’années y passe-t-il ?',
+            calculation: 'Pour une durée entre deux dates, on soustrait la plus ancienne de la plus récente : 1843 − 1807 = 36.',
+            answer: 'Hölderlin passe 36 ans dans la tour de Tübingen.'
+          },
+          exercise: {
+            question: 'Qui est Novalis ?',
+            answer: 'Le pseudonyme de Friedrich von Hardenberg, poète du premier romantisme allemand, auteur des Hymnes à la nuit (1800) et d’Heinrich von Ofterdingen.'
+          },
+          exercises: [
+            {
+              question: 'Quel roman de Hölderlin met en scène un héros grec engagé dans une lutte pour l’indépendance ?',
+              answer: 'Hyperion.'
+            },
+            {
+              question: 'Quel événement personnel inspire les Hymnes à la nuit de Novalis ?',
+              answer: 'La mort de sa fiancée Sophie von Kühn en 1797.'
+            },
+            {
+              question: 'Quel symbole Heinrich von Ofterdingen met-il au centre du roman ?',
+              answer: 'La « fleur bleue », symbole du désir poétique et de l’aspiration à l’infini.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Friedrich Hölderlin', url: 'https://www.britannica.com/biography/Friedrich-Holderlin' },
+            { title: 'Encyclopædia Britannica — Novalis', url: 'https://www.britannica.com/biography/Novalis' },
+            { title: 'Encyclopædia Britannica — Romanticism', url: 'https://www.britannica.com/art/Romanticism' }
+          ]
+        }
+      },
+      {
+        id: 'heine-droste',
+        title: 'Le XIXe siècle : Heinrich Heine et Annette von Droste-Hülshoff',
+        field: 'Poésie de langue allemande · XIXe siècle',
+        summary: 'Comprendre l’ironie de Heine, héritier et critique du romantisme, et la poésie de la nature et de l’inquiétude chez Droste-Hülshoff.',
+        lesson: {
+          sections: [
+            'Heinrich Heine, né à Düsseldorf en 1797 dans une famille juive, se convertit au protestantisme en 1825 pour des raisons sociales. Son Buch der Lieder (1827) rassemble des poèmes d’amour et de nature dans un style simple et musical, souvent repris par des compositeurs, dont Schumann. « Die Lorelei », paru en 1824 puis repris dans ce recueil, met en scène une sirène du Rhin ; Friedrich Silcher en compose la mélodie en 1837.',
+            'Heine mêle au romantisme une ironie qui en montre les illusions. Critique des autorités, il s’installe à Paris en 1831. Il publie Neue Gedichte (1844) et le poème satirique Deutschland. Ein Wintermärchen (1844), qui raille l’Allemagne politique de son temps. Dans sa pièce Almansor (1821), il écrit que là où l’on brûle des livres, on finit par brûler des hommes ; les nazis brûleront ses livres en 1933.',
+            'Malade, Heine est cloué au lit à partir de 1848 dans ce qu’il appelle sa « tombe de matelas ». Il y compose le recueil Romanzero (1851), où l’ironie se mêle à la douleur. Il meurt à Paris le 17 février 1856. Son œuvre montre comment la poésie allemande, après le romantisme, devient plus moderne, plus politique et plus ironique.',
+            'Annette von Droste-Hülshoff, née en 1797 au château de Hülshoff, près de Münster, est l’une des plus grandes poétesses de langue allemande. Elle publie des Gedichte en 1838 puis en 1844, ainsi que la nouvelle Die Judenbuche (1842). Ses poèmes décrivent avec précision les landes et les marais de Westphalie, comme « Der Knabe im Moor », où le paysage devient une source d’angoisse. Son recueil religieux Das geistliche Jahr paraît en 1851. Installée à Meersburg, sur le lac de Constance, elle y meurt le 24 mai 1848.'
+          ],
+          example: {
+            statement: 'Le Buch der Lieder paraît en 1827 et le Romanzero en 1851. Combien d’années séparent ces deux recueils de Heine ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1851 − 1827 = 24.',
+            answer: '24 ans séparent le Buch der Lieder du Romanzero.'
+          },
+          exercise: {
+            question: 'Quel est le thème de « Die Lorelei » de Heine ?',
+            answer: 'Une sirène qui, sur un rocher du Rhin, attire par son chant les bateliers vers leur perte.'
+          },
+          exercises: [
+            {
+              question: 'Dans quelle ville Heine s’installe-t-il en 1831 ?',
+              answer: 'À Paris.'
+            },
+            {
+              question: 'Quel poème satirique de Heine, publié en 1844, raille l’Allemagne de son temps ?',
+              answer: 'Deutschland. Ein Wintermärchen.'
+            },
+            {
+              question: 'Quelle nouvelle de Droste-Hülshoff paraît en 1842 ?',
+              answer: 'Die Judenbuche (Le Hêtre des Juifs).'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Heinrich Heine', url: 'https://www.britannica.com/biography/Heinrich-Heine' },
+            { title: 'Encyclopædia Britannica — Annette von Droste-Hülshoff', url: 'https://www.britannica.com/biography/Annette-von-Droste-Hulshoff' },
+            { title: 'Encyclopædia Britannica — Romanticism', url: 'https://www.britannica.com/art/Romanticism' }
+          ]
+        }
+      },
+      {
+        id: 'rilke-celan',
+        title: 'Le XXe siècle : Rainer Maria Rilke et Paul Celan',
+        field: 'Poésie de langue allemande · XXe siècle',
+        summary: 'Découvrir la poésie spirituelle de Rilke et la poésie de Celan, marquée par la Shoah, qui interroge les limites du langage.',
+        lesson: {
+          sections: [
+            'Rainer Maria Rilke, né à Prague en 1875, voyage dans toute l’Europe. Il publie Das Stunden-Buch (Le Livre d’heures) en 1905 et, de 1905 à 1906, travaille comme secrétaire du sculpteur Auguste Rodin à Paris. Cette expérience influence ses Neue Gedichte (1907-1908), poèmes qui décrivent des objets, des animaux ou des œuvres d’art avec une grande précision, comme « Der Panther », écrit au Jardin des Plantes.',
+            'Rilke écrit aussi un roman, Les Cahiers de Malte Laurids Brigge (1910). Commencées en 1912 au château de Duino, près de Trieste, les Élégies de Duino ne sont terminées qu’en 1922 et paraissent en 1923. Il compose aussi, en quelques semaines de février 1922 au château de Muzot, en Suisse, les Sonnets à Orphée, publiés en 1923. Ces deux recueils méditent sur la mort, la transformation et le rôle de la poésie. Rilke meurt le 29 décembre 1926 à Val-Mont, en Suisse.',
+            'Paul Celan, né Paul Antschel en 1920 à Czernowitz, en Bucovine, grandit dans une famille juive de langue allemande. Ses parents meurent en 1942 dans le contexte de la persécution des Juifs ; lui-même est astreint aux travaux forcés. « Celan » est un anagramme de la forme roumaine de son nom, Ancel. Il s’installe à Paris en 1948 et continue pourtant d’écrire en allemand, sa langue maternelle.',
+            'Son poème « Todesfuge » (« Fugue de mort »), écrit vers 1944-1945, paraît d’abord en traduction roumaine en 1947, puis en allemand en 1948 ; il évoque l’extermination par des images répétées et un rythme de fugue. Ses recueils, Mohn und Gedächtnis (1952), Sprachgitter (1959), Die Niemandsrose (1963), Atemwende (1967), tendent vers une langue de plus en plus dépouillée. Il reçoit le prix Georg-Büchner en 1960 et meurt à Paris en avril 1970.'
+          ],
+          example: {
+            statement: 'Les Élégies de Duino sont commencées en 1912 et achevées en 1922. Combien d’années Rilke met-il à les écrire ?',
+            calculation: 'Pour une durée entre deux dates, on soustrait la plus ancienne de la plus récente : 1922 − 1912 = 10.',
+            answer: 'Rilke met environ 10 ans à écrire les Élégies de Duino.'
+          },
+          exercise: {
+            question: 'Pourquoi le poème « Todesfuge » de Celan est-il célèbre ?',
+            answer: 'Il évoque l’extermination des Juifs par un rythme répétitif de fugue et des images obsédantes ; il est l’un des poèmes majeurs sur la Shoah.'
+          },
+          exercises: [
+            {
+              question: 'Qui Rilke assiste-t-il comme secrétaire à Paris en 1905-1906 ?',
+              answer: 'Le sculpteur Auguste Rodin.'
+            },
+            {
+              question: 'Quel pseudonyme Paul Antschel adopte-t-il ?',
+              answer: 'Celan, anagramme de la forme roumaine de son nom, Ancel.'
+            },
+            {
+              question: 'Quel prix prestigieux Celan reçoit-il en 1960 ?',
+              answer: 'Le prix Georg-Büchner.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Rainer Maria Rilke', url: 'https://www.britannica.com/biography/Rainer-Maria-Rilke' },
+            { title: 'Encyclopædia Britannica — Paul Celan', url: 'https://www.britannica.com/biography/Paul-Celan' },
+            { title: 'Encyclopædia Britannica — Auguste Rodin', url: 'https://www.britannica.com/biography/Auguste-Rodin' }
+          ]
+        }
+      }
+    ]
+  },
+// BRANCHE POÈTES ANGLETERRE
+
+  {
+    id: 'poetes-angleterre',
+    sortYear: 1370,
+    title: 'Les grands poètes anglais',
+    note: 'Cinq chapitres et dix poètes de la tradition anglaise : Chaucer, Shakespeare, Donne, Milton, Pope, Blake, Wordsworth, Keats, Tennyson et Wilfred Owen. Les dates médiévales sont approximatives, et plusieurs œuvres ont paru après la mort de leur auteur.',
+    chapters: [
+      {
+        id: 'chaucer-shakespeare-poetes',
+        title: 'Des origines à la Renaissance : Geoffrey Chaucer et William Shakespeare',
+        field: 'Poésie anglaise · XIVe–XVIIe siècle',
+        summary: 'Découvrir Chaucer, qui impose l’anglais comme langue de grande poésie, puis les poèmes et les sonnets de Shakespeare.',
+        lesson: {
+          sections: [
+            'Geoffrey Chaucer, né vers 1343 à Londres dans une famille de marchands de vin, est aussi courtisan, diplomate et fonctionnaire. Il écrit en moyen anglais, alors que le français et le latin dominent la littérature savante. Son poème Le Livre de la duchesse (vers 1370), élégie pour Blanche de Lancastre, ouvre sa carrière ; Troïlus et Criseyde (vers 1385) est un grand récit d’amour tragique.',
+            'Les Contes de Canterbury, commencés vers 1387 et restés inachevés, forment son chef-d’œuvre. Un groupe d’environ trente pèlerins, parti de la taverne du Tabard à Southwark, se rend à Canterbury sur la tombe de saint Thomas Becket et chacun raconte des histoires pour passer le temps. Le Chevalier, le Meunier, la Femme de Bath ou le Pardonneur permettent à Chaucer de peindre toute la société du XIVe siècle. Il meurt le 25 octobre 1400 et est enterré à l’abbaye de Westminster ; William Caxton imprime les Contes vers 1476.',
+            'William Shakespeare (1564-1616) est surtout connu comme dramaturge, mais il est aussi poète. En 1593 paraît Vénus et Adonis, puis en 1594 Le Viol de Lucrèce, deux poèmes narratifs dédiés au comte de Southampton. Ses Sonnets, 154 poèmes, sont publiés en 1609 par l’éditeur Thomas Thorpe. Ils suivent la forme dite « shakespearienne » : trois quatrains rimés abab cdcd efef, puis un distique rimé gg, en pentamètres iambiques.',
+            'Les sonnets 1 à 126 s’adressent à un jeune homme, les sonnets 127 à 152 à une « dame brune », et les sonnets 153-154 clôturent le recueil. Le sonnet 18 (« Shall I compare thee to a summer’s day? ») affirme que la poésie peut rendre l’être aimé éternel. L’identité du jeune homme et de la dame brune reste inconnue. De Chaucer à Shakespeare, la poésie anglaise passe de la fresque sociale à l’analyse intime des sentiments.'
+          ],
+          example: {
+            statement: 'Chaucer meurt en 1400 et les Sonnets de Shakespeare paraissent en 1609. Combien d’années séparent ces deux dates ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1609 − 1400 = 209.',
+            answer: '209 ans séparent la mort de Chaucer de la publication des Sonnets.'
+          },
+          exercise: {
+            question: 'Quelle est la situation de départ des Contes de Canterbury ?',
+            answer: 'Un groupe de pèlerins se rend à Canterbury sur la tombe de saint Thomas Becket et chacun raconte une histoire pendant le voyage.'
+          },
+          exercises: [
+            {
+              question: 'Dans quelle langue Chaucer écrit-il ?',
+              answer: 'En moyen anglais.'
+            },
+            {
+              question: 'Combien de sonnets contient le recueil de Shakespeare publié en 1609 ?',
+              answer: '154 sonnets.'
+            },
+            {
+              question: 'Quelle est la structure d’un sonnet shakespearien ?',
+              answer: 'Trois quatrains (abab cdcd efef) suivis d’un distique rimé (gg).'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Geoffrey Chaucer', url: 'https://www.britannica.com/biography/Geoffrey-Chaucer' },
+            { title: 'Encyclopædia Britannica — William Shakespeare', url: 'https://www.britannica.com/biography/William-Shakespeare' },
+            { title: 'Poetry Foundation — William Shakespeare', url: 'https://www.poetryfoundation.org/poets/william-shakespeare' }
+          ]
+        }
+      },
+      {
+        id: 'donne-milton',
+        title: 'Le XVIIe siècle : John Donne et John Milton',
+        field: 'Poésie anglaise · XVIIe siècle',
+        summary: 'Comprendre la poésie métaphysique de Donne et l’épopée biblique de Milton, Le Paradis perdu.',
+        lesson: {
+          sections: [
+            'John Donne (1572-1631), né à Londres dans une famille catholique, s’éloigne de cette confession et devient pasteur anglican en 1615 ; il est doyen de la cathédrale Saint-Paul de Londres à partir de 1621. Sa poésie comprend des poèmes d’amour et de désir (Songs and Sonnets), des satires et des Holy Sonnets. La plupart de ses poèmes circulent en manuscrit ; ils ne sont publiés qu’après sa mort, en 1633.',
+            'Donne est le principal représentant des poètes dits « métaphysiques ». Il utilise des comparaisons surprenantes, appelées conceits : dans « A Valediction: Forbidding Mourning », deux amants séparés sont comparés aux deux branches d’un compas. Dans un Holy Sonnet, il s’adresse à la mort en lui disant qu’elle ne doit pas être fière, car elle sera elle-même vaincue. Dans une méditation en prose de 1624, il écrit qu’aucun homme n’est une île.',
+            'John Milton (1608-1674), né à Londres, écrit dans sa jeunesse des poèmes comme « Lycidas » (1637), élégie pour un ami mort noyé. Pendant la guerre civile, il défend la liberté d’expression dans Areopagitica (1644) et sert la République comme secrétaire du Conseil d’État sous Cromwell. Il devient aveugle vers 1652, ce qui ne l’empêche pas de poursuivre son œuvre.',
+            'Le Paradis perdu paraît en 1667 en dix livres, puis en 1674 en douze livres. Cette épopée en vers non rimés (blank verse) raconte la chute d’Adam et Ève et la révolte de Satan contre Dieu. Milton reçoit de l’imprimeur Samuel Simmons une avance de cinq livres sterling pour ce livre. Il publie ensuite Le Paradis retrouvé et Samson Agonistes (1671) et meurt en 1674. Donne illustre la poésie de l’esprit et du paradoxe, Milton la poésie de l’épopée et de la liberté.'
+          ],
+          example: {
+            statement: 'Le Paradis perdu paraît en 1667 en dix livres puis en 1674 en douze livres. Combien d’années séparent ces deux éditions ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1674 − 1667 = 7.',
+            answer: '7 ans séparent les deux éditions du Paradis perdu.'
+          },
+          exercise: {
+            question: 'Qu’est-ce qu’un conceit dans la poésie de Donne ?',
+            answer: 'Une comparaison ingénieuse et surprenante entre deux réalités très éloignées, par exemple les amants et les branches d’un compas.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année les poèmes de Donne sont-ils publiés pour la première fois en recueil ?',
+              answer: 'En 1633, après sa mort.'
+            },
+            {
+              question: 'Quel texte de 1644 défend la liberté d’expression ?',
+              answer: 'Areopagitica, de Milton.'
+            },
+            {
+              question: 'Quel sujet traite Le Paradis perdu ?',
+              answer: 'La chute d’Adam et Ève et la révolte de Satan contre Dieu.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — John Donne', url: 'https://www.britannica.com/biography/John-Donne' },
+            { title: 'Encyclopædia Britannica — John Milton', url: 'https://www.britannica.com/biography/John-Milton' },
+            { title: 'Encyclopædia Britannica — Metaphysical poets', url: 'https://www.britannica.com/art/Metaphysical-poets' }
+          ]
+        }
+      },
+      {
+        id: 'pope-blake',
+        title: 'Du siècle des Lumières à la vision : Alexander Pope et William Blake',
+        field: 'Poésie anglaise · XVIIIe siècle',
+        summary: 'Comparer la poésie satirique et raffinée de Pope avec la poésie visionnaire et illustrée de Blake.',
+        lesson: {
+          sections: [
+            'Alexander Pope (1688-1744), né à Londres dans une famille catholique, est exclu des universités et des fonctions publiques par les lois de son temps ; il se forme en grande partie seul. Atteint d’une maladie qui déforme son dos, il est de petite taille. Il publie An Essay on Criticism (1711), poème didactique qui contient la formule « To err is human; to forgive, divine ».',
+            'Son poème héroï-comique The Rape of the Lock paraît en 1712 puis en version augmentée en 1714. Il y raconte avec ironie une querelle mondaine née du vol d’une boucle de cheveux. Pope traduit l’Iliade (1715-1720) et écrit La Dunciade (1728), satire des mauvais écrivains, puis An Essay on Man (1733-1734). Il maîtrise le distique héroïque, deux vers rimés de dix syllabes, qui devient la forme dominante de la poésie anglaise du siècle.',
+            'William Blake (1757-1827), né à Londres, est graveur de formation. Il invente une technique de gravure en relief pour imprimer ensemble textes et images. Les Songs of Innocence paraissent en 1789 ; en 1794, il les réunit à de nouveaux poèmes dans les Songs of Innocence and of Experience, avec le sous-titre qui évoque les « deux états contraires de l’âme humaine ». On y lit « The Lamb » et « The Tyger ».',
+            'Blake critique la misère de Londres dans le poème « London », la religion d’autorité et l’exploitation des enfants (« The Chimney Sweeper »). Dans Le Mariage du Ciel et de l’Enfer (vers 1790), il refuse la séparation rigide du bien et du mal. Le poème de la préface de Milton, « And did those feet in ancient time », devient l’hymne « Jerusalem » grâce à la musique de Hubert Parry en 1916. Pope représente l’ordre et la raison, Blake l’imagination et la vision.'
+          ],
+          example: {
+            statement: 'Les Songs of Innocence paraissent en 1789 et les Songs of Innocence and of Experience en 1794. Combien d’années séparent ces deux publications ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1794 − 1789 = 5.',
+            answer: '5 ans séparent les Songs of Innocence des Songs of Innocence and of Experience.'
+          },
+          exercise: {
+            question: 'Qu’est-ce que The Rape of the Lock de Pope ?',
+            answer: 'Un poème héroï-comique qui traite avec ironie, dans le style de l’épopée, d’une querelle mondaine née du vol d’une boucle de cheveux.'
+          },
+          exercises: [
+            {
+              question: 'Quelle forme de vers domine chez Pope ?',
+              answer: 'Le distique héroïque (deux vers rimés de dix syllabes).'
+            },
+            {
+              question: 'Quel métier Blake exerce-t-il avant tout ?',
+              answer: 'Graveur.'
+            },
+            {
+              question: 'Quels sont deux poèmes célèbres des Songs of Innocence and of Experience ?',
+              answer: '« The Lamb » et « The Tyger » (« London » en est un autre).'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Alexander Pope', url: 'https://www.britannica.com/biography/Alexander-Pope-English-poet' },
+            { title: 'Encyclopædia Britannica — William Blake', url: 'https://www.britannica.com/biography/William-Blake' },
+            { title: 'Poetry Foundation — William Blake', url: 'https://www.poetryfoundation.org/poets/william-blake' }
+          ]
+        }
+      },
+      {
+        id: 'wordsworth-keats',
+        title: 'Le romantisme anglais : William Wordsworth et John Keats',
+        field: 'Poésie anglaise · fin du XVIIIe–début du XIXe siècle',
+        summary: 'Comprendre la poésie de la nature et de la mémoire chez Wordsworth, puis la poésie de la beauté et de la fragilité chez Keats.',
+        lesson: {
+          sections: [
+            'William Wordsworth, né en 1770 à Cockermouth, dans le nord-ouest de l’Angleterre, publie avec Samuel Taylor Coleridge les Lyrical Ballads en 1798. Ce recueil, d’abord anonyme, renouvelle la poésie en choisissant des sujets simples et une langue proche de celle de la vie quotidienne. Une préface, ajoutée à l’édition de 1800, expose cette conception. Le poème « Lines Written a Few Miles above Tintern Abbey » y figure.',
+            'Wordsworth s’installe en 1799 à Dove Cottage, à Grasmere, dans le Lake District, avec sa sœur Dorothy. Son poème « I Wandered Lonely as a Cloud » (1807), inspiré d’une promenade de 1802 où ils virent des jonquilles, résume sa conception : la nature procure un souvenir qui ressurgit plus tard comme une joie. Il commence en 1798 The Prelude, long poème autobiographique ; il ne paraît qu’en 1850, après sa mort. Wordsworth devient poète lauréat en 1843 et meurt en 1850.',
+            'John Keats, né à Londres en 1795, fils d’un gérant d’écurie de louage, se forme comme apothicaire-chirurgien avant de se consacrer à la poésie. Ses Poems paraissent en 1817, Endymion en 1818. Il perd son frère Tom de la tuberculose en 1818, et tombe amoureux de Fanny Brawne. Son œuvre est écrite en quelques années seulement.',
+            'En 1819, il compose ses grandes odes : « Ode to a Nightingale », « Ode on a Grecian Urn », « To Autumn ». Elles méditent sur la beauté, la mort et l’art qui défie le temps. Le recueil Lamia, Isabella, The Eve of St. Agnes, and Other Poems paraît en 1820. Malade, Keats part pour l’Italie et meurt à Rome le 23 février 1821, à 25 ans. Sur sa tombe, il avait demandé l’épitaphe « Here lies one whose name was writ in water ».'
+          ],
+          example: {
+            statement: 'Les Lyrical Ballads paraissent en 1798 et les grandes odes de Keats en 1819. Combien d’années séparent ces deux dates ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1819 − 1798 = 21.',
+            answer: '21 ans séparent les Lyrical Ballads des grandes odes de Keats.'
+          },
+          exercise: {
+            question: 'Quelle conception de la poésie les Lyrical Ballads défendent-ils ?',
+            answer: 'Une poésie qui choisit des sujets simples de la vie quotidienne et une langue proche de la langue ordinaire, avec la nature comme source d’émotion.'
+          },
+          exercises: [
+            {
+              question: 'Avec quel poète Wordsworth publie-t-il les Lyrical Ballads ?',
+              answer: 'Samuel Taylor Coleridge.'
+            },
+            {
+              question: 'En quelle année paraît The Prelude de Wordsworth ?',
+              answer: 'En 1850, après sa mort.'
+            },
+            {
+              question: 'Citer deux odes écrites par Keats en 1819.',
+              answer: '« Ode to a Nightingale », « Ode on a Grecian Urn » (ou « To Autumn »).'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — William Wordsworth', url: 'https://www.britannica.com/biography/William-Wordsworth' },
+            { title: 'Encyclopædia Britannica — John Keats', url: 'https://www.britannica.com/biography/John-Keats' },
+            { title: 'Poetry Foundation — John Keats', url: 'https://www.poetryfoundation.org/poets/john-keats' }
+          ]
+        }
+      },
+      {
+        id: 'tennyson-owen',
+        title: 'De l’époque victorienne à la Grande Guerre : Alfred Tennyson et Wilfred Owen',
+        field: 'Poésie anglaise · XIXe–XXe siècle',
+        summary: 'Découvrir la poésie officielle et méditative de Tennyson, puis le témoignage poétique de Wilfred Owen sur la guerre de 1914-1918.',
+        lesson: {
+          sections: [
+            'Alfred Tennyson, né en 1809 dans le Lincolnshire, publie ses premiers recueils dans les années 1830. Ses Poems de 1842 contiennent « Ulysses », monologue du héros vieillissant qui refuse le repos, ainsi que « Morte d’Arthur » et « Locksley Hall ». Sa poésie se distingue par une grande musicalité et une grande maîtrise du vers.',
+            'La mort en 1833 de son ami Arthur Hallam inspire In Memoriam A.H.H. (1850), long poème de deuil et de doute religieux, composé sur plusieurs années. La même année, Tennyson succède à Wordsworth comme poète lauréat. Il écrit « The Charge of the Light Brigade » (1854), à propos d’une charge de cavalerie pendant la guerre de Crimée, et Idylls of the King, cycle sur la légende du roi Arthur dont les premiers poèmes paraissent en 1859 et qui est achevé en 1885. Fait baron en 1884, il meurt en 1892.',
+            'Wilfred Owen, né en 1893 à Oswestry, dans le Shropshire, s’engage dans l’armée en 1915 et combat sur le front français. Soigné pour un choc traumatique à l’hôpital de Craiglockhart, près d’Édimbourg, en 1917, il y rencontre le poète Siegfried Sassoon, qui l’encourage. Il écrit alors ses plus grands poèmes : « Anthem for Doomed Youth », « Strange Meeting » et « Dulce et Decorum Est ».',
+            'Owen décrit les gaz de combat, la boue, la mort des jeunes soldats, en refusant le discours patriotique qui présente la guerre comme glorieuse. Il emploie souvent la rime imparfaite, ou assonance, qui crée un effet de dissonance. Dans un projet de préface, il écrit que la poésie est dans la pitié. Il est tué le 4 novembre 1918, une semaine avant l’armistice, lors de l’attaque du canal de la Sambre-Oise. Ses Poems paraissent en 1920, édités par Sassoon.'
+          ],
+          example: {
+            statement: 'Les Idylls of the King commencent à paraître en 1859 et sont achevés en 1885. Combien d’années Tennyson y consacre-t-il ?',
+            calculation: 'Pour une durée entre deux dates, on soustrait la plus ancienne de la plus récente : 1885 − 1859 = 26.',
+            answer: 'Tennyson y consacre 26 ans.'
+          },
+          exercise: {
+            question: 'Pourquoi Wilfred Owen refuse-t-il le discours patriotique sur la guerre ?',
+            answer: 'Parce qu’il a vu la souffrance et la mort des soldats ; sa poésie dénonce la réalité de la guerre au lieu de la glorifier.'
+          },
+          exercises: [
+            {
+              question: 'Quel événement inspire In Memoriam A.H.H. à Tennyson ?',
+              answer: 'La mort de son ami Arthur Hallam en 1833.'
+            },
+            {
+              question: 'Quel poète Owen rencontre-t-il à Craiglockhart ?',
+              answer: 'Siegfried Sassoon.'
+            },
+            {
+              question: 'Quand Owen est-il tué ?',
+              answer: 'Le 4 novembre 1918, une semaine avant l’armistice.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Alfred, Lord Tennyson', url: 'https://www.britannica.com/biography/Alfred-Lord-Tennyson' },
+            { title: 'Encyclopædia Britannica — Wilfred Owen', url: 'https://www.britannica.com/biography/Wilfred-Owen' },
+            { title: 'Poetry Foundation — Wilfred Owen', url: 'https://www.poetryfoundation.org/poets/wilfred-owen' }
+          ]
+        }
+      }
+    ]
+  },
+// BRANCHE POÈTES AMÉRIQUE
+
+  {
+    id: 'poetes-amerique',
+    sortYear: 1650,
+    title: 'Les grands poètes américains',
+    note: 'Cinq chapitres et dix poètes des États-Unis : Bradstreet, Wheatley, Poe, Longfellow, Whitman, Dickinson, Frost, Eliot, Hughes et Ginsberg. Les dates sont celles des premières publications connues ; certaines œuvres, notamment celles de Dickinson, ont paru après la mort de leur auteure.',
+    chapters: [
+      {
+        id: 'bradstreet-wheatley',
+        title: 'Les origines coloniales : Anne Bradstreet et Phillis Wheatley',
+        field: 'Poésie américaine · XVIIe–XVIIIe siècle',
+        summary: 'Découvrir deux femmes qui ont publié des poèmes dans l’Amérique coloniale et ont ouvert la voie à la poésie américaine.',
+        lesson: {
+          sections: [
+            'Anne Bradstreet, née vers 1612 en Angleterre, émigre en 1630 vers la colonie de la baie du Massachusetts avec son mari Simon Bradstreet, qui sera plus tard gouverneur. Mère de huit enfants, elle écrit des poèmes malgré les difficultés de la vie coloniale. Son premier livre, The Tenth Muse Lately Sprung Up in America, paraît à Londres en 1650, à l’initiative de son beau-frère John Woodbridge, sans qu’elle en ait connaissance. C’est le premier recueil de poèmes d’une femme publié depuis les colonies anglaises d’Amérique du Nord.',
+            'Après ce premier livre, Bradstreet écrit des poèmes plus personnels, où elle parle de sa famille, de sa foi puritaine et de ses doutes. « To My Dear and Loving Husband » est un poème d’amour conjugal ; « Verses upon the Burning of Our House, July 10th, 1666 » évoque l’incendie de sa maison et la résignation religieuse. Elle meurt en 1672 ; une version révisée de ses poèmes paraît à Boston en 1678.',
+            'Phillis Wheatley naît vers 1753 en Afrique de l’Ouest. Enlevée enfant, elle est conduite à Boston en 1761 et achetée par la famille de John Wheatley, qui lui donne une éducation exceptionnelle pour une personne réduite en esclavage : elle apprend à lire et à écrire, étudie la Bible, les classiques et la poésie. Elle publie en 1770 une élégie sur la mort du prédicateur George Whitefield, qui la rend célèbre.',
+            'Ne trouvant pas d’éditeur à Boston, elle obtient la publication de ses poèmes à Londres : Poems on Various Subjects, Religious and Moral (1773). Le livre s’ouvre sur un texte signé par plusieurs notables de Boston, qui attestent qu’elle en est l’auteure. C’est le premier livre de poèmes publié par une Afro-Américaine. Elle est affranchie vers 1773, écrit en 1775 un poème pour George Washington, qui lui répond, et meurt à Boston en 1784, dans la pauvreté.'
+          ],
+          example: {
+            statement: 'The Tenth Muse de Bradstreet paraît en 1650 et les Poems de Wheatley en 1773. Combien d’années séparent ces deux livres ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1773 − 1650 = 123.',
+            answer: '123 ans séparent The Tenth Muse des Poems on Various Subjects.'
+          },
+          exercise: {
+            question: 'Pourquoi le livre de Wheatley (1773) contient-il un texte signé par des notables de Boston ?',
+            answer: 'Pour attester qu’elle était bien l’auteure de ses poèmes, ce que beaucoup de lecteurs du temps refusaient de croire d’une jeune femme noire réduite en esclavage.'
+          },
+          exercises: [
+            {
+              question: 'Dans quelle ville paraît The Tenth Muse d’Anne Bradstreet en 1650 ?',
+              answer: 'À Londres.'
+            },
+            {
+              question: 'Quel événement évoque le poème de Bradstreet « Verses upon the Burning of Our House » ?',
+              answer: 'L’incendie de sa maison, le 10 juillet 1666.'
+            },
+            {
+              question: 'Quel premier titre Phillis Wheatley obtient-elle avec son livre de 1773 ?',
+              answer: 'Elle est la première Afro-Américaine à publier un livre de poèmes.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Anne Bradstreet', url: 'https://www.britannica.com/biography/Anne-Bradstreet' },
+            { title: 'Encyclopædia Britannica — Phillis Wheatley', url: 'https://www.britannica.com/biography/Phillis-Wheatley' },
+            { title: 'Poetry Foundation — Phillis Wheatley', url: 'https://www.poetryfoundation.org/poets/phillis-wheatley' }
+          ]
+        }
+      },
+      {
+        id: 'poe-longfellow',
+        title: 'Le romantisme américain : Edgar Allan Poe et Henry Wadsworth Longfellow',
+        field: 'Poésie américaine · XIXe siècle',
+        summary: 'Comparer la poésie sombre et musicale de Poe avec la poésie narrative et populaire de Longfellow.',
+        lesson: {
+          sections: [
+            'Edgar Allan Poe, né à Boston en 1809, orphelin très jeune, est élevé à Richmond, en Virginie. Il publie Tamerlane and Other Poems en 1827, signé « By a Bostonian ». Poète, auteur de nouvelles et critique, il pense que la poésie doit produire un effet unique et durable. Dans l’essai The Philosophy of Composition (1846), il décrit ses choix de composition pour « The Raven ».',
+            '« The Raven » paraît le 29 janvier 1845 dans le journal Evening Mirror de New York et le rend célèbre. Un homme en deuil de sa bien-aimée Lenore reçoit la visite d’un corbeau qui répond « Nevermore » (« jamais plus »). Le poème, en strophes de six vers au rythme trochaïque, repose sur la répétition. L’épouse de Poe, Virginia, est morte en 1847. Parmi ses autres poèmes, « Annabel Lee » paraît en 1849. Poe meurt à Baltimore le 7 octobre 1849.',
+            'Henry Wadsworth Longfellow, né à Portland (Maine) en 1807, enseigne à Harvard de 1836 à 1854. Il rend la poésie accessible à un très large public avec Voices of the Night (1839), contenant « A Psalm of Life », puis Evangeline (1847), long poème narratif sur l’exil des Acadiens, et The Song of Hiawatha (1855), qui adopte un rythme inspiré du Kalevala finlandais.',
+            'Dans Tales of a Wayside Inn (1863) figure « Paul Revere’s Ride », poème sur la chevauchée de 1775 au début de la guerre d’Indépendance. Longfellow perd sa seconde épouse, Fanny, dans un incendie en 1861. Il traduit La Divine Comédie de Dante (1865-1867). Il meurt en 1882 ; en 1884, il devient le premier poète américain à avoir un buste dans le Poets’ Corner de l’abbaye de Westminster. Poe cherche l’effet et la musique, Longfellow raconte l’histoire de la nation.'
+          ],
+          example: {
+            statement: '« The Raven » paraît en 1845 et The Song of Hiawatha en 1855. Combien d’années séparent ces deux publications ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1855 − 1845 = 10.',
+            answer: '10 ans séparent « The Raven » de The Song of Hiawatha.'
+          },
+          exercise: {
+            question: 'Quel mot répète le corbeau dans le poème de Poe ?',
+            answer: '« Nevermore » (« jamais plus »).'
+          },
+          exercises: [
+            {
+              question: 'Dans quel essai de 1846 Poe explique-t-il la composition de « The Raven » ?',
+              answer: 'The Philosophy of Composition.'
+            },
+            {
+              question: 'De quel peuple Evangeline de Longfellow raconte-t-il l’exil ?',
+              answer: 'Les Acadiens.'
+            },
+            {
+              question: 'Quel honneur Longfellow reçoit-il à Londres en 1884 ?',
+              answer: 'Il est le premier poète américain à avoir un buste au Poets’ Corner de l’abbaye de Westminster.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Edgar Allan Poe', url: 'https://www.britannica.com/biography/Edgar-Allan-Poe' },
+            { title: 'Encyclopædia Britannica — Henry Wadsworth Longfellow', url: 'https://www.britannica.com/biography/Henry-Wadsworth-Longfellow' },
+            { title: 'Poetry Foundation — Edgar Allan Poe', url: 'https://www.poetryfoundation.org/poets/edgar-allan-poe' }
+          ]
+        }
+      },
+      {
+        id: 'whitman-dickinson',
+        title: 'Deux voix nouvelles : Walt Whitman et Emily Dickinson',
+        field: 'Poésie américaine · XIXe siècle',
+        summary: 'Découvrir le vers libre et le souffle démocratique de Whitman, puis la poésie brève et intérieure de Dickinson.',
+        lesson: {
+          sections: [
+            'Walt Whitman, né en 1819 à Long Island, exerce plusieurs métiers : imprimeur, journaliste, enseignant. En 1855, il publie à Brooklyn, à ses frais, la première édition de Leaves of Grass (Feuilles d’herbe), douze poèmes précédés d’une préface. Le livre, dont la page de titre ne porte pas son nom mais son portrait, contient ce qui deviendra « Song of Myself ». Whitman utilise le vers libre, sans rime ni mètre régulier, et chante l’individu, le corps, la démocratie et la nature.',
+            'Il révise et augmente Leaves of Grass pendant toute sa vie ; l’édition dite « du lit de mort » date de 1891-1892. Pendant la guerre de Sécession, il soigne des blessés dans des hôpitaux de Washington. Il écrit « O Captain! My Captain! » (1865) et « When Lilacs Last in the Dooryard Bloom’d », élégies pour Abraham Lincoln. Il meurt à Camden (New Jersey) le 26 mars 1892.',
+            'Emily Dickinson, née en 1830 à Amherst (Massachusetts), y vit presque toute sa vie, retirée dans la maison familiale. Elle écrit près de 1 800 poèmes, brefs, aux strophes courtes, ponctuées de tirets et de majuscules, avec des rimes souvent approximatives. Ses thèmes sont la mort, l’immortalité, la nature, l’amour et la conscience. « Because I could not stop for Death » et « Hope is the thing with feathers » comptent parmi ses poèmes les plus lus.',
+            'Seuls quelques poèmes paraissent de son vivant. Après sa mort, le 15 mai 1886, sa sœur Lavinia découvre ses manuscrits, dont des liasses cousues à la main appelées fascicules. Les premiers volumes, publiés en 1890 par Mabel Loomis Todd et Thomas Wentworth Higginson, corrigent sa ponctuation et ses rimes. Il faut attendre 1955 pour une édition complète de Thomas Johnson, puis 1998 pour celle de R. W. Franklin. Whitman ouvre la poésie à tous par l’ampleur, Dickinson par la concentration.'
+          ],
+          example: {
+            statement: 'Leaves of Grass paraît en 1855 et la dernière édition revue par Whitman date de 1891-1892. Combien d’années environ Whitman a-t-il travaillé sur ce recueil entre 1855 et 1891 ?',
+            calculation: 'Pour une durée entre deux dates, on soustrait la plus ancienne de la plus récente : 1891 − 1855 = 36.',
+            answer: 'Whitman travaille sur Leaves of Grass pendant plus de 36 ans.'
+          },
+          exercise: {
+            question: 'Qu’est-ce que le vers libre, utilisé par Whitman ?',
+            answer: 'Un vers qui ne suit ni rime ni nombre de syllabes régulier ; son rythme vient de la phrase, des répétitions et du souffle.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année Whitman publie-t-il la première édition de Leaves of Grass ?',
+              answer: 'En 1855, à Brooklyn.'
+            },
+            {
+              question: 'Quels signes de ponctuation caractérisent les manuscrits de Dickinson ?',
+              answer: 'Les tirets, ainsi que l’usage fréquent de majuscules.'
+            },
+            {
+              question: 'Pourquoi les premiers volumes de poèmes de Dickinson (1890) ont-ils été critiqués ?',
+              answer: 'Parce que les éditeurs avaient corrigé sa ponctuation et ses rimes, ce qui modifiait son style.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Walt Whitman', url: 'https://www.britannica.com/biography/Walt-Whitman' },
+            { title: 'Encyclopædia Britannica — Emily Dickinson', url: 'https://www.britannica.com/biography/Emily-Dickinson' },
+            { title: 'Poetry Foundation — Emily Dickinson', url: 'https://www.poetryfoundation.org/poets/emily-dickinson' }
+          ]
+        }
+      },
+      {
+        id: 'frost-eliot',
+        title: 'Le début du XXe siècle : Robert Frost et T. S. Eliot',
+        field: 'Poésie américaine · XXe siècle',
+        summary: 'Comparer la poésie rurale et en apparence simple de Frost avec la poésie fragmentée et savante de T. S. Eliot.',
+        lesson: {
+          sections: [
+            'Robert Frost, né à San Francisco en 1874, grandit surtout en Nouvelle-Angleterre. Il publie ses premiers livres en Angleterre, où il vit de 1912 à 1915 : A Boy’s Will (1913), puis North of Boston (1914), qui contient « Mending Wall ». À son retour aux États-Unis, il est reconnu. Mountain Interval (1916) comprend « The Road Not Taken ». Il reçoit quatre prix Pulitzer de poésie (1924, 1931, 1937 et 1943).',
+            'Frost écrit dans une langue proche de la parole, avec des formes traditionnelles (rimes, pentamètres) et des sujets de la campagne de Nouvelle-Angleterre. Mais derrière cette simplicité apparaissent des questions profondes sur la solitude, le choix et la mort. « Stopping by Woods on a Snowy Evening » paraît dans New Hampshire (1923). En janvier 1961, il lit un poème à l’investiture de John F. Kennedy. Il meurt en 1963.',
+            'Thomas Stearns Eliot, né en 1888 à Saint-Louis (Missouri), s’installe à Londres en 1914 et devient sujet britannique en 1927. Son poème « The Love Song of J. Alfred Prufrock » paraît en 1915 dans la revue Poetry. The Waste Land (La Terre vaine), publié en 1922, est son œuvre la plus célèbre : un poème fragmenté, composé de voix et de références multiples, qui exprime le désarroi de l’après-guerre.',
+            'Ezra Pound a fortement révisé le manuscrit de The Waste Land ; Eliot lui dédie le poème avec la formule « il miglior fabbro » (« le meilleur artisan »). Eliot publie ensuite « The Hollow Men » (1925), Ash Wednesday (1930) et Four Quartets (1943). Il écrit aussi Old Possum’s Book of Practical Cats (1939), dont s’inspirera la comédie musicale Cats. Il reçoit le prix Nobel de littérature en 1948 et meurt en 1965. Frost garde la forme traditionnelle, Eliot la fait éclater.'
+          ],
+          example: {
+            statement: 'The Waste Land paraît en 1922 et Eliot reçoit le prix Nobel de littérature en 1948. Combien d’années séparent ces deux dates ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1948 − 1922 = 26.',
+            answer: '26 ans séparent la publication de The Waste Land du prix Nobel d’Eliot.'
+          },
+          exercise: {
+            question: 'En quoi The Waste Land d’Eliot est-il un poème moderniste ?',
+            answer: 'Il est fragmenté, mêle plusieurs voix, langues et références culturelles, et exprime le désarroi de l’après-guerre au lieu de suivre une forme narrative classique.'
+          },
+          exercises: [
+            {
+              question: 'Combien de prix Pulitzer de poésie Frost a-t-il reçus ?',
+              answer: 'Quatre.'
+            },
+            {
+              question: 'Dans quel pays Frost publie-t-il ses deux premiers livres ?',
+              answer: 'En Angleterre.'
+            },
+            {
+              question: 'Quel poète a corrigé le manuscrit de The Waste Land ?',
+              answer: 'Ezra Pound.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Robert Frost', url: 'https://www.britannica.com/biography/Robert-Frost' },
+            { title: 'Encyclopædia Britannica — T. S. Eliot', url: 'https://www.britannica.com/biography/T-S-Eliot' },
+            { title: 'Poetry Foundation — Robert Frost', url: 'https://www.poetryfoundation.org/poets/robert-frost' }
+          ]
+        }
+      },
+      {
+        id: 'hughes-ginsberg',
+        title: 'Voix du XXe siècle : Langston Hughes et Allen Ginsberg',
+        field: 'Poésie américaine · XXe siècle',
+        summary: 'Découvrir la poésie jazz de Langston Hughes dans la Renaissance de Harlem, puis la poésie de la Beat Generation avec Allen Ginsberg.',
+        lesson: {
+          sections: [
+            'Langston Hughes naît à Joplin (Missouri) en 1901 (certaines sources donnent 1902). Son poème « The Negro Speaks of Rivers » paraît dans la revue The Crisis en 1921 ; il l’avait écrit à dix-sept ans en traversant le Mississippi en train. Il fait partie de la Renaissance de Harlem, mouvement artistique afro-américain des années 1920. Son premier recueil, The Weary Blues, est publié en 1926.',
+            'Hughes intègre dans la poésie le rythme du jazz et du blues et le langage des Noirs américains. Le recueil Fine Clothes to the Jew (1927) est critiqué par une partie de la presse noire, mais défendu par lui comme fidèle à la vie populaire. Dans Montage of a Dream Deferred (1951) figure « Harlem », poème qui demande ce qu’il advient d’un rêve différé ; Lorraine Hansberry en tire le titre de sa pièce A Raisin in the Sun (1959). Hughes meurt à New York en 1967.',
+            'Allen Ginsberg, né en 1926 à Newark (New Jersey), appartient à la Beat Generation avec Jack Kerouac et William S. Burroughs. Le 7 octobre 1955, il lit « Howl » à la Six Gallery de San Francisco. Le poème paraît en 1956 dans Howl and Other Poems, publié par City Lights, la maison de Lawrence Ferlinghetti. Longue invocation en vers libres, il dénonce la destruction d’une génération par le conformisme et la violence de la société.',
+            'En 1957, Ferlinghetti est poursuivi pour obscénité à cause de ce livre. Le 3 octobre 1957, le juge Clayton Horn le relaxe, ce qui est un jalon pour la liberté d’expression. Ginsberg écrit ensuite « Kaddish » (1961), élégie pour sa mère Naomi. Il s’engage pour les droits civiques et contre la guerre du Vietnam, et meurt à New York le 5 avril 1997. Hughes et Ginsberg ont fait entrer dans la poésie américaine des voix, des rythmes et des sujets jusque-là marginaux.'
+          ],
+          example: {
+            statement: 'The Weary Blues de Hughes paraît en 1926 et Howl de Ginsberg en 1956. Combien d’années séparent ces deux recueils ?',
+            calculation: 'Pour un écart entre deux dates, on soustrait la plus ancienne de la plus récente : 1956 − 1926 = 30.',
+            answer: '30 ans séparent The Weary Blues de Howl and Other Poems.'
+          },
+          exercise: {
+            question: 'Quelle influence musicale Hughes intègre-t-il dans ses poèmes ?',
+            answer: 'Le jazz et le blues, dont il reprend les rythmes et les formes.'
+          },
+          exercises: [
+            {
+              question: 'Qu’est-ce que la Renaissance de Harlem ?',
+              answer: 'Un mouvement artistique et littéraire afro-américain qui se développe à New York dans les années 1920.'
+            },
+            {
+              question: 'Quel éditeur publie Howl and Other Poems en 1956 ?',
+              answer: 'City Lights, de Lawrence Ferlinghetti.'
+            },
+            {
+              question: 'Quelle décision de justice rend le juge Clayton Horn en 1957 ?',
+              answer: 'Il décide que Howl n’est pas obscène et relaxe l’éditeur Ferlinghetti.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopædia Britannica — Langston Hughes', url: 'https://www.britannica.com/biography/Langston-Hughes' },
+            { title: 'Encyclopædia Britannica — Allen Ginsberg', url: 'https://www.britannica.com/biography/Allen-Ginsberg' },
+            { title: 'Poetry Foundation — Allen Ginsberg', url: 'https://www.poetryfoundation.org/poets/allen-ginsberg' }
+          ]
+        }
+      }
+    ]
+  },
+
+
 
 ];
 
