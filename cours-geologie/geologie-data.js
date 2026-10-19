@@ -517,42 +517,332 @@ window.courseCatalog = [
     ] // FIN BRANCHE outils-et-methodes
   } // FIN BRANCHE outils-et-methodes
   ,
+// BRANCHE — PÉRIODES GÉOLOGIQUES (sortYear = false : clé volontairement absente)
+
   {
-    id: 'grands-livres-reperes',
-    title: 'Les grands livres',
-    note: "Ce cours approfondi présente une sélection de grands livres de géologie : textes fondateurs, ouvrages historiques et manuels de référence qui ont façonné la compréhension moderne de la Terre. Chaque section renvoie à des titres précis, avec auteur, date, domaine, apport majeur et résumé.",
+    id: 'periodes-geologiques',
+    title: 'Les périodes-géologiques',
+    note: 'Sept chapitres sur la mesure du temps géologique, le Précambrien, le Paléozoïque, le Mésozoïque, le Cénozoïque et le Quaternaire. Les âges suivent l’échelle chronostratigraphique internationale de l’ICS (version 2024/12 pour les valeurs citées) et restent révisables ; les pourcentages d’extinction sont des estimations qui varient selon les méthodes.',
     chapters: [
-      { id: "livres-methode-selection", title: "Comment sélectionner les grands livres ?", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">La géologie s’est construite à partir de textes fondateurs qui ont établi les bases de la minéralogie, de la stratigraphie, de la géodynamique, de la paléontologie et de la géochronologie. Ce cours privilégie les ouvrages qui ont durablement influencé la discipline.</p>" } },
-      { id: "livres-livres-fondateurs", title: "Les textes fondateurs de la géologie", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Cette section présente les ouvrages qui ont posé les bases de la géologie moderne, depuis Agricola et Steno jusqu’aux synthèses globales de Suess et aux théories de Wegener.</p>" } },
-      { id: "livres-mineralogie", title: "Minéralogie et classification", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Ouvrages consacrés à la description, la classification et l’étude des minéraux, de leurs propriétés physiques et de leur structure cristalline.</p>" } },
-      { id: "livres-stratigraphie", title: "Stratigraphie et couches terrestres", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Textes qui ont établi les principes de superposition, continuité, recoupement et succession faunique, et permis de reconstituer l’histoire de la Terre.</p>" } },
-      { id: "livres-geodynamique", title: "Géodynamique et Terre profonde", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Ouvrages décrivant les forces internes, la convection mantellique, la formation des reliefs et les mouvements des plaques.</p>" } },
-      { id: "livres-glaciologie", title: "Glaciologie et paléoclimats", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Livres fondateurs sur les glaciers, les climats anciens et les traces laissées par les glaciations.</p>" } },
-      { id: "livres-tectonique", title: "Tectonique et déformations", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Ouvrages sur les failles, les plis, les séismes et les déformations de la lithosphère.</p>" } },
-      { id: "livres-geochronologie", title: "Datation et temps géologiques", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Textes sur la datation relative, isotopique, la demi-vie et la construction de l’échelle des temps géologiques.</p>" } },
-      { id: "livres-paleontologie", title: "Paléontologie et fossiles", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Ouvrages consacrés à l’étude des fossiles, des extinctions et de l’évolution des formes de vie.</p>" } },
-      { id: "livres-geomorphologie", title: "Reliefs et processus de surface", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Livres sur l’érosion, les paysages, les processus fluviaux, glaciaires et volcaniques.</p>" } },
-      { id: "livres-histoire-geologie", title: "Histoire de la géologie", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Textes retraçant la construction progressive de la discipline, ses controverses et ses avancées majeures.</p>" } },
-      { id: "livres-bibliotheque-essentielle", title: "Construire une bibliothèque essentielle", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Conseils pour constituer une bibliothèque de géologie cohérente, progressive et adaptée à différents niveaux.</p>" } },
-      { id: "livres-sources", title: "Sources et références", field: 'Grands livres · repères', summary: '', lesson: { content: "<p style=\"max-width:730px;margin:0 0 16px;color:#39453d;line-height:1.78\">Notices bibliographiques, éditions originales, archives ouvertes et ressources numériques permettant de consulter les ouvrages cités dans ce cours.</p>" } }
-    ] // FIN BRANCHE grands-livres-reperes
-  }
-
-
-];
-
+      {
+        id: 'temps-profond-datation',
+        title: 'Le temps profond : comment dater l’histoire de la Terre',
+        field: 'Géologie · Stratigraphie, datation radiométrique et échelle des temps géologiques',
+        summary: 'Comprendre comment les géologues ordonnent et datent les événements passés, et pourquoi les âges de l’échelle géologique sont des valeurs révisables.',
+        lesson: {
+          sections: [
+            'La géologie reconstitue le passé à partir des roches. En 1669, Nicolas Sténon formule des principes fondateurs de la stratigraphie, dont celui de la superposition : dans une série de couches sédimentaires non perturbée, les couches les plus basses sont les plus anciennes. Au XVIIIe siècle, James Hutton soutient que les processus lents observables aujourd’hui (érosion, sédimentation, soulèvement) ont pu façonner la Terre sur des durées immenses ; Charles Lyell diffuse cette approche, souvent appelée uniformitarisme, dans ses Principles of Geology (1830-1833). En 1815, William Smith publie une carte géologique de l’Angleterre et du pays de Galles et montre que des couches éloignées peuvent être mises en correspondance grâce à leurs fossiles.',
+            'La datation relative range les événements du plus ancien au plus récent sans donner d’âge en années ; elle repose sur la superposition, les relations de recoupement et les fossiles. La datation absolue (ou numérique) attribue un âge exprimé en années, surtout grâce à la radiochronologie : un isotope radioactif « père » se transforme en isotope « fils » à vitesse constante, décrite par sa demi-vie, durée au bout de laquelle la moitié des noyaux initiaux s’est désintégrée. L’uranium 238 a une demi-vie d’environ 4,47 milliards d’années et permet de dater des roches très anciennes, notamment à partir de cristaux de zircon. Le carbone 14, de demi-vie 5 730 ans, ne sert que pour des matériaux organiques d’au plus quelques dizaines de milliers d’années (environ 50 000 ans) : il est inutilisable pour les périodes géologiques anciennes.',
+            'Au début du XXe siècle, la radioactivité fournit un nouvel outil : Arthur Holmes publie The Age of the Earth en 1913. En 1956, Clair Patterson obtient, à partir des isotopes du plomb de météorites, un âge d’environ 4,55 milliards d’années pour la Terre. L’estimation couramment retenue aujourd’hui est d’environ 4,54 milliards d’années ; l’ICS fixe la base de l’éon Hadéen à 4 567 Ma, valeur proche de l’âge des plus anciens matériaux datés du Système solaire. Les roches terrestres préservées sont beaucoup plus récentes que la Terre elle-même, car la tectonique, l’érosion et le recyclage de la croûte ont détruit l’essentiel de la croûte primitive : les plus anciens minéraux terrestres connus sont des zircons détritiques des Jack Hills (Australie), datés d’environ 4,4 milliards d’années.',
+            'Les durées sont organisées en éons (Hadéen, Archéen, Protérozoïque, Phanérozoïque), éras, périodes, époques et âges. Pour le Phanérozoïque, les limites sont définies par un GSSP (Global Boundary Stratotype Section and Point), c’est-à-dire un point précis dans une coupe de roches de référence, souvent lié à l’apparition d’un fossile. Les âges numériques associés ne définissent pas ces unités : ils sont révisés quand de nouvelles mesures sont publiées. Par exemple, dans la version 2024/12 de la charte de l’ICS, la base du Crétacé passe de 145,0 à 143,1 Ma. Les âges de cette branche doivent donc être lus comme les valeurs en vigueur dans cette version, avec leurs incertitudes.'
+          ],
+          example: {
+            statement: 'Un échantillon organique conserve 25 % de son carbone 14 initial. Sachant que la demi-vie du carbone 14 est de 5 730 ans, quel est son âge approximatif ?',
+            calculation: 'Il reste 25 % = 1/4 = (1/2)², soit deux demi-vies écoulées. Âge ≈ 2 × 5 730 = 11 460 ans.',
+            answer: 'L’échantillon a environ 11 460 ans. Cette méthode ne s’applique qu’aux matériaux organiques relativement récents et le résultat s’accompagne d’une incertitude.'
+          },
+          exercise: {
+            question: 'Pourquoi une roche de 100 millions d’années ne peut-elle pas être datée au carbone 14 ?',
+            answer: 'Parce que la demi-vie du carbone 14 (5 730 ans) est trop courte : après 100 millions d’années, il n’en resterait plus de quantité mesurable. Il faut utiliser des systèmes à demi-vie longue, comme l’uranium-plomb.'
+          },
+          exercises: [
+            {
+              question: 'Que signifie la demi-vie d’un isotope radioactif ?',
+              answer: 'C’est la durée au bout de laquelle la moitié des noyaux radioactifs initiaux d’un échantillon s’est désintégrée.'
+            },
+            {
+              question: 'Que signifie le sigle GSSP et à quoi sert-il ?',
+              answer: 'Global Boundary Stratotype Section and Point : un point de référence dans une coupe de roches qui définit officiellement la base d’une unité de l’échelle des temps géologiques.'
+            },
+            {
+              question: 'Pourquoi la base du Crétacé est-elle citée tantôt à 145,0 Ma, tantôt à 143,1 Ma ?',
+              answer: 'Parce que les âges numériques de l’échelle sont révisés : la version 2024/12 de la charte de l’ICS a rajeuni cette limite à 143,1 Ma en suivant la Geologic Time Scale 2020.'
+            }
+          ],
+          sources: [
+            { title: 'ICS — International Chronostratigraphic Chart', url: 'https://stratigraphy.org/chart' },
+            { title: 'ICS — Journal des modifications de la charte (2012-2026)', url: 'https://stratigraphy.org/ICSchart/ChangeLog2012-2026.txt' },
+            { title: 'USGS — The Age of the Earth', url: 'https://pubs.usgs.gov/gip/geotime/age.html' },
+            { title: 'Wikipedia — Age of Earth', url: 'https://en.wikipedia.org/wiki/Age_of_Earth' },
+            { title: 'Wikipedia — Radiometric dating', url: 'https://en.wikipedia.org/wiki/Radiometric_dating' }
+          ]
+        }
+      },
+      {
+        id: 'precambrien',
+        title: 'Le Précambrien : Hadéen, Archéen et Protérozoïque',
+        field: 'Précambrien · De 4 567 à 538,8 millions d’années environ',
+        summary: 'Découvrir les trois premiers éons, l’apparition de la vie, la Grande Oxydation et les premiers animaux de l’Édiacarien.',
+        lesson: {
+          sections: [
+            '« Précambrien » est un terme informel qui regroupe les trois premiers éons : Hadéen, Archéen et Protérozoïque. Il couvre environ 88 % de l’histoire de la Terre. Dans la version 2024/12 de la charte de l’ICS, l’Hadéen commence à 4 567 Ma (âge ratifié par l’IUGS en 2022) et la base de l’Archéen est fixée à 4 031 ± 3 Ma depuis 2023 (elle était auparavant arrondie à environ 4 000 Ma). L’Archéen se termine à 2 500 Ma. Les témoins directs de l’Hadéen sont rares : météorites, roches lunaires et zircons très anciens. Les plus anciennes traces de vie sont microbiennes : des stromatolithes, structures laminées construites par des communautés microbiennes, sont signalés à partir d’environ 3,4-3,5 milliards d’années, certaines interprétations restant débattues.',
+            'Le Protérozoïque (2 500 – 538,8 Ma) est divisé en Paléoprotérozoïque, Mésoprotérozoïque et Néoprotérozoïque. Au Paléoprotérozoïque survient la Grande Oxydation (Great Oxidation Event) : l’oxygène libre s’accumule durablement dans l’atmosphère, vers 2,4 milliards d’années (les contraintes la situent entre environ 2,45 et 2,32 Ga). Cet oxygène est produit par la photosynthèse oxygénique, notamment celle des cyanobactéries. Les formations de fer rubanées, abondantes durant la première moitié du Paléoprotérozoïque, témoignent d’océans riches en fer dissous. Des travaux récents suggèrent que cette oxygénation n’a pas été un événement unique et instantané, mais une succession d’épisodes. L’origine précise des eucaryotes reste, elle aussi, discutée.',
+            'Le Néoprotérozoïque comprend trois périodes : Tonien (1 000 – 720 Ma), Cryogénien (720 – 635 Ma) et Édiacarien (635 – 538,8 Ma). Le Cryogénien est associé à des glaciations majeures, dites « Terre boule de neige » (par exemple Sturtien, vers 717-660 Ma, et Marinoen, jusque vers 635 Ma) ; l’étendue réelle des glaces, notamment aux basses latitudes, reste discutée. L’Édiacarien, ratifié par l’IUGS en 2004, est la première nouvelle période géologique formellement définie depuis environ 120 ans. Il doit son nom aux collines d’Ediacara (Australie-Méridionale), où Reg Sprigg a découvert en 1946 des fossiles d’organismes inconnus.',
+            'Le biote édiacarien regroupe les premiers grands organismes complexes multicellulaires du registre fossile, apparus surtout après environ 575 Ma et disparus vers 539 Ma. Il s’agit d’êtres à corps mou, souvent en forme de frondes, de disques ou de rubans. Leurs affinités avec les animaux actuels sont encore débattues : certains sont rattachés à des animaux, d’autres à des lignées éteintes. La base du Cambrien (538,8 Ma) marque l’entrée dans le Phanérozoïque, éon « de la vie visible », qui ne représente qu’environ 12 % de l’histoire de la Terre.'
+          ],
+          example: {
+            statement: 'En prenant 4 567 Ma pour la base de l’Hadéen et 538,8 Ma pour la base du Phanérozoïque, quelle part de la durée totale correspond au Précambrien ?',
+            calculation: 'Durée du Précambrien = 4 567 − 538,8 = 4 028,2 Ma. Part = 4 028,2 / 4 567 ≈ 0,882, soit environ 88 %.',
+            answer: 'Le Précambrien représente environ 88 % de la durée comprise entre 4 567 Ma et aujourd’hui ; le Phanérozoïque, environ 12 %.'
+          },
+          exercise: {
+            question: 'Qu’est-ce que la Grande Oxydation ?',
+            answer: 'Une accumulation durable d’oxygène libre dans l’atmosphère, vers 2,4 milliards d’années, liée à la photosynthèse oxygénique des cyanobactéries.'
+          },
+          exercises: [
+            {
+              question: 'Quelles sont les limites de l’Édiacarien dans la charte de l’ICS ?',
+              answer: 'De 635 Ma à 538,8 Ma.'
+            },
+            {
+              question: 'Pourquoi le terme « Précambrien » est-il dit informel ?',
+              answer: 'Parce qu’il ne correspond pas à une unité formelle de l’échelle de l’ICS : il regroupe commodément les éons Hadéen, Archéen et Protérozoïque.'
+            },
+            {
+              question: 'Que désigne l’expression « Terre boule de neige » ?',
+              answer: 'Une hypothèse de glaciations extrêmes du Cryogénien où les glaces auraient recouvert de très vastes régions du globe ; son ampleur exacte reste discutée.'
+            }
+          ],
+          sources: [
+            { title: 'ICS — Journal des modifications de la charte (Hadéen 4 567 Ma, Archéen 4 031 Ma)', url: 'https://stratigraphy.org/ICSchart/ChangeLog2012-2026.txt' },
+            { title: 'ICS — The Ediacaran Period: a new addition to the geologic time scale', url: 'https://stratigraphy.org/gssps/files/ediacaran.pdf' },
+            { title: 'Wikipedia — Ediacaran', url: 'https://en.wikipedia.org/wiki/Ediacaran' },
+            { title: 'Wikipedia — Neoproterozoic', url: 'https://en.wikipedia.org/wiki/Neoproterozoic' },
+            { title: 'University of Maryland (T. Holtz) — The Proterozoic', url: 'https://geol.umd.edu/~tholtz/G102/lectures/102proterozoic.html' }
+          ]
+        }
+      },
+      {
+        id: 'paleozoique-cambrien-silurien',
+        title: 'Paléozoïque (1) : Cambrien, Ordovicien et Silurien',
+        field: 'Paléozoïque · De 538,8 à environ 419,6 millions d’années',
+        summary: 'Suivre la diversification des animaux marins, l’extinction de la fin de l’Ordovicien et les premières plantes terrestres.',
+        lesson: {
+          sections: [
+            'Le Paléozoïque (« vie ancienne ») commence avec le Cambrien, dont la base est définie par un GSSP à Fortune Head (Terre-Neuve, Canada), ratifié en 1992 et daté de 538,8 ± 0,6 Ma. Le nom Cambrien, tiré de Cambria (nom latin du pays de Galles), est proposé par Adam Sedgwick en 1835. Le Cambrien voit une diversification rapide des animaux marins, dont beaucoup acquièrent un squelette minéralisé, et la plupart des grands plans d’organisation animaux apparaissent dans le registre fossile. L’expression « explosion cambrienne » ne signifie pas un événement instantané : le phénomène s’étale sur plusieurs dizaines de millions d’années et possède des précurseurs à l’Édiacarien. Les trilobites sont les fossiles emblématiques de la période.',
+            'Certains gisements à conservation exceptionnelle, qui préservent des parties molles, éclairent cette diversification : le schiste de Burgess (Canada), découvert par Charles Walcott en 1909, et le gisement de Chengjiang (Chine), daté d’environ 518 Ma. Ils montrent des animaux variés, dont des arthropodes, des vers et des formes sans équivalent actuel. Le Cambrien dure environ 52 Ma : de 538,8 Ma jusqu’à la base de l’Ordovicien, que la version 2024/12 de la charte de l’ICS place à environ 486,9 Ma (± 1,5).',
+            'L’Ordovicien (environ 486,9 – 443,1 Ma), nom proposé par Charles Lapworth en 1879 d’après les Ordovices, peuple celte du pays de Galles, est marqué par la Grande Biodiversification ordovicienne : la diversité des animaux marins augmente fortement, notamment chez les invertébrés des fonds marins. La fin de la période est marquée par la glaciation hirnantienne (le Hirnantien débute vers 445,2 Ma) et par la première des « Cinq grandes » extinctions de masse. Celle-ci s’est déroulée en deux phases et a éliminé, selon les estimations, environ 85 % des espèces, surtout marines ; elle est liée à un refroidissement, à une glaciation sur le Gondwana et à une baisse du niveau marin.',
+            'Le Silurien (environ 443,1 – 419,6 Ma) doit son nom aux Silures, peuple celte du pays de Galles, nom donné par Roderick Murchison en 1835. Après l’extinction, les écosystèmes marins se reconstituent et des récifs se développent. C’est durant le Silurien que se diversifient les premières plantes vasculaires terrestres, comme le genre Cooksonia, de très petites plantes à tiges simples. Les poissons à mâchoires sont attestés au Silurien, avant leur grande diversification au Dévonien. Ces changements préparent la colonisation des continents par les plantes et les animaux au Paléozoïque suivant.'
+          ],
+          example: {
+            statement: 'Quelle est la durée approximative de l’Ordovicien, entre 486,85 Ma et 443,1 Ma ?',
+            calculation: '486,85 − 443,1 = 43,75 Ma, soit environ 43,8 Ma.',
+            answer: 'L’Ordovicien dure environ 43,8 millions d’années, avec une incertitude de l’ordre de 1 à 2 Ma sur chaque limite.'
+          },
+          exercise: {
+            question: 'Pourquoi l’expression « explosion cambrienne » est-elle trompeuse ?',
+            answer: 'Parce que la diversification des animaux s’étale sur plusieurs dizaines de millions d’années et a des précurseurs à l’Édiacarien ; ce n’est pas un événement instantané.'
+          },
+          exercises: [
+            {
+              question: 'Où se trouve le GSSP qui définit la base du Cambrien ?',
+              answer: 'À Fortune Head, à Terre-Neuve (Canada), ratifié en 1992.'
+            },
+            {
+              question: 'Quelle extinction de masse marque la fin de l’Ordovicien et quelle est la cause généralement invoquée ?',
+              answer: 'L’extinction de la fin de l’Ordovicien, en deux phases, qui a touché environ 85 % des espèces selon les estimations ; elle est associée à un refroidissement, une glaciation et une baisse du niveau marin.'
+            },
+            {
+              question: 'Quelles plantes terrestres se diversifient au Silurien ?',
+              answer: 'Les premières plantes vasculaires, comme le genre Cooksonia.'
+            }
+          ],
+          sources: [
+            { title: 'ICS — International Chronostratigraphic Chart', url: 'https://stratigraphy.org/chart' },
+            { title: 'ICS — Journal des modifications de la charte (2012-2026)', url: 'https://stratigraphy.org/ICSchart/ChangeLog2012-2026.txt' },
+            { title: 'Wikipedia — Ediacaran (GSSP du Cambrien à Fortune Head)', url: 'https://en.wikipedia.org/wiki/Ediacaran' },
+            { title: 'UCMP Berkeley — The Cambrian Period', url: 'https://ucmp.berkeley.edu/cambrian/cambrian.php' },
+            { title: 'UCMP Berkeley — The Ordovician Period', url: 'https://ucmp.berkeley.edu/ordovician/ordovician.php' },
+            { title: 'UCMP Berkeley — The Silurian Period', url: 'https://ucmp.berkeley.edu/silurian/silurian.php' }
+          ]
+        }
+      },
+      {
+        id: 'paleozoique-devonien-permien',
+        title: 'Paléozoïque (2) : Dévonien, Carbonifère et Permien',
+        field: 'Paléozoïque · De 419,6 à 251,9 millions d’années environ',
+        summary: 'Comprendre la colonisation des continents, les forêts du Carbonifère, la Pangée et la plus grande extinction de masse connue.',
+        lesson: {
+          sections: [
+            'Le Dévonien (environ 419,6 – 358,9 Ma) est souvent appelé « âge des poissons » en raison de la diversification des poissons. C’est aussi la période où la colonisation des terres s’intensifie : des plantes à tiges plus grandes apparaissent, puis les premières forêts (par exemple avec Archaeopteris), et les arthropodes terrestres se diversifient. Vers 375 Ma, Tiktaalik, poisson tétrapodomorphe découvert dans l’Arctique canadien, présente des caractères intermédiaires entre poissons et tétrapodes. À la fin de la période, une série de pulses d’extinction (événements Kellwasser, vers 372 Ma, et Hangenberg, vers 359 Ma) touche surtout la vie marine et fait disparaître, selon les estimations, de l’ordre de 70 % des espèces.',
+            'Le Carbonifère (environ 358,9 – 298,9 Ma) tire son nom des couches de charbon qu’il contient ; le terme a été introduit par Conybeare et Phillips en 1822. De vastes forêts marécageuses, dominées par des lycophytes arborescents et des fougères, ont enfoui de grandes quantités de matière organique devenue charbon. L’ICS divise le Carbonifère en deux sous-systèmes : le Mississippien (inférieur) et le Pennsylvanien (supérieur). Les premiers amniotes, vertébrés capables de pondre des œufs à coquille hors de l’eau, apparaissent à cette période, et certains insectes atteignent de grandes tailles, comme la libellule Meganeura. La collision entre grands continents prépare l’assemblage de la Pangée.',
+            'Le Permien (environ 298,9 – 251,9 Ma) est nommé par Roderick Murchison en 1841 d’après la région de Perm (Russie). La Pangée est largement assemblée ; l’intérieur du supercontinent connaît des climats contrastés et souvent arides. Les synapsides, groupe qui inclut les ancêtres des mammifères, dominent de nombreux écosystèmes terrestres. La période débute dans le contexte d’une longue glaciation de la fin du Paléozoïque centrée sur le Gondwana, puis le climat se réchauffe.',
+            'La limite Permien-Trias, datée à 251,902 ± 0,024 Ma (Burgess et al., 2014), correspond à la « Grande Mortalité », la plus sévère extinction de masse connue. Les estimations récentes évaluent la perte à environ 81 à 94 % des espèces animales marines, avec aussi de lourdes pertes sur les continents ; tous les trilobites disparaissent. La cause principale généralement retenue est le volcanisme des trapps de Sibérie, qui a libéré de grandes quantités de gaz à effet de serre. Les datations de Burgess et collègues indiquent que ce magmatisme a débuté environ 300 000 ans avant le début de l’extinction et s’est poursuivi pendant au moins 500 000 ans après.'
+          ],
+          example: {
+            statement: 'Quelle est la durée du Permien, entre 298,9 Ma et 251,902 Ma ?',
+            calculation: '298,9 − 251,902 = 46,998 Ma, soit environ 47,0 Ma.',
+            answer: 'Le Permien dure environ 47 millions d’années. Le Paléozoïque entier (538,8 − 251,902) dure environ 286,9 Ma.'
+          },
+          exercise: {
+            question: 'D’où le Carbonifère tire-t-il son nom ?',
+            answer: 'Des couches de charbon (carbone) formées à partir des forêts marécageuses de cette période.'
+          },
+          exercises: [
+            {
+              question: 'Quelle extinction de masse marque la limite Permien-Trias et à quelle date ?',
+              answer: 'La « Grande Mortalité », vers 251,9 Ma (251,902 ± 0,024 Ma), la plus sévère extinction de masse connue.'
+            },
+            {
+              question: 'Quelle est la cause principale généralement retenue pour cette extinction ?',
+              answer: 'Le volcanisme des trapps de Sibérie et ses effets climatiques et océaniques, même si les mécanismes exacts font encore l’objet de recherches.'
+            },
+            {
+              question: 'Quels sont les deux sous-systèmes du Carbonifère selon l’ICS ?',
+              answer: 'Le Mississippien (inférieur) et le Pennsylvanien (supérieur).'
+            }
+          ],
+          sources: [
+            { title: 'ICS — International Chronostratigraphic Chart', url: 'https://stratigraphy.org/chart' },
+            { title: 'ICS — Journal des modifications de la charte (2012-2026)', url: 'https://stratigraphy.org/ICSchart/ChangeLog2012-2026.txt' },
+            { title: 'Burgess et al. (2014), PNAS — High-precision timeline for Earth’s most severe extinction', url: 'https://www.pnas.org/doi/10.1073/pnas.1317692111' },
+            { title: 'Science News — Volcanic activity convicted in Permian extinction', url: 'https://www.sciencenews.org/article/volcanic-activity-convicted-permian-extinction' },
+            { title: 'UCMP Berkeley — The Devonian Period', url: 'https://ucmp.berkeley.edu/devonian/devonian.php' },
+            { title: 'UCMP Berkeley — The Carboniferous Period', url: 'https://ucmp.berkeley.edu/carboniferous/carboniferous.php' },
+            { title: 'UCMP Berkeley — The Permian Period', url: 'https://ucmp.berkeley.edu/permian/permian.php' }
+          ]
+        }
+      },
+      {
+        id: 'mesozoique',
+        title: 'Mésozoïque : Trias, Jurassique et Crétacé',
+        field: 'Mésozoïque · De 251,9 à 66 millions d’années environ',
+        summary: 'Suivre l’ère des dinosaures, la fragmentation de la Pangée et l’extinction de la fin du Crétacé.',
+        lesson: {
+          sections: [
+            'Le Trias (environ 251,9 – 201,4 Ma) s’ouvre sur la reconstruction des écosystèmes après la Grande Mortalité. Son nom vient de la division en trois ensembles des terrains du Trias d’Allemagne (Buntsandstein, Muschelkalk, Keuper), proposée par Friedrich von Alberti en 1834. La Pangée est alors un supercontinent unique. Les premiers dinosaures et les premiers mammifères apparaissent au Trias, mais ce sont d’autres reptiles archosauriens qui dominent d’abord les milieux terrestres. La période se termine par une extinction de masse vers 201 Ma, associée à d’importantes éruptions volcaniques (province magmatique de l’Atlantique central), qui aurait touché environ 70 à 80 % des espèces selon les estimations.',
+            'Le Jurassique (201,4 – 143,1 Ma, soit environ 58,3 Ma) tire son nom du massif du Jura ; Leopold von Buch en établit la division en trois ensembles en 1839 (Jurassique noir, brun et blanc). La Pangée commence à se fragmenter et l’océan Atlantique central s’ouvre. Les dinosaures dominent les écosystèmes terrestres, avec notamment les sauropodes, tandis que les ptérosaures occupent les airs, et que des reptiles marins comme les ichtyosaures et les plésiosaures peuplent les mers (ces derniers ne sont pas des dinosaures). Vers 150 Ma, Archaeopteryx, découvert en 1861 dans les calcaires de Solnhofen (Allemagne), illustre la proximité entre dinosaures théropodes et oiseaux.',
+            'Le Crétacé (143,1 – 66,0 Ma, soit environ 77,1 Ma) est la plus longue période du Mésozoïque. Son nom vient du latin creta, la craie : les dépôts de craie, formés de microfossiles marins, sont typiques de cette période. La notion de Crétacé comme période distincte a été introduite par le géologue belge Jean d’Omalius d’Halloy en 1822. Le climat est globalement chaud et les niveaux marins sont élevés. Les plantes à fleurs (angiospermes) se diversifient, ce qui transforme les écosystèmes terrestres. La limite Jurassique-Crétacé a pour particularité d’être la seule limite entre deux systèmes dont le GSSP n’est pas encore défini.',
+            'La fin du Crétacé correspond à la limite Crétacé-Paléogène (K-Pg), datée d’environ 66,0 Ma. L’extinction associée aurait éliminé environ 75 % des espèces de plantes et d’animaux, dont tous les dinosaures non aviens ; les oiseaux, issus de dinosaures théropodes, survivent. En 1980, Luis et Walter Alvarez, Frank Asaro et Helen Michel proposent une cause extraterrestre à partir d’une anomalie d’iridium dans les couches de la limite. Le cratère de Chicxulub (Yucatán, Mexique), d’environ 180 km de diamètre moyen et daté d’environ 66,04 Ma, est aujourd’hui largement considéré comme la cause principale de l’extinction. Le volcanisme des trapps du Deccan, contemporain, est lui aussi étudié et son rôle exact reste débattu.'
+          ],
+          example: {
+            statement: 'Trias : 251,902 → 201,4 Ma ; Jurassique : 201,4 → 143,1 Ma ; Crétacé : 143,1 → 66,0 Ma. Quelle période du Mésozoïque est la plus longue ?',
+            calculation: 'Trias : 251,902 − 201,4 = 50,5 Ma. Jurassique : 201,4 − 143,1 = 58,3 Ma. Crétacé : 143,1 − 66,0 = 77,1 Ma.',
+            answer: 'Le Crétacé, avec environ 77,1 Ma. Le Mésozoïque dure en tout environ 185,9 Ma (251,902 − 66,0).'
+          },
+          exercise: {
+            question: 'Pourquoi l’anomalie d’iridium est-elle importante pour comprendre l’extinction de la fin du Crétacé ?',
+            answer: 'Parce que l’iridium est rare dans la croûte terrestre mais plus abondant dans les astéroïdes : sa concentration anormalement élevée à la limite K-Pg a conduit à l’hypothèse d’un impact.'
+          },
+          exercises: [
+            {
+              question: 'Quelles sont les dates de début et de fin du Jurassique dans la charte de l’ICS (version 2024/12) ?',
+              answer: 'De 201,4 Ma à 143,1 Ma.'
+            },
+            {
+              question: 'Les plésiosaures et les ptérosaures sont-ils des dinosaures ?',
+              answer: 'Non. Ce sont des reptiles marins (plésiosaures) et volants (ptérosaures) contemporains des dinosaures.'
+            },
+            {
+              question: 'Quelle particularité présente la limite entre le Jurassique et le Crétacé ?',
+              answer: 'C’est la seule limite entre deux systèmes dont le GSSP n’est pas encore défini.'
+            }
+          ],
+          sources: [
+            { title: 'ICS — International Chronostratigraphic Chart', url: 'https://stratigraphy.org/chart' },
+            { title: 'Wikipedia — Jurassic', url: 'https://en.wikipedia.org/wiki/Jurassic' },
+            { title: 'Wikipedia — Cretaceous', url: 'https://en.wikipedia.org/wiki/Cretaceous' },
+            { title: 'Wikipedia — Chicxulub crater', url: 'https://en.wikipedia.org/wiki/Chicxulub_crater' },
+            { title: 'Alvarez et al. (1980), Science — Extraterrestrial cause for the Cretaceous-Tertiary extinction', url: 'https://www.science.org/doi/10.1126/science.208.4448.1095' }
+          ]
+        }
+      },
+      {
+        id: 'cenozoique',
+        title: 'Cénozoïque : Paléogène et Néogène',
+        field: 'Cénozoïque · De 66 à 2,58 millions d’années environ',
+        summary: 'Comprendre la diversification des mammifères, le refroidissement du climat et la formation des paysages et des écosystèmes modernes.',
+        lesson: {
+          sections: [
+            'Le Cénozoïque (« vie récente ») commence à 66,0 Ma. Le Paléogène (66,0 – 23,04 Ma) comprend le Paléocène (66,0 – 56,0 Ma), l’Éocène (56,0 – 33,9 Ma) et l’Oligocène (33,9 – 23,04 Ma). Après l’extinction de la fin du Crétacé, les mammifères et les oiseaux se diversifient dans les niches laissées libres. Le terme « Tertiaire », ancien, n’est plus une unité formelle de l’ICS : il est remplacé par Paléogène et Néogène. Le début du Paléogène est marqué par des climats globalement plus chauds que l’actuel, avec en particulier le maximum thermique du passage Paléocène-Éocène (PETM), vers 56 Ma, une phase de réchauffement rapide associée à une libération massive de carbone.',
+            'Autour de 33,9 Ma, à la transition Éocène-Oligocène, le climat se refroidit nettement et des calottes de glace se développent sur l’Antarctique. L’ouverture progressive de passages océaniques autour de l’Antarctique a contribué à l’isoler thermiquement, mais la chronologie exacte de ce processus est débattue. Les collisions tectoniques modifient aussi les reliefs : la collision entre l’Inde et l’Eurasie, débutée il y a environ 50 Ma, aboutit à la formation de l’Himalaya, et le rapprochement de l’Afrique et de l’Europe contribue à la formation des Alpes.',
+            'Le Néogène (23,04 – 2,58 Ma, soit environ 20,5 Ma) comprend le Miocène (23,04 – 5,333 Ma) et le Pliocène (5,333 – 2,58 Ma). Au Miocène, les milieux ouverts et les herbacées, notamment les graminées de type C4, s’étendent, ce qui favorise la diversification de nombreux herbivores. Entre environ 5,97 et 5,33 Ma, la crise de salinité messinienne transforme la Méditerranée, dont le niveau baisse fortement avant sa remise en eau. C’est aussi à la fin du Miocène que se situent les plus anciens candidats au statut d’hominine, comme Sahelanthropus, vers 7 Ma, dont le statut fait toutefois débat.',
+            'Le Pliocène prolonge la tendance générale au refroidissement, qui conduit aux glaciations du Quaternaire. Les écosystèmes sont alors très proches des écosystèmes actuels : mammifères modernes, vastes zones de savanes et de steppes, calottes polaires installées. La limite entre le Néogène et le Quaternaire est placée à 2,58 Ma, à la base du Gélasien. Cette limite correspond à un changement climatique, avec l’installation de glaciations répétées dans l’hémisphère nord.'
+          ],
+          example: {
+            statement: 'Le Paléogène dure de 66,0 à 23,04 Ma et le Néogène de 23,04 à 2,58 Ma. Combien de fois le Paléogène est-il plus long que le Néogène ?',
+            calculation: 'Paléogène : 66,0 − 23,04 = 42,96 Ma. Néogène : 23,04 − 2,58 = 20,46 Ma. Rapport : 42,96 / 20,46 ≈ 2,1.',
+            answer: 'Le Paléogène est environ 2,1 fois plus long que le Néogène (≈ 43,0 Ma contre ≈ 20,5 Ma).'
+          },
+          exercise: {
+            question: 'Pourquoi ne parle-t-on plus de « Tertiaire » comme unité officielle de l’échelle ?',
+            answer: 'Parce que l’ICS utilise désormais les systèmes Paléogène et Néogène ; « Tertiaire » est un terme ancien qui n’a plus de statut formel.'
+          },
+          exercises: [
+            {
+              question: 'Quelles sont les trois époques du Paléogène ?',
+              answer: 'Le Paléocène, l’Éocène et l’Oligocène.'
+            },
+            {
+              question: 'Quelles sont les deux époques du Néogène et leur limite ?',
+              answer: 'Le Miocène et le Pliocène, séparés à 5,333 Ma.'
+            },
+            {
+              question: 'Que se passe-t-il vers 33,9 Ma, à la transition Éocène-Oligocène ?',
+              answer: 'Un refroidissement marqué du climat et le développement de calottes de glace en Antarctique.'
+            }
+          ],
+          sources: [
+            { title: 'ICS — International Chronostratigraphic Chart', url: 'https://stratigraphy.org/chart' },
+            { title: 'ICS — Journal des modifications de la charte (2012-2026)', url: 'https://stratigraphy.org/ICSchart/ChangeLog2012-2026.txt' },
+            { title: 'Wikipedia — Paleogene', url: 'https://en.wikipedia.org/wiki/Paleogene' },
+            { title: 'Wikipedia — Neogene', url: 'https://en.wikipedia.org/wiki/Neogene' },
+            { title: 'Wikipedia — Paleocene–Eocene Thermal Maximum', url: 'https://en.wikipedia.org/wiki/Paleocene%E2%80%93Eocene_Thermal_Maximum' }
+          ]
+        }
+      },
+      {
+        id: 'quaternaire-holocene-anthropocene',
+        title: 'Quaternaire : glaciations, Holocène et débat sur l’Anthropocène',
+        field: 'Cénozoïque · De 2,58 millions d’années à aujourd’hui',
+        summary: 'Comprendre les cycles glaciaires, les subdivisions de l’Holocène et pourquoi l’Anthropocène n’est pas une époque officielle.',
+        lesson: {
+          sections: [
+            'Le Quaternaire commence à 2,58 Ma, à la base du Gélasien, et regroupe le Pléistocène et l’Holocène. Il est marqué par une alternance de périodes glaciaires et interglaciaires, dont le rythme est lié aux variations de l’orbite et de l’inclinaison de la Terre (cycles de Milankovitch). Ces cycles ont d’abord une périodicité dominante d’environ 41 000 ans, puis, après la transition du Pléistocène moyen, d’environ 100 000 ans. Dans la charte de l’ICS, le Pléistocène est subdivisé en Gélasien (début à 2,58 Ma), Calabrien (1,80 Ma), Chibanien (774 000 ans, GSSP ratifié en 2020 près de Chiba, au Japon) et un Pléistocène supérieur dont la base est placée vers 129 000 ans.',
+            'Le Pléistocène est aussi la période de l’évolution du genre Homo. Les plus anciens fossiles généralement rattachés à notre espèce, Homo sapiens, découverts à Jebel Irhoud (Maroc), sont datés d’environ 300 000 ans. La dernière période glaciaire s’achève vers 11 700 ans avant 2000, ce qui marque le début de l’Holocène. Cette limite est repérée dans les carottes de glace du Groenland et correspond à un réchauffement rapide.',
+            'L’Holocène (depuis 0,0117 Ma, soit 11 700 ans avant 2000) est subdivisé depuis 2018 en trois âges ratifiés par l’IUGS : le Greenlandien (de 11 700 à 8 200 ans avant 2000), le Northgrippien (de 8 200 à 4 200 ans) et le Meghalayen (depuis environ 4 200 ans). Les deux premiers sont définis dans des carottes de glace du Groenland ; le Meghalayen, dans une stalagmite de la grotte de Mawmluh (Meghalaya, Inde). Leurs limites correspondent à des événements climatiques : un refroidissement vers 8 200 ans, et une période d’aridification marquée vers 4 200 ans dans plusieurs régions du monde, dont l’ampleur et les conséquences humaines sont discutées.',
+            'Le terme Anthropocène, popularisé par Paul Crutzen et Eugene Stoermer à partir de 2000, désigne une période où les activités humaines transformeraient le système terrestre à l’échelle globale. Le groupe de travail sur l’Anthropocène, créé en 2009, proposait une nouvelle époque débutant au milieu du XXe siècle, avec un site de référence au lac Crawford (Ontario, Canada). En mars 2024, la proposition est rejetée par un vote de la Sous-commission de stratigraphie du Quaternaire ; l’IUGS a confirmé ce vote le 20 mars 2024 après un soutien quasi unanime des présidents des sous-commissions de l’ICS, la procédure ayant toutefois été contestée par des membres de la sous-commission. L’Anthropocène n’est donc pas une unité officielle de l’échelle, l’époque officielle actuelle restant l’Holocène, mais le terme reste largement utilisé comme descripteur de l’impact humain.'
+          ],
+          example: {
+            statement: 'Le Northgrippien débute à 8 200 ans avant 2000 et le Meghalayen à 4 200 ans avant 2000. Quelle est la durée du Northgrippien ?',
+            calculation: '8 200 − 4 200 = 4 000 ans.',
+            answer: 'Le Northgrippien dure environ 4 000 ans. Le Greenlandien (11 700 − 8 200) dure 3 500 ans.'
+          },
+          exercise: {
+            question: 'Pourquoi dit-on que l’Anthropocène n’est pas une époque officielle de l’échelle des temps géologiques ?',
+            answer: 'Parce que la proposition formelle a été rejetée en 2024 par la Sous-commission de stratigraphie du Quaternaire, puis la décision a été confirmée par l’IUGS ; le terme reste employé de façon informelle.'
+          },
+          exercises: [
+            {
+              question: 'À quelle date commence le Quaternaire dans la charte de l’ICS ?',
+              answer: 'À 2,58 Ma, à la base du Gélasien.'
+            },
+            {
+              question: 'Quels sont les trois âges de l’Holocène ?',
+              answer: 'Le Greenlandien, le Northgrippien et le Meghalayen.'
+            },
+            {
+              question: 'À quoi servent les carottes de glace du Groenland pour définir l’Holocène ?',
+              answer: 'Elles fournissent les sections de référence (GSSP) qui définissent le début de l’Holocène et deux de ses âges, grâce à leurs enregistrements climatiques.'
+            }
+          ],
+          sources: [
+            { title: 'ICS — International Chronostratigraphic Chart', url: 'https://stratigraphy.org/chart' },
+            { title: 'ICS — Journal des modifications de la charte (2012-2026)', url: 'https://stratigraphy.org/ICSchart/ChangeLog2012-2026.txt' },
+            { title: 'IUGS — Déclaration du 20 mars 2024 sur l’Anthropocène', url: 'https://www.iugs.org/_files/ugd/f1fc07_23c6f9e723bc47b9b5fdcd300f806f25.pdf' },
+            { title: 'Earth.Org — Not Yet Anthropocene', url: 'https://earth.org/not-yet-anthropocene-what-the-official-rejection-of-the-anthropocene-as-earths-new-epoch-means-for-the-climate-discourse/' },
+            { title: 'Wikipedia — Holocene', url: 'https://en.wikipedia.org/wiki/Holocene' },
+            { title: 'Wikipedia — Quaternary', url: 'https://en.wikipedia.org/wiki/Quaternary' }
+          ]
+        }
+      }
+    ]
+  },
 
 // ---------------------------------------------------------------------------
-// Rubrique « Les grands livres de la géologie » : dix ouvrages de référence,
-// avec titre, auteur, édition, date de parution et résumé. Les données
-// bibliographiques ont été vérifiées sur des notices de bibliothèques,
-// d'éditeurs, de commissaires-priseurs et de comptes rendus ; les liens de
-// vérification figurent au bas de chaque fiche. Ces fiches n'ont ni formule,
-// ni exemple, ni exercice.
-// À COLLER À LA TOUTE FIN du fichier de données de géologie, APRÈS le « ]; »
-// qui ferme window.courseCatalog.
-// ---------------------------------------------------------------------------
-window.courseCatalog.push({
+// BRANCHE Les grands livres de la géologie  
+
+{
   id: 'grands-livres-geologie',
   title: 'Les grands livres de la géologie',
   note: 'Dix ouvrages de référence, d’Agricola à McPhee : titre, auteur, édition, date de parution et résumé de chaque livre.',
@@ -797,4 +1087,7 @@ window.courseCatalog.push({
       }
     }
   ]
-});
+},
+
+];
+
