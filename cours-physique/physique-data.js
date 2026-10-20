@@ -1,4 +1,5 @@
-  {
+ window.courseCatalog = [ 
+{
     id: 'mecanique',
     title: 'Mécanique',
     note: 'Décrire le mouvement, ses causes et les échanges d’énergie.',
