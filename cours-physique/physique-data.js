@@ -3894,10 +3894,9 @@ window.courseCatalog = [
       summary: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
       lesson: {
 
-formula: "T² / a³ = constante",
-      equationDetails: {
-        label: "Troisième loi de Kepler",
-        formula: "T² / a³ = constante",
+formula {
+        label: ‘Troisième loi de Kepler’,
+        text: ‘T² / a³ = constante’
         parameters: [
           {
             symbol: "T",
