@@ -4,36 +4,6 @@ window.courseCatalog = [
     title: 'Mécanique',
     note: 'Décrire le mouvement, ses causes et les échanges d’énergie.',
 
-{
-  title: "Loi de gravitation universelle",
-  formula: "F = G × m1 × m2 / r²",
-  equationDetails: {
-    label: "Loi de gravitation universelle",
-    formula: "F = G × m1 × m2 / r²",
-    parameters: [
-      {
-        symbol: "F",
-        label: "Force gravitationnelle",
-        unit: "N"
-      },
-      {
-        symbol: "G",
-        label: "Constante gravitationnelle",
-        unit: "N·m²/kg²"
-      },
-      {
-        symbol: "m1 et m2",
-        label: "Masses des deux corps",
-        unit: "kg"
-      },
-      {
-        symbol: "r",
-        label: "Distance entre les centres des deux corps",
-        unit: "m"
-      }
-    ]
-  }
-}
     chapters: [
       {
         id: 'cinematique',
