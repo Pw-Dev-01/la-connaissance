@@ -3894,12 +3894,6 @@ window.courseCatalog = [
       summary: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
       lesson: {
 
-formula {
-        label: ‘Troisième loi de Kepler’,
-        text: ‘T² / a³ = constante’
-              },
-
-
         sections: [
           'Auteur : Johannes Kepler (1571–1630). Sa troisième loi est publiée en 1619 dans Harmonices Mundi. Elle complète ses travaux antérieurs sur les orbites planétaires et établit une relation mathématique entre la période orbitale et la taille de l’orbite.',
 
@@ -3909,6 +3903,12 @@ formula {
 
           'Dans le modèle newtonien à deux corps, la relation plus générale est T² = 4π²a³ / [G(M + m)]. M et m représentent les masses des deux corps et G la constante gravitationnelle. Lorsque m est négligeable devant M, cette relation se simplifie en T² ≈ 4π²a³ / (GM). La constante de proportionnalité dépend donc de la masse de l’astre central.'
         ],
+
+formula :{
+        label: ‘Troisième loi de Kepler’,
+        text: ‘T² / a³ = constante’
+              },
+
         example: {
           statement: 'Deux planètes orbitent autour du Soleil. Le demi-grand axe de la seconde orbite est 4 fois celui de la première. Quel est le rapport de leurs périodes orbitales ?',
           calculation: 'T₂² / T₁² = a₂³ / a₁³ = 4³ = 64. Donc T₂ / T₁ = √64 = 8.',
