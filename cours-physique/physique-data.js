@@ -3903,10 +3903,10 @@ window.courseCatalog = [
 
           'Dans le modèle newtonien à deux corps, la relation plus générale est T² = 4π²a³ / [G(M + m)]. M et m représentent les masses des deux corps et G la constante gravitationnelle. Lorsque m est négligeable devant M, cette relation se simplifie en T² ≈ 4π²a³ / (GM). La constante de proportionnalité dépend donc de la masse de l’astre central.'
         ],
-        formula: {
-        label: ‘Troisième loi de Kepler’,
-        text: ‘T² / a³ = constante’
-              },
+            formula: {
+            label: 'MOUVEMENT À ACCÉLÉRATION CONSTANTE',
+            text: 'v(t) = v₀ + at  |  x(t) = x₀ + v₀t + ½at²'
+          },
 
         example: {
           statement: 'Deux planètes orbitent autour du Soleil. Le demi-grand axe de la seconde orbite est 4 fois celui de la première. Quel est le rapport de leurs périodes orbitales ?',
@@ -5526,4 +5526,6 @@ window.courseCatalog = [
   ]
 },
 ];
+
+
 
