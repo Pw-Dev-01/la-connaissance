@@ -3,7 +3,6 @@ window.courseCatalog = [
     id: 'mecanique',
     title: 'Mécanique',
     note: 'Décrire le mouvement, ses causes et les échanges d’énergie.',
-
     chapters: [
       {
         id: 'cinematique',
@@ -3883,10 +3882,7 @@ window.courseCatalog = [
     ]
   },
 
-
-// BRANCHE : GRANDES ÉQUATIONS DE LA PHYSIQUE
-
-{
+﻿{
   id: 'equations-physique',
   sortYear: 1619,
   title: 'Les grandes équations de la physique',
@@ -3895,13 +3891,37 @@ window.courseCatalog = [
     {
       id: 'loi-kepler',
       title: 'La troisième loi de Kepler : période et orbite',
+      formula: "T² / a³ = constante",
+      equationDetails: {
+        label: "Troisième loi de Kepler",
+        formula: "T² / a³ = constante",
+        parameters: [
+          {
+            symbol: "T",
+            label: "Période orbitale",
+            unit: "s"
+          },
+          {
+            symbol: "a",
+            label: "Demi-grand axe de l’orbite elliptique",
+            unit: "m"
+          },
+          {
+            symbol: "constante",
+            label: "Rapport T² / a³ (dépend de la masse de l’astre central : 4π² / (G × M))",
+            unit: "s²/m³"
+          }
+        ]
+      },
       field: 'Astronomie · Mécanique céleste · 1619',
       summary: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
       lesson: {
         sections: [
           'Auteur : Johannes Kepler (1571–1630). Sa troisième loi est publiée en 1619 dans Harmonices Mundi. Elle complète ses travaux antérieurs sur les orbites planétaires et établit une relation mathématique entre la période orbitale et la taille de l’orbite.',
 
+
           'Équation : T² / a³ = constante. Cette forme comparative s’applique aux corps orbitant autour du même astre central lorsque la masse de cet astre domine. T représente la période orbitale, c’est-à-dire la durée nécessaire pour accomplir une révolution, et a le demi-grand axe de l’orbite elliptique.',
+
 
           'Dans le modèle newtonien à deux corps, la relation plus générale est T² = 4π²a³ / [G(M + m)]. M et m représentent les masses des deux corps et G la constante gravitationnelle. Lorsque m est négligeable devant M, cette relation se simplifie en T² ≈ 4π²a³ / (GM). La constante de proportionnalité dépend donc de la masse de l’astre central.'
         ],
@@ -3941,16 +3961,46 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'gravitation-newton',
       title: 'La loi de la gravitation universelle',
+      formula: "F = G × m1 × m2 / r²",
+      equationDetails: {
+        label: "Loi de gravitation universelle",
+        formula: "F = G × m1 × m2 / r²",
+        parameters: [
+          {
+            symbol: "F",
+            label: "Force gravitationnelle",
+            unit: "N"
+          },
+          {
+            symbol: "G",
+            label: "Constante gravitationnelle",
+            unit: "N·m²/kg²"
+          },
+          {
+            symbol: "m1 et m2",
+            label: "Masses des deux corps",
+            unit: "kg"
+          },
+          {
+            symbol: "r",
+            label: "Distance entre les centres des deux corps",
+            unit: "m"
+          }
+        ]
+      },
       field: 'Mécanique classique · Gravitation · 1687',
       summary: 'Newton unifie dans une même loi l’attraction entre les corps terrestres et le mouvement des astres. La gravitation intervient dans la chute des objets, les orbites planétaires, les mouvements des satellites et de nombreux phénomènes astronomiques.',
       lesson: {
         sections: [
           'Auteur : Isaac Newton (1642–1727 selon le calendrier julien alors utilisé en Angleterre ; 1643–1727 selon le calendrier grégorien). La loi est présentée dans les Principia, publiés en 1687. Elle constitue une étape majeure de la mécanique classique.',
 
+
           'Équation : F = G m₁ m₂ / r². F représente la valeur de la force gravitationnelle entre deux corps, G la constante gravitationnelle, m₁ et m₂ leurs masses et r la distance entre leurs centres dans le modèle de masses ponctuelles. La force est attractive et agit selon la droite qui relie les deux corps.',
+
 
           'Près de la surface d’un astre sphérique, on utilise également g ≈ GM / R². Dans cette expression, g est l’accélération gravitationnelle, M la masse de l’astre et R la distance entre son centre et le point considéré, approximativement égale à son rayon à la surface. Cette expression ne doit pas être confondue avec la formule de la force universelle.'
         ],
@@ -3994,16 +4044,56 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'bernoulli-fluides',
       title: 'L’équation de Bernoulli',
+      formula: "p + ½ × ρ × v² + ρ × g × h = constante",
+      equationDetails: {
+        label: "Équation de Bernoulli",
+        formula: "p + ½ × ρ × v² + ρ × g × h = constante",
+        parameters: [
+          {
+            symbol: "p",
+            label: "Pression statique du fluide",
+            unit: "Pa"
+          },
+          {
+            symbol: "ρ",
+            label: "Masse volumique du fluide",
+            unit: "kg/m³"
+          },
+          {
+            symbol: "v",
+            label: "Vitesse du fluide",
+            unit: "m/s"
+          },
+          {
+            symbol: "g",
+            label: "Accélération gravitationnelle",
+            unit: "m/s²"
+          },
+          {
+            symbol: "h",
+            label: "Altitude par rapport à un niveau de référence",
+            unit: "m"
+          },
+          {
+            symbol: "constante",
+            label: "Valeur conservée le long d’une ligne de courant",
+            unit: "Pa"
+          }
+        ]
+      },
       field: 'Mécanique des fluides · 1738',
       summary: 'L’équation de Bernoulli exprime une conservation de l’énergie mécanique le long d’une ligne de courant dans un écoulement idéal. Elle permet de comprendre les relations entre pression, vitesse et hauteur dans de nombreux problèmes de mécanique des fluides.',
       lesson: {
         sections: [
           'Auteur : Daniel Bernoulli (1700–1782). Ses travaux sur les fluides sont exposés dans Hydrodynamica, publié en 1738. L’équation associée à son nom est devenue un outil classique pour analyser les écoulements.',
 
+
           'Équation : p + ½ρv² + ρgh = constante. p représente la pression du fluide, ρ sa masse volumique, v sa vitesse, g l’accélération gravitationnelle et h son altitude par rapport à un niveau de référence.',
+
 
           'Les trois termes correspondent respectivement à la pression, à l’énergie cinétique par unité de volume et à l’énergie potentielle gravitationnelle par unité de volume. La forme simple suppose notamment un écoulement stationnaire, un fluide incompressible et des pertes visqueuses négligeables. Elle ne doit donc pas être appliquée sans précautions aux écoulements fortement dissipatifs.'
         ],
@@ -4043,16 +4133,51 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'coulomb-electricite',
       title: 'La loi de Coulomb',
+      formula: "F = kₑ × |q1 × q2| / r²",
+      equationDetails: {
+        label: "Loi de Coulomb",
+        formula: "F = kₑ × |q1 × q2| / r²",
+        parameters: [
+          {
+            symbol: "F",
+            label: "Valeur de la force électrostatique",
+            unit: "N"
+          },
+          {
+            symbol: "kₑ",
+            label: "Constante de Coulomb (kₑ = 1 / (4π × ε₀) dans le vide)",
+            unit: "N·m²/C²"
+          },
+          {
+            symbol: "q1 et q2",
+            label: "Charges électriques ponctuelles",
+            unit: "C"
+          },
+          {
+            symbol: "r",
+            label: "Distance entre les deux charges",
+            unit: "m"
+          },
+          {
+            symbol: "ε₀",
+            label: "Permittivité électrique du vide",
+            unit: "F/m"
+          }
+        ]
+      },
       field: 'Électrostatique · 1785',
       summary: 'La loi de Coulomb quantifie l’interaction électrostatique entre des charges électriques immobiles. Elle montre que l’intensité de la force dépend du produit des charges et diminue avec le carré de leur distance.',
       lesson: {
         sections: [
           'Auteur : Charles-Augustin de Coulomb (1736–1806). Ses recherches expérimentales sur l’attraction et la répulsion électriques sont publiées dans les années 1780, notamment en 1785. Elles contribuent à établir une description quantitative de l’électrostatique.',
 
+
           'Équation : F = kₑ |q₁q₂| / r², avec kₑ = 1 / (4πε₀) dans le vide. F est la valeur de la force, q₁ et q₂ les charges électriques, r la distance entre elles et ε₀ la permittivité électrique du vide.',
+
 
           'Des charges de même signe se repoussent, tandis que des charges de signes opposés s’attirent. La formule présentée donne la valeur de la force entre deux charges ponctuelles. Dans un matériau, les propriétés électriques du milieu doivent également être prises en compte.'
         ],
@@ -4092,16 +4217,41 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'fourier-chaleur',
       title: 'La loi de Fourier de la conduction thermique',
+      formula: "q = −k × ∇T",
+      equationDetails: {
+        label: "Loi de Fourier de la conduction thermique",
+        formula: "q = −k × ∇T",
+        parameters: [
+          {
+            symbol: "q",
+            label: "Vecteur flux thermique par unité de surface",
+            unit: "W/m²"
+          },
+          {
+            symbol: "k",
+            label: "Conductivité thermique du matériau",
+            unit: "W/(m·K)"
+          },
+          {
+            symbol: "∇T",
+            label: "Gradient spatial de température",
+            unit: "K/m"
+          }
+        ]
+      },
       field: 'Thermodynamique · Transfert thermique · 1822',
       summary: 'La loi de Fourier décrit le transfert thermique par conduction en reliant le flux de chaleur au gradient de température. Elle joue un rôle essentiel dans l’étude des matériaux, des isolants, des échangeurs thermiques et de la diffusion de chaleur.',
       lesson: {
         sections: [
           'Auteur : Joseph Fourier (1768–1830). Son ouvrage Théorie analytique de la chaleur paraît en 1822 et développe une approche mathématique systématique de la conduction et de la diffusion thermique.',
 
+
           'Équation vectorielle : q = −k∇T. q est le vecteur flux thermique par unité de surface, k la conductivité thermique du matériau et ∇T le gradient spatial de température. Le signe négatif indique que le flux est dirigé vers les températures plus basses.',
+
 
           'Dans une dimension, la relation s’écrit qₓ = −k dT/dx. Pour un matériau homogène et isotrope, k est une propriété du matériau dont la valeur dépend notamment de la température. Lorsque le flux est uniforme et perpendiculaire à une surface A, la puissance thermique transférée peut s’écrire P = qA en utilisant q comme valeur du flux.'
         ],
@@ -4141,16 +4291,41 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'ohm-circuit',
       title: 'La loi d’Ohm',
+      formula: "V = R × I",
+      equationDetails: {
+        label: "Loi d’Ohm",
+        formula: "V = R × I",
+        parameters: [
+          {
+            symbol: "V",
+            label: "Tension électrique aux bornes du composant",
+            unit: "V"
+          },
+          {
+            symbol: "R",
+            label: "Résistance électrique",
+            unit: "Ω"
+          },
+          {
+            symbol: "I",
+            label: "Intensité du courant électrique",
+            unit: "A"
+          }
+        ]
+      },
       field: 'Électricité · Circuits électriques · 1827',
       summary: 'La loi d’Ohm relie la tension électrique, l’intensité du courant et la résistance d’un conducteur ohmique. Elle constitue une base de l’analyse des circuits électriques, à condition de vérifier que le composant suit effectivement cette relation.',
       lesson: {
         sections: [
           'Auteur : Georg Simon Ohm (1789–1854). Il publie ses recherches dans Die galvanische Kette, mathematisch bearbeitet en 1827. Ses travaux établissent une relation quantitative entre courant, tension et résistance.',
 
+
           'Équation : V = IR. V est la tension électrique aux bornes du composant, I l’intensité du courant qui le traverse et R sa résistance électrique. La tension s’exprime en volts, le courant en ampères et la résistance en ohms.',
+
 
           'Pour un conducteur ohmique dont les conditions physiques restent constantes, le rapport V/I est constant. La relation peut être réarrangée sous les formes I = V/R et R = V/I. Tous les composants ne sont pas ohmiques : une diode ou une lampe à filament, par exemple, peut avoir une caractéristique électrique non linéaire.'
         ],
@@ -4190,16 +4365,81 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'maxwell-electromagnetisme',
       title: 'Les équations de Maxwell',
+      formula: "∮E·dA = Qint / ε₀ ; ∮B·dA = 0 ; ∮E·dl = −dΦB/dt ; ∮B·dl = μ₀ × Iint + μ₀ × ε₀ × dΦE/dt",
+      equationDetails: {
+        label: "Équations de Maxwell (forme intégrale, dans le vide)",
+        formula: "∮E·dA = Qint / ε₀ ; ∮B·dA = 0 ; ∮E·dl = −dΦB/dt ; ∮B·dl = μ₀ × Iint + μ₀ × ε₀ × dΦE/dt",
+        parameters: [
+          {
+            symbol: "E",
+            label: "Champ électrique",
+            unit: "V/m"
+          },
+          {
+            symbol: "B",
+            label: "Champ magnétique",
+            unit: "T"
+          },
+          {
+            symbol: "dA",
+            label: "Élément de surface orienté d’une surface fermée ou délimitée par un contour",
+            unit: "m²"
+          },
+          {
+            symbol: "dl",
+            label: "Élément de longueur orienté du contour",
+            unit: "m"
+          },
+          {
+            symbol: "Qint",
+            label: "Charge électrique enfermée par la surface fermée",
+            unit: "C"
+          },
+          {
+            symbol: "Iint",
+            label: "Courant traversant la surface délimitée par le contour",
+            unit: "A"
+          },
+          {
+            symbol: "ΦB",
+            label: "Flux magnétique",
+            unit: "Wb"
+          },
+          {
+            symbol: "ΦE",
+            label: "Flux électrique",
+            unit: "V·m"
+          },
+          {
+            symbol: "ε₀",
+            label: "Permittivité électrique du vide",
+            unit: "F/m"
+          },
+          {
+            symbol: "μ₀",
+            label: "Perméabilité magnétique du vide",
+            unit: "H/m"
+          },
+          {
+            symbol: "t",
+            label: "Temps",
+            unit: "s"
+          }
+        ]
+      },
       field: 'Électromagnétisme · 1865',
       summary: 'Les équations de Maxwell réunissent les lois fondamentales des champs électriques et magnétiques. Elles décrivent les relations entre charges, courants, champs variables et induction électromagnétique, et permettent de comprendre la propagation des ondes électromagnétiques.',
       lesson: {
         sections: [
           'Auteur : James Clerk Maxwell (1831–1879). Il développe sa théorie électromagnétique dans les années 1860. Son traité A Treatise on Electricity and Magnetism paraît en 1873. La présentation moderne des équations diffère de la formulation historique de Maxwell.',
 
+
           'Dans le vide, une forme intégrale SI des quatre équations est la suivante : ∮E·dA = Qint/ε₀ ; ∮B·dA = 0 ; ∮E·dl = −dΦB/dt ; ∮B·dl = μ₀Iint + μ₀ε₀ dΦE/dt. Ces relations correspondent respectivement à la loi de Gauss électrique, à la loi de Gauss magnétique, à la loi de Faraday et à la loi d’Ampère-Maxwell.',
+
 
           'E représente le champ électrique, B le champ magnétique, Qint la charge enfermée par une surface fermée, ΦB le flux magnétique, ΦE le flux électrique et Iint le courant traversant la surface choisie. ε₀ est la permittivité du vide et μ₀ sa perméabilité. Les intégrales et les flux doivent être interprétés avec les conventions d’orientation appropriées.'
         ],
@@ -4243,16 +4483,41 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'planck-quantification',
       title: 'La relation de Planck : énergie d’un photon',
+      formula: "E = h × ν",
+      equationDetails: {
+        label: "Relation de Planck",
+        formula: "E = h × ν",
+        parameters: [
+          {
+            symbol: "E",
+            label: "Énergie du photon",
+            unit: "J"
+          },
+          {
+            symbol: "h",
+            label: "Constante de Planck",
+            unit: "J·s"
+          },
+          {
+            symbol: "ν",
+            label: "Fréquence du rayonnement",
+            unit: "Hz"
+          }
+        ]
+      },
       field: 'Physique quantique · 1900',
       summary: 'La relation de Planck associe l’énergie d’un photon à la fréquence de son rayonnement. Elle constitue un repère fondamental de la physique quantique et permet de comprendre pourquoi les rayonnements de fréquences différentes transportent des quanta d’énergie différents.',
       lesson: {
         sections: [
           'Auteur : Max Planck (1858–1947). En 1900, il introduit la quantification de l’énergie dans son étude du rayonnement du corps noir. La relation E = hν est aujourd’hui utilisée pour exprimer l’énergie d’un photon.',
 
+
           'Équation : E = hν. E est l’énergie du photon, h la constante de Planck et ν (nu) la fréquence du rayonnement. L’énergie s’exprime en joules et la fréquence en hertz.',
+
 
           'Dans le vide, la fréquence et la longueur d’onde sont liées par ν = c/λ. La relation énergétique peut donc aussi s’écrire E = hc/λ, où c est la vitesse de la lumière dans le vide et λ la longueur d’onde dans le vide. À fréquence plus élevée, l’énergie de chaque photon est plus élevée.'
         ],
@@ -4292,16 +4557,41 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'einstein-equivalence-masse-energie',
       title: 'L’équivalence masse-énergie',
+      formula: "E₀ = m × c²",
+      equationDetails: {
+        label: "Équivalence masse-énergie",
+        formula: "E₀ = m × c²",
+        parameters: [
+          {
+            symbol: "E₀",
+            label: "Énergie au repos",
+            unit: "J"
+          },
+          {
+            symbol: "m",
+            label: "Masse au repos",
+            unit: "kg"
+          },
+          {
+            symbol: "c",
+            label: "Vitesse de la lumière dans le vide (299 792 458 m/s)",
+            unit: "m/s"
+          }
+        ]
+      },
       field: 'Relativité restreinte · 1905',
       summary: 'La relation masse-énergie indique qu’une masse au repos correspond à une énergie au repos. Elle a profondément transformé la compréhension de la matière et de l’énergie, notamment en physique nucléaire et en physique des particules.',
       lesson: {
         sections: [
           'Auteur : Albert Einstein (1879–1955). En 1905, il publie un travail établissant qu’une variation d’énergie d’un corps peut s’accompagner d’une variation de sa masse. L’écriture compacte E₀ = mc² est devenue la forme emblématique de cette équivalence.',
 
+
           'Équation : E₀ = mc². E₀ est l’énergie au repos, m la masse au repos et c la vitesse de la lumière dans le vide, exactement égale à 299 792 458 m/s dans le SI.',
+
 
           'Le facteur c² explique qu’une petite masse corresponde à une énergie au repos importante. Il faut distinguer l’énergie au repos de l’énergie totale d’un corps en mouvement. Dans la relativité restreinte, la relation générale est E² = (pc)² + (mc²)², où p représente la quantité de mouvement.'
         ],
@@ -4345,16 +4635,51 @@ window.courseCatalog = [
       }
     },
 
+
     {
       id: 'schrodinger-quantique',
       title: 'L’équation de Schrödinger dépendante du temps',
+      formula: "iℏ × ∂ψ/∂t = Ĥψ",
+      equationDetails: {
+        label: "Équation de Schrödinger dépendante du temps",
+        formula: "iℏ × ∂ψ/∂t = Ĥψ",
+        parameters: [
+          {
+            symbol: "i",
+            label: "Unité imaginaire",
+            unit: "sans unité"
+          },
+          {
+            symbol: "ℏ",
+            label: "Constante de Planck réduite (h / 2π)",
+            unit: "J·s"
+          },
+          {
+            symbol: "ψ",
+            label: "Fonction d’onde (état quantique du système)",
+            unit: "m⁻³ᐟ² (particule en 3D)"
+          },
+          {
+            symbol: "t",
+            label: "Temps",
+            unit: "s"
+          },
+          {
+            symbol: "Ĥ",
+            label: "Opérateur hamiltonien (énergie totale du système)",
+            unit: "J"
+          }
+        ]
+      },
       field: 'Mécanique quantique · 1926',
       summary: 'L’équation de Schrödinger décrit l’évolution temporelle de l’état quantique dans la formulation non relativiste. Elle constitue un outil fondamental pour étudier les atomes, les molécules et les systèmes quantiques.',
       lesson: {
         sections: [
           'Auteur : Erwin Schrödinger (1887–1961). En 1926, il développe la mécanique ondulatoire dans une série de travaux consacrés à la quantification comme problème de valeurs propres. Cette approche devient l’une des formulations fondamentales de la mécanique quantique.',
 
+
           'Équation dépendante du temps : iℏ ∂ψ/∂t = Ĥψ. i est l’unité imaginaire, ℏ la constante de Planck réduite, ψ la fonction d’onde et Ĥ l’opérateur hamiltonien représentant l’énergie totale dans le modèle considéré.',
+
 
           'Pour une particule non relativiste de masse m soumise à un potentiel V, l’hamiltonien usuel s’écrit Ĥ = −(ℏ²/2m)∇² + V. La fonction d’onde sert à calculer les probabilités des résultats de mesure. Elle ne représente pas simplement une trajectoire classique. La forme présentée est non relativiste.'
         ],
@@ -4400,4 +4725,3 @@ window.courseCatalog = [
   ]
 },
 ];
-
