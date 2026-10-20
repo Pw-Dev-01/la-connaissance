@@ -3880,6 +3880,523 @@ window.courseCatalog = [
         }
       }
     ]
-  }
+  },
+
+
+// BRANCHE : GRANDES ÉQUATIONS DE LA PHYSIQUE
+
+{
+  id: 'equations-physique',
+  sortYear: 1619,
+  title: 'Les grandes équations de la physique',
+  note: 'Dix repères historiques présentent des équations majeures de la mécanique, des fluides, de l’électricité, de la chaleur, de l’électromagnétisme et de la physique quantique. Les dates indiquent la publication ou la formulation généralement associée à chaque résultat. Les équations sont accompagnées de leurs conditions d’application, de la définition de leurs paramètres et d’exemples corrigés.',
+  chapters: [
+    {
+      id: 'loi-kepler',
+      title: 'La troisième loi de Kepler : période et orbite',
+      field: 'Astronomie · Mécanique céleste · 1619',
+      summary: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
+      lesson: {
+        sections: [
+          'Auteur : Johannes Kepler (1571–1630). Sa troisième loi est publiée en 1619 dans Harmonices Mundi. Elle complète ses travaux antérieurs sur les orbites planétaires et établit une relation mathématique entre la période orbitale et la taille de l’orbite.',
+
+          'Équation : T² / a³ = constante. Cette forme comparative s’applique aux corps orbitant autour du même astre central lorsque la masse de cet astre domine. T représente la période orbitale, c’est-à-dire la durée nécessaire pour accomplir une révolution, et a le demi-grand axe de l’orbite elliptique.',
+
+          'Dans le modèle newtonien à deux corps, la relation plus générale est T² = 4π²a³ / [G(M + m)]. M et m représentent les masses des deux corps et G la constante gravitationnelle. Lorsque m est négligeable devant M, cette relation se simplifie en T² ≈ 4π²a³ / (GM). La constante de proportionnalité dépend donc de la masse de l’astre central.'
+        ],
+        example: {
+          statement: 'Deux planètes orbitent autour du Soleil. Le demi-grand axe de la seconde orbite est 4 fois celui de la première. Quel est le rapport de leurs périodes orbitales ?',
+          calculation: 'T₂² / T₁² = a₂³ / a₁³ = 4³ = 64. Donc T₂ / T₁ = √64 = 8.',
+          answer: 'La période orbitale de la seconde planète est 8 fois celle de la première, dans les conditions d’application de la loi.'
+        },
+        exercise: {
+          question: 'Que relie la troisième loi de Kepler ?',
+          answer: 'Elle relie le carré de la période orbitale au cube du demi-grand axe de l’orbite.'
+        },
+        exercises: [
+          {
+            question: 'Qui a publié cette loi et en quelle année ?',
+            answer: 'Johannes Kepler, en 1619.'
+          },
+          {
+            question: 'Que représente T ?',
+            answer: 'La période nécessaire pour effectuer une révolution orbitale.'
+          },
+          {
+            question: 'La constante T² / a³ est-elle identique pour des planètes orbitant autour d’étoiles de masses différentes ?',
+            answer: 'Non. Dans le modèle newtonien, elle dépend de la masse de l’astre central.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Kepler’s Laws of Planetary Motion',
+            url: 'https://openstax.org/books/university-physics-volume-1/pages/13-5-keplers-laws-of-planetary-motion'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Kepler’s Laws of Planetary Motion',
+            url: 'https://www.britannica.com/science/Keplers-laws-of-planetary-motion'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'gravitation-newton',
+      title: 'La loi de la gravitation universelle',
+      field: 'Mécanique classique · Gravitation · 1687',
+      summary: 'Newton unifie dans une même loi l’attraction entre les corps terrestres et le mouvement des astres. La gravitation intervient dans la chute des objets, les orbites planétaires, les mouvements des satellites et de nombreux phénomènes astronomiques.',
+      lesson: {
+        sections: [
+          'Auteur : Isaac Newton (1642–1727 selon le calendrier julien alors utilisé en Angleterre ; 1643–1727 selon le calendrier grégorien). La loi est présentée dans les Principia, publiés en 1687. Elle constitue une étape majeure de la mécanique classique.',
+
+          'Équation : F = G m₁ m₂ / r². F représente la valeur de la force gravitationnelle entre deux corps, G la constante gravitationnelle, m₁ et m₂ leurs masses et r la distance entre leurs centres dans le modèle de masses ponctuelles. La force est attractive et agit selon la droite qui relie les deux corps.',
+
+          'Près de la surface d’un astre sphérique, on utilise également g ≈ GM / R². Dans cette expression, g est l’accélération gravitationnelle, M la masse de l’astre et R la distance entre son centre et le point considéré, approximativement égale à son rayon à la surface. Cette expression ne doit pas être confondue avec la formule de la force universelle.'
+        ],
+        example: {
+          statement: 'La distance entre deux corps est multipliée par 2, tandis que leurs masses restent constantes. Comment évolue la force gravitationnelle ?',
+          calculation: 'La force varie comme 1 / r². Le nouveau rapport est F₂ / F₁ = 1 / 2² = 1/4.',
+          answer: 'La force gravitationnelle devient 4 fois plus faible.'
+        },
+        exercise: {
+          question: 'Quelle différence existe entre F = G m₁ m₂ / r² et g ≈ GM / R² ?',
+          answer: 'La première formule donne la force gravitationnelle entre deux masses. La seconde donne l’accélération gravitationnelle produite par un astre dans l’approximation considérée.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année les Principia de Newton sont-ils publiés ?',
+            answer: 'En 1687.'
+          },
+          {
+            question: 'Que représente G ?',
+            answer: 'La constante gravitationnelle universelle.'
+          },
+          {
+            question: 'Si une des masses double et que la distance reste constante, que devient la force ?',
+            answer: 'La force double.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Newton’s Law of Universal Gravitation',
+            url: 'https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation'
+          },
+          {
+            title: 'OpenStax — Gravitation Near Earth’s Surface',
+            url: 'https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Isaac Newton',
+            url: 'https://www.britannica.com/biography/Isaac-Newton'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'bernoulli-fluides',
+      title: 'L’équation de Bernoulli',
+      field: 'Mécanique des fluides · 1738',
+      summary: 'L’équation de Bernoulli exprime une conservation de l’énergie mécanique le long d’une ligne de courant dans un écoulement idéal. Elle permet de comprendre les relations entre pression, vitesse et hauteur dans de nombreux problèmes de mécanique des fluides.',
+      lesson: {
+        sections: [
+          'Auteur : Daniel Bernoulli (1700–1782). Ses travaux sur les fluides sont exposés dans Hydrodynamica, publié en 1738. L’équation associée à son nom est devenue un outil classique pour analyser les écoulements.',
+
+          'Équation : p + ½ρv² + ρgh = constante. p représente la pression du fluide, ρ sa masse volumique, v sa vitesse, g l’accélération gravitationnelle et h son altitude par rapport à un niveau de référence.',
+
+          'Les trois termes correspondent respectivement à la pression, à l’énergie cinétique par unité de volume et à l’énergie potentielle gravitationnelle par unité de volume. La forme simple suppose notamment un écoulement stationnaire, un fluide incompressible et des pertes visqueuses négligeables. Elle ne doit donc pas être appliquée sans précautions aux écoulements fortement dissipatifs.'
+        ],
+        example: {
+          statement: 'Dans un écoulement horizontal idéal, la vitesse du fluide augmente entre deux points. Comment évolue la pression statique ?',
+          calculation: 'La hauteur ne change pas, donc le terme ρgh reste constant. Si la masse volumique reste constante, une augmentation de ½ρv² correspond à une diminution de p.',
+          answer: 'La pression statique diminue dans les conditions d’application de l’équation de Bernoulli.'
+        },
+        exercise: {
+          question: 'Que représente le terme ½ρv² ?',
+          answer: 'L’énergie cinétique du fluide par unité de volume.'
+        },
+        exercises: [
+          {
+            question: 'Qui est l’auteur associé à cette équation ?',
+            answer: 'Daniel Bernoulli.'
+          },
+          {
+            question: 'Que représente ρ ?',
+            answer: 'La masse volumique du fluide.'
+          },
+          {
+            question: 'La forme simple de l’équation tient-elle compte des pertes visqueuses ?',
+            answer: 'Non. Ces pertes sont négligées dans le modèle idéal.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Bernoulli’s Equation',
+            url: 'https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Daniel Bernoulli',
+            url: 'https://www.britannica.com/biography/Daniel-Bernoulli'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'coulomb-electricite',
+      title: 'La loi de Coulomb',
+      field: 'Électrostatique · 1785',
+      summary: 'La loi de Coulomb quantifie l’interaction électrostatique entre des charges électriques immobiles. Elle montre que l’intensité de la force dépend du produit des charges et diminue avec le carré de leur distance.',
+      lesson: {
+        sections: [
+          'Auteur : Charles-Augustin de Coulomb (1736–1806). Ses recherches expérimentales sur l’attraction et la répulsion électriques sont publiées dans les années 1780, notamment en 1785. Elles contribuent à établir une description quantitative de l’électrostatique.',
+
+          'Équation : F = kₑ |q₁q₂| / r², avec kₑ = 1 / (4πε₀) dans le vide. F est la valeur de la force, q₁ et q₂ les charges électriques, r la distance entre elles et ε₀ la permittivité électrique du vide.',
+
+          'Des charges de même signe se repoussent, tandis que des charges de signes opposés s’attirent. La formule présentée donne la valeur de la force entre deux charges ponctuelles. Dans un matériau, les propriétés électriques du milieu doivent également être prises en compte.'
+        ],
+        example: {
+          statement: 'La distance entre deux charges ponctuelles est multipliée par 3, sans modification des charges. Comment évolue la force électrostatique ?',
+          calculation: 'F₂ / F₁ = 1 / 3² = 1/9.',
+          answer: 'La force électrostatique devient 9 fois plus faible.'
+        },
+        exercise: {
+          question: 'Comment déterminer si la force électrostatique est attractive ou répulsive ?',
+          answer: 'Elle est répulsive pour deux charges de même signe et attractive pour deux charges de signes opposés.'
+        },
+        exercises: [
+          {
+            question: 'Que représente ε₀ ?',
+            answer: 'La permittivité électrique du vide.'
+          },
+          {
+            question: 'Comment varie la force avec la distance ?',
+            answer: 'Elle est inversement proportionnelle au carré de la distance.'
+          },
+          {
+            question: 'La formule présentée décrit-elle directement les interactions magnétiques entre charges en mouvement ?',
+            answer: 'Non. Elle décrit l’interaction électrostatique entre des charges immobiles.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Coulomb’s Law',
+            url: 'https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Charles-Augustin de Coulomb',
+            url: 'https://www.britannica.com/biography/Charles-Augustin-de-Coulomb'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'fourier-chaleur',
+      title: 'La loi de Fourier de la conduction thermique',
+      field: 'Thermodynamique · Transfert thermique · 1822',
+      summary: 'La loi de Fourier décrit le transfert thermique par conduction en reliant le flux de chaleur au gradient de température. Elle joue un rôle essentiel dans l’étude des matériaux, des isolants, des échangeurs thermiques et de la diffusion de chaleur.',
+      lesson: {
+        sections: [
+          'Auteur : Joseph Fourier (1768–1830). Son ouvrage Théorie analytique de la chaleur paraît en 1822 et développe une approche mathématique systématique de la conduction et de la diffusion thermique.',
+
+          'Équation vectorielle : q = −k∇T. q est le vecteur flux thermique par unité de surface, k la conductivité thermique du matériau et ∇T le gradient spatial de température. Le signe négatif indique que le flux est dirigé vers les températures plus basses.',
+
+          'Dans une dimension, la relation s’écrit qₓ = −k dT/dx. Pour un matériau homogène et isotrope, k est une propriété du matériau dont la valeur dépend notamment de la température. Lorsque le flux est uniforme et perpendiculaire à une surface A, la puissance thermique transférée peut s’écrire P = qA en utilisant q comme valeur du flux.'
+        ],
+        example: {
+          statement: 'Dans une paroi, la température augmente lorsque x augmente. Dans quelle direction est orienté le flux thermique selon la loi de Fourier ?',
+          calculation: 'Si dT/dx est positif et k positif, alors qₓ = −k dT/dx est négatif.',
+          answer: 'Le flux thermique est orienté vers les x décroissants, donc vers la région plus froide.'
+        },
+        exercise: {
+          question: 'Pourquoi la loi de Fourier comporte-t-elle un signe négatif ?',
+          answer: 'Parce que le transfert thermique par conduction se produit dans la direction opposée au gradient de température.'
+        },
+        exercises: [
+          {
+            question: 'Qui est l’auteur associé à cette loi ?',
+            answer: 'Joseph Fourier.'
+          },
+          {
+            question: 'Quelle est l’unité SI de la conductivité thermique ?',
+            answer: 'Le watt par mètre-kelvin, noté W·m⁻¹·K⁻¹.'
+          },
+          {
+            question: 'Que prédit la loi si la température est uniforme dans l’espace ?',
+            answer: 'Le gradient de température est nul et le flux conductif prédit par cette loi est nul.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — Joseph Fourier',
+            url: 'https://www.britannica.com/biography/Joseph-Baron-Fourier'
+          },
+          {
+            title: 'OpenStax — Heat Transfer Methods',
+            url: 'https://openstax.org/books/college-physics-2e/pages/14-7-heat-transfer-methods'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'ohm-circuit',
+      title: 'La loi d’Ohm',
+      field: 'Électricité · Circuits électriques · 1827',
+      summary: 'La loi d’Ohm relie la tension électrique, l’intensité du courant et la résistance d’un conducteur ohmique. Elle constitue une base de l’analyse des circuits électriques, à condition de vérifier que le composant suit effectivement cette relation.',
+      lesson: {
+        sections: [
+          'Auteur : Georg Simon Ohm (1789–1854). Il publie ses recherches dans Die galvanische Kette, mathematisch bearbeitet en 1827. Ses travaux établissent une relation quantitative entre courant, tension et résistance.',
+
+          'Équation : V = IR. V est la tension électrique aux bornes du composant, I l’intensité du courant qui le traverse et R sa résistance électrique. La tension s’exprime en volts, le courant en ampères et la résistance en ohms.',
+
+          'Pour un conducteur ohmique dont les conditions physiques restent constantes, le rapport V/I est constant. La relation peut être réarrangée sous les formes I = V/R et R = V/I. Tous les composants ne sont pas ohmiques : une diode ou une lampe à filament, par exemple, peut avoir une caractéristique électrique non linéaire.'
+        ],
+        example: {
+          statement: 'Une résistance de 6 Ω est soumise à une tension de 12 V. Quelle intensité la traverse ?',
+          calculation: 'I = V/R = 12/6 = 2 A.',
+          answer: 'L’intensité du courant vaut 2 A, en supposant que la résistance reste ohmique dans ces conditions.'
+        },
+        exercise: {
+          question: 'Quelle formule permet de calculer le courant à partir de la tension et de la résistance ?',
+          answer: 'I = V/R.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est l’unité de la résistance électrique ?',
+            answer: 'L’ohm, symbole Ω.'
+          },
+          {
+            question: 'Si la tension double et que la résistance reste constante, comment évolue le courant ?',
+            answer: 'Le courant double.'
+          },
+          {
+            question: 'Tous les composants électriques suivent-ils la loi d’Ohm ?',
+            answer: 'Non. La relation s’applique aux composants ohmiques dans les conditions où leur résistance reste constante.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Ohm’s Law',
+            url: 'https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Georg Simon Ohm',
+            url: 'https://www.britannica.com/biography/Georg-Simon-Ohm'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'maxwell-electromagnetisme',
+      title: 'Les équations de Maxwell',
+      field: 'Électromagnétisme · 1865',
+      summary: 'Les équations de Maxwell réunissent les lois fondamentales des champs électriques et magnétiques. Elles décrivent les relations entre charges, courants, champs variables et induction électromagnétique, et permettent de comprendre la propagation des ondes électromagnétiques.',
+      lesson: {
+        sections: [
+          'Auteur : James Clerk Maxwell (1831–1879). Il développe sa théorie électromagnétique dans les années 1860. Son traité A Treatise on Electricity and Magnetism paraît en 1873. La présentation moderne des équations diffère de la formulation historique de Maxwell.',
+
+          'Dans le vide, une forme intégrale SI des quatre équations est la suivante : ∮E·dA = Qint/ε₀ ; ∮B·dA = 0 ; ∮E·dl = −dΦB/dt ; ∮B·dl = μ₀Iint + μ₀ε₀ dΦE/dt. Ces relations correspondent respectivement à la loi de Gauss électrique, à la loi de Gauss magnétique, à la loi de Faraday et à la loi d’Ampère-Maxwell.',
+
+          'E représente le champ électrique, B le champ magnétique, Qint la charge enfermée par une surface fermée, ΦB le flux magnétique, ΦE le flux électrique et Iint le courant traversant la surface choisie. ε₀ est la permittivité du vide et μ₀ sa perméabilité. Les intégrales et les flux doivent être interprétés avec les conventions d’orientation appropriées.'
+        ],
+        example: {
+          statement: 'Que signifie le terme −dΦB/dt dans la loi de Faraday ?',
+          calculation: 'Il représente l’opposé du taux de variation temporelle du flux magnétique à travers une surface délimitée par le contour considéré.',
+          answer: 'Une variation du flux magnétique induit un champ électrique circulant. Le signe négatif exprime la loi de Lenz avec la convention d’orientation choisie.'
+        },
+        exercise: {
+          question: 'Quelle idée centrale exprime la loi de Faraday ?',
+          answer: 'Une variation temporelle du flux magnétique est associée à un champ électrique induit.'
+        },
+        exercises: [
+          {
+            question: 'Combien d’équations composent la présentation classique des équations de Maxwell ?',
+            answer: 'Quatre équations.'
+          },
+          {
+            question: 'Que dit la loi de Gauss magnétique pour une surface fermée ?',
+            answer: 'Le flux magnétique net à travers toute surface fermée est nul.'
+          },
+          {
+            question: 'Quel ajout Maxwell a-t-il introduit dans la loi d’Ampère ?',
+            answer: 'Un terme associé à la variation temporelle du flux électrique, appelé terme de courant de déplacement dans cette formulation.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Maxwell’s Equations and Electromagnetic Waves',
+            url: 'https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves'
+          },
+          {
+            title: 'OpenStax — Key Equations, Electromagnetism',
+            url: 'https://openstax.org/books/university-physics-volume-2/pages/16-key-equations'
+          },
+          {
+            title: 'Encyclopaedia Britannica — James Clerk Maxwell',
+            url: 'https://www.britannica.com/biography/James-Clerk-Maxwell'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'planck-quantification',
+      title: 'La relation de Planck : énergie d’un photon',
+      field: 'Physique quantique · 1900',
+      summary: 'La relation de Planck associe l’énergie d’un photon à la fréquence de son rayonnement. Elle constitue un repère fondamental de la physique quantique et permet de comprendre pourquoi les rayonnements de fréquences différentes transportent des quanta d’énergie différents.',
+      lesson: {
+        sections: [
+          'Auteur : Max Planck (1858–1947). En 1900, il introduit la quantification de l’énergie dans son étude du rayonnement du corps noir. La relation E = hν est aujourd’hui utilisée pour exprimer l’énergie d’un photon.',
+
+          'Équation : E = hν. E est l’énergie du photon, h la constante de Planck et ν (nu) la fréquence du rayonnement. L’énergie s’exprime en joules et la fréquence en hertz.',
+
+          'Dans le vide, la fréquence et la longueur d’onde sont liées par ν = c/λ. La relation énergétique peut donc aussi s’écrire E = hc/λ, où c est la vitesse de la lumière dans le vide et λ la longueur d’onde dans le vide. À fréquence plus élevée, l’énergie de chaque photon est plus élevée.'
+        ],
+        example: {
+          statement: 'Deux photons possèdent des fréquences ν et 3ν. Quel est le rapport entre leurs énergies ?',
+          calculation: 'E₂/E₁ = h(3ν)/(hν) = 3.',
+          answer: 'Le second photon possède 3 fois l’énergie du premier.'
+        },
+        exercise: {
+          question: 'Quelle propriété du rayonnement détermine directement l’énergie d’un photon ?',
+          answer: 'Sa fréquence, selon la relation E = hν.'
+        },
+        exercises: [
+          {
+            question: 'Que représente h ?',
+            answer: 'La constante de Planck, dont la valeur exacte dans le SI est 6,62607015 × 10⁻³⁴ J·s.'
+          },
+          {
+            question: 'Si la fréquence d’un photon augmente, que devient son énergie ?',
+            answer: 'Elle augmente proportionnellement à la fréquence.'
+          },
+          {
+            question: 'Quel scientifique est associé à l’introduction de la quantification de l’énergie en 1900 ?',
+            answer: 'Max Planck.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Nobel Prize — Max Planck, Nobel Lecture',
+            url: 'https://www.nobelprize.org/prizes/physics/1918/planck/lecture/'
+          },
+          {
+            title: 'NIST — Fundamental Physical Constants',
+            url: 'https://physics.nist.gov/cuu/Constants/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'einstein-equivalence-masse-energie',
+      title: 'L’équivalence masse-énergie',
+      field: 'Relativité restreinte · 1905',
+      summary: 'La relation masse-énergie indique qu’une masse au repos correspond à une énergie au repos. Elle a profondément transformé la compréhension de la matière et de l’énergie, notamment en physique nucléaire et en physique des particules.',
+      lesson: {
+        sections: [
+          'Auteur : Albert Einstein (1879–1955). En 1905, il publie un travail établissant qu’une variation d’énergie d’un corps peut s’accompagner d’une variation de sa masse. L’écriture compacte E₀ = mc² est devenue la forme emblématique de cette équivalence.',
+
+          'Équation : E₀ = mc². E₀ est l’énergie au repos, m la masse au repos et c la vitesse de la lumière dans le vide, exactement égale à 299 792 458 m/s dans le SI.',
+
+          'Le facteur c² explique qu’une petite masse corresponde à une énergie au repos importante. Il faut distinguer l’énergie au repos de l’énergie totale d’un corps en mouvement. Dans la relativité restreinte, la relation générale est E² = (pc)² + (mc²)², où p représente la quantité de mouvement.'
+        ],
+        example: {
+          statement: 'Si la masse au repos d’un système double, comment évolue son énergie au repos ?',
+          calculation: 'E₀ = mc². La vitesse de la lumière étant constante, doubler m double E₀.',
+          answer: 'L’énergie au repos double.'
+        },
+        exercise: {
+          question: 'Que signifie l’indice 0 dans E₀ = mc² ?',
+          answer: 'Il indique que l’énergie considérée est l’énergie au repos.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Einstein publie-t-il son travail fondateur sur cette équivalence ?',
+            answer: 'En 1905.'
+          },
+          {
+            question: 'Quelle est la valeur exacte de c dans le SI ?',
+            answer: '299 792 458 m/s.'
+          },
+          {
+            question: 'La formule E₀ = mc² donne-t-elle à elle seule l’énergie totale d’un corps en mouvement ?',
+            answer: 'Non. Elle donne l’énergie au repos. L’énergie totale relativiste dépend également de la quantité de mouvement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'American Physical Society — September, 1905: Energy and Mass are Equivalent',
+            url: 'https://www.aps.org/apsnews/2005/04/september-1905-energy-mass-equivalent'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — The Equivalence of Mass and Energy',
+            url: 'https://plato.stanford.edu/entries/equivME/'
+          },
+          {
+            title: 'NIST — Fundamental Physical Constants',
+            url: 'https://physics.nist.gov/cuu/Constants/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'schrodinger-quantique',
+      title: 'L’équation de Schrödinger dépendante du temps',
+      field: 'Mécanique quantique · 1926',
+      summary: 'L’équation de Schrödinger décrit l’évolution temporelle de l’état quantique dans la formulation non relativiste. Elle constitue un outil fondamental pour étudier les atomes, les molécules et les systèmes quantiques.',
+      lesson: {
+        sections: [
+          'Auteur : Erwin Schrödinger (1887–1961). En 1926, il développe la mécanique ondulatoire dans une série de travaux consacrés à la quantification comme problème de valeurs propres. Cette approche devient l’une des formulations fondamentales de la mécanique quantique.',
+
+          'Équation dépendante du temps : iℏ ∂ψ/∂t = Ĥψ. i est l’unité imaginaire, ℏ la constante de Planck réduite, ψ la fonction d’onde et Ĥ l’opérateur hamiltonien représentant l’énergie totale dans le modèle considéré.',
+
+          'Pour une particule non relativiste de masse m soumise à un potentiel V, l’hamiltonien usuel s’écrit Ĥ = −(ℏ²/2m)∇² + V. La fonction d’onde sert à calculer les probabilités des résultats de mesure. Elle ne représente pas simplement une trajectoire classique. La forme présentée est non relativiste.'
+        ],
+        example: {
+          statement: 'À quoi sert principalement l’équation de Schrödinger dépendante du temps ?',
+          calculation: 'Elle relie la variation temporelle de la fonction d’onde à l’action de l’opérateur hamiltonien sur cette fonction.',
+          answer: 'Elle permet de déterminer l’évolution temporelle de l’état quantique à partir de son état initial et de l’hamiltonien.'
+        },
+        exercise: {
+          question: 'Que représente ψ dans l’équation de Schrödinger ?',
+          answer: 'La fonction d’onde qui représente l’état quantique du système.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Schrödinger développe-t-il ses travaux fondateurs ?',
+            answer: 'En 1926.'
+          },
+          {
+            question: 'Que représente Ĥ ?',
+            answer: 'L’opérateur hamiltonien, associé à l’énergie totale du système dans le modèle choisi.'
+          },
+          {
+            question: 'La forme présentée est-elle une équation relativiste complète ?',
+            answer: 'Non. Il s’agit de la forme standard non relativiste.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Nobel Prize — Erwin Schrödinger, Nobel Lecture',
+            url: 'https://www.nobelprize.org/prizes/physics/1933/schrodinger/lecture/'
+          },
+          {
+            title: 'OpenStax — The Schrödinger Equation',
+            url: 'https://openstax.org/books/university-physics-volume-3/pages/7-3-the-schrodinger-equation'
+          },
+          {
+            title: 'Nobel Prize — The Nobel Prize in Physics 1901–2000',
+            url: 'https://www.nobelprize.org/prizes/themes/the-nobel-prize-in-physics-1901-2000/'
+          }
+        ]
+      }
+    }
+  ]
+},
 ];
 
