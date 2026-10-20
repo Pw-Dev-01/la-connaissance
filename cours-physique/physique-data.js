@@ -3885,12 +3885,16 @@ window.courseCatalog = [
   id: 'equations-physique',
   sortYear: 1619,
   title: 'Les grandes équations de la physique',
-  note: 'Dix repères historiques présentent des équations majeures de la mécanique, des fluides, de l’électricité, de la chaleur, de l’électromagnétisme et de la physique quantique. Les dates indiquent la publication ou la formulation généralement associée à chaque résultat. Les équations sont accompagnées de leurs conditions d’application, de la définition de leurs paramètres et d’exemples corrigés.',
+  note: 'Repères historiques présentent des équations majeures de la mécanique, des fluides, de l’électricité, de la chaleur, de l’électromagnétisme et de la physique quantique. Les dates indiquent la publication ou la formulation généralement associée à chaque résultat. Les équations sont accompagnées de leurs conditions d’application, de la définition de leurs paramètres et d’exemples corrigés.',
   chapters: [
     {
       id: 'loi-kepler',
       title: 'La troisième loi de Kepler : période et orbite',
-      formula: "T² / a³ = constante",
+      field: 'Astronomie · Mécanique céleste · 1619',
+      summary: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
+      lesson: {
+
+formula: "T² / a³ = constante",
       equationDetails: {
         label: "Troisième loi de Kepler",
         formula: "T² / a³ = constante",
@@ -3912,9 +3916,8 @@ window.courseCatalog = [
           }
         ]
       },
-      field: 'Astronomie · Mécanique céleste · 1619',
-      summary: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
-      lesson: {
+
+
         sections: [
           'Auteur : Johannes Kepler (1571–1630). Sa troisième loi est publiée en 1619 dans Harmonices Mundi. Elle complète ses travaux antérieurs sur les orbites planétaires et établit une relation mathématique entre la période orbitale et la taille de l’orbite.',
 
@@ -5542,5 +5545,3 @@ window.courseCatalog = [
   ]
 },
 ];
-
-
