@@ -3896,25 +3896,8 @@ window.courseCatalog = [
 
 formula {
         label: ‘Troisième loi de Kepler’,
-        text: ‘T² / a³ = constante’,
-        parameters: [
-          {
-            symbol: "T",
-            label: "Période orbitale",
-            unit: "s"
-          },
-          {
-            symbol: "a",
-            label: "Demi-grand axe de l’orbite elliptique",
-            unit: "m"
-          },
-          {
-            symbol: "constante",
-            label: "Rapport T² / a³ (dépend de la masse de l’astre central : 4π² / (G × M))",
-            unit: "s²/m³"
-          }
-        ]
-      },
+        text: ‘T² / a³ = constante’
+              },
 
 
         sections: [
