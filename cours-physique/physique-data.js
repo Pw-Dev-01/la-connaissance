@@ -3896,7 +3896,7 @@ window.courseCatalog = [
 
 formula {
         label: ‘Troisième loi de Kepler’,
-        text: ‘T² / a³ = constante’
+        text: ‘T² / a³ = constante’,
         parameters: [
           {
             symbol: "T",
@@ -5544,3 +5544,4 @@ formula {
   ]
 },
 ];
+
