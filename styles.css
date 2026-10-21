@@ -1278,3 +1278,21 @@ font-size: 9px;
 @media (max-width: 700px) {
   .equation-detail > h3 { font-size: 22px; }
 }
+
+/* Taille du texte des leçons */
+:root { --lesson-size: 19px; }
+@media (max-width: 700px) { :root { --lesson-size: 18px; } }
+
+.lesson-section > p:not(.section-index),
+.equation-detail > p,
+.callout p,
+.case-row p,
+.exercise-answer p,
+.lesson-html p,
+.book-fiche p,
+.mistake-list { font-size: var(--lesson-size); }
+
+.exercise summary > span:nth-child(2) { font-size: calc(var(--lesson-size) - 1px); }
+.reveal-label { font-size: 13px; }
+.method-list li strong { font-size: 16px; }
+.method-list li span { font-size: calc(var(--lesson-size) - 2px); }
