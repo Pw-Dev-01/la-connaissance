@@ -4218,7 +4218,257 @@ window.courseCatalog = [
     ]
   },
 
-
+{
+  id: 'Commerce-ocean-indien',
+  sortYear: -3000,
+  title: 'Le commerce dans l’océan Indien',
+  note: 'Cinq chapitres retracent les échanges maritimes de l’océan Indien, des premiers contacts entre les sociétés riveraines aux réseaux commerciaux de la fin du Moyen Âge et à l’arrivée des puissances européennes. Le repère sortYear = -3000 sert uniquement au classement chronologique : il ne date pas la naissance simultanée d’un réseau commercial unifié. Les itinéraires, les marchandises et les acteurs changent selon les périodes et les régions.',
+  chapters: [
+    {
+      id: 'premiers-echanges-ocean-indien',
+      title: 'Les premiers échanges entre l’Arabie, la Mésopotamie et l’Indus',
+      field: 'Histoire ancienne · IIIe millénaire av. J.-C. et périodes suivantes, selon les régions',
+      summary: 'Étudier les contacts anciens entre les sociétés riveraines et comprendre pourquoi il faut distinguer les échanges attestés de l’existence d’un réseau maritime continu.',
+      lesson: {
+        sections: [
+          'L’océan Indien n’a pas été parcouru dès l’origine par un système commercial unique reliant toutes ses côtes. Les échanges se sont construits progressivement, à partir de relations régionales entre les communautés de la péninsule Arabique, de la Mésopotamie et de la vallée de l’Indus. Les sources de synthèse de l’UNESCO situent les liens maritimes entre ces espaces parmi les racines anciennes des routes commerciales reliant ensuite des régions plus éloignées. Il faut cependant éviter de transformer ce constat en une date de naissance précise valable pour tout l’océan Indien.',
+          'Les marchandises circulaient par plusieurs étapes : un produit pouvait être transporté depuis son lieu de production vers un port, échangé avec des marchands d’une autre région, puis revendu ailleurs. Les routes maritimes étaient ainsi reliées aux circuits terrestres et aux marchés locaux. Un objet retrouvé loin de sa région d’origine peut témoigner d’un échange direct, mais aussi d’une succession d’intermédiaires ; l’archéologie ne permet pas toujours de déterminer le parcours exact.',
+          'Pour reconstituer ces échanges, les historiens confrontent les vestiges archéologiques, les objets importés, les inscriptions et les textes anciens. Chaque type de source a ses limites : les textes ne décrivent qu’une partie des activités, tandis qu’un objet isolé ne prouve pas nécessairement l’existence d’un commerce régulier. Une chronologie prudente distingue donc les contacts possibles, les échanges attestés et les réseaux dont l’ampleur est mieux documentée.'
+        ],
+        example: {
+          statement: 'Un objet fabriqué dans une région est découvert dans un port éloigné. Que peut-on en conclure ?',
+          calculation: 'On compare sa matière, sa fabrication, son contexte archéologique et les autres objets retrouvés. On recherche ensuite des textes ou d’autres découvertes qui confirment l’existence d’échanges.',
+          answer: 'La découverte peut indiquer un contact ou une circulation de biens, mais elle ne prouve pas à elle seule un trajet direct ni un commerce permanent entre les deux lieux.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il éviter de donner une date unique à la naissance du commerce dans tout l’océan Indien ?',
+          answer: 'Parce que les échanges se sont développés progressivement et différemment selon les régions ; les preuves disponibles ne permettent pas de dater un réseau unique apparu partout au même moment.'
+        },
+        exercises: [
+          {
+            question: 'Quelles régions sont citées par l’UNESCO parmi les espaces liés par d’anciens échanges maritimes ?',
+            answer: 'La péninsule Arabique, la Mésopotamie et la civilisation de la vallée de l’Indus.'
+          },
+          {
+            question: 'Un objet importé prouve-t-il nécessairement un voyage direct entre son lieu de fabrication et son lieu de découverte ?',
+            answer: 'Non. Il a pu passer par plusieurs ports et intermédiaires.'
+          },
+          {
+            question: 'Pourquoi les historiens croisent-ils les données archéologiques et les textes ?',
+            answer: 'Parce que chaque source apporte des informations différentes et possède ses propres limites ; leur comparaison permet de tester les interprétations.'
+          }
+        ],
+        sources: [
+          {
+            title: 'UNESCO — About the Silk Roads',
+            url: 'https://www.unesco.org/en/silk-roads/about-silk-roads'
+          },
+          {
+            title: 'Oxford Academic — The Archaeological Record of Indian Ocean Engagements: Bay of Bengal (5000 BC–500 AD)',
+            url: 'https://academic.oup.com/edited-volume/43506/chapter/364133129'
+          }
+        ]
+      }
+    },
+    {
+      id: 'moussons-navigation-routes',
+      title: 'Les moussons, la navigation et les itinéraires maritimes',
+      field: 'Histoire maritime · Antiquité et périodes médiévales',
+      summary: 'Comprendre comment les vents saisonniers, les connaissances nautiques et les escales rendaient possibles les traversées entre les rives de l’océan Indien.',
+      lesson: {
+        sections: [
+          'Les moussons sont des régimes de vents saisonniers qui influencent les conditions de navigation dans l’océan Indien. En choisissant le moment du départ en fonction des vents, les marins pouvaient effectuer certaines traversées plus efficacement. Le rôle de ces conditions climatiques est documenté dans les recherches consacrées au commerce de l’âge du Fer, notamment par l’étude des routes décrites dans le Périple de la mer Érythrée. Cela ne signifie pas que chaque voyage était simple ou sans danger : les délais, les vents, l’état des navires et les risques de mer continuaient de compter.',
+          'Les navigateurs s’appuyaient sur l’expérience accumulée, l’observation du ciel, des côtes et des conditions météorologiques, ainsi que sur les caractéristiques des navires. Les techniques et les connaissances n’étaient pas identiques partout et ont évolué au fil des siècles. Il faut donc éviter d’attribuer à toutes les sociétés maritimes une méthode de navigation unique ou de supposer que les mêmes instruments étaient disponibles à toutes les époques.',
+          'Les ports et les escales étaient essentiels à l’organisation des voyages. Ils permettaient de charger et décharger les marchandises, d’obtenir des provisions, de réparer les navires et de rencontrer des partenaires commerciaux. Les itinéraires formaient un réseau flexible plutôt qu’une seule route fixe : les marchands pouvaient vendre une cargaison dans un port intermédiaire et en acheter une autre pour la suite du voyage. La circulation maritime reliait ainsi des économies locales sans que chaque navire parcoure nécessairement toute la distance entre l’Afrique orientale et l’Asie.'
+        ],
+        example: {
+          statement: 'Pourquoi un marchand devait-il tenir compte de la saison avant de traverser une partie de l’océan Indien ?',
+          calculation: 'Il devait comparer la période du voyage aux vents saisonniers attendus, tout en tenant compte de la durée de navigation, des escales possibles et des risques météorologiques.',
+          answer: 'Parce que les moussons pouvaient favoriser certains sens de navigation à certaines périodes. Le choix du départ influençait la durée et la faisabilité du voyage, sans garantir une traversée sans danger.'
+        },
+        exercise: {
+          question: 'Comment les moussons ont-elles contribué au développement du commerce maritime ?',
+          answer: 'Leur caractère saisonnier permettait aux navigateurs de planifier des traversées en profitant de vents favorables, ce qui rendait certains échanges à longue distance plus praticables.'
+        },
+        exercises: [
+          {
+            question: 'Quel document antique est utilisé dans des recherches récentes pour étudier les routes et les produits du commerce de l’océan Indien ?',
+            answer: 'Le Périple de la mer Érythrée, un texte antique qui décrit des côtes, des ports et des marchandises.'
+          },
+          {
+            question: 'Les moussons supprimaient-elles tous les risques en mer ?',
+            answer: 'Non. Elles influençaient les conditions de navigation, mais les voyages restaient exposés aux dangers et aux incertitudes.'
+          },
+          {
+            question: 'Pourquoi les escales étaient-elles utiles aux marchands ?',
+            answer: 'Elles permettaient notamment de ravitailler les navires, de réparer, de vendre ou d’acheter des marchandises et de nouer des relations commerciales.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Economic History Review — Riding the monsoon: Geography and Iron Age trade in the Indian Ocean (2025)',
+            url: 'https://onlinelibrary.wiley.com/doi/10.1111/ehr.70016'
+          },
+          {
+            title: 'UNESCO — About the Silk Roads',
+            url: 'https://www.unesco.org/en/silk-roads/about-silk-roads'
+          }
+        ]
+      }
+    },
+    {
+      id: 'marchandises-ports-antiquite',
+      title: 'Les marchandises et les grands ports de l’Antiquité',
+      field: 'Antiquité · En particulier Ier siècle av. J.-C. au VIe siècle apr. J.-C.',
+      summary: 'Identifier les produits échangés et le rôle des ports dans les relations entre l’Afrique orientale, l’Arabie, l’Inde et les mondes méditerranéens.',
+      lesson: {
+        sections: [
+          'À l’époque antique, le commerce de l’océan Indien reliait des régions aux ressources et aux productions différentes. Les sources mentionnent notamment des textiles, des épices, des aromates, des pierres précieuses, de l’ivoire, des métaux et des produits alimentaires. La répartition exacte des marchandises dépendait du port et de la période : une liste générale ne doit pas être comprise comme un inventaire valable pour chaque lieu ou chaque siècle.',
+          'Le Périple de la mer Érythrée, texte grec généralement daté du Ier siècle apr. J.-C., décrit des itinéraires côtiers et des échanges autour de la mer Rouge, de l’Afrique orientale et de l’Inde. Il est particulièrement utile parce qu’il associe des ports à des produits importés ou exportés. Il reste toutefois un témoignage situé, rédigé dans un contexte commercial particulier ; il ne décrit pas toutes les sociétés de l’océan Indien et ses indications ne permettent pas toujours de mesurer précisément les volumes ou la valeur des échanges.',
+          'Les échanges entre le monde romain et l’Inde ont pris une ampleur notable durant les premiers siècles de notre ère, mais il est réducteur de raconter cette histoire comme si Rome en avait été le seul moteur. Les producteurs, navigateurs, négociants et autorités des régions africaines, arabiques et asiatiques avaient leurs propres intérêts et participaient activement aux échanges. Les travaux récents recommandent de replacer les acteurs de l’océan Indien au centre de l’analyse plutôt que de considérer le commerce uniquement depuis le point de vue romain.'
+        ],
+        example: {
+          statement: 'Un historien veut connaître les marchandises échangées dans un port antique. Quelle source écrite peut-il comparer aux découvertes archéologiques ?',
+          calculation: 'Il peut examiner les descriptions de ports et de marchandises dans le Périple de la mer Érythrée, puis les confronter aux objets et aux contextes archéologiques locaux.',
+          answer: 'Le Périple est une source utile, mais ses informations doivent être confrontées à l’archéologie et à d’autres travaux, car il ne décrit qu’une partie des échanges.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il éviter de présenter le commerce antique de l’océan Indien comme une activité contrôlée uniquement par Rome ?',
+          answer: 'Parce que les sociétés riveraines, les producteurs, les marins et les marchands d’Afrique, d’Arabie et d’Asie jouaient eux aussi des rôles essentiels dans la production, le transport et la redistribution des biens.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’intérêt principal du Périple de la mer Érythrée pour les historiens du commerce ?',
+            answer: 'Il décrit des routes côtières, des ports et des marchandises échangées dans une partie de l’océan Indien antique.'
+          },
+          {
+            question: 'Cite trois catégories de produits mentionnées dans les sources sur ces échanges antiques.',
+            answer: 'Par exemple : textiles, épices et aromates. D’autres produits attestés comprennent l’ivoire, les pierres précieuses et certains métaux.'
+          },
+          {
+            question: 'Pourquoi une source écrite antique ne suffit-elle pas à reconstruire tout le réseau commercial ?',
+            answer: 'Elle reflète un point de vue et un contexte particuliers et peut omettre des régions, des acteurs ou des échanges.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Indian Ocean Trade before the European Conquest',
+            url: 'https://www.worldhistory.org/article/1800/indian-ocean-trade-before-the-european-conquest/'
+          },
+          {
+            title: 'Economic History Review — Riding the monsoon: Geography and Iron Age trade in the Indian Ocean (2025)',
+            url: 'https://onlinelibrary.wiley.com/doi/10.1111/ehr.70016'
+          },
+          {
+            title: 'Cambridge University Press — Indian Ocean Trade in the First Millennium c.e.: Taking the Romans out of Indo-Roman? (2025)',
+            url: 'https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/indian-ocean-trade-in-the-first-millennium-ce-taking-the-romans-out-of-indoroman/6254877B05C32F83C6CC9B1F93BF5C7F'
+          }
+        ]
+      }
+    },
+    {
+      id: 'reseaux-medievaux-afrique-asie',
+      title: 'Les réseaux médiévaux : côte swahilie, Inde et Asie du Sud-Est',
+      field: 'Moyen Âge · Du IXe au XVe siècle, avec des évolutions selon les ports',
+      summary: 'Étudier l’essor de villes portuaires africaines et asiatiques et les échanges de marchandises, de populations et de pratiques culturelles.',
+      lesson: {
+        sections: [
+          'À partir du Moyen Âge, plusieurs villes de la côte orientale de l’Afrique participent activement au commerce de l’océan Indien. Kilwa Kisiwani et Songo Mnara, sur le littoral de l’actuelle Tanzanie, témoignent de la prospérité de villes swahilies dont les échanges reliaient l’arrière-pays africain à l’Arabie, à l’Inde et à la Chine. L’UNESCO situe l’occupation de Kilwa Kisiwani du IXe au XIXe siècle et souligne l’importance de son activité commerciale, particulièrement aux XIIIe et XIVe siècles.',
+          'Les marchandises issues de l’intérieur du continent pouvaient rejoindre les ports avant d’être échangées contre des produits importés. Pour Kilwa, l’UNESCO mentionne notamment l’or et l’ivoire provenant de l’arrière-pays, ainsi que l’argent, les parfums, des céramiques persanes et la porcelaine chinoise parmi les biens associés aux échanges. Ces flux dépendaient de réseaux terrestres, de producteurs et de communautés locales autant que de la navigation au large. Les ports n’étaient donc pas de simples escales : ils étaient des centres urbains, politiques et économiques.',
+          'Plus à l’est, les ports de l’Inde et de l’Asie du Sud-Est reliaient les échanges de l’océan Indien à ceux de la mer de Chine méridionale. Le détroit de Malacca était un passage stratégique entre ces espaces, tandis que les ports de la côte indienne redistribuaient des textiles, des épices et d’autres marchandises. Les routes changeaient selon les saisons, les pouvoirs politiques, les besoins des marchés et la sécurité des passages. Il est donc plus juste de parler d’un ensemble de réseaux reliés entre eux que d’une seule route uniforme.',
+          'Les relations commerciales favorisaient aussi la circulation des langues, des croyances et des savoir-faire. Des communautés de marchands s’établissaient parfois loin de leur région d’origine et participaient à la vie des villes portuaires. L’islam s’est implanté dans plusieurs sociétés de l’océan Indien par des processus historiques variés, parmi lesquels les échanges et les migrations. Ces transformations ne doivent pas être réduites à une conversion uniforme ou exclusivement provoquée par le commerce : les trajectoires différaient selon les sociétés et les périodes.'
+        ],
+        example: {
+          statement: 'Les fouilles d’une ville portuaire révèlent des céramiques importées, des bâtiments religieux et des traces de production locale. Que peut suggérer cet ensemble ?',
+          calculation: 'On examine la datation des objets et des bâtiments, leur provenance probable et leur contexte, puis on compare ces indices aux sources historiques.',
+          answer: 'Ces vestiges peuvent montrer que la ville était connectée à des réseaux commerciaux et culturels, tout en possédant une activité locale. Les conclusions précises dépendent de la datation et du contexte archéologique.'
+        },
+        exercise: {
+          question: 'Que nous apprennent les ruines de Kilwa Kisiwani et de Songo Mnara sur le commerce médiéval ?',
+          answer: 'Elles témoignent de villes swahilies prospères, reliées par le commerce à l’arrière-pays africain ainsi qu’à l’Arabie, à l’Inde et à la Chine.'
+        },
+        exercises: [
+          {
+            question: 'Sur quel littoral se trouvent Kilwa Kisiwani et Songo Mnara ?',
+            answer: 'Sur la côte de l’actuelle Tanzanie, en Afrique orientale.'
+          },
+          {
+            question: 'Cite deux marchandises provenant de l’arrière-pays africain et échangées par Kilwa selon l’UNESCO.',
+            answer: 'L’or et l’ivoire.'
+          },
+          {
+            question: 'Pourquoi les ports médiévaux étaient-ils aussi des centres culturels ?',
+            answer: 'Parce que marchands, marins et migrants s’y rencontraient, favorisant les échanges de langues, de croyances, de techniques et de pratiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'UNESCO World Heritage Centre — Ruins of Kilwa Kisiwani and Ruins of Songo Mnara',
+            url: 'https://whc.unesco.org/en/list/144/'
+          },
+          {
+            title: 'World History Encyclopedia — Indian Ocean Trade before the European Conquest',
+            url: 'https://www.worldhistory.org/article/1800/indian-ocean-trade-before-the-european-conquest/'
+          },
+          {
+            title: 'UNESCO — About the Silk Roads',
+            url: 'https://www.unesco.org/en/silk-roads/about-silk-roads'
+          }
+        ]
+      }
+    },
+    {
+      id: 'arrivee-europeens-transformations',
+      title: 'L’arrivée des Européens et les transformations du commerce',
+      field: 'Fin du XVe siècle et XVIe siècle · Expansion maritime européenne',
+      summary: 'Distinguer l’existence ancienne des réseaux de l’océan Indien des tentatives européennes pour s’y insérer, les contrôler ou en détourner une partie des échanges.',
+      lesson: {
+        sections: [
+          'Lorsque les navigateurs portugais atteignent l’océan Indien à la fin du XVe siècle, ils rencontrent des réseaux marchands déjà actifs et anciens. L’article de World History Encyclopedia rappelle que les ports et les marchands d’Afrique orientale, d’Arabie, d’Inde et d’Asie du Sud-Est entretenaient déjà des échanges étendus. L’arrivée européenne ne marque donc pas le commencement du commerce dans cet océan ; elle constitue une nouvelle phase dans l’histoire de réseaux préexistants.',
+          'Les Portugais cherchent notamment à accéder directement aux marchandises recherchées en Europe et à peser sur les routes maritimes. Au XVIe siècle, ils établissent des positions dans plusieurs ports, dont Cochin et Goa en Inde. L’usage de la force navale et la construction de places fortifiées leur permettent d’imposer certaines contraintes à la navigation et au commerce. Toutefois, ces interventions ne signifient pas que les Européens ont immédiatement contrôlé l’ensemble de l’océan Indien : les marchands et les pouvoirs locaux continuent d’y jouer des rôles importants.',
+          'Les conséquences varient selon les régions et les périodes. Certains ports gagnent ou perdent de l’importance, les autorités négocient ou combattent, et les commerçants adaptent leurs itinéraires. Il ne faut donc pas résumer cette histoire à un remplacement instantané des réseaux asiatiques par un système européen. Pour analyser cette période, les historiens examinent les continuités, les changements de pouvoir, les formes de coercition et la capacité des acteurs locaux à maintenir ou réorganiser leurs activités.'
+        ],
+        example: {
+          statement: 'Un manuel affirme que les Européens ont créé le commerce de l’océan Indien à la fin du XVe siècle. Comment corriger cette affirmation ?',
+          calculation: 'On compare cette affirmation aux témoignages sur les échanges anciens, aux sources médiévales et aux vestiges des ports antérieurs à l’arrivée portugaise.',
+          answer: 'L’affirmation est incorrecte : les réseaux commerciaux de l’océan Indien existaient bien avant l’arrivée des Portugais. Leur arrivée a modifié certains rapports de force et itinéraires, sans créer ces échanges.'
+        },
+        exercise: {
+          question: 'Pourquoi l’arrivée des Portugais ne doit-elle pas être présentée comme le début du commerce dans l’océan Indien ?',
+          answer: 'Parce que des réseaux maritimes et portuaires reliant l’Afrique orientale, l’Arabie, l’Inde et l’Asie existaient depuis longtemps ; les Portugais sont intervenus dans ces réseaux déjà établis.'
+        },
+        exercises: [
+          {
+            question: 'Quel objectif commercial important poussait les Portugais à rechercher une route maritime vers l’océan Indien ?',
+            answer: 'Accéder aux marchandises recherchées en Europe, notamment aux épices, et participer plus directement à leur commerce.'
+          },
+          {
+            question: 'Cite deux ports indiens où les Portugais ont établi des positions au début de leur expansion dans l’océan Indien.',
+            answer: 'Cochin et Goa.'
+          },
+          {
+            question: 'L’intervention européenne a-t-elle fait disparaître immédiatement tous les réseaux marchands préexistants ?',
+            answer: 'Non. Les effets ont varié selon les régions ; les marchands et pouvoirs locaux ont continué à participer aux échanges et à adapter leurs stratégies.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Indian Ocean Trade before the European Conquest',
+            url: 'https://www.worldhistory.org/article/1800/indian-ocean-trade-before-the-european-conquest/'
+          },
+          {
+            title: 'UNESCO World Heritage Centre — Ruins of Kilwa Kisiwani and Ruins of Songo Mnara',
+            url: 'https://whc.unesco.org/en/list/144/'
+          },
+          {
+            title: 'Cambridge University Press — Indian Ocean Trade in the First Millennium c.e.: Taking the Romans out of Indo-Roman? (2025)',
+            url: 'https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/indian-ocean-trade-in-the-first-millennium-ce-taking-the-romans-out-of-indoroman/6254877B05C32F83C6CC9B1F93BF5C7F'
+          }
+        ]
+      }
+    }
+  ]
+},
 
 ];
 
