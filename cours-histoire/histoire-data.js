@@ -3794,7 +3794,7 @@ window.courseCatalog = [
   {
     id: 'histoire-agriculture',
     sortYear: -9500,
-    title: 'L’histoire de l’agriculture',
+    title: 'Histoire de l’agriculture',
     note: 'Dix chapitres sur les origines de l’agriculture, les foyers du Proche-Orient, d’Afrique, d’Asie et des Amériques, la diffusion des cultures, l’irrigation antique, l’échange colombien, la révolution agricole britannique et la révolution verte. Les dates sont approximatives et diffèrent parfois selon les sources.',
     chapters: [
       {
@@ -4221,3 +4221,4 @@ window.courseCatalog = [
 
 
 ];
+
