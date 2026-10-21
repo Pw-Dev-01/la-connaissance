@@ -3789,4 +3789,435 @@ window.courseCatalog = [
     ]
   },
 
+// BRANCHE HISTOIRE DE L’AGRICULTURE
+
+  {
+    id: 'histoire-agriculture',
+    sortYear: -9500,
+    title: 'L’histoire de l’agriculture',
+    note: 'Dix chapitres sur les origines de l’agriculture, les foyers du Proche-Orient, d’Afrique, d’Asie et des Amériques, la diffusion des cultures, l’irrigation antique, l’échange colombien, la révolution agricole britannique et la révolution verte. Les dates sont approximatives et diffèrent parfois selon les sources.',
+    chapters: [
+      {
+        id: 'origines-agriculture',
+        title: 'Qu’est-ce que l’agriculture ? Origines et définitions',
+        field: 'Agriculture · Origines · à partir d’environ 12 000 ans avant aujourd’hui',
+        summary: 'Comprendre ce qu’est la domestication, quand et où l’agriculture est apparue de façon indépendante, et pourquoi les dates varient selon les sources.',
+        lesson: {
+          sections: [
+            'D’après World History Encyclopedia, l’agriculture est apparue de façon indépendante en plusieurs endroits du monde, à partir d’environ 12 000 ans avant aujourd’hui. Les premières plantes cultivées et les premiers animaux d’élevage ont été domestiqués dans six zones plutôt diffuses : le Proche-Orient, la Chine, l’Asie du Sud-Est et l’Afrique dans l’Ancien Monde ; la Mésoamérique, l’Amérique du Sud et le nord-est de l’Amérique du Nord dans le Nouveau Monde. Domestiquer une espèce, au sens large, c’est la faire évoluer par sélection humaine pour qu’elle réponde à des besoins : nourriture, fibres, force de travail.',
+            'Comment l’agriculture a-t-elle pu commencer ? Pour le Proche-Orient, World History Encyclopedia propose une explication probable : des chasseurs-cueilleurs qui récoltaient des céréales sauvages devaient les rapporter au camp pour séparer le grain de la balle. Des graines tombaient inévitablement au sol, et l’année suivante des céréales poussaient autour du campement. Les groupes restaient plus longtemps pour récolter, devenant peu à peu semi-nomades avec des villages saisonniers, comme la culture natoufienne, qui a prospéré d’environ 12 500 à 9 500 av. J.-C. Vers 8 500 av. J.-C., le Moyen-Orient comptait de nombreux villages permanents dont les habitants étaient surtout des agriculteurs. Il s’agit d’une explication plausible, pas d’une certitude.',
+            'On a longtemps cru que l’agriculture s’était diffusée depuis un seul foyer du Moyen-Orient vers le reste du monde. Les spécialistes s’accordent aujourd’hui sur des apparitions indépendantes : en Amérique centrale, des populations ont domestiqué le maïs et les haricots sans rien savoir de la culture du blé et du pois au Moyen-Orient ; en Chine, ce sont le riz, le millet et le porc ; en Amérique du Sud, la pomme de terre et le lama. Chaque foyer s’est donc construit sur des espèces locales différentes, ce qui explique la diversité des agricultures du monde.',
+            'Les dates varient selon les sources, car elles dépendent de ce que l’on date : les premières plantes cultivées, les formes domestiquées, les restes retrouvés sur un site. Par exemple, World History Encyclopedia situe dans un article la domestication des plantes il y a environ 12 000 ans, et donne dans un autre des repères plus précis, comme des figuiers cultivés en Jordanie vers 11 300 av. J.-C. et le blé et la chèvre domestiqués dans le Levant vers 9 000 av. J.-C. Ces chiffres ne coïncident pas exactement : il faut les lire comme des ordres de grandeur, et non comme des dates précises.'
+          ],
+          example: {
+            statement: 'Une source situe le début de la domestication des plantes il y a environ 12 000 ans. En arrondissant l’année actuelle à 2 000, à quelle date av. J.-C. cela correspond-il ?',
+            calculation: 'On soustrait l’année arrondie : 12 000 − 2 000 = 10 000.',
+            answer: 'Vers 10 000 av. J.-C., un ordre de grandeur et non une date exacte.'
+          },
+          exercise: {
+            question: 'Dans combien de zones du monde les premières plantes et les premiers animaux ont-ils été domestiqués, selon World History Encyclopedia ?',
+            answer: 'Dans six zones plutôt diffuses : le Proche-Orient, la Chine, l’Asie du Sud-Est et l’Afrique dans l’Ancien Monde ; la Mésoamérique, l’Amérique du Sud et le nord-est de l’Amérique du Nord dans le Nouveau Monde.'
+          },
+          exercises: [
+            {
+              question: 'Quelle explication probable World History Encyclopedia donne-t-elle au début de l’agriculture au Proche-Orient ?',
+              answer: 'Des chasseurs-cueilleurs rapportaient des céréales sauvages au camp pour séparer le grain de la balle ; des graines tombaient au sol et repoussaient l’année suivante, ce qui a conduit les groupes à rester plus longtemps, puis à cultiver.'
+            },
+            {
+              question: 'Pourquoi ne peut-on pas parler d’un foyer d’origine unique de l’agriculture ?',
+              answer: 'Parce que des populations ont domestiqué des espèces locales différentes de façon indépendante : maïs et haricots en Amérique centrale, riz, millet et porc en Chine, pomme de terre et lama en Amérique du Sud.'
+            },
+            {
+              question: 'Pourquoi faut-il lire les dates de domestication comme des ordres de grandeur ?',
+              answer: 'Parce qu’elles dépendent de ce que l’on date et que les sources ne donnent pas exactement les mêmes repères pour une même espèce.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Origins of World Agriculture', url: 'https://www.worldhistory.org/article/1886/origins-of-world-agriculture/' },
+            { title: 'World History Encyclopedia — Agriculture in the Fertile Crescent & Mesopotamia', url: 'https://www.worldhistory.org/article/9/agriculture-in-the-fertile-crescent--mesopotamia/' },
+            { title: 'World History Encyclopedia — First Agricultural Revolution', url: 'https://www.worldhistory.org/First_Agricultural_Revolution/' }
+          ]
+        }
+      },
+      {
+        id: 'proche-orient-croissant-fertile',
+        title: 'Le Proche-Orient et le Croissant fertile',
+        field: 'Agriculture · Proche-Orient · du XIIe au IIIe millénaire av. J.-C.',
+        summary: 'Découvrir pourquoi le Proche-Orient est un foyer majeur de l’agriculture et quelles plantes et quels animaux y ont été domestiqués.',
+        lesson: {
+          sections: [
+            'World History Encyclopedia décrit des débuts graduels dans les collines du sud-est de la Turquie, de l’ouest de l’Iran et du Levant, probablement parce que cette région abritait une grande variété de plantes et d’animaux se prêtant à la domestication. Les sites agricoles anciens y sont si nombreux que certains chercheurs proposent d’y voir une « zone nucléaire », où des événements survenus en un lieu en ont influencé d’autres.',
+            'Le Croissant fertile comprend trois grandes zones géographiques : la Mésopotamie, plaine alluviale de l’Euphrate et du Tigre, surtout située dans l’Irak actuel ; la haute Mésopotamie, au pied des monts Taurus et Zagros ; et le Levant, sur la côte méditerranéenne, dans la Syrie, le Liban, Israël, la Jordanie et la Palestine actuels. Cette diversité de milieux explique la variété des ressources agricoles, des rendements et des précipitations.',
+            'Un article de World History Encyclopedia sur les origines de l’agriculture mondiale indique que les premiers animaux d’élevage, moutons et chèvres, ont probablement été domestiqués au nord et à l’est du cœur de la domestication des plantes. Il y a environ 11 000 ans, l’orge, le blé, les chèvres et les moutons sont domestiqués au Proche-Orient, puis les porcs et les bovins il y a 10 000 ans, les pois et les lentilles il y a 8 000 ans, et les olives et le raisin il y a environ 6 000 ans. Parmi les plantes citées figurent aussi le pois chiche, le palmier dattier, le figuier et le lin.',
+            'Un autre article de la même encyclopédie donne des repères légèrement différents : des figuiers cultivés en Jordanie vers 11 300 av. J.-C., le blé et la chèvre dans le Levant vers 9 000 av. J.-C., les pois et les lentilles vers 8 000 av. J.-C., les bovins vers 8 500 av. J.-C. (probablement à partir de l’aurochs), l’olivier en Méditerranée orientale vers 5 000 av. J.-C. et la vigne en Iran vers 3 500 av. J.-C. Des analyses génétiques d’anciens ossements de bovins suggèrent que tous les bovins actuels descendent d’un très petit nombre d’animaux domestiqués, de l’ordre de 80, issus d’un petit troupeau domestiqué il y a environ 10 500 ans. Selon la même source, environ 90 % de nos calories proviennent aujourd’hui d’aliments domestiqués lors de cette première vague de la révolution agricole.'
+          ],
+          example: {
+            statement: 'World History Encyclopedia place la culture des figuiers en Jordanie vers 11 300 av. J.-C. et celle de l’olivier en Méditerranée orientale vers 5 000 av. J.-C. Quel intervalle sépare ces deux repères ?',
+            calculation: 'On soustrait : 11 300 − 5 000 = 6 300.',
+            answer: 'Environ 6 300 ans : la domestication des plantes du Proche-Orient s’étale sur plusieurs millénaires, elle n’est pas un événement unique.'
+          },
+          exercise: {
+            question: 'Quels animaux ont probablement été domestiqués en premier au Proche-Orient, selon World History Encyclopedia ?',
+            answer: 'Les moutons et les chèvres, probablement au nord et à l’est du cœur de la domestication des plantes.'
+          },
+          exercises: [
+            {
+              question: 'Quelles sont les trois grandes zones géographiques du Croissant fertile ?',
+              answer: 'La Mésopotamie (plaine alluviale de l’Euphrate et du Tigre), la haute Mésopotamie (au pied du Taurus et du Zagros) et le Levant (côte méditerranéenne).'
+            },
+            {
+              question: 'Que signifie l’expression « zone nucléaire » appliquée au Proche-Orient ?',
+              answer: 'Qu’en raison du très grand nombre de sites agricoles anciens, des événements survenus en un lieu pourraient avoir influencé d’autres lieux de la région.'
+            },
+            {
+              question: 'Quelles céréales ont été domestiquées parmi les premières au Proche-Orient ?',
+              answer: 'L’orge et le blé.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Origins of World Agriculture', url: 'https://www.worldhistory.org/article/1886/origins-of-world-agriculture/' },
+            { title: 'World History Encyclopedia — Agriculture in the Fertile Crescent & Mesopotamia', url: 'https://www.worldhistory.org/article/9/agriculture-in-the-fertile-crescent--mesopotamia/' },
+            { title: 'UCL News — DNA traces cattle back to a small herd domesticated around 10,500 years ago', url: 'https://www.ucl.ac.uk/news/2012/mar/dna-traces-cattle-back-small-herd-domesticated-around-10500-years-ago' }
+          ]
+        }
+      },
+      {
+        id: 'afrique-chine-asie-sud-est',
+        title: 'Afrique, Chine et Asie du Sud-Est : d’autres foyers de l’Ancien Monde',
+        field: 'Agriculture · Afrique et Asie · du Xe au IVe millénaire av. J.-C. environ',
+        summary: 'Découvrir les foyers agricoles africains, chinois et sud-est asiatiques, leurs espèces domestiquées et les nuances de datation.',
+        lesson: {
+          sections: [
+            'Selon World History Encyclopedia, l’agriculture commence aussi très tôt dans les marges forestières de l’Afrique de l’Ouest, en Éthiopie et dans le Sahel, la zone de transition écoclimatique entre le Sahara et la savane. L’Éthiopie fournit les plus anciennes preuves africaines d’agriculture, datées d’environ 6 000 ans, mais les autres origines sont probablement tout aussi anciennes.',
+            'Les Éthiopiens ont domestiqué le café, l’éleusine et le teff. Dans le Sahel, ce sont le sorgho, le mil perlé, le riz africain et la pintade. Les Africains de l’Ouest sont à l’origine de l’igname africaine, du niébé, de la pastèque et du palmier à huile. L’Afrique est donc un foyer à part entière, avec des plantes qui n’ont pas de lien avec celles du Proche-Orient.',
+            'En Chine, deux zones ont commencé l’agriculture il y a environ 8 000 ans : les bassins du fleuve Jaune et de la Wei au nord, et la vallée du Yangzi au sud. Parmi les premières espèces domestiquées en Chine figurent le millet commun (broomcorn) et le millet des oiseaux (foxtail), le riz, le soja et le porc ; la pêche et le thé sont aussi attribués à la Chine. D’autres indices de culture, datés de 8 000 à 10 000 ans, existent en Thaïlande et en Nouvelle-Guinée.',
+            'En Asie du Sud-Est ont d’abord été domestiqués la banane, le taro, les agrumes et la canne à sucre ; l’igname et le taro y comptent parmi les légumes cités. Le poulet a été domestiqué dans une zone englobant le nord de l’Inde sub-himalayen, le sud de la Chine et l’Asie du Sud-Est. Un autre article de World History Encyclopedia signale que les plus anciens phytolithes de riz trouvés le long du Yangzi remontent à environ 13 900 ans ; or un phytolithe, microrestes végétal de silice, ne suffit pas à lui seul à établir une culture : c’est une raison de plus de rester prudent sur les dates.'
+          ],
+          example: {
+            statement: 'World History Encyclopedia date les plus anciennes preuves d’agriculture en Éthiopie d’environ 6 000 ans, et le début de l’agriculture dans deux zones de Chine d’environ 8 000 ans. Quel écart sépare ces deux repères ?',
+            calculation: 'On soustrait : 8 000 − 6 000 = 2 000.',
+            answer: 'Environ 2 000 ans. Comme l’article précise que d’autres origines africaines sont probablement tout aussi anciennes, cet écart n’est qu’indicatif.'
+          },
+          exercise: {
+            question: 'Quelles espèces ont été domestiquées dans le Sahel, selon World History Encyclopedia ?',
+            answer: 'Le sorgho, le mil perlé, le riz africain et la pintade.'
+          },
+          exercises: [
+            {
+              question: 'Quelles sont les deux zones de Chine où l’agriculture commence il y a environ 8 000 ans ?',
+              answer: 'Les bassins du fleuve Jaune et de la Wei au nord, et la vallée du Yangzi au sud.'
+            },
+            {
+              question: 'Quelles espèces sont associées à l’Asie du Sud-Est ?',
+              answer: 'La banane, le taro, les agrumes et la canne à sucre, ainsi que l’igname ; le poulet vient d’une zone englobant l’Asie du Sud-Est, le sud de la Chine et le nord de l’Inde.'
+            },
+            {
+              question: 'Pourquoi la présence de phytolithes de riz ne suffit-elle pas à prouver une culture ?',
+              answer: 'Parce qu’un phytolithe est seulement un microreste végétal de silice : sa présence peut indiquer une plante, mais pas à elle seule que celle-ci était cultivée.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Origins of World Agriculture', url: 'https://www.worldhistory.org/article/1886/origins-of-world-agriculture/' },
+            { title: 'World History Encyclopedia — First Agricultural Revolution', url: 'https://www.worldhistory.org/First_Agricultural_Revolution/' }
+          ]
+        }
+      },
+      {
+        id: 'ameriques-origines-agricoles',
+        title: 'Les Amériques : Mésoamérique, Andes et Amérique du Nord',
+        field: 'Agriculture · Nouveau Monde · à partir du IXe millénaire av. J.-C. environ',
+        summary: 'Étudier les trois foyers agricoles du Nouveau Monde, leurs plantes et leurs animaux domestiques.',
+        lesson: {
+          sections: [
+            'D’après World History Encyclopedia, l’agriculture a probablement commencé de façon indépendante dans le Nouveau Monde, 1 000 à 2 000 ans plus tard que dans l’Ancien Monde. Trois grands centres sont décrits : un centre mésoaméricain relativement compact, de l’actuelle Mexico jusqu’au Honduras ; des cultures sud-américaines apparues sur une vaste zone couvrant la majeure partie de l’Amérique du Sud côtière et centrale ; et un centre indépendant dans l’est de l’Amérique du Nord.',
+            'En Mésoamérique, l’amarante, l’avocat, les haricots, le chénopode, le coton, les piments, la citrouille et la courge ont été domestiqués, ainsi que le maïs ; la dinde l’a été au Mexique. Un autre article de World History Encyclopedia indique que la vallée d’Oaxaca, dans le sud du Mexique, est traditionnellement considérée comme le lieu où le maïs a été domestiqué à partir de la téosinte, son ancêtre sauvage ; les données archéologiques et moléculaires suggèrent une domestication il y a environ 9 000 ans.',
+            'En Amérique du Sud, quatre régions de domestication sont distinguées : les Andes centrales d’altitude moyenne (quinoa et amarante) ; le nord et le centre des Andes, d’altitude moyenne et haute (pomme de terre, oca et cañihua) ; la basse Amazonie du sud (manioc et arachide) ; et l’Équateur et le nord-ouest du Pérou (haricots communs et courge). Les lamas et les cobayes y ont été apprivoisés. La pomme de terre aurait été domestiquée dans le sud du Pérou il y a environ 7 000 ans.',
+            'En Amérique du Nord, des populations ont domestiqué le tournesol, l’ansérine (goosefoot) et le sumpweed, ainsi que probablement une autre espèce de courge. Les animaux domestiques américains cités par World History Encyclopedia sont la dinde au Mexique, le lama, l’alpaga, le cobaye et le canard musqué en Amérique du Sud. Ces foyers sont indépendants de ceux de l’Ancien Monde : jusqu’à 1492, les agriculteurs des deux hémisphères cultivaient des ensembles de plantes complètement différents.'
+          ],
+          example: {
+            statement: 'World History Encyclopedia indique que l’agriculture débute dans le Nouveau Monde 1 000 à 2 000 ans après l’Ancien Monde (environ 12 000 ans). Quelle fourchette cela donne-t-il ?',
+            calculation: 'On soustrait : 12 000 − 1 000 = 11 000 et 12 000 − 2 000 = 10 000.',
+            answer: 'Entre 10 000 et 11 000 ans environ. Le même site donne pourtant 9 000 ans pour le maïs : ces valeurs sont approximatives et diffèrent selon les articles.'
+          },
+          exercise: {
+            question: 'Quelles sont les quatre régions de domestication d’Amérique du Sud distinguées par World History Encyclopedia ?',
+            answer: 'Les Andes centrales d’altitude moyenne, le nord et le centre des Andes (moyenne et haute altitude), la basse Amazonie du sud, et l’Équateur avec le nord-ouest du Pérou.'
+          },
+          exercises: [
+            {
+              question: 'De quelle plante sauvage le maïs est-il issu ?',
+              answer: 'De la téosinte ; la vallée d’Oaxaca, au Mexique, est traditionnellement considérée comme le lieu de cette domestication.'
+            },
+            {
+              question: 'Quel animal a été domestiqué au Mexique, selon World History Encyclopedia ?',
+              answer: 'La dinde.'
+            },
+            {
+              question: 'Quelles espèces ont été domestiquées dans l’est de l’Amérique du Nord ?',
+              answer: 'Le tournesol, l’ansérine et le sumpweed, ainsi que probablement une autre espèce de courge.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Origins of World Agriculture', url: 'https://www.worldhistory.org/article/1886/origins-of-world-agriculture/' },
+            { title: 'World History Encyclopedia — First Agricultural Revolution', url: 'https://www.worldhistory.org/First_Agricultural_Revolution/' }
+          ]
+        }
+      },
+      {
+        id: 'diffusion-europe-mediterranee',
+        title: 'La diffusion des cultures vers l’Europe et la Méditerranée',
+        field: 'Agriculture · Europe et Méditerranée · VIIIe – IIIe millénaires av. J.-C. environ',
+        summary: 'Retracer comment les plantes et les animaux du Proche-Orient se sont diffusés par terre et par mer, et comment les chercheurs distinguent diffusion culturelle et migration.',
+        lesson: {
+          sections: [
+            'Selon World History Encyclopedia, la culture des céréales du Proche-Orient s’est diffusée rapidement : il y a environ 8 000 ans, les plantes cultivées du Proche-Orient étaient arrivées en Grèce, en Égypte, le long de la mer Caspienne et au Pakistan. L’Europe centrale était intensivement cultivée moins de 1 000 ans plus tard, et il y a 5 000 ans, des communautés agricoles s’étendaient de la côte espagnole à l’Angleterre et à la Scandinavie.',
+            'La plupart des plantes fondatrices du Proche-Orient (amidonnier, engrain, orge, lentille, pois et lin) ont traversé l’Europe en ensemble, ce qui a stimulé la domestication d’autres plantes en chemin. L’avoine et le lin ont d’abord accompagné l’ensemble comme des mauvaises herbes avant d’être exploités et de devenir des cultures secondaires au moment d’atteindre la péninsule Ibérique. De nombreux légumes domestiqués il y a environ 5 000 ans sont aussi apparus comme des cultures secondaires, notamment les choux, les oignons et les radis.',
+            'Cette diffusion peut s’expliquer par la diffusion culturelle, où les techniques se transmettent de personne à personne par simple apprentissage, ou par la migration, où le transfert s’accompagne d’une expansion de population. D’après World History Encyclopedia, l’essentiel des preuves soutient l’hypothèse de la migration. Les études d’ADN ancien vont dans ce sens : des agriculteurs de culture rubanée, datée de 5 500 à 4 900 av. J.-C. calibrés, étaient génétiquement proches du Proche-Orient et de l’Anatolie, et une étude de 2015 montre que les agriculteurs cardiaux de la Méditerranée et les agriculteurs rubanés d’Europe centrale descendent d’une population ancestrale commune, située dans la péninsule balkanique ou autour d’elle.',
+            'La diffusion s’est aussi faite par la mer. World History Encyclopedia cite Melinda Zeder (2008) : des vagues successives de colons marins auraient établi des enclaves agricoles côtières autour de la Méditerranée. Chypre a été colonisée il y a environ 10 500 à 9 000 ans par des pionniers néolithiques venus du continent, probablement en bateau, avec moutons, chèvres, bovins, porcs, engrain, orge, amidonnier, lentilles, pistaches, lin et figues. Depuis la mer Égée, des colons maritimes sont arrivés il y a 9 000 à 8 000 ans ; l’Italie a été touchée il y a environ 8 000 ans, avec des villages agricoles installés dans la région des Pouilles ; et une colonie d’agriculteurs venus d’Italie a été identifiée dans le sud de la France, occupée il y a 7 700 à 7 600 ans.'
+          ],
+          example: {
+            statement: 'Selon World History Encyclopedia, Chypre est colonisée il y a environ 10 500 à 9 000 ans et la péninsule italienne il y a environ 8 000 ans. Quel est l’écart entre Chypre et l’Italie ?',
+            calculation: 'Écart minimal : 9 000 − 8 000 = 1 000. Écart maximal : 10 500 − 8 000 = 2 500.',
+            answer: 'Entre 1 000 et 2 500 ans environ : la diffusion en Méditerranée s’étale sur plusieurs millénaires et progresse de proche en proche.'
+          },
+          exercise: {
+            question: 'Quelles sont les deux hypothèses pour expliquer la diffusion de l’agriculture ?',
+            answer: 'La diffusion culturelle, où les techniques se transmettent par simple apprentissage, et la migration, où le transfert s’accompagne d’une expansion de population ; l’essentiel des preuves soutient la migration selon World History Encyclopedia.'
+          },
+          exercises: [
+            {
+              question: 'Quelles plantes fondatrices du Proche-Orient ont traversé l’Europe en ensemble ?',
+              answer: 'L’amidonnier, l’engrain, l’orge, la lentille, le pois et le lin.'
+            },
+            {
+              question: 'Comment Chypre a-t-elle été colonisée par les premiers agriculteurs ?',
+              answer: 'Par des pionniers néolithiques venus du continent, probablement en bateau, qui ont apporté moutons, chèvres, bovins, porcs et plusieurs plantes cultivées.'
+            },
+            {
+              question: 'Que montre l’étude génétique de 2015 sur les agriculteurs cardiaux et rubanés ?',
+              answer: 'Qu’ils descendent d’une population ancestrale commune située dans la péninsule balkanique ou autour d’elle.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Origins of World Agriculture', url: 'https://www.worldhistory.org/article/1886/origins-of-world-agriculture/' },
+            { title: 'PLoS Biology (2010) — Ancient DNA from European Early Neolithic Farmers Reveals Their Near Eastern Affinities', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2976717' },
+            { title: 'Molecular Biology and Evolution (2015) — A Common Genetic Origin for Early Farmers from Mediterranean Cardial and Central European LBK Cultures', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4652622' }
+          ]
+        }
+      },
+      {
+        id: 'ocean-indien-echanges-cultures',
+        title: 'L’océan Indien : un pont pour les plantes et les animaux',
+        field: 'Agriculture · Océan Indien · IIIe – Ier millénaires av. J.-C.',
+        summary: 'Comprendre comment des cultures et des animaux ont circulé entre l’Afrique, l’Inde et l’Asie du Sud-Est avant l’Antiquité classique.',
+        lesson: {
+          sections: [
+            'Selon World History Encyclopedia, des navigateurs de l’océan Indien ont transmis plusieurs cultures asiatiques importantes à Madagascar, à l’Afrique de l’Est et à l’Inde au plus tard au IIe millénaire av. J.-C. : canne à sucre, agrumes, riz d’Asie, ignames d’Asie, taro, banane et plantain, noix de coco, mangue, arbre à pain, et peut-être plusieurs épices (gingembre, clous de girofle, cardamome). Plusieurs de ces cultures ont ensuite traversé le continent africain jusqu’en Afrique de l’Ouest.',
+            'À la fin du IIIe millénaire av. J.-C., un réseau commercial s’est mis en place entre les populations côtières du sud de l’Arabie et les navigateurs du Gujarat, en Inde. Peu après, des cultures africaines ont été transportées vers l’Asie du Sud : le mil perlé, le sorgho, le niébé et l’éleusine. Dans l’autre sens, le millet commun d’origine chinoise voyageait vers l’ouest par des routes commerciales dès 2 200 av. J.-C. Le zébu a peut-être été transporté de l’Inde vers le Yémen et l’Afrique de l’Est à la même époque ; il s’est ensuite croisé avec les bovins africains, ce qui a donné des hybrides importants pour les éleveurs de l’Est africain.',
+            'La banane d’Indonésie a probablement atteint l’Inde et l’Afrique dès 2 000 av. J.-C. ; elle est arrivée en Afrique de l’Ouest vers 500 av. J.-C. Vers 5 000 ans avant aujourd’hui, plusieurs cultures ont été domestiquées en Inde, probablement stimulées par l’introduction de plantes d’Afrique et d’Asie du Sud-Est : aubergine, concombre, pois d’Angole, haricot mungo, poivre, gingembre, sésame, coton et riz de type indica. Un commerce régulier entre l’Inde et la péninsule malaise est attesté dès 1 500 av. J.-C.',
+            'Le poulet illustre la complexité de ces échanges. Il aurait probablement atteint l’Afrique depuis l’Inde par plusieurs routes : les données de linguistique historique suggèrent trois introductions distinctes, dont deux depuis le nord à travers le Sahara et une depuis l’océan Indien et la côte est de l’Afrique. Une étude publiée dans Antiquity en 2011 par Dorian Fuller et ses collègues décrit ces échanges préhistoriques de plantes et d’animaux entre l’Afrique et l’Inde et soutient que les principaux acteurs étaient non pas de grands empires, mais une multitude de petits entrepreneurs.'
+          ],
+          example: {
+            statement: 'Selon World History Encyclopedia, la banane atteint l’Inde et l’Afrique vers 2 000 av. J.-C. et l’Afrique de l’Ouest vers 500 av. J.-C. Quel intervalle sépare ces deux étapes ?',
+            calculation: 'On soustrait : 2 000 − 500 = 1 500.',
+            answer: 'Environ 1 500 ans : la progression d’une plante à travers le continent africain est lente, de proche en proche.'
+          },
+          exercise: {
+            question: 'Quelles cultures africaines ont été transportées vers l’Asie du Sud après la mise en place du réseau Inde–Golfe ?',
+            answer: 'Le mil perlé, le sorgho, le niébé et l’éleusine.'
+          },
+          exercises: [
+            {
+              question: 'Quelle céréale d’origine chinoise voyage vers l’ouest dès 2 200 av. J.-C. ?',
+              answer: 'Le millet commun (Panicum miliaceum).'
+            },
+            {
+              question: 'Combien d’introductions distinctes du poulet en Afrique suggèrent les données linguistiques ?',
+              answer: 'Trois : deux depuis le nord à travers le Sahara et une depuis l’océan Indien et la côte est de l’Afrique.'
+            },
+            {
+              question: 'Selon l’étude d’Antiquity de 2011, qui étaient les principaux acteurs de ces échanges ?',
+              answer: 'Une multitude de petits entrepreneurs plutôt que de grands empires.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Origins of World Agriculture', url: 'https://www.worldhistory.org/article/1886/origins-of-world-agriculture/' },
+            { title: 'Antiquity (2011) — Across the Indian Ocean: the prehistoric movement of plants and animals', url: 'https://www.cambridge.org/core/product/57B5B5285CDFC6151DD7A92EE8851734' },
+            { title: 'UCL — SEALINKS project', url: 'https://www.ucl.ac.uk/archaeology/research/directory/sealinks' }
+          ]
+        }
+      },
+      {
+        id: 'mesopotamie-egypte-irrigation',
+        title: 'Irrigation et charrue : l’agriculture en Mésopotamie et en Égypte',
+        field: 'Agriculture · Antiquité · IVe – Ier millénaires av. J.-C.',
+        summary: 'Voir comment l’irrigation, la charrue et le surplus de céréales ont soutenu les premières villes et les premiers États en Mésopotamie et en Égypte.',
+        lesson: {
+          sections: [
+            'D’après World History Encyclopedia, l’agriculture du Croissant fertile suit deux modèles : une agriculture sèche, sans irrigation, surtout pratiquée dans les collines de la haute Mésopotamie et du Levant, où l’on cultive surtout des céréales dépendant de la pluie ; et une agriculture irriguée, centrée sur les plaines alluviales de la basse Mésopotamie. Beaucoup de récoltes étaient détruites par la sécheresse ou les inondations. Les premiers agriculteurs se sont installés dans les collines plus arrosées, où les pluies sont réparties plus régulièrement dans l’année ; dans les plaines inondables, de nouvelles techniques sont devenues nécessaires.',
+            'L’irrigation artificielle est une innovation clé. Au début, l’eau était prélevée directement dans le système Tigre-Euphrate par de petits canaux et des chadoufs, des engins de levage de l’eau en forme de grue, connus en Mésopotamie depuis environ 3 000 av. J.-C. À partir du milieu du Ier millénaire av. J.-C., on trouve des réseaux de canaux et des réservoirs plus vastes, probablement organisés par l’État. L’aqueduc de Jerwan, le plus ancien connu, a été construit par le roi Sennachérib d’Assyrie entre 703 et 690 av. J.-C. L’agriculture irriguée reste toutefois constamment menacée par la salinisation des sols.',
+            'La charrue était connue et largement utilisée vers 3 000 av. J.-C. ; les charrues en bois ont probablement été inventées au IVe millénaire av. J.-C., et des charrues qui semaient en même temps les graines l’ont été au plus tard au IIe millénaire av. J.-C. Les champs étaient travaillés avec des bœufs et une équipe de travailleurs. Un « almanach du fermier » sumérien daté de 1700 av. J.-C. montre que les Mésopotamiens connaissaient déjà la rotation des cultures et laissaient les champs en jachère pour maintenir la fertilité du sol, mais l’usage du fumier ne semble pas encore connu. En Babylonie, en Assyrie et chez les Hittites, l’orge était la principale céréale pour l’alimentation humaine, surtout parce qu’elle tolère assez bien le sel, ce qui compte pour l’irrigation sous la chaleur de l’été.',
+            'Un surplus agricole était essentiel à la création des premières villes : ce n’est que lorsque les rendements dépassaient les besoins de subsistance qu’il devenait possible d’entretenir des populations urbaines. Des études récentes suggèrent que l’essor des États centralisés en Mésopotamie, comme ailleurs, dépendait de l’abondance de céréales pouvant être prélevées en impôt, transportées, stockées et redistribuées. Là où la culture principale était composée de racines ou de tubercules périssables, l’État centralisé est apparu beaucoup plus tard.',
+            'En Égypte, World History Encyclopedia souligne que la crue annuelle du Nil était l’aspect le plus important de l’agriculture, mais que des canaux d’irrigation restaient nécessaires pour amener l’eau aux fermes et aux villages éloignés et pour maintenir une saturation régulière des cultures près du fleuve. Les cultures de base comprenaient l’amidonnier, les pois chiches, les lentilles, la laitue, les oignons, l’ail, le sésame, le blé, l’orge, le papyrus et le lin, utilisé pour les cordes et les vêtements. L’année agricole suivait trois saisons : Akhet (la crue), Peret (la croissance) et Shemu (la récolte).'
+          ],
+          example: {
+            statement: 'Selon World History Encyclopedia, les chadoufs existent en Mésopotamie depuis environ 3 000 av. J.-C. et l’aqueduc de Jerwan est construit à partir de 703 av. J.-C. Quel intervalle approximatif sépare ces deux repères ?',
+            calculation: 'On soustrait : 3 000 − 703 = 2 297.',
+            answer: 'Environ 2 300 ans : les techniques d’irrigation se sont perfectionnées très lentement.'
+          },
+          exercise: {
+            question: 'Pourquoi l’orge était-elle la principale céréale en Babylonie, en Assyrie et chez les Hittites ?',
+            answer: 'Parce qu’elle tolère assez bien le sel, ce qui est important pour les cultures irriguées sous la chaleur de l’été.'
+          },
+          exercises: [
+            {
+              question: 'Qu’est-ce qu’un chadouf ?',
+              answer: 'Un engin de levage de l’eau en forme de grue, utilisé en Mésopotamie depuis environ 3 000 av. J.-C. pour irriguer les champs.'
+            },
+            {
+              question: 'Quelles sont les trois saisons agricoles de l’Égypte ancienne ?',
+              answer: 'Akhet (la crue), Peret (la croissance) et Shemu (la récolte).'
+            },
+            {
+              question: 'Pourquoi un surplus agricole est-il indispensable aux premières villes ?',
+              answer: 'Parce que les rendements doivent dépasser les besoins de subsistance des cultivateurs pour pouvoir nourrir une population urbaine et des spécialistes qui ne produisent pas leur nourriture.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Agriculture in the Fertile Crescent & Mesopotamia', url: 'https://www.worldhistory.org/article/9/agriculture-in-the-fertile-crescent--mesopotamia/' },
+            { title: 'World History Encyclopedia — Ancient Egyptian Agriculture', url: 'https://www.worldhistory.org/article/997' },
+            { title: 'History on the Net — Egyptian farming', url: 'https://www.historyonthenet.com/egyptian-farming' }
+          ]
+        }
+      },
+      {
+        id: 'echange-colombien-cultures',
+        title: 'L’échange colombien : un bouleversement de l’agriculture mondiale',
+        field: 'Agriculture · Échanges mondiaux · à partir de 1492',
+        summary: 'Comprendre comment, après 1492, les cultures des deux hémisphères ont été mélangées, et quelles en ont été les conséquences.',
+        lesson: {
+          sections: [
+            'Jusqu’à il y a environ 500 ans, presque toutes les dispersions de cultures se faisaient à l’intérieur des continents et non entre eux. D’après World History Encyclopedia, il y eut une diffusion vers l’Océanie depuis l’Asie du Sud-Est, mais peu de mouvements entre les hémisphères. Lorsque Christophe Colomb arrive dans le Nouveau Monde en 1492, les agriculteurs des deux hémisphères cultivent des ensembles de plantes complètement différents.',
+            'L’homogénéisation des cultures du monde commence avec Colomb et d’autres explorateurs espagnols et portugais, qui rapportent en Europe la pomme de terre, le piment et le maïs, ainsi que la tomate, les haricots, le manioc, le cacao et l’arachide. Les colons européens tentent de transférer tout le système agricole européen dans le Nouveau Monde.',
+            'En Mésoamérique, en Amérique centrale et dans la région andine, les Espagnols introduisent l’orge, le pois chiche, le concombre, la figue et le blé, domestiqués au Proche-Orient, la canne à sucre et les agrumes d’Asie du Sud-Est, la pêche de Chine, les melons d’Afrique, ainsi que le chou, la laitue, la vigne et l’oignon de Méditerranée. Au Brésil, les Portugais introduisent le pois chiche, la fève, la figue et le blé du Proche-Orient, la canne à sucre et la banane d’Asie du Sud-Est, la pêche de Chine, le sorgho d’Afrique et la vigne de Méditerranée.',
+            'Aujourd’hui, les peuples du monde dépendent souvent de cultures domestiquées loin de chez eux. L’Europe et l’Amérique du Nord s’appuient sur un ensemble de plantes du monde entier, dont le blé et l’orge du Proche-Orient, le maïs de Mésoamérique, la pomme de terre d’Amérique du Sud et le soja de Chine. En Afrique, le sorgho, le mil et l’igname d’origine ont été en grande partie remplacés par le maïs, le manioc, la patate douce et la banane. Selon World History Encyclopedia, l’agriculture mondiale a été bouleversée au cours des 500 dernières années. Un autre article de la même encyclopédie rappelle aussi des conséquences négatives de ces transferts : déforestation, traite des esclaves, et standardisation des pratiques agricoles autour de quelques espèces.'
+          ],
+          example: {
+            statement: 'Christophe Colomb arrive dans le Nouveau Monde en 1492. Combien d’années se sont écoulées jusqu’en 2026 ?',
+            calculation: 'On soustrait : 2 026 − 1 492 = 534.',
+            answer: '534 ans, soit plus de 500 ans, ce qui correspond à l’expression « les 500 dernières années » utilisée par World History Encyclopedia.'
+          },
+          exercise: {
+            question: 'Pourquoi l’année 1492 marque-t-elle un tournant pour les cultures du monde ?',
+            answer: 'Parce que, avant cette date, les agriculteurs des deux hémisphères cultivaient des ensembles de plantes complètement différents ; après l’arrivée de Colomb, les cultures et les animaux ont circulé entre l’Ancien et le Nouveau Monde.'
+          },
+          exercises: [
+            {
+              question: 'Citez trois plantes que les Européens rapportent des Amériques.',
+              answer: 'Par exemple la pomme de terre, le maïs et le piment (ou encore la tomate, les haricots, le manioc, le cacao, l’arachide).'
+            },
+            {
+              question: 'Quelles céréales du Proche-Orient les Espagnols introduisent-ils dans les Amériques ?',
+              answer: 'L’orge et le blé, avec aussi le pois chiche, le concombre et la figue.'
+            },
+            {
+              question: 'Quelles conséquences négatives World History Encyclopedia cite-t-elle pour ces transferts de cultures ?',
+              answer: 'La déforestation, la traite des esclaves et la standardisation des pratiques agricoles autour de quelques espèces.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Origins of World Agriculture', url: 'https://www.worldhistory.org/article/1886/origins-of-world-agriculture/' },
+            { title: 'World History Encyclopedia — First Agricultural Revolution', url: 'https://www.worldhistory.org/First_Agricultural_Revolution/' }
+          ]
+        }
+      },
+      {
+        id: 'revolution-agricole-britannique',
+        title: 'La révolution agricole britannique : rotation des cultures et semoir',
+        field: 'Agriculture · Europe moderne · XVIIIe – XIXe siècles',
+        summary: 'Étudier la transformation de l’agriculture britannique, le système de Norfolk, le semoir de Jethro Tull et les limites de l’histoire des « grands hommes ».',
+        lesson: {
+          sections: [
+            'Selon Britannica, la révolution agricole est la transformation graduelle du système agricole traditionnel qui a commencé en Grande-Bretagne au XVIIIe siècle et qui n’était pas achevée avant le XIXe siècle. Elle comprend la redistribution des propriétés foncières pour rendre les exploitations plus compactes, des investissements accrus dans des améliorations techniques (nouvelles machines, meilleur drainage), des méthodes scientifiques d’élevage et l’expérimentation de nouvelles cultures et de nouveaux systèmes de rotation. Britannica la qualifie de prélude essentiel à la révolution industrielle.',
+            'Parmi ces nouveaux systèmes figure la rotation de Norfolk à quatre ans, qui mettait l’accent sur les plantes fourragères et supprimait l’année de jachère jusque-là habituelle. Le blé était cultivé la première année et les navets la deuxième, puis l’orge la troisième, avec du trèfle et du ray-grass semés sous couvert. Le trèfle et le ray-grass étaient fauchés pour le fourrage ou pâturés la quatrième année ; en hiver, bovins et moutons étaient nourris avec les navets. L’élevage sélectif est illustré par la création des bovins Shorthorn à partir du bétail local du district de Teeswater, dans le comté de Durham.',
+            'Jethro Tull (1674–1741) est un agriculteur et écrivain anglais. Vers 1701, sur la ferme de son père dans l’Oxfordshire, il perfectionne un semoir tiré par un cheval qui sème économiquement les graines en lignes bien nettes, ce qui constitue un progrès notable par rapport à la pratique courante de les disperser à la main. Il a aussi mis au point une houe tirée par un cheval, et publié en 1731 un ouvrage sur la culture avec ces outils. Ses méthodes ont d’abord été violemment attaquées, puis adoptées par de grands propriétaires, selon Britannica.',
+            'Britannica note que l’historiographie qui mettait l’accent sur les contributions de « grands hommes » a perdu beaucoup de son influence, même si les noms de Jethro Tull et d’Arthur Young sont encore souvent évoqués pour comprendre l’importance de cette révolution. Il faut donc éviter d’attribuer ces changements à quelques inventeurs : il s’agit d’un processus long et complexe, mêlant organisation foncière, techniques, élevage et expérimentation, plutôt que d’une rupture soudaine.'
+          ],
+          example: {
+            statement: 'Jethro Tull perfectionne son semoir vers 1701 et publie son ouvrage sur la culture à la houe tirée par un cheval en 1731. Combien d’années séparent ces deux dates ?',
+            calculation: 'On soustrait : 1 731 − 1 701 = 30.',
+            answer: '30 ans : l’invention et la diffusion de ses idées s’étalent sur une génération.'
+          },
+          exercise: {
+            question: 'Quelles cultures composaient la rotation de Norfolk à quatre ans, et que supprimait-elle ?',
+            answer: 'Blé, navets, orge avec trèfle et ray-grass semés sous couvert, puis trèfle et ray-grass fauchés ou pâturés ; la rotation supprimait la jachère.'
+          },
+          exercises: [
+            {
+              question: 'Quand la révolution agricole britannique commence-t-elle, et quand s’achève-t-elle, selon Britannica ?',
+              answer: 'Elle commence au XVIIIe siècle en Grande-Bretagne et n’est pas achevée avant le XIXe siècle.'
+            },
+            {
+              question: 'Quel progrès apporte le semoir de Jethro Tull ?',
+              answer: 'Il sème économiquement les graines en lignes régulières, alors que l’usage courant était de les disperser à la main.'
+            },
+            {
+              question: 'Pourquoi l’histoire des « grands hommes » est-elle aujourd’hui critiquée pour cette période ?',
+              answer: 'Parce que la révolution agricole fut un processus complexe et graduel qui ne se réduit pas aux contributions de quelques personnes comme Tull ou Young.'
+            }
+          ],
+          sources: [
+            { title: 'Britannica — Agricultural revolution', url: 'https://www.britannica.com/print/article/1364342' },
+            { title: 'Britannica — Jethro Tull', url: 'https://www.britannica.com/biography/Jethro-Tull' }
+          ]
+        }
+      },
+      {
+        id: 'revolution-verte',
+        title: 'La révolution verte : blés et riz à haut rendement',
+        field: 'Agriculture · Époque contemporaine · 1944 – années 1970',
+        summary: 'Comprendre les variétés semi-naines, le rôle de Norman Borlaug, les résultats au Mexique, en Inde et au Pakistan, et les conditions de ce succès.',
+        lesson: {
+          sections: [
+            'La révolution verte désigne l’augmentation notable de la production de céréales au Mexique, en Inde, au Pakistan, aux Philippines et dans d’autres pays en développement dans les années 1960 et 1970, selon Encyclopedia.com. Elle repose sur la sélection de variétés à haut rendement et sur de nouvelles pratiques agricoles. Elle est associée à l’agronome américain Norman Borlaug (1914–2009), souvent appelé le père de la révolution verte.',
+            'En 1944, Borlaug prend la tête d’un programme de recherche sur le blé au Mexique, soutenu par la Fondation Rockefeller. Lui et son équipe passent près de 20 ans à sélectionner un blé semi-nain, à haut rendement et résistant aux maladies. Selon la notice biographique de la National Academy of Sciences, ces plantes semi-naines restent debout sous des apports accrus d’engrais et d’irrigation, ce qui augmente nettement les rendements. Le Mexique devient exportateur de blé en 1963.',
+            'À partir de 1965, une campagne massive expédie ce blé en Inde et au Pakistan, où les agriculteurs locaux sont formés aux bonnes méthodes de culture. Entre 1965 et 1970, les rendements de blé ont presque doublé dans ces deux pays, d’après la même notice. Encyclopedia.com chiffre la production de blé du Pakistan à 4,6 millions de tonnes en 1965 et à 8,4 millions de tonnes en 1970, et celle de l’Inde à 12,3 puis 20 millions de tonnes.',
+            'La révolution verte concerne aussi le riz. À l’Institut international de recherche sur le riz (IRRI), une lignée de riz semi-nain devient en 1966 la variété IR8, surnommée « riz miracle » et créditée de doubler les rendements. Norman Borlaug reçoit le prix Nobel de la paix en 1970, la seule fois où ce prix a été attribué pour l’agriculture et la production alimentaire. Les sources soulignent toutefois les conditions de ce succès : les variétés exigeaient plus d’engrais et d’irrigation, et les pays bénéficiaires avaient des gouvernements relativement stables et des infrastructures assez développées.'
+          ],
+          example: {
+            statement: 'Encyclopedia.com indique que la production de blé du Pakistan passe de 4,6 millions de tonnes en 1965 à 8,4 millions de tonnes en 1970. Quel est le rapport entre ces deux valeurs ?',
+            calculation: 'On divise : 8,4 / 4,6 ≈ 1,8.',
+            answer: 'La production est multipliée par environ 1,8, soit presque un doublement.'
+          },
+          exercise: {
+            question: 'Pourquoi les variétés de blé semi-naines étaient-elles importantes pour la révolution verte ?',
+            answer: 'Parce que leurs plantes courtes restent debout sous des apports accrus d’engrais et d’irrigation, ce qui permet d’augmenter nettement les rendements.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année le Mexique devient-il exportateur de blé, selon la notice de la National Academy of Sciences ?',
+              answer: 'En 1963.'
+            },
+            {
+              question: 'En quelle année Norman Borlaug reçoit-il le prix Nobel de la paix ?',
+              answer: 'En 1970.'
+            },
+            {
+              question: 'De quelles conditions le succès de la révolution verte dépendait-il aussi ?',
+              answer: 'D’apports d’engrais et d’irrigation, et d’une certaine stabilité politique et d’infrastructures relativement développées dans les pays bénéficiaires.'
+            }
+          ],
+          sources: [
+            { title: 'National Academy of Sciences — Norman E. Borlaug (Biographical Memoir)', url: 'https://www.nasonline.org/wp-content/uploads/2024/06/borlaug-norman.pdf' },
+            { title: 'Auburn University — Norman E. Borlaug, Nobel Peace Prize Laureate', url: 'https://iqla.auburn.edu/borlaug.php' },
+            { title: 'Encyclopedia.com — Green Revolution', url: 'https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/green-revolution' },
+            { title: 'Banglapedia — Green Revolution', url: 'https://en.banglapedia.org/index.php/Green_Revolution' }
+          ]
+        }
+      }
+    ]
+  },
+
+
+
 ];
