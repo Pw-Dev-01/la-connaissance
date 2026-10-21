@@ -497,6 +497,7 @@ margin: 23px 0;
 padding: 18px 21px 19px;
 border-left: 3px solid var(--green);
 background: #e9eee4;
+overflow-x: auto; 
 }
 
 .formula-accent {
@@ -515,6 +516,7 @@ color: var(--ink);
 font-family: var(--serif);
 font-size: 26px;
 line-height: 1.4;
+white-space: nowrap;
 }
 
 .mathml-display {
