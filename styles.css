@@ -1258,4 +1258,21 @@ font-size: 9px;
 @media (max-width: 380px) { .course-heading h1.is-long-title { font-size: 27px; } }
 
 
-
+/* Équations détaillées (lesson.equationDetails) */
+.equation-detail > h3 { margin-top: 26px; font-size: 26px; line-height: 1.2; }
+.equation-detail .formula-block { margin: 16px 0 22px; }
+.equation-detail > p {
+  max-width: 730px;
+  margin-bottom: 14px;
+  color: #39453d;
+  line-height: 1.75;
+}
+.equation-detail > p:last-of-type { margin-bottom: 0; color: var(--ink); }
+.equation-detail + .equation-detail {
+  margin-top: 30px;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 700px) {
+  .equation-detail > h3 { font-size: 22px; }
+}
