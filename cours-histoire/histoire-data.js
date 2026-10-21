@@ -3394,5 +3394,399 @@ window.courseCatalog = [
   ]
 },
 
+// BRANCHE HISTOIRE NÉOLITHIQUE
+
+  {
+    id: 'histoire-neolithique',
+    sortYear: -10000,
+    title: 'Le Néolithique',
+    note: 'Neuf chapitres sur la définition du Néolithique, la transition vers l’agriculture au Proche-Orient, la domestication, les premiers monuments et villages, les techniques, la diffusion en Europe, les mégalithes, puis les sociétés, la santé et la fin de la période. Les dates sont approximatives, varient selon les régions et selon les sources.',
+    chapters: [
+      {
+        id: 'definition-neolithique',
+        title: 'Définir le Néolithique : un terme, plusieurs chronologies',
+        field: 'Néolithique · Définition et chronologie · vers 10 000 – 2 000 av. J.-C. selon les régions',
+        summary: 'Comprendre ce que désigne le terme Néolithique, pourquoi il n’a pas de date de début unique et pourquoi l’idée de « révolution » est aujourd’hui nuancée.',
+        lesson: {
+          sections: [
+            'Le Néolithique, ou « nouvel âge de pierre », est le dernier stade de l’âge de la pierre dans une classification forgée par des chercheurs à la fin du XIXe siècle, qui distingue le Paléolithique, le Mésolithique et le Néolithique. Le terme est surtout associé à l’agriculture, c’est-à-dire à la culture des céréales et à la domestication des animaux, mais aussi à l’usage d’outils en pierre polie et, dans plusieurs régions, à une architecture mégalithique.',
+            'Il n’existe pas de date de début unique. D’après World History Encyclopedia, l’agriculture se développe vers 9 000 av. J.-C. au Proche-Orient, vers 7 000 av. J.-C. dans le sud-est de l’Europe, puis plus tard ailleurs. À l’intérieur même de l’Europe, elle apparaît vers 7 000 av. J.-C. au sud-est, vers 5 500 av. J.-C. au centre et vers 4 000 av. J.-C. au nord. En Asie de l’Est, le Néolithique s’étend de 6 000 à 2 000 av. J.-C. Britannica retient un repère général d’environ 10 000 av. J.-C., qui coïncide avec le recul des glaciers après les glaciations du Pléistocène et le début de l’Holocène, et indique que les premières traces de culture et de domestication en Asie du Sud-Ouest datent d’environ 9 500 av. J.-C., ce qui suggère que ces pratiques ont pu commencer plus tôt. Ces chiffres diffèrent selon les critères choisis : ce sont des ordres de grandeur, pas des dates exactes.',
+            'Aucun critère unique ne suffit à définir le Néolithique. La poterie en est un bon exemple : au Japon, elle apparaît avant l’agriculture, alors qu’au Proche-Orient l’agriculture précède la production de poterie. Les archéologues s’appuient donc sur un ensemble d’indices (plantes et animaux domestiqués, villages permanents, outils en pierre polie, céramique) dont l’ordre d’apparition n’est pas le même partout.',
+            'L’expression « révolution néolithique » a été popularisée par l’archéologue australien Gordon Childe pour souligner l’impact de l’agriculture. Elle est aujourd’hui nuancée : l’adoption de l’agriculture apparaît plutôt comme le résultat de petits changements graduels. Avant l’agriculture, les groupes pouvaient déjà mener une vie semi-nomade avec un réseau de campements, puis exploiter des plantes sauvages à partir d’un campement de base. Chasse-cueillette et agriculture ne sont pas totalement incompatibles : un même groupe pouvait pratiquer l’une pendant une partie de l’année et l’autre le reste du temps. Là où l’agriculture s’est imposée, les économies de chasse ne subsistent aujourd’hui que dans des zones marginales où l’on ne peut pas cultiver, comme les régions arctiques gelées, les forêts denses ou les déserts arides.'
+          ],
+          example: {
+            statement: 'Selon World History Encyclopedia, l’agriculture se développe vers 9 000 av. J.-C. au Proche-Orient et vers 5 500 av. J.-C. en Europe centrale. Quel décalage sépare ces deux repères ?',
+            calculation: 'Pour des dates avant J.-C., on soustrait la plus récente de la plus ancienne : 9 000 − 5 500 = 3 500.',
+            answer: 'Environ 3 500 ans séparent ces deux repères approximatifs : le Néolithique n’a pas de date de début unique.'
+          },
+          exercise: {
+            question: 'Pourquoi la poterie ne suffit-elle pas à définir le Néolithique ?',
+            answer: 'Parce que son apparition n’est pas liée partout à l’agriculture : au Japon, elle précède l’agriculture, alors qu’au Proche-Orient l’agriculture précède la poterie.'
+          },
+          exercises: [
+            {
+              question: 'Qui a popularisé l’expression « révolution néolithique » ?',
+              answer: 'L’archéologue australien Gordon Childe.'
+            },
+            {
+              question: 'Pourquoi préfère-t-on aujourd’hui parler d’un processus graduel plutôt que d’une révolution ?',
+              answer: 'Parce que les données archéologiques montrent souvent une période de vie semi-nomade avant l’agriculture, puis de petits changements successifs ; chasse-cueillette et agriculture peuvent aussi coexister.'
+            },
+            {
+              question: 'Quel repère général Britannica donne-t-il pour le début du Néolithique ?',
+              answer: 'Environ 10 000 av. J.-C., en rappelant que ce point de départ est débattu et varie selon les régions du monde.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Neolithic Period', url: 'https://www.worldhistory.org/Neolithic/' },
+            { title: 'Britannica — When did the Neolithic Period begin?', url: 'https://britannica.com/question/When-did-the-Neolithic-Period-begin' }
+          ]
+        }
+      },
+      {
+        id: 'neolithisation-proche-orient',
+        title: 'Le Proche-Orient : de la chasse-cueillette à l’agriculture',
+        field: 'Néolithique · Proche-Orient · du Xe au VIIe millénaire av. J.-C.',
+        summary: 'Suivre la transition progressive de la chasse-cueillette à l’agriculture au Proche-Orient, de la période natoufienne au Néolithique précéramique.',
+        lesson: {
+          sections: [
+            'Le Proche-Orient est la région où les premiers indices de culture et d’élevage sont les mieux documentés. Les recherches situent le début du processus au Xe millénaire av. J.-C., et World History Encyclopedia place la fin du dernier épisode glaciaire vers 11 700 av. J.-C. Dès le Natoufien, des chasseurs-cueilleurs du Levant fréquentent des sites comme Jéricho (vers 10 000 av. J.-C. selon WHE) : certains éléments du mode de vie néolithique apparaissent donc avant l’agriculture elle-même.',
+            'On distingue un Néolithique précéramique, du Xe millénaire à environ 7 500 – 7 000 av. J.-C., caractérisé par l’absence de poterie mais par la présence de l’agriculture, de l’élevage et d’une sédentarisation largement répandue. Il se divise en Néolithique précéramique A (PPNA) puis B (PPNB) : à Göbekli Tepe, l’UNESCO rattache les premiers niveaux au PPNA (Xe millénaire) et les suivants au PPNB (IXe millénaire). Vient ensuite le Néolithique avec céramique.',
+            'Le site de Tell Abu Hureyra, dans le nord de la Syrie, montre que la transition fut lente : elle a pris plusieurs siècles. Les premiers habitants chassaient des gazelles, des ânes sauvages et des bovins sauvages ; la consommation de gazelle diminue ensuite tandis que celle du mouton augmente (sauvage au début, domestiqué à la fin), jusqu’à ce que l’élevage ovin devienne la principale source de viande. L’usure marquée des dents des adultes reflète la place des céréales moulues dans l’alimentation. Après l’introduction de la poterie, l’usure diminue mais les dents abîmées deviennent plus fréquentes, ce qui suggère que les aliments cuits à partir de farine moulue à la meule ont été largement remplacés par des plats bouillis, comme les bouillies, préparés dans des récipients.',
+            'Vivre en groupe permanent oblige à organiser le stockage. Au début du Néolithique, les maisons n’avaient pas d’installations de stockage individuelles : le stockage, et les activités de préparation des aliments destinés à être conservés, étaient gérés à l’échelle du village. À Jarf el Ahmar, dans le nord de la Syrie, une grande structure souterraine servait de lieu de stockage communautaire. Située au centre, parmi les habitations, elle porte aussi des traces de rituels, ce qui suggère que la gestion des réserves et la vie rituelle étaient liées.'
+          ],
+          example: {
+            statement: 'World History Encyclopedia évoque des innovations dans les pointes de flèche au Proche-Orient entre 9 600 et 6 900 av. J.-C. Quelle durée cette période représente-t-elle ?',
+            calculation: 'On soustrait la date la plus récente de la plus ancienne : 9 600 − 6 900 = 2 700.',
+            answer: 'Cette période couvre environ 2 700 ans, une durée très longue qui est incompatible avec l’idée d’un changement brutal.'
+          },
+          exercise: {
+            question: 'Que montre le site de Tell Abu Hureyra sur la transition vers l’agriculture ?',
+            answer: 'Qu’elle fut graduelle et prit plusieurs siècles : la chasse à la gazelle devient secondaire tandis que le mouton, d’abord sauvage puis domestiqué, devient la principale source de viande.'
+          },
+          exercises: [
+            {
+              question: 'Que désignent les sigles PPNA et PPNB ?',
+              answer: 'Le Néolithique précéramique A et le Néolithique précéramique B, deux phases du Néolithique du Proche-Orient avant la généralisation de la poterie.'
+            },
+            {
+              question: 'À quoi servait la grande structure souterraine de Jarf el Ahmar ?',
+              answer: 'C’était un lieu de stockage communautaire, situé au centre des habitations, où des rituels ont aussi été pratiqués.'
+            },
+            {
+              question: 'Que suggère l’évolution de l’usure dentaire à Abu Hureyra après l’apparition de la poterie ?',
+              answer: 'L’usure diminue mais les dents abîmées deviennent plus fréquentes : les aliments à base de farine moulue ont été largement remplacés par des plats bouillis, comme les bouillies.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Neolithic Period', url: 'https://www.worldhistory.org/Neolithic/' },
+            { title: 'World History Encyclopedia — Early Jericho', url: 'https://www.worldhistory.org/article/951/early-jericho/' },
+            { title: 'UNESCO — Göbekli Tepe', url: 'https://whc.unesco.org/en/list/1572' },
+            { title: 'Wikipedia — Neolithic in the Near East', url: 'https://en.wikipedia.org/wiki/Neolithic_in_the_Near_East' }
+          ]
+        }
+      },
+      {
+        id: 'domestication-centres-independants',
+        title: 'Domestication des plantes et des animaux : des centres indépendants',
+        field: 'Néolithique · Agriculture et élevage · plusieurs régions du monde',
+        summary: 'Comprendre que l’agriculture est apparue indépendamment dans plusieurs régions, à partir d’espèces locales différentes.',
+        lesson: {
+          sections: [
+            'L’agriculture n’a pas une origine unique. Selon World History Encyclopedia, elle s’est développée de façon indépendante dans plusieurs régions : la vallée de l’Indus, deux centres en Asie de l’Est (la vallée du Yangzi Jiang et le cours du fleuve Jaune), le plateau andin et le Mexique, le Proche et le Moyen-Orient, la côte est des futurs États-Unis et l’Afrique subsaharienne. Dans chacune, elle s’est construite autour de plantes et d’animaux locaux.',
+            'Au Proche-Orient, les plantes dont on a retrouvé des restes comprennent des céréales comme l’orge, plusieurs espèces d’amidonnier et le blé, des légumineuses comme les pois et les lentilles, ainsi que des figues, des dattes et peut-être des caroubes. Pour les animaux, des restes de porcs, de chèvres, de moutons et de bovins ont été découverts. La domestication des ovins, des caprins, des porcs et peut-être des bovins a pu être la première étape vers la vie sédentaire, suivie de celle de quelques céréales et légumineuses. Les datations exactes varient selon les études ; Britannica indique que les premières preuves de culture et de domestication en Asie du Sud-Ouest remontent à environ 9 500 av. J.-C.',
+            'En Chine, deux grands centres sont distingués : au sud, le long du Yangzi Jiang, où l’on cultivait le riz, et au nord, le long du fleuve Jaune, où se développent la culture du millet et l’élevage de chiens, de porcs et de volailles. Pour l’Asie de l’Est, World History Encyclopedia situe le Néolithique entre 6 000 et 2 000 av. J.-C.',
+            'Dans les Amériques, la vallée d’Oaxaca, dans le sud du Mexique, est traditionnellement considérée comme le lieu où le maïs a été domestiqué à partir de son ancêtre sauvage, la téosinte ; les données archéologiques et moléculaires suggèrent une domestication il y a environ 9 000 ans. La pomme de terre aurait été domestiquée à partir de Solanum brevicaule dans le sud du Pérou il y a environ 7 000 ans. Ces estimations sont approximatives et peuvent être révisées par de nouvelles recherches.'
+          ],
+          example: {
+            statement: 'Selon World History Encyclopedia, le maïs aurait été domestiqué il y a environ 9 000 ans et la pomme de terre il y a environ 7 000 ans. Quel écart sépare ces deux repères ?',
+            calculation: 'On soustrait : 9 000 − 7 000 = 2 000.',
+            answer: 'Environ 2 000 ans séparent ces deux estimations, qui restent approximatives.'
+          },
+          exercise: {
+            question: 'Pourquoi dit-on que l’agriculture a été inventée de façon indépendante dans plusieurs régions ?',
+            answer: 'Parce que, dans chaque région, elle s’est développée à partir d’espèces locales différentes (orge et blé au Proche-Orient, riz et millet en Chine, maïs au Mexique, pomme de terre dans les Andes), sans dériver d’un centre unique.'
+          },
+          exercises: [
+            {
+              question: 'Quelles plantes sont associées au sud et au nord de la Chine néolithique ?',
+              answer: 'Le riz au sud, le long du Yangzi Jiang, et le millet au nord, le long du fleuve Jaune.'
+            },
+            {
+              question: 'Quelle plante sauvage est l’ancêtre du maïs ?',
+              answer: 'La téosinte ; la vallée d’Oaxaca, au Mexique, est traditionnellement considérée comme le lieu de cette domestication.'
+            },
+            {
+              question: 'Quels animaux dont les restes ont été retrouvés sont associés à l’élevage au Proche-Orient ?',
+              answer: 'Les porcs, les chèvres, les moutons et les bovins.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — First Agricultural Revolution', url: 'https://www.worldhistory.org/First_Agricultural_Revolution/' },
+            { title: 'World History Encyclopedia — Neolithic Period', url: 'https://www.worldhistory.org/Neolithic/' },
+            { title: 'Britannica — When did the Neolithic Period begin?', url: 'https://britannica.com/question/When-did-the-Neolithic-Period-begin' }
+          ]
+        }
+      },
+      {
+        id: 'jericho-gobekli-tepe',
+        title: 'Jéricho et Göbekli Tepe : premières architectures monumentales',
+        field: 'Néolithique · Levant et Anatolie · Xe – VIIIe millénaires av. J.-C.',
+        summary: 'Étudier deux sites du Néolithique précéramique : un établissement fortifié et des enceintes de piliers dressés par des chasseurs-cueilleurs.',
+        lesson: {
+          sections: [
+            'Tell es-Sultan, à environ 2 km au nord de la ville actuelle de Jéricho, est l’un des plus anciens habitats permanents connus. Des chasseurs-cueilleurs natoufiens y campaient vers 10 000 av. J.-C. ; selon l’UNESCO, aux IXe et VIIIe millénaires av. J.-C., le site néolithique était déjà un établissement permanent important, doté d’un mur accompagné d’un fossé et d’une tour. Le site, qui comprend la source voisine de ’Ain es-Sultan, est inscrit au patrimoine mondial sous le nom d’Ancient Jericho/Tell es-Sultan.',
+            'Vers 8 000 av. J.-C., Jéricho était entouré d’un mur de pierre d’environ 3,6 m de haut et 1,8 m de large. À l’intérieur se dressait une tour de pierre d’environ 8,5 m de haut et 9 m de large à la base, dotée d’un escalier intérieur de 22 marches. La fonction de ces ouvrages est discutée : protection contre les crues, défense, usage cérémoniel de la tour. World History Encyclopedia relève par ailleurs que, entre 9 600 et 6 900 av. J.-C., des squelettes portent des pointes de flèche fichées dans les os et que des sites comme Jéricho sont entourés d’un mur et d’un fossé : ces indices témoignent de conflits entre communautés, sans doute pas très éloignés d’une guerre organisée.',
+            'Göbekli Tepe, dans les monts Germuş du sud-est de l’Anatolie, abrite des structures mégalithiques monumentales, rondes-ovales et rectangulaires, érigées entre 9 600 et 8 200 av. J.-C. par des groupes de chasseurs-cueilleurs du Néolithique précéramique. Les piliers en forme de T sont gravés d’animaux sauvages. Selon l’UNESCO, ces monuments ont probablement servi à des rituels, sans doute de nature funéraire, et renseignent sur les croyances de populations de Haute Mésopotamie d’il y a environ 11 500 ans. Le site est inscrit au patrimoine mondial depuis 2018.',
+            'Ces deux sites montrent que construire des ouvrages monumentaux ne suppose pas toujours une économie agricole déjà installée : à Göbekli Tepe, ce sont des chasseurs-cueilleurs qui ont bâti. Certains ont parlé de « premiers temples du monde », mais les interprétations restent débattues et les recherches se poursuivent. Il faut donc distinguer ce que les vestiges établissent (la date, l’architecture, les motifs gravés) de ce qui relève de l’hypothèse (la fonction exacte des enceintes).'
+          ],
+          example: {
+            statement: 'L’UNESCO date les structures de Göbekli Tepe entre 9 600 et 8 200 av. J.-C. Quelle durée cette période représente-t-elle ?',
+            calculation: 'On soustrait : 9 600 − 8 200 = 1 400.',
+            answer: 'Les structures ont été édifiées sur environ 1 400 ans, ce qui montre un site utilisé et transformé pendant une très longue période.'
+          },
+          exercise: {
+            question: 'En quoi Göbekli Tepe remet-il en question l’idée que les monuments n’apparaissent qu’après l’agriculture ?',
+            answer: 'Parce que, d’après l’UNESCO, ses structures monumentales ont été érigées par des groupes de chasseurs-cueilleurs du Néolithique précéramique.'
+          },
+          exercises: [
+            {
+              question: 'Quels types d’images sont gravés sur les piliers en T de Göbekli Tepe ?',
+              answer: 'Des animaux sauvages, selon l’UNESCO.'
+            },
+            {
+              question: 'Quelles sont les dimensions approximatives du mur de Jéricho vers 8 000 av. J.-C. ?',
+              answer: 'Environ 3,6 m de haut et 1,8 m de large, selon World History Encyclopedia.'
+            },
+            {
+              question: 'Depuis quelle année Göbekli Tepe est-il inscrit au patrimoine mondial de l’UNESCO ?',
+              answer: 'Depuis 2018.'
+            }
+          ],
+          sources: [
+            { title: 'UNESCO — Göbekli Tepe', url: 'https://whc.unesco.org/en/list/1572' },
+            { title: 'UNESCO — Ancient Jericho/Tell es-Sultan', url: 'https://whc.unesco.org/en/list/1687' },
+            { title: 'World History Encyclopedia — Early Jericho', url: 'https://www.worldhistory.org/article/951/early-jericho/' },
+            { title: 'World History Encyclopedia — Neolithic Period', url: 'https://www.worldhistory.org/Neolithic/' }
+          ]
+        }
+      },
+      {
+        id: 'catalhoyuk',
+        title: 'Çatalhöyük : un village de maisons serrées',
+        field: 'Néolithique · Anatolie · VIIIe – VIe millénaires av. J.-C.',
+        summary: 'Observer un grand établissement néolithique d’Anatolie : son plan sans rues, ses décors, ses échanges et ce que révèlent les restes humains.',
+        lesson: {
+          sections: [
+            'Çatalhöyük, sur la plaine de Konya, dans le plateau d’Anatolie méridionale (Turquie), est formé de deux tells qui s’élèvent jusqu’à 20 m au-dessus de la plaine, sur un site de 37 ha. Le tertre oriental, le plus haut, comprend dix-huit niveaux d’occupation néolithique entre 7 400 et 6 200 av. J.-C. Le tertre occidental montre l’évolution des pratiques culturelles au Chalcolithique, de 6 200 à 5 200 av. J.-C. Le site est inscrit au patrimoine mondial depuis 2012.',
+            'Son trait le plus remarquable est un habitat sans rues : les maisons sont groupées dos à dos et l’on y accède par le toit. L’UNESCO souligne aussi la présence de peintures murales, de reliefs et de sculptures qui représentent le monde symbolique des habitants. Selon le ministère turc de la Culture et du Tourisme, les maisons étaient en briques crues et les morts pouvaient être enterrés sous les habitations, ce qui rattache la vie quotidienne aux pratiques rituelles et à la mémoire des défunts.',
+            'Le site a été découvert en 1958 et fouillé par l’archéologue britannique James Mellaart entre 1961 et 1965. Les habitants semblent avoir vécu de façon relativement égalitaire, car aucune maison aux caractéristiques distinctives (par exemple celle d’un roi ou d’un prêtre) n’a été trouvée jusqu’ici. Cette conclusion repose sur l’état actuel des fouilles et peut évoluer.',
+            'La bioarchéologie, qui étudie les restes humains, éclaire aussi la vie des habitants. Une étude publiée dans les PNAS en 2019 décrit à Çatalhöyük une hausse des maladies infectieuses liées à la densité de population et une forte baisse de la robustesse squelettique liée à l’activité. Ces observations s’inscrivent dans un schéma général où les premiers agriculteurs présentent souvent plus de pathologies squelettiques et dentaires que leurs ancêtres chasseurs-cueilleurs, avec des variations selon les régions.'
+          ],
+          example: {
+            statement: 'Le tertre oriental de Çatalhöyük compte dix-huit niveaux d’occupation néolithique entre 7 400 et 6 200 av. J.-C. Quelle durée moyenne correspond à un niveau ?',
+            calculation: 'Durée totale : 7 400 − 6 200 = 1 200 ans. Durée moyenne : 1 200 / 18 ≈ 67 ans.',
+            answer: 'Environ 67 ans par niveau en moyenne. Ce n’est qu’un ordre de grandeur : les niveaux n’ont pas forcément tous la même durée.'
+          },
+          exercise: {
+            question: 'Comment entrait-on dans une maison de Çatalhöyük ?',
+            answer: 'Par le toit : les maisons étaient serrées dos à dos, sans rues, et l’accès se faisait depuis les toits.'
+          },
+          exercises: [
+            {
+              question: 'Qui a dirigé les fouilles de Çatalhöyük entre 1961 et 1965 ?',
+              answer: 'L’archéologue britannique James Mellaart.'
+            },
+            {
+              question: 'Quelle différence l’UNESCO fait-il entre le tertre oriental et le tertre occidental ?',
+              answer: 'Le tertre oriental correspond à l’occupation néolithique (7 400 – 6 200 av. J.-C.), le tertre occidental à la période chalcolithique (6 200 – 5 200 av. J.-C.).'
+            },
+            {
+              question: 'Pourquoi dit-on que les habitants semblent avoir vécu de façon relativement égalitaire ?',
+              answer: 'Parce qu’aucune maison aux caractéristiques distinctives, comme celle d’un roi ou d’un prêtre, n’a été trouvée jusqu’ici ; c’est une conclusion provisoire.'
+            }
+          ],
+          sources: [
+            { title: 'UNESCO — Neolithic Site of Çatalhöyük', url: 'https://whc.unesco.org/en/list/1405' },
+            { title: 'Ministère turc de la Culture et du Tourisme — Çatalhöyük', url: 'https://www.ktb.gov.tr/EN-395420/catalhoyuk.html' },
+            { title: 'New World Encyclopedia — Catal Huyuk', url: 'https://www.newworldencyclopedia.org/entry/Catal_Huyuk' },
+            { title: 'PNAS (2019) — Bioarchaeology of Neolithic Çatalhöyük reveals fundamental transitions in health, mobility, and lifestyle in early farmers', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6601267' }
+          ]
+        }
+      },
+      {
+        id: 'techniques-poterie-echanges',
+        title: 'Pierre polie, poterie et échanges : les techniques néolithiques',
+        field: 'Néolithique · Techniques et échanges · plusieurs régions',
+        summary: 'Distinguer les techniques associées au Néolithique, rappeler que certaines (comme la poterie) sont plus anciennes, et comprendre le rôle des échanges.',
+        lesson: {
+          sections: [
+            'La pierre polie est l’un des marqueurs traditionnels du Néolithique : au lieu d’être seulement taillés, certains outils, comme les haches, sont façonnés puis polis. D’après World History Encyclopedia, des innovations dans les pointes de flèche apparaissent au Proche-Orient entre 9 600 et 6 900 av. J.-C., et d’autres innovations dans la fabrication des outils de pierre se répandent et sont adoptées par des groupes éloignés, ce qui est interprété comme la preuve de réseaux d’échanges et d’interactions culturelles importants. Plus tard, en Europe méditerranéenne, la culture cardiale se caractérise par un ensemble associant céramique, haches en pierre polie et espèces domestiquées.',
+            'La poterie n’est pas une invention propre au Néolithique. Dans la grotte de Xianrendong (province du Jiangxi, Chine), des fragments de céramique datés d’environ 20 000 à 19 000 ans avant le présent ont été produits par des chasseurs-cueilleurs mobiles pendant le dernier maximum glaciaire ; ils ont probablement servi à la cuisson et précèdent l’agriculture d’au moins dix millénaires (étude publiée dans Science en 2012). Au Japon aussi, la céramique précède l’agriculture, alors qu’au Proche-Orient l’agriculture est antérieure à la production de poterie.',
+            'L’agriculture entraîne de nouvelles techniques : défrichement des forêts, culture de céréales pouvant être stockées longtemps, puis charrues et systèmes d’irrigation. Les repères de la chronologie de World History Encyclopedia situent les premiers textiles de lin vers 6 500 av. J.-C., le début de l’irrigation et de l’agriculture « sérieuse » en Mésopotamie vers 5 000 av. J.-C., l’invention de la charrue vers 4 500 av. J.-C. et l’usage de la laine pour les textiles vers 4 000 av. J.-C. Ces dates sont approximatives et ne valent pas pour toutes les régions.',
+            'Les matières premières circulent sur de longues distances. La chronologie de World History Encyclopedia place vers 7 500 av. J.-C. le début du commerce à longue distance de l’obsidienne, un verre volcanique qui sert à fabriquer des outils tranchants. À Çatalhöyük, la présence d’obsidienne et d’autres matériaux atteste, selon le ministère turc de la Culture et du Tourisme, des réseaux d’échanges à longue distance.'
+          ],
+          example: {
+            statement: 'Les auteurs de l’étude de Xianrendong estiment que la poterie y précède l’agriculture d’au moins 10 000 ans. Elle date d’environ 20 000 ans avant le présent. Vers quand l’agriculture apparaît-elle au plus tôt dans cette région selon cette estimation ?',
+            calculation: 'On soustrait l’écart minimal à l’âge de la poterie : 20 000 − 10 000 = 10 000.',
+            answer: 'Pas avant environ 10 000 ans avant le présent : la poterie y précède de très loin l’agriculture.'
+          },
+          exercise: {
+            question: 'La poterie est-elle une invention du Néolithique ?',
+            answer: 'Pas uniquement : elle est attestée chez des chasseurs-cueilleurs mobiles en Chine il y a environ 20 000 ans (grotte de Xianrendong) et, au Japon, avant l’agriculture.'
+          },
+          exercises: [
+            {
+              question: 'Pourquoi la présence d’obsidienne loin de son lieu d’origine intéresse-t-elle les archéologues ?',
+              answer: 'Parce que ce verre volcanique ne se trouve qu’à certains endroits : sa présence ailleurs témoigne de déplacements ou d’échanges.'
+            },
+            {
+              question: 'Que devient l’usure des dents à Abu Hureyra après l’introduction de la poterie ?',
+              answer: 'Elle diminue, mais les dents abîmées deviennent plus fréquentes, ce qui suggère le remplacement d’aliments à base de farine moulue par des plats bouillis.'
+            },
+            {
+              question: 'Que contient l’ensemble caractéristique de la culture cardiale, d’après l’étude de 2015 ?',
+              answer: 'Une céramique distinctive, des haches en pierre polie et des espèces domestiquées.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Neolithic Period', url: 'https://www.worldhistory.org/Neolithic/' },
+            { title: 'Science (2012) — Early Pottery at 20,000 Years Ago in Xianrendong Cave, China', url: 'https://ui.adsabs.harvard.edu/abs/2012Sci...336.1696W/abstract' },
+            { title: 'Ministère turc de la Culture et du Tourisme — Çatalhöyük', url: 'https://www.ktb.gov.tr/EN-395420/catalhoyuk.html' },
+            { title: 'Molecular Biology and Evolution (2015) — A Common Genetic Origin for Early Farmers from Mediterranean Cardial and Central European LBK Cultures', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4652622' }
+          ]
+        }
+      },
+      {
+        id: 'neolithique-europe',
+        title: 'La diffusion du Néolithique en Europe',
+        field: 'Néolithique · Europe · VIIe – IVe millénaires av. J.-C.',
+        summary: 'Retracer l’arrivée de l’agriculture en Europe : chronologie, routes danubienne et méditerranéenne, et apport de l’ADN ancien.',
+        lesson: {
+          sections: [
+            'L’agriculture n’arrive pas en Europe d’un seul coup. D’après World History Encyclopedia, elle se développe vers 7 000 av. J.-C. dans le sud-est de l’Europe, vers 5 500 av. J.-C. en Europe centrale et vers 4 000 av. J.-C. en Europe du Nord. Une étude d’ADN ancien publiée en 2010 a montré que les premiers agriculteurs d’Europe centrale, de culture rubanée (Linearbandkeramik, LBK, datée de 5 500 à 4 900 av. J.-C. calibrés), présentaient une affinité avec les populations actuelles du Proche-Orient et de l’Anatolie, ce qui indique un apport génétique majeur de cette région.',
+            'Les premiers agriculteurs se sont d’abord installés dans la péninsule balkanique, où se développe la culture Starčevo–Kőrös–Criş. À partir de là, la diffusion a suivi deux grandes routes : une expansion représentée par les traditions Impressa puis cardiale, le long du littoral nord de la Méditerranée, et une autre représentée par la culture rubanée (LBK), le long du Danube vers l’Europe centrale. L’expansion méditerranéenne commence vers 5 900 av. J.-C. Selon une étude de 2015, les peuples cardiaux et rubanés descendent d’une population ancestrale commune située dans la péninsule balkanique ou autour d’elle.',
+            'La céramique cardiale doit son nom au décor imprimé réalisé avec le bord dentelé de coquillages (coques). Le génome d’une femme de la grotte de Cova Bonica, près de Barcelone, datée d’environ 7 400 ans, a été séquencé : il se regroupe avec ceux des autres premiers agriculteurs européens connus. Il porte aussi une signature génétique de chasseurs-cueilleurs qui ne semble pas provenir d’un mélange avec les chasseurs-cueilleurs ibériques locaux.',
+            'Ces travaux reposent sur un nombre limité d’échantillons (un jeu de données de 42 individus rubanés pour l’étude de 2010, six individus ibériques pour celle de 2015) : ils éclairent des régions précises et ne décrivent pas à eux seuls tout le continent. Dans le nord-ouest de l’Europe, les traces néolithiques sont parfois exceptionnellement bien conservées : World History Encyclopedia date de 3807 – 3806 av. J.-C. la construction du Sweet Track, chemin de bois du Somerset, et de 3300 – 2600 av. J.-C. l’occupation du village de Barnhouse, aux Orcades.'
+          ],
+          example: {
+            statement: 'Selon World History Encyclopedia, l’agriculture apparaît vers 5 500 av. J.-C. en Europe centrale et vers 4 000 av. J.-C. en Europe du Nord. Quel délai sépare ces deux repères ?',
+            calculation: 'On soustrait : 5 500 − 4 000 = 1 500.',
+            answer: 'Environ 1 500 ans séparent ces deux repères : la diffusion de l’agriculture en Europe s’étale sur plusieurs millénaires.'
+          },
+          exercise: {
+            question: 'Quelles sont les deux grandes routes de diffusion de l’agriculture depuis les Balkans ?',
+            answer: 'Une route méditerranéenne (traditions Impressa et cardiale, le long du littoral nord de la Méditerranée) et une route danubienne (culture rubanée, LBK, vers l’Europe centrale).'
+          },
+          exercises: [
+            {
+              question: 'Pourquoi la céramique cardiale porte-t-elle ce nom ?',
+              answer: 'Parce que son décor est imprimé avec le bord dentelé de coquillages (coques).'
+            },
+            {
+              question: 'Que révèle l’ADN ancien des agriculteurs de la culture rubanée ?',
+              answer: 'Une affinité avec les populations actuelles du Proche-Orient et de l’Anatolie, donc un apport génétique majeur venu de cette région.'
+            },
+            {
+              question: 'Le Néolithique commence-t-il partout en Europe au même moment ?',
+              answer: 'Non : vers 7 000 av. J.-C. au sud-est, vers 5 500 av. J.-C. au centre et vers 4 000 av. J.-C. au nord, d’après World History Encyclopedia.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Neolithic Period', url: 'https://www.worldhistory.org/Neolithic/' },
+            { title: 'PLoS Biology (2010) — Ancient DNA from European Early Neolithic Farmers Reveals Their Near Eastern Affinities', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2976717' },
+            { title: 'Molecular Biology and Evolution (2015) — A Common Genetic Origin for Early Farmers from Mediterranean Cardial and Central European LBK Cultures', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4652622' }
+          ]
+        }
+      },
+      {
+        id: 'megalithes-villages',
+        title: 'Mégalithes et villages : Carnac, Stonehenge et les Orcades',
+        field: 'Néolithique · Europe de l’Ouest · Ve – IIIe millénaires av. J.-C.',
+        summary: 'Découvrir trois grands ensembles néolithiques d’Europe occidentale, leurs dates approximatives et les limites de leur interprétation.',
+        lesson: {
+          sections: [
+            'Le terme mégalithe désigne un monument de grandes pierres (du grec megas, « grand », et lithos, « pierre »). World History Encyclopedia compte l’architecture mégalithique parmi les traits marquants du Néolithique. Elle prend la forme de tombes, d’alignements, de cercles de pierres ou d’enceintes. Göbekli Tepe, plus ancien, montre déjà que des groupes de chasseurs-cueilleurs du Néolithique précéramique dressaient de grands piliers.',
+            'En Bretagne, entre la presqu’île de Quiberon et le golfe du Morbihan, les mégalithes de Carnac et des rives du Morbihan forment un ensemble de quatre éléments, inscrit au patrimoine mondial en 2025. L’UNESCO y voit des structures érigées successivement pendant plus de deux millénaires, d’environ 5 000 à 2 300 av. J.-C., en relation avec le relief et l’hydrographie. Selon l’AFP, l’ensemble couvre environ 1 000 km² et compte plus de 550 monuments ; l’origine et la fonction des alignements de menhirs (« longues pierres » en breton) restent mystérieuses.',
+            'Dans le Wiltshire (Angleterre), Stonehenge, Avebury et leurs sites associés, inscrits en 1986, illustrent environ 2 000 ans d’usage continu et de construction de monuments entre environ 3 700 et 1 600 av. J.-C., du Néolithique ancien à l’âge du bronze. World History Encyclopedia place vers 3 100 av. J.-C. la première phase de Stonehenge (une enceinte de terre), vers 3 000 av. J.-C. le creusement des trous d’Aubrey et vers 2 550 av. J.-C. la transformation en monument de pierre. L’UNESCO précise que la finalité de ce monument remarquablement construit reste obscure.',
+            'Aux Orcades (Écosse), le Cœur du Néolithique des Orcades réunit quatre monuments : la tombe à chambres de Maeshowe, deux cercles de pierres cérémoniels (les pierres de Stenness et l’anneau de Brodgar) et le village de Skara Brae. L’UNESCO y voit le témoignage d’une tradition culturelle qui s’épanouit entre environ 3 000 et 2 000 av. J.-C., et juge l’état de conservation de Skara Brae sans équivalent parmi les sites d’habitat néolithiques du nord de l’Europe. D’après World History Encyclopedia, Skara Brae est occupé vers 3 100 av. J.-C. puis abandonné vers 2 500 av. J.-C. pour des raisons inconnues ; il est mis au jour par une tempête en 1850.'
+          ],
+          example: {
+            statement: 'L’UNESCO date les mégalithes de Carnac et du Morbihan d’environ 5 000 à 2 300 av. J.-C. Quelle durée cette période représente-t-elle ?',
+            calculation: 'On soustrait : 5 000 − 2 300 = 2 700.',
+            answer: 'Environ 2 700 ans, soit plus de deux millénaires, ce qui correspond à la formule de l’UNESCO sur des monuments érigés successivement.'
+          },
+          exercise: {
+            question: 'Quels sont les quatre monuments du Cœur du Néolithique des Orcades ?',
+            answer: 'La tombe à chambres de Maeshowe, les pierres de Stenness, l’anneau de Brodgar et le village de Skara Brae.'
+          },
+          exercises: [
+            {
+              question: 'Que signifie le mot « menhir » en breton, selon l’AFP ?',
+              answer: '« Longue pierre ».'
+            },
+            {
+              question: 'En quelle année Stonehenge, Avebury et leurs sites associés ont-ils été inscrits au patrimoine mondial ?',
+              answer: 'En 1986.'
+            },
+            {
+              question: 'Pourquoi Skara Brae est-il exceptionnel selon l’UNESCO ?',
+              answer: 'Son état de conservation est sans équivalent parmi les sites d’habitat néolithiques du nord de l’Europe.'
+            }
+          ],
+          sources: [
+            { title: 'UNESCO — Megaliths of Carnac and of the Shores of Morbihan', url: 'https://whc.unesco.org/en/list/1725' },
+            { title: 'UNESCO — Stonehenge, Avebury and Associated Sites', url: 'https://whc.unesco.org/en/list/373' },
+            { title: 'UNESCO — Heart of Neolithic Orkney', url: 'https://whc.unesco.org/en/list/514' },
+            { title: 'AFP / The Local — French prehistoric site makes UNESCO world heritage list', url: 'https://www.thelocal.fr/20250712/french-prehistoric-site-makes-unesco-world-heritage-list' },
+            { title: 'World History Encyclopedia — Neolithic Period', url: 'https://www.worldhistory.org/Neolithic/' }
+          ]
+        }
+      },
+      {
+        id: 'societes-sante-fin',
+        title: 'Sociétés, santé et fin du Néolithique',
+        field: 'Néolithique · Sociétés et transition · Ve – IIe millénaires av. J.-C. selon les régions',
+        summary: 'Examiner les conséquences sociales et sanitaires de la sédentarisation, puis la transition vers la métallurgie du cuivre et l’âge du bronze.',
+        lesson: {
+          sections: [
+            'Vivre dans des villages permanents change l’organisation sociale. D’après World History Encyclopedia, qui s’appuie sur des travaux d’anthropologie, plus un groupe est nombreux, moins il est égalitaire et plus il est hiérarchisé ; l’importance de ceux qui gèrent et répartissent les ressources alimentaires augmente. Une agriculture plus intensive permet de nourrir davantage de personnes et favorise l’apparition de villages plus nombreux, puis d’une organisation sociale et politique plus complexe. Les situations varient toutefois : Çatalhöyük semble avoir été relativement égalitaire selon les observations actuelles.',
+            'Les chercheurs parlent de « transition démographique néolithique » pour désigner l’augmentation de la population qui accompagne l’agriculture. Elle a aussi des conséquences sur la santé. Selon l’étude des PNAS sur Çatalhöyük, le bilan bioarchéologique de nombreuses régions montre un schéma général de pathologies squelettiques et dentaires plus fréquentes chez les premiers agriculteurs que chez leurs ancêtres chasseurs-cueilleurs, avec par exemple davantage d’infections.',
+            'Ce schéma n’est pourtant pas universel. Une étude sur le Levant sud montre, entre le Natoufien et le Néolithique, des effets différents selon le sexe (l’âge moyen au décès diminue chez les femmes et augmente chez les hommes), aucun changement majeur de la santé dentaire, mais une nette augmentation des maladies infectieuses dans la seconde partie du Néolithique précéramique. Il faut donc éviter les généralisations : la santé des premiers agriculteurs dépend du lieu, de l’époque et du régime alimentaire.',
+            'Vers la fin du Néolithique, la métallurgie du cuivre est introduite, ce qui marque une période de transition vers l’âge du bronze, parfois appelée Chalcolithique ou Énéolithique. Le bronze, mélange de cuivre et d’étain, est plus dur que le cuivre, se coule mieux et fond à une température plus basse. Il permet de fabriquer des armes, ce que le cuivre seul ne permet pas, car il n’est pas assez dur. Avec le temps, le bronze devient le matériau principal des outils et des armes, une grande partie de la technologie de la pierre devient obsolète et la fin du Néolithique est atteinte. Les dates varient : l’âge du bronze commence vers 2 000 av. J.-C. en Europe du Nord, alors que le tertre occidental de Çatalhöyük illustre une phase chalcolithique dès 6 200 – 5 200 av. J.-C.'
+          ],
+          example: {
+            statement: 'Selon World History Encyclopedia, l’agriculture apparaît vers 4 000 av. J.-C. en Europe du Nord et l’âge du bronze y commence vers 2 000 av. J.-C. Quel ordre de grandeur donne la durée du Néolithique dans cette région ?',
+            calculation: 'On soustrait : 4 000 − 2 000 = 2 000.',
+            answer: 'Environ 2 000 ans. C’est un ordre de grandeur, car les dates de début et de fin sont approximatives et varient selon les sites.'
+          },
+          exercise: {
+            question: 'Pourquoi le bronze remplace-t-il peu à peu la pierre ?',
+            answer: 'Parce que le bronze, mélange de cuivre et d’étain, est plus dur que le cuivre, se coule mieux et fond à une température plus basse ; il permet notamment de fabriquer des armes.'
+          },
+          exercises: [
+            {
+              question: 'Que désigne le terme Chalcolithique ?',
+              answer: 'Une période de transition marquée par la métallurgie du cuivre entre le Néolithique et l’âge du bronze, aussi appelée Énéolithique.'
+            },
+            {
+              question: 'La santé des premiers agriculteurs se dégrade-t-elle partout ?',
+              answer: 'Non : de nombreuses études montrent davantage de pathologies, mais les résultats varient ; dans le Levant sud, la santé dentaire ne change pas de façon majeure alors que les maladies infectieuses augmentent plus tard.'
+            },
+            {
+              question: 'Pourquoi un groupe plus nombreux est-il en général plus hiérarchisé, selon World History Encyclopedia ?',
+              answer: 'Parce que, d’après les travaux d’anthropologie cités, plus le groupe est grand, moins il est égalitaire ; ceux qui gèrent et répartissent les ressources alimentaires gagnent en importance.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — Neolithic Period', url: 'https://www.worldhistory.org/Neolithic/' },
+            { title: 'PNAS (2019) — Bioarchaeology of Neolithic Çatalhöyük reveals fundamental transitions in health, mobility, and lifestyle in early farmers', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6601267' },
+            { title: 'Demographic, biological and cultural aspects of the Neolithic revolution: a view from the southern Levant', url: 'https://cris.tau.ac.il/en/publications/demographic-biological-and-cultural-aspects-of-the-neolithic-revo/' },
+            { title: 'UNESCO — Neolithic Site of Çatalhöyük', url: 'https://whc.unesco.org/en/list/1405' }
+          ]
+        }
+      }
+    ]
+  },
 
 ];
