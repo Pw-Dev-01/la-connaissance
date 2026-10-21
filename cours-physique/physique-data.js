@@ -1,4 +1,4 @@
-window.courseCatalog = [
+﻿window.courseCatalog = [
   {
     id: 'mecanique',
     title: 'Mécanique',
@@ -3881,1667 +3881,1339 @@ window.courseCatalog = [
       }
     ]
   },
-﻿{
-  id: 'equations-physique',
-  sortYear: 1619,
-  title: 'Les grandes équations de la physique',
-  note: 'Repères historiques présentent des équations majeures de la mécanique, des fluides, de l’électricité, de la chaleur, de l’électromagnétisme et de la physique quantique. Les dates indiquent la publication ou la formulation généralement associée à chaque résultat. Les équations sont accompagnées de leurs conditions d’application, de la définition de leurs paramètres et d’exemples corrigés.',
-  chapters: [
-    {
-      id: 'loi-kepler',
-      title: 'La troisième loi de Kepler : période et orbite',
-      field: 'Astronomie · Mécanique céleste · 1619',
-      summary: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
-      lesson: {
-
-        sections: [
-          'Auteur : Johannes Kepler (1571–1630). Sa troisième loi est publiée en 1619 dans Harmonices Mundi. Elle complète ses travaux antérieurs sur les orbites planétaires et établit une relation mathématique entre la période orbitale et la taille de l’orbite.',
-
-
-          'Équation : T² / a³ = constante. Cette forme comparative s’applique aux corps orbitant autour du même astre central lorsque la masse de cet astre domine. T représente la période orbitale, c’est-à-dire la durée nécessaire pour accomplir une révolution, et a le demi-grand axe de l’orbite elliptique.',
-
-
-          'Dans le modèle newtonien à deux corps, la relation plus générale est T² = 4π²a³ / [G(M + m)]. M et m représentent les masses des deux corps et G la constante gravitationnelle. Lorsque m est négligeable devant M, cette relation se simplifie en T² ≈ 4π²a³ / (GM). La constante de proportionnalité dépend donc de la masse de l’astre central.'
-        ],
-            formula: {
-            label: 'Troisième loi de Kepler’',
-            text: 'k = T² / a³',
-
-parameters: [
-          {
-            symbol: "T",
-            label: "Période orbitale",
-            unit: "s"
+  {
+    id: 'equations-physique',
+    sortYear: 1619,
+    title: 'Les grandes équations de la physique',
+    note: 'Dix repères historiques présentent des équations majeures de la mécanique, des fluides, de l’électricité, de la chaleur, de l’électromagnétisme et de la physique quantique. Les dates indiquent la publication ou la formulation généralement associée à chaque résultat. Les équations sont accompagnées de leurs conditions d’application, de la définition de leurs paramètres et d’exemples corrigés.',
+    chapters: [
+      {
+        id: 'loi-kepler',
+        title: 'La troisième loi de Kepler : période et orbite',
+        field: 'Astronomie · Mécanique céleste · 1619',
+        summary: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
+        lesson: {
+          sections: [
+            'Auteur : Johannes Kepler (1571–1630). Sa troisième loi est publiée en 1619 dans Harmonices Mundi. Elle complète ses travaux antérieurs sur les orbites planétaires et établit une relation mathématique entre la période orbitale et la taille de l’orbite.',
+            'Équation : T² / a³ = constante. Cette forme comparative s’applique aux corps orbitant autour du même astre central lorsque la masse de cet astre domine. T représente la période orbitale, c’est-à-dire la durée nécessaire pour accomplir une révolution, et a le demi-grand axe de l’orbite elliptique.',
+            'Dans le modèle newtonien à deux corps, la relation plus générale est T² = 4π²a³ / [G(M + m)]. M et m représentent les masses des deux corps et G la constante gravitationnelle. Lorsque m est négligeable devant M, cette relation se simplifie en T² ≈ 4π²a³ / (GM). La constante de proportionnalité dépend donc de la masse de l’astre central.'
+          ],
+          formula: {
+            label: 'TROISIÈME LOI DE KEPLER',
+            text: 'T² / a³ = constante',
+            mathML: 'kepler-third-law'
           },
-          {
-            symbol: "a",
-            label: "Demi-grand axe de l’orbite elliptique",
-            unit: "m"
+          example: {
+            statement: 'Deux planètes orbitent autour du Soleil. Le demi-grand axe de la seconde orbite est 4 fois celui de la première. Quel est le rapport de leurs périodes orbitales ?',
+            calculation: 'T₂² / T₁² = a₂³ / a₁³ = 4³ = 64. Donc T₂ / T₁ = √64 = 8.',
+            answer: 'La période orbitale de la seconde planète est 8 fois celle de la première, dans les conditions d’application de la loi.'
           },
-          {
-            symbol: "constante",
-            label: "Rapport T² / a³ (dépend de la masse de l’astre central : 4π² / (G × M))",
-            unit: "s²/m³"
-          }
-        ]
+          exercise: {
+            question: 'Que relie la troisième loi de Kepler ?',
+            answer: 'Elle relie le carré de la période orbitale au cube du demi-grand axe de l’orbite.'
           },
-
-        example: {
-          statement: 'Deux planètes orbitent autour du Soleil. Le demi-grand axe de la seconde orbite est 4 fois celui de la première. Quel est le rapport de leurs périodes orbitales ?',
-          calculation: 'T₂² / T₁² = a₂³ / a₁³ = 4³ = 64. Donc T₂ / T₁ = √64 = 8.',
-          answer: 'La période orbitale de la seconde planète est 8 fois celle de la première, dans les conditions d’application de la loi.'
-        },
-        exercise: {
-          question: 'Que relie la troisième loi de Kepler ?',
-          answer: 'Elle relie le carré de la période orbitale au cube du demi-grand axe de l’orbite.'
-        },
-        exercises: [
-          {
-            question: 'Qui a publié cette loi et en quelle année ?',
-            answer: 'Johannes Kepler, en 1619.'
-          },
-          {
-            question: 'Que représente T ?',
-            answer: 'La période nécessaire pour effectuer une révolution orbitale.'
-          },
-          {
-            question: 'La constante T² / a³ est-elle identique pour des planètes orbitant autour d’étoiles de masses différentes ?',
-            answer: 'Non. Dans le modèle newtonien, elle dépend de la masse de l’astre central.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Kepler’s Laws of Planetary Motion',
-            url: 'https://openstax.org/books/university-physics-volume-1/pages/13-5-keplers-laws-of-planetary-motion'
-          },
-          {
-            title: 'Encyclopaedia Britannica — Kepler’s Laws of Planetary Motion',
-            url: 'https://www.britannica.com/science/Keplers-laws-of-planetary-motion'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'gravitation-newton',
-      title: 'La loi de la gravitation universelle',
-      formula: "F = G × m1 × m2 / r²",
-      equationDetails: {
-        label: "Loi de gravitation universelle",
-        formula: "F = G × m1 × m2 / r²",
-        parameters: [
-          {
-            symbol: "F",
-            label: "Force gravitationnelle",
-            unit: "N"
-          },
-          {
-            symbol: "G",
-            label: "Constante gravitationnelle",
-            unit: "N·m²/kg²"
-          },
-          {
-            symbol: "m1 et m2",
-            label: "Masses des deux corps",
-            unit: "kg"
-          },
-          {
-            symbol: "r",
-            label: "Distance entre les centres des deux corps",
-            unit: "m"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Qui a publié cette loi et en quelle année ?',
+              answer: 'Johannes Kepler, en 1619.'
+            },
+            {
+              question: 'Que représente T ?',
+              answer: 'La période nécessaire pour effectuer une révolution orbitale.'
+            },
+            {
+              question: 'La constante T² / a³ est-elle identique pour des planètes orbitant autour d’étoiles de masses différentes ?',
+              answer: 'Non. Dans le modèle newtonien, elle dépend de la masse de l’astre central.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Troisième loi de Kepler',
+              formula: 'T² / a³ = constante',
+              explanation: 'La troisième loi de Kepler relie la durée d’une révolution orbitale à la taille de l’orbite. Elle décrit les régularités observées dans le mouvement des planètes avant que Newton ne fournisse une théorie gravitationnelle capable de les expliquer.',
+              parameters: 'T : période orbitale (s) ; a : demi-grand axe de l’orbite elliptique (m) ; constante : rapport T² / a³ (dépend de la masse de l’astre central : 4π² / (G × M)) (s²·m⁻³).',
+              example: 'Deux planètes orbitent autour du Soleil. Le demi-grand axe de la seconde orbite est 4 fois celui de la première : T₂² / T₁² = a₂³ / a₁³ = 4³ = 64. Donc T₂ / T₁ = √64 = 8.',
+              result: 'La période orbitale de la seconde planète est 8 fois celle de la première, dans les conditions d’application de la loi.',
+              mathML: 'kepler-third-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Kepler’s Laws of Planetary Motion',
+              url: 'https://openstax.org/books/university-physics-volume-1/pages/13-5-keplers-laws-of-planetary-motion'
+            },
+            {
+              title: 'Encyclopaedia Britannica — Kepler’s Laws of Planetary Motion',
+              url: 'https://www.britannica.com/science/Keplers-laws-of-planetary-motion'
+            }
+          ]
+        }
       },
-      field: 'Mécanique classique · Gravitation · 1687',
-      summary: 'Newton unifie dans une même loi l’attraction entre les corps terrestres et le mouvement des astres. La gravitation intervient dans la chute des objets, les orbites planétaires, les mouvements des satellites et de nombreux phénomènes astronomiques.',
-      lesson: {
-        sections: [
-          'Auteur : Isaac Newton (1642–1727 selon le calendrier julien alors utilisé en Angleterre ; 1643–1727 selon le calendrier grégorien). La loi est présentée dans les Principia, publiés en 1687. Elle constitue une étape majeure de la mécanique classique.',
-
-
-          'Équation : F = G m₁ m₂ / r². F représente la valeur de la force gravitationnelle entre deux corps, G la constante gravitationnelle, m₁ et m₂ leurs masses et r la distance entre leurs centres dans le modèle de masses ponctuelles. La force est attractive et agit selon la droite qui relie les deux corps.',
-
-
-          'Près de la surface d’un astre sphérique, on utilise également g ≈ GM / R². Dans cette expression, g est l’accélération gravitationnelle, M la masse de l’astre et R la distance entre son centre et le point considéré, approximativement égale à son rayon à la surface. Cette expression ne doit pas être confondue avec la formule de la force universelle.'
-        ],
-        example: {
-          statement: 'La distance entre deux corps est multipliée par 2, tandis que leurs masses restent constantes. Comment évolue la force gravitationnelle ?',
-          calculation: 'La force varie comme 1 / r². Le nouveau rapport est F₂ / F₁ = 1 / 2² = 1/4.',
-          answer: 'La force gravitationnelle devient 4 fois plus faible.'
-        },
-        exercise: {
-          question: 'Quelle différence existe entre F = G m₁ m₂ / r² et g ≈ GM / R² ?',
-          answer: 'La première formule donne la force gravitationnelle entre deux masses. La seconde donne l’accélération gravitationnelle produite par un astre dans l’approximation considérée.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année les Principia de Newton sont-ils publiés ?',
-            answer: 'En 1687.'
+      {
+        id: 'gravitation-newton',
+        title: 'La loi de la gravitation universelle',
+        field: 'Mécanique classique · Gravitation · 1687',
+        summary: 'Newton unifie dans une même loi l’attraction entre les corps terrestres et le mouvement des astres. La gravitation intervient dans la chute des objets, les orbites planétaires, les mouvements des satellites et de nombreux phénomènes astronomiques.',
+        lesson: {
+          sections: [
+            'Auteur : Isaac Newton (1642–1727 selon le calendrier julien alors utilisé en Angleterre ; 1643–1727 selon le calendrier grégorien). La loi est présentée dans les Principia, publiés en 1687. Elle constitue une étape majeure de la mécanique classique.',
+            'Équation : F = G m₁ m₂ / r². F représente la valeur de la force gravitationnelle entre deux corps, G la constante gravitationnelle, m₁ et m₂ leurs masses et r la distance entre leurs centres dans le modèle de masses ponctuelles. La force est attractive et agit selon la droite qui relie les deux corps.',
+            'Près de la surface d’un astre sphérique, on utilise également g ≈ GM / R². Dans cette expression, g est l’accélération gravitationnelle, M la masse de l’astre et R la distance entre son centre et le point considéré, approximativement égale à son rayon à la surface. Cette expression ne doit pas être confondue avec la formule de la force universelle.'
+          ],
+          formula: {
+            label: 'LOI DE GRAVITATION UNIVERSELLE',
+            text: 'F = G × m₁ × m₂ / r²',
+            mathML: 'universal-gravitation'
           },
-          {
-            question: 'Que représente G ?',
-            answer: 'La constante gravitationnelle universelle.'
+          example: {
+            statement: 'La distance entre deux corps est multipliée par 2, tandis que leurs masses restent constantes. Comment évolue la force gravitationnelle ?',
+            calculation: 'La force varie comme 1 / r². Le nouveau rapport est F₂ / F₁ = 1 / 2² = 1/4.',
+            answer: 'La force gravitationnelle devient 4 fois plus faible.'
           },
-          {
-            question: 'Si une des masses double et que la distance reste constante, que devient la force ?',
-            answer: 'La force double.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Newton’s Law of Universal Gravitation',
-            url: 'https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation'
+          exercise: {
+            question: 'Quelle différence existe entre F = G m₁ m₂ / r² et g ≈ GM / R² ?',
+            answer: 'La première formule donne la force gravitationnelle entre deux masses. La seconde donne l’accélération gravitationnelle produite par un astre dans l’approximation considérée.'
           },
-          {
-            title: 'OpenStax — Gravitation Near Earth’s Surface',
-            url: 'https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface'
-          },
-          {
-            title: 'Encyclopaedia Britannica — Isaac Newton',
-            url: 'https://www.britannica.com/biography/Isaac-Newton'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'bernoulli-fluides',
-      title: 'L’équation de Bernoulli',
-      formula: "p + ½ × ρ × v² + ρ × g × h = constante",
-      equationDetails: {
-        label: "Équation de Bernoulli",
-        formula: "p + ½ × ρ × v² + ρ × g × h = constante",
-        parameters: [
-          {
-            symbol: "p",
-            label: "Pression statique du fluide",
-            unit: "Pa"
-          },
-          {
-            symbol: "ρ",
-            label: "Masse volumique du fluide",
-            unit: "kg/m³"
-          },
-          {
-            symbol: "v",
-            label: "Vitesse du fluide",
-            unit: "m/s"
-          },
-          {
-            symbol: "g",
-            label: "Accélération gravitationnelle",
-            unit: "m/s²"
-          },
-          {
-            symbol: "h",
-            label: "Altitude par rapport à un niveau de référence",
-            unit: "m"
-          },
-          {
-            symbol: "constante",
-            label: "Valeur conservée le long d’une ligne de courant",
-            unit: "Pa"
-          }
-        ]
+          exercises: [
+            {
+              question: 'En quelle année les Principia de Newton sont-ils publiés ?',
+              answer: 'En 1687.'
+            },
+            {
+              question: 'Que représente G ?',
+              answer: 'La constante gravitationnelle universelle.'
+            },
+            {
+              question: 'Si une des masses double et que la distance reste constante, que devient la force ?',
+              answer: 'La force double.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi de gravitation universelle',
+              formula: 'F = G × m₁ × m₂ / r²',
+              explanation: 'Newton unifie dans une même loi l’attraction entre les corps terrestres et le mouvement des astres. La gravitation intervient dans la chute des objets, les orbites planétaires, les mouvements des satellites et de nombreux phénomènes astronomiques.',
+              parameters: 'F : force gravitationnelle (N) ; G : constante gravitationnelle (N·m²·kg⁻²) ; m₁ et m₂ : masses des deux corps (kg) ; r : distance entre les centres des deux corps (m).',
+              example: 'La distance entre deux corps est multipliée par 2, tandis que leurs masses restent constantes : la force varie comme 1 / r². Le nouveau rapport est F₂ / F₁ = 1 / 2² = 1/4.',
+              result: 'La force gravitationnelle devient 4 fois plus faible.',
+              mathML: 'universal-gravitation'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Newton’s Law of Universal Gravitation',
+              url: 'https://openstax.org/books/university-physics-volume-1/pages/13-1-newtons-law-of-universal-gravitation'
+            },
+            {
+              title: 'OpenStax — Gravitation Near Earth’s Surface',
+              url: 'https://openstax.org/books/university-physics-volume-1/pages/13-2-gravitation-near-earths-surface'
+            },
+            {
+              title: 'Encyclopaedia Britannica — Isaac Newton',
+              url: 'https://www.britannica.com/biography/Isaac-Newton'
+            }
+          ]
+        }
       },
-      field: 'Mécanique des fluides · 1738',
-      summary: 'L’équation de Bernoulli exprime une conservation de l’énergie mécanique le long d’une ligne de courant dans un écoulement idéal. Elle permet de comprendre les relations entre pression, vitesse et hauteur dans de nombreux problèmes de mécanique des fluides.',
-      lesson: {
-        sections: [
-          'Auteur : Daniel Bernoulli (1700–1782). Ses travaux sur les fluides sont exposés dans Hydrodynamica, publié en 1738. L’équation associée à son nom est devenue un outil classique pour analyser les écoulements.',
-
-
-          'Équation : p + ½ρv² + ρgh = constante. p représente la pression du fluide, ρ sa masse volumique, v sa vitesse, g l’accélération gravitationnelle et h son altitude par rapport à un niveau de référence.',
-
-
-          'Les trois termes correspondent respectivement à la pression, à l’énergie cinétique par unité de volume et à l’énergie potentielle gravitationnelle par unité de volume. La forme simple suppose notamment un écoulement stationnaire, un fluide incompressible et des pertes visqueuses négligeables. Elle ne doit donc pas être appliquée sans précautions aux écoulements fortement dissipatifs.'
-        ],
-        example: {
-          statement: 'Dans un écoulement horizontal idéal, la vitesse du fluide augmente entre deux points. Comment évolue la pression statique ?',
-          calculation: 'La hauteur ne change pas, donc le terme ρgh reste constant. Si la masse volumique reste constante, une augmentation de ½ρv² correspond à une diminution de p.',
-          answer: 'La pression statique diminue dans les conditions d’application de l’équation de Bernoulli.'
-        },
-        exercise: {
-          question: 'Que représente le terme ½ρv² ?',
-          answer: 'L’énergie cinétique du fluide par unité de volume.'
-        },
-        exercises: [
-          {
-            question: 'Qui est l’auteur associé à cette équation ?',
-            answer: 'Daniel Bernoulli.'
+      {
+        id: 'bernoulli-fluides',
+        title: 'L’équation de Bernoulli',
+        field: 'Mécanique des fluides · 1738',
+        summary: 'L’équation de Bernoulli exprime une conservation de l’énergie mécanique le long d’une ligne de courant dans un écoulement idéal. Elle permet de comprendre les relations entre pression, vitesse et hauteur dans de nombreux problèmes de mécanique des fluides.',
+        lesson: {
+          sections: [
+            'Auteur : Daniel Bernoulli (1700–1782). Ses travaux sur les fluides sont exposés dans Hydrodynamica, publié en 1738. L’équation associée à son nom est devenue un outil classique pour analyser les écoulements.',
+            'Équation : p + ½ρv² + ρgh = constante. p représente la pression du fluide, ρ sa masse volumique, v sa vitesse, g l’accélération gravitationnelle et h son altitude par rapport à un niveau de référence.',
+            'Les trois termes correspondent respectivement à la pression, à l’énergie cinétique par unité de volume et à l’énergie potentielle gravitationnelle par unité de volume. La forme simple suppose notamment un écoulement stationnaire, un fluide incompressible et des pertes visqueuses négligeables. Elle ne doit donc pas être appliquée sans précautions aux écoulements fortement dissipatifs.'
+          ],
+          formula: {
+            label: 'ÉQUATION DE BERNOULLI',
+            text: 'p + ½ × ρ × v² + ρ × g × h = constante',
+            mathML: 'bernoulli-equation'
           },
-          {
-            question: 'Que représente ρ ?',
-            answer: 'La masse volumique du fluide.'
+          example: {
+            statement: 'Dans un écoulement horizontal idéal, la vitesse du fluide augmente entre deux points. Comment évolue la pression statique ?',
+            calculation: 'La hauteur ne change pas, donc le terme ρgh reste constant. Si la masse volumique reste constante, une augmentation de ½ρv² correspond à une diminution de p.',
+            answer: 'La pression statique diminue dans les conditions d’application de l’équation de Bernoulli.'
           },
-          {
-            question: 'La forme simple de l’équation tient-elle compte des pertes visqueuses ?',
-            answer: 'Non. Ces pertes sont négligées dans le modèle idéal.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Bernoulli’s Equation',
-            url: 'https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation'
+          exercise: {
+            question: 'Que représente le terme ½ρv² ?',
+            answer: 'L’énergie cinétique du fluide par unité de volume.'
           },
-          {
-            title: 'Encyclopaedia Britannica — Daniel Bernoulli',
-            url: 'https://www.britannica.com/biography/Daniel-Bernoulli'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'coulomb-electricite',
-      title: 'La loi de Coulomb',
-      formula: "F = kₑ × |q1 × q2| / r²",
-      equationDetails: {
-        label: "Loi de Coulomb",
-        formula: "F = kₑ × |q1 × q2| / r²",
-        parameters: [
-          {
-            symbol: "F",
-            label: "Valeur de la force électrostatique",
-            unit: "N"
-          },
-          {
-            symbol: "kₑ",
-            label: "Constante de Coulomb (kₑ = 1 / (4π × ε₀) dans le vide)",
-            unit: "N·m²/C²"
-          },
-          {
-            symbol: "q1 et q2",
-            label: "Charges électriques ponctuelles",
-            unit: "C"
-          },
-          {
-            symbol: "r",
-            label: "Distance entre les deux charges",
-            unit: "m"
-          },
-          {
-            symbol: "ε₀",
-            label: "Permittivité électrique du vide",
-            unit: "F/m"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Qui est l’auteur associé à cette équation ?',
+              answer: 'Daniel Bernoulli.'
+            },
+            {
+              question: 'Que représente ρ ?',
+              answer: 'La masse volumique du fluide.'
+            },
+            {
+              question: 'La forme simple de l’équation tient-elle compte des pertes visqueuses ?',
+              answer: 'Non. Ces pertes sont négligées dans le modèle idéal.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Équation de Bernoulli',
+              formula: 'p + ½ × ρ × v² + ρ × g × h = constante',
+              explanation: 'L’équation de Bernoulli exprime une conservation de l’énergie mécanique le long d’une ligne de courant dans un écoulement idéal. Elle permet de comprendre les relations entre pression, vitesse et hauteur dans de nombreux problèmes de mécanique des fluides.',
+              parameters: 'p : pression statique du fluide (Pa) ; ρ : masse volumique du fluide (kg·m⁻³) ; v : vitesse du fluide (m·s⁻¹) ; g : accélération gravitationnelle (m·s⁻²) ; h : altitude par rapport à un niveau de référence (m) ; constante : valeur conservée le long d’une ligne de courant (Pa).',
+              example: 'Dans un écoulement horizontal idéal, la vitesse du fluide augmente entre deux points : la hauteur ne change pas, donc le terme ρgh reste constant. Si la masse volumique reste constante, une augmentation de ½ρv² correspond à une diminution de p.',
+              result: 'La pression statique diminue dans les conditions d’application de l’équation de Bernoulli.',
+              mathML: 'bernoulli-equation'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Bernoulli’s Equation',
+              url: 'https://openstax.org/books/university-physics-volume-1/pages/14-6-bernoullis-equation'
+            },
+            {
+              title: 'Encyclopaedia Britannica — Daniel Bernoulli',
+              url: 'https://www.britannica.com/biography/Daniel-Bernoulli'
+            }
+          ]
+        }
       },
-      field: 'Électrostatique · 1785',
-      summary: 'La loi de Coulomb quantifie l’interaction électrostatique entre des charges électriques immobiles. Elle montre que l’intensité de la force dépend du produit des charges et diminue avec le carré de leur distance.',
-      lesson: {
-        sections: [
-          'Auteur : Charles-Augustin de Coulomb (1736–1806). Ses recherches expérimentales sur l’attraction et la répulsion électriques sont publiées dans les années 1780, notamment en 1785. Elles contribuent à établir une description quantitative de l’électrostatique.',
-
-
-          'Équation : F = kₑ |q₁q₂| / r², avec kₑ = 1 / (4πε₀) dans le vide. F est la valeur de la force, q₁ et q₂ les charges électriques, r la distance entre elles et ε₀ la permittivité électrique du vide.',
-
-
-          'Des charges de même signe se repoussent, tandis que des charges de signes opposés s’attirent. La formule présentée donne la valeur de la force entre deux charges ponctuelles. Dans un matériau, les propriétés électriques du milieu doivent également être prises en compte.'
-        ],
-        example: {
-          statement: 'La distance entre deux charges ponctuelles est multipliée par 3, sans modification des charges. Comment évolue la force électrostatique ?',
-          calculation: 'F₂ / F₁ = 1 / 3² = 1/9.',
-          answer: 'La force électrostatique devient 9 fois plus faible.'
-        },
-        exercise: {
-          question: 'Comment déterminer si la force électrostatique est attractive ou répulsive ?',
-          answer: 'Elle est répulsive pour deux charges de même signe et attractive pour deux charges de signes opposés.'
-        },
-        exercises: [
-          {
-            question: 'Que représente ε₀ ?',
-            answer: 'La permittivité électrique du vide.'
+      {
+        id: 'coulomb-electricite',
+        title: 'La loi de Coulomb',
+        field: 'Électrostatique · 1785',
+        summary: 'La loi de Coulomb quantifie l’interaction électrostatique entre des charges électriques immobiles. Elle montre que l’intensité de la force dépend du produit des charges et diminue avec le carré de leur distance.',
+        lesson: {
+          sections: [
+            'Auteur : Charles-Augustin de Coulomb (1736–1806). Ses recherches expérimentales sur l’attraction et la répulsion électriques sont publiées dans les années 1780, notamment en 1785. Elles contribuent à établir une description quantitative de l’électrostatique.',
+            'Équation : F = kₑ |q₁q₂| / r², avec kₑ = 1 / (4πε₀) dans le vide. F est la valeur de la force, q₁ et q₂ les charges électriques, r la distance entre elles et ε₀ la permittivité électrique du vide.',
+            'Des charges de même signe se repoussent, tandis que des charges de signes opposés s’attirent. La formule présentée donne la valeur de la force entre deux charges ponctuelles. Dans un matériau, les propriétés électriques du milieu doivent également être prises en compte.'
+          ],
+          formula: {
+            label: 'LOI DE COULOMB',
+            text: 'F = kₑ × |q₁ × q₂| / r²',
+            mathML: 'coulomb-law'
           },
-          {
-            question: 'Comment varie la force avec la distance ?',
-            answer: 'Elle est inversement proportionnelle au carré de la distance.'
+          example: {
+            statement: 'La distance entre deux charges ponctuelles est multipliée par 3, sans modification des charges. Comment évolue la force électrostatique ?',
+            calculation: 'F₂ / F₁ = 1 / 3² = 1/9.',
+            answer: 'La force électrostatique devient 9 fois plus faible.'
           },
-          {
-            question: 'La formule présentée décrit-elle directement les interactions magnétiques entre charges en mouvement ?',
-            answer: 'Non. Elle décrit l’interaction électrostatique entre des charges immobiles.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Coulomb’s Law',
-            url: 'https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law'
+          exercise: {
+            question: 'Comment déterminer si la force électrostatique est attractive ou répulsive ?',
+            answer: 'Elle est répulsive pour deux charges de même signe et attractive pour deux charges de signes opposés.'
           },
-          {
-            title: 'Encyclopaedia Britannica — Charles-Augustin de Coulomb',
-            url: 'https://www.britannica.com/biography/Charles-Augustin-de-Coulomb'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'fourier-chaleur',
-      title: 'La loi de Fourier de la conduction thermique',
-      formula: "q = −k × ∇T",
-      equationDetails: {
-        label: "Loi de Fourier de la conduction thermique",
-        formula: "q = −k × ∇T",
-        parameters: [
-          {
-            symbol: "q",
-            label: "Vecteur flux thermique par unité de surface",
-            unit: "W/m²"
-          },
-          {
-            symbol: "k",
-            label: "Conductivité thermique du matériau",
-            unit: "W/(m·K)"
-          },
-          {
-            symbol: "∇T",
-            label: "Gradient spatial de température",
-            unit: "K/m"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Que représente ε₀ ?',
+              answer: 'La permittivité électrique du vide.'
+            },
+            {
+              question: 'Comment varie la force avec la distance ?',
+              answer: 'Elle est inversement proportionnelle au carré de la distance.'
+            },
+            {
+              question: 'La formule présentée décrit-elle directement les interactions magnétiques entre charges en mouvement ?',
+              answer: 'Non. Elle décrit l’interaction électrostatique entre des charges immobiles.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi de Coulomb',
+              formula: 'F = kₑ × |q₁ × q₂| / r²',
+              explanation: 'La loi de Coulomb quantifie l’interaction électrostatique entre des charges électriques immobiles. Elle montre que l’intensité de la force dépend du produit des charges et diminue avec le carré de leur distance.',
+              parameters: 'F : valeur de la force électrostatique (N) ; kₑ : constante de Coulomb (kₑ = 1 / (4π × ε₀) dans le vide) (N·m²·C⁻²) ; q₁ et q₂ : charges électriques ponctuelles (C) ; r : distance entre les deux charges (m) ; ε₀ : permittivité électrique du vide (F·m⁻¹).',
+              example: 'La distance entre deux charges ponctuelles est multipliée par 3, sans modification des charges : F₂ / F₁ = 1 / 3² = 1/9.',
+              result: 'La force électrostatique devient 9 fois plus faible.',
+              mathML: 'coulomb-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Coulomb’s Law',
+              url: 'https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law'
+            },
+            {
+              title: 'Encyclopaedia Britannica — Charles-Augustin de Coulomb',
+              url: 'https://www.britannica.com/biography/Charles-Augustin-de-Coulomb'
+            }
+          ]
+        }
       },
-      field: 'Thermodynamique · Transfert thermique · 1822',
-      summary: 'La loi de Fourier décrit le transfert thermique par conduction en reliant le flux de chaleur au gradient de température. Elle joue un rôle essentiel dans l’étude des matériaux, des isolants, des échangeurs thermiques et de la diffusion de chaleur.',
-      lesson: {
-        sections: [
-          'Auteur : Joseph Fourier (1768–1830). Son ouvrage Théorie analytique de la chaleur paraît en 1822 et développe une approche mathématique systématique de la conduction et de la diffusion thermique.',
-
-
-          'Équation vectorielle : q = −k∇T. q est le vecteur flux thermique par unité de surface, k la conductivité thermique du matériau et ∇T le gradient spatial de température. Le signe négatif indique que le flux est dirigé vers les températures plus basses.',
-
-
-          'Dans une dimension, la relation s’écrit qₓ = −k dT/dx. Pour un matériau homogène et isotrope, k est une propriété du matériau dont la valeur dépend notamment de la température. Lorsque le flux est uniforme et perpendiculaire à une surface A, la puissance thermique transférée peut s’écrire P = qA en utilisant q comme valeur du flux.'
-        ],
-        example: {
-          statement: 'Dans une paroi, la température augmente lorsque x augmente. Dans quelle direction est orienté le flux thermique selon la loi de Fourier ?',
-          calculation: 'Si dT/dx est positif et k positif, alors qₓ = −k dT/dx est négatif.',
-          answer: 'Le flux thermique est orienté vers les x décroissants, donc vers la région plus froide.'
-        },
-        exercise: {
-          question: 'Pourquoi la loi de Fourier comporte-t-elle un signe négatif ?',
-          answer: 'Parce que le transfert thermique par conduction se produit dans la direction opposée au gradient de température.'
-        },
-        exercises: [
-          {
-            question: 'Qui est l’auteur associé à cette loi ?',
-            answer: 'Joseph Fourier.'
+      {
+        id: 'fourier-chaleur',
+        title: 'La loi de Fourier de la conduction thermique',
+        field: 'Thermodynamique · Transfert thermique · 1822',
+        summary: 'La loi de Fourier décrit le transfert thermique par conduction en reliant le flux de chaleur au gradient de température. Elle joue un rôle essentiel dans l’étude des matériaux, des isolants, des échangeurs thermiques et de la diffusion de chaleur.',
+        lesson: {
+          sections: [
+            'Auteur : Joseph Fourier (1768–1830). Son ouvrage Théorie analytique de la chaleur paraît en 1822 et développe une approche mathématique systématique de la conduction et de la diffusion thermique.',
+            'Équation vectorielle : q = −k∇T. q est le vecteur flux thermique par unité de surface, k la conductivité thermique du matériau et ∇T le gradient spatial de température. Le signe négatif indique que le flux est dirigé vers les températures plus basses.',
+            'Dans une dimension, la relation s’écrit qₓ = −k dT/dx. Pour un matériau homogène et isotrope, k est une propriété du matériau dont la valeur dépend notamment de la température. Lorsque le flux est uniforme et perpendiculaire à une surface A, la puissance thermique transférée peut s’écrire P = qA en utilisant q comme valeur du flux.'
+          ],
+          formula: {
+            label: 'LOI DE FOURIER DE LA CONDUCTION THERMIQUE',
+            text: 'q = −k × ∇T',
+            mathML: 'fourier-law'
           },
-          {
-            question: 'Quelle est l’unité SI de la conductivité thermique ?',
-            answer: 'Le watt par mètre-kelvin, noté W·m⁻¹·K⁻¹.'
+          example: {
+            statement: 'Dans une paroi, la température augmente lorsque x augmente. Dans quelle direction est orienté le flux thermique selon la loi de Fourier ?',
+            calculation: 'Si dT/dx est positif et k positif, alors qₓ = −k dT/dx est négatif.',
+            answer: 'Le flux thermique est orienté vers les x décroissants, donc vers la région plus froide.'
           },
-          {
-            question: 'Que prédit la loi si la température est uniforme dans l’espace ?',
-            answer: 'Le gradient de température est nul et le flux conductif prédit par cette loi est nul.'
-          }
-        ],
-        sources: [
-          {
-            title: 'Encyclopaedia Britannica — Joseph Fourier',
-            url: 'https://www.britannica.com/biography/Joseph-Baron-Fourier'
+          exercise: {
+            question: 'Pourquoi la loi de Fourier comporte-t-elle un signe négatif ?',
+            answer: 'Parce que le transfert thermique par conduction se produit dans la direction opposée au gradient de température.'
           },
-          {
-            title: 'OpenStax — Heat Transfer Methods',
-            url: 'https://openstax.org/books/college-physics-2e/pages/14-7-heat-transfer-methods'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'ohm-circuit',
-      title: 'La loi d’Ohm',
-      formula: "V = R × I",
-      equationDetails: {
-        label: "Loi d’Ohm",
-        formula: "V = R × I",
-        parameters: [
-          {
-            symbol: "V",
-            label: "Tension électrique aux bornes du composant",
-            unit: "V"
-          },
-          {
-            symbol: "R",
-            label: "Résistance électrique",
-            unit: "Ω"
-          },
-          {
-            symbol: "I",
-            label: "Intensité du courant électrique",
-            unit: "A"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Qui est l’auteur associé à cette loi ?',
+              answer: 'Joseph Fourier.'
+            },
+            {
+              question: 'Quelle est l’unité SI de la conductivité thermique ?',
+              answer: 'Le watt par mètre-kelvin, noté W·m⁻¹·K⁻¹.'
+            },
+            {
+              question: 'Que prédit la loi si la température est uniforme dans l’espace ?',
+              answer: 'Le gradient de température est nul et le flux conductif prédit par cette loi est nul.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi de Fourier de la conduction thermique',
+              formula: 'q = −k × ∇T',
+              explanation: 'La loi de Fourier décrit le transfert thermique par conduction en reliant le flux de chaleur au gradient de température. Elle joue un rôle essentiel dans l’étude des matériaux, des isolants, des échangeurs thermiques et de la diffusion de chaleur.',
+              parameters: 'q : vecteur flux thermique par unité de surface (W·m⁻²) ; k : conductivité thermique du matériau (W·m⁻¹·K⁻¹) ; ∇T : gradient spatial de température (K·m⁻¹).',
+              example: 'Dans une paroi, la température augmente lorsque x augmente : si dT/dx est positif et k positif, alors qₓ = −k dT/dx est négatif.',
+              result: 'Le flux thermique est orienté vers les x décroissants, donc vers la région plus froide.',
+              mathML: 'fourier-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'Encyclopaedia Britannica — Joseph Fourier',
+              url: 'https://www.britannica.com/biography/Joseph-Baron-Fourier'
+            },
+            {
+              title: 'OpenStax — Heat Transfer Methods',
+              url: 'https://openstax.org/books/college-physics-2e/pages/14-7-heat-transfer-methods'
+            }
+          ]
+        }
       },
-      field: 'Électricité · Circuits électriques · 1827',
-      summary: 'La loi d’Ohm relie la tension électrique, l’intensité du courant et la résistance d’un conducteur ohmique. Elle constitue une base de l’analyse des circuits électriques, à condition de vérifier que le composant suit effectivement cette relation.',
-      lesson: {
-        sections: [
-          'Auteur : Georg Simon Ohm (1789–1854). Il publie ses recherches dans Die galvanische Kette, mathematisch bearbeitet en 1827. Ses travaux établissent une relation quantitative entre courant, tension et résistance.',
-
-
-          'Équation : V = IR. V est la tension électrique aux bornes du composant, I l’intensité du courant qui le traverse et R sa résistance électrique. La tension s’exprime en volts, le courant en ampères et la résistance en ohms.',
-
-
-          'Pour un conducteur ohmique dont les conditions physiques restent constantes, le rapport V/I est constant. La relation peut être réarrangée sous les formes I = V/R et R = V/I. Tous les composants ne sont pas ohmiques : une diode ou une lampe à filament, par exemple, peut avoir une caractéristique électrique non linéaire.'
-        ],
-        example: {
-          statement: 'Une résistance de 6 Ω est soumise à une tension de 12 V. Quelle intensité la traverse ?',
-          calculation: 'I = V/R = 12/6 = 2 A.',
-          answer: 'L’intensité du courant vaut 2 A, en supposant que la résistance reste ohmique dans ces conditions.'
-        },
-        exercise: {
-          question: 'Quelle formule permet de calculer le courant à partir de la tension et de la résistance ?',
-          answer: 'I = V/R.'
-        },
-        exercises: [
-          {
-            question: 'Quelle est l’unité de la résistance électrique ?',
-            answer: 'L’ohm, symbole Ω.'
+      {
+        id: 'ohm-circuit',
+        title: 'La loi d’Ohm',
+        field: 'Électricité · Circuits électriques · 1827',
+        summary: 'La loi d’Ohm relie la tension électrique, l’intensité du courant et la résistance d’un conducteur ohmique. Elle constitue une base de l’analyse des circuits électriques, à condition de vérifier que le composant suit effectivement cette relation.',
+        lesson: {
+          sections: [
+            'Auteur : Georg Simon Ohm (1789–1854). Il publie ses recherches dans Die galvanische Kette, mathematisch bearbeitet en 1827. Ses travaux établissent une relation quantitative entre courant, tension et résistance.',
+            'Équation : V = IR. V est la tension électrique aux bornes du composant, I l’intensité du courant qui le traverse et R sa résistance électrique. La tension s’exprime en volts, le courant en ampères et la résistance en ohms.',
+            'Pour un conducteur ohmique dont les conditions physiques restent constantes, le rapport V/I est constant. La relation peut être réarrangée sous les formes I = V/R et R = V/I. Tous les composants ne sont pas ohmiques : une diode ou une lampe à filament, par exemple, peut avoir une caractéristique électrique non linéaire.'
+          ],
+          formula: {
+            label: 'LOI D’OHM',
+            text: 'V = R × I',
+            mathML: 'ohm-law'
           },
-          {
-            question: 'Si la tension double et que la résistance reste constante, comment évolue le courant ?',
-            answer: 'Le courant double.'
+          example: {
+            statement: 'Une résistance de 6 Ω est soumise à une tension de 12 V. Quelle intensité la traverse ?',
+            calculation: 'I = V/R = 12/6 = 2 A.',
+            answer: 'L’intensité du courant vaut 2 A, en supposant que la résistance reste ohmique dans ces conditions.'
           },
-          {
-            question: 'Tous les composants électriques suivent-ils la loi d’Ohm ?',
-            answer: 'Non. La relation s’applique aux composants ohmiques dans les conditions où leur résistance reste constante.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Ohm’s Law',
-            url: 'https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law'
+          exercise: {
+            question: 'Quelle formule permet de calculer le courant à partir de la tension et de la résistance ?',
+            answer: 'I = V/R.'
           },
-          {
-            title: 'Encyclopaedia Britannica — Georg Simon Ohm',
-            url: 'https://www.britannica.com/biography/Georg-Simon-Ohm'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'maxwell-electromagnetisme',
-      title: 'Les équations de Maxwell',
-      formula: "∮E·dA = Qint / ε₀ ; ∮B·dA = 0 ; ∮E·dl = −dΦB/dt ; ∮B·dl = μ₀ × Iint + μ₀ × ε₀ × dΦE/dt",
-      equationDetails: {
-        label: "Équations de Maxwell (forme intégrale, dans le vide)",
-        formula: "∮E·dA = Qint / ε₀ ; ∮B·dA = 0 ; ∮E·dl = −dΦB/dt ; ∮B·dl = μ₀ × Iint + μ₀ × ε₀ × dΦE/dt",
-        parameters: [
-          {
-            symbol: "E",
-            label: "Champ électrique",
-            unit: "V/m"
-          },
-          {
-            symbol: "B",
-            label: "Champ magnétique",
-            unit: "T"
-          },
-          {
-            symbol: "dA",
-            label: "Élément de surface orienté d’une surface fermée ou délimitée par un contour",
-            unit: "m²"
-          },
-          {
-            symbol: "dl",
-            label: "Élément de longueur orienté du contour",
-            unit: "m"
-          },
-          {
-            symbol: "Qint",
-            label: "Charge électrique enfermée par la surface fermée",
-            unit: "C"
-          },
-          {
-            symbol: "Iint",
-            label: "Courant traversant la surface délimitée par le contour",
-            unit: "A"
-          },
-          {
-            symbol: "ΦB",
-            label: "Flux magnétique",
-            unit: "Wb"
-          },
-          {
-            symbol: "ΦE",
-            label: "Flux électrique",
-            unit: "V·m"
-          },
-          {
-            symbol: "ε₀",
-            label: "Permittivité électrique du vide",
-            unit: "F/m"
-          },
-          {
-            symbol: "μ₀",
-            label: "Perméabilité magnétique du vide",
-            unit: "H/m"
-          },
-          {
-            symbol: "t",
-            label: "Temps",
-            unit: "s"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Quelle est l’unité de la résistance électrique ?',
+              answer: 'L’ohm, symbole Ω.'
+            },
+            {
+              question: 'Si la tension double et que la résistance reste constante, comment évolue le courant ?',
+              answer: 'Le courant double.'
+            },
+            {
+              question: 'Tous les composants électriques suivent-ils la loi d’Ohm ?',
+              answer: 'Non. La relation s’applique aux composants ohmiques dans les conditions où leur résistance reste constante.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi d’Ohm',
+              formula: 'V = R × I',
+              explanation: 'La loi d’Ohm relie la tension électrique, l’intensité du courant et la résistance d’un conducteur ohmique. Elle constitue une base de l’analyse des circuits électriques, à condition de vérifier que le composant suit effectivement cette relation.',
+              parameters: 'V : tension électrique aux bornes du composant (V) ; R : résistance électrique (Ω) ; I : intensité du courant électrique (A).',
+              example: 'Une résistance de 6 Ω est soumise à une tension de 12 V : I = V/R = 12/6 = 2 A.',
+              result: 'L’intensité du courant vaut 2 A, en supposant que la résistance reste ohmique dans ces conditions.',
+              mathML: 'ohm-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Ohm’s Law',
+              url: 'https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law'
+            },
+            {
+              title: 'Encyclopaedia Britannica — Georg Simon Ohm',
+              url: 'https://www.britannica.com/biography/Georg-Simon-Ohm'
+            }
+          ]
+        }
       },
-      field: 'Électromagnétisme · 1865',
-      summary: 'Les équations de Maxwell réunissent les lois fondamentales des champs électriques et magnétiques. Elles décrivent les relations entre charges, courants, champs variables et induction électromagnétique, et permettent de comprendre la propagation des ondes électromagnétiques.',
-      lesson: {
-        sections: [
-          'Auteur : James Clerk Maxwell (1831–1879). Il développe sa théorie électromagnétique dans les années 1860. Son traité A Treatise on Electricity and Magnetism paraît en 1873. La présentation moderne des équations diffère de la formulation historique de Maxwell.',
-
-
-          'Dans le vide, une forme intégrale SI des quatre équations est la suivante : ∮E·dA = Qint/ε₀ ; ∮B·dA = 0 ; ∮E·dl = −dΦB/dt ; ∮B·dl = μ₀Iint + μ₀ε₀ dΦE/dt. Ces relations correspondent respectivement à la loi de Gauss électrique, à la loi de Gauss magnétique, à la loi de Faraday et à la loi d’Ampère-Maxwell.',
-
-
-          'E représente le champ électrique, B le champ magnétique, Qint la charge enfermée par une surface fermée, ΦB le flux magnétique, ΦE le flux électrique et Iint le courant traversant la surface choisie. ε₀ est la permittivité du vide et μ₀ sa perméabilité. Les intégrales et les flux doivent être interprétés avec les conventions d’orientation appropriées.'
-        ],
-        example: {
-          statement: 'Que signifie le terme −dΦB/dt dans la loi de Faraday ?',
-          calculation: 'Il représente l’opposé du taux de variation temporelle du flux magnétique à travers une surface délimitée par le contour considéré.',
-          answer: 'Une variation du flux magnétique induit un champ électrique circulant. Le signe négatif exprime la loi de Lenz avec la convention d’orientation choisie.'
-        },
-        exercise: {
-          question: 'Quelle idée centrale exprime la loi de Faraday ?',
-          answer: 'Une variation temporelle du flux magnétique est associée à un champ électrique induit.'
-        },
-        exercises: [
-          {
-            question: 'Combien d’équations composent la présentation classique des équations de Maxwell ?',
-            answer: 'Quatre équations.'
+      {
+        id: 'maxwell-electromagnetisme',
+        title: 'Les équations de Maxwell',
+        field: 'Électromagnétisme · 1865',
+        summary: 'Les équations de Maxwell réunissent les lois fondamentales des champs électriques et magnétiques. Elles décrivent les relations entre charges, courants, champs variables et induction électromagnétique, et permettent de comprendre la propagation des ondes électromagnétiques.',
+        lesson: {
+          sections: [
+            'Auteur : James Clerk Maxwell (1831–1879). Il développe sa théorie électromagnétique dans les années 1860. Son traité A Treatise on Electricity and Magnetism paraît en 1873. La présentation moderne des équations diffère de la formulation historique de Maxwell.',
+            'Dans le vide, une forme intégrale SI des quatre équations est la suivante : ∮E·dA = Qint/ε₀ ; ∮B·dA = 0 ; ∮E·dl = −dΦB/dt ; ∮B·dl = μ₀Iint + μ₀ε₀ dΦE/dt. Ces relations correspondent respectivement à la loi de Gauss électrique, à la loi de Gauss magnétique, à la loi de Faraday et à la loi d’Ampère-Maxwell.',
+            'E représente le champ électrique, B le champ magnétique, Qint la charge enfermée par une surface fermée, ΦB le flux magnétique, ΦE le flux électrique et Iint le courant traversant la surface choisie. ε₀ est la permittivité du vide et μ₀ sa perméabilité. Les intégrales et les flux doivent être interprétés avec les conventions d’orientation appropriées.'
+          ],
+          formula: {
+            label: 'ÉQUATIONS DE MAXWELL (FORME INTÉGRALE, DANS LE VIDE)',
+            text: '∮E·dA = Qint / ε₀  ;  ∮B·dA = 0  ;  ∮E·dl = −dΦB/dt  ;  ∮B·dl = μ₀ Iint + μ₀ ε₀ dΦE/dt',
+            mathML: 'maxwell-equations'
           },
-          {
-            question: 'Que dit la loi de Gauss magnétique pour une surface fermée ?',
-            answer: 'Le flux magnétique net à travers toute surface fermée est nul.'
+          example: {
+            statement: 'Que signifie le terme −dΦB/dt dans la loi de Faraday ?',
+            calculation: 'Il représente l’opposé du taux de variation temporelle du flux magnétique à travers une surface délimitée par le contour considéré.',
+            answer: 'Une variation du flux magnétique induit un champ électrique circulant. Le signe négatif exprime la loi de Lenz avec la convention d’orientation choisie.'
           },
-          {
-            question: 'Quel ajout Maxwell a-t-il introduit dans la loi d’Ampère ?',
-            answer: 'Un terme associé à la variation temporelle du flux électrique, appelé terme de courant de déplacement dans cette formulation.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Maxwell’s Equations and Electromagnetic Waves',
-            url: 'https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves'
+          exercise: {
+            question: 'Quelle idée centrale exprime la loi de Faraday ?',
+            answer: 'Une variation temporelle du flux magnétique est associée à un champ électrique induit.'
           },
-          {
-            title: 'OpenStax — Key Equations, Electromagnetism',
-            url: 'https://openstax.org/books/university-physics-volume-2/pages/16-key-equations'
-          },
-          {
-            title: 'Encyclopaedia Britannica — James Clerk Maxwell',
-            url: 'https://www.britannica.com/biography/James-Clerk-Maxwell'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'planck-quantification',
-      title: 'La relation de Planck : énergie d’un photon',
-      formula: "E = h × ν",
-      equationDetails: {
-        label: "Relation de Planck",
-        formula: "E = h × ν",
-        parameters: [
-          {
-            symbol: "E",
-            label: "Énergie du photon",
-            unit: "J"
-          },
-          {
-            symbol: "h",
-            label: "Constante de Planck",
-            unit: "J·s"
-          },
-          {
-            symbol: "ν",
-            label: "Fréquence du rayonnement",
-            unit: "Hz"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Combien d’équations composent la présentation classique des équations de Maxwell ?',
+              answer: 'Quatre équations.'
+            },
+            {
+              question: 'Que dit la loi de Gauss magnétique pour une surface fermée ?',
+              answer: 'Le flux magnétique net à travers toute surface fermée est nul.'
+            },
+            {
+              question: 'Quel ajout Maxwell a-t-il introduit dans la loi d’Ampère ?',
+              answer: 'Un terme associé à la variation temporelle du flux électrique, appelé terme de courant de déplacement dans cette formulation.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi de Gauss électrique',
+              formula: '∮E·dA = Qint / ε₀',
+              explanation: 'Le flux du champ électrique à travers une surface fermée est proportionnel à la charge électrique enfermée par cette surface.',
+              parameters: 'E : champ électrique (V·m⁻¹) ; dA : élément de surface orienté d’une surface fermée ou délimitée par un contour (m²) ; Qint : charge électrique enfermée par la surface fermée (C) ; ε₀ : permittivité électrique du vide (F·m⁻¹).',
+              example: 'Une surface fermée enferme une charge Qint = 8,85 × 10⁻¹² C : ∮E·dA = Qint / ε₀ = 8,85 × 10⁻¹² / 8,85 × 10⁻¹².',
+              result: 'Le flux électrique à travers la surface vaut 1 V·m.',
+              mathML: 'maxwell-gauss-electric'
+            },
+            {
+              title: 'Loi de Gauss magnétique',
+              formula: '∮B·dA = 0',
+              explanation: 'Le flux du champ magnétique à travers toute surface fermée est nul : il n’existe pas de charge magnétique isolée connue.',
+              parameters: 'B : champ magnétique (T) ; dA : élément de surface orienté d’une surface fermée ou délimitée par un contour (m²).',
+              example: 'Un aimant est entouré d’une surface fermée : le flux sortant est compensé par le flux entrant.',
+              result: '∮B·dA = 0, quelle que soit la surface fermée choisie.',
+              mathML: 'maxwell-gauss-magnetic'
+            },
+            {
+              title: 'Loi de Faraday',
+              formula: '∮E·dl = −dΦB/dt',
+              explanation: 'Une variation temporelle du flux magnétique est associée à un champ électrique induit qui circule le long du contour. Le signe négatif exprime la loi de Lenz.',
+              parameters: 'E : champ électrique (V·m⁻¹) ; dl : élément de longueur orienté du contour (m) ; ΦB : flux magnétique (Wb) ; t : temps (s).',
+              example: 'Le flux magnétique à travers une boucle décroît de 0,10 Wb en 0,5 s : dΦB/dt = −0,10/0,5 = −0,20 Wb·s⁻¹.',
+              result: '∮E·dl = +0,20 V (avec la convention d’orientation choisie).',
+              mathML: 'maxwell-faraday'
+            },
+            {
+              title: 'Loi d’Ampère-Maxwell',
+              formula: '∮B·dl = μ₀ Iint + μ₀ ε₀ dΦE/dt',
+              explanation: 'La circulation du champ magnétique le long d’un contour est liée au courant qui traverse la surface et à la variation temporelle du flux électrique, terme ajouté par Maxwell.',
+              parameters: 'B : champ magnétique (T) ; dl : élément de longueur orienté du contour (m) ; Iint : courant traversant la surface délimitée par le contour (A) ; ΦE : flux électrique (V·m) ; ε₀ : permittivité électrique du vide (F·m⁻¹) ; μ₀ : perméabilité magnétique du vide (H·m⁻¹) ; t : temps (s).',
+              example: 'Un fil rectiligne est parcouru par Iint = 10 A et le flux électrique est constant : ∮B·dl = μ₀ Iint = 4π × 10⁻⁷ × 10.',
+              result: 'La circulation de B vaut environ 1,26 × 10⁻⁵ T·m.',
+              mathML: 'maxwell-ampere'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Maxwell’s Equations and Electromagnetic Waves',
+              url: 'https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves'
+            },
+            {
+              title: 'OpenStax — Key Equations, Electromagnetism',
+              url: 'https://openstax.org/books/university-physics-volume-2/pages/16-key-equations'
+            },
+            {
+              title: 'Encyclopaedia Britannica — James Clerk Maxwell',
+              url: 'https://www.britannica.com/biography/James-Clerk-Maxwell'
+            }
+          ]
+        }
       },
-      field: 'Physique quantique · 1900',
-      summary: 'La relation de Planck associe l’énergie d’un photon à la fréquence de son rayonnement. Elle constitue un repère fondamental de la physique quantique et permet de comprendre pourquoi les rayonnements de fréquences différentes transportent des quanta d’énergie différents.',
-      lesson: {
-        sections: [
-          'Auteur : Max Planck (1858–1947). En 1900, il introduit la quantification de l’énergie dans son étude du rayonnement du corps noir. La relation E = hν est aujourd’hui utilisée pour exprimer l’énergie d’un photon.',
-
-
-          'Équation : E = hν. E est l’énergie du photon, h la constante de Planck et ν (nu) la fréquence du rayonnement. L’énergie s’exprime en joules et la fréquence en hertz.',
-
-
-          'Dans le vide, la fréquence et la longueur d’onde sont liées par ν = c/λ. La relation énergétique peut donc aussi s’écrire E = hc/λ, où c est la vitesse de la lumière dans le vide et λ la longueur d’onde dans le vide. À fréquence plus élevée, l’énergie de chaque photon est plus élevée.'
-        ],
-        example: {
-          statement: 'Deux photons possèdent des fréquences ν et 3ν. Quel est le rapport entre leurs énergies ?',
-          calculation: 'E₂/E₁ = h(3ν)/(hν) = 3.',
-          answer: 'Le second photon possède 3 fois l’énergie du premier.'
-        },
-        exercise: {
-          question: 'Quelle propriété du rayonnement détermine directement l’énergie d’un photon ?',
-          answer: 'Sa fréquence, selon la relation E = hν.'
-        },
-        exercises: [
-          {
-            question: 'Que représente h ?',
-            answer: 'La constante de Planck, dont la valeur exacte dans le SI est 6,62607015 × 10⁻³⁴ J·s.'
+      {
+        id: 'planck-quantification',
+        title: 'La relation de Planck : énergie d’un photon',
+        field: 'Physique quantique · 1900',
+        summary: 'La relation de Planck associe l’énergie d’un photon à la fréquence de son rayonnement. Elle constitue un repère fondamental de la physique quantique et permet de comprendre pourquoi les rayonnements de fréquences différentes transportent des quanta d’énergie différents.',
+        lesson: {
+          sections: [
+            'Auteur : Max Planck (1858–1947). En 1900, il introduit la quantification de l’énergie dans son étude du rayonnement du corps noir. La relation E = hν est aujourd’hui utilisée pour exprimer l’énergie d’un photon.',
+            'Équation : E = hν. E est l’énergie du photon, h la constante de Planck et ν (nu) la fréquence du rayonnement. L’énergie s’exprime en joules et la fréquence en hertz.',
+            'Dans le vide, la fréquence et la longueur d’onde sont liées par ν = c/λ. La relation énergétique peut donc aussi s’écrire E = hc/λ, où c est la vitesse de la lumière dans le vide et λ la longueur d’onde dans le vide. À fréquence plus élevée, l’énergie de chaque photon est plus élevée.'
+          ],
+          formula: {
+            label: 'RELATION DE PLANCK',
+            text: 'E = h × ν',
+            mathML: 'planck-relation'
           },
-          {
-            question: 'Si la fréquence d’un photon augmente, que devient son énergie ?',
-            answer: 'Elle augmente proportionnellement à la fréquence.'
+          example: {
+            statement: 'Deux photons possèdent des fréquences ν et 3ν. Quel est le rapport entre leurs énergies ?',
+            calculation: 'E₂/E₁ = h(3ν)/(hν) = 3.',
+            answer: 'Le second photon possède 3 fois l’énergie du premier.'
           },
-          {
-            question: 'Quel scientifique est associé à l’introduction de la quantification de l’énergie en 1900 ?',
-            answer: 'Max Planck.'
-          }
-        ],
-        sources: [
-          {
-            title: 'Nobel Prize — Max Planck, Nobel Lecture',
-            url: 'https://www.nobelprize.org/prizes/physics/1918/planck/lecture/'
+          exercise: {
+            question: 'Quelle propriété du rayonnement détermine directement l’énergie d’un photon ?',
+            answer: 'Sa fréquence, selon la relation E = hν.'
           },
-          {
-            title: 'NIST — Fundamental Physical Constants',
-            url: 'https://physics.nist.gov/cuu/Constants/'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'einstein-equivalence-masse-energie',
-      title: 'L’équivalence masse-énergie',
-      formula: "E₀ = m × c²",
-      equationDetails: {
-        label: "Équivalence masse-énergie",
-        formula: "E₀ = m × c²",
-        parameters: [
-          {
-            symbol: "E₀",
-            label: "Énergie au repos",
-            unit: "J"
-          },
-          {
-            symbol: "m",
-            label: "Masse au repos",
-            unit: "kg"
-          },
-          {
-            symbol: "c",
-            label: "Vitesse de la lumière dans le vide (299 792 458 m/s)",
-            unit: "m/s"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Que représente h ?',
+              answer: 'La constante de Planck, dont la valeur exacte dans le SI est 6,62607015 × 10⁻³⁴ J·s.'
+            },
+            {
+              question: 'Si la fréquence d’un photon augmente, que devient son énergie ?',
+              answer: 'Elle augmente proportionnellement à la fréquence.'
+            },
+            {
+              question: 'Quel scientifique est associé à l’introduction de la quantification de l’énergie en 1900 ?',
+              answer: 'Max Planck.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Relation de Planck',
+              formula: 'E = h × ν',
+              explanation: 'La relation de Planck associe l’énergie d’un photon à la fréquence de son rayonnement. Elle constitue un repère fondamental de la physique quantique et permet de comprendre pourquoi les rayonnements de fréquences différentes transportent des quanta d’énergie différents.',
+              parameters: 'E : énergie du photon (J) ; h : constante de Planck (J·s) ; ν : fréquence du rayonnement (Hz).',
+              example: 'Deux photons possèdent des fréquences ν et 3ν : E₂/E₁ = h(3ν)/(hν) = 3.',
+              result: 'Le second photon possède 3 fois l’énergie du premier.',
+              mathML: 'planck-relation'
+            }
+          ],
+          sources: [
+            {
+              title: 'Nobel Prize — Max Planck, Nobel Lecture',
+              url: 'https://www.nobelprize.org/prizes/physics/1918/planck/lecture/'
+            },
+            {
+              title: 'NIST — Fundamental Physical Constants',
+              url: 'https://physics.nist.gov/cuu/Constants/'
+            }
+          ]
+        }
       },
-      field: 'Relativité restreinte · 1905',
-      summary: 'La relation masse-énergie indique qu’une masse au repos correspond à une énergie au repos. Elle a profondément transformé la compréhension de la matière et de l’énergie, notamment en physique nucléaire et en physique des particules.',
-      lesson: {
-        sections: [
-          'Auteur : Albert Einstein (1879–1955). En 1905, il publie un travail établissant qu’une variation d’énergie d’un corps peut s’accompagner d’une variation de sa masse. L’écriture compacte E₀ = mc² est devenue la forme emblématique de cette équivalence.',
-
-
-          'Équation : E₀ = mc². E₀ est l’énergie au repos, m la masse au repos et c la vitesse de la lumière dans le vide, exactement égale à 299 792 458 m/s dans le SI.',
-
-
-          'Le facteur c² explique qu’une petite masse corresponde à une énergie au repos importante. Il faut distinguer l’énergie au repos de l’énergie totale d’un corps en mouvement. Dans la relativité restreinte, la relation générale est E² = (pc)² + (mc²)², où p représente la quantité de mouvement.'
-        ],
-        example: {
-          statement: 'Si la masse au repos d’un système double, comment évolue son énergie au repos ?',
-          calculation: 'E₀ = mc². La vitesse de la lumière étant constante, doubler m double E₀.',
-          answer: 'L’énergie au repos double.'
-        },
-        exercise: {
-          question: 'Que signifie l’indice 0 dans E₀ = mc² ?',
-          answer: 'Il indique que l’énergie considérée est l’énergie au repos.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année Einstein publie-t-il son travail fondateur sur cette équivalence ?',
-            answer: 'En 1905.'
+      {
+        id: 'einstein-equivalence-masse-energie',
+        title: 'L’équivalence masse-énergie',
+        field: 'Relativité restreinte · 1905',
+        summary: 'La relation masse-énergie indique qu’une masse au repos correspond à une énergie au repos. Elle a profondément transformé la compréhension de la matière et de l’énergie, notamment en physique nucléaire et en physique des particules.',
+        lesson: {
+          sections: [
+            'Auteur : Albert Einstein (1879–1955). En 1905, il publie un travail établissant qu’une variation d’énergie d’un corps peut s’accompagner d’une variation de sa masse. L’écriture compacte E₀ = mc² est devenue la forme emblématique de cette équivalence.',
+            'Équation : E₀ = mc². E₀ est l’énergie au repos, m la masse au repos et c la vitesse de la lumière dans le vide, exactement égale à 299 792 458 m/s dans le SI.',
+            'Le facteur c² explique qu’une petite masse corresponde à une énergie au repos importante. Il faut distinguer l’énergie au repos de l’énergie totale d’un corps en mouvement. Dans la relativité restreinte, la relation générale est E² = (pc)² + (mc²)², où p représente la quantité de mouvement.'
+          ],
+          formula: {
+            label: 'ÉQUIVALENCE MASSE-ÉNERGIE',
+            text: 'E₀ = m × c²',
+            mathML: 'mass-energy-equivalence'
           },
-          {
-            question: 'Quelle est la valeur exacte de c dans le SI ?',
-            answer: '299 792 458 m/s.'
+          example: {
+            statement: 'Si la masse au repos d’un système double, comment évolue son énergie au repos ?',
+            calculation: 'E₀ = mc². La vitesse de la lumière étant constante, doubler m double E₀.',
+            answer: 'L’énergie au repos double.'
           },
-          {
-            question: 'La formule E₀ = mc² donne-t-elle à elle seule l’énergie totale d’un corps en mouvement ?',
-            answer: 'Non. Elle donne l’énergie au repos. L’énergie totale relativiste dépend également de la quantité de mouvement.'
-          }
-        ],
-        sources: [
-          {
-            title: 'American Physical Society — September, 1905: Energy and Mass are Equivalent',
-            url: 'https://www.aps.org/apsnews/2005/04/september-1905-energy-mass-equivalent'
+          exercise: {
+            question: 'Que signifie l’indice 0 dans E₀ = mc² ?',
+            answer: 'Il indique que l’énergie considérée est l’énergie au repos.'
           },
-          {
-            title: 'Stanford Encyclopedia of Philosophy — The Equivalence of Mass and Energy',
-            url: 'https://plato.stanford.edu/entries/equivME/'
-          },
-          {
-            title: 'NIST — Fundamental Physical Constants',
-            url: 'https://physics.nist.gov/cuu/Constants/'
-          }
-        ]
-      }
-    },
-
-    {
-      id: 'schrodinger-quantique',
-      title: 'L’équation de Schrödinger dépendante du temps',
-      formula: "iℏ × ∂ψ/∂t = Ĥψ",
-      equationDetails: {
-        label: "Équation de Schrödinger dépendante du temps",
-        formula: "iℏ × ∂ψ/∂t = Ĥψ",
-        parameters: [
-          {
-            symbol: "i",
-            label: "Unité imaginaire",
-            unit: "sans unité"
-          },
-          {
-            symbol: "ℏ",
-            label: "Constante de Planck réduite (h / 2π)",
-            unit: "J·s"
-          },
-          {
-            symbol: "ψ",
-            label: "Fonction d’onde (état quantique du système)",
-            unit: "m⁻³ᐟ² (particule en 3D)"
-          },
-          {
-            symbol: "t",
-            label: "Temps",
-            unit: "s"
-          },
-          {
-            symbol: "Ĥ",
-            label: "Opérateur hamiltonien (énergie totale du système)",
-            unit: "J"
-          }
-        ]
+          exercises: [
+            {
+              question: 'En quelle année Einstein publie-t-il son travail fondateur sur cette équivalence ?',
+              answer: 'En 1905.'
+            },
+            {
+              question: 'Quelle est la valeur exacte de c dans le SI ?',
+              answer: '299 792 458 m/s.'
+            },
+            {
+              question: 'La formule E₀ = mc² donne-t-elle à elle seule l’énergie totale d’un corps en mouvement ?',
+              answer: 'Non. Elle donne l’énergie au repos. L’énergie totale relativiste dépend également de la quantité de mouvement.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Équivalence masse-énergie',
+              formula: 'E₀ = m × c²',
+              explanation: 'La relation masse-énergie indique qu’une masse au repos correspond à une énergie au repos. Elle a profondément transformé la compréhension de la matière et de l’énergie, notamment en physique nucléaire et en physique des particules.',
+              parameters: 'E₀ : énergie au repos (J) ; m : masse au repos (kg) ; c : vitesse de la lumière dans le vide (299 792 458 m/s) (m·s⁻¹).',
+              example: 'Si la masse au repos d’un système double, comment évolue son énergie au repos ? E₀ = mc². La vitesse de la lumière étant constante, doubler m double E₀.',
+              result: 'L’énergie au repos double.',
+              mathML: 'mass-energy-equivalence'
+            }
+          ],
+          sources: [
+            {
+              title: 'American Physical Society — September, 1905: Energy and Mass are Equivalent',
+              url: 'https://www.aps.org/apsnews/2005/04/september-1905-energy-mass-equivalent'
+            },
+            {
+              title: 'Stanford Encyclopedia of Philosophy — The Equivalence of Mass and Energy',
+              url: 'https://plato.stanford.edu/entries/equivME/'
+            },
+            {
+              title: 'NIST — Fundamental Physical Constants',
+              url: 'https://physics.nist.gov/cuu/Constants/'
+            }
+          ]
+        }
       },
-      field: 'Mécanique quantique · 1926',
-      summary: 'L’équation de Schrödinger décrit l’évolution temporelle de l’état quantique dans la formulation non relativiste. Elle constitue un outil fondamental pour étudier les atomes, les molécules et les systèmes quantiques.',
-      lesson: {
-        sections: [
-          'Auteur : Erwin Schrödinger (1887–1961). En 1926, il développe la mécanique ondulatoire dans une série de travaux consacrés à la quantification comme problème de valeurs propres. Cette approche devient l’une des formulations fondamentales de la mécanique quantique.',
-
-
-          'Équation dépendante du temps : iℏ ∂ψ/∂t = Ĥψ. i est l’unité imaginaire, ℏ la constante de Planck réduite, ψ la fonction d’onde et Ĥ l’opérateur hamiltonien représentant l’énergie totale dans le modèle considéré.',
-
-
-          'Pour une particule non relativiste de masse m soumise à un potentiel V, l’hamiltonien usuel s’écrit Ĥ = −(ℏ²/2m)∇² + V. La fonction d’onde sert à calculer les probabilités des résultats de mesure. Elle ne représente pas simplement une trajectoire classique. La forme présentée est non relativiste.'
-        ],
-        example: {
-          statement: 'À quoi sert principalement l’équation de Schrödinger dépendante du temps ?',
-          calculation: 'Elle relie la variation temporelle de la fonction d’onde à l’action de l’opérateur hamiltonien sur cette fonction.',
-          answer: 'Elle permet de déterminer l’évolution temporelle de l’état quantique à partir de son état initial et de l’hamiltonien.'
-        },
-        exercise: {
-          question: 'Que représente ψ dans l’équation de Schrödinger ?',
-          answer: 'La fonction d’onde qui représente l’état quantique du système.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année Schrödinger développe-t-il ses travaux fondateurs ?',
-            answer: 'En 1926.'
+      {
+        id: 'schrodinger-quantique',
+        title: 'L’équation de Schrödinger dépendante du temps',
+        field: 'Mécanique quantique · 1926',
+        summary: 'L’équation de Schrödinger décrit l’évolution temporelle de l’état quantique dans la formulation non relativiste. Elle constitue un outil fondamental pour étudier les atomes, les molécules et les systèmes quantiques.',
+        lesson: {
+          sections: [
+            'Auteur : Erwin Schrödinger (1887–1961). En 1926, il développe la mécanique ondulatoire dans une série de travaux consacrés à la quantification comme problème de valeurs propres. Cette approche devient l’une des formulations fondamentales de la mécanique quantique.',
+            'Équation dépendante du temps : iℏ ∂ψ/∂t = Ĥψ. i est l’unité imaginaire, ℏ la constante de Planck réduite, ψ la fonction d’onde et Ĥ l’opérateur hamiltonien représentant l’énergie totale dans le modèle considéré.',
+            'Pour une particule non relativiste de masse m soumise à un potentiel V, l’hamiltonien usuel s’écrit Ĥ = −(ℏ²/2m)∇² + V. La fonction d’onde sert à calculer les probabilités des résultats de mesure. Elle ne représente pas simplement une trajectoire classique. La forme présentée est non relativiste.'
+          ],
+          formula: {
+            label: 'ÉQUATION DE SCHRÖDINGER DÉPENDANTE DU TEMPS',
+            text: 'iℏ × ∂ψ/∂t = Ĥψ',
+            mathML: 'schrodinger-equation'
           },
-          {
-            question: 'Que représente Ĥ ?',
-            answer: 'L’opérateur hamiltonien, associé à l’énergie totale du système dans le modèle choisi.'
+          example: {
+            statement: 'À quoi sert principalement l’équation de Schrödinger dépendante du temps ?',
+            calculation: 'Elle relie la variation temporelle de la fonction d’onde à l’action de l’opérateur hamiltonien sur cette fonction.',
+            answer: 'Elle permet de déterminer l’évolution temporelle de l’état quantique à partir de son état initial et de l’hamiltonien.'
           },
-          {
-            question: 'La forme présentée est-elle une équation relativiste complète ?',
-            answer: 'Non. Il s’agit de la forme standard non relativiste.'
-          }
-        ],
-        sources: [
-          {
-            title: 'Nobel Prize — Erwin Schrödinger, Nobel Lecture',
-            url: 'https://www.nobelprize.org/prizes/physics/1933/schrodinger/lecture/'
+          exercise: {
+            question: 'Que représente ψ dans l’équation de Schrödinger ?',
+            answer: 'La fonction d’onde qui représente l’état quantique du système.'
           },
-          {
-            title: 'OpenStax — The Schrödinger Equation',
-            url: 'https://openstax.org/books/university-physics-volume-3/pages/7-3-the-schrodinger-equation'
-          },
-          {
-            title: 'Nobel Prize — The Nobel Prize in Physics 1901–2000',
-            url: 'https://www.nobelprize.org/prizes/themes/the-nobel-prize-in-physics-1901-2000/'
-          }
-        ]
-      }
-    },
-
-  
-    {
-      id: 'hooke-elasticite',
-      title: 'La loi de Hooke : force de rappel d’un ressort',
-      formula: "F = −k × x",
-      equationDetails: {
-        label: "Loi de Hooke",
-        formula: "F = −k × x",
-        parameters: [
-          {
-            symbol: "F",
-            label: "Force de rappel exercée par le ressort",
-            unit: "N"
-          },
-          {
-            symbol: "k",
-            label: "Constante de raideur du ressort",
-            unit: "N/m"
-          },
-          {
-            symbol: "x",
-            label: "Allongement ou compression par rapport à la position d’équilibre",
-            unit: "m"
-          }
-        ]
+          exercises: [
+            {
+              question: 'En quelle année Schrödinger développe-t-il ses travaux fondateurs ?',
+              answer: 'En 1926.'
+            },
+            {
+              question: 'Que représente Ĥ ?',
+              answer: 'L’opérateur hamiltonien, associé à l’énergie totale du système dans le modèle choisi.'
+            },
+            {
+              question: 'La forme présentée est-elle une équation relativiste complète ?',
+              answer: 'Non. Il s’agit de la forme standard non relativiste.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Équation de Schrödinger dépendante du temps',
+              formula: 'iℏ × ∂ψ/∂t = Ĥψ',
+              explanation: 'L’équation de Schrödinger décrit l’évolution temporelle de l’état quantique dans la formulation non relativiste. Elle constitue un outil fondamental pour étudier les atomes, les molécules et les systèmes quantiques.',
+              parameters: 'i : unité imaginaire (sans unité) ; ℏ : constante de Planck réduite (h / 2π) (J·s) ; ψ : fonction d’onde (état quantique du système) (m⁻³ᐟ² (particule en 3D)) ; t : temps (s) ; Ĥ : opérateur hamiltonien (énergie totale du système) (J).',
+              example: 'À quoi sert principalement l’équation de Schrödinger dépendante du temps ? Elle relie la variation temporelle de la fonction d’onde à l’action de l’opérateur hamiltonien sur cette fonction.',
+              result: 'Elle permet de déterminer l’évolution temporelle de l’état quantique à partir de son état initial et de l’hamiltonien.',
+              mathML: 'schrodinger-equation'
+            }
+          ],
+          sources: [
+            {
+              title: 'Nobel Prize — Erwin Schrödinger, Nobel Lecture',
+              url: 'https://www.nobelprize.org/prizes/physics/1933/schrodinger/lecture/'
+            },
+            {
+              title: 'OpenStax — The Schrödinger Equation',
+              url: 'https://openstax.org/books/university-physics-volume-3/pages/7-3-the-schrodinger-equation'
+            },
+            {
+              title: 'Nobel Prize — The Nobel Prize in Physics 1901–2000',
+              url: 'https://www.nobelprize.org/prizes/themes/the-nobel-prize-in-physics-1901-2000/'
+            }
+          ]
+        }
       },
-      field: 'Mécanique · Élasticité · 1678',
-      summary: 'La loi de Hooke affirme que la force de rappel d’un ressort est proportionnelle à sa déformation. Elle fournit le modèle de base de l’élasticité linéaire et des oscillations d’un système masse-ressort.',
-      lesson: {
-        sections: [
-          'Auteur : Robert Hooke. Il énonce d’abord sa loi en 1660 sous la forme d’un anagramme latin ; la solution, « Ut tensio, sic vis » (« telle l’extension, telle la force »), est publiée en 1678.',
-
-
-          'Équation : F = −kx. F est la force de rappel exercée par le ressort, k sa constante de raideur et x le déplacement par rapport à la position d’équilibre. Le signe négatif indique que la force de rappel est de sens opposé au déplacement.',
-
-
-          'La loi de Hooke est une approximation de la réponse des corps élastiques : elle n’est valable que tant que la déformation reste inférieure à la limite de proportionnalité. L’énergie potentielle élastique stockée dans le ressort s’écrit Ep = ½kx². Plus k est grand, plus le ressort est rigide.'
-        ],
-        example: {
-          statement: 'Un ressort de constante de raideur k = 200 N/m est allongé de 0,05 m par rapport à sa position d’équilibre. Quelle est la norme de la force de rappel ?',
-          calculation: '|F| = k × |x| = 200 × 0,05 = 10 N.',
-          answer: 'La force de rappel a une norme de 10 N et elle est dirigée vers la position d’équilibre, tant que la limite de proportionnalité n’est pas dépassée.'
-        },
-        exercise: {
-          question: 'Que devient la norme de la force de rappel si l’allongement double, dans le domaine de validité de la loi ?',
-          answer: 'Elle double, car la force est proportionnelle à l’allongement.'
-        },
-        exercises: [
-          {
-            question: 'Quelle est l’unité SI de la constante de raideur k ?',
-            answer: 'Le newton par mètre (N/m).'
+      {
+        id: 'hooke-elasticite',
+        title: 'La loi de Hooke : force de rappel d’un ressort',
+        field: 'Mécanique · Élasticité · 1678',
+        summary: 'La loi de Hooke affirme que la force de rappel d’un ressort est proportionnelle à sa déformation. Elle fournit le modèle de base de l’élasticité linéaire et des oscillations d’un système masse-ressort.',
+        lesson: {
+          sections: [
+            'Auteur : Robert Hooke. Il énonce d’abord sa loi en 1660 sous la forme d’un anagramme latin ; la solution, « Ut tensio, sic vis » (« telle l’extension, telle la force »), est publiée en 1678.',
+            'Équation : F = −kx. F est la force de rappel exercée par le ressort, k sa constante de raideur et x le déplacement par rapport à la position d’équilibre. Le signe négatif indique que la force de rappel est de sens opposé au déplacement.',
+            'La loi de Hooke est une approximation de la réponse des corps élastiques : elle n’est valable que tant que la déformation reste inférieure à la limite de proportionnalité. L’énergie potentielle élastique stockée dans le ressort s’écrit Ep = ½kx². Plus k est grand, plus le ressort est rigide.'
+          ],
+          formula: {
+            label: 'LOI DE HOOKE',
+            text: 'F = −k × x',
+            mathML: 'hooke-law'
           },
-          {
-            question: 'Quand la loi de Hooke cesse-t-elle de s’appliquer ?',
-            answer: 'Lorsque la déformation dépasse la limite de proportionnalité du ressort.'
+          example: {
+            statement: 'Un ressort de constante de raideur k = 200 N/m est allongé de 0,05 m par rapport à sa position d’équilibre. Quelle est la norme de la force de rappel ?',
+            calculation: '|F| = k × |x| = 200 × 0,05 = 10 N.',
+            answer: 'La force de rappel a une norme de 10 N et elle est dirigée vers la position d’équilibre, tant que la limite de proportionnalité n’est pas dépassée.'
           },
-          {
-            question: 'Quelle énergie est stockée dans un ressort de raideur 200 N/m allongé de 0,05 m ?',
-            answer: 'Ep = ½kx² = ½ × 200 × 0,05² = 0,25 J.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Hooke’s Law: Stress and Strain Revisited',
-            url: 'https://openstax.org/books/college-physics/pages/16-1-hookes-law-stress-and-strain-revisited'
+          exercise: {
+            question: 'Que devient la norme de la force de rappel si l’allongement double, dans le domaine de validité de la loi ?',
+            answer: 'Elle double, car la force est proportionnelle à l’allongement.'
           },
-          {
-            title: 'LibreTexts (Boundless) — Hooke’s Law',
-            url: 'https://phys.libretexts.org/Bookshelves/University_Physics/Physics_%28Boundless%29/15%3A_Waves_and_Vibrations/15.2%3A_Hookes_Law'
-          },
-          {
-            title: 'The Open University — Hooke’s law',
-            url: 'https://www.open.edu/openlearncreate/mod/glossary/showentry.php?eid=9922'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'newton-deuxieme-loi',
-      title: 'La deuxième loi de Newton',
-      formula: "ΣF = m × a",
-      equationDetails: {
-        label: "Deuxième loi de Newton",
-        formula: "ΣF = m × a",
-        parameters: [
-          {
-            symbol: "ΣF",
-            label: "Somme des forces extérieures appliquées au système (force nette)",
-            unit: "N"
-          },
-          {
-            symbol: "m",
-            label: "Masse du système",
-            unit: "kg"
-          },
-          {
-            symbol: "a",
-            label: "Accélération du système",
-            unit: "m/s²"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Quelle est l’unité SI de la constante de raideur k ?',
+              answer: 'Le newton par mètre (N/m).'
+            },
+            {
+              question: 'Quand la loi de Hooke cesse-t-elle de s’appliquer ?',
+              answer: 'Lorsque la déformation dépasse la limite de proportionnalité du ressort.'
+            },
+            {
+              question: 'Quelle énergie est stockée dans un ressort de raideur 200 N/m allongé de 0,05 m ?',
+              answer: 'Ep = ½kx² = ½ × 200 × 0,05² = 0,25 J.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi de Hooke',
+              formula: 'F = −k × x',
+              explanation: 'La loi de Hooke affirme que la force de rappel d’un ressort est proportionnelle à sa déformation. Elle fournit le modèle de base de l’élasticité linéaire et des oscillations d’un système masse-ressort.',
+              parameters: 'F : force de rappel exercée par le ressort (N) ; k : constante de raideur du ressort (N·m⁻¹) ; x : allongement ou compression par rapport à la position d’équilibre (m).',
+              example: 'Un ressort de constante de raideur k = 200 N/m est allongé de 0,05 m par rapport à sa position d’équilibre : |F| = k × |x| = 200 × 0,05 = 10 N.',
+              result: 'La force de rappel a une norme de 10 N et elle est dirigée vers la position d’équilibre, tant que la limite de proportionnalité n’est pas dépassée.',
+              mathML: 'hooke-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Hooke’s Law: Stress and Strain Revisited',
+              url: 'https://openstax.org/books/college-physics/pages/16-1-hookes-law-stress-and-strain-revisited'
+            },
+            {
+              title: 'LibreTexts (Boundless) — Hooke’s Law',
+              url: 'https://phys.libretexts.org/Bookshelves/University_Physics/Physics_%28Boundless%29/15%3A_Waves_and_Vibrations/15.2%3A_Hookes_Law'
+            },
+            {
+              title: 'The Open University — Hooke’s law',
+              url: 'https://www.open.edu/openlearncreate/mod/glossary/showentry.php?eid=9922'
+            }
+          ]
+        }
       },
-      field: 'Mécanique classique · Dynamique · 1687',
-      summary: 'La deuxième loi de Newton relie la force nette appliquée à un système à son accélération. Elle constitue l’équation centrale de la dynamique classique et permet de prévoir le mouvement à partir des forces.',
-      lesson: {
-        sections: [
-          'Auteur : Isaac Newton. La loi figure dans les Principia, publiés en 1687. Dans sa formulation d’origine, elle fait référence à la variation de la « quantité de mouvement » ; la forme F = ma est l’écriture moderne couramment enseignée.',
-
-
-          'Équation : ΣF = ma. ΣF est la somme vectorielle des forces extérieures qui s’exercent sur le système, m sa masse et a son accélération. L’accélération a la même direction et le même sens que la force nette, et elle est inversement proportionnelle à la masse.',
-
-
-          'Une forme équivalente, plus générale, utilise la quantité de mouvement p : ΣF = dp/dt. La loi est valable dans un référentiel inertiel et seules les forces extérieures sont à prendre en compte. Le newton est la force qui communique une accélération de 1 m/s² à une masse de 1 kg.'
-        ],
-        example: {
-          statement: 'Une force nette de 12 N agit sur un objet de masse 3 kg. Quelle est son accélération ?',
-          calculation: 'a = ΣF / m = 12 / 3 = 4 m/s².',
-          answer: 'L’accélération vaut 4 m/s², dans la direction et le sens de la force nette.'
-        },
-        exercise: {
-          question: 'Si la force nette double et que la masse reste constante, que devient l’accélération ?',
-          answer: 'Elle double, car l’accélération est proportionnelle à la force nette.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année les Principia de Newton sont-ils publiés ?',
-            answer: 'En 1687.'
+      {
+        id: 'newton-deuxieme-loi',
+        title: 'La deuxième loi de Newton',
+        field: 'Mécanique classique · Dynamique · 1687',
+        summary: 'La deuxième loi de Newton relie la force nette appliquée à un système à son accélération. Elle constitue l’équation centrale de la dynamique classique et permet de prévoir le mouvement à partir des forces.',
+        lesson: {
+          sections: [
+            'Auteur : Isaac Newton. La loi figure dans les Principia, publiés en 1687. Une force modélise une interaction : pour étudier un objet, on isole le système, on dresse le bilan des forces extérieures puis on applique la deuxième loi.',
+            'Dans un référentiel galiléen, la somme vectorielle des forces détermine l’accélération. Si la résultante est nulle, la vitesse reste constante : c’est le principe d’inertie. Une forme équivalente, plus générale, utilise la quantité de mouvement : Σ F⃗ₑₓₜ = dp⃗/dt.'
+          ],
+          formula: {
+            label: 'DEUXIÈME LOI DE NEWTON',
+            text: 'Σ F⃗ₑₓₜ = m a⃗',
+            mathML: 'newton-second-law'
           },
-          {
-            question: 'Que vaut l’accélération d’un objet dont la force nette est nulle ?',
-            answer: 'Elle est nulle : la vitesse reste constante, ce qui correspond à la première loi de Newton.'
+          example: {
+            statement: 'Une masse de 4 kg subit une force horizontale résultante de 12 N. Quelle est son accélération ?',
+            calculation: 'a = F/m = 12/4.',
+            answer: 'a = 3 m·s⁻² dans la direction de la résultante.'
           },
-          {
-            question: 'Comment s’exprime le newton en unités de base du SI ?',
-            answer: '1 N = 1 kg·m/s².'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Newton’s Second Law (University Physics, Volume 1)',
-            url: 'https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law'
+          exercise: {
+            question: 'Quelle résultante faut-il pour accélérer une masse de 2 kg à 5 m·s⁻² ?',
+            answer: 'F = ma = 2 × 5 = 10 N.'
           },
-          {
-            title: 'OpenStax — Key Equations, Newton’s Laws of Motion (University Physics, Volume 1)',
-            url: 'https://openstax.org/books/university-physics-volume-1/pages/5-key-equations'
-          },
-          {
-            title: 'OpenStax — Newton’s Second Law of Motion (Physics)',
-            url: 'https://openstax.org/books/physics/pages/4-3-newtons-second-law-of-motion'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'faraday-induction',
-      title: 'La loi de Faraday de l’induction électromagnétique',
-      formula: "ε = −N × dΦm/dt",
-      equationDetails: {
-        label: "Loi de Faraday de l’induction électromagnétique",
-        formula: "ε = −N × dΦm/dt",
-        parameters: [
-          {
-            symbol: "ε",
-            label: "Force électromotrice induite dans la boucle fermée",
-            unit: "V"
-          },
-          {
-            symbol: "N",
-            label: "Nombre de spires de la bobine",
-            unit: "sans unité"
-          },
-          {
-            symbol: "Φm",
-            label: "Flux magnétique à travers une spire",
-            unit: "Wb"
-          },
-          {
-            symbol: "t",
-            label: "Temps",
-            unit: "s"
-          }
-        ]
+          exercises: [
+            {
+              question: 'En quelle année les Principia de Newton sont-ils publiés ?',
+              answer: 'En 1687.'
+            },
+            {
+              question: 'Que vaut l’accélération d’un objet dont la force nette est nulle ?',
+              answer: 'Elle est nulle : la vitesse reste constante, ce qui correspond à la première loi de Newton.'
+            },
+            {
+              question: 'Comment s’exprime le newton en unités de base du SI ?',
+              answer: '1 N = 1 kg·m/s².'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Deuxième loi de Newton',
+              formula: 'Σ F⃗ₑₓₜ = m a⃗',
+              explanation: 'Dans un référentiel galiléen, la somme vectorielle des forces extérieures appliquées à un système est égale à sa masse fois son accélération. Seule la résultante détermine l’accélération.',
+              parameters: 'Σ F⃗ₑₓₜ : résultante des forces extérieures (N) ; m : masse inertielle (kg) ; a⃗ : accélération du centre de masse (m·s⁻²). 1 N = 1 kg·m·s⁻².',
+              example: 'Une résultante de 12 N agit sur une masse de 4 kg : a = F/m = 12/4.',
+              result: 'L’accélération vaut 3 m·s⁻² dans la direction de la résultante.',
+              mathML: 'newton-second-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Newton’s Second Law (University Physics, Volume 1)',
+              url: 'https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law'
+            },
+            {
+              title: 'OpenStax — Key Equations, Newton’s Laws of Motion (University Physics, Volume 1)',
+              url: 'https://openstax.org/books/university-physics-volume-1/pages/5-key-equations'
+            },
+            {
+              title: 'OpenStax — Newton’s Second Law of Motion (Physics)',
+              url: 'https://openstax.org/books/physics/pages/4-3-newtons-second-law-of-motion'
+            }
+          ]
+        }
       },
-      field: 'Électromagnétisme · Induction · 1831',
-      summary: 'La loi de Faraday relie la force électromotrice induite dans un circuit à la vitesse de variation du flux magnétique qui le traverse. Elle est à l’origine du fonctionnement des générateurs, des transformateurs et de nombreux capteurs.',
-      lesson: {
-        sections: [
-          'Auteur : Michael Faraday. Les premières expériences productives sur les effets des champs magnétiques variables dans le temps sont réalisées par Faraday en 1831. Il parvient à interpréter l’ensemble de ces expériences au moyen d’une même loi, que Maxwell intégrera ensuite à sa théorie électromagnétique.',
-
-
-          'Équation : ε = −N dΦm/dt. ε est la force électromotrice induite dans une boucle fermée, N le nombre de spires et Φm le flux magnétique à travers une spire, défini par Φm = ∫ B·n dA. La force électromotrice est proportionnelle à la vitesse de variation du flux.',
-
-
-          'Le signe négatif traduit la loi de Lenz : le sens de la force électromotrice induite s’oppose à la variation de flux qui lui donne naissance. Seule la variation du flux compte : en l’absence de variation de flux, aucune force électromotrice n’est induite. Pour un contour fermé, la loi s’écrit aussi ε = ∮E·dl = −dΦm/dt.'
-        ],
-        example: {
-          statement: 'Une bobine de 100 spires est traversée par un flux magnétique qui, par spire, passe uniformément de 5,0 × 10⁻³ Wb à 1,0 × 10⁻³ Wb en 0,20 s. Quelle est la valeur absolue de la force électromotrice induite ?',
-          calculation: 'dΦm/dt = (1,0 × 10⁻³ − 5,0 × 10⁻³) / 0,20 = −2,0 × 10⁻² Wb/s. |ε| = N × |dΦm/dt| = 100 × 2,0 × 10⁻² = 2,0 V.',
-          answer: 'La force électromotrice induite a une valeur absolue de 2,0 V.'
-        },
-        exercise: {
-          question: 'Que traduit le signe négatif dans la loi de Faraday ?',
-          answer: 'Il traduit la loi de Lenz : la force électromotrice induite s’oppose à la variation de flux qui la produit.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année Faraday réalise-t-il ses premières expériences productives sur les champs magnétiques variables ?',
-            answer: 'En 1831.'
+      {
+        id: 'faraday-induction',
+        title: 'La loi de Faraday de l’induction électromagnétique',
+        field: 'Électromagnétisme · Induction · 1831',
+        summary: 'La loi de Faraday relie la force électromotrice induite dans un circuit à la vitesse de variation du flux magnétique qui le traverse. Elle est à l’origine du fonctionnement des générateurs, des transformateurs et de nombreux capteurs.',
+        lesson: {
+          sections: [
+            'Auteur : Michael Faraday. Les premières expériences productives sur les effets des champs magnétiques variables dans le temps sont réalisées par Faraday en 1831. Il parvient à interpréter l’ensemble de ces expériences au moyen d’une même loi, que Maxwell intégrera ensuite à sa théorie électromagnétique.',
+            'Équation : ε = −N dΦm/dt. ε est la force électromotrice induite dans une boucle fermée, N le nombre de spires et Φm le flux magnétique à travers une spire, défini par Φm = ∫ B·n dA. La force électromotrice est proportionnelle à la vitesse de variation du flux.',
+            'Le signe négatif traduit la loi de Lenz : le sens de la force électromotrice induite s’oppose à la variation de flux qui lui donne naissance. Seule la variation du flux compte : en l’absence de variation de flux, aucune force électromotrice n’est induite. Pour un contour fermé, la loi s’écrit aussi ε = ∮E·dl = −dΦm/dt.'
+          ],
+          formula: {
+            label: 'LOI DE FARADAY DE L’INDUCTION ÉLECTROMAGNÉTIQUE',
+            text: 'ε = −N × dΦm/dt',
+            mathML: 'faraday-induction-law'
           },
-          {
-            question: 'Une force électromotrice est-elle induite si le flux magnétique reste constant ?',
-            answer: 'Non. Sans variation de flux, aucune force électromotrice n’est induite.'
+          example: {
+            statement: 'Une bobine de 100 spires est traversée par un flux magnétique qui, par spire, passe uniformément de 5,0 × 10⁻³ Wb à 1,0 × 10⁻³ Wb en 0,20 s. Quelle est la valeur absolue de la force électromotrice induite ?',
+            calculation: 'dΦm/dt = (1,0 × 10⁻³ − 5,0 × 10⁻³) / 0,20 = −2,0 × 10⁻² Wb/s. |ε| = N × |dΦm/dt| = 100 × 2,0 × 10⁻² = 2,0 V.',
+            answer: 'La force électromotrice induite a une valeur absolue de 2,0 V.'
           },
-          {
-            question: 'Quelle est l’unité SI du flux magnétique ?',
-            answer: 'Le weber (Wb).'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Faraday’s Law (University Physics, Volume 2)',
-            url: 'https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law'
+          exercise: {
+            question: 'Que traduit le signe négatif dans la loi de Faraday ?',
+            answer: 'Il traduit la loi de Lenz : la force électromotrice induite s’oppose à la variation de flux qui la produit.'
           },
-          {
-            title: 'OpenStax — Key Equations, Electromagnetic Induction (University Physics, Volume 2)',
-            url: 'https://openstax.org/books/university-physics-volume-2/pages/13-key-equations'
-          },
-          {
-            title: 'OpenStax — Chapter Summary, Electromagnetic Induction (University Physics, Volume 2)',
-            url: 'https://openstax.org/books/university-physics-volume-2/pages/13-summary'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'clapeyron-gaz-parfait',
-      title: 'La loi des gaz parfaits',
-      formula: "p × V = n × R × T",
-      equationDetails: {
-        label: "Loi des gaz parfaits",
-        formula: "p × V = n × R × T",
-        parameters: [
-          {
-            symbol: "p",
-            label: "Pression du gaz",
-            unit: "Pa"
-          },
-          {
-            symbol: "V",
-            label: "Volume occupé par le gaz",
-            unit: "m³"
-          },
-          {
-            symbol: "n",
-            label: "Quantité de matière du gaz",
-            unit: "mol"
-          },
-          {
-            symbol: "R",
-            label: "Constante universelle des gaz parfaits",
-            unit: "J/(mol·K)"
-          },
-          {
-            symbol: "T",
-            label: "Température absolue du gaz",
-            unit: "K"
-          }
-        ]
+          exercises: [
+            {
+              question: 'En quelle année Faraday réalise-t-il ses premières expériences productives sur les champs magnétiques variables ?',
+              answer: 'En 1831.'
+            },
+            {
+              question: 'Une force électromotrice est-elle induite si le flux magnétique reste constant ?',
+              answer: 'Non. Sans variation de flux, aucune force électromotrice n’est induite.'
+            },
+            {
+              question: 'Quelle est l’unité SI du flux magnétique ?',
+              answer: 'Le weber (Wb).'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi de Faraday de l’induction électromagnétique',
+              formula: 'ε = −N × dΦm/dt',
+              explanation: 'La loi de Faraday relie la force électromotrice induite dans un circuit à la vitesse de variation du flux magnétique qui le traverse. Elle est à l’origine du fonctionnement des générateurs, des transformateurs et de nombreux capteurs.',
+              parameters: 'ε : force électromotrice induite dans la boucle fermée (V) ; N : nombre de spires de la bobine (sans unité) ; Φm : flux magnétique à travers une spire (Wb) ; t : temps (s).',
+              example: 'Une bobine de 100 spires est traversée par un flux magnétique qui, par spire, passe uniformément de 5,0 × 10⁻³ Wb à 1,0 × 10⁻³ Wb en 0,20 s : dΦm/dt = (1,0 × 10⁻³ − 5,0 × 10⁻³) / 0,20 = −2,0 × 10⁻² Wb/s. |ε| = N × |dΦm/dt| = 100 × 2,0 × 10⁻² = 2,0 V.',
+              result: 'La force électromotrice induite a une valeur absolue de 2,0 V.',
+              mathML: 'faraday-induction-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Faraday’s Law (University Physics, Volume 2)',
+              url: 'https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law'
+            },
+            {
+              title: 'OpenStax — Key Equations, Electromagnetic Induction (University Physics, Volume 2)',
+              url: 'https://openstax.org/books/university-physics-volume-2/pages/13-key-equations'
+            },
+            {
+              title: 'OpenStax — Chapter Summary, Electromagnetic Induction (University Physics, Volume 2)',
+              url: 'https://openstax.org/books/university-physics-volume-2/pages/13-summary'
+            }
+          ]
+        }
       },
-      field: 'Thermodynamique · Gaz parfaits · 1834',
-      summary: 'La loi des gaz parfaits relie la pression, le volume, la quantité de matière et la température d’un gaz dans le modèle idéal. Elle regroupe plusieurs lois empiriques en une seule équation d’état et sert de point de départ à de nombreux calculs de thermodynamique.',
-      lesson: {
-        sections: [
-          'Auteur : Émile Clapeyron (1799–1864). En 1834, dans son mémoire sur la puissance motrice de la chaleur, il combine les lois de Boyle–Mariotte et de Gay-Lussac en une équation d’état unique. Il l’écrit alors par unité de masse de gaz, sous la forme pv = RT, la constante R dépendant du gaz considéré. La forme avec la quantité de matière, pV = nRT, s’impose ensuite.',
-
-
-          'Équation : pV = nRT. p est la pression du gaz, V son volume, n la quantité de matière en moles, T la température absolue en kelvins et R la constante universelle des gaz parfaits, voisine de 8,314 J·mol⁻¹·K⁻¹.',
-
-
-          'Le modèle du gaz parfait est une bonne description aux basses pressions et aux hautes températures, lorsque les molécules interagissent très peu entre elles. Il décrit mal un gaz proche de son point de condensation. La loi contient comme cas particuliers les lois de Boyle (T et n constants), de Charles (p et n constants) et d’Avogadro (p et T constants).'
-        ],
-        example: {
-          statement: 'Quel volume occupe 1,00 mol de gaz parfait à 273,15 K sous une pression de 101 325 Pa ?',
-          calculation: 'V = nRT / p = (1,00 × 8,314 × 273,15) / 101 325 ≈ 2,271 × 10³ / 101 325 ≈ 2,24 × 10⁻² m³.',
-          answer: 'Le volume est d’environ 2,24 × 10⁻² m³, soit environ 22,4 L, dans le modèle du gaz parfait.'
-        },
-        exercise: {
-          question: 'À quantité de matière et température constantes, que devient la pression si le volume est divisé par 2 ?',
-          answer: 'Elle double, conformément à la loi de Boyle, cas particulier de la loi des gaz parfaits.'
-        },
-        exercises: [
-          {
-            question: 'Pourquoi la température doit-elle être exprimée en kelvins dans cette loi ?',
-            answer: 'Parce que la loi fait intervenir la température absolue : à volume et quantité de matière constants, la pression est proportionnelle à la température exprimée en kelvins.'
+      {
+        id: 'clapeyron-gaz-parfait',
+        title: 'La loi des gaz parfaits',
+        field: 'Thermodynamique · Gaz parfaits · 1834',
+        summary: 'La loi des gaz parfaits relie la pression, le volume, la quantité de matière et la température d’un gaz dans le modèle idéal. Elle regroupe plusieurs lois empiriques en une seule équation d’état et sert de point de départ à de nombreux calculs de thermodynamique.',
+        lesson: {
+          sections: [
+            'Auteur : Émile Clapeyron (1799–1864). En 1834, dans son mémoire sur la puissance motrice de la chaleur, il combine les lois de Boyle–Mariotte et de Gay-Lussac en une équation d’état unique. Il l’écrit alors par unité de masse de gaz, sous la forme pv = RT, la constante R dépendant du gaz considéré. La forme avec la quantité de matière, pV = nRT, s’impose ensuite.',
+            'Équation : pV = nRT. p est la pression du gaz, V son volume, n la quantité de matière en moles, T la température absolue en kelvins et R la constante universelle des gaz parfaits, voisine de 8,314 J·mol⁻¹·K⁻¹.',
+            'Le modèle du gaz parfait est une bonne description aux basses pressions et aux hautes températures, lorsque les molécules interagissent très peu entre elles. Il décrit mal un gaz proche de son point de condensation. La loi contient comme cas particuliers les lois de Boyle (T et n constants), de Charles (p et n constants) et d’Avogadro (p et T constants).'
+          ],
+          formula: {
+            label: 'LOI DES GAZ PARFAITS',
+            text: 'p × V = n × R × T',
+            mathML: 'ideal-gas-law'
           },
-          {
-            question: 'Dans quelles conditions un gaz réel se rapproche-t-il du comportement d’un gaz parfait ?',
-            answer: 'À basse pression et à haute température.'
+          example: {
+            statement: 'Quel volume occupe 1,00 mol de gaz parfait à 273,15 K sous une pression de 101 325 Pa ?',
+            calculation: 'V = nRT / p = (1,00 × 8,314 × 273,15) / 101 325 ≈ 2,271 × 10³ / 101 325 ≈ 2,24 × 10⁻² m³.',
+            answer: 'Le volume est d’environ 2,24 × 10⁻² m³, soit environ 22,4 L, dans le modèle du gaz parfait.'
           },
-          {
-            question: 'Quelle est l’unité SI de la constante R ?',
-            answer: 'Le joule par mole et par kelvin (J·mol⁻¹·K⁻¹).'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law (Chemistry 2e)',
-            url: 'https://openstax.org/books/chemistry-2e/pages/9-2-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law'
+          exercise: {
+            question: 'À quantité de matière et température constantes, que devient la pression si le volume est divisé par 2 ?',
+            answer: 'Elle double, conformément à la loi de Boyle, cas particulier de la loi des gaz parfaits.'
           },
-          {
-            title: 'Encyclopaedia Britannica — Ideal gas law',
-            url: 'https://www.britannica.com/print/article/451483'
-          },
-          {
-            title: 'University of Cincinnati (Oesper Collections) — The Universal Gas Constant R',
-            url: 'https://homepages.uc.edu/~jensenwb/reprints/100.%20Gas%20Constant.pdf'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'stefan-boltzmann-rayonnement',
-      title: 'La loi de Stefan–Boltzmann',
-      formula: "P = σ × A × T⁴",
-      equationDetails: {
-        label: "Loi de Stefan–Boltzmann (corps noir)",
-        formula: "P = σ × A × T⁴",
-        parameters: [
-          {
-            symbol: "P",
-            label: "Puissance rayonnée par le corps noir",
-            unit: "W"
-          },
-          {
-            symbol: "σ",
-            label: "Constante de Stefan–Boltzmann",
-            unit: "W/(m²·K⁴)"
-          },
-          {
-            symbol: "A",
-            label: "Aire de la surface rayonnante",
-            unit: "m²"
-          },
-          {
-            symbol: "T",
-            label: "Température absolue de la surface",
-            unit: "K"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Pourquoi la température doit-elle être exprimée en kelvins dans cette loi ?',
+              answer: 'Parce que la loi fait intervenir la température absolue : à volume et quantité de matière constants, la pression est proportionnelle à la température exprimée en kelvins.'
+            },
+            {
+              question: 'Dans quelles conditions un gaz réel se rapproche-t-il du comportement d’un gaz parfait ?',
+              answer: 'À basse pression et à haute température.'
+            },
+            {
+              question: 'Quelle est l’unité SI de la constante R ?',
+              answer: 'Le joule par mole et par kelvin (J·mol⁻¹·K⁻¹).'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi des gaz parfaits',
+              formula: 'p × V = n × R × T',
+              explanation: 'La loi des gaz parfaits relie la pression, le volume, la quantité de matière et la température d’un gaz dans le modèle idéal. Elle regroupe plusieurs lois empiriques en une seule équation d’état et sert de point de départ à de nombreux calculs de thermodynamique.',
+              parameters: 'p : pression du gaz (Pa) ; V : volume occupé par le gaz (m³) ; n : quantité de matière du gaz (mol) ; R : constante universelle des gaz parfaits (J·mol⁻¹·K⁻¹) ; T : température absolue du gaz (K).',
+              example: 'Quel volume occupe 1,00 mol de gaz parfait à 273,15 K sous une pression de 101 325 Pa ? V = nRT / p = (1,00 × 8,314 × 273,15) / 101 325 ≈ 2,271 × 10³ / 101 325 ≈ 2,24 × 10⁻² m³.',
+              result: 'Le volume est d’environ 2,24 × 10⁻² m³, soit environ 22,4 L, dans le modèle du gaz parfait.',
+              mathML: 'ideal-gas-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — Relating Pressure, Volume, Amount, and Temperature: The Ideal Gas Law (Chemistry 2e)',
+              url: 'https://openstax.org/books/chemistry-2e/pages/9-2-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law'
+            },
+            {
+              title: 'Encyclopaedia Britannica — Ideal gas law',
+              url: 'https://www.britannica.com/print/article/451483'
+            },
+            {
+              title: 'University of Cincinnati (Oesper Collections) — The Universal Gas Constant R',
+              url: 'https://homepages.uc.edu/~jensenwb/reprints/100.%20Gas%20Constant.pdf'
+            }
+          ]
+        }
       },
-      field: 'Thermodynamique · Rayonnement thermique · 1879',
-      summary: 'La loi de Stefan–Boltzmann indique que la puissance rayonnée par un corps noir est proportionnelle à la quatrième puissance de sa température absolue. Elle permet notamment d’estimer la température de surface des étoiles à partir de leur rayonnement.',
-      lesson: {
-        sections: [
-          'Auteurs : Josef Stefan (1835–1893) et Ludwig Boltzmann (1844–1906). Stefan formule la loi en 1879 à partir de résultats expérimentaux, notamment des mesures de Tyndall sur le rayonnement d’un filament de platine. Boltzmann en donne en 1884 une démonstration théorique fondée sur des considérations thermodynamiques.',
-
-
-          'Équation : P = σAT⁴. P est la puissance rayonnée par la surface d’aire A, T sa température absolue et σ la constante de Stefan–Boltzmann, d’environ 5,670374419 × 10⁻⁸ W·m⁻²·K⁻⁴. Par unité de surface, la loi s’écrit E = σT⁴.',
-
-
-          'La loi s’applique aux corps noirs, surfaces théoriques qui absorbent tout le rayonnement incident. Pour une surface réelle, on introduit un facteur d’émissivité ε qui caractérise cette surface, et la puissance rayonnée s’écrit P = εσAT⁴. La puissance varie comme la quatrième puissance de la température : un faible écart de température entraîne un écart important de rayonnement.'
-        ],
-        example: {
-          statement: 'La température absolue d’un corps noir double, sa surface restant constante. Comment évolue la puissance rayonnée ?',
-          calculation: 'P ∝ T⁴, donc P₂ / P₁ = (2T / T)⁴ = 2⁴ = 16.',
-          answer: 'La puissance rayonnée est multipliée par 16.'
-        },
-        exercise: {
-          question: 'Comment la puissance rayonnée par un corps noir varie-t-elle avec sa température absolue ?',
-          answer: 'Elle est proportionnelle à la quatrième puissance de la température absolue.'
-        },
-        exercises: [
-          {
-            question: 'Quelle puissance rayonne un corps noir de 1,00 m² à 300 K ?',
-            answer: 'P = σAT⁴ = 5,670 × 10⁻⁸ × 1,00 × 300⁴ = 5,670 × 10⁻⁸ × 8,1 × 10⁹ ≈ 459 W.'
+      {
+        id: 'stefan-boltzmann-rayonnement',
+        title: 'La loi de Stefan–Boltzmann',
+        field: 'Thermodynamique · Rayonnement thermique · 1879',
+        summary: 'La loi de Stefan–Boltzmann indique que la puissance rayonnée par un corps noir est proportionnelle à la quatrième puissance de sa température absolue. Elle permet notamment d’estimer la température de surface des étoiles à partir de leur rayonnement.',
+        lesson: {
+          sections: [
+            'Auteurs : Josef Stefan (1835–1893) et Ludwig Boltzmann (1844–1906). Stefan formule la loi en 1879 à partir de résultats expérimentaux, notamment des mesures de Tyndall sur le rayonnement d’un filament de platine. Boltzmann en donne en 1884 une démonstration théorique fondée sur des considérations thermodynamiques.',
+            'Équation : P = σAT⁴. P est la puissance rayonnée par la surface d’aire A, T sa température absolue et σ la constante de Stefan–Boltzmann, d’environ 5,670374419 × 10⁻⁸ W·m⁻²·K⁻⁴. Par unité de surface, la loi s’écrit E = σT⁴.',
+            'La loi s’applique aux corps noirs, surfaces théoriques qui absorbent tout le rayonnement incident. Pour une surface réelle, on introduit un facteur d’émissivité ε qui caractérise cette surface, et la puissance rayonnée s’écrit P = εσAT⁴. La puissance varie comme la quatrième puissance de la température : un faible écart de température entraîne un écart important de rayonnement.'
+          ],
+          formula: {
+            label: 'LOI DE STEFAN–BOLTZMANN (CORPS NOIR)',
+            text: 'P = σ × A × T⁴',
+            mathML: 'stefan-boltzmann-law'
           },
-          {
-            question: 'Qui a établi la loi expérimentalement, et qui l’a démontrée théoriquement ?',
-            answer: 'Josef Stefan l’a établie expérimentalement en 1879 et Ludwig Boltzmann l’a démontrée théoriquement en 1884.'
+          example: {
+            statement: 'La température absolue d’un corps noir double, sa surface restant constante. Comment évolue la puissance rayonnée ?',
+            calculation: 'P ∝ T⁴, donc P₂ / P₁ = (2T / T)⁴ = 2⁴ = 16.',
+            answer: 'La puissance rayonnée est multipliée par 16.'
           },
-          {
-            question: 'La loi s’applique-t-elle sans correction à une surface réelle ?',
-            answer: 'Non. Elle s’applique aux corps noirs ; pour une surface réelle, on introduit un facteur d’émissivité.'
-          }
-        ],
-        sources: [
-          {
-            title: 'Encyclopaedia Britannica — Stefan-Boltzmann law',
-            url: 'https://www.britannica.com/print/article/564843'
+          exercise: {
+            question: 'Comment la puissance rayonnée par un corps noir varie-t-elle avec sa température absolue ?',
+            answer: 'Elle est proportionnelle à la quatrième puissance de la température absolue.'
           },
-          {
-            title: 'Encyclopaedia Britannica — Josef Stefan',
-            url: 'https://www.britannica.com/print/article/564834'
-          },
-          {
-            title: 'Comptes Rendus Mécanique (Académie des sciences) — The eponymous, anonymous Joseph Stefan',
-            url: 'https://comptes-rendus.academie-sciences.fr/mecanique/item/10.1016/j.crme.2012.03.005.pdf'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'rydberg-spectres',
-      title: 'La formule de Rydberg : raies spectrales de l’hydrogène',
-      formula: "1/λ = RH × (1/n1² − 1/n2²)",
-      equationDetails: {
-        label: "Formule de Rydberg pour l’hydrogène",
-        formula: "1/λ = RH × (1/n1² − 1/n2²)",
-        parameters: [
-          {
-            symbol: "λ",
-            label: "Longueur d’onde de la raie spectrale",
-            unit: "m"
-          },
-          {
-            symbol: "RH",
-            label: "Constante de Rydberg pour l’hydrogène (environ 1,09677583 × 10⁷ m⁻¹)",
-            unit: "m⁻¹"
-          },
-          {
-            symbol: "n1",
-            label: "Nombre quantique principal du niveau inférieur (entier, n1 < n2)",
-            unit: "sans unité"
-          },
-          {
-            symbol: "n2",
-            label: "Nombre quantique principal du niveau supérieur (entier)",
-            unit: "sans unité"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Quelle puissance rayonne un corps noir de 1,00 m² à 300 K ?',
+              answer: 'P = σAT⁴ = 5,670 × 10⁻⁸ × 1,00 × 300⁴ = 5,670 × 10⁻⁸ × 8,1 × 10⁹ ≈ 459 W.'
+            },
+            {
+              question: 'Qui a établi la loi expérimentalement, et qui l’a démontrée théoriquement ?',
+              answer: 'Josef Stefan l’a établie expérimentalement en 1879 et Ludwig Boltzmann l’a démontrée théoriquement en 1884.'
+            },
+            {
+              question: 'La loi s’applique-t-elle sans correction à une surface réelle ?',
+              answer: 'Non. Elle s’applique aux corps noirs ; pour une surface réelle, on introduit un facteur d’émissivité.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi de Stefan–Boltzmann (corps noir)',
+              formula: 'P = σ × A × T⁴',
+              explanation: 'La loi de Stefan–Boltzmann indique que la puissance rayonnée par un corps noir est proportionnelle à la quatrième puissance de sa température absolue. Elle permet notamment d’estimer la température de surface des étoiles à partir de leur rayonnement.',
+              parameters: 'P : puissance rayonnée par le corps noir (W) ; σ : constante de Stefan–Boltzmann (W·m⁻²·K⁻⁴) ; A : aire de la surface rayonnante (m²) ; T : température absolue de la surface (K).',
+              example: 'La température absolue d’un corps noir double, sa surface restant constante : P ∝ T⁴, donc P₂ / P₁ = (2T / T)⁴ = 2⁴ = 16.',
+              result: 'La puissance rayonnée est multipliée par 16.',
+              mathML: 'stefan-boltzmann-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'Encyclopaedia Britannica — Stefan-Boltzmann law',
+              url: 'https://www.britannica.com/print/article/564843'
+            },
+            {
+              title: 'Encyclopaedia Britannica — Josef Stefan',
+              url: 'https://www.britannica.com/print/article/564834'
+            },
+            {
+              title: 'Comptes Rendus Mécanique (Académie des sciences) — The eponymous, anonymous Joseph Stefan',
+              url: 'https://comptes-rendus.academie-sciences.fr/mecanique/item/10.1016/j.crme.2012.03.005.pdf'
+            }
+          ]
+        }
       },
-      field: 'Physique atomique · Spectroscopie · 1888',
-      summary: 'La formule de Rydberg donne les longueurs d’onde des raies d’émission de l’hydrogène à partir de deux nombres entiers. Établie de façon empirique, elle a joué un rôle important dans la mise en place du modèle quantique de l’atome.',
-      lesson: {
-        sections: [
-          'Auteur : Johannes Rydberg (1854–1919), physicien suédois. En 1888, il reformule l’expression établie par Johann Balmer en 1885 pour les raies visibles de l’hydrogène et la généralise à d’autres séries de raies. Cette expression est empirique : elle n’est pas accompagnée d’une explication physique, qui sera apportée par Niels Bohr en 1913.',
-
-
-          'Équation : 1/λ = RH(1/n1² − 1/n2²). λ est la longueur d’onde de la raie, RH la constante de Rydberg pour l’hydrogène, d’environ 1,09677583 × 10⁷ m⁻¹, et n1 et n2 des nombres entiers tels que n1 < n2.',
-
-
-          'Pour n1 = 2 et n2 ≥ 3, on obtient la série de Balmer, dans le visible. Pour n1 = 1 et n2 ≥ 2, on obtient la série de Lyman, dans l’ultraviolet, et pour n1 = 3 et n2 ≥ 4 la série de Paschen, dans l’infrarouge. Dans le modèle de Bohr, une raie correspond à la transition d’un électron entre deux niveaux d’énergie. Des formules analogues s’appliquent aux ions hydrogénoïdes, qui ne possèdent qu’un seul électron.'
-        ],
-        example: {
-          statement: 'Calculer la longueur d’onde de la première raie de la série de Balmer (n1 = 2, n2 = 3) avec RH = 1,09677583 × 10⁷ m⁻¹.',
-          calculation: '1/λ = RH × (1/2² − 1/3²) = RH × (1/4 − 1/9) = RH × 5/36 ≈ 1,5233 × 10⁶ m⁻¹. Donc λ ≈ 6,565 × 10⁻⁷ m.',
-          answer: 'La longueur d’onde est d’environ 656 nm, dans le rouge du spectre visible.'
-        },
-        exercise: {
-          question: 'Quelles valeurs de n1 et n2 correspondent à la série de Balmer ?',
-          answer: 'n1 = 2 et n2 est un entier supérieur ou égal à 3.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année Rydberg propose-t-il sa formule ?',
-            answer: 'En 1888.'
+      {
+        id: 'rydberg-spectres',
+        title: 'La formule de Rydberg : raies spectrales de l’hydrogène',
+        field: 'Physique atomique · Spectroscopie · 1888',
+        summary: 'La formule de Rydberg donne les longueurs d’onde des raies d’émission de l’hydrogène à partir de deux nombres entiers. Établie de façon empirique, elle a joué un rôle important dans la mise en place du modèle quantique de l’atome.',
+        lesson: {
+          sections: [
+            'Auteur : Johannes Rydberg (1854–1919), physicien suédois. En 1888, il reformule l’expression établie par Johann Balmer en 1885 pour les raies visibles de l’hydrogène et la généralise à d’autres séries de raies. Cette expression est empirique : elle n’est pas accompagnée d’une explication physique, qui sera apportée par Niels Bohr en 1913.',
+            'Équation : 1/λ = RH(1/n1² − 1/n2²). λ est la longueur d’onde de la raie, RH la constante de Rydberg pour l’hydrogène, d’environ 1,09677583 × 10⁷ m⁻¹, et n1 et n2 des nombres entiers tels que n1 < n2.',
+            'Pour n1 = 2 et n2 ≥ 3, on obtient la série de Balmer, dans le visible. Pour n1 = 1 et n2 ≥ 2, on obtient la série de Lyman, dans l’ultraviolet, et pour n1 = 3 et n2 ≥ 4 la série de Paschen, dans l’infrarouge. Dans le modèle de Bohr, une raie correspond à la transition d’un électron entre deux niveaux d’énergie. Des formules analogues s’appliquent aux ions hydrogénoïdes, qui ne possèdent qu’un seul électron.'
+          ],
+          formula: {
+            label: 'FORMULE DE RYDBERG POUR L’HYDROGÈNE',
+            text: '1/λ = RH × (1/n₁² − 1/n₂²)',
+            mathML: 'rydberg-formula'
           },
-          {
-            question: 'Qui fournit une explication théorique de la formule en 1913 ?',
-            answer: 'Niels Bohr, avec une forme primitive de mécanique quantique.'
+          example: {
+            statement: 'Calculer la longueur d’onde de la première raie de la série de Balmer (n1 = 2, n2 = 3) avec RH = 1,09677583 × 10⁷ m⁻¹.',
+            calculation: '1/λ = RH × (1/2² − 1/3²) = RH × (1/4 − 1/9) = RH × 5/36 ≈ 1,5233 × 10⁶ m⁻¹. Donc λ ≈ 6,565 × 10⁻⁷ m.',
+            answer: 'La longueur d’onde est d’environ 656 nm, dans le rouge du spectre visible.'
           },
-          {
-            question: 'Quelle est la limite de la série de Balmer lorsque n2 tend vers l’infini ?',
-            answer: '1/λ = RH/4, soit λ = 4/RH ≈ 3,65 × 10⁻⁷ m, environ 365 nm.'
-          }
-        ],
-        sources: [
-          {
-            title: 'Encyclopaedia Britannica — Spectral line series',
-            url: 'https://www.britannica.com/print/article/558836'
+          exercise: {
+            question: 'Quelles valeurs de n1 et n2 correspondent à la série de Balmer ?',
+            answer: 'n1 = 2 et n2 est un entier supérieur ou égal à 3.'
           },
-          {
-            title: 'Spectroscopy Online — The Spectral Lines of Hydrogen',
-            url: 'https://www.spectroscopyonline.com/view/spectral-lines-hydrogen'
-          },
-          {
-            title: 'Wikipedia — Rydberg formula',
-            url: 'https://en.wikipedia.org/wiki/Rydberg_formula'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'lorentz-force',
-      title: 'La force de Lorentz',
-      formula: "F = q × (E + v × B)",
-      equationDetails: {
-        label: "Force de Lorentz",
-        formula: "F = q × (E + v × B)",
-        parameters: [
-          {
-            symbol: "F",
-            label: "Force électromagnétique exercée sur la charge (vecteur)",
-            unit: "N"
-          },
-          {
-            symbol: "q",
-            label: "Charge électrique de la particule",
-            unit: "C"
-          },
-          {
-            symbol: "E",
-            label: "Champ électrique (vecteur)",
-            unit: "V/m"
-          },
-          {
-            symbol: "v",
-            label: "Vitesse de la particule (vecteur)",
-            unit: "m/s"
-          },
-          {
-            symbol: "B",
-            label: "Champ magnétique (vecteur)",
-            unit: "T"
-          }
-        ]
+          exercises: [
+            {
+              question: 'En quelle année Rydberg propose-t-il sa formule ?',
+              answer: 'En 1888.'
+            },
+            {
+              question: 'Qui fournit une explication théorique de la formule en 1913 ?',
+              answer: 'Niels Bohr, avec une forme primitive de mécanique quantique.'
+            },
+            {
+              question: 'Quelle est la limite de la série de Balmer lorsque n2 tend vers l’infini ?',
+              answer: '1/λ = RH/4, soit λ = 4/RH ≈ 3,65 × 10⁻⁷ m, environ 365 nm.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Formule de Rydberg pour l’hydrogène',
+              formula: '1/λ = RH × (1/n₁² − 1/n₂²)',
+              explanation: 'La formule de Rydberg donne les longueurs d’onde des raies d’émission de l’hydrogène à partir de deux nombres entiers. Établie de façon empirique, elle a joué un rôle important dans la mise en place du modèle quantique de l’atome.',
+              parameters: 'λ : longueur d’onde de la raie spectrale (m) ; RH : constante de Rydberg pour l’hydrogène (environ 1,09677583 × 10⁷ m⁻¹) (m⁻¹) ; n₁ : nombre quantique principal du niveau inférieur (entier, n1 < n2) (sans unité) ; n₂ : nombre quantique principal du niveau supérieur (entier) (sans unité).',
+              example: 'Calculer la longueur d’onde de la première raie de la série de Balmer (n1 = 2, n2 = 3) avec RH = 1,09677583 × 10⁷ m⁻¹. 1/λ = RH × (1/2² − 1/3²) = RH × (1/4 − 1/9) = RH × 5/36 ≈ 1,5233 × 10⁶ m⁻¹. Donc λ ≈ 6,565 × 10⁻⁷ m.',
+              result: 'La longueur d’onde est d’environ 656 nm, dans le rouge du spectre visible.',
+              mathML: 'rydberg-formula'
+            }
+          ],
+          sources: [
+            {
+              title: 'Encyclopaedia Britannica — Spectral line series',
+              url: 'https://www.britannica.com/print/article/558836'
+            },
+            {
+              title: 'Spectroscopy Online — The Spectral Lines of Hydrogen',
+              url: 'https://www.spectroscopyonline.com/view/spectral-lines-hydrogen'
+            },
+            {
+              title: 'Wikipedia — Rydberg formula',
+              url: 'https://en.wikipedia.org/wiki/Rydberg_formula'
+            }
+          ]
+        }
       },
-      field: 'Électromagnétisme · Particules chargées · 1895',
-      summary: 'La force de Lorentz donne la force totale exercée par un champ électrique et un champ magnétique sur une charge ponctuelle. Elle relie les champs de Maxwell au mouvement des particules chargées et explique le fonctionnement des cyclotrons, des spectromètres de masse et de nombreux dispositifs.',
-      lesson: {
-        sections: [
-          'Auteur : Hendrik Antoon Lorentz (1853–1928). La contribution magnétique sous forme de produit vectoriel est identifiée par Oliver Heaviside en 1889 ; Lorentz parvient à l’expression complète, incluant la contribution électrique, en 1895. La datation varie selon les sources : certaines mentionnent une première formulation par Lorentz dès 1892, et la loi est parfois considérée comme implicite dans un mémoire de Maxwell de 1865.',
-
-
-          'Équation : F = q(E + v × B). F est la force exercée sur la charge q, E le champ électrique, v la vitesse de la charge et B le champ magnétique. Le terme qE est la force électrique et le terme qv × B la force magnétique.',
-
-
-          'La force électrique agit que la charge soit en mouvement ou non. La force magnétique n’existe que si la charge est en mouvement : elle est perpendiculaire à la fois à v et à B. Elle ne travaille donc pas : elle modifie la direction de la vitesse, pas sa norme. Pour une charge de masse m en mouvement perpendiculaire à un champ magnétique uniforme, l’égalité entre la force magnétique et la force centripète donne la trajectoire circulaire de rayon r = mv / (|q|B).'
-        ],
-        example: {
-          statement: 'Une particule de charge q = 2,0 × 10⁻⁶ C se déplace à la vitesse v = 3,0 × 10³ m/s perpendiculairement à un champ magnétique B = 0,50 T, en l’absence de champ électrique. Quelle est la norme de la force subie ?',
-          calculation: '|F| = |q| × v × B = 2,0 × 10⁻⁶ × 3,0 × 10³ × 0,50 = 3,0 × 10⁻³ N.',
-          answer: 'La force a une norme de 3,0 × 10⁻³ N, perpendiculaire à la vitesse et au champ magnétique.'
-        },
-        exercise: {
-          question: 'La force magnétique agit-elle sur une charge immobile ?',
-          answer: 'Non. La force magnétique qv × B est nulle si la vitesse est nulle ; seule la force électrique qE agit sur une charge immobile.'
-        },
-        exercises: [
-          {
-            question: 'Quel est l’effet de la force magnétique sur l’énergie cinétique d’une particule chargée ?',
-            answer: 'Aucun : elle ne travaille pas. Elle change la direction de la vitesse mais pas sa norme.'
+      {
+        id: 'lorentz-force',
+        title: 'La force de Lorentz',
+        field: 'Électromagnétisme · Particules chargées · 1895',
+        summary: 'La force de Lorentz donne la force totale exercée par un champ électrique et un champ magnétique sur une charge ponctuelle. Elle relie les champs de Maxwell au mouvement des particules chargées et explique le fonctionnement des cyclotrons, des spectromètres de masse et de nombreux dispositifs.',
+        lesson: {
+          sections: [
+            'Auteur : Hendrik Antoon Lorentz (1853–1928). La contribution magnétique sous forme de produit vectoriel est identifiée par Oliver Heaviside en 1889 ; Lorentz parvient à l’expression complète, incluant la contribution électrique, en 1895. La datation varie selon les sources : certaines mentionnent une première formulation par Lorentz dès 1892, et la loi est parfois considérée comme implicite dans un mémoire de Maxwell de 1865.',
+            'Équation : F = q(E + v × B). F est la force exercée sur la charge q, E le champ électrique, v la vitesse de la charge et B le champ magnétique. Le terme qE est la force électrique et le terme qv × B la force magnétique.',
+            'La force électrique agit que la charge soit en mouvement ou non. La force magnétique n’existe que si la charge est en mouvement : elle est perpendiculaire à la fois à v et à B. Elle ne travaille donc pas : elle modifie la direction de la vitesse, pas sa norme. Pour une charge de masse m en mouvement perpendiculaire à un champ magnétique uniforme, l’égalité entre la force magnétique et la force centripète donne la trajectoire circulaire de rayon r = mv / (|q|B).'
+          ],
+          formula: {
+            label: 'FORCE DE LORENTZ',
+            text: 'F = q × (E + v × B)',
+            mathML: 'lorentz-force'
           },
-          {
-            question: 'Quelle est la direction de la force magnétique ?',
-            answer: 'Elle est perpendiculaire au plan formé par v et B, avec un sens donné par la règle de la main droite pour une charge positive.'
+          example: {
+            statement: 'Une particule de charge q = 2,0 × 10⁻⁶ C se déplace à la vitesse v = 3,0 × 10³ m/s perpendiculairement à un champ magnétique B = 0,50 T, en l’absence de champ électrique. Quelle est la norme de la force subie ?',
+            calculation: '|F| = |q| × v × B = 2,0 × 10⁻⁶ × 3,0 × 10³ × 0,50 = 3,0 × 10⁻³ N.',
+            answer: 'La force a une norme de 3,0 × 10⁻³ N, perpendiculaire à la vitesse et au champ magnétique.'
           },
-          {
-            question: 'Qui identifie la contribution magnétique sous forme de produit vectoriel, et en quelle année ?',
-            answer: 'Oliver Heaviside, en 1889.'
-          }
-        ],
-        sources: [
-          {
-            title: 'LibreTexts (OpenStax College Physics) — Magnetic Field Strength: Force on a Moving Charge in a Magnetic Field',
-            url: 'https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_(OpenStax)/22%3A_Magnetism/22.04%3A_Magnetic_Field_Strength-_Force_on_a_Moving_Charge_in_a_Magnetic_Field'
+          exercise: {
+            question: 'La force magnétique agit-elle sur une charge immobile ?',
+            answer: 'Non. La force magnétique qv × B est nulle si la vitesse est nulle ; seule la force électrique qE agit sur une charge immobile.'
           },
-          {
-            title: 'NPTEL — Module 3: Electromagnetism, The Lorentz Force',
-            url: 'https://archive.nptel.ac.in/content/storage2/courses/122101002/Slides/Module-3/Lec-13/13.1_6.html'
-          },
-          {
-            title: 'Physics Essays 8 (1995) — Weber’s Force versus Lorentz’s Force',
-            url: 'https://www.ifi.unicamp.br/~assis/Phys-Essays-V8-p335-341(1995).pdf'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'de-broglie-ondes-de-matiere',
-      title: 'La relation de de Broglie : ondes de matière',
-      formula: "λ = h / p",
-      equationDetails: {
-        label: "Relation de de Broglie",
-        formula: "λ = h / p",
-        parameters: [
-          {
-            symbol: "λ",
-            label: "Longueur d’onde associée à la particule",
-            unit: "m"
-          },
-          {
-            symbol: "h",
-            label: "Constante de Planck",
-            unit: "J·s"
-          },
-          {
-            symbol: "p",
-            label: "Quantité de mouvement de la particule",
-            unit: "kg·m/s"
-          }
-        ]
+          exercises: [
+            {
+              question: 'Quel est l’effet de la force magnétique sur l’énergie cinétique d’une particule chargée ?',
+              answer: 'Aucun : elle ne travaille pas. Elle change la direction de la vitesse mais pas sa norme.'
+            },
+            {
+              question: 'Quelle est la direction de la force magnétique ?',
+              answer: 'Elle est perpendiculaire au plan formé par v et B, avec un sens donné par la règle de la main droite pour une charge positive.'
+            },
+            {
+              question: 'Qui identifie la contribution magnétique sous forme de produit vectoriel, et en quelle année ?',
+              answer: 'Oliver Heaviside, en 1889.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Force de Lorentz',
+              formula: 'F = q × (E + v × B)',
+              explanation: 'La force de Lorentz donne la force totale exercée par un champ électrique et un champ magnétique sur une charge ponctuelle. Elle relie les champs de Maxwell au mouvement des particules chargées et explique le fonctionnement des cyclotrons, des spectromètres de masse et de nombreux dispositifs.',
+              parameters: 'F : force électromagnétique exercée sur la charge (vecteur) (N) ; q : charge électrique de la particule (C) ; E : champ électrique (vecteur) (V·m⁻¹) ; v : vitesse de la particule (vecteur) (m·s⁻¹) ; B : champ magnétique (vecteur) (T).',
+              example: 'Une particule de charge q = 2,0 × 10⁻⁶ C se déplace à la vitesse v = 3,0 × 10³ m/s perpendiculairement à un champ magnétique B = 0,50 T, en l’absence de champ électrique : |F| = |q| × v × B = 2,0 × 10⁻⁶ × 3,0 × 10³ × 0,50 = 3,0 × 10⁻³ N.',
+              result: 'La force a une norme de 3,0 × 10⁻³ N, perpendiculaire à la vitesse et au champ magnétique.',
+              mathML: 'lorentz-force'
+            }
+          ],
+          sources: [
+            {
+              title: 'LibreTexts (OpenStax College Physics) — Magnetic Field Strength: Force on a Moving Charge in a Magnetic Field',
+              url: 'https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_(OpenStax)/22%3A_Magnetism/22.04%3A_Magnetic_Field_Strength-_Force_on_a_Moving_Charge_in_a_Magnetic_Field'
+            },
+            {
+              title: 'NPTEL — Module 3: Electromagnetism, The Lorentz Force',
+              url: 'https://archive.nptel.ac.in/content/storage2/courses/122101002/Slides/Module-3/Lec-13/13.1_6.html'
+            },
+            {
+              title: 'Physics Essays 8 (1995) — Weber’s Force versus Lorentz’s Force',
+              url: 'https://www.ifi.unicamp.br/~assis/Phys-Essays-V8-p335-341(1995).pdf'
+            }
+          ]
+        }
       },
-      field: 'Physique quantique · Dualité onde-corpuscule · 1924',
-      summary: 'La relation de de Broglie associe une longueur d’onde à toute particule possédant une quantité de mouvement. Elle étend aux particules de matière la dualité onde-corpuscule déjà reconnue pour la lumière et prépare la mécanique ondulatoire.',
-      lesson: {
-        sections: [
-          'Auteur : Louis de Broglie (1892–1987). Dans sa thèse de doctorat de 1924, Recherches sur la théorie des quanta, il propose que les électrons et les autres particules de matière puissent se comporter comme des ondes. Il reçoit le prix Nobel de physique en 1929, après la confirmation expérimentale de la nature ondulatoire de la matière en 1927.',
-
-
-          'Équation : λ = h/p. λ est la longueur d’onde associée à la particule, h la constante de Planck et p la quantité de mouvement. Pour une particule non relativiste de masse m et de vitesse v, p = mv et λ = h/(mv). Pour une particule relativiste, p est la quantité de mouvement relativiste.',
-
-
-          'La relation généralise celle d’un photon, dont la quantité de mouvement p = hν/c et la longueur d’onde λ = c/ν conduisent à λ = h/p. Plus la quantité de mouvement est grande, plus la longueur d’onde est petite : elle est inobservable pour un objet macroscopique, mais significative pour un électron. En 1926, l’hypothèse de de Broglie, associée à la théorie de Bohr, a conduit au développement de la mécanique quantique ondulatoire.'
-        ],
-        example: {
-          statement: 'Un électron de masse 9,1 × 10⁻³¹ kg se déplace à 1,0 × 10⁶ m/s, vitesse non relativiste. Quelle est sa longueur d’onde de de Broglie, avec h = 6,626 × 10⁻³⁴ J·s ?',
-          calculation: 'p = mv = 9,1 × 10⁻³¹ × 1,0 × 10⁶ = 9,1 × 10⁻²⁵ kg·m/s. λ = h/p = 6,626 × 10⁻³⁴ / 9,1 × 10⁻²⁵ ≈ 7,3 × 10⁻¹⁰ m.',
-          answer: 'La longueur d’onde est d’environ 7,3 × 10⁻¹⁰ m, soit environ 0,73 nm.'
-        },
-        exercise: {
-          question: 'La vitesse d’une particule non relativiste est multipliée par 4, sa masse restant constante. Que devient sa longueur d’onde de de Broglie ?',
-          answer: 'Elle est divisée par 4, car λ = h/(mv) est inversement proportionnelle à la vitesse.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année de Broglie présente-t-il l’hypothèse des ondes de matière ?',
-            answer: 'En 1924, dans sa thèse de doctorat.'
+      {
+        id: 'de-broglie-ondes-de-matiere',
+        title: 'La relation de de Broglie : ondes de matière',
+        field: 'Physique quantique · Dualité onde-corpuscule · 1924',
+        summary: 'La relation de de Broglie associe une longueur d’onde à toute particule possédant une quantité de mouvement. Elle étend aux particules de matière la dualité onde-corpuscule déjà reconnue pour la lumière et prépare la mécanique ondulatoire.',
+        lesson: {
+          sections: [
+            'Auteur : Louis de Broglie (1892–1987). Dans sa thèse de doctorat de 1924, Recherches sur la théorie des quanta, il propose que les électrons et les autres particules de matière puissent se comporter comme des ondes. Il reçoit le prix Nobel de physique en 1929, après la confirmation expérimentale de la nature ondulatoire de la matière en 1927.',
+            'Équation : λ = h/p. λ est la longueur d’onde associée à la particule, h la constante de Planck et p la quantité de mouvement. Pour une particule non relativiste de masse m et de vitesse v, p = mv et λ = h/(mv). Pour une particule relativiste, p est la quantité de mouvement relativiste.',
+            'La relation généralise celle d’un photon, dont la quantité de mouvement p = hν/c et la longueur d’onde λ = c/ν conduisent à λ = h/p. Plus la quantité de mouvement est grande, plus la longueur d’onde est petite : elle est inobservable pour un objet macroscopique, mais significative pour un électron. En 1926, l’hypothèse de de Broglie, associée à la théorie de Bohr, a conduit au développement de la mécanique quantique ondulatoire.'
+          ],
+          formula: {
+            label: 'RELATION DE DE BROGLIE',
+            text: 'λ = h / p',
+            mathML: 'de-broglie-wavelength'
           },
-          {
-            question: 'Quelle observation expérimentale confirme les ondes de matière en 1927 ?',
-            answer: 'La diffraction d’électrons, observée notamment dans les expériences de Davisson et Germer.'
+          example: {
+            statement: 'Un électron de masse 9,1 × 10⁻³¹ kg se déplace à 1,0 × 10⁶ m/s, vitesse non relativiste. Quelle est sa longueur d’onde de de Broglie, avec h = 6,626 × 10⁻³⁴ J·s ?',
+            calculation: 'p = mv = 9,1 × 10⁻³¹ × 1,0 × 10⁶ = 9,1 × 10⁻²⁵ kg·m/s. λ = h/p = 6,626 × 10⁻³⁴ / 9,1 × 10⁻²⁵ ≈ 7,3 × 10⁻¹⁰ m.',
+            answer: 'La longueur d’onde est d’environ 7,3 × 10⁻¹⁰ m, soit environ 0,73 nm.'
           },
-          {
-            question: 'Pourquoi n’observe-t-on pas de comportement ondulatoire pour une balle ?',
-            answer: 'Parce que sa longueur d’onde de de Broglie est incommensurablement petite.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — De Broglie’s Matter Waves (University Physics, Volume 3)',
-            url: 'https://openstax.org/books/university-physics-volume-3/pages/6-5-de-broglies-matter-waves'
+          exercise: {
+            question: 'La vitesse d’une particule non relativiste est multipliée par 4, sa masse restant constante. Que devient sa longueur d’onde de de Broglie ?',
+            answer: 'Elle est divisée par 4, car λ = h/(mv) est inversement proportionnelle à la vitesse.'
           },
-          {
-            title: 'Wikipedia — Louis de Broglie',
-            url: 'https://en.wikipedia.org/wiki/Louis_de_Broglie'
-          },
-          {
-            title: 'Chemistry Explained — Louis de Broglie',
-            url: 'https://www.chemistryexplained.com/Co-Di/de-Broglie-Louis.html'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'heisenberg-incertitude',
-      title: 'Le principe d’incertitude de Heisenberg',
-      formula: "Δx × Δp ≥ ħ / 2",
-      equationDetails: {
-        label: "Relation d’incertitude position–quantité de mouvement",
-        formula: "Δx × Δp ≥ ħ / 2",
-        parameters: [
-          {
-            symbol: "Δx",
-            label: "Incertitude sur la position (écart-type)",
-            unit: "m"
-          },
-          {
-            symbol: "Δp",
-            label: "Incertitude sur la quantité de mouvement (écart-type)",
-            unit: "kg·m/s"
-          },
-          {
-            symbol: "ħ",
-            label: "Constante de Planck réduite (h / 2π)",
-            unit: "J·s"
-          }
-        ]
+          exercises: [
+            {
+              question: 'En quelle année de Broglie présente-t-il l’hypothèse des ondes de matière ?',
+              answer: 'En 1924, dans sa thèse de doctorat.'
+            },
+            {
+              question: 'Quelle observation expérimentale confirme les ondes de matière en 1927 ?',
+              answer: 'La diffraction d’électrons, observée notamment dans les expériences de Davisson et Germer.'
+            },
+            {
+              question: 'Pourquoi n’observe-t-on pas de comportement ondulatoire pour une balle ?',
+              answer: 'Parce que sa longueur d’onde de de Broglie est incommensurablement petite.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Relation de de Broglie',
+              formula: 'λ = h / p',
+              explanation: 'La relation de de Broglie associe une longueur d’onde à toute particule possédant une quantité de mouvement. Elle étend aux particules de matière la dualité onde-corpuscule déjà reconnue pour la lumière et prépare la mécanique ondulatoire.',
+              parameters: 'λ : longueur d’onde associée à la particule (m) ; h : constante de Planck (J·s) ; p : quantité de mouvement de la particule (kg·m·s⁻¹).',
+              example: 'Un électron de masse 9,1 × 10⁻³¹ kg se déplace à 1,0 × 10⁶ m/s, vitesse non relativiste : p = mv = 9,1 × 10⁻³¹ × 1,0 × 10⁶ = 9,1 × 10⁻²⁵ kg·m/s. λ = h/p = 6,626 × 10⁻³⁴ / 9,1 × 10⁻²⁵ ≈ 7,3 × 10⁻¹⁰ m.',
+              result: 'La longueur d’onde est d’environ 7,3 × 10⁻¹⁰ m, soit environ 0,73 nm.',
+              mathML: 'de-broglie-wavelength'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — De Broglie’s Matter Waves (University Physics, Volume 3)',
+              url: 'https://openstax.org/books/university-physics-volume-3/pages/6-5-de-broglies-matter-waves'
+            },
+            {
+              title: 'Wikipedia — Louis de Broglie',
+              url: 'https://en.wikipedia.org/wiki/Louis_de_Broglie'
+            },
+            {
+              title: 'Chemistry Explained — Louis de Broglie',
+              url: 'https://www.chemistryexplained.com/Co-Di/de-Broglie-Louis.html'
+            }
+          ]
+        }
       },
-      field: 'Mécanique quantique · 1927',
-      summary: 'Le principe d’incertitude fixe une limite fondamentale à la précision avec laquelle la position et la quantité de mouvement d’une particule peuvent être définies simultanément. Il est l’une des pierres angulaires de la mécanique quantique.',
-      lesson: {
-        sections: [
-          'Auteur : Werner Heisenberg. En 1927, il introduit la relation d’incertitude à partir d’une expérience de pensée, le « microscope de Heisenberg », sous la forme d’une inégalité approchée. La même année, Kennard en démontre rigoureusement la forme quantitative actuelle, Δx Δp ≥ ħ/2.',
-
-
-          'Équation : Δx Δp ≥ ħ/2. Dans la formulation de Kennard, retenue par la plupart des manuels, Δx et Δp sont les écarts-types σx et σp de la position et de la quantité de mouvement. ħ est la constante de Planck réduite, égale à h/2π.',
-
-
-          'Cette limite ne provient pas de l’imperfection des instruments : elle est liée au caractère ondulatoire des objets quantiques. Réduire Δx augmente nécessairement Δp, et inversement. Pour les objets de la vie courante, ħ est si petit que cette limite est négligeable.'
-        ],
-        example: {
-          statement: 'L’incertitude sur la quantité de mouvement d’une particule est Δp = 1,0 × 10⁻²⁴ kg·m/s. Quelle est la valeur minimale de l’incertitude sur sa position, avec ħ = 1,055 × 10⁻³⁴ J·s ?',
-          calculation: 'Δx ≥ ħ / (2Δp) = 1,055 × 10⁻³⁴ / (2 × 1,0 × 10⁻²⁴) ≈ 5,3 × 10⁻¹¹ m.',
-          answer: 'L’incertitude sur la position ne peut pas être inférieure à environ 5,3 × 10⁻¹¹ m.'
-        },
-        exercise: {
-          question: 'Si l’incertitude Δx est divisée par 2, que devient la valeur minimale de Δp ?',
-          answer: 'Elle double, car le produit Δx Δp doit rester supérieur ou égal à ħ/2.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année Heisenberg introduit-il la relation d’incertitude ?',
-            answer: 'En 1927.'
+      {
+        id: 'heisenberg-incertitude',
+        title: 'Le principe d’incertitude de Heisenberg',
+        field: 'Mécanique quantique · 1927',
+        summary: 'Le principe d’incertitude fixe une limite fondamentale à la précision avec laquelle la position et la quantité de mouvement d’une particule peuvent être définies simultanément. Il est l’une des pierres angulaires de la mécanique quantique.',
+        lesson: {
+          sections: [
+            'Auteur : Werner Heisenberg. En 1927, il introduit la relation d’incertitude à partir d’une expérience de pensée, le « microscope de Heisenberg », sous la forme d’une inégalité approchée. La même année, Kennard en démontre rigoureusement la forme quantitative actuelle, Δx Δp ≥ ħ/2.',
+            'Équation : Δx Δp ≥ ħ/2. Dans la formulation de Kennard, retenue par la plupart des manuels, Δx et Δp sont les écarts-types σx et σp de la position et de la quantité de mouvement. ħ est la constante de Planck réduite, égale à h/2π.',
+            'Cette limite ne provient pas de l’imperfection des instruments : elle est liée au caractère ondulatoire des objets quantiques. Réduire Δx augmente nécessairement Δp, et inversement. Pour les objets de la vie courante, ħ est si petit que cette limite est négligeable.'
+          ],
+          formula: {
+            label: 'RELATION D’INCERTITUDE POSITION–QUANTITÉ DE MOUVEMENT',
+            text: 'Δx × Δp ≥ ħ / 2',
+            mathML: 'heisenberg-uncertainty'
           },
-          {
-            question: 'À quoi correspondent Δx et Δp dans la formulation de Kennard ?',
-            answer: 'Aux écarts-types de la position et de la quantité de mouvement.'
+          example: {
+            statement: 'L’incertitude sur la quantité de mouvement d’une particule est Δp = 1,0 × 10⁻²⁴ kg·m/s. Quelle est la valeur minimale de l’incertitude sur sa position, avec ħ = 1,055 × 10⁻³⁴ J·s ?',
+            calculation: 'Δx ≥ ħ / (2Δp) = 1,055 × 10⁻³⁴ / (2 × 1,0 × 10⁻²⁴) ≈ 5,3 × 10⁻¹¹ m.',
+            answer: 'L’incertitude sur la position ne peut pas être inférieure à environ 5,3 × 10⁻¹¹ m.'
           },
-          {
-            question: 'Le principe d’incertitude signifie-t-il seulement que les instruments de mesure sont imparfaits ?',
-            answer: 'Non. Il traduit une propriété des objets quantiques, liée à leur comportement ondulatoire, et non une simple limite technique.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — The Heisenberg Uncertainty Principle (University Physics, Volume 3)',
-            url: 'https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle'
+          exercise: {
+            question: 'Si l’incertitude Δx est divisée par 2, que devient la valeur minimale de Δp ?',
+            answer: 'Elle double, car le produit Δx Δp doit rester supérieur ou égal à ħ/2.'
           },
-          {
-            title: 'arXiv — Uncertainty relations: a small zoo of remarkable inequalities discovered since 1927',
-            url: 'https://arxiv.org/pdf/2603.07293'
-          },
-          {
-            title: 'arXiv — Continuous-variable entropic uncertainty relations',
-            url: 'https://arxiv.org/pdf/1809.01052'
-          }
-        ]
-      }
-    },
-
-
-    {
-      id: 'hubble-lemaitre-expansion',
-      title: 'La loi de Hubble–Lemaître : expansion de l’Univers',
-      formula: "v = H0 × d",
-      equationDetails: {
-        label: "Loi de Hubble–Lemaître",
-        formula: "v = H0 × d",
-        parameters: [
-          {
-            symbol: "v",
-            label: "Vitesse de récession de la galaxie",
-            unit: "km/s"
-          },
-          {
-            symbol: "H0",
-            label: "Constante de Hubble–Lemaître (taux actuel d’expansion de l’Univers)",
-            unit: "km/s/Mpc"
-          },
-          {
-            symbol: "d",
-            label: "Distance de la galaxie",
-            unit: "Mpc"
-          }
-        ]
+          exercises: [
+            {
+              question: 'En quelle année Heisenberg introduit-il la relation d’incertitude ?',
+              answer: 'En 1927.'
+            },
+            {
+              question: 'À quoi correspondent Δx et Δp dans la formulation de Kennard ?',
+              answer: 'Aux écarts-types de la position et de la quantité de mouvement.'
+            },
+            {
+              question: 'Le principe d’incertitude signifie-t-il seulement que les instruments de mesure sont imparfaits ?',
+              answer: 'Non. Il traduit une propriété des objets quantiques, liée à leur comportement ondulatoire, et non une simple limite technique.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Relation d’incertitude position–quantité de mouvement',
+              formula: 'Δx × Δp ≥ ħ / 2',
+              explanation: 'Le principe d’incertitude fixe une limite fondamentale à la précision avec laquelle la position et la quantité de mouvement d’une particule peuvent être définies simultanément. Il est l’une des pierres angulaires de la mécanique quantique.',
+              parameters: 'Δx : incertitude sur la position (écart-type) (m) ; Δp : incertitude sur la quantité de mouvement (écart-type) (kg·m·s⁻¹) ; ħ : constante de Planck réduite (h / 2π) (J·s).',
+              example: 'L’incertitude sur la quantité de mouvement d’une particule est Δp = 1,0 × 10⁻²⁴ kg·m/s : Δx ≥ ħ / (2Δp) = 1,055 × 10⁻³⁴ / (2 × 1,0 × 10⁻²⁴) ≈ 5,3 × 10⁻¹¹ m.',
+              result: 'L’incertitude sur la position ne peut pas être inférieure à environ 5,3 × 10⁻¹¹ m.',
+              mathML: 'heisenberg-uncertainty'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — The Heisenberg Uncertainty Principle (University Physics, Volume 3)',
+              url: 'https://openstax.org/books/university-physics-volume-3/pages/7-2-the-heisenberg-uncertainty-principle'
+            },
+            {
+              title: 'arXiv — Uncertainty relations: a small zoo of remarkable inequalities discovered since 1927',
+              url: 'https://arxiv.org/pdf/2603.07293'
+            },
+            {
+              title: 'arXiv — Continuous-variable entropic uncertainty relations',
+              url: 'https://arxiv.org/pdf/1809.01052'
+            }
+          ]
+        }
       },
-      field: 'Cosmologie · Expansion de l’Univers · 1929',
-      summary: 'La loi de Hubble–Lemaître indique que la vitesse de récession des galaxies lointaines est proportionnelle à leur distance. Elle constitue la première base observationnelle de l’expansion de l’Univers.',
-      lesson: {
-        sections: [
-          'Auteurs : Georges Lemaître (1894–1966) et Edwin Hubble (1889–1953). En 1927, Lemaître publie un article en français dans lequel il déduit des équations de la relativité générale que la vitesse de récession des nébuleuses extragalactiques est proportionnelle à leur distance. En 1929, Hubble publie la confirmation observationnelle de cette relation. L’Union astronomique internationale a recommandé l’appellation « loi de Hubble–Lemaître ».',
-
-
-          'Équation : v = H0d. v est la vitesse de récession de la galaxie, d sa distance et H0 la constante de Hubble–Lemaître, qui correspond au taux actuel d’expansion de l’Univers. Elle est généralement exprimée en km/s/Mpc.',
-
-
-          'La loi décrit le comportement moyen des galaxies lointaines : les galaxies liées gravitationnellement dans des amas ont des vitesses orbitales plus grandes que celles dues à l’expansion. L’expression « vitesse de récession » est un abus de langage : elle traduit l’expansion de l’espace lui-même plutôt qu’un déplacement des galaxies dans l’espace. La valeur de H0 fait l’objet de débats et de mesures qui évoluent ; la valeur de 70 km/s/Mpc n’est utilisée ici qu’à titre d’illustration.'
-        ],
-        example: {
-          statement: 'Avec H0 = 70 km/s/Mpc, quelle est la vitesse de récession d’une galaxie située à 100 Mpc ?',
-          calculation: 'v = H0 × d = 70 × 100 = 7 000 km/s.',
-          answer: 'La vitesse de récession est de 7 000 km/s, avec cette valeur illustrative de H0.'
-        },
-        exercise: {
-          question: 'Comment calcule-t-on la distance d’une galaxie à partir de sa vitesse de récession et de H0 ?',
-          answer: 'Par la relation d = v / H0.'
-        },
-        exercises: [
-          {
-            question: 'Qui publie le premier cette relation, et en quelle année ?',
-            answer: 'Georges Lemaître, en 1927. Edwin Hubble publie sa confirmation observationnelle en 1929.'
+      {
+        id: 'hubble-lemaitre-expansion',
+        title: 'La loi de Hubble–Lemaître : expansion de l’Univers',
+        field: 'Cosmologie · Expansion de l’Univers · 1929',
+        summary: 'La loi de Hubble–Lemaître indique que la vitesse de récession des galaxies lointaines est proportionnelle à leur distance. Elle constitue la première base observationnelle de l’expansion de l’Univers.',
+        lesson: {
+          sections: [
+            'Auteurs : Georges Lemaître (1894–1966) et Edwin Hubble (1889–1953). En 1927, Lemaître publie un article en français dans lequel il déduit des équations de la relativité générale que la vitesse de récession des nébuleuses extragalactiques est proportionnelle à leur distance. En 1929, Hubble publie la confirmation observationnelle de cette relation. L’Union astronomique internationale a recommandé l’appellation « loi de Hubble–Lemaître ».',
+            'Équation : v = H0d. v est la vitesse de récession de la galaxie, d sa distance et H0 la constante de Hubble–Lemaître, qui correspond au taux actuel d’expansion de l’Univers. Elle est généralement exprimée en km/s/Mpc.',
+            'La loi décrit le comportement moyen des galaxies lointaines : les galaxies liées gravitationnellement dans des amas ont des vitesses orbitales plus grandes que celles dues à l’expansion. L’expression « vitesse de récession » est un abus de langage : elle traduit l’expansion de l’espace lui-même plutôt qu’un déplacement des galaxies dans l’espace. La valeur de H0 fait l’objet de débats et de mesures qui évoluent ; la valeur de 70 km/s/Mpc n’est utilisée ici qu’à titre d’illustration.'
+          ],
+          formula: {
+            label: 'LOI DE HUBBLE–LEMAÎTRE',
+            text: 'v = H₀ × d',
+            mathML: 'hubble-lemaitre-law'
           },
-          {
-            question: 'Quelle est l’unité usuelle de la constante H0 ?',
-            answer: 'Le kilomètre par seconde et par mégaparsec (km/s/Mpc).'
+          example: {
+            statement: 'Avec H0 = 70 km/s/Mpc, quelle est la vitesse de récession d’une galaxie située à 100 Mpc ?',
+            calculation: 'v = H0 × d = 70 × 100 = 7 000 km/s.',
+            answer: 'La vitesse de récession est de 7 000 km/s, avec cette valeur illustrative de H0.'
           },
-          {
-            question: 'Avec H0 = 70 km/s/Mpc, à quelle distance se trouve une galaxie dont la vitesse de récession est de 3 000 km/s ?',
-            answer: 'd = v / H0 = 3 000 / 70 ≈ 43 Mpc.'
-          }
-        ],
-        sources: [
-          {
-            title: 'OpenStax — The Expanding Universe (Astronomy 2e)',
-            url: 'https://openstax.org/books/astronomy-2e/pages/26-5-the-expanding-universe'
+          exercise: {
+            question: 'Comment calcule-t-on la distance d’une galaxie à partir de sa vitesse de récession et de H0 ?',
+            answer: 'Par la relation d = v / H0.'
           },
-          {
-            title: 'Wikipedia — Hubble’s law',
-            url: 'https://en.wikipedia.org/wiki/Hubble%27s_law'
-          },
-          {
-            title: 'Observatoire de Paris — Etymological Dictionary of Astronomy and Astrophysics: Hubble-Lemaître law',
-            url: 'https://dictionary.obspm.fr/terms/hubble-lemaitre-law/'
-          },
-          {
-            title: 'Encyclopædia Universalis — Hubble-Lemaître, constante de',
-            url: 'https://www.universalis.fr/encyclopedie/constante-de-hubble-lemaitre/'
-          }
-        ]
+          exercises: [
+            {
+              question: 'Qui publie le premier cette relation, et en quelle année ?',
+              answer: 'Georges Lemaître, en 1927. Edwin Hubble publie sa confirmation observationnelle en 1929.'
+            },
+            {
+              question: 'Quelle est l’unité usuelle de la constante H0 ?',
+              answer: 'Le kilomètre par seconde et par mégaparsec (km/s/Mpc).'
+            },
+            {
+              question: 'Avec H0 = 70 km/s/Mpc, à quelle distance se trouve une galaxie dont la vitesse de récession est de 3 000 km/s ?',
+              answer: 'd = v / H0 = 3 000 / 70 ≈ 43 Mpc.'
+            }
+          ],
+          equationDetails: [
+            {
+              title: 'Loi de Hubble–Lemaître',
+              formula: 'v = H₀ × d',
+              explanation: 'La loi de Hubble–Lemaître indique que la vitesse de récession des galaxies lointaines est proportionnelle à leur distance. Elle constitue la première base observationnelle de l’expansion de l’Univers.',
+              parameters: 'v : vitesse de récession de la galaxie (km·s⁻¹) ; H₀ : constante de Hubble–Lemaître (taux actuel d’expansion de l’Univers) (km·s⁻¹·Mpc⁻¹) ; d : distance de la galaxie (Mpc).',
+              example: 'Avec H0 = 70 km/s/Mpc, quelle est la vitesse de récession d’une galaxie située à 100 Mpc ? v = H0 × d = 70 × 100 = 7 000 km/s.',
+              result: 'La vitesse de récession est de 7 000 km/s, avec cette valeur illustrative de H0.',
+              mathML: 'hubble-lemaitre-law'
+            }
+          ],
+          sources: [
+            {
+              title: 'OpenStax — The Expanding Universe (Astronomy 2e)',
+              url: 'https://openstax.org/books/astronomy-2e/pages/26-5-the-expanding-universe'
+            },
+            {
+              title: 'Wikipedia — Hubble’s law',
+              url: 'https://en.wikipedia.org/wiki/Hubble%27s_law'
+            },
+            {
+              title: 'Observatoire de Paris — Etymological Dictionary of Astronomy and Astrophysics: Hubble-Lemaître law',
+              url: 'https://dictionary.obspm.fr/terms/hubble-lemaitre-law/'
+            },
+            {
+              title: 'Encyclopædia Universalis — Hubble-Lemaître, constante de',
+              url: 'https://www.universalis.fr/encyclopedie/constante-de-hubble-lemaitre/'
+            }
+          ]
+        }
       }
-    }
-  ]
-},
+    ]
+  },
 ];
 
