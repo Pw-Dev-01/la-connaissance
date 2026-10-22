@@ -781,5 +781,375 @@ window.courseCatalog = [
 },
 
 
+ {
+  id: 'philosophie-grecque',
+  sortYear: -600,
+  title: 'La philosophie Grecque',
+  note: 'Six chapitres retracent les principaux courants de la philosophie grecque, des penseurs ioniens du VIe siècle av. J.-C. aux traditions hellénistiques et néoplatoniciennes de l’Antiquité tardive. Les dates des philosophes anciens sont parfois approximatives. Une partie de leurs doctrines est connue par des fragments ou par des auteurs postérieurs ; les résumés distinguent donc les grandes orientations des interprétations discutées.',
+
+  chapters: [
+    {
+      id: 'presocratiques-et-nature',
+      title: 'Les présocratiques : comprendre la nature et ses principes',
+      field: 'Philosophie antique · VIe-Ve siècles av. J.-C.',
+      summary: 'Découvrir comment les premiers penseurs grecs ont proposé des explications argumentées de la nature, de ses transformations et de ses principes, sans supposer que tous partageaient une même méthode ou une doctrine unique.',
+
+      lesson: {
+        sections: [
+          'La philosophie grecque ancienne se développe notamment dans les cités grecques d’Ionie, sur la côte occidentale de l’Anatolie actuelle, au VIe siècle av. J.-C. Thalès de Milet est traditionnellement présenté comme l’un de ses premiers représentants. Il aurait proposé l’eau comme principe fondamental de la réalité. Cette doctrine nous est connue par des témoignages postérieurs, et non par un ouvrage de Thalès conservé intégralement. Il faut donc éviter de présenter chaque détail rapporté à son sujet comme une certitude directement vérifiable.',
+
+          'Anaximandre, associé à Milet, propose l’apeiron, généralement compris comme l’indéfini ou l’illimité, comme principe à l’origine des choses. Anaximène accorde quant à lui un rôle fondamental à l’air et explique les transformations par des processus tels que la raréfaction et la condensation. Ces propositions cherchent à rendre intelligible la diversité du monde à partir de principes naturels. Elles ne constituent pas encore la science moderne : les méthodes, les concepts et les critères de preuve sont différents, mais l’effort d’explication raisonnée est historiquement important.',
+
+          'D’autres penseurs mettent l’accent sur le changement, la permanence ou la composition de la réalité. Héraclite est associé à l’importance du devenir et à l’ordre du monde, tandis que Parménide soutient une conception radicale de l’être qui remet en question la possibilité de penser le changement comme on le perçoit ordinairement. Empédocle explique la diversité par quatre « racines » — terre, eau, air et feu — combinées sous l’action de forces qu’il nomme Amour et Discorde. Démocrite, dans la tradition atomiste, explique les choses par des atomes et le vide. Ces doctrines sont distinctes et parfois incompatibles : il n’existe pas une seule théorie présocratique.',
+
+          'Le terme « présocratiques » est une convention pratique plutôt qu’une catégorie parfaitement exacte. Certains penseurs ainsi classés ont été contemporains de Socrate, et les sophistes sont parfois étudiés avec eux selon les manuels. Les écrits originaux ont souvent disparu ; les spécialistes reconstruisent les doctrines à partir de fragments cités et de témoignages anciens. Il est donc nécessaire de distinguer les paroles conservées, les rapports d’auteurs postérieurs et les interprétations modernes.'
+        ],
+
+        example: {
+          statement: 'Deux penseurs proposent des principes différents pour expliquer la nature : Thalès associe le principe fondamental à l’eau, tandis qu’Anaximène l’associe à l’air. Que montre cette différence ?',
+          calculation: 'On compare les propositions attribuées aux deux penseurs : principe de Thalès = eau ; principe d’Anaximène = air. Il s’agit d’une comparaison doctrinale, et non d’un calcul numérique.',
+          answer: 'Elle montre que les premiers philosophes n’ont pas adopté une doctrine unique : ils ont proposé des explications concurrentes de la nature. Ces idées sont connues surtout par des témoignages anciens postérieurs.'
+        },
+
+        exercise: {
+          question: 'Pourquoi faut-il être prudent lorsqu’on attribue une doctrine précise à un philosophe présocratique ?',
+          answer: 'Parce que beaucoup de leurs écrits ne sont pas conservés intégralement et que leurs doctrines sont souvent reconstruites à partir de fragments et de témoignages d’auteurs postérieurs.'
+        },
+
+        exercises: [
+          {
+            question: 'Dans quelle région la philosophie grecque ancienne est-elle traditionnellement associée à ses premiers développements ?',
+            answer: 'Notamment en Ionie, sur la côte occidentale de l’Anatolie actuelle.'
+          },
+          {
+            question: 'Quel principe fondamental est traditionnellement attribué à Thalès ?',
+            answer: 'L’eau, selon des témoignages anciens postérieurs.'
+          },
+          {
+            question: 'Pourquoi le terme « présocratiques » n’est-il pas une catégorie chronologique parfaitement stricte ?',
+            answer: 'Parce que certains penseurs ainsi classés ont été contemporains de Socrate et que la catégorie regroupe des doctrines très diverses.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'World History Encyclopedia — Philosophie grecque',
+            url: 'https://www.worldhistory.org/trans/fr/1-11892/philosophie-grecque/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Presocratic Philosophy',
+            url: 'https://plato.stanford.edu/entries/presocratics/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Ancient Greek Philosophy',
+            url: 'https://iep.utm.edu/ancient-greek-philosophy/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'sophistes-et-socrate',
+      title: 'Les sophistes et Socrate : argumenter, examiner, vivre justement',
+      field: 'Philosophie antique · Ve siècle av. J.-C.',
+      summary: 'Comprendre le rôle de l’argumentation publique, de l’éducation et de l’examen moral dans la philosophie athénienne, tout en distinguant les sophistes de Socrate.',
+
+      lesson: {
+        sections: [
+          'Au Ve siècle av. J.-C., Athènes devient un centre majeur de la vie intellectuelle et politique grecque. La participation à la vie civique rend l’art de parler en public et de défendre une proposition particulièrement important. Les sophistes sont des enseignants itinérants qui enseignent notamment la rhétorique, l’argumentation et des compétences utiles à la vie publique, généralement contre rémunération. Ils ne forment pas une école parfaitement unifiée : leurs intérêts et leurs positions varient. Les présenter simplement comme des manipulateurs serait reprendre sans distance une caricature que l’on trouve chez certains de leurs adversaires, notamment Platon.',
+
+          'Protagoras est associé à une réflexion sur la mesure humaine et sur la manière dont les individus appréhendent les choses. Gorgias explore le pouvoir du discours et les difficultés liées à la connaissance et à la communication. Les textes transmis sous leurs noms et les témoignages à leur sujet demandent une lecture attentive : une partie importante de ce que nous savons provient de sources qui les critiquent ou les mettent en scène. Les sophistes contribuent néanmoins à faire de l’argumentation, du langage, des conventions sociales et de l’éducation des sujets philosophiques explicites.',
+
+          'Socrate (vers 470/469-399 av. J.-C.) n’a laissé aucun écrit connu. Sa pensée est reconstruite à partir de sources comme les dialogues de Platon, les écrits de Xénophon et les représentations comiques d’Aristophane. Ces sources n’ont ni le même objectif ni le même point de vue. Il est donc difficile de séparer avec certitude le Socrate historique du personnage philosophique créé par ses auteurs. La méthode socratique, telle qu’elle apparaît surtout chez Platon, consiste à poser des questions, à demander des définitions et à examiner les contradictions dans les réponses.',
+
+          'Socrate place au centre de son activité l’examen des croyances, la qualité morale de la vie et la recherche de la justice. Plutôt que de transmettre un système complet de réponses, il pousse ses interlocuteurs à préciser ce qu’ils pensent savoir. En 399 av. J.-C., il est jugé à Athènes et condamné à mort, dans un contexte politique et religieux particulier. Les sources anciennes présentent notamment des accusations d’impiété et de corruption de la jeunesse. Son procès est devenu un épisode majeur de l’histoire de la philosophie, mais son récit doit être étudié en tenant compte du genre et du but des textes qui le rapportent.'
+        ],
+
+        example: {
+          statement: 'Un interlocuteur affirme qu’une action est juste parce qu’elle respecte la loi. Quelle question inspirée de la méthode socratique pourrait approfondir sa réponse ?',
+          calculation: 'On examine la définition proposée en distinguant deux questions : une action est-elle légale parce qu’elle respecte une règle en vigueur, et est-elle nécessairement juste pour cette seule raison ?',
+          answer: 'On peut demander si tout ce qui est légal est nécessairement juste, puis rechercher des exemples et examiner les raisons données. Cette démarche illustre l’examen critique d’une définition, sans garantir à elle seule une réponse définitive.'
+        },
+
+        exercise: {
+          question: 'Pourquoi les historiens ne peuvent-ils pas traiter tous les dialogues de Platon comme des transcriptions exactes des paroles de Socrate ?',
+          answer: 'Parce que Socrate n’a rien écrit et que les dialogues sont des œuvres philosophiques de Platon, pas des comptes rendus sténographiques. Ils doivent être comparés à d’autres témoignages anciens.'
+        },
+
+        exercises: [
+          {
+            question: 'Quelle compétence les sophistes enseignaient-ils fréquemment dans les cités grecques ?',
+            answer: 'La rhétorique et l’argumentation, entre autres compétences utiles à la vie publique.'
+          },
+          {
+            question: 'Quelle est une caractéristique de la méthode socratique telle qu’elle apparaît dans les dialogues de Platon ?',
+            answer: 'Poser des questions, examiner les définitions et mettre au jour d’éventuelles contradictions dans les réponses.'
+          },
+          {
+            question: 'En quelle année Socrate est-il condamné à mort ?',
+            answer: 'En 399 av. J.-C.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'World History Encyclopedia — Philosophie grecque',
+            url: 'https://www.worldhistory.org/trans/fr/1-11892/philosophie-grecque/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Ancient Greek Philosophy',
+            url: 'https://iep.utm.edu/ancient-greek-philosophy/'
+          },
+          {
+            title: 'OpenStax — Introduction to Philosophy, Classical Philosophy',
+            url: 'https://openstax.org/books/introduction-philosophy/pages/4-2-classical-philosophy'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'platon-et-academie',
+      title: 'Platon : connaissance, justice et organisation de la cité',
+      field: 'Philosophie antique · IVe siècle av. J.-C.',
+      summary: 'Explorer les dialogues de Platon, sa réflexion sur la connaissance et les Formes, sa conception de la justice et la fondation de l’Académie.',
+
+      lesson: {
+        sections: [
+          'Platon (vers 428/427-348/347 av. J.-C.) est un disciple de Socrate et l’un des auteurs les plus influents de la philosophie ancienne. Il écrit principalement sous forme de dialogues dans lesquels les personnages examinent des questions telles que la justice, le courage, l’amitié, la connaissance, le langage et le gouvernement. Socrate y occupe souvent une place centrale, mais il serait imprudent d’identifier automatiquement toutes les thèses défendues dans les dialogues à la pensée historique de Socrate. Les dialogues sont des œuvres philosophiques composées par Platon, dont les méthodes et les conclusions varient selon les sujets.',
+
+          'Dans plusieurs dialogues, Platon développe une réflexion sur les Formes, parfois appelées Idées dans la tradition. Les choses particulières changent et peuvent être décrites de plusieurs façons, alors que la connaissance cherche ce qui est stable et intelligible. Les Formes sont présentées comme des réalités intelligibles permettant de penser ce qu’est, par exemple, la justice ou l’égalité, plutôt que comme de simples objets matériels. L’interprétation exacte de cette théorie et son évolution au cours de l’œuvre de Platon font l’objet de débats savants ; il ne faut donc pas la réduire à une seule formule simplifiée.',
+
+          'La République examine la justice chez l’individu et dans la cité, en développant une analogie entre l’organisation de l’âme et celle de la communauté politique. Le texte discute aussi l’éducation, la connaissance et les conditions d’un gouvernement bien ordonné. L’allégorie de la caverne illustre la différence entre les apparences auxquelles on s’habitue et une compréhension plus exigeante de la réalité. Il s’agit d’un récit philosophique destiné à faire réfléchir, et non d’une description scientifique du cerveau ou d’un compte rendu historique.',
+
+          'Platon fonde à Athènes une école connue sous le nom d’Académie. Elle contribue à la transmission et au développement de la recherche philosophique et mathématique. Son influence s’étend à de nombreux débats ultérieurs sur la connaissance, la morale et la politique. Cependant, Platon n’est pas le représentant de toute la philosophie grecque : Aristote, les cyniques, les épicuriens, les stoïciens et les sceptiques proposent des réponses différentes à des questions comparables.'
+        ],
+
+        example: {
+          statement: 'Dans l’allégorie de la caverne, des personnes prennent des ombres pour la réalité entière. Quelle distinction philosophique cette image permet-elle d’examiner ?',
+          calculation: 'On distingue ce qui apparaît immédiatement aux observateurs et le travail nécessaire pour examiner les causes et les limites de ces apparences. Il s’agit d’une analyse conceptuelle, pas d’un calcul numérique.',
+          answer: 'L’image invite à distinguer l’apparence et la connaissance, ainsi qu’à interroger les conditions qui permettent de corriger ses croyances. Elle ne signifie pas que toute perception est automatiquement fausse.'
+        },
+
+        exercise: {
+          question: 'Pourquoi faut-il lire les dialogues de Platon comme des œuvres argumentatives plutôt que comme de simples recueils de doctrines ?',
+          answer: 'Parce que les idées y sont explorées à travers des échanges, des objections et des changements de perspective ; le rôle des personnages et les conclusions varient d’un dialogue à l’autre.'
+        },
+
+        exercises: [
+          {
+            question: 'Quel genre littéraire et philosophique Platon utilise-t-il principalement ?',
+            answer: 'Le dialogue philosophique.'
+          },
+          {
+            question: 'Quel problème la théorie des Formes cherche-t-elle notamment à traiter ?',
+            answer: 'La manière de penser des réalités intelligibles et relativement stables, comme la justice ou l’égalité, au-delà des exemples particuliers changeants.'
+          },
+          {
+            question: 'Comment s’appelle l’école associée à Platon à Athènes ?',
+            answer: 'L’Académie.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'World History Encyclopedia — Philosophie grecque',
+            url: 'https://www.worldhistory.org/trans/fr/1-11892/philosophie-grecque/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Ancient Greek Philosophy',
+            url: 'https://iep.utm.edu/ancient-greek-philosophy/'
+          },
+          {
+            title: 'OpenStax — Introduction to Philosophy, Classical Philosophy',
+            url: 'https://openstax.org/books/introduction-philosophy/pages/4-2-classical-philosophy'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'aristote-et-savoir',
+      title: 'Aristote : logique, nature, connaissance et éthique',
+      field: 'Philosophie antique · IVe siècle av. J.-C.',
+      summary: 'Présenter l’étendue du travail d’Aristote, sa logique, ses recherches sur la nature, sa théorie des causes et son éthique de la vertu.',
+
+      lesson: {
+        sections: [
+          'Aristote (384-322 av. J.-C.), né à Stagire, étudie auprès de Platon avant de développer une philosophie qui s’écarte sur plusieurs points de celle de son maître. Il travaille sur la logique, la métaphysique, la nature, les animaux, la politique, la poésie et l’éthique. Ses textes conservés sont le résultat d’une transmission complexe et ne constituent pas nécessairement un livre unique rédigé sous la forme d’un traité moderne. Il fonde à Athènes une école associée au Lycée. L’étendue de ses recherches contribue à structurer de nombreux domaines de la réflexion savante pendant des siècles.',
+
+          'En logique, Aristote étudie notamment les formes d’argumentation et le syllogisme, dans lequel une conclusion découle de prémisses selon une structure déterminée. En philosophie de la nature, il cherche à comprendre les êtres en examinant leurs caractéristiques, leurs changements et leurs causes. Son analyse distingue traditionnellement quatre types de causes : matérielle, formelle, efficiente et finale. Ces catégories ne doivent pas être confondues avec les seules causes physiques étudiées par les sciences contemporaines ; elles appartiennent à un cadre philosophique plus large visant à répondre à différents types de questions sur les choses.',
+
+          'Aristote critique la séparation platonicienne des Formes et des choses sensibles, et cherche à comprendre les êtres concrets en étudiant leur organisation et leurs propriétés. Cette opposition entre les deux philosophes ne signifie pas qu’ils sont en désaccord sur tout : ils partagent certaines questions, tout en leur apportant des réponses différentes. La pensée d’Aristote a évolué et ses textes abordent des problèmes variés ; il serait réducteur de la décrire comme une simple collection de règles ou comme une science moderne avant l’heure.',
+
+          'Dans l’Éthique à Nicomaque, Aristote associe la vie humaine accomplie à l’eudaimonia, terme souvent traduit par « bonheur » ou « vie florissante ». Il ne s’agit pas seulement d’un sentiment passager de plaisir, mais d’une manière de vivre et d’agir sur la durée. Les vertus se développent par l’habitude et la pratique ; le jugement pratique aide à choisir une conduite appropriée dans des situations concrètes. Aristote examine également la vie politique, car les êtres humains vivent en communauté et les institutions influencent les conditions d’une vie bonne. Sa pensée a profondément marqué les traditions philosophiques ultérieures, sans être acceptée uniformément.'
+        ],
+
+        example: {
+          statement: 'Un artisan fabrique une statue en bronze. Comment l’analyse des quatre causes d’Aristote peut-elle aider à poser plusieurs questions sur cette statue ?',
+          calculation: 'Cause matérielle : le bronze ; cause formelle : la forme de la statue ; cause efficiente : l’artisan et son activité ; cause finale : la fonction ou le but pour lequel la statue est réalisée.',
+          answer: 'Les quatre causes donnent quatre angles d’explication complémentaires. Elles ne sont pas quatre mesures numériques et ne remplacent pas automatiquement les méthodes explicatives des sciences modernes.'
+        },
+
+        exercise: {
+          question: 'Dans l’éthique d’Aristote, pourquoi le bonheur ne se réduit-il pas à une sensation agréable ponctuelle ?',
+          answer: 'Parce que l’eudaimonia désigne une vie accomplie dans son ensemble, associée à l’activité conforme à la vertu et à l’exercice du jugement pratique.'
+        },
+
+        exercises: [
+          {
+            question: 'Quelles sont les quatre causes traditionnellement distinguées par Aristote ?',
+            answer: 'La cause matérielle, la cause formelle, la cause efficiente et la cause finale.'
+          },
+          {
+            question: 'Que signifie approximativement le terme grec eudaimonia dans l’éthique aristotélicienne ?',
+            answer: 'Le bonheur ou la vie florissante, compris comme une vie accomplie plutôt que comme un plaisir passager.'
+          },
+          {
+            question: 'Comment s’appelle l’école d’Aristote à Athènes ?',
+            answer: 'Le Lycée.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'World History Encyclopedia — Philosophie grecque',
+            url: 'https://www.worldhistory.org/trans/fr/1-11892/philosophie-grecque/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Ancient Greek Philosophy',
+            url: 'https://iep.utm.edu/ancient-greek-philosophy/'
+          },
+          {
+            title: 'OpenStax — Introduction to Philosophy, Classical Philosophy',
+            url: 'https://openstax.org/books/introduction-philosophy/pages/4-2-classical-philosophy'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'ecoles-hellenistiques',
+      title: 'Les écoles hellénistiques : stoïcisme, épicurisme et scepticisme',
+      field: 'Philosophie antique · À partir de 323 av. J.-C.',
+      summary: 'Comparer plusieurs écoles qui réfléchissent à la nature, à la connaissance et à la manière de vivre, dans le monde hellénistique après la mort d’Alexandre le Grand.',
+
+      lesson: {
+        sections: [
+          'La période hellénistique commence conventionnellement après la mort d’Alexandre le Grand en 323 av. J.-C. et se termine souvent, pour les repères historiques, autour de la conquête romaine de l’Égypte en 30 av. J.-C. Ces bornes servent de convention et ne signifient pas que les cultures ou les écoles philosophiques disparaissent brusquement. Les écoles fondées ou développées à cette époque proposent des manières de relier l’étude de la nature et de la connaissance à la recherche d’une vie bonne. La philosophie devient pour beaucoup de leurs membres une pratique intellectuelle et morale, sans se réduire à une technique de bien-être moderne.',
+
+          'Le stoïcisme, associé à Zénon de Kition puis à des penseurs comme Chrysippe, distingue ce qui dépend de nos jugements et de nos choix de ce qui ne dépend pas entièrement de nous. Les stoïciens accordent une place centrale à la vertu, à la raison et à l’étude de la nature. Leur idéal n’est pas l’absence de toute émotion au sens courant, mais la transformation des jugements et des désirs afin de vivre conformément à la raison. Les stoïciens antiques ont développé des doctrines complexes en logique, en physique et en éthique ; les réduire à la seule endurance face aux difficultés ferait perdre cette structure d’ensemble.',
+
+          'L’épicurisme, fondé par Épicure, place le plaisir au centre de la vie bonne, mais entend notamment par là l’absence de souffrance corporelle et de trouble de l’âme, plutôt qu’une recherche illimitée de luxe ou de sensations intenses. L’amitié, la réflexion et la limitation des désirs jouent un rôle important dans cette conception. Épicure propose aussi une explication naturaliste du monde et cherche à dissiper certaines craintes liées aux dieux et à la mort. Cette doctrine est souvent caricaturée dans le langage courant ; son sens philosophique doit être distingué de l’usage moderne du mot « épicurien ».',
+
+          'Les sceptiques interrogent les raisons qui autorisent à tenir une proposition pour certaine. Certaines formes de scepticisme recommandent la suspension du jugement lorsque les arguments semblent équilibrés, dans l’espoir d’éviter l’assurance injustifiée et de parvenir à une forme de tranquillité. Les écoles cyniques, dont l’histoire commence avec des disciples de Socrate et se poursuit à l’époque hellénistique, critiquent les conventions sociales et valorisent une vie simple et indépendante. Ces courants ne sont pas identiques : ils partagent des questions sur la conduite humaine, mais proposent des méthodes et des réponses différentes.'
+        ],
+
+        example: {
+          statement: 'Une personne ne peut pas contrôler le résultat d’un concours, mais elle peut préparer son travail et choisir sa conduite. Quelle distinction stoïcienne cette situation illustre-t-elle ?',
+          calculation: 'On sépare les actions et les jugements sur lesquels la personne peut agir de l’issue finale, qui dépend aussi de facteurs extérieurs. Il s’agit d’une distinction pratique, pas d’un calcul numérique.',
+          answer: 'Cette situation illustre une distinction centrale dans la pratique stoïcienne entre ce qui dépend de nos choix et ce qui n’est pas entièrement sous notre contrôle. Elle ne garantit pas la réussite et ne signifie pas qu’il faut renoncer à agir.'
+        },
+
+        exercise: {
+          question: 'Pourquoi est-il inexact de résumer l’épicurisme à la recherche de luxe et de plaisirs intenses ?',
+          answer: 'Parce qu’Épicure privilégie notamment l’absence de souffrance et de trouble, la réflexion sur les désirs, l’amitié et une vie mesurée.'
+        },
+
+        exercises: [
+          {
+            question: 'À quelle date la période hellénistique commence-t-elle conventionnellement ?',
+            answer: 'En 323 av. J.-C., année de la mort d’Alexandre le Grand.'
+          },
+          {
+            question: 'Quel est un objectif central de l’éthique stoïcienne ?',
+            answer: 'Vivre conformément à la raison et à la vertu, en travaillant sur ses jugements et ses choix.'
+          },
+          {
+            question: 'Que cherchent notamment les sceptiques lorsqu’ils suspendent leur jugement ?',
+            answer: 'À éviter d’affirmer comme certain ce qui n’est pas suffisamment établi ; certaines traditions associent cette pratique à la tranquillité.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Internet Encyclopedia of Philosophy — Ancient Greek Philosophy',
+            url: 'https://iep.utm.edu/ancient-greek-philosophy/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Greek Philosophy',
+            url: 'https://iep.utm.edu/greekphi/'
+          },
+          {
+            title: 'OpenStax — Introduction to Philosophy, Classical Philosophy',
+            url: 'https://openstax.org/books/introduction-philosophy/pages/4-2-classical-philosophy'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'neoplatonisme-et-heritages',
+      title: 'Le néoplatonisme et les héritages de la philosophie grecque',
+      field: 'Philosophie antique et Antiquité tardive · Ier siècle av. J.-C.-VIe siècle apr. J.-C.',
+      summary: 'Suivre la transformation des traditions platoniciennes et aristotéliciennes dans l’Antiquité tardive et comprendre leur transmission vers les philosophies médiévales et modernes.',
+
+      lesson: {
+        sections: [
+          'La philosophie grecque ne s’arrête pas avec les grands auteurs du IVe siècle av. J.-C. Les écoles platoniciennes, aristotéliciennes, stoïciennes, épicuriennes et sceptiques se prolongent, se transforment et dialoguent avec des contextes politiques et culturels nouveaux. À l’époque romaine, le grec reste une langue majeure de la philosophie, tandis que des auteurs latins participent eux aussi à la transmission et à la discussion de ces traditions. La circulation des idées n’est pas un simple transfert intact : les textes sont commentés, traduits, contestés et adaptés à de nouvelles questions.',
+
+          'Le néoplatonisme désigne une tradition philosophique qui se développe surtout à partir du IIIe siècle apr. J.-C. Plotin (vers 204/205-270 apr. J.-C.) en est la figure majeure. Sa pensée place au sommet de la réalité un principe premier, l’Un, qui dépasse les catégories ordinaires de la pensée. L’intellect et l’âme sont compris dans une structure de dépendance métaphysique à l’égard de ce principe. Ces concepts sont difficiles à résumer en quelques phrases et les néoplatoniciens n’ont pas tous formulé leurs doctrines exactement de la même manière. Le néoplatonisme est une réinterprétation de Platon, pas une reproduction littérale de ses dialogues.',
+
+          'Les œuvres de Platon et d’Aristote ont été conservées, commentées et traduites dans plusieurs traditions intellectuelles. Des penseurs chrétiens de l’Antiquité et du Moyen Âge ont repris certaines notions platoniciennes ou aristotéliciennes tout en les transformant dans leurs propres cadres théologiques. Des philosophes de langue arabe, notamment dans les traditions de commentaire d’Aristote, ont joué un rôle important dans la transmission et le développement de la philosophie. Des penseurs juifs médiévaux ont également dialogué avec ces héritages. Cette histoire implique des échanges multiples entre langues, institutions et communautés ; elle ne doit pas être décrite comme une transmission exclusivement directe ou uniforme.',
+
+          'L’influence de la philosophie grecque est importante dans l’histoire de la logique, de la métaphysique, de l’éthique, de la politique et de la théorie de la connaissance. Toutefois, il serait excessif d’affirmer que tous les systèmes juridiques, toutes les valeurs ou toutes les religions du monde dérivent de la philosophie grecque. Les héritages varient selon les régions et les époques, et les traditions intellectuelles du monde possèdent des histoires propres. Une approche historique rigoureuse identifie des influences précises et documentées au lieu de transformer une contribution majeure en explication universelle.'
+        ],
+
+        example: {
+          statement: 'Un philosophe médiéval commente Aristote tout en intégrant ses idées dans un cadre religieux différent de celui de la Grèce antique. Que peut-on en conclure sur la transmission philosophique ?',
+          calculation: 'On distingue la source ancienne, l’interprétation du commentateur et le nouveau contexte intellectuel. Il s’agit d’une comparaison historique, sans opération numérique.',
+          answer: 'La transmission est un processus actif : les textes sont interprétés, discutés et adaptés. L’influence d’un auteur ne signifie pas que ses idées sont reprises sans modification.'
+        },
+
+        exercise: {
+          question: 'Pourquoi faut-il éviter de présenter l’influence de la philosophie grecque comme une transmission uniforme vers toutes les sociétés ?',
+          answer: 'Parce que les influences ont varié selon les régions, les langues et les périodes, et que les traditions intellectuelles possèdent aussi leurs propres développements. Il faut établir chaque lien historique à partir de sources.'
+        },
+
+        exercises: [
+          {
+            question: 'Quel philosophe est généralement considéré comme la figure majeure du néoplatonisme ancien ?',
+            answer: 'Plotin, qui a vécu au IIIe siècle apr. J.-C.'
+          },
+          {
+            question: 'Le néoplatonisme reproduit-il simplement à l’identique les doctrines de Platon ?',
+            answer: 'Non. Il réinterprète et développe des thèmes platoniciens dans un cadre métaphysique propre.'
+          },
+          {
+            question: 'Pourquoi la traduction et le commentaire sont-ils importants dans l’histoire de la philosophie antique ?',
+            answer: 'Ils ont permis la conservation, la discussion et la transformation des textes dans des langues et des contextes intellectuels différents.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'World History Encyclopedia — Philosophie grecque',
+            url: 'https://www.worldhistory.org/trans/fr/1-11892/philosophie-grecque/'
+          },
+          {
+            title: 'Routledge Encyclopedia of Philosophy — Ancient philosophy',
+            url: 'https://www.rep.routledge.com/articles/overview/ancient-philosophy/v-1'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Ancient Greek Philosophy',
+            url: 'https://iep.utm.edu/ancient-greek-philosophy/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
 ];
 
