@@ -1333,5 +1333,5 @@ window.courseCatalog = [
       }
     },
 
-];
+]
 
