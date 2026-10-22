@@ -1150,6 +1150,188 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'philosophie-chinoise',
+  sortYear: -770,
+  title: 'La philosophie chinoise',
+  note: 'Six chapitres présentent les grands courants de la philosophie chinoise, des débats de la période des Zhou orientaux aux développements impériaux et néoconfucéens. La valeur sortYear = -770 est un repère conventionnel correspondant au début des Zhou orientaux, non une date certaine de naissance de la philosophie chinoise. Les dates des penseurs anciens sont approximatives et plusieurs textes ont été compilés ou remaniés sur une longue période. Les catégories d’écoles ont souvent été systématisées rétrospectivement.',
+
+  chapters: [
+    {
+      id: 'contexte-et-cent-ecoles',
+      title: 'Les Zhou orientaux et les Cent Écoles de pensée',
+      field: 'Histoire de la philosophie chinoise · Zhou orientaux, vers 770-221 av. J.-C.',
+      summary: 'Situer l’essor des débats philosophiques dans les transformations politiques des Zhou orientaux et comprendre pourquoi les Cent Écoles désignent une grande diversité de positions plutôt qu’exactement cent écoles organisées.',
+
+      lesson: {
+        sections: [
+          'La philosophie chinoise ancienne s’est développée dans un environnement historique marqué par la transformation des institutions, les rivalités entre États et les débats sur la meilleure manière de gouverner. Après le déplacement de la capitale des Zhou vers l’est, traditionnellement daté de 771 av. J.-C., l’autorité royale s’affaiblit progressivement. La période des Printemps et Automnes est généralement située vers 770-476 av. J.-C., puis celle des Royaumes combattants vers 475-221 av. J.-C. Ces bornes sont des conventions historiographiques : les changements politiques et intellectuels ne se produisent pas partout au même moment.',
+
+          'La formule Cent Écoles de pensée décrit au sens figuré la pluralité des courants qui débattent des questions morales, sociales, politiques et cosmologiques. Elle ne signifie pas qu’il existait exactement cent institutions structurées. Certaines traditions étaient liées à des maîtres et à leurs disciples, tandis que d’autres regroupements ont été établis rétrospectivement par des historiens. Les textes conservés sont eux-mêmes parfois composites et leur attribution peut être discutée. Une histoire rigoureuse distingue donc les penseurs, les textes, les mouvements et les catégories que les historiens ont élaborées par la suite.',
+
+          'Les débats portent notamment sur la nature humaine, les rites, la justice, l’autorité politique, les normes, le langage et la relation entre les humains et le monde naturel. Confucius insiste sur la formation morale et les relations sociales ; Mozi défend des critères de conduite orientés vers le bénéfice collectif ; des penseurs associés au daoïsme interrogent les conventions et valorisent l’accord avec le Dao ; les penseurs dits légistes privilégient les institutions, les normes et les techniques de gouvernement. Ces positions ne se réduisent pas à une opposition simple entre une philosophie morale et une philosophie politique : chacune possède des arguments et des débats internes.',
+
+          'La période des Royaumes combattants prend fin lorsque Qin conquiert les autres grands États et unifie une grande partie du territoire en 221 av. J.-C. Cette unification transforme les conditions de la pensée politique et de l’administration. Il faut cependant éviter de résumer toute l’histoire à une disparition totale des autres écoles sous Qin : les politiques intellectuelles de cette dynastie sont complexes et les traditions anciennes continuent d’être transmises, réinterprétées ou réorganisées sous les Han.'
+        ],
+
+        example: {
+          statement: 'Plusieurs penseurs proposent des solutions différentes à la guerre et à l’instabilité politique. Que montre cette diversité ?',
+          calculation: 'On compare les objectifs et les moyens proposés : formation morale, bénéfice collectif, adaptation au Dao, règles et organisation de l’État. Il s’agit d’une comparaison historique et conceptuelle, pas d’un calcul numérique.',
+          answer: 'Elle montre que les Cent Écoles rassemblent des positions variées et parfois concurrentes. Le terme ne désigne pas cent écoles exactement, ni une doctrine chinoise unique.'
+        },
+
+        exercise: {
+          question: 'Pourquoi l’expression Cent Écoles de pensée doit-elle être comprise comme une formule générale ?',
+          answer: 'Parce qu’elle désigne une grande diversité de courants et de positions, et non exactement cent écoles toutes organisées de la même manière.'
+        },
+
+        exercises: [
+          {
+            question: 'Quelles sont les deux périodes souvent associées à l’essor des débats philosophiques des Zhou orientaux ?',
+            answer: 'La période des Printemps et Automnes, puis celle des Royaumes combattants.'
+          },
+          {
+            question: 'En quelle année Qin unifie-t-il les principaux États rivaux et fonde-t-il l’empire Qin ?',
+            answer: 'En 221 av. J.-C.'
+          },
+          {
+            question: 'Pourquoi faut-il distinguer les écoles anciennes des classifications des historiens ?',
+            answer: 'Parce que certaines catégories ont été systématisées rétrospectivement et que tous les penseurs regroupés sous une même étiquette ne formaient pas nécessairement une organisation commune.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'World History Encyclopedia — Ancienne Philosophie Chinoise',
+            url: 'https://www.worldhistory.org/trans/fr/1-11673/ancienne-philosophie-chinoise/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Chinese Philosophy: Overview of History',
+            url: 'https://iep.utm.edu/chinese-philosophy-overview-of-history/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'confucius-et-confucianisme',
+      title: 'Confucius et la tradition confucéenne : rites, vertu et gouvernement',
+      field: 'Philosophie chinoise · Confucius, traditionnellement 551-479 av. J.-C., et développements ultérieurs',
+      summary: 'Étudier les notions de vertu, de rites, d’humanité et d’exemplarité politique, en distinguant la pensée attribuée à Confucius de ses développements ultérieurs.',
+
+      lesson: {
+        sections: [
+          'Confucius, dont le nom chinois est Kongzi ou Maître Kong, est traditionnellement daté de 551 à 479 av. J.-C. Il réfléchit à la manière de restaurer un ordre social juste dans une époque de conflits et d’affaiblissement des anciennes institutions. Les Entretiens, ou Lunyu, constituent une source essentielle pour la tradition associée à Confucius, mais ce recueil n’est pas une transcription simple et contemporaine de toutes ses paroles : il rassemble des matériaux transmis et organisés au fil du temps. La reconstruction de sa pensée exige donc de tenir compte de l’histoire du texte et de ses interprétations.',
+
+          'Une notion centrale est ren, souvent traduite par humanité, bienveillance ou qualité humaine, selon le contexte. Elle renvoie à une manière de se comporter envers autrui et de cultiver ses dispositions morales. Li désigne les rites, les convenances et les pratiques qui structurent les relations. Pour Confucius, les rites ne sont pas uniquement des gestes extérieurs : bien compris et pratiqués, ils contribuent à former les attitudes, à manifester le respect et à rendre les relations sociales intelligibles. Le sens précis de ces notions dépend du passage étudié et ne se laisse pas réduire à une traduction unique.',
+
+          'La tradition confucéenne accorde une importance particulière à l’apprentissage, à l’examen de soi et à l’exemple donné par les personnes qui exercent une responsabilité. Le dirigeant devrait inspirer une conduite juste plutôt que compter exclusivement sur la contrainte. Cela ne signifie pas que les règles ou les institutions sont inutiles, mais que l’ordre politique est lié à la qualité morale des relations et des dirigeants. Les devoirs varient selon les rôles sociaux, tout en impliquant des attentes réciproques. Les penseurs confucéens ultérieurs, notamment Mencius et Xunzi, développent des positions différentes sur la nature humaine et les moyens de l’éduquer.',
+
+          'Le confucianisme n’est pas resté identique depuis Confucius. Des penseurs ultérieurs ont réinterprété les classiques, les rites et les responsabilités politiques en fonction de nouveaux contextes. Sous les Han, des doctrines confucéennes ont acquis une place importante dans l’enseignement officiel et la formation des fonctionnaires, mais cette institutionnalisation résulte d’un processus historique et ne signifie pas que toutes les idées confucéennes aient été appliquées uniformément. Il est donc préférable de parler d’une tradition évolutive, comprenant des débats internes, plutôt que d’un système immuable.'
+        ],
+
+        example: {
+          statement: 'Un responsable respecte les règles mais humilie les personnes qu’il administre. Comment une approche confucéenne permet-elle d’évaluer sa conduite ?',
+          calculation: 'On examine à la fois le respect des formes, l’intention morale, le traitement d’autrui et l’exemple donné par le responsable. Il s’agit d’une analyse éthique, non d’une opération numérique.',
+          answer: 'Le seul respect formel des règles ne suffit pas à établir une conduite exemplaire. Une analyse confucéenne s’intéresse aussi à la bienveillance, à la qualité des relations et à la manière dont les rites expriment ou cultivent le respect.'
+        },
+
+        exercise: {
+          question: 'Pourquoi les rites occupent-ils une place importante dans la pensée confucéenne ?',
+          answer: 'Parce qu’ils structurent les relations sociales et peuvent contribuer à former les attitudes morales, le respect et le sens des responsabilités.'
+        },
+
+        exercises: [
+          {
+            question: 'Quel est le nom chinois souvent utilisé pour désigner Confucius ?',
+            answer: 'Kongzi, qui signifie Maître Kong.'
+          },
+          {
+            question: 'Que désigne généralement ren dans les traductions de la pensée confucéenne ?',
+            answer: 'Une qualité morale souvent traduite par humanité ou bienveillance, selon le contexte.'
+          },
+          {
+            question: 'Les Entretiens sont-ils une transcription certaine et intégrale des paroles de Confucius ?',
+            answer: 'Non. C’est un recueil transmis et organisé au fil du temps, dont les matériaux et l’histoire doivent être étudiés avec prudence.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Confucius',
+            url: 'https://plato.stanford.edu/entries/confucius/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Chinese Philosophy: Overview of History',
+            url: 'https://iep.utm.edu/chinese-philosophy-overview-of-history/'
+          },
+          {
+            title: 'World History Encyclopedia — Ancienne Philosophie Chinoise',
+            url: 'https://www.worldhistory.org/trans/fr/1-11673/ancienne-philosophie-chinoise/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'daoisme-laozi-zhuangzi',
+      title: 'Le daoïsme : le Dao, la spontanéité et le non-agir',
+      field: 'Philosophie chinoise · Textes classiques principalement associés aux Ve-IIIe siècles av. J.-C.',
+      summary: 'Découvrir les notions de Dao, de ziran et de wuwei dans les textes associés à Laozi et Zhuangzi, en tenant compte des incertitudes sur leur formation et leur attribution.',
+
+      lesson: {
+        sections: [
+          'Le daoïsme philosophique est souvent associé à deux textes majeurs : le Daodejing, traditionnellement attribué à Laozi, et le Zhuangzi, associé à Zhuang Zhou. Il faut cependant éviter de supposer que le Daodejing a été écrit en une seule fois par un auteur dont la biographie serait entièrement connue. Les recherches sur les textes anciens indiquent une composition et une transmission complexes, avec des couches et des contributions possiblement multiples. Le terme daoïsme recouvre en outre des traditions philosophiques et religieuses diverses ; les catégories modernes ne correspondent pas toujours exactement aux distinctions anciennes.',
+
+          'Dao signifie couramment voie ou chemin, mais sa portée varie selon les textes et les contextes. Dans le Daodejing, le Dao est présenté comme une source ou un principe qui ne se laisse pas aisément enfermer dans des définitions ordinaires. Les textes daoïstes questionnent les efforts humains pour imposer des distinctions rigides ou des règles universelles à un monde changeant. Cette critique ne signifie pas nécessairement que toute parole, toute norme ou toute action serait inutile : Zhuangzi, notamment, explore de façon subtile les limites des points de vue et la pluralité des manières de vivre.',
+
+          'Wuwei est souvent traduit par non-agir, mais cette traduction peut induire en erreur si elle est comprise comme une inaction totale. Dans plusieurs textes daoïstes, le terme évoque plutôt une action qui ne force pas les choses et qui évite l’intervention artificielle ou excessive. Ziran, souvent traduit par spontanéité ou ainsi-de-soi, renvoie à ce qui advient naturellement, sans contrainte imposée de l’extérieur. Le sens de ces notions varie selon les passages ; il est donc important de les expliquer dans leur contexte plutôt que d’en faire des recettes universelles.',
+
+          'Le Zhuangzi emploie des récits, des paradoxes, des dialogues fictifs et des histoires d’artisans pour remettre en question les certitudes et les hiérarchies de points de vue. Il interroge la manière dont le langage découpe le monde et dont les humains prennent leurs propres conventions pour des vérités absolues. Cela ne veut pas dire que Zhuangzi nie toute distinction possible : son texte invite plutôt à examiner les limites et les conséquences de nos catégories. La tradition daoïste a par la suite évolué en dialogue avec des pratiques religieuses, des institutions et d’autres traditions, notamment le bouddhisme en Chine.'
+        ],
+
+        example: {
+          statement: 'Un jardinier adapte son travail aux saisons et à l’état des plantes au lieu de forcer leur croissance. En quoi cet exemple peut-il illustrer wuwei ?',
+          calculation: 'On compare une intervention qui tient compte des conditions réelles à une action qui impose un résultat sans tenir compte de ces conditions. L’exemple est analogique, pas une équation.',
+          answer: 'Il illustre l’idée d’agir sans forcer inutilement les choses. C’est une analogie pédagogique, et non une définition exhaustive de wuwei dans tous les textes daoïstes.'
+        },
+
+        exercise: {
+          question: 'Pourquoi traduire wuwei par ne rien faire peut-il être trompeur ?',
+          answer: 'Parce que le terme peut désigner une action non forcée ou non artificielle plutôt qu’une absence totale d’action.'
+        },
+
+        exercises: [
+          {
+            question: 'Quels sont deux textes classiques majeurs associés au daoïsme philosophique ?',
+            answer: 'Le Daodejing et le Zhuangzi.'
+          },
+          {
+            question: 'Que signifie généralement Dao dans les traductions françaises ?',
+            answer: 'La voie ou le chemin, avec une portée philosophique qui varie selon les textes.'
+          },
+          {
+            question: 'Pourquoi faut-il être prudent lorsqu’on attribue le Daodejing à un auteur unique ?',
+            answer: 'Parce que son histoire textuelle est complexe et que les chercheurs discutent sa composition et ses différentes couches.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Daoism',
+            url: 'https://plato.stanford.edu/entries/daoism/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Zhuangzi',
+            url: 'https://plato.stanford.edu/entries/zhuangzi/'
+          },
+          {
+            title: 'Internet Encyclopedia of Philosophy — Daoist Philosophy',
+            url: 'https://iep.utm.edu/daoismdaoist-philosophy/'
+          }
+        ]
+      }
+    },
 
 ];
 
