@@ -1302,7 +1302,8 @@ window.courseCatalog = [
         },
 
         exercises: [
-          {
+       {
+          
             question: 'Quels sont deux textes classiques majeurs associés au daoïsme philosophique ?',
             answer: 'Le Daodejing et le Zhuangzi.'
           },
@@ -1327,10 +1328,11 @@ window.courseCatalog = [
           },
           {
             title: 'Internet Encyclopedia of Philosophy — Daoist Philosophy',
-            url: 'https://iep.utm.edu/daoismdaoist-philosophy/'
-          }
+            url: 'https://iep.utm.edu/daoismdaoist-philosophy/'}
+          
         ]
       }
-    ]
-  }
+    }
+  ]
+},
 ]
