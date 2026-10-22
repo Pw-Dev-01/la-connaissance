@@ -1331,6 +1331,6 @@ window.courseCatalog = [
           }
         ]
       }
-     }
-   },
+    ]
+  }
 ]
