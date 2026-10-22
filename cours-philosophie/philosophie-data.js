@@ -1335,4 +1335,270 @@ window.courseCatalog = [
     }
   ]
 },
+// BRANCHE PHILOSOPHIE DES LUMIÈRES
+
+  {
+    id: 'philosophie-lumiere',
+    sortYear: 1687,
+    title: 'Les philosophes des Lumières',
+    note: 'Six chapitres sur le contexte des Lumières, les précurseurs, Montesquieu et Voltaire, Rousseau et l’Encyclopédie, Hume, Smith et Kant, puis la diffusion et les limites du mouvement. Les bornes chronologiques sont conventionnelles : les historiens ne s’accordent pas sur le début et la fin exacts des Lumières.',
+    chapters: [
+      {
+        id: 'contexte-et-definition',
+        title: 'Que sont les Lumières ? Contexte et définition',
+        field: 'Lumières · Europe et Amérique du Nord, fin du XVIIe – fin du XVIIIe siècle',
+        summary: 'Comprendre ce que désigne le mot « Lumières », la place de la raison, le rôle des philosophes et les limites des bornes chronologiques.',
+        lesson: {
+          sections: [
+            'Les Lumières (en anglais Enlightenment, en allemand Aufklärung) désignent un mouvement intellectuel européen et nord-américain qui s’étend, selon la World History Encyclopedia, de la fin du XVIIe siècle à la fin du XVIIIe siècle. Il renouvelle la philosophie, les sciences et la politique, en affirmant que la raison humaine est l’outil permettant d’étendre la connaissance, de préserver la liberté individuelle et de favoriser le bonheur. Les bornes sont conventionnelles : la New World Encyclopedia retient par exemple la Révolution française comme point de fin habituel, tandis que d’autres synthèses élargissent le mouvement à des penseurs plus anciens.',
+            'En 1784, le philosophe allemand Emmanuel Kant publie dans la revue Berlinische Monatsschrift un court texte intitulé « Réponse à la question : qu’est-ce que les Lumières ? ». Il y définit les Lumières comme la sortie de l’homme hors d’une minorité dont il est lui-même responsable, c’est-à-dire l’incapacité de se servir de son entendement sans la direction d’autrui. Il reprend la devise latine Sapere aude (« ose savoir », « aie le courage de te servir de ton propre entendement »). Ce texte est l’une des définitions les plus citées du mouvement, mais elle exprime le point de vue d’un auteur, à une date précise.',
+            'En France, les penseurs associés au mouvement sont appelés les philosophes (« philosophes » au sens du XVIIIe siècle, c’est-à-dire des hommes de lettres engagés dans la discussion publique, pas seulement des universitaires). La Stanford Encyclopedia of Philosophy les décrit comme une société informelle d’hommes de lettres collaborant à un projet d’Enlightenment mal défini, dont l’Encyclopédie est l’exemple le plus connu. Il n’y a pas de doctrine unique : la World History Encyclopedia insiste sur le fait que ces penseurs se contredisaient entre eux et qu’aucun consensus n’existait sur les réponses aux grandes questions (meilleur gouvernement, vertu, bonheur).',
+            'Le contexte intellectuel est celui de la révolution scientifique. La World History Encyclopedia cite les Principia mathematica de Newton (1687) parmi les premiers textes des Lumières proprement dites. Les philosophes cherchent à appliquer à la société, à la morale, à la religion et au gouvernement la démarche de raisonnement et d’observation qui avait réussi en physique. C’est aussi un contexte de mémoire des guerres de religion et de conflits politiques, que la New World Encyclopedia mentionne (guerre de Trente Ans, 1618-1648 ; guerre civile anglaise, 1642-1651) comme arrière-plan de la critique de l’intolérance et de l’autorité religieuse.'
+          ],
+          example: {
+            statement: 'Newton publie les Principia en 1687 et Kant publie sa réponse à la question « Qu’est-ce que les Lumières ? » en 1784. Combien d’années séparent ces deux textes ?',
+            calculation: '1784 − 1687 = 97.',
+            answer: '97 ans séparent les deux textes. Cet écart montre que les Lumières forment un mouvement qui s’étend sur près d’un siècle, et non un événement daté.'
+          },
+          exercise: {
+            question: 'Pourquoi dit-on que les « Lumières » ne forment pas une doctrine unique ?',
+            answer: 'Parce que les penseurs du mouvement défendaient des positions différentes et se critiquaient entre eux ; ce qui les rapproche est surtout la confiance dans la raison et dans le progrès de la connaissance.'
+          },
+          exercises: [
+            {
+              question: 'Quelle devise latine Kant reprend-il dans son texte de 1784 ?',
+              answer: 'Sapere aude, « ose savoir » (aie le courage de te servir de ton propre entendement).'
+            },
+            {
+              question: 'Quelle œuvre scientifique de 1687 la World History Encyclopedia cite-t-elle parmi les premiers textes des Lumières proprement dites ?',
+              answer: 'Les Principia mathematica d’Isaac Newton.'
+            },
+            {
+              question: 'Les dates de début et de fin des Lumières font-elles l’objet d’un accord absolu ?',
+              answer: 'Non. Les bornes sont conventionnelles (fin du XVIIe – fin du XVIIIe siècle) et varient selon les historiens et les pays.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — The Enlightenment', url: 'https://www.worldhistory.org/The_Enlightenment' },
+            { title: 'Stanford Encyclopedia of Philosophy — Enlightenment', url: 'https://plato.stanford.edu/entries/enlightenment/' },
+            { title: 'New World Encyclopedia — Age of Enlightenment', url: 'https://www.newworldencyclopedia.org/entry/Age_of_Enlightenment' }
+          ]
+        }
+      },
+      {
+        id: 'precurseurs',
+        title: 'Les précurseurs : Newton, Locke et Bayle',
+        field: 'Lumières · Angleterre et Provinces-Unies, fin du XVIIe siècle',
+        summary: 'Découvrir les penseurs de la fin du XVIIe siècle qui préparent les Lumières : science newtonienne, empirisme, tolérance et critique érudite.',
+        lesson: {
+          sections: [
+            'La Stanford Encyclopedia of Philosophy inclut, dans son panorama des Lumières, des penseurs antérieurs comme Hobbes, Locke, Descartes, Bayle, Leibniz et Spinoza, dont les contributions sont indispensables pour comprendre le XVIIIe siècle. La World History Encyclopedia parle de penseurs « pré-Lumières » qui posent des fondements, comme Francis Bacon (méthode scientifique), René Descartes (Discours de la méthode, 1637), Thomas Hobbes (Léviathan, 1651) et Spinoza (Éthique, publiée en 1677). Les Lumières héritent donc de plusieurs traditions, rationaliste et empiriste.',
+            'Isaac Newton publie en 1687 les Principia mathematica. Pour de nombreux philosophes du siècle suivant, la physique newtonienne montre qu’un petit nombre de lois mathématiques peut expliquer des phénomènes très variés, ce qui nourrit l’idée que la raison peut éclairer d’autres domaines. Voltaire contribuera plus tard à populariser Newton en France ; ce lien entre science et philosophie est l’un des traits du mouvement.',
+            'John Locke (1632-1704) publie à la fin de 1689 (pages de titre datées de 1690) deux ouvrages majeurs : l’Essai sur l’entendement humain et les Deux traités du gouvernement civil. Dans l’Essai, il soutient que nos idées viennent de l’expérience, l’esprit étant comparé à une feuille blanche à l’origine. Dans le second Traité, il défend l’idée que les individus possèdent des droits naturels (vie, liberté, biens) et que le pouvoir politique repose sur le consentement des gouvernés ; un gouvernement qui viole ces droits peut être contesté. Locke écrit aussi une Lettre sur la tolérance (1689). Son influence sur la pensée politique des Lumières est très large.',
+            'Pierre Bayle (1647-1706), réfugié protestant français aux Provinces-Unies, publie en 1697 le Dictionnaire historique et critique. Cet ouvrage érudit examine de façon critique des opinions, des faits et des croyances, et devient une source importante pour les philosophes du XVIIIe siècle. Bayle défend aussi la tolérance religieuse. Newton, Locke et Bayle montrent que les Lumières ne naissent pas d’un seul pays : elles se construisent entre l’Angleterre, les Provinces-Unies et la France.'
+          ],
+          example: {
+            statement: 'Le Dictionnaire de Bayle paraît en 1697 et L’Esprit des lois de Montesquieu en 1748. Combien d’années séparent ces deux publications ?',
+            calculation: '1748 − 1697 = 51.',
+            answer: '51 ans. Les idées de la fin du XVIIe siècle ont donc eu plusieurs décennies pour circuler avant les grandes œuvres du milieu du XVIIIe siècle.'
+          },
+          exercise: {
+            question: 'Quelle est l’idée centrale de Locke dans l’Essai sur l’entendement humain ?',
+            answer: 'Les idées viennent de l’expérience : l’esprit est comparé à une feuille blanche au départ.'
+          },
+          exercises: [
+            {
+              question: 'Quelle œuvre Pierre Bayle publie-t-il en 1697 ?',
+              answer: 'Le Dictionnaire historique et critique.'
+            },
+            {
+              question: 'Quelle idée politique Locke défend-il dans le second Traité du gouvernement civil ?',
+              answer: 'Que les individus ont des droits naturels et que le pouvoir politique repose sur le consentement des gouvernés.'
+            },
+            {
+              question: 'Pourquoi dit-on que les Lumières ne sont pas nées d’un seul pays ?',
+              answer: 'Parce que leurs précurseurs viennent de plusieurs espaces : Newton et Locke en Angleterre, Bayle aux Provinces-Unies après un exil de France, Descartes et Spinoza dans d’autres traditions.'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — The Enlightenment', url: 'https://www.worldhistory.org/The_Enlightenment' },
+            { title: 'Stanford Encyclopedia of Philosophy — Enlightenment', url: 'https://plato.stanford.edu/entries/enlightenment/' },
+            { title: 'Stanford Encyclopedia of Philosophy — Locke’s Political Philosophy', url: 'https://plato.stanford.edu/entries/locke-political/' }
+          ]
+        }
+      },
+      {
+        id: 'montesquieu-voltaire',
+        title: 'Montesquieu et Voltaire : lois, liberté et tolérance',
+        field: 'Lumières · France, 1721-1764',
+        summary: 'Étudier la séparation des pouvoirs chez Montesquieu et le combat de Voltaire pour la tolérance, en situant leurs œuvres principales.',
+        lesson: {
+          sections: [
+            'Charles-Louis de Secondat, baron de Montesquieu (1689-1755), publie en 1721 les Lettres persanes, un roman par lettres qui obtient un grand succès et regarde la société française à travers le regard de voyageurs persans. En 1748, il publie De l’esprit des lois, ouvrage à la fois controversé et très bien reçu. La Stanford Encyclopedia of Philosophy note que l’Église catholique le place à l’Index des livres interdits en 1751, et qu’il est mort en 1755 en laissant un essai inachevé sur le goût destiné à l’Encyclopédie.',
+            'La partie la plus célèbre de L’Esprit des lois porte sur la liberté politique et la séparation des pouvoirs. Montesquieu distingue le pouvoir législatif, le pouvoir exécutif et le pouvoir judiciaire, et soutient qu’il faut organiser les institutions pour que « le pouvoir arrête le pouvoir », afin de limiter les abus. La Stanford Encyclopedia of Philosophy indique que cette théorie a eu un impact considérable sur la théorie politique libérale et sur les rédacteurs de la Constitution des États-Unis. L’ouvrage analyse aussi l’influence du climat, des mœurs et de l’histoire sur les lois ; Montesquieu y traite également de l’esclavage (livre XV), qu’il critique.',
+            'François-Marie Arouet, dit Voltaire (1694-1778), est l’un des auteurs les plus lus du siècle. Après un séjour en Angleterre à la fin des années 1720, il publie les Lettres philosophiques (1734), qui présentent la société anglaise (tolérance religieuse, science de Newton, institutions) comme point de comparaison avec la France. Il écrit des pièces de théâtre, des poèmes, des contes philosophiques comme Candide (1759) et des textes polémiques contre le fanatisme religieux.',
+            'En 1762, le protestant Jean Calas est exécuté à Toulouse, après une accusation de meurtre de son fils. Voltaire se mobilise pour la réhabilitation de Calas et publie en 1763 le Traité sur la tolérance. Cette affaire illustre un type d’engagement des philosophes : intervenir dans l’espace public pour critiquer l’intolérance et les erreurs judiciaires. Voltaire collabore aussi à l’Encyclopédie et publie en 1764 le Dictionnaire philosophique. Son œuvre mêle défense de la tolérance et critique de l’Église, sans qu’il faille la réduire à un seul message.'
+          ],
+          example: {
+            statement: 'Montesquieu publie les Lettres persanes en 1721 et De l’esprit des lois en 1748. Combien d’années séparent ces deux œuvres ?',
+            calculation: '1748 − 1721 = 27.',
+            answer: '27 ans. Montesquieu passe de la satire sociale (roman par lettres) à une grande étude des lois et des gouvernements.'
+          },
+          exercise: {
+            question: 'Que signifie l’idée que « le pouvoir arrête le pouvoir » chez Montesquieu ?',
+            answer: 'Les pouvoirs (législatif, exécutif, judiciaire) doivent être organisés de façon à se limiter mutuellement, pour éviter les abus et protéger la liberté politique.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année Montesquieu publie-t-il De l’esprit des lois ?',
+              answer: 'En 1748.'
+            },
+            {
+              question: 'Quel texte Voltaire publie-t-il en 1763 à la suite de l’affaire Calas ?',
+              answer: 'Le Traité sur la tolérance.'
+            },
+            {
+              question: 'Quelle œuvre de Voltaire (1734) compare la société anglaise à la société française ?',
+              answer: 'Les Lettres philosophiques.'
+            }
+          ],
+          sources: [
+            { title: 'Stanford Encyclopedia of Philosophy — Montesquieu', url: 'https://plato.stanford.edu/entries/montesquieu/' },
+            { title: 'Encyclopaedia Britannica — Voltaire', url: 'https://www.britannica.com/biography/Voltaire' },
+            { title: 'Stanford Encyclopedia of Philosophy — Enlightenment', url: 'https://plato.stanford.edu/entries/enlightenment/' }
+          ]
+        }
+      },
+      {
+        id: 'rousseau-diderot-encyclopedie',
+        title: 'Rousseau, Diderot et l’Encyclopédie',
+        field: 'Lumières · France et Genève, 1750-1772',
+        summary: 'Comprendre la pensée politique de Rousseau et l’entreprise collective de l’Encyclopédie dirigée par Diderot et d’Alembert.',
+        lesson: {
+          sections: [
+            'Jean-Jacques Rousseau (1712-1778), né à Genève, devient célèbre en 1750 avec un Discours sur les sciences et les arts, couronné par l’Académie de Dijon, qui soutient que le progrès des sciences et des arts n’a pas nécessairement amélioré les mœurs. Il publie ensuite le Discours sur l’origine et les fondements de l’inégalité parmi les hommes (1755). Rousseau fait partie des auteurs associés aux Lumières, mais il en est aussi un critique : il remet en cause une confiance simple dans le progrès, ce qui montre que le mouvement n’est pas unanime.',
+            'En 1762, Rousseau publie Du contrat social et Émile, ou De l’éducation. Dans le Contrat social, il cherche à fonder la légitimité politique sur un accord entre les citoyens et sur la notion de volonté générale ; la souveraineté appartient au peuple. Les deux livres de 1762 sont condamnés par les autorités, à Paris et à Genève, ce qui force Rousseau à quitter la France. Le Contrat social aura une grande influence sur la pensée politique, y compris pendant la Révolution française, mais son interprétation reste discutée.',
+            'Denis Diderot (1713-1784) dirige l’Encyclopédie, ou Dictionnaire raisonné des sciences, des arts et des métiers, d’abord avec Jean Le Rond d’Alembert. Selon Britannica, 17 volumes de texte paraissent entre 1751 et 1765, et d’autres volumes (dont des planches) sont ajoutés ensuite ; d’autres sources comptent 28 volumes pour l’ensemble principal publié jusqu’en 1772, et jusqu’à 35 avec les suppléments. L’ouvrage rassemble des articles de nombreux collaborateurs, dont Voltaire, Rousseau et Montesquieu. D’Alembert quitte la direction en 1758 ; Diderot poursuit l’entreprise pendant vingt-cinq ans environ.',
+            'L’Encyclopédie est controversée : elle est attaquée par des ecclésiastiques et des responsables politiques et subit la censure, notamment après la révocation du privilège royal en 1759. Britannica retient son scepticisme, son accent sur le déterminisme scientifique et sa critique des abus des institutions juridiques, judiciaires et religieuses de l’époque. Elle illustre le rôle des Lumières comme entreprise collective de diffusion du savoir, mais aussi les tensions avec le pouvoir et l’Église.'
+          ],
+          example: {
+            statement: 'Les 17 volumes de texte de l’Encyclopédie paraissent de 1751 à 1765. Quelle différence y a-t-il entre ces deux dates ?',
+            calculation: '1765 − 1751 = 14.',
+            answer: 'Il y a 14 ans d’écart entre la première et la dernière année de publication de ces 17 volumes, ce qui montre la durée de l’entreprise.'
+          },
+          exercise: {
+            question: 'Pourquoi peut-on dire que Rousseau est à la fois un philosophe des Lumières et un critique de certaines idées des Lumières ?',
+            answer: 'Il participe aux débats du siècle (politique, éducation, droits), mais il conteste l’idée que le progrès des sciences et des arts améliore automatiquement les mœurs.'
+          },
+          exercises: [
+            {
+              question: 'Quels deux livres Rousseau publie-t-il en 1762 ?',
+              answer: 'Du contrat social et Émile, ou De l’éducation.'
+            },
+            {
+              question: 'Qui dirige l’Encyclopédie, et qui l’a d’abord co-dirigée ?',
+              answer: 'Denis Diderot, d’abord avec Jean Le Rond d’Alembert (qui quitte la direction en 1758).'
+            },
+            {
+              question: 'Combien de volumes de texte de l’Encyclopédie paraissent entre 1751 et 1765 selon Britannica ?',
+              answer: '17 volumes.'
+            }
+          ],
+          sources: [
+            { title: 'Encyclopaedia Britannica — Encyclopédie (résumé)', url: 'https://www.britannica.com/summary/Encyclopedie' },
+            { title: 'Wikipedia — Encyclopédie', url: 'https://en.wikipedia.org/wiki/Encyclop%C3%A9die' },
+            { title: 'Stanford Encyclopedia of Philosophy — Jean-Jacques Rousseau', url: 'https://plato.stanford.edu/entries/rousseau/' }
+          ]
+        }
+      },
+      {
+        id: 'hume-smith-kant',
+        title: 'Hume, Smith et Kant : Lumières écossaises et allemandes',
+        field: 'Lumières · Écosse et Prusse, 1739-1788',
+        summary: 'Montrer que les Lumières ne sont pas seulement françaises : empirisme de Hume, économie de Smith, critique de la raison chez Kant.',
+        lesson: {
+          sections: [
+            'David Hume (1711-1776), philosophe écossais, publie le Traité de la nature humaine (1739-1740) puis l’Enquête sur l’entendement humain (1748). Il pratique un empirisme qui cherche à fonder la connaissance sur l’expérience et analyse la causalité, les passions et la morale. Son œuvre est un exemple de la manière dont les Lumières déplacent la philosophie vers l’étude de la nature humaine.',
+            'Adam Smith (1723-1790), également écossais, publie en 1759 la Théorie des sentiments moraux, puis en 1776 La Richesse des nations. Cette seconde œuvre analyse la division du travail, les marchés et la production de richesse, et est considérée comme fondatrice de l’économie politique moderne. Smith appartient aux Lumières écossaises, où la réflexion sur la société commerciale occupe une place importante.',
+            'Emmanuel Kant (1724-1804), qui vit à Königsberg, publie la Critique de la raison pure (1781) et la Critique de la raison pratique (1788). Il y examine les conditions et les limites de la connaissance humaine et les fondements de la morale. Dans son texte de 1784 sur les Lumières, il fait de l’usage public de la raison une condition de l’émancipation. Kant est ainsi à la fois un penseur des Lumières et l’un de ceux qui en proposent une critique interne : la raison doit examiner ses propres limites.',
+            'Ces trois auteurs illustrent la diversité géographique et thématique du mouvement. La World History Encyclopedia mentionne Kant comme penseur des Lumières allemand, et la Stanford Encyclopedia of Philosophy rappelle que d’autres centres de pensée existent partout en Europe et en Amérique. Parler des « Lumières » au pluriel, selon les pays, permet de mieux rendre compte de cette diversité.'
+          ],
+          example: {
+            statement: 'Le Traité de la nature humaine de Hume paraît à partir de 1739 et La Richesse des nations de Smith en 1776. Combien d’années séparent ces deux œuvres ?',
+            calculation: '1776 − 1739 = 37.',
+            answer: '37 ans. Les deux œuvres appartiennent à la même tradition des Lumières écossaises, mais à deux moments différents du siècle.'
+          },
+          exercise: {
+            question: 'Pourquoi peut-on parler de Lumières « écossaises » et « allemandes » ?',
+            answer: 'Parce que le mouvement se développe dans plusieurs pays, avec des auteurs et des préoccupations propres (Hume et Smith en Écosse ; Kant en Prusse), et ne se limite pas à la France.'
+          },
+          exercises: [
+            {
+              question: 'Quelle œuvre Adam Smith publie-t-il en 1776 ?',
+              answer: 'La Richesse des nations.'
+            },
+            {
+              question: 'Quelle œuvre de Kant est publiée en 1781 ?',
+              answer: 'La Critique de la raison pure.'
+            },
+            {
+              question: 'Quel philosophe écossais publie le Traité de la nature humaine ?',
+              answer: 'David Hume.'
+            }
+          ],
+          sources: [
+            { title: 'Stanford Encyclopedia of Philosophy — David Hume', url: 'https://plato.stanford.edu/entries/hume/' },
+            { title: 'Stanford Encyclopedia of Philosophy — Adam Smith', url: 'https://plato.stanford.edu/entries/smith/' },
+            { title: 'Stanford Encyclopedia of Philosophy — Immanuel Kant', url: 'https://plato.stanford.edu/entries/kant/' },
+            { title: 'World History Encyclopedia — The Enlightenment (chronologie)', url: 'https://worldhistory.org/timeline/The_Enlightenment' }
+          ]
+        }
+      },
+      {
+        id: 'diffusion-et-limites',
+        title: 'Diffusion, influence politique et limites des Lumières',
+        field: 'Lumières · Europe et Amériques, XVIIIe siècle',
+        summary: 'Comprendre comment les idées des Lumières circulent, inspirent des textes politiques et font l’objet de critiques et de débats.',
+        lesson: {
+          sections: [
+            'Les idées des Lumières circulent par les livres, les journaux, les académies, les correspondances et les rencontres entre auteurs. Elles rencontrent aussi des obstacles : l’Index des livres interdits (qui frappe L’Esprit des lois en 1751), la censure royale, la condamnation des livres de Rousseau en 1762 ou les difficultés de l’Encyclopédie. La diffusion du mouvement s’accompagne donc de conflits avec les autorités politiques et religieuses.',
+            'Sur le plan politique, la World History Encyclopedia relie le mouvement à la révolution intellectuelle qui précède les révolutions américaine et française. La Déclaration d’indépendance des États-Unis est adoptée en 1776, et la Déclaration des droits de l’homme et du citoyen en France le 26 août 1789. Ces textes mobilisent des idées de droits naturels, de liberté et de souveraineté qui renvoient à des débats des Lumières. Il faut cependant éviter de parler d’une cause unique : les révolutions ont aussi des causes sociales, économiques et politiques propres.',
+            'Les Lumières ont fait l’objet de critiques dès l’époque. Rousseau interroge le progrès des sciences et des arts. La New World Encyclopedia note que la Révolution française, par sa violence, a discrédité le mouvement aux yeux de nombreux contemporains et que la devise « Sapere aude » a elle-même fini par nourrir une critique de la confiance dans la raison. Les historiens discutent aussi des limites des Lumières : tous les auteurs ne défendent pas les mêmes droits pour tous, et les positions sur l’esclavage, la place des femmes ou le colonialisme varient fortement. Montesquieu critique l’esclavage dans L’Esprit des lois (livre XV) ; Condorcet publie en 1781 des Réflexions sur l’esclavage des nègres.',
+            'Étudier les Lumières demande donc de distinguer les textes, les auteurs et les contextes. Le mouvement n’est ni un bloc homogène ni une doctrine unique : c’est un ensemble de débats sur la raison, la liberté, la tolérance, le gouvernement et le progrès, dont l’héritage reste discuté. Un bon réflexe consiste à vérifier la date, l’auteur et le pays de chaque idée avant de la rattacher aux « Lumières ».'
+          ],
+          example: {
+            statement: 'La Déclaration d’indépendance des États-Unis date de 1776 et la Déclaration des droits de l’homme et du citoyen de 1789. Combien d’années séparent ces deux textes ?',
+            calculation: '1789 − 1776 = 13.',
+            answer: '13 ans. Ces deux textes appartiennent à la période des révolutions de la fin du XVIIIe siècle, sans qu’on puisse les réduire à une seule influence.'
+          },
+          exercise: {
+            question: 'Pourquoi ne faut-il pas dire que les Lumières « ont causé » à elles seules les révolutions ?',
+            answer: 'Parce que les révolutions ont aussi des causes politiques, sociales et économiques ; les idées des Lumières sont un facteur parmi d’autres.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année la Déclaration des droits de l’homme et du citoyen est-elle adoptée en France ?',
+              answer: 'En 1789 (le 26 août).'
+            },
+            {
+              question: 'Quel livre de L’Esprit des lois traite de l’esclavage ?',
+              answer: 'Le livre XV.'
+            },
+            {
+              question: 'Quels obstacles les idées des Lumières ont-elles rencontrés ?',
+              answer: 'La censure, l’Index des livres interdits et les condamnations d’ouvrages (par exemple L’Esprit des lois en 1751, les livres de Rousseau en 1762).'
+            }
+          ],
+          sources: [
+            { title: 'World History Encyclopedia — The Enlightenment', url: 'https://www.worldhistory.org/The_Enlightenment' },
+            { title: 'New World Encyclopedia — Age of Enlightenment', url: 'https://www.newworldencyclopedia.org/entry/Age_of_Enlightenment' },
+            { title: 'Stanford Encyclopedia of Philosophy — Enlightenment', url: 'https://plato.stanford.edu/entries/enlightenment/' },
+            { title: 'Stanford Encyclopedia of Philosophy — Montesquieu', url: 'https://plato.stanford.edu/entries/montesquieu/' }
+          ]
+        }
+      }
+    ]
+  },
+
+
 ]
