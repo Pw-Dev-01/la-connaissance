@@ -1901,6 +1901,150 @@
       }
     ]
   },
+{
+  id: 'rayonnement-radioactif',
+  title: 'Les rayonnements radioactifs',
+
+  introduction: `Un noyau atomique instable peut se transformer spontanément en un autre noyau en émettant des particules et/ou de l’énergie. Ce phénomène est appelé désintégration radioactive. Les rayonnements émis transportent de l’énergie et peuvent interagir avec la matière. Certains sont ionisants : ils peuvent arracher des électrons aux atomes ou aux molécules.`,
+
+  sections: [
+    {
+      id: 'notions-fondamentales',
+      title: '1. Notions fondamentales',
+      content: [
+        `Un atome possède un noyau composé de protons et de neutrons, entouré d’électrons. Le nombre de protons, noté Z, définit l’élément chimique. Le nombre total de nucléons (protons et neutrons), noté A, est le nombre de masse. Un nucléide est caractérisé par ces nombres. Deux isotopes d’un même élément ont le même nombre de protons, mais des nombres de neutrons différents. Certains nucléides sont instables et se transforment spontanément : ils sont radioactifs.`,
+
+        `Lors d’une désintégration, le noyau initial est appelé noyau père et le noyau obtenu noyau fils. Le noyau fils peut être stable ou être lui-même radioactif. La transformation obéit aux lois de conservation, notamment à la conservation de la charge électrique et du nombre total de nucléons dans les équations nucléaires usuelles.`,
+
+        `Le terme « rayonnement radioactif » désigne ici ce qui est émis lors d’une transformation radioactive. Il faut distinguer la radioactivité, qui est le phénomène de transformation du noyau, du rayonnement, qui transporte de l’énergie. Les émissions classiques étudiées sont alpha, bêta moins, bêta plus et gamma. Les rayons X et les neutrons sont aussi des rayonnements ionisants, mais ils ne correspondent pas tous au même mécanisme nucléaire.`
+      ]
+    },
+
+    {
+      id: 'rayonnement-alpha',
+      title: '2. Rayonnement alpha (α)',
+      content: [
+        `Une particule alpha est un noyau d’hélium 4 : elle contient 2 protons et 2 neutrons et porte une charge électrique +2e. Lors d’une désintégration alpha, le noyau père perd 2 protons et 2 neutrons. Le nombre de masse A diminue donc de 4 et le numéro atomique Z diminue de 2 : le noyau fils appartient à un autre élément chimique.`,
+
+        `Exemple : uranium 238 → thorium 234 + particule alpha. En notation nucléaire, on peut écrire : ²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He. Vérification : le nombre de masse se conserve (238 = 234 + 4) et le numéro atomique se conserve (92 = 90 + 2).`,
+
+        `Les particules alpha interagissent fortement avec la matière et perdent rapidement leur énergie. Leur pouvoir de pénétration est faible : dans les conditions usuelles, elles sont arrêtées par une feuille de papier ou par la couche superficielle de la peau. Cependant, une substance émettrice alpha peut être dangereuse si elle pénètre dans l’organisme par inhalation, ingestion ou une plaie, car l’énergie est alors déposée dans les tissus proches de la source.`
+      ]
+    },
+
+    {
+      id: 'rayonnement-beta-moins',
+      title: '3. Rayonnement bêta moins (β⁻)',
+      content: [
+        `Le rayonnement bêta moins est constitué d’électrons émis lors d’une transformation nucléaire. Dans le noyau, un neutron se transforme en proton, avec émission d’un électron et d’un antineutrino électronique. Le proton supplémentaire fait augmenter le numéro atomique Z de 1, tandis que le nombre de masse A reste inchangé, puisque le nombre total de nucléons ne change pas. L’électron bêta n’est pas un électron de la couche électronique : il est produit lors de la transformation nucléaire.`,
+
+        `Exemple : carbone 14 → azote 14 + électron + antineutrino électronique. En notation simplifiée : ¹⁴₆C → ¹⁴₇N + β⁻ + antineutrino électronique. Le nombre de masse reste 14 et la charge totale est conservée en tenant compte de toutes les particules émises.`,
+
+        `Les électrons bêta interagissent avec la matière moins fortement que les particules alpha et ont généralement un pouvoir de pénétration plus important. Leur portée dépend de leur énergie et du matériau traversé. Une feuille mince d’aluminium ou certains plastiques peuvent atténuer ou arrêter de nombreux rayonnements bêta, mais le blindage doit être choisi selon la source et l’énergie. Une exposition externe ou une contamination interne peut présenter un risque.`
+      ]
+    },
+
+    {
+      id: 'rayonnement-beta-plus',
+      title: '4. Rayonnement bêta plus (β⁺)',
+      content: [
+        `Le rayonnement bêta plus est constitué de positons, les antiparticules de l’électron : ils ont la même masse que l’électron, mais une charge électrique positive. Dans le noyau, un proton se transforme en neutron en émettant un positon et un neutrino électronique. Le nombre de masse A reste inchangé et le numéro atomique Z diminue de 1.`,
+
+        `Exemple : oxygène 15 → azote 15 + positon + neutrino électronique. En notation simplifiée : ¹⁵₈O → ¹⁵₇N + β⁺ + neutrino électronique. Comme pour toute équation nucléaire, les nombres de masse et les charges doivent être cohérents des deux côtés.`,
+
+        `Après avoir perdu son énergie cinétique dans la matière, un positon peut rencontrer un électron. Leur annihilation produit généralement deux photons gamma de 511 keV chacun, émis approximativement en directions opposées dans le référentiel du centre de masse. Ce phénomène est exploité en tomographie par émission de positons (TEP), une technique d’imagerie médicale.`
+      ]
+    },
+
+    {
+      id: 'rayonnement-gamma',
+      title: '5. Rayonnement gamma (γ)',
+      content: [
+        `Le rayonnement gamma est constitué de photons, c’est-à-dire de quanta de rayonnement électromagnétique. Les photons gamma ont une énergie élevée et se déplacent à la vitesse de la lumière dans le vide. Contrairement aux particules alpha et bêta, ils n’ont ni charge électrique ni masse au repos.`,
+
+        `Un noyau peut être formé dans un état excité après une désintégration alpha ou bêta. Il peut alors perdre une partie de son énergie en émettant un ou plusieurs photons gamma. Lors de la seule émission gamma, le nombre de masse A et le numéro atomique Z du noyau ne changent pas : le noyau se désexcite sans devenir un autre élément.`,
+
+        `Les photons gamma sont pénétrants. Ils ne sont pas arrêtés par une simple feuille de papier et sont atténués par des écrans suffisamment épais de matériaux denses, par exemple du plomb ou du béton. La réduction réelle dépend de l’énergie des photons, de l’épaisseur et de la composition du blindage. Les rayons gamma peuvent traverser les tissus et déposer de l’énergie dans l’organisme ; ils présentent donc un risque d’exposition externe.`
+      ]
+    },
+
+    {
+      id: 'comparaison-penetration',
+      title: '6. Comparer les rayonnements et leur pénétration',
+      content: [
+        `Dans les conditions usuelles, les particules alpha ont une faible portée, les particules bêta ont une portée intermédiaire et les photons gamma sont généralement les plus pénétrants des trois. Cette règle est qualitative : la pénétration dépend aussi de l’énergie du rayonnement et de la matière traversée. Il ne faut donc pas attribuer une portée unique et universelle à chaque type.`,
+
+        `Pour donner une idée du blindage, le papier ou la couche superficielle de la peau arrête généralement les particules alpha ; une faible épaisseur d’aluminium ou de plastique convient souvent pour atténuer les bêta ; les gamma nécessitent des écrans plus épais et denses, comme le plomb ou le béton. Ces exemples ne remplacent pas une évaluation radiologique professionnelle.`,
+
+        `Le pouvoir pénétrant ne suffit pas à déterminer le danger. Les particules alpha ont un pouvoir ionisant élevé sur une courte distance ; les bêta déposent leur énergie sur une distance plus longue ; les gamma sont très pénétrants et peuvent irradier des tissus en profondeur. Le risque dépend notamment du type de rayonnement, de son énergie, de l’activité de la source, de la durée et de la géométrie d’exposition, ainsi que du fait que la matière radioactive soit à l’extérieur ou incorporée dans l’organisme.`
+      ]
+    },
+
+    {
+      id: 'ionisation-et-effets',
+      title: '7. Ionisation et effets sur la matière',
+      content: [
+        `Un rayonnement ionisant possède assez d’énergie pour arracher des électrons aux atomes ou aux molécules rencontrés. Il crée alors des ions et peut déclencher des transformations chimiques. Dans les tissus vivants, ces interactions peuvent notamment endommager des molécules comme l’ADN. Les conséquences dépendent de la dose reçue, de la nature du rayonnement, de la zone exposée et de nombreux facteurs biologiques. Une exposition ne signifie pas automatiquement qu’un effet observable se produira, mais elle doit être maîtrisée.`,
+
+        `La dose absorbée mesure l’énergie déposée par unité de masse et s’exprime en gray (Gy). La dose équivalente et la dose efficace s’expriment en sievert (Sv) et tiennent compte, selon le cas, de facteurs de pondération liés au type de rayonnement et aux tissus exposés. L’activité radioactive s’exprime en becquerel (Bq) : 1 Bq correspond à 1 désintégration par seconde. Ces grandeurs ne sont pas interchangeables : l’activité d’une source n’est pas, à elle seule, la dose reçue par une personne.`
+      ]
+    },
+
+    {
+      id: 'demi-vie',
+      title: '8. Période radioactive (demi-vie)',
+      content: [
+        `La période radioactive, ou demi-vie, est la durée au bout de laquelle le nombre moyen de noyaux radioactifs non désintégrés d’un échantillon est réduit de moitié. Chaque radionucléide possède sa propre demi-vie, qui peut être très courte ou extrêmement longue. Pour un grand nombre de noyaux, la décroissance suit une loi statistique : on ne peut pas prédire l’instant exact où un noyau particulier se désintégrera.`,
+
+        `Après 1 demi-vie, il reste en moyenne 1/2 des noyaux initiaux ; après 2 demi-vies, 1/4 ; après 3 demi-vies, 1/8. La quantité ne tombe donc pas brusquement à zéro après une demi-vie. Dans un modèle de décroissance radioactive, le nombre de noyaux restants suit une décroissance exponentielle.`,
+
+        `La demi-vie est utile pour comprendre l’évolution de l’activité d’un échantillon, choisir et utiliser des radionucléides en médecine ou dans l’industrie, et réaliser certaines datations. Elle ne doit pas être confondue avec la durée pendant laquelle une matière est dangereuse : celle-ci dépend aussi de l’activité initiale, du rayonnement émis, de la voie d’exposition et des conditions de confinement.`
+      ]
+    },
+
+    {
+      id: 'applications-et-protection',
+      title: '9. Applications et principes de radioprotection',
+      content: [
+        `Les rayonnements ionisants sont utilisés dans plusieurs domaines : imagerie médicale avec les rayons X et certaines techniques de médecine nucléaire, traitement de certains cancers, stérilisation de matériel médical, contrôles industriels et recherche. Chaque application est choisie en fonction des propriétés physiques du rayonnement et doit être encadrée afin de limiter les expositions inutiles.`,
+
+        `Les principes généraux de radioprotection consistent à justifier les expositions, à les optimiser et à respecter les limites réglementaires applicables. En pratique, on réduit souvent l’exposition en diminuant le temps passé près d’une source, en augmentant la distance et en utilisant un écran adapté. La contamination — présence de matière radioactive sur une surface ou dans l’organisme — doit être distinguée de l’irradiation, qui correspond à l’exposition à un rayonnement. Une personne irradiée n’est pas automatiquement contaminée.`,
+
+        `Toute source inconnue ou tout objet suspecté d’être radioactif ne doit pas être manipulé. Il faut s’éloigner, éviter de disperser une éventuelle contamination et prévenir les responsables ou les services compétents. Les mesures de protection précises dépendent du radionucléide, du type de rayonnement et du contexte.`
+      ]
+    }
+  ],
+
+  summary: [
+    'Alpha (α) : noyau d’hélium 4 ; A diminue de 4 et Z de 2.',
+    'Bêta moins (β⁻) : électron émis ; A ne change pas et Z augmente de 1.',
+    'Bêta plus (β⁺) : positon émis ; A ne change pas et Z diminue de 1.',
+    'Gamma (γ) : photon émis par un noyau excité ; A et Z ne changent pas.',
+    'Bq mesure l’activité, Gy la dose absorbée et Sv les doses pondérées pour le risque radiologique.',
+    'La pénétration dépend de l’énergie et du matériau ; elle ne suffit pas, à elle seule, à définir le danger.'
+  ],
+
+  sources: [
+    {
+      name: 'OpenStax, Chemistry 2e, section 21.3 — Radioactive Decay',
+      url: 'https://openstax.org/books/chemistry-2e/pages/21-3-radioactive-decay'
+    },
+    {
+      name: 'Commissariat à l’énergie atomique et aux énergies alternatives (CEA) — La radioactivité',
+      url: 'https://www.cea.fr/comprendre/Pages/radioactivite/radioactivite.aspx?Type=Chapitre&numero=1'
+    },
+    {
+      name: 'Institut national de recherche et de sécurité (INRS) — Rayonnements ionisants : généralités',
+      url: 'https://www.inrs.fr/risques/rayonnements-ionisants/generalites'
+    },
+    {
+      name: 'U.S. Nuclear Regulatory Commission — Radiation Basics',
+      url: 'https://www.nrc.gov/facilities-safety/radiation-protection/radiation-and-its-health-effects/radiation-basics'
+    }
+  ]
+},
+
+
   {
     id: 'particules-elementaires',
     title: 'Particules élémentaires',
@@ -5336,5 +5480,9 @@
       }
     ]
   },
+
+
+
 ];
+
 
