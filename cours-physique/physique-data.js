@@ -1895,13 +1895,10 @@
           sources: [
             { title: 'OpenStax Chemistry 2e — Nuclear Structure and Stability', url: 'https://openstax.org/books/chemistry-2e/pages/21-1-nuclear-structure-and-stability' },
             { title: 'OpenStax Chemistry 2e — Transmutation and Nuclear Energy', url: 'https://openstax.org/books/chemistry-2e/pages/21-4-transmutation-and-nuclear-energy' },
-            { title: 'OpenStax University Physics, vol. 3 — Relativistic Energy', url: 'https://openstax.org/books/university-physics-volume-3/pages/5-9-relativistic-energy' 
-           }
+            { title: 'OpenStax University Physics, vol. 3 — Relativistic Energy', url: 'https://openstax.org/books/university-physics-volume-3/pages/5-9-relativistic-energy'}
           ]
         }
-      }
-    ]
-  },
+      },
 {
   id: 'rayonnement-radioactif',
   title: 'Les rayonnements radioactifs',
