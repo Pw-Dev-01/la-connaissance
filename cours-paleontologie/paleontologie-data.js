@@ -1138,6 +1138,334 @@ window.courseCatalog = [
     ]
   },
 
+// BRANCHE PREMIERS INSECTES
+
+  {
+    id: 'premiers-insectes',
+    sortYear: -400000000,
+    title: 'Les premiers insectes',
+    note: 'Sept chapitres sur l’origine des insectes, les plus anciens fossiles du Dévonien, la conquête du vol au Carbonifère, les insectes géants, la métamorphose complète, la fin du Permien et les insectes du Crétacé. Les dates sont des estimations ; les datations moléculaires et fossiles diffèrent, et plusieurs identifications de fossiles restent débattues.',
+    chapters: [
+      {
+        id: 'origine-des-insectes',
+        title: 'Qu’est-ce qu’un insecte, et quand sont-ils apparus ?',
+        field: 'Paléontologie · Origine des insectes · Ordovicien à Dévonien (estimations moléculaires)',
+        summary: 'Comprendre ce qu’est un insecte, comment les dates d’origine sont estimées par les gènes et pourquoi elles diffèrent de celles des fossiles.',
+        lesson: {
+          sections: [
+            'Un insecte est un arthropode de la classe des Insecta : à l’état adulte, son corps est divisé en tête, thorax et abdomen, et il porte six pattes. Les insectes font partie des hexapodes, un ensemble qui comprend aussi des groupes voisins comme les collemboles, souvent distingués des insectes au sens strict. Les analyses génétiques les rattachent à la grande lignée des arthropodes proches des crustacés.',
+            'En 2014, un consortium international (projet 1KITE) dirigé notamment par Bernhard Misof a reconstruit l’arbre généalogique des insectes à partir de 1 478 gènes codant des protéines, dans un article publié par la revue Science. Les auteurs datent l’origine des insectes de l’Ordovicien inférieur, vers 479 millions d’années, l’origine du vol du Dévonien inférieur, vers 406 millions d’années, celle des grandes lignées actuelles du Mississippien, vers 345 millions d’années, et la grande diversification des insectes à métamorphose complète du Crétacé inférieur.',
+            'Ces dates proviennent d’une « horloge moléculaire » calibrée à l’aide de fossiles (37 dans cette étude). Elles indiquent à quel moment des lignées se sont séparées, et non l’âge d’un fossile précis. Les chercheurs ont d’ailleurs indiqué une marge d’incertitude de l’ordre de plus ou moins 30 millions d’années pour l’origine des insectes. Selon cette reconstruction, les premiers insectes auraient quitté la mer pour des milieux côtiers en même temps que les premières plantes terrestres.',
+            'Les estimations génétiques sont plus anciennes que les fossiles : les plus anciens restes souvent discutés comme insectes datent d’environ 400 millions d’années, et les fossiles d’insectes ailés n’apparaissent qu’au Carbonifère. Certains auteurs, comme Schachat et ses collègues en 2023, jugent que l’origine très précoce des insectes ailés pourrait en partie être un artefact des méthodes d’analyse (choix des taxons et des fossiles de calibration). Il s’agit donc d’un débat scientifique ouvert, et non d’une contradiction à trancher en faveur d’une seule méthode.',
+            'Aujourd’hui, les insectes sont le groupe animal le plus diversifié : environ un million d’espèces sont décrites, soit plus de la moitié des espèces décrites tous organismes confondus. Les estimations de Nigel Stork et de ses collègues situent le nombre total d’espèces d’insectes autour de 5,5 millions (fourchette de 2,6 à 7,8 millions), ce qui signifie qu’environ 80 % restent à découvrir. Les coléoptères à eux seuls représentent environ 25 % des espèces décrites tous organismes confondus.'
+          ],
+          example: {
+            statement: 'Une étude génétique date l’origine des insectes à 479 millions d’années, et le plus ancien fossile souvent cité date d’environ 400 millions d’années. Quel est l’écart entre les deux ?',
+            calculation: 'Pour deux dates exprimées en millions d’années avant le présent, on soustrait la plus récente de la plus ancienne : 479 − 400 = 79.',
+            answer: 'L’écart est d’environ 79 millions d’années. Il faut y voir une différence entre deux méthodes (gènes et fossiles) et des estimations avec marge d’incertitude, pas des dates exactes.'
+          },
+          exercise: {
+            question: 'Pourquoi une date obtenue par horloge moléculaire n’est-elle pas la même chose que l’âge d’un fossile ?',
+            answer: 'L’horloge moléculaire estime le moment où des lignées se sont séparées à partir de différences génétiques et de fossiles de calibration. Un fossile donne seulement l’âge minimal d’une lignée, car les premiers représentants n’ont pas forcément été fossilisés.'
+          },
+          exercises: [
+            {
+              question: 'Quelles dates l’étude de Misof et collègues (Science, 2014) propose-t-elle pour l’origine des insectes et pour l’origine du vol ?',
+              answer: 'Environ 479 millions d’années (Ordovicien inférieur) pour l’origine des insectes et environ 406 millions d’années (Dévonien inférieur) pour l’origine du vol.'
+            },
+            {
+              question: 'Combien d’espèces d’insectes sont décrites aujourd’hui, et combien en existerait-il selon les estimations de Stork ?',
+              answer: 'Environ un million d’espèces sont décrites ; l’estimation moyenne est d’environ 5,5 millions d’espèces, avec une fourchette de 2,6 à 7,8 millions.'
+            },
+            {
+              question: 'Les collemboles sont-ils des insectes au sens strict ?',
+              answer: 'Ce sont des hexapodes proches des insectes, mais ils sont souvent distingués des insectes au sens strict dans la classification.'
+            }
+          ],
+          sources: [
+            { title: 'Misof et al. (2014) — Phylogenomics resolves the timing and pattern of insect evolution, Science', url: 'https://digitalcollections.anu.edu.au/handle/1885/66648' },
+            { title: 'Nature Reviews Genetics — Building the insect tree-of-life', url: 'https://www.nature.com/articles/nrg3870' },
+            { title: 'The Scientist — Genetic data clarify insect evolution', url: 'https://www.the-scientist.com/daily-news/genetic-data-clarify-insect-evolution-36457' },
+            { title: 'Schachat et al. (2023) — Illusion of flight? Absence, evidence and the age of winged insects', url: 'https://repository.si.edu/items/eadb097e-b3a2-4e3b-a134-fee627eb85e0' },
+            { title: 'Stork et al. (2015) — New approaches narrow global species estimates for beetles, insects, and terrestrial arthropods, PNAS', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4475949' },
+            { title: 'Stork (2018) — How many species of insects and other terrestrial arthropods are there on Earth?', url: 'https://research-repository.griffith.edu.au/handle/10072/376764' }
+          ]
+        }
+      },
+      {
+        id: 'fossiles-devoniens',
+        title: 'Les plus anciens fossiles du Dévonien : Rhynie, Rhyniognatha et Strudiella',
+        field: 'Paléontologie · Dévonien · Environ 400 à 360 millions d’années',
+        summary: 'Découvrir les rares fossiles du Dévonien présentés comme insectes et comprendre pourquoi leur identification fait débat.',
+        lesson: {
+          sections: [
+            'Le Rhynie chert est un gisement de l’Aberdeenshire, en Écosse, qui date du Dévonien inférieur, vers 400 millions d’années. Il conserve des organismes des tout premiers écosystèmes terrestres. Dès 1926, Stanley Hirst et S. Maulik y décrivirent des restes d’arthropodes, dont Rhyniella praecursor, un collembole (« springtail ») aujourd’hui largement accepté comme un fossile authentique d’environ 400 millions d’années.',
+            'Parmi les pièces du Rhynie chert se trouvait une tête partielle dont les pièces buccales sont conservées. En 1928, Robin J. Tillyard montra qu’elle n’appartenait pas à un collembole et la nomma Rhyniognatha hirsti. En 2004, Michael Engel et David Grimaldi publièrent dans Nature une réanalyse concluant que les mandibules étaient celles d’un véritable insecte, comparables à celles des éphémères, ce qui suggérait un insecte ailé. L’animal, de la taille d’un grain de riz selon la presse de l’époque, était daté entre 396 et 407 millions d’années.',
+            'Cette interprétation a été remise en cause. En 2017, Carolin et Joachim Haug ont réexaminé l’unique spécimen, conservé au Natural History Museum de Londres, avec des techniques d’imagerie récentes. Ils ont conclu qu’une interprétation comme myriapode, plus précisément comme un scutigéromorphe (un type de chilopode, ou mille-pattes carnivore), était mieux soutenue, sans pouvoir exclure complètement un insecte. Le statut de Rhyniognatha comme plus ancien insecte reste donc discuté.',
+            'En 2012, Romain Garrouste et ses collègues décrivirent dans Nature Strudiella devonica, un petit fossile d’environ 8 millimètres découvert à Strud (Gesves, Belgique) dans des sédiments d’eau douce du Famennien supérieur, vers 360 millions d’années. Ils y voyaient un insecte complet, avec six pattes, de longues antennes, des mandibules triangulaires et un abdomen de dix segments. En 2013, Thomas Hörnschemeyer et ses collègues contestèrent cette identification dans la même revue, et Garrouste et al. répondirent en maintenant leur interprétation. De nombreuses études parlent depuis d’« insecte putatif ».',
+            'Le registre dévonien des insectes est donc très pauvre et très débattu. Haug et Haug (2017) dressent la liste des fossiles dévoniens présentés comme insectes : certains ont été réinterprétés comme autres arthropodes, d’autres restent mal conservés ou controversés (par exemple Leverhulmia mariae, du Rhynie chert, d’abord décrit comme myriapode puis comme possible insecte primitif sans ailes). Dans leur réponse de 2013, Garrouste et al. reconnaissent eux-mêmes que, depuis le XIXe siècle, des « insectes » dévoniens se sont souvent révélés être autre chose.'
+          ],
+          example: {
+            statement: 'Rhyniognatha hirsti est datée d’environ 400 millions d’années et Strudiella devonica d’environ 360 millions d’années. Laquelle est la plus ancienne, et de combien ?',
+            calculation: 'On compare les deux durées : le nombre le plus grand correspond au fossile le plus ancien. Puis on calcule la différence : 400 − 360 = 40.',
+            answer: 'Rhyniognatha est la plus ancienne, d’environ 40 millions d’années. Ces valeurs sont arrondies et, dans les deux cas, l’identification comme insecte est débattue.'
+          },
+          exercise: {
+            question: 'Pourquoi ne peut-on pas affirmer que Rhyniognatha hirsti est le plus ancien insecte connu ?',
+            answer: 'Parce que le fossile est une tête partielle unique et que sa réanalyse en 2017 a conclu qu’une interprétation comme myriapode (centipède) était mieux soutenue, sans exclure totalement un insecte.'
+          },
+          exercises: [
+            {
+              question: 'Où et à quelle époque a été trouvé Rhyniognatha hirsti ?',
+              answer: 'Dans le Rhynie chert, en Aberdeenshire (Écosse), dans des roches du Dévonien inférieur datées d’environ 400 millions d’années.'
+            },
+            {
+              question: 'Qu’est-ce que Strudiella devonica et pourquoi est-elle contestée ?',
+              answer: 'C’est un petit arthropode du Famennien de Belgique, décrit en 2012 comme un insecte complet. Sa conservation est incomplète et Hörnschemeyer et al. (2013) ont contesté cette interprétation.'
+            },
+            {
+              question: 'Qui a nommé Rhyniognatha hirsti et en quelle année ?',
+              answer: 'Robin J. Tillyard, en 1928.'
+            }
+          ],
+          sources: [
+            { title: 'Wikipedia — Rhyniognatha', url: 'https://en.wikipedia.org/wiki/Rhyniognatha' },
+            { title: 'Haug & Haug (2017) — The presumed oldest flying insect: more likely a myriapod? PeerJ', url: 'https://peerj.com/articles/3402' },
+            { title: 'Wikipedia — Strudiella', url: 'https://en.wikipedia.org/wiki/Strudiella' },
+            { title: 'Hörnschemeyer et al. (2013) — Is Strudiella a Devonian insect? Nature', url: 'https://www.nature.com/articles/nature11887' },
+            { title: 'Garrouste et al. (2013) — Garrouste et al. reply, Nature', url: 'https://ideas.repec.org/a/nat/nature/v494y2013i7437d10.1038_nature11888.html' },
+            { title: 'Denayer et al. (2016) — Stratigraphy of the Late Famennian of Southern Belgium and the Strud locality, Geological Magazine', url: 'https://www.cambridge.org/core/journals/geological-magazine/article/stratigraphy-and-depositional-environments-of-the-late-famennian-late-devonian-of-southern-belgium-and-characterization-of-the-strud-locality/BAFD866A0B080EAFA24836F73F437EBD' }
+          ]
+        }
+      },
+      {
+        id: 'conquete-du-vol',
+        title: 'La conquête du vol au Carbonifère',
+        field: 'Paléontologie · Carbonifère · Environ 359 à 299 millions d’années',
+        summary: 'Comprendre quand apparaissent les premiers insectes ailés dans les fossiles, pourquoi ils semblent plus récents que les estimations génétiques et comment ils se diversifient.',
+        lesson: {
+          sections: [
+            'Les plus anciens fossiles d’insectes ailés (ptérygotes) datent du milieu du Carbonifère : Schachat et ses collègues (2023) les situent à la fin du Mississippien, entre 328 et 324 millions d’années. L’espèce la plus ancienne connue citée dans la littérature est Delitzschala bitterfeldensis, un paléodictyoptère d’environ 2,5 cm d’envergure découvert dans la région de Bitterfeld/Delitzsch, en Allemagne, dans des couches du Namurien A inférieur (Arnsbergien). Ses ailes portaient un motif de taches encore visible sur le fossile.',
+            'Il existe donc un décalage d’environ 80 millions d’années entre l’origine du vol estimée par les gènes (vers 406 millions d’années selon Misof et al.) et les premiers insectes ailés fossiles. Schachat et ses collègues ont testé plusieurs explications possibles de cette lacune (biais d’échantillonnage, de conservation, taille du corps) et n’ont pas trouvé de soutien pour elles. Ils suggèrent que l’âge très ancien déduit des gènes pourrait résulter d’un artefact d’analyse. Le sujet n’est pas tranché.',
+            'À partir du début du Carbonifère, avant 325 millions d’années, une vaste radiation commence selon Conrad Labandeira et John Sepkoski (1993), avec des pics de diversité au Carbonifère supérieur et au Permien moyen. D’après les synthèses paléontologiques de l’équipe d’André Nel, cette explosion de diversité touche les insectes ailés mais pas les lignées d’hexapodes sans ailes : l’aile apparaît comme une innovation décisive.',
+            'Parmi les premiers groupes ailés figurent les Palaeodictyoptera, un ensemble éteint caractérisé par des pièces buccales de type piqueur-suceur, probablement utilisées pour se nourrir des tissus internes de plantes vasculaires. En 1996, Conrad Labandeira et Tom Phillips documentèrent un cas d’alimentation par piqûre de fluides sur des fougères arborescentes (Marattiales) du Pennsylvanien supérieur. Ces insectes montrent que, dès le Carbonifère, les insectes exploitent déjà des modes d’alimentation variés sur les plantes.'
+          ],
+          example: {
+            statement: 'L’origine du vol est estimée à 406 millions d’années par les gènes, et les plus anciens fossiles d’insectes ailés sont datés de 324 millions d’années. Quel est l’écart ?',
+            calculation: 'On soustrait la date des fossiles de l’estimation génétique : 406 − 324 = 82.',
+            answer: 'L’écart est d’environ 82 millions d’années, c’est-à-dire de l’ordre de 80 millions d’années. C’est ce décalage que les chercheurs discutent.'
+          },
+          exercise: {
+            question: 'Quelle est la différence entre la date génétique d’origine du vol et la date des plus anciens fossiles d’insectes ailés ?',
+            answer: 'La date génétique est une estimation de la séparation des lignées (vers 406 millions d’années), tandis que les fossiles datent de 328 à 324 millions d’années : les fossiles sont plus récents d’environ 80 millions d’années.'
+          },
+          exercises: [
+            {
+              question: 'Quel est le plus ancien insecte ailé connu cité dans la littérature, et où a-t-il été trouvé ?',
+              answer: 'Delitzschala bitterfeldensis, un paléodictyoptère trouvé dans la région de Bitterfeld/Delitzsch, en Allemagne, dans des couches du Namurien A inférieur.'
+            },
+            {
+              question: 'Que désigne le terme « piqueur-suceur » pour les Palaeodictyoptera ?',
+              answer: 'Il désigne des pièces buccales en forme de stylets servant à percer les tissus d’une plante et à en aspirer les fluides.'
+            },
+            {
+              question: 'Les auteurs s’accordent-ils sur la raison de la lacune entre date génétique et fossiles ?',
+              answer: 'Non. Schachat et al. (2023) ne trouvent pas de soutien pour les explications classiques (échantillonnage, conservation, taille) et suggèrent un possible artefact d’analyse ; le débat reste ouvert.'
+            }
+          ],
+          sources: [
+            { title: 'Schachat et al. (2023) — Illusion of flight? Absence, evidence and the age of winged insects', url: 'https://repository.si.edu/items/eadb097e-b3a2-4e3b-a134-fee627eb85e0' },
+            { title: 'Brauckmann et al. — The stratigraphical position of the oldest known Pterygota (Carboniferous, Namurian)', url: 'https://popups.uliege.be/0037-9395/index.php?id=1961' },
+            { title: 'Wikipedia — Delitzschala', url: 'https://en.wikipedia.org/wiki/Delitzschala' },
+            { title: 'Labandeira & Sepkoski (1993) — Insect diversity in the fossil record, Science', url: 'https://repository.si.edu/bitstream/handle/10088/6563/Science_1993.pdf' },
+            { title: 'Labandeira & Phillips (1996) — Insect fluid-feeding on Upper Pennsylvanian tree ferns', url: 'https://repository.si.edu/handle/10088/5978' },
+            { title: 'Misof et al. (2014) — Phylogenomics resolves the timing and pattern of insect evolution, Science', url: 'https://digitalcollections.anu.edu.au/handle/1885/66648' }
+          ]
+        }
+      },
+      {
+        id: 'insectes-geants',
+        title: 'Les insectes géants du Paléozoïque : Meganeura et les « griffenflies »',
+        field: 'Paléontologie · Carbonifère et Permien · Environ 300 à 250 millions d’années',
+        summary: 'Découvrir les plus grands insectes volants connus, leur découverte au XIXe siècle et le débat sur le rôle de l’oxygène.',
+        lesson: {
+          sections: [
+            'En 1880, des fossiles de très grands insectes sont découverts dans les couches houillères du Stéphanien de Commentry, en France. Le paléoentomologiste Charles Brongniart en publie une première description en 1884 grâce à des fossiles fournis par l’ingénieur des mines Henri Fayol, sous le nom de Dictyoneura monyi, en hommage à Stéphane Mony, directeur des mines. En 1885, il crée le genre Meganeura (« à grandes nervures », en référence au réseau de nervures des ailes). L’holotype est conservé au Muséum national d’histoire naturelle de Paris.',
+            'Meganeura monyi, du Carbonifère supérieur (vers 300 millions d’années), avait une envergure de l’ordre de 65 à 70 cm selon les spécimens et les estimations. Meganeuropsis permiana, du Permien inférieur, décrit par Frank Carpenter en 1939, est encore plus grand : on lui attribue des envergures allant jusqu’à environ 71 cm, ce qui en fait un des plus grands insectes volants connus. Ces animaux appartiennent à l’ordre éteint des Meganisoptera : ce sont des prédateurs d’aspect proche des libellules, mais pas de vraies libellules, d’où le nom de « griffenflies » (« griffonflies ») proposé par Grimaldi et Engel (2005).',
+            'Pourquoi atteignaient-ils de telles tailles ? Une hypothèse ancienne, formulée dès 1911 par Harlé, invoque un air plus riche en oxygène : les reconstitutions situent la teneur de l’atmosphère du Carbonifère et du Permien entre 30 et 35 %, contre environ 21 % aujourd’hui. Cette idée a été développée notamment par Robert Dudley (1998) à propos de l’évolution du vol des insectes paléozoïques.',
+            'Cette hypothèse rencontre plusieurs objections. De très grands Meganeuridae, d’environ 45 cm d’envergure, existent encore au Permien supérieur à Lodève (France), à une période où l’oxygène était déjà nettement plus faible. Par ailleurs, leur corps était peu massif : moins lourd que celui de plusieurs coléoptères actuels. Des travaux récents rapportés par Futura Sciences estiment que l’oxygène a pu jouer un rôle, mais probablement pas comme facteur principal ou limitant, et que la disparition des insectes géants fut sans doute multifactorielle.',
+            'Les Meganisoptera ne survivent pas à la fin du Permien. Ils font partie des groupes d’insectes du Paléozoïque qui disparaissent avant le Mésozoïque, alors que de nombreux autres ordres d’insectes, plus petits, traversent cette période et donnent les faunes modernes (voir le chapitre sur la fin du Permien).'
+          ],
+          example: {
+            statement: 'Meganeura monyi vit au Carbonifère supérieur (environ 300 millions d’années) et Meganeuropsis permiana au Permien inférieur. Lequel est le plus ancien ?',
+            calculation: 'Le Permien suit le Carbonifère : une espèce du Carbonifère supérieur est donc plus ancienne qu’une espèce du Permien inférieur.',
+            answer: 'Meganeura monyi est la plus ancienne. Ces deux insectes se situent autour de la limite Carbonifère-Permien, vers 299 millions d’années.'
+          },
+          exercise: {
+            question: 'Pourquoi appelle-t-on parfois ces insectes « griffenflies » plutôt que « libellules géantes » ?',
+            answer: 'Parce qu’ils appartiennent à un ordre éteint, les Meganisoptera, qui n’est pas celui des libellules actuelles ; « libellule géante » est donc trompeur selon Grimaldi et Engel (2005).'
+          },
+          exercises: [
+            {
+              question: 'Où et quand les premiers fossiles de Meganeura ont-ils été découverts ?',
+              answer: 'À Commentry (France), en 1880, dans des couches houillères du Carbonifère supérieur ; Charles Brongniart les décrivit en 1884-1885.'
+            },
+            {
+              question: 'Quel argument montre que l’oxygène n’explique pas à lui seul le gigantisme de ces insectes ?',
+              answer: 'De très grands Meganeuridae (environ 45 cm d’envergure) existaient encore au Permien supérieur, quand l’oxygène était déjà plus bas qu’au Carbonifère.'
+            },
+            {
+              question: 'Quel est l’ordre des insectes qui contient Meganeura et Meganeuropsis ?',
+              answer: 'L’ordre éteint des Meganisoptera.'
+            }
+          ],
+          sources: [
+            { title: 'Wikipedia — Meganeura', url: 'https://en.wikipedia.org/wiki/Meganeura' },
+            { title: 'Wikipedia — Meganisoptera', url: 'https://en.wikipedia.org/wiki/Meganisoptera' },
+            { title: 'Earth Archives — The biggest insect ever was a huge dragonfly', url: 'https://eartharchives.org/articles/the-biggest-insect-ever-was-a-huge-dragonfly' },
+            { title: 'Futura Sciences — When dragons and dragonflies ruled the skies', url: 'https://www.futura-sciences.com/en/?p=29524' },
+            { title: 'Discover Wildlife — Why were prehistoric insects so large?', url: 'https://www.discoverwildlife.com/animal-facts/insects-invertebrates/why-were-prehistoric-insects-so-large' }
+          ]
+        }
+      },
+      {
+        id: 'metamorphose-complete',
+        title: 'La métamorphose complète : l’essor des holométaboles',
+        field: 'Paléontologie · Carbonifère et Permien · Environ 355 à 250 millions d’années',
+        summary: 'Comprendre ce qu’est la métamorphose complète, quand elle apparaît d’après les gènes et d’après les fossiles, et pourquoi les holométaboles dominent aujourd’hui.',
+        lesson: {
+          sections: [
+            'Les holométaboles (ou endoptérygotes) sont les insectes à métamorphose complète : un œuf donne une larve, qui grandit par stades successifs, devient une nymphe (pupe, en général le stade de repos), puis un adulte. Ils regroupent les quatre plus grands ordres d’insectes (coléoptères, hyménoptères, lépidoptères et diptères) et comptent plus d’un million d’espèces vivantes, soit la majorité de la diversité des insectes.',
+            'Les estimations moléculaires placent l’origine des holométaboles dans le Carbonifère : environ 355 millions d’années selon Wiegmann et ses collègues. La même synthèse note que les fossiles définitifs n’apparaissent qu’au Permien, entre 299 et 280 millions d’années. En 2007, André Nel et ses collègues avaient décrit en France un fossile d’environ 310 millions d’années, rattaché à la famille des Protomeropidae, qu’ils présentaient comme preuve de la métamorphose complète au Carbonifère. Cependant, une étude de 2013 dans Nature rappelle que le registre fossile du Pennsylvanien reste incomplet et que plusieurs fossiles ont été attribués à tort aux holométaboles.',
+            'L’étude de Nel et al. (Nature, 2013), « The earliest known holometabolous insects », conclut que les plus anciens coléoptères indiscutables datent du début du Permien. Les hyménoptères (hyménoptéroïdes) forment le groupe frère de tous les autres holométaboles. Les auteurs estiment par ailleurs que cette lignée n’a rencontré un succès plus net qu’après l’extinction de la fin du Permien.',
+            'Pour les coléoptères, une vaste analyse publiée dans PNAS en 2019 par McKenna et ses collègues situe leur origine au Carbonifère, vers 327 millions d’années, et indique que la plupart des groupes actuels de coléoptères seraient apparus avant la fin du Crétacé, il y a 66 millions d’années. Ces dates viennent de calculs moléculaires et sont donc plus anciennes que les fossiles.',
+            'Les relations avec les plantes montrent aussi l’ancienneté du groupe. Une étude publiée dans Scientific Reports (2025) réexamine des traces d’alimentation (Asteronomus maeandriformis) du Permien inférieur de Thuringe, en Allemagne. Elle en conclut qu’un comportement d’alimentation à l’intérieur des tissus végétaux existait chez les holométaboles dès le tout début du Permien, soit plus de 40 millions d’années plus tôt qu’on ne l’avait supposé.'
+          ],
+          example: {
+            statement: 'Selon Wiegmann et al., l’origine des holométaboles est estimée à 355 millions d’années, et les fossiles définitifs apparaissent entre 299 et 280 millions d’années. Quel est l’écart ?',
+            calculation: 'On soustrait chaque borne des fossiles à l’estimation moléculaire : 355 − 299 = 56 et 355 − 280 = 75.',
+            answer: 'L’écart va d’environ 56 à 75 millions d’années. Il traduit l’écart entre horloge moléculaire et fossiles, avec leurs incertitudes respectives.'
+          },
+          exercise: {
+            question: 'Quelles sont les étapes de la vie d’un insecte à métamorphose complète ?',
+            answer: 'Œuf, larve (avec plusieurs stades de croissance), nymphe ou pupe, puis adulte.'
+          },
+          exercises: [
+            {
+              question: 'Quels sont les quatre plus grands ordres d’insectes holométaboles ?',
+              answer: 'Les coléoptères, les hyménoptères, les lépidoptères et les diptères.'
+            },
+            {
+              question: 'Que montre l’étude de Nel et al. (2013) à propos des plus anciens coléoptères ?',
+              answer: 'Que les plus anciens coléoptères indiscutables datent du début du Permien.'
+            },
+            {
+              question: 'Pourquoi les dates moléculaires et les dates fossiles des holométaboles diffèrent-elles ?',
+              answer: 'Les dates moléculaires donnent le moment de séparation des lignées, souvent plus ancien que les premiers fossiles identifiables ; le registre fossile du Carbonifère est incomplet et certaines attributions sont discutées.'
+            }
+          ],
+          sources: [
+            { title: 'Wikipedia — Holometabola', url: 'https://en.wikipedia.org/wiki/Holometabola' },
+            { title: 'Wiegmann et al. (2009) — Holometabola, TimeTree of Life', url: 'https://TimeTree.org/public/data/pdf/Wiegmann2009Chap31.pdf' },
+            { title: 'Nel et al. (2013) — The earliest known holometabolous insects, Nature', url: 'https://ideas.repec.org/a/nat/nature/v503y2013i7475d10.1038_nature12629.html' },
+            { title: 'Labandeira (2011) — Evidence for an earliest Late Carboniferous divergence time of Holometabola', url: 'https://repository.si.edu/server/api/core/bitstreams/2f5447f9-c342-4677-a2cc-87afc42ecb75/content' },
+            { title: 'PNAS — In This Issue (McKenna et al., 2019, évolution des coléoptères)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6907388' },
+            { title: 'Scientific Reports (2025) — Endophytic feeding in the early Permian (Asteronomus)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12378220' }
+          ]
+        }
+      },
+      {
+        id: 'fin-du-permien-et-trias',
+        title: 'La fin du Permien et les insectes du Trias',
+        field: 'Paléontologie · Permien terminal et Trias · Environ 252 à 201 millions d’années',
+        summary: 'Comprendre l’effet de la plus grande crise d’extinction sur les insectes, un sujet encore débattu, et la mise en place des faunes modernes.',
+        lesson: {
+          sections: [
+            'L’extinction de la fin du Permien, il y a environ 252 millions d’années, est la crise de biodiversité la plus sévère de l’histoire de la Terre. Pour les insectes, ses effets sont débattus. Labandeira et Sepkoski (1993) relevaient que les Palaeodictyopteroidea sont le seul grand groupe d’insectes (au niveau supra-ordinal) à s’être éteint, et que trois autres ordres, déjà réduits, disparaissent aussi au cours de cette période. Ils jugeaient probable que le minimum de diversité observé au Trias reflétait en partie la crise, tout en reconnaissant qu’il pouvait aussi venir d’un manque de gisements du Trias inférieur.',
+            'Les spécialistes soulignent la rareté des gisements exceptionnels proches des extinctions de masse : on ne peut donc pas dire précisément combien de taxons d’insectes ont disparu. Les Palaeodictyopteroidea déclinaient déjà bien avant la limite Permien-Trias. Selon cette lecture, la fin du Permien ressemble pour les insectes à une « éclipse » progressive plutôt qu’à une extinction brutale, même si elle se situe au cœur de la transition entre la faune d’insectes paléozoïque et la faune moderne.',
+            'Les études quantitatives donnent des tableaux nuancés. Selon des travaux de Ponomarenko rapportés par Zhang et ses collègues (2022), presque toutes les familles d’insectes permiennes déclinent du Permien moyen au Permien supérieur et environ un tiers des familles disparaissent à la limite Permien-Trias, mais la diversité globale se stabilise grâce à l’apparition de nouvelles familles. Jouault et ses collègues (Nature Communications, 2022) parlent de causes multiples et d’extinctions propres à certaines lignées. Une étude de 2023 (Gui et al.) identifie plusieurs crises d’insectes au Permien et au Trias, correspondant à des crises marines connues.',
+            'Au Trias, la faune se modernise. Selon la synthèse de Gui et ses collègues (2023), la diversité des insectes augmente rapidement à l’Anisien (Trias moyen), et des ordres dominants aujourd’hui, comme les coléoptères, les diptères, les hyménoptères et les hémiptères, s’imposent ; les coléoptères deviennent le groupe dominant au Carnien. D’après les synthèses générales, les survivants de la crise évoluent au Trias vers les ordres d’insectes essentiellement modernes, et la plupart des familles modernes apparaissent au Jurassique.'
+          ],
+          example: {
+            statement: 'Les plus anciens fossiles d’insectes ailés datent de 324 millions d’années et la crise de la fin du Permien d’environ 252 millions d’années. Combien de temps les insectes ailés fossiles ont-ils existé avant cette crise ?',
+            calculation: 'On soustrait la date de la crise de celle des premiers fossiles : 324 − 252 = 72.',
+            answer: 'Environ 72 millions d’années. Les insectes ailés avaient donc déjà une longue histoire fossile avant la crise.'
+          },
+          exercise: {
+            question: 'Pourquoi est-il difficile de mesurer l’effet de la crise de la fin du Permien sur les insectes ?',
+            answer: 'Parce que les gisements d’insectes proches de cette période sont rares, que le registre fossile est lacunaire et que certains groupes déclinaient déjà avant la crise.'
+          },
+          exercises: [
+            {
+              question: 'Quel groupe d’insectes est, selon Labandeira et Sepkoski (1993), le seul grand groupe supra-ordinal à s’être éteint ?',
+              answer: 'Les Palaeodictyopteroidea.'
+            },
+            {
+              question: 'Vers quelle date a lieu l’extinction de la fin du Permien ?',
+              answer: 'Vers 252 millions d’années.'
+            },
+            {
+              question: 'Quels ordres dominent la faune d’insectes au Trias d’après Gui et al. (2023) ?',
+              answer: 'Des ordres dominants aujourd’hui comme les coléoptères, les diptères, les hyménoptères et les hémiptères, les coléoptères devenant dominants au Carnien.'
+            }
+          ],
+          sources: [
+            { title: 'Labandeira & Sepkoski (1993) — Insect diversity in the fossil record, Science', url: 'https://repository.si.edu/bitstream/handle/10088/6563/Science_1993.pdf' },
+            { title: 'Entomology Today — What the fossil record tells us about insect extinctions in deep time', url: 'https://entomologytoday.org/2021/02/03/what-fossil-record-tells-about-insect-extinctions-deep-time/' },
+            { title: 'Zhang et al. (2022) — Widespread grylloblattid insects after the end-Permian mass extinction, Frontiers in Earth Science', url: 'https://www.frontiersin.org/articles/10.3389/feart.2022.853833/full' },
+            { title: 'Gui et al. (2023) — Evolution of insect diversity in the Permian and Triassic, Palaeoentomology', url: 'https://mapress.com/pe/article/view/50342/52145' },
+            { title: 'Wikipedia — Evolution of insects', url: 'https://en.wikipedia.org/wiki/Evolution_of_insects' }
+          ]
+        }
+      },
+      {
+        id: 'cretace-fleurs-et-ambre',
+        title: 'Le Crétacé : fleurs, pollinisation et insectes dans l’ambre',
+        field: 'Paléontologie · Crétacé · Environ 145 à 66 millions d’années',
+        summary: 'Découvrir comment l’ambre du Crétacé révèle la pollinisation des premières plantes à fleurs et les premières fourmis.',
+        lesson: {
+          sections: [
+            'Les plantes à fleurs (angiospermes) commencent à se diversifier au Crétacé, vers 125 millions d’années. Dès l’époque de Darwin, qui parlait d’un « abominable mystère » à propos de leur rapide diversification, beaucoup de scientifiques pensent que la pollinisation par les insectes a joué un rôle important dans cet essor, mais la preuve directe manquait pour le Crétacé.',
+            'En 2019, Bao et ses collègues ont décrit dans PNAS un coléoptère de la famille des Mordellidae, Angimordella burmitina, conservé dans de l’ambre birman daté d’environ 99 millions d’années. Il porte de nombreux grains de pollen tricolpés, caractéristiques des eudicotylédones. Les auteurs y voient la plus ancienne preuve directe de pollinisation d’angiospermes par des insectes, repoussant d’au moins 50 millions d’années la plus ancienne preuve antérieure, datée de l’Éocène moyen (vers 48-45 millions d’années). Des insectes pollinisaient déjà des gymnospermes auparavant, avec des preuves directes pour des thrips, des mouches, des coléoptères et des mécoptères.',
+            'En 2021, une autre équipe (Nanjing Institute of Geology and Palaeontology et Université de Bristol) a décrit dans Nature Plants un petit coléoptère des fleurs, Pelretes vivificus, également dans l’ambre birman d’environ 99 millions d’années, associé à des coprolithes contenant du pollen d’eudicotylédones. Selon l’un des auteurs, Erik Tihelka, les coléoptères étaient déjà parmi les premiers visiteurs des fleurs, bien avant les abeilles et les papillons pollinisateurs.',
+            'L’ambre du Crétacé conserve aussi les plus anciennes fourmis incontestées. Les fourmis de l’ambre birman (Albien-Cénomanien) et de l’ambre de Charente-Maritime (France) comptent parmi les plus anciennes connues, tandis que la première fourmi crétacée décrite, Sphecomyrma freyi (Wilson et Brown, 1967), vient de l’ambre du New Jersey (Turonien, vers 92 millions d’années). Ces fourmis étaient rares à l’époque. Selon Barden et Grimaldi (2016), le genre éteint Gerontoformica avait déjà des castes reproductrices distinctes, et en 2025 une équipe a décrit un fragment de colonie avec une ouvrière et une reine ailée dans le même morceau d’ambre birman.',
+            'Les ambres du Crétacé, en particulier celui de la vallée de Hukawng (État Kachin, Myanmar), offrent une abondance exceptionnelle d’insectes préservés, avec un niveau de détail remarquable. Les analyses génétiques de Misof et al. (2014) vont dans le même sens : mouches, coléoptères, papillons, abeilles, fourmis et guêpes ont des origines paléozoïques, mais leur grande diversification date surtout du Crétacé, à l’époque de l’essor des plantes à fleurs.'
+          ],
+          example: {
+            statement: 'Les plantes à fleurs commencent à se diversifier vers 125 millions d’années, et la preuve directe de pollinisation de l’ambre birman date d’environ 99 millions d’années. Quel intervalle les sépare ?',
+            calculation: 'On soustrait la date de la preuve de pollinisation de celle du début de la diversification : 125 − 99 = 26.',
+            answer: 'Environ 26 millions d’années. Cet intervalle ne dit pas quand la pollinisation a commencé : les fossiles ne donnent qu’une date minimale pour l’interaction.'
+          },
+          exercise: {
+            question: 'Pourquoi l’ambre est-il particulièrement précieux pour étudier les insectes du Crétacé ?',
+            answer: 'Parce qu’il peut conserver des insectes avec un grand niveau de détail et parfois des indices de comportement, comme du pollen porté par un coléoptère ou la présence d’une reine et d’une ouvrière ensemble.'
+          },
+          exercises: [
+            {
+              question: 'Quel insecte de l’ambre birman fournit en 2019 la plus ancienne preuve directe de pollinisation d’angiospermes ?',
+              answer: 'Angimordella burmitina, un coléoptère de la famille des Mordellidae, daté d’environ 99 millions d’années.'
+            },
+            {
+              question: 'Quelle fourmi crétacée fut décrite en 1967 dans l’ambre du New Jersey ?',
+              answer: 'Sphecomyrma freyi, décrite par Wilson et Brown, dans de l’ambre du Turonien.'
+            },
+            {
+              question: 'Les fourmis étaient-elles abondantes au Crétacé ?',
+              answer: 'Non. Elles étaient rares dans les ambres du Crétacé, et leur diversification majeure date de l’ère suivante, le Cénozoïque.'
+            }
+          ],
+          sources: [
+            { title: 'Bao et al. (2019) — Pollination of Cretaceous flowers, PNAS', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6900596/' },
+            { title: 'Chinese Academy of Sciences — Amber fossil sheds light on early pollinators (Pelretes vivificus)', url: 'https://english.cas.cn/newsroom/research_news/earth/202104/t20210413_267092.shtml' },
+            { title: 'Engel & Grimaldi (2005) — Primitive new ants in Cretaceous amber, American Museum Novitates', url: 'https://digitallibrary.amnh.org/handle/2246/5676' },
+            { title: 'Barden & Grimaldi (2016) — Adaptive radiation in socially advanced stem-group ants from the Cretaceous', url: 'https://dictionnaire-amoureux-des-fourmis.fr/F/Fossiles/Barden-ants-cretaceous.pdf' },
+            { title: 'Myrmecological News (2025) — Ancient ant colony and male fossil in 99-million-year-old amber', url: 'https://blog.myrmecologicalnews.org/2025/02/25/ancient-ant-colony-and-male-fossil-unveil-evolutionary-secrets-in-99-million-year-old-amber/' },
+            { title: 'Nature Reviews Genetics — Building the insect tree-of-life', url: 'https://www.nature.com/articles/nrg3870' }
+          ]
+        }
+      }
+    ]
+  },
 
 ];
 
