@@ -1,10 +1,4 @@
-﻿// Catalogue du cours de géologie
-// Sources scientifiques en bas de chaque leçon (bloc « RÉFÉRENCES »). Toutes les
-// branches, y compris « Géodynamique et histoire de la planète » et « Les grands
-// livres », sont des leçons normales : un chapitre = une leçon, affichée par
-// cours.html?id=… (lesson.content contient le HTML d'une section). OpenStax est utilisé
-// en priorité (Astronomy 2e, Chemistry 2e), complété par le manuel ouvert
-// « Physical Geology » (2e éd., Steven Earle, BCcampus, CC BY 4.0) et par l'USGS.
+
 window.courseCatalog = [
   {
     id: 'materiaux-terrestres',
@@ -1087,6 +1081,276 @@ window.courseCatalog = [
       }
     }
   ]
-}
+},
+// BRANCHE COUCHES GÉOLOGIQUES
+
+  {
+    id: 'couches-geologiques',
+    title: 'Les couches géologiques',
+    note: 'Six chapitres sur la lecture des strates, leur formation, la structure interne de la Terre, la datation, l’échelle des temps géologiques et les ruptures du registre sédimentaire. Les âges sont des estimations scientifiques susceptibles d’être révisées (référence : International Commission on Stratigraphy, version 2024/12).',
+    chapters: [
+      {
+        id: 'principes-stratigraphie',
+        title: 'Lire les strates : les principes de la stratigraphie',
+        field: 'Géologie · Stratigraphie, de Sténon (1669) à William Smith (1815)',
+        summary: 'Comprendre comment l’ordre des couches de roche permet de reconstituer une chronologie relative, et quelles sont les limites de ces principes.',
+        lesson: {
+          sections: [
+            'Une couche géologique, ou strate, est un niveau de roche, le plus souvent sédimentaire, qui s’est formé au cours d’une même période de dépôt et qui est séparé des niveaux voisins par des surfaces appelées plans de stratification. La stratigraphie est la science qui étudie la façon dont ces couches sont agencées. Elle est un outil central pour interpréter le passage du temps géologique, car chaque empilement de strates conserve la trace d’environnements et d’événements successifs.',
+            'Les bases de la stratigraphie sont généralement attribuées à Nicolas Sténon (1638-1686), médecin et naturaliste danois qui travaillait en Toscane. En 1666, il dissèque la tête d’un grand requin blanc capturé près de Florence et remarque la ressemblance entre ses dents et certains « fossiles » trouvés dans les collines de l’intérieur des terres. Dans un ouvrage publié en 1669, il énonce trois principes : la superposition (dans une série non déformée, la couche la plus ancienne est en bas et les plus récentes au-dessus), l’horizontalité originelle (les strates se déposent initialement à peu près à l’horizontale, donc des couches inclinées ou plissées ont été perturbées après leur dépôt) et la continuité latérale (une strate s’étendait à l’origine dans toutes les directions jusqu’à s’amincir ou rencontrer le bord de son bassin de dépôt).',
+            'Un quatrième principe, celui des relations de recoupement, complète ces règles : une faille, une intrusion ou toute autre structure qui coupe des couches est plus récente que ces couches. Selon les auteurs, ce principe est rattaché à Sténon ou à des géologues ultérieurs. À la fin du XVIIIe siècle, l’arpenteur britannique William Smith, qui travaille sur le creusement de canaux dans le Somerset, constate que chaque niveau de roche contient un ensemble de fossiles caractéristique et que les mêmes successions de fossiles se retrouvent dans différentes régions d’Angleterre. C’est le principe de succession faunique. Il lui permet de publier en 1815 une carte intitulée A Delineation of the Strata of England and Wales, with part of Scotland, considérée comme la première carte géologique couvrant une aussi vaste étendue.',
+            'Ces principes ont des limites qu’il faut connaître. Ils s’appliquent d’abord à des séries peu déformées : les plissements intenses et les chevauchements peuvent renverser localement l’ordre des couches, et une coupe doit alors être interprétée avec prudence. Ils donnent ensuite un âge relatif (plus ancien ou plus récent) et non un âge en années. Enfin, une série de strates n’est jamais complète : des périodes de non-dépôt ou d’érosion créent des lacunes, que le chapitre sur les discordances développe.'
+          ],
+          example: {
+            statement: 'Dans une falaise dont les couches sont horizontales et non déformées, on observe de bas en haut : un grès (A), une argile (B) puis un calcaire (C). Quelle couche est la plus ancienne et laquelle est la plus récente ?',
+            calculation: 'Par le principe de superposition, dans une série non déformée la couche du bas s’est déposée en premier. L’ordre de dépôt est donc A, puis B, puis C.',
+            answer: 'Le grès A est le plus ancien et le calcaire C le plus récent. Ce raisonnement donne un ordre relatif, pas des âges en années, et suppose que la série n’a pas été renversée par la tectonique.'
+          },
+          exercise: {
+            question: 'Pourquoi une couche de roche fortement inclinée est-elle le signe d’une perturbation postérieure à son dépôt ?',
+            answer: 'Parce que, d’après le principe d’horizontalité originelle, les sédiments se déposent initialement à peu près à l’horizontale. Une strate inclinée ou plissée a donc été déformée après sa formation.'
+          },
+          exercises: [
+            {
+              question: 'Quels sont les trois principes que Nicolas Sténon énonce en 1669 ?',
+              answer: 'La superposition, l’horizontalité originelle et la continuité latérale des strates.'
+            },
+            {
+              question: 'Que dit le principe de succession faunique de William Smith ?',
+              answer: 'Chaque niveau de roche contient un ensemble de fossiles caractéristique et les mêmes successions de fossiles se retrouvent d’une région à l’autre, ce qui permet d’ordonner et de comparer les strates.'
+            },
+            {
+              question: 'Une faille coupe trois couches de calcaire. La faille est-elle plus ancienne ou plus récente que ces couches ?',
+              answer: 'Plus récente, d’après le principe de recoupement : une structure qui coupe des couches s’est formée après elles.'
+            }
+          ],
+          sources: [
+            { title: 'University of British Columbia (EOAS) — Stratigraphy: the basic principles', url: 'https://www.eoas.ubc.ca/courses/eosc326/resources/Stratigraphy/stratigraphy.htm' },
+            { title: 'CK-12 / Lumen Learning — Relative ages of rocks', url: 'https://courses.lumenlearning.com/earthscienceck12/chapter/relative-ages-of-rocks/' },
+            { title: 'CK-12 / Lumen Learning — Steno’s laws and unconformities', url: 'https://courses.lumenlearning.com/earthscienceck12/?p=467' },
+            { title: 'UC Museum of Paleontology (Berkeley) — William Smith (1769-1839)', url: 'https://ucmp.berkeley.edu/history/smith.html' }
+          ]
+        }
+      },
+      {
+        id: 'formation-des-strates',
+        title: 'Comment se forment les couches : sédimentation et diagenèse',
+        field: 'Géologie · Dépôt des sédiments, lithification et roches sédimentaires',
+        summary: 'Suivre le chemin d’un grain de roche, de l’altération au dépôt puis à la roche solide, et comprendre pourquoi les roches sédimentaires dominent en surface.',
+        lesson: {
+          sections: [
+            'La plupart des couches visibles à la surface des continents sont des roches sédimentaires. Leur formation suit une chaîne de processus : l’altération et l’érosion des roches existantes fournissent des particules ou des substances dissoutes, que l’eau, le vent, la glace ou la gravité transportent, puis déposent dans des environnements variés (cours d’eau, lacs, deltas, plages, plateaux continentaux, fonds océaniques). Les particules se déposent sous l’effet de la gravité, ce qui explique que les sédiments forment à l’origine des nappes à peu près horizontales.',
+            'Lorsque les dépôts s’accumulent, les sédiments les plus anciens sont enfouis sous les plus récents. Le poids des couches supérieures tasse les grains et réduit les espaces entre eux : c’est la compaction. Des minéraux précipités à partir de l’eau qui circule dans les pores, comme la calcite ou la silice, collent ensuite les grains entre eux : c’est la cimentation. La compaction et la cimentation transforment le sédiment meuble en roche solide, un processus appelé lithification. Plus largement, la diagenèse désigne l’ensemble des changements physiques, chimiques et biologiques subis par un sédiment après son dépôt.',
+            'On distingue deux grandes familles de roches sédimentaires. Les roches détritiques sont faites de fragments issus de roches préexistantes (conglomérat, grès, siltite, argilite). Les roches chimiques, dont font partie les roches d’origine biologique selon les classifications, résultent de la précipitation de minéraux ou de l’accumulation de restes d’organismes (calcaires, évaporites). La nature d’une roche renseigne sur son milieu de dépôt : un calcaire fossilifère indique en général une mer peu profonde, tandis qu’un grès à grandes stratifications obliques évoque souvent des dunes. Dans le Grand Canyon, la formation de Kaibab, qui forme les bords du canyon, s’est ainsi déposée dans une mer chaude et peu profonde il y a environ 270 millions d’années.',
+            'Les roches sédimentaires occupent environ 75 % des affleurements continentaux, alors qu’elles ne représentent qu’environ 5 % du volume de la croûte : elles forment une mince couverture au-dessus de roches magmatiques et métamorphiques plus abondantes en profondeur. Les roches magmatiques peuvent aussi créer des couches : des coulées de lave ou des dépôts de cendres volcaniques se superposent comme des strates. Ces niveaux volcaniques sont précieux, car ils peuvent contenir des minéraux datables et encadrer en âge les couches sédimentaires voisines.'
+          ],
+          example: {
+            statement: 'Dans un exemple pédagogique fictif, une couche de sédiments de 3 mètres d’épaisseur s’est déposée en 30 000 ans. Quelle est la vitesse moyenne de dépôt ?',
+            calculation: '3 m = 3 000 mm. Vitesse moyenne = 3 000 mm ÷ 30 000 ans = 0,1 mm par an.',
+            answer: 'La vitesse moyenne est de 0,1 mm par an. C’est une moyenne : les vitesses réelles varient fortement selon l’environnement et peuvent comporter des interruptions.'
+          },
+          exercise: {
+            question: 'Quelle différence y a-t-il entre la compaction et la cimentation ?',
+            answer: 'La compaction est un tassement mécanique des grains sous le poids des couches sus-jacentes. La cimentation est un processus chimique : des minéraux précipitent entre les grains et les lient.'
+          },
+          exercises: [
+            {
+              question: 'Quelle proportion des affleurements continentaux est constituée de roches sédimentaires ?',
+              answer: 'Environ 75 %, alors qu’elles représentent seulement environ 5 % du volume de la croûte.'
+            },
+            {
+              question: 'Qu’appelle-t-on diagenèse ?',
+              answer: 'L’ensemble des changements physiques, chimiques et biologiques subis par un sédiment après son dépôt, y compris sa transformation en roche (lithification).'
+            },
+            {
+              question: 'Pourquoi une coulée de lave intercalée entre deux couches sédimentaires est-elle utile aux géologues ?',
+              answer: 'Parce qu’elle peut contenir des minéraux datables par radiochronologie, ce qui permet d’encadrer l’âge des couches sédimentaires situées au-dessous et au-dessus.'
+            }
+          ],
+          sources: [
+            { title: 'HyperPhysics (Georgia State University) — Sedimentary Rocks', url: 'https://hyperphysics.gsu.edu/hbase/Geophys/sedime.html' },
+            { title: 'Futura-Sciences — Roche sédimentaire', url: 'https://www.futura-sciences.com/planete/definitions/geologie-roche-sedimentaire-1101/' },
+            { title: 'USGS — Grand Canyon geology', url: 'https://www.usgs.gov/geology-and-ecology-of-national-parks/grand-canyon-geology' },
+            { title: 'National Park Service — Grand Canyon’s rocks are incredibly old', url: 'https://www.nps.gov/places/000/grand-canyon-s-rocks-are-incredibly-old.htm' }
+          ]
+        }
+      },
+      {
+        id: 'structure-interne-terre',
+        title: 'Les couches internes de la Terre : croûte, manteau et noyau',
+        field: 'Géologie · Structure interne du globe et sismologie',
+        summary: 'Découvrir l’organisation concentrique de la Terre, la manière dont on la connaît par les ondes sismiques et les repères de profondeur essentiels.',
+        lesson: {
+          sections: [
+            'Le mot « couches » désigne aussi les enveloppes concentriques qui composent la Terre. Notre planète mesure environ 12 750 km de diamètre, soit un rayon d’environ 6 371 km. Les forages les plus profonds n’atteignent qu’une infime fraction de cette distance : la structure interne est donc connue surtout de façon indirecte, par l’étude de la propagation des ondes sismiques, dont la vitesse et la trajectoire changent selon les matériaux traversés. C’est au tournant du XXe siècle que les scientifiques ont établi que la Terre comprend trois grandes parties : la croûte, le manteau et le noyau.',
+            'La croûte est l’enveloppe externe, solide et très mince. On distingue la croûte océanique, de composition basaltique et épaisse de l’ordre de 5 à 10 km, et la croûte continentale, plus épaisse et de composition globalement plus granitique, dont l’épaisseur moyenne se situe autour de 35 à 40 km et peut atteindre environ 70 km sous les grandes chaînes de montagnes. Sa limite avec le manteau est la discontinuité de Mohorovičić, ou Moho, du nom du sismologue croate Andrija Mohorovičić, qui a mis en évidence en 1909 une accélération brusque des ondes sismiques à partir d’une certaine profondeur.',
+            'Le manteau s’étend sous la croûte jusqu’à environ 2 900 km de profondeur. Il s’agit d’une roche silicatée dense et chaude, dite semi-solide, qui se déforme très lentement. Sa partie supérieure, plus froide et rigide, forme avec la croûte la lithosphère, d’une épaisseur moyenne d’au moins 80 km, qui est découpée en plaques mobiles. Sous elle se trouve l’asthénosphère, une zone plus ductile sur laquelle la lithosphère se déplace. La limite entre le manteau et le noyau, située vers 2 900 km, est la discontinuité de Gutenberg.',
+            'Le noyau est un alliage métallique de fer et de nickel, environ deux fois plus dense que le manteau. Le noyau externe, liquide, a une épaisseur d’environ 2 200 km. Les mouvements de ce métal liquide engendrent le champ magnétique terrestre. Les ondes sismiques de cisaillement (ondes S) ne traversent pas les liquides, ce qui a permis de repérer ce noyau liquide. En 1936, la sismologue danoise Inge Lehmann montre qu’il existe à l’intérieur un noyau interne où les ondes vont plus vite. Ce noyau interne, solide malgré sa température très élevée à cause de la pression, commence vers 5 150 km de profondeur et s’étend jusqu’au centre de la Terre.'
+          ],
+          example: {
+            statement: 'Le noyau externe va d’environ 2 900 km à environ 5 150 km de profondeur. Quelle est son épaisseur approximative ?',
+            calculation: 'Épaisseur = 5 150 km − 2 900 km = 2 250 km.',
+            answer: 'Environ 2 250 km avec ces repères. Les sources arrondissent souvent cette valeur à environ 2 200 km, car les limites de profondeur sont elles-mêmes des valeurs approchées.'
+          },
+          exercise: {
+            question: 'Pourquoi dit-on que la structure interne de la Terre est connue de façon indirecte ?',
+            answer: 'Parce que les forages n’atteignent qu’une infime fraction du rayon terrestre. On déduit la structure interne de la manière dont les ondes sismiques se propagent et changent de vitesse selon les matériaux traversés.'
+          },
+          exercises: [
+            {
+              question: 'Qu’est-ce que le Moho ?',
+              answer: 'La discontinuité de Mohorovičić, qui sépare la croûte du manteau et se repère par un changement brusque de vitesse des ondes sismiques.'
+            },
+            {
+              question: 'Quelle est la différence entre le noyau externe et le noyau interne ?',
+              answer: 'Le noyau externe, de fer et de nickel, est liquide et engendre le champ magnétique. Le noyau interne, de composition voisine, est solide à cause de la pression.'
+            },
+            {
+              question: 'De quoi la lithosphère est-elle composée ?',
+              answer: 'De la croûte et de la partie supérieure, rigide, du manteau. Elle est découpée en plaques qui se déplacent sur l’asthénosphère.'
+            }
+          ],
+          sources: [
+            { title: 'USGS — This Dynamic Earth: Inside the Earth', url: 'https://pubs.usgs.gov/gip/dynamic/inside.html' },
+            { title: 'American Physical Society — Inge Lehmann et le noyau interne (1936)', url: 'https://aps.org/publications/apsnews/202309/history.cfm' },
+            { title: 'Science Notes — Layers of the Earth', url: 'https://sciencenotes.org/layers-of-the-earth/' }
+          ]
+        }
+      },
+      {
+        id: 'datation-des-couches',
+        title: 'Dater les couches : datation relative, radiochronologie et âge de la Terre',
+        field: 'Géologie · Chronologie relative et absolue',
+        summary: 'Distinguer l’ordre des couches de leur âge en années, comprendre la demi-vie des isotopes radioactifs et retracer la détermination de l’âge de la Terre.',
+        lesson: {
+          sections: [
+            'Dater une couche peut signifier deux choses différentes. La datation relative établit seulement un ordre : telle strate est plus ancienne que telle autre, d’après la superposition, les recoupements ou les fossiles. La datation absolue, ou numérique, donne un âge exprimé en années. Elle repose sur la radiochronologie, qui exploite la désintégration radioactive de certains isotopes.',
+            'Le principe est le suivant : un isotope radioactif « père » se transforme à vitesse constante en un isotope « fils » stable. Le temps nécessaire pour que la moitié des atomes pères d’un échantillon se soient désintégrés est la demi-vie. En mesurant les proportions de père et de fils, on calcule le temps écoulé depuis que le minéral s’est formé et est devenu un système fermé. La radioactivité naturelle de l’uranium a été découverte en 1896 par Henri Becquerel. L’uranium 238 se transforme en plomb 206 avec une demi-vie d’environ 4,47 milliards d’années, l’uranium 235 en plomb 207 avec environ 704 millions d’années, et le potassium 40 en argon 40 avec environ 1,25 milliard d’années.',
+            'Le carbone 14 est un cas particulier : sa demi-vie n’est que d’environ 5 730 ans et il ne permet de dater que des restes organiques (bois, os, tissus) âgés de moins d’environ 50 000 ans, parfois jusqu’à 60 000 ans selon les méthodes. Au-delà, il en reste trop peu pour être mesuré avec fiabilité, et il ne peut donc pas dater des fossiles de dinosaures. Pour les roches, on utilise des couples à très longue demi-vie. Les strates sédimentaires elles-mêmes se prêtent mal à ces mesures, car leurs grains proviennent de roches plus anciennes. On date donc plutôt des niveaux volcaniques intercalés ou des intrusions qui encadrent les couches.',
+            'L’âge de la Terre a été déterminé à partir de météorites. Les roches terrestres sont constamment recyclées par la tectonique et le cycle des roches, alors que les météorites sont considérées comme des systèmes restés fermés depuis leur formation. En 1956, le géochimiste américain Clair Patterson publie une étude de la composition isotopique du plomb de la météorite de Canyon Diablo (Arizona) et obtient un âge de 4,55 milliards d’années avec une incertitude d’environ 70 millions d’années. La valeur actuellement admise pour l’âge de la Terre est de 4,54 ± 0,05 milliard d’années, très proche de celle de Patterson.'
+          ],
+          example: {
+            statement: 'Un morceau de bois ancien contient 25 % du carbone 14 initial. La demi-vie du carbone 14 est d’environ 5 730 ans. Quel est son âge approximatif ?',
+            calculation: '25 % correspond à deux demi-vies successives (100 % → 50 % → 25 %). Âge ≈ 2 × 5 730 ans = 11 460 ans.',
+            answer: 'Environ 11 460 ans. Ce calcul est un ordre de grandeur : en pratique, la mesure demande des corrections et des étalonnages.'
+          },
+          exercise: {
+            question: 'Pourquoi le carbone 14 ne convient-il pas pour dater une roche de 100 millions d’années ?',
+            answer: 'Sa demi-vie est trop courte (environ 5 730 ans) : après des dizaines de milliers d’années il n’en reste plus assez pour être mesuré, et il ne concerne que la matière organique.'
+          },
+          exercises: [
+            {
+              question: 'Qu’appelle-t-on demi-vie d’un isotope radioactif ?',
+              answer: 'Le temps nécessaire pour que la moitié des atomes radioactifs d’un échantillon se soient désintégrés.'
+            },
+            {
+              question: 'Quel isotope fils résulte de la désintégration de l’uranium 238 ?',
+              answer: 'Le plomb 206.'
+            },
+            {
+              question: 'Pourquoi a-t-on utilisé des météorites pour estimer l’âge de la Terre ?',
+              answer: 'Parce que les roches terrestres sont recyclées par les processus géologiques, alors que les météorites sont considérées comme des systèmes restés fermés depuis la formation du Système solaire.'
+            }
+          ],
+          sources: [
+            { title: 'USGS — Radiometric Time Scale', url: 'https://pubs.usgs.gov/gip/geotime/radiometric.html' },
+            { title: 'USGS — Canyon Diablo meteorite et âge de la Terre (Clair Patterson, 1956)', url: 'https://www.usgs.gov/media/images/d38-canyon-diablo-amnh-5030-herojpgwideexact1230jpg' },
+            { title: 'NIST — Radioactive dating: uranium-238 et carbone 14', url: 'https://www.nist.gov/node/1875781' },
+            { title: 'Evolution: Education and Outreach — How Old is Earth, and How Do We Know? (demi-vies)', url: 'https://evolution-outreach.biomedcentral.com/articles/10.1007/s12052-010-0226-0/tables/1' }
+          ]
+        }
+      },
+      {
+        id: 'echelle-temps-geologiques',
+        title: 'L’échelle des temps géologiques',
+        field: 'Géologie · Éons, ères, périodes et référentiel de l’ICS',
+        summary: 'Connaître la hiérarchie de l’échelle des temps géologiques, ses grandes limites et le statut de l’Anthropocène.',
+        lesson: {
+          sections: [
+            'L’échelle des temps géologiques classe l’histoire de la Terre en unités emboîtées. Elle a été construite à partir des successions de strates et de fossiles, puis calibrée par des datations numériques. Les unités de temps sont, de la plus grande à la plus petite, l’éon, l’ère, la période, l’époque et l’âge. Les ensembles de roches correspondants s’appellent éonothème, érathème, système, série et étage. Le référentiel international est la charte chronostratigraphique de la Commission internationale de stratigraphie (ICS), mise à jour régulièrement ; ses âges numériques restent révisables.',
+            'La Terre s’est formée il y a environ 4,54 à 4,57 milliards d’années. L’éon Hadéen, informel, couvre les débuts. L’Archéen commence vers 4 milliards d’années et dure jusqu’à environ 2 500 millions d’années. Le Protérozoïque va de 2 500 à environ 538,8 millions d’années. Le Phanérozoïque, qui débute avec le Cambrien il y a environ 538,8 millions d’années, est l’éon des fossiles abondants. Il comprend trois ères : le Paléozoïque (de 538,8 à environ 251,9 Ma), le Mésozoïque (de 251,9 à 66 Ma, avec le Trias, le Jurassique et le Crétacé) et le Cénozoïque (depuis 66 Ma, avec le Paléogène, le Néogène et le Quaternaire). Selon la charte ICS 2024/12, le Trias commence vers 251,9 Ma, le Jurassique vers 201,4 Ma, le Crétacé vers 143,1 Ma, le Néogène vers 23,04 Ma et le Quaternaire vers 2,58 Ma.',
+            'Une limite entre deux unités est définie en un lieu précis par un point stratotypique mondial, ou GSSP (Global Boundary Stratotype Section and Point), aussi appelé « clou d’or ». Un GSSP fixe la base d’un étage dans une coupe de référence, à l’aide d’un marqueur principal, souvent la première apparition d’un fossile. Par exemple, la base du Trias est définie à Meishan (Chine) par l’apparition du conodonte Hindeodus parvus, et la base du Cambrien à Fortune Head (Terre-Neuve, Canada) par celle de la trace fossile Treptichnus pedum. Pour les unités les plus anciennes (environ 1 000 Ma et plus), les limites sont fixées par des âges conventionnels (GSSA) car les coupes de référence sont trop rares.',
+            'Nous vivons dans l’Holocène, qui a commencé il y a environ 11 700 ans, au sein du Quaternaire. L’ICS y distingue des étages : le Meghalayen, qui commence il y a environ 4 200 ans, est l’étage actuel. Le terme « Anthropocène », popularisé par le chimiste Paul Crutzen, désigne l’empreinte humaine sur le système terrestre. Un groupe de travail créé en 2009 a proposé d’en faire une époque débutant vers 1952, avec le lac Crawford (Ontario) comme coupe de référence. En mars 2024, la sous-commission du Quaternaire a voté contre cette proposition (12 voix contre, 4 pour), vote approuvé le 20 mars 2024 par l’ICS et l’Union internationale des sciences géologiques. L’Anthropocène n’est donc pas une unité officielle de l’échelle, mais le terme reste employé comme descripteur de l’impact humain.'
+          ],
+          example: {
+            statement: 'D’après les limites de l’ICS, le Mésozoïque commence vers 251,9 Ma et se termine vers 66 Ma. Quelle est sa durée approximative ?',
+            calculation: 'Durée = 251,9 Ma − 66 Ma = 185,9 Ma.',
+            answer: 'Environ 186 millions d’années. Ces limites sont des estimations qui peuvent être légèrement révisées.'
+          },
+          exercise: {
+            question: 'Pourquoi l’Anthropocène ne figure-t-il pas dans l’échelle des temps géologiques officielle ?',
+            answer: 'Parce que la proposition de le formaliser comme époque a été rejetée en mars 2024 par la sous-commission du Quaternaire, puis cette décision a été approuvée par l’ICS et l’UISG. On reste officiellement dans l’Holocène.'
+          },
+          exercises: [
+            {
+              question: 'Quelles sont les trois ères du Phanérozoïque ?',
+              answer: 'Le Paléozoïque, le Mésozoïque et le Cénozoïque.'
+            },
+            {
+              question: 'Que signifie GSSP ?',
+              answer: 'Global Boundary Stratotype Section and Point : un point de référence mondial, dans une coupe de roches précise, qui définit la limite inférieure d’un étage de l’échelle des temps géologiques.'
+            },
+            {
+              question: 'À quelle date approximative se situe la limite entre le Crétacé et le Paléogène ?',
+              answer: 'Vers 66 millions d’années.'
+            }
+          ],
+          sources: [
+            { title: 'International Commission on Stratigraphy — International Chronostratigraphic Chart (v2024/12)', url: 'https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf' },
+            { title: 'Wikipedia — Global Boundary Stratotype Section and Point (GSSP)', url: 'https://en.wikipedia.org/wiki/Global_Boundary_Stratotype_Section_and_Point' },
+            { title: 'ICS Subcommission on Quaternary Stratigraphy — Working Group on the Anthropocene', url: 'https://quaternary.stratigraphy.org/working-groups/anthropocene' },
+            { title: 'IUGS — Déclaration du 20 mars 2024 sur l’Anthropocène', url: 'https://www.iugs.org/_files/ugd/f1fc07_23c6f9e723bc47b9b5fdcd300f806f25.pdf' }
+          ]
+        }
+      },
+      {
+        id: 'discordances-fossiles-crises',
+        title: 'Discordances, fossiles et grandes crises : les ruptures du registre',
+        field: 'Géologie · Lacunes stratigraphiques, Siccar Point, Grand Canyon et limite Crétacé-Paléogène',
+        summary: 'Comprendre ce que révèlent les discordances et les fossiles, avec trois cas de référence : Siccar Point, le Grand Canyon et la limite Crétacé-Paléogène.',
+        lesson: {
+          sections: [
+            'Une discordance est une surface qui sépare deux ensembles de couches et qui traduit une interruption du registre : une période d’érosion ou de non-dépôt, donc du temps manquant. Dans une discordance angulaire, les couches inférieures sont inclinées alors que les couches supérieures sont presque horizontales. Dans une non-conformité, des roches sédimentaires reposent sur des roches magmatiques ou métamorphiques. Lire une discordance, c’est reconstituer une suite d’événements : dépôt, déformation, soulèvement, érosion, puis nouveau dépôt.',
+            'À Siccar Point, sur la côte de l’est de l’Écosse, James Hutton, John Playfair et sir James Hall observent en juin 1788 une discordance angulaire célèbre. Des roches siluriennes (grauwackes) fortement inclinées sont recouvertes par des grès rouges du Dévonien supérieur presque horizontaux. Selon le Scottish Geology Trust, cette surface correspond à une lacune d’environ 65 millions d’années. Playfair écrira plus tard que l’esprit avait le vertige à regarder si loin dans « l’abîme du temps ». Ce site a contribué à convaincre que la Terre est très ancienne et que les processus géologiques sont cycliques.',
+            'Le Grand Canyon (Arizona) montre plusieurs discordances. Selon le National Park Service, les roches les plus anciennes exposées, le socle de Vishnu, remontent à environ 1,84 milliard d’années, et la formation de Kaibab, qui forme les bords, à environ 270 millions d’années. John Wesley Powell a décrit la Grande Discordance (Great Unconformity), où les roches paléozoïques reposent sur le socle de Vishnu. Selon le NPS, la discordance angulaire qui sépare les roches paléozoïques du Supergroupe du Grand Canyon représente jusqu’à 750 millions d’années manquantes, et la non-conformité sous ce supergroupe jusqu’à 500 millions d’années. Le canyon lui-même, creusé par le Colorado, n’a été entaillé que durant les 5 à 6 derniers millions d’années.',
+            'Les fossiles servent aussi à repérer les ruptures. La limite entre le Crétacé et le Paléogène, datée d’environ 66 millions d’années, est marquée par une extinction de masse. À Gubbio (Italie), une couche d’argile d’environ 1 cm d’épaisseur contient un excès d’iridium, un élément rare dans la croûte mais plus abondant dans les météorites. En 1980, l’équipe de Luis et Walter Alvarez, Frank Asaro et Helen Michel interprète cette anomalie comme la trace d’un impact météoritique. Depuis, l’anomalie a été retrouvée dans plus de 350 sites marins et continentaux, et le cratère de Chicxulub (Yucatán, Mexique) est daté d’environ 66 millions d’années. On estime que près des trois quarts des espèces ont disparu. L’hypothèse de l’impact est largement admise ; le rôle éventuel d’autres facteurs, comme les éruptions des trapps du Deccan, reste discuté.'
+          ],
+          example: {
+            statement: 'À Siccar Point, des couches inclinées sont recouvertes par des couches presque horizontales plus récentes. Dans quel ordre se sont produits les événements ?',
+            calculation: 'D’après l’horizontalité originelle, les couches inférieures se sont d’abord déposées à l’horizontale, puis ont été inclinées. La surface supérieure a ensuite été érodée, et de nouveaux sédiments s’y sont déposés.',
+            answer: 'Ordre : 1) dépôt des couches inférieures ; 2) inclinaison par déformation ; 3) érosion ; 4) dépôt des couches supérieures. La discordance matérialise la lacune de temps.'
+          },
+          exercise: {
+            question: 'Qu’est-ce qu’une discordance angulaire et que représente-t-elle ?',
+            answer: 'C’est une surface séparant des couches inférieures inclinées de couches supérieures presque horizontales. Elle représente une lacune de temps due à de la déformation, de l’érosion ou du non-dépôt.'
+          },
+          exercises: [
+            {
+              question: 'Pourquoi l’iridium de la limite Crétacé-Paléogène a-t-il été interprété comme la trace d’un impact ?',
+              answer: 'Parce que l’iridium est rare dans la croûte terrestre mais plus abondant dans les météorites, et que sa concentration anormale dans une fine couche d’argile, observée dans de nombreux sites, suggérait un apport extraterrestre.'
+            },
+            {
+              question: 'Quelles roches se trouvent de part et d’autre de la discordance de Siccar Point ?',
+              answer: 'Des grauwackes siluriennes inclinées en dessous, et des grès rouges du Dévonien supérieur presque horizontaux au-dessus.'
+            },
+            {
+              question: 'Peut-on dire que le Grand Canyon a été creusé en 1,84 milliard d’années parce que ses roches les plus anciennes ont cet âge ?',
+              answer: 'Non. 1,84 milliard d’années est l’âge des roches les plus anciennes. Le canyon, lui, a été creusé pendant les 5 à 6 derniers millions d’années seulement.'
+            }
+          ],
+          sources: [
+            { title: 'Scottish Geology Trust — Siccar Point, Hutton’s Unconformity', url: 'https://geoguide.scottishgeologytrust.org/page/3827' },
+            { title: 'Kerr, A. (2018), Geoscience Canada — Hutton’s Unconformity at Siccar Point', url: 'https://journals.lib.unb.ca/index.php/GC/article/view/26048' },
+            { title: 'National Park Service — Missing time at Grand Canyon (unconformités)', url: 'https://www.nps.gov/articles/000/grcatime-missing-time.htm' },
+            { title: 'National Park Service — Grand Canyon: Earth history revealed', url: 'https://www.nps.gov/articles/000/grcatime-geoheritage.htm' },
+            { title: 'Goderis et al. (2021), Science Advances — Globally distributed iridium layer within the Chicxulub impact structure', url: 'https://par.nsf.gov/servlets/purl/10244218' },
+            { title: 'Encyclopædia Universalis — Impact météoritique de la limite Crétacé-Paléogène', url: 'https://www.universalis.fr/encyclopedie/impact-meteoritique-de-la-limite-cretace-paleogene/' }
+          ]
+        }
+      }
+    ]
+  },
+
+
 ];
 
