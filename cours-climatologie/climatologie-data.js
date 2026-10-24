@@ -1365,6 +1365,216 @@ window.courseCatalog = [
         }
       }
     ] // FIN BRANCHE atmosphere
-  }
-];
+  },
+
+
+{
+  id: 'effet-radiatif',
+  title: "L'effet radiatif",
+  note: "Quatre chapitres pour comprendre le rayonnement thermique, le bilan radiatif terrestre, l'effet de serre et le forçage radiatif. Les valeurs globales sont des moyennes ou des ordres de grandeur dépendant de la période et de la méthode d'estimation.",
+  chapters: [
+    {
+      id: 'rayonnement-thermique',
+      title: 'Le rayonnement thermique et ses lois physiques',
+      field: 'Physique · Rayonnement électromagnétique et transfert thermique',
+      summary: "Comprendre comment les corps émettent et absorbent un rayonnement, et utiliser les lois de Stefan-Boltzmann et de Wien dans leur domaine de validité.",
+      lesson: {
+        sections: [
+          "Le rayonnement est un mode de transfert d'énergie par ondes électromagnétiques. Contrairement à la conduction et à la convection, il peut se propager dans le vide. Tout corps dont la température est supérieure au zéro absolu émet un rayonnement thermique; la répartition des longueurs d'onde dépend notamment de sa température et de ses propriétés radiatives.",
+          "Le modèle du corps noir décrit un objet idéal qui absorbe tout le rayonnement incident et émet, à une température donnée, le rayonnement thermique maximal possible. Les objets réels ne sont pas des corps noirs parfaits : leur émissivité, comprise entre 0 et 1 dans le modèle usuel, caractérise leur capacité d'émission par rapport à un corps noir à la même température.",
+          "La loi de Stefan-Boltzmann donne le flux émis par unité de surface d'un corps noir : F = σ T^4. Pour une surface réelle grise, on utilise souvent F = ε σ T^4, avec une émissivité ε et la température absolue T en kelvins. La constante σ vaut environ 5,67 × 10^-8 W·m^-2·K^-4. Cette formule concerne l'émission; pour obtenir un échange radiatif net avec un environnement idéalisé à la température T_env, on peut utiliser F_net = ε σ (T^4 - T_env^4), sous des hypothèses adaptées.",
+          "La loi de déplacement de Wien indique que la longueur d'onde au maximum d'émission d'un corps noir diminue lorsque sa température augmente : λ_max T ≈ 2,898 × 10^-3 m·K. Le Soleil, beaucoup plus chaud que la Terre, émet surtout dans les courtes longueurs d'onde; la Terre, plus froide, émet principalement dans l'infrarouge thermique. Les spectres réels dépendent aussi de l'absorption et de l'émission sélectives des matériaux et des gaz."
+        ],
+        example: {
+          statement: "Une surface idéalisée de température T = 300 K a une émissivité ε = 0,90. Quel est son flux radiatif émis selon le modèle de Stefan-Boltzmann ?",
+          calculation: "F = ε σ T^4 = 0,90 × 5,67 × 10^-8 × 300^4 ≈ 413 W/m².",
+          answer: "Le flux émis estimé est d'environ 413 W/m². Il s'agit du flux émis, pas du flux net échangé avec l'environnement; ce dernier dépend aussi du rayonnement reçu et des températures environnantes."
+        },
+        exercise: {
+          question: "Pourquoi faut-il exprimer la température en kelvins dans la loi de Stefan-Boltzmann ?",
+          answer: "Parce que cette loi dépend de la température absolue élevée à la puissance 4. La température en degrés Celsius ne peut pas être utilisée directement."
+        },
+        exercises: [
+          {
+            question: "Quelle est l'unité du flux radiatif par unité de surface ?",
+            answer: "Le watt par mètre carré (W/m²)."
+          },
+          {
+            question: "Selon la loi de Wien, comment évolue la longueur d'onde du maximum d'émission quand la température augmente ?",
+            answer: "Elle diminue : le produit λ_max × T reste approximativement égal à 2,898 × 10^-3 m·K pour un corps noir."
+          },
+          {
+            question: "Une émissivité de 1 correspond à quel modèle idéal ?",
+            answer: "À un corps noir, qui émet le flux maximal à la température considérée et absorbe tout le rayonnement incident."
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — University Physics Volume 3, 6.1 Blackbody Radiation',
+            url: 'https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation'
+          },
+          {
+            title: 'OpenStax — University Physics Volume 2, 1.6 Mechanisms of Heat Transfer',
+            url: 'https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bilan-radiatif-terrestre',
+      title: 'Le bilan radiatif de la Terre',
+      field: 'Climatologie physique · Flux radiatifs au sommet de l’atmosphère et à la surface',
+      summary: "Décrire les flux solaires entrants, la réflexion, l'absorption et le rayonnement infrarouge sortant, puis relier leur équilibre à l'évolution de la température globale.",
+      lesson: {
+        sections: [
+          "Le bilan radiatif terrestre comptabilise l'énergie solaire absorbée par le système Terre-atmosphère et l'énergie renvoyée vers l'espace sous forme de rayonnement réfléchi et de rayonnement thermique infrarouge. À l'échelle globale et sur une durée suffisamment longue, un climat proche de l'équilibre doit évacuer vers l'espace autant d'énergie qu'il en absorbe. Cette égalité moyenne n'implique pas que chaque région ou chaque instant soit en équilibre.",
+          "Le flux solaire moyen reçu au sommet de l'atmosphère, moyenné sur toute la surface de la Terre et sur le cycle jour-nuit, est d'environ 340 W/m². Une partie est réfléchie par les nuages, les aérosols et les surfaces claires; la fraction réfléchie à l'échelle planétaire est appelée albédo. Le reste est absorbé par l'atmosphère et la surface. La valeur exacte de chaque composante varie avec les nuages, les saisons, les surfaces et la période étudiée.",
+          "La surface terrestre absorbe de l'énergie solaire et émet un rayonnement infrarouge en fonction de sa température. Une partie de cet infrarouge est absorbée par des gaz atmosphériques et des nuages, puis réémise dans différentes directions. L'énergie quitte également la surface par évaporation et par transfert turbulent de chaleur sensible. Il faut donc distinguer le bilan radiatif au sommet de l'atmosphère du bilan énergétique à la surface.",
+          "Si le système Terre absorbe durablement plus d'énergie qu'il n'en renvoie vers l'espace, son contenu énergétique augmente, principalement dans l'océan, et le système se réchauffe. Si les pertes vers l'espace dépassent l'énergie absorbée, le système tend à se refroidir. La température répond avec retard, car les océans stockent une grande quantité d'énergie et les composantes du système climatique ont des inerties différentes."
+        ],
+        example: {
+          statement: "Pour un schéma simplifié, le flux solaire moyen entrant vaut 340 W/m² et l'albédo planétaire vaut 0,29. Estimer le flux solaire réfléchi et le flux solaire absorbé, en négligeant ici les détails de répartition entre surface et atmosphère.",
+          calculation: "Flux réfléchi = 0,29 × 340 = 98,6 W/m². Flux absorbé = (1 - 0,29) × 340 = 241,4 W/m².",
+          answer: "Le modèle simplifié donne environ 99 W/m² réfléchis et 241 W/m² absorbés. Ce calcul concerne le rayonnement solaire; il ne donne pas à lui seul le bilan énergétique complet, qui inclut aussi le rayonnement infrarouge sortant."
+        },
+        exercise: {
+          question: "Que signifie un déséquilibre énergétique positif au sommet de l'atmosphère ?",
+          answer: "Le système Terre absorbe davantage d'énergie qu'il n'en renvoie vers l'espace; son contenu énergétique augmente tant que ce déséquilibre persiste."
+        },
+        exercises: [
+          {
+            question: "Que mesure l'albédo planétaire ?",
+            answer: "La fraction du rayonnement solaire incident qui est réfléchie vers l'espace par le système Terre-atmosphère."
+          },
+          {
+            question: "Pourquoi le flux solaire moyen global est-il inférieur au flux reçu sur une surface perpendiculaire aux rayons solaires ?",
+            answer: "Parce que l'énergie interceptée par le disque terrestre est moyennée sur toute la surface sphérique et sur l'alternance jour-nuit."
+          },
+          {
+            question: "Un bilan radiatif équilibré signifie-t-il qu'il n'existe aucun transfert de chaleur entre la surface et l'atmosphère ?",
+            answer: "Non. Des flux importants peuvent s'échanger entre la surface et l'atmosphère même lorsque le bilan global au sommet de l'atmosphère est équilibré."
+          }
+        ],
+        sources: [
+          {
+            title: 'NASA — Climate and Earth’s Energy Budget',
+            url: 'https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/'
+          },
+          {
+            title: 'NASA — The Earth’s Radiation Budget',
+            url: 'https://science.nasa.gov/ems/13_radiationbudget/'
+          },
+          {
+            title: 'GIEC — AR6, chapitre 7 : Earth’s Energy Budget and its Changes Through Time',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'effet-de-serre-radiatif',
+      title: 'L’effet de serre et les échanges infrarouges',
+      field: 'Sciences du climat · Absorption et émission infrarouges par l’atmosphère',
+      summary: "Expliquer le rôle radiatif des gaz à effet de serre, distinguer l'effet de serre naturel de son renforcement anthropique et éviter les modèles trop simplifiés de l'atmosphère.",
+      lesson: {
+        sections: [
+          "La plupart du rayonnement solaire qui atteint le système terrestre se situe dans les courtes longueurs d'onde, tandis que la surface terrestre, plus froide que le Soleil, émet principalement dans l'infrarouge thermique. Certains gaz atmosphériques, notamment la vapeur d'eau, le dioxyde de carbone, le méthane, le protoxyde d'azote et l'ozone, absorbent et émettent dans certaines bandes infrarouges. L'azote et l'oxygène, principaux constituants de l'air sec, interagissent beaucoup moins avec une grande partie du rayonnement infrarouge terrestre.",
+          "Après avoir absorbé de l'infrarouge, une molécule active dans l'infrarouge échange de l'énergie avec son environnement et participe à l'émission atmosphérique. Le rayonnement émis par l'atmosphère se propage vers le haut et vers le bas. Le rayonnement descendant contribue à l'énergie reçue par la surface, mais il ne signifie pas que la chaleur est piégée de façon absolue : l'énergie continue de quitter le système vers l'espace, notamment depuis des couches atmosphériques plus élevées et plus froides.",
+          "L'effet de serre naturel est essentiel à la température moyenne de la surface terrestre telle que nous la connaissons. Lorsque la concentration de gaz à effet de serre augmente, l'altitude effective depuis laquelle le rayonnement infrarouge s'échappe vers l'espace peut augmenter. Comme la température troposphérique diminue généralement avec l'altitude, l'émission vers l'espace peut alors être plus faible au départ; le système se réchauffe jusqu'à ce que le rayonnement sortant retrouve un niveau compatible avec l'énergie absorbée, avec des ajustements et rétroactions.",
+          "Le rôle d'un gaz dépend de ses bandes d'absorption, de sa concentration, de sa durée de vie atmosphérique, de son mélange vertical et du recouvrement de ses bandes avec celles d'autres gaz. La vapeur d'eau est un puissant gaz à effet de serre et agit largement comme une rétroaction liée à la température; le CO2 est un moteur important du changement climatique actuel parce que les activités humaines augmentent sa concentration. L'effet de serre ne doit pas être décrit comme une simple couche solide qui renverrait tout le rayonnement vers le sol."
+        ],
+        example: {
+          statement: "Une planète reçoit en moyenne une certaine énergie solaire absorbée. Si l'augmentation des gaz à effet de serre réduit initialement le rayonnement infrarouge sortant, quelle est la première conséquence énergétique attendue, toutes choses égales par ailleurs ?",
+          calculation: "Déséquilibre énergétique = énergie absorbée - énergie sortante. Si le rayonnement sortant diminue alors que l'énergie absorbée reste inchangée, le déséquilibre devient positif.",
+          answer: "La planète accumule de l'énergie et se réchauffe. À mesure que sa température et l'état de son atmosphère évoluent, le rayonnement infrarouge sortant augmente et d'autres ajustements interviennent."
+        },
+        exercise: {
+          question: "Pourquoi l'augmentation du CO2 peut-elle réchauffer le climat même si le CO2 ne constitue qu'une petite fraction de l'atmosphère ?",
+          answer: "Parce que le CO2 absorbe et émet dans des bandes importantes du rayonnement infrarouge terrestre. Son effet radiatif dépend de ses propriétés spectrales et de sa concentration, pas seulement de sa proportion dans l'air."
+        },
+        exercises: [
+          {
+            question: "Dans quelle région du spectre la Terre émet-elle principalement son rayonnement thermique ?",
+            answer: "Dans l'infrarouge thermique."
+          },
+          {
+            question: "Les gaz à effet de serre empêchent-ils tout rayonnement de quitter la Terre ?",
+            answer: "Non. Ils absorbent et émettent dans certaines bandes; une partie du rayonnement s'échappe vers l'espace, notamment depuis l'atmosphère."
+          },
+          {
+            question: "Quelle différence fondamentale existe entre effet de serre naturel et renforcement anthropique de l'effet de serre ?",
+            answer: "L'effet de serre naturel résulte des propriétés de l'atmosphère; son renforcement anthropique vient notamment de l'augmentation des concentrations de gaz à effet de serre due aux activités humaines."
+          }
+        ],
+        sources: [
+          {
+            title: 'NASA — Climate and Earth’s Energy Budget',
+            url: 'https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/'
+          },
+          {
+            title: 'NASA — What Is Earth’s Atmosphere?',
+            url: 'https://www.nasa.gov/general/what-is-earths-atmosphere/'
+          },
+          {
+            title: 'GIEC — AR6, chapitre 7 : Earth’s Energy Budget and its Changes Through Time',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'forcage-radiatif-retroactions',
+      title: 'Forçage radiatif, rétroactions et réponse du climat',
+      field: 'Sciences du climat · Perturbations du bilan énergétique et réponse du système climatique',
+      summary: "Définir le forçage radiatif et le forçage radiatif effectif, comprendre le signe positif ou négatif et distinguer forçage, rétroaction et évolution de température.",
+      lesson: {
+        sections: [
+          "Le forçage radiatif décrit une modification du flux radiatif net, généralement exprimée en W/m², causée par un facteur climatique tel qu'une variation des gaz à effet de serre, des aérosols ou de l'irradiance solaire. Avec la convention courante au sommet de l'atmosphère, un changement positif du flux net descendant tend à réchauffer le système et un changement négatif tend à le refroidir. La définition précise dépend du niveau de référence et de la méthode de calcul.",
+          "Le forçage radiatif effectif (ERF) évalué par le GIEC correspond à la modification du flux radiatif net au sommet de l'atmosphère après les ajustements rapides du système à la perturbation, mais en excluant la réponse radiative liée au changement de température moyenne de surface. Il est donc plus complet que le forçage instantané pour comparer de nombreux agents climatiques, notamment les gaz à effet de serre et les aérosols.",
+          "Une rétroaction climatique est un processus déclenché par une évolution initiale et qui modifie cette évolution. Une rétroaction positive amplifie la perturbation initiale; une rétroaction négative la réduit. Par exemple, le réchauffement augmente généralement la quantité de vapeur d'eau atmosphérique, ce qui renforce l'effet de serre et constitue une rétroaction positive. La diminution de la neige et de la glace peut réduire l'albédo et amplifier l'absorption solaire. Les nuages ont des effets radiatifs complexes qui dépendent notamment de leur altitude, de leur épaisseur et de leurs propriétés optiques.",
+          "Un forçage radiatif ne donne pas, à lui seul, une hausse de température immédiate et universelle. La réponse dépend de la sensibilité climatique, des rétroactions, de la répartition géographique du forçage et de l'absorption de chaleur par l'océan. Il faut aussi distinguer les agents qui modifient le bilan énergétique de la variabilité interne du climat, laquelle peut produire des fluctuations temporaires sans constituer nécessairement un forçage externe durable."
+        ],
+        example: {
+          statement: "Un calcul de modèle estime un forçage radiatif effectif de +1,5 W/m² pour une perturbation donnée. Que permet de conclure le signe de cette valeur ?",
+          calculation: "Le signe est positif : selon la convention du flux net descendant, la perturbation augmente le bilan énergétique entrant net de 1,5 W/m² après les ajustements rapides retenus dans la définition de l'ERF.",
+          answer: "Cette perturbation exerce une influence réchauffante sur le système climatique. La valeur seule ne permet pas de calculer directement une hausse précise de température sans connaître la réponse climatique et les hypothèses du modèle."
+        },
+        exercise: {
+          question: "Quelle est la différence entre un forçage radiatif positif et une rétroaction positive ?",
+          answer: "Un forçage est une perturbation initiale du bilan énergétique; une rétroaction est un processus de réponse au changement qui amplifie ou réduit celui-ci. Le mot positif ne désigne donc pas le même rôle causal dans les deux expressions."
+        },
+        exercises: [
+          {
+            question: "Dans quelle unité le forçage radiatif est-il exprimé ?",
+            answer: "En watts par mètre carré (W/m²)."
+          },
+          {
+            question: "Une rétroaction négative signifie-t-elle nécessairement que le climat se refroidit ?",
+            answer: "Non. Elle signifie qu'elle s'oppose au changement initial; le système peut continuer à se réchauffer si le forçage et les autres processus dominent."
+          },
+          {
+            question: "Pourquoi ne peut-on pas déduire directement une température finale d'une seule valeur de forçage ?",
+            answer: "Parce qu'il faut également tenir compte de la sensibilité climatique, des rétroactions, de l'inertie thermique des océans et de la durée de la perturbation."
+          }
+        ],
+        sources: [
+          {
+            title: 'GIEC — AR6, chapitre 7, section 7.3 : Effective Radiative Forcing',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/'
+          },
+          {
+            title: 'GIEC — AR6, chapitre 2 : Changing State of the Climate System',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-2/'
+          },
+          {
+            title: 'GIEC — Glossary: Radiative Forcing',
+            url: 'https://ipcc-data.org/guidelines/pages/glossary/glossary_r.html'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+]
 
