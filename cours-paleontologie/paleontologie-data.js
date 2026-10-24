@@ -1467,6 +1467,339 @@ window.courseCatalog = [
     ]
   },
 
+// BRANCHE PREMIERES FLEURS
+
+  {
+    id: 'premieres-fleurs',
+    sortYear: -134000000,
+    title: 'Les premières fleurs',
+    note: 'Sept chapitres sur la définition de la fleur, le « mystère abominable » de Darwin, les premiers pollens, les premières fleurs fossiles du Crétacé, le débat sur les fleurs du Jurassique et l’horloge moléculaire, la fleur ancestrale et l’essor des angiospermes. Les dates sont approximatives ; l’âge d’origine des plantes à fleurs est encore débattu entre fossiles et données génétiques.',
+    chapters: [
+      {
+        id: 'definition-de-la-fleur',
+        title: 'Qu’est-ce qu’une plante à fleurs ?',
+        field: 'Botanique · Angiospermes · Définition, structure de la fleur et diversité actuelle',
+        summary: 'Comprendre ce qui définit une angiosperme, comment fonctionne une fleur et pourquoi le pollen est l’outil central pour dater les premières plantes à fleurs.',
+        lesson: {
+          sections: [
+            'Les angiospermes, ou plantes à fleurs, sont des plantes à graines dont les ovules sont enfermés dans des carpelles. Le mot signifie « graine dans un vaisseau » : c’est l’enclosure des ovules qui les distingue des gymnospermes (conifères, cycadales, ginkgo), dont les ovules et les graines sont portés à nu sur des écailles ou des feuilles. L’ovaire, partie du carpelle qui contient les ovules, devient le fruit après la fécondation.',
+            'Une fleur réunit des carpelles (organes femelles), des étamines (organes qui produisent le pollen) et, le plus souvent, des pièces stériles comme les pétales et les sépales. Le pollen est transporté d’une étamine vers un carpelle par le vent, l’eau ou des animaux. Le cycle des angiospermes comporte aussi une double fécondation : un noyau spermatique féconde l’œuf, tandis qu’un second s’unit à d’autres noyaux du sac embryonnaire pour former l’albumen (endosperme), un tissu nutritif qui entoure l’embryon.',
+            'Les angiospermes sont aujourd’hui le groupe de plantes le plus diversifié. Christenhusz et Byng (2016) comptent environ 374 000 espèces de plantes connues, dont 308 312 plantes vasculaires et 295 383 angiospermes (74 273 monocotylédones et 210 008 eudicotylédones). Pour comparaison, ils recensent 1 079 espèces de gymnospermes et 10 560 de fougères. Une autre estimation (Lughadha et al., 2016), fondée sur l’analyse des noms d’espèces de l’IPNI, donne environ 369 000 espèces d’angiospermes acceptées : le chiffre dépend donc de la méthode de comptage.',
+            'Pour retracer l’histoire des premières angiospermes, les paléobotanistes s’appuient surtout sur le pollen : les grains dispersés sont très nombreux et se conservent bien, ce qui en fait l’outil le plus adapté pour suivre le calendrier de leur évolution. Deux grands types servent de repères : le pollen monosulqué, à un seul sillon (comme chez les gymnospermes et les monocotylédones), qui est le plus ancien, et le pollen tricolpé, à trois sillons, caractéristique des eudicotylédones. Ces dernières représentent la grande majorité des espèces actuelles, environ 70 à 75 %.'
+          ],
+          example: {
+            statement: 'Christenhusz et Byng (2016) recensent 295 383 espèces d’angiospermes et 1 079 espèces de gymnospermes. Environ combien de fois les angiospermes sont-elles plus nombreuses en espèces connues ?',
+            calculation: 'On divise le nombre d’espèces d’angiospermes par celui des gymnospermes : 295 383 ÷ 1 079 ≈ 273,8.',
+            answer: 'Environ 274 fois plus. Ce rapport dépend des chiffres retenus ; d’autres méthodes de comptage donnent des totaux différents.'
+          },
+          exercise: {
+            question: 'Quelle caractéristique distingue principalement une angiosperme d’une gymnosperme ?',
+            answer: 'Chez les angiospermes, les ovules sont enfermés dans des carpelles (puis les graines dans un fruit) ; chez les gymnospermes, les ovules et les graines sont portés à nu.'
+          },
+          exercises: [
+            {
+              question: 'Pourquoi le pollen est-il très utile pour dater l’apparition des plantes à fleurs ?',
+              answer: 'Parce que les grains de pollen dispersés sont très nombreux et se conservent bien, ce qui en fait l’outil le plus adapté pour suivre le calendrier de l’évolution des premières angiospermes.'
+            },
+            {
+              question: 'Quelle différence y a-t-il entre un pollen monosulqué et un pollen tricolpé ?',
+              answer: 'Le pollen monosulqué a un seul sillon ; le pollen tricolpé en a trois et caractérise les eudicotylédones.'
+            },
+            {
+              question: 'Combien d’espèces d’angiospermes connues Christenhusz et Byng (2016) recensent-ils ?',
+              answer: '295 383 espèces, dont 74 273 monocotylédones et 210 008 eudicotylédones.'
+            }
+          ],
+          sources: [
+            { title: 'UC Davis — Chapter 25: Angiosperms (plants with an enclosed seed)', url: 'https://labs.plb.ucdavis.edu/courses/bis/1c/text/Chapter25nf.pdf' },
+            { title: 'Christenhusz & Byng (2016) — The number of known plants species in the world and its annual increase, Phytotaxa', url: 'https://phytotaxa.mapress.com/pt/article/view/16325' },
+            { title: 'Lughadha et al. (2016) — Counting counts: revised estimates of numbers of accepted species of flowering plants, Phytotaxa', url: 'https://phytotaxa.mapress.com/pt/article/view/17574/7477' },
+            { title: 'Hochuli & Feist-Burkhardt (2013) — Angiosperm-like pollen and Afropollis from the Middle Triassic, Frontiers in Plant Science', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3788615' },
+            { title: 'Doyle — Molecular and fossil evidence on the origin of angiosperms, Annual Review of Earth and Planetary Sciences', url: 'https://evo.dbio.uevora.pt/Molecular_and_Fossil_Evidence_on_the_Origin_of_Angiosperms.pdf' }
+          ]
+        }
+      },
+      {
+        id: 'mystere-abominable-de-darwin',
+        title: 'Le « mystère abominable » de Darwin',
+        field: 'Histoire des sciences · Darwin, Hooker, Saporta · 1875 à 1903',
+        summary: 'Comprendre l’origine de la célèbre formule de Darwin sur les plantes à fleurs, son contexte et les nuances apportées par les historiens des sciences.',
+        lesson: {
+          sections: [
+            'Le 22 juillet 1879, depuis sa maison de Down (Kent), Charles Darwin écrit à son ami Joseph Dalton Hooker, directeur des jardins de Kew. Il y évoque le développement rapide, à l’échelle des temps géologiques récents, de ce qu’il appelle les « plantes supérieures » et le qualifie d’« abominable mystery ». Il ajoute qu’il aimerait voir ce problème résolu.',
+            'Dans cette lettre, Darwin commente des idées de ses correspondants. John Ball supposait que les plantes supérieures étaient apparues en altitude, où l’air contenait moins de gaz carbonique ; Darwin juge cette hypothèse très hasardeuse. Gaston de Saporta pensait que leur développement avait été étonnamment rapide dès que des insectes visitant les fleurs s’étaient développés et avaient favorisé le croisement. Darwin imagine aussi qu’un petit continent isolé de l’hémisphère sud ait pu être leur berceau, mais il qualifie lui-même cette conjecture de « wretchedly poor ».',
+            'La lettre est restée inédite entre 1879 et 1903. Elle a été publiée en 1903 dans More Letters of Charles Darwin, éditées par Francis Darwin et Albert Seward, et l’expression est depuis fréquemment citée pour désigner l’origine et l’essor apparemment brusque des plantes à fleurs dans le registre fossile du Crétacé.',
+            'Des travaux récents ont nuancé cette lecture. Selon Richard Buggs (2017), l’idée d’un groupe naturel unique d’angiospermes n’existait pas encore à l’époque de Darwin. En parlant de « plantes supérieures », il visait très probablement les dicotylédones, dont l’apparition soudaine dans les couches du Crétacé supérieur l’intriguait, alors qu’il pensait que les monocotylédones avaient une histoire fossile bien plus ancienne. William Friedman (2009) avait lui aussi étudié ce que Darwin entendait par cette formule, à partir de sa correspondance avec des botanistes et paléobotanistes de son temps.',
+            'Une partie de la rapidité apparente tenait à des identifications trop hâtives de feuilles fossiles : selon l’introduction du numéro spécial de l’American Journal of Botany (2009), ce qui semblait à Darwin et à ses collègues une évolution très rapide de groupes modernes était en partie une fausse impression due à des attributions taxonomiques peu critiques. La diversification initiale et la montée en puissance des angiospermes restent néanmoins remarquablement rapides. Buggs va jusqu’à écrire que le mystère s’est approfondi depuis 1879.'
+          ],
+          example: {
+            statement: 'La lettre de Darwin à Hooker date de 1879 et a été publiée en 1903. Combien d’années se sont écoulées entre la rédaction et la publication ?',
+            calculation: 'On soustrait la première date de la seconde : 1903 − 1879 = 24.',
+            answer: 'Vingt-quatre années. La formule est donc restée inconnue du public pendant près d’un quart de siècle.'
+          },
+          exercise: {
+            question: 'À qui Darwin écrit-il la lettre de 1879 contenant la formule sur le « mystère abominable » ?',
+            answer: 'À Joseph Dalton Hooker, botaniste et directeur des jardins de Kew.'
+          },
+          exercises: [
+            {
+              question: 'Quelle idée de Gaston de Saporta Darwin rapporte-t-il dans cette lettre ?',
+              answer: 'Que le développement des plantes supérieures avait été étonnamment rapide dès que des insectes visitant les fleurs s’étaient développés et avaient favorisé le croisement.'
+            },
+            {
+              question: 'Pourquoi la lecture classique de la formule de Darwin est-elle nuancée aujourd’hui ?',
+              answer: 'Selon Richard Buggs (2017), Darwin visait probablement les dicotylédones plutôt que toutes les angiospermes, car celles-ci n’étaient pas encore conçues comme un groupe naturel unique.'
+            },
+            {
+              question: 'En quoi la rapidité apparente de l’essor des plantes à fleurs était-elle en partie une illusion ?',
+              answer: 'Des attributions taxonomiques peu critiques de feuilles fossiles donnaient l’impression d’une évolution très rapide de groupes modernes, mais la diversification initiale reste néanmoins très rapide.'
+            }
+          ],
+          sources: [
+            { title: 'Darwin Correspondence Project — Lettre à J. D. Hooker, 22 juillet [1879] (n° 12167)', url: 'https://www.darwinproject.ac.uk/view/letters/DCP-LETT-12167' },
+            { title: 'Darwin Correspondence Project — Résumé de la lettre n° 12167', url: 'https://darwinproject.ac.uk/entry-12167' },
+            { title: 'Buggs — Darwin’s abominable mystery, Springer Nature Communities', url: 'https://communities.springernature.com/posts/darwin-s-abominable-mystery' },
+            { title: 'Botany One — A new spin on Darwin’s abominable mystery', url: 'https://www.botany.one/a-new-spin-on-darwins-abominable-mystery/' },
+            { title: 'American Journal of Botany (2009) — Introduction to the Darwin special issue: the abominable mystery', url: 'https://era.library.ualberta.ca/files/db78tc79h/AJOB_96_2009_3.pdf' },
+            { title: 'Pais (2018) — Darwin e a evolução (extraits des lettres Darwin–Hooker)', url: 'https://comum.rcaap.pt/bitstream/10400.26/45880/1/Pais_2018_Darwin_e_a_evolucao.pdf' }
+          ]
+        }
+      },
+      {
+        id: 'premiers-pollens-angiospermes',
+        title: 'Les premiers pollens d’angiospermes',
+        field: 'Paléobotanique · Pollen · Crétacé inférieur · Environ 139 à 125 millions d’années',
+        summary: 'Découvrir les plus anciens grains de pollen reconnus comme angiospermes, leur succession dans le temps et les indices plus anciens qui restent discutés.',
+        lesson: {
+          sections: [
+            'Les plus anciens restes largement acceptés de plantes à fleurs sont des grains de pollen du Crétacé inférieur. Les premiers enregistrements de pollen d’angiospermes, largement acceptés, datent de la partie ancienne du Crétacé inférieur (Valanginien à début de l’Hauterivien), et il s’agit de pollen monosulqué à structure columellée. Ils sont connus notamment en Angleterre (travaux de Hughes) et en Israël (Brenner, 1996). Un ordre de grandeur souvent cité pour ces grains est d’environ 134 millions d’années.',
+            'D’après Coiro, Doyle et Hilton (2019), les pollens documentent une apparition des angiospermes à pollen monosulqué dans le nord du Gondwana au Valanginien, suivie d’une extension vers les pôles, des monosulqués puis des eudicotylédones à pollen tricolpé, qui s’accélère à l’Albien. Le pollen tricolpé le plus ancien est daté d’environ 125 millions d’années. La séquence observée, des pollens simples vers des pollens plus complexes, s’accorde avec celle déduite des arbres généalogiques moléculaires.',
+            'Des pollens monosulqués et columellés ont aussi été signalés plus tôt. En 2013, Hochuli et Feist-Burkhardt ont décrit en Suisse du Nord des grains de pollen « de type angiosperme » de l’Anisien (Trias moyen, vers 243 millions d’années), plus anciens de plus de 100 millions d’années que les premiers pollens admis. Les auteurs les rattachent prudemment à la lignée-souche des angiospermes (« stem group »), non à des angiospermes à proprement parler, et ils soulignent l’absence d’enregistrement continu dans le Mésozoïque inférieur.',
+            'La prudence reste de mise : Herendeen, Friis, Pedersen et Crane (2017) soulignent qu’aucun reste d’angiosperme avéré, macrofossile ou microfossile, n’a été décrit dans des roches plus anciennes que le Crétacé inférieur. Ils précisent que des angiospermes pourraient un jour être reconnues dans le Jurassique ou plus tôt, mais que cela exigera la documentation de caractères structuraux clairement diagnostiques. Pour Coiro et ses collègues, les prétendues angiospermes antérieures au Crétacé correspondent soit à d’autres groupes de plantes, soit manquent de caractères qui permettraient de les rattacher avec confiance aux angiospermes.'
+          ],
+          example: {
+            statement: 'Un pollen de type angiosperme du Trias moyen est daté d’environ 243 millions d’années, et les premiers pollens largement acceptés d’environ 134 millions d’années. Quel est l’écart ?',
+            calculation: 'On soustrait la date la plus récente de la plus ancienne : 243 − 134 = 109.',
+            answer: 'Environ 109 millions d’années, c’est-à-dire plus de 100 millions d’années. Le pollen triasique n’est toutefois pas considéré comme preuve d’une véritable angiosperme.'
+          },
+          exercise: {
+            question: 'Pourquoi les grains de pollen du Trias de Suisse ne prouvent-ils pas à eux seuls l’existence d’angiospermes à cette époque ?',
+            answer: 'Parce que leurs auteurs les rattachent seulement à la lignée-souche des angiospermes et qu’aucun reste d’angiosperme avéré n’est connu avant le Crétacé inférieur selon Herendeen et al. (2017).'
+          },
+          exercises: [
+            {
+              question: 'À quelle période se situent les premiers pollens d’angiospermes largement acceptés ?',
+              answer: 'Au Crétacé inférieur, du Valanginien au début de l’Hauterivien, avec un ordre de grandeur d’environ 134 millions d’années.'
+            },
+            {
+              question: 'Quel type de pollen apparaît d’abord : monosulqué ou tricolpé ?',
+              answer: 'Le pollen monosulqué apparaît en premier ; le pollen tricolpé (eudicotylédones) vient ensuite, vers 125 millions d’années pour les plus anciens.'
+            },
+            {
+              question: 'Que concluent Herendeen et al. (2017) sur les fossiles d’angiospermes plus anciens que le Crétacé ?',
+              answer: 'Qu’aucun reste d’angiosperme avéré n’a encore été décrit dans des roches plus anciennes que le Crétacé inférieur, même si une origine plus ancienne reste possible.'
+            }
+          ],
+          sources: [
+            { title: 'Hochuli & Feist-Burkhardt (2013) — Angiosperm-like pollen and Afropollis from the Middle Triassic of Switzerland, Frontiers in Plant Science', url: 'https://www.frontiersin.org/articles/10.3389/fpls.2013.00344/pdf' },
+            { title: 'Coiro, Doyle & Hilton (2019) — How deep is the conflict between molecular and fossil evidence on the age of angiosperms? New Phytologist', url: 'https://research.birmingham.ac.uk/en/publications/how-deep-is-the-conflict-between-molecular-and-fossil-evidence-on' },
+            { title: 'Herendeen, Friis, Pedersen & Crane (2017) — The fossil record of angiosperms, Nature Plants', url: 'https://geo.au.dk/fileadmin/www.geo.au.dk/nyheder/2017/2017_Herendeen_et_al_Nature_Plants.pdf' },
+            { title: 'Friis et al. (2010) — Cretaceous angiosperm flowers: innovation and evolution, Philosophical Transactions B', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2838257' },
+            { title: 'Guinness World Records — Earliest angiosperm', url: 'https://www.guinnessworldrecords.com/world-records/720788-earliest-angiosperm' },
+            { title: 'Bao et al. (2019) — Pollination of Cretaceous flowers, PNAS', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6900596/' }
+          ]
+        }
+      },
+      {
+        id: 'premieres-fleurs-du-cretace',
+        title: 'Les premières fleurs fossiles du Crétacé : Archaefructus, Montsechia et les autres',
+        field: 'Paléobotanique · Crétacé inférieur · Environ 130 à 115 millions d’années',
+        summary: 'Découvrir les plus anciennes plantes à fleurs entières connues, souvent aquatiques et discrètes, et ce qu’elles disent des premiers habitats des angiospermes.',
+        lesson: {
+          sections: [
+            'Archaefructus, de la province de Liaoning (nord-est de la Chine), est une plante aquatique d’environ 125 millions d’années (Crétacé inférieur). On pense qu’elle vivait dans des eaux peu profondes et claires, avec fleurs et graines dressées au-dessus de la surface. Décrit en 1998 dans Science par Sun et ses collègues, puis rattaché à une nouvelle famille basale d’angiospermes (Archaefructaceae) en 2002, le fossile avait d’abord été attribué au Jurassique supérieur avant d’être rajeuni au Crétacé inférieur.',
+            'Montsechia vidalii est un fossile d’eau douce connu depuis plus d’un siècle dans les massifs du Montsec (Pyrénées) et de la chaîne Ibérique, en Espagne. En 2015, Bernard Gomez, David Dilcher et leurs collègues ont étudié plus de mille spécimens et conclu que c’est une angiosperme aquatique immergée, proche du genre actuel Ceratophyllum (le cératophylle), datée du Barrémien, entre 130 et 125 millions d’années. De petites fleurs, chacune portant une graine, naissaient de ses feuilles ; elle n’avait pas de pétales. Longtemps classée parmi d’autres groupes, y compris les conifères, elle est contemporaine d’Archaefructus, voire plus ancienne.',
+            'Archaefructus et Montsechia suggèrent que des plantes aquatiques étaient localement communes très tôt dans l’histoire des angiospermes, et que les milieux aquatiques ont peut-être joué un rôle important dans leurs premières diversifications. Cette interprétation remet en question l’idée d’un premier développement en forêt sombre, mais elle ne signifie pas que toutes les premières angiospermes étaient aquatiques.',
+            'D’autres fleurs du Crétacé inférieur ont été trouvées ailleurs. Potomacapnos apeleutheron, exhumée en Virginie (États-Unis), date de 115 à 125 millions d’années et compte parmi les plus anciennes fleurs connues d’Amérique du Nord. Friis, Crane, Pedersen et leurs collègues montrent que les mésofossiles de fleurs du Crétacé inférieur révèlent une diversité « cryptique », jusque-là méconnue, parmi les toutes premières angiospermes, ainsi qu’une diversification progressive et ordonnée.'
+          ],
+          example: {
+            statement: 'Montsechia est datée du Barrémien, de 130 à 125 millions d’années, et Archaefructus d’environ 125 millions d’années. Peut-on dire laquelle est la plus ancienne ?',
+            calculation: 'On compare : la plus ancienne borne de Montsechia (130) dépasse l’âge d’Archaefructus (125), mais la fourchette de Montsechia inclut aussi 125.',
+            answer: 'Pas de façon certaine. Montsechia est au moins contemporaine d’Archaefructus et peut-être un peu plus ancienne, d’après Gomez et al. (2015).'
+          },
+          exercise: {
+            question: 'Pourquoi n’est-il pas évident, à première vue, que Montsechia soit une plante à fleurs ?',
+            answer: 'Parce qu’elle est aquatique, immergée, sans pétales, et qu’elle ressemble au cératophylle ; il a fallu étudier plus de mille spécimens pour montrer qu’elle portait des graines enfermées.'
+          },
+          exercises: [
+            {
+              question: 'Où a été trouvé Archaefructus et quel âge lui attribue-t-on ?',
+              answer: 'Dans la province de Liaoning, en Chine, avec un âge d’environ 125 millions d’années (Crétacé inférieur).'
+            },
+            {
+              question: 'Quel fossile d’Amérique du Nord compte parmi les plus anciennes fleurs connues ?',
+              answer: 'Potomacapnos apeleutheron, de Virginie, datée de 115 à 125 millions d’années.'
+            },
+            {
+              question: 'Que suggèrent Archaefructus et Montsechia sur les habitats des premières angiospermes ?',
+              answer: 'Que des plantes aquatiques étaient localement communes très tôt et que les milieux aquatiques ont pu jouer un rôle dans les premières diversifications.'
+            }
+          ],
+          sources: [
+            { title: 'Gomez et al. (2015) — Montsechia, an ancient aquatic angiosperm, PNAS', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4568254' },
+            { title: 'Les (2015) — Water from the rock: ancient aquatic angiosperms flow from the fossil record, PNAS', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4568265' },
+            { title: 'Indiana University — IU paleobotanist identifies what could be the mythical « first flower »', url: 'https://archive.news.indiana.edu/releases/iu/2015/08/first-flower-angiosperms.shtml' },
+            { title: 'Smithsonian Magazine — Oldest known flowers in the world', url: 'https://www.smithsonianmag.com/science-nature/oldest-known-flowers-world-180956962/' },
+            { title: 'Guinness World Records — Earliest angiosperm', url: 'https://www.guinnessworldrecords.com/world-records/720788-earliest-angiosperm' },
+            { title: 'Friis et al. (2010) — Cretaceous angiosperm flowers: innovation and evolution, Philosophical Transactions B', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2838257' },
+            { title: 'Taxacom (2022) — fil de discussion sur les angiospermes les plus anciennes (historique d’Archaefructus)', url: 'https://lists.ku.edu/pipermail/taxacom/2022-June/136103.html' }
+          ]
+        }
+      },
+      {
+        id: 'fleurs-du-jurassique-et-horloge-moleculaire',
+        title: 'Des fleurs avant le Crétacé ? Fossiles du Jurassique et horloge moléculaire',
+        field: 'Paléobotanique et phylogénie · Trias et Jurassique · Débat sur l’âge d’origine',
+        summary: 'Comprendre pourquoi des fossiles du Jurassique sont contestés et pourquoi les analyses génétiques proposent des âges bien plus anciens que le registre fossile.',
+        lesson: {
+          sections: [
+            'En 2018, Qiang Fu et ses collègues ont décrit dans eLife Nanjinganthus dendrostyla, un fossile du Jurassique inférieur (formation de South Xiangshan, près de Nankin, en Chine), à partir de 264 spécimens correspondant à 198 fleurs sur 34 dalles. Daté de plus de 174 millions d’années, selon les auteurs, il devancerait d’environ 50 millions d’années la plus ancienne fleur « vraie » connue avant lui ; ils y voient des ovules enfermés dans un ovaire et des pièces florales semblables à des pétales et des sépales.',
+            'Cette interprétation est discutée. David Taylor et Hongqi Li (2018) ont comparé le fossile aux caractères attendus d’une angiosperme ancestrale et jugent qu’il leur ressemble beaucoup, tout en demandant une analyse phylogénétique. En revanche, Coiro, Doyle et Hilton (2019) estiment que les fossiles sont plus cohérents avec un conifère, et Sokoloff et ses collègues (2019) soulignent l’absence de pentamérie, un caractère propre aux angiospermes. Dans la région de l’ovaire, la conservation du fossile est médiocre.',
+            'Plus récemment, Florigerminis jurassica, décrite en 2022 par Cui et ses collègues à partir de la formation de Jiulongshan (Mongolie-Intérieure, Jurassique moyen à supérieur, environ 164 millions d’années), a été présentée comme la plus ancienne angiosperme connue. À la date de ces sources, ce travail était trop récent pour avoir été évalué par d’autres études ; son statut doit donc être vérifié dans la littérature récente.',
+            'Les analyses statistiques du registre fossile sont elles aussi divisées. Silvestro et ses collègues (Nature Ecology & Evolution, 2021) soutiennent une origine antérieure au Crétacé ; Budd, Mann, Doyle, Coiro et Hilton (préprint, 2021) contestent leur méthode et jugent leurs résultats compatibles avec une origine crétacée. Ces échanges illustrent à quel point l’identification des fossiles pèse sur les résultats.',
+            'Les horloges moléculaires, elles, donnent des âges nettement plus anciens. Coiro et al. (2019) notent que les analyses moléculaires retrouvent de façon constante des âges antérieurs au Crétacé pour le groupe couronne des angiospermes (Trias ou Jurassique) ; on parle parfois de « Jurassic gap ». Barba-Montoya et al. (2018), avec 83 gènes, 644 taxons et 52 calibrations fossiles, concluent que l’échelle de temps est bien moins certaine qu’on ne le pensait et rejettent une origine postérieure au Jurassique. Sauquet, Ramírez-Barahona et Magallón (préprint) proposent de décrire l’âge des angiospermes comme inconnu, entre 140 et 270 millions d’années, et distinguent âge de la lignée, âge morphologique et âge du groupe couronne.'
+          ],
+          example: {
+            statement: 'Les estimations moléculaires récentes de l’âge des angiospermes s’étendent de 140 à 270 millions d’années, et les premiers pollens largement acceptés datent d’environ 134 millions d’années. Quel écart maximal sépare les deux ?',
+            calculation: 'On soustrait l’âge des pollens de la borne la plus ancienne de l’estimation : 270 − 134 = 136 ; pour la borne la plus récente, 140 − 134 = 6.',
+            answer: 'L’écart va d’environ 6 à 136 millions d’années. La grande amplitude de la fourchette montre l’incertitude des datations génétiques.'
+          },
+          exercise: {
+            question: 'Pourquoi l’interprétation de Nanjinganthus comme angiosperme est-elle contestée ?',
+            answer: 'Parce que certains auteurs jugent les fossiles plus cohérents avec un conifère (Coiro et al., 2019), relèvent l’absence de pentamérie (Sokoloff et al., 2019) et que la conservation de la zone de l’ovaire est médiocre.'
+          },
+          exercises: [
+            {
+              question: 'Quel âge les auteurs de Nanjinganthus lui attribuent-ils ?',
+              answer: 'Plus de 174 millions d’années, au Jurassique inférieur.'
+            },
+            {
+              question: 'Qu’appelle-t-on parfois le « Jurassic gap » ?',
+              answer: 'Le décalage entre les âges d’origine des angiospermes déduits des horloges moléculaires, souvent antérieurs au Crétacé, et le registre fossile, qui commence au Crétacé inférieur.'
+            },
+            {
+              question: 'Pourquoi le statut de Florigerminis jurassica doit-il être vérifié ?',
+              answer: 'Parce que, lors de sa description en 2022, ce fossile était trop récent pour avoir été évalué par d’autres études ; il faut consulter la littérature plus récente.'
+            }
+          ],
+          sources: [
+            { title: 'Fu et al. (2018) — An unexpected noncarpellate epigynous flower from the Jurassic of China, eLife', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6298773' },
+            { title: 'Taylor & Li (2018) — Did flowering plants exist in the Jurassic period? eLife', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6298766/' },
+            { title: 'Wikipedia — Nanjinganthus (critiques de Coiro et al. 2019 et Sokoloff et al. 2019)', url: 'https://wikipedia.com/wiki/Nanjinganthus' },
+            { title: 'Taxacom (2022) — Early angiosperm fossils: Archaefructus, Nanjinganthus, Florigerminis, Montsechia', url: 'https://lists.ku.edu/pipermail/taxacom/2022-June/136103.html' },
+            { title: 'Budd et al. (2021) — Fossil data do not support a long pre-Cretaceous history of flowering plants, bioRxiv (préprint)', url: 'https://www.biorxiv.org/content/10.1101/2021.02.16.431478v1' },
+            { title: 'Barba-Montoya et al. (2018) — Constraining uncertainty in the timescale of angiosperm evolution, New Phytologist', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6055841/' },
+            { title: 'Sauquet, Ramírez-Barahona & Magallón — What is the age of flowering plants? (préprint)', url: 'https://ecoevorxiv.org/n4v6b' },
+            { title: 'Coiro, Doyle & Hilton (2019) — How deep is the conflict between molecular and fossil evidence on the age of angiosperms? New Phytologist', url: 'https://research.birmingham.ac.uk/en/publications/how-deep-is-the-conflict-between-molecular-and-fossil-evidence-on' }
+          ]
+        }
+      },
+      {
+        id: 'fleur-ancestrale-et-amborella',
+        title: 'À quoi ressemblait la première fleur ? Amborella et la fleur ancestrale',
+        field: 'Botanique évolutive · Phylogénie des angiospermes · Fleur de l’ancêtre commun des angiospermes actuelles',
+        summary: 'Comprendre comment les botanistes reconstituent la fleur ancestrale à partir des plantes actuelles les plus anciennes, avec leurs résultats et leurs limites.',
+        lesson: {
+          sections: [
+            'Parmi les angiospermes vivantes, une seule espèce forme la lignée sœur de toutes les autres : Amborella trichopoda, un arbuste du sous-bois endémique de Nouvelle-Calédonie. Le séquençage de son génome, publié dans Science en 2013, appuie fortement ce résultat et a révélé une ancienne duplication complète du génome survenue avant la diversification des angiospermes. Les lignées voisines, comme les nénuphars (Nymphaeales), font partie des groupes parfois rassemblés sous les sigles ANITA ou ANA, qui désignent les lignées les plus anciennes ; la place exacte d’Amborella seule ou avec les Nymphaeales fait l’objet de variantes d’analyse.',
+            'En 2017, Hervé Sauquet, Jürg Schönenberger et leurs collègues ont publié dans Nature Communications une reconstitution fondée sur des modèles, à partir du plus grand jeu de données de caractères floraux jamais assemblé. Ils reconstituent la fleur du dernier ancêtre commun des angiospermes actuelles comme bisexuée et à symétrie radiale, avec plus de deux verticilles de trois pièces de périanthe séparées (tépales non différenciés), plus de deux verticilles de trois étamines séparées et plus de cinq carpelles séparés, disposés en spirale.',
+            'Ce résultat implique que toutes les fleurs actuelles, y compris celles des lignées les plus anciennes comme Amborella et les Nymphaeales, sont dérivées sur plusieurs points. La reconstitution montre notamment que la fleur ancestrale était bisexuée, et que les fleurs unisexuées, dont celles d’Amborella, sont apparues de nombreuses fois indépendamment. Les conclusions sont généralement robustes selon la méthode, la phylogénie et les dates choisies.',
+            'Il faut toutefois lire ces résultats avec prudence : seuls certains états sont reconstruits avec une grande confiance et cohérence (périanthe présent, non différencié et à symétrie radiale), tandis que d’autres doivent être interprétés avec précaution. De plus, il s’agit de la fleur de l’ancêtre commun des angiospermes actuelles, qui n’est pas nécessairement celle du plus ancien fossile connu. Taylor et Li (2018) ont d’ailleurs utilisé ce type de prédictions comme grille de lecture pour juger Nanjinganthus : 23 des 29 caractères conservés (79 %) correspondaient au modèle d’Endress et Doyle, et 6 des 13 (46 %) à celui de Sauquet et al.'
+          ],
+          example: {
+            statement: 'Selon Sauquet et al. (2017), la fleur ancestrale avait plus de cinq carpelles séparés. Quel est le nombre minimal de carpelles ?',
+            calculation: '« Plus de cinq » signifie strictement supérieur à 5, donc 6 ou davantage.',
+            answer: 'Au moins six carpelles, disposés en spirale selon la reconstitution.'
+          },
+          exercise: {
+            question: 'Pourquoi Amborella trichopoda est-elle si importante pour comprendre l’origine des angiospermes ?',
+            answer: 'Parce que c’est la seule espèce vivante de la lignée sœur de toutes les autres angiospermes actuelles : elle permet d’inférer le contenu génétique et la structure du génome de leur ancêtre commun.'
+          },
+          exercises: [
+            {
+              question: 'Où vit Amborella trichopoda ?',
+              answer: 'En Nouvelle-Calédonie, où c’est un arbuste du sous-bois endémique.'
+            },
+            {
+              question: 'La fleur ancestrale reconstituée par Sauquet et al. était-elle unisexuée ou bisexuée ?',
+              answer: 'Bisexuée ; les fleurs unisexuées sont apparues de nombreuses fois indépendamment.'
+            },
+            {
+              question: 'La fleur ancestrale reconstituée est-elle forcément celle du plus ancien fossile connu ?',
+              answer: 'Non : c’est la fleur du dernier ancêtre commun des angiospermes actuelles, déduite des plantes vivantes et de modèles.'
+            }
+          ],
+          sources: [
+            { title: 'Amborella Genome Project (2013) — The Amborella genome and the evolution of flowering plants, Science', url: 'https://pubmed.ncbi.nlm.nih.gov/24357323/' },
+            { title: 'Sauquet et al. (2017) — The ancestral flower of angiosperms and its early diversification, Nature Communications', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5543309' },
+            { title: 'Sauquet et al. (2017) — The ancestral flower of angiosperms (résumé, Royal Holloway)', url: 'https://pure.royalholloway.ac.uk/en/publications/the-ancestral-flower-of-angiosperms-and-its-early-diversification/' },
+            { title: 'Taylor & Li (2018) — Did flowering plants exist in the Jurassic period? eLife', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6298766/' },
+            { title: 'Gomez et al. (2015) — Montsechia, an ancient aquatic angiosperm (mention des angiospermes ANITA)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4568254' }
+          ]
+        }
+      },
+      {
+        id: 'essor-des-angiospermes-au-cretace',
+        title: 'L’essor des plantes à fleurs au Crétacé et le rôle des insectes',
+        field: 'Paléobotanique · Crétacé · Environ 134 à 66 millions d’années',
+        summary: 'Comprendre comment les angiospermes sont passées de pollens rares à une flore diversifiée et dominante, étape par étape, et comment les insectes y participent.',
+        lesson: {
+          sections: [
+            'Wing et Boucher (1998) résument le scénario classique : les plus anciens fossiles de plantes à fleurs sont de rares grains de pollen peu diversifiés du Crétacé inférieur (Valanginien-Hauterivien) ; les angiospermes se diversifient lentement au Barrémien-Aptien, puis rapidement à l’Albien-Cénomanien. À la fin du Crétacé, au moins la moitié des ordres actuels sont présents et les angiospermes représentent plus de 70 % des espèces de plantes terrestres.',
+            'Cependant, rapide diversification ne veut pas dire domination immédiate. Les mêmes auteurs montrent que la plupart des angiospermes du Crétacé vivaient dans des milieux instables, étaient des herbes ou de petits arbres à stratégie de colonisation et formaient une lignée riche en espèces, un peu comme des « mauvaises herbes », sans bouleversement global de la végétation.',
+            'Coiffard, Gomez, Daviero-Gomez et Dilcher (2012) retracent cette montée en Europe, du Barrémien (environ 130 millions d’années) jusqu’au Campanien. Au Barrémien, les fourrés de fougères matoniacées et les bois ouverts de conifères dominaient encore les plaines inondables, les angiospermes terrestres n’étant signalées que par du pollen. À l’Aptien tardif apparaissent des angiospermes aquatiques diversifiées et des pollens de type chloranthoïde, laurale et magnoliale. À partir de l’Albien, avec le réchauffement, leur répartition s’élargit et le pollen tricolpé gagne vers les pôles ; elles remplacent peu à peu des gymnospermes et des fougères.',
+            'Pour la dominance écologique, Ding et ses collègues (2025) concluent qu’il existe un retard constant entre l’apparition d’une lignée, sa diversification et sa dominance : les angiospermes n’ont pas dominé tous les biomes en une seule étape. Après la limite Crétacé-Paléogène, elles ont restructuré les écosystèmes terrestres vers une forme moderne. Localement, la dominance a pourtant été atteinte plus tôt : une flore de la formation de Cedar Mountain (Utah), de la transition Albien-Cénomanien, est composée presque exclusivement d’angiospermes (152 spécimens identifiés sur 153).',
+            'Les insectes sont étroitement liés à cette histoire. Dès 1879, Darwin rapporte l’idée de Saporta d’un essor lié aux insectes visitant les fleurs. En 2019, Bao et ses collègues ont décrit dans l’ambre birman d’environ 99 millions d’années un coléoptère portant du pollen tricolpé d’eudicotylédones, plus ancienne preuve directe de pollinisation d’angiospermes par des insectes ; en 2021, un autre coléoptère de cet ambre a été associé à des coprolithes contenant du pollen. Barba-Montoya et al. (2018) considèrent la diversification des angiospermes compatible avec une « révolution terrestre » du Crétacé, avec des groupes qui divergent dans le Crétacé en même temps que les pollinisateurs, les herbivores et leurs prédateurs.'
+          ],
+          example: {
+            statement: 'Les premiers pollens d’angiospermes sont datés d’environ 134 millions d’années et le Crétacé se termine il y a 66 millions d’années. Quelle durée du Crétacé couvre la diversification des angiospermes, à partir de ces premiers pollens ?',
+            calculation: 'On soustrait la fin du Crétacé de la date des premiers pollens : 134 − 66 = 68.',
+            answer: 'Environ 68 millions d’années. La montée en puissance des angiospermes s’étale donc sur la plus grande partie du Crétacé, en plusieurs étapes.'
+          },
+          exercise: {
+            question: 'Pourquoi une diversification rapide ne signifie-t-elle pas forcément une domination écologique immédiate ?',
+            answer: 'Parce que, selon Wing et Boucher (1998) puis Ding et al. (2025), la plupart des angiospermes crétacées occupaient des milieux instables et la dominance écologique est venue avec un retard et par étapes, selon les biomes.'
+          },
+          exercises: [
+            {
+              question: 'À quelle période la diversification des angiospermes est-elle la plus rapide d’après Wing et Boucher (1998) ?',
+              answer: 'À l’Albien-Cénomanien, après une diversification lente au Barrémien-Aptien.'
+            },
+            {
+              question: 'Quel insecte de l’ambre birman porte la plus ancienne preuve directe de pollinisation d’angiospermes décrite en 2019 ?',
+              answer: 'Angimordella burmitina, un coléoptère de la famille des Mordellidae, daté d’environ 99 millions d’années.'
+            },
+            {
+              question: 'Que se passe-t-il après la limite Crétacé-Paléogène selon Ding et al. (2025) ?',
+              answer: 'Les angiospermes restructurent les écosystèmes terrestres vers une forme moderne.'
+            }
+          ],
+          sources: [
+            { title: 'Wing & Boucher (1998) — Ecological aspects of the Cretaceous flowering plant radiation, Annual Review of Earth and Planetary Sciences', url: 'https://repository.si.edu/bitstream/handle/10088/8818/paleo_Wing__Boucher_1998_AREPS.pdf' },
+            { title: 'Coiffard et al. (2012) — Rise to dominance of angiosperm pioneers in European Cretaceous environments, PNAS', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3529080' },
+            { title: 'Ding et al. (2025) — The stepwise rise of angiosperm-dominated terrestrial ecosystems, Biological Reviews', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12407066/' },
+            { title: 'Cedar Mountain Formation (Utah) — Albian–Cenomanian angiosperm-dominated leaf flora', url: 'https://www.cambridge.org/core/product/03B8EE5F8918C6206DDDBFEB9DDE3ACA' },
+            { title: 'Bao et al. (2019) — Pollination of Cretaceous flowers, PNAS', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6900596/' },
+            { title: 'Chinese Academy of Sciences — Amber fossil sheds light on early pollinators (Pelretes vivificus)', url: 'https://english.cas.cn/newsroom/research_news/earth/202104/t20210413_267092.shtml' },
+            { title: 'Barba-Montoya et al. (2018) — Constraining uncertainty in the timescale of angiosperm evolution, New Phytologist', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6055841/' },
+            { title: 'Darwin Correspondence Project — Lettre à J. D. Hooker, 22 juillet [1879]', url: 'https://www.darwinproject.ac.uk/view/letters/DCP-LETT-12167' }
+          ]
+        }
+      }
+    ]
+  },
+
+
 ];
 
  
