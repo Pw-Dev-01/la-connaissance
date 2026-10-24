@@ -3113,133 +3113,1014 @@
     ]
   },
   {
-    id: 'grands-physiciens',
-    title: 'Les grands physiciens',
-    note: 'Vingt-six physiciens classés par date de naissance, d’Archimède à Feynman, avec leurs contributions et leurs dates vérifiées.',
-    href: 'grands-physiciens-approfondie.html',
-    sections: [
-      {
-        anchor: 'methode-selection',
-        title: 'Comment établir une telle liste ?'
-      },
-      {
-        anchor: 'archimede',
-        title: 'Archimède — statique et hydrostatique'
-      },
-      {
-        anchor: 'ibn-al-haytham',
-        title: 'Ibn al-Haytham — l’optique expérimentale'
-      },
-      {
-        anchor: 'copernic',
-        title: 'Copernic — l’héliocentrisme'
-      },
-      {
-        anchor: 'galilee',
-        title: 'Galilée — la mécanique mesurée'
-      },
-      {
-        anchor: 'kepler',
-        title: 'Kepler — les lois planétaires'
-      },
-      {
-        anchor: 'newton',
-        title: 'Newton — mouvement et gravitation'
-      },
-      {
-        anchor: 'volta',
-        title: 'Volta — la pile électrique'
-      },
-      {
-        anchor: 'ampere',
-        title: 'Ampère — l’électrodynamique'
-      },
-      {
-        anchor: 'faraday',
-        title: 'Faraday — le champ et l’induction'
-      },
-      {
-        anchor: 'joule',
-        title: 'Joule — l’énergie et la chaleur'
-      },
-      {
-        anchor: 'maxwell',
-        title: 'Maxwell — le champ électromagnétique'
-      },
-      {
-        anchor: 'boltzmann',
-        title: 'Boltzmann — l’entropie statistique'
-      },
-      {
-        anchor: 'hertz',
-        title: 'Hertz — les ondes et l’effet photoélectrique'
-      },
-      {
-        anchor: 'planck',
-        title: 'Planck — la quantification de l’énergie'
-      },
-      {
-        anchor: 'marie-curie',
-        title: 'Marie Curie — la radioactivité'
-      },
-      {
-        anchor: 'rutherford',
-        title: 'Rutherford — le noyau atomique'
-      },
-      {
-        anchor: 'lise-meitner',
-        title: 'Lise Meitner — la fission expliquée'
-      },
-      {
-        anchor: 'einstein',
-        title: 'Einstein — quanta et relativité'
-      },
-      {
-        anchor: 'noether',
-        title: 'Noether — symétries et conservation'
-      },
-      {
-        anchor: 'bohr',
-        title: 'Bohr — la quantification de l’atome'
-      },
-      {
-        anchor: 'schrodinger',
-        title: 'Schrödinger — la mécanique ondulatoire'
-      },
-      {
-        anchor: 'lemaitre',
-        title: 'Lemaître — l’expansion de l’Univers'
-      },
-      {
-        anchor: 'fermi',
-        title: 'Fermi — le siècle nucléaire'
-      },
-      {
-        anchor: 'heisenberg',
-        title: 'Heisenberg — l’incertitude'
-      },
-      {
-        anchor: 'dirac',
-        title: 'Dirac — le positron'
-      },
-      {
-        anchor: 'feynman',
-        title: 'Feynman — les diagrammes'
-      },
-      {
-        anchor: 'tableau-chronologique',
-        title: 'Tableau chronologique'
-      },
-      {
-        anchor: 'exercices',
-        title: 'S’entraîner'
-      },
-      {
-        anchor: 'sources',
-        title: 'Sources'
+     {
+  "id": "grands-physiciens",
+  "title": "Les grands physiciens",
+  "note": "Vingt physiciens et physiciennes, classés par ordre chronologique de naissance, avec repères biographiques, apports scientifiques, équations expliquées et sources de référence.",
+  "chapters": [
+    {
+      "id": "archimede",
+      "title": "Archimède",
+      "field": "Antiquité · statique et hydrostatique",
+      "summary": "Archimède (vers 287 av. J.-C. – 212 av. J.-C.) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Mathématicien et ingénieur grec de Syracuse, Archimède étudie les leviers, les centres de gravité et les corps flottants. Les récits antiques mêlent faits et légendes ; le principe hydrostatique et ses travaux géométriques sont solidement associés à son œuvre.",
+          "Découverte et portée — Son apport majeur est le principe d’Archimède : un corps immergé subit une poussée verticale vers le haut égale au poids du fluide déplacé. Il a aussi établi des résultats fondamentaux sur le levier et les volumes, en utilisant des raisonnements géométriques remarquablement proches de méthodes intégrales.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "PRINCIPE D’ARCHIMÈDE",
+          "text": "F꜀ = ρ V g"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : F꜀ = ρ V g.",
+          "calculation": "Un objet déplace 0,002 m³ d’eau de masse volumique 1 000 kg·m⁻³ ; avec g = 9,81 m·s⁻², la poussée vaut 19,62 N.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « F꜀ = ρ V g » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "F꜀ : poussée du fluide (N) ; ρ : masse volumique du fluide (kg·m⁻³) ; V : volume de fluide déplacé (m³) ; g : accélération de la pesanteur (m·s⁻²)."
+        },
+        "equationDetails": [
+          {
+            "title": "Principe d’Archimède",
+            "formula": "F꜀ = ρ V g",
+            "explanation": "Son apport majeur est le principe d’Archimède : un corps immergé subit une poussée verticale vers le haut égale au poids du fluide déplacé. Il a aussi établi des résultats fondamentaux sur le levier et les volumes, en utilisant des raisonnements géométriques remarquablement proches de méthodes intégrales.",
+            "parameters": "F꜀ : poussée du fluide (N) ; ρ : masse volumique du fluide (kg·m⁻³) ; V : volume de fluide déplacé (m³) ; g : accélération de la pesanteur (m·s⁻²).",
+            "example": "Un objet déplace 0,002 m³ d’eau de masse volumique 1 000 kg·m⁻³ ; avec g = 9,81 m·s⁻², la poussée vaut 19,62 N.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Archimède ou notion associée",
+            "url": "https://www.britannica.com/biography/Archimedes"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
       }
-    ]
-  },
+    },
+    {
+      "id": "galilee",
+      "title": "Galilée",
+      "field": "Révolution scientifique · mécanique et astronomie",
+      "summary": "Galilée (1564–1642) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Galilée, savant italien, associe observation instrumentale, expérimentation et mathématisation. Avec la lunette astronomique, il observe notamment les satellites de Jupiter, les phases de Vénus et le relief lunaire, résultats qui fragilisent la cosmologie géocentrique traditionnelle.",
+          "Découverte et portée — En mécanique, ses études du plan incliné et de la chute des corps contribuent à établir que, dans le modèle idéal sans résistance de l’air, les corps ont la même accélération de chute. Il défend une description quantitative des phénomènes plutôt que l’autorité seule des textes.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "RELATION VITESSE-DÉPLACEMENT À ACCÉLÉRATION CONSTANTE",
+          "text": "v² = v₀² + 2 a Δx"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : v² = v₀² + 2 a Δx.",
+          "calculation": "Depuis le repos, pour a = 2 m·s⁻² et Δx = 5 m, v² = 20, donc v ≈ 4,47 m·s⁻¹.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « v² = v₀² + 2 a Δx » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "v : vitesse finale (m·s⁻¹) ; v₀ : vitesse initiale (m·s⁻¹) ; a : accélération constante (m·s⁻²) ; Δx : déplacement (m)."
+        },
+        "equationDetails": [
+          {
+            "title": "Relation vitesse-déplacement à accélération constante",
+            "formula": "v² = v₀² + 2 a Δx",
+            "explanation": "En mécanique, ses études du plan incliné et de la chute des corps contribuent à établir que, dans le modèle idéal sans résistance de l’air, les corps ont la même accélération de chute. Il défend une description quantitative des phénomènes plutôt que l’autorité seule des textes.",
+            "parameters": "v : vitesse finale (m·s⁻¹) ; v₀ : vitesse initiale (m·s⁻¹) ; a : accélération constante (m·s⁻²) ; Δx : déplacement (m).",
+            "example": "Depuis le repos, pour a = 2 m·s⁻² et Δx = 5 m, v² = 20, donc v ≈ 4,47 m·s⁻¹.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Galilée ou notion associée",
+            "url": "https://www.britannica.com/biography/Galileo-Galilei"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kepler",
+      "title": "Johannes Kepler",
+      "field": "Astronomie · lois planétaires",
+      "summary": "Johannes Kepler (1571–1630) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — L’astronome allemand Johannes Kepler exploite les observations très précises de Tycho Brahe. Il rompt avec l’idée que les orbites planétaires doivent être des cercles parfaits et formule trois lois décrivant le mouvement des planètes autour du Soleil.",
+          "Découverte et portée — Sa première loi établit que les orbites sont elliptiques, le Soleil occupant l’un des foyers. Sa troisième loi relie la période orbitale au demi-grand axe. Ces lois empiriques deviendront un socle que la gravitation newtonienne expliquera ensuite.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "TROISIÈME LOI DE KEPLER",
+          "text": "T² ∝ a³"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : T² ∝ a³.",
+          "calculation": "Si le demi-grand axe d’une orbite est multiplié par 2, sa période est multipliée par 2^(3/2), soit environ 2,83.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « T² ∝ a³ » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "T : période orbitale (s) ; a : demi-grand axe de l’orbite (m). Pour des corps orbitant le même astre, T²/a³ est constant dans l’approximation képlérienne."
+        },
+        "equationDetails": [
+          {
+            "title": "Troisième loi de Kepler",
+            "formula": "T² ∝ a³",
+            "explanation": "Sa première loi établit que les orbites sont elliptiques, le Soleil occupant l’un des foyers. Sa troisième loi relie la période orbitale au demi-grand axe. Ces lois empiriques deviendront un socle que la gravitation newtonienne expliquera ensuite.",
+            "parameters": "T : période orbitale (s) ; a : demi-grand axe de l’orbite (m). Pour des corps orbitant le même astre, T²/a³ est constant dans l’approximation képlérienne.",
+            "example": "Si le demi-grand axe d’une orbite est multiplié par 2, sa période est multipliée par 2^(3/2), soit environ 2,83.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Johannes Kepler ou notion associée",
+            "url": "https://www.britannica.com/biography/Johannes-Kepler"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "newton",
+      "title": "Isaac Newton",
+      "field": "Physique classique · dynamique et gravitation",
+      "summary": "Isaac Newton (1643–1727) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Mathématicien et physicien anglais, Newton unifie dans les Principia (1687) les phénomènes terrestres et célestes au moyen de lois mathématiques. Il développe également, indépendamment de Leibniz, les méthodes du calcul infinitésimal.",
+          "Découverte et portée — La loi de la gravitation universelle décrit l’attraction entre masses, tandis que ses lois du mouvement donnent le cadre de la dynamique classique. Elles expliquent notamment pourquoi les lois de Kepler fonctionnent. Ce cadre reste extrêmement précis à faibles vitesses et dans des champs gravitationnels modérés.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "GRAVITATION UNIVERSELLE",
+          "text": "F = G m₁ m₂ / r²"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : F = G m₁ m₂ / r².",
+          "calculation": "Si la distance entre deux masses est doublée, la force gravitationnelle est divisée par 4, toutes choses égales par ailleurs.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « F = G m₁ m₂ / r² » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "F : intensité de la force gravitationnelle (N) ; G : constante gravitationnelle (m³·kg⁻¹·s⁻²) ; m₁ et m₂ : masses (kg) ; r : distance entre leurs centres (m)."
+        },
+        "equationDetails": [
+          {
+            "title": "Gravitation universelle",
+            "formula": "F = G m₁ m₂ / r²",
+            "explanation": "La loi de la gravitation universelle décrit l’attraction entre masses, tandis que ses lois du mouvement donnent le cadre de la dynamique classique. Elles expliquent notamment pourquoi les lois de Kepler fonctionnent. Ce cadre reste extrêmement précis à faibles vitesses et dans des champs gravitationnels modérés.",
+            "parameters": "F : intensité de la force gravitationnelle (N) ; G : constante gravitationnelle (m³·kg⁻¹·s⁻²) ; m₁ et m₂ : masses (kg) ; r : distance entre leurs centres (m).",
+            "example": "Si la distance entre deux masses est doublée, la force gravitationnelle est divisée par 4, toutes choses égales par ailleurs.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Isaac Newton ou notion associée",
+            "url": "https://www.britannica.com/biography/Isaac-Newton"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bernoulli",
+      "title": "Daniel Bernoulli",
+      "field": "Mécanique des fluides · énergie",
+      "summary": "Daniel Bernoulli (1700–1782) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Daniel Bernoulli, mathématicien et médecin suisse issu d’une famille de savants, publie Hydrodynamica en 1738. Il contribue à relier la vitesse d’un fluide à la pression et à l’altitude dans les écoulements idéalisés.",
+          "Découverte et portée — L’équation de Bernoulli exprime une conservation de l’énergie mécanique par unité de volume le long d’une ligne de courant pour un écoulement stationnaire, incompressible et non visqueux. Elle ne s’applique pas sans précaution aux écoulements turbulents, visqueux ou avec apport de travail.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "ÉQUATION DE BERNOULLI",
+          "text": "p + ½ρv² + ρgh = constante"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : p + ½ρv² + ρgh = constante.",
+          "calculation": "À altitude égale, si la vitesse augmente dans les conditions du modèle, le terme de pression statique diminue.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « p + ½ρv² + ρgh = constante » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "p : pression (Pa) ; ρ : masse volumique (kg·m⁻³) ; v : vitesse du fluide (m·s⁻¹) ; g : accélération de la pesanteur (m·s⁻²) ; h : altitude (m)."
+        },
+        "equationDetails": [
+          {
+            "title": "Équation de Bernoulli",
+            "formula": "p + ½ρv² + ρgh = constante",
+            "explanation": "L’équation de Bernoulli exprime une conservation de l’énergie mécanique par unité de volume le long d’une ligne de courant pour un écoulement stationnaire, incompressible et non visqueux. Elle ne s’applique pas sans précaution aux écoulements turbulents, visqueux ou avec apport de travail.",
+            "parameters": "p : pression (Pa) ; ρ : masse volumique (kg·m⁻³) ; v : vitesse du fluide (m·s⁻¹) ; g : accélération de la pesanteur (m·s⁻²) ; h : altitude (m).",
+            "example": "À altitude égale, si la vitesse augmente dans les conditions du modèle, le terme de pression statique diminue.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Daniel Bernoulli ou notion associée",
+            "url": "https://www.britannica.com/biography/Daniel-Bernoulli"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "faraday",
+      "title": "Michael Faraday",
+      "field": "Électromagnétisme · induction",
+      "summary": "Michael Faraday (1791–1867) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Michael Faraday, physicien et chimiste anglais issu d’un milieu modeste, se forme largement par la lecture et l’expérience. Ses recherches expérimentales établissent le lien entre magnétisme et électricité et conduisent à des dispositifs essentiels aux moteurs et générateurs.",
+          "Découverte et portée — La loi d’induction de Faraday-Lenz exprime qu’une variation du flux magnétique à travers un circuit induit une force électromotrice. Le signe négatif encode la loi de Lenz : l’effet induit s’oppose à la variation du flux qui le produit.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "LOI DE FARADAY-LENZ",
+          "text": "ℰ = − dΦB/dt"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : ℰ = − dΦB/dt.",
+          "calculation": "Si le flux à travers une spire augmente de 0,02 Wb en 0,1 s de façon uniforme, ℰ = −0,2 V.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « ℰ = − dΦB/dt » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "ℰ : force électromotrice induite (V) ; ΦB : flux magnétique (Wb) ; t : temps (s). Pour une bobine de N spires, ℰ = −N dΦB/dt."
+        },
+        "equationDetails": [
+          {
+            "title": "Loi de Faraday-Lenz",
+            "formula": "ℰ = − dΦB/dt",
+            "explanation": "La loi d’induction de Faraday-Lenz exprime qu’une variation du flux magnétique à travers un circuit induit une force électromotrice. Le signe négatif encode la loi de Lenz : l’effet induit s’oppose à la variation du flux qui le produit.",
+            "parameters": "ℰ : force électromotrice induite (V) ; ΦB : flux magnétique (Wb) ; t : temps (s). Pour une bobine de N spires, ℰ = −N dΦB/dt.",
+            "example": "Si le flux à travers une spire augmente de 0,02 Wb en 0,1 s de façon uniforme, ℰ = −0,2 V.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Michael Faraday ou notion associée",
+            "url": "https://www.britannica.com/biography/Michael-Faraday"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "carnot",
+      "title": "Sadi Carnot",
+      "field": "Thermodynamique · moteurs thermiques",
+      "summary": "Sadi Carnot (1796–1832) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Ingénieur français, Sadi Carnot publie en 1824 ses Réflexions sur la puissance motrice du feu. Bien que son travail soit peu reconnu de son vivant, il pose des bases conceptuelles de la thermodynamique en examinant ce qui limite l’efficacité des moteurs thermiques.",
+          "Découverte et portée — Le cycle idéal qui porte son nom montre qu’aucun moteur fonctionnant entre deux réservoirs thermiques ne peut dépasser le rendement d’un moteur réversible entre ces mêmes températures. La relation est une limite théorique, non la performance d’un moteur réel.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "RENDEMENT MAXIMAL DE CARNOT",
+          "text": "η = 1 − T₍froid₎ / T₍chaud₎"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : η = 1 − T₍froid₎ / T₍chaud₎.",
+          "calculation": "Entre 300 K et 600 K, le rendement maximal théorique est η = 1 − 300/600 = 0,50, soit 50 %.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « η = 1 − T₍froid₎ / T₍chaud₎ » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "η : rendement thermique maximal (sans unité) ; T₍froid₎ : température absolue du réservoir froid (K) ; T₍chaud₎ : température absolue du réservoir chaud (K), avec T₍chaud₎ > T₍froid₎."
+        },
+        "equationDetails": [
+          {
+            "title": "Rendement maximal de Carnot",
+            "formula": "η = 1 − T₍froid₎ / T₍chaud₎",
+            "explanation": "Le cycle idéal qui porte son nom montre qu’aucun moteur fonctionnant entre deux réservoirs thermiques ne peut dépasser le rendement d’un moteur réversible entre ces mêmes températures. La relation est une limite théorique, non la performance d’un moteur réel.",
+            "parameters": "η : rendement thermique maximal (sans unité) ; T₍froid₎ : température absolue du réservoir froid (K) ; T₍chaud₎ : température absolue du réservoir chaud (K), avec T₍chaud₎ > T₍froid₎.",
+            "example": "Entre 300 K et 600 K, le rendement maximal théorique est η = 1 − 300/600 = 0,50, soit 50 %.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Sadi Carnot ou notion associée",
+            "url": "https://www.britannica.com/science/Carnot-cycle"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maxwell",
+      "title": "James Clerk Maxwell",
+      "field": "Électromagnétisme · théorie des champs",
+      "summary": "James Clerk Maxwell (1831–1879) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Le physicien écossais Maxwell donne une formulation mathématique unifiée de l’électricité, du magnétisme et de l’optique. Il s’appuie notamment sur les expériences de Faraday et introduit le courant de déplacement dans sa théorie électromagnétique.",
+          "Découverte et portée — Les équations de Maxwell prédisent des ondes électromagnétiques se propageant dans le vide à la vitesse c, identifiée à celle de la lumière. Cette conclusion établit que la lumière est une onde électromagnétique et prépare les technologies radio, radar et télécommunications.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "VITESSE DES ONDES ÉLECTROMAGNÉTIQUES DANS LE VIDE",
+          "text": "c = 1 / √(μ₀ ε₀)"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : c = 1 / √(μ₀ ε₀).",
+          "calculation": "La valeur mesurée de c est exactement 299 792 458 m·s⁻¹ dans le SI ; la relation relie cette vitesse aux constantes électromagnétiques.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « c = 1 / √(μ₀ ε₀) » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "c : vitesse de la lumière dans le vide (m·s⁻¹) ; μ₀ : perméabilité magnétique du vide (N·A⁻²) ; ε₀ : permittivité électrique du vide (F·m⁻¹)."
+        },
+        "equationDetails": [
+          {
+            "title": "Vitesse des ondes électromagnétiques dans le vide",
+            "formula": "c = 1 / √(μ₀ ε₀)",
+            "explanation": "Les équations de Maxwell prédisent des ondes électromagnétiques se propageant dans le vide à la vitesse c, identifiée à celle de la lumière. Cette conclusion établit que la lumière est une onde électromagnétique et prépare les technologies radio, radar et télécommunications.",
+            "parameters": "c : vitesse de la lumière dans le vide (m·s⁻¹) ; μ₀ : perméabilité magnétique du vide (N·A⁻²) ; ε₀ : permittivité électrique du vide (F·m⁻¹).",
+            "example": "La valeur mesurée de c est exactement 299 792 458 m·s⁻¹ dans le SI ; la relation relie cette vitesse aux constantes électromagnétiques.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — James Clerk Maxwell ou notion associée",
+            "url": "https://www.britannica.com/biography/James-Clerk-Maxwell"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boltzmann",
+      "title": "Ludwig Boltzmann",
+      "field": "Physique statistique · entropie",
+      "summary": "Ludwig Boltzmann (1844–1906) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Boltzmann, physicien autrichien, développe la mécanique statistique, qui relie les propriétés macroscopiques de la matière au comportement collectif de ses constituants microscopiques. Il défend l’interprétation statistique de la deuxième loi de la thermodynamique malgré de fortes controverses scientifiques.",
+          "Découverte et portée — La formule de Boltzmann relie l’entropie d’un macro-état au nombre Ω de micro-états compatibles. Elle donne une interprétation probabiliste de l’entropie et constitue un pont fondamental entre thermodynamique et physique microscopique.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "ENTROPIE DE BOLTZMANN",
+          "text": "S = kB ln Ω"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : S = kB ln Ω.",
+          "calculation": "Si le nombre de micro-états accessibles est multiplié par 2, l’entropie augmente de kB ln 2.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « S = kB ln Ω » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "S : entropie (J·K⁻¹) ; kB : constante de Boltzmann (J·K⁻¹) ; Ω : nombre de micro-états accessibles, sans unité."
+        },
+        "equationDetails": [
+          {
+            "title": "Entropie de Boltzmann",
+            "formula": "S = kB ln Ω",
+            "explanation": "La formule de Boltzmann relie l’entropie d’un macro-état au nombre Ω de micro-états compatibles. Elle donne une interprétation probabiliste de l’entropie et constitue un pont fondamental entre thermodynamique et physique microscopique.",
+            "parameters": "S : entropie (J·K⁻¹) ; kB : constante de Boltzmann (J·K⁻¹) ; Ω : nombre de micro-états accessibles, sans unité.",
+            "example": "Si le nombre de micro-états accessibles est multiplié par 2, l’entropie augmente de kB ln 2.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Ludwig Boltzmann ou notion associée",
+            "url": "https://www.britannica.com/biography/Ludwig-Boltzmann"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "planck",
+      "title": "Max Planck",
+      "field": "Physique quantique · rayonnement",
+      "summary": "Max Planck (1858–1947) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Le physicien allemand Max Planck cherche à expliquer le spectre du rayonnement du corps noir. En 1900, il introduit une quantification de l’échange d’énergie qui marque la naissance de la théorie quantique, même si l’interprétation physique des quanta se développera ensuite avec d’autres chercheurs.",
+          "Découverte et portée — La relation E = hν associe l’énergie d’un quantum à la fréquence du rayonnement. Planck reçoit le prix Nobel de physique 1918 pour sa découverte des quanta d’énergie. Cette constante devient centrale dans toute la physique quantique.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "RELATION DE PLANCK",
+          "text": "E = hν"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : E = hν.",
+          "calculation": "Pour une fréquence ν = 5,0 × 10¹⁴ Hz, E ≈ 3,31 × 10⁻¹⁹ J avec h = 6,626 070 15 × 10⁻³⁴ J·s.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « E = hν » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "E : énergie du quantum (J) ; h : constante de Planck (J·s) ; ν : fréquence (Hz ou s⁻¹)."
+        },
+        "equationDetails": [
+          {
+            "title": "Relation de Planck",
+            "formula": "E = hν",
+            "explanation": "La relation E = hν associe l’énergie d’un quantum à la fréquence du rayonnement. Planck reçoit le prix Nobel de physique 1918 pour sa découverte des quanta d’énergie. Cette constante devient centrale dans toute la physique quantique.",
+            "parameters": "E : énergie du quantum (J) ; h : constante de Planck (J·s) ; ν : fréquence (Hz ou s⁻¹).",
+            "example": "Pour une fréquence ν = 5,0 × 10¹⁴ Hz, E ≈ 3,31 × 10⁻¹⁹ J avec h = 6,626 070 15 × 10⁻³⁴ J·s.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize — notice officielle de Max Planck",
+            "url": "https://www.nobelprize.org/prizes/physics/1918/planck/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "curie",
+      "title": "Marie Curie",
+      "field": "Physique moderne · radioactivité",
+      "summary": "Marie Curie (1867–1934) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Née Maria Skłodowska à Varsovie, Marie Curie poursuit ses études à Paris. Avec Pierre Curie, elle étudie les rayonnements découverts par Henri Becquerel, identifie le polonium et le radium et contribue à faire de la radioactivité un domaine scientifique quantitatif. Elle reçoit le Nobel de physique en 1903 et celui de chimie en 1911.",
+          "Découverte et portée — Ses travaux établissent des méthodes de mesure et de séparation des substances radioactives et montrent que la radioactivité est une propriété atomique. Il serait inexact de lui attribuer seule la découverte de la radioactivité : Becquerel l’avait observée, et Pierre Curie a joué un rôle essentiel dans les recherches communes.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "LOI DE DÉCROISSANCE RADIOACTIVE",
+          "text": "N(t) = N₀ e^(−λt)"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : N(t) = N₀ e^(−λt).",
+          "calculation": "La demi-vie vaut t₁/₂ = ln 2 / λ ; après une demi-vie, il reste en moyenne la moitié des noyaux initiaux.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « N(t) = N₀ e^(−λt) » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "N(t) : nombre de noyaux non désintégrés à la date t ; N₀ : nombre initial ; λ : constante de désintégration (s⁻¹) ; t : durée (s)."
+        },
+        "equationDetails": [
+          {
+            "title": "Loi de décroissance radioactive",
+            "formula": "N(t) = N₀ e^(−λt)",
+            "explanation": "Ses travaux établissent des méthodes de mesure et de séparation des substances radioactives et montrent que la radioactivité est une propriété atomique. Il serait inexact de lui attribuer seule la découverte de la radioactivité : Becquerel l’avait observée, et Pierre Curie a joué un rôle essentiel dans les recherches communes.",
+            "parameters": "N(t) : nombre de noyaux non désintégrés à la date t ; N₀ : nombre initial ; λ : constante de désintégration (s⁻¹) ; t : durée (s).",
+            "example": "La demi-vie vaut t₁/₂ = ln 2 / λ ; après une demi-vie, il reste en moyenne la moitié des noyaux initiaux.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Marie Curie ou notion associée",
+            "url": "https://www.nobelprize.org/prizes/physics/1903/marie-curie/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rutherford",
+      "title": "Ernest Rutherford",
+      "field": "Physique nucléaire · structure atomique",
+      "summary": "Ernest Rutherford (1871–1937) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Physicien né en Nouvelle-Zélande, Rutherford mène des recherches sur la radioactivité avant de diriger les expériences de diffusion de particules alpha sur une feuille métallique avec Hans Geiger et Ernest Marsden. Les grandes déviations observées conduisent à proposer en 1911 un noyau atomique petit, dense et chargé positivement.",
+          "Découverte et portée — Le modèle nucléaire transforme la conception de l’atome : l’essentiel de sa masse et de sa charge positive est concentré dans un noyau. Il ne constitue toutefois pas un modèle complet des électrons ni de la stabilité atomique ; le modèle de Bohr puis la mécanique quantique apporteront d’autres éléments.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "ÉCHELLE DE DISTANCE DE RAPPROCHEMENT EN DIFFUSION COULOMBIENNE FRONTALE",
+          "text": "r ≈ k Z₁ Z₂ e² / E"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : r ≈ k Z₁ Z₂ e² / E.",
+          "calculation": "Cette relation illustre comment l’énergie incidente et les charges déterminent la distance d’approche ; ce n’est pas une formule générale du rayon atomique.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « r ≈ k Z₁ Z₂ e² / E » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "r : distance minimale d’approche (m) ; k = 1/(4πε₀) ; Z₁e et Z₂e : charges des particules (C) ; E : énergie cinétique incidente (J). Relation valable pour une approche frontale idéale avec énergie potentielle coulombienne."
+        },
+        "equationDetails": [
+          {
+            "title": "Échelle de distance de rapprochement en diffusion coulombienne frontale",
+            "formula": "r ≈ k Z₁ Z₂ e² / E",
+            "explanation": "Le modèle nucléaire transforme la conception de l’atome : l’essentiel de sa masse et de sa charge positive est concentré dans un noyau. Il ne constitue toutefois pas un modèle complet des électrons ni de la stabilité atomique ; le modèle de Bohr puis la mécanique quantique apporteront d’autres éléments.",
+            "parameters": "r : distance minimale d’approche (m) ; k = 1/(4πε₀) ; Z₁e et Z₂e : charges des particules (C) ; E : énergie cinétique incidente (J). Relation valable pour une approche frontale idéale avec énergie potentielle coulombienne.",
+            "example": "Cette relation illustre comment l’énergie incidente et les charges déterminent la distance d’approche ; ce n’est pas une formule générale du rayon atomique.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Ernest Rutherford ou notion associée",
+            "url": "https://www.britannica.com/biography/Ernest-Rutherford"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "einstein",
+      "title": "Albert Einstein",
+      "field": "Relativité et physique quantique",
+      "summary": "Albert Einstein (1879–1955) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Né en Allemagne, Einstein travaille à l’Office des brevets de Berne lorsqu’il publie en 1905 plusieurs articles majeurs : relativité restreinte, mouvement brownien et effet photoélectrique. Il formule la relativité générale en 1915, qui décrit la gravitation comme une manifestation de la courbure de l’espace-temps.",
+          "Découverte et portée — La relation E = mc² exprime l’équivalence entre masse et énergie au repos. Son Nobel de 1921 récompense ses travaux sur l’effet photoélectrique, et non directement la relativité. La relativité générale décrit la gravitation dans un cadre plus large que la loi de Newton, tout en retrouvant celle-ci comme approximation dans les régimes usuels.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "ÉQUIVALENCE MASSE-ÉNERGIE AU REPOS",
+          "text": "E₀ = mc²"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : E₀ = mc².",
+          "calculation": "Pour m = 1 kg, E₀ = (1 kg) × (299 792 458 m·s⁻¹)² ≈ 8,99 × 10¹⁶ J.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « E₀ = mc² » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "E₀ : énergie de repos (J) ; m : masse au repos (kg) ; c : vitesse de la lumière dans le vide (m·s⁻¹)."
+        },
+        "equationDetails": [
+          {
+            "title": "Équivalence masse-énergie au repos",
+            "formula": "E₀ = mc²",
+            "explanation": "La relation E = mc² exprime l’équivalence entre masse et énergie au repos. Son Nobel de 1921 récompense ses travaux sur l’effet photoélectrique, et non directement la relativité. La relativité générale décrit la gravitation dans un cadre plus large que la loi de Newton, tout en retrouvant celle-ci comme approximation dans les régimes usuels.",
+            "parameters": "E₀ : énergie de repos (J) ; m : masse au repos (kg) ; c : vitesse de la lumière dans le vide (m·s⁻¹).",
+            "example": "Pour m = 1 kg, E₀ = (1 kg) × (299 792 458 m·s⁻¹)² ≈ 8,99 × 10¹⁶ J.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize — notice officielle de Albert Einstein",
+            "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "noether",
+      "title": "Emmy Noether",
+      "field": "Mathématiques et physique théorique · symétries",
+      "summary": "Emmy Noether (1882–1935) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Emmy Noether, mathématicienne allemande, apporte des contributions fondamentales à l’algèbre abstraite et à la physique mathématique. Son théorème de 1918 relie les symétries continues de l’action aux lois de conservation dans les théories lagrangiennes.",
+          "Découverte et portée — Le théorème de Noether explique en un principe unificateur pourquoi certaines grandeurs se conservent : l’invariance par translation temporelle est associée à l’énergie, l’invariance par translation spatiale à la quantité de mouvement, et l’invariance par rotation au moment cinétique. Il s’agit d’un résultat structurel, non d’une équation unique applicable sans préciser le système.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "PRINCIPE VARIATIONNEL DE L’ACTION",
+          "text": "δS = 0"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : δS = 0.",
+          "calculation": "Dans un système dont les lois ne changent pas avec le temps, l’invariance temporelle conduit à la conservation de l’énergie dans le cadre lagrangien approprié.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « δS = 0 » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "S : action (J·s) ; δS : variation infinitésimale de l’action. Les trajectoires physiques rendent l’action stationnaire ; les symétries continues de l’action entraînent des quantités conservées sous les hypothèses du théorème."
+        },
+        "equationDetails": [
+          {
+            "title": "Principe variationnel de l’action",
+            "formula": "δS = 0",
+            "explanation": "Le théorème de Noether explique en un principe unificateur pourquoi certaines grandeurs se conservent : l’invariance par translation temporelle est associée à l’énergie, l’invariance par translation spatiale à la quantité de mouvement, et l’invariance par rotation au moment cinétique. Il s’agit d’un résultat structurel, non d’une équation unique applicable sans préciser le système.",
+            "parameters": "S : action (J·s) ; δS : variation infinitésimale de l’action. Les trajectoires physiques rendent l’action stationnaire ; les symétries continues de l’action entraînent des quantités conservées sous les hypothèses du théorème.",
+            "example": "Dans un système dont les lois ne changent pas avec le temps, l’invariance temporelle conduit à la conservation de l’énergie dans le cadre lagrangien approprié.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Encyclopaedia Britannica / source institutionnelle — Emmy Noether ou notion associée",
+            "url": "https://mathshistory.st-andrews.ac.uk/Biographies/Noether/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bohr",
+      "title": "Niels Bohr",
+      "field": "Physique atomique · spectres",
+      "summary": "Niels Bohr (1885–1962) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Le physicien danois Niels Bohr propose en 1913 un modèle de l’atome d’hydrogène combinant noyau, électrons et quantification. Il explique les longueurs d’onde observées dans le spectre de l’hydrogène, en introduisant des états d’énergie discrets.",
+          "Découverte et portée — Le modèle de Bohr est un modèle historique utile pour l’hydrogène et les ions à un électron, mais il ne décrit pas correctement les atomes complexes. Sa contribution est majeure dans le développement de la théorie quantique et dans l’interprétation des spectres atomiques.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "NIVEAUX D’ÉNERGIE DE L’HYDROGÈNE DANS LE MODÈLE DE BOHR",
+          "text": "Eₙ = −13,6 eV / n²"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : Eₙ = −13,6 eV / n².",
+          "calculation": "Pour n = 2, E₂ = −13,6/4 = −3,4 eV.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « Eₙ = −13,6 eV / n² » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "Eₙ : énergie du niveau n (eV) ; n : entier positif (nombre quantique principal). La formule s’applique à l’hydrogène dans le modèle idéal ; 13,6 eV est l’énergie d’ionisation depuis l’état fondamental."
+        },
+        "equationDetails": [
+          {
+            "title": "Niveaux d’énergie de l’hydrogène dans le modèle de Bohr",
+            "formula": "Eₙ = −13,6 eV / n²",
+            "explanation": "Le modèle de Bohr est un modèle historique utile pour l’hydrogène et les ions à un électron, mais il ne décrit pas correctement les atomes complexes. Sa contribution est majeure dans le développement de la théorie quantique et dans l’interprétation des spectres atomiques.",
+            "parameters": "Eₙ : énergie du niveau n (eV) ; n : entier positif (nombre quantique principal). La formule s’applique à l’hydrogène dans le modèle idéal ; 13,6 eV est l’énergie d’ionisation depuis l’état fondamental.",
+            "example": "Pour n = 2, E₂ = −13,6/4 = −3,4 eV.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize — notice officielle de Niels Bohr",
+            "url": "https://www.nobelprize.org/prizes/physics/1922/bohr/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "schrodinger",
+      "title": "Erwin Schrödinger",
+      "field": "Mécanique quantique · fonction d’onde",
+      "summary": "Erwin Schrödinger (1887–1961) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Le physicien autrichien Erwin Schrödinger développe en 1926 la mécanique ondulatoire. Son équation permet de calculer l’évolution de la fonction d’onde et les niveaux d’énergie de systèmes quantiques, notamment l’atome d’hydrogène.",
+          "Découverte et portée — L’équation dépendante du temps est une loi d’évolution centrale de la mécanique quantique non relativiste. La fonction d’onde sert à calculer des probabilités de résultats de mesure ; elle ne doit pas être interprétée comme une onde matérielle classique. Schrödinger partage le Nobel de physique 1933 avec Paul Dirac.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "ÉQUATION DE SCHRÖDINGER DÉPENDANTE DU TEMPS",
+          "text": "i ħ ∂ψ/∂t = Ĥψ"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : i ħ ∂ψ/∂t = Ĥψ.",
+          "calculation": "Pour un état stationnaire d’énergie E, la dépendance temporelle de la fonction d’onde comporte un facteur exp(−iEt/ħ).",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « i ħ ∂ψ/∂t = Ĥψ » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "i : unité imaginaire ; ħ : constante de Planck réduite (J·s) ; ψ : fonction d’onde ; t : temps (s) ; Ĥ : opérateur hamiltonien, associé à l’énergie totale."
+        },
+        "equationDetails": [
+          {
+            "title": "Équation de Schrödinger dépendante du temps",
+            "formula": "i ħ ∂ψ/∂t = Ĥψ",
+            "explanation": "L’équation dépendante du temps est une loi d’évolution centrale de la mécanique quantique non relativiste. La fonction d’onde sert à calculer des probabilités de résultats de mesure ; elle ne doit pas être interprétée comme une onde matérielle classique. Schrödinger partage le Nobel de physique 1933 avec Paul Dirac.",
+            "parameters": "i : unité imaginaire ; ħ : constante de Planck réduite (J·s) ; ψ : fonction d’onde ; t : temps (s) ; Ĥ : opérateur hamiltonien, associé à l’énergie totale.",
+            "example": "Pour un état stationnaire d’énergie E, la dépendance temporelle de la fonction d’onde comporte un facteur exp(−iEt/ħ).",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize — notice officielle de Erwin Schrödinger",
+            "url": "https://www.nobelprize.org/prizes/physics/1933/schrodinger/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "debroglie",
+      "title": "Louis de Broglie",
+      "field": "Physique quantique · dualité onde-corpuscule",
+      "summary": "Louis de Broglie (1892–1987) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Le physicien français Louis de Broglie avance en 1924 que la matière, comme la lumière, possède un caractère ondulatoire. L’hypothèse est confirmée par les expériences de diffraction d’électrons sur des cristaux et devient une pierre angulaire de la mécanique quantique.",
+          "Découverte et portée — La longueur d’onde de de Broglie est inversement proportionnelle à la quantité de mouvement. Elle permet de comprendre pourquoi les effets ondulatoires deviennent importants pour les particules microscopiques et négligeables pour les objets macroscopiques.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "RELATION DE DE BROGLIE",
+          "text": "λ = h / p"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : λ = h / p.",
+          "calculation": "À quantité de mouvement plus grande, la longueur d’onde associée est plus petite.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « λ = h / p » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "λ : longueur d’onde associée (m) ; h : constante de Planck (J·s) ; p : quantité de mouvement (kg·m·s⁻¹). À vitesse faible devant c, p ≈ mv ; en relativité, p = γmv."
+        },
+        "equationDetails": [
+          {
+            "title": "Relation de de Broglie",
+            "formula": "λ = h / p",
+            "explanation": "La longueur d’onde de de Broglie est inversement proportionnelle à la quantité de mouvement. Elle permet de comprendre pourquoi les effets ondulatoires deviennent importants pour les particules microscopiques et négligeables pour les objets macroscopiques.",
+            "parameters": "λ : longueur d’onde associée (m) ; h : constante de Planck (J·s) ; p : quantité de mouvement (kg·m·s⁻¹). À vitesse faible devant c, p ≈ mv ; en relativité, p = γmv.",
+            "example": "À quantité de mouvement plus grande, la longueur d’onde associée est plus petite.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize — notice officielle de Louis de Broglie",
+            "url": "https://www.nobelprize.org/prizes/physics/1929/broglie/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fermi",
+      "title": "Enrico Fermi",
+      "field": "Physique nucléaire et statistique quantique",
+      "summary": "Enrico Fermi (1901–1954) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Enrico Fermi, physicien italien puis américain, apporte des contributions à la statistique quantique, à la théorie de la désintégration bêta et à la physique nucléaire expérimentale. En 1942, son équipe réalise à Chicago la première réaction en chaîne nucléaire auto-entretenue contrôlée.",
+          "Découverte et portée — La statistique de Fermi-Dirac décrit les particules de spin demi-entier, appelées fermions, soumises au principe d’exclusion de Pauli. Cette statistique est essentielle pour comprendre les électrons dans les métaux, les naines blanches et de nombreux systèmes quantiques.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "DISTRIBUTION DE FERMI-DIRAC",
+          "text": "f(E) = 1 / (exp((E − μ)/(kB T)) + 1)"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : f(E) = 1 / (exp((E − μ)/(kB T)) + 1).",
+          "calculation": "À température nulle, les états situés sous le niveau de Fermi sont occupés et ceux au-dessus sont vides dans le modèle idéal d’équilibre.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « f(E) = 1 / (exp((E − μ)/(kB T)) + 1) » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "f(E) : occupation moyenne d’un état d’énergie E ; μ : potentiel chimique (J) ; kB : constante de Boltzmann (J·K⁻¹) ; T : température absolue (K)."
+        },
+        "equationDetails": [
+          {
+            "title": "Distribution de Fermi-Dirac",
+            "formula": "f(E) = 1 / (exp((E − μ)/(kB T)) + 1)",
+            "explanation": "La statistique de Fermi-Dirac décrit les particules de spin demi-entier, appelées fermions, soumises au principe d’exclusion de Pauli. Cette statistique est essentielle pour comprendre les électrons dans les métaux, les naines blanches et de nombreux systèmes quantiques.",
+            "parameters": "f(E) : occupation moyenne d’un état d’énergie E ; μ : potentiel chimique (J) ; kB : constante de Boltzmann (J·K⁻¹) ; T : température absolue (K).",
+            "example": "À température nulle, les états situés sous le niveau de Fermi sont occupés et ceux au-dessus sont vides dans le modèle idéal d’équilibre.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize — notice officielle de Enrico Fermi",
+            "url": "https://www.nobelprize.org/prizes/physics/1938/fermi/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "heisenberg",
+      "title": "Werner Heisenberg",
+      "field": "Mécanique quantique · incertitude",
+      "summary": "Werner Heisenberg (1901–1976) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Le physicien allemand Werner Heisenberg formule en 1925 une mécanique quantique matricielle, l’une des premières formulations complètes de la nouvelle théorie. En 1927, il établit une relation fondamentale entre les dispersions de position et de quantité de mouvement.",
+          "Découverte et portée — Le principe d’incertitude n’est pas simplement une limite due à la maladresse des instruments : il exprime une propriété mathématique des états quantiques. Il ne signifie pas que toute mesure est impossible, mais qu’un état ne peut présenter simultanément des dispersions arbitrairement faibles de position et de quantité de mouvement.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "RELATION D’INCERTITUDE POSITION-QUANTITÉ DE MOUVEMENT",
+          "text": "Δx Δp ≥ ħ/2"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : Δx Δp ≥ ħ/2.",
+          "calculation": "Si la dispersion de position diminue, la borne impose une dispersion minimale correspondante de la quantité de mouvement.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « Δx Δp ≥ ħ/2 » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "Δx : écart-type de la position (m) ; Δp : écart-type de la quantité de mouvement (kg·m·s⁻¹) ; ħ = h/(2π) : constante de Planck réduite (J·s)."
+        },
+        "equationDetails": [
+          {
+            "title": "Relation d’incertitude position-quantité de mouvement",
+            "formula": "Δx Δp ≥ ħ/2",
+            "explanation": "Le principe d’incertitude n’est pas simplement une limite due à la maladresse des instruments : il exprime une propriété mathématique des états quantiques. Il ne signifie pas que toute mesure est impossible, mais qu’un état ne peut présenter simultanément des dispersions arbitrairement faibles de position et de quantité de mouvement.",
+            "parameters": "Δx : écart-type de la position (m) ; Δp : écart-type de la quantité de mouvement (kg·m·s⁻¹) ; ħ = h/(2π) : constante de Planck réduite (J·s).",
+            "example": "Si la dispersion de position diminue, la borne impose une dispersion minimale correspondante de la quantité de mouvement.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize — notice officielle de Werner Heisenberg",
+            "url": "https://www.nobelprize.org/prizes/physics/1932/heisenberg/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "feynman",
+      "title": "Richard Feynman",
+      "field": "Électrodynamique quantique · particules",
+      "summary": "Richard Feynman (1918–1988) : repères biographiques, apport majeur et équation associée.",
+      "lesson": {
+        "sections": [
+          "Biographie — Richard Feynman, physicien américain, contribue de manière décisive à l’électrodynamique quantique (QED), théorie relativiste des interactions entre lumière et matière. Il développe une formulation par intégrales de chemin et une notation diagrammatique qui facilite le calcul des amplitudes d’interaction.",
+          "Découverte et portée — Les diagrammes de Feynman représentent des termes d’une expansion perturbative : ils sont un outil de calcul, pas des photographies de trajectoires réellement suivies par les particules. Feynman partage le Nobel de physique 1965 avec Julian Schwinger et Sin-Itiro Tomonaga pour leurs travaux fondamentaux en QED.",
+          "Contexte et limites — L’équation présentée résume un résultat associé à ce physicien, mais ne signifie pas nécessairement qu’il l’a écrit sous cette forme moderne. Les notations et unités sont explicitées pour éviter de confondre modèle théorique, loi expérimentale et approximation."
+        ],
+        "formula": {
+          "label": "PRINCIPE D’INTÉGRALE DE CHEMIN, FORME SCHÉMATIQUE",
+          "text": "A ∝ Σ chemins exp(iS/ħ)"
+        },
+        "example": {
+          "statement": "Interpréter ou appliquer la relation : A ∝ Σ chemins exp(iS/ħ).",
+          "calculation": "Les contributions de chemins dont les phases varient rapidement tendent souvent à s’annuler ; près d’une action stationnaire, elles peuvent s’additionner de façon cohérente.",
+          "answer": "Le résultat doit être interprété dans le domaine de validité précisé dans la définition des paramètres."
+        },
+        "exercise": {
+          "question": "Dans quelles conditions la relation « A ∝ Σ chemins exp(iS/ħ) » est-elle applicable, et que représente chacun de ses paramètres ?",
+          "answer": "A : amplitude quantique ; S : action associée à un chemin (J·s) ; ħ : constante de Planck réduite. La somme sur les chemins est une écriture schématique dont la définition précise dépend du système et des conditions."
+        },
+        "equationDetails": [
+          {
+            "title": "Principe d’intégrale de chemin, forme schématique",
+            "formula": "A ∝ Σ chemins exp(iS/ħ)",
+            "explanation": "Les diagrammes de Feynman représentent des termes d’une expansion perturbative : ils sont un outil de calcul, pas des photographies de trajectoires réellement suivies par les particules. Feynman partage le Nobel de physique 1965 avec Julian Schwinger et Sin-Itiro Tomonaga pour leurs travaux fondamentaux en QED.",
+            "parameters": "A : amplitude quantique ; S : action associée à un chemin (J·s) ; ħ : constante de Planck réduite. La somme sur les chemins est une écriture schématique dont la définition précise dépend du système et des conditions.",
+            "example": "Les contributions de chemins dont les phases varient rapidement tendent souvent à s’annuler ; près d’une action stationnaire, elles peuvent s’additionner de façon cohérente.",
+            "result": "La relation fournit une description quantitative du phénomène dans les conditions indiquées ; elle ne doit pas être extrapolée hors de son domaine de validité."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Nobel Prize — notice officielle de Richard Feynman",
+            "url": "https://www.nobelprize.org/prizes/physics/1965/feynman/facts/"
+          },
+          {
+            "title": "NIST — Fundamental Physical Constants (CODATA 2022)",
+            "url": "https://physics.nist.gov/cuu/Constants/"
+          },
+          {
+            "title": "Nobel Prize — liste officielle des prix de physique et notices biographiques",
+            "url": "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/all/"
+          }
+        ]
+      }
+    }
+  ]
+},
+
   {
     id: 'grandes-constantes-physique',
     title: 'Les grandes constantes de la physique',
