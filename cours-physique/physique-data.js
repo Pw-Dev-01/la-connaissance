@@ -3112,7 +3112,6 @@
       }
     ]
   },
-  {
      {
   "id": "grands-physiciens",
   "title": "Les grands physiciens",
