@@ -1576,5 +1576,220 @@ window.courseCatalog = [
   ]
 },
 
+
+{
+  id: 'forçage-radiatif',
+  title: 'Le forçage radiatif',
+  note: "Quatre chapitres consacrés aux fondements physiques du forçage radiatif, à ses mécanismes atmosphériques, aux principaux agents naturels et anthropiques et à ses conséquences sur le système climatique. Les valeurs numériques sont précisées comme des estimations lorsqu'elles dépendent de la période de référence, des observations ou des méthodes d'évaluation.",
+  chapters: [
+    {
+      id: 'fondements-forcage-radiatif',
+      title: 'Les fondements physiques du forçage radiatif',
+      field: 'Physique de l’atmosphère · Bilan énergétique et flux radiatifs',
+      summary: "Définir le forçage radiatif, comprendre la différence entre flux radiatif et forçage, établir les conventions de signe et relier une perturbation énergétique à la réponse du système climatique.",
+      lesson: {
+        sections: [
+          "Le forçage radiatif caractérise une perturbation du bilan énergétique du système climatique provoquée par une modification d'un facteur externe ou par un changement de composition ou de propriétés du système. Parmi les causes possibles figurent l'augmentation du dioxyde de carbone atmosphérique, les variations de l'irradiance solaire, les aérosols et les changements d'albédo associés à l'utilisation des terres. Dans les évaluations climatiques, le forçage est généralement exprimé en watts par mètre carré (W/m²). Il représente un changement de flux énergétique par unité de surface et ne constitue pas directement une mesure de température.",
+          "Le bilan radiatif de la Terre résulte principalement de l'énergie solaire absorbée et du rayonnement infrarouge émis vers l'espace. Une perturbation positive du flux radiatif net descendant au sommet de l'atmosphère tend à augmenter l'énergie accumulée par le système Terre. Une perturbation négative tend au contraire à réduire cette accumulation. La convention de signe doit toujours être précisée, car certains calculs définissent le flux net avec une convention opposée.",
+          "Il faut distinguer le flux radiatif absolu de son changement. Un flux de 240 W/m² n'est pas, à lui seul, un forçage radiatif : il peut représenter un flux énergétique existant. Le forçage correspond à la différence entre un état de référence et un état perturbé, selon une définition et une méthode données. Cette distinction est essentielle pour éviter de confondre l'énergie totale transportée par le rayonnement et la perturbation du bilan provoquée par un changement atmosphérique.",
+          "Le forçage radiatif classique peut être évalué avant que le système climatique ait répondu par un changement de température de surface. Le forçage radiatif effectif, ou ERF, prend également en compte certains ajustements rapides de l'atmosphère, des nuages et de la surface, tout en excluant la réponse radiative associée au changement de température moyenne de surface. Cette distinction est particulièrement utile pour comparer des agents climatiques dont les effets ne se limitent pas à une modification directe de l'absorption infrarouge."
+        ],
+        example: {
+          statement: "Un modèle estime que le flux radiatif net descendant au sommet de l'atmosphère passe de 0,2 W/m² à 1,0 W/m² entre deux états comparables. Quel est le changement de flux selon cette convention ?",
+          calculation: "ΔF = F_final - F_initial = 1,0 - 0,2 = +0,8 W/m².",
+          answer: "Le changement est de +0,8 W/m². Avec la convention du flux net descendant, ce changement positif correspond à une perturbation énergétique qui favorise l'accumulation d'énergie dans le système climatique, toutes choses égales par ailleurs."
+        },
+        exercise: {
+          question: "Pourquoi un forçage radiatif exprimé en W/m² ne permet-il pas, à lui seul, de déterminer la température finale de la Terre ?",
+          answer: "Parce que la réponse en température dépend aussi de la sensibilité climatique, des rétroactions, de la répartition du forçage, de la durée de la perturbation et de l'inertie thermique des océans."
+        },
+        exercises: [
+          {
+            question: "Quelle est l'unité couramment utilisée pour exprimer le forçage radiatif ?",
+            answer: "Le watt par mètre carré (W/m²)."
+          },
+          {
+            question: "Quelle est la différence entre un flux radiatif et un forçage radiatif ?",
+            answer: "Le flux radiatif représente une quantité d'énergie transférée par unité de surface et de temps. Le forçage représente une modification du bilan radiatif entre un état de référence et un état perturbé."
+          },
+          {
+            question: "Avec la convention du flux net descendant, que signifie un forçage radiatif positif ?",
+            answer: "Il indique une perturbation qui favorise une augmentation de l'énergie retenue par le système climatique, avant prise en compte de l'ensemble de sa réponse en température."
+          }
+        ],
+        sources: [
+          {
+            title: 'GIEC — AR6, chapitre 7 : Earth’s Energy Budget and its Changes Through Time',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/'
+          },
+          {
+            title: 'GIEC — AR6, chapitre 1 : Framing, Context, and Methods',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-1/'
+          },
+          {
+            title: 'NASA — Climate and Earth’s Energy Budget',
+            url: 'https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'gaz-effet-serre-forcage',
+      title: 'Les gaz à effet de serre et le forçage radiatif',
+      field: 'Physique atmosphérique · Spectroscopie moléculaire et transfert radiatif',
+      summary: "Expliquer comment les propriétés spectrales des gaz atmosphériques produisent un forçage radiatif, pourquoi le CO2 est un agent majeur du changement climatique actuel et comment distinguer absorption, émission et réchauffement.",
+      lesson: {
+        sections: [
+          "Les gaz à effet de serre influencent le bilan radiatif en absorbant et en émettant le rayonnement infrarouge dans des bandes spectrales déterminées par leur structure moléculaire. La vapeur d'eau, le dioxyde de carbone, le méthane, le protoxyde d'azote et l'ozone contribuent à cet effet, mais leurs propriétés spectrales et leurs concentrations diffèrent. L'azote moléculaire et l'oxygène moléculaire, qui constituent l'essentiel de l'air sec, n'absorbent pas directement le rayonnement infrarouge terrestre de la même manière que les principaux gaz à effet de serre.",
+          "Lorsque la concentration d'un gaz à effet de serre augmente, l'atmosphère devient généralement plus opaque à certaines longueurs d'onde infrarouges. Le rayonnement s'échappant vers l'espace provient alors, dans les bandes concernées, de niveaux atmosphériques différents. Dans la troposphère, où la température diminue généralement avec l'altitude, une émission provenant d'un niveau plus élevé est souvent associée à une température plus basse. Le rayonnement sortant peut donc diminuer initialement, créant un déséquilibre énergétique qui favorise le réchauffement jusqu'à ce que le système atteigne un nouvel équilibre.",
+          "Le forçage radiatif du dioxyde de carbone augmente approximativement avec le logarithme de sa concentration dans les évaluations usuelles du climat. Cette relation découle notamment des propriétés d'absorption du CO2 et de la manière dont les bandes spectrales contribuent au transfert radiatif. Une approximation couramment utilisée pour le CO2 est ΔF ≈ 5,35 × ln(C/C0) W/m², où C est la concentration finale et C0 la concentration de référence. Cette formule est une approximation empirique pour les conditions atmosphériques terrestres; elle ne doit pas être appliquée sans vérifier le contexte et la définition du forçage.",
+          "La vapeur d'eau joue un rôle important dans l'effet de serre naturel et dans les rétroactions climatiques. Sa concentration atmosphérique dépend fortement de la température et du cycle hydrologique. À mesure que l'air se réchauffe, il peut généralement contenir davantage de vapeur d'eau, ce qui renforce l'effet de serre. Le CO2 anthropique, en revanche, est un moteur majeur du réchauffement actuel parce que les activités humaines augmentent durablement sa concentration atmosphérique. Il est donc essentiel de distinguer un agent qui impose une perturbation durable du bilan énergétique d'une rétroaction qui amplifie la réponse climatique."
+        ],
+        example: {
+          statement: "On utilise l'approximation ΔF ≈ 5,35 × ln(C/C0) pour estimer le forçage dû au CO2. La concentration passe de 280 ppm à 560 ppm. Quel est le forçage approximatif selon cette formule ?",
+          calculation: "C/C0 = 560/280 = 2. ΔF ≈ 5,35 × ln(2) ≈ 5,35 × 0,693 ≈ 3,71 W/m².",
+          answer: "Le forçage approximatif est de +3,7 W/m² selon cette formule. Il s'agit d'une estimation du forçage associé au doublement du CO2 dans le cadre de l'approximation donnée, et non d'une hausse directe de température de 3,7 °C."
+        },
+        exercise: {
+          question: "Pourquoi le doublement de la concentration de CO2 ne signifie-t-il pas que la température moyenne de la Terre double ?",
+          answer: "La concentration du gaz, le forçage radiatif et la température sont des grandeurs différentes. La température dépend du forçage et de la réponse du système climatique, notamment des rétroactions et de l'inertie thermique des océans."
+        },
+        exercises: [
+          {
+            question: "Quel mécanisme moléculaire permet au CO2 de contribuer à l'effet de serre ?",
+            answer: "Ses modes moléculaires lui permettent d'absorber et d'émettre le rayonnement infrarouge dans des bandes spectrales particulières."
+          },
+          {
+            question: "Que signifie l'approximation logarithmique du forçage du CO2 ?",
+            answer: "Dans son domaine d'application, le forçage augmente approximativement en proportion du logarithme du rapport entre la concentration finale et la concentration de référence."
+          },
+          {
+            question: "Pourquoi la vapeur d'eau est-elle souvent décrite comme une rétroaction positive du réchauffement actuel ?",
+            answer: "Parce que le réchauffement augmente généralement la quantité de vapeur d'eau dans l'atmosphère, ce qui renforce l'effet de serre et amplifie la perturbation initiale."
+          }
+        ],
+        sources: [
+          {
+            title: 'GIEC — AR6, chapitre 7 : Earth’s Energy Budget and its Changes Through Time',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/'
+          },
+          {
+            title: 'GIEC — AR6, chapitre 6 : Short-lived Climate Forcers',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-6/'
+          },
+          {
+            title: 'OpenStax — University Physics Volume 3, 6.1 Blackbody Radiation',
+            url: 'https://openstax.org/books/university-physics-volume-3/pages/6-1-blackbody-radiation'
+          }
+        ]
+      }
+    },
+    {
+      id: 'aerosols-albedo-forcage',
+      title: 'Les aérosols, l’albédo et les autres agents de forçage',
+      field: 'Climatologie · Aérosols atmosphériques, nuages, surfaces et rayonnement solaire',
+      summary: "Analyser les effets radiatifs des aérosols, des changements d'albédo et de l'irradiance solaire, en distinguant les effets directs, les effets passant par les nuages et les incertitudes d'évaluation.",
+      lesson: {
+        sections: [
+          "Les aérosols sont de petites particules solides ou liquides en suspension dans l'atmosphère. Leur effet radiatif dépend de leur taille, de leur composition chimique, de leur forme, de leur distribution verticale et des longueurs d'onde considérées. Certains aérosols diffusent efficacement le rayonnement solaire et augmentent la quantité de lumière renvoyée vers l'espace, produisant généralement un effet refroidissant. D'autres, comme le carbone suie, absorbent une partie du rayonnement solaire et peuvent réchauffer l'atmosphère. Le signe du forçage des aérosols dépend donc de leur nature et de leurs interactions avec le rayonnement et les nuages.",
+          "Les aérosols peuvent aussi modifier les propriétés des nuages en agissant comme noyaux de condensation ou de glace. Ils peuvent influencer le nombre et la taille des gouttelettes, l'épaisseur optique des nuages, leur durée de vie et leurs précipitations. Ces effets indirects sont complexes et constituent une source importante d'incertitude dans les estimations du forçage anthropique. Ils ne doivent pas être résumés par une valeur universelle applicable à toutes les régions et à tous les types d'aérosols.",
+          "L'albédo mesure la fraction du rayonnement incident qui est réfléchie par une surface ou par un système. La neige et la glace ont généralement un albédo élevé, tandis que les océans et de nombreuses surfaces sombres absorbent davantage de rayonnement solaire. La diminution de la couverture neigeuse ou glaciaire expose souvent des surfaces plus sombres, ce qui augmente l'absorption solaire et constitue une rétroaction positive au réchauffement. Les changements d'utilisation des terres peuvent également modifier l'albédo et les flux d'énergie, mais leur effet climatique global dépend du lieu et des changements associés à l'évapotranspiration, à la rugosité et au stockage du carbone.",
+          "L'irradiance solaire varie naturellement au cours du temps. Ces variations modifient l'énergie reçue par la Terre et peuvent donc produire un forçage radiatif. Cependant, l'évaluation de l'évolution climatique récente montre que l'augmentation des gaz à effet de serre d'origine humaine est le principal moteur du réchauffement global observé depuis l'ère préindustrielle. Les variations solaires et les aérosols doivent être pris en compte dans le bilan complet, mais ils ne permettent pas d'expliquer seuls la tendance récente observée."
+        ],
+        example: {
+          statement: "Un modèle simplifié indique qu'une modification des propriétés d'une surface fait passer son albédo de 0,20 à 0,30. Le rayonnement solaire incident moyen est de 200 W/m². Quelle est la variation du flux réfléchi, si le flux incident reste constant ?",
+          calculation: "Flux réfléchi initial = 0,20 × 200 = 40 W/m². Flux réfléchi final = 0,30 × 200 = 60 W/m². Variation = 60 - 40 = +20 W/m².",
+          answer: "Le flux réfléchi augmente de 20 W/m². Dans ce modèle simplifié, l'absorption solaire diminue d'autant, toutes choses égales par ailleurs. Le calcul ne représente pas à lui seul l'effet climatique complet d'un changement réel de surface."
+        },
+        exercise: {
+          question: "Pourquoi est-il incorrect d'affirmer que tous les aérosols refroidissent le climat ?",
+          answer: "Parce que certains aérosols diffusent le rayonnement solaire et tendent à refroidir, tandis que d'autres l'absorbent et peuvent réchauffer l'atmosphère. Leurs interactions avec les nuages compliquent également le bilan."
+        },
+        exercises: [
+          {
+            question: "Quel est généralement l'effet radiatif d'une augmentation de l'albédo planétaire, toutes choses égales par ailleurs ?",
+            answer: "Elle augmente la réflexion du rayonnement solaire et réduit l'énergie solaire absorbée, ce qui tend à refroidir le système."
+          },
+          {
+            question: "Pourquoi le carbone suie peut-il produire un effet différent de celui de nombreux aérosols diffusants ?",
+            answer: "Parce qu'il absorbe efficacement le rayonnement solaire et peut réchauffer l'atmosphère, tandis que de nombreux aérosols diffusants renvoient davantage de rayonnement vers l'espace."
+          },
+          {
+            question: "Pourquoi les effets des aérosols sur les nuages sont-ils difficiles à quantifier ?",
+            answer: "Parce qu'ils dépendent des propriétés des particules, des conditions atmosphériques, de la microphysique des nuages et des interactions entre nuages, précipitations et circulation atmosphérique."
+          }
+        ],
+        sources: [
+          {
+            title: 'GIEC — AR6, chapitre 6 : Short-lived Climate Forcers',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-6/'
+          },
+          {
+            title: 'GIEC — AR6, chapitre 7 : Earth’s Energy Budget and its Changes Through Time',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/'
+          },
+          {
+            title: 'NASA — Climate and Earth’s Energy Budget',
+            url: 'https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'reponse-climatique-forcage',
+      title: 'La réponse climatique au forçage radiatif',
+      field: 'Climatologie physique · Sensibilité climatique, rétroactions et inertie thermique',
+      summary: "Relier le forçage à la réponse en température, distinguer les rétroactions positives et négatives et comprendre pourquoi le système climatique réagit sur des échelles de temps différentes.",
+      lesson: {
+        sections: [
+          "Un forçage radiatif modifie le bilan énergétique du système climatique, mais la réponse en température dépend de la façon dont le système réagit à cette perturbation. À mesure que la surface et la troposphère se réchauffent, elles émettent davantage de rayonnement infrarouge. Cette augmentation du rayonnement sortant constitue une réponse stabilisatrice du système. Le nouvel équilibre est atteint lorsque le bilan énergétique est de nouveau compatible avec une accumulation nette d'énergie proche de zéro, en tenant compte des échanges et des variations internes.",
+          "La sensibilité climatique à l'équilibre désigne le réchauffement global moyen à long terme associé à un doublement de la concentration atmosphérique de CO2, après que le système climatique a atteint un nouvel équilibre. Elle ne se confond ni avec le forçage radiatif du doublement du CO2 ni avec le réchauffement observé sur une période courte. Son estimation dépend notamment des rétroactions de la vapeur d'eau, du gradient thermique vertical, des nuages, de la neige et de la glace, ainsi que de la compréhension des climats passés et des observations modernes.",
+          "Les rétroactions positives amplifient une réponse initiale, alors que les rétroactions négatives la réduisent. La rétroaction de la vapeur d'eau et la rétroaction glace-albédo sont généralement positives dans le climat actuel. L'augmentation de l'émission infrarouge lorsque la température augmente constitue une réponse stabilisatrice majeure. Les rétroactions des nuages peuvent à la fois renforcer et atténuer certaines composantes du changement climatique; leur effet global dépend des variations de types, d'altitude et de propriétés des nuages.",
+          "L'océan absorbe et redistribue une grande partie de l'excès d'énergie du système climatique. Cette capacité thermique retarde la réponse de la température de surface à un forçage donné. Le climat peut donc continuer à évoluer même lorsque les concentrations atmosphériques cessent d'augmenter, selon la durée de la perturbation et l'état du système. Les réponses transitoires et les réponses à l'équilibre doivent être distinguées pour interpréter les projections climatiques.",
+          "Le forçage radiatif constitue ainsi un outil essentiel pour comparer les influences des gaz à effet de serre, des aérosols, des changements d'albédo et des variations solaires. Il ne remplace toutefois pas les modèles climatiques complets, qui doivent représenter les transferts radiatifs, la circulation atmosphérique, les océans, les nuages, le cycle de l'eau et les rétroactions entre composantes du système."
+        ],
+        example: {
+          statement: "Une perturbation entraîne un forçage radiatif positif de +2 W/m². Le système climatique absorbe davantage d'énergie qu'il n'en renvoie initialement vers l'espace. Quelle évolution qualitative est attendue ?",
+          calculation: "Déséquilibre énergétique = flux net entrant - flux net sortant. Si le forçage crée un déséquilibre positif, l'énergie du système augmente. Le réchauffement accroît ensuite l'émission infrarouge et déclenche d'autres ajustements.",
+          answer: "Le système tend à se réchauffer. L'ampleur et la vitesse du réchauffement ne peuvent pas être déterminées à partir du seul forçage de +2 W/m²; elles dépendent notamment de la sensibilité climatique, des rétroactions et de l'absorption de chaleur par l'océan."
+        },
+        exercise: {
+          question: "Pourquoi la température moyenne de surface peut-elle continuer à évoluer après la stabilisation d'un forçage radiatif ?",
+          answer: "Parce que les océans et les autres composantes du système climatique possèdent une inertie thermique. Les échanges de chaleur internes se poursuivent et la température peut mettre du temps à approcher son nouvel équilibre."
+        },
+        exercises: [
+          {
+            question: "Qu'est-ce que la sensibilité climatique à l'équilibre ?",
+            answer: "C'est le réchauffement global moyen à long terme associé à un doublement de la concentration atmosphérique de CO2, une fois le système climatique proche de son nouvel équilibre."
+          },
+          {
+            question: "Quel rôle joue l'augmentation du rayonnement infrarouge émis lorsque la Terre se réchauffe ?",
+            answer: "Elle constitue une réponse stabilisatrice : un système plus chaud émet généralement davantage d'infrarouge vers l'espace, ce qui contribue à réduire le déséquilibre énergétique."
+          },
+          {
+            question: "Pourquoi faut-il distinguer la réponse climatique transitoire de la réponse à l'équilibre ?",
+            answer: "Parce que la réponse transitoire est influencée par l'inertie thermique des océans et par l'évolution du forçage, tandis que la réponse à l'équilibre décrit l'état à long terme après l'ajustement du système."
+          }
+        ],
+        sources: [
+          {
+            title: 'GIEC — AR6, chapitre 7 : Earth’s Energy Budget and its Changes Through Time',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/'
+          },
+          {
+            title: 'GIEC — AR6, chapitre 4 : Future Global Climate',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-4/'
+          },
+          {
+            title: 'NASA — Climate and Earth’s Energy Budget',
+            url: 'https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/'
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
 ]
 
