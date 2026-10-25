@@ -1788,7 +1788,304 @@ window.courseCatalog = [
       }
     }
   ]
-}
+},
+
+// BRANCHE CYCLE DU CARBONE
+
+  {
+    id: 'cycle-carbone',
+    title: 'Le cycle du carbone et les gaz à effet de serre',
+    note: 'Six chapitres sur les réservoirs et les unités du carbone, le cycle rapide, le cycle lent, l’effet de serre, les principaux gaz à effet de serre et la perturbation d’origine humaine. Les valeurs chiffrées sont des estimations issues de synthèses scientifiques (IPCC AR6, Global Carbon Budget 2025, budgets mondiaux du méthane et du protoxyde d’azote) ; elles comportent des incertitudes et sont révisées régulièrement.',
+    chapters: [
+      {
+        id: 'reservoirs-flux-unites',
+        title: 'Les réservoirs de carbone, les flux et les unités',
+        field: 'Sciences de la Terre · Biogéochimie du carbone · Réservoirs, flux et unités de mesure',
+        summary: 'Comprendre où se trouve le carbone sur Terre, comment on décrit ses échanges et comment convertir ppm, GtC et GtCO₂.',
+        lesson: {
+          sections: [
+            'Le carbone est l’élément de base des molécules organiques (glucides, lipides, protéines, acides nucléiques) et un constituant important des combustibles fossiles. Le cycle du carbone désigne l’ensemble de ses échanges entre l’atmosphère, l’océan, les sols et la végétation, les roches et l’intérieur de la Terre. OpenStax (Biology 2e) propose de l’étudier comme deux sous-cycles interconnectés : l’un concerne l’échange rapide de carbone entre les organismes vivants, l’autre le cycle à long terme à travers les processus géologiques.',
+            'Un réservoir est un stock de carbone ; un flux est la quantité de carbone qui passe d’un réservoir à un autre pendant une durée donnée. OpenStax cite parmi les grands réservoirs l’atmosphère, les eaux liquides (surtout les océans), les sédiments océaniques, les sols, les sédiments continentaux (y compris les combustibles fossiles) et l’intérieur de la Terre. Selon la NASA, la plus grande partie du carbone terrestre, environ 65 500 milliards de tonnes, est stockée dans les roches ; le reste se trouve dans l’océan, l’atmosphère, les plantes, les sols et les combustibles fossiles.',
+            'Les roches carbonées appartiennent à deux familles. D’après la NASA, environ 80 % sont des roches carbonatées comme le calcaire, formées par la cimentation de coquilles et de sédiments ; les quelque 20 % restants contiennent du carbone organique issu d’êtres vivants, enfoui dans des boues que la chaleur et la pression transforment en roches sédimentaires comme le schiste. Dans des cas particuliers, lorsque la matière végétale morte s’accumule plus vite qu’elle ne se décompose, ces couches organiques donnent du pétrole, du charbon ou du gaz naturel. OpenStax précise que les combustibles fossiles sont les restes de plantes décomposés sans oxygène, qu’ils demandent des millions d’années pour se former et qu’ils sont non renouvelables, car leur consommation dépasse largement leur vitesse de formation.',
+            'Les unités doivent être précisées à chaque fois. La concentration atmosphérique de CO₂ s’exprime en ppm (micromole de CO₂ par mole d’air sec). Les flux de carbone s’expriment en GtC par an (milliards de tonnes de carbone) et les émissions en GtCO₂ par an. Le Global Carbon Budget utilise 1 ppm de CO₂ atmosphérique ≈ 2,124 GtC (en supposant une atmosphère bien mélangée sur l’année) et 1 GtC ≈ 3,664 GtCO₂ (rapport des masses molaires du CO₂ et du carbone, voisin de 44/12). Une même quantité de carbone pèse donc environ 3,7 fois plus lorsqu’elle est exprimée sous forme de CO₂.',
+            'Les échelles de temps couvrent plusieurs ordres de grandeur. D’après le Global Carbon Budget, les échanges entre atmosphère, océan et biosphère terrestre vont de moins d’une journée (photosynthèse, respiration) à des millénaires, tandis que les échanges avec les réservoirs géologiques sont encore plus lents. Les émissions humaines viennent s’ajouter à ce cycle naturel actif : c’est cette perturbation que mesure le bilan mondial du carbone étudié au dernier chapitre.'
+          ],
+          example: {
+            statement: 'En 2024, les émissions mondiales de CO₂ fossile sont estimées à 10,3 GtC par an et la croissance du carbone atmosphérique à 7,9 GtC par an (Global Carbon Budget 2025). Exprimer ces deux flux en GtCO₂, puis la croissance atmosphérique en ppm.',
+            calculation: '10,3 × 3,664 ≈ 37,7 GtCO₂ ; 7,9 × 3,664 ≈ 28,9 GtCO₂ ; 7,9 ÷ 2,124 ≈ 3,7 ppm.',
+            answer: 'Environ 37,7 GtCO₂ d’émissions fossiles (la publication indique 37,8 ± 1,8 GtCO₂ à partir de valeurs non arrondies), environ 28,9 GtCO₂ restant dans l’atmosphère, soit une hausse d’environ 3,7 ppm (la publication indique 3,73 ppm). Les petits écarts viennent des arrondis.'
+          },
+          exercise: {
+            question: 'Pourquoi ne peut-on pas comparer directement 10 GtC et 10 GtCO₂ ?',
+            answer: 'Parce que GtC mesure la masse du seul carbone, alors que GtCO₂ mesure la masse du dioxyde de carbone entier. 1 GtC correspond à environ 3,664 GtCO₂ : 10 GtC valent donc environ 36,6 GtCO₂.'
+          },
+          exercises: [
+            {
+              question: 'Selon la NASA, où se trouve la majeure partie du carbone terrestre ?',
+              answer: 'Dans les roches (environ 65 500 milliards de tonnes de carbone).'
+            },
+            {
+              question: 'Quels réservoirs de carbone OpenStax cite-t-il ?',
+              answer: 'L’atmosphère, les eaux liquides (surtout les océans), les sédiments océaniques, les sols, les sédiments continentaux (y compris les combustibles fossiles) et l’intérieur de la Terre.'
+            },
+            {
+              question: 'Que signifie « ppm » pour le CO₂ atmosphérique ?',
+              answer: 'Partie par million : une micromole de CO₂ pour une mole d’air sec (fraction molaire dans l’air sec).'
+            },
+            {
+              question: 'Par quel facteur multiplie-t-on une valeur en GtC pour obtenir des GtCO₂ ?',
+              answer: 'Par environ 3,664, rapport des masses molaires du CO₂ et du carbone.'
+            }
+          ],
+          sources: [
+            { title: 'OpenStax Biology 2e — 46.3 Biogeochemical Cycles', url: 'https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles' },
+            { title: 'NASA — The Carbon Cycle', url: 'https://science.nasa.gov/earth/climate-change/the-carbon-cycle/' },
+            { title: 'Friedlingstein et al. (2026) — Global Carbon Budget 2025, Earth System Science Data', url: 'https://essd.copernicus.org/articles/18/3211/2026/' }
+          ]
+        }
+      },
+      {
+        id: 'cycle-rapide',
+        title: 'Le cycle rapide : photosynthèse, respiration et échanges avec l’océan',
+        field: 'Biologie et écologie · Cycle biologique du carbone · Échelles de temps liées à la durée de vie des organismes',
+        summary: 'Comprendre comment le carbone circule entre atmosphère, êtres vivants et océan, et pourquoi ce cycle n’est pas fermé à l’échelle des décennies.',
+        lesson: {
+          sections: [
+            'Le cycle rapide, ou cycle biologique, repose sur l’échange de carbone entre autotrophes et hétérotrophes. Les autotrophes (plantes, algues, phytoplancton, certaines bactéries) utilisent le CO₂ comme matière première pour fabriquer des composés organiques riches en énergie, comme le glucose ; les hétérotrophes obtiennent leur carbone en consommant de la matière organique. La photosynthèse oxygénique se résume par 6 CO₂ + 6 H₂O + énergie lumineuse → C₆H₁₂O₆ + 6 O₂ ; la respiration aérobie correspond à la réaction inverse, qui libère de l’énergie utilisable par la cellule et renvoie du CO₂.',
+            'D’après la NASA, les plantes et le phytoplancton sont les principaux acteurs du cycle rapide, et le temps de transit du carbone y est de l’ordre de la durée de vie des organismes. Les liaisons des chaînes carbonées contiennent beaucoup d’énergie, libérée lorsqu’elles sont rompues : c’est pourquoi le carbone organique sert de carburant à tous les êtres vivants. La NASA compare les flux annuels : environ 10¹³ à 10¹⁴ g de carbone pour le cycle lent, contre 10¹⁶ à 10¹⁷ g pour le cycle rapide, soit un cycle rapide de l’ordre de 100 à 10 000 fois plus intense.',
+            'Le cycle rapide est visible dans les variations saisonnières du CO₂ atmosphérique. Dans l’hémisphère Nord, en hiver, peu de plantes terrestres poussent et beaucoup se décomposent, et la concentration en CO₂ augmente ; au printemps et en été, la végétation reprend et les grandes masses continentales boréales prélèvent du carbone dans l’atmosphère, ce qui fait baisser la concentration. Cette oscillation annuelle se superpose à la hausse de long terme mesurée à Mauna Loa.',
+            'L’océan est le second grand acteur du cycle rapide. Selon OpenStax, le CO₂ atmosphérique se dissout dans l’eau, puis réagit avec elle pour former de l’acide carbonique (H₂CO₃), qui se dissocie en ions bicarbonate (HCO₃⁻) et carbonate (CO₃²⁻) : CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻ ⇌ 2 H⁺ + CO₃²⁻. Le phytoplancton prélève aussi du CO₂ par photosynthèse. D’après la NASA, le vent, les courants et la température contrôlent la vitesse d’absorption ; avant l’ère industrielle, l’océan rejetait du CO₂ en équilibre avec le carbone reçu par l’altération des roches, alors que depuis la hausse de la concentration atmosphérique il en absorbe davantage qu’il n’en rejette.',
+            'Le cycle rapide n’est pas fermé à l’échelle des décennies : les changements d’usage des terres déplacent du carbone de la biosphère vers l’atmosphère. Pour la période 2015–2024, le Global Carbon Budget estime les émissions de la déforestation à environ 1,9 GtC par an, compensées aux deux tiers environ par la séquestration due au reboisement, au boisement et à la repousse forestière dans les cycles de culture itinérante (environ 1,3 GtC par an). Avec la récolte de bois, le drainage et les feux de tourbières, le bilan net des usages des terres est de 1,4 ± 0,7 GtC par an.'
+          ],
+          example: {
+            statement: 'Pour 2015–2024, la déforestation émet environ 1,9 GtC par an et le reboisement, le boisement et la repousse forestière séquestrent environ 1,3 GtC par an. Quelle part des émissions de la déforestation est compensée ?',
+            calculation: '1,3 ÷ 1,9 ≈ 0,68, soit environ 68 %. Écart entre les deux flux : 1,9 − 1,3 = 0,6 GtC par an.',
+            answer: 'Environ 68 %, soit à peu près les deux tiers. L’écart de 0,6 GtC par an ne donne pas à lui seul le bilan net des usages des terres (1,4 ± 0,7 GtC par an), car d’autres émissions s’y ajoutent : récolte de bois, drainage et feux de tourbières.'
+          },
+          exercise: {
+            question: 'Pourquoi la concentration de CO₂ atmosphérique varie-t-elle au cours de l’année dans l’hémisphère Nord ?',
+            answer: 'Au printemps et en été, la photosynthèse de la végétation prélève du CO₂ et sa concentration baisse ; en automne et en hiver, la décomposition l’emporte, peu de plantes poussent et la concentration remonte.'
+          },
+          exercises: [
+            {
+              question: 'Quel est le rôle des autotrophes dans le cycle du carbone ?',
+              answer: 'Ils fixent le carbone du CO₂ dans des molécules organiques, comme le glucose, grâce à la photosynthèse.'
+            },
+            {
+              question: 'Que devient le CO₂ lorsqu’il se dissout dans l’eau de mer, selon OpenStax ?',
+              answer: 'Il réagit avec l’eau pour former de l’acide carbonique (H₂CO₃), qui donne des ions bicarbonate et carbonate.'
+            },
+            {
+              question: 'Comment le flux net de CO₂ entre océan et atmosphère a-t-il changé depuis l’ère industrielle, selon la NASA ?',
+              answer: 'Avant l’ère industrielle, l’océan rejetait du CO₂ en équilibre avec l’apport de l’altération des roches ; depuis la hausse de la concentration atmosphérique, il absorbe davantage de carbone qu’il n’en rejette.'
+            }
+          ],
+          sources: [
+            { title: 'OpenStax Biology 2e — 46.3 Biogeochemical Cycles', url: 'https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles' },
+            { title: 'NASA — The Carbon Cycle', url: 'https://science.nasa.gov/earth/climate-change/the-carbon-cycle/' },
+            { title: 'NASA Earth Observatory — The Carbon Cycle', url: 'https://www.earthobservatory.nasa.gov/features/CarbonCycle' },
+            { title: 'Friedlingstein et al. (2026) — Global Carbon Budget 2025, Earth System Science Data', url: 'https://essd.copernicus.org/articles/18/3211/2026/' }
+          ]
+        }
+      },
+      {
+        id: 'cycle-lent',
+        title: 'Le cycle lent : altération, sédimentation, volcanisme et combustibles fossiles',
+        field: 'Géologie · Cycle géologique du carbone · Échelles de milliers à millions d’années',
+        summary: 'Comprendre comment le carbone passe de l’atmosphère aux roches et inversement, pourquoi ce cycle agit comme un thermostat et pourquoi il ne peut pas compenser les émissions actuelles.',
+        lesson: {
+          sections: [
+            'Selon la NASA, le passage du carbone de l’atmosphère vers les roches commence avec la pluie. Le CO₂ atmosphérique se combine à l’eau pour former de l’acide carbonique, un acide faible, qui attaque les roches en surface : c’est l’altération chimique. Elle libère des ions, notamment du calcium, que les rivières transportent vers l’océan. Dans l’océan, des organismes les utilisent avec les ions bicarbonate pour fabriquer du carbonate de calcium, constituant principal des coquilles. Un bilan simplifié classique de l’altération d’un silicate calcique suivie de la précipitation du carbonate s’écrit CaSiO₃ + 2 CO₂ + H₂O → Ca²⁺ + 2 HCO₃⁻ + SiO₂, puis Ca²⁺ + 2 HCO₃⁻ → CaCO₃ + CO₂ + H₂O.',
+            'Avec le temps, les couches de coquilles et de sédiments se cimentent et forment des roches comme le calcaire, qui stockent le carbone dans la pierre. Du carbone organique est aussi enfoui dans des boues devenues roches sédimentaires. Le carbone qui circule dans ce cycle lent met, selon la NASA, de 100 à 200 millions d’années pour se déplacer entre roches, sols, océan et atmosphère, et seulement 10 à 100 millions de tonnes de carbone par an y transitent, soit 10¹³ à 10¹⁴ g.',
+            'Le carbone retourne à l’atmosphère par le volcanisme. D’après la NASA, lorsque deux plaques se rencontrent, l’une plonge sous l’autre ; la roche entraînée fond sous l’effet de la chaleur et de la pression, puis se recombine en minéraux silicatés en libérant du CO₂. Les volcans rejettent ce gaz dans l’atmosphère et recouvrent le sol de roche silicatée fraîche, ce qui relance l’altération. OpenStax mentionne aussi les éruptions et les sources hydrothermales volcaniques comme sources de CO₂. Aujourd’hui, la NASA estime que les volcans émettent entre 130 et 380 millions de tonnes de CO₂ par an.',
+            'À l’échelle de centaines de milliers d’années, ce cycle agit comme un thermostat. D’après la NASA, il maintient un équilibre qui empêche que tout le carbone terrestre passe dans l’atmosphère, comme sur Vénus, ou qu’il soit entièrement stocké dans les roches. La NASA indique qu’il faut quelques centaines de milliers d’années pour rééquilibrer le cycle lent par l’altération chimique. Elle cite l’exemple du soulèvement de l’Himalaya, commencé il y a environ 50 millions d’années : il a fourni une grande quantité de roche fraîche, a accéléré l’altération et le piégeage de carbone, et a contribué à la baisse des températures et à la formation de calottes glaciaires. Le mécanisme de régulation généralement avancé est une rétroaction négative : un climat plus chaud et plus humide accélère l’altération des silicates, qui retire du CO₂.',
+            'Les combustibles fossiles sont des produits du cycle lent : OpenStax rappelle qu’ils se forment en millions d’années à partir de restes de plantes décomposés sans oxygène. En les brûlant en quelques générations, les humains transfèrent vers l’atmosphère un carbone qui était hors du cycle rapide. La NASA estime que, sur des millénaires, l’océan absorbera jusqu’à 85 % du carbone supplémentaire issu des combustibles fossiles, mais lentement, car ce processus dépend du transport de l’eau de surface vers les profondeurs. Le cycle lent ne peut donc pas compenser à l’échelle humaine les émissions actuelles.'
+          ],
+          example: {
+            statement: 'La NASA estime que les volcans émettent entre 130 et 380 millions de tonnes de CO₂ par an. Les émissions fossiles mondiales de 2024 sont estimées à 37,8 GtCO₂ (Global Carbon Budget 2025). Combien de fois les émissions fossiles dépassent-elles celles des volcans ?',
+            calculation: '37,8 GtCO₂ = 37 800 millions de tonnes. 37 800 ÷ 380 ≈ 99 ; 37 800 ÷ 130 ≈ 291.',
+            answer: 'Les émissions fossiles de 2024 sont environ 100 à 290 fois supérieures aux émissions volcaniques estimées par la NASA. Ces valeurs sont des ordres de grandeur, car les estimations volcaniques sont incertaines.'
+          },
+          exercise: {
+            question: 'Pourquoi l’altération des roches ne peut-elle pas compenser rapidement les émissions humaines de CO₂ ?',
+            answer: 'Parce qu’elle agit sur des centaines de milliers d’années (la NASA indique quelques centaines de milliers d’années pour rééquilibrer le cycle lent), alors que les émissions humaines s’accumulent en quelques décennies.'
+          },
+          exercises: [
+            {
+              question: 'Combien de temps faut-il, selon la NASA, pour rééquilibrer le cycle lent par l’altération chimique ?',
+              answer: 'Quelques centaines de milliers d’années.'
+            },
+            {
+              question: 'Quel processus géologique ramène du CO₂ dans l’atmosphère à partir des roches carbonées ?',
+              answer: 'Le volcanisme, après la subduction et la fusion de roches contenant du carbone.'
+            },
+            {
+              question: 'Pourquoi les combustibles fossiles sont-ils qualifiés de non renouvelables, selon OpenStax ?',
+              answer: 'Parce que leur consommation dépasse largement leur vitesse de formation, qui se compte en millions d’années.'
+            },
+            {
+              question: 'Quelle part du carbone supplémentaire issu des combustibles fossiles l’océan absorbera-t-il à terme, selon la NASA, et sur quelle durée ?',
+              answer: 'Jusqu’à 85 %, sur des millénaires.'
+            }
+          ],
+          sources: [
+            { title: 'NASA — The Carbon Cycle', url: 'https://science.nasa.gov/earth/climate-change/the-carbon-cycle/' },
+            { title: 'NASA Earth Observatory — The Carbon Cycle', url: 'https://www.earthobservatory.nasa.gov/features/CarbonCycle' },
+            { title: 'OpenStax Biology 2e — 46.3 Biogeochemical Cycles', url: 'https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles' },
+            { title: 'Friedlingstein et al. (2026) — Global Carbon Budget 2025, Earth System Science Data', url: 'https://essd.copernicus.org/articles/18/3211/2026/' }
+          ]
+        }
+      },
+      {
+        id: 'effet-de-serre',
+        title: 'L’effet de serre : mécanisme, histoire et rôle de la vapeur d’eau',
+        field: 'Physique du climat · Rayonnement et bilan d’énergie · Du XIXᵉ siècle à aujourd’hui',
+        summary: 'Comprendre pourquoi l’atmosphère réchauffe la surface, comment cette idée a été établie et pourquoi la vapeur d’eau est une rétroaction.',
+        lesson: {
+          sections: [
+            'La Terre reçoit surtout du rayonnement solaire visible et renvoie vers l’espace du rayonnement infrarouge thermique. Les gaz à effet de serre absorbent une partie de cet infrarouge et le réémettent dans toutes les directions, notamment vers la surface, ce qui ralentit la perte d’énergie. Les principaux constituants de l’air, le diazote et le dioxygène, absorbent très peu cet infrarouge ; ce sont des molécules comme H₂O, CO₂, CH₄ et N₂O qui ont la structure adaptée. Sans atmosphère, la température moyenne de surface serait d’environ −18 °C (255 K) ; elle est d’environ 15 °C, soit environ 33 °C de plus. L’expression « effet de serre » reste une analogie imparfaite.',
+            'L’idée s’est construite par étapes. Selon l’AIP (Spencer Weart), Fourier comprend dans les années 1820 que l’atmosphère influence la température de la planète ; Tyndall identifie en 1859, par des expériences de laboratoire, plusieurs gaz qui piègent le rayonnement infrarouge, le plus important étant la vapeur d’eau. En 1896, Arrhenius réalise un calcul numérique suggérant que réduire de moitié le CO₂ atmosphérique pourrait abaisser la température en Europe d’environ 4 à 5 °C, et il envisage que l’industrie puisse un jour provoquer un réchauffement. Beaucoup de scientifiques rejettent alors cette idée. En 1938, Callendar soutient que le CO₂ augmente et élève la température du globe, sans convaincre immédiatement.',
+            'La vapeur d’eau est le gaz à effet de serre le plus abondant et, selon la NASA, elle est responsable d’environ la moitié de l’effet de serre. Pourtant, elle n’est pas le moteur initial du réchauffement actuel : sa quantité dépend de la température, car un air plus chaud peut contenir plus de vapeur d’eau. C’est donc une rétroaction. Les gaz qui ne se condensent pas aux températures atmosphériques, comme le CO₂, le CH₄ et le N₂O, restent dans l’air quand la température varie. Un réchauffement initial dû à ces gaz augmente l’évaporation, donc la vapeur d’eau, ce qui amplifie le réchauffement ; la NASA indique que cet effet plus que double le réchauffement qui résulterait du seul CO₂.',
+            'L’effet de serre naturel rend la Terre habitable, mais les activités humaines le renforcent en augmentant les concentrations de gaz à effet de serre. Le résumé du premier groupe de travail du sixième rapport du GIEC (IPCC AR6 WGI) affirme qu’il est sans équivoque que l’influence humaine a réchauffé l’atmosphère, l’océan et les terres. L’élévation de la température mondiale de surface due aux activités humaines entre 1850–1900 et 2010–2019 a pour meilleure estimation 1,07 °C, avec une fourchette probable de 0,8 à 1,3 °C.',
+            'Les variations récentes sortent du cadre naturel connu. Selon l’IPCC, la concentration de CO₂ de 2019 (410 ppm) est la plus élevée depuis au moins 2 millions d’années, et celles du CH₄ et du N₂O sont les plus élevées depuis au moins 800 000 ans. Depuis 1750, les hausses du CO₂ (47 %) et du CH₄ (156 %) dépassent largement les variations naturelles multi-millénaires entre périodes glaciaires et interglaciaires observées sur au moins 800 000 ans, et celle du N₂O (23 %) y est comparable. Ces changements s’inscrivent dans un système où la vapeur d’eau, les nuages, la glace et le cycle du carbone réagissent au forçage initial.'
+          ],
+          example: {
+            statement: 'Sans effet de serre naturel, la température moyenne de surface serait d’environ −18 °C ; la valeur observée est d’environ 15 °C. Quel est l’écart ? Exprimer −18 °C en kelvins.',
+            calculation: '15 − (−18) = 33 °C ; −18 + 273,15 = 255,15 K, soit environ 255 K.',
+            answer: 'L’effet de serre naturel élève la température moyenne de surface d’environ 33 °C. −18 °C correspond à environ 255 K. Ces valeurs sont des moyennes approximatives.'
+          },
+          exercise: {
+            question: 'Pourquoi dit-on que la vapeur d’eau est une rétroaction plutôt qu’un forçage initial ?',
+            answer: 'Parce que sa quantité dans l’atmosphère dépend de la température : elle amplifie un réchauffement déclenché par d’autres gaz, comme le CO₂, mais ne le déclenche pas elle-même.'
+          },
+          exercises: [
+            {
+              question: 'Quelle serait la température moyenne de surface de la Terre sans effet de serre naturel, et quelle est la valeur observée ?',
+              answer: 'Environ −18 °C sans effet de serre, contre environ 15 °C observés.'
+            },
+            {
+              question: 'Qui a montré expérimentalement en 1859 que certains gaz piègent le rayonnement infrarouge, et quel gaz était le plus important ?',
+              answer: 'John Tyndall ; parmi les gaz qu’il a identifiés, le plus important était la vapeur d’eau.'
+            },
+            {
+              question: 'Quelle part de l’effet de serre est due à la vapeur d’eau, selon la NASA ?',
+              answer: 'Environ la moitié.'
+            },
+            {
+              question: 'Que suggère le calcul d’Arrhenius de 1896 ?',
+              answer: 'Que réduire de moitié le CO₂ atmosphérique pourrait abaisser la température en Europe d’environ 4 à 5 °C, et que l’industrie pourrait un jour provoquer un réchauffement.'
+            }
+          ],
+          sources: [
+            { title: 'AIP — The Discovery of Global Warming : The Carbon Dioxide Greenhouse Effect', url: 'https://history.aip.org/climate/co2.htm' },
+            { title: 'NASA — Steamy Relationships: How Atmospheric Water Vapor Amplifies Earth’s Greenhouse Effect', url: 'https://science.nasa.gov/earth/climate-change/steamy-relationships-how-atmospheric-water-vapor-amplifies-earths-greenhouse-effect/' },
+            { title: 'UC Berkeley UCMP — The Greenhouse Effect', url: 'https://ucmp.berkeley.edu/ucmp_oldsite_nonwpfiles/education/dynamic/session5/sess5_greenhouse.htm' },
+            { title: 'IPCC AR6 WGI — Summary for Policymakers', url: 'https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf' }
+          ]
+        }
+      },
+      {
+        id: 'gaz-effet-de-serre',
+        title: 'CO₂, méthane et protoxyde d’azote : sources, durées de vie et pouvoir de réchauffement',
+        field: 'Chimie de l’atmosphère · Budgets des gaz à effet de serre · Métriques d’équivalence',
+        summary: 'Connaître les trois principaux gaz à effet de serre d’origine humaine, leurs sources et la façon dont on les compare avec le pouvoir de réchauffement global.',
+        lesson: {
+          sections: [
+            'Le dioxyde de carbone est le principal gaz à effet de serre émis par les activités humaines en masse. Sa concentration moyenne est passée d’environ 278 ppm en 1750 à 410 ppm en 2019 selon l’IPCC (+47 %), puis à 422,8 ppm en 2024 selon le Global Carbon Budget. Les émissions viennent de la combustion du charbon, du pétrole et du gaz, de la production de ciment et des changements d’usage des terres ; les combustibles fossiles sont devenus la source dominante des émissions anthropiques à partir d’environ 1950. Le CO₂ n’a pas de durée de vie unique : plusieurs processus (océan, biosphère, roches) le retirent à des vitesses différentes, et l’IPCC précise qu’aucune durée de vie unique ne peut lui être attribuée.',
+            'Le méthane (CH₄) a une durée de vie moyenne d’environ 11,8 ans (IPCC AR6), car il est surtout détruit par des réactions chimiques dans la troposphère. Sa concentration est passée de 1866 ppb en 2019 (IPCC) à 1923 ppb en 2023 (Global Carbon Project), contre environ 722 ppb à l’époque préindustrielle, la valeur la plus élevée depuis au moins 800 000 ans. Pour la décennie 2010–2019, le Global Methane Budget estime les émissions mondiales à 575 Tg CH₄ par an (approche descendante), dont environ 65 % (369 Tg) proviennent de sources anthropiques directes : élevage et riziculture, gestion des déchets, exploitation des combustibles fossiles et combustion de biomasse. Les zones humides et les eaux continentales sont les principales sources naturelles et restent la plus grande source d’incertitude du bilan.',
+            'Le protoxyde d’azote (N₂O) a une durée de vie d’environ 109 ans (IPCC AR6). Sa concentration est passée d’environ 270 ppb en 1750 à 336 ppb en 2022, soit une hausse proche de 25 % (332 ppb en 2019 selon l’IPCC). Le Global Nitrous Oxide Budget estime les émissions mondiales totales à environ 17,8 Tg N par an sur 2010–2019, dont 36 % d’origine anthropique. L’agriculture, par les engrais azotés et le fumier, représente environ 74 % des émissions anthropiques de la décennie 2010–2019, et ces émissions ont augmenté de 40 % entre 1980 et 2020. Le N₂O est aussi une substance qui appauvrit la couche d’ozone stratosphérique. Son lien avec le cycle de l’azote (nitrification et dénitrification microbiennes) montre que le cycle du carbone ne peut pas être isolé des autres cycles biogéochimiques.',
+            'Pour comparer des gaz différents, on utilise le pouvoir de réchauffement global (PRG, ou GWP en anglais) : il compare le forçage radiatif intégré sur un horizon donné après l’émission d’un kilogramme d’un gaz à celui d’un kilogramme de CO₂, pris comme référence égale à 1. Les valeurs de l’IPCC AR6 sur 100 ans sont de 29,8 pour le méthane d’origine fossile, 27,0 pour le méthane d’origine non fossile et 273 pour le N₂O. Sur 20 ans, le PRG du méthane est de 82,5 (origine fossile) ou 79,7 (origine non fossile), alors que celui du N₂O reste à 273. Le PRG du méthane baisse avec l’horizon parce que ce gaz disparaît en une douzaine d’années, tandis que le CO₂ de référence continue d’agir beaucoup plus longtemps.',
+            'Le PRG est une métrique conventionnelle : le choix de l’horizon (20 ou 100 ans) change fortement la valeur du méthane et donc le classement des gaz. Le CO₂ équivalent (CO₂e) s’obtient en multipliant la masse émise de chaque gaz par son PRG. Il faut aussi distinguer la masse émise de la contribution au forçage radiatif. D’après le Global Methane Budget, le CH₄ a contribué pour environ 31 % (1,19 W m⁻²) au forçage radiatif additionnel (3,84 W m⁻²) attribué aux émissions anthropiques de gaz à effet de serre et de leurs précurseurs sur l’ère industrielle. D’après l’IPCC AR6 (cité par Tian et al., 2024), le N₂O a contribué pour 6,4 % au forçage radiatif effectif total accru des gaz à effet de serre sur 1750–2022. Ces deux pourcentages ont des dénominateurs différents et ne s’additionnent pas.'
+          ],
+          example: {
+            statement: 'Une installation rejette 2 t de méthane d’origine fossile et 0,5 t de N₂O. Calculer l’émission totale en tonnes de CO₂ équivalent avec les PRG à 100 ans de l’IPCC AR6 (29,8 pour le méthane fossile, 273 pour le N₂O).',
+            calculation: '2 × 29,8 = 59,6 tCO₂e ; 0,5 × 273 = 136,5 tCO₂e ; total : 59,6 + 136,5 = 196,1 tCO₂e.',
+            answer: 'Environ 196,1 tCO₂e à l’horizon de 100 ans. Cette valeur dépend de la métrique choisie : avec un horizon de 20 ans, le méthane serait pondéré par 82,5.'
+          },
+          exercise: {
+            question: 'Pourquoi le PRG du méthane est-il plus élevé sur 20 ans que sur 100 ans ?',
+            answer: 'Parce que le méthane est détruit en une douzaine d’années en moyenne : son effet est concentré sur les premières décennies, alors que le CO₂ de référence continue d’agir bien plus longtemps. Plus l’horizon est long, plus le rapport diminue.'
+          },
+          exercises: [
+            {
+              question: 'Quelles sont les durées de vie moyennes du CH₄ et du N₂O selon l’IPCC AR6 ?',
+              answer: 'Environ 11,8 ans pour le CH₄ et environ 109 ans pour le N₂O.'
+            },
+            {
+              question: 'Quel secteur est la principale source anthropique de N₂O ?',
+              answer: 'L’agriculture (engrais azotés et fumier), avec environ 74 % des émissions anthropiques de N₂O de la décennie 2010–2019.'
+            },
+            {
+              question: 'Quelle part des émissions mondiales de méthane de 2010–2019 est attribuée à des sources anthropiques directes ?',
+              answer: 'Environ 65 % (369 Tg CH₄ par an sur 575 Tg CH₄ par an, selon l’approche descendante).'
+            },
+            {
+              question: 'Quelles sont les concentrations annuelles moyennes de CO₂, CH₄ et N₂O en 2019 selon l’IPCC ?',
+              answer: '410 ppm pour le CO₂, 1866 ppb pour le CH₄ et 332 ppb pour le N₂O.'
+            }
+          ],
+          sources: [
+            { title: 'IPCC AR6 WGI — Summary for Policymakers', url: 'https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf' },
+            { title: 'IPCC AR6 WGI — Chapitre 7 (durées de vie et PRG)', url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-7/' },
+            { title: 'GHG Protocol — IPCC Global Warming Potential Values (août 2024)', url: 'https://ghgprotocol.org/sites/default/files/2024-08/Global-Warming-Potential-Values%20%28August%202024%29.pdf' },
+            { title: 'Saunois et al. (2025) — Global Methane Budget 2000–2020, Earth System Science Data', url: 'https://essd.copernicus.org/articles/17/1873/2025/' },
+            { title: 'Global Carbon Project — Global CH4 Budget 2000–2020 (résumé)', url: 'https://cger.nies.go.jp/gcp/news/20250509.html' },
+            { title: 'Tian et al. (2024) — Global Nitrous Oxide Budget 1980–2020, Earth System Science Data', url: 'https://essd.copernicus.org/articles/16/2543/2024/' }
+          ]
+        }
+      },
+      {
+        id: 'perturbation-bilan',
+        title: 'La perturbation du cycle : bilan mondial du carbone, puits et acidification',
+        field: 'Sciences du climat · Budget global du carbone · De 1750 à 2025',
+        summary: 'Comprendre le bilan annuel des émissions et des puits de carbone, ses incertitudes, la fragilité des puits naturels et l’acidification de l’océan.',
+        lesson: {
+          sections: [
+            'Les mesures directes de CO₂ atmosphérique ont commencé en 1958 avec Charles David Keeling à Mauna Loa (Hawaï) : la première valeur enregistrée était de 313 ppm le 29 mars 1958. Le NOAA Global Monitoring Laboratory entretient ce suivi. Le pic saisonnier de mai a atteint 430,5 ppm en 2025, puis 432,3 ppm en 2026, soit une hausse de 1,8 ppm en un an. Ces valeurs mensuelles de Mauna Loa ne doivent pas être confondues avec la moyenne mondiale annuelle : 422,8 ppm en 2024 et, d’après l’estimation préliminaire du Global Carbon Budget, 425,6 ppm en 2025, soit 53 % au-dessus du niveau préindustriel d’environ 278 ppm.',
+            'Le Global Carbon Budget quantifie cinq composantes : émissions fossiles (E_FOS), émissions des changements d’usage des terres (E_LUC), croissance du CO₂ atmosphérique (G_ATM), puits océanique (S_OCEAN) et puits terrestre (S_LAND). Leur somme laisse un déséquilibre budgétaire B_IM = E_FOS + E_LUC − (G_ATM + S_OCEAN + S_LAND), mesure de nos données et connaissances imparfaites. En 2024, les émissions fossiles sont de 10,3 ± 0,5 GtC (37,8 ± 1,8 GtCO₂), celles des usages des terres de 1,3 ± 0,7 GtC, soit au total 11,6 ± 0,9 GtC (42,4 ± 3,2 GtCO₂). Pour 2025, l’estimation préliminaire est de 10,4 GtC fossiles (38,1 GtCO₂) et de 11,5 GtC au total (42,2 GtCO₂).',
+            'Sur 2015–2024, le Global Carbon Budget attribue environ 50 % des émissions à l’atmosphère (5,6 GtC par an, soit 2,6 ppm par an), environ 29 % à l’océan (3,2 ± 0,4 GtC par an) et environ 21 % aux terres (2,4 ± 0,8 GtC par an). L’IPCC AR6 donne pour sa part environ 56 % d’absorption par les terres et l’océan sur six décennies ; les périodes et les méthodes diffèrent. Les puits ne sont ni constants ni garantis : le puits terrestre stagne depuis 2000 et le puits océanique depuis 2016, et le changement climatique réduit les puits terrestre et océanique de 25 % et de 7,1 % en moyenne sur 2015–2024. Le puits terrestre a chuté à 1,9 GtC en 2024 pendant l’épisode El Niño, avant une estimation préliminaire de 3,1 GtC en 2025.',
+            'Le CO₂ absorbé par l’océan réagit avec l’eau de mer et libère des ions hydrogène : le pH baisse, c’est l’acidification. D’après l’Agence européenne pour l’environnement, le pH moyen de surface est passé d’environ 8,2 à moins de 8,1 depuis l’ère industrielle, ce qui correspond à une hausse d’acidité d’environ 30 %, et l’acidification récente est environ 100 fois plus rapide que lors des événements naturels des 55 derniers millions d’années. L’échelle de pH étant logarithmique, une baisse de 0,1 unité multiplie la concentration en ions H⁺ par 10^0,1 ≈ 1,26 ; le chiffre de 30 % provient de valeurs de pH non arrondies. L’océan reste légèrement basique (pH supérieur à 7) : il devient moins basique, et non « acide ». Les modèles projettent un pH de surface de 8,05 à 7,75 en 2100 selon les émissions.',
+            'Le Global Carbon Budget calcule aussi le budget carbone restant. À partir du début de 2026, pour avoir 50 % de chances de limiter le réchauffement à 1,5 °C, il reste 170 GtCO₂ (50 GtC), soit environ 4 ans aux émissions de 2025 ; les budgets pour 1,7 °C et 2 °C sont de 525 GtCO₂ (12 ans) et de 1055 GtCO₂ (25 ans). Il estime le réchauffement attribué aux activités humaines à 1,36 °C en 2024, et environ 0,1 °C de réchauffement supplémentaire pour chaque tranche de 180 GtCO₂ émise (valeur différente de l’estimation 1,07 °C de l’IPCC pour 2010–2019, qui porte sur une autre période). Des signaux de ralentissement existent : les émissions totales ont crû de 0,3 % par an sur 2015–2024 contre 1,9 % par an sur 2005–2014, et les émissions fossiles ont diminué dans 35 économies à PIB croissant. Elles restent toutefois à un niveau record.'
+          ],
+          example: {
+            statement: 'Le budget carbone restant pour 50 % de chances de limiter le réchauffement à 1,5 °C est de 170 GtCO₂ au début de 2026. Les émissions totales de 2025 sont estimées à 42,2 GtCO₂. Combien d’années ce budget représente-t-il à ce rythme ?',
+            calculation: '170 ÷ 42,2 ≈ 4,03 ans.',
+            answer: 'Environ 4 ans si les émissions restaient au niveau de 2025. C’est un calcul d’ordre de grandeur : le budget restant est lui-même une estimation incertaine.'
+          },
+          exercise: {
+            question: 'Calculer le déséquilibre budgétaire 2024 avec E_FOS = 10,3, E_LUC = 1,3, G_ATM = 7,9, S_OCEAN = 3,4 et S_LAND = 1,9 (en GtC par an).',
+            answer: 'B_IM = (10,3 + 1,3) − (7,9 + 3,4 + 1,9) = 11,6 − 13,2 = −1,6 GtC par an avec ces valeurs arrondies. La publication indique −1,7 GtC par an à partir de valeurs non arrondies, ce qui suggère que le puits total ou la croissance atmosphérique est surestimé en 2024.'
+          },
+          exercises: [
+            {
+              question: 'Quelle est la première valeur de CO₂ enregistrée par Keeling à Mauna Loa ?',
+              answer: '313 ppm, le 29 mars 1958.'
+            },
+            {
+              question: 'Quelle fraction des émissions anthropiques de 2015–2024 est restée dans l’atmosphère, selon le Global Carbon Budget ?',
+              answer: 'Environ 50 % ; le reste a été absorbé à environ 29 % par l’océan et à environ 21 % par les terres.'
+            },
+            {
+              question: 'Pourquoi l’océan n’est-il pas « un puits sans conséquence » ?',
+              answer: 'Parce que le CO₂ absorbé acidifie l’eau de mer : le pH de surface est passé d’environ 8,2 à moins de 8,1 depuis l’ère industrielle, ce qui peut affecter les organismes marins et les écosystèmes.'
+            },
+            {
+              question: 'Quelle différence y a-t-il entre la valeur de Mauna Loa en mai et la moyenne mondiale annuelle ?',
+              answer: 'La valeur de mai est un pic saisonnier mesuré à un seul observatoire (430,5 ppm en 2025), alors que la moyenne mondiale annuelle regroupe plusieurs stations sur toute l’année (422,8 ppm en 2024).'
+            }
+          ],
+          sources: [
+            { title: 'Friedlingstein et al. (2026) — Global Carbon Budget 2025, Earth System Science Data', url: 'https://essd.copernicus.org/articles/18/3211/2026/' },
+            { title: 'UC San Diego — Annual Carbon Dioxide Peak Reaches 432 Parts per Million', url: 'https://today.ucsd.edu/story/annual-carbon-dioxide-peak-reaches-432-parts-per-million' },
+            { title: 'NOAA Global Monitoring Laboratory — Trends in CO2, CH4, N2O, SF6', url: 'https://gml.noaa.gov/ccgg/trends/' },
+            { title: 'Agence européenne pour l’environnement (Climate-ADAPT) — Ocean acidification', url: 'https://climate-adapt.eea.europa.eu/en/metadata/indicators/ocean-acidification' },
+            { title: 'IPCC AR6 WGI — Summary for Policymakers', url: 'https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf' }
+          ]
+        }
+      }
+    ]
+  },
+
 
 
 ]
