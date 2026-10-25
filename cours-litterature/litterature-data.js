@@ -1987,7 +1987,651 @@ window.courseCatalog = [
   },
 
 
+{
+  id: 'poetes-perses',
+  sortYear: 858,
+  title: 'Les grands poètes perses',
+  note: 'Six chapitres pour découvrir la poésie persane classique, de Rudaki au 9e siècle à Jami au 15e siècle. Les dates médiévales sont parfois approximatives. La poésie persane s’est développée dans un vaste espace culturel comprenant notamment l’Iran, l’Asie centrale, l’Afghanistan, le Caucase, l’Anatolie et l’Inde. Les œuvres et les traditions étudiées ne se limitent donc pas aux frontières actuelles de l’Iran.',
+  chapters: [
+    {
+      id: 'naissance-poesie-persane',
+      title: 'La naissance et les formes de la poésie persane classique',
+      field: 'Littérature · Monde persanophone · 9e–15e siècles',
+      summary: 'Situer l’essor de la poésie persane écrite, comprendre ses principales formes et distinguer langue, territoire, genres et fonctions littéraires.',
+      lesson: {
+        sections: [
+          'La poésie persane classique prend son essor dans le monde iranien et persanophone après l’installation de nouvelles dynasties musulmanes. À partir des 9e et 10e siècles, le persan devient une langue majeure de création littéraire et de culture de cour. Il s’écrit généralement avec une adaptation de l’alphabet arabe, tout en conservant une identité linguistique propre. La tradition persane ne se réduit pas à l’Iran actuel : elle circule aussi en Asie centrale, en Afghanistan, dans le Caucase, en Anatolie et dans le sous-continent indien. Il faut donc distinguer la langue de composition, l’origine d’un auteur et les territoires où ses œuvres sont lues.',
+          'Les poètes écrivent dans des contextes variés : cours princières, milieux savants, réseaux soufis et espaces urbains. La poésie peut célébrer un souverain, raconter des histoires héroïques ou amoureuses, transmettre des conseils moraux, explorer l’expérience spirituelle ou réfléchir au temps et à la mortalité. Ces fonctions peuvent se mêler au sein d’une même œuvre. Les poètes ne sont pas tous des mystiques, et une image religieuse ou amoureuse ne possède pas nécessairement une seule interprétation.',
+          'Parmi les formes importantes figurent le masnavi, poème narratif composé de distiques dont les rimes changent généralement à chaque distique ; le ghazal, poème lyrique constitué de distiques soumis à un système de rimes ; le robai, quatrain persan ; et la qasida, poème souvent long, fréquemment associé à l’éloge ou à d’autres sujets solennels. Les définitions pratiques doivent tenir compte des variations historiques et des conventions de chaque auteur. Le mètre et la rime sont des éléments essentiels de nombreuses traditions classiques, mais les formes ne déterminent pas à elles seules le sens d’un texte.',
+          'La transmission des poèmes dépend longtemps de la copie manuscrite, des anthologies, des récitations et des milieux de cour. Les manuscrits illustrés témoignent du prestige accordé à certaines œuvres et de leur circulation entre différentes régions. Les éditions modernes et les traductions ont ensuite contribué à former des images internationales des poètes. Il faut cependant éviter de confondre la réputation occidentale d’un auteur avec sa place dans toutes les cultures persanophones : Omar Khayyam, par exemple, est souvent connu en Occident par les traductions de ses quatrains, tandis que les traditions de lecture persanophones ont aussi accordé une place centrale à d’autres aspects de son héritage scientifique et littéraire.'
+        ],
+        example: {
+          statement: 'Un élève classe quatre textes : un long récit héroïque en vers, un poème lyrique en distiques, un texte narratif en distiques à rimes successives et un poème bref de quatre vers. Quel vocabulaire littéraire peut-il employer avec prudence ?',
+          calculation: 'On rapproche chaque description de la forme dominante : récit héroïque, ghazal, masnavi et robai. Le sujet et la structure complète du texte doivent être vérifiés avant de fixer une classification définitive.',
+          answer: 'Le récit héroïque peut relever de l’épopée ; le poème lyrique en distiques peut être un ghazal ; le récit en distiques à rimes successives peut être un masnavi ; le poème de quatre vers peut être un robai. Ces rapprochements sont des repères, pas des preuves suffisantes à eux seuls.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il inexact de présenter la poésie persane classique comme une tradition limitée aux frontières de l’Iran contemporain ?',
+          answer: 'Parce que le persan a circulé comme langue littéraire dans de nombreuses régions, notamment en Asie centrale, en Afghanistan, dans le Caucase, en Anatolie et en Inde.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’un masnavi dans la poésie persane classique ?',
+            answer: 'Un poème narratif en distiques, dont le système de rimes change généralement d’un distique au suivant.'
+          },
+          {
+            question: 'Quelle est la différence générale entre un ghazal et une épopée ?',
+            answer: 'Le ghazal est une forme lyrique souvent centrée sur des états affectifs, des images et des réflexions ; l’épopée développe plutôt un récit ample autour de héros, de souverains ou d’événements collectifs.'
+          },
+          {
+            question: 'Les thèmes mystiques sont-ils présents chez tous les poètes persans ?',
+            answer: 'Non. Ils sont importants chez plusieurs auteurs, mais la poésie persane comprend aussi des œuvres épiques, amoureuses, morales, satiriques et panégyriques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Library of Congress — Classical Persian Poetry',
+            url: 'https://www.loc.gov/exhibits/thousand-years-of-the-persian-book/classical-persian-poetry.html'
+          },
+          {
+            title: 'University of California, Santa Barbara — Persian Languages and Literature: Literature',
+            url: 'https://persian.religion.ucsb.edu/resources/literature/'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Ghazal, History',
+            url: 'https://www.iranicaonline.org/articles/gazal-1-history/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'rudaki-ferdowsi',
+      title: 'Rudaki et Ferdowsi : langue littéraire et mémoire épique',
+      field: 'Poésie persane · 9e–11e siècles · Asie centrale et Khorasan',
+      summary: 'Découvrir Rudaki, associé aux débuts de la poésie persane classique, puis Ferdowsi et son grand poème épique, le Shahnameh.',
+      lesson: {
+        sections: [
+          'Rudaki, poète actif à l’époque samanide, est traditionnellement considéré comme l’une des premières grandes figures de la poésie persane nouvelle. Il est associé à la cour samanide et à l’essor d’une littérature de cour en persan. Les sources le situent généralement entre 858 et environ 941, mais les renseignements biographiques anciens restent incomplets. Une part importante de son œuvre n’a pas été conservée intégralement ; son importance se mesure donc à la fois à ses fragments survivants et à sa place dans l’histoire littéraire reconstruite par les chercheurs.',
+          'Ferdowsi, originaire de Tus dans le Khorasan, est principalement connu pour le Shahnameh, ou Livre des Rois. Cette vaste épopée en vers rassemble des récits de souverains, de héros, de conflits, de fidélité et de destin. Elle puise largement dans des traditions légendaires et historiques iraniennes antérieures à l’islam, transmises et remaniées au fil du temps. Il serait toutefois inexact de lire le Shahnameh comme une chronique factuelle au sens moderne : le texte est une œuvre littéraire qui mêle mémoire culturelle, légende, représentation du pouvoir et réflexion morale.',
+          'La composition du Shahnameh s’étend sur plusieurs décennies et son achèvement est généralement situé autour de 1010, même si les détails de la chronologie et de la relation entre Ferdowsi et le pouvoir ghaznévide font l’objet de discussions. L’œuvre a contribué à transmettre un vaste répertoire de récits iraniens et à renforcer le prestige du persan comme langue de culture. Son influence s’est prolongée par la copie manuscrite, la récitation, l’illustration et la réinterprétation de ses épisodes dans plusieurs régions du monde persanophone.',
+          'Rudaki et Ferdowsi représentent deux dimensions différentes de la tradition : l’essor d’une poésie de cour et la construction d’une mémoire épique de grande ampleur. Il ne faut pas pour autant supposer que la poésie persane commence avec un seul auteur ni que la culture iranienne ancienne a été préservée sans transformation. Les textes ont été transmis, réécrits, sélectionnés et interprétés dans des contextes politiques et religieux différents.'
+        ],
+        example: {
+          statement: 'Un musée présente un manuscrit illustré du Shahnameh et le décrit comme une source sur les rois et les héros de l’Iran ancien. Quelle distinction faut-il expliquer au public ?',
+          calculation: 'Il faut séparer le témoignage sur la réception de l’œuvre — le manuscrit montre comment des lecteurs ont transmis et illustré le récit — de la valeur factuelle de chaque épisode raconté.',
+          answer: 'Le manuscrit est une source directe sur la transmission et la réception du Shahnameh à l’époque où il a été copié. En revanche, les épisodes du poème ne peuvent pas être traités automatiquement comme des faits historiques vérifiés.'
+        },
+        exercise: {
+          question: 'Pourquoi le Shahnameh est-il important pour l’histoire culturelle persane ?',
+          answer: 'Parce qu’il transmet un vaste ensemble de récits héroïques et royaux iraniens et qu’il a joué un rôle durable dans la littérature, la mémoire culturelle et les arts du monde persanophone.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le titre persan du Livre des Rois de Ferdowsi ?',
+            answer: 'Shahnameh.'
+          },
+          {
+            question: 'Le Shahnameh doit-il être utilisé comme une chronique moderne entièrement factuelle ?',
+            answer: 'Non. C’est une épopée qui combine traditions légendaires, mémoire culturelle et élaboration littéraire.'
+          },
+          {
+            question: 'Pourquoi les informations biographiques sur Rudaki doivent-elles être présentées avec prudence ?',
+            answer: 'Parce que les sources médiévales sont limitées et qu’une partie de son œuvre comme de sa biographie n’est connue que de manière fragmentaire.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Iranica — Persian Literature, Classical',
+            url: 'https://www.iranicaonline.org/articles/iran-viii2-classical-persian-literature/'
+          },
+          {
+            title: 'Library of Congress — Classical Persian Poetry',
+            url: 'https://www.loc.gov/exhibits/thousand-years-of-the-persian-book/classical-persian-poetry.html'
+          },
+          {
+            title: 'Library of Congress — The Persian Book: Exhibition Overview',
+            url: 'https://www.loc.gov/exhibits/thousand-years-of-the-persian-book/overview.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'khayyam-et-le-robai',
+      title: 'Omar Khayyam : quatrains, temps et incertitude',
+      field: 'Poésie et histoire des sciences · 11e–15e siècles pour la transmission des quatrains',
+      summary: 'Étudier la réputation littéraire de Khayyam et comprendre pourquoi l’attribution de nombreux quatrains exige une approche critique.',
+      lesson: {
+        sections: [
+          'Omar Khayyam, né vers 1048 et mort vers 1123 selon l’Encyclopaedia Iranica, est un savant persan connu pour ses travaux scientifiques et philosophiques autant que pour les poèmes qui lui sont attribués. Son nom est associé à des recherches en mathématiques et en astronomie. La place accordée à sa poésie varie selon les traditions de réception : dans plusieurs contextes occidentaux, il est devenu célèbre surtout par les traductions des Rubaiyat, alors que son profil historique est celui d’un intellectuel aux activités multiples.',
+          'Le robai est un poème bref de quatre vers, utilisé notamment pour condenser une observation, une interrogation ou une réflexion. Les quatrains attribués à Khayyam évoquent souvent la brièveté de la vie, l’incertitude humaine, le temps qui passe et les limites de la connaissance. Il faut toutefois éviter de présenter tous ces thèmes comme une doctrine unique et stable de l’auteur : les textes transmis sous son nom ne constituent pas un corpus dont l’authenticité serait unanimement établie.',
+          'L’authenticité est un problème central. Selon l’Encyclopaedia Iranica, des vers attribués à Khayyam apparaissent dans des sources postérieures à sa mort et le nombre de quatrains qui lui sont attribués a augmenté au cours des siècles. Les compilations manuscrites ne donnent pas toutes la même sélection. Les chercheurs distinguent donc les témoignages anciens, les manuscrits, les critères linguistiques et stylistiques ainsi que l’histoire de la transmission. Un quatrain imprimé dans une édition moderne des Rubaiyat ne peut pas être déclaré authentique uniquement parce qu’il figure dans cette collection.',
+          'La renommée internationale des Rubaiyat a été fortement façonnée par la version anglaise libre d’Edward FitzGerald, publiée au 19e siècle et remaniée dans plusieurs éditions. Il ne s’agit pas d’une traduction littérale et neutre de l’ensemble des quatrains persans : c’est une œuvre de traduction et de réécriture qui a profondément influencé la perception occidentale de Khayyam. Pour étudier le poète avec rigueur, il faut donc différencier le Khayyam historique, les quatrains dont l’attribution est discutée et l’image créée par les traductions modernes.'
+        ],
+        example: {
+          statement: 'Une anthologie moderne attribue 500 quatrains à Khayyam, tandis qu’une étude critique retient un ensemble beaucoup plus réduit. Quelle conclusion est justifiée ?',
+          calculation: 'Comparer les nombres ne suffit pas : il faut examiner les critères de sélection, les témoins manuscrits et la date des sources qui transmettent les poèmes.',
+          answer: 'Les recueils n’appliquent pas nécessairement les mêmes critères d’authenticité. Le nombre de poèmes attribués à Khayyam ne prouve pas à lui seul que chacun est de sa main.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les quatrains attribués à Khayyam de ceux dont l’authenticité est mieux étayée ?',
+          answer: 'Parce que les poèmes ont été transmis dans des sources de dates différentes et que le corpus attribué au poète s’est élargi au fil des siècles ; les spécialistes évaluent donc chaque attribution avec prudence.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on un quatrain dans la tradition poétique persane ?',
+            answer: 'Un robai ; le pluriel persan est robaiyat.'
+          },
+          {
+            question: 'La version des Rubaiyat d’Edward FitzGerald est-elle une traduction littérale exhaustive ?',
+            answer: 'Non. C’est une adaptation littéraire anglaise qui a largement contribué à la réception occidentale de Khayyam.'
+          },
+          {
+            question: 'Quel est un problème majeur pour établir le corpus poétique de Khayyam ?',
+            answer: 'De nombreux quatrains lui ont été attribués après sa mort, et les recueils ainsi que les manuscrits divergent sur le contenu du corpus.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Iranica — Omar Khayyam',
+            url: 'https://www.iranicaonline.org/articles/khayyam-omar/'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Omar Khayyam, Poetry',
+            url: 'https://www.iranicaonline.org/articles/khayyam-omar/khayyam-omar-ii-poetry/'
+          },
+          {
+            title: 'Library of Congress — Classical Persian Poetry',
+            url: 'https://www.loc.gov/exhibits/thousand-years-of-the-persian-book/classical-persian-poetry.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'nezami-et-epopee-romanesque',
+      title: 'Nizami de Ganja : récits amoureux et épopée romanesque',
+      field: 'Poésie narrative · 12e–13e siècles · Ganja et monde persanophone',
+      summary: 'Découvrir le Khamsa de Nizami et le rôle de la narration, de l’amour et de l’éthique dans la poésie romanesque persane.',
+      lesson: {
+        sections: [
+          'Nizami de Ganja, généralement daté de 1141 à 1209, est l’une des grandes figures de la poésie narrative persane. Ganja se situe aujourd’hui en Azerbaïdjan. Son œuvre appartient à un espace littéraire où la langue persane servait à composer et à diffuser des récits bien au-delà d’une seule cour ou d’un seul territoire. Les repères biographiques restent plus limités que ne le suggèrent parfois les récits populaires, et il convient de distinguer les données historiques établies des traditions ultérieures sur sa vie.',
+          'Son ensemble le plus célèbre est le Khamsa, également appelé Panj Ganj, c’est-à-dire un cycle de cinq longs poèmes narratifs. Il comprend notamment des récits liés à Khosrow et Shirin, Layla et Majnun, ainsi qu’à Bahram Gur. Ces œuvres réélaborent des matériaux historiques, légendaires et littéraires. Elles ne sont pas de simples transcriptions de faits : Nizami travaille les personnages, la narration, les images et les enjeux moraux pour construire des œuvres poétiques élaborées.',
+          'L’amour y est rarement une émotion isolée du reste de l’existence. Il peut éprouver la loyauté, la maîtrise de soi, la sagesse ou la capacité à reconnaître les conséquences de ses actes. Les récits font aussi place à la politique, à la justice, au pouvoir royal et à la responsabilité. Il faut éviter de réduire Layla et Majnun à une simple histoire sentimentale : le poème est construit dans une tradition littéraire qui examine les limites imposées aux individus, la séparation et les transformations du désir.',
+          'Le Khamsa a été abondamment copié et illustré dans les cours persanes et mogholes. Les manuscrits enluminés montrent que les récits de Nizami ont inspiré les arts visuels autant que la littérature. Les miniatures ne doivent cependant pas être confondues avec des témoignages visuels directs sur l’époque racontée : elles renseignent d’abord sur les conventions artistiques, les commanditaires et les lectures de la période où elles ont été produites.'
+        ],
+        example: {
+          statement: 'Un manuscrit illustré du Khamsa représente une scène de Layla et Majnun dans un jardin. Que peut-on étudier à partir de l’image sans la prendre pour une photographie du passé ?',
+          calculation: 'On distingue la date de production du manuscrit, les conventions de la miniature, le choix de la scène et le texte auquel l’image se rattache.',
+          answer: 'L’image permet d’étudier la réception du récit, les codes visuels et le milieu culturel du manuscrit. Elle ne constitue pas une preuve directe que la scène s’est produite historiquement.'
+        },
+        exercise: {
+          question: 'Pourquoi le Khamsa de Nizami est-il un jalon de la poésie narrative persane ?',
+          answer: 'Il rassemble cinq longs poèmes qui ont développé des récits amoureux, héroïques et éthiques, puis ont profondément influencé la littérature et l’art du monde persanophone.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie le nom Khamsa dans ce contexte ?',
+            answer: 'Il désigne un ensemble de cinq poèmes narratifs.'
+          },
+          {
+            question: 'Le récit de Layla et Majnun doit-il être lu uniquement comme une histoire d’amour ?',
+            answer: 'Non. Il peut aussi être étudié comme une réflexion littéraire sur la séparation, les contraintes sociales, le désir et les conventions narratives.'
+          },
+          {
+            question: 'Que nous apprennent les miniatures ajoutées aux manuscrits de Nizami ?',
+            answer: 'Elles renseignent sur la réception des récits, les conventions artistiques et les milieux de production des manuscrits.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Library of Congress — Classical Persian Poetry: Nizami Ganjavi',
+            url: 'https://www.loc.gov/exhibits/thousand-years-of-the-persian-book/classical-persian-poetry.html'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Persian Literature, Classical',
+            url: 'https://www.iranicaonline.org/articles/iran-viii2-classical-persian-literature/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'attar-et-rumi',
+      title: 'Attar et Rumi : la poésie mystique et le voyage intérieur',
+      field: 'Poésie soufie · 12e–13e siècles · Khorasan, Anatolie et monde persanophone',
+      summary: 'Explorer les récits allégoriques d’Attar et les œuvres de Rumi sans réduire la poésie soufie à une seule interprétation religieuse.',
+      lesson: {
+        sections: [
+          'Attar de Nishapur, dont la vie est généralement située au tournant des 12e et 13e siècles et dont la mort est souvent datée de 1221, est une figure majeure de la poésie mystique persane. Il est notamment associé au Mantiq al-tayr, souvent traduit par La Conférence des oiseaux. Dans ce récit allégorique, des oiseaux entreprennent une quête guidée par la huppe. Le voyage met en scène des étapes, des hésitations et des transformations qui permettent d’examiner les difficultés d’une recherche spirituelle. Comme pour d’autres auteurs médiévaux, les détails biographiques et l’attribution de certaines œuvres demandent de la prudence.',
+          'L’allégorie donne à un récit concret un sens qui dépasse l’action racontée. Les oiseaux peuvent être lus comme des figures de la condition humaine, et le voyage comme une recherche qui exige de dépasser l’orgueil, la dispersion ou les illusions. Cette lecture ne signifie pas que chaque élément possède une équivalence unique et mécanique. Les textes soufis utilisent souvent des images, des paradoxes et des récits enchâssés qui appellent une interprétation attentive au contexte et à la tradition de lecture.',
+          'Jalal al-Din Rumi (1207–1273) est né dans la région de Balkh et a vécu notamment à Konya, dans l’actuelle Turquie. Il a écrit des œuvres en prose et plusieurs grands ensembles poétiques en persan. Le Masnavi-ye Ma’navi, composé de six livres, associe récits, anecdotes, réflexions et enseignements dans une œuvre majeure de la tradition soufie. Le Divan-e Shams, autre ensemble important, est connu pour ses poèmes lyriques. Il est donc inexact de réduire toute l’œuvre de Rumi à des citations isolées ou à une idée générale d’amour détachée de son cadre intellectuel et spirituel.',
+          'Attar et Rumi participent à une tradition qui emploie le récit, le rythme, les images et la voix poétique pour interroger la connaissance de soi, l’attachement et la relation au divin. Cette poésie a circulé dans plusieurs régions et a été interprétée par des lecteurs appartenant à des contextes différents. Les traductions modernes peuvent transmettre une partie de sa force, mais elles modifient parfois les jeux de mots, les références religieuses et les formes métriques. Pour une analyse rigoureuse, il faut distinguer le texte persan, sa traduction et le commentaire qui l’accompagne.'
+        ],
+        example: {
+          statement: 'Dans un poème allégorique, des oiseaux traversent plusieurs étapes pour atteindre un but symbolique. Comment expliquer le rôle de l’allégorie ?',
+          calculation: 'On repère d’abord l’action littérale, puis on examine les parallèles possibles avec des idées morales ou spirituelles, en vérifiant que ces interprétations sont compatibles avec le texte et son contexte.',
+          answer: 'L’allégorie permet de représenter une recherche intérieure par un voyage concret. Il faut toutefois justifier l’interprétation par le texte au lieu d’attribuer arbitrairement un sens fixe à chaque personnage.'
+        },
+        exercise: {
+          question: 'Pourquoi le Masnavi de Rumi est-il considéré comme une œuvre majeure de la poésie soufie ?',
+          answer: 'Parce qu’il associe récits, anecdotes et enseignements spirituels dans une vaste composition poétique qui a exercé une influence durable dans le monde persanophone.'
+        },
+        exercises: [
+          {
+            question: 'Quelle œuvre d’Attar est connue en français sous le titre La Conférence des oiseaux ?',
+            answer: 'Le Mantiq al-tayr.'
+          },
+          {
+            question: 'Dans quelle ville Rumi a-t-il vécu une grande partie de sa vie adulte ?',
+            answer: 'À Konya, dans l’actuelle Turquie.'
+          },
+          {
+            question: 'Pourquoi faut-il se méfier des citations de Rumi diffusées sans référence ?',
+            answer: 'Parce que certaines formulations sont adaptées ou attribuées sans vérification ; le contexte, le texte persan et la traduction doivent être contrôlés.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Library of Congress — Classical Persian Poetry: Rumi',
+            url: 'https://www.loc.gov/exhibits/thousand-years-of-the-persian-book/classical-persian-poetry.html'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Ghazal, History',
+            url: 'https://www.iranicaonline.org/articles/gazal-1-history/'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Persian Literature, Classical',
+            url: 'https://www.iranicaonline.org/articles/iran-viii2-classical-persian-literature/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'saadi-hafez-jami',
+      title: 'Saadi, Hafez et Jami : sagesse, lyrisme et héritage classique',
+      field: 'Poésie morale et lyrique · 13e–15e siècles · Shiraz, Herat et monde persanophone',
+      summary: 'Comparer la narration morale de Saadi, le lyrisme complexe de Hafez et la production poétique et mystique de Jami.',
+      lesson: {
+        sections: [
+          'Saadi de Shiraz, généralement daté de 1210 à 1291 ou 1292, est connu pour deux œuvres majeures : le Bustan, composé en vers, et le Gulistan, qui mêle prose et passages poétiques. Ses textes associent récits, observations sur les conduites humaines et réflexions sur la justice, la générosité, la prudence et l’exercice du pouvoir. Les anecdotes ne sont pas de simples exemples décoratifs : elles donnent une forme narrative à des dilemmes moraux. Leur portée doit être étudiée dans leur contexte historique et littéraire plutôt que transformée automatiquement en règles universelles sans nuance.',
+          'Saadi a aussi composé des ghazals et des qasidas. Son œuvre montre que les catégories de poésie et de prose ne sont pas toujours séparées nettement dans les livres classiques : le Gulistan est principalement en prose, mais il incorpore des vers et travaille le rythme, les formules et les effets de contraste. Saadi a voyagé selon les récits traditionnels, mais tous les détails de ces voyages ne sont pas également vérifiables. Il est préférable de s’appuyer sur les œuvres et sur les éléments biographiques solidement documentés.',
+          'Hafez de Shiraz, dont les dates sont souvent données autour de 1315–1390, est l’un des grands maîtres du ghazal persan. Son Divan rassemble des poèmes lyriques qui mobilisent des images de l’amour, du vin, du jardin, de la taverne, du renoncement et de la critique de l’hypocrisie. Ces motifs sont polysémiques : selon le poème et la tradition d’interprétation, ils peuvent évoquer des expériences humaines, des critiques sociales ou des significations mystiques. Il est imprudent de traduire chaque image en un symbole religieux fixe ou, inversement, de considérer tous les motifs comme strictement littéraux.',
+          'La biographie de Hafez demeure partiellement obscure. L’Encyclopaedia Iranica avertit que plusieurs récits biographiques transmis dans les anthologies peuvent être peu fiables. Son influence, en revanche, est très importante dans la poésie persane postérieure. Son Divan a aussi une place culturelle particulière dans les usages de lecture et de consultation populaire, notamment le fal-e Hafez ; cet usage relève de l’histoire de la réception et ne constitue pas une méthode scientifique de prédiction.',
+          'Jami (1414–1492), né à Jam dans l’actuel Afghanistan, est une figure majeure du 15e siècle. Poète, savant et auteur d’écrits liés au soufisme, il a composé des œuvres narratives et lyriques en persan. Le Haft Awrang, ou Sept Trônes, est l’un de ses ensembles les plus connus. Son œuvre illustre la vitalité de la poésie persane à une époque où elle circulait dans de nombreux centres intellectuels et artistiques. Il est plus juste de voir Jami comme un héritier et un réinterprète de traditions antérieures que comme le simple dernier représentant d’une tradition qui se serait ensuite arrêtée.',
+          'Ces trois auteurs montrent la diversité de la littérature persane classique. Saadi met fréquemment en scène des situations morales ; Hafez travaille la densité et l’ambiguïté du lyrisme ; Jami combine poésie, récit et réflexion savante. Leurs œuvres ont été copiées, commentées, traduites et illustrées pendant des siècles. Leur postérité résulte donc à la fois de leur écriture et des communautés de lecteurs qui les ont transmises.'
+        ],
+        example: {
+          statement: 'Un lecteur rencontre chez Hafez une image de vin et de taverne. Peut-il conclure immédiatement que le poème parle uniquement de consommation réelle, ou uniquement de mystique ?',
+          calculation: 'Il faut examiner le vocabulaire, les images voisines, la structure du ghazal, les conventions poétiques et les commentaires historiques avant de choisir une interprétation.',
+          answer: 'Non. Les images de Hafez sont souvent polysémiques et peuvent susciter plusieurs interprétations. Une lecture sérieuse doit être argumentée par le texte et le contexte.'
+        },
+        exercise: {
+          question: 'Quelle différence générale peut-on établir entre le Gulistan de Saadi et le Divan de Hafez ?',
+          answer: 'Le Gulistan est principalement en prose et combine anecdotes, réflexions et vers ; le Divan de Hafez est surtout connu comme un recueil de poésie lyrique, notamment de ghazals.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les deux œuvres majeures de Saadi souvent étudiées ensemble ?',
+            answer: 'Le Bustan et le Gulistan.'
+          },
+          {
+            question: 'Pourquoi l’interprétation des ghazals de Hafez demande-t-elle de la prudence ?',
+            answer: 'Parce que leurs images sont souvent allusives et polysémiques, et que les détails de sa biographie restent partiellement incertains.'
+          },
+          {
+            question: 'Quel est le titre de l’ensemble poétique le plus connu de Jami ?',
+            answer: 'Le Haft Awrang, ou Sept Trônes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Library of Congress — Classical Persian Poetry: Saadi',
+            url: 'https://www.loc.gov/exhibits/thousand-years-of-the-persian-book/classical-persian-poetry.html'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Hafez: Overview',
+            url: 'https://www.iranicaonline.org/articles/hafez-i/'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Hafez: Life and Times',
+            url: 'https://www.iranicaonline.org/articles/hafez-ii/'
+          },
+          {
+            title: 'Library of Congress — Classical Persian Poetry: Jami',
+            url: 'https://www.loc.gov/exhibits/thousand-years-of-the-persian-book/classical-persian-poetry.html'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Persian Literature, Classical',
+            url: 'https://www.iranicaonline.org/articles/iran-viii2-classical-persian-literature/'
+          }
+        ]
+      }
+    }
+  ]
+},
 
-];
+
+{
+  id: 'grands-poetes-arabes',
+  sortYear: 500,
+  title: 'Les grands poètes arabes',
+  note: 'Six chapitres consacrés à l’histoire de la poésie de langue arabe, de la période préislamique à la poésie contemporaine. Le parcours présente les grandes formes poétiques, la poésie de cour, le lyrisme, la satire, la poésie mystique et les transformations modernes. Les dates anciennes sont parfois approximatives, et les poèmes transmis par la tradition orale doivent être étudiés en tenant compte des incertitudes de leur transmission. La langue arabe est un critère littéraire distinct de l’origine ethnique, de la nationalité actuelle et de la religion des auteurs.',
+  chapters: [
+    {
+      id: 'poesie-arabe-preislamique',
+      title: 'La poésie arabe préislamique et les grandes odes',
+      field: 'Littérature arabe · Période préislamique · 6e siècle',
+      summary: 'Découvrir Imru al-Qays, les Muallaqat, la qasida et le rôle social de la poésie dans les sociétés arabes anciennes.',
+      lesson: {
+        sections: [
+          'La poésie arabe préislamique est principalement connue à travers des textes dont la transmission a longtemps reposé sur la récitation orale, avant leur collecte et leur mise par écrit dans les premiers siècles de l’islam. Les poètes y expriment notamment la mémoire du groupe, les relations entre tribus, les conflits, l’amour, le voyage, la nature et la réputation individuelle. La poésie possède une fonction sociale importante : la louange peut accroître le prestige d’un personnage ou d’un groupe, tandis que la satire peut contester sa réputation. Cependant, les textes conservés ne constituent pas un enregistrement intégral et immédiat de toute la culture poétique de l’Arabie ancienne.',
+          'Imru al-Qays, généralement situé dans la première moitié du 6e siècle, est traditionnellement considéré comme l’un des grands poètes préislamiques. Sa célèbre ode est associée au corpus des Muallaqat, un ensemble de poèmes majeurs transmis et commentés par les lettrés arabes. Les récits de sa vie comportent des éléments légendaires, et les spécialistes doivent distinguer les traditions biographiques de ce que les textes permettent réellement d’établir. Son importance littéraire repose notamment sur la richesse de ses images, ses descriptions et la construction de son ode.',
+          'La qasida est une forme majeure de la poésie arabe ancienne. Dans son modèle classique, elle peut commencer par l’évocation d’un lieu abandonné ou du souvenir d’une relation passée, poursuivre par un déplacement ou une description du voyage, puis développer une louange, une revendication ou un autre thème principal. Ce schéma n’est pas une règle absolue : les poèmes varient selon les auteurs et les contextes. La métrique et la rime jouent un rôle essentiel dans la composition traditionnelle et dans la mémorisation des vers.',
+          'Les Muallaqat sont généralement présentées dans les introductions littéraires comme un groupe de grandes odes préislamiques, souvent au nombre de sept dans la sélection traditionnelle la plus connue. Les listes et les traditions manuscrites peuvent toutefois varier. Leur étude permet d’aborder la langue poétique ancienne, les valeurs sociales, les représentations de la nature et les conventions de l’éloge ou de l’autoreprésentation. Il faut également garder à l’esprit que les textes transmis par des compilateurs postérieurs peuvent avoir subi des variations, des sélections ou des réorganisations.',
+          'L’importance de cette poésie ne signifie pas que toutes les sociétés arabes anciennes possédaient une culture uniforme. Les modes de vie, les réseaux politiques et les traditions locales variaient. La poésie que nous connaissons provient d’un corpus transmis et sélectionné : elle éclaire de nombreux aspects de ces sociétés, sans suffire à elle seule à reconstituer l’ensemble de leur histoire.'
+        ],
+        example: {
+          statement: 'Un historien étudie une qasida qui commence par le souvenir d’un lieu abandonné avant de décrire un voyage et de louer un personnage. Que peut-il en déduire ?',
+          calculation: 'Il compare l’organisation du poème aux conventions de la qasida et examine le vocabulaire, les images et les circonstances de composition lorsqu’elles sont connues.',
+          answer: 'Il peut identifier une structure caractéristique de nombreuses qasidas anciennes. Il ne doit toutefois pas supposer que toutes les odes suivent exactement le même schéma ni que le poème constitue un témoignage entièrement factuel.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il tenir compte de la transmission orale et de la collecte tardive pour étudier la poésie préislamique ?',
+          answer: 'Parce que les textes ont été transmis, sélectionnés et mis par écrit après leur composition supposée. Leur histoire de transmission peut comporter des variantes et des incertitudes.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’une qasida ?',
+            answer: 'Une forme traditionnelle de poème arabe généralement construite autour d’un mètre et d’une rime, dont les thèmes et l’organisation varient selon les œuvres.'
+          },
+          {
+            question: 'Quel poète est particulièrement associé à une célèbre ode des Muallaqat ?',
+            answer: 'Imru al-Qays.'
+          },
+          {
+            question: 'Les Muallaqat constituent-elles un enregistrement direct et complet de la société préislamique ?',
+            answer: 'Non. Elles sont des œuvres littéraires transmises par une tradition savante et orale dont les modalités doivent être prises en compte.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Cornell University Library — Arabic Literature: Poetry',
+            url: 'https://guides.library.cornell.edu/ArabicLiterature/Poetry'
+          },
+          {
+            title: 'Larousse — Imru al-Qays ibn Hadjr',
+            url: 'https://www.larousse.fr/encyclopedie/litterature/Imru_al-Qays_ibn_Hadjr/174170'
+          },
+          {
+            title: 'Ohio State University — Classical and Medieval Arabic Literature',
+            url: 'https://guides.osu.edu/arabicliterature/classicalandmedievalarabicliterature'
+          }
+        ]
+      }
+    },
+    {
+      id: 'poesie-arabe-omeyyade',
+      title: 'La poésie omeyyade : amour, satire et rivalités',
+      field: 'Littérature arabe · Période omeyyade · 7e–8e siècles',
+      summary: 'Étudier Jarir, al-Farazdaq et la poésie amoureuse, ainsi que les relations entre création littéraire, rivalités sociales et pouvoir.',
+      lesson: {
+        sections: [
+          'Sous les Omeyyades, de 661 à 750, la poésie arabe continue d’utiliser des formes héritées de la période ancienne tout en se développant dans de nouveaux contextes politiques et urbains. Les cours, les villes et les réseaux tribaux offrent des milieux de composition, de récitation et de patronage. La poésie peut célébrer un souverain, défendre une réputation, critiquer un adversaire ou exprimer des expériences amoureuses. Les changements politiques n’entraînent donc pas la disparition immédiate des anciennes conventions : ils modifient les situations dans lesquelles les poètes les utilisent.',
+          'Jarir et al-Farazdaq sont deux figures majeures de la satire et de la rivalité poétique de cette époque. Leurs échanges sont associés au naqaid, une pratique dans laquelle un poète répond à un autre, parfois en reprenant son mètre et sa rime pour contester ses affirmations, sa généalogie ou la valeur de son groupe. Ces compositions sont à la fois des œuvres littéraires et des interventions dans des conflits de réputation. Elles doivent être étudiées comme des discours polémiques, et non comme des descriptions neutres des personnes visées.',
+          'La poésie amoureuse connaît également des développements importants. Majnun Layla est devenu le personnage emblématique d’un amour contrarié, associé à la tradition de Qays et Layla. Les récits transmis sur lui ont été remaniés au fil du temps, et il convient de distinguer la figure littéraire de la biographie historiquement vérifiable. La tradition dite udhrite est souvent associée à une représentation de l’amour marqué par la fidélité, la séparation et la souffrance. Cette catégorie ne résume toutefois pas toute la poésie amoureuse de l’époque.',
+          'Les poèmes d’amour peuvent être liés à des conventions littéraires, à des expériences personnelles ou à des récits dont l’authenticité biographique est incertaine. Le locuteur d’un poème n’est pas automatiquement identique à l’auteur historique. De même, les personnages et les situations peuvent être stylisés. Une analyse rigoureuse examine donc la voix poétique, les images, les conventions du genre et les conditions de transmission avant de tirer des conclusions sur la vie privée d’un poète.',
+          'La poésie omeyyade témoigne ainsi d’une culture dans laquelle la parole poétique peut agir publiquement. La louange, la satire et le lyrisme ne sont pas de simples catégories esthétiques : ils peuvent intervenir dans la compétition sociale, la représentation de soi et les débats sur les valeurs. Cette diversité prépare plusieurs évolutions de la poésie arabe des siècles suivants.'
+        ],
+        example: {
+          statement: 'Un poète répond à une ode satirique en reprenant son mètre et sa rime pour attaquer la réputation de son auteur. Quel procédé reconnaît-on ?',
+          calculation: 'On examine la relation entre les deux poèmes, leur structure métrique, leurs thèmes communs et les attaques auxquelles le second texte répond.',
+          answer: 'Il peut s’agir d’un naqida, c’est-à-dire d’un poème de riposte inscrit dans une tradition de rivalité poétique. La classification dépend toutefois du fonctionnement précis des deux textes.'
+        },
+        exercise: {
+          question: 'Pourquoi les échanges satiriques de Jarir et al-Farazdaq sont-ils importants pour l’histoire littéraire ?',
+          answer: 'Ils montrent comment la poésie pouvait servir à la rivalité publique, à la défense de la réputation et à la compétition entre groupes, tout en développant des procédés littéraires spécifiques.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que le naqaid dans la poésie arabe ?',
+            answer: 'Une pratique de poésie de riposte dans laquelle un poète répond à un autre, souvent en reprenant son mètre et sa rime.'
+          },
+          {
+            question: 'Quels poètes sont célèbres pour leurs rivalités satiriques sous les Omeyyades ?',
+            answer: 'Jarir et al-Farazdaq.'
+          },
+          {
+            question: 'Peut-on traiter tous les récits sur Majnun Layla comme des faits biographiques certains ?',
+            answer: 'Non. La tradition mêle histoire littéraire, légende et réélaborations successives.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Ohio State University — Classical and Medieval Arabic Literature',
+            url: 'https://guides.osu.edu/arabicliterature/classicalandmedievalarabicliterature'
+          },
+          {
+            title: 'Cornell University Library — Arabic Literature: Poetry',
+            url: 'https://guides.library.cornell.edu/ArabicLiterature/Poetry'
+          }
+        ]
+      }
+    },
+    {
+      id: 'poesie-arabe-abbasside',
+      title: 'La poésie abbasside : Abou Nouwas et le renouvellement des formes',
+      field: 'Littérature arabe · Période abbasside · 8e–10e siècles',
+      summary: 'Comprendre l’évolution de la poésie dans les villes abbassides à travers Abou Nouwas, Abou Tammam et al-Buhturi.',
+      lesson: {
+        sections: [
+          'Le califat abbasside, établi en 750, voit se développer d’importants centres intellectuels et littéraires, notamment Bagdad et Bassora. Les poètes évoluent dans des milieux où se rencontrent des traditions arabes anciennes, des pratiques de cour, des savoirs savants et des influences culturelles diverses. La poésie conserve les exigences de la métrique classique, mais les auteurs expérimentent de nouveaux thèmes, des images plus complexes et des manières différentes de représenter la vie urbaine.',
+          'Abou Nouwas, dont les dates sont généralement situées vers 756–758 et 813–815, est une figure majeure de cette transformation. Il est connu pour des poèmes consacrés notamment au vin, à l’amour, à la chasse et à d’autres aspects de la vie urbaine. Ses œuvres jouent avec les conventions héritées de la qasida et peuvent détourner certains thèmes traditionnels. Son parcours illustre le fait que l’innovation ne signifie pas nécessairement l’abandon des règles métriques : elle peut aussi consister à modifier les sujets, le ton, les images et les attentes du public.',
+          'Abou Tammam et al-Buhturi comptent parmi les grands poètes de la période abbasside. Abou Tammam est également connu pour la Hamasa, une anthologie de poésie ancienne dont la sélection a contribué à la transmission d’un patrimoine littéraire. Al-Buhturi est souvent associé à une maîtrise raffinée de la langue et des conventions de l’éloge. Les deux auteurs montrent des orientations différentes dans la manière de travailler les images, les références traditionnelles et les effets rhétoriques. Il faut cependant éviter de réduire leurs œuvres à une opposition trop simple entre tradition et nouveauté.',
+          'Les formes poétiques restent étroitement liées à leur contexte de performance et de patronage. Les poèmes de louange peuvent célébrer un protecteur ou un souverain, tandis que d’autres textes explorent des sujets personnels, descriptifs ou satiriques. Les recueils et anthologies jouent un rôle essentiel dans la conservation des œuvres et dans la construction d’un canon littéraire. Ils influencent aussi la façon dont les générations ultérieures définissent les modèles de l’excellence poétique.',
+          'La poésie abbasside n’est pas homogène. Les auteurs partagent une langue littéraire et plusieurs conventions, mais diffèrent par leurs thèmes, leurs choix stylistiques et leurs relations aux institutions. Son étude permet de comprendre comment une tradition peut se renouveler de l’intérieur, par la réutilisation inventive de formes connues et par l’élargissement des sujets considérés comme dignes de poésie.'
+        ],
+        example: {
+          statement: 'Un poète conserve la métrique traditionnelle, mais remplace les thèmes habituels d’une ode par des scènes de la vie urbaine et un langage plus direct. Est-ce nécessairement une rupture complète avec la tradition ?',
+          calculation: 'On distingue la forme métrique, les thèmes, le registre de langue et les conventions auxquelles le texte fait référence.',
+          answer: 'Non. Il peut s’agir d’un renouvellement à l’intérieur de la tradition : un poète peut transformer les sujets et le style tout en conservant des formes métriques héritées.'
+        },
+        exercise: {
+          question: 'Comment Abou Nouwas contribue-t-il au renouvellement de la poésie arabe ?',
+          answer: 'Il adapte les formes héritées à de nouveaux sujets, à une sensibilité urbaine et à des choix stylistiques qui modifient les conventions de la poésie classique.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle période littéraire Abou Nouwas est-il principalement situé ?',
+            answer: 'La période abbasside.'
+          },
+          {
+            question: 'Quel poète abbasside est associé à l’anthologie Hamasa ?',
+            answer: 'Abou Tammam.'
+          },
+          {
+            question: 'L’innovation poétique abbasside implique-t-elle toujours l’abandon de la métrique classique ?',
+            answer: 'Non. Elle peut aussi concerner les thèmes, les images, le registre et les usages des formes traditionnelles.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Ohio State University — Classical and Medieval Arabic Literature',
+            url: 'https://guides.osu.edu/arabicliterature/classicalandmedievalarabicliterature'
+          },
+          {
+            title: 'Encyclopaedia Iranica — Arabic Literature in Iran',
+            url: 'https://www.iranicaonline.org/articles/arabic-iv/'
+          },
+          {
+            title: 'Larousse — Abou Nouwas',
+            url: 'https://www.larousse.fr/encyclopedie/litterature/Abu_Nuwas/170770'
+          },
+          {
+            title: 'Wiley — Abu Nuwas: Poet of Wine, Desire, the Hunt, and the Abbasid Empire',
+            url: 'https://onlinelibrary.wiley.com/doi/10.1002/9781118635193.ctwl0099'
+          }
+        ]
+      }
+    },
+    {
+      id: 'mutanabbi-maarri',
+      title: 'Al-Mutanabbi et Al-Ma’arri : maîtrise poétique et réflexion critique',
+      field: 'Littérature arabe médiévale · 10e–11e siècles',
+      summary: 'Étudier la virtuosité d’al-Mutanabbi et la réflexion intellectuelle d’Abou al-Ala al-Ma’arri.',
+      lesson: {
+        sections: [
+          'Al-Mutanabbi, né en 915 à Koufa et mort en 965 près de Bagdad, est considéré comme l’un des plus grands poètes de langue arabe. Sa carrière l’a conduit auprès de plusieurs protecteurs, notamment le prince hamdanide Sayf al-Dawla à Alep. Ses poèmes combinent ambition personnelle, réflexion sur le courage, louange politique et maîtrise rhétorique. Sa réputation repose en particulier sur sa capacité à construire des images puissantes, des formulations mémorables et des compositions d’une grande densité linguistique.',
+          'Le panégyrique, ou poésie de louange, occupe une place importante dans l’œuvre d’al-Mutanabbi. Dans ce genre, le poète célèbre les qualités d’un personnage et construit une représentation littéraire de son pouvoir. Il ne faut pas confondre cette représentation avec un portrait neutre : le texte répond à des conventions poétiques, à des attentes de cour et parfois aux intérêts du poète lui-même. L’analyse doit donc examiner à la fois la beauté formelle, la situation de composition et la fonction sociale du poème.',
+          'Abou al-Ala al-Ma’arri, qui vécut de 973 à 1058, est connu pour sa poésie et sa réflexion philosophique. Son œuvre explore la mortalité, la condition humaine, les limites de la connaissance et la critique de certaines conventions sociales. Son recueil Luzum ma la yalzam est particulièrement associé à des contraintes formelles exigeantes, notamment dans l’usage de la rime. La complexité de sa pensée interdit de le réduire à une seule étiquette idéologique : ses textes sont argumentatifs, littéraires et parfois ambigus, et doivent être replacés dans leur contexte intellectuel.',
+          'Al-Mutanabbi et al-Ma’arri montrent deux possibilités de la poésie arabe médiévale. Le premier est célèbre pour la puissance de sa voix poétique, sa maîtrise du panégyrique et ses réflexions sur la dignité et l’ambition. Le second est reconnu pour sa réflexion critique, son rapport aux traditions savantes et ses expérimentations formelles. Ces distinctions ne sont pas absolues : les œuvres de chacun sont plus diverses que les quelques caractéristiques généralement retenues dans les présentations introductives.',
+          'La réception de ces poètes dépend aussi des commentateurs, des anthologies et de l’enseignement. Les commentaires médiévaux ont expliqué le vocabulaire rare, les allusions et les figures rhétoriques, tandis que les éditions modernes proposent de nouvelles interprétations. Comprendre leur place dans l’histoire littéraire nécessite donc de distinguer les textes, leurs contextes de production et les traditions de lecture qui leur ont donné une autorité durable.'
+        ],
+        example: {
+          statement: 'Un poème célèbre les qualités d’un souverain et le présente comme un modèle de courage. Comment l’historien de la littérature doit-il interpréter cette description ?',
+          calculation: 'Il examine les conventions du panégyrique, la relation entre le poète et son protecteur, le vocabulaire de l’éloge et les circonstances de composition lorsqu’elles sont connues.',
+          answer: 'Le poème renseigne sur la représentation littéraire du pouvoir et sur la relation de patronage. Il ne suffit pas à prouver que le souverain possédait réellement toutes les qualités qui lui sont attribuées.'
+        },
+        exercise: {
+          question: 'Pourquoi al-Mutanabbi est-il une figure majeure de la poésie arabe classique ?',
+          answer: 'Sa maîtrise de la langue, de la rhétorique et de la composition poétique, ainsi que la force de ses images et de ses thèmes, lui ont assuré une place centrale dans le canon littéraire arabe.'
+        },
+        exercises: [
+          {
+            question: 'Quel genre poétique occupe une place importante dans l’œuvre d’al-Mutanabbi ?',
+            answer: 'Le panégyrique, c’est-à-dire la poésie de louange.'
+          },
+          {
+            question: 'Quels sujets caractérisent une partie de la réflexion d’al-Ma’arri ?',
+            answer: 'La mortalité, la condition humaine, la connaissance et la critique des conventions sociales.'
+          },
+          {
+            question: 'Pourquoi ne faut-il pas lire un panégyrique comme un portrait historique neutre ?',
+            answer: 'Parce qu’il répond à des conventions littéraires et peut servir les relations de patronage ou les intérêts du poète.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Ohio State University — Classical and Medieval Arabic Literature',
+            url: 'https://guides.osu.edu/arabicliterature/classicalandmedievalarabicliterature'
+          },
+          {
+            title: 'Larousse — Al-Mutanabbi',
+            url: 'https://www.larousse.fr/encyclopedie/litterature/Abu_al-Tayyib_al-_Mutanabbi/175533'
+          },
+          {
+            title: 'Encyclopaedia Universalis — Al-Mutanabbi',
+            url: 'https://bibliotheque.sceaux.fr/Default/doc/UNIVERSALIS/_b64_b2FpLXVuaXZlcnNhbGlzLmZyLWFyay0tMzQ4ODUtTTEyMjE5MS1lZHU%3D/al-mutanabbi-915-965'
+          }
+        ]
+      }
+    },
+    {
+      id: 'poesie-arabe-andalouse',
+      title: 'La poésie arabe d’al-Andalus : Ibn Zaydun et Wallada',
+      field: 'Littérature arabe · Al-Andalus · 11e siècle',
+      summary: 'Découvrir la poésie d’Ibn Zaydun et de Wallada bint al-Mustakfi, les traditions lyriques andalouses et leur contexte historique.',
+      lesson: {
+        sections: [
+          'Al-Andalus désigne les territoires de la péninsule Ibérique gouvernés par des pouvoirs musulmans pendant plusieurs siècles. La culture littéraire arabe qui s’y développe est en relation avec les traditions du Proche-Orient, tout en produisant des formes et des sensibilités propres à ses contextes sociaux et politiques. Les villes, les cours et les réseaux savants favorisent la circulation des poètes, des textes et des modèles littéraires. Il est toutefois inexact de présenter toute la société andalouse comme uniformément tolérante ou culturellement homogène : les relations entre groupes et pouvoirs ont varié selon les lieux et les périodes.',
+          'Ibn Zaydun, né à Cordoue en 1003 et mort en 1071, est une figure importante de la poésie andalouse. Son œuvre lyrique est notamment associée à la mémoire amoureuse, à la séparation et aux changements politiques. Les poèmes peuvent évoquer une expérience affective tout en travaillant des conventions héritées du lyrisme arabe classique. Comme pour d’autres poètes médiévaux, la relation entre les textes et les événements biographiques doit être établie avec prudence : une voix poétique ne constitue pas toujours une confession autobiographique directe.',
+          'Wallada bint al-Mustakfi, poétesse de Cordoue du 11e siècle, est connue à travers des fragments poétiques et des récits biographiques transmis par des auteurs postérieurs. Elle est souvent associée à des cercles littéraires et à une représentation de l’expression féminine dans la culture de cour. La documentation conservée sur son œuvre est limitée par rapport à celle de nombreux auteurs masculins du canon classique. Il faut donc distinguer les vers qui lui sont attribués, les récits construits autour de sa vie et les interprétations modernes de son rôle culturel.',
+          'La poésie andalouse ne se limite pas à la poésie amoureuse. Elle comprend aussi des compositions de louange, des descriptions de paysages, des textes politiques et des expérimentations formelles. Les traditions de la muwashshaha et du zajal sont particulièrement importantes dans l’histoire de la poésie liée à al-Andalus, bien que leurs caractéristiques linguistiques et leur transmission varient. Elles montrent que les pratiques poétiques arabes ont évolué dans des environnements plurilingues et ont entretenu des relations complexes avec la musique et la performance.',
+          'L’étude d’Ibn Zaydun et de Wallada permet d’aborder à la fois la création littéraire et les conditions de conservation des œuvres. La notoriété actuelle d’un poète ne reflète pas toujours la quantité de textes qui ont survécu. Les anthologies, les biographies et les choix éditoriaux ont contribué à construire le canon transmis jusqu’à aujourd’hui. Les lacunes documentaires doivent être signalées plutôt que comblées par des anecdotes impossibles à vérifier.'
+        ],
+        example: {
+          statement: 'Un manuel affirme qu’un poème attribué à Wallada prouve un événement précis de sa vie. Quelle vérification est nécessaire ?',
+          calculation: 'On recherche la source du texte, la date du témoignage, les variantes éventuelles et la nature du document : poème, récit biographique ou commentaire postérieur.',
+          answer: 'Il faut vérifier la transmission du poème et la fiabilité du récit avant de conclure à un événement historique. Un texte lyrique et une biographie tardive ne constituent pas automatiquement une preuve indépendante.'
+        },
+        exercise: {
+          question: 'Pourquoi la poésie de Wallada doit-elle être étudiée en tenant compte de la transmission des textes ?',
+          answer: 'Parce qu’une partie limitée de son œuvre a été conservée et que les récits biographiques sont souvent transmis par des auteurs postérieurs.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle ville Ibn Zaydun est-il né ?',
+            answer: 'À Cordoue, en 1003.'
+          },
+          {
+            question: 'Pourquoi la documentation sur Wallada est-elle plus difficile à reconstituer que celle de certains poètes très abondamment conservés ?',
+            answer: 'Parce que peu de textes lui sont attribués et que les informations biographiques dépendent en partie de récits postérieurs.'
+          },
+          {
+            question: 'La poésie d’al-Andalus se limite-t-elle au thème amoureux ?',
+            answer: 'Non. Elle comprend également la louange, la politique, la description et plusieurs formes poétiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Cornell University Library — Arabic Literature: Poetry',
+            url: 'https://guides.library.cornell.edu/ArabicLiterature/Poetry'
+          },
+          {
+            title: 'Ohio State University — Classical and Medieval Arabic Literature',
+            url: 'https://guides.osu.edu/arabicliterature/classicalandmedievalarabicliterature'
+          }
+        ]
+      }
+    },
+    {
+      id: 'poesie-arabe-moderne',
+      title: 'La poésie arabe moderne : Nizar Qabbani et Mahmoud Darwich',
+      field: 'Littérature arabe contemporaine · 20e–21e siècles',
+      summary: 'Étudier les transformations de la poésie arabe moderne à travers l’écriture de Nizar Qabbani et Mahmoud Darwich.',
+      lesson: {
+        sections: [
+          'La poésie arabe moderne se développe dans un contexte de transformations politiques, sociales, éditoriales et linguistiques. Les poètes dialoguent avec les formes classiques tout en expérimentant des structures nouvelles, notamment le vers libre et des organisations rythmiques qui ne reproduisent pas nécessairement toutes les règles de la qasida traditionnelle. Cette évolution n’est ni uniforme ni linéaire : des poètes continuent à utiliser des formes classiques, tandis que d’autres combinent différents systèmes au sein d’une même œuvre.',
+          'Nizar Qabbani, né à Damas en 1923 et mort à Londres en 1998, est un poète syrien particulièrement connu pour ses textes sur l’amour, les relations humaines et les normes sociales. Son œuvre a aussi abordé des questions politiques et les crises du monde arabe. Sa poésie a acquis une large popularité, notamment parce que certains textes ont été mis en musique. Cette diffusion ne signifie pas que son œuvre se limite à des chansons d’amour : ses choix littéraires, ses prises de position et ses critiques sociales font également partie de son héritage.',
+          'Mahmoud Darwich, né en 1941 en Galilée et mort en 2008, est une figure majeure de la poésie palestinienne et de la littérature arabe contemporaine. Son œuvre explore notamment l’exil, la mémoire, l’appartenance, la perte et la relation au lieu. Son expérience historique a profondément marqué ses textes, mais son écriture dépasse le simple témoignage politique : elle utilise des images complexes, des références littéraires et une réflexion sur la langue, l’identité et la condition humaine. Il est donc réducteur de qualifier toute sa poésie de simple slogan politique.',
+          'Les évolutions modernes ne signifient pas la disparition de l’héritage classique. Les poètes peuvent reprendre des images anciennes, transformer les rythmes, réinterpréter les genres et intégrer des formes de narration ou de prose poétique. La modernité littéraire s’explique donc par une série de choix esthétiques et historiques plutôt que par un remplacement soudain de toutes les anciennes conventions. Les débats sur le vers libre, la métrique et la place du patrimoine montrent que la poésie arabe moderne est traversée par des discussions sur la continuité et l’innovation.',
+          'La réception internationale de ces poètes dépend également de la traduction. Une traduction peut transmettre les thèmes et une partie des images, mais elle ne reproduit pas toujours les sons, les jeux de mots et les rythmes de l’original arabe. Il faut ainsi distinguer la lecture du texte original, les choix du traducteur et les commentaires critiques. Cette distinction est essentielle pour comparer les œuvres et éviter de confondre la popularité d’une traduction avec l’ensemble des possibilités littéraires du texte source.'
+        ],
+        example: {
+          statement: 'Un poème contemporain traite de l’exil et de la mémoire tout en réutilisant des images de la poésie arabe classique. Peut-on le considérer comme moderne ?',
+          calculation: 'On examine les choix formels, les images, le contexte historique et la manière dont le poète transforme ou réinterprète les conventions héritées.',
+          answer: 'Oui. Une œuvre moderne peut dialoguer avec la tradition au lieu de la rejeter. La modernité se reconnaît dans les transformations du langage, de la forme et de la perspective, et non dans l’absence de références anciennes.'
+        },
+        exercise: {
+          question: 'Comment Mahmoud Darwich combine-t-il expérience historique et création littéraire ?',
+          answer: 'Il transforme les thèmes de l’exil, de la mémoire et de l’appartenance en une œuvre poétique travaillée par les images, les références culturelles et la réflexion sur la langue.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont deux thèmes importants dans l’œuvre de Nizar Qabbani ?',
+            answer: 'L’amour et les relations humaines, ainsi que la critique de certaines normes sociales et réalités politiques.'
+          },
+          {
+            question: 'Pourquoi Mahmoud Darwich est-il une figure majeure de la poésie palestinienne ?',
+            answer: 'Son œuvre explore l’exil, la mémoire, l’identité et l’appartenance tout en renouvelant les possibilités expressives de la poésie arabe.'
+          },
+          {
+            question: 'Le vers libre signifie-t-il nécessairement l’absence de rythme ?',
+            answer: 'Non. Le vers libre transforme l’organisation rythmique et métrique, mais peut conserver des rythmes, des répétitions et d’autres structures sonores.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Oxford Bibliographies — Nizar Qabbani',
+            url: 'https://academic.oup.com/reference/62361/reference-article-abstract/554573928'
+          },
+          {
+            title: 'Academy of American Poets — Mahmoud Darwish',
+            url: 'https://poets.org/poet/mahmoud-darwish'
+          },
+          {
+            title: 'Poetry International — Mahmoud Darwish',
+            url: 'https://www.poetryinternational.com/en/poets-poems/poets/poet/102-23740_Darwish'
+          },
+          {
+            title: 'Cornell University Library — Arabic Literature: Poetry',
+            url: 'https://guides.library.cornell.edu/ArabicLiterature/Poetry'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+]
 
 
