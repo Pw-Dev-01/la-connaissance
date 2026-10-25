@@ -2631,6 +2631,578 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'poetes-armeniens',
+  sortYear: 400,
+  title: 'Les grands poètes arméniens',
+  note: 'Six chapitres pour parcourir la poésie arménienne, des premiers hymnes chrétiens aux poètes modernes du XXe siècle. Les repères chronologiques sont indicatifs lorsque les sources donnent des dates approximatives. La tradition arménienne comprend des œuvres religieuses, didactiques, lyriques, chantées et narratives ; ce parcours est une sélection et non une liste exhaustive.',
+
+  chapters: [
+    {
+      id: 'premiers-hymnes-armeniens',
+      title: 'Les premiers hymnes et la naissance de la poésie arménienne écrite',
+      field: 'Ve siècle · Hymnographie et littérature religieuse',
+      summary: 'Découvrir les premiers textes poétiques arméniens conservés dans la tradition chrétienne et distinguer poésie, chant liturgique et littérature profane.',
+      lesson: {
+        sections: [
+          'La littérature arménienne écrite se développe après la création de l’alphabet arménien au début du Ve siècle, traditionnellement attribuée à Mesrop Machtots. Cet alphabet facilite la traduction des textes chrétiens et la production d’œuvres en arménien. Il faut distinguer cette histoire de l’écriture de l’existence antérieure de traditions orales, dont les traces sont plus difficiles à dater précisément.',
+          'Les premiers hymnes arméniens originaux sont associés notamment à Mesrop Machtots et à Sahak Parthev. Ils appartiennent à la tradition ecclésiastique des chants appelés sharakans. Leur forme est liée à l’usage liturgique, à la récitation ou au chant et à des thèmes bibliques et religieux.',
+          'Ces textes peuvent être étudiés comme des œuvres poétiques : choix des mots, rythme, images et organisation des strophes participent à leur sens. Leur fonction religieuse ne doit toutefois pas être confondue avec celle de la poésie lyrique moderne destinée à une lecture individuelle.'
+        ],
+        example: {
+          statement: 'Un chercheur étudie un hymne arménien ancien utilisé dans la liturgie. Quelles questions permettent de l’aborder comme texte poétique sans oublier sa fonction religieuse ?',
+          calculation: 'Il faut examiner conjointement le contexte d’usage, le destinataire, les images, les répétitions et l’organisation verbale du texte.',
+          answer: 'On peut étudier sa fonction liturgique, ses thèmes bibliques, ses procédés poétiques et son organisation. L’analyse doit s’appuyer sur le texte et sur une source décrivant son contexte historique.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il tenir compte de la fonction liturgique lorsqu’on analyse les premiers hymnes arméniens ?',
+          answer: 'Parce que leur destination, leur contexte d’interprétation et leurs thèmes religieux influencent leur forme et leur sens.'
+        },
+        exercises: [
+          {
+            question: 'À quel siècle se développe la littérature arménienne écrite autour du nouvel alphabet ?',
+            answer: 'Au Ve siècle.'
+          },
+          {
+            question: 'À quels auteurs la tradition associe-t-elle certains des premiers hymnes arméniens originaux ?',
+            answer: 'Notamment à Mesrop Machtots et à Sahak Parthev.'
+          },
+          {
+            question: 'Un hymne liturgique et un poème lyrique moderne remplissent-ils nécessairement la même fonction ?',
+            answer: 'Non. Le contexte, l’usage et le public peuvent être différents.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Haigazian University Repository — Early Armenian Hymnographers',
+            url: 'https://haigrepository.haigazian.edu.lb/items/88e411f1-f244-4345-af2e-7e677ace932c'
+          },
+          {
+            title: 'OpenStax — World History, Volume 1 : Primary Sources',
+            url: 'https://openstax.org/books/world-history-volume-1/pages/1-2-primary-sources'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'gregoire-narek-et-nerses-shnorhali',
+      title: 'Grégoire de Narek et Nersès Shnorhali',
+      field: 'Xe–XIIe siècles · Poésie spirituelle et didactique',
+      summary: 'Étudier deux figures majeures de la poésie médiévale arménienne et les différences entre méditation spirituelle et poésie didactique.',
+      lesson: {
+        sections: [
+          'Grégoire de Narek, également nommé Grigor Narekatsi, vécut approximativement de 950 à 1003. Moine, théologien et poète, il est principalement connu pour le Livre des Lamentations, œuvre composée de prières et de méditations. La voix qui s’y exprime examine la condition humaine, la faute, l’espérance et la relation à Dieu. Les traductions peuvent varier dans le titre exact et dans le rendu des images poétiques.',
+          'Le Livre des Lamentations n’est pas simplement une autobiographie au sens moderne. Il met en scène une voix de prière et construit une méditation spirituelle au moyen d’apostrophes, de reprises, d’images et d’une expression intense de la fragilité humaine. L’analyse doit distinguer le locuteur du texte de l’auteur historique.',
+          'Nersès Shnorhali (1102–1173), ecclésiastique et poète, a joué un rôle important dans le développement de la poésie didactique arménienne. Des études universitaires le présentent comme un innovateur qui transforme en vers des formes d’exhortation morale. Ses textes peuvent donc viser à enseigner ou à guider, tout en mobilisant des procédés poétiques.'
+        ],
+        example: {
+          statement: 'Deux textes médiévaux sont étudiés : l’un prend la forme d’une prière introspective, l’autre cherche à transmettre une conduite morale. Comment les différencier ?',
+          calculation: 'On compare la situation d’énonciation, le destinataire, l’objectif du texte et les procédés d’écriture, en citant des passages précis.',
+          answer: 'Le premier peut privilégier la confession et la méditation spirituelle ; le second peut adopter une voix exhortative et des formulations destinées à instruire. Cette distinction doit être vérifiée dans les textes étudiés.'
+        },
+        exercise: {
+          question: 'Quelle différence générale peut-on faire entre une méditation spirituelle et un poème didactique ?',
+          answer: 'La méditation explore une expérience ou une relation spirituelle ; le poème didactique vise plus explicitement à transmettre un enseignement, même si les deux fonctions peuvent se recouper.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le titre de l’œuvre la plus connue de Grégoire de Narek ?',
+            answer: 'Le Livre des Lamentations, aussi désigné selon les traductions comme Livre des chants de lamentation.'
+          },
+          {
+            question: 'Quelles dates sont généralement retenues pour Nersès Shnorhali ?',
+            answer: '1102–1173.'
+          },
+          {
+            question: 'Pourquoi faut-il éviter de confondre le locuteur d’un poème avec l’auteur historique ?',
+            answer: 'Parce que la voix poétique est construite par le texte et ne correspond pas automatiquement à une déclaration autobiographique directe.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Université d’État d’Erevan — Pages from the History of Narekatsiology',
+            url: 'https://journals.ysu.am/hist-cult/en/article/view/vol22_no1_2025'
+          },
+          {
+            title: 'Bibliothèque numérique panarménienne — Nersès Shnorhali et la poésie didactique',
+            url: 'https://arar.sci.am/publication/400097'
+          },
+          {
+            title: 'Encyclopedia.com — Armenian Literature',
+            url: 'https://www.encyclopedia.com/literature-and-arts/literature-other-modern-languages/russian-and-eastern-european-literature-1'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'frik-et-la-poesie-medievale',
+      title: 'Frik et les voix de la poésie médiévale',
+      field: 'XIIIe–XIVe siècles · Poésie sociale, morale et lyrique',
+      summary: 'Découvrir l’élargissement des thèmes de la poésie médiévale arménienne et l’importance de la critique sociale et de la réflexion morale.',
+      lesson: {
+        sections: [
+          'Frik est un poète arménien médiéval dont les dates exactes ne sont pas établies avec certitude. Les références le situent généralement à la fin du XIIIe siècle et au début du XIVe siècle. Son œuvre est associée à des thèmes sociaux et moraux, notamment à la réflexion sur l’injustice et les inégalités.',
+          'Les textes attribués à Frik montrent que la poésie médiévale arménienne ne se limite pas aux thèmes religieux. La plainte, l’enseignement moral et la critique de l’ordre social font aussi partie des formes décrites par les études sur cette période. Il convient de ne pas transformer chaque poème en témoignage direct sur un événement sans examiner son genre et son langage.',
+          'Les traditions poétiques médiévales évoluent dans le temps : des formes savantes et religieuses coexistent avec des voix plus personnelles, des poèmes d’amour et des formes liées à la culture populaire. Les dates, les attributions et les classifications de certaines œuvres anciennes peuvent rester discutées.'
+        ],
+        example: {
+          statement: 'Un poème médiéval dénonce l’injustice et interroge la valeur morale des puissants. Comment en faire une analyse prudente ?',
+          calculation: 'Identifier les termes évaluatifs, la voix du poème, les images et le genre, puis confronter l’interprétation à une étude historique ou littéraire.',
+          answer: 'On peut parler de critique sociale si le texte le justifie, tout en évitant de déduire automatiquement un événement historique précis à partir d’une image ou d’une plainte poétique.'
+        },
+        exercise: {
+          question: 'Pourquoi les poèmes de Frik doivent-ils être étudiés à la fois comme œuvres littéraires et comme textes issus d’une époque historique ?',
+          answer: 'Parce que leur langage et leurs genres sont littéraires, tandis que leurs thèmes sociaux et moraux prennent sens dans un contexte médiéval précis.'
+        },
+        exercises: [
+          {
+            question: 'À quelles périodes les sources situent-elles généralement Frik ?',
+            answer: 'À la fin du XIIIe siècle et au début du XIVe siècle, avec des dates biographiques incertaines.'
+          },
+          {
+            question: 'Quels thèmes sont associés à sa poésie dans les présentations littéraires ?',
+            answer: 'Notamment l’injustice, la critique sociale, la plainte et l’enseignement moral.'
+          },
+          {
+            question: 'Un poème critique constitue-t-il à lui seul une preuve complète d’un fait historique ?',
+            answer: 'Non. Il doit être replacé dans son genre et confronté à d’autres sources.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Musée arménien de Moscou — Medieval Armenian Literature',
+            url: 'https://www.armmuseum.ru/literature-eng'
+          },
+          {
+            title: 'Brill — New Approaches to Medieval Armenian Language and Literature',
+            url: 'https://www.degruyterbrill.com/document/isbn/9789004455139/html'
+          },
+          {
+            title: 'OpenStax — World History, Volume 1 : Primary Sources',
+            url: 'https://openstax.org/books/world-history-volume-1/pages/1-2-primary-sources'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'sayat-nova-et-poesie-chantee',
+      title: 'Sayat-Nova : poésie, musique et plurilinguisme',
+      field: 'XVIIIe siècle · Tradition des bardes du Caucase',
+      summary: 'Comprendre la place de Sayat-Nova dans la tradition des bardes et la circulation de la poésie entre plusieurs langues du Caucase.',
+      lesson: {
+        sections: [
+          'Sayat-Nova, nom de scène d’Haroutioun Sayadian, est généralement daté de 1712 à 1795. Poète et musicien, il est associé à la tradition des achoughs, des bardes qui composent et interprètent des chants. Il a été actif à Tiflis, aujourd’hui Tbilissi, dans un espace culturel où plusieurs langues et traditions se côtoyaient.',
+          'Son œuvre est multilingue : les sources décrivent des compositions en arménien, en géorgien et en azéri ; certaines notices mentionnent également le persan. Les corpus conservés et les attributions peuvent différer selon les études. Il est donc préférable de décrire son œuvre à partir de sources précises plutôt que d’affirmer un nombre total de chants sans préciser le corpus retenu.',
+          'Chez un barde, le poème est lié à la performance : rythme, mélodie, interprétation et situation d’écoute contribuent à l’expérience. Une traduction écrite permet d’étudier les thèmes et les images, mais elle ne restitue pas toujours la musicalité, les jeux de langue ni les effets de la performance originale.'
+        ],
+        example: {
+          statement: 'On compare une traduction imprimée d’un chant de Sayat-Nova à un enregistrement de son interprétation. Quels aspects faut-il examiner séparément ?',
+          calculation: 'Pour le texte : images, thèmes et organisation verbale. Pour l’interprétation : mélodie, rythme, timbre et relation entre paroles et musique.',
+          answer: 'La traduction aide à analyser le sens verbal ; l’enregistrement renseigne sur la dimension musicale et performative. Les deux supports apportent des informations complémentaires, sans être interchangeables.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il important de considérer la dimension musicale de l’œuvre de Sayat-Nova ?',
+          answer: 'Parce que ses poèmes appartiennent à une tradition de chant et de performance : le rythme, la mélodie et l’interprétation participent à leur transmission.'
+        },
+        exercises: [
+          {
+            question: 'Quelles dates sont couramment retenues pour Sayat-Nova ?',
+            answer: '1712–1795.'
+          },
+          {
+            question: 'Dans quelles langues les sources décrivent-elles ses chants ?',
+            answer: 'Notamment en arménien, en géorgien et en azéri ; certaines sources mentionnent aussi le persan.'
+          },
+          {
+            question: 'Pourquoi une traduction ne suffit-elle pas toujours à rendre compte d’un chant ?',
+            answer: 'Elle ne restitue pas nécessairement la mélodie, le rythme de l’interprétation ni tous les effets sonores de la langue originale.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Larousse — Haroutioum dit Sayat Nova',
+            url: 'https://www.larousse.fr/encyclopedie/litterature/Haroutioum_dit_Sayat_Nova/176858'
+          },
+          {
+            title: 'University of California, eScholarship — Sayat-Nova: Within the Near Eastern Bardic Tradition',
+            url: 'https://escholarship.org/uc/item/05h957tx'
+          },
+          {
+            title: 'Bibliothèque numérique panarménienne — Nersès Shnorhali et la poésie didactique',
+            url: 'https://arar.sci.am/publication/400097'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'hovhannes-tumanyan',
+      title: 'Hovhannès Toumanian et le récit en vers',
+      field: '1869–1923 · Poésie narrative et tradition orale',
+      summary: 'Étudier comment Toumanian renouvelle le récit poétique en s’inspirant des contes, des légendes et de la tradition orale arménienne.',
+      lesson: {
+        sections: [
+          'Hovhannès Toumanian (1869–1923) est une figure majeure de la littérature arménienne. Il écrit des poèmes narratifs en vers rimés et puise notamment dans les traditions orales, les contes et les légendes arméniens et caucasiens. Son œuvre associe narration, observation des comportements humains et réflexion morale.',
+          'Dans un poème narratif, les événements sont organisés pour faire avancer une histoire. Toumanian travaille la progression, les épisodes, les personnages et la chute ; le sens moral ou social peut se dégager de la façon dont l’action se termine. Les récits en vers Anouch et La Prise de la forteresse de Tmouk sont parmi les œuvres souvent citées dans les présentations de son travail.',
+          'Son œuvre s’inscrit dans un contexte culturel multilingue, notamment celui de Tiflis, important centre de la vie intellectuelle du Caucase à son époque. La tradition orale constitue une source d’inspiration, mais Toumanian ne se contente pas de transcrire des contes : il retravaille les matériaux narratifs et leur donne une construction littéraire propre.'
+        ],
+        example: {
+          statement: 'Un poème raconte une histoire en épisodes et ne révèle son idée principale qu’à la fin. Quels éléments faut-il analyser ?',
+          calculation: 'Repérer les étapes du récit, les changements de situation, les personnages, les répétitions et le rôle de la conclusion.',
+          answer: 'Il faut décrire la construction narrative et expliquer comment la fin transforme la compréhension des événements. L’interprétation doit être appuyée par des détails du texte.'
+        },
+        exercise: {
+          question: 'Comment Toumanian transforme-t-il des matériaux issus de la tradition orale en œuvres littéraires ?',
+          answer: 'Il les organise en récits versifiés structurés, travaille les épisodes et les personnages et construit une progression qui donne au récit une portée propre.'
+        },
+        exercises: [
+          {
+            question: 'Quelles dates sont retenues pour Hovhannès Toumanian ?',
+            answer: '1869–1923.'
+          },
+          {
+            question: 'Quelle tradition nourrit une partie importante de son œuvre narrative ?',
+            answer: 'La tradition orale, notamment les contes et les légendes arméniens et caucasiens.'
+          },
+          {
+            question: 'Pourquoi ne faut-il pas décrire Toumanian comme un simple transcripteur du folklore ?',
+            answer: 'Parce qu’il remanie les matériaux narratifs et leur donne une structure et une expression littéraires propres.'
+          }
+        ],
+        sources: [
+          {
+            title: 'UNESCO — Hovhannès Toumanian ou la passion du récit',
+            url: 'https://www.unesco.org/fr/articles/hovhannes-toumanian-ou-la-passion-du-recit'
+          },
+          {
+            title: 'Encyclopédie géorgienne — Tumanyan Hovhannes',
+            url: 'https://georgianencyclopedia.ge/ka/form_eng/36'
+          },
+          {
+            title: 'OpenStax — Writing Guide : textual analysis',
+            url: 'https://openstax.org/books/writing-guide/pages/16-5-writing-process-thinking-critically-about-text'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'charents-et-poesie-moderne',
+      title: 'Yeghiché Tcharents et la poésie moderne',
+      field: '1897–1937 · Modernisme, histoire et mémoire',
+      summary: 'Découvrir la pluralité des voix de Tcharents et analyser les rapports entre poésie, bouleversements historiques et identité culturelle.',
+      lesson: {
+        sections: [
+          'Yeghiché Tcharents (1897–1937), né Yeghiché Soghomonian, est un poète arménien majeur du XXe siècle. Son œuvre comprend de la poésie, mais aussi de la prose et des activités éditoriales. Les institutions arméniennes qui lui sont consacrées soulignent la diversité de ses écrits et sa place dans la littérature moderne.',
+          'Son écriture se développe au cours d’une période de bouleversements : Première Guerre mondiale, violences contre les Arméniens dans l’Empire ottoman, révolution et transformations politiques soviétiques. Ces contextes éclairent plusieurs thèmes de son œuvre, mais chaque texte doit être étudié individuellement : les positions et les formes de son écriture ont évolué au fil de sa vie.',
+          'La poésie moderne peut combiner une voix personnelle, des images fortes, des innovations formelles et des références collectives. Pour analyser Tcharents, il convient de distinguer les éléments repérables dans le poème, les données biographiques vérifiées et l’interprétation proposée par le lecteur. Une lecture historique ne remplace pas l’analyse de la langue et de la forme.'
+        ],
+        example: {
+          statement: 'Un poème moderne évoque le pays natal au milieu d’une période de crise politique. Comment analyser son rapport à l’histoire sans réduire le texte à un document historique ?',
+          calculation: 'Étudier les images, le rythme, la voix, les références explicites et le contexte documenté ; distinguer ensuite les faits établis des interprétations.',
+          answer: 'Le contexte aide à comprendre les références du poème, mais le sens dépend aussi de sa forme, de ses images et de sa voix. Toute interprétation doit être justifiée par le texte.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il étudier ensemble la forme poétique et le contexte historique chez Tcharents ?',
+          answer: 'Parce que les événements historiques éclairent certains thèmes, tandis que les choix de langue, d’images et de composition construisent le sens propre de chaque poème.'
+        },
+        exercises: [
+          {
+            question: 'Quelles dates sont données pour Yeghiché Tcharents par son musée-maison ?',
+            answer: '1897–1937.'
+          },
+          {
+            question: 'Son œuvre se limite-t-elle à la poésie ?',
+            answer: 'Non. Les sources institutionnelles mentionnent aussi la prose, la traduction, l’édition et d’autres activités culturelles.'
+          },
+          {
+            question: 'Quelle précaution prendre lorsqu’on interprète un poème dans son contexte politique ?',
+            answer: 'Distinguer les faits historiques établis, les éléments du texte et les hypothèses d’interprétation.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Musée-maison de Yeghiché Tcharents — Literary Heritage',
+            url: 'https://charents.am/en/'
+          },
+          {
+            title: 'Banque centrale d’Arménie — 125th Birth Anniversary of Yeghishe Charents',
+            url: 'https://www.cba.am/en/collector-coins/325/'
+          },
+          {
+            title: 'OpenStax — World History, Volume 1 : Primary Sources',
+            url: 'https://openstax.org/books/world-history-volume-1/pages/1-2-primary-sources'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  id: 'poetes-grecs',
+  sortYear: -800,
+  title: "Les grands poètes de l'Antiquité grecque",
+  note: 'Six chapitres consacrés à l’épopée, à la poésie didactique, à la poésie lyrique, à la poésie chorale, au théâtre poétique et aux formes hellénistiques. Les dates des auteurs archaïques sont souvent approximatives ; l’attribution et la transmission de plusieurs œuvres anciennes restent discutées.',
+
+  chapters: [
+    {
+      id: 'homer-et-epopee',
+      title: 'Homère et la poésie épique',
+      field: 'VIIIe siècle av. J.-C. environ · Épopée et tradition orale',
+      summary: 'Comprendre l’importance de l’Iliade et de l’Odyssée, ainsi que les incertitudes historiques entourant Homère et la composition des épopées.',
+      lesson: {
+        sections: [
+          'L’Iliade et l’Odyssée sont les deux grandes épopées traditionnellement attribuées à Homère. L’Iliade se concentre sur un épisode de la guerre de Troie et sur la colère d’Achille ; l’Odyssée raconte le retour d’Ulysse après la guerre. Ces résumés ne rendent pas compte de toute la complexité narrative des poèmes, mais donnent leur orientation principale.',
+          'Homère est une figure ancienne dont la biographie n’est pas connue avec certitude. Les traditions antiques proposent plusieurs lieux d’origine et des récits contradictoires. Les spécialistes étudient les poèmes comme le produit d’une tradition orale, transmise et remaniée avant leur fixation écrite. Il faut donc éviter de présenter les dates de composition ou l’identité de l’auteur comme des faits absolument établis.',
+          'La poésie épique emploie notamment des formules récurrentes, des épithètes, des comparaisons développées et des scènes typiques. Ces procédés contribuent à la mémorisation et à la performance orale. Les poèmes homériques ont ensuite exercé une influence considérable sur la littérature, l’éducation et les représentations mythologiques du monde grec.'
+        ],
+        example: {
+          statement: 'Un élève compare l’Iliade et l’Odyssée. Quel critère simple permet de distinguer leur intrigue principale ?',
+          calculation: 'Il faut identifier le conflit central et la progression narrative de chaque poème, plutôt que de les réduire à un même récit de guerre.',
+          answer: 'L’Iliade met notamment en scène la colère d’Achille pendant la guerre de Troie ; l’Odyssée suit le long retour d’Ulysse vers Ithaque.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il rester prudent lorsqu’on affirme qu’Homère a personnellement écrit les deux épopées ?',
+          answer: 'Parce que les informations biographiques sont incertaines et que les poèmes proviennent d’une tradition orale complexe dont la transmission et la mise par écrit se sont déroulées sur une longue période.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les deux grands poèmes épiques traditionnellement attribués à Homère ?',
+            answer: 'L’Iliade et l’Odyssée.'
+          },
+          {
+            question: 'Quel héros est au centre de l’Odyssée ?',
+            answer: 'Ulysse, appelé Odysseus en grec.'
+          },
+          {
+            question: 'Qu’est-ce qu’une tradition orale en littérature ?',
+            answer: 'Un mode de transmission dans lequel les œuvres sont conservées et transmises par la parole et la performance, avant ou parallèlement à leur fixation écrite.'
+          }
+        ],
+        sources: [
+          { title: 'Perseus Encyclopedia — Homer', url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0004%3Aentry%3Dhomer' },
+          { title: 'OpenStax — World History, Volume 1, section 6.2: Ancient Greece', url: 'https://openstax.org/books/world-history-volume-1/pages/6-2-ancient-greece' },
+          { title: 'Harvard Center for Hellenic Studies — Primary Sources', url: 'https://chs.harvard.edu/browse-online-publications/' }
+        ]
+      }
+    },
+
+    {
+      id: 'hesiode-poesie-didactique',
+      title: 'Hésiode : les dieux, le travail et la justice',
+      field: 'VIIIe–VIIe siècle av. J.-C. environ · Épopée didactique',
+      summary: 'Découvrir la Théogonie et Les Travaux et les Jours, deux poèmes qui organisent des savoirs mythologiques, moraux et pratiques.',
+      lesson: {
+        sections: [
+          'Hésiode est généralement situé en Béotie, dans la Grèce continentale, autour de la fin du VIIIe ou du début du VIIe siècle av. J.-C. Les dates précises restent discutées. Avec Homère, il est l’un des auteurs fondateurs de la poésie grecque conservée, mais ses préoccupations et sa manière d’organiser le discours diffèrent de celles de l’épopée héroïque.',
+          'La Théogonie présente les origines du monde divin et les générations des dieux. Elle ordonne des récits mythologiques en une généalogie et propose une représentation de l’organisation du cosmos. Le poème est une source essentielle pour étudier la mythologie grecque, mais il ne faut pas le traiter comme un récit historique au sens moderne.',
+          'Les Travaux et les Jours mêle conseils sur les activités agricoles, réflexions sur la justice, récits mythiques et recommandations de conduite. Le poème s’adresse notamment à Persès, frère du poète dans le cadre du texte. Il montre que la poésie grecque ancienne pouvait transmettre des enseignements pratiques et moraux, et pas seulement raconter les exploits de héros.'
+        ],
+        example: {
+          statement: 'On compare la Théogonie et Les Travaux et les Jours pour déterminer leurs sujets dominants. Quelle distinction est la plus pertinente ?',
+          calculation: 'Il faut identifier le sujet principal et la fonction de chaque œuvre, sans supposer que chaque poème ne contient qu’un seul type de contenu.',
+          answer: 'La Théogonie expose principalement les origines et la généalogie des dieux ; Les Travaux et les Jours associe conseils pratiques, justice et enseignement moral.'
+        },
+        exercise: {
+          question: 'En quoi Hésiode se distingue-t-il d’une poésie épique centrée sur les héros ?',
+          answer: 'Ses poèmes organisent aussi des savoirs sur les dieux, le travail, la justice et la conduite humaine, au moyen d’une parole didactique.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le sujet central de la Théogonie ?',
+            answer: 'Les origines du monde divin et la généalogie des dieux.'
+          },
+          {
+            question: 'Quels thèmes trouve-t-on dans Les Travaux et les Jours ?',
+            answer: 'Notamment le travail agricole, la justice, les règles de conduite et des récits mythiques.'
+          },
+          {
+            question: 'Pourquoi ne faut-il pas lire la Théogonie comme une chronique historique moderne ?',
+            answer: 'Parce qu’il s’agit d’un poème mythologique qui organise les récits des dieux selon une logique religieuse et poétique.'
+          }
+        ],
+        sources: [
+          { title: 'Harvard Center for Hellenic Studies — Hesiod: Theogony and Works and Days', url: 'https://chs.harvard.edu/browse-online-publications/' },
+          { title: 'Cambridge University Press — Religion in the Ancient Greek City, “Sources of evidence”', url: 'https://www.cambridge.org/core/books/abs/religion-in-the-ancient-greek-city/sources-of-evidence/9832AE6345A960EAEFA1DB204C797672' },
+          { title: 'Theoi Classical Texts Library — Hesiod, Works and Days', url: 'https://www.theoi.com/Text/HesiodWorksDays.html' }
+        ]
+      }
+    },
+
+    {
+      id: 'sappho-alcee-archiloque',
+      title: 'Sappho, Alcée et Archiloque : les voix lyriques',
+      field: 'VIIe–VIe siècle av. J.-C. environ · Poésie lyrique et iambique',
+      summary: 'Explorer les formes lyriques associées à la voix personnelle, au chant, aux relations humaines et à la satire, tout en tenant compte de la conservation fragmentaire des œuvres.',
+      lesson: {
+        sections: [
+          'La poésie lyrique grecque ancienne regroupe des formes variées, souvent liées au chant et à l’accompagnement musical. Le terme moderne « lyrique » recouvre plusieurs traditions anciennes : certaines compositions étaient interprétées par une seule voix, d’autres par un chœur. Il ne faut donc pas assimiler toute poésie lyrique à l’expression privée d’un individu au sens contemporain.',
+          'Sappho, poétesse de Lesbos généralement située autour de la fin du VIIe et du début du VIe siècle av. J.-C., est connue pour ses poèmes sur le désir, les relations, les rites et les émotions. Une grande partie de son œuvre est fragmentaire : les citations anciennes et les découvertes de papyrus ont transmis des portions de textes de longueur variable. Les traductions modernes diffèrent parfois dans la restitution des passages lacunaires.',
+          'Alcée, lui aussi associé à Lesbos, a composé des chants dont les thèmes comprennent la politique, les conflits, les relations sociales et le vin. Archiloque, poète de Paros souvent placé au VIIe siècle av. J.-C., est associé notamment à la poésie iambique, à la satire et à une voix poétique plus personnelle. Les œuvres conservées sont fragmentaires et les déclarations du locuteur ne doivent pas être automatiquement considérées comme des faits autobiographiques.'
+        ],
+        example: {
+          statement: 'Un poème lyrique ancien est conservé en fragments, avec des mots manquants. Comment en proposer une analyse fiable ?',
+          calculation: 'Séparer les mots conservés, les restitutions éditoriales et l’interprétation ; consulter si possible une édition qui signale les lacunes.',
+          answer: 'Il faut signaler les passages incertains, éviter de reconstruire librement les parties perdues et appuyer l’interprétation sur les éléments réellement conservés.'
+        },
+        exercise: {
+          question: 'Pourquoi les fragments sont-ils essentiels pour comprendre la poésie lyrique grecque ancienne ?',
+          answer: 'Une partie importante de cette poésie n’est conservée que par des citations, des papyrus incomplets ou d’autres témoins fragmentaires ; les limites de conservation influencent ce que l’on peut affirmer.'
+        },
+        exercises: [
+          {
+            question: 'Sur quelle île Sappho et Alcée sont-ils traditionnellement associés ?',
+            answer: 'Lesbos.'
+          },
+          {
+            question: 'Pourquoi les traductions de fragments de Sappho peuvent-elles varier ?',
+            answer: 'Parce que certains passages sont incomplets, les restitutions peuvent être discutées et les choix de traduction diffèrent.'
+          },
+          {
+            question: 'À quoi la poésie iambique est-elle souvent associée chez Archiloque ?',
+            answer: 'Notamment à la satire, au conflit et à une voix poétique incisive, même si les textes conservés ne permettent pas de réduire toute son œuvre à ces thèmes.'
+          }
+        ],
+        sources: [
+          { title: 'Harvard Center for Hellenic Studies — Selections from Sappho', url: 'https://chs.harvard.edu/primary-source/sappho-sb/' },
+          { title: 'Harvard Center for Hellenic Studies — The Aeolic Component of Homeric Diction', url: 'https://chs.harvard.edu/curated-article/gregory-nagy-the-aeolic-component-of-homeric-diction/' },
+          { title: 'Perseus Digital Library — Thematic Index of Classics in JSTOR', url: 'https://static.perseus.tufts.edu/jstor/papertopics.php?d=639863' }
+        ]
+      }
+    },
+
+    {
+      id: 'pindare-poesie-chorale',
+      title: 'Pindare et la poésie chorale',
+      field: 'Ve siècle av. J.-C. · Épinicies et chant choral',
+      summary: 'Comprendre les odes de Pindare, notamment les chants célébrant les vainqueurs des concours panhelléniques, et leur mélange de louange, de mythe et de réflexion morale.',
+      lesson: {
+        sections: [
+          'Pindare, poète grec du Ve siècle av. J.-C., est particulièrement connu pour ses épinicies, des odes composées à l’occasion de victoires dans les grands concours athlétiques du monde grec. Les poèmes sont liés à une occasion précise, à un vainqueur, à sa famille ou à sa cité, mais leur portée dépasse souvent la simple annonce du résultat sportif.',
+          'Les odes de Pindare mêlent éloge, récits mythologiques, réflexions sur la condition humaine et allusions aux dieux. Le mythe peut éclairer ou complexifier l’éloge du vainqueur ; il n’est pas toujours un simple ornement. L’analyse doit tenir compte de l’occasion de composition et des conventions de la poésie chorale.',
+          'La poésie chorale était conçue pour être chantée et accompagnée de musique et de mouvement, même si les modalités exactes de chaque performance ne sont pas toujours connues. Lire aujourd’hui le texte seul permet d’étudier sa langue et sa composition, mais ne restitue pas entièrement le contexte de performance antique.'
+        ],
+        example: {
+          statement: 'Une ode de Pindare célèbre un athlète victorieux et évoque un héros mythologique. Pourquoi le mythe est-il pertinent dans l’éloge ?',
+          calculation: 'Examiner le lien établi par le poème entre le récit mythique, les qualités valorisées et l’occasion de la victoire.',
+          answer: 'Le mythe peut donner une profondeur culturelle et morale à l’éloge et relier la victoire individuelle à des récits partagés par le public. Le lien exact doit être établi à partir du poème étudié.'
+        },
+        exercise: {
+          question: 'Qu’est-ce qu’une épinicie ?',
+          answer: 'Une ode célébrant une victoire, notamment dans les concours athlétiques de la Grèce ancienne.'
+        },
+        exercises: [
+          {
+            question: 'Quel type de poèmes a rendu Pindare particulièrement célèbre ?',
+            answer: 'Les épinicies, des odes célébrant des victoires dans les concours.'
+          },
+          {
+            question: 'Quels éléments peuvent être combinés dans une ode pindarique ?',
+            answer: 'L’éloge, le mythe, les références aux dieux et la réflexion sur la condition humaine.'
+          },
+          {
+            question: 'Pourquoi le texte seul ne restitue-t-il pas toute une performance chorale antique ?',
+            answer: 'Parce que la musique, le mouvement, les interprètes et le contexte de représentation faisaient partie de l’événement.'
+          }
+        ],
+        sources: [
+          { title: 'Harvard Center for Hellenic Studies — Pindar, Pythian 8', url: 'https://chs.harvard.edu/browse-online-publications/' },
+          { title: 'Theoi Classical Texts Library — Greek lyric poetry and Pindar', url: 'https://www.theoi.com/Library.html' },
+          { title: 'Theoi Classical Texts Library — Greek Lyric I Fragments', url: 'https://ftp.theoi.com/Text/LyraGraeca1A.html' }
+        ]
+      }
+    },
+
+    {
+      id: 'poetes-tragiques-grecs',
+      title: 'Eschyle, Sophocle et Euripide : la poésie dramatique',
+      field: 'Ve siècle av. J.-C. · Tragédie attique et théâtre en vers',
+      summary: 'Étudier les trois grands auteurs tragiques conservés et comprendre comment le texte poétique prend sens dans une représentation théâtrale.',
+      lesson: {
+        sections: [
+          'La tragédie grecque ancienne est un genre dramatique composé en grande partie en vers et représenté dans le cadre de fêtes civiques et religieuses, notamment à Athènes. Eschyle, Sophocle et Euripide sont les trois grands auteurs tragiques dont plusieurs pièces complètes sont conservées. Leurs œuvres abordent les conflits familiaux, les obligations envers les dieux, la justice, le pouvoir et les conséquences des décisions humaines.',
+          'Eschyle est notamment l’auteur de l’Orestie, une trilogie dont l’Agamemnon, Les Choéphores et Les Euménides sont les trois pièces. Sophocle a écrit Antigone et Œdipe roi, parmi ses tragédies conservées. Euripide est notamment l’auteur de Médée, Hippolyte et Les Bacchantes. Ces exemples ne résument pas la diversité de leurs œuvres et ne suffisent pas à établir une opposition simple entre leurs styles.',
+          'La tragédie combine dialogues, chants choraux et action scénique. Le texte doit donc être étudié en tenant compte des personnages, de la structure dramatique, des interventions du chœur et du contexte de représentation. Les pièces conservées ne représentent qu’une partie de la production antique : beaucoup d’œuvres sont perdues ou ne subsistent que par fragments.'
+        ],
+        example: {
+          statement: 'Dans une tragédie, le chœur intervient entre les épisodes dialogués. Quel est l’intérêt d’étudier ses chants ?',
+          calculation: 'Examiner leur position dans la pièce, les idées qu’ils développent et leur relation avec les actions et les discours des personnages.',
+          answer: 'Les chants du chœur peuvent commenter les événements, exprimer une réaction collective ou approfondir les thèmes de la pièce. Leur fonction doit être analysée dans chaque tragédie.'
+        },
+        exercise: {
+          question: 'Pourquoi la tragédie grecque doit-elle être étudiée comme un texte destiné à la scène ?',
+          answer: 'Parce que les dialogues, les chants, les personnages, le chœur et l’action prennent sens dans une représentation, et pas uniquement dans une lecture silencieuse.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les trois grands auteurs tragiques grecs dont plusieurs pièces complètes sont conservées ?',
+            answer: 'Eschyle, Sophocle et Euripide.'
+          },
+          {
+            question: 'Quel auteur a écrit Antigone ?',
+            answer: 'Sophocle.'
+          },
+          {
+            question: 'Pourquoi le chœur est-il important dans la tragédie grecque ?',
+            answer: 'Ses chants participent à la structure de la pièce et peuvent commenter l’action ou développer ses thèmes.'
+          }
+        ],
+        sources: [
+          { title: 'Harvard Center for Hellenic Studies — Primary Texts: Aeschylus, Sophocles and Euripides', url: 'https://chs.harvard.edu/browse-online-publications/' },
+          { title: 'Harvard Center for Hellenic Studies — Primary Sources Archive', url: 'https://www-current.chs.harvard.edu/primary-source/' },
+          { title: 'Theoi Classical Texts Library — Greek Classical Drama', url: 'https://ftp.theoi.com/Library.html' }
+        ]
+      }
+    },
+
+    {
+      id: 'poesie-hellenistique',
+      title: 'La poésie hellénistique : Théocrite et Apollonios de Rhodes',
+      field: 'IIIe siècle av. J.-C. environ · Poésie savante, idylles et épopée',
+      summary: 'Découvrir la diversité de la poésie hellénistique, entre scènes pastorales, expérimentation littéraire et renouvellement de l’épopée mythologique.',
+      lesson: {
+        sections: [
+          'Après les conquêtes d’Alexandre le Grand, les centres de production littéraire se multiplient dans le monde grec. La période hellénistique voit se développer des milieux savants, des bibliothèques et des formes poétiques qui dialoguent avec les œuvres antérieures. Les poètes connaissent la tradition épique et lyrique et peuvent la réinterpréter avec une grande attention à la forme et à l’érudition.',
+          'Théocrite est associé au développement de la poésie bucolique, qui met en scène des bergers, des chants et des paysages ruraux idéalisés. Ses idylles ne sont pas toutes pastorales : le recueil transmis sous son nom contient des textes de sujets et de formes variés. Il faut donc éviter de définir toute son œuvre par un seul genre.',
+          'Apollonios de Rhodes est l’auteur des Argonautiques, épopée qui raconte l’expédition de Jason et des Argonautes à la recherche de la Toison d’or. L’œuvre reprend la tradition épique tout en développant notamment la psychologie des personnages et des épisodes narratifs complexes. Comme pour d’autres auteurs antiques, les dates biographiques précises et plusieurs détails de sa vie restent discutés.'
+        ],
+        example: {
+          statement: 'On compare un poème bucolique de Théocrite et un épisode des Argonautiques. Quel contraste littéraire peut-on examiner ?',
+          calculation: 'Comparer les personnages, le cadre, l’échelle de l’action, le rythme narratif et la manière dont chaque texte mobilise la tradition poétique antérieure.',
+          answer: 'Un texte bucolique peut privilégier un cadre rural et des chants de personnages, tandis que l’épopée d’Apollonios développe une expédition mythologique. Il faut toutefois analyser les textes précis, car les genres ne sont pas entièrement uniformes.'
+        },
+        exercise: {
+          question: 'Comment les poètes hellénistiques peuvent-ils innover tout en reprenant les traditions anciennes ?',
+          answer: 'Ils réutilisent des mythes, des genres et des formes antérieures, mais les réorganisent selon de nouveaux choix de composition, de style et de caractérisation.'
+        },
+        exercises: [
+          {
+            question: 'À quel genre Théocrite est-il particulièrement associé ?',
+            answer: 'À la poésie bucolique, notamment à travers plusieurs de ses idylles.'
+          },
+          {
+            question: 'Quel récit mythologique est au centre des Argonautiques d’Apollonios de Rhodes ?',
+            answer: 'L’expédition de Jason et des Argonautes à la recherche de la Toison d’or.'
+          },
+          {
+            question: 'La poésie hellénistique rompt-elle complètement avec les traditions précédentes ?',
+            answer: 'Non. Elle reprend des genres, des mythes et des procédés anciens tout en les adaptant et en les renouvelant.'
+          }
+        ],
+        sources: [
+          { title: 'Theoi Classical Texts Library — Apollonius Rhodius, Argonautica', url: 'https://www.theoi.com/Text/ApolloniusRhodius1.html' },
+          { title: 'Theoi Classical Texts Library — Theocritus, Idylls', url: 'https://www.theoi.com/Text/TheocritusIdylls1.html' },
+          { title: 'Theoi Classical Texts Library — Classical texts and literary periods', url: 'https://www.theoi.com/Library.html' }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
 
