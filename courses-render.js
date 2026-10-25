@@ -1,7 +1,12 @@
 // Construit la liste des cours (accueil) et le menu mobile à partir de courses.js.
 // Doit être chargé APRÈS courses.js et AVANT portal.js (tous en "defer").
 (function () {
-  var courses = window.COURSES || [];
+  var courses = (window.COURSES || []).slice().sort(function (a, b) {
+    return a.title.localeCompare(b.title, "fr", {
+      sensitivity: "base"
+    });
+  });
+
   var esc = function (s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
