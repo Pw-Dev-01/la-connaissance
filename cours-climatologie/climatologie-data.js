@@ -2640,5 +2640,322 @@ url: 'https://www.usgs.gov/programs/climate-research-and-development-program/sci
 ]
 },
 
+// BRANCHE EL NIÑO ET LA NIÑA
+
+  {
+    id: 'Nino-Nina',
+    title: 'El Niño et La Niña : leurs mécanismes et leurs effets sur les températures et les précipitations mondiales',
+    note: 'Six chapitres sur la définition de l’ENSO et de ses indices, l’état moyen du Pacifique tropical, les mécanismes de couplage océan-atmosphère, les effets sur les précipitations et les tempêtes, les effets sur les températures, les écosystèmes et les sociétés, puis le suivi, l’histoire et l’état de l’événement en cours en octobre 2026. Les effets décrits sont des tendances probables et non des certitudes : aucun événement n’est identique à un autre.',
+    chapters: [
+      {
+        id: 'definition-enso',
+        title: 'Définir El Niño, La Niña et l’ENSO : phases, régions et indices',
+        field: 'Océanographie et climatologie · Pacifique tropical · Définitions et indices de suivi',
+        summary: 'Comprendre ce que désignent El Niño, La Niña et l’Oscillation australe, comment on les mesure et à quelle fréquence ils reviennent.',
+        lesson: {
+          sections: [
+            'L’ENSO (El Niño–Southern Oscillation) est un phénomène couplé entre l’océan et l’atmosphère du Pacifique tropical. El Niño en est la phase chaude, La Niña la phase froide, et des périodes neutres s’intercalent entre les deux. Le Climate.gov de la NOAA qualifie l’ENSO de configuration climatique naturelle la plus influente de la Terre. Selon le blog ENSO de la NOAA, des pêcheurs péruviens ont reconnu le réchauffement de l’océan Pacifique oriental et l’ont appelé « El Niño », peut-être depuis des siècles ; le nom désigne un courant d’eau chaude apparaissant au large du Pérou et de l’Équateur et se réfère à l’Enfant Jésus, car il survient vers Noël.',
+            'L’« Oscillation australe » désigne l’aspect atmosphérique du phénomène : une fluctuation de pression à l’échelle du bassin tropical Indo-Pacifique, découverte par Gilbert Walker. Jacob Bjerknes a relié en 1969 ce schéma de pression à des variations de température dans le Pacifique tropical : l’océan et l’atmosphère forment un seul système couplé. L’indice d’oscillation australe (SOI) mesure la différence de pression entre Tahiti et Darwin ; un SOI négatif correspond à des eaux plus chaudes que d’habitude dans le Pacifique équatorial oriental, et le blog de la NOAA indique que le SOI est corrélé à environ 0,9 avec l’indice Niño-3.4.',
+            'Pour suivre l’ENSO, la NOAA utilise des indices de température de surface dans des régions du Pacifique. La région Niño 3.4 s’étend de 5°N à 5°S et de 120°O à 170°O. L’indice océanique Niño (ONI) est la moyenne glissante sur trois mois des anomalies de température de surface dans cette région. Un épisode est classé El Niño ou La Niña lorsque l’indice atteint ±0,5 °C pendant au moins cinq saisons chevauchantes consécutives de trois mois : une valeur supérieure ou égale à +0,5 °C pour El Niño, inférieure ou égale à −0,5 °C pour La Niña, et entre les deux pour un état neutre. Le Climate Prediction Center (CPC) considère aussi que les conditions El Niño ou La Niña sont présentes lorsque l’anomalie mensuelle atteint ±0,5 °C et que l’atmosphère présente des caractéristiques cohérentes.',
+            'Depuis 2026, le CPC utilise pour le suivi officiel l’indice relatif RONI, conformément à la déclaration d’information publique 26-05 du National Weather Service. Le RONI part de l’indice Niño 3.4, en retranche l’anomalie moyenne de température de surface de l’ensemble de la bande tropicale (20°N–20°S), puis ajuste le résultat pour que sa variance soit égale à celle de l’indice d’origine. Le seuil reste de ±0,5 °C sur la période de référence 1991–2020. L’ONI continue d’être publié et repose sur la version 6 des données ERSST avec des périodes de base de 30 ans centrées et mises à jour tous les cinq ans. Un autre indice, le MEI (indice multivarié), utilise des saisons de deux mois ; ses valeurs les plus fortes depuis 1979 sont 2,9 pour El Niño (mars–avril 1983) et 2,5 (mars–avril 1998), et −2,4 pour La Niña (juin–juillet et juillet–août 2010) et −2,2 (juin–juillet 2022).',
+            'L’ENSO n’est pas un cycle régulier. D’après l’OMM, El Niño survient en moyenne tous les deux à sept ans et dure typiquement de neuf à douze mois. L’IRI (Columbia) précise que les événements El Niño et La Niña peuvent persister jusqu’à un an ou plus, de sorte que leurs effets s’accumulent sur plusieurs saisons. L’OMM souligne aussi qu’aucun El Niño n’est identique à un autre et que l’intensité des indicateurs ne correspond pas directement à l’intensité des effets locaux.'
+          ],
+          example: {
+            statement: 'Valeurs fictives de l’ONI (°C) pour des saisons de trois mois consécutives : OND 0,6 ; NDJ 0,9 ; DJF 1,1 ; JFM 0,8 ; FMA 0,6 ; MAM 0,3. Cette séquence constitue-t-elle un épisode El Niño selon la règle de la NOAA ?',
+            calculation: 'On compte les saisons consécutives dont l’indice est supérieur ou égal à 0,5 : OND, NDJ, DJF, JFM et FMA, soit 5 saisons. MAM (0,3) interrompt la série.',
+            answer: 'Oui : le seuil de +0,5 °C est atteint sur 5 saisons chevauchantes consécutives, ce qui satisfait la durée minimale. Ces valeurs sont fictives et servent seulement à illustrer la règle.'
+          },
+          exercise: {
+            question: 'Une période de 28 ans contient en moyenne combien d’événements ENSO chauds, si El Niño revient tous les 2 à 7 ans ?',
+            answer: 'Entre 28 ÷ 7 = 4 et 28 ÷ 2 = 14 événements environ. C’est un ordre de grandeur : le phénomène est irrégulier et ne suit pas une période fixe.'
+          },
+          exercises: [
+            {
+              question: 'Quelle région sert de référence pour l’ONI ?',
+              answer: 'La région Niño 3.4, entre 5°N et 5°S et entre 120°O et 170°O.'
+            },
+            {
+              question: 'Quel seuil et quelle durée minimale définissent un épisode El Niño ou La Niña ?',
+              answer: 'Un indice d’au moins +0,5 °C (El Niño) ou d’au plus −0,5 °C (La Niña) pendant au moins cinq saisons de trois mois chevauchantes consécutives.'
+            },
+            {
+              question: 'Que signifie un indice d’oscillation australe (SOI) négatif ?',
+              answer: 'La pression est relativement basse à Tahiti et haute à Darwin, et les eaux du Pacifique équatorial oriental sont plus chaudes que d’habitude : situation de type El Niño.'
+            },
+            {
+              question: 'Quel indice sert depuis 2026 au suivi officiel de l’ENSO par le CPC ?',
+              answer: 'Le RONI (indice océanique Niño relatif), selon la déclaration d’information publique 26-05 du National Weather Service.'
+            }
+          ],
+          sources: [
+            { title: 'NOAA CPC — Relative Oceanic Niño Index (RONI)', url: 'https://cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/v5/' },
+            { title: 'NOAA CPC — Oceanic Niño Index (ONI), version 6', url: 'https://cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/' },
+            { title: 'NOAA CPC — Oceanic Niño Index (ONI), historique des épisodes', url: 'https://cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v5/' },
+            { title: 'NOAA Climate.gov — The Rise of El Niño and La Niña', url: 'https://climate.gov/news-features/blogs/enso/rise-el-ni%C3%B1o-and-la-ni%C3%B1a' },
+            { title: 'NOAA Climate.gov — Global impacts of El Niño and La Niña', url: 'https://www.climate.gov/news-features/featured-images/global-impacts-el-nino-and-la-nina' },
+            { title: 'Midwestern Regional Climate Center (Purdue) — ENSO Indices and Past Events', url: 'https://www.mrcc.purdue.edu/index.php/climate_watch/special_topics/enso-indices-and-past-events' },
+            { title: 'OMM — El Niño expected to last at least until April 2024', url: 'https://wmo.int/media/news/el-nino-expected-last-least-until-april-2024' }
+          ]
+        }
+      },
+      {
+        id: 'etat-normal-pacifique',
+        title: 'L’état moyen du Pacifique tropical : alizés, circulation de Walker, thermocline et remontées d’eau',
+        field: 'Océanographie physique · Circulation tropicale · État de référence de l’ENSO',
+        summary: 'Comprendre l’état normal de l’océan et de l’atmosphère du Pacifique tropical, dont El Niño et La Niña sont des écarts.',
+        lesson: {
+          sections: [
+            'Dans les conditions neutres, les alizés soufflent d’est en ouest le long de l’équateur. Le blog de la NOAA précise qu’ils vont des zones d’air descendant vers les zones d’air ascendant. Selon l’IRI, l’Indonésie et les autres régions du Pacifique occidental reçoivent alors plus de précipitations que le Pacifique oriental, comme le Pérou et l’Équateur. Les alizés entraînent les eaux chaudes de surface vers l’ouest, ce qui forme la « piscine d’eau chaude » du Pacifique occidental, tandis que les eaux de surface de l’est restent plus fraîches.',
+            'L’atmosphère répond à ce contraste de température par la circulation de Walker : un air chaud et humide s’élève au-dessus de l’ouest, un air plus froid et plus sec descend du côté est. Mojib Latif et David Neelin expliquent que Bjerknes a nommé cette circulation en l’honneur de Walker, et que le vent d’est en surface fait partie du système des alizés. Le vent d’est exerce sur l’océan une contrainte qui amoncelle l’eau à l’ouest. Les alizés sont donc à la fois la conséquence du gradient de température entre l’ouest et l’est et l’une de ses causes : c’est ce couplage qui permet à l’ENSO d’exister.',
+            'La thermocline est la couche où la température de l’océan chute rapidement entre l’eau chaude de surface et l’eau froide profonde. Dans l’état moyen, la couche d’eau chaude est épaisse à l’ouest et mince à l’est : un modèle de l’océan évalué par Graham et ses collègues reproduit une piscine d’eau chaude profonde dans le Pacifique équatorial occidental, qui s’amincit en une couche de mélange mince dans l’est. Cette pente de la thermocline est un élément essentiel de l’ENSO : le CPC surveille un indice de température sous la surface, et en octobre 2026 il relie un indice bien supérieur à la moyenne à une thermocline plus profonde que la normale.',
+            'Dans l’est, l’eau froide profonde remonte près des côtes. Le service éducatif de l’UCAR explique que le vent le long de la côte pousse l’eau de surface vers le large, ce qui fait remonter l’eau profonde riche en nutriments vers la surface. Selon OpenStax (Biology 2e, chapitre 44), la plus grande partie de l’océan ouvert ne dispose pas de processus qui ramène les nutriments organiques en surface ; les grandes remontées d’eau du courant de Humboldt, le long de la côte ouest de l’Amérique du Sud, font exception. OpenStax rappelle aussi que la capacité de l’eau à stocker de grandes quantités d’énergie a des effets majeurs sur le climat et la météo mondiaux.',
+            'L’ENSO est donc une fluctuation autour de cet état moyen. Selon le Climate.gov de la NOAA, le lieu principal de l’air humide ascendant, au-dessus des eaux les plus chaudes, se situe dans le Pacifique central ou oriental pendant El Niño et sur l’Indonésie et le Pacifique occidental pendant La Niña. Comprendre l’état de référence permet de raisonner sur les écarts : pendant El Niño, les alizés faiblissent et la zone chaude s’étend vers l’est ; pendant La Niña, ils se renforcent et le contraste est-ouest s’accentue.'
+          ],
+          example: {
+            statement: 'Pendant un épisode, la pression est anormalement basse à Tahiti et anormalement haute à Darwin. L’indice SOI (pression de Tahiti moins pression de Darwin, normalisée) est-il positif ou négatif, et de quelle phase s’agit-il ?',
+            calculation: 'Pression basse (Tahiti) moins pression haute (Darwin) donne une différence négative : le SOI est négatif.',
+            answer: 'Le SOI est négatif, ce qui correspond à des eaux plus chaudes que la normale dans le Pacifique équatorial oriental : situation de type El Niño. Un SOI positif correspondrait plutôt à La Niña.'
+          },
+          exercise: {
+            question: 'Pourquoi la remontée d’eau (upwelling) au large du Pérou est-elle importante pour la vie marine ?',
+            answer: 'Parce qu’elle ramène vers la surface une eau profonde riche en nutriments, qui alimente le phytoplancton et donc les chaînes alimentaires marines, y compris les pêcheries.'
+          },
+          exercises: [
+            {
+              question: 'Dans quelle direction soufflent les alizés le long de l’équateur dans les conditions neutres ?',
+              answer: 'D’est en ouest.'
+            },
+            {
+              question: 'Quelle région du Pacifique reçoit normalement plus de précipitations : l’ouest (Indonésie) ou l’est (Pérou, Équateur) ?',
+              answer: 'L’ouest, d’après l’IRI.'
+            },
+            {
+              question: 'Qu’est-ce que la thermocline ?',
+              answer: 'La couche de l’océan où la température diminue rapidement entre l’eau chaude de surface et l’eau froide profonde.'
+            },
+            {
+              question: 'Quel courant OpenStax cite-t-il comme exception à l’absence de remontée de nutriments dans l’océan ouvert ?',
+              answer: 'Les remontées d’eau du courant de Humboldt, le long de la côte ouest de l’Amérique du Sud.'
+            }
+          ],
+          sources: [
+            { title: 'NOAA Climate.gov — The Rise of El Niño and La Niña', url: 'https://climate.gov/news-features/blogs/enso/rise-el-ni%C3%B1o-and-la-ni%C3%B1a' },
+            { title: 'IRI (Columbia) — Why do we care about El Niño and La Niña?', url: 'https://iri.columbia.edu/our-expertise/climate/enso/why-do-we-care-about-el-nino-and-la-nina/' },
+            { title: 'Latif et Neelin — Modelling the El Niño–Southern Oscillation, Europhysics News', url: 'https://www.europhysicsnews.org/articles/epn/pdf/1994/07/epn19942507p143.pdf' },
+            { title: 'Graham et al. (2015) — Reassessing Conceptual Models of ENSO, Journal of Climate', url: 'https://repository.library.noaa.gov/view/noaa/29852/noaa_29852_DS1.pdf' },
+            { title: 'UCAR Center for Science Education — An El Niño Fish Tale', url: 'https://scied.ucar.edu/el-nino-fish-tale' },
+            { title: 'OpenStax Biology 2e — 44.4 Aquatic Biomes', url: 'https://openstax.org/books/biology-2e/pages/44-4-aquatic-biomes' },
+            { title: 'NOAA Climate.gov — Global impacts of El Niño and La Niña', url: 'https://www.climate.gov/news-features/featured-images/global-impacts-el-nino-and-la-nina' }
+          ]
+        }
+      },
+      {
+        id: 'mecanismes-couplage',
+        title: 'Les mécanismes de l’ENSO : rétroaction de Bjerknes, ondes océaniques et inversion de phase',
+        field: 'Dynamique climatique · Couplage océan-atmosphère · Modèles conceptuels de l’ENSO',
+        summary: 'Comprendre comment un événement s’amplifie par rétroaction positive, puis pourquoi il s’achève et peut laisser place à la phase opposée.',
+        lesson: {
+          sections: [
+            'La croissance d’un El Niño repose sur la rétroaction de Bjerknes, une rétroaction positive entre le vent et la température de surface. Selon le Climate.gov de la NOAA, elle commence lorsque les alizés faiblissent ou que la température de surface augmente dans le Pacifique central et oriental. Des vents plus faibles réduisent la remontée d’eau froide dans l’est ; l’eau y est plus chaude, le contraste est-ouest diminue, la circulation de Walker faiblit encore et les alizés diminuent davantage. Graham et ses collègues décrivent la même chaîne : l’anomalie initiale de température dans l’est réduit le gradient équatorial, affaiblit la circulation de Walker et modifie la contrainte du vent de façon à renforcer l’anomalie de départ.',
+            'La Niña est le même mécanisme dans l’autre sens. Pendant La Niña, les alizés soufflent plus fort que la normale, entassent l’eau chaude de surface dans le Pacifique occidental et font remonter de l’eau profonde et froide dans l’est ; le contraste est-ouest et les vents d’est s’accentuent ensemble. La NOAA indique que l’on ne sait pas toujours quel élément déclenche la boucle : parfois la surface se refroidit d’abord puis les alizés se renforcent, parfois l’inverse. Cette ambiguïté explique pourquoi l’ENSO se mesure de plusieurs façons (température, pression, vent, pluie), car ces variables évoluent ensemble.',
+            'L’initiation et la croissance d’un El Niño font intervenir les ondes équatoriales. Dans le modèle de l’oscillateur retardé décrit par Graham et ses collègues, des anomalies de vent d’ouest dans le Pacifique central provoquent une onde de Kelvin descendante qui se propage vers l’est et augmente la température de surface dans la région Niño-3. Ces auteurs rappellent aussi que des événements de haute fréquence, comme l’oscillation de Madden-Julian ou les coups de vent d’ouest, jouent un rôle de forçage aléatoire dans l’excitation des événements. Ainsi, l’ENSO combine une dynamique interne et un bruit atmosphérique, ce qui limite sa régularité.',
+            'Une rétroaction positive seule ferait croître l’événement indéfiniment : il faut des rétroactions négatives retardées pour inverser la phase. La NOAA note que ces événements « sèment les graines de leur propre fin » par des processus océaniques retardés. Dans l’oscillateur retardé, des ondes de Rossby ascendantes se réfléchissent à la frontière occidentale en ondes de Kelvin ascendantes qui remontent la thermocline dans l’est et refroidissent la surface. Tziperman et ses collègues estiment qu’elles atteignent le Pacifique oriental environ six mois après la perturbation de vent initiale. Dans l’oscillateur de recharge de Jin (1997), un El Niño évacue de la chaleur de la bande équatoriale vers les latitudes plus élevées, laissant la thermocline anormalement peu profonde, ce qui favorise le passage vers La Niña ; l’accumulation de chaleur équatoriale est une condition préalable au prochain El Niño. Izumo et ses collègues proposent un oscillateur hybride combinant la recharge lente et la rétroaction retardée plus rapide, avec des contributions équivalentes.',
+            'Le calendrier et la diversité des événements nuancent ce schéma. Les événements s’installent généralement au printemps ou en été boréal et atteignent leur maximum en hiver boréal ; Tziperman et ses collègues montrent que l’amplification saisonnière des ondes de Rossby et de Kelvin bloque le pic des El Niño vers la fin de l’année civile. Le modèle de recharge décrit assez bien les El Niño de type Pacifique oriental, mais moins bien ceux de type Pacifique central (dits « Modoki »), où la recharge et la décharge de chaleur équatoriale jouent un rôle moindre. Enfin, les La Niña de plusieurs années sont souvent expliquées comme un rebond après un El Niño extrême qui a vidé l’océan équatorial de sa chaleur, mais la La Niña de 2020–2023, précédée d’un El Niño borderline, ne suit pas ce scénario selon McPhaden et ses collègues.'
+          ],
+          example: {
+            statement: 'Selon Tziperman et ses collègues, le signal qui met fin à un El Niño atteint l’est du Pacifique environ six mois après la perturbation de vent initiale. Si une anomalie de vent d’ouest apparaît en juillet, à quel mois le signal d’arrêt arrive-t-il ?',
+            calculation: 'Juillet est le mois 7 ; 7 + 6 = 13, soit le mois 1 de l’année suivante (13 − 12 = 1), donc janvier.',
+            answer: 'Environ janvier de l’année suivante, c’est-à-dire en plein hiver boréal, ce qui concorde avec le fait que les El Niño atteignent leur pic en fin d’année civile. C’est un ordre de grandeur, car le délai varie.'
+          },
+          exercise: {
+            question: 'Pourquoi une rétroaction positive ne suffit-elle pas à expliquer l’alternance entre El Niño et La Niña ?',
+            answer: 'Parce qu’elle ne fait qu’amplifier l’anomalie existante. Pour que la phase s’inverse, il faut des rétroactions négatives retardées, par exemple les ondes de Kelvin et de Rossby réfléchies ou la décharge de chaleur équatoriale.'
+          },
+          exercises: [
+            {
+              question: 'En quoi consiste la rétroaction de Bjerknes ?',
+              answer: 'C’est une rétroaction positive entre le vent et la température de surface du Pacifique tropical : un réchauffement de l’est affaiblit les alizés, ce qui réduit la remontée d’eau froide et réchauffe encore l’est (le processus inverse vaut pour La Niña).'
+            },
+            {
+              question: 'Que se passe-t-il pendant La Niña pour les alizés et les eaux de surface ?',
+              answer: 'Les alizés soufflent plus fort que la normale, entassent l’eau chaude dans le Pacifique occidental et font remonter de l’eau profonde et froide dans l’est.'
+            },
+            {
+              question: 'Que décrit l’oscillateur de recharge de Jin (1997) ?',
+              answer: 'Le rôle du contenu de chaleur équatorial : il s’accumule avant un El Niño, puis El Niño l’évacue vers les latitudes élevées, laissant une thermocline peu profonde qui favorise La Niña.'
+            },
+            {
+              question: 'À quelle saison les événements atteignent-ils généralement leur maximum ?',
+              answer: 'En hiver boréal (fin de l’année civile).'
+            }
+          ],
+          sources: [
+            { title: 'NOAA Climate.gov — The Rise of El Niño and La Niña', url: 'https://climate.gov/news-features/blogs/enso/rise-el-ni%C3%B1o-and-la-ni%C3%B1a' },
+            { title: 'Graham et al. (2015) — Reassessing Conceptual Models of ENSO, Journal of Climate', url: 'https://repository.library.noaa.gov/view/noaa/29852/noaa_29852_DS1.pdf' },
+            { title: 'Tziperman et al. (1998) — Locking of El Niño’s Peak Time to the End of the Calendar Year in the Delayed Oscillator Picture of ENSO', url: 'https://origin.cpc.ncep.noaa.gov/products/people/yxue/pub/7.pdf' },
+            { title: 'Izumo et al. — The Hybrid Recharge Delayed Oscillator: A More Realistic El Niño Conceptual Model', url: 'https://par.nsf.gov/servlets/purl/10530647' },
+            { title: 'McPhaden, Hasan et Chikamoto (2023) — Causes and Consequences of the Prolonged 2020–2023 La Niña, EGU General Assembly', url: 'https://meetingorganizer.copernicus.org/EGU23/EGU23-10801.html' }
+          ]
+        }
+      },
+      {
+        id: 'impacts-precipitations',
+        title: 'Effets sur les précipitations et les tempêtes : déplacement de la convection et téléconnexions',
+        field: 'Climatologie régionale · Téléconnexions · Sécheresses, inondations et cyclones',
+        summary: 'Comprendre comment le déplacement de la pluie tropicale modifie les précipitations loin du Pacifique, et pourquoi ces effets restent probables sans être garantis.',
+        lesson: {
+          sections: [
+            'Le premier effet de l’ENSO est un déplacement de la convection tropicale. D’après le Climate.gov de la NOAA, El Niño et La Niña réchauffent et refroidissent alternativement de vastes zones du Pacifique tropical, ce qui modifie fortement où et combien il pleut. Comme un rocher dans un cours d’eau, ce déplacement perturbe la circulation atmosphérique qui relie les tropiques aux moyennes latitudes, puis modifie les courants-jets. Il n’y a pas d’effets cohérents sur l’Amérique du Nord en été, alors que les régions tropicales et les subtropiques de l’hémisphère Sud, comme l’Australie, sont touchées aux deux saisons. En octobre 2026, le CPC décrit une convection et des pluies renforcées du Pacifique central à l’est, et supprimées sur l’Indonésie.',
+            'Dans les régions proches du Pacifique, les effets typiques d’El Niño sont des pluies et inondations accrues sur la côte du Pérou et de l’Équateur et une sécheresse en Indonésie et en Australie ; La Niña produit l’inverse. L’IRI cite les inondations et glissements de terrain au Pérou et en Californie (l’El Niño de 1997 a causé 2 milliards de dollars de dégâts matériels au Pérou), ainsi que les incendies de forêt et leur pollution de l’air en Indonésie. Pendant La Niña, le Pacifique occidental reçoit plus de pluie que la moyenne, et les inondations peuvent être graves si elles suivent une sécheresse prolongée liée à El Niño. Une étude de Scientific Reports décrit, pour El Niño, des conditions plus sèches du sud et sud-est de l’Asie à l’Australie (surtout à l’est), dans le centre de la Chine, l’Amérique du Sud équatoriale, le nord des États-Unis, l’ouest et le sud du Canada et le Sahel.',
+            'Aux latitudes moyennes, les effets passent par les ondes atmosphériques et les courants-jets. Selon les cours de Penn State, El Niño est souvent associé à de fortes pluies et inondations dans le sud des États-Unis, tandis que La Niña peut y provoquer de graves sécheresses ; des régions comme le nord-ouest Pacifique américain connaissent souvent des conditions plus sèches. Ces schémas sont des tendances de probabilité : l’IRI précise que les téléconnexions typiques d’El Niño sont probables, mais pas certaines, et le CPC indique, à propos de l’événement de 2026, que des impacts cohérents avec El Niño sont plus probables lorsque l’événement est fort, sans être garantis.',
+            'Les cyclones tropicaux constituent un effet bien documenté. D’après la NOAA, El Niño favorise une activité cyclonique plus forte dans le Pacifique central et oriental et la supprime dans l’Atlantique ; La Niña a l’effet inverse. Le mécanisme principal est le cisaillement vertical du vent, c’est-à-dire la variation de la vitesse et de la direction du vent avec l’altitude, qui peut déchirer un cyclone en formation ou l’empêcher de se former. Pendant El Niño, des vents d’ouest plus forts en altitude et des alizés plus forts dans l’Atlantique augmentent ce cisaillement ; El Niño accentue aussi les mouvements descendants et la stabilité de l’atmosphère. L’effet se combine avec les cycles multidécennaux : dans une ère de forte activité atlantique, El Niño produit en général une saison proche de la normale et La Niña une saison supérieure à la normale.',
+            'Les effets s’accumulent et se combinent dans le temps. L’IRI cite, parmi les effets des téléconnexions de l’ENSO, une invasion de criquets bruns en Afrique australe liée à des pluies précoces d’hiver, qui peuvent aussi conduire à la sécheresse, à l’échec des récoltes et à la famine. Pour la La Niña prolongée de 2020–2022, le secrétaire général de l’OMM a associé la sécheresse qui s’aggravait dans la Corne de l’Afrique et dans le sud de l’Amérique du Sud, ainsi que les pluies supérieures à la moyenne en Asie du Sud-Est et en Océanie, aux marques de La Niña ; le chercheur Richard Seager a aussi relié La Niña aux inondations en Asie, dont celles du Pakistan. Ces exemples illustrent que les effets locaux dépendent aussi d’autres facteurs que l’ENSO.'
+          ],
+          example: {
+            statement: 'Une saison cyclonique s’annonce pendant un El Niño établi. Dans quel bassin faut-il s’attendre à une activité plus forte, et quel mécanisme l’explique principalement ?',
+            calculation: 'Selon la NOAA, El Niño augmente le cisaillement vertical du vent sur l’Atlantique (plus de cisaillement = moins de cyclones) et le réduit sur le Pacifique central et oriental (moins de cisaillement = plus de cyclones).',
+            answer: 'Plus d’activité dans le Pacifique central et oriental, moins dans l’Atlantique, principalement à cause du cisaillement vertical du vent. C’est une tendance de probabilité : le cycle multidécennal de l’Atlantique modifie aussi le résultat.'
+          },
+          exercise: {
+            question: 'Pourquoi un El Niño fort ne garantit-il pas les mêmes effets dans toutes les régions ?',
+            answer: 'Parce que les téléconnexions sont des tendances probables et non des certitudes : l’intensité des indicateurs ne correspond pas directement à l’intensité des effets locaux, aucun événement n’est identique à un autre, et d’autres facteurs climatiques agissent en même temps.'
+          },
+          exercises: [
+            {
+              question: 'Où le principal foyer de convection se trouve-t-il pendant El Niño et pendant La Niña ?',
+              answer: 'Pendant El Niño, dans le Pacifique central ou oriental ; pendant La Niña, sur l’Indonésie et le Pacifique occidental.'
+            },
+            {
+              question: 'Quels effets typiques d’El Niño sont observés sur la côte du Pérou et en Indonésie ?',
+              answer: 'Des pluies et inondations accrues sur la côte du Pérou et de l’Équateur, et de la sécheresse, des incendies de forêt et de la pollution de l’air en Indonésie.'
+            },
+            {
+              question: 'Quel est l’effet d’El Niño sur l’activité cyclonique dans l’Atlantique et dans le Pacifique oriental ?',
+              answer: 'Il la supprime en général dans l’Atlantique (cisaillement du vent accru) et la renforce dans le Pacifique central et oriental.'
+            },
+            {
+              question: 'Y a-t-il des effets cohérents d’El Niño sur l’Amérique du Nord en été ?',
+              answer: 'Non : le Climate.gov indique qu’il n’y a pas d’effets cohérents sur l’Amérique du Nord en été, alors que les tropiques et les subtropiques de l’hémisphère Sud sont touchés aux deux saisons.'
+            }
+          ],
+          sources: [
+            { title: 'NOAA Climate.gov — Global impacts of El Niño and La Niña', url: 'https://www.climate.gov/news-features/featured-images/global-impacts-el-nino-and-la-nina' },
+            { title: 'NOAA Climate.gov — Impacts of El Niño and La Niña on the hurricane season', url: 'https://www.climate.gov/news-features/blogs/enso/impacts-el-nino-and-la-nina-hurricane-season' },
+            { title: 'IRI (Columbia) — Why do we care about El Niño and La Niña?', url: 'https://iri.columbia.edu/our-expertise/climate/enso/why-do-we-care-about-el-nino-and-la-nina/' },
+            { title: 'NOAA CPC — ENSO Diagnostic Discussion, 8 octobre 2026', url: 'https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_oct2026/ensodisc.shtml' },
+            { title: 'Scientific Reports — Combined effects of the Pacific Decadal Oscillation and El Niño-Southern Oscillation on Global Land Dry–Wet Changes', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4200402/' },
+            { title: 'Penn State (METEO 7) — Climatic Impacts of ENSO Events Beyond the Tropical Pacific', url: 'https://courses.ems.psu.edu/meteo7/book/export/html/2015' },
+            { title: 'ABC News — What is a triple dip La Niña?', url: 'https://abc7news.com/triple-dip-la-nia-severe-weather-human-induced-climate-change-global-temperatures/12215880/' }
+          ]
+        }
+      },
+      {
+        id: 'impacts-temperatures-ecosystemes',
+        title: 'Effets sur les températures mondiales, les écosystèmes marins et les sociétés',
+        field: 'Climat et environnement · Température globale, productivité marine et risques · Années 1970 à 2020',
+        summary: 'Comprendre comment l’ENSO module la température moyenne du globe, perturbe la vie marine et pèse sur les sociétés, sans masquer le réchauffement climatique de fond.',
+        lesson: {
+          sections: [
+            'El Niño libère de la chaleur stockée dans l’océan vers l’atmosphère et tend donc à élever la température moyenne du globe, alors que La Niña a souvent un effet de refroidissement temporaire. L’OMM indique que les effets d’El Niño sur la température mondiale se manifestent en général l’année qui suit son développement : pour l’événement apparu en 2023, elle les situait donc en 2024. L’OMM rappelle que 2016, ancienne année la plus chaude, résultait de l’effet combiné d’un El Niño exceptionnellement fort et du changement climatique.',
+            'Il faut distinguer la variabilité naturelle de la tendance. Pour 2023–2024, l’OMM a classé El Niño parmi les cinq plus forts jamais enregistrés, avec un maximum entre novembre et janvier où l’anomalie de température de surface a atteint environ 2 °C dans la région Niño 3.4. Elle précise cependant que El Niño a contribué aux températures records, mais que les gaz à effet de serre en sont sans équivoque la principale cause, et que la température de surface de la mer de janvier 2024, la plus élevée jamais enregistrée pour un mois de janvier, ne peut pas s’expliquer par El Niño seul.',
+            'À l’inverse, La Niña peut ralentir temporairement le réchauffement de surface. Selon Michael McPhaden (NOAA), la La Niña triple de 2020–2023 a pu offrir un répit temporaire à la hausse des températures mondiales, et elle a interrompu la hausse des températures de surface de la mer jusqu’au retour d’El Niño à l’été 2023, suivi d’une libération rapide de chaleur stockée dans l’océan supérieur. Les cycles ENSO ne modifient donc pas la tendance de long terme, mais ils déplacent les valeurs annuelles autour d’elle, ce qui compte lorsqu’on compare des années successives.',
+            'Sur le plan écologique, El Niño réduit les remontées d’eau froide riche en nutriments, donc le phytoplancton qui nourrit les poissons. L’exemple classique est celui de l’anchois péruvien : d’après l’UCAR, la pêche atteignait près de 10 millions de tonnes en 1970, puis les bateaux sont rentrés avec les filets vides en 1972, et des oiseaux marins sont morts en grand nombre. L’UCAR ajoute que la surpêche des années 1960 avait réduit la résilience des anchois, qui ont moins bien supporté l’El Niño de 1972. Les épisodes forts s’accompagnent aussi de blanchissement des coraux ; les cours de Penn State notent que les récifs coralliens, sensibles aux variations de température, peuvent subir des épisodes de blanchissement pendant les forts El Niño. OpenStax signale par ailleurs que le réchauffement des océans met déjà en danger les récifs coralliens.',
+            'Les effets touchent aussi les sociétés et le cycle du carbone. L’IRI rappelle que, pendant les deux plus forts El Niño du XXᵉ siècle (1982–1983 et 1997–1998), les modifications du climat se sont étendues aux épidémies, aux catastrophes naturelles, à la disponibilité de l’eau et à l’énergie hydroélectrique. Une étude publiée dans Scientific Reports rappelle que l’ENSO influence fortement les variations interannuelles du cycle mondial du carbone : dans l’essentiel des tropiques, la productivité de la végétation baisse avec la hausse de température et la baisse de pluie associées à El Niño, et l’inverse vaut pendant La Niña. L’ENSO relie donc directement le cycle de l’eau, la température et le cycle du carbone.'
+          ],
+          example: {
+            statement: 'En septembre 2026, le CPC indique des anomalies relatives de température de surface de +2,1 °C dans Niño-3.4, +3,0 °C dans Niño-3 et +3,9 °C dans Niño-1+2. Quel est l’écart entre Niño-1+2 (côte sud-américaine) et Niño-3.4 (Pacifique central) ?',
+            calculation: '3,9 − 2,1 = 1,8 °C.',
+            answer: 'L’anomalie est plus forte de 1,8 °C près de la côte sud-américaine que dans le Pacifique central. Le CPC précise même que les anomalies dépassent +4,0 °C dans certaines parties du Pacifique équatorial oriental.'
+          },
+          exercise: {
+            question: 'Pourquoi El Niño fait-il baisser la pêche à l’anchois au Pérou ?',
+            answer: 'Parce que l’eau chaude de surface réduit la remontée d’eau froide riche en nutriments ; il y a moins de phytoplancton et donc moins d’anchois. Dans le cas de 1972, la surpêche avait aussi affaibli la résilience du stock.'
+          },
+          exercises: [
+            {
+              question: 'Quand les effets d’El Niño sur la température mondiale se manifestent-ils typiquement, selon l’OMM ?',
+              answer: 'L’année qui suit le développement d’El Niño (par exemple 2024 pour l’événement apparu en 2023).'
+            },
+            {
+              question: 'Pourquoi l’OMM insiste-t-elle sur le fait qu’El Niño n’explique pas à lui seul les records de 2023–2024 ?',
+              answer: 'Parce que les gaz à effet de serre en sont la principale cause ; la température de surface de la mer de janvier 2024 ne peut pas s’expliquer par El Niño seul.'
+            },
+            {
+              question: 'Quelle a été la conséquence de la La Niña de 2020–2023 sur les températures mondiales, selon McPhaden ?',
+              answer: 'Elle a pu offrir un répit temporaire à la hausse des températures et a interrompu la hausse de la température de surface de la mer jusqu’au retour d’El Niño à l’été 2023.'
+            },
+            {
+              question: 'Que se passe-t-il pour la végétation tropicale pendant El Niño ?',
+              answer: 'Sa productivité baisse dans l’essentiel des tropiques en raison de la hausse de température et de la baisse de précipitations, avec l’effet inverse pendant La Niña.'
+            }
+          ],
+          sources: [
+            { title: 'OMM — El Niño expected to last at least until April 2024', url: 'https://wmo.int/media/news/el-nino-expected-last-least-until-april-2024' },
+            { title: 'NOAA (Global Ocean Monitoring) — Recent “Triple-Dip” La Niña upends current understanding of ENSO', url: 'https://globalocean.noaa.gov/recent-triple-dip-la-nina-upends-current-understanding-of-enso' },
+            { title: 'UCAR Center for Science Education — An El Niño Fish Tale', url: 'https://scied.ucar.edu/el-nino-fish-tale' },
+            { title: 'IRI (Columbia) — Why do we care about El Niño and La Niña?', url: 'https://iri.columbia.edu/our-expertise/climate/enso/why-do-we-care-about-el-nino-and-la-nina/' },
+            { title: 'Scientific Reports — Intensification of terrestrial carbon cycle related to El Niño–Southern Oscillation under greenhouse warming', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5698330/' },
+            { title: 'Penn State (METEO 7) — Climatic Impacts of ENSO Events Beyond the Tropical Pacific', url: 'https://courses.ems.psu.edu/meteo7/book/export/html/2015' },
+            { title: 'OpenStax Biology 2e — 44.4 Aquatic Biomes', url: 'https://openstax.org/books/biology-2e/pages/44-4-aquatic-biomes' },
+            { title: 'NOAA CPC — ENSO Diagnostic Discussion, 8 octobre 2026', url: 'https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_oct2026/ensodisc.shtml' }
+          ]
+        }
+      },
+      {
+        id: 'suivi-histoire-climat',
+        title: 'Observer, prévoir et replacer l’ENSO : événements marquants, état en octobre 2026 et changement climatique',
+        field: 'Climatologie · Suivi opérationnel, histoire des événements et perspectives · De 1950 à 2026',
+        summary: 'Comprendre comment le CPC suit l’ENSO, quels ont été les événements marquants, où en est l’événement de 2026 et ce que l’on sait de l’avenir de l’ENSO.',
+        lesson: {
+          sections: [
+            'Le CPC publie chaque mois un diagnostic de l’ENSO et un système d’alerte (par exemple « El Niño Advisory »). Le diagnostic croise plusieurs observations : les indices de température de surface, un indice de température sous la surface entre 180° et 100°O qui reflète la profondeur de la thermocline, les anomalies de vent de basse et haute altitude, la convection et les pluies, et les indices d’oscillation australe. Le raisonnement est probabiliste : il donne des chances d’atteindre certaines intensités, et non une prédiction unique. La prochaine discussion mensuelle du CPC suivant celle d’octobre 2026 est prévue le 12 novembre 2026.',
+            'Plusieurs événements servent de repères. L’IRI cite 1982–1983 et 1997–1998 comme les deux plus forts El Niño du XXᵉ siècle ; selon le MEI, les valeurs les plus fortes depuis 1979 datent de mars–avril 1983 (2,9) et mars–avril 1998 (2,5). L’OMM compte l’El Niño de 2023–2024 parmi les cinq plus forts jamais enregistrés. Pour La Niña, les valeurs MEI les plus fortes ont été −2,4 en juin–juillet et juillet–août 2010 et −2,2 en juin–juillet 2022. Ces classements dépendent de l’indice et de la période choisis : la NOAA utilise plusieurs indices qui ne sont pas strictement interchangeables.',
+            'La La Niña de 2020–2023 est un cas d’étude. Il s’agit de la première La Niña « triple » du XXIᵉ siècle ; des événements comparables ont eu lieu en 1973–1976 et 1998–2001. Une hypothèse répandue veut que les La Niña pluriannuelles surviennent en rebond d’un El Niño extrême qui a vidé l’océan équatorial de sa chaleur ; selon McPhaden et ses collègues, ce n’était pas le cas en 2019, et ils invoquent plutôt des interactions entre bassins tropicaux. Pour la NOAA, cette La Niña montre que les concepts actuels de l’ENSO pourraient ne plus être adaptés dans un climat qui change.',
+            'État de l’événement en cours. Dans sa discussion du 8 octobre 2026, le CPC maintient un « El Niño Advisory » : El Niño continue de se renforcer et un événement fort à très fort est probable jusqu’en janvier–mars 2027 (probabilité supérieure à 83 %). Les anomalies relatives atteignent +2,1 °C dans Niño-3.4, +3,0 °C dans Niño-3 et +3,9 °C dans Niño-1+2, avec plus de +4,0 °C par endroits dans l’est du Pacifique équatorial. La thermocline est plus profonde que la moyenne, des vents d’ouest anormaux s’étendent de l’ouest vers le centre-est du Pacifique, les pluies sont renforcées du centre à l’est et supprimées sur l’Indonésie, et les indices d’oscillation australe sont fortement négatifs. Le CPC évalue à 54 % (septembre–novembre), 83 % (octobre–décembre) et 70 % (novembre–janvier) la probabilité d’un événement historique, c’est-à-dire d’un RONI sur trois mois supérieur ou égal à +2,5 °C, ce qui dépasserait tous les El Niño depuis 1950. Il s’agit de probabilités de prévision, valables à la date indiquée et mises à jour chaque mois.',
+            'Enfin, le changement climatique complique l’avenir de l’ENSO. D’après le GIEC (AR6), il est virtuellement certain que l’ENSO restera le mode dominant de la variabilité interannuelle dans un monde plus chaud ; il est très probable que la variabilité des précipitations liée à l’ENSO soit amplifiée dans la seconde moitié du XXIᵉ siècle dans la plupart des scénarios, mais il n’y a pas de consensus entre modèles pour un changement systématique de l’intensité de la variabilité de température de surface (confiance moyenne). Une étude de Cai et ses collègues (2022) soutient au contraire que les modèles CMIP6 montrent une variabilité de température plus forte au XXIᵉ siècle. Le blog de la NOAA ajoute qu’il n’existe pas de preuve claire que les changements de l’ENSO depuis 1950 soient inhabituels. Ces désaccords sont à retenir : l’incertitude sur l’évolution de l’ENSO est réelle.'
+          ],
+          example: {
+            statement: 'Selon le MEI, l’El Niño de mars–avril 1983 a atteint 2,9 et la La Niña de l’été 2010 a atteint −2,4. Quel événement a eu l’amplitude la plus forte, et de combien en unités d’indice ?',
+            calculation: 'On compare les valeurs absolues : |2,9| = 2,9 et |−2,4| = 2,4 ; 2,9 − 2,4 = 0,5.',
+            answer: 'L’El Niño de 1983 a eu l’amplitude la plus forte, de 0,5 unité d’indice. Ces valeurs viennent d’un indice particulier : un autre indice pourrait donner un classement légèrement différent.'
+          },
+          exercise: {
+            question: 'Pourquoi la La Niña de 2020–2023 a-t-elle surpris les scientifiques ?',
+            answer: 'Parce qu’elle n’a pas suivi un El Niño extrême ayant vidé l’océan de sa chaleur, scénario habituellement avancé pour expliquer les La Niña de plusieurs années ; l’événement a donc remis en question certains concepts de l’ENSO.'
+          },
+          exercises: [
+            {
+              question: 'Quel est le statut de l’ENSO selon le CPC le 8 octobre 2026 ?',
+              answer: 'El Niño Advisory : El Niño continue de se renforcer et un événement fort à très fort est probable jusqu’en janvier–mars 2027.'
+            },
+            {
+              question: 'Quel seuil le CPC utilise-t-il pour qualifier un événement d’« historique » dans sa discussion d’octobre 2026 ?',
+              answer: 'Un RONI sur trois mois supérieur ou égal à +2,5 °C, ce qui dépasserait tous les El Niño depuis 1950.'
+            },
+            {
+              question: 'Quelles années ont connu des La Niña de trois hivers consécutifs avant 2020–2023, selon NOAA et McPhaden ?',
+              answer: '1973–1976 et 1998–2001.'
+            },
+            {
+              question: 'Que dit le GIEC AR6 à propos de la persistance de l’ENSO dans un climat plus chaud ?',
+              answer: 'Il est virtuellement certain qu’il restera le mode dominant de variabilité interannuelle ; en revanche, il n’y a pas de consensus entre modèles pour un changement systématique de l’intensité de sa variabilité de température de surface.'
+            }
+          ],
+          sources: [
+            { title: 'NOAA CPC — ENSO Diagnostic Discussion, 8 octobre 2026', url: 'https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_oct2026/ensodisc.shtml' },
+            { title: 'Midwestern Regional Climate Center (Purdue) — ENSO Indices and Past Events', url: 'https://www.mrcc.purdue.edu/index.php/climate_watch/special_topics/enso-indices-and-past-events' },
+            { title: 'IRI (Columbia) — Why do we care about El Niño and La Niña?', url: 'https://iri.columbia.edu/our-expertise/climate/enso/why-do-we-care-about-el-nino-and-la-nina/' },
+            { title: 'OMM — El Niño expected to last at least until April 2024', url: 'https://wmo.int/media/news/el-nino-expected-last-least-until-april-2024' },
+            { title: 'NOAA (Global Ocean Monitoring) — Recent “Triple-Dip” La Niña upends current understanding of ENSO', url: 'https://globalocean.noaa.gov/recent-triple-dip-la-nina-upends-current-understanding-of-enso' },
+            { title: 'McPhaden, Hasan et Chikamoto (2023) — Causes and Consequences of the Prolonged 2020–2023 La Niña, EGU General Assembly', url: 'https://meetingorganizer.copernicus.org/EGU23/EGU23-10801.html' },
+            { title: 'Cai et al. (2022) — Increased ENSO sea surface temperature variability under four IPCC emission scenarios, Nature Climate Change', url: 'https://www.doi.org/10.1038/s41558-022-01282-z' },
+            { title: 'IPCC AR6 WGI — Summary for Policymakers', url: 'https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf' }
+          ]
+        }
+      }
+    ]
+  },
+
+
 ]
 
