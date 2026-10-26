@@ -971,5 +971,349 @@ window.courseCatalog = [
       }
     ]
   },
+{
+  id: 'Macroéconomie',
+  title: 'La macroéconomie',
+  note: 'Six chapitres approfondis sur les agrégats macroéconomiques, la croissance, les fluctuations et le marché du travail, les prix, les politiques économiques et les échanges extérieurs. Les indicateurs sont des mesures construites selon des conventions statistiques : ils éclairent l’économie sans résumer à eux seuls le bien-être, les inégalités ou toutes les dimensions de l’activité.',
+  chapters: [
+    {
+      id: 'mesurer-activite-economique',
+      title: 'Mesurer l’activité économique : PIB, valeur ajoutée et revenu',
+      field: 'Macroéconomie · Comptabilité nationale et principaux agrégats',
+      summary: 'Définir le produit intérieur brut, comprendre ses trois approches comptables et distinguer PIB nominal, PIB en volume et limites de cet indicateur.',
+      lesson: {
+        sections: [
+          'La macroéconomie étudie l’économie à l’échelle agrégée : production totale, revenus, dépenses, emploi, niveau général des prix et relations avec le reste du monde. Elle s’appuie notamment sur la comptabilité nationale, un système cohérent de définitions et de comptes qui permet de comparer des périodes et, avec prudence, des économies. Les agrégats dépendent de conventions statistiques explicites ; ils ne sont pas des observations directes et exhaustives de chaque activité.',
+          'Le produit intérieur brut (PIB) mesure la valeur de la production finale réalisée sur le territoire économique pendant une période donnée. Dans l’approche par la production, il correspond à la somme des valeurs ajoutées brutes des unités productrices résidentes, augmentée des impôts sur les produits et diminuée des subventions sur les produits. La valeur ajoutée d’une unité est la valeur de sa production diminuée de ses consommations intermédiaires. Cette méthode évite de compter plusieurs fois les biens intermédiaires incorporés dans les produits finaux.',
+          'Le PIB peut aussi être calculé par les dépenses : consommation finale + formation brute de capital + exportations − importations, avec les composantes et ajustements prévus par la comptabilité nationale. Les importations sont soustraites parce qu’elles peuvent déjà être incluses dans la consommation, l’investissement ou les dépenses publiques, alors qu’elles ne sont pas produites sur le territoire. Dans l’approche par les revenus, le PIB correspond aux revenus primaires engendrés par la production, notamment la rémunération des salariés, l’excédent brut d’exploitation, le revenu mixte et les impôts nets de subventions sur la production et les importations. En pratique, les estimations issues des trois approches sont rapprochées à partir de sources statistiques distinctes.',
+          'Le PIB nominal évalue la production aux prix de la période observée : il peut augmenter parce que les quantités produites progressent, parce que les prix montent, ou pour ces deux raisons à la fois. Le PIB en volume vise à isoler l’évolution des quantités en neutralisant les variations de prix selon les méthodes de comptabilité nationale. Le taux de croissance réel se calcule à partir de l’évolution du PIB en volume entre deux périodes comparables. Les séries trimestrielles peuvent être corrigées des variations saisonnières et des effets calendaires ; il faut donc vérifier la définition de la série avant de comparer des chiffres.',
+          'Le PIB est un indicateur de production, pas une mesure complète du bien-être. Il ne décrit pas à lui seul la répartition des revenus, la qualité des services, le travail domestique non rémunéré, les loisirs, la sécurité économique ou les dommages environnementaux. Le PIB par habitant divise le PIB par la population et fournit un repère moyen, mais il ne dit pas comment le revenu est réparti. Pour une analyse plus complète, on le complète avec des indicateurs de revenu disponible, de pauvreté, d’inégalités, de santé, d’éducation et d’environnement.'
+        ],
+        example: {
+          statement: 'Une économie produit 1 000 unités d’un bien à 10 euros l’unité en année 1, puis 1 000 unités à 12 euros en année 2. Que devient la valeur nominale de cette production et que peut-on conclure sur le volume produit ?',
+          calculation: 'Année 1 : 1 000 × 10 = 10 000 euros. Année 2 : 1 000 × 12 = 12 000 euros. La valeur nominale augmente de 2 000 euros, soit 20 %. La quantité reste égale à 1 000 unités.',
+          answer: 'La valeur nominale augmente de 20 %, mais la quantité produite ne change pas dans cet exemple. On ne peut donc pas interpréter la hausse nominale comme une hausse du volume réel : elle provient ici uniquement de la hausse du prix.'
+        },
+        exercise: {
+          question: 'Pourquoi les consommations intermédiaires sont-elles déduites de la production pour calculer la valeur ajoutée ?',
+          answer: 'Pour ne pas compter plusieurs fois la valeur des biens et services utilisés dans les étapes successives de production. La valeur ajoutée mesure la contribution propre de chaque producteur.'
+        },
+        exercises: [
+          {
+            question: 'Que mesure le PIB ?',
+            answer: 'La valeur de la production finale réalisée par les unités productrices résidentes sur le territoire économique pendant une période donnée, selon les conventions de la comptabilité nationale.'
+          },
+          {
+            question: 'Pourquoi les importations sont-elles soustraites dans l’approche du PIB par les dépenses ?',
+            answer: 'Parce que les biens et services importés peuvent déjà être comptés dans les dépenses intérieures, mais ne sont pas produits sur le territoire national.'
+          },
+          {
+            question: 'Une hausse du PIB nominal garantit-elle une hausse de la production réelle ?',
+            answer: 'Non. Elle peut provenir d’une hausse des prix, d’une hausse des volumes ou des deux. Il faut examiner le PIB en volume pour suivre l’évolution réelle de la production.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Insee — Produit intérieur brut (PIB) et ses composantes',
+            url: 'https://www.insee.fr/fr/statistiques/8682030'
+          },
+          {
+            title: 'Insee — Principaux indicateurs économiques',
+            url: 'https://www.insee.fr/fr/statistiques/4277765'
+          },
+          {
+            title: 'Bureau of Economic Analysis — What to Know About GDP',
+            url: 'https://www.bea.gov/resources/learning-center/what-to-know-gdp'
+          },
+          {
+            title: 'Nations unies — System of National Accounts',
+            url: 'https://unstats.un.org/unsd/nationalaccount/sna.asp'
+          }
+        ]
+      }
+    },
+    {
+      id: 'croissance-productivite-cycles',
+      title: 'Croissance économique, productivité et fluctuations conjoncturelles',
+      field: 'Macroéconomie · Croissance de long terme et cycles de court terme',
+      summary: 'Distinguer croissance et fluctuations, expliquer le rôle du travail, du capital et de la productivité, puis analyser les limites et les incertitudes des explications de la croissance.',
+      lesson: {
+        sections: [
+          'La croissance économique désigne généralement l’augmentation durable de la production réelle d’une économie, mesurée notamment par le taux de croissance du PIB en volume. Il faut distinguer cette tendance de long terme des fluctuations conjoncturelles, qui correspondent aux variations de l’activité autour de sa trajectoire. Une économie peut connaître une croissance positive tout en ralentissant ; inversement, une reprise peut survenir après une contraction sans que le niveau de production ait immédiatement retrouvé sa trajectoire antérieure.',
+          'La production dépend de plusieurs facteurs. Le travail renvoie à la quantité de travail mobilisée et à ses caractéristiques ; le capital comprend les équipements, les bâtiments et d’autres actifs utilisés pour produire. Les compétences, l’organisation, les infrastructures et les connaissances influencent également la production. La productivité mesure le rapport entre une production et les ressources mobilisées. La productivité du travail peut être mesurée par la production par heure travaillée ou par personne en emploi ; ces deux mesures ne sont pas identiques si la durée moyenne du travail varie.',
+          'La productivité globale des facteurs est une mesure résiduelle de l’efficacité avec laquelle le travail et le capital sont combinés dans un cadre de comptabilité de la croissance. Elle peut refléter le progrès technique, mais aussi des changements d’organisation, la qualité des facteurs, l’utilisation des capacités, des erreurs de mesure ou des éléments omis par le modèle. Il serait donc incorrect de l’interpréter automatiquement comme une mesure pure de l’innovation. L’investissement peut accroître le capital productif, tandis que la recherche, la diffusion des connaissances, la formation et la concurrence peuvent contribuer à la productivité, selon les institutions et les secteurs concernés.',
+          'À court terme, la demande globale — consommation, investissement, dépenses publiques et demande extérieure nette — peut varier rapidement. Une baisse de confiance, un resserrement du crédit, un choc énergétique ou une chute de la demande étrangère peut réduire la production et l’emploi. À l’inverse, une hausse des dépenses ou des exportations peut soutenir l’activité, si les capacités de production et les conditions de financement le permettent. L’ampleur des effets dépend de la situation initiale, des réactions des ménages et des entreprises, des importations, de la politique économique et des anticipations.',
+          'Les cycles économiques ne suivent pas un calendrier fixe et les données sont révisées lorsque de nouvelles informations arrivent. Une récession est souvent décrite comme une baisse significative de l’activité, mais les organismes statistiques et les pays n’utilisent pas tous une définition opérationnelle identique. Deux trimestres consécutifs de recul du PIB réel constituent une règle pratique fréquemment citée, mais ne forment pas une définition universelle suffisante. Pour analyser la conjoncture, il faut croiser le PIB avec l’emploi, les heures travaillées, la consommation, l’investissement, la production industrielle et les enquêtes de confiance.'
+        ],
+        example: {
+          statement: 'Le PIB en volume passe de 500 milliards d’euros à 510 milliards d’euros entre deux années. Quel est son taux de croissance sur cette période ?',
+          calculation: 'Taux de croissance = ((510 − 500) / 500) × 100 = 2 %.',
+          answer: 'Le PIB en volume a augmenté de 2 %. Cette variation décrit la croissance mesurée sur la période considérée ; elle ne permet pas, à elle seule, d’identifier les causes de cette hausse ni sa répartition entre les habitants.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer la croissance de long terme des fluctuations conjoncturelles ?',
+          answer: 'La croissance de long terme concerne l’évolution durable des capacités productives et de la production réelle, tandis que les fluctuations conjoncturelles correspondent aux variations plus courtes de l’activité autour de sa trajectoire.'
+        },
+        exercises: [
+          {
+            question: 'Comment peut-on mesurer la productivité du travail ?',
+            answer: 'Par exemple en divisant la production réelle par le nombre d’heures travaillées, ou par le nombre de personnes en emploi. Il faut préciser la mesure utilisée.'
+          },
+          {
+            question: 'La productivité globale des facteurs mesure-t-elle uniquement le progrès technique ?',
+            answer: 'Non. C’est une mesure résiduelle qui peut refléter le progrès technique, mais aussi la qualité des facteurs, l’organisation, l’utilisation des capacités et des erreurs de mesure.'
+          },
+          {
+            question: 'Deux trimestres consécutifs de baisse du PIB constituent-ils une définition universelle de la récession ?',
+            answer: 'Non. C’est une règle pratique souvent utilisée, mais les définitions opérationnelles peuvent varier selon les organismes et les pays.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OCDE — Measuring productivity',
+            url: 'https://www.oecd.org/en/topics/measuring-productivity.html'
+          },
+          {
+            title: 'Banque mondiale — World Development Indicators',
+            url: 'https://databank.worldbank.org/source/world-development-indicators'
+          },
+          {
+            title: 'FMI — World Economic Outlook',
+            url: 'https://www.imf.org/en/Publications/WEO'
+          },
+          {
+            title: 'Insee — Comptes nationaux',
+            url: 'https://www.insee.fr/fr/information/2417794'
+          }
+        ]
+      }
+    },
+    {
+      id: 'emploi-chomage-marche-travail',
+      title: 'Emploi, chômage et fonctionnement du marché du travail',
+      field: 'Macroéconomie · Population active, emploi et sous-utilisation du travail',
+      summary: 'Comprendre les catégories statistiques du marché du travail, calculer les taux principaux et expliquer pourquoi le chômage dépend de facteurs conjoncturels et structurels.',
+      lesson: {
+        sections: [
+          'Le marché du travail met en relation les personnes qui offrent leur travail et les organisations qui souhaitent recruter. Les résultats observés dépendent de la demande de travail des employeurs, des compétences disponibles, des salaires, des conditions de travail, des institutions, de la démographie et de la conjoncture. Il ne s’agit pas d’un marché parfaitement homogène : les métiers, les régions, les qualifications et les conditions d’emploi diffèrent, ce qui peut créer des difficultés de recrutement et de recherche d’emploi simultanées.',
+          'Dans les définitions statistiques internationales, la population en âge de travailler est répartie selon des critères précis entre personnes en emploi, personnes au chômage et personnes hors de la population active. Le chômage ne désigne donc pas toutes les personnes sans emploi. Selon la définition du Bureau international du Travail, une personne au chômage n’a pas d’emploi, est disponible pour travailler et a effectué des démarches de recherche d’emploi pendant la période de référence, sous réserve des règles statistiques applicables. Les personnes qui souhaitent travailler mais ne satisfont pas à tous ces critères peuvent être classées parmi les personnes hors population active, notamment dans le halo autour du chômage en France.',
+          'Le taux de chômage correspond au nombre de chômeurs rapporté à la population active, multiplié par 100. Le taux d’emploi rapporte le nombre de personnes en emploi à une population de référence définie, souvent la population d’un groupe d’âge. Le taux d’activité rapporte la population active à cette même population de référence. Ces indicateurs répondent à des questions différentes. Le taux de chômage peut baisser parce que des personnes trouvent un emploi, mais aussi parce que certaines cessent de chercher et sortent de la population active ; il doit donc être interprété avec le taux d’emploi et le taux d’activité.',
+          'Le chômage conjoncturel est lié aux variations de l’activité économique : lorsque les entreprises vendent moins, elles peuvent réduire les recrutements ou l’emploi. Le chômage structurel renvoie notamment aux décalages entre les compétences recherchées et disponibles, à la localisation des emplois, aux institutions et au fonctionnement des appariements entre offres et demandes. La distinction est analytique : dans les faits, plusieurs mécanismes peuvent agir ensemble et leur importance varie selon les périodes. Les politiques de formation, d’accompagnement, de mobilité, de développement de l’activité et les règles du marché du travail peuvent avoir des effets différents selon les publics et les contextes.',
+          'Les statistiques du chômage ne décrivent pas entièrement la qualité de l’emploi. Le sous-emploi, le temps partiel subi, la précarité, les heures travaillées, les rémunérations et les conditions de travail apportent des informations complémentaires. Les comparaisons internationales exigent de vérifier les définitions, les tranches d’âge, les méthodes d’enquête et les périodes. Les données administratives d’inscription auprès d’un service public de l’emploi ne sont pas équivalentes au chômage mesuré par enquête selon la définition internationale.'
+        ],
+        example: {
+          statement: 'Une population active compte 2 000 personnes, dont 160 chômeurs selon la définition statistique retenue. Quel est le taux de chômage ?',
+          calculation: 'Taux de chômage = (160 / 2 000) × 100 = 8 %.',
+          answer: 'Le taux de chômage est de 8 %. Le dénominateur est la population active, et non l’ensemble de la population en âge de travailler.'
+        },
+        exercise: {
+          question: 'Pourquoi le taux de chômage doit-il être analysé avec le taux d’emploi et le taux d’activité ?',
+          answer: 'Parce que le taux de chômage peut évoluer lorsque des personnes entrent dans la population active ou en sortent, sans que toutes ces variations correspondent à une création ou une destruction d’emploi. Les autres taux donnent une vision complémentaire.'
+        },
+        exercises: [
+          {
+            question: 'Une personne sans emploi est-elle toujours comptée comme chômeuse ?',
+            answer: 'Non. Il faut satisfaire aux critères statistiques retenus, notamment concernant la recherche d’emploi et la disponibilité. Sinon, la personne peut être classée hors de la population active.'
+          },
+          {
+            question: 'Quelle est la différence entre taux de chômage et taux d’emploi ?',
+            answer: 'Le taux de chômage rapporte les chômeurs à la population active ; le taux d’emploi rapporte les personnes en emploi à une population de référence définie.'
+          },
+          {
+            question: 'Le chômage conjoncturel et le chômage structurel sont-ils toujours indépendants ?',
+            answer: 'Non. Ils distinguent des mécanismes, mais plusieurs facteurs peuvent se combiner et se renforcer selon la situation économique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Insee — Chômeur au sens du Bureau international du Travail',
+            url: 'https://www.insee.fr/fr/metadonnees/definition/c1129'
+          },
+          {
+            title: 'Insee — Taux de chômage (BIT)',
+            url: 'https://www.insee.fr/fr/metadonnees/definition/c1475'
+          },
+          {
+            title: 'Eurostat — Labour market',
+            url: 'https://ec.europa.eu/eurostat/web/labour-market'
+          },
+          {
+            title: 'OCDE — Employment',
+            url: 'https://www.oecd.org/en/topics/employment.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'inflation-prix-pouvoir-achat',
+      title: 'Inflation, niveau des prix et pouvoir d’achat',
+      field: 'Macroéconomie · Indices de prix, inflation et anticipations',
+      summary: 'Définir l’inflation, distinguer variation des prix et niveau des prix, étudier les mécanismes de transmission et comprendre les limites des indices moyens.',
+      lesson: {
+        sections: [
+          'L’inflation est une hausse du niveau général des prix sur une période donnée, mesurée à l’aide d’un indice de prix. Elle ne signifie pas que tous les prix augmentent au même rythme : certains peuvent monter, d’autres rester stables ou diminuer. Une baisse du taux d’inflation correspond à une hausse des prix plus lente ; elle ne signifie pas nécessairement que le niveau général des prix baisse. Une diminution durable du niveau général des prix est appelée déflation. Il faut aussi distinguer l’inflation annuelle, qui compare un mois à celui de l’année précédente, de l’évolution mensuelle.',
+          'L’indice des prix à la consommation suit l’évolution des prix d’un panier de biens et services consommés par les ménages, pondérés selon leur importance dans la consommation. En France, l’Insee publie l’indice des prix à la consommation (IPC) ; pour les comparaisons harmonisées dans l’Union européenne, l’indice des prix à la consommation harmonisé (IPCH) applique une méthodologie commune. Ces indices sont des moyennes statistiques. L’inflation effectivement ressentie par un ménage peut différer en fonction de ses dépenses, de sa situation géographique, de son logement et de ses habitudes de consommation.',
+          'L’inflation peut avoir plusieurs origines qui se combinent. Une demande globale supérieure aux capacités de production peut exercer une pression à la hausse sur les prix. Une augmentation des coûts de production — énergie, matières premières, transport ou salaires si elle dépasse durablement les gains de productivité — peut également se transmettre aux prix. Les variations du taux de change influencent le prix en monnaie nationale des biens importés. Les marges, les contrats, les anticipations et le degré de concurrence affectent la vitesse et l’ampleur de la transmission ; aucun facteur unique n’explique tous les épisodes inflationnistes.',
+          'Le pouvoir d’achat dépend du revenu disponible et du niveau des prix. Si le revenu nominal augmente moins vite que les prix du panier consommé, le pouvoir d’achat correspondant diminue ; s’il augmente plus vite, il progresse, toutes choses égales par ailleurs. Il faut distinguer les évolutions moyennes de la situation de chaque ménage et tenir compte des prélèvements, prestations et dépenses contraintes. L’inflation redistribue également le pouvoir d’achat entre agents selon leurs revenus, leur capacité à ajuster les prix ou les salaires, et la nature des contrats nominaux qu’ils détiennent.',
+          'Les banques centrales cherchent généralement à maintenir l’inflation faible et stable, mais leur mandat et leur stratégie diffèrent selon les juridictions. La Banque centrale européenne vise une inflation de 2 % à moyen terme, mesurée par l’IPCH pour la zone euro ; cet objectif est symétrique, c’est-à-dire que des écarts durables à la hausse comme à la baisse sont considérés comme indésirables. Cet objectif n’implique pas que l’inflation soit exactement égale à 2 % chaque mois. Les décisions monétaires tiennent compte des délais de transmission, des anticipations, de l’activité et des risques entourant les perspectives de prix.'
+        ],
+        example: {
+          statement: 'Un indice de prix passe de 120 à 126 entre deux périodes. Quel est le taux d’inflation sur cette période, si ces indices sont comparables ?',
+          calculation: 'Taux de variation = ((126 − 120) / 120) × 100 = 5 %.',
+          answer: 'L’indice a augmenté de 5 %. Cela signifie que le niveau de prix représenté par cet indice a augmenté de 5 % sur la période ; cela ne signifie pas que chaque prix individuel a progressé de 5 %.'
+        },
+        exercise: {
+          question: 'Quelle est la différence entre une baisse de l’inflation et une déflation ?',
+          answer: 'Une baisse de l’inflation signifie que les prix augmentent moins vite qu’auparavant. La déflation correspond à une baisse du niveau général des prix.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi l’inflation ressentie par un ménage peut-elle différer de l’indice moyen ?',
+            answer: 'Parce que la composition de ses dépenses et les pondérations de son panier peuvent différer de ceux du panier moyen utilisé pour calculer l’indice.'
+          },
+          {
+            question: 'Si le revenu nominal augmente de 3 % et que les prix du panier pertinent augmentent de 5 %, que peut-on conclure approximativement ?',
+            answer: 'Le pouvoir d’achat associé à ce panier diminue approximativement de 2 % en points de pourcentage. Le calcul exact du taux réel est (1,03 / 1,05 − 1) × 100, soit environ −1,90 %.'
+          },
+          {
+            question: 'Quel objectif d’inflation la BCE vise-t-elle à moyen terme pour la zone euro ?',
+            answer: 'La BCE vise une inflation de 2 % à moyen terme, mesurée par l’indice des prix à la consommation harmonisé.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Insee — Indice des prix à la consommation',
+            url: 'https://www.insee.fr/fr/metadonnees/source/serie/s1004'
+          },
+          {
+            title: 'Banque centrale européenne — Objectif d’inflation de 2 %',
+            url: 'https://www.ecb.europa.eu/mopo/strategy/pricestab/html/index.fr.html'
+          },
+          {
+            title: 'Eurostat — Harmonised Index of Consumer Prices',
+            url: 'https://ec.europa.eu/eurostat/web/hicp'
+          },
+          {
+            title: 'FMI — Inflation: Prices on the Rise',
+            url: 'https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Inflation'
+          }
+        ]
+      }
+    },
+    {
+      id: 'politiques-budgetaire-et-monetaire',
+      title: 'Politiques budgétaire et monétaire : objectifs, instruments et limites',
+      field: 'Macroéconomie · Stabilisation de l’activité et stabilité des prix',
+      summary: 'Comparer les instruments budgétaires et monétaires, expliquer leurs canaux de transmission et identifier les délais, arbitrages et contraintes qui limitent leurs effets.',
+      lesson: {
+        sections: [
+          'La politique budgétaire relève des décisions publiques concernant les dépenses, les recettes fiscales et les transferts. Une impulsion budgétaire expansionniste peut soutenir la demande à court terme, par exemple par une hausse de certaines dépenses ou une baisse d’impôts. Une politique restrictive peut ralentir la demande ou contribuer à stabiliser les finances publiques. Les effets dépendent de la composition des mesures, de leur calendrier, de la réaction des ménages et des entreprises, des importations, de la situation conjoncturelle et du cadre institutionnel. Une même mesure peut avoir des effets différents selon que l’économie dispose de capacités inutilisées ou rencontre des contraintes d’offre.',
+          'Le solde budgétaire est la différence entre les recettes et les dépenses publiques sur une période, selon le périmètre et les règles comptables retenus. Un déficit apparaît lorsque les dépenses dépassent les recettes ; un excédent apparaît dans le cas inverse. La dette publique est un stock d’engagements financiers, alors que le déficit est un flux sur une période. Le déficit peut augmenter la dette, mais leur évolution ne se confond pas mécaniquement : les opérations financières, les variations de trésorerie, les ajustements de valorisation et d’autres facteurs peuvent intervenir. Pour apprécier la soutenabilité des finances publiques, on examine notamment le niveau de dette, les taux d’intérêt, la croissance nominale, le solde primaire et les besoins de financement, sans qu’un seuil unique suffise à déterminer la situation de tous les pays.',
+          'La politique monétaire est conduite par une banque centrale. Ses instruments peuvent inclure les taux directeurs, les opérations de refinancement, les achats d’actifs et la communication sur l’orientation future de la politique. Une baisse des taux directeurs tend à réduire certains coûts de financement et peut soutenir le crédit, la consommation et l’investissement ; une hausse tend à freiner la demande et à réduire les pressions inflationnistes, avec des délais et une ampleur incertains. La transmission passe par les taux de marché, le crédit, les prix des actifs, le taux de change et les anticipations. Les effets ne sont ni instantanés ni identiques pour tous les agents.',
+          'Dans la zone euro, la Banque centrale européenne définit la politique monétaire commune et son objectif principal est la stabilité des prix. Son objectif d’inflation est de 2 % à moyen terme, mesuré par l’IPCH. La politique monétaire ne peut pas fixer directement tous les prix ni garantir une trajectoire précise de l’activité : elle influence les conditions financières et la demande, tandis que des chocs d’offre peuvent faire monter les prix tout en affaiblissant la production. Les décisions doivent donc tenir compte de l’origine des chocs, de leur persistance et des risques que les hausses de prix se diffusent aux salaires et aux anticipations.',
+          'La politique budgétaire et la politique monétaire interagissent, mais elles ne sont pas interchangeables. Un soutien budgétaire peut renforcer la demande au moment où la banque centrale cherche à la modérer ; inversement, une politique monétaire accommodante peut faciliter le financement de l’activité, sans supprimer les contraintes budgétaires. La coordination doit respecter les mandats et les institutions en vigueur. Les politiques économiques comportent des délais de décision et de mise en œuvre, des effets distributifs et des incertitudes de mesure. Toute évaluation sérieuse compare les objectifs annoncés aux résultats observés, tient compte du scénario contrefactuel et évite d’attribuer automatiquement un changement économique à une seule décision.'
+        ],
+        example: {
+          statement: 'Un gouvernement augmente ses achats de biens et services de 10 milliards d’euros. Peut-on affirmer que le PIB augmentera exactement de 10 milliards d’euros ?',
+          calculation: 'La dépense publique supplémentaire augmente directement la composante correspondante de la demande, toutes choses égales par ailleurs. L’effet total dépend ensuite des réactions de la production, des prix, des importations, de la consommation, de l’investissement et des autres politiques.',
+          answer: 'Non. Les 10 milliards constituent une impulsion initiale de dépense, pas une garantie d’augmentation finale exactement égale du PIB. L’effet global dépend du contexte et des mécanismes de transmission.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale existe entre le déficit public et la dette publique ?',
+          answer: 'Le déficit est un flux mesuré sur une période ; la dette est un stock d’engagements financiers évalué à une date donnée.'
+        },
+        exercises: [
+          {
+            question: 'Citez deux instruments de politique monétaire.',
+            answer: 'Les taux directeurs et les opérations de refinancement sont deux exemples. Les banques centrales peuvent aussi utiliser d’autres instruments selon leur cadre opérationnel.'
+          },
+          {
+            question: 'Pourquoi les effets d’une hausse des taux directeurs ne sont-ils pas immédiats ?',
+            answer: 'Parce que la transmission passe par les contrats de crédit, les décisions de consommation et d’investissement, les anticipations et d’autres canaux qui s’ajustent avec des délais variables.'
+          },
+          {
+            question: 'Quel objectif d’inflation la BCE vise-t-elle à moyen terme ?',
+            answer: 'Un taux d’inflation de 2 % à moyen terme pour la zone euro, mesuré par l’IPCH.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Banque centrale européenne — Stratégie de politique monétaire',
+            url: 'https://www.ecb.europa.eu/mopo/strategy/html/index.en.html'
+          },
+          {
+            title: 'FMI — Fiscal Monitor',
+            url: 'https://www.imf.org/en/Publications/FM'
+          },
+          {
+            title: 'OCDE — Fiscal policy',
+            url: 'https://www.oecd.org/en/topics/fiscal-policy.html'
+          },
+          {
+            title: 'Banque de France — Publications et statistiques',
+            url: 'https://www.banque-france.fr/fr/publications-et-statistiques/publications'
+          }
+        ]
+      }
+    },
+    {
+      id: 'economie-ouverte-echanges-taux-change',
+      title: 'Économie ouverte : échanges extérieurs, taux de change et interdépendances',
+      field: 'Macroéconomie · Balance des paiements et relations avec le reste du monde',
+      summary: 'Lire les exportations et importations, distinguer solde commercial et compte courant, expliquer les taux de change et analyser les transmissions internationales.',
+      lesson: {
+        sections: [
+          'Une économie ouverte échange des biens, des services, des revenus et des actifs financiers avec le reste du monde. Les exportations sont les ventes de biens et services aux non-résidents ; les importations sont les achats de biens et services auprès de non-résidents. Dans l’approche par les dépenses du PIB, le solde des exportations et importations intervient parce que le PIB mesure la production sur le territoire, et non la totalité des dépenses des résidents. Une importation n’est pas en elle-même une perte économique : elle peut fournir des biens de consommation, des équipements ou des intrants nécessaires à la production.',
+          'Le solde commercial désigne généralement la différence entre exportations et importations de biens, même si les usages statistiques peuvent varier. Il ne doit pas être confondu avec le solde des biens et services, ni avec le solde du compte courant de la balance des paiements. Le compte courant comprend notamment les échanges de biens et services, les revenus primaires transfrontaliers et les transferts courants. La balance des paiements enregistre les transactions entre résidents et non-résidents selon un cadre comptable cohérent ; elle comprend aussi les comptes de capital et financier. Son interprétation exige donc de préciser le poste observé et la période.',
+          'Le taux de change exprime le prix d’une monnaie dans une autre. Une appréciation de la monnaie nationale rend, toutes choses égales par ailleurs, les importations libellées en devises moins coûteuses en monnaie nationale, mais peut rendre les exportations plus chères pour les acheteurs étrangers. Une dépréciation peut produire les effets inverses, mais les quantités échangées ne s’ajustent pas nécessairement immédiatement : les contrats, les monnaies de facturation, les marges, les capacités de production et les réactions de la demande influencent le résultat. Le taux de change effectif résume la valeur d’une monnaie par rapport à un panier de monnaies partenaires, avec des pondérations déterminées par la méthodologie.',
+          'Les échanges internationaux peuvent permettre la spécialisation, l’accès à des marchés plus vastes, la diffusion de technologies et l’importation d’intrants qui améliorent la productivité. Ils exposent aussi les économies aux variations de la demande étrangère, aux prix mondiaux, aux perturbations logistiques et aux tensions commerciales. Les effets de l’ouverture sont hétérogènes selon les secteurs, les régions, les compétences et la capacité des travailleurs et des entreprises à s’adapter. Les gains agrégés éventuels ne signifient donc pas que chaque secteur ou chaque ménage bénéficie de la même façon ; les politiques de formation, d’accompagnement et de redistribution peuvent influencer la répartition des effets.',
+          'Les déséquilibres extérieurs doivent être analysés avec prudence. Un déficit courant peut refléter, entre autres, un investissement intérieur supérieur à l’épargne nationale, une forte demande intérieure ou des revenus versés à l’étranger ; il n’est pas automatiquement synonyme de crise. Sa soutenabilité dépend notamment de son financement, de la structure des engagements extérieurs, de la devise d’endettement, de la maturité des dettes, de la capacité à générer des revenus futurs et de la confiance des investisseurs. De même, un excédent courant ne suffit pas à établir qu’une économie se porte mieux sur tous les plans. Les comptes extérieurs sont des identités comptables qui doivent être interprétées à l’aide d’informations économiques et institutionnelles supplémentaires.'
+        ],
+        example: {
+          statement: 'Une économie exporte pour 240 milliards d’euros de biens et importe pour 275 milliards d’euros de biens pendant une année. Quel est son solde commercial de biens selon cette définition ?',
+          calculation: 'Solde commercial = exportations − importations = 240 − 275 = −35 milliards d’euros.',
+          answer: 'Le solde commercial de biens est déficitaire de 35 milliards d’euros. Ce résultat ne suffit pas à déterminer le solde du compte courant, qui comprend aussi les services, les revenus primaires et les transferts courants.'
+        },
+        exercise: {
+          question: 'Pourquoi un déficit commercial de biens ne suffit-il pas à connaître le solde du compte courant ?',
+          answer: 'Parce que le compte courant inclut également les échanges de services, les revenus primaires et les transferts courants. Ces composantes peuvent réduire ou augmenter le déficit observé sur les seuls biens.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie une appréciation de la monnaie nationale, toutes choses égales par ailleurs ?',
+            answer: 'La monnaie nationale gagne de la valeur par rapport à une autre monnaie. Les importations en devises peuvent devenir moins coûteuses en monnaie nationale, tandis que les exportations peuvent devenir plus chères pour les acheteurs étrangers.'
+          },
+          {
+            question: 'Un déficit courant est-il toujours synonyme de crise économique ?',
+            answer: 'Non. Son interprétation dépend notamment de sa cause, de son financement, de la structure des engagements extérieurs et de la capacité future à générer des revenus.'
+          },
+          {
+            question: 'Pourquoi les effets du commerce international peuvent-ils différer selon les groupes de travailleurs ?',
+            answer: 'Les secteurs, les régions et les qualifications ne sont pas exposés de la même façon à la concurrence et aux débouchés internationaux, et les possibilités de reconversion ou de mobilité varient.'
+          }
+        ],
+        sources: [
+          {
+            title: 'FMI — Balance of Payments and International Investment Position Manual, Sixth Edition',
+            url: 'https://www.imf.org/external/pubs/ft/bop/2007/bopman6.htm'
+          },
+          {
+            title: 'OCDE — International trade',
+            url: 'https://www.oecd.org/en/topics/international-trade.html'
+          },
+          {
+            title: 'Banque mondiale — World Integrated Trade Solution',
+            url: 'https://wits.worldbank.org/'
+          },
+          {
+            title: 'Eurostat — International trade in goods',
+            url: 'https://ec.europa.eu/eurostat/web/international-trade-in-goods'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
