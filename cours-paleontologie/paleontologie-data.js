@@ -1799,6 +1799,657 @@ window.courseCatalog = [
     ]
   },
 
+// BRANCHE BIOSTRATIGRAPHIE
+
+  {
+    id: 'biostratigraphie',
+    title: 'La paléontologie évolutive et la biostratigraphie',
+    note: 'Neuf chapitres sur les fondements de la stratigraphie fossilifère, les étages et les zones, les fossiles-guides, les groupes fossiles utiles, les points stratotypiques mondiaux (GSSP), les limites de la méthode, les applications et la paléontologie évolutive. Les âges absolus sont des estimations révisées au fil des études ; les valeurs données suivent les sources citées et peuvent évoluer.',
+    chapters: [
+      {
+        id: 'fondements-strates-fossiles',
+        title: 'Les fondements : strates, fossiles et succession faunique',
+        field: 'Stratigraphie · XVIIe–XIXe siècles',
+        summary: 'Comprendre comment la superposition des couches et l’ordre des fossiles ont permis de comparer des roches éloignées et de construire une chronologie relative.',
+        lesson: {
+          sections: [
+            'La biostratigraphie est la branche de la stratigraphie qui corrèle les couches de roches et leur attribue des âges relatifs à partir des assemblages de fossiles qu’elles contiennent. Elle s’appuie d’abord sur le principe de superposition, associé à Nicolas Steno (XVIIe siècle) : dans une série sédimentaire non perturbée, les couches les plus anciennes sont en bas et les plus récentes en haut. Mais ce principe ne fonctionne qu’au sein d’une même coupe. Pour comparer des régions éloignées, il fallait un autre outil, et ce sont les fossiles qui l’ont fourni.',
+            'En 1794, comme arpenteur sur le chantier du Somerset Coal Canal, William Smith (1769-1839) comprend que chaque horizon stratigraphique renferme un assemblage de fossiles particulier. Il constate que la même succession de groupes fossiles, des plus anciens aux plus récents, se retrouve dans de nombreuses régions d’Angleterre. Il publie en 1815 une carte géologique de l’Angleterre, du pays de Galles et d’une partie de l’Écosse, puis Strata Identified by Organized Fossils (1816-1819). Ce n’était pas la première carte géologique du monde — celle des États-Unis, par William Maclure, avait paru en 1809 — mais c’était la première à couvrir une aire aussi vaste avec un tel niveau de détail.',
+            'En France, Georges Cuvier et Alexandre Brongniart étudient à partir de 1804 les formations du Bassin de Paris afin de reconstituer la succession des faunes au cours du temps. Ils présentent leurs résultats en 1808, puis publient en 1811 l’Essai sur la géographie minéralogique des environs de Paris, accompagné d’une carte géologique coloriée à la main et de coupes (une édition augmentée paraît en 1822). Leurs observations montrent notamment que des dépôts marins et des dépôts d’eau douce alternent dans la série parisienne. Les travaux de Smith et de Cuvier sont souvent réunis sous le nom de principe de succession faunique : les fossiles et les groupes de fossiles n’existent que pendant des durées limitées et apparaissent dans les roches selon un ordre défini.',
+            'Ce principe fonde l’objectif principal de la biostratigraphie : la corrélation, c’est-à-dire démontrer qu’un horizon d’une coupe correspond au même intervalle de temps qu’un horizon d’une autre coupe. Les fossiles sont utiles parce que des sédiments de même âge peuvent avoir des aspects très différents selon l’environnement de dépôt. Smith ne disposait pas d’une théorie de l’évolution pour expliquer l’ordre qu’il observait : il avait compris que les assemblages de fossiles permettent d’ordonner les couches, mais l’explication par l’évolution biologique viendra plus tard, avec Darwin (1859). Il s’agit d’une chronologie relative : elle ordonne les événements sans donner leur âge en années.'
+          ],
+          example: {
+            statement: 'Exemple fictif : dans une coupe non déformée, la couche 3 est à la base, la couche 2 au milieu et la couche 1 au sommet. La couche 3 contient le fossile F1, la couche 2 le fossile F2 et la couche 1 le fossile F3. Dans une autre région, on trouve une couche contenant F2, mais ni F1 ni F3. Quel est son âge relatif ?',
+            calculation: 'Superposition : la couche 3 est la plus ancienne, puis la 2, puis la 1. Succession faunique : F1 précède F2, qui précède F3. Le fossile F2 occupe donc la position intermédiaire.',
+            answer: 'La couche de l’autre région est plus récente que les couches à F1 et plus ancienne que celles à F3 : elle est d’âge intermédiaire. C’est un âge relatif, sans valeur en années, et l’exemple est fictif.'
+          },
+          exercise: {
+            question: 'Quelle est la différence entre le principe de superposition et le principe de succession faunique ?',
+            answer: 'La superposition ordonne les couches au sein d’une même coupe (les plus anciennes en bas, si la série n’est pas perturbée). La succession faunique ordonne les assemblages de fossiles dans le temps et permet de comparer des coupes éloignées.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année William Smith publie-t-il sa carte géologique de l’Angleterre, du pays de Galles et d’une partie de l’Écosse ?',
+              answer: 'En 1815.'
+            },
+            {
+              question: 'Quelle alternance observée dans le Bassin de Paris est signalée à propos des travaux de Cuvier et Brongniart ?',
+              answer: 'Une alternance de dépôts marins et de dépôts d’eau douce.'
+            },
+            {
+              question: 'Pourquoi les fossiles sont-ils utiles pour corréler des couches de même âge qui ne se ressemblent pas ?',
+              answer: 'Parce que l’aspect d’une roche dépend de l’environnement de dépôt, alors que l’ordre des assemblages de fossiles permet de rapprocher des couches de lithologies différentes.'
+            }
+          ],
+          sources: [
+            { title: 'NASA Earth Observatory — Discovering Faunal Succession (William Smith)', url: 'https://earthobservatory.nasa.gov/features/WilliamSmith/page2.php' },
+            { title: 'Wikipedia — William Smith (geologist)', url: 'https://en.wikipedia.org/wiki/William_Smith_(geologist)' },
+            { title: 'Whipple Library, Cambridge — Cuvier et Brongniart, Description géologique des environs de Paris', url: 'https://www.whipplelib.hps.cam.ac.uk/node/221' },
+            { title: 'University of Vermont — The Principles of Faunal Succession', url: 'https://perkins.w3.uvm.edu/perkins/evolution/qanda/time/faunal.html' }
+          ]
+        }
+      },
+      {
+        id: 'etages-zones-oppel',
+        title: 'Des étages de d’Orbigny aux zones d’Oppel',
+        field: 'Stratigraphie · XIXe siècle',
+        summary: 'Suivre la construction des étages et des zones, de d’Orbigny à Oppel, puis l’apport des graptolites de Lapworth.',
+        lesson: {
+          sections: [
+            'Alcide d’Orbigny (1802-1857) propose dès 1849 une division du Jurassique en dix étages, fondée sur une trame biostratigraphique, et développe dans son Prodrome de paléontologie stratigraphique la comparaison entre étages géologiques et contenu fossile. Il montre aux géologues que l’étude des fossiles est la vraie méthode chronologique. Il reprend en les exagérant certaines vues théoriques de Cuvier, notamment une vision fixiste de la nature. Son cadre souffrait toutefois d’un problème : son applicabilité internationale restait difficile à démontrer.',
+            'Albert Oppel (1831-1865), paléontologue allemand, reprend le cadre de d’Orbigny, dont il suit la méthode. Dans Die Juraformation Englands, Frankreichs und des südwestlichen Deutschlands (1856-1858), il reconnaît huit étages, subdivisés en zones. Il divise ainsi le Jurassique d’Europe occidentale en 33 zones, chacune caractérisée par des espèces typiques, surtout des ammonites. Les dépôts jurassiques sont alors corrélés indépendamment de leur lithologie. Oppel conçoit ses zones comme des unités de corrélation d’application théoriquement universelle, ce qui a conduit W. J. Arkell à écrire en 1933 qu’il avait placé la stratigraphie sur de nouvelles bases.',
+            'Le sens du mot « zone » mérite précision. Selon K. Page (2017), les « zones standard » du Jurassique sont des chronozones et non de simples biozones, et elles le sont explicitement depuis l’époque d’Oppel. Par ailleurs, l’expression « zone d’Oppel » est restée employée pour une zone délimitée par plusieurs apparitions et disparitions de taxons caractéristiques, mais le Guide stratigraphique international (Salvador, 1994) ne la reconnaît plus comme un type de biozone. Il existe donc une différence entre l’usage historique du terme et la terminologie actuelle.',
+            'Dans le Paléozoïque inférieur, ce sont les graptolites qui jouent le rôle des ammonites. Charles Lapworth (1878), par son étude de la série de Moffat en Écosse, établit les graptolites comme groupe de premier plan pour la biostratigraphie. Son tableau de 1880 comptait 20 zones ; Elles et Wood portent ce nombre à 36 pour la Grande-Bretagne (monographie publiée entre 1901 et 1918). Lapworth propose aussi en 1879 le système Ordovicien, intercalé entre le Cambrien de Sedgwick et le Silurien de Murchison, ce qui résout un différend entre ces deux géologues. Ce système n’a été adopté qu’en 1960 au niveau international.'
+          ],
+          example: {
+            statement: 'Oppel a reconnu 33 zones réparties en huit étages pour le Jurassique d’Europe occidentale. En moyenne, combien de zones par étage ?',
+            calculation: '33 ÷ 8 = 4,125. Il s’agit d’une moyenne arithmétique : les étages ne contiennent pas tous le même nombre de zones.',
+            answer: 'Environ 4 zones par étage en moyenne. C’est un ordre de grandeur calculé à partir des totaux, pas la subdivision réelle de chaque étage.'
+          },
+          exercise: {
+            question: 'Quel groupe fossile Oppel a-t-il surtout utilisé pour définir ses zones jurassiques ?',
+            answer: 'Les ammonites.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année d’Orbigny avait-il proposé une division du Jurassique en dix étages ?',
+              answer: 'En 1849.'
+            },
+            {
+              question: 'Pourquoi Lapworth a-t-il proposé le système Ordovicien en 1879 ?',
+              answer: 'Parce que ce système, intercalé entre le Cambrien de Sedgwick et le Silurien de Murchison, regroupe des roches qui se recouvraient dans les deux classifications et résout leur différend.'
+            },
+            {
+              question: 'Quelle étude de 1878 a imposé les graptolites comme groupe de premier plan en biostratigraphie ?',
+              answer: 'L’étude de Lapworth sur la série de Moffat, dans le sud de l’Écosse.'
+            }
+          ],
+          sources: [
+            { title: 'Page, K. (2017) — From Oppel to Callomon (and beyond), Lethaia', url: 'https://pearl.plymouth.ac.uk/gees-research/1328/' },
+            { title: 'Encyclopedia.com — Oppel, Albert', url: 'https://www.encyclopedia.com/people/history/historians-miscellaneous-biographies/albert-oppel' },
+            { title: 'Maletz (2021) — Biostratigraphy, Treatise Online no. 146', url: 'https://journals.ku.edu/treatiseonline/article/download/15162/13722/33223' },
+            { title: 'Lethaia/Schweizerbart — Steps toward a global standard for Ordovician stratigraphy', url: 'https://www.schweizerbart.de/papers/nos/detail/36/86420/Steps_toward_a_global_standard_for_Ordovician_stratigraphy' }
+          ]
+        }
+      },
+      {
+        id: 'biozones-fossiles-guides',
+        title: 'Fossiles-guides et biozones : les unités biostratigraphiques',
+        field: 'Biostratigraphie · Guide stratigraphique international',
+        summary: 'Distinguer les cinq types de biozones, comprendre ce qui fait un bon fossile-guide et pourquoi les repères fossiles sont des bornes, pas des certitudes.',
+        lesson: {
+          sections: [
+            'Une biozone est une unité biostratigraphique : un intervalle de strates défini par ses fossiles caractéristiques, par opposition à une unité lithostratigraphique, définie par les propriétés de la roche. Le Guide stratigraphique international (Salvador, 1994), publié par la Commission internationale de stratigraphie, reconnaît cinq types usuels de biozones : les zones d’extension (range), les zones d’intervalle (interval), les zones d’assemblage, les zones d’abondance et les zones de lignée. Ces types ne sont pas hiérarchisés ni fondés sur des critères mutuellement exclusifs : une même série peut être découpée indépendamment selon plusieurs d’entre eux.',
+            'Une zone d’extension représente l’extension stratigraphique et géographique connue d’un taxon (zone d’extension de taxon) ou la coexistence de deux taxons (zone d’extension concomitante, qui n’existe que là où les deux sont présents). Une zone d’intervalle est comprise entre deux horizons biostratigraphiques précis, par exemple les premières ou dernières occurrences de deux taxons différents. Une zone d’assemblage est caractérisée par l’association de trois taxons ou plus qui la distinguent des couches voisines. Une zone d’abondance est un intervalle où l’abondance d’un taxon est nettement supérieure à celle des couches voisines, mais l’abondance dépend de facteurs environnementaux locaux, ce qui la rend moins fiable. Une zone de lignée correspond à un segment d’une lignée évolutive ; c’est un cas particulier de zone d’extension.',
+            'Un bon fossile-guide réunit plusieurs qualités : large répartition géographique, courte durée d’existence géologique, abondance, identification aisée et indépendance par rapport au faciès. Cette dernière condition est essentielle : un fossile cantonné à un faciès précis renseigne sur le milieu de dépôt plutôt que sur l’âge, et ne permet pas de corréler des faciès différents. Les graptolites, les ammonites, les foraminifères planctoniques et les conodontes sont parmi les groupes les plus employés parce qu’ils combinent souvent ces qualités.',
+            'Les limites d’une biozone sont des biohorizons, définis par la plus basse ou la plus haute occurrence d’un taxon, que l’on note souvent FAD (first appearance datum) et LAD (last appearance datum). Ces repères dépendent de la préservation et de l’échantillonnage : des lacunes peuvent apparaître dans une zone d’extension à cause d’une préservation variable, d’une faible abondance ou d’un petit échantillon. L’extension observée dans une coupe locale est donc généralement plus courte que l’extension réelle du taxon, et peut être modifiée par de nouvelles découvertes.'
+          ],
+          example: {
+            statement: 'Exemple fictif : dans une coupe, le taxon A est présent des couches 2 à 5 et le taxon B des couches 4 à 8. Quelle est la zone d’extension concomitante de A et B ?',
+            calculation: 'Une zone d’extension concomitante correspond à l’intervalle où les deux taxons sont présents ensemble : on cherche le chevauchement des deux extensions, entre la couche 4 (début de B) et la couche 5 (fin de A).',
+            answer: 'Les couches 4 à 5. Le résultat est valable pour cette coupe et dépend de l’échantillonnage, l’exemple étant fictif.'
+          },
+          exercise: {
+            question: 'Qu’est-ce qui distingue une biozone d’une unité lithostratigraphique ?',
+            answer: 'La biozone est définie par son contenu en fossiles ; l’unité lithostratigraphique est définie par les propriétés de la roche.'
+          },
+          exercises: [
+            {
+              question: 'Quels sont les cinq types de biozones reconnus couramment par le Guide stratigraphique international ?',
+              answer: 'Les zones d’extension, d’intervalle, d’assemblage, d’abondance et de lignée.'
+            },
+            {
+              question: 'Pourquoi un fossile limité à un seul faciès est-il un mauvais fossile-guide ?',
+              answer: 'Parce que sa présence reflète le milieu de dépôt plutôt que l’âge : il ne permet pas de corréler des faciès différents.'
+            },
+            {
+              question: 'Pourquoi une zone d’abondance est-elle considérée comme moins fiable ?',
+              answer: 'Parce que l’abondance d’un taxon dépend de facteurs environnementaux locaux.'
+            }
+          ],
+          sources: [
+            { title: 'International Commission on Stratigraphy — International Stratigraphic Guide, chap. 7 : Biostratigraphic Units', url: 'https://stratigraphy.org/guide/bio' },
+            { title: 'Timescale Foundation — Stratigraphic Guide, Biostratigraphic Units', url: 'https://timescalefoundation.org/strat_guide/bio.html' },
+            { title: 'Wikipedia — Biozone', url: 'https://en.wikipedia.org/wiki/Biozone' },
+            { title: 'Wikipedia — Stratigraphic unit', url: 'https://en.wikipedia.org/wiki/Stratigraphic_unit' }
+          ]
+        }
+      },
+      {
+        id: 'groupes-fossiles-utiles',
+        title: 'Les groupes fossiles utiles : graptolites, ammonites, conodontes et microfossiles',
+        field: 'Biostratigraphie · Paléozoïque à Cénozoïque',
+        summary: 'Découvrir les principaux groupes employés pour dater et corréler les roches, et ce qui les rend efficaces.',
+        lesson: {
+          sections: [
+            'Les graptolites sont des hémichordés coloniaux éteints. Les graptoloïdes, planctoniques, fournissent le principal moyen de corrélation de l’Ordovicien et du Silurien au Royaume-Uni. Leur large distribution et leur différenciation évolutive rapide permettent une subdivision fine du Paléozoïque inférieur. En Grande-Bretagne, les zones à graptolites du Silurien durent en moyenne bien moins d’un million d’années, tandis que celles de l’Ordovicien durent en moyenne environ 2 millions d’années. Lapworth comparait déjà en 1879-1880 les horizons à graptolites aux zones à ammonites du Jurassique.',
+            'Les ammonites ont servi de base aux zones d’Oppel pour le Jurassique d’Europe occidentale, et la biochronologie du Jurassique reste construite sur elles. Les travaux récents ont cherché à construire une biochronologie à haute résolution fondée sur les ammonites, en prolongeant l’approche d’Oppel jusqu’à des auteurs plus récents comme Callomon. Les zones standard du Jurassique sont des chronozones, c’est-à-dire des unités de temps construites sur des repères d’ammonites.',
+            'Les conodontes sont des fossiles microscopiques phosphatés. Un conodonte, Hindeodus parvus, définit la base du Trias au GSSP de Meishan (Chine) : son apparition est le repère principal de la limite Permien–Trias. Un autre conodonte, Iapetognathus fluctivagus, sert de repère pour la limite supérieure du Cambrien, définie à Green Point (Terre-Neuve). Les conodontes figurent parmi les microfossiles recherchés dans les déblais et les carottes de forage ; ils demandent un volume de roche plus important que les nannofossiles (de l’ordre de plusieurs tasses de déblais selon l’AAPG).',
+            'Trois groupes de microfossiles sont les plus employés en exploration pétrolière : les foraminifères, les nannofossiles calcaires et les palynomorphes. Les foraminifères benthiques sont restreints à certains environnements et renseignent sur le milieu de dépôt ; les foraminifères planctoniques, dispersés sur de vastes parties des océans et souvent abondants, sont de meilleurs outils de corrélation. Les nannofossiles calcaires, de moins de 25 microns, sont produits par des algues planctoniques unicellulaires apparues au Mésozoïque. Les palynomorphes regroupent notamment les kystes de dinoflagellés, les acritarches, les pollens et les spores.'
+          ],
+          example: {
+            statement: 'Si les zones à graptolites de l’Ordovicien britannique durent en moyenne environ 2 millions d’années, combien de zones s’attendrait-on à trouver dans un système long d’environ 43,78 millions d’années ?',
+            calculation: '43,78 ÷ 2 ≈ 21,9. Le résultat est un ordre de grandeur : les zones n’ont pas toutes la même durée et les schémas régionaux diffèrent.',
+            answer: 'Environ 22 zones. Ce calcul est une estimation théorique, pas le nombre réel de zones d’un schéma régional.'
+          },
+          exercise: {
+            question: 'Pourquoi les graptolites planctoniques sont-ils de bons outils de corrélation ?',
+            answer: 'Parce qu’ils sont largement répartis et qu’ils évoluent rapidement, ce qui permet des subdivisions stratigraphiques fines.'
+          },
+          exercises: [
+            {
+              question: 'Quel conodonte définit la base du Trias au GSSP de Meishan ?',
+              answer: 'Hindeodus parvus.'
+            },
+            {
+              question: 'Quels sont les trois groupes de microfossiles les plus utilisés en exploration pétrolière selon O’Neill ?',
+              answer: 'Les foraminifères, les nannofossiles calcaires et les palynomorphes.'
+            },
+            {
+              question: 'Quel type de foraminifères est le plus utile à la corrélation à grande distance : benthiques ou planctoniques ?',
+              answer: 'Les planctoniques, dispersés sur de vastes parties des océans, alors que les benthiques sont restreints à certains environnements.'
+            }
+          ],
+          sources: [
+            { title: 'Zalasiewicz et al. (2009) — Graptolites in British stratigraphy, Geological Magazine', url: 'https://doi.org/10.1017/S0016756809990434' },
+            { title: 'Maletz (2021) — Biostratigraphy and the fossil record of the Graptolithina, Treatise Online', url: 'https://journals.ku.edu/treatiseonline/article/download/15162/13722/33223' },
+            { title: 'UCMP Berkeley — O’Neill, Using Microfossils in Petroleum Exploration', url: 'https://ucmp.berkeley.edu/fosrec/ONeill.html' },
+            { title: 'AAPG Wiki — Microfossils in exploration', url: 'https://wiki.aapg.org/Microfossils_in_exploration' }
+          ]
+        }
+      },
+      {
+        id: 'gssp-chronostratigraphie',
+        title: 'Les GSSP et l’échelle chronostratigraphique internationale',
+        field: 'Chronostratigraphie · Commission internationale de stratigraphie',
+        summary: 'Comprendre comment les limites de l’échelle des temps géologiques sont fixées par des repères précis dans des coupes de référence.',
+        lesson: {
+          sections: [
+            'La Commission internationale de stratigraphie (ICS) publie la charte chronostratigraphique internationale. La limite inférieure d’un étage est indiquée dans une coupe de référence par un « clou d’or » : le GSSP (Global Boundary Stratotype Section and Point). Il faut distinguer les unités chronostratigraphiques (système, série, étage), qui désignent des roches, des unités géochronologiques (période, époque, âge), qui désignent des durées : l’Induan est ainsi un étage (les roches) correspondant à un âge (le temps).',
+            'Un GSSP est défini par un repère principal, souvent la première apparition d’un fossile, et par des repères secondaires (isotopes, magnétostratigraphie, datations radiométriques). La coupe doit être accessible, assez étendue pour permettre des échantillonnages répétés et ouverte aux chercheurs de toutes nationalités. La définition et les données de nombreux GSSP sont détaillées dans des articles de la revue Episodes. Les âges absolus, eux, sont estimés séparément et restent révisables.',
+            'Premier exemple : la base du Cambrien, du Paléozoïque et du Phanérozoïque est fixée à Fortune Head, sur la péninsule de Burin (Terre-Neuve). Le repère est la première apparition du fossile-trace Treptichnus pedum, un terrier : l’animal lui-même n’est connu que par ce motif de terrier. Le choix de la coupe date de 1992 et l’âge de la limite est de 538,8 ± 0,6 Ma. La découverte ultérieure de Treptichnus à quelques mètres sous le GSSP a conduit à affiner l’énoncé de la définition. Deuxième exemple : la base du Trias est fixée à Meishan (Chine), à la base du lit 27c, sur la première apparition du conodonte Hindeodus parvus dans la lignée H. latidentatus – H. parvus – Isarcicella isarcica. Le GSSP a été ratifié en 2001 et la limite est datée d’environ 251,902 Ma.',
+            'Troisième exemple : la base du Danien, du Paléogène et du Cénozoïque est fixée à El Kef (Tunisie), ratifiée en 1991, à la base d’une argile de limite sombre d’environ 50 cm dont la couche rougeâtre inférieure coïncide avec l’anomalie en iridium liée à un impact d’astéroïde ; l’âge retenu est de 66 Ma. Les premiers foraminifères du Paléogène (par exemple Globoconusa conusa) apparaissent à la base ou à quelques centimètres de cette argile. Quatrième exemple : la base du Silurien est fixée à Dob’s Linn (Écosse), 1,6 m au-dessus de la base de la formation de Birkhill Shale, sur la première apparition du graptolite Akidograptus ascensus ; la ratification date de 1984-1985 selon les sources.'
+          ],
+          example: {
+            statement: 'Quatre limites ont des âges estimés à 538,8 Ma (base du Cambrien), environ 443,8 Ma (base du Silurien), environ 251,9 Ma (base du Trias) et 66,0 Ma (base du Danien). Classez-les de la plus ancienne à la plus récente.',
+            calculation: 'Pour des âges exprimés en millions d’années avant le présent, le nombre le plus grand correspond à la limite la plus ancienne.',
+            answer: 'Base du Cambrien (538,8 Ma), base du Silurien (≈ 443,8 Ma), base du Trias (≈ 251,9 Ma), base du Danien (66,0 Ma). Il ne faut pas confondre l’âge de la limite avec l’année de ratification du GSSP.'
+          },
+          exercise: {
+            question: 'Que signifie GSSP ?',
+            answer: 'Global Boundary Stratotype Section and Point : la coupe et le point de référence mondiaux qui définissent la limite inférieure d’un étage.'
+          },
+          exercises: [
+            {
+              question: 'Quel repère principal définit la base du Cambrien à Fortune Head ?',
+              answer: 'La première apparition du fossile-trace Treptichnus pedum.'
+            },
+            {
+              question: 'Quel repère caractérise la base du Danien à El Kef ?',
+              answer: 'La base de l’argile de limite, couche rougeâtre enrichie en iridium liée à un impact d’astéroïde, accompagnée de l’apparition de foraminifères du Paléogène.'
+            },
+            {
+              question: 'Pourquoi distingue-t-on un étage et un âge ?',
+              answer: 'L’étage désigne l’ensemble des roches formées pendant un intervalle de temps, tandis que l’âge désigne cet intervalle de temps lui-même.'
+            }
+          ],
+          sources: [
+            { title: 'ICS — GSSP for the Danian Stage', url: 'https://stratigraphy.org/gssps/danian' },
+            { title: 'ICS — GSSP for the Induan Stage', url: 'https://stratigraphy.org/gssps/induan' },
+            { title: 'Wikipedia — Cambrian (GSSP de Fortune Head)', url: 'https://en.wikipedia.org/wiki/Cambrian' },
+            { title: 'Geological Society of London — GSSP de Dob’s Linn (Rhuddanian)', url: 'https://www.geolsoc.org.uk/science-and-policy/specialist-groups/stratigraphy-commission/proposed-and-ratified-gssps-in-britain/gssp-dobbs-linn/' }
+          ]
+        }
+      },
+      {
+        id: 'limites-biais-incertitudes',
+        title: 'Limites, biais et incertitudes de la biostratigraphie',
+        field: 'Biostratigraphie · Critique des données',
+        summary: 'Identifier les causes d’erreur : échantillonnage, faciès, diachronisme, remaniement et révision des âges absolus.',
+        lesson: {
+          sections: [
+            'La biostratigraphie suppose que les apparitions et les disparitions de taxons sont des repères de temps, mais ces repères peuvent être diachrones : un même taxon peut apparaître plus tôt dans une région que dans une autre. En corrélation graphique, les points qui s’alignent sur la ligne de corrélation sont interprétés comme synchrones et ceux qui s’en écartent comme diachrones. Un exemple est donné par le conodonte Hindeodus parvus, repère de la limite Permien–Trias : dans la coupe de Shangsi, sa première occurrence se trouve environ 4,5 m au-dessus de l’horizon de l’événement, et les auteurs relèvent des différences notables entre les coupes de Meishan et de Shangsi, qu’ils expliquent par un possible hiatus sédimentaire minime au niveau du GSSP.',
+            'L’échantillonnage est une limite majeure. L’effet Signor–Lipps (1982) décrit le fait qu’un échantillonnage aléatoire insuffisant fait paraître un taxon disparu avant son extinction réelle, ce qui peut faire paraître graduelle une extinction brutale. Une étude de 2018 a montré en outre que les dernières occurrences observées peuvent se concentrer dans des intervalles condensés et lors de changements de faciès, imitant des pulsations d’extinction soudaines. Les durées observées d’un événement d’extinction sont donc des estimations, pas des mesures directes.',
+            'Le remaniement consiste en l’érosion de fossiles plus anciens et leur redépôt dans des couches plus jeunes : il prolonge à tort l’extension apparente d’un taxon. Dans les forages, la difficulté augmente : les déblais (cuttings) peuvent contenir un mélange de lithologies différentes et des éboulements de paroi (cavings), si bien qu’une première apparition est délicate à reconnaître, du matériel provenant de niveaux supérieurs pouvant tomber au fond du trou. Le remaniement est même signalé dans des coupes de référence comme El Kef.',
+            'Enfin, la biostratigraphie ordonne les événements, mais les âges absolus viennent de datations radiométriques, par exemple U–Pb sur des zircons de cendres volcaniques. L’Ordovicien et le Silurien souffrent d’un manque de datations systématiques de laves, de brèches et de cendres interstratifiées. À Dob’s Linn, la limite Ordovicien–Silurien est calibrée à 443,8 ± 1,5 Ma, tandis qu’une étude de 2023 (Garza et al.) donne une date U–Pb de 440,44 ± 0,55 Ma pour la biozone à Coronagraptus cyphus et discute la qualité de plusieurs dates et la pertinence de la coupe. Les âges absolus attachés aux limites restent donc révisables.'
+          ],
+          example: {
+            statement: 'Exemple fictif : dans une coupe de dix couches, un taxon n’est observé que jusqu’à la couche 7, avec un échantillonnage faible. Peut-on affirmer que le taxon s’est éteint à la couche 7 ?',
+            calculation: 'La dernière occurrence observée est un âge minimal pour l’extinction : le taxon existait au moins jusqu’à ce niveau, et peut avoir persisté plus haut sans avoir été échantillonné (effet Signor–Lipps).',
+            answer: 'Non. La couche 7 donne seulement la dernière occurrence observée ; l’extinction réelle peut être plus récente. L’exemple est fictif.'
+          },
+          exercise: {
+            question: 'Qu’est-ce que le remaniement en biostratigraphie ?',
+            answer: 'C’est l’érosion de fossiles plus anciens et leur redépôt dans des couches plus jeunes, ce qui fausse l’âge apparent de ces dernières.'
+          },
+          exercises: [
+            {
+              question: 'Quel effet fait paraître graduelle une extinction brutale ?',
+              answer: 'L’effet Signor–Lipps, lié à un échantillonnage insuffisant.'
+            },
+            {
+              question: 'Pourquoi l’analyse de déblais de forage est-elle moins précise que celle de carottes ?',
+              answer: 'Parce que les déblais mélangent des lithologies de niveaux différents, mais elle reste utile et peu coûteuse.'
+            },
+            {
+              question: 'Quel âge absolu est attaché à la limite Ordovicien–Silurien dans la calibration citée, et pourquoi peut-il changer ?',
+              answer: '443,8 ± 1,5 Ma ; il peut changer parce que de nouvelles datations radiométriques, comme celles de 2023, affinent ou discutent la calibration.'
+            }
+          ],
+          sources: [
+            { title: 'PMC — Stratigraphic signatures of mass extinctions (Signor–Lipps effect)', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6158527/' },
+            { title: 'AAPG Wiki — Sampling for paleontology', url: 'https://wiki.aapg.org/Sampling_for_paleontology' },
+            { title: 'Nicoll, Metcalfe & Wang (2002) — Conodont biostratigraphy of the Permian–Triassic boundary interval', url: 'https://researchers.une.edu.au/en/publications/new-species-of-the-conodont-genus-hindeodus-and-the-conodont-bios-6/' },
+            { title: 'Garza et al. (2023) — Age of the Ordovician–Silurian boundary at Dob’s Linn', url: 'https://geoloogia.info/reference/48541' }
+          ]
+        }
+      },
+      {
+        id: 'methodes-quantitatives-applications',
+        title: 'Corrélation quantitative et applications de la biostratigraphie',
+        field: 'Biostratigraphie · Méthodes et industrie',
+        summary: 'Voir comment la corrélation graphique, les méthodes informatiques et l’exploration pétrolière exploitent les fossiles.',
+        lesson: {
+          sections: [
+            'En 1964, Alan Shaw publie Time in Stratigraphy (McGraw-Hill), qui expose la corrélation graphique. Les positions des premières et dernières occurrences de taxons dans deux coupes sont reportées sur un diagramme x–y. Les points alignés sur la ligne de corrélation sont interprétés comme synchrones, ceux qui s’en écartent comme diachrones. Shaw retenait pour chaque taxon l’occurrence locale la plus ancienne et la plus récente, et projetait l’information de toutes les coupes dans la meilleure d’entre elles afin d’obtenir une coupe de référence composite (composite standard), regroupant les extensions maximales des taxons.',
+            'Des programmes informatiques prolongent cette logique. La méthode RASC (Ranking and Scaling) classe statistiquement des événements observés dans de nombreuses coupes ou puits. La méthode CONOP (Constrained Optimization, Sadler et Cooper, 2003) détermine la meilleure séquence de premières et dernières apparitions à partir de nombreuses coupes, en prolongeant le principe d’« économie d’ajustement » de Shaw. Un exemple publié construit une séquence composite de 2 588 niveaux d’événements, contraints par 15 205 observations locales. Ces approches exigent que les événements soient correctement identifiés dans chaque coupe.',
+            'Dans l’industrie pétrolière, la plupart des analyses paléontologiques portent sur des déblais de forage : on prélève souvent un échantillon par tige ajoutée, soit environ 9 m (30 pieds). Les microfossiles sont particulièrement utiles car ils peuvent être récupérés à la fois dans les déblais et dans les carottes. Analysés près du forage, ils permettent d’identifier immédiatement des niveaux stratigraphiques et des objectifs de forage, de choisir les points de carottage et de tubage, et de ne pas forer inutilement sous l’objectif. Certains microfossiles changent aussi de couleur sous l’effet de la chaleur d’enfouissement et indiquent ainsi le niveau de maturité des hydrocarbures.',
+            'Cet usage a une histoire : à la fin du XIXe siècle, le micropaléontologue polonais Józef Grzybowski reconnaît que des fossiles d’échantillons de puits peuvent être identifiés d’un puits à l’autre. La stratigraphie séquentielle développée par le groupe Exxon a ensuite accru la demande en biostratigraphie à haute résolution. On parle de « biostratigraphie de production » lorsque des événements fossiles propres à un champ sont déterminés et testés pour caractériser et corréler des réservoirs. Dans tous les cas, le résultat doit être confronté aux limites du chapitre précédent, notamment le mélange d’échantillons et les éboulements de paroi.'
+          ],
+          example: {
+            statement: 'Un puits fictif traverse 1 800 m. On prélève un échantillon de déblais par tige de 9 m. Combien d’échantillons obtient-on ?',
+            calculation: '1 800 ÷ 9 = 200.',
+            answer: '200 échantillons. Chacun est un mélange des roches de l’intervalle correspondant, ce qui limite la précision de la position des événements.'
+          },
+          exercise: {
+            question: 'Que représente la coupe de référence composite (composite standard) de Shaw ?',
+            answer: 'Une coupe de référence qui rassemble les extensions maximales des taxons observées dans plusieurs coupes.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année Shaw publie-t-il Time in Stratigraphy ?',
+              answer: 'En 1964.'
+            },
+            {
+              question: 'Pourquoi les microfossiles sont-ils particulièrement utiles dans les forages pétroliers ?',
+              answer: 'Parce qu’ils sont assez petits pour être récupérés dans les déblais et les carottes, et analysables rapidement au voisinage du forage.'
+            },
+            {
+              question: 'Que signifie CONOP ?',
+              answer: 'Constrained Optimization : une méthode qui cherche la meilleure séquence de premières et dernières apparitions à partir de nombreuses coupes.'
+            }
+          ],
+          sources: [
+            { title: 'Sadler, Cooper & Crampton — High-Resolution Geobiologic Time-Lines, The Sedimentary Record (SEPM)', url: 'https://sepm.org/files/123article.fb1ear1jutd3lylp.pdf' },
+            { title: 'AAPG Wiki — Quantitative biostratigraphy', url: 'https://wiki.aapg.org/Quantitative_biostratigraphy' },
+            { title: 'AAPG Wiki — Sampling for paleontology', url: 'https://wiki.aapg.org/Sampling_for_paleontology' },
+            { title: 'Search and Discovery — Giwa et al., Advances in the Application of Biostratigraphy to Petroleum Exploration', url: 'https://www.searchanddiscovery.com/documents/2006/06002giwa/index.htm' }
+          ]
+        }
+      },
+      {
+        id: 'paleontologie-evolutive-transitions',
+        title: 'Paléontologie évolutive : transitions, tempo et mode de l’évolution',
+        field: 'Paléontologie évolutive · XIXe siècle à aujourd’hui',
+        summary: 'Relier archives fossiles et théorie de l’évolution : imperfection des archives, formes de transition, gradualisme et équilibres ponctués.',
+        lesson: {
+          sections: [
+            'Dans On the Origin of Species (1859), Charles Darwin consacre un chapitre à l’imperfection des archives géologiques (le chapitre IX de la première édition). Si les formes intermédiaires entre espèces ont existé en très grand nombre, pourquoi chaque formation géologique n’en est-elle pas remplie ? Darwin répond que l’explication se trouve, selon lui, dans l’extrême imperfection des archives. Il précise qu’il faut chercher des formes intermédiaires entre chaque espèce et un ancêtre commun inconnu, et non entre deux espèces actuelles comme le cheval et le tapir. En 1861, la découverte d’Archaeopteryx, un oiseau aux caractères de dinosaure, fut vue par les évolutionnistes comme un soutien venu des archives géologiques.',
+            'Un exemple moderne montre comment la stratigraphie guide la recherche. Edward Daeschler, Neil Shubin et Farish Jenkins ont cherché sur l’île d’Ellesmere (Nunavut, Canada) des roches du Dévonien supérieur susceptibles de contenir une forme intermédiaire entre poissons et tétrapodes. Ils y découvrent en 2004 Tiktaalik roseae, dans la formation de Fram, un dépôt fluviatile du Dévonien supérieur ; l’espèce est décrite dans la revue Nature en avril 2006. Elle associe des traits de poisson (nageoires, écailles, mâchoire primitive) et de tétrapode (crâne, cou, côtes, parties de membres). Les âges rapportés vont de 375 à 383 Ma selon les estimations.',
+            'La paléontologie évolutive discute aussi le tempo et le mode de l’évolution. Le gradualisme phylétique suppose que les lignées entières se transforment de façon progressive. En 1972, Niles Eldredge et Stephen Jay Gould proposent dans Models in Paleobiology (éd. T. J. M. Schopf) la théorie des équilibres ponctués : la plupart des espèces fossiles montrent de longues périodes de stabilité morphologique (stase), interrompues par des épisodes géologiquement brefs de spéciation, en appliquant au registre fossile le modèle de spéciation allopatrique popularisé par Ernst Mayr. Les lacunes du registre fossile reflètent alors en partie ce mode d’évolution. Le débat reste ouvert : le registre fossile contient des exemples bien documentés à la fois de gradualisme phylétique et d’évolution ponctuée.',
+            'Ces questions rejoignent la biostratigraphie. Une zone de lignée repose précisément sur un segment d’une lignée évolutive, et la corrélation suppose que l’apparition d’une espèce est un événement irréversible. Le GSSP de la base du Trias s’appuie ainsi sur la première apparition de Hindeodus parvus dans la lignée H. latidentatus – H. parvus – Isarcicella isarcica ; selon Zakharov et al. (1995), H. parvus a évolué à partir de H. latidentatus dans un continuum de formes au sein du lit 27 de Meishan. Évolution et stratigraphie s’éclairent donc mutuellement.'
+          ],
+          example: {
+            statement: 'Les âges rapportés pour les fossiles de Tiktaalik sont de 375, 379 et 383 Ma. Quelle est l’étendue de l’incertitude entre la plus petite et la plus grande valeur ?',
+            calculation: '383 − 375 = 8 millions d’années.',
+            answer: 'Huit millions d’années. Cette étendue reflète la diversité des estimations, pas une erreur de mesure unique.'
+          },
+          exercise: {
+            question: 'Que prévoit le gradualisme phylétique, et que propose la théorie des équilibres ponctués ?',
+            answer: 'Le gradualisme phylétique prévoit une transformation progressive de lignées entières. Les équilibres ponctués proposent de longues périodes de stase interrompues par des épisodes brefs de spéciation.'
+          },
+          exercises: [
+            {
+              question: 'Où et dans quelle formation a été découvert Tiktaalik roseae ?',
+              answer: 'Sur l’île d’Ellesmere (Nunavut, Canada), dans la formation de Fram du Dévonien supérieur.'
+            },
+            {
+              question: 'En quelle année Eldredge et Gould ont-ils publié leur chapitre sur les équilibres ponctués ?',
+              answer: 'En 1972, dans Models in Paleobiology.'
+            },
+            {
+              question: 'Comment Darwin explique-t-il la rareté des formes intermédiaires dans les archives fossiles ?',
+              answer: 'Par l’extrême imperfection des archives géologiques.'
+            }
+          ],
+          sources: [
+            { title: 'Darwin (1859) — On the Origin of Species, chapitre IX (e-rara, ETH-Bibliothek)', url: 'https://www.e-rara.ch/download/pdf/2324745.pdf' },
+            { title: 'University of Chicago Medicine — Newly found species fills evolutionary gap between fish and land animals', url: 'https://www.uchicagomedicine.org/forefront/news/2006/april/newly-found-species-fills-evolutionary-gap-between-fish-and-land-animals' },
+            { title: 'Wikipedia — Punctuated equilibrium', url: 'https://en.wikipedia.org/wiki/Punctuated_equilibrium' },
+            { title: 'Zakharov et al. (1995) — Importance of Hindeodus parvus for the Permian–Triassic boundary, Geologija', url: 'https://doaj.org/article/22b178462f324b2a85bf9ea4bdf8e672' }
+          ]
+        }
+      },
+      {
+        id: 'radiations-extinctions',
+        title: 'Radiations, extinctions et événements biotiques',
+        field: 'Paléontologie évolutive · Cambrien à Crétacé',
+        summary: 'Comprendre comment les grandes radiations et extinctions servent à la fois de repères stratigraphiques et d’objets d’étude.',
+        lesson: {
+          sections: [
+            'Les archives fossiles montrent au Cambrien l’apparition rapide d’animaux complexes, la « radiation cambrienne ». Darwin y voyait une difficulté, car les roches antérieures au Cambrien ne livraient pas de fossiles connus à son époque ; son chapitre sur l’imperfection des archives traite de l’apparition soudaine de groupes d’espèces dans les plus anciennes strates fossilifères. En 1909, Charles Walcott découvre le Schiste de Burgess (Colombie-Britannique, Cambrien moyen), qui préserve des animaux parfois très différents de ceux d’aujourd’hui. Le site du Chengjiang, en Chine, est plus ancien (Cambrien inférieur).',
+            'La limite Précambrien–Cambrien est actuellement définie par un fossile-trace, Treptichnus pedum, situé sous la première apparition des trilobites. Les petits fossiles coquilliers précèdent l’apparition des trilobites. La stratigraphie du Cambrien a donc dû évoluer : la limite était autrefois associée à l’apparition des fossiles à coquille, avant que le choix du GSSP de Fortune Head la déplace vers un repère plus ancien et plus largement observable.',
+            'Raup et Sepkoski (Science, 1982) identifient dans le registre des genres marins fossiles cinq grandes extinctions de masse, dites « Big Five » : fin de l’Ordovicien, Dévonien supérieur, fin du Permien, fin du Trias et fin du Crétacé. L’extinction du Dévonien supérieur se résout en au moins trois événements répartis sur une quarantaine de millions d’années, ce qui montre que les « Big Five » sont des regroupements commodes plutôt que des instants uniques. Les données portent sur des genres marins aisément préservés sous forme de fossiles, non sur tous les êtres vivants.',
+            'Plusieurs limites majeures de l’échelle sont placées sur des événements biotiques. À El Kef, l’extinction massive de micro- et nannofossiles planctoniques coïncide avec les indices d’un impact d’astéroïde, et les foraminifères du Danien ont ensuite repeuplé les mers paléocènes. À Meishan, H. parvus est la première espèce à répartition mondiale à apparaître après le minimum de diversité faunique. La limite Permien–Trias a été datée à 251,902 ± 0,024 Ma par la datation d’argiles volcaniques situées juste au-dessus et au-dessous. Interpréter ces événements exige de combiner biostratigraphie, datations radiométriques et géochimie, et de rester prudent face aux biais d’échantillonnage.'
+          ],
+          example: {
+            statement: 'La base du Cambrien est datée de 538,8 Ma et la limite Crétacé–Paléogène de 66,0 Ma. Quel intervalle de temps les sépare ?',
+            calculation: '538,8 − 66,0 = 472,8.',
+            answer: 'Environ 472,8 millions d’années. Ces âges sont des estimations révisables, donc le résultat aussi.'
+          },
+          exercise: {
+            question: 'Quelle découverte de 1909 a documenté la diversité animale du Cambrien moyen ?',
+            answer: 'Celle du Schiste de Burgess, en Colombie-Britannique, par Charles Walcott.'
+          },
+          exercises: [
+            {
+              question: 'Qui a identifié les « Big Five » et en quelle année ?',
+              answer: 'Raup et Sepkoski, en 1982.'
+            },
+            {
+              question: 'Quel repère géochimique caractérise la couche rougeâtre de la base du Danien à El Kef ?',
+              answer: 'Une anomalie en iridium liée à un impact d’astéroïde.'
+            },
+            {
+              question: 'Pourquoi la durée apparente d’une extinction peut-elle être surestimée ?',
+              answer: 'À cause de l’effet Signor–Lipps : un échantillonnage insuffisant fait paraître les taxons disparus avant leur extinction réelle.'
+            }
+          ],
+          sources: [
+            { title: 'Wikipedia — Cambrian', url: 'https://en.wikipedia.org/wiki/Cambrian' },
+            { title: 'Briggs (2015) — Extraordinary fossils reveal the nature of Cambrian life (Burgess Shale), PMC', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4360120' },
+            { title: 'Raup & Sepkoski (1982) — Mass extinctions in the marine fossil record, Science', url: 'https://doi.org/10.1126/science.215.4539.1501' },
+            { title: 'Molina et al. (2006) — GSSP du Danien à El Kef (résumé, KU Leuven)', url: 'https://lirias.kuleuven.be/217243' }
+          ]
+        }
+      }
+    ]
+  },
+{
+  id: 'micropaléontologie',
+  title: 'La micropaléontologie',
+  note: 'Six chapitres pour comprendre les microfossiles, leurs principaux groupes, les méthodes de préparation et d’identification, ainsi que leurs usages en biostratigraphie et en reconstitution des anciens environnements. La taille des microfossiles varie selon les groupes : beaucoup sont microscopiques, mais certains spécimens ou tests peuvent être plus grands. Les interprétations dépendent toujours du contexte géologique, de la conservation et de la qualité de l’échantillonnage.',
+  chapters: [
+    {
+      id: 'decouvrir-la-micropaleontologie',
+      title: 'Découvrir la micropaléontologie et les microfossiles',
+      field: 'Micropaléontologie · Fossiles microscopiques et archives de la vie',
+      summary: 'Définir les microfossiles, comprendre pourquoi ils sont étudiés au microscope et distinguer leur taille de leur appartenance biologique.',
+      lesson: {
+        sections: [
+          'La micropaléontologie est une branche de la paléontologie consacrée aux restes fossiles de très petits organismes et aux éléments microscopiques d’organismes plus grands. Les objets étudiés comprennent notamment des tests, des squelettes, des valves, des spores, des grains de pollen et des restes dentaires. La catégorie « microfossile » est donc en partie définie par la taille et les méthodes d’observation, et ne correspond pas à un seul groupe de parenté biologique.',
+          'La limite de taille n’est pas universelle : les institutions et les disciplines emploient des seuils différents, et certains fossiles rangés parmi les microfossiles peuvent atteindre une taille visible à l’œil nu. L’usage du microscope optique, de la loupe binoculaire ou du microscope électronique permet d’examiner des caractères comme la forme, les ouvertures, les cloisons, la texture et la structure d’une coquille ou d’un squelette.',
+          'Les microfossiles sont souvent abondants dans les sédiments et peuvent être présents dans de petits échantillons de roche. Lorsqu’un groupe évolue rapidement, possède des caractères reconnaissables et se retrouve dans des couches étendues, il peut aider à comparer les couches géologiques. D’autres groupes renseignent sur les conditions du milieu où ils vivaient. Ces informations restent à interpréter avec la stratigraphie, la géologie et les autres données disponibles.'
+        ],
+        example: {
+          statement: 'Un échantillon de sédiment contient des coquilles minuscules et des grains de pollen fossiles. Pourquoi ces éléments relèvent-ils potentiellement de la micropaléontologie ?',
+          calculation: 'On examine leur taille, leur nature et les méthodes nécessaires pour décrire leurs caractères. On ne les classe pas uniquement selon leur origine biologique : le terme microfossile regroupe des restes différents parce que leur étude exige souvent des techniques microscopiques.',
+          answer: 'Ces éléments peuvent être étudiés en micropaléontologie parce qu’ils sont de petite taille et nécessitent souvent une observation détaillée au microscope. Leur attribution précise dépend de leurs caractères observables.'
+        },
+        exercise: {
+          question: 'Pourquoi « microfossile » ne désigne-t-il pas un groupe biologique unique ?',
+          answer: 'Parce que le terme regroupe des restes de groupes très différents, notamment des protistes, des organismes végétaux et de petits éléments d’animaux, réunis surtout par leur petite taille et leurs méthodes d’étude.'
+        },
+        exercises: [
+          {
+            question: 'Cite deux types de restes pouvant être étudiés en micropaléontologie.',
+            answer: 'Par exemple, des tests de foraminifères et des grains de pollen fossiles.'
+          },
+          {
+            question: 'Quel instrument peut aider à observer les détails d’un microfossile ?',
+            answer: 'Un microscope optique ou, lorsque la question scientifique le justifie, un microscope électronique.'
+          },
+          {
+            question: 'Tous les microfossiles sont-ils nécessairement des organismes unicellulaires ?',
+            answer: 'Non. Certains sont des restes d’organismes unicellulaires, tandis que d’autres sont des éléments microscopiques d’organismes pluricellulaires, comme certains restes dentaires.'
+          }
+        ],
+        sources: [
+          { title: 'Université de Fribourg — Micropaleontology Research Group: Profile', url: 'https://www.unifr.ch/geo/micropaleontology/en/group/profile/' },
+          { title: 'Muséum national d’Histoire naturelle — Collection de micropaléontologie', url: 'https://www.mnhn.fr/fr/collection-de-micropaleontologie' },
+          { title: 'The Paleontological Society Papers / Cambridge University Press — Microfossils', url: 'https://www.cambridge.org/core/journals/the-paleontological-society-papers/article/abs/microfossils/917C1810EB019E573B5197FE8C79FFCC' }
+        ]
+      }
+    },
+    {
+      id: 'grands-groupes-de-microfossiles',
+      title: 'Les grands groupes de microfossiles',
+      field: 'Micropaléontologie · Diversité des formes et des compositions',
+      summary: 'Reconnaître les grands groupes étudiés et relier prudemment leurs caractères à leur nature biologique et à leur conservation.',
+      lesson: {
+        sections: [
+          'Les foraminifères sont des organismes unicellulaires dont beaucoup produisent un test minéralisé. Leur test peut comporter plusieurs loges et présente des formes très variées. Certaines espèces vivent dans la colonne d’eau et sont dites planctoniques ; d’autres vivent sur ou dans les sédiments et sont dites benthiques. Ces modes de vie différents expliquent en partie la diversité des informations environnementales qu’ils peuvent fournir.',
+          'Les diatomées sont des algues microscopiques dont l’enveloppe est principalement constituée de silice. Les radiolaires possèdent également des squelettes siliceux, souvent finement structurés. Les coccolithophores sont des algues qui produisent des plaques calcaires appelées coccolithes ; ces plaques peuvent contribuer aux nannofossiles calcaires conservés dans les sédiments marins. Ces groupes ne doivent pas être confondus : leur composition et leur biologie diffèrent.',
+          'Les ostracodes sont de petits crustacés dont le corps est protégé par une carapace à deux valves. La palynologie étudie notamment les grains de pollen, les spores et certains palynomorphes, dont les kystes de dinoflagellés. Les conodontes sont connus surtout par de petits éléments fossiles phosphatés associés à des animaux marins aujourd’hui disparus. La liste des groupes étudiés varie selon les questions, les dépôts et les spécialités des laboratoires.'
+        ],
+        example: {
+          statement: 'On observe trois fossiles : une enveloppe siliceuse formée de deux valves articulées, une coquille compartimentée d’un organisme unicellulaire et une plaque calcaire microscopique produite par une algue.',
+          calculation: 'On compare les caractères diagnostiques sans se fier à la seule taille : deux valves articulées évoquent un ostracode ; un test à loges peut correspondre à un foraminifère ; une plaque calcaire d’un coccolithophore est un coccolithe.',
+          answer: 'Les identifications proposées sont respectivement un ostracode, un foraminifère et un coccolithe. En pratique, il faut vérifier les détails morphologiques et le contexte de l’échantillon avant de confirmer.'
+        },
+        exercise: {
+          question: 'Quelle différence générale distingue les diatomées des coccolithophores du point de vue de leur enveloppe ?',
+          answer: 'Les diatomées possèdent une enveloppe principalement siliceuse, tandis que les coccolithophores produisent des plaques calcaires appelées coccolithes.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on les foraminifères qui vivent dans la colonne d’eau ?',
+            answer: 'Les foraminifères planctoniques.'
+          },
+          {
+            question: 'Quels restes étudie notamment la palynologie ?',
+            answer: 'Les grains de pollen, les spores et certains autres palynomorphes, dont des kystes de dinoflagellés.'
+          },
+          {
+            question: 'Les ostracodes sont-ils des organismes unicellulaires ?',
+            answer: 'Non. Ce sont de petits crustacés, donc des animaux pluricellulaires, généralement protégés par une carapace à deux valves.'
+          }
+        ],
+        sources: [
+          { title: 'Muséum national d’Histoire naturelle — Collection de micropaléontologie', url: 'https://www.mnhn.fr/fr/collection-de-micropaleontologie' },
+          { title: 'IODP — Marine Microfossils', url: 'https://www.iodp.tamu.edu/curation/mrc/microfossils.html' },
+          { title: 'Muséum de sciences naturelles de Barcelone — Micropalaeontology', url: 'https://museuciencies.cat/en/science/research/palaeobiodiversity-and-marine-palaeoenvironments/micropalaeontology/' }
+        ]
+      }
+    },
+    {
+      id: 'foraminiferes-et-informations-environnementales',
+      title: 'Les foraminifères : formes, modes de vie et indices environnementaux',
+      field: 'Micropaléontologie marine · Foraminifères planctoniques et benthiques',
+      summary: 'Comprendre comment la morphologie et la répartition des foraminifères contribuent aux études biostratigraphiques et paléoécologiques.',
+      lesson: {
+        sections: [
+          'Les foraminifères sont des organismes unicellulaires caractérisés, chez de nombreuses espèces, par un test minéral. L’architecture du test, le nombre et la disposition des loges, les ouvertures et la composition de la paroi sont des caractères utiles à l’identification. Il faut toutefois éviter de déterminer une espèce à partir d’une seule ressemblance générale : l’identification taxonomique s’appuie sur un ensemble de caractères et sur des références spécialisées.',
+          'Les foraminifères planctoniques vivent en suspension dans l’eau, tandis que les foraminifères benthiques vivent en relation avec le fond marin. Leur présence et leur abondance peuvent varier avec la température, la salinité, la profondeur, l’oxygénation et la disponibilité en nutriments. Les relations entre ces paramètres et les espèces ne sont pas toujours simples ; elles doivent être évaluées avec des données modernes, des assemblages fossiles et le contexte sédimentaire.',
+          'Les tests peuvent se conserver dans les sédiments et fournir des indices sur les organismes présents au moment du dépôt. Des assemblages bien identifiés peuvent contribuer à la biostratigraphie, à la reconstitution des anciens milieux marins et à l’étude de la biodiversité. La dissolution, le transport après la mort, le remaniement de fossiles plus anciens et les biais d’échantillonnage peuvent modifier l’assemblage observé et doivent être envisagés avant de tirer une conclusion.'
+        ],
+        example: {
+          statement: 'Dans une carotte sédimentaire, une couche contient un assemblage de foraminifères différent de celui des couches voisines. Que peut-on tester comme explication ?',
+          calculation: 'On vérifie d’abord l’identification des espèces, leur état de conservation et la présence éventuelle de fossiles remaniés. On compare ensuite l’assemblage avec les données biostratigraphiques et les indices sédimentologiques, sans attribuer automatiquement la différence à un seul paramètre environnemental.',
+          answer: 'La différence peut refléter un changement d’âge, de milieu, ou un effet de conservation et de remaniement. Il faut confronter plusieurs indices avant de retenir une interprétation.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les foraminifères planctoniques des foraminifères benthiques ?',
+          answer: 'Parce qu’ils occupent des milieux différents : les premiers vivent dans la colonne d’eau et les seconds en relation avec le fond. Cette différence influence l’interprétation écologique et stratigraphique de leur présence.'
+        },
+        exercises: [
+          {
+            question: 'Quel nom donne-t-on à l’enveloppe minérale de nombreux foraminifères ?',
+            answer: 'Un test.'
+          },
+          {
+            question: 'Cite deux paramètres environnementaux qui peuvent influencer les assemblages de foraminifères.',
+            answer: 'Par exemple, la température et la salinité ; la profondeur, l’oxygénation et la disponibilité en nutriments peuvent également intervenir.'
+          },
+          {
+            question: 'La présence d’une espèce suffit-elle toujours à déterminer exactement le milieu ancien ?',
+            answer: 'Non. L’interprétation exige un assemblage fiable et le croisement avec d’autres indices, car plusieurs facteurs écologiques, taphonomiques et géologiques peuvent influencer les fossiles conservés.'
+          }
+        ],
+        sources: [
+          { title: 'Muséum de sciences naturelles de Barcelone — Foraminifera: source of data on marine environments', url: 'https://museuciencies.cat/en/science/research/palaeobiodiversity-and-marine-palaeoenvironments/micropalaeontology/' },
+          { title: 'Université de Bonn — Micropaleontology Working Group', url: 'https://www.paleontology.uni-bonn.de/en/working-groups/wg-micropaleontology/mikropaleontologie' },
+          { title: 'Université de Fribourg — Micropaleontology Research Group: Profile', url: 'https://www.unifr.ch/geo/micropaleontology/en/group/profile/' }
+        ]
+      }
+    },
+    {
+      id: 'preparation-et-identification-des-echantillons',
+      title: 'Préparer, observer et identifier les microfossiles',
+      field: 'Méthodes micropaléontologiques · Échantillonnage, préparation et microscopie',
+      summary: 'Suivre les grandes étapes d’une étude, de l’échantillon de terrain à l’identification documentée, en tenant compte des limites de chaque méthode.',
+      lesson: {
+        sections: [
+          'Une étude commence par un échantillonnage documenté : localisation, profondeur ou position stratigraphique, nature de la roche et contexte de prélèvement. Ces informations sont indispensables pour relier les fossiles à leur couche d’origine. Un échantillon isolé, sans provenance précise, peut rester utile pour la morphologie mais perd une partie importante de sa valeur stratigraphique et environnementale.',
+          'La préparation dépend de la roche et du groupe recherché. Certains sédiments meubles peuvent être désagrégés, lavés puis tamisés afin de séparer des fractions granulométriques. Les roches cimentées peuvent nécessiter une lame mince, c’est-à-dire une tranche très fine permettant d’observer les éléments inclus dans la roche. Des traitements chimiques ne conviennent pas à tous les fossiles et doivent être choisis par des spécialistes, car ils peuvent détruire certains constituants ou présenter des risques.',
+          'L’observation peut se faire à la loupe binoculaire, au microscope optique ou au microscope électronique selon l’échelle et les caractères à étudier. Les chercheurs décrivent la morphologie, réalisent des photographies avec une échelle et comparent les spécimens à des publications ou à des collections de référence. La détermination doit rester proportionnée à la qualité du matériel : si les caractères diagnostiques ne sont pas conservés, il est préférable d’indiquer une identification au niveau du groupe plutôt que d’inventer un nom d’espèce.'
+        ],
+        example: {
+          statement: 'Un chercheur doit étudier des microfossiles dans un sédiment meuble, puis comparer leur fréquence entre plusieurs couches. Quelles informations doit-il conserver ?',
+          calculation: 'Il note la provenance et la position stratigraphique de chaque prélèvement, applique une méthode de préparation cohérente et consigne les fractions observées, les critères d’identification et les éventuels biais de conservation. Les comparaisons ne sont fiables que si les méthodes sont suffisamment comparables.',
+          answer: 'Il doit conserver la provenance, la position dans la série, la méthode de préparation, les critères d’identification et les observations de conservation. Ces informations rendent les résultats contrôlables et comparables.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il enregistrer précisément la position stratigraphique d’un échantillon ?',
+          answer: 'Parce que cette position permet de relier les microfossiles à une couche donnée, de comparer les niveaux entre eux et d’interpréter leur âge relatif et leur contexte géologique.'
+        },
+        exercises: [
+          {
+            question: 'À quoi sert le tamisage de certains sédiments meubles ?',
+            answer: 'À séparer le matériau selon des classes de taille et à faciliter la récupération de certains microfossiles.'
+          },
+          {
+            question: 'Quand une lame mince peut-elle être utile ?',
+            answer: 'Quand les fossiles sont inclus dans une roche cimentée qui ne peut pas être désagrégée facilement, ou lorsque l’on veut observer les relations entre les fossiles et la roche.'
+          },
+          {
+            question: 'Que faire si un spécimen est trop abîmé pour être identifié à l’espèce ?',
+            answer: 'Décrire les caractères effectivement observables et retenir un niveau d’identification plus général, en signalant l’incertitude.'
+          }
+        ],
+        sources: [
+          { title: 'UCL — The Micropalaeontology Laboratories', url: 'https://www.ucl.ac.uk/mathematical-physical-sciences/earth-sciences/facilities-and-infrastructure/micropalaeontology-laboratories' },
+          { title: 'Muséum national d’Histoire naturelle — Collection de micropaléontologie', url: 'https://www.mnhn.fr/fr/collection-de-micropaleontologie' },
+          { title: 'Université de Bologne — Educational laboratory for micropaleontology', url: 'https://bigea.unibo.it/en/research/research-laboratories/educational-laboratory-for-micropaleontology' }
+        ]
+      }
+    },
+    {
+      id: 'biostratigraphie-et-age-relatif',
+      title: 'Les microfossiles pour comparer et dater les couches géologiques',
+      field: 'Biostratigraphie · Corrélation des couches et âge relatif',
+      summary: 'Comprendre comment les changements d’assemblages fossiles aident à établir des corrélations, et pourquoi la biostratigraphie ne donne pas automatiquement un âge absolu.',
+      lesson: {
+        sections: [
+          'La biostratigraphie utilise la distribution des fossiles dans les couches géologiques pour établir des successions et corréler des séries sédimentaires. Un taxon est particulièrement utile lorsque sa reconnaissance est fiable, sa distribution géographique assez étendue et sa durée d’existence géologique suffisamment limitée pour distinguer des intervalles. Tous les microfossiles ne possèdent pas les mêmes qualités stratigraphiques, et leur utilité varie selon la période et la région étudiées.',
+          'Les chercheurs établissent des intervalles à partir de la première et de la dernière apparition observées d’un taxon dans une succession, en tenant compte des limites de l’enregistrement fossile. Une première apparition observée dans une coupe n’est pas nécessairement le moment exact de l’apparition évolutive de l’espèce : l’échantillonnage est incomplet, les dépôts peuvent manquer et les fossiles peuvent être remaniés. La corrélation entre deux sites repose donc sur plusieurs marqueurs et sur la géologie locale.',
+          'La biostratigraphie établit d’abord des âges relatifs et des corrélations. Pour obtenir un âge numérique, elle peut être combinée à d’autres méthodes, par exemple la datation radiométrique de niveaux volcaniques intercalés lorsqu’ils sont présents et adaptés à l’analyse. Une succession de microfossiles ne doit pas être convertie en date précise sans une calibration adaptée et une estimation de l’incertitude.'
+        ],
+        example: {
+          statement: 'Dans une coupe A, un assemblage caractéristique est présent entre deux niveaux. Le même assemblage est trouvé dans une coupe B. Quelle conclusion peut-on proposer ?',
+          calculation: 'On compare la composition de l’assemblage, son ordre d’apparition, la conservation des fossiles et le contexte des deux coupes. Si les données concordent et qu’aucun remaniement important n’est détecté, les niveaux peuvent être corrélés comme appartenant à un intervalle biostratigraphique comparable.',
+          answer: 'Les deux niveaux peuvent être considérés comme corrélables sur la base de leur contenu fossile, sous réserve de vérifications indépendantes. Cela ne fournit pas à lui seul une date absolue exacte.'
+        },
+        exercise: {
+          question: 'Quelle est la différence entre une corrélation biostratigraphique et une datation absolue ?',
+          answer: 'La corrélation biostratigraphique compare des couches grâce à leur contenu fossile et établit surtout des relations d’âge relatif. Une datation absolue vise un âge numérique, obtenu par une méthode adaptée et assorti d’une incertitude.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi un microfossile à longue durée d’existence peut-il être moins précis pour dater une couche ?',
+            answer: 'Parce que sa présence peut correspondre à un intervalle géologique très large et ne permet donc pas de distinguer finement l’âge des couches.'
+          },
+          {
+            question: 'Que signifie le remaniement d’un fossile ?',
+            answer: 'Un fossile plus ancien est érodé dans son dépôt initial puis incorporé à un sédiment plus récent.'
+          },
+          {
+            question: 'La biostratigraphie fournit-elle toujours une date en années ?',
+            answer: 'Non. Elle sert principalement à établir des âges relatifs et des corrélations ; une calibration avec d’autres méthodes est nécessaire pour obtenir un âge numérique.'
+          }
+        ],
+        sources: [
+          { title: 'Muséum national d’Histoire naturelle — Collection de micropaléontologie', url: 'https://www.mnhn.fr/fr/collection-de-micropaleontologie' },
+          { title: 'Muséum national d’Histoire naturelle — Collection de palynologie fossile', url: 'https://www.mnhn.fr/en/palaeopalynology-collection' },
+          { title: 'SLB Energy Glossary — Micropaleontology', url: 'https://glossary.slb.com/en/terms/m/micropaleontology' },
+          { title: 'Muséum de sciences naturelles de Barcelone — Micropalaeontology', url: 'https://museuciencies.cat/en/science/research/palaeobiodiversity-and-marine-palaeoenvironments/micropalaeontology/' }
+        ]
+      }
+    },
+    {
+      id: 'paleoenvironnements-et-climats-anciens',
+      title: 'Reconstituer les paléoenvironnements et les climats anciens',
+      field: 'Paléoécologie · Paléocéanographie · Paléoclimatologie',
+      summary: 'Découvrir comment les assemblages de microfossiles contribuent à reconstruire les milieux passés tout en distinguant les indices des conclusions.',
+      lesson: {
+        sections: [
+          'Les microfossiles permettent d’étudier des environnements anciens parce que la présence, l’abondance et la composition des assemblages varient avec les conditions écologiques. Les foraminifères benthiques peuvent renseigner sur les conditions proches du fond, tandis que les groupes planctoniques apportent des informations sur la colonne d’eau. Les diatomées et d’autres groupes peuvent aussi être utilisés dans des contextes marins ou continentaux, selon leur écologie et leur conservation.',
+          'Certains caractères mesurables des fossiles ou de leur composition chimique peuvent servir d’indicateurs indirects, appelés proxys, de paramètres passés. Leur interprétation demande des calibrations, une connaissance des processus biologiques et une évaluation des effets possibles de la dissolution, de la diagenèse et du mélange de sédiments. Un proxy n’est pas une mesure directe du climat ancien : il est interprété à partir d’une relation démontrée ou évaluée entre une propriété mesurée et un paramètre environnemental.',
+          'Une reconstitution robuste combine plusieurs lignes de preuve : assemblages fossiles, sédimentologie, géochimie, données stratigraphiques et, lorsque c’est possible, comparaisons avec les organismes actuels. Les résultats doivent distinguer les observations, l’interprétation et l’incertitude. Les microfossiles peuvent également contribuer à l’étude des changements de biodiversité, mais l’absence d’un taxon dans un échantillon ne prouve pas à elle seule qu’il était absent de tout l’environnement.'
+        ],
+        example: {
+          statement: 'Un niveau sédimentaire contient un assemblage de microfossiles différent du niveau inférieur. Peut-on conclure directement que la température a changé ?',
+          calculation: 'On vérifie si les espèces identifiées sont associées à des conditions thermiques particulières, puis on contrôle les autres facteurs possibles : salinité, nutriments, profondeur, oxygénation, transport, dissolution et changement de faciès. On recherche ensuite des indices indépendants compatibles avec l’hypothèse.',
+          answer: 'Non. Un changement d’assemblage peut être compatible avec un changement de température, mais il peut aussi résulter d’autres facteurs écologiques ou taphonomiques. La conclusion exige des preuves convergentes.'
+        },
+        exercise: {
+          question: 'Pourquoi un proxy paléoenvironnemental doit-il être interprété avec prudence ?',
+          answer: 'Parce qu’il s’agit d’un indicateur indirect dont la relation avec le paramètre étudié peut être influencée par plusieurs facteurs biologiques, chimiques, sédimentaires et par la conservation.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie le terme « paléoenvironnement » ?',
+            answer: 'L’environnement d’un lieu à une époque passée, reconstitué à partir d’indices géologiques, biologiques et géochimiques.'
+          },
+          {
+            question: 'Donne deux facteurs autres que la température qui peuvent influencer les assemblages de microfossiles marins.',
+            answer: 'Par exemple, la salinité et la disponibilité en nutriments ; la profondeur et l’oxygénation peuvent également jouer un rôle.'
+          },
+          {
+            question: 'Pourquoi comparer plusieurs types d’indices ?',
+            answer: 'Pour vérifier si des observations indépendantes convergent vers la même interprétation et réduire le risque d’attribuer un signal à une cause unique sans preuve suffisante.'
+          }
+        ],
+        sources: [
+          { title: 'Muséum de sciences naturelles de Barcelone — Micropalaeontology', url: 'https://museuciencies.cat/en/science/research/palaeobiodiversity-and-marine-palaeoenvironments/micropalaeontology/' },
+          { title: 'University College London — About UCL Micropalaeontology', url: 'https://www.ucl.ac.uk/mathematical-physical-sciences/earth-sciences/research-earth-sciences/research-groups-and-affiliated-institutes/micropalaeontology/about-ucl-micropalaeontology' },
+          { title: 'Université de Fribourg — Micropaleontology Research Group: Profile', url: 'https://www.unifr.ch/geo/micropaleontology/en/group/profile/' }
+        ]
+      }
+    }
+  ]
+}
+
 
 ];
 
