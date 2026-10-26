@@ -1352,5 +1352,627 @@ window.courseCatalog = [
   },
 
 
+{
+  id: 'structure-interne',
+  title: 'La structure interne de la Terre',
+  note: 'Six chapitres approfondis sur les enveloppes terrestres, la croûte et le Moho, le manteau, le noyau, les méthodes sismologiques et les sources d’information géophysiques. Les profondeurs et épaisseurs indiquées sont des valeurs moyennes ou approximatives : elles varient selon les régions et les modèles scientifiques. La structure profonde est reconstituée indirectement, car les forages n’atteignent pas le manteau ni le noyau.',
+  chapters: [
+    {
+      id: 'organisation-interne-terre',
+      title: 'Les grandes enveloppes internes de la Terre',
+      field: 'Géologie · Géophysique · Structure interne terrestre',
+      summary: 'Distinguer les enveloppes chimiques et mécaniques de la Terre, comprendre leurs propriétés et situer les principales limites internes.',
+      lesson: {
+        sections: [
+          'La Terre est un corps différencié : ses matériaux ne sont pas répartis uniformément. On distingue classiquement trois grandes enveloppes selon leur composition : la croûte, le manteau et le noyau. La croûte est une enveloppe rocheuse relativement mince ; le manteau est principalement constitué de silicates riches en magnésium et en fer ; le noyau est métallique et composé majoritairement de fer, avec d’autres éléments en proportions encore étudiées. Cette organisation est cohérente avec la densité moyenne de la planète, supérieure à celle des roches affleurant en surface. Elle s’explique en grande partie par la différenciation précoce : lorsque l’intérieur terrestre était beaucoup plus chaud, les matériaux denses ont migré vers le centre tandis que les silicates formaient les enveloppes externes. Cette interprétation est fondée sur plusieurs observations indépendantes et sur des expériences de laboratoire, non sur un échantillonnage direct du noyau.',
+          'La classification chimique ne doit pas être confondue avec la classification mécanique. Du point de vue du comportement physique, la lithosphère comprend la croûte et la partie la plus rigide du manteau supérieur. Elle est fragmentée en plaques tectoniques. Sous une grande partie de la lithosphère se trouve l’asthénosphère, une zone du manteau supérieur dont les roches restent majoritairement solides mais peuvent se déformer lentement à l’échelle des temps géologiques. Plus en profondeur, le manteau reste solide dans son ensemble, tout en pouvant s’écouler très lentement. Le noyau, lui, se divise en un noyau externe liquide et un noyau interne solide. Les limites entre ces zones correspondent à des changements de composition, de structure minéralogique ou de propriétés physiques ; elles ne sont donc pas toutes du même type.',
+          'Les dimensions données dans les schémas sont des ordres de grandeur. Le rayon terrestre est d’environ 6 371 km ; la limite entre le manteau et le noyau se situe vers 2 900 km de profondeur. Le noyau interne commence à environ 5 150 km de profondeur, selon le modèle de référence employé. La croûte océanique est généralement plus mince que la croûte continentale : elle mesure souvent autour de 5 à 10 km, tandis que la croûte continentale atteint couramment plusieurs dizaines de kilomètres et peut être beaucoup plus épaisse sous les grandes chaînes de montagnes. Il faut également éviter de représenter l’asthénosphère comme un océan global de magma : il s’agit principalement de roche solide, localement partiellement fondue dans certaines conditions. Ces distinctions sont essentielles pour relier la structure interne aux séismes, au volcanisme et aux mouvements des plaques.'
+        ],
+        example: {
+          statement: 'Un schéma simplifié indique que le manteau s’étend de la base de la croûte jusqu’à environ 2 900 km de profondeur. Quelle enveloppe se trouve immédiatement sous le manteau ?',
+          calculation: 'On lit les enveloppes de l’extérieur vers le centre : croûte, manteau, puis noyau. La profondeur donnée est une valeur approximative de la limite manteau-noyau.',
+          answer: 'Le noyau se trouve sous le manteau. La limite est située vers 2 900 km de profondeur, avec de petites différences selon les modèles et les définitions utilisées.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer la classification chimique de la classification mécanique de la Terre ?',
+          answer: 'La classification chimique distingue les enveloppes par leur composition, tandis que la classification mécanique les distingue par leur rigidité et leur comportement sous contrainte. Ces deux classifications ne découpent donc pas la Terre de la même manière.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les trois grandes enveloppes selon la composition ?',
+            answer: 'La croûte, le manteau et le noyau.'
+          },
+          {
+            question: 'La majeure partie du manteau est-elle liquide ?',
+            answer: 'Non. Le manteau est essentiellement solide, mais ses roches peuvent se déformer et s’écouler très lentement sur les temps géologiques.'
+          },
+          {
+            question: 'Quelle différence majeure existe entre le noyau externe et le noyau interne ?',
+            answer: 'Le noyau externe est liquide, alors que le noyau interne est solide, notamment en raison des conditions de pression et de température qui règnent au centre de la Terre.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — Inside the Earth, This Dynamic Earth',
+            url: 'https://pubs.usgs.gov/gip/dynamic/inside.html'
+          },
+          {
+            title: 'USGS — The Interior of the Earth',
+            url: 'https://pubs.usgs.gov/gip/interior/'
+          },
+          {
+            title: 'University of Hawaiʻi — Layers of Earth',
+            url: 'https://www.manoa.hawaii.edu/exploringourfluidearth/physical/ocean-floor/layers-earth'
+          }
+        ]
+      }
+    },
+    {
+      id: 'croute-terrestre-moho',
+      title: 'La croûte terrestre et la discontinuité de Mohorovičić',
+      field: 'Géologie · Pétrologie · Sismologie',
+      summary: 'Comparer les croûtes continentale et océanique et expliquer comment les données sismiques révèlent la limite entre la croûte et le manteau.',
+      lesson: {
+        sections: [
+          'La croûte est l’enveloppe solide la plus externe de la Terre. Elle existe sous les continents et sous les océans, mais son épaisseur, sa composition et son histoire diffèrent. La croûte océanique est généralement mince et composée principalement de roches mafiques, notamment des basaltes et des gabbros, relativement riches en fer et en magnésium. La croûte continentale est plus hétérogène ; elle contient des roches magmatiques, métamorphiques et sédimentaires, et sa composition moyenne est plus riche en silice que celle de la croûte océanique. Les continents peuvent conserver des roches très anciennes, tandis que la croûte océanique est continuellement créée aux dorsales et recyclée dans les zones de subduction. Ces tendances générales ne signifient pas que toutes les roches d’un continent ou d’un océan ont la même composition.',
+          'La discontinuité de Mohorovičić, souvent appelée Moho, marque la limite entre la croûte et le manteau. Elle a été mise en évidence par le sismologue Andrija Mohorovičić en 1909, en étudiant les temps d’arrivée des ondes d’un séisme. Une augmentation de la vitesse des ondes sismiques en profondeur indique un changement des propriétés des matériaux. Le Moho n’est pas une surface visible partout à l’affleurement : sa profondeur est déduite principalement des observations géophysiques et des études de la croûte. Il se situe généralement à quelques kilomètres sous le plancher océanique et à plusieurs dizaines de kilomètres sous les continents ; il peut être plus profond sous certaines chaînes de montagnes. Les chiffres précis varient avec la région et la méthode de mesure.',
+          'La croûte et le manteau supérieur immédiatement sous-jacent participent à la lithosphère, mais la base de la lithosphère n’est pas la même limite que le Moho. Le Moho est une limite principalement liée à un changement de composition et de propriétés sismiques ; la base de la lithosphère correspond plutôt à une transition de comportement mécanique et thermique vers un manteau plus déformable. Cette distinction est importante lorsqu’on interprète les cartes de profondeur, les modèles sismiques ou les coupes géologiques. Les forages profonds ont prélevé des matériaux de la croûte, mais aucun forage n’a traversé le Moho continental ou atteint le noyau. Les roches du manteau sont toutefois connues indirectement, notamment grâce à certains fragments remontés par des magmas et à des roches mantelliques exposées dans des contextes géologiques particuliers.'
+        ],
+        example: {
+          statement: 'Une étude indique que le Moho se trouve à 8 km de profondeur sous une zone océanique et à 35 km sous une zone continentale. Quelle conclusion peut-on tirer de ces valeurs ?',
+          calculation: 'Écart de profondeur = 35 km - 8 km = 27 km. Les deux valeurs illustrent une croûte généralement plus épaisse sous les continents que sous les océans.',
+          answer: 'Dans cet exemple, le Moho est 27 km plus profond sous la zone continentale. Ces nombres illustrent une différence courante, mais ne constituent pas des valeurs universelles pour toutes les régions.'
+        },
+        exercise: {
+          question: 'Comment les sismologues peuvent-ils repérer le Moho sans observer directement cette limite ?',
+          answer: 'Ils analysent notamment les changements de vitesse, de trajet et de temps d’arrivée des ondes sismiques, qui révèlent une modification des propriétés des matériaux en profondeur.'
+        },
+        exercises: [
+          {
+            question: 'Quelles roches composent principalement la croûte océanique ?',
+            answer: 'Principalement des basaltes et des gabbros, deux roches mafiques de composition globalement comparable, mais de texture différente.'
+          },
+          {
+            question: 'Qui a mis en évidence la discontinuité aujourd’hui appelée Moho et en quelle année ?',
+            answer: 'Andrija Mohorovičić, en 1909.'
+          },
+          {
+            question: 'Le Moho et la base de la lithosphère désignent-ils la même limite ?',
+            answer: 'Non. Le Moho sépare la croûte du manteau ; la base de la lithosphère marque une transition mécanique vers un manteau plus déformable.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — Volcano Watch: A renewed effort to drill to the Moho',
+            url: 'https://www.usgs.gov/observatories/hvo/news/volcano-watch-after-50-years-a-renewed-effort-drill-moho'
+          },
+          {
+            title: 'USGS — Inside the Earth, This Dynamic Earth',
+            url: 'https://pubs.usgs.gov/gip/dynamic/inside.html'
+          },
+          {
+            title: 'USGS — The Interior of the Earth',
+            url: 'https://pubs.usgs.gov/gip/interior/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'manteau-lithosphere-asthenosphere',
+      title: 'Le manteau terrestre, la lithosphère et l’asthénosphère',
+      field: 'Géodynamique · Minéralogie · Tectonique des plaques',
+      summary: 'Décrire la composition et le comportement du manteau, puis relier la déformation lente des roches aux déplacements des plaques tectoniques.',
+      lesson: {
+        sections: [
+          'Le manteau s’étend du Moho jusqu’à la limite manteau-noyau, située vers 2 900 km de profondeur. Il représente la plus grande partie du volume terrestre. Il est composé principalement de silicates contenant du magnésium et du fer ; dans le manteau supérieur, la péridotite est une roche représentative. Avec l’augmentation de la pression, les minéraux changent de structure cristalline et deviennent plus denses, notamment dans la zone de transition du manteau. Le manteau inférieur présente lui aussi des phases minérales adaptées à des pressions très élevées. Les scientifiques déduisent ces propriétés à partir des ondes sismiques, des matériaux remontés depuis le manteau et d’expériences de laboratoire reproduisant les hautes pressions et températures.',
+          'Le manteau est principalement solide : la température élevée ne suffit pas à le rendre entièrement liquide, car la pression augmente également avec la profondeur. Sur des durées courtes, une roche mantellique se comporte comme un solide ; sur des millions d’années, elle peut se déformer et s’écouler lentement. La lithosphère est l’enveloppe externe rigide formée de la croûte et d’une partie du manteau supérieur. Elle est divisée en plaques. L’asthénosphère est une région plus facilement déformable du manteau supérieur située sous la lithosphère dans de nombreuses régions. Elle n’est pas partout une couche uniforme ni un océan de magma : la fusion partielle y est localisée et les proportions de liquide restent généralement limitées en dehors de certains environnements magmatiques.',
+          'La chaleur interne de la Terre contribue aux mouvements lents du manteau, souvent décrits en termes de convection et de circulation mantellique. Les plaques sont entraînées par plusieurs mécanismes, dont la traction exercée par les portions froides de lithosphère qui plongent en subduction et les forces associées aux dorsales ; leur importance relative varie selon les plaques et les contextes. Dans les zones de divergence, la remontée du manteau et la diminution de pression peuvent provoquer une fusion partielle et produire du magma. Dans les zones de subduction, l’eau libérée par la plaque plongeante favorise la fusion du manteau sus-jacent. Il est donc incorrect d’affirmer que toutes les plaques flottent sur du magma liquide : elles se déplacent au-dessus de matériaux solides capables de se déformer lentement.'
+        ],
+        example: {
+          statement: 'Une plaque tectonique se déplace de 4 cm par an à vitesse constante. Quelle distance parcourt-elle en 1 000 000 d’années ?',
+          calculation: 'Distance = vitesse × durée = 4 cm/an × 1 000 000 ans = 4 000 000 cm = 40 km.',
+          answer: 'La distance calculée est de 40 km. Il s’agit d’une extrapolation simplifiée : les vitesses réelles changent selon les plaques, les périodes et les méthodes de mesure.'
+        },
+        exercise: {
+          question: 'Pourquoi le manteau peut-il contribuer au mouvement des plaques tout en restant majoritairement solide ?',
+          answer: 'Parce que les roches solides peuvent se déformer lentement sous l’effet de la température, de la pression et des contraintes lorsqu’elles sont soumises à ces conditions pendant de très longues durées.'
+        },
+        exercises: [
+          {
+            question: 'Quelle roche est représentative d’une grande partie du manteau supérieur ?',
+            answer: 'La péridotite.'
+          },
+          {
+            question: 'L’asthénosphère est-elle un océan continu de magma ?',
+            answer: 'Non. Elle est surtout constituée de roche solide déformable ; la fusion partielle n’existe que dans certaines zones et conditions.'
+          },
+          {
+            question: 'Cite un mécanisme qui contribue au déplacement des plaques.',
+            answer: 'La traction exercée par une plaque froide qui plonge en subduction est un mécanisme important ; les forces liées aux dorsales contribuent également au mouvement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — Are the tectonic plates floating on magma?',
+            url: 'https://www.usgs.gov/faqs/are-tectonic-plates-floating-magma'
+          },
+          {
+            title: 'USGS — Inside the Earth, This Dynamic Earth',
+            url: 'https://pubs.usgs.gov/gip/dynamic/inside.html'
+          },
+          {
+            title: 'USGS — The Interior of the Earth',
+            url: 'https://pubs.usgs.gov/gip/interior/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'noyau-externe-interne',
+      title: 'Le noyau terrestre : état physique, composition et origine',
+      field: 'Géophysique · Géochimie · Physique des matériaux à haute pression',
+      summary: 'Expliquer la distinction entre noyau externe liquide et noyau interne solide, et présenter les indices qui contraignent leur composition.',
+      lesson: {
+        sections: [
+          'Le noyau commence à environ 2 900 km sous la surface et occupe la région centrale de la Terre. Il est constitué majoritairement de fer, avec du nickel et des éléments plus légers dont les proportions exactes restent un sujet de recherche. La composition est déduite de plusieurs contraintes : la densité moyenne de la Terre, son moment d’inertie, les données sismiques, les propriétés des météorites et les expériences sur les alliages soumis à de fortes pressions et températures. Il n’existe pas d’échantillon direct du noyau terrestre ; les descriptions de sa composition sont donc des modèles fortement contraints par des observations, mais elles ne correspondent pas à une analyse chimique directe d’un prélèvement du noyau.',
+          'Le noyau externe est liquide. Une preuve majeure est l’absence de propagation directe des ondes de cisaillement S à travers cette région, car un liquide ne transmet pas les contraintes de cisaillement comme un solide. Les ondes de compression P, elles, traversent le noyau externe mais changent de vitesse et de trajectoire. Le noyau interne est considéré comme solide : l’ensemble des observations sismologiques, y compris les ondes converties et les modes propres de la Terre, indique que cette région centrale possède une rigidité compatible avec un solide. La pression extrêmement élevée permet au fer de rester solide au centre malgré une température très élevée. Les limites exactes et les propriétés fines du noyau font l’objet de recherches continues.',
+          'Le noyau joue un rôle essentiel dans la dynamique de la planète. La circulation du métal liquide conducteur dans le noyau externe entretient le champ magnétique terrestre par le mécanisme de géodynamo. Le refroidissement progressif de la Terre et la solidification graduelle du noyau interne contribuent à fournir de l’énergie et de la flottabilité au fluide externe ; les détails des contributions thermiques et chimiques sont complexes. Le noyau n’est pas une masse de fer solide d’un seul bloc : sa division en deux régions d’états physiques différents est indispensable pour comprendre les observations sismiques et le champ magnétique. Il faut également distinguer la température, très élevée dans les deux régions, de l’état physique, qui dépend à la fois de la température, de la pression et de la composition.'
+        ],
+        example: {
+          statement: 'Une station sismique enregistre des ondes P qui traversent la région centrale de la Terre, mais les ondes S directes ne traversent pas le noyau externe. Quelle propriété physique cela indique-t-il ?',
+          calculation: 'Les ondes P sont des ondes de compression et peuvent se propager dans les solides et les liquides. Les ondes S sont des ondes de cisaillement et ne se propagent pas dans un liquide idéal.',
+          answer: 'Ces observations indiquent que le noyau externe est liquide. La conclusion repose sur le comportement des ondes et sur plusieurs données sismologiques complémentaires.'
+        },
+        exercise: {
+          question: 'Comment une température très élevée peut-elle coexister avec un noyau interne solide ?',
+          answer: 'La pression augmente fortement vers le centre et modifie les conditions de fusion du matériau. Dans les conditions du noyau interne, le fer allié peut donc rester solide malgré la température élevée.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les deux grands domaines physiques du noyau ?',
+            answer: 'Le noyau externe liquide et le noyau interne solide.'
+          },
+          {
+            question: 'Quel élément constitue la majeure partie du noyau ?',
+            answer: 'Le fer, accompagné notamment de nickel et d’éléments plus légers.'
+          },
+          {
+            question: 'Pourquoi ne peut-on pas présenter la composition du noyau comme une mesure directe sur échantillon ?',
+            answer: 'Parce qu’aucun échantillon direct du noyau n’a été prélevé. Sa composition est inférée à partir de données géophysiques, géochimiques et d’expériences à haute pression.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — The Interior of the Earth',
+            url: 'https://pubs.usgs.gov/gip/interior/'
+          },
+          {
+            title: 'USGS — Cool Earthquake Facts',
+            url: 'https://www.usgs.gov/programs/earthquake-hazards/cool-earthquake-facts'
+          },
+          {
+            title: 'IRIS — Exploring the Earth Using Seismology',
+            url: 'https://www.iris.edu/hq/inclass/fact-sheet/exploring_earth_using_seismology'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ondes-sismiques-tomographie',
+      title: 'Les ondes sismiques et l’exploration indirecte de l’intérieur terrestre',
+      field: 'Sismologie · Géophysique · Imagerie du sous-sol',
+      summary: 'Comprendre les ondes P et S, les discontinuités sismiques et la tomographie qui permet de reconstruire des modèles de l’intérieur de la Terre.',
+      lesson: {
+        sections: [
+          'Les séismes produisent des ondes qui se propagent dans la Terre et le long de sa surface. Les ondes P, ou ondes primaires, sont des ondes de compression : le mouvement des particules est parallèle à la direction de propagation. Elles peuvent traverser les solides et les liquides et arrivent généralement avant les ondes S. Les ondes S, ou ondes secondaires, sont des ondes de cisaillement : le mouvement des particules est perpendiculaire à la direction de propagation. Elles nécessitent une rigidité au cisaillement et ne traversent donc pas le noyau externe liquide. Les vitesses des ondes dépendent des propriétés élastiques, de la densité, de la température, de la composition et de l’état physique des matériaux. Les changements de vitesse, les réflexions et les réfractions fournissent des indices sur les limites entre les enveloppes terrestres.',
+          'Les sismologues enregistrent les mouvements du sol à l’aide de sismomètres et comparent les temps d’arrivée observés aux temps calculés dans des modèles. L’absence de certaines ondes directes dans certaines zones, ainsi que les changements de trajectoire des ondes P, ont permis de déduire l’existence du noyau externe liquide. Des changements de vitesse indiquent également des limites telles que le Moho et la limite manteau-noyau. Toutefois, un seul trajet d’onde ne permet pas de produire une image complète et unique de l’intérieur. Les interprétations s’appuient sur des réseaux de stations, des séismes de différentes positions et des modèles physiques. Les données sont affectées par la couverture des stations, le bruit, les incertitudes de localisation et les simplifications du modèle.',
+          'La tomographie sismique combine de nombreux trajets d’ondes pour construire un modèle tridimensionnel des variations de vitesse à l’intérieur de la Terre. Le principe rappelle celui d’une tomographie médicale : plusieurs mesures prises selon des directions différentes contraignent une image interne. Les zones où les ondes sont plus rapides ou plus lentes peuvent correspondre à des différences de température, de composition, de phase minérale ou d’état physique ; leur interprétation doit donc tenir compte du contexte géologique. La tomographie peut mettre en évidence des plaques lithosphériques en subduction, des hétérogénéités du manteau et des structures de la croûte. Elle ne produit pas une photographie directe et parfaite : les résultats dépendent des données disponibles, de la résolution et des hypothèses mathématiques utilisées.'
+        ],
+        example: {
+          statement: 'Une onde P parcourt une distance de 600 km dans un modèle où sa vitesse moyenne est de 6 km/s. Quel temps de parcours simplifié obtient-on ?',
+          calculation: 'Temps = distance / vitesse = 600 km / 6 km/s = 100 s.',
+          answer: 'Le temps de parcours simplifié est de 100 secondes. Dans la Terre réelle, la vitesse varie le long du trajet ; un calcul précis doit intégrer ces variations.'
+        },
+        exercise: {
+          question: 'Pourquoi les ondes S sont-elles particulièrement utiles pour identifier un domaine liquide à l’intérieur de la Terre ?',
+          answer: 'Parce qu’elles nécessitent une rigidité au cisaillement et ne se propagent pas à travers un liquide. Leur comportement, associé à celui des ondes P et à d’autres observations, permet de contraindre l’état physique des enveloppes profondes.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la différence de mouvement entre une onde P et une onde S ?',
+            answer: 'Pour une onde P, le mouvement des particules est parallèle à la propagation ; pour une onde S, il est perpendiculaire.'
+          },
+          {
+            question: 'Qu’est-ce que la tomographie sismique ?',
+            answer: 'Une méthode qui combine des mesures d’ondes sismiques empruntant de nombreux trajets afin de reconstruire un modèle des variations de propriétés à l’intérieur de la Terre.'
+          },
+          {
+            question: 'Une zone à faible vitesse sismique est-elle nécessairement composée de magma liquide ?',
+            answer: 'Non. Une faible vitesse peut être liée à plusieurs facteurs, notamment la température, la composition, les phases minérales ou une fusion partielle locale. L’interprétation exige d’autres contraintes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'EarthScope Consortium — Seismic Tomography',
+            url: 'https://www.earthscope.org/what-is/seismology/seismic-tomography/'
+          },
+          {
+            title: 'IRIS — Exploring the Earth Using Seismology',
+            url: 'https://www.iris.edu/hq/inclass/fact-sheet/exploring_earth_using_seismology'
+          },
+          {
+            title: 'USGS — The Science of Earthquakes',
+            url: 'https://www.usgs.gov/programs/earthquake-hazards/science-earthquakes'
+          }
+        ]
+      }
+    },
+    {
+      id: 'chaleur-gravite-champ-magnetique',
+      title: 'Chaleur interne, gravité et champ magnétique : les autres indices géophysiques',
+      field: 'Géophysique · Géothermie · Géomagnétisme',
+      summary: 'Montrer comment les mesures de chaleur, de gravité et de magnétisme complètent la sismologie pour contraindre la structure et l’évolution de la Terre.',
+      lesson: {
+        sections: [
+          'La chaleur interne de la Terre provient de plusieurs sources et processus. Une partie est une chaleur résiduelle de la formation de la planète et de sa différenciation ; une autre est produite par la désintégration radioactive d’isotopes présents dans les roches. Le refroidissement et la cristallisation progressive du noyau interne participent aussi au bilan énergétique profond. La chaleur est transférée par conduction dans les matériaux, et par convection dans les régions capables de circuler lentement, notamment le manteau et le noyau externe liquide. Le flux thermique mesuré à la surface varie selon les régions : il est influencé par l’âge de la lithosphère, le volcanisme, la circulation des eaux souterraines et la structure géologique. Il ne permet donc pas, à lui seul, de déduire toute la structure interne.',
+          'La gravité et le moment d’inertie apportent des contraintes sur la répartition de la masse à l’intérieur de la planète. La densité moyenne de la Terre est supérieure à celle de nombreuses roches de surface, ce qui indique que les matériaux internes doivent être globalement plus denses. Les mesures gravimétriques permettent d’étudier les variations de masse et de densité dans la croûte et le manteau, mais plusieurs répartitions de matière peuvent parfois expliquer des anomalies semblables. Il faut donc croiser la gravité avec la sismologie, la géologie de terrain et les modèles de composition. De façon générale, les méthodes géophysiques sont complémentaires : chacune mesure une propriété différente et comporte ses propres limites d’interprétation.',
+          'Le champ magnétique terrestre est principalement entretenu par la géodynamo dans le noyau externe, où circule un métal liquide électriquement conducteur. Les mouvements du fluide induisent des courants électriques qui génèrent à leur tour un champ magnétique auto-entretenu, à condition que les mouvements et les sources d’énergie restent suffisants. Le champ varie avec le temps et sa polarité s’est inversée à plusieurs reprises au cours de l’histoire géologique. Les roches volcaniques et certains sédiments peuvent enregistrer la direction du champ au moment de leur refroidissement ou de leur dépôt, ce qui permet d’étudier les inversions anciennes. Une inversion n’a pas de périodicité régulière et ne permet pas, à elle seule, de prévoir une date future. Le magnétisme complète ainsi les autres indices sur le noyau et sur l’histoire des roches, sans constituer une mesure directe de la composition profonde.'
+        ],
+        example: {
+          statement: 'Une mesure de laboratoire indique un flux thermique local de 80 mW/m². Comment interpréter cette donnée dans une étude de la structure interne ?',
+          calculation: 'Conversion d’unité : 80 mW/m² = 0,080 W/m². Cette valeur décrit un flux thermique par unité de surface pour le site étudié ; elle ne représente pas la température du manteau ni celle du noyau.',
+          answer: 'La mesure quantifie le flux de chaleur traversant la surface locale. Pour interpréter son origine, il faut tenir compte du contexte géologique et la comparer à d’autres données, car une valeur isolée ne détermine pas à elle seule la structure profonde.'
+        },
+        exercise: {
+          question: 'Pourquoi les géophysiciens combinent-ils les mesures sismiques, gravimétriques, thermiques et magnétiques ?',
+          answer: 'Parce que chaque méthode contraint des propriétés différentes : les ondes sismiques renseignent sur les propriétés élastiques et l’état des matériaux, la gravité sur la distribution de masse, le flux thermique sur le transfert de chaleur et le champ magnétique sur les mouvements du métal conducteur du noyau externe.'
+        },
+        exercises: [
+          {
+            question: 'Cite deux contributions majeures à la chaleur interne terrestre.',
+            answer: 'La chaleur résiduelle de la formation et de la différenciation de la Terre, et la chaleur produite par la désintégration radioactive d’isotopes. D’autres processus, dont l’évolution du noyau interne, participent également au bilan.'
+          },
+          {
+            question: 'Quel processus est principalement responsable du champ magnétique terrestre actuel ?',
+            answer: 'La géodynamo, entretenue par les mouvements du métal liquide électriquement conducteur du noyau externe.'
+          },
+          {
+            question: 'Les inversions du champ magnétique se produisent-elles à intervalles réguliers ?',
+            answer: 'Non. Elles sont irrégulières et ne suivent pas une périodicité fixe.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — How does the Earth’s core generate a magnetic field?',
+            url: 'https://www.usgs.gov/faqs/how-does-earths-core-generate-a-magnetic-field'
+          },
+          {
+            title: 'USGS — Introduction to Geomagnetism',
+            url: 'https://www.usgs.gov/programs/geomagnetism/introduction-geomagnetism'
+          },
+          {
+            title: 'USGS — Is it true that Earth’s magnetic field occasionally reverses its polarity?',
+            url: 'https://www.usgs.gov/faqs/it-true-earths-magnetic-field-occasionally-reverses-its-polarity'
+          },
+          {
+            title: 'USGS — The Interior of the Earth',
+            url: 'https://pubs.usgs.gov/gip/interior/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  id: 'formation-cristaux',
+  title: 'La formation des cristaux et des minéraux',
+  note: 'Six chapitres sur la définition des minéraux, la structure cristalline, la nucléation et la croissance, la cristallisation des magmas, la précipitation hydrothermale et sédimentaire, ainsi que les méthodes d’identification. Les conditions de formation dépendent de la composition chimique, de la température, de la pression, des fluides et du temps. Les exemples sont représentatifs et ne constituent pas des règles universelles.',
+  chapters: [
+    {
+      id: 'mineraux-et-cristaux',
+      title: 'Minéraux, cristaux et organisation de la matière',
+      field: 'Minéralogie · Cristallographie · Géologie générale',
+      summary: 'Distinguer un minéral, un cristal et une roche, puis comprendre comment l’organisation atomique détermine les propriétés des matériaux naturels.',
+      lesson: {
+        sections: [
+          'Un minéral est généralement défini comme un solide naturel, le plus souvent inorganique, caractérisé par une composition chimique déterminée ou variable dans certaines limites et par une organisation atomique ordonnée. Cette définition possède des cas limites, notamment pour les matériaux amorphes, les substances d’origine biologique et certains composés naturels. Le quartz, la calcite, l’halite et le feldspath sont des exemples de minéraux. Une roche est un matériau géologique constitué d’un assemblage de minéraux, de fragments de roches ou, dans certains cas, de matière minérale peu ou pas cristallisée. Ainsi, le granite est habituellement composé de quartz, de feldspaths et de micas, tandis qu’un marbre est constitué principalement de calcite ou de dolomite selon sa composition.',
+          'Un cristal possède un arrangement atomique périodique à longue distance. Cet ordre interne peut exister même si la forme extérieure n’est pas parfaitement géométrique. Lorsqu’un cristal dispose d’espace pour croître, ses faces peuvent refléter les directions privilégiées de son réseau cristallin et produire une forme caractéristique. Cependant, la forme visible dépend aussi de la vitesse de croissance, de l’espace disponible, des impuretés et des interactions avec les cristaux voisins. Un minéral peut donc former de beaux cristaux bien individualisés ou, au contraire, une masse compacte composée de nombreux grains microscopiques. Un solide amorphe, comme le verre volcanique, ne présente pas le même ordre cristallin périodique à longue distance.',
+          'La composition chimique ne suffit pas toujours à prédire les propriétés d’un minéral : l’arrangement des atomes compte également. Des substances de composition identique peuvent adopter des structures cristallines différentes, phénomène appelé polymorphisme. Le diamant et le graphite sont tous deux constitués de carbone, mais leurs structures atomiques diffèrent fortement, ce qui explique notamment leurs différences de dureté. À l’inverse, un même type de structure peut accueillir des substitutions chimiques, comme dans plusieurs séries de minéraux. Pour identifier correctement un spécimen, il faut donc combiner plusieurs observations plutôt que se fier uniquement à la couleur ou à la forme extérieure.'
+        ],
+        example: {
+          statement: 'Un échantillon contient des grains de quartz, de feldspath et de mica soudés les uns aux autres. S’agit-il nécessairement d’un seul cristal ?',
+          calculation: 'On compare l’échelle des objets : un cristal est un solide dont l’organisation atomique est ordonnée ; une roche peut réunir plusieurs cristaux de minéraux différents.',
+          answer: 'Non. Il s’agit vraisemblablement d’une roche composée de plusieurs minéraux, comme un granite si les proportions et la texture correspondent. La présence de plusieurs espèces minérales ne constitue pas un cristal unique.'
+        },
+        exercise: {
+          question: 'Quelle est la différence fondamentale entre un cristal et une roche ?',
+          answer: 'Un cristal se caractérise par une organisation atomique ordonnée ; une roche est un matériau géologique qui peut être constitué d’un assemblage de cristaux, de fragments et parfois de matière non cristallisée.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est une caractéristique structurale essentielle d’un cristal ?',
+            answer: 'Un arrangement atomique périodique à longue distance.'
+          },
+          {
+            question: 'Le diamant et le graphite ont-ils la même composition chimique ?',
+            answer: 'Oui, ils sont constitués de carbone, mais leur structure cristalline est différente.'
+          },
+          {
+            question: 'La couleur suffit-elle pour identifier sûrement un minéral ?',
+            answer: 'Non. La couleur peut varier en raison d’impuretés ou de défauts et plusieurs minéraux peuvent avoir des couleurs semblables.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — What is the difference between a rock and a mineral?',
+            url: 'https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral'
+          },
+          {
+            title: 'USGS — Minerals 101',
+            url: 'https://www.usgs.gov/science/science-explorer/minerals/minerals-101'
+          },
+          {
+            title: 'USGS — Minerals and Rocks',
+            url: 'https://pubs.usgs.gov/of/1994/0636/report.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'structure-cristalline',
+      title: 'Réseau cristallin, maille élémentaire et propriétés des minéraux',
+      field: 'Cristallographie · Minéralogie physique · Chimie du solide',
+      summary: 'Expliquer le réseau cristallin, les systèmes cristallins, les défauts structuraux et leurs effets sur les propriétés observables.',
+      lesson: {
+        sections: [
+          'Dans un cristal, les atomes, ions ou groupes d’atomes occupent des positions organisées selon une périodicité. La maille élémentaire est un volume géométrique qui, répété dans les trois directions de l’espace, décrit le réseau cristallin. Les longueurs des arêtes et les angles entre elles caractérisent la géométrie de cette maille. Les cristaux sont classés dans sept systèmes cristallins selon les symétries et les paramètres de leur maille ; les réseaux de Bravais décrivent les arrangements périodiques distincts compatibles avec ces symétries. Cette classification est une description géométrique de la structure interne, et non une classification fondée uniquement sur l’apparence extérieure du spécimen.',
+          'La structure cristalline contribue à expliquer des propriétés comme le clivage, la dureté, la densité et l’anisotropie. Le clivage correspond à la tendance d’un minéral à se rompre selon certains plans de sa structure, lorsque les liaisons y sont relativement moins résistantes. La dureté mesure la résistance à la rayure et ne doit pas être confondue avec la ténacité, qui décrit la réponse à la rupture ou à la déformation. Les propriétés peuvent varier selon la direction dans certains cristaux : on parle alors d’anisotropie. Les observations macroscopiques prennent leur sens lorsqu’elles sont reliées à la structure atomique et aux liaisons chimiques, mais la relation n’est pas toujours simple, car les défauts et les conditions de formation interviennent également.',
+          'Les cristaux naturels ne sont pas parfaitement idéaux. Ils peuvent contenir des lacunes, des atomes substitués, des dislocations, des inclusions fluides ou solides et des zones de composition différente. Ces défauts peuvent modifier la couleur, la conductivité, la résistance mécanique et le comportement optique. Des éléments en traces peuvent colorer un minéral sans changer son espèce minérale, tandis qu’une modification importante de composition ou de structure peut conduire à une autre phase. La diffraction des rayons X permet d’étudier l’organisation cristalline en mesurant les directions et intensités des rayons diffractés par les plans atomiques. Elle complète les observations optiques et les analyses chimiques, en particulier lorsque des minéraux sont trop fins pour être identifiés à l’œil nu.'
+        ],
+        example: {
+          statement: 'Deux spécimens sont constitués de carbone : l’un est du diamant et l’autre du graphite. Pourquoi leurs propriétés mécaniques sont-elles très différentes ?',
+          calculation: 'La composition est identique, mais les atomes ne sont pas reliés de la même manière dans les deux structures. Le diamant possède un réseau tridimensionnel fortement lié ; le graphite comporte des feuillets fortement liés dans leur plan et plus faiblement liés entre eux.',
+          answer: 'Leurs propriétés diffèrent parce que leur structure et leurs liaisons sont différentes. Le diamant est très dur, alors que le graphite se sépare facilement en feuillets. Cette comparaison illustre le rôle de la structure cristalline.'
+        },
+        exercise: {
+          question: 'Comment la structure cristalline peut-elle influencer le clivage d’un minéral ?',
+          answer: 'Elle crée des directions où la séparation est plus facile en raison de la disposition des atomes et de la résistance relative des liaisons. Le clivage se manifeste donc selon des plans privilégiés.'
+        },
+        exercises: [
+          {
+            question: 'À quoi sert une maille élémentaire ?',
+            answer: 'Elle décrit le motif géométrique périodique qui, répété dans l’espace, permet de représenter le réseau cristallin.'
+          },
+          {
+            question: 'Quelle propriété mesure l’échelle de Mohs ?',
+            answer: 'La dureté relative, c’est-à-dire la résistance à la rayure.'
+          },
+          {
+            question: 'Quelle méthode permet d’étudier la structure cristalline à partir de la diffraction ?',
+            answer: 'La diffraction des rayons X.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — Information Handout: X-Ray Powder Diffraction',
+            url: 'https://pubs.usgs.gov/info/diffraction/html/index.html'
+          },
+          {
+            title: 'OpenStax — Chemistry: Atoms First 2e, Chapter 15 Introduction',
+            url: 'https://openstax.org/books/chemistry-atoms-first-2e/pages/15-introduction'
+          },
+          {
+            title: 'USGS — Minerals and Rocks',
+            url: 'https://pubs.usgs.gov/of/1994/0636/report.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'nucleation-croissance-cristalline',
+      title: 'Nucléation et croissance cristalline',
+      field: 'Cristallogenèse · Thermodynamique · Géochimie',
+      summary: 'Comprendre comment apparaissent les premiers germes cristallins, comment ils grandissent et pourquoi la vitesse de croissance contrôle la taille et la forme des cristaux.',
+      lesson: {
+        sections: [
+          'La cristallisation commence souvent par la nucléation, c’est-à-dire l’apparition de petits amas suffisamment stables pour servir de germes à un cristal. Dans une solution, la nucléation peut se produire spontanément dans le fluide ou être facilitée par une surface préexistante, comme une paroi, une particule ou un cristal déjà présent. On distingue ainsi la nucléation homogène, qui se produit dans le volume de la phase, et la nucléation hétérogène, favorisée par une interface. La formation d’un germe dépend de l’énergie nécessaire pour créer une nouvelle interface et du gain énergétique associé à la formation de la phase cristalline. Une solution sursaturée peut donc rester temporairement sans cristalliser avant qu’un germe stable apparaisse.',
+          'Après la nucléation, un cristal grandit lorsque les atomes, ions ou molécules s’attachent à sa surface dans un arrangement compatible avec le réseau. La croissance dépend notamment de la sursaturation, de la température, de la composition du fluide, de la diffusion des espèces chimiques et de la présence d’impuretés. Une forte sursaturation peut favoriser la formation de nombreux germes, ce qui répartit la matière disponible entre beaucoup de cristaux et peut produire une population de petits cristaux. Lorsque la nucléation est moins abondante et que l’alimentation chimique persiste, certains cristaux peuvent devenir plus grands. Cette tendance n’est pas une loi absolue : les conditions changent au cours du processus, et la croissance peut être limitée par le transport des éléments ou par des réactions de surface.',
+          'La forme extérieure d’un cristal, appelée habitus cristallin, ne dépend pas seulement de sa structure idéale. Les faces dont la croissance est relativement lente peuvent rester visibles, tandis que d’autres disparaissent plus rapidement. Les impuretés, les variations de température, les changements de composition et l’espace disponible modifient l’habitus. Des cristaux peuvent être prismatiques, tabulaires, aciculaires ou présenter d’autres formes caractéristiques, mais un même minéral peut avoir plusieurs habitus. Les cristaux peuvent également se gêner mutuellement et former des agrégats imbriqués plutôt que des formes individuelles complètes. La taille et la forme observées conservent parfois des indices sur les conditions de croissance, mais leur interprétation exige de tenir compte de l’ensemble de l’histoire géologique du spécimen.'
+        ],
+        example: {
+          statement: 'Deux expériences utilisent la même solution minérale. Dans la première, de nombreux germes apparaissent ; dans la seconde, peu de germes se forment et la quantité totale de matière disponible est comparable. Quelle différence de taille peut-on raisonnablement attendre ?',
+          calculation: 'Si la quantité de matière disponible est répartie entre un grand nombre de cristaux, chaque cristal reçoit en moyenne une part plus faible. Avec moins de germes, davantage de matière peut alimenter chacun d’eux, si les autres conditions restent comparables.',
+          answer: 'La première expérience tend à produire plus de cristaux de petite taille, tandis que la seconde peut produire moins de cristaux plus grands. C’est une tendance conditionnelle, pas une règle garantie indépendamment de la diffusion, du temps et des conditions chimiques.'
+        },
+        exercise: {
+          question: 'Pourquoi une solution sursaturée ne cristallise-t-elle pas nécessairement instantanément ?',
+          answer: 'Parce que la formation d’un germe stable exige de franchir une barrière énergétique liée notamment à la création d’une interface. La nucléation peut donc être retardée, même si la cristallisation est thermodynamiquement favorisée.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que la nucléation ?',
+            answer: 'L’apparition de germes suffisamment stables pour initier la croissance d’une nouvelle phase cristalline.'
+          },
+          {
+            question: 'Quelle différence existe entre nucléation homogène et hétérogène ?',
+            answer: 'La nucléation homogène se produit dans le volume de la phase ; la nucléation hétérogène est favorisée par une surface ou une interface préexistante.'
+          },
+          {
+            question: 'Cite deux facteurs qui influencent la croissance d’un cristal.',
+            answer: 'Par exemple, la sursaturation et la température ; la composition du fluide, la diffusion et les impuretés interviennent également.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — Physical-Chemical Mechanisms That Affect Regulation of Crystallization',
+            url: 'https://wwwbrr.cr.usgs.gov/projects/GWC_Crystal/Scanned_files/Physical-chemical_62.pdf'
+          },
+          {
+            title: 'Mindat — Crystal growth',
+            url: 'https://www.mindat.org/glossary/crystal_growth'
+          },
+          {
+            title: 'Geology.com — Crystal Habits and Forms of Minerals and Gems',
+            url: 'https://geology.com/minerals/crystal-habit/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cristallisation-magmatique',
+      title: 'Cristallisation des magmas et formation des roches ignées',
+      field: 'Pétrologie magmatique · Minéralogie · Géochimie',
+      summary: 'Relier le refroidissement des magmas à l’apparition des minéraux, à la texture des roches et à la cristallisation fractionnée.',
+      lesson: {
+        sections: [
+          'Un magma est un matériau silicaté naturel à haute température qui contient généralement un liquide, des cristaux et parfois une phase gazeuse. Lorsqu’il refroidit, les minéraux ne cristallisent pas tous au même moment : leur apparition dépend de la composition du magma, de la pression, de la température et de la présence de composants volatils. Les premiers cristaux modifient progressivement la composition du liquide restant en prélevant certains éléments chimiques. Les séries de réactions magmatiques décrivent des tendances générales, mais l’ordre exact de cristallisation dépend du système étudié. Il serait donc incorrect de supposer que tous les magmas suivent une séquence identique ou que chaque minéral apparaît à une température unique, indépendante de la composition et de la pression.',
+          'La vitesse de refroidissement influence fortement la texture des roches ignées. Un refroidissement relativement lent en profondeur laisse généralement davantage de temps aux cristaux pour croître et peut produire une texture grenue, comme dans de nombreux granites et gabbros. Un refroidissement rapide en surface ou près de la surface tend à produire des cristaux plus petits, comme dans de nombreux basaltes ; si le refroidissement est extrêmement rapide, une partie du matériau peut rester vitreuse et ne pas former de cristaux bien ordonnés. Certaines roches possèdent une texture porphyrique, avec de gros cristaux formés avant une matrice plus fine, ce qui indique généralement plusieurs étapes de refroidissement ou des changements de conditions. La texture fournit des indices sur l’histoire thermique, mais elle doit être interprétée avec la composition et les relations de terrain.',
+          'La cristallisation fractionnée se produit lorsque des cristaux se séparent du liquide magmatique ou cessent d’échanger efficacement avec lui. Le liquide résiduel change alors de composition, ce qui peut conduire à la formation d’assemblages minéraux différents au cours de l’évolution du magma. Le mélange de magmas, l’assimilation de roches encaissantes et la séparation de fluides peuvent également modifier la composition. Dans une chambre magmatique, les cristaux peuvent s’accumuler et former des roches à texture particulière. Les exemples de granite et de basalte illustrent des tendances de composition et de refroidissement, mais ils ne suffisent pas à décrire toute la diversité des roches magmatiques. Les géologues combinent l’observation microscopique, les analyses chimiques et le contexte géologique pour reconstruire ces processus.'
+        ],
+        example: {
+          statement: 'Deux magmas de composition comparable se refroidissent : l’un lentement en profondeur, l’autre rapidement près de la surface. Quelle différence texturale est généralement attendue ?',
+          calculation: 'Le temps disponible pour la croissance cristalline est plus long lors d’un refroidissement lent et plus court lors d’un refroidissement rapide.',
+          answer: 'Le magma refroidi lentement tend à former des cristaux plus gros et une texture grenue ; celui refroidi rapidement tend à former des cristaux plus petits, voire du verre si la cristallisation est empêchée. La composition et l’histoire exacte peuvent toutefois modifier le résultat.'
+        },
+        exercise: {
+          question: 'Pourquoi la taille des cristaux peut-elle renseigner sur l’histoire de refroidissement d’une roche magmatique ?',
+          answer: 'Parce que la croissance des cristaux nécessite du temps. Un refroidissement lent favorise généralement des cristaux plus grands, tandis qu’un refroidissement rapide limite leur croissance.'
+        },
+        exercises: [
+          {
+            question: 'Quel type de roche magmatique présente souvent une texture grenue ?',
+            answer: 'Une roche plutonique refroidie lentement en profondeur, comme de nombreux granites ou gabbros.'
+          },
+          {
+            question: 'Que signifie cristallisation fractionnée ?',
+            answer: 'La séparation de cristaux du liquide magmatique, qui modifie la composition du liquide restant.'
+          },
+          {
+            question: 'Un refroidissement rapide garantit-il toujours une roche entièrement vitreuse ?',
+            answer: 'Non. Il peut produire de très petits cristaux ou une texture mixte ; une vitrification importante dépend notamment de la composition et de la rapidité du refroidissement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — Minerals and Rocks',
+            url: 'https://pubs.usgs.gov/of/1994/0636/report.pdf'
+          },
+          {
+            title: 'USGS — This Dynamic Earth: The Story of Plate Tectonics',
+            url: 'https://pubs.usgs.gov/gip/dynamic/'
+          },
+          {
+            title: 'OpenStax — Chemistry: Atoms First 2e, Chapter 15 Introduction',
+            url: 'https://openstax.org/books/chemistry-atoms-first-2e/pages/15-introduction'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cristallisation-hydrothermale-sedimentaire',
+      title: 'Cristallisation hydrothermale, évaporitique et sédimentaire',
+      field: 'Géochimie aqueuse · Géologie des gisements · Sédimentologie',
+      summary: 'Étudier la précipitation des minéraux à partir des fluides, l’évaporation des eaux salées et la formation de cristaux dans les cavités et les sédiments.',
+      lesson: {
+        sections: [
+          'Les fluides hydrothermaux sont des eaux chaudes contenant des substances dissoutes qui circulent dans les fractures, les pores et les roches. Leurs conditions physiques et chimiques changent pendant leur déplacement : refroidissement, variation de pression, mélange avec une autre eau, ébullition dans certains contextes ou réaction avec les roches encaissantes. Ces changements peuvent réduire la solubilité d’un composé ou modifier les espèces chimiques présentes, ce qui entraîne la précipitation de minéraux. Le quartz, la calcite, la fluorite et certains sulfures peuvent se former dans des systèmes hydrothermaux, mais les assemblages dépendent fortement de la température, de la composition du fluide, du pH, du potentiel d’oxydoréduction et de la géologie locale. La présence d’un minéral ne permet donc pas, à elle seule, de reconstruire une condition unique de formation.',
+          'Les minéraux évaporitiques se forment lorsque l’évaporation concentre une eau contenant des ions dissous jusqu’à ce que certains minéraux précipitent. Dans des bassins où l’apport d’eau et l’évaporation sont équilibrés de manière particulière, des minéraux comme la halite et le gypse peuvent se déposer en couches. L’ordre de précipitation dépend de la composition initiale de l’eau, de la température, de la pression et des transformations ultérieures. Les séquences observées dans les roches évaporitiques peuvent être modifiées par la dissolution, la recristallisation ou l’arrivée de nouveaux fluides. Il ne faut donc pas considérer chaque succession minérale comme une séquence universelle, même si la concentration progressive des solutions constitue un mécanisme fondamental.',
+          'La précipitation minérale peut également se produire dans les eaux souterraines, les pores des sédiments, les grottes et les cavités de roches volcaniques. Les géodes peuvent présenter une enveloppe minéralisée et des cristaux qui se développent vers l’intérieur d’une cavité, souvent à partir de fluides circulants. La calcite peut précipiter dans des grottes lorsque les conditions de l’eau et du dioxyde de carbone changent, formant notamment des stalactites et des stalagmites. Dans les sédiments, certains minéraux se forment après le dépôt, pendant la diagenèse, par réactions entre les grains et les eaux interstitielles. Ces processus peuvent cimenter les sédiments, remplacer des minéraux plus anciens ou produire de nouveaux cristaux. La distinction entre précipitation directe et transformation postérieure doit être fondée sur les textures, les relations entre minéraux et les données géochimiques.'
+        ],
+        example: {
+          statement: 'Une eau souterraine contient des ions calcium et fluorure. Si les conditions deviennent favorables à la précipitation de fluorite, quelle phase solide peut se former ?',
+          calculation: 'La fluorite a pour formule CaF2. Sa formation peut être représentée par : Ca2+ + 2 F- → CaF2(s). La réaction ne se produit que si les conditions de solution permettent la précipitation.',
+          answer: 'La fluorite (CaF2) peut précipiter. La présence de calcium et de fluorure ne garantit pas à elle seule la formation du minéral : la concentration, l’activité des ions et les conditions chimiques déterminent si la solution atteint la saturation nécessaire.'
+        },
+        exercise: {
+          question: 'Cite deux changements pouvant déclencher la précipitation de minéraux dans un fluide hydrothermal.',
+          answer: 'Par exemple, un refroidissement et un changement de pH ; le mélange de fluides, une variation de pression ou une réaction avec la roche encaissante peuvent également favoriser la précipitation.'
+        },
+        exercises: [
+          {
+            question: 'Comment les minéraux évaporitiques se forment-ils généralement ?',
+            answer: 'Par concentration d’une eau chargée en ions dissous, souvent sous l’effet de l’évaporation, jusqu’à la précipitation de phases minérales.'
+          },
+          {
+            question: 'Quelle formule chimique correspond à la fluorite ?',
+            answer: 'CaF2.'
+          },
+          {
+            question: 'Qu’est-ce que la diagenèse ?',
+            answer: 'L’ensemble des transformations physiques, chimiques et biologiques qui affectent les sédiments après leur dépôt, notamment la compaction et la cimentation.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry: Precipitation and Dissolution',
+            url: 'https://openstax.org/books/chemistry-atoms-first-2e/pages/15-1-precipitation-and-dissolution'
+          },
+          {
+            title: 'USGS — Information Handout: X-Ray Powder Diffraction',
+            url: 'https://pubs.usgs.gov/info/diffraction/html/index.html'
+          },
+          {
+            title: 'Geology.com — Crystal Habits and Forms of Minerals and Gems',
+            url: 'https://geology.com/minerals/crystal-habit/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'identification-mineraux-cristaux',
+      title: 'Identifier les minéraux et reconstituer leur histoire de croissance',
+      field: 'Minéralogie descriptive · Pétrographie · Méthodes analytiques',
+      summary: 'Utiliser les propriétés physiques, les observations microscopiques et les méthodes instrumentales pour identifier les minéraux sans s’appuyer sur un seul indice.',
+      lesson: {
+        sections: [
+          'L’identification d’un minéral repose sur un ensemble de propriétés : dureté, éclat, couleur, trait, clivage, fracture, densité, magnétisme et réaction à certains réactifs lorsqu’elle est pertinente et réalisée dans des conditions adaptées. La couleur est souvent peu diagnostique, car les impuretés et les défauts du réseau peuvent la modifier. La dureté de Mohs est une échelle comparative allant de 1 pour le talc à 10 pour le diamant ; elle ne constitue pas une mesure linéaire de la résistance mécanique. Les tests doivent être choisis selon l’échantillon et réalisés avec prudence afin de ne pas l’endommager inutilement. Un diagnostic fiable s’appuie sur plusieurs caractères concordants et sur le contexte géologique, et non sur une ressemblance visuelle isolée.',
+          'L’observation au microscope polarisant permet d’étudier les minéraux dans les lames minces de roche. Les propriétés optiques, notamment le comportement en lumière polarisée, l’indice de réfraction relatif, le pléochroïsme et les couleurs d’interférence, aident à distinguer les espèces et à décrire les relations entre grains. La diffraction des rayons X identifie des structures cristallines en comparant les données mesurées à des références. Des méthodes chimiques, comme la fluorescence X ou la microsonde électronique, renseignent sur la composition élémentaire, tandis que certaines techniques spectroscopiques apportent des informations complémentaires. Aucune méthode ne répond à toutes les questions : le choix dépend de la taille des grains, de la nature de l’échantillon, de la précision recherchée et des moyens disponibles.',
+          'La texture et les relations entre cristaux peuvent révéler une partie de leur histoire. Des cristaux inclus dans d’autres minéraux sont généralement antérieurs à la partie de l’hôte qui les enferme, mais des réactions ultérieures peuvent compliquer cette lecture. Des zones concentriques de composition différente peuvent enregistrer des variations du fluide ou du magma pendant la croissance. Des inclusions fluides piégées dans certains cristaux peuvent conserver des informations sur les fluides anciens, à condition de vérifier leur origine et leur évolution après piégeage. Les formes cristallines, les bordures de réaction, les fractures et les assemblages minéraux sont autant d’indices à confronter. Une reconstruction robuste combine les observations de terrain, la pétrographie et les analyses instrumentales ; elle exprime aussi les incertitudes lorsque plusieurs interprétations restent possibles.'
+        ],
+        example: {
+          statement: 'Un minéral est violet et possède une forme prismatique. Peut-on conclure avec certitude qu’il s’agit d’améthyste ?',
+          calculation: 'On vérifie d’autres critères : dureté, éclat, clivage, fracture, contexte géologique et, si nécessaire, propriétés optiques ou structure cristalline. L’améthyste est une variété violette de quartz, mais la couleur et la forme seules ne suffisent pas à confirmer l’identification.',
+          answer: 'Non. Ces deux indices sont compatibles avec l’améthyste, mais ils ne suffisent pas à l’identifier avec certitude. Il faut confronter plusieurs propriétés diagnostiques et recourir à une analyse instrumentale si nécessaire.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il utiliser plusieurs propriétés pour identifier un minéral ?',
+          answer: 'Parce que plusieurs minéraux peuvent partager une couleur ou une forme semblable, et qu’un même minéral peut varier en apparence. La convergence de plusieurs propriétés augmente la fiabilité du diagnostic.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la valeur de dureté de Mohs du quartz ?',
+            answer: '7 sur l’échelle de Mohs.'
+          },
+          {
+            question: 'Quelle méthode est particulièrement utile pour déterminer une structure cristalline ?',
+            answer: 'La diffraction des rayons X.'
+          },
+          {
+            question: 'Que peuvent indiquer des zones de composition successives dans un cristal ?',
+            answer: 'Elles peuvent enregistrer des variations des conditions ou de la composition pendant la croissance, sous réserve d’écarter les transformations postérieures.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — Natural Gemstones: Mineral Gemstones',
+            url: 'https://pubs.usgs.gov/gip/gemstones/mineral.html'
+          },
+          {
+            title: 'USGS — Information Handout: X-Ray Powder Diffraction',
+            url: 'https://pubs.usgs.gov/info/diffraction/html/index.html'
+          },
+          {
+            title: 'USGS — What is the difference between a rock and a mineral?',
+            url: 'https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
 ];
 
