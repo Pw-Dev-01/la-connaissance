@@ -51,8 +51,6 @@ a:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
-.course-entry .entry-symbol { background: red !important; }
-
 .brand {
   display: inline-flex;
   align-items: center;
@@ -370,7 +368,25 @@ h2 {
   background: #2e7d4f;
 }
 
+.history-entry .entry-symbol {
+  background: #8a6a3b;
+}
 
+.literature-entry .entry-symbol {
+  background: #7a3e4d;
+}
+
+.math-entry .entry-symbol {
+  background: #3f4f8a;
+}
+
+.paleontology-entry .entry-symbol {
+  background: #a07a52;
+}
+
+.philosophy-entry .entry-symbol {
+  background: #5e4b7a;
+}
 
 .entry-copy {
   display: grid;
