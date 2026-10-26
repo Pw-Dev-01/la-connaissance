@@ -51,6 +51,8 @@ a:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 
+.course-entry .entry-symbol { background: red !important; }
+
 .brand {
   display: inline-flex;
   align-items: center;
