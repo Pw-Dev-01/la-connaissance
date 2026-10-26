@@ -5,5 +5,5 @@
   "order": 12,
   "entry": "index.html",
   "dataFile": "biologie-data.js",
-  "class": "biologie"
+  "class": "biology-entry",
 }
