@@ -1617,7 +1617,438 @@ window.courseCatalog = [
       }
     }
   ]
-}
+},
 
+
+{
+  id: 'pensee-economique',
+  title: 'Histoire de la pensée économique',
+  note: 'Dix chapitres consacrés à l’évolution historique des idées économiques, des premières analyses de la richesse aux débats contemporains sur la monnaie, le développement et l’environnement. Les écoles sont présentées dans leur contexte, en distinguant les textes originaux, les interprétations ultérieures et les résultats des recherches empiriques.',
+  chapters: [
+    {
+      id: 'premieres-pensees-economiques-mercantilisme',
+      title: 'Des premières pensées économiques au mercantilisme',
+      field: 'Histoire économique · Antiquité à XVIIIe siècle',
+      summary: 'Étudier les origines de la réflexion économique, les conceptions anciennes de l’échange et de la monnaie, puis les politiques commerciales et financières associées au mercantilisme.',
+      lesson: {
+        sections: [
+          'Les réflexions économiques précèdent la constitution de l’économie comme discipline autonome. Dans l’Antiquité, Aristote examine notamment la monnaie, l’échange, la propriété et les rapports entre besoins et accumulation. Ces réflexions relèvent principalement de la philosophie morale et politique : elles interrogent la justice des échanges et l’organisation de la cité plutôt qu’elles ne proposent une théorie économique empirique au sens contemporain. Au Moyen Âge, des penseurs scolastiques étudient également le juste prix, le prêt à intérêt et les obligations morales du commerce.',
+          'À l’époque moderne, l’expansion des échanges maritimes, la construction des États et le développement des administrations favorisent les écrits consacrés au commerce extérieur, à la monnaie et aux finances publiques. Le terme « mercantilisme » désigne rétrospectivement une famille de doctrines et de politiques diverses, plutôt qu’une école parfaitement unifiée. Plusieurs gouvernements cherchent à développer les manufactures, à soutenir les exportations, à réglementer certaines importations et à renforcer leurs ressources fiscales et commerciales.',
+          'Thomas Mun en Angleterre et Jean-Baptiste Colbert dans la France de Louis XIV sont souvent associés à cette période. Mun analyse le commerce extérieur, tandis que Colbert est associé à des politiques de soutien aux manufactures et de réglementation économique. Il faut cependant distinguer les écrits des auteurs des décisions des gouvernements : toutes les mesures de l’époque ne découlent pas d’une doctrine commune. L’accumulation de métaux précieux compte dans plusieurs conceptions mercantilistes, mais la richesse nationale ne se réduit pas de manière identique chez tous les auteurs à la détention d’or et d’argent.',
+          'Au XVIIIe siècle, plusieurs auteurs contestent les politiques qui privilégient excessivement les restrictions commerciales. Ils accordent davantage d’attention à la production, à la consommation, à la circulation des revenus et aux mécanismes de création de richesse. Ces débats contribuent à l’émergence de la physiocratie et de l’économie politique classique. Le mercantilisme reste néanmoins un repère utile pour comprendre les liens historiques entre commerce, puissance publique et construction des États.'
+        ],
+        example: {
+          statement: 'Un gouvernement impose des droits de douane sur certains produits importés afin de soutenir les producteurs nationaux. À quelle logique historique cette mesure peut-elle être rapprochée ?',
+          calculation: 'Il faut comparer l’objectif de la mesure aux pratiques historiques : protection de certaines productions, réglementation des échanges et recherche de puissance commerciale. Une mesure isolée ne suffit toutefois pas à caractériser une doctrine entière.',
+          answer: 'Cette politique peut être rapprochée de certaines pratiques mercantilistes. Le mercantilisme n’étant pas homogène, il faut examiner le contexte et les objectifs précis avant de qualifier une politique.'
+        },
+        exercise: {
+          question: 'Pourquoi le mercantilisme ne doit-il pas être considéré comme une doctrine parfaitement homogène ?',
+          answer: 'Parce que cette catégorie regroupe des auteurs, des pays et des politiques différents, qui ne partagent pas nécessairement les mêmes explications de la richesse ni les mêmes instruments économiques.'
+        },
+        exercises: [
+          {
+            question: 'Quelle place l’État occupe-t-il généralement dans les politiques mercantilistes ?',
+            answer: 'Il intervient activement dans la réglementation des échanges, le soutien à certaines activités productives et la recherche de puissance commerciale et fiscale.'
+          },
+          {
+            question: 'Quel auteur anglais est associé à l’analyse mercantiliste du commerce extérieur ?',
+            answer: 'Thomas Mun.'
+          },
+          {
+            question: 'Pourquoi faut-il distinguer mercantilisme et simple accumulation de métaux précieux ?',
+            answer: 'Parce que les pratiques et les écrits mercantilistes traitent aussi du commerce, des manufactures, de la fiscalité, de la monnaie et de la puissance de l’État.'
+          }
+        ],
+        sources: [
+          { title: 'Stanford Encyclopedia of Philosophy — Economics in Early Modern Philosophy', url: 'https://plato.stanford.edu/archives/sum2022/entries/economics-early-modern/' },
+          { title: 'Routledge Historical Resources — History of Economic Thought', url: 'https://www.routledgehistoricalresources.com/economic-thought/' },
+          { title: 'Encyclopaedia Britannica — Mercantilism', url: 'https://www.britannica.com/money/mercantilism' }
+        ]
+      }
+    },
+    {
+      id: 'physiocratie-et-ordre-naturel',
+      title: 'La physiocratie et l’idée d’ordre naturel',
+      field: 'Économie politique · France · XVIIIe siècle',
+      summary: 'Analyser le rôle de l’agriculture dans la théorie physiocratique, le produit net, le Tableau économique et les propositions de réforme fiscale.',
+      lesson: {
+        sections: [
+          'La physiocratie se développe en France au milieu du XVIIIe siècle autour de François Quesnay et de plusieurs auteurs qui cherchent à identifier les principes de fonctionnement de l’économie. Le terme renvoie à l’idée d’un ordre naturel dont les régularités devraient guider l’organisation économique et les décisions publiques. Cette pensée apparaît dans une société encore largement agricole, marquée par des privilèges, des réglementations et des débats sur la fiscalité et le commerce des grains.',
+          'Pour Quesnay, l’agriculture est la seule activité qui crée un produit net dans son modèle théorique. Ce produit net correspond au surplus obtenu après prise en compte des avances nécessaires à la production. Les activités manufacturières et commerciales sont alors qualifiées de « stériles » dans la terminologie physiocratique. Ce qualificatif ne signifie pas qu’elles sont inutiles : il exprime une conception particulière de la création de richesse, qui diffère de la mesure contemporaine de la valeur ajoutée.',
+          'Le Tableau économique, élaboré par Quesnay à partir de 1758 et diffusé en plusieurs versions, représente la circulation des revenus et des produits entre les catégories de la société. Il cherche à expliquer comment les dépenses d’un groupe deviennent les recettes d’un autre et comment la reproduction annuelle de l’économie dépend de ces flux. Cette représentation constitue un jalon dans l’analyse des interdépendances économiques, même si sa classification des activités repose sur les hypothèses propres aux physiocrates.',
+          'Les physiocrates défendent généralement la liberté du commerce des grains et une réforme de la fiscalité, notamment une simplification de l’impôt centrée sur le produit net foncier. Leurs propositions s’appuient sur leur théorie de la richesse agricole et ne doivent pas être assimilées sans nuance au libéralisme contemporain. La physiocratie influence les débats économiques de la fin du XVIIIe siècle et contribue au développement de l’économie politique classique.'
+        ],
+        example: {
+          statement: 'Une exploitation agricole produit une récolte dont la valeur dépasse les avances nécessaires à sa production. Quel concept physiocratique désigne cet excédent ?',
+          calculation: 'Produit net = valeur du produit agricole - avances nécessaires à la production, selon le cadre théorique physiocratique.',
+          answer: 'Il s’agit du produit net. Cette notion appartient au modèle physiocratique et ne doit pas être confondue automatiquement avec le bénéfice comptable moderne.'
+        },
+        exercise: {
+          question: 'Pourquoi le Tableau économique constitue-t-il une contribution importante à l’histoire de la pensée économique ?',
+          answer: 'Il représente les flux de produits et de revenus entre différentes catégories sociales et cherche à expliquer la reproduction et les interdépendances de l’économie.'
+        },
+        exercises: [
+          {
+            question: 'Quel économiste est associé au Tableau économique ?',
+            answer: 'François Quesnay.'
+          },
+          {
+            question: 'Que signifie le terme « stérile » dans la théorie physiocratique ?',
+            answer: 'Il désigne une activité à laquelle le modèle n’attribue pas la création d’un produit net, et non une activité considérée comme socialement inutile.'
+          },
+          {
+            question: 'Quelle réforme fiscale les physiocrates privilégient-ils généralement ?',
+            answer: 'Une simplification de l’impôt et une imposition centrée sur le produit net foncier, conformément à leur théorie de la richesse.'
+          }
+        ],
+        sources: [
+          { title: 'Bibliothèque nationale de France, Gallica — Théorie économique : physiocratie', url: 'https://gallica.bnf.fr/selections/fr/html/droit-economie/theorie-economique-physiocratie' },
+          { title: 'Gallica — L’économie selon Jean-Jacques Rousseau : Rousseau et les physiocrates', url: 'https://gallica.bnf.fr/accueil/fr/html/leconomie-selon-jean-jacques-rousseau' },
+          { title: 'Stanford Encyclopedia of Philosophy — Economics in Early Modern Philosophy', url: 'https://plato.stanford.edu/archives/sum2022/entries/economics-early-modern/' }
+        ]
+      }
+    },
+    {
+      id: 'ecole-classique-smith-ricardo-malthus',
+      title: 'L’économie politique classique : Smith, Ricardo et Malthus',
+      field: 'Économie politique classique · Fin XVIIIe–XIXe siècle',
+      summary: 'Étudier la division du travail, la croissance, la répartition des revenus, la rente foncière et les avantages comparatifs.',
+      lesson: {
+        sections: [
+          'La publication de La Richesse des nations d’Adam Smith en 1776 constitue un repère majeur dans la formation de l’économie politique classique. Smith étudie la division du travail, l’étendue des marchés, l’accumulation du capital et le fonctionnement des institutions qui encadrent les échanges. Il ne défend pas une absence totale d’État : il reconnaît notamment des fonctions publiques liées à la défense, à la justice et à certains travaux collectifs. Sa pensée associe ainsi l’analyse des marchés à une réflexion plus large sur la société et les institutions.',
+          'La division du travail peut augmenter la productivité en améliorant l’habileté, en réduisant les changements de tâches et en favorisant l’invention de procédés. Ses effets dépendent cependant de l’étendue du marché et de l’organisation de la production. Smith examine aussi les risques d’appauvrissement intellectuel associés à des tâches excessivement répétitives. Son œuvre ne se réduit donc pas à la métaphore de la « main invisible » : elle traite de croissance, de morale, de justice et de politique économique.',
+          'David Ricardo place la répartition des revenus au centre de son analyse. Dans ses Principes de l’économie politique et de l’impôt, publiés en 1817, il étudie les salaires, les profits et la rente foncière. Sa théorie des avantages comparatifs montre, dans un modèle simplifié, que des pays peuvent tirer avantage de la spécialisation et de l’échange même si l’un possède un avantage absolu dans toutes les productions. Ce résultat repose sur les coûts d’opportunité relatifs, et non uniquement sur les niveaux de productivité absolue.',
+          'Thomas Robert Malthus analyse les rapports entre population et subsistances, ainsi que certaines limites possibles à la croissance. Ses propositions ont été discutées et doivent être replacées dans leur contexte historique : les technologies, les institutions et les transitions démographiques modifient les relations entre population et ressources. Les économistes classiques ne forment pas un groupe parfaitement homogène. Smith, Ricardo et Malthus divergent sur plusieurs questions, mais contribuent tous à l’analyse systématique de la production, de la croissance et de la distribution.'
+        ],
+        example: {
+          statement: 'Le pays A produit du tissu en 2 heures et du vin en 4 heures. Le pays B produit du tissu en 6 heures et du vin en 8 heures. Quel pays possède un avantage comparatif dans chaque activité ?',
+          calculation: 'Dans A, le coût d’opportunité d’une unité de tissu est de 0,5 unité de vin et celui d’une unité de vin est de 2 unités de tissu. Dans B, ces coûts sont respectivement de 0,75 unité de vin et de 1,333... unité de tissu.',
+          answer: 'A possède un avantage comparatif dans le tissu, tandis que B possède un avantage comparatif dans le vin. Il s’agit du résultat du modèle simplifié, sous ses hypothèses.'
+        },
+        exercise: {
+          question: 'Quelle différence générale distingue les analyses de Smith et de Ricardo ?',
+          answer: 'Smith étudie notamment la division du travail, la productivité et les mécanismes de croissance. Ricardo accorde une place centrale à la répartition du produit entre salaires, profits et rente.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année La Richesse des nations a-t-elle été publiée ?',
+            answer: '1776.'
+          },
+          {
+            question: 'Quels sont les trois revenus étudiés par Ricardo dans sa préface ?',
+            answer: 'Les salaires, les profits et la rente.'
+          },
+          {
+            question: 'Un avantage comparatif exige-t-il qu’un pays soit plus productif dans toutes les activités ?',
+            answer: 'Non. Il dépend des coûts d’opportunité relatifs.'
+          }
+        ],
+        sources: [
+          { title: 'Econlib — Adam Smith, The Wealth of Nations (1776)', url: 'https://www.econlib.org/library/Smith/smWN.html' },
+          { title: 'Econlib — David Ricardo, On the Principles of Political Economy and Taxation', url: 'https://www.econlib.org/library/Ricardo/ricP.html' },
+          { title: 'Université Paris 1 Panthéon-Sorbonne — Bibliographie générale et sources primaires', url: 'https://cours.univ-paris1.fr/mod/folder/view.php?id=1620009' },
+          { title: 'Stanford Encyclopedia of Philosophy — Economics in Early Modern Philosophy', url: 'https://plato.stanford.edu/archives/sum2022/entries/economics-early-modern/' }
+        ]
+      }
+    },
+    {
+      id: 'marxisme-et-critique-du-capitalisme',
+      title: 'Marxisme : valeur, plus-value et rapports de classe',
+      field: 'Critique de l’économie politique · XIXe siècle',
+      summary: 'Comprendre la critique marxienne du capitalisme, la valeur, la plus-value, l’accumulation et les crises.',
+      lesson: {
+        sections: [
+          'Karl Marx développe sa critique de l’économie politique au XIXe siècle, dans le contexte de l’industrialisation, de l’urbanisation et de l’extension du salariat. Son analyse dialogue avec les économistes classiques, notamment Smith et Ricardo, tout en présentant les catégories économiques comme liées à des rapports sociaux historiquement déterminés. Le premier volume du Capital paraît en allemand en 1867. Les volumes suivants sont publiés après la mort de Marx par Friedrich Engels à partir de ses manuscrits.',
+          'Marx distingue la valeur d’usage d’une marchandise, liée à son utilité, de sa valeur d’échange, exprimée dans les rapports d’échange. Le travail occupe une place centrale dans sa théorie de la valeur. Cette théorie constitue un cadre théorique spécifique et controversé ; elle ne doit pas être présentée comme une méthode universellement admise permettant de déduire directement tous les prix observés. L’analyse marxienne cherche également à expliquer comment les rapports de production structurent les classes sociales.',
+          'La plus-value est centrale dans l’explication marxienne du profit. Dans son cadre théorique, le salarié vend sa force de travail, dont la valeur est liée aux conditions sociales de sa reproduction. Le travail effectué pendant la production peut créer une valeur supérieure à celle de cette force de travail. La différence constitue la plus-value, appropriée dans le cadre des rapports capitalistes de production. Ce raisonnement porte sur une relation sociale et théorique ; il ne signifie pas que chaque entreprise réalise nécessairement un profit à chaque période.',
+          'Marx étudie également l’accumulation du capital, la concurrence, les transformations techniques et les crises. Les entreprises sont incitées à réinvestir et à modifier les méthodes de production, mais ces dynamiques peuvent générer des tensions sociales et économiques. Les traditions marxistes ultérieures proposent différentes interprétations de ces mécanismes, du rôle de l’État et des transformations du capitalisme. Il faut donc distinguer les textes de Marx, les courants marxistes postérieurs et les résultats de l’analyse empirique.'
+        ],
+        example: {
+          statement: 'Dans un exemple théorique, une journée de travail crée une valeur nouvelle de 120 unités monétaires. La valeur attribuée à la force de travail est de 70 unités. Quel écart correspond à la plus-value dans ce modèle simplifié ?',
+          calculation: 'Plus-value = valeur nouvelle créée - valeur de la force de travail = 120 - 70 = 50.',
+          answer: 'La plus-value est de 50 unités dans cet exemple. Le calcul illustre la définition théorique de Marx et ne constitue pas une méthode comptable directement applicable à une entreprise réelle.'
+        },
+        exercise: {
+          question: 'Pourquoi la plus-value est-elle centrale dans la critique marxienne du capitalisme ?',
+          answer: 'Elle permet à Marx d’expliquer comment, dans son cadre théorique, la production génère une valeur supérieure à celle de la force de travail et comment cet excédent est approprié dans les rapports capitalistes.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année le premier volume du Capital a-t-il été publié ?',
+            answer: '1867.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre valeur d’usage et valeur d’échange ?',
+            answer: 'La valeur d’usage renvoie à l’utilité d’un bien ; la valeur d’échange renvoie à son rapport d’échange avec d’autres marchandises.'
+          },
+          {
+            question: 'Les traditions marxistes postérieures sont-elles toutes identiques ?',
+            answer: 'Non. Elles ont développé des interprétations différentes des textes de Marx et des transformations du capitalisme.'
+          }
+        ],
+        sources: [
+          { title: 'Marxists Internet Archive — Karl Marx, Capital, Volume I (1867)', url: 'https://www.marxists.org/archive/marx/works/1867-c1/' },
+          { title: 'Routledge Historical Resources — History of Economic Thought', url: 'https://www.routledgehistoricalresources.com/economic-thought/' },
+          { title: 'Université Paris 1 Panthéon-Sorbonne — Sources primaires en histoire de la pensée économique', url: 'https://cours.univ-paris1.fr/mod/folder/view.php?id=1620009' }
+        ]
+      }
+    },
+    {
+      id: 'marginalisme-et-neoclassiques',
+      title: 'La révolution marginaliste et la formation de l’économie néoclassique',
+      field: 'Théorie économique · Années 1870–début du XXe siècle',
+      summary: 'Étudier l’utilité marginale, les décisions à la marge, l’équilibre et les différences entre les principales traditions marginalistes.',
+      lesson: {
+        sections: [
+          'Dans les années 1870, plusieurs économistes renouvellent l’analyse de la valeur et des choix. Carl Menger et William Stanley Jevons publient chacun un ouvrage majeur en 1871, puis Léon Walras publie les Éléments d’économie politique pure en 1874. Ces travaux sont habituellement regroupés sous le nom de révolution marginaliste. Cette appellation désigne une transformation importante de la théorie économique, mais elle ne doit pas masquer les différences entre les méthodes et les projets de ces auteurs.',
+          'L’utilité marginale désigne l’utilité attribuée à une unité supplémentaire d’un bien dans une situation donnée. Dans de nombreux modèles, cette utilité diminue lorsque la quantité consommée augmente. Le raisonnement marginal consiste à comparer les coûts et les bénéfices d’une variation : une décision peut être avantageuse tant que son bénéfice marginal dépasse son coût marginal. Cette méthode devient fondamentale dans l’analyse microéconomique, sans supposer que les individus effectuent toujours consciemment des calculs mathématiques.',
+          'Les approches marginalistes sont différentes. Menger développe une analyse de la valeur liée aux besoins et à l’importance subjective des biens ; Jevons formalise mathématiquement l’utilité et les échanges ; Walras construit un modèle d’équilibre général dans lequel plusieurs marchés sont interdépendants. Alfred Marshall contribue ensuite au développement de l’équilibre partiel, qui étudie un marché en isolant certains facteurs. Ces distinctions ont durablement influencé les méthodes de la théorie économique.',
+          'L’économie néoclassique regroupe une famille d’approches étudiant les choix, les prix, l’allocation des ressources et les équilibres. Les conclusions des modèles dépendent de leurs hypothèses sur la concurrence, l’information, les préférences et les contraintes. Les marchés réels peuvent présenter des externalités, des asymétries d’information ou des pouvoirs de marché que les modèles élémentaires ne représentent pas toujours. Il faut donc distinguer les résultats théoriques conditionnels et leur application à une situation empirique.'
+        ],
+        example: {
+          statement: 'Un consommateur attribue un avantage de 12 unités à une unité supplémentaire d’un produit, dont le coût est de 9 unités. Que suggère le raisonnement marginal ?',
+          calculation: 'Gain marginal net = avantage marginal - coût marginal = 12 - 9 = 3.',
+          answer: 'Le gain marginal net est positif de 3 unités. Dans ce modèle simplifié, l’achat supplémentaire est avantageux, sous réserve que les coûts et les avantages soient correctement évalués.'
+        },
+        exercise: {
+          question: 'Pourquoi la révolution marginaliste ne doit-elle pas être présentée comme une théorie identique élaborée par trois auteurs ?',
+          answer: 'Parce que Menger, Jevons et Walras partagent certains thèmes, mais diffèrent par leurs méthodes, leurs concepts et leurs modèles d’explication.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les trois auteurs habituellement associés à la révolution marginaliste des années 1870 ?',
+            answer: 'Carl Menger, William Stanley Jevons et Léon Walras.'
+          },
+          {
+            question: 'Qu’est-ce que l’utilité marginale ?',
+            answer: 'L’utilité attribuée à une unité supplémentaire d’un bien dans une situation donnée.'
+          },
+          {
+            question: 'Quelle différence générale existe-t-il entre équilibre partiel et équilibre général ?',
+            answer: 'L’équilibre partiel étudie un marché en isolant certains facteurs ; l’équilibre général examine l’interdépendance de plusieurs marchés.'
+          }
+        ],
+        sources: [
+          { title: 'Cambridge University Press — The marginalist revolution: the subjective theory of value', url: 'https://www.cambridge.org/core/books/abs/wealth-of-ideas/marginalist-revolution-the-subjective-theory-of-value/77D8F4A126675BA4357C4C3D4A4DC7E2' },
+          { title: 'Larousse — Marginalisme', url: 'https://www.larousse.fr/encyclopedie/divers/marginalisme/68246' },
+          { title: 'Econlib — William Stanley Jevons', url: 'https://www.econlib.org/library/Enc1/bios/Jevons.html' },
+          { title: 'UCLA — History of Economic Thought guided readings', url: 'https://competitionandappropriation.econ.ucla.edu/' }
+        ]
+      }
+    },
+    {
+      id: 'keynesianisme-et-macroeconomie',
+      title: 'Keynésianisme et naissance de la macroéconomie moderne',
+      field: 'Macroéconomie · Années 1930 et après',
+      summary: 'Comprendre la demande globale, le chômage involontaire, le multiplicateur et les politiques de stabilisation économique.',
+      lesson: {
+        sections: [
+          'La Grande Dépression des années 1930 place au premier plan la persistance du chômage et la chute de la production. John Maynard Keynes publie en 1936 la Théorie générale de l’emploi, de l’intérêt et de la monnaie. Il remet en question l’idée selon laquelle les ajustements spontanés des prix et des salaires garantiraient toujours un retour rapide au plein emploi. Son travail contribue à développer la macroéconomie, qui étudie notamment la production totale, l’emploi, l’investissement et la consommation.',
+          'La demande globale regroupe les dépenses de consommation, d’investissement, des administrations publiques et le solde des échanges extérieurs. Dans le raisonnement keynésien, une baisse de l’investissement peut réduire les revenus et provoquer une baisse supplémentaire de la consommation. Les entreprises ajustent alors leur production et leur emploi. Une économie peut atteindre un équilibre de court terme avec un niveau d’activité insuffisant et du chômage involontaire : un équilibre économique ne signifie donc pas nécessairement que toutes les ressources sont employées.',
+          'Le multiplicateur décrit la manière dont une variation initiale des dépenses peut entraîner une variation plus importante du revenu total. Dans le modèle élémentaire sans impôts ni importations, avec une propension marginale à consommer constante, le multiplicateur est égal à 1 / (1 - c), où c représente la propension marginale à consommer. Dans les économies réelles, les impôts, les importations, les contraintes d’offre, les anticipations et la politique monétaire modifient l’ampleur de ce mécanisme.',
+          'Les politiques inspirées du keynésianisme cherchent à stabiliser l’activité par les dépenses publiques, les transferts, la fiscalité ou la politique monétaire. Leur efficacité dépend du contexte, du calendrier, des capacités de production, du financement et des réactions privées. Les développements ultérieurs, notamment la synthèse néoclassique et les nouveaux modèles keynésiens, ont modifié et formalisé plusieurs mécanismes. Le keynésianisme contemporain ne doit donc pas être assimilé à l’ensemble des politiques économiques mises en œuvre depuis 1945.'
+        ],
+        example: {
+          statement: 'Dans un modèle élémentaire, la propension marginale à consommer est c = 0,8. Calcule le multiplicateur keynésien simple.',
+          calculation: 'Multiplicateur = 1 / (1 - c) = 1 / (1 - 0,8) = 1 / 0,2 = 5.',
+          answer: 'Le multiplicateur théorique est égal à 5. Ce résultat découle d’hypothèses simplificatrices et ne constitue pas une estimation universelle de l’effet réel d’une dépense publique.'
+        },
+        exercise: {
+          question: 'Comment une baisse de l’investissement peut-elle provoquer une diminution plus large de l’activité dans le raisonnement keynésien ?',
+          answer: 'La baisse de l’investissement réduit directement la demande et les revenus. La diminution des revenus peut ensuite réduire la consommation, ce qui entraîne de nouvelles baisses de production et d’emploi.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Keynes publie-t-il la Théorie générale ?',
+            answer: '1936.'
+          },
+          {
+            question: 'Que signifie chômage involontaire dans l’analyse keynésienne ?',
+            answer: 'Une situation où des personnes souhaitant travailler aux conditions en vigueur ne trouvent pas d’emploi, notamment en raison d’une demande globale insuffisante.'
+          },
+          {
+            question: 'Le multiplicateur théorique de 5 est-il applicable à toutes les économies ?',
+            answer: 'Non. Il résulte d’hypothèses simplificatrices et le multiplicateur réel dépend de nombreux paramètres économiques et institutionnels.'
+          }
+        ],
+        sources: [
+          { title: 'John Maynard Keynes — The General Theory of Employment, Interest and Money', url: 'https://www.marxists.org/reference/subject/economics/keynes/general-theory/ch01.htm' },
+          { title: 'Encyclopaedia Britannica — John Maynard Keynes', url: 'https://www.britannica.com/money/John-Maynard-Keynes' },
+          { title: 'Econlib — Library of Economics and Liberty', url: 'https://www.econlib.org/' }
+        ]
+      }
+    },
+    {
+      id: 'monetarisme-et-nouvelles-approches-liberales',
+      title: 'Monétarisme, anticipations et débats sur la politique économique',
+      field: 'Macroéconomie et monnaie · XXe siècle',
+      summary: 'Examiner les théories monétaires, les causes de l’inflation, le rôle des anticipations et les débats sur les politiques de stabilisation.',
+      lesson: {
+        sections: [
+          'Le monétarisme, associé notamment à Milton Friedman, réaffirme l’importance de la monnaie dans l’analyse des fluctuations économiques et de l’inflation. Friedman reçoit en 1976 le prix de la Banque de Suède en sciences économiques en mémoire d’Alfred Nobel pour ses travaux sur l’analyse de la consommation, l’histoire et la théorie monétaires, ainsi que sur la complexité des politiques de stabilisation. Avec Anna Schwartz, il contribue à l’étude historique de la monnaie et de la Grande Dépression aux États-Unis.',
+          'Dans la perspective monétariste, les variations de la quantité de monnaie peuvent influencer l’activité réelle à court terme et le niveau général des prix à plus long terme. Cela ne signifie pas que toute hausse de la masse monétaire provoque immédiatement une hausse proportionnelle des prix. La vitesse de circulation de la monnaie, la production, la demande de monnaie et les conditions financières influencent également les résultats. Les relations observées entre monnaie, crédit, activité et inflation doivent donc être étudiées empiriquement.',
+          'Les débats portent aussi sur les règles de politique monétaire, la crédibilité des autorités, les délais de transmission et la prise en compte des anticipations. Certaines approches privilégient des règles prévisibles ; d’autres insistent sur la nécessité de réagir aux chocs économiques. Les banques centrales contemporaines utilisent plusieurs indicateurs et ne pilotent pas toutes leur politique par une cible fixe de croissance de la masse monétaire.',
+          'Les nouvelles approches classiques accordent une place importante aux anticipations et étudient les limites de certaines politiques systématiquement anticipées dans leurs modèles. Les nouveaux keynésiens intègrent eux aussi les anticipations, tout en conservant des mécanismes tels que les rigidités nominales. Ces écoles ne partagent pas toutes les mêmes hypothèses. Les résultats des modèles doivent être distingués des conclusions empiriques et ne garantissent pas, à eux seuls, l’efficacité d’une politique dans toutes les situations.'
+        ],
+        example: {
+          statement: 'Une banque centrale observe une inflation élevée. Pourquoi ne peut-elle pas conclure à partir de cette seule observation que la masse monétaire est l’unique cause ?',
+          calculation: 'Il faut examiner plusieurs mécanismes : demande globale, coûts de production, contraintes d’offre, anticipations, taux de change, crédit et évolution de la monnaie. Les explications doivent ensuite être confrontées aux données.',
+          answer: 'L’inflation peut avoir plusieurs causes et résulter de leurs interactions. Le rôle de la monnaie est important dans la tradition monétariste, mais l’analyse d’un épisode précis exige des données et un examen du contexte.'
+        },
+        exercise: {
+          question: 'Quelle différence existe-t-il entre une théorie monétaire et une règle de politique monétaire ?',
+          answer: 'Une théorie propose des mécanismes explicatifs ; une règle définit une méthode de décision. Passer de l’une à l’autre exige des hypothèses, des données et une analyse du contexte.'
+        },
+        exercises: [
+          {
+            question: 'À quel économiste le monétarisme est-il particulièrement associé ?',
+            answer: 'Milton Friedman.'
+          },
+          {
+            question: 'Pourquoi la relation entre masse monétaire et prix peut-elle varier selon les périodes ?',
+            answer: 'Parce que la vitesse de circulation, la production, la demande de monnaie et les conditions de crédit peuvent évoluer.'
+          },
+          {
+            question: 'Les nouveaux keynésiens et les nouvelles approches classiques partagent-ils toutes les mêmes hypothèses ?',
+            answer: 'Non. Ils peuvent accorder une place aux anticipations tout en divergeant sur les rigidités, les frictions et les mécanismes des fluctuations.'
+          }
+        ],
+        sources: [
+          { title: 'Nobel Prize — Milton Friedman, facts and work', url: 'https://www.nobelprize.org/laureate/688' },
+          { title: 'National Bureau of Economic Research — Milton Friedman and monetary policy', url: 'https://www.nber.org/news/milton-friedman-won-1976-nobel-prize-analysis-monetary-policy-and-its-effects' },
+          { title: 'Library of Congress — Milton Friedman: A Resource Guide', url: 'https://guides.loc.gov/milton-friedman' }
+        ]
+      }
+    },
+    {
+      id: 'economie-comportementale-information-et-strategie',
+      title: 'Économie comportementale, information et théorie des jeux',
+      field: 'Économie contemporaine · XXe–XXIe siècle',
+      summary: 'Étudier les limites de certains modèles de rationalité, les asymétries d’information et les interactions stratégiques entre agents.',
+      lesson: {
+        sections: [
+          'L’économie comportementale étudie la façon dont les décisions peuvent s’écarter de modèles de choix parfaitement cohérents. Elle mobilise notamment des expériences et des résultats de psychologie pour analyser les heuristiques, les effets de cadrage, l’aversion aux pertes et les limites de l’attention. Daniel Kahneman, avec Amos Tversky, a joué un rôle majeur dans le développement de ce domaine. Ces recherches ne montrent pas que les individus sont toujours irrationnels : elles identifient des régularités dont l’importance dépend des circonstances.',
+          'L’économie de l’information étudie les situations dans lesquelles les acteurs ne disposent pas des mêmes informations. Une asymétrie d’information peut influencer les contrats d’assurance, le crédit, les prix et les décisions d’embauche. La sélection adverse apparaît lorsque des caractéristiques privées influencent la participation ou la composition d’un marché. Le risque moral concerne des actions difficiles à observer, notamment lorsqu’un comportement change après la conclusion d’un contrat. Ces mécanismes sont distincts et leurs conséquences dépendent des institutions.',
+          'La théorie des jeux analyse les situations dans lesquelles les résultats dépendent des décisions de plusieurs acteurs. Elle formalise les stratégies, les incitations et les équilibres possibles. Dans un dilemme du prisonnier, des choix individuellement avantageux dans une interaction non coopérative peuvent conduire à un résultat collectif moins favorable que la coopération. Les conclusions changent toutefois selon les règles, l’information, la répétition des interactions et les possibilités d’engagement ou de sanction.',
+          'Ces approches complètent les modèles économiques standards plutôt qu’elles ne les remplacent systématiquement. Une analyse rigoureuse doit expliciter le mécanisme étudié, distinguer corrélation et causalité et éviter de généraliser automatiquement une expérience locale à toutes les populations. Les modèles sont utiles pour isoler des mécanismes, mais leur pertinence empirique dépend de la qualité des données et des hypothèses.'
+        ],
+        example: {
+          statement: 'Un assureur ne peut pas observer parfaitement le comportement de tous ses clients après la signature du contrat. Quel problème économique peut apparaître ?',
+          calculation: 'Si le comportement change après la signature et reste difficile à observer, le mécanisme peut relever du risque moral. Si des caractéristiques privées influencent surtout le choix de souscrire, il peut s’agir de sélection adverse.',
+          answer: 'Le risque moral peut apparaître si la couverture modifie les comportements après la signature et que l’assureur ne peut pas les observer parfaitement. Le diagnostic dépend des faits du cas.'
+        },
+        exercise: {
+          question: 'Pourquoi l’économie comportementale ne permet-elle pas d’affirmer que les individus sont systématiquement irrationnels ?',
+          answer: 'Parce qu’elle identifie des biais et des régularités dans certaines situations, mais que les décisions dépendent des personnes, des tâches, des informations et des contextes.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’une asymétrie d’information ?',
+            answer: 'Une situation dans laquelle les parties à une interaction ne disposent pas de la même information pertinente.'
+          },
+          {
+            question: 'Quelle différence distingue sélection adverse et risque moral ?',
+            answer: 'La sélection adverse concerne des caractéristiques privées influençant la sélection ou la participation ; le risque moral concerne des actions difficiles à observer, souvent après la conclusion d’un contrat.'
+          },
+          {
+            question: 'Que cherche à analyser la théorie des jeux ?',
+            answer: 'Les choix stratégiques d’agents dont les résultats dépendent des décisions des autres.'
+          }
+        ],
+        sources: [
+          { title: 'Nobel Prize — Daniel Kahneman, facts and work', url: 'https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/facts/' },
+          { title: 'Nobel Prize — The 2001 Prize in Economic Sciences', url: 'https://www.nobelprize.org/prizes/economic-sciences/2001/summary/' },
+          { title: 'Nobel Prize — The 1994 Prize in Economic Sciences', url: 'https://www.nobelprize.org/prizes/economic-sciences/1994/summary/' }
+        ]
+      }
+    },
+    {
+      id: 'developpement-inegalites-et-capabilites',
+      title: 'Économie du développement, inégalités et capabilités',
+      field: 'Économie du développement · XXe–XXIe siècle',
+      summary: 'Analyser la croissance, les transformations structurelles, la pauvreté, les inégalités et l’approche du développement par les capabilités.',
+      lesson: {
+        sections: [
+          'L’économie du développement étudie les transformations qui accompagnent l’amélioration durable des conditions de vie : évolution de la productivité, de l’emploi, de l’éducation, de la santé, des infrastructures et des institutions. La croissance du produit intérieur brut peut contribuer à ces transformations, mais elle ne décrit pas à elle seule la répartition des revenus, l’accès aux services ou la sécurité des personnes. Il convient donc de distinguer croissance économique, développement humain et réduction de la pauvreté.',
+          'Les théories du développement sont diverses. Certaines mettent l’accent sur l’accumulation du capital, l’industrialisation et le progrès technique ; d’autres insistent sur les institutions, les contraintes extérieures, les structures productives ou les inégalités historiques. Les trajectoires varient selon les pays et les périodes. Les capacités administratives, les conflits, la démographie, les échanges internationaux et les conditions locales influencent les résultats : il n’existe pas de stratégie unique garantissant le développement dans tous les contextes.',
+          'Amartya Sen a développé l’approche par les capabilités, qui évalue le développement à partir des libertés réelles dont disposent les personnes pour mener des vies qu’elles ont des raisons de valoriser. Cette approche distingue les ressources possédées des possibilités effectives. Deux personnes disposant d’un revenu comparable peuvent avoir des capacités différentes selon leur santé, leur environnement, l’accès aux services ou les obstacles sociaux rencontrés. Cette conception a influencé les débats sur le bien-être, la pauvreté et le développement humain.',
+          'La mesure des inégalités exige de préciser l’indicateur retenu : revenu, patrimoine, consommation, santé, éducation ou accès aux services. Un indicateur moyen peut masquer des différences importantes entre régions, groupes sociaux et générations. L’évaluation des politiques publiques doit distinguer les objectifs annoncés, les moyens mobilisés et les effets effectivement observés. Les données et les méthodes de comparaison sont essentielles pour éviter d’attribuer à une politique des résultats qui peuvent dépendre d’autres facteurs.'
+        ],
+        example: {
+          statement: 'Deux régions ont le même revenu moyen par habitant, mais l’une dispose d’un accès beaucoup plus limité à l’école et aux soins. Pourquoi ne peut-on pas juger leur développement à partir du seul revenu ?',
+          calculation: 'Le revenu moyen mesure une dimension économique agrégée. Pour analyser d’autres dimensions, il faut examiner notamment la santé, l’éducation, la distribution des revenus et l’accès effectif aux services.',
+          answer: 'Parce que le revenu moyen ne décrit pas suffisamment les possibilités réelles de vivre en bonne santé, d’apprendre et de participer à la société. L’approche par les capabilités prend en compte ces libertés réelles.'
+        },
+        exercise: {
+          question: 'Pourquoi la croissance du PIB ne suffit-elle pas à mesurer toutes les dimensions du développement ?',
+          answer: 'Elle ne mesure pas directement la distribution des revenus, la santé, l’éducation, les libertés réelles, la qualité de l’environnement ou l’accès effectif aux services.'
+        },
+        exercises: [
+          {
+            question: 'Quel économiste est associé à l’approche par les capabilités ?',
+            answer: 'Amartya Sen.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre revenu et capabilité ?',
+            answer: 'Le revenu est une ressource ; la capabilité désigne une possibilité réelle d’accomplir des activités ou des états de vie valorisés.'
+          },
+          {
+            question: 'Pourquoi faut-il préciser l’indicateur lorsqu’on étudie les inégalités ?',
+            answer: 'Parce que les inégalités de revenu, de patrimoine, de santé, d’éducation et d’accès aux services sont distinctes et peuvent évoluer différemment.'
+          }
+        ],
+        sources: [
+          { title: 'Nobel Prize — Amartya Sen, facts and work', url: 'https://www.nobelprize.org/prizes/economic-sciences/1998/sen/facts/' },
+          { title: 'United Nations Development Programme — Human Development Reports', url: 'https://hdr.undp.org/' },
+          { title: 'World Bank — Poverty and Equity', url: 'https://www.worldbank.org/en/topic/poverty' }
+        ]
+      }
+    },
+    {
+      id: 'economie-ecologique-et-debats-contemporains',
+      title: 'Économie écologique et débats contemporains',
+      field: 'Économie de l’environnement · Fin du XXe–XXIe siècle',
+      summary: 'Étudier les externalités, les biens communs, les instruments de politique environnementale et les débats sur la soutenabilité.',
+      lesson: {
+        sections: [
+          'L’économie de l’environnement et l’économie écologique étudient les interactions entre les activités économiques et les systèmes naturels. L’économie de l’environnement mobilise souvent les outils économiques pour analyser la pollution, l’utilisation des ressources et les politiques de protection. L’économie écologique insiste plus explicitement sur l’inscription de l’économie dans les systèmes biophysiques et sur les limites écologiques. Ces domaines comprennent plusieurs approches et des débats méthodologiques ; leurs frontières ne sont pas absolues.',
+          'Une externalité apparaît lorsqu’une activité affecte des tiers sans que cet effet soit entièrement pris en compte dans les décisions privées. Une pollution peut imposer des coûts sanitaires ou environnementaux à des personnes qui ne participent pas à la transaction. Les instruments possibles comprennent les normes, les taxes, les permis échangeables et les dispositifs de responsabilité. Leur évaluation nécessite d’examiner les dommages visés, les coûts de mise en œuvre, les effets distributifs et les résultats environnementaux observés.',
+          'Les ressources communes, comme certaines pêcheries, forêts ou nappes d’eau, posent des questions de coordination et de gouvernance. Les recherches d’Elinor Ostrom montrent que des communautés peuvent élaborer des règles efficaces de gestion collective dans certaines circonstances. Les mécanismes de participation, de surveillance et de résolution des conflits peuvent contribuer à la coopération. Cela ne signifie toutefois pas que toutes les ressources communes sont toujours gérées durablement : les résultats dépendent des caractéristiques écologiques, des institutions et des conditions locales.',
+          'Les débats contemporains portent sur la compatibilité entre croissance, réduction de la pauvreté et respect des limites écologiques. Les indicateurs économiques usuels ne mesurent pas entièrement la dégradation des écosystèmes, la qualité de l’air ou la distribution des coûts environnementaux. Les scénarios de transition doivent distinguer les données observées, les hypothèses des modèles et les choix normatifs. Une analyse rigoureuse précise les horizons temporels, les incertitudes et les mécanismes reliant une politique aux résultats attendus.'
+        ],
+        example: {
+          statement: 'Une usine vend un produit à un prix qui ne tient pas compte des dommages sanitaires provoqués par ses émissions. Quel concept économique permet d’analyser cette situation ?',
+          calculation: 'Coût social marginal = coût privé marginal + coût externe marginal. Si le coût externe est positif et n’est pas pris en compte, le coût social marginal dépasse le coût privé marginal.',
+          answer: 'Il s’agit d’une externalité négative. La relation exprime le principe d’analyse ; une estimation réelle nécessiterait des données fiables sur les coûts privés et les dommages externes.'
+        },
+        exercise: {
+          question: 'Pourquoi une taxe environnementale ne peut-elle pas être évaluée uniquement à partir de son montant ?',
+          answer: 'Il faut également examiner les dommages visés, les réactions des producteurs et consommateurs, les possibilités de substitution, les effets distributifs et les résultats environnementaux effectivement obtenus.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’une externalité négative ?',
+            answer: 'Un coût imposé à des tiers qui n’est pas entièrement intégré dans la décision ou le prix privé.'
+          },
+          {
+            question: 'Quelle différence générale existe-t-il entre économie de l’environnement et économie écologique ?',
+            answer: 'La première mobilise souvent les outils économiques pour analyser les problèmes environnementaux ; la seconde insiste davantage sur les limites biophysiques et les relations entre économie et écosystèmes.'
+          },
+          {
+            question: 'Les travaux sur les biens communs démontrent-ils que toute ressource partagée est toujours gérée efficacement par les usagers ?',
+            answer: 'Non. Ils montrent que des arrangements collectifs peuvent fonctionner dans certaines conditions, sans garantir le succès dans tous les contextes.'
+          }
+        ],
+        sources: [
+          { title: 'Nobel Prize — Elinor Ostrom, facts and work', url: 'https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/facts/' },
+          { title: 'IPCC — Sixth Assessment Report', url: 'https://www.ipcc.ch/assessment-report/ar6/' },
+          { title: 'United Nations Environment Programme — Resources and reports', url: 'https://www.unep.org/resources' },
+          { title: 'World Bank — Climate Change', url: 'https://www.worldbank.org/en/topic/climatechange' }
+        ]
+      }
+    }
+  ]
+},
 
 ]
