@@ -364,6 +364,10 @@ h2 {
   background: #536b60;
 }
 
+.biology-entry .entry-symbol {
+  background: #2e7d4f;
+}
+
 .entry-copy {
   display: grid;
   gap: 7px;
