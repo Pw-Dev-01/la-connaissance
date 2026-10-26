@@ -5,5 +5,5 @@
   "order": 11,
   "entry": "index.html",
   "dataFile": "litterature-data.js",
-  "class": ""
+  "class": "literature-entry"
 }
