@@ -1315,5 +1315,309 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'economie-environnement',
+  title: 'Économie et environnement',
+  note: 'Six chapitres approfondis sur les liens entre activité économique et environnement : externalités, politiques climatiques, transition énergétique, économie circulaire, biodiversité et adaptation. Les résultats économiques dépendent du contexte, des hypothèses et de la conception des politiques ; les scénarios prospectifs ne sont pas des prédictions certaines.',
+  chapters: [
+    {
+      id: 'externalites-et-defaillances-de-marche',
+      title: 'Les externalités environnementales et les limites du marché',
+      field: 'Économie de l’environnement · Externalités, biens publics et coûts sociaux',
+      summary: 'Comprendre pourquoi les décisions privées de production et de consommation peuvent générer des dommages environnementaux qui ne sont pas entièrement reflétés dans les prix, et comment l’action publique peut corriger ces incitations.',
+      lesson: {
+        sections: [
+          'Une externalité apparaît lorsqu’une activité économique affecte le bien-être ou les possibilités de production d’autres personnes sans que cet effet soit entièrement pris en compte dans la transaction. Une usine peut, par exemple, émettre des polluants qui contribuent à des coûts sanitaires pour les riverains. Si ces dommages ne sont pas payés par le producteur ou l’acheteur, le prix du produit ne reflète pas nécessairement son coût social total. Il ne faut toutefois pas supposer que toute activité polluante a le même impact : les dommages dépendent du polluant, de la quantité émise, du lieu, de l’exposition et des populations concernées.',
+          'Les économistes distinguent le coût privé, supporté directement par le producteur ou le consommateur, et le coût externe, imposé à des tiers. Le coût social correspond au coût privé augmenté des coûts externes pertinents. Lorsque les coûts externes ne sont pas intégrés aux décisions, le marché peut conduire à une production ou une consommation plus élevée que celle qui serait souhaitable du point de vue collectif. Cette conclusion dépend des hypothèses utilisées pour évaluer les dommages et ne signifie pas que l’État connaît toujours parfaitement le niveau optimal de pollution.',
+          'Les biens environnementaux présentent parfois des caractéristiques de biens publics ou de ressources communes. La stabilité du climat bénéficie à de nombreuses personnes sans qu’il soit facile d’en exclure certaines, tandis que les stocks de poissons peuvent être surexploités lorsque l’accès à une ressource est difficile à contrôler. Ces situations compliquent la coordination entre acteurs. Les réponses possibles comprennent des normes, des taxes, des permis échangeables, des droits clairement définis lorsque cela est adapté, des investissements publics et des accords internationaux. Aucun instrument n’est automatiquement supérieur dans tous les contextes : l’efficacité, le contrôle, l’équité et les coûts administratifs doivent être examinés ensemble.'
+        ],
+        example: {
+          statement: 'Une entreprise vend un produit pour 50 euros. Sa production entraîne, selon une estimation hypothétique, 8 euros de dommages environnementaux par unité, qui ne sont pas inclus dans le prix. Quel est le coût social estimé par unité si le coût privé de production est de 30 euros ?',
+          calculation: 'Coût social estimé = coût privé de production + coût externe = 30 + 8 = 38 euros par unité. Le prix de vente de 50 euros ne suffit pas, à lui seul, à déterminer le coût social.',
+          answer: 'Le coût social estimé est de 38 euros par unité, sous l’hypothèse que le dommage externe évalué à 8 euros est complet et correctement mesuré. Il s’agit d’un exemple pédagogique, pas d’une estimation réelle.'
+        },
+        exercise: {
+          question: 'Pourquoi un prix de marché peut-il ne pas refléter le coût environnemental total d’un produit ?',
+          answer: 'Parce qu’une partie des dommages peut être supportée par des tiers et ne pas être intégrée aux coûts ou aux décisions du producteur et du consommateur.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’une externalité négative ?',
+            answer: 'Un effet défavorable d’une activité sur des tiers qui n’est pas entièrement pris en compte dans la transaction économique.'
+          },
+          {
+            question: 'Quelle différence existe entre coût privé et coût social ?',
+            answer: 'Le coût privé est supporté par l’agent économique concerné ; le coût social inclut aussi les coûts externes pertinents imposés à la collectivité.'
+          },
+          {
+            question: 'Citer deux moyens de réduire une externalité environnementale.',
+            answer: 'Par exemple, une norme d’émission et une taxe environnementale ; des permis échangeables ou des investissements publics peuvent aussi être adaptés selon le problème.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OCDE — Applying Economic Instruments to International and Global Environmental Problems',
+            url: 'https://legalinstruments.oecd.org/en/instruments/41'
+          },
+          {
+            title: 'OCDE — Policy Instruments for the Environment (PINE) Database',
+            url: 'https://www.oecd.org/en/data/datasets/policy-instruments-for-the-environment-pine-database.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'prix-du-carbone-et-politiques-publiques',
+      title: 'Le prix du carbone et les politiques environnementales',
+      field: 'Économie publique · Fiscalité environnementale et systèmes d’échange de quotas',
+      summary: 'Étudier comment les taxes carbone et les systèmes d’échange de quotas peuvent inciter à réduire les émissions, tout en analysant leurs limites distributives, politiques et pratiques.',
+      lesson: {
+        sections: [
+          'La tarification du carbone vise à intégrer une partie du coût climatique des émissions dans les décisions économiques. Deux grandes familles d’instruments sont courantes. Une taxe carbone fixe un prix par unité d’émissions ou de combustible selon son contenu en carbone. Un système d’échange de quotas fixe une limite globale d’émissions pour les entités couvertes et permet l’échange de quotas. Dans le premier cas, le prix est déterminé par la règle fiscale ; dans le second, le prix des quotas résulte notamment de l’offre, de la demande et des règles du marché. Le fonctionnement concret varie selon les juridictions et les secteurs couverts.',
+          'Un prix du carbone peut rendre les activités fortement émettrices relativement plus coûteuses et encourager les économies d’énergie, les changements de procédés, l’innovation et l’investissement dans des solutions moins carbonées. Son effet dépend cependant du niveau et de la prévisibilité du prix, des possibilités techniques de réduction, de la couverture des émissions, des exemptions et des politiques complémentaires. Un prix faible ou instable peut envoyer un signal d’investissement limité ; à l’inverse, une hausse rapide peut poser des difficultés aux ménages et entreprises qui ne disposent pas d’alternatives abordables à court terme.',
+          'La répartition des coûts est un enjeu essentiel. Une taxe sur les combustibles peut peser proportionnellement davantage sur les ménages modestes si ceux-ci consacrent une part élevée de leur budget au chauffage et aux transports et ne peuvent pas changer rapidement d’équipement ou de logement. Des transferts ciblés, des aides à la rénovation, des transports collectifs et une utilisation transparente des recettes peuvent atténuer ces effets. Les compensations doivent être conçues avec soin pour protéger les ménages sans supprimer complètement l’incitation à réduire les émissions. La tarification du carbone n’est pas une solution isolée : normes, infrastructures, recherche et soutien à l’innovation peuvent être nécessaires.'
+        ],
+        example: {
+          statement: 'Une taxe hypothétique est fixée à 40 euros par tonne de CO2. Une installation émet 250 tonnes de CO2 imposables. Quel est le montant brut de la taxe avant exemptions ou ajustements ?',
+          calculation: 'Taxe brute = 40 euros par tonne × 250 tonnes = 10 000 euros.',
+          answer: 'Le montant brut est de 10 000 euros. Ce calcul illustre la mécanique d’une taxe ; il ne décrit pas le régime fiscal d’un pays précis.'
+        },
+        exercise: {
+          question: 'Quelle est la différence principale entre une taxe carbone et un système d’échange de quotas ?',
+          answer: 'La taxe fixe directement un prix fiscal par unité concernée ; un système de quotas fixe une limite d’émissions couvertes et laisse le marché contribuer à déterminer le prix des quotas.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi la prévisibilité d’un prix du carbone peut-elle compter pour les investissements ?',
+            answer: 'Les investissements énergétiques durent souvent de nombreuses années ; un signal prévisible aide les acteurs à comparer les coûts futurs des options disponibles.'
+          },
+          {
+            question: 'Pourquoi une politique carbone peut-elle avoir des effets distributifs inégaux ?',
+            answer: 'Les ménages diffèrent par leurs revenus, leurs besoins énergétiques, leur lieu de résidence et leur capacité à accéder à des solutions de remplacement.'
+          },
+          {
+            question: 'Donner un exemple de mesure complémentaire à la tarification du carbone.',
+            answer: 'Une aide ciblée à l’isolation des logements, le développement des transports collectifs ou le soutien à la recherche bas-carbone.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Banque mondiale — State and Trends of Carbon Pricing 2026',
+            url: 'https://www.worldbank.org/en/publication/state-and-trends-of-carbon-pricing'
+          },
+          {
+            title: 'Banque mondiale — Carbon Pricing Dashboard',
+            url: 'https://carbonpricingdashboard.worldbank.org/'
+          },
+          {
+            title: 'OCDE — Policy Instruments for the Environment (PINE) Database',
+            url: 'https://www.oecd.org/en/data/datasets/policy-instruments-for-the-environment-pine-database.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'transition-energetique-et-investissement',
+      title: 'La transition énergétique : coûts, investissements et compétitivité',
+      field: 'Économie de l’énergie · Investissements, prix de l’électricité et décarbonation',
+      summary: 'Analyser les transformations du système énergétique, les besoins d’investissement et les arbitrages entre coûts de production, réseaux, stockage, sécurité d’approvisionnement et réduction des émissions.',
+      lesson: {
+        sections: [
+          'La transition énergétique désigne la transformation progressive de la production, de la distribution et de l’usage de l’énergie afin de réduire les émissions et d’autres impacts environnementaux. Elle mobilise plusieurs leviers : efficacité énergétique, énergies renouvelables, électrification, réseaux, stockage, flexibilité de la demande et, selon les pays, autres moyens de production bas-carbone. Il n’existe pas de combinaison universelle : le potentiel dépend des ressources locales, de la structure industrielle, des infrastructures, des choix collectifs et des contraintes de sécurité d’approvisionnement.',
+          'Comparer les technologies demande de distinguer plusieurs coûts. Le coût actualisé de l’électricité (LCOE) rapporte les coûts d’un projet à sa production électrique estimée sur sa durée de vie, en tenant compte d’hypothèses financières. Il est utile pour comparer certains projets, mais ne représente pas à lui seul le coût total d’un système électrique. L’intégration de productions variables peut nécessiter des réseaux, du stockage, des moyens pilotables ou une gestion plus souple de la demande. Les coûts de financement sont également déterminants : un taux d’intérêt élevé peut rendre plus difficile le financement de projets dont les dépenses sont initiales et les revenus étalés sur de nombreuses années.',
+          'La transition peut créer des activités et des emplois dans la construction, l’ingénierie, l’installation, la maintenance et les chaînes d’approvisionnement. Elle peut aussi fragiliser des régions dépendantes de secteurs fossiles ou de certaines industries intensives en énergie. Le bilan économique dépend donc de la vitesse du changement, de la formation, de la localisation des investissements, des importations, de la concurrence et de la qualité des politiques d’accompagnement. Une baisse du coût d’une technologie ne garantit pas automatiquement une baisse identique de la facture finale : les coûts de réseau, les taxes, les contrats, le financement et les règles de marché interviennent également.'
+        ],
+        example: {
+          statement: 'Deux projets produisent chacun 1 000 MWh par an. Le projet A a un coût annuel total estimé de 50 000 euros et le projet B de 65 000 euros. Quel est leur coût annuel moyen par MWh, sans actualisation ni autres ajustements ?',
+          calculation: 'Projet A : 50 000 / 1 000 = 50 euros/MWh. Projet B : 65 000 / 1 000 = 65 euros/MWh.',
+          answer: 'Dans cet exemple simplifié, le projet A coûte 50 euros/MWh et le projet B 65 euros/MWh. Une comparaison réelle devrait examiner la durée de vie, le financement, la disponibilité, les coûts de système et les hypothèses de production.'
+        },
+        exercise: {
+          question: 'Pourquoi le coût actualisé de l’électricité ne suffit-il pas toujours à comparer le coût total de deux systèmes électriques ?',
+          answer: 'Parce qu’il ne représente pas nécessairement tous les coûts d’intégration du système, comme les réseaux, le stockage, la flexibilité et les besoins de capacité.'
+        },
+        exercises: [
+          {
+            question: 'Citer trois éléments qui peuvent faciliter l’intégration des énergies renouvelables variables.',
+            answer: 'Des réseaux adaptés, du stockage et une demande plus flexible ; des interconnexions et des moyens pilotables peuvent également contribuer.'
+          },
+          {
+            question: 'Comment les taux d’intérêt peuvent-ils influencer un projet énergétique ?',
+            answer: 'Ils modifient le coût du financement et donc la rentabilité attendue, particulièrement pour les projets nécessitant de fortes dépenses initiales.'
+          },
+          {
+            question: 'Pourquoi la transition énergétique peut-elle créer à la fois des opportunités et des difficultés économiques ?',
+            answer: 'Elle développe de nouvelles activités et compétences, mais peut aussi réduire l’activité de secteurs existants et affecter certaines régions ou catégories de travailleurs.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Agence internationale de l’énergie — Renewables 2024: Executive Summary',
+            url: 'https://www.iea.org/reports/renewables-2024/executive-summary'
+          },
+          {
+            title: 'Agence internationale de l’énergie — World Energy Investment 2024: Overview and Key Findings',
+            url: 'https://www.iea.org/reports/world-energy-investment-2024/overview-and-key-findings/'
+          },
+          {
+            title: 'GIEC — AR6 Synthesis Report: Summary for Policymakers',
+            url: 'https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'economie-circulaire-et-ressources',
+      title: 'L’économie circulaire : réduire l’extraction et repenser la production',
+      field: 'Économie des ressources · Écoconception, réparation, réemploi et recyclage',
+      summary: 'Étudier les modèles économiques qui cherchent à maintenir les produits et les matériaux en usage plus longtemps, à limiter les déchets et à réduire la dépendance aux matières premières vierges.',
+      lesson: {
+        sections: [
+          'L’économie linéaire est souvent résumée par la séquence extraire, produire, consommer et jeter. L’économie circulaire cherche à limiter les pertes de matières et la production de déchets en agissant sur tout le cycle de vie : conception durable, réduction de la consommation de ressources, entretien, réparation, réemploi, reconditionnement, remanufacturage et recyclage. Ces stratégies ne sont pas équivalentes. Prolonger la durée de vie d’un produit peut éviter de fabriquer un produit neuf ; le recyclage récupère certaines matières, mais nécessite lui-même de l’énergie et ne permet pas toujours de retrouver la qualité initiale.',
+          'Les entreprises peuvent développer des modèles économiques fondés sur la réparation, la location, le partage, la reprise des produits ou la vente de services. Ces modèles peuvent réduire les besoins en matières premières et ouvrir de nouvelles activités, mais leur réussite dépend de la demande, de la qualité des produits, de la logistique, du coût du travail, de la réglementation et de la disponibilité de matières récupérées. Les bénéfices environnementaux doivent être évalués sur l’ensemble du cycle de vie : une solution présentée comme circulaire n’est pas nécessairement meilleure si elle exige beaucoup de transport, d’énergie ou de matériaux supplémentaires.',
+          'La circularité peut améliorer la résilience économique en diminuant l’exposition à la volatilité de certains marchés de matières premières et en favorisant la réparation ou la récupération locale. Elle ne garantit toutefois ni une baisse absolue de l’extraction ni une réduction automatique des émissions. Un effet rebond est possible : les économies réalisées grâce à un produit plus efficace peuvent être dépensées pour davantage de consommation, ce qui réduit une partie des gains. Il faut donc suivre plusieurs indicateurs, comme la quantité totale de matières utilisées, la durée de vie des produits, les taux de réemploi, la qualité du recyclage, les déchets générés et les impacts environnementaux globaux.'
+        ],
+        example: {
+          statement: 'Une entreprise remplace chaque année 200 équipements par des appareils neufs. Un programme de réparation permet d’en prolonger l’usage pour 60 équipements supplémentaires pendant un an. Quelle part des 200 remplacements annuels cela représente-t-il ?',
+          calculation: 'Part prolongée = 60 / 200 × 100 = 30 %.',
+          answer: 'Le programme prolonge l’usage de 30 % du nombre d’équipements habituellement remplacés dans cet exemple. Ce chiffre ne permet pas à lui seul de calculer les économies nettes de matières ou d’émissions.'
+        },
+        exercise: {
+          question: 'Pourquoi la réparation et le réemploi peuvent-ils parfois préserver davantage de valeur qu’un recyclage immédiat ?',
+          answer: 'Ils peuvent maintenir le produit ou ses composants en service et éviter une partie des ressources nécessaires à la fabrication d’un produit neuf, selon les conditions concrètes.'
+        },
+        exercises: [
+          {
+            question: 'Citer quatre stratégies relevant de l’économie circulaire.',
+            answer: 'L’écoconception, la réparation, le réemploi et le recyclage ; l’entretien, le reconditionnement et le remanufacturage en sont d’autres.'
+          },
+          {
+            question: 'Qu’est-ce qu’un effet rebond ?',
+            answer: 'Une situation dans laquelle les économies ou gains d’efficacité entraînent une hausse d’usage ou de consommation qui réduit une partie des bénéfices attendus.'
+          },
+          {
+            question: 'Pourquoi faut-il évaluer les impacts sur l’ensemble du cycle de vie ?',
+            answer: 'Parce qu’une réduction d’impact à une étape peut s’accompagner de coûts ou d’impacts supplémentaires à d’autres étapes, notamment lors de la production, du transport ou du traitement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Agence européenne pour l’environnement — The environmental and climate benefits of a circular economy',
+            url: 'https://www.eea.europa.eu/en/analysis/publications/the-environmental-and-climate-benefits-of-circular-economy'
+          },
+          {
+            title: 'Agence européenne pour l’environnement — Europe’s circular economy in facts and figures',
+            url: 'https://www.eea.europa.eu/en/analysis/publications/europes-circular-economy-in-facts'
+          },
+          {
+            title: 'Agence européenne pour l’environnement — Circular design and sustainable production',
+            url: 'https://www.eea.europa.eu/en/europe-environment-2025/thematic-briefings/circular-economy-and-other-enablers-of-transformative-change/circular-design-and-sustainable-production'
+          }
+        ]
+      }
+    },
+    {
+      id: 'biodiversite-capital-naturel-et-croissance',
+      title: 'Biodiversité, capital naturel et activité économique',
+      field: 'Économie écologique · Services écosystémiques, dépendances et risques',
+      summary: 'Comprendre comment les économies dépendent des écosystèmes et pourquoi la perte de biodiversité peut générer des risques pour la production, les chaînes d’approvisionnement et le bien-être collectif.',
+      lesson: {
+        sections: [
+          'Le capital naturel désigne les stocks d’actifs naturels — sols, eau, forêts, zones humides, espèces et écosystèmes — qui contribuent à produire des biens et des services. Les écosystèmes peuvent soutenir la pollinisation, la fertilité des sols, la régulation de l’eau, la protection contre certains risques naturels et des activités culturelles ou récréatives. Ces contributions sont parfois qualifiées de services écosystémiques. Elles n’ont pas toutes un prix de marché, mais leur absence peut entraîner des coûts économiques importants. Les évaluer en termes monétaires peut éclairer certaines décisions, sans pour autant résumer toutes les valeurs écologiques, culturelles ou éthiques de la nature.',
+          'La dégradation des écosystèmes peut affecter l’agriculture, la pêche, la foresterie, le tourisme, la santé et des industries dépendantes de ressources naturelles ou de services écologiques. Les risques peuvent se transmettre à travers les chaînes d’approvisionnement : une entreprise peut être exposée à la raréfaction d’une ressource, à la dégradation d’un bassin versant ou à des changements réglementaires liés à la protection de la nature. Les effets sont souvent localisés et inégalement répartis ; les populations qui dépendent directement des ressources naturelles peuvent être particulièrement vulnérables. Il est donc important de préciser le lieu, le secteur, l’horizon temporel et les groupes affectés lorsqu’on estime un risque lié à la biodiversité.',
+          'Les politiques de protection et de restauration peuvent inclure des aires protégées, la restauration des habitats, la réduction des pollutions, des règles d’usage des terres, des paiements pour services écosystémiques ou la suppression de mesures qui encouragent des dommages environnementaux. Leur conception doit examiner les droits fonciers, les moyens de subsistance, les coûts d’opportunité, la participation des communautés et le suivi des résultats. Une mesure peut produire des bénéfices collectifs tout en imposant des coûts à certains acteurs ; les mécanismes de compensation et de gouvernance sont alors importants. Les estimations de valeur économique de la nature comportent des incertitudes et ne devraient pas être interprétées comme une autorisation de remplacer tout écosystème détruit par une compensation financière.'
+        ],
+        example: {
+          statement: 'Une exploitation agricole estime qu’une baisse de pollinisation réduirait sa production vendable de 12 000 euros sur une saison, tandis qu’une mesure de restauration coûte 7 000 euros. Quelle est la différence simple entre le dommage estimé évité et le coût de la mesure, si elle évite effectivement ce dommage ?',
+          calculation: 'Différence estimée = 12 000 - 7 000 = 5 000 euros.',
+          answer: 'La différence est de 5 000 euros dans cette hypothèse simplifiée. Elle ne constitue pas une analyse complète : il faudrait vérifier l’efficacité de la mesure, sa durée, les autres coûts et bénéfices, ainsi que l’incertitude de l’estimation.'
+        },
+        exercise: {
+          question: 'Pourquoi la disparition d’un service écosystémique peut-elle représenter un risque économique même si ce service n’a pas de prix de marché ?',
+          answer: 'Parce que des activités peuvent dépendre de ce service et devoir supporter des pertes de production, des coûts de remplacement ou des risques plus élevés lorsqu’il se dégrade.'
+        },
+        exercises: [
+          {
+            question: 'Qu’appelle-t-on capital naturel ?',
+            answer: 'Les stocks d’actifs naturels, tels que les sols, l’eau, les forêts et les écosystèmes, qui contribuent au bien-être et à l’activité économique.'
+          },
+          {
+            question: 'Donner deux exemples de services écosystémiques.',
+            answer: 'La pollinisation des cultures et la régulation de l’eau ; la protection des sols et le stockage du carbone en sont d’autres.'
+          },
+          {
+            question: 'Pourquoi une estimation monétaire de la biodiversité doit-elle être interprétée avec prudence ?',
+            answer: 'Elle dépend des méthodes et des hypothèses et ne capture pas nécessairement toutes les valeurs écologiques, sociales, culturelles ou éthiques de la nature.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IPBES — Global Assessment Report on Biodiversity and Ecosystem Services',
+            url: 'https://ipbes.net/global-assessment'
+          },
+          {
+            title: 'OCDE — Biodiversity: Finance and the Economic and Business Case for Action',
+            url: 'https://www.oecd.org/environment/resources/biodiversity/'
+          },
+          {
+            title: 'Agence européenne pour l’environnement — Economy and resources',
+            url: 'https://www.eea.europa.eu/en/topics/at-a-glance/economy-and-resources'
+          }
+        ]
+      }
+    },
+    {
+      id: 'adaptation-climatique-et-justice-economique',
+      title: 'Adaptation climatique, dommages économiques et transition juste',
+      field: 'Économie du climat · Adaptation, résilience, répartition des coûts et bénéfices',
+      summary: 'Examiner les coûts des risques climatiques, l’intérêt économique de l’adaptation et les enjeux d’équité lorsque les impacts et les moyens d’y répondre sont inégalement répartis.',
+      lesson: {
+        sections: [
+          'Le changement climatique peut affecter l’économie par les vagues de chaleur, les sécheresses, les inondations, l’élévation du niveau de la mer et d’autres évolutions des risques physiques. Les effets peuvent toucher la santé et la productivité du travail, les infrastructures, l’agriculture, l’assurance, les chaînes logistiques et les finances publiques. Les dommages observés ou projetés varient selon l’exposition, la vulnérabilité, la capacité d’adaptation et le scénario climatique. Il est donc trompeur de présenter un chiffre unique comme le coût certain du changement climatique pour tous les pays et toutes les périodes.',
+          'L’adaptation regroupe les mesures qui réduisent les dommages ou améliorent la capacité à faire face aux effets climatiques : systèmes d’alerte, plans contre les fortes chaleurs, gestion de l’eau, restauration de zones humides, infrastructures adaptées et évolution des pratiques agricoles. Une analyse économique peut comparer les coûts d’une mesure aux dommages qu’elle pourrait éviter, mais elle doit tenir compte de l’incertitude, de la durée de vie, de l’entretien, des effets secondaires et des personnes qui bénéficient de la protection. Une infrastructure peut aussi déplacer le risque vers une autre zone ou encourager de nouvelles constructions dans un secteur exposé ; les politiques d’adaptation doivent donc être réévaluées dans le temps.',
+          'La transition juste s’intéresse à la distribution des coûts, des bénéfices et des possibilités de participation pendant la transformation de l’économie. Les travailleurs, territoires et ménages ne sont pas affectés de la même façon par les changements d’emploi, les prix de l’énergie ou les investissements. La formation professionnelle, les services publics, le dialogue social, l’aide ciblée et les stratégies de reconversion peuvent contribuer à répartir les opportunités et à soutenir les personnes concernées. Le financement de l’adaptation est également un enjeu de justice : les communautés les plus exposées ne disposent pas toujours des ressources nécessaires. Les décisions doivent articuler efficacité économique, réduction des risques, droits sociaux et objectifs environnementaux.'
+        ],
+        example: {
+          statement: 'Une commune envisage une mesure d’adaptation qui coûte 2 millions d’euros et estime, dans un scénario hypothétique, qu’elle évitera 3 millions d’euros de dommages cumulés. Quelle est la différence entre les dommages évités estimés et le coût initial ?',
+          calculation: 'Différence simple = 3 millions - 2 millions = 1 million d’euros.',
+          answer: 'La différence simple est de 1 million d’euros. Pour conclure qu’il s’agit d’un investissement économiquement avantageux, il faudrait aussi préciser l’horizon temporel, actualiser les flux si nécessaire, intégrer l’entretien et examiner l’incertitude des dommages évités.'
+        },
+        exercise: {
+          question: 'Pourquoi une politique d’adaptation peut-elle être économiquement utile même si elle ne supprime pas tous les risques climatiques ?',
+          answer: 'Elle peut réduire la probabilité ou l’ampleur de certains dommages et améliorer la préparation, même si une part du risque demeure.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence existe entre atténuation et adaptation au changement climatique ?',
+            answer: 'L’atténuation réduit les émissions de gaz à effet de serre ou renforce les absorptions ; l’adaptation réduit la vulnérabilité et les dommages liés aux effets climatiques.'
+          },
+          {
+            question: 'Citer deux mesures d’adaptation.',
+            answer: 'Des systèmes d’alerte aux inondations et des plans de prévention des risques liés aux fortes chaleurs ; la gestion de l’eau et l’adaptation des infrastructures sont d’autres exemples.'
+          },
+          {
+            question: 'Que cherche à prendre en compte la notion de transition juste ?',
+            answer: 'La répartition des coûts et bénéfices de la transition, les besoins des travailleurs et des territoires concernés, et la participation des personnes affectées.'
+          }
+        ],
+        sources: [
+          {
+            title: 'GIEC — AR6 Synthesis Report: Summary for Policymakers',
+            url: 'https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/'
+          },
+          {
+            title: 'GIEC — Climate Change 2022: Impacts, Adaptation and Vulnerability',
+            url: 'https://www.ipcc.ch/report/ar6/wg2/'
+          },
+          {
+            title: 'Agence internationale de l’énergie — World Energy Investment 2024: Overview and Key Findings',
+            url: 'https://www.iea.org/reports/world-energy-investment-2024/overview-and-key-findings/'
+          }
+        ]
+      }
+    }
+  ]
+}
+
 
 ]
