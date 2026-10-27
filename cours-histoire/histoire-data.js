@@ -4470,5 +4470,337 @@ window.courseCatalog = [
   ]
 },
 
-];
+{
+  id: 'histoire-chine-ancienne',
+  sortYear: -2070,
+  title: 'La Chine ancienne',
+  note: 'Six chapitres sur les sociétés anciennes de Chine, des premières dynasties aux Han (vers 2070 av. J.-C. à 220 apr. J.-C.). Les dates des Xia sont traditionnelles et leur identification historique demeure discutée ; les dates des Shang et des Zhou sont également approximatives selon les chronologies retenues. La Chine ancienne ne constitue pas une histoire uniforme : les pouvoirs, les pratiques et les cultures varient selon les régions.',
+  chapters: [
+    {
+      id: 'premieres-societes-et-dynastie-xia',
+      title: 'Des premières sociétés agricoles à la dynastie Xia',
+      field: 'Chine ancienne · Néolithique et premières traditions dynastiques, avant environ 1600 av. J.-C.',
+      summary: 'Étudier la diversité des sociétés néolithiques, l’essor de l’agriculture et des villages, puis distinguer les traditions relatives aux Xia des preuves archéologiques disponibles.',
+      lesson: {
+        sections: [
+          'Le territoire correspondant à la Chine actuelle a accueilli, dès la préhistoire, des sociétés différentes selon les milieux et les régions. Dans le nord, le bassin du fleuve Jaune a notamment favorisé la culture de céréales comme le millet ; dans plusieurs régions du sud, les populations ont développé des systèmes agricoles adaptés à des environnements plus humides, dont la riziculture. Ces évolutions ne se sont pas produites partout au même moment et ne résultent pas d’un unique centre culturel. Les communautés pratiquaient aussi l’élevage, la chasse, la pêche, la collecte et des échanges de matières premières.',
+          'Au Néolithique, certains villages deviennent plus importants et les vestiges montrent des activités spécialisées : fabrication de poteries, outils de pierre, travail des matières premières, stockage et pratiques funéraires. Le site de Banpo, près de l’actuelle Xi’an, est un exemple de village néolithique associé à la culture de Yangshao, généralement datée du Ve millénaire av. J.-C. Il renseigne sur l’habitat, la céramique et les activités agricoles d’une communauté, mais ne représente pas à lui seul l’ensemble des sociétés de la Chine préhistorique. Les différences régionales doivent rester au centre de l’interprétation.',
+          'La dynastie Xia est traditionnellement placée vers 2070–1600 av. J.-C. dans certaines chronologies chinoises. Les récits anciens associent notamment Yu le Grand à la maîtrise des crues et à la fondation de la dynastie. Cependant, aucun ensemble d’inscriptions contemporaines unanimement identifié ne permet de relier de manière certaine la dynastie Xia des textes à une entité politique précise. Le site d’Erlitou, dans le bassin du fleuve Jaune et daté approximativement du IIe millénaire av. J.-C., révèle une société hiérarchisée avec des bâtiments, des ateliers et des objets de prestige. Certains chercheurs le rapprochent des Xia, mais cette identification n’est pas un fait définitivement établi.',
+          'Pour étudier cette période, il faut comparer les récits rédigés plus tard avec les données matérielles : habitats, sépultures, objets, restes alimentaires et organisation des sites. Un récit traditionnel est une source importante pour comprendre la mémoire historique et les idées politiques d’époques ultérieures, mais il ne constitue pas automatiquement une preuve contemporaine des événements qu’il décrit. Cette distinction entre tradition, hypothèse archéologique et fait solidement documenté est essentielle pour construire une chronologie fiable.'
+        ],
+        example: {
+          statement: 'Une frise indique la date traditionnelle de 2070 av. J.-C. pour le début des Xia et une date d’environ 1600 av. J.-C. pour leur fin. Comment faut-il interpréter ces repères ?',
+          calculation: 'En chronologie av. J.-C., une date portant un nombre plus élevé est plus ancienne. L’écart arithmétique entre 2070 et 1600 est de 470 ans, mais les deux bornes restent des repères traditionnels approximatifs.',
+          answer: 'La chronologie traditionnelle situe les Xia avant les Shang et leur attribue environ 470 ans. Cette durée ne doit pas être présentée comme une mesure historique certaine, car l’identification des Xia demeure discutée.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les récits traditionnels sur les Xia des données archéologiques ?',
+          answer: 'Parce que les récits conservés ont été rédigés ou transmis dans des contextes ultérieurs, tandis que l’archéologie étudie les vestiges matériels. Les deux types de sources peuvent être comparés, mais ils ne prouvent pas automatiquement la même chose.'
+        },
+        exercises: [
+          {
+            question: 'Quel fleuve est particulièrement associé aux premières sociétés agricoles du nord de la Chine ?',
+            answer: 'Le fleuve Jaune, même si d’autres régions et bassins fluviaux ont aussi développé leurs propres sociétés agricoles.'
+          },
+          {
+            question: 'Le site d’Erlitou est-il identifié avec certitude comme la capitale des Xia ?',
+            answer: 'Non. Erlitou est un site archéologique majeur, parfois rapproché des Xia, mais cette identification reste discutée.'
+          },
+          {
+            question: 'Pourquoi Banpo ne suffit-il pas à représenter toutes les sociétés néolithiques de Chine ?',
+            answer: 'Parce que les sociétés anciennes étaient diverses et que les pratiques agricoles, les habitats et les cultures matérielles variaient selon les régions.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Chine antique',
+            url: 'https://www.worldhistory.org/trans/fr/1-467/chine-antique/'
+          },
+          {
+            title: 'World History Encyclopedia — Chronologie visuelle des dynasties impériales de Chine',
+            url: 'https://www.worldhistory.org/trans/fr/3-16125/chronologie-visuelle-des-dynasties-imperiales-de-c/'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Erlitou',
+            url: 'https://www.britannica.com/place/Erlitou'
+          }
+        ]
+      }
+    },
+    {
+      id: 'dynastie-shang-ecriture-bronze-rituels',
+      title: 'La dynastie Shang : écriture, bronze et pouvoir royal',
+      field: 'Chine ancienne · Dynastie Shang, vers 1600–1046 av. J.-C.',
+      summary: 'Comprendre ce que les inscriptions, les bronzes rituels et les sites archéologiques révèlent sur le pouvoir, la religion et l’organisation sociale des Shang.',
+      lesson: {
+        sections: [
+          'La dynastie Shang est la première dynastie chinoise attestée de manière solide par des sources écrites et archéologiques convergentes. Elle est généralement datée d’environ 1600 à 1046 av. J.-C., avec des variations selon les chronologies. Son pouvoir était centré dans le nord de la Chine, dans la vallée du fleuve Jaune, et la cour changea plusieurs fois de résidence avant de s’établir à Anyang vers la fin de la période. Les fouilles y ont révélé des espaces palatiaux, des ateliers, des sépultures et des objets rituels qui indiquent une organisation politique hiérarchisée.',
+          'Les inscriptions sur os et carapaces, souvent appelées os oraculaires, constituent une source capitale. Des spécialistes gravaient des questions destinées à la divination, notamment sur les récoltes, la météo, les campagnes militaires, les sacrifices ou la santé du souverain. Les inscriptions conservées documentent les préoccupations de la cour et certaines formes anciennes de l’écriture chinoise. Elles ne constituent toutefois pas un récit complet de la société : elles privilégient les intérêts royaux et religieux et ne donnent qu’un accès indirect à la vie quotidienne de la majorité de la population.',
+          'La métallurgie du bronze atteint un haut niveau technique et artistique. Les artisans fabriquaient des récipients employés lors de cérémonies, ainsi que des armes et d’autres objets. La production nécessitait l’accès aux matières premières, des savoir-faire spécialisés et une organisation du travail. Les bronzes décorés témoignent à la fois d’une maîtrise technique et d’un système rituel dans lequel les ancêtres et les cérémonies royales occupaient une place importante. Il ne faut cependant pas supposer que tous les habitants possédaient ces objets : les pièces les plus élaborées sont surtout liées aux élites et aux contextes rituels.',
+          'La royauté Shang associait le gouvernement, la guerre et les relations avec les puissances spirituelles. Les inscriptions mentionnent Di, des esprits et les ancêtres royaux, auxquels on attribuait une influence sur les événements. Les rites contribuaient à légitimer le souverain et à maintenir des liens entre la famille royale et ses ancêtres. Vers 1046 av. J.-C., les Zhou vainquirent les Shang selon la chronologie conventionnelle. Les récits ultérieurs expliquent ce changement par la perte de vertu du dernier roi Shang ; ils doivent être lus comme des traditions politiques, en les confrontant aux éléments matériels disponibles.'
+        ],
+        example: {
+          statement: 'Une inscription Shang pose une question sur la réussite d’une récolte. Que peut-on raisonnablement en déduire ?',
+          calculation: 'Il faut séparer l’observation de l’interprétation : l’inscription atteste que la récolte était une préoccupation de la cour et qu’une pratique divinatoire était utilisée. Elle ne prouve pas à elle seule que la récolte fut bonne ou mauvaise.',
+          answer: 'L’inscription renseigne sur les préoccupations agricoles et religieuses du pouvoir Shang, mais sa réponse éventuelle doit être examinée avant de conclure sur l’issue réelle de la récolte.'
+        },
+        exercise: {
+          question: 'Pourquoi les os oraculaires sont-ils essentiels à l’étude de la dynastie Shang ?',
+          answer: 'Ils fournissent des inscriptions contemporaines qui documentent notamment la divination, les activités royales et une forme ancienne de l’écriture chinoise.'
+        },
+        exercises: [
+          {
+            question: 'Quels supports étaient couramment utilisés pour les inscriptions divinatoires Shang ?',
+            answer: 'Des os d’animaux et des carapaces de tortue.'
+          },
+          {
+            question: 'À quoi servaient notamment les récipients en bronze Shang ?',
+            answer: 'À des usages rituels et cérémoniels, en particulier dans les pratiques liées aux ancêtres.'
+          },
+          {
+            question: 'Les inscriptions royales décrivent-elles de façon complète la vie de tous les habitants ?',
+            answer: 'Non. Elles reflètent principalement les préoccupations de la cour et ne documentent qu’indirectement la plupart des habitants.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Chine antique',
+            url: 'https://www.worldhistory.org/trans/fr/1-467/chine-antique/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Oracle bone, Shang dynasty',
+            url: 'https://www.metmuseum.org/art/collection/search/60696'
+          },
+          {
+            title: 'Smithsonian National Museum of Asian Art — Shang dynasty',
+            url: 'https://asia.si.edu/education/educator-resources/teaching-china-with-the-smithsonian/explore-by-dynasty/shang-dynasty-2/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — The Arts of Ancient China',
+            url: 'https://resources.metmuseum.org/resources/metpublications/pdf/The_Arts_of_Ancient_China_The_Metropolitan_Museum_of_Art_Bulletin_v_32_no_2_1973_1974.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'dynastie-zhou-mandat-du-ciel',
+      title: 'La dynastie Zhou et le Mandat du Ciel',
+      field: 'Chine ancienne · Zhou occidentaux vers 1046–771 av. J.-C. ; Zhou orientaux vers 771–256 av. J.-C.',
+      summary: 'Étudier la légitimité politique des Zhou, l’évolution de leur autorité et les transformations qui conduisent à la fragmentation du pouvoir.',
+      lesson: {
+        sections: [
+          'La dynastie Zhou succède aux Shang vers 1046 av. J.-C. et reste, selon la chronologie conventionnelle, la plus longue dynastie de la Chine ancienne. On distingue les Zhou occidentaux, dont le centre politique se trouvait dans la région de la vallée de la Wei, et les Zhou orientaux, après le déplacement de la cour vers l’est en 771 av. J.-C. Cette division est utile pour la chronologie, mais elle ne signifie pas que toutes les structures politiques et sociales changèrent brutalement à ces dates.',
+          'Les Zhou développèrent la notion de Mandat du Ciel, selon laquelle le souverain tient sa légitimité du Ciel tant qu’il gouverne de manière convenable. Cette doctrine permettait d’expliquer le remplacement des Shang par les Zhou et pouvait ensuite servir à justifier la chute d’une dynastie. Elle ne doit pas être comprise comme une constitution au sens moderne : il s’agissait d’un principe moral et politique transmis dans des textes et réinterprété au fil des siècles. Les souverains et les lettrés pouvaient invoquer le comportement du gouvernement, les désordres ou les catastrophes pour débattre de la légitimité dynastique.',
+          'Au début de la période Zhou, le pouvoir s’appuyait sur la famille royale et sur des lignages alliés ou apparentés auxquels des territoires et des responsabilités étaient confiés. Au fil du temps, les dirigeants régionaux renforcèrent leur autonomie. Pendant la période des Printemps et Automnes, traditionnellement datée d’environ 770 à 476 av. J.-C., la cour Zhou conserva un prestige rituel mais ne contrôlait plus efficacement tous les États. Pendant la période des Royaumes combattants, souvent datée d’environ 475 à 221 av. J.-C., plusieurs États rivaux développèrent des administrations, des armées et des stratégies visant à accroître leur puissance.',
+          'Les transformations politiques s’accompagnèrent d’évolutions économiques et techniques : extension de l’usage du fer, développement de l’agriculture, travaux hydrauliques, croissance de centres urbains et nouvelles formes de mobilisation de la population. Ces changements ne se produisirent pas partout de manière identique. Les guerres entre États provoquèrent des destructions et des déplacements, mais stimulèrent également les débats sur la conduite du gouvernement, l’ordre social et les méthodes permettant de stabiliser un royaume. Les réformes de l’État Qin s’inscrivent dans ce contexte de compétition politique.'
+        ],
+        example: {
+          statement: 'Pourquoi un souverain Zhou pouvait-il invoquer le Mandat du Ciel pour légitimer le remplacement des Shang ?',
+          calculation: 'Le raisonnement associait la légitimité politique à la conduite du souverain : si une dynastie était jugée injuste ou incapable de gouverner, ses adversaires pouvaient prétendre que le Ciel lui avait retiré son mandat.',
+          answer: 'Le Mandat du Ciel fournissait une justification morale au changement dynastique. Il s’agit d’une doctrine politique ancienne, et non d’une preuve objective que des forces surnaturelles avaient déterminé l’issue d’une guerre.'
+        },
+        exercise: {
+          question: 'Comment l’autorité des Zhou a-t-elle évolué entre le début de la dynastie et la période des Royaumes combattants ?',
+          answer: 'L’autorité royale s’est progressivement affaiblie au profit d’États régionaux plus autonomes, qui se sont affrontés pour le contrôle du territoire.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie le Mandat du Ciel dans la pensée politique Zhou ?',
+            answer: 'La légitimité du souverain dépend de sa conduite et peut être considérée comme perdue si son gouvernement est jugé indigne.'
+          },
+          {
+            question: 'Quelle différence générale distingue les Zhou occidentaux des Zhou orientaux ?',
+            answer: 'La période des Zhou occidentaux précède le déplacement de la cour vers l’est, traditionnellement situé en 771 av. J.-C.'
+          },
+          {
+            question: 'Pourquoi les Royaumes combattants sont-ils une période de concurrence entre États ?',
+            answer: 'Parce que plusieurs États disposaient de pouvoirs militaires et administratifs renforcés et cherchaient à dominer leurs rivaux.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Dynastie Zhou',
+            url: 'https://www.worldhistory.org/trans/fr/1-12403/dynastie-zhou/'
+          },
+          {
+            title: 'World History Encyclopedia — Chine antique',
+            url: 'https://www.worldhistory.org/trans/fr/1-467/chine-antique/'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Zhou dynasty',
+            url: 'https://www.britannica.com/topic/Zhou-dynasty'
+          }
+        ]
+      }
+    },
+    {
+      id: 'philosophies-chinoises-anciennes',
+      title: 'Confucianisme, taoïsme et débats philosophiques',
+      field: 'Chine ancienne · Écoles de pensée des Zhou orientaux, surtout du VIe au IIIe siècle av. J.-C.',
+      summary: 'Présenter les principaux courants intellectuels de la période, leurs réponses aux crises politiques et les précautions nécessaires pour interpréter les textes anciens.',
+      lesson: {
+        sections: [
+          'L’affaiblissement de l’autorité Zhou et les guerres entre États s’accompagnèrent d’une intense activité intellectuelle. Les traditions historiques parlent des « Cent Écoles de pensée » pour désigner la diversité des débats, sans qu’il faille comprendre ce terme comme un décompte littéral d’écoles organisées. Des penseurs et des maîtres proposaient des réponses aux questions de l’ordre politique, de la conduite personnelle, des rites, de la guerre et de la nature humaine. Les textes conservés ont souvent été transmis, compilés ou remaniés après l’époque à laquelle sont associés leurs auteurs ; leur datation et leur attribution peuvent donc être discutées.',
+          'Confucius, traditionnellement daté de 551 à 479 av. J.-C., accordait une grande importance à l’apprentissage, à la conduite morale, aux rites et aux responsabilités liées aux relations humaines. Dans la tradition confucéenne, un dirigeant doit donner l’exemple par sa vertu et favoriser une société ordonnée. Confucius ne fonda pas immédiatement une religion d’État au sens moderne ; son enseignement fut transmis et développé par des générations de disciples et de commentateurs. Son influence sur l’administration impériale se renforça à des époques ultérieures, notamment sous les Han, et ne doit pas être projetée sans nuance sur toute la Chine ancienne.',
+          'Le taoïsme ancien est associé notamment au texte appelé Daodejing, traditionnellement lié à Laozi, personnage dont l’existence historique et la biographie restent incertaines. Le texte valorise le Dao, notion complexe souvent traduite par « voie », et le wu wei, que l’on peut expliquer comme une action qui n’impose pas inutilement sa volonté au cours des choses. Il serait réducteur de présenter le taoïsme uniquement comme une doctrine de passivité : les textes contiennent des réflexions sur le pouvoir, la simplicité, les limites du langage et les rapports entre l’être humain et le monde. Les traditions philosophiques taoïstes se sont développées sur une longue durée.',
+          'D’autres courants ont proposé des réponses différentes. Mozi et les Mohistes défendaient notamment l’attention impartiale aux personnes et critiquaient certaines dépenses rituelles jugées excessives. Les penseurs associés au légisme, dont Shang Yang et Han Fei dans les traditions textuelles, insistaient sur les institutions, les lois, les méthodes de gouvernement et les mécanismes de contrôle. Ces catégories ne résument pas toutes les positions et les auteurs ne formaient pas toujours des écoles homogènes. Leur importance historique tient au fait que les États en compétition cherchaient des moyens concrets d’administrer la population, de renforcer leurs ressources et de limiter les conflits internes.'
+        ],
+        example: {
+          statement: 'Un responsable ancien doit choisir entre gouverner par l’exemple moral et renforcer l’application de règles administratives. Comment les traditions confucéenne et légiste aborderaient-elles différemment ce problème ?',
+          calculation: 'La comparaison doit identifier les priorités des textes : la tradition confucéenne met l’accent sur la vertu, les rites et l’exemplarité ; les courants légistes privilégient davantage les lois, les procédures et les mécanismes de contrôle. Cette opposition est une distinction générale, pas une description exhaustive de chaque auteur.',
+          answer: 'Les deux approches insistent sur l’ordre politique, mais elles n’accordent pas le même rôle à la vertu personnelle et aux institutions coercitives. Les gouvernements historiques ont pu combiner différentes méthodes.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il éviter de présenter les philosophies anciennes comme des doctrines parfaitement fixes dès leur origine ?',
+          answer: 'Parce que les textes ont été transmis, commentés et parfois compilés sur plusieurs générations, et que les traditions ont évolué dans des contextes historiques différents.'
+        },
+        exercises: [
+          {
+            question: 'Quels thèmes sont centraux dans la pensée confucéenne ancienne ?',
+            answer: 'L’apprentissage, la conduite morale, les rites, les relations humaines et la responsabilité du dirigeant.'
+          },
+          {
+            question: 'Que désigne approximativement le wu wei dans les textes taoïstes ?',
+            answer: 'Une manière d’agir sans imposer inutilement sa volonté, en accord avec le cours des choses ; la notion possède plusieurs interprétations.'
+          },
+          {
+            question: 'Quel problème les courants légistes cherchaient-ils notamment à résoudre ?',
+            answer: 'Comment organiser un pouvoir efficace grâce aux lois, aux procédures administratives et aux mécanismes de contrôle.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Chine antique',
+            url: 'https://www.worldhistory.org/trans/fr/1-467/chine-antique/'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Confucius',
+            url: 'https://www.britannica.com/biography/Confucius'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Taoism',
+            url: 'https://www.britannica.com/topic/Taoism'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Confucius',
+            url: 'https://plato.stanford.edu/entries/confucius/'
+          },
+          {
+            title: 'Stanford Encyclopedia of Philosophy — Daoism',
+            url: 'https://plato.stanford.edu/entries/daoism/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'unification-qin-premier-empire',
+      title: 'Les Qin : l’unification et la construction impériale',
+      field: 'Chine ancienne · Dynastie Qin, 221–206 av. J.-C.',
+      summary: 'Expliquer comment l’État Qin unifie plusieurs royaumes, met en place des réformes administratives et laisse un héritage monumental malgré la brièveté de la dynastie.',
+      lesson: {
+        sections: [
+          'À la fin de la période des Royaumes combattants, l’État Qin dispose d’une organisation militaire et administrative qui lui permet de vaincre ses rivaux. Ying Zheng achève la conquête des autres grands États et proclame l’unification en 221 av. J.-C., prenant le titre de Qin Shi Huang, généralement traduit par « Premier Empereur ». Cette unification met fin à la pluralité des royaumes indépendants, mais ne signifie pas que toutes les régions adoptent instantanément les mêmes pratiques ni que les tensions locales disparaissent.',
+          'Le gouvernement Qin cherche à renforcer le contrôle central. Il développe une administration territoriale placée sous l’autorité de fonctionnaires, harmonise certains standards administratifs et favorise la standardisation de l’écriture officielle, des poids et mesures et de certains éléments monétaires. Ces mesures facilitent les échanges et l’exercice du pouvoir, mais leur application exacte a pu varier et les réformes ne doivent pas être décrites comme une uniformisation totale de toutes les langues ou de toutes les coutumes. Le système repose aussi sur une fiscalité, des obligations de travail et des sanctions qui peuvent peser lourdement sur les populations.',
+          'Les grands travaux servent à relier le territoire et à affirmer le pouvoir impérial. Des routes, des infrastructures et des ouvrages défensifs sont entretenus ou développés ; certaines fortifications antérieures sont reliées ou réorganisées. La Grande Muraille visible aujourd’hui est le résultat de constructions et de reconstructions de plusieurs périodes : il serait inexact de l’attribuer dans son ensemble à Qin Shi Huang. Le mausolée de l’empereur, près de l’actuelle Xi’an, comprend un vaste ensemble funéraire et les célèbres figures en terre cuite découvertes en 1974. L’UNESCO souligne leur valeur exceptionnelle pour l’étude de l’organisation militaire et des techniques artistiques de la période.',
+          'La dynastie Qin s’effondre quelques années après la mort de Qin Shi Huang en 210 av. J.-C. Les révoltes, les conflits de succession et la fragilité du nouveau régime contribuent à sa chute en 206 av. J.-C. La brièveté de la dynastie n’efface pas son importance : elle fournit un précédent institutionnel majeur pour l’empire unifié. Les Han reprennent certaines structures, tout en modifiant les pratiques de gouvernement. L’histoire des Qin montre ainsi que la centralisation peut laisser un héritage durable sans garantir la stabilité immédiate du régime qui l’a instaurée.'
+        ],
+        example: {
+          statement: 'Pourquoi la standardisation des poids et mesures peut-elle renforcer un État unifié ?',
+          calculation: 'Si les administrations et les commerçants utilisent des unités communes, il devient plus facile de comparer des quantités, de calculer les taxes, de gérer les approvisionnements et de contrôler certaines transactions. Cela ne signifie pas que toutes les difficultés de mesure disparaissent immédiatement.',
+          answer: 'Des standards communs facilitent l’administration, la fiscalité et les échanges entre régions. Ils constituent un instrument de gouvernement autant qu’une mesure pratique.'
+        },
+        exercise: {
+          question: 'Quelles sont deux conséquences durables de l’unification Qin malgré la chute rapide de la dynastie ?',
+          answer: 'L’établissement d’un modèle impérial centralisé et la diffusion de standards administratifs communs, repris ou adaptés par les dynasties suivantes.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année l’unification Qin est-elle traditionnellement datée ?',
+            answer: 'En 221 av. J.-C.'
+          },
+          {
+            question: 'Peut-on attribuer toute la Grande Muraille actuelle à Qin Shi Huang ?',
+            answer: 'Non. Les fortifications ont été construites, reliées et reconstruites au cours de plusieurs périodes historiques.'
+          },
+          {
+            question: 'Quand l’armée en terre cuite du mausolée Qin a-t-elle été découverte ?',
+            answer: 'En 1974, selon la documentation de l’UNESCO.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Chine antique',
+            url: 'https://www.worldhistory.org/trans/fr/1-467/chine-antique/'
+          },
+          {
+            title: 'UNESCO — Mausolée du premier empereur Qin',
+            url: 'https://whc.unesco.org/fr/list/441/'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Qin dynasty',
+            url: 'https://www.britannica.com/topic/Qin-dynasty'
+          }
+        ]
+      }
+    },
+    {
+      id: 'dynastie-han-societe-echanges-heritage',
+      title: 'Les Han : administration, société et échanges à longue distance',
+      field: 'Chine ancienne · Han occidentaux, 202 av. J.-C.–9 apr. J.-C. ; interruption Xin, 9–23 ; Han orientaux, 25–220 apr. J.-C.',
+      summary: 'Étudier la consolidation de l’empire Han, son administration, ses échanges eurasiens, ses réalisations techniques et les facteurs de fragmentation du pouvoir.',
+      lesson: {
+        sections: [
+          'Après les conflits qui suivent la chute des Qin, Liu Bang fonde la dynastie Han et devient l’empereur Gaozu. Les Han conservent l’idée d’un empire unifié, mais ajustent les politiques de leurs prédécesseurs. La période est habituellement divisée en Han occidentaux ou antérieurs, interrompus par le régime Xin de Wang Mang, puis Han orientaux. Cette périodisation facilite l’étude d’un long règne dynastique, mais les institutions et les conditions régionales changent au fil du temps. Les souverains s’appuient sur des fonctionnaires, des ressources fiscales et des systèmes locaux de pouvoir dont l’efficacité n’est jamais identique partout.',
+          'Le confucianisme prend une place croissante dans la culture officielle et dans la formation des élites, sans faire disparaître toutes les autres traditions intellectuelles. Les textes classiques, l’éducation et les conseils moraux contribuent à définir l’image du bon fonctionnaire et du souverain responsable. Il serait cependant exagéré d’affirmer que l’administration Han reposait exclusivement sur la philosophie confucéenne : elle utilisait aussi des lois, des procédures, des contrôles et des pratiques héritées des États antérieurs. Le fonctionnement réel de l’empire combinait donc des idéaux moraux et des instruments administratifs concrets.',
+          'Les échanges à longue distance se développent entre la Chine et les régions d’Asie centrale, notamment à travers des réseaux que l’on regroupe aujourd’hui sous le nom de Routes de la soie. Ces routes n’étaient pas un itinéraire unique ni une autoroute commerciale contrôlée intégralement par l’État Han : elles formaient un ensemble de chemins terrestres et, à plus longue échelle, de liaisons maritimes dont l’importance variait. Des marchandises, des techniques, des personnes et des informations circulaient par étapes entre de nombreuses sociétés. Les missions diplomatiques et les campagnes vers l’ouest ont contribué à intensifier certains contacts, mais les échanges dépendaient aussi des intermédiaires et des conditions politiques régionales.',
+          'L’époque Han est associée à des avancées dans plusieurs domaines, notamment la production du papier attestée à l’époque impériale ancienne, les outils agricoles, la métallurgie, les instruments de mesure et les savoirs médicaux et astronomiques. Il faut dater chaque innovation avec prudence : certaines techniques ont des antécédents plus anciens et leur diffusion s’étale dans le temps. La prospérité de certaines régions coexiste avec des inégalités foncières, des obligations fiscales et des tensions sociales. À la fin de la période, les rivalités à la cour, la puissance de grands propriétaires, les rébellions et les conflits entre chefs militaires affaiblissent le pouvoir central. En 220 apr. J.-C., la fin des Han ouvre la période des Trois Royaumes, sans effacer les institutions et les références culturelles héritées de la dynastie.'
+        ],
+        example: {
+          statement: 'Pourquoi l’expression « Routes de la soie » ne doit-elle pas être comprise comme le nom d’une seule route commerciale ?',
+          calculation: 'Les échanges reliaient plusieurs régions par des itinéraires terrestres et maritimes, avec des intermédiaires et des tronçons qui pouvaient changer selon les périodes et les conditions politiques.',
+          answer: 'L’expression désigne un réseau de routes et de contacts entre sociétés. Elle ne signifie pas que toutes les marchandises empruntaient un seul trajet ni que l’empire Han contrôlait tout le réseau.'
+        },
+        exercise: {
+          question: 'Citez deux facteurs qui ont contribué à l’affaiblissement des Han à la fin de la dynastie.',
+          answer: 'Parmi les facteurs importants figurent les rivalités de cour, l’influence de grands propriétaires, les rébellions et la montée en puissance de chefs militaires régionaux.'
+        },
+        exercises: [
+          {
+            question: 'Comment la période Han est-elle généralement divisée ?',
+            answer: 'En Han occidentaux, suivis de l’interruption Xin, puis en Han orientaux.'
+          },
+          {
+            question: 'Les Routes de la soie formaient-elles un itinéraire unique entièrement contrôlé par les Han ?',
+            answer: 'Non. Elles constituaient un réseau d’itinéraires et d’échanges impliquant de nombreuses sociétés et des intermédiaires.'
+          },
+          {
+            question: 'Quelle période commence traditionnellement après la fin des Han en 220 apr. J.-C. ?',
+            answer: 'La période des Trois Royaumes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Chine antique',
+            url: 'https://www.worldhistory.org/trans/fr/1-467/chine-antique/'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Han dynasty',
+            url: 'https://www.britannica.com/topic/Han-dynasty'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Silk Road',
+            url: 'https://www.britannica.com/topic/Silk-Road-trade-route'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — China, 200–900 A.D.',
+            url: 'https://www.metmuseum.org/toah/hd/chin/hd_chin.htm'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+]
+
 
