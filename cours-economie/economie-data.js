@@ -2051,4 +2051,282 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'politique-monetaire',
+  title: 'La politique monétaire : objectifs, instruments, transmission et limites',
+  note: 'Six chapitres sur les objectifs des banques centrales, les taux directeurs, la transmission, les mesures non conventionnelles, l’histoire des stratégies et les limites actuelles. Les niveaux de taux cités sont datés et peuvent avoir changé : vérifier les sites officiels des banques centrales pour les valeurs en vigueur.',
+  chapters: [
+    {
+      id: 'definition-objectifs-mandats',
+      title: 'Définition, objectifs et mandats des banques centrales',
+      field: 'Politique monétaire · Stabilité des prix, BCE et Réserve fédérale',
+      summary: 'Comprendre ce qu’est la politique monétaire, qui la conduit et quels objectifs la loi assigne à la BCE et à la Réserve fédérale.',
+      lesson: {
+        sections: [
+          'La politique monétaire désigne l’ensemble des décisions par lesquelles une banque centrale agit sur les conditions de financement de l’économie, principalement le niveau des taux d’intérêt et la quantité de liquidité disponible, afin d’atteindre des objectifs macroéconomiques, au premier rang desquels la stabilité des prix. Son levier repose sur un monopole : la banque centrale est l’unique émettrice de billets et de réserves bancaires, les deux composantes de la monnaie centrale (la base monétaire). Comme l’explique la BCE, grâce à ce monopole, elle peut déterminer pleinement le taux d’intérêt auquel elle fournit des fonds au système bancaire. C’est le point de départ de toute la chaîne de transmission étudiée au chapitre 3.',
+          'Dans la zone euro, l’objectif principal de l’Eurosystème est d’assurer la stabilité des prix, en vertu de l’article 127 du traité sur le fonctionnement de l’Union européenne. Sans préjudice de cet objectif, le Système européen de banques centrales (SEBC) apporte son soutien aux politiques économiques générales de l’Union. Les décisions de stratégie monétaire pour l’ensemble de l’Eurosystème sont prises par le Conseil des gouverneurs de la BCE ; les banques centrales nationales, dont la Banque de France, participent à la formulation de la stratégie et à la préparation des décisions.',
+          'Le traité ne chiffre pas la stabilité des prix : c’est la BCE qui la définit. En 1998, le Conseil des gouverneurs l’a définie comme une hausse annuelle de l’indice des prix à la consommation harmonisé (IPCH) inférieure à 2 % dans la zone euro. En mai 2003, à l’issue de sa première évaluation approfondie, il a précisé qu’il viserait des taux d’inflation proches de 2 % à moyen terme (formule usuelle : « inférieure à, mais proche de 2 % »). Le 8 juillet 2021, à l’issue de la revue stratégique lancée en janvier 2020, il a retenu une cible d’inflation symétrique de 2 % à moyen terme : les écarts à la cible, à la hausse comme à la baisse, sont jugés également indésirables. La déclaration relative à la stratégie publiée en 2025 confirme cette cible.',
+          'Aux États-Unis, le mandat de la Réserve fédérale résulte d’un amendement de 1977 au Federal Reserve Act : promouvoir efficacement les objectifs de plein emploi (maximum employment), de stabilité des prix et de taux d’intérêt à long terme modérés. Comme les deux premiers objectifs sont les plus souvent mis en avant, on parle usuellement de « double mandat ». La formulation diffère donc de celle de la BCE, qui place la stabilité des prix au premier rang, même si les deux institutions partagent l’idée qu’une inflation basse et stable favorise une croissance durable.'
+        ],
+        example: {
+          statement: 'L’IPCH d’une économie passe de 110,0 à 112,2 en un an. Quelle est l’inflation annuelle et est-elle compatible avec une cible de 2 % ?',
+          calculation: 'Inflation = (112,2 / 110,0) − 1 = 1,02 − 1 = 0,02, soit 2 %.',
+          answer: 'L’inflation annuelle est de 2 %, ce qui correspond exactement à la cible. La BCE raisonne toutefois « à moyen terme » : un écart ponctuel sur une année ne remet pas à lui seul en cause l’objectif.'
+        },
+        exercise: {
+          question: 'Que signifie le caractère « symétrique » de la cible d’inflation de 2 % de la BCE ?',
+          answer: 'Les écarts à la cible sont jugés également indésirables, qu’ils soient au-dessus ou au-dessous de 2 %.'
+        },
+        exercises: [
+          {
+            question: 'Quelle disposition du droit de l’Union européenne confie à l’Eurosystème l’objectif principal de stabilité des prix ?',
+            answer: 'L’article 127 du traité sur le fonctionnement de l’Union européenne (TFUE).'
+          },
+          {
+            question: 'Quelle cible d’inflation la BCE a-t-elle adoptée à l’issue de sa revue stratégique de juillet 2021 ?',
+            answer: 'Une cible symétrique de 2 % à moyen terme, mesurée par l’IPCH.'
+          },
+          {
+            question: 'Quels sont les trois objectifs inscrits dans le Federal Reserve Act depuis l’amendement de 1977 ?',
+            answer: 'Le plein emploi (maximum employment), la stabilité des prix et des taux d’intérêt à long terme modérés. On parle de « double mandat » car les deux premiers sont les plus cités.'
+          }
+        ],
+        sources: [
+          { title: 'BCE — Déclaration relative à la stratégie de politique monétaire de la BCE (2025)', url: 'https://www.ecb.europa.eu/mopo/strategy/strategy-review/ecb.strategyreview202506_strategy_statement.fr.html' },
+          { title: 'Banque de France — Assurer la stabilité des prix et lutter contre l’inflation', url: 'https://www.banque-france.fr/politique-monetaire/cadre-operationnel-de-la-politique-monetaire/les-mesures-conventionnelles' },
+          { title: 'Banque de France — La BCE adopte une cible d’inflation claire et symétrique de 2 %', url: 'https://www.banque-france.fr/fr/publications-et-statistiques/publications/la-bce-adopte-une-cible-dinflation-claire-et-symetrique-de-2' },
+          { title: 'BCE — La stratégie de politique monétaire de la BCE (communiqué du 8 mai 2003)', url: 'https://www.ecb.europa.eu/press/pr/date/2003/html/pr030508_2.fr.html' },
+          { title: 'Federal Reserve — What economic goals does the Federal Reserve seek to achieve through its monetary policy?', url: 'https://www.federalreserve.gov/faqs/what-economic-goals-does-federal-reserve-seek-to-achieve-through-monetary-policy.htm' },
+          { title: 'Federal Reserve History — Full Employment and Balanced Growth Act of 1978 (Humphrey-Hawkins)', url: 'https://www.federalreservehistory.org/essay/humphrey-hawkins-act' }
+        ]
+      }
+    },
+    {
+      id: 'taux-directeurs-instruments',
+      title: 'Les taux directeurs et les instruments conventionnels',
+      field: 'Politique monétaire · Corridor de taux de la BCE et taux administrés de la Fed',
+      summary: 'Distinguer les trois taux directeurs de la BCE, le rôle du taux de la facilité de dépôt et les outils de la Réserve fédérale.',
+      lesson: {
+        sections: [
+          'Le Conseil des gouverneurs de la BCE fixe trois taux directeurs. Le taux de la facilité de dépôt rémunère les dépôts à un jour que les banques placent auprès de l’Eurosystème. Le taux des opérations principales de refinancement s’applique aux prêts hebdomadaires consentis aux banques contre garanties. Le taux de la facilité de prêt marginal s’applique au crédit à un jour contre garanties. Classés du plus bas au plus haut, ces trois taux forment un « corridor » : le taux de prêt marginal fait office de plafond, le taux de dépôt de plancher. Les décisions sont prises lors de réunions de politique monétaire tenues environ toutes les six semaines.',
+          'Avant la crise financière de 2008, le taux des opérations principales était au centre du dispositif et les taux du marché monétaire évoluaient autour de lui, à l’intérieur du corridor. Les injections massives de liquidité réalisées depuis 2008 ont créé une abondance durable de liquidité : les taux du marché monétaire se sont rapprochés du taux de la facilité de dépôt, devenu de fait le principal taux directeur. En mars 2024, à l’issue de la revue de son cadre opérationnel, le Conseil des gouverneurs a décidé de continuer à orienter la politique monétaire par ce taux, et de ramener de 50 à 15 points de base l’écart entre le taux des opérations principales et le taux de la facilité de dépôt, à partir du 18 septembre 2024. L’écart entre le taux de prêt marginal et le taux des opérations principales est resté fixé à 25 points de base.',
+          'Aux États-Unis, le Comité fédéral de l’open market (FOMC) fixe une fourchette cible pour le taux des fonds fédéraux, c’est-à-dire le taux auquel les institutions de dépôt se prêtent des réserves au jour le jour. Pour maintenir ce taux de marché dans la fourchette, la Réserve fédérale utilise des taux administrés. L’intérêt sur les réserves (IORB) est son outil principal : une banque n’a pas intérêt à prêter à un taux inférieur à ce que la Fed lui verse, ce qui établit un plancher. Le taux d’escompte est celui auquel les banques peuvent emprunter auprès de la Fed. Les opérations d’open market restent nécessaires pour que ces taux soient efficaces.',
+          'Toutes les institutions actives sur le marché des fonds fédéraux ne perçoivent pas l’IORB. La Fed propose donc aussi la facilité de prise en pension à un jour (ON RRP, overnight reverse repurchase agreement facility), ouverte à un plus large éventail de grandes institutions financières : le taux offert sert de plancher complémentaire au taux des fonds fédéraux. L’ON RRP a été utilisé pour la première fois comme outil supplémentaire lors de la normalisation de la politique monétaire engagée en décembre 2015. Avant 2008, la Fed pilotait surtout le taux des fonds fédéraux en ajustant l’offre de réserves par des opérations d’open market ; le dispositif actuel dit d’abondance de réserves (ample reserves) repose, lui, sur les taux administrés.'
+        ],
+        example: {
+          statement: 'Le 18 septembre 2024, le taux de la facilité de dépôt de la BCE a été abaissé à 3,50 %. Sachant que l’écart avec le taux des opérations principales est de 15 points de base et que l’écart entre le taux de prêt marginal et le taux des opérations principales est de 25 points de base, quels sont les deux autres taux directeurs ?',
+          calculation: 'Opérations principales : 3,50 % + 0,15 point = 3,65 %. Prêt marginal : 3,65 % + 0,25 point = 3,90 %.',
+          answer: 'Le taux des opérations principales est de 3,65 % et celui de la facilité de prêt marginal de 3,90 %, ce qui correspond aux niveaux annoncés par la BCE pour cette date.'
+        },
+        exercise: {
+          question: 'Par quel taux la BCE oriente-t-elle sa politique monétaire depuis la revue de son cadre opérationnel de mars 2024 ?',
+          answer: 'Par le taux de la facilité de dépôt.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’outil principal utilisé par la Réserve fédérale pour piloter le taux des fonds fédéraux dans le régime actuel d’abondance de réserves ?',
+            answer: 'L’intérêt sur les réserves (IORB, interest on reserve balances).'
+          },
+          {
+            question: 'Quel est l’écart entre le taux des opérations principales et le taux de la facilité de dépôt de la BCE depuis le 18 septembre 2024 ?',
+            answer: '15 points de base (il était de 50 points de base auparavant).'
+          },
+          {
+            question: 'Pourquoi la Fed a-t-elle ajouté la facilité de prise en pension à un jour (ON RRP) ?',
+            answer: 'Parce que l’IORB n’est versé qu’aux banques et à quelques institutions : l’ON RRP permet à un plus large éventail de grandes institutions financières de placer des fonds à un taux fixé par la Fed, ce qui renforce le plancher du taux des fonds fédéraux.'
+          }
+        ],
+        sources: [
+          { title: 'BCE — Key ECB interest rates', url: 'https://www.ecb.europa.eu/stats/monetary/rates/html/index.en.html' },
+          { title: 'Banco de España — ECB cuts rates by 25 basis points in September', url: 'https://www.bde.es/wbe/en/noticias-eventos/actualidad-bce/el-bce-baja-los-tipos-25-puntos-basicos-en-septiembre.html' },
+          { title: 'BSI Economics — How the ECB implements its monetary policy: yesterday, today, and tomorrow', url: 'https://bsi-economics.org/comment-la-bce-met-en-oeuvre-sa-politique-monetaire-hier-aujourdhui-et-demain-note/' },
+          { title: 'Federal Reserve — Policy Tools', url: 'https://federalreserve.gov/monetarypolicy/policytools.htm' },
+          { title: 'Federal Reserve Bank of St. Louis — How the Fed Implements Monetary Policy with Its Tools', url: 'https://www.stlouisfed.org/in-plain-english/the-fed-implements-monetary-policy' },
+          { title: 'Federal Reserve Bank of St. Louis — How Does the Fed Use Its Monetary Policy Tools to Influence the Economy?', url: 'https://www.stlouisfed.org/publications/page-one-economics/2022/05/02/how-does-the-fed-use-its-monetary-policy-tools-to-influence-the-economy' }
+        ]
+      }
+    },
+    {
+      id: 'mecanisme-transmission',
+      title: 'Le mécanisme de transmission de la politique monétaire',
+      field: 'Politique monétaire · Canaux de transmission, anticipations et délais',
+      summary: 'Suivre le chemin entre une décision sur les taux directeurs et son effet sur la demande, les salaires et les prix.',
+      lesson: {
+        sections: [
+          'Le mécanisme de transmission désigne le processus par lequel les décisions de politique monétaire affectent l’économie en général et le niveau des prix en particulier. La BCE souligne qu’il est caractérisé par des délais longs, variables et incertains : il est donc difficile de prévoir l’effet précis d’une décision. Cette incertitude a une conséquence pratique évoquée dans le Bulletin mensuel de la BCE de juillet 2000 : en raison de ces délais, la politique monétaire doit être orientée vers l’avenir et ne peut pas se contenter de réagir à l’inflation observée.',
+          'Le premier maillon est financier. Une modification des taux directeurs agit directement sur les taux du marché monétaire et, indirectement, sur les taux débiteurs et créditeurs fixés par les banques pour leurs clients. Les taux à moyen et long terme dépendent en partie des anticipations de trajectoire des taux courts : l’annonce de futures décisions les influence donc aussi. Dans un second temps, ces conditions de financement modifient les décisions d’épargne, de consommation et d’investissement : toutes choses égales par ailleurs, des taux plus élevés rendent le crédit moins attractif pour financer une consommation ou un investissement.',
+          'Les variations de consommation et d’investissement modifient la demande intérieure par rapport à l’offre. Lorsque la demande excède l’offre, des tensions haussières sur les prix sont probables ; la demande globale peut aussi resserrer ou détendre les conditions sur les marchés du travail et des produits intermédiaires, ce qui influence la formation des salaires et des prix. D’autres canaux opèrent en parallèle : le canal des prix d’actifs (effet de richesse lorsque les actions montent, valeur des garanties qui facilite l’accès au crédit), le canal du taux de change (qui joue sur les prix des biens importés) et le canal du crédit bancaire, particulièrement important en période de crise lorsque le capital des banques est plus rare.',
+          'Les anticipations d’inflation constituent un canal à part entière. Une banque centrale très crédible ancre les anticipations de stabilité des prix : les agents n’ont alors pas à relever leurs prix par crainte d’une inflation plus forte, ni à les baisser par crainte d’une déflation. La BCE décrit aussi un canal de la prise de risque : des taux très bas peuvent gonfler la valeur des actifs et des garanties et rendre les actifs risqués plus attractifs, ce qui peut conduire à un assouplissement des critères d’octroi de crédit. Enfin, l’importance relative des canaux varie : le Bulletin de la BCE de 2000 relevait que, dans une grande économie relativement fermée comme la zone euro, le canal du taux de change est vraisemblablement moins important que dans de petites économies très ouvertes.'
+        ],
+        example: {
+          statement: 'Une entreprise a un prêt de 100 000 € à taux variable, remboursé uniquement en intérêts sur un an. Son taux passe de 3 % à 4 % après un relèvement des taux directeurs. De combien ses intérêts annuels augmentent-ils ?',
+          calculation: 'Intérêts à 3 % : 100 000 × 0,03 = 3 000 €. Intérêts à 4 % : 100 000 × 0,04 = 4 000 €. Écart : 4 000 − 3 000 = 1 000 €.',
+          answer: 'Les intérêts annuels augmentent de 1 000 €. Cet exemple isole un seul maillon (le coût du crédit) ; l’effet global sur l’économie passe par l’ensemble des canaux et se manifeste avec des délais variables.'
+        },
+        exercise: {
+          question: 'Pourquoi la crédibilité d’une banque centrale est-elle importante pour la transmission de la politique monétaire ?',
+          answer: 'Parce qu’une banque centrale crédible ancre les anticipations d’inflation : les entreprises et les ménages n’ont pas à relever leurs prix ou leurs salaires par crainte d’une inflation plus forte.'
+        },
+        exercises: [
+          {
+            question: 'Comment la BCE qualifie-t-elle les délais du mécanisme de transmission ?',
+            answer: 'Longs, variables et incertains.'
+          },
+          {
+            question: 'Citez deux canaux de transmission, autres que celui des taux d’intérêt, décrits par la BCE.',
+            answer: 'Par exemple le canal des anticipations, celui des prix d’actifs, celui du taux de change et celui du crédit bancaire (ainsi que le canal de la prise de risque).'
+          },
+          {
+            question: 'Pourquoi le canal du taux de change est-il, selon le Bulletin de la BCE de 2000, vraisemblablement moins important pour la zone euro que pour de petites économies ouvertes ?',
+            answer: 'Parce que la zone euro est une grande économie relativement fermée.'
+          }
+        ],
+        sources: [
+          { title: 'BCE — Transmission mechanism of monetary policy', url: 'https://www.ecb.europa.eu/mopo/intro/transmission' },
+          { title: 'BCE — Bulletin mensuel de juillet 2000 : Monetary policy transmission in the euro area', url: 'https://www.ecb.europa.eu/pub/pdf/other/pp43_58_mb200007en.pdf' },
+          { title: 'Banco de España — How does monetary policy act?', url: 'https://www.bde.es/wbe/en/areas-actuacion/politica-monetaria/preguntas-frecuentes/politica-monetaria-y-estabilidad-precios/como-actua-politica-monetaria.html' },
+          { title: 'Bank of Lithuania — How monetary policy works', url: 'https://www.lb.lt/en/how-monetary-policy-works' }
+        ]
+      }
+    },
+    {
+      id: 'mesures-non-conventionnelles',
+      title: 'Les mesures non conventionnelles : assouplissement quantitatif et taux négatifs',
+      field: 'Politique monétaire · APP, PEPP, TLTRO et taux de dépôt négatifs de la BCE',
+      summary: 'Comprendre pourquoi et comment la BCE a recouru aux achats d’actifs et à d’autres mesures lorsque les taux directeurs seuls ne suffisaient plus.',
+      lesson: {
+        sections: [
+          'Lorsque les taux directeurs sont proches de leur plancher effectif, ou lorsque la transmission de la politique monétaire est perturbée, les banques centrales peuvent recourir à des mesures dites non conventionnelles. L’assouplissement quantitatif (quantitative easing, QE) en est la plus connue : selon la Banque de France, il s’agit d’une intervention massive et prolongée sur les marchés financiers, par l’achat de grandes quantités d’actifs financiers. La BCE a aussi mis en place, depuis 2014, plusieurs opérations de refinancement à plus long terme ciblées (TLTRO) afin de soutenir le financement de l’économie.',
+          'Le programme d’achats d’actifs (APP, asset purchase programme) est le premier programme de QE de la BCE. Le 22 janvier 2015, le Conseil des gouverneurs a annoncé un programme élargi incluant des achats de titres publics ; les achats effectifs de titres publics (PSPP) ont débuté en mars 2015. L’APP comprend quatre sous-programmes : le programme d’achat de titres publics (PSPP), le programme d’achat de titres adossés à des actifs (ABSPP, lancé en novembre 2014), le troisième programme d’achat d’obligations sécurisées (CBPP3) et, depuis la décision du 10 mars 2016, le programme d’achat d’obligations d’entreprises (CSPP). Les achats nets mensuels ont été de 60 milliards d’euros de mars 2015 à mars 2016, 80 milliards d’avril 2016 à mars 2017, 60 milliards d’avril à décembre 2017, puis 30 milliards de janvier à septembre 2018.',
+          'Les achats nets de l’APP ont pris fin à la fin de 2018, avant une phase de réinvestissement intégral du principal des titres arrivant à échéance. Les achats nets ont repris en novembre 2019, puis, à partir de mars 2023, la BCE a cessé les achats nets et réduit les réinvestissements ; depuis juillet 2023, le principal des titres arrivant à échéance n’est plus réinvesti. Le portefeuille de l’APP décroît donc au fil des échéances.',
+          'Le 18 mars 2020, en réponse à la crise sanitaire, le Conseil des gouverneurs a annoncé un programme d’achats d’urgence face à la pandémie (PEPP, pandemic emergency purchase programme), doté d’une enveloppe initiale de 750 milliards d’euros, afin de contrer les risques pesant sur la transmission de la politique monétaire et sur les perspectives de la zone euro. Les achats ont commencé le 26 mars 2020 ; les achats nets ont été interrompus à la fin de mars 2022, et les remboursements de principal ont été réinvestis intégralement durant le premier semestre 2024. Pour traiter les risques de fragmentation de la transmission au sein de la zone euro, la BCE a créé en 2022 l’instrument de protection de la transmission (TPI). Enfin, le taux de la facilité de dépôt a été négatif à partir de juin 2014, jusqu’à ce que le relèvement de juillet 2022 le ramène à zéro.'
+        ],
+        example: {
+          statement: 'Les achats nets mensuels de l’APP ont été de 60 milliards d’euros d’avril à décembre 2017, puis de 30 milliards d’euros de janvier à septembre 2018. Quel montant cumulé d’achats nets mensuels cela représente-t-il sur ces 18 mois ?',
+          calculation: 'Avril–décembre 2017 : 9 mois × 60 = 540 milliards. Janvier–septembre 2018 : 9 mois × 30 = 270 milliards. Total : 540 + 270 = 810 milliards d’euros.',
+          answer: 'Environ 810 milliards d’euros, en additionnant les rythmes mensuels annoncés. Ce calcul est une approximation fondée sur le rythme mensuel cible, non sur les montants réellement exécutés mois par mois.'
+        },
+        exercise: {
+          question: 'Pourquoi parle-t-on de mesures « non conventionnelles » ?',
+          answer: 'Parce qu’elles s’ajoutent aux outils habituels de pilotage des taux directeurs : achats massifs d’actifs, refinancements à long terme ciblés, instruments de protection de la transmission.'
+        },
+        exercises: [
+          {
+            question: 'Quelle était l’enveloppe initiale du PEPP annoncé le 18 mars 2020 ?',
+            answer: '750 milliards d’euros.'
+          },
+          {
+            question: 'Quand les achats nets du PEPP ont-ils été interrompus ?',
+            answer: 'À la fin de mars 2022.'
+          },
+          {
+            question: 'Citez les quatre sous-programmes de l’APP.',
+            answer: 'Le PSPP (titres publics), l’ABSPP (titres adossés à des actifs), le CBPP3 (obligations sécurisées) et le CSPP (obligations d’entreprises).'
+          }
+        ],
+        sources: [
+          { title: 'BCE — Asset purchase programmes', url: 'https://www.ecb.europa.eu/mopo/implement/app' },
+          { title: 'Suomen Pankki — Monetary policy purchase programmes', url: 'https://www.suomenpankki.fi/en/Monetary-policy/implementation-of-monetary-policy/monetary-policy-purchase-programmes/' },
+          { title: 'Banque de France — The asset purchase programme (APP), the ECB’s first quantitative easing programme', url: 'https://banque-france.fr/en/monetary-strategy/operational-framework/asset-purchase-programmes' },
+          { title: 'Banque de France — Non-standard monetary policy measures to improve the financing of the economy', url: 'https://www.banque-france.fr/en/monetary-policy/monitoring-and-development-market-financing/lending-facilities' },
+          { title: 'Deutsche Bundesbank — Asset purchase programme (APP)', url: 'https://bundesbank.de/en/tasks/monetary-policy/outright-transactions/asset-purchase-programme-app--831134' },
+          { title: 'BCE — Taux d’intérêt directeurs de la BCE (historique)', url: 'https://www.ecb.europa.eu/stats/monetary/rates/html/index.fr.html' }
+        ]
+      }
+    },
+    {
+      id: 'histoire-strategies',
+      title: 'Histoire des stratégies : Grande Inflation, ciblage d’inflation et règles',
+      field: 'Politique monétaire · Années 1960-1990 : Volcker, Nouvelle-Zélande et règle de Taylor',
+      summary: 'Retracer comment l’expérience de l’inflation des années 1970 a conduit au ciblage d’inflation et aux règles de politique monétaire.',
+      lesson: {
+        sections: [
+          'On appelle Grande Inflation la période de forte inflation, large et volatile, vécue par les États-Unis entre le milieu des années 1960 et le début des années 1980. Dans la décennie précédente, l’inflation américaine moyenne se situait autour de 2 à 2,5 %. Les causes de la Grande Inflation restent discutées : certains économistes l’attribuent principalement à des erreurs de politique monétaire, d’autres mettent aussi en avant les prix du pétrole ou les dépenses liées à la guerre du Vietnam. Une des leçons généralement retenues par la Fed de Saint-Louis est que la stabilité des prix est essentielle à une économie solide et en croissance.',
+          'En octobre 1979, le président de la Réserve fédérale, Paul Volcker, nommé en août de la même année, a annoncé de nouvelles mesures du FOMC destinées à enrayer l’inflation : la Fed accordait davantage de poids au contrôle des quantités de monnaie. La désinflation qui a suivi a été coûteuse : deux récessions au début des années 1980, une production stagnante de 1979 à 1982, un chômage supérieur à 10 % et de nombreuses faillites d’entreprises dues à des taux d’intérêt élevés. L’inflation a en revanche nettement reculé, de niveaux à deux chiffres à environ 3 à 4 % vers 1982-1983 selon les mesures. Cet épisode a montré qu’une banque centrale peut ramener l’inflation à un niveau bas, mais que cela peut coûter cher en activité et en emploi.',
+          'La Nouvelle-Zélande a été le premier pays à adopter formellement le ciblage d’inflation. Le Reserve Bank of New Zealand Act, adopté en 1989, est entré en vigueur le 1er février 1990. Il reposait sur quatre idées : l’indépendance opérationnelle de la banque centrale, un objectif unique de stabilité des prix, un gouverneur seul décideur et la transparence. Le premier accord sur les objectifs de politique monétaire (Policy Targets Agreement) a été signé en mars 1990, alors que l’inflation de l’indice des prix à la consommation était d’un peu plus de 5 % et que l’économie était en récession. La cible initiale était une inflation annuelle de 0 à 2 % à atteindre d’ici décembre 1992. Par la suite, de nombreux pays, dont le Royaume-Uni et le Canada, ont ciblé l’inflation dans les années 1990.',
+          'Parallèlement, la réflexion sur les règles a progressé. En 1993, l’économiste John Taylor a proposé, dans l’article « Discretion versus Policy Rules in Practice » (Carnegie-Rochester Conference Series on Public Policy, vol. 39), une formule simple reliant le taux des fonds fédéraux à l’écart d’inflation et à l’écart de production : taux = (taux d’équilibre réel R + inflation I) + 0,5 × écart de production + 0,5 × (I − cible), avec R et la cible fixés à 2 % dans la version originale. Cette règle sert de repère, non de recette mécanique : elle ne considère que l’inflation et l’écart de production et ne peut donc pas prendre en compte d’autres facteurs, comme une turbulence financière.'
+        ],
+        example: {
+          statement: 'Selon la règle de Taylor de 1993 (R = 2 %, cible = 2 %), quel taux des fonds fédéraux la règle indique-t-elle si l’inflation est de 3 % et l’écart de production de +1 % ?',
+          calculation: 'Taux = (R + I) + 0,5 × écart de production + 0,5 × (I − cible) = (2 + 3) + 0,5 × 1 + 0,5 × (3 − 2) = 5 + 0,5 + 0,5 = 6,0 %.',
+          answer: 'La règle indique un taux de 6,0 %. À inflation de 2 % et écart de production nul, elle donnerait 4 % (2 % de taux réel d’équilibre + 2 % d’inflation).'
+        },
+        exercise: {
+          question: 'Pourquoi la désinflation menée par Volcker est-elle qualifiée de coûteuse ?',
+          answer: 'Elle s’est accompagnée de deux récessions au début des années 1980, d’une production stagnante de 1979 à 1982 et d’un chômage supérieur à 10 %.'
+        },
+        exercises: [
+          {
+            question: 'Quelle banque centrale a été la première à adopter formellement le ciblage d’inflation, et en quelle année ?',
+            answer: 'La Reserve Bank of New Zealand, en 1990 (loi de 1989 entrée en vigueur le 1er février 1990).'
+          },
+          {
+            question: 'En quelle année Taylor a-t-il publié l’article proposant sa règle, et quel coefficient affecte l’écart d’inflation ?',
+            answer: 'En 1993 ; le coefficient est de 0,5 (de même que pour l’écart de production).'
+          },
+          {
+            question: 'Quels sont les quatre principes sur lesquels reposait la loi néo-zélandaise de 1989 ?',
+            answer: 'L’indépendance opérationnelle de la banque centrale, un objectif unique de stabilité des prix, un gouverneur seul décideur et la transparence.'
+          }
+        ],
+        sources: [
+          { title: 'Federal Reserve History — Volcker’s Announcement of Anti-Inflation Measures', url: 'https://www.federalreservehistory.org/essays/anti-inflation-measures' },
+          { title: 'Federal Reserve Bank of St. Louis — The Great Inflation: A Historical Overview and Lessons Learned', url: 'https://www.stlouisfed.org/publications/page-one-economics/2012/10/01/the-great-inflation-a-historical-overview-and-lessons-learned' },
+          { title: 'Federal Reserve Bank of St. Louis Review — The Volcker Tightening Cycle: Explaining the 1982 Course Reversal', url: 'https://www.stlouisfed.org/publications/review/2025/jan/volcker-tightening-cycle-explaining-1982-course-reversal' },
+          { title: 'Te Ara — Reserve Bank : Central bank independence', url: 'https://teara.govt.nz/en/reserve-bank/page-3' },
+          { title: 'FMI — Sherwin, Strategic Choices in Inflation Targeting: The New Zealand Experience', url: 'https://www.imf.org/external/pubs/ft/seminar/2000/Targets/strach3.pdf' },
+          { title: 'LSE — Transparent Monetary Policy: A History of Inflation Targeting in New Zealand', url: 'https://www.lse.ac.uk/iga/assets/documents/research-and-publications/Transparent-Monetary-Policy-a-history-of-inflation-targeting-in-New-Zealand.pdf' },
+          { title: 'Congressional Research Service — Taylor rule (RS21821)', url: 'https://www.everycrsreport.com/files/20080630_RS21821_00ac0e7257139eddd9110c8fdac9219e882b90f9.html' }
+        ]
+      }
+    },
+    {
+      id: 'limites-defis-contemporains',
+      title: 'Limites, risques et défis contemporains de la politique monétaire',
+      field: 'Politique monétaire · Déflation, inflation post-pandémie, fragmentation et prise de risque',
+      summary: 'Identifier les limites de l’action des banques centrales et les débats ouverts depuis la crise de 2008 et le choc inflationniste post-pandémique.',
+      lesson: {
+        sections: [
+          'La première limite tient à l’incertitude. Les délais de transmission étant longs, variables et incertains, une banque centrale décide sans connaître avec précision l’effet de ses décisions sur l’activité et les prix. D’où l’importance accordée à la crédibilité et aux anticipations d’inflation : une cible claire, comme la cible symétrique de 2 % de la BCE, fournit un point d’ancrage pour ces anticipations. La déclaration relative à la stratégie de 2025 note que la période de faible inflation, puis la flambée des prix observée après la pandémie, soulignent l’importance d’une stratégie qui permette de réagir efficacement à des changements majeurs de l’environnement économique.',
+          'La deuxième limite est le plancher des taux d’intérêt. Selon l’économiste Panicos Demetriades, les banques centrales redoutent particulièrement la déflation, car la marge de baisse des taux est limitée lorsque l’inflation est négative ; des taux négatifs sur l’épargne peuvent, en incitant à détenir des espèces ou des actifs réels plutôt que des dépôts, entraîner une désintermédiation préjudiciable au financement des PME et des ménages. C’est dans ce contexte que la BCE a eu recours à des taux de dépôt négatifs à partir de 2014 et aux programmes d’achats d’actifs étudiés au chapitre 4.',
+          'La troisième limite apparaît quand l’inflation dépasse la cible. En juillet 2022, la BCE a relevé ses taux directeurs de 50 points de base, soit la première hausse depuis 2011, mettant fin aux taux de dépôt négatifs. Le taux de la facilité de dépôt a ensuite atteint 4,00 % en septembre 2023, avant une première baisse à 3,75 % le 12 juin 2024 puis à 3,50 % le 18 septembre 2024. Selon la BCE, une politique qui stabilise l’inflation autour de 2 % à moyen terme contribue à une croissance pérenne et à la création d’emplois, et limite les inégalités accentuées par une vive inflation.',
+          'Enfin, les mesures prises en période de crise soulèvent des risques propres. La fragmentation de la transmission au sein de la zone euro, c’est-à-dire des conditions de financement très différentes d’un pays à l’autre, a conduit à la création de l’instrument de protection de la transmission (TPI), conçu pour une transmission plus efficace de la politique monétaire. La BCE décrit aussi un canal de la prise de risque : des taux très bas peuvent conduire à un assouplissement des critères d’octroi de crédit et à une offre de prêts excessive. Ces débats expliquent que les banques centrales réexaminent périodiquement leur stratégie : la BCE l’avait fait en 2003, puis de 2020 à 2021, et a publié une nouvelle déclaration en 2025.'
+        ],
+        example: {
+          statement: 'Un taux directeur nominal est de 4,00 % alors que l’inflation annuelle est de 6,00 %. Quel est le taux réel approximatif et que peut-on en conclure ?',
+          calculation: 'Taux réel ≈ taux nominal − inflation = 4,00 − 6,00 = −2,00 points.',
+          answer: 'Le taux réel approximatif est d’environ −2 points : malgré un taux nominal apparemment élevé, le coût réel de l’emprunt est négatif, ce qui est favorable aux emprunteurs. C’est pourquoi les banques centrales raisonnent en taux réels et en anticipations plutôt qu’en taux nominaux seuls.'
+        },
+        exercise: {
+          question: 'Pourquoi des taux d’intérêt négatifs sur l’épargne peuvent-ils poser problème selon Panicos Demetriades ?',
+          answer: 'Ils peuvent inciter ménages et entreprises à détenir des espèces ou des actifs réels plutôt que des dépôts bancaires, d’où une désintermédiation préjudiciable au financement de l’économie.'
+        },
+        exercises: [
+          {
+            question: 'Quel événement de juillet 2022 a mis fin aux taux de dépôt négatifs de la BCE ?',
+            answer: 'Un relèvement de 50 points de base des taux directeurs, le premier depuis 2011.'
+          },
+          {
+            question: 'À quoi sert l’instrument de protection de la transmission (TPI) de la BCE ?',
+            answer: 'À assurer une transmission plus efficace de la politique monétaire, notamment face aux risques de fragmentation au sein de la zone euro.'
+          },
+          {
+            question: 'Quel risque la BCE associe-t-elle au « canal de la prise de risque » lorsque les taux sont très bas ?',
+            answer: 'Un assouplissement des critères d’octroi de crédit pouvant conduire à une offre de prêts excessive.'
+          }
+        ],
+        sources: [
+          { title: 'BCE — Déclaration relative à la stratégie de politique monétaire de la BCE (2025)', url: 'https://www.ecb.europa.eu/mopo/strategy/strategy-review/ecb.strategyreview202506_strategy_statement.fr.html' },
+          { title: 'BCE — Transmission mechanism of monetary policy', url: 'https://www.ecb.europa.eu/mopo/intro/transmission' },
+          { title: 'BCE — Retour d’information sur les contributions du Parlement européen (avril 2024)', url: 'https://www.ecb.europa.eu/press/feedbackar/html/ecb.20240418_feedback_on_the_input_provided_by_the_european_parliament~c6c356ed09.fr.html' },
+          { title: 'Cambridge University Press — Demetriades, Central Bank Independence and the Future of the Euro (chapitre sur les politiques de la BCE pendant la crise)', url: 'https://cambridge.org/core/books/central-bank-independence-and-the-future-of-the-euro/european-central-banks-policies-during-the-crisis/A39343DFA1ABFD49B841CA564FD200AA' },
+          { title: 'Banque de France — The asset purchase programme (APP), the ECB’s first quantitative easing programme', url: 'https://banque-france.fr/en/monetary-strategy/operational-framework/asset-purchase-programmes' },
+          { title: 'De Nederlandsche Bank — ECB interest rates', url: 'https://dnb.nl/en/the-euro-and-europe/the-ecb-s-monetary-policy/ecb-interest-rates' },
+          { title: 'Banco de España — ECB cuts rates by 25 basis points in September', url: 'https://www.bde.es/wbe/en/noticias-eventos/actualidad-bce/el-bce-baja-los-tipos-25-puntos-basicos-en-septiembre.html' }
+        ]
+      }
+    }
+  ]
+}
+
 ]
