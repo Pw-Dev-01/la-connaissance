@@ -4801,6 +4801,316 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'histoire-ouest-afrique',
+  sortYear: 500,
+  title: 'Histoire des empires de l’Afrique de l’ouest',
+  note: 'Six chapitres consacrés aux réseaux commerciaux sahariens, à l’Empire du Ghana, à la formation du Mali, au règne de Mansa Musa, à l’Empire songhaï et aux transformations politiques de la région. Les dates anciennes sont parfois approximatives : les sources écrites sont inégalement réparties et doivent être confrontées aux données archéologiques et aux traditions orales.',
+  chapters: [
+    {
+      id: 'routes-commerciales-sahel',
+      title: 'Le Sahel, les échanges et les conditions d’émergence des empires',
+      field: 'Histoire de l’Afrique de l’Ouest · Environ 500–1500',
+      summary: 'Comprendre comment les milieux sahéliens, l’agriculture, les ressources et les échanges à longue distance ont favorisé la croissance de villes et d’États, sans réduire leur histoire au seul commerce de l’or.',
+      lesson: {
+        sections: [
+          'Le Sahel est une zone de transition entre le Sahara au nord et les régions plus humides au sud. Les sociétés y ont développé des activités diverses : agriculture adaptée aux pluies, élevage, pêche dans les zones fluviales, artisanat et commerce. Le fleuve Niger et ses affluents, comme le Sénégal dans l’ouest, facilitaient les déplacements et reliaient des zones écologiques différentes. Les conditions naturelles n’expliquent pas à elles seules la formation des États : les choix politiques, les alliances et les organisations locales ont également compté.',
+          'Les routes transsahariennes reliaient l’Afrique de l’Ouest à l’Afrique du Nord. Les caravanes transportaient notamment du sel vers le sud et de l’or, de l’ivoire et d’autres marchandises vers le nord. Les échanges portaient aussi sur les textiles, les chevaux, le cuivre, les céréales et divers produits artisanaux. Le commerce transsaharien n’était pas un système unique contrôlé par un seul souverain : plusieurs villes, communautés marchandes et pouvoirs politiques intervenaient dans les circuits. Les taxes prélevées sur les marchandises pouvaient procurer des revenus aux autorités qui sécurisaient ou contrôlaient certains passages.',
+          'Les échanges ont favorisé la croissance de centres urbains et la circulation de pratiques religieuses, de langues et de savoirs. L’islam s’est implanté progressivement, notamment grâce aux commerçants et aux lettrés, mais son adoption a varié selon les lieux et les groupes sociaux. Les traditions religieuses locales ont continué d’exister et les formes de coexistence ont changé avec le temps. Les sources disponibles sont de nature différente : récits de voyageurs et de géographes, traditions orales, chroniques plus tardives, vestiges archéologiques et manuscrits. Aucune source isolée ne suffit à reconstituer toute l’histoire de la région.'
+        ],
+        example: {
+          statement: 'Pourquoi les échanges entre le Sahara et les régions situées au sud ont-ils pu favoriser l’essor de pouvoirs politiques ?',
+          calculation: 'Les autorités pouvaient tirer des revenus de certaines taxes, protéger des marchés ou des routes et nouer des alliances avec des communautés marchandes. Ces mécanismes variaient selon les lieux et les périodes.',
+          answer: 'Le commerce a pu soutenir les revenus, les villes et les réseaux diplomatiques de certains États. Il n’est cependant pas l’unique cause de leur développement : l’agriculture, les institutions, les conflits et les alliances comptaient également.'
+        },
+        exercise: {
+          question: 'Cite deux marchandises importantes dans les échanges transsahariens et explique pourquoi ces échanges ne suffisent pas à expliquer seuls la naissance des empires.',
+          answer: 'L’or et le sel sont deux marchandises importantes. Les empires dépendaient aussi de facteurs comme l’agriculture, les institutions politiques, les alliances, les capacités militaires et les relations entre populations.'
+        },
+        exercises: [
+          {
+            question: 'Quelle grande zone désertique les caravanes traversaient-elles pour relier l’Afrique de l’Ouest à l’Afrique du Nord ?',
+            answer: 'Le Sahara.'
+          },
+          {
+            question: 'Quel grand fleuve a joué un rôle important dans les échanges et les villes de la région ?',
+            answer: 'Le fleuve Niger, notamment dans les régions centrales de l’Afrique de l’Ouest.'
+          },
+          {
+            question: 'Pourquoi faut-il confronter les récits écrits aux données archéologiques et aux traditions orales ?',
+            answer: 'Parce que chaque type de source a ses limites et ne documente qu’une partie du passé.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Empires de l’Afrique de l’Ouest',
+            url: 'https://www.worldhistory.org/trans/fr/9-61/empires-de-lafrique-de-louest/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Western Sudan, 500–1000 A.D.',
+            url: 'https://www.metmuseum.org/toah/ht/06/afu.html'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Western and Central Sudan, 1000–1400 A.D.',
+            url: 'https://www.metmuseum.org/toah/ht/07/afu.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'empire-ghana-wagadu',
+      title: 'L’Empire du Ghana : pouvoir soninké, or et commerce',
+      field: 'Histoire médiévale de l’Afrique de l’Ouest · Au moins du 6e siècle au 13e siècle, selon les synthèses historiques',
+      summary: 'Étudier la formation et la puissance de l’Empire du Ghana, son rôle dans les échanges, la place de Koumbi Saleh et les incertitudes qui entourent son déclin.',
+      lesson: {
+        sections: [
+          'L’Empire du Ghana historique ne correspond pas au territoire de l’actuelle République du Ghana. Il se situait dans la zone de savane de l’ouest du Sahel, principalement dans des régions aujourd’hui situées au sud-est de la Mauritanie et à l’ouest du Mali. Il était étroitement associé aux populations soninké. Les traditions orales emploient notamment le nom de Wagadu. La date exacte de fondation n’est pas connue : des synthèses situent son émergence au cours du premier millénaire, mais les informations sur ses premières phases demeurent limitées.',
+          'La puissance du Ghana reposait en partie sur sa position entre les régions productrices d’or au sud et les zones sahariennes où le sel était disponible. Les souverains tiraient des revenus du commerce et de taxes appliquées aux marchandises entrant dans le territoire ou en sortant. Le fer, le cuivre, l’ivoire et d’autres produits participaient aussi aux économies régionales. Les récits de géographes musulmans, dont al-Bakri au 11e siècle, donnent des renseignements précieux sur le pouvoir royal et les marchands, mais ces auteurs dépendaient souvent de témoignages rapportés et ne décrivent pas nécessairement tout le territoire de façon directe.',
+          'Koumbi Saleh est couramment associé à la capitale ou à un grand centre du Ghana, mais l’organisation exacte du site et ses rapports avec le siège royal restent discutés. Les descriptions médiévales évoquent une présence musulmane marchande et une autorité royale qui conservait des pratiques religieuses locales. L’islam était donc présent dans certains milieux sans que cela prouve une conversion uniforme de toute la population ou de tous les souverains. À partir du 11e siècle, puis surtout du 12e, le pouvoir du Ghana s’affaiblit. Les facteurs proposés comprennent la concurrence commerciale, les conflits internes, les changements environnementaux et la montée de puissances rivales. L’idée d’une conquête almoravide unique et décisive en 1076 est débattue et ne doit pas être présentée comme un fait certain.'
+        ],
+        example: {
+          statement: 'Pourquoi la position géographique du Ghana pouvait-elle procurer des revenus à ses souverains ?',
+          calculation: 'Des marchandises circulaient entre les régions aurifères au sud et les réseaux sahariens au nord. Les autorités pouvaient taxer certains échanges et tirer parti de leur contrôle sur des marchés ou des itinéraires.',
+          answer: 'La position du Ghana favorisait la perception de taxes et le développement des échanges. Elle ne signifie pas que le souverain contrôlait toutes les mines d’or ni toutes les routes commerciales.'
+        },
+        exercise: {
+          question: 'Explique pourquoi il est incorrect de confondre l’Empire du Ghana médiéval avec l’État moderne du Ghana.',
+          answer: 'L’Empire du Ghana se trouvait principalement dans des régions correspondant aujourd’hui au sud-est de la Mauritanie et à l’ouest du Mali. L’État moderne du Ghana est situé plus à l’est, sur le golfe de Guinée.'
+        },
+        exercises: [
+          {
+            question: 'Quel peuple est particulièrement associé à l’Empire du Ghana ?',
+            answer: 'Les Soninké.'
+          },
+          {
+            question: 'Quel centre archéologique est couramment associé à l’Empire du Ghana ?',
+            answer: 'Koumbi Saleh, même si les détails de son rôle politique et urbain restent discutés.'
+          },
+          {
+            question: 'La conquête almoravide de 1076 explique-t-elle à elle seule le déclin du Ghana avec certitude ?',
+            answer: 'Non. Le rôle exact des Almoravides est débattu ; plusieurs facteurs politiques, économiques et environnementaux sont envisagés.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Ghana Empire',
+            url: 'https://www.worldhistory.org/Ghana_Empire/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Western Sudan, 500–1000 A.D.',
+            url: 'https://www.metmuseum.org/toah/ht/06/afu.html'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Western and Central Sudan, 1000–1400 A.D.',
+            url: 'https://www.metmuseum.org/toah/ht/07/afu.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'fondation-empire-mali',
+      title: 'Sundiata Keita et la formation de l’Empire du Mali',
+      field: 'Histoire médiévale de l’Afrique de l’Ouest · 13e siècle et développement ultérieur',
+      summary: 'Comprendre l’essor du Mali après la puissance du Sosso, le rôle attribué à Sundiata Keita et les mécanismes d’expansion et d’administration impériales.',
+      lesson: {
+        sections: [
+          'Au début du 13e siècle, le royaume du Sosso, dirigé dans les traditions historiques par Sumanguru Kanté, occupait une place importante dans les territoires issus du recul du Ghana. Sundiata Keita, chef mandingue, est associé à la victoire contre le Sosso, traditionnellement datée de 1235. Cette victoire constitue un repère majeur dans les récits de fondation du Mali. Les traditions orales, notamment l’épopée de Soundiata, ont transmis des mémoires politiques et culturelles essentielles, mais elles ne doivent pas être lues comme des comptes rendus contemporains mot à mot. Les détails biographiques et certains épisodes restent difficiles à vérifier indépendamment.',
+          'Le Mali s’est développé à partir de territoires mandingues et a progressivement étendu son influence sur des régions et des routes commerciales importantes. Son expansion ne s’explique pas uniquement par une bataille fondatrice : elle dépendait aussi de la capacité à nouer des alliances, à intégrer des pouvoirs locaux et à organiser la collecte de ressources. Les structures impériales combinaient l’autorité du souverain avec des responsables locaux et des liens de dépendance variables. L’étendue du contrôle pouvait changer selon les régions et les périodes ; une carte de l’empire à son apogée ne signifie pas que chaque zone était administrée de façon identique.',
+          'Le Mali a profité des échanges de l’or, du sel et d’autres marchandises, ainsi que de villes comme Djenné et Tombouctou, qui devinrent des centres commerciaux majeurs. Les commerçants musulmans et les savants ont renforcé les liens avec l’Afrique du Nord, tandis que les pratiques religieuses locales ont continué à façonner les sociétés. Les sources médiévales et les chroniques plus tardives montrent un État important, mais les frontières, les successions et les formes de gouvernement évoluaient. Le Mali ne fut donc pas un ensemble immuable : son pouvoir dépendait de la capacité de ses souverains à maintenir les relations entre des régions éloignées.'
+        ],
+        example: {
+          statement: 'Quelle différence faut-il faire entre une victoire fondatrice et la construction durable d’un empire ?',
+          calculation: 'Une victoire peut renverser un rival, mais un empire durable exige ensuite des alliances, des ressources, des responsables politiques et des relations stables avec les territoires intégrés.',
+          answer: 'La victoire attribuée à Sundiata Keita contre le Sosso est un repère important, mais la consolidation du Mali fut un processus politique et territorial qui s’est poursuivi après cette victoire.'
+        },
+        exercise: {
+          question: 'Pourquoi les traditions orales sont-elles importantes pour l’histoire de Sundiata Keita, et pourquoi faut-il les confronter à d’autres sources ?',
+          answer: 'Elles transmettent des mémoires historiques et des représentations politiques absentes de nombreux documents écrits. Leur transmission au fil du temps impose toutefois de les comparer aux chroniques, aux données archéologiques et aux autres sources disponibles.'
+        },
+        exercises: [
+          {
+            question: 'Quel dirigeant est associé à la fondation de l’Empire du Mali ?',
+            answer: 'Sundiata Keita.'
+          },
+          {
+            question: 'Quelle date est traditionnellement associée à la victoire de Sundiata contre le Sosso ?',
+            answer: '1235, date conventionnelle couramment retenue dans les chronologies.'
+          },
+          {
+            question: 'Pourquoi les frontières de l’Empire du Mali ne doivent-elles pas être considérées comme fixes ?',
+            answer: 'Parce que l’influence politique, les alliances et le contrôle des territoires changeaient au cours du temps.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Mali Empire',
+            url: 'https://www.worldhistory.org/Mali_Empire/'
+          },
+          {
+            title: 'World History Encyclopedia — Timeline: Mali Empire',
+            url: 'https://www.worldhistory.org/timeline/Mali_Empire/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Western and Central Sudan, 1000–1400 A.D.',
+            url: 'https://www.metmuseum.org/toah/ht/07/afu.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'mansa-musa-tombouctou',
+      title: 'Mansa Musa, Tombouctou et les savoirs du Mali',
+      field: 'Histoire médiévale de l’Afrique de l’Ouest · Début du 14e siècle et après',
+      summary: 'Étudier le règne de Mansa Musa, son pèlerinage à La Mecque, les réseaux diplomatiques et commerciaux, ainsi que le rôle de Tombouctou dans les échanges et l’enseignement islamique.',
+      lesson: {
+        sections: [
+          'Mansa Musa régna sur le Mali au 14e siècle ; les chronologies donnent généralement 1312–1337 pour son règne, tout en signalant que les dates médiévales peuvent varier selon les reconstructions. Sous son autorité, l’empire contrôlait un vaste ensemble de territoires et bénéficiait des revenus tirés des échanges. Son pèlerinage à La Mecque en 1324–1325 est particulièrement connu grâce aux récits qui soulignent les dons d’or effectués lors du passage au Caire. Ces récits témoignent de la réputation internationale du souverain, mais les anecdotes sur les quantités d’or et leurs effets économiques doivent être traitées avec prudence.',
+          'Le pèlerinage de Mansa Musa avait une dimension religieuse, diplomatique et politique. Il mettait en relation le souverain avec des centres du monde musulman et renforçait la visibilité du Mali dans les récits d’Afrique du Nord et du Moyen-Orient. Le pouvoir royal encouragea des constructions religieuses et l’activité de lettrés. Les traditions associent notamment Mansa Musa à la grande mosquée de Djingareyber à Tombouctou, mais l’histoire des édifices de la région comprend plusieurs phases de construction, de restauration et de transformation ; il faut donc éviter d’attribuer sans nuance chaque élément visible aujourd’hui à un seul commanditaire médiéval.',
+          'Tombouctou se développa grâce à sa situation proche du Niger et des routes caravanières du Sahara. La ville reliait des réseaux fluviaux et terrestres et accueillait marchands, artisans, savants et voyageurs. Elle devint un centre important d’enseignement islamique, où l’on étudiait notamment le droit, la théologie, la grammaire et d’autres disciplines savantes de l’époque. Cette vie intellectuelle ne signifie pas que toute la population avait accès au même enseignement : les institutions savantes étaient liées à des milieux et à des pratiques spécifiques. L’histoire de Tombouctou se poursuivit après le recul du Mali, sous d’autres pouvoirs, dont le Songhaï.'
+        ],
+        example: {
+          statement: 'Pourquoi le pèlerinage de Mansa Musa est-il un événement important pour l’histoire du Mali ?',
+          calculation: 'Il reliait le souverain à des réseaux religieux et diplomatiques au-delà de l’Afrique de l’Ouest et a contribué à la diffusion de récits sur les ressources et la puissance du Mali.',
+          answer: 'Le pèlerinage de 1324–1325 est un repère documenté de l’histoire du Mali. Il illustre les relations transrégionales de l’empire, sans permettre à lui seul de mesurer précisément toute sa richesse ou son fonctionnement.'
+        },
+        exercise: {
+          question: 'Explique comment la situation de Tombouctou pouvait favoriser à la fois le commerce et la circulation des savoirs.',
+          answer: 'Sa position reliait les itinéraires du Niger aux caravanes transsahariennes. Les échanges attiraient marchands et voyageurs, tandis que la présence de lettrés et d’institutions religieuses favorisait l’enseignement et la circulation des manuscrits.'
+        },
+        exercises: [
+          {
+            question: 'À quelles dates le pèlerinage de Mansa Musa à La Mecque est-il généralement situé ?',
+            answer: 'En 1324–1325.'
+          },
+          {
+            question: 'Cite une fonction de Tombouctou en plus du commerce.',
+            answer: 'La ville fut un centre d’enseignement et d’études islamiques.'
+          },
+          {
+            question: 'Le développement intellectuel de Tombouctou s’est-il arrêté avec le déclin du Mali ?',
+            answer: 'Non. La ville continua à jouer un rôle important sous d’autres pouvoirs, notamment sous l’Empire songhaï.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Mali Empire',
+            url: 'https://www.worldhistory.org/Mali_Empire/'
+          },
+          {
+            title: 'World History Encyclopedia — Timbuktu: West Africa’s Great Trading Centre',
+            url: 'https://www.worldhistory.org/Timbuktu/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Western and Central Sudan, 1000–1400 A.D.',
+            url: 'https://www.metmuseum.org/toah/ht/07/afu.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'empire-songhai-askia',
+      title: 'L’Empire songhaï : Sonni Ali, Askia Muhammad et la puissance du Niger',
+      field: 'Histoire médiévale de l’Afrique de l’Ouest · Environ 15e siècle–1591',
+      summary: 'Analyser la montée du Songhaï, la conquête de centres commerciaux, les réformes associées à Askia Muhammad et les fragilités d’un vaste empire.',
+      lesson: {
+        sections: [
+          'Le Songhaï s’est développé autour de Gao, un centre situé sur le Niger et bien placé pour les échanges entre le Sahel et les régions sahariennes. Un État songhaï existait avant son expansion impériale du 15e siècle. Alors que l’autorité du Mali diminuait dans plusieurs régions, les souverains songhaï renforcèrent leur autonomie et étendirent leur contrôle. Sonni Ali, au pouvoir dans la seconde moitié du 15e siècle, est associé à une expansion militaire qui permit notamment de prendre Tombouctou en 1468 ou 1469 selon les chronologies, puis Djenné après un siège prolongé.',
+          'Le contrôle des villes et des voies fluviales contribuait aux ressources de l’empire. Les forces songhaï combinaient différentes capacités militaires, dont la cavalerie et des embarcations sur le Niger. Toutefois, conquérir une ville ne garantissait pas une obéissance permanente : il fallait maintenir des relations avec les élites locales, les commerçants et les populations. Les politiques religieuses des souverains ne furent pas identiques. Sonni Ali conserva des rapports avec des traditions religieuses locales, tandis qu’Askia Muhammad, qui prit le pouvoir en 1493, favorisa davantage les relations avec les savants et les institutions musulmanes.',
+          'Askia Muhammad développa l’administration et les liens religieux et diplomatiques avec le monde musulman. Tombouctou demeura un centre intellectuel important, mais l’empire ne doit pas être réduit à cette seule ville. Gao, Djenné et d’autres centres participaient à des réseaux économiques et politiques divers. En 1591, une armée envoyée par le sultan marocain Ahmad al-Mansur envahit le Songhaï. La bataille de Tondibi et les affrontements qui suivirent contribuèrent à la rupture de l’autorité impériale. Les armes à feu marocaines ont compté, mais les divisions internes, les difficultés logistiques et la résistance qui continua après la campagne font également partie de l’explication.'
+        ],
+        example: {
+          statement: 'Pourquoi le contrôle de Gao, Tombouctou et Djenné était-il stratégique pour le Songhaï ?',
+          calculation: 'Ces centres reliaient des routes commerciales, des axes fluviaux et des réseaux politiques. Leur contrôle pouvait procurer des revenus et renforcer l’autorité du souverain, mais exigeait une administration et des alliances durables.',
+          answer: 'Ces villes avaient une importance économique et politique. Leur conquête renforçait la puissance songhaï, sans rendre automatiquement toutes les régions de l’empire faciles à gouverner.'
+        },
+        exercise: {
+          question: 'Compare brièvement les orientations religieuses attribuées à Sonni Ali et à Askia Muhammad sans supposer que toute la population partageait les mêmes croyances.',
+          answer: 'Sonni Ali est généralement présenté comme ayant conservé des liens avec des traditions religieuses locales. Askia Muhammad favorisa davantage les relations avec les institutions et les savants musulmans. Ces orientations des souverains ne décrivent pas à elles seules les croyances de toutes les populations.'
+        },
+        exercises: [
+          {
+            question: 'Quelle ville fut un centre politique important du Songhaï ?',
+            answer: 'Gao.'
+          },
+          {
+            question: 'Quel souverain songhaï prit le pouvoir en 1493 et favorisa les relations avec les savants musulmans ?',
+            answer: 'Askia Muhammad.'
+          },
+          {
+            question: 'En quelle année l’invasion marocaine porta-t-elle un coup décisif à l’empire ?',
+            answer: 'En 1591.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Songhai Empire',
+            url: 'https://www.worldhistory.org/Songhai_Empire/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Western and Central Sudan, 1400–1600 A.D.',
+            url: 'https://www.metmuseum.org/toah/ht/08/afu.html'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Sahel: Art and Empires on the Shores of the Sahara',
+            url: 'https://www.metmuseum.org/exhibitions/sahel-art-empire-sahara/inside-the-exhibition'
+          }
+        ]
+      }
+    },
+    {
+      id: 'transformations-heritages',
+      title: 'Après 1591 : recompositions politiques, héritages et limites des sources',
+      field: 'Histoire de l’Afrique de l’Ouest · Fin du 16e siècle et périodes suivantes',
+      summary: 'Comprendre pourquoi la fin de la domination songhaï ne signifie pas la disparition des sociétés ouest-africaines, et examiner les héritages commerciaux, intellectuels et artistiques des empires.',
+      lesson: {
+        sections: [
+          'La campagne marocaine de 1591 affaiblit fortement le pouvoir impérial songhaï, mais ne met pas fin à l’histoire politique de la région. Des autorités locales, des groupes militaires, des communautés marchandes et des pouvoirs régionaux continuèrent d’agir. Les structures issues de l’ancien empire se recomposèrent de différentes manières et les relations entre Gao, Tombouctou, Djenné et les régions voisines changèrent. Les États ne doivent pas être envisagés comme des entités qui apparaissent puis disparaissent sans laisser de continuités sociales ou institutionnelles.',
+          'À partir de l’époque moderne, les routes commerciales se transformèrent avec l’augmentation des échanges atlantiques et les changements des circuits transsahariens. Cette évolution fut progressive et différente selon les régions. Les échanges maritimes avec les marchands européens se développèrent le long de la côte, tandis que les réseaux intérieurs conservèrent des rôles importants. La traite des personnes réduites en esclavage eut des conséquences profondes et durables sur de nombreuses sociétés africaines. Il faut éviter de présenter les échanges comme un processus uniquement pacifique ou bénéfique : ils pouvaient aussi s’accompagner de coercition, de conflits et de déplacements forcés.',
+          'Les héritages des empires sont visibles dans les traditions orales, les langues, les manuscrits, les architectures en terre, les pratiques savantes et les mémoires politiques. Les chroniques écrites à Tombouctou, comme le Tarikh al-Sudan et le Tarikh al-Fattash, sont des sources majeures pour l’histoire de la région, mais elles furent rédigées après plusieurs des événements qu’elles rapportent et doivent être replacées dans leur contexte. L’histoire s’écrit en croisant les récits, les manuscrits, l’archéologie et l’histoire de l’art. Les dates et les frontières doivent rester prudentes lorsque les preuves sont incomplètes ou contradictoires.'
+        ],
+        example: {
+          statement: 'Pourquoi la défaite du Songhaï en 1591 ne signifie-t-elle pas la fin des sociétés politiques de la région ?',
+          calculation: 'La défaite a brisé la domination d’un empire, mais les populations, les villes, les réseaux marchands, les élites locales et les traditions savantes ont continué d’exister et de se transformer.',
+          answer: '1591 marque une rupture majeure dans l’histoire du pouvoir songhaï, non la disparition de la vie sociale, culturelle et politique de l’Afrique de l’Ouest.'
+        },
+        exercise: {
+          question: 'Donne deux types de sources permettant d’étudier les empires ouest-africains et indique une limite de chacune.',
+          answer: 'Les chroniques écrites peuvent refléter le point de vue de leurs auteurs et avoir été rédigées après les événements. Les traditions orales transmettent des mémoires collectives mais changent au fil des générations. L’archéologie fournit des traces matérielles, dont l’interprétation dépend du contexte et des fouilles.'
+        },
+        exercises: [
+          {
+            question: 'Quel événement militaire majeur est associé à l’année 1591 ?',
+            answer: 'L’invasion marocaine du Songhaï et la bataille de Tondibi.'
+          },
+          {
+            question: 'Cite un héritage intellectuel associé à Tombouctou.',
+            answer: 'Les manuscrits et les traditions d’enseignement savant, notamment en études islamiques.'
+          },
+          {
+            question: 'Pourquoi faut-il éviter d’expliquer les transformations commerciales uniquement par les échanges atlantiques ?',
+            answer: 'Parce que les réseaux intérieurs et transsahariens ont continué d’évoluer et que les effets différaient selon les régions.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Empires de l’Afrique de l’Ouest',
+            url: 'https://www.worldhistory.org/trans/fr/9-61/empires-de-lafrique-de-louest/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Western and Central Sudan, 1600–1800 A.D.',
+            url: 'https://www.metmuseum.org/toah/ht/09/afu.html'
+          },
+          {
+            title: 'World History Encyclopedia — Timbuktu: West Africa’s Great Trading Centre',
+            url: 'https://www.worldhistory.org/Timbuktu/'
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
 ]
 
 
