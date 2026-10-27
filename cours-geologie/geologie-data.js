@@ -837,7 +837,7 @@ window.courseCatalog = [
 // BRANCHE Les grands livres de la géologie  
 
 {
-  id: 'grands-livres-geologie',
+  id: 'grands-livres',
   title: 'Les grands livres de la géologie',
   note: 'Dix ouvrages de référence, d’Agricola à McPhee : titre, auteur, édition, date de parution et résumé de chaque livre.',
   chapters: [
@@ -1973,6 +1973,327 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'geologie-mineraux',
+  title: 'Les différents types de minéraux',
+  note: 'Six chapitres pour comprendre la définition d’un minéral, les silicates, les carbonates, les oxydes et hydroxydes, les sulfures, puis les sulfates, halogénures, phosphates et éléments natifs. La classification dépend principalement de la composition chimique et de la structure cristalline ; les propriétés visibles seules ne suffisent pas toujours à identifier un minéral.',
+  chapters: [
+    {
+      id: 'definition-classification-mineraux',
+      title: 'Définir un minéral et comprendre sa classification',
+      field: 'Géologie · Minéralogie générale',
+      summary: 'Distinguer minéral, roche et minerai, puis comprendre pourquoi la composition chimique et l’organisation atomique servent à classer les minéraux.',
+      lesson: {
+        sections: [
+          'Un minéral est généralement défini comme une substance naturelle, normalement inorganique, solide, dotée d’une structure interne ordonnée et d’une composition chimique caractéristique. Cette définition permet de distinguer un minéral d’un simple mélange. Des cas particuliers existent, notamment pour certaines substances naturelles et les matériaux d’origine biologique ; il faut donc éviter de réduire la minéralogie à la seule apparence extérieure.',
+          'Une roche est un matériau géologique constitué d’un assemblage d’un ou de plusieurs minéraux, ou parfois de matière minérale peu différenciée. Le granite, par exemple, contient couramment du quartz, des feldspaths et des micas. Un minerai est, quant à lui, un matériau dont l’exploitation permet d’obtenir une substance utile dans des conditions économiques données : ce terme dépend donc aussi du contexte technique et économique, et non uniquement de la composition minérale.',
+          'La classification minéralogique s’appuie notamment sur la composition chimique et la structure cristalline. Les grandes classes usuelles comprennent les silicates, les carbonates, les oxydes, les sulfures, les sulfates, les halogénures, les phosphates et les éléments natifs. Dans plusieurs classes, l’ion négatif principal ou le groupement anionique caractéristique joue un rôle central. Les silicates sont particulièrement abondants dans la croûte et le manteau terrestres.',
+          'La formule chimique résume les éléments présents et leurs proportions idéalisées, mais certains minéraux acceptent des substitutions chimiques. L’olivine, par exemple, forme une série entre des pôles riches en magnésium et en fer. Une formule peut donc comporter des parenthèses ou des variables. Pour une identification rigoureuse, la chimie doit être interprétée avec la structure cristalline et les propriétés physiques, plutôt que séparément.'
+        ],
+        example: {
+          statement: 'Un échantillon contient du quartz et des feldspaths. Faut-il le classer automatiquement comme un minéral unique ?',
+          calculation: 'Comparer la notion de minéral, qui correspond à une espèce ou à une phase minérale, avec celle de roche, qui peut réunir plusieurs minéraux.',
+          answer: 'Non. Le quartz et les feldspaths sont des minéraux distincts. Un échantillon qui les rassemble peut être une roche, par exemple un granite si sa composition et sa texture correspondent à cette roche.'
+        },
+        exercise: {
+          question: 'Quelle différence essentielle existe entre un minéral et une roche ?',
+          answer: 'Un minéral possède une composition et une structure caractéristiques ; une roche est généralement un assemblage de minéraux ou de matière minérale.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont deux critères importants de classification des minéraux ?',
+            answer: 'La composition chimique et la structure cristalline.'
+          },
+          {
+            question: 'Le mot « minerai » désigne-t-il simplement n’importe quel minéral métallique ?',
+            answer: 'Non. Il désigne un matériau exploitable pour en extraire une substance utile, compte tenu notamment des conditions techniques et économiques.'
+          },
+          {
+            question: 'Pourquoi la formule chimique ne suffit-elle pas toujours à identifier un minéral ?',
+            answer: 'Parce qu’il faut aussi tenir compte de la structure cristalline, des substitutions chimiques possibles et des propriétés physiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'U.S. Geological Survey — Minerals 101',
+            url: 'https://www.usgs.gov/science/science-explorer/minerals/minerals-101'
+          },
+          {
+            title: 'U.S. Geological Survey — What is the difference between a rock and a mineral?',
+            url: 'https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral'
+          },
+          {
+            title: 'Physical Geology, 2nd Edition — Mineral Groups',
+            url: 'https://opentextbc.ca/physicalgeology2ed/chapter/2-3-mineral-groups/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'mineraux-silicates',
+      title: 'Les silicates : quartz, feldspaths, micas et minéraux associés',
+      field: 'Géologie · Silicates et minéraux formateurs de roches',
+      summary: 'Étudier le rôle des tétraèdres silicatés et les principales familles de silicates présentes dans les roches magmatiques, sédimentaires et métamorphiques.',
+      lesson: {
+        sections: [
+          'Les silicates constituent la classe minérale dominante dans la croûte terrestre et sont également très importants dans le manteau. Leur unité structurale fondamentale est le tétraèdre silicaté, formé d’un atome de silicium associé à quatre atomes d’oxygène. Ces tétraèdres peuvent rester isolés ou partager des oxygènes, formant des chaînes, des feuillets ou des réseaux tridimensionnels. Cette organisation influence les propriétés et les plans de clivage des minéraux.',
+          'Le quartz, de formule SiO2, possède un réseau tridimensionnel et ne présente pas de clivage net ; sa fracture est souvent conchoïdale. Les feldspaths sont un groupe majeur de silicates, comprenant notamment les feldspaths potassiques et les plagioclases. Ils sont fréquents dans les roches magmatiques et métamorphiques. Leur identification exige d’observer plusieurs caractères, car leurs couleurs peuvent varier et se ressembler.',
+          'Les micas, comme la muscovite et la biotite, sont des silicates en feuillets. Ils présentent un clivage basal très marqué, qui permet de les séparer en lamelles. Les pyroxènes et les amphiboles sont des silicates en chaînes, avec des structures et des clivages différents. L’olivine, dont la composition varie entre des pôles riches en magnésium et en fer, est fréquente dans certaines roches magmatiques mafiques et ultramafiques.',
+          'La structure des silicates fournit un lien entre l’échelle atomique et les observations de terrain. Elle contribue à expliquer pourquoi certains minéraux se séparent en feuillets, tandis que d’autres se fracturent sans plan de clivage évident. Toutefois, une propriété isolée ne constitue pas une preuve définitive : la couleur, la taille des grains, l’altération et les mélanges de minéraux peuvent compliquer l’identification.'
+        ],
+        example: {
+          statement: 'Un minéral se sépare facilement en fines lamelles flexibles. Quelle famille peut-on envisager en premier ?',
+          calculation: 'Relier le clivage basal très marqué à une structure silicatée en feuillets, puis vérifier les autres caractères de l’échantillon.',
+          answer: 'Un mica, comme la muscovite ou la biotite, est une hypothèse plausible. Il faut toutefois vérifier d’autres propriétés avant de conclure.'
+        },
+        exercise: {
+          question: 'Quelle est l’unité structurale fondamentale des silicates ?',
+          answer: 'Le tétraèdre silicaté, composé d’un atome de silicium lié à quatre atomes d’oxygène.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la formule chimique du quartz ?',
+            answer: 'SiO2.'
+          },
+          {
+            question: 'Pourquoi les micas se séparent-ils en lamelles ?',
+            answer: 'Leur structure en feuillets est associée à un clivage basal très marqué.'
+          },
+          {
+            question: 'Les feldspaths ont-ils tous une couleur unique permettant une identification certaine ?',
+            answer: 'Non. Leur couleur varie et peut se confondre avec celle d’autres minéraux ; plusieurs propriétés doivent être examinées.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Physical Geology, 2nd Edition — Silicate Minerals',
+            url: 'https://opentextbc.ca/physicalgeology2ed/chapter/2-4-silicate-minerals/'
+          },
+          {
+            title: 'The Geology of Virginia — Minerals',
+            url: 'https://geologyva.pages.wm.edu/minerals-rocks-and-fossils/minerals/'
+          },
+          {
+            title: 'Geosciences LibreTexts — Classes of Minerals',
+            url: 'https://geo.libretexts.org/Bookshelves/Geology/Fundamentals_of_Geology_%28Schulte%29/02%3A_Rock_Forming_Minerals/2.06%3A_Classes_of_Minerals'
+          }
+        ]
+      }
+    },
+    {
+      id: 'mineraux-carbonates',
+      title: 'Les carbonates : calcite, dolomite et formation des roches carbonatées',
+      field: 'Géologie · Carbonates et environnements sédimentaires',
+      summary: 'Reconnaître le groupement carbonate, distinguer calcite et dolomite avec prudence et comprendre leur importance dans les calcaires et les dolomies.',
+      lesson: {
+        sections: [
+          'Les carbonates sont des minéraux dont la structure comprend le groupement carbonate CO3. La calcite, CaCO3, est l’un des carbonates les plus courants ; la dolomite, CaMg(CO3)2, contient du calcium et du magnésium. D’autres carbonates existent, notamment la sidérite, riche en fer, et la rhodochrosite, riche en manganèse. La classe est définie par la chimie et la structure, pas seulement par la couleur ou l’aspect d’un échantillon.',
+          'La calcite est un constituant majeur de nombreux calcaires et peut aussi être présente dans des veines ou des cavités. Elle présente généralement un clivage rhomboédrique et réagit nettement avec de l’acide chlorhydrique dilué à froid lorsqu’elle est testée dans des conditions adaptées. Cette réaction libère du dioxyde de carbone. Les essais à l’acide doivent être réalisés dans un cadre approprié, avec de petites quantités et des protections, et ne doivent pas être utilisés sans encadrement.',
+          'La dolomite est un carbonate de calcium et de magnésium qui constitue la dolomie et peut se former lors de transformations diagénétiques de sédiments carbonatés. Sur un échantillon massif, sa réaction à l’acide chlorhydrique dilué à froid est généralement moins vive que celle de la calcite ; la poudre réagit plus facilement. Cette différence est un indice utile, mais elle ne remplace pas une analyse lorsque l’identification doit être certaine.',
+          'Les carbonates participent au cycle du carbone et réagissent aux conditions chimiques de l’eau. La dissolution et la précipitation des carbonates contribuent à la formation de reliefs karstiques, de cavités et de dépôts chimiques. Les roches carbonatées peuvent aussi contenir des fossiles, mais un calcaire n’est pas nécessairement composé uniquement de calcite : sa texture, ses impuretés et les autres constituants doivent être pris en compte.'
+        ],
+        example: {
+          statement: 'Deux échantillons clairs sont soupçonnés d’être de la calcite et de la dolomite. Peut-on les distinguer par la couleur seule ?',
+          calculation: 'Comparer des propriétés diagnostiques complémentaires : clivage, dureté, réaction à l’acide dans des conditions contrôlées et, si nécessaire, analyses de laboratoire.',
+          answer: 'Non. La couleur n’est pas suffisante. La réaction à l’acide peut aider, mais elle dépend de la méthode employée et ne garantit pas à elle seule une identification certaine.'
+        },
+        exercise: {
+          question: 'Quel groupement chimique caractérise les carbonates ?',
+          answer: 'Le groupement carbonate CO3.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la formule de la calcite ?',
+            answer: 'CaCO3.'
+          },
+          {
+            question: 'Quel élément distingue notamment la dolomite de la calcite dans leur composition idéale ?',
+            answer: 'La dolomite contient du magnésium en plus du calcium.'
+          },
+          {
+            question: 'Pourquoi la couleur seule ne permet-elle pas d’identifier sûrement un carbonate ?',
+            answer: 'Parce que des minéraux différents peuvent avoir des couleurs semblables et que les impuretés modifient l’apparence.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Physical Geology, 2nd Edition — Mineral Groups',
+            url: 'https://opentextbc.ca/physicalgeology2ed/chapter/2-3-mineral-groups/'
+          },
+          {
+            title: 'Geology 101 for Lehman College — Classifying Minerals',
+            url: 'https://pressbooks.cuny.edu/gorokhovich/chapter/classifying-minerals/'
+          },
+          {
+            title: 'U.S. Geological Survey — Minerals 101',
+            url: 'https://www.usgs.gov/science/science-explorer/minerals/minerals-101'
+          }
+        ]
+      }
+    },
+    {
+      id: 'mineraux-oxydes-hydroxydes',
+      title: 'Les oxydes et hydroxydes : oxydes de fer, corindon et minerais métalliques',
+      field: 'Géologie · Oxydes, hydroxydes et géochimie',
+      summary: 'Comprendre les composés minéraux associés à l’oxygène, distinguer oxydes et hydroxydes et relier quelques exemples à leurs usages géologiques.',
+      lesson: {
+        sections: [
+          'Les oxydes sont des minéraux dans lesquels l’oxygène est associé à un ou plusieurs autres éléments, sans que le groupement principal soit un carbonate, un sulfate ou un silicate. L’hématite, Fe2O3, et la magnétite, Fe3O4, sont deux oxydes de fer importants. Ils se rencontrent dans différents contextes géologiques et constituent des minerais de fer lorsque leur concentration et les conditions d’exploitation le permettent.',
+          'L’hématite peut présenter une teinte rouge-brun à noire et laisse souvent une trace rouge-brun sur une plaque non émaillée. La magnétite est généralement noire et peut être fortement attirée par un aimant. Ces propriétés sont des indices utiles, mais les grains fins, l’altération et les mélanges peuvent rendre les observations moins nettes. Il est préférable de croiser la trace, le magnétisme, la densité apparente et le contexte géologique.',
+          'Le corindon, Al2O3, est un oxyde d’aluminium très dur. Ses variétés gemmes comprennent le rubis et le saphir ; ces noms correspondent à des variétés de corindon dont la couleur est liée notamment à des éléments en traces. Le corindon est aussi utilisé comme abrasif. La dureté élevée ne signifie pas que le minéral est incassable : la dureté mesure la résistance à la rayure, tandis que la ténacité et la fragilité décrivent d’autres comportements mécaniques.',
+          'Les hydroxydes contiennent le groupement hydroxyle OH dans leur structure. Ils ne doivent pas être confondus avec les oxydes simples, même si les deux familles sont souvent étudiées ensemble. Des minéraux hydroxylés et des mélanges riches en oxydes ou hydroxydes de fer et d’aluminium apparaissent dans les produits d’altération. Le terme « limonite » est historiquement utilisé pour des matériaux ferrugineux jaunes à bruns, souvent mélangés et mal cristallisés, plutôt que pour une espèce minérale unique bien définie.'
+        ],
+        example: {
+          statement: 'Un échantillon noir est attiré par un aimant. Quelle hypothèse minéralogique peut être proposée ?',
+          calculation: 'Utiliser le magnétisme comme indice, puis le comparer à la couleur, à la trace et au contexte géologique.',
+          answer: 'La magnétite est une hypothèse plausible, mais le magnétisme seul ne suffit pas à prouver l’identification.'
+        },
+        exercise: {
+          question: 'Quelle différence de formule existe entre l’hématite et la magnétite ?',
+          answer: 'L’hématite a pour formule Fe2O3 et la magnétite Fe3O4.'
+        },
+        exercises: [
+          {
+            question: 'Quel test simple peut aider à reconnaître la magnétite ?',
+            answer: 'Vérifier si l’échantillon est attiré par un aimant, tout en utilisant d’autres indices.'
+          },
+          {
+            question: 'Quelle est la formule du corindon ?',
+            answer: 'Al2O3.'
+          },
+          {
+            question: 'La dureté indique-t-elle qu’un minéral ne peut pas se casser ?',
+            answer: 'Non. La dureté mesure la résistance à la rayure ; elle ne décrit pas à elle seule la ténacité ou la fragilité.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Physical Geology, 2nd Edition — Mineral Groups',
+            url: 'https://opentextbc.ca/physicalgeology2ed/chapter/2-3-mineral-groups/'
+          },
+          {
+            title: 'The Geology of Virginia — Minerals',
+            url: 'https://geologyva.pages.wm.edu/minerals-rocks-and-fossils/minerals/'
+          },
+          {
+            title: 'Mindat — Mineral Pages',
+            url: 'https://www.mindat.org/a/mineralpages'
+          }
+        ]
+      }
+    },
+    {
+      id: 'mineraux-sulfures',
+      title: 'Les sulfures : pyrite, galène, sphalérite et formation des gisements',
+      field: 'Géologie · Minéraux sulfurés et gîtologie',
+      summary: 'Étudier les sulfures métalliques, leurs propriétés d’identification et leur rôle dans certains gisements de métaux.',
+      lesson: {
+        sections: [
+          'Les sulfures sont des minéraux dans lesquels le soufre est combiné à un ou plusieurs éléments, souvent métalliques. La pyrite, FeS2, la galène, PbS, et la sphalérite, ZnS, sont des exemples classiques. La chalcopyrite, CuFeS2, est un sulfure de cuivre et de fer. Ces minéraux peuvent se former dans différents environnements, notamment par circulation de fluides hydrothermaux, mais les conditions de formation varient selon le gisement.',
+          'La pyrite possède souvent un éclat métallique et une couleur jaune laiton, ce qui explique qu’elle soit parfois confondue avec l’or. Elle est toutefois plus dure et plus cassante que l’or et sa trace est généralement sombre, tandis que l’or laisse une trace jaune. La couleur et l’éclat ne suffisent donc pas à identifier un échantillon. La pyrite peut aussi s’altérer au contact de l’eau et de l’oxygène ; dans certains contextes miniers, cette oxydation contribue à l’acidification des eaux de drainage.',
+          'La galène est un sulfure de plomb, souvent gris plomb, à éclat métallique et à clivage cubique marqué. La sphalérite est le principal minéral de minerai du zinc dans de nombreux gisements ; sa couleur et son éclat peuvent varier. La chalcopyrite est une source importante de cuivre. La présence d’un sulfure ne signifie pas automatiquement qu’un gisement est économiquement exploitable : la teneur, le volume, la minéralogie associée, les contraintes environnementales et les techniques disponibles comptent aussi.',
+          'Les sulfures et les sulfates se distinguent par leur chimie. Dans un sulfure, le soufre est présent sous forme sulfurée ; dans un sulfate, il appartient au groupement SO4. Cette distinction est essentielle, car des minéraux qui contiennent tous deux du soufre peuvent avoir des propriétés, des conditions de formation et des comportements à l’altération très différents. Les formules chimiques et les tests minéralogiques permettent d’éviter la confusion.'
+        ],
+        example: {
+          statement: 'Un minéral jaune métallique est trouvé dans une roche. Peut-on conclure qu’il s’agit d’or ?',
+          calculation: 'Comparer plusieurs propriétés diagnostiques : trace, dureté relative, densité, forme des grains et contexte de découverte.',
+          answer: 'Non. La pyrite et la chalcopyrite peuvent présenter une couleur jaune métallique. Une identification fiable nécessite plusieurs observations et, si besoin, une analyse.'
+        },
+        exercise: {
+          question: 'Quelle est la formule chimique de la pyrite ?',
+          answer: 'FeS2.'
+        },
+        exercises: [
+          {
+            question: 'Quel métal est principalement associé à la galène ?',
+            answer: 'Le plomb.'
+          },
+          {
+            question: 'Quel métal est principalement extrait de la sphalérite ?',
+            answer: 'Le zinc.'
+          },
+          {
+            question: 'Quelle différence chimique sépare un sulfure d’un sulfate ?',
+            answer: 'Le sulfate contient le groupement SO4 ; un sulfure contient le soufre sous forme sulfurée, sans ce groupement sulfate.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Physical Geology, 2nd Edition — Mineral Groups',
+            url: 'https://opentextbc.ca/physicalgeology2ed/chapter/2-3-mineral-groups/'
+          },
+          {
+            title: 'U.S. Geological Survey — Minerals FAQ',
+            url: 'https://www.usgs.gov/science/faqs/minerals'
+          },
+          {
+            title: 'Geology 101 for Lehman College — Classifying Minerals',
+            url: 'https://pressbooks.cuny.edu/gorokhovich/chapter/classifying-minerals/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'sulfates-halogenures-phosphates-elements-natifs',
+      title: 'Sulfates, halogénures, phosphates et éléments natifs',
+      field: 'Géologie · Autres grandes classes minérales et identification',
+      summary: 'Explorer plusieurs classes moins abondantes mais importantes, puis appliquer une méthode prudente d’identification fondée sur plusieurs propriétés.',
+      lesson: {
+        sections: [
+          'Les sulfates contiennent le groupement SO4. Le gypse, CaSO4·2H2O, est un sulfate hydraté ; la barytine, BaSO4, est un autre exemple important. Le gypse est relativement tendre et peut se rayer avec l’ongle, mais un test isolé ne suffit pas à confirmer une espèce. Les sulfates se forment notamment par précipitation dans certains milieux évaporitiques ou par transformations liées à l’altération, selon les conditions locales.',
+          'Les halogénures contiennent des éléments halogènes, notamment le chlore ou le fluor. L’halite, NaCl, correspond au sel gemme et la fluorite, CaF2, est un minéral de fluorure. L’halite est soluble dans l’eau et possède un clivage cubique ; la fluorite présente généralement un clivage octaédrique. Il ne faut pas goûter un échantillon pour l’identifier : des minéraux d’apparence similaire peuvent contenir des substances nocives ou être contaminés.',
+          'Les phosphates sont caractérisés par le groupement PO4. L’apatite est un groupe minéral important, notamment parce que des phosphates sont utilisés dans la fabrication d’engrais. La turquoise est un phosphate hydraté de cuivre et d’aluminium. Comme pour les autres classes, la présence du groupement chimique ne détermine pas à elle seule la couleur, la forme des cristaux ou l’usage : les éléments associés, les impuretés et les conditions de formation jouent aussi un rôle.',
+          'Les éléments natifs sont constitués essentiellement d’un seul élément chimique. L’or, le cuivre natif, le soufre, le diamant et le graphite en sont des exemples. Le diamant et le graphite sont tous deux constitués de carbone, mais leurs structures atomiques diffèrent, ce qui entraîne des propriétés très différentes : le diamant est extrêmement dur, alors que le graphite se sépare facilement en feuillets. Cet exemple montre que la composition chimique seule ne suffit pas à décrire un minéral.',
+          'L’identification pratique commence par l’observation de l’éclat, de la couleur et de la forme, puis examine la trace, la dureté relative, le clivage, la fracture, la densité apparente et des propriétés particulières comme le magnétisme. La couleur est souvent variable et la trace peut être plus informative. Les essais doivent être réalisés avec prudence : éviter les tests à l’acide sans encadrement, ne pas inhaler de poussières, ne pas goûter les minéraux et ne pas utiliser un échantillon inconnu comme objet de manipulation sans précaution.',
+          'Lorsque les propriétés macroscopiques ne suffisent pas, les spécialistes peuvent utiliser la diffraction des rayons X, la microscopie, des analyses chimiques ou des méthodes spectroscopiques. Ces techniques permettent de caractériser la structure et la composition plus précisément. Une bonne description scientifique indique donc ce qui a été observé, les indices compatibles avec l’identification et le degré de certitude, au lieu de présenter une supposition comme un fait établi.'
+        ],
+        example: {
+          statement: 'Deux échantillons sont tous deux constitués de carbone, mais l’un est très dur et l’autre se sépare en feuillets. Comment expliquer cette différence ?',
+          calculation: 'Comparer la composition chimique à la structure cristalline : un même élément peut s’organiser selon des réseaux différents.',
+          answer: 'Le diamant et le graphite sont des formes minérales du carbone dont les structures atomiques diffèrent. Cette différence de structure explique une grande partie de leurs propriétés physiques distinctes.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il combiner plusieurs propriétés pour identifier un minéral ?',
+          answer: 'Parce que des minéraux différents peuvent partager une couleur ou un éclat similaires ; plusieurs indices et, si nécessaire, des analyses instrumentales augmentent la fiabilité.'
+        },
+        exercises: [
+          {
+            question: 'À quelle classe appartient le gypse ?',
+            answer: 'Aux sulfates ; sa formule est CaSO4·2H2O.'
+          },
+          {
+            question: 'Quelle est la formule de l’halite ?',
+            answer: 'NaCl.'
+          },
+          {
+            question: 'Pourquoi le diamant et le graphite ont-ils des propriétés différentes malgré leur composition en carbone ?',
+            answer: 'Parce que leurs atomes sont organisés selon des structures cristallines différentes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Physical Geology, 2nd Edition — Mineral Groups',
+            url: 'https://opentextbc.ca/physicalgeology2ed/chapter/2-3-mineral-groups/'
+          },
+          {
+            title: 'Mindat — Mineral Pages',
+            url: 'https://www.mindat.org/a/mineralpages'
+          },
+          {
+            title: 'Dynamic Planet — How to Identify Minerals',
+            url: 'https://open.maricopa.edu/hazards/chapter/3-2-how-to-identify-minerals/'
+          },
+          {
+            title: 'Hong Kong Geology — Minerals and Rocks: Geological Building Blocks',
+            url: 'https://hkss.cedd.gov.hk/hkss/en/publications-and-resources/educational-materials/hong-kong-geology/chapter-1/index.html'
+          }
+        ]
+      }
+    }
+  ]
+},
 
-];
+
+]
+
 
