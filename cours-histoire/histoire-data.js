@@ -5379,7 +5379,346 @@ window.courseCatalog = [
   ]
 },
 
-
+{
+  id: 'mesopotamie-antique',
+  sortYear: -3500,
+  title: 'Mésopotamie : des premières villes aux empires du Proche-Orient',
+  note: 'Six chapitres sur les milieux mésopotamiens, les cités sumériennes, l’écriture cunéiforme, les royaumes d’Akkad et d’Ur, Babylone et ses traditions juridiques, puis l’Assyrie et la Babylonie tardive. Les dates sont approximatives, les chronologies peuvent varier selon les spécialistes et les régions ne suivent pas toutes la même évolution.',
+  chapters: [
+    {
+      id: 'milieux-agriculture-villes',
+      title: 'Entre le Tigre et l’Euphrate : agriculture, irrigation et naissance des villes',
+      field: 'Mésopotamie · Du Néolithique au IVe millénaire av. n. è.',
+      summary: 'Étudier les milieux du Proche-Orient, les transformations agricoles et les conditions qui favorisent l’urbanisation sans réduire celle-ci à une cause unique.',
+      lesson: {
+        sections: [
+          'Le mot Mésopotamie vient du grec et signifie « entre les fleuves ». Il désigne une région historique structurée notamment par le Tigre et l’Euphrate, correspondant surtout à l’Irak actuel et à des zones voisines de la Syrie, de la Turquie, de l’Iran et du Koweït. Ses limites varient selon les périodes : il ne s’agit ni d’un État unique ni d’une civilisation homogène. Les populations, les langues et les pouvoirs politiques y ont changé au fil des millénaires.',
+          'Les fleuves et leurs affluents fournissaient de l’eau et des voies de circulation, mais leurs régimes étaient variables et les pluies insuffisantes dans certaines zones méridionales. Des canaux, des digues et des travaux d’entretien permettaient d’acheminer l’eau vers les champs et de limiter certains risques. L’irrigation exigeait une coordination collective et un travail régulier ; elle ne suffit toutefois pas, à elle seule, à expliquer la formation des États. Les ressources, les échanges, les conflits, les institutions et les choix des communautés comptaient également.',
+          'Les communautés du Proche-Orient pratiquaient l’agriculture et l’élevage bien avant l’apparition des grandes villes. Au sud de la Mésopotamie, l’agriculture céréalière, l’élevage, la pêche et l’exploitation des marais s’inscrivaient dans des économies diverses. L’orge jouait un rôle important dans plusieurs systèmes agricoles, notamment parce qu’elle supportait relativement bien certaines conditions locales. La production pouvait être stockée, redistribuée ou échangée, ce qui contribua à la spécialisation de certaines activités.',
+          'Au IVe millénaire av. n. è., des centres urbains comme Uruk prennent une ampleur remarquable. Les grands bâtiments, les ateliers, les objets importés et les premières archives administratives témoignent d’une organisation sociale plus complexe. Cette transformation fut progressive et inégale : les villages ne disparurent pas, et les villes ne se développèrent pas toutes au même rythme. La croissance urbaine s’explique par une combinaison de facteurs économiques, politiques, religieux et environnementaux.'
+        ],
+        example: {
+          statement: 'Un document situe l’essor urbain d’Uruk au IVe millénaire av. n. è. et un autre décrit des communautés agricoles plus anciennes. Quel phénomène est antérieur ?',
+          calculation: 'Dans une chronologie av. n. è., une date dont le nombre est plus grand est plus ancienne : 7000 av. n. è. précède 3500 av. n. è.',
+          answer: 'Les communautés agricoles plus anciennes précèdent l’essor urbain d’Uruk. La transition n’a pas été instantanée et les dates varient selon les sites étudiés.'
+        },
+        exercise: {
+          question: 'Pourquoi l’irrigation a-t-elle été importante dans certaines régions de Mésopotamie, et pourquoi ne suffit-elle pas à expliquer à elle seule la naissance des villes ?',
+          answer: 'Elle permettait d’acheminer l’eau vers les cultures dans des zones où les précipitations pouvaient être insuffisantes. La formation des villes dépendait aussi des échanges, des institutions, de la spécialisation du travail, des pratiques religieuses et des rapports de pouvoir.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les deux fleuves associés au nom de la Mésopotamie ?',
+            answer: 'Le Tigre et l’Euphrate.'
+          },
+          {
+            question: 'La Mésopotamie a-t-elle toujours constitué un seul État ?',
+            answer: 'Non. La région a abrité de nombreuses cités, royaumes et empires à différentes époques.'
+          },
+          {
+            question: 'Citer deux activités économiques importantes dans la région ancienne.',
+            answer: 'Par exemple, l’agriculture et l’élevage ; la pêche, l’artisanat et le commerce étaient également importants selon les lieux et les périodes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Mesopotamia',
+            url: 'https://www.worldhistory.org/Mesopotamia/'
+          },
+          {
+            title: 'World History Encyclopedia — Agriculture in the Ancient World',
+            url: 'https://www.worldhistory.org/article/9/agriculture-in-the-ancient-world/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Art of the First Cities',
+            url: 'https://www.metmuseum.org/toah/hd/uruk/hd_uruk.htm'
+          }
+        ]
+      }
+    },
+    {
+      id: 'sumer-et-cites',
+      title: 'Sumer et les cités-États : temples, pouvoir et échanges',
+      field: 'Sumer · IVe–IIIe millénaires av. n. è.',
+      summary: 'Comprendre le rôle des cités sumériennes, des institutions religieuses et politiques, des métiers spécialisés et des réseaux d’échange.',
+      lesson: {
+        sections: [
+          'Sumer désigne principalement le sud de la Mésopotamie où le sumérien était parlé et écrit dans l’Antiquité. À partir de la fin du IVe et surtout au IIIe millénaire av. n. è., des cités comme Uruk, Ur, Lagash et Nippur occupent une place majeure. Elles ne formaient pas continuellement un royaume unifié : chacune possédait ses institutions, ses territoires et ses intérêts, et elles pouvaient coopérer, commercer ou entrer en conflit.',
+          'Le temple était un centre religieux, mais aussi une institution économique importante. Des terres, des troupeaux, des ateliers et des réserves pouvaient être administrés par des institutions liées aux temples ou aux palais. Les modalités exactes différaient selon les villes et les périodes ; il serait donc inexact de décrire toute l’économie mésopotamienne comme un système unique contrôlé exclusivement par les prêtres. Les textes administratifs montrent des distributions de produits, des rations, des livraisons et des obligations de travail.',
+          'Le pouvoir politique changea au cours du temps. Les textes sumériens emploient différents titres pour des dirigeants, dont lugal et ensi, mais leur sens précis dépend du contexte et de la période. Les souverains commandaient des travaux, conduisaient des campagnes militaires, entretenaient des relations diplomatiques et finançaient des constructions. Leur légitimité était fréquemment exprimée en termes religieux : les inscriptions présentent les dieux comme protecteurs de la ville et comme garants de l’autorité du souverain.',
+          'Les ressources locales ne suffisaient pas à produire tous les matériaux recherchés. Le sud mésopotamien manquait notamment de pierre et de bois de construction en quantité comparable à certaines régions voisines. Les échanges reliaient donc les cités à des zones d’approvisionnement plus lointaines. Les sceaux-cylindres, les tablettes et les objets archéologiques témoignent de transactions, d’identités administratives et de contacts avec d’autres régions du Proche-Orient. Les itinéraires et les partenaires variaient selon les époques.'
+        ],
+        example: {
+          statement: 'Une tablette administrative mentionne des quantités d’orge distribuées à des travailleurs. Que peut-on raisonnablement en déduire ?',
+          calculation: 'On distingue l’observation directe — des quantités et des bénéficiaires sont enregistrés — de l’interprétation historique, qui doit être confrontée à d’autres textes et aux données archéologiques.',
+          answer: 'La tablette indique qu’une institution enregistrait une distribution de produits. À elle seule, elle ne permet pas de décrire toute l’économie de la cité ni de conclure que tous les habitants recevaient les mêmes rations.'
+        },
+        exercise: {
+          question: 'Pourquoi parle-t-on de cités-États pour plusieurs villes sumériennes ?',
+          answer: 'Parce que plusieurs villes disposaient de leur propre centre politique et religieux, administraient leur territoire et pouvaient agir indépendamment, même si des périodes d’unification ont aussi existé.'
+        },
+        exercises: [
+          {
+            question: 'Citer deux cités importantes de Sumer.',
+            answer: 'Uruk et Ur, par exemple ; Lagash et Nippur sont également des exemples.'
+          },
+          {
+            question: 'Les temples avaient-ils uniquement une fonction religieuse ?',
+            answer: 'Non. Ils pouvaient aussi gérer des terres, des réserves, des ateliers et des activités de redistribution.'
+          },
+          {
+            question: 'Pourquoi les échanges à longue distance étaient-ils utiles ?',
+            answer: 'Ils permettaient d’obtenir des matières premières et des biens qui étaient rares ou absents dans certaines régions, notamment dans le sud mésopotamien.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Sumer',
+            url: 'https://www.worldhistory.org/sumer/'
+          },
+          {
+            title: 'World History Encyclopedia — Uruk',
+            url: 'https://www.worldhistory.org/uruk/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Art of the First Cities',
+            url: 'https://www.metmuseum.org/toah/hd/uruk/hd_uruk.htm'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Cylinder seal and modern impression, Early Dynastic I',
+            url: 'https://www.metmuseum.org/art/collection/search/325481'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ecriture-cuneiforme-savoirs',
+      title: 'L’écriture cunéiforme : administration, littérature et savoirs',
+      field: 'Mésopotamie · Premières écritures à la fin du IVe millénaire av. n. è. et usages ultérieurs',
+      summary: 'Étudier la naissance de l’écriture, son support matériel, la diversité des langues écrites et la transmission des connaissances.',
+      lesson: {
+        sections: [
+          'Les premiers systèmes d’écriture attestés en Mésopotamie apparaissent à la fin du IVe millénaire av. n. è., notamment dans les archives d’Uruk. Les premières tablettes connues sont en grande partie liées à l’enregistrement de biens, de quantités et d’activités administratives. L’écriture ne fut pas inventée partout au même moment ni sous une forme identique : plusieurs régions du monde ont développé leurs propres traditions écrites. Il faut donc éviter de présenter la Mésopotamie comme l’unique lieu d’invention de toute écriture.',
+          'Le terme « cunéiforme » décrit l’aspect en forme de coins de nombreux signes. Le scribe pressait généralement un calame, souvent taillé dans un roseau, dans l’argile encore humide. La forme des signes dépendait du geste, du support et de la période. Une fois séchées, les tablettes pouvaient être conservées ; certaines étaient cuites accidentellement ou volontairement, ce qui a favorisé leur survie. Le cunéiforme n’était pas une langue : c’était un système d’écriture adapté à plusieurs langues au cours de sa longue histoire.',
+          'Le sumérien et l’akkadien sont deux langues différentes. Le sumérien n’est pas classé dans une famille linguistique connue, tandis que l’akkadien est une langue sémitique, avec notamment des variétés babylonienne et assyrienne. Le cunéiforme fut adapté à l’akkadien et à d’autres langues du Proche-Orient. Dans certains contextes, le sumérien continua d’être appris et utilisé pour les textes savants et religieux après qu’il eut cessé d’être une langue couramment parlée. Les scribes devaient donc maîtriser des signes, des conventions et parfois plusieurs langues.',
+          'Les tablettes conservées couvrent des domaines très variés : comptes, contrats, lettres, listes lexicales, textes juridiques, hymnes, récits mythologiques, textes médicaux et observations astronomiques. Les écoles de scribes utilisaient notamment des listes de signes et de mots pour transmettre les savoirs. Les textes littéraires, dont les traditions associées à Gilgamesh, furent copiés et remaniés sur de longues périodes. La documentation est cependant inégale : les archives conservées reflètent surtout les institutions et les milieux capables de produire et de préserver des tablettes.'
+        ],
+        example: {
+          statement: 'Une tablette cunéiforme est rédigée en akkadien. Peut-on conclure que le cunéiforme est la langue akkadienne ?',
+          calculation: 'Il faut distinguer le système graphique, c’est-à-dire l’écriture cunéiforme, de la langue exprimée par les signes, ici l’akkadien.',
+          answer: 'Non. Le cunéiforme est un système d’écriture qui a servi à noter plusieurs langues, notamment le sumérien et l’akkadien.'
+        },
+        exercise: {
+          question: 'Pourquoi les tablettes cunéiformes sont-elles des sources essentielles pour les historiens, tout en ayant des limites ?',
+          answer: 'Elles documentent directement des transactions, des institutions, des langues et des représentations anciennes. Mais elles proviennent souvent de contextes administratifs, savants ou élitaires et ne donnent pas automatiquement accès à l’expérience de toutes les catégories de population.'
+        },
+        exercises: [
+          {
+            question: 'Sur quel matériau écrivait-on souvent en cunéiforme ?',
+            answer: 'Sur des tablettes d’argile, même si le cunéiforme a aussi été inscrit sur d’autres supports.'
+          },
+          {
+            question: 'Quelle différence faut-il faire entre le sumérien et le cunéiforme ?',
+            answer: 'Le sumérien est une langue ; le cunéiforme est un système d’écriture.'
+          },
+          {
+            question: 'Citer deux types de textes cunéiformes autres que les comptes.',
+            answer: 'Par exemple, des lettres, des contrats, des textes juridiques, des hymnes, des récits littéraires ou des observations astronomiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Cuneiform',
+            url: 'https://www.worldhistory.org/cuneiform/'
+          },
+          {
+            title: 'ORACC, University of Pennsylvania — Introduction to Cuneiform Sign Lists',
+            url: 'https://oracc.museum.upenn.edu/dcclt/signlists/SignLists/index.html'
+          },
+          {
+            title: 'ORACC, University of Pennsylvania — Introduction to lexical texts',
+            url: 'https://oracc.museum.upenn.edu/dcclt/intro/lexical_intro.html'
+          },
+          {
+            title: 'The British Museum — Babylon: Myth and Reality, teachers’ resource',
+            url: 'https://www.britishmuseum.org/sites/default/files/2019-10/Babylon_Teachers_Resource.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'akkad-ur-troisieme-dynastie',
+      title: 'Akkad et Ur III : unifications, administration et recompositions politiques',
+      field: 'Mésopotamie · Vers 2334–2004 av. n. è., dates conventionnelles',
+      summary: 'Comparer l’expansion du royaume d’Akkad et l’organisation de la troisième dynastie d’Ur, en tenant compte des incertitudes chronologiques.',
+      lesson: {
+        sections: [
+          'Au milieu du IIIe millénaire av. n. è., les rivalités entre cités s’inscrivent dans un paysage politique changeant. Sargon d’Akkad, dont le règne est traditionnellement placé au XXIVe siècle av. n. è., est associé à la formation d’un vaste royaume couvrant une partie importante de la Mésopotamie et des territoires voisins. Les limites exactes et les modalités de contrôle de cet ensemble restent discutées. Le terme « empire » est utile pour décrire son expansion, mais ne doit pas faire imaginer un appareil administratif identique aux États modernes.',
+          'L’empire d’Akkad associait des centres de pouvoir, des dirigeants locaux, des campagnes militaires et des relations de tribut ou de dépendance. Les inscriptions royales mettent en avant les victoires du souverain et la protection divine ; elles sont aussi des textes politiques destinés à présenter le pouvoir sous un jour favorable. Il faut les confronter aux archives administratives, aux vestiges archéologiques et aux traditions littéraires plus tardives. Les explications de la fin de la dynastie sont multiples et les sources ne permettent pas toujours d’isoler une cause unique.',
+          'Après la période d’Akkad et une phase de recomposition, la troisième dynastie d’Ur, souvent appelée Ur III, domine une grande partie du sud mésopotamien vers 2112–2004 av. n. è. selon une chronologie courante. Ses souverains, dont Ur-Nammu et Shulgi, sont associés à une administration abondamment documentée par des milliers de tablettes. Ces documents enregistrent des produits agricoles, du bétail, des travailleurs, des livraisons et des déplacements. Cette documentation permet d’étudier les mécanismes administratifs, mais son abondance ne signifie pas que chaque région et chaque habitant soient également documentés.',
+          'Les rois d’Ur III ont soutenu des constructions religieuses et des projets publics, et leur pouvoir s’exprimait dans des inscriptions et des rituels. La fin de la dynastie s’inscrit dans un contexte de tensions et de changements politiques, avec notamment des attaques venues de l’est et la montée d’autres pouvoirs régionaux. Après Ur III, plusieurs royaumes continuent de partager des traditions administratives, littéraires et religieuses mésopotamiennes. Les changements de dynastie ne correspondent donc pas à une disparition soudaine de la culture de la région.'
+        ],
+        example: {
+          statement: 'Une chronologie donne pour Ur III un intervalle approximatif de 2112 à 2004 av. n. è. Quel est le repère le plus ancien ?',
+          calculation: 'Pour les dates av. n. è., 2112 est antérieur à 2004, car le nombre d’années avant notre ère est plus grand.',
+          answer: 'Le repère le plus ancien est 2112 av. n. è. Cet intervalle est conventionnel et peut varier légèrement selon les chronologies utilisées.'
+        },
+        exercise: {
+          question: 'Pourquoi les tablettes administratives d’Ur III sont-elles utiles, et que ne permettent-elles pas de conclure à elles seules ?',
+          answer: 'Elles montrent comment certaines institutions enregistraient les biens, les travailleurs et les livraisons. Elles ne décrivent pas nécessairement toute l’économie ni l’expérience de toutes les populations de l’État.'
+        },
+        exercises: [
+          {
+            question: 'À quel souverain associe-t-on traditionnellement la fondation de l’empire d’Akkad ?',
+            answer: 'À Sargon d’Akkad.'
+          },
+          {
+            question: 'Que signifie l’expression Ur III ?',
+            answer: 'Elle désigne la troisième dynastie d’Ur, qui domina une grande partie du sud mésopotamien vers 2112–2004 av. n. è. dans une chronologie courante.'
+          },
+          {
+            question: 'Pourquoi faut-il lire les inscriptions royales avec prudence ?',
+            answer: 'Elles sont des sources historiques importantes, mais elles présentent souvent les victoires et la légitimité du souverain selon une perspective politique officielle.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Akkadian Empire',
+            url: 'https://www.worldhistory.org/Akkadian_Empire/'
+          },
+          {
+            title: 'World History Encyclopedia — Sargon of Akkad',
+            url: 'https://www.worldhistory.org/Sargon_of_Akkad/'
+          },
+          {
+            title: 'World History Encyclopedia — Ur-Nammu',
+            url: 'https://www.worldhistory.org/Ur-Nammu/'
+          },
+          {
+            title: 'ORACC — Royal Inscriptions of Mesopotamia',
+            url: 'https://oracc.museum.upenn.edu/rinap/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'babylone-droit-societe',
+      title: 'Babylone : droit, société, religion et vie quotidienne',
+      field: 'Babylonie · Début du IIe millénaire av. n. è. et traditions ultérieures',
+      summary: 'Examiner le règne d’Hammurabi, les textes juridiques, les hiérarchies sociales et la place de Babylone dans les traditions mésopotamiennes.',
+      lesson: {
+        sections: [
+          'Babylone devient un centre politique majeur au début du IIe millénaire av. n. è. Sous Hammurabi, dont le règne est souvent daté de 1792 à 1750 av. n. è. dans la chronologie moyenne, le royaume étend son influence sur une partie importante de la Mésopotamie. Les dates exactes dépendent de la chronologie adoptée. La puissance de Babylone s’appuyait sur la guerre, la diplomatie, l’administration et la légitimation religieuse du souverain. L’histoire de la ville ne se limite toutefois pas au règne d’Hammurabi : elle reste un centre politique et culturel pendant de nombreux siècles.',
+          'Le texte connu sous le nom de Code d’Hammurabi est une collection de décisions et de dispositions juridiques gravées sur une stèle, et non un code moderne couvrant systématiquement tout le droit. Le prologue et l’épilogue présentent l’image du roi comme garant de la justice. Les dispositions abordent notamment les litiges, les contrats, la famille, les dommages, les rémunérations et les statuts sociaux. Les sanctions varient selon les situations et les catégories de personnes. Il faut donc éviter de résumer ce document à une égalité devant la loi au sens contemporain.',
+          'Les sources montrent une société hiérarchisée, où le statut, la famille, la richesse, le genre et la dépendance juridique influençaient les possibilités et les obligations des individus. Les femmes pouvaient, dans certains contextes et sous certaines conditions, posséder des biens, participer à des transactions ou recourir à des procédures juridiques ; leurs droits n’étaient pas identiques à ceux des hommes dans toutes les situations. Les contrats, lettres et archives judiciaires révèlent des pratiques concrètes, mais ils ne représentent pas uniformément l’ensemble de la population.',
+          'La religion structurait les calendriers, les fêtes, les temples et la représentation du pouvoir. Les habitants honoraient de nombreuses divinités dont l’importance variait selon les villes et les périodes. Marduk devint particulièrement associé à Babylone, tandis que d’autres centres avaient leurs propres divinités tutélaires. Les récits mythologiques, les hymnes et les rituels expliquaient l’ordre du monde selon des traditions diverses. Les pratiques religieuses ne doivent pas être traitées comme un système parfaitement uniforme pendant toute l’histoire mésopotamienne.',
+          'La vie économique associait agriculture, élevage, artisanat, commerce, prêts et contrats. Les tablettes enregistrent des achats, des locations, des mariages, des héritages et des dettes. Les sceaux-cylindres pouvaient identifier une personne ou authentifier une opération en imprimant une image sur l’argile. Ces traces rendent visibles des aspects concrets de la vie quotidienne, tout en rappelant que les archives disponibles sont incomplètes et souvent liées à des activités institutionnelles ou commerciales.'
+        ],
+        example: {
+          statement: 'Un article du texte juridique d’Hammurabi prévoit une sanction qui varie selon le statut des personnes concernées. Quelle conclusion historique est la plus prudente ?',
+          calculation: 'On compare le texte à d’autres dispositions et à des documents de pratique, puis on distingue la norme prescrite des comportements réellement observés.',
+          answer: 'Le texte montre que le statut social pouvait influencer la sanction juridique. Il ne prouve pas, à lui seul, que chaque jugement réel appliquait toujours la règle de manière identique.'
+        },
+        exercise: {
+          question: 'Pourquoi le Code d’Hammurabi doit-il être étudié comme une source historique plutôt que comme un code moderne ?',
+          answer: 'Il associe des dispositions juridiques à une présentation politique et religieuse du roi ; il ne couvre pas systématiquement tout le droit et ne prouve pas à lui seul la manière dont chaque affaire était jugée.'
+        },
+        exercises: [
+          {
+            question: 'Quel souverain est associé au célèbre texte juridique babylonien ?',
+            answer: 'Hammurabi, roi de Babylone.'
+          },
+          {
+            question: 'Le Code d’Hammurabi établit-il une égalité juridique identique à la conception moderne ?',
+            answer: 'Non. Certaines sanctions et dispositions varient selon le statut des personnes et le type d’affaire.'
+          },
+          {
+            question: 'À quoi servaient notamment les sceaux-cylindres ?',
+            answer: 'Ils pouvaient identifier des personnes ou des institutions et authentifier des documents ou fermer des contenants.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Hammurabi',
+            url: 'https://www.worldhistory.org/Hammurabi/'
+          },
+          {
+            title: 'World History Encyclopedia — Code of Hammurabi',
+            url: 'https://www.worldhistory.org/Code_of_Hammurabi/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Babylon',
+            url: 'https://www.metmuseum.org/fr/essays/babylon'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Cylinder seal, Old Babylonian',
+            url: 'https://www.metmuseum.org/art/collection/search/327242'
+          }
+        ]
+      }
+    },
+    {
+      id: 'assyrie-babylonie-tardive',
+      title: 'L’Assyrie, la Babylonie néo-babylonienne et les héritages mésopotamiens',
+      field: 'Mésopotamie · XIVe–VIe siècles av. n. è., puis continuités culturelles ultérieures',
+      summary: 'Suivre l’expansion de l’Assyrie, la chute de Ninive, le renouveau néo-babylonien et la persistance des traditions savantes mésopotamiennes.',
+      lesson: {
+        sections: [
+          'L’Assyrie se développe dans le nord de la Mésopotamie autour de villes comme Assur, Kalhu, Dur-Sharrukin et Ninive. À partir du IIe millénaire av. n. è., les royaumes assyriens construisent progressivement une puissance régionale ; l’Empire néo-assyrien atteint une extension considérable entre le IXe et le VIIe siècle av. n. è. Son pouvoir s’appuie sur l’armée, les gouverneurs, les tributs, les déplacements de populations et la communication royale. L’empire n’était pas immuable : il devait gérer des révoltes, des frontières étendues et des relations complexes avec Babylone et les États voisins.',
+          'Les palais assyriens sont connus pour leurs reliefs sculptés, leurs inscriptions royales et leurs programmes monumentaux. Les scènes de chasse, de cérémonie et de guerre construisent une image officielle du souverain et de l’ordre impérial. Ces œuvres constituent des sources précieuses, mais elles ne sont pas des reportages neutres : elles mettent en scène la puissance du roi et doivent être interprétées dans leur contexte. Les archives de tablettes révèlent aussi une administration développée et des activités savantes, notamment dans les domaines de la médecine, des présages et de l’observation du ciel.',
+          'Au VIIe siècle av. n. è., l’empire assyrien connaît une crise et s’effondre sous les attaques de forces coalisées, notamment les Babyloniens et les Mèdes. Ninive tombe en 612 av. n. è. Cette chute met fin à la domination impériale assyrienne, mais elle ne signifie pas la disparition immédiate des populations, des langues ou des traditions culturelles assyriennes. Comme pour d’autres changements politiques de l’Antiquité, la fin d’un empire et la continuité des sociétés sont deux phénomènes distincts.',
+          'Après la domination assyrienne, Babylone retrouve une position impériale sous la dynastie néo-babylonienne. Nabopolassar puis Nabuchodonosor II sont associés à cette période, notamment aux grands travaux de la capitale. Le royaume est conquis par le roi perse Cyrus II en 539 av. n. è. La conquête modifie l’autorité politique, mais les pratiques scribales et les traditions savantes mésopotamiennes continuent sous les empires ultérieurs. Le cunéiforme demeure utilisé dans certains milieux pendant des siècles, bien après la fin des royaumes indépendants de la région.',
+          'L’héritage mésopotamien ne se résume pas à une liste d’« inventions » attribuées à un seul peuple. Il comprend des traditions d’écriture et d’archivage, des formes d’administration, des œuvres littéraires, des méthodes mathématiques, des observations astronomiques et des pratiques juridiques. Ces savoirs furent transmis, adaptés et parfois traduits au fil des contacts entre sociétés. Pour les étudier avec rigueur, il faut distinguer les faits attestés, les interprétations discutées et les récits modernes qui simplifient parfois des histoires longues et diverses.'
+        ],
+        example: {
+          statement: 'Ninive tombe en 612 av. n. è. et Babylone est conquise par Cyrus II en 539 av. n. è. Quel événement est le plus ancien ?',
+          calculation: 'Pour les dates av. n. è., 612 est plus ancien que 539, car il se situe plus loin dans le passé.',
+          answer: 'La chute de Ninive en 612 av. n. è. est antérieure à la conquête de Babylone en 539 av. n. è.'
+        },
+        exercise: {
+          question: 'Pourquoi la chute d’un empire ne signifie-t-elle pas nécessairement la disparition de sa culture ?',
+          answer: 'Les populations, les langues, les pratiques religieuses, les techniques et les traditions savantes peuvent se poursuivre ou être adaptées sous de nouveaux pouvoirs politiques.'
+        },
+        exercises: [
+          {
+            question: 'Quelle ville assyrienne tombe en 612 av. n. è. ?',
+            answer: 'Ninive.'
+          },
+          {
+            question: 'Quel roi perse conquiert Babylone en 539 av. n. è. ?',
+            answer: 'Cyrus II.'
+          },
+          {
+            question: 'Pourquoi les reliefs des palais assyriens doivent-ils être interprétés avec prudence ?',
+            answer: 'Ils expriment une représentation officielle du pouvoir et de la victoire ; ils ne sont pas des descriptions neutres de tous les événements.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Metropolitan Museum of Art — Assyria, 1365–609 B.C.',
+            url: 'https://www.metmuseum.org/es/essays/assyria-1365-609-b-c'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Babylon',
+            url: 'https://www.metmuseum.org/fr/essays/babylon'
+          },
+          {
+            title: 'World History Encyclopedia — Neo-Babylonian Empire',
+            url: 'https://www.worldhistory.org/Neo-Babylonian_Empire/'
+          },
+          {
+            title: 'World History Encyclopedia — Cyrus the Great',
+            url: 'https://www.worldhistory.org/Cyrus_the_Great/'
+          },
+          {
+            title: 'ORACC — Introduction to Cuneiform Sign Lists',
+            url: 'https://oracc.museum.upenn.edu/dcclt/signlists/SignLists/index.html'
+          }
+        ]
+      }
+    }
+  ]
+},
 
 ]
 
