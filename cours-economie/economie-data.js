@@ -2327,6 +2327,327 @@ window.courseCatalog = [
       }
     }
   ]
+},
+
+
+{
+  id: 'grandes-crises',
+  title: 'Les grandes crises économiques',
+  note: 'Six chapitres consacrés à six crises majeures de l’époque contemporaine : la Grande Dépression, les chocs pétroliers des années 1970, la crise de la dette latino-américaine, la crise asiatique, la crise financière mondiale de 2007-2009 et la crise des dettes souveraines de la zone euro. Chaque crise est étudiée à travers ses causes, ses mécanismes de propagation, ses conséquences et les réponses publiques. Les crises ont des causes multiples : les repères chronologiques ne signifient pas qu’un événement unique explique à lui seul l’ensemble du phénomène.',
+  chapters: [
+    {
+      id: 'grande-depression-1929',
+      title: 'La Grande Dépression : du krach de 1929 à la crise économique mondiale',
+      field: 'Histoire économique · 1929-1941',
+      summary: 'Distinguer le krach boursier de 1929 de la dépression qui s’étend ensuite, comprendre les paniques bancaires, la contraction du crédit, la déflation et la transmission internationale de la crise.',
+      lesson: {
+        sections: [
+          'La Grande Dépression commence aux États-Unis en 1929 et devient une crise internationale durable. Le krach boursier d’octobre 1929 constitue un événement majeur, mais il ne suffit pas à expliquer à lui seul la profondeur et la durée de la dépression. L’activité économique américaine avait déjà atteint un sommet en août 1929 selon la chronologie étudiée par la Federal Reserve History. Les fragilités bancaires, la contraction du crédit, la baisse des dépenses et les difficultés de coordination des politiques économiques contribuent à transformer le ralentissement en effondrement prolongé.',
+          'Après le krach, plusieurs vagues de paniques bancaires se produisent, notamment en 1930 et 1931, puis une crise bancaire nationale et internationale s’aggrave entre 1931 et 1933. Les retraits de dépôts et les faillites bancaires réduisent la capacité des banques à accorder des crédits. Aux États-Unis, la masse monétaire diminue fortement entre l’automne 1930 et l’hiver 1933. La déflation augmente le poids réel des dettes : lorsque les prix et les revenus baissent alors que la dette nominale demeure, ménages et entreprises doivent consacrer une part plus importante de leurs ressources au remboursement. Les dépenses, la production et l’emploi reculent à leur tour.',
+          'La crise se diffuse à l’étranger par les liens commerciaux et financiers ainsi que par les contraintes du système monétaire international de l’époque. Le recul de la demande américaine affecte les exportateurs ; les tensions bancaires et monétaires fragilisent d’autres économies. Les politiques protectionnistes et les réponses économiques nationales ont également contribué au contexte international défavorable, mais les historiens débattent du poids relatif de chaque facteur. Aux États-Unis, le système bancaire atteint un point critique en mars 1933, lorsque Franklin D. Roosevelt déclare une suspension temporaire des opérations bancaires. Des réformes financières suivent. La reprise est irrégulière, avec une nouvelle récession en 1937-1938 ; le retour à une mobilisation productive complète intervient pendant la Seconde Guerre mondiale.',
+          'La leçon centrale n’est pas qu’un krach boursier provoque toujours une dépression. Le risque devient beaucoup plus grave lorsque les pertes financières se combinent avec des faillites bancaires, une contraction du crédit, la déflation et des réponses publiques insuffisantes ou mal coordonnées. Les analyses historiques soulignent notamment l’importance de préserver le fonctionnement du système de paiement et d’éviter qu’une crise bancaire ne réduise brutalement la monnaie et le crédit disponibles dans l’économie.'
+        ],
+        example: {
+          statement: 'Un indice boursier atteint 100 points avant une crise puis tombe à 20 points. Quelle est sa baisse par rapport à son niveau initial, et que permet-elle de conclure sur l’ensemble de l’économie ?',
+          calculation: 'Baisse en pourcentage = ((100 - 20) / 100) × 100 = 80 %.',
+          answer: 'L’indice a baissé de 80 %. Ce résultat décrit uniquement l’évolution de l’indice considéré. Il ne prouve pas que le PIB, les revenus ou la production ont eux aussi diminué de 80 % ; ces indicateurs doivent être mesurés séparément.'
+        },
+        exercise: {
+          question: 'Pourquoi le krach boursier d’octobre 1929 ne suffit-il pas à expliquer toute la Grande Dépression ?',
+          answer: 'Parce que la dépression résulte d’un enchaînement de facteurs, dont les paniques bancaires, la contraction du crédit et de la monnaie, la déflation, la baisse de la demande et la propagation internationale. Le ralentissement économique avait commencé avant le krach.'
+        },
+        exercises: [
+          {
+            question: 'À quelle période la Grande Dépression est-elle généralement située dans l’histoire économique des États-Unis ?',
+            answer: 'La Federal Reserve History la présente comme une dépression allant de 1929 à 1941, avec une reprise irrégulière et une récession supplémentaire en 1937-1938.'
+          },
+          {
+            question: 'Comment la déflation peut-elle aggraver une crise de la dette ?',
+            answer: 'Si les prix et les revenus diminuent tandis que la somme nominale à rembourser reste inchangée, la dette représente une charge réelle plus lourde pour les emprunteurs.'
+          },
+          {
+            question: 'Quel rôle les paniques bancaires ont-elles joué ?',
+            answer: 'Elles ont fragilisé les banques, réduit l’offre de crédit et contribué à la contraction de la monnaie et de l’activité économique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Federal Reserve History — The Great Depression',
+            url: 'https://www.federalreservehistory.org/essays/great-depression'
+          },
+          {
+            title: 'Federal Reserve History — Stock Market Crash of 1929',
+            url: 'https://www.federalreservehistory.org/essays/stock-market-crash-of-1929'
+          },
+          {
+            title: 'Federal Reserve Bank of St. Louis — What Caused the Great Depression?',
+            url: 'https://www.stlouisfed.org/the-great-depression/curriculum/economic-episodes-in-american-history-part-5'
+          },
+          {
+            title: 'OpenStax — The Stock Market Crash of 1929',
+            url: 'https://openstax.org/books/us-history/pages/25-1-the-stock-market-crash-of-1929'
+          }
+        ]
+      }
+    },
+    {
+      id: 'chocs-petroliers-stagflation',
+      title: 'Les chocs pétroliers des années 1970 : inflation, récession et stagflation',
+      field: 'Économie internationale · 1973-1982',
+      summary: 'Expliquer comment les hausses du prix du pétrole ont renchéri les coûts de production, aggravé l’inflation et contribué aux récessions, sans réduire toute la stagflation à une cause unique.',
+      lesson: {
+        sections: [
+          'Les économies industrialisées des années 1970 sont confrontées à une inflation élevée et à un ralentissement de l’activité. Le premier choc pétrolier intervient en 1973-1974. Le 19 octobre 1973, dans le contexte de la guerre du Kippour et du soutien américain à Israël, l’Organisation des pays arabes exportateurs de pétrole annonce un embargo visant les États-Unis et des réductions de production. Selon la Federal Reserve History, le prix du pétrole passe d’environ 2,90 dollars le baril avant l’embargo à 11,65 dollars en janvier 1974, soit près de quatre fois plus. L’embargo est levé en mars 1974, mais les prix restent élevés.',
+          'Le pétrole est un intrant important pour les transports, le chauffage, l’industrie et l’agriculture. Une hausse rapide de son prix augmente directement la facture énergétique et renchérit indirectement de nombreux biens et services. Les entreprises doivent absorber ces coûts, réduire leurs marges ou relever leurs prix ; les ménages consacrent davantage de revenus à l’énergie et peuvent réduire d’autres achats. Les pays importateurs voient aussi leur facture extérieure augmenter. Ces effets peuvent freiner la production tout en poussant les prix à la hausse. Le choc pétrolier se superpose toutefois à d’autres facteurs : inflation déjà présente, évolution du système monétaire international, politiques macroéconomiques et tensions sur d’autres matières premières.',
+          'Un second choc énergétique se développe en 1978-1979, dans le contexte de la révolution iranienne et d’une forte demande mondiale. La baisse de la production iranienne contribue à l’inquiétude sur l’offre, tandis que les anticipations et la demande de précaution accentuent la hausse des cours. La stagflation désigne la coexistence d’une inflation élevée et d’une activité faible ou d’un chômage élevé ; elle complique les décisions de politique économique. Une relance de la demande peut soutenir l’emploi mais aggraver les pressions sur les prix, alors qu’un resserrement monétaire peut réduire l’inflation au prix d’un ralentissement supplémentaire à court terme.',
+          'À partir de 1979, la Réserve fédérale américaine sous la présidence de Paul Volcker adopte une politique monétaire fortement restrictive pour faire reculer l’inflation. Les taux d’intérêt augmentent nettement et l’inflation américaine diminue au début des années 1980, mais le resserrement contribue aussi à une récession sévère. Cette politique et les chocs pétroliers n’expliquent pas seuls les difficultés de toutes les économies : leurs effets dépendent de la dépendance énergétique, des institutions, des politiques nationales et de la situation initiale. Les réponses à long terme comprennent les économies d’énergie, la diversification des approvisionnements et une politique monétaire visant à stabiliser les anticipations de prix.'
+        ],
+        example: {
+          statement: 'Le prix du baril passe de 2,90 dollars à 11,65 dollars. Calcule le facteur de multiplication et l’augmentation en pourcentage à partir de ces deux valeurs historiques.',
+          calculation: 'Facteur = 11,65 / 2,90 ≈ 4,02. Augmentation = ((11,65 - 2,90) / 2,90) × 100 ≈ 301,7 %.',
+          answer: 'Le prix a été multiplié par environ 4,02, soit une hausse d’environ 301,7 %. Le calcul concerne le prix cité par la Federal Reserve History entre les deux repères indiqués ; il ne mesure pas directement l’inflation générale ni la hausse du coût de la vie.'
+        },
+        exercise: {
+          question: 'Pourquoi un choc pétrolier peut-il provoquer à la fois une hausse des prix et un ralentissement économique ?',
+          answer: 'Le pétrole plus cher augmente les coûts de production et de transport, ce qui pousse les prix à la hausse. En même temps, il réduit le pouvoir d’achat des ménages et les marges des entreprises, ce qui peut freiner la consommation, l’investissement et la production.'
+        },
+        exercises: [
+          {
+            question: 'Quel événement déclenche le premier choc pétrolier de 1973 ?',
+            answer: 'L’embargo pétrolier annoncé par des pays arabes exportateurs de pétrole dans le contexte de la guerre du Kippour, accompagné de réductions de production.'
+          },
+          {
+            question: 'Que signifie le terme « stagflation » ?',
+            answer: 'Il désigne la coexistence d’une inflation élevée et d’une activité économique faible, souvent accompagnée d’un chômage élevé.'
+          },
+          {
+            question: 'Pourquoi la hausse des taux d’intérêt peut-elle réduire l’inflation tout en aggravant temporairement une récession ?',
+            answer: 'Des taux plus élevés renchérissent le crédit et freinent certaines dépenses et certains investissements. Cela peut modérer la demande et les prix, mais aussi ralentir l’activité et l’emploi à court terme.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Federal Reserve History — Oil Shock of 1973-74',
+            url: 'https://www.federalreservehistory.org/essays/oil-shock-of-1973-74'
+          },
+          {
+            title: 'Federal Reserve History — Oil Shock of 1978-79',
+            url: 'https://www.federalreservehistory.org/essays/oil-shock-of-1978-79'
+          },
+          {
+            title: 'Federal Reserve History — The Great Inflation',
+            url: 'https://www.federalreservehistory.org/essays/great-inflation'
+          },
+          {
+            title: 'Federal Reserve Bank of Cleveland — The 1970s: The Great Inflation',
+            url: 'https://www.clevelandfed.org/-/media/project/clevelandfedtenant/clevelandfedsite/publications/working-papers/2019/wp-1913-federal-reserve-structure-economic-ideas-and-monetary-and-financial-policy-pdf.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'crise-dette-amerique-latine',
+      title: 'La crise de la dette latino-américaine : la « décennie perdue »',
+      field: 'Finance internationale · 1970-1989',
+      summary: 'Comprendre l’accumulation de dettes extérieures, la hausse des taux d’intérêt internationaux, le défaut de paiement annoncé par le Mexique en 1982 et les conséquences sociales des ajustements.',
+      lesson: {
+        sections: [
+          'Durant les années 1970, plusieurs pays d’Amérique latine empruntent massivement à l’étranger. Les banques internationales recyclent notamment une partie des fonds placés par les pays exportateurs de pétrole après les chocs pétroliers. Selon la Federal Reserve History, la dette totale de l’Amérique latine provenant de l’ensemble des sources passe de 29 milliards de dollars à la fin de 1970 à 159 milliards à la fin de 1978, puis à 327 milliards en 1982. Ces montants décrivent l’encours agrégé cité par cette source ; ils ne signifient pas que chaque pays a emprunté dans les mêmes proportions ni que tous les emprunts ont été utilisés de la même manière.',
+          'Le modèle devient vulnérable lorsque les conditions financières changent. À la fin des années 1970 et au début des années 1980, les banques centrales des économies avancées resserrent leur politique monétaire afin de combattre l’inflation. Les taux d’intérêt internationaux augmentent, la récession mondiale réduit certains revenus d’exportation et les prêteurs raccourcissent parfois les échéances ou limitent les nouveaux crédits. Pour les emprunteurs ayant une dette en devises étrangères, le remboursement dépend de leur capacité à obtenir des devises grâce aux exportations, aux réserves ou à de nouveaux financements. Une dette contractée à taux variable peut également coûter plus cher lorsque les taux de référence augmentent.',
+          'En août 1982, le Mexique informe ses interlocuteurs internationaux qu’il ne peut plus assurer le service normal de sa dette extérieure, alors estimée à 80 milliards de dollars par la Federal Reserve History. D’autres pays rencontrent ensuite des difficultés et des rééchelonnements de dette sont négociés. Les banques réduisent leurs nouveaux prêts et cherchent à restructurer les créances existantes. Cette interruption du financement extérieur pèse sur l’investissement, l’activité et les finances publiques. Dans plusieurs pays, les ajustements budgétaires, l’inflation, la baisse des salaires réels et le recul de l’investissement contribuent à une longue période de difficultés souvent appelée « décennie perdue », même si les trajectoires nationales ne sont pas identiques.',
+          'Les institutions internationales, les gouvernements débiteurs et les banques créancières négocient des programmes de stabilisation et des restructurations. Le plan Brady, lancé à la fin des années 1980, contribue ensuite à restructurer certaines dettes bancaires commerciales au moyen d’échanges de créances et de garanties, mais il ne résout pas instantanément tous les problèmes de croissance et de pauvreté. L’épisode met en évidence les risques d’un endettement extérieur élevé, notamment lorsque les recettes en devises sont incertaines, les échéances sont courtes et le coût du crédit dépend de taux internationaux. Il montre aussi que la gestion d’une crise de dette implique un arbitrage entre rétablissement de la solvabilité, continuité du financement et protection de l’activité économique.'
+        ],
+        example: {
+          statement: 'L’encours de dette latino-américaine cité par la Federal Reserve History passe de 159 milliards de dollars en 1978 à 327 milliards en 1982. De combien a-t-il augmenté en valeur absolue et en pourcentage, à partir de ces deux valeurs ?',
+          calculation: 'Augmentation = 327 - 159 = 168 milliards de dollars. Taux d’augmentation = (168 / 159) × 100 ≈ 105,7 %.',
+          answer: 'L’encours a augmenté de 168 milliards de dollars, soit environ 105,7 %. Ce calcul porte sur les valeurs agrégées rapportées par la source et ne permet pas, à lui seul, de mesurer la capacité de remboursement ou le niveau d’endettement de chaque pays.'
+        },
+        exercise: {
+          question: 'Pourquoi une hausse des taux d’intérêt internationaux peut-elle provoquer une crise dans un pays fortement endetté en devises ?',
+          answer: 'Elle augmente le coût des dettes à taux variable et peut rendre plus difficile le refinancement des dettes arrivant à échéance. Si les recettes en devises ne progressent pas assez, le pays peut manquer des ressources nécessaires au service de sa dette.'
+        },
+        exercises: [
+          {
+            question: 'Quel pays annonce en août 1982 qu’il ne peut plus assurer normalement le service de sa dette extérieure ?',
+            answer: 'Le Mexique.'
+          },
+          {
+            question: 'Pourquoi la dette en devises étrangères crée-t-elle un risque de change ?',
+            answer: 'Parce que le débiteur doit rembourser dans une monnaie qui peut s’apprécier par rapport à sa monnaie nationale, augmentant ainsi le montant du remboursement exprimé en monnaie locale.'
+          },
+          {
+            question: 'Que signifie restructurer une dette ?',
+            answer: 'Modifier les conditions de remboursement, par exemple les échéances, les taux, le calendrier des paiements ou, selon l’accord, le montant effectivement dû.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Federal Reserve History — Latin American Debt Crisis of the 1980s',
+            url: 'https://www.federalreservehistory.org/essays/latin-american-debt-crisis'
+          },
+          {
+            title: 'Federal Deposit Insurance Corporation — History of the Eighties: Lessons for the Future, Volume 1',
+            url: 'https://www.fdic.gov/publications/history-eighties-lessons-future-volume-1'
+          }
+        ]
+      }
+    },
+    {
+      id: 'crise-financiere-asiatique-1997',
+      title: 'La crise financière asiatique de 1997-1998 : change, crédit et contagion',
+      field: 'Finance internationale · Juillet 1997-décembre 1998',
+      summary: 'Analyser la crise partie de Thaïlande, les fragilités des banques et des entreprises, les dettes en devises, les sorties de capitaux et la propagation régionale.',
+      lesson: {
+        sections: [
+          'La crise financière asiatique commence en Thaïlande le 2 juillet 1997, lorsque les autorités laissent flotter le baht après des pressions spéculatives et une forte diminution des réserves de change. Avant la crise, plusieurs économies de la région avaient connu une croissance rapide, une hausse de l’investissement et des entrées importantes de capitaux étrangers. Ces résultats favorables masquaient néanmoins des vulnérabilités : expansion rapide du crédit, supervision financière insuffisante, investissements immobiliers risqués et emprunts extérieurs élevés, parfois à court terme.',
+          'Le maintien de taux de change relativement stables par rapport au dollar avait donné à certains emprunteurs l’impression que le risque de change était limité. Mais lorsqu’une monnaie se déprécie, la valeur en monnaie locale d’une dette libellée en dollars augmente. Les entreprises qui gagnent surtout en monnaie nationale mais remboursent en dollars peuvent alors voir leur situation financière se détériorer brutalement. Si les banques détiennent des prêts devenus douteux et que les prêteurs étrangers refusent de renouveler leurs crédits, les tensions de change se transforment en crise bancaire et en crise de financement.',
+          'Les pressions s’étendent à l’Indonésie, à la Malaisie, aux Philippines et à la Corée du Sud, avec des trajectoires et des réponses différentes selon les pays. Les investisseurs retirent des capitaux d’économies qu’ils jugent comparables, ce qui amplifie la contagion. La baisse des monnaies, des cours boursiers et des prix immobiliers fragilise les bilans, tandis que les banques limitent le crédit. L’investissement et la production chutent ; le chômage augmente et les revenus réels sont touchés. Le Fonds monétaire international et d’autres acteurs apportent des financements et accompagnent des programmes de réforme, dont les effets et les conditions font l’objet de débats économiques et politiques.',
+          'Après la crise, plusieurs économies renforcent la supervision bancaire, restructurent des entreprises et des établissements financiers, développent les marchés de capitaux locaux et accumulent davantage de réserves de change. Certaines adoptent des régimes de change plus flexibles. Ces changements n’éliminent pas le risque financier, mais réduisent certaines vulnérabilités observées en 1997. La crise rappelle qu’une croissance rapide n’est pas une garantie de stabilité si l’endettement, les échéances et les risques de change sont mal maîtrisés. Elle montre aussi qu’une crise peut se propager par les anticipations des investisseurs et les liens entre bilans bancaires, entreprises et financement extérieur.'
+        ],
+        example: {
+          statement: 'Une entreprise doit 1 million de dollars. Le taux de change passe de 10 unités de monnaie locale par dollar à 15 unités par dollar. Quel est le montant de la dette en monnaie locale avant et après la dépréciation ?',
+          calculation: 'Avant : 1 000 000 × 10 = 10 000 000 unités. Après : 1 000 000 × 15 = 15 000 000 unités. Hausse = 5 000 000 unités, soit 50 %.',
+          answer: 'La dette passe de 10 millions à 15 millions d’unités de monnaie locale, soit une hausse de 50 % en monnaie locale. Le montant dû en dollars reste de 1 million ; c’est sa contre-valeur locale qui augmente.'
+        },
+        exercise: {
+          question: 'Comment une dépréciation de la monnaie peut-elle fragiliser une entreprise endettée en dollars ?',
+          answer: 'Si ses recettes sont principalement en monnaie locale, elle doit mobiliser davantage de monnaie nationale pour acheter les dollars nécessaires au remboursement. Le poids de la dette augmente alors dans ses comptes locaux.'
+        },
+        exercises: [
+          {
+            question: 'Quel événement marque le début de la crise asiatique en juillet 1997 selon la Federal Reserve History ?',
+            answer: 'La Thaïlande laisse flotter le baht le 2 juillet 1997 après des pressions sur sa monnaie et ses réserves de change.'
+          },
+          {
+            question: 'Pourquoi les dettes extérieures à court terme peuvent-elles accroître la vulnérabilité d’un pays ?',
+            answer: 'Elles doivent être refinancées rapidement. Si les prêteurs refusent de renouveler leurs prêts, les banques et les entreprises peuvent manquer de liquidités même si elles possèdent des actifs à plus long terme.'
+          },
+          {
+            question: 'Que désigne la contagion financière ?',
+            answer: 'La propagation des tensions d’un marché ou d’un pays à d’autres, notamment parce que les investisseurs retirent leurs capitaux ou réévaluent simultanément des risques jugés similaires.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Federal Reserve History — Asian Financial Crisis',
+            url: 'https://www.federalreservehistory.org/essays/asian-financial-crisis'
+          },
+          {
+            title: 'International Monetary Fund — What We Have Seen and Learned 20 Years After the Asian Financial Crisis',
+            url: 'https://www.imf.org/en/blogs/articles/2017/07/13/what-we-have-seen-and-learned-20-years-after-the-asian-financial-crisis'
+          },
+          {
+            title: 'International Monetary Fund — Financial Sector Crisis and Restructuring: Lessons from Asia',
+            url: 'https://www.imf.org/external/pubs/ft/op/opfinsec/index.htm'
+          }
+        ]
+      }
+    },
+    {
+      id: 'crise-financiere-mondiale-2008',
+      title: 'La crise financière mondiale de 2007-2009 : crédit immobilier et risque systémique',
+      field: 'Finance et macroéconomie · 2007-2009',
+      summary: 'Comprendre la fragilité du crédit immobilier américain, la titrisation, l’interconnexion des institutions financières, la faillite de Lehman Brothers et la transmission à l’économie réelle.',
+      lesson: {
+        sections: [
+          'La crise financière mondiale se développe à partir des tensions apparues sur le marché immobilier américain et dans le crédit hypothécaire, notamment les prêts accordés à des emprunteurs plus risqués. Pendant plusieurs années, la hausse des prix immobiliers et l’accès au crédit ont encouragé l’endettement et la prise de risque. Une partie des prêts est regroupée dans des titres financiers vendus à des investisseurs. La titrisation peut répartir le financement et les risques, mais elle peut aussi rendre plus difficile l’identification de la qualité des prêts sous-jacents, surtout lorsque les produits sont complexes et que les évaluations des risques sont trop optimistes.',
+          'Lorsque les défauts de paiement augmentent et que les prix immobiliers baissent, la valeur de nombreux actifs liés aux prêts hypothécaires est révisée à la baisse. Les institutions financières ne savent pas toujours quelle est l’exposition réelle de leurs contreparties ; la confiance se dégrade et le financement de court terme devient difficile. L’interconnexion entre banques, courtiers, assureurs et marchés transforme les pertes sur un segment du crédit en problème systémique. Des établissements subissent des pertes, cherchent à vendre des actifs ou réduisent les prêts, ce qui amplifie la contraction du crédit. Les tensions sont visibles dès 2007 et deviennent particulièrement aiguës en 2008.',
+          'La faillite de Lehman Brothers en septembre 2008 marque un moment décisif de la crise, sans être l’unique cause de celle-ci. Les marchés financiers se tendent fortement et la confiance se détériore. Les ménages réduisent certaines dépenses, les entreprises reportent leurs investissements et l’accès au financement se contracte. La crise devient une récession internationale par les échanges commerciaux, les expositions financières et le recul de la demande. Les conséquences incluent des pertes d’emplois, des saisies immobilières, des faillites et une forte pression sur les finances publiques dans les pays qui soutiennent leur système financier ou leur économie.',
+          'Les autorités répondent par des baisses de taux directeurs, des facilités de liquidité, des garanties et des recapitalisations de certaines institutions, ainsi que par des mesures budgétaires. Aux États-Unis, la Réserve fédérale abaisse sa cible de taux des fonds fédéraux jusqu’à une fourchette proche de zéro en décembre 2008 et utilise ensuite des achats d’actifs à grande échelle. Après la phase aiguë, les règles de supervision et de fonds propres sont renforcées dans plusieurs juridictions, notamment par les réformes internationales associées à Bâle III. Ces interventions limitent certains risques immédiats mais soulèvent aussi des débats sur l’aléa moral, le coût public des sauvetages et la répartition des pertes. La leçon est qu’une stabilité apparente peut masquer une accumulation de risques lorsque le levier financier, les produits opaques et les dépendances de financement à court terme deviennent excessifs.'
+        ],
+        example: {
+          statement: 'Une institution financière possède 100 milliards d’unités d’actifs et 5 milliards de fonds propres. Si la valeur de ses actifs baisse de 5 %, en supposant que ses autres passifs restent inchangés, quel est l’effet sur ses fonds propres ?',
+          calculation: 'Perte sur actifs = 100 × 0,05 = 5 milliards. Fonds propres après perte = 5 - 5 = 0 milliard.',
+          answer: 'Une baisse de 5 % des actifs absorbe les 5 milliards de fonds propres dans cet exemple simplifié. Cela illustre l’effet de levier : une baisse modérée des actifs peut effacer le capital disponible lorsque celui-ci est faible par rapport au bilan. Ce calcul pédagogique n’est pas une description du bilan d’une institution précise.'
+        },
+        exercise: {
+          question: 'Comment des pertes sur des prêts immobiliers peuvent-elles provoquer une crise économique mondiale ?',
+          answer: 'Les prêts sont détenus ou transformés en titres par des institutions interconnectées. Les pertes et l’incertitude fragilisent leur financement, provoquent une contraction du crédit et réduisent les dépenses des ménages et des entreprises. Les échanges commerciaux et les expositions transfrontalières transmettent ensuite le ralentissement à d’autres pays.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que la titrisation ?',
+            answer: 'C’est une opération qui consiste à regrouper des créances, par exemple des prêts, puis à émettre des titres financiers adossés aux flux de remboursement de ces créances.'
+          },
+          {
+            question: 'Pourquoi la faillite de Lehman Brothers est-elle un repère important sans être la cause unique de la crise ?',
+            answer: 'Elle a intensifié une crise déjà en cours en aggravant la défiance et les tensions de financement, mais les fragilités du crédit immobilier et du système financier s’étaient développées auparavant.'
+          },
+          {
+            question: 'Pourquoi une banque centrale abaisse-t-elle ses taux directeurs en période de crise ?',
+            answer: 'Pour réduire le coût du financement, soutenir le crédit et la demande globale et limiter l’aggravation du ralentissement, dans la mesure où les mécanismes de transmission fonctionnent.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Federal Reserve Board — Monetary Policy: What Are Its Goals? How Does It Work?',
+            url: 'https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm'
+          },
+          {
+            title: 'International Monetary Fund — IMF Timeline: Global Financial Crisis',
+            url: 'https://www.imf.org/external/about/timeline/index.htm'
+          },
+          {
+            title: 'Financial Crisis Inquiry Commission — The Financial Crisis Inquiry Report',
+            url: 'https://www.govinfo.gov/content/pkg/GPO-FCIC/pdf/GPO-FCIC.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'crise-dettes-souveraines-zone-euro',
+      title: 'La crise des dettes souveraines de la zone euro : dette publique, banques et austérité',
+      field: 'Économie européenne · 2010-2012',
+      summary: 'Étudier la propagation des tensions depuis la Grèce, les écarts de taux obligataires, la boucle entre banques et États, et les réponses des gouvernements et de l’Eurosystème.',
+      lesson: {
+        sections: [
+          'La crise des dettes souveraines de la zone euro atteint une phase aiguë entre 2010 et 2012. Elle concerne d’abord la Grèce, puis touche notamment l’Irlande et le Portugal, tandis que Chypre, l’Italie et l’Espagne sont également confrontés à de fortes tensions en 2012. Une dette souveraine est une dette contractée par un État. Les marchés évaluent notamment la capacité du pays à rembourser, la trajectoire de ses recettes et dépenses, sa croissance et les institutions qui encadrent son financement. Lorsque les investisseurs jugent le risque plus élevé, ils peuvent exiger un rendement supérieur pour acheter ou conserver les obligations de cet État.',
+          'La crise a plusieurs causes qui se renforcent mutuellement. La croissance relativement faible dans certaines économies limite les recettes publiques, tandis que les déficits et les dettes accumulés rendent les finances publiques plus sensibles à une hausse des taux. Après l’introduction de l’euro, les flux de capitaux ont financé des emprunteurs publics et privés dans plusieurs pays. La crise financière de 2008 a ensuite réduit les recettes fiscales, conduit à des mesures de soutien économique et, dans certains cas, entraîné des soutiens publics aux banques. La situation n’est pas identique dans tous les pays : en Irlande, les difficultés bancaires ont joué un rôle central dans la détérioration des finances publiques, alors que la Grèce avait notamment des problèmes de finances publiques et de crédibilité statistique.',
+          'Une boucle de rétroaction peut apparaître entre les États et les banques. Les banques détiennent des obligations souveraines et peuvent subir des pertes lorsque leur valeur ou la confiance dans leur remboursement diminue. En parallèle, les États peuvent être appelés à soutenir des banques fragiles, ce qui accroît leurs engagements ou leurs besoins de financement. Les rendements obligataires plus élevés renchérissent les nouveaux emprunts publics et peuvent influencer les taux auxquels les entreprises et les ménages empruntent. Les politiques de consolidation budgétaire adoptées dans plusieurs pays réduisent certains déficits, mais la baisse des dépenses ou l’augmentation des prélèvements peut aussi freiner la demande à court terme et approfondir la récession lorsque l’économie est déjà faible.',
+          'Les réponses incluent des programmes d’assistance financière, des mesures nationales, la création et le renforcement de mécanismes européens de stabilité, ainsi que des interventions de la Banque centrale européenne destinées à préserver la transmission de la politique monétaire et à limiter les risques de fragmentation financière. En 2012, l’annonce du programme potentiel d’opérations monétaires sur titres de la BCE, soumis à des conditions et jamais activé sous cette forme, contribue à modifier les anticipations de marché. La crise conduit aussi à renforcer la coordination budgétaire et la surveillance économique au sein de l’Union européenne. Elle montre qu’une union monétaire peut être vulnérable lorsque les marchés financiers sont intégrés mais que les responsabilités budgétaires et les mécanismes de soutien restent partagés entre plusieurs niveaux de décision.'
+        ],
+        example: {
+          statement: 'Un État doit refinancer 10 milliards d’euros de dette. Le taux d’intérêt applicable passe de 2 % à 5 % pour un nouvel emprunt de même montant et d’une durée d’un an. Quelle est la différence d’intérêts annuels, en supposant que le principal ne change pas ?',
+          calculation: 'À 2 % : 10 000 000 000 × 0,02 = 200 000 000 euros. À 5 % : 10 000 000 000 × 0,05 = 500 000 000 euros. Différence = 300 000 000 euros.',
+          answer: 'Le coût annuel des intérêts serait supérieur de 300 millions d’euros dans cet exemple simplifié. Cela ne signifie pas que toute la dette existante est immédiatement refinancée au nouveau taux : l’effet réel dépend des échéances, de la structure de la dette et des conditions des nouveaux emprunts.'
+        },
+        exercise: {
+          question: 'Comment une crise bancaire peut-elle aggraver la dette publique, et comment une crise de la dette publique peut-elle fragiliser les banques ?',
+          answer: 'Un État qui soutient des banques ou subit une baisse de recettes peut voir ses besoins de financement augmenter. Inversement, les banques qui détiennent des obligations de cet État peuvent subir des pertes ou perdre l’accès à certains financements si la confiance dans la dette souveraine se détériore.'
+        },
+        exercises: [
+          {
+            question: 'Que désigne le terme « dette souveraine » ?',
+            answer: 'La dette contractée par un État auprès de créanciers, par exemple au moyen d’obligations publiques.'
+          },
+          {
+            question: 'Pourquoi les taux d’intérêt exigés par les marchés peuvent-ils augmenter pendant une crise de dette ?',
+            answer: 'Les investisseurs peuvent demander une rémunération plus élevée s’ils estiment que le risque de remboursement augmente ou que la liquidité des titres se dégrade.'
+          },
+          {
+            question: 'Pourquoi la crise de 2008 a-t-elle contribué à la crise des dettes souveraines ?',
+            answer: 'La récession a réduit les recettes publiques, les mesures de soutien ont accru les besoins de financement et certains États ont assumé des coûts liés au sauvetage de banques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Banque de France — La crise des dettes souveraines de la zone euro (2010-2012)',
+            url: 'https://www.banque-france.fr/fr/publications-et-statistiques/publications/la-crise-des-dettes-souveraines-de-la-zone-euro-2010-2012'
+          },
+          {
+            title: 'Banque centrale européenne — Technical features of Outright Monetary Transactions',
+            url: 'https://www.ecb.europa.eu/press/pr/date/2012/html/pr120906_1.en.html'
+          },
+          {
+            title: 'Commission européenne — Financial assistance in EU Member States',
+            url: 'https://economy-finance.ec.europa.eu/eu-financial-assistance_en'
+          }
+        ]
+      }
+    }
+  ]
 }
+
+
 
 ]
