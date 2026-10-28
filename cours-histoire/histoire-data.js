@@ -550,7 +550,7 @@ window.courseCatalog = [
   {
     id: 'antiquite',
     sortYear: -800,
-    title: 'L’Antiquité : empires et monde méditerranéen',
+    title: 'Empires et monde méditerranéen durant l’antiquité',
     note: 'De l’empire perse à la fin de l’Antiquité tardive : cinq chapitres sur les grands empires, leurs repères chronologiques, leurs sources et les dates discutées.',
     chapters: [
       {
@@ -1978,7 +1978,7 @@ window.courseCatalog = [
   {
     id: 'histoire-ecosse',
     sortYear: -10000,
-    title: 'Histoire de l’Écosse : des premiers peuplements à la dévolution',
+    title: 'Écosse : des premiers peuplements à la dévolution',
     note: 'Six chapitres sur le peuplement ancien, les Romains et les Pictes, les guerres d’indépendance, la Réforme et l’Union des couronnes, l’Union de 1707 avec le jacobitisme, puis la dévolution. Les dates anciennes sont approximatives et certains récits fondateurs restent débattus.',
     chapters: [
       {
@@ -3031,7 +3031,7 @@ window.courseCatalog = [
 {
   id: 'histoire-celte',
   sortYear: -1300,
-  title: 'La civilisation celte',
+  title: 'La civilisation Celte',
   note: 'Sept chapitres sur les origines des cultures associées aux Celtes, Hallstatt et La Tène, les langues, la société, les échanges, les arts, les croyances et les transformations liées à Rome. Les dates sont approximatives et les réalités celtiques varient selon les régions. Les Celtes ne formaient pas un État unifié et les cultures archéologiques ne correspondent pas exactement à des peuples définis.',
   chapters: [
     {
@@ -4473,7 +4473,7 @@ window.courseCatalog = [
 {
   id: 'histoire-chine-ancienne',
   sortYear: -2070,
-  title: 'La Chine ancienne',
+  title: 'Chine ancienne',
   note: 'Six chapitres sur les sociétés anciennes de Chine, des premières dynasties aux Han (vers 2070 av. J.-C. à 220 apr. J.-C.). Les dates des Xia sont traditionnelles et leur identification historique demeure discutée ; les dates des Shang et des Zhou sont également approximatives selon les chronologies retenues. La Chine ancienne ne constitue pas une histoire uniforme : les pouvoirs, les pratiques et les cultures varient selon les régions.',
   chapters: [
     {
@@ -4804,7 +4804,7 @@ window.courseCatalog = [
 {
   id: 'histoire-ouest-afrique',
   sortYear: 500,
-  title: 'Histoire des empires de l’Afrique de l’ouest',
+  title: 'Empires de l’Afrique de l’ouest',
   note: 'Six chapitres consacrés aux réseaux commerciaux sahariens, à l’Empire du Ghana, à la formation du Mali, au règne de Mansa Musa, à l’Empire songhaï et aux transformations politiques de la région. Les dates anciennes sont parfois approximatives : les sources écrites sont inégalement réparties et doivent être confrontées aux données archéologiques et aux traditions orales.',
   chapters: [
     {
@@ -5108,9 +5108,280 @@ window.courseCatalog = [
       }
     }
   ]
-}
+},
+
+{
+  id: 'perse-ancienne',
+  sortYear: -4395,
+  title: 'Perse ancienne : des Élamites et des Mèdes à la chute des Sassanides',
+  note: 'Six chapitres sur les origines de la Perse, Cyrus II, Darius Ier, les guerres gréco-perses et Alexandre, les Séleucides et les Parthes, puis les Sassanides. Les dates sont approximatives, plusieurs sont débattues, et les sources antiques (grecques surtout) reflètent souvent un point de vue extérieur.',
+  chapters: [
+    {
+      id: 'plateau-iranien-elam-medes',
+      title: 'Le plateau iranien, l’Élam, les Mèdes et les premiers Perses',
+      field: 'Perse ancienne · Du Paléolithique au VIIe siècle av. J.-C.',
+      summary: 'Comprendre le cadre géographique, les peuples et les royaumes qui précèdent l’Empire achéménide.',
+      lesson: {
+        sections: [
+          'La Perse antique correspond approximativement à l’Iran actuel, l’une des plus anciennes régions habitées du monde. Selon la World History Encyclopedia, des vestiges attestent une présence humaine remontant à environ 100 000 ans, au Paléolithique, et des établissements semi-permanents, probablement liés à la chasse, existent avant 10000 av. J.-C. Le site de Chogha Bonut (daté d’environ 7200 av. J.-C. par cette source) et la ville de Suse (dont la fondation est située vers 4395 av. J.-C.) montrent un peuplement très précoce. Ces dates sont des estimations qui varient selon les auteurs et les méthodes de datation.',
+          'L’Élam, à l’ouest et au sud-ouest du plateau, fut l’un des royaumes les plus avancés de la région. Il ne faut pas le confondre avec Suse : ce sont deux entités distinctes, même si Suse fut ensuite intégrée à l’espace élamite puis perse. Selon la World History Encyclopedia, l’Élam fut en partie conquis par les Sumériens, puis entièrement par les Assyriens, avant de passer sous domination mède. Quand les Perses s’installent à l’est de l’Élam, ils se marient avec des Élamites et absorbent une partie de leur culture, ce qui éclaire le rôle de l’élamite dans l’administration achéménide ultérieure.',
+          'Les Perses, les Mèdes, les Parthes, les Bactriens et d’autres peuples parlent des langues iraniennes. La date de leur arrivée sur le plateau est débattue : la World History Encyclopedia évoque des migrations avant le IIIe millénaire av. J.-C., alors que de nombreuses chronologies la situent entre le IIe et le début du Ier millénaire av. J.-C. Le mot « aryen » vient de l’Avesta, où il signifie plutôt « noble », « civilisé » ou « homme libre » ; son interprétation raciale date du XIXe siècle. Leur religion ancienne vénérait Ahura Mazda, Mithra et Anahita. Zoroastre, dont l’époque est très discutée (la World History Encyclopedia propose 1500-1000 av. J.-C.), insiste sur le choix entre l’ordre, associé à Ahura Mazda, et le désordre, associé à Angra Mainyu.',
+          'Les Mèdes s’unissent, selon la tradition rapportée par la World History Encyclopedia, sous Dayukku (Déjocès pour les Grecs) et font d’Ecbatane leur centre. Son petit-fils Cyaxare étend leur territoire, et l’Empire assyrien s’effondre en 612 av. J.-C. sous les coups d’une coalition incluant Mèdes et Babyloniens. L’ampleur réelle d’un « empire mède » (678-550 av. J.-C. selon cette source) reste discutée par les historiens modernes, car il est surtout connu par Hérodote et par des textes assyriens et babyloniens. Les Perses s’installent en Persis (Parsa, le Fars actuel) autour d’Anshan : la tradition dynastique cite Achéménès, Teispès, Cyrus Ier et Cambyse Ier parmi les ancêtres de Cyrus II, dont le royaume est d’abord un vassal des Mèdes.'
+        ],
+        example: {
+          statement: 'La World History Encyclopedia date l’Empire mède de 678 à 550 av. J.-C. Quelle durée cela représente-t-il ?',
+          calculation: 'Pour des dates avant notre ère, on soustrait la date la plus récente à la plus ancienne : 678 − 550 = 128.',
+          answer: 'Environ 128 ans. C’est une estimation : la durée et l’extension de l’empire mède sont discutées par les historiens.'
+        },
+        exercise: {
+          question: 'Pourquoi ne faut-il pas confondre Suse et l’Élam ?',
+          answer: 'Ce sont deux entités politiques différentes : Suse, fondée avant la période proto-élamite, était contemporaine de la culture élamite mais n’est pas synonyme d’Élam.'
+        },
+        exercises: [
+          {
+            question: 'Quelle région porte le nom ancien de Persis (Parsa) et à quoi correspond-elle aujourd’hui ?',
+            answer: 'Elle correspond au Fars, dans le sud-ouest de l’Iran. C’est de là que vient le nom des Perses.'
+          },
+          {
+            question: 'Que signifie le terme « aryen » dans l’Avesta ?',
+            answer: 'Il signifie « noble », « civilisé » ou « homme libre ». Il n’a pas de sens racial ; cette interprétation date du XIXe siècle.'
+          },
+          {
+            question: 'Quel événement de 612 av. J.-C. modifie l’équilibre des puissances dans la région ?',
+            answer: 'La chute de l’Empire assyrien, provoquée par une coalition incluant les Mèdes et les Babyloniens.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Perse ancienne', url: 'https://www.worldhistory.org/trans/fr/1-18563/perse-ancienne/' },
+          { title: 'World History Encyclopedia — Élam', url: 'https://www.worldhistory.org/trans/fr/1-275/elam/' },
+          { title: 'World History Encyclopedia — Mèdes', url: 'https://www.worldhistory.org/trans/fr/1-22524/medes/' },
+          { title: 'World History Encyclopedia — Suse', url: 'https://www.worldhistory.org/trans/fr/1-276/suse/' }
+        ]
+      }
+    },
+    {
+      id: 'cyrus-ii-empire-achemenide',
+      title: 'Cyrus II et la naissance de l’Empire achéménide',
+      field: 'Perse ancienne · Vers 550-522 av. J.-C.',
+      summary: 'Étudier les conquêtes de Cyrus II, le Cylindre de Cyrus et les débuts de l’organisation de l’empire.',
+      lesson: {
+        sections: [
+          'Cyrus II (Cyrus le Grand), fils de Cambyse Ier et petit-fils du roi mède Astyage, renverse celui-ci vers 550 av. J.-C. Il soumet ensuite la Lydie en 546 av. J.-C. puis Babylone en 539 av. J.-C. D’après la World History Encyclopedia, son empire s’étend à la fin de son règne de la région de la Syrie actuelle jusqu’aux frontières de l’Inde, en passant par l’actuelle Turquie. Il porte le nom d’Achéménès, ancêtre de la dynastie. Cyrus meurt en 530 av. J.-C. : la World History Encyclopedia évoque une mort probable au combat, et la tradition grecque d’Hérodote la situe lors d’une campagne contre les Massagètes.',
+          'Le Cylindre de Cyrus est un cylindre d’argile cuite en cunéiforme babylonien, découvert en 1879 à Babylone et conservé au British Museum. Il relate l’entrée de Cyrus à Babylone en 539 av. J.-C. : le dieu Marduk l’aurait choisi pour remplacer Nabonide, accusé d’avoir négligé les cultes babyloniens. Cyrus y affirme avoir restauré des sanctuaires et permis à des populations déplacées de rentrer chez elles. Le British Museum précise que le texte ne parle pas de droits de l’homme et que cette notion aurait été étrangère à l’époque de Cyrus, tout en soulignant que le retour des peuples déportés rompt avec les pratiques assyriennes et babyloniennes antérieures. Les Juifs n’y sont pas mentionnés : leur retour en Judée est connu par la tradition biblique, que la World History Encyclopedia rapporte.',
+          'La World History Encyclopedia attribue à Cyrus une organisation en provinces (satrapies) dirigées par des satrapes, avec un commandement militaire distinct. D’autres historiens associent plutôt la structuration systématique des satrapies à Darius Ier : il faut donc distinguer l’héritage de Cyrus des réformes ultérieures. Cyrus fonde Pasargades, et l’empire s’appuie aussi sur Babylone, Ecbatane et Suse. Le qanat, galerie en pente jalonnée de puits verticaux, n’est pas une invention de Cyrus : il est déjà attesté sous Sargon II d’Assyrie, lors de la campagne de 714 av. J.-C. contre l’Urartu, autour d’Ulhu. Les Perses en étendent l’usage. Les jardins royaux, pairi-daeza, sont à l’origine du mot « paradis ».',
+          'Cambyse II (r. 530-522 av. J.-C.) succède à son père et conquiert l’Égypte vers 525 av. J.-C. À sa mort en 522, la succession est contestée. La version officielle de Darius parle d’un usurpateur mède, Gaumata, qui se serait fait passer pour Bardiya, frère de Cambyse. Les spécialistes continuent de débattre de ces événements, et de nombreux historiens modernes y voient un récit favorable à Darius. Cette crise ouvre la voie à l’arrivée de Darius Ier, objet du chapitre suivant.'
+        ],
+        example: {
+          statement: 'Cyrus II renverse Astyage vers 550 av. J.-C. et prend Babylone en 539 av. J.-C. Combien d’années séparent ces deux événements ?',
+          calculation: 'Avant notre ère, on compte à rebours : 550 − 539 = 11.',
+          answer: 'Environ 11 ans. La date de 550 av. J.-C. est approximative (« vers 550 »).'
+        },
+        exercise: {
+          question: 'Pourquoi l’expression « première charte des droits de l’homme » appliquée au Cylindre de Cyrus est-elle discutée ?',
+          answer: 'Parce que le texte, rédigé dans le style royal babylonien, ne parle pas de droits de l’homme. Il présente Cyrus comme choisi par Marduk et relève en partie de la légitimation politique, même si le retour des peuples déportés est une politique notable.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Cyrus II conquiert-il Babylone ?',
+            answer: 'En 539 av. J.-C.'
+          },
+          {
+            question: 'Cyrus II a-t-il inventé le qanat ?',
+            answer: 'Non. Le qanat est déjà attesté sous Sargon II d’Assyrie, en 714 av. J.-C. ; les Perses en ont développé l’usage sur un territoire beaucoup plus vaste.'
+          },
+          {
+            question: 'Quelle ville Cyrus II fonde-t-il comme capitale ?',
+            answer: 'Pasargades.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Perse ancienne', url: 'https://www.worldhistory.org/trans/fr/1-18563/perse-ancienne/' },
+          { title: 'World History Encyclopedia — Empire achéménide', url: 'https://www.worldhistory.org/trans/fr/1-322/empire-achemenide/' },
+          { title: 'World History Encyclopedia — Cylindre de Cyrus', url: 'https://www.worldhistory.org/trans/fr/2-166/cylindre-de-cyrus/' },
+          { title: 'British Museum — The Cyrus Cylinder', url: 'https://www.britishmuseum.org/collection/object/W_1880-0617-1941' }
+        ]
+      }
+    },
+    {
+      id: 'darius-ier-administration-persepolis',
+      title: 'Darius Ier : Behistun, administration et Persépolis',
+      field: 'Perse ancienne · 522-486 av. J.-C.',
+      summary: 'Comprendre comment Darius Ier prend le pouvoir, organise l’empire et fait construire Persépolis.',
+      lesson: {
+        sections: [
+          'Après la mort de Cambyse II en 522 av. J.-C., Darius Ier (r. 522-486 av. J.-C.) prend le pouvoir et doit affronter de nombreuses révoltes. Il les raconte dans l’inscription de Behistun (Bisotoun), un relief et un texte monumentaux gravés sur une falaise de la province de Kermanshah, en vieux perse, en élamite et en babylonien. L’UNESCO y compte environ 1 200 lignes d’inscriptions relatant les batailles livrées en 521-520 av. J.-C. Beaucoup d’historiens y voient aussi un texte de légitimation politique. L’inscription a joué un rôle central dans le déchiffrement du cunéiforme au XIXe siècle, notamment grâce à Henry Rawlinson ; le site est inscrit au patrimoine mondial depuis 2006.',
+          'L’empire est découpé en provinces, les satrapies. Selon la World History Encyclopedia, les satrapes assurent l’administration tandis qu’un commandant militaire distinct supervise l’armée et la police de la région : cette séparation réduit le risque qu’un gouverneur concentre trop de pouvoir. Les ordres circulent sur un réseau routier dont la Route royale, qui relie Suse à Sardes, capitale de la satrapie de Lydie ; des relais permettent aux messagers de se reposer et de changer de monture. Hérodote admirait ce système postal. L’araméen sert de langue administrative à l’échelle de l’empire, tandis que les inscriptions royales emploient souvent le vieux perse, l’élamite et le babylonien.',
+          'Persépolis est fondée par Darius Ier vers 518 av. J.-C., selon l’UNESCO, sur une vaste terrasse en partie artificielle. Le site sert de capitale cérémonielle de l’empire. L’Apadana, grande salle d’audience, est commencée sous Darius et achevée sous son fils Xerxès Ier ; la construction se poursuit sous d’autres souverains. Les reliefs représentent notamment des délégations de peuples de l’empire. Le site est inscrit au patrimoine mondial depuis 1979 et sera détruit en partie par un incendie après l’arrivée d’Alexandre en 330 av. J.-C. (voir le chapitre suivant).',
+          'Dans ses inscriptions, Darius attribue ses victoires à la faveur d’Ahura Mazda. Cette référence religieuse accompagne une politique de continuité avec Cyrus II, que la World History Encyclopedia décrit comme tolérante, même si l’empire reste traversé de révoltes, fréquentes dans l’Antiquité après la mort d’un souverain. Les spécialistes débattent de la place exacte du zoroastrisme sous les Achéménides : les inscriptions royales citent Ahura Mazda sans nommer Zoroastre.'
+        ],
+        example: {
+          statement: 'Darius Ier règne de 522 à 486 av. J.-C. Quelle est la durée approximative de son règne ?',
+          calculation: 'Avant notre ère, on soustrait la date la plus récente à la plus ancienne : 522 − 486 = 36.',
+          answer: 'Environ 36 ans.'
+        },
+        exercise: {
+          question: 'Pourquoi l’inscription de Behistun est-elle importante pour les historiens et les linguistes ?',
+          answer: 'Elle rapporte les événements du début du règne de Darius en trois langues cunéiformes (vieux perse, élamite, babylonien), ce qui a joué un rôle essentiel dans le déchiffrement du cunéiforme ; c’est aussi un texte de légitimation politique.'
+        },
+        exercises: [
+          {
+            question: 'Quelles villes la Route royale relie-t-elle selon la World History Encyclopedia ?',
+            answer: 'Suse, capitale de l’empire, et Sardes, capitale de la satrapie de Lydie.'
+          },
+          {
+            question: 'Dans quelles trois langues l’inscription de Behistun est-elle rédigée ?',
+            answer: 'En vieux perse, en élamite et en babylonien.'
+          },
+          {
+            question: 'Vers quelle date Persépolis est-elle fondée, d’après l’UNESCO ?',
+            answer: 'Vers 518 av. J.-C., par Darius Ier.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Perse ancienne', url: 'https://www.worldhistory.org/trans/fr/1-18563/perse-ancienne/' },
+          { title: 'World History Encyclopedia — Gouvernement de Perse ancienne', url: 'https://www.worldhistory.org/trans/fr/1-18564/gouvernement-de-perse-ancienne/' },
+          { title: 'World History Encyclopedia — Persépolis', url: 'https://www.worldhistory.org/trans/fr/1-235/persepolis/' },
+          { title: 'UNESCO — Bisotun', url: 'https://whc.unesco.org/en/list/1222' },
+          { title: 'UNESCO — Persépolis', url: 'https://whc.unesco.org/en/list/114' }
+        ]
+      }
+    },
+    {
+      id: 'guerres-greco-perses-alexandre',
+      title: 'Les guerres gréco-perses et la chute des Achéménides',
+      field: 'Perse ancienne · 499-330 av. J.-C.',
+      summary: 'Suivre les conflits avec les Grecs, la conquête d’Alexandre et apprendre à croiser des sources de points de vue différents.',
+      lesson: {
+        sections: [
+          'Les cités grecques d’Ionie, en Asie Mineure, se révoltent contre la domination perse (révolte ionienne, 499-494 av. J.-C.) avec le soutien d’Athènes. Darius Ier envoie ensuite une expédition contre la Grèce, arrêtée à Marathon en 490 av. J.-C. Darius meurt en 486 av. J.-C. Ce récit repose largement sur Hérodote, un auteur grec, ce qui impose de tenir compte de son point de vue.',
+          'Xerxès Ier (r. 486-465 av. J.-C.) lance une nouvelle invasion en 480 av. J.-C. La World History Encyclopedia parle de la plus grande armée levée jusqu’alors ; les chiffres d’Hérodote (plus de deux millions de combattants) sont jugés très exagérés par les historiens modernes. Après les combats des Thermopyles et de l’Artémision, la flotte perse est battue à Salamine (480 av. J.-C.), puis l’armée est défaite à Platées (479 av. J.-C.). L’invasion échoue, mais l’Empire achéménide n’est pas détruit : Xerxès poursuit ensuite les grands chantiers, notamment à Persépolis.',
+          'Selon la World History Encyclopedia, l’empire reste stable sous les souverains suivants jusqu’à Darius III (336-330 av. J.-C.). Alexandre le Grand franchit l’Hellespont en 334 av. J.-C. et bat les Perses au Granique (334), à Issos (333) puis à Gaugamela (331 av. J.-C.). Persépolis est prise puis incendiée en 330 av. J.-C. ; les raisons de l’incendie sont discutées. Darius III est assassiné par Bessos, qui se proclame Artaxerxès V avant d’être exécuté par Alexandre. Alexandre se présente alors comme le successeur de Darius.',
+          'L’histoire achéménide est connue par des auteurs grecs (Hérodote, Xénophon, Ctésias), des inscriptions royales (Behistun, Persépolis), des textes bibliques et des archives administratives, comme les tablettes de fortification de Persépolis, surtout en élamite et datées d’environ 509-493 av. J.-C. Les auteurs grecs écrivent souvent à distance et avec un point de vue hostile ; les inscriptions royales sont des textes officiels. Croiser ces sources est donc indispensable, d’autant que les Perses ont laissé peu de récits historiques narratifs de leur propre point de vue.'
+        ],
+        example: {
+          statement: 'Darius Ier est arrêté à Marathon en 490 av. J.-C. ; Xerxès Ier envahit la Grèce en 480 av. J.-C. Combien d’années séparent ces deux expéditions ?',
+          calculation: 'Avant notre ère, on compte à rebours : 490 − 480 = 10.',
+          answer: '10 ans.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il être prudent avec les chiffres d’Hérodote sur l’armée de Xerxès ?',
+          answer: 'Parce qu’Hérodote est un auteur grec écrivant du point de vue des vainqueurs, et que les historiens modernes jugent ses chiffres très exagérés.'
+        },
+        exercises: [
+          {
+            question: 'Quelle bataille arrête l’invasion de la Grèce lancée par Darius Ier en 490 av. J.-C. ?',
+            answer: 'La bataille de Marathon.'
+          },
+          {
+            question: 'Qui assassine Darius III selon la World History Encyclopedia ?',
+            answer: 'Son confident et garde du corps Bessos, qui se proclame ensuite Artaxerxès V.'
+          },
+          {
+            question: 'Quelle grande bataille de 331 av. J.-C. oppose Alexandre à Darius III ?',
+            answer: 'La bataille de Gaugamela.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Perse ancienne', url: 'https://www.worldhistory.org/trans/fr/1-18563/perse-ancienne/' },
+          { title: 'World History Encyclopedia — Bataille de Marathon', url: 'https://www.worldhistory.org/trans/fr/1-333/bataille-de-marathon/' },
+          { title: 'World History Encyclopedia — Xerxès Ier', url: 'https://www.worldhistory.org/trans/fr/1-359/xerxes-ier/' },
+          { title: 'World History Encyclopedia — Alexandre le Grand', url: 'https://www.worldhistory.org/trans/fr/1-265/alexandre-le-grand/' }
+        ]
+      }
+    },
+    {
+      id: 'seleucides-parthes',
+      title: 'Les Séleucides et les Parthes',
+      field: 'Perse ancienne · 323 av. J.-C. - 224 ap. J.-C.',
+      summary: 'Comprendre la période hellénistique en Iran, la montée de la Parthie et ses conflits avec Rome.',
+      lesson: {
+        sections: [
+          'Alexandre meurt en 323 av. J.-C. et son empire est partagé entre ses généraux. Séleucos Ier Nicator (r. 305-281 av. J.-C.) fonde l’Empire séleucide (312-63 av. J.-C. selon la World History Encyclopedia), qui couvre notamment la Mésopotamie et une partie de l’Asie centrale. Il conserve en grande partie le modèle perse de gouvernement et la tolérance religieuse, mais confie les plus hauts postes à des Grecs. Le grec devient la langue de la cour, et Grecs et Perses se marient entre eux.',
+          'La Parthie et la Bactriane s’éloignent peu à peu du pouvoir séleucide. En 247 av. J.-C., Arsace Ier fonde un royaume indépendant, qui devient l’Empire parthe. Antiochos III reprend brièvement la Parthie vers 209 av. J.-C., puis il est vaincu par Rome à Magnésie (190 av. J.-C.) ; le traité d’Apamée (188 av. J.-C.) réduit fortement l’empire séleucide. Les rois parthes Mithridate Ier (r. 171-132 av. J.-C.) puis Mithridate II (r. 124-88 av. J.-C.) étendent leur domination. Les Séleucides ne subsistent plus que comme petit royaume tampon en Syrie jusqu’à leur défaite face à Pompée en 63 av. J.-C.',
+          'Les Parthes laissent aux rois des régions conquises leur position, à condition qu’ils versent un tribut, et réduisent la taille des satrapies. Leur art et leur architecture mêlent traditions perses et hellénistiques. Leur armée s’appuie sur la cavalerie et sur le « tir parthe » : des archers à cheval feignent la retraite puis se retournent pour tirer. En 53 av. J.-C., une armée parthe commandée par Suréna écrase les légions de Crassus à Carrhes, où Crassus trouve la mort ; en 36 av. J.-C., la campagne de Marc Antoine contre les Parthes échoue aussi.',
+        'Les campagnes romaines affaiblissent les Parthes ; la World History Encyclopedia indique que l’empire parthe est sévèrement affaibli vers 165 ap. J.-C. par les campagnes romaines. L’empire parthe prend fin en 224 ap. J.-C., quand le dernier roi, Artaban IV, est renversé par son vassal Ardashir Ier, fondateur de l’empire sassanide. Les sources écrites parthes sont rares : notre connaissance repose beaucoup sur des auteurs grecs et romains, ce qui limite et oriente cette connaissance.'
+        ],
+        example: {
+          statement: 'L’Empire parthe est daté de 247 av. J.-C. à 224 ap. J.-C. Quelle est sa durée approximative ?',
+          calculation: 'Il n’existe pas d’année 0 entre 1 av. J.-C. et 1 ap. J.-C. : 247 + 224 − 1 = 470.',
+          answer: 'Environ 470 ans. Ce calcul reste une estimation, les dates étant des repères conventionnels.'
+        },
+        exercise: {
+          question: 'Comment les Parthes réduisent-ils le risque de rébellion dans leurs provinces ?',
+          answer: 'Selon la World History Encyclopedia, ils réduisent la taille des satrapies et laissent aux rois des régions conquises leur position, à condition qu’ils versent un tribut.'
+        },
+        exercises: [
+          {
+            question: 'Qui fonde l’Empire séleucide ?',
+            answer: 'Séleucos Ier Nicator, un des généraux d’Alexandre.'
+          },
+          {
+            question: 'En quoi consiste le « tir parthe » ?',
+            answer: 'Des archers à cheval feignent la retraite, puis se retournent pour tirer sur leurs adversaires qui avancent.'
+          },
+          {
+            question: 'Quelle bataille de 53 av. J.-C. oppose les Parthes à Rome ?',
+            answer: 'La bataille de Carrhes, où Crassus est vaincu et tué.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Perse ancienne', url: 'https://www.worldhistory.org/trans/fr/1-18563/perse-ancienne/' },
+          { title: 'World History Encyclopedia — Empire séleucide', url: 'https://www.worldhistory.org/trans/fr/1-246/empire-seleucide/' },
+          { title: 'World History Encyclopedia — Parthie (Empire)', url: 'https://www.worldhistory.org/trans/fr/1-18370/parthie-empire/' },
+          { title: 'World History Encyclopedia — Bataille de Carrhes', url: 'https://www.worldhistory.org/trans/fr/2-1406/bataille-de-carrhes/' }
+        ]
+      }
+    },
+    {
+      id: 'sassanides-fin-perse-antique',
+      title: 'L’Empire sassanide et la fin de la Perse antique',
+      field: 'Perse ancienne · 224-651 ap. J.-C.',
+      summary: 'Étudier la fondation, les sommets et la chute de l’Empire sassanide, dernière puissance perse avant la conquête arabe.',
+      lesson: {
+        sections: [
+          'Vers 224 ap. J.-C., Ardashir Ier, issu de Persis, bat le dernier roi parthe, Artaban IV, à la bataille d’Hormozgan et fonde l’empire sassanide, nommé d’après l’ancêtre Sasan. L’empire se désigne lui-même Ērānšahr, « empire des Iraniens » ; Shapur Ier se dit « seigneur de l’empire des Iraniens » dans sa grande inscription trilingue. La capitale est Ctésiphon, ancien siège parthe près de l’actuelle Bagdad. Selon la World History Encyclopedia, Ardashir cherche à bâtir un royaume stable fondé sur le zoroastrisme.',
+          'Shapur Ier (r. vers 240-270 ap. J.-C.) mène des campagnes contre Rome, profitant de la crise du IIIe siècle. Vers 260 ap. J.-C., il capture l’empereur Valérien près d’Édesse, épisode célébré par des reliefs rupestres, notamment à Naqsh-e Rostam. À la fin de son règne, l’empire s’étend de l’Euphrate à l’Indus, d’après le Metropolitan Museum. Le prophète Mani, fondateur du manichéisme, est accueilli à sa cour. La World History Encyclopedia décrit une politique de tolérance religieuse ; la situation des minorités a toutefois varié selon les règnes et l’influence du clergé zoroastrien.',
+          'Khosro Ier (r. 531-579 ap. J.-C.) est considéré comme l’un des plus grands souverains sassanides. La World History Encyclopedia lui attribue une réforme fiscale, la division de l’empire en quatre grands commandements militaires et la fondation de l’Académie de Gondichapour, grand centre savant et médical ; l’ampleur exacte de cette institution est débattue. L’arche de Taq Kasra, encore visible à Ctésiphon, est attribuée par la World History Encyclopedia à Shapur Ier ou, selon certains spécialistes, à Khosro Ier.',
+          'La World History Encyclopedia cite comme facteurs d’affaiblissement la faiblesse de certains souverains, la corruption du clergé et la peste de 627-628 ; les guerres répétées avec Byzance, dont celle de 602-628, épuisent aussi l’empire. Les armées arabes musulmanes battent les Sassanides à al-Qadisiyya (636) puis à Nahavand (642). Le dernier souverain, Yazdgard III, meurt en 651 ap. J.-C., date retenue par la World History Encyclopedia comme fin de la Perse antique. La langue, la culture et de nombreuses pratiques administratives et artistiques iraniennes survivent à la conquête.'
+        ],
+        example: {
+          statement: 'L’Empire sassanide est daté de 224 à 651 ap. J.-C. Quelle est sa durée approximative ?',
+          calculation: 'Les deux dates sont après J.-C. : 651 − 224 = 427.',
+          answer: 'Environ 427 ans.'
+        },
+        exercise: {
+          question: 'Pourquoi 651 ap. J.-C. est-elle une date repère pour la Perse antique ?',
+          answer: 'C’est l’année de la mort du dernier souverain sassanide, Yazdgard III, après la conquête arabe musulmane ; la World History Encyclopedia la retient comme fin de la Perse antique.'
+        },
+        exercises: [
+          {
+            question: 'Quel empereur romain Shapur Ier capture-t-il vers 260 ap. J.-C. ?',
+            answer: 'Valérien, près d’Édesse.'
+          },
+          {
+            question: 'Quelle était la capitale de l’Empire sassanide ?',
+            answer: 'Ctésiphon, près de l’actuelle Bagdad.'
+          },
+          {
+            question: 'Quelle bataille de 642 marque une défaite décisive des Sassanides face aux armées arabes ?',
+            answer: 'La bataille de Nahavand.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Perse ancienne', url: 'https://www.worldhistory.org/trans/fr/1-18563/perse-ancienne/' },
+          { title: 'World History Encyclopedia — Empire sassanide', url: 'https://www.worldhistory.org/trans/fr/1-690/empire-sassanide/' },
+          { title: 'World History Encyclopedia — Chapour Ier', url: 'https://www.worldhistory.org/trans/fr/1-689/chapour-ier/' },
+          { title: 'World History Encyclopedia — Khosro Ier', url: 'https://www.worldhistory.org/trans/fr/1-18809/khosro-ier/' },
+          { title: 'Metropolitan Museum of Art — The Sasanian Empire (224–651 A.D.)', url: 'https://www.metmuseum.org/essays/the-sasanian-empire-224-651-a-d' }
+        ]
+      }
+    }
+  ]
+},
+
 
 
 ]
+
 
 
