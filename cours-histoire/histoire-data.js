@@ -5720,6 +5720,382 @@ window.courseCatalog = [
   ]
 },
 
+
+{
+  id: 'revolutions-energetiques',
+  sortYear: -400000,
+  title: 'Les grandes révolutions énergétiques',
+  note: 'Sept chapitres approfondissent les grandes transformations des systèmes énergétiques : maîtrise du feu, sociétés agricoles et biomasse, force de l’eau et du vent, charbon et machine à vapeur, pétrole-gaz-électricité, énergie nucléaire, puis essor contemporain des renouvelables et transition énergétique. Les repères sont indicatifs : les innovations apparaissent à des dates différentes selon les régions et les anciennes sources ne disparaissent pas automatiquement lorsqu’une nouvelle se développe. Le sortYear de -400000 est un repère conventionnel approximatif pour situer le thème, et non une date certaine de la maîtrise du feu.',
+  chapters: [
+    {
+      id: 'maitrise-du-feu',
+      title: 'La maîtrise du feu : la première grande transformation énergétique',
+      field: 'Préhistoire · Plusieurs centaines de milliers d’années avant le présent, avec des indices plus anciens discutés',
+      summary: 'Étudier comment l’usage contrôlé du feu a fourni chaleur et lumière, transformé certaines pratiques alimentaires et modifié les possibilités d’occupation des milieux, sans attribuer une date unique et universelle à son apparition.',
+      lesson: {
+        sections: [
+          'Le feu est une source d’énergie thermique obtenue par combustion. Sa maîtrise a pu apporter chaleur, lumière et protection, et permettre la cuisson des aliments. La cuisson modifie la texture et la digestibilité de nombreux aliments, mais les conséquences précises sur les régimes anciens dépendent des espèces consommées et des contextes archéologiques. Les foyers, les os brûlés et les sédiments chauffés sont des indices matériels ; leur interprétation doit distinguer un feu naturel d’un feu entretenu par des humains.',
+          'La chronologie de cette maîtrise reste discutée. Des indices de feu très anciens ont été proposés sur différents sites, mais tous ne démontrent pas avec le même degré de certitude une utilisation humaine régulière et contrôlée. Il faut donc éviter de présenter une année précise comme l’invention du feu. Les pratiques ont probablement varié selon les groupes, les environnements et les périodes, et la conservation des traces archéologiques est inégale.',
+          'Le feu ne constitue pas une source d’énergie indépendante de tout combustible : il transforme l’énergie chimique du bois, des herbes ou d’autres matières combustibles en chaleur et en lumière. Cette transformation a élargi les possibilités techniques humaines, mais elle a aussi nécessité l’accès à du combustible et la gestion de la combustion. Dans une perspective historique, il s’agit d’une étape fondamentale de l’usage intentionnel de l’énergie, plutôt que d’une révolution simultanée partout dans le monde.'
+        ],
+        example: {
+          statement: 'Deux sites archéologiques présentent des traces de combustion, l’un daté d’environ 400000 ans et l’autre d’environ 100000 ans avant le présent. Que peut-on conclure de ces seules dates ?',
+          calculation: 'Pour des dates exprimées en années avant le présent, 400000 est un repère plus ancien que 100000. La date seule ne suffit toutefois pas à prouver que les traces résultent d’un feu contrôlé par des humains.',
+          answer: 'Le site daté d’environ 400000 ans est chronologiquement plus ancien. Pour conclure à une maîtrise humaine du feu, il faut examiner les preuves archéologiques et leur contexte, pas seulement comparer les dates.'
+        },
+        exercise: {
+          question: 'Pourquoi les archéologues restent-ils prudents lorsqu’ils datent la maîtrise du feu ?',
+          answer: 'Parce qu’une trace de combustion peut avoir une origine naturelle et que les indices de contrôle humain ne sont pas également solides sur tous les sites.'
+        },
+        exercises: [
+          {
+            question: 'Quelles formes d’énergie sont directement utiles dans un foyer ?',
+            answer: 'Principalement la chaleur et la lumière, issues de la combustion.'
+          },
+          {
+            question: 'Une trace de feu prouve-t-elle toujours une maîtrise humaine ?',
+            answer: 'Non. Son origine, son contexte et les autres indices doivent être étudiés.'
+          },
+          {
+            question: 'Pourquoi ne faut-il pas donner une date unique et certaine à cette transformation ?',
+            answer: 'Les preuves sont fragmentaires, les interprétations varient selon les sites et l’usage contrôlé a pu se développer différemment selon les groupes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Vaclav Smil — Energy and Civilization: A History, MIT Press',
+            url: 'https://mitpress.mit.edu/9780262035774/energy-and-civilization/'
+          },
+          {
+            title: 'Smithsonian National Museum of Natural History — Human Evolution',
+            url: 'https://humanorigins.si.edu/'
+          },
+          {
+            title: 'Our World in Data — Energy Production and Consumption',
+            url: 'https://ourworldindata.org/energy-production-consumption'
+          }
+        ]
+      }
+    },
+    {
+      id: 'agriculture-biomasse',
+      title: 'Agriculture, élevage et biomasse : l’énergie des sociétés agraires',
+      field: 'Néolithique et périodes historiques · Chronologies variables selon les régions',
+      summary: 'Comprendre le rôle du bois, des résidus végétaux, de la force humaine et animale dans les sociétés agricoles, ainsi que les liens entre énergie, production alimentaire et organisation sociale.',
+      lesson: {
+        sections: [
+          'La biomasse regroupe les matières organiques d’origine végétale ou animale utilisables comme combustible. Dans de nombreuses sociétés anciennes, le bois, les résidus de récolte et, selon les régions, les déjections animales séchées ont fourni une part importante de l’énergie domestique. Le soleil contribuait directement à la croissance des cultures et des pâturages ; les humains et les animaux convertissaient ensuite l’énergie alimentaire en travail mécanique. Ce système reposait largement sur des flux renouvelés par les écosystèmes, mais leur disponibilité dépendait des sols, du climat, des forêts et des pratiques de gestion.',
+          'L’agriculture et l’élevage ont transformé l’accès aux ressources énergétiques sans produire partout le même résultat au même moment. Les animaux domestiques pouvaient tirer des charges, labourer ou transporter des personnes et des marchandises. Les moulins à eau et à vent ont ensuite fourni une énergie mécanique pour certaines tâches, réduisant le recours à la force musculaire dans les lieux adaptés. Ces technologies exigeaient des investissements, des savoir-faire et des conditions géographiques particulières ; elles n’étaient donc ni universelles ni accessibles de façon égale.',
+          'Une ressource renouvelable n’est pas automatiquement inépuisable ou sans impact. Une consommation de bois supérieure à la capacité de régénération d’une forêt peut entraîner une dégradation locale, tandis que l’extension des cultures peut modifier les paysages et les habitats. L’histoire énergétique doit ainsi étudier ensemble les ressources disponibles, les besoins, les techniques, le travail et les institutions qui organisent l’accès à l’énergie.'
+        ],
+        example: {
+          statement: 'Une communauté utilise du bois pour cuisiner et des animaux pour transporter des récoltes. Identifiez deux formes d’énergie mobilisées.',
+          calculation: 'La combustion du bois transforme son énergie chimique en chaleur. Les animaux utilisent l’énergie chimique des aliments et la convertissent en travail mécanique.',
+          answer: 'Le bois fournit principalement de la chaleur ; les animaux fournissent un travail mécanique. Ces usages reposent sur des conversions d’énergie différentes.'
+        },
+        exercise: {
+          question: 'Pourquoi les moulins à eau et à vent n’ont-ils pas remplacé partout le travail humain et animal ?',
+          answer: 'Leur utilisation dépendait notamment de la disponibilité d’un cours d’eau ou d’un régime de vent adapté, de la technologie, des coûts et de l’organisation locale du travail.'
+        },
+        exercises: [
+          {
+            question: 'Qu’appelle-t-on biomasse ?',
+            answer: 'Des matières organiques d’origine végétale ou animale pouvant notamment servir de combustible.'
+          },
+          {
+            question: 'Quel travail un animal de trait peut-il fournir ?',
+            answer: 'Par exemple, tirer une charrue ou transporter une charge.'
+          },
+          {
+            question: 'Une ressource renouvelable peut-elle être surexploitée ?',
+            answer: 'Oui. Son renouvellement peut être dépassé par la vitesse de prélèvement ou être limité par les conditions écologiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Our World in Data — Fossil Fuels',
+            url: 'https://ourworldindata.org/fossil-fuels'
+          },
+          {
+            title: 'Vaclav Smil — Energy and Civilization: A History, MIT Press',
+            url: 'https://mitpress.mit.edu/9780262035774/energy-and-civilization/'
+          },
+          {
+            title: 'National Geographic Education — Industrial Revolution and Technology',
+            url: 'https://education.nationalgeographic.org/resource/industrial-revolution-and-technology/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'eau-vent-energie-mecanique',
+      title: 'L’eau et le vent : mécaniser le travail avant l’industrialisation',
+      field: 'Antiquité à époque moderne · Diffusion inégale selon les sociétés et les milieux',
+      summary: 'Présenter les moulins hydrauliques et éoliens comme des systèmes de conversion de l’énergie naturelle en mouvement mécanique, et expliquer leurs usages et leurs limites.',
+      lesson: {
+        sections: [
+          'Les roues hydrauliques utilisent l’énergie d’un courant ou d’une chute d’eau pour entraîner un mécanisme. Les moulins ont notamment servi à moudre les céréales, et certaines installations ont actionné des soufflets, des marteaux ou des dispositifs de pompage. Les moulins à vent ont également fourni de l’énergie mécanique, par exemple pour moudre les grains ou pomper l’eau dans certaines régions. Ces appareils ne créaient pas d’énergie : ils convertissaient l’énergie du mouvement de l’eau ou de l’air en travail utile.',
+          'L’usage de ces technologies dépendait de facteurs concrets : débit et saisonnalité des cours d’eau, relief, régularité des vents, matériaux disponibles, coûts de construction et droits d’usage. Un moulin pouvait augmenter la quantité de travail réalisée sans effort musculaire direct à chaque opération, mais il ne fonctionnait pas nécessairement en continu. L’entretien, les réparations et la gestion des infrastructures faisaient partie du système énergétique.',
+          'Avant la généralisation de la machine à vapeur, l’eau et le vent étaient déjà des sources majeures d’énergie mécanique dans plusieurs économies. La révolution industrielle ne les a pas fait disparaître immédiatement : elles ont coexisté avec les moteurs thermiques et ont continué à être utilisées là où elles restaient compétitives. Cette coexistence rappelle que les transitions énergétiques sont généralement progressives et géographiquement différenciées.'
+        ],
+        example: {
+          statement: 'Un moulin transforme le mouvement de l’eau en rotation d’une meule. Quelle est la conversion énergétique principale ?',
+          calculation: 'L’énergie mécanique de l’eau en mouvement est transmise à la roue, puis à l’axe et à la meule. Une partie de l’énergie est dissipée par les frottements et les turbulences.',
+          answer: 'Il s’agit d’une conversion de l’énergie hydraulique en énergie mécanique utile, avec des pertes inévitables.'
+        },
+        exercise: {
+          question: 'Citez deux facteurs qui peuvent limiter le fonctionnement d’un moulin à eau.',
+          answer: 'Un débit insuffisant ou très variable, et des contraintes techniques ou matérielles comme l’usure, les réparations ou l’absence d’infrastructure adaptée.'
+        },
+        exercises: [
+          {
+            question: 'Quelle énergie un moulin à vent exploite-t-il ?',
+            answer: 'L’énergie cinétique du vent, convertie en mouvement mécanique.'
+          },
+          {
+            question: 'Les moulins ont-ils disparu dès l’apparition de la machine à vapeur ?',
+            answer: 'Non. Les technologies ont coexisté pendant de longues périodes et leur importance a varié selon les régions et les usages.'
+          },
+          {
+            question: 'Pourquoi un moulin ne peut-il pas fonctionner indépendamment de son environnement ?',
+            answer: 'Parce qu’il dépend d’une ressource naturelle variable, d’un site adapté et d’infrastructures entretenues.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Geographic Education — Industrial Revolution and Technology',
+            url: 'https://education.nationalgeographic.org/resource/industrial-revolution-and-technology/'
+          },
+          {
+            title: 'Union of Concerned Scientists — A Short History of Energy',
+            url: 'https://www.ucs.org/resources/short-history-energy'
+          },
+          {
+            title: 'Vaclav Smil — Energy and Civilization: A History, MIT Press',
+            url: 'https://mitpress.mit.edu/9780262035774/energy-and-civilization/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'charbon-vapeur-industrialisation',
+      title: 'Charbon et machine à vapeur : l’industrialisation à grande échelle',
+      field: 'À partir du XVIIIe siècle · Départ précoce en Grande-Bretagne, diffusion progressive à d’autres régions',
+      summary: 'Expliquer pourquoi le charbon et l’amélioration des machines à vapeur ont profondément transformé l’industrie, les transports et l’organisation du travail, tout en soulignant les coûts humains et environnementaux.',
+      lesson: {
+        sections: [
+          'Le charbon est un combustible fossile formé sur des temps géologiques à partir de matière organique. Son exploitation a fourni une source d’énergie concentrée, transportable et mobilisable à grande échelle. En Grande-Bretagne, l’utilisation du charbon s’est développée avant et pendant l’industrialisation, notamment en raison de besoins en combustible et de contraintes locales sur les ressources en bois. Cette trajectoire n’est pas identique dans tous les pays : l’accès aux gisements, aux capitaux, aux marchés et aux infrastructures a influencé le rythme de l’industrialisation.',
+          'Les premières machines à vapeur modernes ont notamment servi au pompage de l’eau dans les mines. Les perfectionnements associés à James Watt et à ses partenaires au XVIIIe siècle ont amélioré l’efficacité et élargi les usages de la vapeur. Couplée à des machines industrielles, la vapeur a permis de fournir de la puissance mécanique sans dépendre exclusivement d’un emplacement près d’un cours d’eau. Les chemins de fer et les navires à vapeur ont ensuite transformé le transport des personnes, des matières premières et des marchandises.',
+          'Cette révolution énergétique a contribué à l’augmentation de la production industrielle et à la croissance des villes, mais ses bénéfices et ses coûts ont été inégalement répartis. Le travail minier et industriel a comporté des risques importants, et la combustion du charbon a émis des polluants atmosphériques et du dioxyde de carbone. Le charbon n’a pas remplacé instantanément toutes les sources antérieures : la biomasse, la force hydraulique et le vent ont continué à jouer des rôles variables selon les lieux et les usages.'
+        ],
+        example: {
+          statement: 'Pourquoi la machine à vapeur a-t-elle permis à certaines usines de s’installer au-delà des sites directement alimentés par l’eau ?',
+          calculation: 'La combustion du charbon produit de la chaleur ; la vapeur met en mouvement un mécanisme qui fournit du travail mécanique. L’approvisionnement en combustible remplace alors, pour ces usages, la dépendance exclusive à un courant d’eau local.',
+          answer: 'La machine à vapeur rendait possible une production mécanique dans des lieux où l’énergie hydraulique n’était pas disponible ou suffisante, à condition de disposer de combustible, d’équipements et de transports.'
+        },
+        exercise: {
+          question: 'Pourquoi le charbon a-t-il été un facteur majeur de l’industrialisation, sans en être l’unique cause ?',
+          answer: 'Il fournissait une énergie concentrée pour la vapeur et la métallurgie, mais l’industrialisation dépendait aussi des innovations, des capitaux, de la main-d’œuvre, des marchés, des institutions et des réseaux de transport.'
+        },
+        exercises: [
+          {
+            question: 'À quoi servaient notamment les premières machines à vapeur utilisées dans les mines ?',
+            answer: 'À pomper l’eau qui s’accumulait dans les galeries.'
+          },
+          {
+            question: 'Quelle transformation énergétique intervient dans une machine à vapeur alimentée au charbon ?',
+            answer: 'L’énergie chimique du charbon est convertie en chaleur, puis en énergie mécanique par l’intermédiaire de la vapeur.'
+          },
+          {
+            question: 'Citez une conséquence environnementale de la combustion du charbon.',
+            answer: 'Elle émet du dioxyde de carbone et des polluants atmosphériques, dont les effets dépendent des combustibles, des équipements et des contrôles d’émissions.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Geographic Education — Industrial Revolution and Technology',
+            url: 'https://education.nationalgeographic.org/resource/industrial-revolution-and-technology/'
+          },
+          {
+            title: 'OpenStax — The Second Industrial Revolution',
+            url: 'https://openstax.org/books/world-history-volume-2/pages/9-1-the-second-industrial-revolution'
+          },
+          {
+            title: 'Our World in Data — Fossil Fuels',
+            url: 'https://ourworldindata.org/fossil-fuels'
+          },
+          {
+            title: 'Vaclav Smil — Energy and Civilization: A History, MIT Press',
+            url: 'https://mitpress.mit.edu/9780262035774/energy-and-civilization/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'petrole-gaz-electricite',
+      title: 'Pétrole, gaz et électricité : la société énergétique moderne',
+      field: 'XIXe et XXe siècles · Déploiement progressif et inégal selon les pays',
+      summary: 'Analyser l’essor des moteurs à combustion interne, des réseaux électriques et du gaz, ainsi que leurs effets sur les transports, l’industrie et la vie quotidienne.',
+      lesson: {
+        sections: [
+          'Le pétrole a pris une place croissante avec le développement des moteurs à combustion interne, des véhicules motorisés, de l’aviation et de la pétrochimie. Le gaz naturel a été utilisé pour la chaleur, l’industrie et la production d’électricité, selon les infrastructures et les ressources disponibles. Ces combustibles ont une forte densité énergétique et peuvent être stockés ou transportés par des réseaux spécialisés, mais leur extraction, leur transport et leur combustion ont des conséquences environnementales et géopolitiques. L’histoire de leur diffusion ne se résume pas à une date d’invention : elle dépend aussi des forages, des raffineries, des pipelines, des ports, des routes et des marchés.',
+          'L’électricité est un vecteur énergétique, et non une source primaire en soi : elle doit être produite à partir d’autres formes d’énergie, par exemple le charbon, le gaz, l’eau, le vent, le soleil ou l’énergie nucléaire. À la fin du XIXe siècle, les premières centrales et les réseaux locaux ont commencé à fournir de l’électricité à des clients, d’abord pour certains usages comme l’éclairage. L’amélioration des générateurs, des transformateurs et du transport à haute tension a progressivement permis d’étendre les réseaux et de multiplier les usages industriels et domestiques.',
+          'L’électrification a modifié les usines, les communications, les transports et les foyers, mais son développement a été très inégal dans le monde. L’accès à l’électricité ne garantit pas à lui seul une énergie abordable ou fiable, et la production électrique peut avoir des émissions très différentes selon son mix. Pétrole, gaz, charbon, hydraulique et autres sources ont donc coexisté dans des proportions variables ; la croissance de l’électricité n’a pas supprimé la dépendance aux combustibles fossiles.'
+        ],
+        example: {
+          statement: 'Une centrale brûle du gaz naturel pour produire de l’électricité. Quelle distinction faut-il faire entre le gaz et l’électricité ?',
+          calculation: 'Le gaz naturel est le combustible utilisé comme source d’énergie primaire ; l’électricité est le vecteur produit par la conversion énergétique de la centrale.',
+          answer: 'Le gaz est une source d’énergie primaire, tandis que l’électricité est un vecteur énergétique produit à partir d’une source ou d’une combinaison de sources.'
+        },
+        exercise: {
+          question: 'Pourquoi l’électrification n’a-t-elle pas automatiquement supprimé les émissions de gaz à effet de serre ?',
+          answer: 'Parce que les émissions liées à l’électricité dépendent des moyens de production utilisés, et que de nombreux usages continuent aussi de consommer directement des combustibles fossiles.'
+        },
+        exercises: [
+          {
+            question: 'L’électricité est-elle une source primaire d’énergie ?',
+            answer: 'Non. C’est un vecteur énergétique qui doit être produit à partir d’autres sources.'
+          },
+          {
+            question: 'Citez deux facteurs nécessaires au développement des réseaux électriques.',
+            answer: 'Des moyens de production et des infrastructures de transport et de distribution, notamment des lignes et des transformateurs.'
+          },
+          {
+            question: 'Pourquoi le pétrole a-t-il été important pour les transports modernes ?',
+            answer: 'Ses dérivés liquides sont adaptés à de nombreux moteurs et peuvent être transportés et stockés, ce qui a facilité la motorisation des transports.'
+          }
+        ],
+        sources: [
+          {
+            title: 'U.S. Department of Energy — History of the U.S. Electric Power Industry',
+            url: 'https://www.energy.gov/sites/default/files/2023-11/NEPDG-s38-pages-9251-9500.pdf'
+          },
+          {
+            title: 'Our World in Data — Energy Production and Consumption',
+            url: 'https://ourworldindata.org/energy-production-consumption'
+          },
+          {
+            title: 'Our World in Data — Fossil Fuels',
+            url: 'https://ourworldindata.org/fossil-fuels'
+          },
+          {
+            title: 'International Energy Agency — History of the IEA',
+            url: 'https://www.iea.org/about/mission/history-of-the-iea'
+          }
+        ]
+      }
+    },
+    {
+      id: 'energie-nucleaire',
+      title: 'L’énergie nucléaire : une nouvelle filière de production électrique',
+      field: 'Milieu du XXe siècle à aujourd’hui · Développement variable selon les pays',
+      summary: 'Expliquer le principe de la fission nucléaire et le développement des centrales, en présentant les atouts, les risques, les contraintes industrielles et la gestion des déchets.',
+      lesson: {
+        sections: [
+          'Dans une centrale nucléaire de fission, le noyau d’un atome lourd, par exemple l’uranium 235, se divise après avoir absorbé un neutron. Cette réaction libère de l’énergie et des neutrons qui peuvent entretenir une réaction en chaîne contrôlée. La chaleur produite sert à chauffer un fluide ; dans la plupart des centrales commerciales, elle permet de produire de la vapeur qui entraîne une turbine couplée à un alternateur. La centrale convertit donc l’énergie nucléaire en chaleur, puis en énergie mécanique et électrique.',
+          'La production d’électricité à partir de réacteurs nucléaires a commencé au milieu du XXe siècle. Le réacteur d’Obninsk, en Union soviétique, a commencé à produire de l’électricité en 1954 et est souvent cité comme la première centrale nucléaire raccordée à un réseau. D’autres installations ont suivi dans les années 1950 et 1960. Il faut distinguer les premiers essais expérimentaux, les démonstrateurs et les centrales commerciales, car ils ne correspondent pas au même jalon historique.',
+          'Le nucléaire présente des émissions directes de dioxyde de carbone faibles pendant la production d’électricité, mais il exige des infrastructures complexes, une réglementation stricte, une gestion des matières radioactives et des dispositifs de sûreté. Les déchets radioactifs diffèrent par leur niveau d’activité et leur durée de vie ; leur gestion nécessite des solutions adaptées à chaque catégorie. Les coûts, les délais de construction, la disponibilité des compétences et l’acceptation sociale varient selon les projets. Le nucléaire constitue donc une option de production bas-carbone, mais ses avantages et ses limites doivent être comparés à ceux des autres moyens de production dans chaque système électrique.'
+        ],
+        example: {
+          statement: 'Dans une centrale nucléaire classique, pourquoi faut-il un alternateur ?',
+          calculation: 'La fission fournit de la chaleur, qui produit un mouvement mécanique au moyen d’une turbine. L’alternateur convertit ensuite ce mouvement en énergie électrique.',
+          answer: 'L’alternateur est nécessaire pour convertir l’énergie mécanique de la turbine en électricité.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il incorrect de dire qu’une centrale nucléaire ne produit aucun déchet ?',
+          answer: 'Son fonctionnement produit des matières radioactives et des déchets d’exploitation qui doivent être caractérisés, traités et gérés selon leur nature.'
+        },
+        exercises: [
+          {
+            question: 'Quelle réaction libère l’énergie utilisée dans les centrales nucléaires actuelles ?',
+            answer: 'La fission de noyaux atomiques lourds dans un réacteur.'
+          },
+          {
+            question: 'En quelle année le réacteur d’Obninsk a-t-il commencé à produire de l’électricité ?',
+            answer: 'En 1954.'
+          },
+          {
+            question: 'Le nucléaire est-il une énergie renouvelable ?',
+            answer: 'Non. Il est généralement classé comme une source d’énergie non renouvelable, mais bas-carbone pendant la production d’électricité.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Agence internationale de l’énergie atomique — History of the IAEA, chapitre sur l’énergie nucléaire',
+            url: 'https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1032_web.pdf'
+          },
+          {
+            title: 'Agence internationale de l’énergie atomique — Publications',
+            url: 'https://www.iaea.org/publications'
+          },
+          {
+            title: 'Our World in Data — Energy',
+            url: 'https://ourworldindata.org/energy'
+          }
+        ]
+      }
+    },
+    {
+      id: 'renouvelables-transition-energetique',
+      title: 'Renouvelables et transition énergétique : transformer les systèmes contemporains',
+      field: 'Fin du XXe siècle à aujourd’hui · Accélération récente, avec des rythmes et des choix différents selon les pays',
+      summary: 'Étudier la montée de l’éolien, du solaire, de l’hydraulique et d’autres filières bas-carbone, ainsi que les enjeux de réseau, de stockage, de matériaux, d’équité et de réduction des émissions.',
+      lesson: {
+        sections: [
+          'Les énergies renouvelables regroupent plusieurs filières dont les ressources se reconstituent naturellement à l’échelle humaine : énergie solaire, vent, eau, géothermie et biomasse durablement gérée. Elles ne sont pas interchangeables. L’hydraulique dépend des sites et des régimes hydrologiques ; l’éolien et le solaire photovoltaïque varient avec les conditions météorologiques et le cycle jour-nuit ; la géothermie dépend de ressources géologiques ; la biomasse nécessite des matières organiques et une gestion soutenable. Leurs impacts sur les écosystèmes, les sols, l’eau et les matériaux varient selon les technologies et les lieux.',
+          'La baisse des coûts de certaines technologies, les progrès de fabrication, les politiques publiques et les préoccupations climatiques ont accéléré le déploiement de l’éolien et du solaire. Selon l’Agence internationale pour les énergies renouvelables, en 2024, 91 % de la capacité renouvelable à grande échelle nouvellement mise en service dans son analyse produisait de l’électricité à un coût actualisé inférieur à celui de l’option fossile neuve la moins coûteuse dans le marché considéré. Ce chiffre concerne les projets étudiés et une comparaison de coûts de production ; il ne signifie pas que chaque projet renouvelable est moins cher dans toutes les situations ni que le coût total du système électrique est identique partout.',
+          'Une transition énergétique ne consiste pas uniquement à installer de nouveaux moyens de production. Elle demande aussi des réseaux adaptés, des interconnexions, des moyens de flexibilité et, selon les besoins, du stockage, de la gestion de la demande et des sources pilotables. La fabrication des équipements mobilise des matériaux, des chaînes d’approvisionnement, de l’énergie et des infrastructures. Les politiques de transition doivent aussi prendre en compte l’accès à l’énergie, le prix payé par les ménages, les emplois, les territoires et la sécurité d’approvisionnement.',
+          'Les combustibles fossiles restent très présents dans l’approvisionnement énergétique mondial. Remplacer progressivement leur usage exige de réduire les émissions, d’améliorer l’efficacité énergétique et de développer des solutions adaptées aux transports, aux bâtiments, à l’industrie et à la production électrique. Les rythmes de transition sont différents selon les régions et les secteurs ; il est donc plus exact de parler d’une transformation en cours que d’un remplacement déjà achevé des anciennes sources.'
+        ],
+        example: {
+          statement: 'Une région produit beaucoup d’électricité solaire à midi, mais sa demande est élevée le soir. Pourquoi l’installation de panneaux ne suffit-elle pas à résoudre seule le problème ?',
+          calculation: 'La production solaire dépend de l’ensoleillement et diminue après le coucher du soleil. Il faut équilibrer à chaque instant la production et la consommation à l’aide d’un ensemble de moyens : réseau, stockage, flexibilité de la demande ou autres moyens de production.',
+          answer: 'Parce que la production solaire varie au cours de la journée. L’intégration nécessite une combinaison de réseaux, de flexibilité, de stockage éventuel et d’autres moyens de production adaptés au système local.'
+        },
+        exercise: {
+          question: 'Pourquoi le coût d’un panneau solaire ne suffit-il pas à évaluer le coût de toute la transition électrique ?',
+          answer: 'Il faut aussi considérer l’installation, le raccordement, le réseau, la flexibilité, le stockage éventuel, la maintenance et les caractéristiques du système électrique concerné.'
+        },
+        exercises: [
+          {
+            question: 'Citez trois sources d’énergie renouvelable.',
+            answer: 'Le solaire, l’éolien et l’hydraulique, par exemple.'
+          },
+          {
+            question: 'Pourquoi la production éolienne et solaire nécessite-t-elle une gestion du système électrique ?',
+            answer: 'Parce qu’elle varie selon le vent, l’ensoleillement et l’heure, alors que l’équilibre entre production et consommation doit être maintenu.'
+          },
+          {
+            question: 'Que signifie le coût actualisé de l’électricité (LCOE) ?',
+            answer: 'C’est un indicateur qui rapporte les coûts actualisés d’un moyen de production à l’électricité qu’il produit sur sa durée de vie ; il ne décrit pas à lui seul tous les coûts du système électrique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IRENA — Renewable Power Generation Costs in 2024',
+            url: 'https://www.irena.org/Publications/2025/Jun/Renewable-Power-Generation-Costs-in-2024'
+          },
+          {
+            title: 'Our World in Data — Energy Production and Consumption',
+            url: 'https://ourworldindata.org/energy-production-consumption'
+          },
+          {
+            title: 'Our World in Data — Energy',
+            url: 'https://ourworldindata.org/energy'
+          },
+          {
+            title: 'International Energy Agency — History of the IEA',
+            url: 'https://www.iea.org/about/mission/history-of-the-iea'
+          },
+          {
+            title: 'Vaclav Smil — Energy and Civilization: A History, MIT Press',
+            url: 'https://mitpress.mit.edu/9780262035774/energy-and-civilization/'
+          }
+        ]
+      }
+    }
+  ]
+},
 ]
 
 
