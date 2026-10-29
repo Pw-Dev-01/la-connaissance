@@ -18,10 +18,31 @@
     <script src="portal.js?v=3" defer></script>
   </head>  <body>
     <header class="masthead">
-      <a class="brand" href="index.html" aria-label="La connaissance, accueil">
-        <span class="brand-mark" aria-hidden="true">K</span>
-        <span>LA CONNAISSANCE</span>
-      </a>  <nav class="top-navigation" aria-label="Navigation principale">
+      <a class="brand" 
+<button
+  class="header-search-toggle"
+  type="button"
+  aria-label="Ouvrir la recherche"
+  onclick="document.getElementById('portal-search-input').focus(); document.getElementById('portal-search-input').scrollIntoView({behavior:'smooth', block:'center'});"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="25"
+    height="25"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <circle cx="10.8" cy="10.8" r="6.8"></circle>
+    <path d="m16 16 4.5 4.5"></path>
+  </svg>
+</button>
+
+ class="top-navigation" aria-label="Navigation principale">
     <a href="#cours">Explorer</a>
     <a href="#suite">À venir</a>
   </nav>
