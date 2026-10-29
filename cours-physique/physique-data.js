@@ -6319,5 +6319,310 @@
     ]
   },
 
+{
+  id: 'astrophysique-trou-noir',
+  title: 'Astrophysique des trous noirs',
+  note: 'Comprendre la formation, la géométrie relativiste, les observations et l’évolution des trous noirs à partir de modèles physiques et de résultats astronomiques établis.',
+  chapters: [
+    {
+      id: 'nature-et-horizon',
+      title: 'Nature des trous noirs et horizon des événements',
+      field: 'Relativité générale · fondamentaux',
+      summary: 'Définition physique, horizon, rayon de Schwarzschild et limites du modèle classique.',
+      lesson: {
+        sections: [
+          'Un trou noir est une région de l’espace-temps dont l’horizon des événements délimite une frontière causale : une fois cette frontière franchie vers l’intérieur, aucun signal futur ne peut rejoindre un observateur extérieur. Ce n’est pas un trou matériel dans l’espace ni un aspirateur cosmique. À distance suffisamment grande, le champ gravitationnel extérieur d’un trou noir non chargé et non rotatif est décrit par la même solution relativiste que celui de tout objet sphérique de même masse ; les différences majeures apparaissent à proximité de l’horizon et dans la manière dont la matière est distribuée.',
+          'Pour un trou noir idéal, isolé, non chargé et non rotatif, le rayon de Schwarzschild définit le rayon de l’horizon : il est proportionnel à la masse. Ce rayon ne représente pas une surface solide, mais une frontière géométrique de l’espace-temps. La formule simple de Schwarzschild ne décrit pas à elle seule les trous noirs en rotation, qui sont mieux modélisés par la solution de Kerr. Les trous noirs astrophysiques sont généralement étudiés dans le cadre de la relativité générale classique ; leur description complète à l’échelle quantique demeure une question ouverte.',
+          'La singularité prédite par les solutions classiques signale que la description mathématique atteint une limite, avec des grandeurs de courbure qui deviennent divergentes dans le modèle idéal. Il ne faut pas en conclure que la physique de l’intérieur est entièrement connue : une théorie cohérente de gravitation quantique serait nécessaire pour établir ce qui remplace éventuellement cette description. Les observations astronomiques renseignent surtout sur la masse, la rotation et l’environnement extérieur du trou noir, et non directement sur l’intérieur de l’horizon.'
+        ],
+        formula: {
+          label: 'RAYON DE SCHWARZSCHILD',
+          text: 'rₛ = 2GM / c²'
+        },
+        example: {
+          statement: 'Estimer le rayon de Schwarzschild d’un trou noir non rotatif de masse égale à 10 masses solaires, avec M☉ ≈ 1,989 × 10³⁰ kg, G ≈ 6,674 × 10⁻¹¹ m³·kg⁻¹·s⁻² et c ≈ 2,998 × 10⁸ m·s⁻¹.',
+          calculation: 'rₛ = 2 × G × (10 × M☉) / c².',
+          answer: 'rₛ ≈ 2,95 × 10⁴ m, soit environ 29,5 km. C’est le rayon de l’horizon dans le modèle de Schwarzschild, pas le diamètre.'
+        },
+        exercise: {
+          question: 'Si la masse d’un trou noir de Schwarzschild est multipliée par 3, par quel facteur son rayon de Schwarzschild est-il multiplié ?',
+          answer: 'Par 3, car rₛ est directement proportionnel à M.'
+        },
+        equationDetails: [
+          {
+            title: 'Rayon de Schwarzschild',
+            formula: 'rₛ = 2GM / c²',
+            explanation: 'Cette relation donne le rayon de l’horizon d’un trou noir idéal, sphérique, non rotatif et non chargé. Elle provient de la solution de Schwarzschild de la relativité générale et ne doit pas être appliquée sans précaution à un trou noir en rotation.',
+            parameters: 'rₛ : rayon de Schwarzschild (m) ; G : constante gravitationnelle (m³·kg⁻¹·s⁻²) ; M : masse (kg) ; c : vitesse de la lumière dans le vide (m·s⁻¹).',
+            example: 'Pour M = 10 M☉, rₛ ≈ 2,95 km × 10.',
+            result: 'rₛ ≈ 29,5 km.'
+          },
+          {
+            title: 'Vitesse de la lumière et causalité de l’horizon',
+            formula: 'c ≈ 2,998 × 10⁸ m·s⁻¹',
+            explanation: 'La constante c fixe la vitesse locale de propagation de la lumière dans le vide. L’horizon n’est pas défini comme une simple surface où une fusée devrait atteindre une vitesse de libération égale à c ; cette image newtonienne peut servir d’intuition, mais la définition rigoureuse est relativiste et causale.',
+            parameters: 'c : vitesse de la lumière dans le vide (m·s⁻¹).',
+            example: 'Le rayon de Schwarzschild est calculé à partir de G, M et c, avec des unités cohérentes.',
+            result: 'La formule fournit une longueur caractéristique, et non une vitesse de fuite mesurée localement à l’horizon.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 24.6 Evidence for Black Holes', url: 'https://openstax.org/books/astronomy-2e/pages/24-6-evidence-for-black-holes' },
+          { title: 'NASA Science — Black Holes', url: 'https://science.nasa.gov/universe/black-holes/' },
+          { title: 'NASA Science — Anatomy of a Black Hole', url: 'https://science.nasa.gov/universe/black-holes/anatomy/' }
+        ]
+      }
+    },
+    {
+      id: 'formation-et-populations',
+      title: 'Formation et populations de trous noirs',
+      field: 'Évolution stellaire · astrophysique galactique',
+      summary: 'Effondrement d’étoiles massives, systèmes binaires et trous noirs supermassifs.',
+      lesson: {
+        sections: [
+          'Les trous noirs de masse stellaire peuvent se former lorsque le cœur d’une étoile suffisamment massive ne peut plus être soutenu contre la gravité à la fin de son évolution. Le résultat dépend de la masse initiale, de la perte de matière par les vents stellaires, de la composition chimique et des épisodes éventuels de transfert de masse ou de fusion. Il n’existe donc pas une masse initiale unique qui garantisse dans tous les cas la formation d’un trou noir : les détails de l’évolution stellaire comptent.',
+          'Dans un système binaire, un trou noir peut être détecté indirectement si la matière d’une étoile compagnon est transférée vers lui. Le gaz peut former un disque d’accrétion chauffé par les contraintes, la turbulence et les processus dissipatifs ; ce plasma rayonne notamment en rayons X dans les systèmes suffisamment énergétiques. Les mouvements orbitaux du compagnon peuvent également révéler la présence d’un objet compact invisible et permettre d’estimer sa masse. Il faut cependant analyser le système entier pour distinguer un trou noir d’autres objets compacts possibles.',
+          'Les trous noirs supermassifs, dont la masse atteint des millions à des milliards de masses solaires, se trouvent au centre de nombreuses galaxies. Leur origine initiale et les voies par lesquelles ils ont grandi font encore l’objet de recherches : les scénarios étudiés incluent des graines issues des premières étoiles, l’effondrement direct de nuages de gaz et des épisodes de croissance par accrétion et fusions. Les trous noirs de masse intermédiaire constituent aussi un domaine de recherche actif ; leur population est plus difficile à établir de manière complète que celle des trous noirs stellaires ou supermassifs.'
+        ],
+        formula: {
+          label: 'MASSE ET MASSE SOLAIRE',
+          text: 'M = (M / M☉) × M☉'
+        },
+        example: {
+          statement: 'Un objet compact a une masse estimée à 8 masses solaires. Exprimer cette masse en kilogrammes avec M☉ ≈ 1,989 × 10³⁰ kg.',
+          calculation: 'M = 8 × 1,989 × 10³⁰ kg.',
+          answer: 'M ≈ 1,59 × 10³¹ kg. Cette conversion ne suffit pas à elle seule à prouver que l’objet est un trou noir : les observations du système sont nécessaires.'
+        },
+        exercise: {
+          question: 'Citer deux indices observationnels permettant de soupçonner la présence d’un trou noir dans un système binaire.',
+          answer: 'Par exemple, l’orbite d’un compagnon autour d’un objet invisible très massif et le rayonnement du gaz chauffé dans un disque d’accrétion.'
+        },
+        equationDetails: [
+          {
+            title: 'Conversion en masse solaire',
+            formula: 'M(kg) = (M / M☉) × 1,989 × 10³⁰ kg',
+            explanation: 'La masse solaire est une unité pratique pour comparer les masses d’étoiles et de trous noirs. La valeur numérique utilisée ici est une approximation suffisante pour un exercice pédagogique.',
+            parameters: 'M : masse de l’objet (kg) ; M☉ : masse solaire, environ 1,989 × 10³⁰ kg.',
+            example: 'Pour un objet de 8 M☉ : M ≈ 8 × 1,989 × 10³⁰ kg.',
+            result: 'M ≈ 1,59 × 10³¹ kg.'
+          },
+          {
+            title: 'Loi de Kepler comme outil d’estimation orbitale',
+            formula: 'P² = 4π²a³ / [G(M₁ + M₂)]',
+            explanation: 'Dans l’approximation newtonienne d’un système binaire lié, cette relation relie la période orbitale P, le demi-grand axe relatif a et la somme des masses. Elle aide à estimer la masse totale si l’orbite est suffisamment contrainte par les observations ; elle ne prouve pas seule la nature de l’objet compact.',
+            parameters: 'P : période orbitale (s) ; a : demi-grand axe relatif (m) ; G : constante gravitationnelle ; M₁ et M₂ : masses des deux corps (kg).',
+            example: 'Une période et une échelle orbitale mesurées permettent d’estimer M₁ + M₂ sous les hypothèses du modèle.',
+            result: 'La masse déduite doit être confrontée aux autres indices du système.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 23.5 The Evolution of Massive Stars', url: 'https://openstax.org/books/astronomy-2e/pages/23-2-evolution-of-massive-stars-an-explosive-finish' },
+          { title: 'OpenStax Astronomy 2e — 24.6 Evidence for Black Holes', url: 'https://openstax.org/books/astronomy-2e/pages/24-6-evidence-for-black-holes' },
+          { title: 'NASA Science — Black Holes', url: 'https://science.nasa.gov/universe/black-holes/' }
+        ]
+      }
+    },
+    {
+      id: 'relativite-et-geometrie',
+      title: 'Relativité générale et géométrie autour d’un trou noir',
+      field: 'Relativité générale · gravitation forte',
+      summary: 'Espace-temps courbe, décalage gravitationnel, orbites et effets de la rotation.',
+      lesson: {
+        sections: [
+          'En relativité générale, la gravitation est décrite par la géométrie de l’espace-temps liée à la distribution d’énergie et de quantité de mouvement. Près d’un trou noir, cette géométrie influence les trajectoires des corps et des rayons lumineux. Les orbites ne se comprennent donc pas seulement comme des mouvements sous l’effet d’une force newtonienne ; les prédictions relativistes deviennent particulièrement importantes lorsque la trajectoire passe dans une région où le champ gravitationnel est très intense.',
+          'La lumière qui s’éloigne d’une région de champ gravitationnel fort peut être observée avec une fréquence plus faible, phénomène appelé décalage gravitationnel vers le rouge. Les photons suivent les géodésiques de l’espace-temps et leur trajectoire peut être fortement courbée : cette lentille gravitationnelle déforme l’image du disque d’accrétion et contribue à l’ombre observée. L’apparence réelle dépend de la masse, de la rotation, de l’orientation de l’observateur, des propriétés du plasma et de la fréquence d’observation.',
+          'Un trou noir en rotation est décrit, dans le modèle idéal isolé, par la métrique de Kerr. La rotation entraîne l’effet d’entraînement des référentiels, appelé effet Lense-Thirring dans le régime approprié, et définit une région extérieure à l’horizon nommée ergosphère où un observateur ne peut rester immobile par rapport aux étoiles lointaines. Il ne faut pas confondre l’ergosphère avec l’horizon. Les effets détaillés de la rotation sont importants pour comprendre les disques internes, l’énergie disponible et certains modèles de lancement de jets relativistes.'
+        ],
+        formula: {
+          label: 'DÉCALAGE GRAVITATIONNEL — CAS IDÉAL',
+          text: 'f∞ = fₑ × √(1 − rₛ / rₑ)'
+        },
+        example: {
+          statement: 'Dans le modèle de Schwarzschild, un émetteur immobile à rₑ = 4rₛ envoie un signal vers un observateur très éloigné. Calculer le rapport f∞ / fₑ.',
+          calculation: 'f∞ / fₑ = √(1 − rₛ / 4rₛ) = √(3/4).',
+          answer: 'f∞ / fₑ ≈ 0,866. La fréquence reçue est plus faible que la fréquence émise. L’émetteur immobile est ici supposé maintenu à rayon constant dans le champ extérieur.'
+        },
+        exercise: {
+          question: 'Pourquoi l’image d’un trou noir peut-elle montrer un anneau lumineux alors que le trou noir lui-même n’émet pas de lumière ?',
+          answer: 'L’anneau provient du rayonnement de la matière chaude environnante, dont la lumière est déviée par la gravité ; l’image révèle une région sombre appelée ombre, pas une photographie lumineuse de l’intérieur de l’horizon.'
+        },
+        equationDetails: [
+          {
+            title: 'Décalage gravitationnel de fréquence',
+            formula: 'f∞ = fₑ × √(1 − rₛ / rₑ)',
+            explanation: 'Cette expression s’applique à un émetteur immobile à rayon rₑ dans l’extérieur d’un trou noir de Schwarzschild et à un observateur situé très loin. Elle n’est pas une formule générale pour toute géométrie ou tout mouvement d’émetteur.',
+            parameters: 'f∞ : fréquence reçue à l’infini (Hz) ; fₑ : fréquence locale émise (Hz) ; rₛ : rayon de Schwarzschild (m) ; rₑ : rayon de l’émetteur (m).',
+            example: 'À rₑ = 4rₛ, le rapport des fréquences est √(3/4).',
+            result: 'f∞ ≈ 0,866 fₑ.'
+          },
+          {
+            title: 'Limite newtonienne et régime relativiste',
+            formula: 'rₛ / r ≪ 1 : champ faible',
+            explanation: 'Lorsque l’observateur se trouve à une distance très grande devant le rayon de Schwarzschild, les corrections relativistes sont faibles et certaines approximations newtoniennes sont utiles. À proximité de l’horizon, cette condition n’est plus satisfaite ; une description relativiste est alors indispensable.',
+            parameters: 'rₛ : rayon de Schwarzschild ; r : distance radiale dans les coordonnées de Schwarzschild.',
+            example: 'Pour r = 100rₛ, le rapport rₛ/r vaut 0,01 ; cela indique un régime plus faible que près de l’horizon, sans signifier que toutes les corrections sont nulles.',
+            result: 'La validité d’une approximation dépend de la précision requise et de la grandeur étudiée.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 24.5 Black Holes and Curved Spacetime', url: 'https://openstax.org/books/astronomy-2e/pages/24-5-black-holes' },
+          { title: 'NASA Science — Anatomy of a Black Hole', url: 'https://science.nasa.gov/universe/black-holes/anatomy/' },
+          { title: 'NASA — What Is a Black Hole? Grades 5–8', url: 'https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-a-black-hole-grades-5-8/' }
+        ]
+      }
+    },
+    {
+      id: 'accretion-disques-jets',
+      title: 'Accrétion, disques et jets relativistes',
+      field: 'Astrophysique des hautes énergies · plasma',
+      summary: 'Chauffage du gaz, rayonnement multi-longueurs d’onde et production possible de jets.',
+      lesson: {
+        sections: [
+          'Un trou noir isolé ne se manifeste pas nécessairement par un rayonnement détectable. Lorsque du gaz s’approche avec une quantité de mouvement angulaire suffisante, il peut former un disque d’accrétion. Les collisions, les contraintes visqueuses effectives et les instabilités magnétohydrodynamiques redistribuent le moment cinétique et permettent à une partie de la matière de se rapprocher du centre. L’énergie gravitationnelle libérée chauffe le plasma, qui peut rayonner dans plusieurs domaines du spectre électromagnétique.',
+          'La luminosité d’un système d’accrétion dépend notamment du débit de matière, du rendement radiatif, de la géométrie du flot et de l’état du plasma. Les rayons X peuvent provenir de régions très chaudes, comme une couronne au-dessus du disque, tandis que les régions plus froides contribuent davantage à d’autres bandes spectrales. Il n’existe pas un seul modèle d’accrétion valable pour toutes les sources : les disques minces, les écoulements épais et les régimes radiativement inefficaces décrivent des conditions différentes.',
+          'Certains systèmes associés à des trous noirs produisent des jets collimatés de plasma qui se propagent à des vitesses relativistes. Les champs magnétiques et la rotation du disque et/ou du trou noir sont au cœur des modèles physiques qui cherchent à expliquer leur lancement et leur collimation. Un jet n’est pas présent de façon observable dans chaque trou noir, et le mécanisme dominant peut dépendre de la source. Les jets de la galaxie M87, par exemple, sont étudiés à différentes échelles, depuis les observations radio proches du trou noir jusqu’aux structures étendues.'
+        ],
+        formula: {
+          label: 'LUMINOSITÉ D’ACCRÉTION — MODÈLE SIMPLE',
+          text: 'L = η Ṁ c²'
+        },
+        example: {
+          statement: 'Un modèle d’accrétion a un débit de masse Ṁ = 1,0 × 10¹⁴ kg·s⁻¹ et un rendement radiatif supposé η = 0,1. Estimer la luminosité idéale avec c ≈ 3,0 × 10⁸ m·s⁻¹.',
+          calculation: 'L = 0,1 × 1,0 × 10¹⁴ × (3,0 × 10⁸)².',
+          answer: 'L ≈ 9,0 × 10²⁹ W dans ce modèle simplifié. Le rendement de 0,1 est une hypothèse de calcul, pas une valeur universelle pour tous les trous noirs.'
+        },
+        exercise: {
+          question: 'Pourquoi un système contenant un trou noir peut-il être brillant, alors que le trou noir lui-même n’émet pas de lumière observable depuis l’extérieur de l’horizon ?',
+          answer: 'Le gaz qui s’échauffe en s’accrétant rayonne avant de franchir l’horizon ; c’est ce rayonnement environnant que les télescopes détectent.'
+        },
+        equationDetails: [
+          {
+            title: 'Conversion d’énergie d’accrétion en luminosité',
+            formula: 'L = η Ṁ c²',
+            explanation: 'Cette relation exprime un modèle énergétique simple : une fraction η de l’énergie de masse apportée par unité de temps est convertie en rayonnement. Le rendement dépend du régime d’accrétion et des propriétés du système ; la formule ne signifie pas que toute la matière incidente est rayonnée.',
+            parameters: 'L : luminosité (W) ; η : rendement radiatif sans unité ; Ṁ : débit de masse (kg·s⁻¹) ; c : vitesse de la lumière (m·s⁻¹).',
+            example: 'Pour η = 0,1 et Ṁ = 1,0 × 10¹⁴ kg·s⁻¹, L = 0,1 × 1,0 × 10¹⁴ × 9,0 × 10¹⁶.',
+            result: 'L ≈ 9,0 × 10²⁹ W.'
+          },
+          {
+            title: 'Limite d’Eddington',
+            formula: 'L_Edd ≈ 1,26 × 10³¹ × (M / M☉) W',
+            explanation: 'Pour une source sphérique ionisée dominée par la diffusion Thomson, cette échelle estime la luminosité à laquelle la pression de radiation sur le gaz équilibre la gravité. Les hypothèses sont idéalisées ; les géométries non sphériques et les régimes d’accrétion complexes peuvent s’en écarter.',
+            parameters: 'L_Edd : luminosité d’Eddington approximative (W) ; M : masse de l’objet ; M☉ : masse solaire.',
+            example: 'Pour M = 10 M☉, L_Edd ≈ 1,26 × 10³² W.',
+            result: 'La valeur est une échelle physique de référence, pas une limite absolue universelle de toutes les sources observées.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 24.6 Evidence for Black Holes', url: 'https://openstax.org/books/astronomy-2e/pages/24-6-evidence-for-black-holes' },
+          { title: 'NASA Science — Anatomy of a Black Hole', url: 'https://science.nasa.gov/universe/black-holes/anatomy/' },
+          { title: 'Event Horizon Telescope — FAQ', url: 'https://eventhorizontelescope.org/faq' },
+          { title: 'NASA — The Giant Galaxy Around the Giant Black Hole', url: 'https://www.nasa.gov/missions/spitzer/the-giant-galaxy-around-the-giant-black-hole/' }
+        ]
+      }
+    },
+    {
+      id: 'observation-et-preuves',
+      title: 'Observation, ombre et preuves astrophysiques',
+      field: 'Astronomie observationnelle · interférométrie',
+      summary: 'Détection indirecte, orbites stellaires, rayons X, lentille gravitationnelle et EHT.',
+      lesson: {
+        sections: [
+          'Comme aucun signal lumineux ne sort de l’intérieur de l’horizon, les astronomes recherchent les effets du trou noir sur son environnement. Les méthodes incluent l’étude des orbites d’étoiles, la mesure des vitesses de gaz, l’analyse des rayons X d’un système binaire, la détection d’ondes gravitationnelles émises par des objets compacts en fusion et l’observation de la déviation de la lumière. La conclusion dépend d’un ensemble cohérent d’indices et de la capacité à exclure d’autres configurations astrophysiques.',
+          'L’Event Horizon Telescope est un réseau mondial de radiotélescopes qui utilise l’interférométrie à très longue base pour obtenir une résolution angulaire comparable à celle d’un télescope de la taille de la Terre. En avril 2019, la collaboration a publié l’image de la région entourant M87*, puis en mai 2022 celle de Sagittarius A*, le trou noir supermassif au centre de la Voie lactée. Ces images ne sont pas des photographies de l’intérieur de l’horizon : elles reconstruisent l’émission radio autour du trou noir et rendent visible une structure sombre appelée ombre.',
+          'L’image reconstruite dépend des données interférométriques, des méthodes de reconstruction et de contrôles indépendants. L’anneau lumineux résulte du plasma chaud et de la propagation de la lumière dans un espace-temps fortement courbé ; la région sombre centrale est associée à l’ombre du trou noir. La masse de Sagittarius A* est d’environ quatre millions de masses solaires, tandis que M87* a une masse d’environ 6,5 milliards de masses solaires selon les analyses associées à l’image initiale. Les valeurs sont des estimations astrophysiques et doivent être citées avec leur contexte de mesure.'
+        ],
+        formula: {
+          label: 'RÉSOLUTION ANGULAIRE — ESTIMATION',
+          text: 'θ ≈ λ / B'
+        },
+        example: {
+          statement: 'Pour une observation interférométrique, prendre une longueur d’onde λ = 1,3 mm et une base B = 10 000 km. Estimer l’échelle angulaire λ/B en radians.',
+          calculation: 'θ ≈ 1,3 × 10⁻³ m / 1,0 × 10⁷ m.',
+          answer: 'θ ≈ 1,3 × 10⁻¹⁰ rad, soit environ 27 microsecondes d’arc. C’est une estimation idéale de l’échelle de résolution, pas une description complète de la résolution réelle d’un réseau.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre l’horizon des événements et l’ombre visible sur une image EHT ?',
+          answer: 'L’horizon est la frontière causale du trou noir ; l’ombre est une région apparente sombre créée par la capture de lumière et la déviation relativiste des rayons, observée sur le fond lumineux environnant.'
+        },
+        equationDetails: [
+          {
+            title: 'Résolution d’un interféromètre',
+            formula: 'θ ≈ λ / B',
+            explanation: 'Cette relation donne l’ordre de grandeur de la résolution angulaire idéale d’un interféromètre, avec une longueur d’onde λ et une base maximale B. La couverture des lignes de base, le bruit, l’atmosphère et la reconstruction influencent la qualité de l’image finale.',
+            parameters: 'θ : angle en radians ; λ : longueur d’onde (m) ; B : longueur de base (m).',
+            example: 'Avec λ = 1,3 × 10⁻³ m et B = 1,0 × 10⁷ m, θ ≈ 1,3 × 10⁻¹⁰ rad.',
+            result: 'L’échelle correspond à environ 27 microsecondes d’arc.'
+          },
+          {
+            title: 'Conversion d’angle',
+            formula: '1 rad ≈ 206 265 secondes d’arc',
+            explanation: 'Cette conversion permet de comparer les estimations en radians aux unités angulaires usuelles en astronomie. Une microseconde d’arc vaut 10⁻⁶ seconde d’arc.',
+            parameters: 'Angle : grandeur sans dimension ; radian et seconde d’arc sont deux unités d’angle.',
+            example: '1,3 × 10⁻¹⁰ rad × 206 265 × 10⁶ ≈ 26,8 microsecondes d’arc.',
+            result: 'La valeur arrondie est d’environ 27 microsecondes d’arc.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 24.6 Evidence for Black Holes', url: 'https://openstax.org/books/astronomy-2e/pages/24-6-evidence-for-black-holes' },
+          { title: 'Event Horizon Telescope — FAQ', url: 'https://eventhorizontelescope.org/faq' },
+          { title: 'National Science Foundation — Event Horizon Telescope', url: 'https://www.nsf.gov/news/media-toolkits/event-horizon-telescope' },
+          { title: 'NASA Science — First Image of a Black Hole', url: 'https://science.nasa.gov/resource/first-image-of-a-black-hole/' }
+        ]
+      }
+    },
+    {
+      id: 'fusions-ondes-et-evolution',
+      title: 'Fusions, ondes gravitationnelles et évolution',
+      field: 'Astrophysique relativiste · ondes gravitationnelles',
+      summary: 'Binaires compactes, signaux gravitationnels, croissance et questions ouvertes.',
+      lesson: {
+        sections: [
+          'Deux trous noirs liés dans un système binaire perdent de l’énergie orbitale en émettant des ondes gravitationnelles. La séparation diminue, la fréquence du signal augmente et le système traverse une phase d’inspiral avant la fusion, suivie d’une phase transitoire et de l’établissement d’un trou noir final qui se stabilise par émission de modes quasi normaux. La forme du signal mesuré contient des informations sur les masses, les spins et la distance, mais l’inférence exige des modèles théoriques et une analyse statistique des données.',
+          'Les détecteurs terrestres comme LIGO et Virgo mesurent de minuscules variations relatives de longueur produites par le passage d’une onde gravitationnelle. La première détection directe d’ondes gravitationnelles, annoncée en 2016 à partir d’un signal enregistré en septembre 2015, provenait de la fusion de deux trous noirs. Les observations ultérieures ont ouvert une nouvelle voie pour étudier les populations de trous noirs, tester la relativité générale dans des régimes extrêmes et comparer les résultats avec les observations électromagnétiques lorsque celles-ci existent.',
+          'Les trous noirs peuvent croître par accrétion et par fusion avec d’autres trous noirs ou objets compacts. La masse finale d’une fusion n’est généralement pas exactement la somme des masses initiales, car une partie de l’énergie est rayonnée sous forme d’ondes gravitationnelles. Plusieurs aspects restent des questions actives : la formation des trous noirs supermassifs très tôt dans l’histoire cosmique, la fréquence des trous noirs de masse intermédiaire, la physique du plasma dans les régions proches de l’horizon et l’articulation entre relativité générale et physique quantique.'
+        ],
+        formula: {
+          label: 'FRÉQUENCE ORBITALE ET FRÉQUENCE DOMINANTE',
+          text: 'f_GW ≈ 2 f_orbite'
+        },
+        example: {
+          statement: 'Dans l’approximation d’une binaire circulaire, si la fréquence orbitale est de 40 Hz, estimer la fréquence dominante des ondes gravitationnelles.',
+          calculation: 'f_GW ≈ 2 × 40 Hz.',
+          answer: 'f_GW ≈ 80 Hz. Cette relation décrit le mode dominant d’une binaire quasi circulaire ; des configurations plus complexes peuvent produire un spectre plus riche.'
+        },
+        exercise: {
+          question: 'Pourquoi la masse du trou noir final d’une fusion peut-elle être inférieure à la somme des masses initiales ?',
+          answer: 'Une partie de l’énergie totale est emportée par les ondes gravitationnelles ; par équivalence masse-énergie, cela réduit la masse finale du système lié.'
+        },
+        equationDetails: [
+          {
+            title: 'Fréquence gravitationnelle dominante d’une binaire circulaire',
+            formula: 'f_GW ≈ 2 f_orbite',
+            explanation: 'Pour le mode quadrupolaire dominant d’une binaire quasi circulaire, la fréquence de l’onde est approximativement le double de la fréquence orbitale. La relation est un raccourci pédagogique ; l’analyse d’un signal réel tient compte de l’évolution de la fréquence, des spins et des corrections relativistes.',
+            parameters: 'f_GW : fréquence gravitationnelle dominante (Hz) ; f_orbite : fréquence orbitale (Hz).',
+            example: 'Pour f_orbite = 40 Hz, f_GW ≈ 80 Hz.',
+            result: 'La fréquence dominante estimée est 80 Hz.'
+          },
+          {
+            title: 'Équivalence masse-énergie',
+            formula: 'E = mc²',
+            explanation: 'La masse et l’énergie sont liées. Lors d’une fusion, l’énergie emportée par les ondes gravitationnelles contribue au bilan énergétique et correspond à une différence entre la somme des masses initiales et la masse du résidu final, en tenant compte de l’énergie du système et des conventions de mesure.',
+            parameters: 'E : énergie (J) ; m : masse équivalente (kg) ; c : vitesse de la lumière (m·s⁻¹).',
+            example: 'Si une énergie E est rayonnée, l’équivalent masse correspondant est Δm = E / c².',
+            result: 'La masse finale n’est pas obligatoirement égale à la somme des masses initiales.'
+          }
+        ],
+        sources: [
+          { title: 'LIGO Caltech — Gravitational Waves', url: 'https://www.ligo.caltech.edu/MIT/page/what-are-gw' },
+          { title: 'LIGO Caltech — GW150914', url: 'https://www.ligo.caltech.edu/MIT/page/first-detection-gravitational-waves' },
+          { title: 'NASA Science — Black Holes', url: 'https://science.nasa.gov/universe/black-holes/' },
+          { title: 'OpenStax Astronomy 2e — 24.6 Evidence for Black Holes', url: 'https://openstax.org/books/astronomy-2e/pages/24-6-evidence-for-black-holes' }
+        ]
+      }
+    }
+  ]
+},
+
 
 ];
