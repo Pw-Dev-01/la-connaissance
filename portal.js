@@ -633,6 +633,9 @@ function initialiseGlobalSearch() {
   });
 }
 
+/* =========================================================
+   11. PANNEAU LOUPE
+   ========================================================= */
 
 (() => {
   const toggle = document.getElementById("header-search-toggle");
@@ -652,6 +655,8 @@ function initialiseGlobalSearch() {
 
     input.focus();
   }
+
+
 
   function closeSearch() {
     panel.classList.remove("is-open");
