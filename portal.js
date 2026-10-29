@@ -359,7 +359,83 @@ async function initialiseMobileChapters() {
 
 
 /* =========================================================
-   9. LANCEMENT
+   9. MOTEUR DE RECHERCHE TRANSVERSAL
+   ========================================================= */
+
+function normalizeSearchText(value) {
+  return String(value ?? "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+async function searchAllCourses(query) {
+  const terms = normalizeSearchText(query)
+    .split(/\s+/)
+    .filter(Boolean);
+
+  if (!terms.length) return [];
+
+  const results = [];
+
+  // Parcourir toutes les disciplines déclarées en section 3.
+  for (const [disciplineId, config] of Object.entries(disciplines)) {
+    try {
+      const catalog = await loadDisciplineData(config.file);
+      const branches = getBranches(catalog);
+
+      for (const branch of branches) {
+        for (const chapter of branch.chapters ?? []) {
+          const sections = chapter.lesson?.sections ?? [];
+
+          const searchableText = normalizeSearchText([
+            branch.id,
+            branch.title,
+            branch.note,
+            chapter.id,
+            chapter.title,
+            chapter.field,
+            chapter.summary,
+            ...sections
+          ].join(" "));
+
+          if (!terms.every(term => searchableText.includes(term))) {
+            continue;
+          }
+
+          results.push({
+            disciplineId,
+            branchId: branch.id,
+            branchTitle: branch.title,
+            chapterId: chapter.id,
+            chapterTitle: chapter.title,
+            url: getBranchUrl(branch, config),
+            score:
+              (normalizeSearchText(chapter.title)
+                .includes(normalizeSearchText(query)) ? 10 : 0) +
+              (normalizeSearchText(branch.title)
+                .includes(normalizeSearchText(query)) ? 5 : 0) +
+              (normalizeSearchText(chapter.summary)
+                .includes(normalizeSearchText(query)) ? 2 : 0)
+          });
+        }
+      }
+    } catch (error) {
+      console.error(
+        `Recherche impossible dans ${disciplineId} :`,
+        error
+      );
+    }
+  }
+
+  return results.sort((a, b) => b.score - a.score);
+}
+
+
+
+/* =========================================================
+   10. LANCEMENT
    ========================================================= */
 
 
