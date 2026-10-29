@@ -1,3 +1,4 @@
+
 ﻿<!doctype html>
 
 
@@ -85,6 +86,48 @@
         Des cours pour éclairer les idées, des disciplines qui se répondent,
         un espace qui grandit au fil des découvertes.
       </p>
+
+      <form id="portal-search" role="search">
+        <label for="portal-search-input">
+          Rechercher dans tous les cours
+        </label>
+
+        <div class="portal-search-row">
+          <input
+            id="portal-search-input"
+            type="search"
+            name="q"
+            placeholder="Ex. : Mésopotamie"
+            autocomplete="off"
+            aria-label="Rechercher un domaine ou un chapitre"
+            required
+          >
+
+          <button type="submit" aria-label="Lancer la recherche">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="10.8" cy="10.8" r="6.8"></circle>
+              <path d="m16 16 4.5 4.5"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div
+          id="portal-search-results"
+          aria-live="polite"
+          aria-atomic="true"
+        ></div>
+      </form>
 
 
       <a class="opening-link" href="#cours">
