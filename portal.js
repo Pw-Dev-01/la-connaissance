@@ -358,80 +358,134 @@ async function initialiseMobileChapters() {
 }
 
 
-/* =========================================================
-   9. MOTEUR DE RECHERCHE TRANSVERSAL
-   ========================================================= */
+// ---------------------------------------------------------------------------
+// 9) Recherche globale dans tous les cours
+// ---------------------------------------------------------------------------
 
 function normalizeSearchText(value) {
-  return String(value ?? "")
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
+  return String(value ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .trim();
 }
 
-async function searchAllCourses(query) {
-  const terms = normalizeSearchText(query)
-    .split(/\s+/)
-    .filter(Boolean);
+function getChapterSearchText(branch, chapter) {
+  const lesson = chapter.lesson || {};
 
-  if (!terms.length) return [];
+  const sections = Array.isArray(lesson.sections)
+    ? lesson.sections.join(' ')
+    : '';
+
+  const sources = Array.isArray(lesson.sources)
+    ? lesson.sources.map(source => source.title || '').join(' ')
+    : '';
+
+  const exercises = Array.isArray(lesson.exercises)
+    ? lesson.exercises.map(exercise =>
+        `${exercise.question || ''} ${exercise.answer || ''}`
+      ).join(' ')
+    : '';
+
+  const singleExercise = lesson.exercise
+    ? `${lesson.exercise.question || ''} ${lesson.exercise.answer || ''}`
+    : '';
+
+  const example = lesson.example
+    ? Object.values(lesson.example).join(' ')
+    : '';
+
+  return [
+    branch.title,
+    branch.note,
+    chapter.title,
+    chapter.field,
+    chapter.summary,
+    lesson.heading,
+    lesson.content,
+    sections,
+    sources,
+    exercises,
+    singleExercise,
+    example
+  ].filter(Boolean).join(' ');
+}
+
+async function searchAllCourses(query) {
+  const normalizedQuery = normalizeSearchText(query);
+
+  if (!normalizedQuery) return [];
 
   const results = [];
+  const configs = Object.entries(disciplines);
 
-  // Parcourir toutes les disciplines déclarées en section 3.
-  for (const [disciplineId, config] of Object.entries(disciplines)) {
+  for (const [disciplineId, config] of configs) {
     try {
       const catalog = await loadDisciplineData(config.file);
       const branches = getBranches(catalog);
 
       for (const branch of branches) {
-        for (const chapter of branch.chapters ?? []) {
-          const sections = chapter.lesson?.sections ?? [];
+        const chapters = Array.isArray(branch.chapters)
+          ? branch.chapters
+          : [];
 
-          const searchableText = normalizeSearchText([
-            branch.id,
-            branch.title,
-            branch.note,
-            chapter.id,
-            chapter.title,
-            chapter.field,
-            chapter.summary,
-            ...sections
-          ].join(" "));
+        // Recherche dans le titre et la note de la branche.
+        const branchText = normalizeSearchText(
+          `${branch.title || ''} ${branch.note || ''}`
+        );
 
-          if (!terms.every(term => searchableText.includes(term))) {
-            continue;
-          }
+        if (branchText.includes(normalizedQuery)) {
+          results.push({
+            disciplineId,
+            branchId: branch.id,
+            branchTitle: branch.title || 'Branche sans titre',
+            chapterId: null,
+            chapterTitle: '',
+            url: `./${config.folder}/${config.branchPage || 'index.html'}?branche=${encodeURIComponent(branch.id)}#${encodeURIComponent(branch.id)}`,
+            type: 'branch'
+          });
+        }
+
+        // Recherche dans chaque chapitre.
+        for (const chapter of chapters) {
+          if (!chapter || !chapter.id) continue;
+
+          const searchableText = normalizeSearchText(
+            getChapterSearchText(branch, chapter)
+          );
+
+          if (!searchableText.includes(normalizedQuery)) continue;
 
           results.push({
             disciplineId,
             branchId: branch.id,
-            branchTitle: branch.title,
+            branchTitle: branch.title || 'Branche sans titre',
             chapterId: chapter.id,
-            chapterTitle: chapter.title,
-            url: getBranchUrl(branch, config),
-            score:
-              (normalizeSearchText(chapter.title)
-                .includes(normalizeSearchText(query)) ? 10 : 0) +
-              (normalizeSearchText(branch.title)
-                .includes(normalizeSearchText(query)) ? 5 : 0) +
-              (normalizeSearchText(chapter.summary)
-                .includes(normalizeSearchText(query)) ? 2 : 0)
+            chapterTitle: chapter.title || 'Chapitre sans titre',
+            url: `./${config.folder}/cours.html?id=${encodeURIComponent(chapter.id)}`,
+            type: 'chapter'
           });
         }
       }
     } catch (error) {
       console.error(
-        `Recherche impossible dans ${disciplineId} :`,
+        `Erreur pendant la recherche dans ${disciplineId} :`,
         error
       );
     }
   }
 
-  return results.sort((a, b) => b.score - a.score);
-}
+  // Les résultats correspondant à un chapitre sont affichés en premier.
+  results.sort((a, b) => {
+    if (a.type !== b.type) {
+      return a.type === 'chapter' ? -1 : 1;
+    }
 
+    return a.chapterTitle.localeCompare(b.chapterTitle, 'fr');
+  });
+
+  return results;
+}
 
 
 /* =========================================================
