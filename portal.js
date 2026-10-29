@@ -634,8 +634,63 @@ function initialiseGlobalSearch() {
 }
 
 
+(() => {
+  const toggle = document.getElementById("header-search-toggle");
+  const panel = document.getElementById("search-panel");
+  const closeButton = document.getElementById("search-panel-close");
+  const input = document.getElementById("portal-search-input");
+
+  if (!toggle || !panel || !closeButton || !input) return;
+
+  function openSearch() {
+    panel.classList.add("is-open");
+    panel.removeAttribute("inert");
+    panel.setAttribute("aria-hidden", "false");
+
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "Fermer la recherche");
+
+    input.focus();
+  }
+
+  function closeSearch() {
+    panel.classList.remove("is-open");
+    panel.setAttribute("inert", "");
+    panel.setAttribute("aria-hidden", "true");
+
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Ouvrir la recherche");
+  }
+
+  toggle.addEventListener("click", () => {
+    if (panel.classList.contains("is-open")) {
+      closeSearch();
+    } else {
+      openSearch();
+    }
+  });
+
+  closeButton.addEventListener("click", () => {
+    closeSearch();
+    toggle.focus();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      panel.classList.contains("is-open")
+    ) {
+      closeSearch();
+      toggle.focus();
+    }
+  });
+})();
+
+
+
+
 /* =========================================================
-   11. LANCEMENT
+   12. LANCEMENT
    ========================================================= */
 
 initialiseMobileChapters();
