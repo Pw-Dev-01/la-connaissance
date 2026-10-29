@@ -1060,12 +1060,15 @@ transition: none;
   border-bottom: none;
 }
 
-/* Le libellé sur sa propre ligne */
+/* Style du libellé « Rechercher : » */
+
 .header-search-form label {
-  display: block;
-  width: 100%;
-  margin-bottom: 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   color: #263b32;
+  margin-bottom: 10px;
 }
 
 /* Le champ de saisie en dessous */
