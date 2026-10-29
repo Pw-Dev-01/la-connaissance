@@ -777,6 +777,274 @@ window.courseCatalog = [
         }
       }
     ]
-  }
+  },
+{
+    id: 'biologie-evolutive',
+    title: 'Biologie évolutive',
+    note: 'Six chapitres sur la théorie de Darwin et Wallace, la variation génétique, la dérive et l’équilibre de Hardy-Weinberg, la sélection observée (pinsons de Daphne Major, expérience de Lenski), la spéciation et la phylogénie. Les exemples chiffrés des chapitres sont des exercices simplifiés ; les résultats de recherche cités sont arrondis.',
+    chapters: [
+      {
+        id: 'darwin-wallace-selection-naturelle',
+        title: 'Darwin, Wallace et le principe de sélection naturelle',
+        field: 'Biologie évolutive · Origines de la théorie (1858-1859) et conditions de la sélection naturelle',
+        summary: 'Comprendre comment Darwin et Wallace ont formulé la sélection naturelle, quelles sont ses trois conditions et ce que signifient réellement les termes évolution, adaptation et valeur sélective.',
+        lesson: {
+          sections: [
+            'La théorie de l’évolution par sélection naturelle a été formulée de façon indépendante par deux naturalistes britanniques, Charles Darwin et Alfred Russel Wallace. Darwin travaillait sur la question depuis une vingtaine d’années lorsqu’il reçoit, en juin 1858, une lettre de Wallace qui décrivait une idée très proche de la sienne. Sur les conseils de Charles Lyell et de Joseph Hooker, des extraits d’un manuscrit de Darwin, un résumé d’une lettre de 1857 à Asa Gray et l’essai de Wallace sont lus devant la Linnean Society de Londres le 1er juillet 1858, en l’absence des deux auteurs. Le livre On the Origin of Species by Means of Natural Selection paraît ensuite le 24 novembre 1859.',
+            'L’évolution désigne, au sens biologique, le changement des caractéristiques héritables d’une population au fil des générations. La sélection naturelle est un mécanisme possible de cette évolution, pas un synonyme. Elle se produit lorsque trois conditions sont réunies : il existe une variation d’un trait entre les individus, ce trait est héritable, et les individus porteurs de certaines variantes laissent en moyenne plus de descendants que les autres (reproduction différentielle). Si l’une de ces trois conditions manque, la sélection naturelle sur ce trait ne peut pas avoir lieu.',
+            'En biologie évolutive, la valeur sélective (fitness en anglais) mesure le succès reproducteur : c’est le nombre de descendants viables d’un individu comparé à celui des autres individus de la population. Elle ne se confond donc ni avec la force physique ni avec la longévité. L’expression « survie du plus apte » est souvent mal comprise : être « apte » signifie laisser plus de descendants dans un environnement donné, et non être supérieur de façon absolue. Un trait favorable dans un milieu peut devenir neutre ou défavorable si le milieu change.',
+            'Deux précisions évitent des contresens fréquents. D’abord, la sélection naturelle agit sur des individus, mais c’est la population qui évolue : un individu ne change pas ses gènes au cours de sa vie en réponse à la sélection. Ensuite, la sélection naturelle n’a ni but ni direction à long terme : elle trie des variations déjà présentes sans les créer. L’origine de ces variations (mutations, brassage génétique, flux de gènes) est étudiée au chapitre suivant. Enfin, le mot « théorie » désigne ici un cadre explicatif solidement étayé par de nombreuses observations, et non une simple supposition.'
+          ],
+          example: {
+            statement: 'Dans une population de coléoptères, certains individus sont verts et d’autres bruns. La couleur est héritable et des oiseaux mangent plus souvent les coléoptères verts, plus visibles sur le sol. Les trois conditions de la sélection naturelle sont-elles réunies ?',
+            calculation: 'Variation : il existe deux couleurs. Hérédité : la couleur est transmise aux descendants. Reproduction différentielle : les bruns, moins consommés, survivent plus souvent jusqu’à la reproduction et laissent plus de descendants.',
+            answer: 'Oui. Les trois conditions sont réunies : la proportion de coléoptères bruns devrait augmenter au fil des générations. C’est un exemple pédagogique simplifié, pas une mesure réelle.'
+          },
+          exercise: {
+            question: 'Pourquoi la sélection naturelle n’agit-elle pas sur un trait qui n’est pas héritable ?',
+            answer: 'Parce que, même si les porteurs du trait survivent mieux, leurs descendants ne reçoivent pas ce trait : la composition génétique de la population ne change donc pas d’une génération à l’autre.'
+          },
+          exercises: [
+            {
+              question: 'À quelle date On the Origin of Species a-t-il été publié ?',
+              answer: 'Le 24 novembre 1859.'
+            },
+            {
+              question: 'Quelles sont les trois conditions nécessaires à la sélection naturelle ?',
+              answer: 'Une variation d’un trait, l’hérédité de ce trait et une reproduction différentielle entre les individus.'
+            },
+            {
+              question: 'Que mesure la valeur sélective (fitness) en biologie évolutive ?',
+              answer: 'Le succès reproducteur : le nombre de descendants viables d’un individu, comparé à celui des autres individus de la population.'
+            }
+          ],
+          sources: [
+            { title: 'UC Berkeley, Understanding Evolution — Natural selection', url: 'https://evolution.berkeley.edu/evolution-101/mechanisms-the-processes-of-evolution/natural-selection/' },
+            { title: 'UC Berkeley, Understanding Evolution — Natural selection: the basics', url: 'https://evolution.berkeley.edu/teach-resources/natural-selection-the-basics' },
+            { title: 'Natural History Museum (Google Arts & Culture) — Darwin and Wallace’s joint paper on evolution', url: 'https://artsandculture.google.com/asset/LQGdurk5NKd6sA' },
+            { title: 'University of Otago Library — Darwin exhibition', url: 'https://www.otago.ac.nz/library/exhibitions/darwin/cabinet8.html' }
+          ]
+        }
+      },
+      {
+        id: 'variation-genetique-mutations',
+        title: 'La variation génétique : mutations, recombinaison et fréquences alléliques',
+        field: 'Biologie évolutive · Matière première de l’évolution',
+        summary: 'Identifier les sources de variation héritable, comprendre le caractère aléatoire des mutations et savoir calculer une fréquence allélique.',
+        lesson: {
+          sections: [
+            'Sans variation héritable, il n’y a rien sur quoi la sélection naturelle puisse agir. La variation génétique d’une population provient principalement de trois sources : les mutations, le flux de gènes (migration d’individus ou de gamètes entre populations) et le brassage lié à la reproduction sexuée. Associée à la sélection naturelle, cette variation rend l’évolution possible. Les trois sources n’agissent pas de la même façon : la mutation crée de nouveaux allèles, tandis que le flux de gènes et la reproduction sexuée les déplacent ou les combinent différemment.',
+            'Une mutation est une modification de la séquence d’ADN. Elle peut résulter d’une erreur lors de la copie de l’ADN ou d’un dommage causé par des agents chimiques ou des rayonnements. Pour avoir un effet évolutif, une mutation doit survenir dans la lignée germinale, c’est-à-dire dans des cellules reproductrices, afin d’être transmise à la descendance : une mutation d’une cellule de la peau disparaît avec l’individu. Beaucoup de mutations sont neutres ou défavorables ; les mutations favorables sont plus rares, mais ce sont celles que la sélection peut faire augmenter en fréquence.',
+            'On dit que les mutations sont aléatoires au sens précis où elles ne surviennent pas parce qu’elles seraient utiles à l’organisme : leur apparition ne dépend pas d’un « besoin ». Cela ne signifie pas que l’évolution soit entièrement due au hasard. La sélection naturelle, elle, n’est pas aléatoire : elle trie les variants selon leurs effets sur la survie et la reproduction dans un environnement donné. Le biologiste Richard Lenski décrit ainsi l’intérêt de son expérience à long terme : observer comment l’évolution se déroule quand on combine le caractère aléatoire des mutations et le caractère prévisible de la sélection.',
+            'Pour décrire l’évolution d’une population, on suit les fréquences alléliques, c’est-à-dire la proportion de chaque variante (allèle) d’un gène parmi toutes les copies de ce gène dans la population. Pour un gène à deux allèles, on note p et q les fréquences, avec p + q = 1. Dans une population diploïde de N individus, il y a 2N copies du gène. L’évolution, au sens de la génétique des populations, correspond à un changement de ces fréquences d’une génération à l’autre. La reproduction sexuée brasse les allèles existants sans en créer : lors de la formation des gamètes, l’assortiment indépendant des chromosomes et le crossing-over produisent de nouvelles combinaisons.'
+          ],
+          example: {
+            statement: 'Chez l’être humain (23 paires de chromosomes), combien de combinaisons différentes de chromosomes un individu peut-il produire dans ses gamètes par le seul assortiment indépendant, sans tenir compte du crossing-over ?',
+            calculation: 'Chaque paire de chromosomes se répartit indépendamment : 2 possibilités par paire. Pour 23 paires : 2^23 = 2 × 2 × … × 2 (23 fois) = 8 388 608.',
+            answer: 'Environ 8,4 millions de combinaisons (8 388 608). Le crossing-over augmente encore ce nombre, ce qui explique l’importance de la reproduction sexuée pour la variation.'
+          },
+          exercise: {
+            question: 'Pourquoi dit-on que les mutations sont aléatoires alors que la sélection naturelle ne l’est pas ?',
+            answer: 'Parce que les mutations n’apparaissent pas en fonction de leur utilité pour l’organisme, alors que la sélection trie ensuite les variants selon leur effet sur la survie et la reproduction dans un environnement donné.'
+          },
+          exercises: [
+            {
+              question: 'Dans une population de 50 individus diploïdes (100 copies d’un gène), 30 copies portent l’allèle A, les autres portent l’allèle a. Quelle est la fréquence de A et celle de a ?',
+              answer: 'La fréquence de A est 30/100 = 0,30 et celle de a est 0,70.'
+            },
+            {
+              question: 'Une mutation survenue dans une cellule de la peau est-elle transmise à la descendance ?',
+              answer: 'En général non : seules les mutations survenant dans la lignée germinale (cellules reproductrices) peuvent être transmises.'
+            },
+            {
+              question: 'Citez trois sources de variation génétique dans une population.',
+              answer: 'Les mutations, le flux de gènes (migration) et le brassage génétique de la reproduction sexuée.'
+            }
+          ],
+          sources: [
+            { title: 'EBSCO Research Starters — Genetic variation', url: 'https://ebsco.com/research-starters/biology/genetic-variation' },
+            { title: 'UC Berkeley, Understanding Evolution — Natural selection', url: 'https://evolution.berkeley.edu/evolution-101/mechanisms-the-processes-of-evolution/natural-selection/' },
+            { title: 'UC Berkeley, Understanding Evolution — The rules of natural selection: it’s all about the genes', url: 'https://evolution.berkeley.edu/the-rules-of-natural-selection-its-all-about-the-genes' },
+            { title: 'LiveScience / NSF — E. coli Offers Insight to Evolution', url: 'https://www.livescience.com/14557-coli-offers-insight-evolution-bts.html' }
+          ]
+        }
+      },
+      {
+        id: 'derive-flux-genes-hardy-weinberg',
+        title: 'Dérive génétique, flux de gènes et équilibre de Hardy-Weinberg',
+        field: 'Biologie évolutive · Génétique des populations',
+        summary: 'Distinguer les mécanismes qui modifient les fréquences alléliques et utiliser le modèle de Hardy-Weinberg comme référence pour détecter l’évolution.',
+        lesson: {
+          sections: [
+            'Quatre mécanismes principaux modifient les fréquences alléliques d’une population : la mutation, le flux de gènes, la dérive génétique et la sélection naturelle. Seule la sélection naturelle est directionnelle au sens où elle dépend de l’effet d’un allèle sur la valeur sélective. Les changements dus au flux de gènes ou à la dérive sont aléatoires par rapport à cet effet. Les distinguer est essentiel : une population peut évoluer sans qu’aucune sélection ne soit à l’œuvre.',
+            'La dérive génétique correspond aux fluctuations aléatoires des fréquences alléliques d’une génération à l’autre, parce que seule une partie des gamètes d’une génération donne des descendants. Ces effets d’échantillonnage sont d’autant plus marqués que la population est petite. La dérive peut éliminer un allèle ou le fixer indépendamment de son effet sur la valeur sélective, et elle tend à réduire la variation génétique au sein d’une population. Deux situations la renforcent : le goulot d’étranglement, lorsqu’une population subit une forte réduction d’effectif, et l’effet fondateur, lorsqu’un petit groupe fonde une nouvelle population.',
+            'Le flux de gènes est le déplacement d’allèles entre populations, par migration d’individus ou de gamètes. Lorsqu’il est important, il tend à homogénéiser les fréquences alléliques des populations concernées et peut les amener à partager le même pool génétique. Il peut aussi introduire de nouveaux allèles dans une population. À l’inverse, l’absence de flux de gènes entre populations isolées favorise leur divergence, ce qui joue un rôle central dans la spéciation (chapitre 5).',
+            'Le modèle de Hardy-Weinberg décrit les fréquences génotypiques attendues pour un gène à deux allèles lorsqu’aucun mécanisme évolutif n’agit. Si p et q sont les fréquences des deux allèles (p + q = 1), les fréquences des génotypes homozygotes et hétérozygote sont p², 2pq et q², avec p² + 2pq + q² = 1. Les conditions habituelles sont l’absence de mutation, de migration et de sélection, une population de grande taille et des accouplements aléatoires. Ce modèle sert de référence : un écart par rapport aux proportions attendues indique que l’une de ces hypothèses n’est pas respectée.'
+          ],
+          example: {
+            statement: 'Dans une population supposée à l’équilibre de Hardy-Weinberg, 4 % des individus sont homozygotes récessifs (aa). Quelle est la fréquence des hétérozygotes (Aa) ?',
+            calculation: 'q² = 0,04 donc q = 0,2. Comme p + q = 1, p = 0,8. La fréquence des hétérozygotes est 2pq = 2 × 0,8 × 0,2 = 0,32. Vérification : p² + 2pq + q² = 0,64 + 0,32 + 0,04 = 1.',
+            answer: 'Les hétérozygotes représentent 32 % de la population, soit huit fois plus que les homozygotes récessifs. Ce résultat vaut seulement si les conditions du modèle sont respectées.'
+          },
+          exercise: {
+            question: 'Pourquoi la dérive génétique est-elle plus marquée dans une petite population que dans une grande ?',
+            answer: 'Parce que, lorsque peu d’individus se reproduisent, le hasard de l’échantillonnage des gamètes pèse davantage sur les fréquences alléliques de la génération suivante.'
+          },
+          exercises: [
+            {
+              question: 'Pour un gène à deux allèles, si p = 0,6, que vaut q ?',
+              answer: 'q = 1 − 0,6 = 0,4.'
+            },
+            {
+              question: 'Avec p = 0,6 et q = 0,4, quelle est la fréquence attendue des hétérozygotes à l’équilibre de Hardy-Weinberg ?',
+              answer: '2pq = 2 × 0,6 × 0,4 = 0,48, soit 48 %.'
+            },
+            {
+              question: 'Un flux de gènes important entre deux populations les rend-il plus semblables ou plus différentes génétiquement ?',
+              answer: 'Plus semblables : le flux de gènes tend à homogénéiser leurs fréquences alléliques.'
+            }
+          ],
+          sources: [
+            { title: 'UC Berkeley, Understanding Evolution — Bottlenecks and founder effects', url: 'https://evolution.berkeley.edu/bottlenecks-and-founder-effects/' },
+            { title: 'EBSCO Research Starters — Genetic variation', url: 'https://ebsco.com/research-starters/biology/genetic-variation' },
+            { title: 'University of Utah (cours d’anthropologie) — Selection', url: 'https://content.csbs.utah.edu/~rogers/tch/ant5221/lecture/selection.pdf' },
+            { title: 'UC Berkeley, Understanding Evolution — The rules of natural selection: it’s all about the genes', url: 'https://evolution.berkeley.edu/the-rules-of-natural-selection-its-all-about-the-genes' }
+          ]
+        }
+      },
+      {
+        id: 'selection-observee-pinsons-lenski',
+        title: 'La sélection naturelle observée : pinsons de Daphne Major et expérience de Lenski',
+        field: 'Biologie évolutive · Études de terrain et expériences de laboratoire',
+        summary: 'Analyser deux cas où l’évolution a été mesurée directement et comprendre ce qu’ils démontrent et ce qu’ils ne démontrent pas.',
+        lesson: {
+          sections: [
+            'Peter et Rosemary Grant ont étudié pendant des décennies les pinsons de l’île de Daphne Major, dans l’archipel des Galápagos, en particulier le géospize à bec moyen (Geospiza fortis), qui se nourrit de graines. En 1977, une sécheresse sévère réduit fortement la production de graines. La population passe d’environ 1 400 individus à quelques centaines en un peu plus de deux ans, et plus de la moitié de la population initiale meurt. Les oiseaux à bec plus profond se nourrissent plus efficacement de graines grosses et dures, alors que les oiseaux à bec plus petit exploitent mieux les petites graines tendres, devenues rares : ce sont donc surtout les oiseaux à gros bec qui survivent.',
+            'Ce cas réunit les trois conditions de la sélection naturelle. Il existe une variation de la profondeur du bec, cette variation est héritable (la taille du bec des descendants est liée à celle de leurs parents) et la survie diffère selon le bec. Les descendants nés après la sécheresse, en 1978, ont en moyenne un bec plus profond que la population d’avant la sécheresse : la population a donc évolué. Les Grant ont également observé une sélection forte lors de la sécheresse de 1985. Lorsque l’environnement change, la sélection peut favoriser un autre trait : une adaptation n’est jamais « meilleure » dans l’absolu.',
+            'L’expérience d’évolution à long terme (LTEE) menée par Richard Lenski a débuté en février 1988 à partir de 12 populations d’Escherichia coli issues de la même souche. Chaque jour, 1 % de chaque population est transféré dans un milieu neuf contenant du glucose comme principale source de nourriture. Des échantillons sont régulièrement congelés : cette collection joue le rôle d’un registre fossile vivant, car les bactéries ancestrales peuvent être ranimées et comparées à leurs descendantes. L’expérience a été transférée en 2022 au laboratoire de Jeffrey Barrick, à l’Université du Texas à Austin, et a dépassé 80 000 générations.',
+            'Un résultat marquant de la LTEE est survenu vers 31 000 générations : dans une seule des 12 populations, les bactéries ont acquis la capacité d’utiliser le citrate en présence d’oxygène, ce qu’E. coli ne fait normalement pas. Ce cas illustre le rôle conjoint du hasard (l’apparition de mutations) et de la sélection (le tri de ces mutations), ainsi que la contingence historique : les 11 autres populations n’ont pas acquis cette capacité dans la même durée. Ces études ont des limites : les pinsons sont observés dans un milieu naturel complexe mais sur une espèce précise, et la LTEE se déroule dans un milieu de laboratoire volontairement simplifié. Leur valeur tient à la convergence entre observation de terrain et expérience contrôlée.'
+          ],
+          example: {
+            statement: 'Exemple fictif simplifié : dans une population, les individus du type A laissent en moyenne 8 descendants viables et ceux du type B en laissent 6. Quelle est la valeur sélective relative de B et le coefficient de sélection contre B ?',
+            calculation: 'On prend le type le plus performant comme référence : w(A) = 8/8 = 1. Pour B : w(B) = 6/8 = 0,75. Le coefficient de sélection est s = 1 − w(B) = 1 − 0,75 = 0,25.',
+            answer: 'La valeur sélective relative de B est 0,75 et le coefficient de sélection contre B est 0,25 : B laisse 25 % de descendants viables en moins que A.'
+          },
+          exercise: {
+            question: 'Pourquoi les données de Daphne Major constituent-elles une démonstration de sélection naturelle et pas seulement un effet du hasard ?',
+            answer: 'Parce que la survie dépendait d’un trait mesurable (la profondeur du bec) en lien avec la disponibilité des graines, et que ce trait est héritable : les descendants de 1978 avaient en moyenne un bec plus profond.'
+          },
+          exercises: [
+            {
+              question: 'En quelle année la sécheresse majeure a-t-elle frappé Daphne Major lors de l’étude des Grant ?',
+              answer: 'En 1977.'
+            },
+            {
+              question: 'Combien de populations d’E. coli ont été lancées au début de la LTEE, et en quelle année ?',
+              answer: 'Douze populations, en 1988.'
+            },
+            {
+              question: 'Qu’a-t-on observé dans l’une des populations de la LTEE vers 31 000 générations ?',
+              answer: 'Elle a acquis la capacité d’utiliser le citrate en présence d’oxygène, ce qu’E. coli ne fait normalement pas.'
+            }
+          ],
+          sources: [
+            { title: 'Open University (OpenLearn) — Natural selection in Darwin’s finches', url: 'https://www.open.edu/openlearn/science-maths-technology/migration/content-section-3.4' },
+            { title: 'HHMI BioInteractive — The Beak of the Finch (quiz)', url: 'https://media.hhmi.org/biointeractive/interactivevideo/finchquiz' },
+            { title: 'NSF — E. coli Offers Insight to Evolution', url: 'https://www.nsf.gov/news/e-coli-offers-insight-evolution' },
+            { title: 'Michigan State University — Evolution under a microscope going strong at MSU', url: 'https://msutoday.msu.edu/news/2025/11/evolution-under-a-microscope-going-strong-at-msu' },
+            { title: 'Wikipedia — E. coli long-term evolution experiment', url: 'https://en.wikipedia.org/wiki/E._coli_long-term_evolution_experiment' }
+          ]
+        }
+      },
+      {
+        id: 'speciation-isolement-reproducteur',
+        title: 'Espèces, isolement reproducteur et spéciation',
+        field: 'Biologie évolutive · Origine de nouvelles espèces',
+        summary: 'Définir la spéciation, distinguer les barrières à la reproduction et comparer les modes allopatrique et sympatrique.',
+        lesson: {
+          sections: [
+            'La spéciation est le processus évolutif par lequel de nouvelles espèces (taxons descendants) apparaissent à partir d’espèces existantes (taxons ancestraux). Le concept biologique d’espèce, souvent associé à Ernst Mayr, définit une espèce comme un ensemble de populations qui peuvent se reproduire entre elles et qui sont isolées sur le plan reproductif d’autres ensembles. Ce concept est très utile mais imparfait : il s’applique mal aux organismes à reproduction asexuée ou aux fossiles. Les biologistes discutent toujours des processus qui ont le plus contribué aux motifs de spéciation observés, mais personne ne remet en cause le fait que des espèces descendent de formes antérieures.',
+            'L’isolement reproductif regroupe les barrières qui limitent le flux de gènes entre espèces. Les barrières prézygotiques empêchent l’accouplement ou la fécondation : reproduction à des périodes différentes de l’année, chants nuptiaux différents, anatomie reproductrice incompatible. Les barrières postzygotiques agissent après l’accouplement : la descendance hybride est peu viable ou stérile, comme la mule, issue du croisement entre un cheval et un âne. Ces barrières peuvent apparaître comme conséquence indirecte de la divergence génétique accumulée entre populations séparées.',
+            'Dans la spéciation allopatrique, une barrière géographique (rivière, montagne, bras de mer, etc.) sépare une population en deux groupes ou isole une petite population. Le flux de gènes est interrompu ; mutations, dérive génétique et sélection naturelle agissent alors indépendamment dans chaque groupe. Si la divergence est suffisante, les groupes ne se reproduisent plus entre eux même si la barrière disparaît. Une source universitaire présente ce mode comme le plus important, avec une estimation de 90 à 95 % des événements de spéciation. On distingue notamment la vicariance (une barrière divise une population) et la spéciation péripatrique (une petite population isolée au bord de l’aire de répartition).',
+            'La spéciation sympatrique se produit sans séparation géographique : des barrières écologiques ou comportementales créent l’isolement au sein d’une même aire. Elle est plus difficile à établir, car le flux de gènes tend à homogénéiser les populations. Les preuves sont plus rares, au point que certains scientifiques ont douté de son existence, mais plusieurs exemples solides sont cités, notamment les cichlidés du lac Victoria en Afrique. Il existe aussi la spéciation parapatrique, entre populations adjacentes. Retenir cette typologie ne doit pas faire oublier qu’elle simplifie un continuum de situations.'
+          ],
+          example: {
+            statement: 'Une rivière apparue dans une région divise une population de souris en deux groupes qui ne peuvent plus se croiser. Après de très nombreuses générations, lorsque les deux groupes se retrouvent, ils ne s’accouplent plus. De quel mode de spéciation s’agit-il ?',
+            calculation: 'Étape 1 : une barrière géographique interrompt le flux de gènes. Étape 2 : mutations, dérive et sélection agissent séparément dans chaque groupe. Étape 3 : la divergence aboutit à un isolement reproductif, constaté lors du nouveau contact.',
+            answer: 'Il s’agit d’une spéciation allopatrique. Le critère décisif est l’isolement reproductif, pas seulement l’existence de différences visibles entre les groupes.'
+          },
+          exercise: {
+            question: 'Pourquoi la spéciation sympatrique est-elle plus difficile à démontrer que la spéciation allopatrique ?',
+            answer: 'Parce que, sans barrière géographique, le flux de gènes tend à homogénéiser les populations : il faut montrer que des facteurs écologiques ou comportementaux ont créé l’isolement et exclure un ancien isolement géographique.'
+          },
+          exercises: [
+            {
+              question: 'Donnez un exemple de barrière prézygotique.',
+              answer: 'Une reproduction à des périodes différentes, des chants nuptiaux différents ou une anatomie reproductrice incompatible.'
+            },
+            {
+              question: 'Pourquoi la mule illustre-t-elle une barrière postzygotique ?',
+              answer: 'Le croisement cheval × âne a lieu mais produit une descendance stérile.'
+            },
+            {
+              question: 'Quel mode de spéciation implique une barrière géographique séparant la population ancestrale ?',
+              answer: 'La spéciation allopatrique.'
+            }
+          ],
+          sources: [
+            { title: 'Digital Atlas of Ancient Life — Speciation', url: 'https://www.digitalatlasofancientlife.org/learn/evolution/speciation/' },
+            { title: 'Discover Magazine — How Does Speciation Drive Evolution?', url: 'https://www.discovermagazine.com/the-sciences/how-does-speciation-drive-evolution' },
+            { title: 'CK-12 / LibreTexts — Origin of Species', url: 'https://k12.libretexts.org/Bookshelves/Science_and_Technology/Biology/05%3A_Evolution/5.14%3A_Origin_of_Species' },
+            { title: 'Université de Grenade (R. Navajas-Pérez) — Macroevolution and Speciation', url: 'https://wpd.ugr.es/~rnavajas/PDFs/DOCENCIA/UNIT_8.pdf' }
+          ]
+        }
+      },
+      {
+        id: 'phylogenie-arbre-du-vivant',
+        title: 'Phylogénie : lire l’arbre du vivant et comprendre les preuves de l’évolution',
+        field: 'Biologie évolutive · Systématique et reconstruction des relations de parenté',
+        summary: 'Lire correctement un arbre phylogénétique, distinguer les groupes monophylétiques des autres groupes et différencier homologie et analogie.',
+        lesson: {
+          sections: [
+            'Un arbre phylogénétique représente les relations évolutives entre des organismes : il montre, à travers le temps, le chemin qui mène d’un ancêtre commun à ses descendants. Il comporte une racine, des nœuds (chacun correspondant à un ancêtre commun des lignées qui en sont issues), des branches et des extrémités qui représentent les taxons étudiés. Darwin a développé la métaphore de l’arbre du vivant pour exprimer que les espèces actuelles descendent d’ancêtres communs avec modification. Un arbre montre des relations historiques, et non des degrés de ressemblance entre les extrémités.',
+            'L’erreur de lecture la plus fréquente consiste à interpréter l’ordre des extrémités : on lit alors l’arbre « de gauche à droite » comme une échelle de progrès, ou on juge la parenté d’après la proximité sur le dessin. Or les branches peuvent pivoter autour d’un nœud sans changer les relations, et dans un arbre dessiné avec un axe vertical pour le temps, l’axe horizontal n’a aucune signification. La bonne méthode consiste à lire les groupes emboîtés (clades) définis par les nœuds. Toutes les espèces actuelles sont également éloignées, dans le temps, de leur ancêtre commun le plus récent : parler d’espèces « primitives » et « avancées » est donc trompeur.',
+            'Un groupe monophylétique (clade) comprend un ancêtre commun et tous ses descendants. Un groupe paraphylétique exclut un ou plusieurs descendants de cet ancêtre. Un groupe polyphylétique exclut l’ancêtre commun de ses membres. Depuis les travaux de Willi Hennig, la classification moderne vise à ne nommer que des groupes monophylétiques, afin de refléter l’histoire évolutive. Cette approche a des conséquences concrètes : par exemple, les champignons sont plus étroitement apparentés aux animaux qu’aux plantes.',
+            'Les arbres sont construits à partir de caractères, morphologiques ou moléculaires. Il faut distinguer l’homologie, qui désigne une ressemblance héritée d’un ancêtre commun, de l’analogie (ou homoplasie), qui désigne une ressemblance apparue indépendamment dans des lignées différentes, par exemple par convergence. Seuls les caractères dérivés partagés (synapomorphies) renseignent sur les clades. Les phylogénies fournissent l’un des cadres dans lesquels les preuves de l’évolution sont évaluées, aux côtés des fossiles, de l’anatomie comparée et de la génétique moléculaire : toutes ces lignes d’étude convergent vers l’idée que les êtres vivants sont liés par une ascendance commune.'
+          ],
+          example: {
+            statement: 'Un arbre est écrit en notation parenthésée : (((A,B),C),D). Quel taxon est le plus proche parent de A ?',
+            calculation: 'On lit les groupes emboîtés de l’intérieur vers l’extérieur : (A,B) forme le plus petit clade, puis (A,B) + C, puis l’ensemble avec D. A et B partagent donc un ancêtre commun plus récent que celui qu’ils partagent avec C ou D.',
+            answer: 'B est le groupe frère de A. C et D sont des parents plus éloignés, quelle que soit leur position dans un dessin de l’arbre.'
+          },
+          exercise: {
+            question: 'Pourquoi ne faut-il pas déduire la parenté de la seule proximité des extrémités dans un dessin d’arbre ?',
+            answer: 'Parce que les branches peuvent pivoter autour des nœuds sans modifier les relations : seuls les nœuds, c’est-à-dire les ancêtres communs, et les clades emboîtés renseignent sur la parenté.'
+          },
+          exercises: [
+            {
+              question: 'Que représente un nœud sur un arbre phylogénétique ?',
+              answer: 'Un ancêtre commun aux lignées qui en sont issues, c’est-à-dire un point de divergence.'
+            },
+            {
+              question: 'Un groupe qui exclut un ou plusieurs descendants de l’ancêtre commun est-il monophylétique, paraphylétique ou polyphylétique ?',
+              answer: 'Il est paraphylétique.'
+            },
+            {
+              question: 'Les champignons sont-ils plus proches des animaux ou des plantes ?',
+              answer: 'Des animaux.'
+            }
+          ],
+          sources: [
+            { title: 'UC Berkeley, Understanding Evolution — Tree thinking: the basics', url: 'https://evolution.berkeley.edu/teach-resources/tree-thinking-basics' },
+            { title: 'Georgia Tech, Principles of Biology — Phylogenetic trees', url: 'https://bioprinciples.biosci.gatech.edu/module-1-evolution/phylogenetic-trees' },
+            { title: 'PLOS Biology / PMC — Walking and talking the tree of life', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5358732/' },
+            { title: 'LiveScience — What is taxonomy?', url: 'https://livescience.com/taxonomy.html' },
+            { title: 'Evolution: Education and Outreach — Understanding the tree of life: tree-reading skill frameworks', url: 'https://doi.org/10.1186/s12052-019-0104-3' }
+          ]
+        }
+      }
+    ]
+  },
+
 ];
 
