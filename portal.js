@@ -544,8 +544,102 @@ async function searchAllCourses(query) {
 
 
 /* =========================================================
-   10. LANCEMENT
+   10. GESTION DU FORMULAIRE ET DES CLICS DE RECHERCHE
    ========================================================= */
 
+function initialiseGlobalSearch() {
+  const form = document.querySelector('#portal-search');
+  const input = document.querySelector('#portal-search-input');
+  const resultsContainer = document.querySelector('#portal-search-results');
+
+  if (!form || !input || !resultsContainer) {
+    console.error(
+      'Recherche globale : formulaire, champ ou zone de résultats introuvable.',
+      { form, input, resultsContainer }
+    );
+    return;
+  }
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const query = input.value.trim();
+
+    resultsContainer.replaceChildren();
+
+    if (!query) return;
+
+    const loading = document.createElement('p');
+    loading.textContent = 'Recherche en cours…';
+    resultsContainer.appendChild(loading);
+
+    try {
+      const results = await searchAllCourses(query);
+      resultsContainer.replaceChildren();
+
+      if (results.length === 0) {
+        const message = document.createElement('p');
+        message.textContent = 'Aucun cours trouvé pour cette recherche.';
+        resultsContainer.appendChild(message);
+        return;
+      }
+
+      const list = document.createElement('ul');
+      list.className = 'portal-search-list';
+
+      results.forEach((result) => {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+
+        // Destination réelle calculée par la recherche.
+        link.href = new URL(result.url, document.baseURI).href;
+
+        link.textContent = result.type === 'chapter'
+          ? `${result.chapterTitle} — ${result.branchTitle}`
+          : result.branchTitle;
+
+        link.className = 'portal-search-result';
+
+        // Navigation normale vers le cours au clic.
+        link.addEventListener('click', (event) => {
+          if (
+            event.button !== 0 ||
+            event.ctrlKey ||
+            event.metaKey ||
+            event.shiftKey ||
+            event.altKey
+          ) {
+            return;
+          }
+
+          event.preventDefault();
+          window.location.assign(link.href);
+        });
+
+        item.appendChild(link);
+        list.appendChild(item);
+      });
+
+      resultsContainer.appendChild(list);
+    } catch (error) {
+      console.error('Erreur pendant la recherche globale :', error);
+      resultsContainer.replaceChildren();
+
+      const message = document.createElement('p');
+      message.textContent =
+        'La recherche a échoué. Vérifie la console et les fichiers de cours.';
+      resultsContainer.appendChild(message);
+    }
+  });
+}
+
+
+/* =========================================================
+   11. LANCEMENT
+   ========================================================= */
 
 initialiseMobileChapters();
+initialiseGlobalSearch();
+
+
+
