@@ -857,3 +857,29 @@ h2 {
   }
 }
 
+
+.header-search-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  color: #263b32;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.header-search-toggle:hover {
+  background: #e3e8df;
+}
+
+.header-search-toggle:focus-visible {
+  outline: 2px solid #263b32;
+  outline-offset: 3px;
+}
+
+
