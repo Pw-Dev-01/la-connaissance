@@ -2707,9 +2707,6 @@
         }
       },
 
-
-
-
       {
         id: 'cosmologie',
         title: 'Galaxies et expansion de l’Univers',
@@ -2749,81 +2746,9 @@
           ]
         }
       }
-    ],
-    deepCourses: [
-      {
-        title: 'Cosmologie des particules',
-        href: 'cosmologie-particules.html',
-        sections: [
-          {
-            anchor: 'introduction',
-            title: 'La cosmologie des particules'
-          },
-          {
-            anchor: 'modele-cosmologique',
-            title: 'Le modèle standard de la cosmologie'
-          },
-          {
-            anchor: 'modele-particules',
-            title: 'Le modèle standard des particules'
-          },
-          {
-            anchor: 'expansion-redshift',
-            title: 'Expansion et décalage vers le rouge'
-          },
-          {
-            anchor: 'densite-critique',
-            title: 'Densité critique et paramètres'
-          },
-          {
-            anchor: 'histoire-thermique',
-            title: 'L’histoire thermique de l’Univers'
-          },
-          {
-            anchor: 'nucleosynthese',
-            title: 'La nucléosynthèse primordiale'
-          },
-          {
-            anchor: 'fond-diffus',
-            title: 'Recombinaison et fond diffus'
-          },
-          {
-            anchor: 'matiere-noire',
-            title: 'La matière noire'
-          },
-          {
-            anchor: 'energie-noire',
-            title: 'L’énergie noire'
-          },
-          {
-            anchor: 'plasma-quark-gluon',
-            title: 'Le plasma quark-gluon'
-          },
-          {
-            anchor: 'neutrinos-cosmologiques',
-            title: 'Les neutrinos cosmologiques'
-          },
-          {
-            anchor: 'baryogenese',
-            title: 'La baryogenèse'
-          },
-          {
-            anchor: 'inflation',
-            title: 'L’inflation'
-          },
-          {
-            anchor: 'exercices',
-            title: 'S’entraîner'
-          },
-          {
-            anchor: 'sources',
-            title: 'Sources'
-          }
-        ]
-      }
     ]
   },
-  {
+        {
     id: 'astrophysique-hautes-energies',
     title: 'Astrophysique des hautes énergies',
     note: 'Rayons X et gamma, rayons cosmiques, pulsars, trous noirs et sursauts : observer l’Univers au-delà du visible. Un cours approfondi en quinze sections, avec exercices et sources vérifiées.',
