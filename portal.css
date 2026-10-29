@@ -891,7 +891,8 @@ z-index: 1001;
 position: absolute;
 top: 0;
 left: 64px;
-right: 0;
+right: 300px;
+min-height: 300px;
 z-index: 1000;
 
 background: #f1f3ec;
@@ -924,7 +925,7 @@ grid-template-columns: auto minmax(100px, 1fr) auto auto;
 align-items: center;
 gap: 20px;
 
-min-height: 100px;
+min-height: 300px;
 padding: 16px 24px;
 box-sizing: border-box;
 }
@@ -1048,3 +1049,4 @@ transition: none;
     margin-left: auto;
   }
 }
+
