@@ -358,15 +358,19 @@ async function initialiseMobileChapters() {
 }
 
 
-// ---------------------------------------------------------------------------
-// 9) Recherche globale dans tous les cours
-// ---------------------------------------------------------------------------
+
+ // ---------------------------------------------------------------------------
+ // 9) Recherche globale dans tous les cours
+ // ---------------------------------------------------------------------------
 
 function normalizeSearchText(value) {
   return String(value ?? '')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
+    .replace(/[-_./]+/g, ' ')
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+    .replace(/\s+/g, ' ')
     .trim();
 }
 
@@ -374,11 +378,19 @@ function getChapterSearchText(branch, chapter) {
   const lesson = chapter.lesson || {};
 
   const sections = Array.isArray(lesson.sections)
-    ? lesson.sections.join(' ')
+    ? lesson.sections.map(section =>
+        typeof section === 'string'
+          ? section
+          : JSON.stringify(section)
+      ).join(' ')
     : '';
 
   const sources = Array.isArray(lesson.sources)
-    ? lesson.sources.map(source => source.title || '').join(' ')
+    ? lesson.sources.map(source =>
+        typeof source === 'string'
+          ? source
+          : `${source.title || ''} ${source.description || ''}`
+      ).join(' ')
     : '';
 
   const exercises = Array.isArray(lesson.exercises)
@@ -392,12 +404,18 @@ function getChapterSearchText(branch, chapter) {
     : '';
 
   const example = lesson.example
-    ? Object.values(lesson.example).join(' ')
+    ? Object.values(lesson.example).map(value =>
+        typeof value === 'object' && value !== null
+          ? JSON.stringify(value)
+          : String(value ?? '')
+      ).join(' ')
     : '';
 
-  return [
+  return normalizeSearchText([
+    branch.id,
     branch.title,
     branch.note,
+    chapter.id,
     chapter.title,
     chapter.field,
     chapter.summary,
@@ -408,7 +426,31 @@ function getChapterSearchText(branch, chapter) {
     exercises,
     singleExercise,
     example
-  ].filter(Boolean).join(' ');
+  ].filter(Boolean).join(' '));
+}
+
+function scoreSearchMatch(queryWords, searchableText) {
+  const text = normalizeSearchText(searchableText);
+  const words = text.split(' ').filter(Boolean);
+
+  let score = 0;
+
+  for (const queryWord of queryWords) {
+    if (!queryWord) continue;
+
+    if (words.includes(queryWord)) {
+      score += 3;
+    } else if (words.some(word => word.startsWith(queryWord))) {
+      score += 2;
+    } else if (text.includes(queryWord)) {
+      score += 1;
+    } else {
+      // Tous les mots de la recherche doivent correspondre.
+      return 0;
+    }
+  }
+
+  return score;
 }
 
 async function searchAllCourses(query) {
@@ -416,6 +458,7 @@ async function searchAllCourses(query) {
 
   if (!normalizedQuery) return [];
 
+  const queryWords = normalizedQuery.split(' ').filter(Boolean);
   const results = [];
   const configs = Object.entries(disciplines);
 
@@ -425,36 +468,38 @@ async function searchAllCourses(query) {
       const branches = getBranches(catalog);
 
       for (const branch of branches) {
-        const chapters = Array.isArray(branch.chapters)
-          ? branch.chapters
-          : [];
+        const branchText = normalizeSearchText([
+          branch.id,
+          branch.title,
+          branch.note
+        ].filter(Boolean).join(' '));
 
-        // Recherche dans le titre et la note de la branche.
-        const branchText = normalizeSearchText(
-          `${branch.title || ''} ${branch.note || ''}`
-        );
+        const branchScore = scoreSearchMatch(queryWords, branchText);
 
-        if (branchText.includes(normalizedQuery)) {
+        if (branchScore > 0) {
           results.push({
             disciplineId,
             branchId: branch.id,
             branchTitle: branch.title || 'Branche sans titre',
             chapterId: null,
             chapterTitle: '',
-            url: `./${config.folder}/${config.branchPage || 'index.html'}?branche=${encodeURIComponent(branch.id)}#${encodeURIComponent(branch.id)}`,
-            type: 'branch'
+            url: `./${config.folder}${config.branchPage || 'index.html'}?branche=${encodeURIComponent(branch.id)}#${encodeURIComponent(branch.id)}`,
+            type: 'branch',
+            score: branchScore
           });
         }
 
-        // Recherche dans chaque chapitre.
+        const chapters = Array.isArray(branch.chapters)
+          ? branch.chapters
+          : [];
+
         for (const chapter of chapters) {
           if (!chapter || !chapter.id) continue;
 
-          const searchableText = normalizeSearchText(
-            getChapterSearchText(branch, chapter)
-          );
+          const searchableText = getChapterSearchText(branch, chapter);
+          const score = scoreSearchMatch(queryWords, searchableText);
 
-          if (!searchableText.includes(normalizedQuery)) continue;
+          if (score === 0) continue;
 
           results.push({
             disciplineId,
@@ -462,8 +507,9 @@ async function searchAllCourses(query) {
             branchTitle: branch.title || 'Branche sans titre',
             chapterId: chapter.id,
             chapterTitle: chapter.title || 'Chapitre sans titre',
-            url: `./${config.folder}/cours.html?id=${encodeURIComponent(chapter.id)}`,
-            type: 'chapter'
+            url: `./${config.folder}cours.html?id=${encodeURIComponent(chapter.id)}`,
+            type: 'chapter',
+            score
           });
         }
       }
@@ -475,16 +521,25 @@ async function searchAllCourses(query) {
     }
   }
 
-  // Les résultats correspondant à un chapitre sont affichés en premier.
-  results.sort((a, b) => {
-    if (a.type !== b.type) {
-      return a.type === 'chapter' ? -1 : 1;
-    }
+  // Les chapitres passent avant les branches ; les meilleurs matchs en premier.
+  results.sort((a, b) =>
+    (a.type === 'chapter' ? 0 : 1) -
+    (b.type === 'chapter' ? 0 : 1) ||
+    b.score - a.score ||
+    a.chapterTitle.localeCompare(b.chapterTitle, 'fr')
+  );
 
-    return a.chapterTitle.localeCompare(b.chapterTitle, 'fr');
+  // Évite les doublons si un même chapitre est référencé plusieurs fois.
+  const seen = new Set();
+
+  return results.filter(result => {
+    const key = `${result.disciplineId}|${result.chapterId || result.branchId}|${result.type}`;
+
+    if (seen.has(key)) return false;
+
+    seen.add(key);
+    return true;
   });
-
-  return results;
 }
 
 
