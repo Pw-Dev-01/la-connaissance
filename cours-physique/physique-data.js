@@ -4628,7 +4628,7 @@
     ]
   },
   {
-    id: 'grands-livres-physique',
+    id: 'grands-livres',
     title: 'Les grands livres de la physique',
     note: 'Dix ouvrages de référence, de Galilée à Hawking : titre, auteur, édition, date de parution et résumé de chaque livre.',
     chapters: [
@@ -6626,3 +6626,4 @@
 
 
 ];
+
