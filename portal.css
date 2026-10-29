@@ -891,7 +891,7 @@ z-index: 1001;
 position: absolute;
 top: 0;
 left: 64px;
-right: 300px;
+right: 0px;
 min-height: 300px;
 z-index: 1000;
 
@@ -920,14 +920,14 @@ visibility 0s;
 }
 
 .search-panel-inner {
-display: grid;
-grid-template-columns: auto minmax(100px, 1fr) auto auto;
-align-items: center;
-gap: 20px;
-
-min-height: 300px;
-padding: 16px 24px;
-box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-height: 300px;
+  padding: 16px 24px;
+  box-sizing: border-box;
 }
 
 .search-panel-brand {
