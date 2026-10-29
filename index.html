@@ -21,59 +21,154 @@
   </head>
 
   <body>
+
+    <!-- ==================================================
+         EN-TÊTE
+         ================================================== -->
+
     <header class="masthead">
+      <div class="masthead-inner">
 
-      <!-- Loupe de recherche en haut à gauche -->
-      <button
-        class="header-search-toggle"
-        type="button"
-        aria-label="Ouvrir la recherche"
-        onclick="document.getElementById('portal-search-input').focus(); document.getElementById('portal-search-input').scrollIntoView({behavior:'smooth', block:'center'});"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="25"
-          height="25"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.8"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
+        <!-- Loupe de recherche -->
+        <button
+          class="header-search-toggle"
+          id="header-search-toggle"
+          type="button"
+          aria-label="Ouvrir la recherche"
+          aria-expanded="false"
+          aria-controls="search-panel"
         >
-          <circle cx="10.8" cy="10.8" r="6.8"></circle>
-          <path d="m16 16 4.5 4.5"></path>
-        </svg>
-      </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="10.8" cy="10.8" r="6.8"></circle>
+            <path d="m16 16 4.5 4.5"></path>
+          </svg>
+        </button>
 
-      <!-- Navigation principale -->
-      <nav
-        class="top-navigation"
-        aria-label="Navigation principale"
+        <!-- Navigation principale -->
+        <nav
+          class="top-navigation"
+          aria-label="Navigation principale"
+        >
+          <a href="#cours">Explorer</a>
+        </nav>
+
+        <span class="masthead-note">
+          UN ESPACE DE SAVOIRS
+        </span>
+
+        <!-- Bouton du menu mobile -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="mobile-navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
+      <!-- ==================================================
+           PANNEAU DE RECHERCHE
+           ================================================== -->
+
+      <div
+        class="search-panel"
+        id="search-panel"
+        aria-hidden="true"
+        inert
       >
-        <a href="#cours">Explorer</a>
-      </nav>
+        <div class="search-panel-inner">
 
-      <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
+          <div class="search-panel-heading">
+            <span class="search-panel-brand">
+              Rechercher
+            </span>
 
-      <!-- Bouton du menu mobile -->
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Ouvrir le menu"
-        aria-expanded="false"
-        aria-controls="mobile-navigation"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+            <button
+              class="search-panel-close"
+              id="search-panel-close"
+              type="button"
+              aria-label="Fermer la recherche"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
 
+          <form
+            id="portal-search"
+            class="header-search-form"
+            role="search"
+          >
+            <label
+              class="visually-hidden"
+              for="portal-search-input"
+            >
+              Rechercher un domaine ou un chapitre
+            </label>
+
+            <input
+              id="portal-search-input"
+              type="search"
+              name="q"
+              placeholder="Ex. : Mésopotamie"
+              autocomplete="off"
+              aria-label="Rechercher un domaine ou un chapitre"
+              aria-controls="portal-search-results"
+              required
+            >
+
+            <button
+              type="submit"
+              aria-label="Lancer la recherche"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                <path d="m16 16 4.5 4.5"></path>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Résultats produits par portal.js -->
+          <div
+            id="portal-search-results"
+            aria-live="polite"
+            aria-atomic="true"
+          ></div>
+
+        </div>
+      </div>
     </header>
 
-    <!-- Menu mobile -->
+    <!-- ==================================================
+         MENU MOBILE
+         ================================================== -->
+
     <nav
       class="mobile-navigation"
       id="mobile-navigation"
@@ -94,6 +189,10 @@
       </div>
     </nav>
 
+    <!-- ==================================================
+         CONTENU PRINCIPAL
+         ================================================== -->
+
     <main>
 
       <!-- Présentation -->
@@ -104,7 +203,10 @@
         <div class="opening-copy">
 
           <p class="eyebrow">
-            <span class="live-dot" aria-hidden="true"></span>
+            <span
+              class="live-dot"
+              aria-hidden="true"
+            ></span>
             APPRENDRE · COMPRENDRE · RELIER
           </p>
 
@@ -119,56 +221,6 @@
             des découvertes.
           </p>
 
-          <!-- Recherche -->
-          <form id="portal-search" role="search">
-
-            <label for="portal-search-input">
-              Rechercher dans tous les cours
-            </label>
-
-            <div class="portal-search-row">
-
-              <input
-                id="portal-search-input"
-                type="search"
-                name="q"
-                placeholder="Ex. : Mésopotamie"
-                autocomplete="off"
-                aria-label="Rechercher un domaine ou un chapitre"
-                required
-              >
-
-              <button
-                type="submit"
-                aria-label="Lancer la recherche"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <circle cx="10.8" cy="10.8" r="6.8"></circle>
-                  <path d="m16 16 4.5 4.5"></path>
-                </svg>
-              </button>
-
-            </div>
-
-            <div
-              id="portal-search-results"
-              aria-live="polite"
-              aria-atomic="true"
-            ></div>
-
-          </form>
-
           <a class="opening-link" href="#cours">
             Entrer dans les cours
             <span aria-hidden="true">↓</span>
@@ -177,7 +229,10 @@
         </div>
 
         <!-- Illustration décorative -->
-        <div class="opening-art" aria-hidden="true">
+        <div
+          class="opening-art"
+          aria-hidden="true"
+        >
 
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
@@ -197,7 +252,10 @@
         </div>
       </section>
 
-      <!-- Catalogue des cours -->
+      <!-- ==================================================
+           CATALOGUE DES COURS
+           ================================================== -->
+
       <section
         class="course-section"
         id="cours"
@@ -208,6 +266,7 @@
 
           <div>
             <p class="eyebrow">LE CATALOGUE</p>
+
             <h2 id="courses-title">
               Choisir une discipline
             </h2>
@@ -220,6 +279,7 @@
 
         </div>
 
+        <!-- Rempli par courses-render.js -->
         <div
           class="course-list"
           id="course-list"
@@ -229,11 +289,18 @@
 
     </main>
 
-    <!-- Pied de page -->
+    <!-- ==================================================
+         PIED DE PAGE
+         ================================================== -->
+
     <footer class="site-footer">
 
       <a class="brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true">K</span>
+        <span
+          class="brand-mark"
+          aria-hidden="true"
+        >K</span>
+
         <span>LA CONNAISSANCE</span>
       </a>
 
