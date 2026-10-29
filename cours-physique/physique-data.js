@@ -6549,6 +6549,320 @@
   ]
 },
 
+{
+  id: 'astrophysique-particules',
+  title: 'Astrophysique et cosmologie des particules',
+  note: 'Relier la physique des particules à l’histoire thermique de l’Univers, à la nucléosynthèse primordiale, au fond diffus cosmologique, aux neutrinos, à la matière noire et à l’énergie sombre en distinguant les résultats établis des hypothèses encore testées.',
+  chapters: [
+    {
+      id: 'modele-standard-et-univers',
+      title: 'Particules élémentaires et cadre physique de la cosmologie',
+      field: 'Physique des particules · cosmologie théorique',
+      summary: 'Le Modèle standard, ses constituants et ses limites, ainsi que les grandeurs qui relient les expériences de laboratoire à l’Univers primordial.',
+      lesson: {
+        sections: [
+          'Le Modèle standard de la physique des particules décrit les quarks, les leptons et les interactions forte, faible et électromagnétique, avec leurs particules médiatrices. Les quarks s’assemblent notamment pour former les hadrons, dont les protons et les neutrons ; les électrons sont des leptons. Les neutrinos sont également des leptons, électriquement neutres et de masse très faible, mais non nulle. Le boson de Higgs est associé au champ de Higgs, dont l’interaction contribue à la masse des particules élémentaires. Ce cadre est solidement testé par les expériences, mais il n’inclut pas la gravitation comme interaction quantifiée et ne fournit pas, à lui seul, une explication complète de la matière noire ni de l’asymétrie cosmique entre matière et antimatière.',
+          'La cosmologie des particules applique les lois microscopiques à un Univers très jeune, chaud et dense. Dans ce milieu, les collisions pouvaient convertir l’énergie en paires particule-antiparticule lorsque l’énergie disponible était suffisante ; les réactions inverses transformaient aussi ces paires en rayonnement. À mesure que l’Univers se dilatait, sa température moyenne diminuait et certaines réactions devenaient trop rares pour maintenir les espèces en équilibre. Le moment où une espèce cesse d’interagir assez souvent pour rester en équilibre est souvent appelé découplage ou gel thermique, selon le processus considéré. Ces notions permettent de relier des propriétés de particules à des traces cosmologiques mesurables aujourd’hui.',
+          'Il faut séparer les résultats établis, les inférences du modèle et les hypothèses. La découverte du boson de Higgs et les mesures des propriétés des particules sont des résultats expérimentaux ; l’histoire thermique de l’Univers est reconstruite en confrontant des modèles à plusieurs observations indépendantes. En revanche, les particules candidates de matière noire, les mécanismes exacts de la baryogenèse et la physique de l’inflation ne sont pas tous identifiés. Une théorie proposée peut être mathématiquement cohérente sans avoir été confirmée par l’expérience. Cette distinction est essentielle : l’absence actuelle de détection directe d’une particule de matière noire ne signifie pas que les effets gravitationnels attribués à la matière noire sont absents des observations.',
+          'La température T est une mesure de l’échelle énergétique caractéristique d’un milieu en équilibre thermique. En physique des particules, on exprime fréquemment l’énergie en électronvolts ; la constante de Boltzmann relie température et énergie. La relation E ≈ k_B T donne une échelle typique, pas l’énergie exacte de chaque particule : un gaz thermique possède une distribution d’énergies. Dans l’Univers primordial, cette relation permet d’estimer quelles réactions étaient thermiquement accessibles, à condition de tenir compte des distributions statistiques et des seuils propres à chaque réaction.'
+        ],
+        formula: {
+          label: 'ÉCHELLE ÉNERGÉTIQUE THERMIQUE',
+          text: 'E ≈ k_B T'
+        },
+        example: {
+          statement: 'Estimer l’échelle énergétique k_B T à T = 10⁹ K, avec k_B = 8,617 × 10⁻⁵ eV·K⁻¹.',
+          calculation: 'k_B T = 8,617 × 10⁻⁵ eV·K⁻¹ × 10⁹ K.',
+          answer: 'k_B T ≈ 8,62 × 10⁴ eV, soit environ 86 keV. Il s’agit d’une échelle thermique caractéristique, et non de l’énergie de toutes les particules du milieu.'
+        },
+        exercise: {
+          question: 'Citer deux limites du Modèle standard pertinentes pour la cosmologie.',
+          answer: 'Il n’intègre pas la gravitation dans sa description quantique et n’identifie pas la nature de la matière noire. Il n’explique pas non plus à lui seul l’asymétrie observée entre matière et antimatière.'
+        },
+        equationDetails: [
+          {
+            title: 'Énergie thermique caractéristique',
+            formula: 'E ≈ k_B T',
+            explanation: 'La relation convertit une température en échelle énergétique. Le signe ≈ rappelle qu’il s’agit d’un ordre de grandeur utile ; la moyenne exacte dépend de la statistique et de la définition de l’énergie considérée.',
+            parameters: 'E : énergie (eV ou J) ; k_B : constante de Boltzmann (8,617 × 10⁻⁵ eV·K⁻¹) ; T : température absolue (K).',
+            example: 'À 10⁹ K, k_B T vaut environ 86 keV.',
+            result: 'Les énergies thermiques deviennent comparables à certains seuils de réactions nucléaires, mais chaque réaction doit être étudiée séparément.'
+          },
+          {
+            title: 'Équivalence masse-énergie',
+            formula: 'E = mc²',
+            explanation: 'Cette relation relie l’énergie de masse au repos à la masse. Elle aide à comprendre pourquoi une collision suffisamment énergétique peut produire de nouvelles particules, sous réserve de respecter les lois de conservation et la cinématique de la réaction.',
+            parameters: 'E : énergie (J) ; m : masse au repos (kg) ; c : vitesse de la lumière dans le vide (m·s⁻¹).',
+            example: 'La production d’une paire particule-antiparticule exige au minimum l’énergie de masse correspondante dans le référentiel du centre de masse, avec d’éventuelles exigences cinématiques supplémentaires.',
+            result: 'L’énergie peut être convertie en masse de particules, et inversement, conformément aux lois de conservation.'
+          }
+        ],
+        sources: [
+          { title: 'CERN — Le Modèle standard', url: 'https://home.web.cern.ch/fr/science/physics/standard-model/' },
+          { title: 'OpenStax Astronomy 2e — 29.3 The Beginning of the Universe', url: 'https://openstax.org/books/astronomy-2e/pages/29-3-the-beginning-of-the-universe' },
+          { title: 'Particle Data Group — Astrophysics & Cosmology (2025)', url: 'https://pdg.lbl.gov/2025/reviews/astro-cosmo.html' }
+        ]
+      }
+    },
+    {
+      id: 'univers-chaud-et-histoire-thermique',
+      title: 'Univers chaud, expansion et histoire thermique',
+      field: 'Cosmologie primordiale · thermodynamique relativiste',
+      summary: 'Expansion de l’espace, refroidissement cosmique, équilibre thermique et étapes clés de l’évolution de l’Univers primordial.',
+      lesson: {
+        sections: [
+          'Le modèle du Big Bang chaud décrit un Univers qui s’est dilaté depuis un état passé plus chaud et plus dense. Il ne s’agit pas d’une explosion à partir d’un point dans un espace préexistant : dans le modèle cosmologique, c’est l’échelle de l’espace lui-même qui évolue. À grande échelle, le modèle standard de la cosmologie suppose un Univers homogène et isotrope en moyenne, tout en permettant des fluctuations locales qui deviendront les structures observées. La relativité générale relie l’expansion au contenu énergétique et à la géométrie de l’Univers ; les observations de l’expansion, du fond diffus cosmologique et des abondances des éléments légers soutiennent ce cadre.',
+          'Dans un Univers en expansion, la longueur d’onde des photons libres s’étire avec le facteur d’échelle a(t). Leur énergie diminue donc avec l’expansion. Pour le rayonnement thermique en équilibre, la température varie comme l’inverse du facteur d’échelle, T ∝ 1/a, tant que l’évolution ne comporte pas d’injection d’entropie ou d’effet supplémentaire pertinent. L’Univers primordial est ainsi passé de conditions où les réactions de particules étaient très fréquentes à des conditions où certaines espèces se sont découplées, où les nucléons ont formé des noyaux légers, puis où les électrons ont pu se lier aux noyaux pour former des atomes neutres.',
+          'Les étapes très précoces ne sont pas toutes observées directement. La physique des premières fractions de seconde est reconstruite à partir des théories testées en laboratoire et de leurs conséquences cosmologiques. Le modèle du Big Bang chaud n’établit pas, à lui seul, ce qui s’est passé à l’instant initial ni si la notion classique d’un début demeure valable à des échelles où la gravitation quantique serait nécessaire. L’inflation cosmique est une hypothèse de phase d’expansion accélérée très précoce, proposée pour expliquer certaines propriétés à grande échelle ; plusieurs modèles inflationnaires existent, et le mécanisme physique exact n’est pas établi.',
+          'Une idée centrale est que les observations actuelles sont des archives physiques. Les abondances de deutérium et d’hélium renseignent sur les conditions de la nucléosynthèse primordiale ; le fond diffus micro-onde provient d’une époque où les photons ont pu voyager librement après la recombinaison ; la distribution des galaxies conserve l’empreinte de petites fluctuations initiales amplifiées par la gravité. Aucune observation ne fournit seule toute l’histoire : les paramètres cosmologiques sont estimés en combinant des mesures et en comparant les données à un modèle explicite.'
+        ],
+        formula: {
+          label: 'REFROIDISSEMENT DU RAYONNEMENT',
+          text: 'T ∝ 1 / a(t)'
+        },
+        example: {
+          statement: 'Dans un modèle où le rayonnement se dilue adiabatiquement, le facteur d’échelle est multiplié par 2. Comment évolue sa température ?',
+          calculation: 'T₂ / T₁ = a₁ / a₂ = 1 / 2.',
+          answer: 'La température du rayonnement est divisée par 2. Cette relation concerne le rayonnement cosmologique libre dans les conditions précisées ; elle ne décrit pas sans nuance tous les composants de l’Univers.'
+        },
+        exercise: {
+          question: 'Pourquoi la détection du fond diffus cosmologique ne permet-elle pas d’observer directement l’Univers à toutes les époques antérieures ?',
+          answer: 'Avant la recombinaison, l’Univers était un plasma opaque aux photons, fréquemment diffusés par les électrons libres. Le fond diffus observé nous renseigne directement sur l’époque où le rayonnement s’est découplé, pas sur une image optique directe des périodes plus anciennes.'
+        },
+        equationDetails: [
+          {
+            title: 'Température du rayonnement et facteur d’échelle',
+            formula: 'T ∝ 1 / a(t)',
+            explanation: 'Pour le rayonnement thermique qui se dilue sans injection importante d’entropie, l’étirement des longueurs d’onde accompagne la baisse de température. La constante de proportionnalité dépend de la normalisation choisie pour le facteur d’échelle.',
+            parameters: 'T : température du rayonnement (K) ; a(t) : facteur d’échelle cosmologique, grandeur sans dimension selon la convention adoptée.',
+            example: 'Si a double, T est divisée par deux dans ce régime.',
+            result: 'L’expansion entraîne le refroidissement du rayonnement cosmologique.'
+          },
+          {
+            title: 'Décalage vers le rouge cosmologique',
+            formula: '1 + z = a(t₀) / a(tₑ)',
+            explanation: 'Dans un modèle cosmologique homogène, le décalage vers le rouge d’un photon libre est relié au rapport du facteur d’échelle entre l’émission et l’observation. La relation suppose les conventions usuelles du modèle cosmologique et ne doit pas être confondue avec un simple effet Doppler dans tous les contextes.',
+            parameters: 'z : décalage vers le rouge ; a(t₀) : facteur d’échelle aujourd’hui ; a(tₑ) : facteur d’échelle à l’émission.',
+            example: 'Pour une émission à z = 1, le facteur d’échelle à l’émission vaut la moitié de sa valeur actuelle si a(t₀) = 1.',
+            result: 'Le décalage vers le rouge permet de relier les observations à l’histoire de l’expansion.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 29.2 A Model of the Universe', url: 'https://openstax.org/books/astronomy-2e/pages/29-2-a-model-of-the-universe' },
+          { title: 'OpenStax Astronomy 2e — 29.3 The Beginning of the Universe', url: 'https://openstax.org/books/astronomy-2e/pages/29-3-the-beginning-of-the-universe' },
+          { title: 'Particle Data Group — Big-Bang cosmology', url: 'https://pdg.lbl.gov/2025/reviews/astro-cosmo.html' },
+          { title: 'Royal Society — Higgs cosmology', url: 'https://royalsocietypublishing.org/doi/10.1098/rsta.2017.0128' }
+        ]
+      }
+    },
+    {
+      id: 'asymetrie-matiere-antimatiere-et-nucleosynthese',
+      title: 'Matière, antimatière et nucléosynthèse primordiale',
+      field: 'Physique nucléaire · baryogenèse · Univers primordial',
+      summary: 'Annihilation et production de paires, asymétrie baryonique et formation des premiers noyaux légers.',
+      lesson: {
+        sections: [
+          'À haute température, le rayonnement pouvait produire des paires de particules et d’antiparticules si les conditions énergétiques et les lois de conservation le permettaient. Les particules et antiparticules pouvaient également s’annihiler pour donner d’autres particules, souvent des photons. Si matière et antimatière avaient été produites en quantités exactement égales et étaient restées en équilibre jusqu’à leur annihilation complète, il resterait très peu de matière baryonique ordinaire. Or l’Univers observable contient une abondance nette de matière. Cette asymétrie matière-antimatière est un fait cosmologique majeur, mais le mécanisme précis qui l’a créée n’est pas identifié de manière définitive.',
+          'Les scénarios de baryogenèse cherchent à expliquer comment un excès de baryons a pu apparaître à partir d’un état primordial. Dans les cadres usuels, les conditions de Sakharov requièrent des processus qui violent le nombre baryonique, une violation des symétries C et CP, et un état hors équilibre thermique. Ces conditions sont nécessaires dans le raisonnement classique, mais ne suffisent pas à démontrer qu’un scénario particulier s’est réellement produit. Le Modèle standard contient des sources de violation de CP, mais les évaluations usuelles concluent qu’elles ne suffisent pas à expliquer l’asymétrie cosmique observée dans les scénarios standards. Des mécanismes au-delà du Modèle standard sont étudiés, sans qu’un scénario unique soit confirmé.',
+          'Quelques minutes après le début de l’expansion chaude, lorsque la température a suffisamment baissé, les protons et les neutrons ont pu former des noyaux légers : principalement de l’hélium-4, ainsi que du deutérium, de l’hélium-3 et de petites quantités de lithium-7. Cette nucléosynthèse primordiale dépend notamment du taux d’expansion, de la densité baryonique et des taux des réactions nucléaires. Les éléments plus lourds que le lithium n’ont pas été produits en quantités significatives par cette phase ; leur production s’est faite principalement dans les étoiles et lors d’événements astrophysiques ultérieurs. Comparer les abondances prévues et observées constitue un test important du modèle du Big Bang chaud.',
+          'La densité baryonique est aujourd’hui contrainte par plusieurs ensembles de données, notamment les abondances des éléments légers et les anisotropies du fond diffus cosmologique. Il ne faut pas confondre les baryons — particules composées de trois quarks, comme les protons et les neutrons — avec toute la matière de l’Univers : la matière noire ne se comporte pas comme un réservoir supplémentaire de baryons dans les calculs de nucléosynthèse. La cohérence entre les abondances primordiales, le fond diffus et d’autres mesures renforce le modèle cosmologique, tandis que les écarts entre prédictions et mesures d’un élément donné doivent être examinés en tenant compte des incertitudes nucléaires et astrophysiques.'
+        ],
+        formula: {
+          label: 'PARAMÈTRE DE DENSITÉ BARYONIQUE',
+          text: 'Ω_b = ρ_b / ρ_crit'
+        },
+        example: {
+          statement: 'Dans un modèle cosmologique donné, la densité baryonique vaut ρ_b = 4,2 × 10⁻²⁸ kg·m⁻³ et la densité critique ρ_crit = 8,5 × 10⁻²⁷ kg·m⁻³. Calculer Ω_b.',
+          calculation: 'Ω_b = (4,2 × 10⁻²⁸) / (8,5 × 10⁻²⁷) ≈ 0,049.',
+          answer: 'Ω_b ≈ 0,049, soit environ 4,9 % de la densité critique dans cet exemple numérique. Ce résultat dépend des valeurs de densité fournies et ne constitue pas une mesure universelle indépendante du modèle.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale existe-t-il entre la nucléosynthèse primordiale et la production des éléments lourds dans les étoiles ?',
+          answer: 'La nucléosynthèse primordiale a produit surtout des noyaux légers durant les premières minutes. La majorité des éléments plus lourds ont été fabriqués plus tard par des réactions stellaires et par certains événements astrophysiques violents.'
+        },
+        equationDetails: [
+          {
+            title: 'Paramètre de densité baryonique',
+            formula: 'Ω_b = ρ_b / ρ_crit',
+            explanation: 'Ce paramètre sans dimension compare la densité moyenne de matière baryonique à la densité critique associée au taux d’expansion du modèle cosmologique. Sa valeur inférée dépend des données et du cadre cosmologique utilisé.',
+            parameters: 'Ω_b : paramètre de densité baryonique ; ρ_b : densité moyenne de baryons (kg·m⁻³) ; ρ_crit : densité critique (kg·m⁻³).',
+            example: 'Avec ρ_b = 4,2 × 10⁻²⁸ kg·m⁻³ et ρ_crit = 8,5 × 10⁻²⁷ kg·m⁻³, Ω_b ≈ 0,049.',
+            result: 'La densité baryonique représente alors environ 4,9 % de la densité critique dans l’exemple.'
+          },
+          {
+            title: 'Équivalence énergétique dans l’annihilation',
+            formula: 'E = mc²',
+            explanation: 'L’énergie de masse des particules initiales peut contribuer à l’énergie des produits d’annihilation. Le détail du bilan doit respecter l’énergie, la quantité de mouvement et les autres nombres quantiques conservés dans la réaction considérée.',
+            parameters: 'E : énergie (J) ; m : masse équivalente (kg) ; c : vitesse de la lumière dans le vide (m·s⁻¹).',
+            example: 'Une paire électron-positron au repos peut s’annihiler en photons dont l’énergie totale correspond à l’énergie de masse initiale, en l’absence d’énergie cinétique initiale.',
+            result: 'L’annihilation transforme l’énergie de masse en énergie des produits ; elle n’explique pas à elle seule l’origine de l’asymétrie cosmique.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 29.3 The Beginning of the Universe', url: 'https://openstax.org/books/astronomy-2e/pages/29-3-the-beginning-of-the-universe' },
+          { title: 'Particle Data Group — Big-Bang nucleosynthesis and cosmology reviews', url: 'https://pdg.lbl.gov/2025/reviews/astro-cosmo.html' },
+          { title: 'CERN — Le Modèle standard', url: 'https://home.web.cern.ch/fr/science/physics/standard-model/' },
+          { title: 'Royal Society — Higgs cosmology', url: 'https://royalsocietypublishing.org/doi/10.1098/rsta.2017.0128' }
+        ]
+      }
+    },
+    {
+      id: 'fond-diffus-et-neutrinos-cosmiques',
+      title: 'Fond diffus cosmologique et neutrinos reliques',
+      field: 'Cosmologie observationnelle · physique des neutrinos',
+      summary: 'Le rayonnement fossile, ses anisotropies et les traces cosmologiques laissées par les neutrinos du jeune Univers.',
+      lesson: {
+        sections: [
+          'Le fond diffus cosmologique (CMB, pour Cosmic Microwave Background) est le rayonnement électromagnétique fossile libéré lorsque l’Univers est devenu suffisamment froid pour que les électrons se lient aux noyaux et forment des atomes neutres. Avant cette époque, les photons étaient fréquemment diffusés par les électrons libres et ne se propageaient pas librement sur de grandes distances. Le CMB observé aujourd’hui possède un spectre presque parfait de corps noir à une température moyenne d’environ 2,725 K. Ses petites anisotropies de température et de polarisation encodent des informations sur les fluctuations primordiales, la géométrie, le contenu matériel et l’évolution de l’Univers.',
+          'Le CMB ne constitue pas une photographie de l’instant initial : il sonde principalement la surface de dernière diffusion, lorsque les photons se sont découplés de la matière. Les variations angulaires du rayonnement sont analysées à l’aide de spectres de puissance et comparées à des prédictions théoriques. Dans le cadre du modèle ΛCDM minimal, l’ajustement de ces données fournit des contraintes précises sur les paramètres cosmologiques. Les pourcentages de matière ordinaire, de matière noire et d’énergie sombre souvent cités sont donc des estimations issues d’un modèle et d’ensembles de données déterminés, et non une composition mesurée sans hypothèse.',
+          'Les neutrinos ont quitté l’équilibre thermique avec le plasma primordial beaucoup plus tôt que les photons du CMB, lorsque les interactions faibles sont devenues trop rares par rapport à l’expansion. Le modèle du Big Bang chaud prédit donc un fond cosmologique de neutrinos reliques, souvent appelé CνB. Ce fond n’a pas été détecté directement à ce jour. Cependant, les neutrinos influencent l’expansion et la formation des structures, et leur masse totale affecte la distribution de matière à grande échelle. Les contraintes cosmologiques complètent les expériences de laboratoire sur les oscillations de neutrinos, qui démontrent que les neutrinos ont des masses non nulles mais ne déterminent pas seules leur échelle de masse absolue.',
+          'L’intérêt de ces deux messagers est complémentaire. Les photons du CMB nous renseignent sur une époque où l’Univers avait déjà environ 380 000 ans, tandis que les neutrinos reliques ont pu se découpler alors que l’Univers n’avait qu’environ une seconde, dans le cadre standard. Cette différence ouvre une fenêtre théorique sur des époques plus anciennes, même si l’observation directe du fond de neutrinos reste hors de portée des techniques actuelles. Les prédictions précises dépendent du contenu en particules, de l’histoire thermique et des hypothèses cosmologiques ; les résultats doivent donc être rapportés avec leurs incertitudes et leurs conditions de validité.'
+        ],
+        formula: {
+          label: 'LOI DE DÉCALAGE DU SPECTRE THERMIQUE',
+          text: 'T_CMB ∝ 1 / a(t)'
+        },
+        example: {
+          statement: 'Si le facteur d’échelle de l’Univers a augmenté d’un facteur 1 000 depuis une époque où le rayonnement était en équilibre thermique, quelle relation relie les températures dans l’approximation adiabatique ?',
+          calculation: 'T_aujourd’hui / T_époque = a_époque / a_aujourd’hui = 1 / 1 000.',
+          answer: 'La température du rayonnement est alors mille fois plus basse qu’à l’époque considérée. Pour le CMB actuel, la température mesurée est d’environ 2,725 K ; l’application à une époque précise nécessite le facteur d’échelle correspondant.'
+        },
+        exercise: {
+          question: 'Pourquoi les neutrinos reliques peuvent-ils informer sur une époque antérieure à celle directement sondée par le CMB ?',
+          answer: 'Les neutrinos se sont découplés du plasma primordial plus tôt que les photons du CMB, car leurs interactions faibles sont devenues inefficaces plus tôt. Leur fond cosmologique est prédit, mais pas encore directement détecté.'
+        },
+        equationDetails: [
+          {
+            title: 'Refroidissement du fond diffus',
+            formula: 'T ∝ 1 / a(t)',
+            explanation: 'Pour un rayonnement libre dans l’expansion cosmologique, la longueur d’onde est étirée et la température caractéristique baisse comme l’inverse du facteur d’échelle. Cette relation ne remplace pas le calcul complet de l’histoire thermique si des espèces se découplent ou transfèrent de l’entropie au plasma.',
+            parameters: 'T : température du rayonnement (K) ; a(t) : facteur d’échelle.',
+            example: 'Une augmentation d’un facteur 1 000 du facteur d’échelle correspond à une baisse de température d’un facteur 1 000 dans cette approximation.',
+            result: 'Le CMB est aujourd’hui refroidi à environ 2,725 K.'
+          },
+          {
+            title: 'Densité critique',
+            formula: 'ρ_crit = 3H² / (8πG)',
+            explanation: 'Dans le cadre des équations de Friedmann usuelles, la densité critique est la densité totale qui correspond à une courbure spatiale nulle pour une valeur donnée du taux d’expansion H. Les paramètres dérivés du CMB sont généralement inférés au sein d’un modèle cosmologique explicite.',
+            parameters: 'ρ_crit : densité critique (kg·m⁻³) ; H : taux d’expansion à l’époque considérée (s⁻¹) ; G : constante gravitationnelle.',
+            example: 'La valeur actuelle s’obtient en utilisant le taux d’expansion actuel H₀, dont la valeur dépend des mesures et de la méthode d’inférence.',
+            result: 'Cette quantité sert à définir les paramètres de densité cosmologiques sans dimension.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 29.4 The Cosmic Microwave Background', url: 'https://openstax.org/books/astronomy-2e/pages/29-4-the-cosmic-microwave-background' },
+          { title: 'Particle Data Group — Neutrinos in Cosmology', url: 'https://pdg.lbl.gov/2025/reviews/rpp2025-rev-neutrinos-in-cosmology.pdf' },
+          { title: 'Particle Data Group — Astrophysics & Cosmology (2025)', url: 'https://pdg.lbl.gov/2025/reviews/astro-cosmo.html' },
+          { title: 'ESA — Planck and the cosmic microwave background', url: 'https://www.esa.int/Science_Exploration/Space_Science/Planck' }
+        ]
+      }
+    },
+    {
+      id: 'matiere-noire-et-candidats-particulaires',
+      title: 'Matière noire : preuves astrophysiques et candidats particulaires',
+      field: 'Astrophysique des galaxies · physique au-delà du Modèle standard',
+      summary: 'Les indices gravitationnels de matière noire, ses rôles dans la formation des structures et les recherches de particules candidates.',
+      lesson: {
+        sections: [
+          'La matière noire est invoquée pour rendre compte d’un ensemble d’observations gravitationnelles, notamment les vitesses orbitales dans les galaxies, la dynamique des amas, les effets de lentille gravitationnelle et les propriétés du fond diffus cosmologique et de la croissance des structures. Ces indices sont de nature différente et leur cohérence soutient l’existence d’une composante gravitationnelle qui n’émet ni n’absorbe suffisamment de lumière pour être observée comme la matière ordinaire. Le terme « matière noire » désigne ici une composante du modèle cosmologique, mais sa nature microscopique reste inconnue : aucune particule candidate n’a encore été confirmée comme constituant la matière noire cosmique.',
+          'Dans le scénario de matière noire froide (CDM), la composante sombre se déplace lentement par rapport à la vitesse de la lumière au moment où elle joue le rôle principal dans la formation des structures. Elle peut commencer à former des halos gravitationnels dans lesquels le gaz ordinaire s’accumule ensuite, contribuant à la formation des galaxies. Le modèle CDM décrit avec succès plusieurs observations à grande échelle, tout en laissant des questions ouvertes à petite échelle et sur les propriétés microscopiques de la matière noire. Ces questions motivent à la fois des simulations numériques, des études astronomiques et des recherches de laboratoire.',
+          'Les candidats étudiés comprennent les WIMPs, les axions et d’autres particules hypothétiques prédites par des extensions du Modèle standard. Les WIMPs sont des particules massives à interactions faibles dans une classe de scénarios ; les axions ont d’abord été proposés pour résoudre un problème de symétrie en chromodynamique quantique et peuvent aussi constituer un candidat de matière noire dans certaines conditions cosmologiques. Ces exemples ne forment pas une liste exhaustive et aucun ne doit être présenté comme détecté. Les recherches se répartissent entre détection directe, qui cherche un dépôt d’énergie dû à une interaction dans un détecteur ; détection indirecte, qui cherche des produits éventuels d’annihilation ou de désintégration ; et recherche de nouvelles particules dans les collisionneurs.',
+          'Une limite expérimentale exclut ou contraint un domaine de paramètres sous des hypothèses précises ; elle ne prouve pas l’inexistence de toute matière noire. Les interprétations dépendent notamment de la masse, de la section efficace d’interaction, de la distribution locale de matière noire et du modèle de signal. Il faut aussi distinguer les observations gravitationnelles, qui établissent des effets à expliquer, des détections microscopiques, qui identifieraient une particule. Une conclusion rigoureuse précise toujours quel signal a été mesuré, quelles hypothèses ont été utilisées et quelles régions de l’espace des paramètres restent ouvertes.'
+        ],
+        formula: {
+          label: 'ÉQUATION DE LA DYNAMIQUE CIRCULAIRE NEWTONIENNE',
+          text: 'v²(r) = G M(<r) / r'
+        },
+        example: {
+          statement: 'Pour une orbite circulaire dans une approximation newtonienne, une masse intérieure M(<r) = 1,0 × 10¹¹ M☉ se trouve à r = 10 kpc. Estimer la vitesse circulaire, avec M☉ = 1,989 × 10³⁰ kg, 1 kpc = 3,086 × 10¹⁹ m et G = 6,674 × 10⁻¹¹ SI.',
+          calculation: 'v = √(GM/r), avec M ≈ 1,989 × 10⁴¹ kg et r ≈ 3,086 × 10²⁰ m.',
+          answer: 'v ≈ 2,07 × 10⁵ m·s⁻¹, soit environ 207 km·s⁻¹. Le calcul illustre la dynamique gravitationnelle ; il ne démontre pas à lui seul la présence de matière noire sans comparer les masses lumineuses, la distribution de masse et les observations.'
+        },
+        exercise: {
+          question: 'Quelle est la différence entre une preuve gravitationnelle de matière noire et une détection directe d’une particule candidate ?',
+          answer: 'Les observations gravitationnelles contraignent la distribution de masse nécessaire pour expliquer la dynamique ou la lentille gravitationnelle. Une détection directe rechercherait une interaction microscopique de la particule avec un détecteur et devrait être caractérisée et confirmée.'
+        },
+        equationDetails: [
+          {
+            title: 'Vitesse circulaire dans un potentiel newtonien sphérique',
+            formula: 'v²(r) = G M(<r) / r',
+            explanation: 'Pour une orbite circulaire dans un champ gravitationnel approximativement sphérique, l’accélération centripète est égale à l’accélération gravitationnelle. Cette relation est une approximation utile à des échelles galactiques, où un traitement newtonien est généralement adéquat pour cette estimation.',
+            parameters: 'v : vitesse circulaire (m·s⁻¹) ; G : constante gravitationnelle ; M(<r) : masse contenue à l’intérieur du rayon r (kg) ; r : rayon orbital (m).',
+            example: 'Pour M(<r) = 10¹¹ M☉ et r = 10 kpc, v est de l’ordre de 207 km·s⁻¹.',
+            result: 'La courbe de rotation peut être comparée à la distribution de matière lumineuse pour contraindre la masse totale.'
+          },
+          {
+            title: 'Paramètre de densité de matière noire',
+            formula: 'Ω_c = ρ_cdm / ρ_crit',
+            explanation: 'Ce paramètre compare la densité moyenne de matière noire froide dans le modèle à la densité critique. Sa valeur est inférée en ajustant un ensemble de données à un modèle cosmologique ; elle n’est pas une mesure directe de la masse d’une particule individuelle.',
+            parameters: 'Ω_c : paramètre de densité de matière noire froide ; ρ_cdm : densité moyenne de matière noire froide ; ρ_crit : densité critique.',
+            example: 'Un ajustement cosmologique fournit une valeur de Ω_c et son incertitude dans le cadre du modèle choisi.',
+            result: 'Les paramètres cosmologiques contraignent la quantité de matière noire, mais pas automatiquement son identité microscopique.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 29.5 What Is the Universe Really Made Of?', url: 'https://openstax.org/books/astronomy-2e/pages/29-5-what-is-the-universe-really-made-of' },
+          { title: 'Cambridge University Press — Particle Dark Matter', url: 'https://www.cambridge.org/core/books/particle-dark-matter/B03C934EAB188884EFC6B02432632496' },
+          { title: 'Particle Data Group — Dark matter review', url: 'https://pdg.lbl.gov/2025/reviews/astro-cosmo.html' },
+          { title: 'CERN — Le Modèle standard et ses questions ouvertes', url: 'https://home.web.cern.ch/fr/science/physics/standard-model/' }
+        ]
+      }
+    },
+    {
+      id: 'energie-sombre-inflation-et-structures',
+      title: 'Énergie sombre, inflation et formation des structures',
+      field: 'Cosmologie physique · gravitation · grandes structures',
+      summary: 'Expansion accélérée, constante cosmologique, inflation et croissance des fluctuations qui donnent naissance aux galaxies.',
+      lesson: {
+        sections: [
+          'Les observations de supernovæ lointaines, combinées à d’autres données cosmologiques, indiquent que l’expansion de l’Univers est aujourd’hui accélérée dans le cadre standard. Le modèle ΛCDM décrit cette accélération au moyen d’une constante cosmologique Λ, équivalente à une densité d’énergie du vide constante dans l’espace-temps. Le terme « énergie sombre » désigne de façon plus générale la composante ou le mécanisme utilisé pour rendre compte de l’accélération. Sa nature physique n’est pas connue avec certitude. Des modèles de champ dynamique et des modifications de la gravitation sont étudiés, mais ils doivent être confrontés aux mêmes données et à leurs incertitudes.',
+          'La constante cosmologique est compatible avec un paramètre d’état w = p/(ρc²) égal à −1, lorsque p désigne la pression et ρ la densité de masse équivalente à l’énergie. Les observations actuelles contraignent fortement l’évolution de l’énergie sombre, mais la compatibilité des données avec w = −1 ne signifie pas que la nature microscopique de l’énergie du vide est comprise. Le problème de la constante cosmologique est une difficulté théorique importante : les estimations naïves de l’énergie du vide issues de la théorie quantique des champs ne s’accordent pas simplement avec la petite valeur inférée en cosmologie. Cette tension conceptuelle ne doit pas être transformée en affirmation qu’une solution unique est déjà connue.',
+          'L’inflation désigne une phase hypothétique d’expansion extrêmement rapide dans l’Univers très jeune. Elle offre une explication possible à plusieurs propriétés observées, notamment la grande homogénéité du CMB à grande échelle et la quasi-platitude spatiale. Dans de nombreux modèles, des fluctuations quantiques associées au champ responsable de l’inflation sont étirées à des échelles cosmologiques et fournissent les germes des structures. Toutefois, le champ, le potentiel et le mécanisme exacts de l’inflation ne sont pas établis ; les modèles doivent être testés par les statistiques des fluctuations du CMB, la structure à grande échelle et d’éventuelles signatures de modes B primordiaux.',
+          'Après les époques primordiales, les petites surdensités de matière ont grandi sous l’effet de la gravité. La matière noire, si elle est décrite par le modèle CDM, peut commencer à structurer des halos avant que le gaz baryonique ne refroidisse et forme des étoiles. La pression du rayonnement et les interactions entre photons et baryons ont affecté les fluctuations avant le découplage, laissant une signature dans le CMB et les oscillations acoustiques baryoniques. Les relevés de galaxies, les lentilles gravitationnelles et les mesures du fond diffus permettent de tester cette évolution. La formation des structures dépend de plusieurs composants et paramètres ; il est donc incorrect d’attribuer toutes les propriétés observées à une seule espèce de particule.'
+        ],
+        formula: {
+          label: 'PARAMÈTRE D’ÉTAT COSMOLOGIQUE',
+          text: 'w = p / (ρ c²)'
+        },
+        example: {
+          statement: 'Pour une constante cosmologique, le paramètre d’état est w = −1. Que signifie cette valeur dans le modèle standard ?',
+          calculation: 'En utilisant w = p/(ρc²), w = −1 correspond à p = −ρc².',
+          answer: 'La pression est négative et égale en valeur absolue à la densité d’énergie exprimée comme ρc². Dans le cadre des équations cosmologiques, cette propriété permet à une constante cosmologique de produire une accélération de l’expansion ; elle ne révèle pas à elle seule la nature fondamentale de l’énergie sombre.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre l’inflation cosmique et l’énergie sombre actuelle ?',
+          answer: 'L’inflation désigne une phase d’expansion accélérée hypothétique très précoce, tandis que l’énergie sombre désigne la composante ou le mécanisme associé à l’accélération de l’expansion à l’époque récente. Leur origine commune n’est pas établie.'
+        },
+        equationDetails: [
+          {
+            title: 'Paramètre d’état de l’énergie sombre',
+            formula: 'w = p / (ρ c²)',
+            explanation: 'Le paramètre d’état compare la pression à la densité d’énergie. Pour une constante cosmologique, w = −1. Pour un composant dynamique, w peut dépendre du temps ; les observations cherchent à contraindre cette évolution.',
+            parameters: 'w : paramètre d’état sans dimension ; p : pression ; ρ : densité de masse équivalente à l’énergie ; c : vitesse de la lumière.',
+            example: 'Pour Λ, p = −ρc² et donc w = −1.',
+            result: 'La valeur w = −1 caractérise la constante cosmologique dans le modèle standard, sans résoudre le problème théorique de sa valeur.'
+          },
+          {
+            title: 'Équation de Friedmann pour l’expansion',
+            formula: 'H² = (8πG/3)ρ − k c²/a² + Λc²/3',
+            explanation: 'Cette forme de l’équation de Friedmann relie le taux d’expansion au contenu énergétique, à la courbure spatiale et à la constante cosmologique, dans les conventions cosmologiques usuelles. Les unités de ρ doivent correspondre à une densité de masse équivalente à l’énergie ; les différentes conventions pour Λ et le facteur d’échelle doivent être appliquées de façon cohérente.',
+            parameters: 'H : taux d’expansion ; G : constante gravitationnelle ; ρ : densité totale de masse équivalente ; k : paramètre de courbure ; c : vitesse de la lumière ; a : facteur d’échelle ; Λ : constante cosmologique.',
+            example: 'Dans un modèle plat, k = 0 ; le terme de courbure disparaît de cette équation.',
+            result: 'L’évolution de l’expansion dépend du contenu énergétique, de la courbure et de la constante cosmologique.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy 2e — 29.5 What Is the Universe Really Made Of?', url: 'https://openstax.org/books/astronomy-2e/pages/29-5-what-is-the-universe-really-made-of' },
+          { title: 'OpenStax Astronomy 2e — 29.6 The Inflationary Universe', url: 'https://openstax.org/books/astronomy-2e/pages/29-6-the-inflationary-universe' },
+          { title: 'Royal Society — The cosmological constant and scale hierarchies with emergent gauge symmetries', url: 'https://royalsocietypublishing.org/doi/10.1098/rsta.2023.0092' },
+          { title: 'Royal Society — The cosmological constant problem and running vacuum in the expanding universe', url: 'https://royalsocietypublishing.org/doi/10.1098/rsta.2021.0182' },
+          { title: 'Particle Data Group — Cosmological parameters, inflation and dark energy reviews', url: 'https://pdg.lbl.gov/2025/reviews/astro-cosmo.html' }
+        ]
+      }
+    }
+  ]
+},
+
 
 ];
 
