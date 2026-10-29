@@ -1,227 +1,247 @@
 
-﻿<!doctype html>
-
-
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f1f3ec">
+
     <meta
       name="description"
       content="La connaissance : un espace de cours pour explorer les mathématiques, la physique, la chimie, l'économie, la géologie, la climatologie, la paléontologie, l'anthropologie, l'histoire et la philosophie."
     >
+
     <title>La connaissance · Explorer les cours</title>
+
     <link rel="stylesheet" href="portal.css">
+
     <script src="courses.js?v=3" defer></script>
     <script src="courses-render.js?v=3" defer></script>
     <script src="portal.js?v=3" defer></script>
-  </head>  <body>
+  </head>
+
+  <body>
     <header class="masthead">
-      <a class="brand" 
-<button
-  class="header-search-toggle"
-  type="button"
-  aria-label="Ouvrir la recherche"
-  onclick="document.getElementById('portal-search-input').focus(); document.getElementById('portal-search-input').scrollIntoView({behavior:'smooth', block:'center'});"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="25"
-    height="25"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="1.8"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    aria-hidden="true"
-  >
-    <circle cx="10.8" cy="10.8" r="6.8"></circle>
-    <path d="m16 16 4.5 4.5"></path>
-  </svg>
-</button>
 
- class="top-navigation" aria-label="Navigation principale">
-    <a href="#cours">Explorer</a>
-    <a href="#suite">À venir</a>
-  </nav>
+      <!-- Loupe de recherche en haut à gauche -->
+      <button
+        class="header-search-toggle"
+        type="button"
+        aria-label="Ouvrir la recherche"
+        onclick="document.getElementById('portal-search-input').focus(); document.getElementById('portal-search-input').scrollIntoView({behavior:'smooth', block:'center'});"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="10.8" cy="10.8" r="6.8"></circle>
+          <path d="m16 16 4.5 4.5"></path>
+        </svg>
+      </button>
 
+      <!-- Navigation principale -->
+      <nav
+        class="top-navigation"
+        aria-label="Navigation principale"
+      >
+        <a href="#cours">Explorer</a>
+      </nav>
 
-  <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
+      <span class="masthead-note">UN ESPACE DE SAVOIRS</span>
 
+      <!-- Bouton du menu mobile -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mobile-navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <button
-    class="menu-toggle"
-    type="button"
-    aria-label="Ouvrir le menu"
-    aria-expanded="false"
-    aria-controls="mobile-navigation"
-  >
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</header>
+    </header>
 
+    <!-- Menu mobile -->
+    <nav
+      class="mobile-navigation"
+      id="mobile-navigation"
+      aria-label="Index des disciplines"
+      aria-hidden="true"
+      inert
+    >
+      <div class="mobile-navigation-inner">
 
-<nav
-  class="mobile-navigation"
-  id="mobile-navigation"
-  aria-label="Index des disciplines"
-  aria-hidden="true"
-  inert
->
-  <div class="mobile-navigation-inner">
-    <p class="eyebrow">INDEX DU PORTAIL</p>
+        <p class="eyebrow">INDEX DU PORTAIL</p>
 
+        <a href="#cours" class="mobile-nav-link">
+          <span>00</span> Explorer les cours
+        </a>
 
-    <a href="#cours" class="mobile-nav-link">
-      <span>00</span> Explorer les cours
-    </a>
+        <div id="mobile-course-groups"></div>
 
+      </div>
+    </nav>
 
-    <div id="mobile-course-groups"></div>
+    <main>
 
-    <a href="#suite" class="mobile-nav-link mobile-nav-coming">
-      <span>11+</span> Les disciplines à venir
-    </a>
-  </div>
-</nav>
+      <!-- Présentation -->
+      <section
+        class="opening"
+        aria-labelledby="page-title"
+      >
+        <div class="opening-copy">
 
+          <p class="eyebrow">
+            <span class="live-dot" aria-hidden="true"></span>
+            APPRENDRE · COMPRENDRE · RELIER
+          </p>
 
-<main>
-  <section class="opening" aria-labelledby="page-title">
-    <div class="opening-copy">
-      <p class="eyebrow">
-        <span class="live-dot" aria-hidden="true"></span>
-        APPRENDRE · COMPRENDRE · RELIER
-      </p>
+          <h1 id="page-title">
+            La<br>
+            <em>connaissance</em>
+          </h1>
 
+          <p class="opening-intro">
+            Des cours pour éclairer les idées, des disciplines
+            qui se répondent, un espace qui grandit au fil
+            des découvertes.
+          </p>
 
-      <h1 id="page-title">La<br><em>connaissance</em></h1>
+          <!-- Recherche -->
+          <form id="portal-search" role="search">
 
+            <label for="portal-search-input">
+              Rechercher dans tous les cours
+            </label>
 
-      <p class="opening-intro">
-        Des cours pour éclairer les idées, des disciplines qui se répondent,
-        un espace qui grandit au fil des découvertes.
-      </p>
+            <div class="portal-search-row">
 
-      <form id="portal-search" role="search">
-        <label for="portal-search-input">
-          Rechercher dans tous les cours
-        </label>
+              <input
+                id="portal-search-input"
+                type="search"
+                name="q"
+                placeholder="Ex. : Mésopotamie"
+                autocomplete="off"
+                aria-label="Rechercher un domaine ou un chapitre"
+                required
+              >
 
-        <div class="portal-search-row">
-          <input
-            id="portal-search-input"
-            type="search"
-            name="q"
-            placeholder="Ex. : Mésopotamie"
-            autocomplete="off"
-            aria-label="Rechercher un domaine ou un chapitre"
-            required
-          >
+              <button
+                type="submit"
+                aria-label="Lancer la recherche"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                  <path d="m16 16 4.5 4.5"></path>
+                </svg>
+              </button>
 
-          <button type="submit" aria-label="Lancer la recherche">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.8"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <circle cx="10.8" cy="10.8" r="6.8"></circle>
-              <path d="m16 16 4.5 4.5"></path>
-            </svg>
-          </button>
+            </div>
+
+            <div
+              id="portal-search-results"
+              aria-live="polite"
+              aria-atomic="true"
+            ></div>
+
+          </form>
+
+          <a class="opening-link" href="#cours">
+            Entrer dans les cours
+            <span aria-hidden="true">↓</span>
+          </a>
+
+        </div>
+
+        <!-- Illustration décorative -->
+        <div class="opening-art" aria-hidden="true">
+
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="axis axis-horizontal"></div>
+          <div class="axis axis-vertical"></div>
+
+          <span class="art-symbol symbol-one">x²</span>
+          <span class="art-symbol symbol-two">φ</span>
+          <span class="art-symbol symbol-three">λ</span>
+
+          <span class="art-coordinate">
+            Nº 001<br>
+            48°51′N
+          </span>
+
+        </div>
+      </section>
+
+      <!-- Catalogue des cours -->
+      <section
+        class="course-section"
+        id="cours"
+        aria-labelledby="courses-title"
+      >
+
+        <div class="section-heading">
+
+          <div>
+            <p class="eyebrow">LE CATALOGUE</p>
+            <h2 id="courses-title">
+              Choisir une discipline
+            </h2>
+          </div>
+
+          <span
+            class="section-index"
+            id="course-count"
+          ></span>
+
         </div>
 
         <div
-          id="portal-search-results"
-          aria-live="polite"
-          aria-atomic="true"
+          class="course-list"
+          id="course-list"
         ></div>
-      </form>
 
+      </section>
 
-      <a class="opening-link" href="#cours">
-        Entrer dans les cours <span aria-hidden="true">↓</span>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="site-footer">
+
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span>LA CONNAISSANCE</span>
       </a>
-    </div>
 
+      <span>UNE DISCIPLINE APRÈS L’AUTRE</span>
 
-    <div class="opening-art" aria-hidden="true">
-      <div class="orbit orbit-one"></div>
-      <div class="orbit orbit-two"></div>
-      <div class="axis axis-horizontal"></div>
-      <div class="axis axis-vertical"></div>
-      <span class="art-symbol symbol-one">x²</span>
-      <span class="art-symbol symbol-two">φ</span>
-      <span class="art-symbol symbol-three">λ</span>
-      <span class="art-coordinate">Nº 001<br>48°51′N</span>
-    </div>
-  </section>
+      <a href="#page-title">Retour en haut ↑</a>
 
-
-  <section
-    class="course-section"
-    id="cours"
-    aria-labelledby="courses-title"
-  >
-    <div class="section-heading">
-      <div>
-        <p class="eyebrow">LE CATALOGUE</p>
-        <h2 id="courses-title">Choisir une discipline</h2>
-      </div>
-      <span class="section-index" id="course-count"></span>
-    </div>
-
-
-    <div class="course-list" id="course-list"></div>
-  </section>
-
-
-  <section class="next-section" id="suite" aria-labelledby="next-title">
-    <div class="next-heading">
-      <p class="eyebrow">LE CHAMP S’ÉLARGIT</p>
-      <h2 id="next-title">Et ensuite</h2>
-    </div>
-
-
-    <div class="next-list" aria-label="Disciplines à venir">
-      <div class="next-entry">
-        <span>11</span>
-        <strong>Sciences du vivant</strong>
-        <span class="coming-label">À VENIR</span>
-      </div>
-
-
-      <div class="next-entry">
-        <span>12</span>
-        <strong>Informatique</strong>
-        <span class="coming-label">À VENIR</span>
-      </div>
-    </div>
-  </section>
-</main>
-
-
-<footer class="site-footer">
-  <a class="brand" href="index.html">
-    <span class="brand-mark" aria-hidden="true">K</span>
-    <span>LA CONNAISSANCE</span>
-  </a>
-  <span>UNE DISCIPLINE APRÈS L’AUTRE</span>
-  <a href="#page-title">Retour en haut ↑</a>
-</footer>
-
+    </footer>
 
   </body>
 </html>
