@@ -1028,3 +1028,21 @@ grid-column: 3;
 transition: none;
 }
 }
+
+@media (max-width: 768px) {
+  .masthead-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-search-toggle {
+    order: 1;
+    margin-right: auto;
+  }
+
+  .menu-toggle {
+    order: 2;
+    margin-left: auto;
+  }
+}
