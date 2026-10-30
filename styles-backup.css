@@ -497,6 +497,7 @@ margin: 23px 0;
 padding: 18px 21px 19px;
 border-left: 3px solid var(--green);
 background: #e9eee4;
+overflow-x: auto; 
 }
 
 .formula-accent {
@@ -515,6 +516,7 @@ color: var(--ink);
 font-family: var(--serif);
 font-size: 26px;
 line-height: 1.4;
+white-space: nowrap;
 }
 
 .mathml-display {
@@ -1258,4 +1260,70 @@ font-size: 9px;
 @media (max-width: 380px) { .course-heading h1.is-long-title { font-size: 27px; } }
 
 
+/* Équations détaillées (lesson.equationDetails) */
+.equation-detail > h3 { margin-top: 26px; font-size: 26px; line-height: 1.2; }
+.equation-detail .formula-block { margin: 16px 0 22px; }
+.equation-detail > p {
+  max-width: 730px;
+  margin-bottom: 14px;
+  color: #39453d;
+  line-height: 1.75;
+}
+.equation-detail > p:last-of-type { margin-bottom: 0; color: var(--ink); }
+.equation-detail + .equation-detail {
+  margin-top: 30px;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 700px) {
+  .equation-detail > h3 { font-size: 22px; }
+}
 
+/* Taille du texte des leçons */
+:root { --lesson-size: 19px; }
+@media (max-width: 700px) { :root { --lesson-size: 18px; } }
+
+.lesson-section > p:not(.section-index),
+.equation-detail > p,
+.callout p,
+.case-row p,
+.exercise-answer p,
+.lesson-html p,
+.book-fiche p,
+.mistake-list { font-size: var(--lesson-size); }
+
+.exercise summary > span:nth-child(2) { font-size: calc(var(--lesson-size) - 1px); }
+.reveal-label { font-size: 13px; }
+.method-list li strong { font-size: 16px; }
+.method-list li span { font-size: calc(var(--lesson-size) - 2px); }
+
+
+
+/* Texte justifié dans les chapitres et les leçons */
+.lesson-section > p:not(.section-index),
+.equation-detail > p,
+.callout p,
+.case-row p,
+.exercise-answer p,
+.lesson-html p,
+.book-fiche p,
+.mistake-list {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+/* Marges latérales légèrement augmentées */
+.course-layout,
+.catalogue-layout,
+.lesson-layout {
+  width: min(100% - 96px, 1240px);
+}
+
+@media (max-width: 700px) {
+  .course-layout,
+  .catalogue-layout,
+  .lesson-layout {
+    width: calc(100% - 48px);
+  }
+}
