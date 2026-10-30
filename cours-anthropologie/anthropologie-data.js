@@ -891,5 +891,343 @@ window.courseCatalog = [
         }
       }
     ]
-  }
+  },
+
+{
+  id: 'societes-humaines',
+  sortYear: -2600000,
+  title: 'Origines des sociétés humaines',
+  note: 'Six chapitres approfondis consacrés à la formation des groupes humains, aux premières formes de coopération, au développement des réseaux sociaux, aux sociétés de chasseurs-cueilleurs, à la sédentarisation et à l’apparition des communautés agricoles et des organisations sociales complexes. La chronologie repose sur des indices archéologiques et anthropologiques dont les dates restent approximatives. Les transformations sociales ne se sont pas produites simultanément dans toutes les régions du monde.',
+  chapters: [
+    {
+      id: 'premieres-formes-vie-sociale',
+      title: 'Les premières formes de vie sociale et les origines de la coopération',
+      field: 'Anthropologie évolutive · Paléoanthropologie · De 2,6 millions d’années au Pléistocène',
+      summary: 'Étudier les premiers indices matériels de comportements collectifs, le partage des ressources, la coopération et les conditions écologiques qui ont favorisé le développement des groupes humains.',
+      lesson: {
+        sections: [
+          'Les origines des sociétés humaines ne correspondent pas à une date précise ni à l’apparition soudaine d’une organisation sociale moderne. Les ancêtres humains vivaient déjà dans des groupes sociaux bien avant les premières sociétés agricoles. Les comportements sociaux doivent être étudiés à partir de plusieurs types d’indices : les relations entre individus, les stratégies alimentaires, les traces d’utilisation des ressources, les outils, les lieux d’occupation et les comportements de coopération. Les primates non humains présentent également des formes de vie collective, ce qui montre que la sociabilité humaine s’inscrit dans une histoire évolutive plus ancienne que notre espèce. La particularité humaine réside notamment dans le développement de formes complexes de coopération, d’apprentissage et de transmission culturelle.',
+          'À partir d’environ 2,6 à 1,8 millions d’années, certains sites archéologiques montrent des indices de transport de ressources et de regroupement d’outils et de restes alimentaires. Le site de Kanjera, au Kenya, fournit notamment des indices de transport de matières premières lithiques sur plusieurs kilomètres. Les correspondances géochimiques entre les outils et les sources de pierre permettent de reconnaître ces déplacements. Ces observations suggèrent une organisation des activités au-delà du lieu immédiat de collecte. Elles ne permettent cependant pas de reconstituer directement les règles sociales, les liens familiaux ou les institutions des groupes concernés.',
+          'La coopération constitue un élément majeur de l’évolution sociale humaine. Le partage des ressources, les soins apportés aux jeunes, la protection mutuelle et l’apprentissage des techniques peuvent renforcer les relations entre individus. La longue dépendance des enfants humains implique également des formes importantes de soins et de coopération entre adultes. Les relations sociales ne reposent pas uniquement sur la parenté : les alliances et les échanges entre groupes peuvent élargir les réseaux de solidarité. Les chercheurs étudient ces comportements en combinant les données archéologiques, la primatologie, l’anthropologie comparative et les sciences de l’évolution. Il faut toutefois éviter de projeter directement les organisations des populations actuelles sur les sociétés préhistoriques.'
+        ],
+        example: {
+          statement: 'Sur un site archéologique, des outils en pierre présentent une composition minéralogique correspondant à une source située à 12 km. Que peut-on déduire de cette observation ?',
+          calculation: 'Distance entre le site et la source = 12 km. La comparaison des compositions géochimiques permet de relier les outils à cette source de matière première.',
+          answer: 'Cette observation indique que la matière première a été transportée depuis une source distante. Elle constitue un indice de mobilité et d’organisation des activités. Elle ne permet pas, à elle seule, de déterminer si le transport résulte d’un échange, d’un déplacement individuel ou d’une organisation collective.'
+        },
+        exercise: {
+          question: 'Pourquoi les premières traces de partage et de transport des ressources sont-elles importantes pour comprendre les origines des sociétés humaines ?',
+          answer: 'Elles montrent que certaines activités dépassaient la simple collecte individuelle immédiate et impliquaient des comportements organisés. Elles permettent d’étudier les premières formes de coopération sans prétendre connaître précisément les institutions de ces groupes.'
+        },
+        exercises: [
+          {
+            question: 'Les sociétés humaines sont-elles apparues à une date unique et précisément identifiable ?',
+            answer: 'Non. La formation des comportements sociaux et des organisations collectives est un processus évolutif progressif dont les origines sont difficiles à dater précisément.'
+          },
+          {
+            question: 'Quel type d’indice permet d’identifier le transport de matières premières lithiques sur de longues distances ?',
+            answer: 'La comparaison de la composition géologique ou géochimique des outils avec celle des sources naturelles de pierre.'
+          },
+          {
+            question: 'Pourquoi les comportements sociaux des primates sont-ils étudiés en anthropologie évolutive ?',
+            answer: 'Parce qu’ils permettent de replacer la sociabilité humaine dans une histoire évolutive plus ancienne et de comparer différentes formes de coopération.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian Human Origins — Social Life',
+            url: 'https://humanorigins.si.edu/human-characteristics/social-life'
+          },
+          {
+            title: 'Smithsonian Human Origins — Behavior',
+            url: 'https://humanorigins.si.edu/evidence/behavior'
+          },
+          {
+            title: 'Smithsonian Institution — Human Origins Facts',
+            url: 'https://www.si.edu/stories/human-origins-facts'
+          },
+          {
+            title: 'Smithsonian Institution — Evolution of Human Innovation',
+            url: 'https://humanorigins.si.edu/research/east-african-research-projects/evolution-human-innovation'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cooperation-feu-organisation-collective',
+      title: 'Le feu, les habitats et le développement de la coopération collective',
+      field: 'Anthropologie sociale · Archéologie préhistorique · Pléistocène',
+      summary: 'Comprendre comment les foyers, les abris, les activités partagées et la dépendance prolongée des enfants ont contribué à transformer les relations sociales des groupes humains.',
+      lesson: {
+        sections: [
+          'La maîtrise du feu représente une transformation importante dans l’histoire des comportements humains. Les foyers archéologiques fournissent des indices d’utilisation et de contrôle du feu dans certains contextes préhistoriques. Le site de Gesher Benot Ya’aqov, en Israël, présente notamment des indices de foyers remontant à environ 790 000 ans, avec des concentrations de matériaux brûlés, de graines et de bois. Le feu pouvait fournir de la chaleur, de la lumière et des possibilités de cuisson. Il pouvait également créer des lieux de rassemblement. Toutefois, la présence d’un foyer ne permet pas de connaître directement les conversations, les relations sociales ou les activités exactes qui s’y déroulaient.',
+          'Les abris constituent un autre élément important de l’organisation collective. Les traces de structures aménagées permettent d’étudier la manière dont les groupes occupaient leur environnement et protégeaient leurs membres. Le site de Terra Amata, en France, est associé à des structures d’habitat attribuées au Paléolithique ancien et datées d’environ 400 000 ans. Les trous de poteaux et les autres traces archéologiques servent à proposer des reconstitutions de ces installations. Ces reconstitutions doivent rester prudentes, car les matériaux organiques se conservent rarement et les vestiges ne permettent pas toujours de déterminer la fonction exacte de chaque espace.',
+          'L’organisation collective repose aussi sur les soins, l’apprentissage et la transmission des connaissances. La croissance prolongée des enfants humains implique une dépendance importante envers les adultes. Les techniques de fabrication des outils, la connaissance des ressources alimentaires et les stratégies d’occupation des territoires sont transmises par l’observation et l’apprentissage. La répétition des activités communes favorise la circulation des informations et l’établissement de relations durables. L’archéologie permet d’identifier certains aspects matériels de ces pratiques, mais les formes exactes de division du travail et les structures familiales anciennes restent difficiles à reconstituer.'
+        ],
+        example: {
+          statement: 'Un site archéologique présente plusieurs foyers, des restes de bois brûlé et des outils lithiques à proximité. Quelle interprétation peut être proposée ?',
+          calculation: 'Les indices sont : plusieurs concentrations de matériaux brûlés, des vestiges d’outils et une organisation spatiale des traces. Leur association permet de rechercher une utilisation répétée ou structurée de l’espace.',
+          answer: 'Le site peut correspondre à un espace où des individus ont utilisé le feu et réalisé différentes activités. La proximité des vestiges suggère une organisation des activités, mais ne prouve pas à elle seule une répartition précise des tâches ou une fonction sociale déterminée.'
+        },
+        exercise: {
+          question: 'Comment les foyers et les abris peuvent-ils contribuer à la transformation des relations sociales ?',
+          answer: 'Ils peuvent créer des lieux de rassemblement, faciliter le partage des ressources, renforcer la protection collective et favoriser les interactions entre individus. Leur rôle social exact doit toutefois être interprété à partir des vestiges disponibles.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’intérêt archéologique des foyers préhistoriques ?',
+            answer: 'Ils constituent des indices matériels de l’utilisation du feu et permettent d’étudier les activités et l’occupation des espaces.'
+          },
+          {
+            question: 'Quel site français est associé à des structures d’habitat d’environ 400 000 ans ?',
+            answer: 'Terra Amata, à Nice.'
+          },
+          {
+            question: 'Pourquoi la longue dépendance des enfants humains est-elle importante dans l’étude des sociétés anciennes ?',
+            answer: 'Elle implique des soins prolongés et des formes de coopération entre adultes pour assurer la protection et le développement des jeunes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian Human Origins — Hearths & Shelters',
+            url: 'https://humanorigins.si.edu/evidence/behavior/hearths-shelters'
+          },
+          {
+            title: 'Smithsonian Human Origins — Social Life',
+            url: 'https://humanorigins.si.edu/human-characteristics/social-life'
+          },
+          {
+            title: 'Smithsonian Institution — Milestones in Human Evolution',
+            url: 'https://www.si.edu/newsdesk/factsheets/milestones-human-evolution'
+          },
+          {
+            title: 'Smithsonian Institution — Human Origins Facts',
+            url: 'https://www.si.edu/stories/human-origins-facts'
+          }
+        ]
+      }
+    },
+    {
+      id: 'langage-symboles-reseaux-sociaux',
+      title: 'Langage, symboles, identité et développement des réseaux sociaux',
+      field: 'Anthropologie culturelle · Anthropologie cognitive · Paléolithique moyen et supérieur',
+      summary: 'Étudier les manifestations matérielles des comportements symboliques, les échanges à distance, les parures, les traditions culturelles et le développement des réseaux de communication.',
+      lesson: {
+        sections: [
+          'La communication joue un rôle fondamental dans la coordination des activités humaines. Le langage articulé permet de transmettre des informations, de partager des connaissances et de maintenir des relations entre individus. Cependant, les origines du langage ne sont pas directement accessibles à l’archéologie, car les sons et les conversations ne se fossilisent pas. Les chercheurs étudient donc des indices indirects : la complexité des comportements techniques, les objets symboliques, les parures, les pigments, les gravures et les traces d’activités collectives. Ces éléments peuvent témoigner de capacités de communication et de transmission culturelle, mais ils ne permettent pas de dater précisément l’apparition du langage moderne.',
+          'Les pigments, les objets décorés et les parures constituent des indices importants de comportements symboliques. Des fragments d’ocre gravés découverts notamment à Blombos Cave, en Afrique du Sud, sont datés d’environ 100 000 ans. Ils témoignent de pratiques graphiques organisées et de traditions culturelles susceptibles d’avoir été transmises socialement. Les coquillages perforés et les objets de parure peuvent également avoir servi à exprimer une identité ou une appartenance collective. Leur signification exacte demeure parfois incertaine : un objet décoré ne permet pas automatiquement de connaître le message ou la croyance de son fabricant.',
+          'Les réseaux sociaux préhistoriques dépassaient parfois les limites du groupe local. Les données archéologiques présentées par le Smithsonian indiquent des échanges de ressources entre groupes séparés par environ 300 km vers 130 000 ans avant le présent. Les coquillages utilisés comme objets de parure ont également été transportés loin de leur environnement d’origine. Ces observations montrent que les déplacements, les contacts et la circulation des objets contribuaient à relier des populations éloignées. Il faut distinguer le transport matériel, l’échange direct, le don et le commerce : les objets archéologiques ne permettent pas toujours de déterminer la forme précise de la relation.'
+        ],
+        example: {
+          statement: 'Des coquillages perforés sont retrouvés dans un site archéologique situé à 40 km du littoral. Quelle conclusion peut-on raisonnablement tirer ?',
+          calculation: 'Distance entre le site de découverte et le littoral = 40 km. La provenance naturelle des coquillages doit être comparée à leur lieu de découverte.',
+          answer: 'Les coquillages ont été transportés depuis une zone côtière ou ont circulé par l’intermédiaire d’autres personnes. Ils peuvent témoigner de déplacements, de relations sociales ou de pratiques symboliques. La nature exacte de ces échanges ne peut pas être déterminée par la seule distance.'
+        },
+        exercise: {
+          question: 'Pourquoi les objets symboliques sont-ils importants pour étudier les relations entre les groupes préhistoriques ?',
+          answer: 'Ils peuvent témoigner de traditions culturelles partagées, de pratiques identitaires et de contacts entre populations. Leur distribution géographique permet également d’étudier la circulation des objets et des techniques.'
+        },
+        exercises: [
+          {
+            question: 'Quel site sud-africain est célèbre pour ses fragments d’ocre gravés datant d’environ 100 000 ans ?',
+            answer: 'Blombos Cave.'
+          },
+          {
+            question: 'Pourquoi les objets symboliques ne permettent-ils pas de reconstituer directement le langage préhistorique ?',
+            answer: 'Parce que les objets conservent des traces matérielles de comportements, mais pas les sons, les phrases ou les règles grammaticales utilisées.'
+          },
+          {
+            question: 'Que peuvent indiquer des objets retrouvés loin de leur source naturelle ?',
+            answer: 'Ils peuvent indiquer des déplacements, des échanges ou des réseaux de circulation entre groupes humains.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian Human Origins — Language & Symbols',
+            url: 'https://humanorigins.si.edu/human-characteristics/language-symbols'
+          },
+          {
+            title: 'Smithsonian Human Origins — Social Life',
+            url: 'https://humanorigins.si.edu/human-characteristics/social-life'
+          },
+          {
+            title: 'Tylén et al. — The Evolution of Early Symbolic Behavior in Homo sapiens, PNAS, 2020',
+            url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7060673/'
+          },
+          {
+            title: 'Nature — Social Networks and Cooperation in Hunter-Gatherers, 2012',
+            url: 'https://www.nature.com/articles/nature10736'
+          }
+        ]
+      }
+    },
+    {
+      id: 'societes-chasseurs-cueilleurs',
+      title: 'Les sociétés de chasseurs-cueilleurs et leurs organisations sociales',
+      field: 'Anthropologie sociale · Ethnologie comparative · Paléolithique',
+      summary: 'Analyser les formes d’organisation des populations mobiles, les stratégies de subsistance, la coopération, les alliances et les mécanismes de régulation sociale.',
+      lesson: {
+        sections: [
+          'Les sociétés de chasseurs-cueilleurs reposent sur l’exploitation de ressources sauvages animales et végétales. Leur organisation dépend de la disponibilité des ressources, des saisons, des caractéristiques du territoire et des techniques de subsistance. Certaines populations se déplacent régulièrement pour suivre les ressources, tandis que d’autres peuvent occuper des sites de manière plus prolongée. Il n’existe donc pas un modèle unique de société de chasseurs-cueilleurs. Les groupes peuvent présenter des organisations différentes selon leur environnement, leur histoire et leurs relations avec les populations voisines.',
+          'La coopération joue un rôle important dans les activités de subsistance. La chasse collective, la collecte, le partage alimentaire, la fabrication d’outils et la transmission des connaissances peuvent mobiliser plusieurs individus. Une étude de synthèse publiée en 2022 dans la revue Evolutionary Anthropology montre que certaines sociétés de chasseurs-cueilleurs à petite échelle ont développé des formes de coopération collective étendues, notamment pour les chasses communautaires, les installations partagées, les alliances et les réseaux d’échange. Ces résultats rappellent que les sociétés mobiles ne doivent pas être considérées comme nécessairement simples ou dépourvues de coordination sociale complexe.',
+          'L’ethnologie comparative étudie les sociétés contemporaines pour comprendre les différentes possibilités d’organisation sociale. Les travaux réalisés auprès de populations comme les Hadza de Tanzanie ont notamment permis d’étudier les réseaux sociaux et les mécanismes de coopération. Cependant, ces sociétés actuelles ne sont pas des fossiles vivants du Paléolithique. Elles possèdent leur propre histoire, leurs transformations et leurs relations avec les sociétés contemporaines. Les comparaisons ethnographiques sont utiles lorsqu’elles sont confrontées aux données archéologiques, mais elles ne permettent pas de reconstituer automatiquement les institutions, les règles matrimoniales ou les hiérarchies des populations préhistoriques.'
+        ],
+        example: {
+          statement: 'Une communauté de chasseurs-cueilleurs organise une chasse collective et partage ensuite une partie des ressources obtenues. Quel phénomène social cette organisation illustre-t-elle ?',
+          calculation: 'Activité collective = coordination de plusieurs individus. Partage des ressources = circulation des biens alimentaires entre membres du groupe.',
+          answer: 'Cette organisation illustre la coopération et le partage des ressources. Elle montre que la subsistance peut reposer sur des actions collectives et des relations sociales dépassant l’activité individuelle.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il incorrect de considérer toutes les sociétés de chasseurs-cueilleurs comme identiques ?',
+          answer: 'Parce que leurs organisations varient selon les ressources, les environnements, les traditions, les relations entre groupes et les histoires particulières de chaque population.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la principale base économique des sociétés de chasseurs-cueilleurs ?',
+            answer: 'L’exploitation des ressources sauvages par la chasse, la pêche et la collecte.'
+          },
+          {
+            question: 'Citer deux formes de coopération observées dans les sociétés de chasseurs-cueilleurs.',
+            answer: 'La chasse collective et le partage des ressources alimentaires, par exemple.'
+          },
+          {
+            question: 'Pourquoi les sociétés contemporaines de chasseurs-cueilleurs ne sont-elles pas des copies des sociétés paléolithiques ?',
+            answer: 'Elles possèdent des histoires, des cultures et des transformations propres. Leur étude doit être combinée avec les données archéologiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Boyd et Richerson — Large-scale Cooperation in Small-scale Foraging Societies, Evolutionary Anthropology, 2022',
+            url: 'https://doi.org/10.1002/evan.21944'
+          },
+          {
+            title: 'Nature — Social Networks and Cooperation in Hunter-Gatherers, 2012',
+            url: 'https://www.nature.com/articles/nature10736'
+          },
+          {
+            title: 'PubMed — Large-scale Cooperation in Small-scale Foraging Societies',
+            url: 'https://pubmed.ncbi.nlm.nih.gov/35485603/'
+          },
+          {
+            title: 'Annual Review of Anthropology — The Archaeological Evidence for Social Evolution, 2008',
+            url: 'https://doi.org/10.1146/annurev.anthro.37.081407.085246'
+          }
+        ]
+      }
+    },
+    {
+      id: 'sedentarisation-agriculture-premieres-communautes',
+      title: 'La sédentarisation, l’agriculture et la naissance des premières communautés villageoises',
+      field: 'Anthropologie économique · Archéologie néolithique · De la fin du Pléistocène à l’Holocène',
+      summary: 'Étudier les transformations des modes de subsistance, l’installation durable dans certains territoires, la domestication des espèces et les nouvelles formes d’organisation communautaire.',
+      lesson: {
+        sections: [
+          'La transition vers la sédentarité constitue une transformation majeure de l’histoire des sociétés humaines. Elle désigne une réduction de la mobilité et une occupation plus durable de certains territoires. Cette évolution ne s’est pas produite partout au même moment et n’a pas été exclusivement provoquée par l’agriculture. Au Levant, les populations natoufiennes présentent des indices d’occupation relativement permanente avant la généralisation de l’agriculture. Les vestiges d’habitats, les installations de stockage, les outils de broyage et les pratiques funéraires permettent d’étudier ces transformations. Cette période montre que la sédentarisation et la production alimentaire ne sont pas nécessairement apparues simultanément.',
+          'L’agriculture et la domestication des animaux se sont développées dans plusieurs régions du monde selon des trajectoires distinctes. Dans le Croissant fertile, la culture de céréales et la domestication de certaines espèces animales ont participé à la transformation des modes de subsistance. D’autres foyers de domestication sont documentés en Asie, en Afrique et dans les Amériques. La domestication est un processus progressif qui implique des changements biologiques chez les espèces exploitées et des transformations des pratiques humaines. Les sociétés agricoles ont développé de nouvelles techniques de production, de stockage et de gestion des ressources, mais elles n’ont pas immédiatement remplacé toutes les sociétés de chasseurs-cueilleurs.',
+          'La vie villageoise modifie les relations économiques et sociales. L’installation durable peut favoriser l’accumulation de réserves, la construction d’habitations permanentes et l’organisation de travaux collectifs. Le stockage des denrées permet de conserver des ressources pour une utilisation ultérieure, mais il pose également des questions de contrôle, de répartition et de gestion. Les activités agricoles peuvent entraîner une spécialisation progressive de certaines tâches et une augmentation de la population locale. Ces transformations ne conduisent pas automatiquement à l’apparition d’États ou de hiérarchies permanentes : plusieurs formes d’organisation villageoise ont coexisté pendant de longues périodes.'
+        ],
+        example: {
+          statement: 'Une communauté exploite des céréales sauvages, construit des habitations durables et développe des installations de stockage avant de pratiquer une agriculture pleinement domestiquée. Que montre cet exemple ?',
+          calculation: 'Indices observés : occupation durable, architecture domestique, stockage et exploitation de ressources végétales. Ces éléments indiquent une transformation des modes de vie sans démontrer nécessairement une agriculture déjà pleinement développée.',
+          answer: 'Cet exemple montre que la sédentarisation peut précéder ou accompagner progressivement l’agriculture. Les transformations économiques et sociales du Néolithique ne constituent pas une succession uniforme.'
+        },
+        exercise: {
+          question: 'Pourquoi la sédentarisation ne doit-elle pas être considérée comme une conséquence automatique de l’apparition de l’agriculture ?',
+          answer: 'Parce que certaines populations ont développé des formes de sédentarité avant l’agriculture pleinement domestiquée. La disponibilité des ressources, les conditions environnementales et les stratégies économiques ont également influencé les choix d’installation.'
+        },
+        exercises: [
+          {
+            question: 'Quelle population du Levant est connue pour ses formes de sédentarité antérieures à l’agriculture pleinement développée ?',
+            answer: 'Les populations associées à la culture natoufienne.'
+          },
+          {
+            question: 'Qu’est-ce que la domestication ?',
+            answer: 'Un processus progressif par lequel des populations humaines entretiennent et sélectionnent des plantes ou des animaux, entraînant des transformations biologiques et des relations durables avec ces espèces.'
+          },
+          {
+            question: 'Pourquoi le stockage alimentaire a-t-il pu transformer l’organisation économique des communautés ?',
+            answer: 'Il permet de conserver des ressources dans le temps et soulève de nouvelles questions concernant leur gestion, leur distribution et leur contrôle.'
+          }
+        ],
+        sources: [
+          {
+            title: 'British Museum — Prehistoric Britain',
+            url: 'https://www.britishmuseum.org/sites/default/files/2019-09/visit-resource_prehistoric-britain-KS2.pdf'
+          },
+          {
+            title: 'Persée — Seasonality and Gazelle Hunting at Hayonim Cave: New Evidence for Sedentism during the Natufian',
+            url: 'https://www.persee.fr/doc/paleo_0153-9345_1991_num_17_1_4538'
+          },
+          {
+            title: 'Current Anthropology — Becoming Farmers: The Inside Story',
+            url: 'https://www.journals.uchicago.edu/doi/full/10.1086/658861'
+          },
+          {
+            title: 'UNESCO — Göbekli Tepe',
+            url: 'https://whc.unesco.org/fr/list/1572'
+          }
+        ]
+      }
+    },
+    {
+      id: 'complexification-sociale-inegalites-institutions',
+      title: 'La complexification des sociétés, les institutions et l’apparition des inégalités',
+      field: 'Anthropologie politique · Anthropologie économique · Archéologie des sociétés complexes',
+      summary: 'Comprendre l’évolution des formes de pouvoir, les institutions, la spécialisation des activités, les échanges à longue distance, les monuments collectifs et les mécanismes de différenciation sociale.',
+      lesson: {
+        sections: [
+          'Avec le développement de certaines communautés agricoles et l’augmentation de la population dans plusieurs régions, les formes d’organisation collective ont pu devenir plus complexes. La gestion des ressources, la construction d’infrastructures, l’organisation des échanges et la coordination des activités ont parfois nécessité des mécanismes institutionnels plus élaborés. Toutefois, la complexification sociale ne suit pas une trajectoire unique. Des communautés importantes peuvent fonctionner sans État centralisé, tandis que certaines petites populations peuvent présenter des formes de hiérarchie ou d’autorité particulières. Les anthropologues distinguent notamment les groupes locaux, les chefferies, les organisations politiques centralisées et les États, sans considérer ces catégories comme des étapes obligatoires d’une évolution universelle.',
+          'Les monuments collectifs fournissent des indices importants sur les capacités de mobilisation et de coordination des sociétés anciennes. Göbekli Tepe, en Anatolie du Sud-Est, présente des structures monumentales construites par des groupes de chasseurs-cueilleurs durant le Néolithique précéramique, entre environ 9600 et 8200 avant notre ère. Les piliers sculptés et les enceintes témoignent d’activités collectives et d’une architecture élaborée. Le site montre que des réalisations monumentales pouvaient exister avant la généralisation des sociétés agricoles. Les interprétations concernant les cérémonies, les institutions ou la hiérarchie de ces communautés doivent néanmoins rester prudentes.',
+          'Les inégalités sociales et économiques sont également étudiées à partir des habitats, des sépultures, des biens conservés, des installations de stockage et de la distribution des ressources. Les différences entre les sépultures peuvent suggérer des distinctions de statut, mais elles ne suffisent pas toujours à démontrer l’existence de classes sociales permanentes. Une étude publiée en 2024 dans le Journal of Economic Literature souligne que, dans le Néolithique d’Eurasie occidentale, les niveaux élevés d’inégalité patrimoniale semblent souvent avoir été temporaires et relativement rares par rapport aux inégalités durables apparues plus tard. La persistance des inégalités dépend de facteurs économiques, politiques et institutionnels, notamment du contrôle des ressources et de la concentration du pouvoir.',
+          'Les sociétés complexes développent progressivement des formes variées de coordination : règles collectives, autorités, systèmes de gestion, échanges spécialisés et mécanismes de résolution des conflits. Dans certaines régions, ces transformations participent à l’émergence de centres urbains et d’États. Les institutions peuvent organiser la production, la circulation des biens, les travaux collectifs et la gestion territoriale. Elles peuvent également renforcer les différences de pouvoir entre individus et groupes. Il faut cependant éviter de considérer l’État, la ville, l’écriture ou la hiérarchie comme des résultats nécessaires de toute société agricole : les trajectoires historiques sont diverses et dépendent des conditions régionales.'
+        ],
+        example: {
+          statement: 'Un site archéologique présente des habitations de tailles différentes, des bâtiments collectifs et des sépultures contenant des quantités inégales de biens. Que peut-on étudier à partir de ces différences ?',
+          calculation: 'Comparer les dimensions des habitats, la localisation des bâtiments, la répartition des objets funéraires et leur évolution chronologique permet de rechercher des différences d’accès aux ressources et des formes éventuelles de différenciation sociale.',
+          answer: 'Ces indices permettent d’étudier une possible différenciation économique ou sociale. Ils ne prouvent pas automatiquement l’existence de classes sociales, d’une aristocratie ou d’un pouvoir centralisé. L’interprétation doit intégrer le contexte funéraire, les pratiques culturelles et les autres données archéologiques.'
+        },
+        exercise: {
+          question: 'Pourquoi les monuments collectifs de Göbekli Tepe sont-ils importants pour comprendre la complexification des sociétés humaines ?',
+          answer: 'Ils témoignent de capacités d’organisation, de coordination et de construction collective chez des groupes de chasseurs-cueilleurs du Néolithique précéramique. Ils montrent que les activités monumentales ne nécessitaient pas obligatoirement une société agricole déjà pleinement constituée.'
+        },
+        exercises: [
+          {
+            question: 'Quel site archéologique est célèbre pour ses enceintes monumentales et ses piliers en forme de T ?',
+            answer: 'Göbekli Tepe, situé dans le sud-est de l’actuelle Turquie.'
+          },
+          {
+            question: 'Les différences entre les sépultures prouvent-elles automatiquement l’existence de classes sociales ?',
+            answer: 'Non. Elles peuvent indiquer des différences de statut ou de pratiques funéraires, mais leur interprétation exige des éléments complémentaires.'
+          },
+          {
+            question: 'Citer deux facteurs pouvant contribuer à la persistance des inégalités économiques.',
+            answer: 'La concentration du pouvoir politique et le contrôle durable des ressources et des richesses.'
+          }
+        ],
+        sources: [
+          {
+            title: 'UNESCO — Göbekli Tepe',
+            url: 'https://whc.unesco.org/fr/list/1572'
+          },
+          {
+            title: 'Annual Review of Anthropology — The Archaeological Evidence for Social Evolution',
+            url: 'https://doi.org/10.1146/annurev.anthro.37.081407.085246'
+          },
+          {
+            title: 'American Economic Association — The Origins of Enduring Economic Inequality, 2024',
+            url: 'https://www.aeaweb.org/articles?id=10.1257/jel.20241718'
+          },
+          {
+            title: 'UNESCO — Göbekli Tepe, World Heritage Decision',
+            url: 'https://whc.unesco.org/en/decisions/7148'
+          },
+          {
+            title: 'Oxford Academic — A Cooperative Species: Human Reciprocity and Its Evolution',
+            url: 'https://academic.oup.com/princeton-scholarship-online/book/23474/chapter-abstract/184567830'
+          }
+        ]
+      }
+    }
+  ]
+},
 ];
