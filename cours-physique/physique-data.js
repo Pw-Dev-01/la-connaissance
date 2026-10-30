@@ -6863,6 +6863,331 @@
   ]
 },
 
+{
+  id: 'cycles-solaires',
+  title: 'Astrophysique et cycles solaires',
+  note: 'Six chapitres consacrés à la variabilité du Soleil : observation et mesure du cycle, taches et régions actives, dynamo magnétique, phénomènes éruptifs, météorologie spatiale et irradiance solaire. Le cycle des taches dure en moyenne environ 11 ans, mais sa durée et son amplitude varient ; le cycle magnétique complet est d’environ 22 ans.',
+  chapters: [
+    {
+      id: 'observer-cycle-solaire',
+      title: 'Observer et mesurer le cycle solaire',
+      field: 'Astrophysique solaire · Observation et chronologie',
+      summary: 'Définir le cycle solaire, distinguer minimum et maximum, comprendre les séries de taches et les limites des prévisions.',
+      lesson: {
+        sections: [
+          'Le cycle solaire est la variation quasi périodique de l’activité magnétique du Soleil. Son indicateur historique le plus connu est le nombre de taches visibles sur le disque. Lorsque leur nombre augmente, les régions actives, les éruptions et les éjections de masse coronale deviennent généralement plus fréquentes. Le cycle moyen est proche de 11 ans, mais il ne s’agit pas d’une horloge régulière : les intervalles entre maxima successifs ont varié, dans les séries étudiées par OpenStax, d’environ 9 à 14 ans.',
+          'Le minimum solaire correspond à une période où les taches sont peu nombreuses et où l’activité éruptive est en moyenne plus faible. Le maximum solaire correspond à une période de forte activité, mais son identification exacte nécessite des séries de mesures lissées : le nombre quotidien fluctue fortement et plusieurs pics peuvent apparaître autour du maximum. Il faut donc distinguer le maximum d’un jour donné du maximum défini à partir d’une moyenne mensuelle ou lissée.',
+          'Le comptage des taches fournit un indicateur, pas une description exhaustive du Soleil. Les observateurs comptabilisent les groupes et les taches individuelles selon une convention normalisée. Le NOAA rappelle la règle historique simplifiée selon laquelle chaque groupe contribue pour 10 et chaque ombre individuelle pour 1 ; les nombres officiels sont établis par le centre mondial WDC-SILSO de l’Observatoire royal de Belgique. Les changements d’instruments, de méthodes et de couverture des observations doivent être pris en compte dans les longues séries historiques.',
+          'Les cycles sont numérotés depuis le cycle 1, dont le début conventionnel est situé en 1755. Le cycle 24 a commencé en décembre 2008 et s’est achevé en décembre 2019 ; le cycle 25 a alors commencé. NASA et NOAA ont annoncé en octobre 2024 que le Soleil était entré dans la période de maximum du cycle 25, période susceptible de durer plusieurs mois. Une annonce de maximum ne signifie pas que toutes les manifestations de l’activité atteignent leur pic le même jour.'
+        ],
+        formula: {
+          label: 'MOYENNE D’UN INDICATEUR SUR UNE SÉRIE',
+          text: 'M = (x₁ + x₂ + ... + xₙ) / n'
+        },
+        example: {
+          statement: 'Une série simplifiée de nombres mensuels de taches vaut 40, 50, 70, 60 et 30. Quelle est sa moyenne arithmétique ?',
+          calculation: 'M = (40 + 50 + 70 + 60 + 30) / 5 = 250 / 5.',
+          answer: 'La moyenne de cette série est 50. Cette moyenne illustrative ne constitue pas à elle seule une datation officielle du maximum solaire.'
+        },
+        exercise: {
+          question: 'Pourquoi ne peut-on pas dater précisément le maximum solaire à partir d’une seule journée de comptage ?',
+          answer: 'Parce que le nombre quotidien varie fortement. On utilise des séries temporelles et des valeurs lissées pour identifier la tendance du cycle.'
+        },
+        equationDetails: [
+          {
+            title: 'Moyenne arithmétique d’une série',
+            formula: 'M = (x₁ + x₂ + ... + xₙ) / n',
+            explanation: 'La moyenne résume un ensemble de mesures par une valeur centrale. Pour étudier un cycle, elle peut aider à comparer des périodes, mais les organismes utilisent des procédures normalisées de lissage qui ne se réduisent pas nécessairement à cette moyenne simple.',
+            parameters: 'M : moyenne de la série ; x₁ à xₙ : valeurs mesurées ; n : nombre de valeurs.',
+            example: 'Pour 40, 50, 70, 60 et 30, la somme vaut 250 et le nombre de valeurs vaut 5.',
+            result: 'M = 50.'
+          },
+          {
+            title: 'Durée entre deux maxima',
+            formula: 'T = t₂ − t₁',
+            explanation: 'La durée observée d’un cycle peut être estimée en mesurant l’intervalle entre deux maxima comparables d’une série homogène. La valeur obtenue varie d’un cycle à l’autre.',
+            parameters: 'T : durée entre les deux repères (années) ; t₁ : date du premier maximum ; t₂ : date du maximum suivant.',
+            example: 'Si deux maxima sont repérés en 2001 et 2012, alors T = 2012 − 2001.',
+            result: 'La durée entre ces repères est de 11 ans.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA SWPC — Sunspots / Solar Cycle', url: 'https://www.spaceweather.gov/phenomena/sunspotssolar-cycle' },
+          { title: 'OpenStax Astronomy 2e — 15.2 The Solar Cycle', url: 'https://openstax.org/books/astronomy-2e/pages/15-2-the-solar-cycle' },
+          { title: 'NASA — NASA, NOAA: Sun Reaches Maximum Phase in 11-Year Solar Cycle', url: 'https://science.nasa.gov/science-research/heliophysics/nasa-noaa-sun-reaches-maximum-phase-in-11-year-solar-cycle/' },
+          { title: 'NOAA SWPC — Solar Cycle Progression', url: 'https://www.spaceweather.gov/products/solar-cycle-progression' }
+        ]
+      }
+    },
+    {
+      id: 'taches-solaires-regions-actives',
+      title: 'Taches solaires et régions actives',
+      field: 'Astrophysique solaire · Photosphère et magnétisme',
+      summary: 'Étudier la structure des taches, leur origine magnétique, les facules et la migration des zones d’émergence au cours du cycle.',
+      lesson: {
+        sections: [
+          'Les taches solaires sont des régions de la photosphère moins lumineuses que leur environnement parce qu’elles sont plus froides. Elles sont associées à des concentrations intenses de champ magnétique qui modifient le transport de chaleur vers la surface. Une tache comporte souvent une ombre centrale plus sombre, appelée ombre ou ombre centrale, entourée d’une pénombre moins sombre lorsque sa structure est suffisamment développée. Elles ne sont pas des trous dans le Soleil : elles restent extrêmement chaudes, mais leur contraste les rend sombres par comparaison avec la photosphère voisine.',
+          'Les taches apparaissent fréquemment en groupes au sein de régions actives. Ces régions peuvent également présenter des facules dans la photosphère et des plages brillantes dans la chromosphère. Les champs magnétiques émergents structurent l’atmosphère au-dessus de ces zones et peuvent former des boucles coronales. Les régions actives sont ainsi des lieux privilégiés d’observation des éruptions et des éjections de masse coronale, sans que chaque région active produise nécessairement une éruption majeure.',
+          'La distribution des taches en latitude évolue au fil d’un cycle. Au début d’un nouveau cycle, les groupes apparaissent généralement à des latitudes solaires plus élevées ; au cours des années suivantes, les nouvelles zones d’activité se rapprochent en moyenne de l’équateur. Représentée en fonction du temps et de la latitude, cette migration forme le diagramme dit « papillon ». Ce motif est une signature observationnelle importante de l’évolution du champ magnétique solaire.',
+          'Le Soleil tourne de manière différentielle : la période de rotation dépend de la latitude, car le Soleil est un plasma et non un solide rigide. Les valeurs varient selon la latitude et selon la définition de la rotation utilisée ; OpenStax indique environ 25 jours à l’équateur et environ 36 jours près des hautes latitudes. Cette rotation différentielle contribue à déformer et enrouler le champ magnétique global.'
+        ],
+        formula: {
+          label: 'VITESSE ANGULAIRE MOYENNE',
+          text: 'ω = 2π / T'
+        },
+        example: {
+          statement: 'En assimilant la rotation équatoriale du Soleil à une période de 25 jours, estimer sa vitesse angulaire moyenne.',
+          calculation: 'ω = 2π / (25 × 24 × 3600) ≈ 2,91 × 10⁻⁶ rad·s⁻¹.',
+          answer: 'La vitesse angulaire moyenne est d’environ 2,91 × 10⁻⁶ rad·s⁻¹. La valeur dépend de la latitude et de la convention de mesure.'
+        },
+        exercise: {
+          question: 'Pourquoi une tache solaire apparaît-elle sombre alors qu’elle reste très chaude ?',
+          answer: 'Parce que sa température est inférieure à celle de la photosphère environnante ; elle émet donc moins de lumière visible par unité de surface.'
+        },
+        equationDetails: [
+          {
+            title: 'Vitesse angulaire de rotation',
+            formula: 'ω = 2π / T',
+            explanation: 'Pour une rotation périodique, la vitesse angulaire moyenne correspond à un tour complet, soit 2π radians, divisé par la période. Sur le Soleil, cette vitesse dépend de la latitude en raison de la rotation différentielle.',
+            parameters: 'ω : vitesse angulaire (rad·s⁻¹) ; T : période de rotation (s).',
+            example: 'Pour T = 25 jours, convertir d’abord en secondes : T = 25 × 24 × 3600 s.',
+            result: 'ω ≈ 2,91 × 10⁻⁶ rad·s⁻¹.'
+          },
+          {
+            title: 'Lien entre période et fréquence',
+            formula: 'f = 1 / T',
+            explanation: 'La fréquence indique le nombre de rotations par unité de temps. Elle est l’inverse de la période lorsque le mouvement est périodique.',
+            parameters: 'f : fréquence (Hz si T est en secondes) ; T : période (s).',
+            example: 'Pour une période équatoriale simplifiée de 25 jours, T = 2 160 000 s et f = 1 / T.',
+            result: 'f ≈ 4,63 × 10⁻⁷ Hz.'
+          }
+        ],
+        sources: [
+          { title: 'NASA — Sunspots', url: 'https://science.nasa.gov/sun/sunspots/' },
+          { title: 'OpenStax Astronomy 2e — 15.2 The Solar Cycle', url: 'https://openstax.org/books/astronomy-2e/pages/15-2-the-solar-cycle' },
+          { title: 'Observatoire de Paris, LIRA — Service d’observation du Soleil', url: 'https://lira.observatoiredeparis.psl.eu/-Service-d-observation-du-Soleil-' },
+          { title: 'LESIA, Observatoire de Paris — Service d’observation du Soleil', url: 'https://lesia.obspm.fr/-service-d-observation-du-soleil-.html?artpage=2-5' }
+        ]
+      }
+    },
+    {
+      id: 'dynamo-magnetique-solaire',
+      title: 'La dynamo solaire et le cycle magnétique de 22 ans',
+      field: 'Astrophysique solaire · Magnétohydrodynamique',
+      summary: 'Relier plasma conducteur, convection, rotation différentielle, inversion des pôles et lois de polarité des taches.',
+      lesson: {
+        sections: [
+          'Le Soleil est constitué de plasma, un gaz ionisé dont les particules chargées interagissent avec les champs électromagnétiques. Les mouvements du plasma peuvent transporter et déformer le champ magnétique ; réciproquement, le champ exerce des forces sur le plasma. L’étude de ces interactions relève de la magnétohydrodynamique. Le champ solaire est entretenu par un mécanisme de dynamo lié aux mouvements internes du plasma, en particulier aux écoulements associés à la convection et à la rotation différentielle.',
+          'La rotation différentielle étire les composantes du champ magnétique, tandis que les mouvements turbulents et convectifs contribuent à régénérer des composantes de champ. Les modèles de dynamo solaire décrivent ces transformations couplées. Leur représentation détaillée reste un sujet de recherche : il ne faut pas réduire la dynamo à une simple rotation du Soleil ni présenter un modèle particulier comme une explication définitivement complète de toutes les observations.',
+          'Le cycle des taches dure en moyenne environ 11 ans. Cependant, la polarité magnétique globale du Soleil ne retrouve sa configuration initiale qu’après deux cycles de taches, soit environ 22 ans : c’est le cycle de Hale. Autour du maximum d’activité, les pôles magnétiques solaires s’inversent ; l’inversion ne signifie pas que le Soleil change de sens de rotation, mais que la polarité du champ polaire s’échange.',
+          'La loi de Hale décrit l’organisation des polarités des groupes de taches : les taches principales des groupes d’un même hémisphère ont une polarité préférentielle pendant un cycle, et cette polarité s’inverse au cycle suivant. La loi de Joy décrit une inclinaison statistique des groupes bipolaires, les taches principales étant en moyenne plus proches de l’équateur que les taches suivantes. Ces régularités observationnelles contribuent à contraindre les modèles de dynamo, sans suffire à elles seules à prévoir exactement l’amplitude et la durée du cycle futur.'
+        ],
+        formula: {
+          label: 'CYCLE MAGNÉTIQUE COMPLET',
+          text: 'T magnétique ≈ 2 × T cycle des taches ≈ 22 ans'
+        },
+        example: {
+          statement: 'Si deux cycles successifs de taches durent chacun approximativement 11 ans, quelle durée caractérise un cycle magnétique complet ?',
+          calculation: 'T magnétique ≈ 2 × 11 ans.',
+          answer: 'La durée est d’environ 22 ans. Il s’agit d’une valeur moyenne, et non d’une période parfaitement constante.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre le cycle des taches de 11 ans et le cycle magnétique de Hale ?',
+          answer: 'Le cycle des taches décrit la montée puis la baisse de l’activité visible, tandis que le cycle de Hale prend en compte le retour à la polarité magnétique initiale après deux cycles de taches, soit environ 22 ans.'
+        },
+        equationDetails: [
+          {
+            title: 'Durée du cycle magnétique',
+            formula: 'T magnétique ≈ 2 × T taches',
+            explanation: 'La polarité magnétique globale s’inverse approximativement à chaque cycle de taches. Il faut donc deux cycles de taches pour retrouver la configuration de polarité initiale.',
+            parameters: 'T magnétique : durée du cycle magnétique complet (années) ; T taches : durée moyenne du cycle d’activité des taches (années).',
+            example: 'Avec T taches ≈ 11 ans, T magnétique ≈ 2 × 11.',
+            result: 'T magnétique ≈ 22 ans.'
+          },
+          {
+            title: 'Flux magnétique à travers une surface',
+            formula: 'Φ = B × A × cos(θ)',
+            explanation: 'Dans le cas d’un champ uniforme traversant une surface plane, le flux magnétique dépend de l’intensité du champ, de l’aire et de l’angle entre le champ et la normale à la surface. Cette relation permet d’introduire la notion de flux utilisée dans l’étude des champs magnétiques ; les champs solaires réels sont généralement non uniformes.',
+            parameters: 'Φ : flux magnétique (Wb) ; B : champ magnétique (T) ; A : aire (m²) ; θ : angle entre le champ et la normale à la surface.',
+            example: 'Pour B = 0,10 T, A = 2 m² et θ = 0°, Φ = 0,10 × 2 × cos(0°).',
+            result: 'Φ = 0,20 Wb dans ce modèle uniforme simplifié.'
+          }
+        ],
+        sources: [
+          { title: 'NASA SDO — The Sun and Magnetism', url: 'https://sdo.gsfc.nasa.gov/mission/science.php' },
+          { title: 'NASA — Solar Science', url: 'https://science.nasa.gov/heliophysics/focus-areas/solar-science/' },
+          { title: 'OpenStax Astronomy 2e — 15.2 The Solar Cycle', url: 'https://openstax.org/books/astronomy-2e/pages/15-2-the-solar-cycle' },
+          { title: 'NASA — What drives the constant change we observe on our Sun?', url: 'https://science.nasa.gov/heliophysics/science-questions/how-and-why-does-the-sun-vary-and-what-are-the-consequences/' }
+        ]
+      }
+    },
+    {
+      id: 'activite-eruptive-solaire',
+      title: 'Éruptions solaires, protubérances et éjections coronales',
+      field: 'Astrophysique solaire · Chromosphère et couronne',
+      summary: 'Distinguer les éruptions, les éjections de masse coronale, les protubérances et les particules énergétiques.',
+      lesson: {
+        sections: [
+          'L’activité solaire ne se limite pas aux taches de la photosphère. Dans la chromosphère et la couronne, les champs magnétiques forment des structures complexes, notamment des boucles coronales. Lorsque ces champs sont fortement déformés, ils peuvent se réorganiser et libérer de l’énergie. La reconnexion magnétique est un mécanisme central des modèles d’éruptions : des lignes de champ de topologies différentes se réorganisent, convertissant une partie de l’énergie magnétique en énergie thermique, cinétique et en accélération de particules.',
+          'Une éruption solaire est une libération rapide d’énergie qui produit un accroissement du rayonnement électromagnétique sur une large gamme de longueurs d’onde. Les émissions peuvent inclure les rayons X et l’ultraviolet extrême. Une éruption peut perturber l’ionosphère terrestre lorsque son rayonnement atteint la Terre, mais elle n’implique pas automatiquement l’expulsion d’un grand nuage de plasma dans l’espace.',
+          'Une éjection de masse coronale, ou CME, est l’expulsion d’une grande quantité de plasma et de champ magnétique depuis la couronne vers l’espace interplanétaire. Une CME peut être associée à une éruption, mais les deux phénomènes ne sont pas synonymes. L’orientation du champ magnétique transporté, la vitesse de l’éjection et sa trajectoire déterminent en partie ses effets éventuels près de la Terre.',
+          'Les protubérances sont des structures de plasma relativement dense et plus froid que la couronne environnante, maintenues par des champs magnétiques. Lorsqu’elles sont observées sur le disque solaire, elles apparaissent souvent comme des filaments sombres ; au bord du disque, elles peuvent apparaître brillantes sur le fond du ciel. Certaines deviennent instables et sont éjectées. Les particules énergétiques solaires constituent une autre manifestation de l’activité : elles peuvent être accélérées lors d’éruptions ou de chocs associés à des éjections rapides.'
+        ],
+        formula: {
+          label: 'ÉNERGIE CINÉTIQUE D’UNE ÉJECTION',
+          text: 'Eₖ = ½ × m × v²'
+        },
+        example: {
+          statement: 'Une masse de plasma idéalisée de 1,0 × 10¹² kg est éjectée à 500 km·s⁻¹. Estimer son énergie cinétique de translation.',
+          calculation: 'v = 500 000 m·s⁻¹ ; Eₖ = ½ × 1,0 × 10¹² × (5,0 × 10⁵)².',
+          answer: 'Eₖ = 1,25 × 10²³ J. Cette estimation pédagogique ne représente pas une mesure d’une CME particulière.'
+        },
+        exercise: {
+          question: 'Une éruption solaire et une éjection de masse coronale désignent-elles le même phénomène ?',
+          answer: 'Non. L’éruption est une libération rapide d’énergie et de rayonnement ; la CME est l’expulsion de plasma et de champ magnétique dans l’espace. Elles peuvent être associées, mais ne sont pas identiques.'
+        },
+        equationDetails: [
+          {
+            title: 'Énergie cinétique d’un plasma éjecté',
+            formula: 'Eₖ = ½ × m × v²',
+            explanation: 'Cette relation classique estime l’énergie cinétique de translation d’une masse éjectée. Une CME réelle possède une structure étendue, un champ magnétique et des vitesses non uniformes ; l’estimation par une masse et une vitesse uniques est donc une simplification.',
+            parameters: 'Eₖ : énergie cinétique (J) ; m : masse éjectée (kg) ; v : vitesse moyenne adoptée (m·s⁻¹).',
+            example: 'Pour m = 1,0 × 10¹² kg et v = 5,0 × 10⁵ m·s⁻¹, Eₖ = 0,5 × 1,0 × 10¹² × 2,5 × 10¹¹.',
+            result: 'Eₖ = 1,25 × 10²³ J.'
+          },
+          {
+            title: 'Temps de propagation à vitesse constante',
+            formula: 'Δt = d / v',
+            explanation: 'Cette relation fournit une durée de parcours dans un modèle rectiligne à vitesse constante. Les éjections réelles peuvent accélérer ou ralentir et interagir avec le vent solaire ; le temps réel d’arrivée doit donc être estimé à partir d’observations et de modèles.',
+            parameters: 'Δt : durée (s) ; d : distance parcourue (m) ; v : vitesse moyenne (m·s⁻¹).',
+            example: 'Pour une distance illustrative de 1,5 × 10¹¹ m et une vitesse constante de 500 000 m·s⁻¹, Δt = 1,5 × 10¹¹ / 5,0 × 10⁵.',
+            result: 'Δt = 300 000 s, soit environ 3,47 jours dans ce modèle simplifié.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Astronomy — 15.3 Solar Activity above the Photosphere', url: 'https://openstax.org/books/astronomy/pages/15-3-solar-activity-above-the-photosphere' },
+          { title: 'LESIA, Observatoire de Paris — Les manifestations des champs magnétiques', url: 'https://www.lesia.obspm.fr/Les-manifestations-des-champs.html' },
+          { title: 'NOAA — Sunspots / Solar Cycle', url: 'https://www.spaceweather.gov/phenomena/sunspotssolar-cycle' },
+          { title: 'NASA — Solar Science', url: 'https://science.nasa.gov/heliophysics/focus-areas/solar-science/' }
+        ]
+      }
+    },
+    {
+      id: 'heliosphere-meteo-spatiale',
+      title: 'Héliosphère et météorologie spatiale',
+      field: 'Astrophysique solaire · Relations Soleil-Terre',
+      summary: 'Comprendre le vent solaire, la magnétosphère, les orages géomagnétiques et les effets sur les technologies.',
+      lesson: {
+        sections: [
+          'Le vent solaire est un écoulement permanent de plasma issu de la couronne. Il transporte avec lui le champ magnétique interplanétaire et remplit l’héliosphère, vaste région dominée par l’influence du Soleil. La rotation solaire enroule progressivement les lignes du champ magnétique transportées par le vent, produisant à grande échelle une structure en spirale dite spirale de Parker. Le vent solaire n’est pas constant : sa vitesse, sa densité et son champ magnétique varient avec les conditions coronales et l’activité solaire.',
+          'La Terre est protégée en partie par sa magnétosphère, région où le champ magnétique terrestre organise l’interaction avec le plasma environnant. Lorsque le vent solaire est renforcé ou que le champ magnétique interplanétaire présente une orientation favorable au couplage avec le champ terrestre, de l’énergie peut être transférée dans la magnétosphère. Des sous-orages et des orages géomagnétiques peuvent alors se produire. Les aurores sont une manifestation visible de précipitations de particules dans la haute atmosphère.',
+          'Les perturbations de l’environnement spatial peuvent avoir des conséquences techniques. Les variations de l’ionisation de la haute atmosphère peuvent affecter les communications radio à haute fréquence et la navigation par satellite. Les courants induits géomagnétiquement peuvent perturber les réseaux électriques ; l’augmentation de la traînée atmosphérique pendant les périodes de forte activité peut modifier l’orbite des satellites en orbite basse. Les effets dépendent de l’intensité, de la durée, de la géométrie et de la région touchée.',
+          'La météorologie spatiale consiste à observer, comprendre et prévoir ces conditions. Les organismes comme NOAA surveillent les éruptions, les CME, le vent solaire et les indices géomagnétiques. Les prévisions comportent des incertitudes : une CME dirigée vers la Terre n’entraîne pas toujours une tempête sévère, car son champ magnétique et son évolution pendant le trajet sont déterminants. Le cycle solaire modifie les probabilités et la fréquence de certains phénomènes, mais ne permet pas de prédire à lui seul un événement précis.'
+        ],
+        formula: {
+          label: 'DENSITÉ DE FLUX DE PARTICULES',
+          text: 'F = N / (A × Δt)'
+        },
+        example: {
+          statement: 'Un détecteur compte 2 000 particules traversant une surface de 0,10 m² en 20 s. Calculer le flux surfacique moyen de comptage.',
+          calculation: 'F = 2 000 / (0,10 × 20) = 2 000 / 2.',
+          answer: 'F = 1 000 particules·m⁻²·s⁻¹. Cet exemple décrit un comptage idéal et non une valeur typique du vent solaire.'
+        },
+        exercise: {
+          question: 'Pourquoi une CME dirigée vers la Terre ne suffit-elle pas à garantir un orage géomagnétique intense ?',
+          answer: 'Parce que l’intensité de l’interaction dépend notamment de la vitesse, de la densité et de l’orientation du champ magnétique transporté, ainsi que de l’évolution de l’éjection pendant son trajet.'
+        },
+        equationDetails: [
+          {
+            title: 'Flux surfacique de comptage',
+            formula: 'F = N / (A × Δt)',
+            explanation: 'Le flux de comptage rapporte le nombre de particules détectées à la surface traversée et à la durée de mesure. Il s’agit d’une grandeur de comptage simplifiée ; les mesures physiques du vent solaire nécessitent notamment de connaître la réponse instrumentale et la géométrie de détection.',
+            parameters: 'F : flux de comptage (particules·m⁻²·s⁻¹) ; N : nombre de particules ; A : surface (m²) ; Δt : durée (s).',
+            example: 'Avec N = 2 000, A = 0,10 m² et Δt = 20 s, F = 2 000 / 2.',
+            result: 'F = 1 000 particules·m⁻²·s⁻¹.'
+          },
+          {
+            title: 'Pression dynamique d’un écoulement de plasma',
+            formula: 'P dynamique = ρ × v²',
+            explanation: 'Cette expression donne la forme usuelle de la pression dynamique massique d’un écoulement dans certains contextes de mécanique des fluides. Pour le vent solaire, les conventions et contributions thermiques ou magnétiques doivent être précisées ; cette expression seule ne décrit pas toute la pression totale du plasma.',
+            parameters: 'P dynamique : pression dynamique (Pa) ; ρ : masse volumique (kg·m⁻³) ; v : vitesse de l’écoulement (m·s⁻¹).',
+            example: 'Pour ρ = 5,0 × 10⁻²¹ kg·m⁻³ et v = 4,0 × 10⁵ m·s⁻¹, P = 5,0 × 10⁻²¹ × (4,0 × 10⁵)².',
+            result: 'P dynamique = 8,0 × 10⁻¹⁰ Pa selon ce modèle simplifié.'
+          }
+        ],
+        sources: [
+          { title: 'NASA — Sun: Facts', url: 'https://science.nasa.gov/sun/facts/' },
+          { title: 'NOAA — Space Weather: Storms from the Sun', url: 'https://www.noaa.gov/explainers/space-weather-storms-from-sun' },
+          { title: 'OpenStax Astronomy 2e — 15.4 Space Weather', url: 'https://openstax.org/books/astronomy-2e/pages/15-4-space-weather' },
+          { title: 'Observatoire de Paris, LIRA — 3SOLEIL/CERCLe : Cycle, Éruptions et Rayonnement Cosmique', url: 'https://lira.observatoiredeparis.psl.eu/-Centre-de-prevision-solaire-' }
+        ]
+      }
+    },
+    {
+      id: 'irradiance-climat-observations',
+      title: 'Irradiance solaire, climat et prévision des cycles',
+      field: 'Astrophysique solaire · Rayonnement et instrumentation',
+      summary: 'Quantifier la variabilité du rayonnement solaire, distinguer TSI et irradiance spectrale et comprendre les limites des liens climatiques.',
+      lesson: {
+        sections: [
+          'L’irradiance solaire est le flux de puissance reçu par unité de surface à une distance donnée du Soleil. L’irradiance solaire totale, souvent désignée par TSI, correspond à l’énergie intégrée sur l’ensemble du spectre électromagnétique, mesurée à la distance moyenne Terre-Soleil hors de l’atmosphère terrestre. L’irradiance spectrale décrit au contraire la répartition de cette énergie selon la longueur d’onde. Cette distinction est essentielle : certaines bandes, notamment l’ultraviolet et l’ultraviolet extrême, varient proportionnellement beaucoup plus que l’irradiance totale.',
+          'Les mesures spatiales continues de l’irradiance totale ont commencé en 1978 avec une succession d’instruments satellitaires. Les séries modernes montrent une variation de l’ordre de 0,1 % de la TSI au cours du cycle de 11 ans. Cette faible variation relative est mesurable et utile pour étudier le bilan radiatif terrestre, mais elle ne signifie pas que le Soleil fournit une énergie constante. Les variations à court terme liées à la rotation et aux régions actives se superposent au cycle de plus longue durée.',
+          'La TSI résulte du bilan entre les zones sombres des taches et les zones brillantes, notamment les facules. Malgré la présence de taches moins lumineuses, le Soleil est en moyenne légèrement plus irradiant au maximum d’activité, car les contributions des régions brillantes compensent et dépassent l’effet des taches dans le bilan global. Les variations spectrales peuvent être beaucoup plus marquées dans certaines bandes que la variation de la TSI.',
+          'Le cycle solaire influence l’atmosphère terrestre, notamment par les variations de l’ultraviolet qui modifient l’échauffement et la chimie de la haute atmosphère. Cependant, la variation d’environ 0,1 % de la TSI sur le cycle de 11 ans est trop faible pour expliquer à elle seule les changements climatiques importants observés à l’échelle contemporaine. Il faut distinguer l’influence solaire mesurable, les mécanismes atmosphériques complexes et les autres facteurs du système climatique. Une corrélation temporelle ne suffit pas à établir une causalité.',
+          'Les prévisions du cycle reposent sur des observations de taches, des indices radio comme le flux à 10,7 cm, des mesures magnétiques et des modèles statistiques ou physiques. Les courbes de prévision comportent des intervalles d’incertitude et sont mises à jour à mesure que de nouvelles observations arrivent. Elles décrivent une évolution probable de l’activité globale, mais ne permettent pas de prévoir avec précision la date, la trajectoire et les effets terrestres de chaque éruption ou CME.'
+        ],
+        formula: {
+          label: 'IRRADIANCE ET PUISSANCE REÇUE',
+          text: 'E = P / A  |  ΔP = P × (variation relative)'
+        },
+        example: {
+          statement: 'La TSI de référence est prise ici comme 1 361 W·m⁻². Estimer une variation de 0,1 % autour de cette valeur.',
+          calculation: '0,1 % = 0,001 ; ΔE = 1 361 × 0,001 = 1,361 W·m⁻².',
+          answer: 'Une variation de 0,1 % correspond à environ 1,36 W·m⁻². La valeur de référence exacte dépend de la période et du jeu de données utilisé.'
+        },
+        exercise: {
+          question: 'Pourquoi la variation de l’ultraviolet solaire peut-elle être importante pour la haute atmosphère même si la TSI ne varie que d’environ 0,1 % ?',
+          answer: 'Parce que la variation relative dépend de la longueur d’onde : certaines bandes ultraviolettes varient beaucoup plus que l’énergie totale intégrée, et elles interviennent dans le chauffage et la chimie de la haute atmosphère.'
+        },
+        equationDetails: [
+          {
+            title: 'Définition de l’irradiance',
+            formula: 'E = P / A',
+            explanation: 'L’irradiance est la puissance reçue par unité de surface. Pour la TSI, la mesure est rapportée à une distance de 1 unité astronomique et réalisée par des instruments spatiaux afin d’éviter l’absorption atmosphérique terrestre.',
+            parameters: 'E : irradiance (W·m⁻²) ; P : puissance reçue (W) ; A : surface réceptrice (m²).',
+            example: 'Une puissance de 100 W répartie uniformément sur 2 m² donne E = 100 / 2.',
+            result: 'E = 50 W·m⁻².'
+          },
+          {
+            title: 'Variation relative de l’irradiance',
+            formula: 'variation relative = ΔE / E',
+            explanation: 'La variation relative compare un écart à une valeur de référence. Pour exprimer cet écart en pourcentage, on multiplie le rapport par 100. La variation de la TSI au cours du cycle solaire est de l’ordre de 0,1 %.',
+            parameters: 'ΔE : différence entre deux irradiances (W·m⁻²) ; E : valeur de référence (W·m⁻²).',
+            example: 'Pour E = 1 361 W·m⁻² et une variation relative de 0,001, ΔE = 1 361 × 0,001.',
+            result: 'ΔE ≈ 1,36 W·m⁻².'
+          },
+          {
+            title: 'Puissance reçue par une surface',
+            formula: 'P = E × A',
+            explanation: 'Si l’irradiance est uniforme et si la surface est perpendiculaire au rayonnement, la puissance reçue est le produit de l’irradiance par l’aire. Une surface inclinée nécessite de tenir compte de sa projection perpendiculaire à la direction du rayonnement.',
+            parameters: 'P : puissance reçue (W) ; E : irradiance (W·m⁻²) ; A : surface perpendiculaire au rayonnement (m²).',
+            example: 'Pour E = 1 000 W·m⁻² et A = 0,50 m², P = 1 000 × 0,50.',
+            result: 'P = 500 W.'
+          }
+        ],
+        sources: [
+          { title: 'NASA Goddard — About Solar Irradiance', url: 'https://earth.gsfc.nasa.gov/climate/projects/solar-irradiance/about' },
+          { title: 'NASA Goddard — Solar Irradiance Science', url: 'https://earth.gsfc.nasa.gov/climate/projects/solar-irradiance/science' },
+          { title: 'NASA — Solar Irradiance Datasets', url: 'https://scdi.smce.nasa.gov/solar_data_access.html' },
+          { title: 'NASA — Solar Variability and Terrestrial Climate', url: 'https://science.nasa.gov/science-research/planetary-science/08jan_sunclimate/' },
+          { title: 'NASA — Solar Cycle Progression and Forecast', url: 'https://www.nasa.gov/solar-cycle-progression-and-forecast/' },
+          { title: 'NOAA SWPC — Solar Cycle Progression', url: 'https://www.spaceweather.gov/products/solar-cycle-progression' }
+        ]
+      }
+    }
+  ]
+},
+
 
 ];
 
