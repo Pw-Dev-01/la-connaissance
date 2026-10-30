@@ -2293,6 +2293,261 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'champs-magnetique',
+  sortYear: false,
+  title: 'Géophysique : Le champ magnétique terrestre',
+  note: 'Six chapitres approfondis consacrés à l’origine interne du champ magnétique terrestre, au fonctionnement de la géodynamo, à la géométrie et à la mesure du champ, à ses variations temporelles, aux archives paléomagnétiques et à son interaction avec le vent solaire. Les valeurs numériques sont des ordres de grandeur dépendant du lieu, de la date et du modèle utilisé.',
+  chapters: [
+    {
+      id: 'structure-interne-et-champ-terrestre',
+      title: 'La structure interne de la Terre et les caractéristiques du champ magnétique',
+      field: 'Géophysique · Structure terrestre et géomagnétisme',
+      summary: 'Identifier les enveloppes internes de la Terre, distinguer le champ principal des contributions crustales et externes, et comprendre pourquoi le champ observé varie selon la position.',
+      lesson: {
+        sections: [
+          'La Terre est constituée de plusieurs enveloppes dont les propriétés physiques diffèrent. La croûte et le manteau sont principalement constitués de matériaux silicatés. Le noyau, beaucoup plus dense, est majoritairement métallique et riche en fer et en nickel. Il comprend un noyau externe liquide et un noyau interne solide. La limite entre le manteau et le noyau se situe à environ 2 900 km de profondeur. Cette organisation est fondamentale pour comprendre le magnétisme terrestre : le champ principal est produit essentiellement dans le noyau externe conducteur, et non par un aimant permanent placé au centre de la planète.',
+          'Le champ magnétique mesuré à la surface résulte de la superposition de plusieurs contributions. La contribution dominante est le champ principal, généré par les mouvements du fluide conducteur du noyau externe. La croûte contient également des roches aimantées qui produisent des anomalies magnétiques locales ou régionales. Enfin, des courants électriques dans l’ionosphère et la magnétosphère génèrent des champs externes variables. Les mesures géomagnétiques doivent donc distinguer ces sources afin de ne pas attribuer à tort une variation observée à l’activité du noyau.',
+          'À grande échelle, le champ principal peut être approximé par celui d’un dipôle magnétique incliné par rapport à l’axe de rotation terrestre. Cette approximation est utile pour représenter sa structure générale, mais elle ne décrit pas toutes ses irrégularités. Le champ réel comporte des composantes non dipolaires et sa géométrie varie dans le temps. Il ne faut donc pas confondre les pôles géographiques, définis par l’axe de rotation, les pôles géomagnétiques calculés à partir d’un dipôle équivalent et les pôles magnétiques observés, définis notamment par la verticalité du champ.'
+        ],
+        example: {
+          statement: 'Une mesure géomagnétique contient une contribution dominante issue du noyau, une anomalie liée à des roches aimantées de la croûte et une perturbation associée aux courants de la haute atmosphère. Quelle contribution correspond au champ principal ?',
+          calculation: 'On classe les contributions selon leur origine physique : noyau externe pour le champ principal, roches crustales pour le champ lithosphérique, ionosphère et magnétosphère pour les champs externes.',
+          answer: 'Le champ principal est la contribution produite essentiellement par la géodynamo du noyau externe. Les deux autres contributions se superposent à lui, mais ne constituent pas le champ principal.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il incorrect de décrire le champ magnétique terrestre comme celui d’un simple aimant permanent situé au centre de la Terre ?',
+          answer: 'Parce que le champ principal est entretenu par des mouvements de fluide métallique électriquement conducteur dans le noyau externe. Il s’agit d’une dynamo auto-entretenue, et non de l’aimantation permanente d’un solide central.'
+        },
+        exercises: [
+          {
+            question: 'À quelle profondeur approximative se situe la limite entre le manteau et le noyau ?',
+            answer: 'À environ 2 900 km de profondeur.'
+          },
+          {
+            question: 'Quelle enveloppe terrestre produit l’essentiel du champ magnétique principal ?',
+            answer: 'Le noyau externe liquide, dont le fluide métallique est électriquement conducteur.'
+          },
+          {
+            question: 'Quelle est la différence entre un champ crustal et un champ externe ?',
+            answer: 'Le champ crustal est lié à l’aimantation de roches de la croûte. Les champs externes sont principalement associés aux courants électriques de l’ionosphère et de la magnétosphère.'
+          }
+        ],
+        sources: [
+          { title: 'USGS — Introduction to Geomagnetism', url: 'https://www.usgs.gov/programs/geomagnetism/introduction-geomagnetism' },
+          { title: 'NOAA/NCEI — Geomagnetism Frequently Asked Questions', url: 'https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions' },
+          { title: 'GFZ — Frequently asked questions regarding geomagnetism', url: 'https://www.gfz.de/en/section/geomagnetism/data-products-services/frequently-asked-questions-regarding-geomagnetism' }
+        ]
+      }
+    },
+    {
+      id: 'geodynamo-et-origine-du-champ',
+      title: 'La géodynamo : origine physique du champ magnétique terrestre',
+      field: 'Géophysique · Magnétodynamique du noyau externe',
+      summary: 'Expliquer comment la convection d’un fluide métallique conducteur, la rotation terrestre et l’induction électromagnétique entretiennent le champ magnétique.',
+      lesson: {
+        sections: [
+          'Le noyau externe est constitué d’un alliage métallique liquide, principalement composé de fer et de nickel, auquel s’ajoutent des éléments plus légers. Sa température élevée maintient le matériau à l’état liquide dans les conditions de pression qui y règnent. Des mouvements de convection se développent sous l’effet de la flottabilité thermique et compositionnelle. Le refroidissement progressif de la Terre, la cristallisation du noyau interne et la redistribution des éléments légers contribuent au bilan énergétique et dynamique du noyau. Les détails quantitatifs de ces mécanismes font encore l’objet de recherches.',
+          'Le fluide du noyau externe conduit l’électricité. Lorsqu’il se déplace dans un champ magnétique, il peut induire des courants électriques. Ces courants produisent à leur tour un champ magnétique. Dans les conditions appropriées, le couplage entre l’écoulement du fluide et le champ électromagnétique entretient le champ au cours du temps : c’est le mécanisme de géodynamo. L’énergie magnétique dissipée par effet Joule doit être compensée par l’énergie disponible dans les mouvements du noyau. La géodynamo est donc un système dynamique auto-entretenu, et non une source magnétique inépuisable indépendante de l’évolution thermique et compositionnelle de la Terre.',
+          'La rotation terrestre joue un rôle important dans l’organisation des écoulements. À l’échelle du noyau, la force de Coriolis favorise des structures de mouvement influencées par l’axe de rotation. La dynamique réelle est toutefois tridimensionnelle, turbulente et couplée aux forces de pression, de flottabilité, de viscosité et de Lorentz, cette dernière étant liée à l’action du champ magnétique sur les courants. Les scientifiques étudient ce système à l’aide d’équations de la magnétohydrodynamique, de simulations numériques et de mesures géomagnétiques. Les modèles ne reproduisent pas chaque détail du noyau, mais permettent de tester les mécanismes capables de maintenir un champ global.'
+        ],
+        example: {
+          statement: 'Un fluide métallique conducteur se déplace dans un champ magnétique préexistant. Quel enchaînement physique permet à une géodynamo de se maintenir ?',
+          calculation: 'Mouvement du fluide conducteur → induction de courants électriques → production d’un champ magnétique → interaction avec l’écoulement. Le bilan énergétique doit compenser les dissipations, notamment ohmiques.',
+          answer: 'La géodynamo peut se maintenir si les mouvements du fluide conducteur produisent des courants et un champ magnétique qui entretiennent le système, avec une énergie mécanique suffisante pour compenser les pertes.'
+        },
+        exercise: {
+          question: 'Quel est le rôle de la conductivité électrique du fluide du noyau externe dans le fonctionnement de la géodynamo ?',
+          answer: 'Elle permet l’apparition de courants électriques par induction lorsque le fluide conducteur se déplace dans le champ magnétique. Ces courants contribuent ensuite à générer le champ magnétique.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle enveloppe terrestre se déroule principalement la géodynamo ?',
+            answer: 'Dans le noyau externe liquide.'
+          },
+          {
+            question: 'Quel phénomène permet au mouvement d’un conducteur dans un champ magnétique de produire des courants électriques ?',
+            answer: 'L’induction électromagnétique, appelée induction par mouvement dans ce contexte.'
+          },
+          {
+            question: 'Pourquoi la rotation terrestre est-elle importante pour la dynamique du noyau ?',
+            answer: 'Elle intervient notamment par la force de Coriolis, qui influence l’organisation spatiale des écoulements du fluide conducteur.'
+          }
+        ],
+        sources: [
+          { title: 'USGS — How does the Earth’s core generate a magnetic field?', url: 'https://www.usgs.gov/faqs/how-does-earths-core-generate-a-magnetic-field' },
+          { title: 'USGS — Introduction to Geomagnetism', url: 'https://www.usgs.gov/programs/geomagnetism/introduction-geomagnetism' },
+          { title: 'NASA — Earth’s Magnetosphere: Protecting Our Planet from Harmful Space Energy', url: 'https://science.nasa.gov/science-research/earth-science/earths-magnetosphere-protecting-our-planet-from-harmful-space-energy/' }
+        ]
+      }
+    },
+    {
+      id: 'mesure-et-representation-du-champ',
+      title: 'Mesurer et représenter le champ magnétique terrestre',
+      field: 'Géophysique · Magnétométrie et modélisation du champ',
+      summary: 'Maîtriser les composantes du champ, la déclinaison, l’inclinaison, l’intensité et le rôle des observatoires, satellites et modèles de référence.',
+      lesson: {
+        sections: [
+          'Le champ magnétique est une grandeur vectorielle : en chaque point, il possède une direction, un sens et une intensité. Dans un repère local, on le décompose couramment en composantes nord X, est Y et verticale Z. Les conventions de signe doivent toujours être précisées. L’intensité totale est la norme du vecteur. Elle s’exprime souvent en teslas dans le système international, mais le nanotesla (nT) est une unité pratique en géomagnétisme. Les valeurs observées à la surface sont généralement de l’ordre de quelques dizaines de milliers de nanoteslas et dépendent de la position.',
+          'La déclinaison magnétique est l’angle horizontal entre le nord géographique et la direction de la composante horizontale du champ. L’inclinaison magnétique est l’angle entre le vecteur champ et le plan horizontal. Ces angles varient avec la position géographique et au cours du temps. Une boussole s’aligne approximativement sur la composante horizontale du champ local ; elle n’indique donc pas nécessairement le nord géographique. La différence entre les deux directions doit être prise en compte dans les usages de navigation et de cartographie.',
+          'Les mesures sont réalisées par des magnétomètres installés dans des observatoires, sur des plateformes mobiles, des navires, des avions ou des satellites. Les observatoires fournissent des séries temporelles utiles pour suivre les variations du champ. Les satellites permettent une couverture spatiale globale et contribuent à séparer les sources internes et externes. Les modèles comme l’International Geomagnetic Reference Field (IGRF), élaboré sous l’égide de l’IAGA à partir de données mondiales, décrivent le champ principal et sa variation séculaire. Un modèle est une représentation mathématique : il ne remplace pas une mesure locale et ses limites doivent être prises en compte.'
+        ],
+        example: {
+          statement: 'Une mesure locale fournit les composantes X = 20 000 nT, Y = 5 000 nT et Z = 40 000 nT. Quelle expression permet de calculer l’intensité totale ?',
+          calculation: 'F = √(X² + Y² + Z²). En remplaçant les composantes : F = √(20 000² + 5 000² + 40 000²) nT.',
+          answer: 'F = √(2 025 000 000) nT, soit environ 45 000 nT. Il s’agit d’un exemple de calcul vectoriel illustratif, et non d’une mesure réelle attribuée à un lieu.'
+        },
+        exercise: {
+          question: 'Pourquoi la déclinaison magnétique doit-elle être connue lorsqu’on utilise une boussole pour s’orienter par rapport au nord géographique ?',
+          answer: 'Parce que la boussole suit la direction du champ magnétique horizontal local, qui forme généralement un angle avec le nord géographique. Cet angle est la déclinaison magnétique.'
+        },
+        exercises: [
+          {
+            question: 'Quelle unité est fréquemment utilisée pour exprimer l’intensité du champ géomagnétique ?',
+            answer: 'Le nanotesla (nT), avec 1 nT = 10⁻⁹ tesla.'
+          },
+          {
+            question: 'Que représente l’inclinaison magnétique ?',
+            answer: 'L’angle entre le vecteur champ magnétique et le plan horizontal local.'
+          },
+          {
+            question: 'Quel est le rôle principal de l’IGRF ?',
+            answer: 'Fournir une description mathématique standard du champ magnétique principal terrestre et de sa variation séculaire.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA/NCEI — Geomagnetism Frequently Asked Questions', url: 'https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions' },
+          { title: 'IAGA — International Geomagnetic Reference Field (IGRF)', url: 'https://www.iaga-aiga.org/igrf/' },
+          { title: 'IAGA — Data, Products, Services', url: 'https://iaga-aiga.org/data-products-services/' }
+        ]
+      }
+    },
+    {
+      id: 'variations-temporelles-et-modeles',
+      title: 'Les variations du champ magnétique et leur modélisation',
+      field: 'Géophysique · Variation séculaire, variations rapides et modèles géomagnétiques',
+      summary: 'Distinguer les changements lents du champ principal des perturbations rapides d’origine externe et comprendre comment les scientifiques construisent des modèles.',
+      lesson: {
+        sections: [
+          'Le champ magnétique terrestre n’est pas constant. Sa composante principale évolue lentement parce que les écoulements du noyau externe changent au cours du temps. Cette évolution à long terme est appelée variation séculaire. Elle se manifeste notamment par des changements de l’intensité et de la direction du champ, ainsi que par le déplacement des pôles magnétiques. Ces évolutions sont irrégulières : elles ne suivent pas une vitesse uniforme et ne permettent pas, à elles seules, de prévoir une inversion prochaine.',
+          'Des variations plus rapides sont produites par les courants électriques de l’ionosphère et de la magnétosphère. Elles peuvent se développer sur des durées allant de secondes à plusieurs jours et sont influencées par l’activité solaire. Les orages géomagnétiques correspondent à des perturbations importantes du système magnétosphérique et des courants associés. Pour étudier correctement le champ du noyau, les chercheurs doivent donc identifier et corriger, autant que possible, les contributions externes ainsi que les effets locaux liés à la croûte et aux installations de mesure.',
+          'La modélisation combine des observations provenant des observatoires, des campagnes de mesure et des satellites. L’IGRF est un modèle de référence du champ principal, révisé périodiquement par l’IAGA. Il repose sur une représentation mathématique en harmoniques sphériques, adaptée à la géométrie globale de la Terre. Il sert notamment à calculer des paramètres géomagnétiques en fonction du lieu et de la date. Il faut cependant respecter la période de validité du modèle, ses incertitudes et son domaine d’application. Les modèles de référence ne constituent pas une prévision détaillée de toutes les perturbations géomagnétiques à court terme.'
+        ],
+        example: {
+          statement: 'Un observatoire enregistre une variation lente sur plusieurs années et une perturbation importante pendant un épisode d’activité solaire. Comment distinguer ces deux phénomènes ?',
+          calculation: 'On examine leur durée, leur évolution et leur contexte : une évolution progressive sur plusieurs années est compatible avec la variation séculaire ; une perturbation rapide associée à l’activité solaire relève principalement des champs externes.',
+          answer: 'La variation lente est principalement liée à l’évolution du champ du noyau. La perturbation rapide est principalement associée aux courants de l’ionosphère et de la magnétosphère, eux-mêmes influencés par le vent solaire.'
+        },
+        exercise: {
+          question: 'Pourquoi les scientifiques doivent-ils séparer les variations externes du champ principal lorsqu’ils étudient la géodynamo ?',
+          answer: 'Parce que les variations externes peuvent modifier les mesures à court terme. Les séparer permet de mieux isoler l’évolution lente du champ produite dans le noyau terrestre.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on l’évolution lente du champ magnétique principal au cours du temps ?',
+            answer: 'La variation séculaire.'
+          },
+          {
+            question: 'Quelle organisation internationale coordonne l’élaboration de l’IGRF ?',
+            answer: 'L’Association internationale de géomagnétisme et d’aéronomie (IAGA).'
+          },
+          {
+            question: 'L’IGRF permet-il de prévoir précisément chaque orage géomagnétique ?',
+            answer: 'Non. Il décrit le champ principal et sa variation séculaire ; les perturbations rapides liées à l’activité solaire nécessitent d’autres observations et outils de météorologie de l’espace.'
+          }
+        ],
+        sources: [
+          { title: 'IAGA — International Geomagnetic Reference Field (IGRF)', url: 'https://www.iaga-aiga.org/igrf/' },
+          { title: 'GFZ — Geomagnetic Field Models', url: 'https://www.gfz.de/en/section/geomagnetism/data-products-services/mag-models' },
+          { title: 'NOAA/NCEI — Geomagnetism Frequently Asked Questions', url: 'https://www.ncei.noaa.gov/products/geomagnetism-frequently-asked-questions' }
+        ]
+      }
+    },
+    {
+      id: 'paleomagnetisme-et-inversions',
+      title: 'Le paléomagnétisme, les inversions et les archives géologiques',
+      field: 'Géophysique · Paléomagnétisme et géologie historique',
+      summary: 'Comprendre comment les roches enregistrent l’orientation du champ ancien, comment les inversions sont identifiées et pourquoi ces archives ont contribué à établir la tectonique des plaques.',
+      lesson: {
+        sections: [
+          'Le paléomagnétisme étudie les traces du champ magnétique ancien conservées dans les matériaux géologiques. Lors du refroidissement d’une lave, certains minéraux magnétiques peuvent acquérir une aimantation thermorémanente qui enregistre une direction liée au champ ambiant lorsque la roche passe sous des températures caractéristiques. Des sédiments peuvent également conserver une aimantation détritique ou chimique lors de leur dépôt ou de leur transformation. Ces enregistrements ne sont pas parfaits : ils peuvent être modifiés par l’altération, le chauffage, la déformation ou des événements géologiques ultérieurs. Les chercheurs appliquent donc des méthodes de laboratoire et des contrôles stratigraphiques pour distinguer l’aimantation ancienne des réaimantations plus récentes.',
+          'Les inversions géomagnétiques sont des épisodes durant lesquels la polarité globale du champ dipolaire change : la configuration dite normale est remplacée par une configuration dite inversée, ou inversement. Les roches volcaniques et sédimentaires peuvent conserver des indices de ces changements. Les inversions ne se produisent pas à intervalles réguliers et ne suivent pas une périodicité fixe. La dernière inversion complète connue, qui marque la limite entre les chrones de polarité Matuyama et Brunhes, date d’environ 780 000 ans. Une excursion géomagnétique est différente d’une inversion complète : le champ s’écarte fortement de sa configuration habituelle, puis revient à la polarité initiale.',
+          'Les fonds océaniques ont fourni une archive majeure de l’histoire du champ. En s’éloignant des dorsales, les basaltes océaniques enregistrent la polarité du champ au moment de leur formation. Les bandes d’anomalies magnétiques disposées de part et d’autre de certaines dorsales présentent une organisation globalement symétrique. Leur interprétation, combinée aux données géologiques et géophysiques, a joué un rôle déterminant dans le développement de l’expansion des fonds océaniques et de la tectonique des plaques. Le paléomagnétisme permet ainsi de relier les processus du noyau terrestre à l’histoire de la lithosphère.'
+        ],
+        example: {
+          statement: 'Deux coulées de lave successives présentent des directions d’aimantation opposées après vérification que leur aimantation est primaire. Quelle interprétation géologique peut être envisagée ?',
+          calculation: 'On compare les directions d’aimantation aux polarités de référence et on vérifie l’ordre stratigraphique ainsi que l’absence de réaimantation secondaire.',
+          answer: 'Les coulées peuvent avoir enregistré deux périodes de polarité géomagnétique différente. Cette interprétation doit être confirmée par les données stratigraphiques et les analyses paléomagnétiques.'
+        },
+        exercise: {
+          question: 'Comment les roches volcaniques peuvent-elles conserver une information sur le champ magnétique qui existait lors de leur formation ?',
+          answer: 'Lors du refroidissement, des minéraux magnétiques acquièrent une aimantation rémanente dont la direction peut enregistrer celle du champ ambiant à l’époque de la solidification.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on l’étude des traces du champ magnétique ancien conservées dans les roches ?',
+            answer: 'Le paléomagnétisme.'
+          },
+          {
+            question: 'À quand remonte approximativement la dernière inversion complète du champ magnétique terrestre ?',
+            answer: 'À environ 780 000 ans.'
+          },
+          {
+            question: 'Pourquoi les bandes magnétiques du plancher océanique sont-elles importantes pour la tectonique des plaques ?',
+            answer: 'Elles enregistrent les changements de polarité au cours de la formation des basaltes océaniques et fournissent des indices sur l’expansion des fonds océaniques.'
+          }
+        ],
+        sources: [
+          { title: 'USGS — Is it true that Earth’s magnetic field occasionally reverses its polarity?', url: 'https://www.usgs.gov/faqs/it-true-earths-magnetic-field-occasionally-reverses-its-polarity' },
+          { title: 'USGS — Magnetic stripes and isotopic clocks', url: 'https://pubs.usgs.gov/gip/dynamic/stripes.html' },
+          { title: 'GFZ — Geomagnetic Field Models', url: 'https://www.gfz.de/en/section/geomagnetism/data-products-services/mag-models' }
+        ]
+      }
+    },
+    {
+      id: 'magnetosphere-et-interaction-solaire',
+      title: 'La magnétosphère et les interactions entre la Terre et le Soleil',
+      field: 'Géophysique · Physique de la magnétosphère et météorologie de l’espace',
+      summary: 'Décrire la magnétosphère, son interaction avec le vent solaire, les ceintures de radiation, les aurores et les effets possibles des perturbations géomagnétiques.',
+      lesson: {
+        sections: [
+          'La magnétosphère est la région de l’espace dans laquelle le champ magnétique terrestre domine l’organisation du plasma environnant. Elle est façonnée par le vent solaire, un flux de plasma principalement constitué de protons et d’électrons provenant du Soleil et transportant un champ magnétique interplanétaire. La pression du vent solaire comprime la magnétosphère du côté jour et étire les lignes de champ du côté nuit pour former une longue queue magnétique. La frontière principale entre le plasma solaire et la région dominée par le champ terrestre est appelée magnétopause. La forme et la position de ces structures varient avec les conditions du vent solaire.',
+          'La magnétosphère dévie une grande partie du plasma du vent solaire, mais elle n’est pas une barrière parfaitement étanche. Des transferts d’énergie et de particules se produisent notamment par reconnexion magnétique et par différents processus de transport. Des particules chargées peuvent être piégées dans les ceintures de radiation de Van Allen. D’autres sont guidées le long des lignes de champ vers les régions polaires et peuvent contribuer aux aurores lorsqu’elles interagissent avec les constituants de la haute atmosphère. Les aurores sont donc liées au couplage entre le vent solaire, la magnétosphère et l’ionosphère.',
+          'Les perturbations de la magnétosphère et de l’ionosphère peuvent produire des orages géomagnétiques. Elles sont susceptibles d’affecter certains systèmes technologiques : satellites, communications radio, navigation par satellite et réseaux électriques, selon l’intensité de l’événement et la vulnérabilité des infrastructures. Le champ magnétique contribue à protéger l’environnement terrestre du vent solaire, mais il ne constitue pas à lui seul une protection absolue contre toutes les particules énergétiques ou tous les rayonnements. L’atmosphère joue également un rôle essentiel dans la protection de la surface. L’étude de ces interactions relève de la météorologie de l’espace.'
+        ],
+        example: {
+          statement: 'Une forte perturbation du vent solaire est suivie d’une activité géomagnétique accrue. Quelle chaîne d’interactions peut expliquer cette observation ?',
+          calculation: 'Vent solaire perturbé → transfert d’énergie et de particules à la magnétosphère → modification des courants magnétosphériques et ionosphériques → variations mesurables du champ magnétique au sol.',
+          answer: 'L’interaction du vent solaire avec la magnétosphère peut renforcer ou réorganiser les courants dans l’environnement spatial terrestre, entraînant une perturbation géomagnétique observable.'
+        },
+        exercise: {
+          question: 'Pourquoi la magnétosphère terrestre est-elle décrite comme une structure dynamique plutôt que comme une enveloppe fixe ?',
+          answer: 'Parce que sa forme, ses frontières et ses courants évoluent en permanence sous l’effet des variations du vent solaire et du champ magnétique interplanétaire.'
+        },
+        exercises: [
+          {
+            question: 'Comment s’appelle la frontière entre la magnétosphère terrestre et le vent solaire ?',
+            answer: 'La magnétopause.'
+          },
+          {
+            question: 'Quel phénomène est associé à la production des aurores polaires ?',
+            answer: 'L’interaction de particules énergétiques avec la haute atmosphère, dans le cadre du couplage entre magnétosphère et ionosphère.'
+          },
+          {
+            question: 'Cite deux infrastructures technologiques qui peuvent être perturbées par une forte activité géomagnétique.',
+            answer: 'Les satellites et les réseaux électriques. Les communications radio et les systèmes de navigation peuvent également être affectés.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA/SWPC — Earth’s Magnetosphere', url: 'https://www.spaceweather.gov/phenomena/earths-magnetosphere' },
+          { title: 'NASA — Magnetospheres', url: 'https://science.nasa.gov/heliophysics/focus-areas/magnetosphere-ionosphere/' },
+          { title: 'NASA — Earth’s Magnetosphere', url: 'https://science.nasa.gov/science-research/planetary-science/earths-magnetosphere/' },
+          { title: 'NOAA — Space Weather Phenomena', url: 'https://www.spaceweather.gov/phenomena' }
+        ]
+      }
+    }
+  ]
+},
 
 ]
 
