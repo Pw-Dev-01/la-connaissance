@@ -774,11 +774,11 @@ font-size: 19px;
 }
 
 .entry-copy strong {
-font-size: 20px;
+font-size: 25px;
 }
 
 .entry-copy > span {
-font-size: 11px;
+font-size: 12px;
 }
 
 .next-section {
@@ -814,7 +814,7 @@ width: 36px;
 }
 
 .entry-copy strong {
-font-size: 18px;
+font-size: 20px;
 }
 
 .mobile-navigation {
@@ -1086,3 +1086,4 @@ transition: none;
 .header-search-form button {
   align-self: flex-end;
 }
+
