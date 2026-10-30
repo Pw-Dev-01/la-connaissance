@@ -1296,3 +1296,18 @@ font-size: 9px;
 .reveal-label { font-size: 13px; }
 .method-list li strong { font-size: 16px; }
 .method-list li span { font-size: calc(var(--lesson-size) - 2px); }
+
+
+
+/* Texte justifié dans les chapitres et les leçons */
+.lesson-section > p:not(.section-index),
+.equation-detail > p,
+.callout p,
+.case-row p,
+.exercise-answer p,
+.lesson-html p,
+.book-fiche p,
+.mistake-list {
+  text-align: justify;
+  text-justify: inter-word;
+}
