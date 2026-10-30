@@ -1311,3 +1311,19 @@ font-size: 9px;
   text-align: justify;
   text-justify: inter-word;
 }
+
+
+/* Marges latérales légèrement augmentées */
+.course-layout,
+.catalogue-layout,
+.lesson-layout {
+  width: min(100% - 96px, 1240px);
+}
+
+@media (max-width: 700px) {
+  .course-layout,
+  .catalogue-layout,
+  .lesson-layout {
+    width: calc(100% - 48px);
+  }
+}
