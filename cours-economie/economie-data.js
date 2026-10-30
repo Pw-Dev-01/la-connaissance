@@ -2646,7 +2646,273 @@ window.courseCatalog = [
       }
     }
   ]
-}
+},
+
+{
+  id: 'economie-internationale',
+  title: 'Économie internationale',
+  note: 'Six chapitres sur les théories du commerce international, la politique commerciale, la balance des paiements, les taux de change et l’histoire du système monétaire international. Les modèles sont des simplifications : les exemples chiffrés sont pédagogiques, sauf indication contraire, et les données historiques renvoient aux sources citées.',
+  chapters: [
+    {
+      id: 'avantage-comparatif',
+      title: 'Avantage absolu, avantage comparatif et gains à l’échange',
+      field: 'Économie internationale · Théorie du commerce · Smith (1776) et Ricardo (1817)',
+      summary: 'Comprendre pourquoi un pays gagne à commercer même s’il est plus productif que ses partenaires dans tous les biens, et comment le coût d’opportunité détermine la spécialisation.',
+      lesson: {
+        sections: [
+          'L’économie internationale étudie les échanges de biens, de services et de capitaux entre pays, ainsi que les politiques qui les encadrent. Sa première question est simple : pourquoi les pays commercent-ils, et qui y gagne ? Adam Smith (La Richesse des nations, 1776), puis David Ricardo (Des principes de l’économie politique et de l’impôt, 1817), ont établi les bases économiques du libre-échange. Un pays possède un avantage absolu dans un bien lorsqu’il peut le produire en utilisant moins d’intrants (travail, capital) que les autres pays pour la même production.',
+          'L’apport décisif de Ricardo est de montrer que le commerce n’est pas gouverné par les coûts absolus mais par les coûts comparatifs. Un pays plus productif que ses partenaires dans tous les biens a néanmoins intérêt à échanger : il se spécialise dans les produits où son avantage absolu est le plus grand et importe ceux où cet avantage est comparativement moins grand, même s’il reste positif. Son partenaire exporte les biens où il est le moins désavantagé. Le raisonnement ne se limite pas aux biens physiques : il s’applique aussi aux services, comme l’écriture de code informatique ou la fourniture de produits financiers.',
+          'La notion clé est le coût d’opportunité : la quantité d’un autre bien à laquelle il faut renoncer pour produire un bien donné. Dans l’exemple pédagogique d’Econlib, Ann peut produire soit 100 régimes de bananes, soit 200 poissons par mois ; Bob soit 50 bananes, soit 50 poissons. Chaque poisson coûte une demi-banane à Ann, mais une banane entière à Bob : Ann a un avantage comparatif dans la pêche, Bob dans la cueillette. Tout prix du poisson compris entre une demi-banane et une banane procure des gains aux deux : Ann accepte de vendre au-dessus de son coût (0,5 banane) et Bob d’acheter en dessous du sien (1 banane). L’échange est donc possible dès que les coûts d’opportunité diffèrent.',
+          'Selon le FMI, grâce à l’avantage comparatif, le commerce élève le niveau de vie des deux pays. Econlib rappelle aussi que les étrangers n’exportent que parce qu’ils veulent importer : le commerce est un échange de biens contre des biens. Le modèle a toutefois ses limites. Dans sa version de base, il attribue les différences de coûts d’opportunité aux seules différences de productivité du travail ; les chapitres suivants ajoutent d’autres sources de commerce (dotations en facteurs, économies d’échelle). Enfin, tout le monde ne gagne pas : une entreprise qui perd une vente face à un concurrent étranger moins cher subit une perte, même si, en général, l’acheteur gagne plus que le producteur national ne perd (FMI).'
+        ],
+        example: {
+          statement: 'Pays A : une heure de travail produit soit 3 kg d’acier, soit 2 chemises. Pays B : une heure de travail produit soit 1 kg d’acier, soit 1 chemise. Quel pays a un avantage comparatif dans les chemises ? (Exemple repris du FMI.)',
+          calculation: 'Coût d’opportunité d’une chemise : pays A = 3 / 2 = 1,5 kg d’acier ; pays B = 1 / 1 = 1 kg d’acier. Coût d’opportunité d’1 kg d’acier : pays A = 2 / 3 ≈ 0,67 chemise ; pays B = 1 chemise. Le coût d’opportunité des chemises est le plus faible en B ; celui de l’acier est le plus faible en A.',
+          answer: 'Le pays B a l’avantage comparatif dans les chemises, bien que A soit plus productif dans les deux biens. Si B vend 2 chemises à A contre 2,5 kg d’acier : A consacre une heure de moins aux chemises (−2 chemises) et produit 3 kg d’acier de plus ; B consacre deux heures de moins à l’acier (−2 kg) et produit 2 chemises de plus. La production de chemises est inchangée et celle d’acier augmente de 1 kg. Après l’échange, chaque pays dispose de 0,5 kg d’acier supplémentaire.'
+        },
+        exercise: {
+          question: 'Dans l’exemple d’Ann et Bob, pourquoi Ann a-t-elle un avantage comparatif dans la pêche ?',
+          answer: 'Pour chaque poisson pêché, Ann renonce à 0,5 banane (100 bananes pour 200 poissons), alors que Bob renonce à 1 banane (50 pour 50). Son coût d’opportunité de la pêche est plus faible.'
+        },
+        exercises: [
+          {
+            question: 'Qui a formulé le principe de l’avantage comparatif et dans quel ouvrage ?',
+            answer: 'David Ricardo, dans Des principes de l’économie politique et de l’impôt (1817).'
+          },
+          {
+            question: 'Un pays plus productif que ses partenaires dans tous les biens peut-il gagner à l’échange ?',
+            answer: 'Oui. Il gagne en se spécialisant selon son avantage comparatif, c’est-à-dire dans les biens où son avantage absolu est le plus grand.'
+          },
+          {
+            question: 'Un producteur peut fabriquer soit 40 unités de X, soit 20 unités de Y ; un autre soit 30 unités de X, soit 10 unités de Y. Lequel a l’avantage comparatif dans Y ?',
+            answer: 'Le premier : une unité de Y lui coûte 40 / 20 = 2 unités de X, contre 30 / 10 = 3 unités de X pour le second. Le premier a l’avantage absolu dans les deux biens, mais le second a l’avantage comparatif dans X.'
+          }
+        ],
+        sources: [
+          { title: 'FMI, Finance & Development — International Trade: Commerce among Nations', url: 'https://www.imf.org/external/pubs/ft/fandd/basics/40-international-trade.htm' },
+          { title: 'Econlib — Comparative Advantage (Donald J. Boudreaux)', url: 'https://www.econlib.org/library/Enc/ComparativeAdvantage.html' },
+          { title: 'Econlib — Tariffs (Douglas A. Irwin)', url: 'https://www.econlib.org/library/enc/tariffs.html' }
+        ]
+      }
+    },
+    {
+      id: 'dotations-factorielles',
+      title: 'Dotations en facteurs : le modèle Heckscher-Ohlin et le paradoxe de Leontief',
+      field: 'Économie internationale · Théorie du commerce · Heckscher, Ohlin, Stolper-Samuelson, Leontief',
+      summary: 'Comprendre comment les différences de dotations en capital et en travail expliquent une partie du commerce, quels effets elles ont sur les revenus, et pourquoi les tests empiriques ont nuancé la théorie.',
+      lesson: {
+        sections: [
+          'Le modèle ricardien explique le commerce par des différences de productivité. Au début du XXe siècle, les économistes suédois Eli Heckscher et Bertil Ohlin ont proposé une autre source d’avantage comparatif : les dotations en facteurs de production, c’est-à-dire les quantités relatives de travail, de capital (usines, machines) ou de terre dont dispose un pays. Selon Britannica, la théorie a été développée par Ohlin à partir des travaux de son professeur Heckscher.',
+          'La proposition de Heckscher-Ohlin affirme qu’un pays tend à exporter les biens dont la production utilise intensivement le facteur qui lui est relativement abondant, et à importer ceux qui utilisent intensivement son facteur relativement rare (FMI). Un pays bien doté en capital exporte donc des produits intensifs en capital, un pays bien doté en travail des produits intensifs en travail. L’abondance est relative : ce qui compte n’est pas le stock total de capital, mais le capital par travailleur. Britannica l’illustre ainsi : le Luxembourg possède moins de capital que l’Inde au total, mais davantage par travailleur ; il devrait donc exporter des produits intensifs en capital vers l’Inde et importer des produits intensifs en travail.',
+          'Le modèle a aussi des conséquences sur la répartition des revenus. Dans un cadre simple à deux biens et deux facteurs, Wolfgang Stolper et Paul Samuelson (1941) montrent qu’un tarif augmente la rémunération d’un facteur et réduit celle de l’autre : si le tarif relève le prix relatif du bien intensif en travail non qualifié, il augmente le salaire réel des travailleurs non qualifiés et diminue celui des travailleurs qualifiés (Econlib). Ce résultat explique en partie pourquoi la politique commerciale suscite des débats : le libre-échange comme la protection font des gagnants et des perdants selon le facteur que l’on détient. Il ne tient pas compte d’autres effets, comme la croissance ou l’élargissement de la gamme de produits disponibles.',
+          'Le premier test empirique majeur est celui de Wassily Leontief, réalisé en 1953 avec des données américaines de 1947. Les États-Unis étant alors considérés comme le pays le plus abondant en capital, la théorie prédisait qu’ils exporteraient des biens intensifs en capital. Leontief a trouvé l’inverse : les États-Unis exportaient plutôt des biens intensifs en travail. Ce résultat, opposé à celui que prédit la théorie, est connu comme le paradoxe de Leontief. Plusieurs explications ont été avancées : les technologies diffèrent d’un pays à l’autre alors que le modèle les suppose identiques ; Leontief n’a considéré que le travail et le capital en ignorant la terre, dont les États-Unis sont bien dotés ; ou encore les États-Unis exportaient surtout des biens utilisant du travail qualifié (Feenstra et Taylor). Le FMI note qu’on admet aujourd’hui d’autres influences importantes sur les échanges, et que l’approche par les dotations ignore le commerce intra-branche, objet du chapitre suivant.'
+        ],
+        example: {
+          statement: 'Pays X : 200 unités de capital et 100 unités de travail. Pays Y : 300 unités de capital et 300 unités de travail (chiffres fictifs). Quel pays est abondant en capital selon le critère de Heckscher-Ohlin, et que devrait-il exporter ?',
+          calculation: 'Capital par travailleur : X = 200 / 100 = 2 ; Y = 300 / 300 = 1. Y possède plus de capital au total (300 > 200), mais le critère est le ratio capital / travail.',
+          answer: 'X est abondant en capital (2 > 1) et devrait exporter le bien intensif en capital ; Y, relativement abondant en travail, devrait exporter le bien intensif en travail. Il s’agit d’une prédiction théorique que le paradoxe de Leontief a confrontée aux données.'
+        },
+        exercise: {
+          question: 'Pourquoi le Luxembourg est-il considéré comme abondant en capital par rapport à l’Inde, alors qu’il possède moins de capital au total ?',
+          answer: 'Parce que le critère est le capital par travailleur et non le stock total de capital : le Luxembourg a davantage de capital par travailleur que l’Inde.'
+        },
+        exercises: [
+          {
+            question: 'Quels économistes suédois sont à l’origine du modèle des dotations en facteurs ?',
+            answer: 'Eli Heckscher et Bertil Ohlin.'
+          },
+          {
+            question: 'Que prédit la proposition de Heckscher-Ohlin ?',
+            answer: 'Un pays tend à exporter les biens qui utilisent intensivement son facteur relativement abondant et à importer ceux qui utilisent intensivement son facteur relativement rare.'
+          },
+          {
+            question: 'En quoi consiste le paradoxe de Leontief ?',
+            answer: 'Les États-Unis, considérés comme abondants en capital, exportaient des biens plutôt intensifs en travail, ce qui est l’opposé de la prédiction du modèle.'
+          }
+        ],
+        sources: [
+          { title: 'FMI, Finance & Development — International Trade: Commerce among Nations', url: 'https://www.imf.org/external/pubs/ft/fandd/basics/40-international-trade.htm' },
+          { title: 'Britannica — Heckscher-Ohlin theory', url: 'https://www.britannica.com/topic/Heckscher-Ohlin-theory' },
+          { title: 'Feenstra et Taylor, International Economics (3e éd.) — Testing the Heckscher-Ohlin Model', url: 'https://digfir-published.macmillanusa.com/feenstrataylorintlecon3/feenstrataylorintlecon3_ch4_3.html' },
+          { title: 'Econlib — Tariffs (Douglas A. Irwin)', url: 'https://www.econlib.org/library/enc/tariffs.html' }
+        ]
+      }
+    },
+    {
+      id: 'nouvelle-theorie-commerce',
+      title: 'La nouvelle théorie du commerce : économies d’échelle et commerce intra-branche',
+      field: 'Économie internationale · Théorie du commerce · Krugman et la concurrence monopolistique',
+      summary: 'Comprendre pourquoi des pays semblables échangent des produits semblables, le rôle des économies d’échelle et de la variété, et la contribution de Paul Krugman.',
+      lesson: {
+        sections: [
+          'Les modèles précédents expliquent le commerce par des différences entre pays : de productivité (Ricardo) ou de dotations en facteurs (Heckscher-Ohlin). À la fin des années 1970, Paul Krugman constate que ce modèle s’ajuste mal aux données : l’essentiel du commerce international a lieu entre des pays dont le rapport capital / travail est à peu près semblable (Econlib). Un pays exporte en outre des biens de la même catégorie que ceux qu’il importe : c’est le commerce intra-branche. Le FMI donne l’exemple de pays qui exportent des réfrigérateurs domestiques et importent des refroidisseurs industriels, un phénomène que l’approche par les dotations en facteurs ignore.',
+          'Krugman part de l’idée que de nombreux biens et services peuvent être produits à moindre coût en grandes séries : ce sont les économies d’échelle. Parallèlement, les consommateurs demandent une offre variée (comité Nobel). L’ouverture au commerce élargit le marché : la production à petite échelle pour un marché local est remplacée par une production à grande échelle pour le marché mondial, où des entreprises aux produits semblables se font concurrence. Ce type d’échange permet la spécialisation et la production en grande série, d’où des prix plus bas et une plus grande diversité de produits. Le comité Nobel cite l’exemple d’un pays comme la Suède, qui exporte et importe des voitures.',
+          'Le modèle de Krugman repose sur la concurrence monopolistique : chaque entreprise vend un produit différencié de celui de ses concurrentes, mais la concurrence entre entreprises ramène leurs profits économiques à zéro (Econlib). Sa référence est l’article de 1979 « Increasing Returns, Monopolistic Competition, and International Trade », paru dans le Journal of International Economics (vol. 9, pp. 469-479). Krugman attribue lui-même l’intuition de départ à des travaux antérieurs de Béla Balassa, Herbert Grubel et Irving Kravis. Dans ce cadre, des pays semblables ont intérêt à commercer entre eux, car l’échange donne accès à des marchés plus grands, donc à une production moins coûteuse, et à une plus grande variété.',
+          'Selon le FMI, les gains tiennent à davantage de produits, pas seulement à davantage de quantités : les États-Unis importent quatre fois plus de variétés (par exemple de types de voitures) que dans les années 1970, et le nombre de pays fournisseurs de chaque bien a doublé. L’accès à une plus grande variété et à une meilleure qualité de biens intermédiaires et d’équipements peut aussi rendre l’investissement plus efficace et soutenir l’innovation et la croissance. L’ouverture entraîne des ajustements au sein même des branches : la concurrence étrangère pousse les entreprises les moins efficaces à se contracter et laisse de la place aux plus efficaces. Combinées à la baisse des coûts de transport, les économies d’échelle contribuent aussi à expliquer la concentration des activités dans les villes et la division possible des régions entre un cœur urbanisé de haute technologie et une « périphérie » moins développée. C’est pour l’analyse des modèles d’échanges et de la localisation de l’activité économique que Krugman a reçu en 2008 le prix de la Banque de Suède en sciences économiques en mémoire d’Alfred Nobel.'
+        ],
+        example: {
+          statement: 'Une entreprise a un coût fixe F = 1 000 et un coût variable c = 10 par unité (chiffres fictifs). Calculer son coût moyen si elle vend 100 unités sur son marché national, puis 500 unités en ajoutant l’exportation.',
+          calculation: 'Coût total = F + c × Q, donc coût moyen = F / Q + c. Pour Q = 100 : 1 000 / 100 + 10 = 20. Pour Q = 500 : 1 000 / 500 + 10 = 12.',
+          answer: 'Le coût moyen passe de 20 à 12, soit une baisse de 40 %, parce que le coût fixe est réparti sur davantage d’unités. C’est le mécanisme des économies d’échelle que l’ouverture au commerce permet d’exploiter.'
+        },
+        exercise: {
+          question: 'Quel phénomène la nouvelle théorie du commerce explique-t-elle mieux que le modèle des dotations en facteurs ?',
+          answer: 'Le commerce entre pays semblables portant sur des produits semblables (commerce intra-branche), fondé sur les économies d’échelle et la demande de variété.'
+        },
+        exercises: [
+          {
+            question: 'Pour quelle contribution Paul Krugman a-t-il reçu le prix de la Banque de Suède en sciences économiques en 2008 ?',
+            answer: 'Pour son analyse des modèles d’échanges et de la localisation de l’activité économique.'
+          },
+          {
+            question: 'Qu’est-ce que le commerce intra-branche ?',
+            answer: 'Un commerce dans lequel un pays exporte et importe des produits d’une même branche, par exemple des voitures ou des réfrigérateurs de types différents.'
+          },
+          {
+            question: 'Quelle est la caractéristique de la concurrence monopolistique dans le modèle de Krugman ?',
+            answer: 'Chaque entreprise vend un produit différencié, mais la concurrence entre entreprises ramène les profits économiques à zéro.'
+          }
+        ],
+        sources: [
+          { title: 'Nobel Prize — The Prize in Economic Sciences 2008 (Press release)', url: 'https://www.nobelprize.org/prizes/economic-sciences/2008/press-release/' },
+          { title: 'Econlib — Paul Krugman', url: 'https://www.econlib.org/library/Enc/bios/Krugman.html' },
+          { title: 'FMI, Finance & Development — International Trade: Commerce among Nations', url: 'https://www.imf.org/external/pubs/ft/fandd/basics/40-international-trade.htm' }
+        ]
+      }
+    },
+    {
+      id: 'politique-commerciale',
+      title: 'Politique commerciale : tarifs, quotas et système commercial multilatéral',
+      field: 'Économie internationale · Politique commerciale · Droits de douane, quotas, GATT et OMC',
+      summary: 'Comprendre pourquoi les États taxent ou limitent les importations, qui gagne et qui perd, et comment le GATT puis l’OMC encadrent ces politiques.',
+      lesson: {
+        sections: [
+          'Un tarif (ou droit de douane) est une taxe, le plus souvent sur les importations. Presque tous les pays taxent les importations, alors que les taxes à l’exportation sont rares : certains pays riches en ressources naturelles y recourent, par exemple l’Argentine pour le soja et le blé (Econlib). Pour Douglas Irwin, trois raisons expliquent les tarifs : le revenu, la restriction et la réciprocité. Avant l’impôt sur le revenu, les droits de douane financent largement l’État : avant la guerre de Sécession, ils fournissaient environ 90 % des recettes du gouvernement fédéral américain. La restriction vise à protéger les producteurs nationaux de la concurrence étrangère. La réciprocité consiste soit à négocier des baisses mutuelles de tarifs, soit à riposter contre un pays qui relève les siens.',
+          'Prenons un tarif sur le sucre importé. Le prix intérieur monte : les consommateurs demandent moins, les producteurs nationaux offrent davantage, et les importations diminuent. Le tarif équivaut à une subvention à la production et à une taxe sur la consommation. Les consommateurs perdent ; leur perte va en partie aux producteurs (prix plus élevé) et en partie à l’État (recettes), mais ils perdent plus que les producteurs et l’État ne gagnent. Il en résulte des pertes sèches : celle de production (coûts supplémentaires pour produire localement davantage) et celle de consommation (avantages perdus par ceux qui n’achètent plus). Ces pertes sont des gains à l’échange non réalisés (Econlib).',
+          'Qui paie le tarif ? Si le prix mondial ne change pas, les consommateurs du pays supportent tout le droit : avec un prix mondial de 100 $ la tonne et un droit de 20 %, le prix intérieur passe à 120 $. Si le pays est assez grand pour faire baisser le prix mondial (par exemple de 100 à 90 $), le droit de 20 % représente 18 $ et le prix intérieur ne monte qu’à 108 $ : le coût est partagé avec les exportateurs étrangers. Le tarif n’agit pas non plus seulement dans le secteur protégé. Selon le théorème de symétrie de Lerner, un tarif à l’importation équivaut à une taxe à l’exportation, notamment parce qu’il tend à faire apprécier la monnaie, ce qui pénalise les exportations. Protéger l’acier renchérit aussi les intrants des secteurs qui en utilisent, comme les machines, l’automobile ou le matériel agricole (Econlib).',
+          'Un quota limite les importations en volume. Ses effets ressemblent à ceux d’un tarif, avec deux différences. Le tarif rapporte des recettes à l’État, alors que le quota crée une rente (la marge entre prix mondial et prix intérieur) qui ne va à l’État que si les licences sont vendues aux enchères. Et si la concurrence intérieure est faible, le quota donne aux producteurs nationaux un pouvoir de marché qu’un tarif ne leur donne pas, car avec un tarif la menace d’importations supplémentaires subsiste. Deux cas retiennent surtout l’attention des économistes comme situations où un tarif pourrait être bénéfique : le tarif optimal (un pays assez grand améliore ses termes de l’échange aux dépens des autres) et les externalités positives, dont l’argument de l’industrie naissante, selon lequel des producteurs nationaux pourraient devenir compétitifs grâce à une protection temporaire. Cet argument est difficile à vérifier ; Robert Baldwin (1969) a mis en doute que le tarif soit l’outil adapté, et les économistes préfèrent en général des subventions. Enfin, les tarifs réduisent peu un déficit commercial, qui dépend de facteurs macroéconomiques (épargne, investissement, mobilité des capitaux).',
+          'Depuis 1948, les accords du GATT puis de l’OMC, créée en 1995, favorisent la non-discrimination et la libéralisation : droits de douane, subventions, procédures douanières, services, propriété intellectuelle (FMI). Deux principes sont au cœur du système : la clause de la nation la plus favorisée (un membre ne doit pas discriminer entre ses partenaires commerciaux ; article I du GATT) et le traitement national (ne pas discriminer entre produits nationaux et étrangers ; article III). Ces règles sont assorties d’un mécanisme de règlement des différends. Selon le FMI, le système fondé sur des règles rend les politiques commerciales plus stables, plus transparentes et plus ouvertes, et l’OMC est l’une des raisons pour lesquelles la crise financière mondiale n’a pas déclenché de protectionnisme généralisé. Des politiques restrictives et discriminatoires subsistent néanmoins, et les tarifs restent plus élevés dans certains secteurs (agriculture, habillement) et pour certains groupes de pays, notamment les moins développés.'
+        ],
+        example: {
+          statement: 'Le prix mondial du sucre est de 100 $ la tonne. Un pays impose un droit de douane de 20 %. Quel est le prix intérieur (a) si le prix mondial ne change pas ; (b) si le prix mondial tombe à 90 $ ? (Exemple repris d’Econlib.)',
+          calculation: '(a) 100 × 1,20 = 120. (b) Le droit vaut 20 % × 90 = 18 ; le prix intérieur est 90 + 18 = 108.',
+          answer: '(a) 120 $ : les consommateurs paient la totalité du droit. (b) 108 $ : le prix intérieur augmente de 8 % alors que le prix mondial baisse de 10 %, donc le coût du tarif est partagé entre consommateurs nationaux et exportateurs étrangers.'
+        },
+        exercise: {
+          question: 'Pourquoi un tarif engendre-t-il une perte sèche ?',
+          answer: 'Parce que les consommateurs perdent plus que les producteurs nationaux et l’État ne gagnent : produire localement coûte plus cher qu’importer, et des consommateurs renoncent à des achats dont ils tiraient un avantage.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les trois raisons d’imposer des tarifs selon Douglas Irwin ?',
+            answer: 'Le revenu, la restriction (protéger les producteurs nationaux) et la réciprocité.'
+          },
+          {
+            question: 'Quelle différence essentielle y a-t-il entre un tarif et un quota ?',
+            answer: 'Le tarif rapporte des recettes à l’État ; le quota crée une rente qui ne revient à l’État que si les licences sont vendues aux enchères.'
+          },
+          {
+            question: 'Que signifient la clause de la nation la plus favorisée et le traitement national ?',
+            answer: 'Ne pas discriminer entre ses partenaires commerciaux (nation la plus favorisée) et ne pas discriminer entre produits nationaux et produits étrangers (traitement national).'
+          }
+        ],
+        sources: [
+          { title: 'Econlib — Tariffs (Douglas A. Irwin)', url: 'https://www.econlib.org/library/enc/tariffs.html' },
+          { title: 'FMI, Finance & Development — International Trade: Commerce among Nations', url: 'https://www.imf.org/external/pubs/ft/fandd/basics/40-international-trade.htm' },
+          { title: 'OMC — Rapport annuel 2023, chapitre 2 : What we stand for', url: 'https://www.wto.org/english/res_e/booksp_e/anrep_e/ar23_chap2_e.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'balance-paiements-change',
+      title: 'Balance des paiements et taux de change',
+      field: 'Économie internationale · Macroéconomie ouverte · Comptes extérieurs et marché des changes',
+      summary: 'Comprendre comment sont enregistrées les transactions d’un pays avec le reste du monde, et comment les taux de change se forment et se mesurent.',
+      lesson: {
+        sections: [
+          'La balance des paiements enregistre les transactions économiques entre résidents et non-résidents sur une période donnée. Dans la sixième édition du manuel du FMI (BPM6), elle comprend trois grands comptes. Le compte des transactions courantes retrace les échanges de biens et de services ainsi que les revenus primaires et secondaires. Le compte de capital, de faible ampleur, couvre notamment les transferts en capital (comme les remises de dettes) et l’acquisition ou la cession d’actifs non financiers non produits. Le compte financier retrace les placements : investissements directs, investissements de portefeuille, produits dérivés financiers et options sur titres des salariés, autres investissements et avoirs de réserve.',
+          'Le solde des comptes courant et de capital correspond à la capacité (+) ou au besoin (−) de financement de l’économie vis-à-vis du reste du monde ; le compte financier montre comment ce solde est financé. Dans la convention du BPM6, où le solde financier net est l’acquisition nette d’actifs financiers moins l’accroissement net des engagements, ces comptes sont liés par la relation : compte courant + compte de capital − compte financier net + erreurs et omissions = 0. Les erreurs et omissions peuvent être importantes parce que le compte financier est difficile à mesurer. Un déficit courant doit donc être financé par un endettement net vis-à-vis de l’étranger ou par un prélèvement sur les réserves, qui figurent dans le compte financier. Le manuel du FMI traite explicitement du financement d’un déficit courant, de l’ajustement de la balance des paiements et des implications d’un excédent.',
+          'Le taux de change est le prix d’une monnaie étrangère. Selon la convention d’Econlib, le taux livre-dollar est coté en dollars par livre ($/£) : une hausse de 1,80 à 1,83 est une dépréciation du dollar. Le taux yen-dollar est coté en yens par dollar (¥/$) : une hausse de 108 à 110 est une appréciation du dollar. Un pays peut laisser flotter sa monnaie : la banque centrale n’achète ni ne vend de devises et le prix se détermine sur le marché par l’offre et la demande. Il peut aussi la fixer, ce qui oblige la banque centrale à acheter ou à vendre des devises pour tenir la parité. Entre les deux existent des régimes intermédiaires (bandes de fluctuation, paniers de monnaies, parités glissantes) ainsi que le flottement dirigé, où la banque centrale intervient pour freiner les mouvements (« leaning against the wind »).',
+          'Le taux de change réel est le taux nominal déflaté par les niveaux de prix (étranger relativement au national) : c’est lui qui compte le plus pour l’économie réelle, car une monnaie à forte valeur réelle rend les produits nationaux moins compétitifs et tend à décourager les exportations et à encourager les importations. Si le taux réel était constant, la parité de pouvoir d’achat (PPA) s’appliquerait ; elle ne se vérifie pas à court terme, même approximativement, mais tend à se vérifier à long terme. Dans le modèle de surréaction de Rudiger Dornbusch, une hausse du taux d’intérêt réel fait s’apprécier la monnaie davantage à court terme qu’à long terme. Prévoir les taux de change à court terme est extrêmement difficile, et les économistes les assimilent souvent à une marche aléatoire. La volatilité est élevée : jusqu’en 2004, depuis le flottement des grandes monnaies en 1971, le taux dollar / livre a varié de plus de 5 % en 36 mois (12,7 % des mois), contre un seul mois (0,5 %) en 1955-1970 sous Bretton Woods. Enfin, selon Econlib, les transactions financières dominent désormais l’offre et la demande de devises, alors que jusqu’aux années 1970 les échanges de marchandises en étaient la source principale.'
+        ],
+        example: {
+          statement: 'Le taux de change passe de 1,80 $/£ à 1,83 $/£. Que se passe-t-il pour le dollar et pour la livre ? Calculer la variation de la valeur de la livre en dollars. (Valeurs reprises d’Econlib.)',
+          calculation: 'Il faut plus de dollars pour obtenir une livre (1,83 > 1,80). Variation de la livre en dollars : 1,83 / 1,80 − 1 ≈ 0,0167, soit +1,67 %. Valeur du dollar en livres : 1 / 1,80 ≈ 0,5556 £ devient 1 / 1,83 ≈ 0,5464 £, soit environ −1,64 %.',
+          answer: 'Le dollar se déprécie (il s’échange contre moins de livres) et la livre s’apprécie d’environ 1,67 % par rapport au dollar.'
+        },
+        exercise: {
+          question: 'Pourquoi le taux de change réel est-il important pour la compétitivité d’un pays ?',
+          answer: 'Parce qu’une monnaie à forte valeur réelle rend les produits nationaux moins compétitifs sur les marchés mondiaux, ce qui tend à décourager les exportations et à encourager les importations.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les trois grands comptes de la balance des paiements selon le BPM6 ?',
+            answer: 'Le compte des transactions courantes, le compte de capital et le compte financier.'
+          },
+          {
+            question: 'Qu’est-ce qu’un régime de change flottant ?',
+            answer: 'Un régime dans lequel la banque centrale n’achète ni ne vend de devises et où le taux est déterminé sur le marché par l’offre et la demande.'
+          },
+          {
+            question: 'Un pays a un solde courant de −50, un solde du compte de capital de +2 et des erreurs et omissions nulles (unités fictives). Quel est son solde financier net, et que signifie-t-il ?',
+            answer: 'Avec compte courant + compte de capital − compte financier net + erreurs et omissions = 0 : −50 + 2 − FA + 0 = 0, donc FA = −48. Le pays emprunte net 48 au reste du monde : l’accroissement de ses engagements dépasse son acquisition d’actifs, ou ses réserves diminuent.'
+          }
+        ],
+        sources: [
+          { title: 'FMI — Balance of Payments and International Investment Position Manual, 6th edition (BPM6)', url: 'https://www.imf.org/external/pubs/ft/bop/2007/bopman6.htm' },
+          { title: 'Harvard — Notes on the Balance of Payments', url: 'https://sites.harvard.edu/bgie-data/bop' },
+          { title: 'Econlib — Foreign Exchange (Jeffrey A. Frankel)', url: 'https://www.econlib.org/library/Enc/ForeignExchange.html' }
+        ]
+      }
+    },
+    {
+      id: 'systeme-monetaire-international',
+      title: 'Systèmes monétaires internationaux : de Bretton Woods au flottement et au trilemme',
+      field: 'Économie internationale · Finance internationale · Bretton Woods, accords de la Jamaïque, Mundell-Fleming',
+      summary: 'Comprendre l’organisation du système de changes fixes de Bretton Woods, sa fin en 1971-1973, l’évolution vers le flottement et les contraintes de politique économique en économie ouverte.',
+      lesson: {
+        sections: [
+          'En juillet 1944, une conférence réunissant quarante-quatre pays à Bretton Woods (New Hampshire) a établi l’ordre monétaire de l’après-guerre. Les pays ont convenu de maintenir leurs monnaies fixes par rapport au dollar, avec des ajustements possibles dans des situations exceptionnelles, et le dollar était lui-même convertible en or à 35 dollars l’once. Le système est devenu opérationnel en 1958 (Federal Reserve History). Le FMI et la Banque mondiale ont été créés dans ce cadre. Les monnaies étant fixées par rapport au dollar, elles l’étaient implicitement par rapport à l’or (FMI).',
+          'Les règles étaient strictes. Un pays ne pouvait modifier la parité de sa monnaie qu’en cas de « déséquilibre fondamental » ; seul le pays concerné pouvait proposer un changement, que le FMI approuvait ou non. Le FMI prêtait des réserves, le plus souvent des dollars, pour permettre aux banques centrales de défendre la parité. L’objectif était d’éviter les dévaluations compétitives, les restrictions de change et les barrières commerciales qui, selon l’analyse dominante en 1944, avaient aggravé, voire causé, la Grande Dépression (FMI).',
+          'Le système a souffert de plusieurs tensions. Les gouvernements des pays déficitaires dont la monnaie était surévaluée retardaient souvent les dévaluations, tandis que les pays excédentaires avaient peu d’incitations à réévaluer. Avec l’essor des capitaux privés, la rumeur d’une dévaluation pouvait provoquer des fuites de capitaux. Les États-Unis ont connu une crise de balance des paiements au début des années 1970 et leurs réserves d’or diminuaient. Le 15 août 1971, le président Richard Nixon a fermé la « fenêtre de l’or » : les gouvernements étrangers ne pouvaient plus échanger leurs dollars contre de l’or, et le système monétaire international est devenu en pratique un système de monnaie fiduciaire. Le même plan comprenait un gel des salaires et des prix de 90 jours et une surtaxe de 10 % sur les importations (Federal Reserve History). L’accord Smithsonian a ensuite cherché à maintenir des changes fixes avec une dévaluation du dollar, mais la parité du dollar a de nouveau été ajustée le 12 février 1973 (Economic History Society).',
+          'Les accords de la Jamaïque, conclus en janvier 1976 lors d’une réunion du Comité intérimaire du FMI, ont donné lieu à une révision complète des statuts du FMI. Ils ont notamment aboli le prix officiel de l’or et réduit son rôle dans le système monétaire (Banque de réserve d’Australie). Les pays n’étaient plus tenus de déclarer et de maintenir une parité fixe, mais le FMI recevait la charge d’exercer une « surveillance ferme » des politiques de change pour prévenir les dévaluations compétitives et les manipulations de change (FMI). Les principaux taux de change flottent depuis le début des années 1970 (Econlib).',
+          'Robert Mundell a analysé, au début des années 1960, les politiques monétaire et budgétaire en économie ouverte ; Marcus Fleming a développé un modèle voisin à la même époque (modèle de Mundell-Fleming). Il a montré le rôle déterminant du régime de change : sous change flottant, la politique monétaire devient puissante et la politique budgétaire impuissante ; sous change fixe, c’est l’inverse (comité Nobel, 1999). Sous change fixe, la banque centrale doit fournir la monnaie demandée au taux fixé, ce qui rend la politique monétaire essentiellement passive (Econlib). Mundell a aussi souligné ce qu’on appelle la « trinité incompatible » : libre mobilité des capitaux, taux de change fixe et niveau de prix particulier ne peuvent être atteints ensemble, deux au plus étant possibles. Dans la formulation usuelle du trilemme, change fixe, ouverture aux flux de capitaux et politique monétaire indépendante sont incompatibles : un gouvernement qui veut une inflation basse et la libre circulation des capitaux doit accepter un change flottant. Mundell est enfin l’auteur d’une théorie des zones monétaires optimales (1961), dans laquelle la mobilité du travail est essentielle pour qu’une zone partageant une monnaie fonctionne.'
+        ],
+        example: {
+          statement: 'Dans un système de type Bretton Woods, la parité d’une monnaie fictive M est fixée à 4 M pour 1 dollar, et le dollar vaut 35 $ l’once d’or. Quel est le prix implicite de l’once d’or en M ?',
+          calculation: 'Prix de l’once en M = 35 $ × 4 M par dollar = 140 M.',
+          answer: 'L’once d’or vaut implicitement 140 M : fixer la monnaie au dollar la fixait aussi, implicitement, en or. Si la monnaie était dévaluée à 5 M pour 1 $, l’once vaudrait implicitement 35 × 5 = 175 M ; sous Bretton Woods, un tel changement de parité n’était admis qu’en cas de déséquilibre fondamental.'
+        },
+        exercise: {
+          question: 'Selon l’analyse de Mundell, que deviennent les politiques monétaire et budgétaire sous change flottant, puis sous change fixe ?',
+          answer: 'Sous change flottant, la politique monétaire devient puissante et la politique budgétaire impuissante ; sous change fixe, c’est l’inverse.'
+        },
+        exercises: [
+          {
+            question: 'Combien de pays étaient réunis à Bretton Woods en juillet 1944 et quelles institutions ont été créées dans ce cadre ?',
+            answer: 'Quarante-quatre pays ; le FMI et la Banque mondiale.'
+          },
+          {
+            question: 'Quel événement du 15 août 1971 a marqué la fin effective de Bretton Woods ?',
+            answer: 'Le président Nixon a suspendu la convertibilité du dollar en or en fermant la « fenêtre de l’or ».'
+          },
+          {
+            question: 'Quels éléments sont incompatibles dans le trilemme de l’économie ouverte ?',
+            answer: 'Le change fixe, la libre circulation des capitaux et une politique monétaire indépendante : on ne peut en réunir que deux à la fois.'
+          }
+        ],
+        sources: [
+          { title: 'FMI — From the History Books: The Rethinking of the International Monetary System', url: 'https://www.imf.org/en/blogs/articles/2021/08/16/from-the-history-books-the-rethinking-of-the-international-monetary-system' },
+          { title: 'Federal Reserve History — Nixon Ends Convertibility of U.S. Dollars to Gold', url: 'https://www.federalreservehistory.org/essays/gold-convertibility-ends' },
+          { title: 'Economic History Society — Ending Bretton Woods', url: 'https://ehs.org.uk/ending-bretton-woods/' },
+          { title: 'Reserve Bank of Australia — Annual Report 1976 : Australia and the World Economy', url: 'https://www.rba.gov.au/publications/annual-reports/rba/1976/australia-and-the-world-economy.html' },
+          { title: 'Nobel Prize — The Prize in Economic Sciences 1999 (Press release)', url: 'https://www.nobelprize.org/prizes/economic-sciences/1999/press-release/' },
+          { title: 'Econlib — Robert A. Mundell', url: 'https://www.econlib.org/library/Enc/bios/Mundell.html' }
+        ]
+      }
+    }
+  ]
+},
 
 
 
