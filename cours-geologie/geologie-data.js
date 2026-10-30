@@ -2549,6 +2549,265 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'sediments-marins',
+  title: 'Géophysique des sédiments marins',
+  note: 'Six chapitres approfondis consacrés aux propriétés physiques des sédiments marins, à leur caractérisation acoustique et électromagnétique, à l’imagerie sismique, aux processus de dépôt et aux applications environnementales. Les interprétations géophysiques sont présentées comme des inférences à confronter aux carottes, aux mesures in situ et aux données géologiques.',
+  chapters: [
+    {
+      id: 'proprietes-physiques-sediments-marins',
+      title: 'Propriétés physiques et pétrophysiques des sédiments marins',
+      field: 'Géophysique marine · Pétrophysique · Caractérisation des sédiments',
+      summary: 'Relier la composition, la porosité, la densité, la teneur en eau et l’état de consolidation aux propriétés mesurables qui contrôlent les réponses géophysiques des dépôts marins.',
+      lesson: {
+        sections: [
+          'Les sédiments marins sont des matériaux naturels généralement constitués de particules minérales, de matière organique et d’eau interstitielle. Leur granulométrie, leur minéralogie, leur forme et leur organisation déterminent une partie de leur comportement physique. Les argiles présentent souvent une forte proportion de particules fines et une grande surface spécifique ; les sables sont généralement plus grossiers et peuvent présenter une perméabilité plus élevée. Ces tendances ne constituent pas des règles absolues : la structure, la cimentation, la bioturbation, la profondeur d’enfouissement et la composition des grains modifient les propriétés mesurées.',
+          'La porosité représente la fraction du volume total occupée par les vides. Dans un sédiment marin saturé, ces vides sont principalement remplis d’eau interstitielle, mais du gaz libre ou des hydrates peuvent exister dans certains contextes. La densité apparente humide dépend à la fois de la densité des grains, de la porosité et de la densité du fluide. Au cours de l’enfouissement, la compaction expulse généralement une partie de l’eau interstitielle et réduit la porosité ; cette évolution dépend toutefois de la lithologie, de la vitesse de sédimentation, de la pression interstitielle et de l’histoire géologique.',
+          'La caractérisation pétrophysique combine des mesures de densité, de vitesse des ondes P, de susceptibilité magnétique, de conductivité thermique, de résistivité électrique, de rayonnement gamma naturel et de résistance au cisaillement. Les laboratoires de l’International Ocean Discovery Program documentent notamment des mesures de vitesse P, de densité par atténuation gamma, de susceptibilité magnétique, de conductivité thermique et de résistance au cisaillement sur les carottes. Ces paramètres sont complémentaires : aucun ne fournit à lui seul une identification lithologique univoque. Leur interprétation doit tenir compte de la qualité des échantillons, de la température, de la pression, de la salinité et des perturbations provoquées par le prélèvement.'
+        ],
+        example: {
+          statement: 'Une carotte présente une porosité de 0,60. Le volume total d’un échantillon est de 100 cm³. Quel est le volume des vides ?',
+          calculation: 'Vides = porosité × volume total = 0,60 × 100 cm³ = 60 cm³.',
+          answer: 'Le volume des vides est de 60 cm³. Dans un sédiment saturé sans gaz, ces vides sont principalement occupés par l’eau interstitielle.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il mesurer plusieurs propriétés physiques pour caractériser une couche sédimentaire ?',
+          answer: 'Parce que plusieurs lithologies ou états de consolidation peuvent produire des réponses similaires pour une propriété isolée. Le croisement de mesures indépendantes réduit l’ambiguïté de l’interprétation.'
+        },
+        exercises: [
+          {
+            question: 'Quelle grandeur décrit la fraction du volume total occupée par les vides ?',
+            answer: 'La porosité.'
+          },
+          {
+            question: 'Quelles sont deux propriétés mesurées couramment sur les carottes dans les laboratoires de l’IODP ?',
+            answer: 'Par exemple, la densité apparente par atténuation gamma et la vitesse des ondes P. La susceptibilité magnétique et la conductivité thermique sont également mesurées.'
+          },
+          {
+            question: 'La diminution de porosité avec la profondeur est-elle toujours identique dans tous les sédiments ?',
+            answer: 'Non. Elle dépend notamment de la lithologie, de la compaction, de la vitesse de sédimentation et de l’histoire des pressions interstitielles.'
+          }
+        ],
+        sources: [
+          { title: 'IODP JRSO — Petrophysics Laboratory', url: 'https://www.iodp.tamu.edu/labs/ship/Cdeck_petrophysics.html' },
+          { title: 'IODP / PANGAEA — Physical Properties and Core Data', url: 'https://iodp.pangaea.de/front_content.php?idcat=665' },
+          { title: 'ODP Legacy — Physical Properties Laboratory Methods', url: 'https://odplegacy.org/operations/labs/phys_props/' }
+        ]
+      }
+    },
+    {
+      id: 'acoustique-et-sonar-des-sediments',
+      title: 'Acoustique sous-marine, sonar et propriétés des fonds sédimentaires',
+      field: 'Géophysique marine · Acoustique sous-marine · Sonar et profils de subsurface',
+      summary: 'Comprendre la propagation des ondes acoustiques dans l’eau et les sédiments, les contrastes d’impédance, la rétrodiffusion sonar et les profils de pénétration superficielle.',
+      lesson: {
+        sections: [
+          'Les méthodes acoustiques exploitent la propagation d’ondes de pression dans l’eau et dans les matériaux sédimentaires. La vitesse acoustique dépend des propriétés élastiques et de la densité du milieu ; elle varie donc avec la porosité, la composition, la pression effective, la température et la présence éventuelle de gaz. À une interface entre deux milieux présentant des impédances acoustiques différentes, une partie de l’énergie est réfléchie et une autre transmise. L’impédance acoustique est définie par Z = ρ × V, où ρ est la masse volumique et V la vitesse de propagation de l’onde considérée.',
+          'Les sondeurs multifaisceaux mesurent les temps de parcours d’impulsions acoustiques émises dans plusieurs directions afin de cartographier la bathymétrie. Le niveau de rétrodiffusion, ou backscatter, renseigne sur la quantité d’énergie renvoyée vers le récepteur ; il dépend notamment de la rugosité du fond, de l’angle d’incidence, de la nature du sédiment et des paramètres instrumentaux. Il ne constitue donc pas une mesure directe et unique de la granulométrie. Des prélèvements et observations du fond sont nécessaires pour calibrer et valider les interprétations.',
+          'Les sondeurs de sédiments et les systèmes de profilage sub-bottom utilisent des fréquences et des sources adaptées à l’imagerie des premiers mètres à dizaines de mètres sous le fond, selon les conditions et les instruments. Les systèmes chirp, boomer ou sparker produisent des profils de réflexion de résolution et de pénétration différentes. En règle générale, augmenter la fréquence améliore la résolution verticale potentielle mais accroît l’atténuation et peut réduire la pénétration. Les résultats dépendent aussi de la nature du sédiment : les gaz peu profonds, les fonds grossiers ou les interfaces très réfléchissantes peuvent limiter l’énergie disponible pour imager les niveaux plus profonds.'
+        ],
+        example: {
+          statement: 'Une interface sépare deux milieux dont les impédances acoustiques sont Z1 = 1,5 × 10⁶ kg·m⁻²·s⁻¹ et Z2 = 3,0 × 10⁶ kg·m⁻²·s⁻¹. Calculer le coefficient de réflexion en amplitude à incidence normale.',
+          calculation: 'R = (Z2 - Z1) / (Z2 + Z1) = (3,0 - 1,5) / (3,0 + 1,5) = 1,5 / 4,5 = 0,333.',
+          answer: 'Le coefficient de réflexion en amplitude est environ 0,333. Cette valeur concerne le modèle idéal d’une interface plane à incidence normale ; les conditions réelles peuvent être plus complexes.'
+        },
+        exercise: {
+          question: 'Pourquoi une carte de rétrodiffusion sonar ne permet-elle pas, à elle seule, de déterminer avec certitude la granulométrie du fond ?',
+          answer: 'Parce que la rétrodiffusion dépend aussi de la rugosité, de l’angle d’incidence, de la fréquence, de la géométrie du sonar et des conditions d’acquisition. Une validation par prélèvements ou observations est nécessaire.'
+        },
+        exercises: [
+          {
+            question: 'Quelle relation définit l’impédance acoustique dans un milieu homogène pour une onde donnée ?',
+            answer: 'Z = ρ × V, avec ρ la masse volumique et V la vitesse de propagation.'
+          },
+          {
+            question: 'Quel est l’objectif principal d’un sondeur multifaisceaux ?',
+            answer: 'Mesurer la bathymétrie sur plusieurs faisceaux pour produire une cartographie du relief sous-marin.'
+          },
+          {
+            question: 'Quel compromis existe généralement entre fréquence acoustique et pénétration dans les sédiments ?',
+            answer: 'Une fréquence plus élevée peut améliorer la résolution, mais elle est généralement davantage atténuée et peut donc réduire la pénétration.'
+          }
+        ],
+        sources: [
+          { title: 'USGS — Mapping the Seafloor', url: 'https://www.usgs.gov/science/science-explorer/ocean/mapping-the-seafloor' },
+          { title: 'NOAA NCEI — Marine Seismic Reflection Data', url: 'https://www.ngdc.noaa.gov/mgg/seismicreflection/' },
+          { title: 'University of Southampton — Inversion of Very-High-Resolution Reflection Data', url: 'https://www.southampton.ac.uk/oes/research/projects/inversion_of_very_high_resolution_reflection_data.page' }
+        ]
+      }
+    },
+    {
+      id: 'sismique-reflexion-et-stratigraphie',
+      title: 'Sismique réflexion, stratigraphie sismique et architecture des dépôts',
+      field: 'Géophysique marine · Sismique réflexion · Stratigraphie sismique',
+      summary: 'Analyser les réflecteurs, les terminaisons sismiques, les géométries de dépôts et les limites de séquences pour reconstruire l’organisation du sous-sol marin.',
+      lesson: {
+        sections: [
+          'La sismique réflexion marine consiste à émettre une énergie acoustique contrôlée et à enregistrer les échos renvoyés par les interfaces du sous-sol. Les contrastes d’impédance acoustique produisent des réflexions dont le temps d’arrivée est mesuré. Les profils monotrace et multitraces offrent des niveaux différents de couverture et de traitement. Les données multitraces peuvent être traitées pour améliorer le rapport signal/bruit, corriger les effets de géométrie et produire des images du sous-sol. Le temps double de propagation (TWT) correspond au trajet aller-retour de l’onde entre la source, le réflecteur et le dispositif récepteur.',
+          'L’interprétation stratigraphique s’appuie sur la continuité, l’amplitude, la fréquence, la configuration et les terminaisons des réflecteurs. Les géométries en onlap, downlap, toplap ou truncation peuvent aider à reconnaître des relations de dépôt, de progradation, de non-dépôt ou d’érosion. Une séquence sismique est délimitée par des surfaces présentant des relations stratigraphiques significatives. Ces interprétations doivent rester cohérentes avec le contexte sédimentaire, la bathymétrie, les carottes et les données de forage : une forme de réflecteur n’est pas, isolément, une preuve unique d’un processus donné.',
+          'La conversion du temps en profondeur exige un modèle de vitesse. Pour un réflecteur horizontal et une vitesse moyenne représentative, une approximation simple est profondeur = vitesse × TWT / 2. Dans les milieux réels, la vitesse varie avec la profondeur, la lithologie, la porosité, la pression et la présence de fluides ; une conversion fiable nécessite donc des contraintes indépendantes, par exemple des mesures de vitesse sur carotte, des profils de vitesse ou des diagraphies. Les multiples, les diffractions, les effets de pendage, les variations latérales et les zones de faible qualité d’image peuvent entraîner des erreurs d’interprétation.'
+        ],
+        example: {
+          statement: 'Un réflecteur est enregistré à un temps double de 0,080 s. En supposant une vitesse moyenne constante de 1 600 m/s, estimer sa profondeur.',
+          calculation: 'Profondeur = V × TWT / 2 = 1 600 × 0,080 / 2 = 64 m.',
+          answer: 'La profondeur estimée est de 64 m sous le point de référence considéré. Il s’agit d’une estimation dépendante de l’hypothèse de vitesse moyenne constante.'
+        },
+        exercise: {
+          question: 'Pourquoi ne peut-on pas convertir directement tous les temps sismiques en profondeur sans information sur la vitesse ?',
+          answer: 'Parce que le temps de parcours dépend de la vitesse dans chaque couche. Si cette vitesse varie, la conversion avec une vitesse unique peut produire une profondeur erronée.'
+        },
+        exercises: [
+          {
+            question: 'Que représente le temps double de propagation (TWT) ?',
+            answer: 'Le temps nécessaire à l’onde pour aller de la source au réflecteur puis revenir au système récepteur.'
+          },
+          {
+            question: 'Citer deux géométries ou terminaisons de réflecteurs utilisées en stratigraphie sismique.',
+            answer: 'Onlap et downlap, par exemple. Toplap et troncature sont également des termes employés.'
+          },
+          {
+            question: 'Quel organisme conserve des profils historiques de sismique réflexion marine et des données de navigation associées ?',
+            answer: 'Le NOAA National Centers for Environmental Information (NCEI), notamment dans ses archives de sismique réflexion marine.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA NCEI — Marine Seismic Reflection', url: 'https://www.ngdc.noaa.gov/mgg/seismicreflection/' },
+          { title: 'USGS — Continental Margin Sedimentation: From Sediment Transport to Sequence Stratigraphy', url: 'https://www.usgs.gov/publications/continental-margin-sedimentation-sediment-transport-sequence-stratigraphy' },
+          { title: 'US EPA — Seismic Reflection', url: 'https://www.epa.gov/environmental-geophysics/seismic-reflection' },
+          { title: 'United Nations — CLCS Scientific and Technical Guidelines, Seismic Refraction and Reflection', url: 'https://www.un.org/depts/los/clcs_new/documents/Guidelines/CLCS_11.htm' }
+        ]
+      }
+    },
+    {
+      id: 'methodes-electriques-electromagnetiques-gravimetriques',
+      title: 'Méthodes électriques, électromagnétiques, magnétiques et gravimétriques',
+      field: 'Géophysique marine · Méthodes potentielles · Résistivité et électromagnétisme',
+      summary: 'Étudier les réponses électriques, électromagnétiques, magnétiques et gravimétriques des sédiments et du sous-sol marin, ainsi que leurs complémentarités et leurs limites.',
+      lesson: {
+        sections: [
+          'La résistivité électrique caractérise l’opposition d’un matériau au passage du courant. Dans les sédiments marins saturés, elle dépend notamment de la porosité connectée, de la salinité de l’eau interstitielle, de la température, de la tortuosité et de la composition minéralogique. Les argiles peuvent présenter une conductivité supplémentaire liée aux phénomènes de surface. Les méthodes électromagnétiques contrôlées mesurent la réponse du sous-sol à un champ électromagnétique émis ou induit. En milieu marin, la forte conductivité de l’eau de mer modifie la propagation des champs et doit être intégrée à la conception des dispositifs et à la modélisation.',
+          'Les méthodes magnétiques mesurent les variations du champ magnétique associées aux propriétés magnétiques des matériaux. En contexte marin, un magnétomètre remorqué peut cartographier des anomalies liées à des formations géologiques, à des roches riches en minéraux magnétiques ou à des objets ferreux. Les corrections et contrôles doivent tenir compte des variations temporelles du champ, de la position et de la distance entre le capteur et le fond. Une anomalie magnétique ne détermine pas automatiquement la nature ou la profondeur de sa source : plusieurs configurations peuvent produire des signatures comparables.',
+          'La gravimétrie mesure les variations de l’accélération de la pesanteur associées aux contrastes de masse et de densité. En mer, les mesures réalisées depuis un navire nécessitent une correction attentive des mouvements du bateau, de la navigation et des effets instrumentaux. Les anomalies gravimétriques contribuent à l’étude de la structure crustale, des bassins sédimentaires et des grandes variations de densité, mais leur résolution est généralement moins adaptée à la description détaillée de couches superficielles minces. L’intégration des méthodes électriques, électromagnétiques, magnétiques, gravimétriques et sismiques permet de réduire certaines ambiguïtés, à condition de tenir compte de leurs sensibilités physiques distinctes.'
+        ],
+        example: {
+          statement: 'Une mesure électrique simplifiée indique une résistivité de 2 Ω·m. Quelle est la conductivité correspondante ?',
+          calculation: 'Conductivité σ = 1 / résistivité = 1 / 2 = 0,5 S/m.',
+          answer: 'La conductivité correspondante est de 0,5 S/m. Cette conversion est mathématique ; l’interprétation géologique de cette valeur nécessite le contexte de salinité, de porosité, de température et de minéralogie.'
+        },
+        exercise: {
+          question: 'Pourquoi associer une méthode électromagnétique à une méthode sismique dans l’étude de sédiments contenant potentiellement des hydrates de gaz ?',
+          answer: 'Les méthodes ne répondent pas aux mêmes propriétés : la sismique renseigne notamment sur les vitesses et les contrastes acoustiques, tandis que les méthodes électriques sont sensibles aux propriétés de conduction. Leur combinaison peut mieux contraindre l’interprétation, sans supprimer le besoin de validation.'
+        },
+        exercises: [
+          {
+            question: 'Quelle propriété physique est directement liée à l’inverse de la résistivité ?',
+            answer: 'La conductivité électrique.'
+          },
+          {
+            question: 'Quel instrument est utilisé pour mesurer les variations du champ magnétique en prospection marine ?',
+            answer: 'Un magnétomètre, souvent installé sur un dispositif remorqué.'
+          },
+          {
+            question: 'À quelles variations du sous-sol la gravimétrie est-elle principalement sensible ?',
+            answer: 'Aux variations de masse volumique qui produisent des variations mesurables de l’accélération de la pesanteur.'
+          }
+        ],
+        sources: [
+          { title: 'USGS — Gas Hydrates Primer: Geophysical Detection', url: 'https://www.usgs.gov/centers/whcmsc/science/gas-hydrates-primer' },
+          { title: 'US EPA — Waterborne Magnetic Surveying', url: 'https://www.epa.gov/environmental-geophysics/waterborne-magnetic-surveying' },
+          { title: 'NOAA National Geodetic Survey — Marine Gravity Surveys', url: 'https://www.ngs.noaa.gov/research/geopotential-datums/data-sources.shtml' },
+          { title: 'USGS — Introduction to Potential Fields: Gravity', url: 'https://pubs.usgs.gov/fs/fs-0239-95/' },
+          { title: 'Advances in Geophysics — Marine Controlled-Source and Magnetotelluric Methods', url: 'https://doi.org/10.1016/bs.agph.2025.06.005' }
+        ]
+      }
+    },
+    {
+      id: 'dynamique-sedimentaire-et-enregistrement-geologique',
+      title: 'Dynamique sédimentaire, transport et enregistrement géologique',
+      field: 'Géophysique marine · Sédimentologie physique · Marges continentales',
+      summary: 'Relier les processus de transport et de dépôt aux architectures sédimentaires observées par les méthodes géophysiques, depuis les environnements côtiers jusqu’aux bassins profonds.',
+      lesson: {
+        sections: [
+          'Les particules atteignent les environnements marins par les fleuves, l’érosion côtière, les glaciers, l’activité biologique, les retombées atmosphériques et la remobilisation de dépôts préexistants. Leur transport dépend de la taille, de la densité et de la forme des grains, mais aussi de la turbulence, des courants, des vagues et de la stratification de la colonne d’eau. Sur les marges continentales, les sédiments peuvent être stockés sur le plateau, transférés vers le talus ou acheminés vers les plaines abyssales. Les courants de turbidité sont des écoulements gravitaires chargés en particules qui peuvent transporter des sédiments vers les parties profondes des bassins.',
+          'Les dépôts conservent un enregistrement incomplet des processus. Les variations du niveau marin, de l’apport sédimentaire, de la subsidence, de la tectonique et de l’énergie des courants influencent la géométrie des corps sédimentaires. Les surfaces d’érosion, les chenaux enfouis, les lobes, les dépôts de pente et les réflecteurs progradants peuvent être reconnus dans les données acoustiques ou sismiques. L’interprétation doit distinguer les observations — géométrie, continuité, amplitude et position — des hypothèses sur les processus responsables. Le cadre de stratigraphie séquentielle permet d’organiser ces observations à différentes échelles temporelles et spatiales.',
+          'Les taux d’accumulation sédimentaire sont estimés à partir de chronologies établies sur des carottes, de marqueurs stratigraphiques et de méthodes de datation adaptées à l’âge des dépôts. Les méthodes possibles incluent, selon le contexte, le radiocarbone pour certaines matières carbonées récentes, les marqueurs stratigraphiques, les propriétés paléomagnétiques et les modèles d’âge intégrant plusieurs contraintes. Le mélange biologique, la bioturbation, la dissolution, l’érosion et les hiatus peuvent modifier ou effacer une partie de l’enregistrement. Un taux calculé à partir de l’épaisseur et de la durée doit donc être interprété comme une moyenne sur l’intervalle étudié, et non comme une vitesse constante à chaque instant.'
+        ],
+        example: {
+          statement: 'Une séquence sédimentaire de 4 m d’épaisseur représente, selon un modèle d’âge, une durée de 2 000 ans. Calculer son taux moyen d’accumulation en mm/an.',
+          calculation: '4 m = 4 000 mm. Taux moyen = 4 000 mm / 2 000 ans = 2 mm/an.',
+          answer: 'Le taux moyen est de 2 mm/an. Il ne signifie pas que le dépôt s’est effectué à vitesse constante ; des épisodes d’érosion, de non-dépôt ou de dépôt rapide peuvent être présents.'
+        },
+        exercise: {
+          question: 'Pourquoi un taux moyen d’accumulation calculé sur une carotte ne décrit-il pas nécessairement les variations réelles du dépôt au cours du temps ?',
+          answer: 'Parce que l’épaisseur conservée peut intégrer des phases de dépôt rapide, de dépôt lent, de non-dépôt, d’érosion et de remaniement. Le calcul fournit une moyenne sur l’intervalle daté.'
+        },
+        exercises: [
+          {
+            question: 'Citer deux facteurs qui influencent le transport des particules en milieu marin.',
+            answer: 'La taille et la densité des grains, la turbulence, les courants et les vagues sont des exemples de facteurs.'
+          },
+          {
+            question: 'Qu’est-ce qu’un courant de turbidité ?',
+            answer: 'Un écoulement gravitaire sous-marin chargé en particules sédimentaires, capable de transporter des matériaux vers des zones plus profondes.'
+          },
+          {
+            question: 'Quel effet la bioturbation peut-elle avoir sur l’enregistrement sédimentaire ?',
+            answer: 'Elle mélange les sédiments et peut brouiller certaines structures ou réduire la résolution temporelle de l’enregistrement.'
+          }
+        ],
+        sources: [
+          { title: 'USGS — Continental Margin Sedimentation: From Sediment Transport to Sequence Stratigraphy', url: 'https://www.usgs.gov/publications/continental-margin-sedimentation-sediment-transport-sequence-stratigraphy' },
+          { title: 'USGS — Mapping the Seafloor', url: 'https://www.usgs.gov/science/science-explorer/ocean/mapping-the-seafloor' },
+          { title: 'NOAA NCEI — Sea Floor and Lakebed Sediment and Rock Data', url: 'https://www.ngdc.noaa.gov/mgg/geology/geology.html' }
+        ]
+      }
+    },
+    {
+      id: 'carottages-donnees-et-applications-environnementales',
+      title: 'Carottages, intégration des données et applications environnementales',
+      field: 'Géophysique marine · Géotechnique · Surveillance environnementale et aléas',
+      summary: 'Mettre en relation les levés géophysiques, les carottes et les analyses de laboratoire pour caractériser les sédiments, repérer les aléas et construire une interprétation intégrée.',
+      lesson: {
+        sections: [
+          'Les carottes marines fournissent un accès direct aux matériaux du fond et du sous-sol. Les carottiers gravitaires, à piston ou d’autres systèmes sont choisis en fonction de la profondeur visée, de la nature du sédiment et du degré de perturbation acceptable. Le carottage à piston est utilisé pour récupérer des séquences relativement peu perturbées ; il ne garantit toutefois pas une absence totale de déformation, de perte de matériau ou de raccourcissement. La description visuelle, les mesures physiques, les analyses granulométriques, minéralogiques et géochimiques ainsi que les observations radiographiques ou tomographiques permettent de documenter les échantillons.',
+          'L’intégration des données suit une logique de calibration et de validation croisée. Les profils sismiques et acoustiques donnent une continuité spatiale, tandis que les carottes fournissent des observations directes mais ponctuelles. Les mesures de laboratoire permettent de relier les signatures géophysiques à des propriétés physiques mesurées. Il faut contrôler les décalages de position, les différences de résolution, les effets de remaniement lors du prélèvement et les incertitudes de conversion temps-profondeur. Une interprétation robuste explicite les données disponibles, les hypothèses, les incertitudes et les limites de résolution.',
+          'Les applications environnementales comprennent la cartographie des dépôts meubles, l’identification de zones d’érosion ou d’accumulation, l’étude des glissements sous-marins, la caractérisation de sédiments contaminés et la recherche d’indices de circulation de fluides ou de gaz. Les hydrates de gaz constituent un exemple important : certains profils sismiques montrent un réflecteur simulant le fond marin (BSR), souvent interprété comme proche de la base de la zone de stabilité des hydrates. Toutefois, un BSR ne constitue pas une preuve directe et exhaustive de la présence ou de la quantité d’hydrate ; des hydrates peuvent être détectés sans BSR, et les méthodes géophysiques doivent être confrontées aux forages, aux diagraphies et aux échantillons lorsque cela est possible.'
+        ],
+        example: {
+          statement: 'Un levé géophysique révèle une anomalie acoustique sous le fond marin. Quelle démarche permet de tester si elle correspond à une couche de sédiment meuble, à du gaz peu profond ou à une variation lithologique ?',
+          calculation: 'La démarche consiste à comparer la géométrie et l’amplitude du réflecteur avec les profils voisins, vérifier les paramètres d’acquisition et la bathymétrie, puis confronter l’interprétation à des données indépendantes : carottes, mesures de vitesse P, densité, résistivité ou diagraphies disponibles.',
+          answer: 'L’anomalie ne peut pas être identifiée de façon certaine à partir de sa seule apparence. Une interprétation intégrée et une validation par des observations indépendantes sont nécessaires.'
+        },
+        exercise: {
+          question: 'Quel est l’intérêt de confronter un profil sismique à une carotte prélevée dans la même zone ?',
+          answer: 'La carotte apporte une information directe sur les matériaux et permet de calibrer l’interprétation des réflecteurs. Le profil sismique étend ensuite cette information ponctuelle à une plus grande continuité spatiale.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’intérêt d’un carottier à piston en géologie marine ?',
+            answer: 'Il permet de récupérer des séquences sédimentaires relativement peu perturbées, même si des perturbations et pertes de matériau restent possibles.'
+          },
+          {
+            question: 'Que signifie l’acronyme BSR dans l’étude des hydrates de gaz marins ?',
+            answer: 'Bottom Simulating Reflector, ou réflecteur simulant le fond marin.'
+          },
+          {
+            question: 'Un BSR permet-il de calculer directement la quantité d’hydrate de gaz présente dans les sédiments ?',
+            answer: 'Non. Il constitue un indice géophysique associé à la zone de stabilité des hydrates, mais ne fournit pas à lui seul une mesure directe de leur présence, de leur saturation ou de leur quantité.'
+          }
+        ],
+        sources: [
+          { title: 'National Oceanography Centre — Marine Sampling and Piston Coring', url: 'https://www.noc.ac.uk/our-work/marine-technology/equipment/sampling' },
+          { title: 'NOAA NCEI — Sea Floor and Lakebed Sediment and Rock Data', url: 'https://www.ngdc.noaa.gov/mgg/geology/geology.html' },
+          { title: 'USGS — Gas Hydrates Primer', url: 'https://www.usgs.gov/centers/whcmsc/science/gas-hydrates-primer' },
+          { title: 'USGS — Global Compilation of Published Gas Hydrate-Related Bottom Simulating Reflections', url: 'https://www.usgs.gov/data/global-compilation-published-gas-hydrate-related-bottom-simulating-reflections' },
+          { title: 'National Oceanography Centre — Inversion of Very-High-Resolution Reflection Data', url: 'https://www.southampton.ac.uk/oes/research/projects/inversion_of_very_high_resolution_reflection_data.page' }
+        ]
+      }
+    }
+  ]
+},
+
 ]
 
 
