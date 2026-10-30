@@ -400,7 +400,7 @@ font-weight: 400;
 
 .entry-copy > span {
 color: var(--muted);
-font-size: 12px;
+font-size: 16px;
 line-height: 1.5;
 }
 
@@ -778,7 +778,7 @@ font-size: 25px;
 }
 
 .entry-copy > span {
-font-size: 12px;
+font-size: 14px;
 }
 
 .next-section {
