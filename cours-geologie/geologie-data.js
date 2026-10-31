@@ -2808,398 +2808,285 @@ window.courseCatalog = [
   ]
 },
 
+
 {
 id: 'geochimie',
 title: 'Géochimie : composition chimique de la Terre, cycles et transformations des éléments',
+note: 'Huit chapitres consacrés aux fondements de la géochimie, à la différenciation terrestre, aux éléments traces, aux isotopes, aux cycles biogéochimiques, aux magmas, aux fluides hydrothermaux et aux méthodes analytiques. Les valeurs et modèles géochimiques dépendent des matériaux et des conditions étudiés.',
 chapters: [
 {
 id: 'fondements-geochimie',
-title: '1. Fondements et principes de la géochimie',
-field: 'Principes fondamentaux',
-summary: 'La géochimie étudie la répartition des éléments chimiques dans la Terre, leurs transformations et leurs interactions avec les roches, l’eau, l’atmosphère et le vivant.',
+title: 'Les fondements et les outils de la géochimie',
+field: 'Géochimie · Principes chimiques et réservoirs terrestres',
+summary: 'Définir la géochimie, identifier les réservoirs terrestres et comprendre comment les concentrations et les affinités chimiques permettent de suivre les éléments.',
 lesson: {
 sections: [
-{
-title: 'Définition et objectifs',
-content: 'La géochimie associe la chimie et les sciences de la Terre. Elle cherche à comprendre la composition des matériaux terrestres, les réactions qui les transforment et les processus responsables de la distribution des éléments chimiques. Elle permet notamment d’étudier la formation des roches, l’évolution des océans et les échanges entre les différentes enveloppes terrestres.'
-},
-{
-title: 'Les réservoirs géochimiques',
-content: 'La Terre comprend plusieurs grands réservoirs : le noyau, le manteau, la croûte, les océans, l’atmosphère, les sols et la biosphère. Chaque réservoir possède une composition chimique particulière. Les échanges entre ces réservoirs sont contrôlés par des processus géologiques, chimiques et biologiques.'
-},
-{
-title: 'Éléments majeurs, mineurs et traces',
-content: 'Les éléments majeurs constituent une part importante des matériaux étudiés. Dans les roches silicatées, l’oxygène et le silicium sont particulièrement abondants. Les éléments mineurs sont présents en proportions plus faibles. Les éléments traces sont généralement présents à des concentrations très faibles, mais peuvent fournir des informations importantes sur l’origine et l’évolution des roches.'
-},
-{
-title: 'Concentration et unités',
-content: 'La composition chimique peut être exprimée en pourcentage massique, en parties par million (ppm) ou en parties par milliard (ppb). Une concentration de 1 ppm correspond à 1 mg/kg pour une mesure massique. Le choix de l’unité dépend de l’abondance de l’élément et de la précision analytique recherchée.'
-}
+'La géochimie étudie la distribution des éléments chimiques dans la Terre et les processus qui contrôlent leur transfert et leur transformation. Elle mobilise la chimie, la minéralogie, la pétrologie, la thermodynamique et les sciences de l’environnement. Elle ne se limite pas à mesurer une composition : elle cherche à expliquer pourquoi un élément se trouve dans un minéral, un fluide, une roche ou un réservoir plutôt qu’un autre.',
+'Les réservoirs géochimiques comprennent notamment le noyau, le manteau, la croûte, les océans, les eaux continentales, l’atmosphère, les sols et la biosphère. Ils échangent de la matière par la fusion, la cristallisation, le volcanisme, l’altération, l’érosion, la sédimentation, la circulation des fluides et les processus biologiques. Les durées de résidence et les vitesses d’échange varient fortement d’un élément et d’un réservoir à l’autre.',
+'Les concentrations sont exprimées selon le contexte en pourcentage massique, en mg/kg, en ppm ou en ppb. Pour une concentration massique, 1 ppm équivaut à 1 mg/kg et 1 ppb équivaut à 1 µg/kg. Il faut distinguer une concentration rapportée à la masse totale de l’échantillon d’une concentration rapportée à une phase particulière, par exemple un minéral ou un liquide.',
+'Les éléments majeurs constituent une part importante de la composition des roches et des minéraux. Les éléments mineurs sont présents en quantités plus faibles et les éléments traces en faibles concentrations, souvent inférieures à 0,1 % en masse dans les conventions courantes en pétrologie. Cette limite est conventionnelle : le statut d’un élément dépend aussi du matériau étudié et de la question scientifique.',
+'La classification géochimique de Goldschmidt répartit les éléments selon leur affinité dominante pour différentes phases : lithophile pour les silicates et oxydes, sidérophile pour les phases métalliques, chalcophile pour les sulfures et atmophile pour les phases volatiles. Cette classification est un outil d’interprétation général ; elle ne signifie pas qu’un élément se comporte toujours de façon identique dans toutes les conditions.'
 ],
 example: {
-statement: 'Un échantillon de roche contient 25 mg de zinc dans 1 kg de roche. Calculer sa concentration en ppm.',
-calculation: 'C = 25 mg / 1 kg = 25 mg/kg',
-answer: 'La concentration en zinc est de 25 ppm.'
+statement: 'Un échantillon de roche contient 18 mg de zinc par kg de roche. Exprimer cette concentration en ppm.',
+calculation: '18 mg/kg = 18 ppm.',
+answer: 'La concentration en zinc est de 18 ppm.'
 },
-exercise: 'Expliquer pourquoi la géochimie étudie les échanges entre les différents réservoirs terrestres.',
+exercise: {
+question: 'Pourquoi la géochimie étudie-t-elle les échanges entre plusieurs réservoirs terrestres plutôt que la composition des roches isolément ?',
+answer: 'Parce que la composition observée d’un matériau dépend des transferts et des réactions qui l’ont relié aux autres réservoirs. Étudier ces échanges permet de reconstituer les processus géologiques et environnementaux.'
+},
 exercises: [
-{
-question: 'Quelle discipline associe chimie et sciences de la Terre ?',
-answer: 'La géochimie.'
-},
-{
-question: 'Quelle unité est adaptée à une très faible concentration massique ?',
-answer: 'Le ppm ou le ppb, selon la concentration.'
-}
+{ question: 'À quelle concentration massique correspond 1 ppm ?', answer: '1 mg/kg.' },
+{ question: 'Quel terme désigne un élément ayant une affinité géochimique dominante pour les phases métalliques ?', answer: 'Sidérophile.' },
+{ question: 'Citer 3 réservoirs géochimiques terrestres.', answer: 'Par exemple : le manteau, la croûte et l’océan.' }
 ],
 sources: [
-'https://www.usgs.gov/',
-'https://www.bgs.ac.uk/'
+{ title: 'Wiley — Geochemistry, 2nd Edition', url: 'https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/geochemistry-978-1-119-43805-2' },
+{ title: 'MIT OpenCourseWare — Trace Element Geochemistry', url: 'https://ocw.mit.edu/courses/12-479-trace-element-geochemistry-spring-2013/' }
 ]
 }
 },
 {
-id: 'composition-chimique-terre',
-title: '2. Composition chimique et structure interne de la Terre',
-field: 'Géochimie des enveloppes terrestres',
-summary: 'La composition chimique de la Terre varie entre le noyau, le manteau et la croûte. Ces différences résultent notamment de la différenciation planétaire.',
+id: 'differenciation-terre',
+title: 'La différenciation chimique et les réservoirs internes de la Terre',
+field: 'Géochimie · Noyau, manteau et croûte',
+summary: 'Expliquer la séparation des matériaux terrestres et les différences de composition entre les grandes enveloppes internes.',
 lesson: {
 sections: [
-{
-title: 'La différenciation terrestre',
-content: 'Au début de son histoire, la Terre a connu une importante phase de réchauffement et de fusion partielle ou généralisée de ses matériaux. Les éléments les plus denses et ayant une affinité pour le fer ont contribué à la formation du noyau métallique. Les silicates ont constitué principalement le manteau et la croûte.'
-},
-{
-title: 'Composition du noyau',
-content: 'Le noyau terrestre est principalement constitué de fer et de nickel. Il contient également des éléments légers dont les proportions exactes et la nature restent étudiées. Sa composition contribue à expliquer sa densité et certaines propriétés physiques.'
-},
-{
-title: 'Composition du manteau',
-content: 'Le manteau est principalement composé de roches silicatées riches en magnésium et en fer. Les péridotites constituent des matériaux représentatifs du manteau supérieur. Leur composition permet d’étudier les processus de fusion partielle et la formation des magmas.'
-},
-{
-title: 'Composition de la croûte',
-content: 'La croûte continentale est généralement plus riche en silicium, aluminium, sodium et potassium que les matériaux mantelliques. La croûte océanique est principalement constituée de basaltes et de gabbros, relativement riches en fer et magnésium.'
-}
+'La différenciation terrestre correspond à la séparation progressive de matériaux et de phases de compositions différentes au cours de l’évolution de la planète. L’échauffement initial, les impacts, la compression et la chaleur produite par la désintégration radioactive ont favorisé la fusion de matériaux terrestres. Des phases métalliques denses ont pu se séparer des phases silicatées et migrer vers le centre.',
+'Le noyau est principalement constitué de fer et de nickel, avec une fraction d’éléments plus légers dont la nature et les proportions font encore l’objet de recherches. Les contraintes géophysiques, les expériences à haute pression et les comparaisons avec les matériaux météoritiques contribuent à estimer sa composition. Il ne faut donc pas présenter une composition détaillée unique comme définitivement établie.',
+'Le manteau est dominé par des roches silicatées riches en magnésium et en fer. Les péridotites, constituées principalement d’olivine et de pyroxènes, sont des roches représentatives du manteau supérieur. Leur fusion partielle peut produire des liquides magmatiques dont la composition diffère de celle de la roche source.',
+'La croûte continentale est globalement plus riche en silice et en éléments comme l’aluminium, le sodium et le potassium que les roches mantelliques. La croûte océanique est principalement composée de basaltes et de gabbros, généralement plus riches en fer et en magnésium. Ces compositions moyennes masquent une grande diversité de roches et d’histoires géologiques.',
+'La distribution des éléments entre métal, sulfure et silicate dépend de leur affinité chimique, mais aussi de la pression, de la température et de l’état d’oxydation du système. La différenciation n’a pas créé des enveloppes parfaitement homogènes : le manteau et la croûte conservent des hétérogénéités et des signatures héritées de processus successifs.'
 ],
 example: {
-statement: 'Comparer les compositions générales de la croûte continentale et de la croûte océanique.',
-calculation: 'Croûte continentale : composition moyenne plus riche en silice et en éléments comme le potassium. Croûte océanique : composition basaltique et gabbroïque, généralement plus riche en fer et magnésium.',
-answer: 'Les 2 types de croûte présentent des compositions chimiques différentes, liées à leurs processus de formation.'
+statement: 'Pourquoi le noyau terrestre est-il enrichi en fer par rapport au manteau silicaté ?',
+calculation: 'Pendant la différenciation, une phase métallique riche en fer s’est séparée des matériaux silicatés et a migré vers le centre sous l’effet de la gravité.',
+answer: 'La ségrégation des phases métalliques denses a contribué à concentrer le fer dans le noyau.'
 },
-exercise: 'Expliquer comment la différenciation terrestre a contribué à la formation des grandes enveloppes internes.',
+exercise: {
+question: 'Décrire le rôle de la différenciation dans la formation du noyau et du manteau.',
+answer: 'La séparation de phases métalliques et silicatées a conduit à un noyau principalement métallique et à un manteau principalement silicaté. Cette séparation a redistribué les éléments selon leurs affinités chimiques et les conditions physiques.'
+},
 exercises: [
-{
-question: 'Quels sont les principaux constituants du noyau terrestre ?',
-answer: 'Principalement le fer et le nickel.'
-},
-{
-question: 'Quelle roche est représentative du manteau supérieur ?',
-answer: 'La péridotite.'
-}
+{ question: 'Quels sont les 2 constituants dominants du noyau terrestre ?', answer: 'Le fer et le nickel.' },
+{ question: 'Quelle famille de roches représente le manteau supérieur ?', answer: 'Les péridotites.' },
+{ question: 'La croûte océanique est-elle principalement basaltique ou granitique ?', answer: 'Elle est principalement basaltique et gabbroïque.' }
 ],
 sources: [
-'https://www.usgs.gov/',
-'https://www.bgs.ac.uk/'
+{ title: 'Wiley — Geochemistry, 2nd Edition: Earth’s Mantle, Core and Crust', url: 'https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/geochemistry-978-1-119-43805-2' }
 ]
 }
 },
 {
-id: 'geochimie-elements-traces',
-title: '3. Comportement des éléments majeurs et des éléments traces',
-field: 'Géochimie élémentaire',
-summary: 'Le comportement des éléments chimiques dépend de leurs propriétés atomiques, de leur compatibilité avec les minéraux et des conditions physiques et chimiques.',
+id: 'elements-traces-partage',
+title: 'Les éléments traces et leur répartition entre minéraux et liquides',
+field: 'Géochimie · Éléments traces et pétrologie quantitative',
+summary: 'Comprendre la compatibilité, les coefficients de partage et l’utilisation des éléments traces pour interpréter la fusion et la cristallisation.',
 lesson: {
 sections: [
-{
-title: 'Propriétés chimiques des éléments',
-content: 'La charge ionique, le rayon ionique, le degré d’oxydation et les propriétés électroniques influencent la manière dont les éléments s’intègrent dans les minéraux. Ces propriétés déterminent leur mobilité et leur répartition lors des transformations géologiques.'
-},
-{
-title: 'Éléments compatibles et incompatibles',
-content: 'Un élément compatible entre facilement dans les structures cristallines des minéraux qui se forment. Un élément incompatible reste préférentiellement dans le liquide magmatique lors de la cristallisation. Cette distinction aide à comprendre l’évolution chimique des magmas.'
-},
-{
-title: 'Coefficient de partage',
-content: 'Le coefficient de partage décrit la distribution d’un élément entre un minéral et un liquide. Il dépend notamment de la température, de la pression et de la composition chimique du système. Un coefficient supérieur à 1 indique une préférence pour le minéral dans la convention minéral/liquide.'
-},
-{
-title: 'Terres rares',
-content: 'Les terres rares regroupent les éléments de la série des lanthanides, auxquels on associe souvent l’yttrium et parfois le scandium dans les études géochimiques. Leurs profils de concentration sont utilisés pour caractériser les sources magmatiques et les processus de différenciation.'
-}
+'Les éléments traces sont présents en faibles concentrations, mais leur comportement peut être très informatif. Leur incorporation dans un minéral dépend notamment du rayon ionique, de la charge, de la structure cristalline et de la composition du liquide en équilibre. Un élément peut donc être compatible dans un minéral et incompatible dans un autre.',
+'Le coefficient de partage à l’équilibre entre un minéral et un liquide est défini par D = Cminéral / Cliquide, où les concentrations doivent être exprimées sur une base cohérente. Si D est supérieur à 1, l’élément est préférentiellement incorporé dans le minéral considéré. Si D est inférieur à 1, il reste préférentiellement dans le liquide. La valeur de D dépend du minéral, du liquide et des conditions de pression, température et composition.',
+'Lors d’une fusion partielle, les éléments incompatibles tendent à passer préférentiellement dans le liquide produit, tandis que certains éléments compatibles restent dans les minéraux résiduels. Le degré de fusion, la minéralogie de la source et le mode de fusion modifient les concentrations du liquide. Les modèles de fusion à l’équilibre et de fusion fractionnée ne conduisent pas aux mêmes évolutions quantitatives.',
+'Lors de la cristallisation fractionnée, les minéraux qui se forment peuvent retirer certains éléments du liquide. Les éléments compatibles dans ces minéraux diminuent généralement dans le liquide résiduel, tandis que des éléments incompatibles peuvent s’y enrichir. Cet enrichissement n’est pas automatique : il dépend de l’assemblage minéralogique, du degré de cristallisation et de la composition initiale.',
+'Les terres rares, c’est-à-dire les lanthanides, sont souvent représentées sur des diagrammes de concentrations normalisées. La forme d’un profil et certaines anomalies peuvent renseigner sur la source, la fusion partielle, la cristallisation ou les interactions avec des fluides. Une interprétation robuste exige de préciser le matériau de normalisation et de confronter plusieurs éléments et isotopes.'
 ],
 example: {
-statement: 'Un élément possède un coefficient de partage minéral/liquide égal à 0,2. Où se concentre-t-il préférentiellement ?',
-calculation: 'D = Cminéral / Cliquide = 0,2',
+statement: 'Un élément possède un coefficient de partage minéral/liquide D = 0,20. Dans quelle phase se concentre-t-il préférentiellement ?',
+calculation: 'D = Cminéral / Cliquide = 0,20. La concentration dans le minéral est donc égale à 0,20 fois celle du liquide.',
 answer: 'L’élément se concentre préférentiellement dans le liquide.'
 },
-exercise: 'Distinguer un élément compatible d’un élément incompatible lors de la cristallisation d’un magma.',
-exercises: [
-{
-question: 'Que signifie un coefficient de partage supérieur à 1 ?',
-answer: 'L’élément est préférentiellement incorporé dans le minéral.'
+exercise: {
+question: 'Pourquoi ne peut-on pas qualifier un élément de compatible sans préciser le minéral et le liquide considérés ?',
+answer: 'Parce que le coefficient de partage dépend du couple minéral-liquide et des conditions physiques et chimiques. Un même élément peut être compatible dans une phase et incompatible dans une autre.'
 },
-{
-question: 'Pourquoi étudier les terres rares ?',
-answer: 'Leurs distributions permettent de retracer certains processus géologiques et l’origine des roches.'
-}
+exercises: [
+{ question: 'Que signifie D supérieur à 1 dans la convention minéral/liquide ?', answer: 'L’élément est préférentiellement incorporé dans le minéral.' },
+{ question: 'Quel comportement ont généralement les éléments incompatibles lors d’une fusion partielle ?', answer: 'Ils passent préférentiellement dans le liquide produit.' },
+{ question: 'Quel groupe d’éléments est souvent représenté sur des diagrammes de terres rares ?', answer: 'Les lanthanides.' }
 ],
 sources: [
-'https://www.usgs.gov/',
-'https://www.geochemicalperspectives.org/'
+{ title: 'MIT OpenCourseWare — Trace Element Geochemistry', url: 'https://ocw.mit.edu/courses/12-479-trace-element-geochemistry-spring-2013/' },
+{ title: 'Cambridge University Press — Using Trace Element Data', url: 'https://www.cambridge.org/core/books/abs/using-geochemical-data/using-trace-element-data/902A42CE7CD3C850A15C119E13AAC8F6' },
+{ title: 'Royal Society of Chemistry — Trace Element Analysis', url: 'https://books.rsc.org/books/monograph/2036/chapter/4653390/Trace-Element-Analysis-Methodology-Instrumentation' }
 ]
 }
 },
 {
-id: 'isotopes-geochimie',
-title: '4. Géochimie isotopique et datation',
-field: 'Isotopes et chronologie',
-summary: 'La géochimie isotopique utilise les différences de masse entre isotopes pour comprendre l’origine des matériaux, les échanges géologiques et certains âges.',
+id: 'geochimie-isotopique-datation',
+title: 'La géochimie isotopique et la datation des roches',
+field: 'Géochimie · Isotopes stables et radiogéniques',
+summary: 'Distinguer les isotopes stables et radioactifs et comprendre comment les rapports isotopiques servent de traceurs et d’horloges géologiques.',
 lesson: {
 sections: [
-{
-title: 'Définition des isotopes',
-content: 'Les isotopes sont des atomes d’un même élément possédant le même nombre de protons, mais un nombre différent de neutrons. Certains isotopes sont stables, tandis que d’autres sont radioactifs et se transforment au cours du temps.'
-},
-{
-title: 'Isotopes stables',
-content: 'Les isotopes stables de l’oxygène, du carbone, de l’hydrogène et du soufre sont utilisés pour étudier les températures, les sources de matière et les processus environnementaux. Les variations isotopiques peuvent résulter de réactions physiques, chimiques et biologiques.'
-},
-{
-title: 'Isotopes radioactifs',
-content: 'Un isotope radioactif appelé isotope père se transforme en isotope fils selon une loi de décroissance. La demi-vie correspond à la durée nécessaire pour que la moitié des noyaux radioactifs initiaux se désintègrent.'
-},
-{
-title: 'Systèmes de datation',
-content: 'Les systèmes uranium-plomb, potassium-argon et rubidium-strontium sont employés pour dater différents matériaux géologiques. Chaque système possède des caractéristiques propres et nécessite des hypothèses sur l’histoire du minéral analysé.'
-},
-{
-title: 'Rapports isotopiques',
-content: 'Les résultats isotopiques sont souvent exprimés sous forme de rapports entre isotopes. Pour certains systèmes stables, les différences par rapport à un standard sont exprimées en notation delta, généralement en pour mille.'
-}
+'Les isotopes d’un élément possèdent le même nombre de protons mais un nombre différent de neutrons. Ils ont donc des masses différentes. Certains isotopes sont stables ; d’autres sont radioactifs et se désintègrent spontanément. Les propriétés chimiques des isotopes d’un même élément sont proches, mais les différences de masse peuvent produire des fractionnements mesurables.',
+'Les isotopes stables du carbone, de l’oxygène, de l’hydrogène et du soufre sont utilisés pour étudier les sources de matière et les processus physiques, chimiques ou biologiques. Le fractionnement isotopique dépend du mécanisme étudié et, dans de nombreux systèmes, de la température. Les résultats sont généralement exprimés relativement à un matériau de référence, souvent avec une notation delta en pour mille.',
+'Les isotopes radiogéniques sont les produits de désintégration d’isotopes radioactifs parents. Des systèmes tels que uranium-plomb, rubidium-strontium, samarium-néodyme et potassium-argon sont utilisés pour établir des âges ou tracer des réservoirs. Chaque système a ses propres minéraux adaptés, ses limites analytiques et ses hypothèses.',
+'La demi-vie est la durée nécessaire pour que la moitié des noyaux radioactifs d’un ensemble initial se désintègrent. Elle est caractéristique du radionucléide et ne dépend pas des conditions ordinaires de température et de pression rencontrées en géologie. Une datation exige toutefois un modèle approprié et un système minéral dont l’histoire de conservation des isotopes est comprise.',
+'Un âge radiométrique n’est pas automatiquement l’âge de formation de toute la roche. Il peut correspondre à la cristallisation d’un minéral, à un épisode métamorphique ou à la fermeture d’un système isotopique à la diffusion. Les pertes ou apports ultérieurs d’éléments peuvent perturber le système et doivent être évalués.'
 ],
 example: {
-statement: 'Un échantillon radioactif contient initialement 100 unités d’un isotope père. Combien en reste-t-il après 2 demi-vies ?',
-calculation: 'Après 1 demi-vie : 100 / 2 = 50. Après 2 demi-vies : 50 / 2 = 25.',
-answer: 'Il reste 25 unités de l’isotope père.'
+statement: 'Un échantillon contient 64 unités d’un isotope père radioactif. Combien en reste-t-il après 3 demi-vies ?',
+calculation: '64 / 2 = 32 ; 32 / 2 = 16 ; 16 / 2 = 8.',
+answer: 'Il reste 8 unités de l’isotope père.'
 },
-exercise: 'Expliquer la différence entre un isotope stable et un isotope radioactif.',
+exercise: {
+question: 'Pourquoi un âge radiométrique doit-il être interprété en fonction de l’histoire du minéral analysé ?',
+answer: 'Parce que l’âge obtenu peut dater la cristallisation, un événement métamorphique ou la fermeture du système isotopique. Des pertes ou apports ultérieurs peuvent modifier les rapports mesurés.'
+},
 exercises: [
-{
-question: 'Que représente une demi-vie radioactive ?',
-answer: 'La durée nécessaire pour que la moitié des noyaux radioactifs initiaux se désintègrent.'
-},
-{
-question: 'Quel système isotopique est couramment utilisé pour dater des zircons ?',
-answer: 'Le système uranium-plomb.'
-}
+{ question: 'Quelle différence fondamentale distingue un isotope stable d’un isotope radioactif ?', answer: 'Un isotope radioactif se désintègre spontanément, alors qu’un isotope stable ne subit pas cette désintégration.' },
+{ question: 'Quel système isotopique est couramment utilisé pour dater les zircons ?', answer: 'Le système uranium-plomb.' },
+{ question: 'Que représente la demi-vie ?', answer: 'Le temps nécessaire pour que la moitié des noyaux radioactifs initiaux se désintègrent.' }
 ],
 sources: [
-'https://www.ncei.noaa.gov/products/paleoclimatology',
-'https://www.usgs.gov/'
+{ title: 'USGS — Geologic Age: Using Radioactive Decay to Determine Geologic Age', url: 'https://www.usgs.gov/educational-resources/geologic-age-using-radioactive-decay-determine-geologic-age' },
+{ title: 'USGS — Information Handout: Radiogenic Isotopes', url: 'https://pubs.usgs.gov/info/ayuso2/' },
+{ title: 'Wiley — Geochemistry, 2nd Edition', url: 'https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/geochemistry-978-1-119-43805-2' }
 ]
 }
 },
 {
-id: 'cycles-geochimiques',
-title: '5. Cycles géochimiques et échanges entre les enveloppes terrestres',
-field: 'Cycles biogéochimiques',
-summary: 'Les cycles géochimiques décrivent les transferts et transformations des éléments entre les roches, les sols, les eaux, l’atmosphère et les organismes vivants.',
+id: 'cycles-biogeochimiques',
+title: 'Les grands cycles biogéochimiques',
+field: 'Géochimie · Carbone, azote, phosphore et soufre',
+summary: 'Étudier la circulation des éléments entre les organismes et les compartiments non vivants, ainsi que les effets des processus géologiques et des activités humaines.',
 lesson: {
 sections: [
-{
-title: 'Cycle du carbone',
-content: 'Le carbone circule entre l’atmosphère, les océans, les organismes vivants, les sols et les roches. La photosynthèse, la respiration, la dissolution du dioxyde de carbone, la sédimentation et le volcanisme participent à ce cycle.'
-},
-{
-title: 'Cycle de l’azote',
-content: 'L’azote atmosphérique est transformé par différents processus biologiques et chimiques. La fixation, la nitrification, l’assimilation et la dénitrification contribuent à sa circulation entre l’atmosphère, les sols et les organismes.'
-},
-{
-title: 'Cycle du phosphore',
-content: 'Le phosphore est principalement stocké dans les roches et les sédiments. L’altération libère des ions phosphates qui peuvent être assimilés par les organismes ou transportés vers les milieux aquatiques.'
-},
-{
-title: 'Cycle du soufre',
-content: 'Le soufre circule entre les roches, les océans, l’atmosphère et les organismes. Les réactions d’oxydation et de réduction transforment ses différentes formes chimiques. Les activités volcaniques et biologiques jouent également un rôle dans son cycle.'
-},
-{
-title: 'Altération et transport',
-content: 'L’altération chimique transforme les minéraux au contact de l’eau et des gaz. Les éléments libérés peuvent être transportés par les rivières, adsorbés sur des particules ou précipités sous forme de nouveaux minéraux.'
-}
+'Un cycle biogéochimique décrit les transferts d’un élément entre les organismes vivants et les compartiments non vivants : atmosphère, eaux, sols et roches. La matière est recyclée, tandis que l’énergie traverse les écosystèmes et se dissipe. Les cycles biologiques sont liés aux processus géologiques comme l’altération, l’érosion, la sédimentation et la subduction.',
+'Le carbone circule entre l’atmosphère, l’océan, la biosphère, les sols et les roches. La photosynthèse prélève du CO2, tandis que la respiration et la décomposition en restituent. Le CO2 se dissout aussi dans l’eau et participe au système carbonaté. L’enfouissement de matière organique et la formation de carbonates stockent du carbone à long terme ; le volcanisme et le métamorphisme peuvent en restituer une partie.',
+'L’azote atmosphérique N2 est abondant mais n’est pas directement utilisable par la plupart des organismes. La fixation biologique ou industrielle transforme l’azote moléculaire en formes réactives. L’ammonification, la nitrification, l’assimilation et la dénitrification assurent ensuite les transferts entre formes organiques, ammonium, nitrite, nitrate et azote gazeux.',
+'Le phosphore circule principalement entre roches, sols, eaux et organismes. L’altération libère des phosphates, qui peuvent être assimilés ou transportés vers les milieux aquatiques. Une partie est ensuite enfouie dans les sédiments. À l’échelle globale, le cycle du phosphore ne possède pas de réservoir atmosphérique gazeux majeur comparable à celui de l’azote ou du carbone.',
+'Le soufre existe sous plusieurs formes chimiques, notamment sulfates, sulfures et composés gazeux. Les réactions d’oxydation et de réduction, l’activité microbienne, le volcanisme, les échanges océaniques et les dépôts sédimentaires contrôlent sa circulation. Les activités humaines, en particulier la combustion de matières soufrées, ont modifié certains flux atmosphériques.',
+'Les cycles sont interconnectés. Le mouvement de l’eau transporte les ions dissous et les particules ; les organismes modifient la spéciation des éléments ; les roches constituent des réservoirs à long terme. Pour établir un bilan, il faut distinguer les stocks présents dans un réservoir des flux qui y entrent et en sortent pendant une durée donnée.'
 ],
 example: {
-statement: 'Décrire le trajet simplifié du carbone atmosphérique vers une roche carbonatée.',
-calculation: 'CO2 atmosphérique -> dissolution dans l’eau -> formation d’ions bicarbonate et carbonate -> précipitation de carbonates -> sédimentation.',
-answer: 'Une partie du carbone atmosphérique peut être transférée vers les océans puis stockée dans les sédiments carbonatés.'
+statement: 'Décrire un transfert possible du carbone atmosphérique vers un sédiment carbonaté.',
+calculation: 'CO2 atmosphérique -> dissolution dans l’eau -> formation d’espèces carbonatées dissoutes -> précipitation de carbonate -> sédimentation et enfouissement.',
+answer: 'Une partie du carbone atmosphérique peut être transférée à l’océan puis stockée dans des sédiments carbonatés.'
 },
-exercise: 'Comparer les principaux réservoirs du carbone et expliquer comment ils échangent cet élément.',
+exercise: {
+question: 'Pourquoi le cycle du phosphore est-il souvent qualifié de cycle principalement sédimentaire ?',
+answer: 'Parce que ses principaux réservoirs à long terme sont les roches et les sédiments. L’altération libère des phosphates qui circulent dans les sols et les eaux, puis peuvent être enfouis ; il n’existe pas de grand réservoir atmosphérique gazeux de phosphore.'
+},
 exercises: [
-{
-question: 'Quel processus biologique fixe le carbone atmosphérique ?',
-answer: 'La photosynthèse.'
-},
-{
-question: 'Dans quels matériaux le phosphore est-il principalement stocké à long terme ?',
-answer: 'Dans les roches et les sédiments.'
-}
+{ question: 'Quel processus biologique prélève du CO2 atmosphérique ?', answer: 'La photosynthèse.' },
+{ question: 'Quel processus transforme l’azote moléculaire atmosphérique en azote réactif ?', answer: 'La fixation de l’azote.' },
+{ question: 'Quels sont les principaux réservoirs à long terme du phosphore ?', answer: 'Les roches et les sédiments.' }
 ],
 sources: [
-'https://www.usgs.gov/',
-'https://www.ipcc.ch/'
+{ title: 'OpenStax — Concepts of Biology: Biogeochemical Cycles', url: 'https://openstax.org/books/concepts-biology/pages/20-2-biogeochemical-cycles' },
+{ title: 'Wiley — Geochemistry, 2nd Edition', url: 'https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/geochemistry-978-1-119-43805-2' }
 ]
 }
 },
 {
-id: 'geochimie-magmatisme',
-title: '6. Géochimie magmatique et évolution des roches',
-field: 'Géochimie des magmas',
-summary: 'La composition chimique des magmas évolue pendant leur formation, leur remontée et leur refroidissement. Ces transformations permettent d’expliquer la diversité des roches magmatiques.',
+id: 'geochimie-magmatique',
+title: 'La géochimie magmatique et l’évolution des magmas',
+field: 'Géochimie · Fusion partielle et cristallisation',
+summary: 'Relier la composition des roches magmatiques aux processus de fusion partielle, de cristallisation fractionnée, d’assimilation et de mélange.',
 lesson: {
 sections: [
-{
-title: 'Formation des magmas',
-content: 'Les magmas se forment principalement par fusion partielle de matériaux mantelliques ou crustaux. La fusion dépend notamment de la température, de la pression et de la présence de substances volatiles comme l’eau.'
-},
-{
-title: 'Cristallisation fractionnée',
-content: 'Lors du refroidissement, certains minéraux cristallisent avant les autres. Si les cristaux sont séparés du liquide, la composition du magma résiduel évolue. Les éléments compatibles peuvent être retirés du liquide tandis que les éléments incompatibles peuvent s’y enrichir.'
-},
-{
-title: 'Assimilation et mélange magmatique',
-content: 'Un magma peut incorporer des matériaux encaissants au cours de son déplacement. Il peut également se mélanger avec un autre magma. Ces processus modifient sa composition et peuvent produire des signatures géochimiques complexes.'
-},
-{
-title: 'Diagrammes géochimiques',
-content: 'Les diagrammes de concentration et les diagrammes de classification servent à comparer les roches et à étudier leur évolution. Le diagramme TAS utilise notamment les teneurs en silice et en alcalins pour classer certaines roches volcaniques lorsque les conditions d’application sont respectées.'
-}
+'Les magmas résultent généralement d’une fusion partielle de matériaux mantelliques ou crustaux. La fusion partielle dépend de la température, de la pression, de la composition de la source et de la présence de volatils comme l’eau. Le liquide produit n’a généralement pas la même composition que la roche qui a fondu, car les minéraux ne fondent pas tous dans les mêmes proportions.',
+'Le degré de fusion partielle contrôle la quantité de liquide produite et la distribution des éléments entre le liquide et le résidu solide. Les éléments incompatibles sont souvent enrichis dans les faibles fractions de liquide, tandis que les éléments compatibles peuvent rester dans certains minéraux résiduels. La minéralogie de la source est donc essentielle pour interpréter les compositions.',
+'Lors du refroidissement, les minéraux cristallisent selon les conditions du système. Si les cristaux sont séparés du liquide, la cristallisation fractionnée modifie la composition du magma résiduel. Les éléments incorporés dans les cristaux précoces peuvent être appauvris dans le liquide, alors que certains éléments incompatibles peuvent s’y concentrer.',
+'L’assimilation correspond à l’incorporation et à la réaction de matériaux encaissants avec le magma. Le mélange magmatique correspond à l’interaction entre liquides de compositions différentes. Ces processus peuvent se produire en même temps que la cristallisation et rendent parfois l’interprétation des tendances géochimiques non unique.',
+'Les diagrammes géochimiques servent à classer les roches et à comparer leurs compositions. Le diagramme TAS utilise la silice et les alcalins totaux pour classer certaines roches volcaniques, en particulier lorsque les échantillons sont adaptés à cette méthode. Les diagrammes de discrimination tectonique ne constituent pas des preuves isolées d’un contexte : ils doivent être interprétés avec la géologie de terrain, la pétrographie et d’autres données.'
 ],
 example: {
-statement: 'Un magma cristallise et perd une partie de ses cristaux riches en magnésium et en fer. Comment évolue le liquide restant ?',
-calculation: 'La cristallisation retire une partie des éléments incorporés dans les minéraux formés. Le liquide résiduel évolue relativement vers des compositions plus riches en éléments incompatibles.',
-answer: 'La composition du liquide change au cours de la cristallisation fractionnée.'
+statement: 'Un magma perd des cristaux précoces qui incorporent fortement un élément compatible. Comment la concentration de cet élément évolue-t-elle dans le liquide résiduel ?',
+calculation: 'Les cristaux retirés emportent une partie de l’élément. La quantité de cet élément restant dans le liquide diminue relativement à la masse de liquide.',
+answer: 'La concentration de l’élément compatible tend à diminuer dans le liquide résiduel.'
 },
-exercise: 'Expliquer comment la cristallisation fractionnée peut produire des roches magmatiques de compositions différentes.',
+exercise: {
+question: 'Expliquer pourquoi la fusion partielle et la cristallisation fractionnée peuvent produire des roches de compositions différentes à partir d’une source initiale comparable.',
+answer: 'La fusion partielle répartit différemment les éléments entre liquide et résidu solide. La cristallisation fractionnée retire ensuite certains éléments du liquide dans les minéraux formés. Les compositions évoluent donc en fonction du degré de fusion, de la minéralogie et de la succession des cristallisations.'
+},
 exercises: [
-{
-question: 'Quel phénomène correspond à la séparation des cristaux du liquide magmatique ?',
-answer: 'La cristallisation fractionnée.'
-},
-{
-question: 'Quels paramètres sont utilisés dans le diagramme TAS ?',
-answer: 'La silice et les alcalins, principalement Na2O et K2O.'
-}
+{ question: 'Que signifie fusion partielle ?', answer: 'Seule une fraction du matériau initial fond et produit un liquide dont la composition peut différer de celle de la source.' },
+{ question: 'Quel processus retire des cristaux du liquide magmatique en évolution ?', answer: 'La cristallisation fractionnée.' },
+{ question: 'Quelles 2 variables principales figurent dans le diagramme TAS ?', answer: 'La silice et les alcalins totaux, principalement Na2O et K2O.' }
 ],
 sources: [
-'https://www.usgs.gov/',
-'https://www.geochemicalperspectives.org/'
+{ title: 'MIT OpenCourseWare — Trace Element Geochemistry', url: 'https://ocw.mit.edu/courses/12-479-trace-element-geochemistry-spring-2013/' },
+{ title: 'Wiley — Geochemistry, 2nd Edition: Trace Elements in Igneous Processes', url: 'https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/geochemistry-978-1-119-43805-2' },
+{ title: 'Cambridge University Press — Using Trace Element Data', url: 'https://www.cambridge.org/core/books/abs/using-geochemical-data/using-trace-element-data/902A42CE7CD3C850A15C119E13AAC8F6' }
 ]
 }
 },
 {
 id: 'geochimie-hydrothermale',
-title: '7. Géochimie hydrothermale et interactions eau-roche',
-field: 'Fluides géologiques',
-summary: 'Les fluides circulant dans les roches provoquent des réactions chimiques, transportent des éléments et peuvent contribuer à la formation de gisements minéraux.',
+title: 'La géochimie hydrothermale et les interactions entre fluides et roches',
+field: 'Géochimie · Fluides hydrothermaux et minéralisations',
+summary: 'Comprendre l’origine des fluides, les réactions eau-roche, le transport des métaux et les conditions de précipitation minérale.',
 lesson: {
 sections: [
-{
-title: 'Origine des fluides hydrothermaux',
-content: 'Les fluides hydrothermaux peuvent provenir de l’eau météorique, de l’eau de mer, de fluides magmatiques ou de fluides libérés lors des transformations métamorphiques. Leur composition dépend de leur origine et de leur interaction avec les roches.'
-},
-{
-title: 'Interactions eau-roche',
-content: 'Lorsque l’eau circule dans une roche, elle peut dissoudre certains minéraux, en transformer d’autres et en précipiter de nouveaux. La température, le pH, la pression et les conditions d’oxydoréduction influencent ces réactions.'
-},
-{
-title: 'Transport des métaux',
-content: 'Certains métaux peuvent être transportés en solution sous forme de complexes chimiques. Les chlorures et les sulfures peuvent notamment participer au transport de métaux dans certains fluides hydrothermaux.'
-},
-{
-title: 'Précipitation minérale',
-content: 'Une modification de température, de pression, de pH ou de composition chimique peut déstabiliser les complexes dissous et provoquer la précipitation de minéraux. Ce mécanisme intervient dans la formation de nombreux dépôts hydrothermaux.'
-}
+'Les fluides hydrothermaux sont des solutions aqueuses chaudes qui circulent dans les roches. Ils peuvent être d’origine météorique, marine, magmatique ou métamorphique, et plusieurs origines peuvent contribuer à un même système. Leur composition évolue pendant leur circulation en fonction des échanges avec les roches et des conditions de pression et de température.',
+'Les interactions eau-roche comprennent la dissolution de minéraux, l’hydrolyse, l’échange ionique, l’oxydation-réduction et la précipitation de nouvelles phases. Le pH, la température, la pression, le potentiel redox, la salinité et la composition minéralogique du milieu influencent les réactions. Les assemblages de minéraux secondaires peuvent ainsi enregistrer les conditions d’altération.',
+'Les métaux peuvent être transportés sous forme d’ions ou de complexes dissous avec des ligands tels que les chlorures ou les sulfures. La stabilité de ces complexes dépend de la température, de la pression, du pH et de la composition du fluide. Il n’existe donc pas une forme de transport unique valable pour tous les métaux et tous les systèmes hydrothermaux.',
+'La précipitation minérale peut être déclenchée par le refroidissement, la décompression, l’ébullition, le mélange de fluides, une réaction avec la roche encaissante ou une modification du pH et du potentiel redox. La formation d’un gisement dépend aussi du débit des fluides, de la durée de circulation et de la capacité du système à concentrer les éléments.',
+'Les inclusions fluides piégées dans les minéraux peuvent conserver des échantillons microscopiques de fluides anciens. Leur étude, combinée à la minéralogie, aux analyses isotopiques et à la modélisation thermodynamique, aide à reconstituer les conditions de formation. Les interprétations doivent tenir compte des modifications possibles des inclusions après leur piégeage.'
 ],
 example: {
-statement: 'Un fluide hydrothermal chaud se refroidit pendant sa circulation dans une fracture. Quelle conséquence chimique est possible ?',
-calculation: 'Le refroidissement peut modifier la stabilité des complexes métalliques et réduire la solubilité de certains minéraux.',
-answer: 'Une précipitation minérale peut se produire si les conditions chimiques deviennent favorables.'
+statement: 'Un fluide hydrothermal se refroidit au contact d’une roche encaissante. Pourquoi des minéraux peuvent-ils précipiter ?',
+calculation: 'Le refroidissement peut modifier la stabilité des complexes dissous et la solubilité des phases minérales. Si le fluide devient sursaturé par rapport à un minéral, sa précipitation devient possible.',
+answer: 'Le refroidissement peut provoquer une sursaturation et la précipitation de minéraux, selon la composition et les conditions du fluide.'
 },
-exercise: 'Expliquer pourquoi une variation de température peut provoquer la précipitation de minéraux dans un système hydrothermal.',
+exercise: {
+question: 'Citer plusieurs mécanismes capables de provoquer la précipitation de minéraux dans un système hydrothermal.',
+answer: 'Le refroidissement, la décompression, l’ébullition, le mélange de fluides, la réaction avec la roche encaissante et les changements de pH ou de potentiel redox peuvent déclencher une précipitation.'
+},
 exercises: [
-{
-question: 'Quels paramètres contrôlent les réactions eau-roche ?',
-answer: 'La température, la pression, le pH, la composition du fluide et les conditions d’oxydoréduction.'
-},
-{
-question: 'Quel phénomène peut former des dépôts minéraux dans les fractures ?',
-answer: 'La précipitation de minéraux à partir de fluides hydrothermaux.'
-}
+{ question: 'Citer 3 paramètres qui contrôlent les réactions eau-roche.', answer: 'La température, le pH et le potentiel redox. La pression, la salinité et la composition du fluide interviennent également.' },
+{ question: 'Sous quelles formes des métaux peuvent-ils être transportés dans un fluide hydrothermal ?', answer: 'Sous forme d’ions dissous ou de complexes aqueux, notamment avec des ligands chlorure ou sulfure selon les conditions.' },
+{ question: 'Que peuvent renseigner les inclusions fluides ?', answer: 'Elles peuvent renseigner sur la composition et certaines conditions physiques et chimiques des fluides présents lors de la formation du minéral.' }
 ],
 sources: [
-'https://www.usgs.gov/',
-'https://www.geochemicalperspectives.org/'
+{ title: 'USGS — The Geochemistry of Continental Hydrothermal Systems', url: 'https://www.usgs.gov/publications/geochemistry-continental-hydrothermal-systems' },
+{ title: 'Annual Review of Marine Science — Progress in Deciphering the Controls on the Geochemistry of Fluids in Seafloor Hydrothermal Systems', url: 'https://www.annualreviews.org/content/journals/10.1146/annurev-marine-121916-063233' },
+{ title: 'Ore Geology Reviews — The Mechanics of Hydrothermal Systems: Ore Systems as Chemical Reactors', url: 'https://www.sciencedirect.com/science/article/pii/S0169136812001746' }
 ]
 }
 },
 {
 id: 'methodes-analyse-geochimique',
-title: '8. Méthodes d’analyse et applications de la géochimie',
-field: 'Analyses géochimiques',
-summary: 'Les méthodes analytiques permettent de déterminer les concentrations élémentaires et isotopiques des matériaux terrestres avec des niveaux de précision adaptés aux objectifs scientifiques.',
+title: 'Les méthodes d’analyse géochimique et le contrôle de qualité',
+field: 'Géochimie · Échantillonnage, analyses élémentaires et isotopiques',
+summary: 'Présenter les principales techniques analytiques et les contrôles nécessaires pour produire des résultats géochimiques fiables.',
 lesson: {
 sections: [
-{
-title: 'Préparation des échantillons',
-content: 'La qualité d’une analyse dépend de la représentativité de l’échantillon, de sa préparation et de la maîtrise des contaminations. Les opérations peuvent inclure le séchage, le broyage, l’homogénéisation et la mise en solution.'
-},
-{
-title: 'Spectrométrie de fluorescence X',
-content: 'La fluorescence X permet de mesurer de nombreux éléments chimiques dans des matériaux solides ou préparés. Elle est couramment utilisée pour déterminer la composition élémentaire des roches et des sols.'
-},
-{
-title: 'Spectrométrie de masse ICP-MS',
-content: 'L’ICP-MS utilise un plasma pour ioniser les éléments présents dans un échantillon, puis un spectromètre de masse les sépare selon leur rapport masse/charge. Cette technique permet de mesurer de nombreux éléments traces à faibles concentrations.'
-},
-{
-title: 'Spectrométrie de masse isotopique',
-content: 'La spectrométrie de masse permet de mesurer les rapports isotopiques. Les résultats peuvent contribuer à identifier l’origine des matériaux, les processus de mélange et les transformations géologiques.'
-},
-{
-title: 'Contrôle qualité',
-content: 'Les analyses nécessitent des matériaux de référence certifiés, des blancs, des duplicatas et des contrôles de calibration. Ces procédures permettent d’évaluer la précision, l’exactitude et les limites de détection.'
-},
-{
-title: 'Applications environnementales',
-content: 'La géochimie permet d’étudier la qualité des eaux, la contamination des sols, la mobilité des métaux et le devenir des éléments polluants. Elle contribue à identifier les sources de contamination et à comprendre leur évolution dans les milieux naturels.'
-}
+'Une analyse géochimique commence par un échantillonnage représentatif. La préparation peut comprendre le séchage, le broyage, l’homogénéisation et, selon la méthode, une mise en solution ou une préparation directe du solide. Les contaminations provenant des outils, des réactifs, des récipients ou de l’environnement du laboratoire peuvent modifier les résultats, surtout pour les éléments traces.',
+'La fluorescence X repose sur la mesure des rayonnements caractéristiques émis par les éléments après excitation de l’échantillon. Elle permet d’analyser de nombreux éléments dans des matériaux solides et est utilisée pour les roches, les sols et les sédiments. Les performances dépendent de l’appareil, de la matrice, de la préparation et des concentrations mesurées.',
+'En ICP-MS, un échantillon généralement introduit sous forme liquide est nébulisé puis ionisé dans un plasma. Les ions sont séparés selon leur rapport masse/charge et détectés. La technique permet de mesurer de nombreux éléments à faibles concentrations, mais les interférences spectrales, les effets de matrice et la préparation doivent être maîtrisés.',
+'La spectrométrie de masse isotopique mesure les rapports entre isotopes d’un élément. Elle est utilisée en géochronologie et comme outil de traçage des sources et des processus. Les résultats nécessitent des standards, des corrections instrumentales et une présentation claire des rapports isotopiques et des incertitudes.',
+'Le contrôle qualité repose notamment sur les blancs, les duplicatas, les matériaux de référence certifiés, les étalonnages et les contrôles de dérive instrumentale. La précision décrit la dispersion des mesures répétées ; l’exactitude décrit leur proximité avec une valeur de référence. Une limite de détection n’est pas une garantie de quantification fiable à cette même concentration.'
 ],
 example: {
-statement: 'Une analyse ICP-MS mesure 0,004 mg de plomb par kg de sol. Exprimer cette concentration en ppm.',
-calculation: '0,004 mg/kg = 0,004 ppm.',
-answer: 'La concentration mesurée est de 0,004 ppm.'
+statement: 'Une analyse indique 0,007 mg de cuivre par kg de sol. Exprimer cette concentration en ppm.',
+calculation: '0,007 mg/kg = 0,007 ppm.',
+answer: 'La concentration mesurée est de 0,007 ppm.'
 },
-exercise: 'Comparer les principes généraux de la fluorescence X et de l’ICP-MS.',
+exercise: {
+question: 'Pourquoi un laboratoire utilise-t-il des blancs, des duplicatas et des matériaux de référence certifiés ?',
+answer: 'Les blancs aident à détecter les contaminations, les duplicatas évaluent la répétabilité et les matériaux de référence certifiés permettent de contrôler l’exactitude des résultats.'
+},
 exercises: [
-{
-question: 'Quelle technique est couramment utilisée pour analyser les éléments traces à faibles concentrations ?',
-answer: 'L’ICP-MS.'
-},
-{
-question: 'Pourquoi utilise-t-on des matériaux de référence certifiés ?',
-answer: 'Pour contrôler l’exactitude et la fiabilité des résultats analytiques.'
-}
+{ question: 'Quel est le principe général de la fluorescence X ?', answer: 'Mesurer les rayonnements X caractéristiques émis par les éléments après excitation de l’échantillon.' },
+{ question: 'Quel est le principe général de l’ICP-MS ?', answer: 'Ioniser les éléments dans un plasma puis séparer et détecter les ions selon leur rapport masse/charge.' },
+{ question: 'Quelle différence existe entre précision et exactitude ?', answer: 'La précision concerne la dispersion des mesures répétées ; l’exactitude concerne leur proximité avec une valeur de référence.' }
 ],
 sources: [
-'https://www.usgs.gov/',
-'https://www.nist.gov/',
-'https://www.geochemicalperspectives.org/'
+{ title: 'Royal Society of Chemistry — Trace Element Analysis: Methodology, Instrumentation, Analytical Performance and Application', url: 'https://books.rsc.org/books/monograph/2036/chapter/4653390/Trace-Element-Analysis-Methodology-Instrumentation' },
+{ title: 'Wiley — Geochemistry, 2nd Edition', url: 'https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/geochemistry-978-1-119-43805-2' }
 ]
 }
 }
 ]
 },
 
+
 ]
+
 
 
