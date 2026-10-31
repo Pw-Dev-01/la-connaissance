@@ -5,15 +5,15 @@ import { readdirSync, readFileSync, writeFileSync, existsSync, statSync } from "
 import { join } from "node:path";
 
 const DEFAULTS = {
-  mathematiques: { order: 1,  symbol: "x²", class: "math-entry",         entry: "programmes.html", title: "Mathématiques",  description: "Du lycée à la prépa scientifique · 89 chapitres" },
-  physique:      { order: 2,  symbol: "φ",  class: "physics-entry",      title: "Physique",       description: "Des lois fondamentales aux sciences de l’Univers · 35 chapitres et 8 cours approfondis" },
-  chimie:        { order: 3,  symbol: "⇌",  class: "chemistry-entry",    title: "Chimie",         description: "Des constituants de la matière aux synthèses moléculaires · 18 chapitres" },
-  economie:      { order: 4,  symbol: "€",  class: "economics-entry",    title: "Économie",       description: "Microéconomie, macroéconomie et grands économistes · 3 rubriques · 11 chapitres" },
-  geologie:      { order: 5,  symbol: "◈",  class: "geology-entry",      title: "Géologie",       description: "Des minéraux aux temps profonds · 6 chapitres et 1 cours approfondi" },
-  climatologie:  { order: 6,  symbol: "☀",  class: "climatology-entry",  title: "Climatologie",   description: "Du bilan radiatif au changement climatique · 9 chapitres" },
-  paleontologie: { order: 7,  symbol: "✳",  class: "paleontology-entry", title: "Paléontologie",  description: "Des fossiles aux archives de l’histoire du vivant · 1 cours approfondi" },
-  anthropologie: { order: 8,  symbol: "A",  class: "anthropology-entry", title: "Anthropologie",  description: "Des traces du passé aux sociétés et aux langues · 5 rubriques · 14 chapitres" },
-  histoire:      { order: 9,  symbol: "H",  class: "history-entry",      title: "Histoire",       description: "Des premières cités aux grands empires · 1 rubrique · 6 chapitres" },
+  mathematiques: { order: 1,  symbol: "x²", class: "math-entry",         entry: "programmes.html", title: "Mathématiques",  description: "Du lycée à la prépa scientifique" },
+  physique:      { order: 2,  symbol: "φ",  class: "physics-entry",      title: "Physique",       description: "Des lois fondamentales aux sciences de l’Univers" },
+  chimie:        { order: 3,  symbol: "⇌",  class: "chemistry-entry",    title: "Chimie",         description: "Des constituants de la matière aux synthèses moléculaires" },
+  economie:      { order: 4,  symbol: "€",  class: "economics-entry",    title: "Économie",       description: "Microéconomie, macroéconomie et grands économistes" },
+  geologie:      { order: 5,  symbol: "◈",  class: "geology-entry",      title: "Géologie",       description: "Des minéraux aux temps profonds" },
+  climatologie:  { order: 6,  symbol: "☀",  class: "climatology-entry",  title: "Climatologie",   description: "Du bilan radiatif au changement climatique" },
+  paleontologie: { order: 7,  symbol: "✳",  class: "paleontology-entry", title: "Paléontologie",  description: "Des fossiles aux archives de l’histoire du vivant" },
+  anthropologie: { order: 8,  symbol: "A",  class: "anthropology-entry", title: "Anthropologie",  description: "Des traces du passé aux sociétés et aux langues" },
+  histoire:      { order: 9,  symbol: "H",  class: "history-entry",      title: "Histoire",       description: "Des premières cités aux grands empires"},
   philosophie:   { order: 10, symbol: "Φ",  class: "philosophy-entry",   title: "Philosophie",    description: "Conscience, liberté, vérité, justice et morale · Explorer les grandes questions de la pensée" },
 };
 
