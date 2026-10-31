@@ -6096,6 +6096,305 @@ window.courseCatalog = [
     }
   ]
 },
+
+{
+  id: 'sept-merveilles',
+  sortYear: -2589,
+  title: 'Les sept merveilles du monde',
+  note: 'Six chapitres sur les listes antiques des merveilles, la Grande Pyramide de Gizeh, les jardins suspendus de Babylone, deux sanctuaires grecs (Zeus à Olympie et Artémis à Éphèse), le Mausolée d’Halicarnasse avec le Colosse de Rhodes, puis le phare d’Alexandrie et le bilan des disparitions. Les dates sont approximatives, et les sources antiques comme modernes divergent parfois sur les dimensions, les coûts et les chronologies.',
+  chapters: [
+    {
+      id: 'listes-sept-merveilles',
+      title: 'Les listes antiques des sept merveilles : origines et variantes',
+      field: 'Antiquité grecque et hellénistique · Philon de Byzance, vers 225 av. J.-C.',
+      summary: 'Comprendre ce que désigne l’expression « sept merveilles », qui a établi les premières listes, pourquoi aucune liste n’est unique et comment la liste moderne s’est fixée.',
+      lesson: {
+        sections: [
+          'Les « sept merveilles du monde » désignent sept structures impressionnantes que des auteurs antiques, dont Philon de Byzance, Antipater de Sidon, Diodore de Sicile, Hérodote, Strabon et Callimaque de Cyrène, ont citées dans des listes. La liste dite standard comprend la Grande Pyramide de Gizeh, les jardins suspendus de Babylone, la statue de Zeus à Olympie, le temple d’Artémis à Éphèse, le Mausolée d’Halicarnasse, le Colosse de Rhodes et le phare d’Alexandrie. Ces monuments se répartissent entre l’Égypte, la Mésopotamie, la Grèce et l’Asie Mineure, et la World History Encyclopedia situe leur édification entre environ 2560 et 280 av. J.-C. Un seul subsiste aujourd’hui : la Grande Pyramide. L’existence même des jardins suspendus reste, on le verra, discutée.',
+          'Le traité Sur les sept merveilles, attribué à Philon de Byzance, est daté de 225 av. J.-C. par la World History Encyclopedia. C’est le plus ancien catalogue connu, même s’il s’appuie peut-être sur des ouvrages antérieurs aujourd’hui perdus. Philon est présenté comme un ingénieur travaillant à la bibliothèque d’Alexandrie. Il y décrit des sites que les voyageurs grecs devaient voir, les thémata (« choses à voir »), et affirme que l’éducation permet de contempler ces merveilles par l’esprit sans avoir à voyager. Le texte s’interrompt au milieu de la description du temple d’Artémis à Éphèse, et certains chercheurs doutent même que Philon en soit l’auteur, parlant d’un « Pseudo-Philon ». Sa liste cite les murailles de Babylone et non le phare d’Alexandrie.',
+          'Il n’existe pas de liste unique ni « authentique ». Antipater de Sidon (IIe siècle av. J.-C.) cite lui aussi les murailles de Babylone plutôt que le phare. Callimaque de Cyrène (vers 310 – vers 240 av. J.-C.) compte la porte d’Ishtar de Babylone parmi les merveilles. Hérodote estime le labyrinthe égyptien d’Hawara encore plus impressionnant que les pyramides. Au Moyen Âge, Bède (vers 673-735) établit sa propre liste, qui comprend notamment le Capitole de Rome et le théâtre d’Héraclée. Ces choix traduisent en grande partie le goût de chaque auteur : le catalogue ressemble moins à un classement officiel qu’à un guide à l’usage des voyageurs.',
+          'Quelle liste est devenue la référence ? La World History Encyclopedia indique que celle de Diodore de Sicile (Ier siècle av. J.-C.), qui reprend les sept monuments standard, est aujourd’hui acceptée comme la définition officielle. Les historiens John et Elizabeth Romer nuancent fortement : l’origine précise de la liste est perdue, la première version complète conforme à la liste moderne apparaît en Italie en 1608, et sa composition ne se fige qu’avec l’imprimerie de masse et l’instruction populaire. Peter Clayton et Martin Price (1988), cités par Live Science, écrivent que la liste n’a été fixée qu’à la Renaissance, et la version jeunesse de Britannica mentionne une liste couramment utilisée datant d’environ le VIe siècle apr. J.-C. La date de fixation varie donc selon les sources. Enfin, selon la World History Encyclopedia, les sept monuments n’auraient été debout simultanément que pendant moins de 60 ans.'
+        ],
+        example: {
+          statement: 'La Grande Pyramide est construite vers 2560 av. J.-C. et la liste de Philon de Byzance est rédigée en 225 av. J.-C. Combien d’années séparent ces deux repères ?',
+          calculation: 'Les deux dates sont exprimées avant notre ère : on soustrait la plus récente de la plus ancienne. 2560 − 225 = 2335.',
+          answer: 'Environ 2 335 ans. La Grande Pyramide était donc déjà un monument très ancien à l’époque de Philon. Ces dates sont des estimations.'
+        },
+        exercise: {
+          question: 'Pourquoi dit-on qu’il n’existe pas de liste « officielle » des sept merveilles dans l’Antiquité ?',
+          answer: 'Parce que les auteurs antiques ne s’accordaient pas : Philon et Antipater citent les murailles de Babylone, Callimaque la porte d’Ishtar, Bède d’autres monuments. La liste actuelle s’est fixée progressivement, selon certains auteurs seulement à la Renaissance.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année la World History Encyclopedia date-t-elle le traité de Philon de Byzance sur les sept merveilles ?',
+            answer: 'En 225 av. J.-C.'
+          },
+          {
+            question: 'Que signifie le mot grec thémata appliqué aux merveilles ?',
+            answer: 'Les « choses à voir » : des sites que les voyageurs grecs devaient visiter, comparables aux incontournables d’un guide touristique.'
+          },
+          {
+            question: 'Quel monument Philon et Antipater de Sidon citent-ils à la place du phare d’Alexandrie ?',
+            answer: 'Les murailles de Babylone.'
+          },
+          {
+            question: 'Parmi les sept merveilles de la liste standard, combien subsistent aujourd’hui ?',
+            answer: 'Une seule : la Grande Pyramide de Gizeh.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — The Seven Wonders', url: 'https://www.worldhistory.org/The_Seven_Wonders/' },
+          { title: 'World History Encyclopedia — Philo of Byzantium’s On the Seven Wonders', url: 'https://www.worldhistory.org/article/2257/philo-of-byzantiums-on-the-seven-wonders/' },
+          { title: 'Britannica Kids — Seven Wonders of the World', url: 'https://kids.britannica.com/students/article/Seven-Wonders-of-the-World/276998' },
+          { title: 'Live Science — 7 wonders of the ancient world', url: 'https://www.livescience.com/seven-wonders-of-the-ancient-world' }
+        ]
+      }
+    },
+    {
+      id: 'grande-pyramide-gizeh',
+      title: 'La Grande Pyramide de Gizeh : tombeau de Khéops',
+      field: 'Égypte ancienne · Ancien Empire, IVe dynastie, règne de Khéops (2589-2566 av. J.-C.)',
+      summary: 'Étudier la seule merveille encore debout : son contexte, ses dimensions, ses bâtisseurs, les hypothèses de construction et sa redécouverte par l’archéologie.',
+      lesson: {
+        sections: [
+          'La Grande Pyramide se dresse sur le plateau de Gizeh, près du Caire actuel. Elle fut édifiée en une vingtaine d’années sous le règne de Khéops (Khufu), roi de la IVe dynastie, dont le règne est daté de 2589 à 2566 av. J.-C. par la World History Encyclopedia. Elle appartient à l’Ancien Empire (vers 2613-2181 av. J.-C.), souvent appelé « âge des pyramides ». Auparavant, le roi Djoser avait fait élever à Saqqara la pyramide à degrés conçue par Imhotep, considérée comme la plus ancienne pyramide du monde. Snéfrou, père de Khéops, poursuivit les expériences avec la pyramide effondrée de Meïdoum, la pyramide rhomboïdale, puis la pyramide rouge, première véritable pyramide d’Égypte.',
+          'Khéops choisit Gizeh, une ancienne nécropole où sa mère Hétephérès Ire avait été inhumée et où aucun grand monument ne faisait concurrence au sien. La pyramide atteignait 146 m de haut pour environ 230 m de côté à la base et comprenait plus de deux millions de blocs de pierre ; Marc Van de Mieroop avance 2 300 000 blocs d’un poids moyen de 2,75 tonnes, certains atteignant 16 tonnes. Ses côtés sont orientés avec précision vers les points cardinaux. À l’origine, un parement de calcaire blanc la rendait visible de très loin ; il est tombé et a servi de matériau de construction pour Le Caire. Selon la World History Encyclopedia, elle fut la structure la plus haute bâtie par l’homme pendant plus de trois millénaires, jusqu’à la flèche de la cathédrale de Lincoln (vers 1300) ou jusqu’à la tour Eiffel (1889), selon les auteurs.',
+          'Le vizir Hémiounou, neveu de Khéops, est crédité de la conception et de la direction du chantier. Les ouvriers, qualifiés ou non, étaient engagés par l’État. Des logements d’ouvriers furent découverts et documentés en 1979 par les égyptologues Lehner et Hawass, et des documents égyptiens attestent des rémunérations, ce qui contredit l’image d’une main-d’œuvre servile. Selon Brier et Hobbs, la crue annuelle du Nil immobilisait les travaux agricoles pendant environ deux mois et libérait des dizaines de milliers de travailleurs, qui transportaient sur des traîneaux les blocs extraits le reste de l’année ; aucun mortier n’était utilisé, seulement un ajustement très précis des pierres.',
+          'La technique exacte de construction reste débattue. L’hypothèse de rampes extérieures soulève des difficultés de physique et de quantité de matériaux, et d’autres propositions ont été avancées : des rampes à l’intérieur de la pyramide (hypothèse de l’architecte Jean-Pierre Houdin) ou l’usage de la force hydraulique rendue possible par la nappe phréatique élevée de Gizeh (hypothèse de l’ingénieur Robert Carson). Ce sont des hypothèses discutées, aucune n’est démontrée de manière définitive. En revanche, les explications recourant à des extraterrestres ou à des civilisations inconnues sont écartées par la World History Encyclopedia, qui rappelle que les Égyptiens disposaient des moyens techniques nécessaires.',
+          'L’interprétation la plus largement admise est que la pyramide fut conçue comme le tombeau du roi. L’absence de momie et de mobilier funéraire trouvés à l’intérieur s’explique par les pillages : les égyptologues reconnaissent depuis le XIXe siècle que le monument a été pillé dans l’Antiquité, probablement au Nouvel Empire d’après la World History Encyclopedia. L’entrée actuelle des visiteurs, le « tunnel des voleurs », fut percée vers 820 sous le calife al-Ma’mun. Les successeurs de Khéops bâtirent leurs propres pyramides à Gizeh : Khéphren (2558-2532 av. J.-C.), sous le règne duquel fut réalisé le Grand Sphinx, puis Mykérinos (2532-2503 av. J.-C.), avec des ensembles plus modestes.',
+          'Gizeh resta fréquenté durant toute l’histoire égyptienne. Ramsès II y fit bâtir un petit temple devant le Sphinx, et son fils Khaemouaset, prince restaurateur de monuments, est parfois considéré comme le « premier égyptologue ». Après l’annexion romaine de l’Égypte en 30 av. J.-C., le site fut largement négligé jusqu’à l’expédition de Bonaparte (1798-1801), qui emmena des savants chargés de documenter l’Égypte ancienne. En 1880, William Matthew Flinders Petrie réalisa les premières fouilles scientifiques modernes de la Grande Pyramide et établit des principes de respect des monuments qui servent encore de référence. Philon de Byzance, lui, insistait déjà sur la masse des blocs et sur l’énorme force qu’il avait fallu pour les déplacer.'
+        ],
+        example: {
+          statement: 'Selon l’estimation de Van de Mieroop, la Grande Pyramide contient 2 300 000 blocs, et Khéops a régné 23 ans. Combien de blocs faudrait-il poser en moyenne chaque année ?',
+          calculation: 'On divise le nombre total de blocs par la durée du règne : 2 300 000 ÷ 23 = 100 000.',
+          answer: 'Environ 100 000 blocs par an. C’est une moyenne théorique qui suppose que tous les blocs aient été extraits, transportés et posés pendant le règne de Khéops, à partir d’estimations.'
+        },
+        exercise: {
+          question: 'Pourquoi l’absence de momie dans la Grande Pyramide n’est-elle pas, à elle seule, une preuve qu’elle n’était pas un tombeau ?',
+          answer: 'Parce que le monument a été pillé dès l’Antiquité, ce qui a pu faire disparaître la momie et le mobilier funéraire.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les dimensions de la Grande Pyramide indiquées par la World History Encyclopedia ?',
+            answer: 'Environ 146 m de hauteur pour environ 230 m de côté à la base.'
+          },
+          {
+            question: 'Qui est le vizir crédité de la conception et de l’organisation du chantier ?',
+            answer: 'Hémiounou, neveu du roi Khéops.'
+          },
+          {
+            question: 'Les bâtisseurs de la Grande Pyramide étaient-ils des esclaves selon la World History Encyclopedia ?',
+            answer: 'Non. Les travailleurs étaient engagés et rémunérés par l’État, et des logements d’ouvriers ont été documentés en 1979.'
+          },
+          {
+            question: 'Qui a réalisé en 1880 les premières fouilles scientifiques modernes de la Grande Pyramide ?',
+            answer: 'William Matthew Flinders Petrie.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Great Pyramid of Giza', url: 'https://www.worldhistory.org/Great_Pyramid_of_Giza/' },
+          { title: 'World History Encyclopedia — The Seven Wonders', url: 'https://www.worldhistory.org/The_Seven_Wonders/' },
+          { title: 'World History Encyclopedia — Philo of Byzantium’s On the Seven Wonders', url: 'https://www.worldhistory.org/article/2257/philo-of-byzantiums-on-the-seven-wonders/' },
+          { title: 'Britannica Kids — Seven Wonders of the World', url: 'https://kids.britannica.com/students/article/Seven-Wonders-of-the-World/276998' }
+        ]
+      }
+    },
+    {
+      id: 'jardins-suspendus-babylone',
+      title: 'Les jardins suspendus de Babylone : une merveille disputée',
+      field: 'Mésopotamie · Empire néo-babylonien, règne de Nabuchodonosor II (605-562 av. J.-C.)',
+      summary: 'Examiner les sources littéraires, le silence de l’archéologie et les hypothèses (Babylone, Ninive, exagération ou invention) qui entourent la seule merveille dont l’existence est contestée.',
+      lesson: {
+        sections: [
+          'Les jardins suspendus de Babylone sont présentés comme les jardins de la capitale de l’Empire néo-babylonien, attribués au roi Nabuchodonosor II (605-562 av. J.-C.). Babylone se trouve à environ 80 km au sud de Bagdad, en Irak actuel. L’empire avait été fondé par Nabopolassar (625-605 av. J.-C.) après ses victoires sur l’Assyrie. Nabuchodonosor II prit Jérusalem en 597 av. J.-C. et embellit sa capitale : porte d’Ishtar vers 575 av. J.-C., double muraille immense, puis, peut-être, de vastes jardins d’agrément. La World History Encyclopedia les décrit comme la seule merveille dont l’existence est contestée par les historiens.',
+          'La première mention antique est celle de Bérose, prêtre babylonien nommé Bel-Usru installé à Cos, qui écrit vers 290 av. J.-C. ; son œuvre n’est conservée que par des citations. Il décrit des terrasses de pierre imitant des montagnes, plantées d’arbres et de fleurs, et explique que le roi les fit établir pour que son épouse mède, Amytis, souffre moins du mal du pays ; aucune reine de ce nom n’apparaît pourtant dans les textes babyloniens. Diodore de Sicile décrit des terrasses en pente comme un théâtre, d’environ 20 m de haut, bâties sur des piliers avec des roseaux et des briques. Strabon situe les jardins près de l’Euphrate et évoque un mécanisme de vis pour élever l’eau, ainsi que des escaliers. Philon les décrit aussi (poutres de palmier, terre épaisse, eau montée en spirale) sans dire où ils se trouvent.',
+          'Ces auteurs écrivent des siècles après Nabuchodonosor et n’ont presque certainement jamais visité Babylone. Hérodote, qui décrit Babylone, son système d’irrigation et ses murailles, ne mentionne pas de jardins ; la World History Encyclopedia relève toutefois qu’il omet bien d’autres éléments et que sa visite de la ville est incertaine. Plus embarrassant, les textes babyloniens conservés, pourtant détaillés sur les chantiers de Nabuchodonosor jusqu’aux noms de rues, ne parlent jamais des jardins, ni de leur construction ni de leur existence, même à l’état de ruines.',
+          'Les fouilles systématiques de Babylone débutent en 1899. Elles ont mis au jour la double muraille, la porte d’Ishtar et d’autres structures, mais aucune trace des jardins. Une découverte jugée prometteuse, celle de quatorze salles voûtées dans le palais sud, s’est révélée être, après lecture de tablettes, un ensemble de magasins. Des fouilles plus proches du fleuve ont livré de grands drains, des murs et ce qui pourrait être un réservoir : des éléments compatibles avec l’irrigation d’un jardin, mais qui ne constituent pas une preuve. Le silence de l’archéologie ne démontre pas pour autant l’inexistence des jardins, mais il explique le débat.',
+          'Plusieurs hypothèses coexistent. Selon la première, les auteurs grecs auraient confondu Babylone avec Ninive, où Sennachérib (705-681 av. J.-C.) aurait fait aménager des jardins : des textes et des vestiges attestent des jardins à Ninive, dont un relief du palais nord d’Assurbanipal conservé au British Museum, et la ville fut parfois appelée « ancienne Babylone ». Des spécialistes comme Stephanie Dalley soutiennent cette localisation, en notant que Philon ne situe pas le jardin à Babylone. Une deuxième hypothèse suppose qu’un jardin a bien existé à Babylone mais que son échelle a été exagérée par des auteurs grecs, comme le palais de Cnossos est devenu un labyrinthe légendaire. Une troisième y voit une pure invention. La question reste ouverte et l’on ne sait ni comment ni quand les jardins auraient disparu.',
+          'Les jardins d’agrément s’inscrivent dans une tradition mésopotamienne plus large. La World History Encyclopedia indique que la plupart des spécialistes situent l’origine du jardin cultivé pour le plaisir, et non pour la production, dans le Croissant fertile, où il était associé à l’idée de paradis. Ces jardins comportaient souvent des terrasses pour faciliter l’irrigation, de hauts murs pour l’ombre, des arbres regroupés pour conserver l’humidité et une proximité immédiate de l’eau ; ils se trouvaient souvent près des palais. On en connaît aussi à Pasargades, fondée par Cyrus le Grand (mort en 530 av. J.-C.). À l’époque hellénistique, des particuliers aisés cultivaient leurs propres jardins, et des fresques comme celles de Pompéi imitaient même l’entrée dans un jardin.'
+        ],
+        example: {
+          statement: 'Sennachérib règne de 705 à 681 av. J.-C. et Nabuchodonosor II de 605 à 562 av. J.-C. Quelle est la durée de chaque règne, et lequel est le plus long ?',
+          calculation: 'Pour des dates avant notre ère, on soustrait la date la plus récente de la plus ancienne. Sennachérib : 705 − 681 = 24. Nabuchodonosor II : 605 − 562 = 43.',
+          answer: 'Sennachérib a régné environ 24 ans et Nabuchodonosor II environ 43 ans : le règne de Nabuchodonosor II est le plus long. Ces durées sont approximatives.'
+        },
+        exercise: {
+          question: 'Pourquoi les historiens hésitent-ils à affirmer que les jardins suspendus ont existé à Babylone ?',
+          answer: 'Parce que l’archéologie n’a livré aucune trace des jardins, que les textes babyloniens n’en parlent pas et que les descriptions antiques sont tardives et écrites par des auteurs qui n’ont probablement pas visité la ville.'
+        },
+        exercises: [
+          {
+            question: 'Quel auteur mentionne le premier les jardins, et vers quelle date ?',
+            answer: 'Bérose (prêtre babylonien Bel-Usru installé à Cos), vers 290 av. J.-C.'
+          },
+          {
+            question: 'Selon Bérose, pourquoi le roi aurait-il fait établir les jardins ?',
+            answer: 'Pour son épouse mède, Amytis, qui regrettait les montagnes et la verdure de son pays. Aucune reine de ce nom n’est toutefois attestée dans les textes babyloniens.'
+          },
+          {
+            question: 'Quelle autre ville mésopotamienne est proposée comme site possible des jardins ?',
+            answer: 'Ninive, où des jardins sont attestés, notamment sous Sennachérib.'
+          },
+          {
+            question: 'Que sont devenues les quatorze salles voûtées découvertes dans le palais sud de Babylone ?',
+            answer: 'Elles se sont révélées être de grands magasins, et non les substructions des jardins, après le déchiffrement de tablettes trouvées sur place.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Hanging Gardens of Babylon', url: 'https://www.worldhistory.org/Hanging_Gardens_of_Babylon/' },
+          { title: 'World History Encyclopedia — The Seven Wonders', url: 'https://www.worldhistory.org/The_Seven_Wonders/' },
+          { title: 'World History Encyclopedia — Philo of Byzantium’s On the Seven Wonders', url: 'https://www.worldhistory.org/article/2257/philo-of-byzantiums-on-the-seven-wonders/' }
+        ]
+      }
+    },
+    {
+      id: 'zeus-olympie-artemis-ephese',
+      title: 'Deux sanctuaires grecs : la statue de Zeus à Olympie et le temple d’Artémis à Éphèse',
+      field: 'Grèce classique et Asie Mineure · VIe-Ve siècles av. J.-C., destructions jusqu’en 401 apr. J.-C.',
+      summary: 'Comparer deux monuments religieux : un chef-d’œuvre de Phidias en or et en ivoire, et un temple ionique colossal détruit par le feu, les invasions puis l’intolérance religieuse.',
+      lesson: {
+        sections: [
+          'Olympie, dans l’ouest du Péloponnèse, dépendait de la cité d’Élis et accueillait tous les quatre ans les Jeux olympiques (776 av. J.-C. – 393 apr. J.-C. selon la World History Encyclopedia). Un grand temple dorique de 6 × 13 colonnes, conçu par Libon d’Élis, y fut élevé vers 460-457 av. J.-C. : le plus grand de Grèce à l’époque, il mesurait 64,12 × 27,68 m. Ses frontons montraient la course de chars de Pélops et d’Œnomaos à l’est, et une centauromachie avec Apollon au centre à l’ouest ; ses métopes représentaient les travaux d’Héraclès. Vers 430 av. J.-C. y fut dédiée la statue de culte confiée à Phidias, qui avait déjà supervisé le Parthénon et sa statue d’Athéna.',
+          'La statue de Zeus, assis sur un trône, dépassait 12 m de haut. Elle était chryséléphantine : peau en ivoire, barbe, vêtements et sceptre en feuilles d’or martelées sur une âme de bois, avec des détails en argent, cuivre, verre, ébène, émail et pierres précieuses. Pausanias la décrit coiffée d’une couronne d’olivier, portant une Victoire d’ivoire et d’or dans la main droite et un sceptre surmonté d’un aigle dans la main gauche, avec des sandales et un manteau d’or ornés d’animaux et de lis. Le trône était décoré de reliefs mythologiques, et la base en marbre noir d’Éleusis (9,93 × 6,25 m) montrait la naissance d’Aphrodite. Un bassin d’huile devant la statue maintenait une atmosphère humide qui limitait la fissuration de l’ivoire. L’atelier de Phidias, retrouvé à Olympie, contenait notamment une coupe portant l’inscription « Je suis à Phidias ».',
+          'La statue fut très admirée, mais pas par tous. Strabon note que, bien que le temple fût immense, Phidias semble avoir manqué les proportions : Zeus, assis, touchait presque le plafond de la tête, au point de donner l’impression qu’en se levant il découvrirait le toit. Philon affirme au contraire qu’on s’agenouille devant cette œuvre alors que l’on s’émerveille seulement devant les six autres. D’après la World History Encyclopedia, elle figure sur la liste des merveilles à partir du IIe siècle av. J.-C., mais son image circulait déjà sur des monnaies (tétradrachmes d’Alexandre le Grand, monnaies d’Élis) et fut encore utilisée sous Hadrien. Le sanctuaire déclina après l’interdiction des cultes païens par Théodose Ier : les derniers Jeux se tinrent en 393 ; le site fut profané vers 426, puis frappé par des séismes en 522 et 551. La statue fut transférée à Constantinople en 395, où elle périt, selon la World History Encyclopedia, dans un séisme ou un tsunami au Ve ou plus probablement au VIe siècle, ou, selon Zonaras, dans un incendie en 475.',
+          'Éphèse, colonie grecque de la côte occidentale de l’Asie Mineure fondée au VIIIe siècle av. J.-C., vénérait Artémis sous la forme d’Artémis d’Éphèse, une déesse aux traits orientaux dont les statues sont couvertes d’œufs, symboles de fécondité. Le roi lydien Crésus (560-546 av. J.-C.) conquit la cité entre 560 et 550 av. J.-C. et finança un grand temple : Hérodote écrit qu’il offrit de nombreuses colonnes, et un tambour de colonne portant une dédicace de Crésus a été retrouvé. La construction du temple de marbre, commencée vers 550 av. J.-C., dura environ 120 ans. L’article de synthèse sur les sept merveilles évoque pourtant un achèvement en 550 av. J.-C. : la chronologie est donc à manier avec prudence. Pline attribue la direction à l’architecte Chersiphron de Cnossos, Strabon à Chersiphron et à son fils Métagénès, et Vitruve ajoute Péonios d’Éphèse.',
+          'Selon Pline, le temple mesurait 129,5 m de long sur 68,6 m de large, avec 127 colonnes d’environ 18,3 m de haut : presque le double du Parthénon (69,5 × 30,9 m). Des reliefs ornaient les colonnes de la façade, et les architraves, estimées à environ 24 tonnes chacune, nourrissaient la croyance que la déesse avait elle-même aidé à les mettre en place. Selon Vitruve, la statue de culte était en bois de cèdre. Pline loue aussi les fondations, établies sur un sol marécageux avec des couches de peaux de mouton et de charbon pour atténuer l’effet des séismes. Les fouilles de 1870 ont révélé des couches de mortier tendre et de charbon, celles du XXe siècle des couches d’éclats de marbre et de charbon, mais aucune trace de peaux de mouton.',
+          'Vers le 21 juillet 356 av. J.-C., jour de la naissance d’Alexandre le Grand selon Plutarque, Érostrate incendia volontairement le temple. Le sanctuaire fut reconstruit au même endroit, un peu plus petit (environ 105 × 55 m, colonnes de 17,65 m) et sur une base surélevée. Strabon rapporte qu’Alexandre, en 334 av. J.-C., offrit de payer les travaux en échange de l’inscription de son nom, offre que les Éphésiens refusèrent. Le temple fut pillé ou détruit par les Goths vers 267 apr. J.-C., puis définitivement abattu en 401 par une foule chrétienne, dans le contexte des interdictions de cultes païens. Découvert en 1869 par John Turtle Wood pour le British Museum, il n’en reste que les fondations et une colonne reconstituée à partir de fragments.'
+        ],
+        example: {
+          statement: 'Selon Pline, le temple d’Artémis mesurait 129,5 m sur 68,6 m ; le Parthénon mesure 69,5 m sur 30,9 m. Environ combien de fois le temple d’Artémis est-il plus long et plus large que le Parthénon ?',
+          calculation: 'Rapport des longueurs : 129,5 ÷ 69,5 ≈ 1,86. Rapport des largeurs : 68,6 ÷ 30,9 ≈ 2,22.',
+          answer: 'Il est environ 1,9 fois plus long et 2,2 fois plus large, ce qui confirme qu’il était presque le double du Parthénon. Ces dimensions proviennent de Pline et restent des estimations.'
+        },
+        exercise: {
+          question: 'Qu’appelle-t-on une statue chryséléphantine, et quel exemple a été étudié dans ce chapitre ?',
+          answer: 'Une statue associant l’or et l’ivoire sur une âme de bois ; l’exemple est le Zeus d’Olympie de Phidias, dont la peau était en ivoire et les vêtements en or.'
+        },
+        exercises: [
+          {
+            question: 'Quel sculpteur réalisa la statue de Zeus à Olympie, et vers quelle date fut-elle dédiée ?',
+            answer: 'Phidias, vers 430 av. J.-C.'
+          },
+          {
+            question: 'Pourquoi un bassin d’huile était-il placé devant la statue de Zeus ?',
+            answer: 'Il maintenait une atmosphère humide qui limitait la fissuration des pièces d’ivoire.'
+          },
+          {
+            question: 'Quel événement frappe le temple d’Artémis à Éphèse vers le 21 juillet 356 av. J.-C. ?',
+            answer: 'Un incendie volontaire allumé par Érostrate, le jour de la naissance d’Alexandre le Grand selon Plutarque.'
+          },
+          {
+            question: 'En quelle année le temple d’Artémis fut-il définitivement détruit, et par qui ?',
+            answer: 'En 401 apr. J.-C., par une foule chrétienne, après avoir déjà été pillé ou détruit par les Goths vers 267.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Statue of Zeus at Olympia', url: 'https://www.worldhistory.org/Statue_of_Zeus_at_Olympia/' },
+          { title: 'World History Encyclopedia — Temple of Artemis at Ephesus', url: 'https://www.worldhistory.org/Temple_of_Artemis_at_Ephesus/' },
+          { title: 'World History Encyclopedia — The Seven Wonders', url: 'https://www.worldhistory.org/The_Seven_Wonders/' },
+          { title: 'World History Encyclopedia — Philo of Byzantium’s On the Seven Wonders', url: 'https://www.worldhistory.org/article/2257/philo-of-byzantiums-on-the-seven-wonders/' }
+        ]
+      }
+    },
+    {
+      id: 'mausolee-colosse-rhodes',
+      title: 'Le Mausolée d’Halicarnasse et le Colosse de Rhodes',
+      field: 'Monde grec et hellénistique · IVe-IIIe siècles av. J.-C.',
+      summary: 'Étudier un tombeau princier qui a donné son nom au mausolée et une statue gigantesque du dieu Helios, deux monuments qui illustrent la puissance et la richesse des cités et dynasties de l’époque.',
+      lesson: {
+        sections: [
+          'Mausole, satrape perse gouvernant la Carie de façon semi-indépendante depuis environ 377 av. J.-C., fit d’Halicarnasse sa capitale vers 370 av. J.-C. La cité, patrie d’Hérodote, fut embellie d’un nouveau port, d’un palais et de plusieurs temples, et la Carie prospéra grâce au commerce en Méditerranée orientale, notamment avec Rhodes. Mausole mourut vers 353 av. J.-C. Son tombeau, prévu pour lui et ses descendants à partir d’environ 367 av. J.-C., fut achevé par sa sœur-épouse Artémise, probablement vers 350 av. J.-C. ; Artémise mourut un an avant l’achèvement et fut inhumée avec lui. Pline rapporte que les artisans poursuivirent le travail après sa mort.',
+          'Selon Vitruve, la construction fut dirigée par l’architecte Pythéos de Priène et le sculpteur Satyros, qui écrivirent ensuite un traité sur l’édifice. Le monument mêlait des éléments grecs, proche-orientaux et égyptiens : un podium rectangulaire en marbre, une colonnade ionique de 36 colonnes et un toit en pyramide à 24 degrés couronné d’un char à quatre chevaux. Pline donne une hauteur totale de 140 pieds, soit environ 45 m ; l’article de synthèse de la World History Encyclopedia retient 41 m. Les fouilles ont montré que le podium mesurait environ 38 × 32 m, ce qui diffère un peu de la description de Pline, mais elles confirment les 36 colonnes et la pyramide à 24 degrés.',
+          'Le décor sculpté fut confié, selon Pline, à plusieurs grands artistes : Léocharès, Timothéos, Bryaxis et Scopas ; Vitruve ajoute Praxitèle. Des fragments appartenant à 66 statues différentes ont été retrouvés (les historiens estiment qu’il y en avait au moins une centaine), de trois échelles différentes et peintes de couleurs vives. Une frise haute d’environ un mètre montrait notamment des Grecs combattant des Amazones et des courses de chars ; des centaures décoraient la base du char, et des lions se tenaient à la base de la pyramide. Des restes de sacrifices (bœufs, moutons, agneaux, oiseaux) suggèrent un culte héroïque rendu à Mausole, considéré comme le refondateur de la cité.',
+          'Le Mausolée donna son nom à tout grand monument funéraire : Pausanias note que les Romains, admiratifs, appelaient « mausolées » leurs tombeaux remarquables. Contrairement à d’autres merveilles, il survécut à peu près intact pendant l’Antiquité malgré quelques séismes, et ne s’effondra probablement qu’au Moyen Âge, peut-être au XIIIe siècle. Vers 1494, les chevaliers de Saint-Jean de Malte réutilisèrent ses pierres dans le château Saint-Pierre de Bodrum. Des fouilles britanniques des années 1850 exhumèrent de nombreuses sculptures, aujourd’hui en grande partie au British Museum. Le site lui-même n’est plus qu’une fosse parsemée de quelques pierres et de tambours de colonnes.',
+          'Rhodes, grande île commerçante de la Méditerranée orientale dotée de cinq ports, vénérait Helios comme dieu protecteur et célébrait en son honneur les Halieia, un concours panhellénique. En 305-304 av. J.-C., Démétrios Poliorcète, fils d’Antigone, assiégea la cité pendant environ un an avant de négocier une trêve, laissant derrière lui un matériel de siège, dont une tour de 36,5 m, que les Rhodiens vendirent. L’argent servit à financer une statue colossale d’Helios, confiée au sculpteur Charès de Lindos. Pline indique un coût de 300 talents et au moins 12 ans de travail pour une statue de bronze de 70 coudées, soit environ 33 m ; Philon donne 500 talents de bronze et 300 d’argent : les sources divergent. La statue reposait vraisemblablement sur des armatures de fer intérieures lestées de pierres.',
+          'On ne sait pas exactement à quoi ressemblait le Colosse : aucune représentation ou maquette antique n’a été conservée. L’image d’une statue jambes écartées au-dessus du port est une tradition médiévale peu plausible selon la World History Encyclopedia, la tradition de la torche reposant sur une mauvaise lecture d’un poème postérieur. Son emplacement exact est inconnu ; le côté est du port de Mandraki est le plus probable. Le Colosse fut renversé par un séisme en 228 ou 226 av. J.-C. : Pline l’indique 56 ans après son érection, et Strabon précise que la statue se brisa aux genoux et resta au sol, les Rhodiens craignant, après un oracle de Delphes, de la relever. Pline s’émerveille que même couchée elle suscite l’admiration, ses doigts dépassant la taille de la plupart des statues. Vers 654 apr. J.-C., selon Théophane, un marchand juif d’Édesse acheta les débris de bronze et les emporta sur 900 chameaux pour les fondre.'
+        ],
+        example: {
+          statement: 'Le Colosse de Rhodes est achevé vers 280 av. J.-C. et s’effondre en 226 av. J.-C. (ou en 228 av. J.-C. selon les sources). Quelle durée d’existence obtient-on, et comment la comparer aux 56 ans indiqués par Pline ?',
+          calculation: 'Pour des dates avant notre ère : 280 − 226 = 54 et 280 − 228 = 52.',
+          answer: 'Entre 52 et 54 ans environ, ce qui est proche des 56 ans de Pline. L’écart vient du caractère approximatif de la date d’achèvement (« vers 280 »).'
+        },
+        exercise: {
+          question: 'Pourquoi le Mausolée d’Halicarnasse a-t-il donné son nom commun à tous les grands tombeaux ?',
+          answer: 'Parce que ce tombeau de Mausole était si vaste et si orné que les Romains, admiratifs, appelèrent « mausolées » les monuments funéraires remarquables de leur pays.'
+        },
+        exercises: [
+          {
+            question: 'Qui acheva le tombeau de Mausole, et vers quelle date fut-il probablement terminé ?',
+            answer: 'Sa sœur-épouse Artémise ; vers 350 av. J.-C.'
+          },
+          {
+            question: 'Que sont devenues les pierres du Mausolée vers 1494 ?',
+            answer: 'Les chevaliers de Saint-Jean de Malte les réutilisèrent dans le château Saint-Pierre de Bodrum.'
+          },
+          {
+            question: 'Comment les Rhodiens financèrent-ils le Colosse selon la World History Encyclopedia ?',
+            answer: 'Ils vendirent le matériel de siège abandonné par Démétrios après l’échec de son siège de 305-304 av. J.-C.'
+          },
+          {
+            question: 'Le Colosse enjambait-il l’entrée du port de Rhodes ?',
+            answer: 'Probablement pas : cette image est une tradition tardive jugée très improbable au regard des dimensions données par les sources antiques.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Mausoleum at Halicarnassus', url: 'https://www.worldhistory.org/Mausoleum_at_Halicarnassus/' },
+          { title: 'World History Encyclopedia — Colossus of Rhodes', url: 'https://www.worldhistory.org/Colossus_of_Rhodes/' },
+          { title: 'World History Encyclopedia — The Seven Wonders', url: 'https://www.worldhistory.org/The_Seven_Wonders/' },
+          { title: 'World History Encyclopedia — Philo of Byzantium’s On the Seven Wonders', url: 'https://www.worldhistory.org/article/2257/philo-of-byzantiums-on-the-seven-wonders/' }
+        ]
+      }
+    },
+    {
+      id: 'phare-alexandrie-bilan',
+      title: 'Le phare d’Alexandrie, la disparition des merveilles et leur héritage',
+      field: 'Égypte ptolémaïque · Vers 300-280 av. J.-C. jusqu’aux années 1330 apr. J.-C.',
+      summary: 'Étudier la dernière merveille ajoutée à la liste, comprendre son rôle dans la navigation et dresser le bilan des causes de disparition des sept monuments.',
+      lesson: {
+        sections: [
+          'Alexandrie fut fondée en 331 av. J.-C. par Alexandre le Grand et prospéra comme port de commerce sous la dynastie ptolémaïque. Vers 300 av. J.-C., Ptolémée Ier Sôter commanda un phare monumental pour guider les navires vers la ville ; son fils Ptolémée II l’acheva environ vingt ans plus tard. L’ouvrage s’élevait sur la pointe de l’îlot calcaire de Pharos, relié à la terre par une chaussée d’environ 1,2 km, l’Heptastade, face aux deux ports d’Alexandrie. Plusieurs sources antiques en font l’œuvre de l’architecte Sostrate de Cnide, qui pourrait aussi en avoir été le financeur. Le phare fut dédié à Zeus Sôter, le « Sauveur ». Pline indique un coût de 800 talents et précise que le roi autorisa l’architecte à inscrire son nom sur l’édifice.',
+          'La conception exacte reste incertaine, les descriptions antiques étant vagues et parfois contradictoires. La plupart s’accordent sur une tour blanche à trois niveaux, rectangulaire à la base, octogonale au milieu et circulaire au sommet, probablement couronnée d’une statue de Zeus Sôter. Les estimations de hauteur vont de 100 à 140 m, ce qui en ferait la deuxième structure la plus haute du monde après les pyramides de Gizeh. Un feu, sans doute à l’huile, brûlait au sommet ; mais les premières mentions ne parlent pas de lumière, et les historiens débattent de la date à laquelle le phare a joué ce rôle. Des sources arabes tardives évoquent un miroir. Les monnaies impériales romaines d’Alexandrie, de Domitien à Commodus (81-192), représentent la tour.',
+          'Le mot grec pharos est devenu le nom commun du phare dans plusieurs langues modernes, et l’on suppose que la tour a pu influencer l’architecture des minarets : le mot arabe al-Manarah désigne à la fois le minaret et le phare. Le monument fut endommagé par des séismes, notamment en 796, en 950 (avec un effondrement partiel en 956), en 1303 et en 1323, mais il fut réparé et agrandi à plusieurs reprises : une mosquée à dôme fut ajoutée à sa partie haute (la World History Encyclopedia indique tantôt vers l’an 1000, tantôt vers 1100) et une reconstruction importante eut lieu vers 1161 sous les Fatimides. Il disparaît des sources après le XIVe siècle, sans doute abattu par un nouveau séisme dans les années 1330. Ses fondations en granit furent réutilisées dans le fort de Qaït Bay, bâti au XVe siècle ; l’archéologie sous-marine a livré des fragments et deux statues monumentales de Ptolémée Ier et de sa reine Bérénice, qui ont pu appartenir à la tour ou à ses abords.',
+          'Quel bilan tirer des sept merveilles ? La Grande Pyramide subsiste. Les jardins de Babylone, si tant est qu’ils aient existé, ont disparu sans cause connue. La statue de Zeus fut transférée à Constantinople en 395 et détruite plus tard. Le temple d’Artémis connut un incendie en 356 av. J.-C., une destruction par les Goths vers 267 et une démolition en 401. Le Mausolée fut éprouvé par des séismes puis démonté en 1494 pour construire un château. Le Colosse tomba lors d’un séisme en 226 av. J.-C. (ou 228) et fut vendu comme métal vers 654. Le phare s’écroula sous l’effet de séismes dans les années 1330. Séismes, incendies, invasions, interdictions religieuses et réemploi des matériaux apparaissent ainsi comme les principales causes de disparition.',
+          'La World History Encyclopedia conclut que la liste des merveilles n’était pas un inventaire exhaustif, mais ressemblait à un dépliant touristique indiquant ce qu’il fallait voir en voyage ; elle rappelle que les auteurs divergeaient sur ce qui méritait le titre de « merveille ». Philon de Byzance lui-même estimait que la description écrite permettait de « voir » ces œuvres par l’esprit sans entreprendre un voyage épuisant. Pour l’historien, les sept merveilles constituent donc moins une liste scientifique qu’un témoignage sur le regard que les Grecs et les mondes hellénistiques portaient sur l’art, la technique et la puissance des royaumes qu’ils connaissaient, de l’Égypte à la Mésopotamie.'
+        ],
+        example: {
+          statement: 'Le phare d’Alexandrie est estimé entre 100 et 140 m de haut, et la Grande Pyramide mesure 146 m. De combien de mètres le phare est-il plus petit que la pyramide dans le meilleur et dans le pire des cas ?',
+          calculation: 'Meilleur cas (140 m) : 146 − 140 = 6. Pire cas (100 m) : 146 − 100 = 46.',
+          answer: 'Le phare serait plus petit de 6 à 46 m. Même avec la plus haute estimation, il reste moins haut que la Grande Pyramide, ce qui est cohérent avec son rang de deuxième structure la plus haute du monde antique.'
+        },
+        exercise: {
+          question: 'Pourquoi le mot « pharos » est-il devenu un nom commun pour désigner les phares ?',
+          answer: 'Parce que le phare d’Alexandrie, construit sur l’île de Pharos et très célèbre, servit de modèle à de nombreuses tours de guidage dans les ports méditerranéens, et son nom a fini par désigner toute tour de ce type.'
+        },
+        exercises: [
+          {
+            question: 'Quel roi commanda le phare d’Alexandrie, et quel roi l’acheva ?',
+            answer: 'Ptolémée Ier Sôter le commanda vers 300 av. J.-C. ; son fils Ptolémée II l’acheva environ vingt ans plus tard.'
+          },
+          {
+            question: 'Quelle forme les sources attribuent-elles aux trois niveaux de la tour ?',
+            answer: 'Un niveau inférieur rectangulaire, un niveau médian octogonal et un niveau supérieur circulaire.'
+          },
+          {
+            question: 'Quel fort a été bâti au XVe siècle avec des matériaux du phare ?',
+            answer: 'Le fort de Qaït Bay, dont les fondations réutilisent notamment les fondations en granit du phare.'
+          },
+          {
+            question: 'Citez trois causes qui ont entraîné la disparition des sept merveilles.',
+            answer: 'Par exemple les séismes, les incendies et les invasions, les interdictions religieuses visant les cultes païens, ou le réemploi des matériaux.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Lighthouse of Alexandria', url: 'https://www.worldhistory.org/Lighthouse_of_Alexandria/' },
+          { title: 'World History Encyclopedia — The Seven Wonders', url: 'https://www.worldhistory.org/The_Seven_Wonders/' },
+          { title: 'World History Encyclopedia — Philo of Byzantium’s On the Seven Wonders', url: 'https://www.worldhistory.org/article/2257/philo-of-byzantiums-on-the-seven-wonders/' }
+        ]
+      }
+    }
+  ]
+},
+
 ]
 
 
