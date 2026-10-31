@@ -2956,6 +2956,281 @@ url: 'https://www.usgs.gov/programs/climate-research-and-development-program/sci
     ]
   },
 
+{
+  id: 'pression-atmospherique',
+  title: 'La pression atmosphérique : du poids de l’air aux anticyclones et aux tempêtes',
+  note: 'Six chapitres sur la définition et les unités, l’histoire et la mesure, la variation avec l’altitude, la réduction au niveau de la mer et les cartes, le lien avec les vents et le temps, puis les phénomènes extrêmes. Les valeurs numériques de l’atmosphère standard sont des références : la pression réelle varie en permanence selon le lieu et la situation météorologique.',
+  chapters: [
+    {
+      id: 'definition-origine-unites',
+      title: 'Définition, origine physique et unités de la pression atmosphérique',
+      field: 'Physique de l’atmosphère · Force par unité de surface et poids de la colonne d’air',
+      summary: 'Comprendre ce qu’est la pression atmosphérique, d’où elle vient, et savoir passer d’une unité à l’autre (Pa, hPa, mbar, mmHg, atm, inHg).',
+      lesson: {
+        sections: [
+          'La pression est une grandeur physique définie comme le quotient de l’intensité des forces appliquées perpendiculairement à une surface par l’aire de cette surface : p = F / S. La pression atmosphérique peut être définie comme l’intensité du poids de la colonne d’air située au-dessus d’une surface horizontale d’aire unité. Au niveau de la mer, sa valeur normale est de 101 325 Pa, ce qui signifie qu’une force d’environ 101 325 newtons s’exerce sur chaque mètre carré.',
+          'À l’échelle microscopique, la pression d’un gaz résulte des collisions des molécules en agitation avec les parois et les objets : la force moyenne de ces chocs, rapportée à la surface, est la pression. Elle s’exerce dans toutes les directions et pas seulement vers le bas. L’atmosphère est retenue autour de la Terre par la gravité ; plus on monte, moins il reste d’air au-dessus de soi, donc plus la pression diminue. La relation « pression = poids de la colonne d’air » est l’approximation hydrostatique, très bonne pour la plupart des usages en météorologie.',
+          'Plusieurs unités coexistent. L’unité du Système international est le pascal (1 Pa = 1 N/m²), très petite par rapport aux pressions atmosphériques ; les météorologues utilisent donc l’hectopascal (1 hPa = 100 Pa), nouvelle dénomination du millibar (1 mbar = 1 hPa ; 1 bar = 100 000 Pa). On rencontre aussi le millimètre de mercure (mmHg), pratiquement égal au torr, le pouce de mercure (inHg) utilisé par le National Weather Service américain, qui retient 29,92 inHg comme pression standard au niveau de la mer, et l’atmosphère (atm), avec 1 atm = 101 325 Pa = 1 013,25 hPa = 760 mmHg.',
+          'Il faut distinguer la pression absolue de la pression relative (ou manométrique). La pression absolue est la somme de la pression manométrique et de la pression atmosphérique : p_abs = p_manométrique + p_atm. Un manomètre de pneu indique par exemple une pression relative, alors que la pression utilisée en météorologie est toujours une pression absolue.',
+          'La valeur de 1 013,25 hPa est une pression de référence (pression normale ou standard au niveau moyen des océans) et non une valeur fixe. La pression réelle varie dans le temps et dans l’espace avec les masses d’air et les systèmes météorologiques ; on considère sur les cartes de surface que les valeurs supérieures à la référence correspondent plutôt à de hautes pressions et les valeurs inférieures à de basses pressions, mais cette comparaison n’est qu’un repère (voir le chapitre 4).'
+        ],
+        example: {
+          statement: 'La pression atmosphérique normale vaut 101 325 Pa. Exprimer cette valeur en hPa, puis estimer la masse d’air dont le poids s’exerce sur 1 m² (g = 9,80665 m/s²).',
+          calculation: 'En hPa : 101 325 Pa ÷ 100 = 1 013,25 hPa. Masse équivalente : m = p × S ÷ g = 101 325 × 1 ÷ 9,80665 ≈ 10 332 kg.',
+          answer: 'La pression normale vaut 1 013,25 hPa. Elle correspond au poids d’une masse d’environ 10,3 tonnes sur chaque mètre carré (approximation hydrostatique).'
+        },
+        exercise: {
+          question: 'Pourquoi dit-on que la pression atmosphérique est liée au poids de l’air situé au-dessus de nous ?',
+          answer: 'Parce que, dans l’approximation hydrostatique, la pression en un point est égale au poids de la colonne d’air située au-dessus d’une surface horizontale d’aire unité en ce point.'
+        },
+        exercises: [
+          {
+            question: 'Combien de pascals valent 1 hPa, et quelle est la relation entre le hPa et le mbar ?',
+            answer: '1 hPa = 100 Pa, et 1 hPa = 1 mbar : l’hectopascal est la nouvelle dénomination du millibar.'
+          },
+          {
+            question: 'Un manomètre de pneu indique 2,2 bar de pression relative. Quelle est la pression absolue, avec une pression atmosphérique d’environ 1,013 bar ?',
+            answer: 'p_abs = 2,2 + 1,013 ≈ 3,2 bar.'
+          },
+          {
+            question: 'Quelle est la pression standard au niveau de la mer en pouces de mercure ?',
+            answer: 'Environ 29,92 inHg, soit 1 013,25 hPa.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopædia Universalis — Pression atmosphérique (unités de mesure)', url: 'https://www.universalis.fr/encyclopedie/pression-atmospherique/1-les-unites-de-mesure-de-la-pression/' },
+          { title: 'NOAA JetStream — Air pressure', url: 'https://www.noaa.gov/jetstream/atmosphere/air-pressure' },
+          { title: 'OpenStax — Chemistry 2e, 9.1 Gas Pressure', url: 'https://openstax.org/books/chemistry-2e/pages/9-1-gas-pressure' },
+          { title: 'OpenStax — University Physics Volume 1, 14.2 Measuring Pressure', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-2-measuring-pressure' }
+        ]
+      }
+    },
+    {
+      id: 'histoire-mesure-barometres',
+      title: 'De Torricelli à la station météo : histoire et mesure de la pression',
+      field: 'Histoire des sciences · Baromètre à mercure, baromètre anéroïde et capteurs modernes',
+      summary: 'Retracer la découverte de la pression atmosphérique (Torricelli 1643, Pascal et Périer 1648) et comprendre le fonctionnement des baromètres.',
+      lesson: {
+        sections: [
+          'Pendant longtemps, on a attribué la montée de l’eau dans une pompe à l’« horreur du vide ». Pourtant, même avec les meilleures pompes, on ne parvenait pas à élever l’eau à plus de dix mètres environ. En 1643, Evangelista Torricelli (1608-1647) réalise l’expérience qui porte son nom : un tube de verre fermé à une extrémité, rempli de mercure puis retourné dans une cuve de mercure. La colonne descend jusqu’à une hauteur d’environ 76 cm au niveau de la mer et laisse un espace vide au-dessus d’elle : le mercure est soutenu par la pression de l’atmosphère.',
+          'Si c’est le poids de l’air qui soutient la colonne, la hauteur doit diminuer lorsqu’on s’élève, alors que l’« horreur du vide » n’aurait aucune raison de varier avec l’altitude. Blaise Pascal fait tester cette idée : le 19 septembre 1648, son beau-frère Florin Périer réalise l’expérience de Torricelli à Clermont puis au sommet du Puy de Dôme, et constate que le mercure y est nettement moins haut. Cette « grande expérience » établit que la pression atmosphérique diminue avec l’altitude.',
+          'Le baromètre à mercure repose sur l’équilibre hydrostatique p = ρ g h, où ρ est la masse volumique du mercure, g la pesanteur et h la hauteur de la colonne. Le mercure est utilisé parce que sa forte masse volumique (environ 13 595 kg/m³ à 0 °C) donne une colonne de moins d’un mètre, alors qu’avec de l’eau il faudrait environ 10,3 m. La hauteur dépendant de la masse volumique du mercure, donc de la température, et de la pesanteur locale, des corrections sont nécessaires pour des mesures précises ; c’est aussi pourquoi les unités mmHg et torr sont définies par rapport à des conditions de référence.',
+          'Le baromètre anéroïde, sans liquide, mesure la déformation d’une capsule métallique dont l’intérieur est quasi vide ; la pression extérieure comprime plus ou moins la capsule et un mécanisme amplifie ce mouvement. Son invention est attribuée à Lucien Vidie, qui obtient un brevet en 1844. Branché sur un tambour, il donne le barographe, qui enregistre la pression en continu. Les stations automatiques modernes utilisent des capteurs électroniques, mais le principe reste le même : comparer la pression de l’air à une référence.',
+          'Le baromètre est aussi un altimètre, puisque la pression moyenne varie avec l’altitude (voir le chapitre 3). C’est pour cela que les altimètres d’avion sont des baromètres anéroïdes gradués en altitude. Enfin, une hausse de la pression signale en général une amélioration du temps et une baisse, une dégradation, mais ce n’est qu’une tendance moyenne et non une règle absolue.'
+        ],
+        example: {
+          statement: 'Le 19 septembre 1648, Périer observe que la hauteur du mercure est plus faible de 3 pouces 1 ligne et demie au sommet du Puy de Dôme qu’à Clermont. Avec 1 pouce = 2,71 cm et 1 ligne = 0,23 cm, quelle est la baisse en cm de mercure puis en hPa (1 mmHg ≈ 1,333 hPa) ?',
+          calculation: '3 pouces = 3 × 2,71 = 8,13 cm ; 1,5 ligne = 1,5 × 0,23 = 0,345 cm ; total = 8,475 cm = 84,75 mm de mercure. En hPa : 84,75 × 1,333 ≈ 113 hPa.',
+          answer: 'La colonne est plus basse d’environ 8,5 cm de mercure, soit une baisse de pression d’environ 113 hPa pour un dénivelé de l’ordre du kilomètre : cet ordre de grandeur est cohérent avec la diminution d’environ 12 hPa pour 100 m près du sol (chapitre 3).'
+        },
+        exercise: {
+          question: 'Pourquoi la colonne de mercure est-elle moins haute au sommet d’une montagne qu’au pied ?',
+          answer: 'Parce qu’il y a moins d’air au-dessus du sommet : la pression atmosphérique y est plus faible et soutient donc une colonne de mercure moins haute.'
+        },
+        exercises: [
+          {
+            question: 'Quelle hauteur de mercure correspond à la pression atmosphérique normale ?',
+            answer: '760 mm de mercure (environ 76 cm).'
+          },
+          {
+            question: 'Quelle hauteur d’eau équilibrerait la pression normale (101 325 Pa, ρ = 1 000 kg/m³, g = 9,80665 m/s²) ?',
+            answer: 'h = p ÷ (ρ g) = 101 325 ÷ (1 000 × 9,80665) ≈ 10,3 m, ce qui explique la limite d’une dizaine de mètres des pompes aspirantes.'
+          },
+          {
+            question: 'Qui a réalisé l’expérience du Puy de Dôme et à quelle date ?',
+            answer: 'Florin Périer, beau-frère de Blaise Pascal, le 19 septembre 1648.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 1, 14.2 Measuring Pressure', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-2-measuring-pressure' },
+          { title: 'Académie de Nancy-Metz — Les phénomènes et les hommes : la pression (livret professeur)', url: 'https://sites.ac-nancy-metz.fr/physique/SiteAcademiqueOld/ancien_site/Traam/LYC1/livret_prof_TRAAM_pression_air.pdf' },
+          { title: 'Whipple Museum (Cambridge) — Barometers', url: 'https://www.whipplemuseum.cam.ac.uk/explore-whipple-collections/meteorology/barometers' },
+          { title: 'Association des anciens de la Météorologie — Chronologie (Vidie, baromètre anéroïde, 1844)', url: 'https://anciensmeteos.info/wp-content/uploads/aec-pdf/aec_n138/aec_n138_ar6.pdf' },
+          { title: 'Hérodote — 19 septembre 1648 : Pascal et le Puy de Dôme', url: 'https://www.herodote.net/almanach-ID-2202.php' }
+        ]
+      }
+    },
+    {
+      id: 'variation-altitude-atmosphere-standard',
+      title: 'Variation de la pression avec l’altitude et atmosphère standard',
+      field: 'Physique de l’atmosphère · Équilibre hydrostatique et atmosphère standard internationale (ISA)',
+      summary: 'Comprendre pourquoi la pression décroît avec l’altitude de façon non linéaire et utiliser l’atmosphère standard pour estimer pression et altitude.',
+      lesson: {
+        sections: [
+          'Pour une atmosphère au repos, la variation verticale de la pression suit l’équilibre hydrostatique : dp/dz = −ρ g. Chaque couche d’air supporte le poids de celles qui sont au-dessus. Comme l’air est compressible, sa masse volumique ρ diminue avec l’altitude, donc la pression ne décroît pas linéairement : elle décroît de façon à peu près exponentielle, vite près du sol et de plus en plus lentement en altitude.',
+          'Près du sol, avec ρ ≈ 1,225 kg/m³, on obtient ρ g ≈ 12 Pa par mètre, soit environ 1,2 hPa pour 10 m ou encore une baisse de 1 hPa tous les 8 m environ. Vers 5 500 m, la masse volumique est nettement plus faible et il faut monter d’une quinzaine de mètres pour perdre 1 hPa. Cette règle des « 12 hPa pour 100 m » n’est donc valable que sur quelques centaines de mètres d’écart.',
+          'Pour pouvoir comparer des instruments et des données, on utilise une atmosphère standard (ISA, International Standard Atmosphere) : pression de 1 013,25 hPa et température de 15 °C au niveau moyen de la mer, température décroissant de 6,5 °C par kilomètre dans la troposphère jusqu’à 11 km. La pression y suit p = p₀ (1 − L h / T₀)^n avec L = 0,0065 K/m, T₀ = 288,15 K et n ≈ 5,256. On obtient environ 701 hPa à 3 000 m, 540 hPa à 5 000 m et 226 hPa à 11 000 m.',
+          'La température modifie ce profil : un air froid est plus dense, la pression y décroît plus vite avec l’altitude ; un air chaud est moins dense et la pression y décroît plus lentement. Dans une atmosphère isotherme, la pression diminue d’un facteur e (≈ 2,7) tous les H = R T / (M g), la hauteur d’échelle, qui vaut environ 8,4 km à 288 K. Ainsi, sur une même surface de pression, l’altitude est plus élevée dans l’air chaud que dans l’air froid.',
+          'En météorologie, on repère souvent l’atmosphère par des niveaux de pression plutôt que par des altitudes (on parle par exemple de la température à 700 hPa). Dans l’atmosphère standard, les niveaux de 850, 700, 500, 300 et 250 hPa se situent respectivement vers 1 460 m, 3 010 m, 5 570 m, 9 160 m et 10 360 m. Le niveau de 500 hPa, cité dans les ressources de la NOAA, est proche de la moitié de la pression au sol, ce qui signifie qu’environ la moitié de la masse de l’atmosphère se trouve sous 5,5 km.'
+        ],
+        example: {
+          statement: 'Estimer la pression à 3 000 m d’altitude dans l’atmosphère standard avec la formule p = 1 013,25 × (1 − 0,0065 × h / 288,15)^5,256, puis comparer avec l’approximation linéaire de 0,12 hPa par mètre.',
+          calculation: 'Formule : 1 − 0,0065 × 3 000 / 288,15 ≈ 0,9323 ; 0,9323^5,256 ≈ 0,692 ; p ≈ 1 013,25 × 0,692 ≈ 701 hPa. Approximation linéaire : 1 013,25 − 0,12 × 3 000 ≈ 653 hPa.',
+          answer: 'La pression standard à 3 000 m est d’environ 701 hPa. L’approximation linéaire donne 653 hPa, soit une erreur d’environ 48 hPa : elle surestime la baisse parce que la masse volumique de l’air diminue avec l’altitude.'
+        },
+        exercise: {
+          question: 'Pourquoi la pression ne diminue-t-elle pas de façon linéaire avec l’altitude ?',
+          answer: 'Parce que l’air est compressible : sa masse volumique diminue avec l’altitude, donc le gradient vertical de pression (−ρ g) diminue aussi.'
+        },
+        exercises: [
+          {
+            question: 'Environ de combien de mètres faut-il monter près du niveau de la mer pour que la pression baisse de 1 hPa ?',
+            answer: 'D’environ 8 m (ρ g ≈ 12 Pa/m).'
+          },
+          {
+            question: 'Dans l’atmosphère standard, vers quelle altitude trouve-t-on environ 500 hPa ?',
+            answer: 'Vers 5 500 m (environ 5 570 m d’après la formule ISA).'
+          },
+          {
+            question: 'La pression décroît-elle plus vite avec l’altitude dans un air froid ou dans un air chaud ?',
+            answer: 'Dans un air froid, plus dense : la pression y diminue plus rapidement avec l’altitude.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 1, 14.2 Measuring Pressure', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-2-measuring-pressure' },
+          { title: 'NOAA JetStream — Air pressure', url: 'https://www.noaa.gov/jetstream/atmosphere/air-pressure' },
+          { title: 'MétéoSuisse — Que signifie « haute pression » ? (variation de la pression avec l’altitude)', url: 'https://www.meteoschweiz.admin.ch/ueber-uns/meteoschweiz-blog/de/2023/02/was-heisst-hoher-luftdruck.html' },
+          { title: 'Wikipédia (EN) — Atmospheric pressure (atmosphère standard ISA)', url: 'https://en.wikipedia.org/wiki/Atmospheric_pressure' }
+        ]
+      }
+    },
+    {
+      id: 'pression-station-niveau-mer-cartes',
+      title: 'Pression à la station, pression réduite au niveau de la mer et cartes de pression',
+      field: 'Observation météorologique · Réduction au niveau de la mer, isobares, hautes et basses pressions',
+      summary: 'Comprendre pourquoi on réduit la pression au niveau de la mer pour comparer les stations, lire une carte d’isobares et situer les records de pression.',
+      lesson: {
+        sections: [
+          'Deux stations situées à des altitudes différentes mesurent des pressions très différentes uniquement à cause de l’altitude. Pour comparer les mesures et tracer des cartes, on ramène la pression au niveau moyen de la mer. On parle de pression à la station pour la valeur mesurée et de pression réduite au niveau de la mer (PMER ou MSLP) pour la valeur corrigée. La pression atmosphérique moyenne y est estimée à 1 013,25 hPa.',
+          'Cette réduction repose sur le calcul de la pression qu’il y aurait au niveau de la mer sous la station, en tenant compte de la température de l’air. Le code QFF désigne la pression réduite au niveau de la mer par ce procédé. En aviation, le code QFE correspond à la pression à l’altitude de l’aérodrome, et le QNH est le calage altimétrique qui fait indiquer à l’altimètre l’altitude de l’aérodrome lorsque l’avion est au sol. La réduction est d’autant plus incertaine que la station est haute, car il faut estimer la température d’une colonne d’air fictive sous le sol.',
+          'Sur les cartes de surface, les isobares sont les lignes joignant les points d’égale pression, tracées à intervalles réguliers. Elles dessinent des « bosses » (zones de hautes pressions) et des « creux » (zones de basses pressions), notés par exemple H et L sur les cartes américaines. Un anticyclone est une région de l’atmosphère où la pression est plus élevée que dans les régions avoisinantes situées à la même altitude ; une dépression (ou cyclone) est son contraire. Ce sont donc des notions relatives : on ne définit pas un anticyclone par un seuil de pression absolu.',
+          'Plus les isobares sont rapprochées, plus la pression varie rapidement dans l’espace : c’est le gradient horizontal de pression, dont dépend la force du vent (chapitre 5). Les échelles mises en jeu sont celles des systèmes météorologiques : un anticyclone ou une dépression des latitudes moyennes s’étend typiquement sur plusieurs centaines à plusieurs milliers de kilomètres.',
+          'Les extrêmes de pression au niveau de la mer connus des observations officielles sont instructifs. L’Organisation météorologique mondiale (OMM) retient pour la plus haute pression réduite au niveau de la mer à moins de 750 m d’altitude 1 083,8 hPa à Agata (Russie) le 31 décembre 1968, dans une masse d’air très froide et dense. La plus basse pression au niveau de la mer, hors tornades, est de 870 hPa, mesurée le 12 octobre 1979 dans l’œil du typhon Tip. Les valeurs obtenues pour des stations élevées de l’intérieur des continents sont, elles, entachées d’une grande incertitude à cause de la réduction au niveau de la mer.'
+        ],
+        example: {
+          statement: 'Une station située à 500 m d’altitude mesure 955 hPa. Estimer la pression réduite au niveau de la mer avec la formule de l’atmosphère standard, p₀ = p ÷ (1 − 0,0065 × h / 288,15)^5,256.',
+          calculation: '1 − 0,0065 × 500 / 288,15 ≈ 0,98872 ; 0,98872^5,256 ≈ 0,9421 ; p₀ ≈ 955 ÷ 0,9421 ≈ 1 013,7 hPa.',
+          answer: 'Environ 1 014 hPa, très proche de la pression normale. Il s’agit d’une approximation pédagogique : la réduction opérationnelle utilise la température réelle de l’air et non celle de l’atmosphère standard.'
+        },
+        exercise: {
+          question: 'Pourquoi ne peut-on pas comparer directement la pression mesurée dans une ville de montagne et celle d’une ville côtière ?',
+          answer: 'Parce que la pression dépend fortement de l’altitude : la station de montagne a une pression plus basse même sans dépression météorologique. Il faut ramener les mesures au même niveau, le niveau de la mer.'
+        },
+        exercises: [
+          {
+            question: 'Un anticyclone se définit-il par un seuil absolu de pression, par exemple 1 030 hPa ?',
+            answer: 'Non. C’est une zone où la pression est plus élevée que dans les régions voisines à la même altitude ; la notion est relative.'
+          },
+          {
+            question: 'Quelle est la plus basse pression au niveau de la mer connue hors tornades, et où a-t-elle été mesurée ?',
+            answer: '870 hPa, dans l’œil du typhon Tip, le 12 octobre 1979.'
+          },
+          {
+            question: 'Que représente une isobare sur une carte ?',
+            answer: 'Une ligne reliant les points où la pression (réduite au niveau de la mer) est la même.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopædia Universalis — Anticyclones', url: 'https://www.universalis.fr/encyclopedie/anticyclones/' },
+          { title: 'Encyclopædia Universalis — Dépression, météorologie', url: 'https://www.universalis.fr/encyclopedie/depression-meteorologie/' },
+          { title: 'OMM — Records mondiaux de phénomènes météorologiques et climatiques (tableau)', url: 'https://public.wmo.int/sites/default/files/2024-07/Table_Extreme_Records_2July2024.pdf' },
+          { title: 'SMHI — Extrema de pression atmosphérique (incertitude de la réduction au niveau de la mer)', url: 'https://www.smhi.se/kunskapsbanken/meteorologi/lufttryck/extrema-lufttryck' },
+          { title: 'NOAA — Surface Air Pressure Map (JetStream)', url: 'https://www.noaa.gov/sites/default/files/2022-11/sfc_slp_map.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'pression-vents-anticyclones-depressions',
+      title: 'Pression, vents, anticyclones et dépressions',
+      field: 'Dynamique de l’atmosphère · Gradient de pression, force de Coriolis et vent géostrophique',
+      summary: 'Relier les différences de pression au vent, comprendre la circulation autour des anticyclones et des dépressions et utiliser la loi de Buys Ballot.',
+      lesson: {
+        sections: [
+          'Une différence de pression entre deux régions voisines exerce sur l’air une force qui tend à le déplacer des hautes pressions vers les basses pressions : c’est la force du gradient de pression, à l’origine du vent. Plus les isobares sont serrées, plus le gradient est grand et plus le vent est fort. Par exemple, une différence de 12 hPa sur 100 km représente 0,12 hPa par kilomètre.',
+          'Sur une Terre en rotation, l’air en mouvement est dévié par la force de Coriolis, vers la droite de son mouvement dans l’hémisphère Nord et vers la gauche dans l’hémisphère Sud. Loin du sol, cette déviation équilibre la force du gradient de pression : le vent, dit géostrophique, souffle alors à peu près parallèlement aux isobares plutôt que directement des hautes vers les basses pressions. Près du sol, le frottement affaiblit le vent et lui fait croiser les isobares vers les basses pressions.',
+          'De cette dynamique découle la loi de Buys Ballot : dans l’hémisphère Nord, un observateur qui tourne le dos au vent a les basses pressions à sa gauche (et les hautes pressions à sa droite) ; dans l’hémisphère Sud, c’est l’inverse. Cette loi, établie à partir de l’équilibre géostrophique, est une règle approchée qui ne s’applique bien que loin des perturbations locales et du relief.',
+          'Dans un anticyclone, l’air descend lentement (subsidence) puis s’écarte près du sol ; cette descente empêche en général la formation de nuages épais, d’où un temps plutôt stable et dégagé. Dans une dépression, l’air converge près du sol et s’élève : en montant il se refroidit, ce qui favorise la formation de nuages et de précipitations, avec un temps plus perturbé. En surface, dans l’hémisphère Nord, le vent tourne autour d’un anticyclone dans le sens des aiguilles d’une montre et autour d’une dépression dans le sens inverse ; l’hémisphère Sud présente les sens contraires.',
+          'Ces correspondances sont des tendances, pas des certitudes : un anticyclone peut s’accompagner de nuages bas ou de brouillard, notamment en hiver, et une dépression peu creuse peut donner un temps modéré. Les météorologues s’intéressent donc moins à la valeur absolue de la pression qu’à son évolution : une chute rapide annonce généralement l’approche d’une perturbation, une hausse, plutôt une amélioration.'
+        ],
+        example: {
+          statement: 'Dans l’hémisphère Nord, un observateur ressent un vent d’ouest (le vent vient de l’ouest). Où se trouvent les basses pressions par rapport à lui, d’après la loi de Buys Ballot ?',
+          calculation: 'Un vent d’ouest souffle vers l’est : l’observateur qui lui tourne le dos regarde donc vers l’est. Sa gauche correspond alors au nord.',
+          answer: 'Les basses pressions sont au nord et les hautes pressions au sud de l’observateur (loi approchée, valable loin du sol et des effets locaux).'
+        },
+        exercise: {
+          question: 'Pourquoi le vent est-il plus fort lorsque les isobares sont rapprochées ?',
+          answer: 'Parce que des isobares serrées signifient un gradient de pression horizontal important, donc une force plus grande sur l’air.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel sens l’air tourne-t-il en surface autour d’une dépression dans l’hémisphère Nord ?',
+            answer: 'Dans le sens inverse des aiguilles d’une montre (le sens est inversé dans l’hémisphère Sud).'
+          },
+          {
+            question: 'Quel mouvement vertical de l’air caractérise en général un anticyclone, et quelle conséquence sur la nébulosité ?',
+            answer: 'Un mouvement descendant (subsidence), qui limite la formation de nuages épais : temps en général stable.'
+          },
+          {
+            question: 'Une forte baisse de pression en quelques heures annonce-t-elle forcément du beau temps ?',
+            answer: 'Non : une baisse rapide annonce en général l’approche d’une perturbation et une dégradation.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopædia Universalis — Anticyclones', url: 'https://www.universalis.fr/encyclopedie/anticyclones/' },
+          { title: 'Encyclopædia Universalis — Dépression, météorologie', url: 'https://www.universalis.fr/encyclopedie/depression-meteorologie/' },
+          { title: 'Météo-France / SHOM — Fiche Vent (mai 2024)', url: 'https://www.refmar.shom.fr/sites/default/files/fiches_data/Fiche_Vent_mai_2024.pdf' },
+          { title: 'NOAA NESDIS — Atmospheric pressure (ressource pédagogique)', url: 'https://www.nesdis.noaa.gov/node/18151' },
+          { title: 'NOAA JetStream — Air pressure', url: 'https://www.noaa.gov/jetstream/atmosphere/air-pressure' }
+        ]
+      }
+    },
+    {
+      id: 'pression-extremes-applications',
+      title: 'Pression et phénomènes extrêmes : cyclones, bombes météorologiques, aviation et altitude',
+      field: 'Météorologie appliquée · Intensité des tempêtes, altimétrie et pression partielle d’oxygène',
+      summary: 'Utiliser la pression comme indicateur d’intensité des cyclones, connaître le critère de la cyclogenèse explosive et saisir l’effet de la pression sur l’altimétrie et la physiologie.',
+      lesson: {
+        sections: [
+          'La pression au centre d’un système dépressionnaire est un indicateur classique de son intensité : plus la dépression est « creuse », c’est-à-dire plus sa pression centrale est basse, plus le gradient de pression autour d’elle est en général fort et plus les vents associés sont violents. Les plus basses pressions au niveau de la mer, hors tornades, se rencontrent dans les cyclones tropicaux : 870 hPa ont été mesurés le 12 octobre 1979 dans l’œil du typhon Tip, au moyen d’une sonde larguée depuis un avion de reconnaissance. Cette valeur est inférieure d’environ 143 hPa (soit 14 %) à la pression normale.',
+          'Aux latitudes moyennes, une dépression peut se creuser très vite. Sanders et Gyakum (1980) ont défini, en s’appuyant sur des travaux de Tor Bergeron, la cyclogenèse explosive (ou « bombe météorologique ») : une baisse de la pression centrale d’au moins 24 × sin φ / sin 60° hPa en 24 heures, où φ est la latitude. Cela donne 24 hPa en 24 h à 60° de latitude et environ 17,8 hPa à 40°. Ce critère tient compte de la latitude, car un même creusement est plus intense à basse latitude.',
+          'En aviation, l’altimètre est un baromètre anéroïde gradué en altitude d’après l’atmosphère standard. Si la pression réelle diffère de celle de l’atmosphère standard, l’indication est faussée ; d’où le calage de l’altimètre sur la pression du jour (QNH) pour que l’instrument indique l’altitude de l’aérodrome à l’atterrissage. Voler d’une zone de haute pression vers une zone de basse pression sans recaler l’altimètre conduit à surestimer son altitude réelle : l’appareil est plus bas que ce qu’indique l’instrument.',
+          'Du point de vue physiologique, la composition de l’air (environ 21 % de dioxygène en proportion) varie très peu avec l’altitude, mais la pression partielle d’oxygène, égale à cette proportion multipliée par la pression totale, diminue avec elle. Elle vaut environ 213 hPa au niveau de la mer, mais seulement environ 113 hPa à 5 000 m dans l’atmosphère standard, soit environ 53 % de la valeur au niveau de la mer. C’est cette réduction, et non un manque de « proportion » d’oxygène, qui rend la respiration plus difficile en altitude, et c’est pourquoi les cabines d’avion de ligne sont pressurisées.',
+          'Enfin, la pression intervient dans d’autres phénomènes familiers : la température d’ébullition de l’eau dépend de la pression, environ 100 °C à la pression normale, et elle diminue lorsque la pression diminue, ce qui allonge les temps de cuisson en altitude. Comme pour la météo, la valeur de la pression seule ne suffit pas à tout expliquer : il faut l’associer à la température, à l’humidité et au vent pour comprendre et prévoir le temps.'
+        ],
+        example: {
+          statement: 'Une dépression se creuse à 40° de latitude Nord. Calculer la baisse minimale de pression en 24 h pour parler de cyclogenèse explosive, avec 24 × sin φ / sin 60°.',
+          calculation: 'sin 40° ≈ 0,6428 ; sin 60° ≈ 0,8660 ; 24 × 0,6428 ÷ 0,8660 ≈ 17,8 hPa.',
+          answer: 'Une baisse de pression d’environ 17,8 hPa ou plus en 24 heures à 40° de latitude correspond au critère de la cyclogenèse explosive (« 1 bergeron »).'
+        },
+        exercise: {
+          question: 'De combien de hPa la pression centrale du typhon Tip (870 hPa) est-elle inférieure à la pression normale de 1 013,25 hPa ?',
+          answer: '1 013,25 − 870 = 143,25 hPa, soit environ 14 % de moins que la pression normale.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la baisse de pression minimale en 24 h, à 60° de latitude, pour qu’une dépression soit une « bombe » ?',
+            answer: '24 hPa en 24 heures (sin 60° / sin 60° = 1).'
+          },
+          {
+            question: 'Pourquoi respire-t-on plus difficilement à 5 000 m alors que l’air contient toujours environ 21 % de dioxygène ?',
+            answer: 'Parce que la pression totale y est environ moitié moindre : la pression partielle d’oxygène (21 % de la pression totale) y est donc aussi environ moitié moindre.'
+          },
+          {
+            question: 'À quoi sert le calage altimétrique QNH en aviation ?',
+            answer: 'À régler l’altimètre sur la pression du jour afin qu’il indique l’altitude de l’aérodrome lorsque l’avion est au sol.'
+          }
+        ],
+        sources: [
+          { title: 'OMM — Records mondiaux de phénomènes météorologiques et climatiques (typhon Tip, 870 hPa)', url: 'https://public.wmo.int/sites/default/files/2024-07/Table_Extreme_Records_2July2024.pdf' },
+          { title: 'SMHI — Extrema de pression atmosphérique', url: 'https://www.smhi.se/kunskapsbanken/meteorologi/lufttryck/extrema-lufttryck' },
+          { title: 'Encyclopædia Britannica — Bomb cyclone', url: 'https://www.britannica.com/science/bomb-cyclone' },
+          { title: 'Wikipédia (EN) — Explosive cyclogenesis (définition de Sanders et Gyakum, 1980)', url: 'https://en.wikipedia.org/wiki/Explosive_cyclogenesis' },
+          { title: 'OpenStax — University Physics Volume 1, 14.2 Measuring Pressure (baromètre et altimètre)', url: 'https://openstax.org/books/university-physics-volume-1/pages/14-2-measuring-pressure' }
+        ]
+      }
+    }
+  ]
+},
 
 ]
 
