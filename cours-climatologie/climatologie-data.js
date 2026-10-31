@@ -3232,5 +3232,777 @@ url: 'https://www.usgs.gov/programs/climate-research-and-development-program/sci
   ]
 },
 
+{
+  id: 'satellites-météorologiques',
+  title: 'Les satellites météorologiques : observer l’atmosphère depuis l’espace',
+  note: 'Six chapitres approfondis consacrés à l’histoire de la météorologie spatiale, aux orbites, aux instruments, aux mesures atmosphériques, au traitement des données, à leur assimilation dans les modèles de prévision et à leurs applications climatiques. Les valeurs orbitales et les performances instrumentales sont des ordres de grandeur ou des spécifications propres aux missions citées ; elles ne doivent pas être généralisées à tous les satellites.',
+  chapters: [
+    {
+      id: 'histoire-orbites-satellites-meteorologiques',
+      title: 'Histoire et architectures orbitales des satellites météorologiques',
+      field: 'Météorologie spatiale · Histoire des observations et mécanique orbitale',
+      summary: 'Retracer le passage des premières images de nuages aux constellations modernes, puis comprendre pourquoi les orbites géostationnaires et polaires sont complémentaires.',
+      lesson: {
+        sections: [
+          'Avant l’ère spatiale, les météorologues dépendaient principalement des stations au sol, des navires, des avions, des radiosondages et des observations visuelles. Ces réseaux étaient indispensables, mais leur répartition était très inégale : les océans, les régions désertiques et certaines zones isolées étaient peu observés. Le lancement de TIROS-1, le 1er avril 1960, marque une étape fondatrice : ce satellite expérimental transmet des images de la couverture nuageuse depuis l’espace et démontre qu’une observation globale de l’atmosphère est possible. Il ne fournit pas à lui seul une prévision complète ; il apporte une nouvelle famille d’observations qui doit être interprétée et combinée aux autres mesures.',
+          'Les satellites météorologiques se répartissent principalement en deux grandes architectures orbitales. Un satellite géostationnaire décrit une orbite circulaire dans le plan équatorial, dans le même sens que la rotation terrestre, avec une période égale au jour sidéral. À une altitude voisine de 35 786 km au-dessus de l’équateur, il paraît immobile par rapport à un point de la surface. Il peut ainsi observer très fréquemment la même région et suivre l’évolution des nuages, des systèmes convectifs et des cyclones. Cette continuité temporelle est particulièrement utile pour la surveillance et la prévision immédiate des phénomènes à évolution rapide.',
+          'Un satellite défilant en orbite basse, souvent proche d’une orbite polaire et fréquemment héliosynchrone pour les missions météorologiques, passe au-dessus de régions différentes au fil de ses révolutions. À une altitude typique de plusieurs centaines de kilomètres, il observe la Terre avec une géométrie plus rapprochée et peut fournir des informations détaillées à l’échelle globale au fil de ses passages. Il ne voit cependant pas toute la planète simultanément et ne repasse pas continuellement au-dessus d’un même lieu. La couverture et la fréquence de revisite dépendent de l’altitude, de l’inclinaison, de la largeur de fauchée, de la constellation et de la latitude.',
+          'Les deux architectures ne sont donc pas concurrentes. Les géostationnaires privilégient la répétition rapide des observations sur une grande région, tandis que les satellites polaires apportent une couverture globale et des mesures souvent essentielles aux profils verticaux de température et d’humidité. Les systèmes opérationnels associent plusieurs satellites et plusieurs agences : NOAA pour les programmes GOES et JPSS, EUMETSAT pour Meteosat et Metop, ainsi que d’autres opérateurs nationaux et internationaux. La continuité des observations exige une coopération durable, des satellites de remplacement, des stations de réception et des procédures communes de contrôle des données.'
+        ],
+        example: {
+          statement: 'Un satellite géostationnaire se trouve à environ 35 786 km d’altitude au-dessus de l’équateur. Pourquoi peut-il observer presque continuellement la même région ?',
+          calculation: 'Sa période orbitale est égale à la période de rotation sidérale de la Terre, soit environ 23 h 56 min. Sa vitesse angulaire apparente par rapport au sol est donc presque nulle.',
+          answer: 'Il reste au-dessus de la même longitude parce que sa période et son sens de révolution correspondent à la rotation de la Terre. Cette propriété exige une orbite circulaire équatoriale ; une simple orbite ayant une période de 24 h ne suffit pas si son plan est incliné ou si son excentricité est importante.'
+        },
+        exercise: {
+          question: 'Pourquoi les météorologues utilisent-ils à la fois des satellites géostationnaires et des satellites polaires ?',
+          answer: 'Les géostationnaires suivent fréquemment une même région, tandis que les satellites polaires fournissent une couverture globale et des observations complémentaires, notamment sur les régions de haute latitude.'
+        },
+        exercises: [
+          {
+            question: 'Quel satellite est lancé le 1er avril 1960 et constitue une étape fondatrice de la météorologie spatiale ?',
+            answer: 'TIROS-1, satellite expérimental qui démontre l’intérêt des images de couverture nuageuse obtenues depuis l’espace.'
+          },
+          {
+            question: 'Quelle est l’altitude approximative de l’orbite géostationnaire au-dessus de l’équateur ?',
+            answer: 'Environ 35 786 km.'
+          },
+          {
+            question: 'Un satellite géostationnaire fournit-il une couverture détaillée et uniforme des régions polaires ?',
+            answer: 'Non. La courbure terrestre limite fortement sa visibilité aux hautes latitudes ; les satellites défilants complètent donc cette observation.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA — Weather Satellites', url: 'https://www.noaa.gov/jetstream/weather-satellites' },
+          { title: 'EUMETSAT — Launches and orbits', url: 'https://www.eumetsat.int/satellite-operations/launches-and-orbits' },
+          { title: 'Météo-France — Les satellites d’observation de la Terre', url: 'https://meteofrance.com/meteo-a-z/les-satellites-dobservation-de-la-terre' },
+          { title: 'NOAA — Polar-orbiting and Geostationary Satellites', url: 'https://www.noaa.gov/heritage/resource-collections/polar-orbiting-and-geostationary-satellites-revolutionizing-earth-observations' }
+        ]
+      }
+    },
+    {
+      id: 'instruments-satellites-meteorologiques',
+      title: 'Les instruments : imageurs, sondeurs et capteurs spécialisés',
+      field: 'Télédétection atmosphérique · Instrumentation optique, infrarouge et micro-ondes',
+      summary: 'Étudier les capteurs qui recueillent le rayonnement électromagnétique et comprendre les différences entre image, sondage vertical et détection spécialisée.',
+      lesson: {
+        sections: [
+          'Un satellite météorologique ne photographie pas simplement la Terre comme un appareil photo ordinaire. Ses instruments mesurent le rayonnement électromagnétique reçu dans des bandes spectrales choisies. Un imageur multispectral observe plusieurs longueurs d’onde dans le visible, le proche infrarouge et l’infrarouge thermique. La comparaison de ces canaux aide à distinguer les nuages, à estimer certaines propriétés de leurs sommets, à repérer la vapeur d’eau et à caractériser la surface. Les canaux visibles dépendent de l’éclairement solaire et ne donnent donc pas la même information la nuit ; les canaux infrarouges thermiques permettent des observations nocturnes, sous réserve des propriétés radiatives et de la transparence de l’atmosphère.',
+          'Les sondeurs infrarouges et micro-ondes ont une fonction différente : ils exploitent des mesures spectrales ou des canaux sensibles à l’émission et à l’absorption de l’atmosphère afin de reconstruire des profils verticaux de température et d’humidité. Les sondeurs hyperspectraux disposent d’un grand nombre de canaux spectraux rapprochés, ce qui apporte une information détaillée sur la structure verticale, mais leur interprétation nécessite des modèles de transfert radiatif et des méthodes d’inversion. Les micro-ondes peuvent apporter des observations dans certaines situations où les nuages non précipitants limitent les mesures infrarouges ; elles ne traversent toutefois pas sans perturbation tous les nuages ou toutes les précipitations.',
+          'Des instruments spécialisés complètent les imageurs et sondeurs. Le Geostationary Lightning Mapper (GLM) des satellites GOES-R détecte les variations lumineuses associées aux éclairs dans le proche infrarouge. Le Lightning Imager (LI) du programme Meteosat de troisième génération observe l’activité électrique sur une vaste région. D’autres instruments mesurent les rayonnements solaires, les particules énergétiques ou les champs magnétiques ; ils relèvent en partie de la météorologie de l’espace et ne doivent pas être confondus avec les capteurs qui observent directement les nuages et l’atmosphère terrestre.',
+          'Les performances d’un instrument sont décrites par plusieurs paramètres qui ne sont pas interchangeables : résolution spatiale, résolution temporelle, résolution spectrale, sensibilité radiométrique, bruit, stabilité et largeur de couverture. Par exemple, le Flexible Combined Imager (FCI) de Meteosat Third Generation possède 16 canaux spectraux et est conçu pour acquérir l’image du disque terrestre complet en 10 minutes, avec un balayage rapide de l’Europe pouvant atteindre 2,5 minutes selon le mode prévu. Ces valeurs décrivent le système FCI et ses modes opérationnels ; elles ne constituent pas une règle générale pour tous les satellites.'
+        ],
+        example: {
+          statement: 'L’imageur ABI des satellites GOES-R comporte 16 bandes spectrales. Pourquoi ne produit-il pas 16 photographies identiques ?',
+          calculation: 'Chaque bande est sensible à une plage de longueurs d’onde différente. Les bandes visibles, proche infrarouge et infrarouge thermique ne répondent donc pas aux mêmes propriétés physiques de la scène observée.',
+          answer: 'Les bandes fournissent des informations complémentaires. Leur combinaison permet de distinguer des phénomènes qui seraient difficiles à séparer avec une seule bande, par exemple certains types de nuages, la vapeur d’eau ou des caractéristiques de surface.'
+        },
+        exercise: {
+          question: 'Quelle est la différence fondamentale entre un imageur multispectral et un sondeur atmosphérique ?',
+          answer: 'L’imageur cartographie la distribution spatiale de signaux dans plusieurs bandes spectrales ; le sondeur exploite des mesures spectrales pour estimer notamment la structure verticale de la température et de l’humidité.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi un canal visible est-il moins adapté à l’observation nocturne ?',
+            answer: 'Il mesure principalement le rayonnement solaire réfléchi, qui est absent ou très faible pendant la nuit.'
+          },
+          {
+            question: 'Quel est le rôle du GLM à bord des satellites GOES-R ?',
+            answer: 'Détecter et localiser les émissions lumineuses associées à l’activité électrique des orages, de jour comme de nuit.'
+          },
+          {
+            question: 'Que signifie la résolution temporelle d’un instrument imageur ?',
+            answer: 'Elle caractérise l’intervalle de temps entre deux observations successives d’une même zone ou d’un secteur donné, selon le mode de balayage.'
+          }
+        ],
+        sources: [
+          { title: 'EUMETSAT — Meteosat Third Generation Instruments', url: 'https://www.eumetsat.int/meteosat-third-generation-instruments' },
+          { title: 'NOAA NCEI — GOES-R Terrestrial Weather (ABI/GLM)', url: 'https://www.ncei.noaa.gov/products/goes-terrestrial-weather-abi-glm' },
+          { title: 'NOAA STAR — GOES-R Algorithm Working Group: Introduction', url: 'https://www.star.nesdis.noaa.gov/goesr/intro.php' },
+          { title: 'EUMETSAT — Satellites and instruments', url: 'https://www.eumetsat.int/satellites-instruments' },
+          { title: 'WMO OSCAR — Instrument FCI', url: 'https://space.oscar.wmo.int/instruments/view/fci' }
+        ]
+      }
+    },
+    {
+      id: 'mesures-variables-atmospheriques-satellites',
+      title: 'Les mesures météorologiques : nuages, température, humidité et vents',
+      field: 'Physique de l’atmosphère · Télédétection et variables géophysiques',
+      summary: 'Distinguer les radiances mesurées par les capteurs des paramètres météorologiques estimés par traitement, puis examiner les principales variables observées.',
+      lesson: {
+        sections: [
+          'La mesure satellitaire commence généralement par l’enregistrement d’une radiance : une quantité de rayonnement reçue par le capteur dans une direction, une bande spectrale et une zone données. La radiance dépend de la température, de l’émissivité de la surface, de l’absorption et de l’émission des gaz atmosphériques, ainsi que de la diffusion par les molécules, les aérosols et les hydrométéores. Le satellite ne mesure donc pas directement et universellement la température de l’air à chaque altitude, la pression au sol ou l’humidité relative. Ces variables sont souvent obtenues par inversion, combinaison de canaux, algorithmes physiques et informations auxiliaires.',
+          'Pour les nuages, les imageurs permettent de détecter leur présence et d’estimer plusieurs propriétés : température et hauteur du sommet, phase probable des particules, épaisseur optique ou taille effective des particules, selon l’instrument et la méthode. Une température de sommet nuageux mesurée dans l’infrarouge ne donne pas automatiquement la hauteur : il faut la relier à un profil thermique atmosphérique. Les nuages optiquement épais masquent souvent les couches situées en dessous ; les cirrus fins et les nuages multicouches constituent des situations plus difficiles. Les produits nuageux sont donc accompagnés de critères de qualité et d’incertitudes.',
+          'La température et l’humidité de l’atmosphère sont estimées à partir de canaux infrarouges et micro-ondes sensibles à différentes couches. Les sondeurs fournissent des informations verticales, mais la résolution verticale effective dépend des fonctions de pondération spectrales, du bruit, de la couverture nuageuse et de la méthode d’inversion. La vapeur d’eau peut aussi être suivie à partir de canaux infrarouges spécifiques. Les images dites de vapeur d’eau représentent une réponse radiative intégrée sur des couches atmosphériques, et non une photographie directe de molécules individuelles.',
+          'Les vents peuvent être estimés par suivi du déplacement de structures nuageuses ou de motifs de vapeur d’eau entre des images successives. Ces vents dérivés par satellite sont appelés vents par suivi de nuages ou de vapeur d’eau. Leur altitude doit être estimée, car la vitesse et la direction du vent varient avec la hauteur. Les satellites à micro-ondes peuvent aussi contribuer à l’estimation du vent de surface au-dessus des océans dans des conditions adaptées. Les précipitations sont évaluées à l’aide de capteurs micro-ondes, de radars spatiaux ou d’algorithmes combinant plusieurs observations ; une image infrarouge froide au sommet d’un nuage ne constitue pas, à elle seule, une mesure directe du débit de pluie au sol.'
+        ],
+        example: {
+          statement: 'Deux images infrarouges successives montrent le déplacement d’un système nuageux de 30 km vers l’est en 10 minutes. Quelle vitesse apparente moyenne cela représente-t-il ?',
+          calculation: 'Durée = 10 min = 600 s. Vitesse apparente = distance / durée = 30 000 m / 600 s = 50 m/s.',
+          answer: 'Le déplacement correspond à une vitesse apparente moyenne de 50 m/s vers l’est. Cette valeur ne peut être assimilée à un vent atmosphérique qu’après vérification de l’altitude du motif suivi et de sa représentativité du mouvement de l’air.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer la radiance mesurée par un satellite de la température ou de l’humidité présentée sur une carte météorologique ?',
+          answer: 'La radiance est le signal physique enregistré par le capteur. La température et l’humidité sont généralement des variables géophysiques estimées à partir de ce signal au moyen de modèles physiques et d’algorithmes.'
+        },
+        exercises: [
+          {
+            question: 'Une image infrarouge donne-t-elle directement la hauteur exacte du sommet d’un nuage ?',
+            answer: 'Non. Elle renseigne notamment sur sa température radiative ; l’estimation de hauteur nécessite des informations supplémentaires, par exemple un profil de température atmosphérique.'
+          },
+          {
+            question: 'Comment obtient-on des vents dérivés par satellite à partir d’images successives ?',
+            answer: 'En suivant le déplacement de structures nuageuses ou de motifs de vapeur d’eau, puis en estimant leur altitude pour interpréter le déplacement comme un vent.'
+          },
+          {
+            question: 'Pourquoi les précipitations ne peuvent-elles pas être déduites de façon certaine d’une seule image visible ?',
+            answer: 'La réflectance visible renseigne sur l’apparence et certaines propriétés des nuages, mais ne mesure pas directement la quantité de pluie qui atteint le sol.'
+          }
+        ],
+        sources: [
+          { title: 'Météo-France — Les satellites d’observation de la Terre', url: 'https://meteofrance.com/meteo-a-z/les-satellites-dobservation-de-la-terre' },
+          { title: 'EUMETSAT — Satellites and instruments', url: 'https://www.eumetsat.int/satellites-instruments' },
+          { title: 'NOAA NESDIS — GOES-R Series Data Products', url: 'https://www.nesdis.noaa.gov/our-satellites/currently-flying/goes-east-west/goes-r-series-data-products' },
+          { title: 'WMO OSCAR — Instrument FCI', url: 'https://space.oscar.wmo.int/instruments/view/fci' }
+        ]
+      }
+    },
+    {
+      id: 'traitement-calibration-donnees-satellitaires',
+      title: 'Traitement, calibration et validation des données satellitaires',
+      field: 'Métrologie spatiale · Radiométrie, géolocalisation et contrôle qualité',
+      summary: 'Suivre la chaîne qui transforme les signaux bruts en produits météorologiques exploitables, depuis la calibration jusqu’à la validation indépendante.',
+      lesson: {
+        sections: [
+          'Les données transmises par un satellite ne sont pas immédiatement équivalentes à une carte météorologique prête à l’emploi. Le capteur produit d’abord des signaux numériques associés à des mesures radiométriques. Le traitement de niveau 1 comprend notamment la conversion des comptes numériques en radiances ou températures de brillance, la géolocalisation des pixels, l’application de corrections instrumentales et l’ajout de métadonnées. Les niveaux de traitement supérieurs combinent ces mesures avec des algorithmes pour produire des variables géophysiques telles que les propriétés des nuages, la vapeur d’eau intégrée ou les vents dérivés.',
+          'La calibration radiométrique établit la relation entre le signal électrique du détecteur et une grandeur physique de rayonnement. Elle repose sur des références internes ou externes, des observations de cibles connues et le suivi de la stabilité instrumentale. La calibration doit être suivie pendant toute la mission, car les détecteurs, l’optique et l’environnement spatial peuvent évoluer. La calibration spectrale caractérise la réponse réelle du capteur en fonction de la longueur d’onde. Une erreur de calibration peut introduire un biais systématique dans les produits, affecter les comparaisons entre satellites et dégrader les séries climatiques de longue durée.',
+          'La validation évalue la qualité des produits en les comparant à des observations indépendantes ou de référence : radiosondages, stations au sol, mesures aéroportées, instruments de terrain ou autres satellites qualifiés. La comparaison doit tenir compte des différences de résolution spatiale, de temps d’observation, de domaine de mesure et de représentativité. Une station ponctuelle au sol ne représente pas nécessairement la moyenne d’un pixel satellitaire étendu. Les équipes examinent les biais, la dispersion, les cas d’échec et les incertitudes, puis documentent les limites d’utilisation du produit.',
+          'La chaîne opérationnelle comprend aussi la réception, le contrôle de l’intégrité, le stockage, la diffusion et la conservation à long terme. Les données sont accompagnées de métadonnées qui décrivent l’instrument, l’heure, la géométrie, les unités, les traitements et les indicateurs de qualité. Les archives sont fondamentales pour la recherche climatique, mais les changements de capteurs et de méthodes doivent être documentés afin de préserver l’homogénéité des séries. Une donnée disponible rapidement n’est pas nécessairement une donnée définitive : certains produits passent par des statuts préliminaires, provisoires puis validés.'
+        ],
+        example: {
+          statement: 'Un produit satellitaire estime une température de brillance de 250,0 K. Une comparaison de validation avec une référence donne 251,2 K. Quel est le biais défini comme satellite moins référence ?',
+          calculation: 'Biais = 250,0 K - 251,2 K = -1,2 K.',
+          answer: 'Le biais est de -1,2 K selon la convention satellite moins référence. Le produit satellitaire est inférieur à la référence de 1,2 K pour cet échantillon. Cette comparaison isolée ne suffit pas à caractériser la performance globale de l’instrument.'
+        },
+        exercise: {
+          question: 'Pourquoi la calibration et la validation sont-elles toutes deux nécessaires avant d’utiliser un produit satellitaire en météorologie ?',
+          answer: 'La calibration relie le signal instrumental à une grandeur physique fiable ; la validation vérifie que les produits obtenus représentent correctement les variables recherchées en les comparant à des observations indépendantes.'
+        },
+        exercises: [
+          {
+            question: 'Que représente une température de brillance ?',
+            answer: 'La température qu’aurait un corps noir pour émettre la radiance mesurée dans une bande et une géométrie données ; elle n’est pas automatiquement égale à la température réelle de l’air ou de la surface.'
+          },
+          {
+            question: 'Citer deux types d’observations pouvant servir à valider un produit satellitaire atmosphérique.',
+            answer: 'Les radiosondages et les mesures de stations au sol peuvent servir de références, avec les précautions nécessaires sur la représentativité spatiale et temporelle.'
+          },
+          {
+            question: 'Pourquoi les métadonnées sont-elles importantes pour une donnée satellitaire ?',
+            answer: 'Elles précisent notamment l’instrument, l’heure, la géolocalisation, les unités, la méthode de traitement et les indicateurs de qualité nécessaires à une interprétation correcte.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA STAR — Satellite Calibration and Data Assimilation Branch', url: 'https://www.star.nesdis.noaa.gov/star/spb_index.php' },
+          { title: 'NOAA NCEI — GOES-R Terrestrial Weather (ABI/GLM)', url: 'https://www.ncei.noaa.gov/products/goes-terrestrial-weather-abi-glm' },
+          { title: 'EUMETSAT — Satellites and instruments', url: 'https://www.eumetsat.int/satellites-instruments' },
+          { title: 'WMO OSCAR — Observing Systems Capability Analysis and Review Tool', url: 'https://space.oscar.wmo.int/' }
+        ]
+      }
+    },
+    {
+      id: 'assimilation-prevision-numerique-satellites',
+      title: 'Assimilation des observations satellitaires et prévision numérique du temps',
+      field: 'Prévision numérique du temps · Assimilation variationnelle et modèles atmosphériques',
+      summary: 'Comprendre comment les radiances et produits satellitaires contribuent à décrire l’état initial de l’atmosphère utilisé par les modèles numériques.',
+      lesson: {
+        sections: [
+          'Un modèle numérique de prévision du temps calcule l’évolution de l’atmosphère à partir d’un état initial et des lois physiques qui gouvernent les mouvements, l’énergie et l’eau. Cet état initial ne peut pas être observé partout et à toutes les altitudes par des instruments conventionnels. Les satellites apportent une couverture étendue, particulièrement au-dessus des océans et des régions éloignées. Ils complètent les stations de surface, les radars, les radiosondages, les bouées, les avions et les navires. La quantité de données n’est cependant pas suffisante en elle-même : leur qualité, leur répartition, leur indépendance et leur sensibilité aux variables du modèle comptent également.',
+          'L’assimilation des données est le processus qui combine les observations disponibles avec une prévision à courte échéance appelée ébauche ou état de fond. Le système tient compte des incertitudes associées à l’ébauche et aux observations pour construire une analyse cohérente de l’état atmosphérique. Cette analyse sert ensuite à initialiser une nouvelle prévision. Les méthodes opérationnelles comprennent notamment des approches variationnelles comme 3D-Var et 4D-Var, ainsi que des méthodes ensemblistes et hybrides. Elles diffèrent par la manière de représenter les erreurs et d’utiliser l’information distribuée dans l’espace et dans le temps.',
+          'De nombreux systèmes assimilent directement les radiances satellitaires plutôt que de n’utiliser que des profils de température ou d’humidité déjà calculés. Cette approche permet de comparer les mesures aux radiances simulées par un modèle de transfert radiatif à partir de l’état atmosphérique proposé par le modèle de prévision. Avant assimilation, des contrôles qualité, des corrections et des traitements sont nécessaires, notamment pour gérer les nuages, les surfaces complexes, les biais instrumentaux et les erreurs de représentation. Les données qui ne satisfont pas les critères retenus peuvent être écartées ou traitées différemment.',
+          'L’impact d’une observation dépend de sa sensibilité, de sa précision, de son emplacement, de son heure et des autres données disponibles. Les satellites géostationnaires fournissent des observations répétées utiles au suivi des phénomènes rapides et à certaines analyses régionales. Les satellites polaires apportent une couverture globale et de nombreuses mesures utilisées dans les modèles mondiaux. Les observations satellitaires ne déterminent pas seules une prévision : elles sont intégrées à un système complet associant physique atmosphérique, calcul numérique, observations in situ et estimation des incertitudes. Les prévisionnistes utilisent ensuite les sorties des modèles en tenant compte de leurs limites.'
+        ],
+        example: {
+          statement: 'Une analyse météorologique combine une ébauche de température de 270 K et une observation indépendante de 272 K. Pour illustrer le principe, on suppose que l’analyse accorde un poids de 25 % à l’ébauche et de 75 % à l’observation. Quelle valeur pondérée obtient-on ?',
+          calculation: 'Analyse simplifiée = 0,25 × 270 K + 0,75 × 272 K = 67,5 K + 204 K = 271,5 K.',
+          answer: 'La valeur illustrative est de 271,5 K. Ce calcul explique une pondération élémentaire ; un système opérationnel d’assimilation utilise des structures d’erreur, des corrélations spatiales et temporelles et des contraintes physiques beaucoup plus complexes.'
+        },
+        exercise: {
+          question: 'Quel est l’objectif de l’assimilation des données dans un modèle de prévision numérique du temps ?',
+          answer: 'Construire une estimation cohérente du meilleur état initial possible en combinant les observations et une prévision à courte échéance, tout en tenant compte de leurs incertitudes.'
+        },
+        exercises: [
+          {
+            question: 'Qu’appelle-t-on l’ébauche dans un système d’assimilation ?',
+            answer: 'Une estimation de l’état de l’atmosphère fournie généralement par une prévision antérieure à courte échéance et utilisée comme point de départ de l’analyse.'
+          },
+          {
+            question: 'Pourquoi certains systèmes assimilent-ils directement les radiances ?',
+            answer: 'Parce qu’elles constituent les mesures instrumentales de base et peuvent être comparées aux radiances simulées par un modèle de transfert radiatif, sans dépendre uniquement de produits géophysiques intermédiaires.'
+          },
+          {
+            question: 'Les observations satellitaires remplacent-elles les radiosondages et les stations au sol ?',
+            answer: 'Non. Les différents systèmes d’observation sont complémentaires et apportent des informations de nature, de résolution et de précision différentes.'
+          }
+        ],
+        sources: [
+          { title: 'ECMWF — Observations', url: 'https://www.ecmwf.int/en/research/data-assimilation/observations' },
+          { title: 'ECMWF — Data assimilation', url: 'https://www.ecmwf.int/en/research/data-assimilation' },
+          { title: 'Copernicus Atmosphere Monitoring Service — Satellite observations', url: 'https://atmosphere.copernicus.eu/satellite-observations' },
+          { title: 'NOAA — Numerical Weather Prediction and Critical Weather Applications', url: 'https://www.nesdis.noaa.gov/numerical-weather-prediction-critical-weather-applications-initiative' },
+          { title: 'Météo-France — Les systèmes d’observation de Météo-France', url: 'https://meteofrance.com/meteo-a-z/les-systemes-dobservation-de-meteo-france' }
+        ]
+      }
+    },
+    {
+      id: 'applications-climat-limites-avenir-satellites',
+      title: 'Surveillance du climat, gestion des risques et limites des observations spatiales',
+      field: 'Climatologie satellitaire · Prévision immédiate, risques naturels et continuité des séries',
+      summary: 'Explorer les usages des satellites pour la surveillance climatique et les phénomènes dangereux, puis examiner les incertitudes, les biais et les évolutions technologiques.',
+      lesson: {
+        sections: [
+          'Les satellites météorologiques servent à surveiller les systèmes nuageux, les cyclones, les épisodes convectifs, les masses d’air, les brouillards, les aérosols et certaines caractéristiques des surfaces continentales et océaniques. Les observations répétées des satellites géostationnaires aident à suivre l’évolution temporelle des orages et des cyclones. Les capteurs spécialisés de détection de la foudre apportent une information supplémentaire sur l’activité électrique des orages. Ces observations contribuent à la vigilance et à la prévision immédiate, mais elles ne constituent pas à elles seules un système d’alerte : les radars, les mesures au sol, les modèles et l’expertise des services météorologiques restent indispensables.',
+          'En climatologie, les satellites permettent d’étudier des variables à grande échelle et leur évolution sur plusieurs décennies : température de surface, couverture nuageuse, vapeur d’eau, glace de mer, aérosols, rayonnement et certains constituants atmosphériques. Une série climatique exige toutefois une stabilité radiométrique et une cohérence entre les générations de satellites. Les changements d’orbite, d’instrument, de calibration, d’heure locale de passage et d’algorithme peuvent créer des ruptures artificielles. Les chercheurs utilisent des procédures de retraitement, de comparaison entre missions et de validation pour distinguer autant que possible les changements réels du climat des changements liés aux instruments.',
+          'Les limites physiques et géométriques doivent être prises en compte. Un satellite géostationnaire observe la Terre sous un angle très oblique près du bord du disque, ce qui dégrade la résolution et complique l’interprétation. Les nuages épais masquent souvent les couches atmosphériques inférieures dans l’infrarouge. Les surfaces enneigées, glacées, désertiques ou très hétérogènes peuvent rendre certaines inversions plus difficiles. Les capteurs micro-ondes ont leurs propres limites, notamment liées à l’émissivité de surface et aux précipitations. Enfin, une mesure satellitaire représente une zone, une bande spectrale et un instant ou une période d’acquisition : elle n’est pas toujours directement comparable à une mesure ponctuelle au sol.',
+          'Les évolutions récentes portent sur l’amélioration de la résolution spatiale, spectrale et temporelle, le développement des sondeurs hyperspectraux, des imageurs de foudre, des observations micro-ondes et des constellations de satellites. Les missions de nouvelle génération cherchent à mieux caractériser la structure tridimensionnelle de l’atmosphère et à fournir des données plus fréquentes ou plus précises. L’intelligence artificielle peut aider à détecter des motifs, à classer les nuages ou à accélérer certains traitements, mais elle ne dispense ni de la validation physique, ni de la traçabilité, ni de l’évaluation des incertitudes. La fiabilité future reposera autant sur la qualité des instruments et des méthodes que sur la continuité des observations et le partage international des données.'
+        ],
+        example: {
+          statement: 'Une archive climatique contient deux séries satellitaires successives. La première présente une moyenne de 280,0 K et la seconde de 280,8 K. Peut-on conclure directement à un réchauffement de 0,8 K ?',
+          calculation: 'Différence brute = 280,8 K - 280,0 K = 0,8 K.',
+          answer: 'La différence numérique est de 0,8 K, mais elle ne démontre pas à elle seule un réchauffement réel. Il faut vérifier l’homogénéité des instruments, la calibration, les heures d’observation, les algorithmes, les zones comparées et les incertitudes avant d’interpréter cette différence comme un signal climatique.'
+        },
+        exercise: {
+          question: 'Pourquoi une série de mesures satellitaires de plusieurs décennies doit-elle être homogénéisée avant une analyse climatique ?',
+          answer: 'Parce que les changements de satellites, de capteurs, d’orbites, de calibration et d’algorithmes peuvent produire des variations artificielles qui doivent être distinguées des changements réels du système climatique.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi la résolution d’un satellite géostationnaire se dégrade-t-elle vers le bord de son disque terrestre ?',
+            answer: 'La ligne de visée devient très oblique et traverse une géométrie plus défavorable ; la zone observée par un pixel est alors plus étendue et déformée.'
+          },
+          {
+            question: 'Les satellites permettent-ils d’observer directement toutes les couches de l’atmosphère sous un nuage épais en infrarouge ?',
+            answer: 'Non. Un nuage épais peut être opaque dans la bande considérée et masquer les couches situées en dessous.'
+          },
+          {
+            question: 'Citer deux précautions nécessaires avant d’interpréter une différence entre deux séries satellitaires comme un changement climatique.',
+            answer: 'Vérifier la calibration et l’homogénéité des instruments, puis examiner les différences d’orbite, d’heure d’observation, d’algorithme et les incertitudes.'
+          }
+        ],
+        sources: [
+          { title: 'Météo-France — Les satellites d’observation de la Terre', url: 'https://meteofrance.com/meteo-a-z/les-satellites-dobservation-de-la-terre' },
+          { title: 'EUMETSAT — Operating satellites', url: 'https://www.eumetsat.int/what-we-do/operating-satellites' },
+          { title: 'NOAA NESDIS — GOES-R Series Data Products', url: 'https://www.nesdis.noaa.gov/our-satellites/currently-flying/goes-east-west/goes-r-series-data-products' },
+          { title: 'ECMWF — Observations', url: 'https://www.ecmwf.int/en/research/data-assimilation/observations' },
+          { title: 'Wiley — Satellites for Atmospheric Sciences 1', url: 'https://onlinelibrary.wiley.com/doi/book/10.1002/9781394264759' },
+          { title: 'Institut Pierre-Simon-Laplace — Satellites for Atmospheric Sciences 1 & 2', url: 'https://www.ipsl.fr/decouvrir/ipsl-theque/livres-et-ouvrages/principes-de-teledetection-applications-a-lobservation-de-la-terre-et-son-climat-vol2/' }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  id: 'climat-polaire',
+  title: 'Le climat polaire : fonctionnement de l’Arctique et de l’Antarctique',
+  note: 'Six chapitres approfondis consacrés aux caractéristiques géographiques et climatiques des régions polaires, au rayonnement solaire, aux saisons, à la dynamique atmosphérique, aux précipitations, à la cryosphère, aux océans polaires et aux changements climatiques. Une distinction systématique est établie entre l’Arctique, océan entouré de continents, et l’Antarctique, continent entouré par l’océan Austral. Les évolutions climatiques sont présentées en tenant compte des observations, des mécanismes physiques et des incertitudes scientifiques.',
+  chapters: [
+    {
+      id: 'geographie-caracteristiques-climat-polaire',
+      title: 'Géographie et caractéristiques fondamentales du climat polaire',
+      field: 'Climatologie physique · Géographie polaire et classification climatique',
+      summary: 'Comprendre la répartition géographique des régions polaires, leurs différences fondamentales et les mécanismes qui expliquent leurs températures particulièrement basses.',
+      lesson: {
+        sections: [
+          'Le climat polaire désigne les conditions climatiques des hautes latitudes, caractérisées par un apport annuel d’énergie solaire relativement faible, des températures basses et une forte saisonnalité de l’éclairement. Les régions polaires comprennent l’Arctique dans l’hémisphère Nord et l’Antarctique dans l’hémisphère Sud. Leur délimitation peut dépendre du critère employé : cercle polaire, régime thermique, présence de glace ou classification climatique. Il faut donc distinguer une définition géographique d’une définition climatologique. Les cercles polaires se situent approximativement à 66,5° de latitude nord et sud, mais les limites climatiques ne suivent pas nécessairement ces parallèles.',
+          'L’Arctique est principalement un océan entouré par les continents de l’Amérique du Nord, de l’Europe et de l’Asie. Il comprend l’océan Arctique, les archipels septentrionaux, le Groenland et les régions continentales voisines. Cette configuration permet des échanges thermiques importants avec les continents et les océans environnants. L’influence de l’Atlantique Nord apporte notamment de la chaleur et de l’humidité vers certaines régions arctiques. Les températures varient donc sensiblement entre les secteurs maritimes, les zones continentales et les régions intérieures du Groenland.',
+          'L’Antarctique est un continent recouvert par une immense calotte glaciaire et entouré par l’océan Austral. Son altitude moyenne élevée, son éloignement des sources océaniques de chaleur et son environnement glaciaire contribuent à son caractère extrêmement froid. L’Antarctique oriental possède un vaste plateau intérieur très élevé, tandis que la péninsule Antarctique présente des conditions maritimes plus modérées. Les régions côtières connaissent également des conditions différentes de celles du centre du continent. Il est donc incorrect de considérer l’ensemble de l’Antarctique comme présentant une température uniforme.',
+          'Dans la classification climatique de Köppen, les climats polaires comprennent notamment le climat de toundra (ET) et le climat de glace permanente (EF). Le climat de toundra correspond à un mois le plus chaud dont la température moyenne reste inférieure à 10 °C, mais atteint ou dépasse 0 °C. Dans le climat de glace permanente, la température moyenne de tous les mois reste inférieure à 0 °C. Cette classification repose sur les températures moyennes mensuelles et ne décrit pas à elle seule les mécanismes atmosphériques, océaniques ou glaciaires. Certaines régions de haute latitude présentent également des climats subpolaires qui ne répondent pas à ces critères.'
+        ],
+        example: {
+          statement: 'Deux régions présentent des températures moyennes pour leur mois le plus chaud de 6 °C et de -2 °C. Comment les classer selon le critère thermique de Köppen ?',
+          calculation: 'La première région possède un mois le plus chaud compris entre 0 °C et 10 °C. La seconde possède un mois le plus chaud inférieur à 0 °C.',
+          answer: 'La première correspond au critère thermique du climat de toundra ET. La seconde correspond au critère thermique du climat de glace permanente EF. Cette classification doit être appliquée aux moyennes mensuelles d’une série climatique représentative.'
+        },
+        exercise: {
+          question: 'Pourquoi l’Arctique et l’Antarctique ne possèdent-ils pas la même organisation géographique et climatique ?',
+          answer: 'L’Arctique est principalement un océan entouré de continents, tandis que l’Antarctique est un continent entouré par l’océan Austral. Cette différence modifie les échanges de chaleur, les courants océaniques, les vents et la distribution de la glace.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la principale différence géographique entre l’Arctique et l’Antarctique ?',
+            answer: 'L’Arctique est un océan entouré de terres, alors que l’Antarctique est un continent entouré par l’océan Austral.'
+          },
+          {
+            question: 'Que signifie le code ET dans la classification climatique de Köppen ?',
+            answer: 'Il désigne le climat de toundra, caractérisé par un mois le plus chaud dont la température moyenne est comprise entre 0 °C et moins de 10 °C.'
+          },
+          {
+            question: 'Pourquoi les températures de la péninsule Antarctique peuvent-elles différer de celles du plateau antarctique oriental ?',
+            answer: 'La péninsule possède une influence maritime plus importante et une altitude généralement plus faible, tandis que le plateau oriental est très élevé et éloigné des influences océaniques.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA — Polar Opposites: the Arctic and Antarctic', url: 'https://content-drupal.climate.gov/news-features/understanding-climate/polar-opposites-arctic-and-antarctic' },
+          { title: 'NASA — Arctic and Antarctic Sea Ice: How Are They Different?', url: 'https://science.nasa.gov/earth/climate-change/arctic-and-antarctic-sea-ice-how-are-they-different/' },
+          { title: 'NSIDC — The Science of Arctic Weather and Climate', url: 'https://nsidc.org/learn/parts-cryosphere/arctic-weather-and-climate/science-arctic-weather-and-climate' },
+          { title: 'British Antarctic Survey — Antarctica', url: 'https://www.bas.ac.uk/about/where-we-work/antarctica/' }
+        ]
+      }
+    },
+    {
+      id: 'rayonnement-saisons-bilan-energetique-polaire',
+      title: 'Rayonnement solaire, saisons polaires et bilan énergétique',
+      field: 'Climatologie physique · Rayonnement solaire et échanges thermiques',
+      summary: 'Étudier l’origine de la nuit polaire, du soleil de minuit, des fortes variations saisonnières et du déficit énergétique des régions polaires.',
+      lesson: {
+        sections: [
+          'La principale cause de la saisonnalité de l’éclairement polaire est l’inclinaison de l’axe de rotation terrestre, d’environ 23,4° par rapport à la verticale du plan orbital. Au cours de sa révolution autour du Soleil, la Terre présente alternativement chaque hémisphère davantage vers le Soleil. Aux hautes latitudes, cette géométrie produit des périodes durant lesquelles le Soleil ne se lève pas au-dessus de l’horizon en hiver et des périodes durant lesquelles il reste au-dessus de l’horizon pendant 24 heures en été. Ces phénomènes sont appelés nuit polaire et soleil de minuit. Leur durée augmente avec la latitude.',
+          'La durée d’ensoleillement ne suffit cependant pas à déterminer l’énergie reçue par une surface. L’angle d’incidence des rayons solaires joue également un rôle fondamental. Lorsque les rayons arrivent très obliquement, une même quantité d’énergie se répartit sur une surface plus étendue et traverse une épaisseur atmosphérique plus importante. Une partie du rayonnement est alors réfléchie, diffusée ou absorbée avant d’atteindre le sol. Même pendant le soleil de minuit, l’énergie solaire reçue peut rester relativement faible lorsque le Soleil demeure proche de l’horizon.',
+          'Le bilan énergétique de surface dépend du rayonnement solaire absorbé, du rayonnement infrarouge émis et reçu, ainsi que des flux de chaleur sensible, de chaleur latente et de chaleur provenant du sol ou de l’océan. Une représentation simplifiée du bilan radiatif net est Rn = SWnet + LWnet, où SWnet représente le rayonnement solaire net et LWnet le rayonnement infrarouge net. Dans les régions couvertes de neige ou de glace, une grande partie du rayonnement solaire est réfléchie. Le rayonnement infrarouge atmosphérique et les échanges turbulents jouent également un rôle important, particulièrement durant la longue nuit hivernale.',
+          'L’albédo désigne la fraction du rayonnement solaire incident réfléchie par une surface. La neige fraîche possède généralement un albédo élevé, alors que l’océan libre présente un albédo beaucoup plus faible. Lorsque la neige ou la banquise disparaît, une surface océanique plus sombre peut absorber davantage d’énergie solaire. Cette énergie supplémentaire contribue au réchauffement de l’eau et de l’atmosphère proche de la surface. La rétroaction glace-albédo constitue ainsi un mécanisme d’amplification du réchauffement dans l’Arctique. Son intensité dépend de la saison, de l’état de la neige, de la présence de mares de fonte, des nuages et des caractéristiques de la surface.'
+        ],
+        example: {
+          statement: 'Une surface polaire reçoit un rayonnement solaire incident de 200 W/m². Son albédo est de 0,70. Quelle quantité de rayonnement solaire est réfléchie et quelle quantité est absorbée, en négligeant les autres échanges ?',
+          calculation: 'Rayonnement réfléchi = 200 × 0,70 = 140 W/m². Rayonnement absorbé = 200 - 140 = 60 W/m².',
+          answer: 'La surface réfléchit 140 W/m² et absorbe 60 W/m². Ce calcul illustre uniquement le rayonnement solaire. Il ne représente pas le bilan énergétique total, qui comprend également les échanges infrarouges et les flux de chaleur.'
+        },
+        exercise: {
+          question: 'Pourquoi les régions polaires peuvent-elles recevoir très peu d’énergie solaire annuelle malgré les journées continues de l’été ?',
+          answer: 'Parce que l’angle d’incidence solaire reste faible pendant une grande partie de l’été et que la nuit polaire supprime l’apport solaire pendant une partie de l’hiver.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la cause astronomique principale de la nuit polaire ?',
+            answer: 'L’inclinaison de l’axe de rotation terrestre combinée à la révolution de la Terre autour du Soleil.'
+          },
+          {
+            question: 'Que représente l’albédo d’une surface ?',
+            answer: 'La fraction du rayonnement solaire incident qui est réfléchie par cette surface.'
+          },
+          {
+            question: 'Pourquoi la disparition de la banquise peut-elle amplifier le réchauffement arctique ?',
+            answer: 'Elle expose davantage d’eau océanique sombre, qui absorbe généralement plus de rayonnement solaire que la glace et la neige.'
+          }
+        ],
+        sources: [
+          { title: 'NSIDC — Why Sea Ice Matters', url: 'https://nsidc.org/learn/parts-cryosphere/sea-ice/why-sea-ice-matters' },
+          { title: 'NSIDC — Science of Sea Ice', url: 'https://nsidc.org/learn/parts-cryosphere/sea-ice/science-sea-ice' },
+          { title: 'NASA — Sea Ice', url: 'https://science.nasa.gov/earth/earth-observatory/sea-ice/' },
+          { title: 'IPCC — AR6, Working Group I, Chapter 4', url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-4/' }
+        ]
+      }
+    },
+    {
+      id: 'atmosphere-vents-precipitations-polaires',
+      title: 'Atmosphère polaire : températures, vents, nuages et précipitations',
+      field: 'Météorologie polaire · Dynamique atmosphérique et thermodynamique',
+      summary: 'Analyser les inversions thermiques, les vents catabatiques, les dépressions polaires, les nuages et les précipitations dans les environnements arctiques et antarctiques.',
+      lesson: {
+        sections: [
+          'L’atmosphère polaire présente fréquemment des inversions thermiques, situations dans lesquelles la température augmente avec l’altitude sur une certaine épaisseur au lieu de diminuer. Elles apparaissent notamment lorsque la surface enneigée ou glacée perd de l’énergie par rayonnement infrarouge pendant une longue période. L’air au contact du sol se refroidit alors fortement et devient plus froid que l’air situé au-dessus. La stratification est souvent stable et limite le mélange vertical. Elle peut favoriser l’accumulation de certains polluants et maintenir des couches atmosphériques froides près du sol. Ces inversions peuvent être modifiées par le vent, les nuages, l’advection d’air et les échanges avec l’océan.',
+          'En Antarctique, les vents catabatiques constituent un phénomène météorologique majeur. Ils se forment lorsque l’air refroidi au contact du plateau glaciaire devient dense et s’écoule sous l’effet de la gravité vers les régions plus basses. La pente du continent, la topographie et la canalisation dans les vallées peuvent accélérer ces écoulements. Ils sont particulièrement importants dans les régions côtières et les zones où le relief favorise leur concentration. Il ne faut pas les confondre avec les vents géostrophiques associés aux grands systèmes de pression : les mécanismes et les échelles spatiales sont différents, même si plusieurs processus peuvent agir simultanément.',
+          'Les systèmes dépressionnaires jouent un rôle important dans les échanges de chaleur et d’humidité aux hautes latitudes. Les perturbations provenant des moyennes latitudes peuvent transporter de l’air relativement doux et humide vers l’Arctique. Les cyclones polaires de petite échelle, parfois appelés polar lows, peuvent se former au-dessus des mers froides lorsqu’un air froid circule au-dessus d’eaux relativement plus chaudes. Ils sont associés à des vents forts, des averses et parfois des conditions de mer difficiles. Leur développement dépend notamment de l’instabilité, des contrastes thermiques et de la dynamique atmosphérique.',
+          'Les régions polaires reçoivent souvent peu de précipitations annuelles, particulièrement dans l’intérieur de l’Antarctique, où l’air très froid contient peu de vapeur d’eau. Cette faiblesse des précipitations permet de qualifier une grande partie du continent antarctique de désert polaire. Les régions côtières peuvent toutefois recevoir des accumulations neigeuses beaucoup plus importantes en raison des apports d’humidité océaniques et des effets orographiques. Dans l’Arctique, les précipitations sont également variables : les secteurs influencés par l’Atlantique peuvent être relativement humides, tandis que certaines régions centrales sont très sèches. La neige domine souvent en hiver, mais des épisodes de pluie sont possibles selon les conditions thermiques.'
+        ],
+        example: {
+          statement: 'Une masse d’air refroidie au-dessus d’un plateau glaciaire présente une densité supérieure à celle de l’air environnant. Quel mouvement peut-elle effectuer si le relief descend vers la côte ?',
+          calculation: 'La force gravitationnelle agit sur la masse d’air selon la pente. La composante de cette force parallèle au relief favorise l’écoulement vers les altitudes plus basses.',
+          answer: 'L’air dense peut s’écouler vers la côte sous la forme d’un vent catabatique. Sa vitesse réelle dépend de la pente, de la stabilité atmosphérique, des frottements et de la configuration topographique.'
+        },
+        exercise: {
+          question: 'Pourquoi les vents catabatiques sont-ils particulièrement caractéristiques de l’Antarctique ?',
+          answer: 'Le vaste plateau glaciaire élevé favorise le refroidissement radiatif de l’air, qui devient dense et peut s’écouler vers les régions côtières sous l’effet de la gravité.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’une inversion thermique ?',
+            answer: 'Une situation atmosphérique dans laquelle la température augmente avec l’altitude sur une certaine couche.'
+          },
+          {
+            question: 'Pourquoi une grande partie de l’Antarctique est-elle considérée comme un désert ?',
+            answer: 'Parce que l’intérieur du continent reçoit très peu de précipitations annuelles, en raison notamment de la faible teneur en vapeur d’eau de l’air très froid.'
+          },
+          {
+            question: 'Qu’est-ce qu’un polar low ?',
+            answer: 'Une dépression de petite échelle pouvant se développer dans les régions maritimes froides, souvent lorsque de l’air froid circule au-dessus d’eaux relativement plus chaudes.'
+          }
+        ],
+        sources: [
+          { title: 'British Antarctic Survey — Antarctic Weather and Climate', url: 'https://www.bas.ac.uk/about/antarctica/weather-and-climate/' },
+          { title: 'Australian Antarctic Program — Antarctic Weather', url: 'https://www.antarctica.gov.au/about-antarctica/weather-and-climate/weather/' },
+          { title: 'NSIDC — The Science of Arctic Weather and Climate', url: 'https://nsidc.org/learn/parts-cryosphere/arctic-weather-and-climate/science-arctic-weather-and-climate' },
+          { title: 'British Antarctic Survey — International Antarctic Weather Forecasting Handbook', url: 'https://legacy.bas.ac.uk/met/momu/International_Antarctic_Weather_Forecasting_Handbook/2.6_Mean%20values%20of%20the%20main%20meteorological%20elements.php' }
+        ]
+      }
+    },
+    {
+      id: 'cryosphere-banquise-glaciers-pergelisol',
+      title: 'Cryosphère polaire : banquise, glaciers, calottes glaciaires et pergélisol',
+      field: 'Glaciologie · Océanographie polaire et géocryologie',
+      summary: 'Distinguer les différentes formes de glace, comprendre leur formation, leur évolution et leurs conséquences sur le niveau marin et les écosystèmes.',
+      lesson: {
+        sections: [
+          'La cryosphère regroupe les parties du système terrestre où l’eau est présente sous forme solide : neige, glace de mer, glaciers, calottes glaciaires, plateformes de glace, sols gelés et pergélisol. Ces éléments ont des propriétés physiques différentes. La banquise est de l’eau de mer gelée qui flotte à la surface de l’océan. Les glaciers et les calottes glaciaires sont constitués de neige accumulée, transformée progressivement en glace sous l’effet du tassement et de la recristallisation. Le pergélisol correspond à un sol ou une roche dont la température reste égale ou inférieure à 0 °C pendant au moins deux années consécutives. Ces définitions sont importantes, car les conséquences de leur évolution ne sont pas identiques.',
+          'La banquise se forme lorsque l’eau de mer refroidit suffisamment pour produire des cristaux de glace. La salinité abaisse son point de congélation par rapport à celui de l’eau douce ; pour l’eau de mer de salinité océanique typique, la température de congélation est proche de -1,8 °C. La banquise s’étend généralement pendant l’automne et l’hiver, puis fond partiellement au printemps et en été. Son étendue, sa concentration, son épaisseur, son âge et sa dérive sont des paramètres distincts. La fonte de la banquise flottante ne provoque pas directement une hausse importante du niveau marin, car elle déplace déjà un volume d’eau correspondant à son poids.',
+          'Les glaciers continentaux et les calottes glaciaires ont une dynamique différente. Ils accumulent de la neige sur les zones où le bilan de masse est positif et perdent de la glace par fonte, sublimation, vêlage d’icebergs ou écoulement vers l’océan. Le Groenland possède une grande calotte glaciaire dans l’Arctique élargi, tandis que l’Antarctique possède les calottes glaciaires orientale et occidentale. La perte de glace terrestre contribue à l’élévation du niveau moyen des mers. Les plateformes de glace flottantes, qui prolongent certains glaciers et écoulements glaciaires au-dessus de l’océan, peuvent exercer un effet de retenue sur la glace située en amont. Leur amincissement ou leur désintégration peut donc modifier l’écoulement des glaciers terrestres.',
+          'Le pergélisol est particulièrement étendu dans les régions continentales arctiques. Sa partie supérieure, appelée couche active, dégèle généralement pendant la saison chaude puis regèle en hiver. Le réchauffement peut augmenter l’épaisseur de cette couche et déstabiliser les sols riches en glace. Le dégel peut provoquer des affaissements, des glissements de terrain et des modifications du drainage. La matière organique auparavant gelée peut être décomposée par les microorganismes, libérant du dioxyde de carbone et, dans les milieux pauvres en oxygène, du méthane. Le pergélisol constitue ainsi un réservoir de carbone important et un élément de rétroaction du système climatique.'
+        ],
+        example: {
+          statement: 'Une région perd 100 km³ de glace terrestre en une année. Pourquoi cette perte n’a-t-elle pas la même conséquence sur le niveau marin que la fonte de 100 km³ de banquise flottante ?',
+          calculation: 'La glace terrestre qui rejoint l’océan ajoute de l’eau au système océanique. La banquise flottante déplace déjà un volume d’eau correspondant à son poids avant de fondre, conformément au principe de flottabilité.',
+          answer: 'La perte de glace terrestre contribue à l’élévation du niveau marin. La fonte de banquise flottante n’entraîne pas directement une hausse comparable du niveau de la mer. Les effets indirects de la disparition de la banquise sur le climat et les océans restent néanmoins importants.'
+        },
+        exercise: {
+          question: 'Quelle est la différence fondamentale entre la banquise et une calotte glaciaire ?',
+          answer: 'La banquise est de l’eau de mer gelée qui flotte sur l’océan, tandis qu’une calotte glaciaire est une masse de glace continentale formée par l’accumulation et la transformation de la neige.'
+        },
+        exercises: [
+          {
+            question: 'À partir de quelle durée un sol gelé est-il défini comme du pergélisol ?',
+            answer: 'Au moins deux années consécutives à une température égale ou inférieure à 0 °C.'
+          },
+          {
+            question: 'La fonte de la banquise flottante entraîne-t-elle directement une hausse importante du niveau marin ?',
+            answer: 'Non. Elle flottait déjà et déplaçait un volume d’eau correspondant à son poids avant de fondre.'
+          },
+          {
+            question: 'Quels gaz peuvent être libérés lors de la décomposition de la matière organique dans un pergélisol dégelé ?',
+            answer: 'Principalement du dioxyde de carbone et du méthane, selon notamment les conditions d’oxygénation et d’humidité.'
+          }
+        ],
+        sources: [
+          { title: 'NSIDC — What is the Cryosphere?', url: 'https://nsidc.org/learn/what-cryosphere' },
+          { title: 'NSIDC — Science of Sea Ice', url: 'https://nsidc.org/learn/parts-cryosphere/sea-ice/science-sea-ice' },
+          { title: 'NSIDC — Science of Frozen Ground', url: 'https://nsidc.org/learn/parts-cryosphere/frozen-ground-permafrost/science-frozen-ground' },
+          { title: 'NSIDC — Why Frozen Ground Matters', url: 'https://nsidc.org/learn/parts-cryosphere/frozen-ground-permafrost/why-frozen-ground-matters' },
+          { title: 'Alfred Wegener Institute — Permafrost', url: 'https://www.awi.de/en/themes/permafrost.html' },
+          { title: 'NASA — Arctic and Antarctic Sea Ice: How Are They Different?', url: 'https://science.nasa.gov/earth/climate-change/arctic-and-antarctic-sea-ice-how-are-they-different/' }
+        ]
+      }
+    },
+    {
+      id: 'oceans-circulations-interactions-climat-mondial',
+      title: 'Océans polaires, circulation océanique et interactions avec le climat mondial',
+      field: 'Océanographie physique · Circulation thermohaline et échanges air-mer',
+      summary: 'Étudier les échanges entre l’atmosphère et les océans polaires, la formation des eaux profondes, les courants marins et leur rôle dans la régulation climatique.',
+      lesson: {
+        sections: [
+          'Les océans polaires jouent un rôle essentiel dans le système climatique parce qu’ils transportent, stockent et redistribuent de grandes quantités de chaleur. Les courants océaniques transportent de l’eau chaude vers certaines régions de haute latitude et ramènent de l’eau plus froide vers des latitudes plus basses. Dans l’Atlantique Nord, les échanges associés à la circulation méridienne de retournement atlantique contribuent au transport de chaleur vers le nord. L’océan Arctique reçoit également des eaux provenant de l’Atlantique et du Pacifique. Les variations de ces échanges influencent les températures régionales, la couverture de glace et les échanges de chaleur entre l’océan et l’atmosphère.',
+          'La formation de glace de mer modifie la salinité de l’eau environnante. Lors de la congélation, une grande partie du sel est rejetée dans l’eau liquide sous-jacente : ce phénomène est appelé rejet de saumure. L’eau qui devient plus salée peut aussi devenir plus dense et contribuer à la convection et à la formation d’eaux profondes lorsque les conditions de température et de stratification sont favorables. Ce mécanisme participe aux processus de ventilation et de renouvellement des masses d’eau. Il ne faut toutefois pas considérer que toute formation de banquise produit automatiquement une masse d’eau profonde : la topographie, la circulation, la température et la stratification interviennent également.',
+          'Autour de l’Antarctique circule le courant circumpolaire antarctique, qui relie les bassins océaniques de l’Atlantique, de l’océan Indien et du Pacifique. Il constitue un élément majeur de la circulation océanique australe et contribue aux échanges de masses d’eau entre les océans. Les vents d’ouest et la géométrie des continents jouent un rôle important dans sa dynamique. Les eaux profondes circumpolaires peuvent également transporter de la chaleur vers les marges de la calotte antarctique. Selon les régions et les conditions de circulation, cette chaleur peut contribuer à la fonte basale de certaines plateformes de glace flottantes.',
+          'Les interactions entre océans et atmosphère polaires comprennent les échanges de chaleur sensible, de chaleur latente, d’humidité et de quantité de mouvement. La banquise agit comme une couverture isolante entre l’eau océanique relativement plus chaude et l’atmosphère froide. Lorsque des fissures ou des zones d’eau libre apparaissent, les échanges de chaleur et d’humidité peuvent augmenter fortement. Ces échanges modifient la formation des nuages, les flux énergétiques et parfois les conditions météorologiques locales. À l’échelle mondiale, les régions polaires participent à la circulation océanique et atmosphérique, mais leurs évolutions ne déterminent pas seules le climat global : elles interagissent avec de nombreux autres mécanismes.'
+        ],
+        example: {
+          statement: 'Lors de la formation de banquise, une partie du sel est rejetée dans l’eau environnante. Quel effet ce phénomène peut-il avoir sur la densité de l’eau de mer ?',
+          calculation: 'Une augmentation de la salinité tend à augmenter la densité de l’eau de mer, tandis qu’une baisse de température tend également à augmenter sa densité tant que les conditions thermodynamiques le permettent.',
+          answer: 'Le rejet de saumure peut produire une eau plus salée et plus dense, susceptible de contribuer à la convection océanique. L’intensité de ce processus dépend aussi de la stratification et des mouvements de l’océan.'
+        },
+        exercise: {
+          question: 'Comment la formation de banquise peut-elle participer à la circulation océanique profonde ?',
+          answer: 'La congélation rejette une partie du sel dans l’eau environnante, ce qui peut augmenter sa densité et favoriser son enfoncement lorsque les conditions de stratification et de circulation sont favorables.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que le rejet de saumure ?',
+            answer: 'C’est le processus par lequel une grande partie du sel est rejetée dans l’eau liquide environnante pendant la formation de glace de mer.'
+          },
+          {
+            question: 'Quel est le rôle du courant circumpolaire antarctique ?',
+            answer: 'Il circule autour de l’Antarctique, relie les grands bassins océaniques et joue un rôle majeur dans les échanges de masses d’eau de l’océan Austral.'
+          },
+          {
+            question: 'Pourquoi la disparition de zones de banquise peut-elle modifier les échanges entre l’océan et l’atmosphère ?',
+            answer: 'La disparition de la couverture de glace expose davantage l’eau libre, ce qui peut augmenter les échanges de chaleur, d’humidité et de quantité de mouvement.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA Ocean Service — How does sea ice affect global climate?', url: 'https://oceanservice.noaa.gov/facts/sea-ice-climate.html' },
+          { title: 'NSIDC — Why Sea Ice Matters', url: 'https://nsidc.org/learn/parts-cryosphere/sea-ice/why-sea-ice-matters' },
+          { title: 'NASA — Arctic and Antarctic Sea Ice: How Are They Different?', url: 'https://science.nasa.gov/earth/climate-change/arctic-and-antarctic-sea-ice-how-are-they-different/' },
+          { title: 'IPCC — AR6, Cross-Chapter Paper 6: Polar Regions', url: 'https://www.ipcc.ch/report/ar6/wg2/chapter/ccp6/' }
+        ]
+      }
+    },
+    {
+      id: 'rechauffement-polaire-retroactions-impacts',
+      title: 'Réchauffement polaire, rétroactions climatiques et conséquences environnementales',
+      field: 'Changement climatique · Amplification polaire et évolution de la cryosphère',
+      summary: 'Analyser les changements observés dans les régions polaires, les mécanismes d’amplification du réchauffement, les différences entre les deux hémisphères et les conséquences pour les écosystèmes et les sociétés.',
+      lesson: {
+        sections: [
+          'L’amplification arctique désigne le fait que le réchauffement observé et simulé dans l’Arctique est plus important que la moyenne mondiale sur certaines périodes et selon plusieurs indicateurs. Elle résulte de plusieurs mécanismes combinés : diminution de la neige et de la banquise, modification de l’albédo, augmentation des échanges de chaleur entre l’océan et l’atmosphère, changements dans les nuages, transport atmosphérique de chaleur et d’humidité et évolution de la structure verticale de l’atmosphère. La rétroaction glace-albédo constitue un mécanisme important, mais elle n’explique pas à elle seule l’amplification arctique. Son importance varie selon la saison et la région.',
+          'Les observations montrent une diminution de l’étendue de la banquise arctique depuis le début de l’ère des observations satellitaires continues en 1979, particulièrement pour le minimum de fin d’été. La glace ancienne et épaisse a également diminué. Ces évolutions ont des conséquences sur les habitats marins, les déplacements des espèces, les activités humaines et la stabilité des côtes. Les communautés arctiques peuvent être confrontées à des changements de conditions de chasse, de transport, d’accès aux ressources et d’exposition aux vagues et à l’érosion côtière. Les effets varient selon les territoires et les populations.',
+          'L’évolution de la banquise antarctique ne reproduit pas simplement celle de l’Arctique. Elle présente une variabilité régionale et interannuelle importante, liée notamment aux vents, à la circulation océanique, à la température de l’océan Austral et aux caractéristiques géographiques du continent. Les données satellitaires ont montré une évolution contrastée au cours des dernières décennies, avec une forte variabilité et une diminution marquée de l’étendue à partir de 2016, suivie de plusieurs années de faibles étendues. Il est donc incorrect de présenter la banquise antarctique comme ayant suivi une augmentation régulière et continue. Il faut distinguer les observations de banquise, la masse des calottes glaciaires et les changements de température régionaux.',
+          'Les calottes glaciaires du Groenland et de l’Antarctique contribuent à l’élévation du niveau marin lorsqu’elles perdent de la masse vers l’océan. Le réchauffement de l’atmosphère et de l’océan peut favoriser la fonte de surface, la fonte basale des plateformes flottantes et l’accélération de certains écoulements glaciaires. Dans les régions arctiques continentales, le dégel du pergélisol modifie les sols, les écosystèmes, les infrastructures et le cycle du carbone. La décomposition de la matière organique peut libérer du dioxyde de carbone et du méthane. Les projections futures dépendent des émissions de gaz à effet de serre, des rétroactions physiques et biologiques et de la réponse régionale des océans et des glaces. Les résultats doivent donc être présentés avec leurs scénarios et leurs niveaux de confiance.'
+        ],
+        example: {
+          statement: 'Une série climatique indique une hausse de température de 2,0 °C dans une région arctique et de 1,0 °C pour une référence mondiale sur une même période. Quel est le rapport entre ces deux anomalies ?',
+          calculation: 'Rapport = 2,0 °C / 1,0 °C = 2.',
+          answer: 'L’anomalie régionale est deux fois plus importante que l’anomalie de référence mondiale sur la période considérée. Ce rapport illustre une amplification régionale ; il ne constitue pas une valeur universelle valable pour toutes les périodes et toutes les régions polaires.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer l’évolution de la banquise antarctique de celle de la calotte glaciaire antarctique ?',
+          answer: 'La banquise est de la glace de mer flottante, tandis que la calotte est une masse de glace continentale. Leurs mécanismes de formation, leurs évolutions et leurs conséquences sur le niveau marin sont différents.'
+        },
+        exercises: [
+          {
+            question: 'Qu’appelle-t-on amplification arctique ?',
+            answer: 'Le phénomène par lequel le réchauffement de l’Arctique est plus important que le réchauffement moyen mondial sur certaines périodes et selon les indicateurs étudiés.'
+          },
+          {
+            question: 'Quelle est la conséquence directe de la perte de masse d’une calotte glaciaire terrestre sur le niveau marin ?',
+            answer: 'Elle contribue à l’élévation du niveau moyen des mers lorsque la glace perdue rejoint l’océan.'
+          },
+          {
+            question: 'Pourquoi le dégel du pergélisol peut-il renforcer le changement climatique ?',
+            answer: 'La décomposition de la matière organique libérée par le dégel peut produire du dioxyde de carbone et du méthane, qui contribuent à l’effet de serre.'
+          }
+        ],
+        sources: [
+          { title: 'IPCC — AR6, Working Group I, Chapter 4', url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-4/' },
+          { title: 'IPCC — AR6, Technical Summary', url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/technical-summary/' },
+          { title: 'IPCC — AR6, Cross-Chapter Paper 6: Polar Regions', url: 'https://www.ipcc.ch/report/ar6/wg2/chapter/ccp6/' },
+          { title: 'NOAA — Arctic Report Card', url: 'https://arctic.noaa.gov/Report-Card/' },
+          { title: 'NOAA — Arctic Report Card 2025: Terrestrial Snow Cover', url: 'https://arctic.noaa.gov/report-card/report-card-2025/terrestrial-snow-cover-2025/' },
+          { title: 'NSIDC — Why Frozen Ground Matters', url: 'https://nsidc.org/learn/parts-cryosphere/frozen-ground-permafrost/why-frozen-ground-matters' },
+          { title: 'NASA — Sea Ice', url: 'https://science.nasa.gov/earth/earth-observatory/sea-ice/' }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  id: 'glaciologie',
+  title: 'Glaciologie : la formation des glaciers et l’étude de leur évolution',
+  note: 'Sept chapitres approfondis consacrés à la formation des glaciers, à la transformation de la neige en glace, aux propriétés physiques de la glace glaciaire, à la dynamique des écoulements, au bilan de masse, à l’érosion glaciaire et aux méthodes scientifiques de surveillance. Le parcours aborde les glaciers de montagne, les champs de glace, les calottes glaciaires et les glaciers émissaires. Les phénomènes physiques sont distingués des observations et des interprétations scientifiques. Les valeurs numériques sont des ordres de grandeur lorsqu’elles ne correspondent pas à des mesures universelles.',
+  chapters: [
+    {
+      id: 'formation-glaciers-conditions-glaciation',
+      title: 'La formation des glaciers et les conditions de glaciation',
+      field: 'Glaciologie · Climatologie · Formation et développement des masses glaciaires',
+      summary: 'Comprendre les conditions climatiques et géographiques nécessaires à la formation d’un glacier, les mécanismes d’accumulation de neige et les différents environnements dans lesquels les glaciers se développent.',
+      lesson: {
+        sections: [
+          'Un glacier est une masse durable de neige et de glace d’origine principalement nivale, formée sur les terres émergées et capable de se déformer et de s’écouler sous l’effet de son propre poids. Sa formation nécessite généralement que les apports de neige et les autres formes d’accumulation compensent durablement les pertes par fonte, sublimation, érosion éolienne et, dans certains environnements, vêlage d’icebergs. Une accumulation de neige pendant un seul hiver ne suffit donc pas à définir un glacier. Il faut que la neige survive aux périodes de fonte et qu’elle s’accumule suffisamment longtemps pour se transformer progressivement en glace.',
+          'La température et les précipitations sont les deux principaux paramètres climatiques qui contrôlent l’existence des glaciers. Une température basse limite les pertes par fonte, mais elle ne garantit pas à elle seule la formation d’un glacier. Dans les régions extrêmement froides et arides, les précipitations neigeuses peuvent être si faibles que l’accumulation glaciaire demeure très lente. À l’inverse, certaines régions montagneuses relativement humides peuvent alimenter des glaciers grâce à des précipitations neigeuses importantes, même lorsque les températures sont moins basses que dans les régions polaires. La formation glaciaire dépend donc de l’équilibre entre les apports de matière et les pertes.',
+          'L’altitude joue un rôle essentiel dans les régions montagneuses. Lorsque l’altitude augmente, la température atmosphérique diminue généralement, ce qui favorise la conservation de la neige. Toutefois, l’altitude à laquelle la neige peut persister varie selon la latitude, l’exposition, les précipitations, la circulation atmosphérique et les conditions topographiques. La limite des neiges permanentes n’est donc pas une altitude universelle. Elle peut être très basse dans les régions polaires et beaucoup plus élevée dans les régions tropicales. L’orientation des versants influence également l’énergie solaire reçue et peut entraîner des différences importantes entre deux versants d’une même montagne.',
+          'Les glaciers présentent plusieurs configurations géographiques. Les glaciers de vallée s’écoulent dans des dépressions montagneuses et sont généralement contraints par le relief. Les glaciers de cirque occupent des bassins montagneux où la neige s’accumule. Les champs de glace alimentent plusieurs écoulements glaciaires qui suivent les vallées environnantes. Les calottes glaciaires sont des masses de glace continentales suffisamment étendues pour recouvrir le relief sous-jacent et s’écouler dans plusieurs directions. Les inlandsis du Groenland et de l’Antarctique représentent les deux principales calottes glaciaires actuelles. Ces différentes formes possèdent des géométries et des dynamiques distinctes.',
+          'La topographie peut également favoriser l’accumulation de neige par redistribution éolienne et par avalanches. Un glacier situé sous un versant abrupt peut recevoir des quantités de neige importantes provenant des zones supérieures. Dans ce cas, les précipitations mesurées directement sur le glacier ne représentent pas nécessairement la totalité de ses apports. Les dépressions topographiques peuvent également concentrer la neige transportée par le vent. La formation et la conservation d’un glacier résultent ainsi de l’interaction entre le climat, le relief, les échanges atmosphériques et les propriétés de la neige.'
+        ],
+        example: {
+          statement: 'Deux régions montagneuses présentent des conditions différentes. La première reçoit d’importantes précipitations neigeuses et connaît des températures estivales modérées. La seconde est extrêmement froide mais reçoit très peu de précipitations. Laquelle peut développer le glacier le plus rapidement ?',
+          calculation: 'Le développement dépend du bilan entre accumulation et ablation. Il faut comparer les apports neigeux conservés après la saison de fonte aux pertes de masse. Une température plus basse ne suffit pas à déterminer le résultat.',
+          answer: 'La première région peut développer un glacier plus rapidement si ses apports neigeux dépassent durablement ses pertes. La seconde peut présenter une accumulation très lente malgré ses températures extrêmement basses.'
+        },
+        exercise: {
+          question: 'Pourquoi une région très froide ne possède-t-elle pas nécessairement de grands glaciers ?',
+          answer: 'Parce que la formation d’un glacier dépend également des précipitations. Une région très froide mais extrêmement sèche peut recevoir trop peu de neige pour développer une masse glaciaire importante.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les deux principales variables climatiques qui contrôlent la formation des glaciers ?',
+            answer: 'La température et les précipitations, notamment les précipitations sous forme de neige.'
+          },
+          {
+            question: 'Pourquoi l’altitude favorise-t-elle généralement la formation des glaciers en montagne ?',
+            answer: 'Parce que la température diminue généralement avec l’altitude, ce qui favorise la conservation de la neige et limite la fonte.'
+          },
+          {
+            question: 'Quelle est la différence entre un glacier de vallée et une calotte glaciaire ?',
+            answer: 'Un glacier de vallée est généralement contraint par un relief montagneux, tandis qu’une calotte glaciaire recouvre une vaste région continentale et s’écoule dans plusieurs directions.'
+          }
+        ],
+        sources: [
+          { title: 'NSIDC — Science of Glaciers', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/science-glaciers' },
+          { title: 'NSIDC — Glaciers', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers' },
+          { title: 'National Park Service — Monitoring Glacial Features and Processes', url: 'https://www.nps.gov/articles/glacier-monitoring-techniques.htm' },
+          { title: 'World Meteorological Organization — Glaciers and Ice Caps', url: 'https://wmo.int/themes/glaciers-and-ice-caps' }
+        ]
+      }
+    },
+    {
+      id: 'transformation-neige-firn-glace',
+      title: 'La transformation de la neige en glace : névé, firn et compaction',
+      field: 'Glaciologie · Nivologie · Physique de la neige et de la glace',
+      summary: 'Étudier les transformations physiques de la neige, la densification du manteau neigeux, la formation du névé et du firn, ainsi que l’apparition de la glace glaciaire.',
+      lesson: {
+        sections: [
+          'La formation de la glace glaciaire commence par l’accumulation successive de couches de neige. Lorsqu’une nouvelle chute de neige recouvre les couches précédentes, le poids supplémentaire exerce une pression sur le manteau neigeux. Les grains de neige se réorganisent, les espaces entre les cristaux diminuent et la densité augmente. Cette transformation dépend de la température, de la durée d’enfouissement, de la structure des cristaux, de la présence éventuelle d’eau liquide et des conditions météorologiques. La neige ancienne ne se transforme donc pas instantanément en glace : il s’agit d’un processus progressif.',
+          'Lorsque la neige survit à une saison de fonte et subit plusieurs cycles de transformation, elle peut devenir du névé, également appelé firn dans la terminologie scientifique internationale. Le firn est une neige ancienne et densifiée qui a subi au moins une saison d’ablation sans être complètement éliminée. Ses grains sont généralement plus arrondis et plus compacts que ceux de la neige fraîche. Les espaces poreux entre les grains restent toutefois partiellement connectés à l’air extérieur. Cette caractéristique permet encore une circulation de l’air et des échanges gazeux à l’intérieur du manteau de firn.',
+          'Avec l’accumulation de nouvelles couches, la pression augmente et les espaces poreux se réduisent progressivement. Les cristaux de glace se réorganisent et peuvent grossir par des phénomènes de recristallisation. Une partie de l’air contenu dans les pores est progressivement expulsée vers les couches supérieures ou demeure emprisonnée dans des bulles isolées. Lorsque les pores deviennent suffisamment fermés, le matériau acquiert les caractéristiques d’une glace glaciaire compacte. La profondeur à laquelle cette transition se produit dépend fortement de la température et du taux d’accumulation neigeuse. Elle peut varier considérablement entre les glaciers tempérés, les glaciers froids et les régions polaires.',
+          'La glace glaciaire conserve une partie des informations sur l’atmosphère passée. Lorsque les pores du firn se ferment, de petites bulles d’air peuvent rester piégées dans la glace. Elles contiennent des échantillons de l’atmosphère au moment de leur isolement. Les carottes de glace permettent ainsi d’étudier les variations passées de la composition atmosphérique, notamment les concentrations de dioxyde de carbone et de méthane. Il faut distinguer l’âge de la glace de celui du gaz emprisonné : l’air reste en contact avec l’atmosphère pendant une partie de la transformation du firn, puis se retrouve isolé plus tard.',
+          'La densification ne se déroule pas toujours de la même manière. Dans les régions froides et peu enneigées, la transformation peut être lente, car les faibles températures limitent certains processus de métamorphisme et l’accumulation est réduite. Dans les régions où l’eau liquide pénètre dans le manteau neigeux, le regel peut contribuer à former des couches de glace et des horizons plus denses. Ces différences influencent la structure interne des glaciers, leur perméabilité et leur réponse aux changements climatiques.'
+        ],
+        example: {
+          statement: 'Une couche de neige fraîche possède une densité de 100 kg/m³. Après plusieurs années de compaction, une couche de firn atteint une densité de 600 kg/m³. Comment évolue sa densité relative ?',
+          calculation: 'Rapport de densité = 600 / 100 = 6.',
+          answer: 'La densité a été multipliée par 6. Cette augmentation traduit une réduction des espaces poreux et une densification du matériau. Elle ne signifie pas que la couche possède déjà toutes les caractéristiques d’une glace glaciaire compacte.'
+        },
+        exercise: {
+          question: 'Pourquoi le firn constitue-t-il une étape importante entre la neige fraîche et la glace glaciaire ?',
+          answer: 'Parce qu’il correspond à une neige ancienne densifiée qui conserve encore des espaces poreux, avant leur fermeture progressive et la formation de glace glaciaire compacte.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que le firn ?',
+            answer: 'Une neige ancienne qui a survécu à au moins une saison de fonte et qui s’est densifiée sans être encore entièrement transformée en glace compacte.'
+          },
+          {
+            question: 'Que deviennent les espaces d’air présents entre les grains de neige au cours de la densification ?',
+            answer: 'Ils diminuent progressivement, puis une partie de l’air est expulsée et une autre partie peut rester emprisonnée sous forme de bulles.'
+          },
+          {
+            question: 'Pourquoi l’âge des bulles d’air emprisonnées peut-il différer de celui de la glace qui les entoure ?',
+            answer: 'Parce que l’air reste en contact avec l’atmosphère pendant la fermeture progressive des pores du firn. Il est isolé après la formation initiale de la glace.'
+          }
+        ],
+        sources: [
+          { title: 'NSIDC — Science of Glaciers', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/science-glaciers' },
+          { title: 'NSIDC — Snow', url: 'https://nsidc.org/learn/parts-cryosphere/snow' },
+          { title: 'British Antarctic Survey — Ice Cores', url: 'https://www.bas.ac.uk/data/our-data/publication/ice-cores/' },
+          { title: 'NOAA — Paleoclimatology', url: 'https://www.ncei.noaa.gov/products/paleoclimatology' }
+        ]
+      }
+    },
+    {
+      id: 'structure-proprietes-physiques-glace',
+      title: 'Structure interne et propriétés physiques de la glace glaciaire',
+      field: 'Glaciologie · Cristallographie · Physique des matériaux',
+      summary: 'Découvrir la structure cristalline de la glace, ses propriétés mécaniques et thermiques, les contraintes internes, les fractures et les structures visibles dans les glaciers.',
+      lesson: {
+        sections: [
+          'La glace glaciaire est un matériau polycristallin constitué d’un grand nombre de cristaux de glace. Chaque cristal possède une structure cristalline hexagonale dans les conditions habituelles de température et de pression des glaciers terrestres. Les cristaux ne présentent pas nécessairement la même orientation et leurs dimensions peuvent évoluer au cours du temps. Les processus de recristallisation, les contraintes mécaniques et les conditions thermiques influencent leur organisation. Cette structure interne joue un rôle essentiel dans la déformation de la glace et dans la manière dont un glacier s’écoule.',
+          'La glace possède un comportement mécanique particulier. À court terme et sous certaines contraintes, elle peut se comporter comme un matériau relativement rigide et se fracturer. Sur des durées longues, elle peut également subir une déformation permanente et s’écouler progressivement. Ce comportement est appelé fluage. Il dépend notamment de la température, de la contrainte appliquée, de la structure des cristaux, de la présence d’impuretés et de l’eau liquide. Les glaciers ne sont donc pas des blocs rigides qui glissent simplement sur les montagnes : leur mouvement résulte en grande partie de la déformation interne de la glace.',
+          'La température influence fortement les propriétés mécaniques de la glace. Une glace plus chaude, sans être nécessairement à l’état liquide, se déforme généralement plus facilement qu’une glace froide soumise aux mêmes contraintes. Les glaciers peuvent présenter des régimes thermiques différents : certains possèdent une base froide gelée au substrat, d’autres atteignent localement le point de fusion sous pression et peuvent contenir de l’eau liquide à leur base. Les glaciers polythermiques présentent des zones froides et tempérées. Ces configurations thermiques influencent les mécanismes de glissement basal et les échanges d’eau sous-glaciaire.',
+          'Les contraintes internes produisent différentes structures visibles. Les crevasses sont des fractures qui apparaissent lorsque les contraintes dépassent la résistance de la glace. Elles peuvent se former dans les zones d’extension, notamment lorsque le glacier accélère, franchit une rupture de pente ou s’écoule dans une vallée qui s’élargit. Les plis et la foliation glaciaire résultent de déformations progressives et de l’organisation des couches de glace et des débris. Les structures glaciaires enregistrent ainsi une partie de l’histoire mécanique du glacier et peuvent être étudiées pour reconstituer ses déformations passées.',
+          'La glace glaciaire contient également des impuretés minérales, des bulles d’air et parfois des particules issues de l’atmosphère ou du substrat rocheux. Ces éléments peuvent modifier certaines propriétés physiques et fournir des informations sur les conditions environnementales. Les poussières et les débris peuvent modifier l’absorption du rayonnement solaire à la surface, tandis que les bulles d’air renseignent sur les conditions atmosphériques anciennes. L’étude de la structure interne nécessite donc une approche combinant glaciologie, géophysique, cristallographie et géologie structurale.'
+        ],
+        example: {
+          statement: 'Deux échantillons de glace sont soumis à une contrainte mécanique comparable. Le premier est plus chaud que le second, sans atteindre la fusion. Quel comportement général peut-on attendre ?',
+          calculation: 'La déformation visqueuse de la glace dépend notamment de la température. Une température plus élevée augmente généralement la facilité de déformation à contrainte comparable.',
+          answer: 'Le premier échantillon devrait généralement se déformer plus facilement. Cette comparaison reste qualitative, car la taille des cristaux, leur orientation, les impuretés et les autres conditions mécaniques influencent également le résultat.'
+        },
+        exercise: {
+          question: 'Pourquoi la glace glaciaire peut-elle être à la fois rigide et capable de s’écouler ?',
+          answer: 'Elle peut se fracturer sous des contraintes rapides ou localisées, mais subir un fluage et une déformation permanente lorsque les contraintes agissent pendant de longues périodes.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la structure cristalline habituelle de la glace glaciaire terrestre ?',
+            answer: 'Une structure cristalline hexagonale.'
+          },
+          {
+            question: 'Qu’est-ce que le fluage de la glace ?',
+            answer: 'Une déformation progressive et permanente de la glace sous l’effet de contraintes mécaniques appliquées pendant une durée prolongée.'
+          },
+          {
+            question: 'Pourquoi les crevasses se forment-elles dans certaines zones d’un glacier ?',
+            answer: 'Parce que les contraintes d’extension peuvent dépasser la résistance mécanique de la glace et provoquer des fractures.'
+          }
+        ],
+        sources: [
+          { title: 'AGU Reviews of Geophysics — Structures and Deformation in Glaciers and Ice Sheets', url: 'https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021RG000743' },
+          { title: 'NSIDC — Science of Glaciers', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/science-glaciers' },
+          { title: 'Cambridge University Press — Principles of Glacier Mechanics', url: 'https://www.cambridge.org/core/books/principles-of-glacier-mechanics/' },
+          { title: 'Open Text BC — Physical Geology: How Glaciers Work', url: 'https://opentextbc.ca/physicalgeology2ed/chapter/16-2-how-glaciers-work/' }
+        ]
+      }
+    },
+    {
+      id: 'dynamique-glaciaire-ecoulement',
+      title: 'Dynamique glaciaire : écoulement, déformation et glissement basal',
+      field: 'Glaciologie dynamique · Mécanique des fluides et géophysique',
+      summary: 'Comprendre les mécanismes responsables du mouvement des glaciers, la déformation interne de la glace, le glissement sur le substrat et le rôle de l’eau sous-glaciaire.',
+      lesson: {
+        sections: [
+          'Un glacier s’écoule sous l’effet de la gravité. Son propre poids exerce des contraintes qui tendent à entraîner la glace vers les altitudes plus basses ou vers les marges de la masse glaciaire. La vitesse d’écoulement dépend de plusieurs paramètres : l’épaisseur de glace, la pente de la surface, la température, la géométrie du lit rocheux, la présence d’eau sous-glaciaire et les résistances exercées par les parois ou le substrat. Les glaciers de vallée sont contraints latéralement par leur environnement montagneux, alors que les calottes glaciaires s’écoulent à grande échelle selon leur géométrie et les conditions de leur substrat.',
+          'Le premier mécanisme de mouvement est la déformation interne, également appelée fluage. Sous l’effet des contraintes, les cristaux de glace se réorganisent et se déforment progressivement. La loi de fluage de Glen constitue une relation fondamentale utilisée en glaciologie pour décrire la relation non linéaire entre les contraintes et la vitesse de déformation de la glace. Dans une forme simplifiée, le taux de déformation dépend d’un facteur lié à la température et d’une puissance de la contrainte. L’exposant souvent utilisé dans les applications classiques est voisin de 3, mais les paramètres effectifs dépendent des conditions physiques et de la structure de la glace.',
+          'Le deuxième mécanisme est le glissement basal. Lorsque la base du glacier est suffisamment proche du point de fusion sous pression et que de l’eau liquide est présente, la glace peut se déplacer par rapport au substrat. La géométrie des obstacles rocheux, la pression de l’eau, la rugosité du lit et les conditions thermiques contrôlent ce mouvement. La présence d’eau ne signifie pas que le glissement augmente systématiquement : une hausse de la pression d’eau peut réduire le contact entre la glace et le substrat, tandis que l’évolution du réseau de drainage peut modifier les conditions de pression au cours du temps.',
+          'Le troisième mécanisme possible est la déformation du substrat sous-glaciaire. Certains glaciers reposent sur des sédiments meubles saturés en eau. Sous les contraintes exercées par la glace, ces matériaux peuvent se déformer et participer au déplacement global de la masse glaciaire. Ce processus dépend des propriétés mécaniques des sédiments, de leur teneur en eau, de la pression exercée par la glace et de la dynamique hydrologique. Il peut intervenir dans les environnements où les glaciers reposent sur des lits sédimentaires déformables.',
+          'La vitesse totale observée à la surface résulte de la combinaison des mécanismes de déformation interne et, lorsque les conditions le permettent, de glissement basal et de déformation du substrat. Elle n’est pas identique partout dans une même section du glacier. Dans un glacier de vallée, les frottements contre les parois et le lit peuvent ralentir les zones proches des bordures, tandis que certaines régions centrales ou superficielles se déplacent plus rapidement. Les variations de vitesse peuvent produire des crevasses, des zones de cisaillement et des structures internes. Un glacier dont le front recule peut donc continuer à s’écouler activement.',
+          'L’eau sous-glaciaire joue un rôle majeur dans la dynamique de nombreux glaciers. Elle provient de la fonte de surface, de la fonte basale liée aux conditions thermiques et, dans certains cas, d’autres apports hydrologiques. Elle circule dans des conduits, des cavités et des réseaux de drainage dont l’organisation évolue au cours de la saison. Une modification de la pression de l’eau peut changer les conditions de frottement à la base et influencer la vitesse du glacier. Les relations entre eau et mouvement sont complexes : une alimentation rapide en eau peut accélérer temporairement certains glaciers, tandis qu’un réseau de drainage efficace peut réduire la pression basale et limiter le glissement.'
+        ],
+        example: {
+          statement: 'Un glacier possède une vitesse de surface mesurée de 30 m/an. Une étude estime que 20 m/an sont associés à la déformation interne. Quelle est la contribution restante attribuable aux autres mécanismes de mouvement dans cette estimation simplifiée ?',
+          calculation: 'Contribution restante = 30 - 20 = 10 m/an.',
+          answer: 'La contribution restante est de 10 m/an. Elle peut inclure le glissement basal et, selon le contexte, la déformation du substrat. Cette décomposition est une estimation pédagogique et nécessite des mesures spécifiques pour être établie scientifiquement.'
+        },
+        exercise: {
+          question: 'Quels sont les trois mécanismes physiques généralement distingués dans l’écoulement glaciaire ?',
+          answer: 'La déformation interne de la glace, le glissement basal et la déformation du substrat sous-glaciaire lorsqu’il est meuble et déformable.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le moteur général du déplacement des glaciers ?',
+            answer: 'La gravité, qui entraîne la déformation et l’écoulement de la masse de glace.'
+          },
+          {
+            question: 'Pourquoi la présence d’eau sous-glaciaire peut-elle modifier la vitesse d’un glacier ?',
+            answer: 'Parce que la pression de l’eau et l’organisation du drainage peuvent modifier les forces de frottement et les conditions de glissement à la base.'
+          },
+          {
+            question: 'Un glacier qui recule à son front est-il nécessairement immobile ?',
+            answer: 'Non. Il peut continuer à s’écouler vers son extrémité tout en perdant de la masse plus rapidement qu’il n’en reçoit.'
+          }
+        ],
+        sources: [
+          { title: 'NSIDC — Science of Glaciers', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/science-glaciers' },
+          { title: 'AntarcticGlaciers.org — Deformation and Sliding', url: 'https://www.antarcticglaciers.org/glacier-processes/glacier-flow-2/glacier-flow/' },
+          { title: 'AGU Reviews of Geophysics — Structures and Deformation in Glaciers and Ice Sheets', url: 'https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021RG000743' },
+          { title: 'Annual Review of Earth and Planetary Sciences — Subglacial Processes', url: 'https://www.annualreviews.org/content/journals/10.1146/annurev.earth.33.092203.122621' },
+          { title: 'Cambridge University Press — The Coupling Between a Glacier and Its Bed', url: 'https://www.cambridge.org/core/books/principles-of-glacier-mechanics/' }
+        ]
+      }
+    },
+    {
+      id: 'bilan-masse-accumulation-ablation',
+      title: 'Bilan de masse glaciaire : accumulation, ablation et évolution',
+      field: 'Glaciologie quantitative · Climatologie · Hydrologie glaciaire',
+      summary: 'Étudier le bilan de masse, les zones d’accumulation et d’ablation, la ligne d’équilibre et les facteurs qui déterminent la croissance ou la perte de masse d’un glacier.',
+      lesson: {
+        sections: [
+          'Le bilan de masse représente la variation de masse d’un glacier pendant une période donnée. Il compare les apports de matière et les pertes subies par la glace. L’accumulation comprend principalement les chutes de neige, mais peut aussi inclure la neige transportée par le vent, les avalanches et le regel de certaines eaux de fonte. L’ablation regroupe les processus qui diminuent la masse glaciaire : fonte, ruissellement, sublimation, évaporation et vêlage lorsque le glacier se termine dans un lac ou dans la mer. Le bilan de masse constitue un indicateur central de l’état d’un glacier et de sa réponse aux conditions climatiques.',
+          'La zone d’accumulation correspond à la partie du glacier où les apports de matière dépassent les pertes sur la période considérée. Elle se situe généralement dans les parties élevées du glacier, mais sa position dépend de la topographie et des conditions climatiques. La zone d’ablation correspond à la partie où les pertes dépassent les apports. Elle se trouve généralement à des altitudes plus basses, où les températures et les conditions énergétiques favorisent la fonte. La séparation entre ces deux zones est associée à la ligne d’équilibre, dont l’altitude varie d’une année à l’autre selon les conditions météorologiques.',
+          'Le bilan de masse annuel peut être positif, négatif ou proche de zéro. Un bilan positif indique que le glacier a gagné de la masse pendant la période étudiée. Un bilan négatif indique une perte de masse. Un bilan proche de zéro traduit un équilibre approximatif entre les apports et les pertes. Les scientifiques expriment souvent le bilan en mètres d’équivalent en eau, ce qui permet de comparer des quantités de neige et de glace de densités différentes. Cette unité correspond à une épaisseur d’eau équivalente à la masse gagnée ou perdue par unité de surface.',
+          'La relation entre bilan de masse et position du front glaciaire n’est pas instantanée. La géométrie du glacier et sa dynamique déterminent le temps nécessaire pour que les changements de masse se traduisent par une modification visible de son extrémité. Un glacier peut continuer à avancer temporairement malgré un bilan de masse devenu négatif, en raison de sa dynamique et de son temps de réponse. À l’inverse, un glacier peut commencer à perdre de la masse sans que son front recule immédiatement. Il faut donc distinguer le bilan de masse, l’évolution de l’épaisseur, la superficie et la position du front.',
+          'Le bilan de masse dépend des conditions météorologiques et du climat à plusieurs échelles de temps. Les précipitations neigeuses déterminent une grande partie des apports, tandis que la température, le rayonnement solaire, le vent, l’humidité et la couverture nuageuse influencent les pertes. Les débris rocheux présents à la surface peuvent modifier la fonte : une couche très mince et sombre peut favoriser l’absorption de l’énergie solaire, tandis qu’une couche suffisamment épaisse peut isoler la glace et ralentir la fonte. L’effet dépend donc de l’épaisseur, de la nature et de la distribution des débris.',
+          'Les mesures du bilan de masse sont réalisées à l’aide de plusieurs méthodes complémentaires. Les mesures glaciologiques directes utilisent des jalons d’ablation, des sondages de neige, des fosses et des carottages pour estimer les variations saisonnières. Les méthodes géodésiques comparent des modèles numériques de terrain ou des mesures d’altitude obtenues à différentes dates. Les observations satellitaires permettent de suivre de nombreux glaciers et d’étudier les évolutions à grande échelle. Les méthodes doivent être combinées pour limiter les incertitudes et distinguer les variations annuelles des tendances à long terme.'
+        ],
+        example: {
+          statement: 'Pendant une année hydrologique, un glacier reçoit une accumulation équivalente à 1,5 m d’eau et perd 2,1 m d’équivalent en eau par ablation. Quel est son bilan de masse simplifié ?',
+          calculation: 'Bilan de masse = accumulation - ablation. Bilan de masse = 1,5 - 2,1 = -0,6 m équivalent en eau.',
+          answer: 'Le bilan de masse est négatif et vaut -0,6 m équivalent en eau. Le glacier a perdu davantage de masse qu’il n’en a gagné pendant cette période.'
+        },
+        exercise: {
+          question: 'Que signifie un bilan de masse glaciaire négatif ?',
+          answer: 'Cela signifie que les pertes de masse du glacier dépassent ses apports pendant la période étudiée.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que la ligne d’équilibre d’un glacier ?',
+            answer: 'C’est la limite entre les zones d’accumulation et d’ablation, où le bilan de masse local est approximativement nul sur la période considérée.'
+          },
+          {
+            question: 'Quelle unité permet de comparer les variations de masse glaciaire en tenant compte des différences de densité entre neige et glace ?',
+            answer: 'Le mètre d’équivalent en eau.'
+          },
+          {
+            question: 'Pourquoi le front d’un glacier ne réagit-il pas nécessairement immédiatement à un bilan de masse négatif ?',
+            answer: 'Parce que la réponse du front dépend de la géométrie, de la dynamique et du temps de réponse du glacier.'
+          }
+        ],
+        sources: [
+          { title: 'USGS — Mass Balance Methods: Measuring Glacier Change', url: 'https://www.usgs.gov/programs/climate-research-and-development-program/science/mass-balance-methods-measuring-glacier' },
+          { title: 'NSIDC — Why Glaciers Matter', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/why-glaciers-matter' },
+          { title: 'AntarcticGlaciers.org — Deformation and Sliding', url: 'https://www.antarcticglaciers.org/glacier-processes/glacier-flow-2/glacier-flow/' },
+          { title: 'World Glacier Monitoring Service — WGMS', url: 'https://wgms.ch/' },
+          { title: 'Copernicus Climate Change Service — Glaciers', url: 'https://climate.copernicus.eu/climate-indicators/glaciers' }
+        ]
+      }
+    },
+
+
 ]
 
