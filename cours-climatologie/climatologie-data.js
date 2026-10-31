@@ -3999,9 +3999,10 @@ url: 'https://www.usgs.gov/programs/climate-research-and-development-program/sci
           { title: 'AntarcticGlaciers.org — Deformation and Sliding', url: 'https://www.antarcticglaciers.org/glacier-processes/glacier-flow-2/glacier-flow/' },
           { title: 'World Glacier Monitoring Service — WGMS', url: 'https://wgms.ch/' },
           { title: 'Copernicus Climate Change Service — Glaciers', url: 'https://climate.copernicus.eu/climate-indicators/glaciers' }
-        ]
+        }
       }
-    },
+    ]
+  },
 
 
 ]
