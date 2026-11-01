@@ -1,7 +1,7 @@
 {
   "title": "Mathématiques",
   "symbol": "x²",
-  "description": "Le programme de mathématiques de Du lycée à la prépa scientifique, les rappels et l'histoire des mathématiques",
+  "description": "Le programme de mathématiques du lycée à la prépa scientifique, les rappels et l'histoire des mathématiques",
   "order": 1,
   "entry": "index.html",
   "dataFile": "mathematiques-data.js",
