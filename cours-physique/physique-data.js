@@ -7204,17 +7204,17 @@
           'La loi d’Ampère sous sa forme initiale:
 ∮ B · ds = μ₀ I, pose un problème lorsqu’un courant charge un condensateur. Pour une boucle donnée, on peut choisir une surface traversée par le fil (qui contient le courant I) ou une surface passant entre les armatures (qu’aucun courant de conduction ne traverse). Les deux choix donneraient des résultats différents, ce qui est incohérent. Maxwell ajoute un terme : le courant de déplacement 
 I_d = ε₀ dΦ_E/dt
-où Φ_E est le flux du champ électrique à travers la surface. La loi corrigée s’écrit:
-∮ B · ds = μ₀ I + μ₀ε₀ dΦ_E/dt 
+où Φ_E est le flux du champ électrique à travers la surface. La loi corrigée s’écrit:’,
+‘∮ B · ds = μ₀ I + μ₀ε₀ dΦ_E/dt’,
 et ne dépend plus de la surface choisie. Un champ électrique variable crée donc un champ magnétique, comme un courant.',
-          'Sous forme intégrale moderne, les quatre équations de Maxwell sont : 
+ 'Sous forme intégrale moderne, les quatre équations de Maxwell sont :’,
 
-∮ E · dA = Q_int/ε₀ (Gauss)
+‘∮ E · dA = Q_int/ε₀ (Gauss)
 ∮ B · dA = 0 (Gauss magnétique)
 ∮ E · dl = −dΦ_B/dt (Faraday avec le signe de Lenz)
-∮ B · dl = μ₀ I + μ₀ε₀ dΦ_E/dt (Ampère-Maxwell). 
+∮ B · dl = μ₀ I + μ₀ε₀ dΦ_E/dt (Ampère-Maxwell).’, 
 
-Associées à la force de Lorentz, elles résument toute l’électricité et tout le magnétisme classiques. Précision historique : la forme à quatre équations vectorielles est une mise en forme ultérieure (années 1880, notamment Heaviside) ; le mémoire de 1865 contient vingt équations en vingt variables, écrites en composantes cartésiennes.',
+‘Associées à la force de Lorentz, elles résument toute l’électricité et tout le magnétisme classiques. Précision historique : la forme à quatre équations vectorielles est une mise en forme ultérieure (années 1880, notamment Heaviside) ; le mémoire de 1865 contient vingt équations en vingt variables, écrites en composantes cartésiennes.',
           'La symétrie entre les deux effets d’induction est essentielle : un champ magnétique variable crée un champ électrique (Faraday), et un champ électrique variable crée un champ magnétique (Maxwell). Ces deux effets peuvent s’entretenir mutuellement dans l’espace sans charge ni courant : c’est la structure d’une onde. En éliminant les champs entre les équations, on obtient des équations d’onde dont la vitesse vaut c = 1/√(μ₀ε₀). Maxwell constate que cette vitesse coïncide avec la vitesse mesurée de la lumière et en conclut que la lumière est une onde électromagnétique. La confirmation expérimentale de l’existence de ces ondes viendra de Heinrich Hertz en 1886-1888 (chapitre 3).'
         ],
         example: {
