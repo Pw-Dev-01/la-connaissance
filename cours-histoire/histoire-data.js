@@ -6395,6 +6395,319 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'empire-mongol',
+  sortYear: 1206,
+  title: 'L’Empire mongol : unification des steppes, conquêtes eurasiatiques et héritages impériaux',
+  note: 'Sept chapitres approfondissent la formation de l’Empire mongol, son expansion, ses institutions, ses sociétés, ses réseaux économiques, sa fragmentation et ses héritages. Le repère 1206 correspond à l’unification proclamée sous Temüjin, devenu Gengis Khan. La période de l’Empire unifié (1206–1260) doit être distinguée de celle des khanats mongols et des États issus de la dynastie gengiskhanide, dont les chronologies diffèrent selon les régions.',
+  chapters: [
+    {
+      id: 'origines-unification-mongole',
+      title: 'Des sociétés des steppes à l’unification mongole (XIIe–1206)',
+      field: 'Histoire médiévale · Mongolie et Asie intérieure · XIIe siècle–1206',
+      summary: 'Étudier le milieu des steppes, les structures tribales et les alliances qui permettent à Temüjin de construire une autorité politique commune.',
+      lesson: {
+        sections: [
+          'Au XIIe siècle, les populations de la steppe mongole vivent principalement de l’élevage pastoral mobile. Les déplacements saisonniers des troupeaux, la maîtrise du cheval et l’organisation des campements structurent leur économie et leur vie sociale. Le monde politique n’est pas constitué d’un État mongol unifié : il rassemble des groupes et des confédérations dont les alliances peuvent évoluer au gré des rivalités, des mariages, des échanges et des conflits. Les relations avec les peuples sédentaires voisins, notamment les États de Chine du Nord, influencent également les équilibres régionaux.',
+          'Temüjin, né au sein d’une famille de l’aristocratie des steppes, traverse une jeunesse marquée par la perte de la protection de son groupe familial et par la nécessité de reconstruire des alliances. Son ascension repose sur des relations personnelles, des fidélités militaires et la capacité à rallier des compagnons au-delà des seuls liens de parenté. Il affronte plusieurs puissances de la steppe, notamment les Tatars, les Kereyit et les Naïman. Les étapes exactes de cette unification sont complexes et les récits disponibles, en particulier l’Histoire secrète des Mongols, doivent être confrontés à d’autres traditions historiques.',
+          'En 1206, une grande assemblée (quriltai) reconnaît Temüjin comme Gengis Khan et consacre l’unification d’une grande partie des groupes mongols sous son autorité. Cet événement constitue le repère conventionnel de fondation de l’Empire mongol. Il ne signifie pas que tous les peuples de l’Asie intérieure sont déjà soumis : l’expansion territoriale se poursuit ensuite. Le pouvoir du khan s’appuie sur une dynastie, une hiérarchie de fidélités et une organisation militaire et politique réaménagée.',
+          'L’unification ne doit pas être interprétée comme la création instantanée d’un État centralisé au sens moderne. Le pouvoir impérial combine des traditions politiques des steppes, l’autorité de la famille gengiskhanide, la distribution de responsabilités et l’intégration progressive de populations et de pratiques administratives venues des territoires conquis.'
+        ],
+        example: {
+          statement: 'Pourquoi l’année 1206 est-elle utilisée comme date de fondation de l’Empire mongol ?',
+          calculation: 'Il s’agit d’un repère historique et non d’un calcul : en 1206, le quriltai reconnaît Temüjin comme Gengis Khan et consacre l’unification politique des Mongols.',
+          answer: '1206 marque la proclamation de Gengis Khan comme chef suprême des Mongols réunifiés. Les conquêtes de territoires extérieurs à la steppe se poursuivent après cette date.'
+        },
+        exercise: {
+          question: 'Pourquoi les alliances étaient-elles essentielles à l’ascension de Temüjin ?',
+          answer: 'Parce que le pouvoir dans les steppes reposait sur des fidélités, des coalitions et des rapports entre groupes. La capacité de Temüjin à construire et maintenir ces alliances fut déterminante dans son ascension.'
+        },
+        exercises: [
+          {
+            question: 'Quel événement sert de repère conventionnel à la fondation de l’Empire mongol ?',
+            answer: 'Le quriltai de 1206 qui reconnaît Temüjin comme Gengis Khan.'
+          },
+          {
+            question: 'Les populations de la steppe mongole étaient-elles toutes réunies sous une autorité unique avant 1206 ?',
+            answer: 'Non. Elles étaient réparties entre différents groupes et confédérations, liés par des alliances parfois instables.'
+          },
+          {
+            question: 'L’année 1206 marque-t-elle la fin des conquêtes mongoles ?',
+            answer: 'Non. Elle marque l’unification politique initiale ; l’expansion impériale se poursuit durant les décennies suivantes.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Mongol Empire', url: 'https://www.worldhistory.org/Mongol_Empire/' },
+          { title: 'World History Encyclopedia — Genghis Khan', url: 'https://www.worldhistory.org/Genghis_Khan/' },
+          { title: 'Cambridge University Press — The Rise of Chinggis Khan and the United Empire, 1206–1260', url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-the-mongol-empire/rise-of-chinggis-khan-and-the-united-empire-12061260/40F64848E13817221B45FB39EA4EC88E' },
+          { title: 'OpenStax — Chinggis Khan and the Early Mongol Empire', url: 'https://openstax.org/books/world-history-volume-1/pages/14-2-chinggis-khan-and-the-early-mongol-empire' }
+        ]
+      }
+    },
+    {
+      id: 'conquetes-gengis-khan',
+      title: 'Gengis Khan et la première expansion impériale (1206–1227)',
+      field: 'Histoire politique et militaire · Asie orientale, Asie centrale et monde iranien · 1206–1227',
+      summary: 'Analyser les campagnes de Gengis Khan, l’intégration de territoires très différents et les conséquences humaines et politiques des conquêtes.',
+      lesson: {
+        sections: [
+          'Après 1206, Gengis Khan dirige son expansion vers plusieurs États voisins. Les campagnes contre les Xia occidentaux et les Jin, en Chine du Nord, s’inscrivent dans un environnement diplomatique et militaire déjà ancien entre les pouvoirs des steppes et les États sédentaires. À l’ouest, les campagnes contre l’empire du Khwarezm, déclenchées après une grave crise diplomatique et commerciale en 1218–1219, ouvrent aux armées mongoles l’accès à de vastes régions d’Asie centrale et d’Iran. Ces opérations ne constituent pas une seule guerre continue : elles se déroulent dans des contextes politiques et géographiques distincts.',
+          'Les succès mongols reposent notamment sur la mobilité des forces, la coordination de formations montées, la reconnaissance du terrain, la circulation des informations et la capacité à adapter les opérations aux adversaires. Les armées mongoles mobilisent aussi des spécialistes et des ressources issus des populations intégrées. Il faut éviter d’expliquer leurs victoires par une prétendue supériorité innée : leur efficacité dépend d’une organisation, d’une expérience accumulée, de choix stratégiques et des faiblesses propres à leurs adversaires.',
+          'Les conquêtes entraînent des destructions, des déplacements de population, des massacres et des ruptures économiques, dont l’ampleur varie selon les lieux et les épisodes. Les chroniqueurs médiévaux donnent parfois des chiffres considérables qu’il est difficile de vérifier. Une étude rigoureuse distingue donc les faits attestés, les témoignages contemporains et les estimations démographiques incertaines. Les conséquences ne se limitent pas aux pertes humaines : elles comprennent aussi la redistribution des terres, des compétences et des ressources au profit du pouvoir impérial.',
+          'Gengis Khan meurt en 1227, alors que l’expansion n’est pas achevée. Il laisse un ensemble territorial immense, mais dont la cohésion dépend encore fortement de la dynastie, des fidélités des élites et des mécanismes de succession. La continuité de l’expansion est confiée à ses descendants et aux commandants qui agissent en leur nom.'
+        ],
+        example: {
+          statement: 'Quelle différence faut-il faire entre l’unification de 1206 et les campagnes menées jusqu’en 1227 ?',
+          calculation: '1206 est le repère de l’unification politique mongole. La période 1206–1227 correspond au règne de Gengis Khan et à une phase majeure d’expansion extérieure.',
+          answer: 'L’unification rassemble sous une autorité commune une grande partie des Mongols ; les campagnes ultérieures étendent cette autorité à de nombreux territoires d’Asie.'
+        },
+        exercise: {
+          question: 'Pourquoi les conséquences des conquêtes doivent-elles être étudiées région par région ?',
+          answer: 'Parce que les campagnes, les résistances, les destructions et les modalités d’intégration diffèrent selon les sociétés et les territoires concernés.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Gengis Khan meurt-il ?',
+            answer: 'En 1227.'
+          },
+          {
+            question: 'Quel empire d’Asie centrale et d’Iran est attaqué à partir de 1219 ?',
+            answer: 'L’empire du Khwarezm.'
+          },
+          {
+            question: 'Peut-on considérer tous les chiffres de victimes rapportés par les chroniqueurs médiévaux comme certains ?',
+            answer: 'Non. Ils doivent être évalués de manière critique et sont souvent difficiles à vérifier.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Mongol Empire', url: 'https://www.worldhistory.org/Mongol_Empire/' },
+          { title: 'World History Encyclopedia — Genghis Khan', url: 'https://www.worldhistory.org/Genghis_Khan/' },
+          { title: 'Cambridge University Press — The Rise of Chinggis Khan and the United Empire, 1206–1260', url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-the-mongol-empire/rise-of-chinggis-khan-and-the-united-empire-12061260/40F64848E13817221B45FB39EA4EC88E' }
+        ]
+      }
+    },
+    {
+      id: 'successeurs-expansion-eurasienne',
+      title: 'Les successeurs de Gengis Khan et l’expansion eurasiatique (1227–1260)',
+      field: 'Histoire impériale · Eurasie · 1227–1260',
+      summary: 'Comprendre la succession dynastique, le gouvernement des Grands Khans et l’extension du pouvoir mongol vers l’Europe orientale, le Moyen-Orient et la Chine.',
+      lesson: {
+        sections: [
+          'Après la mort de Gengis Khan en 1227, la succession ne se réduit pas à une transmission automatique du pouvoir. Les membres de la famille gengiskhanide, les commandants et les élites doivent parvenir à un accord lors d’assemblées politiques. Ögedei, choisi comme grand khan, est intronisé en 1229. Son règne voit la poursuite des campagnes en Chine du Nord et en Iran, ainsi que le développement de mécanismes de gouvernement et de prélèvement fiscal. La dynastie demeure le principe central de légitimité, mais les intérêts des différentes branches familiales créent des tensions.',
+          'À l’ouest, les campagnes conduites par les descendants de Jochi, notamment Batu, atteignent les principautés de la Rus’ et l’Europe orientale dans les années 1230 et 1240. Les armées mongoles prennent notamment Kiev en 1240 et mènent des opérations en Europe centrale en 1241. Ces campagnes ne conduisent pas à la conquête durable de toute l’Europe. Les pouvoirs locaux, les contraintes logistiques, les choix politiques et les évolutions de la succession impériale contribuent à expliquer les limites de cette expansion.',
+          'Au Moyen-Orient, les campagnes mongoles se poursuivent sous les successeurs de Gengis Khan. Hülegü, petit-fils de Gengis Khan, mène une vaste offensive vers l’Iran et la Mésopotamie. En 1258, les Mongols prennent Bagdad et mettent fin au pouvoir politique du califat abbasside dans la ville. Cet événement constitue une rupture majeure pour l’histoire régionale, mais il ne signifie pas la disparition de l’islam ni de toutes les institutions religieuses et sociales du monde musulman.',
+          'La mort du grand khan Möngke en 1259 déclenche une crise de succession. La rivalité entre Kubilai et Ariq Böke, qui débouche sur une guerre civile entre 1260 et 1264, marque la fin de l’unité politique effective de l’empire. Les différents rameaux gengiskhanides conservent cependant des liens dynastiques, diplomatiques, économiques et culturels.'
+        ],
+        example: {
+          statement: 'Pourquoi 1260 est-il un repère important dans l’histoire de l’Empire mongol ?',
+          calculation: 'La crise de succession qui suit la mort de Möngke en 1259 ouvre en 1260 une guerre entre prétendants au titre de grand khan.',
+          answer: '1260 marque le début d’une guerre dynastique qui compromet durablement le fonctionnement de l’empire comme unité politique. Les liens entre les différents khanats ne disparaissent toutefois pas immédiatement.'
+        },
+        exercise: {
+          question: 'Pourquoi la mort de Möngke provoque-t-elle une crise impériale ?',
+          answer: 'Parce que plusieurs membres de la dynastie revendiquent l’autorité suprême et que les différentes branches de la famille défendent des intérêts territoriaux et politiques divergents.'
+        },
+        exercises: [
+          {
+            question: 'Quel successeur de Gengis Khan devient grand khan en 1229 ?',
+            answer: 'Ögedei.'
+          },
+          {
+            question: 'En quelle année Bagdad est-elle prise par les Mongols de Hülegü ?',
+            answer: 'En 1258.'
+          },
+          {
+            question: 'La crise de 1260 fait-elle disparaître immédiatement tous les liens entre les khanats ?',
+            answer: 'Non. Les relations dynastiques, diplomatiques et commerciales continuent au-delà de la fragmentation politique.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Mongol Empire', url: 'https://www.worldhistory.org/Mongol_Empire/' },
+          { title: 'Cambridge University Press — The Rise of Chinggis Khan and the United Empire, 1206–1260', url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-the-mongol-empire/rise-of-chinggis-khan-and-the-united-empire-12061260/40F64848E13817221B45FB39EA4EC88E' },
+          { title: 'Cambridge University Press — The Ilkhanate, 1260–1335', url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-the-mongol-empire/ilkhanate-12601335/715FFD7F108DC7868FCD785E25818EA0' }
+        ]
+      }
+    },
+    {
+      id: 'institutions-administration-empire',
+      title: 'Le gouvernement, les institutions et l’administration impériale',
+      field: 'Histoire des institutions · Droit, fiscalité et administration · XIIIe siècle',
+      summary: 'Examiner les formes de souveraineté, les assemblées, la fiscalité, les relais de communication et l’adaptation des administrations locales.',
+      lesson: {
+        sections: [
+          'Le pouvoir impérial repose sur la légitimité de la lignée de Gengis Khan et sur la reconnaissance des grands princes et des élites. Le titre de grand khan exprime une prétention à l’autorité sur l’ensemble de l’empire, tandis que les princes gengiskhanides administrent des territoires et des populations relevant de leurs branches familiales. Les quriltai, assemblées réunissant les principaux acteurs politiques et militaires, jouent un rôle dans les décisions majeures et les successions. Leur fonctionnement évolue selon les circonstances et les rapports de force.',
+          'L’administration mongole n’est pas uniforme sur l’ensemble du continent. Les dirigeants s’appuient sur des secrétaires, des interprètes, des spécialistes fiscaux et des administrateurs issus de sociétés conquises ou voisines. En Chine, en Asie centrale et en Iran, les structures existantes sont utilisées, réorganisées ou combinées à des pratiques impériales. Cette souplesse facilite le gouvernement de territoires très différents, mais elle produit aussi des tensions entre les traditions politiques des steppes, les intérêts de la dynastie et les institutions locales.',
+          'La fiscalité constitue un enjeu essentiel. Les prélèvements peuvent prendre des formes diverses selon les régions : taxes, tributs, contributions, réquisitions ou obligations de fournir des ressources et des services. Les politiques fiscales sont modifiées par les souverains et leurs conseillers. Les historiens soulignent notamment les efforts d’Ögedei et de ses successeurs pour rendre les recettes plus régulières et financer la cour, l’armée, les communications et les dépenses impériales.',
+          'Le réseau de relais appelé yam facilite la transmission des ordres et des nouvelles sur de longues distances. Des stations permettent aux messagers autorisés de changer de monture et de poursuivre leur trajet. Le système contribue à la cohésion administrative et militaire et peut également soutenir les échanges diplomatiques et commerciaux. Il s’inscrit toutefois dans des traditions de communication plus anciennes d’Asie intérieure et ne doit pas être présenté comme une invention mongole sans précédent.',
+          'La loi et les règles attribuées à Gengis Khan sont souvent désignées dans les sources par le terme Yasa. Leur nature exacte, leur forme écrite et leur contenu systématique font l’objet de débats historiographiques. Il est donc prudent de ne pas décrire la Yasa comme un code juridique complet et conservé comparable à un code moderne. Les pratiques normatives mongoles associent des décisions du souverain, des coutumes des steppes et des adaptations régionales.'
+        ],
+        example: {
+          statement: 'À quoi sert le réseau yam dans le fonctionnement de l’empire ?',
+          calculation: 'Il n’y a pas de calcul numérique : le réseau relie des stations de relais et permet aux messagers autorisés de transmettre rapidement des informations et des ordres.',
+          answer: 'Le yam renforce la circulation de l’information et soutient la coordination politique, administrative et militaire sur de grandes distances.'
+        },
+        exercise: {
+          question: 'Pourquoi ne peut-on pas parler d’une administration mongole identique dans toutes les régions ?',
+          answer: 'Les Mongols gouvernent des sociétés très diverses et réutilisent souvent des personnels, des institutions et des pratiques locales, en les adaptant aux besoins de la dynastie.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle d’un quriltai ?',
+            answer: 'C’est une assemblée politique et dynastique pouvant intervenir dans les décisions importantes, notamment la reconnaissance d’un souverain.'
+          },
+          {
+            question: 'Quel est le rôle principal du réseau yam ?',
+            answer: 'Assurer la circulation des messagers, des ordres et des informations à travers les territoires impériaux.'
+          },
+          {
+            question: 'La Yasa est-elle un code complet dont le texte original nous serait parvenu ?',
+            answer: 'Non. La nature et la transmission de cet ensemble de règles restent débattues par les historiens.'
+          }
+        ],
+        sources: [
+          { title: 'Peter Jackson — Apportioning and Governing an Empire (c. 1221–c. 1260), Yale University Press / Oxford Academic', url: 'https://academic.oup.com/yale-scholarship-online/book/35772/chapter-abstract/307663917' },
+          { title: 'OpenStax — Chinggis Khan and the Early Mongol Empire', url: 'https://openstax.org/books/world-history-volume-1/pages/14-2-chinggis-khan-and-the-early-mongol-empire' },
+          { title: 'M. G. Vér — The Origins of the Postal System of the Mongol Empire, University of Hamburg', url: 'https://www.fis.uni-hamburg.de/en/publikationen/detail.html?id=a4d047ff-da0c-4e8f-84dc-76307d3ddfd3' },
+          { title: 'Cambridge University Press — The Cambridge History of the Mongol Empire', url: 'https://www.cambridge.org/core/books/cambridge-history-of-the-mongol-empire/339475953C6AECE567FA50F1AED951A7' }
+        ]
+      }
+    },
+    {
+      id: 'societe-religions-femmes-mongoles',
+      title: 'Société, religions et place des femmes dans le monde mongol',
+      field: 'Histoire sociale et culturelle · Eurasie mongole · XIIIe–XIVe siècles',
+      summary: 'Étudier les structures sociales, les pratiques religieuses, les échanges culturels et le rôle politique des femmes de l’élite mongole.',
+      lesson: {
+        sections: [
+          'La société mongole conserve des caractéristiques liées à la mobilité pastorale : les campements, les troupeaux et les réseaux de parenté constituent des éléments essentiels de l’organisation sociale. L’empire transforme cependant profondément cette société en intégrant des populations sédentaires, des villes, des agriculteurs, des artisans, des marchands et des fonctionnaires. Les Mongols ne forment donc pas une population homogène gouvernant un territoire culturellement uniforme. Les pratiques et les identités se transforment au contact des sociétés conquises.',
+          'Les femmes jouent un rôle important dans la vie économique des campements et dans la continuité des unités domestiques pendant les mobilisations militaires. Certaines femmes de la famille impériale exercent également une influence politique directe, administrent des domaines, interviennent dans les successions ou participent à la régence. Leur pouvoir varie selon leur statut, leur parenté, leur richesse et les circonstances politiques. Il ne faut donc ni les réduire à un rôle privé ni généraliser à toutes les femmes les prérogatives de quelques princesses.',
+          'Les croyances religieuses des Mongols avant et pendant l’expansion sont diverses et évolutives. Les pratiques liées au Ciel éternel (Tengri) et aux traditions chamaniques occupent une place importante dans l’univers religieux des élites des steppes. Au sein de l’empire coexistent également bouddhistes, chrétiens de différentes traditions, musulmans et adeptes d’autres cultes. Les souverains mongols pratiquent souvent une politique pragmatique envers les communautés religieuses, tout en accordant des protections ou des privilèges variables selon les contextes.',
+          'Les conversions des élites mongoles se déroulent à des rythmes différents selon les régions. En Iran, les souverains ilkhanides adoptent progressivement l’islam, notamment avec Ghazan en 1295. Dans les territoires de la Horde d’Or, l’islam gagne également une place politique importante, sans que toutes les populations suivent une trajectoire identique. En Chine, la cour Yuan entretient des relations avec plusieurs traditions religieuses, dont le bouddhisme tibétain. Ces évolutions témoignent de l’adaptation des dynasties mongoles aux sociétés qu’elles gouvernent.',
+          'La circulation des personnes favorise les transferts de savoirs, de techniques, de pratiques artistiques et de traditions intellectuelles. Savants, artisans, religieux, diplomates et commerçants peuvent traverser plusieurs régions de l’empire. Ces contacts ne produisent pas une culture unique : ils contribuent plutôt à des échanges sélectifs et à des formes de métissage culturel propres à chaque cour et à chaque territoire.'
+        ],
+        example: {
+          statement: 'Pourquoi les pratiques religieuses diffèrent-elles entre la Chine des Yuan et l’Iran ilkhanide ?',
+          calculation: 'Il s’agit d’une comparaison historique : les deux dynasties mongoles gouvernent des sociétés aux traditions religieuses et aux institutions différentes.',
+          answer: 'Les souverains s’adaptent à leurs contextes régionaux. Le bouddhisme tibétain joue un rôle important à la cour Yuan, tandis que les Ilkhans adoptent progressivement l’islam en Iran.'
+        },
+        exercise: {
+          question: 'Comment les femmes de la famille impériale pouvaient-elles participer au gouvernement ?',
+          answer: 'Certaines intervenaient dans les successions, les régences, la gestion de domaines, les alliances matrimoniales et parfois les décisions politiques et militaires.'
+        },
+        exercises: [
+          {
+            question: 'La société de l’Empire mongol était-elle religieusement homogène ?',
+            answer: 'Non. Elle réunissait de nombreuses traditions religieuses, dont le tengrisme, le bouddhisme, le christianisme et l’islam.'
+          },
+          {
+            question: 'Les femmes de l’élite mongole pouvaient-elles exercer un pouvoir politique ?',
+            answer: 'Oui. Certaines princesses et régentes ont joué un rôle dans les affaires dynastiques, économiques et politiques.'
+          },
+          {
+            question: 'Toutes les régions mongoles ont-elles adopté la même religion au même moment ?',
+            answer: 'Non. Les conversions et les politiques religieuses varient selon les khanats et les périodes.'
+          }
+        ],
+        sources: [
+          { title: 'Cambridge University Press — Women and Gender under Mongol Rule', url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-the-mongol-empire/women-and-gender-under-mongol-rule/2D0A2B55E363A61833A350C86397BE35' },
+          { title: 'Anne F. Broadbridge — Women and the Making of the Mongol Empire, Cambridge University Press', url: 'https://www.cambridge.org/core/books/women-and-the-making-of-the-mongol-empire/1EEA3BBC6CD88BDFC365A9E3FEE0071F' },
+          { title: 'Cambridge University Press — The Ilkhanate, 1260–1335', url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-the-mongol-empire/ilkhanate-12601335/715FFD7F108DC7868FCD785E25818EA0' },
+          { title: 'World History Encyclopedia — Mongol Empire', url: 'https://www.worldhistory.org/Mongol_Empire/' }
+        ]
+      }
+    },
+    {
+      id: 'economie-commerce-pax-mongolica',
+      title: 'Économie, routes commerciales et Pax Mongolica',
+      field: 'Histoire économique · Routes de la soie et échanges eurasiatiques · XIIIe–XIVe siècles',
+      summary: 'Comprendre comment les pouvoirs mongols encadrent les échanges, soutiennent les communications et favorisent la circulation des marchandises et des savoirs.',
+      lesson: {
+        sections: [
+          'L’expansion mongole relie sous des autorités apparentées de vastes régions d’Eurasie. Les routes terrestres d’Asie centrale, les itinéraires vers la Chine, les espaces de la mer Noire et les réseaux maritimes de l’océan Indien prennent place dans un système d’échanges plus étroitement connecté. Les Mongols ne créent pas les routes de la soie : celles-ci existent depuis l’Antiquité. Leur domination contribue cependant à modifier les conditions politiques et matérielles de certains itinéraires et à intensifier plusieurs circulations à longue distance.',
+          'L’expression Pax Mongolica désigne, de manière générale, une phase durant laquelle certaines parties de l’Eurasie connaissent une sécurité relative des échanges sous domination mongole. Cette paix n’est ni uniforme ni permanente. Les guerres entre khanats, les révoltes, les conflits locaux et les prélèvements peuvent interrompre les circulations. Le terme ne doit donc pas laisser croire que l’ensemble du continent aurait été constamment pacifié.',
+          'Les marchands jouent un rôle essentiel dans le fonctionnement économique et politique de l’empire. Ils transportent des produits, mettent en relation des marchés éloignés, fournissent des informations et peuvent servir d’intermédiaires diplomatiques ou financiers. Les autorités mongoles encouragent certaines activités commerciales, organisent des protections et mobilisent des ressources pour les infrastructures. Les échanges portent sur des textiles, des métaux, des chevaux, des produits de luxe, des denrées et de nombreux biens régionaux.',
+          'Les communications impériales et les relais de poste facilitent les déplacements des représentants autorisés. Des infrastructures d’accueil, des dispositifs de protection et des arrangements financiers peuvent soutenir les itinéraires commerciaux. Dans certaines régions, les autorités développent ou réorganisent des marchés, des dispositifs monétaires et des prélèvements sur les transactions. Les pratiques varient selon les khanats et les administrations locales.',
+          'Les circulations concernent aussi les personnes et les connaissances. Des artisans, des médecins, des astronomes, des religieux et des diplomates se déplacent entre les cours et les villes. Ces mobilités participent à la transmission de techniques et d’informations, mais leurs effets doivent être étudiés à partir de cas précis plutôt que présentés comme une mondialisation uniforme ou entièrement contrôlée par les Mongols.'
+        ],
+        example: {
+          statement: 'La Pax Mongolica signifie-t-elle que toutes les routes commerciales étaient toujours sûres ?',
+          calculation: 'Il faut comparer le concept général avec les réalités régionales : la sécurité dépend des périodes, des territoires et des relations entre pouvoirs mongols.',
+          answer: 'Non. La Pax Mongolica désigne une amélioration relative des conditions de circulation dans certaines zones et à certaines périodes, mais les guerres et les crises continuent.'
+        },
+        exercise: {
+          question: 'Pourquoi les marchands étaient-ils utiles aux souverains mongols au-delà du commerce ?',
+          answer: 'Ils transmettaient des informations, reliaient les régions, pouvaient financer des opérations et servaient parfois d’intermédiaires diplomatiques ou administratifs.'
+        },
+        exercises: [
+          {
+            question: 'Les Mongols ont-ils créé les routes de la soie ?',
+            answer: 'Non. Ils ont contribué à transformer et à intensifier certains réseaux d’échanges préexistants.'
+          },
+          {
+            question: 'Que désigne généralement l’expression Pax Mongolica ?',
+            answer: 'Une période de sécurité relative et d’intensification de certaines circulations dans des régions reliées par la domination mongole.'
+          },
+          {
+            question: 'Quels types de circulations sont favorisés par les connexions impériales ?',
+            answer: 'Les marchandises, les personnes, les informations, les techniques et les idées.'
+          }
+        ],
+        sources: [
+          { title: 'Prajakti Kalra — Pax Mongolica: Trade and Traders in the Mongol Empire, Oxford Research Encyclopedia of Asian History', url: 'https://academic.oup.com/edited-volume/61799/chapter-abstract/546336932' },
+          { title: 'World History Encyclopedia — Mongol Empire', url: 'https://www.worldhistory.org/Mongol_Empire/' },
+          { title: 'M. G. Vér — The Origins of the Postal System of the Mongol Empire, University of Hamburg', url: 'https://www.fis.uni-hamburg.de/en/publikationen/detail.html?id=a4d047ff-da0c-4e8f-84dc-76307d3ddfd3' },
+          { title: 'Angus J. M. Russell — Tamga: a fiscal form in post-Mongol Moscow, University of Cambridge Repository', url: 'https://www.repository.cam.ac.uk/items/e7d2f271-9ae9-4517-9b7a-00382b820e4f' }
+        ]
+      }
+    },
+    {
+      id: 'khanats-fragmentation-heritages',
+      title: 'Fragmentation de l’empire, khanats et héritages (1260–XVe siècle)',
+      field: 'Histoire politique comparée · Chine, Asie centrale, Iran et steppe pontique · 1260–XVe siècle',
+      summary: 'Étudier les principaux États issus de l’empire, leurs trajectoires régionales et la persistance des réseaux gengiskhanides après la fin de l’unité impériale.',
+      lesson: {
+        sections: [
+          'À partir de 1260, les conflits de succession et les intérêts divergents des branches gengiskhanides affaiblissent l’autorité d’un grand khan reconnu par tous. L’empire ne se divise pas en quatre États parfaitement indépendants à une date unique : la fragmentation est un processus progressif, marqué par des conflits, des alliances et des relations de dépendance qui changent au fil du temps. Les liens familiaux, les échanges et la mémoire d’une souveraineté commune continuent d’exister entre les différentes formations politiques.',
+          'En Chine, Kubilai fonde la dynastie Yuan en 1271 et achève la conquête de la dynastie Song en 1279. La cour Yuan gouverne un vaste territoire chinois tout en conservant des institutions et des hiérarchies propres au pouvoir mongol. En 1368, les Ming prennent la capitale Yuan, Dadu, et mettent fin à la domination Yuan sur la Chine centrale. Les souverains mongols poursuivent ensuite leur pouvoir en Mongolie sous des formes politiques postérieures, souvent regroupées sous l’appellation de Yuan du Nord.',
+          'En Iran et en Mésopotamie, Hülegü fonde l’Ilkhanat, dont les souverains s’appuient sur des administrateurs et des traditions locales. La conversion progressive de la dynastie à l’islam modifie sa légitimité et ses rapports avec les populations gouvernées. L’Ilkhanat se désagrège après la mort d’Abu Saïd en 1335, dans un contexte de rivalités dynastiques et de compétition entre pouvoirs régionaux.',
+          'Dans les steppes occidentales et les principautés de la Rus’, l’ulus de Jochi devient la Horde d’Or. Elle entretient des relations politiques, fiscales, militaires et commerciales avec les principautés voisines, ainsi qu’avec le monde islamique et les réseaux marchands de la mer Noire. Son histoire se prolonge au-delà du XIVe siècle et donne naissance à plusieurs pouvoirs successeurs. En Asie centrale, le khanat de Chagataï connaît lui aussi des divisions et des transformations durables.',
+          'La fin de l’unité impériale n’efface pas l’héritage mongol. Les réseaux de circulation, certaines pratiques administratives, les traditions dynastiques, les formes de fiscalité et les modèles de légitimité continuent d’influencer les sociétés d’Eurasie. Les héritages varient toutefois selon les régions : ils sont réinterprétés par les dynasties locales et ne constituent pas un système politique unique qui aurait survécu intact.'
+        ],
+        example: {
+          statement: 'Pourquoi faut-il distinguer la fin de la dynastie Yuan en Chine et la fin de toutes les dynasties mongoles ?',
+          calculation: 'La dynastie Yuan perd le contrôle de la Chine en 1368. D’autres pouvoirs issus de la dynastie gengiskhanide, comme la Horde d’Or, continuent d’exister au-delà de cette date.',
+          answer: '1368 marque la fin du pouvoir Yuan sur la Chine, mais pas la disparition simultanée de tous les États et khanats mongols.'
+        },
+        exercise: {
+          question: 'Quels éléments permettent de parler d’un héritage mongol après la fragmentation politique ?',
+          answer: 'La continuité de réseaux commerciaux et diplomatiques, des traditions dynastiques, de pratiques administratives et fiscales, ainsi que des modèles politiques réutilisés par les États successeurs.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Kubilai fonde-t-il la dynastie Yuan ?',
+            answer: 'En 1271.'
+          },
+          {
+            question: 'En quelle année les Ming mettent-ils fin au pouvoir Yuan sur la Chine ?',
+            answer: 'En 1368.'
+          },
+          {
+            question: 'Quels sont les principaux ensembles politiques issus de la fragmentation de l’empire ?',
+            answer: 'La dynastie Yuan en Chine, l’Ilkhanat en Iran et en Mésopotamie, la Horde d’Or dans les steppes occidentales et le khanat de Chagataï en Asie centrale.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Mongol Empire', url: 'https://www.worldhistory.org/Mongol_Empire/' },
+          { title: 'Cambridge University Press — The Cambridge History of the Mongol Empire', url: 'https://www.cambridge.org/core/books/cambridge-history-of-the-mongol-empire/339475953C6AECE567FA50F1AED951A7' },
+          { title: 'Cambridge University Press — The Ilkhanate, 1260–1335', url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-the-mongol-empire/ilkhanate-12601335/715FFD7F108DC7868FCD785E25818EA0' },
+          { title: 'Cambridge University Press — The Golden Horde, c. 1260–1502', url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-the-mongol-empire/golden-horde-c-12601502/194D20494453E0AC8373BE9ADFB8B8D6' },
+          { title: 'University of Chicago — The Mongol Empire: Fragmentation, Unity, and Continuity (1206–c.1300)', url: 'https://knowledge.uchicago.edu/records/cbdsw-avq47' }
+        ]
+      }
+    }
+  ]
+},
+
 ]
 
 
