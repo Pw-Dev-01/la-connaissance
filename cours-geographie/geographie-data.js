@@ -1898,5 +1898,124 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'regions-polaires',
+  title: 'Les régions polaires : géographie, climats, glaces et écosystèmes de l’Arctique et de l’Antarctique',
+  note: 'Deux chapitres approfondis, un pour chaque région polaire. Les limites de l’Arctique et de l’Antarctique dépendent des critères géographiques, climatiques ou écologiques employés. Les chiffres climatiques et les superficies peuvent varier selon les périodes de mesure et les conventions retenues.',
+  chapters: [
+    {
+      id: 'arctique',
+      title: 'L’Arctique : un océan polaire entouré de continents',
+      field: 'Géographie physique · Climatologie · Cryosphère · Écosystèmes et sociétés arctiques',
+      summary: 'Étudier l’organisation géographique de l’Arctique, ses mers et ses terres, la banquise, le pergélisol, les écosystèmes, les populations humaines et les transformations climatiques de cette région.',
+      lesson: {
+        sections: [
+          'L’Arctique est la région polaire du Nord. Dans une définition astronomique courante, il comprend les espaces situés au nord du cercle polaire arctique, vers 66°33′ de latitude nord. Cette limite n’est toutefois pas universelle : les scientifiques peuvent aussi définir l’Arctique à partir du climat, de la végétation, du pergélisol ou des écosystèmes marins. Il comprend l’océan Arctique, des mers périphériques, des archipels et les parties septentrionales de l’Amérique du Nord, de l’Europe et de l’Asie. Le Groenland occupe une place majeure dans cette région, mais il ne faut pas confondre l’île et l’ensemble de l’Arctique.',
+          'La caractéristique géographique essentielle de l’Arctique est sa disposition : un océan central est entouré par les continents et les grandes îles de l’hémisphère Nord. L’océan Arctique communique avec l’Atlantique et le Pacifique par des passages maritimes. Sa surface est recouverte par une banquise, c’est-à-dire de l’eau de mer gelée qui flotte. Cette glace marine n’est pas la même chose que la glace des glaciers ou de la calotte du Groenland : elle se forme par congélation de l’eau salée, se déplace sous l’effet des vents et des courants, puis fond en partie pendant la saison chaude. Son étendue et son épaisseur changent au fil des saisons et des années.',
+          'Sur les terres arctiques, les paysages comprennent la toundra, des montagnes, des îles rocheuses, des glaciers et de vastes secteurs de pergélisol. Le pergélisol désigne un sol ou une roche dont la température reste égale ou inférieure à 0 °C pendant au moins 2 années consécutives ; sa couche superficielle peut dégeler chaque été. Il ne faut donc pas le confondre avec la neige saisonnière ou avec un sol simplement gelé durant l’hiver. Le dégel du pergélisol peut modifier la stabilité des terrains, transformer les milieux humides et libérer du carbone ancien sous forme de gaz à effet de serre, ce qui peut renforcer le réchauffement.',
+          'Le climat arctique est très contrasté selon les lieux et les saisons. La latitude élevée entraîne une forte variation annuelle de la durée du jour : autour du cercle polaire, on observe au moins une journée annuelle sans lever ou coucher du Soleil, tandis que le phénomène dure plusieurs mois près du pôle. Les températures sont influencées par la couverture de glace, l’altitude, les vents et les courants océaniques. Le transport de chaleur par l’atmosphère et par l’océan Atlantique contribue notamment à rendre certaines zones de l’Arctique européen moins froides que d’autres régions situées à une latitude comparable. Il est donc incorrect de considérer l’Arctique comme un espace uniformément froid.',
+          'Les milieux arctiques abritent des espèces adaptées à une courte saison de croissance et à de fortes contraintes thermiques. La toundra accueille notamment des mousses, des lichens, des plantes herbacées et des arbustes bas. Les réseaux alimentaires associent végétaux, herbivores, prédateurs et espèces marines. Dans l’océan, le plancton joue un rôle essentiel à la base des chaînes alimentaires, qui peuvent inclure poissons, oiseaux marins, phoques, morses et cétacés. L’ours polaire est associé à la banquise, qu’il utilise notamment comme plateforme de chasse. Les espèces et leur répartition varient cependant selon les régions : tous les animaux arctiques ne vivent pas dans les mêmes habitats.',
+          'L’Arctique est aussi un espace habité. Des peuples autochtones, dont les Inuit, les Sámi, les Nenets, les Tchouktches et d’autres communautés, vivent dans différentes parties du Nord circumpolaire. Leurs langues, leurs organisations sociales et leurs pratiques sont diverses ; il ne faut pas les réduire à une culture unique. Les activités contemporaines comprennent la pêche, l’élevage de rennes dans certaines régions, la chasse de subsistance, les transports, la recherche scientifique et diverses activités économiques. Les changements environnementaux affectent les déplacements, les infrastructures, les ressources alimentaires et les modes de vie, avec des conséquences qui diffèrent d’une communauté à l’autre.',
+          'Le réchauffement climatique transforme rapidement plusieurs composantes de l’Arctique. Les observations satellitaires montrent une diminution de l’étendue de la banquise de fin d’été depuis le début des mesures satellitaires continues en 1979, ainsi qu’un vieillissement et un amincissement de la glace pluriannuelle. La perte de neige et de glace expose des surfaces plus sombres qui absorbent davantage d’énergie solaire : c’est une rétroaction liée à l’albédo. Le réchauffement touche également le pergélisol, les glaciers et les écosystèmes. Les tendances ne sont pas identiques chaque année ni dans tous les secteurs, mais le signal de réchauffement à long terme de l’Arctique est clairement établi par les observations scientifiques.',
+          'L’Arctique joue un rôle important dans le système climatique mondial. La glace marine influence les échanges de chaleur et d’humidité entre l’océan et l’atmosphère, tandis que les eaux arctiques participent à la circulation océanique. Les fleuves qui se déversent dans l’océan Arctique apportent de l’eau douce et des matières transportées depuis les continents. Les changements de glace, de température et de pergélisol peuvent donc avoir des effets au-delà de la région elle-même. Pour comprendre l’Arctique, il faut relier la géographie physique, les circulations atmosphériques et océaniques, les écosystèmes et les sociétés humaines.'
+        ],
+        example: {
+          statement: 'Un cours de géographie utilise le cercle polaire arctique, situé approximativement à 66°33′ N, comme repère. Quelle différence de latitude le sépare de l’équateur, situé à 0° ?',
+          calculation: '66°33′ − 0° = 66°33′ de latitude.',
+          answer: 'Le cercle polaire arctique se trouve à environ 66°33′ au nord de l’équateur. Cette ligne est un repère astronomique ; elle ne constitue pas la seule définition scientifique possible de l’Arctique.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il incorrect de confondre la banquise arctique avec la calotte glaciaire du Groenland ?',
+          answer: 'La banquise est de l’eau de mer gelée qui flotte sur l’océan et dont l’étendue varie fortement avec les saisons. La calotte du Groenland est une masse de glace glaciaire reposant sur la terre ferme, formée par l’accumulation et la transformation de la neige.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la disposition géographique caractéristique de l’Arctique ?',
+            answer: 'Un océan central entouré par les continents et les grandes îles de l’hémisphère Nord.'
+          },
+          {
+            question: 'Que signifie le terme pergélisol ?',
+            answer: 'Un sol ou une roche dont la température reste égale ou inférieure à 0 °C pendant au moins 2 années consécutives.'
+          },
+          {
+            question: 'Pourquoi la diminution de la banquise peut-elle amplifier le réchauffement ?',
+            answer: 'Parce que l’eau libre et les surfaces plus sombres réfléchissent généralement moins le rayonnement solaire que la glace et la neige ; elles absorbent donc davantage d’énergie.'
+          },
+          {
+            question: 'L’Arctique est-il inhabité ?',
+            answer: 'Non. Plusieurs peuples autochtones et des populations non autochtones vivent dans les régions arctiques.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA Climate.gov — Polar Opposites: the Arctic and Antarctic', url: 'https://www.climate.gov/news-features/understanding-climate/polar-opposites-arctic-and-antarctic' },
+          { title: 'NASA Science — Arctic and Antarctic Sea Ice: How Are They Different?', url: 'https://science.nasa.gov/earth/climate-change/arctic-and-antarctic-sea-ice-how-are-they-different/' },
+          { title: 'National Snow and Ice Data Center — Arctic Weather and Climate', url: 'https://nsidc.org/learn/parts-cryosphere/arctic-weather-and-climate' },
+          { title: 'National Snow and Ice Data Center — The Science of Arctic Weather and Climate', url: 'https://nsidc.org/learn/parts-cryosphere/arctic-weather-and-climate/science-arctic-weather-and-climate' },
+          { title: 'U.S. Geological Survey — Polar Regions', url: 'https://www.usgs.gov/international-programs/polar-regions' },
+          { title: 'IPCC — Special Report on the Ocean and Cryosphere in a Changing Climate, Chapter 3: Polar regions', url: 'https://www.ipcc.ch/srocc/chapter/chapter-3-2/' },
+          { title: 'Smithsonian Ocean — The Arctic and The Antarctic', url: 'https://ocean.si.edu/ecosystems/poles/arctic-and-antarctic' }
+        ]
+      }
+    },
+    {
+      id: 'antarctique',
+      title: 'L’Antarctique : un continent recouvert par une immense calotte glaciaire',
+      field: 'Géographie physique · Glaciologie · Climatologie · Océan Austral et biodiversité',
+      summary: 'Comprendre la géographie du continent antarctique, la formation et l’écoulement de sa glace, les climats extrêmes, la banquise australe, les écosystèmes marins et le cadre international de la recherche.',
+      lesson: {
+        sections: [
+          'L’Antarctique est la région polaire du Sud. Elle comprend le continent antarctique et, selon les définitions scientifiques employées, les eaux et les îles de l’océan Austral qui l’entourent. Le continent est centré autour du pôle Sud et séparé des autres continents par de vastes étendues océaniques. Contrairement à l’Arctique, qui est organisé autour d’un océan entouré de terres, l’Antarctique est un continent entouré par l’océan Austral. Cette différence fondamentale de géographie contribue à expliquer les contrastes de climat, de circulation océanique et de comportement de la glace entre les deux pôles.',
+          'La majeure partie de l’Antarctique est recouverte par la calotte glaciaire antarctique, une masse de glace continentale constituée par l’accumulation de neige au cours de très longues périodes. Sous l’effet de son propre poids, la neige se compacte progressivement et se transforme en glace. La glace s’écoule lentement depuis les régions intérieures élevées vers les côtes, où elle peut alimenter des glaciers émissaires et des plateformes de glace. L’épaisseur de la glace varie considérablement selon les lieux et dépasse 4 km dans certains secteurs. Le relief rocheux sous-jacent est donc en grande partie caché aux observations directes.',
+          'Il faut distinguer la calotte glaciaire, les glaciers, les plateformes de glace et la banquise. La calotte est une vaste masse de glace reposant sur le continent. Les glaciers sont des masses de glace en mouvement qui s’écoulent notamment dans des vallées ou vers la mer. Les plateformes de glace sont des prolongements flottants de glaciers et de la calotte, attachés à la côte. La banquise, au contraire, est de l’eau de mer gelée qui se forme à la surface de l’océan. Elle s’étend autour du continent pendant l’hiver austral et se rétracte largement pendant l’été austral. Ces éléments n’ont pas le même rôle dans le bilan de masse de la glace ni dans l’évolution du niveau marin.',
+          'L’Antarctique est le continent le plus froid de la planète et présente aussi des conditions très sèches et venteuses. L’intérieur du continent est un désert polaire : les précipitations y sont faibles, principalement sous forme de neige, et les températures restent extrêmement basses. Le record officiel de température de l’air la plus basse mesurée à la surface de la Terre est de −89,2 °C, enregistré à la station soviétique de Vostok le 21 juillet 1983. Les vents catabatiques, qui descendent des hauts plateaux vers les côtes sous l’effet de la gravité, peuvent être particulièrement puissants. Les conditions varient entre le plateau intérieur, les montagnes et les zones côtières.',
+          'Le continent comprend plusieurs grands ensembles géographiques. Les monts Transantarctiques traversent le continent et séparent de vastes secteurs de l’Antarctique oriental et occidental. L’Antarctique oriental repose en grande partie sur un socle situé au-dessus du niveau marin, tandis qu’une part importante du socle de l’Antarctique occidental se trouve sous le niveau de la mer. Cette configuration est importante pour comprendre la sensibilité de certains secteurs aux eaux océaniques relativement chaudes qui peuvent atteindre les zones situées sous les plateformes de glace. Le relief sous-glaciaire comprend des montagnes, des vallées et des bassins qui influencent l’écoulement de la glace.',
+          'La vie terrestre est limitée par le froid, la sécheresse et la rareté des sols libres de glace. Les plantes indigènes sont surtout représentées par des mousses, des lichens et des algues, ainsi que par 2 espèces de plantes à fleurs présentes dans la région antarctique maritime. Il n’existe pas de grands mammifères terrestres indigènes comparables à ceux des régions continentales tempérées. En revanche, les côtes et l’océan Austral abritent une biodiversité marine importante. Le phytoplancton, le krill antarctique, les poissons, les manchots, les phoques, les oiseaux marins et les cétacés participent à des réseaux alimentaires liés à la productivité saisonnière de l’océan.',
+          'Les manchots sont emblématiques de l’Antarctique, mais ils ne vivent pas tous au pôle Sud ni exclusivement sur le continent. Plusieurs espèces se reproduisent sur les côtes et les îles de l’océan Austral. Les phoques et les baleines dépendent également des ressources marines, notamment du krill pour certaines espèces. La présence de ces animaux est liée aux conditions de la banquise, à la disponibilité de nourriture et aux saisons de reproduction. Il faut aussi distinguer les espèces antarctiques des espèces arctiques : les ours polaires vivent dans l’hémisphère Nord et ne sont pas présents à l’état sauvage en Antarctique.',
+          'L’Antarctique n’a pas de population humaine autochtone ni de population permanente comparable à celle des continents habités. Des équipes scientifiques et techniques séjournent dans des stations de recherche, parfois toute l’année, parfois seulement pendant la saison estivale. Les activités sont encadrées par le système du Traité sur l’Antarctique et par des accords associés, qui organisent notamment la coopération scientifique et la protection de l’environnement. Le continent est ainsi un espace consacré principalement à la recherche, à la coopération internationale et à des activités strictement réglementées.',
+          'L’Antarctique intervient dans le fonctionnement du système climatique mondial. Sa calotte stocke une très grande quantité d’eau douce sous forme de glace ; une perte durable de glace continentale contribue à l’élévation du niveau moyen des mers. Les plateformes flottantes ne font pas monter directement le niveau marin de la même manière lorsqu’elles fondent, mais elles peuvent freiner l’écoulement des glaciers continentaux. Leur amincissement ou leur désagrégation peut donc accélérer la perte de glace reposant sur le continent. Autour de l’Antarctique, le courant circumpolaire antarctique circule d’ouest en est et contribue à isoler les eaux australes des eaux plus chaudes des latitudes inférieures.',
+          'Les changements observés en Antarctique ne sont pas uniformes. Certaines régions connaissent des pertes de glace importantes, tandis que les tendances de la banquise ont varié selon les secteurs et les périodes. Les observations récentes montrent que la banquise antarctique a connu des étendues particulièrement faibles depuis 2016, mais il serait incorrect de résumer son évolution par une augmentation continue ou une diminution identique partout. Les scientifiques étudient séparément la glace de mer, les plateformes flottantes, les glaciers et la calotte continentale, car leurs mécanismes et leurs conséquences sont différents. Cette distinction est essentielle pour interpréter correctement les mesures satellitaires et les projections climatiques.'
+        ],
+        example: {
+          statement: 'Une station scientifique mesure une épaisseur locale de glace de 3 200 m. Exprime cette valeur en kilomètres.',
+          calculation: '3 200 m ÷ 1 000 = 3,2 km.',
+          answer: 'L’épaisseur mesurée est de 3,2 km. Cette valeur est un exemple de conversion et ne représente pas l’épaisseur uniforme de toute la calotte antarctique.'
+        },
+        exercise: {
+          question: 'Pourquoi la fonte d’une plateforme de glace flottante et la fonte de glace continentale n’ont-elles pas exactement le même effet sur le niveau de la mer ?',
+          answer: 'Une plateforme flotte déjà sur l’océan : sa fonte ne provoque pas directement une hausse du niveau marin comparable à celle de la glace reposant sur le continent. En revanche, elle peut retenir partiellement les glaciers situés en amont ; si elle s’amincit ou disparaît, l’écoulement de glace continentale vers l’océan peut s’accélérer et contribuer à l’élévation du niveau marin.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence géographique fondamentale distingue l’Antarctique de l’Arctique ?',
+            answer: 'L’Antarctique est un continent entouré par l’océan Austral, tandis que l’Arctique est un océan entouré par des continents et des îles.'
+          },
+          {
+            question: 'Comment se forme une grande partie de la glace de la calotte antarctique ?',
+            answer: 'Par accumulation de neige, puis par compaction et transformation progressive de cette neige en glace sous son propre poids.'
+          },
+          {
+            question: 'Les ours polaires vivent-ils à l’état sauvage en Antarctique ?',
+            answer: 'Non. Les ours polaires appartiennent à la faune de l’Arctique, dans l’hémisphère Nord.'
+          },
+          {
+            question: 'Pourquoi l’Antarctique est-il qualifié de désert polaire ?',
+            answer: 'Parce que l’intérieur du continent reçoit très peu de précipitations, malgré la présence d’une immense couverture de glace.'
+          }
+        ],
+        sources: [
+          { title: 'British Antarctic Survey — Antarctica', url: 'https://www.bas.ac.uk/about/where-we-work/antarctica/' },
+          { title: 'Australian Antarctic Program — Antarctic geography', url: 'https://www.antarctica.gov.au/about-antarctica/geography-and-geology/geography/' },
+          { title: 'Australian Antarctic Program — Antarctic geography and geology', url: 'https://www.antarctica.gov.au/about-antarctica/geography-and-geology/' },
+          { title: 'NASA Science — Arctic and Antarctic Sea Ice: How Are They Different?', url: 'https://science.nasa.gov/earth/climate-change/arctic-and-antarctic-sea-ice-how-are-they-different/' },
+          { title: 'NOAA Climate.gov — Polar Opposites: the Arctic and Antarctic', url: 'https://www.climate.gov/news-features/understanding-climate/polar-opposites-arctic-and-antarctic' },
+          { title: 'U.S. Geological Survey — Polar Regions', url: 'https://www.usgs.gov/international-programs/polar-regions' },
+          { title: 'IPCC — Special Report on the Ocean and Cryosphere in a Changing Climate, Chapter 3: Polar regions', url: 'https://www.ipcc.ch/srocc/chapter/chapter-3-2/' },
+          { title: 'Smithsonian Ocean — The Arctic and The Antarctic', url: 'https://ocean.si.edu/ecosystems/poles/arctic-and-antarctic' }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
