@@ -61,7 +61,99 @@ window.courseCatalog = [
         title: 'Équations et inéquations du second degré',
         field: 'Algèbre',
         page: 'index.html',
-        summary: 'Forme développée, discriminant, racines, factorisation, signe et lien entre le trinôme et sa parabole.'
+        summary: 'Forme canonique, discriminant, résolution, factorisation, somme et produit des racines, signe du trinôme et résolution d’inéquations.',
+        lesson: {
+          sections: [
+            'Une fonction polynôme du second degré s’écrit f(x) = ax² + bx + c avec a ≠ 0. Sa courbe est une parabole : tournée vers le haut si a > 0, vers le bas si a < 0. Résoudre l’équation ax² + bx + c = 0, c’est chercher les abscisses où la parabole coupe l’axe des abscisses : les racines.',
+            'La forme canonique f(x) = a(x − α)² + β met en évidence le sommet S(α ; β) de la parabole. Elle s’obtient en complétant le carré, et c’est elle qui permet de démontrer toutes les formules de résolution.',
+            'Le discriminant Δ = b² − 4ac décide du nombre de racines réelles : deux si Δ > 0, une (dite double) si Δ = 0, aucune si Δ < 0. Le signe de Δ détermine donc l’allure de la parabole par rapport à l’axe des abscisses.',
+            'Quand les racines existent, le trinôme se factorise et son signe se déduit d’une règle simple : il a le signe de a à l’extérieur des racines et le signe contraire de a entre les racines. Cette règle permet de résoudre toute inéquation ax² + bx + c > 0, ≥ 0, < 0 ou ≤ 0.',
+            'Méthode pour une inéquation : 1) se ramener à un second membre nul ; 2) calculer Δ et les racines éventuelles ; 3) déterminer le signe de a ; 4) lire l’ensemble solution dans le tableau de signes en choisissant des intervalles ouverts ou fermés selon que l’inégalité est stricte ou large.',
+            'Erreurs fréquentes : oublier que a doit être non nul ; se tromper de signe en calculant −b quand b est négatif ; écrire √Δ alors que Δ < 0 ; oublier de ramener l’inéquation à un second membre nul avant d’étudier le signe ; fermer les crochets sur des racines pour une inégalité stricte.'
+          ],
+          formula: {
+            label: 'DISCRIMINANT ET RACINES',
+            text: 'Δ = b² − 4ac  |  Si Δ > 0 : x₁,₂ = (−b ± √Δ) / 2a  |  Si Δ = 0 : x₀ = −b / 2a  |  Si Δ < 0 : aucune racine réelle'
+          },
+          example: {
+            statement: 'Résoudre dans ℝ l’équation x² − 4x − 5 = 0.',
+            calculation: 'Ici a = 1, b = −4, c = −5. Δ = (−4)² − 4 × 1 × (−5) = 16 + 20 = 36, donc √Δ = 6. Alors x₁ = (4 − 6)/2 = −1 et x₂ = (4 + 6)/2 = 5.',
+            answer: 'L’ensemble des solutions est S = {−1 ; 5}.'
+          },
+          exercise: {
+            question: 'Résoudre dans ℝ l’inéquation x² − 2x − 8 < 0.',
+            answer: 'Δ = 4 + 32 = 36 ; les racines sont (2 − 6)/2 = −2 et (2 + 6)/2 = 4. Comme a = 1 > 0, le trinôme est négatif strictement entre les racines : S = ]−2 ; 4[.'
+          },
+          equationDetails: [
+            {
+              title: 'Forme canonique',
+              formula: 'ax² + bx + c = a[(x + b/2a)² − Δ/4a²] = a(x − α)² + β',
+              explanation: 'On complète le carré : a(x² + (b/a)x) + c = a[(x + b/2a)² − b²/4a²] + c. La forme canonique donne le sommet de la parabole et conduit directement à la formule des racines.',
+              parameters: 'α = −b/2a : abscisse du sommet ; β = f(α) = −Δ/4a : ordonnée du sommet ; a : coefficient dominant, non nul.',
+              example: 'Pour x² − 6x + 5 : x² − 6x + 5 = (x − 3)² − 9 + 5.',
+              result: 'x² − 6x + 5 = (x − 3)² − 4 ; le sommet est S(3 ; −4).'
+            },
+            {
+              title: 'Discriminant',
+              formula: 'Δ = b² − 4ac',
+              explanation: 'Le discriminant est le nombre qui apparaît dans la forme canonique. Son signe indique combien la parabole coupe l’axe des abscisses : deux fois (Δ > 0), une fois en son sommet (Δ = 0) ou jamais (Δ < 0).',
+              parameters: 'a, b, c : coefficients du trinôme ax² + bx + c avec a ≠ 0 ; Δ : discriminant, un réel.',
+              example: 'Pour 2x² − 3x − 2 : Δ = (−3)² − 4 × 2 × (−2) = 9 + 16.',
+              result: 'Δ = 25 > 0 : deux racines réelles distinctes.'
+            },
+            {
+              title: 'Racines réelles',
+              formula: 'Δ > 0 : x₁ = (−b − √Δ)/2a et x₂ = (−b + √Δ)/2a  |  Δ = 0 : x₀ = −b/2a',
+              explanation: 'Si Δ > 0, l’équation a deux solutions distinctes ; si Δ = 0, elle a une unique solution, la racine double, qui est l’abscisse du sommet ; si Δ < 0, elle n’a aucune solution réelle car un carré ne peut valoir un nombre négatif.',
+              parameters: 'a, b : coefficients de l’équation ; Δ : discriminant ; x₁, x₂ : racines réelles.',
+              example: 'Pour 2x² − 3x − 2 = 0 : √Δ = 5, donc x₁ = (3 − 5)/4 et x₂ = (3 + 5)/4. Pour x² + x + 1 : Δ = 1 − 4 = −3.',
+              result: 'Pour la première, S = {−1/2 ; 2}. Pour x² + x + 1 = 0, Δ < 0 : S = ∅ dans ℝ.'
+            },
+            {
+              title: 'Factorisation du trinôme',
+              formula: 'ax² + bx + c = a(x − x₁)(x − x₂)  si Δ > 0  |  a(x − x₀)²  si Δ = 0',
+              explanation: 'Lorsque le trinôme a des racines réelles, il se factorise grâce à elles. Si Δ < 0, il ne se factorise pas dans ℝ. La factorisation permet d’étudier le signe d’un produit de facteurs du premier degré.',
+              parameters: 'a : coefficient dominant ; x₁, x₂ : racines ; x₀ : racine double.',
+              example: '2x² − 3x − 2 a pour racines −1/2 et 2 : 2(x + 1/2)(x − 2).',
+              result: '2x² − 3x − 2 = (2x + 1)(x − 2).'
+            },
+            {
+              title: 'Somme et produit des racines',
+              formula: 'x₁ + x₂ = −b/a  et  x₁ × x₂ = c/a',
+              explanation: 'Ces relations relient les racines aux coefficients sans calculer Δ. Elles servent à trouver une racine quand l’autre est connue, à repérer une racine évidente ou à construire une équation de racines données.',
+              parameters: 'x₁, x₂ : racines de ax² + bx + c = 0 ; a, b, c : coefficients, a ≠ 0.',
+              example: 'Pour x² − 5x + 6 = 0, on cherche deux nombres de somme 5 et de produit 6.',
+              result: 'Les racines sont 2 et 3 : S = {2 ; 3}.'
+            },
+            {
+              title: 'Signe du trinôme',
+              formula: 'Δ > 0 : signe de a hors des racines, signe de −a entre elles  |  Δ = 0 : signe de a (nul en x₀)  |  Δ < 0 : signe de a pour tout réel x',
+              explanation: 'Le tableau de signes se déduit de la position de la parabole par rapport à l’axe des abscisses. Il permet de résoudre toutes les inéquations du second degré sans développement supplémentaire.',
+              parameters: 'a : coefficient dominant ; x₁ < x₂ : racines ; Δ : discriminant.',
+              example: 'Résoudre −x² + x + 2 ≥ 0 : Δ = 1 + 8 = 9 ; racines −1 et 2 ; a = −1 < 0, donc le trinôme est positif entre les racines.',
+              result: 'S = [−1 ; 2].'
+            },
+            {
+              title: 'Sommet et extremum',
+              formula: 'α = −b/2a  |  β = f(α)  |  a > 0 : minimum β  |  a < 0 : maximum β',
+              explanation: 'La fonction f(x) = ax² + bx + c atteint son extremum au sommet de la parabole, en x = α. Elle est décroissante puis croissante si a > 0, et croissante puis décroissante si a < 0.',
+              parameters: 'α : abscisse de l’extremum ; β : valeur de l’extremum ; a : signe qui détermine le sens de variation.',
+              example: 'Pour f(x) = x² − 4x + 3 : α = 4/2 = 2 et f(2) = 4 − 8 + 3.',
+              result: 'f admet un minimum égal à −1, atteint en x = 2.'
+            }
+          ],
+          sourcesHeading: 'Sources et programme',
+          sources: [
+            {
+              title: 'Programme de la classe de première, spécialité mathématiques (BOEN, rentrée 2026)',
+              url: 'https://www.education.gouv.fr/bo/2026/Hebdo14/MENE2602917A'
+            },
+            {
+              title: 'Wikipédia — Équation du second degré',
+              url: 'https://fr.wikipedia.org/wiki/%C3%89quation_du_second_degr%C3%A9'
+            }
+          ]
+        }
       },
       {
         id: 'premiere-derivee-locale',
