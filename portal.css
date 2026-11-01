@@ -387,6 +387,10 @@ background: #a07a52;
 background: #5e4b7a;
 }
 
+.geographie-entry .entry-symbol {
+background: var(--climate);
+}
+
 .entry-copy {
 display: grid;
 gap: 7px;
