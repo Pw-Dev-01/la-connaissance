@@ -4006,5 +4006,197 @@ url: 'https://www.usgs.gov/programs/climate-research-and-development-program/sci
 },
 
 
+{
+  id: "vortex-polaire",
+  title: "Le vortex polaire : formation, dynamique atmosphérique, effets météorologiques et ozone",
+  chapters: [
+    {
+      id: "definition-structure",
+      title: "1. Définition et structure du vortex polaire",
+      field: "Météorologie et sciences de l’atmosphère",
+      summary: "Comprendre ce qu’est le vortex polaire, où il se situe et pourquoi il faut distinguer sa composante stratosphérique des circulations de la troposphère.",
+      lesson: {
+        sections: [
+          "Le vortex polaire est une vaste circulation atmosphérique organisée autour d’une région polaire. Dans l’usage scientifique le plus précis, l’expression désigne principalement le vortex polaire stratosphérique : une circulation de vents d’ouest qui encercle l’Arctique ou l’Antarctique pendant la saison froide de chaque hémisphère. Ces vents entourent une masse d’air stratosphérique très froide et limitent, sans l’empêcher totalement, les échanges avec les latitudes plus basses. Le vortex n’est donc ni un cyclone isolé, ni une tempête unique, ni une masse d’air qui descendrait en permanence jusqu’au sol.",
+          "La stratosphère se trouve au-dessus de la troposphère, couche la plus basse de l’atmosphère où se produisent la plupart des phénomènes météorologiques ressentis au quotidien. Dans les régions polaires, la stratosphère commence approximativement vers 8 à 10 km d’altitude et s’étend jusqu’à plusieurs dizaines de kilomètres. Le vortex stratosphérique est souvent étudié entre environ 15 et 50 km, mais ses limites ne sont pas des frontières fixes : elles varient selon l’altitude, la saison et la méthode utilisée pour le définir. Il peut également s’étendre vers la mésosphère.",
+          "Il faut distinguer ce vortex stratosphérique des circulations et des dépressions de la troposphère. Certains travaux utilisent aussi l’expression « vortex polaire troposphérique » pour décrire la circulation à grande échelle autour des pôles, mais ce terme est moins uniforme dans la littérature scientifique. Pour expliquer une vague de froid à la surface, les météorologues décrivent généralement plus précisément les dépressions, les dorsales, les creux et les ondulations du courant-jet troposphérique. Confondre ces structures peut conduire à attribuer au vortex des effets qu’il ne produit pas directement.",
+          "Le vortex est caractérisé par des vents dominants d’ouest, c’est-à-dire que l’air circule globalement d’ouest en est autour du pôle. Sa limite n’est pas un mur matériel. Elle correspond à une zone de fort contraste dynamique, souvent repérée à l’aide de la vorticité potentielle, des vents et des gradients de température. À l’intérieur, l’air peut être relativement isolé ; à l’extérieur, les échanges avec les moyennes latitudes sont plus importants. Cette isolation est toutefois variable et dépend de la vigueur du vortex et des perturbations atmosphériques.",
+          "Le vortex n’est pas directement visible à l’œil nu depuis le sol. Les cartes météorologiques le représentent à partir de mesures de température, de pression, de vents et de grandeurs calculées. Les satellites, les radiosondages, les observations aériennes et les modèles numériques permettent de suivre sa forme et son intensité. Les images médiatiques montrant un tourbillon nuageux ne représentent donc pas nécessairement le vortex stratosphérique lui-même : elles peuvent montrer des nuages ou des structures météorologiques situés beaucoup plus bas."
+        ]
+      },
+      example: {
+        statement: "On étudie une portion de la stratosphère située à 30 km d’altitude. On veut exprimer cette altitude en mètres.",
+        calculation: "30 km × 1 000 m/km = 30 000 m",
+        answer: "La portion étudiée se situe à 30 000 m d’altitude. Cette valeur est un exemple d’altitude d’étude, pas une limite universelle du vortex."
+      },
+      exercise: {
+        question: "Dans quelle couche de l’atmosphère se trouve principalement le vortex polaire étudié en météorologie, et pourquoi ne faut-il pas le confondre avec le courant-jet ?",
+        answer: "Le vortex polaire désigne principalement une circulation de la stratosphère. Le courant-jet évoqué pour les prévisions météorologiques est une bande de vents forts de la troposphère, située plus bas. Les deux circulations peuvent interagir, mais elles ne sont pas identiques."
+      },
+      exercises: [
+        { question: "Le vortex stratosphérique est-il un cyclone de surface ?", answer: "Non. C’est une circulation à grande échelle située principalement dans la stratosphère." },
+        { question: "Dans quel sens soufflent généralement les vents du vortex hivernal ?", answer: "D’ouest en est, autour de la région polaire." },
+        { question: "Le bord du vortex est-il une paroi physique ?", answer: "Non. C’est une limite dynamique caractérisée par de forts gradients et des changements de circulation." },
+        { question: "Quel est l’intérêt des satellites et des radiosondages ?", answer: "Ils fournissent des observations permettant d’analyser les vents, les températures et la structure verticale de l’atmosphère." }
+      ],
+      sources: [
+        "https://journals.ametsoc.org/view/journals/bams/98/1/bams-d-15-00212.1.xml",
+        "https://ntrs.nasa.gov/citations/20220013758",
+        "https://www.climate.gov/news-features/understanding-climate/understanding-arctic-polar-vortex"
+      ]
+    },
+    {
+      id: "formation-saisons",
+      title: "2. Formation, renforcement et cycle saisonnier",
+      field: "Dynamique atmosphérique et climatologie",
+      summary: "Expliquer comment le contraste thermique entre le pôle et les moyennes latitudes met en place le vortex stratosphérique et pourquoi son évolution suit les saisons.",
+      lesson: {
+        sections: [
+          "La formation du vortex stratosphérique est liée au contraste saisonnier de chauffage entre les régions polaires et les latitudes plus basses. En automne, l’ensoleillement diminue fortement aux pôles. Pendant la nuit polaire, l’absence de rayonnement solaire direct permet à la stratosphère polaire de perdre de l’énergie par rayonnement infrarouge. L’air stratosphérique au-dessus du pôle se refroidit alors fortement par rapport à l’air des latitudes moyennes. Ce contraste thermique contribue à établir une circulation de vents d’ouest autour de la zone froide.",
+          "Au cours de l’automne et de l’hiver, le refroidissement polaire et le gradient horizontal de température favorisent le renforcement des vents circumpolaires. La circulation forme le jet de nuit polaire, souvent appelé polar night jet. Ce courant d’altitude contribue à maintenir l’air froid dans la région polaire et à limiter le mélange avec l’air plus chaud des latitudes inférieures. Le vortex peut être plus ou moins circulaire, plus ou moins centré sur le pôle et plus ou moins intense : son état dépend des échanges avec les ondes atmosphériques et de l’évolution de la température.",
+          "Au printemps, le retour progressif de la lumière solaire réchauffe la stratosphère polaire. Le contraste thermique diminue, les vents d’ouest s’affaiblissent et le vortex finit généralement par se désagréger lors du réchauffement final de printemps. En été, le vortex hivernal stratosphérique n’est généralement plus présent sous sa forme habituelle ; la circulation stratosphérique estivale est différente et les vents dominants peuvent s’inverser. Le calendrier est opposé entre les deux hémisphères : l’hiver boréal se déroule approximativement de décembre à février, tandis que l’hiver austral se déroule approximativement de juin à août.",
+          "Les deux hémisphères ne présentent pas des vortex identiques. Le vortex antarctique est généralement plus fort, plus régulier et plus durable que le vortex arctique. Dans l’hémisphère Nord, les continents, les chaînes de montagnes et les contrastes entre terres et océans génèrent davantage d’ondes atmosphériques qui remontent depuis la troposphère. Ces ondes perturbent plus fréquemment la circulation stratosphérique arctique. Dans l’hémisphère Sud, la répartition des terres et des reliefs favorise en moyenne un vortex hivernal plus stable.",
+          "Il serait incorrect de considérer que le vortex est toujours parfaitement circulaire ou qu’il possède chaque année exactement la même intensité. Il varie d’une année à l’autre et peut être déplacé, étiré, affaibli ou parfois séparé en plusieurs lobes. Ces changements résultent de la dynamique couplée de l’atmosphère et ne sont pas déterminés par la seule température moyenne au sol. Pour comparer deux hivers, les scientifiques examinent notamment les vents stratosphériques, la température, la pression et la distribution de la vorticité potentielle à des niveaux atmosphériques définis."
+        ]
+      },
+      example: {
+        statement: "On compare les saisons du vortex arctique et du vortex antarctique.",
+        calculation: "Hiver arctique : décembre à février. Hiver antarctique : juin à août.",
+        answer: "Les saisons sont inversées entre les deux hémisphères, car les deux régions polaires reçoivent leur minimum d’ensoleillement à des périodes opposées de l’année."
+      },
+      exercise: {
+        question: "Pourquoi le vortex stratosphérique se renforce-t-il généralement pendant l’hiver polaire puis s’affaiblit-il au printemps ?",
+        answer: "En hiver, l’absence de rayonnement solaire direct refroidit fortement la stratosphère polaire et renforce le contraste thermique avec les latitudes moyennes, ce qui favorise les vents d’ouest circumpolaires. Au printemps, le retour du Soleil réchauffe la région polaire, réduit ce contraste et affaiblit les vents."
+      },
+      exercises: [
+        { question: "Quel phénomène saisonnier favorise le refroidissement de la stratosphère polaire en hiver ?", answer: "La diminution puis l’absence de rayonnement solaire direct pendant la nuit polaire." },
+        { question: "À quelle saison le vortex stratosphérique se désagrège-t-il généralement ?", answer: "Au printemps, lors du réchauffement final." },
+        { question: "Pourquoi les saisons du vortex arctique et antarctique sont-elles opposées ?", answer: "Parce que les saisons sont inversées entre les hémisphères Nord et Sud." },
+        { question: "Le vortex antarctique est-il généralement plus stable que le vortex arctique ?", answer: "Oui. Il est en moyenne plus fort, plus régulier et moins perturbé par les ondes remontant de la troposphère." }
+      ],
+      sources: [
+        "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020RG000723",
+        "https://www.meteosuisse.admin.ch/meteo/meteo-et-climat-de-a-a-z/vortex-polaire.html",
+        "https://journals.ametsoc.org/view/journals/bams/98/1/bams-d-15-00212.1.xml"
+      ]
+    },
+    {
+      id: "ondes-ssw",
+      title: "3. Ondes planétaires et réchauffements stratosphériques soudains",
+      field: "Physique de l’atmosphère",
+      summary: "Étudier le rôle des ondes de Rossby, les déformations du vortex et les réchauffements stratosphériques soudains, événements majeurs de la dynamique hivernale.",
+      lesson: {
+        sections: [
+          "Le vortex stratosphérique n’évolue pas indépendamment du reste de l’atmosphère. Des perturbations de grande échelle, notamment les ondes de Rossby, peuvent se propager depuis la troposphère vers la stratosphère. Ces ondes sont liées à la rotation de la Terre et aux variations de la circulation atmosphérique. Les reliefs continentaux, les contrastes entre continents et océans ainsi que certains systèmes météorologiques contribuent à leur génération. Lorsqu’elles atteignent la stratosphère dans des conditions favorables, elles transportent de l’énergie et du moment cinétique et peuvent modifier les vents du vortex.",
+          "L’interaction entre les ondes et le courant d’ouest peut ralentir le jet de nuit polaire. Le vortex peut alors être déformé, étiré ou déplacé par rapport au pôle. Dans certains cas, il se divise en deux lobes principaux. Une division ou un déplacement ne signifie pas que l’air polaire a disparu : cela décrit une réorganisation de la circulation à une altitude donnée. La forme observée dépend du niveau de pression ou de la surface isentropique utilisée pour l’analyse ; une même perturbation peut donc présenter des aspects différents selon l’altitude.",
+          "Un réchauffement stratosphérique soudain, abrégé SSW pour sudden stratospheric warming, est une hausse rapide de la température dans la stratosphère polaire en hiver, accompagnée d’un affaiblissement marqué du vortex. Les événements majeurs sont classiquement identifiés dans l’hémisphère Nord par l’inversion du vent zonal moyen à 60°N et 10 hPa, qui passe d’ouest en est à est en ouest. Cette définition technique ne signifie pas que toute hausse rapide de température constitue automatiquement un événement majeur : les critères utilisés doivent être précisés.",
+          "Le réchauffement est lié à la dynamique de l’air qui descend au-dessus de la région polaire lorsque les vents du vortex sont fortement perturbés. En descendant, l’air est comprimé par la pression plus élevée des niveaux inférieurs et se réchauffe. La température peut augmenter de plusieurs dizaines de degrés en quelques jours dans certaines situations. Il s’agit d’un réchauffement de la stratosphère, et non d’un réchauffement soudain de la surface terrestre. Le terme ne décrit donc pas une vague de chaleur au sol.",
+          "Les scientifiques distinguent notamment les événements de déplacement et les événements de division. Dans un événement de déplacement, le centre du vortex est repoussé loin du pôle. Dans un événement de division, la circulation se sépare en deux régions principales de forte vorticité potentielle. Cette classification est utile pour comparer les événements, mais la structure réelle peut être plus complexe et évoluer avec l’altitude et le temps. Le vortex peut ensuite se reconstituer progressivement ou rester affaibli pendant plusieurs semaines.",
+          "Tous les hivers ne connaissent pas un réchauffement stratosphérique soudain majeur, et tous les réchauffements soudains n’ont pas les mêmes conséquences en surface. Le couplage entre stratosphère et troposphère dépend de la saison, de la structure de l’événement et de l’état préalable de la circulation troposphérique. Une perturbation stratosphérique peut descendre progressivement vers les niveaux inférieurs, mais elle peut aussi rester principalement confinée à la stratosphère. Les prévisions doivent donc être formulées en probabilités plutôt qu’en conséquences automatiques."
+        ]
+      },
+      example: {
+        statement: "Lors d’un événement, le vent zonal moyen mesuré à 60°N et 10 hPa passe de +20 m/s à −5 m/s. On interprète le signe du vent selon la convention météorologique habituelle : positif vers l’est, négatif vers l’ouest.",
+        calculation: "Variation = −5 m/s − (+20 m/s) = −25 m/s",
+        answer: "Le vent a diminué de 25 m/s et s’est inversé. Cette inversion satisfait le critère de vent utilisé pour identifier un réchauffement stratosphérique soudain majeur dans l’hémisphère Nord, si les autres conditions de définition sont respectées."
+      },
+      exercise: {
+        question: "Quel rôle les ondes de Rossby peuvent-elles jouer dans un réchauffement stratosphérique soudain ?",
+        answer: "En se propageant vers la stratosphère, elles peuvent transférer du moment cinétique au courant d’ouest, le ralentir et perturber le vortex. La circulation peut alors se déplacer, se déformer ou se diviser, tandis que l’air descendant se réchauffe par compression."
+      },
+      exercises: [
+        { question: "Quelles ondes atmosphériques jouent un rôle majeur dans les perturbations du vortex ?", answer: "Les ondes planétaires, notamment les ondes de Rossby." },
+        { question: "Que signifie SSW ?", answer: "Sudden Stratospheric Warming, soit réchauffement stratosphérique soudain." },
+        { question: "Quelle différence existe entre un événement de déplacement et un événement de division ?", answer: "Dans le premier, le vortex est repoussé loin du pôle ; dans le second, sa circulation se sépare en deux lobes principaux." },
+        { question: "Un SSW majeur garantit-il une vague de froid en Europe ?", answer: "Non. La réponse de la troposphère varie et une vague de froid n’est ni automatique ni garantie." }
+      ],
+      sources: [
+        "https://gmao.gsfc.nasa.gov/science-snapshots/sudden-stratospheric-warming-event/",
+        "https://rmets.onlinelibrary.wiley.com/doi/10.1002/wea.3868",
+        "https://repository.library.noaa.gov/view/noaa/40993/noaa_40993_DS1.pdf",
+        "https://wcd.copernicus.org/articles/7/895/2026/wcd-7-895-2026.html"
+      ]
+    },
+    {
+      id: "effets-meteo",
+      title: "4. Interactions avec le courant-jet et effets sur la météo",
+      field: "Prévision météorologique et circulation générale",
+      summary: "Comprendre dans quelles conditions une perturbation du vortex peut influencer les courants-jets et contribuer à des épisodes froids aux moyennes latitudes, sans établir de lien automatique.",
+      lesson: {
+        sections: [
+          "Les effets météorologiques du vortex polaire sont indirects et dépendent de l’interaction entre la stratosphère et la troposphère. Le courant-jet polaire troposphérique est une bande de vents rapides qui circule généralement d’ouest en est dans les moyennes et hautes latitudes. Il se situe beaucoup plus bas que le vortex stratosphérique et joue un rôle important dans le déplacement des dépressions et des masses d’air. Une perturbation du vortex peut modifier les probabilités de certains régimes de circulation, mais elle ne commande pas seule le temps qu’il fera dans une région donnée.",
+          "Lorsque le vortex stratosphérique est fort et relativement compact, les vents d’ouest stratosphériques sont généralement intenses et la circulation polaire est mieux organisée. Dans certaines configurations, le courant-jet troposphérique reste plus zonal, c’est-à-dire orienté davantage d’ouest en est. Cette association statistique ne doit pas être transformée en règle absolue : la météo de surface dépend également des systèmes de pression, de l’océan, de l’humidité, de la saison et de la variabilité naturelle de la troposphère.",
+          "Lorsque le vortex est affaibli, déplacé ou divisé, des changements de circulation peuvent se développer dans la stratosphère puis, dans certains cas, se propager vers la troposphère. Le courant-jet peut alors devenir plus ondulé, avec des creux et des dorsales plus marqués. Un creux peut favoriser la descente d’air froid vers des latitudes plus basses, tandis qu’une dorsale peut favoriser une remontée d’air plus doux vers le nord. La position exacte de ces structures détermine quelles régions sont concernées ; une perturbation du vortex ne signifie donc pas que toutes les régions de l’hémisphère Nord connaîtront simultanément du froid.",
+          "Une vague de froid est un épisode météorologique défini par des températures anormalement basses pour une région et une période données, selon des critères climatologiques adaptés. Elle peut être associée à une circulation favorisant l’advection d’air polaire, c’est-à-dire le transport horizontal d’air froid vers une région. Les causes immédiates sont les configurations de pression et les déplacements des masses d’air dans la troposphère. Le vortex stratosphérique peut contribuer à modifier le contexte de grande échelle, mais il n’est pas la cause directe et unique de chaque vague de froid.",
+          "Les conséquences d’un réchauffement stratosphérique soudain peuvent apparaître avec un délai de plusieurs jours à plusieurs semaines, ou ne pas être clairement détectables à la surface. Les prévisionnistes examinent les prévisions d’ensemble, qui simulent plusieurs évolutions possibles de l’atmosphère, ainsi que les anomalies de vent et de pression à différentes altitudes. Cette méthode permet d’estimer les scénarios les plus probables et leur incertitude. Une prévision fiable ne consiste pas à annoncer mécaniquement une vague de froid dès qu’un SSW est observé.",
+          "Pour l’Europe, la position des blocages anticycloniques et des dépressions sur l’Atlantique Nord, l’Europe et l’Eurasie est déterminante. Selon leur emplacement, l’Europe peut connaître un flux froid continental, un flux océanique doux et humide, ou une situation contrastée entre régions. L’Amérique du Nord et l’Asie peuvent connaître d’autres configurations au même moment. Il est donc nécessaire de consulter les prévisions météorologiques régionales plutôt que de déduire les conditions locales du seul état du vortex polaire."
+        ]
+      },
+      example: {
+        statement: "Un bulletin indique qu’un réchauffement stratosphérique soudain est observé. Peut-on en déduire qu’une vague de froid touchera nécessairement Paris dans les jours suivants ?",
+        calculation: "SSW observé ≠ vague de froid automatique",
+        answer: "Non. Il faut vérifier si la perturbation se propage vers la troposphère et examiner la configuration des courants-jets, des dépressions et des anticyclones. Le signal stratosphérique modifie éventuellement les probabilités, mais ne suffit pas à établir une prévision locale."
+      },
+      exercise: {
+        question: "Pourquoi une perturbation du vortex polaire ne provoque-t-elle pas systématiquement une vague de froid dans toutes les régions des moyennes latitudes ?",
+        answer: "Parce que le couplage entre stratosphère et troposphère n’est pas systématique et que les effets dépendent de la position des creux, des dorsales, des dépressions et des anticyclones. Les régions ne sont donc pas toutes exposées au même type de circulation."
+      },
+      exercises: [
+        { question: "Dans quelle couche se trouve le courant-jet qui influence directement une grande partie de la météo quotidienne ?", answer: "Dans la troposphère." },
+        { question: "Que signifie une circulation zonale ?", answer: "Une circulation principalement orientée d’ouest en est, avec des ondulations relativement limitées." },
+        { question: "Que peut favoriser un creux du courant-jet ?", answer: "Selon sa position et la situation météorologique, il peut favoriser la progression d’air froid vers des latitudes plus basses." },
+        { question: "Quel outil aide à représenter l’incertitude des prévisions ?", answer: "Les prévisions d’ensemble, qui comparent plusieurs scénarios possibles." }
+      ],
+      sources: [
+        "https://www.climate.gov/news-features/understanding-climate/understanding-arctic-polar-vortex",
+        "https://www.meteosuisse.admin.ch/meteo/meteo-et-climat-de-a-a-z/vortex-polaire.html",
+        "https://journals.ametsoc.org/view/journals/bams/98/1/bams-d-15-00212.1.xml",
+        "https://www.weather.gov/safety/cold-polar-vortex"
+      ]
+    },
+    {
+      id: "hemispheres-ozone-observation",
+      title: "5. Arctique, Antarctique, ozone et observation scientifique",
+      field: "Chimie atmosphérique et sciences du climat",
+      summary: "Comparer les vortex des deux hémisphères, comprendre leur rôle dans l’appauvrissement saisonnier de l’ozone et découvrir les méthodes de surveillance.",
+      lesson: {
+        sections: [
+          "Le vortex antarctique est généralement plus froid, plus intense et plus stable que le vortex arctique. La géographie de l’hémisphère Nord, avec ses grandes chaînes de montagnes et ses contrastes entre continents et océans, favorise la génération d’ondes planétaires qui perturbent la stratosphère. L’hémisphère Sud présente une répartition différente des terres et des reliefs ; les ondes qui remontent vers la stratosphère y sont en moyenne moins perturbatrices. Le vortex antarctique tend donc à isoler plus efficacement l’air froid pendant l’hiver austral.",
+          "Cette isolation et les très basses températures de la stratosphère antarctique favorisent la formation de nuages stratosphériques polaires. Ces nuages sont constitués de particules contenant notamment de l’eau et de l’acide nitrique, sous différentes phases selon les conditions. À leur surface, des réactions chimiques transforment des composés chlorés relativement stables en formes de chlore plus réactives. Lorsque la lumière solaire revient au printemps austral, ces composés participent à des réactions catalytiques qui détruisent rapidement l’ozone stratosphérique. Le vortex contribue ainsi à créer et à maintenir les conditions météorologiques favorables à l’appauvrissement de l’ozone, mais il n’est pas à lui seul la source des substances chlorées : celles-ci proviennent principalement de composés émis par les activités humaines, notamment les anciens CFC.",
+          "Le trou d’ozone antarctique est une forte diminution saisonnière de la quantité d’ozone dans la stratosphère, surtout à la fin de l’hiver et au printemps austral. Le terme « trou » ne signifie pas une ouverture vide dans l’atmosphère. Il désigne une région où la concentration ou la colonne totale d’ozone devient particulièrement faible selon les seuils scientifiques utilisés. Le phénomène est particulièrement marqué au-dessus de l’Antarctique parce que le vortex y est durable, les températures stratosphériques y sont très basses et les nuages stratosphériques polaires peuvent s’y former sur une vaste zone.",
+          "L’Arctique peut lui aussi connaître un appauvrissement important de l’ozone en certains hivers, lorsque la stratosphère devient exceptionnellement froide et que le vortex est suffisamment stable. Cependant, les perturbations dynamiques y sont en moyenne plus fréquentes et réchauffent plus souvent la stratosphère, ce qui limite la durée et l’étendue des conditions favorables à une destruction massive de l’ozone. L’intensité de l’appauvrissement arctique varie donc fortement d’un hiver à l’autre et ne reproduit pas systématiquement la situation antarctique.",
+          "Le Protocole de Montréal, adopté en 1987, a organisé la réduction puis l’élimination progressive de nombreuses substances qui appauvrissent la couche d’ozone, dont les CFC. Cette action internationale permet une récupération progressive de la couche d’ozone, mais les substances déjà émises persistent longtemps dans l’atmosphère. La taille et la durée du trou d’ozone varient encore d’une année à l’autre en fonction de la température stratosphérique, de la circulation du vortex et de la quantité de substances destructrices d’ozone encore présentes. Il faut donc distinguer la tendance à long terme de la variabilité météorologique annuelle.",
+          "La surveillance du vortex et de l’ozone repose sur des mesures satellitaires, des ballons-sondes, des instruments au sol et des analyses de modèles. Les scientifiques suivent notamment la température stratosphérique, la vitesse des vents zonaux, la quantité totale d’ozone et la présence de nuages stratosphériques polaires. Les cartes de vorticité potentielle aident à localiser la limite dynamique du vortex. En combinant ces données, les chercheurs peuvent étudier les échanges entre les régions polaires et les moyennes latitudes, évaluer les conditions favorables à la destruction de l’ozone et améliorer les prévisions saisonnières.",
+          "Le vortex polaire est enfin un élément important du système climatique, mais son évolution ne doit pas être résumée par une formule simpliste telle que « le réchauffement climatique affaiblit toujours le vortex » ou « un vortex faible provoque toujours des hivers froids ». Les relations entre changement climatique, circulation stratosphérique, ondes planétaires et météo de surface sont complexes et varient selon l’hémisphère, la saison et les périodes étudiées. Les conclusions scientifiques reposent sur des observations longues, des simulations et des analyses statistiques, avec des incertitudes qui doivent être explicitées."
+        ]
+      },
+      example: {
+        statement: "Une équipe compare les conditions de formation des nuages stratosphériques polaires au-dessus de l’Antarctique et de l’Arctique.",
+        calculation: "Vortex antarctique : généralement plus froid et plus stable. Vortex arctique : généralement plus perturbé et plus variable.",
+        answer: "Les conditions favorables à un appauvrissement très important de l’ozone sont plus souvent réunies et maintenues au-dessus de l’Antarctique. L’Arctique peut néanmoins connaître des pertes marquées lors d’hivers particulièrement froids."
+      },
+      exercise: {
+        question: "Pourquoi le trou d’ozone est-il généralement plus important au-dessus de l’Antarctique qu’au-dessus de l’Arctique ?",
+        answer: "Le vortex antarctique est généralement plus stable et la stratosphère y atteint des températures plus basses. Cela favorise la formation de nuages stratosphériques polaires et l’activation chimique du chlore. Au retour de la lumière solaire, les réactions catalytiques détruisent rapidement l’ozone."
+      },
+      exercises: [
+        { question: "Quel rôle les nuages stratosphériques polaires jouent-ils dans la destruction de l’ozone ?", answer: "Leurs surfaces favorisent des réactions qui convertissent des composés chlorés en formes plus réactives capables de participer à la destruction de l’ozone lorsque la lumière revient." },
+        { question: "Le trou d’ozone est-il un trou vide dans l’atmosphère ?", answer: "Non. C’est une région où la quantité d’ozone stratosphérique est fortement diminuée." },
+        { question: "Pourquoi l’appauvrissement de l’ozone arctique varie-t-il fortement selon les années ?", answer: "Parce que les températures et la stabilité du vortex arctique varient fortement d’un hiver à l’autre." },
+        { question: "Quel accord international a organisé la réduction des substances appauvrissant la couche d’ozone ?", answer: "Le Protocole de Montréal, adopté en 1987." }
+      ],
+      sources: [
+        "https://csl.noaa.gov/assessments/ozone/2022/twentyquestions/",
+        "https://science.nasa.gov/earth/explore/nasa-knows-the-ozone-hole/",
+        "https://ozonewatch.gsfc.nasa.gov/facts/vortex_NH.html",
+        "https://ozonewatch.gsfc.nasa.gov/meteorology/SH.html",
+        "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020RG000723",
+        "https://www.dcceew.gov.au/environment/protection/ozone/ozone-science/antarctic-ozone-hole"
+      ]
+    }
+  ]
+},
+
+
 ]
 
