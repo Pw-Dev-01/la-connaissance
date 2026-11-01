@@ -1,749 +1,461 @@
 window.courseCatalog = [
+  // BRANCHE UNIQUE : LES GRANDS FLEUVES
   {
     id: 'grands-fleuves',
-    title: 'Les grands fleuves du monde : caractéristiques et impacts sur les sociétés humaines',
-    note: 'Étude géographique approfondie de 10 grands fleuves. Analyse de leur localisation, de leur bassin versant, de leur fonctionnement hydrologique, de leurs ressources, de leurs aménagements et de leurs impacts sur les sociétés humaines.',
+    title: 'Les grands fleuves du monde : caractéristiques, fonctionnement et impacts sur les sociétés humaines',
+    note: 'Dix chapitres consacrés à dix grands systèmes fluviaux du monde. Chaque chapitre étudie la localisation du fleuve, son bassin versant, son régime hydrologique, ses milieux naturels, les activités humaines liées à ses eaux et les enjeux de gestion. Les longueurs et les superficies de bassins peuvent varier selon les méthodes de mesure et les limites retenues.',
     chapters: [
+
+      // CHAPITRE 1 : AMAZONe
       {
         id: 'amazone',
-        title: 'L’Amazone : le géant fluvial de l’Amérique du Sud',
-        field: 'Géographie physique et humaine',
-        summary: 'Étudier le bassin amazonien, son débit exceptionnel, ses écosystèmes tropicaux, ses populations riveraines et les enjeux environnementaux.',
+        title: 'L’Amazone : un fleuve majeur au cœur de la forêt tropicale',
+        field: 'Amérique du Sud · Bassin amazonien · Océan Atlantique',
+        summary: 'Étudier le fonctionnement du système amazonien, son immense bassin versant, ses variations saisonnières, son rôle écologique et son importance pour les populations. Comprendre les conséquences de la déforestation, des aménagements et du changement climatique.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et caractéristiques géographiques',
-              content: 'L’Amazone se situe en Amérique du Sud. Il prend sa source dans les Andes et traverse principalement le Pérou et le Brésil avant de se jeter dans l’océan Atlantique. Son bassin hydrographique couvre plusieurs pays et représente l’un des plus vastes bassins fluviaux de la planète. Sa longueur est estimée à environ 6 400 km, selon les méthodes de mesure.'
-            },
-            {
-              title: '2. Un débit exceptionnel',
-              content: 'L’Amazone possède le débit moyen le plus important du monde. Il reçoit les eaux de nombreux affluents, notamment le Rio Negro, le Madeira et le Tapajós. Les précipitations équatoriales alimentent son réseau hydrographique. Les variations saisonnières des pluies provoquent des crues qui peuvent inonder de vastes surfaces.'
-            },
-            {
-              title: '3. Les écosystèmes du bassin amazonien',
-              content: 'Le bassin amazonien abrite une immense forêt tropicale, des zones humides et des milieux aquatiques particulièrement riches en biodiversité. Les crues saisonnières permettent des échanges entre le fleuve et les forêts inondables. Ces écosystèmes jouent un rôle majeur dans les cycles de l’eau et du carbone.'
-            },
-            {
-              title: '4. Les populations et les activités économiques',
-              content: 'Les populations riveraines utilisent le fleuve pour la pêche, le transport, l’approvisionnement en eau et certaines activités agricoles. La navigation est particulièrement importante dans les régions où les infrastructures routières sont limitées. Des villes comme Manaus se sont développées grâce à leur position sur le réseau fluvial.'
-            },
-            {
-              title: '5. Les pressions environnementales',
-              content: 'La déforestation, l’exploitation minière, les barrages et les pollutions menacent certains milieux du bassin. Ces activités peuvent modifier les habitats naturels et perturber les migrations des espèces aquatiques. La protection de l’Amazone nécessite une coopération entre les pays concernés.'
-            }
+            'L’Amazone est le principal fleuve d’Amérique du Sud par le volume d’eau qu’il transporte. Son cours prend naissance dans les Andes, dans l’ouest de l’Amérique du Sud, puis traverse principalement le Pérou et le Brésil avant de rejoindre l’océan Atlantique. Son bassin versant est immense : il collecte les eaux d’un vaste territoire comprenant des reliefs andins, des plaines et de grandes zones forestières. Les limites exactes du bassin et les mesures de longueur du fleuve peuvent varier selon les méthodes cartographiques utilisées. Il faut donc distinguer la longueur du cours principal de l’étendue du bassin hydrographique.',
+            'Le bassin amazonien reçoit des précipitations abondantes, mais celles-ci ne sont pas réparties uniformément au cours de l’année ni dans toutes les régions. Les pluies alimentent le fleuve directement et par l’intermédiaire de très nombreux affluents. Les eaux montent et descendent selon les saisons et les régions du bassin. Dans les plaines inondables, ces variations recouvrent périodiquement de vastes espaces. Ces inondations saisonnières font partie du fonctionnement naturel du fleuve : elles transportent des sédiments, renouvellent certains milieux et participent au cycle de vie de nombreuses espèces.',
+            'L’Amazone et ses affluents forment un réseau hydrographique complexe. Un affluent est un cours d’eau qui se jette dans un autre cours d’eau. Le bassin comprend des cours d’eau issus des Andes et d’autres provenant des régions de plaines et de plateaux. Les eaux transportent des sédiments et des matières organiques depuis les reliefs jusqu’aux zones basses. Les caractéristiques de l’eau varient selon l’origine des cours d’eau, les sols traversés et les matières transportées. Le fleuve ne doit donc pas être considéré comme un milieu uniforme : ses eaux, ses berges, ses plaines inondables et ses forêts riveraines forment des environnements différents mais connectés.',
+            'Le système amazonien joue un rôle écologique majeur. La forêt, les zones humides, les cours d’eau et les plaines inondables accueillent une biodiversité très importante. Les milieux aquatiques fournissent des habitats et des ressources alimentaires à de nombreuses espèces. Les populations riveraines utilisent les cours d’eau pour la pêche, les déplacements, l’approvisionnement en eau et certaines activités agricoles. Dans plusieurs régions, le transport fluvial est essentiel parce que les distances sont grandes et que les routes sont peu nombreuses ou difficiles à construire. Les fleuves constituent ainsi des axes de circulation et des ressources indispensables à de nombreuses communautés.',
+            'Le bassin amazonien subit différentes pressions : déforestation, extension agricole et pastorale, exploitation minière, construction d’infrastructures et pollution. La disparition de la forêt modifie les sols, les habitats et les échanges d’eau entre la végétation et l’atmosphère. Les barrages peuvent transformer les écoulements, fragmenter les milieux aquatiques et gêner les déplacements de certaines espèces. Le changement climatique peut également modifier les précipitations, les sécheresses et les crues. La gestion du bassin nécessite donc de concilier les besoins des populations, les activités économiques et la protection des écosystèmes.'
           ],
           example: {
-            title: 'Exemple : Manaus',
-            content: 'Manaus, au Brésil, est située au bord du Rio Negro, près de sa confluence avec l’Amazone. Sa position en fait un centre important de navigation et d’échanges commerciaux dans le bassin amazonien.'
+            statement: 'Une carte montre qu’un affluent prend naissance dans les Andes et rejoint l’Amazone dans une vaste plaine. Quel rôle joue cet affluent dans le fonctionnement du bassin ?',
+            calculation: 'Un affluent collecte les eaux de son propre bassin versant et les apporte au cours d’eau principal. Le bassin de l’affluent fait donc partie du bassin versant de l’Amazone.',
+            answer: 'L’affluent augmente les apports en eau de l’Amazone et contribue au fonctionnement de son réseau hydrographique. Il peut aussi transporter des sédiments et des matières provenant des territoires qu’il traverse.'
           },
           exercise: {
-            question: 'Explique pourquoi l’Amazone est à la fois une ressource majeure pour les populations et un milieu naturel fragile.',
-            expectedAnswer: 'L’Amazone fournit de l’eau, des ressources alimentaires et des voies de transport. Cependant, la déforestation, l’exploitation minière et la pollution menacent ses écosystèmes et les populations qui en dépendent.'
+            question: 'Pourquoi les variations saisonnières du niveau de l’Amazone sont-elles importantes pour les milieux naturels et les populations riveraines ?',
+            answer: 'Elles commandent l’inondation périodique de certaines plaines, renouvellent des milieux, influencent les habitats et les ressources de pêche. Elles modifient également les déplacements, les activités agricoles et les conditions de circulation des populations riveraines.'
           },
           exercises: [
             {
-              question: 'Sur quel continent se trouve l’Amazone ?',
-              answer: 'En Amérique du Sud.'
+              question: 'Dans quelle partie de l’Amérique du Sud se trouve le bassin de l’Amazone ?',
+              answer: 'Il se trouve dans le nord et le centre de l’Amérique du Sud.'
             },
             {
-              question: 'Dans quel océan se jette-t-il ?',
-              answer: 'Dans l’océan Atlantique.'
+              question: 'Qu’est-ce qu’un bassin versant ?',
+              answer: 'C’est le territoire dont les eaux s’écoulent vers un même cours d’eau principal, directement ou par l’intermédiaire de ses affluents.'
             },
             {
-              question: 'Quelle caractéristique hydrologique le distingue particulièrement ?',
-              answer: 'Il possède le débit moyen le plus important du monde.'
-            },
-            {
-              question: 'Cite 2 affluents de l’Amazone.',
-              answer: 'Le Rio Negro et le Madeira.'
-            },
-            {
-              question: 'Cite 2 activités humaines liées au fleuve.',
-              answer: 'La pêche et le transport fluvial.'
+              question: 'Cite deux pressions humaines qui affectent le bassin amazonien.',
+              answer: 'La déforestation et l’exploitation minière sont deux exemples. L’agriculture, les infrastructures et la pollution constituent également des pressions.'
             }
           ],
           sources: [
-            {
-              title: 'Encyclopaedia Britannica - Amazon River',
-              url: 'https://www.britannica.com/place/Amazon-River'
-            },
-            {
-              title: 'WWF - Amazon',
-              url: 'https://www.worldwildlife.org/places/amazon'
-            },
-            {
-              title: 'NASA Earth Observatory',
-              url: 'https://earthobservatory.nasa.gov/'
-            }
+            { title: 'NASA Earth Observatory — Amazon River', url: 'https://earthobservatory.nasa.gov/' },
+            { title: 'WWF — Amazon', url: 'https://www.worldwildlife.org/places/amazon' },
+            { title: 'Encyclopaedia Britannica — Amazon River', url: 'https://www.britannica.com/place/Amazon-River' }
           ]
         }
       },
+
+      // CHAPITRE 2 : NIL
       {
         id: 'nil',
-        title: 'Le Nil : un fleuve essentiel à l’histoire et au développement de l’Afrique',
-        field: 'Géographie physique et humaine',
-        summary: 'Étudier le bassin du Nil, ses deux grands cours d’eau amont, son rôle dans les régions arides et les enjeux internationaux de partage de l’eau.',
+        title: 'Le Nil : un fleuve essentiel aux sociétés d’Afrique du Nord-Est',
+        field: 'Afrique · Afrique de l’Est et Afrique du Nord-Est · Mer Méditerranée',
+        summary: 'Comprendre l’organisation du bassin du Nil, la rencontre du Nil Blanc et du Nil Bleu, les variations de son débit, son rôle dans les sociétés et les enjeux de partage de l’eau entre les pays riverains.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et parcours',
-              content: 'Le Nil se trouve dans le nord-est de l’Afrique. Il traverse plusieurs pays avant de rejoindre la mer Méditerranée par un vaste delta en Égypte. Son bassin hydrographique concerne plusieurs États et traverse des régions climatiques très différentes.'
-            },
-            {
-              title: '2. Le Nil Blanc et le Nil Bleu',
-              content: 'Le système du Nil comprend notamment le Nil Blanc et le Nil Bleu. Le Nil Blanc est associé aux régions des grands lacs d’Afrique orientale. Le Nil Bleu prend sa source dans les hautes terres éthiopiennes. Les deux cours d’eau se rejoignent à Khartoum, au Soudan.'
-            },
-            {
-              title: '3. Le fleuve dans un environnement aride',
-              content: 'Le Nil traverse des espaces où les précipitations sont faibles, particulièrement en Égypte et au Soudan. Dans ces régions, le fleuve constitue une ressource essentielle pour les populations. La vallée et le delta concentrent les terres agricoles et une grande partie de l’occupation humaine.'
-            },
-            {
-              title: '4. Le rôle économique et historique',
-              content: 'Le Nil a permis le développement de l’agriculture égyptienne depuis l’Antiquité. Aujourd’hui, il contribue à l’irrigation, à l’approvisionnement des villes, à la pêche et à la production hydroélectrique. Les activités humaines se concentrent largement autour de sa vallée.'
-            },
-            {
-              title: '5. Les tensions autour du partage de l’eau',
-              content: 'Les pays du bassin dépendent de cette ressource pour leur développement. Les barrages, les besoins agricoles, la croissance démographique et les variations climatiques rendent la gestion de l’eau complexe. Une coopération internationale est nécessaire pour organiser durablement son utilisation.'
-            }
+            'Le Nil est un grand système fluvial d’Afrique qui s’écoule globalement du sud vers le nord et rejoint la mer Méditerranée. Son bassin s’étend sur plusieurs pays et traverse des milieux très contrastés : régions de hauts plateaux, lacs, zones humides, savanes et espaces arides. Le fleuve est souvent présenté comme un axe majeur de l’Afrique du Nord-Est. Il faut cependant distinguer le cours principal du Nil, ses affluents et l’ensemble de son bassin versant, qui couvre un territoire beaucoup plus vaste que la vallée visible du fleuve.',
+            'Le système du Nil repose notamment sur 2 grands ensembles hydrographiques : le Nil Blanc et le Nil Bleu. Le Nil Blanc est lié aux régions des grands lacs d’Afrique orientale et traverse notamment des zones humides. Le Nil Bleu prend sa source dans les hautes terres d’Éthiopie et apporte une part importante des eaux et des sédiments du fleuve, particulièrement pendant la saison des pluies éthiopiennes. Les 2 cours d’eau se rejoignent à Khartoum, au Soudan. D’autres affluents, comme l’Atbara, contribuent également aux apports du système.',
+            'Le régime du Nil dépend de conditions climatiques différentes selon les régions de son bassin. Les pluies tropicales et les précipitations des hautes terres éthiopiennes ne se produisent pas partout au même moment. Les apports du Nil Bleu et de l’Atbara varient fortement au cours de l’année. Dans les régions situées plus au nord, les précipitations sont faibles et l’évaporation est importante. Le fleuve devient alors une ressource fondamentale dans des espaces où l’eau disponible localement est limitée. Les barrages et les réservoirs modifient aujourd’hui la répartition saisonnière des écoulements.',
+            'Depuis l’Antiquité, la vallée du Nil constitue un espace majeur de peuplement et de production agricole. Les sols alluviaux et l’accès à l’eau ont favorisé l’agriculture dans des régions souvent arides. Le fleuve sert à l’irrigation, à l’approvisionnement des villes, à la pêche, au transport et à la production d’électricité. Les aménagements hydrauliques ont permis de réguler une partie des écoulements et de développer l’irrigation toute l’année. Ils ont aussi transformé les paysages, les dépôts de sédiments et les relations entre le fleuve et les plaines inondables.',
+            'Le Nil est partagé par plusieurs États, ce qui rend sa gestion complexe. Les besoins en eau augmentent avec la croissance démographique, l’urbanisation, l’agriculture et les activités économiques. Les barrages peuvent fournir de l’électricité et contribuer à la régulation des débits, mais leur fonctionnement peut modifier les conditions d’écoulement en aval et entraîner des négociations entre pays. Les enjeux portent sur la coopération, le partage des données, la sécurité de l’approvisionnement et la protection des écosystèmes. Une gestion durable doit tenir compte de l’ensemble du bassin et des besoins des populations situées en amont comme en aval.'
           ],
           example: {
-            title: 'Exemple : le barrage d’Assouan',
-            content: 'Le haut barrage d’Assouan, en Égypte, permet de produire de l’électricité et de réguler une partie des eaux du Nil. Il contribue à l’irrigation mais modifie aussi le transport naturel des sédiments vers l’aval.'
+            statement: 'Le Nil Blanc et le Nil Bleu se rejoignent à Khartoum. Pourquoi cette confluence est-elle importante pour comprendre le fonctionnement du fleuve ?',
+            calculation: 'Une confluence est le point où 2 cours d’eau se rejoignent. À partir de cette rencontre, le cours d’eau situé en aval reçoit les apports des 2 systèmes.',
+            answer: 'La confluence de Khartoum réunit 2 branches majeures du système fluvial. Le débit du Nil en aval dépend donc des apports combinés du Nil Blanc, du Nil Bleu et des autres affluents.'
           },
           exercise: {
-            question: 'Pourquoi le Nil est-il une ressource stratégique pour les pays de son bassin ?',
-            expectedAnswer: 'Il fournit de l’eau pour les populations, l’agriculture et les activités économiques. Comme plusieurs États partagent cette ressource, sa gestion nécessite des accords et une coopération.'
+            question: 'Pourquoi la gestion de l’eau du Nil nécessite-t-elle une coopération entre plusieurs pays ?',
+            answer: 'Parce que le bassin traverse plusieurs États. Les prélèvements, les barrages, l’irrigation et les variations de débit dans une partie du bassin peuvent avoir des conséquences sur les autres territoires.'
           },
           exercises: [
             {
-              question: 'Dans quelle région d’Afrique se trouve le Nil ?',
-              answer: 'Dans le nord-est de l’Afrique.'
+              question: 'Dans quelle mer le Nil se jette-t-il ?',
+              answer: 'Le Nil se jette dans la mer Méditerranée.'
             },
             {
-              question: 'Dans quelle mer se jette-t-il ?',
-              answer: 'Dans la mer Méditerranée.'
+              question: 'Où le Nil Blanc et le Nil Bleu se rejoignent-ils ?',
+              answer: 'Ils se rejoignent à Khartoum, au Soudan.'
             },
             {
-              question: 'Quels sont les deux grands cours d’eau qui se rejoignent à Khartoum ?',
-              answer: 'Le Nil Blanc et le Nil Bleu.'
-            },
-            {
-              question: 'Pourquoi le Nil est-il important pour l’agriculture égyptienne ?',
-              answer: 'Il fournit l’eau nécessaire à l’irrigation dans un environnement largement désertique.'
-            },
-            {
-              question: 'Quel est le rôle du barrage d’Assouan ?',
-              answer: 'Il permet notamment de réguler l’eau et de produire de l’électricité.'
+              question: 'Cite 2 usages importants de l’eau du Nil.',
+              answer: 'L’irrigation agricole et l’approvisionnement en eau des populations. La production hydroélectrique, la pêche et le transport sont également importants.'
             }
           ],
           sources: [
-            {
-              title: 'Encyclopaedia Britannica - Nile River',
-              url: 'https://www.britannica.com/place/Nile-River'
-            },
-            {
-              title: 'Nile Basin Initiative',
-              url: 'https://nilebasin.org/'
-            },
-            {
-              title: 'FAO',
-              url: 'https://www.fao.org/'
-            }
+            { title: 'Nile Basin Initiative — The Nile Basin', url: 'https://nilebasin.org/about/nile-basin' },
+            { title: 'Nile Basin Initiative — Major Subbasins', url: 'https://nilebasin.org/en/media-center/maps/major-subbasins' },
+            { title: 'Encyclopaedia Britannica — Nile River', url: 'https://www.britannica.com/place/Nile-River' }
           ]
         }
       },
+
+      // CHAPITRE 3 : YANGTSE
       {
         id: 'yangtse',
-        title: 'Le Yangtsé : le grand axe fluvial de la Chine',
-        field: 'Géographie physique et humaine',
-        summary: 'Comprendre le parcours du Yangtsé, son rôle économique, les grandes villes de son bassin et les conséquences des aménagements hydrauliques.',
+        title: 'Le Yangtsé : un axe majeur de la Chine',
+        field: 'Asie · Chine · Mer de Chine orientale',
+        summary: 'Étudier le plus long fleuve d’Asie, son parcours à travers la Chine, son rôle économique, ses aménagements hydroélectriques et les conséquences environnementales de la transformation de son bassin.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et parcours',
-              content: 'Le Yangtsé, également appelé Chang Jiang, se trouve en Chine. Il prend sa source sur les hauts plateaux de l’ouest du pays et traverse la Chine d’ouest en est avant de rejoindre la mer de Chine orientale, près de Shanghai. Sa longueur est d’environ 6 300 km.'
-            },
-            {
-              title: '2. Les caractéristiques du bassin',
-              content: 'Le bassin du Yangtsé comprend des montagnes, des gorges, des plateaux et de vastes plaines. Ses nombreux affluents alimentent le fleuve. Les précipitations saisonnières influencent les débits et peuvent provoquer des crues importantes.'
-            },
-            {
-              title: '3. Un axe économique majeur',
-              content: 'Le Yangtsé facilite le transport des marchandises entre les régions intérieures et la côte orientale. Son bassin comprend des régions agricoles, industrielles et urbaines très importantes. Chongqing, Wuhan et Shanghai sont notamment liées à cet axe fluvial.'
-            },
-            {
-              title: '4. Les grands aménagements',
-              content: 'Le barrage des Trois-Gorges constitue l’un des principaux aménagements du fleuve. Il permet la production hydroélectrique et participe à la gestion des eaux. Les infrastructures fluviales facilitent également la navigation et les échanges économiques.'
-            },
-            {
-              title: '5. Les enjeux environnementaux',
-              content: 'La pollution, l’urbanisation, les barrages et la modification des habitats représentent des enjeux importants. Les aménagements peuvent perturber le transport des sédiments et les déplacements des espèces aquatiques. La protection du bassin nécessite une gestion intégrée des ressources.'
-            }
+            'Le Yangtsé, également appelé Yang-Tsé-Kiang ou Chang Jiang, est le plus long fleuve d’Asie. Il prend sa source sur le plateau tibétain, dans les régions montagneuses de l’ouest de la Chine, puis traverse le pays vers l’est avant de rejoindre la mer de Chine orientale près de Shanghai. Son bassin versant couvre une vaste partie du territoire chinois. Le fleuve traverse des paysages variés : hauts reliefs, gorges, bassins intérieurs, plaines agricoles et grandes régions urbaines. Cette diversité explique les différences de pente, de vitesse d’écoulement et d’usages entre les parties amont, moyenne et aval.',
+            'Le bassin du Yangtsé reçoit des eaux issues des précipitations, de la fonte saisonnière des neiges et des glaciers dans les régions d’altitude, ainsi que de nombreux affluents. Les pluies de mousson jouent un rôle important dans les variations saisonnières du débit. Les précipitations peuvent être très abondantes dans certaines parties du bassin et provoquer des crues. Dans les plaines et les zones basses, les débordements peuvent affecter les terres agricoles, les infrastructures et les villes. Les lacs et les zones humides connectés au fleuve contribuent au fonctionnement hydrologique et écologique du bassin.',
+            'Le Yangtsé constitue un axe économique majeur. Il traverse ou relie des régions densément peuplées et fortement industrialisées. Le transport fluvial permet de déplacer des marchandises sur de longues distances et relie des espaces intérieurs aux grands ports de l’est de la Chine. Les plaines du bassin accueillent des activités agricoles, tandis que les villes et les industries utilisent l’eau pour leurs besoins. Le fleuve contribue aussi à la pêche et à de nombreuses activités locales. Cette concentration de populations et d’activités rend la qualité de l’eau et la maîtrise des risques d’inondation particulièrement importantes.',
+            'Les aménagements du Yangtsé comprennent des barrages, des digues, des ouvrages de navigation et des dispositifs de régulation. Le barrage des Trois-Gorges est l’un des grands ouvrages hydroélectriques du monde. Il permet de produire de l’électricité, de contribuer à la régulation de certaines crues et d’améliorer les conditions de navigation sur certains tronçons. Cependant, les barrages modifient le transport des sédiments, les habitats aquatiques et les déplacements de nombreuses espèces. La création de réservoirs a également entraîné des déplacements de populations et la transformation de paysages habités.',
+            'Le bassin du Yangtsé connaît des pressions environnementales importantes. La pollution issue des villes, de l’industrie et de l’agriculture peut dégrader les eaux et les habitats. Les barrages et les autres aménagements modifient les continuités écologiques du fleuve. La fragmentation des milieux peut perturber les migrations de poissons et les cycles de reproduction. Les sécheresses, les fortes pluies et les changements climatiques représentent aussi des défis pour la gestion de l’eau. La protection du fleuve implique donc de contrôler les pollutions, de préserver les zones humides, de surveiller les espèces et de concilier production économique et fonctionnement écologique.'
           ],
           example: {
-            title: 'Exemple : le barrage des Trois-Gorges',
-            content: 'Le barrage des Trois-Gorges produit de l’électricité à grande échelle. Sa construction a entraîné des déplacements de populations et transformé certains paysages et écosystèmes de la vallée.'
+            statement: 'Un barrage hydroélectrique est construit sur un grand fleuve. Quel bénéfice peut-il apporter et quelle conséquence environnementale faut-il surveiller ?',
+            calculation: 'Le barrage stocke une partie de l’eau dans un réservoir et permet de contrôler son passage dans les turbines. Il transforme ainsi une partie de l’énergie de l’eau en électricité, mais modifie aussi le fonctionnement naturel du cours d’eau.',
+            answer: 'Il peut produire de l’électricité et contribuer à la régulation de certains débits. Il faut notamment surveiller la modification du transport des sédiments, les habitats aquatiques et la circulation des espèces.'
           },
           exercise: {
-            question: 'Explique comment le Yangtsé participe au développement économique de la Chine.',
-            expectedAnswer: 'Il facilite le transport, soutient l’agriculture et l’industrie, approvisionne les populations en eau et permet la production hydroélectrique.'
+            question: 'Pourquoi le Yangtsé est-il à la fois un axe économique majeur et un milieu naturel fragile ?',
+            answer: 'Il soutient le transport, l’industrie, l’agriculture, les villes et la production d’électricité. Mais ces usages, associés aux barrages et à la pollution, peuvent transformer les habitats, la qualité de l’eau et les cycles de vie des espèces.'
           },
           exercises: [
             {
-              question: 'Dans quel pays coule le Yangtsé ?',
-              answer: 'En Chine.'
+              question: 'Dans quel pays le Yangtsé coule-t-il principalement ?',
+              answer: 'Il coule en Chine.'
             },
             {
-              question: 'Dans quelle mer se jette-t-il ?',
-              answer: 'Dans la mer de Chine orientale.'
+              question: 'Dans quelle mer le Yangtsé se jette-t-il ?',
+              answer: 'Il se jette dans la mer de Chine orientale.'
             },
             {
-              question: 'Dans quelle direction générale coule-t-il ?',
-              answer: 'D’ouest en est.'
-            },
-            {
-              question: 'Cite une grande ville située sur son parcours.',
-              answer: 'Wuhan, Chongqing ou Shanghai.'
-            },
-            {
-              question: 'Quel est le rôle du barrage des Trois-Gorges ?',
-              answer: 'Produire de l’électricité et contribuer à la gestion des eaux.'
+              question: 'Cite une conséquence possible de la construction d’un barrage sur un fleuve.',
+              answer: 'Un barrage peut modifier le transport des sédiments, les habitats aquatiques, les débits saisonniers ou les déplacements des espèces.'
             }
           ],
           sources: [
-            {
-              title: 'Encyclopaedia Britannica - Yangtze River',
-              url: 'https://www.britannica.com/place/Yangtze-River'
-            },
-            {
-              title: 'World Bank - China',
-              url: 'https://www.worldbank.org/en/country/china'
-            },
-            {
-              title: 'UNESCO',
-              url: 'https://www.unesco.org/'
-            }
+            { title: 'WWF France — Yang-Tsé-Kiang', url: 'https://www.wwf.fr/territoires/yang-tse-kiang' },
+            { title: 'WWF — The Yangtze, Asia’s longest river', url: 'https://www.wwf.org.uk/where-we-work/places/yangtze-asias-longest-river' },
+            { title: 'Encyclopaedia Britannica — Yangtze River', url: 'https://www.britannica.com/place/Yangtze-River' }
           ]
         }
       },
+
+      // CHAPITRE 4 : MISSISSIPPI-MISSOURI
       {
         id: 'mississippi-missouri',
-        title: 'Le Mississippi-Missouri : un immense réseau fluvial nord-américain',
-        field: 'Géographie physique et humaine',
-        summary: 'Étudier le réseau Mississippi-Missouri, son bassin, son importance économique, les risques d’inondation et les aménagements humains.',
+        title: 'Le Mississippi-Missouri : un vaste réseau fluvial d’Amérique du Nord',
+        field: 'Amérique du Nord · États-Unis · Golfe du Mexique',
+        summary: 'Comprendre le fonctionnement du réseau Mississippi-Missouri, ses grands affluents, son rôle dans l’agriculture et le transport, ainsi que les enjeux liés aux inondations, aux pollutions et aux aménagements.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et organisation',
-              content: 'Le Mississippi se situe aux États-Unis. Il traverse le pays du nord vers le sud et se jette dans le golfe du Mexique. Le Missouri est l’un de ses principaux affluents. Le système Mississippi-Missouri forme un vaste réseau fluvial qui draine une grande partie du centre du pays.'
-            },
-            {
-              title: '2. Le bassin hydrographique',
-              content: 'Le bassin du Mississippi reçoit les eaux de nombreux affluents, notamment le Missouri, l’Ohio et l’Arkansas. Il traverse des régions aux climats et aux paysages variés. Les précipitations et la fonte des neiges influencent les débits.'
-            },
-            {
-              title: '3. Le rôle économique',
-              content: 'Le réseau fluvial permet de transporter des produits agricoles et industriels sur de longues distances. Il relie les régions intérieures aux ports du golfe du Mexique. Les activités agricoles du bassin sont importantes pour l’économie américaine.'
-            },
-            {
-              title: '4. Les aménagements humains',
-              content: 'Des digues, des barrages et des canaux ont été construits pour faciliter la navigation et limiter certains risques d’inondation. Ces infrastructures modifient les écoulements naturels et les relations entre le fleuve et ses plaines inondables.'
-            },
-            {
-              title: '5. Les risques et les problèmes environnementaux',
-              content: 'Les crues peuvent provoquer des inondations importantes. Les pollutions agricoles et industrielles affectent la qualité de l’eau. Les apports de nutriments transportés vers le golfe du Mexique contribuent à la formation de zones pauvres en oxygène.'
-            }
+            'Le Mississippi est un grand fleuve d’Amérique du Nord qui traverse les États-Unis du nord vers le sud et rejoint le golfe du Mexique. Le Missouri est l’un de ses principaux affluents. L’expression Mississippi-Missouri désigne donc un vaste système fluvial et non un fleuve unique portant officiellement ce nom. Le réseau comprend également d’autres affluents importants, notamment l’Ohio. Son bassin versant collecte les eaux d’une grande partie du centre des États-Unis et s’étend jusqu’à certaines régions du Canada. Il traverse des milieux variés, depuis les régions de lacs et de forêts du nord jusqu’aux grandes plaines et aux espaces humides du sud.',
+            'Le réseau fluvial reçoit des eaux provenant de régions climatiques différentes. Les précipitations, la fonte des neiges dans certaines zones et les apports des affluents expliquent les variations du débit. Le Missouri draine notamment une vaste partie des Grandes Plaines et des régions situées à l’ouest du Mississippi. L’Ohio apporte également des volumes d’eau importants depuis l’est. Les crues peuvent résulter de pluies abondantes, de la fonte des neiges ou de la combinaison de plusieurs événements hydrologiques. Les plaines alluviales et les zones humides jouent un rôle dans le stockage temporaire de l’eau et dans le fonctionnement écologique du bassin.',
+            'Le Mississippi et ses affluents ont fortement contribué à l’organisation du territoire nord-américain. Le réseau a longtemps constitué une voie de circulation et de commerce reliant l’intérieur du continent au golfe du Mexique. Aujourd’hui encore, la navigation fluviale transporte des produits agricoles, des matières premières et des marchandises. Les terres du bassin accueillent de vastes activités agricoles et industrielles. L’eau sert à l’irrigation, à l’approvisionnement des villes et aux activités économiques. Le fleuve et ses affluents constituent également des habitats pour de nombreuses espèces de poissons, d’oiseaux et d’autres organismes.',
+            'Le réseau est fortement aménagé. Des digues, des barrages, des écluses et des chenaux ont été construits pour faciliter la navigation, protéger certaines zones habitées et organiser les écoulements. Ces infrastructures ont transformé les relations entre le fleuve et ses plaines inondables. Elles peuvent limiter certains débordements localement, mais elles ne suppriment pas le risque d’inondation et peuvent déplacer ou aggraver les conséquences des crues dans d’autres secteurs. La réduction des zones humides et la modification des berges peuvent aussi diminuer la diversité des habitats et les capacités naturelles de stockage de l’eau.',
+            'La qualité de l’eau constitue un enjeu majeur dans le bassin du Mississippi. Les engrais et les matières provenant des activités agricoles peuvent être transportés par les cours d’eau jusqu’au golfe du Mexique. Un apport excessif de nutriments, notamment d’azote et de phosphore, peut favoriser le développement important d’algues. Lorsque leur décomposition consomme une grande partie de l’oxygène dissous, certaines zones aquatiques deviennent défavorables à la vie de nombreux organismes. La gestion du bassin doit donc associer les politiques agricoles, la protection des zones humides, le traitement des eaux usées, la prévention des inondations et la conservation des habitats.'
           ],
           example: {
-            title: 'Exemple : le delta du Mississippi',
-            content: 'Le delta du Mississippi est un espace naturel et économique majeur. Il accueille des zones humides, des activités de pêche et des installations portuaires. Il est cependant menacé par l’érosion, la réduction de certains apports sédimentaires et la montée du niveau marin.'
+            statement: 'Le Missouri rejoint le Mississippi. Pourquoi le débit du Mississippi en aval de cette confluence peut-il être différent de celui observé en amont ?',
+            calculation: 'À une confluence, les eaux des 2 cours d’eau se rejoignent. Le débit en aval dépend des débits des 2 cours d’eau, ainsi que des éventuels apports ou pertes d’eau sur le tronçon considéré.',
+            answer: 'Le Mississippi reçoit les apports du Missouri. Son débit en aval est donc augmenté par l’eau apportée par cet affluent, même si le débit réel varie au cours du temps.'
           },
           exercise: {
-            question: 'Pourquoi le Mississippi est-il un axe économique majeur malgré les risques naturels et environnementaux ?',
-            expectedAnswer: 'Il facilite le transport de marchandises et soutient les activités agricoles et industrielles. Toutefois, les inondations, les pollutions et la fragilisation du delta nécessitent une gestion permanente.'
+            question: 'Pourquoi les activités agricoles du bassin du Mississippi peuvent-elles avoir des conséquences sur les écosystèmes du golfe du Mexique ?',
+            answer: 'Les eaux de ruissellement peuvent transporter des nutriments et des polluants depuis les terres agricoles vers les affluents, puis vers le Mississippi et le golfe du Mexique. Un excès de nutriments peut favoriser des phénomènes d’eutrophisation et réduire l’oxygène disponible dans l’eau.'
           },
           exercises: [
             {
-              question: 'Dans quel pays se trouve le Mississippi ?',
-              answer: 'Aux États-Unis.'
+              question: 'Dans quelle mer ou quel golfe le Mississippi se jette-t-il ?',
+              answer: 'Il se jette dans le golfe du Mexique.'
             },
             {
-              question: 'Dans quel golfe se jette-t-il ?',
-              answer: 'Dans le golfe du Mexique.'
+              question: 'Quelle est la relation hydrographique entre le Missouri et le Mississippi ?',
+              answer: 'Le Missouri est un affluent majeur du Mississippi.'
             },
             {
-              question: 'Cite un grand affluent du Mississippi.',
-              answer: 'Le Missouri ou l’Ohio.'
-            },
-            {
-              question: 'Pourquoi les digues sont-elles construites le long du fleuve ?',
-              answer: 'Pour protéger certaines zones contre les inondations.'
-            },
-            {
-              question: 'Cite un problème environnemental du bassin.',
-              answer: 'La pollution de l’eau ou la dégradation des zones humides.'
+              question: 'Cite 2 fonctions économiques du réseau Mississippi-Missouri.',
+              answer: 'Le transport fluvial et l’approvisionnement en eau sont 2 fonctions importantes. L’irrigation, la pêche et certaines activités industrielles comptent également.'
             }
           ],
           sources: [
-            {
-              title: 'Encyclopaedia Britannica - Mississippi River',
-              url: 'https://www.britannica.com/place/Mississippi-River'
-            },
-            {
-              title: 'US Geological Survey',
-              url: 'https://www.usgs.gov/'
-            },
-            {
-              title: 'NOAA',
-              url: 'https://www.noaa.gov/'
-            }
+            { title: 'U.S. Geological Survey — Mississippi River Basin Science Dashboard', url: 'https://webapps.usgs.gov/mrb/' },
+            { title: 'U.S. Geological Survey — Great American Waterways', url: 'https://www.usgs.gov/mission-areas/water-resources/great-american-waterways' },
+            { title: 'U.S. Geological Survey — The Mississippi River: A place for fish', url: 'https://www.usgs.gov/publications/mississippi-river-a-place-fish' }
           ]
         }
       },
+
+      // CHAPITRE 5 : CONGO
       {
         id: 'congo',
-        title: 'Le Congo : un fleuve essentiel au cœur de l’Afrique centrale',
-        field: 'Géographie physique et humaine',
-        summary: 'Découvrir le bassin du Congo, ses forêts tropicales, son réseau hydrographique, ses populations et les enjeux de conservation.',
+        title: 'Le Congo : un fleuve majeur au cœur de l’Afrique équatoriale',
+        field: 'Afrique centrale · Bassin du Congo · Océan Atlantique',
+        summary: 'Étudier le bassin du Congo, son réseau d’affluents, son régime hydrologique, ses forêts tropicales et ses usages humains. Comprendre les enjeux liés à la biodiversité, aux ressources en eau et aux transformations du bassin.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et parcours',
-              content: 'Le fleuve Congo se situe en Afrique centrale. Il traverse notamment la République démocratique du Congo et longe une partie de la frontière avec la République du Congo. Il se jette dans l’océan Atlantique. Son bassin couvre une vaste région équatoriale.'
-            },
-            {
-              title: '2. Un réseau hydrographique puissant',
-              content: 'Le Congo reçoit les eaux de nombreux affluents, notamment l’Oubangui et le Kasaï. Son débit est parmi les plus importants du monde. Son bassin est alimenté par des précipitations tropicales réparties sur différentes saisons.'
-            },
-            {
-              title: '3. Les milieux naturels',
-              content: 'Le bassin du Congo abrite de vastes forêts tropicales, des marécages et des zones humides. Ces milieux constituent des habitats pour une biodiversité remarquable. Ils participent également au stockage du carbone et aux cycles de l’eau.'
-            },
-            {
-              title: '4. Les activités humaines',
-              content: 'Le fleuve permet la navigation, la pêche et certains échanges commerciaux. Il représente une ressource importante pour les populations riveraines. Le potentiel hydroélectrique du bassin est également considérable.'
-            },
-            {
-              title: '5. Les enjeux de développement durable',
-              content: 'La déforestation, l’exploitation des ressources naturelles et la pollution menacent certains milieux du bassin. Le défi consiste à concilier développement économique, amélioration des conditions de vie et conservation des écosystèmes.'
-            }
+            'Le fleuve Congo est l’un des grands cours d’eau du monde par son débit et l’étendue de son bassin versant. Il se situe en Afrique centrale et traverse principalement la République démocratique du Congo et la République du Congo. Son cours forme également, sur certains tronçons, une frontière entre ces 2 États. Il rejoint l’océan Atlantique. Le bassin du Congo couvre un territoire beaucoup plus vaste que le seul lit du fleuve : il comprend de nombreux affluents, des forêts tropicales, des marécages et des zones de savane. Il constitue l’un des grands ensembles hydrographiques de la planète.',
+            'Le réseau du Congo est alimenté par de nombreux affluents qui drainent des régions situées de part et d’autre du cours principal. Le fleuve reçoit des apports provenant de zones soumises à des régimes de précipitations différents. Comme une partie importante du bassin se trouve dans la région équatoriale, les pluies sont réparties sur une grande partie de l’année, avec des variations saisonnières selon les secteurs. Cette organisation contribue à maintenir des débits importants. Le bassin comprend également de vastes zones humides, qui stockent temporairement de l’eau et participent aux échanges entre les cours d’eau, les sols et la végétation.',
+            'Le bassin du Congo abrite de vastes forêts tropicales et une biodiversité remarquable. Les cours d’eau, les marécages et les forêts inondables forment des milieux complémentaires. Ils abritent des espèces aquatiques et terrestres et assurent de nombreuses fonctions écologiques. Les forêts influencent les échanges d’eau avec l’atmosphère, protègent les sols et stockent du carbone. Les zones humides contribuent à ralentir certains écoulements et à maintenir des habitats. Le fonctionnement du fleuve dépend donc des relations entre les eaux, les sols, les forêts et les variations du climat.',
+            'Les populations du bassin utilisent le fleuve et ses affluents pour la pêche, le transport, l’approvisionnement en eau et certaines activités agricoles. Dans plusieurs régions, la navigation est essentielle pour relier des localités éloignées. Le réseau fluvial peut constituer une voie de communication importante là où les infrastructures routières sont limitées. Le bassin possède également un potentiel hydroélectrique important en raison des volumes d’eau et de certains secteurs de fortes pentes. Toutefois, le développement de barrages et d’autres infrastructures doit prendre en compte les conséquences sur les habitats, les déplacements des populations et les activités qui dépendent du fleuve.',
+            'Les pressions sur le bassin du Congo comprennent la déforestation, l’exploitation forestière, certaines activités minières, l’extension des infrastructures et la pollution. Ces transformations peuvent fragmenter les habitats, dégrader les sols et modifier les écoulements. Les changements du climat peuvent également influencer les précipitations et les périodes de hautes ou de basses eaux. La protection du bassin nécessite une coopération entre les pays concernés et une prise en compte des besoins des populations locales. Il est important de préserver les forêts et les zones humides tout en permettant un développement économique compatible avec le fonctionnement écologique du système fluvial.'
           ],
           example: {
-            title: 'Exemple : Kinshasa et Brazzaville',
-            content: 'Kinshasa et Brazzaville se trouvent face à face de part et d’autre du fleuve Congo. Leur proximité illustre le rôle du fleuve dans les échanges et les déplacements entre les deux pays.'
+            statement: 'Une région du bassin du Congo perd une partie importante de sa couverture forestière. Pourquoi cette transformation peut-elle modifier le fonctionnement du bassin versant ?',
+            calculation: 'La végétation intercepte une partie des précipitations, favorise l’infiltration de l’eau et protège les sols. Lorsque la couverture végétale diminue, le ruissellement et l’érosion peuvent augmenter selon les caractéristiques du terrain et les usages qui remplacent la forêt.',
+            answer: 'La déforestation peut modifier les écoulements de surface, augmenter l’érosion et le transport de sédiments, et dégrader les habitats. Ses effets dépendent toutefois de l’intensité de la déforestation, des sols, du relief et des pratiques d’aménagement.'
           },
           exercise: {
-            question: 'Explique pourquoi le bassin du Congo possède une importance écologique et économique majeure.',
-            expectedAnswer: 'Il abrite des forêts tropicales et une biodiversité importante. Le fleuve fournit également des ressources, des voies de transport et un potentiel hydroélectrique aux populations.'
+            question: 'Pourquoi les forêts et les zones humides sont-elles essentielles au fonctionnement du bassin du Congo ?',
+            answer: 'Elles abritent une biodiversité importante, protègent les sols, participent aux échanges d’eau et contribuent au stockage du carbone. Les zones humides stockent temporairement de l’eau et constituent des habitats essentiels.'
           },
           exercises: [
             {
-              question: 'Dans quelle région se trouve le fleuve Congo ?',
-              answer: 'En Afrique centrale.'
+              question: 'Dans quelle région du continent africain se trouve le fleuve Congo ?',
+              answer: 'Il se trouve en Afrique centrale.'
             },
             {
-              question: 'Dans quel océan se jette-t-il ?',
-              answer: 'Dans l’océan Atlantique.'
+              question: 'Dans quel océan le fleuve Congo se jette-t-il ?',
+              answer: 'Il se jette dans l’océan Atlantique.'
             },
             {
-              question: 'Cite un affluent du Congo.',
-              answer: 'L’Oubangui ou le Kasaï.'
-            },
-            {
-              question: 'Quels milieux naturels sont présents dans son bassin ?',
-              answer: 'Les forêts tropicales et les zones humides.'
-            },
-            {
-              question: 'Cite une menace environnementale.',
-              answer: 'La déforestation ou la pollution.'
+              question: 'Cite 2 usages du fleuve Congo par les populations riveraines.',
+              answer: 'La pêche et le transport fluvial sont 2 usages importants. L’approvisionnement en eau et certaines activités agricoles comptent également.'
             }
           ],
           sources: [
-            {
-              title: 'Encyclopaedia Britannica - Congo River',
-              url: 'https://www.britannica.com/place/Congo-River'
-            },
-            {
-              title: 'WWF - Congo Basin',
-              url: 'https://www.worldwildlife.org/places/congo-basin'
-            },
-            {
-              title: 'COMIFAC',
-              url: 'https://www.comifac.org/'
-            }
+            { title: 'WWF — Congo Basin', url: 'https://www.worldwildlife.org/places/congo-basin' },
+            { title: 'Encyclopaedia Britannica — Congo River', url: 'https://www.britannica.com/place/Congo-River-Africa' },
+            { title: 'Commission des forêts d’Afrique centrale — COMIFAC', url: 'https://www.comifac.org/' }
           ]
         }
       },
+
+      // CHAPITRE 6 : GANGE
       {
         id: 'gange',
-        title: 'Le Gange : un fleuve vital pour l’Asie du Sud',
-        field: 'Géographie physique et humaine',
-        summary: 'Étudier le Gange, son bassin densément peuplé, son importance agricole, culturelle et économique, ainsi que les défis liés à la pollution.',
+        title: 'Le Gange : un fleuve essentiel aux populations et aux territoires d’Asie du Sud',
+        field: 'Asie du Sud · Inde et Bangladesh · Golfe du Bengale',
+        summary: 'Comprendre la formation du Gange, son bassin transfrontalier, l’influence de la mousson, son importance agricole, urbaine et culturelle, ainsi que les problèmes de pollution et de gestion de l’eau.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et parcours',
-              content: 'Le Gange prend sa source dans l’Himalaya, en Inde, et traverse le nord du pays avant de rejoindre le Bangladesh par un réseau fluvial commun avec le Brahmapoutre. Le système du delta se jette dans le golfe du Bengale.'
-            },
-            {
-              title: '2. Le bassin du Gange',
-              content: 'Le bassin du Gange comprend des montagnes, des plaines alluviales et des régions densément peuplées. Les précipitations de la mousson contribuent fortement à son alimentation. Les crues saisonnières peuvent enrichir les sols mais aussi provoquer des inondations.'
-            },
-            {
-              title: '3. L’agriculture et les populations',
-              content: 'Les plaines du Gange comptent parmi les grandes régions agricoles de l’Asie du Sud. L’eau du fleuve est utilisée pour l’irrigation, l’approvisionnement domestique et certaines activités industrielles. Une population très importante dépend directement ou indirectement de ses ressources.'
-            },
-            {
-              title: '4. Une importance culturelle et religieuse',
-              content: 'Le Gange possède une place majeure dans les traditions religieuses et culturelles de l’hindouisme. Des villes comme Varanasi sont associées à des pratiques et des pèlerinages liés au fleuve. Cette dimension culturelle influence l’organisation des villes riveraines et les usages des berges.'
-            },
-            {
-              title: '5. Pollution et protection',
-              content: 'Les rejets domestiques, industriels et agricoles contribuent à la pollution de certaines portions du fleuve. Les déchets et les eaux usées représentent des enjeux sanitaires et écologiques. Des programmes de dépollution et de traitement des eaux sont nécessaires pour améliorer sa qualité.'
-            }
+            'Le Gange est un grand fleuve d’Asie du Sud. Il prend naissance dans l’Himalaya indien, où ses eaux proviennent de cours d’eau de montagne alimentés notamment par la fonte des neiges et des glaces ainsi que par les précipitations. Le nom de Gange est utilisé à partir de la confluence de plusieurs cours d’eau himalayens, notamment à Devprayag. Le fleuve traverse ensuite les grandes plaines du nord de l’Inde et poursuit son parcours vers le Bangladesh, où le système fluvial rejoint celui du Brahmapoutre avant de se diriger vers le golfe du Bengale. Son bassin versant concerne plusieurs pays, et son delta est l’un des grands ensembles deltaïques du monde.',
+            'Le régime du Gange est fortement influencé par la mousson d’Asie du Sud. Pendant la saison des pluies, les précipitations peuvent provoquer une forte augmentation des débits et des crues. Les affluents himalayens apportent également de l’eau issue des régions de montagne. Pendant les périodes plus sèches, les débits diminuent et les besoins en eau restent importants. Les plaines alluviales du bassin sont constituées en partie de sédiments déposés par les cours d’eau. Ces dépôts contribuent à la fertilité de nombreux sols, mais les crues peuvent aussi provoquer des dégâts dans les zones habitées et agricoles.',
+            'Le bassin du Gange est densément peuplé et accueille de grandes villes ainsi que de vastes régions agricoles. L’eau du fleuve et de ses affluents est utilisée pour l’irrigation, l’approvisionnement domestique, les activités industrielles et la pêche. Les plaines du Gange comptent parmi les grands espaces agricoles d’Asie du Sud. Le fleuve occupe aussi une place majeure dans les pratiques culturelles et religieuses de nombreuses communautés. Cette importance sociale et économique entraîne une forte demande en eau et rend indispensable la protection de sa qualité.',
+            'Le bassin est soumis à des pressions importantes. Les eaux usées domestiques insuffisamment traitées, certains rejets industriels, les déchets et les pollutions liées aux activités agricoles peuvent dégrader la qualité de l’eau. Les prélèvements pour l’irrigation et les autres usages peuvent réduire les débits disponibles sur certains tronçons. Les barrages et les ouvrages de dérivation modifient également la circulation de l’eau et des sédiments. La pollution ne se limite pas au cours principal : les affluents, les canaux et les eaux souterraines peuvent aussi être concernés. Il faut donc agir à l’échelle du bassin et pas uniquement sur les rives du fleuve.',
+            'Le delta du Gange forme, avec les systèmes du Brahmapoutre et de la Meghna, un vaste ensemble de plaines basses et de chenaux qui rejoint le golfe du Bengale. Les mangroves des Sundarbans occupent une partie de ce delta et constituent un milieu écologique remarquable. Cette région est exposée aux crues, aux cyclones tropicaux, à l’érosion et à la salinisation de certaines terres. L’élévation du niveau marin et les changements de précipitations représentent des défis supplémentaires. La gestion durable du Gange doit donc associer la réduction de la pollution, la gestion des prélèvements, la prévention des risques et la coopération entre les territoires du bassin.'
           ],
           example: {
-            title: 'Exemple : Varanasi',
-            content: 'Varanasi est une ville située sur les rives du Gange. Elle constitue un important centre religieux et culturel. La concentration des usages humains autour du fleuve rend la gestion de la qualité de l’eau particulièrement importante.'
+            statement: 'Pourquoi le débit du Gange augmente-t-il généralement pendant la mousson ?',
+            calculation: 'La mousson apporte des précipitations abondantes sur une grande partie du bassin. Une partie de cette eau ruisselle vers les cours d’eau et une autre rejoint progressivement le réseau par infiltration et écoulement souterrain.',
+            answer: 'Les pluies de mousson augmentent les apports en eau du fleuve et de ses affluents. Elles peuvent provoquer une hausse importante du débit et des crues dans les plaines.'
           },
           exercise: {
-            question: 'Explique pourquoi le Gange est essentiel à la fois pour l’économie, la culture et la vie quotidienne des populations.',
-            expectedAnswer: 'Il fournit de l’eau, permet l’irrigation et soutient les activités économiques. Il possède aussi une grande importance culturelle et religieuse. La forte densité de population rend cependant sa protection indispensable.'
+            question: 'Pourquoi la forte densité de population du bassin du Gange rend-elle la gestion de l’eau particulièrement importante ?',
+            answer: 'Un grand nombre de personnes dépendent du bassin pour l’eau potable, l’agriculture, l’industrie et les activités quotidiennes. Les prélèvements, les rejets et les aménagements doivent donc être gérés pour préserver la quantité et la qualité de l’eau.'
           },
           exercises: [
             {
-              question: 'Dans quelle région du monde se trouve le Gange ?',
-              answer: 'En Asie du Sud.'
+              question: 'Dans quelle région montagneuse le Gange prend-il naissance ?',
+              answer: 'Il prend naissance dans l’Himalaya indien.'
             },
             {
-              question: 'Dans quel golfe le système du Gange se jette-t-il ?',
-              answer: 'Dans le golfe du Bengale.'
+              question: 'Quel phénomène climatique influence fortement les variations saisonnières du débit du Gange ?',
+              answer: 'La mousson d’Asie du Sud.'
             },
             {
-              question: 'Quel phénomène climatique alimente fortement le fleuve ?',
-              answer: 'La mousson.'
-            },
-            {
-              question: 'Cite une ville importante située sur le Gange.',
-              answer: 'Varanasi.'
-            },
-            {
-              question: 'Cite une cause de pollution du Gange.',
-              answer: 'Les rejets d’eaux usées ou les rejets industriels.'
+              question: 'Cite 2 causes possibles de dégradation de la qualité de l’eau du Gange.',
+              answer: 'Les eaux usées insuffisamment traitées et certains rejets industriels. Les déchets et les pollutions agricoles peuvent également contribuer à cette dégradation.'
             }
           ],
           sources: [
-            {
-              title: 'Encyclopaedia Britannica - Ganges River',
-              url: 'https://www.britannica.com/place/Ganges-River'
-            },
-            {
-              title: 'National Mission for Clean Ganga',
-              url: 'https://nmcg.nic.in/'
-            },
-            {
-              title: 'World Bank - India',
-              url: 'https://www.worldbank.org/en/country/india'
-            }
+            { title: 'Banque mondiale — Hydrologic and Water Resources Modelling for the Ganges Basin', url: 'https://documents1.worldbank.org/curated/en/217491583389284853/pdf/Hydrologic-and-Water-Resources-Modelling-for-the-Ganges-Basin-A-Compilation-and-Bibliography.pdf' },
+            { title: 'Encyclopaedia Britannica — Ganges River', url: 'https://www.britannica.com/place/Ganges-River' },
+            { title: 'National Mission for Clean Ganga — Government of India', url: 'https://nmcg.nic.in/' }
           ]
         }
       },
+
+      // CHAPITRE 7 : MEKONG
       {
         id: 'mekong',
-        title: 'Le Mékong : un fleuve structurant de l’Asie du Sud-Est',
-        field: 'Géographie physique et humaine',
-        summary: 'Comprendre le rôle du Mékong dans l’agriculture, la pêche, les échanges régionaux et les équilibres écologiques du bassin.',
+        title: 'Le Mékong : un fleuve vital pour l’Asie du Sud-Est',
+        field: 'Asie du Sud-Est · Chine, Myanmar, Laos, Thaïlande, Cambodge et Vietnam · Mer de Chine méridionale',
+        summary: 'Étudier le parcours du Mékong, son bassin transfrontalier, ses crues saisonnières, le rôle du lac Tonlé Sap, les activités de pêche et d’agriculture et les conséquences des barrages et du changement climatique.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et parcours',
-              content: 'Le Mékong prend sa source sur le plateau tibétain et traverse ou longe plusieurs pays d’Asie : la Chine, le Myanmar, le Laos, la Thaïlande, le Cambodge et le Vietnam. Il se jette dans la mer de Chine méridionale par un vaste delta.'
-            },
-            {
-              title: '2. Le régime hydrologique',
-              content: 'Le débit du Mékong varie fortement selon les saisons. La mousson provoque une hausse des eaux pendant une partie de l’année. Le lac Tonlé Sap, au Cambodge, est étroitement lié aux variations saisonnières du fleuve et connaît un phénomène remarquable d’inversion du sens d’écoulement de sa rivière de connexion.'
-            },
-            {
-              title: '3. Un fleuve nourricier',
-              content: 'Le Mékong soutient une importante activité de pêche et l’agriculture de nombreuses régions. Le riz constitue une production essentielle dans le bassin inférieur. Les ressources aquatiques jouent un rôle important dans l’alimentation et les revenus des populations.'
-            },
-            {
-              title: '4. Les aménagements et les échanges',
-              content: 'Des barrages hydroélectriques ont été construits sur le Mékong et ses affluents. Ils contribuent à la production d’électricité mais peuvent modifier les débits, le transport des sédiments et les migrations des poissons. La navigation et les échanges commerciaux participent également à l’économie régionale.'
-            },
-            {
-              title: '5. Les enjeux de gestion internationale',
-              content: 'Le Mékong traverse plusieurs pays qui dépendent de ses ressources. Les changements climatiques, les barrages, la sécheresse et la salinisation du delta menacent certains équilibres. La coopération entre États est essentielle pour assurer une gestion durable du bassin.'
-            }
+            'Le Mékong est l’un des grands fleuves d’Asie du Sud-Est. Il prend sa source sur le plateau tibétain, en Chine, puis traverse ou longe plusieurs pays avant de rejoindre la mer de Chine méridionale par un vaste delta au Vietnam. Son bassin versant comprend des régions montagneuses, des plateaux, des plaines et des zones humides. La Commission du fleuve Mékong distingue notamment le bassin supérieur et le bassin inférieur. Le fleuve relie ainsi des territoires très différents et constitue un système hydrographique partagé entre plusieurs États.',
+            'Le débit du Mékong varie fortement au cours de l’année. La mousson apporte une grande partie des précipitations pendant la saison humide, ce qui provoque une hausse du niveau du fleuve et l’inondation de certaines plaines. Pendant la saison sèche, les débits diminuent. Les affluents contribuent aux apports en eau et peuvent présenter des régimes différents selon les régions. Le fonctionnement du fleuve est donc saisonnier et dépend de la répartition des pluies, du relief et des caractéristiques des sols. Les crues ne sont pas uniquement des événements dangereux : elles participent aussi au renouvellement des milieux et à la fertilité des plaines.',
+            'Le lac Tonlé Sap, au Cambodge, est un élément remarquable du système hydrologique du Mékong. Pendant la saison des hautes eaux, le niveau du Mékong peut entraîner une inversion du sens d’écoulement de la rivière reliant le fleuve au lac. L’eau pénètre alors dans le lac et augmente fortement sa superficie. Pendant la saison sèche, l’écoulement repart du lac vers le Mékong. Ce fonctionnement saisonnier soutient des habitats aquatiques et des ressources halieutiques importantes. Il influence aussi les activités de pêche et les modes de vie des populations installées autour du lac.',
+            'Le Mékong joue un rôle essentiel pour les populations du bassin inférieur. Il fournit de l’eau pour l’agriculture, soutient une pêche importante, permet le transport et contribue à la production hydroélectrique. Le delta du Mékong est une région agricole majeure, notamment pour la riziculture et d’autres productions. Les poissons et les autres ressources aquatiques occupent une place importante dans l’alimentation et les revenus de nombreuses communautés. Les variations naturelles du niveau de l’eau structurent les calendriers agricoles et les activités humaines. Le fleuve est donc à la fois une ressource économique, alimentaire et écologique.',
+            'Le Mékong fait face à plusieurs transformations : construction de barrages, prélèvements d’eau, extraction de matériaux, pollution, modification des sédiments et changement climatique. Les barrages peuvent modifier les crues saisonnières et retenir une partie des sédiments nécessaires au maintien des plaines et du delta. La réduction des apports sédimentaires, combinée à l’érosion et à la montée du niveau marin, peut aggraver certains problèmes dans le delta. La gestion du fleuve nécessite une coopération entre les pays riverains, notamment pour partager les données hydrologiques, préserver les écosystèmes et limiter les effets négatifs des aménagements.'
           ],
           example: {
-            title: 'Exemple : le delta du Mékong au Vietnam',
-            content: 'Le delta du Mékong est une grande région agricole et rizicole. Il est cependant exposé à la montée du niveau marin, à l’intrusion d’eau salée et à la diminution des apports sédimentaires.'
+            statement: 'Pendant la saison des hautes eaux, la rivière reliant le Mékong au lac Tonlé Sap change de sens d’écoulement. Que révèle ce phénomène sur le fonctionnement du bassin ?',
+            calculation: 'Lorsque le niveau du Mékong devient supérieur à celui du lac, l’eau peut entrer dans le lac. Quand le niveau du fleuve baisse, l’écoulement peut repartir du lac vers le Mékong.',
+            answer: 'Ce phénomène montre que le lac et le fleuve sont étroitement liés et que leur fonctionnement dépend des variations saisonnières du niveau de l’eau.'
           },
           exercise: {
-            question: 'Pourquoi le Mékong est-il indispensable aux populations d’Asie du Sud-Est et quels risques menacent son fonctionnement ?',
-            expectedAnswer: 'Il fournit des ressources alimentaires, de l’eau pour l’agriculture et des possibilités de transport. Les barrages, les sécheresses, les changements climatiques et la salinisation menacent toutefois son équilibre.'
+            question: 'Pourquoi les barrages construits sur le Mékong peuvent-ils avoir des conséquences au-delà du lieu où ils sont installés ?',
+            answer: 'Parce qu’ils peuvent modifier les débits, les périodes de crue, le transport des sédiments et les déplacements des poissons. Ces changements peuvent affecter les populations et les écosystèmes situés en aval, parfois dans d’autres pays.'
           },
           exercises: [
             {
-              question: 'Dans quelle région du monde coule le Mékong ?',
-              answer: 'En Asie du Sud-Est.'
+              question: 'Dans quelle région le Mékong prend-il sa source ?',
+              answer: 'Il prend sa source sur le plateau tibétain, en Chine.'
             },
             {
-              question: 'Dans quelle mer se jette-t-il ?',
-              answer: 'Dans la mer de Chine méridionale.'
-            },
-            {
-              question: 'Quel phénomène climatique influence fortement son débit ?',
-              answer: 'La mousson.'
-            },
-            {
-              question: 'Quel grand lac cambodgien est lié au fonctionnement saisonnier du Mékong ?',
+              question: 'Quel grand lac cambodgien est directement lié aux variations saisonnières du Mékong ?',
               answer: 'Le lac Tonlé Sap.'
             },
             {
-              question: 'Cite une menace environnementale du delta.',
-              answer: 'La salinisation ou la montée du niveau marin.'
+              question: 'Cite 2 activités humaines qui dépendent du Mékong.',
+              answer: 'La pêche et l’agriculture. Le transport fluvial et la production hydroélectrique sont également importants.'
             }
           ],
           sources: [
-            {
-              title: 'Mekong River Commission',
-              url: 'https://www.mrcmekong.org/'
-            },
-            {
-              title: 'Encyclopaedia Britannica - Mekong River',
-              url: 'https://www.britannica.com/place/Mekong-River'
-            },
-            {
-              title: 'FAO',
-              url: 'https://www.fao.org/'
-            }
+            { title: 'Mekong River Commission — Mekong River Basin', url: 'https://www.mrcmekong.org/mekong-river-basin/' },
+            { title: 'Mekong River Commission — Geography', url: 'https://www.mrcmekong.org/geography/' },
+            { title: 'Mekong River Commission — Organisation et gestion du bassin', url: 'https://www.mrcmekong.org/mekong-river-commission/' }
           ]
         }
       },
+
+      // CHAPITRE 8 : DANUBE
       {
         id: 'danube',
-        title: 'Le Danube : un fleuve au cœur de l’Europe',
-        field: 'Géographie physique et humaine',
-        summary: 'Étudier le Danube, son parcours transfrontalier, son rôle dans les échanges européens et les enjeux de protection de son bassin.',
+        title: 'Le Danube : un fleuve international au cœur de l’Europe',
+        field: 'Europe centrale et orientale · Bassin du Danube · Mer Noire',
+        summary: 'Comprendre le parcours du Danube, son bassin partagé entre de nombreux pays, ses grands affluents, son rôle dans les transports et les échanges, ainsi que les enjeux de pollution et de protection du delta.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et parcours',
-              content: 'Le Danube prend sa source dans la Forêt-Noire, en Allemagne. Il traverse ou longe plusieurs pays d’Europe centrale et orientale avant de se jeter dans la mer Noire par un vaste delta. Il traverse notamment Vienne, Bratislava, Budapest et Belgrade.'
-            },
-            {
-              title: '2. Un fleuve transfrontalier',
-              content: 'Le bassin du Danube concerne de nombreux pays européens. Il constitue un exemple important de ressource naturelle partagée. Les États riverains doivent coopérer pour gérer la navigation, la qualité de l’eau, les inondations et la protection des écosystèmes.'
-            },
-            {
-              title: '3. Un axe de transport européen',
-              content: 'Le Danube est une voie navigable importante qui relie l’Europe centrale à la mer Noire. Il permet le transport de marchandises et facilite les échanges entre plusieurs régions économiques. Des canaux permettent également de le relier à d’autres bassins fluviaux européens.'
-            },
-            {
-              title: '4. Les villes et les activités humaines',
-              content: 'Plusieurs grandes villes se sont développées sur ses rives. Le fleuve contribue aux activités industrielles, agricoles, touristiques et portuaires. Les aménagements hydroélectriques et les infrastructures de navigation ont transformé certains secteurs du cours.'
-            },
-            {
-              title: '5. La protection du bassin',
-              content: 'La pollution, les barrages, la navigation et la transformation des zones humides exercent des pressions sur les écosystèmes. Le delta du Danube possède une biodiversité importante et bénéficie de mesures de protection. La coopération internationale est essentielle pour maintenir la qualité de l’eau.'
-            }
+            'Le Danube est le deuxième plus long fleuve d’Europe après la Volga. Il prend naissance en Allemagne, dans la Forêt-Noire, à la rencontre de 2 cours d’eau, le Brigach et le Breg, puis traverse ou longe plusieurs pays d’Europe centrale et orientale avant de rejoindre la mer Noire. Son bassin versant s’étend sur un territoire encore plus vaste que son cours principal et comprend de nombreux affluents. Il concerne 19 pays selon le périmètre retenu par la Commission internationale pour la protection du Danube. Le Danube est ainsi l’un des exemples les plus importants de fleuve international.',
+            'Le bassin du Danube traverse des régions de relief et de climat variés. Le cours supérieur reçoit notamment des apports des régions alpines et des reliefs d’Europe centrale. Plus en aval, le fleuve traverse de vastes plaines et reçoit les eaux de grands affluents comme la Drava, la Tisza et la Sava. Le débit dépend des précipitations, de la fonte des neiges et des apports des affluents. Les variations saisonnières et les crues peuvent être importantes dans certaines parties du bassin. La diversité des paysages explique les différences de vitesse, de largeur et de profondeur du fleuve selon les tronçons.',
+            'Le Danube est un axe historique de circulation et d’échanges. Il relie des régions industrielles, agricoles et urbaines et traverse plusieurs capitales européennes, notamment Vienne, Bratislava, Budapest et Belgrade. La navigation permet le transport de marchandises et relie des territoires éloignés. Le fleuve est également utilisé pour l’approvisionnement en eau, l’irrigation, la pêche, le tourisme et la production hydroélectrique. Les usages du fleuve sont donc nombreux et parfois concurrents : les aménagements destinés à la navigation ou à l’énergie peuvent avoir des effets sur les habitats et sur les autres usages.',
+            'Le cours du Danube a été modifié par des barrages, des digues, des travaux de navigation et des aménagements des berges. Ces transformations ont facilité certains transports et permis de produire de l’électricité. Elles ont aussi réduit ou fragmenté certaines zones humides et modifié la continuité des habitats aquatiques. Les digues peuvent protéger des zones habitées contre certaines inondations, mais elles limitent aussi les débordements naturels dans les plaines alluviales. Or ces espaces jouent un rôle important dans le stockage de l’eau, la biodiversité et la réduction de certains risques de crue.',
+            'Le Danube se termine par un vaste delta situé principalement en Roumanie et en Ukraine, avant son arrivée dans la mer Noire. Ce delta comprend des chenaux, des lacs, des marais et des roselières qui accueillent de nombreuses espèces. Il est reconnu pour sa richesse écologique et son importance pour les oiseaux et les poissons. Le bassin subit toutefois des pressions liées aux pollutions agricoles, industrielles et urbaines, aux modifications hydromorphologiques et aux activités de navigation. La coopération internationale est indispensable pour surveiller la qualité de l’eau, protéger les habitats et coordonner la gestion des risques à l’échelle du bassin.'
           ],
           example: {
-            title: 'Exemple : le delta du Danube',
-            content: 'Le delta du Danube, situé principalement en Roumanie et en Ukraine, est une vaste zone humide qui accueille de nombreuses espèces d’oiseaux et de poissons. Il est reconnu pour sa richesse écologique.'
+            statement: 'Le Danube traverse plusieurs pays avant d’atteindre la mer Noire. Pourquoi une pollution produite dans un pays peut-elle concerner les pays situés en aval ?',
+            calculation: 'L’eau s’écoule globalement de l’amont vers l’aval. Une substance transportée par le courant peut donc franchir les frontières et atteindre d’autres portions du fleuve.',
+            answer: 'Une pollution peut se déplacer avec le courant et affecter les territoires situés plus en aval. La surveillance et la réduction des pollutions nécessitent donc une coopération entre les pays du bassin.'
           },
           exercise: {
-            question: 'Pourquoi le Danube constitue-t-il un enjeu de coopération entre les pays européens ?',
-            expectedAnswer: 'Parce que son bassin traverse plusieurs pays qui partagent les mêmes ressources en eau et doivent coordonner la navigation, la lutte contre la pollution et la prévention des inondations.'
+            question: 'Pourquoi le Danube est-il considéré comme un fleuve international majeur ?',
+            answer: 'Son bassin concerne de nombreux pays et son cours principal traverse ou longe plusieurs États. Les usages de l’eau, les pollutions et les risques hydrologiques nécessitent une coordination entre les pays riverains.'
           },
           exercises: [
             {
-              question: 'Dans quelle région du monde se trouve le Danube ?',
-              answer: 'En Europe.'
+              question: 'Dans quelle mer le Danube se jette-t-il ?',
+              answer: 'Il se jette dans la mer Noire.'
             },
             {
-              question: 'Dans quelle mer se jette-t-il ?',
-              answer: 'Dans la mer Noire.'
+              question: 'Dans quel pays le Danube prend-il naissance ?',
+              answer: 'Il prend naissance en Allemagne, dans la région de la Forêt-Noire.'
             },
             {
-              question: 'Cite 2 capitales traversées par le Danube.',
-              answer: 'Vienne et Budapest, par exemple.'
-            },
-            {
-              question: 'Pourquoi le Danube est-il important pour le commerce ?',
-              answer: 'Il constitue une voie navigable reliant plusieurs régions européennes.'
-            },
-            {
-              question: 'Quel milieu naturel remarquable se trouve à son embouchure ?',
-              answer: 'Le delta du Danube.'
+              question: 'Cite 2 capitales européennes situées sur le Danube.',
+              answer: 'Vienne et Budapest. Bratislava et Belgrade sont également situées sur son cours.'
             }
           ],
           sources: [
-            {
-              title: 'International Commission for the Protection of the Danube River',
-              url: 'https://www.icpdr.org/'
-            },
-            {
-              title: 'Encyclopaedia Britannica - Danube River',
-              url: 'https://www.britannica.com/place/Danube-River'
-            },
-            {
-              title: 'UNESCO - Danube Delta',
-              url: 'https://whc.unesco.org/en/list/588/'
-            }
+            { title: 'International Commission for the Protection of the Danube River — River Basin', url: 'https://www.icpdr.org/danube-basin/danube-river-basin' },
+            { title: 'Commission du Danube — Notions générales sur le Danube', url: 'https://www.danubecommission.org/dc/fr/navigation-danubienne/notions-generales-sur-le-danube/' },
+            { title: 'ICPDR — Danube Basin Facts and Figures', url: 'https://www.icpdr.org/resources/danube-basin-facts-figures' }
           ]
         }
       },
+
+      // CHAPITRE 9 : VOLGA
       {
         id: 'volga',
-        title: 'La Volga : le principal fleuve de Russie européenne',
-        field: 'Géographie physique et humaine',
-        summary: 'Découvrir la Volga, son bassin, ses usages économiques et les enjeux liés aux grands aménagements hydrauliques russes.',
+        title: 'La Volga : le grand fleuve de la Russie européenne',
+        field: 'Europe orientale · Russie · Mer Caspienne',
+        summary: 'Étudier la Volga, le plus long fleuve d’Europe, son bassin versant, son régime marqué par les saisons, son importance pour les villes et les activités économiques, ainsi que les effets des barrages et des pollutions.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et parcours',
-              content: 'La Volga se situe dans la partie européenne de la Russie. Elle prend sa source dans les collines de Valdaï et traverse le territoire russe vers le sud-est avant de se jeter dans la mer Caspienne. Avec une longueur d’environ 3 530 km, elle est le plus long fleuve d’Europe.'
-            },
-            {
-              title: '2. Le bassin de la Volga',
-              content: 'Le bassin de la Volga couvre une vaste partie de la Russie européenne. Il reçoit les eaux de nombreux affluents et traverse des régions aux paysages variés. Son régime est influencé par les précipitations et la fonte des neiges.'
-            },
-            {
-              title: '3. Les activités économiques',
-              content: 'La Volga joue un rôle important dans le transport fluvial, la pêche, l’agriculture, l’industrie et l’approvisionnement en eau. Plusieurs grandes villes, notamment Nijni Novgorod, Kazan, Samara et Volgograd, sont situées sur ses rives.'
-            },
-            {
-              title: '4. Les barrages et les réservoirs',
-              content: 'La Volga a été fortement aménagée par la construction de barrages et de réservoirs. Ces installations permettent de produire de l’électricité, de réguler les débits et de faciliter certaines activités économiques. Elles ont cependant modifié les paysages et les écosystèmes.'
-            },
-            {
-              title: '5. Les enjeux environnementaux',
-              content: 'La pollution industrielle et agricole, l’artificialisation des berges et les modifications des écoulements représentent des problèmes importants. L’apport d’eau douce vers la mer Caspienne dépend aussi du fonctionnement du fleuve. La gestion de la Volga doit donc prendre en compte les équilibres écologiques et économiques.'
-            }
+            'La Volga est le plus long fleuve d’Europe. Elle prend sa source dans les hauteurs du Valdaï, au nord-ouest de Moscou, puis s’écoule principalement vers le sud à travers la Russie européenne. Elle rejoint la mer Caspienne par un vaste delta. Son bassin versant couvre une grande partie de la plaine russe et rassemble de nombreux affluents, parmi lesquels la Kama et l’Oka. Le fleuve est un axe majeur du territoire russe : il relie des régions naturelles, des villes et des espaces économiques. Contrairement à un fleuve qui se jette dans l’océan, la Volga aboutit dans une mer intérieure fermée.',
+            'Le régime hydrologique de la Volga est fortement influencé par les saisons. En hiver, une grande partie du cours peut être prise par les glaces. Au printemps, la fonte des neiges provoque traditionnellement une hausse du niveau de l’eau. Les pluies contribuent également à l’alimentation du fleuve et de ses affluents. Les barrages et les réservoirs construits sur le cours de la Volga et de ses affluents ont modifié les variations naturelles du débit. Le fonctionnement actuel du fleuve dépend donc à la fois du climat et des aménagements humains.',
+            'La Volga joue un rôle important dans l’organisation économique de la Russie européenne. Elle traverse ou dessert de grandes villes et des régions industrielles et agricoles. Elle est utilisée pour le transport fluvial, l’approvisionnement en eau, l’irrigation et la production hydroélectrique. Des canaux la relient à d’autres bassins et voies navigables, ce qui renforce son rôle dans les échanges intérieurs. La pêche et les activités de loisirs contribuent également à l’importance du fleuve. Les usages sont nombreux et nécessitent une gestion de la quantité et de la qualité de l’eau.',
+            'Les barrages et les réservoirs ont profondément transformé le système de la Volga. Ils permettent de produire de l’électricité, de réguler certains débits et de soutenir la navigation. Toutefois, la création de grands réservoirs a modifié les paysages, les habitats aquatiques et le transport des sédiments. La régulation des écoulements peut perturber les périodes naturelles de hautes eaux dont dépendent certaines zones humides et espèces. Les aménagements doivent donc être évalués en tenant compte de leurs avantages économiques et de leurs conséquences écologiques.',
+            'La Volga connaît des problèmes de qualité de l’eau liés aux activités urbaines, industrielles et agricoles. Les rejets insuffisamment traités et les apports de nutriments peuvent dégrader certains secteurs du fleuve et de ses réservoirs. Le delta de la Volga forme un vaste ensemble de chenaux, de marais et de zones humides avant l’arrivée dans la mer Caspienne. Ces milieux accueillent une biodiversité importante et jouent un rôle dans la reproduction et l’alimentation de nombreuses espèces. La protection de la Volga implique de réduire les pollutions, de surveiller les écosystèmes et de gérer les barrages et les prélèvements de manière coordonnée.'
           ],
           example: {
-            title: 'Exemple : Volgograd',
-            content: 'Volgograd est située sur la basse Volga. La ville bénéficie de la position du fleuve comme axe de transport et de la présence d’infrastructures hydrauliques et énergétiques.'
+            statement: 'Au printemps, la fonte des neiges augmente les apports en eau de la Volga. Quel effet peut-on observer sur le niveau du fleuve ?',
+            calculation: 'Lorsque les apports en eau augmentent et dépassent temporairement les pertes et les capacités d’évacuation du cours d’eau, le niveau peut monter.',
+            answer: 'Le niveau de la Volga peut augmenter au printemps. Les barrages et les réservoirs modifient toutefois l’ampleur et le calendrier des variations observées.'
           },
           exercise: {
-            question: 'Montre comment les aménagements de la Volga ont transformé son fonctionnement et ses usages.',
-            expectedAnswer: 'Les barrages et les réservoirs permettent la production électrique, la régulation de l’eau et la navigation. Ils modifient toutefois les écoulements naturels, les habitats aquatiques et le transport des sédiments.'
+            question: 'Pourquoi la Volga ne se comporte-t-elle pas aujourd’hui exactement comme un cours d’eau naturel non aménagé ?',
+            answer: 'Parce que les barrages, les réservoirs et les ouvrages de navigation modifient les écoulements, les variations saisonnières du niveau et le transport des sédiments.'
           },
           exercises: [
             {
-              question: 'Dans quel pays se trouve la Volga ?',
-              answer: 'En Russie.'
+              question: 'Quel est le rang de la Volga en Europe par sa longueur ?',
+              answer: 'La Volga est le plus long fleuve d’Europe.'
             },
             {
-              question: 'Dans quelle mer se jette-t-elle ?',
-              answer: 'Dans la mer Caspienne.'
+              question: 'Dans quelle mer la Volga se jette-t-elle ?',
+              answer: 'Elle se jette dans la mer Caspienne.'
             },
             {
-              question: 'Quelle est sa particularité à l’échelle européenne ?',
-              answer: 'C’est le plus long fleuve d’Europe.'
-            },
-            {
-              question: 'Cite une grande ville située sur la Volga.',
-              answer: 'Kazan, Samara ou Volgograd.'
-            },
-            {
-              question: 'Quel est l’intérêt des barrages sur la Volga ?',
-              answer: 'Ils permettent notamment de produire de l’électricité et de réguler les eaux.'
+              question: 'Quel phénomène saisonnier contribue à la hausse du niveau de la Volga au printemps ?',
+              answer: 'La fonte des neiges contribue à la hausse du niveau du fleuve.'
             }
           ],
           sources: [
-            {
-              title: 'Encyclopaedia Britannica - Volga River',
-              url: 'https://www.britannica.com/place/Volga-River'
-            },
-            {
-              title: 'UNESCO',
-              url: 'https://www.unesco.org/'
-            },
-            {
-              title: 'FAO',
-              url: 'https://www.fao.org/'
-            }
+            { title: 'Larousse — La Volga', url: 'https://www.larousse.fr/encyclopedie/riviere-lac/la_Volga/149240' },
+            { title: 'Encyclopaedia Britannica — Volga River', url: 'https://www.britannica.com/place/Volga-River' },
+            { title: 'Encyclopaedia Universalis Junior — Volga', url: 'https://junior.universalis.fr/encyclopedie/volga' }
           ]
         }
       },
+
+      // CHAPITRE 10 : PARANA
       {
         id: 'parana',
-        title: 'Le Paraná : un fleuve stratégique d’Amérique du Sud',
-        field: 'Géographie physique et humaine',
-        summary: 'Étudier le bassin du Paraná, son rôle dans les échanges régionaux, la production hydroélectrique et les activités agricoles.',
+        title: 'Le Paraná : un fleuve structurant de l’Amérique du Sud',
+        field: 'Amérique du Sud · Brésil, Paraguay et Argentine · Río de la Plata et océan Atlantique',
+        summary: 'Comprendre le parcours du Paraná, son réseau d’affluents, son bassin partagé entre plusieurs pays, son rôle dans l’agriculture, la navigation et l’hydroélectricité, ainsi que les enjeux écologiques des barrages et des plaines inondables.',
         lesson: {
           sections: [
-            {
-              title: '1. Localisation et parcours',
-              content: 'Le Paraná est un grand fleuve d’Amérique du Sud. Il traverse ou borde le Brésil, le Paraguay et l’Argentine. Il rejoint le fleuve Uruguay pour former le Río de la Plata, qui s’ouvre sur l’océan Atlantique. Il appartient à un vaste système hydrographique du centre et du sud-est du continent.'
-            },
-            {
-              title: '2. Le bassin du Paraná',
-              content: 'Le bassin du Paraná comprend des affluents importants, notamment le Paraguay et l’Iguaçu. Il traverse des régions aux paysages variés, depuis les plateaux tropicaux jusqu’aux plaines subtropicales. Les précipitations influencent fortement son débit.'
-            },
-            {
-              title: '3. L’importance agricole et commerciale',
-              content: 'Le bassin du Paraná est une région importante pour la production agricole et le transport des marchandises. Les voies fluviales permettent d’acheminer des produits agricoles vers les installations portuaires et les marchés internationaux.'
-            },
-            {
-              title: '4. Le potentiel hydroélectrique',
-              content: 'Le Paraná possède un potentiel hydroélectrique important. Le barrage d’Itaipu, construit sur le fleuve à la frontière entre le Brésil et le Paraguay, constitue un aménagement majeur. Il produit de grandes quantités d’électricité pour les deux pays.'
-            },
-            {
-              title: '5. Les enjeux environnementaux et sociaux',
-              content: 'Les barrages, les changements d’utilisation des terres, la pollution et la modification des habitats influencent les écosystèmes du bassin. Les aménagements hydrauliques peuvent aussi modifier les déplacements des poissons et les conditions de vie de certaines populations. Une gestion concertée est nécessaire entre les pays riverains.'
-            }
+            'Le Paraná est l’un des grands fleuves d’Amérique du Sud. Il se forme dans le sud du Brésil par la réunion de 2 cours d’eau, le Rio Grande et le Paranaíba. Il s’écoule ensuite vers le sud-ouest, forme des frontières entre plusieurs pays et traverse notamment le Paraguay et l’Argentine. Il reçoit de grands affluents, dont le Paraguay et l’Iguaçu. Avec le fleuve Uruguay, il contribue à former le vaste estuaire du Río de la Plata, qui s’ouvre sur l’océan Atlantique. Son bassin versant couvre une grande partie du sud-est de l’Amérique du Sud.',
+            'Le débit du Paraná dépend des précipitations et des apports de ses nombreux affluents. Les régions du bassin connaissent des régimes climatiques différents, ce qui entraîne des variations saisonnières et géographiques des écoulements. Les crues peuvent provoquer l’inondation de grandes plaines alluviales et de zones humides. Ces espaces stockent temporairement l’eau, accueillent des espèces aquatiques et contribuent au fonctionnement écologique du fleuve. Le transport des sédiments par le courant participe également à la formation et à l’évolution des plaines et des îles fluviales.',
+            'Le bassin du Paraná est essentiel pour les activités humaines. Il traverse des régions agricoles importantes et fournit de l’eau aux villes, aux industries et aux exploitations agricoles. La navigation permet le transport de marchandises et relie des territoires intérieurs aux voies de communication de l’estuaire du Río de la Plata. Le fleuve et ses affluents sont aussi utilisés pour la production hydroélectrique. Les grands ouvrages hydroélectriques fournissent de l’électricité à plusieurs pays, mais ils modifient les écoulements et les milieux aquatiques. Le Paraná est donc à la fois une ressource énergétique, agricole, économique et écologique.',
+            'Les barrages ont profondément transformé certains tronçons du Paraná et de ses affluents. Ils créent des réservoirs, régulent une partie des débits et permettent de produire de l’électricité. En revanche, ils peuvent retenir les sédiments, modifier les températures et les caractéristiques de l’eau, fragmenter les habitats et perturber les déplacements de poissons migrateurs. Les plaines inondables dépendent des variations naturelles du niveau du fleuve. Lorsque les crues sont modifiées, les zones humides et les espèces qui en dépendent peuvent être affectées. La gestion des barrages doit donc prendre en compte les conséquences en aval et les besoins des écosystèmes.',
+            'Le Paraná est confronté à des enjeux de pollution, de transformation des berges, de modification des plaines inondables et de pression sur les ressources en eau. Les activités agricoles et urbaines peuvent apporter des nutriments, des produits polluants et des matières en suspension dans les cours d’eau. Les aménagements peuvent modifier les habitats et les échanges entre le fleuve et ses zones humides. Comme le bassin est partagé entre plusieurs pays, la gestion de l’eau et des infrastructures nécessite une coordination régionale. La protection du Paraná implique de préserver les plaines alluviales, de limiter les pollutions et de maintenir autant que possible les fonctions écologiques du réseau fluvial.'
           ],
           example: {
-            title: 'Exemple : le barrage d’Itaipu',
-            content: 'Le barrage d’Itaipu est situé sur le Paraná, à la frontière entre le Brésil et le Paraguay. Il représente un exemple majeur de coopération énergétique entre deux pays et de transformation d’un grand fleuve par les aménagements humains.'
+            statement: 'Le Paraná reçoit les eaux du Paraguay. Pourquoi cette confluence est-elle importante pour les territoires situés en aval ?',
+            calculation: 'Le Paraguay est un affluent du Paraná. À leur confluence, les eaux des 2 cours d’eau se réunissent et contribuent au débit du cours principal en aval.',
+            answer: 'La confluence augmente les apports en eau du Paraná et relie les bassins des 2 fleuves. Les variations hydrologiques et les activités humaines dans le bassin du Paraguay peuvent donc avoir des conséquences sur le Paraná en aval.'
           },
           exercise: {
-            question: 'Explique pourquoi le Paraná est un fleuve stratégique pour le développement économique du Brésil, du Paraguay et de l’Argentine.',
-            expectedAnswer: 'Il permet le transport de marchandises, soutient les activités agricoles et offre un important potentiel hydroélectrique. Son bassin constitue donc une ressource partagée entre plusieurs pays.'
+            question: 'Pourquoi la construction de barrages sur le Paraná peut-elle avoir des conséquences sur la pêche et les zones humides ?',
+            answer: 'Les barrages peuvent modifier les débits et les crues, retenir les sédiments et gêner les déplacements de poissons. Ces changements peuvent perturber les habitats, la reproduction de certaines espèces et le fonctionnement des plaines inondables.'
           },
           exercises: [
             {
-              question: 'Sur quel continent se trouve le Paraná ?',
-              answer: 'En Amérique du Sud.'
+              question: 'Dans quelle partie du monde se trouve le bassin du Paraná ?',
+              answer: 'Il se trouve en Amérique du Sud.'
             },
             {
-              question: 'Quels pays sont notamment concernés par son cours ?',
-              answer: 'Le Brésil, le Paraguay et l’Argentine.'
+              question: 'Quels sont les 2 cours d’eau dont la confluence forme le Paraná ?',
+              answer: 'Le Rio Grande et le Paranaíba.'
             },
             {
-              question: 'Quel fleuve rejoint le Paraná pour former le Río de la Plata ?',
-              answer: 'Le fleuve Uruguay.'
-            },
-            {
-              question: 'Quel est le rôle du barrage d’Itaipu ?',
-              answer: 'Produire de l’électricité pour le Brésil et le Paraguay.'
-            },
-            {
-              question: 'Cite une menace environnementale liée aux aménagements du Paraná.',
-              answer: 'La perturbation des habitats aquatiques ou des migrations des poissons.'
+              question: 'Quel grand estuaire reçoit les eaux du Paraná et du fleuve Uruguay ?',
+              answer: 'Le Río de la Plata.'
             }
           ],
           sources: [
-            {
-              title: 'Encyclopaedia Britannica - Paraná River',
-              url: 'https://www.britannica.com/place/Parana-River'
-            },
-            {
-              title: 'Itaipu Binacional',
-              url: 'https://www.itaipu.gov.br/'
-            },
-            {
-              title: 'Comité Intergubernamental Coordinador de los Países de la Cuenca del Plata',
-              url: 'https://cicplata.org/'
-            }
+            { title: 'Agence spatiale européenne — Paraná River', url: 'https://www.esa.int/Applications/Observing_the_Earth/Parana_River' },
+            { title: 'Larousse — Le Paraná', url: 'https://www.larousse.fr/encyclopedie/riviere-lac/le_Paran%C3%A1/137030' },
+            { title: 'National Geographic Education — South America: Physical Geography', url: 'https://education.nationalgeographic.org/resource/south-america-physical-geography/' }
           ]
         }
       }
     ]
-  }
-];
+  },
+
+]
