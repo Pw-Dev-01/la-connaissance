@@ -7080,6 +7080,322 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'amerindiens',
+  sortYear: -15000,
+  title: 'Les peuples autochtones d’Amérique du Nord : nations, territoires et histoires plurielles',
+  note: 'Sept chapitres présentent le peuplement ancien de l’Amérique du Nord, la diversité des sociétés régionales, les agricultures et les centres urbains, les nations et leurs systèmes politiques, les premiers contacts coloniaux, les politiques de dépossession et les continuités contemporaines. Le repère -15000 est un choix conventionnel de classement, non une date certaine du premier peuplement : les données archéologiques et génétiques indiquent une histoire plus ancienne et discutée, avec des scénarios de migrations multiples. Le terme « Amérindiens » est encore employé en français, mais « peuples autochtones », « nations autochtones » ou les noms propres des peuples sont souvent plus précis. Le mot « tribu » peut être pertinent dans certains contextes juridiques ou historiques, mais ne doit pas masquer la diversité des nations et de leurs institutions.',
+  chapters: [
+    {
+      id: 'peuplement-ancien-amerique-nord',
+      title: 'Le peuplement ancien de l’Amérique du Nord et les premières sociétés',
+      field: 'Archéologie et histoire des peuplements · Béringie et Amérique du Nord · avant 15000 av. notre ère–premiers millénaires',
+      summary: 'Présenter les connaissances sur les premiers peuplements, les routes possibles de migration et les limites des datations archéologiques.',
+      lesson: {
+        sections: [
+          'L’histoire des peuples autochtones d’Amérique du Nord commence bien avant l’arrivée des Européens. Les données archéologiques, génétiques et paléoenvironnementales montrent une présence humaine ancienne sur le continent, mais la date et les itinéraires exacts des premiers peuplements font encore l’objet de recherches. Pendant les périodes glaciaires, le niveau des mers était plus bas et une vaste région terrestre, la Béringie, reliait l’actuelle Sibérie à l’Alaska. Des populations venues d’Asie ont emprunté cette région à différentes périodes possibles. Des déplacements le long des côtes du Pacifique sont également étudiés. Il ne faut donc pas réduire le peuplement à une migration unique, parfaitement datée et empruntant un seul itinéraire.',
+          'Les chronologies anciennes sont complexes. Des sites archéologiques d’Amérique du Nord attestent une présence humaine antérieure à la diffusion de la culture Clovis, longtemps considérée comme le modèle de référence du premier peuplement. Les datations et l’interprétation de certains sites restent débattues, tandis que d’autres découvertes ont renforcé l’idée d’une occupation plus ancienne. Les spécialistes croisent les datations radiocarbone, les contextes géologiques, les outils, les traces d’activités humaines et les analyses génétiques. Une date isolée ne suffit pas à établir à elle seule un scénario général du peuplement continental.',
+          'Les populations anciennes s’adaptent à des environnements très différents : régions arctiques, forêts boréales, littoraux, grandes plaines, plateaux, déserts et vallées fluviales. Les ressources disponibles influencent les modes de subsistance, les déplacements saisonniers, les techniques de chasse, de pêche et de collecte, ainsi que les formes d’habitat. Ces adaptations ne doivent pas être comprises comme des étapes simples allant nécessairement du nomadisme à la sédentarité. Des communautés mobiles peuvent posséder des organisations sociales complexes et des réseaux d’échange étendus.',
+          'Les récits d’origine transmis par les nations autochtones constituent également des sources essentielles pour comprendre leurs conceptions de l’histoire, des territoires et des relations entre humains et monde vivant. Ils ne sont pas de même nature que les modèles scientifiques fondés sur l’archéologie ou la génétique. Une démarche historique rigoureuse les considère dans leur contexte culturel et respecte leur autonomie, sans les réduire à de simples versions concurrentes d’une chronologie scientifique.'
+        ],
+        example: {
+          statement: 'Pourquoi ne peut-on pas attribuer une date unique et certaine au premier peuplement de l’Amérique du Nord ?',
+          calculation: 'Les chercheurs comparent plusieurs catégories de preuves : datations de sites, vestiges matériels, ADN ancien et données sur les environnements passés. Les résultats ne désignent pas encore un événement unique et précisément daté.',
+          answer: 'Parce que le peuplement s’est probablement déroulé en plusieurs étapes et que les découvertes archéologiques continuent de faire évoluer les modèles. -15000 est ici un repère de classement, pas une affirmation sur la date réelle de la première arrivée humaine.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les récits d’origine autochtones des modèles archéologiques du peuplement ?',
+          answer: 'Ils répondent à des démarches et à des questions différentes. Les récits d’origine transmettent des connaissances et des conceptions propres aux nations, tandis que l’archéologie formule et teste des hypothèses à partir de vestiges matériels. Les deux doivent être présentés avec leur contexte et sans les confondre.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que la Béringie ?',
+            answer: 'Une vaste région aujourd’hui en partie submergée qui reliait l’Asie du Nord-Est et l’Alaska lorsque le niveau marin était plus bas.'
+          },
+          {
+            question: 'La culture Clovis représente-t-elle nécessairement la première présence humaine en Amérique du Nord ?',
+            answer: 'Non. Des sites antérieurs à Clovis sont connus ou étudiés, et la chronologie du peuplement reste un domaine de recherche.'
+          },
+          {
+            question: 'Pourquoi les archéologues utilisent-ils plusieurs types de preuves ?',
+            answer: 'Pour vérifier les interprétations et éviter de tirer une conclusion générale à partir d’un seul objet, d’une seule datation ou d’un site isolé.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Native Peoples of North America', url: 'https://www.worldhistory.org/Native_Peoples_of_North_America/' },
+          { title: 'Smithsonian National Museum of the American Indian — Native Knowledge 360°, Essential Understandings', url: 'https://americanindian.si.edu/nk360/about/essential-understandings' },
+          { title: 'National Park Service — History and Culture of the Mississippi Delta Region', url: 'https://www.nps.gov/locations/lowermsdeltaregion/history-and-culture-of-the-mississippi-delta-region.htm' }
+        ]
+      }
+    },
+    {
+      id: 'regions-cultures-nations-autochtones',
+      title: 'Les grandes régions culturelles et la diversité des nations autochtones',
+      field: 'Histoire culturelle et géographie humaine · Arctique, côte Pacifique, forêts, plaines et Sud-Ouest · périodes précoloniales à contemporaines',
+      summary: 'Découvrir la diversité des peuples, des langues, des habitats et des modes de vie sans les enfermer dans des catégories uniformes.',
+      lesson: {
+        sections: [
+          'L’Amérique du Nord comprend une grande diversité de régions culturelles et linguistiques. Dans l’Arctique et les régions subarctiques vivent notamment des peuples inuit, yupik, aléoutes et diverses nations de langues athapascanes. Les sociétés de la côte nord-ouest du Pacifique, parmi lesquelles les Tlingit, Haida et Kwakwaka’wakw, développent des économies fortement liées à la pêche, aux ressources marines et aux échanges. Dans les forêts de l’Est et autour des Grands Lacs, des nations de langues algonquiennes et iroquoiennes entretiennent des relations politiques et commerciales complexes. Ces regroupements géographiques sont des outils de présentation : ils ne remplacent pas les identités propres à chaque nation.',
+          'Dans les Grandes Plaines, plusieurs peuples pratiquent des économies fondées sur une combinaison variable de chasse, de collecte, d’agriculture et d’échanges. Les bisons jouent un rôle majeur dans certaines sociétés, mais toutes les nations des Plaines n’ont pas le même mode de vie. La diffusion du cheval, introduit par les Espagnols dans les Amériques puis adopté et élevé par différentes communautés, transforme profondément certaines mobilités et pratiques de chasse à partir de l’époque coloniale. Il serait donc inexact de représenter les sociétés des Plaines comme si elles avaient toutes été équestres depuis l’Antiquité.',
+          'Dans le Sud-Ouest, les communautés pueblos, notamment les Hopi, Zuni et plusieurs communautés parlant des langues keresanes ou tanoanes, possèdent des traditions agricoles et architecturales anciennes. Les villages construits en pierre, en terre et en adobe témoignent de formes d’habitat adaptées aux milieux arides. Les Diné (Navajo) et les Apache ont des histoires et des langues distinctes, liées à des mobilités et à des relations régionales particulières. Les catégories « Pueblo », « Diné » et « Apache » ne sont pas interchangeables et ne désignent pas une seule culture uniforme.',
+          'Dans le Sud-Est, des nations telles que les Cherokee, Muscogee (Creek), Choctaw, Chickasaw et Seminole possèdent des institutions, des langues et des histoires politiques propres. Les régions de Californie et du Grand Bassin comprennent elles aussi une très grande diversité de nations et de communautés, dont les économies reposent selon les lieux sur la pêche, la collecte, la chasse, la gestion de ressources végétales et les échanges. La diversité linguistique est considérable : les familles de langues ne correspondent pas automatiquement à des frontières politiques ou à des identités collectives uniques.',
+          'Les frontières entre peuples ne sont pas immuables. Les alliances, les mariages, les conflits, les migrations, les échanges et les transformations environnementales modifient les territoires et les relations au fil du temps. Les noms employés par les sources européennes ne correspondent pas toujours aux noms que les communautés utilisent pour se désigner elles-mêmes. Dans une étude sérieuse, il convient donc de privilégier les noms choisis par les nations lorsqu’ils sont connus, et de préciser les contextes historiques des appellations anciennes.'
+        ],
+        example: {
+          statement: 'Pourquoi une carte des régions culturelles ne suffit-elle pas à décrire toutes les nations autochtones ?',
+          calculation: 'Une région culturelle regroupe des caractéristiques géographiques ou historiques communes, alors qu’une nation possède sa propre histoire, ses institutions, ses langues et ses relations territoriales.',
+          answer: 'Parce que les catégories régionales simplifient une réalité beaucoup plus diverse. Elles aident à se repérer, mais ne doivent jamais remplacer les histoires particulières des peuples.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il incorrect d’affirmer que tous les peuples autochtones d’Amérique du Nord avaient le même mode de vie ?',
+          answer: 'Les environnements, les langues, les économies, les institutions et les trajectoires historiques diffèrent considérablement. Les sociétés arctiques, les nations des forêts, les peuples de la côte Pacifique et les communautés pueblos ne peuvent pas être ramenés à un modèle unique.'
+        },
+        exercises: [
+          {
+            question: 'Quels peuples sont notamment associés aux régions arctiques ?',
+            answer: 'Les Inuit, les Yupik et les Aléoutes, entre autres peuples du Nord.'
+          },
+          {
+            question: 'Les peuples pueblos et les Diné (Navajo) constituent-ils une seule nation ?',
+            answer: 'Non. Il s’agit de peuples et de communautés distincts, avec des langues, des institutions et des histoires propres.'
+          },
+          {
+            question: 'Pourquoi l’adoption du cheval a-t-elle transformé certaines sociétés des Grandes Plaines ?',
+            answer: 'Elle a facilité certains déplacements, modifié les pratiques de chasse et influencé les échanges et les rapports politiques, surtout à partir de l’époque coloniale.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Native Peoples of North America', url: 'https://www.worldhistory.org/Native_Peoples_of_North_America/' },
+          { title: 'Smithsonian National Museum of the American Indian — Essential Understandings', url: 'https://americanindian.si.edu/nk360/about/essential-understandings' },
+          { title: 'Smithsonian — Pacific Northwest History and Cultures', url: 'https://americanindian.si.edu/nk360/pnw-history-culture/' },
+          { title: 'Library of Congress — Native American: Overview', url: 'https://www.loc.gov/classroom-materials/immigration/native-american/overview/' }
+        ]
+      }
+    },
+    {
+      id: 'agriculture-villes-echanges-precoloniaux',
+      title: 'Agriculture, villes, réseaux d’échanges et sociétés précoloniales',
+      field: 'Archéologie et histoire économique · Est, vallée du Mississippi et Sud-Ouest · environ 2000 av. notre ère–XVIe siècle',
+      summary: 'Étudier les agricultures, les centres cérémoniels, les réseaux commerciaux et les transformations des sociétés avant et pendant les premiers contacts européens.',
+      lesson: {
+        sections: [
+          'Les sociétés autochtones d’Amérique du Nord développent des systèmes économiques adaptés à leurs environnements. La chasse, la pêche et la collecte restent essentielles dans de nombreuses régions, tandis que l’agriculture se développe selon des rythmes différents. Le maïs, domestiqué en Mésoamérique, se diffuse progressivement vers le nord par des réseaux de contacts et d’échanges. Les haricots et les courges sont également cultivés dans plusieurs régions. Dans certaines communautés agricoles, ces plantes sont associées dans des systèmes connus aujourd’hui sous l’expression « Trois Sœurs », mais leur diffusion et leur importance varient selon les périodes et les territoires.',
+          'Dans l’Est de l’Amérique du Nord, les traditions archéologiques dites Woodland comprennent des sociétés diverses qui construisent des tertres, développent des pratiques cérémonielles et participent à des réseaux d’échanges à longue distance. Les traditions Adena et Hopewell sont notamment connues pour leurs ensembles de tertres et leurs échanges de matières premières et d’objets. Ces traditions ne forment pas un empire unique ni une population homogène. Elles témoignent plutôt de communautés reliées par des pratiques rituelles, des relations commerciales et des formes d’organisation régionales.',
+          'La culture mississippienne, qui se développe dans plusieurs régions du centre et du sud-est de l’Amérique du Nord à partir des environs du VIIIe siècle de notre ère, est associée à des centres de population, à des plateformes de terre et à des réseaux politiques et économiques étendus. Cahokia, près de l’actuelle Saint-Louis, devient l’un des plus grands centres urbains précolombiens au nord du Mexique. Son développement est particulièrement important entre le XIe et le XIIIe siècle. La ville rassemble des quartiers d’habitation, des espaces cérémoniels et des tertres monumentaux, dont Monks Mound. Son histoire comprend une croissance importante puis un déclin progressif, dont les causes sont discutées et probablement multiples.',
+          'Dans le Sud-Ouest, les sociétés ancestrales pueblos construisent des villages, des maisons collectives et des ensembles architecturaux remarquables, notamment à Chaco Canyon et Mesa Verde. Les pratiques agricoles s’appuient sur une connaissance fine des sols, de l’eau et des conditions climatiques. Les périodes de sécheresse, les changements de réseaux d’échanges et les transformations politiques peuvent conduire à des déplacements et à des réorganisations des communautés. Les populations ne disparaissent pas : leurs descendants et leurs héritiers culturels vivent notamment dans les communautés pueblos contemporaines.',
+          'Les échanges relient les régions par des réseaux de circulation de matières premières, de nourriture, d’objets rituels et de connaissances. Des coquillages, des pierres, des pigments et d’autres matériaux parcourent parfois de grandes distances. Ces échanges ne supposent pas nécessairement l’existence de marchés centralisés comparables aux marchés modernes. Ils peuvent s’appuyer sur des relations diplomatiques, des dons, des alliances, des obligations sociales et des échanges commerciaux. L’archéologie permet de reconstruire ces connexions à partir des matériaux et de leur provenance.'
+        ],
+        example: {
+          statement: 'Pourquoi Cahokia est-elle importante pour l’histoire des sociétés autochtones d’Amérique du Nord ?',
+          calculation: 'Les vestiges archéologiques montrent un centre urbain majeur, avec des tertres monumentaux, des quartiers d’habitation et des réseaux d’échanges. Son apogée se situe principalement entre le XIe et le XIIIe siècle.',
+          answer: 'Cahokia démontre que l’Amérique du Nord précoloniale comprenait de grands centres de population, des institutions politiques complexes et des réseaux régionaux étendus.'
+        },
+        exercise: {
+          question: 'Pourquoi les tertres et les objets importés sont-ils importants pour les archéologues ?',
+          answer: 'Ils renseignent sur l’organisation des espaces cérémoniels et politiques, les pratiques collectives et les réseaux d’échanges entre communautés.'
+        },
+        exercises: [
+          {
+            question: 'D’où le maïs est-il originaire avant sa diffusion vers l’Amérique du Nord ?',
+            answer: 'Il a été domestiqué en Mésoamérique avant de se diffuser progressivement vers le nord.'
+          },
+          {
+            question: 'Dans quelle région se trouve Cahokia ?',
+            answer: 'Dans la vallée du Mississippi, près de l’actuelle ville de Saint-Louis, aux États-Unis.'
+          },
+          {
+            question: 'Les sociétés mississippiennes formaient-elles un empire unique ?',
+            answer: 'Non. Le terme désigne des traditions culturelles et archéologiques diverses, organisées en plusieurs centres et pouvoirs régionaux.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Native Peoples of North America', url: 'https://www.worldhistory.org/Native_Peoples_of_North_America/' },
+          { title: 'National Park Service — History and Culture of the Mississippi Delta Region', url: 'https://www.nps.gov/locations/lowermsdeltaregion/history-and-culture-of-the-mississippi-delta-region.htm' },
+          { title: 'Open Textbook BC — The Millennia before Contact', url: 'https://opentextbc.ca/preconfederation2e/chapter/2-4-the-millennia-before-contact/' },
+          { title: 'PNAS — Spatiotemporal distribution of the North American Indigenous population prior to European contact', url: 'https://doi.org/10.1073/pnas.2419454122' }
+        ]
+      }
+    },
+    {
+      id: 'nations-gouvernance-haudenosaunee-pueblos',
+      title: 'Nations, diplomatie et systèmes politiques avant la colonisation européenne',
+      field: 'Histoire politique autochtone · Forêts de l’Est, Grandes Plaines et Sud-Ouest · périodes précoloniales',
+      summary: 'Présenter les formes de gouvernement, les confédérations, les conseils, les alliances et la diplomatie entre nations.',
+      lesson: {
+        sections: [
+          'Les peuples autochtones d’Amérique du Nord possèdent des systèmes politiques variés bien avant l’arrivée des Européens. Selon les nations, l’autorité peut s’exercer à travers des conseils, des chefs, des clans, des lignages, des assemblées communautaires ou des institutions confédérales. Les règles de succession et de décision diffèrent. Certaines sociétés accordent une place importante aux parentés matrilinéaires, d’autres organisent l’autorité selon d’autres principes. Il est donc inexact de présenter un modèle de gouvernement unique pour tout le continent.',
+          'La Confédération haudenosaunee, souvent appelée Confédération iroquoise dans les sources historiques, rassemble plusieurs nations de langue iroquoienne. La tradition distingue une formation initiale de cinq nations — Mohawk, Oneida, Onondaga, Cayuga et Seneca — puis l’intégration des Tuscarora au XVIIIe siècle. La Grande Loi de la Paix constitue un cadre politique et diplomatique central dans les traditions haudenosaunee. Les institutions confédérales organisent les relations entre nations et les décisions collectives. La datation exacte de la fondation de la confédération est débattue et les traditions orales doivent être prises en compte dans l’étude de son histoire.',
+          'Dans les régions de l’Est, les alliances entre nations jouent un rôle essentiel dans les relations commerciales, la diplomatie et les conflits. Les Wendat, les Haudenosaunee, les nations algonquiennes et d’autres peuples entretiennent des relations qui évoluent selon les circonstances. Les confédérations ne sont pas des structures immobiles : elles peuvent se renforcer, se diviser ou réorganiser leurs alliances. Les Européens entrent dans des espaces politiques déjà structurés et doivent négocier avec des nations qui possèdent leurs propres intérêts et stratégies.',
+          'Dans les Plaines et les régions voisines, les systèmes politiques sont également divers. Certaines nations s’organisent autour de conseils communautaires et de dirigeants dont l’autorité dépend de la réputation, des relations et de la capacité à obtenir un accord collectif. Dans le Sud-Ouest, les communautés pueblos disposent de structures de gouvernement et de responsabilités cérémonielles qui varient d’un village à l’autre. Les institutions politiques sont liées aux relations familiales, aux territoires, aux ressources et aux obligations collectives.',
+          'La diplomatie autochtone ne se limite pas aux relations avec les Européens. Les nations négocient entre elles des alliances, des accords de paix, des échanges et des usages territoriaux. Elles reconnaissent des interlocuteurs, envoient des représentants et utilisent des protocoles de discussion propres à leurs traditions. Comprendre ces institutions permet de sortir d’une vision où les peuples autochtones seraient uniquement des acteurs passifs face à l’expansion coloniale.'
+        ],
+        example: {
+          statement: 'Pourquoi la Confédération haudenosaunee ne doit-elle pas être décrite comme une simple tribu ?',
+          calculation: 'Elle rassemble plusieurs nations distinctes, dotées de leurs propres communautés et identités, au sein d’un système confédéral de relations et de décisions communes.',
+          answer: 'Parce qu’il s’agit d’une organisation politique entre plusieurs nations, fondée sur des institutions et des traditions diplomatiques spécifiques.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il important d’étudier les institutions autochtones avant la colonisation ?',
+          answer: 'Cela permet de comprendre que les nations possédaient déjà des formes de gouvernement, des règles diplomatiques, des alliances et des systèmes juridiques avant l’intervention des puissances européennes.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les cinq nations fondatrices traditionnellement associées à la Confédération haudenosaunee ?',
+            answer: 'Mohawk, Oneida, Onondaga, Cayuga et Seneca.'
+          },
+          {
+            question: 'Quelle institution est associée aux traditions politiques haudenosaunee ?',
+            answer: 'La Grande Loi de la Paix, qui encadre la confédération et ses relations politiques.'
+          },
+          {
+            question: 'Les systèmes politiques autochtones étaient-ils identiques d’une région à l’autre ?',
+            answer: 'Non. Ils variaient selon les nations, les traditions, les structures sociales et les contextes territoriaux.'
+          }
+        ],
+        sources: [
+          { title: 'Smithsonian National Museum of the American Indian — Essential Understandings: Power, Authority, and Governance', url: 'https://americanindian.si.edu/nk360/about/essential-understandings' },
+          { title: 'World History Encyclopedia — Native Peoples of North America', url: 'https://www.worldhistory.org/Native_Peoples_of_North_America/' },
+          { title: 'Smithsonian National Museum of American History — Native American Nations', url: 'https://americanhistory.si.edu/explore/exhibitions/american-democracy/online/great-leap/great-debates/native-american-nations' }
+        ]
+      }
+    },
+    {
+      id: 'contacts-europeens-colonisation',
+      title: 'Premiers contacts européens, colonisation et transformations des sociétés autochtones (Xe–XVIIIe siècles)',
+      field: 'Histoire coloniale et atlantique · Amérique du Nord · vers 1000–1800',
+      summary: 'Étudier les contacts nordiques et européens, les échanges, les épidémies, les alliances et les rivalités coloniales.',
+      lesson: {
+        sections: [
+          'Les contacts entre Européens et peuples autochtones d’Amérique du Nord précèdent l’installation durable des colonies anglaises et françaises. Vers l’an 1000, des Scandinaves établissent une présence à L’Anse aux Meadows, à Terre-Neuve, attestée par l’archéologie. Cette implantation demeure limitée et ne constitue pas une colonisation permanente de grande ampleur. À partir de la fin du XVe siècle et surtout du XVIe siècle, les expéditions européennes se multiplient dans différentes régions du continent, entraînant des relations commerciales, diplomatiques et conflictuelles avec les nations autochtones.',
+          'Les contacts ne produisent pas partout les mêmes effets. Les Européens recherchent des ressources, des routes commerciales, des territoires et des alliances. Les nations autochtones évaluent ces relations selon leurs propres intérêts, peuvent négocier, commercer, s’allier ou résister. Les échanges introduisent de nouveaux objets, animaux et matériaux, mais aussi des rivalités et des dépendances économiques. Les armes à feu et les chevaux modifient certains équilibres régionaux à des rythmes différents, sans transformer toutes les sociétés de la même manière.',
+          'Les maladies infectieuses venues d’Eurasie et d’Afrique ont des conséquences démographiques catastrophiques dans de nombreuses communautés, notamment parce que les populations n’avaient pas été exposées auparavant à plusieurs de ces agents pathogènes. Les épidémies de variole et d’autres maladies se propagent par des réseaux de contact parfois bien avant l’arrivée directe des Européens dans une région. Leur impact varie selon les périodes, les communautés et les conditions locales. Il faut éviter de réduire toute l’histoire autochtone à ces pertes : les sociétés continuent de s’organiser, de se déplacer, de négocier et de reconstruire leurs institutions.',
+          'Les puissances européennes développent des colonies et revendiquent des territoires déjà habités et gouvernés par des nations autochtones. Les relations comprennent des alliances militaires, des traités, des échanges, des conflits et des tentatives de conversion religieuse. Les rivalités entre empires européens influencent les stratégies diplomatiques autochtones. Certaines nations s’allient avec les Français, les Anglais ou les Espagnols selon les circonstances, mais ces choix ne sont ni uniformes ni définitifs.',
+          'La colonisation transforme les rapports au territoire et à la souveraineté. Les cartes et les traités européens tendent parfois à traduire des usages territoriaux autochtones dans des catégories de propriété et de frontières qui ne correspondent pas aux conceptions locales. Les accords sont souvent interprétés différemment par les parties. Les communautés autochtones ne sont pas simplement intégrées aux empires coloniaux : elles défendent des formes d’autonomie, des territoires et des relations diplomatiques qui se poursuivent dans les siècles suivants.'
+        ],
+        example: {
+          statement: 'Pourquoi les premiers contacts européens ne peuvent-ils pas être décrits comme un événement unique ?',
+          calculation: 'Les contacts se déroulent sur plusieurs siècles, dans des régions différentes, avec des acteurs et des objectifs variés. La présence nordique vers l’an 1000 et les colonisations des XVIe–XVIIIe siècles ne relèvent pas du même processus.',
+          answer: 'Parce que les rencontres sont multiples et localisées. Elles produisent des conséquences différentes selon les nations autochtones, les puissances européennes et les contextes régionaux.'
+        },
+        exercise: {
+          question: 'Pourquoi les nations autochtones doivent-elles être considérées comme des acteurs diplomatiques pendant la colonisation ?',
+          answer: 'Elles négocient des alliances et des traités, défendent leurs intérêts, contrôlent des territoires et adaptent leurs stratégies aux rivalités entre puissances européennes.'
+        },
+        exercises: [
+          {
+            question: 'Quel site de Terre-Neuve atteste une présence nordique vers l’an 1000 ?',
+            answer: 'L’Anse aux Meadows.'
+          },
+          {
+            question: 'Pourquoi les épidémies ont-elles eu des effets particulièrement graves sur de nombreuses communautés autochtones ?',
+            answer: 'Parce que plusieurs maladies introduites depuis l’Ancien Monde étaient nouvelles pour ces populations, qui ne disposaient pas d’une immunité collective préalable comparable.'
+          },
+          {
+            question: 'Les nations autochtones ont-elles toutes adopté la même politique envers les puissances européennes ?',
+            answer: 'Non. Leurs décisions dépendaient de leurs intérêts, de leurs alliances, des rivalités régionales et des circonstances historiques.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Native Peoples of North America', url: 'https://www.worldhistory.org/Native_Peoples_of_North_America/' },
+          { title: 'Library of Congress — Native American: Overview', url: 'https://www.loc.gov/classroom-materials/immigration/native-american/overview/' },
+          { title: 'National Park Service — History and Culture of the Mississippi Delta Region', url: 'https://www.nps.gov/locations/lowermsdeltaregion/history-and-culture-of-the-mississippi-delta-region.htm' },
+          { title: 'Smithsonian National Museum of the American Indian — Essential Understandings', url: 'https://americanindian.si.edu/nk360/about/essential-understandings' }
+        ]
+      }
+    },
+    {
+      id: 'traites-depossession-resistances-autochtones',
+      title: 'Traités, dépossession territoriale, déplacements forcés et résistances (XVIIIe–XIXe siècles)',
+      field: 'Histoire politique et juridique · Canada et États-Unis · XVIIIe–XIXe siècles',
+      summary: 'Comprendre les traités, l’expansion des États, les politiques de déplacement et les résistances des nations autochtones.',
+      lesson: {
+        sections: [
+          'À partir du XVIIIe siècle, les transformations politiques de l’Amérique du Nord s’accompagnent d’une pression croissante sur les territoires autochtones. Les révolutions, la formation des États-Unis et l’expansion des colonies puis des États entraînent de nouvelles revendications territoriales. Les nations autochtones négocient avec les gouvernements européens puis avec les États indépendants. Les traités peuvent définir des frontières, organiser des alliances, reconnaître certains droits ou prévoir des cessions de terres. Leur interprétation et leur application sont fréquemment contestées, et les engagements pris par les gouvernements ne sont pas toujours respectés.',
+          'Aux États-Unis, les traités constituent une forme importante de relation juridique et diplomatique avec les nations autochtones. Le premier traité conclu par les États-Unis avec une nation autochtone est celui signé avec les Lenapes (Delaware) en 1778. Entre 1778 et 1871, le gouvernement fédéral conclut des centaines de traités. En 1871, le Congrès met fin à la pratique de conclure de nouveaux traités avec les nations autochtones, sans annuler pour autant les obligations des traités antérieurs. Ces documents demeurent essentiels pour comprendre les droits territoriaux et les relations entre gouvernements.',
+          'L’Indian Removal Act de 1830 autorise le gouvernement des États-Unis à négocier le déplacement de nations autochtones vivant à l’est du Mississippi vers des territoires situés à l’ouest. Dans les faits, les pressions politiques, les spoliations et les expulsions forcées provoquent des déplacements massifs. Les Cherokee, Choctaw, Muscogee, Chickasaw et Seminole figurent parmi les nations touchées par ces politiques. Le déplacement forcé des Cherokee en 1838–1839, connu sous le nom de Trail of Tears, entraîne de nombreuses morts dues aux conditions de transport, aux maladies, au manque de nourriture et à l’exposition.',
+          'Les résistances prennent des formes diverses : recours juridiques, négociations diplomatiques, refus de cessions territoriales, maintien de communautés sur les terres ancestrales, migrations, alliances et parfois conflits armés. Les nations autochtones ne sont pas passives face à l’expansion des États. Elles mobilisent leurs institutions, leurs dirigeants et leurs réseaux pour défendre leurs droits. Les décisions judiciaires peuvent reconnaître certains principes, mais leur mise en œuvre dépend des rapports de force et des choix des autorités politiques.',
+          'Au Canada, les politiques coloniales et fédérales suivent une histoire distincte, même si elles partagent avec les États-Unis des logiques de dépossession, de contrôle territorial et de transformation des institutions autochtones. Les traités numérotés, les réserves et les politiques d’assimilation modifient profondément les relations entre les Premières Nations et l’État canadien. Les Inuit et les Métis possèdent également des histoires politiques spécifiques. Il est donc nécessaire de distinguer les cadres juridiques des États-Unis et du Canada au lieu de les fondre dans une seule chronologie.'
+        ],
+        example: {
+          statement: 'Pourquoi l’année 1871 est-elle un repère important dans l’histoire des traités entre les États-Unis et les nations autochtones ?',
+          calculation: 'En 1871, le Congrès américain met fin à la conclusion de nouveaux traités fédéraux avec les nations autochtones. Les traités déjà ratifiés conservent cependant leur portée juridique.',
+          answer: '1871 marque la fin formelle de la période de conclusion de traités par le gouvernement fédéral, mais ne supprime pas les obligations issues des traités antérieurs.'
+        },
+        exercise: {
+          question: 'Pourquoi le Trail of Tears est-il un exemple de déplacement forcé et non d’une simple migration ?',
+          answer: 'Parce que les Cherokee ont été expulsés de force de leurs territoires sous la contrainte des autorités américaines, dans des conditions qui ont provoqué de nombreuses morts.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année l’Indian Removal Act est-il adopté ?',
+            answer: 'En 1830.'
+          },
+          {
+            question: 'Quelles années correspondent au déplacement forcé des Cherokee connu sous le nom de Trail of Tears ?',
+            answer: 'Principalement 1838–1839.'
+          },
+          {
+            question: 'La loi de 1871 annule-t-elle les traités antérieurs conclus par les États-Unis ?',
+            answer: 'Non. Elle met fin à la conclusion de nouveaux traités fédéraux, mais ne supprime pas les obligations des traités antérieurs valablement conclus et ratifiés.'
+          }
+        ],
+        sources: [
+          { title: 'U.S. Bureau of Indian Affairs — Federal Law and Indian Policy Overview', url: 'https://www.bia.gov/bia/history/IndianLawPolicy' },
+          { title: 'Library of Congress — Removing Native Americans from their Land', url: 'https://www.loc.gov/classroom-materials/immigration/native-american/removing-native-americans-from-their-land/' },
+          { title: 'Library of Congress — Indian Removal Act: Primary Documents', url: 'https://guides.loc.gov/indian-removal-act/' },
+          { title: 'National Archives — American Indian Treaties', url: 'https://www.archives.gov/research/native-americans/treaties' },
+          { title: 'Library of Congress — American Indian Law: Treaties', url: 'https://guides.loc.gov/american-indian-law/Treaties' }
+        ]
+      }
+    },
+    {
+      id: 'nations-autochtones-contemporaines-souverainete',
+      title: 'Les nations autochtones contemporaines : souveraineté, droits et continuités culturelles (XXe–XXIe siècles)',
+      field: 'Histoire contemporaine et droit autochtone · Amérique du Nord · XXe–XXIe siècles',
+      summary: 'Étudier la persistance des nations autochtones, leurs gouvernements, la défense des droits, la revitalisation linguistique et les enjeux contemporains.',
+      lesson: {
+        sections: [
+          'Les peuples autochtones d’Amérique du Nord n’ont pas disparu avec la colonisation ni avec les politiques de déplacement et d’assimilation. Ils demeurent des communautés politiques, culturelles et linguistiques vivantes. Les nations continuent de transmettre leurs langues, leurs récits, leurs pratiques artistiques, leurs cérémonies et leurs connaissances territoriales. Les réalités contemporaines sont diverses : certaines communautés vivent dans des réserves ou des territoires reconnus, d’autres dans des villes ou sur des terres ancestrales dont le statut juridique est contesté. Les identités autochtones sont actuelles et évolutives, et non de simples survivances du passé.',
+          'Aux États-Unis, les gouvernements tribaux exercent des compétences propres selon les traités, les lois fédérales, les décisions judiciaires et les constitutions de chaque nation. La souveraineté tribale désigne notamment la capacité des nations à gouverner leurs affaires internes, à définir certaines règles de citoyenneté, à administrer des programmes et à gérer des ressources. Cette souveraineté s’inscrit dans une relation juridique particulière avec le gouvernement fédéral et les États. Les compétences et les limites varient selon les nations et les domaines de droit concernés.',
+          'Au Canada, les Premières Nations, les Inuit et les Métis ont des statuts, des histoires et des relations juridiques distincts avec l’État. Les revendications territoriales, les traités, les accords d’autonomie gouvernementale et les décisions judiciaires structurent une partie importante des débats contemporains. Les relations entre les communautés et les gouvernements portent notamment sur les terres, les ressources naturelles, l’éducation, la santé, la protection des langues et la reconnaissance des droits. Il est essentiel de ne pas transposer automatiquement le droit américain au contexte canadien.',
+          'Les politiques d’assimilation ont notamment cherché à transformer les langues, les institutions familiales et les pratiques culturelles autochtones. Aux États-Unis et au Canada, les pensionnats et internats imposés à de nombreux enfants autochtones ont provoqué des séparations familiales, des violences et des pertes linguistiques et culturelles. Les enquêtes, les témoignages des survivants et les travaux des commissions de vérité ont contribué à documenter ces politiques et leurs conséquences intergénérationnelles. Les communautés mènent aujourd’hui des démarches de mémoire, de justice, de réparation et de transmission.',
+          'La revitalisation des langues et des savoirs constitue un enjeu majeur. Des nations développent des programmes d’enseignement linguistique, des archives communautaires, des médias, des institutions culturelles et des initiatives de transmission intergénérationnelle. Les artistes, chercheurs, responsables politiques et organisations autochtones participent aux débats sur l’environnement, les ressources, les droits territoriaux et la représentation culturelle. L’histoire autochtone contemporaine ne se limite donc pas aux conséquences de la colonisation : elle comprend aussi les projets politiques, les créations et les initiatives portés par les peuples eux-mêmes.'
+        ],
+        example: {
+          statement: 'Que signifie la souveraineté d’une nation autochtone dans le contexte des États-Unis ?',
+          calculation: 'Il faut distinguer la souveraineté tribale de l’indépendance étatique au sens classique : les nations autochtones disposent de compétences propres, dans un cadre juridique défini par les traités, les lois et les décisions judiciaires.',
+          answer: 'La souveraineté tribale désigne la capacité des nations reconnues à gouverner leurs affaires et leurs citoyens dans les limites et selon les règles de leur relation juridique avec les États-Unis.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il important de présenter les peuples autochtones comme des sociétés contemporaines ?',
+          answer: 'Parce que les nations autochtones existent toujours, possèdent des institutions et des projets politiques, transmettent leurs cultures et participent pleinement aux sociétés actuelles. Les présenter uniquement au passé entretient une représentation erronée de leur histoire.'
+        },
+        exercises: [
+          {
+            question: 'Les nations autochtones d’Amérique du Nord existent-elles encore aujourd’hui ?',
+            answer: 'Oui. Elles sont des communautés contemporaines avec des institutions, des cultures, des langues et des revendications propres.'
+          },
+          {
+            question: 'Que peut recouvrir la souveraineté tribale aux États-Unis ?',
+            answer: 'La capacité de gouverner les affaires internes, de définir certaines règles de citoyenneté, d’administrer des programmes et de gérer des ressources selon le cadre juridique applicable.'
+          },
+          {
+            question: 'Pourquoi faut-il distinguer les Premières Nations, les Inuit et les Métis au Canada ?',
+            answer: 'Parce qu’il s’agit de peuples aux histoires, identités et cadres juridiques distincts.'
+          }
+        ],
+        sources: [
+          { title: 'Smithsonian National Museum of the American Indian — Native Knowledge 360°, Essential Understandings', url: 'https://americanindian.si.edu/nk360/about/essential-understandings' },
+          { title: 'Smithsonian — Native American and Indigenous History and Culture Collections', url: 'https://collections.si.edu/search/gallery.htm?og=native-americans' },
+          { title: 'National Archives — American Indian Treaties', url: 'https://www.archives.gov/research/native-americans/treaties' },
+          { title: 'U.S. Bureau of Indian Affairs — Federal Law and Indian Policy Overview', url: 'https://www.bia.gov/bia/history/IndianLawPolicy' },
+          { title: 'Smithsonian National Museum of the American Indian — Native Knowledge 360°, Pacific Northwest History and Cultures', url: 'https://americanindian.si.edu/nk360/pnw-history-culture/' }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
 
