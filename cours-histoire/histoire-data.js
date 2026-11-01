@@ -6708,6 +6708,379 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'empire-romain',
+  sortYear: -27,
+  title: 'L’Empire romain : de la naissance du Principat à la transformation du monde romain',
+  note: 'Sept chapitres retracent la formation du régime impérial, son expansion, ses institutions, ses sociétés, les crises du IIIe siècle, les transformations de l’Antiquité tardive et la fin du pouvoir impérial en Occident. Le repère -27 correspond au règlement politique d’Octavien et à l’instauration du Principat. L’année 476 marque conventionnellement la fin de la succession impériale en Occident, tandis que l’Empire romain d’Orient perdure jusqu’en 1453. Les dates et les périodisations sont des repères historiographiques : les transformations varient selon les régions.',
+  chapters: [
+    {
+      id: 'naissance-empire-romain',
+      title: 'De la République à l’Empire : Auguste et la naissance du Principat (44–14 apr. J.-C.)',
+      field: 'Histoire politique romaine · Fin de la République et Principat · 44 av. J.-C.–14 apr. J.-C.',
+      summary: 'Comprendre les guerres civiles, l’ascension d’Octavien et le compromis institutionnel qui fonde le régime impérial.',
+      lesson: {
+        sections: [
+          'La naissance de l’Empire romain s’inscrit dans la crise de la République. Au Ier siècle av. J.-C., l’expansion méditerranéenne accroît les richesses, les inégalités et les tensions autour du commandement militaire, de la citoyenneté et du partage du pouvoir. Les rivalités entre chefs politiques et généraux contribuent à une succession de guerres civiles. L’assassinat de Jules César en 44 av. J.-C. ne rétablit pas durablement les institutions républicaines : il ouvre une nouvelle phase de conflits entre ses héritiers politiques et ses adversaires.',
+          'Octavien, fils adoptif et héritier de César, s’allie d’abord à Marc Antoine et Lépide dans le second triumvirat, constitué en 43 av. J.-C. L’alliance se défait ensuite. La victoire d’Octavien sur les forces de Marc Antoine et de Cléopâtre à Actium en 31 av. J.-C., puis la prise d’Alexandrie en 30 av. J.-C., lui permettent de devenir le maître incontesté du monde romain. En 27 av. J.-C., un règlement politique lui confère le nom d’Auguste et organise officiellement son autorité dans le cadre des institutions existantes.',
+          'Auguste ne se présente pas comme un roi. Le Principat conserve les magistratures, le Sénat et les assemblées, mais concentre durablement les principales prérogatives politiques et militaires entre les mains du prince. Le pouvoir impérial s’appuie notamment sur l’autorité personnelle d’Auguste, son contrôle des principales forces armées, ses pouvoirs tribuniciens et son prestige religieux et politique. Ce système associe continuité républicaine de façade et transformation profonde de la réalité du pouvoir.',
+          'La succession demeure un problème structurel : le régime ne repose pas sur une règle constitutionnelle simple et universellement acceptée de transmission héréditaire. Auguste prépare la continuité dynastique en favorisant Tibère, qui lui succède en 14 apr. J.-C. Le Principat fournit néanmoins un cadre politique durable, repris et adapté par les empereurs suivants.'
+        ],
+        example: {
+          statement: 'Pourquoi l’année -27 est-elle retenue comme date conventionnelle de naissance de l’Empire romain ?',
+          calculation: 'La date correspond au règlement politique de 27 av. J.-C., lorsque le Sénat confère à Octavien le titre d’Auguste et que se met en place le Principat.',
+          answer: 'L’année -27 marque l’instauration du régime d’Auguste. La concentration du pouvoir avait toutefois commencé auparavant, notamment après Actium en -31 et la prise d’Alexandrie en -30.'
+        },
+        exercise: {
+          question: 'En quoi le Principat conserve-t-il certaines formes républicaines tout en transformant le pouvoir ?',
+          answer: 'Les magistratures et le Sénat continuent d’exister, mais l’empereur concentre les principales prérogatives politiques et militaires. Les institutions républicaines fonctionnent désormais dans un système dominé par le prince.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Jules César est-il assassiné ?',
+            answer: 'En 44 av. J.-C.'
+          },
+          {
+            question: 'Quelle bataille remportée par Octavien en 31 av. J.-C. précède la prise d’Alexandrie ?',
+            answer: 'La bataille navale d’Actium.'
+          },
+          {
+            question: 'Quel titre Octavien reçoit-il en 27 av. J.-C. ?',
+            answer: 'Le titre d’Auguste.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Roman Empire',
+            url: 'https://www.worldhistory.org/Roman_Empire/'
+          },
+          {
+            title: 'Oxford Academic — The Roman Empire: The Principate',
+            url: 'https://academic.oup.com/book/48141/chapter-abstract/420459843'
+          },
+          {
+            title: 'National Geographic Education — Imperial Rome',
+            url: 'https://education.nationalgeographic.org/resource/imperial-rome/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'expansion-apogee-empire-romain',
+      title: 'Conquêtes, provinces et apogée territorial de l’Empire (Ier–IIe siècles)',
+      field: 'Histoire impériale et militaire · Méditerranée, Europe, Afrique et Proche-Orient · Ier–IIe siècles',
+      summary: 'Étudier l’expansion territoriale, l’organisation provinciale, les frontières et les limites de la puissance romaine.',
+      lesson: {
+        sections: [
+          'Après Auguste, l’Empire poursuit son expansion à des rythmes variables. Les conquêtes et annexions concernent notamment la Bretagne, certaines régions du Danube et des territoires orientaux. La conquête de la Bretagne commence sous Claude en 43 apr. J.-C. Sous Trajan, les campagnes de Dacie aboutissent à l’annexion du royaume en 106. Les opérations de Trajan contre les Parthes conduisent à des avancées orientales temporaires, mais elles ne produisent pas une frontière stable et durable dans cette région.',
+          'L’Empire est organisé en provinces, dont le statut et l’administration évoluent. Certaines provinces sont placées sous l’autorité du Sénat, d’autres sous celle de l’empereur, qui y exerce son contrôle notamment par l’intermédiaire de gouverneurs. Les cités constituent des unités essentielles de la vie administrative, fiscale et sociale. Elles disposent de conseils et de magistrats locaux, mais leur autonomie reste encadrée par les obligations envers Rome et par les interventions du pouvoir impérial.',
+          'Sous Trajan, dont le règne s’étend de 98 à 117, l’Empire atteint son extension territoriale maximale généralement retenue par les historiens. Cette étendue ne signifie pas que toutes les régions sont gouvernées de façon identique ni que les frontières sont parfaitement fixes. Les limites impériales associent des fortifications, des routes, des camps, des postes de surveillance, des fleuves et des zones de contacts diplomatiques ou commerciaux. Le limes est un système frontalier complexe plutôt qu’un mur continu autour de l’Empire.',
+          'Les empereurs adoptent des stratégies différentes face aux peuples voisins. Certaines frontières sont renforcées, tandis que des accords, des clientèles politiques et des échanges permettent de gérer les relations avec les puissances extérieures. Hadrien, qui règne de 117 à 138, est associé à une politique de consolidation et à la construction du mur qui porte son nom en Bretagne. Il ne faut toutefois pas opposer mécaniquement un Auguste conquérant à un Hadrien exclusivement défensif : les politiques impériales combinent adaptation militaire, diplomatie et contrôle territorial.',
+          'La puissance romaine repose sur les légions, les troupes auxiliaires, les ressources fiscales et les infrastructures. Les routes facilitent les déplacements militaires, administratifs et commerciaux. Les ports, les voies fluviales et les réseaux urbains relient les provinces à la Méditerranée. L’intégration impériale demeure cependant inégale et peut s’accompagner de révoltes, de résistances, de déplacements forcés et de contraintes fiscales.'
+        ],
+        example: {
+          statement: 'Quel empereur règne lorsque l’Empire romain atteint son extension territoriale maximale conventionnelle ?',
+          calculation: 'Trajan règne de 98 à 117 apr. J.-C. L’extension maximale est généralement située vers 117, à la fin de son règne.',
+          answer: 'Il s’agit de Trajan. Cette extension est un repère territorial : le contrôle effectif et la stabilité varient selon les régions.'
+        },
+        exercise: {
+          question: 'Pourquoi le limes ne doit-il pas être défini uniquement comme un mur ?',
+          answer: 'Parce qu’il comprend des routes, des camps, des postes, des fortifications, des frontières naturelles et des espaces de contact avec les populations voisines.'
+        },
+        exercises: [
+          {
+            question: 'Sous quel empereur la Dacie est-elle annexée en 106 ?',
+            answer: 'Sous Trajan.'
+          },
+          {
+            question: 'En quelle année commence la conquête romaine de la Bretagne sous Claude ?',
+            answer: 'En 43 apr. J.-C.'
+          },
+          {
+            question: 'Quel empereur est associé au mur d’Hadrien ?',
+            answer: 'L’empereur Hadrien, qui règne de 117 à 138.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Roman Empire',
+            url: 'https://www.worldhistory.org/Roman_Empire/'
+          },
+          {
+            title: 'World History Encyclopedia — Roman Britain',
+            url: 'https://www.worldhistory.org/Roman_Britain/'
+          },
+          {
+            title: 'UNESCO — Frontiers of the Roman Empire',
+            url: 'https://whc.unesco.org/en/list/430/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'institutions-armee-administration-romaine',
+      title: 'Institutions, armée, droit et administration impériale',
+      field: 'Histoire des institutions · Gouvernement, droit et organisation militaire · Ier–IIIe siècles',
+      summary: 'Analyser le fonctionnement du pouvoir impérial, le rôle du Sénat, l’armée, la citoyenneté et les mécanismes administratifs.',
+      lesson: {
+        sections: [
+          'L’empereur est au centre du système politique, mais il gouverne à travers des institutions et des personnels nombreux. Le Sénat conserve un prestige considérable et intervient dans la vie politique, même si son autonomie est limitée par le pouvoir impérial. Les ordres sénatorial et équestre fournissent une partie des cadres de l’administration et du commandement. Les responsabilités provinciales, judiciaires, financières et militaires sont réparties entre des gouverneurs, des procurateurs, des préfets et d’autres agents dont les compétences évoluent avec le temps.',
+          'L’armée romaine est un instrument de conquête, de défense et de pouvoir politique. Les légions sont principalement composées de citoyens romains, tandis que les troupes auxiliaires recrutent des hommes issus des provinces et leur offrent, selon les conditions de service et les périodes, des perspectives d’intégration civique. Les soldats sont stationnés dans des camps permanents ou temporaires, le long des frontières et dans des zones stratégiques. La fidélité des armées joue un rôle essentiel dans les successions impériales, ce qui peut aussi favoriser les usurpations et les guerres civiles.',
+          'Le droit romain se développe par les lois, les décisions impériales, les avis des juristes, les pratiques judiciaires et les traditions juridiques. L’empereur devient progressivement une source majeure de production normative. Le droit n’est pas immuable : il évolue selon les besoins administratifs et les transformations sociales. La citoyenneté romaine constitue un statut juridique et politique important, mais les habitants de l’Empire ne disposent pas tous des mêmes droits avant l’édit de Caracalla de 212, qui accorde la citoyenneté romaine à la grande majorité des hommes libres de l’Empire, sous réserve de certaines exclusions.',
+          'La fiscalité finance l’armée, les infrastructures, la cour et les services publics. Elle comprend des prélèvements directs et indirects, des taxes douanières et des obligations spécifiques selon les statuts et les territoires. Les systèmes fiscaux diffèrent entre les provinces et évoluent au fil des réformes. Les cités et les élites locales jouent un rôle important dans la collecte et dans le financement des équipements urbains, même si les charges peuvent être lourdes et inégalement réparties.',
+          'L’intégration de l’Empire ne repose pas sur une administration centralisée uniforme comparable à celle d’un État contemporain. Rome s’appuie largement sur les cités, les élites provinciales et les structures locales. Cette combinaison entre autorité impériale et médiations locales contribue à la durée du système, mais elle crée aussi des tensions lorsque les ressources, les obligations fiscales ou les interventions du pouvoir sont contestées.'
+        ],
+        example: {
+          statement: 'Quel changement juridique majeur est associé à l’édit de Caracalla de 212 ?',
+          calculation: 'L’édit étend la citoyenneté romaine à la grande majorité des hommes libres de l’Empire. Il ne transforme pas pour autant tous les statuts sociaux en une égalité complète.',
+          answer: 'Il élargit considérablement le corps des citoyens romains, tout en maintenant des différences de statut et de condition dans la société impériale.'
+        },
+        exercise: {
+          question: 'Pourquoi l’armée est-elle à la fois un instrument de défense et un acteur politique ?',
+          answer: 'Elle protège les frontières et permet les conquêtes, mais le soutien des soldats et des commandants peut aussi déterminer l’accession au trône et provoquer des conflits de succession.'
+        },
+        exercises: [
+          {
+            question: 'Quel empereur est associé à l’édit de citoyenneté de 212 ?',
+            answer: 'Caracalla.'
+          },
+          {
+            question: 'Quelle est la fonction principale des provinces dans l’organisation impériale ?',
+            answer: 'Elles constituent des territoires administrés au nom du pouvoir romain, notamment pour la justice, la fiscalité, le maintien de l’ordre et le commandement.'
+          },
+          {
+            question: 'Le Sénat disparaît-il avec l’instauration du Principat ?',
+            answer: 'Non. Il conserve des fonctions et un prestige, mais son pouvoir est subordonné à l’autorité impériale.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Roman Empire',
+            url: 'https://www.worldhistory.org/Roman_Empire/'
+          },
+          {
+            title: 'Oxford Academic — The Roman Empire: The Principate',
+            url: 'https://academic.oup.com/book/48141/chapter-abstract/420459843'
+          }
+        ]
+      }
+    },
+    {
+      id: 'societe-economie-culture-romaines',
+      title: 'Société, économie, villes et culture dans le monde romain',
+      field: 'Histoire sociale, économique et culturelle · Monde méditerranéen · Ier–IIIe siècles',
+      summary: 'Découvrir la diversité des populations, les structures sociales, l’esclavage, les échanges, l’urbanisation et les pratiques culturelles.',
+      lesson: {
+        sections: [
+          'La société romaine est profondément hiérarchisée. Le statut juridique, la richesse, la naissance, le genre et la position dans la famille influencent les possibilités individuelles. Les élites sénatoriales et équestres occupent les plus hautes positions politiques et économiques. Les décurions dirigent les cités, tandis que les artisans, commerçants, paysans, soldats, affranchis et esclaves composent une grande partie de la population. Ces catégories ne sont pas homogènes : les situations diffèrent fortement selon les régions, les périodes et les ressources des individus.',
+          'L’esclavage est une institution majeure de l’économie et de la société romaines. Les personnes réduites en esclavage sont employées dans les maisons, les ateliers, les mines, les domaines agricoles et les services administratifs. Les conditions de vie sont extrêmement diverses, mais l’esclavage implique une privation fondamentale de liberté et une dépendance juridique envers le propriétaire. L’affranchissement permet à certains esclaves d’obtenir la liberté, sans effacer nécessairement toutes les dépendances sociales ou économiques. Il faut donc étudier l’esclavage comme une structure durable et non comme une simple relation domestique.',
+          'L’agriculture constitue la base de l’économie impériale. Les productions céréalières, viticoles, oléicoles et l’élevage varient selon les régions et alimentent les marchés locaux et les circuits à longue distance. Le commerce maritime relie les grands ports méditerranéens, tandis que les routes terrestres et fluviales facilitent les échanges intérieurs. Les amphores, les monnaies, les épaves et les vestiges d’entrepôts fournissent aux archéologues des informations essentielles sur la circulation des produits et l’organisation des marchés.',
+          'Les villes jouent un rôle central dans l’intégration du monde romain. Elles regroupent des institutions civiques, des lieux de culte, des marchés, des thermes, des théâtres, des amphithéâtres et des infrastructures hydrauliques. Rome est une métropole exceptionnelle par sa population et ses fonctions politiques, mais les villes provinciales possèdent leurs propres histoires et leurs propres formes d’organisation. La romanisation ne correspond pas à une uniformisation totale : les pratiques romaines se combinent avec des traditions locales et des identités régionales.',
+          'La culture romaine est marquée par le plurilinguisme et les échanges. Le latin domine dans de nombreuses régions occidentales, tandis que le grec conserve une place majeure dans l’est méditerranéen. Les cultes traditionnels, les philosophies, les arts, la littérature et les pratiques religieuses se développent dans un espace de contacts permanents. Les populations provinciales ne sont pas de simples réceptrices de la culture romaine : elles participent activement à la production et à la transformation des pratiques impériales.'
+        ],
+        example: {
+          statement: 'Pourquoi les amphores retrouvées par les archéologues sont-elles utiles pour étudier l’économie romaine ?',
+          calculation: 'Les formes, les inscriptions et les lieux de découverte permettent parfois d’identifier le contenu, l’origine et les itinéraires de circulation des produits.',
+          answer: 'Elles constituent des indices matériels pour reconstituer les échanges commerciaux, les productions régionales et les réseaux de transport.'
+        },
+        exercise: {
+          question: 'Pourquoi la romanisation ne doit-elle pas être comprise comme une uniformisation complète ?',
+          answer: 'Parce que les populations provinciales adoptent, adaptent ou transforment certains éléments romains tout en conservant des langues, des cultes et des pratiques locales.'
+        },
+        exercises: [
+          {
+            question: 'Quelle activité constitue la base de l’économie romaine ?',
+            answer: 'L’agriculture, même si l’artisanat, le commerce et les services jouent également un rôle important.'
+          },
+          {
+            question: 'Quelle langue conserve une place majeure dans la partie orientale de l’Empire ?',
+            answer: 'Le grec.'
+          },
+          {
+            question: 'Que permet notamment l’étude des amphores ?',
+            answer: 'De mieux comprendre la production, le transport et la commercialisation de denrées dans le monde romain.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Roman Empire',
+            url: 'https://www.worldhistory.org/Roman_Empire/'
+          },
+          {
+            title: 'Oxford Academic — The Roman Empire: Economy, Society and Culture',
+            url: 'https://academic.oup.com/book/48141/chapter-abstract/420459843'
+          }
+        ]
+      }
+    },
+    {
+      id: 'crise-troisieme-siecle-rome',
+      title: 'La crise du IIIe siècle et les transformations du pouvoir impérial (235–284)',
+      field: 'Histoire politique et militaire · Empire romain · 235–284',
+      summary: 'Étudier les guerres civiles, les pressions frontalières, les difficultés monétaires et les réponses impériales à une période de forte instabilité.',
+      lesson: {
+        sections: [
+          'La période qui commence en 235 est souvent appelée crise du IIIe siècle. Elle se caractérise par une succession rapide d’empereurs, des usurpations, des guerres civiles et des difficultés à assurer une continuité politique. Les armées jouent un rôle déterminant dans la proclamation des souverains, et plusieurs empereurs sont renversés ou tués. Cette instabilité ne signifie pas que toutes les régions connaissent un effondrement simultané : certaines provinces continuent de fonctionner, les villes restent actives et les structures locales assurent une partie de la continuité administrative.',
+          'Les frontières sont soumises à des pressions militaires importantes. Les incursions et les conflits concernent notamment les frontières du Rhin et du Danube, ainsi que les territoires orientaux confrontés à l’Empire sassanide. Les empereurs doivent répartir les forces entre plusieurs théâtres d’opérations, tandis que les rivalités internes réduisent parfois leur capacité à coordonner la défense. Les pertes territoriales peuvent être temporaires ou durables selon les contextes.',
+          'Les difficultés économiques et monétaires accompagnent les crises politiques et militaires. La dépréciation de certaines monnaies, les besoins croissants de financement militaire, les perturbations des échanges et les variations régionales des prix contribuent à une situation complexe. Il serait toutefois incorrect de réduire la crise à une seule cause économique ou de supposer que toutes les provinces subissent les mêmes effets. Les données archéologiques et numismatiques montrent des trajectoires différenciées.',
+          'Des pouvoirs régionaux autonomes apparaissent temporairement. L’Empire des Gaules, constitué en 260 sous Postume, contrôle pendant plusieurs années une partie des provinces occidentales. À l’est, Palmyre affirme son autonomie sous Odénat puis Zénobie, avant d’être reconquise par Aurélien en 272. Ces formations ne représentent pas nécessairement des projets de séparation définitive : elles sont aussi des réponses politiques et militaires à l’affaiblissement du pouvoir central.',
+          'Aurélien, empereur de 270 à 275, rétablit une large unité territoriale en reprenant Palmyre et en mettant fin à l’Empire des Gaules en 274. La construction de l’enceinte d’Aurélien à Rome témoigne également de la perception de nouvelles vulnérabilités. La crise se prolonge néanmoins jusqu’aux réformes de Dioclétien, qui inaugure à partir de 284 une réorganisation profonde du gouvernement et de l’armée.'
+        ],
+        example: {
+          statement: 'Pourquoi la période 235–284 est-elle désignée comme la crise du IIIe siècle ?',
+          calculation: 'Le repère 235 correspond à l’assassinat de Sévère Alexandre et au début d’une longue période d’instabilité impériale. En 284, l’avènement de Dioclétien ouvre une phase de réformes.',
+          answer: 'Cette période est caractérisée par des conflits de succession, des pressions militaires, des difficultés économiques et des fragmentations politiques régionales. Les effets varient toutefois selon les provinces.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il éviter de présenter la crise du IIIe siècle comme un effondrement uniforme de tout l’Empire ?',
+          answer: 'Les difficultés sont réelles mais leurs effets varient selon les régions. Des institutions locales, des activités économiques et des réseaux urbains continuent de fonctionner dans plusieurs provinces.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année commence conventionnellement la crise du IIIe siècle ?',
+            answer: 'En 235.'
+          },
+          {
+            question: 'Quel empereur met fin à l’Empire des Gaules en 274 ?',
+            answer: 'Aurélien.'
+          },
+          {
+            question: 'Quel empereur inaugure une nouvelle phase de réformes en 284 ?',
+            answer: 'Dioclétien.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Oxford Academic — The Later Roman Empire',
+            url: 'https://academic.oup.com/edited-volume/38681/chapter-abstract/335882182'
+          },
+          {
+            title: 'World History Encyclopedia — Roman Empire',
+            url: 'https://www.worldhistory.org/Roman_Empire/'
+          },
+          {
+            title: 'Oxford Academic — Rome: Strategy of Empire',
+            url: 'https://academic.oup.com/book/43892'
+          }
+        ]
+      }
+    },
+    {
+      id: 'diocletien-constantin-christianisme',
+      title: 'Dioclétien, Constantin et la transformation de l’Empire tardif (284–395)',
+      field: 'Antiquité tardive · Réformes impériales, christianisme et gouvernement · 284–395',
+      summary: 'Comprendre la tétrarchie, les réformes administratives et militaires, la nouvelle capitale et l’évolution du christianisme dans l’État romain.',
+      lesson: {
+        sections: [
+          'Dioclétien, devenu empereur en 284, engage une réorganisation profonde de l’État. La tétrarchie, mise en place à partir de 293, associe deux Augustes et deux Césars afin de faciliter la direction de l’Empire et la succession. Ce système ne constitue pas une division définitive en quatre États indépendants : il vise à maintenir une autorité impériale coordonnée, même si les rivalités entre dirigeants finissent par provoquer de nouvelles guerres civiles. Dioclétien réforme également l’administration provinciale, la fiscalité et l’organisation militaire.',
+          'Les réformes de la fin du IIIe et du début du IVe siècle renforcent les structures de gouvernement et modifient les relations entre l’empereur, l’armée et les provinces. Le nombre de provinces augmente et des regroupements administratifs sont créés. L’armée est réorganisée, avec une distinction progressivement plus nette entre les troupes mobiles et les forces affectées aux frontières. Ces changements ne sont pas tous l’œuvre d’un seul souverain et doivent être compris comme un processus de transformation engagé sur plusieurs décennies.',
+          'Constantin sort vainqueur des guerres civiles et devient l’unique empereur en 324. Il fonde ou refonde Constantinople, inaugurée en 330, sur le site de l’ancienne Byzance. La nouvelle capitale occupe une position stratégique entre les Balkans et l’Asie Mineure, à proximité des grandes voies maritimes et terrestres. Le transfert du centre politique vers Constantinople ne fait pas disparaître Rome, qui conserve son prestige symbolique, mais modifie durablement la géographie du pouvoir impérial.',
+          'Le christianisme connaît une transformation majeure au IVe siècle. L’accord de Milan de 313, associé à Constantin et Licinius, permet la liberté de pratique religieuse et la restitution de biens confisqués aux chrétiens. Constantin favorise ensuite l’Église et intervient dans certains débats religieux, notamment lors du concile de Nicée en 325. Le christianisme ne devient toutefois religion impériale officielle qu’avec l’édit de Thessalonique de 380, sous Théodose Ier, qui promeut la foi chrétienne nicéenne. Les pratiques religieuses restent diverses et les transformations sont progressives.',
+          'À la mort de Théodose Ier en 395, ses fils Arcadius et Honorius gouvernent respectivement les parties orientale et occidentale de l’Empire. Cette répartition institutionnelle s’inscrit dans une pratique de gouvernement collégial déjà ancienne. Elle ne signifie pas nécessairement, pour les contemporains, la création de deux civilisations ou de deux empires totalement étrangers l’un à l’autre. Les deux cours demeurent liées par la dynastie, la diplomatie et l’idée d’un héritage romain commun.'
+        ],
+        example: {
+          statement: 'Quelle différence existe-t-il entre la tétrarchie de Dioclétien et la répartition de l’Empire en 395 ?',
+          calculation: 'La tétrarchie organise quatre dirigeants dans un système conçu pour coordonner le gouvernement et la succession. En 395, les fils de Théodose Ier reçoivent chacun la direction d’une partie de l’Empire.',
+          answer: 'La tétrarchie est un dispositif collégial de gouvernement instauré par Dioclétien ; en 395, la répartition entre Arcadius et Honorius devient durable dans les faits, même si l’idée d’un Empire romain commun demeure.'
+        },
+        exercise: {
+          question: 'Pourquoi l’édit de Thessalonique de 380 constitue-t-il une étape importante dans l’histoire religieuse romaine ?',
+          answer: 'Il fait du christianisme nicéen la norme religieuse impériale promue par Théodose Ier. Il s’agit d’une étape majeure après les mesures de tolérance du début du IVe siècle.'
+        },
+        exercises: [
+          {
+            question: 'Quel empereur met en place la tétrarchie ?',
+            answer: 'Dioclétien, à partir de 293.'
+          },
+          {
+            question: 'En quelle année Constantinople est-elle inaugurée comme nouvelle capitale impériale ?',
+            answer: 'En 330.'
+          },
+          {
+            question: 'Quel édit de 380 favorise officiellement le christianisme nicéen ?',
+            answer: 'L’édit de Thessalonique, promulgué sous Théodose Ier.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Oxford Academic — Diocletian, Constantine, and a New Empire',
+            url: 'https://academic.oup.com/book/43892/chapter-abstract/370134670'
+          },
+          {
+            title: 'Oxford Academic — Diocletian and the Great Persecution; Rise of Constantine',
+            url: 'https://academic.oup.com/book/27035/chapter-abstract/196313469'
+          },
+          {
+            title: 'Oxford Academic — The Later Roman Empire',
+            url: 'https://academic.oup.com/edited-volume/38681/chapter-abstract/335882182'
+          },
+          {
+            title: 'World History Encyclopedia — Roman Empire',
+            url: 'https://www.worldhistory.org/Roman_Empire/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'chute-occident-continuite-orientale',
+      title: 'La fin de l’Empire romain d’Occident et la continuité de l’Empire d’Orient (395–1453)',
+      field: 'Antiquité tardive et histoire médiévale · Occident romain et Empire romain d’Orient · 395–1453',
+      summary: 'Analyser la désagrégation du pouvoir impérial occidental, les royaumes post-romains et la longue continuité politique de l’Empire romain d’Orient.',
+      lesson: {
+        sections: [
+          'Au Ve siècle, le pouvoir impérial occidental connaît une dégradation progressive de ses capacités militaires, fiscales et politiques. Les rivalités entre généraux et empereurs, les difficultés de recrutement et de financement des armées, les pertes territoriales et les interventions de groupes militaires fédérés fragilisent l’autorité centrale. Ces facteurs interagissent et ne constituent pas une explication unique. Les provinces ne connaissent pas toutes le même destin : certaines passent sous le contrôle de pouvoirs locaux ou de royaumes établis par des groupes germaniques, tandis que d’autres restent temporairement liées à la cour impériale.',
+          'Le sac de Rome par les Wisigoths d’Alaric en 410 a une forte portée symbolique, mais il ne met pas fin à l’Empire. En 439, les Vandales s’emparent de Carthage, privant le gouvernement occidental d’une région stratégique pour ses ressources fiscales et céréalières. En 455, Rome est de nouveau pillée, cette fois par les Vandales. Les empereurs occidentaux disposent alors d’une autorité de plus en plus limitée, souvent dépendante de chefs militaires capables de contrôler les armées et les territoires.',
+          'En 476, Odoacre dépose le jeune empereur Romulus Augustule et envoie les insignes impériaux à Constantinople. Cette date est traditionnellement retenue comme la fin de l’Empire romain d’Occident. Elle ne doit pas être interprétée comme la disparition instantanée de toute institution romaine en Occident : le droit, les villes, les élites, les structures fiscales et les pratiques administratives perdurent sous des formes variables dans les royaumes post-romains. La signification de 476 est également moins nette pour les contemporains que pour les historiens modernes.',
+          'L’Empire romain d’Orient continue d’exister depuis Constantinople. Ses habitants et ses souverains se considèrent comme Romains, même si les historiens modernes utilisent souvent le terme « byzantin » pour désigner cette phase de l’histoire romaine. Sous Justinien Ier, qui règne de 527 à 565, l’Empire entreprend des reconquêtes en Afrique du Nord, en Italie et dans certaines régions d’Hispanie. Ces campagnes restaurent temporairement le contrôle impérial sur plusieurs territoires occidentaux, mais elles entraînent aussi des coûts militaires et financiers considérables.',
+          'L’Empire d’Orient se transforme au fil des siècles, avec une place croissante du grec dans l’administration et la culture, des réorganisations militaires et territoriales et des évolutions religieuses et sociales. Il ne s’agit pas d’un État immobile : ses institutions et ses frontières changent en réponse aux guerres, aux crises et aux transformations du monde méditerranéen. Constantinople tombe aux mains des Ottomans de Mehmed II en 1453, événement généralement retenu comme la fin de l’Empire romain d’Orient et de la continuité impériale romaine médiévale.'
+        ],
+        example: {
+          statement: 'Pourquoi la date de 476 ne correspond-elle pas à la fin de l’Empire romain dans son ensemble ?',
+          calculation: 'En 476, Romulus Augustule est déposé en Occident. L’Empire gouverné depuis Constantinople continue d’exister pendant près d’un millénaire supplémentaire, jusqu’en 1453.',
+          answer: '476 marque conventionnellement la fin de la succession impériale en Occident. L’Empire romain d’Orient subsiste jusqu’à la conquête ottomane de Constantinople en 1453.'
+        },
+        exercise: {
+          question: 'Pourquoi les historiens distinguent-ils la fin de l’Empire romain d’Occident de celle de l’Empire romain d’Orient ?',
+          answer: 'Parce que le pouvoir impérial disparaît en Occident en 476, tandis que l’État romain établi à Constantinople continue de fonctionner et de se transformer jusqu’en 1453.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Rome est-elle prise par les Wisigoths d’Alaric ?',
+            answer: 'En 410.'
+          },
+          {
+            question: 'Quel événement est associé à la date conventionnelle de 476 ?',
+            answer: 'La déposition de Romulus Augustule par Odoacre.'
+          },
+          {
+            question: 'En quelle année Constantinople est-elle conquise par les Ottomans ?',
+            answer: 'En 1453.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World History Encyclopedia — Roman Empire',
+            url: 'https://www.worldhistory.org/Roman_Empire/'
+          },
+          {
+            title: 'Cambridge University Press — The Eastern Empire in the Sixth Century',
+            url: 'https://www.cambridge.org/core/books/abs/new-cambridge-medieval-history/eastern-empire-in-the-sixth-century/AD724AA81FEE18748CEBF8A1A8016E7E'
+          },
+          {
+            title: 'Library of Congress — Late Antiquity: A Resource Guide',
+            url: 'https://guides.loc.gov/late-antiquity/introduction'
+          },
+          {
+            title: 'Oxford Academic — 1453: The Conquest and Tragedy of Constantinople',
+            url: 'https://academic.oup.com/book/62441'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
 ]
 
 
