@@ -458,4 +458,737 @@ window.courseCatalog = [
     ]
   },
 
+{
+  id: 'grandes-montagnes',
+  sortYear: true,
+  title: 'Les hauts sommets du monde : leur histoire géologique',
+  note: 'Quatorze chapitres consacrés aux quatorze sommets principaux dépassant 8 000 m, classés de la plus haute altitude à la plus basse. Les altitudes sont des valeurs de référence publiées par 8000ers.com ; elles ne sont pas toutes issues d’un même levé topographique récent. La formation de l’Himalaya et du Karakoram est replacée dans le contexte de la convergence entre les plaques indienne et eurasienne. Les âges, les roches et les structures sont distingués selon les connaissances disponibles : une explication régionale ne constitue pas une datation propre au sommet.',
+  chapters: [
+    {
+      id: 'everest',
+      title: '1. Everest — 8 848 m',
+      field: 'Géologie alpine · Himalaya du Khumbu · Frontière Népal–Chine (Tibet)',
+      summary: 'Étudier la formation du plus haut sommet terrestre, les séries sédimentaires de l’ancien domaine téthysien, les roches métamorphiques himalayennes et le soulèvement lié à la collision continentale.',
+      lesson: {
+        sections: [
+          'L’Everest, également appelé Sagarmatha au Népal et Chomolungma en tibétain, se trouve dans le secteur du Khumbu, à la frontière entre le Népal et la région autonome du Tibet. Son altitude de référence est de 8 848 m dans le tableau géographique de 8000ers.com. Cette valeur ne doit pas être confondue avec les mesures officielles plus récentes qui peuvent inclure ou distinguer la couverture neigeuse. L’Everest appartient à l’Himalaya, une chaîne de collision continentale qui s’étend sur environ 2 900 km.',
+          'Avant la formation de l’Himalaya, l’Inde était séparée de l’Asie par l’océan Téthys. Les sédiments accumulés dans cet ancien domaine marin ont ensuite été déformés et incorporés à l’orogène himalayen. Dans le secteur de l’Everest, les unités géologiques comprennent notamment la séquence sédimentaire téthysienne sur le versant nord et des roches métamorphiques de haut degré dans les unités cristallines himalayennes. Les travaux géologiques sur le Khumbu décrivent aussi des structures tectoniques majeures, dont le système de détachement sud-tibétain. Il serait inexact de présenter toutes les roches du sommet comme un seul granite ou comme une roche formée au moment du soulèvement.',
+          'La convergence entre l’Inde et l’Eurasie a épaissi la croûte, provoqué des plis, des chevauchements et le déplacement de grandes unités rocheuses. Le début de la collision est généralement situé autour de 50 à 40 millions d’années, même si les étapes et leur chronologie font encore l’objet de recherches. Le relief actuel résulte ensuite de l’interaction entre soulèvement tectonique, incision des vallées, gel-dégel et érosion glaciaire. L’altitude d’une montagne ne correspond donc pas à l’âge de ses roches : des roches anciennes peuvent constituer un relief qui s’est élevé beaucoup plus récemment.',
+          'L’Everest est un exemple majeur de la relation entre tectonique profonde et paysages de haute montagne. Les glaciers et les processus périglaciaires remanient continuellement les versants, tandis que les mouvements tectoniques maintiennent une région active. Les séismes himalayens témoignent de la convergence toujours en cours. La géologie de l’Everest doit ainsi être comprise comme une histoire en plusieurs étapes, et non comme un événement unique.'
+        ],
+        example: {
+          statement: 'La référence géographique de 8000ers.com indique 8 848 m pour l’Everest. Quelle différence d’altitude existe-t-il avec le K2, indiqué à 8 611 m dans la même source ?',
+          calculation: '8 848 - 8 611 = 237 m.',
+          answer: 'La différence est de 237 m selon les altitudes de référence de cette source. Ce calcul compare des valeurs publiées dans un même tableau et ne remplace pas un levé topographique.'
+        },
+        exercise: {
+          question: 'Pourquoi l’altitude actuelle de l’Everest ne donne-t-elle pas directement l’âge de ses roches ?',
+          answer: 'Parce que les roches se sont formées à des époques variées, puis ont été déformées, transportées et soulevées au cours de la collision entre l’Inde et l’Eurasie.'
+        },
+        exercises: [
+          {
+            question: 'Quel ancien domaine océanique séparait l’Inde de l’Asie avant la collision ?',
+            answer: 'L’océan Téthys.'
+          },
+          {
+            question: 'Quel processus tectonique majeur a contribué à construire l’Himalaya ?',
+            answer: 'La convergence puis la collision des plaques indienne et eurasienne, avec épaississement et raccourcissement de la croûte.'
+          },
+          {
+            question: 'Quels processus façonnent encore les versants de l’Everest ?',
+            answer: 'L’érosion, les glaciers, les processus périglaciaires et l’activité tectonique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — The Himalayas: Two Continents Collide',
+            url: 'https://pubs.usgs.gov/gip/dynamic/himalaya.html'
+          },
+          {
+            title: 'Geology of the Higher Himalayan Crystallines in Khumbu Himal',
+            url: 'https://www.sciencedirect.com/science/article/pii/S1367912099000140'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'Dal Zilio et al. — Building the Himalaya from tectonic to earthquake scales, Nature Reviews Earth & Environment (2021)',
+            url: 'https://www.nature.com/articles/s43017-021-00143-1'
+          }
+        ]
+      }
+    },
+    {
+      id: 'k2',
+      title: '2. K2 — 8 611 m',
+      field: 'Géologie alpine · Karakoram · Frontière Pakistan–Chine',
+      summary: 'Comprendre le contexte géologique du Karakoram, ses terrains continentaux complexes, ses intrusions magmatiques et la déformation associée à la collision indo-asiatique.',
+      lesson: {
+        sections: [
+          'Le K2 se situe dans le massif du Baltoro Muztagh, au cœur du Karakoram, à la frontière entre le Pakistan et la Chine. Son altitude de référence est de 8 611 m. Il ne fait pas partie de la chaîne himalayenne au sens géographique strict : il appartient au Karakoram, un ensemble montagneux voisin qui participe au vaste système tectonique Himalaya–Karakoram–Tibet. Cette distinction est importante, car l’histoire géologique du Karakoram comprend des terrains et des épisodes magmatiques qui ne se résument pas à ceux de l’Himalaya central.',
+          'Le Karakoram est un assemblage géologique complexe. Il conserve des traces de l’ancienne marge de l’Asie, de domaines océaniques disparus, de la subduction de lithosphère océanique et de la collision entre l’Inde et l’Asie. Des roches métamorphiques et des granitoïdes sont présents dans la région. Les recherches récentes soulignent toutefois que la répartition, l’origine et les mécanismes de mise en place des différents granitoïdes ne font pas l’objet d’un modèle entièrement consensuel. Il faut donc éviter d’attribuer une origine unique à toutes les roches du K2 sans étude locale précise.',
+          'La convergence continentale a provoqué un raccourcissement, un épaississement crustal et une déformation importante des terrains. Dans le nord-ouest de l’orogène Himalaya–Karakoram–Tibet, les études géochimiques et structurales montrent que l’épaississement et le soulèvement se sont déroulés en plusieurs phases. Les dates et les mécanismes varient selon les domaines étudiés ; les résultats obtenus pour une partie du Karakoram ne peuvent pas être automatiquement appliqués à chaque paroi du K2.',
+          'Le relief spectaculaire du K2 a ensuite été accentué par l’érosion glaciaire et fluviale. Les glaciers du Karakoram transportent des matériaux issus de l’altération des parois et creusent les vallées. Les fortes pentes, les fractures et les alternances de gel et de dégel contribuent à l’évolution du paysage. La forme actuelle du sommet est ainsi le résultat combiné d’une longue histoire tectonique et de processus d’érosion toujours actifs.'
+        ],
+        example: {
+          statement: 'Le K2 est indiqué à 8 611 m et le Kangchenjunga à 8 586 m dans le tableau de 8000ers.com. Quel est l’écart ?',
+          calculation: '8 611 - 8 586 = 25 m.',
+          answer: 'L’écart publié est de 25 m. Il s’agit d’une comparaison d’altitudes de référence, non d’une mesure nouvelle.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer le Karakoram de l’Himalaya lorsqu’on décrit le K2 ?',
+          answer: 'Parce que le Karakoram possède une histoire tectonique et magmatique propre, même s’il appartient au même vaste système de collision entre l’Inde et l’Asie.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel massif se trouve le K2 ?',
+            answer: 'Dans le Karakoram, au sein du massif du Baltoro Muztagh.'
+          },
+          {
+            question: 'Quels types de roches sont notamment présents dans le Karakoram ?',
+            answer: 'Des roches métamorphiques et des granitoïdes, avec une diversité dont l’origine fait encore l’objet de recherches.'
+          },
+          {
+            question: 'Quel rôle jouent les glaciers dans le modelé du relief ?',
+            answer: 'Ils érodent les vallées, transportent des débris et remanient les matériaux rocheux.'
+          }
+        ],
+        sources: [
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'Hillenbrand & Guevara — Multi-stage crustal thickening, surface uplift, and collision in the western Himalaya-Karakoram-Tibet orogen (2025), USGS Publications Warehouse',
+            url: 'https://pubs.usgs.gov/publication/70271381'
+          },
+          {
+            title: 'Geological Evolution of the Karakoram Terrane since Neoproterozoic, Earth-Science Reviews (2024)',
+            url: 'https://doi.org/10.1016/j.earscirev.2024.104890'
+          },
+          {
+            title: 'USGS — Seismicity of the Earth 1900–2010: Himalaya and vicinity',
+            url: 'https://pubs.usgs.gov/publication/ofr20101083J'
+          }
+        ]
+      }
+    },
+    {
+      id: 'kangchenjunga',
+      title: '3. Kangchenjunga — 8 586 m',
+      field: 'Géologie alpine · Himalaya oriental · Népal–Inde (Sikkim)',
+      summary: 'Étudier le secteur oriental de l’Himalaya, les unités cristallines métamorphiques et le rôle de la collision continentale dans l’édification du massif.',
+      lesson: {
+        sections: [
+          'Le Kangchenjunga, culminant à 8 586 m dans le tableau de référence de 8000ers.com, se trouve à la frontière du Népal et de l’État indien du Sikkim. Il appartient à l’Himalaya oriental. Le massif s’inscrit dans une chaîne formée par la convergence de l’Inde vers l’Eurasie. Cette convergence a entraîné la déformation des terrains, l’empilement de grandes unités géologiques et l’épaississement de la croûte continentale.',
+          'Dans l’Himalaya, les unités cristallines de haut degré comprennent des gneiss, des schistes métamorphiques, des migmatites et, dans certains secteurs, des intrusions granitiques. Ces roches témoignent de transformations subies en profondeur sous des conditions élevées de pression et de température. Il faut néanmoins distinguer la géologie générale de l’Himalaya oriental des descriptions pétrographiques faites spécifiquement sur les parois du Kangchenjunga : une lithologie précise du sommet ne doit pas être affirmée sans source de terrain correspondante.',
+          'Le métamorphisme est lié à l’enfouissement et à l’échauffement de matériaux crustaux pendant l’épaississement de la chaîne, puis à leur exhumation par les mouvements tectoniques et l’érosion. La collision ne s’est pas produite en un instant : elle a été suivie par des épisodes successifs de raccourcissement, de cisaillement et de déplacement le long de grandes zones de faille. Les reliefs de l’Himalaya oriental sont le résultat de cette évolution complexe.',
+          'Les glaciers quaternaires et les processus actuels de haute montagne ont sculpté les cirques, les arêtes et les vallées du massif. Les variations climatiques ont fait avancer et reculer les glaciers, tandis que l’altération mécanique fragmente les roches exposées. Le paysage visible aujourd’hui combine donc une architecture tectonique ancienne et un modelé glaciaire plus récent.'
+        ],
+        example: {
+          statement: 'Le Kangchenjunga est référencé à 8 586 m. Quelle différence le sépare du Lhotse, référencé à 8 516 m ?',
+          calculation: '8 586 - 8 516 = 70 m.',
+          answer: 'Le Kangchenjunga dépasse le Lhotse de 70 m selon les altitudes utilisées dans le tableau de référence.'
+        },
+        exercise: {
+          question: 'Que nous apprennent les gneiss et les migmatites sur l’histoire d’une chaîne de montagnes ?',
+          answer: 'Ils indiquent que des roches ont été enfouies et transformées en profondeur par des conditions de pression et de température élevées, avant d’être ramenées vers la surface.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle partie de l’Himalaya se trouve le Kangchenjunga ?',
+            answer: 'Dans l’Himalaya oriental, à la frontière du Népal et du Sikkim indien.'
+          },
+          {
+            question: 'Qu’est-ce que le métamorphisme ?',
+            answer: 'La transformation minéralogique et structurale d’une roche à l’état solide sous de nouvelles conditions de pression et de température.'
+          },
+          {
+            question: 'Les glaciers sont-ils responsables de la formation initiale de la chaîne ?',
+            answer: 'Non. La chaîne résulte principalement de la tectonique de collision ; les glaciers en remanient le relief.'
+          }
+        ],
+        sources: [
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'Dal Zilio et al. — Building the Himalaya from tectonic to earthquake scales (2021)',
+            url: 'https://www.nature.com/articles/s43017-021-00143-1'
+          },
+          {
+            title: 'USGS — The Himalayas: Two Continents Collide',
+            url: 'https://pubs.usgs.gov/gip/dynamic/himalaya.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'lhotse',
+      title: '4. Lhotse — 8 516 m',
+      field: 'Géologie alpine · Himalaya du Khumbu · Népal–Chine (Tibet)',
+      summary: 'Examiner la continuité géologique entre l’Everest et le Lhotse, les unités cristallines du Haut Himalaya et les grandes structures de détachement.',
+      lesson: {
+        sections: [
+          'Le Lhotse atteint 8 516 m selon 8000ers.com. Il se situe dans le Khumbu, immédiatement au sud de l’Everest, à proximité de la frontière entre le Népal et le Tibet. Sa position permet de l’étudier dans le même cadre régional que l’Everest et le Makalu : celui de l’Himalaya oriental, où les terrains ont été plissés, métamorphisés et déplacés pendant la collision entre l’Inde et l’Asie.',
+          'Les études géologiques du Khumbu décrivent un empilement d’unités métamorphiques de haut degré et de séries sédimentaires situées plus au nord. Les roches cristallines de l’Haut Himalaya comprennent notamment des gneiss, des schistes et des migmatites ; des leucogranites sont également connus dans plusieurs secteurs de la chaîne. Ces roches ne sont pas toutes contemporaines : certaines sont des sédiments anciens transformés, tandis que les granitoïdes résultent de processus magmatiques ou de fusion partielle crustale.',
+          'Le secteur est marqué par des structures tectoniques majeures, notamment le système de détachement sud-tibétain et les zones de cisaillement associées. Ces structures ont permis des déplacements relatifs entre unités rocheuses pendant l’évolution de la chaîne. Leur présence montre que l’orogenèse himalayenne ne s’explique pas uniquement par un soulèvement vertical : elle implique aussi des déplacements horizontaux, des chevauchements et des extensions localisées au sein d’une croûte épaissie.',
+          'Le relief du Lhotse a été fortement remanié par les glaciers et les processus de haute altitude. Les parois abruptes exposent les structures géologiques, tandis que le gel-dégel, les avalanches de débris et l’érosion glaciaire modifient continuellement les pentes. La proximité du Lhotse et de l’Everest ne signifie pas que leurs sommets possèdent exactement la même histoire locale, mais ils partagent un cadre tectonique régional largement commun.'
+        ],
+        example: {
+          statement: 'Le Lhotse est indiqué à 8 516 m et le Makalu à 8 485 m. Quel est leur écart d’altitude dans la source retenue ?',
+          calculation: '8 516 - 8 485 = 31 m.',
+          answer: 'L’écart est de 31 m selon les valeurs du tableau de 8000ers.com.'
+        },
+        exercise: {
+          question: 'Pourquoi la géologie du Lhotse peut-elle être comparée à celle de l’Everest sans être considérée comme identique ?',
+          answer: 'Les deux sommets appartiennent au même secteur tectonique régional, mais les unités rocheuses et les structures exposées peuvent varier localement.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel secteur himalayen se trouve le Lhotse ?',
+            answer: 'Dans le Khumbu, au sud de l’Everest.'
+          },
+          {
+            question: 'Que sont les leucogranites ?',
+            answer: 'Des granitoïdes généralement clairs, souvent associés à la fusion partielle de matériaux crustaux dans les chaînes de collision.'
+          },
+          {
+            question: 'Quel est le rôle des glaciers dans l’évolution du relief ?',
+            answer: 'Ils érodent les vallées et transportent les matériaux arrachés aux versants.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Geology of the Higher Himalayan Crystallines in Khumbu Himal',
+            url: 'https://www.sciencedirect.com/science/article/pii/S1367912099000140'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'Dal Zilio et al. — Building the Himalaya from tectonic to earthquake scales (2021)',
+            url: 'https://www.nature.com/articles/s43017-021-00143-1'
+          }
+        ]
+      }
+    },
+    {
+      id: 'makalu',
+      title: '5. Makalu — 8 485 m',
+      field: 'Géologie alpine · Barun Himal · Népal–Chine (Tibet)',
+      summary: 'Présenter le Makalu dans le contexte du Haut Himalaya oriental, des roches métamorphiques cristallines et de l’érosion des hauts reliefs.',
+      lesson: {
+        sections: [
+          'Le Makalu culmine à 8 485 m dans le tableau de 8000ers.com. Il se trouve à l’est de l’Everest, dans le secteur du Barun Himal, à la frontière entre le Népal et le Tibet. Il appartient à la partie orientale de la chaîne himalayenne. Son cadre géologique est lié à la collision continentale entre l’Inde et l’Eurasie, qui a entraîné la formation d’une croûte épaissie et l’empilement de terrains d’origines différentes.',
+          'Les travaux géologiques consacrés à la région Cho Oyu–Everest–Makalu décrivent les grandes unités du Haut Himalaya cristallin et leur relation avec les séquences sédimentaires de la marge téthysienne. Les roches métamorphiques ont subi des transformations en profondeur, tandis que des structures de cisaillement et des détachements tectoniques organisent les contacts entre certaines unités. Cette architecture est plus complexe qu’une simple superposition de couches horizontales.',
+          'Les processus magmatiques et métamorphiques sont liés à l’évolution thermique de la croûte épaissie. Dans certaines parties de l’Himalaya, la fusion partielle de roches crustales a produit des magmas granitiques, qui se sont ensuite mis en place sous forme d’intrusions. Il ne faut toutefois pas attribuer automatiquement chaque granite régional au sommet du Makalu : la démonstration d’une lithologie précise exige une carte ou une étude pétrographique locale.',
+          'Les glaciers et les cours d’eau ont ensuite découpé le massif, tandis que le gel-dégel fragmente les parois. Les vallées profondes du secteur du Barun montrent comment les processus d’érosion peuvent retirer des matériaux à une chaîne encore tectoniquement active. L’altitude actuelle du Makalu résulte donc de l’équilibre évolutif entre construction tectonique et démantèlement par l’érosion.'
+        ],
+        example: {
+          statement: 'Le Makalu est référencé à 8 485 m et le Cho Oyu à 8 188 m. Calcule la différence.',
+          calculation: '8 485 - 8 188 = 297 m.',
+          answer: 'La différence est de 297 m selon les altitudes publiées par 8000ers.com.'
+        },
+        exercise: {
+          question: 'Pourquoi les géologues étudient-ils ensemble les secteurs du Cho Oyu, de l’Everest et du Makalu ?',
+          answer: 'Parce qu’ils permettent d’observer, dans une même région de l’Himalaya oriental, les relations entre unités métamorphiques, séries sédimentaires et grandes structures tectoniques.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel ensemble se situe le Makalu ?',
+            answer: 'Dans le Barun Himal, dans l’Himalaya oriental.'
+          },
+          {
+            question: 'Quel phénomène peut produire des magmas granitiques dans une croûte continentale épaissie ?',
+            answer: 'La fusion partielle de roches crustales.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre tectonique et érosion ?',
+            answer: 'La tectonique déforme et construit les reliefs à l’échelle de la chaîne ; l’érosion enlève et transporte les matériaux en surface.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Geology of the Higher Himalayan Crystallines in Khumbu Himal',
+            url: 'https://www.sciencedirect.com/science/article/pii/S1367912099000140'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'USGS — The Himalayas: Two Continents Collide',
+            url: 'https://pubs.usgs.gov/gip/dynamic/himalaya.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cho-oyu',
+      title: '6. Cho Oyu — 8 188 m',
+      field: 'Géologie alpine · Khumbu et frontière tibétaine · Népal–Chine',
+      summary: 'Étudier la position du Cho Oyu dans les unités géologiques du Haut Himalaya et la transition vers les terrains sédimentaires de la région tibétaine.',
+      lesson: {
+        sections: [
+          'Le Cho Oyu atteint 8 188 m selon le tableau de 8000ers.com. Il se trouve dans le secteur du Khumbu, à la frontière du Népal et du Tibet. Il appartient au même grand secteur géologique que l’Everest et le Lhotse. Les études de la région Cho Oyu–Sagarmatha–Makalu sont particulièrement utiles, car elles permettent de suivre les unités tectoniques depuis les terrains métamorphiques du Haut Himalaya jusqu’aux séries sédimentaires de la marge tibétaine.',
+          'La région conserve des roches métamorphiques de haut degré, des gneiss et des migmatites, ainsi que des séries sédimentaires plus septentrionales. Ces formations n’ont pas toutes la même origine ni le même âge. Certaines dérivent de sédiments déposés dans l’ancien domaine téthysien ; d’autres correspondent à des matériaux crustaux transformés profondément au cours de l’épaississement de la chaîne. La géologie du Cho Oyu doit être replacée dans cet assemblage régional plutôt que résumée à une roche unique.',
+          'La collision entre l’Inde et l’Asie a produit des chevauchements, des zones de cisaillement et des détachements. Ces structures accommodent le raccourcissement de la croûte et l’exhumation de roches formées en profondeur. Les modèles tectoniques de l’Himalaya montrent que les mouvements se répartissent entre plusieurs structures, dont le grand chevauchement himalayen et les systèmes de détachement plus au nord. Leur fonctionnement a évolué dans le temps et demeure un sujet de recherche.',
+          'Les glaciers, les écoulements d’eau et les processus périglaciaires ont modelé les pentes du Cho Oyu. L’érosion met progressivement à nu des roches et des structures autrefois enfouies. Le massif illustre ainsi le lien entre la géologie profonde, qui construit l’architecture de la chaîne, et les processus de surface qui en façonnent le relief.'
+        ],
+        example: {
+          statement: 'Le Cho Oyu est donné à 8 188 m et le Dhaulagiri I à 8 167 m. Quel est l’écart ?',
+          calculation: '8 188 - 8 167 = 21 m.',
+          answer: 'L’écart est de 21 m dans le tableau géographique utilisé.'
+        },
+        exercise: {
+          question: 'Que permet d’étudier la succession des unités géologiques dans le secteur du Cho Oyu ?',
+          answer: 'Elle permet de comprendre les relations entre les roches métamorphiques du Haut Himalaya, les séries sédimentaires et les structures qui les ont déplacées.'
+        },
+        exercises: [
+          {
+            question: 'Avec quels sommets le Cho Oyu partage-t-il un cadre géologique régional étudié ?',
+            answer: 'Notamment l’Everest et le Makalu, dans le secteur du Khumbu et de l’Himalaya oriental.'
+          },
+          {
+            question: 'Quel ancien océan est associé aux séries sédimentaires téthysiennes ?',
+            answer: 'L’océan Téthys.'
+          },
+          {
+            question: 'Comment des roches profondes peuvent-elles affleurer en surface ?',
+            answer: 'Par l’exhumation liée aux mouvements tectoniques et à l’érosion qui retire les terrains sus-jacents.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Geology of the Higher Himalayan Crystallines in Khumbu Himal',
+            url: 'https://www.sciencedirect.com/science/article/pii/S1367912099000140'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'Dal Zilio et al. — Building the Himalaya from tectonic to earthquake scales (2021)',
+            url: 'https://www.nature.com/articles/s43017-021-00143-1'
+          }
+        ]
+      }
+    },
+    {
+      id: 'dhaulagiri-i',
+      title: '7. Dhaulagiri I — 8 167 m',
+      field: 'Géologie alpine · Himalaya occidental du Népal · Dhaulagiri Himal',
+      summary: 'Approfondir la structure géologique du massif Dhaulagiri–Annapurna–Manaslu, ses unités métamorphiques et ses grandes zones de cisaillement.',
+      lesson: {
+        sections: [
+          'Le Dhaulagiri I atteint 8 167 m selon 8000ers.com. Il se situe dans l’ouest du Népal, dans le massif du Dhaulagiri Himal. Il appartient à un secteur pour lequel une cartographie géologique régionale détaillée a été publiée à l’échelle 1:200 000. Cette cartographie traite conjointement les régions du Dhaulagiri, de l’Annapurna et du Manaslu, ce qui permet de replacer les sommets dans une architecture tectonique cohérente.',
+          'La région comprend plusieurs grandes unités tectoniques séparées par des failles et des zones de cisaillement. Du sud vers le nord, les auteurs distinguent notamment les zones subhimalayenne, himalayenne inférieure, cristalline du Haut Himalaya et téthysienne. Les unités cristallines supérieures contiennent des schistes, des paragneiss, des migmatites et des gneiss, avec des assemblages minéralogiques indiquant des degrés métamorphiques élevés. Des leucogranites sont également présents dans le secteur cartographié.',
+          'Cette diversité traduit l’histoire d’une croûte continentale épaissie et déformée pendant la collision entre l’Inde et l’Asie. Les roches sédimentaires ont été enfouies, métamorphisées et intégrées à des unités déplacées le long de structures tectoniques. Les travaux cartographiques décrivent aussi le système de détachement sud-tibétain et ses structures associées. Les limites entre unités ne sont donc pas de simples contacts sédimentaires : elles enregistrent des déplacements tectoniques importants.',
+          'Le relief du Dhaulagiri est ensuite façonné par l’érosion glaciaire, les cours d’eau et les processus gravitaires. La vallée de la Kali Gandaki et les vallées voisines témoignent de l’incision profonde du relief himalayen. Le massif permet d’observer le rôle simultané de la tectonique, qui construit et déforme la chaîne, et de l’érosion, qui enlève les roches et expose progressivement les structures internes.'
+        ],
+        example: {
+          statement: 'Le Dhaulagiri I est indiqué à 8 167 m et le Manaslu à 8 163 m. Quelle différence les sépare ?',
+          calculation: '8 167 - 8 163 = 4 m.',
+          answer: 'La différence est de 4 m selon les valeurs de 8000ers.com. De faibles écarts entre listes peuvent provenir de sources topographiques différentes.'
+        },
+        exercise: {
+          question: 'Pourquoi la carte géologique Dhaulagiri–Annapurna–Manaslu est-elle utile pour comprendre le Dhaulagiri ?',
+          answer: 'Elle décrit les unités tectoniques, les roches métamorphiques et les zones de cisaillement à l’échelle régionale, au lieu de traiter le sommet isolément.'
+        },
+        exercises: [
+          {
+            question: 'À quelle échelle la carte géologique régionale citée a-t-elle été publiée ?',
+            answer: 'À l’échelle 1:200 000.'
+          },
+          {
+            question: 'Cite deux types de roches décrits dans les unités cristallines du Haut Himalaya.',
+            answer: 'Par exemple les gneiss et les migmatites ; des schistes et des paragneiss sont également décrits.'
+          },
+          {
+            question: 'Quel phénomène a contribué à l’exhumation des roches métamorphiques ?',
+            answer: 'Les mouvements tectoniques combinés à l’érosion des terrains sus-jacents.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Parsons et al. — Geology of the Dhaulagiri-Annapurna-Manaslu Himalaya, Western Region, Nepal (2016)',
+            url: 'https://doi.org/10.1080/17445647.2014.984784'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'USGS — The Himalayas: Two Continents Collide',
+            url: 'https://pubs.usgs.gov/gip/dynamic/himalaya.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'manaslu',
+      title: '8. Manaslu — 8 163 m',
+      field: 'Géologie alpine · Mansiri Himal · Népal central',
+      summary: 'Étudier les unités métamorphiques du Manaslu, les leucogranites himalayens et l’évolution structurale du centre du Népal.',
+      lesson: {
+        sections: [
+          'Le Manaslu culmine à 8 163 m dans le tableau de 8000ers.com et se situe dans le Mansiri Himal, au Népal central. Il appartient au secteur couvert par la cartographie géologique Dhaulagiri–Annapurna–Manaslu. Cette étude régionale fournit un cadre documenté pour comprendre les roches et les structures de la région, tout en rappelant que les caractéristiques d’un affleurement particulier ne doivent pas être extrapolées sans vérification à l’ensemble du sommet.',
+          'Les unités cristallines du Haut Himalaya dans cette partie du Népal comprennent des schistes de haut degré métamorphique, des paragneiss, des migmatites et des gneiss. Des roches calc-silicatées sont également décrites dans certains niveaux. Les leucogranites apparaissent sous forme de filons et de corps intrusifs, certains déformés avec les roches encaissantes, d’autres recoupant les structures préexistantes. Ces relations permettent de reconstituer une partie de la chronologie relative entre déformation, métamorphisme et magmatisme.',
+          'La formation de ces unités est liée à l’épaississement de la croûte pendant la collision indo-eurasienne. L’enfouissement a provoqué le métamorphisme de roches préexistantes ; l’évolution thermique de la croûte a localement favorisé la fusion partielle et la production de magmas granitiques. Les zones de cisaillement et les détachements ont ensuite contribué au déplacement et à l’exhumation des unités. Les études régionales décrivent plusieurs phases de déformation, ce qui interdit de réduire l’histoire du Manaslu à une seule phase de soulèvement.',
+          'Le relief actuel résulte de l’interaction entre tectonique, incision des vallées et érosion glaciaire. Les glaciers ont creusé des cirques et des vallées en auge, tandis que les rivières ont profondément entaillé les versants. La comparaison du Manaslu avec le Dhaulagiri et l’Annapurna permet de comprendre les variations latérales de la structure géologique dans l’Himalaya central.'
+        ],
+        example: {
+          statement: 'Le Manaslu est référencé à 8 163 m et le Nanga Parbat à 8 125 m. Calcule l’écart à partir de la même liste.',
+          calculation: '8 163 - 8 125 = 38 m.',
+          answer: 'L’écart est de 38 m selon les valeurs de 8000ers.com.'
+        },
+        exercise: {
+          question: 'Que peut révéler la relation entre un filon granitique déformé et un filon qui recoupe les structures ?',
+          answer: 'Elle permet d’établir une chronologie relative : un filon déformé existait avant ou pendant une phase de déformation, tandis qu’un filon qui recoupe une structure est postérieur à cette structure.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel massif se trouve le Manaslu ?',
+            answer: 'Dans le Mansiri Himal, au Népal central.'
+          },
+          {
+            question: 'Qu’est-ce qu’une migmatite ?',
+            answer: 'Une roche métamorphique présentant des parties claires issues d’une fusion partielle et des parties plus sombres qui ont résisté davantage à cette fusion.'
+          },
+          {
+            question: 'Pourquoi comparer le Manaslu au Dhaulagiri et à l’Annapurna ?',
+            answer: 'Parce qu’ils appartiennent au même secteur régional étudié par une cartographie géologique commune.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Parsons et al. — Geology of the Dhaulagiri-Annapurna-Manaslu Himalaya (2016)',
+            url: 'https://doi.org/10.1080/17445647.2014.984784'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'Dal Zilio et al. — Building the Himalaya from tectonic to earthquake scales (2021)',
+            url: 'https://www.nature.com/articles/s43017-021-00143-1'
+          }
+        ]
+      }
+    },
+    {
+      id: 'nanga-parbat',
+      title: '9. Nanga Parbat — 8 125 m',
+      field: 'Géologie alpine · Himalaya occidental · Pakistan',
+      summary: 'Présenter le Nanga Parbat comme un massif de l’extrémité occidentale de l’Himalaya, marqué par une déformation rapide et une exhumation particulièrement étudiées.',
+      lesson: {
+        sections: [
+          'Le Nanga Parbat est donné à 8 125 m par 8000ers.com. Il se situe au Pakistan, à l’extrémité occidentale de l’Himalaya, dans une région de transition vers le Karakoram. Sa position tectonique est particulière : le massif appartient à la zone de courbure occidentale de l’orogène, souvent désignée comme la syntaxis occidentale de l’Himalaya. Cette géométrie contribue à la complexité des structures et des mouvements crustaux de la région.',
+          'Le massif est connu pour ses roches cristallines fortement déformées et métamorphisées. Les recherches sur le Nanga Parbat ont étudié les relations entre déformation, métamorphisme, circulation de fluides et exhumation rapide de roches profondes. Les conditions géologiques y sont complexes et ne se résument pas à une succession simple de couches. Il faut également distinguer les résultats obtenus dans le massif du Nanga Parbat de ceux du Karakoram voisin, même si les deux régions appartiennent au même grand système tectonique.',
+          'La convergence entre l’Inde et l’Eurasie a entraîné un raccourcissement et un épaississement crustal à l’échelle régionale. Dans la zone du Nanga Parbat, la géométrie de la chaîne et les déformations localisées ont favorisé des trajectoires d’exhumation particulières. Les roches remontées vers la surface permettent aux géologues d’étudier des processus qui se déroulent normalement à plusieurs kilomètres de profondeur. Les mécanismes exacts et leur chronologie sont documentés par des études spécialisées et ne doivent pas être généralisés à toute la chaîne.',
+          'Le relief très escarpé est entretenu par l’érosion fluviale et glaciaire, les mouvements de versant et l’altération liée aux variations de température. L’incision des vallées peut contribuer à décharger les roches profondes et à modifier les contraintes dans la croûte superficielle. Le Nanga Parbat constitue ainsi un terrain d’étude important pour examiner les interactions possibles entre tectonique, exhumation et érosion.'
+        ],
+        example: {
+          statement: 'Le Nanga Parbat est référencé à 8 125 m et l’Annapurna I à 8 091 m. Quelle différence obtient-on ?',
+          calculation: '8 125 - 8 091 = 34 m.',
+          answer: 'La différence est de 34 m selon les altitudes du tableau utilisé.'
+        },
+        exercise: {
+          question: 'Pourquoi le Nanga Parbat est-il particulièrement intéressant pour l’étude de l’exhumation ?',
+          answer: 'Parce que ses roches cristallines et leur déformation permettent d’étudier la remontée vers la surface de matériaux qui ont été enfouis profondément dans la croûte.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel pays se trouve le Nanga Parbat ?',
+            answer: 'Au Pakistan.'
+          },
+          {
+            question: 'Que signifie le terme exhumation en géologie ?',
+            answer: 'La mise à l’affleurement de roches auparavant enfouies, par les mouvements tectoniques et l’érosion.'
+          },
+          {
+            question: 'La géologie du Nanga Parbat peut-elle être appliquée sans nuance au Karakoram voisin ?',
+            answer: 'Non. Les deux régions sont voisines mais présentent des structures et des histoires locales distinctes.'
+          }
+        ],
+        sources: [
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'USGS — Seismicity of the Earth 1900–2010: Himalaya and vicinity',
+            url: 'https://pubs.usgs.gov/publication/ofr20101083J'
+          },
+          {
+            title: 'Hillenbrand & Guevara — Multi-stage crustal thickening, surface uplift, and collision in the western Himalaya-Karakoram-Tibet orogen (2025)',
+            url: 'https://pubs.usgs.gov/publication/70271381'
+          }
+        ]
+      }
+    },
+    {
+      id: 'annapurna-i',
+      title: '10. Annapurna I — 8 091 m',
+      field: 'Géologie alpine · Annapurna Himal · Népal central',
+      summary: 'Décrire les unités métamorphiques, les leucogranites et les structures tectoniques du massif de l’Annapurna à partir de la cartographie régionale.',
+      lesson: {
+        sections: [
+          'L’Annapurna I atteint 8 091 m selon 8000ers.com. Il appartient à l’Annapurna Himal, au Népal central. Comme le Dhaulagiri et le Manaslu, il est couvert par une cartographie géologique régionale détaillée du secteur occidental du Népal. Cette étude permet d’examiner les unités tectoniques, les roches métamorphiques et les structures qui organisent cette portion de l’Himalaya.',
+          'Les unités cristallines du Haut Himalaya comprennent des schistes, des paragneiss, des migmatites et des gneiss de différents degrés métamorphiques. Des roches calc-silicatées et des leucogranites sont également décrits dans le secteur. Les leucogranites se présentent notamment sous forme de filons et de corps intrusifs ; leurs relations avec la foliation et les structures de déformation permettent de reconstituer leur mise en place relative. Ces observations sont issues de la cartographie régionale et ne doivent pas être transformées en affirmation non vérifiée sur chaque partie du sommet.',
+          'L’architecture de l’Annapurna s’inscrit dans l’orogenèse himalayenne, déclenchée par la collision entre l’Inde et l’Asie. Les unités ont été empilées et déformées le long de grandes structures tectoniques. L’étude régionale distingue plusieurs ensembles séparés par des failles et des zones de cisaillement, dont des structures liées au système de détachement sud-tibétain. Le métamorphisme, la fusion partielle et l’exhumation sont des étapes différentes de cette histoire et ne doivent pas être confondues.',
+          'Les glaciers et les rivières ont profondément sculpté le massif. La vallée de la Kali Gandaki, située entre les ensembles du Dhaulagiri et de l’Annapurna, est un exemple remarquable d’incision dans une région de très haut relief. L’érosion glaciaire façonne les cirques et les vallées, tandis que les écoulements fluviaux transportent les sédiments vers les basses terres. La géologie de l’Annapurna illustre ainsi le lien entre structures profondes, relief et dynamique des paysages.'
+        ],
+        example: {
+          statement: 'L’Annapurna I est indiqué à 8 091 m et le Gasherbrum I à 8 080 m. Calcule l’écart.',
+          calculation: '8 091 - 8 080 = 11 m.',
+          answer: 'L’écart publié est de 11 m.'
+        },
+        exercise: {
+          question: 'Comment les filons de leucogranite peuvent-ils aider à reconstituer l’histoire tectonique de l’Annapurna ?',
+          answer: 'Leurs relations avec les foliations, les plis et les zones de cisaillement permettent d’établir s’ils se sont mis en place avant, pendant ou après certaines phases de déformation.'
+        },
+        exercises: [
+          {
+            question: 'Quelle étude cartographique régionale couvre l’Annapurna ?',
+            answer: 'La cartographie géologique du Dhaulagiri-Annapurna-Manaslu Himalaya, publiée à l’échelle 1:200 000.'
+          },
+          {
+            question: 'Cite deux roches décrites dans les unités cristallines régionales.',
+            answer: 'Par exemple les paragneiss et les migmatites.'
+          },
+          {
+            question: 'Quel rôle joue la vallée de la Kali Gandaki dans le paysage régional ?',
+            answer: 'Elle constitue une vallée profondément incisée entre les massifs du Dhaulagiri et de l’Annapurna.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Parsons et al. — Geology of the Dhaulagiri-Annapurna-Manaslu Himalaya (2016)',
+            url: 'https://doi.org/10.1080/17445647.2014.984784'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'USGS — The Himalayas: Two Continents Collide',
+            url: 'https://pubs.usgs.gov/gip/dynamic/himalaya.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'gasherbrum-i',
+      title: '11. Gasherbrum I — 8 080 m',
+      field: 'Géologie alpine · Karakoram · Baltoro Muztagh · Pakistan–Chine',
+      summary: 'Étudier le Gasherbrum I dans le contexte du terrane du Karakoram, de l’histoire magmatique et métamorphique de la marge asiatique et de la collision continentale.',
+      lesson: {
+        sections: [
+          'Le Gasherbrum I, également appelé Hidden Peak, est référencé à 8 080 m. Il se trouve dans le Baltoro Muztagh, dans le Karakoram, à proximité de la frontière entre le Pakistan et la Chine. Comme le K2 et le Broad Peak, il appartient au grand ensemble montagneux du Karakoram. Cette région est géologiquement distincte de l’Himalaya central, même si les deux chaînes sont liées à la convergence entre l’Inde et l’Asie.',
+          'Le terrane du Karakoram conserve un enregistrement complexe de l’histoire de la marge asiatique, de la subduction de lithosphère océanique et de la collision continentale. Les roches régionales comprennent des ensembles métamorphiques et des granitoïdes issus de plusieurs épisodes géologiques. Une synthèse publiée en 2024 souligne que l’origine, la répartition et les mécanismes de mise en place des granitoïdes du Karakoram restent discutés. Il est donc nécessaire de présenter cette diversité comme un objet de recherche plutôt que d’affirmer une chronologie unique et définitivement établie.',
+          'La collision entre l’Inde et l’Asie a provoqué une déformation intense, un épaississement crustal et des déplacements le long de grandes structures. Les études récentes du système Himalaya–Karakoram–Tibet montrent que le soulèvement et l’épaississement ont pu se produire en plusieurs étapes. Les résultats régionaux éclairent le contexte du Gasherbrum I, mais ne fournissent pas à eux seuls une datation précise de la formation de chaque roche du sommet.',
+          'Les glaciers du Baltoro et les processus d’érosion de haute montagne remanient les versants et transportent les débris issus des parois. Les vallées glaciaires exposent des roches formées ou transformées à différentes profondeurs. Le Gasherbrum I illustre donc la superposition d’une histoire crustale ancienne, d’une construction tectonique récente à l’échelle géologique et d’une érosion glaciaire toujours active.'
+        ],
+        example: {
+          statement: 'Le Gasherbrum I est indiqué à 8 080 m et le Broad Peak à 8 051 m. Quelle différence les sépare ?',
+          calculation: '8 080 - 8 051 = 29 m.',
+          answer: 'La différence est de 29 m selon la source de référence.'
+        },
+        exercise: {
+          question: 'Pourquoi les géologues ne donnent-ils pas une origine unique à tous les granitoïdes du Karakoram ?',
+          answer: 'Parce que les granitoïdes peuvent provenir de sources et de processus différents, mis en place pendant plusieurs épisodes tectoniques et magmatiques.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel massif se trouve le Gasherbrum I ?',
+            answer: 'Dans le Baltoro Muztagh, au sein du Karakoram.'
+          },
+          {
+            question: 'Qu’est-ce qu’un terrane en géologie ?',
+            answer: 'Un ensemble de roches ayant une histoire géologique distincte, intégré ensuite à un continent ou à une chaîne par des processus tectoniques.'
+          },
+          {
+            question: 'Pourquoi faut-il distinguer le contexte régional d’une datation locale ?',
+            answer: 'Parce qu’un modèle régional ne détermine pas automatiquement l’âge ni l’origine d’une roche précise au sommet.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Geological Evolution of the Karakoram Terrane since Neoproterozoic, Earth-Science Reviews (2024)',
+            url: 'https://doi.org/10.1016/j.earscirev.2024.104890'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'Hillenbrand & Guevara — Multi-stage crustal thickening, surface uplift, and collision in the western Himalaya-Karakoram-Tibet orogen (2025)',
+            url: 'https://pubs.usgs.gov/publication/70271381'
+          }
+        ]
+      }
+    },
+    {
+      id: 'broad-peak',
+      title: '12. Broad Peak — 8 051 m',
+      field: 'Géologie alpine · Karakoram · Baltoro Muztagh · Pakistan–Chine',
+      summary: 'Replacer le Broad Peak dans la géologie du Baltoro, l’évolution du Karakoram et les processus glaciaires qui façonnent les grands reliefs.',
+      lesson: {
+        sections: [
+          'Le Broad Peak atteint 8 051 m selon 8000ers.com. Il se trouve dans le Baltoro Muztagh, dans le Karakoram, près du K2 et des Gasherbrum. Il appartient donc à un même ensemble géographique et tectonique régional que ces sommets, sans que cela signifie que leurs roches ou leurs structures locales soient identiques. La géologie du Karakoram est caractérisée par un assemblage de terrains continentaux, de roches métamorphiques et de formations magmatiques.',
+          'L’histoire du Karakoram remonte à des périodes antérieures à la collision finale entre l’Inde et l’Asie. Le terrane conserve des traces de la subduction d’anciens domaines océaniques sous la marge asiatique, de l’activité magmatique associée et de transformations métamorphiques. La collision continentale a ensuite réorganisé ces terrains, provoquant raccourcissement, épaississement et déplacements tectoniques. Les synthèses récentes insistent sur la complexité de cette évolution et sur les incertitudes qui subsistent quant à certains épisodes magmatiques.',
+          'Le Broad Peak est situé dans un environnement où la tectonique à grande échelle et les processus de surface interagissent. Les grandes structures de la région résultent de la convergence des plaques, tandis que les glaciers et les cours d’eau creusent les vallées et transportent les matériaux. Les études portant sur le Karakoram décrivent des variations régionales de l’histoire thermique et structurale ; elles ne doivent pas être interprétées comme une analyse pétrographique directe de chaque paroi du Broad Peak.',
+          'Les glaciers du Baltoro contribuent fortement à l’aspect du paysage. Ils transportent des blocs et des sédiments, polissent ou arrachent des matériaux rocheux et construisent des dépôts morainiques. Les processus de gel-dégel et les mouvements de versant complètent cette action. Le Broad Peak est ainsi un exemple de relief dont la forme actuelle dépend à la fois d’une longue évolution tectonique et de l’érosion glaciaire.'
+        ],
+        example: {
+          statement: 'Le Broad Peak est indiqué à 8 051 m et le Gasherbrum II à 8 034 m. Calcule leur différence.',
+          calculation: '8 051 - 8 034 = 17 m.',
+          answer: 'L’écart est de 17 m selon les altitudes de référence de 8000ers.com.'
+        },
+        exercise: {
+          question: 'Pourquoi la présence de plusieurs sommets de plus de 8 000 m dans le Baltoro ne signifie-t-elle pas qu’ils sont constitués exactement des mêmes roches ?',
+          answer: 'Parce que les unités géologiques peuvent varier localement et que les roches ont des histoires de formation, de déformation et d’exposition différentes.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel massif se trouve le Broad Peak ?',
+            answer: 'Dans le Baltoro Muztagh, au Karakoram.'
+          },
+          {
+            question: 'Quels processus ont précédé la collision continentale dans l’histoire du Karakoram ?',
+            answer: 'Notamment la subduction d’anciens domaines océaniques et l’activité magmatique associée.'
+          },
+          {
+            question: 'Que sont les moraines ?',
+            answer: 'Des accumulations de débris rocheux transportés et déposés par les glaciers.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Geological Evolution of the Karakoram Terrane since Neoproterozoic, Earth-Science Reviews (2024)',
+            url: 'https://doi.org/10.1016/j.earscirev.2024.104890'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'USGS — Seismicity of the Earth 1900–2010: Himalaya and vicinity',
+            url: 'https://pubs.usgs.gov/publication/ofr20101083J'
+          }
+        ]
+      }
+    },
+    {
+      id: 'gasherbrum-ii',
+      title: '13. Gasherbrum II — 8 034 m',
+      field: 'Géologie alpine · Karakoram · Baltoro Muztagh · Pakistan–Chine',
+      summary: 'Étudier le Gasherbrum II dans le même contexte régional que le Gasherbrum I, en distinguant l’histoire générale du terrane et les données propres au sommet.',
+      lesson: {
+        sections: [
+          'Le Gasherbrum II atteint 8 034 m dans le tableau géographique de 8000ers.com. Il se situe dans le Baltoro Muztagh, au Karakoram, dans la région frontalière entre le Pakistan et la Chine. Il appartient au même ensemble régional que le Gasherbrum I, mais les deux sommets restent des reliefs distincts. Une description rigoureuse doit éviter de transférer automatiquement à l’un les observations géologiques réalisées sur l’autre.',
+          'Le Karakoram est constitué d’un assemblage de terrains ayant enregistré plusieurs épisodes géologiques : évolution de la marge asiatique, subduction d’anciens domaines océaniques, magmatisme, métamorphisme et collision continentale. Les roches granitoïdes et métamorphiques de la région témoignent de cette histoire polyphasée. Une synthèse scientifique récente souligne que les origines et les âges de certains granitoïdes restent débattus ; il serait donc excessif de proposer une succession d’événements détaillée et certaine pour le seul sommet du Gasherbrum II sans données spécifiques.',
+          'La convergence entre l’Inde et l’Asie a entraîné une déformation de grande ampleur et un épaississement de la croûte. Les structures du Karakoram s’inscrivent dans l’orogène Himalaya–Karakoram–Tibet, mais elles ne sont pas identiques aux grands chevauchements de l’Himalaya central. Les recherches récentes montrent que la construction de l’orogène s’est déroulée en plusieurs étapes et que les différents domaines n’ont pas nécessairement connu les mêmes trajectoires thermiques et tectoniques.',
+          'Le relief du Gasherbrum II est entretenu par l’érosion glaciaire et les processus de haute montagne. Les glaciers déplacent les matériaux, tandis que l’altération mécanique fragmente les parois exposées. Ces processus modifient les formes du massif sans être à l’origine de sa construction tectonique. La distinction entre formation des roches, édification du relief et modelé glaciaire est essentielle pour comprendre son histoire.'
+        ],
+        example: {
+          statement: 'Le Gasherbrum II est indiqué à 8 034 m et le Shishapangma à 8 027 m. Quelle différence obtient-on ?',
+          calculation: '8 034 - 8 027 = 7 m.',
+          answer: 'La différence est de 7 m selon les altitudes retenues dans le tableau de 8000ers.com.'
+        },
+        exercise: {
+          question: 'Quelle précaution faut-il prendre lorsqu’on utilise les études géologiques du Karakoram pour décrire le Gasherbrum II ?',
+          answer: 'Il faut distinguer les conclusions régionales des observations directement réalisées sur le Gasherbrum II et ne pas lui attribuer sans preuve les roches ou les âges d’un sommet voisin.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle chaîne se trouve le Gasherbrum II ?',
+            answer: 'Dans le Karakoram.'
+          },
+          {
+            question: 'Quels grands processus géologiques ont marqué le terrane du Karakoram ?',
+            answer: 'La subduction d’anciens domaines océaniques, le magmatisme, le métamorphisme et la collision continentale.'
+          },
+          {
+            question: 'Les glaciers construisent-ils l’orogène ?',
+            answer: 'Non. Ils sculptent et érodent un relief dont la structure est principalement liée aux processus tectoniques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Geological Evolution of the Karakoram Terrane since Neoproterozoic, Earth-Science Reviews (2024)',
+            url: 'https://doi.org/10.1016/j.earscirev.2024.104890'
+          },
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'Hillenbrand & Guevara — Multi-stage crustal thickening, surface uplift, and collision in the western Himalaya-Karakoram-Tibet orogen (2025)',
+            url: 'https://pubs.usgs.gov/publication/70271381'
+          }
+        ]
+      }
+    },
+    {
+      id: 'shishapangma',
+      title: '14. Shishapangma — 8 027 m',
+      field: 'Géologie alpine · Jugal Himal et domaine tibétain · Chine (Tibet)',
+      summary: 'Présenter le Shishapangma dans le secteur tibétain de l’Himalaya, en tenant compte des séries sédimentaires téthysiennes et de la déformation liée à la collision continentale.',
+      lesson: {
+        sections: [
+          'Le Shishapangma, également écrit Shisha Pangma, est référencé à 8 027 m par 8000ers.com. Il se situe entièrement en Chine, dans la région autonome du Tibet, au sein du secteur du Jugal Himal selon la classification géographique de cette source. Il est le plus bas des quatorze sommets principaux dépassant 8 000 m. Sa position au nord de la chaîne himalayenne permet de l’étudier dans le contexte des terrains tibétains et de l’ancien domaine téthysien.',
+          'Le domaine téthysien conserve des séries sédimentaires déposées dans l’ancien océan Téthys et sur ses marges. Ces dépôts ont été plissés, fracturés et déplacés pendant la fermeture de l’océan puis la collision de l’Inde avec l’Asie. Les unités sédimentaires de l’Himalaya téthysien sont donc des archives de milieux anciens, transformées ensuite par la tectonique. Les détails lithologiques exacts du sommet doivent toutefois être fondés sur une carte géologique ou une étude de terrain spécifique ; le cadre régional ne suffit pas à déterminer chaque roche affleurante.',
+          'La collision continentale a provoqué le raccourcissement de la croûte, la formation de chevauchements et le soulèvement du plateau tibétain et de l’Himalaya. Les structures régionales montrent que la déformation est distribuée entre plusieurs failles et zones de cisaillement. Le Tibet connaît également une extension est-ouest dans certains secteurs, en lien avec l’évolution de la croûte épaissie. Cette diversité des mouvements montre que la collision ne produit pas uniquement une compression uniforme.',
+          'Les glaciers, les cours d’eau et les processus périglaciaires ont remodelé les reliefs du Shishapangma. L’érosion enlève progressivement les matériaux, expose les couches sédimentaires et contribue au transport des sédiments vers les bassins voisins. Le sommet illustre ainsi le passage d’un ancien domaine marin à un paysage continental de très haute altitude, transformé par des dizaines de millions d’années de tectonique et d’érosion.'
+        ],
+        example: {
+          statement: 'Le Shishapangma est indiqué à 8 027 m. De combien dépasse-t-il le seuil conventionnel des sommets de 8 000 m ?',
+          calculation: '8 027 - 8 000 = 27 m.',
+          answer: 'Il dépasse le seuil de 27 m selon l’altitude de référence de 8000ers.com.'
+        },
+        exercise: {
+          question: 'Pourquoi les séries sédimentaires téthysiennes sont-elles importantes pour comprendre le Shishapangma et l’Himalaya ?',
+          answer: 'Elles conservent des informations sur les anciens milieux marins et les marges continentales qui existaient avant la fermeture de la Téthys et la collision entre l’Inde et l’Asie.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle région politique se trouve le Shishapangma ?',
+            answer: 'Dans la région autonome du Tibet, en Chine.'
+          },
+          {
+            question: 'Que sont les séries sédimentaires téthysiennes ?',
+            answer: 'Des roches issues de sédiments déposés dans l’ancien domaine océanique de la Téthys et sur ses marges.'
+          },
+          {
+            question: 'Quel grand processus a transformé ces dépôts en unités de montagne ?',
+            answer: 'La fermeture de l’océan Téthys puis la collision entre l’Inde et l’Asie, qui ont provoqué plissement, fracturation et déplacement des terrains.'
+          }
+        ],
+        sources: [
+          {
+            title: '8000ers.com — Geographical facts of the Main 8000ers',
+            url: 'https://8000ers.com/cms/en/8000ers-mainmenu-205.html'
+          },
+          {
+            title: 'USGS — The Himalayas: Two Continents Collide',
+            url: 'https://pubs.usgs.gov/gip/dynamic/himalaya.html'
+          },
+          {
+            title: 'Dal Zilio et al. — Building the Himalaya from tectonic to earthquake scales (2021)',
+            url: 'https://www.nature.com/articles/s43017-021-00143-1'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+
 ]
