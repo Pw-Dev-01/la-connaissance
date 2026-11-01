@@ -9,7 +9,7 @@ window.courseCatalog = [
       // CHAPITRE 1 : AMAZONe
       {
         id: 'amazone',
-        title: 'L’Amazone : un fleuve majeur au cœur de la forêt tropicale',
+        title: 'L’Amazone : un fleuve majeur au cœur de la forêt tropicale - 6400 km',
         field: 'Amérique du Sud · Bassin amazonien · Océan Atlantique',
         summary: 'Étudier le fonctionnement du système amazonien, son immense bassin versant, ses variations saisonnières, son rôle écologique et son importance pour les populations. Comprendre les conséquences de la déforestation, des aménagements et du changement climatique.',
         lesson: {
@@ -54,7 +54,7 @@ window.courseCatalog = [
       // CHAPITRE 2 : NIL
       {
         id: 'nil',
-        title: 'Le Nil : un fleuve essentiel aux sociétés d’Afrique du Nord-Est',
+        title: 'Le Nil : un fleuve essentiel aux sociétés d’Afrique du Nord-Est - 6650 km',
         field: 'Afrique · Afrique de l’Est et Afrique du Nord-Est · Mer Méditerranée',
         summary: 'Comprendre l’organisation du bassin du Nil, la rencontre du Nil Blanc et du Nil Bleu, les variations de son débit, son rôle dans les sociétés et les enjeux de partage de l’eau entre les pays riverains.',
         lesson: {
@@ -99,7 +99,7 @@ window.courseCatalog = [
       // CHAPITRE 3 : YANGTSE
       {
         id: 'yangtse',
-        title: 'Le Yangtsé : un axe majeur de la Chine',
+        title: 'Le Yangtsé : un axe majeur de la Chine - 6300 km',
         field: 'Asie · Chine · Mer de Chine orientale',
         summary: 'Étudier le plus long fleuve d’Asie, son parcours à travers la Chine, son rôle économique, ses aménagements hydroélectriques et les conséquences environnementales de la transformation de son bassin.',
         lesson: {
@@ -144,7 +144,7 @@ window.courseCatalog = [
       // CHAPITRE 4 : MISSISSIPPI-MISSOURI
       {
         id: 'mississippi-missouri',
-        title: 'Le Mississippi-Missouri : un vaste réseau fluvial d’Amérique du Nord',
+        title: 'Le Mississippi-Missouri : un vaste réseau fluvial d’Amérique du Nord - 5771 km',
         field: 'Amérique du Nord · États-Unis · Golfe du Mexique',
         summary: 'Comprendre le fonctionnement du réseau Mississippi-Missouri, ses grands affluents, son rôle dans l’agriculture et le transport, ainsi que les enjeux liés aux inondations, aux pollutions et aux aménagements.',
         lesson: {
@@ -189,7 +189,7 @@ window.courseCatalog = [
       // CHAPITRE 5 : CONGO
       {
         id: 'congo',
-        title: 'Le Congo : un fleuve majeur au cœur de l’Afrique équatoriale',
+        title: 'Le Congo : un fleuve majeur au cœur de l’Afrique équatoriale - 4700 km',
         field: 'Afrique centrale · Bassin du Congo · Océan Atlantique',
         summary: 'Étudier le bassin du Congo, son réseau d’affluents, son régime hydrologique, ses forêts tropicales et ses usages humains. Comprendre les enjeux liés à la biodiversité, aux ressources en eau et aux transformations du bassin.',
         lesson: {
@@ -234,7 +234,7 @@ window.courseCatalog = [
       // CHAPITRE 6 : GANGE
       {
         id: 'gange',
-        title: 'Le Gange : un fleuve essentiel aux populations et aux territoires d’Asie du Sud',
+        title: 'Le Gange : un fleuve essentiel aux populations et aux territoires d’Asie du Sud - 2510 km',
         field: 'Asie du Sud · Inde et Bangladesh · Golfe du Bengale',
         summary: 'Comprendre la formation du Gange, son bassin transfrontalier, l’influence de la mousson, son importance agricole, urbaine et culturelle, ainsi que les problèmes de pollution et de gestion de l’eau.',
         lesson: {
@@ -279,7 +279,7 @@ window.courseCatalog = [
       // CHAPITRE 7 : MEKONG
       {
         id: 'mekong',
-        title: 'Le Mékong : un fleuve vital pour l’Asie du Sud-Est',
+        title: 'Le Mékong : un fleuve vital pour l’Asie du Sud-Est - 4350 km',
         field: 'Asie du Sud-Est · Chine, Myanmar, Laos, Thaïlande, Cambodge et Vietnam · Mer de Chine méridionale',
         summary: 'Étudier le parcours du Mékong, son bassin transfrontalier, ses crues saisonnières, le rôle du lac Tonlé Sap, les activités de pêche et d’agriculture et les conséquences des barrages et du changement climatique.',
         lesson: {
@@ -324,7 +324,7 @@ window.courseCatalog = [
       // CHAPITRE 8 : DANUBE
       {
         id: 'danube',
-        title: 'Le Danube : un fleuve international au cœur de l’Europe',
+        title: 'Le Danube : un fleuve international au cœur de l’Europe - 2850 km',
         field: 'Europe centrale et orientale · Bassin du Danube · Mer Noire',
         summary: 'Comprendre le parcours du Danube, son bassin partagé entre de nombreux pays, ses grands affluents, son rôle dans les transports et les échanges, ainsi que les enjeux de pollution et de protection du delta.',
         lesson: {
@@ -369,7 +369,7 @@ window.courseCatalog = [
       // CHAPITRE 9 : VOLGA
       {
         id: 'volga',
-        title: 'La Volga : le grand fleuve de la Russie européenne',
+        title: 'La Volga : le grand fleuve de la Russie européenne - 3530 km',
         field: 'Europe orientale · Russie · Mer Caspienne',
         summary: 'Étudier la Volga, le plus long fleuve d’Europe, son bassin versant, son régime marqué par les saisons, son importance pour les villes et les activités économiques, ainsi que les effets des barrages et des pollutions.',
         lesson: {
@@ -414,7 +414,7 @@ window.courseCatalog = [
       // CHAPITRE 10 : PARANA
       {
         id: 'parana',
-        title: 'Le Paraná : un fleuve structurant de l’Amérique du Sud',
+        title: 'Le Paraná : un fleuve structurant de l’Amérique du Sud - 3000 km',
         field: 'Amérique du Sud · Brésil, Paraguay et Argentine · Río de la Plata et océan Atlantique',
         summary: 'Comprendre le parcours du Paraná, son réseau d’affluents, son bassin partagé entre plusieurs pays, son rôle dans l’agriculture, la navigation et l’hydroélectricité, ainsi que les enjeux écologiques des barrages et des plaines inondables.',
         lesson: {
@@ -2019,3 +2019,4 @@ window.courseCatalog = [
 
 
 ]
+
