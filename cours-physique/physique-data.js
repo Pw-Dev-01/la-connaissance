@@ -7201,10 +7201,11 @@
       lesson: {
         sections: [
           'Au milieu du XIXe siècle, l’électricité et le magnétisme sont décrits par des lois établies expérimentalement : la loi de Gauss pour le champ électrique, la loi de Gauss pour le champ magnétique (il n’existe pas de charge magnétique isolée connue), la loi de Faraday de l’induction et la loi d’Ampère. James Clerk Maxwell (1831-1879) en fait une théorie unifiée. Son mémoire « A Dynamical Theory of the Electromagnetic Field » est reçu par la Royal Society le 27 octobre 1864, lu le 8 décembre 1864 et publié en 1865 dans les Philosophical Transactions. Dans ce mémoire, le champ électromagnétique devient l’objet central de la théorie et non plus un modèle mécanique sous-jacent.',
-          'La loi d’Ampère sous sa forme initiale:
-∮ B · ds = μ₀ I, pose un problème lorsqu’un courant charge un condensateur. Pour une boucle donnée, on peut choisir une surface traversée par le fil (qui contient le courant I) ou une surface passant entre les armatures (qu’aucun courant de conduction ne traverse). Les deux choix donneraient des résultats différents, ce qui est incohérent. Maxwell ajoute un terme : le courant de déplacement 
-I_d = ε₀ dΦ_E/dt
-où Φ_E est le flux du champ électrique à travers la surface. La loi corrigée s’écrit:’,
+          'La loi d’Ampère sous sa forme initiale:’,
+‘∮ B · ds = μ₀ I’, 
+‘pose un problème lorsqu’un courant charge un condensateur. Pour une boucle donnée, on peut choisir une surface traversée par le fil (qui contient le courant I) ou une surface passant entre les armatures (qu’aucun courant de conduction ne traverse). Les deux choix donneraient des résultats différents, ce qui est incohérent. Maxwell ajoute un terme : le courant de déplacement’,
+‘I_d = ε₀ dΦ_E/dt’,
+‘où Φ_E est le flux du champ électrique à travers la surface. La loi corrigée s’écrit:’,
 ‘∮ B · ds = μ₀ I + μ₀ε₀ dΦ_E/dt’,
 et ne dépend plus de la surface choisie. Un champ électrique variable crée donc un champ magnétique, comme un courant.',
  'Sous forme intégrale moderne, les quatre équations de Maxwell sont :’,
