@@ -7188,6 +7188,313 @@
   ]
 },
 
+{
+  id: 'ondes-electromagnetiques',
+  title: 'Les ondes électromagnétiques : de Maxwell au spectre complet',
+  note: 'Sept chapitres sur la théorie de Maxwell, l’onde plane, la production et la détection des ondes, l’énergie, la pression de radiation, le spectre électromagnétique et la propagation dans la matière. Les valeurs numériques sont des ordres de grandeur ou des exemples calculés dans le vide ; les limites entre domaines du spectre sont conventionnelles.',
+  chapters: [
+    {
+      id: 'maxwell-courant-deplacement',
+      title: 'Maxwell, le courant de déplacement et la prédiction des ondes',
+      field: 'Électromagnétisme · XIXe siècle · Théorie de Maxwell',
+      summary: 'Comprendre pourquoi la loi d’Ampère devait être corrigée, comment le courant de déplacement complète les équations de l’électromagnétisme et comment la théorie prédit des ondes.',
+      lesson: {
+        sections: [
+          'Au milieu du XIXe siècle, l’électricité et le magnétisme sont décrits par des lois établies expérimentalement : la loi de Gauss pour le champ électrique, la loi de Gauss pour le champ magnétique (il n’existe pas de charge magnétique isolée connue), la loi de Faraday de l’induction et la loi d’Ampère. James Clerk Maxwell (1831-1879) en fait une théorie unifiée. Son mémoire « A Dynamical Theory of the Electromagnetic Field » est reçu par la Royal Society le 27 octobre 1864, lu le 8 décembre 1864 et publié en 1865 dans les Philosophical Transactions. Dans ce mémoire, le champ électromagnétique devient l’objet central de la théorie et non plus un modèle mécanique sous-jacent.',
+          'La loi d’Ampère sous sa forme initiale, ∮ B · ds = μ₀ I, pose un problème lorsqu’un courant charge un condensateur. Pour une boucle donnée, on peut choisir une surface traversée par le fil (qui contient le courant I) ou une surface passant entre les armatures (qu’aucun courant de conduction ne traverse). Les deux choix donneraient des résultats différents, ce qui est incohérent. Maxwell ajoute un terme : le courant de déplacement I_d = ε₀ dΦ_E/dt, où Φ_E est le flux du champ électrique à travers la surface. La loi corrigée s’écrit ∮ B · ds = μ₀ I + μ₀ε₀ dΦ_E/dt et ne dépend plus de la surface choisie. Un champ électrique variable crée donc un champ magnétique, comme un courant.',
+          'Sous forme intégrale moderne, les quatre équations de Maxwell sont : ∮ E · dA = Q_int/ε₀ (Gauss), ∮ B · dA = 0 (Gauss magnétique), ∮ E · dl = −dΦ_B/dt (Faraday, avec le signe de Lenz) et ∮ B · dl = μ₀ I + μ₀ε₀ dΦ_E/dt (Ampère-Maxwell). Associées à la force de Lorentz, elles résument toute l’électricité et tout le magnétisme classiques. Précision historique : la forme à quatre équations vectorielles est une mise en forme ultérieure (années 1880, notamment Heaviside) ; le mémoire de 1865 contient vingt équations en vingt variables, écrites en composantes cartésiennes.',
+          'La symétrie entre les deux effets d’induction est essentielle : un champ magnétique variable crée un champ électrique (Faraday), et un champ électrique variable crée un champ magnétique (Maxwell). Ces deux effets peuvent s’entretenir mutuellement dans l’espace sans charge ni courant : c’est la structure d’une onde. En éliminant les champs entre les équations, on obtient des équations d’onde dont la vitesse vaut c = 1/√(μ₀ε₀). Maxwell constate que cette vitesse coïncide avec la vitesse mesurée de la lumière et en conclut que la lumière est une onde électromagnétique. La confirmation expérimentale de l’existence de ces ondes viendra de Heinrich Hertz en 1886-1888 (chapitre 3).'
+        ],
+        example: {
+          statement: 'Un condensateur de capacité C = 1 nF est chargé de sorte que la tension à ses bornes croît de 10⁶ V par seconde. Quel est le courant de déplacement entre les armatures ?',
+          calculation: 'Pour un condensateur plan, le champ entre les armatures est E = V/d et le flux est Φ_E = E·A. Donc I_d = ε₀ A dE/dt = (ε₀A/d) dV/dt = C dV/dt. Ici I_d = (1×10⁻⁹ F) × (1×10⁶ V/s) = 1×10⁻³ A.',
+          answer: 'I_d = 1 mA. Ce courant de déplacement est égal au courant de conduction dans les fils : c’est ce qui rend la loi d’Ampère cohérente pour toute surface.'
+        },
+        exercise: {
+          question: 'Pourquoi la loi d’Ampère sans courant de déplacement est-elle incohérente pendant la charge d’un condensateur ?',
+          answer: 'Parce que deux surfaces s’appuyant sur la même boucle donnent des résultats différents : l’une est traversée par le courant du fil, l’autre passe entre les armatures où aucun courant de conduction ne circule. Le terme μ₀ε₀ dΦ_E/dt rétablit l’égalité.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est l’expression du courant de déplacement ?',
+            answer: 'I_d = ε₀ dΦ_E/dt, où Φ_E est le flux du champ électrique à travers la surface considérée.'
+          },
+          {
+            question: 'Quelle relation lie la vitesse des ondes électromagnétiques dans le vide aux constantes μ₀ et ε₀ ?',
+            answer: 'c = 1/√(μ₀ε₀).'
+          },
+          {
+            question: 'Que signifie la symétrie entre les lois de Faraday et d’Ampère-Maxwell ?',
+            answer: 'Un champ magnétique variable engendre un champ électrique et un champ électrique variable engendre un champ magnétique ; cette inter-dépendance permet la propagation d’une onde sans support matériel.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 16.1 Maxwell’s Equations and Electromagnetic Waves', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves' },
+          { title: 'Royal Society — Maxwell, A Dynamical Theory of the Electromagnetic Field (manuscrit PT/72/7)', url: 'https://makingscience.royalsociety.org/items/pt_72_7/paper-a-dynamical-theory-of-the-electromagnetic-field-by-j-james-clerk-maxwell' },
+          { title: 'Maxwell (1865), Phil. Trans. R. Soc. Lond. 155, 459-512 — DOI', url: 'https://doi.org/10.1098/rstl.1865.0008' },
+          { title: 'Longair (2015) — Commentary on Maxwell (1865), Phil. Trans. R. Soc. A', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4360095/' }
+        ]
+      }
+    },
+    {
+      id: 'onde-plane',
+      title: 'L’onde électromagnétique plane dans le vide',
+      field: 'Électromagnétisme · Ondes · Équations d’onde',
+      summary: 'Décrire une onde plane : transversalité, orthogonalité de E et B, relation E = cB, relation λf = c et vecteur d’onde.',
+      lesson: {
+        sections: [
+          'Dans une région sans charge ni courant, les équations de Maxwell conduisent à des équations d’onde pour E et B. Pour une propagation selon l’axe x, chaque composante vérifie ∂²E/∂x² = μ₀ε₀ ∂²E/∂t² (et de même pour B). Ces équations admettent des solutions sinusoïdales progressives, par exemple E_y(x, t) = E₀ cos(kx − ωt), avec le nombre d’onde k = 2π/λ et la pulsation ω = 2πf. La vitesse de phase est ω/k = 1/√(μ₀ε₀) = c. Dans le vide, toutes les fréquences se propagent à la même vitesse c = 299 792 458 m/s, valeur exacte par définition du mètre dans le Système international.',
+          'La structure de l’onde plane est imposée par les équations. Le champ électrique E, le champ magnétique B et la direction de propagation sont mutuellement perpendiculaires : l’onde est transversale. Si E est selon y et la propagation selon x, alors B est selon z. De plus, E et B oscillent en phase et leurs amplitudes sont liées par E = cB à chaque instant, donc E₀ = cB₀. Le produit vectoriel E × B indique le sens de propagation, ce qui sera repris au chapitre 4 avec le vecteur de Poynting.',
+          'Les grandeurs caractéristiques sont reliées entre elles : λf = c, ω = ck et T = 1/f. Le vide est un milieu non dispersif pour ces ondes : la vitesse ne dépend pas de la fréquence. Une onde plane parfaite est une idéalisation, car elle occuperait tout l’espace avec une énergie infinie. Elle reste toutefois une excellente approximation locale pour une onde émise par une source lointaine : à grande distance, le front d’onde sphérique est presque plan sur une petite région.',
+          'La polarisation décrit la direction du champ électrique. Dans une onde polarisée linéairement, E oscille selon une direction fixe ; dans une onde polarisée circulairement, l’extrémité du vecteur E décrit un cercle. Beaucoup de sources naturelles (Soleil, lampes à incandescence) émettent une lumière non polarisée, c’est-à-dire une superposition de nombreuses polarisations changeant rapidement. L’orientation de la polarisation joue un rôle concret en télécommunication : une antenne réceptrice est généralement orientée dans la direction de polarisation de l’onde pour capter au mieux le signal.'
+        ],
+        example: {
+          statement: 'Une émission radio FM a une fréquence de 100 MHz. Calculer sa longueur d’onde et son nombre d’onde. Pour une amplitude E₀ = 0,10 V/m, quelle est l’amplitude B₀ ?',
+          calculation: 'λ = c/f = 299 792 458 / 1,00×10⁸ ≈ 2,998 m. k = 2π/λ ≈ 2,096 rad/m. B₀ = E₀/c = 0,10 / 299 792 458 ≈ 3,34×10⁻¹⁰ T.',
+          answer: 'λ ≈ 3,00 m ; k ≈ 2,10 rad/m ; B₀ ≈ 3,34×10⁻¹⁰ T. Le champ magnétique d’une onde radio est extrêmement faible en valeur numérique à cause du facteur 1/c.'
+        },
+        exercise: {
+          question: 'Quelle relation lie les amplitudes E₀ et B₀ d’une onde plane dans le vide ?',
+          answer: 'E₀ = cB₀, c’est-à-dire E₀/B₀ = c ; les champs oscillent en phase.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi dit-on qu’une onde électromagnétique est transversale ?',
+            answer: 'Parce que les champs E et B sont perpendiculaires à la direction de propagation (et perpendiculaires entre eux).'
+          },
+          {
+            question: 'Quelle est la longueur d’onde dans le vide d’une onde de fréquence 6,0×10¹⁴ Hz ?',
+            answer: 'λ = c/f ≈ 299 792 458 / 6,0×10¹⁴ ≈ 5,0×10⁻⁷ m, soit environ 500 nm (domaine visible).'
+          },
+          {
+            question: 'La vitesse d’une onde électromagnétique dans le vide dépend-elle de sa fréquence ?',
+            answer: 'Non. Dans le vide, toutes les fréquences se propagent à la même vitesse c.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 16 Summary (plane waves)', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-summary' },
+          { title: 'OpenStax — University Physics Volume 2, 16.1 Maxwell’s Equations and Electromagnetic Waves', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves' },
+          { title: 'NIST — Valeur CODATA de la vitesse de la lumière dans le vide', url: 'https://physics.nist.gov/cuu/Constants/Value/c.html' },
+          { title: 'NASA Science — Introduction to the Electromagnetic Spectrum', url: 'https://science.nasa.gov/ems/01_intro/' }
+        ]
+      }
+    },
+    {
+      id: 'production-detection-hertz',
+      title: 'Production et détection des ondes : charges accélérées et expériences de Hertz',
+      field: 'Électromagnétisme · Rayonnement · Histoire de la physique',
+      summary: 'Comprendre pourquoi seules les charges accélérées rayonnent, le principe de l’antenne et l’apport expérimental de Heinrich Hertz.',
+      lesson: {
+        sections: [
+          'Une charge immobile crée un champ électrique statique ; une charge en mouvement uniforme crée en plus un champ magnétique constant ; aucune de ces situations ne rayonne d’énergie à l’infini. Une onde électromagnétique est produite lorsqu’une charge est accélérée. Un courant alternatif dans un fil, par exemple, produit une onde de même fréquence que l’oscillation du courant. Les variations des champs se propagent ensuite à la vitesse c : la perturbation produite à un instant donné n’atteint un point situé à la distance r qu’après la durée r/c.',
+          'Une antenne dipolaire est l’exemple le plus simple : un courant oscillant fait osciller des charges le long d’un conducteur, ce qui crée un dipôle électrique oscillant. Loin de l’antenne (champ lointain), l’amplitude des champs décroît en 1/r, donc l’intensité décroît en 1/r². Pour un dipôle de moment p₀ oscillant à la pulsation ω, la puissance rayonnée moyenne est proportionnelle à p₀²ω⁴ : à moment dipolaire donné, doubler la fréquence multiplie la puissance rayonnée par 16. Cela explique que les courants alternatifs basse fréquence des lignes électriques rayonnent très peu, tandis que les circuits haute fréquence rayonnent efficacement. Une antenne dipolaire demi-onde mesure environ λ/2 : elle est dimensionnée selon la longueur d’onde de travail.',
+          'Au XIXe siècle, la théorie de Maxwell n’était pas immédiatement acceptée. Heinrich Hertz (1857-1894), à Karlsruhe, réalise entre 1886 et 1888 les premières expériences produisant et détectant des ondes électromagnétiques dans l’air. Son émetteur est un circuit oscillant à étincelle ; son récepteur est une boucle ou un dipôle présentant un petit entrefer où une étincelle apparaît lorsqu’une onde arrive. La notice du jalon IEEE de Karlsruhe indique que Hertz détecte les ondes jusqu’à environ 18 mètres et obtient des ondes stationnaires de fréquence d’environ 450 MHz par interférence entre ondes incidente et réfléchie.',
+          'Hertz montre que ces ondes présentent les propriétés des ondes lumineuses : réflexion, réfraction, polarisation et interférences, et que leur vitesse est compatible avec celle de la lumière. Ces résultats confirment la prédiction de Maxwell et établissent que la lumière et les « ondes hertziennes » appartiennent à la même famille. Les historiens des sciences ont par ailleurs nuancé le récit simplifié de ces expériences : l’étude de Buchwald et al. (2021) examine en détail ce que Hertz a réellement observé sur la propagation dans l’air et le long des fils. Hertz n’envisageait pas d’applications pratiques immédiates ; l’usage du terme « ondes radio » ne s’impose qu’autour de 1910.'
+        ],
+        example: {
+          statement: 'Dans une expérience de Hertz, des ondes stationnaires de fréquence 450 MHz sont obtenues. Estimer la longueur d’onde et la longueur d’un dipôle demi-onde correspondant.',
+          calculation: 'λ = c/f = 299 792 458 / 4,50×10⁸ ≈ 0,666 m. Un dipôle demi-onde mesure environ λ/2 ≈ 0,333 m.',
+          answer: 'λ ≈ 0,67 m et λ/2 ≈ 0,33 m. Ces dimensions de laboratoire expliquent pourquoi des expériences de salle étaient possibles avec des fréquences de cet ordre.'
+        },
+        exercise: {
+          question: 'Pourquoi une charge en mouvement rectiligne uniforme ne rayonne-t-elle pas d’onde électromagnétique ?',
+          answer: 'Parce que le rayonnement est lié à l’accélération de la charge ; sans accélération, il n’y a pas d’émission d’onde se propageant à l’infini.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la fréquence de l’onde produite par un courant alternatif de fréquence f dans un fil ?',
+            answer: 'La même fréquence f que l’oscillation du courant.'
+          },
+          {
+            question: 'Comment varie la puissance rayonnée par un dipôle oscillant de moment p₀ fixé si l’on double la fréquence ?',
+            answer: 'Elle est multipliée par 2⁴ = 16, car elle est proportionnelle à ω⁴.'
+          },
+          {
+            question: 'Quelles propriétés Hertz a-t-il mises en évidence pour les ondes électriques qu’il produisait ?',
+            answer: 'Notamment la réflexion, la réfraction, la polarisation et les interférences, ainsi qu’une propagation à vitesse finie compatible avec celle de la lumière.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 16 Summary (accelerating charges, Hertz)', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-summary' },
+          { title: 'IEEE / ETHW — Milestone : First Generation and Experimental Proof of Electromagnetic Waves, 1886-1888', url: 'https://ethw.org/Milestones:First_Generation_and_Experimental_Proof_of_Electromagnetic_Waves%2C_1886-1888' },
+          { title: 'Buchwald et al. (2021) — What Heinrich Hertz discovered about electric waves in 1887–1888', url: 'https://research-information.bris.ac.uk/en/publications/what-heinrich-hertz-discovered-about-electric-waves-in-18871888/' },
+          { title: 'NASA Science — Introduction to the Electromagnetic Spectrum', url: 'https://science.nasa.gov/ems/01_intro/' }
+        ]
+      }
+    },
+    {
+      id: 'energie-poynting',
+      title: 'Énergie transportée par une onde : densité d’énergie, intensité et vecteur de Poynting',
+      field: 'Électromagnétisme · Énergie · Flux de puissance',
+      summary: 'Calculer la densité d’énergie, l’intensité et le vecteur de Poynting d’une onde plane, et relier l’intensité à la distance de la source.',
+      lesson: {
+        sections: [
+          'Un champ électrique stocke de l’énergie avec une densité u_E = ½ ε₀E², un champ magnétique avec une densité u_B = B²/(2μ₀). Dans une onde plane dans le vide, avec E = cB et c² = 1/(μ₀ε₀), ces deux contributions sont égales à chaque instant. La densité d’énergie totale est donc u = ε₀E² = B²/μ₀. Cette énergie n’est pas statique : elle se déplace avec l’onde à la vitesse c. On vérifie les unités : J/m³ = N·m/m³ = N/m², c’est-à-dire des pascals, ce qui annonce le lien avec la pression de radiation (chapitre 5). Cette énergie est celle que stockent un condensateur (champ E) et une bobine (champ B), mais répartie dans le volume de l’espace plutôt que localisée dans un composant.',
+          'Le vecteur de Poynting, S = (1/μ₀) E × B, donne la direction de propagation de l’énergie et son flux par unité de surface (en W/m²). Pour une onde plane, son module vaut S = EB/μ₀ = cε₀E², et on a S = c·u : l’énergie traverse une surface perpendiculaire à la propagation à la vitesse c. Comme E varie sinusoïdalement, S oscille au double de la fréquence ; ce qui est mesurable est sa moyenne temporelle, appelée intensité : I = S_moy = ½ cε₀E₀² = E₀B₀/(2μ₀). Le facteur ½ vient de la moyenne de cos² sur une période.',
+          'Pour une source ponctuelle isotrope de puissance P, la puissance se répartit sur des sphères de surface 4πr², donc I = P/(4πr²) : c’est la loi en inverse du carré de la distance. Doubler la distance divise l’intensité par quatre, ce qui revient à dire que l’amplitude des champs décroît en 1/r. Cette loi explique les limites de portée des communications sans fil et la faiblesse des signaux venant d’engins spatiaux lointains. Une source directive (antenne parabolique, laser) concentre la puissance dans un faisceau et dévie de la loi isotrope sur de courtes distances.',
+          'Il faut distinguer les grandeurs : puissance (en W), intensité (W/m²) et amplitude des champs (V/m et T). L’intensité est proportionnelle au carré de l’amplitude, si bien que doubler E₀ multiplie I par quatre. En pratique, on utilise aussi les valeurs efficaces : E_eff = E₀/√2 et I = cε₀E_eff². Dans les matériaux, la formule se modifie avec l’indice de réfraction ; les expressions ci-dessus supposent le vide, qui est aussi une bonne approximation pour l’air.'
+        ],
+        example: {
+          statement: 'Une onde plane de lumière a une intensité I = 1000 W/m². Calculer l’amplitude du champ électrique E₀ et celle du champ magnétique B₀. (c = 299 792 458 m/s ; ε₀ ≈ 8,854×10⁻¹² F/m)',
+          calculation: 'I = ½ cε₀E₀² donc E₀ = √(2I/(cε₀)) = √(2000 / (299 792 458 × 8,854×10⁻¹²)) ≈ √(7,53×10⁵) ≈ 868 V/m. B₀ = E₀/c ≈ 868 / 299 792 458 ≈ 2,90×10⁻⁶ T.',
+          answer: 'E₀ ≈ 8,7×10² V/m et B₀ ≈ 2,9×10⁻⁶ T. Cette intensité est du même ordre que celle du rayonnement solaire direct au niveau du sol par ciel dégagé.'
+        },
+        exercise: {
+          question: 'Une source isotrope de 100 W émet dans le vide. Quelle est l’intensité à 2 m, puis à 4 m ?',
+          answer: 'I = P/(4πr²). À 2 m : 100/(4π×4) ≈ 1,99 W/m². À 4 m : 100/(4π×16) ≈ 0,50 W/m², soit quatre fois moins.'
+        },
+        exercises: [
+          {
+            question: 'Que représente le vecteur de Poynting ?',
+            answer: 'Le flux de puissance électromagnétique par unité de surface (en W/m²) ; sa direction est celle de la propagation de l’énergie : S = (1/μ₀) E × B.'
+          },
+          {
+            question: 'Quelle est la relation entre les densités d’énergie électrique et magnétique dans une onde plane dans le vide ?',
+            answer: 'Elles sont égales : ½ ε₀E² = B²/(2μ₀).'
+          },
+          {
+            question: 'Si l’on double l’amplitude E₀ d’une onde plane, comment change son intensité ?',
+            answer: 'Elle est multipliée par quatre, car I est proportionnelle à E₀².'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 16.3 Energy Carried by Electromagnetic Waves', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves' },
+          { title: 'OpenStax — University Physics Volume 2, 16 Summary', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-summary' },
+          { title: 'NIST — Valeur CODATA de la vitesse de la lumière dans le vide', url: 'https://physics.nist.gov/cuu/Constants/Value/c.html' }
+        ]
+      }
+    },
+    {
+      id: 'quantite-mouvement-pression',
+      title: 'Quantité de mouvement et pression de radiation',
+      field: 'Électromagnétisme · Mécanique de la lumière · Astrophysique',
+      summary: 'Comprendre que la lumière transporte une quantité de mouvement, calculer la pression de radiation et situer ses effets observables.',
+      lesson: {
+        sections: [
+          'Maxwell a prédit qu’une onde électromagnétique transporte de la quantité de mouvement en plus de l’énergie. Pour une onde absorbée, la quantité de mouvement p et l’énergie U sont liées par p = U/c. Un objet qui absorbe l’onde subit donc une force dans le sens de propagation. Ce phénomène est très faible à l’échelle humaine, mais mesurable. Le mécanisme se comprend au niveau microscopique : le champ E de l’onde met en mouvement les charges du matériau, puis la composante magnétique de la force de Lorentz, q v × B, pousse ces charges dans la direction de propagation ; la somme de ces forces sur toutes les charges constitue la force de radiation macroscopique. L’idée centrale est que le champ électromagnétique est un objet physique à part entière, capable d’échanger énergie et impulsion avec la matière.',
+          'La pression de radiation moyenne exercée sous incidence normale est p_rad = I/c pour une surface parfaitement absorbante, et p_rad = 2I/c pour une surface parfaitement réfléchissante : à la réflexion, la quantité de mouvement de l’onde change de signe, ce qui double le transfert. Pour un absorbeur parfait, cette pression est égale à la densité d’énergie de l’onde (p = u). Ces relations découlent des équations de Maxwell et de la force de Lorentz agissant sur les charges du matériau.',
+          'La confirmation expérimentale précise de la pression de radiation est due à Nichols et Hull en 1903, qui ont mesuré la déviation d’un miroir suspendu dans une balance de torsion et obtenu un accord avec la valeur prédite. En astrophysique, la pression de radiation devient importante pour les poussières et les petits grains : la queue de poussières d’une comète, électriquement neutre, n’est pas sensible au vent solaire mais est repoussée par la pression de la lumière solaire, ce qui l’écarte de la trajectoire de la comète.',
+          'Autre application : la voile solaire. Un vaisseau muni d’une grande surface réfléchissante peut utiliser la pression de radiation comme propulsion sans embarquer de carburant ; l’accélération est faible mais continue. Dans les étoiles très massives et très lumineuses, la pression de radiation devient grande et contribue à l’équilibre de l’étoile. Il ne faut pas confondre cette pression avec un échauffement : il s’agit bien d’une force mécanique due au transfert de quantité de mouvement.'
+        ],
+        example: {
+          statement: 'Un faisceau d’intensité 1000 W/m² frappe normalement une surface de 1 m². Calculer la pression de radiation si la surface est parfaitement absorbante, puis parfaitement réfléchissante, et comparer à la pression atmosphérique (≈ 1,0×10⁵ Pa).',
+          calculation: 'Absorbante : p = I/c = 1000 / 299 792 458 ≈ 3,34×10⁻⁶ Pa. Réfléchissante : p = 2I/c ≈ 6,67×10⁻⁶ Pa. Rapport à 1,013×10⁵ Pa : environ 3,3×10⁻¹¹ pour l’absorbeur. La force sur 1 m² vaut donc environ 3,3 µN (absorbante).',
+          answer: 'p ≈ 3,3×10⁻⁶ Pa (absorbante) et ≈ 6,7×10⁻⁶ Pa (réfléchissante) : environ dix milliards de fois plus faible que la pression atmosphérique.'
+        },
+        exercise: {
+          question: 'Pourquoi la pression de radiation sur un miroir parfait est-elle le double de celle sur un absorbeur parfait ?',
+          answer: 'Parce que la quantité de mouvement de l’onde est inversée à la réflexion : le miroir reçoit la quantité de mouvement incidente puis celle de la lumière renvoyée, soit un transfert double.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la relation entre l’énergie U absorbée et la quantité de mouvement p transférée ?',
+            answer: 'p = U/c.'
+          },
+          {
+            question: 'Qui a mesuré précisément la pression de radiation en 1903 ?',
+            answer: 'Nichols et Hull, avec une balance de torsion.'
+          },
+          {
+            question: 'Pourquoi la queue de poussières d’une comète est-elle sensible à la lumière solaire mais pas au vent solaire ?',
+            answer: 'Parce que les poussières sont électriquement neutres et n’interagissent donc pas avec le vent solaire (particules chargées), mais elles subissent la pression de radiation de la lumière du Soleil.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 16.4 Momentum and Radiation Pressure', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-4-momentum-and-radiation-pressure' },
+          { title: 'LibreTexts — University Physics II, 16.5 Momentum and Radiation Pressure (Nichols et Hull, 1903)', url: 'https://phys.libretexts.org/Bookshelves/University_Physics/University_Physics_(OpenStax)/University_Physics_II_-_Thermodynamics_Electricity_and_Magnetism_(OpenStax)/16%3A_Electromagnetic_Waves/16.05%3A_Momentum_and_Radiation_Pressure' },
+          { title: 'NIST — Valeur CODATA de la vitesse de la lumière dans le vide', url: 'https://physics.nist.gov/cuu/Constants/Value/c.html' }
+        ]
+      }
+    },
+    {
+      id: 'spectre-electromagnetique',
+      title: 'Le spectre électromagnétique : des ondes radio aux rayons gamma',
+      field: 'Électromagnétisme · Spectre · Photons',
+      summary: 'Situer les grands domaines du spectre, relier longueur d’onde, fréquence et énergie du photon, et distinguer rayonnements ionisants et non ionisants.',
+      lesson: {
+        sections: [
+          'Le spectre électromagnétique est la classification des ondes électromagnétiques selon leur fréquence ou leur longueur d’onde. Les catégories (ondes radio, micro-ondes, infrarouge, lumière visible, ultraviolet, rayons X, rayons gamma) sont des conventions historiques liées aux sources et aux détecteurs, pas des ruptures physiques : les propriétés changent progressivement de l’une à l’autre, et les frontières varient selon les ouvrages. La relation λf = c relie longueur d’onde et fréquence dans le vide. À titre d’ordre de grandeur, une onde de 1 m de longueur d’onde a une fréquence d’environ 3×10⁸ Hz, et une onde de 10 nm environ 3×10¹⁶ Hz.',
+          'Selon OpenStax, le terme « ondes radio » désigne le rayonnement de longueur d’onde supérieure à environ 0,1 m, sans préjuger de l’usage (radio, télévision, téléphonie mobile, Wi-Fi). Les fréquences les plus basses, ELF, sont produites notamment par les courants alternatifs des lignes électriques et peuvent pénétrer l’eau de mer, d’où leur usage pour communiquer avec des sous-marins. Pour transporter l’information, on module l’onde porteuse en amplitude (AM), en fréquence (FM) ou en phase. Les micro-ondes servent aux radars, aux liaisons satellites et aux fours : un four domestique fonctionne à environ 2,45 GHz, longueur d’onde ≈ 12 cm, et chauffe les aliments en agitant les molécules d’eau polaires.',
+          'L’infrarouge est émis par les corps chauds (rayonnement thermique) et utilisé en télécommande, thermographie et télédétection. La lumière visible couvre approximativement 400 à 700 nm selon les conventions (certains ouvrages donnent 380 à 750 nm) ; c’est la bande où le Soleil émet le plus d’énergie et à laquelle l’œil est adapté. L’ultraviolet, de longueurs d’onde plus courtes que le visible, peut endommager les tissus biologiques ; l’atmosphère en absorbe une grande partie. Les rayons X (imagerie médicale, cristallographie) et les rayons gamma (désintégrations nucléaires, phénomènes astrophysiques violents) occupent les plus courtes longueurs d’onde ; la distinction X/gamma tient à l’origine du rayonnement autant qu’à la longueur d’onde, d’où un recouvrement.',
+          'L’énergie d’un photon est E = hf = hc/λ, avec la constante de Planck h = 6,626 070 15×10⁻³⁴ J·s (valeur exacte dans le SI). Commodément, hc ≈ 1240 eV·nm : E(eV) ≈ 1240/λ(nm). Plus la fréquence est élevée, plus l’énergie par photon est grande. C’est ce qui sépare les rayonnements non ionisants (radio, micro-ondes, infrarouge, visible) des rayonnements ionisants (ultraviolet de haute énergie, X, gamma), dont les photons peuvent arracher des électrons aux atomes et molécules. Notons que la dangerosité d’un rayonnement dépend aussi de son intensité : une source intense non ionisante peut échauffer les tissus.'
+        ],
+        example: {
+          statement: 'Calculer la fréquence et l’énergie du photon pour une lumière de longueur d’onde 500 nm. Comparer à l’énergie d’un photon de micro-ondes de four à 2,45 GHz.',
+          calculation: 'f = c/λ = 299 792 458 / 5,00×10⁻⁷ ≈ 6,0×10¹⁴ Hz. E = hc/λ ≈ 1240 / 500 ≈ 2,48 eV (≈ 3,97×10⁻¹⁹ J). Pour 2,45 GHz : E = hf ≈ 4,136×10⁻¹⁵ eV·s × 2,45×10⁹ Hz ≈ 1,0×10⁻⁵ eV.',
+          answer: 'Lumière à 500 nm : f ≈ 6,0×10¹⁴ Hz, E ≈ 2,48 eV. Micro-ondes : E ≈ 1,0×10⁻⁵ eV, soit environ 250 000 fois moins que le photon visible : ces photons ne peuvent pas ioniser les molécules.'
+        },
+        exercise: {
+          question: 'Pourquoi les frontières entre les domaines du spectre sont-elles conventionnelles ?',
+          answer: 'Parce que les propriétés varient continûment avec la fréquence ; les catégories sont définies par l’histoire, les sources et les techniques de détection, et diffèrent légèrement selon les ouvrages.'
+        },
+        exercises: [
+          {
+            question: 'Quelle relation lie la longueur d’onde λ et la fréquence f d’une onde électromagnétique dans le vide ?',
+            answer: 'λf = c, avec c = 299 792 458 m/s.'
+          },
+          {
+            question: 'Quelle est l’énergie en eV d’un photon de longueur d’onde 620 nm environ ?',
+            answer: 'E ≈ 1240/620 ≈ 2,0 eV.'
+          },
+          {
+            question: 'Pourquoi les ondes ELF sont-elles utilisées pour communiquer avec des sous-marins ?',
+            answer: 'Parce que ces ondes de très basse fréquence pénètrent l’eau de mer, qui absorbe fortement les ondes de fréquence plus élevée.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 16.5 The Electromagnetic Spectrum', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum' },
+          { title: 'NASA Science — Tour of the Electromagnetic Spectrum', url: 'https://science.nasa.gov/ems' },
+          { title: 'NASA Science — Introduction to the Electromagnetic Spectrum', url: 'https://science.nasa.gov/ems/01_intro/' },
+          { title: 'NIST — Valeur CODATA de la vitesse de la lumière dans le vide', url: 'https://physics.nist.gov/cuu/Constants/Value/c.html' }
+        ]
+      }
+    },
+    {
+      id: 'propagation-matiere-applications',
+      title: 'Propagation dans la matière, polarisation et applications',
+      field: 'Électromagnétisme · Optique ondulatoire · Technologies',
+      summary: 'Comprendre l’indice de réfraction, la loi de Snell, la loi de Malus, l’absorption atmosphérique et quelques applications du spectre.',
+      lesson: {
+        sections: [
+          'Dans un milieu transparent, une onde électromagnétique se propage à une vitesse v inférieure à c. On définit l’indice de réfraction n = c/v ≥ 1 (pour l’eau dans le visible, n ≈ 1,33). Cet indice dépend généralement de la fréquence : c’est la dispersion, à l’origine de la décomposition de la lumière blanche par un prisme. La fréquence d’une onde ne change pas en passant d’un milieu à un autre ; ce sont la vitesse et la longueur d’onde qui changent (λ_milieu = λ_vide/n).',
+          'À l’interface entre deux milieux d’indices n₁ et n₂, l’onde est en partie réfléchie et en partie transmise. L’angle de réflexion est égal à l’angle d’incidence, et l’angle de réfraction suit la loi de Snell-Descartes : n₁ sin θ₁ = n₂ sin θ₂. Par exemple, un rayon passant de l’air (n ≈ 1) à l’eau (n ≈ 1,33) sous 30° d’incidence est dévié à environ 22,1° de la normale. Les proportions réfléchie et transmise dépendent de l’angle et de la polarisation ; elles sont décrites par les relations de Fresnel, qui découlent des conditions aux limites des équations de Maxwell.',
+          'La polarisation peut être filtrée : un polariseur idéal ne laisse passer que la composante du champ électrique parallèle à son axe. Pour une lumière déjà polarisée linéairement, d’intensité I₀, qui traverse un polariseur dont l’axe forme un angle θ avec la polarisation, l’intensité transmise suit la loi de Malus : I = I₀ cos²θ. À 30°, I = 0,75 I₀ ; à 45°, I = 0,5 I₀ ; à 90°, I = 0. Pour une lumière naturelle non polarisée, un polariseur transmet la moitié de l’intensité. Ces propriétés sont utilisées dans les lunettes polarisantes, les écrans à cristaux liquides et la photographie.',
+          'L’atmosphère n’est pas également transparente à toutes les fréquences : elle laisse passer largement la lumière visible et une partie des ondes radio, mais absorbe la plus grande partie des rayons X, des rayons gamma et de l’ultraviolet le plus énergétique, ce qui impose d’observer ces domaines depuis l’espace. Les applications sont à l’image de la diversité du spectre : communications (radio, télévision, téléphonie, Wi-Fi), radars, chauffage par micro-ondes, imagerie infrarouge, vision et photographie, stérilisation et analyse par ultraviolet, radiographie par rayons X, radiothérapie et imagerie par rayons gamma. Le choix d’un domaine dépend de la façon dont la matière interagit avec lui : absorption, réflexion, diffusion ou transparence.'
+        ],
+        example: {
+          statement: 'Un rayon lumineux passe de l’air à l’eau (n = 1,33) avec un angle d’incidence de 30°. Calculer l’angle de réfraction et la vitesse de la lumière dans l’eau.',
+          calculation: 'sin θ₂ = (n₁/n₂) sin θ₁ = (1/1,33) × sin 30° = 0,5/1,33 ≈ 0,376 donc θ₂ ≈ 22,1°. La vitesse vaut v = c/n = 299 792 458 / 1,33 ≈ 2,25×10⁸ m/s.',
+          answer: 'θ₂ ≈ 22,1° et v ≈ 2,25×10⁸ m/s : le rayon se rapproche de la normale en entrant dans le milieu le plus réfringent.'
+        },
+        exercise: {
+          question: 'Une lumière polarisée linéairement traverse un polariseur dont l’axe fait 45° avec sa polarisation. Quelle fraction de l’intensité est transmise ?',
+          answer: 'D’après la loi de Malus, I/I₀ = cos²45° = 0,5, soit la moitié de l’intensité.'
+        },
+        exercises: [
+          {
+            question: 'Comment change la fréquence d’une onde lorsqu’elle passe de l’air à l’eau ?',
+            answer: 'Elle ne change pas ; ce sont la vitesse et la longueur d’onde qui diminuent (d’un facteur n).'
+          },
+          {
+            question: 'Que donne la loi de Malus pour une polarisation perpendiculaire à l’axe du polariseur ?',
+            answer: 'I = I₀ cos²90° = 0 : aucune intensité n’est transmise.'
+          },
+          {
+            question: 'Pourquoi observe-t-on les rayons X et gamma célestes depuis l’espace ?',
+            answer: 'Parce que l’atmosphère terrestre absorbe la majeure partie de ces rayonnements avant qu’ils n’atteignent le sol.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 16.5 The Electromagnetic Spectrum', url: 'https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum' },
+          { title: 'NASA Science — Tour of the Electromagnetic Spectrum', url: 'https://science.nasa.gov/ems' },
+          { title: 'NASA Science — Introduction to the Electromagnetic Spectrum', url: 'https://science.nasa.gov/ems/01_intro/' },
+          { title: 'NIST — Valeur CODATA de la vitesse de la lumière dans le vide', url: 'https://physics.nist.gov/cuu/Constants/Value/c.html' }
+        ]
+      }
+    }
+  ]
+},
 
-];
+
+]
 
