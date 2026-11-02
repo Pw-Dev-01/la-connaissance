@@ -2017,6 +2017,644 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'zone-desertique',
+  title: 'Les zones désertiques depuis leur formation',
+  note: 'Quatorze chapitres sur les grands déserts du monde, classés par superficie décroissante, avec deux ou trois déserts par continent (Antarctique, Afrique, Asie, Océanie, Amérique du Nord, Amérique du Sud). Les superficies et les âges de formation varient selon les sources et les définitions retenues : ce sont des estimations scientifiques, parfois débattues. L’Europe n’a pas de chapitre faute de grand désert comparable.',
+  chapters: [
+    {
+      id: 'antarctique-desert-polaire',
+      title: 'Le désert polaire antarctique : le plus vaste désert de la planète',
+      field: 'Antarctique · environ 14 à 14,2 millions de km² · désert polaire',
+      summary: 'Comprendre pourquoi un continent recouvert de glace est un désert, comment la calotte glaciaire s’est installée et pourquoi les dates et les chiffres varient selon les sources.',
+      lesson: {
+        sections: [
+          'Un désert se définit d’abord par la faiblesse des précipitations, pas par la chaleur. L’Antarctique est le plus vaste désert de la planète : la calotte glaciaire couvre près de 14 millions de km² selon le National Snow and Ice Data Center (NSIDC), et la valeur de 14,2 millions de km² est couramment citée pour l’ensemble du continent. Son intérieur élevé reçoit très peu de précipitations, de l’ordre de moins de 50 mm par an d’après les synthèses de vulgarisation scientifique, presque uniquement sous forme de neige. L’air très froid contient très peu de vapeur d’eau, et le pôle Sud se situe à environ 2 830 m d’altitude sur la glace.',
+          'Si l’Antarctique est couvert de glace, c’est parce que cette neige, très peu abondante, ne fond presque jamais : elle s’accumule et se compacte pendant des milliers d’années. La calotte atteint en moyenne environ 2 km d’épaisseur, près de 4,9 km au maximum, et contient environ 30 millions de km³ de glace d’après le NSIDC. Selon la National Science Foundation, la glace recouvre environ 97,6 % du continent. Un désert peut donc stocker beaucoup d’eau sous forme de glace tout en recevant très peu de précipitations aujourd’hui.',
+          'La mise en place de cette glace est un événement majeur de l’histoire climatique de la Terre. Les spécialistes situent l’extension de la glaciation permanente vers 34 millions d’années, lors de la transition Éocène–Oligocène, quand la concentration atmosphérique de CO₂ a diminué et que la planète s’est refroidie. Le NSIDC indique que le continent est au moins en partie couvert par une calotte depuis environ 40 millions d’années : les dates varient selon que l’on retient les premières glaces ou la calotte étendue. Les modèles et les données indiquent que la calotte de l’Antarctique de l’Est a commencé à se former environ 7 millions d’années avant celle de l’Antarctique de l’Ouest.',
+          'Les causes de cette glaciation restent discutées. La séparation de l’Antarctique de l’Amérique du Sud et de l’Australie a permis l’installation du courant circumpolaire antarctique, qui isole le continent des eaux plus chaudes. Des modélisations suggèrent toutefois que la baisse du CO₂ a probablement joué un rôle plus important que l’ouverture des passages océaniques. D’autres travaux publiés dans la revue Science relient même l’endroit où les premières grandes calottes ont pu se former à des processus géologiques remontant à plus de 160 millions d’années.'
+        ],
+        example: {
+          statement: 'La glace recouvre environ 97,6 % d’un continent de 14 millions de km². Quelle surface reste libre de glace, en ordre de grandeur ?',
+          calculation: '100 % − 97,6 % = 2,4 %. Puis 2,4 % de 14 000 000 km² = 14 000 000 × 0,024 = 336 000 km².',
+          answer: 'Environ 336 000 km² sont libres de glace, une surface du même ordre que celle du désert du Taklamakan (337 000 km²). C’est un ordre de grandeur, pas une mesure exacte.'
+        },
+        exercise: {
+          question: 'Pourquoi l’Antarctique est-il classé comme désert alors qu’il est recouvert de glace ?',
+          answer: 'Parce que la définition d’un désert repose sur la faiblesse des précipitations. La glace s’est accumulée pendant des milliers d’années à partir de très faibles chutes de neige qui ne fondent presque pas.'
+        },
+        exercises: [
+          {
+            question: 'À quelle période environ la glaciation permanente de l’Antarctique s’est-elle étendue, selon le consensus cité ?',
+            answer: 'Vers 34 millions d’années, lors de la transition Éocène–Oligocène.'
+          },
+          {
+            question: 'Quelle est l’épaisseur moyenne approximative de la calotte antarctique ?',
+            answer: 'Environ 2 km.'
+          },
+          {
+            question: 'L’ouverture de passages océaniques est-elle l’unique explication de la glaciation antarctique ?',
+            answer: 'Non. La baisse du CO₂ atmosphérique est considérée comme un facteur majeur, avec les changements tectoniques et océaniques.'
+          }
+        ],
+        sources: [
+          { title: 'NSIDC — Ice Sheets: Quick Facts', url: 'https://nsidc.org/learn/parts-cryosphere/ice-sheets/ice-sheet-quick-facts' },
+          { title: 'NSIDC — Glaciers: Quick Facts', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/glacier-quick-facts' },
+          { title: 'National Science Foundation — Ice Sheets', url: 'https://www.nsf.gov/geo/opp/antarct/science/icesheet.jsp' },
+          { title: 'Eos — Formation of the Antarctic Circumpolar Current', url: 'https://eos.org/?p=246539' },
+          { title: 'ScienceBlog — Antarctica, Earth’s largest desert', url: 'https://scienceblog.com/t-antarctica-largest-desert-low-snowfall-kilometres-thick-ice-sheet/' }
+        ]
+      }
+    },
+    {
+      id: 'sahara',
+      title: 'Le Sahara : le plus grand désert chaud du monde',
+      field: 'Afrique · environ 9,2 à 9,4 millions de km² · désert chaud',
+      summary: 'Comprendre l’âge débattu du Sahara, ses alternances entre phases arides et phases vertes, et les traces humaines laissées pendant la dernière période humide.',
+      lesson: {
+        sections: [
+          'Le Sahara couvre environ 9,2 à 9,4 millions de km² selon les sources, soit près de 10 % de l’Afrique, et s’étend notamment sur l’Algérie, le Tchad, l’Égypte, la Libye, le Mali, la Mauritanie, le Maroc, le Niger, le Soudan et la Tunisie. Il est souvent présenté comme le plus grand désert du monde, mais cela n’est exact que pour les déserts chauds : l’Antarctique et l’Arctique, déserts polaires, sont plus étendus.',
+          'L’âge du Sahara est débattu. Pendant longtemps, les données géologiques ont suggéré une apparition il y a 2 à 3 millions d’années, au moment où commencent les grandes glaciations de l’hémisphère Nord. Or des dépôts de dunes d’environ 7 millions d’années avaient été signalés dans le nord du Tchad en 2006. En 2014, Zhongshi Zhang et ses collègues ont publié dans Nature des simulations climatiques montrant que le rétrécissement de la mer de la Téthys et l’émergence de la péninsule arabique, il y a 7 à 11 millions d’années (Tortonien), ont affaibli la mousson africaine et pu déclencher l’aridification. Tous les spécialistes n’en sont pas convaincus.',
+          'Le Sahara n’a pas toujours été désertique. La Période humide africaine a duré environ de 11 000 à 5 000 ans avant le présent, avec un maximum entre 9 000 et 6 000 ans, selon deMenocal et Tierney. Elle résulte de variations de l’orbite terrestre (la précession, de période voisine de 20 000 ans) qui ont renforcé la mousson africaine : lacs, rivières et savanes se sont étendus. Cette période n’est que la plus récente de nombreuses phases humides, dont les traces remontent jusqu’au Miocène. D’autres sources placent sa fin vers 5 500 ans.',
+          'Les peintures et gravures du Tassili n’Ajjer (Algérie) conservent la mémoire de ce Sahara plus humide. Le plateau compte plus de 15 000 gravures et peintures, dont certaines auraient jusqu’à 11 000 ans, avec des animaux comme des éléphants, des hippopotames ou des girafes, et des scènes humaines. En 1933, l’explorateur László Almásy découvrit au Wadi Sura, en Égypte, des figures semblant nager, ce qui l’amena à proposer que le Sahara avait été vert. Prudence : les datations de l’art rupestre varient et la lecture des scènes reste interprétative.'
+        ],
+        example: {
+          statement: 'La Période humide africaine est datée d’environ 11 000 à 5 000 ans avant le présent. Quelle est sa durée, et quelle part représente-t-elle sur 7 millions d’années d’aridité possible ?',
+          calculation: 'Durée : 11 000 − 5 000 = 6 000 ans. Part : 6 000 ÷ 7 000 000 ≈ 0,000857, soit environ 0,086 %.',
+          answer: 'La période dure environ 6 000 ans, soit moins de 0,1 % de 7 millions d’années. Cela montre que les phases vertes sont de courtes parenthèses dans une histoire de longue aridité, selon l’hypothèse la plus ancienne.'
+        },
+        exercise: {
+          question: 'Quelles sont les deux grandes hypothèses sur l’âge du Sahara ?',
+          answer: 'Une apparition il y a 2 à 3 millions d’années, au début des glaciations de l’hémisphère Nord, et une apparition il y a environ 7 millions d’années, liée au rétrécissement de la Téthys (Zhang et al., 2014).'
+        },
+        exercises: [
+          {
+            question: 'Quel phénomène astronomique pilote l’alternance de phases humides et arides au Sahara ?',
+            answer: 'La précession de l’orbite terrestre, sur un cycle d’environ 20 000 ans, qui modifie l’intensité de la mousson africaine.'
+          },
+          {
+            question: 'Que montrent les peintures et gravures du Tassili n’Ajjer ?',
+            answer: 'Elles montrent des animaux (éléphants, hippopotames, girafes) et des scènes humaines d’un Sahara plus humide, qui n’existe plus aujourd’hui.'
+          },
+          {
+            question: 'Le Sahara est-il le plus grand désert du monde ?',
+            answer: 'Non. L’Antarctique et l’Arctique sont plus vastes ; le Sahara est le plus grand désert chaud.'
+          }
+        ],
+        sources: [
+          { title: 'Nature — Zhang et al. 2014, Aridification of the Sahara desert caused by Tethys Sea shrinkage', url: 'https://doi.org/10.1038/nature13705' },
+          { title: 'Scientific American — Sahara Desert’s Age Doubles in Climate Simulation', url: 'https://www.scientificamerican.com/article/sahara-desert-s-age-doubles-in-climate-simulation/' },
+          { title: 'Smithsonian Magazine — Sahara millions of years older than thought', url: 'https://www.smithsonianmag.com/science/sahara-millions-years-older-thought-180952735/' },
+          { title: 'Nature Education — Green Sahara: African Humid Periods Paced by Earth’s Orbital Changes', url: 'https://www.nature.com/scitable/knowledge/library/green-sahara-african-humid-periods-paced-by-82884405/' },
+          { title: 'The Conversation — The Sahara desert used to be a green savannah', url: 'https://theconversation.com/the-sahara-desert-used-to-be-a-green-savannah-new-research-explains-why-216555' },
+          { title: 'National Geographic — Algeria rock art', url: 'https://www.nationalgeographic.com/travel/article/algeria-rock-art-prehistoric-sahara-petroglyphs' },
+          { title: 'EarthDate — The Cave of Swimmers', url: 'https://www.earthdate.org/node/1126' }
+        ]
+      }
+    },
+    {
+      id: 'desert-arabie',
+      title: 'Le désert d’Arabie : sables, plateaux et lacs disparus',
+      field: 'Asie · environ 2,33 millions de km² · désert chaud',
+      summary: 'Comprendre la géographie du désert d’Arabie, son lien avec l’histoire du Sahara et les phases humides qui ont permis la présence d’Homo sapiens.',
+      lesson: {
+        sections: [
+          'Le désert d’Arabie occupe presque toute la péninsule arabique, sur environ 2,33 millions de km² (900 000 miles carrés) selon Britannica, et au moins un tiers de sa surface est couvert de sable. Il comprend le Rub’ al-Khali (« Quart vide », environ 650 000 km²), considéré comme la plus vaste étendue continue de sable du monde, le désert du Nefoud au nord (environ 57 000 km² d’après Britannica) et l’arc de sable d’Ad-Dahna, long d’environ 1 450 km, qui relie les deux.',
+          'La région est aride aujourd’hui, mais son climat a changé. Les simulations climatiques de Zhang et collègues (2014) relient l’émergence de la péninsule arabique, qui a remplacé une partie de l’ancienne mer de la Téthys il y a environ 7 à 11 millions d’années, à l’affaiblissement de la mousson nord-africaine : l’histoire de l’Arabie et celle du Sahara sont donc liées. L’âge précis de l’aridité arabique varie selon les secteurs et les méthodes ; ce chapitre n’avance donc pas de date unique.',
+          'Des phases humides, souvent appelées « Arabie verte », ont transformé l’intérieur en prairies parsemées de lacs d’eau douce. Le projet Palaeodeserts a repéré environ 10 000 anciens lacs par imagerie satellite. Près du paléolac d’Alathar, dans le Nefoud occidental, une équipe a recensé 376 empreintes fossiles dont 7 attribuées à des humains, parmi des traces de chameaux, d’éléphants et d’autres grands mammifères. Datées d’environ 120 000 ans par luminescence stimulée optiquement, elles constituent le plus ancien témoignage daté de façon sûre d’Homo sapiens en Arabie (Stewart et al., Science Advances, 2020).',
+          'L’exploration moderne est plus récente : le Rub’ al-Khali a été traversé en 1931 par Bertram Thomas puis en 1932 par St John Philby, d’après WorldAtlas, et son sous-sol contient d’importantes réserves de pétrole et de gaz. Les paysages actuels, hyperarides, cachent ainsi une histoire où l’eau a longtemps joué un rôle essentiel, comme le prouvent les sédiments de lacs et les traces fossiles.'
+        ],
+        example: {
+          statement: 'À Alathar, 376 empreintes ont été recensées, dont 7 humaines. Quelle part des empreintes est humaine ?',
+          calculation: '7 ÷ 376 ≈ 0,0186, soit environ 1,9 %. Les autres empreintes : 376 − 7 = 369.',
+          answer: 'Environ 1,9 % des empreintes sont humaines ; les 369 autres appartiennent à des animaux. Ce faible nombre n’empêche pas la découverte d’être importante.'
+        },
+        exercise: {
+          question: 'Pourquoi des empreintes fossiles dans un désert hyperaride prouvent-elles un climat passé différent ?',
+          answer: 'Parce qu’elles se sont formées sur les sédiments d’un lac d’eau douce, ce qui indique des phases humides où l’eau était présente en surface.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la superficie du désert d’Arabie selon Britannica ?',
+            answer: 'Environ 2 330 000 km² (900 000 miles carrés).'
+          },
+          {
+            question: 'Quelle région du désert d’Arabie est considérée comme la plus vaste étendue continue de sable du monde ?',
+            answer: 'Le Rub’ al-Khali, d’environ 650 000 km².'
+          },
+          {
+            question: 'Quelle méthode a permis de dater les empreintes d’Alathar ?',
+            answer: 'La luminescence stimulée optiquement (OSL), appliquée à des grains de quartz.'
+          }
+        ],
+        sources: [
+          { title: 'Britannica — Arabian Desert', url: 'https://www.britannica.com/summary/Arabian-Desert' },
+          { title: 'Britannica — Rubʿ al-Khali', url: 'https://www.britannica.com/place/Rub-al-Khali' },
+          { title: 'Britannica — Saudi Arabia', url: 'https://www.britannica.com/place/Saudi-Arabia' },
+          { title: 'Stewart et al. 2020, Science Advances — Human footprints provide snapshot of last interglacial ecology in the Arabian interior', url: 'https://doi.org/10.1126/sciadv.aba8940' },
+          { title: 'Sci.News — 120,000-Year-Old Human Footprints Found in Saudi Arabia', url: 'https://www.sci.news/archaeology/alathar-footprints-08869.html' },
+          { title: 'Loughborough University — First human steps out of Saudi Arabia', url: 'https://www.lboro.ac.uk/internal/news/2020/september/first-human-steps-out-of-saudi-arabia/' },
+          { title: 'WorldAtlas — Rub al Khali, Empty Quarter of the Arabian Desert', url: 'https://www.worldatlas.com/articles/rub-al-khali-empty-quarter-of-the-arabian-desert.html' }
+        ]
+      }
+    },
+    {
+      id: 'gobi',
+      title: 'Le désert de Gobi : un désert froid d’Asie centrale et ses fossiles',
+      field: 'Asie · environ 1,3 million de km² · désert froid',
+      summary: 'Comprendre pourquoi le Gobi est un désert d’ombre pluviométrique et comment les expéditions des années 1920 y ont découvert les premiers œufs de dinosaures reconnus.',
+      lesson: {
+        sections: [
+          'Le Gobi s’étend sur le sud de la Mongolie et le nord de la Chine, sur environ 1,3 million de km² (plus d’un demi-million de miles carrés) d’après plusieurs synthèses. Contrairement à l’image d’un désert de dunes, il est surtout constitué de terrains rocheux et fermes, avec relativement peu de dunes. La population y est très faible, moins de trois personnes par mile carré selon Wonderopolis, principalement des éleveurs nomades.',
+          'Le Gobi est un désert froid d’ombre pluviométrique : la chaîne himalayenne, la plus haute du monde, empêche l’essentiel de l’humidité venue de l’océan Indien de franchir le plateau tibétain et d’atteindre la région (Earth Archives). Les précipitations moyennes vont d’environ 50 mm par an dans l’ouest à environ 200 mm dans le nord-est (2 à 8 pouces selon Wonderopolis), ce qui reste très faible.',
+          'Le Gobi est aussi un haut lieu de la paléontologie. À la fin du Crétacé, l’environnement ressemblait peut-être à celui d’aujourd’hui : vallées de dunes et falaises arrosées par de petits lacs ou cours d’eau saisonniers (Scientific American). Les expéditions centrasiatiques du Muséum américain d’histoire naturelle (AMNH), dirigées par Roy Chapman Andrews entre 1922 et 1930, cherchaient d’abord des fossiles d’ancêtres humains dans l’hypothèse d’une origine asiatique de l’humanité. Elles ont surtout révélé des dinosaures : en 1923, aux Flaming Cliffs (Bayanzag), des œufs de dinosaures furent reconnus pour la première fois. Andrews les attribua d’abord à Protoceratops.',
+          'La suite de l’histoire corrige ces premières interprétations. Un Oviraptor (« voleur d’œufs ») fut découvert au-dessus d’un nid, mais les œufs ont été ensuite rattachés à ce dinosaure, non à Protoceratops. Velociraptor fut découvert en 1923 (crâne complet et griffe, trouvés par Peter Kaisen). Après le début des années 1930, le Gobi resta inaccessible aux scientifiques occidentaux pendant plus de 60 ans, et les chercheurs du bloc soviétique poursuivirent le travail. L’AMNH est revenu ensuite avec des équipes dirigées notamment par Michael Novacek et Mark Norell.'
+        ],
+        example: {
+          statement: 'Le Gobi couvre environ 1,3 million de km² et le Sahara environ 9,2 millions de km². Combien de fois le Sahara est-il plus grand ?',
+          calculation: '9,2 ÷ 1,3 ≈ 7,08.',
+          answer: 'Le Sahara est environ 7 fois plus grand que le Gobi, en ordre de grandeur.'
+        },
+        exercise: {
+          question: 'Pourquoi dit-on que le Gobi est un désert d’ombre pluviométrique ?',
+          answer: 'Parce que l’Himalaya et le plateau tibétain bloquent l’essentiel de l’humidité venue de l’océan Indien, ce qui prive la région de précipitations.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année les premiers œufs de dinosaures reconnus ont-ils été découverts au Gobi ?',
+            answer: 'En 1923, aux Flaming Cliffs, lors des expéditions dirigées par Roy Chapman Andrews.'
+          },
+          {
+            question: 'À quel dinosaure Andrews a-t-il d’abord attribué ces œufs ?',
+            answer: 'À Protoceratops. Ils ont été rattachés ensuite à Oviraptor.'
+          },
+          {
+            question: 'Quel était l’objectif initial des expéditions centrasiatiques ?',
+            answer: 'Chercher des fossiles d’ancêtres humains, dans l’hypothèse d’une origine asiatique de l’humanité.'
+          }
+        ],
+        sources: [
+          { title: 'AMNH — Going Gobi: Roy Chapman Andrews', url: 'https://www.amnh.org/explore/ology/paleontology/going-gobi2/going-gobi-roy-chapman-andrews' },
+          { title: 'AMNH — Fossil Hunting in the Gobi', url: 'https://www.amnh.org/explore/videos/shelf-life/fossil-hunting-gobi-360' },
+          { title: 'Scientific American — Dinosaur Eggs Found in Gobi Desert', url: 'https://www.scientificamerican.com/article/dinosaur-eggs-found-in-gobi-desert/' },
+          { title: 'Earth Archives — Dinosaurs of the Gobi Desert', url: 'https://eartharchives.org/articles/dinosaurs-of-the-gobi-desert' },
+          { title: 'EBSCO Research Starters — Andrews Expedition Discovers the First Fossilized Dinosaur Eggs', url: 'https://www.ebsco.com/research-starters/anthropology/andrews-expedition-discovers-first-fossilized-dinosaur-eggs' },
+          { title: 'Wonderopolis — Where Is the Gobi Desert?', url: 'https://wonderopolis.org/wonder/where-is-the-gobi-desert' }
+        ]
+      }
+    },
+    {
+      id: 'kalahari',
+      title: 'Le Kalahari : sables, bassins et anciens lacs d’Afrique australe',
+      field: 'Afrique · environ 900 000 à 930 000 km² · désert et semi-désert',
+      summary: 'Comprendre pourquoi le Kalahari est un vaste bassin sableux plus qu’un désert strict, et comment les anciens lacs de Makgadikgadi éclairent son histoire climatique.',
+      lesson: {
+        sections: [
+          'Le Kalahari couvre environ 900 000 à 930 000 km² selon les sources (Britannica : 930 000 km²), surtout au Botswana, mais aussi en Namibie et en Afrique du Sud. Le bassin du Kalahari, plus large, dépasse 2,5 millions de km². Beaucoup de sources notent qu’il s’agit en grande partie d’une savane sableuse aride à semi-aride plutôt que d’un désert strict : la pluie s’infiltre aussitôt dans les sables profonds, ce qui crée une sécheresse du sol malgré des précipitations non nulles.',
+          'Géologiquement, le Kalahari est un vaste bassin sédimentaire. Le Kalahari Group, d’âge cénozoïque, forme une succession d’environ 300 m de sables éoliens, de dépôts lacustres et fluviaux et de croûtes d’origine pédogénique (Franchi et al., 2022). Les « sables du Kalahari », rouges et déposés par le vent, en sont la lithologie la plus connue. Des forages scientifiques réalisés dans le delta de l’Okavango et dans le paléolac Makgadikgadi (projet OKAMAK) ont traversé ces dépôts jusqu’aux grès du Karoo, plus anciens.',
+          'L’eau a aussi façonné le Kalahari. L’Okavango descend des hauts plateaux angolais et se disperse dans les sables du nord du Botswana en formant un réseau d’environ 15 000 km² de chenaux, de lagunes et d’îles (Botswana Tourism). Au cœur du bassin, les dépressions du lac Ngami, de Mababe et de Makgadikgadi dessinent l’empreinte d’un ancien système de lacs : le paléolac Makgadikgadi, dont l’extension a été estimée à environ 90 000 km² dans un résumé de recherche de 2018, et que l’Okavango et le Zambèze ont alimenté à certaines périodes.',
+          'Ces anciens lacs intéressent l’archéologie. Des études d’ADN ont proposé le bassin de Makgadikgadi comme « patrie ancestrale » des humains modernes avant une dispersion vers 130 000 ans, une hypothèse controversée. De nouvelles prospections ont documenté des centaines de sites de l’Âge de pierre moyen sur l’ancien fond du lac, dont certains datés entre 81 000 et 68 000 ans par luminescence (Thomas et al., 2022). La question reste ouverte et montre à quel point les climats du Kalahari ont varié.'
+        ],
+        example: {
+          statement: 'Le Kalahari couvre environ 930 000 km² et son bassin dépasse 2 500 000 km². Quelle part du bassin le désert représente-t-il ?',
+          calculation: '930 000 ÷ 2 500 000 = 0,372, soit 37,2 %.',
+          answer: 'Le désert représente environ 37 % de la surface du bassin : le bassin du Kalahari est donc nettement plus vaste que le désert lui-même.'
+        },
+        exercise: {
+          question: 'Pourquoi le Kalahari est-il souvent décrit comme un désert qui n’en est pas strictement un ?',
+          answer: 'Parce qu’une grande partie est une savane sableuse aride à semi-aride, avec une végétation et des précipitations qui s’infiltrent rapidement dans les sables.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le nom de l’ensemble sédimentaire cénozoïque qui remplit le bassin du Kalahari ?',
+            answer: 'Le Kalahari Group, qui comprend notamment les sables du Kalahari.'
+          },
+          {
+            question: 'Dans quel pays se trouve le delta de l’Okavango ?',
+            answer: 'Au Botswana.'
+          },
+          {
+            question: 'Quels sous-bassins forment l’empreinte du paléolac Makgadikgadi ?',
+            answer: 'Le lac Ngami, la dépression de Mababe et les pans de Makgadikgadi.'
+          }
+        ],
+        sources: [
+          { title: 'Britannica — Kalahari Desert', url: 'https://www.britannica.com/place/Kalahari' },
+          { title: 'Wikipedia — Kalahari Desert', url: 'https://en.wikipedia.org/wiki/Kalahari_Desert' },
+          { title: 'Franchi et al. 2022, Frontiers in Ecology and Evolution — Makgadikgadi Basin palaeoenvironment', url: 'https://doi.org/10.3389/fevo.2022.818417' },
+          { title: 'EGU 2023 — When the desert was a lake: tectonics, climate, river piracy and hominids in the Kalahari', url: 'https://meetingorganizer.copernicus.org/EGU23/EGU23-1586.html' },
+          { title: 'EGU 2018 — Landscape archaeology of the Kalahari', url: 'https://meetingorganizer.copernicus.org/EGU2018/EGU2018-8909.pdf?pdf' },
+          { title: 'ICG 2022 — Buried by lake sediments, revealed by deflation: the MSA of Makgadikgadi', url: 'https://meetingorganizer.copernicus.org/ICG2022/ICG2022-730.html' },
+          { title: 'Botswana Tourism — Location', url: 'https://botswanatourism.co.bw/location' }
+        ]
+      }
+    },
+    {
+      id: 'patagonie',
+      title: 'Le désert de Patagonie : une steppe froide sous le vent des Andes',
+      field: 'Amérique du Sud · environ 570 000 à 673 000 km² · désert froid',
+      summary: 'Comprendre comment les Andes et un courant océanique froid créent un désert froid et venteux, et quelles traces humaines anciennes il conserve.',
+      lesson: {
+        sections: [
+          'Le désert de Patagonie, aussi appelé steppe patagonienne, se trouve surtout en Argentine, entre les Andes à l’ouest et l’océan Atlantique à l’est, avec le río Colorado au nord. On le présente comme le plus vaste désert d’Argentine et d’Amérique du Sud. Sa superficie est donnée comme environ 673 000 km² dans de nombreuses sources, mais Wikipedia indique aujourd’hui environ 572 883 km² pour la délimitation par écorégion : les chiffres dépendent des limites retenues.',
+          'L’aridité s’explique d’abord par l’effet d’ombre pluviométrique des Andes, qui freinent l’air humide venu du Pacifique ; le courant froid des Malouines, le long de la côte atlantique, y contribue aussi. Le vent est un trait majeur du climat et fait de la Patagonie l’une des plus grandes sources de poussières au-dessus de l’Atlantique Sud. Des roches volcaniques recouvrent plus de 120 000 km² du désert. Les précipitations dépassent rarement 200 à 300 mm par an à l’est des Andes selon une synthèse géographique.',
+          'La région est habitée depuis très longtemps : des occupations humaines remontent à au moins 13 000 ans selon plusieurs synthèses. Les Tehuelche (ou Aónikenk), chasseurs-cueilleurs nomades, chassaient surtout le guanaco. La Cueva de las Manos (Río Pinturas), inscrite à l’UNESCO en 1999, renferme un ensemble exceptionnel d’art rupestre où dominent des mains au pochoir. L’UNESCO les a présentées comme exécutées entre 13 000 et 9 500 ans avant le présent, alors que sa déclaration actuelle évoque 9 300 à 1 300 ans : les datations dépendent des textes et des campagnes de fouille.',
+          'Au XIXe siècle, la Patagonie a connu des campagnes militaires menées contre les peuples autochtones et appelées « Conquête du désert » (années 1870). Le nom même de Patagonie fait l’objet de légendes : selon une explication souvent rapportée, Magellan aurait nommé les Tehuelche d’après Patagon, un personnage monstrueux d’un roman de chevalerie espagnol du XVIe siècle. Il faut lire ces récits comme des traditions, non comme des faits établis.'
+        ],
+        example: {
+          statement: 'Deux sources donnent 673 000 km² et 572 883 km² pour le désert de Patagonie. Quelle est la différence et quelle part de 673 000 km² représente-t-elle ?',
+          calculation: '673 000 − 572 883 = 100 117 km². Puis 100 117 ÷ 673 000 ≈ 0,149, soit environ 14,9 %.',
+          answer: 'La différence est d’environ 100 000 km², soit près de 15 %. Les superficies de déserts dépendent donc beaucoup de la définition choisie.'
+        },
+        exercise: {
+          question: 'Quels deux facteurs contribuent à l’aridité de la Patagonie ?',
+          answer: 'L’effet d’ombre pluviométrique des Andes, qui bloque l’humidité du Pacifique, et le courant froid des Malouines sur la côte atlantique.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année la Cueva de las Manos a-t-elle été inscrite sur la liste du patrimoine mondial de l’UNESCO ?',
+            answer: 'En 1999.'
+          },
+          {
+            question: 'Comment appelle-t-on les chasseurs-cueilleurs nomades qui vivaient en Patagonie et chassaient le guanaco ?',
+            answer: 'Les Tehuelche, aussi appelés Aónikenk.'
+          },
+          {
+            question: 'Pourquoi plusieurs superficies sont-elles citées pour le désert de Patagonie ?',
+            answer: 'Parce que les limites utilisées (écorégion, définition climatique, extension géographique) diffèrent selon les sources.'
+          }
+        ],
+        sources: [
+          { title: 'Wikipedia — Patagonian Desert', url: 'https://en.wikipedia.org/wiki/Patagonian_Desert' },
+          { title: 'WorldAtlas — Where Does the Patagonian Desert Lie?', url: 'https://www.worldatlas.com/articles/where-does-the-patagonian-desert-lie.html' },
+          { title: 'UNESCO — Cueva de las Manos, Río Pinturas', url: 'https://whc.unesco.org/en/list/936' },
+          { title: 'UNESCO — Décision 23 COM VIII.C.1, Cueva de las Manos', url: 'https://whc.unesco.org/en/decisions/2561' },
+          { title: 'LAC Geo — Argentine Patagonia: Land of Endless Horizons', url: 'https://lacgeo.com/argentine-patagonia' }
+        ]
+      }
+    },
+    {
+      id: 'grand-bassin',
+      title: 'Le Grand Bassin : le plus vaste désert des États-Unis',
+      field: 'Amérique du Nord · environ 492 000 km² · désert froid',
+      summary: 'Comprendre le rôle de l’ombre pluviométrique de la Sierra Nevada, des bassins fermés et de l’ancien lac Bonneville dans l’histoire du Grand Bassin.',
+      lesson: {
+        sections: [
+          'Le Grand Bassin est le plus vaste désert des États-Unis, et le National Park Service le présente comme le plus grand désert d’Amérique du Nord. Il couvre environ 492 000 km², principalement au Nevada, avec des parties de l’Utah, de l’Oregon, de l’Idaho et de la Californie, entre la Sierra Nevada à l’ouest et les Rocheuses et la chaîne Wasatch à l’est. Deux notions se recoupent sans se confondre : le désert écologique, défini par la végétation (armoise, genévrier), et le Grand Bassin hydrographique, zone de drainage interne dont les eaux n’atteignent jamais l’océan.',
+          'C’est un désert froid : la Sierra Nevada piège l’humidité des tempêtes du Pacifique (effet d’ombre pluviométrique), et l’essentiel des précipitations arrive sous forme de neige, souvent lors de la fonte saisonnière. Son altitude, souvent de 4 000 à 6 500 pieds (environ 1 200 à 2 000 m), maintient des hivers froids. Comme les eaux s’écoulent vers des cuvettes fermées, elles ne rejoignent pas la mer, ce qui favorise la formation de lacs terminaux et de croûtes salines.',
+          'Il y a environ 15 000 ans, le climat était plus frais et plus humide : des glaciers occupaient des sommets comme ceux du Snake Range et de grands lacs remplissaient les vallées. Le plus vaste, le lac Bonneville, couvrait l’essentiel de l’ouest de l’Utah et s’étendait jusqu’en Idaho et au Nevada ; il a laissé le Grand Lac Salé, les Bonneville Salt Flats, le lac Utah et le lac Sevier. Le réchauffement a commencé il y a environ 10 000 ans, et des peuples vivaient déjà le long du Bonneville à cette époque.',
+          'Les hauteurs abritent les pins bristlecone, considérés par le National Park Service comme les plus vieux arbres vivants de la planète ; des individus de plus de 4 000 ans ont été enregistrés. Un arbre nommé Prometheus, abattu avant la création du parc afin de mesurer ses cernes, a été estimé à 4 950 ans. Le parc national du Great Basin a été créé le 27 octobre 1986, au Nevada, et protège aussi le glacier du Wheeler Peak.'
+        ],
+        example: {
+          statement: 'Le Grand Bassin couvre environ 492 000 km² et le Grand Désert de Victoria environ 348 750 km². Quel est le rapport entre les deux superficies ?',
+          calculation: '492 000 ÷ 348 750 ≈ 1,41.',
+          answer: 'Le Grand Bassin est environ 1,4 fois plus vaste que le Grand Désert de Victoria.'
+        },
+        exercise: {
+          question: 'Pourquoi le Grand Bassin est-il un désert froid ?',
+          answer: 'Parce que la Sierra Nevada bloque l’humidité du Pacifique et que l’altitude garde l’air froid ; l’essentiel des précipitations tombe sous forme de neige.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie un bassin hydrographique fermé, ou à drainage interne ?',
+            answer: 'Les eaux s’écoulent vers des cuvettes intérieures et n’atteignent jamais l’océan.'
+          },
+          {
+            question: 'Quels sont deux vestiges actuels de l’ancien lac Bonneville ?',
+            answer: 'Le Grand Lac Salé et les Bonneville Salt Flats (aussi le lac Utah et le lac Sevier).'
+          },
+          {
+            question: 'Quel arbre du Grand Bassin est considéré comme le plus vieux organisme vivant non clonal ?',
+            answer: 'Le pin bristlecone du Grand Bassin (Pinus longaeva).'
+          }
+        ],
+        sources: [
+          { title: 'National Park Service — Great Basin National Park Foundation Document', url: 'https://www.npshistory.com/publications/foundation-documents/grba-fd-overview.pdf' },
+          { title: 'NPS History — Great Basin National Park', url: 'https://npshistory.com/publications/grba/index.htm' },
+          { title: 'EBSCO Research Starters — Great Basin Desert', url: 'https://ebsco.com/research-starters/environmental-sciences/great-basin-desert' },
+          { title: 'New World Encyclopedia — Great Basin National Park', url: 'https://www.newworldencyclopedia.org/entry/Great_Basin_National_Park' },
+          { title: 'WorldAtlas — The Major Deserts of the United States', url: 'https://www.worldatlas.com/articles/the-major-deserts-of-the-united-states.html' }
+        ]
+      }
+    },
+    {
+      id: 'grand-desert-victoria',
+      title: 'Le Grand Désert de Victoria : le plus vaste désert d’Australie',
+      field: 'Océanie · environ 348 750 km² · désert chaud de dunes',
+      summary: 'Comprendre comment l’Australie est devenue de plus en plus aride, et comment ce grand désert est lié aux peuples aborigènes et à l’exploration européenne.',
+      lesson: {
+        sections: [
+          'Le Grand Désert de Victoria est le plus vaste désert d’Australie, avec environ 348 750 km² selon Wikipedia, WorldAtlas et Time Out, soit environ 4,5 % de la superficie du pays. Il s’étend de l’est de l’Australie-Occidentale, depuis la région des Eastern Goldfields, jusqu’aux Gawler Ranges en Australie-Méridionale, sur environ 700 km de largeur. Les superficies varient selon les sources : certaines indiquent des valeurs plus élevées, notamment plus de 420 000 km².',
+          'Il a reçu son nom de l’explorateur Ernest Giles, qui le traversa en 1875 et le nomma d’après la reine Victoria ; Britannica précise que la traversée eut lieu d’est en ouest, et d’autres sources la situent entre mai et novembre 1875, à dos de chameau. Le nom n’a aucun rapport avec l’État de Victoria. Giles est présenté comme le premier Européen à avoir traversé le désert, mais les peuples aborigènes y vivaient depuis des dizaines de milliers d’années.',
+          'L’aridité australienne s’est installée progressivement. Selon la synthèse « Australia: The Land Where Time Began », le passage à un climat plus sec commence vers 15 millions d’années, au Miocène moyen, quand la plaque australienne dérive vers le nord et atteint les latitudes moyennes. Des datations par isotopes cosmogéniques (Fujioka et collègues) situent la formation des déserts caillouteux entre 4 et 2 millions d’années et celle d’un grand champ de dunes, le Simpson, vers 1 million d’années, lorsque les cycles glaciaires ont changé d’amplitude. Ces résultats portent surtout sur le Simpson et le bassin du lac Eyre : ils servent de cadre régional et ne datent pas directement chaque désert.',
+          'Plusieurs peuples aborigènes, dont les Anangu Pitjantjatjara Yankunytjatjara, les Mirning et les Spinifex (Pila Nguru), vivent dans la région. Dans les années 1950, des Tjuntjuntjara de la région de Maralinga furent déplacés pendant que le gouvernement britannique y menait des essais d’armes atomiques. Aujourd’hui, des habitats sont protégés dans la réserve naturelle du Grand Désert de Victoria (Australie-Occidentale) et dans la zone de gouvernement local aborigène d’Anangu Pitjantjatjara Yankunytjatjara (Australie-Méridionale).'
+        ],
+        example: {
+          statement: 'Le Grand Désert de Victoria couvre environ 4,5 % de l’Australie et 348 750 km². Quelle est la superficie approximative de l’Australie ?',
+          calculation: '348 750 ÷ 0,045 ≈ 7 750 000 km².',
+          answer: 'L’Australie couvre environ 7,75 millions de km² selon ce calcul : c’est un ordre de grandeur cohérent avec les valeurs usuelles, car le pourcentage est lui-même arrondi.'
+        },
+        exercise: {
+          question: 'Qui a nommé le Grand Désert de Victoria, et en quelle année a-t-il traversé la région ?',
+          answer: 'L’explorateur Ernest Giles, qui l’a nommé d’après la reine Victoria lors de sa traversée de 1875.'
+        },
+        exercises: [
+          {
+            question: 'À partir de quelle période l’Australie commence-t-elle à devenir plus sèche, selon la synthèse citée ?',
+            answer: 'Vers 15 millions d’années, au Miocène moyen, quand la plaque australienne dérive vers les latitudes moyennes.'
+          },
+          {
+            question: 'Pourquoi les superficies citées pour ce désert diffèrent-elles ?',
+            answer: 'Parce que les définitions et les limites utilisées par les sources ne sont pas les mêmes.'
+          },
+          {
+            question: 'Les datations des dunes du Simpson datent-elles directement le Grand Désert de Victoria ?',
+            answer: 'Non. Elles fournissent un cadre régional pour l’aridité australienne, mais ne datent pas directement chaque désert.'
+          }
+        ],
+        sources: [
+          { title: 'Wikipedia — Great Victoria Desert', url: 'https://en.wikipedia.org/wiki/Great_Victoria_Desert' },
+          { title: 'Britannica — Great Victoria Desert', url: 'https://www.britannica.com/print/article/243853' },
+          { title: 'WorldAtlas — The Largest Deserts in Australia', url: 'https://worldatlas.com/deserts/the-largest-deserts-in-australia.html' },
+          { title: 'Time Out — Australia is home to one of the largest deserts on Earth', url: 'https://www.timeout.com/australia/news/australia-is-home-to-one-of-the-largest-deserts-on-earth-and-its-bigger-than-the-entire-united-kingdom-080825' },
+          { title: 'Fujioka et al. 2009, Geology — Australian desert dune fields initiated with Pliocene–Pleistocene global climatic shift', url: 'https://researchportalplus.anu.edu.au/en/publications/australian-desert-dune-fields-initiated-with-pliocene-pleistocene/' },
+          { title: 'Fujioka et Chappell 2010 — History of Australian aridity', url: 'https://researchportalplus.anu.edu.au/en/publications/history-of-australian-aridity-chronology-in-the-evolution-of-arid/' },
+          { title: 'Australia: The Land Where Time Began — Australia’s Deserts, Ages and Origins', url: 'https://www.austhrutime.com/australian_deserts_ages_origins.htm' }
+        ]
+      }
+    },
+    {
+      id: 'taklamakan',
+      title: 'Le Taklamakan : un désert de sable au cœur du bassin du Tarim',
+      field: 'Asie · environ 337 000 km² · désert de sable (Chine)',
+      summary: 'Comprendre pourquoi l’âge du Taklamakan fait l’objet de plusieurs estimations très différentes, et comment les oasis de la route de la soie en bordure du désert ont façonné son histoire humaine.',
+      lesson: {
+        sections: [
+          'Le Taklamakan se situe dans le bassin du Tarim, dans le Xinjiang, en Chine. Il couvre environ 337 000 km², ce qui en fait le plus grand désert de Chine et l’un des plus grands déserts de sable mobile du monde. Son cœur est un erg de dunes, entouré d’un désert de graviers et d’un chapelet d’oasis. Les précipitations ne dépassent pas environ 20 mm par an en moyenne dans la partie centrale, et environ 50 mm sur les bordures (Encyclopædia Iranica).',
+          'L’âge du Taklamakan est l’un des problèmes les plus débattus de la géologie d’Asie centrale. Longtemps, l’opinion dominante, fondée sur la magnétostratigraphie, le datait de 3,4 à 7 millions d’années ; une étude publiée dans Science avait estimé au moins 5,3 millions d’années. En 2015, Zheng et collègues, en datant radiométriquement un tuf volcanique, ont proposé une naissance de la désertification à la fin de l’Oligocène et au début du Miocène, entre 26,7 et 22,6 millions d’années. À l’inverse, une étude chinoise relayée en 2024 estime, d’après une carotte de 200 m, que le paysage actuel a pris forme il y a environ 300 000 ans et que la formation initiale du désert remonte à environ 1,8 million d’années.',
+          'Ces écarts viennent en partie de ce que l’on appelle « désert » : l’aridité régionale, l’apparition des dunes et le paysage actuel ne datent pas forcément de la même époque. Une synthèse de 2023 résume la séquence ainsi : la partie occidentale du bassin du Tarim fut une frange de la mer Paratéthys ; après le retrait de la mer, la région devient un système fluvial, puis un système de cônes alluviaux au pied des montagnes sous l’effet du soulèvement du nord du plateau tibétain. Elle conclut que le Taklamakan, sous une forme proche de l’actuelle, existait il y a au moins 25 millions d’années. Le désert reste donc un exemple de datation non consensuelle.',
+          'La route de la soie contourne le désert par ses bords nord et sud : des oasis comme Kashgar, Khotan, Niya, Loulan ou Dunhuang ont prospéré entre le IIIe siècle av. J.-C. et le XVIe siècle (Encyclopædia Iranica). Le cimetière de Xiaohe, vieux d’environ 4 000 ans, a livré des momies naturellement conservées par la sécheresse ; des études génétiques récentes, rapportées par l’encyclopédie danoise Lex.dk, indiquent que les plus anciennes momies descendent d’une population locale. Le désert est aujourd’hui traversé par la route du désert du Tarim, entre Hotan et Luntai.'
+        ],
+        example: {
+          statement: 'Zheng et collègues situent la naissance du désert entre 26,7 et 22,6 millions d’années. Quelle est l’incertitude, et quel écart la sépare de l’estimation de 1,8 million d’années ?',
+          calculation: 'Incertitude : 26,7 − 22,6 = 4,1 millions d’années. Écart minimal avec 1,8 million : 22,6 − 1,8 = 20,8 millions d’années.',
+          answer: 'L’intervalle est de 4,1 millions d’années, et les deux hypothèses sont distantes d’au moins 20,8 millions d’années, ce qui montre l’ampleur du débat.'
+        },
+        exercise: {
+          question: 'Pourquoi les estimations d’âge du Taklamakan diffèrent-elles autant ?',
+          answer: 'Parce que les chercheurs ne datent pas les mêmes phénomènes : l’aridité régionale, l’apparition des dunes ou le paysage actuel, avec des méthodes différentes (magnétostratigraphie, datation radiométrique, carotte sédimentaire).'
+        },
+        exercises: [
+          {
+            question: 'Quelle superficie est donnée pour le Taklamakan ?',
+            answer: 'Environ 337 000 km².'
+          },
+          {
+            question: 'Quel événement géologique est associé à l’aridification du bassin du Tarim dans les synthèses citées ?',
+            answer: 'Le soulèvement du nord du plateau tibétain et des chaînes voisines, qui ont réduit l’arrivée d’humidité.'
+          },
+          {
+            question: 'Que révèle le cimetière de Xiaohe ?',
+            answer: 'Un cimetière d’environ 4 000 ans avec des momies conservées par la sécheresse, témoignant d’une occupation ancienne du bassin du Tarim.'
+          }
+        ],
+        sources: [
+          { title: 'Zheng et al. 2015, PNAS — Late Oligocene–early Miocene birth of the Taklimakan Desert', url: 'https://doi.org/10.1073/pnas.1424487112' },
+          { title: 'Zheng et al. 2023, STEM Education — Birth of the Taklamakan Desert: When and How?', url: 'https://doi.org/10.3934/steme.2023005' },
+          { title: 'China Daily — Study reveals more about Taklimakan Desert (2024)', url: 'https://global.chinadaily.com.cn/a/202411/02/WS67255e7ba310f1265a1cafb5.html' },
+          { title: 'Scientific American — Dating a Desert', url: 'https://www.scientificamerican.com/article/dating-a-desert' },
+          { title: 'Encyclopædia Iranica — Taklamakan', url: 'https://www.iranicaonline.org/?p=3834' },
+          { title: 'Lex.dk (encyclopédie danoise) — Taklimakan', url: 'https://lex.dk/Taklimakan' },
+          { title: 'Wikipedia — Taklamakan Desert', url: 'https://en.wikipedia.org/wiki/Taklamakan_Desert' }
+        ]
+      }
+    },
+    {
+      id: 'grand-desert-sableux',
+      title: 'Le Grand Désert de sable : le cœur du Pays martu',
+      field: 'Océanie · environ 267 000 km² · désert chaud',
+      summary: 'Comprendre la géographie du Grand Désert de sable, l’histoire de la route de bétail Canning Stock Route et le lien durable des Martu avec ce territoire.',
+      lesson: {
+        sections: [
+          'Le Grand Désert de sable se trouve dans le nord de l’Australie-Occidentale et est le deuxième plus vaste désert d’Australie après le Grand Désert de Victoria, d’après Britannica. WorldAtlas donne environ 267 250 km² ; d’autres sources fournissent des valeurs un peu différentes selon les limites retenues. Il est traversé par la Canning Stock Route, longue d’environ 1 600 km, qui relie Wiluna à Halls Creek en passant par le lac Disappointment. Les Percival Lakes y forment une série de lacs salés éphémères, sur environ 350 km, au sud du désert.',
+          'Comme pour les autres déserts australiens, l’aridité s’inscrit dans une longue histoire de dessèchement du continent, entre le Miocène et le Pléistocène, que les chapitres précédents décrivent (voir le Grand Désert de Victoria). Le désert garde aussi des traces d’un passé plus humide : des systèmes de paléo-rivières, nommés Percival et Auld dans les rapports de biodiversité de l’Australie-Occidentale, traversent la région avant de se perdre dans un grand lac salé.',
+          'Le désert est le Pays des Martu, un ensemble de peuples aborigènes du bloc culturel du Désert de l’Ouest, dont les terres s’étendent dans la région du Pilbara, notamment autour de Jigalong, des Percival Lakes et de la Karlamilyi (Rudall River). La construction de la Canning Stock Route, achevée en 1910, fut une période brutale pour de nombreux Martu, contraints de servir de guides et de révéler des points d’eau. La Talawana Track fut construite plus tard pour desservir le projet d’essais de missiles de Woomera. En 1964, la famille d’une artiste martu née dans la région des Percival Lakes fut l’un des derniers groupes martu à quitter le désert pour la mission de Jigalong, selon le National Museum of Australia.',
+          'Aujourd’hui, les terres martu forment l’une des régions arides les plus intactes d’Australie : des gardes martu y gèrent le territoire, les sites touristiques de la Canning Stock Route et la lutte contre les animaux introduits. Selon Jupp et collègues, plus de 26 000 chameaux et 2 000 ânes ont déjà été retirés de ces terres. La peinture, avec la collection Martumili Ngurra, transmet des cartes spirituelles du pays, des itinéraires et des histoires du Temps du rêve.'
+        ],
+        example: {
+          statement: 'Le Grand Désert de Victoria couvre 348 750 km² et le Grand Désert de sable 267 250 km². Quelle fraction de la superficie du premier le second représente-t-il ?',
+          calculation: '267 250 ÷ 348 750 ≈ 0,766, soit environ 77 %.',
+          answer: 'Le Grand Désert de sable représente environ 77 % de la superficie du Grand Désert de Victoria, selon ces valeurs.'
+        },
+        exercise: {
+          question: 'Qu’est-ce que la Canning Stock Route ?',
+          answer: 'Une route longue d’environ 1 600 km qui relie Wiluna à Halls Creek à travers le désert, achevée en 1910, et qui a profondément affecté la vie des Martu.'
+        },
+        exercises: [
+          {
+            question: 'Quel peuple aborigène est étroitement associé au Grand Désert de sable ?',
+            answer: 'Les Martu, du bloc culturel du Désert de l’Ouest.'
+          },
+          {
+            question: 'Que sont les Percival Lakes ?',
+            answer: 'Une série de lacs salés éphémères d’environ 350 km, au sud du Grand Désert de sable.'
+          },
+          {
+            question: 'Quel indice montre que la région a connu un climat plus humide dans le passé ?',
+            answer: 'L’existence de systèmes de paléo-rivières comme Percival et Auld.'
+          }
+        ],
+        sources: [
+          { title: 'Britannica — Great Sandy Desert', url: 'https://www.britannica.com/print/article/243689' },
+          { title: 'WorldAtlas — The Largest Deserts in Australia', url: 'https://worldatlas.com/deserts/the-largest-deserts-in-australia.html' },
+          { title: 'Wikipedia — Martu people', url: 'https://en.wikipedia.org/wiki/Martu_people' },
+          { title: 'National Museum of Australia — Martumili Ngurra canvas', url: 'https://nma.gov.au/explore/collection/highlights/martumili-ngurra-canvas' },
+          { title: 'DBCA Western Australia — Great Sandy Desert 2 (Mackay subregion)', url: 'https://library.dbca.wa.gov.au/static/FullTextFiles/021927.025.pdf' },
+          { title: 'Jupp et al. — Martu land management (Rangelands Gateway)', url: 'https://rangelandsgateway.org/sites/default/files/2021-01/9.01._Jupp_et_al.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'sonora',
+      title: 'Le désert de Sonora : un désert aux deux saisons des pluies',
+      field: 'Amérique du Nord · environ 260 000 km² · désert chaud',
+      summary: 'Comprendre le régime de pluies bisaisonnier du Sonora et pourquoi ce désert, sous sa forme actuelle, est très récent à l’échelle géologique.',
+      lesson: {
+        sections: [
+          'Le désert de Sonora entoure l’extrémité nord du golfe de Californie, en Arizona, en Californie (section du Colorado), au Sonora et en Basse-Californie. Sa superficie est donnée comme 260 000 km² dans de nombreuses sources, mais Britannica indique environ 310 800 km² et la délimitation par écorégion de Wikipedia environ 223 000 km² : la valeur dépend de la définition des limites. Le botaniste Forrest Shreve l’a divisé en 1957 en sept régions de végétation, dont la Basse vallée du Colorado et l’Arizona Upland.',
+          'Sa particularité est un régime de pluies bisaisonnier : des pluies d’hiver et une mousson d’été qui, de la mi-juin à septembre, amène l’humidité des golfes de Californie et du Mexique. Un gradient est-ouest existe : d’une mousson d’été forte à l’est, on passe à un régime de pluies d’hiver en Basse-Californie. Ce régime favorise une grande diversité végétale, dont le saguaro (Carnegiea gigantea), emblème du désert.',
+          'Sous sa forme actuelle, le désert de Sonora est jeune. Les macrofossiles conservés dans d’anciens nids de rats de bois (« middens ») montrent que, pendant les glaciations du Pléistocène, des formations de genévriers et de yuccas occupaient des zones aujourd’hui désertiques, car les hivers étaient plus pluvieux et plus frais. Selon Wilder et al. (2008), les communautés désertiques modernes n’ont existé que pendant environ 5 % des 2,4 millions d’années du Pléistocène. Dans le nord-est du désert, des communautés de broussailles désertiques apparaissent après environ 8 900 ans ; le désert subtropical actuel, avec le palo verde et le cactus tuyau d’orgue, ne se forme qu’il y a environ 4 000 ans, lorsque les pluies d’été et les gelées d’hiver diminuent.',
+          'L’histoire humaine y est ancienne. Dans le bassin de Phoenix, la culture que les archéologues nomment Hohokam a construit des réseaux de canaux d’irrigation alimentés par les rivières Salt et Gila. Les descendants (O’odham) n’emploient pas ce nom, que l’on pense issu d’une mauvaise transcription du mot huhugam, qui signifie notamment « ancêtres » (National Park Service). Les Tohono O’odham récoltent le fruit du saguaro chaque été, tradition qui structure leur calendrier.'
+        ],
+        example: {
+          statement: 'Deux sources donnent 260 000 km² et 310 800 km² pour le désert de Sonora. Quel est l’écart relatif par rapport à 260 000 km² ?',
+          calculation: '310 800 − 260 000 = 50 800 km². Puis 50 800 ÷ 260 000 ≈ 0,195, soit environ 19,5 %.',
+          answer: 'L’écart est d’environ 50 800 km², soit près de 20 %. Il illustre l’importance de la définition des limites d’un désert.'
+        },
+        exercise: {
+          question: 'Pourquoi dit-on que le désert de Sonora actuel est récent ?',
+          answer: 'Parce que les fossiles de nids de rats de bois montrent que des formations boisées l’occupaient pendant les glaciations, et que le désert subtropical actuel ne s’est formé qu’il y a environ 4 000 ans selon certaines études.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie un régime de pluies bisaisonnier ?',
+            answer: 'Une année avec deux saisons de pluies : des pluies d’hiver et une mousson d’été.'
+          },
+          {
+            question: 'Quel est le cactus emblématique du désert de Sonora ?',
+            answer: 'Le saguaro (Carnegiea gigantea).'
+          },
+          {
+            question: 'Que construisaient les Hohokam dans le bassin de Phoenix ?',
+            answer: 'Des réseaux de canaux d’irrigation alimentés par les rivières Salt et Gila.'
+          }
+        ],
+        sources: [
+          { title: 'Britannica — Sonoran Desert', url: 'https://www.britannica.com/place/Sonoran-Desert' },
+          { title: 'Wikipedia — Sonoran Desert', url: 'https://en.wikipedia.org/wiki/Sonoran_Desert' },
+          { title: 'National Park Service — The Ancestral Sonoran Desert People', url: 'https://www.nps.gov/cagr/learn/historyculture/the-ancestral-sonoran-desert-people.htm' },
+          { title: 'Wilder et Felger 2008 — Canotia holacantha on Isla Tiburón', url: 'https://ezcurralab.ucr.edu/sites/default/files/2020-05/wilderetal2008_canotia.pdf' },
+          { title: 'Quaternary Research — Plant macrofossils from packrat middens, Puerto Blanco Mountains', url: 'https://www.cambridge.org/core/product/145AC32831AA373C0D1E42AF1B1DF001' },
+          { title: 'Madroño — Packrat midden vegetation history, Sonoran Desert', url: 'https://archive.org/download/biostor-163317/biostor-163317.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'atacama',
+      title: 'Le désert d’Atacama : le désert non polaire le plus aride',
+      field: 'Amérique du Sud · environ 105 000 km² · désert côtier hyperaride',
+      summary: 'Comprendre le « double effet d’ombre pluviométrique » de l’Atacama, le débat sur l’âge de son aridité et les traces humaines exceptionnelles de la culture Chinchorro.',
+      lesson: {
+        sections: [
+          'L’Atacama se trouve dans le nord du Chili, entre l’océan Pacifique et les Andes, sur environ 105 000 km² (104 741 km² selon Wikipedia). C’est le désert non polaire le plus aride du monde ; seuls certains endroits des vallées sèches de McMurdo seraient plus secs. Dans son cœur hyperaride, la moyenne est d’environ 15 mm de pluie par an, et certaines stations météorologiques n’ont jamais enregistré de pluie.',
+          'Plusieurs facteurs se combinent : l’anticyclone du Pacifique, le courant froid de Humboldt qui limite l’évaporation, et la double barrière formée par la cordillère de la Côte et les Andes, qui bloquent l’humidité venue du Pacifique comme de l’Atlantique. La géologue Linda Godfrey résume cette situation comme un « double effet d’ombre pluviométrique » : un désert sec bordé de montagnes sèches. Les pluies côtières coïncident généralement avec les épisodes El Niño.',
+          'L’âge de l’hyperaridité est débattu. La vue classique l’associe au soulèvement des Andes et à l’installation du courant de Humboldt, vers 10 à 20 millions d’années (Miocène). En 2026, une étude de Ritter-Prinz et collègues publiée dans Nature Communications a mesuré l’exposition de roches en surface dans le cœur hyperaride : trente-deux fragments présentent des durées d’exposition remontant à l’Oligocène ou avant, ce qui suggère une aridification plus ancienne que la Humboldt et que le soulèvement majeur des Andes. Le communiqué de l’université de Cologne la place à l’Éocène, vers 45 millions d’années. Les Andes et la Humboldt auraient alors intensifié et maintenu l’aridité plutôt que de la créer.',
+          'Des humains vivent sur la côte de l’Atacama depuis au moins 12 800 ans. La culture Chinchorro, qui a pratiqué la momification artificielle, est inscrite à l’UNESCO depuis 2021 (« Peuplement et momification artificielle de la culture Chinchorro dans la région d’Arica et de Parinacota »). Ses momies, parmi les plus anciennes connues, remontent à environ 7 000 ans. D’après le dossier UNESCO, cette culture s’efface vers 2 840 ans avant le présent. Au XIXe siècle, l’exploitation du salpêtre (nitrate) a marqué le désert ; aujourd’hui, le plateau de Chajnantor, à environ 5 000 m, accueille le réseau de télescopes ALMA.'
+        ],
+        example: {
+          statement: 'Une hypothèse place l’aridification de l’Atacama il y a 15 millions d’années, une autre il y a 45 millions d’années. Quelle différence, et quel rapport entre les deux ?',
+          calculation: '45 − 15 = 30 millions d’années. Puis 45 ÷ 15 = 3.',
+          answer: 'La différence est de 30 millions d’années et la seconde hypothèse est trois fois plus ancienne que la première.'
+        },
+        exercise: {
+          question: 'Qu’appelle-t-on « double effet d’ombre pluviométrique » dans l’Atacama ?',
+          answer: 'Le fait que les Andes et la cordillère de la Côte bloquent l’humidité de chaque côté, ce qui crée un désert sec bordé de montagnes sèches.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la précipitation moyenne indiquée pour le cœur hyperaride de l’Atacama ?',
+            answer: 'Environ 15 mm par an.'
+          },
+          {
+            question: 'Quel courant océanique froid contribue à l’aridité de l’Atacama ?',
+            answer: 'Le courant de Humboldt (ou du Pérou).'
+          },
+          {
+            question: 'Que sont les Chinchorro ?',
+            answer: 'Une culture de chasseurs-cueilleurs de la côte nord du Chili, connue pour sa momification artificielle, inscrite à l’UNESCO en 2021.'
+          }
+        ],
+        sources: [
+          { title: 'Ritter-Prinz et al. 2026, Nature Communications — Evidence for Eocene aridification of the Atacama Desert’s hyperarid core', url: 'https://doi.org/10.1038/s41467-026-73422-4' },
+          { title: 'Meteored — La parte más árida del desierto de Atacama es millones de años más antigua de lo que se creía', url: 'https://www.meteored.cl/noticias/ciencia/la-parte-mas-arida-del-desierto-de-atacama-es-millones-de-anos-mas-antigua-de-lo-que-se-creia.html' },
+          { title: 'History.com — How One of the Driest Places on Earth Has Hosted Centuries of Life', url: 'https://www.history.com/articles/driest-place-earth-atacama-desert' },
+          { title: 'Wikipedia — Atacama Desert', url: 'https://www.wikipedia.org/wiki/Atacama' },
+          { title: 'UNESCO — Chinchorro Culture, Arica and Parinacota Region', url: 'https://whc.unesco.org/en/list/1634' },
+          { title: 'UNESCO — Décision 44 COM 8B.48, Chinchorro', url: 'https://whc.unesco.org/en/decisions/7967' }
+        ]
+      }
+    },
+    {
+      id: 'namib',
+      title: 'Le désert du Namib : un désert côtier d’origine très ancienne',
+      field: 'Afrique · environ 81 000 km² · désert côtier',
+      summary: 'Comprendre le rôle du courant de Benguela et du brouillard, la différence entre l’âge de l’aridité et celui des dunes, et le statut du Namib Sand Sea.',
+      lesson: {
+        sections: [
+          'Le Namib longe la côte atlantique de la Namibie et se prolonge en Angola, sur environ 81 000 km² (80 900 km² selon le Guinness des records). Il reçoit très peu de pluie, de l’ordre de quelques millimètres à une vingtaine de millimètres par an selon les secteurs. La mer de sable du Namib (Namib Sand Sea), inscrite à l’UNESCO en 2013, couvre 3 077 700 hectares, soit environ 30 777 km², avec une zone tampon de 899 500 hectares. L’UNESCO la présente comme le seul désert côtier du monde dont de vastes champs de dunes sont influencés par le brouillard.',
+          'L’aridité du Namib résulte de la descente d’air sec de la cellule de Hadley, refroidi par le courant froid de Benguela le long de la côte. Une synthèse récente (Springer) apporte une nuance : le courant de Benguela n’est pas considéré comme le principal facteur de formation du désert, mais il a accentué les conditions désertiques et déclenche les brouillards côtiers. L’anticyclone de l’Atlantique Sud et les systèmes de vents associés jouent aussi un rôle central.',
+          'On présente souvent le Namib comme l’un des plus anciens déserts du monde. Les estimations d’aridité continue vont d’environ 55 à 80 millions d’années (Wikipedia, Guinness). La même synthèse Springer décrit l’évolution du désert sur les 55 derniers millions d’années : les grès de Tsondab, épais jusqu’à 220 m, correspondent à d’anciennes dunes du « proto-Namib » déposées sur 20 à 30 millions d’années. Les dunes de la mer de sable actuelle sont, elles, beaucoup plus récentes, du Plio-Pléistocène (à partir de 5 millions d’années). Il faut donc distinguer l’âge de l’aridité de celui des dunes visibles.',
+          'Le brouillard issu du courant de Benguela est une source d’eau majeure pour la vie du désert et a fait émerger des adaptations remarquables, comme celles du coléoptère Stenocara gracilipes, qui capte les gouttelettes de brouillard. Le sud est marqué par l’exploitation diamantifère depuis 1908, dans la zone interdite du Sperrgebiet. Ces éléments montrent que, malgré son extrême aridité, le Namib est un écosystème organisé autour d’une eau venue de l’air.'
+        ],
+        example: {
+          statement: 'La mer de sable du Namib couvre 3 077 700 hectares. Convertir en km², puis calculer sa part du désert (environ 80 900 km²).',
+          calculation: '1 hectare = 0,01 km², donc 3 077 700 × 0,01 = 30 777 km². Puis 30 777 ÷ 80 900 ≈ 0,380, soit environ 38 %.',
+          answer: 'La mer de sable couvre environ 30 777 km², soit environ 38 % de la superficie du désert.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer l’âge de l’aridité du Namib de l’âge de ses dunes actuelles ?',
+          answer: 'Parce que l’aridité est estimée à plusieurs dizaines de millions d’années (55 à 80), alors que les dunes de la mer de sable actuelle datent surtout du Plio-Pléistocène, soit environ 5 millions d’années ou moins.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année la mer de sable du Namib a-t-elle été inscrite à l’UNESCO ?',
+            answer: 'En 2013.'
+          },
+          {
+            question: 'Quel rôle le courant de Benguela joue-t-il selon la synthèse Springer citée ?',
+            answer: 'Il n’est pas le principal facteur de formation du désert, mais il accentue l’aridité et déclenche les brouillards côtiers.'
+          },
+          {
+            question: 'Quelle est la principale source d’eau pour la vie dans le désert côtier du Namib ?',
+            answer: 'Le brouillard issu de la rencontre entre le courant froid de Benguela et l’air chaud.'
+          }
+        ],
+        sources: [
+          { title: 'Springer — The Namib Desert: age and evolution', url: 'https://link.springer.com/chapter/10.1007/978-3-031-18923-4_16' },
+          { title: 'UNESCO — Namib Sand Sea', url: 'https://whc.unesco.org/en/list/1430' },
+          { title: 'Guinness World Records — Oldest desert', url: 'https://www.guinnessworldrecords.com/world-records/90695-oldest-desert' },
+          { title: 'Wikipedia — Namib', url: 'https://en.wikipedia.org/wiki/Namib' },
+          { title: 'Revue de la chronologie du Namib Sand Sea (2013) — Age and dynamics of the Namib Sand Sea', url: 'https://the-eis.com/elibrary/search/14835' },
+          { title: 'PRI — Namibia’s coastal desert named newest World Heritage site', url: 'https://www.pri.org/stories/2013/08/15/namibias-coastal-desert-named-newest-world-heritage-site' }
+        ]
+      }
+    },
+    {
+      id: 'dry-valleys-mcmurdo',
+      title: 'Les vallées sèches de McMurdo : le désert froid sans glace',
+      field: 'Antarctique · environ 4 800 km² · désert polaire libre de glace',
+      summary: 'Comprendre pourquoi une région d’Antarctique reste libre de glace, comment elle a été découverte et ce que ses écosystèmes révèlent sur la vie en milieu extrême.',
+      lesson: {
+        sections: [
+          'Les vallées sèches de McMurdo (Taylor, Wright, Victoria) se trouvent sur la côte ouest du détroit de McMurdo, en Terre Victoria. Avec environ 4 800 km², elles forment la plus grande région libre de glace de l’Antarctique, soit environ 0,03 % du continent. On y trouve des moraines, des lacs gelés, des étangs salés, des dunes et des ruisseaux de fonte estivaux : elles montrent qu’on peut se trouver dans le désert le plus froid du monde sans être recouvert de glace.',
+          'Deux mécanismes expliquent cette absence de glace. Les montagnes transantarctiques bloquent l’écoulement de la glace de la calotte est-antarctique vers la mer de Ross, et des vents catabatiques descendent de l’intérieur, se réchauffent et font sublimer neige et glace. Des vents pouvant atteindre environ 320 km/h sont cités par les sources de vulgarisation. L’humidité y est très faible, et ces vallées sont souvent comparées aux conditions de Mars.',
+          'Les vallées ont été repérées lors de l’expédition Discovery de Robert Falcon Scott (1901–1904). En 1903, Scott, accompagné notamment de William Lashly, y trouva les restes d’un phoque de Weddell et décrivit le lieu comme une « vallée de la mort ». En 1911, Griffith Taylor, Charles Wright, Edgar Evans et Frank Debenham y étudièrent la géologie lors de l’expédition Terra Nova. Les vallées Wright et Victoria n’ont été révélées plus complètement que par la photographie aérienne à la fin des années 1940.',
+          'Scott croyait ces vallées sans vie, mais la recherche a montré des écosystèmes dominés par les microbes : lacs recouverts de glace en permanence, ruisseaux éphémères, sols, et bactéries vivant à l’intérieur des roches. Le programme américain de recherche écologique à long terme (LTER) y travaille depuis 1993. Certains lacs comptent parmi les plus salés du monde, le plus salé étant l’étang Don Juan (vallée de Wright). Les « chutes de sang » du glacier Taylor, rougies par l’oxydation du fer, ont longtemps intrigué les chercheurs.'
+        ],
+        example: {
+          statement: 'Les vallées sèches couvrent 4 800 km² sur un continent de 14,2 millions de km². Quel pourcentage cela représente-t-il ?',
+          calculation: '4 800 ÷ 14 200 000 ≈ 0,000338, soit environ 0,034 %.',
+          answer: 'Environ 0,034 %, cohérent avec la valeur de 0,03 % citée : les vallées sèches sont minuscules à l’échelle du continent.'
+        },
+        exercise: {
+          question: 'Pourquoi les vallées sèches de McMurdo sont-elles libres de glace alors que l’Antarctique en est couvert ?',
+          answer: 'Parce que les montagnes transantarctiques bloquent la glace de l’intérieur et que des vents catabatiques secs font sublimer la neige et la glace.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les trois grandes vallées sèches de McMurdo ?',
+            answer: 'Les vallées Taylor, Wright et Victoria.'
+          },
+          {
+            question: 'Qu’est-ce qu’un vent catabatique ?',
+            answer: 'Un vent causé par l’air froid et dense qui descend une pente sous l’effet de la gravité.'
+          },
+          {
+            question: 'Pourquoi Scott a-t-il d’abord pensé que ces vallées étaient sans vie ?',
+            answer: 'Parce que le paysage était aride et inhospitalier, avec des restes d’animaux ; des recherches ultérieures ont révélé des écosystèmes microbiens.'
+          }
+        ],
+        sources: [
+          { title: 'Oceanwide Expeditions — The Dry Valleys', url: 'https://oceanwide-expeditions.com/to-do/experiences/experience-the-dry-valleys' },
+          { title: 'Canadian Field-Naturalist — Review of Innocents in the Dry Valleys', url: 'https://canadianfieldnaturalist.ca/index.php/cfn/article/download/1021/1025/4081' },
+          { title: 'Poseidon Expeditions — Antarctica Dry Valleys', url: 'https://poseidonexpeditions.com/about/articles/antarctica-dry-valleys/' },
+          { title: 'Antarctic Journal of the United States — McMurdo Dry Valleys LTER (1996)', url: 'https://corpora.tika.apache.org/base/docs/govdocs1/229/229875.pdf' },
+          { title: 'Amusing Planet — McMurdo Dry Valleys of Antarctica', url: 'https://www.amusingplanet.com/2012/06/mcmurdo-dry-valleys-of-antarctica.html' }
+        ]
+      }
+    }
+  ]
+},
 
 ]
 
