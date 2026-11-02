@@ -3594,5 +3594,489 @@ window.courseCatalog = [
     ]
   },
 
+{
+  id: 'equations-differentielles',
+  title: 'Les équations différentielles',
+  note: 'Six chapitres progressifs consacrés aux équations différentielles ordinaires : vocabulaire et problèmes de Cauchy, équations du premier ordre, modèles de croissance et méthodes numériques, équations linéaires du second ordre, oscillateurs et applications physiques, puis systèmes différentiels et transformée de Laplace. Les méthodes présentées s’appliquent sous les hypothèses précisées dans chaque chapitre ; une formule de solution ne dispense pas de vérifier le domaine de validité et les conditions initiales.',
+  chapters: [
+    {
+      id: 'fondements-equations-differentielles',
+      title: 'Fondements : définition, ordre et problèmes de Cauchy',
+      field: 'Mathématiques · Équations différentielles ordinaires · Fondements',
+      summary: 'Définir une équation différentielle, reconnaître son ordre, distinguer solution générale et solution particulière, et comprendre le rôle des conditions initiales ainsi que des théorèmes d’existence et d’unicité.',
+      lesson: {
+        sections: [
+          'Une équation différentielle est une relation qui met en jeu une fonction inconnue et une ou plusieurs de ses dérivées. Pour une fonction y dépendant d’une variable indépendante t, une équation peut par exemple relier y, y′ et t. Résoudre l’équation signifie déterminer une fonction qui satisfait cette relation sur un intervalle. Il ne s’agit donc pas de trouver un nombre isolé, mais une fonction entière. Une équation différentielle ordinaire (EDO) ne comporte qu’une variable indépendante ; une équation aux dérivées partielles comporte plusieurs variables indépendantes et relève d’un cadre distinct.',
+          'L’ordre d’une EDO est l’ordre de la dérivée la plus élevée qui apparaît. Ainsi, y′ + 3y = 0 est du premier ordre, tandis que y″ − 4y′ + 4y = 0 est du second ordre. Le degré, lorsqu’il est défini, concerne la puissance de la dérivée d’ordre le plus élevé après élimination des éventuels dénominateurs et radicaux portant sur les dérivées ; il ne doit pas être confondu avec l’ordre. Une équation est linéaire si la fonction inconnue et ses dérivées apparaissent à la puissance 1, sans être multipliées entre elles, avec des coefficients qui ne dépendent que de la variable indépendante. Par exemple, y′ + p(t)y = q(t) est linéaire, alors que y′ = y² est non linéaire.',
+          'Une solution générale contient habituellement autant de constantes arbitraires que l’ordre de l’équation, dans le cadre régulier d’une EDO ordinaire résolue. Une solution particulière est obtenue en fixant ces constantes à l’aide de données supplémentaires. Pour une équation du premier ordre, une condition initiale y(t₀) = y₀ sélectionne souvent une courbe de la famille générale. Pour une équation du second ordre, il faut généralement deux conditions indépendantes, par exemple y(t₀) et y′(t₀). Ces données forment un problème de Cauchy, aussi appelé problème à valeur initiale.',
+          'L’existence et l’unicité ne sont pas automatiques pour toute équation. Pour une équation explicite y′ = f(t,y), une condition suffisante classique est que f et sa dérivée partielle par rapport à y soient continues dans un voisinage du point initial ; le théorème de Picard-Lindelöf garantit alors une solution locale unique. Cette condition est suffisante, mais pas nécessaire. Si les hypothèses échouent, il faut examiner le problème précisément : il peut ne pas avoir de solution, en avoir plusieurs, ou tout de même en avoir une unique. Il faut également distinguer existence locale et prolongement global sur tout l’intervalle souhaité.',
+          'La vérification d’une solution est une étape essentielle. On dérive la fonction proposée, on remplace la fonction et ses dérivées dans l’équation, puis on vérifie l’égalité. On contrôle séparément les conditions initiales et le domaine où les expressions sont définies. Cette démarche permet de détecter une constante oubliée, une erreur de signe ou une solution qui ne satisfait qu’une partie du problème.'
+        ],
+        formula: {
+          label: 'FORME GÉNÉRALE D’UNE EDO DU PREMIER ORDRE',
+          text: 'y′ = f(t, y)'
+        },
+        example: {
+          statement: 'Résoudre y′ = 2t avec la condition initiale y(0) = 3, puis vérifier la solution.',
+          calculation: 'On intègre : y(t) = ∫2t dt = t² + C. La condition y(0) = 3 donne 0 + C = 3, donc C = 3. La dérivée de y(t) = t² + 3 vaut y′(t) = 2t.',
+          answer: 'La solution du problème de Cauchy est y(t) = t² + 3. Elle vérifie l’équation puisque y′ = 2t, et la condition initiale puisque y(0) = 3.'
+        },
+        exercise: {
+          question: 'Quel nombre de conditions initiales indépendantes faut-il généralement pour déterminer une solution particulière d’une EDO linéaire du second ordre ?',
+          answer: 'Deux conditions indépendantes sont généralement nécessaires, par exemple y(t₀) et y′(t₀), sous réserve que le problème soit bien posé.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’ordre de l’équation y‴ + 2y′ − y = 0 ?',
+            answer: 'L’ordre est 3, car la dérivée d’ordre le plus élevé est y‴.'
+          },
+          {
+            question: 'L’équation y′ + t²y = cos(t) est-elle linéaire ?',
+            answer: 'Oui. Elle est de la forme y′ + p(t)y = q(t), avec p(t) = t² et q(t) = cos(t).'
+          },
+          {
+            question: 'Pourquoi une condition initiale est-elle utile ?',
+            answer: 'Elle permet de sélectionner, parmi les solutions possibles de l’équation, celle qui correspond à la valeur observée ou imposée au temps initial.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Équation différentielle du premier ordre',
+            formula: 'y′ = f(t, y)',
+            explanation: 'Cette écriture explicite indique que la pente de la solution au point (t,y) est déterminée par f. Une courbe solution doit avoir en chaque point une pente égale à la valeur de f en ce point.',
+            parameters: 't : variable indépendante ; y(t) : fonction inconnue ; y′(t) : dérivée de y par rapport à t ; f : fonction prescrivant la pente.',
+            example: 'Pour y′ = 2t, la fonction y(t) = t² + 3 possède bien la dérivée 2t.',
+            result: 'La relation est satisfaite sur tout intervalle réel.'
+          },
+          {
+            title: 'Problème de Cauchy',
+            formula: 'y′ = f(t, y),  y(t₀) = y₀',
+            explanation: 'L’équation décrit l’évolution et la condition initiale fixe la valeur de la solution à l’instant t₀. L’existence et l’unicité dépendent des propriétés de f dans un voisinage du point initial.',
+            parameters: 't₀ : valeur initiale de la variable indépendante ; y₀ : valeur initiale de la fonction ; f : second membre de l’EDO.',
+            example: 'y′ = 2t avec y(0) = 3 conduit à y(t) = t² + 3.',
+            result: 'Une solution particulière est déterminée dans le domaine où le problème possède une solution unique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Calculus Volume 2, 4.1 Basics of Differential Equations',
+            url: 'https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations'
+          },
+          {
+            title: 'MIT OpenCourseWare — 18.03SC Differential Equations, Fall 2011',
+            url: 'https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/'
+          },
+          {
+            title: 'University of Oxford — A1: Differential Equations 1 (2024–25)',
+            url: 'https://courses.maths.ox.ac.uk/course/view.php?id=5511'
+          }
+        ]
+      }
+    },
+    {
+      id: 'equations-premier-ordre',
+      title: 'Équations différentielles du premier ordre',
+      field: 'Mathématiques · EDO · Séparation des variables et équations linéaires',
+      summary: 'Résoudre les équations à variables séparables et les équations linéaires par facteur intégrant, en tenant compte des solutions constantes et des conditions initiales.',
+      lesson: {
+        sections: [
+          'Une équation du premier ordre est dite à variables séparables lorsqu’elle peut s’écrire y′ = g(t)h(y). Lorsque h(y) n’est pas nulle, on sépare les variables sous la forme dy/h(y) = g(t)dt, puis on intègre les deux membres. Il faut toutefois commencer par rechercher les valeurs constantes y = y* telles que h(y*) = 0 : elles peuvent fournir des solutions d’équilibre qui seraient perdues si l’on divisait directement par h(y). Après intégration, on applique les conditions initiales et on précise l’intervalle de validité.',
+          'La méthode de séparation conduit souvent à une relation implicite entre t et y. Il n’est pas toujours possible, ni nécessaire, d’isoler y à l’aide de fonctions élémentaires. Une solution implicite reste valable si elle définit une fonction suffisamment régulière et satisfait l’équation sur l’intervalle considéré. Les étapes de calcul doivent conserver les constantes d’intégration et respecter les restrictions de domaine, notamment lorsqu’un logarithme ou une division apparaît.',
+          'Une EDO linéaire du premier ordre se met sous la forme standard y′ + p(t)y = q(t). On construit le facteur intégrant μ(t) = exp(∫p(t)dt). En multipliant l’équation par μ, le membre de gauche devient la dérivée du produit μy : (μy)′ = μq. Il suffit alors d’intégrer, puis de diviser par μ, qui est strictement positif lorsqu’il est défini comme une exponentielle réelle. Cette méthode s’applique sur un intervalle où p et q sont continues.',
+          'La séparation des variables et le facteur intégrant répondent à des formes différentes. Il faut d’abord reconnaître la structure de l’équation plutôt que choisir une méthode au hasard. Certaines équations peuvent être traitées par plusieurs techniques, tandis que d’autres exigent des substitutions ou des méthodes plus avancées. Il n’existe pas de méthode élémentaire universelle qui résout toutes les EDO du premier ordre.',
+          'Les modèles de décroissance et de relaxation conduisent fréquemment à une équation linéaire du type y′ + ky = b, où k est constant. La solution combine un régime transitoire exponentiel et une valeur d’équilibre b/k lorsque k est non nul. Cette lecture permet de comprendre le comportement à long terme sans se limiter à la manipulation algébrique.'
+        ],
+        formula: {
+          label: 'FACTEUR INTÉGRANT',
+          text: 'μ(t) = exp(∫p(t)dt),  y′ + p(t)y = q(t)'
+        },
+        example: {
+          statement: 'Résoudre y′ + 2y = 4 avec y(0) = 1.',
+          calculation: 'Ici p(t) = 2 et q(t) = 4. Le facteur intégrant est μ(t) = e^(2t). Ainsi (e^(2t)y)′ = 4e^(2t). En intégrant, e^(2t)y = 2e^(2t) + C, donc y = 2 + Ce^(−2t). Avec y(0) = 1, on obtient C = −1.',
+          answer: 'La solution est y(t) = 2 − e^(−2t). Elle vérifie y(0) = 1 et tend vers 2 lorsque t tend vers +∞.'
+        },
+        exercise: {
+          question: 'Quelle est la première précaution à prendre avant de séparer les variables dans y′ = g(t)h(y) ?',
+          answer: 'Rechercher les solutions constantes h(y) = 0, car une division par h(y) pourrait les éliminer.'
+        },
+        exercises: [
+          {
+            question: 'Résoudre y′ = 3t² avec y(0) = 2.',
+            answer: 'Une intégration donne y = t³ + C. La condition initiale impose C = 2, donc y(t) = t³ + 2.'
+          },
+          {
+            question: 'Quel facteur intégrant convient à y′ + 5y = q(t) ?',
+            answer: 'μ(t) = e^(5t), car μ(t) = exp(∫5dt).'
+          },
+          {
+            question: 'Résoudre y′ = −3y avec y(0) = 4.',
+            answer: 'La séparation donne dy/y = −3dt, donc y = Ce^(−3t). La condition initiale impose C = 4 : y(t) = 4e^(−3t).'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Séparation des variables',
+            formula: 'y′ = g(t)h(y),  dy/h(y) = g(t)dt',
+            explanation: 'La méthode sépare les dépendances en t et en y afin d’intégrer chaque côté. Les solutions constantes issues de h(y) = 0 doivent être examinées à part avant toute division.',
+            parameters: 't : variable indépendante ; y : fonction inconnue ; g : fonction de t ; h : fonction de y.',
+            example: 'Pour y′ = ty et y ≠ 0 : dy/y = tdt, donc ln|y| = t²/2 + C.',
+            result: 'y(t) = C₁ exp(t²/2), avec la solution nulle y(t) = 0 également incluse lorsque C₁ = 0.'
+          },
+          {
+            title: 'Facteur intégrant d’une équation linéaire',
+            formula: 'μ(t) = exp(∫p(t)dt),  y(t) = [∫μ(t)q(t)dt + C]/μ(t)',
+            explanation: 'Le facteur intégrant transforme le membre de gauche en dérivée d’un produit. La formule est valable sur un intervalle où les coefficients sont continus.',
+            parameters: 'p(t), q(t) : coefficients connus ; μ(t) : facteur intégrant ; C : constante déterminée par une condition initiale.',
+            example: 'Pour y′ + 2y = 4, μ = e^(2t), puis (e^(2t)y)′ = 4e^(2t).',
+            result: 'y(t) = 2 + Ce^(−2t). Avec y(0) = 1, y(t) = 2 − e^(−2t).'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Calculus Volume 2, 4.3 Separable Equations',
+            url: 'https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations'
+          },
+          {
+            title: 'OpenStax — Calculus Volume 2, 4.5 First-Order Linear Equations',
+            url: 'https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations'
+          },
+          {
+            title: 'MIT OpenCourseWare — 18.03 Differential Equations, Readings',
+            url: 'https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/pages/readings/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'modelisation-et-methodes-numeriques',
+      title: 'Modélisation, croissance et méthodes numériques',
+      field: 'Mathématiques appliquées · Modèles différentiels · Approximation numérique',
+      summary: 'Construire des modèles de croissance, de décroissance et de saturation, interpréter les équilibres et approcher numériquement une solution lorsque la résolution exacte est difficile.',
+      lesson: {
+        sections: [
+          'Une EDO sert à traduire une loi d’évolution locale. Si la vitesse de variation d’une quantité y est proportionnelle à cette quantité, le modèle est y′ = ky. Sa solution est exponentielle : y(t) = y₀e^(kt). Pour k positif, la quantité augmente ; pour k négatif, elle décroît. Le paramètre k a l’unité inverse de celle du temps. Le modèle exponentiel est utile sur des intervalles où l’hypothèse de proportionnalité reste pertinente, mais il ne décrit pas nécessairement les contraintes à long terme d’une population ou d’une ressource.',
+          'La loi logistique ajoute une capacité limite K : y′ = ry(1 − y/K), avec r positif et K positif. Les équilibres sont y = 0 et y = K. Lorsque la quantité est comprise entre 0 et K, le taux de croissance est positif ; au-dessus de K, le modèle prédit une diminution. La croissance ralentit à mesure que y approche K. Ce modèle constitue une idéalisation : une population réelle peut subir des variations de ressources, de structure d’âge, de migration et d’environnement qui ne sont pas représentées par cette équation.',
+          'Les équations différentielles apparaissent aussi dans les phénomènes de refroidissement, de mélange et de relaxation. Une loi de refroidissement de Newton, sous une température ambiante constante Tₐ et un coefficient positif k, s’écrit T′ = −k(T − Tₐ). La différence entre la température du corps et celle du milieu décroît exponentiellement. Le modèle suppose notamment que le coefficient d’échange et la température ambiante restent suffisamment constants.',
+          'Quand aucune solution analytique simple n’est disponible, une méthode numérique permet d’estimer la trajectoire. La méthode d’Euler utilise la pente au début de chaque pas : y(n+1) = y(n) + h f(t(n), y(n)), et t(n+1) = t(n) + h. On répète cette opération à partir de la condition initiale. Le pas h contrôle la finesse du calcul : le diminuer améliore souvent l’approximation dans un régime régulier, mais augmente le nombre de calculs et ne garantit pas à lui seul la stabilité ou l’exactitude.',
+          'L’erreur numérique dépend de la méthode, du pas et du comportement de la solution. Pour Euler explicite, l’erreur globale est généralement d’ordre 1 en h sur un intervalle régulier : lorsque h est divisé par 2, l’erreur est souvent approximativement divisée par 2 dans le régime asymptotique. Cette observation ne remplace pas une étude de convergence. Pour les calculs scientifiques, on compare souvent plusieurs pas, on contrôle les unités et on confronte si possible le résultat numérique à une solution exacte ou à une méthode plus précise.'
+        ],
+        formula: {
+          label: 'MÉTHODE D’EULER EXPLICITE',
+          text: 'y(n+1) = y(n) + h f(t(n), y(n))'
+        },
+        example: {
+          statement: 'Approcher la solution de y′ = −y avec y(0) = 1 par la méthode d’Euler, en utilisant un pas h = 0,1, jusqu’à t = 0,2.',
+          calculation: 'Au départ, t₀ = 0 et y₀ = 1. La pente vaut f(0,1) = −1, donc y₁ = 1 + 0,1 × (−1) = 0,9. Au deuxième pas, la pente vaut −0,9, donc y₂ = 0,9 + 0,1 × (−0,9) = 0,81.',
+          answer: 'L’approximation d’Euler donne y(0,2) ≈ 0,81. La solution exacte est e^(−0,2) ≈ 0,8187 ; cet écart illustre l’erreur d’approximation numérique.'
+        },
+        exercise: {
+          question: 'Dans la méthode d’Euler explicite, que représente le pas h ?',
+          answer: 'C’est l’incrément de la variable indépendante entre deux approximations successives.'
+        },
+        exercises: [
+          {
+            question: 'Pour y′ = 0,2y, le taux k est-il associé à une croissance ou à une décroissance ?',
+            answer: 'À une croissance exponentielle, car k est positif.'
+          },
+          {
+            question: 'Quels sont les équilibres du modèle logistique y′ = ry(1 − y/K) ?',
+            answer: 'Les équilibres sont y = 0 et y = K, car le second membre s’annule pour ces deux valeurs.'
+          },
+          {
+            question: 'Avec Euler, y′ = 2t, y(0) = 0 et h = 0,5, quelle est l’approximation y(0,5) ?',
+            answer: 'y₁ = 0 + 0,5 × 0 = 0. La pente initiale est nulle ; l’approximation au premier pas est donc 0, alors que la solution exacte donne 0,125.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Croissance ou décroissance exponentielle',
+            formula: 'y′ = ky,  y(t) = y₀e^(kt)',
+            explanation: 'Le taux instantané de variation est proportionnel à la quantité présente. Le signe de k détermine le sens de l’évolution, et la solution suppose k constant.',
+            parameters: 'y(t) : quantité à l’instant t ; y₀ : quantité initiale ; k : taux constant (unité inverse du temps) ; t : temps.',
+            example: 'Avec y₀ = 100 et k = 0,03 par an, après 1 an : y(1) = 100e^0,03.',
+            result: 'y(1) ≈ 103,05. La valeur est une prédiction du modèle exponentiel.'
+          },
+          {
+            title: 'Équation logistique',
+            formula: 'y′ = ry(1 − y/K)',
+            explanation: 'Le taux de croissance relatif diminue avec y et s’annule à la capacité limite K. Les deux solutions d’équilibre sont 0 et K. Le modèle est une approximation déterministe à paramètres constants.',
+            parameters: 'r : taux intrinsèque de croissance ; K : capacité limite ; y : quantité modélisée.',
+            example: 'Si r = 0,2, K = 1000 et y = 500, alors y′ = 0,2 × 500 × (1 − 0,5).',
+            result: 'y′ = 50 unités de quantité par unité de temps.'
+          },
+          {
+            title: 'Méthode d’Euler explicite',
+            formula: 'y(n+1) = y(n) + h f(t(n), y(n))',
+            explanation: 'La méthode remplace localement la courbe par sa tangente sur un petit intervalle. Elle fournit une approximation et non une identité exacte.',
+            parameters: 'h : pas ; t(n) : temps au pas n ; y(n) : approximation de la solution ; f : second membre de l’EDO.',
+            example: 'Pour y′ = −y, y₀ = 1 et h = 0,1 : y₁ = 1 + 0,1(−1) = 0,9.',
+            result: 'Après deux pas, y₂ = 0,81 à t = 0,2.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Calculus Volume 2, 4.2 Direction Fields and Numerical Methods',
+            url: 'https://openstax.org/books/calculus-volume-2/pages/4-2-direction-fields-and-numerical-methods'
+          },
+          {
+            title: 'OpenStax — Calculus Volume 2, 4.4 The Logistic Equation',
+            url: 'https://openstax.org/books/calculus-volume-2/pages/4-4-the-logistic-equation'
+          },
+          {
+            title: 'MIT OpenCourseWare — Differential Equations, Unit I: First Order Differential Equations',
+            url: 'https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'equations-lineaires-second-ordre',
+      title: 'Équations linéaires du second ordre',
+      field: 'Mathématiques · EDO linéaires · Équation caractéristique',
+      summary: 'Résoudre les équations linéaires homogènes à coefficients constants, distinguer les cas de racines réelles distinctes, doubles ou complexes, puis traiter certains seconds membres simples.',
+      lesson: {
+        sections: [
+          'Une équation linéaire du second ordre à coefficients constants s’écrit ay″ + by′ + cy = g(t), avec a non nul et a, b, c constants. Elle est homogène lorsque g(t) = 0 et non homogène dans le cas contraire. Pour l’équation homogène, le principe de superposition affirme qu’une combinaison linéaire de solutions est encore une solution. La solution générale nécessite deux solutions linéairement indépendantes, ce qui reflète l’ordre 2 de l’équation.',
+          'Pour une équation homogène à coefficients constants, on cherche une solution de la forme y = e^(rt). En substituant, on obtient l’équation caractéristique ar² + br + c = 0. Si elle possède deux racines réelles distinctes r₁ et r₂, la solution générale est y = C₁e^(r₁t) + C₂e^(r₂t). Si la racine réelle r est double, la solution générale devient y = (C₁ + C₂t)e^(rt). Si les racines sont α ± iβ, avec β non nul, une base réelle de solutions est e^(αt)cos(βt) et e^(αt)sin(βt).',
+          'Les conditions initiales déterminent les constantes C₁ et C₂. On calcule d’abord y′, puis on remplace t par la valeur initiale dans y et y′. Cela donne un système de deux équations algébriques. Il faut vérifier que les deux fonctions fondamentales sont indépendantes ; dans le cas des racines distinctes ou complexes conjuguées, cette indépendance est garantie par les formes usuelles présentées.',
+          'Pour une équation non homogène, la solution générale s’écrit y = y_h + y_p, où y_h est la solution générale de l’équation homogène associée et y_p une solution particulière de l’équation complète. Lorsque g(t) est une combinaison de polynômes, d’exponentielles ou de fonctions sinusoïdales, la méthode des coefficients indéterminés consiste à proposer une forme adaptée pour y_p, puis à déterminer ses coefficients par substitution. Si la forme proposée recoupe une solution homogène, il faut la multiplier par une puissance suffisante de t afin d’obtenir une forme indépendante.',
+          'La méthode des coefficients indéterminés ne s’applique pas à un second membre arbitraire. La variation des constantes fournit une méthode plus générale pour les équations linéaires, sous des hypothèses de régularité. Dans tous les cas, on contrôle la solution en la substituant dans l’équation non homogène, puis on applique les conditions initiales ou aux limites.'
+        ],
+        formula: {
+          label: 'ÉQUATION CARACTÉRISTIQUE',
+          text: 'ar² + br + c = 0'
+        },
+        example: {
+          statement: 'Résoudre y″ − 3y′ + 2y = 0 avec y(0) = 1 et y′(0) = 0.',
+          calculation: 'L’équation caractéristique est r² − 3r + 2 = 0, soit (r − 1)(r − 2) = 0. Les racines sont 1 et 2, donc y = C₁e^t + C₂e^(2t). La première condition donne C₁ + C₂ = 1. La dérivée vaut y′ = C₁e^t + 2C₂e^(2t), donc la seconde donne C₁ + 2C₂ = 0. On obtient C₂ = −1 et C₁ = 2.',
+          answer: 'La solution est y(t) = 2e^t − e^(2t). Elle vérifie y(0) = 1 et y′(0) = 0.'
+        },
+        exercise: {
+          question: 'Quelle forme prend la solution générale lorsque l’équation caractéristique possède une racine réelle double r ?',
+          answer: 'y(t) = (C₁ + C₂t)e^(rt).'
+        },
+        exercises: [
+          {
+            question: 'Résoudre y″ − 5y′ + 6y = 0.',
+            answer: 'L’équation caractéristique r² − 5r + 6 = 0 possède les racines 2 et 3. Donc y(t) = C₁e^(2t) + C₂e^(3t).'
+          },
+          {
+            question: 'Quel type de solution obtient-on si les racines sont 1 ± 2i ?',
+            answer: 'y(t) = e^t[C₁cos(2t) + C₂sin(2t)].'
+          },
+          {
+            question: 'Quelle décomposition utilise-t-on pour résoudre une équation linéaire non homogène ?',
+            answer: 'On écrit la solution générale comme la somme d’une solution générale de l’équation homogène associée et d’une solution particulière de l’équation complète : y = y_h + y_p.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Équation caractéristique',
+            formula: 'ar² + br + c = 0',
+            explanation: 'Elle est obtenue en substituant y = e^(rt) dans l’équation homogène ay″ + by′ + cy = 0. Ses racines déterminent la forme de la solution générale.',
+            parameters: 'a, b, c : coefficients constants avec a ≠ 0 ; r : racine caractéristique ; t : variable indépendante.',
+            example: 'Pour y″ − 3y′ + 2y = 0, l’équation caractéristique est r² − 3r + 2 = 0.',
+            result: 'Les racines sont r₁ = 1 et r₂ = 2, d’où y = C₁e^t + C₂e^(2t).'
+          },
+          {
+            title: 'Racines complexes conjuguées',
+            formula: 'r = α ± iβ,  y(t) = e^(αt)[C₁cos(βt) + C₂sin(βt)]',
+            explanation: 'Les deux solutions exponentielles complexes conjuguées peuvent être recombinées en deux solutions réelles indépendantes. Le facteur exponentiel règle l’amplitude et les fonctions trigonométriques décrivent l’oscillation.',
+            parameters: 'α : partie réelle ; β : partie imaginaire positive ; C₁, C₂ : constantes réelles.',
+            example: 'Pour y″ + 2y′ + 5y = 0, les racines sont −1 ± 2i.',
+            result: 'y(t) = e^(−t)[C₁cos(2t) + C₂sin(2t)].'
+          },
+          {
+            title: 'Superposition pour une équation non homogène',
+            formula: 'y = y_h + y_p',
+            explanation: 'La différence entre deux solutions de la même équation non homogène satisfait l’équation homogène associée. Toute solution s’obtient donc en ajoutant une solution particulière à la famille homogène.',
+            parameters: 'y_h : solution générale de l’équation homogène associée ; y_p : une solution particulière de l’équation complète.',
+            example: 'Pour y″ − y = 1, une solution particulière constante est y_p = −1.',
+            result: 'La solution générale est y(t) = C₁e^t + C₂e^(−t) − 1.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Calculus Volume 3, 7.1 Second-Order Linear Equations',
+            url: 'https://openstax.org/books/calculus-volume-3/pages/7-1-second-order-linear-equations'
+          },
+          {
+            title: 'OpenStax — Calculus Volume 3, Chapter 7 Key Concepts',
+            url: 'https://openstax.org/books/calculus-volume-3/pages/7-key-concepts'
+          },
+          {
+            title: 'MIT OpenCourseWare — 18.03SC Differential Equations, Unit II: Second Order Constant Coefficient Linear Equations',
+            url: 'https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'oscillateurs-et-applications-physiques',
+      title: 'Oscillateurs et applications physiques',
+      field: 'Physique mathématique · Oscillations libres, amorties et forcées',
+      summary: 'Relier les EDO du second ordre à la mécanique et aux circuits RLC, distinguer oscillations libres, amortissement, excitation extérieure et résonance.',
+      lesson: {
+        sections: [
+          'La deuxième loi de Newton permet de construire des équations différentielles du mouvement. Pour une masse m attachée à un ressort idéal de raideur k, si x mesure l’écart à la position d’équilibre et si les frottements sont négligés, la force de rappel vaut −kx. L’équation du mouvement est alors mx″ + kx = 0. La solution est sinusoïdale : le système oscille autour de l’équilibre avec une pulsation propre ω₀ = √(k/m). Cette fréquence caractérise le modèle idéal non amorti.',
+          'Un amortissement visqueux linéaire ajoute une force opposée à la vitesse, modélisée par −cx′ avec c positif. L’équation du mouvement est alors mx″ + cx′ + kx = 0. Le discriminant du polynôme caractéristique distingue trois régimes : sous-amorti lorsque c² < 4mk, critique lorsque c² = 4mk, et sur-amorti lorsque c² > 4mk. Dans le régime sous-amorti, le mouvement oscille avec une amplitude décroissante ; dans les deux autres régimes, le retour à l’équilibre ne présente pas d’oscillation libre.',
+          'Une force extérieure F(t) conduit à mx″ + cx′ + kx = F(t). La réponse combine un régime transitoire, associé à l’équation homogène, et une réponse forcée liée à l’excitation. Pour une excitation sinusoïdale, le régime permanent dépend de la fréquence d’excitation. L’amplitude peut devenir importante lorsque cette fréquence se rapproche d’une fréquence de résonance ; l’amortissement limite généralement le pic. La résonance réelle dépend des paramètres et ne doit pas être confondue systématiquement avec la pulsation propre non amortie.',
+          'Les circuits RLC série conduisent à une équation de même structure. En notant q(t) la charge du condensateur, L l’inductance, R la résistance et C la capacité, la loi des mailles donne Lq″ + Rq′ + q/C = E(t). Le courant est i(t) = q′(t). Les termes représentent respectivement les effets inductif, résistif et capacitif. Cette analogie mathématique permet de transférer les méthodes de résolution des oscillateurs mécaniques aux circuits électriques, tout en respectant les unités et la signification physique de chaque paramètre.',
+          'La modélisation physique exige de préciser les hypothèses : petites déformations pour un ressort linéaire, frottement proportionnel à la vitesse dans le modèle visqueux, composants idéalisés et paramètres constants dans le circuit RLC. Si ces hypothèses ne sont pas satisfaites, l’équation doit être adaptée. Une solution mathématique n’est interprétable physiquement qu’après vérification des conditions initiales, des unités et du domaine de validité du modèle.'
+        ],
+        formula: {
+          label: 'OSCILLATEUR MÉCANIQUE AMORTI ET FORCÉ',
+          text: 'mx″ + cx′ + kx = F(t)'
+        },
+        example: {
+          statement: 'Un oscillateur non amorti possède une masse m = 2 kg et une raideur k = 18 N/m. Déterminer sa pulsation propre et sa période.',
+          calculation: 'ω₀ = √(k/m) = √(18/2) = √9 = 3 rad/s. La période vaut T = 2π/ω₀ = 2π/3 s.',
+          answer: 'La pulsation propre est ω₀ = 3 rad/s et la période vaut T = 2π/3 ≈ 2,09 s.'
+        },
+        exercise: {
+          question: 'Quel terme de l’équation mx″ + cx′ + kx = F(t) représente l’amortissement visqueux ?',
+          answer: 'Le terme cx′, qui modélise une force proportionnelle à la vitesse et opposée au mouvement.'
+        },
+        exercises: [
+          {
+            question: 'Pour m = 1 kg et k = 25 N/m, quelle est la pulsation propre de l’oscillateur non amorti ?',
+            answer: 'ω₀ = √(k/m) = √25 = 5 rad/s.'
+          },
+          {
+            question: 'Un oscillateur est-il sous-amorti si c² < 4mk ?',
+            answer: 'Oui. Les racines caractéristiques sont complexes conjuguées et le mouvement libre est oscillant avec une amplitude décroissante.'
+          },
+          {
+            question: 'Dans un circuit RLC série, quelle grandeur est la dérivée de la charge q(t) ?',
+            answer: 'Le courant i(t) = q′(t).'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Oscillateur harmonique non amorti',
+            formula: 'mx″ + kx = 0,  ω₀ = √(k/m)',
+            explanation: 'La force de rappel du ressort est proportionnelle au déplacement et dirigée vers l’équilibre. Le mouvement idéal est périodique et conserve son énergie mécanique.',
+            parameters: 'm : masse (kg) ; k : raideur (N/m) ; x : déplacement (m) ; ω₀ : pulsation propre (rad/s).',
+            example: 'Pour m = 2 kg et k = 18 N/m, ω₀ = √(18/2).',
+            result: 'ω₀ = 3 rad/s et T = 2π/3 s.'
+          },
+          {
+            title: 'Oscillateur amorti',
+            formula: 'mx″ + cx′ + kx = 0',
+            explanation: 'Le coefficient c positif représente un amortissement visqueux linéaire. Le rapport entre c² et 4mk détermine le régime sous-amorti, critique ou sur-amorti.',
+            parameters: 'm : masse (kg) ; c : coefficient d’amortissement (kg/s) ; k : raideur (N/m) ; x : déplacement (m).',
+            example: 'Avec m = 1 kg, c = 2 kg/s et k = 10 N/m, c² = 4 et 4mk = 40.',
+            result: 'Comme c² < 4mk, le régime est sous-amorti.'
+          },
+          {
+            title: 'Circuit RLC série',
+            formula: 'Lq″ + Rq′ + q/C = E(t),  i(t) = q′(t)',
+            explanation: 'La loi des mailles conduit à une EDO du second ordre pour la charge. La résistance dissipe de l’énergie, l’inductance s’oppose aux variations du courant et le condensateur stocke une énergie électrique.',
+            parameters: 'L : inductance (H) ; R : résistance (Ω) ; C : capacité (F) ; q : charge (C) ; i : courant (A) ; E(t) : tension imposée (V).',
+            example: 'Dans un circuit libre sans source, E(t) = 0 et l’équation devient Lq″ + Rq′ + q/C = 0.',
+            result: 'Le comportement dépend de l’amortissement électrique déterminé par R, L et C.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Calculus Volume 3, 7.3 Applications',
+            url: 'https://openstax.org/books/calculus-volume-3/pages/7-3-applications'
+          },
+          {
+            title: 'OpenStax — University Physics Volume 1, Simple Harmonic Motion',
+            url: 'https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion'
+          },
+          {
+            title: 'MIT OpenCourseWare — 18.03SC Differential Equations, Second Order Constant Coefficient Linear Equations',
+            url: 'https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/pages/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'systemes-differentiels-et-laplace',
+      title: 'Systèmes différentiels et transformée de Laplace',
+      field: 'Mathématiques avancées · Systèmes linéaires · Matrices · Transformée de Laplace',
+      summary: 'Écrire une EDO d’ordre supérieur comme un système du premier ordre, étudier les valeurs propres et les portraits de phase, puis utiliser la transformée de Laplace pour traiter des problèmes à conditions initiales.',
+      lesson: {
+        sections: [
+          'Un système différentiel rassemble plusieurs fonctions inconnues couplées. Un système linéaire autonome s’écrit X′(t) = AX(t), où X est un vecteur de fonctions et A une matrice constante. Les solutions dépendent des valeurs propres et des vecteurs propres de A. Lorsque la matrice est diagonalisable, les modes propres permettent de construire la solution à partir d’exponentielles. Les valeurs propres complexes produisent des composantes oscillantes, tandis que leur partie réelle détermine croissance ou décroissance.',
+          'Une EDO scalaire d’ordre n peut être transformée en système du premier ordre en introduisant de nouvelles variables représentant la fonction et ses dérivées successives. Pour une EDO du second ordre, on pose x₁ = y et x₂ = y′ ; le système devient x₁′ = x₂ et x₂′ est obtenu à partir de l’équation initiale. Cette écriture permet d’utiliser les outils matriciels et de représenter le mouvement dans un espace de phase.',
+          'Les points d’équilibre d’un système autonome satisfont F(X*) = 0. Pour un système linéaire X′ = AX, l’origine est un équilibre. La nature locale des trajectoires est reliée aux valeurs propres : des parties réelles négatives indiquent une décroissance des modes, des parties réelles positives une croissance, et des parties réelles nulles demandent une analyse plus fine. Pour un système non linéaire, la linéarisation autour d’un équilibre utilise la matrice jacobienne ; elle donne une information locale, mais ne décrit pas nécessairement le comportement global.',
+          'La transformée de Laplace associe à une fonction temporelle f(t), définie pour t positif, une fonction F(s) = ∫₀∞ e^(−st)f(t)dt lorsque l’intégrale converge. Elle transforme les dérivées en expressions algébriques faisant intervenir les valeurs initiales : L{y′} = sY(s) − y(0) et L{y″} = s²Y(s) − sy(0) − y′(0). Cette propriété est particulièrement utile pour résoudre des EDO linéaires à coefficients constants avec conditions initiales et des excitations par morceaux.',
+          'Pour résoudre un problème par Laplace, on transforme les deux membres, on remplace les transformées des dérivées en intégrant les conditions initiales, puis on isole Y(s). On décompose généralement la fraction rationnelle en éléments simples et on applique la transformée inverse. Il faut vérifier la région de convergence et les hypothèses de croissance des fonctions. La méthode n’est pas un raccourci universel : elle est surtout efficace pour les problèmes linéaires adaptés à cette transformation.'
+        ],
+        formula: {
+          label: 'TRANSFORMÉE DE LAPLACE D’UNE DÉRIVÉE',
+          text: 'L{y′}(s) = sY(s) − y(0)'
+        },
+        example: {
+          statement: 'Résoudre y′ + 2y = 0 avec y(0) = 3 par transformée de Laplace.',
+          calculation: 'En notant Y(s) = L{y}(s), on obtient sY(s) − 3 + 2Y(s) = 0. Donc (s + 2)Y(s) = 3, puis Y(s) = 3/(s + 2). La transformée inverse donne y(t) = 3e^(−2t).',
+          answer: 'La solution est y(t) = 3e^(−2t), qui vérifie l’équation différentielle et la condition initiale.'
+        },
+        exercise: {
+          question: 'Quelle information initiale apparaît dans la transformée de Laplace de y′ ?',
+          answer: 'La valeur initiale y(0), selon L{y′}(s) = sY(s) − y(0).'
+        },
+        exercises: [
+          {
+            question: 'Comment transforme-t-on une EDO du second ordre en système du premier ordre ?',
+            answer: 'On introduit une variable pour y et une autre pour y′, puis on écrit leurs dérivées à partir de l’équation initiale.'
+          },
+          {
+            question: 'Quelle est la transformée de Laplace de la constante 1 pour Re(s) > 0 ?',
+            answer: 'L{1}(s) = 1/s.'
+          },
+          {
+            question: 'Résoudre X′ = AX signifie-t-il résoudre une seule équation scalaire ?',
+            answer: 'Non. Il faut résoudre un système couplé ; la matrice A et ses valeurs propres structurent les modes de la solution.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Système linéaire autonome',
+            formula: 'X′(t) = AX(t)',
+            explanation: 'La matrice A couple les composantes du vecteur d’état. Les valeurs propres de A déterminent les modes exponentiels et contribuent à la classification de la stabilité de l’équilibre.',
+            parameters: 'X(t) : vecteur d’état ; A : matrice constante ; X′ : dérivée composante par composante.',
+            example: 'Pour A = [[−1, 0], [0, −2]], les deux composantes vérifient x₁′ = −x₁ et x₂′ = −2x₂.',
+            result: 'x₁(t) = C₁e^(−t) et x₂(t) = C₂e^(−2t) ; les deux modes décroissent.'
+          },
+          {
+            title: 'Transformée de Laplace',
+            formula: 'F(s) = L{f(t)} = ∫₀∞ e^(−st)f(t)dt',
+            explanation: 'La transformation est définie lorsque l’intégrale impropre converge. Elle convertit certaines opérations différentielles en opérations algébriques dans le domaine de s.',
+            parameters: 't : variable temporelle ; s : variable complexe ; f(t) : fonction originale ; F(s) : transformée de Laplace.',
+            example: 'Pour f(t) = 1 et Re(s) > 0, F(s) = ∫₀∞e^(−st)dt = 1/s.',
+            result: 'L{1}(s) = 1/s pour Re(s) > 0.'
+          },
+          {
+            title: 'Transformée de Laplace de la dérivée',
+            formula: 'L{y′}(s) = sY(s) − y(0)',
+            explanation: 'La valeur initiale intervient explicitement. C’est ce qui rend la méthode adaptée aux problèmes à valeur initiale.',
+            parameters: 'Y(s) : transformée de y(t) ; y(0) : valeur initiale ; s : variable de Laplace.',
+            example: 'Pour y′ + 2y = 0 et y(0) = 3 : sY − 3 + 2Y = 0.',
+            result: 'Y(s) = 3/(s + 2), donc y(t) = 3e^(−2t).'
+          }
+        ],
+        sources: [
+          {
+            title: 'MIT OpenCourseWare — 18.03 Differential Equations, Notes and Exercises',
+            url: 'https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/pages/readings/notes_exe/'
+          },
+          {
+            title: 'MIT OpenCourseWare — 18.03 Differential Equations, Readings',
+            url: 'https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/pages/readings/'
+          },
+          {
+            title: 'University of Oxford — A1: Differential Equations 1 (2024–25)',
+            url: 'https://courses.maths.ox.ac.uk/course/view.php?id=5511'
+          }
+        ]
+      }
+    }
+  ]
+}
+
 ]
 
