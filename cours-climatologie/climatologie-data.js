@@ -4329,6 +4329,536 @@ url: 'https://www.usgs.gov/programs/climate-research-and-development-program/sci
 },
 
 
+{
+  id: 'differents-climats',
+  title: 'Les différents climats : de l’équatorial au polaire',
+  note: 'Douze chapitres, un par type de climat, d’après la classification de Köppen-Geiger (groupes A à E). Les seuils chiffrés suivent la version de Peel, Finlayson et McMahon (2007) ; la limite entre climats C et D varie selon les auteurs (0 °C chez Peel et al., −3 °C chez Köppen en 1936). Les climats de montagne (H), ajoutés dans certaines cartes, ne font pas partie de la classification de base et ne sont pas traités ici.',
+  chapters: [
+    {
+      id: 'equatorial-af',
+      title: 'Le climat équatorial (Af) : chaud et humide toute l’année',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe A (tropical)',
+      summary: 'Comprendre les critères du type Af, l’origine de la classification de Köppen, les mécanismes de la forêt équatoriale et les limites des seuils chiffrés.',
+      lesson: {
+        sections: [
+          'Dans la classification de Köppen-Geiger, le groupe A réunit les climats tropicaux : la température moyenne du mois le plus frais y est d’au moins 18 °C. Le type Af se définit en plus par l’absence de saison sèche : le mois le plus sec reçoit au moins 60 mm de précipitations (seuils de Peel, Finlayson et McMahon, 2007). La lettre « f » signale donc une pluviométrie suffisante tous les mois, et non une pluviométrie abondante en valeur absolue.',
+          'Cette classification repose sur l’idée que la végétation est le reflet du climat. Wladimir Köppen, formé à la botanique, publie en 1884 une carte des ceintures thermiques du globe, puis introduit vers 1900 un système mathématique de classification ; la version complète paraît en 1918 et la version finale en 1936, dans le cadre du Handbuch der Klimatologie qu’il dirige avec Rudolf Geiger. Après la mort de Köppen en 1940, Geiger poursuit les révisions. Dans la version de Beck et al. (2018), le système comprend cinq grandes classes et 30 sous-types.',
+          'Le climat Af se rencontre près de l’équateur, notamment dans le bassin amazonien, le bassin du Congo et des régions d’Asie du Sud-Est insulaire ; Singapour en est un exemple classique. Il est lié à la zone de convergence intertropicale, où les vents alizés des deux hémisphères se rejoignent : l’air chaud et humide s’élève, se refroidit et produit des nuages convectifs puissants et des pluies fréquentes. Toutes les zones équatoriales ne sont pas Af : une saison sèche courte ou marquée suffit à les faire passer en Am ou en Aw.',
+          'Les températures sont élevées et très régulières : l’amplitude thermique annuelle est faible, et l’écart entre le jour et la nuit est souvent plus marqué que l’écart entre le mois le plus chaud et le mois le plus frais. Les précipitations suivent souvent un rythme quotidien (averses en fin de journée) plutôt qu’un rythme saisonnier. Ces conditions favorisent la forêt dense sempervirente, l’une des formations végétales les plus riches en espèces de la planète.',
+          'Sous forêt équatoriale, les sols sont fréquemment anciens et lessivés par les pluies ; une grande partie des nutriments se trouve dans la biomasse vivante et dans la litière plutôt que dans le sol. Le défrichement peut donc fragiliser rapidement ces milieux. Enfin, les seuils (18 °C, 60 mm) sont des conventions : un lieu à 59 mm au mois le plus sec n’est plus classé Af alors que son climat réel diffère très peu de celui d’un lieu à 61 mm.'
+        ],
+        example: {
+          statement: 'Une station a une température moyenne de 25,8 °C au mois le plus frais et reçoit 62 mm de pluie au mois le plus sec. Quel est son type climatique ?',
+          calculation: 'Le mois le plus frais est à 25,8 °C, soit au moins 18 °C : groupe A. Le mois le plus sec reçoit 62 mm, soit au moins 60 mm : il n’y a pas de saison sèche au sens de Köppen (f).',
+          answer: 'Le climat est de type Af (équatorial). Si le mois le plus sec n’avait reçu que 55 mm, il aurait fallu comparer ce total au seuil 100 − P/25 pour choisir entre Am et Aw.'
+        },
+        exercise: {
+          question: 'Pourquoi un lieu à 59 mm de pluie au mois le plus sec n’est-il plus classé Af ?',
+          answer: 'Parce que le seuil de 60 mm au mois le plus sec est une convention de la classification : en dessous, le type n’est plus Af (il devient Am ou Aw), même si le climat réel est très proche.'
+        },
+        exercises: [
+          {
+            question: 'Quelle précipitation minimale le mois le plus sec doit-il recevoir pour un climat Af ?',
+            answer: 'Au moins 60 mm (dans la version de Peel et al., 2007).'
+          },
+          {
+            question: 'Quelle température moyenne le mois le plus frais doit-il atteindre pour appartenir au groupe A ?',
+            answer: 'Au moins 18 °C.'
+          },
+          {
+            question: 'Quel rôle la zone de convergence intertropicale joue-t-elle dans le climat Af ?',
+            answer: 'Elle réunit les alizés des deux hémisphères : l’air chaud et humide s’élève, ce qui produit des nuages convectifs et des pluies fréquentes.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Beck et al. (2018) — Present and future Köppen-Geiger climate classification maps at 1-km resolution (Scientific Data)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6207062' },
+          { title: 'Encyclopaedia Britannica — Wladimir Köppen', url: 'https://www.britannica.com/print/article/322065' },
+          { title: 'Charles H. Smith — Köppen, Wladimir Peter (notice chrono-biographique)', url: 'https://people.wku.edu/charles.smith/chronob/KOPP1846.htm' }
+        ]
+      }
+    },
+    {
+      id: 'mousson-am',
+      title: 'Le climat de mousson (Am) : une saison sèche courte, des pluies très abondantes',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe A (tropical)',
+      summary: 'Comprendre le critère pluviométrique du type Am, le mécanisme de la mousson et la différence entre un régime de mousson et le symbole Am.',
+      lesson: {
+        sections: [
+          'Le type Am appartient au groupe A (mois le plus frais à au moins 18 °C) mais n’est pas Af : au moins un mois reçoit moins de 60 mm. Dans la version de Peel et al. (2007), il est classé Am si le mois le plus sec reçoit au moins 100 − P/25 millimètres, P étant la précipitation annuelle moyenne en mm. Plus le total annuel est élevé, plus ce seuil baisse : à partir de 2 500 mm par an, il tombe à 0 mm, si bien qu’un climat de groupe A est alors forcément Af ou Am.',
+          'Le mot « mousson » vient d’un terme arabe signifiant « saison » et désigne une inversion saisonnière des vents, liée au contraste thermique entre continent et océan. En été, la terre se réchauffe plus vite que la mer : l’air s’élève sur le continent et attire un flux humide venu de l’océan, d’où une saison des pluies abondante. En hiver, le contraste s’inverse et le flux, plus sec, provient du continent.',
+          'Le climat Am est souvent décrit comme une transition entre Af et Aw : il associe une saison sèche courte à des pluies annuelles élevées, assez fortes pour que le sol garde de l’humidité et que la végétation tropicale dense subsiste malgré le mois sec. Les cartes de la NOAA le décrivent par une saison des pluies prononcée et une courte saison sèche. On l’observe dans certaines parties d’Asie du Sud et du Sud-Est, d’Afrique de l’Ouest et d’Amérique tropicale.',
+          'Le rythme des pluies est très contrasté : une saison humide intense, qui concentre l’essentiel du total annuel, puis une saison plus sèche. Pour les sociétés, la régularité de la mousson conditionne l’agriculture (notamment les cultures qui dépendent des pluies saisonnières, comme le riz) et la ressource en eau ; un retard ou un déficit de pluies peut avoir des conséquences importantes.',
+          'La mousson est aussi un phénomène atmosphérique que l’on rencontre hors du type Am. Une région peut avoir un régime de mousson et être classée Aw si son mois le plus sec reçoit trop peu de pluie, ou Cwa si ses hivers sont plus frais. Le symbole Am désigne seulement une combinaison précise de seuils pluviométriques et thermiques, et non le phénomène de mousson dans son ensemble.'
+        ],
+        example: {
+          statement: 'Une station du groupe A reçoit 1 800 mm de pluie par an, et son mois le plus sec en reçoit 40 mm. Est-elle de type Af, Am ou Aw ?',
+          calculation: 'Le mois le plus sec (40 mm) est inférieur à 60 mm : ce n’est pas un Af. Seuil Am/Aw : 100 − 1 800/25 = 100 − 72 = 28 mm. Comme 40 mm est supérieur ou égal à 28 mm, la condition du type Am est remplie.',
+          answer: 'Le climat est de type Am. Si le mois le plus sec n’avait reçu que 20 mm (inférieur à 28 mm), il aurait été classé Aw.'
+        },
+        exercise: {
+          question: 'Pourquoi le seuil de précipitation du mois le plus sec diminue-t-il quand le total annuel augmente ?',
+          answer: 'Parce que le critère est 100 − P/25 : plus P est grand, plus le seuil est bas. Un total annuel élevé compense une saison sèche courte.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le seuil Am/Aw pour une précipitation annuelle de 2 500 mm ?',
+            answer: '100 − 2 500/25 = 0 mm : tout climat de groupe A est alors Af ou Am.'
+          },
+          {
+            question: 'Qu’est-ce qu’une mousson, au sens météorologique ?',
+            answer: 'Une inversion saisonnière des vents liée au contraste thermique entre continent et océan, qui produit une saison des pluies et une saison plus sèche.'
+          },
+          {
+            question: 'Une région à régime de mousson est-elle forcément classée Am ?',
+            answer: 'Non. Elle peut être Aw ou Cwa selon ses températures et sa pluviométrie : Am correspond à une combinaison précise de seuils.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'NOAA — Köppen-Geiger : sous-catégories climatiques (Am, BSh, BWh)', url: 'https://noaa.gov/node/10392' },
+          { title: 'Kottek et al. (2006) — World Map of the Köppen-Geiger climate classification updated (Meteorologische Zeitschrift), version du NWS', url: 'https://w2.weather.gov/media/jetstream/global/Koppen-Geiger.pdf' },
+          { title: 'GLOBE — Köppen-Geiger Climate Classification Category Descriptions', url: 'https://globe.gov/documents/358135/359681/Koppen-Geiger+Guide' }
+        ]
+      }
+    },
+    {
+      id: 'savane-aw',
+      title: 'Le climat de savane (Aw) : l’alternance d’une saison humide et d’une saison sèche',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe A (tropical)',
+      summary: 'Comprendre le critère du type Aw, son importance à l’échelle mondiale, le rôle du déplacement saisonnier de la zone intertropicale et les limites de l’équivalence climat-végétation.',
+      lesson: {
+        sections: [
+          'Le type Aw appartient au groupe A (mois le plus frais à au moins 18 °C) et présente une saison sèche nette : le mois le plus sec reçoit moins de 60 mm et moins que le seuil 100 − P/25 (P : précipitation annuelle moyenne en mm). Dans la classification originale de Köppen, la lettre « w » indique un hiver sec et la lettre « s » un été sec ; la version de Peel et al. (2007) regroupe ces cas sous le seul symbole Aw.',
+          'D’après Peel et al. (2007), le type Aw couvre 11,5 % des terres émergées, ce qui en fait le deuxième type climatique le plus étendu après le désert chaud BWh (14,2 %). Le climat de savane est donc l’un des plus répandus de la planète, et concerne de vastes régions d’Afrique, d’Amérique du Sud, d’Asie du Sud et d’Australie du Nord.',
+          'La saison des pluies et la saison sèche s’expliquent par le déplacement saisonnier de la zone de convergence intertropicale, qui suit le Soleil en latitude au cours de l’année. Quand cette zone passe sur une région, les pluies convectives y sont abondantes ; quand elle s’en éloigne, l’air plus sec domine et les précipitations deviennent rares. Plus on s’éloigne de l’équateur dans la zone tropicale, plus la saison sèche s’allonge.',
+          'La végétation associée est la savane : un paysage de graminées avec des arbres plus ou moins dispersés. Les herbes repartent à la saison des pluies, tandis que beaucoup d’arbres perdent leurs feuilles ou résistent à la sécheresse. Les feux saisonniers et la pression des herbivores contribuent à maintenir ce paysage ouvert. Les activités humaines, comme l’élevage extensif et l’agriculture pluviale, dépendent fortement du calendrier des pluies et de leur variabilité d’une année à l’autre.',
+          'Le type Aw est un type climatique, non une description de la végétation. Un même climat Aw peut porter des paysages différents selon les sols, les feux, la pression de pâturage et l’histoire des usages. À l’inverse, des savanes peuvent exister dans des régions classées différemment. Utiliser la classification de Köppen, c’est donc accepter une simplification utile mais approximative des milieux réels.'
+        ],
+        example: {
+          statement: 'Une station du groupe A reçoit 1 200 mm de pluie par an, dont 8 mm au mois le plus sec. Quel est son type climatique ?',
+          calculation: 'Le mois le plus sec (8 mm) est inférieur à 60 mm : ce n’est pas un Af. Seuil Am/Aw : 100 − 1 200/25 = 100 − 48 = 52 mm. Comme 8 mm est inférieur à 52 mm, la condition de Am n’est pas remplie.',
+          answer: 'Le climat est de type Aw (savane).'
+        },
+        exercise: {
+          question: 'Pourquoi dit-on que le type Aw est l’un des plus répandus à l’échelle mondiale ?',
+          answer: 'Parce que, d’après Peel et al. (2007), il couvre 11,5 % des terres émergées, ce qui le place au deuxième rang des types climatiques derrière BWh (14,2 %).'
+        },
+        exercises: [
+          {
+            question: 'Quelle part des terres émergées le type Aw représente-t-il selon Peel et al. (2007) ?',
+            answer: '11,5 %.'
+          },
+          {
+            question: 'Quel phénomène explique l’alternance saison des pluies et saison sèche en climat Aw ?',
+            answer: 'Le déplacement saisonnier de la zone de convergence intertropicale, qui suit le Soleil en latitude.'
+          },
+          {
+            question: 'Un climat Aw produit-il toujours le même paysage de savane ?',
+            answer: 'Non. Le paysage dépend aussi des sols, des feux, du pâturage et des usages humains ; le climat n’est qu’un facteur.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Kottek et al. (2006) — World Map of the Köppen-Geiger climate classification updated (Meteorologische Zeitschrift), version du NWS', url: 'https://w2.weather.gov/media/jetstream/global/Koppen-Geiger.pdf' },
+          { title: 'NOAA — Köppen-Geiger Climate Classification, 2007 (Science On a Sphere)', url: 'https://sos.noaa.gov/datasets/koppen-geiger-climate-classification-2007/' }
+        ]
+      }
+    },
+    {
+      id: 'desertique-bw',
+      title: 'Le climat désertique (BW) : l’aridité plutôt que la chaleur',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe B (aride)',
+      summary: 'Comprendre le calcul du seuil d’aridité, la place du désert chaud BWh dans le monde, les causes de l’aridité et la différence entre désert chaud et désert froid.',
+      lesson: {
+        sections: [
+          'Le groupe B ne se définit pas par un seuil de température fixe mais par l’aridité : on compare les précipitations annuelles moyennes (MAP, en mm) à un seuil qui dépend de la température annuelle moyenne (MAT, en °C) et de la saison des pluies. Dans la version de Peel et al. (2007), Pseuil vaut 2 × MAT si au moins 70 % des pluies tombent en hiver, 2 × MAT + 28 si au moins 70 % tombent en été, et 2 × MAT + 14 sinon. Le climat est aride si MAP est inférieure à 10 × Pseuil ; c’est un désert (BW) si MAP est inférieure à 5 × Pseuil.',
+          'La logique du seuil est physique : plus il fait chaud, plus l’évaporation est forte et plus il faut de pluie pour que le sol reste humide ; les pluies d’été, qui s’évaporent davantage, exigent un seuil plus élevé que celles d’hiver. Les lettres h et k précisent la température : h si la température annuelle moyenne est d’au moins 18 °C (désert chaud, BWh), k sinon (désert froid, BWk).',
+          'Selon Peel et al. (2007), BWh est le type climatique le plus étendu du globe : il couvre 14,2 % des terres émergées. Le Sahara et les déserts d’Arabie en sont des exemples typiques. Les causes de l’aridité sont multiples : l’air qui descend dans les zones de hautes pressions subtropicales s’assèche en se réchauffant ; l’éloignement de l’océan (continentalité) limite l’humidité disponible ; les reliefs piègent l’humidité au vent et créent un « ombre pluviométrique » ; les courants marins froids refroidissent l’air côtier et réduisent la pluie.',
+          'Un désert se caractérise par des précipitations rares et irrégulières, une humidité de l’air souvent très faible, un fort ensoleillement et de grands écarts de température entre le jour et la nuit. La végétation, lorsqu’elle existe, est clairsemée et adaptée au manque d’eau. Les ressources en eau reposent souvent sur des nappes souterraines, des cours d’eau venus d’ailleurs ou des pluies exceptionnelles.',
+          'Désert ne signifie pas chaleur : un désert froid (BWk) existe dans des régions de moyenne latitude ou d’altitude, où la température annuelle moyenne est inférieure à 18 °C. Le critère est la faiblesse des précipitations par rapport à l’évaporation potentielle. Comme toute classification, celle-ci a des limites : une station située près d’un seuil peut changer de type avec quelques millimètres de pluie en plus ou en moins.'
+        ],
+        example: {
+          statement: 'Une station a une température annuelle moyenne de 20 °C, des pluies réparties sans dominante nette (moins de 70 % en été comme en hiver) et reçoit 200 mm par an. Quel est son type climatique ?',
+          calculation: 'Pseuil = 2 × 20 + 14 = 54. Seuil d’aridité : 10 × 54 = 540 mm ; seuil désertique : 5 × 54 = 270 mm. Comme 200 mm est inférieur à 270 mm, le climat est un désert (BW). La température annuelle moyenne (20 °C) est d’au moins 18 °C : h.',
+          answer: 'Le climat est de type BWh (désert chaud). Avec 400 mm, la station aurait été classée BS (steppe), car 270 mm ≤ 400 mm < 540 mm.'
+        },
+        exercise: {
+          question: 'Pourquoi le seuil d’aridité est-il plus élevé pour une station aux pluies d’été que pour une station aux pluies d’hiver, à température annuelle égale ?',
+          answer: 'Parce que les pluies d’été s’évaporent davantage : à MAP égale, elles profitent moins au sol. Le seuil est donc 2 × MAT + 28 pour l’été contre 2 × MAT pour l’hiver.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le type climatique le plus étendu sur les terres émergées selon Peel et al. (2007), et quelle part couvre-t-il ?',
+            answer: 'Le désert chaud BWh, avec 14,2 % des terres émergées.'
+          },
+          {
+            question: 'Que signifient les lettres h et k dans BWh et BWk ?',
+            answer: 'h : température annuelle moyenne d’au moins 18 °C (chaud). k : inférieure à 18 °C (froid).'
+          },
+          {
+            question: 'Citez deux causes de l’aridité.',
+            answer: 'Par exemple : l’air descendant des hautes pressions subtropicales, la continentalité, l’ombre pluviométrique derrière un relief, les courants marins froids.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Beck et al. (2018) — Present and future Köppen-Geiger climate classification maps at 1-km resolution (Scientific Data)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6207062' },
+          { title: 'GLOBE — Köppen-Geiger Climate Classification Category Descriptions', url: 'https://globe.gov/documents/358135/359681/Koppen-Geiger+Guide' }
+        ]
+      }
+    },
+    {
+      id: 'steppe-bs',
+      title: 'Le climat de steppe (BS) : le semi-aride, entre désert et climats humides',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe B (aride)',
+      summary: 'Comprendre la frontière entre steppe et désert, les sous-types BSh et BSk, les fonctions de transition de ce climat et les enjeux de sa variabilité.',
+      lesson: {
+        sections: [
+          'Le climat de steppe (BS) fait partie du groupe B : les précipitations annuelles moyennes (MAP) y sont inférieures à 10 × Pseuil, mais supérieures ou égales à 5 × Pseuil. Pseuil se calcule à partir de la température annuelle moyenne (MAT) : 2 × MAT si au moins 70 % des pluies tombent en hiver, 2 × MAT + 28 si au moins 70 % tombent en été, 2 × MAT + 14 sinon (Peel et al., 2007). La steppe est donc le climat semi-aride, deux fois plus arrosé au minimum que le désert voisin.',
+          'Les lettres h et k précisent la température : BSh quand la température annuelle moyenne est d’au moins 18 °C, BSk quand elle est inférieure. La NOAA décrit BSh comme une steppe de basses latitudes où l’évaporation dépasse en moyenne les précipitations, sans excéder l’évaporation potentielle. Les steppes froides BSk se situent plutôt aux latitudes moyennes ou en altitude.',
+          'La steppe joue souvent un rôle de transition. Elle borde fréquemment les déserts, comme au Sahel, au sud du Sahara, qui est un exemple couramment cité de BSh, ou en Asie centrale et dans l’ouest des Grandes Plaines nord-américaines, où l’on rencontre des BSk. La végétation dominante est une couverture herbacée plus ou moins continue, parfois associée à des buissons, plus dense que celle des déserts mais ne permettant pas la forêt.',
+          'Dans ces régions, la pluie est limitée et très variable d’une année à l’autre : une année déficitaire a des effets agricoles et pastoraux immédiats. Les sociétés y pratiquent souvent l’élevage extensif et des cultures adaptées, et la gestion de l’eau y est un enjeu central. La dégradation des terres en zones arides, semi-arides et subhumides sèches est ce que l’on appelle la désertification, qui ne se réduit pas à une avancée du désert au sens strict.',
+          'Comme pour le désert, le classement de la steppe dépend de seuils : une station proche de 5 × Pseuil ou de 10 × Pseuil peut basculer dans un type voisin avec peu de pluie en plus ou en moins. Les cartes de Beck et al. (2018) s’appuient pour cette raison sur plusieurs jeux de données et fournissent des niveaux de confiance, afin de signaler les zones dont le classement est incertain.'
+        ],
+        example: {
+          statement: 'Une station a une température annuelle moyenne de 10 °C, au moins 70 % de ses pluies en hiver, et reçoit 150 mm par an. Quel est son type climatique ?',
+          calculation: 'Pluies surtout en hiver : Pseuil = 2 × 10 = 20. Seuil d’aridité : 10 × 20 = 200 mm ; seuil désertique : 5 × 20 = 100 mm. Comme 100 ≤ 150 < 200, le climat est une steppe (BS). La température annuelle moyenne (10 °C) est inférieure à 18 °C : k.',
+          answer: 'Le climat est de type BSk (steppe froide).'
+        },
+        exercise: {
+          question: 'Entre quelles valeurs de précipitations annuelles (en fonction de Pseuil) un climat de groupe B est-il de type steppe ?',
+          answer: 'Entre 5 × Pseuil (inclus) et 10 × Pseuil (exclu).'
+        },
+        exercises: [
+          {
+            question: 'Que signifie la lettre S dans BS ?',
+            answer: 'Steppe, c’est-à-dire climat semi-aride, moins sec que le désert (W).'
+          },
+          {
+            question: 'Quelle différence y a-t-il entre BSh et BSk ?',
+            answer: 'BSh : température annuelle moyenne d’au moins 18 °C ; BSk : inférieure à 18 °C.'
+          },
+          {
+            question: 'Pourquoi les cartes de Beck et al. (2018) fournissent-elles des niveaux de confiance ?',
+            answer: 'Parce que les classes sont calculées à partir de plusieurs jeux de données dont l’écart sert à mesurer l’incertitude du classement.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Beck et al. (2018) — Present and future Köppen-Geiger climate classification maps at 1-km resolution (Scientific Data)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6207062' },
+          { title: 'NOAA — Köppen-Geiger : sous-catégories climatiques (Am, BSh, BWh)', url: 'https://noaa.gov/node/10392' },
+          { title: 'GLOBE — Köppen-Geiger Climate Classification Category Descriptions', url: 'https://globe.gov/documents/358135/359681/Koppen-Geiger+Guide' }
+        ]
+      }
+    },
+    {
+      id: 'mediterraneen-cs',
+      title: 'Le climat méditerranéen (Cs) : étés secs, hivers doux et pluvieux',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe C (tempéré)',
+      summary: 'Comprendre les critères du type Cs, ses cinq régions dans le monde, les mécanismes saisonniers qui l’expliquent et sa végétation caractéristique.',
+      lesson: {
+        sections: [
+          'Le groupe C rassemble les climats tempérés : dans la version de Peel et al. (2007), le mois le plus chaud dépasse 10 °C et le mois le plus frais est compris entre 0 °C et 18 °C. Le type Cs est caractérisé par un été sec : le mois le plus sec de l’été reçoit moins de 40 mm et moins du tiers de la quantité du mois le plus humide de l’hiver. Le troisième symbole précise la chaleur de l’été : Csa si le mois le plus chaud atteint au moins 22 °C, Csb si l’été est plus frais mais compte au moins quatre mois à 10 °C ou plus.',
+          'Ce climat n’existe que dans cinq régions du monde : le bassin méditerranéen, la Californie, le centre du Chili, la région du Cap en Afrique du Sud, et le sud-ouest et le sud de l’Australie. D’après l’UCLA, ces cinq régions ne représentent qu’environ 2 % des terres émergées mais abritent 16 % des espèces de plantes de la planète. Elles se situent surtout sur la façade ouest des continents, à des latitudes d’environ 32° à 40°, dans l’un ou l’autre hémisphère.',
+          'L’alternance saisonnière s’explique par le déplacement des grands systèmes atmosphériques. En été, les hautes pressions subtropicales s’étendent vers ces latitudes et bloquent les perturbations pluvieuses : le ciel est dégagé et les pluies sont rares. En hiver, les perturbations des latitudes moyennes se décalent vers l’équateur et apportent l’essentiel des précipitations. Des travaux cités dans la littérature font remonter l’apparition de ce climat au Pliocène, il y a environ 3,2 millions d’années.',
+          'La végétation est adaptée à la sécheresse estivale : arbustes sclérophylles à feuilles coriaces, souvent sempervirents, et forêts claires. Chaque région a ses formations propres : maquis et garrigue dans le bassin méditerranéen, matorral au Chili, fynbos en Afrique du Sud, chaparral en Californie, kwongan et mallee en Australie. Malgré des conditions climatiques voisines, ces régions ont des flores très différentes, ce qui en fait un cas d’étude classique en écologie comparée.',
+          'Ces régions connaissent des étés secs prolongés, des sécheresses récurrentes et des feux de végétation, qui font partie du fonctionnement de plusieurs de leurs écosystèmes. Elles sont également densément peuplées, avec une forte pression sur l’eau en été, ce qui rend la gestion de la ressource et la prévention des incendies particulièrement importantes. Les travaux sur le changement climatique y portent une attention particulière, parce qu’un climat défini par l’équilibre entre saisons sèche et humide peut se déplacer.'
+        ],
+        example: {
+          statement: 'Une station a 9 °C au mois le plus frais et 24 °C au mois le plus chaud. Son mois le plus sec (en été) reçoit 8 mm, et son mois le plus humide (en hiver) 90 mm. Quel est son type climatique ?',
+          calculation: 'Groupe C : le mois le plus frais est entre 0 et 18 °C, le mois le plus chaud dépasse 10 °C. Été sec : 8 mm est inférieur à 40 mm, et 8 mm est inférieur à 90/3 = 30 mm : s. Le mois le plus chaud (24 °C) atteint au moins 22 °C : a.',
+          answer: 'Le climat est de type Csa (méditerranéen à été chaud).'
+        },
+        exercise: {
+          question: 'Pourquoi les climats méditerranéens ne se trouvent-ils que dans quelques régions du monde ?',
+          answer: 'Parce qu’ils exigent une combinaison précise : hautes pressions subtropicales en été, perturbations des latitudes moyennes en hiver, et une façade ouest de continent vers 32° à 40° de latitude.'
+        },
+        exercises: [
+          {
+            question: 'Citez les cinq régions du monde à climat méditerranéen.',
+            answer: 'Le bassin méditerranéen, la Californie, le centre du Chili, la région du Cap (Afrique du Sud), le sud-ouest et le sud de l’Australie.'
+          },
+          {
+            question: 'Quelle part des terres émergées ces cinq régions occupent-elles, et quelle part des espèces de plantes abritent-elles selon l’UCLA ?',
+            answer: 'Environ 2 % des terres émergées et 16 % des espèces de plantes.'
+          },
+          {
+            question: 'Que signifie la lettre s dans Cs ?',
+            answer: 'Un été sec : le mois le plus sec de l’été reçoit moins de 40 mm et moins du tiers du mois le plus humide de l’hiver.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'UCLA, Ecology and Evolutionary Biology — Mediterranean-type climate regions', url: 'https://faculty.eeb.ucla.edu/rundel/regions.html' },
+          { title: 'Université de Barcelone — Mediterranean climate rivers over the world (chapitre 3)', url: 'https://diposit.ub.edu/dspace/bitstream/2445/35289/3/CAPITOL3.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'oceanique-cfb',
+      title: 'Le climat océanique (Cfb) : douceur et pluies réparties toute l’année',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe C (tempéré)',
+      summary: 'Comprendre les critères Cfb et Cfc, les régions concernées, le rôle de l’océan et des vents d’ouest, et les caractères thermiques et pluviométriques de ce climat.',
+      lesson: {
+        sections: [
+          'Le type Cfb est un climat tempéré (groupe C : mois le plus frais entre 0 et 18 °C, mois le plus chaud supérieur à 10 °C) sans saison sèche marquée (f). Le troisième symbole b indique un été tempéré : le mois le plus chaud reste inférieur à 22 °C, avec au moins quatre mois à 10 °C ou plus (Peel et al., 2007). Si moins de quatre mois atteignent 10 °C et que le mois le plus froid est supérieur à −38 °C, le type devient Cfc.',
+          'On l’observe sur les façades océaniques des latitudes moyennes, notamment en Europe de l’Ouest (le nord de la France y est couramment classé), dans les îles Britanniques, sur la côte nord-ouest de l’Amérique du Nord, dans le sud-est de l’Australie, en Nouvelle-Zélande et dans le sud du Chili. La carte de Peel et al. (2007) en donne la répartition fine à l’échelle des continents.',
+          'Le facteur principal est l’influence de l’océan. Les vents d’ouest dominants aux latitudes moyennes apportent de l’air maritime, dont la température varie peu parce que l’eau se réchauffe et se refroidit plus lentement que la terre. Les hivers y sont donc doux et les étés frais. Dans le nord-ouest de l’Europe, les eaux chaudes de l’Atlantique Nord contribuent à cette douceur hivernale.',
+          'Les températures présentent une amplitude annuelle modérée, les gelées sont possibles mais généralement peu durables, et les pluies sont réparties sur toute l’année, avec des passages pluvieux fréquents liés aux perturbations venues de l’ouest. Le ciel est souvent nuageux. Cette combinaison favorise les forêts de feuillus et de conifères tempérés, les prairies et une agriculture mixte.',
+          'Le type Cfc, à été court et frais, est beaucoup plus restreint que Cfb : il correspond à des régions très océaniques où moins de quatre mois atteignent 10 °C. Il montre que la frontière entre climats tempérés et climats boréaux dépend d’un décompte de mois chauds, donc d’un seuil de 10 °C plutôt que d’une différence nette de nature.'
+        ],
+        example: {
+          statement: 'Une station a 4 °C au mois le plus frais et 18 °C au mois le plus chaud, six mois à 10 °C ou plus, et aucun mois sec (ni s ni w). Quel est son type climatique ?',
+          calculation: 'Groupe C : le mois le plus frais est entre 0 et 18 °C, le mois le plus chaud dépasse 10 °C. Pas de saison sèche : f. Le mois le plus chaud est inférieur à 22 °C, et au moins quatre mois atteignent 10 °C : b.',
+          answer: 'Le climat est de type Cfb (océanique). Avec seulement trois mois à 10 °C ou plus, il aurait été de type Cfc.'
+        },
+        exercise: {
+          question: 'Pourquoi les hivers sont-ils plus doux en climat océanique qu’à la même latitude à l’intérieur d’un continent ?',
+          answer: 'Parce que l’air d’origine océanique, apporté par les vents d’ouest, garde la douceur de l’eau, qui se refroidit plus lentement que la terre.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie la lettre b dans Cfb ?',
+            answer: 'Un mois le plus chaud inférieur à 22 °C, avec au moins quatre mois à 10 °C ou plus.'
+          },
+          {
+            question: 'Quelle différence y a-t-il entre Cfb et Cfc ?',
+            answer: 'Cfb compte au moins quatre mois à 10 °C ou plus ; Cfc en compte moins de quatre.'
+          },
+          {
+            question: 'Quel rôle les vents d’ouest jouent-ils dans ce climat ?',
+            answer: 'Ils apportent de l’air maritime sur les côtes ouest des continents des latitudes moyennes, ce qui adoucit les températures et entretient des pluies toute l’année.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Kottek et al. (2006) — World Map of the Köppen-Geiger climate classification updated (Meteorologische Zeitschrift), version du NWS', url: 'https://w2.weather.gov/media/jetstream/global/Koppen-Geiger.pdf' },
+          { title: 'NOAA — Köppen-Geiger Climate Classification, 2007 (Science On a Sphere)', url: 'https://sos.noaa.gov/datasets/koppen-geiger-climate-classification-2007/' }
+        ]
+      }
+    },
+    {
+      id: 'subtropical-humide-cfa',
+      title: 'Le climat subtropical humide (Cfa) : étés chauds et humides, hivers doux',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe C (tempéré)',
+      summary: 'Comprendre le critère du type Cfa, sa différence avec Cwa, sa localisation sur les façades orientales des continents et ses régimes de pluie estivale.',
+      lesson: {
+        sections: [
+          'Le type Cfa appartient au groupe C (mois le plus frais entre 0 et 18 °C, mois le plus chaud supérieur à 10 °C), sans saison sèche marquée (f), avec un été chaud : le mois le plus chaud atteint au moins 22 °C (a). Si l’hiver est nettement sec (le mois le plus sec de l’hiver reçoit moins du dixième du mois le plus humide de l’été), le type devient Cwa (Peel et al., 2007). Les deux types partagent la chaleur estivale et se distinguent par la saisonnalité de la pluie.',
+          'Ce climat se situe en général sur les façades orientales des continents, entre environ 25° et 40° de latitude : le sud-est des États-Unis, l’est de la Chine et le sud du Japon, le sud-est de l’Amérique du Sud (Pampa), l’est de l’Australie. Tokyo, Shanghai, Buenos Aires ou Sydney sont souvent citées comme villes de climat Cfa.',
+          'En été, l’air tropical chaud et humide venu des océans pénètre ces régions, d’où des températures élevées, une forte humidité et des orages fréquents. L’Asie orientale est en outre soumise à un régime de mousson, qui renforce les pluies d’été. Les cyclones tropicaux (ouragans, typhons) peuvent aussi toucher ces régions en fin d’été et en automne, et constituent un risque majeur dans le sud-est des États-Unis et en Asie orientale. En hiver, les perturbations des latitudes moyennes apportent des pluies et parfois de la neige.',
+          'Les hivers sont doux à frais, avec des gelées épisodiques, et les précipitations sont suffisantes toute l’année pour soutenir des forêts de feuillus et mixtes, ainsi qu’une agriculture variée (céréales, riz, cultures de plein champ). Ces régions comptent parmi les plus densément peuplées du globe, notamment en Chine orientale.',
+          'La limite entre climats C et D dépend du seuil utilisé : Peel et al. (2007) retiennent 0 °C pour le mois le plus frais, alors que Köppen retenait −3 °C en 1936. Selon la convention, une station dont le mois le plus frais est à −1 °C est donc classée C ou D. Il faut toujours préciser la version de la classification employée avant de comparer des cartes.'
+        ],
+        example: {
+          statement: 'Une station a 5 °C au mois le plus frais et 27 °C au mois le plus chaud. Son mois le plus sec de l’hiver reçoit 30 mm, et son mois le plus humide de l’été 250 mm. Quel est son type climatique ?',
+          calculation: 'Groupe C : le mois le plus frais est entre 0 et 18 °C. Le mois le plus chaud (27 °C) atteint au moins 22 °C : a. Test d’hiver sec (w) : 250/10 = 25 mm ; comme 30 mm n’est pas inférieur à 25 mm, la condition de w n’est pas remplie. Il n’y a pas non plus d’été sec (s) : f.',
+          answer: 'Le climat est de type Cfa. Si le mois le plus sec de l’hiver n’avait reçu que 20 mm, il aurait été de type Cwa.'
+        },
+        exercise: {
+          question: 'Pourquoi les climats subtropicaux humides se trouvent-ils plutôt sur les façades orientales des continents ?',
+          answer: 'Parce que ces façades reçoivent en été de l’air tropical chaud et humide venu des océans, souvent avec un régime de mousson ou de cyclones tropicaux, ce qui assure des pluies d’été abondantes.'
+        },
+        exercises: [
+          {
+            question: 'Quel seuil de température le mois le plus chaud doit-il atteindre pour que la lettre a soit attribuée ?',
+            answer: 'Au moins 22 °C.'
+          },
+          {
+            question: 'Quelle différence y a-t-il entre Cfa et Cwa ?',
+            answer: 'Cfa n’a pas de saison sèche marquée ; Cwa a un hiver sec (mois le plus sec de l’hiver inférieur au dixième du mois le plus humide de l’été).'
+          },
+          {
+            question: 'Quelle différence de convention existe-t-il pour la limite entre climats C et D ?',
+            answer: '0 °C pour le mois le plus frais chez Peel et al. (2007) ; −3 °C chez Köppen (1936).'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Kottek et al. (2006) — World Map of the Köppen-Geiger climate classification updated (Meteorologische Zeitschrift), version du NWS', url: 'https://w2.weather.gov/media/jetstream/global/Koppen-Geiger.pdf' },
+          { title: 'GLOBE — Köppen-Geiger Climate Classification Category Descriptions', url: 'https://globe.gov/documents/358135/359681/Koppen-Geiger+Guide' }
+        ]
+      }
+    },
+    {
+      id: 'continental-d',
+      title: 'Le climat continental (D) : de grands écarts de température entre l’été et l’hiver',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe D (continental ou « de neige »)',
+      summary: 'Comprendre le critère du groupe D, la notion de continentalité, la répartition quasi exclusive dans l’hémisphère Nord et les sous-types Dfa, Dfb et Dw.',
+      lesson: {
+        sections: [
+          'Le groupe D réunit les climats où l’été est assez chaud pour que le mois le plus chaud dépasse 10 °C, mais où l’hiver est froid : le mois le plus frais est à 0 °C ou moins dans la version de Peel et al. (2007), à moins de −3 °C chez Köppen (1936). Le schéma de Geiger et Pohl (1953) parle de climats « de neige ». Les lettres suivent la même logique que pour le groupe C : f sans saison sèche, s ou w selon la saison sèche, et a, b, c ou d pour la chaleur de l’été et la rigueur de l’hiver.',
+          'La continentalité explique ce climat. L’eau se réchauffe et se refroidit plus lentement que la terre ; loin de l’océan, l’air n’est plus adouci par la mer et les températures suivent de près l’insolation. L’amplitude thermique annuelle est alors très grande : des étés chauds ou tièdes et des hivers froids avec neige durable. Ce climat est presque absent de l’hémisphère Sud, où il y a peu de terres émergées aux latitudes moyennes et élevées ; il est donc surtout répandu en Amérique du Nord, en Europe de l’Est et en Asie.',
+          'Dfa et Dfb désignent les climats continentaux humides, sans saison sèche : Dfa a un été chaud (mois le plus chaud d’au moins 22 °C), Dfb un été plus frais mais avec au moins quatre mois à 10 °C ou plus. Les villes de Moscou et de Montréal sont couramment citées comme exemples de Dfb. Les pluies tombent surtout en été et la neige en hiver.',
+          'En Asie orientale, le type Dw (hiver sec) apparaît : l’hiver y est dominé par de l’air froid et sec venu du continent, tandis que la mousson d’été apporte des pluies. Le type Ds (été sec) est rare. La végétation naturelle est la forêt mixte ou de feuillus, qui laisse place aux prairies et aux cultures de céréales dans les régions plus sèches.',
+          'Les saisons y sont très marquées et les sociétés se sont adaptées à des hivers rigoureux (chauffage, isolation, calendrier agricole), avec une période de végétation limitée par le gel. Comme pour tous les types, les limites sont conventionnelles : les cartes ne montrent que des moyennes mensuelles et ne rendent pas compte des vagues de froid, des canicules ou de la neige en altitude.'
+        ],
+        example: {
+          statement: 'Une station a −12 °C au mois le plus frais et 21 °C au mois le plus chaud, cinq mois à 10 °C ou plus, et aucun mois sec. Quel est son type climatique ?',
+          calculation: 'Le mois le plus frais est à 0 °C ou moins et le mois le plus chaud dépasse 10 °C : groupe D. Pas de saison sèche : f. Le mois le plus chaud (21 °C) est inférieur à 22 °C et au moins quatre mois atteignent 10 °C : b.',
+          answer: 'Le climat est de type Dfb (continental humide à été tempéré).'
+        },
+        exercise: {
+          question: 'Pourquoi le climat continental est-il presque absent de l’hémisphère Sud ?',
+          answer: 'Parce que les terres émergées y sont peu étendues aux latitudes moyennes et élevées : l’influence modératrice de l’océan s’y fait sentir presque partout, et l’amplitude thermique reste faible.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le critère de température du groupe D dans la version de Peel et al. (2007) ?',
+            answer: 'Mois le plus chaud supérieur ou égal à 10 °C et mois le plus frais inférieur ou égal à 0 °C.'
+          },
+          {
+            question: 'Qu’est-ce que la continentalité ?',
+            answer: 'L’éloignement de l’océan, qui supprime son effet modérateur et accroît l’amplitude thermique annuelle.'
+          },
+          {
+            question: 'Que signifie la lettre w dans Dw ?',
+            answer: 'Un hiver sec (la saison sèche tombe en hiver).'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Kottek et al. (2006) — World Map of the Köppen-Geiger climate classification updated (Meteorologische Zeitschrift), version du NWS', url: 'https://w2.weather.gov/media/jetstream/global/Koppen-Geiger.pdf' },
+          { title: 'GLOBE — Köppen-Geiger Climate Classification Category Descriptions', url: 'https://globe.gov/documents/358135/359681/Koppen-Geiger+Guide' }
+        ]
+      }
+    },
+    {
+      id: 'subarctique-dfc-dfd',
+      title: 'Le climat subarctique (Dfc et Dfd) : la taïga et le pergélisol',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe D · Cryosphère',
+      summary: 'Comprendre les critères Dfc et Dfd, la place de la taïga, la définition du pergélisol et les effets du réchauffement sur les sols gelés.',
+      lesson: {
+        sections: [
+          'Le type Dfc est un climat continental (groupe D) sans saison sèche (f) dont l’été est court et frais : le mois le plus chaud dépasse 10 °C, mais moins de quatre mois atteignent cette température (c). Le type Dfd a le même profil avec un hiver extrêmement rigoureux : le mois le plus frais est à −38 °C ou moins (Peel et al., 2007). Les étés sont brefs, mais les journées longues de la saison chaude permettent une croissance végétale rapide.',
+          'La végétation caractéristique est la forêt boréale ou taïga, dominée par les conifères. Ce climat s’étend sur de vastes zones du Canada, de l’Alaska, de la Scandinavie et surtout de la Sibérie. Les hivers froids et longs, la courte saison de croissance et des sols souvent pauvres limitent la diversité des arbres, mais la taïga occupe de très grandes superficies.',
+          'Le type Dfd est lié aux plus fortes amplitudes thermiques du globe. Il apparaît dans le nord-est de la Sibérie, où le froid hivernal est extrême et l’été peut rester chaud. Le contraste entre un hiver sous −38 °C en moyenne mensuelle et un été à plus de 10 °C illustre la continentalité extrême : aucun océan ne tempère ces régions.',
+          'Ces climats sont souvent associés au pergélisol. D’après le NSIDC, le pergélisol est un sol, un sédiment ou une roche qui reste à 0 °C ou en dessous pendant au moins deux années consécutives ; il se définit uniquement par la température, et non par sa teneur en glace, son enneigement ou sa localisation. Environ un quart des terres de l’hémisphère Nord possède une couche souterraine gelée toute l’année. Un climat Dfc ou Dfd ne garantit pas la présence de pergélisol, mais en rend l’existence plausible.',
+          'Le réchauffement du climat dégrade le pergélisol. Le NRDC, citant le NSIDC, indique qu’il y aurait aujourd’hui 10 % de sol gelé en moins dans l’hémisphère Nord qu’au début des années 1900. Le dégel fragilise les infrastructures, modifie les paysages et libère du carbone stocké depuis des milliers d’années. Les cartes de Beck et al. (2018) projettent aussi des déplacements de classes climatiques à l’horizon 2071-2100 selon le scénario RCP8.5, ce qui concerne ces latitudes.'
+        ],
+        example: {
+          statement: 'Une station a −42 °C au mois le plus frais et 16 °C au mois le plus chaud, trois mois à 10 °C ou plus, et aucun mois sec. Quel est son type climatique ?',
+          calculation: 'Le mois le plus frais est à 0 °C ou moins et le mois le plus chaud dépasse 10 °C : groupe D. Pas de saison sèche : f. Seulement trois mois à 10 °C ou plus, donc ni a ni b ; le mois le plus frais est à −38 °C ou moins : d.',
+          answer: 'Le climat est de type Dfd (subarctique à hiver très froid). Avec −30 °C au mois le plus frais, il aurait été de type Dfc.'
+        },
+        exercise: {
+          question: 'Pourquoi un climat Dfc n’implique-t-il pas à lui seul la présence de pergélisol ?',
+          answer: 'Parce que le pergélisol se définit par la température du sol (0 °C ou moins pendant au moins deux ans) et dépend aussi de la neige, du sol et de la végétation ; le climat ne fait que rendre sa présence plausible.'
+        },
+        exercises: [
+          {
+            question: 'Comment le NSIDC définit-il le pergélisol ?',
+            answer: 'Du sol, du sable, du sédiment ou de la roche qui reste à 0 °C ou en dessous pendant au moins deux années consécutives.'
+          },
+          {
+            question: 'Quelle fraction des terres de l’hémisphère Nord possède une couche gelée toute l’année selon le NSIDC ?',
+            answer: 'Environ un quart.'
+          },
+          {
+            question: 'Quel seuil distingue Dfd de Dfc pour la température du mois le plus frais ?',
+            answer: 'Dfd : −38 °C ou moins ; Dfc : au-dessus de −38 °C.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'NSIDC — Frozen Ground & Permafrost', url: 'https://nsidc.org/node/18236' },
+          { title: 'NRDC — Permafrost: Everything You Need to Know', url: 'https://www.nrdc.org/stories/permafrost-everything-you-need-know' },
+          { title: 'Beck et al. (2018) — Present and future Köppen-Geiger climate classification maps at 1-km resolution (Scientific Data)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6207062' }
+        ]
+      }
+    },
+    {
+      id: 'toundra-et',
+      title: 'Le climat de toundra (ET) : un été trop frais pour les arbres',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe E (polaire)',
+      summary: 'Comprendre le critère du type ET, la logique du seuil de 10 °C, la végétation de la toundra et les évolutions observées dans l’Arctique.',
+      lesson: {
+        sections: [
+          'Le groupe E rassemble les climats polaires : le mois le plus chaud reste en dessous de 10 °C. Le type ET (toundra) correspond aux cas où le mois le plus chaud est compris entre 0 °C et 10 °C ; le type EF (calotte glaciaire) à ceux où aucun mois n’atteint 0 °C (Peel et al., 2007). Le groupe E est le seul défini uniquement par un critère de température d’été.',
+          'Le seuil de 10 °C s’explique par la volonté de Köppen de relier les limites climatiques à la végétation. Selon l’explication usuelle, un mois le plus chaud inférieur à 10 °C correspond à peu près à la limite polaire ou altitudinale des arbres : en dessous, la saison de croissance est trop fraîche pour permettre la forêt. Le seuil est donc une approximation de la limite des arbres plutôt qu’une frontière nette.',
+          'La végétation de la toundra est basse : mousses, lichens, herbes et petits arbustes. Elle occupe les marges arctiques de l’Amérique du Nord et de l’Eurasie, des îles de l’océan Arctique et les côtes du Groenland. La toundra est fréquemment associée au pergélisol. Pendant l’été, seule une couche superficielle dégèle, ce qui explique que l’eau stagne en surface et que les racines restent peu profondes.',
+          'Les précipitations sont faibles dans la plupart de ces régions, mais l’évaporation étant limitée par le froid, le sol reste souvent humide. Les hivers sont longs et très froids, avec une nuit polaire en haute latitude ; les étés sont brefs et frais, avec un jour très long. La faune et la flore sont adaptées à ces rythmes saisonniers extrêmes.',
+          'La toundra est l’un des milieux où les changements sont les plus rapides. Selon le CREAF, la végétation arctique évolue : des espèces des forêts boréales et des zones de transition, comme certaines herbes et certains arbustes, progressent vers l’Arctique. Le dégel du pergélisol et la multiplication des feux peuvent libérer davantage de gaz à effet de serre. Un seuil de 10 °C étant sensible, un réchauffement même modéré déplace la frontière entre ET et les climats boréaux.'
+        ],
+        example: {
+          statement: 'Une station a 6 °C au mois le plus chaud. Quel est son groupe climatique, et son type ? Que devient-il avec −2 °C au mois le plus chaud ?',
+          calculation: 'Le mois le plus chaud (6 °C) est inférieur à 10 °C : groupe E. Il est supérieur ou égal à 0 °C : ET. Avec −2 °C, aucun mois n’atteint 0 °C : EF.',
+          answer: 'À 6 °C, le climat est de type ET (toundra) ; à −2 °C, il serait de type EF (calotte glaciaire).'
+        },
+        exercise: {
+          question: 'Pourquoi dit-on que le seuil de 10 °C du mois le plus chaud est une approximation de la limite des arbres ?',
+          answer: 'Parce que Köppen a cherché à faire correspondre ses seuils à la végétation : en dessous de 10 °C en été, la saison de croissance est généralement trop fraîche pour la forêt, mais cette limite varie localement.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’intervalle de température du mois le plus chaud pour un climat ET ?',
+            answer: 'Au moins 0 °C et moins de 10 °C.'
+          },
+          {
+            question: 'Quels types de végétation dominent la toundra ?',
+            answer: 'Des mousses, des lichens, des herbes et de petits arbustes (pas de forêt).'
+          },
+          {
+            question: 'Pourquoi la toundra est-elle souvent associée au pergélisol ?',
+            answer: 'Parce que le froid prolongé maintient le sol sous 0 °C pendant des années ; seule une couche superficielle dégèle en été.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Beck et al. (2018) — Present and future Köppen-Geiger climate classification maps at 1-km resolution (Scientific Data)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6207062' },
+          { title: 'CREAF — What is permafrost?', url: 'https://www.creaf.cat/en/articles/what-permafrost' },
+          { title: 'NSIDC — Frozen Ground & Permafrost', url: 'https://nsidc.org/node/18236' }
+        ]
+      }
+    },
+    {
+      id: 'calotte-glaciaire-ef',
+      title: 'Le climat de calotte glaciaire (EF) : le gel permanent',
+      field: 'Climatologie · Classification de Köppen-Geiger · Groupe E (polaire)',
+      summary: 'Comprendre le critère du type EF, sa localisation, les caractères de l’intérieur des calottes et la manière dont les cartes de Beck et al. (2018) projettent les climats futurs.',
+      lesson: {
+        sections: [
+          'Le type EF est le climat le plus froid de la classification de Köppen-Geiger : la température moyenne de tous les mois est inférieure à 0 °C (Peel et al., 2007), de sorte que la neige ne fond pas à l’échelle du mois. La lettre F vient de « Frost » (gel) dans le schéma de Köppen. Il n’existe aucune saison chaude ; l’année ne se divise pas en saison de croissance et saison de repos.',
+          'Ce climat se rencontre sur l’intérieur de l’Antarctique et au centre de l’inlandsis du Groenland, c’est-à-dire là où se trouvent les calottes glaciaires. Le froid permanent permet l’accumulation de la neige, qui se transforme progressivement en glace. Les terres libres de glace des marges arctiques et antarctiques relèvent plutôt du type ET.',
+          'Malgré le froid, les précipitations y sont très faibles : l’air très froid contient peu de vapeur d’eau. L’intérieur de l’Antarctique est ainsi extrêmement sec, ce qui en fait, au sens de la quantité de précipitations, un désert polaire. L’éclat de la neige et de la glace renvoie vers l’espace une grande partie du rayonnement solaire reçu, ce qui entretient le froid (effet d’albédo). La nuit polaire et le jour permanent d’été rythment l’année en haute latitude.',
+          'Les conditions sont extrêmes pour les êtres vivants : la végétation y est absente et la vie se concentre sur les marges côtières. En revanche, les calottes glaciaires sont de gigantesques réserves d’eau douce et d’archives climatiques : les carottes de glace conservent des informations sur les climats passés, jusqu’à des centaines de milliers d’années.',
+          'Beck et al. (2018) proposent une carte actuelle (1980-2016) à 1 km de résolution, calculée à partir de plusieurs jeux de données, et une carte future (2071-2100) construite à partir de 32 modèles climatiques sous le scénario RCP8.5. Les deux cartes sont accompagnées de niveaux de confiance. Pour un climat défini par un seuil de 0 °C, une petite hausse de température peut changer le type : c’est pourquoi la classification est un outil de comparaison et d’alerte, non une prévision précise.'
+        ],
+        example: {
+          statement: 'Une station a −8 °C au mois le plus chaud. Quel est son type climatique ?',
+          calculation: 'Le mois le plus chaud (−8 °C) est inférieur à 10 °C : groupe E. Il est aussi inférieur à 0 °C : aucun mois n’atteint 0 °C.',
+          answer: 'Le climat est de type EF (calotte glaciaire).'
+        },
+        exercise: {
+          question: 'Pourquoi l’intérieur de l’Antarctique est-il à la fois très froid et très sec ?',
+          answer: 'Parce que l’air très froid ne peut contenir que très peu de vapeur d’eau : les précipitations y sont donc faibles malgré la présence d’une immense couche de glace.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le critère de température du type EF ?',
+            answer: 'La température moyenne de chaque mois est inférieure à 0 °C.'
+          },
+          {
+            question: 'Pour quelles périodes et avec quel scénario les cartes de Beck et al. (2018) sont-elles établies ?',
+            answer: 'Période actuelle 1980-2016 ; période future 2071-2100 avec le scénario RCP8.5, à partir de 32 modèles climatiques.'
+          },
+          {
+            question: 'Combien de classes principales et de sous-types la classification de Köppen-Geiger compte-t-elle selon Beck et al. (2018) ?',
+            answer: 'Cinq classes principales et 30 sous-types.'
+          }
+        ],
+        sources: [
+          { title: 'Peel, Finlayson et McMahon (2007) — Updated world map of the Köppen-Geiger climate classification (HESS)', url: 'https://hess.copernicus.org/articles/11/1633/2007/' },
+          { title: 'Beck et al. (2018) — Present and future Köppen-Geiger climate classification maps at 1-km resolution (Scientific Data)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6207062' },
+          { title: 'NOAA — Köppen-Geiger Climate Classification, 2007 (Science On a Sphere)', url: 'https://sos.noaa.gov/datasets/koppen-geiger-climate-classification-2007/' },
+          { title: 'GLOBE — Köppen-Geiger Climate Classification Category Descriptions', url: 'https://globe.gov/documents/358135/359681/Koppen-Geiger+Guide' }
+        ]
+      }
+    }
+  ]
+},
+
 ]
 
 
