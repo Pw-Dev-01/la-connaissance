@@ -3223,5 +3223,315 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'grandes-forets',
+  sortYear: false,
+  title: 'Les grandes forêts depuis leur formation',
+  note: 'Sept chapitres consacrés aux grands ensembles forestiers de la planète, classés par superficie de référence décroissante. Attention : les chiffres ne mesurent pas tous exactement la même chose. Selon les sources, ils désignent l’étendue d’un biome, une couverture forestière cartographiée, une écorégion ou le périmètre officiel d’un territoire forestier. Les superficies sont donc accompagnées de leur définition et de leur date de référence lorsqu’elles sont disponibles. Elles ne constituent pas un classement homogène de la seule surface actuellement couverte par des arbres. sortYear reste à false, car aucune date unique ne peut résumer la formation de ces écosystèmes.',
+  chapters: [
+    {
+      id: 'foret-boreale-taiga',
+      title: 'La forêt boréale : la grande ceinture forestière du Nord',
+      field: 'Écologie · Biomes boréaux de l’Amérique du Nord et de l’Eurasie',
+      summary: 'Étudier la taïga, son étendue circumpolaire, son histoire liée aux glaciations, ses espèces adaptées au froid et son rôle dans les cycles du carbone et de l’eau.',
+      lesson: {
+        sections: [
+          'La forêt boréale, appelée taïga en Eurasie, forme une vaste zone écologique dans les hautes latitudes de l’hémisphère Nord. Elle traverse notamment l’Alaska et le Canada, puis la Scandinavie et la Russie. Son étendue est estimée à environ 15,1 millions de km² pour le biome boréal dans une étude scientifique fondée sur la carte mondiale des écorégions terrestres. Ce chiffre décrit l’emprise du biome, qui comprend aussi des tourbières, des zones humides, des lacs, des clairières et des secteurs peu boisés : il ne signifie donc pas que 15,1 millions de km² sont partout couverts d’une forêt dense.',
+          'La taïga actuelle est le résultat d’une longue histoire climatique. Les alternances entre périodes glaciaires et interglaciaires ont déplacé les limites des arbres, fragmenté certaines populations et permis leur recolonisation lorsque le climat s’est réchauffé. Il serait incorrect de donner une date unique de naissance à la forêt boréale : sa composition et ses limites ont changé à plusieurs reprises, et les peuplements actuels ne sont pas tous du même âge.',
+          'Les arbres dominants sont souvent des conifères tels que les épicéas, les pins et les mélèzes. Des bouleaux, des peupliers et d’autres feuillus apparaissent également, notamment après les incendies ou dans les secteurs plus favorables. Les hivers sont longs et froids, la saison de croissance est courte et les sols peuvent être acides, pauvres en éléments nutritifs ou durablement engorgés d’eau. Les mousses, les lichens et les arbustes bas jouent un rôle important dans le fonctionnement de ces milieux.',
+          'Les incendies, les insectes, les vents et les épisodes de gel font partie de la dynamique naturelle de nombreuses forêts boréales. Les perturbations ouvrent le couvert et créent des conditions permettant la régénération. Leur fréquence et leur intensité varient fortement selon les régions. Le réchauffement climatique modifie déjà plusieurs paramètres : durée de la saison de croissance, sécheresses, fréquence des incendies, dégel du pergélisol et répartition géographique de certaines espèces.',
+          'La forêt boréale stocke une quantité importante de carbone dans les arbres, les sols et surtout, dans de nombreuses régions, les matières organiques accumulées dans les tourbières. Ce stockage n’est pas permanent dans toutes les circonstances : un incendie intense ou le dégel de sols gelés peut libérer une partie du carbone accumulé. La conservation de la taïga concerne donc à la fois les arbres visibles, les sols, les zones humides et les régimes naturels de perturbation.'
+        ],
+        example: {
+          statement: 'Une étude estime l’étendue du biome boréal à 15,1 millions de km². Cette valeur correspond-elle à une surface uniformément couverte d’arbres ?',
+          calculation: 'Il faut distinguer l’étendue d’un biome de la surface effectivement boisée. Un biome peut contenir plusieurs types de milieux associés, notamment des zones humides, des lacs et des secteurs ouverts.',
+          answer: 'Non. Les 15,1 millions de km² désignent l’emprise du biome boréal étudié, et non une couverture forestière dense et continue sur toute cette surface.'
+        },
+        exercise: {
+          question: 'Pourquoi la superficie du biome boréal ne doit-elle pas être confondue avec la superficie réellement couverte par les arbres ?',
+          answer: 'Parce que le biome boréal comprend une mosaïque de forêts, de tourbières, de zones humides, de lacs et de milieux ouverts.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel hémisphère se trouve principalement la forêt boréale ?',
+            answer: 'Dans l’hémisphère Nord.'
+          },
+          {
+            question: 'Cite trois genres ou groupes d’arbres fréquents dans la taïga.',
+            answer: 'Les épicéas, les pins et les mélèzes sont fréquents ; des bouleaux et des peupliers sont également présents.'
+          },
+          {
+            question: 'Pourquoi les tourbières boréales sont-elles importantes pour le climat ?',
+            answer: 'Elles accumulent de la matière organique et stockent une quantité importante de carbone dans leurs sols.'
+          }
+        ],
+        sources: [
+          { title: 'Global Change Biology — Satellite observations document trends consistent with a boreal forest biome shift', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9303657/' },
+          { title: 'International Boreal Forest Research Association — About Boreal Forests', url: 'https://www.ibfra.org/about-boreal-forests/' },
+          { title: 'UNECE — Boreal forests, 2025', url: 'https://unece.org/sites/default/files/2025-03/2421978E_PDF_WEB.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'foret-amazonienne',
+      title: 'La forêt amazonienne : le plus vaste ensemble tropical humide',
+      field: 'Écologie tropicale · Bassin amazonien, Amérique du Sud',
+      summary: 'Comprendre l’étendue du biome amazonien, sa diversité de milieux, son fonctionnement hydrologique, son histoire écologique et les pressions qui le transforment.',
+      lesson: {
+        sections: [
+          'L’Amazonie s’étend autour du réseau de l’Amazone et de ses affluents, principalement au Brésil, mais aussi dans plusieurs autres pays d’Amérique du Sud et en Guyane française. Le WWF donne environ 6,7 millions de km² pour le biome amazonien. Il faut distinguer cette emprise biogéographique de la seule surface forestière : un document du WWF publié en 2022 estime qu’environ 97 % de cette surface, soit près de 6,5 millions de km², est couverte de forêts. Les chiffres dépendent donc de la définition cartographique retenue.',
+          'La forêt amazonienne ne constitue pas un milieu uniforme. Elle comprend des forêts de terre ferme, des forêts inondées périodiquement, des forêts marécageuses, des forêts de palmiers et des formations de transition avec des savanes et d’autres écosystèmes. Les crues saisonnières déposent des sédiments et modifient les conditions de vie des plantes et des animaux. Les espèces vivant dans les plaines inondables doivent supporter des variations importantes du niveau de l’eau.',
+          'L’histoire de cette forêt est liée à l’évolution géologique de l’Amérique du Sud, à la formation des reliefs andins, aux changements du réseau hydrographique et aux variations climatiques du passé. Les Andes ont fourni des sédiments et influencé l’organisation des bassins fluviaux. Les milieux amazoniens ont évolué sur des durées longues ; il ne faut donc pas attribuer à toute la forêt une date de formation unique. Les paysages et les communautés biologiques ont changé au cours du temps.',
+          'La chaleur et l’humidité favorisent une activité biologique élevée. Les arbres, les lianes, les épiphytes, les champignons et les organismes du sol participent à des cycles rapides de matière. Une grande partie des éléments nutritifs est retenue dans la biomasse et recyclée par la décomposition des feuilles et du bois. Dans plusieurs secteurs, les sols ne sont pas particulièrement riches : le fonctionnement de l’écosystème dépend alors fortement du recyclage des nutriments.',
+          'L’évapotranspiration, c’est-à-dire le transfert d’eau vers l’atmosphère par évaporation et transpiration des plantes, contribue à l’humidité régionale et à la formation de précipitations. La forêt interagit ainsi avec le climat à différentes échelles. La déforestation, la dégradation forestière, les incendies, les infrastructures et la conversion des terres modifient ces échanges. La fragmentation peut également isoler des populations animales et végétales et rendre certains fragments plus vulnérables aux sécheresses et aux perturbations.'
+        ],
+        example: {
+          statement: 'Le biome amazonien est estimé à 6,7 millions de km² et environ 97 % de cette surface est indiquée comme forestière dans une publication du WWF. Quelle surface forestière cela représente-t-il approximativement ?',
+          calculation: 'Surface forestière estimée = 6 700 000 km² × 0,97.',
+          answer: 'La multiplication donne environ 6 499 000 km², soit environ 6,5 millions de km². Il s’agit d’une estimation publiée, dépendante des définitions et des données cartographiques utilisées.'
+        },
+        exercise: {
+          question: 'Explique pourquoi la forêt amazonienne influence le cycle régional de l’eau.',
+          answer: 'Les arbres transfèrent de grandes quantités d’eau vers l’atmosphère par évapotranspiration. Cette humidité contribue aux échanges atmosphériques et aux précipitations régionales.'
+        },
+        exercises: [
+          {
+            question: 'Quelle superficie le WWF attribue-t-il au biome amazonien ?',
+            answer: 'Environ 6,7 millions de km².'
+          },
+          {
+            question: 'Pourquoi les forêts inondables amazoniennes sont-elles différentes des forêts de terre ferme ?',
+            answer: 'Elles sont soumises à des périodes d’inondation qui influencent les sols, la végétation et les espèces qui peuvent y vivre.'
+          },
+          {
+            question: 'Qu’est-ce que l’évapotranspiration ?',
+            answer: 'C’est le transfert d’eau vers l’atmosphère par évaporation et par transpiration des végétaux.'
+          }
+        ],
+        sources: [
+          { title: 'WWF France — L’Amazonie : une forêt tropicale en danger', url: 'https://www.wwf.fr/territoires/amazonie' },
+          { title: 'WWF — The Amazon: A Biome of Global Importance, 2022', url: 'https://www.wwf.fr/sites/default/files/doc-2023-01/LAR-%20INGLES%2023-dic-2022_compressed.pdf' },
+          { title: 'WWF — Living Amazon Initiative, summary', url: 'https://assets.wwf.org.uk/downloads/living_amazon_strategy_summary.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'forets-asie-sud-est',
+      title: 'Les forêts d’Asie du Sud-Est : une mosaïque tropicale insulaire et continentale',
+      field: 'Écologie tropicale · Péninsule indochinoise et archipels d’Asie du Sud-Est',
+      summary: 'Étudier les forêts tropicales de la région, leur diversité géographique, leur cartographie par satellite, leurs adaptations écologiques et les transformations liées aux activités humaines.',
+      lesson: {
+        sections: [
+          'Les forêts d’Asie du Sud-Est forment un ensemble régional plutôt qu’une forêt unique et continue. Elles se répartissent entre la péninsule continentale et les îles, notamment Sumatra, Bornéo, Java, les Philippines et les archipels indonésiens. Une étude scientifique fondée sur des images satellitaires ALOS/PALSAR estime la couverture forestière de l’Asie du Sud-Est à environ 2,56 millions de km² en 2009. Cette valeur est une estimation cartographique ancienne, fondée sur une définition précise de la forêt ; elle ne doit pas être présentée comme une mesure actuelle.',
+          'La région rassemble des forêts tropicales humides de plaine, des forêts de montagne, des forêts saisonnières, des mangroves et des forêts marécageuses sur sols tourbeux. Les différences de relief, de pluviométrie, de saisonnalité et de nature des sols expliquent cette diversité. Les îles de Bornéo et de Sumatra abritent notamment des forêts tropicales riches en espèces, tandis que les montagnes de la péninsule offrent des conditions écologiques différentes de celles des plaines côtières.',
+          'L’histoire de ces forêts est étroitement liée à la tectonique des plaques, à la formation des îles et aux variations du niveau marin. Pendant les périodes glaciaires, le niveau des mers était plus bas et certaines terres aujourd’hui séparées par des détroits étaient reliées au continent ou entre elles. Ces connexions ont facilité des échanges biologiques, tandis que les remontées marines ont ensuite isolé des populations. Cette histoire contribue à expliquer les ressemblances et les différences entre les flores et les faunes des îles.',
+          'Les forêts de la région abritent une forte diversité végétale et animale, avec de nombreuses espèces adaptées à des habitats particuliers. Les forêts sur tourbe stockent du carbone dans des sols organiques souvent gorgés d’eau. Lorsque ces milieux sont drainés ou dégradés, leur fonctionnement hydrologique change et leur matière organique devient plus vulnérable à la décomposition et aux incendies. Les mangroves, quant à elles, occupent les littoraux soumis aux marées et contribuent à protéger les côtes et à fournir des habitats de reproduction.',
+          'La conversion des forêts en terres agricoles, les plantations, l’exploitation du bois, les routes, les mines et les incendies modifient fortement les paysages régionaux. Les effets ne sont pas identiques partout : certaines zones conservent de grands massifs, tandis que d’autres sont fragmentées. Les cartes satellitaires permettent de suivre ces changements, mais leurs résultats varient selon la résolution des images, la date d’observation et la définition retenue pour distinguer une forêt d’une plantation ou d’une végétation arborée.'
+        ],
+        example: {
+          statement: 'Une étude satellitaire estime la couverture forestière de l’Asie du Sud-Est à 2,56 millions de km² en 2009. Cette valeur peut-elle être utilisée comme superficie actuelle sans réserve ?',
+          calculation: 'Une superficie cartographiée est associée à une date, à une résolution d’image et à une définition de la forêt. Pour l’utiliser comme valeur actuelle, il faudrait une nouvelle mesure portant sur une période récente et une méthode comparable.',
+          answer: 'Non. Il faut la présenter comme une estimation de 2009 et préciser la méthode satellitaire utilisée.'
+        },
+        exercise: {
+          question: 'Pourquoi les estimations de la superficie forestière d’Asie du Sud-Est peuvent-elles différer entre deux études ?',
+          answer: 'Les études peuvent utiliser des images, des dates, des résolutions et des définitions différentes de la couverture forestière.'
+        },
+        exercises: [
+          {
+            question: 'Quelle superficie forestière l’étude ALOS/PALSAR estime-t-elle pour l’Asie du Sud-Est en 2009 ?',
+            answer: 'Environ 2,56 millions de km².'
+          },
+          {
+            question: 'Cite deux grands types de forêts présents dans la région.',
+            answer: 'Par exemple, les forêts tropicales humides de plaine et les mangroves ; les forêts de montagne et les forêts marécageuses sont également présentes.'
+          },
+          {
+            question: 'Quel effet peut avoir le drainage d’une tourbière forestière ?',
+            answer: 'Il modifie le régime de l’eau et rend la matière organique du sol plus vulnérable à la décomposition et aux incendies.'
+          }
+        ],
+        sources: [
+          { title: 'PLOS ONE — A 50-m Forest Cover Map in Southeast Asia from ALOS/PALSAR, 2014', url: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0085801' },
+          { title: 'FAO — Status and Trends in Forests and Forestry in Southeast Asia', url: 'https://www.fao.org/4/i1964e/i1964e00.pdf' },
+          { title: 'WWF France — Bornéo : une forêt tropicale d’une richesse unique', url: 'https://www.wwf.fr/territoires/borneo' }
+        ]
+      }
+    },
+    {
+      id: 'foret-bassin-congo',
+      title: 'Les forêts du bassin du Congo : le grand massif équatorial africain',
+      field: 'Écologie tropicale · Afrique centrale, bassin du fleuve Congo',
+      summary: 'Distinguer la superficie du bassin hydrographique de celle des forêts, comprendre les forêts denses humides, les tourbières, les grands cycles écologiques et les enjeux de conservation.',
+      lesson: {
+        sections: [
+          'Les forêts du bassin du Congo constituent le deuxième grand ensemble de forêts tropicales humides contiguës après l’Amazonie. Le bassin hydrographique du Congo couvre environ 3,68 à 3,7 millions de km², mais cette valeur comprend des forêts, des savanes, des zones humides et d’autres paysages. Pour éviter de confondre bassin et forêt, l’initiative scientifique Congo Basin Science Initiative estime à environ 2,4 millions de km² l’étendue des forêts contiguës du bassin. C’est cette dernière valeur qui est retenue ici pour la superficie forestière de référence.',
+          'Le massif forestier s’étend principalement en République démocratique du Congo, en République du Congo, au Gabon, au Cameroun, en République centrafricaine et en Guinée équatoriale. Il comprend des forêts denses humides, des forêts marécageuses, des forêts de montagne et des mosaïques de forêts et de savanes. Le fleuve Congo et ses affluents structurent les échanges d’eau, de sédiments et de nutriments dans cette vaste région.',
+          'L’histoire de ces forêts dépend de l’évolution du relief, du réseau fluvial et du climat équatorial. Les variations climatiques du passé ont entraîné des changements dans la distribution des formations forestières et des savanes. Les zones forestières ont pu se contracter ou s’étendre selon les conditions d’humidité. Il n’existe donc pas une date simple et universelle de formation du massif actuel : ses différents secteurs ont des trajectoires écologiques distinctes.',
+          'Les forêts du Congo abritent notamment des éléphants de forêt, des gorilles, des chimpanzés, des bonobos dans leur aire de répartition, des okapis et de nombreuses espèces d’oiseaux, d’insectes et de plantes. Les sols et les zones humides sont très variés. Certaines régions abritent des tourbières tropicales qui accumulent de grandes quantités de carbone dans des dépôts organiques saturés en eau. Leur drainage ou leur dégradation peut perturber durablement ce stockage.',
+          'Ces forêts régulent une partie des échanges d’eau et de carbone entre les terres et l’atmosphère. Elles fournissent aussi des ressources alimentaires, des matériaux et des espaces de vie à de nombreuses communautés, dont des peuples autochtones. Les pressions comprennent l’expansion agricole, les infrastructures, l’exploitation forestière, les activités minières et la chasse non durable. Les politiques de conservation doivent donc tenir compte de la biodiversité, des droits des populations et des besoins économiques locaux.'
+        ],
+        example: {
+          statement: 'Le bassin hydrographique du Congo couvre environ 3,7 millions de km², tandis que les forêts contiguës sont estimées à environ 2,4 millions de km². Pourquoi les deux valeurs sont-elles différentes ?',
+          calculation: 'Le bassin hydrographique délimite l’espace dont les eaux s’écoulent vers le fleuve Congo. La superficie forestière ne comptabilise que l’étendue des forêts contiguës selon la définition de la source.',
+          answer: 'Le bassin comprend plusieurs types de paysages et n’est pas entièrement couvert de forêts. La valeur de 2,4 millions de km² est donc plus adaptée pour désigner l’étendue des forêts contiguës.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre le bassin hydrographique du Congo et les forêts contiguës du bassin ?',
+          answer: 'Le bassin hydrographique est une unité définie par l’écoulement des eaux ; les forêts contiguës désignent uniquement les espaces forestiers connectés à l’intérieur de cette région.'
+        },
+        exercises: [
+          {
+            question: 'Quelle superficie est retenue ici pour les forêts contiguës du bassin du Congo ?',
+            answer: 'Environ 2,4 millions de km², selon le Congo Basin Science Initiative.'
+          },
+          {
+            question: 'Pourquoi les tourbières tropicales du bassin sont-elles importantes ?',
+            answer: 'Elles stockent du carbone dans leurs sols organiques saturés en eau.'
+          },
+          {
+            question: 'Cite deux pressions qui affectent les forêts du bassin du Congo.',
+            answer: 'Par exemple, l’expansion agricole et l’exploitation forestière ; les infrastructures, les activités minières et la chasse non durable constituent également des pressions.'
+          }
+        ],
+        sources: [
+          { title: 'Congo Basin Science Initiative — Facts', url: 'https://congobasinscience.net/resources/facts/' },
+          { title: 'WWF France — Bassin du Congo : forêt pluviale menacée', url: 'https://www.wwf.fr/territoires/bassin-du-congo' },
+          { title: 'WWF — The Congo Basin: Facts and Resources', url: 'https://www.worldwildlife.org/places/congo-basin/' },
+          { title: 'WWF — Congo Basin Regional Briefing, 2023', url: 'https://wwfint.awsassets.panda.org/downloads/congo-basin_regional-brief_20231025_1_1.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'foret-valdivienne',
+      title: 'La forêt valdivienne : les forêts tempérées humides du sud des Andes',
+      field: 'Écologie tempérée · Sud du Chili et sud-ouest de l’Argentine',
+      summary: 'Découvrir une écorégion tempérée humide isolée, ses arbres anciens, ses gradients de précipitations, son histoire biogéographique et ses espèces endémiques.',
+      lesson: {
+        sections: [
+          'La forêt valdivienne se trouve dans le sud du Chili et dans des secteurs voisins de l’Argentine, sur le versant occidental des Andes et dans les régions tempérées humides du sud du continent. La base européenne DOPA Explorer attribue à l’écorégion des forêts tempérées valdiviennes une superficie de 248 651 km². Cette mesure correspond au périmètre de l’écorégion cartographiée ; elle ne signifie pas que chaque kilomètre carré est actuellement couvert d’une forêt intacte.',
+          'Le climat est généralement humide, avec des précipitations importantes dans de nombreux secteurs. Les Andes et la proximité du Pacifique créent de forts gradients de température et d’humidité. Les forêts changent selon l’altitude, la latitude et l’exposition. On y trouve des forêts sempervirentes, des forêts tempérées mixtes et, dans certains secteurs, des peuplements dominés par des conifères remarquables.',
+          'L’histoire de cette flore est liée à l’évolution ancienne du sud du Gondwana, aux changements climatiques et à l’isolement géographique de l’extrémité australe de l’Amérique du Sud. Certaines lignées végétales témoignent d’anciennes connexions biogéographiques entre les continents de l’hémisphère Sud. Les glaciations quaternaires ont aussi modifié les habitats et les possibilités de déplacement des espèces. Ces processus expliquent une partie de l’originalité biologique de la région, sans fournir une date unique de formation de la forêt actuelle.',
+          'Parmi les arbres emblématiques figurent les alerces, ou Fitzroya cupressoides, conifères capables d’atteindre une grande taille et une longévité exceptionnelle. Les forêts abritent aussi des hêtres australs du genre Nothofagus, des fougères, des mousses et de nombreuses plantes adaptées à l’humidité. Plusieurs espèces animales sont endémiques ou étroitement associées à ces habitats, ce qui rend les fragments de forêt ancienne particulièrement importants pour la conservation.',
+          'Les principales pressions varient selon les secteurs : exploitation forestière, remplacement de la végétation native par des plantations, incendies, routes, élevage et fragmentation. Le changement climatique peut modifier les précipitations, les températures et la fréquence des sécheresses. La conservation nécessite de protéger les forêts anciennes, de maintenir les continuités écologiques et de restaurer les secteurs dégradés en tenant compte des espèces locales.'
+        ],
+        example: {
+          statement: 'DOPA Explorer indique une superficie de 248 651 km² pour l’écorégion des forêts tempérées valdiviennes. Que mesure précisément ce chiffre ?',
+          calculation: 'Il s’agit de la superficie géographique de l’écorégion délimitée dans la base de données, et non d’un relevé indiquant que toute cette surface est intacte ou boisée.',
+          answer: 'Le chiffre décrit l’étendue de l’écorégion cartographiée. Il ne doit pas être interprété comme une mesure de la seule forêt ancienne encore présente.'
+        },
+        exercise: {
+          question: 'Pourquoi les forêts valdiviennes possèdent-elles une flore particulière ?',
+          answer: 'Leur isolement géographique, leur histoire climatique et leurs anciennes connexions biogéographiques ont contribué à une composition végétale originale.'
+        },
+        exercises: [
+          {
+            question: 'Dans quels pays se trouve l’écorégion valdivienne ?',
+            answer: 'Principalement au Chili et dans des secteurs voisins de l’Argentine.'
+          },
+          {
+            question: 'Quel conifère ancien est emblématique de ces forêts ?',
+            answer: 'L’alerce, ou Fitzroya cupressoides.'
+          },
+          {
+            question: 'Que représente la superficie de 248 651 km² publiée par DOPA Explorer ?',
+            answer: 'L’étendue de l’écorégion cartographiée, et non la surface garantie de forêt intacte.'
+          }
+        ],
+        sources: [
+          { title: 'Commission européenne — DOPA Explorer, Valdivian Temperate Forests', url: 'https://dopa-explorer.jrc.ec.europa.eu/ecoregion/60404' },
+          { title: 'One Earth — Valdivian Temperate Forests', url: 'https://www.oneearth.org/ecoregions/valdivian-temperate-forests/' }
+        ]
+      }
+    },
+    {
+      id: 'foret-atlantique-bresil',
+      title: 'La forêt atlantique du Brésil : un ancien massif largement fragmenté',
+      field: 'Écologie · Mata Atlântica, façade atlantique du Brésil et régions voisines',
+      summary: 'Retracer l’étendue historique de la Mata Atlântica, sa diversité de formations, son endémisme et la transformation de son couvert forestier depuis la colonisation européenne.',
+      lesson: {
+        sections: [
+          'La forêt atlantique, ou Mata Atlântica, longe la façade orientale du Brésil et se prolonge dans des régions d’Argentine et du Paraguay selon les délimitations écologiques retenues. Le gouvernement brésilien et l’INPE indiquent que le biome couvrait historiquement environ 1,31 million de km² sur le territoire brésilien. Cette superficie correspond à son extension d’origine, et non à la surface forestière qui subsiste aujourd’hui. Un bilan publié en 2014 estimait les forêts restantes du complexe écorégional à environ 226 124 km², selon son périmètre et sa méthode de comptage.',
+          'La Mata Atlântica n’est pas une forêt uniforme. Elle comprend des forêts tropicales humides, des forêts semi-décidues, des forêts de montagne, des mangroves, des restingas littorales et des formations végétales d’altitude. La proximité de l’océan, les reliefs côtiers et les différences de précipitations créent une grande variété de conditions écologiques. Cette diversité de milieux explique en partie la richesse biologique de la région.',
+          'La formation et l’évolution de ces forêts s’inscrivent dans l’histoire géologique ancienne de l’est de l’Amérique du Sud et dans les variations du climat régional. Les reliefs de la Serra do Mar et de la Serra da Mantiqueira influencent les précipitations et créent des gradients écologiques. Les populations d’espèces ont évolué dans des habitats parfois isolés, ce qui a favorisé l’apparition d’espèces endémiques. Il ne faut toutefois pas confondre l’ancienneté de certains lignages biologiques avec l’âge d’un peuplement forestier particulier.',
+          'La Mata Atlântica est reconnue pour sa biodiversité et son endémisme. Elle abrite de nombreuses espèces végétales, d’oiseaux, d’amphibiens et de mammifères. Elle joue aussi un rôle essentiel pour les populations humaines : les bassins versants forestiers contribuent à l’approvisionnement en eau, à la limitation de l’érosion et à la régulation locale du climat. Une part importante de la population brésilienne vit dans les régions couvertes par le biome, ce qui rend la conservation de ses sources et de ses sols particulièrement importante.',
+          'La déforestation s’est accélérée avec l’occupation agricole, l’exploitation des ressources, l’expansion des villes, des routes et des infrastructures. La forêt actuelle est largement fragmentée : de nombreux vestiges sont séparés par des zones agricoles ou urbanisées. Cette fragmentation réduit les échanges entre populations animales et végétales et augmente les effets de bordure, comme les changements de lumière, de température et d’humidité. Les mesures de protection, la restauration des corridors écologiques et la régénération naturelle sont donc des enjeux majeurs.'
+        ],
+        example: {
+          statement: 'L’étendue historique de la Mata Atlântica est estimée à 1 315 460 km² par l’INPE. Un bilan distinct estime à 226 124 km² les forêts restantes en 2014 dans le complexe écorégional étudié. Pourquoi faut-il préciser la date et le périmètre ?',
+          calculation: 'La première valeur décrit l’extension historique au Brésil. La seconde porte sur les forêts restantes à une date donnée et dans un périmètre écorégional qui inclut plusieurs pays.',
+          answer: 'Les deux chiffres ne mesurent pas le même état ni exactement le même périmètre géographique. Les comparer sans ces précisions conduirait à une conclusion trompeuse.'
+        },
+        exercise: {
+          question: 'Pourquoi la fragmentation est-elle une menace même lorsqu’il reste des fragments de forêt ?',
+          answer: 'Parce que les fragments isolés facilitent moins les déplacements et les échanges génétiques entre populations, et subissent davantage les effets de bordure.'
+        },
+        exercises: [
+          {
+            question: 'Quel nom portugais désigne la forêt atlantique du Brésil ?',
+            answer: 'La Mata Atlântica.'
+          },
+          {
+            question: 'Quelle superficie historique l’INPE indique-t-il pour la Mata Atlântica au Brésil ?',
+            answer: 'Environ 1 315 460 km².'
+          },
+          {
+            question: 'Donne deux conséquences écologiques de la fragmentation forestière.',
+            answer: 'L’isolement des populations et l’augmentation des effets de bordure ; elle peut aussi réduire les échanges génétiques et la recolonisation des habitats.'
+          }
+        ],
+        sources: [
+          { title: 'INPE — Atlas des remanescents de la Mata Atlântica : limites et superficie d’origine', url: 'https://www.inpe.br/noticias/noticia.php?Cod_Noticia=2923' },
+          { title: 'Gouvernement du Brésil — Instituto Chico Mendes, Mata Atlântica', url: 'https://www.gov.br/icmbio/pt-br/assuntos/unidade-de-conservacao/unidades-de-biomas/mata-atlantica' },
+          { title: 'WWF — State of the Atlantic Forest', url: 'https://awsassets.panda.org/downloads/documento_fvs_baja.pdf' },
+          { title: 'UNESCO — Mata Atlântica', url: 'https://www.unesco.org/en/mab/mata-atlantica' }
+        ]
+      }
+    },
+    {
+      id: 'great-bear-rainforest',
+      title: 'La Great Bear Rainforest : une grande forêt pluviale tempérée du Pacifique',
+      field: 'Écologie tempérée · Côte nord et centrale de la Colombie-Britannique, Canada',
+      summary: 'Étudier une vaste forêt côtière tempérée, son climat océanique, ses arbres anciens, ses liens avec les saumons et les peuples autochtones, ainsi que les accords de conservation.',
+      lesson: {
+        sections: [
+          'La Great Bear Rainforest se situe sur la côte nord et centrale de la Colombie-Britannique, dans l’ouest du Canada. Le gouvernement provincial indique une superficie d’environ 6,4 millions d’hectares, soit environ 64 000 km² ; le périmètre officiel du plan d’aménagement est donné plus précisément à 6 433 267 hectares. Ce chiffre correspond à la région administrative et écologique désignée, qui comprend différents milieux côtiers et forestiers, et non à une mesure de forêt ancienne uniformément intacte.',
+          'Le climat océanique apporte des précipitations abondantes et des températures relativement modérées pour ces latitudes. Les forêts sont dominées par des conifères tels que le thuya géant de l’Ouest, le tsuga et l’épinette de Sitka, avec des peuplements anciens dans certains secteurs. Les vallées, les pentes montagneuses, les marécages, les estuaires et les îles créent une mosaïque d’habitats qui relie les milieux terrestres et marins.',
+          'Ces forêts se sont développées dans un paysage façonné par les reliefs côtiers, les glaciers du passé et l’influence persistante de l’océan Pacifique. Les épisodes glaciaires ont modifié la distribution des habitats et les voies de recolonisation des espèces. Les peuplements actuels ont des âges différents selon les perturbations, les conditions locales et l’histoire de chaque vallée. Il n’est donc pas scientifiquement correct de leur attribuer une seule date de formation.',
+          'La région est connue pour ses relations écologiques entre les cours d’eau, les saumons du Pacifique et les animaux terrestres. Après leur migration depuis l’océan, les saumons remontent les rivières pour se reproduire. Ils constituent une ressource alimentaire pour des ours, des loups, des oiseaux et d’autres animaux. Les nutriments d’origine marine peuvent ainsi être transférés vers les écosystèmes terrestres. La région abrite aussi des ours noirs, dont certains individus présentent une robe blanche appelée « ours esprit » ou Kermode.',
+          'Les peuples des Premières Nations entretiennent des liens historiques, culturels et économiques avec ces territoires. Les accords de gestion de la Great Bear Rainforest ont été élaborés avec des organisations des Premières Nations et le gouvernement provincial. La Colombie-Britannique indique que le cadre de gestion vise notamment à protéger 85 % de la forêt et 70 % de la forêt ancienne à terme. Il faut distinguer ces objectifs de gestion des surfaces déjà protégées à une date donnée : les règles et leur mise en œuvre évoluent dans le temps.'
+        ],
+        example: {
+          statement: 'Le périmètre officiel de la Great Bear Rainforest est de 6 433 267 hectares. Convertis cette superficie en km².',
+          calculation: '1 km² = 100 hectares. Il faut donc diviser 6 433 267 par 100.',
+          answer: '6 433 267 ha ÷ 100 = 64 332,67 km², soit environ 64 333 km².'
+        },
+        exercise: {
+          question: 'Comment les saumons du Pacifique contribuent-ils au fonctionnement des écosystèmes terrestres de la Great Bear Rainforest ?',
+          answer: 'Ils constituent une ressource alimentaire pour de nombreux animaux et transportent des nutriments d’origine marine vers les cours d’eau et les milieux terrestres.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle province canadienne se trouve la Great Bear Rainforest ?',
+            answer: 'En Colombie-Britannique.'
+          },
+          {
+            question: 'Quelle superficie officielle approximative est indiquée par le gouvernement provincial ?',
+            answer: 'Environ 6,4 millions d’hectares, soit environ 64 000 km².'
+          },
+          {
+            question: 'Pourquoi les saumons sont-ils considérés comme importants pour cette forêt ?',
+            answer: 'Ils nourrissent de nombreux animaux et contribuent au transfert de nutriments marins vers les écosystèmes terrestres.'
+          }
+        ],
+        sources: [
+          { title: 'Gouvernement de la Colombie-Britannique — Great Bear Rainforest: Land Use Decision Resources', url: 'https://www2.gov.bc.ca/gov/content/industry/crown-land-water/land-use-planning/regions/west-coast/great-bear-rainforest' },
+          { title: 'Gouvernement de la Colombie-Britannique — Great Bear Rainforest Legal Direction and Agreements', url: 'https://www2.gov.bc.ca/gov/content/industry/crown-land-water/land-use-planning/regions/west-coast/great-bear-rainforest/great-bear-rainforest-legal-direction-agreements' },
+          { title: 'Gouvernement de la Colombie-Britannique — Great Bear Rainforest Agreement Highlights', url: 'https://www2.gov.bc.ca/gov/content/environment/natural-resource-stewardship/great-bear-rainforest/gbr-agreement-highlights' }
+        ]
+      }
+    }
+  ]
+},
 ]
 
