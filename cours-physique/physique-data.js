@@ -7506,5 +7506,486 @@
   ]
 },
 
+{
+  id: 'mouvement-brownien',
+  sortYear: 'false',
+  title: 'Le mouvement brownien',
+  note: 'Cinq chapitres approfondis sur l’observation historique du mouvement brownien, son origine moléculaire, la description statistique de la diffusion, l’équation de Langevin et la relation de Stokes-Einstein. Les équations indiquent leurs hypothèses : particules diluées, fluide homogène, température constante et, lorsque nécessaire, régime de faible nombre de Reynolds.',
+  chapters: [
+    {
+      id: 'decouverte-historique-mouvement-brownien',
+      title: 'La découverte du mouvement brownien et sa confirmation expérimentale',
+      field: 'Physique statistique · Histoire des sciences · 1827–1909',
+      summary: 'De l’observation de Robert Brown à la confirmation quantitative par Einstein et Perrin : comprendre comment un phénomène microscopique est devenu une preuve majeure de l’agitation moléculaire.',
+      lesson: {
+        sections: [
+          'En 1827, le botaniste écossais Robert Brown observe au microscope des particules présentes dans des grains de pollen de Clarkia pulchella dispersées dans l’eau. Il constate que ces petites particules se déplacent de manière irrégulière et persistante. Brown vérifie que le phénomène ne se limite pas au pollen : il observe aussi des particules issues de matières organiques et inorganiques. Son mémoire est publié en 1828 sous le titre A Brief Account of Microscopical Observations. Il décrit soigneusement le phénomène, mais n’en établit pas l’explication moléculaire moderne. Il faut donc distinguer l’observation de Brown, datée de 1827, de la publication de son compte rendu, en 1828.',
+
+          'Brown ne découvre pas le mouvement des molécules elles-mêmes au microscope. Il observe des particules microscopiques suffisamment grandes pour être visibles, mais assez petites pour être continuellement perturbées par les collisions avec les molécules du liquide. Le mouvement est parfois appelé mouvement brownien en son honneur. Des observations antérieures de mouvements de particules avaient été rapportées, mais le travail de Brown fournit une description expérimentale particulièrement systématique et durable.',
+
+          'En 1905, Albert Einstein publie une analyse théorique du mouvement de petites particules en suspension dans un liquide au repos. Il relie le déplacement statistique des particules visibles à l’agitation thermique moléculaire et déduit une loi quantitative de diffusion. La théorie permet notamment de prévoir que le déplacement quadratique moyen augmente proportionnellement au temps, et que l’échelle typique du déplacement augmente comme la racine carrée du temps. Einstein montre aussi que ces mesures peuvent servir à estimer le nombre d’Avogadro.',
+
+          'Marian Smoluchowski développe indépendamment une théorie statistique du phénomène en 1906. En 1908, Paul Langevin propose une formulation dynamique fondée sur l’équation du mouvement d’une particule soumise à un frottement visqueux et à une force fluctuante. Ces approches sont complémentaires : Einstein et Smoluchowski décrivent principalement la diffusion à l’échelle statistique, tandis que Langevin introduit explicitement la dynamique de la vitesse et les fluctuations de la force.',
+
+          'Jean Perrin et ses collaborateurs réalisent ensuite des mesures quantitatives sur des particules colloïdales de taille et de propriétés contrôlées. Ils comparent les déplacements observés aux prédictions théoriques et obtiennent des estimations cohérentes du nombre d’Avogadro par différentes méthodes. Ces résultats renforcent considérablement l’interprétation moléculaire de la matière. Perrin reçoit le prix Nobel de physique en 1926 pour ses travaux sur la structure discontinue de la matière. Il ne faut donc pas dire que Brown a expliqué le phénomène en 1827 : Brown l’a observé, Einstein et Smoluchowski l’ont théorisé, Langevin en a donné une formulation dynamique et Perrin en a apporté des confirmations expérimentales quantitatives.'
+        ],
+
+        formula: {
+          label: 'REPÈRES CHRONOLOGIQUES',
+          text: '1827 : observations de Brown  |  1828 : publication  |  1905 : théorie d’Einstein  |  1906 : Smoluchowski  |  1908 : Langevin  |  1908–1909 : vérifications de Perrin'
+        },
+
+        example: {
+          statement: 'On trouve les dates 1827 et 1828 associées à Robert Brown. Quelle différence faut-il faire entre ces deux dates ?',
+          calculation: '1827 correspond aux observations microscopiques rapportées par Brown ; 1828 correspond à la publication de son mémoire.',
+          answer: 'Brown observe le phénomène en 1827 et publie son compte rendu en 1828. Les deux dates ne désignent pas le même événement.'
+        },
+
+        exercise: {
+          question: 'Quel rôle scientifique distinct ont joué Brown, Einstein et Perrin dans l’histoire du mouvement brownien ?',
+          answer: 'Brown a décrit les mouvements irréguliers observés au microscope ; Einstein en a établi une théorie quantitative en 1905 ; Perrin a confronté les prédictions à des mesures expérimentales et contribué à établir la réalité physique des molécules.'
+        },
+
+        exercises: [
+          {
+            question: 'En quelle année Robert Brown réalise-t-il les observations qui donneront leur nom au phénomène ?',
+            answer: 'En 1827.'
+          },
+          {
+            question: 'En quelle année le mémoire de Brown est-il publié ?',
+            answer: 'En 1828.'
+          },
+          {
+            question: 'Pourquoi les expériences de Perrin sont-elles importantes ?',
+            answer: 'Elles vérifient quantitativement des prédictions du mouvement brownien et fournissent des estimations cohérentes du nombre d’Avogadro.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Robert Brown (1828) — texte historique, A Brief Account of Microscopical Observations, Wikisource',
+            url: 'https://en.wikisource.org/wiki/The_miscellaneous_botanical_works_of_Robert_Brown/Volume_1/A_brief_account_of_microscopical_observations_made_on_the_particles_contained_in_the_pollen_of_plants'
+          },
+          {
+            title: 'The Linnean Society — Robert Brown (1773–1858)',
+            url: 'https://www.linnean.org/the-society/history-of-science/robert-brown'
+          },
+          {
+            title: 'American Physical Society — August 1827: Robert Brown and Molecular Motion in a Pollen-filled Puddle',
+            url: 'https://www.aps.org/apsnews/2016/08/robert-brown-molecular-motion-pollen'
+          },
+          {
+            title: 'Oxford Academic — Brownian Motion: Fluctuations, Dynamics, and Applications, Historical Background',
+            url: 'https://academic.oup.com/book/11539/chapter-abstract/160327134'
+          },
+          {
+            title: 'Library of Congress — Einstein’s 1905 Papers',
+            url: 'https://guides.loc.gov/einstein-annus-mirabilis/1905-papers'
+          },
+          {
+            title: 'Nobel Prize — Jean Baptiste Perrin, Nobel Lecture',
+            url: 'https://www.nobelprize.org/prizes/physics/1926/perrin/lecture/'
+          },
+          {
+            title: 'Paul Langevin (1908) — Sur la théorie du mouvement brownien, Comptes rendus de l’Académie des sciences',
+            url: 'https://fr.wikisource.org/wiki/Sur_la_th%C3%A9orie_du_mouvement_brownien'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'origine-microscopique-agitation-thermique',
+      title: 'L’origine microscopique : agitation thermique et collisions moléculaires',
+      field: 'Physique statistique · Thermodynamique · Échelle microscopique',
+      summary: 'Expliquer pourquoi une particule en suspension suit une trajectoire irrégulière et distinguer le mouvement brownien de l’agitation moléculaire qui le provoque.',
+      lesson: {
+        sections: [
+          'Un liquide est constitué de molécules en agitation thermique permanente. À température supérieure au zéro absolu, ces molécules possèdent une énergie cinétique d’agitation et se déplacent de manière désordonnée. Une particule colloïdale immergée dans le liquide reçoit continuellement des impulsions dues aux collisions des molécules qui l’entourent. À un instant donné, les collisions ne se compensent pas exactement : leur résultante fluctue. La particule subit donc de petites variations successives de vitesse et de direction.',
+
+          'Le mouvement brownien est ainsi un mouvement aléatoire d’une particule mésoscopique immergée dans un fluide. La particule observée est beaucoup plus grande qu’une molécule du liquide, mais elle reçoit l’effet collectif d’un très grand nombre de collisions moléculaires. Il est incorrect de représenter le phénomène comme une molécule isolée qui pousserait continuellement la particule dans une direction fixe. C’est le déséquilibre instantané et fluctuant des impulsions qui produit l’irrégularité du mouvement.',
+
+          'La trajectoire observée à des intervalles de temps suffisamment courts présente des changements incessants de direction. À plus grande échelle de temps, on ne cherche généralement pas à prédire chaque collision : on décrit la dispersion statistique d’un ensemble de particules ou les déplacements successifs d’une particule. Le modèle de diffusion fournit alors une description macroscopique statistique, sans prétendre reconstruire chaque interaction moléculaire.',
+
+          'La température joue un rôle essentiel : à viscosité et taille de particule fixées, une température plus élevée augmente généralement le coefficient de diffusion dans le modèle de Stokes-Einstein. La viscosité agit en sens inverse : un fluide plus visqueux freine davantage le mouvement de translation. La taille hydrodynamique intervient également : une particule sphérique plus grande présente un frottement visqueux plus important et diffuse plus lentement.',
+
+          'Le mouvement brownien ne doit pas être confondu avec une convection ou un courant du liquide. Un écoulement d’ensemble transporte les particules dans une direction moyenne et ajoute une vitesse de dérive. Le mouvement brownien correspond à la composante fluctuante et aléatoire du déplacement. Dans une expérience réelle, il faut donc contrôler les gradients de température, les vibrations, les courants résiduels et les effets de paroi afin de ne pas attribuer à l’agitation thermique un mouvement dû à une perturbation extérieure.'
+        ],
+
+        formula: {
+          label: 'ÉNERGIE THERMIQUE CARACTÉRISTIQUE',
+          text: 'Eₜ, caractéristique = kB T'
+        },
+
+        example: {
+          statement: 'Une suspension est chauffée, tandis que la taille des particules et la viscosité du liquide sont supposées constantes. Quelle tendance prévoit le modèle de Stokes-Einstein pour la diffusion ?',
+          calculation: 'D = kB T / (6π η a). Si η et a restent constants, D est proportionnel à T.',
+          answer: 'Le coefficient de diffusion augmente avec la température absolue T dans les hypothèses du modèle.'
+        },
+
+        exercise: {
+          question: 'Pourquoi une particule brownienne ne suit-elle pas une direction constante ?',
+          answer: 'Parce que les impulsions transmises par les molécules du fluide fluctuent continuellement et que leur résultante instantanée change de direction et d’intensité.'
+        },
+
+        exercises: [
+          {
+            question: 'Quelle est l’origine physique du mouvement brownien ?',
+            answer: 'Les fluctuations des impulsions transmises à la particule par les molécules en agitation thermique du fluide.'
+          },
+          {
+            question: 'Le mouvement brownien est-il identique à un courant de convection ?',
+            answer: 'Non. La convection est un mouvement collectif du fluide ; le mouvement brownien est une fluctuation aléatoire due à l’agitation thermique moléculaire.'
+          },
+          {
+            question: 'Dans le modèle de Stokes-Einstein, quel effet a une augmentation de la viscosité à température et rayon fixés ?',
+            answer: 'Elle diminue le coefficient de diffusion.'
+          }
+        ],
+
+        equationDetails: [
+          {
+            title: 'Énergie thermique caractéristique',
+            formula: 'Eₜ = kB T',
+            explanation: 'Le produit kB T fixe l’échelle d’énergie thermique associée à la température T. Il intervient dans la description statistique de l’agitation thermique. Cette écriture donne une échelle caractéristique et ne signifie pas que chaque particule possède exactement cette énergie.',
+            parameters: 'Eₜ : échelle d’énergie thermique (J) ; kB = 1,380 649 × 10⁻²³ J·K⁻¹ : constante de Boltzmann ; T : température absolue (K).',
+            example: 'À T = 300 K, kB T = 1,380 649 × 10⁻²³ × 300.',
+            result: 'kB T ≈ 4,14 × 10⁻²¹ J.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'OpenStax — University Physics, Volume 2, 2.2 Pressure, Temperature, and RMS Speed',
+            url: 'https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed'
+          },
+          {
+            title: 'Einstein (1905) — On the Motion of Small Particles Suspended in a Stationary Liquid, traduction PDF hébergée par University of Cambridge',
+            url: 'https://www.damtp.cam.ac.uk/user/gold/pdfs/teaching/old_literature/Einstein1905.pdf'
+          },
+          {
+            title: 'Nobel Prize — Jean Baptiste Perrin, Nobel Lecture',
+            url: 'https://www.nobelprize.org/prizes/physics/1926/perrin/lecture/'
+          },
+          {
+            title: 'IUPAC Gold Book — Stokes–Einstein equation',
+            url: 'https://goldbook.iupac.org/terms/view/12260'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'diffusion-loi-einstein-smoluchowski',
+      title: 'La diffusion brownienne et la loi d’Einstein-Smoluchowski',
+      field: 'Physique statistique · Diffusion · 1905–1906',
+      summary: 'Quantifier les déplacements aléatoires avec le coefficient de diffusion, le déplacement quadratique moyen et la distribution gaussienne.',
+      lesson: {
+        sections: [
+          'À l’échelle statistique, la diffusion brownienne décrit l’étalement progressif d’une population de particules initialement localisées. Même si le déplacement moyen vectoriel est nul en l’absence de dérive, les particules s’éloignent progressivement de leur position initiale. Il faut donc distinguer le déplacement moyen, qui peut être nul, du déplacement quadratique moyen, qui est positif et mesure l’ampleur de la dispersion.',
+
+          'En une dimension, pour une diffusion libre, homogène et isotrope, le déplacement quadratique moyen vérifie ⟨(Δx)²⟩ = 2Dt. En trois dimensions, la somme des contributions indépendantes des trois axes donne ⟨|Δr|²⟩ = 6Dt. Le symbole ⟨ ⟩ désigne une moyenne statistique sur un ensemble de particules ou de réalisations. Ces relations supposent un coefficient de diffusion constant et un régime diffusif normal ; elles ne décrivent pas nécessairement les temps très courts d’une particule inertielle ni les milieux complexes présentant une diffusion anormale.',
+
+          'Le coefficient de diffusion D mesure la rapidité de l’étalement. Son unité SI est le mètre carré par seconde (m²·s⁻¹). Pour un même D, le déplacement quadratique moyen croît linéairement avec le temps, tandis que la distance quadratique moyenne, définie comme la racine carrée du déplacement quadratique moyen, croît comme √t. Il ne faut pas confondre cette distance quadratique moyenne avec la distance totale parcourue le long d’une trajectoire, qui est une autre grandeur.',
+
+          'Dans le modèle unidimensionnel, la densité de probabilité du déplacement après un temps t est gaussienne : p(x,t) = 1/√(4πDt) × exp[−x²/(4Dt)] pour une particule initialement située en x = 0. Cette distribution est centrée en zéro lorsque aucune force moyenne ni dérive n’est présente. Sa largeur augmente avec le temps. La probabilité de trouver la particule entre deux positions se calcule en intégrant cette densité sur l’intervalle considéré.',
+
+          'La loi d’Einstein-Smoluchowski fait le lien entre le mouvement microscopique et le coefficient de diffusion. Elle rend mesurable l’effet de l’agitation thermique à partir de déplacements observables au microscope. Elle ne prédit pas la position exacte d’une particule à un instant futur : elle prédit une distribution de probabilités et des grandeurs moyennes. La description probabiliste est précisément adaptée à un phénomène gouverné par un très grand nombre de collisions microscopiques imprévisibles individuellement.'
+        ],
+
+        formula: {
+          label: 'DÉPLACEMENT QUADRATIQUE MOYEN',
+          text: '⟨(Δx)²⟩ = 2Dt  |  ⟨|Δr|²⟩ = 6Dt en 3 dimensions'
+        },
+
+        example: {
+          statement: 'Une particule diffuse en une dimension avec D = 2,0 × 10⁻¹² m²·s⁻¹ pendant t = 5,0 s. Calculer son déplacement quadratique moyen et sa distance quadratique moyenne.',
+          calculation: '⟨(Δx)²⟩ = 2 × 2,0 × 10⁻¹² × 5,0 = 2,0 × 10⁻¹¹ m². La racine carrée vaut √(2,0 × 10⁻¹¹).',
+          answer: '⟨(Δx)²⟩ = 2,0 × 10⁻¹¹ m² et √⟨(Δx)²⟩ ≈ 4,47 × 10⁻⁶ m, soit environ 4,47 µm.'
+        },
+
+        exercise: {
+          question: 'En diffusion normale à une dimension, comment évolue le déplacement quadratique moyen si la durée est multipliée par 4 ?',
+          answer: 'Il est multiplié par 4, car ⟨(Δx)²⟩ = 2Dt. La distance quadratique moyenne, elle, est multipliée par 2.'
+        },
+
+        exercises: [
+          {
+            question: 'Quelle est l’unité SI du coefficient de diffusion D ?',
+            answer: 'm²·s⁻¹.'
+          },
+          {
+            question: 'Quelle relation relie le déplacement quadratique moyen en une dimension à D et t ?',
+            answer: '⟨(Δx)²⟩ = 2Dt.'
+          },
+          {
+            question: 'En trois dimensions, quelle est la relation pour la norme du déplacement quadratique moyen ?',
+            answer: '⟨|Δr|²⟩ = 6Dt.'
+          }
+        ],
+
+        equationDetails: [
+          {
+            title: 'Déplacement quadratique moyen en une dimension',
+            formula: '⟨(Δx)²⟩ = 2Dt',
+            explanation: 'Pour une diffusion libre en une dimension, avec D constant et sans dérive, la moyenne du carré du déplacement depuis la position initiale est proportionnelle au temps. Cette grandeur est positive même lorsque le déplacement moyen est nul.',
+            parameters: '⟨(Δx)²⟩ : déplacement quadratique moyen (m²) ; D : coefficient de diffusion (m²·s⁻¹) ; t : durée écoulée (s).',
+            example: 'Avec D = 2,0 × 10⁻¹² m²·s⁻¹ et t = 5,0 s : 2Dt = 2 × 2,0 × 10⁻¹² × 5,0.',
+            result: '⟨(Δx)²⟩ = 2,0 × 10⁻¹¹ m².'
+          },
+          {
+            title: 'Déplacement quadratique moyen en trois dimensions',
+            formula: '⟨|Δr|²⟩ = 6Dt',
+            explanation: 'Dans un milieu isotrope, les trois composantes cartésiennes contribuent de la même manière et leurs variances s’additionnent. Chaque direction apporte 2Dt, d’où le facteur 6 en trois dimensions.',
+            parameters: '⟨|Δr|²⟩ : déplacement quadratique moyen total (m²) ; D : coefficient de diffusion (m²·s⁻¹) ; t : durée (s).',
+            example: 'Pour D = 1,0 × 10⁻¹² m²·s⁻¹ et t = 2,0 s : 6Dt = 6 × 1,0 × 10⁻¹² × 2,0.',
+            result: '⟨|Δr|²⟩ = 1,2 × 10⁻¹¹ m².'
+          },
+          {
+            title: 'Densité de probabilité gaussienne en une dimension',
+            formula: 'p(x,t) = 1/√(4πDt) × exp[−x²/(4Dt)]',
+            explanation: 'Pour une particule initialement en x = 0, la solution de l’équation de diffusion libre est une loi gaussienne. La densité est normalisée : son intégrale sur tout l’axe vaut 1. Elle décrit une probabilité par unité de longueur, et non une probabilité ponctuelle.',
+            parameters: 'p(x,t) : densité de probabilité (m⁻¹) ; x : déplacement (m) ; D : coefficient de diffusion (m²·s⁻¹) ; t : durée (s).',
+            example: 'Lorsque t augmente à D constant, le terme 4Dt augmente et la distribution s’élargit autour de x = 0.',
+            result: 'La distribution reste centrée en zéro sans dérive, mais la dispersion augmente avec le temps.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Einstein (1905) — On the Motion of Small Particles Suspended in a Stationary Liquid, University of Cambridge',
+            url: 'https://www.damtp.cam.ac.uk/user/gold/pdfs/teaching/old_literature/Einstein1905.pdf'
+          },
+          {
+            title: 'University of Pittsburgh — Einstein 1905, étude guidée de l’article sur le mouvement brownien',
+            url: 'https://sites.pitt.edu/~jdnorton/teaching/Einstein_graduate/Einstein_1905.html'
+          },
+          {
+            title: 'Oxford Academic — Brownian Motion and Molecular Reality, The Brownian Motion',
+            url: 'https://academic.oup.com/book/33527/chapter-abstract/287870173'
+          },
+          {
+            title: 'Oxford University Press — Simple Brownian Diffusion: An Introduction to the Standard Theoretical Models',
+            url: 'https://academic.oup.com/book/7433'
+          },
+          {
+            title: 'Paul Langevin (1908) — Sur la théorie du mouvement brownien',
+            url: 'https://fr.wikisource.org/wiki/Sur_la_th%C3%A9orie_du_mouvement_brownien'
+          },
+          {
+            title: 'Nobel Prize — Jean Baptiste Perrin, Nobel Lecture',
+            url: 'https://www.nobelprize.org/prizes/physics/1926/perrin/lecture/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'equation-langevin-dynamique-brownienne',
+      title: 'L’équation de Langevin : dynamique, frottement et force aléatoire',
+      field: 'Physique statistique · Dynamique stochastique · 1908',
+      summary: 'Passer de la description statistique de la diffusion à une équation dynamique de la vitesse soumise au frottement visqueux et aux fluctuations thermiques.',
+      lesson: {
+        sections: [
+          'En 1908, Paul Langevin propose une formulation dynamique du mouvement brownien. Il applique le principe fondamental de la dynamique à une particule de masse m immergée dans un fluide. Dans le modèle linéaire le plus simple, la particule subit une force de frottement proportionnelle et opposée à sa vitesse, ainsi qu’une force fluctuante qui représente l’effet collectif des collisions moléculaires. En l’absence de force extérieure systématique, l’équation s’écrit m dv/dt = −γv + ξ(t).',
+
+          'Le coefficient γ est le coefficient de frottement visqueux, exprimé en kg·s⁻¹ ou N·s·m⁻¹. Le terme −γv tend à amortir la vitesse et à dissiper l’énergie mécanique de la particule dans le fluide. Le terme ξ(t) représente la force aléatoire. Dans le modèle idéal de bruit blanc, sa moyenne est nulle et ses fluctuations sont caractérisées par une corrélation proportionnelle à une impulsion de Dirac. Cette idéalisation signifie que les valeurs de la force à des instants distincts sont considérées comme non corrélées à l’échelle temporelle du modèle.',
+
+          'L’équation de Langevin rend explicite la compétition entre dissipation et agitation thermique. Le frottement tend à réduire la vitesse, tandis que les fluctuations moléculaires entretiennent l’agitation. À l’équilibre thermique, ces deux effets sont liés : augmenter arbitrairement le frottement sans modifier les fluctuations ne décrirait plus le même bain thermique. Cette relation entre dissipation et fluctuations est un exemple classique du lien fluctuation-dissipation.',
+
+          'À des temps suffisamment longs devant le temps de relaxation inertielle τ = m/γ, l’inertie devient négligeable dans de nombreuses situations colloïdales. On parle alors de régime suramorti ou overdamped. La dynamique de position est dominée par le frottement et les fluctuations, et la description rejoint le régime diffusif d’Einstein-Smoluchowski. À des temps très courts, en revanche, l’inertie peut être importante : le déplacement quadratique moyen n’est alors pas immédiatement linéaire en temps.',
+
+          'L’équation de Langevin est un modèle stochastique : elle ne fournit pas une trajectoire déterministe unique à partir de la seule position initiale. Pour obtenir des prédictions, il faut préciser les statistiques de la force aléatoire et calculer des moyennes ou des distributions. Le modèle élémentaire suppose notamment un frottement linéaire, un bain thermique à température constante et des fluctuations idéalisées. Des fluides complexes ou des échelles temporelles très courtes peuvent nécessiter des modèles avec mémoire, corrélations temporelles ou coefficients dépendant de la fréquence.'
+        ],
+
+        formula: {
+          label: 'ÉQUATION DE LANGEVIN (1 DIMENSION)',
+          text: 'm dv/dt = −γv + ξ(t)'
+        },
+
+        example: {
+          statement: 'Une particule de masse m = 2,0 × 10⁻¹⁵ kg possède un coefficient de frottement γ = 4,0 × 10⁻⁹ kg·s⁻¹. Calculer son temps de relaxation inertielle.',
+          calculation: 'τ = m/γ = (2,0 × 10⁻¹⁵)/(4,0 × 10⁻⁹) s.',
+          answer: 'τ = 5,0 × 10⁻⁷ s. Au-delà d’une durée nettement supérieure à cette échelle, l’approximation suramortie peut devenir pertinente, sous réserve des autres hypothèses du modèle.'
+        },
+
+        exercise: {
+          question: 'Quel est le rôle respectif des termes −γv et ξ(t) dans l’équation de Langevin ?',
+          answer: 'Le terme −γv représente le frottement visqueux qui amortit la vitesse ; ξ(t) représente les fluctuations aléatoires dues à l’agitation moléculaire du fluide.'
+        },
+
+        exercises: [
+          {
+            question: 'Quelle grandeur physique représente γ ?',
+            answer: 'Le coefficient de frottement visqueux, de dimension kg·s⁻¹.'
+          },
+          {
+            question: 'Que signifie l’approximation suramortie ?',
+            answer: 'L’inertie est négligeable à l’échelle de temps étudiée devant le frottement et les fluctuations.'
+          },
+          {
+            question: 'Pourquoi la force aléatoire ne peut-elle pas être omise à l’équilibre thermique ?',
+            answer: 'Parce qu’elle représente l’agitation moléculaire qui entretient les fluctuations de la particule et compense statistiquement la dissipation visqueuse.'
+          }
+        ],
+
+        equationDetails: [
+          {
+            title: 'Équation de Langevin',
+            formula: 'm dv/dt = −γv + ξ(t)',
+            explanation: 'Cette équation décrit la vitesse d’une particule dans un fluide au moyen d’un terme inertiel, d’un frottement linéaire et d’une force aléatoire. Elle est écrite ici en une dimension, sans force extérieure systématique. ξ(t) doit être caractérisée statistiquement pour que le modèle soit complet.',
+            parameters: 'm : masse de la particule (kg) ; v : vitesse (m·s⁻¹) ; t : temps (s) ; γ : coefficient de frottement (kg·s⁻¹) ; ξ(t) : force aléatoire (N).',
+            example: 'Si v est positive, le terme −γv est négatif et s’oppose au mouvement instantané.',
+            result: 'Le frottement amortit la vitesse tandis que la force fluctuante modélise l’agitation thermique.'
+          },
+          {
+            title: 'Temps de relaxation inertielle',
+            formula: 'τ = m/γ',
+            explanation: 'Le rapport de la masse au coefficient de frottement fixe l’échelle de temps caractéristique sur laquelle la vitesse perd la mémoire de sa valeur initiale dans le modèle libre linéaire.',
+            parameters: 'τ : temps de relaxation (s) ; m : masse (kg) ; γ : coefficient de frottement (kg·s⁻¹).',
+            example: 'Pour m = 2,0 × 10⁻¹⁵ kg et γ = 4,0 × 10⁻⁹ kg·s⁻¹ : τ = 2,0 × 10⁻¹⁵ / 4,0 × 10⁻⁹.',
+            result: 'τ = 5,0 × 10⁻⁷ s.'
+          },
+          {
+            title: 'Corrélation idéale de la force aléatoire',
+            formula: '⟨ξ(t)⟩ = 0  ;  ⟨ξ(t)ξ(t′)⟩ = 2γkB T δ(t − t′)',
+            explanation: 'Dans le modèle de Langevin classique à bruit blanc, la force aléatoire a une moyenne nulle et une corrélation temporelle proportionnelle à la distribution delta de Dirac. Cette relation fixe l’intensité du bruit en fonction du frottement et de la température afin de représenter un équilibre thermique. Elle correspond à une idéalisation continue du bain moléculaire.',
+            parameters: 'ξ : force aléatoire (N) ; γ : frottement (kg·s⁻¹) ; kB : constante de Boltzmann (J·K⁻¹) ; T : température (K) ; δ : delta de Dirac, de dimension s⁻¹.',
+            example: 'La moyenne nulle signifie qu’aucune direction n’est privilégiée par la force fluctuante en l’absence de biais extérieur.',
+            result: 'Le bruit est sans dérive moyenne, mais son intensité dépend de γ et de T.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'Paul Langevin (1908) — Sur la théorie du mouvement brownien, texte original',
+            url: 'https://fr.wikisource.org/wiki/Sur_la_th%C3%A9orie_du_mouvement_brownien'
+          },
+          {
+            title: 'Einstein (1905) — On the Motion of Small Particles Suspended in a Stationary Liquid',
+            url: 'https://www.damtp.cam.ac.uk/user/gold/pdfs/teaching/old_literature/Einstein1905.pdf'
+          },
+          {
+            title: 'University of California, Santa Barbara — Einstein, Perrin, and the reality of atoms: 1905 revisited',
+            url: 'https://physlab.org/wp-content/uploads/2016/04/Ref1.pdf'
+          },
+          {
+            title: 'University of California — étude sur les modèles de Langevin et la diffusion brownienne dans les fluides complexes',
+            url: 'https://people.math.sc.edu/vasquezp/Papers/Medved_etal_2020.pdf'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'relation-stokes-einstein-applications-limites',
+      title: 'La relation de Stokes-Einstein, mesures et limites du modèle',
+      field: 'Physique des fluides · Colloïdes · Diffusion moléculaire',
+      summary: 'Relier la diffusion à la température, à la viscosité et à la taille hydrodynamique ; comprendre les mesures expérimentales et les limites de la relation.',
+      lesson: {
+        sections: [
+          'Pour une sphère de rayon a se déplaçant lentement dans un fluide newtonien visqueux, la loi de Stokes donne un coefficient de frottement translationnel γ = 6πηa, dans le cas d’une sphère isolée et avec condition de non-glissement à sa surface. η désigne la viscosité dynamique du fluide. En combinant cette expression avec la relation d’Einstein D = kB T/γ, on obtient la relation de Stokes-Einstein : D = kB T/(6πηa).',
+
+          'Cette relation indique que le coefficient de diffusion augmente avec la température et diminue lorsque la viscosité ou le rayon hydrodynamique augmente. Le rayon hydrodynamique est la taille effective déduite du frottement dans le fluide ; il peut tenir compte de la couche de solvant entraînée avec la particule. Il ne coïncide donc pas nécessairement avec le rayon géométrique mesuré sur une image, notamment pour des objets non sphériques, poreux ou entourés d’une couche moléculaire.',
+
+          'La relation permet d’estimer D si la température, la viscosité et le rayon hydrodynamique sont connus. Inversement, si D est mesuré par suivi de trajectoires et si η et T sont connus, on peut estimer un rayon hydrodynamique. En microscopie, on suit les positions d’une particule à intervalles réguliers, on calcule les déplacements, puis on estime le déplacement quadratique moyen en fonction du temps. En diffusion normale, la pente de cette relation permet d’obtenir D : en une dimension, la pente vaut 2D ; en trois dimensions, elle vaut 6D.',
+
+          'Les hypothèses de la relation doivent être contrôlées. La loi de Stokes suppose notamment un écoulement rampant, c’est-à-dire un nombre de Reynolds très faible, et un fluide continu newtonien. La relation classique de Stokes-Einstein est formulée pour une particule sphérique diluée, suffisamment éloignée des parois et des autres particules. Les interactions entre particules, les effets de confinement, les fluides non newtoniens, les milieux viscoélastiques et les petites échelles où l’hypothèse de continuum devient discutable peuvent provoquer des écarts.',
+
+          'Dans certains milieux complexes, le déplacement quadratique moyen n’est pas proportionnel au temps : il peut suivre une loi de puissance ⟨Δr²⟩ ∝ t^α. Le cas α = 1 correspond à la diffusion normale. Un exposant α inférieur à 1 est associé à une sous-diffusion, tandis qu’un exposant supérieur à 1 correspond à une superdiffusion dans le cadre de cette classification. Ces comportements ne doivent pas être interprétés automatiquement avec la relation classique de Stokes-Einstein : il faut d’abord identifier le mécanisme physique et le domaine temporel étudié.'
+        ],
+
+        formula: {
+          label: 'RELATION DE STOKES-EINSTEIN',
+          text: 'D = kB T / (6π η a)'
+        },
+
+        example: {
+          statement: 'Une particule sphérique de rayon hydrodynamique a = 100 nm diffuse dans l’eau à T = 298 K. On prend η = 1,00 × 10⁻³ Pa·s et kB = 1,380 649 × 10⁻²³ J·K⁻¹. Estimer D avec la relation de Stokes-Einstein.',
+          calculation: 'D = (1,380 649 × 10⁻²³ × 298) / (6π × 1,00 × 10⁻³ × 100 × 10⁻⁹).',
+          answer: 'D ≈ 2,18 × 10⁻¹² m²·s⁻¹. Cette estimation suppose une sphère isolée, un fluide newtonien, un régime de Stokes et un rayon hydrodynamique correctement défini.'
+        },
+
+        exercise: {
+          question: 'À température et viscosité constantes, que devient le coefficient de diffusion si le rayon hydrodynamique d’une sphère est multiplié par 2 ?',
+          answer: 'Il est divisé par 2, car D est inversement proportionnel au rayon a dans la relation de Stokes-Einstein.'
+        },
+
+        exercises: [
+          {
+            question: 'Quelle loi permet d’écrire le frottement d’une sphère isolée en régime de Stokes ?',
+            answer: 'γ = 6πηa, pour une sphère avec condition de non-glissement dans un fluide newtonien en régime de faible nombre de Reynolds.'
+          },
+          {
+            question: 'Quelle grandeur peut-on estimer à partir d’une mesure de D si T et η sont connus ?',
+            answer: 'Le rayon hydrodynamique a, dans les hypothèses de la relation de Stokes-Einstein.'
+          },
+          {
+            question: 'Que signifie α = 1 dans la relation de diffusion ⟨Δr²⟩ ∝ t^α ?',
+            answer: 'Cela correspond à une diffusion normale, pour laquelle le déplacement quadratique moyen est proportionnel au temps.'
+          }
+        ],
+
+        equationDetails: [
+          {
+            title: 'Frottement de Stokes pour une sphère',
+            formula: 'γ = 6πηa',
+            explanation: 'Pour une sphère isolée se déplaçant lentement dans un fluide newtonien, la force de traînée est proportionnelle à la vitesse et opposée à celle-ci. Le coefficient 6πηa correspond à la condition classique de non-glissement à la surface de la sphère.',
+            parameters: 'γ : coefficient de frottement translationnel (kg·s⁻¹) ; η : viscosité dynamique (Pa·s) ; a : rayon de la sphère (m).',
+            example: 'Si η augmente d’un facteur 2 à rayon constant, γ augmente d’un facteur 2.',
+            result: 'Le frottement visqueux est proportionnel à la viscosité et au rayon.'
+          },
+          {
+            title: 'Relation d’Einstein entre diffusion et frottement',
+            formula: 'D = kB T/γ',
+            explanation: 'À l’équilibre thermique, le coefficient de diffusion est relié à la mobilité mécanique de la particule. Pour une mobilité égale à 1/γ, on obtient D = kB T/γ. Cette relation relie les fluctuations thermiques à la réponse dissipative.',
+            parameters: 'D : coefficient de diffusion (m²·s⁻¹) ; kB : constante de Boltzmann (J·K⁻¹) ; T : température absolue (K) ; γ : coefficient de frottement (kg·s⁻¹).',
+            example: 'À frottement constant, doubler T double D dans ce modèle.',
+            result: 'D est proportionnel à T et inversement proportionnel à γ.'
+          },
+          {
+            title: 'Relation de Stokes-Einstein',
+            formula: 'D = kB T/(6πηa)',
+            explanation: 'Cette expression combine la relation d’Einstein entre diffusion et frottement avec la loi de Stokes pour une sphère. Elle s’applique au modèle classique d’une particule sphérique diluée dans un fluide newtonien, en régime de faible nombre de Reynolds et loin des parois.',
+            parameters: 'D : coefficient de diffusion (m²·s⁻¹) ; kB : constante de Boltzmann (J·K⁻¹) ; T : température (K) ; η : viscosité dynamique (Pa·s) ; a : rayon hydrodynamique (m).',
+            example: 'Pour T = 298 K, η = 1,00 × 10⁻³ Pa·s et a = 100 nm : D = (1,380 649 × 10⁻²³ × 298)/(6π × 1,00 × 10⁻³ × 100 × 10⁻⁹).',
+            result: 'D ≈ 2,18 × 10⁻¹² m²·s⁻¹.'
+          },
+          {
+            title: 'Loi de puissance de la diffusion',
+            formula: '⟨|Δr|²⟩ ∝ t^α',
+            explanation: 'Cette écriture générale sert à classer certains régimes de diffusion. α = 1 caractérise la diffusion normale ; α < 1 est associé à la sous-diffusion et α > 1 à la superdiffusion. Elle ne remplace pas à elle seule un modèle microscopique et doit être interprétée sur l’intervalle temporel où elle est observée.',
+            parameters: '⟨|Δr|²⟩ : déplacement quadratique moyen (m²) ; t : temps (s) ; α : exposant sans dimension.',
+            example: 'Si α = 1, le déplacement quadratique moyen est proportionnel à t.',
+            result: 'α = 1 correspond à la diffusion normale.'
+          }
+        ],
+
+        sources: [
+          {
+            title: 'IUPAC Gold Book — Stokes–Einstein equation, définition officielle',
+            url: 'https://goldbook.iupac.org/terms/view/12260'
+          },
+          {
+            title: 'OpenStax — University Physics, Volume 1, 14.7 Viscosity and Turbulence',
+            url: 'https://openstax.org/books/university-physics-volume-1/pages/14-7-viscosity-and-turbulence'
+          },
+          {
+            title: 'University of Wisconsin–Oshkosh — Stokes-Einstein-Sutherland Equation',
+            url: 'https://chem.libretexts.org/Courses/University_of_Wisconsin_Oshkosh/Chem_371%3A_P-Chem_2_to_Folow_Combined_Biophysical_and_P-Chem_1_%28Gutow%29/05%3A_Moving_Molecules_and_Chemical_Kinetics/5.05%3A_Stokes-Einstein-Sutherland_Equation'
+          },
+          {
+            title: 'Medved et al. (2020) — Fluid Dynamics from Lagrangian Particle Tracking, Fluids',
+            url: 'https://people.math.sc.edu/vasquezp/Papers/Medved_etal_2020.pdf'
+          },
+          {
+            title: 'IUPAC Gold Book — diffusion and transport terminology',
+            url: 'https://goldbook.iupac.org/'
+          }
+        ]
+      }
+    }
+  ]
+},
 
 ]
