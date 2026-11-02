@@ -2656,5 +2656,572 @@ window.courseCatalog = [
   ]
 },
 
+ {
+  id: 'oceans-mers',
+  title: 'Les océans et les mers depuis leur formation',
+  note: 'Huit chapitres retraçant la formation de l’hydrosphère, l’évolution chimique des océans, l’apparition de la vie marine, les grandes transformations tectoniques des bassins océaniques, les mers du Paléozoïque et du Mésozoïque, la configuration des océans au Cénozoïque et leur évolution jusqu’à aujourd’hui. Les dates sont exprimées en Ga (milliards d’années) et Ma (millions d’années) avant le présent. Les reconstitutions des océans les plus anciens reposent sur des indices géologiques et géochimiques indirects ; certaines interprétations restent débattues.',
+  chapters: [
+    {
+      id: 'formation-premiers-oceans',
+      title: 'La formation de la Terre, de l’atmosphère primitive et des premiers océans',
+      field: 'Géologie · Hadéen · Environ 4,6 à 4,0 Ga',
+      summary: 'Étudier la formation de la Terre, l’origine de son eau, le refroidissement de sa surface, la condensation de la vapeur d’eau et les premières preuves géologiques de l’existence d’eau liquide.',
+      lesson: {
+        sections: [
+          'La Terre se forme il y a environ 4,54 milliards d’années par accrétion de matériaux présents dans le disque protoplanétaire entourant le jeune Soleil. Les collisions entre planétésimaux et embryons planétaires contribuent à augmenter progressivement sa masse. Les impacts, la chaleur dégagée par l’accrétion, la différenciation interne et les grands événements collisionnels maintiennent alors une partie importante de la planète à des températures extrêmement élevées. Une fraction de la surface terrestre est probablement occupée par un océan magmatique, c’est-à-dire une enveloppe de roches fondues. Dans ces conditions, les océans liquides tels que nous les connaissons ne peuvent pas encore être durablement présents à la surface. Cette première étape appartient à l’Hadéen, le plus ancien éon de l’histoire géologique terrestre.',
+          'L’origine de l’eau terrestre constitue une question scientifique complexe. Plusieurs réservoirs ont pu contribuer à son inventaire : les matériaux primitifs ayant participé à la formation de la Terre, des corps rocheux riches en composés volatils, notamment certains astéroïdes, ainsi que les échanges entre l’intérieur de la planète et sa surface. Le dégazage du manteau par le volcanisme a notamment libéré de la vapeur d’eau et d’autres gaz dans l’atmosphère primitive. Les comètes ont également été étudiées comme sources possibles, mais leur contribution exacte au volume total d’eau terrestre reste incertaine. Il serait donc incorrect d’attribuer toute l’eau des océans à une origine unique. Les rapports isotopiques de l’hydrogène, notamment le rapport deutérium/hydrogène, constituent l’un des outils permettant de comparer les différents réservoirs d’eau.',
+          'Avec le refroidissement progressif de la surface, une partie de la vapeur d’eau atmosphérique a pu se condenser et retomber sous forme de précipitations. Cette transformation a contribué à la constitution de réservoirs d’eau liquide dans les dépressions de la croûte primitive. Le processus ne doit pas être imaginé comme une apparition instantanée des océans : il s’agit d’une évolution physique et géologique qui dépend du refroidissement, de la pression atmosphérique, du bilan thermique et des échanges entre l’atmosphère, la croûte et le manteau. Les océans primitifs ont ensuite évolué avec l’activité volcanique, les impacts extraterrestres, la formation des premiers continents et les transformations de la lithosphère.',
+          'Les zircons hadéens découverts notamment dans les Jack Hills, en Australie occidentale, constituent des archives minérales exceptionnelles. Certains cristaux atteignent environ 4,4 milliards d’années. Leur composition isotopique en oxygène a été interprétée comme un indice d’interactions anciennes entre des matériaux crustaux et de l’eau liquide à basse température. Ces observations soutiennent l’hypothèse d’une hydrosphère très ancienne. Elles ne permettent cependant pas de reconstituer directement le volume exact des premiers océans, leur profondeur globale ou leur stabilité pendant toute cette période. Les interprétations des zircons et les conditions de conservation de leurs signatures géochimiques font encore l’objet de recherches.',
+          'L’existence d’eau liquide à la surface de la Terre est donc attestée indirectement par des indices minéralogiques et géochimiques très anciens. L’âge d’environ 4,4 Ga est un repère majeur pour discuter de l’apparition précoce d’environnements aqueux. Il ne faut toutefois pas confondre cet indice avec une datation directe et incontestable de la formation d’un océan mondial identique à celui d’aujourd’hui. La distinction entre présence d’eau liquide, existence de bassins océaniques et constitution d’un océan global est fondamentale pour comprendre les limites des connaissances sur l’Hadéen.'
+        ],
+        example: {
+          statement: 'Deux cristaux de zircon présentent des âges estimés à 4,4 Ga et 4,0 Ga. Quel cristal correspond au repère chronologique le plus ancien ?',
+          calculation: 'Pour des âges exprimés en milliards d’années avant le présent, le nombre le plus élevé correspond à l’événement le plus ancien : 4,4 Ga > 4,0 Ga.',
+          answer: 'Le zircon daté à environ 4,4 Ga est le plus ancien. Sa composition peut fournir des indices sur les interactions précoces entre la croûte terrestre et l’eau liquide.'
+        },
+        exercise: {
+          question: 'Pourquoi les zircons de 4,4 milliards d’années sont-ils importants pour l’étude des premiers océans ?',
+          answer: 'Parce que leur composition isotopique en oxygène fournit des indices indirects sur des interactions anciennes entre des matériaux crustaux et de l’eau liquide.'
+        },
+        exercises: [
+          {
+            question: 'À combien d’années environ remonte la formation de la Terre ?',
+            answer: 'À environ 4,54 milliards d’années.'
+          },
+          {
+            question: 'Qu’est-ce que le dégazage volcanique ?',
+            answer: 'C’est la libération de gaz provenant de l’intérieur de la Terre par l’activité volcanique. Il a contribué à l’évolution de l’atmosphère primitive et à l’apport de vapeur d’eau.'
+          },
+          {
+            question: 'Quel est l’âge approximatif de certains des plus anciens zircons terrestres connus ?',
+            answer: 'Environ 4,4 milliards d’années.'
+          },
+          {
+            question: 'Les zircons prouvent-ils directement qu’un océan mondial moderne existait déjà à 4,4 Ga ?',
+            answer: 'Non. Ils fournissent des indices indirects sur l’existence d’eau liquide et d’interactions entre l’eau et la croûte. La géométrie et l’étendue des premiers océans ne sont pas directement connues.'
+          },
+          {
+            question: 'Pourquoi l’origine de l’eau terrestre reste-t-elle discutée ?',
+            answer: 'Parce que plusieurs sources ont pu contribuer à l’inventaire initial de l’eau et que leurs proportions respectives ne sont pas précisément établies.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian Ocean — Ocean Through Time : The First Oceans of the Hadean',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'American Mineralogist — Evidence for oceans pre-4300 Ma confirmed by preserved igneous compositions in Hadean zircon',
+            url: 'https://doi.org/10.2138/am-2023-9180'
+          },
+          {
+            title: 'Nature Geoscience — Onset of the Earth’s hydrological cycle four billion years ago or earlier',
+            url: 'https://www.nature.com/articles/s41561-024-01450-0'
+          },
+          {
+            title: 'Annual Reviews — Hydration and Dehydration in Earth’s Interior',
+            url: 'https://doi.org/10.1146/ANNUREV-EARTH-080320-062509'
+          },
+          {
+            title: 'Nature Geoscience — Hadean age for a post-magma-ocean zircon confirmed by atom-probe tomography',
+            url: 'https://www.nature.com/articles/ngeo2075'
+          }
+        ]
+      }
+    },
+    {
+      id: 'oceans-archeens',
+      title: 'Les océans archéens : une planète aquatique sans oxygène libre abondant',
+      field: 'Géologie et paléocéanographie · Archéen · Environ 4,0 à 2,5 Ga',
+      summary: 'Comprendre la composition des océans primitifs, leur interaction avec le volcanisme, les sources hydrothermales, l’apparition de la vie microbienne et les premières transformations biologiques de la chimie marine.',
+      lesson: {
+        sections: [
+          'Durant l’Archéen, les océans occupent une place essentielle dans le fonctionnement de la planète. Les continents ne présentent pas encore la configuration actuelle et les échanges entre la croûte, le manteau, l’atmosphère et l’hydrosphère sont particulièrement importants. Le volcanisme libère différents gaz et des substances minérales dans les environnements terrestres et marins. Les océans reçoivent également des éléments issus de l’altération des roches continentales et du plancher océanique. Leur composition chimique est donc différente de celle des eaux marines actuelles. Les données géologiques suggèrent que de vastes régions océaniques étaient pauvres en oxygène libre, même si certaines zones pouvaient connaître une production locale d’oxygène.',
+          'Les sources hydrothermales sous-marines constituent des environnements particulièrement intéressants pour comprendre les premiers échanges chimiques entre les océans et la lithosphère. L’eau de mer pénètre dans les fractures du plancher océanique, se réchauffe au contact des roches chaudes et subit des réactions chimiques. Elle peut ensuite ressortir enrichie en éléments dissous, notamment en métaux. Ces systèmes modifient localement la composition de l’eau et participent aux cycles géochimiques du fer, du soufre et d’autres éléments. Ils représentent également des environnements étudiés par les chercheurs pour comprendre les conditions susceptibles d’avoir favorisé l’émergence de métabolismes microbiens anciens. Toutefois, les sources hydrothermales modernes ne constituent pas une reproduction exacte des conditions de l’Archéen.',
+          'Les premières traces largement reconnues de vie remontent à au moins 3,5 milliards d’années. Elles comprennent notamment des structures sédimentaires et des indices géochimiques associés à des microorganismes. Les stromatolites sont des structures laminées construites par l’activité de communautés microbiennes, souvent dominées par des microorganismes photosynthétiques. Leur étude permet de comprendre comment des communautés biologiques ont modifié les sédiments et participé aux cycles chimiques des océans. Il faut néanmoins distinguer les structures stromatolitiques de la preuve directe de l’identité biologique de chaque organisme qui les a produites.',
+          'Pendant une grande partie de l’Archéen, la photosynthèse anoxygénique a pu jouer un rôle important dans les écosystèmes microbiens. Contrairement à la photosynthèse oxygénique moderne, certaines formes de photosynthèse utilisent des donneurs d’électrons autres que l’eau et ne libèrent donc pas de dioxygène. Des microorganismes ont ainsi pu exploiter la lumière et des composés chimiques disponibles dans les eaux anciennes. L’apparition de la photosynthèse oxygénique chez des organismes apparentés aux cyanobactéries représente ensuite une transformation majeure, car elle permet la production de dioxygène à partir de l’eau. La date exacte de son apparition reste discutée et les premières productions d’oxygène ne signifient pas que l’ensemble des océans soit immédiatement devenu oxygéné.',
+          'Les océans archéens étaient également soumis à une forte interaction avec les roches volcaniques et les premières portions de croûte continentale. L’altération chimique des roches, le transport des éléments par les rivières et les réactions hydrothermales alimentaient les eaux en substances dissoutes. Les dépôts de fer rubané, constitués d’alternances de minéraux riches en fer et de silice, témoignent de changements importants dans les conditions chimiques des océans anciens. Leur formation est liée à des processus complexes d’oxydation, de précipitation et de circulation des éléments. Ils constituent des archives essentielles de l’évolution de l’état d’oxydoréduction des océans.'
+        ],
+        example: {
+          statement: 'Une roche marine contient des structures laminées interprétées comme des stromatolites et datées d’environ 3,5 Ga. Que peut-on en déduire ?',
+          calculation: 'L’âge de 3,5 Ga correspond à environ 3 500 millions d’années avant le présent. Il se situe dans l’Archéen, compris approximativement entre 4,0 et 2,5 Ga.',
+          answer: 'Ces structures constituent des indices de communautés microbiennes très anciennes. Leur interprétation doit être confrontée à la géologie et à la géochimie du site.'
+        },
+        exercise: {
+          question: 'Pourquoi les sources hydrothermales sont-elles importantes dans l’étude des premiers océans ?',
+          answer: 'Elles illustrent les échanges chimiques entre l’eau de mer et les roches chaudes du plancher océanique et constituent des environnements étudiés pour comprendre les premiers métabolismes microbiens.'
+        },
+        exercises: [
+          {
+            question: 'Entre quelles dates approximatives se situe l’Archéen ?',
+            answer: 'Entre 4,0 et 2,5 milliards d’années avant le présent.'
+          },
+          {
+            question: 'Qu’est-ce qu’un stromatolite ?',
+            answer: 'Une structure sédimentaire laminée construite par l’activité de communautés microbiennes.'
+          },
+          {
+            question: 'Les premières formes de photosynthèse libéraient-elles nécessairement du dioxygène ?',
+            answer: 'Non. La photosynthèse anoxygénique utilise d’autres donneurs d’électrons que l’eau et ne produit pas de dioxygène.'
+          },
+          {
+            question: 'Pourquoi les océans archéens étaient-ils souvent considérés comme pauvres en oxygène libre ?',
+            answer: 'Parce que les indices géochimiques montrent que l’oxygène libre était très limité dans une grande partie de l’environnement océanique et atmosphérique.'
+          },
+          {
+            question: 'Que renseignent les formations de fer rubané ?',
+            answer: 'Elles enregistrent des processus de précipitation et des changements dans la chimie des océans, notamment dans les conditions d’oxydoréduction.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian Ocean — The Microbes of the Archean',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'Smithsonian Ocean — Ocean Through Time',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'Annual Reviews — The History of Ocean Oxygenation',
+            url: 'https://doi.org/10.1146/annurev-marine-031721-104005'
+          },
+          {
+            title: 'NASA Astrobiology — Oxygen Production in Earth’s Early Oceans Predates the Great Oxidation Event',
+            url: 'https://astrobiology.nasa.gov/news/oxygen-production-in-earths-early-oceans-predates-the-great-oxidation-event/'
+          },
+          {
+            title: 'Nature Communications — The Great Oxygenation Event as a consequence of ecological dynamics modulated by planetary change',
+            url: 'https://www.nature.com/articles/s41467-021-23286-7'
+          }
+        ]
+      }
+    },
+    {
+      id: 'oceans-proterozoique',
+      title: 'Les océans protérozoïques : oxygénation progressive et transformations des continents',
+      field: 'Géologie et paléocéanographie · Protérozoïque · Environ 2,5 Ga à 539 Ma',
+      summary: 'Étudier la Grande Oxydation, l’évolution de l’oxygène dissous, les changements de la chimie marine, les supercontinents et les transformations des écosystèmes océaniques avant l’explosion cambrienne.',
+      lesson: {
+        sections: [
+          'Le Protérozoïque débute vers 2,5 milliards d’années et s’achève vers 539 millions d’années avant le présent. Il représente une période immense durant laquelle les océans subissent des transformations chimiques, biologiques et tectoniques majeures. Les continents se regroupent et se fragmentent au cours de plusieurs cycles tectoniques. Les bassins marins changent de forme, les marges continentales évoluent et les échanges entre les eaux profondes et les eaux de surface varient. La composition des océans ne peut donc pas être considérée comme constante durant tout le Protérozoïque.',
+          'La Grande Oxydation, située approximativement autour de 2,4 milliards d’années, correspond à une augmentation durable de l’oxygène dans l’atmosphère. Elle est étroitement liée à la production biologique de dioxygène, notamment par les cyanobactéries. Cependant, l’oxygène produit ne s’accumule pas immédiatement dans l’atmosphère : il réagit d’abord avec de nombreux composés réduits présents dans les océans, les roches et les gaz volcaniques. L’oxydation du fer dissous dans l’eau constitue un exemple important de ces réactions. La Grande Oxydation est un processus qui s’étend dans le temps et dont l’intensité a pu varier. Elle ne signifie pas que tous les océans sont devenus uniformément oxygénés à cette époque.',
+          'La chimie des océans protérozoïques présente de fortes différences entre les eaux superficielles et les eaux profondes. Certaines zones de surface peuvent recevoir de l’oxygène issu de la photosynthèse, tandis que des régions profondes restent anoxiques, c’est-à-dire dépourvues d’oxygène libre. Dans certains bassins, les eaux peuvent également contenir du sulfure d’hydrogène. Ces contrastes dépendent de la circulation marine, de la productivité biologique, de l’apport de nutriments et de la consommation d’oxygène par la décomposition de la matière organique. Les chercheurs utilisent les sédiments, les isotopes et les éléments sensibles aux conditions d’oxydoréduction pour reconstituer ces environnements anciens.',
+          'Le Protérozoïque est également marqué par des cycles de formation et de fragmentation des supercontinents. Rodinia se constitue progressivement durant le Néoprotérozoïque, puis se fragmente. Cette fragmentation modifie les marges continentales, ouvre des bassins et influence les circulations océaniques. Les océans Panthalassique et Pan-Africain sont notamment associés aux reconstitutions de la géographie terrestre de cette période. Les configurations exactes des continents anciens sont cependant moins bien établies que celles des périodes géologiques récentes, car les roches ont été déformées, métamorphisées ou détruites par les processus tectoniques.',
+          'Vers la fin du Protérozoïque, notamment durant l’Édiacarien, les archives fossiles montrent l’apparition d’organismes pluricellulaires de grande taille et d’animaux à corps mou. Ces organismes vivent dans des environnements marins dont l’oxygénation demeure variable selon les régions et les profondeurs. Les tapis microbiens couvrent encore de nombreux fonds marins et jouent un rôle écologique important. Les animaux édiacariens témoignent d’une diversification biologique qui précède celle du Cambrien. Il est important de ne pas présenter cette transition comme une apparition soudaine de toute la vie complexe : elle résulte d’une longue histoire évolutive.'
+        ],
+        example: {
+          statement: 'La Grande Oxydation est située approximativement vers 2,4 Ga. Combien de millions d’années cela représente-t-il ?',
+          calculation: '1 Ga = 1 000 Ma. Donc 2,4 Ga = 2 400 Ma.',
+          answer: 'La Grande Oxydation se situe approximativement 2 400 millions d’années avant le présent. Cette valeur constitue un repère général et non une date unique marquant une oxygénation instantanée de tous les océans.'
+        },
+        exercise: {
+          question: 'Pourquoi la Grande Oxydation n’a-t-elle pas entraîné une oxygénation immédiate de tous les océans ?',
+          answer: 'Parce que l’oxygène produit réagissait avec de nombreux composés réduits et que les conditions chimiques variaient selon les bassins, les profondeurs et les circulations marines.'
+        },
+        exercises: [
+          {
+            question: 'Vers quelle période se situe la Grande Oxydation ?',
+            answer: 'Approximativement autour de 2,4 milliards d’années avant le présent.'
+          },
+          {
+            question: 'Quel groupe de microorganismes a joué un rôle majeur dans la production biologique de dioxygène ?',
+            answer: 'Les cyanobactéries, grâce à la photosynthèse oxygénique.'
+          },
+          {
+            question: 'Que signifie le terme anoxique ?',
+            answer: 'Un milieu dépourvu d’oxygène libre.'
+          },
+          {
+            question: 'Qu’est-ce qu’un supercontinent ?',
+            answer: 'Une vaste masse continentale regroupant plusieurs blocs continentaux auparavant séparés.'
+          },
+          {
+            question: 'À quelle période apparaissent les organismes édiacariens caractéristiques ?',
+            answer: 'Durant l’Édiacarien, à la fin du Protérozoïque, notamment à partir d’environ 560 millions d’années.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian Ocean — Complex Life in the Ediacaran',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'Nature Geoscience — Earth’s Great Oxidation Event facilitated by the rise of sedimentary phosphorus recycling',
+            url: 'https://www.nature.com/articles/s41561-022-00906-5'
+          },
+          {
+            title: 'Nature Communications — The Great Oxygenation Event as a consequence of ecological dynamics modulated by planetary change',
+            url: 'https://www.nature.com/articles/s41467-021-23286-7'
+          },
+          {
+            title: 'Annual Reviews — The History of Ocean Oxygenation',
+            url: 'https://doi.org/10.1146/annurev-marine-031721-104005'
+          },
+          {
+            title: 'Smithsonian Ocean — Ocean Through Time',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          }
+        ]
+      }
+    },
+    {
+      id: 'mers-paleozoique',
+      title: 'Les mers du Paléozoïque : diversification de la vie et transformations des bassins',
+      field: 'Paléocéanographie · Paléozoïque · Environ 539 à 252 Ma',
+      summary: 'Comprendre l’explosion cambrienne, la diversification des organismes marins, les mers peu profondes, les glaciations, les mouvements continentaux et la formation de la Pangée.',
+      lesson: {
+        sections: [
+          'Le Paléozoïque commence vers 539 millions d’années et se termine vers 252 millions d’années. Cette ère est caractérisée par une diversification importante des organismes marins et par de profondes transformations de la géographie terrestre. Les mers peu profondes recouvrent périodiquement de vastes portions des continents. Ces environnements de plate-forme continentale constituent des habitats favorables à de nombreuses espèces. Les déplacements des continents modifient progressivement les connexions entre les bassins, les courants marins, la répartition des habitats et les échanges de nutriments.',
+          'L’explosion cambrienne, située au début du Cambrien, correspond à une diversification majeure des formes animales connues dans les archives fossiles. Les écosystèmes marins voient apparaître et se diversifier de nombreux groupes présentant des structures anatomiques nouvelles. Les trilobites deviennent des organismes caractéristiques des fonds marins. Les premiers grands prédateurs connus de cette période comprennent notamment des anomalocarididés. Des organismes filtreurs, des animaux fouisseurs et des constructeurs de récifs contribuent à la complexification des écosystèmes. Les changements de l’oxygénation, du climat, de la chimie marine et des interactions écologiques ont probablement participé à cette diversification.',
+          'Durant l’Ordovicien, la biodiversité marine continue de s’accroître. Les océans abritent des brachiopodes, des mollusques, des échinodermes, des trilobites et les premiers vertébrés connus. Les organismes marins occupent des niches écologiques variées, depuis les fonds peu profonds jusqu’aux environnements plus profonds. La fin de l’Ordovicien est marquée par une extinction biologique majeure associée notamment à une glaciation et à une baisse importante du niveau marin. Le déplacement du Gondwana vers les hautes latitudes australes participe à cette évolution climatique. La modification des habitats marins contribue aux pertes de biodiversité.',
+          'Au Silurien et au Dévonien, les écosystèmes marins connaissent de nouvelles transformations. Les récifs se développent dans différentes régions et les poissons se diversifient fortement. Les poissons à mâchoires occupent progressivement une place importante dans les réseaux alimentaires. Les mers restent soumises aux mouvements tectoniques et aux variations du niveau marin. La formation puis l’évolution de continents tels que Laurentia, Baltica et Gondwana modifient la géographie des océans. La fermeture progressive de certains bassins et l’ouverture d’autres espaces marins transforment les échanges entre les masses d’eau.',
+          'Au Carbonifère et au Permien, les continents se rapprochent progressivement pour former la Pangée. Cette réunion entraîne la réduction ou la fermeture de plusieurs bassins marins situés entre les blocs continentaux. Le vaste océan Panthalassique entoure alors l’essentiel du supercontinent. Les mers peu profondes se modifient avec les mouvements tectoniques et les variations du niveau marin. La fin du Permien, vers 252 Ma, est marquée par la plus importante extinction biologique connue dans les archives fossiles. Les changements climatiques, le volcanisme massif, le réchauffement, l’acidification et la désoxygénation des océans figurent parmi les mécanismes étudiés pour expliquer cette crise. Leur contribution respective fait encore l’objet de recherches.'
+        ],
+        example: {
+          statement: 'Le Cambrien commence vers 539 Ma et le Permien se termine vers 252 Ma. Quelle durée approximative sépare ces deux repères ?',
+          calculation: '539 Ma - 252 Ma = 287 Ma.',
+          answer: 'Environ 287 millions d’années séparent ces deux repères. Cette différence représente une durée approximative couvrant une grande partie du Paléozoïque.'
+        },
+        exercise: {
+          question: 'Pourquoi les mers peu profondes ont-elles joué un rôle important durant le Paléozoïque ?',
+          answer: 'Elles ont fourni de vastes habitats marins, notamment sur les plates-formes continentales, favorisant le développement et la diversification de nombreux organismes.'
+        },
+        exercises: [
+          {
+            question: 'Entre quelles dates approximatives se situe le Paléozoïque ?',
+            answer: 'Entre environ 539 et 252 millions d’années avant le présent.'
+          },
+          {
+            question: 'Quel groupe fossile est particulièrement caractéristique du Cambrien ?',
+            answer: 'Les trilobites.'
+          },
+          {
+            question: 'Quel supercontinent se forme progressivement à la fin du Paléozoïque ?',
+            answer: 'La Pangée.'
+          },
+          {
+            question: 'Quel vaste océan entoure la Pangée ?',
+            answer: 'Le Panthalassique.'
+          },
+          {
+            question: 'À quelle date approximative se produit l’extinction de la fin du Permien ?',
+            answer: 'Vers 252 millions d’années avant le présent.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian Ocean — Ocean Through Time : Paleozoic',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'Smithsonian Ocean — Cambrian Period',
+            url: 'https://ocean.si.edu/through-time/ancient-seas/cambrian-period-542-488-million-years-ago'
+          },
+          {
+            title: 'Smithsonian Ocean — The First Predators',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'Smithsonian Ocean — Permian Extinction',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'U.S. Geological Survey — This Dynamic Earth',
+            url: 'https://pubs.usgs.gov/gip/dynamic/dynamic.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'oceans-mesozoique',
+      title: 'Les océans du Mésozoïque : fragmentation de la Pangée et ouverture de l’Atlantique',
+      field: 'Paléocéanographie et tectonique · Mésozoïque · Environ 252 à 66 Ma',
+      summary: 'Étudier la fragmentation de la Pangée, la réorganisation des océans Panthalassique et Téthys, l’ouverture progressive de l’Atlantique, les mers épicontinentales et la diversification des reptiles marins.',
+      lesson: {
+        sections: [
+          'Le Mésozoïque s’étend approximativement de 252 à 66 millions d’années avant le présent. Il comprend le Trias, le Jurassique et le Crétacé. Au début de cette ère, la Pangée constitue une immense masse continentale entourée par l’océan Panthalassique. La géographie marine est très différente de celle du monde actuel. Les bassins océaniques sont progressivement réorganisés sous l’effet des mouvements des plaques lithosphériques. Les changements de la géométrie des continents influencent la circulation des masses d’eau, les échanges thermiques et la distribution des environnements marins.',
+          'La fragmentation de la Pangée commence au cours du Mésozoïque. Des zones d’extension apparaissent et favorisent la formation de nouvelles marges continentales. L’ouverture de l’océan Atlantique se déroule progressivement, selon des étapes différentes entre le secteur central, l’Atlantique Nord et l’Atlantique Sud. Il ne s’agit pas d’un événement unique et instantané. La création de nouvelle lithosphère océanique au niveau des dorsales accompagne l’écartement des plaques. En parallèle, l’océan Téthys sépare différentes masses continentales et constitue un espace marin majeur dans la géographie mésozoïque.',
+          'Les océans mésozoïques connaissent des périodes de niveau marin élevé, notamment au Crétacé. Les températures globales sont alors généralement élevées et les grandes calottes glaciaires permanentes comparables à celles des régions polaires actuelles sont absentes pendant une grande partie de cette période. L’expansion des dorsales océaniques et les changements de volume des bassins participent également aux variations du niveau marin. De vastes mers épicontinentales peuvent recouvrir des parties des continents. Ces environnements peu profonds favorisent la sédimentation carbonatée et la formation de dépôts marins importants.',
+          'Les écosystèmes marins du Mésozoïque sont caractérisés par la présence de reptiles marins diversifiés. Les ichthyosaures, les plésiosaures et les mosasaures occupent différentes positions dans les réseaux alimentaires. Ils coexistent avec des poissons, des ammonites, des bélemnites, des mollusques et de nombreux organismes planctoniques. Ces reptiles ne sont pas des dinosaures, même s’ils vivent à la même époque que les dinosaures terrestres. Les ammonites sont particulièrement importantes dans les archives fossiles, car leur évolution rapide et leur large distribution en font des fossiles stratigraphiques utiles pour corréler certains terrains marins.',
+          'Les récifs mésozoïques évoluent également avec les changements climatiques, chimiques et biologiques. Les organismes constructeurs de récifs comprennent notamment des coraux et d’autres groupes calcificateurs. Les récifs constituent des structures écologiques complexes qui abritent de nombreuses espèces et modifient localement la circulation de l’eau et la sédimentation. Les variations du niveau marin, la température, la disponibilité des carbonates et les crises biologiques influencent leur distribution. Les écosystèmes marins ne sont donc pas uniformes à l’échelle de l’ensemble du Mésozoïque.',
+          'La fin du Crétacé, vers 66 Ma, est marquée par l’extinction Crétacé-Paléogène. Elle entraîne la disparition de nombreuses espèces marines, notamment les ammonites et les reptiles marins non aviens. L’impact d’un astéroïde à Chicxulub constitue un facteur majeur de cette crise, auquel s’ajoutent des perturbations environnementales. La disparition de groupes dominants transforme les réseaux alimentaires marins et ouvre des possibilités de diversification pour les organismes survivants au cours du Cénozoïque.'
+        ],
+        example: {
+          statement: 'La Pangée commence à se fragmenter durant le Mésozoïque, qui se termine vers 66 Ma. Pourquoi ne faut-il pas attribuer une date unique à l’ouverture de l’Atlantique ?',
+          calculation: 'L’ouverture est progressive et ne se produit pas simultanément dans tous les secteurs. Les âges varient selon les segments du bassin et les étapes de rifting puis d’expansion océanique.',
+          answer: 'Parce que l’Atlantique s’est ouvert par étapes successives, avec des histoires tectoniques différentes selon ses régions.'
+        },
+        exercise: {
+          question: 'Quel rôle la tectonique des plaques a-t-elle joué dans la transformation des océans mésozoïques ?',
+          answer: 'Elle a provoqué la fragmentation de la Pangée, l’ouverture progressive de nouveaux bassins, la réorganisation de l’océan Téthys et du Panthalassique et la création de nouvelle lithosphère océanique.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les trois périodes du Mésozoïque ?',
+            answer: 'Le Trias, le Jurassique et le Crétacé.'
+          },
+          {
+            question: 'Quel supercontinent se fragmente durant le Mésozoïque ?',
+            answer: 'La Pangée.'
+          },
+          {
+            question: 'Quel océan commence à s’ouvrir progressivement durant cette ère ?',
+            answer: 'L’océan Atlantique.'
+          },
+          {
+            question: 'Cite deux groupes de reptiles marins du Mésozoïque.',
+            answer: 'Les ichthyosaures et les plésiosaures. Les mosasaures constituent un autre exemple.'
+          },
+          {
+            question: 'À quelle date approximative se produit l’extinction Crétacé-Paléogène ?',
+            answer: 'Vers 66 millions d’années avant le présent.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian Ocean — Ocean Through Time : Mesozoic',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'Smithsonian Ocean — The Mesozoic Sea',
+            url: 'https://ocean.si.edu/through-time/mesozoic-sea'
+          },
+          {
+            title: 'Smithsonian Ocean — Ocean Through Time : Ancient Reefs',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'U.S. Geological Survey — This Dynamic Earth',
+            url: 'https://pubs.usgs.gov/gip/dynamic/dynamic.html'
+          },
+          {
+            title: 'NOAA — Age of the Seafloor',
+            url: 'https://sos.noaa.gov/catalog/datasets/age-of-the-seafloor/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'oceans-cenozoique',
+      title: 'Les océans du Cénozoïque : configuration moderne, circulation et glaciations',
+      field: 'Paléocéanographie · Cénozoïque · Depuis 66 Ma',
+      summary: 'Retracer la réorganisation des bassins océaniques, les connexions entre les océans, l’évolution des courants, la formation des glaces polaires et les grandes variations du niveau marin.',
+      lesson: {
+        sections: [
+          'Le Cénozoïque commence vers 66 millions d’années et se poursuit jusqu’à aujourd’hui. Il correspond à une période de transformation progressive de la géographie océanique vers une configuration proche de celle que nous connaissons. Les plaques tectoniques continuent de se déplacer, les bassins changent de dimensions et les passages marins évoluent. L’Atlantique poursuit son expansion tandis que le Pacifique est bordé par de nombreuses zones de subduction. La lithosphère océanique y est continuellement créée dans certaines régions et recyclée dans d’autres. La configuration des océans actuels résulte donc d’une longue évolution tectonique.',
+          'La collision entre l’Inde et l’Eurasie entraîne la formation progressive de l’Himalaya et modifie la géographie des régions bordant l’océan Indien. D’autres collisions continentales et mouvements de plaques transforment les mers marginales et les passages océaniques. Ces modifications peuvent influencer les échanges d’eau entre les bassins et la circulation générale. Les détroits et les passages marins jouent un rôle essentiel : leur ouverture ou leur fermeture peut modifier les trajectoires des courants et les transferts de chaleur, de sel et de nutriments.',
+          'L’ouverture et l’approfondissement du passage de Drake, entre l’Amérique du Sud et l’Antarctique, constituent un changement important de la circulation océanique cénozoïque. La mise en place progressive d’une connexion marine circumantarctique permet le développement du courant circumpolaire antarctique. La chronologie précise de l’ouverture et de son approfondissement reste discutée. Ces changements sont étudiés en relation avec l’évolution de l’isolement océanique de l’Antarctique et le refroidissement climatique. Il serait toutefois trop simplificateur d’attribuer l’ensemble du refroidissement cénozoïque à un seul passage océanique : les concentrations atmosphériques en dioxyde de carbone, la tectonique et les rétroactions climatiques jouent également un rôle.',
+          'À partir de la transition Éocène-Oligocène, vers 34 Ma, une importante croissance de la calotte glaciaire antarctique est enregistrée dans les archives géologiques. La formation et l’évolution des glaces continentales modifient le volume d’eau stocké sur les continents et entraînent des variations du niveau marin. L’eau immobilisée dans les calottes glaciaires n’est plus immédiatement disponible dans les océans. Les sédiments marins, les isotopes de l’oxygène et les fossiles permettent de reconstituer ces changements. Le climat du Cénozoïque connaît ensuite des fluctuations, avec des périodes plus chaudes et des phases de refroidissement.',
+          'Au cours du Néogène et du Quaternaire, les variations climatiques influencent fortement le niveau des mers. Pendant les périodes glaciaires, une partie importante de l’eau océanique est stockée sous forme de glace continentale, ce qui entraîne une baisse du niveau marin. Pendant les périodes interglaciaires, la fonte des glaces restitue de l’eau aux océans. Lors du dernier maximum glaciaire, il y a environ 20 000 ans, le niveau marin mondial était approximativement 120 à 125 mètres plus bas qu’aujourd’hui. La remontée postglaciaire s’est déroulée sur plusieurs millénaires et a profondément modifié les littoraux, les plateaux continentaux et les connexions entre certaines mers.'
+        ],
+        example: {
+          statement: 'Au dernier maximum glaciaire, le niveau marin était environ 125 mètres plus bas que le niveau actuel. Quelle conséquence géographique cela a-t-il pu avoir ?',
+          calculation: 'La baisse du niveau marin a exposé une partie des plateaux continentaux, car une quantité importante d’eau était stockée dans les calottes glaciaires et les glaciers continentaux.',
+          answer: 'Les lignes de rivage se situaient plus loin vers le large dans de nombreuses régions. Certaines zones aujourd’hui immergées étaient alors des terres émergées.'
+        },
+        exercise: {
+          question: 'Pourquoi les glaciations provoquent-elles une baisse du niveau marin ?',
+          answer: 'Parce qu’une partie de l’eau des océans est transférée et stockée sur les continents sous forme de glaciers et de calottes glaciaires.'
+        },
+        exercises: [
+          {
+            question: 'Quand commence le Cénozoïque ?',
+            answer: 'Vers 66 millions d’années avant le présent.'
+          },
+          {
+            question: 'Entre quels continents se trouve le passage de Drake ?',
+            answer: 'Entre l’Amérique du Sud et l’Antarctique.'
+          },
+          {
+            question: 'Vers quelle période débute une importante croissance de la calotte glaciaire antarctique ?',
+            answer: 'Vers la transition Éocène-Oligocène, autour de 34 Ma.'
+          },
+          {
+            question: 'Quel était approximativement le niveau marin au dernier maximum glaciaire ?',
+            answer: 'Environ 120 à 125 mètres sous le niveau actuel.'
+          },
+          {
+            question: 'Pourquoi les variations du niveau marin transforment-elles les littoraux ?',
+            answer: 'Parce qu’elles déplacent les lignes de rivage et modifient la superficie des zones côtières et des plateaux continentaux émergés ou immergés.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NASA — Sea Level and Climate',
+            url: 'https://sealevel.nasa.gov/faq/13/how-long-have-sea-levels-been-rising-how-does-recent-sea-level-rise-compare-to-that-over-the-previous/'
+          },
+          {
+            title: 'U.S. Geological Survey — Sea Level and Climate',
+            url: 'https://www.usgs.gov/water-science-school/science/sea-level-and-climate'
+          },
+          {
+            title: 'Science — Timing and climatic consequences of the opening of Drake Passage',
+            url: 'https://pubmed.ncbi.nlm.nih.gov/16627741/'
+          },
+          {
+            title: 'Smithsonian Ocean — Ocean Through Time : Cenozoic',
+            url: 'https://ocean.si.edu/through-time/ocean-through-time'
+          },
+          {
+            title: 'U.S. Geological Survey — This Dynamic Earth',
+            url: 'https://pubs.usgs.gov/gip/dynamic/dynamic.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'fonctionnement-oceans-actuels',
+      title: 'Les océans actuels : composition, structure, salinité et circulation générale',
+      field: 'Océanographie physique et chimique · Monde actuel',
+      summary: 'Étudier les propriétés de l’eau de mer, les bassins océaniques, la structure verticale des océans, les courants, les marées, les échanges thermiques et la circulation thermohaline.',
+      lesson: {
+        sections: [
+          'Les océans actuels forment un ensemble mondial d’eaux salées qui couvre environ 71 % de la surface terrestre. Les cinq grands bassins habituellement distingués sont le Pacifique, l’Atlantique, l’Indien, l’Arctique et l’océan Austral. Ces bassins communiquent entre eux et constituent un système hydrologique global. Les limites entre les océans sont en partie conventionnelles et dépendent des délimitations géographiques retenues. Les mers sont généralement des espaces marins plus restreints, souvent partiellement entourés de terres ou reliés à un océan par des passages. Elles peuvent présenter des caractéristiques particulières de salinité, de profondeur et de circulation.',
+          'L’eau de mer contient de nombreux éléments et ions dissous. Les ions sodium et chlorure sont les plus abondants, accompagnés notamment du magnésium, du sulfate, du calcium et du potassium. La salinité moyenne des océans est proche de 35 unités pratiques de salinité, souvent présentées de manière simplifiée comme environ 35 grammes de sels dissous par kilogramme d’eau de mer. Cette valeur varie selon les régions. L’évaporation augmente généralement la salinité de surface, tandis que les précipitations, les apports fluviaux et la fonte des glaces peuvent la diminuer. La salinité intervient directement dans la densité de l’eau et influence ainsi les mouvements océaniques.',
+          'Les océans présentent une organisation verticale complexe. La couche de surface reçoit l’énergie solaire et subit l’action du vent. En dessous, la thermocline correspond à une zone où la température diminue rapidement avec la profondeur. Les eaux profondes sont généralement froides et leur renouvellement peut être très lent à l’échelle humaine. La lumière diminue rapidement avec la profondeur et ne permet la photosynthèse que dans la zone éclairée. La répartition de la température, de la salinité, de la pression et de l’oxygène dissous varie selon la latitude, la saison, la circulation et la profondeur.',
+          'Les courants océaniques sont produits par plusieurs mécanismes. Les vents entraînent les courants de surface, tandis que les différences de température et de salinité contribuent à la circulation liée à la densité. Les marées, provoquées principalement par les attractions gravitationnelles de la Lune et du Soleil, produisent également des courants particulièrement importants dans les détroits, les baies et les zones côtières. Les courants transportent de la chaleur, des nutriments, des organismes et des masses d’eau ayant des propriétés physiques et chimiques différentes. Ils jouent donc un rôle majeur dans le fonctionnement du climat et des écosystèmes marins.',
+          'La circulation thermohaline est associée aux différences de densité provoquées par la température et la salinité. Dans certaines régions polaires et subpolaires, le refroidissement de l’eau et les changements de salinité favorisent la formation de masses d’eau denses qui plongent vers les profondeurs. Ces eaux circulent ensuite dans les bassins océaniques et peuvent remonter vers la surface grâce au mélange, aux vents et aux mouvements verticaux. L’expression de tapis roulant océanique mondial est une représentation simplifiée d’un système complexe : la circulation réelle comporte plusieurs branches, des variations régionales et des changements au cours du temps.',
+          'Le plancher océanique comprend des marges continentales, des plaines abyssales, des dorsales médio-océaniques, des fosses océaniques et des monts sous-marins. Les dorsales sont des zones où la lithosphère océanique se forme à partir de matériaux magmatiques. À mesure que les plaques s’écartent, la nouvelle croûte se déplace et refroidit. Dans les zones de subduction, une partie de la lithosphère océanique plonge sous une autre plaque et est recyclée dans le manteau. Ce fonctionnement explique pourquoi la majeure partie du plancher océanique actuel est géologiquement jeune par rapport à de nombreuses roches continentales.'
+        ],
+        example: {
+          statement: 'Une eau de mer présente une salinité de 35 g de sels dissous par kilogramme. Comment interpréter cette valeur ?',
+          calculation: '35 g de sels dissous pour 1 000 g d’eau de mer correspondent à une fraction massique d’environ 3,5 %.',
+          answer: 'Cette eau présente une salinité proche de la moyenne océanique. Cette valeur reste une approximation pédagogique de la composition réelle, qui varie selon les régions.'
+        },
+        exercise: {
+          question: 'Pourquoi la température et la salinité sont-elles importantes pour la circulation des océans ?',
+          answer: 'Elles influencent la densité de l’eau. Les différences de densité contribuent aux mouvements verticaux et à la circulation profonde des masses d’eau.'
+        },
+        exercises: [
+          {
+            question: 'Quelle proportion approximative de la surface terrestre est couverte par les océans ?',
+            answer: 'Environ 71 %.'
+          },
+          {
+            question: 'Quels sont les deux ions les plus abondants dans l’eau de mer ?',
+            answer: 'Les ions sodium et chlorure.'
+          },
+          {
+            question: 'Quelle est la salinité moyenne approximative de l’eau océanique ?',
+            answer: 'Environ 35 unités pratiques de salinité, souvent assimilées pédagogiquement à environ 35 g de sels dissous par kilogramme.'
+          },
+          {
+            question: 'Qu’est-ce que la thermocline ?',
+            answer: 'Une zone de l’océan où la température diminue rapidement avec la profondeur.'
+          },
+          {
+            question: 'Quels sont les principaux moteurs des courants océaniques ?',
+            answer: 'Les vents, les différences de densité liées à la température et à la salinité, ainsi que les marées.'
+          },
+          {
+            question: 'Comment se forme une nouvelle croûte océanique ?',
+            answer: 'Elle se forme principalement au niveau des dorsales médio-océaniques, où le magma remonte et se solidifie.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NOAA — Sea Water',
+            url: 'https://www.noaa.gov/jetstream/ocean/sea-water'
+          },
+          {
+            title: 'U.S. Geological Survey — Why is the ocean salty?',
+            url: 'https://www.usgs.gov/faqs/why-ocean-salty'
+          },
+          {
+            title: 'NOAA — What is a current?',
+            url: 'https://oceanservice.noaa.gov/facts/current.html'
+          },
+          {
+            title: 'NOAA — What is the global ocean conveyor belt?',
+            url: 'https://oceanservice.noaa.gov/facts/conveyor.html'
+          },
+          {
+            title: 'NOAA — Age of the Seafloor',
+            url: 'https://sos.noaa.gov/catalog/datasets/age-of-the-seafloor/'
+          },
+          {
+            title: 'USGS — This Dynamic Earth',
+            url: 'https://pubs.usgs.gov/gip/dynamic/dynamic.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'oceans-anthropocene',
+      title: 'Les océans à l’époque contemporaine : réchauffement, acidification et pressions humaines',
+      field: 'Océanographie et changements environnementaux · Époque contemporaine',
+      summary: 'Comprendre les transformations récentes des océans sous l’effet des activités humaines : réchauffement, élévation du niveau marin, acidification, désoxygénation, pollution et perturbation des écosystèmes.',
+      lesson: {
+        sections: [
+          'Depuis le développement industriel, les océans absorbent une partie importante de l’excès de chaleur accumulé dans le système climatique et une fraction du dioxyde de carbone émis dans l’atmosphère par les activités humaines. Cette absorption limite temporairement l’augmentation de la température atmosphérique, mais elle modifie les propriétés physiques et chimiques de l’eau de mer. Le réchauffement concerne les eaux de surface comme les couches plus profondes, avec des rythmes et des intensités variables selon les régions. Les océans constituent donc un élément essentiel du système climatique mondial et enregistrent durablement les changements environnementaux.',
+          'Le réchauffement de l’eau entraîne notamment une dilatation thermique : à masse égale, l’eau plus chaude occupe un volume légèrement plus important. Cette expansion contribue à l’élévation du niveau marin. La fonte des glaciers continentaux et des calottes glaciaires du Groenland et de l’Antarctique ajoute également de l’eau aux océans. Ces deux mécanismes constituent des contributions majeures à l’élévation contemporaine du niveau moyen des mers. Il faut distinguer cette fonte de celle de la banquise flottante, dont la disparition ne produit pas directement une hausse équivalente du niveau marin.',
+          'L’acidification des océans est provoquée principalement par l’absorption du dioxyde de carbone atmosphérique. Lorsque le CO2 se dissout dans l’eau de mer, il participe à des réactions chimiques qui modifient l’équilibre du système carbonaté et augmentent la concentration en ions hydrogène. Le pH diminue et la disponibilité des ions carbonate peut se réduire. Ces ions sont importants pour de nombreux organismes qui construisent des structures en carbonate de calcium, comme certains mollusques, coraux et organismes planctoniques. L’acidification ne signifie pas que l’eau de mer devient nécessairement acide au sens d’un pH inférieur à 7 : elle désigne une diminution du pH par rapport à son état antérieur.',
+          'La désoxygénation désigne la diminution de la concentration en oxygène dissous dans certaines masses d’eau. Le réchauffement réduit la solubilité de l’oxygène dans l’eau et peut renforcer la stratification, ce qui limite les échanges entre les eaux de surface et les eaux profondes. Dans certaines régions, l’enrichissement en nutriments provenant des activités humaines peut également favoriser une production biologique excessive, suivie d’une décomposition de matière organique qui consomme de l’oxygène. Ces processus peuvent contribuer à l’expansion de zones pauvres en oxygène, dont les conséquences touchent les organismes marins et les réseaux alimentaires.',
+          'Les océans subissent aussi de nombreuses pressions liées aux activités humaines : pollution plastique, rejets chimiques, contamination par certains métaux, destruction d’habitats côtiers, surexploitation de ressources biologiques et introduction d’espèces non indigènes. Les effets varient selon les régions et les écosystèmes. Les récifs coralliens, les herbiers marins, les mangroves, les marais côtiers et les fonds marins peuvent être affectés par plusieurs pressions simultanées. Les conséquences ne se limitent pas à la disparition d’espèces : elles peuvent modifier les fonctions écologiques, la productivité biologique, les cycles de nutriments et les services rendus aux sociétés humaines.',
+          'Les océans sont également des composantes essentielles des solutions climatiques et de la recherche scientifique. Les réseaux d’observation, les satellites, les flotteurs autonomes, les campagnes océanographiques et les mesures côtières permettent de suivre les variations de température, de salinité, de niveau marin, de pH et d’oxygène dissous. Les séries de mesures sont indispensables pour distinguer les fluctuations naturelles des tendances de long terme. L’étude des océans contemporains repose ainsi sur une combinaison d’observations directes, de mesures instrumentales, de modèles numériques et de reconstitutions paléoclimatiques.'
+        ],
+        example: {
+          statement: 'Pourquoi le réchauffement des océans contribue-t-il à l’élévation du niveau marin même sans fonte des glaces ?',
+          calculation: 'Lorsque l’eau se réchauffe, sa masse volumique diminue généralement et son volume augmente. Ce phénomène est appelé dilatation thermique.',
+          answer: 'Le réchauffement provoque une expansion du volume de l’eau océanique. Cette dilatation thermique contribue donc à l’élévation du niveau moyen de la mer, indépendamment de l’apport d’eau dû à la fonte des glaces continentales.'
+        },
+        exercise: {
+          question: 'Quelle est la différence entre le réchauffement et l’acidification des océans ?',
+          answer: 'Le réchauffement correspond à une augmentation de la température de l’eau. L’acidification correspond à une diminution du pH, principalement liée à l’absorption du dioxyde de carbone atmosphérique.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les deux principales contributions à l’élévation contemporaine du niveau marin ?',
+            answer: 'La dilatation thermique de l’eau océanique et l’apport d’eau provenant de la fonte des glaciers et des calottes glaciaires continentales.'
+          },
+          {
+            question: 'Quel gaz est principalement responsable de l’acidification actuelle des océans ?',
+            answer: 'Le dioxyde de carbone, ou CO2.'
+          },
+          {
+            question: 'Pourquoi l’acidification peut-elle affecter les organismes calcificateurs ?',
+            answer: 'Parce qu’elle diminue la disponibilité des ions carbonate nécessaires à la formation de structures en carbonate de calcium.'
+          },
+          {
+            question: 'Qu’est-ce que la désoxygénation océanique ?',
+            answer: 'C’est une diminution de la concentration en oxygène dissous dans l’eau de mer.'
+          },
+          {
+            question: 'La fonte de la banquise flottante provoque-t-elle directement une élévation du niveau marin équivalente à celle de la fonte des glaces continentales ?',
+            answer: 'Non. La banquise flotte déjà dans l’eau. La fonte des glaciers continentaux et des calottes posées sur les terres ajoute directement de l’eau aux océans.'
+          },
+          {
+            question: 'Pourquoi les mesures océaniques sur plusieurs décennies sont-elles importantes ?',
+            answer: 'Elles permettent de suivre les tendances de long terme et de les distinguer des variations naturelles à court terme.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NOAA — Ocean Acidification',
+            url: 'https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-acidification'
+          },
+          {
+            title: 'NOAA — What is Ocean Acidification?',
+            url: 'https://oceanservice.noaa.gov/facts/acidification.html'
+          },
+          {
+            title: 'NASA — Sea Level Earth Indicator',
+            url: 'https://science.nasa.gov/earth/explore/earth-indicators/sea-leve/'
+          },
+          {
+            title: 'NASA — Sea Level Change Portal',
+            url: 'https://sealevel.nasa.gov/faq/13/how-long-have-sea-levels-been-rising-how-does-recent-sea-level-rise-compare-to-that-over-the-previous/'
+          },
+          {
+            title: 'U.S. Geological Survey — Sea Level and Climate',
+            url: 'https://www.usgs.gov/water-science-school/science/sea-level-and-climate'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 ]
 
