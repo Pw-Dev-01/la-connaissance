@@ -7396,6 +7396,274 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'champollion-histoire',
+  sortYear: 1790,
+  title: 'Jean-François Champollion : sa vie et la découverte de l’écriture hiéroglyphique',
+  note: 'Six chapitres sur les écritures de l’Égypte ancienne, la pierre de Rosette, la jeunesse de Champollion, le déchiffrement de 1822, ses travaux et voyages, puis l’héritage de l’égyptologie. Les dates de l’Antiquité sont des repères conventionnels ; les anecdotes biographiques rapportées par la tradition sont signalées comme telles.',
+  chapters: [
+    {
+      id: 'ecritures-egypte-ancienne',
+      title: 'Les écritures de l’Égypte ancienne avant le déchiffrement',
+      field: 'Égypte ancienne · Vers 3200 av. J.-C. – IVe siècle apr. J.-C.',
+      summary: 'Comprendre ce qu’est le système hiéroglyphique, ses formes cursives, et pourquoi sa lecture a été perdue.',
+      lesson: {
+        sections: [
+          'Les hiéroglyphes égyptiens apparaissent vers la fin du IVe millénaire av. J.-C. (vers 3200 av. J.-C. selon les repères usuels) et restent en usage pendant plus de trois millénaires. Le mot « hiéroglyphe » vient du grec et signifie à peu près « signe sacré gravé » ; les Égyptiens parlaient de « paroles du dieu » (medou netjer). Ces signes ornent temples, tombeaux et stèles.',
+          'Le système n’est ni purement imagé ni purement alphabétique. Il combine des phonogrammes (signes notant un ou plusieurs sons consonantiques), des logogrammes (signes notant un mot) et des déterminatifs (signes non prononcés qui précisent le sens d’un mot). L’écriture note surtout les consonnes : les voyelles ne sont en général pas écrites. C’est cette nature mixte qui a longtemps empêché de la comprendre.',
+          'À côté des hiéroglyphes existent des écritures cursives : le hiératique, forme simplifiée tracée à l’encre sur papyrus, et le démotique, encore plus rapide, qui se développe à partir du VIIe siècle av. J.-C. environ. Après la conquête d’Alexandre (332 av. J.-C.), le grec devient aussi une langue d’administration en Égypte. Le copte, qui note l’état tardif de la langue égyptienne avec l’alphabet grec complété de quelques signes d’origine démotique, survivra comme langue liturgique des chrétiens d’Égypte.',
+          'La dernière inscription hiéroglyphique datée connue se trouve à Philae et date de 394 apr. J.-C. Ensuite, la lecture se perd. Des auteurs de l’Antiquité tardive, comme Horapollon, ont diffusé l’idée que les hiéroglyphes étaient purement symboliques. Au XVIIe siècle, le jésuite Athanasius Kircher a reconnu l’intérêt du copte pour l’étude de l’Égypte, mais ses interprétations symboliques des hiéroglyphes se sont révélées erronées.'
+        ],
+        example: {
+          statement: 'La dernière inscription hiéroglyphique datée connue remonte à 394 apr. J.-C. et le déchiffrement de Champollion est présenté en 1822. Combien d’années les séparent ?',
+          calculation: '1822 − 394 = 1 428.',
+          answer: 'Environ 1 428 ans : l’écriture est restée incomprise pendant plus de quatorze siècles.'
+        },
+        exercise: {
+          question: 'Pourquoi dit-on que les hiéroglyphes ne sont ni purement imagés ni purement alphabétiques ?',
+          answer: 'Parce que le système combine des phonogrammes, des logogrammes et des déterminatifs.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’un déterminatif ?',
+            answer: 'Un signe non prononcé qui précise le sens ou la catégorie d’un mot.'
+          },
+          {
+            question: 'Quelles sont les trois écritures principales de l’Égypte pharaonique et ptolémaïque ?',
+            answer: 'Les hiéroglyphes, le hiératique et le démotique ; le copte note ensuite la langue avec un alphabet dérivé du grec.'
+          },
+          {
+            question: 'Pourquoi le copte sera-t-il essentiel pour Champollion ?',
+            answer: 'Parce qu’il note un état tardif de la langue égyptienne et permet de rapprocher des mots anciens de mots connus.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — recherche « Egyptian Hieroglyphs »', url: 'https://www.worldhistory.org/search/?q=Egyptian+Hieroglyphs' },
+          { title: 'World History Encyclopedia — Egyptian Hieroglyphs', url: 'https://www.worldhistory.org/Egyptian_Hieroglyphs/' },
+          { title: 'Wikipédia — Hiéroglyphes égyptiens', url: 'https://fr.wikipedia.org/wiki/Hi%C3%A9roglyphes_%C3%A9gyptiens' },
+          { title: 'Richard Parkinson, Cracking Codes: The Rosetta Stone and Decipherment (British Museum Press, 1999) — à rechercher au catalogue de la BnF', url: 'https://catalogue.bnf.fr/' }
+        ]
+      }
+    },
+    {
+      id: 'pierre-de-rosette',
+      title: 'La pierre de Rosette et les premières tentatives de lecture',
+      field: 'Égypte et Europe · 196 av. J.-C. ; découverte en 1799 ; premières études 1802–1819',
+      summary: 'Découvrir le document trilingue qui a rendu le déchiffrement possible, et les travaux qui ont précédé Champollion.',
+      lesson: {
+        sections: [
+          'La pierre de Rosette est une stèle de granodiorite portant un décret pris à Memphis en 196 av. J.-C. au nom du roi Ptolémée V. Le texte est écrit en trois versions : hiéroglyphes, démotique et grec. Elle a été découverte en juillet 1799 par des soldats français de l’expédition d’Égypte de Bonaparte, lors de travaux près du fort Julien, à Rachid (Rosette), dans le delta du Nil.',
+          'Après la défaite française, la pierre passe aux Britanniques en vertu de la capitulation d’Alexandrie (1801). Elle arrive en Angleterre en 1802 et est conservée au British Museum, où elle est toujours (numéro EA 24). Des copies circulent en Europe, ce qui permet à plusieurs savants de l’étudier. Le texte grec est compris rapidement ; il indique qu’il s’agit d’un décret, ce qui guide la recherche des passages correspondants.',
+          'Dès 1802, le diplomate suédois Johan David Åkerblad, élève d’Antoine-Isaac Silvestre de Sacy, identifie dans la version démotique plusieurs noms propres et quelques mots. Il pense toutefois que le démotique est entièrement alphabétique, ce qui est faux. Le savant britannique Thomas Young (1773–1829) reconnaît que les cartouches contiennent des noms royaux et propose des valeurs pour plusieurs signes du nom de Ptolémée. Il publie ses résultats dans un article « Egypt » en 1819.',
+          'Ces travaux restent limités : Young considère que la phonétique est surtout réservée aux noms étrangers, comme ceux des souverains grecs. Il manque encore la preuve que l’écriture note aussi la langue égyptienne ancienne. Un autre document bilingue aidera : l’obélisque de Philae, transporté en Angleterre par William John Bankes, dont le socle grec mentionne Ptolémée et Cléopâtre.'
+        ],
+        example: {
+          statement: 'Le décret de la pierre de Rosette date de 196 av. J.-C. et la pierre est découverte en 1799 apr. J.-C. Combien d’années les séparent ?',
+          calculation: '196 + 1799 − 1 = 1994, car il n’y a pas d’année 0 entre 1 av. J.-C. et 1 apr. J.-C.',
+          answer: 'Environ 1 994 ans, soit presque deux millénaires.'
+        },
+        exercise: {
+          question: 'Pourquoi un texte en trois écritures est-il précieux pour le déchiffrement ?',
+          answer: 'Parce que le grec, déjà lisible, donne un point d’appui pour comparer les versions hiéroglyphique et démotique.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel contexte la pierre de Rosette a-t-elle été découverte ?',
+            answer: 'Pendant l’expédition d’Égypte de Bonaparte, en juillet 1799, près de Rachid (Rosette).'
+          },
+          {
+            question: 'Quel apport de Thomas Young est important ?',
+            answer: 'Il reconnaît que les cartouches contiennent des noms royaux et propose des valeurs pour des signes du nom de Ptolémée.'
+          },
+          {
+            question: 'Quelle erreur de méthode limite les premiers travaux ?',
+            answer: 'Croire que le démotique est entièrement alphabétique, ou que la phonétique ne concerne que les noms étrangers.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Rosetta Stone', url: 'https://www.worldhistory.org/Rosetta_Stone/' },
+          { title: 'British Museum — La pierre de Rosette (EA 24)', url: 'https://www.britishmuseum.org/collection/object/Y_EA24' },
+          { title: 'Encyclopaedia Britannica — Rosetta Stone', url: 'https://www.britannica.com/topic/Rosetta-Stone' },
+          { title: 'Encyclopaedia Britannica — Thomas Young', url: 'https://www.britannica.com/biography/Thomas-Young' },
+          { title: 'Wikipédia — Pierre de Rosette', url: 'https://fr.wikipedia.org/wiki/Pierre_de_Rosette' }
+        ]
+      }
+    },
+    {
+      id: 'jeunesse-et-formation',
+      title: 'Jeunesse et formation de Champollion (1790–1821)',
+      field: 'France · Figeac, Grenoble et Paris · 1790–1821',
+      summary: 'Suivre la formation linguistique et savante d’un jeune érudit qui prépare le déchiffrement.',
+      lesson: {
+        sections: [
+          'Jean-François Champollion naît le 23 décembre 1790 à Figeac, dans le Lot. Son frère aîné, Jacques-Joseph Champollion-Figeac (1778–1867), érudit de douze ans son aîné, l’accueille à Grenoble et soutient durablement ses études et sa carrière.',
+          'Élève précoce, il étudie les langues anciennes et orientales : hébreu, arabe, syriaque, chaldéen et surtout copte. À Grenoble, il rencontre le mathématicien Joseph Fourier, préfet de l’Isère et ancien membre de l’expédition d’Égypte, qui possède des antiquités égyptiennes. En 1807, à 16 ans, il présente à l’Académie delphinale un mémoire sur la géographie de l’Égypte ancienne.',
+          'Il poursuit ses études à Paris à partir de 1807, notamment auprès d’Antoine-Isaac Silvestre de Sacy. Il comprend que le copte est la clef pour rapprocher les mots de l’égyptien ancien. En 1809, il devient professeur adjoint d’histoire à Grenoble. En 1814, il publie L’Égypte sous les Pharaons, consacré à la géographie de l’Égypte ancienne.',
+          'Sa carrière est marquée par la politique : sympathisant de Napoléon, il est inquiété sous la Restauration, exilé à Figeac en 1816–1817, puis quitte Grenoble pour Paris en 1821. La même année, il publie un travail sur l’écriture hiératique et ses rapports avec les hiéroglyphes. Cette formation lui donne les trois outils du déchiffrement : les langues, les documents copiés et la méthode comparative.'
+        ],
+        example: {
+          statement: 'Champollion naît le 23 décembre 1790. Quel âge a-t-il en septembre 1807 lorsqu’il présente son mémoire à l’Académie delphinale ?',
+          calculation: '1807 − 1790 = 17, mais son anniversaire a lieu fin décembre : en septembre, il n’a pas encore eu ses 17 ans.',
+          answer: 'Il a 16 ans.'
+        },
+        exercise: {
+          question: 'Pourquoi le copte est-il central dans la formation de Champollion ?',
+          answer: 'Parce qu’il note un état tardif de la langue égyptienne et peut aider à lire les mots de l’égyptien ancien.'
+        },
+        exercises: [
+          {
+            question: 'Qui est Jacques-Joseph Champollion-Figeac ?',
+            answer: 'Le frère aîné de Champollion, érudit qui l’a soutenu dans ses études et sa carrière.'
+          },
+          {
+            question: 'Quel rôle joue Joseph Fourier dans sa jeunesse ?',
+            answer: 'Préfet de l’Isère et ancien de l’expédition d’Égypte, il l’initie à des antiquités égyptiennes.'
+          },
+          {
+            question: 'Quelle publication de 1814 prépare ses recherches ?',
+            answer: 'L’Égypte sous les Pharaons, consacré à la géographie de l’Égypte ancienne.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopaedia Britannica — Jean-François Champollion', url: 'https://www.britannica.com/biography/Jean-Francois-Champollion' },
+          { title: 'Wikipédia — Jean-François Champollion', url: 'https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Champollion' },
+          { title: 'Andrew Robinson, Cracking the Egyptian Code: The Revolutionary Life of Jean-François Champollion (Oxford University Press, 2012) — à rechercher au catalogue de la BnF', url: 'https://catalogue.bnf.fr/' },
+          { title: 'Jean Lacouture, Champollion : une vie de lumières (Grasset, 1988) — à rechercher au catalogue de la BnF', url: 'https://catalogue.bnf.fr/' }
+        ]
+      }
+    },
+    {
+      id: 'dechiffrement-1822',
+      title: '1822 : la Lettre à M. Dacier et le principe phonétique',
+      field: 'Paris · Septembre 1822',
+      summary: 'Comprendre comment la comparaison de cartouches a prouvé que les hiéroglyphes notent des sons.',
+      lesson: {
+        sections: [
+          'Champollion compare les noms royaux : « Ptolémée » sur la pierre de Rosette et « Cléopâtre » sur des relevés de l’obélisque de Philae. Les deux noms partagent plusieurs sons (p, t, o, l), mais à des positions différentes. Il constate que les mêmes signes correspondent aux mêmes sons dans les deux cartouches : c’est un test de cohérence très fort pour l’hypothèse phonétique.',
+          'L’étape suivante est de lire des noms pharaoniques, sans lien avec le grec. Des cartouches comme celui de Ramsès (soleil + signe ms + s) ou de Thoutmosis (ibis de Thot + ms) se lisent grâce au copte : le signe du soleil renvoie au mot copte pour « Rê », et ms à une racine liée à « naître ». Cela montre que le principe phonétique concerne la langue égyptienne ancienne, pas seulement des noms étrangers tardifs.',
+          'La tradition biographique rapporte qu’à Paris, le 14 septembre 1822, Champollion court chez son frère en s’écriant « Je tiens l’affaire ! » puis s’évanouit. L’anecdote est célèbre, mais elle relève du récit biographique. Les repères solides sont ceux-ci : le 27 septembre 1822, il lit à l’Académie des inscriptions et belles-lettres sa Lettre à M. Dacier, relative à l’alphabet des hiéroglyphes phonétiques, adressée à Bon-Joseph Dacier, secrétaire perpétuel de l’Académie.',
+          'La Lettre à M. Dacier établit le principe phonétique mais n’expose pas encore tout le système : ce sera l’objet du Précis de 1824. Une controverse de priorité oppose les partisans de Champollion et ceux de Thomas Young, qui avait ouvert la voie en 1819. L’historiographie reconnaît généralement l’apport de Young, mais attribue à Champollion le déchiffrement du système dans son ensemble.'
+        ],
+        example: {
+          statement: 'Champollion est né le 23 décembre 1790. Quel âge a-t-il le 27 septembre 1822 ?',
+          calculation: '1822 − 1790 = 32, mais son anniversaire de décembre n’est pas encore passé : 32 − 1 = 31.',
+          answer: 'Il a 31 ans.'
+        },
+        exercise: {
+          question: 'Pourquoi comparer les noms « Ptolémée » et « Cléopâtre » est-il utile ?',
+          answer: 'Parce que des signes communs retrouvent les mêmes sons dans les deux noms, ce qui confirme leur valeur phonétique.'
+        },
+        exercises: [
+          {
+            question: 'À qui est adressée la lettre de 1822 ?',
+            answer: 'À Bon-Joseph Dacier, secrétaire perpétuel de l’Académie des inscriptions et belles-lettres.'
+          },
+          {
+            question: 'Pourquoi les cartouches de Ramsès et de Thoutmosis sont-ils importants ?',
+            answer: 'Ils montrent que la phonétique et le copte permettent de lire des noms pharaoniques, pas seulement des noms grecs.'
+          },
+          {
+            question: 'L’anecdote du « Je tiens l’affaire ! » est-elle un repère historique solide ?',
+            answer: 'Non, elle relève du récit biographique traditionnel ; la lecture du 27 septembre 1822 est un repère mieux établi.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Rosetta Stone', url: 'https://www.worldhistory.org/Rosetta_Stone/' },
+          { title: 'Encyclopaedia Britannica — Jean-François Champollion', url: 'https://www.britannica.com/biography/Jean-Francois-Champollion' },
+          { title: 'BnF Gallica — Champollion, Lettre à M. Dacier (1822), à rechercher dans Gallica', url: 'https://gallica.bnf.fr/' },
+          { title: 'Wikipédia — Jean-François Champollion', url: 'https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Champollion' }
+        ]
+      }
+    },
+    {
+      id: 'precis-turin-louvre-egypte',
+      title: 'Du Précis de 1824 au voyage en Égypte (1824–1829)',
+      field: 'France, Italie, Égypte · 1824–1829',
+      summary: 'Voir comment Champollion transforme une découverte en système, en collections muséales et en travail de terrain.',
+      lesson: {
+        sections: [
+          'En 1824, Champollion publie le Précis du système hiéroglyphique des anciens Égyptiens. Il y expose que l’écriture combine des signes phonétiques, des signes figuratifs et des signes symboliques. C’est une rupture avec les thèses antérieures : ni écriture purement symbolique, ni alphabet simple, mais système mixte.',
+          'De 1824 à 1826, il séjourne en Italie, notamment à Turin, pour étudier les collections égyptiennes. Ces objets, papyrus et statues lui fournissent des textes variés pour vérifier sa méthode. Parmi eux se trouve un papyrus royal, connu aujourd’hui sous le nom de Canon royal de Turin.',
+          'En 1826, il est nommé conservateur des collections égyptiennes du Louvre par le roi Charles X. Il contribue à l’acquisition de collections importantes, comme celle de Henry Salt, et à l’organisation d’un département d’antiquités égyptiennes. Le musée Charles X ouvre en 1827 ; c’est un moment où la découverte devient aussi une politique de collections.',
+          'En 1828–1829, il dirige avec l’Italien Ippolito Rosellini une expédition franco-toscane en Égypte et en Nubie. Il y lit des inscriptions dans les temples, relève des textes et des scènes, et va jusqu’à Ouadi Halfa. Ses lettres du voyage, publiées après sa mort, montrent un chercheur qui confronte son déchiffrement à des monuments en place.'
+        ],
+        example: {
+          statement: 'Entre la Lettre à M. Dacier (1822) et sa nomination au Louvre (1826), combien d’années s’écoulent-elles ?',
+          calculation: '1826 − 1822 = 4.',
+          answer: 'Quatre ans : le déchiffrement est suivi très vite d’une reconnaissance institutionnelle.'
+        },
+        exercise: {
+          question: 'Pourquoi le Précis de 1824 est-il plus complet que la Lettre à M. Dacier ?',
+          answer: 'Il expose le système d’écriture dans son ensemble, avec des signes phonétiques, figuratifs et symboliques.'
+        },
+        exercises: [
+          {
+            question: 'Quelle fonction obtient Champollion au Louvre en 1826 ?',
+            answer: 'Conservateur des collections égyptiennes.'
+          },
+          {
+            question: 'Avec qui dirige-t-il l’expédition de 1828–1829 ?',
+            answer: 'Avec Ippolito Rosellini.'
+          },
+          {
+            question: 'Pourquoi le voyage en Égypte est-il important ?',
+            answer: 'Il permet de tester le déchiffrement sur des inscriptions et monuments en place.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopaedia Britannica — Jean-François Champollion', url: 'https://www.britannica.com/biography/Jean-Francois-Champollion' },
+          { title: 'Wikipédia — Jean-François Champollion', url: 'https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Champollion' },
+          { title: 'Musée du Louvre — base des collections', url: 'https://collections.louvre.fr/' },
+          { title: 'Andrew Robinson, Cracking the Egyptian Code (Oxford University Press, 2012) — à rechercher au catalogue de la BnF', url: 'https://catalogue.bnf.fr/' }
+        ]
+      }
+    },
+    {
+      id: 'heritage-egyptologie',
+      title: 'Mort, publications posthumes et naissance de l’égyptologie',
+      field: 'France et Europe · 1831–XXe siècle',
+      summary: 'Évaluer l’héritage de Champollion, de ses derniers travaux à la consolidation de l’égyptologie.',
+      lesson: {
+        sections: [
+          'En 1831, une chaire d’histoire et d’archéologie égyptiennes est créée pour Champollion au Collège de France ; il en est le premier titulaire. Sa santé est cependant fragile. Il meurt à Paris le 4 mars 1832, à 41 ans.',
+          'Son frère, Champollion-Figeac, publie à titre posthume plusieurs ouvrages : Monuments de l’Égypte et de la Nubie (1835–1845), Grammaire égyptienne (1836–1841) et Dictionnaire égyptien en écriture hiéroglyphique (1841–1844). Ces publications sont fondatrices mais incomplètes : elles contiennent des erreurs que les recherches ultérieures corrigeront.',
+          'La méthode est ensuite confirmée et affinée. Karl Richard Lepsius (1810–1884), dans sa lettre de 1837 à Rosellini, confirme et précise le système de Champollion, puis contribue à fonder l’égyptologie en Allemagne. Plus tard, Adolf Erman et Alan Gardiner (Egyptian Grammar, 1927) donnent des instruments devenus classiques pour l’étude de l’égyptien.',
+          'Le déchiffrement ne consiste pas à « traduire des images » : il repose sur la comparaison de textes bilingues, la connaissance du copte, l’étude des noms propres et la vérification sur de nombreux documents. Il ouvre l’accès direct à l’histoire, aux religions et aux littératures de l’Égypte. À Figeac, la maison natale de Champollion abrite aujourd’hui le musée Champollion – Les Écritures du monde.'
+        ],
+        example: {
+          statement: 'Champollion est né le 23 décembre 1790 et meurt le 4 mars 1832. Quel âge avait-il ?',
+          calculation: '1832 − 1790 = 42, mais le 4 mars précède son anniversaire du 23 décembre : 42 − 1 = 41.',
+          answer: 'Il avait 41 ans.'
+        },
+        exercise: {
+          question: 'Pourquoi les ouvrages publiés après 1832 sont-ils à la fois précieux et à nuancer ?',
+          answer: 'Ils transmettent ses travaux, mais ils étaient inachevés et contiennent des erreurs corrigées plus tard.'
+        },
+        exercises: [
+          {
+            question: 'Quelle institution crée une chaire d’égyptologie pour Champollion en 1831 ?',
+            answer: 'Le Collège de France.'
+          },
+          {
+            question: 'Quel savant allemand confirme et affine sa méthode ?',
+            answer: 'Karl Richard Lepsius.'
+          },
+          {
+            question: 'Quels éléments sont indispensables au déchiffrement ?',
+            answer: 'Les textes bilingues, la connaissance du copte, l’étude des noms propres et la vérification sur de nombreux documents.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopaedia Britannica — Jean-François Champollion', url: 'https://www.britannica.com/biography/Jean-Francois-Champollion' },
+          { title: 'Collège de France — site officiel', url: 'https://www.college-de-france.fr/' },
+          { title: 'Wikipédia — Jean-François Champollion', url: 'https://fr.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Champollion' },
+          { title: 'Griffith Institute, Université d’Oxford — égyptologie et héritage de Gardiner', url: 'https://www.griffith.ox.ac.uk/' }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
 
