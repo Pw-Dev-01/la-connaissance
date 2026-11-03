@@ -3086,6 +3086,396 @@ sources: [
 },
 
 
+{
+  id: 'plaques-tectoniques',
+  sortYear: -4030000000,
+  title: 'Les plaques tectoniques : l’histoire de la formation des continents',
+  note: 'Sept chapitres consacrés aux grands ensembles continentaux actuels : Amérique du Nord, Antarctique, Europe, Australie, Amérique du Sud, Afrique et Asie. Les continents ne sont pas apparus d’un seul bloc ni à une date unique : ils résultent de la croissance de noyaux crustaux anciens, de collisions, de sutures, de volcanisme, de rifting et de cycles de supercontinents. Les valeurs sortYear indiquent ici, à titre de classement pédagogique, l’âge approximatif d’un des plus anciens témoins crustaux documentés pour chaque ensemble ; elles ne datent pas la naissance du continent moderne. Les âges sont exprimés en années avant le présent et restent susceptibles d’être affinés.',
+  chapters: [
+    {
+      id: 'amerique-du-nord',
+      title: 'L’Amérique du Nord : de Laurentia au continent actuel',
+      field: 'Géologie · Archéen à aujourd’hui · noyau continental documenté vers 4,03 milliards d’années',
+      summary: 'Retracer la formation du noyau ancien Laurentia, l’accrétion de terrains, les grandes orogenèses et l’ouverture de l’Atlantique.',
+      lesson: {
+        sections: [
+          'Le cœur géologique de l’Amérique du Nord est le craton nord-américain, souvent appelé Laurentia dans les reconstitutions paléogéographiques. Il comprend notamment le Bouclier canadien et des régions aujourd’hui recouvertes par des bassins sédimentaires. Un craton est une partie ancienne et relativement stable de la lithosphère continentale. Il ne correspond pas à un continent complet : c’est un noyau autour duquel des terrains plus récents ont été ajoutés. Les gneiss du complexe d’Acasta, dans les Territoires du Nord-Ouest du Canada, contiennent des zircons datés jusqu’à environ 4,03 milliards d’années. Cette datation concerne des minéraux et des protolithes très anciens, pas l’âge de toute l’Amérique du Nord.',
+          'Entre l’Archéen et le Protérozoïque, des fragments de croûte, des arcs volcaniques et des blocs continentaux se sont rapprochés puis soudés par accrétion et collision. Les zones de déformation et de métamorphisme qui marquent ces assemblages sont des ceintures orogéniques. La croissance de Laurentia s’est donc faite par étapes, sur des centaines de millions d’années. Les roches anciennes visibles aujourd’hui ne représentent qu’une partie de cette histoire, car l’érosion, l’enfouissement, la fusion partielle et la tectonique ont détruit ou transformé de nombreux témoins plus anciens.',
+          'Au Paléozoïque, Laurentia a été bordée par des océans qui se sont ouverts puis refermés. La fermeture de l’océan Iapetus a participé à la collision de Laurentia avec Baltica et Avalonia, lors de l’orogenèse calédonienne, vers 450 à 400 millions d’années. Plus tard, la convergence avec les masses issues du Gondwana a contribué à l’orogenèse appalachienne et à l’assemblage de la Pangée. Les Appalaches sont ainsi la trace d’anciennes collisions continentales, aujourd’hui fortement érodées.',
+          'La Pangée a commencé à se fragmenter au Mésozoïque, il y a environ 200 millions d’années. L’ouverture progressive de l’Atlantique a séparé l’Amérique du Nord de l’Afrique puis de l’Europe. À l’ouest, l’ajout de terrains et la subduction le long de la marge pacifique ont construit la Cordillère, avec des épisodes de volcanisme, de déformation et de surrection. Le continent actuel est donc le résultat combiné d’un vieux noyau, d’accrétions successives et de marges tectoniquement actives.'
+        ],
+        example: {
+          statement: 'Le complexe d’Acasta contient des roches dont certains zircons ont un âge d’environ 4,03 milliards d’années. Peut-on en conclure que le continent nord-américain entier a exactement cet âge ?',
+          calculation: 'Il faut distinguer l’âge d’un minéral ou d’un fragment de croûte de l’âge d’un continent dans son extension actuelle. Un continent se construit par assemblage de terrains d’âges différents.',
+          answer: 'Non. 4,03 milliards d’années est un repère pour des témoins crustaux exceptionnellement anciens du nord du Canada. Laurentia puis l’Amérique du Nord se sont agrandies par accrétion et collision bien après cette date.'
+        },
+        exercise: {
+          question: 'Pourquoi le craton de Laurentia ne doit-il pas être confondu avec l’ensemble du continent nord-américain actuel ?',
+          answer: 'Parce que Laurentia est le noyau continental ancien, tandis que le continent actuel comprend aussi des terrains ajoutés ultérieurement par accrétion, collision et sédimentation.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel pays se trouve le complexe de gneiss d’Acasta ?',
+            answer: 'Au Canada, dans les Territoires du Nord-Ouest.'
+          },
+          {
+            question: 'Que signifie le terme accrétion en tectonique ?',
+            answer: 'L’ajout progressif de fragments de croûte, d’arcs ou de terrains à une marge continentale.'
+          },
+          {
+            question: 'Quel océan s’est ouvert en séparant progressivement l’Amérique du Nord de l’Europe et de l’Afrique ?',
+            answer: 'L’océan Atlantique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Ressources naturelles Canada — Where do you find old iconic rock stars? In Canada, of course!',
+            url: 'https://natural-resources.canada.ca/stories/simply-science/where-you-find-old-iconic-rock-stars-canada-course'
+          },
+          {
+            title: 'Geoscience Canada — Age of the World’s Oldest Rocks Refined Using Canada’s SHRIMP',
+            url: 'https://journals.hil.unb.ca/index.php/GC/article/view/3966'
+          },
+          {
+            title: 'USGS — Geology of the New York Region',
+            url: 'https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-new-york-region'
+          },
+          {
+            title: 'OpenTextBC — Physical Geology, Geological History of Canada',
+            url: 'https://opentextbc.ca/geology/chapter/21-1-geological-history-of-canada/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'antarctique',
+      title: 'L’Antarctique : un socle ancien au cœur du Gondwana',
+      field: 'Géologie · Archéen à aujourd’hui · témoins crustaux pouvant atteindre environ 4 milliards d’années',
+      summary: 'Comprendre le contraste entre l’ancien socle de l’Antarctique oriental, les terrains composites de l’Antarctique occidental et la séparation du Gondwana.',
+      lesson: {
+        sections: [
+          'L’Antarctique actuel repose sur une croûte continentale dont l’histoire est très ancienne et hétérogène. Dans l’Antarctique oriental, le socle comprend des roches précambriennes dont certains âges atteignent environ 4 milliards d’années. Ces âges sont établis à partir d’affleurements limités, car près de 99 % du continent est recouvert par la glace. Les géologues étudient donc aussi le sous-sol à l’aide de mesures géophysiques, notamment sismiques et radar, ainsi que grâce aux rares affleurements côtiers et montagneux.',
+          'L’Antarctique oriental forme un vaste noyau continental relativement cohérent, alors que l’Antarctique occidental est constitué de plusieurs unités tectoniques ayant des histoires distinctes. Cette différence est importante : le continent n’est pas un bloc homogène. Les monts Transantarctiques séparent les deux grands domaines et enregistrent une histoire tectonique complexe. Le relief et les structures visibles résultent de plusieurs épisodes de déformation, de magmatisme et de soulèvement.',
+          'Avant l’ouverture des océans actuels, l’Antarctique faisait partie du Gondwana, qui réunissait notamment l’Afrique, l’Amérique du Sud, l’Inde, l’Australie et Madagascar. Ces continents partagent des indices géologiques et paléontologiques compatibles avec leur ancienne proximité. Le Gondwana s’est lui-même intégré à la Pangée au Paléozoïque tardif. La fragmentation de la Pangée puis du Gondwana a progressivement isolé l’Antarctique au cours du Mésozoïque et du Cénozoïque.',
+          'La séparation entre l’Australie et l’Antarctique a commencé vers 85 millions d’années et s’est achevée vers 30 millions d’années selon la synthèse du programme antarctique australien. L’isolement géographique et océanographique de l’Antarctique a contribué à son refroidissement progressif, mais la mise en place de la calotte glaciaire dépend aussi de facteurs atmosphériques, océaniques et de la configuration des passages marins. Il serait donc incorrect d’attribuer l’englacement à un seul événement tectonique.'
+        ],
+        example: {
+          statement: 'Si une roche du socle antarctique est datée à 4 milliards d’années, que date réellement cette valeur ?',
+          calculation: 'La datation radiométrique porte sur la cristallisation ou la transformation d’un minéral ou d’une roche, selon le système isotopique utilisé. Elle ne date pas automatiquement la forme actuelle du continent.',
+          answer: 'Elle indique l’ancienneté de ce témoin géologique. Le continent antarctique actuel résulte de l’assemblage et de la réorganisation de plusieurs terrains au cours d’une histoire beaucoup plus longue.'
+        },
+        exercise: {
+          question: 'Pourquoi la géologie de l’Antarctique est-elle particulièrement difficile à reconstituer ?',
+          answer: 'Parce que l’immense majorité du socle est recouverte par une épaisse calotte glaciaire et que les affleurements rocheux sont rares.'
+        },
+        exercises: [
+          {
+            question: 'Quel supercontinent comprenait autrefois l’Antarctique, l’Afrique, l’Inde et l’Australie ?',
+            answer: 'Le Gondwana.'
+          },
+          {
+            question: 'Quelle chaîne montagneuse traverse l’Antarctique et sépare ses deux grands domaines géologiques ?',
+            answer: 'Les monts Transantarctiques.'
+          },
+          {
+            question: 'À quelle période la séparation entre l’Australie et l’Antarctique a-t-elle commencé, selon le programme antarctique australien ?',
+            answer: 'Vers 85 millions d’années avant le présent.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Australian Antarctic Program — Antarctic geology',
+            url: 'https://www.antarctica.gov.au/about-antarctica/geography-and-geology/geology/'
+          },
+          {
+            title: 'Umweltbundesamt — Geology of the Antarctic',
+            url: 'https://www.umweltbundesamt.de/en/geology-of-the-antarctic'
+          },
+          {
+            title: 'OpenStax — Earth’s Crust and Plate Tectonics',
+            url: 'https://openstax.org/books/astronomy/pages/8-2-earths-crust'
+          }
+        ]
+      }
+    },
+    {
+      id: 'europe',
+      title: 'L’Europe : l’assemblage de cratons et de microcontinents',
+      field: 'Géologie · Précambrien à aujourd’hui · noyaux crustaux anciens, assemblage majeur au Paléozoïque',
+      summary: 'Étudier Baltica, les terrains issus de Gondwana, les orogenèses calédonienne et varisque, puis la formation de la marge alpine.',
+      lesson: {
+        sections: [
+          'L’Europe géologique ne s’est pas formée en une seule étape. Le continent actuel, intégré en grande partie à la plaque eurasiatique, réunit des domaines de socle d’âges différents. Au nord-est, le craton est-européen comprend notamment les ensembles de Fennoscandie, de Sarmatie et de Volgo-Ouralie. Des zircons découverts en Finlande indiquent que certaines composantes de la croûte scandinave pourraient remonter à environ 3,75 milliards d’années. Ce repère concerne l’histoire de matériaux crustaux anciens et non la formation de l’Europe moderne.',
+          'À la fin du Précambrien et au début du Paléozoïque, plusieurs fragments continentaux et arcs magmatiques se trouvaient autour de Gondwana. Certains de ces terrains, dont Avalonia et des unités dites armoricaines, se sont ensuite déplacés et ont été incorporés à ce qui deviendra l’Europe. Les reconstructions paléogéographiques s’appuient sur les roches, les fossiles, les structures tectoniques et les données paléomagnétiques. Les positions anciennes restent des modèles scientifiques révisables, et les limites exactes de certains blocs font encore l’objet de recherches.',
+          'Au Paléozoïque, la fermeture de l’océan Iapetus a rapproché puis fait entrer en collision Laurentia, Baltica et Avalonia. Cette convergence a produit l’orogenèse calédonienne, dont les traces sont présentes en Scandinavie, en Écosse, en Irlande et dans d’autres régions de l’Atlantique nord. Plus tard, la fermeture d’océans et la collision de terrains issus de Gondwana avec Laurussia ont participé à l’orogenèse varisque, qui a affecté notamment l’Europe occidentale et centrale.',
+          'À la fin du Paléozoïque, les blocs continentaux se sont réunis dans la Pangée. La fragmentation de ce supercontinent au Mésozoïque a créé de nouveaux bassins et ouvert progressivement l’Atlantique. Au Cénozoïque, la convergence entre l’Afrique, l’Arabie et l’Eurasie a contribué à l’édification des chaînes alpines, des Carpates et d’autres reliefs du sud de l’Europe. La carte géologique européenne actuelle juxtapose donc des socles précambriens, des chaînes paléozoïques, des bassins mésozoïques et des reliefs cénozoïques.'
+        ],
+        example: {
+          statement: 'Pourquoi les Alpes et les monts Calédoniens ne témoignent-ils pas du même épisode de formation ?',
+          calculation: 'On compare leurs âges et leur contexte tectonique : l’orogenèse calédonienne est principalement paléozoïque, tandis que le système alpin est lié à des convergences cénozoïques plus récentes, avec une histoire mésozoïque préalable.',
+          answer: 'Parce qu’ils résultent de cycles tectoniques distincts. Les Calédonides enregistrent la fermeture d’océans paléozoïques ; les Alpes sont principalement associées à la convergence entre les plaques africaine et eurasiatique.'
+        },
+        exercise: {
+          question: 'Comment des fragments autrefois situés près de Gondwana ont-ils pu devenir des parties de l’Europe ?',
+          answer: 'Le déplacement des plaques a transporté ces fragments, puis des collisions et des sutures les ont incorporés aux ensembles continentaux européens.'
+        },
+        exercises: [
+          {
+            question: 'Quel ancien océan s’est fermé lors de l’assemblage calédonien entre Laurentia, Baltica et Avalonia ?',
+            answer: 'L’océan Iapetus.'
+          },
+          {
+            question: 'Quel supercontinent réunissait les grandes masses continentales à la fin du Paléozoïque ?',
+            answer: 'La Pangée.'
+          },
+          {
+            question: 'Quelle convergence est principalement associée à la formation du système alpin ?',
+            answer: 'La convergence entre l’Afrique et l’Eurasie, avec une histoire complexe impliquant aussi des blocs intermédiaires.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Commission européenne — Simplified description of European geology',
+            url: 'https://remon.jrc.ec.europa.eu/media/3ec98c2c-1c09-400f-b539-b452d2c761d1/6W4Atw/Atlas/PDF%20Files/JRC_EANR_Chapter_02.pdf'
+          },
+          {
+            title: 'Open University — Geological processes in the British Isles: a global view of Earth history',
+            url: 'https://www.open.edu/openlearn/science-maths-technology/geology/geological-processes-the-british-isles/content-section-3'
+          },
+          {
+            title: 'University of Copenhagen — New geological study: Scandinavia was born in Greenland',
+            url: 'https://science.ku.dk/english/press/news/2024/new-geological-study-scandinavia-was-born-in-greenland/'
+          },
+          {
+            title: 'Geological Survey of Finland — The geological and tectonic framework of Europe',
+            url: 'https://weppi.gtk.fi/publ/foregsatlas/articles/Geology.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'australie',
+      title: 'L’Australie : des cratons archéens à un continent isolé',
+      field: 'Géologie · Archéen à aujourd’hui · noyaux crustaux de plus de 3,7 milliards d’années',
+      summary: 'Suivre la croissance des cratons de l’ouest australien, leur intégration au Gondwana et la séparation d’avec l’Antarctique.',
+      lesson: {
+        sections: [
+          'L’Australie possède certains des terrains continentaux les plus anciens connus. Dans l’ouest du pays, le craton de Yilgarn contient des roches archéennes et des zircons détritiques très anciens ; des gneiss de la région de Jack Hills ont livré des zircons dont certains dépassent 4 milliards d’années, mais l’âge d’un zircon hérité ne doit pas être confondu avec celui de la roche qui le contient. Des roches du socle du Yilgarn sont datées à environ 3,7 milliards d’années. Le craton de Pilbara conserve lui aussi une archive archéenne importante.',
+          'Les noyaux anciens de l’Australie occidentale et septentrionale ont été réunis et remaniés au cours du Protérozoïque. Les collisions, les épisodes magmatiques et les zones de cisaillement ont progressivement construit une mosaïque de provinces géologiques. La partie orientale du continent comprend des terrains et des chaînes plus jeunes, ajoutés au fil de l’évolution tectonique. Cette diversité explique pourquoi l’Australie ne peut pas être décrite comme une plaque de croûte uniforme formée à une date unique.',
+          'Au cours du Paléozoïque, les blocs qui constituent l’Australie ont participé à l’assemblage du Gondwana. L’Australie était alors associée à l’Antarctique, à l’Inde, à l’Afrique et à l’Amérique du Sud. Des ressemblances entre les roches, les structures et certains fossiles de ces régions soutiennent cette reconstruction. Le Gondwana s’est ensuite intégré à la Pangée avant que les océans qui l’entouraient et les zones de rift ne se réorganisent.',
+          'La dislocation du Gondwana a séparé progressivement l’Australie de l’Inde, de l’Antarctique et des autres blocs. La séparation avec l’Antarctique a débuté vers 85 millions d’années et s’est achevée vers 30 millions d’années. L’Australie s’est alors déplacée vers le nord ; elle continue aujourd’hui de se déplacer à plusieurs centimètres par an. Les formes actuelles du relief australien résultent toutefois autant de l’érosion prolongée, des variations du niveau marin et des bassins sédimentaires que du mouvement des plaques.'
+        ],
+        example: {
+          statement: 'Un zircon de Jack Hills présente un âge supérieur à 4 milliards d’années. Peut-on dater automatiquement le craton de Yilgarn à cette valeur ?',
+          calculation: 'Un zircon peut être hérité d’une roche plus ancienne puis incorporé dans une roche plus jeune. Il faut donc distinguer l’âge du cristal, celui de la roche qui le contient et celui de l’assemblage tectonique.',
+          answer: 'Non. Le zircon témoigne de matériaux très anciens, mais il ne date pas à lui seul la formation du craton ni celle du continent australien.'
+        },
+        exercise: {
+          question: 'Pourquoi les zircons anciens sont-ils précieux pour reconstituer l’histoire de la croûte australienne ?',
+          answer: 'Parce qu’ils peuvent conserver une signature isotopique et un âge de cristallisation très anciens, même lorsque la roche originelle a été érodée ou remaniée.'
+        },
+        exercises: [
+          {
+            question: 'Cite deux grands cratons anciens de l’Australie occidentale.',
+            answer: 'Les cratons de Yilgarn et de Pilbara.'
+          },
+          {
+            question: 'À quel supercontinent l’Australie appartenait-elle avant sa séparation ?',
+            answer: 'Au Gondwana.'
+          },
+          {
+            question: 'Vers quelle période la séparation complète entre l’Australie et l’Antarctique est-elle située par le programme antarctique australien ?',
+            answer: 'Vers 30 millions d’années avant le présent.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Geoscience Australia — Australian Landforms and their History',
+            url: 'https://www.ga.gov.au/scientific-topics/national-location-information/landforms/australian-landforms-and-their-history'
+          },
+          {
+            title: 'Geological Survey of Western Australia — Geology of Western Australia',
+            url: 'https://www.wa.gov.au/organisation/department-of-mines-petroleum-and-exploration/geological-survey-of-western-australia/geology-of-western-australia'
+          },
+          {
+            title: 'Huston, Blewett & Champion — Australia through time: a summary of its tectonic and metallogenic evolution',
+            url: 'https://doi.org/10.18814/EPIIUGS/2012/V35I1/004'
+          },
+          {
+            title: 'Australian Antarctic Program — Antarctic geology',
+            url: 'https://www.antarctica.gov.au/about-antarctica/geography-and-geology/geology/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'amerique-du-sud',
+      title: 'L’Amérique du Sud : des cratons du bouclier aux Andes',
+      field: 'Géologie · Archéen à aujourd’hui · témoins crustaux connus d’environ 3,65 milliards d’années',
+      summary: 'Décrire les noyaux précambriens sud-américains, l’assemblage du Gondwana, l’ouverture de l’Atlantique Sud et la formation des Andes.',
+      lesson: {
+        sections: [
+          'Le socle de l’Amérique du Sud comprend plusieurs cratons précambriens, notamment les cratons amazonien et de São Francisco, ainsi que des provinces plus petites. Ces noyaux sont entourés de ceintures mobiles plus jeunes, formées lors de collisions et de réorganisations tectoniques. Des gneiss du craton de São Francisco, au Brésil, ont livré des âges d’environ 3,60 à 3,64 milliards d’années. D’autres régions ont livré des zircons encore plus anciens, mais un zircon hérité n’est pas nécessairement l’âge de cristallisation de la roche qui l’abrite.',
+          'Pendant le Protérozoïque, plusieurs blocs crustaux se sont assemblés et ont été remaniés. Les ceintures dites brasiliennes enregistrent notamment des épisodes de convergence et de collision qui ont contribué à former le Gondwana occidental, en réunissant des parties de l’Amérique du Sud et de l’Afrique. Les correspondances entre les structures géologiques des deux côtés de l’Atlantique constituent un indice majeur de leur ancienne continuité. Les frontières entre certains blocs et la chronologie détaillée de leur assemblage restent des sujets de recherche.',
+          'L’Amérique du Sud a fait partie du Gondwana, puis de la Pangée. À partir du Jurassique et surtout du Crétacé, la fragmentation du Gondwana a provoqué l’ouverture de l’Atlantique Sud. L’Afrique et l’Amérique du Sud se sont progressivement éloignées tandis que de la nouvelle croûte océanique se formait au niveau de la dorsale. Les marges continentales passives de part et d’autre de l’Atlantique conservent des bassins sédimentaires qui enregistrent cette séparation.',
+          'À l’ouest, la plaque sud-américaine converge avec la plaque de Nazca, dont la lithosphère océanique plonge sous le continent. Cette subduction entretient le volcanisme andin, les séismes et le raccourcissement de la croûte qui a contribué à édifier la cordillère des Andes. La chaîne n’a pas été construite en un événement unique : son relief résulte de phases successives de subduction, de déformation, de magmatisme, de soulèvement et d’érosion. Le continent juxtapose donc un intérieur ancien et stable et une marge occidentale encore tectoniquement active.'
+        ],
+        example: {
+          statement: 'Pourquoi retrouve-t-on des structures géologiques comparables au Brésil et en Afrique occidentale ?',
+          calculation: 'On confronte l’âge des roches, les types de roches, les directions des structures et les signatures isotopiques de part et d’autre de l’Atlantique.',
+          answer: 'Ces ressemblances s’expliquent en partie par leur ancienne proximité au sein du Gondwana, avant l’ouverture de l’Atlantique Sud.'
+        },
+        exercise: {
+          question: 'Quelle différence tectonique majeure existe entre l’intérieur du continent sud-américain et sa marge occidentale ?',
+          answer: 'L’intérieur est dominé par des cratons anciens relativement stables, tandis que la marge occidentale est une zone active de convergence et de subduction associée aux Andes.'
+        },
+        exercises: [
+          {
+            question: 'Cite deux cratons importants d’Amérique du Sud.',
+            answer: 'Le craton amazonien et le craton de São Francisco.'
+          },
+          {
+            question: 'Quel océan s’est ouvert entre l’Afrique et l’Amérique du Sud ?',
+            answer: 'L’océan Atlantique Sud.'
+          },
+          {
+            question: 'Quelle plaque océanique plonge sous la plaque sud-américaine le long des Andes ?',
+            answer: 'La plaque de Nazca.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Oliveira et al. — Birthplace of the São Francisco Craton, Brazil',
+            url: 'https://onlinelibrary.wiley.com/doi/10.1111/ter.12460'
+          },
+          {
+            title: 'The Brasiliano collage in South America: a review',
+            url: 'https://www.scielo.br/j/bjgeo/a/9yqBg8jTjm3PCwwmDZdcDmR/'
+          },
+          {
+            title: 'The geological roots of South America: 4.1 Ga and 3.7 Ga zircon crystals',
+            url: 'https://www.sciencedirect.com/science/article/pii/S0301926815003228'
+          },
+          {
+            title: 'Zhu et al. — Origin, Accretion, and Reworking of Continents',
+            url: 'https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000689'
+          }
+        ]
+      }
+    },
+    {
+      id: 'afrique',
+      title: 'L’Afrique : l’assemblage des cratons et la naissance du Gondwana',
+      field: 'Géologie · Archéen à aujourd’hui · noyaux cratoniques de plus de 3,5 milliards d’années',
+      summary: 'Étudier les grands cratons africains, l’orogenèse panafricaine, le Gondwana et les rifts qui remodèlent encore le continent.',
+      lesson: {
+        sections: [
+          'L’Afrique possède un socle précambrien très étendu. Ses principaux noyaux archéens comprennent notamment les cratons ou ensembles cratoniques ouest-africain, du Congo, du Kalahari et de Tanzanie. Un craton est une portion ancienne de lithosphère continentale qui a conservé une relative stabilité pendant de très longues périodes. Les roches de ces noyaux ont des âges variés, souvent supérieurs à 2,5 milliards d’années, et certains fragments remontent à plus de 3 milliards d’années. Les limites et subdivisions de certains ensembles sont complexes et font l’objet de recherches.',
+          'Au Protérozoïque, les noyaux anciens ont été rapprochés, soudés et remaniés par plusieurs épisodes tectoniques. L’orogenèse panafricaine, principalement entre environ 650 et 500 millions d’années, a joué un rôle majeur dans l’assemblage de blocs qui ont constitué le Gondwana. Elle a laissé des ceintures de roches déformées et métamorphisées autour de plusieurs cratons. Cette étape ne signifie pas que toute la croûte africaine a été créée à cette époque : elle correspond surtout à une phase importante d’assemblage de terrains bien plus anciens.',
+          'Le Gondwana s’est ensuite associé aux masses continentales du nord pour former la Pangée au Paléozoïque tardif. La fragmentation de la Pangée, commencée au Mésozoïque, a ouvert progressivement l’Atlantique central puis l’Atlantique Sud et l’océan Indien. L’Afrique s’est ainsi retrouvée séparée de l’Amérique du Sud et de plusieurs blocs du Gondwana. Les marges atlantiques africaines conservent des bassins sédimentaires liés à cette ouverture.',
+          'La tectonique africaine se poursuit. Le système de rift est-africain correspond à une zone où la lithosphère continentale s’étire et s’amincit. Il comprend plusieurs branches et bassins, avec une activité sismique et volcanique. La mer Rouge et le golfe d’Aden sont également liés à l’extension et à la séparation progressive de l’Arabie et de l’Afrique. Ces processus montrent qu’un continent peut rester relativement stable en son centre tout en connaissant des déformations importantes sur certaines marges ou zones de rift.'
+        ],
+        example: {
+          statement: 'Les roches de plusieurs cratons africains sont beaucoup plus anciennes que 600 millions d’années. Pourquoi l’orogenèse panafricaine reste-t-elle un événement essentiel ?',
+          calculation: 'Il faut distinguer la formation initiale des noyaux crustaux et leur assemblage ultérieur. Des terrains anciens peuvent être soudés par une chaîne de montagnes beaucoup plus récente.',
+          answer: 'Parce que l’orogenèse panafricaine a participé à l’assemblage de nombreux blocs anciens pour former le Gondwana. Elle n’a pas créé à elle seule toute la croûte africaine.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre l’âge d’un craton et l’âge de l’assemblage du Gondwana ?',
+          answer: 'Le craton peut contenir des roches de plusieurs milliards d’années, tandis que l’assemblage du Gondwana résulte de collisions plus récentes, notamment lors de l’orogenèse panafricaine.'
+        },
+        exercises: [
+          {
+            question: 'Cite deux grands cratons africains.',
+            answer: 'Par exemple, le craton ouest-africain et le craton du Congo ; on peut aussi citer ceux du Kalahari et de Tanzanie.'
+          },
+          {
+            question: 'Quelle orogenèse a joué un rôle majeur dans l’assemblage du Gondwana entre environ 650 et 500 millions d’années ?',
+            answer: 'L’orogenèse panafricaine.'
+          },
+          {
+            question: 'Quel grand système tectonique montre actuellement l’extension de la lithosphère en Afrique orientale ?',
+            answer: 'Le système de rift est-africain.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Geological Society of London — The Formation and Evolution of Africa: A Synopsis of 3.8 Ga of Earth History',
+            url: 'https://pubs.geoscienceworld.org/gsl/books/edited-volume/1718/The-Formation-and-Evolution-of-AfricaA-Synopsis-of'
+          },
+          {
+            title: 'Geophysical Journal International — African upper mantle and its relationship to tectonics and surface geology',
+            url: 'https://academic.oup.com/gji/article/175/3/1108/635451'
+          },
+          {
+            title: 'Geosphere — The lithospheric architecture of Africa',
+            url: 'https://doi.org/10.1130/GES00179.1'
+          },
+          {
+            title: 'Zhu et al. — Origin, Accretion, and Reworking of Continents',
+            url: 'https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000689'
+          }
+        ]
+      }
+    },
+    {
+      id: 'asie',
+      title: 'L’Asie : un assemblage de cratons et de chaînes de collision',
+      field: 'Géologie · Archéen à aujourd’hui · socles précambriens et assemblages phanérozoïques',
+      summary: 'Présenter les noyaux anciens de l’Asie, la fermeture des océans paléoasiatiques et téthysiens, puis la collision de l’Inde avec l’Eurasie.',
+      lesson: {
+        sections: [
+          'L’Asie est un ensemble géologique composite. Son vaste territoire réunit plusieurs cratons précambriens, notamment ceux de Sibérie, d’Inde, d’Arabie, de Chine du Nord, de Tarim et de Chine du Sud, ainsi que de nombreux terrains et arcs ajoutés ultérieurement. Certains noyaux, comme le craton de Singhbhum en Inde, conservent des roches archéennes d’environ 3,5 à 3,3 milliards d’années. L’âge de ces noyaux ne doit pas être confondu avec celui de l’Asie actuelle, qui s’est constituée par assemblages successifs.',
+          'Au cours du Paléozoïque et du Mésozoïque, de nombreux océans et bassins se sont ouverts puis refermés autour de ces blocs. La fermeture de l’océan Paléoasiatique a contribué à l’édification de la ceinture orogénique d’Asie centrale, vaste domaine formé par l’accrétion de terrains, d’arcs insulaires et de fragments continentaux. Ces sutures géologiques témoignent des anciennes limites entre plaques. La construction de l’Asie continentale s’est donc déroulée par étapes et selon des histoires régionales différentes.',
+          'Au sud, l’histoire de l’Asie est fortement marquée par l’océan Téthys et ses branches. La subduction de lithosphère océanique, puis la collision de plusieurs blocs issus du Gondwana avec les marges asiatiques, ont construit de grandes chaînes de montagnes. L’Inde, qui faisait partie du Gondwana, s’est déplacée vers le nord après l’ouverture de l’océan Indien. Sa collision avec l’Eurasie est généralement située autour de 55 à 50 millions d’années, mais la date précise du début du contact continental reste discutée selon les méthodes et les marqueurs géologiques retenus.',
+          'La collision Inde-Eurasie a contribué à la formation de l’Himalaya et à l’épaississement de la croûte sous le plateau tibétain. Elle se poursuit aujourd’hui : la convergence provoque des séismes, des déformations et une surrection toujours active. D’autres limites de plaques influencent aussi l’Asie, notamment les zones de subduction autour du Pacifique et de l’Indonésie. L’Asie actuelle est ainsi le résultat d’un assemblage ancien de cratons, de collisions successives et de processus tectoniques encore actifs.'
+        ],
+        example: {
+          statement: 'Pourquoi la collision de l’Inde avec l’Eurasie ne date-t-elle pas la formation de toute l’Asie ?',
+          calculation: 'L’Asie comprend des noyaux continentaux beaucoup plus anciens, et la collision Inde-Eurasie est un événement cénozoïque qui a ajouté et déformé une partie de cet ensemble.',
+          answer: 'Parce que l’Asie existait déjà sous forme de plusieurs cratons et terrains assemblés. La collision de l’Inde est une étape tardive qui a notamment édifié l’Himalaya et le plateau tibétain.'
+        },
+        exercise: {
+          question: 'Pourquoi peut-on qualifier l’Asie de continent composite ?',
+          answer: 'Parce qu’elle rassemble plusieurs cratons précambriens et de nombreux terrains ajoutés par accrétion, subduction et collision au cours de périodes différentes.'
+        },
+        exercises: [
+          {
+            question: 'Cite trois cratons présents dans l’ensemble asiatique.',
+            answer: 'Par exemple, les cratons de Sibérie, d’Inde et de Chine du Nord.'
+          },
+          {
+            question: 'Quel océan ancien est associé à une grande partie de l’évolution tectonique de l’Asie méridionale ?',
+            answer: 'L’océan Téthys.'
+          },
+          {
+            question: 'Quelle chaîne de montagnes est liée à la collision entre l’Inde et l’Eurasie ?',
+            answer: 'L’Himalaya.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Acta Geologica Sinica — Construction of the Continental Asia in Phanerozoic: A Review',
+            url: 'https://onlinelibrary.wiley.com/doi/10.1111/1755-6724.14867'
+          },
+          {
+            title: 'Earth-Science Reviews — The Archaean geological history of the Singhbhum Craton, India',
+            url: 'https://www.sciencedirect.com/science/article/pii/S0012825222000782'
+          },
+          {
+            title: 'Journal of Geophysical Research — When and where did India and Asia collide?',
+            url: 'https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2006JB004706'
+          },
+          {
+            title: 'Zhu et al. — Origin, Accretion, and Reworking of Continents',
+            url: 'https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2019RG000689'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 ]
 
 
