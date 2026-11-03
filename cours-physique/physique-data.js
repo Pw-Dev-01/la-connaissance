@@ -7988,4 +7988,293 @@
   ]
 },
 
+{
+  id: 'nombre-avogadro',
+  title: 'Le nombre d’Avogadro',
+  note: 'Six chapitres sur l’histoire et la physique du nombre d’Avogadro : des lois des gaz au XIXe siècle jusqu’à la redéfinition du SI en 2019. Les valeurs numériques sont celles du SI 2019 et de CODATA 2018 ; les valeurs historiques sont des ordres de grandeur.',
+  chapters: [
+    {
+      id: 'avant-avogadro-gaz-et-atomes',
+      title: 'Avant Avogadro : les gaz, les atomes et le problème des volumes',
+      field: 'Chimie et physique · Fin du XVIIIe siècle – 1811',
+      summary: 'Comprendre pourquoi la théorie atomique de Dalton et les rapports de volumes de Gay-Lussac semblaient contradictoires avant 1811.',
+      lesson: {
+        sections: [
+          'À la fin du XVIIIe siècle, Antoine Lavoisier fait de la conservation de la masse un principe de la chimie quantitative. Au début du XIXe siècle, John Dalton propose que chaque élément soit formé d’atomes identiques, de masse caractéristique, qui se combinent en proportions simples. Sa théorie, développée à partir de 1808 dans A New System of Chemical Philosophy, explique les lois des proportions définies et multiples. Mais elle ne dit rien du nombre d’atomes présents dans une quantité donnée de matière : seules des masses relatives sont accessibles.',
+          'En 1808, Joseph Louis Gay-Lussac observe que les gaz réagissent entre eux selon des rapports de volumes simples, lorsque les volumes sont mesurés à la même température et à la même pression. Par exemple, 2 volumes de dihydrogène et 1 volume de dioxygène donnent 2 volumes de vapeur d’eau. Cette loi des volumes de combinaison est un résultat expérimental solide, mais son interprétation atomique pose problème.',
+          'Dalton contestait l’idée que des volumes égaux de gaz différents contiennent le même nombre de particules, notamment parce qu’elle semblait conduire à diviser des atomes d’oxygène : si 1 volume d’oxygène contient autant de particules que 1 volume d’eau, chaque particule d’eau ne peut contenir qu’une demi-particule d’oxygène. Dalton adoptait aussi des formules « les plus simples », par exemple HO pour l’eau, ce qui faussait les masses atomiques relatives déduites des analyses.',
+          'Les lois macroscopiques des gaz étaient alors connues : Robert Boyle établit en 1662 que, à température constante, le produit pV est constant pour une quantité de gaz donnée ; Charles et Gay-Lussac étudient la dilatation des gaz avec la température. Il manque encore le lien entre ces lois et le nombre de molécules, que la théorie cinétique des gaz (Bernoulli en 1738, puis Clausius et Maxwell au milieu du XIXe siècle) apportera plus tard. L’enjeu en 1811 est donc de réconcilier des volumes gazeux simples avec des atomes indivisibles.'
+        ],
+        example: {
+          statement: 'À même température et même pression, on fait réagir 2 L de dihydrogène avec 1 L de dioxygène, la réaction est complète et l’eau reste à l’état de vapeur. Quel volume de vapeur d’eau obtient-on ?',
+          calculation: 'L’équation est 2 H₂ + O₂ → 2 H₂O. Les coefficients 2 : 1 : 2 correspondent aux rapports de volumes de Gay-Lussac : 2 L + 1 L → 2 L.',
+          answer: 'On obtient 2 L de vapeur d’eau. Le rapport 2 : 1 : 2 est simple, comme l’observait Gay-Lussac.'
+        },
+        exercise: {
+          question: 'Pourquoi la loi de Gay-Lussac des volumes semblait-elle difficile à concilier avec la théorie atomique de Dalton ?',
+          answer: 'Parce que, si l’on supposait que des atomes seuls forment les gaz et que des volumes égaux contiennent des nombres égaux de particules, on arrivait à des « demi-atomes » d’oxygène, ce que la théorie de Dalton excluait.'
+        },
+        exercises: [
+          {
+            question: 'Qui observe en 1808 que les gaz réagissent selon des rapports de volumes simples ?',
+            answer: 'Joseph Louis Gay-Lussac.'
+          },
+          {
+            question: 'Quelle formule Dalton attribuait-il souvent à l’eau ?',
+            answer: 'HO, en supposant que le composé le plus simple était binaire.'
+          },
+          {
+            question: 'Quelles conditions doivent être respectées pour comparer des volumes de gaz dans la loi de Gay-Lussac ?',
+            answer: 'Les volumes doivent être mesurés à la même température et à la même pression.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopaedia Britannica — John Dalton', url: 'https://www.britannica.com/biography/John-Dalton' },
+          { title: 'Encyclopaedia Britannica — Joseph-Louis Gay-Lussac', url: 'https://www.britannica.com/biography/Joseph-Louis-Gay-Lussac' },
+          { title: 'Wikipédia — Amedeo Avogadro', url: 'https://fr.wikipedia.org/wiki/Amedeo_Avogadro' },
+          { title: 'OpenStax — Chemistry 2e', url: 'https://openstax.org/details/books/chemistry-2e' }
+        ]
+      }
+    },
+    {
+      id: 'hypothese-avogadro-1811',
+      title: 'L’hypothèse d’Avogadro (1811), son oubli et sa réhabilitation',
+      field: 'Histoire de la chimie · 1811 – 1860',
+      summary: 'Comprendre l’énoncé d’Avogadro, la distinction molécule / atome qu’il introduit et le rôle de Cannizzaro au congrès de Karlsruhe.',
+      lesson: {
+        sections: [
+          'En 1811, le physicien italien Amedeo Avogadro (1776–1856), professeur à Turin, publie dans le Journal de physique un mémoire proposant que des volumes égaux de gaz, pris à la même température et à la même pression, contiennent le même nombre de molécules. Il distingue la « molécule intégrante » (notre molécule) de la « molécule élémentaire » (notre atome), ce qui permet de supposer que les molécules de gaz simples comme le dihydrogène ou le dioxygène sont composées de plusieurs atomes.',
+          'Cette hypothèse résout la difficulté de Gay-Lussac : 2 H₂ + O₂ → 2 H₂O s’interprète sans « demi-atome » si la molécule d’oxygène contient deux atomes et se scinde. Elle donne en outre un moyen de comparer des masses moléculaires : à même température et même pression, le rapport des masses volumiques de deux gaz est égal au rapport de leurs masses molaires. Avogadro n’a cependant calculé aucune valeur du nombre de molécules : la constante qui porte son nom lui est attribuée en hommage, bien après sa mort.',
+          'Pendant près de cinquante ans, l’hypothèse est peu suivie. André-Marie Ampère propose en 1814 une idée voisine, mais la plupart des chimistes continuent d’utiliser des masses atomiques incohérentes. Des théories dominantes comme la théorie électrochimique de Berzelius rendaient difficile d’admettre que deux atomes identiques puissent s’associer en une molécule. Il en résulte, jusqu’à la fin des années 1850, un grand désordre dans les formules et les masses atomiques.',
+          'Stanislao Cannizzaro relance l’hypothèse dans son Sunto di un corso di filosofia chimica (1858) en montrant qu’elle permet de fixer des masses atomiques cohérentes. Au premier congrès international de chimie, tenu à Karlsruhe du 3 au 5 septembre 1860, ses idées sont distribuées sous forme de brochure ; plusieurs participants, dont Lothar Meyer, en reconnaissent ensuite l’importance. Cette clarification des masses atomiques prépare les classifications périodiques de Mendeleïev et de Meyer à la fin des années 1860.'
+        ],
+        example: {
+          statement: 'À 0 °C et sous 1 atm, la masse volumique du dioxygène est d’environ 1,429 g/L et celle du dihydrogène d’environ 0,0899 g/L. Que peut-on déduire du rapport de leurs masses molaires ?',
+          calculation: 'D’après l’hypothèse d’Avogadro, à mêmes T et p : M₁ / M₂ = ρ₁ / ρ₂. Ici ρ(O₂) / ρ(H₂) = 1,429 / 0,0899 ≈ 15,9.',
+          answer: 'Le rapport est d’environ 16, en accord avec M(O₂) = 32 g/mol et M(H₂) = 2 g/mol, soit un rapport de 16.'
+        },
+        exercise: {
+          question: 'Qu’énonce l’hypothèse d’Avogadro ?',
+          answer: 'Des volumes égaux de gaz, mesurés à la même température et à la même pression, contiennent le même nombre de molécules.'
+        },
+        exercises: [
+          {
+            question: 'Avogadro a-t-il calculé la valeur numérique du nombre d’Avogadro ?',
+            answer: 'Non. Il a proposé l’égalité du nombre de molécules pour des volumes égaux de gaz, mais n’a pas déterminé le nombre lui-même.'
+          },
+          {
+            question: 'Quelle distinction Avogadro introduit-il entre « molécule intégrante » et « molécule élémentaire » ?',
+            answer: 'La première correspond à la molécule actuelle, la seconde à l’atome.'
+          },
+          {
+            question: 'Quel rôle joue Cannizzaro dans la reconnaissance de l’hypothèse ?',
+            answer: 'Il montre en 1858, puis au congrès de Karlsruhe en 1860, qu’elle permet de fixer des masses atomiques cohérentes.'
+          },
+          {
+            question: 'Deux ballons de même volume contiennent l’un du diazote, l’autre du dioxyde de carbone, à même T et p (gaz supposés parfaits). Contiennent-ils le même nombre de molécules ?',
+            answer: 'Oui, mais leurs masses sont différentes puisque les masses molaires diffèrent.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopaedia Britannica — Amedeo Avogadro', url: 'https://www.britannica.com/biography/Amedeo-Avogadro' },
+          { title: 'Wikipédia — Amedeo Avogadro', url: 'https://fr.wikipedia.org/wiki/Amedeo_Avogadro' },
+          { title: 'Wikipédia — Stanislao Cannizzaro', url: 'https://fr.wikipedia.org/wiki/Stanislao_Cannizzaro' },
+          { title: 'Wikipedia — Karlsruhe Congress', url: 'https://en.wikipedia.org/wiki/Karlsruhe_Congress' },
+          { title: 'Wikipedia — Avogadro’s law', url: 'https://en.wikipedia.org/wiki/Avogadro%27s_law' }
+        ]
+      }
+    },
+    {
+      id: 'mole-masse-molaire-constante',
+      title: 'La mole, la masse molaire et la constante d’Avogadro',
+      field: 'Chimie générale · Quantité de matière et SI',
+      summary: 'Distinguer le nombre d’Avogadro, la constante d’Avogadro et la mole, et savoir passer d’une masse à un nombre d’entités.',
+      lesson: {
+        sections: [
+          'La mole est l’unité de quantité de matière. Depuis le 20 mai 2019, le SI la définit à partir de la constante d’Avogadro, fixée exactement à N_A = 6,02214076 × 10²³ mol⁻¹ : une mole contient exactement 6,02214076 × 10²³ entités élémentaires. Ces entités doivent être précisées : atomes, molécules, ions, électrons ou autres particules. La quantité de matière n d’un échantillon de N entités est n = N / N_A.',
+          'Il faut distinguer le nombre d’Avogadro, nombre pur 6,02214076 × 10²³, de la constante d’Avogadro N_A, qui vaut ce nombre multiplié par mol⁻¹. La constante est un nombre d’entités par mole. La masse molaire M d’une substance est la masse d’une mole : M = m / n, exprimée en g/mol. Pour un élément ou une molécule, sa valeur en g/mol est, avec une excellente approximation, égale à la masse atomique ou moléculaire relative.',
+          'La masse d’une seule entité s’obtient par m_entité = M / N_A. L’unité de masse atomique unifiée u est définie comme le douzième de la masse d’un atome de carbone 12 ; elle vaut environ 1,66054 × 10⁻²⁷ kg. Ainsi, une masse molaire de 1 g/mol correspond à environ 1 u par entité, ce qui explique la proximité numérique entre masses en u et masses molaires en g/mol.',
+          'Avant 2019, depuis 1971, la mole était définie comme la quantité de matière contenant autant d’entités élémentaires qu’il y a d’atomes dans 0,012 kg de carbone 12 ; N_A était alors une grandeur mesurée, et la constante M_u = 1 g/mol était exacte. Avec la définition de 2019, c’est N_A qui est exacte et M_u devient une grandeur mesurée, très proche de 1 g/mol (l’écart relatif est de l’ordre de 10⁻⁹ au plus). Pour les calculs scolaires et courants, la différence est négligeable.'
+        ],
+        example: {
+          statement: 'Combien de molécules d’eau contient 1,00 g d’eau ? On prend M(H₂O) = 18,015 g/mol.',
+          calculation: 'n = m / M = 1,00 / 18,015 ≈ 0,05551 mol. N = n × N_A = 0,05551 × 6,022 × 10²³ ≈ 3,34 × 10²² molécules.',
+          answer: '1,00 g d’eau contient environ 3,34 × 10²² molécules, soit environ 6,69 × 10²² atomes d’hydrogène et 3,34 × 10²² atomes d’oxygène.'
+        },
+        exercise: {
+          question: 'Quelle est la valeur de la constante d’Avogadro dans le SI actuel ?',
+          answer: 'N_A = 6,02214076 × 10²³ mol⁻¹, valeur exacte depuis le 20 mai 2019.'
+        },
+        exercises: [
+          {
+            question: 'Combien d’atomes contient 0,500 mol d’aluminium ?',
+            answer: 'N = 0,500 × 6,022 × 10²³ ≈ 3,01 × 10²³ atomes.'
+          },
+          {
+            question: 'Quelle est, environ, la masse d’un atome de carbone 12 ?',
+            answer: 'm = 12 g/mol / N_A ≈ 1,99 × 10⁻²³ g, soit environ 1,99 × 10⁻²⁶ kg (12 u par définition).'
+          },
+          {
+            question: 'Quelle est la différence entre le nombre d’Avogadro et la constante d’Avogadro ?',
+            answer: 'Le nombre d’Avogadro est un nombre pur ; la constante d’Avogadro est ce nombre exprimé par mole, donc en mol⁻¹.'
+          },
+          {
+            question: 'Combien d’atomes d’or contient un échantillon de 1,00 g ? On prend M(Au) = 196,97 g/mol.',
+            answer: 'n ≈ 0,005077 mol, soit N ≈ 3,06 × 10²¹ atomes.'
+          }
+        ],
+        sources: [
+          { title: 'BIPM — Brochure sur le SI (9e édition)', url: 'https://www.bipm.org/en/publications/si-brochure' },
+          { title: 'NIST — CODATA, Avogadro constant', url: 'https://physics.nist.gov/cgi-bin/cuu/Value?na' },
+          { title: 'OpenStax — Chemistry 2e, Formula Mass and the Mole Concept', url: 'https://openstax.org/books/chemistry-2e/pages/3-1-formula-mass-and-the-mole-concept' },
+          { title: 'Wikipédia — Constante d’Avogadro', url: 'https://fr.wikipedia.org/wiki/Constante_d%27Avogadro' }
+        ]
+      }
+    },
+    {
+      id: 'mesurer-le-nombre-d-avogadro',
+      title: 'Mesurer le nombre d’Avogadro : Loschmidt, Planck, Einstein, Perrin, Millikan',
+      field: 'Histoire de la physique · 1865 – 1913',
+      summary: 'Comprendre comment des méthodes indépendantes ont donné, autour de 6 × 10²³, une valeur du nombre de particules par mole et ont établi la réalité des molécules.',
+      lesson: {
+        sections: [
+          'En 1865, Johann Josef Loschmidt utilise la théorie cinétique des gaz, le libre parcours moyen et la densité des liquides pour estimer la taille des molécules de l’air. Il en déduit une estimation du nombre de molécules par unité de volume, de l’ordre de grandeur correct. Ce nombre par unité de volume dans les conditions normales est aujourd’hui appelé constante de Loschmidt ; il se relie à N_A par le volume molaire.',
+          'Max Planck, en 1900–1901, obtient à partir de sa loi du rayonnement du corps noir des valeurs de la constante de Boltzmann k et de la charge élémentaire e, d’où une valeur de N_A d’environ 6 × 10²³ mol⁻¹. Cette détermination indirecte, indépendante de la chimie des gaz, est un premier signe de la cohérence des constantes physiques.',
+          'En 1905, Albert Einstein démontre que le mouvement brownien (agitation de particules en suspension) est une conséquence de l’agitation moléculaire du liquide. Pour une particule sphérique de rayon r dans un fluide de viscosité η, le déplacement quadratique moyen suit ⟨x²⟩ = 2Dt, avec D = RT / (6πηr N_A). Mesurer ⟨x²⟩ au microscope permet donc de déterminer N_A. Marian Smoluchowski obtient indépendamment un résultat voisin en 1906.',
+          'Jean Perrin, à partir de 1908, vérifie ces prédictions par l’observation d’émulsions de gomme-gutte et de mastic. Il mesure aussi la répartition verticale des grains en équilibre de sédimentation, de la forme n(h) = n(0) exp(−m_app g h / kT), où m_app est la masse apparente corrigée de la poussée d’Archimède. Dans Les Atomes (1913), il compare plusieurs méthodes indépendantes et obtient des valeurs de N_A de l’ordre de 6 à 7 × 10²³ mol⁻¹. Il reçoit le prix Nobel de physique 1926. Le nom « nombre d’Avogadro » est étroitement associé à ses travaux.',
+          'Robert Millikan mesure la charge élémentaire e entre 1909 et 1913 par l’expérience de la goutte d’huile. Comme la constante de Faraday F, charge d’une mole d’électrons mesurée en électrolyse, vaut F = N_A e, on obtient N_A = F / e. La convergence de ces méthodes, très différentes par leurs principes, est un argument central en faveur de l’existence réelle des atomes et des molécules.'
+        ],
+        example: {
+          statement: 'On donne la constante de Faraday F ≈ 96 485 C/mol et la charge élémentaire e ≈ 1,602 × 10⁻¹⁹ C. Calculer N_A.',
+          calculation: 'N_A = F / e = 96 485 / (1,602 × 10⁻¹⁹) ≈ 6,023 × 10²³ mol⁻¹.',
+          answer: 'N_A ≈ 6,02 × 10²³ mol⁻¹, en accord avec la valeur actuelle.'
+        },
+        exercise: {
+          question: 'Pourquoi la mesure de N_A par plusieurs méthodes indépendantes est-elle importante ?',
+          answer: 'Si des phénomènes très différents (mouvement brownien, sédimentation, électrolyse, rayonnement) donnent la même valeur, cela soutient l’idée que les atomes et molécules existent réellement.'
+        },
+        exercises: [
+          {
+            question: 'Quelle relation lie la constante de Faraday, la charge élémentaire et la constante d’Avogadro ?',
+            answer: 'F = N_A e.'
+          },
+          {
+            question: 'Qui a publié en 1905 l’explication quantitative du mouvement brownien ?',
+            answer: 'Albert Einstein.'
+          },
+          {
+            question: 'Pour quel travail Jean Perrin reçoit-il le prix Nobel de physique en 1926 ?',
+            answer: 'Pour ses travaux sur la structure discontinue de la matière, en particulier la découverte de l’équilibre de sédimentation.'
+          },
+          {
+            question: 'La constante de Loschmidt est-elle une quantité par mole ?',
+            answer: 'Non. C’est un nombre de particules par unité de volume (en m⁻³) dans des conditions données.'
+          }
+        ],
+        sources: [
+          { title: 'Nobel Prize — Jean Perrin, Physics 1926', url: 'https://www.nobelprize.org/prizes/physics/1926/perrin/facts/' },
+          { title: 'Wikipédia — Jean Perrin', url: 'https://fr.wikipedia.org/wiki/Jean_Perrin' },
+          { title: 'Wikipédia — Mouvement brownien', url: 'https://fr.wikipedia.org/wiki/Mouvement_brownien' },
+          { title: 'Wikipedia — Avogadro constant', url: 'https://en.wikipedia.org/wiki/Avogadro_constant' },
+          { title: 'Encyclopaedia Britannica — Jean Perrin', url: 'https://www.britannica.com/biography/Jean-Perrin' }
+        ]
+      }
+    },
+    {
+      id: 'gaz-parfaits-volume-molaire-loschmidt',
+      title: 'Gaz parfaits, constante des gaz, volume molaire et constante de Loschmidt',
+      field: 'Thermodynamique · Théorie cinétique des gaz',
+      summary: 'Relier N_A, k et R, et calculer volumes molaires et nombres de molécules dans un gaz parfait.',
+      lesson: {
+        sections: [
+          'Pour un gaz parfait, l’équation d’état s’écrit pV = nRT à l’échelle macroscopique et pV = NkT à l’échelle microscopique, N étant le nombre de molécules et k la constante de Boltzmann. En posant N = n N_A, on obtient R = N_A k. Depuis 2019, k = 1,380649 × 10⁻²³ J/K est exacte, comme N_A, donc R = 8,31446261815324 J/(mol·K) est aussi exacte. L’hypothèse d’Avogadro en découle : à T et p fixés, V = nRT / p, donc V est proportionnel à n.',
+          'Le volume molaire d’un gaz parfait V_m = RT / p dépend de T et p, mais pas de la nature du gaz. À 273,15 K et 101,325 kPa, V_m ≈ 22,414 L/mol. Avec la pression standard de 100 kPa recommandée par l’IUPAC depuis 1982, V_m ≈ 22,711 L/mol à 273,15 K. À 298,15 K et 100 kPa, V_m ≈ 24,79 L/mol. Il faut donc toujours préciser les conditions de température et de pression.',
+          'La constante de Loschmidt est le nombre de molécules par unité de volume d’un gaz parfait : n₀ = p / (kT). À 273,15 K et 101,325 kPa, n₀ ≈ 2,6868 × 10²⁵ m⁻³, soit environ 2,69 × 10¹⁹ molécules par cm³. On retrouve aussi N_A = n₀ × V_m.',
+          'Ces relations supposent un gaz parfait, c’est-à-dire des molécules ponctuelles sans interaction. Les gaz réels s’en écartent surtout à haute pression ou à basse température, et leur volume molaire diffère alors légèrement du volume molaire idéal. La loi d’Avogadro reste donc une très bonne approximation aux conditions usuelles, mais elle n’est exacte que pour le gaz parfait.'
+        ],
+        example: {
+          statement: 'Combien de molécules contient 1,00 L de gaz parfait à 273,15 K sous 101,325 kPa ?',
+          calculation: 'N = pV / (kT) = (101 325 × 1,00 × 10⁻³) / (1,380649 × 10⁻²³ × 273,15) ≈ 101,325 / (3,7712 × 10⁻²¹) ≈ 2,69 × 10²².',
+          answer: '1,00 L de gaz parfait contient environ 2,69 × 10²² molécules dans ces conditions, indépendamment de la nature du gaz.'
+        },
+        exercise: {
+          question: 'Quelle relation lie R, k et N_A ?',
+          answer: 'R = N_A k.'
+        },
+        exercises: [
+          {
+            question: 'Calculer le volume molaire d’un gaz parfait à 298,15 K et 100 kPa.',
+            answer: 'V_m = RT / p = 8,31446 × 298,15 / 100 000 ≈ 0,02479 m³/mol, soit 24,79 L/mol.'
+          },
+          {
+            question: 'Le volume molaire dépend-il de la nature du gaz parfait ?',
+            answer: 'Non, il ne dépend que de T et p.'
+          },
+          {
+            question: 'Vérifier que N_A k ≈ 8,314 J/(mol·K).',
+            answer: '6,02214 × 10²³ × 1,380649 × 10⁻²³ ≈ 8,3145 J/(mol·K).'
+          },
+          {
+            question: 'Quelle est l’unité de la constante de Loschmidt ?',
+            answer: 'Le m⁻³ (nombre de particules par mètre cube).'
+          }
+        ],
+        sources: [
+          { title: 'NIST — CODATA, Molar gas constant', url: 'https://physics.nist.gov/cgi-bin/cuu/Value?r' },
+          { title: 'NIST — CODATA, Loschmidt constant', url: 'https://physics.nist.gov/cgi-bin/cuu/Value?n0' },
+          { title: 'OpenStax — Chemistry 2e, The Ideal Gas Law', url: 'https://openstax.org/books/chemistry-2e/pages/9-2-relating-pressure-volume-amount-and-temperature-the-ideal-gas-law' },
+          { title: 'Wikipedia — Avogadro’s law', url: 'https://en.wikipedia.org/wiki/Avogadro%27s_law' }
+        ]
+      }
+    },
+    {
+      id: 'silicium-et-redefinition-2019',
+      title: 'Du cristal de silicium à la redéfinition du SI en 2019',
+      field: 'Métrologie · Fin du XXe siècle – 2019',
+      summary: 'Comprendre la mesure de N_A par la densité cristalline du silicium et la décision de fixer sa valeur dans le SI.',
+      lesson: {
+        sections: [
+          'La méthode de la densité cristalline aux rayons X (XRCD) mesure N_A à partir d’un cristal presque parfait. Pour un cristal cubique contenant Z atomes par maille de paramètre a, la masse volumique est ρ = Z M / (N_A a³), d’où N_A = Z M / (ρ a³). Le silicium cristallise dans la structure diamant, avec Z = 8 atomes par maille cubique ; son paramètre de maille est a ≈ 543,102 pm et sa masse volumique ≈ 2329 kg/m³, pour une masse molaire d’environ 28,0855 g/mol dans le silicium naturel.',
+          'Le projet international Avogadro a réalisé des sphères d’environ 1 kg de silicium monocristallin enrichi en silicium 28, afin de réduire l’incertitude sur la masse molaire. Il faut mesurer le volume de la sphère, son paramètre de maille par interférométrie à rayons X, la composition isotopique par spectrométrie de masse et la masse de la sphère. Ces mesures ont atteint des incertitudes relatives de l’ordre de 10⁻⁸ à la fin des années 2010.',
+          'N_A est liée à la constante de Planck h par la relation N_A h = c α² A_r(e) M_u / (2 R_∞), où α est la constante de structure fine, A_r(e) la masse relative de l’électron et R_∞ la constante de Rydberg. Les termes autres que h étant connus avec une très grande précision, mesurer N_A équivaut à mesurer h. Les résultats XRCD ont ainsi contribué, avec les balances de Kibble, à la détermination de h utilisée pour redéfinir le kilogramme.',
+          'La 26e Conférence générale des poids et mesures (Versailles, novembre 2018) a adopté la révision du SI, entrée en vigueur le 20 mai 2019. Elle fixe exactement h = 6,62607015 × 10⁻³⁴ J·s, e = 1,602176634 × 10⁻¹⁹ C, k = 1,380649 × 10⁻²³ J/K et N_A = 6,02214076 × 10²³ mol⁻¹. Le kilogramme est ainsi défini à partir de h, et la mole à partir de N_A, sans référence à un artefact ni à une masse de carbone 12.'
+        ],
+        example: {
+          statement: 'Estimer N_A pour le silicium avec Z = 8, M = 28,0855 g/mol, ρ = 2329 kg/m³ et a = 543,102 pm.',
+          calculation: 'a³ = (5,43102 × 10⁻¹⁰)³ ≈ 1,6019 × 10⁻²⁸ m³. N_A = Z M / (ρ a³) = (8 × 0,0280855) / (2329 × 1,6019 × 10⁻²⁸) ≈ 0,22468 / (3,7308 × 10⁻²⁵) ≈ 6,023 × 10²³ mol⁻¹.',
+          answer: 'N_A ≈ 6,02 × 10²³ mol⁻¹. Ce calcul simplifié ne remplace pas les mesures du projet Avogadro, qui exigent un cristal enrichi et des corrections précises.'
+        },
+        exercise: {
+          question: 'Pourquoi la fixation de N_A dans le SI permet-elle de redéfinir la mole sans carbone 12 ?',
+          answer: 'Parce que la mole est désormais la quantité de matière contenant exactement 6,02214076 × 10²³ entités, valeur fixée par définition.'
+        },
+        exercises: [
+          {
+            question: 'Quelle date marque l’entrée en vigueur de la redéfinition du SI ?',
+            answer: 'Le 20 mai 2019.'
+          },
+          {
+            question: 'Combien d’atomes par maille cubique contient le silicium ?',
+            answer: 'Huit atomes (structure de type diamant).'
+          },
+          {
+            question: 'Pourquoi utilise-t-on du silicium 28 enrichi dans le projet Avogadro ?',
+            answer: 'Pour réduire l’incertitude sur la masse molaire du cristal, plus simple à déterminer pour une composition isotopique quasi pure.'
+          },
+          {
+            question: 'Quelles constantes fondamentales sont fixées exactement par la révision de 2019 ?',
+            answer: 'h, e, k et N_A (en plus de la fréquence hyperfine du césium et de l’efficacité lumineuse K_cd, déjà fixées auparavant).'
+          }
+        ],
+        sources: [
+          { title: 'BIPM — Brochure sur le SI (9e édition)', url: 'https://www.bipm.org/en/publications/si-brochure' },
+          { title: 'NIST — SI Redefinition, The mole', url: 'https://www.nist.gov/si-redefinition/mole' },
+          { title: 'NIST — CODATA, Avogadro constant', url: 'https://physics.nist.gov/cgi-bin/cuu/Value?na' },
+          { title: 'Wikipedia — Avogadro constant', url: 'https://en.wikipedia.org/wiki/Avogadro_constant' },
+          { title: 'Wikipédia — Redéfinition des unités du Système international (2019)', url: 'https://fr.wikipedia.org/wiki/Red%C3%A9finition_des_unit%C3%A9s_de_base_du_Syst%C3%A8me_international_d%27unit%C3%A9s_de_2019' }
+        ]
+      }
+    }
+  ]
+},
 ]
