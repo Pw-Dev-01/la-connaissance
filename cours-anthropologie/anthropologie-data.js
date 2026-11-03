@@ -1230,4 +1230,399 @@ window.courseCatalog = [
     }
   ]
 },
-];
+
+{
+  id: 'peuple-dogon',
+  sortYear: 1300,
+  title: 'Le peuple Dogon : histoire, sociétés et patrimoines du pays de Bandiagara',
+  note: 'Sept chapitres sur les peuplements anciens de la région de Bandiagara, les migrations dogon, l’organisation des villages, l’agriculture et l’architecture, les croyances et les cérémonies, ainsi que les arts et les transformations contemporaines. Le repère sortYear = 1300 est un classement pédagogique approximatif correspondant au début d’une période d’installation dogon dans la région, généralement située entre les XIIIe et XVe siècles selon les sources. Il ne date ni l’apparition du peuple dogon ni une migration unique. Les populations désignées comme dogon sont diverses par leurs langues, leurs histoires locales et leurs pratiques.',
+  chapters: [
+    {
+      id: 'peuplements-anciens-bandiagara',
+      title: 'Avant les Dogon : les peuplements anciens de Bandiagara',
+      field: 'Histoire et archéologie · Pays dogon · Ier millénaire avant notre ère au XVe siècle',
+      summary: 'Distinguer les occupations anciennes, les cultures Tellem et l’arrivée progressive de groupes dogon dans la région.',
+      lesson: {
+        sections: [
+          'Le pays dogon se situe dans le centre-est du Mali, autour du plateau, de la falaise et de la plaine de Bandiagara. Il ne s’agit pas d’un territoire occupé depuis toujours par une population unique. Les recherches archéologiques montrent une succession de peuplements et de pratiques matérielles. Le projet archéologique d’Ounjougou a notamment étudié l’histoire du peuplement sur plusieurs millénaires en croisant archéologie, environnement, archéobotanique et ethnohistoire. Cette approche permet de replacer les traditions orales dans une histoire régionale plus large.',
+          'Les Tellem sont associés à des occupations de la falaise et de ses abris rocheux, notamment entre le XIe et le XVe siècle dans plusieurs synthèses archéologiques. Les grottes funéraires et les objets retrouvés témoignent de pratiques matérielles particulières. Le terme Tellem est souvent expliqué comme une expression dogon signifiant « ceux que nous avons trouvés », mais les identités et les origines de ces populations anciennes restent difficiles à reconstituer. Les données archéologiques ne permettent pas de leur attribuer une origine simple et certaine.',
+          'Les sources situent l’installation de groupes dogon dans la région principalement entre le XIIIe et le XVe siècle, avec des variations selon les lieux et les traditions locales. Les récits de migration évoquent notamment le Mandé, mais il n’existe pas un récit unique qui expliquerait l’origine de toutes les communautés dogon. Les Tellem et les Dogon se sont succédé dans plusieurs secteurs ; cela ne signifie pas que les Dogon seraient simplement les descendants directs des Tellem. Les recherches matérielles et bioarchéologiques soulignent au contraire la complexité des contacts et des changements de population.',
+          'Les falaises ont offert des abris et des positions défensives, mais elles ne suffisent pas à expliquer seules les migrations. Les dynamiques politiques de l’Afrique de l’Ouest, les déplacements de populations, les ressources agricoles et les relations avec les pouvoirs régionaux ont également joué un rôle. Il faut donc éviter les récits qui présentent les Dogon comme un peuple isolé, immobile ou demeuré à l’écart de toute histoire régionale.'
+        ],
+        example: {
+          statement: 'Des objets funéraires sont découverts dans des grottes de la falaise de Bandiagara et attribués à des occupations Tellem. Peut-on en déduire que les Dogon descendent directement des Tellem ?',
+          calculation: 'Il faut distinguer la succession chronologique de deux populations, les contacts possibles entre elles et une filiation biologique ou culturelle directe. L’archéologie documente les objets, les sépultures et les occupations, mais ne prouve pas à elle seule une descendance directe.',
+          answer: 'Non. Les Tellem ont occupé la région avant l’installation dogon dans plusieurs secteurs, mais les sources disponibles ne démontrent pas que les Dogon seraient leurs descendants directs.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les Tellem des Dogon dans une chronologie du pays de Bandiagara ?',
+          answer: 'Parce que les vestiges témoignent d’occupations antérieures associées aux Tellem, tandis que l’installation de groupes dogon est postérieure dans plusieurs secteurs. Les deux histoires sont liées à une même région, mais ne doivent pas être confondues.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel pays se trouve la falaise de Bandiagara ?',
+            answer: 'Au Mali.'
+          },
+          {
+            question: 'À quelle période les occupations Tellem sont-elles notamment attestées sur la falaise dans les synthèses archéologiques citées ?',
+            answer: 'Principalement du XIe au XVe siècle, selon les sites et les datations.'
+          },
+          {
+            question: 'Les Dogon sont-ils considérés comme les descendants directs certains des Tellem ?',
+            answer: 'Non. Une telle filiation directe n’est pas établie par les données disponibles.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Ounjougou — L’histoire du peuplement en Pays dogon depuis 2000 ans',
+            url: 'https://www.ounjougou.org/fr/projets/mali/archeologie/lhistoire-du-peuplement-en-pays-dogon-depuis-2000-ans-une-dynamique-complexe/'
+          },
+          {
+            title: 'UNESCO — Falaises de Bandiagara (pays dogon)',
+            url: 'https://whc.unesco.org/fr/list/516'
+          },
+          {
+            title: 'UNESCO — World Heritage Papers 13',
+            url: 'https://whc.unesco.org/documents/publi_wh_papers_13_en.pdf'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Vessel Lid, Dogon or Tellem peoples (?)',
+            url: 'https://www.metmuseum.org/art/collection/search/318730'
+          },
+          {
+            title: 'ScienceDirect — Geochemical identity of pre-Dogon and Dogon populations at Bandiagara',
+            url: 'https://www.sciencedirect.com/science/article/pii/S2352409X16307544'
+          }
+        ]
+      }
+    },
+    {
+      id: 'migrations-et-histoire-dogon',
+      title: 'Les migrations dogon et les transformations historiques',
+      field: 'Histoire · Mandé, vallée du Niger et falaise de Bandiagara · XIIIe siècle à période contemporaine',
+      summary: 'Étudier les traditions de migration, la diversité des communautés dogon et les contacts avec les pouvoirs régionaux puis coloniaux.',
+      lesson: {
+        sections: [
+          'Les traditions historiques dogon évoquent des déplacements depuis différentes régions, notamment le Mandé, mais les itinéraires et les dates ne sont pas identiques dans tous les récits. Les sources archéologiques et ethnographiques situent l’installation de groupes dogon dans la région de Bandiagara à partir de la fin du Moyen Âge, avec des arrivées échelonnées. Il est donc plus exact de parler de migrations et d’implantations successives que d’un exode unique accompli par un peuple déjà homogène.',
+          'Le mot « Dogon » désigne aujourd’hui un ensemble de communautés liées par des histoires, des langues et des pratiques qui présentent des proximités, mais aussi des différences importantes. Les travaux de Paul R. Davis pour la Menil Collection rappellent que l’étiquette « dogon » a parfois été appliquée de manière trop générale à des populations de la région parlant plus de 30 langues et possédant des institutions locales diverses. Une présentation historique rigoureuse doit donc éviter de décrire les Dogon comme une tribu uniforme.',
+          'La région a été en relation avec les grands ensembles politiques de l’Afrique de l’Ouest, dont les pouvoirs associés aux empires du Mali et songhaï et des royaumes voisins. Les reliefs de Bandiagara ont pu offrir des refuges à certaines communautés, mais les habitants n’étaient pas coupés des échanges, des marchés, des réseaux religieux et des conflits régionaux. Les récits d’origine doivent être comparés aux traces archéologiques et replacés dans ce contexte plus vaste.',
+          'À la fin du XIXe siècle, la conquête coloniale française atteint la région. Les autorités coloniales imposent progressivement des formes d’administration, de fiscalité et de travail qui modifient les relations politiques et économiques. Les archives et les études historiques signalent des résistances et des adaptations locales. Au XXe siècle, les missions ethnographiques, notamment la mission Dakar-Djibouti de 1931 à 1933, produisent des enquêtes, des photographies et des collectes qui influencent durablement la manière dont les Dogon sont connus à l’étranger.'
+        ],
+        example: {
+          statement: 'Une source situe l’installation dogon dans la région au XIVe siècle, tandis qu’une autre indique les XVe et XVIe siècles. Ces indications sont-elles nécessairement contradictoires ?',
+          calculation: 'Il faut vérifier si les sources parlent du même village, de la même région, du début d’une migration ou d’une implantation devenue majoritaire. Une migration peut se dérouler par vagues sur plusieurs générations.',
+          answer: 'Non. Elles peuvent décrire des étapes ou des secteurs différents. Il faut conserver une fourchette chronologique et préciser les limites des données plutôt que choisir arbitrairement une date unique.'
+        },
+        exercise: {
+          question: 'Pourquoi l’expression « migration dogon » doit-elle être utilisée au pluriel ou avec prudence ?',
+          answer: 'Parce que les communautés ne se sont pas nécessairement déplacées toutes ensemble, ni depuis un seul lieu, et que leurs traditions historiques et leurs langues sont diverses.'
+        },
+        exercises: [
+          {
+            question: 'Quelle région est souvent mentionnée dans les traditions relatives aux migrations dogon ?',
+            answer: 'Le Mandé, à l’ouest de l’actuel Mali, même si les récits et les itinéraires varient.'
+          },
+          {
+            question: 'À quelle période la présence coloniale française s’étend-elle dans la région de Bandiagara ?',
+            answer: 'À la fin du XIXe siècle.'
+          },
+          {
+            question: 'Pourquoi le terme « Dogon » ne doit-il pas faire croire à une population parfaitement homogène ?',
+            answer: 'Parce qu’il regroupe des communautés présentant une diversité linguistique, historique et institutionnelle.'
+          }
+        ],
+        sources: [
+          {
+            title: 'eHRAF World Cultures — Dogon: Culture Summary',
+            url: 'https://ehrafworldcultures.yale.edu/cultures/fa16/summary'
+          },
+          {
+            title: 'The Menil Collection — ReCollecting Dogon: Introduction',
+            url: 'https://publications.menil.org/recollecting-dogon/introduction/index_locale%3Dfr.html'
+          },
+          {
+            title: 'UNESCO — Falaises de Bandiagara (pays dogon)',
+            url: 'https://whc.unesco.org/fr/list/516'
+          },
+          {
+            title: 'UNESCO — General History of Africa, Volume IV',
+            url: 'https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_393a67e4-60c1-4324-9a70-b2682fe54680?_=184287engo.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'organisation-sociale-villages',
+      title: 'Les villages dogon et l’organisation de la vie sociale',
+      field: 'Anthropologie · Organisation communautaire · famille, lignage et institutions villageoises',
+      summary: 'Comprendre les unités familiales, les responsabilités locales, les lieux de réunion et la diversité des organisations sociales.',
+      lesson: {
+        sections: [
+          'Les villages dogon sont organisés autour d’unités familiales et de relations de parenté dont les formes varient d’une communauté à l’autre. La grande maison familiale, appelée gin’na dans certaines descriptions, peut matérialiser la continuité d’un groupe de parenté. Les maisons, les greniers, les sanctuaires et les espaces collectifs composent un paysage construit qui exprime aussi des relations sociales. Il faut toutefois éviter de transformer une description ethnographique locale en règle valable pour tous les villages dogon.',
+          'Le toguna, souvent appelé maison de la parole ou abri des hommes dans les descriptions touristiques et patrimoniales, est un espace couvert destiné à des réunions et à des échanges collectifs dans certaines communautés. Son toit bas, constitué de couches de branches ou de matériaux végétaux soutenues par des piliers, est un élément architectural caractéristique de plusieurs villages. Les usages précis, les personnes autorisées à y prendre la parole et les règles de réunion peuvent varier selon les lieux et les périodes.',
+          'Dans plusieurs localités, des responsables rituels et des autorités de lignage jouent un rôle dans la gestion des sanctuaires, des cérémonies et de certains rapports avec le territoire. Le hogon est présenté par l’UNESCO comme un responsable religieux associé à un ou plusieurs villages dans certaines traditions. Cette fonction ne doit pas être confondue avec une autorité politique unique qui gouvernerait l’ensemble des Dogon. Les structures de décision sont locales et historiquement diverses.',
+          'La vie sociale a évolué avec la scolarisation, les migrations, les religions musulmane et chrétienne, les administrations modernes, les marchés et les transformations économiques. Les habitants combinent aujourd’hui des appartenances et des pratiques diverses. La continuité de certains rites et de certaines architectures ne signifie donc pas que la société serait restée inchangée depuis plusieurs siècles.'
+        ],
+        example: {
+          statement: 'Un village possède un toguna utilisé pour des réunions. Peut-on affirmer que tous les villages dogon ont exactement la même organisation politique ?',
+          calculation: 'Un exemple local permet de décrire une institution dans son contexte, mais une généralisation exige des enquêtes comparatives dans plusieurs communautés et à différentes périodes.',
+          answer: 'Non. Les institutions et les usages du toguna varient. Il faut décrire les pratiques locales sans les présenter comme un modèle uniforme de toute la société dogon.'
+        },
+        exercise: {
+          question: 'Quelle est la fonction générale du toguna dans les villages où cette institution existe ?',
+          answer: 'C’est un espace collectif couvert servant notamment aux réunions et aux discussions communautaires.'
+        },
+        exercises: [
+          {
+            question: 'Quel nom est donné à la grande maison familiale dans certaines descriptions du pays dogon ?',
+            answer: 'La gin’na.'
+          },
+          {
+            question: 'Le hogon est-il le chef politique unique de tous les Dogon ?',
+            answer: 'Non. Il s’agit d’une fonction rituelle ou religieuse locale dont les responsabilités varient selon les communautés.'
+          },
+          {
+            question: 'Pourquoi faut-il comparer plusieurs villages avant de généraliser une institution ?',
+            answer: 'Parce que les structures sociales et les pratiques peuvent varier selon les communautés et les périodes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'UNESCO — Falaises de Bandiagara (pays dogon)',
+            url: 'https://whc.unesco.org/fr/list/516'
+          },
+          {
+            title: 'eHRAF World Cultures — Dogon: Culture Summary',
+            url: 'https://ehrafworldcultures.yale.edu/cultures/fa16/summary'
+          },
+          {
+            title: 'The Menil Collection — ReCollecting Dogon: Introduction',
+            url: 'https://publications.menil.org/recollecting-dogon/introduction/index_locale%3Dfr.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'agriculture-architecture-environnement',
+      title: 'Agriculture, habitat et adaptation à l’environnement',
+      field: 'Géographie humaine · Agriculture sahélienne · architecture du plateau, de la falaise et de la plaine',
+      summary: 'Présenter les cultures vivrières, la gestion de l’eau, les greniers et l’adaptation de l’habitat aux milieux de Bandiagara.',
+      lesson: {
+        sections: [
+          'Le pays dogon comprend plusieurs milieux : plateau gréseux, escarpement rocheux et plaine. Les différences de relief, de sols et d’accès à l’eau influencent les formes d’habitat et les activités agricoles. Les populations ont développé des savoir-faire adaptés à des conditions sahéliennes marquées par une saison des pluies et une longue saison sèche. Les pratiques ne sont cependant pas identiques partout : elles dépendent de l’altitude, des ressources locales, des échanges et des changements climatiques.',
+          'Le mil est une culture importante dans plusieurs systèmes agricoles de la région, aux côtés d’autres cultures vivrières selon les secteurs et les disponibilités en eau. Les calendriers agricoles dépendent des pluies, de la préparation des sols, des semis et des récoltes. La variabilité des précipitations peut affecter les rendements et renforcer les besoins de stockage. Les savoir-faire agricoles sont donc étroitement liés à l’observation de l’environnement et à l’organisation du travail familial et communautaire.',
+          'Les greniers sont des constructions essentielles au stockage des récoltes. Dans les descriptions patrimoniales de l’UNESCO, plusieurs greniers dogon présentent un plan carré et une couverture conique ou pyramidale en chaume. Les matériaux et les formes varient selon les villages. Les maisons familiales, les autels, les sanctuaires et les espaces collectifs sont souvent construits avec des matériaux disponibles localement, notamment la terre crue et le bois, selon les techniques et les conditions du site.',
+          'L’architecture tire parti des contraintes du relief. Les villages peuvent être établis sur le plateau, au pied ou sur les flancs de la falaise, ou dans la plaine. Les escarpements et les abris rocheux ont parfois servi de lieux d’habitation, de refuge ou de sépulture au cours de périodes différentes. Aujourd’hui, la sécheresse, l’érosion, les changements des modes de vie, l’exode rural et les transformations des matériaux de construction fragilisent certains éléments du patrimoine bâti. La conservation ne peut donc pas être séparée des conditions de vie des habitants.'
+        ],
+        example: {
+          statement: 'Deux villages du pays dogon sont construits dans des milieux différents, l’un sur le plateau et l’autre dans la plaine. Doivent-ils nécessairement avoir la même architecture ?',
+          calculation: 'On compare les matériaux disponibles, la pente, l’exposition, l’accès à l’eau, les risques d’érosion et les usages des bâtiments. Ces paramètres influencent les choix de construction.',
+          answer: 'Non. Les formes de l’habitat s’adaptent aux conditions locales. L’architecture dogon présente des traits communs, mais aussi des variations liées au milieu et à l’histoire des villages.'
+        },
+        exercise: {
+          question: 'Comment les greniers contribuent-ils à l’organisation de la vie agricole ?',
+          answer: 'Ils permettent de conserver les récoltes après la moisson et de disposer de réserves entre les périodes de production.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les trois grands milieux géographiques du site UNESCO de Bandiagara ?',
+            answer: 'Le plateau gréseux, la falaise et la plaine.'
+          },
+          {
+            question: 'Quelle céréale est importante dans plusieurs systèmes agricoles du pays dogon ?',
+            answer: 'Le mil, même si les cultures varient selon les localités.'
+          },
+          {
+            question: 'Pourquoi l’architecture dogon varie-t-elle d’un village à l’autre ?',
+            answer: 'Parce qu’elle dépend notamment du relief, des matériaux disponibles, des ressources en eau et des usages locaux.'
+          }
+        ],
+        sources: [
+          {
+            title: 'UNESCO — Falaises de Bandiagara (pays dogon)',
+            url: 'https://whc.unesco.org/fr/list/516'
+          },
+          {
+            title: 'Ounjougou — L’histoire du peuplement en Pays dogon depuis 2000 ans',
+            url: 'https://www.ounjougou.org/fr/projets/mali/archeologie/lhistoire-du-peuplement-en-pays-dogon-depuis-2000-ans-une-dynamique-complexe/'
+          },
+          {
+            title: 'Focus on Geography — Living and Spiritual Worlds of Mali’s Dogon People',
+            url: 'https://www.focusongeography.org/publications/articles/mali/index.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'religions-cosmologies-rites',
+      title: 'Religions, cosmologies et rites dans les communautés dogon',
+      field: 'Anthropologie des religions · Traditions orales · Amma, Lebe, ancêtres et cérémonies',
+      summary: 'Découvrir certains repères religieux documentés tout en distinguant les traditions locales des interprétations ethnologiques discutées.',
+      lesson: {
+        sections: [
+          'Les traditions religieuses dogon ne forment pas un système identique dans toutes les communautés. Des enquêtes ethnographiques ont décrit des récits relatifs à Amma, figure créatrice dans certaines traditions, au Lebe, associé à la terre et à la fertilité dans plusieurs descriptions, ainsi qu’aux ancêtres et à différents êtres spirituels. Les significations et les pratiques doivent être replacées dans leur contexte local. Les récits transmis oralement peuvent varier selon les informateurs, les lignages, les villages et les circonstances rituelles.',
+          'Le culte du Lebe a fait l’objet d’enquêtes ethnographiques dès les années 1930, notamment par Solange de Ganay. Les publications décrivent des liens entre les rites, la terre, les ancêtres et les institutions cérémonielles. Ces textes sont des sources historiques importantes sur les enquêtes de leur époque, mais ils ne constituent pas une description exhaustive et intemporelle de toutes les croyances dogon. Leur lecture doit tenir compte des méthodes de collecte et du contexte colonial dans lequel ces recherches ont été menées.',
+          'Les travaux de Marcel Griaule, en particulier Dieu d’eau et Le Renard pâle, ont largement diffusé une représentation structurée de la cosmologie dogon. Cependant, l’enquête de terrain publiée par Walter E. A. van Beek en 1991 a contesté la possibilité de retrouver dans ses propres enquêtes plusieurs éléments présentés par Griaule comme centraux et largement partagés. D’autres chercheurs ont discuté cette critique. Il est donc scientifiquement nécessaire de présenter les interprétations de Griaule comme des sources influentes mais débattues, et non comme une vérité uniforme sur tous les Dogon.',
+          'Les rites accompagnent différentes étapes de la vie sociale, notamment les funérailles et les cérémonies liées aux ancêtres. Les pratiques peuvent inclure des chants, des danses, des objets rituels, des masques ou des rassemblements. Elles contribuent à exprimer les relations entre les vivants, les morts, le territoire et les groupes de parenté. Les pratiques musulmanes et chrétiennes sont également présentes dans la région et coexistent, selon les lieux et les familles, avec des traditions locales transformées au fil du temps.'
+        ],
+        example: {
+          statement: 'Un ouvrage ethnologique décrit une croyance comme essentielle à l’ensemble des Dogon. Peut-on considérer cette affirmation comme définitivement établie ?',
+          calculation: 'Il faut confronter l’ouvrage à d’autres enquêtes, vérifier les lieux et les informateurs concernés, puis examiner les critiques méthodologiques et les évolutions historiques.',
+          answer: 'Non. Une description ethnographique doit être contextualisée et comparée à d’autres travaux. Les recherches sur les Dogon montrent que certaines interprétations classiques sont discutées.'
+        },
+        exercise: {
+          question: 'Pourquoi les descriptions de la cosmologie dogon doivent-elles être accompagnées de précautions méthodologiques ?',
+          answer: 'Parce que les traditions varient localement et que certaines grandes interprétations ethnologiques, notamment celles de Marcel Griaule, ont été contestées ou réévaluées par des recherches ultérieures.'
+        },
+        exercises: [
+          {
+            question: 'Quel chercheur a publié en 1991 une réévaluation de terrain des travaux de Marcel Griaule ?',
+            answer: 'Walter E. A. van Beek.'
+          },
+          {
+            question: 'Quel ouvrage de Marcel Griaule a contribué à diffuser une présentation de la cosmologie dogon à partir d’entretiens avec Ogotemmêli ?',
+            answer: 'Dieu d’eau, publié en 1948.'
+          },
+          {
+            question: 'Les pratiques religieuses sont-elles identiques dans toutes les communautés dogon ?',
+            answer: 'Non. Elles présentent des variations locales et ont évolué au contact d’autres traditions religieuses et de changements sociaux.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Walter E. A. van Beek — Dogon Restudied: A Field Evaluation of the Work of Marcel Griaule',
+            url: 'https://ehrafworldcultures.yale.edu/cultures/fa16/documents/031'
+          },
+          {
+            title: 'Persée — Solange de Ganay, Note sur le culte du lebe chez les Dogon du Soudan français',
+            url: 'https://www.persee.fr/doc/jafr_0037-9166_1937_num_7_2_1641'
+          },
+          {
+            title: 'UNESCO — Falaises de Bandiagara (pays dogon)',
+            url: 'https://whc.unesco.org/fr/list/516'
+          },
+          {
+            title: 'Senka Kovač — Reevaluation of ethnologic field research of the Dogon',
+            url: 'https://doiserbia.nb.rs/Article.aspx?id=0350-08611002056K'
+          }
+        ]
+      }
+    },
+    {
+      id: 'masques-arts-et-ceremonies',
+      title: 'Masques, arts et cérémonies : des objets inscrits dans la vie sociale',
+      field: 'Histoire de l’art et anthropologie · Sculpture, masques, danse et rites funéraires',
+      summary: 'Étudier les masques dans leur contexte cérémoniel, les arts matériels et les enjeux de collecte et de conservation.',
+      lesson: {
+        sections: [
+          'Les arts dogon comprennent des sculptures, des objets rituels, des portes, des serrures, des récipients et des masques. Les formes et les usages varient selon les communautés et les périodes. Les objets ne sont pas seulement des œuvres destinées à être regardées : ils peuvent intervenir dans des pratiques familiales, religieuses, funéraires ou politiques. Leur interprétation exige donc de connaître leur provenance, leur fonction, leur date et les conditions dans lesquelles ils ont été fabriqués et utilisés.',
+          'Les masques sont particulièrement connus à travers les cérémonies appelées dama, associées dans plusieurs descriptions au terme du deuil et à des rites funéraires secondaires. Des groupes de porteurs exécutent des danses et des parcours rituels. Le masque kanaga est l’un des plus célèbres, mais son interprétation ne peut être réduite à une seule signification universelle. L’étude de W. E. A. van Beek publiée en 2018 insiste sur l’importance de replacer ce masque dans la troupe, le mouvement et le contexte rituel précis.',
+          'La littérature ethnographique de Germaine Dieterlen a décrit les relations entre les masques, les récits, les rythmes et les gestes. Dans son article de 1989, elle étudie plusieurs figures masquées et les différents niveaux de signification qui leur sont attribués. Ces travaux documentent des observations et des interprétations importantes, mais ils doivent être lus en tenant compte des débats sur les méthodes ethnographiques et de la diversité des pratiques locales.',
+          'Au XXe siècle, des objets dogon ont été collectés et exposés dans des musées européens et américains. La provenance des œuvres, les conditions d’acquisition et la perte éventuelle de leur contexte rituel sont aujourd’hui des questions essentielles pour les musées et les chercheurs. Les collections de la BnF conservent notamment des références bibliographiques fondamentales sur les masques dogon, tandis que les collections muséales permettent d’étudier les objets eux-mêmes. Une œuvre isolée ne représente toutefois jamais à elle seule toute une culture.'
+        ],
+        example: {
+          statement: 'Un masque kanaga est exposé dans un musée avec une légende qui lui attribue une signification symbolique unique. Cette légende suffit-elle à expliquer son rôle ?',
+          calculation: 'Il faut compléter l’analyse de l’objet par son contexte de collecte, sa fonction cérémonielle, les personnes qui le portent, les mouvements de la danse et les interprétations locales documentées.',
+          answer: 'Non. Un masque est aussi un objet en action, intégré à une troupe et à une cérémonie. Son sens dépend du contexte et ne se réduit pas nécessairement à une définition unique.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il important d’étudier un masque dogon dans son contexte cérémoniel ?',
+          answer: 'Parce que sa fonction et ses significations dépendent notamment de la cérémonie, des gestes, des danses, des participants et des traditions locales.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le nom d’une cérémonie dogon souvent associée à la fin du deuil ?',
+            answer: 'Le dama.'
+          },
+          {
+            question: 'Quel masque dogon est souvent décrit comme ayant une forme de croix ?',
+            answer: 'Le kanaga.'
+          },
+          {
+            question: 'Quel est le titre de l’ouvrage de Marcel Griaule consacré aux masques dogon, catalogué par la BnF ?',
+            answer: 'Masques dogons.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BnF — Marcel Griaule, Masques dogons, notice bibliographique',
+            url: 'https://catalogue.bnf.fr/ark:/12148/cb392234366'
+          },
+          {
+            title: 'Persée — Germaine Dieterlen, Mythologie, histoire et masques',
+            url: 'https://www.persee.fr/doc/jafr_0399-0346_1989_num_59_1_2276'
+          },
+          {
+            title: 'African Studies Centre Leiden — Matter in Motion: A Dogon Kanaga Mask',
+            url: 'https://www.ascleiden.nl/publications/matter-motion-dogon-kanaga-mask'
+          },
+          {
+            title: 'Smithsonian Institution — Masks and Mythology among the Dogon',
+            url: 'https://www.si.edu/object/siris_sil_542109'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — Dogon or Tellem objects in the collection',
+            url: 'https://www.metmuseum.org/art/collection/search/318730'
+          }
+        ]
+      }
+    },
+    {
+      id: 'dogon-aujourdhui-patrimoine',
+      title: 'Les Dogon aujourd’hui : transformations, patrimoine et transmission',
+      field: 'Histoire contemporaine · Mali · XXe et XXIe siècles',
+      summary: 'Analyser les transformations sociales, les enjeux de conservation du pays de Bandiagara et la transmission des patrimoines vivants.',
+      lesson: {
+        sections: [
+          'Les communautés dogon vivent aujourd’hui dans un environnement social et économique en transformation. La scolarisation, les migrations vers les villes, les échanges commerciaux, les médias, les changements religieux et les évolutions des activités agricoles modifient les modes de vie. Ces changements ne signifient pas la disparition automatique des traditions : certaines sont maintenues, d’autres réinterprétées, adaptées ou abandonnées selon les générations et les localités.',
+          'Les falaises de Bandiagara et le pays dogon ont été inscrits sur la Liste du patrimoine mondial de l’UNESCO en 1989. Le site associe un paysage naturel de plateau, de falaise et de plaine à des villages, des habitations, des greniers, des sanctuaires et des traditions cérémonielles. L’UNESCO souligne que la valeur du site ne repose pas seulement sur des monuments isolés, mais sur les relations entre les communautés, leur environnement, leurs pratiques et leur architecture.',
+          'La conservation de ce patrimoine rencontre plusieurs difficultés : dégradation de certains bâtiments, changements des matériaux, pression sur les ressources naturelles, sécheresse, érosion, départ d’habitants de villages perchés et effets du tourisme. L’UNESCO insiste sur le fait que la protection du site doit tenir compte du bien-être des communautés locales. Préserver un patrimoine vivant implique donc de soutenir les habitants, leurs activités et leur capacité à décider des usages de leur territoire.',
+          'Les objets dogon conservés dans les musées soulèvent également des questions de provenance, de documentation et de restitution. Les collections peuvent contribuer à la recherche et à la connaissance, mais elles doivent être accompagnées d’informations fiables sur les circonstances de collecte et les communautés concernées. Les chercheurs et les institutions sont de plus en plus attentifs à la participation des populations locales à l’interprétation et à la gestion de leur patrimoine. Il est essentiel de ne pas présenter les Dogon uniquement comme un peuple du passé : ce sont des sociétés contemporaines, diverses et actrices de leur histoire.'
+        ],
+        example: {
+          statement: 'Un programme de conservation restaure un ancien grenier mais ne consulte pas les habitants sur son usage. Peut-on considérer que le patrimoine vivant est entièrement protégé ?',
+          calculation: 'La conservation matérielle protège le bâtiment, mais la transmission du patrimoine dépend aussi des pratiques, des savoir-faire, des usages et de la participation des communautés concernées.',
+          answer: 'Non. La protection d’un patrimoine vivant doit associer la conservation des constructions à la participation et aux besoins des populations qui lui donnent sens.'
+        },
+        exercise: {
+          question: 'Pourquoi l’UNESCO considère-t-elle la participation des communautés locales comme essentielle à la conservation du pays dogon ?',
+          answer: 'Parce que le site est un paysage culturel vivant. Sa préservation dépend des habitants, de leurs conditions de vie, de leurs pratiques et de leur relation au territoire.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année les falaises de Bandiagara ont-elles été inscrites au patrimoine mondial de l’UNESCO ?',
+            answer: 'En 1989.'
+          },
+          {
+            question: 'Le site UNESCO est-il uniquement un ensemble de monuments bâtis ?',
+            answer: 'Non. Il associe un paysage naturel, des villages, des architectures, des sanctuaires et des traditions vivantes.'
+          },
+          {
+            question: 'Pourquoi faut-il éviter de présenter les Dogon uniquement comme une société traditionnelle figée ?',
+            answer: 'Parce que les communautés dogon sont contemporaines et connaissent des transformations sociales, économiques, religieuses et culturelles.'
+          }
+        ],
+        sources: [
+          {
+            title: 'UNESCO — Falaises de Bandiagara (pays dogon)',
+            url: 'https://whc.unesco.org/fr/list/516'
+          },
+          {
+            title: 'The Menil Collection — ReCollecting Dogon',
+            url: 'https://publications.menil.org/recollecting-dogon/introduction/index_locale%3Dfr.html'
+          },
+          {
+            title: 'eHRAF World Cultures — Dogon: Culture Summary',
+            url: 'https://ehrafworldcultures.yale.edu/cultures/fa16/summary'
+          },
+          {
+            title: 'UNESCO — General History of Africa, Volume IV',
+            url: 'https://unesdoc.unesco.org/in/rest/annotationSVC/DownloadWatermarkedAttachment/attach_import_393a67e4-60c1-4324-9a70-b2682fe54680?_=184287engo.pdf'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+]
