@@ -3533,5 +3533,254 @@ window.courseCatalog = [
     }
   ]
 },
+
+{
+  id: 'continents-actuels',
+  title: 'Les cinq continents et leurs caractéristiques géographiques',
+  note: 'Cinq chapitres consacrés à l’Afrique, l’Amérique, l’Asie, l’Europe et l’Océanie. Cette branche suit une convention francophone qui regroupe l’Amérique du Nord et l’Amérique du Sud en un seul continent et ne compte pas l’Antarctique parmi les cinq continents étudiés. D’autres classifications, notamment le modèle à sept continents, sont également utilisées. Les limites continentales, surtout entre l’Europe et l’Asie, relèvent en partie de conventions géographiques.',
+  chapters: [
+    {
+      id: 'afrique',
+      title: 'L’Afrique : un continent traversé par l’équateur et marqué par de grands contrastes naturels',
+      field: 'Géographie physique · Afrique · Reliefs, climats, eaux et milieux naturels',
+      summary: 'Étudier la position de l’Afrique, ses grands ensembles de relief, ses climats, ses fleuves, ses déserts et la diversité de ses écosystèmes.',
+      lesson: {
+        sections: [
+          'L’Afrique est le deuxième continent le plus vaste après l’Asie. Elle est bordée par la mer Méditerranée au nord, l’océan Atlantique à l’ouest, l’océan Indien à l’est et au sud-est, ainsi que la mer Rouge au nord-est. L’équateur traverse le continent presque en son milieu. Cette situation explique une répartition générale des zones climatiques de part et d’autre de l’équateur, sans produire une symétrie parfaite : les courants marins, l’altitude, les vents et la configuration des reliefs modifient localement les températures et les précipitations. Madagascar et plusieurs archipels de l’Atlantique et de l’océan Indien appartiennent également à l’espace géographique africain.',
+          'Le relief africain est souvent caractérisé par l’importance des plateaux et des hautes terres. Les montagnes de l’Atlas s’étendent au nord-ouest, tandis que les hauts plateaux éthiopiens dominent une partie de l’est du continent. Le système du Rift est-africain correspond à une vaste zone où la lithosphère s’étire et se fracture progressivement ; il est associé à des escarpements, à des volcans et à de grands lacs. Au sud, les reliefs comprennent notamment le plateau sud-africain et la chaîne du Drakensberg. Le Kilimandjaro, en Tanzanie, est un massif volcanique et le point culminant de l’Afrique. Ces formes de relief influencent les écoulements des eaux, les températures locales et les possibilités d’occupation humaine.',
+          'Les climats africains sont très variés. Le Sahara, au nord, est le plus vaste désert chaud du monde ; il se caractérise par de faibles précipitations et de fortes amplitudes thermiques dans de nombreuses régions. Au sud du Sahara s’étend le Sahel, zone de transition semi-aride où la saison des pluies est courte et irrégulière. Plus près de l’équateur, le bassin du Congo abrite une vaste forêt tropicale humide. Les savanes occupent de grandes superficies dans les régions tropicales, avec une alternance saisonnière entre périodes humides et sèches. Les marges septentrionales et méridionales connaissent aussi des climats méditerranéens, avec des étés généralement secs et des hivers plus humides. Il faut donc éviter de réduire l’Afrique à un climat uniformément chaud ou désertique.',
+          'Les grands fleuves structurent les paysages et les sociétés. Le Nil traverse le nord-est de l’Afrique et se jette dans la Méditerranée ; son bassin relie des régions aux conditions climatiques très différentes. Le Congo draine une grande partie de l’Afrique centrale humide. Le Niger dessine une vaste boucle en Afrique de l’Ouest avant de rejoindre le golfe de Guinée, tandis que le Zambèze s’écoule vers l’océan Indien et forme les chutes Victoria sur une partie de son cours. Les lacs Victoria, Tanganyika et Malawi comptent parmi les grands lacs africains. Ces eaux soutiennent des écosystèmes, l’agriculture, la pêche, les transports et la production hydroélectrique, mais leur disponibilité varie fortement selon les saisons et les régions.',
+          'La diversité des milieux africains est remarquable : déserts, savanes, forêts tropicales, mangroves, montagnes et milieux lacustres abritent des espèces adaptées à des conditions écologiques différentes. Les savanes accueillent notamment de grands herbivores et leurs prédateurs ; les forêts du bassin du Congo hébergent une biodiversité forestière importante ; les régions montagneuses possèdent parfois des espèces endémiques. Ces milieux sont soumis à des pressions variables, parmi lesquelles la transformation des terres, la fragmentation des habitats, la pollution et les changements climatiques. La géographie physique ne détermine pas à elle seule les sociétés, mais elle contribue à expliquer les ressources disponibles, les contraintes de déplacement et les différences régionales.'
+        ],
+        example: {
+          statement: 'Un élève compare le Sahara, le Sahel et le bassin du Congo. Comment peut-il expliquer leurs différences de végétation sans supposer que toute l’Afrique possède le même climat ?',
+          calculation: 'Il faut relier chaque milieu à ses caractéristiques climatiques : faibles précipitations dans le désert, pluies saisonnières et irrégulières dans la zone semi-aride, précipitations abondantes dans une grande partie de la forêt équatoriale.',
+          answer: 'Le Sahara est principalement désertique en raison de l’aridité, le Sahel porte une végétation adaptée à une saison des pluies limitée, et le bassin du Congo comprend de vastes forêts tropicales humides grâce à des précipitations importantes. Ces exemples montrent la diversité climatique du continent.'
+        },
+        exercise: {
+          question: 'Pourquoi la présence de l’équateur ne suffit-elle pas à expliquer à elle seule les climats de l’Afrique ?',
+          answer: 'Parce que les climats dépendent aussi de l’altitude, des reliefs, des vents, des courants marins et de la répartition saisonnière des précipitations.'
+        },
+        exercises: [
+          {
+            question: 'Quel grand désert occupe une grande partie de l’Afrique du Nord ?',
+            answer: 'Le Sahara, qui est le plus vaste désert chaud du monde.'
+          },
+          {
+            question: 'Quel grand bassin forestier se trouve en Afrique centrale ?',
+            answer: 'Le bassin du Congo, qui abrite une vaste forêt tropicale humide.'
+          },
+          {
+            question: 'Cite deux grands lacs d’Afrique orientale.',
+            answer: 'Le lac Victoria et le lac Tanganyika. Le lac Malawi est un autre exemple.'
+          },
+          {
+            question: 'Quelle différence générale distingue le Sahel du Sahara ?',
+            answer: 'Le Sahel est une zone semi-aride de transition avec une saison des pluies, tandis que le Sahara est un désert beaucoup plus aride.'
+          }
+        ],
+        sources: [
+          { title: 'Larousse — Continent : définition et divisions traditionnelles', url: 'https://www.larousse.fr/encyclopedie/divers/continent/36618' },
+          { title: 'National Geographic — Africa: Physical Geography', url: 'https://education.nationalgeographic.org/resource/africa-physical-geography/' },
+          { title: 'National Geographic — Africa: Human Geography', url: 'https://education.nationalgeographic.org/resource/africa-human-geography/' },
+          { title: 'National Geographic — Africa: Resources', url: 'https://education.nationalgeographic.org/resource/africa-resources/' }
+        ]
+      }
+    },
+    {
+      id: 'amerique',
+      title: 'L’Amérique : un continent étendu des régions arctiques aux terres australes',
+      field: 'Géographie physique · Amérique du Nord, Amérique centrale, Caraïbes et Amérique du Sud',
+      summary: 'Comprendre l’organisation nord-sud de l’Amérique, ses grandes chaînes de montagnes, ses plaines, ses bassins fluviaux et ses climats contrastés.',
+      lesson: {
+        sections: [
+          'Dans la convention francophone à cinq continents retenue ici, l’Amérique forme un seul continent. Elle comprend l’Amérique du Nord, l’Amérique centrale, les Caraïbes et l’Amérique du Sud. Elle s’étend des régions proches de l’Arctique jusqu’à l’extrémité méridionale de l’Amérique du Sud. Le détroit de Béring sépare l’Amérique de l’Asie, tandis que les océans Atlantique et Pacifique bordent une grande partie de ses façades est et ouest. L’isthme de Panama constitue une étroite liaison terrestre entre les deux grandes masses continentales nord et sud-américaines. Les limites entre sous-régions sont parfois définies différemment selon les usages géographiques, historiques ou politiques.',
+          'La façade occidentale américaine est dominée par de longues chaînes montagneuses liées à la tectonique des plaques. En Amérique du Nord, les montagnes Rocheuses appartiennent à un vaste ensemble de cordillères qui se prolonge vers le Mexique et l’Amérique centrale. En Amérique du Sud, la cordillère des Andes longe le bord occidental du continent sur plusieurs milliers de kilomètres. Elle comprend de hauts sommets, des plateaux d’altitude comme l’Altiplano et des secteurs volcaniques. À l’est des Andes, les reliefs s’abaissent vers de vastes bassins et plaines. Les Appalaches, plus anciennes et moins élevées que les Rocheuses dans leur ensemble, se trouvent dans l’est de l’Amérique du Nord.',
+          'Les plaines et les plateaux occupent une place majeure. Les Grandes Plaines s’étendent au centre de l’Amérique du Nord, entre les régions montagneuses de l’ouest et les reliefs de l’est. Le Bouclier canadien est une vaste région de roches anciennes, marquée par de nombreux lacs et des traces d’anciens glaciers. En Amérique du Sud, le bassin amazonien forme une immense région de basses terres drainée par l’Amazone et ses affluents. Le plateau brésilien et les hauts plateaux des Guyanes contrastent avec les plaines de l’Amazonie et les basses terres du bassin du Paraná. Ces unités de relief influencent les réseaux hydrographiques, les sols et les formes de végétation.',
+          'Les climats américains couvrent une gamme très étendue. Le nord du Canada et l’Alaska connaissent des conditions arctiques ou subarctiques, tandis que des régions tempérées occupent une grande partie des latitudes moyennes. Les déserts du sud-ouest nord-américain et du nord du Mexique sont liés notamment aux circulations atmosphériques et aux effets d’abri de certains reliefs. L’Amérique centrale et une grande partie du bassin amazonien connaissent des climats tropicaux, mais les précipitations varient fortement selon l’altitude, l’exposition aux vents et la saison. La côte pacifique de l’Amérique du Sud comprend le désert d’Atacama, particulièrement aride, alors que d’autres secteurs tropicaux reçoivent des pluies abondantes. Dans le sud, la Patagonie présente des milieux froids et souvent venteux.',
+          'Les grands cours d’eau et les écosystèmes reflètent cette diversité. Le Mississippi et son réseau d’affluents drainent une grande partie de l’intérieur nord-américain. Le Saint-Laurent relie les Grands Lacs à l’Atlantique. En Amérique du Sud, l’Amazone possède le plus grand débit fluvial moyen du monde et draine un bassin immense ; le Paraná et ses affluents forment un autre grand système hydrographique. Les milieux naturels comprennent la toundra, les forêts boréales, les prairies, les déserts, les forêts tropicales, les zones humides et les écosystèmes de montagne. La déforestation, la fragmentation des habitats, les incendies, la pollution et la transformation des cours d’eau exercent des pressions sur plusieurs de ces milieux.'
+        ],
+        example: {
+          statement: 'Comment expliquer que l’on trouve des milieux très froids au nord de l’Amérique, des forêts tropicales près de l’équateur et des déserts sur certaines façades occidentales ?',
+          calculation: 'On compare la latitude, l’altitude, les vents dominants, les courants marins et l’effet des chaînes montagneuses sur les précipitations.',
+          answer: 'La latitude explique une partie des contrastes thermiques, mais elle ne suffit pas. L’altitude refroidit les régions montagneuses, les courants et les vents influencent l’humidité, et les reliefs peuvent créer des zones d’ombre pluviométrique. La diversité des climats résulte de la combinaison de ces facteurs.'
+        },
+        exercise: {
+          question: 'Quel rôle géographique joue l’isthme de Panama dans l’organisation de l’Amérique ?',
+          answer: 'Il forme une étroite liaison terrestre entre l’Amérique du Nord et l’Amérique du Sud et sépare localement la mer des Caraïbes de l’océan Pacifique.'
+        },
+        exercises: [
+          {
+            question: 'Quelle grande chaîne montagneuse longe l’ouest de l’Amérique du Sud ?',
+            answer: 'La cordillère des Andes.'
+          },
+          {
+            question: 'Quel vaste bassin fluvial occupe une grande partie du nord de l’Amérique du Sud ?',
+            answer: 'Le bassin de l’Amazone.'
+          },
+          {
+            question: 'Quel grand système fluvial draine une partie importante du centre de l’Amérique du Nord ?',
+            answer: 'Le système du Mississippi et de ses affluents.'
+          },
+          {
+            question: 'Pourquoi le continent américain présente-t-il des climats aussi variés ?',
+            answer: 'En raison de son étendue en latitude, de ses différences d’altitude, de ses reliefs, des vents et des courants marins.'
+          }
+        ],
+        sources: [
+          { title: 'Larousse — Continent : définition et divisions traditionnelles', url: 'https://www.larousse.fr/encyclopedie/divers/continent/36618' },
+          { title: 'National Geographic — North America: Physical Geography', url: 'https://education.nationalgeographic.org/resource/north-america-physical-geography/' },
+          { title: 'National Geographic — South America: Physical Geography', url: 'https://education.nationalgeographic.org/resource/south-america-physical-geography/' },
+          { title: 'National Geographic — North America: Resources', url: 'https://education.nationalgeographic.org/resource/north-america-resources/' }
+        ]
+      }
+    },
+    {
+      id: 'asie',
+      title: 'L’Asie : le plus vaste continent et une exceptionnelle diversité de reliefs et de climats',
+      field: 'Géographie physique · Asie · Montagnes, hauts plateaux, plaines, déserts et grands fleuves',
+      summary: 'Étudier la position de l’Asie, ses limites conventionnelles avec l’Europe, ses reliefs majeurs, ses climats de mousson et ses grands bassins fluviaux.',
+      lesson: {
+        sections: [
+          'L’Asie est le plus vaste continent dans le modèle géographique à sept continents et elle constitue la partie orientale de l’Eurasie. Elle est bordée par l’océan Arctique au nord, l’océan Pacifique à l’est et l’océan Indien au sud. Sa limite occidentale avec l’Europe est généralement tracée en suivant les monts Oural, la mer Caspienne, le Caucase et la mer Noire, mais les critères et certains segments de cette limite varient selon les traditions géographiques. L’Europe et l’Asie ne sont pas séparées partout par une frontière océanique ou par une limite tectonique nette : leur distinction est aussi historique et culturelle. L’Asie comprend des régions très diverses, depuis les espaces arctiques sibériens jusqu’aux archipels tropicaux du Sud-Est asiatique.',
+          'Les reliefs asiatiques comptent parmi les plus élevés et les plus étendus de la planète. L’Himalaya s’est formé dans le contexte de la convergence de la plaque indienne et de la plaque eurasiatique. Il comprend l’Everest, dont l’altitude officielle couramment retenue est de 8 848,86 mètres selon la mesure annoncée conjointement par le Népal et la Chine en 2020. Au nord de l’Himalaya s’étend le plateau tibétain, vaste région de haute altitude qui joue un rôle important dans l’alimentation de plusieurs grands fleuves asiatiques. D’autres ensembles montagneux comprennent le Karakoram, le Pamir, le Tian Shan et l’Altaï. Les plateaux iraniens et du Deccan, ainsi que les plaines de Sibérie et de Chine, complètent cette grande variété de formes de relief.',
+          'Les climats de l’Asie sont particulièrement contrastés en raison de l’étendue du continent, de sa continentalité et de ses reliefs. La Sibérie connaît de longs hivers froids, tandis que les régions du Sud et du Sud-Est sont largement soumises aux climats tropicaux et aux moussons. Une mousson est un régime saisonnier de vents qui modifie fortement la répartition des pluies ; en Asie du Sud et du Sud-Est, elle apporte une part importante des précipitations annuelles dans de nombreuses régions. Les déserts du Gobi et de la péninsule Arabique illustrent des conditions arides, tandis que les zones équatoriales insulaires sont généralement chaudes et humides. Les montagnes créent aussi des contrastes entre versants exposés aux vents humides et versants plus secs.',
+          'L’Asie possède de grands fleuves qui soutiennent des populations nombreuses et des activités agricoles, industrielles et urbaines. Le Yangzi Jiang, ou Yangtsé, traverse la Chine vers l’est et se jette dans la mer de Chine orientale. Le Huang He, ou fleuve Jaune, est un autre grand cours d’eau chinois. Le Gange et le Brahmapoutre drainent une vaste région de l’Himalaya et se rejoignent dans un delta partagé par l’Inde et le Bangladesh. Le Mékong traverse plusieurs pays d’Asie du Sud-Est avant d’atteindre la mer de Chine méridionale. Le Tigre et l’Euphrate parcourent le sud-ouest de l’Asie. Le lac Baïkal, en Sibérie méridionale, est le lac le plus profond du monde et contient une réserve majeure d’eau douce.',
+          'Les paysages asiatiques comprennent la toundra, la taïga, les steppes, les déserts, les forêts tempérées, les forêts tropicales et les mangroves. La diversité biologique est liée à ces gradients de latitude, d’altitude et d’humidité. Les ressources en eau issues des hautes montagnes sont essentielles pour de vastes régions en aval, ce qui rend la fonte des glaciers et les changements des régimes de précipitations particulièrement importants. Les grandes concentrations urbaines, les infrastructures, l’agriculture irriguée, la pollution et la fragmentation des habitats transforment de nombreux milieux. Il est donc nécessaire de distinguer les caractéristiques physiques du continent des situations économiques et démographiques, qui varient considérablement d’un pays et d’une région à l’autre.'
+        ],
+        example: {
+          statement: 'Pourquoi les régions situées au pied de l’Himalaya peuvent-elles recevoir beaucoup de précipitations alors que certains hauts plateaux et bassins intérieurs sont beaucoup plus secs ?',
+          calculation: 'Il faut considérer le soulèvement de l’air humide par les montagnes, l’orientation des versants et la distance aux sources d’humidité.',
+          answer: 'Les reliefs peuvent forcer l’air humide à s’élever et provoquer des précipitations sur certains versants. Les régions situées sous le vent ou loin des océans peuvent recevoir beaucoup moins de pluie. L’altitude et la circulation saisonnière de la mousson renforcent ces contrastes.'
+        },
+        exercise: {
+          question: 'Pourquoi la frontière entre l’Europe et l’Asie est-elle considérée comme en partie conventionnelle ?',
+          answer: 'Parce que les deux régions forment une vaste masse terrestre continue, sans séparation océanique complète ni frontière tectonique unique. La limite retenue repose sur des repères physiques et sur une longue tradition historique et géographique.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le plus vaste continent dans la classification à sept continents ?',
+            answer: 'L’Asie.'
+          },
+          {
+            question: 'Quelle chaîne montagneuse comprend le mont Everest ?',
+            answer: 'L’Himalaya.'
+          },
+          {
+            question: 'Qu’est-ce qu’une mousson ?',
+            answer: 'Un régime saisonnier de vents qui entraîne une modification importante de la répartition des précipitations.'
+          },
+          {
+            question: 'Quel grand lac sibérien est le plus profond du monde ?',
+            answer: 'Le lac Baïkal.'
+          }
+        ],
+        sources: [
+          { title: 'National Geographic — Asia: Physical Geography', url: 'https://education.nationalgeographic.org/resource/asia/' },
+          { title: 'National Geographic — Continent', url: 'https://education.nationalgeographic.org/resource/Continent/' },
+          { title: 'National Geographic — Continental Drift', url: 'https://education.nationalgeographic.org/resource/continental-drift/' },
+          { title: 'National Geographic — Asia: Physical Geography, page complémentaire', url: 'https://education.nationalgeographic.org/resource/asia/?page=1' },
+          { title: 'National Geographic — Mount Everest: nouvelle altitude annoncée par le Népal et la Chine', url: 'https://www.nationalgeographic.com/science/article/new-height-of-mount-everest-announced-by-china-and-nepal' }
+        ]
+      }
+    },
+    {
+      id: 'europe',
+      title: 'L’Europe : une péninsule de l’Eurasie aux reliefs et aux climats diversifiés',
+      field: 'Géographie physique · Europe · Péninsules, plaines, montagnes, fleuves et façades maritimes',
+      summary: 'Décrire la position de l’Europe dans l’Eurasie, ses grands ensembles de relief, ses climats et ses principaux réseaux hydrographiques.',
+      lesson: {
+        sections: [
+          'L’Europe occupe la partie occidentale de la vaste masse continentale eurasiatique. Elle est bordée par l’océan Arctique au nord, l’océan Atlantique à l’ouest et plusieurs mers au sud, dont la Méditerranée et la mer Noire. À l’est, sa limite conventionnelle est souvent située le long des monts Oural, puis de repères qui varient selon les cartes, notamment le fleuve Oural, la mer Caspienne et le Caucase. L’Europe est parfois décrite comme une péninsule de péninsules en raison de ses nombreuses avancées terrestres dans les mers. Les péninsules Ibérique, Italienne, Balkanique et Scandinave contribuent à la longueur et à la diversité de ses littoraux.',
+          'Le relief européen peut être organisé en plusieurs grands ensembles. Les hautes terres occidentales et septentrionales comprennent des massifs anciens, notamment en Scandinavie, en Écosse et dans certaines régions de l’ouest de l’Europe. La grande plaine d’Europe du Nord s’étend de régions proches de la Manche vers l’est européen ; elle est traversée par plusieurs fleuves et a facilité de nombreuses communications terrestres. Les plateaux et massifs anciens d’Europe centrale forment une zone intermédiaire. Au sud se trouvent des chaînes montagneuses plus élevées et souvent plus récentes à l’échelle géologique, notamment les Alpes, les Pyrénées, les Apennins, les Carpates et les chaînes balkaniques. Le mont Elbrouz, dans le Caucase russe, est généralement considéré comme le point culminant de l’Europe lorsque le Caucase est inclus dans ses limites.',
+          'Les climats européens varient avec la latitude, la distance à l’océan et le relief. À l’ouest, l’influence de l’Atlantique favorise des conditions océaniques, avec des températures généralement modérées et des précipitations réparties sur l’année. Vers l’est, l’influence continentale augmente : les hivers deviennent souvent plus froids et les écarts saisonniers de température plus importants. Le pourtour méditerranéen connaît des étés généralement chauds et secs et des hivers plus doux et plus humides. Au nord, les conditions subarctiques et polaires apparaissent dans les régions les plus septentrionales. En montagne, la température diminue généralement avec l’altitude et les précipitations peuvent être importantes sur les versants exposés aux vents humides.',
+          'Les fleuves européens jouent un rôle essentiel dans l’organisation des paysages et des échanges. La Volga, entièrement située en Russie européenne, est le plus long fleuve d’Europe. Le Danube traverse ou borde plusieurs pays d’Europe centrale et orientale avant de se jeter dans la mer Noire. Le Rhin relie les régions alpines à la mer du Nord et constitue un axe fluvial majeur. Le Rhône rejoint la Méditerranée, tandis que la Seine et la Loire drainent des parties importantes de la France. Les bassins fluviaux sont liés aux reliefs : les montagnes constituent souvent des lignes de partage des eaux, alors que les plaines favorisent des cours d’eau plus lents et parfois navigables.',
+          'Les milieux naturels européens comprennent les forêts boréales, les forêts tempérées, les landes, les prairies, les zones humides, les milieux méditerranéens et les écosystèmes alpins. Les glaciations passées ont profondément modelé certaines régions du nord et de l’ouest, laissant notamment des fjords, des lacs et des vallées glaciaires. L’Europe est densément aménagée dans de nombreux secteurs : agriculture intensive, villes, routes, voies ferrées, barrages et activités industrielles ont transformé les paysages. La protection des zones humides, des forêts, des littoraux et des espaces montagnards est donc un enjeu important pour conserver la biodiversité et les fonctions écologiques des milieux.'
+        ],
+        example: {
+          statement: 'Deux villes européennes situées à une latitude comparable connaissent des hivers différents. Comment expliquer que l’une ait un climat plus doux et plus humide que l’autre ?',
+          calculation: 'On compare leur distance à l’océan Atlantique, l’exposition aux vents dominants, l’altitude et les éventuels obstacles montagneux.',
+          answer: 'La ville la plus proche de l’Atlantique peut recevoir une influence océanique qui modère les températures et apporte de l’humidité. Une ville plus éloignée de l’océan peut subir une influence continentale plus forte, avec des hivers plus froids et des écarts saisonniers plus marqués.'
+        },
+        exercise: {
+          question: 'Pourquoi la grande plaine d’Europe du Nord a-t-elle facilité les communications et les échanges ?',
+          answer: 'Son relief généralement peu élevé et ses nombreux fleuves ont facilité les déplacements, l’agriculture, l’installation des populations et le développement de voies de communication.'
+        },
+        exercises: [
+          {
+            question: 'Quelle grande chaîne montagneuse forme une partie de la limite conventionnelle entre l’Europe et l’Asie ?',
+            answer: 'Les monts Oural.'
+          },
+          {
+            question: 'Quel fleuve est généralement présenté comme le plus long d’Europe ?',
+            answer: 'La Volga.'
+          },
+          {
+            question: 'Quel type de climat caractérise généralement les étés du pourtour méditerranéen ?',
+            answer: 'Un climat méditerranéen, avec des étés généralement chauds et secs.'
+          },
+          {
+            question: 'Quel processus a contribué à façonner les fjords de Scandinavie ?',
+            answer: 'L’érosion glaciaire, liée à l’action ancienne des glaciers.'
+          }
+        ],
+        sources: [
+          { title: 'National Geographic — Europe: Physical Geography', url: 'https://education.nationalgeographic.org/resource/europe-physical-geography/' },
+          { title: 'National Geographic — Continent', url: 'https://education.nationalgeographic.org/resource/Continent/' },
+          { title: 'National Geographic — Asia: Physical Geography', url: 'https://education.nationalgeographic.org/resource/asia/' },
+          { title: 'Larousse — Continent : définition et divisions traditionnelles', url: 'https://www.larousse.fr/encyclopedie/divers/continent/36618' }
+        ]
+      }
+    },
+    {
+      id: 'oceanie',
+      title: 'L’Océanie : un vaste ensemble insulaire organisé autour du Pacifique',
+      field: 'Géographie physique · Océanie · Australie, Nouvelle-Zélande et îles du Pacifique',
+      summary: 'Distinguer le continent australien de la région océanienne et comprendre les origines, les reliefs, les climats et les milieux des îles du Pacifique.',
+      lesson: {
+        sections: [
+          'Dans la convention francophone à cinq continents utilisée dans cette branche, l’Océanie constitue le cinquième continent. En géographie régionale, le terme désigne aussi un vaste ensemble d’îles réparties dans le Pacifique, organisé autour de l’Australie, de la Nouvelle-Zélande, de la Nouvelle-Guinée et de nombreux archipels. Il faut distinguer la convention scolaire qui parle de continent océanien de certaines classifications internationales, comme celle de National Geographic, qui traite l’Océanie comme une région et l’Australie comme un continent. Cette différence de vocabulaire ne correspond pas à un désaccord sur l’existence des terres, mais à des méthodes de regroupement différentes.',
+          'L’Australie domine l’ensemble par sa superficie terrestre. Son intérieur comprend de vastes plaines, des plateaux et des régions arides ou semi-arides souvent regroupées sous le nom d’Outback. À l’est, la cordillère australienne, notamment la Great Dividing Range, longe une partie de la façade orientale. La Nouvelle-Zélande possède des reliefs plus élevés et plus accidentés, avec les Alpes du Sud sur l’île du Sud et des régions volcaniques sur l’île du Nord. La Nouvelle-Guinée présente une chaîne montagneuse centrale élevée et des forêts tropicales humides. Ces reliefs s’expliquent par une histoire géologique complexe et par les interactions entre les plaques tectoniques dans le sud-ouest du Pacifique.',
+          'Les îles de l’Océanie n’ont pas toutes la même origine. Certaines sont des fragments de masses continentales ou des îles autrefois reliées à des terres plus vastes. D’autres sont des îles volcaniques formées par l’accumulation de lave lors d’éruptions sous-marines. Les îles basses coralliennes, dont les atolls, se développent autour de récifs construits par des organismes coralliens ; un atoll forme généralement un anneau de récifs ou d’îlots autour d’un lagon. La Mélanésie, la Micronésie et la Polynésie regroupent de nombreux archipels, mais leurs limites régionales peuvent varier selon les classifications. La diversité des origines géologiques explique les différences d’altitude, de sols, de ressources en eau et de vulnérabilité aux phénomènes marins.',
+          'Les climats de l’Océanie varient selon la latitude, l’altitude et l’exposition aux vents océaniques. Une grande partie de l’intérieur australien est aride ou semi-aride, tandis que le nord de l’Australie connaît des conditions tropicales avec une saison humide et une saison sèche. La Nouvelle-Zélande présente des climats tempérés et des contrastes entre versants exposés aux vents humides et régions plus sèches. Les îles proches de l’équateur sont souvent chaudes et humides, tandis que les îles plus éloignées de l’équateur connaissent des conditions tropicales ou subtropicales variables. Les reliefs insulaires peuvent concentrer les précipitations sur certains versants et créer des différences marquées à courte distance.',
+          'Les écosystèmes océaniens sont particulièrement riches en espèces endémiques, c’est-à-dire présentes naturellement dans une région restreinte et nulle part ailleurs. L’isolement de nombreuses îles a favorisé des évolutions biologiques particulières. L’Australie est notamment connue pour ses marsupiaux et ses monotrèmes ; les forêts de Nouvelle-Guinée et de Nouvelle-Zélande abritent également des espèces caractéristiques. Les récifs coralliens, dont la Grande Barrière de corail au large du nord-est de l’Australie, constituent des milieux marins majeurs. Ces écosystèmes sont sensibles au réchauffement de l’océan, à l’acidification, aux pollutions et aux espèces introduites. Les îles basses sont en outre exposées aux submersions et à l’érosion côtière, sans que toutes les îles présentent le même niveau de risque.'
+        ],
+        example: {
+          statement: 'Pourquoi une île volcanique élevée et un atoll corallien peuvent-ils présenter des paysages et des ressources en eau très différents ?',
+          calculation: 'On compare leur origine géologique, leur altitude, la présence éventuelle de sols volcaniques, leur relief et la manière dont l’eau douce peut être stockée ou s’écouler.',
+          answer: 'Une île volcanique peut posséder un relief élevé, des pentes et des sols issus des roches volcaniques. Un atoll est généralement bas et formé de matériaux coralliens ; ses réserves d’eau douce peuvent être limitées et particulièrement sensibles à l’intrusion d’eau salée.'
+        },
+        exercise: {
+          question: 'Quelle différence géologique existe entre une île volcanique et un atoll ?',
+          answer: 'Une île volcanique est construite par l’accumulation de matériaux émis par un volcan, tandis qu’un atoll est un ensemble récifal corallien généralement organisé en anneau autour d’un lagon.'
+        },
+        exercises: [
+          {
+            question: 'Quel océan organise géographiquement l’ensemble de l’Océanie ?',
+            answer: 'L’océan Pacifique.'
+          },
+          {
+            question: 'Comment appelle-t-on un anneau de récifs ou d’îlots coralliens entourant généralement un lagon ?',
+            answer: 'Un atoll.'
+          },
+          {
+            question: 'Quelles sont les trois grandes subdivisions insulaires souvent utilisées pour l’Océanie ?',
+            answer: 'La Mélanésie, la Micronésie et la Polynésie.'
+          },
+          {
+            question: 'Pourquoi de nombreuses espèces de l’Océanie sont-elles endémiques ?',
+            answer: 'L’isolement géographique de nombreuses îles a favorisé des évolutions distinctes et limité les échanges naturels entre certaines populations.'
+          }
+        ],
+        sources: [
+          { title: 'National Geographic — Australia and Oceania: Physical Geography', url: 'https://education.nationalgeographic.org/resource/oceania-physical-geography/' },
+          { title: 'National Geographic — Continent', url: 'https://education.nationalgeographic.org/resource/Continent/' },
+          { title: 'Larousse — Continent : définition et divisions traditionnelles', url: 'https://www.larousse.fr/encyclopedie/divers/continent/36618' }
+        ]
+      }
+    }
+  ]
+},
+
 ]
 
