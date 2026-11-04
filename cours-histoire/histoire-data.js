@@ -7667,6 +7667,8 @@ window.courseCatalog = [
 {
   id: 'grands-navigateurs',
   title: 'Les grands navigateurs de l’antiquité au moyen âge',
+sortYear: -3200,
+
   note: 'Huit chapitres sur des navigateurs et des traditions maritimes, des Phéniciens à Bartolomeu Dias. Les dates anciennes sont souvent approximatives, et plusieurs récits ne nous sont parvenus que par des auteurs postérieurs ou par des copies tardives.',
   chapters: [
     {
@@ -8016,7 +8018,179 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'grands-navigateurs-moyen-age',
+  sortYear: 476,
+  title: 'Les grands navigateurs du Moyen Âge',
+  note: 'Dix figures liées à la navigation et aux grandes traversées, classées selon leurs principales activités maritimes. Les dates de naissance et de mort sont parfois inconnues : les dates indiquées correspondent alors aux périodes d’activité attestées. Le Moyen Âge est ici entendu au sens conventionnel de la période allant de 476 à la fin du XVe siècle ; le voyage de Jean Cabot en 1497 marque une transition vers l’époque moderne. Les sociétés autochtones et leurs savoirs maritimes ne sont pas réduits à une « découverte » européenne.',
+  chapters: [
+    {
+      id: 'erik-le-rouge', sortYear: 982, title: 'Erik le Rouge',
+      field: 'Navigation nord-atlantique et colonisation du Groenland',
+      summary: 'Explorateur norrois associé à l’établissement des premiers établissements scandinaves durables au Groenland. Les récits médiévaux racontent son bannissement d’Islande et son exploration des côtes groenlandaises ; les détails biographiques proviennent en grande partie de sagas rédigées postérieurement.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Erik Thorvaldsson, surnommé Erik le Rouge, serait né vers 950 en Norvège et serait mort au Groenland au début du XIe siècle, probablement vers 1003. Ces dates restent approximatives.' },
+          { title: 'Voyage et installation', content: 'Vers 982, après son bannissement d’Islande, il explore les côtes du Groenland. Il revient ensuite en Islande et encourage une migration qui conduit à la fondation de colonies scandinaves à la fin du Xe siècle.' },
+          { title: 'Précautions historiques', content: 'Les sagas islandaises sont des sources littéraires rédigées plusieurs générations après les événements. Elles doivent être confrontées à l’archéologie, qui confirme la présence nordique au Groenland, sans valider chaque détail des récits.' }
+        ],
+        example: { statement: 'Pourquoi faut-il confronter les sagas aux vestiges archéologiques ?', calculation: 'Les sagas transmettent des traditions écrites tardives ; les sites archéologiques apportent des traces matérielles indépendantes.', answer: 'Le croisement des sources permet de distinguer les éléments confirmés des récits légendaires ou incertains.' },
+        exercise: { question: 'Quel territoire Erik le Rouge contribue-t-il à coloniser à la fin du Xe siècle ?', answer: 'Le Groenland.' }
+      },
+      exercises: ['Vers quelle période Erik explore-t-il le Groenland ?', 'Pourquoi les sagas ne sont-elles pas des témoignages contemporains ?', 'Quelle différence existe entre exploration et colonisation ?'],
+      sources: ['https://www.biographi.ca/en/bio/eirikr_thorvaldsson_1F.html', 'https://parcs.canada.ca/culture/designation/lieu-site/anse-aux-meadows']
+    },
+    {
+      id: 'leif-erikson', sortYear: 1000, title: 'Leif Erikson',
+      field: 'Traversée nord-atlantique vers l’Amérique du Nord',
+      summary: 'Navigateur norrois généralement associé à une expédition vers le Vinland autour de l’an 1000. Le site de L’Anse aux Meadows, à Terre-Neuve, confirme une présence nordique en Amérique du Nord à cette époque.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Leif Erikson serait né vers 970 et mort au début du XIe siècle. Les dates exactes de sa vie ne sont pas établies.' },
+          { title: 'Le voyage vers le Vinland', content: 'Les sagas racontent que Leif a navigué depuis le Groenland vers des terres situées plus à l’ouest, appelées Helluland, Markland et Vinland. L’identification précise de toutes ces régions reste discutée.' },
+          { title: 'Confirmation archéologique', content: 'Le site de L’Anse aux Meadows, à Terre-Neuve, atteste une implantation nordique autour de l’an 1000. Une étude fondée sur des traces de tempête solaire date une activité nordique du site de l’année 1021. Cela confirme une présence nordique, mais ne prouve pas à lui seul que Leif y était personnellement.' }
+        ],
+        example: { statement: 'Que prouve le site de L’Anse aux Meadows ?', calculation: 'Les bâtiments et objets nordiques établissent une présence scandinave en Amérique du Nord autour de l’an 1000.', answer: 'Il confirme une présence nordique, mais pas l’identité de chaque membre des expéditions.' },
+        exercise: { question: 'Quel site archéologique confirme une présence nordique en Amérique du Nord ?', answer: 'L’Anse aux Meadows, à Terre-Neuve.' }
+      },
+      exercises: ['Vers quelle année situe-t-on traditionnellement le voyage de Leif ?', 'Que signifie le terme Vinland dans les récits ?', 'Pourquoi l’archéologie ne permet-elle pas d’attribuer chaque voyage à Leif personnellement ?'],
+      sources: ['https://whc.unesco.org/en/list/4', 'https://science.nasa.gov/earth/earth-observatory/burst-of-new-evidence-for-viking-travels-149071/', 'https://parcs.canada.ca/culture/designation/lieu-site/anse-aux-meadows']
+    },
+    {
+      id: 'zheng-he', sortYear: 1405, title: 'Zheng He',
+      field: 'Grandes expéditions maritimes de la Chine des Ming',
+      summary: 'Amiral chinois de la dynastie Ming qui dirige sept grandes expéditions maritimes entre 1405 et 1433, dans l’océan Indien et jusqu’aux côtes d’Afrique orientale.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Zheng He naît en 1371 dans la province du Yunnan et meurt en 1433 ou peu après, selon les sources. Il entre au service de la cour des Ming et reçoit le commandement des expéditions impériales.' },
+          { title: 'Les sept voyages', content: 'Entre 1405 et 1433, il dirige sept expéditions vers l’Asie du Sud-Est, l’Inde, le golfe Persique et l’Afrique orientale. Ces voyages associent diplomatie, commerce, démonstration de puissance et collecte de produits.' },
+          { title: 'Une navigation organisée', content: 'Les flottes utilisent des connaissances nautiques, des cartes, des observations astronomiques et une organisation logistique considérable. Les récits populaires sur des dimensions extraordinaires de certains navires doivent être traités avec prudence.' }
+        ],
+        example: { statement: 'Combien de grandes expéditions Zheng He dirige-t-il ?', calculation: 'Les campagnes sont datées de 1405 à 1433 et sont traditionnellement comptées au nombre de sept.', answer: 'Sept expéditions.' },
+        exercise: { question: 'Entre quelles années se déroulent les sept expéditions de Zheng He ?', answer: 'Entre 1405 et 1433.' }
+      },
+      exercises: ['Quelle dynastie gouverne la Chine lors des voyages ?', 'Cite deux régions atteintes par les flottes.', 'Pourquoi ces expéditions sont-elles aussi diplomatiques que maritimes ?'],
+      sources: ['https://www.jesus.cam.ac.uk/articles/what-we-know-and-what-we-dont-know-about-zheng-hes-voyages', 'https://www.cambridge.org/core/journals/journal-of-navigation/article/abs/zheng-hes-expeditions-to-the-western-ocean-and-his-navigation-technology/CFE8E51B4A917D2546F556B883F08C45']
+    },
+    {
+      id: 'gil-eanes', sortYear: 1434, title: 'Gil Eanes',
+      field: 'Navigation portugaise le long des côtes africaines',
+      summary: 'Navigateur portugais connu pour avoir franchi le cap Bojador en 1434, étape importante dans la progression des expéditions portugaises le long de la côte africaine.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Gil Eanes est un navigateur portugais originaire de Lagos. Les sources biographiques disponibles renseignent surtout ses voyages ; ses dates de naissance et de mort ne sont pas solidement établies.' },
+          { title: 'Le franchissement du cap Bojador', content: 'Après une première tentative infructueuse en 1433, il franchit le cap Bojador en 1434. Il participe ensuite à une nouvelle navigation vers le sud en 1435.' },
+          { title: 'Importance historique', content: 'Le franchissement du cap contribue à dépasser une limite géographique et psychologique des navigations portugaises. Il ouvre la voie à d’autres reconnaissances côtières, sans constituer à lui seul la découverte de l’ensemble de l’Afrique.' }
+        ],
+        example: { statement: 'Quel événement rend Gil Eanes célèbre ?', calculation: 'La date traditionnellement retenue pour le franchissement du cap Bojador est 1434.', answer: 'Il franchit le cap Bojador en 1434.' },
+        exercise: { question: 'Quel cap Gil Eanes franchit-il en 1434 ?', answer: 'Le cap Bojador, sur la côte atlantique du Sahara.' }
+      },
+      exercises: ['En quelle année franchit-il le cap Bojador ?', 'Pourquoi ce cap était-il considéré comme difficile à dépasser ?', 'Quel rôle joue ce voyage dans l’expansion maritime portugaise ?'],
+      sources: ['https://eve.fcsh.unl.pt/en/people/gil-eanes', 'https://devp.fcsh.unl.pt/entradas/eanes-gil']
+    },
+    {
+      id: 'nuno-tristao', sortYear: 1441, title: 'Nuno Tristão',
+      field: 'Exploration portugaise de l’Atlantique africain',
+      summary: 'Navigateur portugais du XVe siècle qui atteint le cap Blanc en 1441 et poursuit les reconnaissances de la côte africaine vers le sud.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Nuno Tristão est un navigateur portugais actif dans les années 1440. Les informations sur sa naissance et sa jeunesse sont limitées.' },
+          { title: 'Expéditions', content: 'Il atteint le cap Blanc en 1441, puis l’embouchure du Sénégal en 1444 selon les chronologies historiques courantes. Il meurt lors d’une expédition sur la côte ouest-africaine, généralement située en 1446 ou 1447 selon les sources.' },
+          { title: 'Contexte', content: 'Ses voyages s’inscrivent dans les entreprises maritimes portugaises soutenues par le prince Henri. Ils participent à la reconnaissance de la côte et au développement de réseaux commerciaux, dans un contexte qui comprend aussi la traite esclavagiste.' }
+        ],
+        example: { statement: 'Quelle étape géographique Nuno Tristão atteint-il en 1441 ?', calculation: 'Les notices historiques associent son expédition de 1441 au cap Blanc.', answer: 'Le cap Blanc, sur la côte de l’actuelle Mauritanie.' },
+        exercise: { question: 'Quel navigateur portugais atteint le cap Blanc en 1441 ?', answer: 'Nuno Tristão.' }
+      },
+      exercises: ['Quel cap atteint-il en 1441 ?', 'Quelle côte explore-t-il ?', 'Pourquoi faut-il signaler l’incertitude sur la date de sa mort ?'],
+      sources: ['https://www.larousse.fr/encyclopedie/personnage/Nuno_Trist%C3%A3o/147481']
+    },
+    {
+      id: 'alvise-cadamosto', sortYear: 1455, title: 'Alvise Cadamosto',
+      field: 'Navigation vénitienne et reconnaissance des côtes du Sénégal et de la Gambie',
+      summary: 'Navigateur et marchand vénitien qui effectue des voyages sur la côte atlantique de l’Afrique en 1455 et 1456 au service du prince Henri du Portugal.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Alvise da Ca’ da Mosto, dit Cadamosto, naît à Venise vers 1429 ou 1432 selon les sources et meurt en 1488. Il est à la fois marchand et navigateur.' },
+          { title: 'Voyages africains', content: 'En 1455 et 1456, il navigue le long des côtes du Sénégal et de la Gambie. Il rapporte des descriptions des régions visitées et des échanges qu’il observe.' },
+          { title: 'Un témoignage à contextualiser', content: 'Ses récits sont précieux pour l’histoire des contacts entre Européens et sociétés ouest-africaines, mais ils reflètent le point de vue d’un marchand européen engagé dans l’expansion portugaise.' }
+        ],
+        example: { statement: 'Quelles régions Cadamosto visite-t-il lors de ses voyages de 1455-1456 ?', calculation: 'Les sources biographiques mentionnent les côtes du Sénégal et de la Gambie.', answer: 'Les côtes du Sénégal et de la Gambie.' },
+        exercise: { question: 'Au service de quel prince Cadamosto navigue-t-il ?', answer: 'Du prince Henri de Portugal, dit Henri le Navigateur.' }
+      },
+      exercises: ['Quelle est l’origine de Cadamosto ?', 'Quelles années correspondent à ses voyages africains ?', 'Pourquoi faut-il replacer ses récits dans leur contexte commercial et politique ?'],
+      sources: ['https://www.treccani.it/enciclopedia/alvise-da-mosto_%28Dizionario-Biografico%29/', 'https://www.larousse.fr/encyclopedie/personnage/Alvise_Cada_Mosto/110751']
+    },
+    {
+      id: 'ahmad-ibn-majid', sortYear: 1462, title: 'Ahmad ibn Mājid',
+      field: 'Science nautique et navigation dans l’océan Indien',
+      summary: 'Pilote et auteur arabe du XVe siècle, réputé pour ses traités de navigation qui décrivent les routes, les ports, les repères célestes et les pratiques maritimes de l’océan Indien.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Ahmad ibn Mājid est actif au cours de la seconde moitié du XVe siècle. La Bibliothèque du Congrès situe son activité attestée entre 1462 et 1498 ; ses dates exactes de naissance et de mort ne sont pas connues.' },
+          { title: 'Ses écrits nautiques', content: 'Il rédige plusieurs ouvrages consacrés à la navigation. Le Kitāb al-Fawā’id, compilé autour de 1490, rassemble des traités sur les routes maritimes, les ports, les repères astronomiques et les techniques de navigation.' },
+          { title: 'La question de Vasco de Gama', content: 'Une tradition tardive affirme qu’Ibn Mājid aurait piloté Vasco de Gama vers l’Inde en 1498. Cette affirmation n’est pas solidement démontrée et ne doit pas être présentée comme un fait établi.' }
+        ],
+        example: { statement: 'Pourquoi le Kitāb al-Fawā’id est-il important ?', calculation: 'Le manuscrit rassemble des textes pratiques sur les routes, les ports et les méthodes de navigation dans l’océan Indien.', answer: 'Il témoigne d’un savoir nautique spécialisé développé dans les sociétés de l’océan Indien.' },
+        exercise: { question: 'Quel est le domaine principal des ouvrages d’Ahmad ibn Mājid ?', answer: 'La navigation maritime, notamment dans l’océan Indien.' }
+      },
+      exercises: ['Quelle période d’activité la Bibliothèque du Congrès lui attribue-t-elle ?', 'Que contient le Kitāb al-Fawā’id ?', 'Pourquoi faut-il nuancer le récit de son rôle auprès de Vasco de Gama ?'],
+      sources: ['https://www.loc.gov/item/2008401696/', 'https://www.ion.org/publications/abstract.cfm?articleID=100965', 'https://doi.org/10.1080/13639811.2024.2373582']
+    },
+    {
+      id: 'diogo-cao', sortYear: 1482, title: 'Diogo Cão',
+      field: 'Exploration portugaise de l’Afrique centrale et australe',
+      summary: 'Navigateur portugais qui conduit deux expéditions le long de la côte sud-ouest de l’Afrique entre 1482 et 1486 et atteint l’embouchure du fleuve Congo.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Diogo Cão est un navigateur portugais du XVe siècle. Ses dates de naissance et de mort ne sont pas établies avec certitude.' },
+          { title: 'Les expéditions', content: 'Entre 1482 et 1486, il mène deux voyages de reconnaissance. Il atteint l’embouchure du fleuve Congo, remonte une partie du fleuve et poursuit vers le sud le long des côtes de l’actuelle Angola et de la Namibie.' },
+          { title: 'Les bornes de pierre', content: 'Il fait ériger des padrões, colonnes de pierre portant des inscriptions et symboles portugais, pour marquer les étapes de l’expédition et les revendications de la couronne portugaise.' }
+        ],
+        example: { statement: 'Quel fleuve Diogo Cão atteint-il lors de ses expéditions ?', calculation: 'Les sources de la marine portugaise situent son arrivée à l’embouchure du fleuve Zaire, aujourd’hui appelé Congo.', answer: 'Le fleuve Congo, appelé Zaire dans les sources portugaises de l’époque.' },
+        exercise: { question: 'Entre quelles années Diogo Cão effectue-t-il ses deux expéditions principales ?', answer: 'Entre 1482 et 1486.' }
+      },
+      exercises: ['Quel fleuve atteint-il ?', 'Que sont les padrões ?', 'Pourquoi ses voyages sont-ils importants pour les expéditions portugaises suivantes ?'],
+      sources: ['https://www.marinha.pt/pt/a-marinha/historia/herois', 'https://exploration.marinersmuseum.org/subject/bartolomeu-dias/']
+    },
+    {
+      id: 'bartolomeu-dias', sortYear: 1487, title: 'Bartolomeu Dias',
+      field: 'Passage maritime autour de l’extrémité sud de l’Afrique',
+      summary: 'Navigateur portugais dont l’expédition de 1487-1488 franchit l’extrémité sud de l’Afrique et démontre la possibilité de rejoindre l’océan Indien par cette voie.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Bartolomeu Dias naît vers 1450 au Portugal et meurt en mer en 1500. Les détails de ses premières années sont peu documentés.' },
+          { title: 'L’expédition de 1487-1488', content: 'Parti de Lisbonne en 1487, il contourne l’extrémité sud de l’Afrique sans nécessairement voir le cap au moment où il le franchit. Il atteint ensuite des régions de la côte sud-est africaine avant de faire demi-tour sous la pression de son équipage.' },
+          { title: 'Conséquences', content: 'Son voyage établit la possibilité d’une route maritime de l’Atlantique vers l’océan Indien. Le cap, d’abord nommé cap des Tempêtes dans la tradition portugaise, reçoit ensuite le nom de cap de Bonne-Espérance.' }
+        ],
+        example: { statement: 'Quelle conséquence majeure a l’expédition de Dias ?', calculation: 'Le contournement de l’extrémité sud de l’Afrique établit une liaison maritime possible entre l’Atlantique et l’océan Indien.', answer: 'Elle ouvre la voie aux voyages portugais vers l’océan Indien.' },
+        exercise: { question: 'En quelle période Bartolomeu Dias franchit-il l’extrémité sud de l’Afrique ?', answer: 'Lors de son expédition de 1487-1488.' }
+      },
+      exercises: ['Quel cap est associé à son expédition ?', 'Pourquoi l’équipage décide-t-il de faire demi-tour ?', 'En quoi ce voyage prépare-t-il celui de Vasco de Gama ?'],
+      sources: ['https://www.marinha.pt/en/a-marinha/historia/servir-portugal/Pages/default.aspx', 'https://www.larousse.fr/encyclopedie/personnage/Bartolomeu_Dias/116426', 'https://exploration.marinersmuseum.org/subject/bartolomeu-dias/']
+    },
+    {
+      id: 'jean-cabot', sortYear: 1497, title: 'Jean Cabot',
+      field: 'Traversée de l’Atlantique Nord au service de l’Angleterre',
+      summary: 'Navigateur d’origine italienne qui conduit en 1497 une expédition partie de Bristol et atteint une terre d’Amérique du Nord, généralement identifiée à Terre-Neuve ou à une région voisine.',
+      lesson: {
+        sections: [
+          { title: 'Repères biographiques', content: 'Giovanni Caboto, connu sous le nom de Jean Cabot, serait né vers 1450 ; son lieu et sa date de naissance ne sont pas certains. Il disparaît des sources après l’expédition de 1498.' },
+          { title: 'Le voyage de 1497', content: 'Avec l’appui du roi Henri VII d’Angleterre, Cabot quitte Bristol en mai 1497 à bord du Matthew. Il atteint une terre d’Amérique du Nord en juin. L’emplacement exact du premier débarquement demeure discuté.' },
+          { title: 'Une interprétation à nuancer', content: 'Le voyage établit un contact documenté entre une expédition européenne et les côtes nord-atlantiques de l’Amérique, déjà habitées par des peuples autochtones. Il ne s’agit donc pas de la découverte d’un continent inhabité.' }
+        ],
+        example: { statement: 'Pourquoi faut-il éviter de dire que Jean Cabot découvre une terre inhabitée ?', calculation: 'Les régions d’Amérique du Nord qu’il atteint sont déjà habitées par des peuples autochtones depuis des millénaires.', answer: 'Son voyage est une arrivée européenne documentée, pas la découverte d’un territoire sans habitants.' },
+        exercise: { question: 'De quel port Jean Cabot part-il pour son voyage de 1497 ?', answer: 'De Bristol, en Angleterre.' }
+      },
+      exercises: ['En quelle année a lieu le voyage de Cabot ?', 'Quel roi soutient son expédition ?', 'Pourquoi la localisation exacte du débarquement reste-t-elle discutée ?'],
+      sources: ['https://www.biographi.ca/en/bio/cabot_john_1E.html', 'https://www.nationalarchives.gov.uk/education/resources/significant-people-collection/john-cabot/']
+           
+      }
+    }
+  ]
+},
+
 ]
+
 
 
 
