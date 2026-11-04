@@ -8020,418 +8020,427 @@ sortYear: -3200,
 
 {
   id: 'grands-navigateurs-moyen-age',
-  sortYear: 476,
-  title: 'Les grands navigateurs du Moyen Âge',
-  note: 'Dix chapitres consacrés aux navigateurs et aux grandes expéditions maritimes du Moyen Âge, des traversées nord-atlantiques des Vikings aux voyages transatlantiques de la fin du XVe siècle. Les dates de naissance et de mort sont parfois inconnues : les dates indiquées correspondent alors aux périodes d’activité attestées. Les voyages européens ne sont pas présentés comme des découvertes de territoires inhabités : de nombreuses régions visitées étaient déjà peuplées et parcourues par des sociétés possédant leurs propres savoirs maritimes.',
+  sortYear: 1000,
+  title: 'Les grands navigateurs du moyen-age',
+  note: 'Dix chapitres classés chronologiquement selon la date de l’expédition ou du voyage marquant. La sélection couvre le Moyen Âge et se prolonge jusqu’aux débuts de l’époque moderne. Marco Polo et Ibn Battuta sont présentés comme voyageurs, tandis que les autres personnages sont associés à des expéditions maritimes. Les dates incertaines sont signalées par vers.',
   chapters: [
     {
-      id: 'erik-le-rouge',
-      title: 'Erik le Rouge et la colonisation du Groenland',
-      field: 'Navigation · Atlantique Nord · Vers 982',
-      summary: 'Découvrir le rôle d’Erik le Rouge dans l’exploration du Groenland et l’installation de communautés scandinaves à la fin du Xe siècle.',
+      id: 'leif-erikson-vinland-vers-1000',
+      title: 'Leif Erikson et les voyages vikings vers le Vinland',
+      field: 'Exploration nordique · Vers 1000 · Leif Erikson : vers 970-vers 1020',
+      summary: 'Étudier les traversées nord-atlantiques des Scandinaves, les établissements du Groenland et les preuves archéologiques de leur présence à Terre-Neuve.',
       lesson: {
         sections: [
-          'Erik le Rouge, ou Erik Thorvaldsson, est un explorateur norrois né probablement vers 950 en Norvège. Il meurt au Groenland au début du XIe siècle, mais les dates précises de sa naissance et de sa mort ne sont pas établies avec certitude.',
-          'Vers 982, après avoir été banni d’Islande, Erik explore les côtes du Groenland. Il revient ensuite en Islande et encourage d’autres Scandinaves à s’installer sur ce territoire. Une colonisation durable commence à la fin du Xe siècle.',
-          'Les établissements scandinaves se développent principalement dans le sud-ouest du Groenland. Les habitants pratiquent notamment l’élevage et entretiennent des relations avec l’Europe. Les récits concernant Erik proviennent en grande partie de sagas rédigées plusieurs générations après les événements : ils doivent être confrontés aux données archéologiques.'
+          'Leif Erikson, également appelé Leifr Eiríksson, est un explorateur nordique associé aux voyages qui conduisirent des marins scandinaves du Groenland vers des terres situées à l’ouest. Sa naissance est généralement placée vers 970 et sa mort vers 1020, mais les sources médiévales ne permettent pas d’établir une biographie complète ni une chronologie précise de toutes ses étapes. Les récits les plus connus sont les sagas islandaises, rédigées plusieurs générations après les événements : elles sont précieuses pour étudier la mémoire des voyages, mais doivent être confrontées aux données archéologiques.',
+          'Vers l’an 1000, des navigateurs nordiques atteignirent une région appelée Vinland dans les traditions écrites. Leurs traversées s’inscrivaient dans un réseau maritime déjà établi entre la Norvège, l’Islande et le Groenland. Les navires vikings, notamment les bateaux à coque bordée à clin, étaient adaptés aux navigations côtières et aux traversées de l’Atlantique Nord. Les équipages devaient tenir compte des vents, des courants, des saisons, de la visibilité et de la disponibilité de lieux d’hivernage. Il serait toutefois excessif d’attribuer avec certitude à Leif seul chaque étape des explorations nordiques en Amérique.',
+          'Le site archéologique de L’Anse aux Meadows, à Terre-Neuve, constitue une preuve matérielle majeure de la présence nordique en Amérique du Nord autour de l’an 1000. On y a identifié des bâtiments à charpente de bois et couverture de tourbe, des ateliers et des traces de travail du fer. Le site confirme une présence scandinave, mais ne permet pas à lui seul d’identifier chaque visiteur ni de démontrer que Leif Erikson en fut personnellement le fondateur. Il est donc plus rigoureux de parler d’une présence nordique attestée et de relier prudemment celle-ci aux récits du Vinland.',
+          'Ces voyages ne constituent pas une découverte de l’Amérique au sens absolu : le continent était habité depuis des millénaires par des peuples autochtones. Ils représentent plutôt l’une des premières présences européennes documentées archéologiquement en Amérique du Nord. Cette distinction évite de confondre l’arrivée de navigateurs venus d’Europe avec l’histoire beaucoup plus ancienne des sociétés américaines.'
         ],
         example: {
-          statement: 'Vers quelle année Erik le Rouge explore-t-il le Groenland ?',
-          calculation: 'Les chronologies historiques situent son exploration autour de 982.',
-          answer: 'Vers 982. Cette date est une estimation historique et non une date exacte attestée par un document contemporain.'
+          statement: 'Un établissement nordique de Terre-Neuve est daté autour de l’an 1000. Peut-on en conclure que Leif Erikson a personnellement construit tous les bâtiments ?',
+          calculation: 'Il faut distinguer la datation d’un site archéologique de l’identification individuelle de ses occupants. Les vestiges datent une présence nordique, pas l’identité de chaque personne.',
+          answer: 'Non. L’Anse aux Meadows atteste une présence nordique autour de l’an 1000, mais ne prouve pas que Leif Erikson ait personnellement construit ou dirigé l’ensemble du site.'
         },
         exercise: {
-          question: 'Quel territoire Erik le Rouge contribue-t-il à coloniser à la fin du Xe siècle ?',
-          answer: 'Le Groenland.'
+          question: 'Quelle est la différence entre les récits des sagas et les preuves archéologiques de L’Anse aux Meadows ?',
+          answer: 'Les sagas transmettent des récits littéraires médiévaux sur les voyages du Vinland, tandis que les vestiges de L’Anse aux Meadows fournissent des preuves matérielles d’une présence nordique en Amérique du Nord.'
         },
         exercises: [
           {
-            question: 'Vers quelle année Erik le Rouge explore-t-il le Groenland ?',
-            answer: 'Vers 982.'
+            question: 'Vers quelle période les voyages nordiques associés au Vinland sont-ils situés ?',
+            answer: 'Autour de l’an 1000, avec une datation archéologique précise de certaines activités nordiques à L’Anse aux Meadows en 1021.'
           },
           {
-            question: 'Pourquoi les sagas doivent-elles être étudiées avec prudence ?',
-            answer: 'Parce qu’elles ont été rédigées plusieurs générations après les événements et peuvent mêler traditions historiques et éléments légendaires.'
+            question: 'Quel site archéologique confirme une présence nordique en Amérique du Nord ?',
+            answer: 'L’Anse aux Meadows, à Terre-Neuve, au Canada.'
           },
           {
-            question: 'Quelle différence existe entre explorer un territoire et le coloniser ?',
-            answer: 'Explorer consiste à parcourir et reconnaître un territoire ; coloniser consiste à y établir durablement une communauté.'
+            question: 'Pourquoi faut-il éviter de présenter Leif Erikson comme le découvreur d’un continent inhabité ?',
+            answer: 'Parce que l’Amérique était habitée par des peuples autochtones depuis des millénaires avant l’arrivée des Scandinaves.'
           }
         ],
         sources: [
-          { title: 'Encyclopedia of Newfoundland and Labrador — Erik the Red', url: 'https://www.heritage.nf.ca/articles/exploration/erik-red.php' },
-          { title: 'UNESCO — L’Anse aux Meadows', url: 'https://whc.unesco.org/en/list/4' }
+          { title: 'UNESCO — Lieu historique national de L’Anse aux Meadows', url: 'https://whc.unesco.org/fr/list/4/' },
+          { title: 'Parcs Canada — Lieu historique national de L’Anse aux Meadows', url: 'https://parcs.canada.ca/culture/designation/lieu-site/anse-aux-meadows' },
+          { title: 'NASA — New Evidence for Viking Travels', url: 'https://science.nasa.gov/earth/earth-observatory/burst-of-new-evidence-for-viking-travels-149071/' }
         ]
       }
     },
     {
-      id: 'leif-erikson',
-      title: 'Leif Erikson et les voyages vers le Vinland',
-      field: 'Navigation · Atlantique Nord · Vers l’an 1000',
-      summary: 'Comprendre les voyages nordiques vers l’Amérique du Nord et les preuves archéologiques d’une présence scandinave à Terre-Neuve.',
+      id: 'marco-polo-voyage-asie-1271',
+      title: 'Marco Polo : de Venise à la Chine mongole',
+      field: 'Voyages médiévaux · Départ en 1271 · Marco Polo : 1254-1324',
+      summary: 'Comprendre le voyage de Marco Polo avec son père et son oncle, son séjour dans l’empire mongol et l’importance historique de son récit.',
       lesson: {
         sections: [
-          'Leif Erikson est un navigateur norrois, fils d’Erik le Rouge. Il serait né vers 970 et serait mort au début du XIe siècle. Les dates exactes de sa vie ne sont pas connues.',
-          'Selon les sagas islandaises, Leif navigue depuis le Groenland vers des terres situées plus à l’ouest, désignées sous les noms de Helluland, Markland et Vinland. Ces récits sont associés aux voyages nordiques vers l’Amérique du Nord autour de l’an 1000.',
-          'Le site de L’Anse aux Meadows, à Terre-Neuve, apporte une preuve archéologique importante de la présence scandinave en Amérique du Nord autour de l’an 1000. Une étude scientifique a notamment établi qu’une activité nordique y avait eu lieu en 1021. Cette découverte confirme une présence scandinave, mais ne prouve pas que Leif Erikson se trouvait personnellement sur le site à cette date.'
+          'Marco Polo naît en 1254 dans une famille de marchands vénitiens et meurt à Venise le 8 janvier 1324. Il ne doit pas être décrit comme un navigateur exclusivement maritime : son itinéraire combine des déplacements terrestres à travers l’Asie et des traversées maritimes lors du voyage de retour. Son expérience illustre les réseaux commerciaux et diplomatiques qui reliaient la Méditerranée, l’Asie centrale et la Chine sous la domination mongole.',
+          'À la fin de l’année 1271, Marco part vers l’Orient avec son père Niccolò et son oncle Maffeo. Les deux hommes avaient déjà effectué un voyage en Asie. Le groupe rejoint finalement la cour de Kubilaï Khan, souverain mongol de Chine, en 1275. Marco séjourne plusieurs années dans les territoires gouvernés par les Mongols. Son récit évoque les villes, les systèmes de communication, les échanges, les monnaies, les productions et les pratiques politiques qu’il dit avoir observés. Il faut cependant éviter de transformer chaque épisode du livre en témoignage vérifié indépendamment.',
+          'En 1291, les Polo quittent la Chine par voie maritime depuis le port de Zaytun, aujourd’hui identifié à Quanzhou, et traversent des espaces de l’océan Indien avant de rejoindre le golfe Persique et de poursuivre vers l’ouest. Ils sont de retour à Venise en 1295. Cette partie maritime montre l’importance des routes de l’océan Indien, fréquentées par des marins et des marchands de nombreuses régions bien avant l’arrivée des grandes flottes européennes du XVIe siècle.',
+          'En 1298, Marco Polo est fait prisonnier lors d’un conflit entre Gênes et Venise. En captivité, il dicte le récit de ses voyages à Rustichello de Pise. L’ouvrage, transmis sous plusieurs titres et dans différentes versions manuscrites, a exercé une influence durable sur la représentation européenne de l’Asie. Il demeure une source historique importante, mais sa transmission complexe, les conventions littéraires du Moyen Âge et les débats sur certains passages imposent une lecture critique.'
         ],
         example: {
-          statement: 'Que démontre le site archéologique de L’Anse aux Meadows ?',
-          calculation: 'Les bâtiments et les objets découverts sur le site témoignent d’une présence nordique en Amérique du Nord autour de l’an 1000. Une datation scientifique établit une activité en 1021.',
-          answer: 'Il confirme une présence scandinave à Terre-Neuve autour de l’an 1000, sans permettre d’attribuer chaque activité à Leif Erikson.'
+          statement: 'Marco Polo quitte l’Orient en 1291 et revient à Venise en 1295. Quelle durée approximative sépare ces deux repères ?',
+          calculation: '1295 - 1291 = 4 années. Ce calcul donne un intervalle entre les repères mentionnés, sans détailler les escales ni les durées exactes de navigation.',
+          answer: 'Environ 4 années séparent le départ maritime de 1291 et le retour à Venise en 1295.'
         },
         exercise: {
-          question: 'Quel site archéologique confirme la présence nordique en Amérique du Nord autour de l’an 1000 ?',
-          answer: 'L’Anse aux Meadows, à Terre-Neuve.'
+          question: 'Pourquoi Marco Polo ne doit-il pas être présenté uniquement comme un navigateur ?',
+          answer: 'Parce que son voyage comprend de longs parcours terrestres en Asie et une partie maritime au retour ; il est avant tout un marchand et un voyageur.'
         },
         exercises: [
           {
-            question: 'Vers quelle période situe-t-on traditionnellement le voyage de Leif Erikson vers le Vinland ?',
-            answer: 'Autour de l’an 1000.'
+            question: 'En quelle année Marco Polo part-il vers l’Asie avec son père et son oncle ?',
+            answer: 'En 1271.'
           },
           {
-            question: 'Dans quelle région se trouve le site de L’Anse aux Meadows ?',
-            answer: 'À Terre-Neuve, dans l’actuel Canada.'
+            question: 'Quel souverain mongol règne sur la Chine durant le séjour de Marco Polo ?',
+            answer: 'Kubilaï Khan.'
           },
           {
-            question: 'Pourquoi faut-il distinguer les récits des sagas et les preuves archéologiques ?',
-            answer: 'Les sagas sont des récits rédigés tardivement, tandis que l’archéologie fournit des vestiges matériels permettant de confirmer certaines présences et activités.'
+            question: 'Qui met par écrit le récit de Marco Polo pendant sa captivité ?',
+            answer: 'Rustichello de Pise, à partir du récit dicté par Marco Polo.'
           }
         ],
         sources: [
-          { title: 'UNESCO — L’Anse aux Meadows', url: 'https://whc.unesco.org/en/list/4' },
-          { title: 'NASA — Evidence for Viking Travels in 1021', url: 'https://science.nasa.gov/earth/earth-observatory/burst-of-new-evidence-for-viking-travels-149071/' },
-          { title: 'Parks Canada — L’Anse aux Meadows', url: 'https://parcs.canada.ca/culture/designation/lieu-site/anse-aux-meadows' }
+          { title: 'Encyclopaedia Iranica — Polo, Marco', url: 'https://www.iranicaonline.org/articles/polo-marco/' },
+          { title: 'Bloomsbury — The Travels of Marco Polo', url: 'https://media.bloomsbury.com/rep/files/Primary%20Source%200.1%20-%20Polo.pdf' }
         ]
       }
     },
     {
-      id: 'zheng-he',
-      title: 'Zheng He et les grandes expéditions chinoises',
-      field: 'Navigation · Océan Indien · 1405 à 1433',
-      summary: 'Étudier les sept expéditions maritimes conduites par l’amiral chinois Zheng He sous la dynastie Ming.',
+      id: 'ibn-battuta-voyages-1325',
+      title: 'Ibn Battuta : un voyageur à travers l’Afrique et l’Asie',
+      field: 'Voyages médiévaux · Départ en 1325 · Ibn Battuta : 1304-1368 ou 1369',
+      summary: 'Découvrir les déplacements d’Ibn Battuta, les réseaux de pèlerinage et de commerce du monde afro-eurasien et les limites de son récit.',
       lesson: {
         sections: [
-          'Zheng He naît en 1371 dans la province du Yunnan, en Chine. Il entre au service de la cour impériale des Ming et devient un important commandant de flotte. Il meurt en 1433 ou peu après, probablement à la suite de sa dernière expédition.',
-          'Entre 1405 et 1433, Zheng He dirige sept grandes expéditions maritimes. Les flottes traversent l’Asie du Sud-Est et l’océan Indien, atteignent l’Inde, le golfe Persique et plusieurs régions de la côte orientale de l’Afrique.',
-          'Ces voyages ont des objectifs diplomatiques, commerciaux et politiques. Ils permettent à la Chine des Ming de développer ses relations avec de nombreux États et ports. Les flottes s’appuient sur une organisation importante, des connaissances nautiques et des techniques de navigation adaptées aux longues traversées.'
+          'Ibn Battuta naît à Tanger, au Maroc, en 1304 et meurt en 1368 ou 1369. Juriste musulman de formation, il entreprend en 1325 un pèlerinage vers La Mecque. Ce déplacement initial devient le point de départ d’une longue succession de voyages en Afrique du Nord, au Moyen-Orient, en Afrique orientale, en Asie centrale et méridionale, ainsi que dans certaines régions de l’océan Indien. Comme Marco Polo, il est plus exact de le qualifier de grand voyageur que de navigateur au sens professionnel strict.',
+          'Ses itinéraires s’appuient sur des réseaux déjà actifs : routes caravanières, ports, voies fluviales, lieux de pèlerinage, cours princières et communautés de marchands ou de lettrés. Les déplacements maritimes dans l’océan Indien s’inscrivent dans un espace commercial ancien où circulent des navires, des marchandises, des langues et des traditions religieuses. Les moussons jouent un rôle essentiel dans les calendriers de navigation, car les vents saisonniers conditionnent les traversées entre les côtes d’Afrique orientale, l’Arabie, l’Inde et l’Asie du Sud-Est.',
+          'Après plusieurs décennies de déplacements, Ibn Battuta revient au Maroc. À la demande du pouvoir mérinide, il dicte le récit de ses voyages à Ibn Juzayy. Ce texte est connu sous le nom de Rihla. Il fournit des renseignements précieux sur les sociétés du XIVe siècle, les pratiques religieuses, les autorités politiques, les échanges et les conditions de déplacement. Toutefois, les chercheurs relèvent des incohérences chronologiques et des passages dont l’itinéraire ou l’origine des informations restent discutés. Il faut donc distinguer les éléments corroborés des affirmations difficiles à vérifier.',
+          'L’intérêt historique d’Ibn Battuta tient à l’étendue de son horizon géographique et à la variété des sociétés qu’il décrit. Son parcours montre que le monde médiéval était relié par des circulations complexes, bien avant les voyages océaniques européens de la fin du XVe siècle. Il rappelle aussi que les grands voyageurs médiévaux ne venaient pas uniquement d’Europe : les traditions de mobilité et de connaissance géographique étaient multiples.'
         ],
         example: {
-          statement: 'Combien de grandes expéditions Zheng He dirige-t-il entre 1405 et 1433 ?',
-          calculation: 'Les chronologies historiques recensent sept expéditions maritimes majeures pendant cette période.',
-          answer: 'Sept expéditions, conduites entre 1405 et 1433.'
+          statement: 'Ibn Battuta commence son pèlerinage en 1325 et revient au Maroc en 1353 après ses grands voyages. Quel intervalle sépare ces deux dates ?',
+          calculation: '1353 - 1325 = 28 années. Cette différence arithmétique situe la durée entre les deux repères, même si les étapes et les séjours se succèdent de façon complexe.',
+          answer: 'L’intervalle est d’environ 28 années, de 1325 à 1353.'
         },
         exercise: {
-          question: 'Quelle dynastie chinoise organise les expéditions de Zheng He ?',
-          answer: 'La dynastie Ming.'
+          question: 'Quels réseaux ont rendu possibles les voyages d’Ibn Battuta ?',
+          answer: 'Les routes de pèlerinage et de commerce, les caravanes, les ports de l’océan Indien, les voies maritimes saisonnières et les réseaux d’accueil religieux ou politiques.'
         },
         exercises: [
           {
-            question: 'Entre quelles années se déroulent les sept grandes expéditions de Zheng He ?',
-            answer: 'Entre 1405 et 1433.'
+            question: 'Dans quelle ville Ibn Battuta est-il né ?',
+            answer: 'À Tanger, au Maroc, en 1304.'
           },
           {
-            question: 'Cite deux régions atteintes par les flottes de Zheng He.',
-            answer: 'L’Inde et la côte orientale de l’Afrique, par exemple.'
+            question: 'Quel événement marque le départ de son grand voyage en 1325 ?',
+            answer: 'Son pèlerinage vers La Mecque.'
           },
           {
-            question: 'Les voyages de Zheng He ont-ils uniquement un objectif commercial ?',
-            answer: 'Non. Ils ont aussi des objectifs diplomatiques et politiques.'
+            question: 'Comment s’appelle le récit de ses voyages ?',
+            answer: 'La Rihla, dictée à Ibn Juzayy.'
           }
         ],
         sources: [
-          { title: 'Columbia University — The Ming Voyages', url: 'https://afe.easia.columbia.edu/special/china_1000ce_mingvoyages.htm' },
-          { title: 'Jesus College, University of Cambridge — What We Know and What We Don’t Know About Zheng He’s Voyages', url: 'https://www.jesus.cam.ac.uk/articles/what-we-know-and-what-we-dont-know-about-zheng-hes-voyages' },
-          { title: 'The Journal of Navigation — Zheng He’s Expeditions and Navigation Technology', url: 'https://www.cambridge.org/core/journals/journal-of-navigation/article/abs/zheng-hes-expeditions-to-the-western-ocean-and-his-navigation-technology/CFE8E51B4A917D2546F556B883F08C45' }
+          { title: 'Oxford Research Encyclopedia — Ibn Battuta in Africa and Asia', url: 'https://academic.oup.com/edited-volume/61799/chapter-abstract/546321850' },
+          { title: 'Encyclopaedia Iranica — Ebn Baṭṭūṭa', url: 'https://www.iranicaonline.org/articles/ebn-battuta/' }
         ]
       }
     },
     {
-      id: 'gil-eanes',
-      title: 'Gil Eanes et le franchissement du cap Bojador',
-      field: 'Navigation · Exploration portugaise · 1434',
-      summary: 'Comprendre pourquoi le franchissement du cap Bojador constitue une étape importante dans les explorations portugaises de la côte africaine.',
+      id: 'zheng-he-expeditions-1405',
+      title: 'Zheng He : les grandes expéditions maritimes chinoises',
+      field: 'Navigation chinoise des Ming · 1405-1433 · Zheng He : 1371-1433',
+      summary: 'Analyser les sept grandes expéditions de Zheng He, leur organisation navale, leurs objectifs diplomatiques et commerciaux et leur rayonnement dans l’océan Indien.',
       lesson: {
         sections: [
-          'Gil Eanes est un navigateur portugais originaire de la région de Lagos. Les dates précises de sa naissance et de sa mort ne sont pas connues. Il navigue au service du prince Henri de Portugal, souvent surnommé Henri le Navigateur.',
-          'En 1433, Gil Eanes tente de franchir le cap Bojador sans succès. En 1434, il réussit à dépasser ce cap situé sur la côte atlantique du Sahara. Il poursuit ensuite les reconnaissances côtières lors d’une nouvelle expédition en 1435.',
-          'Le franchissement du cap Bojador représente une étape importante pour les navigations portugaises vers le sud. Il permet de poursuivre les reconnaissances de la côte africaine. Ces voyages s’inscrivent aussi dans un contexte d’expansion commerciale et de développement de la traite des esclaves.'
+          'Zheng He, né en 1371 dans la région du Yunnan et mort en 1433 ou vers cette date selon les références, est un amiral chinois de la dynastie Ming. Né Ma He, il reçoit le nom de Zheng He après son entrée au service de la cour impériale. Il commande une série de sept expéditions maritimes entre 1405 et 1433, sous les règnes de Yongle puis de Xuande. Ces voyages sont organisés par l’État impérial et mobilisent des flottes importantes, des équipages nombreux et une logistique de grande ampleur.',
+          'Les escadres parcourent la mer de Chine méridionale et l’océan Indien, atteignant notamment l’Asie du Sud-Est, l’Inde, la péninsule Arabique et les côtes orientales de l’Afrique. Les expéditions transportent des envoyés, des marchandises et des présents diplomatiques. Elles favorisent les relations entre la cour Ming et plusieurs pouvoirs portuaires. Leur fonction n’est pas réductible au commerce : elles servent aussi à manifester le prestige impérial, à établir des relations politiques et à affirmer la puissance de la Chine dans les réseaux maritimes régionaux.',
+          'La réussite de ces voyages repose sur la construction navale, la coordination de grandes unités, la connaissance des vents saisonniers et l’utilisation de routes maritimes déjà fréquentées par des marchands asiatiques et africains. Les chiffres très élevés parfois avancés à propos des dimensions des navires ou des effectifs doivent être traités avec prudence : les documents historiques ne permettent pas de confirmer toutes les descriptions populaires des navires-trésors. Il est préférable de retenir l’ampleur exceptionnelle de l’organisation sans répéter comme des certitudes des mesures débattues.',
+          'Après 1433, les grandes expéditions officielles de ce type cessent. Les raisons sont multiples et liées aux priorités politiques, financières et stratégiques de la dynastie Ming. Zheng He occupe une place majeure dans l’histoire maritime mondiale, car ses voyages montrent qu’au début du XVe siècle, des flottes asiatiques parcouraient déjà de vastes espaces de l’océan Indien, avant les expéditions portugaises qui ouvrirent ensuite des routes européennes régulières vers l’Asie.'
         ],
         example: {
-          statement: 'En quelle année Gil Eanes franchit-il le cap Bojador ?',
-          calculation: 'La chronologie de l’expansion maritime portugaise situe son franchissement du cap en 1434.',
-          answer: 'En 1434.'
+          statement: 'Les expéditions de Zheng He s’étendent de 1405 à 1433. Combien d’années séparent les deux dates extrêmes ?',
+          calculation: '1433 - 1405 = 28 années. Ce résultat mesure l’écart entre les dates de début et de fin de la période, et non la durée continue passée en mer.',
+          answer: 'Les deux repères sont séparés par 28 années ; les sept expéditions ont eu lieu à l’intérieur de cette période.'
         },
         exercise: {
-          question: 'Quel cap Gil Eanes franchit-il en 1434 ?',
-          answer: 'Le cap Bojador, sur la côte atlantique du Sahara.'
+          question: 'Les voyages de Zheng He étaient-ils uniquement des expéditions commerciales ?',
+          answer: 'Non. Ils combinaient des objectifs diplomatiques, politiques, commerciaux et la démonstration du prestige de la dynastie Ming.'
         },
         exercises: [
           {
-            question: 'En quelle année Gil Eanes réussit-il à franchir le cap Bojador ?',
-            answer: 'En 1434.'
+            question: 'Combien de grandes expéditions Zheng He commande-t-il entre 1405 et 1433 ?',
+            answer: 'Sept expéditions.'
           },
           {
-            question: 'Au service de quel prince navigue-t-il ?',
-            answer: 'Du prince Henri de Portugal, appelé Henri le Navigateur.'
+            question: 'Quelle dynastie organise ces voyages ?',
+            answer: 'La dynastie Ming.'
           },
           {
-            question: 'Pourquoi ce franchissement est-il important pour les navigateurs portugais ?',
-            answer: 'Il permet de poursuivre les explorations maritimes vers le sud le long de la côte africaine.'
+            question: 'Jusqu’à quelle grande région africaine les flottes de Zheng He atteignent-elles ?',
+            answer: 'Les côtes orientales de l’Afrique.'
           }
         ],
         sources: [
-          { title: 'Universidade Nova de Lisboa — Exploração do Atlântico (1419-1500)', url: 'https://eve.fcsh.unl.pt/pt/cronologias/exploracao-do-atlantico-1419-1500' },
-          { title: 'Encyclopedia of Portuguese Expansion — Gil Eanes', url: 'https://eve.fcsh.unl.pt/en/people/gil-eanes' }
+          { title: 'Hong Kong Museum of History — Admiral Zheng He’s Voyages', url: 'https://hk.history.museum/en/web/mh/exhibition/2006_past_07.html' },
+          { title: 'The Mariners’ Museum — Zheng He', url: 'https://exploration.marinersmuseum.org/subject/zheng-he/' }
         ]
       }
     },
     {
-      id: 'nuno-tristao',
-      title: 'Nuno Tristão et l’exploration de la côte africaine',
-      field: 'Navigation · Atlantique africain · À partir de 1441',
-      summary: 'Découvrir les expéditions de Nuno Tristão le long des côtes de l’Afrique occidentale au XVe siècle.',
+      id: 'bartolomeu-dias-cap-bonne-esperance-1488',
+      title: 'Bartolomeu Dias : le contournement de l’Afrique australe',
+      field: 'Explorations portugaises · 1488 · Bartolomeu Dias : vers 1450-1500',
+      summary: 'Étudier l’expédition de Dias, qui franchit la pointe sud de l’Afrique et établit la possibilité d’une liaison maritime entre l’Atlantique et l’océan Indien.',
       lesson: {
         sections: [
-          'Nuno Tristão est un navigateur portugais actif dans les années 1440. Les informations sur sa naissance et sa jeunesse sont limitées. Il participe aux expéditions maritimes organisées par le Portugal le long des côtes africaines.',
-          'En 1441, il atteint le cap Blanc, situé sur la côte de l’actuelle Mauritanie. Il poursuit ensuite ses voyages dans la région du golfe d’Arguin. Les chronologies portugaises mentionnent également une expédition vers les îles de cette région en 1443.',
-          'Ces voyages contribuent à la reconnaissance européenne de certaines portions de la côte ouest-africaine. Ils s’inscrivent aussi dans le développement de relations commerciales inégales et de la capture de personnes réduites en esclavage. Nuno Tristão meurt lors d’une expédition sur la côte africaine, généralement située en 1446 ou 1447 selon les sources.'
+          'Bartolomeu Dias est un navigateur portugais né vers 1450 et mort en mer le 29 mai 1500. Les informations sur sa jeunesse sont limitées. Le roi João II lui confie une expédition destinée à poursuivre l’exploration de la côte africaine et à rechercher un passage vers l’océan Indien. Le projet s’inscrit dans une politique portugaise de reconnaissance progressive des côtes atlantiques africaines, soutenue par la monarchie et liée à la recherche de routes commerciales vers l’Asie.',
+          'L’expédition quitte le Portugal vers août 1487. Après avoir suivi la côte africaine, les navires sont entraînés plus au sud par les conditions météorologiques et les choix de navigation. Au début de 1488, ils dépassent l’extrémité méridionale de l’Afrique. Dias comprend alors qu’il est possible de poursuivre vers le nord-est et de rejoindre les espaces maritimes de l’océan Indien. Le retour permet de confirmer la continuité maritime entre l’Atlantique et l’océan Indien, même si la route vers l’Inde reste à parcourir.',
+          'Le cap est d’abord associé au nom de cap des Tempêtes, avant que la monarchie portugaise ne privilégie l’appellation cap de Bonne-Espérance, qui exprime l’espoir d’atteindre les marchés asiatiques par mer. Cette étape est décisive : elle prépare le voyage de Vasco de Gama, qui franchira ensuite le cap et atteindra l’Inde en 1498. Dias n’a donc pas lui-même ouvert une liaison commerciale régulière jusqu’à l’Inde, mais son expédition a établi la faisabilité du passage.',
+          'En 1500, Dias participe à l’expédition de Pedro Álvares Cabral vers l’Inde et meurt lors d’une tempête près du cap de Bonne-Espérance. Son parcours montre que les grandes explorations sont rarement l’œuvre d’un seul homme : elles reposent sur des expéditions successives, la transmission des cartes et des informations nautiques, ainsi que sur les connaissances des populations côtières rencontrées.'
         ],
         example: {
-          statement: 'Quel cap Nuno Tristão atteint-il en 1441 ?',
-          calculation: 'La chronologie de l’exploration portugaise de l’Atlantique situe son arrivée au cap Blanc en 1441.',
-          answer: 'Le cap Blanc, sur la côte de l’actuelle Mauritanie.'
+          statement: 'Dias franchit le cap au début de 1488, après le départ de son expédition vers août 1487. Quelle année correspond au franchissement du cap ?',
+          calculation: 'La chronologie distingue le départ de l’expédition, vers 1487, de l’événement décisif, le passage du cap au début de 1488.',
+          answer: 'Le franchissement du cap de Bonne-Espérance est daté de 1488.'
         },
         exercise: {
-          question: 'Quel navigateur portugais atteint le cap Blanc en 1441 ?',
-          answer: 'Nuno Tristão.'
+          question: 'Pourquoi le voyage de Dias est-il une étape essentielle avant celui de Vasco de Gama ?',
+          answer: 'Parce qu’il démontre qu’une flotte peut contourner l’Afrique australe et passer de l’Atlantique vers l’océan Indien.'
         },
         exercises: [
           {
-            question: 'En quelle année Nuno Tristão atteint-il le cap Blanc ?',
-            answer: 'En 1441.'
+            question: 'En quelle année Bartolomeu Dias franchit-il l’extrémité sud de l’Afrique ?',
+            answer: 'En 1488.'
           },
           {
-            question: 'Dans quelle région géographique se trouve le cap Blanc ?',
-            answer: 'Sur la côte atlantique de l’actuelle Mauritanie.'
+            question: 'Quel était l’objectif général de son expédition ?',
+            answer: 'Explorer la côte africaine et trouver un passage maritime vers l’océan Indien.'
           },
           {
-            question: 'Pourquoi faut-il replacer ses voyages dans leur contexte historique ?',
-            answer: 'Parce que les expéditions portugaises sont liées à la reconnaissance des côtes, au commerce et au développement de la traite des esclaves.'
-          }
-        ],
-        sources: [
-          { title: 'Universidade Nova de Lisboa — Exploração do Atlântico (1419-1500)', url: 'https://eve.fcsh.unl.pt/pt/cronologias/exploracao-do-atlantico-1419-1500' },
-          { title: 'Storia della geografia e delle scoperte geografiche — Navigazioni dei Portoghesi dal 1434 al 1446', url: 'https://it.wikisource.org/wiki/Storia_della_geografia_e_delle_scoperte_geografiche_%28parte_seconda%29/Capitolo_XI/Navigazioni_dei_Portoghesi_dall%27anno_1434_all%27anno_1446' }
-        ]
-      }
-    },
-    {
-      id: 'alvise-cadamosto',
-      title: 'Alvise Cadamosto et les voyages en Afrique de l’Ouest',
-      field: 'Navigation · Atlantique africain · 1455 à 1456',
-      summary: 'Étudier les voyages du marchand et navigateur vénitien Alvise Cadamosto le long des côtes du Sénégal et de la Gambie.',
-      lesson: {
-        sections: [
-          'Alvise Cadamosto, également appelé Alvise da Ca’ da Mosto, naît à Venise en 1432 et meurt en 1488. Il est marchand et navigateur. Il effectue plusieurs voyages au service du prince Henri de Portugal.',
-          'En 1455 et 1456, il participe à des expéditions le long des côtes de l’Afrique occidentale. Il navigue notamment dans les régions du Sénégal et de la Gambie. Ses récits décrivent les territoires, les populations et les échanges commerciaux qu’il observe.',
-          'Les écrits de Cadamosto constituent des témoignages importants sur les contacts entre les Européens et les sociétés ouest-africaines au XVe siècle. Ils doivent toutefois être étudiés en tenant compte de leur point de vue européen et du contexte d’expansion commerciale portugaise.'
-        ],
-        example: {
-          statement: 'Quelles années correspondent aux principaux voyages africains de Cadamosto ?',
-          calculation: 'Les expéditions qui lui sont associées sur la côte ouest-africaine ont lieu en 1455 et 1456.',
-          answer: '1455 et 1456.'
-        },
-        exercise: {
-          question: 'Quelle est l’origine d’Alvise Cadamosto ?',
-          answer: 'Il est originaire de Venise, en Italie.'
-        },
-        exercises: [
-          {
-            question: 'En quelles années Cadamosto navigue-t-il le long des côtes de l’Afrique occidentale ?',
-            answer: 'En 1455 et 1456.'
-          },
-          {
-            question: 'Quelles régions africaines visite-t-il notamment ?',
-            answer: 'Les régions du Sénégal et de la Gambie.'
-          },
-          {
-            question: 'Pourquoi ses récits doivent-ils être replacés dans leur contexte ?',
-            answer: 'Ils reflètent le point de vue d’un marchand européen participant à l’expansion maritime portugaise.'
-          }
-        ],
-        sources: [
-          { title: 'Treccani — Alvise da Mosto', url: 'https://www.treccani.it/enciclopedia/alvise-da-mosto_%28Dizionario-Biografico%29/' },
-          { title: 'Universidade Nova de Lisboa — Exploração do Atlântico (1419-1500)', url: 'https://eve.fcsh.unl.pt/pt/cronologias/exploracao-do-atlantico-1419-1500' }
-        ]
-      }
-    },
-    {
-      id: 'ahmad-ibn-majid',
-      title: 'Ahmad ibn Mājid et les savoirs nautiques de l’océan Indien',
-      field: 'Navigation · Océan Indien · Seconde moitié du XVe siècle',
-      summary: 'Découvrir le rôle d’Ahmad ibn Mājid dans la transmission des connaissances nautiques et l’étude des routes maritimes de l’océan Indien.',
-      lesson: {
-        sections: [
-          'Ahmad ibn Mājid est un navigateur et auteur arabe du XVe siècle. Ses dates de naissance et de mort ne sont pas connues avec certitude. La Bibliothèque du Congrès situe sa période d’activité attestée entre 1462 et 1498.',
-          'Il rédige des textes consacrés à la navigation dans l’océan Indien. Son œuvre décrit notamment les routes maritimes, les ports, les repères côtiers et les connaissances astronomiques utiles aux navigateurs. Le Kitāb al-Fawā’id, recueil de textes nautiques assemblé vers 1490, constitue un témoignage important de ces savoirs.',
-          'La navigation dans l’océan Indien repose sur des connaissances développées depuis longtemps par les marins des régions arabes, africaines, indiennes et asiatiques. Une tradition affirme qu’Ibn Mājid aurait guidé Vasco de Gama vers l’Inde en 1498, mais cette affirmation n’est pas suffisamment établie pour être présentée comme un fait certain.'
-        ],
-        example: {
-          statement: 'Quel est le sujet principal du Kitāb al-Fawā’id ?',
-          calculation: 'Le recueil rassemble des textes sur les routes maritimes, les ports, les directions et les méthodes de navigation.',
-          answer: 'La science de la navigation, particulièrement dans l’océan Indien.'
-        },
-        exercise: {
-          question: 'Quel domaine Ahmad ibn Mājid contribue-t-il à documenter ?',
-          answer: 'Les connaissances nautiques et les routes maritimes de l’océan Indien.'
-        },
-        exercises: [
-          {
-            question: 'Quelle période d’activité la Bibliothèque du Congrès attribue-t-elle à Ahmad ibn Mājid ?',
-            answer: 'De 1462 à 1498.'
-          },
-          {
-            question: 'Que décrit le Kitāb al-Fawā’id ?',
-            answer: 'Des routes maritimes, des ports, des repères de navigation et des connaissances nautiques.'
-          },
-          {
-            question: 'Peut-on affirmer avec certitude qu’Ahmad ibn Mājid a piloté Vasco de Gama en 1498 ?',
-            answer: 'Non. Cette affirmation appartient à une tradition qui n’est pas suffisamment démontrée par les sources historiques.'
-          }
-        ],
-        sources: [
-          { title: 'Library of Congress — Kitāb al-Fawā’id', url: 'https://www.loc.gov/item/2008401696/' },
-          { title: 'G. R. Tibbetts — Stellar Navigation in the Indian Ocean', url: 'https://www.ion.org/publications/abstract.cfm?articleID=100965' },
-          { title: 'Oxford Academic — Medieval Navigation Techniques', url: 'https://academic.oup.com/book/566/chapter-abstract/135300537' }
-        ]
-      }
-    },
-    {
-      id: 'diogo-cao',
-      title: 'Diogo Cão et l’exploration du fleuve Congo',
-      field: 'Navigation · Côte occidentale de l’Afrique · 1482 à 1486',
-      summary: 'Comprendre les expéditions portugaises de Diogo Cão et leur progression le long des côtes de l’Afrique centrale.',
-      lesson: {
-        sections: [
-          'Diogo Cão est un navigateur portugais du XVe siècle. Ses dates de naissance et de mort ne sont pas connues avec certitude. Il conduit deux grandes expéditions le long de la côte occidentale de l’Afrique dans les années 1480.',
-          'Lors de son premier voyage, commencé en 1482, il atteint l’embouchure du fleuve Congo, également appelé Zaïre dans les sources portugaises de l’époque. Il remonte une partie du fleuve et entre en contact avec le royaume du Kongo.',
-          'Diogo Cão poursuit ses explorations vers le sud lors d’un second voyage, généralement daté de 1485 à 1486. Il fait placer des colonnes de pierre appelées padrões sur certains points de la côte. Ces monuments portent des inscriptions et symboles portugais et matérialisent les revendications de la couronne.'
-        ],
-        example: {
-          statement: 'Quel grand fleuve Diogo Cão atteint-il lors de son expédition de 1482 ?',
-          calculation: 'Les chronologies portugaises associent son premier voyage à l’arrivée à l’embouchure du fleuve Congo.',
-          answer: 'Le fleuve Congo, appelé Zaïre dans certaines sources portugaises de l’époque.'
-        },
-        exercise: {
-          question: 'Quel fleuve Diogo Cão atteint-il en 1482 ?',
-          answer: 'Le fleuve Congo.'
-        },
-        exercises: [
-          {
-            question: 'À partir de quelle année Diogo Cão conduit-il sa première grande expédition ?',
-            answer: 'À partir de 1482.'
-          },
-          {
-            question: 'Que sont les padrões ?',
-            answer: 'Des colonnes de pierre portant des inscriptions et des symboles portugais, installées pour marquer certaines étapes des expéditions.'
-          },
-          {
-            question: 'Avec quel royaume africain les Portugais entrent-ils en contact dans la région du fleuve Congo ?',
-            answer: 'Le royaume du Kongo.'
-          }
-        ],
-        sources: [
-          { title: 'Universidade Nova de Lisboa — Exploração do Atlântico (1419-1500)', url: 'https://eve.fcsh.unl.pt/pt/cronologias/exploracao-do-atlantico-1419-1500' },
-          { title: 'Encyclopaedia Britannica — Diogo Cão', url: 'https://www.britannica.com/biography/Diogo-Cao' }
-        ]
-      }
-    },
-    {
-      id: 'bartolomeu-dias',
-      title: 'Bartolomeu Dias et le cap de Bonne-Espérance',
-      field: 'Navigation · Atlantique et océan Indien · 1487 à 1488',
-      summary: 'Étudier l’expédition de Bartolomeu Dias, qui permet aux Portugais de contourner l’extrémité sud de l’Afrique.',
-      lesson: {
-        sections: [
-          'Bartolomeu Dias est un navigateur portugais né vers 1450 et mort en mer en 1500. Il est choisi par la couronne portugaise pour conduire une expédition destinée à poursuivre l’exploration de la côte africaine vers le sud.',
-          'Il quitte le Portugal en 1487 et atteint l’extrémité sud de l’Afrique en 1488. Les navires sont repoussés vers le large par les vents et les courants. Après avoir contourné le sud du continent, l’expédition remonte vers le nord-est et atteint une partie de la côte de l’actuelle Afrique du Sud.',
-          'Cette traversée démontre qu’il est possible de rejoindre l’océan Indien en contournant l’Afrique. Le cap est appelé cap des Tempêtes par Dias, puis cap de Bonne-Espérance dans la tradition portugaise. Le voyage prépare la route maritime empruntée par Vasco de Gama quelques années plus tard.'
-        ],
-        example: {
-          statement: 'Quelle possibilité maritime l’expédition de Bartolomeu Dias démontre-t-elle ?',
-          calculation: 'En contournant l’extrémité sud de l’Afrique en 1488, son expédition établit une liaison maritime possible entre l’Atlantique et l’océan Indien.',
-          answer: 'Il est possible de rejoindre l’océan Indien en contournant l’Afrique par le sud.'
-        },
-        exercise: {
-          question: 'En quelle année Bartolomeu Dias contourne-t-il l’extrémité sud de l’Afrique ?',
-          answer: 'En 1488.'
-        },
-        exercises: [
-          {
-            question: 'En quelle année Bartolomeu Dias quitte-t-il le Portugal pour son expédition ?',
-            answer: 'En 1487.'
-          },
-          {
-            question: 'Quel cap est associé à son voyage ?',
-            answer: 'Le cap de Bonne-Espérance, d’abord appelé cap des Tempêtes.'
-          },
-          {
-            question: 'Pourquoi son expédition est-elle importante pour l’histoire maritime ?',
-            answer: 'Elle démontre la possibilité de rejoindre l’océan Indien par une route maritime passant au sud de l’Afrique.'
+            question: 'Dias atteint-il l’Inde au cours de son expédition de 1487-1488 ?',
+            answer: 'Non. Il franchit le cap et établit la possibilité de poursuivre vers l’océan Indien ; Vasco de Gama atteint l’Inde en 1498.'
           }
         ],
         sources: [
           { title: 'Encyclopaedia Britannica — Bartolomeu Dias', url: 'https://www.britannica.com/biography/Bartolomeu-Dias' },
-          { title: 'The Mariners’ Museum — Bartolomeu Dias', url: 'https://exploration.marinersmuseum.org/subject/bartolomeu-dias/' }
+          { title: 'Biography.com — Bartolomeu Dias', url: 'https://www.biography.com/history-culture/bartolomeu-dias' }
         ]
       }
     },
     {
-      id: 'jean-cabot',
-      title: 'Jean Cabot et la traversée de l’Atlantique Nord',
-      field: 'Navigation · Atlantique Nord · 1497',
-      summary: 'Découvrir l’expédition de Jean Cabot en 1497 et son arrivée sur les côtes de l’Amérique du Nord au service de l’Angleterre.',
+      id: 'christophe-colomb-atlantique-1492',
+      title: 'Christophe Colomb : la traversée de l’Atlantique en 1492',
+      field: 'Explorations atlantiques · 1492 · Christophe Colomb : 1451-1506',
+      summary: 'Replacer les quatre voyages de Colomb dans leur contexte, expliquer son erreur sur les dimensions de la Terre et distinguer les contacts européens des histoires autochtones déjà anciennes.',
       lesson: {
         sections: [
-          'Jean Cabot, ou Giovanni Caboto, est un navigateur d’origine italienne qui travaille pour la couronne anglaise. Il serait né vers 1450, mais son lieu et sa date de naissance ne sont pas établis avec certitude. Sa mort et les circonstances de sa disparition après ses voyages restent également mal connues.',
-          'En 1497, avec le soutien du roi Henri VII d’Angleterre, Jean Cabot quitte le port de Bristol à bord du navire Matthew. Il traverse l’Atlantique Nord et atteint une terre d’Amérique du Nord en juin 1497. L’emplacement exact de son premier débarquement reste discuté ; Terre-Neuve et les régions voisines sont généralement envisagées.',
-          'Le voyage de Cabot contribue aux revendications anglaises sur certaines régions d’Amérique du Nord. Il ne constitue pas la découverte d’un continent inhabité : ces territoires sont déjà habités par des peuples autochtones qui possèdent leurs propres histoires, territoires et connaissances géographiques.'
+          'Christophe Colomb, né à Gênes en 1451 et mort à Valladolid le 20 mai 1506, est un navigateur d’origine génoise au service de la monarchie espagnole. En 1492, il obtient le soutien des souverains Isabelle de Castille et Ferdinand d’Aragon pour tenter d’atteindre l’Asie en naviguant vers l’ouest. Son projet repose sur une estimation erronée de la circonférence terrestre et sur une représentation incomplète de la géographie mondiale : il sous-estime la distance séparant l’Europe de l’Asie par l’ouest et ne connaît pas l’existence du continent américain pour les Européens de son époque.',
+          'La flotte quitte l’Espagne le 3 août 1492 avec trois navires, la Santa María, la Pinta et la Niña. Après une escale aux Canaries, elle traverse l’Atlantique et atteint les Bahamas le 12 octobre 1492. Colomb pense avoir atteint des îles proches de l’Asie. Il explore ensuite des îles des Caraïbes, notamment Cuba et Hispaniola. Il effectuera au total quatre voyages transatlantiques entre 1492 et 1504. Il n’atteint jamais la Chine ni l’Inde par cette route, contrairement à son objectif initial.',
+          'Les voyages de Colomb provoquent une transformation majeure des relations entre l’Europe, l’Afrique et les Amériques. Ils sont suivis par la conquête, la colonisation, l’exploitation des ressources, les déplacements forcés et des épidémies dévastatrices pour les populations autochtones. L’histoire ne peut donc pas être racontée comme une simple aventure héroïque ou comme la découverte d’un espace vide : les sociétés des Caraïbes et du continent américain existaient depuis longtemps et possédaient leurs propres réseaux, cultures et savoirs.',
+          'La portée historique de 1492 tient à l’intensification durable des contacts transatlantiques et à la mise en place d’un système impérial européen dans les Amériques. Il faut distinguer la première arrivée de Colomb dans les Caraïbes, les voyages nordiques antérieurs attestés à Terre-Neuve et l’histoire plurimillénaire des peuples autochtones. Cette précision permet d’employer le terme arrivée européenne plutôt que de présenter Colomb comme le premier humain à découvrir l’Amérique.'
         ],
         example: {
-          statement: 'En quelle année Jean Cabot effectue-t-il son voyage transatlantique le plus connu ?',
-          calculation: 'Les sources historiques situent son voyage au départ de Bristol en 1497.',
-          answer: 'En 1497.'
+          statement: 'La première traversée de Colomb atteint les Bahamas le 12 octobre 1492 après un départ le 3 août 1492. Quel intervalle de calendrier sépare ces deux dates ?',
+          calculation: 'Du 3 août au 3 octobre : 2 mois ; du 3 au 12 octobre : 9 jours. L’intervalle est donc de 2 mois et 9 jours.',
+          answer: 'La traversée jusqu’aux Bahamas dure environ 2 mois et 9 jours entre les dates indiquées.'
         },
         exercise: {
-          question: 'De quel port Jean Cabot part-il pour son expédition de 1497 ?',
-          answer: 'Du port de Bristol, en Angleterre.'
+          question: 'Pourquoi est-il historiquement inexact de dire que Colomb a découvert un continent inhabité ?',
+          answer: 'Parce que les Amériques étaient habitées par de nombreuses sociétés autochtones depuis des millénaires, et que des navigateurs nordiques avaient déjà atteint l’Amérique du Nord autour de l’an 1000.'
         },
         exercises: [
           {
-            question: 'Quel roi soutient l’expédition de Jean Cabot ?',
-            answer: 'Le roi Henri VII d’Angleterre.'
+            question: 'En quelle année Colomb effectue-t-il sa première traversée transatlantique ?',
+            answer: 'En 1492.'
           },
           {
-            question: 'Comment s’appelle le navire utilisé lors du voyage de 1497 ?',
-            answer: 'Le Matthew.'
+            question: 'Combien de voyages transatlantiques Colomb effectue-t-il entre 1492 et 1504 ?',
+            answer: 'Quatre voyages.'
           },
           {
-            question: 'Pourquoi ne faut-il pas présenter son voyage comme la découverte d’un territoire inhabité ?',
-            answer: 'Parce que les régions atteintes étaient déjà habitées par des peuples autochtones.'
+            question: 'Colomb comprend-il qu’il a atteint un continent inconnu des Européens de son époque ?',
+            answer: 'Non. Il pense avoir atteint des régions proches de l’Asie et conserve longtemps cette interprétation.'
           }
         ],
         sources: [
-          { title: 'Dictionary of Canadian Biography — John Cabot', url: 'https://www.biographi.ca/en/bio/cabot_john_1E.html' },
-          { title: 'Encyclopaedia Britannica — John Cabot', url: 'https://www.britannica.com/biography/John-Cabot' }
+          { title: 'Encyclopaedia Britannica — Christopher Columbus', url: 'https://www.britannica.com/biography/Christopher-Columbus' },
+          { title: 'UNESCO — L’Anse aux Meadows', url: 'https://whc.unesco.org/fr/list/4/' }
+        ]
+      }
+    },
+    {
+      id: 'vasco-da-gama-route-inde-1497',
+      title: 'Vasco de Gama : la route maritime vers l’Inde',
+      field: 'Explorations portugaises · 1497-1499 · Vasco de Gama : vers 1460-1524',
+      summary: 'Étudier le voyage qui relie l’Europe à l’Inde par le contournement de l’Afrique, ses conditions nautiques et ses conséquences commerciales et impériales.',
+      lesson: {
+        sections: [
+          'Vasco de Gama naît probablement vers 1460 à Sines, au Portugal, et meurt à Cochin, en Inde, le 24 décembre 1524. La date exacte de sa naissance reste discutée dans certaines références. En 1497, le roi Manuel Ier lui confie le commandement d’une flotte chargée de rejoindre l’Inde par mer en contournant l’Afrique. L’expédition s’inscrit dans la continuité des reconnaissances portugaises du littoral africain, notamment du passage franchi par Bartolomeu Dias en 1488.',
+          'La flotte quitte Lisbonne le 8 juillet 1497. Elle descend le long de l’Afrique, contourne le cap de Bonne-Espérance, puis remonte vers les côtes orientales du continent avant de traverser la mer d’Arabie. Elle atteint Calicut, sur la côte sud-ouest de l’Inde, le 17 mai 1498. Ce voyage établit une liaison maritime directe entre l’Europe et l’Inde pour une expédition portugaise, mais il ne crée pas les échanges dans l’océan Indien : ceux-ci existaient depuis des siècles et reposaient sur des réseaux arabes, persans, indiens, africains et asiatiques.',
+          'La navigation dépend de la connaissance des vents et des courants. Dans l’océan Indien, les moussons rendent possibles des traversées saisonnières entre les côtes d’Afrique, l’Arabie et l’Inde. Les Portugais doivent apprendre à intégrer ces rythmes, négocier des escales et s’insérer dans des systèmes commerciaux déjà structurés. Les premiers contacts à Calicut sont difficiles, car les objectifs portugais et les intérêts des marchands locaux ne coïncident pas toujours.',
+          'Les voyages de Vasco de Gama ouvrent la voie à une présence portugaise croissante dans l’océan Indien. Cette expansion s’appuie ensuite sur des alliances, des forteresses, des flottes armées et des tentatives de contrôle des routes commerciales. Elle transforme les rapports de force maritimes et contribue à la construction d’un empire portugais en Asie. Il faut donc étudier à la fois l’innovation géographique de la route et les conséquences politiques et humaines de son exploitation.'
+        ],
+        example: {
+          statement: 'La flotte de Vasco de Gama part de Lisbonne en juillet 1497 et atteint Calicut en mai 1498. Pourquoi ce voyage est-il plus qu’une simple traversée de l’Atlantique ?',
+          calculation: 'L’itinéraire passe par l’Atlantique sud, le contournement de l’Afrique australe, les côtes orientales africaines et la mer d’Arabie avant d’atteindre l’Inde.',
+          answer: 'Il s’agit d’un itinéraire océanique complexe reliant l’Europe à l’Inde en contournant l’Afrique, et non d’une traversée directe de l’Atlantique.'
+        },
+        exercise: {
+          question: 'Quelle route maritime l’expédition de Vasco de Gama permet-elle de parcourir ?',
+          answer: 'Une route depuis l’Europe vers l’Inde en contournant le cap de Bonne-Espérance et en traversant l’océan Indien.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Vasco de Gama quitte-t-il Lisbonne pour son premier voyage vers l’Inde ?',
+            answer: 'En 1497.'
+          },
+          {
+            question: 'Quel port indien atteint-il en mai 1498 ?',
+            answer: 'Calicut, aujourd’hui Kozhikode, sur la côte sud-ouest de l’Inde.'
+          },
+          {
+            question: 'Les échanges de l’océan Indien commencent-ils avec l’arrivée des Portugais ?',
+            answer: 'Non. Ils existaient depuis des siècles et reliaient déjà l’Afrique orientale, l’Arabie, l’Inde et l’Asie.'
+          }
+        ],
+        sources: [
+          { title: 'Parlement du Portugal — Vasco da Gama', url: 'https://www.parlamento.pt/VisitaParlamento/Paginas/BiogVascodaGama.aspx' },
+          { title: 'Panthéon national du Portugal — Vasco da Gama', url: 'https://www.panteaonacional.gov.pt/en/homenageados/vasco-da-gama' },
+          { title: 'Encyclopaedia Britannica — Vasco da Gama', url: 'https://www.britannica.com/biography/Vasco-da-Gama' }
+        ]
+      }
+    },
+    {
+      id: 'pedro-alvares-cabral-bresil-1500',
+      title: 'Pedro Álvares Cabral : l’expédition portugaise de 1500',
+      field: 'Explorations portugaises · 22 avril 1500 · Pedro Álvares Cabral : vers 1467/1468-1520 ou 1526',
+      summary: 'Comprendre le voyage de la flotte de Cabral vers l’Inde, son arrivée sur les côtes du Brésil et les limites du vocabulaire traditionnel de la découverte.',
+      lesson: {
+        sections: [
+          'Pedro Álvares Cabral naît probablement en 1467 ou 1468 dans une famille noble portugaise. Sa date de décès est moins assurée : certaines références indiquent 1520, d’autres 1526. En 1500, le roi Manuel Ier lui confie le commandement d’une grande flotte destinée à poursuivre la route maritime vers l’Inde ouverte par le voyage de Vasco de Gama. L’expédition doit établir des relations politiques et commerciales avec les autorités de l’océan Indien et renforcer la présence portugaise dans le commerce des épices.',
+          'La flotte quitte Lisbonne en mars 1500. En naviguant vers le sud-ouest de l’Atlantique, elle atteint une terre sur la côte orientale de l’Amérique du Sud le 22 avril 1500. Cabral la nomme Terra de Vera Cruz, puis la présence portugaise s’y développe sous le nom de Brésil. Les raisons exactes de la route suivie et le degré de connaissance préalable de ces terres par les Portugais font l’objet de discussions historiques ; il est donc préférable de ne pas présenter l’arrivée comme un événement entièrement fortuit sans nuance.',
+          'L’expédition poursuit ensuite sa route vers l’Inde. Elle traverse le cap de Bonne-Espérance et rejoint Calicut, où les Portugais cherchent à obtenir des conditions favorables au commerce. Les relations avec les autorités et les marchands locaux sont tendues et donnent lieu à des affrontements. Le voyage de Cabral illustre ainsi le lien entre exploration géographique, diplomatie, commerce et recours à la force dans l’expansion portugaise.',
+          'L’expression découverte du Brésil est traditionnellement employée dans les récits portugais, mais elle doit être contextualisée : le territoire était habité par des peuples autochtones bien avant 1500. L’événement correspond à l’arrivée documentée d’une expédition portugaise et au début d’une revendication coloniale européenne. Cette distinction permet de rendre compte à la fois de la chronologie maritime et de l’histoire des populations qui vivaient déjà sur ces terres.'
+        ],
+        example: {
+          statement: 'La flotte de Cabral atteint la côte du Brésil le 22 avril 1500. Quel est le repère chronologique exact à retenir ?',
+          calculation: 'La date du 22 avril 1500 est celle de l’arrivée de l’expédition portugaise sur la côte, telle qu’elle est retenue dans la chronologie historique portugaise.',
+          answer: 'Le repère à retenir est le 22 avril 1500, en précisant qu’il s’agit de l’arrivée portugaise sur un territoire déjà habité.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il contextualiser l’expression découverte du Brésil ?',
+          answer: 'Parce que des peuples autochtones habitaient déjà ce territoire ; l’événement de 1500 désigne l’arrivée documentée d’une expédition portugaise, pas la découverte d’une terre inconnue de ses habitants.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Cabral commande-t-il l’expédition qui atteint le Brésil ?',
+            answer: 'En 1500.'
+          },
+          {
+            question: 'Quelle est la date généralement retenue pour l’arrivée de la flotte sur la côte brésilienne ?',
+            answer: 'Le 22 avril 1500.'
+          },
+          {
+            question: 'Quelle était la destination principale de l’expédition de Cabral ?',
+            answer: 'L’Inde, afin de développer les relations politiques et commerciales portugaises.'
+          }
+        ],
+        sources: [
+          { title: 'Panthéon national du Portugal — Pedro Álvares Cabral', url: 'https://www.panteaonacional.gov.pt/en/homenageados/pedro-alvares-cabral' },
+          { title: 'Encyclopaedia Britannica — Pedro Álvares Cabral', url: 'https://www.britannica.com/biography/Pedro-Alvares-Cabral' }
+        ]
+      }
+    },
+    {
+      id: 'ferdinand-magellan-expedition-1519',
+      title: 'Fernand de Magellan : l’expédition vers les Moluques',
+      field: 'Première circumnavigation · Départ en 1519 · Fernand de Magellan : vers 1480-1521',
+      summary: 'Étudier le projet de route occidentale vers les îles aux Épices, le passage du détroit, la traversée du Pacifique et la mort de Magellan avant le retour de l’expédition.',
+      lesson: {
+        sections: [
+          'Fernand de Magellan, ou Fernão de Magalhães en portugais, naît vers 1480 au Portugal et meurt le 27 avril 1521 sur l’île de Mactan, dans l’archipel des Philippines. Après avoir servi la couronne portugaise et participé à des expéditions en Afrique et en Asie, il propose à la monarchie espagnole de rejoindre les Moluques par une route occidentale. L’objectif est d’atteindre les îles productrices d’épices en naviguant vers l’ouest, sans emprunter la route contrôlée par les Portugais autour de l’Afrique.',
+          'L’expédition, financée par la couronne espagnole, quitte Sanlúcar de Barrameda en septembre 1519 avec cinq navires. Elle traverse l’Atlantique, longe l’Amérique du Sud et recherche un passage vers l’océan situé à l’ouest du continent. En 1520, la flotte franchit le détroit qui portera le nom de Magellan. Après ce passage difficile, les navires entrent dans un océan que Magellan nomme Pacifique, en raison des conditions relativement calmes rencontrées pendant une partie de la traversée. Le Pacifique est immense et la traversée se révèle longue et éprouvante.',
+          'La flotte atteint les Philippines en 1521. Magellan intervient dans les rivalités politiques locales et meurt lors du combat de Mactan, le 27 avril 1521. Il ne réalise donc pas lui-même le tour du monde. Après sa mort, les survivants poursuivent le voyage sous d’autres commandants. La distinction historique est essentielle : Magellan conçoit et dirige une grande partie de l’expédition, mais c’est Juan Sebastián Elcano qui conduit le navire Victoria lors du retour en Espagne.',
+          'Le voyage démontre l’ampleur du Pacifique et relie par mer l’Atlantique, le Pacifique et l’océan Indien dans une seule expédition. Il constitue la première circumnavigation accomplie par une expédition, mais ne doit pas être attribué à Magellan seul. Le voyage a aussi un coût humain considérable et s’inscrit dans la compétition impériale pour le contrôle des routes commerciales et des territoires. Son importance scientifique et géographique doit donc être étudiée avec ses dimensions politiques et coloniales.'
+        ],
+        example: {
+          statement: 'Magellan meurt aux Philippines en 1521, alors que l’expédition revient en Espagne en 1522. Qui achève le voyage ?',
+          calculation: 'Il faut distinguer le commandement initial de l’expédition et la conduite de la dernière étape du retour. Après la mort de Magellan, Juan Sebastián Elcano prend le commandement du groupe qui ramène le Victoria.',
+          answer: 'Juan Sebastián Elcano conduit le retour et achève la première circumnavigation de l’expédition en 1522.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il inexact d’affirmer que Magellan a personnellement effectué le premier tour du monde complet ?',
+          answer: 'Parce qu’il est mort à Mactan en 1521, avant le retour en Espagne ; c’est Elcano qui a conduit le navire Victoria jusqu’en 1522.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année l’expédition de Magellan quitte-t-elle l’Espagne ?',
+            answer: 'En 1519.'
+          },
+          {
+            question: 'Quel passage maritime porte aujourd’hui le nom de Magellan ?',
+            answer: 'Le détroit de Magellan, à l’extrémité sud de l’Amérique du Sud.'
+          },
+          {
+            question: 'Où et quand Magellan meurt-il ?',
+            answer: 'À Mactan, dans les Philippines, le 27 avril 1521.'
+          }
+        ],
+        sources: [
+          { title: 'Larousse — Fernand de Magellan', url: 'https://www.larousse.fr/encyclopedie/personnage/Magellan/131060' },
+          { title: 'HISTORY — Ferdinand Magellan', url: 'https://www.history.com/articles/ferdinand-magellan' },
+          { title: 'Ministère espagnol de la Culture — Magellan et Elcano', url: 'https://www.cultura.gob.es/cultura/archivos/difusion/registro-memoria-unesco/2023/vuelta-mundo-magallanes-elcano.html' }
+        ]
+      }
+    },
+    {
+      id: 'juan-sebastian-elcano-circumnavigation-1522',
+      title: 'Juan Sebastián Elcano : l’achèvement du premier tour du monde',
+      field: 'Première circumnavigation · Retour le 6 septembre 1522 · Juan Sebastián Elcano : vers 1476-1526',
+      summary: 'Rendre à Elcano sa place dans l’histoire de la première circumnavigation, en retraçant la fin du voyage commencé sous le commandement de Magellan.',
+      lesson: {
+        sections: [
+          'Juan Sebastián Elcano, également nommé del Cano dans certaines sources, naît vers 1476 à Getaria, au Pays basque, et meurt le 4 août 1526 au cours d’une autre expédition dans le Pacifique. Marin expérimenté, il participe à l’expédition espagnole commandée au départ par Fernand de Magellan en 1519. Son rôle devient central après la mort de Magellan à Mactan en avril 1521, lorsque les survivants doivent réorganiser le commandement et poursuivre leur objectif d’atteindre les îles aux Épices puis de rentrer en Espagne.',
+          'Après plusieurs étapes dans l’archipel des Moluques, Elcano prend le commandement du Victoria, l’unique navire de l’expédition qui réussit à revenir en Europe. Le retour s’effectue vers l’ouest à travers l’océan Indien, puis autour du cap de Bonne-Espérance et le long de l’Atlantique. Ce choix permet d’éviter les routes maritimes revendiquées par le Portugal, mais expose l’équipage à une traversée particulièrement longue et difficile. Le navire doit gérer les réserves, les maladies, les conditions météorologiques et les risques de rencontre avec les autorités portugaises.',
+          'Le Victoria arrive à Sanlúcar de Barrameda le 6 septembre 1522, puis l’équipage rejoint Séville. Les membres revenus à bord du Victoria sont généralement comptés au nombre de 18 parmi les hommes partis initialement, sans compter les personnes qui avaient été séparées ou retenues ailleurs. Elcano adresse une lettre à Charles Quint le jour de son arrivée, document conservé dans les fonds liés à l’histoire de l’expédition. Ce retour achève la première circumnavigation documentée réalisée par une expédition maritime.',
+          'La réussite doit être attribuée collectivement aux équipages et aux différents commandants, mais Elcano mérite une place centrale pour avoir conduit le navire de retour. Magellan avait lancé l’expédition et parcouru la plus grande partie de l’itinéraire avant sa mort ; Elcano a achevé le tour du monde. Cette distinction évite une simplification fréquente. La circumnavigation confirme concrètement la continuité des océans à l’échelle planétaire et fournit de nouvelles informations sur les distances, les vents et les routes maritimes, tout en participant à l’expansion impériale espagnole.'
+        ],
+        example: {
+          statement: 'Le Victoria revient à Sanlúcar de Barrameda le 6 septembre 1522, après son départ en 1519. Quel événement cette arrivée marque-t-elle ?',
+          calculation: 'L’expédition commence en 1519 et le navire de retour arrive en 1522. La durée exacte dépend du jour de départ retenu et du calendrier de chaque étape ; on parle couramment d’un voyage d’environ trois années.',
+          answer: 'Cette arrivée marque l’achèvement de la première circumnavigation accomplie par une expédition maritime.'
+        },
+        exercise: {
+          question: 'Quel rôle précis Elcano joue-t-il dans le voyage de Magellan ?',
+          answer: 'Après la mort de Magellan, Elcano prend le commandement du Victoria et conduit le navire jusqu’en Espagne en 1522, achevant ainsi la circumnavigation.'
+        },
+        exercises: [
+          {
+            question: 'En quelle date le Victoria revient-il à Sanlúcar de Barrameda ?',
+            answer: 'Le 6 septembre 1522.'
+          },
+          {
+            question: 'Quel navire de l’expédition réalise le retour en Espagne ?',
+            answer: 'Le Victoria.'
+          },
+          {
+            question: 'Pourquoi Elcano doit-il être distingué de Magellan dans le récit du premier tour du monde ?',
+            answer: 'Magellan dirige le début de l’expédition mais meurt en 1521 ; Elcano conduit le Victoria au retour et achève la circumnavigation en 1522.'
+          }
+        ],
+        sources: [
+          { title: 'Ministère espagnol de la Culture — Juan Sebastián Elcano', url: 'https://www.cultura.gob.es/cultura/archivos/informacion-general/adquisiciones-donaciones/2014/agi/elcano.html' },
+          { title: 'Bibliothèque virtuelle de la Défense espagnole — Elcano', url: 'https://bibliotecavirtual.defensa.gob.es/BVMDefensa/es/consulta_aut/registro.do?control=BMDA20160328776' }
         ]
       }
     }
   ]
 },
+
 ]
-
-
 
 
 
