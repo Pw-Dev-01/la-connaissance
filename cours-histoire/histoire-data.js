@@ -7664,6 +7664,357 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'grands-navigateurs',
+  title: 'Les grands navigateurs de l’antiquité au moyen âge',
+  note: 'Huit chapitres sur des navigateurs et des traditions maritimes, des Phéniciens à Bartolomeu Dias. Les dates anciennes sont souvent approximatives, et plusieurs récits ne nous sont parvenus que par des auteurs postérieurs ou par des copies tardives.',
+  chapters: [
+    {
+      id: 'pheniciens-necho-hannon',
+      title: 'Les Phéniciens : le périple africain de Néchao II et l’expédition d’Hannon',
+      field: 'Antiquité · Néchao II (règne vers 610–595 av. J.-C.) · Hannon de Carthage (Ve siècle av. J.-C. selon la tradition, datation discutée)',
+      summary: 'Comprendre ce que les sources grecques rapportent des grandes navigations phéniciennes et carthaginoises, et pourquoi leur interprétation reste débattue.',
+      lesson: {
+        sections: [
+          'Les Phéniciens étaient les habitants de cités-États de la côte du Levant, comme Tyr, Sidon et Byblos. Ils sont connus dans l’Antiquité comme marins et commerçants et ont fondé des comptoirs dans toute la Méditerranée. Carthage, en Afrique du Nord, est traditionnellement présentée comme une fondation tyrienne datée de 814 av. J.-C. par les auteurs antiques ; cette date est une tradition, et l’archéologie place plutôt les débuts de la ville entre la fin du IXe et le VIIIe siècle av. J.-C. Aucun récit de navigation rédigé directement par les Phéniciens ne nous est parvenu : l’essentiel de ce que nous savons vient d’auteurs grecs et latins.',
+          'Hérodote (Histoires, IV, 42) raconte que le pharaon Néchao II envoya des Phéniciens contourner la Libye, c’est-à-dire l’Afrique. Partis de la mer Rouge, ils auraient navigué vers le sud ; à l’automne, ils abordaient, semaient du blé et attendaient la récolte avant de repartir. Au bout de trois ans, ils seraient revenus en Égypte par les colonnes d’Héraclès, l’actuel détroit de Gibraltar. Hérodote ajoute qu’ils disaient avoir eu le soleil à leur droite en contournant la Libye, ce qu’il déclare ne pas croire. Pour les historiens modernes, ce détail est cohérent avec une navigation vers l’ouest dans l’hémisphère sud, où le soleil passe au nord ; il est souvent cité comme argument en faveur de l’authenticité du récit, mais celle-ci reste débattue faute de confirmation indépendante.',
+          'Le Périple d’Hannon est un texte grec bref, présenté comme la traduction d’une inscription punique déposée à Carthage dans un sanctuaire. Il décrit une expédition carthaginoise le long de la côte atlantique de l’Afrique avec soixante navires à cinquante rames (pentécontères) et, selon le texte, 30 000 hommes et femmes destinés à fonder des établissements. Le récit mentionne la fondation de villes, un fleuve peuplé de crocodiles et d’hippopotames, une montagne en éruption et des êtres velus que les interprètes appellent « Gorillai », mot à l’origine du nom actuel du gorille. L’identification des lieux est très discutée : selon les auteurs, l’expédition aurait atteint le Sénégal, la Sierra Leone ou même le Cameroun et le Gabon.',
+          'Ces deux récits montrent bien la difficulté de travailler sur la navigation antique. Les textes sont courts, transmis par des copies tardives, et les toponymes ont disparu. Les chiffres, comme les 30 000 colons d’Hannon, sont souvent jugés exagérés. L’historien confronte donc le texte à l’archéologie des comptoirs, à la géographie des vents et des courants et aux autres auteurs antiques, sans transformer une hypothèse en certitude.'
+        ],
+        example: {
+          statement: 'Le Périple d’Hannon indique 60 navires à 50 rames et 30 000 personnes. Si l’on compte uniquement les rameurs d’un navire plein, combien de personnes restent-elles à transporter ?',
+          calculation: '60 navires × 50 rameurs = 3 000 rameurs. 30 000 − 3 000 = 27 000 personnes.',
+          answer: 'Il resterait 27 000 personnes, soit 450 par navire en moyenne, un chiffre que de nombreux historiens jugent peu plausible. Cela illustre pourquoi les chiffres des sources antiques doivent être discutés.'
+        },
+        exercise: {
+          question: 'Pourquoi le détail du soleil « à droite » rapporté par Hérodote est-il intéressant pour les historiens ?',
+          answer: 'Parce qu’il correspond à ce que verrait un navigateur allant vers l’ouest au sud de l’équateur, alors qu’Hérodote lui-même le trouvait incroyable. Cela peut plaider pour l’authenticité du récit, sans en apporter la preuve.'
+        },
+        exercises: [
+          {
+            question: 'Quel pharaon est associé par Hérodote à l’envoi d’une expédition phénicienne autour de l’Afrique ?',
+            answer: 'Néchao II.'
+          },
+          {
+            question: 'Quel est le nom du texte grec qui décrit l’expédition carthaginoise d’Hannon le long de la côte africaine ?',
+            answer: 'Le Périple d’Hannon.'
+          },
+          {
+            question: 'Le trajet exact d’Hannon est-il connu avec certitude ?',
+            answer: 'Non. Les lieux sont discutés : les propositions vont du Sénégal ou de la Sierra Leone jusqu’au Cameroun et au Gabon.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Phoenicia', url: 'https://www.worldhistory.org/Phoenicia/' },
+          { title: 'Encyclopædia Britannica — Hanno', url: 'https://www.britannica.com/biography/Hanno-Carthaginian-explorer' },
+          { title: 'Wikipedia — Hanno the Navigator', url: 'https://en.wikipedia.org/wiki/Hanno_the_Navigator' },
+          { title: 'Wikipedia — Necho II', url: 'https://en.wikipedia.org/wiki/Necho_II' }
+        ]
+      }
+    },
+    {
+      id: 'pytheas-de-massalia',
+      title: 'Pythéas de Massalia : de Marseille aux mers du Nord',
+      field: 'Antiquité grecque · Pythéas, voyage vers 325 av. J.-C. (datation approximative)',
+      summary: 'Étudier un explorateur et astronome grec dont l’œuvre est perdue, connue seulement par des auteurs qui le citent ou le critiquent.',
+      lesson: {
+        sections: [
+          'Massalia, l’actuelle Marseille, fut fondée vers 600 av. J.-C. par des Grecs venus de Phocée, en Asie Mineure. Pythéas y vécut à la fin du IVe siècle av. J.-C. Il est présenté par les sources antiques comme un navigateur et un astronome. Son livre, souvent désigné sous le titre Sur l’Océan, est perdu : nous ne le connaissons que par des citations de Strabon, de Pline l’Ancien, de Diodore de Sicile et d’autres auteurs.',
+          'Selon ces auteurs, Pythéas navigua jusqu’en Grande-Bretagne, qu’il appelait Prettanikè, et en fit le tour. Il décrivit la région de l’étain, métal essentiel pour fabriquer le bronze, et le commerce qui l’accompagnait. Il rapporta aussi l’existence d’une terre appelée Thulé, située à six jours de navigation au nord de la Bretagne, où les nuits seraient très courtes en été. Le lieu désigné par Thulé est discuté : on a proposé l’Islande, la Norvège, les Shetland ou d’autres régions. Les sources ne permettent pas de trancher.',
+          'Pythéas est aussi associé à l’astronomie. Strabon rapporte que Hipparque jugeait exactes certaines observations de Pythéas liées à la hauteur du soleil à Massalia, obtenues avec un gnomon, c’est-à-dire un bâton planté verticalement dont on mesure l’ombre. Des auteurs tardifs lui attribuent aussi une relation entre les marées et la Lune. Ces attributions viennent de sources indirectes et doivent être employées avec prudence.',
+          'Sa réputation fut mitigée dès l’Antiquité. Strabon, qui écrit environ trois siècles plus tard, le traite de menteur et refuse de croire à ses descriptions. Les historiens modernes sont en général plus nuancés : certains détails, comme les journées d’été très longues dans le nord, semblent correspondre à une observation réelle, mais la reconstruction exacte du voyage demeure incertaine.'
+        ],
+        example: {
+          statement: 'Massalia est fondée vers 600 av. J.-C. et le voyage de Pythéas est daté vers 325 av. J.-C. Combien d’années séparent les deux repères ?',
+          calculation: 'Pour deux dates avant J.-C., on soustrait la plus petite de la plus grande : 600 − 325 = 275.',
+          answer: 'Environ 275 ans. Le voyage a lieu bien après la fondation de la cité, dans une Massalia déjà ancienne et commerçante.'
+        },
+        exercise: {
+          question: 'Pourquoi connaît-on Pythéas sans posséder son livre ?',
+          answer: 'Parce que son œuvre est perdue et que nous n’en avons que des citations ou des critiques chez des auteurs comme Strabon, Pline l’Ancien ou Diodore de Sicile.'
+        },
+        exercises: [
+          {
+            question: 'De quelle cité grecque de l’actuelle France Pythéas est-il originaire ?',
+            answer: 'De Massalia, l’actuelle Marseille.'
+          },
+          {
+            question: 'Que désigne le nom Thulé dans le récit de Pythéas ?',
+            answer: 'Une terre lointaine au nord de la Bretagne. Son identification (Islande, Norvège, Shetland...) reste discutée.'
+          },
+          {
+            question: 'Quel instrument simple est associé aux observations astronomiques de Pythéas à Massalia ?',
+            answer: 'Le gnomon, un bâton vertical dont l’ombre sert à mesurer la hauteur du soleil.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopædia Britannica — Pytheas', url: 'https://www.britannica.com/biography/Pytheas' },
+          { title: 'Wikipedia — Pytheas', url: 'https://en.wikipedia.org/wiki/Pytheas' },
+          { title: 'Encyclopædia Britannica — Marseille', url: 'https://www.britannica.com/place/Marseille' },
+          { title: 'World History Encyclopedia — Massalia', url: 'https://www.worldhistory.org/Massalia/' }
+        ]
+      }
+    },
+    {
+      id: 'nearque-flotte-alexandre',
+      title: 'Néarque et la flotte d’Alexandre : de l’Indus au golfe Persique',
+      field: 'Antiquité · Néarque, né en Crète, actif vers 325 av. J.-C. (dates de naissance et de mort approximatives)',
+      summary: 'Comprendre comment une flotte macédonienne a relié l’Indus à l’Euphrate en 325 av. J.-C. et comment nous la connaissons par Arrien.',
+      lesson: {
+        sections: [
+          'Néarque, d’origine crétoise et lié à la cité d’Amphipolis, fut un compagnon d’Alexandre le Grand. Après la campagne en Inde, Alexandre fit construire une flotte sur l’Hydaspe et la fit descendre l’Indus jusqu’à l’océan. À l’automne 325 av. J.-C., Néarque reçut le commandement de cette flotte pour longer les côtes de l’actuel Pakistan et de l’Iran jusqu’au golfe Persique. Pendant ce temps, Alexandre traversait par voie de terre le désert de Gédrosie, une épreuve très coûteuse pour son armée.',
+          'Le récit de Néarque lui-même est perdu. Nous le connaissons surtout par l’Indica d’Arrien, un historien grec du IIe siècle de notre ère qui s’appuie sur lui. Ce texte raconte la préparation de l’expédition, les difficultés avec les populations côtières, la recherche d’eau douce et de vivres, et la rencontre de peuples que les Grecs appellent les Ichtyophages, les « mangeurs de poissons ». Il rapporte aussi l’observation de baleines, qui effraya les équipages.',
+          'La navigation se faisait le long de la côte, en s’appuyant sur des mouillages et des points d’eau. La flotte retrouva Alexandre en Carmanie, puis continua jusqu’à l’embouchure du Tigre et de l’Euphrate. Le voyage prouvait qu’une voie maritime reliait l’Inde au golfe Persique et à la Mésopotamie, ce qui intéressait fortement Alexandre pour le commerce et l’administration de son empire.',
+          'L’expédition est un bon exemple de navigation d’État : elle sert un projet politique et militaire, non une exploration désintéressée. Alexandre mourut à Babylone en 323 av. J.-C., environ deux ans après le départ de Néarque, et ses projets de développement de routes maritimes ne furent pas poursuivis tels quels.'
+        ],
+        example: {
+          statement: 'Le départ de la flotte date de 325 av. J.-C. et la mort d’Alexandre de 323 av. J.-C. Combien d’années s’écoulent ?',
+          calculation: 'Avant J.-C., on soustrait : 325 − 323 = 2.',
+          answer: 'Environ 2 ans. Le voyage de Néarque a donc lieu peu avant la mort d’Alexandre.'
+        },
+        exercise: {
+          question: 'Pourquoi la source principale sur Néarque est-elle l’Indica d’Arrien ?',
+          answer: 'Parce que le récit original de Néarque est perdu, et qu’Arrien, au IIe siècle de notre ère, en a transmis l’essentiel dans son Indica.'
+        },
+        exercises: [
+          {
+            question: 'Quel fleuve la flotte de Néarque quitte-t-elle pour gagner l’océan ?',
+            answer: 'L’Indus.'
+          },
+          {
+            question: 'Quel désert Alexandre traverse-t-il par voie de terre pendant le voyage de la flotte ?',
+            answer: 'Le désert de Gédrosie.'
+          },
+          {
+            question: 'Quel mot grec désigne les populations côtières décrites comme vivant de poisson ?',
+            answer: 'Les Ichtyophages, c’est-à-dire les « mangeurs de poissons ».'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopædia Britannica — Nearchus', url: 'https://www.britannica.com/biography/Nearchus' },
+          { title: 'Wikipedia — Nearchus', url: 'https://en.wikipedia.org/wiki/Nearchus' },
+          { title: 'World History Encyclopedia — Alexander the Great', url: 'https://www.worldhistory.org/Alexander_the_Great/' },
+          { title: 'Wikipedia — Indica (Arrian)', url: 'https://en.wikipedia.org/wiki/Indica_(Arrian)' }
+        ]
+      }
+    },
+    {
+      id: 'hippalos-routes-moussons',
+      title: 'Hippalos, le Périple de la mer Érythrée et les routes des moussons',
+      field: 'Antiquité romaine · Ier siècle de notre ère, datation du Périple discutée',
+      summary: 'Comprendre comment les vents de mousson ont permis des liaisons régulières entre l’Égypte romaine et l’Inde.',
+      lesson: {
+        sections: [
+          'Le Périple de la mer Érythrée est un manuel grec de navigation et de commerce rédigé par un auteur anonyme, probablement un marchand de l’Égypte romaine. On le date en général du Ier siècle de notre ère, mais la date exacte est discutée. Il décrit des ports de la mer Rouge comme Myos Hormos et Bérénice, puis les côtes d’Arabie, d’Afrique orientale et d’Inde, avec les marchandises échangées dans chaque escale.',
+          'Les vents de mousson sont des vents saisonniers qui s’inversent : le vent du sud-ouest souffle en été et pousse vers l’Inde, le vent du nord-est souffle en hiver et permet le retour. Le Périple attribue à un pilote nommé Hippalos la découverte de la route en haute mer en tirant parti de ces vents. On ne sait presque rien de lui, et on ne peut pas dater précisément son action. Les marins arabes et indiens connaissaient probablement déjà ces vents avant les Grecs d’Égypte : il faut donc voir dans cette tradition une popularisation de la route directe dans le monde gréco-romain plus qu’une découverte absolue.',
+          'Pline l’Ancien, dans son Histoire naturelle, décrit des voyages vers l’Inde au départ de la mer Rouge, avec environ quarante jours pour atteindre Muziris, grand port de la côte de Malabar, quand la saison est bien choisie. Les marchandises échangées comprennent poivre, perles, ivoire et étoffes. Un papyrus de Muziris, conservé à Vienne et daté du IIe siècle de notre ère, détaille une cargaison d’un navire revenant de cette route et montre la valeur considérable de ce commerce.',
+          'L’archéologie confirme l’importance de cette route : les fouilles de Bérénice, sur la mer Rouge, ont livré des produits d’origine indienne, comme du poivre et des objets importés. La route des moussons illustre ainsi comment la connaissance des vents, plus que la découverte d’une terre nouvelle, a transformé le commerce à longue distance.'
+        ],
+        example: {
+          statement: 'Un navire quitte la mer Rouge à la mi-juillet et le trajet dure environ 40 jours. À quel moment approximatif arrive-t-il en Inde ?',
+          calculation: 'Mi-juillet + 40 jours : il reste environ 15 jours en juillet, puis 25 jours en août.',
+          answer: 'Vers le 25 août environ, dans la saison du vent du sud-ouest. C’est un ordre de grandeur, non une date garantie.'
+        },
+        exercise: {
+          question: 'Pourquoi la mousson est-elle essentielle à la route entre l’Égypte romaine et l’Inde ?',
+          answer: 'Parce que ses vents alternent selon la saison : l’un favorise l’aller vers l’Inde en été, l’autre permet le retour en hiver.'
+        },
+        exercises: [
+          {
+            question: 'Quel pilote le Périple de la mer Érythrée associe-t-il à la route directe vers l’Inde ?',
+            answer: 'Hippalos.'
+          },
+          {
+            question: 'Quel port indien est cité comme destination majeure de ce commerce ?',
+            answer: 'Muziris, sur la côte de Malabar.'
+          },
+          {
+            question: 'La date du Périple de la mer Érythrée est-elle connue avec certitude ?',
+            answer: 'Non. On le situe généralement au Ier siècle de notre ère, mais la date précise est discutée.'
+          }
+        ],
+        sources: [
+          { title: 'Wikipedia — Periplus of the Erythraean Sea', url: 'https://en.wikipedia.org/wiki/Periplus_of_the_Erythraean_Sea' },
+          { title: 'Wikipedia — Hippalus', url: 'https://en.wikipedia.org/wiki/Hippalus' },
+          { title: 'World History Encyclopedia — Periplus of the Erythraean Sea', url: 'https://www.worldhistory.org/Periplus_of_the_Erythraean_Sea/' },
+          { title: 'Wikipedia — Muziris', url: 'https://en.wikipedia.org/wiki/Muziris' }
+        ]
+      }
+    },
+    {
+      id: 'vikings-groenland-vinland',
+      title: 'Les Vikings : de l’Islande au Groenland et à l’Amérique du Nord',
+      field: 'Moyen Âge · Âge viking · Erik le Rouge (Groenland, vers 985) · L’Anse aux Meadows (an 1021)',
+      summary: 'Distinguer les récits des sagas et les preuves archéologiques de la présence scandinave en Amérique du Nord.',
+      lesson: {
+        sections: [
+          'Les Scandinaves se sont étendus à partir de la fin du VIIIe siècle, par des raids, du commerce et des installations. Ils colonisent l’Islande à partir d’environ 870. Erik le Rouge, banni d’Islande, explore le Groenland et y fonde des établissements vers 985-986. Deux colonies norroises s’y développent, qui disparaissent plus tard, au plus tard au XVe siècle. Ces dates sont des approximations tirées de sources écrites tardives et de l’archéologie.',
+          'Les sagas des Groenlandais et d’Erik le Rouge racontent l’exploration de terres à l’ouest du Groenland, dont une région appelée Vinland, associée à Leif Erikson, fils d’Erik. Ces sagas ont été mises par écrit au XIIIe siècle, plus de deux siècles après les faits. Elles contiennent des éléments légendaires et des versions divergentes, et la localisation exacte du Vinland est débattue.',
+          'La preuve matérielle la plus solide est le site de L’Anse aux Meadows, à Terre-Neuve, au Canada. Il est découvert en 1960 par l’explorateur norvégien Helge Ingstad et l’archéologue Anne Stine Ingstad, puis fouillé et étudié ensuite, notamment par Parks Canada. On y a mis au jour des bâtiments de type scandinave, des restes de travail du fer et d’autres traces d’occupation. Le site est inscrit au patrimoine mondial de l’UNESCO en 1978. Une étude publiée dans Nature en 2021 a daté des bois coupés avec des outils métalliques de l’an 1021 grâce à un pic de carbone 14 lié à un événement solaire de 993, ce qui constitue un repère précis pour la présence européenne en Amérique.',
+          'Les navires scandinaves comprennent des drakkars, rapides et maniables, et des knarrs, bateaux de charge plus larges adaptés aux traversées de l’Atlantique Nord. Les navigateurs s’orientaient grâce au soleil, aux étoiles, aux oiseaux et à la connaissance des côtes. Les sagas mentionnent une « pierre solaire », dont la nature exacte et l’usage restent débattus. La présence norroise en Amérique semble avoir été brève et n’a pas conduit à une colonisation durable.'
+        ],
+        example: {
+          statement: 'Erik le Rouge s’installe au Groenland vers 985 et le site de L’Anse aux Meadows est daté de 1021. Combien d’années s’écoulent entre ces deux repères ?',
+          calculation: 'Pour deux dates après J.-C., on soustrait la plus petite de la plus grande : 1021 − 985 = 36.',
+          answer: 'Environ 36 ans. La présence à Terre-Neuve intervient donc une génération après les premiers établissements au Groenland.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les sagas et l’archéologie pour étudier le Vinland ?',
+          answer: 'Parce que les sagas ont été écrites au XIIIe siècle et contiennent des éléments légendaires, alors que le site de L’Anse aux Meadows fournit des preuves matérielles et une datation précise.'
+        },
+        exercises: [
+          {
+            question: 'Quel navigateur fonde des établissements au Groenland vers 985-986 ?',
+            answer: 'Erik le Rouge.'
+          },
+          {
+            question: 'Où se trouve le site viking de L’Anse aux Meadows ?',
+            answer: 'À Terre-Neuve, au Canada.'
+          },
+          {
+            question: 'Quelle date précise une étude de 2021 a-t-elle proposée pour la coupe de bois à L’Anse aux Meadows ?',
+            answer: 'L’an 1021, grâce à un repère de carbone 14 lié à un événement solaire de 993.'
+          }
+        ],
+        sources: [
+          { title: 'UNESCO — L’Anse aux Meadows National Historic Site', url: 'https://whc.unesco.org/en/list/4' },
+          { title: 'Encyclopædia Britannica — Leif Eriksson', url: 'https://www.britannica.com/biography/Leif-Eriksson' },
+          { title: 'World History Encyclopedia — Leif Erikson', url: 'https://www.worldhistory.org/Leif_Erikson/' },
+          { title: 'Encyclopædia Britannica — Erik the Red', url: 'https://www.britannica.com/biography/Eric-the-Red' }
+        ]
+      }
+    },
+    {
+      id: 'zheng-he',
+      title: 'Zheng He et les expéditions maritimes des Ming',
+      field: 'Moyen Âge tardif · Zheng He (né vers 1371, mort vers 1433, date discutée) · Sept voyages de 1405 à 1433',
+      summary: 'Étudier les grandes expéditions chinoises dans l’océan Indien, leurs objectifs diplomatiques et les limites des chiffres transmis.',
+      lesson: {
+        sections: [
+          'Zheng He naît vers 1371 dans la province du Yunnan, dans une famille musulmane, sous le nom de Ma He. Capturé enfant lors de la conquête du Yunnan par les Ming, il entre au service du prince Zhu Di, futur empereur Yongle, et devient eunuque et haut dignitaire. L’empereur lui confie le commandement de grandes expéditions maritimes, dont les dates traditionnelles sont 1405-1407, 1407-1409, 1409-1411, 1413-1415, 1417-1419, 1421-1422 et 1431-1433.',
+          'Ces expéditions avaient un but à la fois politique et commercial : affirmer le prestige des Ming, obtenir l’allégeance de souverains étrangers, faire venir des ambassadeurs en Chine et échanger des marchandises. Les flottes visitent l’Asie du Sud-Est, Ceylan, l’Inde, le golfe Persique et la mer Rouge, et atteignent la côte orientale de l’Afrique. Les sources chinoises, dont l’Histoire des Ming, parlent pour la première expédition de 62 grands navires et d’environ 27 800 hommes ; ces chiffres sont une donnée de source, que les historiens manient avec prudence.',
+          'Les témoignages principaux incluent des récits de participants, comme Ma Huan et Fei Xin, ainsi que des inscriptions, notamment la stèle de Changle de 1431, qui résume les voyages. La taille des « navires au trésor » est très discutée : les textes avancent des longueurs considérables, mais les spécialistes divergent sur ce qui est techniquement plausible pour des bateaux en bois de cette époque.',
+          'Les expéditions s’arrêtent après le dernier voyage. Les raisons avancées par les historiens combinent le coût, les priorités militaires aux frontières du nord et les changements de politique à la cour. La date et le lieu de la mort de Zheng He sont débattus : on indique souvent 1433, parfois 1435, et certaines traditions évoquent une mort pendant le retour du dernier voyage.'
+        ],
+        example: {
+          statement: 'Les sept voyages couvrent la période de 1405 à 1433. Combien d’années séparent le début du premier voyage de la fin du dernier ?',
+          calculation: 'Pour deux dates après J.-C., on soustrait : 1433 − 1405 = 28.',
+          answer: 'Environ 28 ans. Cette durée ne signifie pas que les voyages étaient continus : ils se sont répartis en sept expéditions distinctes.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il être prudent avec les chiffres des flottes de Zheng He ?',
+          answer: 'Parce qu’ils proviennent de sources chinoises dont la précision est discutée, et que les dimensions des navires, en particulier, font l’objet de débats entre spécialistes.'
+        },
+        exercises: [
+          {
+            question: 'Sous quel empereur commencent les expéditions de Zheng He ?',
+            answer: 'Sous l’empereur Yongle, de la dynastie Ming.'
+          },
+          {
+            question: 'Combien d’expéditions sont traditionnellement attribuées à Zheng He ?',
+            answer: 'Sept, entre 1405 et 1433.'
+          },
+          {
+            question: 'Les flottes de Zheng He ont-elles atteint la côte orientale de l’Afrique ?',
+            answer: 'Oui, selon les sources chinoises, certaines expéditions ont atteint la côte orientale de l’Afrique.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopædia Britannica — Zheng He', url: 'https://www.britannica.com/biography/Zheng-He' },
+          { title: 'World History Encyclopedia — Zheng He', url: 'https://www.worldhistory.org/Zheng_He/' },
+          { title: 'Wikipedia — Zheng He', url: 'https://en.wikipedia.org/wiki/Zheng_He' },
+          { title: 'Wikipedia — Ming treasure voyages', url: 'https://en.wikipedia.org/wiki/Ming_treasure_voyages' }
+        ]
+      }
+    },
+    {
+      id: 'ibn-majid',
+      title: 'Ahmad ibn Majid et la science nautique de l’océan Indien',
+      field: 'Moyen Âge tardif · Ahmad ibn Majid, actif à la fin du XVe siècle, dates de naissance et de mort incertaines',
+      summary: 'Comprendre comment un pilote arabe a rédigé des traités de navigation, et pourquoi la légende autour de Vasco de Gama est discutée.',
+      lesson: {
+        sections: [
+          'Ahmad ibn Majid est un pilote et auteur arabe originaire de la région de Julfar, dans l’actuel Émirat de Ras el-Khaïmah. Il est issu d’une famille de navigateurs. Ses dates exactes ne sont pas connues : on le situe généralement dans la seconde moitié du XVe siècle, avec une activité qui se prolonge jusqu’au début du XVIe siècle.',
+          'Il rédige des traités de navigation, souvent en vers pour faciliter la mémorisation. Son œuvre la plus connue est le Kitab al-Fawa’id fi usul ‘ilm al-bahr wa’l-qawa’id, daté de 1490, qui rassemble des connaissances sur les routes, les ports, les vents, la mousson, les étoiles et les instruments. Il y décrit l’emploi de la boussole et du kamal, un instrument simple qui sert à mesurer la hauteur d’un astre au-dessus de l’horizon à l’aide d’une corde et d’une planchette.',
+          'Ses textes montrent une tradition de navigation orale et écrite très élaborée : des listes d’étoiles et de repères célestes, des saisons favorables selon les ports et des itinéraires entre la mer Rouge, l’Inde, l’Asie du Sud-Est et l’Afrique orientale. Ils rappellent que l’océan Indien était déjà un espace de navigation intense avant l’arrivée des Portugais.',
+          'Une tradition rapporte qu’Ibn Majid aurait guidé Vasco de Gama en 1498 de Malindi vers l’Inde. Cette affirmation, issue de sources arabes tardives, est rejetée ou fortement contestée par de nombreux spécialistes, car elle ne s’appuie pas sur des preuves solides et les sources portugaises parlent d’un pilote d’origine gujarati. L’historien doit donc distinguer le personnage historique, auteur de traités, de la légende construite autour de son nom.'
+        ],
+        example: {
+          statement: 'Le Kitab al-Fawa’id est daté de 1490 et Vasco de Gama arrive à Calicut en 1498. Combien d’années séparent ces deux repères ?',
+          calculation: '1498 − 1490 = 8.',
+          answer: '8 ans. Le grand traité d’Ibn Majid précède donc de peu l’arrivée de Vasco de Gama en Inde.'
+        },
+        exercise: {
+          question: 'Pourquoi Ibn Majid est-il important pour l’histoire de la navigation ?',
+          answer: 'Parce que ses traités conservent un savoir nautique arabe très élaboré sur l’océan Indien, avec les vents, les étoiles, les routes et les instruments.'
+        },
+        exercises: [
+          {
+            question: 'Quel instrument simple pour mesurer la hauteur d’un astre est décrit dans les textes d’Ibn Majid ?',
+            answer: 'Le kamal.'
+          },
+          {
+            question: 'Pourquoi Ibn Majid rédige-t-il souvent ses textes en vers ?',
+            answer: 'Pour faciliter la mémorisation des informations de navigation.'
+          },
+          {
+            question: 'Est-il établi qu’Ibn Majid a guidé Vasco de Gama en 1498 ?',
+            answer: 'Non. Cette tradition est très contestée par les spécialistes.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopædia Britannica — Ahmad ibn Majid', url: 'https://www.britannica.com/biography/Ahmad-ibn-Majid' },
+          { title: 'Wikipedia — Ahmad ibn Majid', url: 'https://en.wikipedia.org/wiki/Ahmad_ibn_Majid' },
+          { title: 'Encyclopædia Britannica — Vasco da Gama', url: 'https://www.britannica.com/biography/Vasco-da-Gama' },
+          { title: 'Wikipedia — Kamal (navigation)', url: 'https://en.wikipedia.org/wiki/Kamal_(navigation)' }
+        ]
+      }
+    },
+    {
+      id: 'bartolomeu-dias',
+      title: 'Bartolomeu Dias et le contournement du cap de Bonne-Espérance',
+      field: 'Fin du Moyen Âge · Bartolomeu Dias (né vers 1450, mort en 1500) · Voyage de 1487-1488',
+      summary: 'Suivre l’expédition portugaise qui ouvre la voie maritime vers l’océan Indien par l’Atlantique.',
+      lesson: {
+        sections: [
+          'Bartolomeu Dias est un navigateur portugais né vers 1450. Il s’inscrit dans une politique de longue durée du Portugal, qui explore la côte africaine tout au long du XVe siècle, notamment sous l’impulsion de l’infant Henri le Navigateur puis du roi Jean II. L’objectif est de trouver une route maritime vers les richesses de l’Orient, en contournant l’Afrique.',
+          'Dias quitte Lisbonne en 1487 avec deux caravelles et un navire de ravitaillement. Il longe la côte occidentale africaine, puis des tempêtes l’écartent de la côte vers le large. En virant vers l’est puis vers le nord, il touche terre en 1488 près de la baie de Mossel, sur la côte sud de l’actuelle Afrique du Sud : le cap est donc contourné sans être vu. Il poursuit jusqu’à la région du fleuve Great Fish, où l’équipage, inquiet, demande à faire demi-tour.',
+          'Au retour, Dias aperçoit le cap lui-même, qu’il aurait nommé cap des Tempêtes. Le roi Jean II le rebaptise cap de Bonne-Espérance, nom qui exprime l’espoir d’atteindre l’Inde. Dias est de retour à Lisbonne en décembre 1488. Son expédition prouve que l’Atlantique et l’océan Indien sont reliés par le sud de l’Afrique.',
+          'Dias participe ensuite à la préparation des navires de l’expédition de Vasco de Gama, qui atteint l’Inde en 1498. Il meurt en mai 1500 lors d’une tempête près du cap de Bonne-Espérance, alors qu’il fait partie de la flotte de Pedro Álvares Cabral. Il illustre le passage du Moyen Âge tardif à l’âge des grandes explorations maritimes européennes.'
+        ],
+        example: {
+          statement: 'Dias contourne le cap en 1488 et Vasco de Gama atteint l’Inde en 1498. Combien d’années s’écoulent entre les deux événements ?',
+          calculation: '1498 − 1488 = 10.',
+          answer: '10 ans. La route ouverte par Dias est exploitée environ une décennie plus tard par Vasco de Gama.'
+        },
+        exercise: {
+          question: 'Pourquoi l’expédition de Dias est-elle décisive pour les routes maritimes vers l’Asie ?',
+          answer: 'Parce qu’elle montre qu’on peut passer de l’Atlantique à l’océan Indien en contournant l’Afrique par le sud.'
+        },
+        exercises: [
+          {
+            question: 'Quel roi portugais renomme le cap des Tempêtes en cap de Bonne-Espérance ?',
+            answer: 'Jean II.'
+          },
+          {
+            question: 'En quelle année Dias revient-il à Lisbonne après son grand voyage ?',
+            answer: 'En décembre 1488.'
+          },
+          {
+            question: 'Dias a-t-il atteint l’Inde ?',
+            answer: 'Non. Il a contourné l’extrémité sud de l’Afrique, mais c’est Vasco de Gama qui atteint l’Inde en 1498.'
+          }
+        ],
+        sources: [
+          { title: 'Encyclopædia Britannica — Bartolomeu Dias', url: 'https://www.britannica.com/biography/Bartolomeu-Dias' },
+          { title: 'Wikipedia — Bartolomeu Dias', url: 'https://en.wikipedia.org/wiki/Bartolomeu_Dias' },
+          { title: 'World History Encyclopedia — Henry the Navigator', url: 'https://www.worldhistory.org/Henry_the_Navigator/' },
+          { title: 'Encyclopædia Britannica — Cape of Good Hope', url: 'https://www.britannica.com/place/Cape-of-Good-Hope' }
+        ]
+      }
+    }
+  ]
+},
 
 ]
 
