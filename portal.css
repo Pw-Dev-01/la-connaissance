@@ -391,6 +391,16 @@ background: #5e4b7a;
 background: var(--climate);
 }
 
+.peinture-entry .entry-symbol {
+background: #5E4B7A;
+}
+
+.cinema-entry .entry-symbol {
+background: #7A1E2C;
+}
+
+
+
 .entry-copy {
 display: grid;
 gap: 7px;
@@ -1090,4 +1100,5 @@ transition: none;
 .header-search-form button {
   align-self: flex-end;
 }
+
 
