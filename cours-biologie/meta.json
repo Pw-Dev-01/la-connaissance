@@ -1,7 +1,7 @@
 {
   "title": "Biologie",
   "symbol": "B",
-  "description": "Les bases du vivant en trois branches : les cellules (théorie cellulaire, organites, membrane, énergie, division), l’ADN (structure, réplication, expression des gènes, mutations, séquençage) et les premiers organismes vivants (origine de la vie, premières traces, oxygène, eucaryotes, premiers multicellulaires).",
+  "description": "Les bases du vivant : les cellules, l’ADN, les premiers organismes vivants",
   "order": 12,
   "entry": "index.html",
   "dataFile": "biologie-data.js",
