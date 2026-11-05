@@ -1,0 +1,9 @@
+{
+  "title": "Paléontologie",
+  "symbol": "P",
+  "description": "Des fossiles aux archives de l’histoire du vivant",
+  "order": 7,
+  "entry": "index.html",
+  "dataFile": "paleontologie-data.js",
+  "class": "paleontology-entry"
+}
