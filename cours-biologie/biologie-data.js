@@ -1046,5 +1046,282 @@ window.courseCatalog = [
     ]
   },
 
-];
+{
+  id: 'chimie-vivant',
+  title: 'Chimie du vivant: Comment fonctionne les cellules',
+  note: 'Six chapitres approfondis sur les bases chimiques du vivant, les biomolécules, les membranes cellulaires, les enzymes, la respiration cellulaire et la photosynthèse. La propriété sortYear est volontairement absente, car le classement chronologique est désactivé pour cette branche.',
+  chapters: [
+    {
+      id: 'composition-chimique-cellules',
+      title: 'La composition chimique des cellules : atomes, eau et ions',
+      field: 'Chimie du vivant · Constituants chimiques et milieu cellulaire',
+      summary: 'Identifier les éléments chimiques du vivant et comprendre comment l’eau, les ions et les interactions moléculaires rendent possibles les réactions cellulaires.',
+      lesson: {
+        sections: [
+          'Une cellule est un système chimique organisé. Elle contient de l’eau, des ions minéraux et de nombreuses molécules carbonées. Les éléments les plus abondants dans les molécules biologiques sont le carbone (C), l’hydrogène (H), l’oxygène (O), l’azote (N), le phosphore (P) et le soufre (S), souvent regroupés sous le sigle CHNOPS. Le carbone peut former quatre liaisons covalentes, ce qui permet de construire des squelettes moléculaires variés : chaînes, ramifications et cycles. Les propriétés d’une molécule dépendent de ses atomes, de leur organisation et des liaisons qui les relient.',
+          'Les liaisons covalentes résultent du partage de paires d’électrons entre atomes. Elles constituent l’ossature de nombreuses molécules biologiques. Les interactions non covalentes sont généralement plus faibles individuellement, mais leur accumulation joue un rôle majeur dans la forme des macromolécules et leur reconnaissance mutuelle. Les liaisons hydrogène, les interactions électrostatiques, les forces de dispersion et l’effet hydrophobe contribuent par exemple au repliement des protéines, à l’association des deux brins d’ADN et à l’organisation des membranes. La structure biologique résulte donc d’un équilibre d’interactions plutôt que d’une seule liaison isolée.',
+          'L’eau est le principal constituant de nombreuses cellules. Sa molécule est polaire : l’oxygène attire davantage les électrons de liaison que l’hydrogène, ce qui crée des charges partielles. Les molécules d’eau peuvent ainsi établir des liaisons hydrogène entre elles et avec des groupes polaires. L’eau dissout efficacement de nombreux ions et composés polaires, ce qui facilite leur transport et leurs réactions. À l’inverse, les molécules majoritairement apolaires sont souvent peu solubles dans l’eau. Cette différence de comportement est fondamentale pour comprendre l’assemblage des membranes et le regroupement de certaines molécules.',
+          'Les ions sont des atomes ou des groupes d’atomes qui portent une charge électrique. Le sodium (Na+), le potassium (K+), le calcium (Ca2+), le magnésium (Mg2+) et le chlorure (Cl−) remplissent des fonctions distinctes. Ils participent à l’équilibre osmotique, à l’activité de protéines, à la signalisation et aux propriétés électriques des cellules. Leur répartition de part et d’autre de la membrane plasmique est contrôlée par des mécanismes de transport. Les concentrations intracellulaires ne sont donc pas simplement identiques à celles du milieu extérieur.',
+          'Le pH caractérise l’acidité d’une solution et dépend de l’activité des ions hydrogène. De nombreuses protéines sont sensibles au pH, car la charge de certains groupes chimiques de leurs acides aminés peut changer lorsque le milieu devient plus acide ou plus basique. Les systèmes tampons limitent les variations de pH en captant ou en libérant des protons selon les conditions. Ils contribuent à maintenir un environnement compatible avec les réactions métaboliques. Les valeurs de pH optimales varient selon les compartiments cellulaires et les organismes : il n’existe pas une valeur universelle pour toutes les cellules.'
+        ],
+        example: {
+          statement: 'Une molécule possède plusieurs groupes chargés ou polaires et se trouve dans un milieu aqueux. Quel comportement peut-on généralement prévoir ?',
+          calculation: 'L’eau est polaire. Les groupes chargés ou polaires peuvent établir avec elle des interactions électrostatiques ou des liaisons hydrogène. La solubilité dépend cependant aussi de la taille de la partie apolaire et de la structure complète de la molécule.',
+          answer: 'La molécule peut être hydrophile et présenter une bonne interaction avec l’eau. Il s’agit d’une prévision générale : la solubilité exacte dépend de toute sa structure chimique.'
+        },
+        exercise: {
+          question: 'Pourquoi l’eau est-elle un milieu essentiel aux réactions chimiques des cellules ?',
+          answer: 'Sa polarité permet de dissoudre de nombreux ions et composés polaires. Elle facilite leur diffusion, leur rencontre et les réactions chimiques dans le milieu cellulaire.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie le sigle CHNOPS ?',
+            answer: 'Carbone, hydrogène, azote, oxygène, phosphore et soufre.'
+          },
+          {
+            question: 'Quelle propriété de l’eau favorise la dissolution de nombreux ions ?',
+            answer: 'Sa polarité, qui permet des interactions électrostatiques favorables avec les ions.'
+          },
+          {
+            question: 'À quoi servent les systèmes tampons ?',
+            answer: 'Ils limitent les variations de pH en captant ou en libérant des protons.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 2.1 Atoms, Isotopes, Ions, and Molecules', url: 'https://openstax.org/books/biology-2e/pages/2-1-atoms-isotopes-ions-and-molecules-the-building-blocks' },
+          { title: 'OpenStax — Biology 2e, 2.2 Water', url: 'https://openstax.org/books/biology-2e/pages/2-2-water' },
+          { title: 'OpenStax — Biology 2e, 2.3 Carbon', url: 'https://openstax.org/books/biology-2e/pages/2-3-carbon' },
+          { title: 'NCBI Bookshelf — Molecular Biology of the Cell, The Chemical Components of a Cell', url: 'https://www.ncbi.nlm.nih.gov/books/NBK21054/' }
+        ]
+      }
+    },
+    {
+      id: 'biomolecules-cellulaires',
+      title: 'Les biomolécules : glucides, lipides, protéines et acides nucléiques',
+      field: 'Chimie du vivant · Molécules organiques et macromolécules',
+      summary: 'Étudier les grandes familles de molécules biologiques, leurs unités constitutives, leurs liaisons et leurs fonctions dans les cellules.',
+      lesson: {
+        sections: [
+          'Les glucides sont des molécules organiques constituées principalement de carbone, d’hydrogène et d’oxygène. Les monosaccharides, comme le glucose et le fructose, sont des sucres simples. Deux monosaccharides peuvent être reliés par une liaison glycosidique pour former un disaccharide. Des assemblages plus importants forment des polysaccharides. Le glucose est un substrat important de nombreuses voies métaboliques. L’amidon est une forme de réserve glucidique chez les plantes, tandis que le glycogène joue un rôle de réserve chez les animaux et les champignons. La cellulose est un polysaccharide structural majeur de la paroi des cellules végétales.',
+          'Les lipides constituent une famille hétérogène de molécules généralement peu solubles dans l’eau. Les triglycérides sont formés d’un glycérol lié à trois acides gras et représentent une forme importante de stockage énergétique. Les phospholipides possèdent une région hydrophile et une région hydrophobe : ils sont amphiphiles. Dans l’eau, cette propriété favorise leur organisation en bicouches, structure de base des membranes biologiques. D’autres lipides, comme les stéroïdes, possèdent une structure en cycles carbonés. Le cholestérol contribue notamment aux propriétés physiques de nombreuses membranes animales.',
+          'Les protéines sont des polymères d’acides aminés reliés par des liaisons peptidiques. La séquence des acides aminés constitue la structure primaire. Les interactions entre les groupes du squelette et des chaînes latérales contribuent à former des structures secondaires, comme les hélices alpha et les feuillets bêta, puis une structure tridimensionnelle. Certaines protéines sont constituées de plusieurs sous-unités associées. La forme tridimensionnelle conditionne largement leur fonction : catalyse enzymatique, transport, signalisation, défense, mouvement ou soutien structural. Une modification des conditions chimiques peut perturber leur conformation et leur activité.',
+          'Les acides nucléiques sont l’ADN et l’ARN. Ils sont constitués de nucléotides, chaque nucléotide comprenant un sucre à cinq carbones, un groupement phosphate et une base azotée. L’ADN stocke l’information génétique dans une séquence de nucléotides. L’ARN intervient dans l’expression de cette information et dans d’autres fonctions, notamment catalytiques ou régulatrices pour certains ARN. Les nucléotides ont également des fonctions énergétiques et de signalisation : l’ATP, par exemple, est un nucléotide utilisé dans de nombreux transferts d’énergie.',
+          'Les cellules construisent et dégradent continuellement leurs biomolécules. La formation de liaisons entre unités moléculaires peut être décrite, dans les cas classiques, comme une réaction de condensation avec libération d’eau. L’hydrolyse est une réaction qui utilise l’eau pour rompre certaines liaisons. Ces termes décrivent des transformations chimiques et non des mécanismes identiques pour toutes les familles. En particulier, les lipides ne sont généralement pas des polymères réguliers constitués d’une répétition d’un monomère unique, contrairement aux protéines, aux acides nucléiques et à de nombreux polysaccharides.'
+        ],
+        example: {
+          statement: 'Une cellule assemble plusieurs acides aminés pour former une chaîne polypeptidique. Quel type de liaison relie ces unités ?',
+          calculation: 'Le groupe carboxyle d’un acide aminé peut réagir avec le groupe amine d’un autre. La liaison formée entre les deux résidus est une liaison peptidique.',
+          answer: 'Les acides aminés sont reliés par des liaisons peptidiques pour former une chaîne polypeptidique.'
+        },
+        exercise: {
+          question: 'Pourquoi les phospholipides peuvent-ils former spontanément une bicouche dans un milieu aqueux ?',
+          answer: 'Parce qu’ils sont amphiphiles : leurs têtes hydrophiles interagissent avec l’eau tandis que leurs queues hydrophobes se regroupent à l’écart de l’eau.'
+        },
+        exercises: [
+          {
+            question: 'Quel polysaccharide constitue une réserve glucidique importante chez les végétaux ?',
+            answer: 'L’amidon.'
+          },
+          {
+            question: 'Quels sont les trois constituants d’un nucléotide ?',
+            answer: 'Un sucre à cinq carbones, un groupement phosphate et une base azotée.'
+          },
+          {
+            question: 'Quelle liaison relie les acides aminés dans une protéine ?',
+            answer: 'La liaison peptidique.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 3.2 Carbohydrates', url: 'https://openstax.org/books/biology-2e/pages/3-2-carbohydrates' },
+          { title: 'OpenStax — Biology 2e, 3.3 Lipids', url: 'https://openstax.org/books/biology-2e/pages/3-3-lipids' },
+          { title: 'OpenStax — Biology 2e, 3.4 Proteins', url: 'https://openstax.org/books/biology-2e/pages/3-4-proteins' },
+          { title: 'OpenStax — Biology 2e, 3.5 Nucleic Acids', url: 'https://openstax.org/books/biology-2e/pages/3-5-nucleic-acids' },
+          { title: 'NCBI Bookshelf — Molecular Biology of the Cell, The Chemical Components of a Cell', url: 'https://www.ncbi.nlm.nih.gov/books/NBK21054/' }
+        ]
+      }
+    },
+    {
+      id: 'membrane-et-echanges',
+      title: 'La membrane plasmique : structure, perméabilité et échanges',
+      field: 'Biologie cellulaire · Bicouche lipidique et transport membranaire',
+      summary: 'Comprendre la membrane plasmique, sa perméabilité sélective et les mécanismes qui contrôlent les échanges entre la cellule et son environnement.',
+      lesson: {
+        sections: [
+          'La membrane plasmique délimite la cellule et sépare le cytoplasme du milieu extracellulaire. Le modèle de la mosaïque fluide décrit une bicouche de lipides dans laquelle se trouvent des protéines et d’autres constituants. Les têtes hydrophiles des phospholipides sont orientées vers les milieux aqueux, tandis que leurs queues hydrophobes se font face au centre de la bicouche. Certaines protéines traversent la membrane et d’autres sont associées à l’une de ses faces. Des glucides liés à des lipides ou à des protéines participent notamment à la reconnaissance et aux interactions cellulaires.',
+          'La membrane est sélectivement perméable. De petites molécules apolaires comme le dioxygène et le dioxyde de carbone peuvent traverser la bicouche par diffusion simple. Les ions et de nombreuses molécules polaires ne traversent pas facilement son cœur hydrophobe. Ils utilisent des protéines de transport : les canaux forment des voies de passage sélectives et les transporteurs changent de conformation pour déplacer leurs molécules cibles. Les aquaporines sont des canaux qui facilitent le passage de l’eau. La perméabilité dépend donc de la nature de la substance et des protéines présentes dans la membrane.',
+          'La diffusion correspond au déplacement net de particules selon leur gradient de concentration. La diffusion simple ne nécessite pas de protéine de transport. La diffusion facilitée suit également un gradient favorable, mais elle nécessite un canal ou un transporteur. Ces deux mécanismes sont passifs : ils ne demandent pas de dépense directe d’ATP pour le passage considéré. L’osmose désigne le déplacement net de l’eau à travers une membrane sélectivement perméable. Le sens du flux dépend des différences de potentiel chimique de l’eau, souvent présentées à un niveau introductif en fonction des concentrations en solutés non perméants.',
+          'Le transport actif permet de déplacer une substance contre son gradient électrochimique. Le transport actif primaire utilise directement une source d’énergie, souvent l’hydrolyse de l’ATP, comme dans le cas de la pompe sodium-potassium. Le transport actif secondaire exploite un gradient ionique préalablement établi pour entraîner le déplacement d’une autre substance. Un symport déplace deux substances dans le même sens ; un antiport les déplace en sens opposés. Ces mécanismes contribuent à maintenir les concentrations ioniques, le volume cellulaire et l’approvisionnement en nutriments.',
+          'Les cellules transportent aussi des matériaux dans des vésicules. L’endocytose fait entrer des substances en formant des vésicules à partir de la membrane plasmique. L’exocytose permet la libération de substances lorsqu’une vésicule fusionne avec la membrane. Ces transports en masse sont distincts du passage individuel d’ions ou de petites molécules à travers des protéines membranaires. Ils participent notamment à l’absorption de particules, au renouvellement de composants membranaires et à la sécrétion de molécules.'
+        ],
+        example: {
+          statement: 'Un ion traverse la membrane par un canal, dans le sens de son gradient électrochimique. Le passage ne consomme pas directement d’ATP. Comment nomme-t-on ce mécanisme ?',
+          calculation: 'Le déplacement suit un gradient favorable et utilise une protéine membranaire. Il ne nécessite pas d’apport énergétique direct pour le passage de l’ion.',
+          answer: 'Il s’agit d’une diffusion facilitée, qui est un transport passif.'
+        },
+        exercise: {
+          question: 'Quelle est la différence entre diffusion facilitée et transport actif ?',
+          answer: 'La diffusion facilitée suit un gradient favorable sans dépense directe d’énergie. Le transport actif peut déplacer une substance contre son gradient et nécessite une source d’énergie.'
+        },
+        exercises: [
+          {
+            question: 'Comment les phospholipides s’orientent-ils dans une bicouche membranaire ?',
+            answer: 'Les têtes hydrophiles sont tournées vers les milieux aqueux et les queues hydrophobes vers l’intérieur de la bicouche.'
+          },
+          {
+            question: 'Quel phénomène décrit le déplacement net de l’eau à travers une membrane sélectivement perméable ?',
+            answer: 'L’osmose.'
+          },
+          {
+            question: 'Quelle source d’énergie alimente directement la pompe sodium-potassium ?',
+            answer: 'L’énergie libérée par l’hydrolyse de l’ATP.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 5.1 Components and Structure', url: 'https://openstax.org/books/biology-2e/pages/5-1-components-and-structure' },
+          { title: 'OpenStax — Biology 2e, 5.2 Passive Transport', url: 'https://openstax.org/books/biology-2e/pages/5-2-passive-transport' },
+          { title: 'OpenStax — Biology 2e, 5.3 Active Transport', url: 'https://openstax.org/books/biology-2e/pages/5-3-active-transport' },
+          { title: 'OpenStax — Biology 2e, 5.4 Bulk Transport', url: 'https://openstax.org/books/biology-2e/pages/5-4-bulk-transport' },
+          { title: 'NCBI Bookshelf — Molecular Biology of the Cell, Membrane Transport', url: 'https://www.ncbi.nlm.nih.gov/books/NBK21054/' }
+        ]
+      }
+    },
+    {
+      id: 'enzymes-et-metabolisme',
+      title: 'Les enzymes et le métabolisme : contrôler les réactions cellulaires',
+      field: 'Biochimie · Catalyse, énergie libre et régulation métabolique',
+      summary: 'Expliquer le rôle des enzymes, l’énergie d’activation, les facteurs qui modifient leur activité et l’organisation des voies métaboliques.',
+      lesson: {
+        sections: [
+          'Le métabolisme regroupe l’ensemble des réactions chimiques qui se déroulent dans une cellule ou un organisme. Les réactions cataboliques dégradent des molécules et peuvent libérer de l’énergie utilisable. Les réactions anaboliques construisent des molécules plus complexes et nécessitent généralement un apport d’énergie. Ces réactions sont organisées en voies métaboliques : le produit d’une étape devient le substrat de l’étape suivante. Cette organisation permet de contrôler les transformations de matière et les transferts d’énergie.',
+          'Une réaction chimique peut nécessiter de franchir une barrière énergétique appelée énergie d’activation. Une enzyme est un catalyseur biologique qui accélère une réaction en abaissant cette barrière. La plupart des enzymes sont des protéines, mais certains ARN possèdent aussi une activité catalytique. Une enzyme n’est pas consommée dans le bilan global de la réaction. Elle accélère l’atteinte de l’équilibre sans modifier à elle seule la variation d’énergie libre entre les réactifs et les produits.',
+          'Le substrat se lie à une région de l’enzyme appelée site actif. Les propriétés chimiques et la forme de ce site favorisent certaines interactions avec le substrat. Le modèle de l’ajustement induit décrit le fait que la liaison peut entraîner un changement de conformation de l’enzyme. La catalyse peut reposer sur plusieurs contributions : rapprocher et orienter les substrats, stabiliser l’état de transition ou participer temporairement à certaines étapes chimiques. La spécificité enzymatique dépend de l’ensemble de ces propriétés moléculaires.',
+          'L’activité enzymatique dépend des conditions du milieu. La température influence la vitesse des mouvements moléculaires et donc la fréquence des rencontres entre enzyme et substrat. Une température trop élevée peut déstabiliser la structure de nombreuses enzymes. Le pH modifie l’état de protonation de groupes chimiques et peut affecter la liaison au substrat ou les étapes catalytiques. Chaque enzyme possède une plage de conditions favorables qui dépend de son environnement biologique ; il n’existe pas une température ou un pH optimal unique pour toutes les enzymes.',
+          'Les cellules régulent l’activité enzymatique selon leurs besoins. Un inhibiteur compétitif entre en compétition avec le substrat pour le site actif. Des inhibiteurs allostériques se fixent sur un autre site et modifient l’activité par un changement de conformation. Des molécules peuvent également activer certaines enzymes. Dans une voie métabolique, le produit final peut réduire l’activité d’une enzyme située en amont : cette rétro-inhibition limite la production lorsque le produit est déjà suffisamment abondant. La régulation peut aussi dépendre de modifications covalentes, comme la phosphorylation, ou de la quantité d’enzyme produite.'
+        ],
+        example: {
+          statement: 'Une enzyme devient beaucoup moins active lorsque le pH de son milieu change fortement. Quelle explication moléculaire peut rendre compte de cette observation ?',
+          calculation: 'Le pH modifie l’état de charge de certains groupes chimiques des acides aminés. Cela peut perturber les interactions qui stabilisent la structure de l’enzyme ou celles qui interviennent directement dans son site actif.',
+          answer: 'Le changement de pH peut modifier la conformation ou les propriétés chimiques du site actif, ce qui diminue l’activité catalytique.'
+        },
+        exercise: {
+          question: 'Comment une enzyme accélère-t-elle une réaction sans modifier le bilan énergétique global entre réactifs et produits ?',
+          answer: 'Elle fournit un chemin réactionnel dont l’énergie d’activation est plus faible. Elle accélère la réaction sans changer la variation d’énergie libre globale entre les réactifs et les produits.'
+        },
+        exercises: [
+          {
+            question: 'Comment s’appelle la région de l’enzyme où se lie le substrat ?',
+            answer: 'Le site actif.'
+          },
+          {
+            question: 'Une enzyme est-elle consommée définitivement pendant la réaction qu’elle catalyse ?',
+            answer: 'Non. Elle peut catalyser plusieurs cycles réactionnels si elle conserve sa structure et son activité.'
+          },
+          {
+            question: 'Quel est le principe de la rétro-inhibition ?',
+            answer: 'Le produit final d’une voie métabolique diminue l’activité d’une enzyme située plus tôt dans cette voie.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 6.1 Energy and Metabolism', url: 'https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism' },
+          { title: 'OpenStax — Biology 2e, 6.5 Enzymes', url: 'https://openstax.org/books/biology-2e/pages/6-5-enzymes' },
+          { title: 'NCBI Bookshelf — Molecular Biology of the Cell, Catalysis and the Use of Energy by Cells', url: 'https://www.ncbi.nlm.nih.gov/books/NBK26838/' }
+        ]
+      }
+    },
+    {
+      id: 'atp-respiration-cellulaire',
+      title: 'L’ATP et la respiration cellulaire : produire de l’énergie utilisable',
+      field: 'Bioénergétique · Glycolyse, cycle de l’acide citrique et phosphorylation oxydative',
+      summary: 'Suivre les étapes de la respiration cellulaire et comprendre comment l’énergie des molécules organiques contribue à la synthèse d’ATP.',
+      lesson: {
+        sections: [
+          'L’ATP, ou adénosine triphosphate, est un nucléotide formé d’adénine, de ribose et de trois groupements phosphate. Son hydrolyse en ADP et phosphate inorganique peut libérer de l’énergie libre, qui est couplée à des processus nécessitant un apport énergétique. L’ATP intervient notamment dans la biosynthèse, le transport actif et certains mouvements cellulaires. Il ne constitue pas une réserve énergétique à long terme : les cellules le consomment et le régénèrent continuellement à partir d’ADP et de phosphate.',
+          'La respiration cellulaire aérobie permet d’extraire une partie de l’énergie chimique des molécules organiques en transférant des électrons vers des accepteurs successifs, jusqu’au dioxygène. Chez les cellules eucaryotes, la glycolyse se déroule dans le cytosol. Elle transforme une molécule de glucose en deux molécules de pyruvate et produit un gain net de deux ATP ainsi que deux NADH par glucose. La glycolyse ne nécessite pas directement de dioxygène, même si le devenir du pyruvate et du NADH dépend des conditions métaboliques.',
+          'Lorsque la respiration aérobie se poursuit dans une cellule eucaryote, le pyruvate est généralement transporté dans la mitochondrie et converti en acétyl-CoA. Cette transformation libère du CO2 et produit du NADH. L’acétyl-CoA entre ensuite dans le cycle de l’acide citrique, dans la matrice mitochondriale. Au cours de ce cycle, les groupes acétyle sont oxydés et du CO2 est libéré. Des coenzymes réduits, principalement NADH et FADH2, recueillent une partie de l’énergie sous forme d’électrons à haut potentiel de transfert.',
+          'Les électrons du NADH et du FADH2 alimentent la chaîne de transport d’électrons située dans la membrane interne mitochondriale. Les transferts successifs libèrent de l’énergie qui permet à certains complexes de déplacer des protons de la matrice vers l’espace intermembranaire. Il se forme ainsi un gradient électrochimique de protons. Le dioxygène est l’accepteur final des électrons dans la respiration aérobie ; sa réduction contribue à la formation d’eau. Si le transfert des électrons est interrompu, le maintien du gradient et la production d’ATP par phosphorylation oxydative sont compromis.',
+          'L’ATP synthase utilise l’énergie du retour des protons vers la matrice pour produire de l’ATP à partir d’ADP et de phosphate inorganique. Ce mécanisme est appelé chimiosmose. La majeure partie de l’ATP de la respiration aérobie est produite par phosphorylation oxydative. Le rendement total en ATP par glucose n’est pas une constante universelle : il varie selon le type de cellule, les navettes qui transfèrent les électrons du NADH cytosolique, les fuites de protons et les besoins de transport mitochondrial.',
+          'Lorsque la chaîne respiratoire ne peut pas réoxyder suffisamment le NADH, certaines cellules utilisent la fermentation pour régénérer le NAD+. La fermentation lactique transforme le pyruvate en lactate ; la fermentation alcoolique, présente chez certaines levures et certains microorganismes, produit de l’éthanol et du CO2. La fermentation ne fournit pas d’ATP supplémentaire au-delà du gain de la glycolyse, mais elle permet à cette dernière de continuer en régénérant le NAD+ nécessaire.'
+        ],
+        example: {
+          statement: 'Une molécule de glucose subit la glycolyse dans le cytosol. Combien de molécules de pyruvate et quel gain net direct en ATP sont produits ?',
+          calculation: 'Une molécule de glucose à six carbones est transformée en deux molécules de pyruvate à trois carbones. La glycolyse consomme deux ATP dans sa phase préparatoire et en produit quatre dans sa phase de rendement.',
+          answer: 'La glycolyse produit deux molécules de pyruvate et un gain net de deux molécules d’ATP par molécule de glucose.'
+        },
+        exercise: {
+          question: 'Quel est le rôle du gradient de protons dans la production mitochondriale d’ATP ?',
+          answer: 'Le gradient stocke une énergie électrochimique. Le retour des protons à travers l’ATP synthase fournit l’énergie nécessaire à la synthèse d’ATP.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel compartiment cellulaire se déroule la glycolyse ?',
+            answer: 'Dans le cytosol.'
+          },
+          {
+            question: 'Quel est l’accepteur final des électrons dans la chaîne respiratoire aérobie ?',
+            answer: 'Le dioxygène (O2), qui est réduit et contribue à la formation d’eau.'
+          },
+          {
+            question: 'Pourquoi la fermentation permet-elle à la glycolyse de continuer ?',
+            answer: 'Elle régénère le NAD+ à partir du NADH, ce qui permet la poursuite des réactions de glycolyse.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 6.4 ATP: Adenosine Triphosphate', url: 'https://openstax.org/books/biology-2e/pages/6-4-atp-adenosine-triphosphate' },
+          { title: 'OpenStax — Biology 2e, 7.2 Glycolysis', url: 'https://openstax.org/books/biology-2e/pages/7-2-glycolysis' },
+          { title: 'OpenStax — Biology 2e, 7.3 Oxidation of Pyruvate and the Citric Acid Cycle', url: 'https://openstax.org/books/biology-2e/pages/7-3-oxidation-of-pyruvate-and-the-citric-acid-cycle' },
+          { title: 'OpenStax — Biology 2e, 7.4 Oxidative Phosphorylation', url: 'https://openstax.org/books/biology-2e/pages/7-4-oxidative-phosphorylation' },
+          { title: 'OpenStax — Biology 2e, 7.5 Metabolism without Oxygen', url: 'https://openstax.org/books/biology-2e/pages/7-5-metabolism-without-oxygen' },
+          { title: 'NCBI Bookshelf — Molecular Biology of the Cell, How Cells Obtain Energy from Food', url: 'https://www.ncbi.nlm.nih.gov/books/NBK21054/' }
+        ]
+      }
+    },
+    {
+      id: 'photosynthese-cellulaire',
+      title: 'La photosynthèse : convertir l’énergie lumineuse en énergie chimique',
+      field: 'Bioénergétique · Chloroplastes, réactions lumineuses et fixation du carbone',
+      summary: 'Comprendre comment les organismes photosynthétiques utilisent la lumière pour produire de l’ATP et du NADPH, puis incorporer le carbone du CO2 dans des molécules organiques.',
+      lesson: {
+        sections: [
+          'La photosynthèse est un processus de conversion d’énergie réalisé par les plantes, les algues et certains microorganismes. Chez les plantes, elle se déroule dans les chloroplastes. Les membranes des thylakoïdes contiennent les pigments photosynthétiques, les photosystèmes et une chaîne de transport d’électrons. Le stroma est le compartiment aqueux qui entoure les thylakoïdes. La photosynthèse oxygénique utilise l’énergie lumineuse pour contribuer à la synthèse de molécules organiques à partir de CO2 et d’eau, avec libération de dioxygène.',
+          'Les réactions dépendantes de la lumière ont lieu dans les membranes des thylakoïdes. Les pigments absorbent des photons et l’énergie lumineuse permet d’exciter des électrons dans les photosystèmes. Dans la photosynthèse oxygénique, le photosystème II est associé à l’oxydation de l’eau. Cette réaction fournit des électrons, libère des protons et produit du dioxygène. Le transfert des électrons le long de la chaîne contribue à établir un gradient de protons à travers la membrane thylakoïdienne.',
+          'Le gradient de protons est utilisé par l’ATP synthase pour produire de l’ATP dans le stroma. Au niveau du photosystème I, les électrons sont réénergisés par la lumière et permettent finalement la réduction du NADP+ en NADPH. L’ATP et le NADPH sont donc des produits énergétiques et réducteurs des réactions lumineuses. Ils seront utilisés dans les réactions de fixation du carbone. Les détails du transfert d’électrons et les proportions d’ATP et de NADPH peuvent varier selon les conditions et les voies photochimiques mobilisées.',
+          'Le cycle de Calvin se déroule dans le stroma du chloroplaste. Il utilise l’ATP et le NADPH pour incorporer le carbone du dioxyde de carbone dans des molécules organiques. L’enzyme Rubisco catalyse la fixation du CO2 sur le ribulose-1,5-bisphosphate. Les réactions qui suivent produisent du glycéraldéhyde-3-phosphate, un triose phosphate dont une partie peut servir à fabriquer des glucides et d’autres molécules. Le reste contribue à régénérer l’accepteur de CO2. Le cycle ne libère pas directement une molécule de glucose à chaque tour.',
+          'L’équation-bilan simplifiée de la photosynthèse oxygénique peut s’écrire : 6 CO2 + 6 H2O + énergie lumineuse → C6H12O6 + 6 O2. Cette équation résume le bilan global et ne décrit pas les étapes intermédiaires ni les coûts détaillés en ATP et NADPH. Les atomes d’oxygène libérés sous forme de dioxygène proviennent de l’eau oxydée lors des réactions lumineuses. Cette origine a été établie par des expériences utilisant des isotopes de l’oxygène.',
+          'La vitesse de la photosynthèse dépend de plusieurs facteurs, notamment l’intensité et la qualité de la lumière, la disponibilité en CO2, la température et l’état hydrique de la plante. Les stomates régulent les échanges gazeux entre la feuille et l’atmosphère. Leur fermeture limite les pertes d’eau, mais réduit aussi l’entrée de CO2 et peut donc limiter la fixation du carbone. Les plantes C3, C4 et CAM présentent des adaptations différentes à leurs environnements ; ces voies ne modifient pas le principe général des réactions photochimiques, mais organisent différemment l’approvisionnement en CO2.'
+        ],
+        example: {
+          statement: 'Dans la photosynthèse oxygénique, quelle molécule fournit les électrons qui alimentent la chaîne de transport photosynthétique ?',
+          calculation: 'Au niveau du photosystème II, un complexe enzymatique associé oxyde l’eau. Cette réaction fournit des électrons, libère des protons et forme du dioxygène.',
+          answer: 'L’eau (H2O) est la source des électrons dans la photosynthèse oxygénique ; son oxydation contribue à la libération de O2.'
+        },
+        exercise: {
+          question: 'Comment les réactions lumineuses et le cycle de Calvin sont-ils complémentaires ?',
+          answer: 'Les réactions lumineuses convertissent l’énergie lumineuse en ATP et NADPH. Le cycle de Calvin utilise ces molécules pour incorporer le CO2 dans des composés organiques.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel organite des cellules végétales se déroule la photosynthèse ?',
+            answer: 'Dans le chloroplaste.'
+          },
+          {
+            question: 'Où se déroulent les réactions dépendantes de la lumière ?',
+            answer: 'Dans les membranes des thylakoïdes.'
+          },
+          {
+            question: 'Quelle enzyme catalyse la fixation du CO2 dans le cycle de Calvin ?',
+            answer: 'La Rubisco, ou ribulose-1,5-bisphosphate carboxylase/oxygénase.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 8.1 Overview of Photosynthesis', url: 'https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis' },
+          { title: 'OpenStax — Biology 2e, 8.2 The Light-Dependent Reactions of Photosynthesis', url: 'https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis' },
+          { title: 'OpenStax — Biology 2e, 8.3 The Calvin Cycle', url: 'https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules' },
+          { title: 'NCBI Bookshelf — Molecular Biology of the Cell, Chloroplasts and Photosynthesis', url: 'https://www.ncbi.nlm.nih.gov/books/NBK21054/' }
+        ]
+      }
+    }
+  ]
+},
+
+]
 
