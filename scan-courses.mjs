@@ -6,8 +6,6 @@ import { join } from "node:path";
 
 const DEFAULTS = {
   physique:      { order: 2,  symbol: "φ",  class: "physics-entry",      title: "Physique",       description: "Des lois fondamentales aux sciences de l’Univers" },
-  chimie:        { order: 3,  symbol: "⇌",  class: "chemistry-entry",    title: "Chimie",         description: "Des constituants de la matière aux synthèses moléculaires" },
-  economie:      { order: 4,  symbol: "€",  class: "economics-entry",    title: "Économie",       description: "Microéconomie, macroéconomie et grands économistes" },
   geologie:      { order: 5,  symbol: "◈",  class: "geology-entry",      title: "Géologie",       description: "Des minéraux aux temps profonds" },
   climatologie:  { order: 6,  symbol: "☀",  class: "climatology-entry",  title: "Climatologie",   description: "Du bilan radiatif au changement climatique" },
   paleontologie: { order: 7,  symbol: "✳",  class: "paleontology-entry", title: "Paléontologie",  description: "Des fossiles aux archives de l’histoire du vivant" },
