@@ -1,0 +1,9 @@
+{
+  "title": "Climatologie",
+  "symbol": "☀",
+  "description": "Du bilan radiatif au changement climatique",
+  "order": 6,
+  "entry": "index.html",
+  "dataFile": "climatologie-data.js",
+  "class": "climatology-entry"
+}
