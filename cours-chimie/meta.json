@@ -1,0 +1,9 @@
+{
+  "title": "Chimie",
+  "symbol": "⇌",
+  "description": "Des constituants de la matière aux synthèses moléculaires",
+  "order": 3,
+  "entry": "index.html",
+  "dataFile": "chimie-data.js",
+  "class": "chemistry-entry"
+}
