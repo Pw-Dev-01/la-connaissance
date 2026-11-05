@@ -1,0 +1,9 @@
+{
+  "title": "Géologie",
+  "symbol": "◈",
+    "description": "Des minéraux aux temps profonds",
+  "order": 5,
+  "entry": "index.html",
+  "dataFile": "geologie-data.js",
+  "class": "geology-entry"
+}
