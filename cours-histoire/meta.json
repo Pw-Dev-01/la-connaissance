@@ -1,0 +1,9 @@
+{
+  "title": "Histoire",
+  "symbol": "H",
+  "description": "Des premières cités aux grands empires",
+  "order": 9,
+  "entry": "index.html",
+  "dataFile": "histoire-data.js",
+  "class": "History-entry"
+}
