@@ -1,0 +1,9 @@
+{
+  "title": "Cinéma",
+  "symbol": "C",
+  "description": "Les grands cinéastes et les œuvres qui ont marqué l'histoire du cinéma",
+  "order": 15,
+  "entry": "index.html",
+  "dataFile": "cinema-data.js",
+  "class": "cinema-entry"
+}
