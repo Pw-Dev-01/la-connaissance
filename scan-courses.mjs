@@ -11,7 +11,7 @@ const DEFAULTS = {
   geologie:      { order: 5,  symbol: "◈",  class: "geology-entry",      title: "Géologie",       description: "Des minéraux aux temps profonds" },
   climatologie:  { order: 6,  symbol: "☀",  class: "climatology-entry",  title: "Climatologie",   description: "Du bilan radiatif au changement climatique" },
   paleontologie: { order: 7,  symbol: "✳",  class: "paleontology-entry", title: "Paléontologie",  description: "Des fossiles aux archives de l’histoire du vivant" },
-  anthropologie: { order: 8,  symbol: "A",  class: "anthropology-entry", title: "Anthropologie",  description: "Des traces du passé aux sociétés et aux langues" },
+  
   histoire:      { order: 9,  symbol: "H",  class: "history-entry",      title: "Histoire",       description: "Des premières cités aux grands empires"},
   philosophie:   { order: 10, symbol: "Φ",  class: "philosophy-entry",   title: "Philosophie",    description: "Conscience, liberté, vérité, justice et morale · Explorer les grandes questions de la pensée" },
 };
