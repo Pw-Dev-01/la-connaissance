@@ -1,0 +1,9 @@
+{
+  "title": "Peinture",
+  "symbol": "P",
+  "description": "Les styles, mouvements et grands peintres, leurs repères historiques",
+  "order": 14,
+  "entry": "index.html",
+  "dataFile": "peinture-data.js",
+  "class": "peinture-entry"
+}
