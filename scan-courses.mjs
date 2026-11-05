@@ -5,7 +5,6 @@ import { readdirSync, readFileSync, writeFileSync, existsSync, statSync } from "
 import { join } from "node:path";
 
 const DEFAULTS = {
-  mathematiques: { order: 1,  symbol: "x²", class: "math-entry",         entry: "programmes.html", title: "Mathématiques",  description: "Du lycée à la prépa scientifique" },
   physique:      { order: 2,  symbol: "φ",  class: "physics-entry",      title: "Physique",       description: "Des lois fondamentales aux sciences de l’Univers" },
   chimie:        { order: 3,  symbol: "⇌",  class: "chemistry-entry",    title: "Chimie",         description: "Des constituants de la matière aux synthèses moléculaires" },
   economie:      { order: 4,  symbol: "€",  class: "economics-entry",    title: "Économie",       description: "Microéconomie, macroéconomie et grands économistes" },
