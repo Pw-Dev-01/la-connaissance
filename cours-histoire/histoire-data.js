@@ -8440,6 +8440,632 @@ sortYear: -3200,
   ]
 },
 
+{
+  id: 'grandes-bibliotheques',
+  sortYear: -2500,
+  title: 'Les grandes bibliothèques à travers le monde depuis l’Antiquité',
+  note: 'Treize chapitres retraçant l’évolution des grandes bibliothèques et des institutions de conservation du savoir, des archives palatiales du Proche-Orient ancien aux bibliothèques nationales, publiques et numériques contemporaines. Les dates anciennes sont approximatives. Une archive administrative, une collection savante et une bibliothèque ouverte au public ne sont pas des institutions équivalentes ; leurs fonctions et leurs publics sont distingués.',
+  chapters: [
+    {
+      id: 'ebla-premieres-collections',
+      title: 'Ebla et les premières grandes collections écrites',
+      field: 'Proche-Orient ancien · IIIe millénaire av. J.-C. · Syrie actuelle',
+      summary: 'Étudier les archives du palais d’Ebla, leur organisation matérielle et ce qu’elles révèlent des premières sociétés utilisant l’écriture à grande échelle.',
+      lesson: {
+        sections: [
+          'Au IIIe millénaire av. J.-C., la cité d’Ebla, située sur le site actuel de Tell Mardikh dans le nord-ouest de la Syrie, possède un important palais dont les salles ont livré des milliers de tablettes cunéiformes. La découverte archéologique ne correspond pas à une bibliothèque publique au sens moderne : il s’agit principalement d’archives palatiales et administratives, auxquelles s’ajoutent des textes lexicaux, scolaires, religieux et littéraires. Cette distinction est essentielle pour éviter de projeter sur l’Antiquité les catégories contemporaines de bibliothèque.',
+          'Dans une salle du palais, les archéologues ont retrouvé plus de 14 000 tablettes. Les tablettes les plus grandes avaient été placées sur des étagères avant de tomber au sol lors de la destruction du bâtiment. Leur position et leur regroupement ont permis de reconstituer en partie leur rangement initial. Certaines étaient classées par sujet, ce qui témoigne de pratiques de conservation et de repérage déjà élaborées.',
+          'Les textes documentent la vie politique, économique et culturelle d’Ebla, notamment les échanges, les institutions et les relations avec d’autres régions du Proche-Orient et de la Méditerranée. La majorité est rédigée en éblaïte, langue sémitique locale, en écriture cunéiforme. Ces archives montrent que la conservation organisée de l’écrit précède de nombreux siècles les grandes bibliothèques célèbres de l’époque hellénistique.'
+        ],
+        example: {
+          statement: 'Une salle du palais d’Ebla a livré plus de 14 000 tablettes. Peut-on automatiquement qualifier cet ensemble de bibliothèque publique ?',
+          calculation: 'Il faut distinguer la quantité de documents, leur organisation et leur fonction institutionnelle. Le nombre de tablettes ne suffit pas à établir l’existence d’un service public de lecture.',
+          answer: 'Non. Les découvertes attestent surtout un ensemble d’archives palatiales organisées, avec différents types de textes. Le terme « bibliothèque » doit être employé avec prudence.'
+        },
+        exercise: {
+          question: 'Pourquoi les tablettes d’Ebla sont-elles fondamentales pour l’histoire des bibliothèques ?',
+          answer: 'Elles attestent très anciennement la conservation organisée de documents écrits et permettent d’étudier le classement, les usages administratifs et les savoirs d’une société urbaine.'
+        },
+        exercises: [
+          {
+            question: 'Sur quel site moderne se trouve l’ancienne Ebla ?',
+            answer: 'À Tell Mardikh, dans le nord-ouest de la Syrie.'
+          },
+          {
+            question: 'Quel système d’écriture est utilisé sur les tablettes ?',
+            answer: 'L’écriture cunéiforme.'
+          },
+          {
+            question: 'Pourquoi faut-il éviter de parler sans nuance d’une bibliothèque publique ?',
+            answer: 'Parce que les documents proviennent principalement d’archives palatiales et ne prouvent pas l’existence d’un accès public comparable à celui d’une bibliothèque moderne.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Metropolitan Museum of Art — Ebla in the Third Millennium B.C.',
+            url: 'https://www.metmuseum.org/de/essays/ebla-in-the-third-millennium-b-c'
+          },
+          {
+            title: 'Oxford University Press — Libraries before Alexandria: Ancient Near Eastern Traditions',
+            url: 'https://academic.oup.com/book/36471'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ninive-bibliotheque-assurbanipal',
+      title: 'Ninive : la collection royale d’Assurbanipal',
+      field: 'Empire néo-assyrien · VIIe siècle av. J.-C. · Mésopotamie',
+      summary: 'Comprendre la constitution d’une vaste collection de tablettes cunéiformes sous Assurbanipal et les limites de l’expression « bibliothèque d’Assurbanipal ».',
+      lesson: {
+        sections: [
+          'Au VIIe siècle av. J.-C., le roi assyrien Assurbanipal (règne généralement daté de 669 à environ 630 av. J.-C.) rassemble et fait copier des textes sur tablettes d’argile dans la capitale de Ninive. Il s’inscrit dans une tradition savante mésopotamienne déjà ancienne. La collection est associée au palais royal et comprend des textes de genres variés : listes lexicales, textes divinatoires, rituels, œuvres littéraires, documents savants et copies de traditions plus anciennes.',
+          'Les tablettes n’ont pas toutes été réunies dans une seule salle ni nécessairement constituées en une bibliothèque unique au sens actuel. Le projet Ashurbanipal Library de l’Université de Pennsylvanie rappelle que l’expression « bibliothèque d’Assurbanipal » est une désignation pratique appliquée à environ 32 000 tablettes et fragments issus des fouilles britanniques de Ninive. Les lieux de découverte sont multiples et l’appartenance exacte de chaque tablette à une collection particulière reste parfois difficile à établir.',
+          'Assurbanipal sollicitait des tablettes provenant de Babylonie et encourageait la copie de textes. La collection a ainsi joué un rôle majeur dans la transmission de traditions savantes mésopotamiennes. La destruction de Ninive en 612 av. J.-C. a contribué à l’abandon des ensembles conservés sur place ; les tablettes cuites lors des incendies ont parfois survécu, ce qui explique leur importance documentaire actuelle.'
+        ],
+        example: {
+          statement: 'Pourquoi le chiffre d’environ 32 000 tablettes et fragments ne doit-il pas être présenté comme le contenu certain d’une seule salle ?',
+          calculation: 'Le corpus moderne regroupe des objets découverts dans différents secteurs de Ninive et dont l’appartenance institutionnelle n’est pas toujours déterminable.',
+          answer: 'Parce que ce chiffre désigne un ensemble archéologique moderne associé à la collection, et non l’inventaire certain d’une bibliothèque unique dans l’Antiquité.'
+        },
+        exercise: {
+          question: 'Quel rôle Assurbanipal a-t-il joué dans la conservation des savoirs mésopotamiens ?',
+          answer: 'Il a favorisé la collecte et la copie de tablettes savantes, contribuant à préserver et transmettre des textes de traditions plus anciennes.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle ville se trouvait la collection royale ?',
+            answer: 'À Ninive, capitale de l’Empire néo-assyrien.'
+          },
+          {
+            question: 'Quel support matériel dominait ?',
+            answer: 'La tablette d’argile inscrite en écriture cunéiforme.'
+          },
+          {
+            question: 'En quelle année Ninive fut-elle détruite ?',
+            answer: 'En 612 av. J.-C.'
+          }
+        ],
+        sources: [
+          {
+            title: 'University of Pennsylvania — Ashurbanipal Library Project: What is the Library?',
+            url: 'https://oracc.museum.upenn.edu/asbp/whatisthelibrary/index.html'
+          },
+          {
+            title: 'Ministère français de la Culture — Library of Ashurbanipal',
+            url: 'https://archeologie.culture.gouv.fr/villa/en/glossaire/library-ashurbanipal'
+          }
+        ]
+      }
+    },
+    {
+      id: 'alexandrie-museion-grande-bibliotheque',
+      title: 'Alexandrie : la Grande Bibliothèque et le Mouseion',
+      field: 'Égypte ptolémaïque · Fin du IVe et IIIe siècles av. J.-C.',
+      summary: 'Analyser le projet intellectuel des premiers souverains lagides, les liens entre bibliothèque et communauté savante, et les incertitudes de son histoire.',
+      lesson: {
+        sections: [
+          'Fondée par Alexandre le Grand en 331/332 av. J.-C. selon la chronologie usuelle, Alexandrie devient sous les premiers Ptolémées un centre politique et intellectuel majeur de la Méditerranée orientale. La Grande Bibliothèque est liée au Mouseion, institution consacrée aux Muses et accueillant une communauté de savants. Il ne s’agit donc pas seulement d’un dépôt de rouleaux : le projet associe collecte des textes, étude, enseignement, commentaire et production de connaissances.',
+          'La création et le développement de la bibliothèque sont généralement situés au début de l’époque ptolémaïque, notamment sous Ptolémée Ier et Ptolémée II. Les détails précis de sa fondation, de ses responsables successifs, de ses collections et de son fonctionnement sont discutés par les historiens, car les témoignages antiques sont fragmentaires et parfois postérieurs aux événements. Il est donc imprudent de présenter comme certains les récits populaires sur un nombre exact de rouleaux ou une politique systématique de confiscation de tous les livres entrant dans le port.',
+          'La bibliothèque symbolise l’ambition des souverains de faire d’Alexandrie un centre de savoir de dimension internationale. Les textes grecs y occupaient une place centrale, tandis que les traditions intellectuelles de différentes régions du monde hellénistique participaient à un environnement d’échanges. La fin de la bibliothèque ne peut être réduite à un incendie unique : l’histoire de ses bâtiments et collections s’inscrit dans plusieurs siècles de transformations politiques et urbaines.'
+        ],
+        example: {
+          statement: 'La Grande Bibliothèque est-elle identique au Mouseion ?',
+          calculation: 'Il faut distinguer l’institution savante et la collection documentaire qui lui est associée.',
+          answer: 'Non. Le Mouseion était une communauté et une institution de recherche liées au palais royal ; la Grande Bibliothèque constituait une collection majeure associée à cet environnement.'
+        },
+        exercise: {
+          question: 'En quoi le modèle alexandrin transforme-t-il l’histoire des bibliothèques ?',
+          answer: 'Il associe une vaste politique de collecte des textes à une communauté de spécialistes qui étudient, comparent, éditent et commentent les œuvres.'
+        },
+        exercises: [
+          {
+            question: 'À quelle dynastie la Grande Bibliothèque est-elle associée ?',
+            answer: 'À la dynastie des Ptolémées, ou Lagides.'
+          },
+          {
+            question: 'Quelle institution savante lui était liée ?',
+            answer: 'Le Mouseion.'
+          },
+          {
+            question: 'Pourquoi la date exacte de fondation reste-t-elle discutée ?',
+            answer: 'Parce que les sources antiques sont fragmentaires et que les chercheurs interprètent différemment les témoignages disponibles.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Cambridge University Press — Culture and Power in Ptolemaic Egypt: the Museum and Library of Alexandria',
+            url: 'https://www.cambridge.org/core/journals/greece-and-rome/article/abs/culture-and-power-in-ptolemaic-egypt-the-museum-and-library-of-alexandria/0CDD0FE46E8E1BE454B9CF4867CFE84D'
+          },
+          {
+            title: 'Cambridge University Press — The Alexandrian Library',
+            url: 'https://www.cambridge.org/core/journals/antiquity/article/abs/alexandrian-library/DE42F6EE89A89D2D8DA695F517DCD84D'
+          },
+          {
+            title: 'Bibliothecae.it — Alexandria for Alexander: for a dating of the Alexandrian project',
+            url: 'https://bibliothecae.unibo.it/article/view/15071'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bibliotheques-hellenistiques-et-rome',
+      title: 'Les bibliothèques hellénistiques et les bibliothèques publiques de Rome',
+      field: 'Monde hellénistique et Empire romain · IIIe siècle av. J.-C. – IVe siècle apr. J.-C.',
+      summary: 'Comparer les collections des royaumes hellénistiques et les bibliothèques publiques romaines, sans confondre prestige culturel et accès universel.',
+      lesson: {
+        sections: [
+          'Après les conquêtes d’Alexandre, plusieurs royaumes hellénistiques développent des cours où les livres, les savants et les collections jouent un rôle politique et culturel. La bibliothèque de Pergame est notamment associée aux souverains attalides et à leur mécénat. Les récits anciens sur sa taille et sur une rivalité directe avec Alexandrie doivent être maniés avec prudence : les données chiffrées transmises par les auteurs antiques ne constituent pas un inventaire vérifiable.',
+          'À Rome, les premières bibliothèques publiques apparaissent à la fin de la République et au début du Principat. L’étude de T. Keith Dix et George W. Houston situe la première bibliothèque publique romaine vers 30 av. J.-C. et examine leur développement jusqu’à l’époque de Dioclétien. Plusieurs établissements distinguent les fonds grecs et latins. Ils sont installés dans des espaces prestigieux et servent à la consultation, aux activités savantes et à la représentation culturelle du pouvoir.',
+          'Le mot « public » ne signifie pas que tous les habitants de Rome bénéficiaient d’un accès égal. Les bibliothèques se concentrent dans le centre monumental et leur fréquentation dépend des conditions sociales, des usages et des règles de l’établissement. Les témoignages de Galien montrent qu’un chercheur pouvait consulter plusieurs bibliothèques publiques, mais aussi recourir à des collections privées et à des libraires.'
+        ],
+        example: {
+          statement: 'Une bibliothèque romaine qualifiée de publique était-elle nécessairement accessible à toute la population sans restriction ?',
+          calculation: 'Le statut institutionnel d’un lieu doit être distingué des conditions concrètes d’accès, de fréquentation et d’usage.',
+          answer: 'Non. « Publique » désigne ici un établissement mis à disposition au-delà d’une collection strictement privée, mais ne prouve pas une égalité d’accès comparable aux principes actuels.'
+        },
+        exercise: {
+          question: 'Quelles fonctions les bibliothèques romaines remplissaient-elles ?',
+          answer: 'Elles conservaient des livres, permettaient la consultation et les échanges savants, et contribuaient aussi à la représentation culturelle du pouvoir impérial.'
+        },
+        exercises: [
+          {
+            question: 'À quelle dynastie est associée la bibliothèque de Pergame ?',
+            answer: 'Aux Attalides.'
+          },
+          {
+            question: 'Vers quelle date la première bibliothèque publique de Rome est-elle généralement située par l’étude de Dix et Houston ?',
+            answer: 'Vers 30 av. J.-C.'
+          },
+          {
+            question: 'Pourquoi le terme « public » doit-il être contextualisé ?',
+            answer: 'Parce que l’existence d’un établissement public ne signifie pas que l’accès était universel ou socialement égal.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Dix et Houston — Public libraries in the city of Rome, Persée',
+            url: 'https://www.persee.fr/doc/mefr_0223-5102_2006_num_118_2_10261'
+          },
+          {
+            title: 'Cambridge University Press — Galen and Libraries in the Peri Alupias',
+            url: 'https://www.cambridge.org/core/journals/journal-of-roman-studies/article/abs/galen-and-libraries-in-the-peri-alupias/B8836615828A3469E6B2405F635A3866'
+          },
+          {
+            title: 'Wiley — Libraries and Literary Culture in Rome',
+            url: 'https://onlinelibrary.wiley.com/doi/10.1002/9781118300664.ch16'
+          }
+        ]
+      }
+    },
+    {
+      id: 'nalanda-bibliotheque-universitaire',
+      title: 'Nalanda : une grande bibliothèque au cœur d’une université bouddhique',
+      field: 'Inde · Ve – XIIe siècles apr. J.-C.',
+      summary: 'Découvrir le rôle de Nalanda dans les réseaux intellectuels asiatiques et présenter avec prudence les informations sur ses collections et ses bâtiments.',
+      lesson: {
+        sections: [
+          'Nalanda, dans l’actuel État indien du Bihar, devient à partir du Ve siècle apr. J.-C. un important centre monastique et d’enseignement bouddhique. Son rayonnement s’étend sur plusieurs siècles et attire des étudiants et des maîtres venus de différentes régions d’Asie. Les voyageurs chinois Faxian, Xuanzang et Yijing sont des témoins importants des circulations religieuses et intellectuelles entre l’Inde et l’Asie orientale, même si leurs récits doivent être replacés dans leur contexte.',
+          'Les sources institutionnelles et les études consacrées à Nalanda décrivent des espaces de conservation de manuscrits liés à l’enseignement. Une tradition historiographique rapporte l’existence d’un complexe de bibliothèque appelé Dharmaganja, parfois associé à trois bâtiments nommés Ratnasagara, Ratnodadhi et Ratnaranjaka. Les détails architecturaux spectaculaires souvent répétés, notamment le nombre d’étages attribué à un bâtiment, ne sont pas tous confirmés de manière indépendante par les vestiges archéologiques ; ils doivent donc être présentés comme des éléments rapportés par des traditions et des travaux secondaires.',
+          'Les collections de Nalanda étaient liées à la vie monastique, à l’étude des textes bouddhiques et à la transmission des savoirs. L’institution ne se limitait pas à la conservation : elle formait des étudiants, organisait des débats et participait à la circulation des manuscrits. Le site décline à partir de la fin du XIIe siècle dans un contexte de conflits et de transformations politiques régionales ; la chronologie et les circonstances précises de son abandon sont étudiées à partir de sources de nature différente.'
+        ],
+        example: {
+          statement: 'Pourquoi faut-il distinguer les descriptions textuelles de la bibliothèque de Nalanda et les preuves archéologiques ?',
+          calculation: 'Une description littéraire ou rétrospective renseigne sur une tradition historique, tandis que les fouilles documentent les structures et objets matériellement retrouvés.',
+          answer: 'Parce que les deux types de sources ne démontrent pas exactement les mêmes faits. Les détails non confirmés par l’archéologie doivent être attribués aux récits qui les transmettent.'
+        },
+        exercise: {
+          question: 'Pourquoi Nalanda est-elle importante dans l’histoire mondiale des bibliothèques ?',
+          answer: 'Elle montre que de grandes collections manuscrites étaient intégrées à des institutions d’enseignement et à des réseaux intellectuels asiatiques, et pas seulement aux cours royales méditerranéennes.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle région de l’Inde se trouve Nalanda ?',
+            answer: 'Dans l’actuel Bihar.'
+          },
+          {
+            question: 'À partir de quel siècle l’université ancienne de Nalanda est-elle attestée comme centre majeur ?',
+            answer: 'À partir du Ve siècle apr. J.-C.'
+          },
+          {
+            question: 'Quelle était la fonction des collections manuscrites ?',
+            answer: 'Soutenir l’enseignement, l’étude religieuse et philosophique ainsi que la transmission des textes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Nalanda University — Nalanda: Past and Present',
+            url: 'https://nalandauniv.edu.in/wp-content/uploads/2019/07/annual-report_eng.pdf'
+          },
+          {
+            title: 'Indira Gandhi National Centre for the Arts — History of Libraries in India',
+            url: 'https://ignca.gov.in/Asi_data/43860.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bagdad-bayt-al-hikma',
+      title: 'Bagdad : le Bayt al-Hikma et les réseaux de traduction',
+      field: 'Monde abbasside · VIIIe – XIIIe siècles apr. J.-C.',
+      summary: 'Examiner la place de Bagdad dans les échanges savants et nuancer l’image du Bayt al-Hikma comme bibliothèque universelle parfaitement documentée.',
+      lesson: {
+        sections: [
+          'Fondée en 762 par le calife al-Mansur, Bagdad devient un centre politique et intellectuel majeur du califat abbasside. Entre le VIIIe et le Xe siècle, des textes grecs, syriaques, persans et indiens sont traduits, commentés et intégrés à des recherches en médecine, mathématiques, astronomie et philosophie. Cette activité ne dépend pas d’un seul établissement : elle repose sur des mécènes, des traducteurs, des médecins, des savants, des copistes et des réseaux de circulation des manuscrits.',
+          'Le Bayt al-Hikma, ou Maison de la sagesse, est associé à la cour abbasside et atteint une importance particulière sous le calife al-Ma’mun (813-833). Les sources le décrivent comme une institution comprenant une bibliothèque et des activités savantes ou de traduction. Toutefois, son organisation exacte, ses locaux, ses effectifs et l’étendue de ses fonctions restent discutés. Il serait donc inexact d’en faire sans réserve une université moderne ou l’unique centre de traduction de Bagdad.',
+          'La traduction n’était pas une simple copie passive des textes anciens. Les savants établissaient des versions, confrontaient les manuscrits, développaient des commentaires et produisaient des travaux originaux. La prise de Bagdad par les Mongols en 1258 marque une rupture majeure pour la ville et ses institutions, mais les récits populaires concernant la destruction de tous les livres dans le Tigre ne doivent pas être repris comme un fait quantifié et établi sans examen critique des sources.'
+        ],
+        example: {
+          statement: 'Peut-on attribuer tout le mouvement de traduction abbasside au seul Bayt al-Hikma ?',
+          calculation: 'Il faut distinguer une institution célèbre d’un mouvement intellectuel qui mobilisait de nombreux acteurs et lieux.',
+          answer: 'Non. Le Bayt al-Hikma est un repère important, mais les traductions et recherches étaient le résultat de réseaux plus vastes de savants, de mécènes et de copistes.'
+        },
+        exercise: {
+          question: 'En quoi le mouvement de traduction abbasside a-t-il contribué à l’histoire des savoirs ?',
+          answer: 'Il a rendu accessibles des textes de traditions différentes, favorisé leur discussion et leur transformation, et accompagné la production de connaissances nouvelles.'
+        },
+        exercises: [
+          {
+            question: 'Quel calife est particulièrement associé au développement du Bayt al-Hikma ?',
+            answer: 'Al-Ma’mun, qui règne de 813 à 833.'
+          },
+          {
+            question: 'Que signifie Bayt al-Hikma ?',
+            answer: 'Maison de la sagesse.'
+          },
+          {
+            question: 'En quelle année Bagdad est-elle prise par les Mongols ?',
+            answer: 'En 1258.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Institute of Ismaili Studies — Bayt al-Hikma',
+            url: 'https://www.iis.ac.uk/glossary/bayt-al-%E1%B8%A5ikma/'
+          },
+          {
+            title: 'Islam Museum — Bayt al-Hikma',
+            url: 'https://islam.museum/en/building/bayt-al-hikma/'
+          },
+          {
+            title: 'Baytalhikma — From Bayt al-Hikma to Baytalhikma',
+            url: 'https://www.baytalhikma.iq/catalog/Historical%2043-ilovepdf-compressed.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bibliotheques-monastiques-et-universitaires',
+      title: 'Les bibliothèques monastiques et les premières bibliothèques universitaires européennes',
+      field: 'Europe médiévale · VIe – XVe siècles',
+      summary: 'Étudier les scriptoria, la conservation des manuscrits et le passage progressif d’une partie de la vie intellectuelle vers les universités.',
+      lesson: {
+        sections: [
+          'Dans l’Europe médiévale, les monastères constituent des lieux importants de conservation, de copie et d’étude des manuscrits. Les livres sont coûteux à produire : leur fabrication mobilise des supports préparés, des copistes, des correcteurs et des matériaux de reliure. Les collections monastiques réunissent des textes liturgiques, bibliques, patristiques, mais aussi des œuvres antiques et des ouvrages nécessaires à l’enseignement.',
+          'Le scriptorium désigne traditionnellement l’espace associé à la copie des manuscrits dans un monastère, mais son organisation réelle varie selon les établissements et les périodes. Il ne faut pas imaginer que chaque monastère possédait une salle spécialisée identique. La bibliothèque peut être constituée de livres conservés dans des armoires, des coffres ou des pièces dédiées ; les règles de prêt et de consultation dépendent des usages locaux.',
+          'À partir des XIIe et XIIIe siècles, les universités européennes développent leurs propres collections et des pratiques de circulation des livres. Oxford et Cambridge héritent notamment de manuscrits provenant d’anciens fonds monastiques et de donations. La transition entre le rôle intellectuel des monastères et celui des universités n’est ni brutale ni totale : les deux types d’institutions continuent à coexister et à enrichir leurs collections.'
+        ],
+        example: {
+          statement: 'Pourquoi les bibliothèques monastiques ne doivent-elles pas être considérées comme de simples dépôts passifs ?',
+          calculation: 'Leur rôle doit être évalué à partir des activités de copie, de lecture, d’enseignement, de conservation et de circulation des manuscrits.',
+          answer: 'Parce qu’elles participaient activement à la reproduction et à la transmission des textes, ainsi qu’à la formation intellectuelle et religieuse.'
+        },
+        exercise: {
+          question: 'Quel changement caractérise progressivement les bibliothèques européennes à partir du XIIe siècle ?',
+          answer: 'Le développement des universités crée de nouveaux centres d’étude et de conservation des livres, sans faire disparaître les bibliothèques monastiques.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle principal du scriptorium ?',
+            answer: 'Il est associé à la copie et à la préparation des manuscrits.'
+          },
+          {
+            question: 'Quels types de textes trouve-t-on dans les collections monastiques ?',
+            answer: 'Des textes religieux, liturgiques, patristiques, antiques et des ouvrages d’enseignement.'
+          },
+          {
+            question: 'Les bibliothèques monastiques disparaissent-elles avec l’essor des universités ?',
+            answer: 'Non. Elles continuent à exister et à se développer parallèlement aux collections universitaires.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Cambridge University Press — College and university book collections and libraries',
+            url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-libraries-in-britain-and-ireland/college-and-university-book-collections-and-libraries/BBBD9B06707723D748B696764339FF4D'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bibliotheque-royale-francaise',
+      title: 'La librairie royale française et les origines de la Bibliothèque nationale de France',
+      field: 'Royaume de France · XIVe – XVe siècles',
+      summary: 'Distinguer la bibliothèque de Charles V, les collections royales ultérieures et la continuité institutionnelle de la BnF.',
+      lesson: {
+        sections: [
+          'Au XIVe siècle, le roi Charles V rassemble au Louvre une collection de livres remarquable pour son époque. La date de 1368 est souvent associée à cette librairie royale, mais la Bibliothèque nationale de France précise qu’il s’agit du transfert au Louvre d’une collection déjà existante. Les quelque 910 manuscrits réunis par Charles V sont ensuite dispersés : il n’existe donc pas de continuité matérielle simple entre cette collection et les fonds actuels de la BnF.',
+          'La constitution de la future bibliothèque nationale se poursuit à la fin du XVe siècle, notamment sous Louis XI, puis avec l’accroissement des collections sous Charles VIII et Louis XII. Les acquisitions, les dons, les déplacements de la cour et les campagnes militaires contribuent à transformer les fonds royaux. Les collections sont encore liées au souverain et à son entourage : elles ne constituent pas une bibliothèque nationale ouverte à l’ensemble de la population.',
+          'L’histoire de la BnF est donc celle d’une transformation progressive des collections royales en institution patrimoniale nationale. Il faut distinguer l’ancienneté des collections, les dates de déplacement des livres et les étapes de création de l’établissement moderne. Cette distinction évite de présenter 1368 comme une date de fondation institutionnelle incontestable.'
+        ],
+        example: {
+          statement: 'Pourquoi la date de 1368 ne suffit-elle pas à prouver que la BnF actuelle a été fondée cette année-là ?',
+          calculation: 'Une date de transfert d’une collection ne correspond pas nécessairement à la création d’une institution durable ni à la continuité des fonds.',
+          answer: 'Parce que 1368 correspond au transfert de la librairie de Charles V au Louvre et que cette collection fut ensuite dispersée. La BnF décrit une genèse institutionnelle plus complexe.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre la librairie de Charles V et la BnF ?',
+          answer: 'La première est une collection royale médiévale dont les manuscrits furent dispersés ; la seconde est une institution nationale issue d’une évolution ultérieure des collections royales et de leurs fonctions.'
+        },
+        exercises: [
+          {
+            question: 'Quel roi est associé à la librairie installée au Louvre en 1368 ?',
+            answer: 'Charles V.'
+          },
+          {
+            question: 'Combien de manuscrits environ sont mentionnés pour la collection de Charles V ?',
+            answer: 'Environ 910 manuscrits.'
+          },
+          {
+            question: 'La collection de Charles V est-elle restée intacte jusqu’à aujourd’hui ?',
+            answer: 'Non. Elle fut rapidement dispersée.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Bibliothèque nationale de France — Histoire de la Bibliothèque nationale de France',
+            url: 'https://www.bnf.fr/fr/histoire-de-la-bibliotheque-nationale-de-france'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bibliotheque-apostolique-vaticane',
+      title: 'La Bibliothèque apostolique vaticane à la Renaissance',
+      field: 'Rome · XVe – XVIe siècles · Institution pontificale',
+      summary: 'Comprendre la mise en place de la bibliothèque pontificale moderne, son ouverture aux savants et son organisation documentaire.',
+      lesson: {
+        sections: [
+          'L’histoire de la Bibliothèque apostolique vaticane s’inscrit dans une tradition plus ancienne de conservation des livres et des archives de l’Église de Rome. La bibliothèque pontificale médiévale connaît des déplacements et des pertes. Au XVe siècle, le pape Nicolas V (1447-1455) développe une collection de manuscrits latins, grecs et hébreux et souhaite la rendre accessible à des lecteurs savants.',
+          'Le pape Sixte IV donne à cette entreprise une structure institutionnelle plus stable. Par la bulle Ad decorem militantis Ecclesiae du 15 juin 1475, il organise la bibliothèque, nomme Bartolomeo Platina comme bibliothécaire et fournit les moyens nécessaires à son fonctionnement. Les espaces sont répartis en salles distinctes, notamment pour les manuscrits latins et grecs, les livres réservés et les documents pontificaux. La consultation se fait sur place selon des règles précises ; des prêts sont également attestés.',
+          'La bibliothèque continue de s’enrichir au XVIe siècle grâce aux acquisitions et aux recherches de manuscrits. À la fin du siècle, Sixte V fait construire de nouveaux locaux, toujours associés au site actuel. L’institution est à la fois un outil de conservation, un centre de recherche érudite et un instrument de représentation culturelle et religieuse de la papauté.'
+        ],
+        example: {
+          statement: 'Quel événement institutionnel est associé au 15 juin 1475 ?',
+          calculation: 'Il faut identifier l’acte juridique et le pontificat qui donnent une organisation stable à la bibliothèque.',
+          answer: 'La bulle Ad decorem militantis Ecclesiae de Sixte IV, qui organise la Bibliothèque apostolique vaticane et nomme Bartolomeo Platina bibliothécaire.'
+        },
+        exercise: {
+          question: 'Pourquoi l’année 1475 est-elle un repère majeur pour la Bibliothèque vaticane ?',
+          answer: 'Parce que la bulle de Sixte IV formalise l’organisation de la bibliothèque et lui donne une structure institutionnelle durable.'
+        },
+        exercises: [
+          {
+            question: 'Quel pape développe la collection avant la réorganisation de 1475 ?',
+            answer: 'Nicolas V.'
+          },
+          {
+            question: 'Qui est nommé bibliothécaire en 1475 ?',
+            answer: 'Bartolomeo Platina.'
+          },
+          {
+            question: 'Quel type de documents la bibliothèque conserve-t-elle ?',
+            answer: 'Des manuscrits, des imprimés, des documents d’archives et d’autres collections patrimoniales.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Biblioteca Apostolica Vaticana — History',
+            url: 'https://www.vaticanlibrary.va/en/the-library/history-of-BAV.html'
+          },
+          {
+            title: 'Library of Congress — Rome Reborn: The Vatican Library and Renaissance Culture',
+            url: 'https://www.loc.gov/exhibits/vatican/intro.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bnf-depot-legal-bodleienne',
+      title: 'Le dépôt légal, la Bibliothèque royale et la Bodléienne',
+      field: 'Europe occidentale · XVIe – XVIIe siècles',
+      summary: 'Étudier deux transformations majeures : la collecte réglementaire des publications en France et la consolidation d’une grande bibliothèque universitaire à Oxford.',
+      lesson: {
+        sections: [
+          'En France, François Ier institue le dépôt légal par l’ordonnance de Montpellier de 1537. Le principe impose le dépôt d’exemplaires de documents publiés afin d’en assurer la collecte et la conservation. Le dispositif connaît des évolutions au fil des siècles et s’étend progressivement à de nouveaux supports. Il constitue une étape importante dans la formation d’une mémoire documentaire nationale, même si son application et son périmètre changent selon les périodes.',
+          'À Oxford, la bibliothèque universitaire aujourd’hui appelée Bodléienne est ouverte aux chercheurs le 8 novembre 1602 grâce à l’action de Thomas Bodley. Elle reprend un bâtiment médiéval et une tradition de collections universitaires, après une période de déclin. En 1610, un accord avec la Stationers’ Company prévoit le dépôt d’un exemplaire de certains ouvrages enregistrés à Londres, contribuant à l’expansion de ses collections.',
+          'Ces deux exemples illustrent des modèles complémentaires. Le dépôt légal organise une collecte systématique à l’échelle d’un territoire, tandis qu’une bibliothèque universitaire développe une collection au service de la recherche et de l’enseignement. Dans les deux cas, la conservation à long terme suppose des règles d’acquisition, des catalogues, des espaces adaptés et du personnel spécialisé.'
+        ],
+        example: {
+          statement: 'Quelle différence existe-t-il entre le dépôt légal français de 1537 et l’ouverture de la Bodléienne en 1602 ?',
+          calculation: 'Le premier est un mécanisme juridique de collecte des publications ; le second est l’ouverture d’une institution universitaire à ses lecteurs savants.',
+          answer: 'Le dépôt légal définit une obligation de dépôt et de conservation des documents publiés, tandis que la Bodléienne est une bibliothèque universitaire constituant et donnant accès à ses collections.'
+        },
+        exercise: {
+          question: 'En quoi le dépôt légal transforme-t-il le rôle des grandes bibliothèques ?',
+          answer: 'Il leur donne une fonction organisée de collecte du patrimoine documentaire publié, au-delà des acquisitions volontaires ou des dons.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année François Ier institue-t-il le dépôt légal ?',
+            answer: 'En 1537.'
+          },
+          {
+            question: 'Quand la Bodléienne ouvre-t-elle aux chercheurs ?',
+            answer: 'Le 8 novembre 1602.'
+          },
+          {
+            question: 'Quel est l’objectif principal du dépôt légal ?',
+            answer: 'Collecter, conserver et permettre le signalement et la consultation du patrimoine documentaire publié.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BnF — Le dépôt légal',
+            url: 'https://www.bnf.fr/fr/le-depot-legal'
+          },
+          {
+            title: 'Bodleian Libraries — History of the Bodleian',
+            url: 'https://visit.bodleian.ox.ac.uk/plan-your-visit/history-bodleian'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bibliotheques-nationales-et-congres',
+      title: 'Les bibliothèques nationales modernes : la Library of Congress et les grandes collections d’État',
+      field: 'Europe et Amérique du Nord · XVIIIe – XIXe siècles',
+      summary: 'Analyser la montée en puissance des bibliothèques nationales, leurs missions patrimoniales et leur relation avec les institutions politiques.',
+      lesson: {
+        sections: [
+          'À partir du XVIIIe siècle, les États modernes développent ou réorganisent des institutions chargées de conserver les publications, les manuscrits et les documents utiles à la vie politique et culturelle. Ces bibliothèques peuvent être issues de collections royales, parlementaires ou savantes. Leur évolution accompagne la croissance de l’imprimé, la construction des administrations et la volonté de constituer un patrimoine documentaire durable.',
+          'Aux États-Unis, la Library of Congress est créée par une loi du 24 avril 1800, qui prévoit un budget de 5 000 dollars pour l’achat de livres destinés au Congrès. La collection initiale est installée au Capitole. En 1814, lors de l’incendie du Capitole par les forces britanniques, une grande partie des livres est détruite. Thomas Jefferson propose alors sa bibliothèque personnelle, dont l’acquisition contribue à élargir considérablement les domaines couverts par l’institution.',
+          'Au XIXe siècle, les bibliothèques nationales développent des catalogues, des services spécialisés et des collections de plus en plus diversifiées. Elles deviennent des infrastructures de recherche et de conservation. Leur mission ne se limite plus à fournir des ouvrages aux responsables politiques : elles organisent la mémoire documentaire d’un pays et accueillent des chercheurs selon des règles propres à chaque établissement.'
+        ],
+        example: {
+          statement: 'Quel événement explique une transformation majeure des collections de la Library of Congress en 1814 ?',
+          calculation: 'Il faut relier la destruction d’une partie de la collection à l’acquisition ultérieure de la bibliothèque de Thomas Jefferson.',
+          answer: 'L’incendie du Capitole en 1814 détruit la bibliothèque ; l’acquisition de la collection de Jefferson contribue ensuite à élargir les domaines documentaires de l’institution.'
+        },
+        exercise: {
+          question: 'Pourquoi les bibliothèques nationales deviennent-elles des institutions centrales à l’époque contemporaine ?',
+          answer: 'Elles assurent la conservation du patrimoine documentaire, organisent son signalement et soutiennent la recherche et l’accès aux sources.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année la Library of Congress est-elle créée ?',
+            answer: 'En 1800.'
+          },
+          {
+            question: 'Quel événement détruit une grande partie de sa première collection ?',
+            answer: 'L’incendie du Capitole en 1814.'
+          },
+          {
+            question: 'Quel rôle joue la collection de Thomas Jefferson ?',
+            answer: 'Elle contribue à élargir les domaines et les sujets couverts par la bibliothèque.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Library of Congress — History of the Library of Congress',
+            url: 'https://www.loc.gov/about/history-of-the-library'
+          },
+          {
+            title: 'Library of Congress — The Library of Congress: A Timeline',
+            url: 'https://www.loc.gov/about/history-of-the-library/timeline/'
+          },
+          {
+            title: 'BnF — Histoire de la Bibliothèque nationale de France',
+            url: 'https://www.bnf.fr/fr/histoire-de-la-bibliotheque-nationale-de-france'
+          }
+        ]
+      }
+    },
+    {
+      id: 'essor-bibliotheques-publiques',
+      title: 'L’essor des bibliothèques publiques et gratuites au XIXe siècle',
+      field: 'Europe et Amérique du Nord · XIXe – début du XXe siècle',
+      summary: 'Comprendre le passage progressif de bibliothèques payantes ou associatives à des services publics financés par les collectivités et soutenus par la philanthropie.',
+      lesson: {
+        sections: [
+          'Au XIXe siècle, l’urbanisation, l’alphabétisation, le développement de la presse et l’élargissement de l’enseignement stimulent la demande de lieux de lecture. Avant la généralisation des bibliothèques publiques gratuites, les villes disposent de formes variées de collections : bibliothèques associatives, confessionnelles, universitaires, bibliothèques par abonnement et cabinets de lecture. L’accès est souvent conditionné par une cotisation ou une appartenance institutionnelle.',
+          'En Angleterre et au pays de Galles, le Public Libraries Act de 1850 autorise les collectivités locales à financer des bibliothèques par l’impôt local, sous certaines conditions. Cette loi est une étape majeure dans l’histoire du service public de lecture, mais elle ne signifie pas que toutes les villes possèdent immédiatement une bibliothèque gratuite. L’application du dispositif est progressive et dépend des décisions locales.',
+          'Aux États-Unis et dans d’autres pays, les dons d’Andrew Carnegie contribuent à la construction de nombreux bâtiments de bibliothèques à partir de la fin du XIXe siècle. La Library of Congress indique que Carnegie a financé plus de 1 600 bibliothèques aux États-Unis. Ces donations ont souvent soutenu l’extension de l’offre locale, mais leur réalisation dépendait aussi de l’engagement des municipalités à fournir un terrain, des fonds de fonctionnement et du personnel.'
+        ],
+        example: {
+          statement: 'Le Public Libraries Act de 1850 a-t-il créé immédiatement un réseau uniforme de bibliothèques gratuites dans toutes les villes anglaises ?',
+          calculation: 'Une loi habilitant les collectivités à financer un service ne signifie pas que toutes l’appliquent au même moment.',
+          answer: 'Non. La loi a rendu possible le financement local de bibliothèques publiques, mais leur création s’est faite progressivement selon les décisions des collectivités.'
+        },
+        exercise: {
+          question: 'Quels facteurs expliquent l’essor des bibliothèques publiques au XIXe siècle ?',
+          answer: 'L’urbanisation, l’alphabétisation, le développement de l’enseignement et de la presse, les réformes municipales et les financements philanthropiques.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année le Public Libraries Act anglais est-il adopté ?',
+            answer: 'En 1850.'
+          },
+          {
+            question: 'Quel rôle Andrew Carnegie a-t-il joué ?',
+            answer: 'Il a financé la construction de nombreuses bibliothèques, notamment aux États-Unis.'
+          },
+          {
+            question: 'Les bibliothèques par abonnement étaient-elles nécessairement gratuites ?',
+            answer: 'Non. Elles exigeaient généralement une cotisation ou un paiement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Cambridge University Press — The public library in concept and reality',
+            url: 'https://www.cambridge.org/core/books/abs/cambridge-history-of-libraries-in-britain-and-ireland/introduction-the-public-library-in-concept-and-reality/16F595AD4A230C2DA6654716C8371797'
+          },
+          {
+            title: 'Library of Congress — Carnegie Libraries',
+            url: 'https://guides.loc.gov/chronicling-america-carnegie-libraries'
+          },
+          {
+            title: 'Carnegie Corporation — Our History',
+            url: 'https://carnegie.org/about/history/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'bibliotheques-contemporaines-numeriques',
+      title: 'Les grandes bibliothèques contemporaines : patrimoine mondial et révolution numérique',
+      field: 'XXe – XXIe siècles · Institutions nationales et internationales',
+      summary: 'Étudier la diversification des supports, la numérisation, la coopération internationale et la coexistence des espaces physiques et des collections en ligne.',
+      lesson: {
+        sections: [
+          'Au XXe siècle, les grandes bibliothèques élargissent leurs collections au-delà du livre imprimé. Elles conservent des journaux, cartes, photographies, partitions, enregistrements sonores, films, documents administratifs et ressources numériques. La British Library, constituée comme institution nationale distincte en 1973, illustre cette diversité documentaire : ses collections comprennent des imprimés, manuscrits, cartes, partitions, brevets, bases de données et documents sonores.',
+          'La numérisation transforme les conditions de consultation et de préservation. Elle permet de diffuser à distance des reproductions de documents rares, de faciliter la recherche plein texte lorsque la reconnaissance optique est possible et de réduire la manipulation de certains originaux. Elle ne remplace toutefois pas la conservation matérielle : les supports numériques nécessitent des migrations de formats, des contrôles d’intégrité, des métadonnées et des infrastructures techniques durables.',
+          'La Bibliotheca Alexandrina, inaugurée en octobre 2002, est un exemple de grande institution contemporaine qui revendique un dialogue entre patrimoine ancien, recherche et culture numérique. Elle ne constitue pas la continuation matérielle de la bibliothèque ptolémaïque : c’est une institution moderne conçue pour faire revivre symboliquement son héritage. Les bibliothèques du XXIe siècle associent ainsi conservation patrimoniale, accès public, coopération scientifique et services numériques.'
+        ],
+        example: {
+          statement: 'La numérisation d’un manuscrit signifie-t-elle que son original matériel n’a plus besoin d’être conservé ?',
+          calculation: 'Une copie numérique facilite l’accès et la consultation, mais ne remplace pas toutes les informations matérielles portées par l’original ni les exigences de conservation à long terme.',
+          answer: 'Non. L’original reste un objet patrimonial et historique. La copie numérique complète sa conservation et facilite sa consultation, sans s’y substituer.'
+        },
+        exercise: {
+          question: 'Quels sont les principaux défis des grandes bibliothèques à l’ère numérique ?',
+          answer: 'Préserver les originaux, garantir la pérennité des fichiers, maintenir des métadonnées fiables, gérer les droits et rendre les collections accessibles à distance.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année la Bibliotheca Alexandrina moderne est-elle inaugurée ?',
+            answer: 'En 2002.'
+          },
+          {
+            question: 'La Bibliotheca Alexandrina moderne est-elle la même institution que la bibliothèque antique ?',
+            answer: 'Non. C’est une institution contemporaine qui reprend symboliquement l’héritage d’Alexandrie.'
+          },
+          {
+            question: 'Pourquoi la numérisation ne remplace-t-elle pas la conservation des originaux ?',
+            answer: 'Parce que les originaux conservent des caractéristiques matérielles et historiques que les reproductions numériques ne restituent pas entièrement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'British Library — About us',
+            url: 'https://www.gov.uk/government/organisations/british-library/about'
+          },
+          {
+            title: 'Bibliotheca Alexandrina — The New Bibliotheca Alexandrina',
+            url: 'https://www.bibalex.gov.eg/Attachments/Publications/Files/1_NewBibliothecaAlexandrina.pdf'
+          },
+          {
+            title: 'Bibliotheca Alexandrina — Annual Report 2010–2011',
+            url: 'https://www.bibalex.gov.eg/Attachments/Publications/Files/201208091245249995_AnnualReport20102011English982012small.pdf'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
 ]
 
 
