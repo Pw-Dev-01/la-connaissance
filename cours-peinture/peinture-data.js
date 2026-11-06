@@ -2456,6 +2456,388 @@ window.courseCatalog = [
       }
 
     ]
-  }
+  },
 
-];
+
+{
+  id: 'grands-musees',
+  sortYear: 1683,
+  title: 'Les grands musées à travers le monde',
+  note: 'Douze chapitres consacrés à de grandes institutions muséales de différents pays, classées selon leur première origine institutionnelle documentée. Les dates d’ouverture au public et d’inauguration des bâtiments actuels sont précisées séparément lorsqu’elles diffèrent. Les collections peuvent être plus anciennes que les institutions qui les conservent. Les histoires de constitution des collections, les transferts, les acquisitions coloniales, les restitutions et les transformations des missions muséales sont abordés avec prudence.',
+  chapters: [
+    {
+      id: 'ashmolean-royaume-uni',
+      title: 'Royaume-Uni : l’Ashmolean Museum et le musée universitaire moderne',
+      field: 'Angleterre · Oxford · 1683',
+      summary: 'Étudier la naissance de l’Ashmolean comme musée universitaire et l’évolution d’une collection privée vers une institution de conservation, de recherche et de présentation au public.',
+      lesson: {
+        sections: [
+          'L’Ashmolean Museum d’Oxford trouve son origine dans le don à l’Université d’Oxford de la collection réunie par Elias Ashmole. Le musée est créé en 1682 et ouvre en 1683. L’établissement se présente comme le premier musée public de Grande-Bretagne et le premier musée universitaire du monde. Cette formule doit être comprise dans le contexte historique de l’Europe moderne : les modalités d’accès, les horaires, les publics et les usages ne correspondaient pas encore aux pratiques actuelles de la démocratisation culturelle.',
+          'La collection d’Ashmole provenait en grande partie des objets rassemblés par John Tradescant l’Ancien et son fils, jardiniers et collectionneurs. Elle réunissait des spécimens naturels, des objets fabriqués, des antiquités et des curiosités. Ces ensembles reflétaient la culture de la collection encyclopédique de l’époque, qui cherchait à organiser matériellement des connaissances sur la nature et les sociétés. L’histoire de ces objets doit aussi être étudiée à travers les conditions de leur acquisition et les rapports de pouvoir qui ont rendu certaines collectes possibles.',
+          'L’Ashmolean a profondément évolué depuis le XVIIe siècle. Ses collections actuelles couvrent l’art et l’archéologie de nombreuses régions et périodes. Le musée associe aujourd’hui conservation, recherche, enseignement universitaire et accueil du public. Son histoire montre qu’un musée n’est pas une structure figée : les collections, les méthodes de classement, les récits d’exposition et les responsabilités éthiques changent au fil du temps.'
+        ],
+        example: {
+          statement: 'Quelle date faut-il retenir pour l’ouverture de l’Ashmolean Museum au public ?',
+          calculation: 'Il faut distinguer le don de la collection et la création du musée en 1682 de son ouverture en 1683.',
+          answer: 'L’année 1683 correspond à son ouverture. L’année 1682 marque la constitution de l’institution à partir du don de la collection.'
+        },
+        exercise: {
+          question: 'Pourquoi l’Ashmolean est-il un jalon important dans l’histoire des musées ?',
+          answer: 'Parce qu’il constitue très tôt un musée universitaire ouvert au public et associe une collection encyclopédique à des fonctions de conservation, d’étude et de transmission.'
+        },
+        exercises: [
+          { question: 'Dans quelle ville se trouve l’Ashmolean Museum ?', answer: 'À Oxford, en Angleterre.' },
+          { question: 'À quelle date le musée ouvre-t-il ?', answer: 'En 1683.' },
+          { question: 'De qui provient une part importante de la collection à l’origine du musée ?', answer: 'De John Tradescant l’Ancien et de son fils, dont Elias Ashmole acquit la collection.' }
+        ],
+        sources: [
+          { title: 'Ashmolean Museum — History of the Ashmolean', url: 'https://ashmolean.org/history-ashmolean' },
+          { title: 'Ashmolean Museum — About the Museum', url: 'https://www.ashmolean.org/about' }
+        ]
+      }
+    },
+    {
+      id: 'british-museum-royaume-uni',
+      title: 'Royaume-Uni : la création du British Museum',
+      field: 'Angleterre · Londres · 1753–1759',
+      summary: 'Comprendre la création légale du British Museum, son ouverture en 1759 et la formation de collections encyclopédiques devenues mondiales.',
+      lesson: {
+        sections: [
+          'Le British Museum est fondé par une loi du Parlement britannique en 1753, à la suite du legs de la collection de Hans Sloane à la nation. Cette collection comprenait des livres, des manuscrits, des objets d’histoire naturelle, des antiquités et des objets ethnographiques. Le projet fut complété par l’acquisition de la bibliothèque de Sir Robert Cotton et de la bibliothèque Harleienne. L’établissement ouvre au public le 15 janvier 1759 dans Montagu House, à Bloomsbury. Il est généralement présenté comme le premier musée national public du Royaume-Uni.',
+          'Le musée se développe dans un contexte d’expansion des sciences, des voyages, du commerce et de l’empire britannique. Ses collections s’accroissent par achats, dons, legs, fouilles et transferts. Certaines acquisitions sont liées à des contextes de domination coloniale, de guerre ou de rapports inégaux entre puissances. L’étude de provenance consiste à retracer l’histoire d’un objet, ses propriétaires successifs, ses conditions de collecte et les circonstances de son entrée dans une collection. Elle est devenue un enjeu essentiel de la recherche muséale et des débats sur les restitutions.',
+          'Au XIXe siècle, la croissance des collections conduit à la séparation de certaines disciplines et à la création d’institutions spécialisées. Les collections d’histoire naturelle sont transférées dans le nouveau British Museum (Natural History), ouvert à South Kensington en 1881, devenu le Natural History Museum. Le British Museum conserve aujourd’hui des collections consacrées notamment aux civilisations anciennes, à l’archéologie, aux arts et à l’histoire matérielle. Son histoire permet d’étudier les relations entre savoir scientifique, construction nationale et histoire impériale.'
+        ],
+        example: {
+          statement: 'Pourquoi les dates 1753 et 1759 désignent-elles 2 étapes différentes de l’histoire du British Museum ?',
+          calculation: '1753 correspond à sa fondation légale par le Parlement ; 1759 correspond à son ouverture effective au public.',
+          answer: 'Le musée est fondé en 1753 et ouvre ses portes le 15 janvier 1759.'
+        },
+        exercise: {
+          question: 'Pourquoi l’étude de provenance est-elle importante pour le British Museum ?',
+          answer: 'Elle permet de documenter les parcours des objets et d’examiner les conditions historiques, juridiques et éthiques de leur acquisition.'
+        },
+        exercises: [
+          { question: 'En quelle année le British Museum est-il fondé ?', answer: 'En 1753.' },
+          { question: 'Quand ouvre-t-il au public ?', answer: 'Le 15 janvier 1759.' },
+          { question: 'Quelle collection est à l’origine du projet ?', answer: 'La collection léguée par Hans Sloane à la nation.' }
+        ],
+        sources: [
+          { title: 'British Museum — Annual Report 2023–2024', url: 'https://www.britishmuseum.org/sites/default/files/2024-07/British_Museum_Annual_Report_Accounts_2023-24.pdf' },
+          { title: 'British Museum — Annual Report 2024–2025', url: 'https://www.britishmuseum.org/sites/default/files/2025-07/Annual_Report_and_Accounts_2024-25.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'hermitage-russie',
+      title: 'Russie : la naissance du musée de l’Ermitage',
+      field: 'Empire russe · Saint-Pétersbourg · 1764',
+      summary: 'Retracer le passage d’une collection impériale privée à un grand musée, en distinguant la date de fondation et l’ouverture publique du XIXe siècle.',
+      lesson: {
+        sections: [
+          'L’histoire de l’Ermitage est généralement datée de 1764, lorsque l’impératrice Catherine II acquiert une importante collection de peintures réunie par le marchand berlinois Johann Ernst Gotzkowsky. Cette acquisition constitue le noyau de la collection impériale. Le terme « Ermitage » désigne d’abord des espaces du palais où l’impératrice présentait ses œuvres à un cercle restreint. Il ne s’agissait donc pas, à cette première étape, d’un musée public au sens contemporain.',
+          'Au cours des règnes suivants, la collection s’enrichit grâce à des achats de tableaux, de sculptures, d’objets d’art et d’antiquités. Des bâtiments spécifiques sont construits à proximité du palais d’Hiver pour accueillir les œuvres et les activités de la cour. L’Ermitage devient progressivement un ensemble architectural et muséal. La croissance des collections reflète les goûts des souverains, les réseaux européens du marché de l’art et les ambitions culturelles de l’Empire russe.',
+          'Le Nouvel Ermitage, conçu notamment par l’architecte Leo von Klenze, ouvre en 1852 comme musée impérial accessible aux visiteurs. Cette date est différente de celle de 1764, qui marque l’origine de la collection. Après la révolution de 1917, l’institution devient un musée d’État. Aujourd’hui, le musée conserve des collections très diverses, de l’archéologie aux arts européens et asiatiques. Son histoire illustre le passage d’un trésor de cour à une institution patrimoniale de grande ampleur.'
+        ],
+        example: {
+          statement: 'Quelle date correspond à la fondation traditionnellement retenue pour l’Ermitage, et quelle date correspond à son ouverture publique impériale ?',
+          calculation: '1764 marque l’acquisition fondatrice de Catherine II ; 1852 marque l’ouverture du Nouvel Ermitage aux visiteurs.',
+          answer: 'La date de fondation retenue est 1764 ; l’ouverture du musée impérial au public a lieu en 1852.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer la collection impériale de 1764 du musée ouvert en 1852 ?',
+          answer: 'Parce que la première date désigne la constitution du noyau de la collection, tandis que la seconde correspond à l’ouverture d’un bâtiment muséal conçu pour accueillir des visiteurs.'
+        },
+        exercises: [
+          { question: 'Quelle souveraine est associée à l’acquisition fondatrice de 1764 ?', answer: 'Catherine II, dite Catherine la Grande.' },
+          { question: 'Quel marchand avait constitué la collection acquise en 1764 ?', answer: 'Johann Ernst Gotzkowsky, marchand berlinois.' },
+          { question: 'En quelle année le Nouvel Ermitage ouvre-t-il aux visiteurs ?', answer: 'En 1852.' }
+        ],
+        sources: [
+          { title: 'State Hermitage Museum — History of the Hermitage Museum', url: 'https://ermitazh.org/en/history/' },
+          { title: 'State Hermitage Museum — Facts and Figures', url: 'https://hermitagemuseum.org/about/facts_and_figures?lng=en' }
+        ]
+      }
+    },
+    {
+      id: 'louvre-france',
+      title: 'France : le Louvre, du palais royal au musée public',
+      field: 'France · Paris · 1793',
+      summary: 'Étudier la transformation du palais du Louvre en musée pendant la Révolution française et les évolutions de ses collections et de ses missions.',
+      lesson: {
+        sections: [
+          'Le palais du Louvre est d’abord une forteresse construite à partir de 1190 sous Philippe Auguste, puis devient une résidence royale à partir du XIVe siècle. Les souverains successifs l’agrandissent et y installent des collections artistiques. La transformation du palais en musée s’inscrit dans les débats des Lumières sur l’accès aux œuvres et dans les bouleversements politiques de la Révolution française. Un décret de 1791 prévoit de consacrer le Louvre aux arts.',
+          'Le Muséum central des Arts ouvre au public le 10 août 1793. Cette ouverture constitue un changement institutionnel majeur : des collections auparavant liées à la monarchie sont présentées dans un établissement conçu pour un public plus large. Les collections s’accroissent ensuite par achats, dons, saisies et transferts. Les œuvres prises dans les territoires conquis pendant les guerres révolutionnaires et napoléoniennes soulèvent des questions historiques et juridiques ; une partie des œuvres concernées est restituée après la chute de Napoléon.',
+          'Le Louvre poursuit son développement aux XIXe, XXe et XXIe siècles. Ses départements couvrent notamment les antiquités égyptiennes et orientales, les civilisations grecque, étrusque et romaine, les peintures, les sculptures, les arts décoratifs, les arts graphiques et les arts de l’Islam. Le projet du Grand Louvre et la pyramide conçue par Ieoh Ming Pei, inaugurée en 1989, transforment l’accueil et la circulation des visiteurs. Le musée doit aujourd’hui concilier conservation, recherche, fréquentation internationale et réflexion critique sur la provenance de ses œuvres.'
+        ],
+        example: {
+          statement: 'Quelle date marque l’ouverture du musée du Louvre au public ?',
+          calculation: 'La date de construction du palais, 1190, ne correspond pas à celle de l’ouverture du musée. Le Muséum central des Arts ouvre en 1793.',
+          answer: 'Le musée ouvre le 10 août 1793, sous le nom de Muséum central des Arts.'
+        },
+        exercise: {
+          question: 'En quoi la Révolution française transforme-t-elle le statut des collections du Louvre ?',
+          answer: 'Elle contribue à transformer des collections liées à la monarchie en un musée présenté comme destiné au public et à la nation.'
+        },
+        exercises: [
+          { question: 'En quelle année le Muséum central des Arts ouvre-t-il ?', answer: 'En 1793.' },
+          { question: 'Quel était le rôle initial du Louvre au XIIe siècle ?', answer: 'Une forteresse construite sous Philippe Auguste.' },
+          { question: 'Quand la pyramide du Louvre est-elle inaugurée ?', answer: 'En 1989.' }
+        ],
+        sources: [
+          { title: 'Musée du Louvre — Le musée du Louvre en bref', url: 'https://presse.louvre.fr/le-musee-du-louvre-1063000201419/?lang=fr' },
+          { title: 'Musée du Louvre — Les 230 ans du musée du Louvre', url: 'https://www.louvre.fr/decouvrir/vie-du-musee/les-230-ans-du-musee-du-louvre' }
+        ]
+      }
+    },
+    {
+      id: 'rijksmuseum-pays-bas',
+      title: 'Pays-Bas : la création du Rijksmuseum',
+      field: 'Pays-Bas · La Haye puis Amsterdam · 1800',
+      summary: 'Suivre la naissance du musée national néerlandais, ses déplacements et la constitution d’une collection représentative de l’histoire et des arts des Pays-Bas.',
+      lesson: {
+        sections: [
+          'Le gouvernement néerlandais décide le 19 novembre 1798 de créer un musée national. Le projet s’inscrit dans le contexte de la République batave et dans une volonté de rassembler des œuvres et des objets associés à l’histoire du pays. La Galerie nationale d’Art ouvre le 31 mai 1800 à Huis ten Bosch, à La Haye. Sa première collection réunit plus de 200 peintures et objets historiques provenant notamment des collections des stathouders et d’institutions nationales.',
+          'En 1808, Louis Napoléon, alors roi de Hollande, transfère les collections à Amsterdam, dans le palais royal. Le musée change ensuite de nom et de lieu à plusieurs reprises. Ces déplacements témoignent des transformations politiques du pays et de la place que les collections nationales occupent dans la représentation de l’État. Le musée acquiert progressivement des œuvres majeures de l’histoire artistique néerlandaise, tout en développant des collections historiques et d’arts décoratifs.',
+          'Le bâtiment actuel du Rijksmuseum, conçu par Pierre Cuypers, ouvre en 1885. Son architecture associe des références historiques et des fonctions muséales modernes pour l’époque. Une vaste rénovation, achevée en 2013, réorganise les parcours et les présentations. Le Rijksmuseum conserve et expose aujourd’hui des œuvres et objets qui documentent l’histoire des Pays-Bas, tout en travaillant sur le contexte de production, les échanges mondiaux et les liens entre art, commerce et empire.'
+        ],
+        example: {
+          statement: 'Quelle date marque la première ouverture de l’institution qui devient le Rijksmuseum ?',
+          calculation: 'La décision gouvernementale date de 1798, tandis que l’ouverture de la Galerie nationale d’Art a lieu en 1800.',
+          answer: 'Le 31 mai 1800, à Huis ten Bosch, à La Haye.'
+        },
+        exercise: {
+          question: 'Pourquoi l’histoire du Rijksmuseum est-elle liée aux transformations politiques des Pays-Bas ?',
+          answer: 'Parce que ses collections ont été déplacées et renommées au gré des changements de régime et de capitale, et qu’elles ont participé à la construction d’un récit patrimonial national.'
+        },
+        exercises: [
+          { question: 'En quelle année le gouvernement décide-t-il de créer le musée national ?', answer: 'En 1798.' },
+          { question: 'Où le musée ouvre-t-il en 1800 ?', answer: 'À Huis ten Bosch, à La Haye.' },
+          { question: 'En quelle année le bâtiment actuel conçu par Pierre Cuypers ouvre-t-il ?', answer: 'En 1885.' }
+        ],
+        sources: [
+          { title: 'Rijksmuseum — History', url: 'https://www.rijksmuseum.nl/en/about-us/what-we-do/history' }
+        ]
+      }
+    },
+    {
+      id: 'prado-espagne',
+      title: 'Espagne : le musée du Prado et les collections royales',
+      field: 'Espagne · Madrid · 1819',
+      summary: 'Comprendre comment les collections de la monarchie espagnole sont devenues le noyau d’un musée national consacré notamment à la peinture européenne.',
+      lesson: {
+        sections: [
+          'Le bâtiment qui accueille aujourd’hui le musée du Prado est conçu par Juan de Villanueva à partir de 1785, initialement pour abriter un cabinet d’histoire naturelle. Le projet change sous Ferdinand VII, encouragé par la reine Marie-Isabelle de Bragance : le bâtiment est destiné à devenir un musée royal de peintures et de sculptures. Le musée ouvre au public le 19 novembre 1819. Son premier catalogue comprend 311 peintures, alors que les réserves et les espaces du musée contiennent déjà environ 1 510 œuvres issues des résidences royales.',
+          'Le noyau de la collection provient des collections des souverains espagnols, enrichies depuis le XVIe siècle sous les Habsbourg puis les Bourbons. Ces ensembles permettent de comprendre les choix artistiques et politiques de la monarchie, ses commandes et ses relations avec les artistes européens. La collection comprend notamment des œuvres majeures de Velázquez, Goya, El Greco, Rubens et Bosch. L’histoire du Prado est donc inséparable de celle du mécénat royal et de la formation des collections de cour.',
+          'En 1868, à la suite de la révolution dite La Gloriosa, le musée cesse d’être une propriété privée de la Couronne et passe à l’État. Il prend progressivement une dimension nationale et accueille des fonds provenant d’autres institutions. Au XXe siècle, la protection des œuvres pendant la guerre civile espagnole devient un épisode majeur de son histoire : les collections sont évacuées pour les préserver. Le Prado est aujourd’hui un musée national dont les missions associent conservation, recherche, restauration et diffusion de l’histoire de l’art.'
+        ],
+        example: {
+          statement: 'Combien de peintures figuraient dans le premier catalogue du Prado publié en 1819 ?',
+          calculation: 'Le premier catalogue recensait les œuvres présentées dans le musée, tandis que l’ensemble conservé était plus important.',
+          answer: 'Le premier catalogue comprenait 311 peintures. Le musée conservait alors environ 1 510 œuvres provenant des résidences royales.'
+        },
+        exercise: {
+          question: 'Pourquoi les collections royales sont-elles essentielles pour comprendre la naissance du Prado ?',
+          answer: 'Elles constituent le noyau historique du musée et reflètent plusieurs siècles de commandes, d’acquisitions et de mécénat des souverains espagnols.'
+        },
+        exercises: [
+          { question: 'Quand le Prado ouvre-t-il au public ?', answer: 'Le 19 novembre 1819.' },
+          { question: 'Qui conçoit le bâtiment à partir de 1785 ?', answer: 'L’architecte Juan de Villanueva.' },
+          { question: 'En quelle année le musée passe-t-il de la Couronne à l’État ?', answer: 'En 1868.' }
+        ],
+        sources: [
+          { title: 'Museo Nacional del Prado — History of the Museum', url: 'https://www.museodelprado.es/en/museum/history-of-the-museum' },
+          { title: 'Ministère espagnol de la Culture — Museo Real', url: 'https://www.cultura.gob.es/ca/cultura/archivos/difusion/mc-difusion/bellas-artes-archivos-estatales/museo-del-prado/historia-museo-prado/edificios/museo-real.html' }
+        ]
+      }
+    },
+    {
+      id: 'musee-anthropologie-mexique',
+      title: 'Mexique : le Musée national d’anthropologie de Mexico',
+      field: 'Mexique · Mexico · 1825 et 1964',
+      summary: 'Retracer les origines du musée national mexicain et l’ouverture du bâtiment actuel consacré aux patrimoines archéologiques et ethnographiques du pays.',
+      lesson: {
+        sections: [
+          'L’histoire du Musée national d’anthropologie s’inscrit dans une tradition institutionnelle plus ancienne que son bâtiment actuel. Un musée national est créé par décret en 1825, peu après l’indépendance du Mexique. Au fil du XIXe et du XXe siècle, les collections et les institutions qui les administrent évoluent. Elles rassemblent notamment des objets archéologiques, des sculptures monumentales, des documents historiques et des témoignages des cultures autochtones du territoire mexicain.',
+          'Le bâtiment actuel est conçu par l’architecte Pedro Ramírez Vázquez, avec la collaboration de Jorge Campuzano et Rafael Mijares. Sa construction commence en février 1963 et le musée est inauguré le 17 septembre 1964 dans le bois de Chapultepec, à Mexico. L’organisation des salles associe des parcours chronologiques et des présentations régionales. Le musée cherche à rendre intelligible la diversité des sociétés anciennes et contemporaines du Mexique, sans réduire les cultures autochtones à un passé disparu.',
+          'Le Musée national d’anthropologie conserve et présente des collections archéologiques et ethnographiques majeures. Il joue un rôle important dans la recherche, la restauration, l’éducation et la représentation publique des patrimoines du pays. Son histoire soulève aussi des questions de représentation : comment exposer les cultures vivantes, associer les communautés concernées à l’interprétation de leurs patrimoines et expliquer les contextes de collecte des objets ? Ces questions sont au cœur des pratiques muséales contemporaines.'
+        ],
+        example: {
+          statement: 'Pourquoi faut-il indiquer à la fois 1825 et 1964 dans la chronologie du Musée national d’anthropologie ?',
+          calculation: '1825 correspond à la création du musée national précurseur ; 1964 correspond à l’inauguration du bâtiment actuel du Musée national d’anthropologie.',
+          answer: 'Les 2 dates renvoient à des étapes différentes : la création d’une institution muséale nationale en 1825 et l’ouverture du musée actuel le 17 septembre 1964.'
+        },
+        exercise: {
+          question: 'Quel est le rôle du Musée national d’anthropologie dans la présentation du patrimoine mexicain ?',
+          answer: 'Il conserve, étudie et expose des collections archéologiques et ethnographiques afin de documenter la diversité historique et culturelle du Mexique.'
+        },
+        exercises: [
+          { question: 'En quelle année le musée national précurseur est-il créé ?', answer: 'En 1825.' },
+          { question: 'Quand le bâtiment actuel est-il inauguré ?', answer: 'Le 17 septembre 1964.' },
+          { question: 'Quel architecte dirige le projet du bâtiment actuel ?', answer: 'Pedro Ramírez Vázquez, avec Jorge Campuzano et Rafael Mijares.' }
+        ],
+        sources: [
+          { title: 'Secretaría de Cultura de México — Museo Nacional de Antropología', url: 'https://chapultepec.cultura.gob.mx/oferta-cultural/museo-nacional-de-antropologia/' },
+          { title: 'Secretaría de Cultura — El Museo Nacional de Antropología', url: 'https://www.gob.mx/cultura/prensa/el-museo-nacional-de-antropologia-el-mas-emblematico-de-mexico' }
+        ]
+      }
+    },
+    {
+      id: 'altes-museum-allemagne',
+      title: 'Allemagne : l’Altes Museum et l’idéal du musée public',
+      field: 'Prusse · Berlin · 1830',
+      summary: 'Étudier la création d’un musée public à Berlin, son architecture néoclassique et le rôle de l’éducation artistique dans le projet prussien.',
+      lesson: {
+        sections: [
+          'L’Altes Museum est construit à Berlin à l’initiative du roi Frédéric-Guillaume III de Prusse. Le projet est confié à Karl Friedrich Schinkel et le bâtiment ouvre en 1830. Il répond à une volonté de rendre les collections royales accessibles à un public plus large et de faire de l’étude des arts et des civilisations anciennes un moyen d’éducation. L’ouverture d’un musée dans un bâtiment spécialement conçu à cet effet marque une étape importante dans l’histoire des institutions culturelles prussiennes.',
+          'L’architecture néoclassique de Schinkel s’inspire notamment des formes de l’Antiquité grecque. La colonnade ionique, la rotonde et l’organisation des espaces donnent au musée une dimension civique et pédagogique. Le bâtiment ne sert pas uniquement à exposer des objets : il met en scène une conception de la culture dans laquelle l’accès aux œuvres doit contribuer à la formation du citoyen. Cet idéal reste cependant inscrit dans une société hiérarchisée, dont les conditions d’accès à la culture évoluent progressivement.',
+          'L’Altes Museum accueille aujourd’hui principalement les collections d’antiquités classiques, notamment grecques, étrusques et romaines, ainsi que des monnaies anciennes. Il fait partie de l’ensemble de l’Île aux Musées de Berlin, inscrit au patrimoine mondial de l’UNESCO en 1999. Les destructions et dommages de la Seconde Guerre mondiale, puis les restaurations et réorganisations ultérieures, rappellent que l’histoire d’un musée dépend aussi de la préservation de son architecture et de ses collections.'
+        ],
+        example: {
+          statement: 'Quelle année marque l’ouverture de l’Altes Museum ?',
+          calculation: 'Le projet est commandé en 1825, mais le bâtiment conçu par Schinkel ouvre en 1830.',
+          answer: 'L’Altes Museum ouvre en 1830.'
+        },
+        exercise: {
+          question: 'Comment l’architecture de l’Altes Museum exprime-t-elle un idéal éducatif ?',
+          answer: 'Son architecture inspirée de l’Antiquité présente le musée comme un lieu public d’étude, de formation et de découverte des civilisations anciennes.'
+        },
+        exercises: [
+          { question: 'Dans quelle ville se trouve l’Altes Museum ?', answer: 'À Berlin.' },
+          { question: 'Quel architecte l’a conçu ?', answer: 'Karl Friedrich Schinkel.' },
+          { question: 'En quelle année ouvre-t-il ?', answer: 'En 1830.' }
+        ],
+        sources: [
+          { title: 'Staatliche Museen zu Berlin — Profile of the Altes Museum', url: 'https://www.smb.museum/en/museums-institutions/altes-museum/about-us/profile/' },
+          { title: 'visitBerlin — Altes Museum', url: 'https://www.visitberlin.de/en/altes-museum-old-museum' }
+        ]
+      }
+    },
+    {
+      id: 'met-etats-unis',
+      title: 'États-Unis : le Metropolitan Museum of Art de New York',
+      field: 'États-Unis · New York · 1870',
+      summary: 'Retracer la fondation du Met, son ouverture au public, l’expansion de ses collections et sa place dans la vie culturelle américaine.',
+      lesson: {
+        sections: [
+          'Le projet du Metropolitan Museum of Art prend forme en 1866 à Paris, où des Américains discutent de la création d’une institution nationale consacrée à l’art et à son enseignement. De retour aux États-Unis, John Jay mobilise des responsables civiques, des artistes, des collectionneurs et des philanthropes. Le musée est officiellement constitué le 13 avril 1870 par une loi de l’État de New York. Il ouvre au public dans un premier bâtiment situé sur la Cinquième Avenue, avant de s’installer en 1880 sur son site actuel, au bord de Central Park.',
+          'Le Met développe rapidement des collections d’art européen, américain, antique, asiatique, africain, océanien et islamique. Ses acquisitions reposent sur des achats, des dons, des legs et des campagnes de collecte. L’ampleur de ces collections permet de comparer des traditions artistiques de différentes régions, mais elle impose aussi une responsabilité scientifique : documenter les provenances, contextualiser les objets et rendre compte des conditions de leur entrée dans le musée.',
+          'Le musée devient progressivement un établissement majeur de recherche et de présentation de l’histoire de l’art. Ses départements spécialisés, ses expositions temporaires, ses publications et ses programmes éducatifs contribuent à son rayonnement. L’histoire du Met reflète également les transformations du rôle des musées américains : d’une institution créée par des élites civiques et philanthropiques, il évolue vers un service culturel de grande échelle, confronté aux questions de représentativité, d’accessibilité et de restitution.'
+        ],
+        example: {
+          statement: 'Quelle date correspond à la constitution officielle du Metropolitan Museum of Art ?',
+          calculation: 'Le projet est discuté dès 1866, mais l’institution est incorporée le 13 avril 1870.',
+          answer: 'Le Metropolitan Museum of Art est officiellement constitué le 13 avril 1870.'
+        },
+        exercise: {
+          question: 'Pourquoi le Met est-il devenu une institution de portée internationale ?',
+          answer: 'Grâce à l’ampleur et à la diversité de ses collections, à ses activités de recherche, à ses expositions et à ses programmes éducatifs.'
+        },
+        exercises: [
+          { question: 'En quelle année le Met est-il officiellement constitué ?', answer: 'En 1870.' },
+          { question: 'Quelle personnalité est associée à la mobilisation initiale du projet ?', answer: 'John Jay.' },
+          { question: 'En quelle année le musée ouvre-t-il sur son site actuel de la Cinquième Avenue ?', answer: 'En 1880.' }
+        ],
+        sources: [
+          { title: 'The Metropolitan Museum of Art — History of The Met', url: 'https://www.metmuseum.org/fr/about-the-met/history' },
+          { title: 'The Metropolitan Museum of Art — A Brief History of the Museum', url: 'https://www.metmuseum.org/fr/press-releases/a-brief-history-of-the-museum-2005-general-information' }
+        ]
+      }
+    },
+    {
+      id: 'tokyo-national-museum-japon',
+      title: 'Japon : la naissance du Tokyo National Museum',
+      field: 'Japon · Tokyo · 1872',
+      summary: 'Étudier la naissance du musée national japonais dans le contexte de la modernisation de l’État et de la protection du patrimoine culturel.',
+      lesson: {
+        sections: [
+          'Le Tokyo National Museum trouve son origine dans la première exposition organisée en mars 1872 par le département des musées du ministère japonais de l’Éducation, dans le pavillon Taiseiden du sanctuaire confucéen de Yushima. L’institution est ainsi créée dans le contexte de la période Meiji, marquée par une profonde transformation de l’État japonais et par une politique de modernisation. Le musée participe à la définition de nouvelles institutions publiques consacrées à la connaissance, à la classification et à la présentation du patrimoine.',
+          'Le musée change plusieurs fois de lieu et d’organisation avant de s’installer à Ueno en 1882. Ses collections comprennent des œuvres d’art, des objets archéologiques et des biens culturels japonais, mais aussi des pièces provenant d’autres régions d’Asie. Le musée joue un rôle dans l’étude et la conservation des objets, la documentation des techniques artistiques et la diffusion des connaissances. Les politiques de protection du patrimoine évoluent parallèlement à la construction d’une identité nationale moderne.',
+          'Le Tokyo National Museum est aujourd’hui l’un des principaux musées consacrés à l’art et à l’archéologie du Japon et de l’Asie. Il conserve des objets désignés comme Trésors nationaux et Biens culturels importants, selon les catégories juridiques japonaises. Son histoire rappelle que la création des musées nationaux au XIXe siècle est liée à la fois à la sauvegarde des patrimoines, à l’éducation publique, aux expositions internationales et à la représentation culturelle de l’État.'
+        ],
+        example: {
+          statement: 'Quel événement de 1872 est considéré comme l’origine du Tokyo National Museum ?',
+          calculation: 'Le musée retient la première exposition du département des musées au Taiseiden, en mars 1872, comme événement fondateur.',
+          answer: 'La première exposition organisée en mars 1872 au Taiseiden, à Yushima, constitue l’origine du musée.'
+        },
+        exercise: {
+          question: 'Pourquoi le Tokyo National Museum est-il lié à la modernisation du Japon ?',
+          answer: 'Parce qu’il naît dans le contexte de la période Meiji, lorsque l’État met en place de nouvelles institutions éducatives, scientifiques et patrimoniales.'
+        },
+        exercises: [
+          { question: 'En quelle année le Tokyo National Museum prend-il naissance ?', answer: 'En 1872.' },
+          { question: 'Où se déroule sa première exposition ?', answer: 'Au Taiseiden, dans le sanctuaire confucéen de Yushima, à Tokyo.' },
+          { question: 'En quelle année le musée s’installe-t-il à Ueno ?', answer: 'En 1882.' }
+        ],
+        sources: [
+          { title: 'Tokyo National Museum — History of the TNM', url: 'https://www.tnm.jp/modules/r_free_page/index.php?id=155&lang=en' },
+          { title: 'Tokyo National Museum — 150th Anniversary: About TNM', url: 'https://www.tnm.jp/150th/en/about.html' }
+        ]
+      }
+    },
+    {
+      id: 'musee-egyptien-caire-egypte',
+      title: 'Égypte : le Musée égyptien du Caire',
+      field: 'Égypte · Le Caire · 1902',
+      summary: 'Retracer la création du musée de la place Tahrir et son rôle dans la conservation et la présentation des antiquités égyptiennes.',
+      lesson: {
+        sections: [
+          'La création du Musée égyptien du Caire répond à la croissance des collections d’antiquités et à la nécessité de disposer d’un bâtiment adapté à leur conservation. Des musées antérieurs avaient été installés notamment à Bulaq puis au palais de Gizeh. À la fin du XIXe siècle, l’augmentation des découvertes archéologiques rend nécessaire un nouvel établissement. Un concours international d’architecture est organisé et le projet de Marcel Dourgnon est retenu. La première pierre du bâtiment de la place Tahrir est posée le 1er avril 1897.',
+          'Les objets sont installés dans le nouveau bâtiment à partir de 1900 et le musée ouvre officiellement le 15 novembre 1902. Gaston Maspero joue un rôle important dans la préparation scientifique et la présentation des collections. Le musée rassemble des objets couvrant une très longue période, de la préhistoire égyptienne à l’époque gréco-romaine. Il contribue à la conservation, à l’étude et à la diffusion du patrimoine pharaonique, dans un contexte où l’archéologie égyptienne est marquée par des acteurs locaux et étrangers ainsi que par les rapports politiques de l’époque.',
+          'Le Musée égyptien de la place Tahrir demeure une institution historique majeure, même si une partie des collections a été transférée vers d’autres établissements, notamment le Musée national de la civilisation égyptienne et le Grand Musée égyptien. Ces transferts s’inscrivent dans une réorganisation des espaces de conservation et de présentation du patrimoine. Il est donc important de ne pas confondre l’ouverture du musée de Tahrir en 1902 avec celle du Grand Musée égyptien, inauguré bien plus tard.'
+        ],
+        example: {
+          statement: 'Quelle date marque l’ouverture officielle du Musée égyptien de la place Tahrir ?',
+          calculation: 'La première pierre est posée en 1897, les objets commencent à être installés en 1900 et l’ouverture officielle intervient en 1902.',
+          answer: 'Le musée ouvre officiellement le 15 novembre 1902.'
+        },
+        exercise: {
+          question: 'Pourquoi le musée du Caire a-t-il été construit à la fin du XIXe siècle ?',
+          answer: 'Parce que les collections d’antiquités augmentaient et que les lieux précédents ne suffisaient plus à les conserver et à les présenter.'
+        },
+        exercises: [
+          { question: 'Quel architecte a remporté le concours du nouveau musée ?', answer: 'Marcel Dourgnon.' },
+          { question: 'Quand la première pierre a-t-elle été posée ?', answer: 'Le 1er avril 1897.' },
+          { question: 'Quand le musée ouvre-t-il officiellement ?', answer: 'Le 15 novembre 1902.' }
+        ],
+        sources: [
+          { title: 'Egyptian Museum Cairo — History of the Egyptian Museum', url: 'https://egyptianmuseumcairo.eg/history-of-the-egyptian-museum/' },
+          { title: 'Ministry of Tourism and Antiquities — The Egyptian Museum', url: 'https://egymonuments.gov.eg/museums/egyptian-museum' }
+        ]
+      }
+    },
+    {
+      id: 'national-museum-chine',
+      title: 'Chine : les origines du Musée national de Chine',
+      field: 'Chine · Pékin · 1912–2012',
+      summary: 'Distinguer les institutions fondatrices de 1912, leur ouverture au public en 1926 et la création du Musée national de Chine contemporain.',
+      lesson: {
+        sections: [
+          'L’histoire institutionnelle du Musée national de Chine remonte au 9 juillet 1912, lorsque le ministère de l’Éducation de la République de Chine crée un bureau préparatoire pour le Musée national d’histoire. L’institution est d’abord installée au Guozijian, l’ancien Collège impérial de Pékin. Elle est officiellement constituée en novembre 1920 et ouvre au public en octobre 1926. Ces étapes doivent être distinguées : 1912 marque le lancement du projet, 1920 sa constitution officielle et 1926 son ouverture publique.',
+          'Au XXe siècle, les changements politiques entraînent plusieurs réorganisations et changements de nom. Après 1949, le musée devient le Musée d’histoire de Pékin, puis les institutions consacrées à l’histoire chinoise et à l’histoire révolutionnaire connaissent des trajectoires administratives distinctes. En 1969, elles sont réunies sous le nom de Musée d’histoire de la Révolution chinoise. Cette histoire institutionnelle reflète les transformations politiques et les usages publics de l’histoire dans la Chine contemporaine.',
+          'Le Musée national de Chine actuel est officiellement constitué en février 2003 par la fusion du Musée national d’histoire chinoise et du Musée national de la Révolution chinoise. Son bâtiment est agrandi et rénové au début du XXIe siècle ; il rouvre officiellement le 1er mars 2012. Ses collections couvrent l’histoire et les cultures de la Chine, de l’Antiquité à l’époque contemporaine. Le musée associe exposition, conservation, recherche et récit historique national, avec une responsabilité particulière dans la contextualisation des objets et des périodes présentées.'
+        ],
+        example: {
+          statement: 'Pourquoi 1912 et 2003 sont-elles toutes deux des dates importantes pour le Musée national de Chine ?',
+          calculation: '1912 marque la création du bureau préparatoire du Musée national d’histoire ; 2003 correspond à la création de l’institution contemporaine par fusion de 2 musées.',
+          answer: '1912 est le point de départ de la filiation historique ; 2003 est la date de constitution du Musée national de Chine actuel.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer l’origine de 1912 de la création du musée actuel en 2003 ?',
+          answer: 'Parce que l’institution a connu plusieurs réorganisations, changements de nom et fusions avant de devenir le Musée national de Chine contemporain.'
+        },
+        exercises: [
+          { question: 'En quelle année le bureau préparatoire du Musée national d’histoire est-il créé ?', answer: 'En 1912.' },
+          { question: 'Quand le musée historique ouvre-t-il au public ?', answer: 'En octobre 1926.' },
+          { question: 'En quelle année le Musée national de Chine actuel est-il constitué ?', answer: 'En 2003.' }
+        ],
+        sources: [
+          { title: 'National Museum of China — About the NMC: History', url: 'https://en.chnmuseum.cn/about_the_nmc_593/' },
+          { title: 'National Museum of China — History of the NMC', url: 'https://en.chnmuseum.cn/about_the_nmc_593/about_the_nmc_594/' }
+        ]
+      }
+    }
+  ]
+},
+
+
+]
