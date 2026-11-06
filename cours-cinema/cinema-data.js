@@ -267,7 +267,7 @@ window.courseCatalog = [
 {
   id: 'grands-cineastes-americains',
   sortYear: 1902,
-  title: 'Les grands cinéastes américain s',
+  title: 'Les grands cinéastes américains',
 note: 'Parcours chronologique consacré aux cinéastes américains majeurs. Chaque chapitre présente un parcours, des œuvres importantes, une analyse de leur langage cinématographique et des exercices.',
   chapters: [
     {
@@ -810,5 +810,4 @@ note: 'Parcours chronologique consacré aux cinéastes américains majeurs. Chaq
 
 
 ]
-
 
