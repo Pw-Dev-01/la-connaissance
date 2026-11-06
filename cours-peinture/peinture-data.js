@@ -2839,5 +2839,376 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'grands-tableaux',
+  sortYear: 1434,
+  title: 'Les tableaux célèbres de la peinture',
+  note: 'Douze œuvres majeures, classées selon leur date de création et présentées dans leur contexte culturel. Le pays indiqué correspond principalement à l’origine artistique ou au contexte de création, et non au lieu actuel de conservation. Les dates précédées de « vers » ou « ca. » sont des estimations historiques. La sélection couvre plusieurs traditions artistiques, sans prétendre établir un classement objectif des œuvres les plus célèbres.',
+  chapters: [
+    {
+      id: 'epoux-arnolfini',
+      title: 'Les Époux Arnolfini — Jan van Eyck',
+      field: 'Pays-Bas bourguignons · Peinture flamande · 1434',
+      summary: 'Un portrait d’intérieur qui révèle la précision de la peinture à l’huile des anciens Pays-Bas et la richesse symbolique des objets domestiques.',
+      lesson: {
+        sections: [
+          'Jan van Eyck réalise en 1434 un panneau à l’huile représentant un homme et une femme dans une pièce. Le tableau est conservé à la National Gallery de Londres. Son titre complet reste formulé avec prudence par le musée : Portrait de Giovanni(?) Arnolfini et de son épouse. L’identification des personnages et la fonction exacte de l’image ont fait l’objet de débats ; il faut donc distinguer les données visibles des interprétations proposées.',
+          'La scène est construite avec une grande précision : fenêtre, lit, chandelier, vêtements, chaussures et miroir convexe contribuent à créer un espace intérieur cohérent. Le miroir placé au fond reflète une partie de la pièce et deux silhouettes près de l’entrée. Cette réflexion élargit l’espace représenté et attire l’attention sur la présence du peintre ou de témoins possibles, sans permettre d’identifier avec certitude ces figures.',
+          'L’œuvre illustre la maîtrise de la peinture à l’huile dans les anciens Pays-Bas. Les couches de peinture et les détails minutieux permettent de différencier les matières, les reflets et les textures. Les objets ont parfois reçu des interprétations symboliques, mais aucune lecture unique ne doit être présentée comme certaine. Le tableau est essentiel pour comprendre le réalisme minutieux et la culture visuelle des villes marchandes du XVe siècle.'
+        ],
+        example: {
+          statement: 'Le tableau est daté de 1434. Le miroir convexe montre une partie de la pièce située derrière le point de vue principal. Quelle fonction visuelle cette représentation remplit-elle ?',
+          calculation: 'Il ne s’agit pas d’un calcul numérique : on compare l’espace directement peint et l’espace rendu visible par le reflet.',
+          answer: 'Le miroir donne accès à une portion supplémentaire de l’espace et complexifie la composition. Il ne constitue pas une preuve suffisante pour affirmer l’identité des personnages reflétés.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les détails observables et les interprétations symboliques dans l’étude des Époux Arnolfini ?',
+          answer: 'Parce que la présence d’un objet est vérifiable dans l’image, alors que sa signification peut faire l’objet de plusieurs hypothèses historiques. Une analyse rigoureuse présente les hypothèses comme telles.'
+        },
+        exercises: [
+          { question: 'En quelle année le tableau est-il daté ?', answer: '1434.' },
+          { question: 'Sur quel support est-il peint ?', answer: 'À l’huile sur un panneau de bois, probablement en chêne.' },
+          { question: 'Quel élément reflète une partie de la pièce ?', answer: 'Le miroir convexe placé au fond de la pièce.' }
+        ],
+        sources: [
+          { title: 'National Gallery — Jan van Eyck, The Arnolfini Portrait', url: 'https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait' }
+        ]
+      }
+    },
+    {
+      id: 'naissance-venus',
+      title: 'La Naissance de Vénus — Sandro Botticelli',
+      field: 'Italie · Renaissance florentine · vers 1485',
+      summary: 'Une grande composition mythologique qui associe l’héritage antique, la poésie humaniste et l’élégance linéaire de Botticelli.',
+      lesson: {
+        sections: [
+          'La Naissance de Vénus est généralement datée vers 1485 et conservée aux Offices, à Florence. Sandro Botticelli représente Vénus debout sur une grande coquille, arrivant sur le rivage. Le sujet s’inspire de la mythologie antique : la déesse est portée vers la terre par les vents et accueillie par une figure féminine qui lui tend un manteau. Le titre traditionnel ne décrit donc pas littéralement sa naissance dans la mer, mais son arrivée sur le rivage.',
+          'La composition s’organise autour de la figure centrale de Vénus. Les lignes des corps, des cheveux et des étoffes créent un mouvement fluide. Les personnages latéraux et les vents donnent une direction à la scène, tandis que le paysage reste relativement stylisé. Botticelli privilégie le contour, le rythme des silhouettes et l’harmonie décorative plutôt qu’une imitation strictement naturaliste de l’espace.',
+          'L’œuvre témoigne de l’intérêt des milieux florentins pour la culture classique. Une commande liée à la famille Médicis est souvent envisagée, mais les documents anciens ne permettent pas d’en établir avec certitude le commanditaire initial. La peinture est réalisée à la tempera sur toile, support alors utilisé pour certaines grandes décorations profanes. Elle montre comment la mythologie antique devient un sujet majeur de la culture artistique de la Renaissance.'
+        ],
+        example: {
+          statement: 'La notice des Offices date le tableau d’environ 1485 et identifie Vénus comme figure centrale. Comment la composition guide-t-elle le regard vers elle ?',
+          calculation: 'On observe la position centrale de Vénus, les directions des vents et les lignes courbes des cheveux et des étoffes.',
+          answer: 'La disposition des personnages latéraux et les mouvements convergents conduisent le regard vers Vénus, dont la posture calme contraste avec l’agitation des figures qui l’entourent.'
+        },
+        exercise: {
+          question: 'En quoi cette œuvre témoigne-t-elle de la redécouverte de l’Antiquité à la Renaissance ?',
+          answer: 'Elle reprend un sujet de la mythologie gréco-romaine et transforme la figure de Vénus en sujet majeur d’une grande composition profane.'
+        },
+        exercises: [
+          { question: 'Quel artiste a peint La Naissance de Vénus ?', answer: 'Sandro Botticelli.' },
+          { question: 'Quelle date approximative est généralement retenue ?', answer: 'Vers 1485.' },
+          { question: 'Quelle technique est indiquée par les Offices ?', answer: 'La tempera sur toile.' }
+        ],
+        sources: [
+          { title: 'Gallerie degli Uffizi — The Birth of Venus', url: 'https://www.uffizi.it/en/artworks/birth-of-venus' }
+        ]
+      }
+    },
+    {
+      id: 'joconde',
+      title: 'La Joconde — Léonard de Vinci',
+      field: 'Italie · Haute Renaissance · vers 1503–1519',
+      summary: 'Un portrait célèbre pour son modelé subtil, son paysage atmosphérique et les questions persistantes sur son identité et son histoire.',
+      lesson: {
+        sections: [
+          'La Joconde, également appelée Mona Lisa, représente Lisa Gherardini, épouse de Francesco del Giocondo, selon l’identification retenue dans la notice du Louvre. Léonard de Vinci commence le portrait au début du XVIe siècle ; le Louvre donne une datation large de 1503 à 1519. Cette fourchette rappelle que l’œuvre a pu être travaillée sur une longue période et qu’il ne faut pas réduire sa création à une année précise.',
+          'La figure est présentée à mi-corps, tournée vers le spectateur, devant un paysage lointain. Le modelé du visage repose sur des transitions progressives entre lumière et ombre. Cette technique, souvent associée au sfumato, évite les contours trop rigides et donne une impression de douceur. Le paysage, construit par des variations de tons et de profondeur, renforce la sensation d’espace derrière la figure.',
+          'La célébrité du tableau tient à plusieurs facteurs : la qualité de l’exécution, les recherches de Léonard sur le portrait, son histoire matérielle et sa réception culturelle. Le sourire a suscité de nombreuses interprétations, mais il ne faut pas prétendre qu’une explication psychologique unique est démontrée. L’œuvre est aujourd’hui conservée au musée du Louvre, où elle est présentée derrière une protection adaptée à sa conservation.'
+        ],
+        example: {
+          statement: 'La notice du Louvre situe la réalisation de La Joconde entre 1503 et 1519. Pourquoi cette datation est-elle plus prudente qu’une date unique ?',
+          calculation: 'La période indiquée couvre plusieurs années : 1519 - 1503 = 16 ans entre les deux bornes calendaires.',
+          answer: 'La fourchette de 16 ans exprime une datation de travail plutôt qu’une durée exacte de réalisation. Elle évite de présenter comme certaine une date de fin qui ne peut pas être fixée à un jour ou à une année unique.'
+        },
+        exercise: {
+          question: 'Comment Léonard de Vinci construit-il la douceur du visage ?',
+          answer: 'Il utilise des transitions subtiles entre les tons clairs et foncés, sans contours fortement découpés, procédé associé au sfumato.'
+        },
+        exercises: [
+          { question: 'Qui est la personne représentée selon l’identification du Louvre ?', answer: 'Lisa Gherardini, épouse de Francesco del Giocondo.' },
+          { question: 'Quelle période de création le Louvre indique-t-il ?', answer: '1503–1519.' },
+          { question: 'Quel terme désigne le modelé obtenu par des transitions très douces ?', answer: 'Le sfumato.' }
+        ],
+        sources: [
+          { title: 'Musée du Louvre — La Joconde, notice des collections', url: 'https://collections.louvre.fr/ark:/53355/cl010062370' }
+        ]
+      }
+    },
+    {
+      id: 'ecole-athenes',
+      title: 'L’École d’Athènes — Raphaël',
+      field: 'Italie · Haute Renaissance · 1509–1511',
+      summary: 'Une fresque monumentale qui met en scène la philosophie antique dans une architecture idéale et célèbre l’humanisme de la Renaissance.',
+      lesson: {
+        sections: [
+          'L’École d’Athènes est une fresque peinte par Raphaël entre 1509 et 1511 dans les appartements du palais du Vatican. Elle appartient au programme décoratif commandé sous le pontificat de Jules II. La scène rassemble des philosophes et savants de l’Antiquité dans un vaste espace architectural. Il ne s’agit pas d’une représentation documentaire d’une école historique, mais d’une construction intellectuelle qui réunit des figures de périodes différentes.',
+          'Platon et Aristote occupent le centre de la composition. Leurs gestes sont souvent interprétés comme une opposition entre l’orientation vers les réalités intelligibles et l’attention portée au monde concret. Autour d’eux, les personnages sont disposés en groupes qui évoquent différentes disciplines : philosophie, mathématiques, géométrie et observation de la nature. Les gestes, les attitudes et les échanges structurent la lecture de la fresque.',
+          'L’architecture peinte donne une profondeur monumentale à la scène. Les lignes de fuite convergent vers le centre, tandis que les voûtes et les arcs rappellent l’intérêt de la Renaissance pour l’architecture antique. L’œuvre associe la maîtrise de la perspective, l’idéal de beauté classique et la valorisation du savoir. Elle constitue un exemple majeur de la manière dont les artistes de la Renaissance ont transformé l’Antiquité en référence intellectuelle et visuelle.'
+        ],
+        example: {
+          statement: 'Platon et Aristote sont placés au centre de la fresque. Quel effet produit ce choix de composition ?',
+          calculation: 'L’analyse repose sur la position des figures et sur les lignes architecturales qui orientent le regard vers le centre.',
+          answer: 'Leur position centrale les présente comme les principaux pôles du débat philosophique et organise les groupes de penseurs autour d’eux.'
+        },
+        exercise: {
+          question: 'Pourquoi L’École d’Athènes est-elle associée à l’humanisme de la Renaissance ?',
+          answer: 'Parce qu’elle valorise les savoirs antiques, la réflexion rationnelle et les disciplines intellectuelles dans une composition qui leur donne une place centrale.'
+        },
+        exercises: [
+          { question: 'Qui a peint L’École d’Athènes ?', answer: 'Raphaël.' },
+          { question: 'Entre quelles années la fresque a-t-elle été réalisée ?', answer: 'Entre 1509 et 1511.' },
+          { question: 'Quels deux philosophes sont placés au centre ?', answer: 'Platon et Aristote.' }
+        ],
+        sources: [
+          { title: 'Vatican Museums — Raphael Rooms', url: 'https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/stanze-di-raffaello.html' },
+          { title: 'Raffaello Sanzio — The School of Athens, notice descriptive', url: 'https://www.raffaellosanzio.art/artworks/the-school-of-athens/' }
+        ]
+      }
+    },
+    {
+      id: 'ronde-nuit',
+      title: 'La Ronde de nuit — Rembrandt',
+      field: 'Pays-Bas · Âge d’or néerlandais · 1642',
+      summary: 'Un portrait collectif animé qui renouvelle la représentation des compagnies civiques par le mouvement, la lumière et la profondeur.',
+      lesson: {
+        sections: [
+          'La Ronde de nuit est achevée par Rembrandt en 1642. Son titre historique est plus long : La Compagnie de milice du district II sous le commandement du capitaine Frans Banninck Cocq. Le tableau a été réalisé pour une salle de la garde civique d’Amsterdam. Le titre populaire de Ronde de nuit est tardif et ne correspond pas à l’intitulé d’origine ; il s’est imposé dans l’histoire de la réception de l’œuvre.',
+          'Rembrandt ne présente pas les membres de la compagnie comme une simple rangée de personnages immobiles. Le capitaine donne un ordre, son lieutenant avance et les autres membres se mettent en mouvement. Les gestes et les regards créent plusieurs directions d’action. La lumière sélectionne certaines figures et certains détails, notamment le capitaine, son lieutenant et une jeune fille située à l’arrière-plan.',
+          'La toile est monumentale et peinte à l’huile. Sa composition associe portrait de groupe et scène dynamique. Elle témoigne du rôle des milices urbaines et des associations civiques dans la société néerlandaise du XVIIe siècle. Le tableau a connu des transformations matérielles, notamment une réduction de ses dimensions lors d’un déplacement ancien. Son état actuel et son histoire doivent donc être pris en compte lorsqu’on étudie son format original.'
+        ],
+        example: {
+          statement: 'Le Rijksmuseum indique que le tableau mesure aujourd’hui environ 379,5 cm de haut sur 453,5 cm de large. Que montre ce format ?',
+          calculation: 'Le rapport largeur / hauteur est approximativement 453,5 / 379,5 = 1,19.',
+          answer: 'Le format est horizontal, mais sa hauteur reste exceptionnelle. Il permet de réunir un grand nombre de personnages dans une scène collective ample.'
+        },
+        exercise: {
+          question: 'En quoi Rembrandt transforme-t-il le portrait collectif traditionnel ?',
+          answer: 'Il donne aux personnages des actions, des gestes et des déplacements, ce qui fait de la compagnie un groupe en mouvement plutôt qu’une simple rangée de portraits.'
+        },
+        exercises: [
+          { question: 'En quelle année Rembrandt achève-t-il le tableau ?', answer: '1642.' },
+          { question: 'Quel est le nom du capitaine représenté ?', answer: 'Frans Banninck Cocq.' },
+          { question: 'Quel musée conserve l’œuvre ?', answer: 'Le Rijksmuseum, à Amsterdam.' }
+        ],
+        sources: [
+          { title: 'Rijksmuseum — The Night Watch, notice de collection', url: 'https://www.rijksmuseum.nl/en/collection/object/The-Night-Watch-Militia-Company-of-District-II-under-the-Command-of-Captain-Frans-Banninck-Cocq--3137deb45cd7765f9a76084a16c99544' },
+          { title: 'Rijksmuseum — 10 things about Rembrandt’s Night Watch', url: 'https://www.rijksmuseum.nl/en/stories/10-things/story/10-things-about-rembrandt-s-night-watch' }
+        ]
+      }
+    },
+    {
+      id: 'las-meninas',
+      title: 'Les Ménines — Diego Velázquez',
+      field: 'Espagne · Siècle d’or espagnol · 1656',
+      summary: 'Une scène de cour qui interroge la place du peintre, le regard du spectateur et les relations entre représentation et pouvoir.',
+      lesson: {
+        sections: [
+          'Les Ménines est peint par Diego Velázquez en 1656 et conservé au musée du Prado, à Madrid. La scène se déroule dans un espace du palais royal. L’infante Marguerite est entourée de demoiselles d’honneur, de serviteurs et d’autres personnages de la cour. Velázquez s’est également représenté lui-même devant une grande toile. Le tableau ne se limite donc pas à un portrait de l’infante : il met en scène l’acte même de représenter.',
+          'Un miroir situé au fond de la pièce reflète les souverains, Philippe IV et Mariana d’Autriche, selon l’identification habituelle. Leur position exacte dans l’espace représenté reste un élément central de l’analyse : ils pourraient se tenir devant la scène, à l’emplacement du spectateur, tandis que Velázquez semble peindre leur portrait. Le tableau construit ainsi un jeu complexe entre ce qui est montré, ce qui est reflété et ce qui demeure hors du cadre.',
+          'La profondeur est obtenue par la perspective, les différences de lumière et la succession des plans. Une porte ouverte au fond attire le regard et donne une ouverture supplémentaire à l’espace. La peinture combine observation de la vie de cour et réflexion sur le statut de l’artiste. Velázquez, peintre du roi, affirme la dignité intellectuelle de son métier en se représentant au travail dans une composition de très grande ambition.'
+        ],
+        example: {
+          statement: 'Le miroir du fond montre les souverains alors qu’ils ne sont pas représentés directement au premier plan. Quel problème de point de vue cela pose-t-il ?',
+          calculation: 'Il faut comparer la place des personnages visibles, celle du miroir et la position possible du spectateur.',
+          answer: 'Le spectateur est amené à se demander s’il occupe la place des souverains dans l’espace de la scène. Le tableau rend volontairement complexe la relation entre l’image, le modèle et celui qui regarde.'
+        },
+        exercise: {
+          question: 'Pourquoi Les Ménines est-il considéré comme une réflexion sur la peinture elle-même ?',
+          answer: 'Parce que Velázquez se représente en train de peindre et organise l’image autour de questions de regard, de représentation et de place de l’artiste.'
+        },
+        exercises: [
+          { question: 'En quelle année Les Ménines est-il daté ?', answer: '1656.' },
+          { question: 'Qui est l’artiste ?', answer: 'Diego Velázquez.' },
+          { question: 'Quel personnage occupe le centre de la scène ?', answer: 'L’infante Marguerite.' }
+        ],
+        sources: [
+          { title: 'Museo Nacional del Prado — Las Meninas', url: 'https://www.museodelprado.es/en/the-collection/art-work/meninas/9fdc7800-9ade-48b0-ab8b-edee94ea877f' }
+        ]
+      }
+    },
+    {
+      id: 'jeune-fille-perle',
+      title: 'La Jeune Fille à la perle — Johannes Vermeer',
+      field: 'Pays-Bas · Peinture hollandaise du XVIIe siècle · vers 1665',
+      summary: 'Une figure isolée, tournée vers le spectateur, qui met en valeur la lumière, la matière picturale et le genre du tronie.',
+      lesson: {
+        sections: [
+          'La Jeune Fille à la perle est généralement datée vers 1665 et conservée au Mauritshuis, à La Haye. Johannes Vermeer représente une jeune figure portant un turban bleu et jaune et une grande boucle d’oreille en forme de perle. Le musée précise qu’il ne s’agit pas d’un portrait identifié, mais d’un tronie : une étude de tête ou de personnage dont l’intérêt repose sur l’expression, le costume et l’effet visuel.',
+          'La jeune fille tourne la tête vers le spectateur. Le fond sombre isole le visage et renforce la présence du regard. Vermeer construit les volumes avec des transitions douces, tandis que quelques touches lumineuses suggèrent les reflets sur les lèvres, les yeux et la perle. La peinture ne cherche pas à décrire chaque détail avec la même intensité : certaines zones sont modelées avec finesse, d’autres sont traitées de manière plus synthétique.',
+          'La perle est devenue l’élément le plus immédiatement reconnaissable du tableau, mais elle est rendue par quelques touches de peinture et non par une description exhaustive de sa surface. L’œuvre montre la capacité de Vermeer à produire une impression de lumière avec une économie de moyens. Son succès contemporain ne doit pas faire oublier que sa renommée mondiale s’est construite progressivement, bien après la vie du peintre.'
+        ],
+        example: {
+          statement: 'Le Mauritshuis classe l’œuvre parmi les tronies plutôt que parmi les portraits individuels. Quelle différence cela implique-t-il ?',
+          calculation: 'On compare la fonction du portrait commémoratif, qui identifie une personne, à celle du tronie, qui étudie un type, une expression ou un costume.',
+          answer: 'Le tronie ne vise pas nécessairement à conserver l’identité d’une personne précise. Il met surtout en valeur une expression, une physionomie ou un costume.'
+        },
+        exercise: {
+          question: 'Comment Vermeer fait-il ressortir le visage sur le fond sombre ?',
+          answer: 'Il isole la figure sur un arrière-plan peu détaillé et utilise des contrastes lumineux subtils pour attirer l’attention sur le visage et les reflets.'
+        },
+        exercises: [
+          { question: 'Quelle date approximative est retenue par le Mauritshuis ?', answer: 'Vers 1665.' },
+          { question: 'Quel est le genre pictural de l’œuvre selon le musée ?', answer: 'Un tronie.' },
+          { question: 'Quel musée conserve le tableau ?', answer: 'Le Mauritshuis, à La Haye.' }
+        ],
+        sources: [
+          { title: 'Mauritshuis — Girl with a Pearl Earring', url: 'https://www.mauritshuis.nl/en/our-collection/artworks/670-girl-with-a-pearl-earring' }
+        ]
+      }
+    },
+    {
+      id: 'liberte-guidant-peuple',
+      title: 'La Liberté guidant le peuple — Eugène Delacroix',
+      field: 'France · Romantisme · 1830',
+      summary: 'Une peinture d’histoire qui transforme la révolution de Juillet en une image allégorique puissante de la liberté et de l’insurrection.',
+      lesson: {
+        sections: [
+          'Eugène Delacroix peint La Liberté guidant le peuple en 1830, à la suite des journées révolutionnaires des 27, 28 et 29 juillet, dites les Trois Glorieuses. L’œuvre représente une barricade et un groupe de Parisiens avançant derrière une figure féminine allégorique qui porte le drapeau tricolore. La toile est exposée au Salon de 1831. Elle entre au musée du Louvre en 1874, après avoir connu plusieurs étapes de présentation et de conservation.',
+          'La figure de la Liberté domine la composition. Elle associe une représentation symbolique à une présence corporelle concrète. Autour d’elle, Delacroix rassemble des personnages issus de milieux sociaux différents. Le drapeau tricolore constitue un point focal majeur. Les diagonales des corps, des armes et de la barricade produisent une progression vers l’avant, tandis que la fumée et les tours de Notre-Dame situent la scène dans Paris.',
+          'L’œuvre appartient au romantisme par son énergie, son intensité dramatique et sa liberté de composition. Elle ne doit pas être lue comme une photographie fidèle d’un événement précis : elle combine des éléments historiques, une construction allégorique et une vision artistique. Delacroix donne ainsi à un épisode politique une portée symbolique durable, tout en conservant des détails concrets qui rendent la scène immédiatement reconnaissable.'
+        ],
+        example: {
+          statement: 'Le tableau commémore les journées de juillet 1830. Pourquoi la figure de la Liberté est-elle à la fois allégorique et inscrite dans une scène historique ?',
+          calculation: 'On distingue les éléments symboliques — figure personnifiant la liberté et drapeau — des éléments liés à l’événement — barricade, foule et décor parisien.',
+          answer: 'La figure incarne une idée politique, mais elle agit au milieu d’une scène inspirée d’un événement réel. L’œuvre associe donc symbole et évocation historique.'
+        },
+        exercise: {
+          question: 'Comment Delacroix donne-t-il une impression de mouvement à la composition ?',
+          answer: 'Il utilise des diagonales, des gestes dirigés vers l’avant, des corps en mouvement et une organisation ascendante autour du drapeau.'
+        },
+        exercises: [
+          { question: 'En quelle année le tableau a-t-il été peint ?', answer: '1830.' },
+          { question: 'Quel événement commémore-t-il ?', answer: 'Les journées révolutionnaires parisiennes des 27 au 29 juillet 1830.' },
+          { question: 'Quand l’œuvre entre-t-elle au Louvre ?', answer: 'En 1874.' }
+        ],
+        sources: [
+          { title: 'Musée du Louvre — La Liberté guidant le peuple, notice des collections', url: 'https://collections.louvre.fr/ark:/53355/cl010065872' }
+        ]
+      }
+    },
+    {
+      id: 'grande-vague-kanagawa',
+      title: 'La Grande Vague de Kanagawa — Katsushika Hokusai',
+      field: 'Japon · Époque d’Edo · vers 1830–1832',
+      summary: 'Une estampe japonaise qui associe maîtrise du dessin, composition audacieuse, production en série et diffusion internationale.',
+      lesson: {
+        sections: [
+          'La Grande Vague de Kanagawa est une estampe de Katsushika Hokusai, réalisée vers 1830–1832 et appartenant à la série Trente-six vues du mont Fuji. Le Metropolitan Museum of Art décrit une grande vague au premier plan, des embarcations prises dans son mouvement et le mont Fuji visible au loin. L’œuvre n’est donc pas une peinture à l’huile sur toile : c’est une image imprimée à partir d’une matrice gravée sur bois.',
+          'La composition repose sur un contraste d’échelle. La vague occupe une grande partie de l’image et semble former une arche au-dessus des bateaux, tandis que le mont Fuji apparaît petit dans l’ouverture de son écume. Cette relation entre premier plan et arrière-plan donne à la montagne une présence symbolique malgré sa taille réduite. Les courbes de la vague et les lignes des embarcations renforcent l’impression de mouvement.',
+          'L’estampe appartient à la culture visuelle japonaise de l’époque d’Edo. La technique de l’impression sur bois permet de produire plusieurs exemplaires à partir de blocs gravés et imprimés successivement. Les pigments et les procédés de fabrication participent à l’identité visuelle de l’œuvre. Sa diffusion en Europe au XIXe siècle a contribué à l’intérêt de nombreux artistes occidentaux pour les estampes japonaises, dans le contexte du japonisme.'
+        ],
+        example: {
+          statement: 'Le mont Fuji paraît petit face à la vague, alors qu’il est le sujet de la série. Quel effet ce contraste produit-il ?',
+          calculation: 'L’analyse compare la surface occupée par la vague au premier plan avec la petite silhouette du mont Fuji à l’arrière-plan.',
+          answer: 'Le contraste d’échelle renforce la puissance visuelle de la vague tout en maintenant le mont Fuji comme repère lointain et symbolique.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il classer La Grande Vague parmi les estampes plutôt que parmi les peintures sur toile ?',
+          answer: 'Parce qu’elle est produite par impression à partir de blocs de bois gravés, avec de l’encre et des couleurs sur papier.'
+        },
+        exercises: [
+          { question: 'Qui est l’artiste ?', answer: 'Katsushika Hokusai.' },
+          { question: 'Quelle période approximative est donnée par le Metropolitan Museum of Art ?', answer: 'Vers 1830–1832.' },
+          { question: 'Quel procédé est utilisé ?', answer: 'L’impression en couleur à partir de blocs de bois gravés.' }
+        ],
+        sources: [
+          { title: 'The Metropolitan Museum of Art — Under the Wave off Kanagawa', url: 'https://www.metmuseum.org/art/collection/search/45434' }
+        ]
+      }
+    },
+    {
+      id: 'nuit-etoilee',
+      title: 'La Nuit étoilée — Vincent van Gogh',
+      field: 'Pays-Bas · Postimpressionnisme · juin 1889',
+      summary: 'Un paysage nocturne recomposé par la mémoire, l’observation et l’imagination, où la couleur et la touche deviennent des moyens d’expression.',
+      lesson: {
+        sections: [
+          'Vincent van Gogh peint La Nuit étoilée en juin 1889, alors qu’il séjourne à Saint-Rémy-de-Provence. Le tableau est conservé au Museum of Modern Art de New York. La vue s’inspire du paysage aperçu depuis la fenêtre de sa chambre, mais elle ne reproduit pas simplement ce qu’il voyait. Le village et certains éléments du paysage ont été recomposés à partir d’autres observations et de l’imagination de l’artiste.',
+          'Le ciel occupe une grande partie de la toile. Les étoiles et la lune sont entourées de halos lumineux, tandis que des courbes et des spirales structurent le mouvement de la surface. En bas, le village paraît calme, avec des maisons et un clocher. Un cyprès sombre s’élève au premier plan et relie visuellement la terre au ciel. La composition repose sur un contraste entre l’agitation du ciel et la stabilité relative du village.',
+          'Van Gogh utilise des bleus et des jaunes intenses, appliqués par touches visibles. La matière picturale participe autant à l’image qu’à son expression : les coups de pinceau rendent perceptible le geste du peintre. L’œuvre est souvent associée au postimpressionnisme, mais cette étiquette ne suffit pas à expliquer sa singularité. Elle montre comment un paysage peut être transformé par la mémoire, l’émotion et les choix formels.'
+        ],
+        example: {
+          statement: 'Le MoMA précise que le village n’est pas une reproduction exacte de ce que Van Gogh voyait depuis sa fenêtre. Que peut-on en déduire ?',
+          calculation: 'On distingue les éléments inspirés de l’observation directe des éléments recomposés à partir de souvenirs et d’autres vues.',
+          answer: 'La toile est une interprétation construite du paysage et non une copie fidèle d’un panorama unique. L’observation et l’imagination y travaillent ensemble.'
+        },
+        exercise: {
+          question: 'Comment la touche de Van Gogh contribue-t-elle à l’expression du ciel ?',
+          answer: 'Les coups de pinceau visibles, les courbes et les contrastes de couleurs donnent au ciel une impression de mouvement et d’intensité.'
+        },
+        exercises: [
+          { question: 'En quel mois et en quelle année le tableau est-il peint ?', answer: 'En juin 1889.' },
+          { question: 'Dans quelle ville du sud de la France Van Gogh séjourne-t-il alors ?', answer: 'À Saint-Rémy-de-Provence.' },
+          { question: 'Quel élément végétal sombre se dresse au premier plan ?', answer: 'Un cyprès.' }
+        ],
+        sources: [
+          { title: 'MoMA — Vincent van Gogh, The Starry Night', url: 'https://www.moma.org/collection/works/79802' }
+        ]
+      }
+    },
+    {
+      id: 'guernica',
+      title: 'Guernica — Pablo Picasso',
+      field: 'Espagne · Cubisme et peinture engagée · 1937',
+      summary: 'Une grande composition anti-guerre créée pour le pavillon espagnol de l’Exposition internationale de Paris en 1937.',
+      lesson: {
+        sections: [
+          'Pablo Picasso réalise Guernica en 1937, dans le contexte de la guerre civile espagnole. L’œuvre est liée au bombardement de la ville basque de Guernica par des avions allemands et italiens, le 26 avril 1937, lors d’une opération menée en soutien aux forces nationalistes. Le tableau est conçu pour le pavillon de la République espagnole à l’Exposition internationale de Paris. Le musée Reina Sofía date l’œuvre de 1937 et indique une exécution à l’huile sur toile.',
+          'La composition monumentale mesure environ 349,3 cm de haut sur 776,6 cm de large. Des figures humaines et animales occupent un espace fragmenté : cheval, taureau, personnages en détresse et lumière artificielle structurent la scène. La palette en noir, blanc et gris renforce l’effet dramatique et rappelle aussi l’apparence de certaines images imprimées dans la presse. La composition n’est pas un récit linéaire du bombardement, mais une construction symbolique de la violence et de la souffrance.',
+          'Guernica est devenue une image majeure de la dénonciation de la guerre. Picasso ne cherche pas à fournir un reportage exact de chaque événement ; il transforme le sujet en une composition complexe, nourrie de références à l’histoire de la peinture et à ses propres recherches plastiques. L’œuvre a été conservée au Museum of Modern Art de New York pendant plusieurs décennies avant de revenir en Espagne en 1981. Elle est aujourd’hui conservée au musée Reina Sofía, à Madrid.'
+        ],
+        example: {
+          statement: 'Le musée Reina Sofía donne une largeur de 776,6 cm et une hauteur de 349,3 cm. Quel est le rapport approximatif entre largeur et hauteur ?',
+          calculation: '776,6 / 349,3 = environ 2,22.',
+          answer: 'La toile est environ 2,22 fois plus large que haute. Ce format panoramique permet de déployer plusieurs groupes de figures dans une même composition.'
+        },
+        exercise: {
+          question: 'Pourquoi Guernica est-il considéré comme une œuvre engagée contre la guerre ?',
+          answer: 'Parce qu’il transforme la violence du bombardement en une image monumentale de la souffrance et de la destruction, devenue un symbole international de la dénonciation de la guerre.'
+        },
+        exercises: [
+          { question: 'En quelle année Picasso réalise-t-il Guernica ?', answer: '1937.' },
+          { question: 'Quel événement historique est à l’origine du sujet ?', answer: 'Le bombardement de Guernica, le 26 avril 1937, pendant la guerre civile espagnole.' },
+          { question: 'Quel musée conserve aujourd’hui le tableau ?', answer: 'Le musée Reina Sofía, à Madrid.' }
+        ],
+        sources: [
+          { title: 'Museo Reina Sofía — Guernica', url: 'https://museoreinasofia.es/en/collections/artwork/guernica-0/' },
+          { title: 'Museo Reina Sofía — General information about Guernica', url: 'https://www.museoreinasofia.es/sites/default/files/notas-de-prensa/general_information_5.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'nighthawks',
+      title: 'Nighthawks — Edward Hopper',
+      field: 'États-Unis · Réalisme américain · 1942',
+      summary: 'Une scène nocturne urbaine qui explore la solitude moderne, la lumière artificielle et la relation entre espace public et intimité.',
+      lesson: {
+        sections: [
+          'Edward Hopper peint Nighthawks en 1942. L’œuvre est conservée à l’Art Institute of Chicago. Elle représente un restaurant éclairé la nuit, à l’angle d’une rue, avec plusieurs personnes assises à l’intérieur. Hopper a expliqué que l’idée lui était venue d’un restaurant situé sur Greenwich Avenue, à New York, mais le tableau ne doit pas être traité comme la représentation certaine d’un établissement précis. L’image possède une portée plus générale.',
+          'La grande baie vitrée permet au spectateur de voir l’intérieur du restaurant, mais l’absence d’entrée clairement visible crée une séparation entre les personnages et la rue. La lumière artificielle découpe le bâtiment dans l’obscurité. Les personnages sont proches physiquement, mais semblent absorbés dans leurs pensées. La composition repose sur des formes géométriques simples, des lignes obliques et un contraste marqué entre l’intérieur lumineux et l’extérieur sombre.',
+          'Nighthawks est souvent interprété comme une image de la solitude urbaine, mais cette lecture reste une interprétation et non un récit explicitement confirmé par le peintre. L’œuvre montre surtout la capacité de Hopper à créer une atmosphère par la lumière, le cadrage et la retenue narrative. Elle est devenue l’une des images les plus connues de la peinture américaine du XXe siècle.'
+        ],
+        example: {
+          statement: 'La salle du restaurant est visible à travers une grande baie vitrée, mais l’accès n’est pas clairement montré. Quel effet cette disposition produit-elle ?',
+          calculation: 'On compare l’ouverture visuelle de la vitrine et la séparation physique créée par la façade et la rue.',
+          answer: 'Le spectateur peut observer les personnages sans entrer dans leur espace. Cette distance renforce l’impression d’isolement et d’observation silencieuse.'
+        },
+        exercise: {
+          question: 'Quels moyens picturaux Hopper utilise-t-il pour créer l’atmosphère nocturne ?',
+          answer: 'Il oppose la lumière artificielle du restaurant à l’obscurité de la rue, simplifie les formes architecturales et limite les signes d’activité autour des personnages.'
+        },
+        exercises: [
+          { question: 'En quelle année Nighthawks est-il peint ?', answer: '1942.' },
+          { question: 'Qui est l’artiste ?', answer: 'Edward Hopper.' },
+          { question: 'Quel musée conserve le tableau ?', answer: 'L’Art Institute of Chicago.' }
+        ],
+        sources: [
+          { title: 'The Art Institute of Chicago — Nighthawks', url: 'https://archive.artic.edu/hopper/artwork/111628' }
+        ]
+      }
+    }
+  ]
+},
 
 ]
