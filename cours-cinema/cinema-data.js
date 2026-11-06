@@ -808,6 +808,741 @@ note: 'Parcours chronologique consacré aux cinéastes américains majeurs. Chaq
   ]
 },
 
+{
+  id: 'grands-cineastes-anglais',
+  title: 'Les grands cinéastes anglais',
+  note: 'Six chapitres retraçant des étapes majeures de la création cinématographique en Angleterre, des pionniers du cinéma muet aux réalisateurs contemporains. La sélection privilégie les cinéastes nés en Angleterre ; elle n’est pas exhaustive. Le cinéma britannique est plus vaste que le seul cinéma anglais, et plusieurs œuvres étudiées sont le résultat de collaborations internationales.',
+  chapters: [
+    {
+      id: 'pionniers-cinema-anglais',
+      title: 'Les pionniers anglais : inventer le langage du cinéma',
+      field: 'Cinéma des premiers temps · Environ 1897-1908',
+      summary: 'Étudier les premières pratiques de tournage et de montage en Angleterre, notamment autour de Brighton et de Hove, avec George Albert Smith, James Williamson et Cecil Hepworth.',
+      lesson: {
+        sections: [
+          'À la fin du XIXe siècle, le cinéma n’est pas encore un art doté de conventions stabilisées. Les appareils, les formats de projection et les lieux de production évoluent rapidement. En Angleterre, plusieurs opérateurs et producteurs installés dans le Sussex participent à cette phase d’expérimentation. George Albert Smith et James Williamson travaillent notamment à Hove à partir de la fin des années 1890. Leurs films courts empruntent souvent leurs sujets au spectacle populaire, à la vie quotidienne, à la comédie et aux récits à sensation. Il serait cependant excessif de présenter un seul inventeur comme l’auteur de toutes les innovations : le langage cinématographique se construit progressivement grâce à des expérimentations parallèles menées dans plusieurs pays.',
+          'George Albert Smith explore les possibilités du cadrage rapproché et de l’alternance entre une vue générale et un détail agrandi. Grandma’s Reading Glass (1900) montre un enfant observant différents objets à travers une loupe ; le film organise une succession de plans qui fait comprendre au spectateur ce que le personnage regarde. Cette construction constitue un jalon important dans l’usage narratif du gros plan. Il faut la décrire comme une contribution précoce à une pratique en développement, et non comme l’invention isolée et définitive du gros plan, déjà exploré sous différentes formes par d’autres cinéastes.',
+          'James Williamson expérimente le montage de continuité et le récit construit par plusieurs plans. Dans Fire! (1901), l’intervention des pompiers est racontée au moyen de scènes reliées entre elles, ce qui aide le spectateur à suivre une action qui se déroule dans plusieurs espaces. La progression dramatique ne dépend donc plus uniquement d’une scène filmée comme une représentation théâtrale fixe. Cette manière d’organiser l’espace et le temps par le montage participe à la formation du récit cinématographique, même si les procédés de raccord et de continuité ne sont pas encore uniformes.',
+          'Cecil Hepworth contribue lui aussi à la consolidation du cinéma narratif. Rescued by Rover (1905) suit un chien qui retrouve un bébé enlevé et conduit les adultes jusqu’à lui. Le film est souvent étudié pour la clarté de son récit, l’enchaînement des plans et l’utilisation de la répétition d’un trajet pour rendre l’action intelligible. Son succès favorise également la circulation de copies et la reproductibilité d’un modèle narratif. Ces réalisateurs sont à la fois créateurs et entrepreneurs : ils doivent produire des films, organiser leur diffusion et répondre à un public dont les habitudes de fréquentation des salles se développent.'
+        ],
+        example: {
+          statement: 'Dans Grandma’s Reading Glass (1900), pourquoi le passage d’un plan montrant le personnage à un plan rapproché sur l’objet observé est-il important ?',
+          calculation: 'Le montage met en relation le regard du personnage et le détail qu’il examine. Le spectateur comprend ainsi que le plan rapproché correspond à son point de vue.',
+          answer: 'Cette alternance donne au gros plan une fonction narrative : il ne montre pas seulement un détail, il transmet une information liée à l’action et au regard du personnage.'
+        },
+        exercise: {
+          question: 'Pourquoi les films de Smith, Williamson et Hepworth sont-ils importants dans l’histoire du cinéma ?',
+          answer: 'Ils témoignent de recherches précoces sur le gros plan, le montage, la continuité de l’action et la construction de récits compréhensibles en plusieurs plans.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle région George Albert Smith et James Williamson ont-ils notamment travaillé à la fin des années 1890 et au début des années 1900 ?',
+            answer: 'À Hove, dans le Sussex, près de Brighton.'
+          },
+          {
+            question: 'Quelle date est attribuée à Grandma’s Reading Glass dans le catalogue de Screen Archive South East ?',
+            answer: '1900.'
+          },
+          {
+            question: 'Quel procédé narratif est associé à Fire! (1901) de James Williamson ?',
+            answer: 'Le montage de plusieurs plans pour construire une action suivie dans différents espaces.'
+          },
+          {
+            question: 'Quel est le sujet principal de Rescued by Rover (1905) ?',
+            answer: 'Un chien retrouve un bébé enlevé et aide à le ramener auprès de sa famille.'
+          }
+        ],
+        sources: [
+          { title: 'Screen Archive South East — Early Film in the South East', url: 'https://screenarchive.brighton.ac.uk/theme/Early%20film%20in%20the%20South%20East/' },
+          { title: 'Screen Archive South East — Grandma’s Reading Glass (1900)', url: 'https://screenarchive.brighton.ac.uk/detail/8372/' },
+          { title: 'BFI — 10 great films set in the Edwardian era', url: 'https://www.bfi.org.uk/lists/10-great-films-set-edwardian-era' },
+          { title: 'BFI — Vivat Birt Acres', url: 'https://replay.bfi.org.uk/video/135/5f4ff213-047f-5c46-9f37-d2c49ba5cf1c' }
+        ]
+      }
+    },
+    {
+      id: 'hitchcock-asquith-cinema-muet-parlant',
+      title: 'Alfred Hitchcock et Anthony Asquith : du cinéma muet au parlant',
+      field: 'Cinéma britannique · Années 1920-1939',
+      summary: 'Comprendre la modernisation de la mise en scène anglaise, l’affirmation du thriller hitchcockien et les adaptations littéraires et sociales d’Anthony Asquith.',
+      lesson: {
+        sections: [
+          'Dans les années 1920, l’industrie cinématographique anglaise cherche à consolider sa production face à la concurrence des films américains. Les studios, les sociétés de production et les dispositifs de financement se transforment. Alfred Hitchcock, né à Leytonstone en 1899, commence sa carrière dans le cinéma comme dessinateur d’intertitres puis exerce différentes fonctions techniques avant de devenir réalisateur. Cette expérience lui donne une connaissance concrète de la fabrication des films. The Lodger: A Story of the London Fog (1927) marque une étape décisive dans la formation de son style : l’espace urbain, le soupçon, l’erreur d’interprétation et la tension visuelle y occupent une place centrale.',
+          'The Lodger est souvent considéré comme le premier film pleinement reconnaissable du style hitchcockien, mais il ne s’agit pas de son premier long métrage. Le film montre déjà l’intérêt du réalisateur pour la manière dont le spectateur reçoit une information incomplète et formule des hypothèses sur les personnages. Hitchcock utilise les décors, les gestes, les objets et le montage pour produire du suspense sans dépendre uniquement des dialogues. Cette maîtrise de la narration visuelle est particulièrement importante à la fin de l’époque muette, lorsque le cinéma dispose déjà d’un vocabulaire expressif élaboré.',
+          'Blackmail (1929) accompagne le passage au cinéma sonore en Grande-Bretagne. Le film existe en versions muette et parlante et le BFI le présente comme le premier film parlant britannique. Hitchcock ne se contente pas d’ajouter des dialogues à une structure visuelle préexistante : il utilise le son pour traduire l’état psychologique d’un personnage. La scène où le mot « knife » devient obsédant dans une conversation ordinaire illustre la possibilité de rendre un son subjectif, c’est-à-dire de faire entendre au public une perception déformée par l’angoisse ou la culpabilité.',
+          'Anthony Asquith, né à Londres en 1902, représente une autre voie du cinéma anglais de cette période. Son œuvre s’intéresse notamment aux milieux sociaux, aux relations humaines et à l’adaptation de textes dramatiques. Pygmalion (1938), réalisé par Asquith avec Leslie Howard, adapte la pièce de George Bernard Shaw. Le film met en scène les rapports entre langage, classe sociale et mobilité sociale à travers l’apprentissage de l’élocution d’Eliza Doolittle. Asquith ne se limite donc pas au cinéma d’évasion : il travaille aussi sur les conventions sociales et la manière dont elles façonnent les identités.'
+        ],
+        example: {
+          statement: 'Pourquoi Blackmail (1929) constitue-t-il un repère dans l’histoire du cinéma sonore britannique ?',
+          calculation: 'Le film est produit en deux versions, muette et parlante. Le son y est utilisé à la fois pour les dialogues et comme élément de narration subjective.',
+          answer: 'Le BFI le présente comme le premier film parlant britannique. Il montre aussi que le son peut exprimer la perception et l’état psychologique d’un personnage, au lieu de servir uniquement à enregistrer des paroles.'
+        },
+        exercise: {
+          question: 'Quelle différence essentielle peut-on observer entre les recherches de Hitchcock et celles d’Asquith ?',
+          answer: 'Hitchcock développe notamment le suspense par la construction visuelle, le montage et la gestion de l’information, tandis qu’Asquith travaille fréquemment l’adaptation dramatique, les rapports sociaux et les conventions de langage.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année The Lodger est-il sorti ?',
+            answer: '1927.'
+          },
+          {
+            question: 'Pourquoi The Lodger est-il souvent étudié comme un jalon du style Hitchcock ?',
+            answer: 'Parce qu’il associe suspense, ambiguïté du récit et narration visuelle.'
+          },
+          {
+            question: 'Quel élément distingue Blackmail dans l’histoire du cinéma britannique ?',
+            answer: 'Il est présenté par le BFI comme le premier film parlant britannique et existe en versions muette et sonore.'
+          },
+          {
+            question: 'Quel thème social est au cœur de Pygmalion (1938) ?',
+            answer: 'Le rôle du langage et de l’accent dans la hiérarchie des classes sociales.'
+          }
+        ],
+        sources: [
+          { title: 'BFI — The Lodger : le film qui a lancé la carrière de Hitchcock', url: 'https://www.bfi.org.uk/features/lodger-serial-killer-thriller-alfred-hitchcock' },
+          { title: 'BFI — Blackmail (1929)', url: 'https://www.bfi.org.uk/film/bc5f7958-d424-517f-b707-791d7bc8ed55/blackmail' },
+          { title: 'BFI — 10 great early sound films', url: 'https://www.bfi.org.uk/lists/10-great-early-sound-films' },
+          { title: 'BFI — Where to begin with Anthony Asquith', url: 'https://www.bfi.org.uk/features/where-begin-with-anthony-asquith' }
+        ]
+      }
+    },
+    {
+      id: 'powell-pressburger-lean-reed',
+      title: 'Le cinéma anglais des années 1940 : Powell, Pressburger, David Lean et Carol Reed',
+      field: 'Cinéma de guerre et d’après-guerre · Environ 1939-1951',
+      summary: 'Analyser l’essor d’un cinéma de studio ambitieux, les collaborations artistiques, le mélodrame, la couleur et la représentation de la société britannique pendant et après la guerre.',
+      lesson: {
+        sections: [
+          'La Seconde Guerre mondiale transforme les conditions de production et les sujets du cinéma en Grande-Bretagne. Le documentaire, les récits de guerre, les films de divertissement et les œuvres d’inspiration littéraire coexistent. La période ne se réduit pas à un style unique : elle fait apparaître des démarches très différentes, depuis la mise en scène stylisée jusqu’à l’observation intimiste de la vie quotidienne. Les studios et les équipes techniques jouent un rôle déterminant, car la direction artistique, la photographie, le montage, la musique et le jeu des acteurs contribuent ensemble à la cohérence esthétique des films.',
+          'Michael Powell, né dans le Kent en 1905, et Emeric Pressburger, scénariste et producteur né en Hongrie, forment une collaboration artistique connue sous le nom de The Archers. Leur partenariat commence en 1939 et associe écriture, production et réalisation. Il est important de ne pas présenter Pressburger comme un cinéaste anglais de naissance : leur œuvre appartient à l’histoire du cinéma britannique par son lieu de production et son inscription culturelle, mais elle est issue d’une collaboration transnationale. The Life and Death of Colonel Blimp (1943), A Matter of Life and Death (1946), Black Narcissus (1947) et The Red Shoes (1948) témoignent de leur goût pour les compositions visuelles élaborées, les univers symboliques et le mélange des genres.',
+          'The Red Shoes (1948) constitue un exemple particulièrement net de leur conception du cinéma comme art composé. La séquence du ballet central ne se contente pas de filmer une représentation scénique : elle construit un espace imaginaire grâce au décor, à la couleur, au mouvement de caméra, au montage et à la musique de Brian Easdale. Le Technicolor devient un élément dramatique et expressif. Le film montre également comment la création artistique peut devenir le sujet même d’un récit, à travers le conflit entre l’amour, la carrière et l’exigence de perfection d’une danseuse.',
+          'David Lean, né à Croydon en 1908, suit un parcours professionnel qui passe par le montage avant la réalisation. Brief Encounter (1945), adapté de Still Life de Noël Coward, repose sur une situation quotidienne et une émotion contenue : deux personnes mariées se rencontrent régulièrement dans une gare et développent un attachement qu’elles ne peuvent transformer en vie commune. La mise en scène accorde une grande importance aux lieux ordinaires, au rythme, aux silences et à la voix intérieure. Lean développera ensuite une autre dimension de son cinéma avec de grandes productions internationales, mais Brief Encounter révèle déjà sa précision dans la direction des acteurs et l’organisation de l’espace.',
+          'Carol Reed, né à Londres en 1906, est un autre réalisateur majeur de cette génération. The Third Man (1949), tourné dans la Vienne d’après-guerre, utilise les rues, les ruines, les contrastes lumineux et les angles de prise de vue pour faire de la ville un élément actif du récit. Le film associe intrigue criminelle et atmosphère historique : l’espace urbain porte les traces matérielles et morales du conflit. Cette œuvre rappelle que le cinéma anglais de l’après-guerre ne se limite pas à des histoires situées en Angleterre ; ses réalisateurs peuvent traiter des bouleversements européens et travailler avec des équipes et des interprètes internationaux.'
+        ],
+        example: {
+          statement: 'En quoi la séquence du ballet dans The Red Shoes (1948) est-elle un exemple de cinéma composé ?',
+          calculation: 'La séquence associe décor, couleur, mouvement, montage et musique pour construire un espace qui ne correspond pas simplement à une captation de spectacle.',
+          answer: 'L’image, le son et le mouvement sont organisés comme les éléments interdépendants d’une composition. Le cinéma transforme ainsi le ballet en expérience audiovisuelle autonome.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer l’origine des artistes de l’identité nationale d’une production cinématographique ?',
+          answer: 'Parce qu’un film produit dans un pays peut résulter de collaborations internationales. Pressburger est né en Hongrie, mais son partenariat avec Powell appartient pleinement à l’histoire du cinéma britannique.'
+        },
+        exercises: [
+          {
+            question: 'Quel nom désigne la collaboration artistique de Michael Powell et Emeric Pressburger ?',
+            answer: 'The Archers.'
+          },
+          {
+            question: 'En quelle année The Red Shoes est-il sorti ?',
+            answer: '1948.'
+          },
+          {
+            question: 'Quelle pièce de Noël Coward est à l’origine de Brief Encounter ?',
+            answer: 'Still Life, créée en 1936.'
+          },
+          {
+            question: 'Dans quelle ville se déroule principalement The Third Man (1949) ?',
+            answer: 'À Vienne, en Autriche, dans le contexte de l’après-guerre.'
+          }
+        ],
+        sources: [
+          { title: 'BFI — Where to begin with Powell and Pressburger', url: 'https://www.bfi.org.uk/features/where-begin-with-powell-pressburger' },
+          { title: 'BFI — Cinema Unbound: The Creative Worlds of Powell and Pressburger', url: 'https://www.bfi.org.uk/news/unveiled-cinema-unbound-creative-worlds-powell-pressburger' },
+          { title: 'BFI — The Red Shoes (1948)', url: 'https://www.bfi.org.uk/film/3b330bf5-17bf-5fb6-8377-ccf367e58c15/the-red-shoes' },
+          { title: 'BFI — Brief Encounter (1945)', url: 'https://www.bfi.org.uk/film/9fb16d4b-9efa-5913-b073-90bff73bf1e4/brief-encounter' }
+        ]
+      }
+    },
+    {
+      id: 'nouvelle-vague-britannique-realisme-social',
+      title: 'La Nouvelle Vague britannique et le réalisme social',
+      field: 'Cinéma social britannique · De la fin des années 1950 aux années 1970',
+      summary: 'Étudier le déplacement du cinéma vers les classes populaires, les villes industrielles, les conflits sociaux et les expériences ordinaires, avec Jack Clayton, Tony Richardson et Ken Loach.',
+      lesson: {
+        sections: [
+          'À partir de la fin des années 1950, plusieurs films britanniques accordent une place nouvelle aux milieux populaires, aux villes industrielles et aux tensions de classe. Le terme British New Wave désigne notamment un ensemble de films associés à la littérature des « Angry Young Men » et au théâtre, qui rompent avec certaines représentations plus conventionnelles de la société. Room at the Top (1958), réalisé par Jack Clayton, est fréquemment cité comme un jalon de cette évolution. Le film met en scène l’ambition sociale, les rapports de pouvoir et les choix intimes d’un jeune homme dans un environnement marqué par les différences de classe.',
+          'Cette évolution esthétique s’accompagne d’un intérêt accru pour les lieux réels, les accents régionaux, les décors urbains et les personnages issus de milieux rarement placés au centre du cinéma commercial. Le réalisme social n’est toutefois pas une simple reproduction neutre du réel. Le choix des cadrages, la durée des scènes, le jeu des acteurs, la lumière et le montage construisent toujours un point de vue. Le cinéma peut ainsi rendre visibles des conditions de vie et des rapports sociaux tout en proposant une forme dramatique et une interprétation du monde.',
+          'Tony Richardson, né à Shipley en 1928, participe à cette transformation avec des films comme Look Back in Anger (1959) et The Loneliness of the Long Distance Runner (1962). Ce dernier suit un adolescent placé dans une institution de rééducation et met en scène le conflit entre discipline institutionnelle et liberté individuelle. Les espaces de l’institution et de la compétition sportive deviennent des lieux où se manifestent les rapports d’autorité et les différences de classe. Le film illustre le renouvellement du cinéma britannique par son attention aux personnages, à leur parole et à leur environnement social.',
+          'Ken Loach, né à Nuneaton en 1936, prolonge cette tradition à la télévision puis au cinéma. Cathy Come Home (1966), téléfilm dramatique consacré à la précarité du logement et à l’itinérance, contribue à faire connaître les conséquences humaines des dispositifs sociaux. Kes (1969), adapté du roman de Barry Hines, suit Billy Casper, un adolescent de Barnsley qui trouve un intérêt et une forme d’autonomie dans l’apprentissage du dressage d’un faucon crécerelle. Loach s’appuie sur des lieux et des situations sociales concrètes, une direction d’acteurs attentive et une observation des institutions. Son cinéma associe ainsi le récit individuel à une analyse des structures sociales.',
+          'Il faut éviter de réduire tous les réalisateurs de cette période à une école homogène. Les trajectoires et les méthodes diffèrent, et le réalisme social se poursuit bien au-delà des années 1960. Il constitue plutôt une tradition évolutive, reprise et transformée par des cinéastes ultérieurs. La continuité entre la British New Wave, le travail de Loach et des œuvres plus récentes montre que les formes réalistes peuvent être réinventées selon les contextes économiques, politiques et culturels.'
+        ],
+        example: {
+          statement: 'Pourquoi Kes (1969) peut-il être étudié comme un film de réalisme social ?',
+          calculation: 'Le récit s’attache à un adolescent d’un milieu populaire, à son environnement scolaire et familial, ainsi qu’aux limites sociales qui pèsent sur son avenir.',
+          answer: 'Le film relie l’expérience intime de Billy à des conditions sociales concrètes. Le réalisme vient de l’attention portée aux lieux, aux comportements et aux institutions, sans réduire le personnage à un simple exemple sociologique.'
+        },
+        exercise: {
+          question: 'Comment le réalisme social transforme-t-il les sujets et les formes du cinéma britannique ?',
+          answer: 'Il place davantage au centre les vies ordinaires, les classes populaires, les espaces urbains et les conflits sociaux, en accordant une grande importance aux lieux, aux accents et aux comportements quotidiens.'
+        },
+        exercises: [
+          {
+            question: 'Quel film de Jack Clayton sorti en 1958 est souvent associé au début de la British New Wave ?',
+            answer: 'Room at the Top.'
+          },
+          {
+            question: 'Qui a réalisé The Loneliness of the Long Distance Runner (1962) ?',
+            answer: 'Tony Richardson.'
+          },
+          {
+            question: 'Quel est le sujet central de Kes (1969) ?',
+            answer: 'La relation entre Billy Casper, un adolescent de Barnsley, et un faucon crécerelle qu’il apprend à dresser.'
+          },
+          {
+            question: 'Pourquoi Cathy Come Home (1966) est-il important dans la carrière de Ken Loach ?',
+            answer: 'Cette fiction télévisée sur la précarité du logement et l’itinérance contribue à établir son approche attentive aux problèmes sociaux.'
+          }
+        ],
+        sources: [
+          { title: 'BFI — 10 great British social realist films', url: 'https://www.bfi.org.uk/london-film-festival/lists/10-great-british-social-realist-films/' },
+          { title: 'BFI — 10 great directorial debuts of the 1950s', url: 'https://www.bfi.org.uk/lists/10-great-directorial-debuts-1950s' },
+          { title: 'BFI — The Loneliness of the Long Distance Runner (1962)', url: 'https://www.bfi.org.uk/film/c9af99ad-067d-58f2-97b9-17f4508d492f/the-loneliness-of-the-long-distance-runner' },
+          { title: 'BFI — Where to begin with Ken Loach', url: 'https://www.bfi.org.uk/features/where-to-begin-ken-loach' },
+          { title: 'BFI — Kes (1969)', url: 'https://www.bfi.org.uk/film/6a56af5a-24ab-5b3b-a3bc-6a64ba380994/kes' }
+        ]
+      }
+    },
+    {
+      id: 'cinema-anglais-international-ridley-scott',
+      title: 'Du cinéma d’auteur au grand spectacle international : Ridley Scott',
+      field: 'Cinéma anglais et productions internationales · De 1977 aux années 1990',
+      summary: 'Examiner le passage de la publicité et du court métrage au long métrage, puis l’importance de la direction artistique, des univers visuels et des genres populaires dans l’œuvre de Ridley Scott.',
+      lesson: {
+        sections: [
+          'À partir de la fin des années 1970, plusieurs réalisateurs anglais développent des carrières qui circulent entre le cinéma national, les studios internationaux et les productions hollywoodiennes. Cette évolution ne signifie pas la disparition du cinéma d’auteur : elle montre plutôt que des signatures visuelles personnelles peuvent se déployer dans des films de grande ampleur. Ridley Scott, né à South Shields en 1937, étudie l’art et travaille dans le design et la publicité avant de réaliser des films. Son expérience de la composition de l’image et de la préparation visuelle joue un rôle important dans son approche du cinéma.',
+          'The Duellists (1977), son premier long métrage, est un drame historique qui révèle son attention à la composition des plans, aux paysages et aux textures visuelles. Alien (1979) le fait connaître à un public beaucoup plus large. Le film associe science-fiction et horreur en plaçant un équipage spatial face à une menace inconnue. Sa force repose en partie sur la cohérence de son univers matériel : décors industriels, éclairages, costumes et conception de la créature créent un environnement crédible et inquiétant. La direction artistique, à laquelle contribuent plusieurs créateurs spécialisés, est essentielle ; il serait donc inexact d’attribuer seul à Scott tous les éléments visuels du film.',
+          'Blade Runner (1982) développe une autre facette de cette recherche. Dans une ville futuriste dense, saturée de signes, de lumières et de constructions verticales, le film interroge la mémoire, l’identité et la frontière entre humain et artificiel. La ville n’est pas un simple arrière-plan : elle conditionne les déplacements, les relations et la perception des personnages. Le film illustre l’importance de la collaboration entre réalisation, photographie, décors, effets visuels, musique et montage dans la création d’un monde cinématographique cohérent.',
+          'La carrière de Scott se poursuit dans des genres et des contextes variés, avec notamment Thelma & Louise (1991), Gladiator (2000) et d’autres productions historiques ou de science-fiction. Ces films témoignent de sa capacité à travailler avec des équipes internationales et des budgets importants. Il convient de distinguer l’origine du réalisateur, l’origine de la production et le lieu du récit : un cinéaste anglais peut réaliser un film américain, tourné dans plusieurs pays, avec une équipe internationale. L’histoire des grands cinéastes anglais ne se limite donc pas aux films dont l’action se déroule en Angleterre.'
+        ],
+        example: {
+          statement: 'Pourquoi Alien (1979) est-il un exemple important du travail visuel de Ridley Scott ?',
+          calculation: 'Le film combine décors industriels, éclairage, conception sonore, effets visuels et design de la créature pour produire un univers cohérent.',
+          answer: 'L’atmosphère du film dépend d’une direction artistique collective et d’une mise en scène qui rendent crédible un environnement spatial hostile. Le travail de Scott s’inscrit dans cette collaboration avec les équipes techniques et artistiques.'
+        },
+        exercise: {
+          question: 'Comment Ridley Scott renouvelle-t-il le cinéma de genre à travers la mise en scène et la direction artistique ?',
+          answer: 'Il accorde une grande importance à la composition de l’image, aux décors, aux textures, à la lumière et à la construction d’univers visuels cohérents, en collaboration avec des équipes artistiques spécialisées.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le premier long métrage de Ridley Scott ?',
+            answer: 'The Duellists (1977).'
+          },
+          {
+            question: 'En quelle année Alien est-il sorti ?',
+            answer: '1979.'
+          },
+          {
+            question: 'Quel thème majeur est exploré dans Blade Runner (1982) ?',
+            answer: 'La mémoire, l’identité et la définition de l’humain dans un monde où les êtres artificiels ressemblent aux humains.'
+          },
+          {
+            question: 'Pourquoi faut-il parler de collaboration artistique à propos de la direction visuelle d’Alien ?',
+            answer: 'Parce que les décors, les effets, la conception de la créature, la photographie et les autres éléments visuels sont réalisés par des équipes et des artistes spécialisés.'
+          }
+        ],
+        sources: [
+          { title: 'BFI — Ridley Scott: 5 essential films', url: 'https://www.bfi.org.uk/lists/ridley-scott-five-essential-films' },
+          { title: 'BFI — Alien (1979)', url: 'https://www.bfi.org.uk/film/71399b2f-6846-5377-83c6-bf3c21e84965/alien' },
+          { title: 'BFI Sight and Sound — Alien encounter: on the set of Ridley Scott’s sci-fi horror', url: 'https://www.bfi.org.uk/sight-and-sound/features/alien-encounter-set-ridley-scotts-sci-fi-horror-0' },
+          { title: 'BFI — British Film Directors, Cambridge University Press', url: 'https://www.cambridge.org/core/books/british-film-directors/4EDB07E585FD14E7ECF571CC263F9C30' }
+        ]
+      }
+    },
+    {
+      id: 'cineastes-anglais-contemporains',
+      title: 'Les cinéastes anglais contemporains : Nolan, McQueen et Andrea Arnold',
+      field: 'Cinéma indépendant et international · Des années 1990 à aujourd’hui',
+      summary: 'Étudier trois trajectoires contemporaines qui associent cinéma indépendant, expérimentation formelle, réflexion sociale et circulation internationale des œuvres.',
+      lesson: {
+        sections: [
+          'Depuis les années 1990, le cinéma anglais se caractérise par une grande diversité de démarches. Certains réalisateurs commencent avec des films indépendants à petit budget avant de travailler avec de grands studios ; d’autres développent une œuvre ancrée dans l’observation sociale ou passent du cinéma à l’art contemporain et aux installations. Il ne s’agit pas d’une école commune, mais de trajectoires distinctes qui montrent la variété des formes de production et des écritures cinématographiques contemporaines.',
+          'Christopher Nolan, né à Westminster en 1970, réalise Following (1998), un premier long métrage indépendant tourné avec des moyens limités. Memento (2000) attire ensuite une attention internationale grâce à une narration qui perturbe l’ordre chronologique et place le spectateur dans une situation proche de celle du personnage principal, dont la mémoire est défaillante. Le montage ne sert pas seulement à accélérer le récit : il organise l’accès à l’information et oblige le public à reconstruire les événements. Nolan poursuivra cette exploration du temps, de la mémoire et des récits complexes dans des productions de plus grande ampleur, notamment Inception (2010), Interstellar (2014), Dunkirk (2017) et Oppenheimer (2023).',
+          'Steve McQueen, né à Londres en 1969, vient du monde de l’art contemporain et reçoit le Turner Prize en 1999. Il réalise son premier long métrage de fiction, Hunger (2008), après avoir développé une pratique de l’image en mouvement et du film d’artiste. Son cinéma accorde une attention particulière à la durée des plans, au corps, à l’espace et aux rapports de pouvoir. Shame (2011) et 12 Years a Slave (2013) poursuivent des recherches formelles différentes tout en examinant des situations de contrainte et de domination. 12 Years a Slave adapte le récit autobiographique de Solomon Northup et remporte l’Oscar du meilleur film en 2014 ; McQueen est l’un des producteurs récompensés et le réalisateur du film.',
+          'Andrea Arnold, née à Dartford en 1961, développe une œuvre associée au réalisme social contemporain. Red Road (2006) et Fish Tank (2009) s’attachent à des personnages féminins complexes, à leurs environnements urbains et aux tensions de leur quotidien. La caméra accompagne les personnages au plus près, tandis que les lieux, les gestes et les relations donnent au récit une impression d’immédiateté. Arnold reprend certains enjeux de la tradition réaliste britannique tout en leur donnant une forme personnelle. Son parcours rappelle également que les réalisatrices occupent une place essentielle dans l’histoire du cinéma anglais et ne doivent pas être reléguées à une histoire parallèle.',
+          'Ces trois cinéastes montrent que le cinéma anglais contemporain ne se définit pas par un style unique. Nolan travaille fréquemment la structure narrative et les grandes formes du cinéma de genre ; McQueen met en relation l’expérimentation plastique et l’histoire politique ; Arnold privilégie l’attention aux personnages et aux milieux sociaux. Leurs films circulent dans des festivals, des salles et des circuits de production internationaux. Leur appartenance au cinéma anglais tient à leurs parcours et à leur formation culturelle, même lorsque les récits, les financements ou les lieux de tournage dépassent largement les frontières nationales.'
+        ],
+        example: {
+          statement: 'Comment Memento (2000) transforme-t-il la chronologie en outil narratif ?',
+          calculation: 'Le film distribue les informations dans un ordre non linéaire. Le spectateur doit rapprocher les séquences et réviser ses hypothèses au fur et à mesure du récit.',
+          answer: 'La structure temporelle fait éprouver au spectateur la difficulté du personnage à reconstituer les événements. La forme du film devient ainsi une partie de son sujet.'
+        },
+        exercise: {
+          question: 'Quelles différences de démarche peut-on relever entre Nolan, McQueen et Arnold ?',
+          answer: 'Nolan explore notamment les structures narratives et le temps ; McQueen associe recherche plastique, corps et histoire politique ; Arnold développe un cinéma d’observation sociale centré sur les personnages et leur environnement.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le premier long métrage de Christopher Nolan ?',
+            answer: 'Following (1998).'
+          },
+          {
+            question: 'Quel procédé narratif caractérise Memento (2000) ?',
+            answer: 'Une construction non linéaire qui redistribue les événements et les informations dans le temps.'
+          },
+          {
+            question: 'Quel était le domaine artistique de Steve McQueen avant son premier long métrage de fiction ?',
+            answer: 'L’art contemporain, notamment le film et l’installation vidéo.'
+          },
+          {
+            question: 'Quels films d’Andrea Arnold sont associés à son approche réaliste contemporaine ?',
+            answer: 'Red Road (2006) et Fish Tank (2009).'
+          }
+        ],
+        sources: [
+          { title: 'BFI — Christopher Nolan: Following, Memento et ses débuts', url: 'https://www.bfi.org.uk/lists/10-great-american-debuts-british-directors' },
+          { title: 'BFI — Where to begin with Christopher Nolan', url: 'https://www.bfi.org.uk/features/where-begin-with-christopher-nolan' },
+          { title: 'BFI — Christopher Nolan to receive a BFI Fellowship', url: 'https://www.bfi.org.uk/news/christopher-nolan-receive-bfi-fellowship' },
+          { title: 'BFI — Steve McQueen: making history', url: 'https://www.bfi.org.uk/features/steve-mcqueen-making-history' },
+          { title: 'BFI — Steve McQueen to receive BFI Fellowship', url: 'https://www.bfi.org.uk/news/steve-mcqueen-receive-bfi-fellowship-lff-awards-ceremony' },
+          { title: 'BFI — Where to begin with Andrea Arnold', url: 'https://www.bfi.org.uk/features/where-begin-with-andrea-arnold' },
+          { title: 'BFI — 10 great British films directed by women', url: 'https://www.bfi.org.uk/lists/10-great-british-films-directed-women' }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  id: 'histoire-cinema',
+  sortYear: 1832,
+  title: 'Histoire du cinéma',
+  note: 'Sept chapitres retraçant l’histoire mondiale du cinéma, des dispositifs optiques du XIXe siècle aux formes numériques contemporaines. 1832 est un repère de la préhistoire du cinéma et non la date de naissance du cinéma projeté. Les évolutions sont inégales selon les pays : les périodes et mouvements se chevauchent, et les exemples retenus ne prétendent pas représenter toutes les cinématographies.',
+  chapters: [
+    {
+      id: 'precurseurs-invention-cinema',
+      title: 'Les précurseurs et l’invention du cinéma',
+      field: 'Préhistoire du cinéma · 1832-1895',
+      summary: 'Comprendre comment les jouets optiques, la photographie instantanée, la chronophotographie et les appareils de prise de vues et de projection rendent possible l’image animée.',
+      lesson: {
+        sections: [
+          'Le cinéma ne naît pas d’une invention isolée, mais de la convergence de recherches scientifiques, d’innovations mécaniques, de procédés photographiques et de pratiques de spectacle. Au XIXe siècle, des dispositifs comme le thaumatrope, le phénakistiscope et le zootrope exploitent la succession rapide d’images pour produire une impression de mouvement. En 1832, le phénakistiscope de Joseph Plateau constitue un jalon important de cette histoire des jouets optiques. Ces appareils ne sont pas encore des caméras : ils montrent comment une série d’images fixes peut être perçue comme un mouvement continu.',
+          'La photographie rend ensuite possible l’enregistrement de scènes réelles. Eadweard Muybridge décompose le mouvement au moyen de séries de photographies, notamment ses études du galop du cheval dans les années 1870. Étienne-Jules Marey développe la chronophotographie et conçoit des appareils permettant d’enregistrer plusieurs phases d’un mouvement. Ces recherches sont d’abord scientifiques : elles servent à analyser le déplacement des corps et des animaux. Elles fournissent néanmoins des connaissances techniques et visuelles essentielles aux futurs procédés cinématographiques.',
+          'Plusieurs inventeurs travaillent en parallèle à l’enregistrement et à la restitution des images animées. Louis Le Prince réalise à Leeds, en 1888, Roundhay Garden Scene, généralement présenté comme l’un des plus anciens films photographiques survivants. De son côté, l’équipe de Thomas Edison, avec l’ingénieur William Kennedy Laurie Dickson, développe le Kinetograph, une caméra, et le Kinetoscope, un appareil de visionnage individuel. Les premiers films Edison sont tournés au début des années 1890 dans le studio Black Maria. Le Kinetoscope permet de regarder des images animées à travers une visionneuse, mais ne propose pas encore une projection collective sur grand écran.',
+          'En France, Auguste et Louis Lumière déposent en 1895 un brevet pour leur Cinématographe, appareil compact pouvant enregistrer, tirer et projeter des images. Le 28 décembre 1895, une séance payante organisée au Salon indien du Grand Café à Paris présente plusieurs vues animées à un public. Cette séance est devenue un repère conventionnel de la naissance du cinéma comme spectacle public projeté. Elle ne signifie pas que personne n’avait filmé ou montré des images animées auparavant : des projections et des dispositifs concurrents existaient déjà. Les frères Lumière contribuent surtout à rendre la projection collective techniquement efficace et commercialement visible.',
+          'Dès 1895-1896, d’autres pionniers développent leurs propres appareils et programmes. Les frères Skladanowsky organisent des projections à Berlin en 1895 ; Birt Acres et Robert Paul travaillent en Grande-Bretagne ; Edison commercialise ensuite le Vitascope aux États-Unis. Le cinéma apparaît ainsi comme un phénomène international, issu d’une compétition d’inventeurs, de fabricants, d’exploitants et de producteurs. Cette pluralité est essentielle pour éviter le récit simplifié d’un seul inventeur ou d’une seule date qui aurait, à elle seule, créé le cinéma.'
+        ],
+        example: {
+          statement: 'Pourquoi le 28 décembre 1895 est-il souvent retenu comme une date majeure de l’histoire du cinéma ?',
+          calculation: 'Cette date correspond à une séance publique payante de films projetés organisée par les frères Lumière à Paris. Elle marque une étape décisive dans la présentation commerciale d’images animées à un public collectif.',
+          answer: 'Elle constitue un repère conventionnel de l’essor du cinéma projeté comme spectacle public. Elle ne correspond pas à la première prise de vues animées, puisque des films et des systèmes de visionnage existaient déjà.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il historiquement inexact d’attribuer l’invention du cinéma à une seule personne ?',
+          answer: 'Parce que le cinéma résulte de contributions complémentaires : jouets optiques, photographie, chronophotographie, caméras, supports souples, mécanismes d’entraînement et appareils de projection ont été développés par plusieurs inventeurs dans différents pays.'
+        },
+        exercises: [
+          {
+            question: 'Quel dispositif de Joseph Plateau, présenté en 1832, fait partie des précurseurs optiques du cinéma ?',
+            answer: 'Le phénakistiscope.'
+          },
+          {
+            question: 'Quel film de Louis Le Prince, tourné en 1888 à Leeds, est souvent cité parmi les plus anciens films survivants ?',
+            answer: 'Roundhay Garden Scene.'
+          },
+          {
+            question: 'Quelle différence existe entre le Kinetoscope d’Edison et le Cinématographe des Lumière ?',
+            answer: 'Le Kinetoscope est une visionneuse individuelle, tandis que le Cinématographe peut notamment projeter les images pour plusieurs spectateurs.'
+          },
+          {
+            question: 'Que commémore la séance du 28 décembre 1895 à Paris ?',
+            answer: 'Une séance publique payante de vues animées organisée par les frères Lumière au Salon indien du Grand Café.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Cinémathèque française — La Machine cinéma : la naissance du cinéma',
+            url: 'https://www.cinematheque.fr/expositions-virtuelles/guide-expo-machine/index.htm'
+          },
+          {
+            title: 'Library of Congress — History of Edison Motion Pictures',
+            url: 'https://www.loc.gov/collections/edison-company-motion-pictures-and-sound-recordings/articles-and-essays/history-of-edison-motion-pictures/'
+          },
+          {
+            title: 'Library of Congress — Early Motion Picture Productions',
+            url: 'https://www.loc.gov/collections/edison-company-motion-pictures-and-sound-recordings/articles-and-essays/history-of-edison-motion-pictures/early-motion-picture-productions/'
+          },
+          {
+            title: 'BFI — In the beginning: cinema’s murky origin story',
+            url: 'https://www.bfi.org.uk/sight-and-sound/features/origins-cinema-early-inventors-pioneers'
+          },
+          {
+            title: 'Europeana — Living pictures',
+            url: 'https://www.europeana.eu/eu/exhibitions/life-in-motion/living-pictures'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cinema-muet-langage-mondial',
+      title: 'Le cinéma muet : naissance d’un langage artistique mondial',
+      field: 'Cinéma muet · Environ 1895-1927',
+      summary: 'Étudier la construction du récit cinématographique, les trucages, le montage, les genres populaires et les grandes écoles du cinéma muet en Europe, aux États-Unis et en Asie.',
+      lesson: {
+        sections: [
+          'Entre 1895 et la fin des années 1920, le cinéma passe progressivement d’une attraction courte à un art narratif et à une industrie internationale. Les premières vues montrent souvent des scènes de la vie quotidienne, des événements, des paysages ou des numéros de spectacle. Très vite, les producteurs comprennent que le public souhaite aussi des récits construits. Les films s’allongent, les salles se multiplient et les sociétés de production organisent la fabrication, la distribution et l’exploitation. Les intertitres transmettent les dialogues et les informations nécessaires, tandis que les gestes, les expressions, le cadrage et le montage assurent une grande partie de la narration.',
+          'Georges Méliès, prestidigitateur et directeur du théâtre Robert-Houdin, explore les possibilités fantastiques du cinéma. Dans Le Voyage dans la Lune (1902), il associe décors peints, tableaux composés, trucages par substitution et effets scéniques. Son cinéma assume l’artifice et transforme l’écran en espace de spectacle. À la même époque, Alice Guy, réalisatrice et productrice française, réalise des films de fiction dès les premières années de la société Gaumont. Son parcours rappelle que les femmes ont participé à la naissance de l’industrie, même si leur rôle a longtemps été sous-représenté dans les récits historiques.',
+          'Aux États-Unis, la croissance de l’industrie conduit à la formation d’un système de production centré progressivement sur Hollywood. D. W. Griffith contribue à populariser des procédés narratifs tels que le montage parallèle, qui permet de suivre plusieurs actions liées. The Birth of a Nation (1915) est techniquement influent mais porte un récit raciste et une représentation apologétique du Ku Klux Klan ; son importance historique doit être étudiée sans minimiser ses effets idéologiques et politiques. Les comédies de Charlie Chaplin, notamment celles mettant en scène Charlot, montrent quant à elles comment le jeu corporel, le rythme et la composition visuelle peuvent construire un personnage immédiatement reconnaissable à l’échelle internationale.',
+          'Le cinéma muet n’est pas dominé uniquement par Hollywood. En Allemagne, l’expressionnisme utilise décors déformés, éclairages contrastés et compositions stylisées pour matérialiser des états psychologiques ou des univers inquiétants. Le Cabinet du docteur Caligari (Robert Wiene, 1920) en est un exemple majeur. En Union soviétique, Sergueï Eisenstein, Dziga Vertov et d’autres cinéastes explorent le montage comme moyen de produire des idées et des relations entre les images. Le Cuirassé Potemkine (Eisenstein, 1925) devient une référence internationale pour son organisation rythmique et expressive des plans.',
+          'Dans les années 1920, le cinéma japonais développe ses propres industries, genres et vedettes, tandis que les cinématographies indienne, chinoise et d’autres régions d’Asie construisent des traditions spécifiques. Il est donc trompeur de considérer le cinéma muet comme une période exclusivement européenne ou américaine. Les échanges internationaux sont nombreux, mais chaque industrie possède ses conditions de production, ses formes de récit et ses publics. À la veille du parlant, le cinéma muet a déjà élaboré un vocabulaire artistique riche : gros plan, mouvement de caméra, montage, éclairage, composition et jeu stylisé.'
+        ],
+        example: {
+          statement: 'Comment le montage parallèle peut-il rendre un récit plus dynamique ?',
+          calculation: 'Le montage alterne deux ou plusieurs actions distinctes, généralement liées par le temps, l’espace ou une relation dramatique. Le spectateur doit établir lui-même leur rapport.',
+          answer: 'Le montage parallèle permet de faire progresser plusieurs lignes d’action et de créer une attente sur leur rencontre ou leur conséquence. Il transforme le montage en outil de narration et de suspense.'
+        },
+        exercise: {
+          question: 'Quelles innovations artistiques majeures le cinéma muet a-t-il développées avant la généralisation du son synchronisé ?',
+          answer: 'Il a développé la narration par le montage, le gros plan, le mouvement de caméra, les trucages, l’éclairage expressif, la composition des plans et des formes de jeu adaptées à l’image.'
+        },
+        exercises: [
+          {
+            question: 'Quel réalisateur signe Le Voyage dans la Lune (1902) ?',
+            answer: 'Georges Méliès.'
+          },
+          {
+            question: 'Quel film de Robert Wiene est un exemple majeur de l’expressionnisme allemand ?',
+            answer: 'Le Cabinet du docteur Caligari (1920).'
+          },
+          {
+            question: 'Quel cinéaste soviétique réalise Le Cuirassé Potemkine (1925) ?',
+            answer: 'Sergueï Eisenstein.'
+          },
+          {
+            question: 'Pourquoi faut-il contextualiser The Birth of a Nation (1915) ?',
+            answer: 'Parce que son influence formelle doit être étudiée en même temps que son contenu raciste et sa glorification du Ku Klux Klan.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Museum of Modern Art — History and development of film',
+            url: 'https://www.moma.org/collection/terms/film/history-and-development-of-film'
+          },
+          {
+            title: 'BFI — The peak of silent cinema',
+            url: 'https://www.bfi.org.uk/sight-and-sound/features/peak-silent-cinema'
+          },
+          {
+            title: 'Library of Congress — History of Edison Motion Pictures',
+            url: 'https://www.loc.gov/collections/edison-company-motion-pictures-and-sound-recordings/articles-and-essays/history-of-edison-motion-pictures/'
+          },
+          {
+            title: 'Library of Congress — The First Woman Director and the Beginning of Cinema',
+            url: 'https://blogs.loc.gov/kluge/2020/04/the-first-woman-director-and-the-beginning-of-cinema/'
+          },
+          {
+            title: 'BFI — 10 great revolutionary films of the 1960s',
+            url: 'https://www.bfi.org.uk/lists/10-great-revolutionary-films-1960s'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cinema-parlant-industrie-studios',
+      title: 'Le cinéma parlant, la couleur et l’âge des grands studios',
+      field: 'Cinéma sonore et classique · Environ 1927-1945',
+      summary: 'Comprendre la transition technique vers le son synchronisé, la transformation du jeu et de la mise en scène, ainsi que la consolidation des industries nationales et du système hollywoodien.',
+      lesson: {
+        sections: [
+          'La transition vers le cinéma sonore est un processus progressif et coûteux, et non un basculement instantané. Des expériences de synchronisation du son et de l’image existaient avant 1927, mais leur fiabilité, leur coût et leur compatibilité avec les salles limitaient leur diffusion. The Jazz Singer (Alan Crosland, 1927), produit par Warner Bros. avec le système Vitaphone, est un jalon commercial majeur parce qu’il associe dialogues parlés et séquences chantées synchronisées. Il ne s’agit pas du premier essai sonore de l’histoire, ni d’un film entièrement parlant au sens moderne : sa structure comporte encore de longues parties muettes et des intertitres.',
+          'La généralisation du son modifie profondément la production. Les studios doivent adapter les plateaux, les caméras, les microphones, les salles et les méthodes de postproduction. Au début, les contraintes techniques limitent les mouvements de caméra et imposent parfois des prises de vues plus fixes. Les acteurs doivent adapter leur diction et leur jeu, tandis que les scénaristes écrivent des dialogues plus développés. Les marchés linguistiques prennent une importance accrue : les versions multilingues, le doublage et le sous-titrage deviennent des enjeux économiques et culturels. La transition crée des difficultés pour certains interprètes, mais ouvre aussi de nouvelles possibilités à la comédie, à la comédie musicale et au film criminel.',
+          'À Hollywood, le système des grands studios se consolide autour de sociétés qui contrôlent largement la production, la distribution et, dans certains cas, les salles. Cette organisation favorise la régularité des sorties, la spécialisation des équipes, les genres identifiables et le vedettariat. Le mélodrame, la comédie sophistiquée, le western, le film d’horreur, le film noir et la comédie musicale développent des conventions reconnaissables. Le studio system n’est toutefois pas uniforme : les réalisateurs, scénaristes, acteurs, monteurs et directeurs de la photographie peuvent apporter des styles distincts au sein de structures industrielles fortement organisées.',
+          'La couleur progresse elle aussi par étapes. Les procédés bichromes et trichromes, le Technicolor et d’autres systèmes sont utilisés de manière variable selon les budgets et les projets. Becky Sharp (1935) est souvent cité comme le premier long métrage réalisé intégralement en Technicolor trichrome, mais la couleur existait déjà sous d’autres formes, notamment par teintage, virage et procédés photographiques antérieurs. Dans les années 1930 et 1940, la couleur devient un choix esthétique et commercial particulièrement visible dans les comédies musicales, les films historiques et les productions spectaculaires, tandis que le noir et blanc demeure largement utilisé.',
+          'La période est également marquée par les guerres, la propagande et la mobilisation des industries culturelles. Les cinémas nationaux sont soumis à des contextes politiques différents : censure, contrôle étatique, exil de cinéastes, propagande ou restrictions matérielles. En Europe, les régimes autoritaires utilisent le cinéma comme instrument de représentation politique ; ailleurs, des réalisateurs développent des œuvres de divertissement, de critique sociale ou d’expérimentation. Il est donc nécessaire de distinguer les innovations techniques, les structures économiques et les usages idéologiques du cinéma, qui ne se confondent pas.'
+        ],
+        example: {
+          statement: 'Pourquoi The Jazz Singer (1927) est-il un repère de la transition vers le cinéma parlant sans être le premier film sonore de l’histoire ?',
+          calculation: 'Le film combine des séquences parlées et chantées synchronisées avec de longues parties qui conservent les conventions du muet. Des systèmes de son synchronisé avaient déjà été expérimentés auparavant.',
+          answer: 'Son importance tient à son succès et à son rôle dans l’accélération de l’adoption commerciale du son synchronisé. Il représente un tournant industriel, mais pas l’invention initiale du cinéma sonore.'
+        },
+        exercise: {
+          question: 'Quelles conséquences l’arrivée du son synchronisé a-t-elle sur les métiers et les formes du cinéma ?',
+          answer: 'Elle transforme les prises de vues, les plateaux, les microphones, le jeu des acteurs, l’écriture des dialogues, le montage, la postproduction et l’exploitation internationale des films.'
+        },
+        exercises: [
+          {
+            question: 'Quel système sonore est associé à The Jazz Singer (1927) ?',
+            answer: 'Le Vitaphone, qui synchronisait le film avec un disque phonographique.'
+          },
+          {
+            question: 'Pourquoi la transition vers le parlant n’a-t-elle pas été instantanée ?',
+            answer: 'Elle nécessitait des investissements techniques, l’adaptation des studios et des salles, ainsi que la transformation des méthodes de production.'
+          },
+          {
+            question: 'Quel procédé de couleur est associé à Becky Sharp (1935) ?',
+            answer: 'Le Technicolor trichrome.'
+          },
+          {
+            question: 'Quelles activités les grands studios hollywoodiens pouvaient-ils contrôler simultanément ?',
+            answer: 'La production, la distribution et, pour certains, l’exploitation des salles de cinéma.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — The peak of silent cinema',
+            url: 'https://www.bfi.org.uk/sight-and-sound/features/peak-silent-cinema'
+          },
+          {
+            title: 'Library of Congress — Motion Pictures: Bob Hope and American Variety',
+            url: 'https://www.loc.gov/exhibits/bobhope/mopic.html'
+          },
+          {
+            title: 'Library of Congress — The Studio Era',
+            url: 'https://guides.loc.gov/american-women-moving-image/motion-pictures/studio-era'
+          },
+          {
+            title: 'Museum of Modern Art — History and development of film',
+            url: 'https://www.moma.org/collection/terms/film/history-and-development-of-film'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cinema-apres-guerre-neorealisme-mondes',
+      title: 'Le cinéma d’après-guerre : néoréalisme et nouvelles cinématographies',
+      field: 'Cinéma mondial d’après-guerre · Environ 1945-1959',
+      summary: 'Étudier le néoréalisme italien, le renouveau du cinéma japonais et les évolutions d’autres industries nationales dans un monde marqué par la reconstruction et les décolonisations.',
+      lesson: {
+        sections: [
+          'Après 1945, la guerre, les destructions, les déplacements de population et les transformations politiques modifient les sujets et les conditions de production du cinéma. En Italie, le néoréalisme devient l’un des mouvements les plus influents de l’après-guerre. Des cinéastes comme Roberto Rossellini, Vittorio De Sica et Luchino Visconti s’intéressent aux conditions de vie des populations ordinaires, au chômage, à la pauvreté et aux conséquences de la guerre. Le tournage en décors réels, l’attention aux gestes quotidiens et le recours fréquent à des interprètes non professionnels contribuent à produire une impression de proximité avec le monde social.',
+          'Rome, ville ouverte (Roberto Rossellini, 1945) est un film majeur de cette période. Il représente la résistance et la vie sous l’occupation allemande à Rome, dans un contexte de production difficile et de reconstruction. Le film associe des interprètes professionnels et des visages issus de la vie réelle, et son esthétique porte les traces des conditions matérielles de tournage. Le néoréalisme ne doit cependant pas être réduit à une règle technique obligatoire : tous ses films ne sont pas tournés uniquement dans la rue, et les réalisateurs du mouvement n’adoptent pas une méthode identique. Il s’agit d’une orientation esthétique et morale diverse, qui place la vie quotidienne au centre du récit.',
+          'Le Voleur de bicyclette (Vittorio De Sica, 1948), écrit notamment par Cesare Zavattini, suit un père dont le travail dépend d’une bicyclette volée. La simplicité apparente de l’intrigue permet d’observer les rapports sociaux, la précarité et la dignité individuelle dans la ville. Le film montre comment un événement limité peut révéler des mécanismes économiques et sociaux plus vastes. Cette approche influencera de nombreux cinéastes hors d’Italie, notamment en Inde, en Amérique latine et dans différentes traditions du cinéma indépendant.',
+          'Au Japon, l’après-guerre voit une visibilité internationale croissante de réalisateurs comme Akira Kurosawa, Kenji Mizoguchi et Yasujirō Ozu. Rashomon (Kurosawa, 1950) attire l’attention internationale par sa construction narrative fondée sur des témoignages contradictoires autour d’un même événement. Les films d’Ozu, dont Voyage à Tokyo (1953), développent une observation précise de la famille, des générations et des transformations sociales, avec une mise en scène reconnaissable par ses cadrages et son rythme. Ces œuvres appartiennent à des traditions différentes du néoréalisme italien : il ne faut pas les réunir artificiellement dans un mouvement unique.',
+          'La période voit aussi se développer les cinémas de l’Inde, de l’Égypte, du Mexique et d’autres régions, selon des modèles industriels et artistiques spécifiques. En Inde, le cinéma populaire en langues régionales et en hindi coexiste avec des démarches d’auteur ; Pather Panchali (Satyajit Ray, 1955) devient une référence internationale pour son attention à la vie quotidienne et aux paysages du Bengale rural. Les festivals internationaux, les ciné-clubs et les réseaux de distribution d’art et essai facilitent la circulation de ces films. L’histoire du cinéma d’après-guerre est donc mondiale, même si les moyens de production et la visibilité internationale restent très inégalement répartis.'
+        ],
+        example: {
+          statement: 'En quoi Le Voleur de bicyclette (1948) illustre-t-il le projet du néoréalisme italien ?',
+          calculation: 'Le récit suit un problème matériel simple, mais le déplacement du père et de son fils dans la ville révèle la précarité, les rapports sociaux et les difficultés de la vie quotidienne dans l’Italie d’après-guerre.',
+          answer: 'Le film transforme une situation ordinaire en observation sociale. Il privilégie les personnages populaires, les espaces réels et les conséquences humaines des conditions économiques.'
+        },
+        exercise: {
+          question: 'Pourquoi le cinéma d’après-guerre ne peut-il pas être résumé au seul néoréalisme italien ?',
+          answer: 'Parce que des cinématographies très différentes se développent simultanément, notamment au Japon, en Inde, en Égypte et en Amérique latine, avec leurs propres traditions, industries et recherches artistiques.'
+        },
+        exercises: [
+          {
+            question: 'Quel film de Roberto Rossellini, sorti en 1945, est un jalon du néoréalisme italien ?',
+            answer: 'Rome, ville ouverte.'
+          },
+          {
+            question: 'Qui réalise Le Voleur de bicyclette (1948) ?',
+            answer: 'Vittorio De Sica.'
+          },
+          {
+            question: 'Quel film d’Akira Kurosawa, sorti en 1950, est construit autour de témoignages contradictoires ?',
+            answer: 'Rashomon.'
+          },
+          {
+            question: 'Quel film de Satyajit Ray, sorti en 1955, est associé à la reconnaissance internationale du cinéma indien d’auteur ?',
+            answer: 'Pather Panchali.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — 10 great Italian neorealist films',
+            url: 'https://www.bfi.org.uk/lists/10-great-italian-neorealist-films'
+          },
+          {
+            title: 'BFI — The roots of neorealism',
+            url: 'https://www.bfi.org.uk/sight-and-sound/features/roots-neorealism'
+          },
+          {
+            title: 'BFI — Rome, Open City: Roberto Rossellini’s great leap for realism on screen',
+            url: 'https://www.bfi.org.uk/features/rome-open-city-roberto-rossellinis-great-leap-realism-screen'
+          },
+          {
+            title: 'BFI — Around the world in melodrama',
+            url: 'https://www.bfi.org.uk/features/around-world-melodrama-9-countries-45-essential-films'
+          }
+        ]
+      }
+    },
+    {
+      id: 'nouvelles-vagues-cinema-moderne',
+      title: 'Les nouvelles vagues et le cinéma moderne',
+      field: 'Modernités cinématographiques · Environ 1959-1970',
+      summary: 'Analyser la Nouvelle Vague française, les nouveaux cinémas européens, les mouvements d’Amérique latine et les transformations de la mise en scène et de la production.',
+      lesson: {
+        sections: [
+          'À la fin des années 1950 et durant les années 1960, plusieurs cinématographies connaissent des renouvellements esthétiques et institutionnels. Le terme « nouvelle vague » est surtout associé au cinéma français, mais des mouvements comparables, sans être identiques, apparaissent dans différents pays. Des caméras plus légères, des pellicules plus sensibles, des tournages en extérieur et des méthodes de production moins coûteuses facilitent certaines formes de création indépendante. Les cinéastes remettent en question les conventions du récit classique, la hiérarchie des genres et la séparation entre cinéma commercial et cinéma d’auteur.',
+          'En France, la Nouvelle Vague est associée à des réalisateurs comme François Truffaut, Jean-Luc Godard, Claude Chabrol, Éric Rohmer et Agnès Varda. Les Quatre Cents Coups (Truffaut, 1959) suit un adolescent confronté à l’école et à sa famille, avec une attention nouvelle à l’expérience personnelle et aux lieux quotidiens. À bout de souffle (Godard, 1960) utilise notamment des tournages en décors réels, des mouvements de caméra et des coupes franches qui rendent visible la construction du film. Ces procédés ne sont pas inventés à ce moment-là, mais leur combinaison devient une signature de modernité et une remise en cause des conventions dominantes.',
+          'Agnès Varda occupe une place centrale dans cette histoire. La Pointe courte (1955), antérieure aux films emblématiques de 1959-1960, associe observation documentaire d’un village de pêcheurs et récit fictionnel d’un couple. Cléo de 5 à 7 (1962) suit presque en temps réel une chanteuse qui attend le résultat d’un examen médical. Le film articule durée, déambulation urbaine, subjectivité et observation sociale. Varda montre que la Nouvelle Vague ne se réduit pas à un groupe masculin de critiques devenus réalisateurs : elle comprend des démarches singulières et des parcours artistiques variés.',
+          'En Italie, Michelangelo Antonioni et Federico Fellini explorent d’autres formes de modernité. L’Avventura (Antonioni, 1960) déplace l’attention du récit traditionnel vers les durées, les paysages, les silences et les relations incertaines entre les personnages. La Dolce Vita (Fellini, 1960) observe les milieux médiatiques et mondains de Rome au moyen d’une structure épisodique. En Tchécoslovaquie, la Nouvelle Vague tchécoslovaque fait émerger des œuvres qui interrogent la vie quotidienne, les institutions et les conventions sociales, tandis qu’au Japon et dans d’autres pays, des réalisateurs expérimentent des formes narratives et politiques différentes.',
+          'En Amérique latine, le Cinema Novo brésilien et le manifeste du Troisième Cinéma en Argentine et ailleurs défendent des pratiques qui lient forme cinématographique, histoire coloniale, inégalités et lutte politique. Le texte Towards a Third Cinema, publié en 1969 par Fernando Solanas et Octavio Getino, appelle à repenser les conditions de production et de réception des films. Ces mouvements ne partagent pas tous les mêmes objectifs, mais ils montrent que le cinéma moderne est aussi un espace de débat sur le pouvoir des images, les identités nationales et les rapports entre industrie et création.'
+        ],
+        example: {
+          statement: 'Pourquoi À bout de souffle (1960) est-il souvent considéré comme un film emblématique de la Nouvelle Vague ?',
+          calculation: 'Le film associe tournage en décors réels, liberté de mouvement, montage discontinu et attention à la présence des acteurs dans l’espace urbain.',
+          answer: 'Il rend visibles des choix de mise en scène et de montage qui s’écartent de certaines conventions classiques. Il incarne une recherche de liberté formelle, sans être à lui seul l’origine de toutes ces techniques.'
+        },
+        exercise: {
+          question: 'En quoi les nouvelles vagues transforment-elles à la fois la forme des films et les conditions de leur fabrication ?',
+          answer: 'Elles favorisent des productions plus légères ou indépendantes, les tournages en extérieur, des récits moins conventionnels, une mise en scène plus visible et des relations renouvelées entre cinéma, société et politique.'
+        },
+        exercises: [
+          {
+            question: 'Quel film de François Truffaut, sorti en 1959, est associé à l’émergence de la Nouvelle Vague française ?',
+            answer: 'Les Quatre Cents Coups.'
+          },
+          {
+            question: 'Quel film de Jean-Luc Godard sort en 1960 et devient un emblème de la Nouvelle Vague ?',
+            answer: 'À bout de souffle.'
+          },
+          {
+            question: 'Quel film d’Agnès Varda, sorti en 1962, suit une chanteuse pendant une attente de deux heures ?',
+            answer: 'Cléo de 5 à 7.'
+          },
+          {
+            question: 'Quel texte de 1969 est associé au Troisième Cinéma ?',
+            answer: 'Towards a Third Cinema, de Fernando Solanas et Octavio Getino.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — 10 great revolutionary films of the 1960s',
+            url: 'https://www.bfi.org.uk/lists/10-great-revolutionary-films-1960s'
+          },
+          {
+            title: 'BFI — L’Avventura: the film that redefined the cinema',
+            url: 'https://www.bfi.org.uk/sight-and-sound/features/l-avventura-michelangelo-antonioni-1960-greatest-films-poll'
+          },
+          {
+            title: 'BFI — Jean-Luc Godard: 10 essential post-New Wave films',
+            url: 'https://www.bfi.org.uk/lists/jean-luc-godard-10-essential-post-new-wave-films'
+          },
+          {
+            title: 'BFI — The roots of neorealism',
+            url: 'https://www.bfi.org.uk/sight-and-sound/features/roots-neorealism'
+          }
+        ]
+      }
+    },
+    {
+      id: 'nouvel-hollywood-blockbusters',
+      title: 'Le Nouvel Hollywood, les blockbusters et la mondialisation du marché',
+      field: 'Industrie cinématographique contemporaine · Environ 1970-1999',
+      summary: 'Étudier la transformation des studios américains, l’essor du cinéma d’auteur hollywoodien, le film événement, les effets spéciaux et la diversification des industries mondiales.',
+      lesson: {
+        sections: [
+          'À la fin des années 1960 et dans les années 1970, le système classique des studios hollywoodiens se transforme. Les changements démographiques, culturels et économiques, la concurrence de la télévision et l’évolution des publics fragilisent certaines formules traditionnelles. Une génération de réalisateurs développe des films plus personnels, parfois influencés par les nouvelles vagues européennes. Le Nouvel Hollywood est associé à des cinéastes comme Francis Ford Coppola, Martin Scorsese, William Friedkin, Hal Ashby et Robert Altman. Leurs films abordent la violence sociale, la crise des institutions, la famille, la guerre du Vietnam et les contradictions de la société américaine.',
+          'Des œuvres comme Bonnie and Clyde (Arthur Penn, 1967), The Godfather (Francis Ford Coppola, 1972), Chinatown (Roman Polanski, 1974) et Taxi Driver (Martin Scorsese, 1976) illustrent des orientations diverses de cette période. Les personnages sont souvent ambigus, les fins peuvent être pessimistes et la mise en scène adopte parfois des formes plus subjectives ou fragmentées. Il ne faut pas réduire le Nouvel Hollywood à un mouvement homogène : il désigne une période de renouvellement artistique et industriel dont les limites chronologiques et les caractéristiques sont discutées par les historiens.',
+          'À partir de la seconde moitié des années 1970, le succès de films conçus comme de grands événements commerciaux contribue à modifier les stratégies des studios. Jaws (Steven Spielberg, 1975) et Star Wars (George Lucas, 1977) sont fréquemment étudiés comme des jalons de cette évolution. La sortie coordonnée, la publicité, les produits dérivés, la musique et la circulation internationale prennent une importance croissante. Le blockbuster devient une stratégie de marché reposant sur une forte visibilité et un potentiel d’exploitation sur plusieurs supports. Cette évolution ne fait pas disparaître les films indépendants, mais elle modifie l’équilibre économique du secteur.',
+          'Les effets spéciaux et les technologies de fabrication de l’image connaissent des changements majeurs. Les effets optiques, les maquettes, les trucages mécaniques et les systèmes de contrôle de mouvement sont perfectionnés. Les images de synthèse apparaissent progressivement dans les longs métrages, d’abord de façon limitée, puis avec une importance croissante. Tron (1982), The Abyss (1989), Terminator 2: Judgment Day (1991) et Jurassic Park (1993) sont des jalons souvent cités dans l’histoire des effets numériques. Les innovations sont collectives : elles reposent sur des équipes d’artistes, d’ingénieurs et de techniciens, ainsi que sur des entreprises spécialisées.',
+          'La période est également marquée par la circulation accrue des films à l’échelle mondiale, le développement des festivals, la vidéo domestique et la multiplication des chaînes de télévision. Des cinémas nationaux et régionaux connaissent une visibilité internationale nouvelle, tandis que les productions américaines occupent une place commerciale importante dans de nombreux marchés. Le cinéma de Hong Kong, le cinéma populaire indien, les productions africaines et les films d’auteur d’Europe et d’Asie témoignent de cette diversité. La mondialisation ne signifie pas une uniformisation complète : les formes, les langues, les genres et les conditions de production demeurent multiples.'
+        ],
+        example: {
+          statement: 'Pourquoi Jaws (1975) et Star Wars (1977) sont-ils souvent associés à la transformation du blockbuster moderne ?',
+          calculation: 'Leur exploitation combine une forte campagne promotionnelle, une diffusion large, une identité de film événement et des possibilités de prolongement commercial au-delà de la seule séance en salle.',
+          answer: 'Ces films illustrent une stratégie dans laquelle la sortie devient un événement médiatique et commercial. Ils contribuent à renforcer le poids des grandes productions dans l’économie hollywoodienne, sans être les seuls facteurs de cette transformation.'
+        },
+        exercise: {
+          question: 'Quelles différences peut-on établir entre les ambitions du Nouvel Hollywood et la stratégie du blockbuster ?',
+          answer: 'Le Nouvel Hollywood est associé à des films souvent plus personnels et formellement audacieux, tandis que la stratégie du blockbuster privilégie une forte visibilité commerciale, une large distribution et une exploitation sur plusieurs marchés et supports. Les deux logiques peuvent toutefois se croiser.'
+        },
+        exercises: [
+          {
+            question: 'Quel film de Francis Ford Coppola, sorti en 1972, est emblématique du Nouvel Hollywood ?',
+            answer: 'The Godfather.'
+          },
+          {
+            question: 'Quel film de Steven Spielberg, sorti en 1975, est souvent cité comme un jalon du blockbuster moderne ?',
+            answer: 'Jaws.'
+          },
+          {
+            question: 'Quel film de George Lucas sort en 1977 et devient une franchise internationale majeure ?',
+            answer: 'Star Wars.'
+          },
+          {
+            question: 'Quel film de 1993 de Steven Spielberg marque une étape importante dans l’usage des images de synthèse ?',
+            answer: 'Jurassic Park.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — Attack of the zeros and ones: the early years of digital cinema',
+            url: 'https://www.bfi.org.uk/sight-and-sound/features/attack-zeros-ones-early-years-digital-cinema-told-david-lynch-miranda-july-michael-mann-more'
+          },
+          {
+            title: 'BFI — 10 great early digital films',
+            url: 'https://www.bfi.org.uk/lists/10-great-early-digital-films'
+          },
+          {
+            title: 'Library of Congress — The Studio Era',
+            url: 'https://guides.loc.gov/american-women-moving-image/motion-pictures/studio-era'
+          },
+          {
+            title: 'Museum of Modern Art — History and development of film',
+            url: 'https://www.moma.org/collection/terms/film/history-and-development-of-film'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cinema-numerique-mondial-contemporain',
+      title: 'Le cinéma numérique et les formes contemporaines',
+      field: 'Cinéma numérique et contemporain · 2000 à aujourd’hui',
+      summary: 'Comprendre la transformation numérique de la prise de vues, du montage et de la projection, ainsi que l’essor des plateformes, des nouveaux formats et des enjeux de conservation.',
+      lesson: {
+        sections: [
+          'Au début du XXIe siècle, le numérique transforme progressivement l’ensemble de la chaîne cinématographique. Les caméras numériques, les stations de montage, les effets visuels et les systèmes de projection modifient les coûts, les méthodes et les possibilités de fabrication. Cette transition n’est ni instantanée ni uniforme : pendant plusieurs années, les tournages sur pellicule et les workflows numériques coexistent. Certains cinéastes défendent la matérialité et le rendu de la pellicule, tandis que d’autres adoptent rapidement les nouveaux outils. Le numérique ne constitue pas un style esthétique unique ; il représente un ensemble de technologies qui peuvent servir des démarches très différentes.',
+          'La diffusion numérique se développe parallèlement à la prise de vues. Les copies physiques sont progressivement remplacées, dans de nombreuses salles, par des fichiers de projection normalisés. Le montage non linéaire, les effets visuels et l’étalonnage numérique deviennent des pratiques courantes. Des films comme Star Wars: Episode II – Attack of the Clones (2002) marquent une étape dans l’usage de caméras numériques pour une grande production hollywoodienne. Le BFI situe en 2013 le dépassement du support argentique par le numérique comme standard industriel de tournage, mais cette évolution ne signifie pas la disparition totale de la pellicule.',
+          'Les images de synthèse et les effets visuels prennent une place croissante dans les productions de grande ampleur. Ils permettent de créer des environnements, des personnages et des mouvements impossibles ou difficiles à filmer directement. Toutefois, les effets numériques ne remplacent pas automatiquement les décors réels, les maquettes ou les effets pratiques : les productions combinent souvent plusieurs techniques. La qualité d’une image dépend toujours de décisions artistiques, de la lumière, du cadrage, du mouvement, du montage et du travail collectif, et non du seul niveau technologique utilisé.',
+          'La diffusion en ligne transforme à son tour les habitudes de visionnage et les modèles économiques. Les plateformes de vidéo à la demande élargissent l’accès à des catalogues internationaux, financent certaines productions et modifient les calendriers de sortie. Elles coexistent avec les salles, les festivals, la télévision et les circuits indépendants. Cette coexistence suscite des débats sur la chronologie des médias, la rémunération des créateurs, la visibilité des œuvres et la conservation à long terme des fichiers. L’abondance de contenus ne garantit pas automatiquement la diversité culturelle ni la pérennité des films.',
+          'Le cinéma contemporain est profondément transnational. Les coproductions, les équipes internationales, les festivals et les plateformes favorisent la circulation des œuvres au-delà de leur pays d’origine. Les cinéastes peuvent travailler entre fiction, documentaire, animation, installation et séries audiovisuelles. Les outils numériques rendent certaines productions plus accessibles, mais les écarts de financement, de distribution et de visibilité persistent. L’histoire du cinéma actuel doit donc être étudiée à la fois sous l’angle esthétique, économique, technique et géopolitique.',
+          'La conservation devient un enjeu majeur. Les films sur pellicule nécessitent des conditions de stockage et des opérations de restauration adaptées ; les œuvres numériques exigent des migrations de formats, la vérification de l’intégrité des fichiers et la maintenance des systèmes de lecture. Une restauration numérique n’est pas une simple amélioration automatique : elle implique des choix documentés concernant les sources, les couleurs, le cadrage, le son et les altérations historiques. Les cinémathèques et archives jouent un rôle essentiel pour préserver les œuvres et rendre accessibles les différentes étapes de l’histoire du cinéma.'
+        ],
+        example: {
+          statement: 'Pourquoi le passage au numérique ne signifie-t-il pas la disparition immédiate de la pellicule ?',
+          calculation: 'Les technologies coexistent : certaines productions continuent d’utiliser la pellicule, tandis que d’autres tournent en numérique. Les salles, les laboratoires et les archives doivent également gérer des supports et des formats différents.',
+          answer: 'La transition numérique est progressive et dépend des choix artistiques, des coûts, des équipements et des pratiques de conservation. La pellicule reste utilisée dans certains tournages et demeure un support important du patrimoine cinématographique.'
+        },
+        exercise: {
+          question: 'Quels sont les principaux enjeux du cinéma à l’ère numérique ?',
+          answer: 'Ils concernent les techniques de tournage et de postproduction, les effets visuels, la projection, la diffusion en ligne, les modèles économiques, la diversité culturelle et la conservation à long terme des œuvres.'
+        },
+        exercises: [
+          {
+            question: 'Quel film de 2002 est cité par le BFI comme le premier blockbuster hollywoodien tourné en numérique ?',
+            answer: 'Star Wars: Episode II – Attack of the Clones.'
+          },
+          {
+            question: 'Le numérique a-t-il supprimé immédiatement l’usage de la pellicule ?',
+            answer: 'Non. Les deux supports ont coexisté et la pellicule continue d’être utilisée dans certaines productions.'
+          },
+          {
+            question: 'Pourquoi la conservation des films numériques nécessite-t-elle des opérations régulières ?',
+            answer: 'Parce que les formats, les supports et les systèmes de lecture évoluent ; les fichiers doivent être contrôlés, sauvegardés et parfois migrés.'
+          },
+          {
+            question: 'Pourquoi la diffusion par plateformes ne rend-elle pas automatiquement le cinéma plus diversifié ?',
+            answer: 'Parce que la visibilité dépend aussi des choix éditoriaux, des financements, des algorithmes, des droits de diffusion et des inégalités entre marchés.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — Attack of the zeros and ones: the early years of digital cinema',
+            url: 'https://www.bfi.org.uk/sight-and-sound/features/attack-zeros-ones-early-years-digital-cinema-told-david-lynch-miranda-july-michael-mann-more'
+          },
+          {
+            title: 'BFI — 10 great early digital films',
+            url: 'https://www.bfi.org.uk/lists/10-great-early-digital-films'
+          },
+          {
+            title: 'Library of Congress — Motion Pictures, Broadcasting and Recorded Sound',
+            url: 'https://www.loc.gov/collections/'
+          },
+          {
+            title: 'UNESCO — Memory of the World',
+            url: 'https://www.unesco.org/en/memory-world'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
 
