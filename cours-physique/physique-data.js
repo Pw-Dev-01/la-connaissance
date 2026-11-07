@@ -8277,4 +8277,612 @@
     }
   ]
 },
+
+{
+  id: 'academies-sciences',
+  sortYear: 1603,
+  title: 'Les académies des sciences à travers le monde',
+  note: 'Parcours chronologique de treize institutions savantes fondées entre 1603 et 1949, classées selon leur année de création. Le périmètre inclut des académies scientifiques au sens strict et, lorsqu’elles ont joué un rôle institutionnel majeur dans l’histoire des sciences, des sociétés savantes nationales comme la Royal Society britannique. Les dates indiquent la fondation de l’institution considérée, non la date d’apparition de toute activité scientifique dans le pays. Les institutions ont parfois changé de nom, de statut, de siège ou de missions ; ces évolutions sont distinguées de leur date d’origine.',
+  chapters: [
+    {
+      id: 'accademia-dei-lincei-rome-1603',
+      title: 'Italie — L’Accademia dei Lincei : l’observation de la nature au début du XVIIe siècle',
+      field: 'Rome, États pontificaux puis Italie · 1603',
+      summary: 'Étudier l’une des premières académies européennes associées à l’observation des sciences naturelles, son fondateur Federico Cesi et les transformations de l’institution au fil des siècles.',
+      lesson: {
+        sections: [
+          'L’Accademia dei Lincei est fondée à Rome en 1603 par Federico Cesi, avec trois compagnons : Johannes van Heeck, Francesco Stelluti et Anastasio de Filiis. Le nom « Lincei » fait référence au lynx, dont la vue était réputée particulièrement perçante : il symbolise l’attention minutieuse que les membres souhaitent porter à la nature. Cette fondation s’inscrit dans une Italie où se développent de nombreux cercles lettrés, mais les Lincei se distinguent par leur intérêt marqué pour l’étude de la nature et par leur valorisation de l’observation.',
+          'Le projet de Cesi repose sur l’étude collective, la discussion et l’examen direct des phénomènes naturels. Il participe au changement progressif des pratiques savantes au début de l’époque moderne : les connaissances ne doivent pas seulement être répétées à partir des autorités anciennes, elles doivent aussi être confrontées à l’observation et à l’enquête. Il serait toutefois inexact de présenter l’Académie de 1603 comme un laboratoire moderne : ses méthodes, ses moyens et son organisation restent ceux d’un cercle savant de son temps.',
+          'L’histoire des Lincei n’est pas une continuité institutionnelle parfaitement linéaire. La première académie connaît un déclin après la mort de Cesi en 1630. Elle est rétablie bien plus tard, notamment au XIXe siècle, puis devient l’une des institutions nationales majeures de la vie intellectuelle italienne. Il faut donc distinguer la date de fondation historique, 1603, des réorganisations et restaurations ultérieures. Son importance tient autant à son ancienneté qu’à la place qu’elle occupe dans l’histoire européenne de la sociabilité savante.'
+        ],
+        example: {
+          statement: 'Une chronologie compare la fondation des Lincei en 1603 et celle de l’Académie des sciences française en 1666. Quelle institution est la plus ancienne ?',
+          calculation: 'Pour comparer deux dates historiques, on ordonne les années de la plus petite à la plus grande : 1603 précède 1666.',
+          answer: 'L’Accademia dei Lincei est la plus ancienne des deux : elle est fondée à Rome en 1603, soit 63 ans avant l’institution française.'
+        },
+        exercise: {
+          question: 'Pourquoi le nom et le symbole du lynx sont-ils significatifs pour l’Accademia dei Lincei ?',
+          answer: 'Le lynx symbolise une vue particulièrement aiguë et représente l’idéal d’observation attentive de la nature défendu par les fondateurs.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année l’Accademia dei Lincei est-elle fondée ?',
+            answer: 'En 1603, à Rome.'
+          },
+          {
+            question: 'Qui est le principal fondateur de l’Académie ?',
+            answer: 'Federico Cesi, avec Johannes van Heeck, Francesco Stelluti et Anastasio de Filiis.'
+          },
+          {
+            question: 'La fondation de 1603 signifie-t-elle que l’institution a fonctionné sans interruption depuis cette date ?',
+            answer: 'Non. L’Académie connaît un déclin après la mort de Cesi en 1630 et fait l’objet de rétablissements ultérieurs.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Accademia Nazionale dei Lincei — History',
+            url: 'https://www.lincei.it/en/storia'
+          },
+          {
+            title: 'Académie des sciences — Histoire de l’Académie',
+            url: 'https://www.academie-sciences.fr/lhistoire-de-lacademie'
+          }
+        ]
+      }
+    },
+    {
+      id: 'royal-society-london-1660',
+      title: 'Angleterre — La Royal Society : organiser l’enquête expérimentale',
+      field: 'Londres, Angleterre · 1660',
+      summary: 'Comprendre la naissance d’une société savante consacrée à l’étude de la nature, son rôle dans la circulation des expériences et la publication scientifique.',
+      lesson: {
+        sections: [
+          'La Royal Society prend forme à Londres en 1660, à partir de réunions de philosophes naturels et de savants qui discutent des phénomènes naturels, des mathématiques et des expériences. La date de référence retenue par l’institution est le 28 novembre 1660, après une conférence de Christopher Wren au Gresham College. Parmi les premiers membres figurent notamment Robert Boyle et John Wilkins. La société reçoit une première charte royale en 1662, puis une seconde en 1663 qui fixe son nom officiel : « The Royal Society of London for Improving Natural Knowledge ».',
+          'Son ambition est de promouvoir une connaissance fondée sur l’observation, l’expérimentation, la discussion des résultats et leur communication. Les membres échangent des lettres, recueillent des observations et organisent des démonstrations. Cette démarche contribue à structurer une communauté savante qui dépasse les relations individuelles entre érudits. Il faut néanmoins éviter d’assimiler rétrospectivement toutes les pratiques du XVIIe siècle aux protocoles contemporains : les normes de preuve, de reproductibilité et d’évaluation se sont transformées au cours du temps.',
+          'En 1665 paraît le premier numéro de Philosophical Transactions, revue liée à la Royal Society et devenue la plus ancienne revue scientifique publiée sans interruption. La publication périodique contribue à rendre les découvertes accessibles à une communauté plus large et à établir des formes de priorité scientifique. La Royal Society n’est pas appelée « académie » dans son nom, mais elle est aujourd’hui reconnue comme l’académie nationale des sciences du Royaume-Uni. Son inclusion dans cette branche repose donc sur son rôle institutionnel comparable, tout en conservant la distinction historique entre société savante et académie.'
+        ],
+        example: {
+          statement: 'La Royal Society est fondée en 1660 et son journal Philosophical Transactions commence à paraître en 1665. Combien d’années séparent ces deux événements ?',
+          calculation: '1665 - 1660 = 5.',
+          answer: 'Cinq années séparent la fondation de la société et la parution du premier numéro de la revue.'
+        },
+        exercise: {
+          question: 'Quel rôle joue la publication des résultats dans le développement de la science ?',
+          answer: 'Elle permet de communiquer les observations, de discuter les résultats, de conserver une trace des travaux et de contribuer à l’établissement de priorités scientifiques.'
+        },
+        exercises: [
+          {
+            question: 'Quelle date la Royal Society retient-elle pour sa fondation ?',
+            answer: 'Le 28 novembre 1660.'
+          },
+          {
+            question: 'En quelle année reçoit-elle sa première charte royale ?',
+            answer: 'En 1662.'
+          },
+          {
+            question: 'Pourquoi la Royal Society est-elle incluse dans une histoire des académies des sciences ?',
+            answer: 'Parce qu’elle est aujourd’hui l’académie nationale des sciences du Royaume-Uni et qu’elle a joué un rôle majeur dans l’organisation de la recherche savante.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Royal Society — History of the Royal Society',
+            url: 'https://royalsociety.org/about-us/who-we-are/history/'
+          },
+          {
+            title: 'Royal Society — Governance',
+            url: 'https://royalsociety.org/about-us/how-we-are-governed/governance/'
+          },
+          {
+            title: 'Science Museum Group — The Royal Society',
+            url: 'https://collection.sciencemuseumgroup.org.uk/people/ap30437/royal-society'
+          }
+        ]
+      }
+    },
+    {
+      id: 'academie-sciences-france-1666',
+      title: 'France — L’Académie royale des sciences : science, État et expertise',
+      field: 'Paris, royaume de France puis France · 1666',
+      summary: 'Retracer la création de l’Académie par Colbert, ses premières disciplines, ses liens avec le pouvoir royal et sa transformation en institution scientifique nationale.',
+      lesson: {
+        sections: [
+          'L’Académie des sciences française est créée en 1666 à l’initiative de Jean-Baptiste Colbert, principal ministre de Louis XIV. Sa première séance se tient le 22 décembre 1666 dans la bibliothèque du roi, à Paris. Le projet vise à rassembler des savants capables de contribuer au développement des connaissances et de conseiller le pouvoir sur des questions scientifiques et techniques. Dès l’origine, l’Académie réunit des compétences variées : mathématiques, astronomie, physique, anatomie, botanique, zoologie et chimie.',
+          'Cette création s’inscrit dans la politique de centralisation monarchique et de soutien aux savoirs menée sous Louis XIV. Les travaux savants peuvent répondre à des enjeux théoriques, mais aussi à des besoins concrets du royaume, notamment en matière de cartographie, de mesures, d’ingénierie et de navigation. La relation entre science et pouvoir est donc constitutive de l’institution. Elle apporte des ressources et une reconnaissance aux savants, tout en inscrivant leurs activités dans les priorités politiques et administratives de la monarchie.',
+          'L’institution change plusieurs fois de statut et d’organisation au cours de son histoire, notamment pendant la Révolution française et au XIXe siècle. L’Académie actuelle appartient à l’Institut de France, mais sa date de référence historique demeure 1666. Aujourd’hui, elle contribue à l’avancement des sciences, à la diffusion de la culture scientifique et à l’éclairage des débats publics par des avis et des rapports. Son histoire illustre la transformation d’un groupe de savants soutenu par la monarchie en une institution nationale dont l’expertise s’inscrit dans une société démocratique.'
+        ],
+        example: {
+          statement: 'La première séance de l’Académie française des sciences a lieu le 22 décembre 1666. Quelle année doit être inscrite dans le champ sortYear ?',
+          calculation: 'Le champ sortYear utilise l’année numérique de fondation : 1666.',
+          answer: 'La valeur à inscrire est 1666. Le jour et le mois peuvent être conservés dans le texte du chapitre, mais ne sont pas nécessaires au tri annuel.'
+        },
+        exercise: {
+          question: 'Pourquoi la création de l’Académie des sciences est-elle liée à la politique de l’État royal ?',
+          answer: 'Parce que Colbert souhaite soutenir le développement des connaissances tout en mobilisant les compétences des savants pour conseiller le pouvoir et répondre à des besoins du royaume.'
+        },
+        exercises: [
+          {
+            question: 'Qui est à l’origine de la création de l’Académie en 1666 ?',
+            answer: 'Jean-Baptiste Colbert, sous le règne de Louis XIV.'
+          },
+          {
+            question: 'À quelle date se tient sa première séance ?',
+            answer: 'Le 22 décembre 1666.'
+          },
+          {
+            question: 'L’Académie de 1666 se limite-t-elle aux mathématiques ?',
+            answer: 'Non. Elle réunit également des disciplines telles que l’astronomie, la physique, l’anatomie, la botanique, la zoologie et la chimie.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Académie des sciences — L’histoire de l’Académie',
+            url: 'https://www.academie-sciences.fr/lhistoire-de-lacademie'
+          },
+          {
+            title: 'Institut de France — 1666 : fondation de l’Académie des sciences',
+            url: 'https://www.institutdefrance.fr/en/histoire/1666/'
+          },
+          {
+            title: 'Ministère de l’Enseignement supérieur et de la Recherche — Académie des sciences',
+            url: 'https://www.enseignementsup-recherche.gouv.fr/fr/academie-des-sciences-89445'
+          }
+        ]
+      }
+    },
+    {
+      id: 'academie-berlin-1700',
+      title: 'États allemands — L’Académie de Berlin : le projet de Leibniz',
+      field: 'Berlin, électorat de Brandebourg puis Prusse et Allemagne · 1700',
+      summary: 'Étudier la fondation de la Société des sciences de Brandebourg par Leibniz et les changements politiques qui ont façonné son identité institutionnelle.',
+      lesson: {
+        sections: [
+          'L’origine de l’actuelle Académie des sciences et des lettres de Berlin-Brandebourg remonte à la Société des sciences de l’électorat de Brandebourg, fondée en 1700 à l’initiative de Gottfried Wilhelm Leibniz, avec le soutien de l’électeur Frédéric III. Le projet de Leibniz est encyclopédique : il entend organiser la coopération entre les disciplines, favoriser les recherches et développer des institutions utiles à la vie intellectuelle et technique. Dès sa fondation, la société associe les sciences de la nature et les sciences humaines.',
+          'L’institution est ensuite transformée sous les souverains prussiens. Elle devient une académie royale et gagne en importance au XVIIIe siècle, notamment sous Frédéric II. Son histoire est liée à celle des États allemands, puis de l’Allemagne : les changements de régime entraînent des changements de nom, de tutelle et de missions. Au XXe siècle, elle porte notamment le nom d’Académie prussienne des sciences, puis celui d’Académie allemande des sciences à Berlin en Allemagne de l’Est.',
+          'Après la réunification allemande, l’ancienne structure de l’Académie de la RDA est dissoute et une nouvelle institution, la Berlin-Brandenburgische Akademie der Wissenschaften, est reconstituée en 1992 dans la tradition de l’académie historique. Il est donc essentiel de ne pas confondre la fondation de la société savante en 1700 et la reconstitution juridique de l’institution actuelle en 1992. Le lien entre les deux est une filiation historique et intellectuelle explicitement revendiquée par l’Académie contemporaine.'
+        ],
+        example: {
+          statement: 'L’institution berlinoise revendique une origine en 1700 et une reconstitution sous sa forme actuelle en 1992. Quelle date correspond à sa fondation historique ?',
+          calculation: 'La chronologie de la branche retient la date de l’institution fondatrice : 1700, et non la date de reconstitution contemporaine.',
+          answer: 'La valeur historique de sortYear est 1700. L’année 1992 décrit la reconstitution de l’institution actuelle.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer 1700 et 1992 dans l’histoire de l’Académie de Berlin ?',
+          answer: '1700 correspond à la fondation de la Société des sciences de Brandebourg ; 1992 correspond à la reconstitution de l’actuelle Académie de Berlin-Brandebourg.'
+        },
+        exercises: [
+          {
+            question: 'Quel philosophe est associé à la fondation de 1700 ?',
+            answer: 'Gottfried Wilhelm Leibniz.'
+          },
+          {
+            question: 'Quels domaines l’institution entend-elle associer dès ses débuts ?',
+            answer: 'Les sciences de la nature et les sciences humaines.'
+          },
+          {
+            question: 'En quelle année l’actuelle Académie de Berlin-Brandebourg est-elle reconstituée ?',
+            answer: 'En 1992.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Berlin-Brandenburg Academy of Sciences and Humanities — History of the Academy',
+            url: 'https://www.bbaw.de/en/the-academy/history-of-the-academy'
+          },
+          {
+            title: 'Berlin-Brandenburg Academy of Sciences and Humanities — The Academy',
+            url: 'https://www.bbaw.de/en/the-academy'
+          }
+        ]
+      }
+    },
+    {
+      id: 'academie-russe-1724',
+      title: 'Russie — L’Académie impériale des sciences de Saint-Pétersbourg',
+      field: 'Saint-Pétersbourg, Empire russe puis Russie · 1724',
+      summary: 'Analyser le projet de Pierre le Grand, la création d’une institution scientifique d’État et ses liens initiaux avec l’enseignement supérieur.',
+      lesson: {
+        sections: [
+          'L’Académie des sciences de Saint-Pétersbourg est instituée sous Pierre Ier par un décret impérial mis en application le 28 janvier 1724 selon le calendrier julien, soit le 8 février 1724 dans le calendrier grégorien. La création répond à la volonté de développer les sciences et les savoirs techniques dans l’Empire russe. Pierre le Grand souhaite doter le pays d’une institution capable de soutenir la recherche, de faire venir des spécialistes étrangers et de contribuer à la formation de savants locaux.',
+          'L’organisation initiale associe l’Académie à une université et à un gymnase académique. Ce dispositif doit permettre de relier la production de connaissances à la formation des étudiants et à la préparation de nouvelles générations de chercheurs. L’institution travaille dans un contexte de modernisation de l’État russe, où les sciences mathématiques, l’astronomie, la géographie, la physique et les connaissances techniques sont considérées comme des ressources importantes pour l’administration, la navigation et le développement du pays.',
+          'L’Académie traverse ensuite les transformations de l’Empire russe, de l’Union soviétique et de la Fédération de Russie. Elle change de dénomination et d’organisation, mais la date de 1724 demeure son repère fondateur officiel. La date doit être présentée avec prudence, car les calendriers julien et grégorien ne coïncident pas à cette époque : les sources russes donnent souvent le 28 janvier, tandis que les sources utilisant le calendrier grégorien indiquent le 8 février 1724.'
+        ],
+        example: {
+          statement: 'Une source russe donne le 28 janvier 1724 et une source utilisant le calendrier grégorien donne le 8 février 1724. S’agit-il de deux fondations différentes ?',
+          calculation: 'Il s’agit de deux expressions calendaires d’un même événement : 28 janvier dans le calendrier julien, 8 février dans le calendrier grégorien.',
+          answer: 'Non. Les deux dates désignent la mise en place du même décret de fondation, selon deux calendriers différents.'
+        },
+        exercise: {
+          question: 'Pourquoi l’Académie de Saint-Pétersbourg est-elle considérée comme un instrument de modernisation de l’Empire russe ?',
+          answer: 'Elle devait développer la recherche, attirer des spécialistes, former des savants et produire des connaissances utiles aux besoins scientifiques et techniques de l’État.'
+        },
+        exercises: [
+          {
+            question: 'Quel souverain est à l’origine de la création de l’Académie ?',
+            answer: 'Pierre Ier, dit Pierre le Grand.'
+          },
+          {
+            question: 'Quelle année correspond à sa fondation ?',
+            answer: '1724.'
+          },
+          {
+            question: 'Pourquoi certaines sources indiquent-elles le 28 janvier et d’autres le 8 février 1724 ?',
+            answer: 'Elles utilisent respectivement le calendrier julien et le calendrier grégorien.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Académie des sciences de Russie — Historical background',
+            url: 'https://www.ras.ru/about/history.aspx'
+          },
+          {
+            title: 'Bibliothèque présidentielle Boris Eltsine — Fondation de l’Académie des sciences à Saint-Pétersbourg',
+            url: 'https://www.prlib.ru/history/1942708'
+          },
+          {
+            title: 'Commission russe pour l’UNESCO — Russian Academy of Sciences: 300 years of history',
+            url: 'https://unesco.ru/en/news/56-academy-of-sciences/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'academie-suedoise-1739',
+      title: 'Suède — L’Académie royale des sciences : diffuser les savoirs utiles',
+      field: 'Stockholm, royaume de Suède · 1739',
+      summary: 'Découvrir la création de l’Académie suédoise, ses objectifs de diffusion des connaissances et l’évolution de ses domaines scientifiques.',
+      lesson: {
+        sections: [
+          'L’Académie royale des sciences de Suède est fondée le 2 juin 1739 par un groupe de savants et de personnalités engagées dans la vie économique et intellectuelle du royaume. Parmi les fondateurs figurent notamment Jonas Alströmer, Anders Johan von Höpken, Carl Linnaeus, connu en français sous le nom de Linné, et Mårten Triewald. L’institution s’inspire du développement des sociétés savantes européennes du début du XVIIIe siècle et cherche à promouvoir les sciences ainsi que leur utilité pour la société.',
+          'À ses débuts, l’Académie ne se limite pas aux sciences naturelles au sens contemporain. Son programme inclut les connaissances utiles à l’agriculture, au commerce, aux techniques, aux manufactures et à l’économie. La diffusion des résultats en langue suédoise constitue un moyen de rendre les savoirs accessibles au-delà des cercles universitaires. Cette orientation témoigne d’une conception des sciences dans laquelle la recherche, l’éducation et le progrès matériel sont étroitement liés.',
+          'Au cours du XIXe siècle, la structure disciplinaire de l’Académie évolue et se concentre davantage sur les mathématiques et les sciences naturelles. Le chimiste Jöns Jacob Berzelius joue un rôle important dans cette réorganisation. Aujourd’hui, l’Académie soutient la recherche, contribue au débat public et attribue notamment les prix Nobel de physique et de chimie. Ces missions contemporaines ne doivent pas être projetées telles quelles sur 1739 : elles résultent d’une longue évolution institutionnelle.'
+        ],
+        example: {
+          statement: 'L’Académie suédoise est fondée en 1739. Quel événement marque précisément sa fondation selon son histoire officielle ?',
+          calculation: 'La date institutionnelle publiée est le 2 juin 1739.',
+          answer: 'La fondation a lieu le 2 juin 1739 à l’initiative de savants et de personnalités suédoises.'
+        },
+        exercise: {
+          question: 'Pourquoi l’Académie suédoise diffusait-elle des connaissances dans la langue du pays ?',
+          answer: 'Pour rendre les savoirs plus accessibles et favoriser leur appropriation par un public plus large que le seul cercle des spécialistes.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année l’Académie royale des sciences de Suède est-elle fondée ?',
+            answer: 'En 1739.'
+          },
+          {
+            question: 'Quel naturaliste célèbre figure parmi ses premiers membres ?',
+            answer: 'Carl Linnaeus, appelé Linné en français.'
+          },
+          {
+            question: 'Quels prix Nobel l’Académie attribue-t-elle aujourd’hui ?',
+            answer: 'Les prix Nobel de physique et de chimie.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Royal Swedish Academy of Sciences — History of the Academy',
+            url: 'https://www.kva.se/en/about-us/history/'
+          },
+          {
+            title: 'Royal Swedish Academy of Sciences — About us',
+            url: 'https://www.kva.se/en/about-us/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'academie-danoise-1742',
+      title: 'Danemark — L’Académie royale des sciences et des lettres',
+      field: 'Copenhague, royaume de Danemark-Norvège puis Danemark · 1742',
+      summary: 'Étudier une académie créée pour renforcer les sciences, encourager la recherche fondamentale et développer les échanges interdisciplinaires.',
+      lesson: {
+        sections: [
+          'L’Académie royale danoise des sciences et des lettres est fondée le 13 novembre 1742. Sa création s’inscrit dans le mouvement européen des académies du XVIIIe siècle, qui cherchent à organiser durablement les échanges entre savants. L’institution est conçue comme un lieu de discussion, de communication des travaux et de reconnaissance des contributions scientifiques. Son intitulé associe explicitement les sciences et les lettres, ce qui reflète une conception large de la vie savante à cette époque.',
+          'L’Académie développe des activités de réunion, de publication et de diffusion des connaissances. Elle contribue à la structuration de communautés de recherche et à la circulation des travaux au-delà des frontières disciplinaires. Son histoire se déroule d’abord dans le cadre de la monarchie danoise-norvégienne, puis dans celui du royaume de Danemark après les changements politiques du XIXe siècle. Cette continuité historique doit être comprise à travers les évolutions de l’État et des institutions savantes européennes.',
+          'Dans ses missions actuelles, l’Académie vise notamment à renforcer la recherche fondamentale, à favoriser la compréhension interdisciplinaire, à conseiller et à contribuer à la diffusion des sciences. Elle attribue aussi des prix et soutient des échanges internationaux. Son histoire illustre le rôle des académies comme institutions de coopération : elles ne réalisent pas nécessairement elles-mêmes toutes les recherches, mais elles rassemblent des chercheurs, valorisent les travaux et facilitent le dialogue entre domaines.'
+        ],
+        example: {
+          statement: 'L’Académie danoise est fondée en 1742. Quelle année faut-il comparer à celle de l’Académie suédoise fondée en 1739 ?',
+          calculation: '1742 - 1739 = 3.',
+          answer: 'L’Académie danoise est fondée 3 ans après l’Académie royale des sciences de Suède.'
+        },
+        exercise: {
+          question: 'Pourquoi l’interdisciplinarité est-elle importante dans le fonctionnement d’une académie ?',
+          answer: 'Elle permet de confronter des méthodes et des connaissances issues de domaines différents afin d’enrichir les échanges scientifiques.'
+        },
+        exercises: [
+          {
+            question: 'À quelle date l’Académie royale danoise est-elle fondée ?',
+            answer: 'Le 13 novembre 1742.'
+          },
+          {
+            question: 'Quels domaines sont mentionnés dans son nom ?',
+            answer: 'Les sciences et les lettres.'
+          },
+          {
+            question: 'Cite deux types d’activités de l’Académie.',
+            answer: 'Les réunions savantes et les publications, auxquelles s’ajoutent la diffusion des connaissances et la coopération internationale.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Royal Danish Academy of Sciences and Letters — Statutes and purpose',
+            url: 'https://royalacademy.dk/vedtaegter/?lang=en'
+          }
+        ]
+      }
+    },
+    {
+      id: 'academie-espagnole-1847',
+      title: 'Espagne — La Real Academia de Ciencias Exactas, Físicas y Naturales',
+      field: 'Madrid, Espagne · 1847',
+      summary: 'Examiner la création officielle de l’Académie espagnole, son organisation en disciplines et son rôle de promotion et de conseil scientifique.',
+      lesson: {
+        sections: [
+          'La Real Academia de Ciencias Exactas, Físicas y Naturales est créée par décret royal du 25 février 1847 à Madrid. Le texte fondateur lui accorde un rang comparable à celui des autres académies royales espagnoles déjà établies. Elle est organisée autour des sciences exactes, physiques et naturelles, et son premier corps académique comprend 36 membres. La création de cette institution répond au besoin de donner une structure nationale reconnue aux communautés savantes travaillant dans les disciplines mathématiques et expérimentales.',
+          'L’Académie s’inscrit dans un contexte de réorganisation de l’enseignement, des institutions et de la vie scientifique en Espagne au XIXe siècle. Ses domaines couvrent les mathématiques, la physique, la chimie, la géologie et les sciences biologiques. Elle a pour objectif de favoriser l’étude et la recherche, mais aussi de contribuer à la diffusion des connaissances et à leur application. Sa création s’accompagne de la suppression de l’ancienne Académie des sciences naturelles de Madrid, ce qui montre qu’il s’agit d’une réorganisation institutionnelle plutôt que d’une simple addition.',
+          'L’institution actuelle conserve une mission de promotion des sciences, de diffusion sociale des connaissances et de conseil sur les questions relevant de ses compétences. Ses statuts contemporains précisent sa nature juridique et ses relations avec les pouvoirs publics. Pour la chronologie, l’année pertinente est 1847, date du décret de création, et non celle de l’installation solennelle ou des révisions statutaires ultérieures.'
+        ],
+        example: {
+          statement: 'Le décret de création de l’Académie espagnole date du 25 février 1847. Quelle année doit être utilisée pour le tri chronologique ?',
+          calculation: 'La date complète est convertie en année numérique : 1847.',
+          answer: 'La valeur sortYear est 1847.'
+        },
+        exercise: {
+          question: 'Pourquoi la création de 1847 est-elle une réorganisation de la vie savante espagnole ?',
+          answer: 'Parce que le décret crée une nouvelle académie royale et supprime simultanément l’ancienne Académie des sciences naturelles de Madrid.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le jour du décret royal de création ?',
+            answer: 'Le 25 février 1847.'
+          },
+          {
+            question: 'Combien de membres composent initialement l’Académie ?',
+            answer: '36 académiciens.'
+          },
+          {
+            question: 'Quelles grandes disciplines sont couvertes par son objet ?',
+            answer: 'Les sciences mathématiques, physiques, chimiques, géologiques et biologiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Real Academia de Ciencias — Royal Decree of creation',
+            url: 'https://rac.es/sobre-nosotros/real-decreto/'
+          },
+          {
+            title: 'Boletín Oficial del Estado — Statutes of the Royal Academy of Exact, Physical and Natural Sciences',
+            url: 'https://www.boe.es/buscar/doc.php?id=BOE-A-2020-16258'
+          }
+        ]
+      }
+    },
+    {
+      id: 'national-academy-sciences-usa-1863',
+      title: 'États-Unis — La National Academy of Sciences : conseiller la nation',
+      field: 'Washington, États-Unis · 1863',
+      summary: 'Comprendre la création de l’Académie nationale américaine pendant la guerre de Sécession et son rôle d’expertise scientifique indépendante auprès des pouvoirs publics.',
+      lesson: {
+        sections: [
+          'La National Academy of Sciences (NAS) est créée en 1863 par une loi du Congrès des États-Unis, signée par le président Abraham Lincoln. Sa fondation intervient pendant la guerre de Sécession. Le texte établit une organisation destinée à fournir au gouvernement des avis scientifiques indépendants lorsque les autorités publiques sollicitent son expertise. À l’origine, l’Académie compte 49 scientifiques issus des États demeurés dans l’Union.',
+          'La NAS se distingue d’un ministère ou d’un organisme gouvernemental chargé de conduire directement la politique scientifique. Il s’agit d’une société savante privée à but non lucratif, dont les membres sont élus par leurs pairs en reconnaissance de leurs contributions à la recherche. Sa fonction centrale est de mobiliser l’expertise de la communauté scientifique pour éclairer des décisions publiques. Cette organisation institutionnalise une relation entre recherche indépendante et conseil à l’État.',
+          'Au fil du temps, le dispositif américain s’élargit avec la création d’autres organismes nationaux associés, notamment la National Academy of Engineering en 1964 et la National Academy of Medicine, issue de l’Institute of Medicine fondé en 1970. La NAS conserve sa mission de conseil et de reconnaissance scientifique. Pour éviter toute confusion, la date de 1863 concerne spécifiquement la National Academy of Sciences, et non l’ensemble des académies nationales américaines qui lui sont associées aujourd’hui.'
+        ],
+        example: {
+          statement: 'La NAS est créée en 1863 et la National Academy of Engineering en 1964. Combien d’années séparent ces fondations ?',
+          calculation: '1964 - 1863 = 101.',
+          answer: 'Les deux créations sont séparées de 101 ans. La valeur sortYear du chapitre consacré à la NAS reste 1863.'
+        },
+        exercise: {
+          question: 'Pourquoi la National Academy of Sciences n’est-elle pas un ministère ?',
+          answer: 'Parce qu’elle est une société savante privée à but non lucratif, chargée de fournir une expertise scientifique indépendante et non de diriger directement l’administration fédérale.'
+        },
+        exercises: [
+          {
+            question: 'Quelle loi institue la National Academy of Sciences ?',
+            answer: 'Une loi du Congrès signée par Abraham Lincoln en 1863.'
+          },
+          {
+            question: 'Quel est son rôle principal auprès des pouvoirs publics ?',
+            answer: 'Fournir des avis scientifiques indépendants lorsque le gouvernement le demande.'
+          },
+          {
+            question: 'Les membres sont-ils élus par le gouvernement ?',
+            answer: 'Non. Ils sont élus par leurs pairs en reconnaissance de leurs contributions scientifiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Academy of Sciences — Frequently Asked Questions',
+            url: 'https://www.nasonline.org/about-the-nas/faq/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'japan-academy-1879',
+      title: 'Japon — De la Tokyo Academy à la Japan Academy',
+      field: 'Tokyo, Japon · 1879',
+      summary: 'Étudier la fondation de la Tokyo Academy pendant l’ère Meiji, son évolution vers l’Académie impériale puis la Japan Academy.',
+      lesson: {
+        sections: [
+          'La Japan Academy trouve son origine dans la Tokyo Academy, fondée le 15 janvier 1879 pendant l’ère Meiji. Le Japon entreprend alors une modernisation rapide de ses institutions, de son enseignement et de ses structures scientifiques. La création de l’Académie s’inspire en partie des modèles européens d’institutions savantes et vise à reconnaître les chercheurs et à contribuer au développement de l’éducation et des sciences dans le pays.',
+          'L’institution évolue au fil des décennies. En 1906, elle prend le nom d’Académie impériale et son organisation est révisée. Elle développe des activités de reconnaissance scientifique, de publication et de relations internationales. Cette évolution accompagne la transformation du Japon en puissance industrielle et scientifique, tout en s’inscrivant dans le contexte politique de l’Empire japonais. Il faut distinguer la date de fondation de la Tokyo Academy, 1879, de la date de son changement de nom en 1906.',
+          'Après la Seconde Guerre mondiale, l’institution adopte le nom de Japan Academy. Aujourd’hui, elle reconnaît des chercheurs ayant apporté des contributions remarquables aux sciences et aux études académiques, publie des travaux, organise des conférences et entretient des échanges avec des académies étrangères. Sa fonction est principalement celle d’une institution de distinction et de coopération savante ; elle ne doit pas être confondue avec un réseau national d’instituts de recherche chargé de conduire l’ensemble des programmes scientifiques japonais.'
+        ],
+        example: {
+          statement: 'La Tokyo Academy est créée en 1879 et devient l’Académie impériale en 1906. Quelle date correspond à la fondation de l’institution ?',
+          calculation: '1906 - 1879 = 27 années entre la fondation initiale et le changement de nom.',
+          answer: 'La date de fondation à retenir est 1879. L’année 1906 marque une étape de transformation institutionnelle.'
+        },
+        exercise: {
+          question: 'En quoi la fondation de la Tokyo Academy s’inscrit-elle dans les transformations de l’ère Meiji ?',
+          answer: 'Elle participe à la modernisation des institutions savantes et à l’adoption de formes d’organisation inspirées notamment des académies européennes.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année la Tokyo Academy est-elle fondée ?',
+            answer: 'En 1879.'
+          },
+          {
+            question: 'En quelle année prend-elle le nom d’Académie impériale ?',
+            answer: 'En 1906.'
+          },
+          {
+            question: 'Quel est l’un des rôles actuels de la Japan Academy ?',
+            answer: 'Reconnaître des chercheurs éminents, publier des travaux et favoriser les échanges académiques internationaux.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Japan Academy — Introductory Message and institutional history',
+            url: 'https://www.japan-acad.go.jp/en/about/greeting.html'
+          },
+          {
+            title: 'The Japan Academy — About the Academy',
+            url: 'https://www.japan-acad.go.jp/en/about/about.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'academie-bresilienne-1916',
+      title: 'Brésil — L’Academia Brasileira de Ciências : structurer la communauté scientifique',
+      field: 'Rio de Janeiro, Brésil · 1916',
+      summary: 'Retracer la création de la Société brésilienne des sciences, son changement de nom en 1921 et son rôle dans le développement scientifique national.',
+      lesson: {
+        sections: [
+          'L’Academia Brasileira de Ciências trouve son origine dans la Sociedade Brasileira de Sciencias, fondée le 3 mai 1916 à Rio de Janeiro, alors capitale de la République. L’initiative vient notamment de professeurs de l’École polytechnique et rassemble rapidement des chercheurs issus d’autres établissements, parmi lesquels le Musée national, l’Observatoire national et des institutions de recherche médicale et géologique. Cette fondation marque une étape dans l’organisation collective des scientifiques brésiliens.',
+          'À sa création, la société est structurée en trois sections : mathématiques, sciences physico-chimiques et sciences biologiques. Cette organisation reflète une conception large des sciences et permet de réunir des disciplines qui se développent parfois dans des institutions distinctes. Le 16 décembre 1921, la société adopte le nom d’Academia Brasileira de Ciências, en accord avec une appellation devenue courante dans les institutions savantes internationales. Il convient donc de retenir 1916 comme année de fondation, et 1921 comme année du changement de nom.',
+          'L’Académie contribue à stimuler le développement scientifique et technologique du Brésil, à représenter la communauté des chercheurs et à soutenir la coopération internationale. Son histoire montre que la création d’une académie nationale ne repose pas uniquement sur une décision gouvernementale : elle peut aussi émerger de la coopération entre enseignants, chercheurs, établissements d’enseignement supérieur et organismes scientifiques. Cette dynamique est importante pour comprendre la consolidation d’un espace scientifique national au XXe siècle.'
+        ],
+        example: {
+          statement: 'La Société brésilienne des sciences est fondée en 1916 et adopte le nom d’Académie brésilienne des sciences en 1921. Quelle année est utilisée pour le classement ?',
+          calculation: 'Le classement porte sur la fondation de l’organisation : 1916. Le changement de nom intervient 1921 - 1916 = 5 ans plus tard.',
+          answer: 'La valeur sortYear est 1916, tandis que 1921 est une date importante de son évolution institutionnelle.'
+        },
+        exercise: {
+          question: 'Pourquoi la fondation de l’Académie brésilienne est-elle liée aux établissements d’enseignement et de recherche ?',
+          answer: 'Parce que ses fondateurs et ses premiers membres proviennent notamment d’écoles, de facultés et d’institutions scientifiques qui souhaitent coordonner et promouvoir les recherches.'
+        },
+        exercises: [
+          {
+            question: 'À quelle date la Sociedade Brasileira de Sciencias est-elle fondée ?',
+            answer: 'Le 3 mai 1916 à Rio de Janeiro.'
+          },
+          {
+            question: 'En quelle année prend-elle le nom d’Academia Brasileira de Ciências ?',
+            answer: 'En 1921.'
+          },
+          {
+            question: 'Quelles sont les trois sections initiales ?',
+            answer: 'Les mathématiques, les sciences physico-chimiques et les sciences biologiques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Academia Brasileira de Ciências — História',
+            url: 'https://www.abc.org.br/institucional/historia/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'insa-inde-1935',
+      title: 'Inde — L’Indian National Science Academy : une représentation nationale des sciences',
+      field: 'Calcutta puis New Delhi, Inde · 1935',
+      summary: 'Comprendre la fondation du National Institute of Sciences of India, son rôle représentatif avant et après l’indépendance et son changement de nom en 1970.',
+      lesson: {
+        sections: [
+          'L’Indian National Science Academy (INSA) est fondée le 7 janvier 1935 à Calcutta sous le nom de National Institute of Sciences of India (NISI). Sa création résulte de démarches menées par plusieurs organisations et personnalités scientifiques, avec un rôle important de l’Indian Science Congress Association. L’objectif est de disposer d’une institution représentative des différentes branches des sciences en Inde et de favoriser le développement de la recherche ainsi que l’usage des connaissances au service de la société.',
+          'À ses débuts, l’institut fonctionne dans les locaux de l’Asiatic Society of Bengal à Calcutta. En octobre 1945, les autorités reconnaissent le NISI comme la principale société scientifique représentative des différentes disciplines en Inde. Son siège est transféré à Delhi en mai 1946, puis l’institution s’installe dans ses locaux actuels en 1951. Ces dates montrent que la fondation, la reconnaissance institutionnelle et le déplacement du siège sont trois événements distincts.',
+          'En février 1970, le National Institute of Sciences of India adopte le nom d’Indian National Science Academy. L’Académie représente aujourd’hui les scientifiques de nombreuses disciplines, encourage la recherche, développe les liens avec les organismes internationaux et peut exprimer des avis sur des questions scientifiques d’intérêt national. Son histoire traverse la fin de la période coloniale et l’Inde indépendante ; elle illustre la construction d’institutions scientifiques nationales capables de coordonner les communautés de recherche.'
+        ],
+        example: {
+          statement: 'Le NISI est fondé en 1935, reconnu comme organisme scientifique représentatif en 1945 et renommé INSA en 1970. Quelle date détermine sortYear ?',
+          calculation: 'Le tri utilise la date de création de l’institution : 1935.',
+          answer: 'sortYear doit être égal à 1935. Les années 1945 et 1970 décrivent des étapes ultérieures de son histoire.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il important de distinguer la fondation du NISI, sa reconnaissance en 1945 et son changement de nom en 1970 ?',
+          answer: 'Parce que ces dates correspondent à des événements différents : création de l’organisation, reconnaissance officielle de son rôle représentatif et adoption de son nom actuel.'
+        },
+        exercises: [
+          {
+            question: 'À quelle date le NISI est-il inauguré ?',
+            answer: 'Le 7 janvier 1935 à Calcutta.'
+          },
+          {
+            question: 'Quand son nom devient-il Indian National Science Academy ?',
+            answer: 'En février 1970.'
+          },
+          {
+            question: 'Pourquoi le siège de l’institution est-il d’abord associé à Calcutta ?',
+            answer: 'Parce que le NISI commence ses activités dans les locaux de l’Asiatic Society of Bengal avant le transfert de son siège à Delhi.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Indian National Science Academy — About INSA',
+            url: 'https://insaindia.res.in/about-insa/'
+          },
+          {
+            title: 'Indian National Science Academy — Significant landmarks',
+            url: 'https://insaindia.res.in/significant-landmark/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'academie-chinoise-sciences-1949',
+      title: 'Chine — La Chinese Academy of Sciences : une institution nationale de recherche',
+      field: 'Pékin, République populaire de Chine · 1949',
+      summary: 'Étudier la création de l’Académie chinoise des sciences, son rôle dans l’organisation de la recherche fondamentale et son évolution en grand réseau de recherche.',
+      lesson: {
+        sections: [
+          'La Chinese Academy of Sciences (CAS), ou Académie chinoise des sciences, est fondée le 1er novembre 1949, peu après la proclamation de la République populaire de Chine. Elle devient une institution nationale centrale pour le développement des sciences et des technologies. Sa création intervient dans un contexte de reconstruction et de réorganisation des institutions du pays. L’Académie a pour vocation de soutenir la recherche, de rassembler des scientifiques et de contribuer à la définition des priorités scientifiques nationales.',
+          'L’institution évolue considérablement au cours des décennies suivantes. Elle développe des instituts de recherche, des structures de formation et des infrastructures scientifiques. À partir de la fin des années 1970, dans le contexte des réformes et de l’ouverture de la Chine, elle renforce les collaborations scientifiques, les approches interdisciplinaires et les échanges internationaux. Son rôle ne se limite donc pas à celui d’une assemblée honorifique de chercheurs : elle constitue également un vaste ensemble d’organismes et de capacités de recherche.',
+          'Aujourd’hui, la CAS est présentée comme la principale institution académique nationale chinoise dans le domaine des sciences et comme un acteur stratégique de la recherche fondamentale et du développement de technologies avancées. Elle coordonne un ensemble d’instituts et participe à la formation et à l’innovation. La comparaison avec des académies plus anciennes doit tenir compte de différences de structure : certaines académies sont principalement des sociétés de membres élus et de conseil, tandis que la CAS associe une fonction académique à un réseau important d’établissements de recherche.'
+        ],
+        example: {
+          statement: 'La CAS est fondée le 1er novembre 1949. Quelle année faut-il enregistrer pour son classement chronologique ?',
+          calculation: 'La date complète de fondation est convertie en année numérique : 1949.',
+          answer: 'La valeur sortYear est 1949.'
+        },
+        exercise: {
+          question: 'En quoi la structure de la CAS diffère-t-elle de celle d’une académie principalement composée de membres élus ?',
+          answer: 'La CAS combine une fonction académique nationale avec un vaste réseau d’instituts et d’organismes qui conduisent directement des activités de recherche et de formation.'
+        },
+        exercises: [
+          {
+            question: 'À quelle date la Chinese Academy of Sciences est-elle fondée ?',
+            answer: 'Le 1er novembre 1949.'
+          },
+          {
+            question: 'Quel rôle joue-t-elle dans la recherche chinoise ?',
+            answer: 'Elle constitue une institution nationale majeure pour la recherche fondamentale, le développement technologique et la coordination d’activités scientifiques.'
+          },
+          {
+            question: 'Pourquoi faut-il la comparer avec prudence aux académies européennes plus anciennes ?',
+            answer: 'Parce que son organisation associe une fonction académique à un réseau d’instituts de recherche de grande ampleur.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Chinese Academy of Sciences — About CAS',
+            url: 'https://english.cas.cn/about-cas/'
+          },
+          {
+            title: 'Chinese Academy of Sciences — History: 1949–1960',
+            url: 'https://english.cas.cn/about-cas/history/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 ]
