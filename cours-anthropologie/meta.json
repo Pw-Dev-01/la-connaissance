@@ -2,7 +2,7 @@
   "title": "Anthropologie",
   "symbol": "A",
   "description": "Des traces du passé aux sociétés et aux langues",
-  "order": 8,
+  "order": 1,
   "entry": "index.html",
   "dataFile": "anthropologie-data.js",
   "class": "anthropologie-entry"
