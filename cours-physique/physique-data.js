@@ -8885,4 +8885,793 @@
   ]
 },
 
+{
+  "id": "grands-observatoires",
+  "title": "Les grands observatoires et télescopes spatiaux",
+  "note": "Une sélection de grands observatoires terrestres et spatiaux, organisée par pays ou programme responsable, puis par date à l’intérieur de chaque groupe. Pour les observatoires au sol, le repère est généralement la première lumière ou le début des observations ; pour les missions spatiales, il s’agit du lancement. Ces jalons ne sont donc pas strictement équivalents. Les installations internationales sont identifiées comme telles.",
+  "chapters": [
+    {
+      "id": "observatoire-paris",
+      "title": "France — Observatoire de Paris",
+      "field": "France · Fondation en 1667 · Observatoire astronomique historique",
+      "summary": "Comprendre la naissance d’un observatoire scientifique permanent et son rôle dans l’astronomie de position, la mesure du temps et l’astrophysique moderne.",
+      "lesson": {
+        "sections": [
+          "Fondé en 1667 sous le règne de Louis XIV, à l’initiative de Jean-Baptiste Colbert, l’Observatoire de Paris est l’un des grands établissements scientifiques créés au XVIIe siècle pour organiser des observations suivies du ciel. Sa construction, menée entre 1667 et 1672 sous la direction de l’architecte Claude Perrault, s’inscrit dans un projet où l’astronomie sert aussi la cartographie, la navigation et la détermination des longitudes. Il ne s’agit pas d’un télescope unique, mais d’une institution qui rassemble des astronomes, des instruments, des archives et des programmes de recherche.",
+          "Les premières activités de l’établissement relèvent largement de l’astronomie de position : mesurer avec précision les positions du Soleil, de la Lune, des planètes et des étoiles, puis établir des tables et des éphémérides. Ces observations contribuent à améliorer la connaissance des mouvements célestes et les méthodes de navigation. Le méridien de Paris devient également un repère géodésique important dans l’histoire de la cartographie française. L’observatoire participe ainsi à la transformation de l’astronomie en science de mesure fondée sur des observations répétées et comparables.",
+          "Au fil des siècles, l’institution élargit ses activités à la mécanique céleste, à la physique solaire, à l’astrophysique, à la métrologie du temps et aux sciences de l’Univers. Aujourd’hui, l’Observatoire de Paris-PSL travaille sur plusieurs campus et participe à des recherches qui associent théorie, calcul numérique, instrumentation et observations depuis le sol ou l’espace. Son histoire montre qu’un grand observatoire ne se définit pas seulement par le diamètre d’un miroir : il peut aussi être une institution durable qui développe des méthodes, forme des chercheurs et coordonne des mesures fondamentales."
+        ],
+        "example": {
+          "statement": "L’Observatoire de Paris est fondé en 1667 et son bâtiment historique est construit entre 1667 et 1672. Quel événement marque ici le début de l’institution ?",
+          "calculation": "Le repère institutionnel est l’année de fondation : 1667. La période 1667–1672 correspond à la construction du bâtiment et non à une date de lancement de télescope.",
+          "answer": "La fondation de l’Observatoire de Paris en 1667 constitue le repère chronologique retenu."
+        },
+        "exercise": {
+          "question": "Pourquoi l’Observatoire de Paris est-il davantage qu’un simple télescope ?",
+          "answer": "Parce qu’il s’agit d’une institution scientifique réunissant des chercheurs, des instruments, des archives, des formations et plusieurs domaines de recherche astronomique."
+        },
+        "exercises": [
+          {
+            "question": "En quelle année l’Observatoire de Paris a-t-il été fondé ?",
+            "answer": "En 1667."
+          },
+          {
+            "question": "Quel architecte a dirigé la construction du bâtiment historique ?",
+            "answer": "Claude Perrault."
+          },
+          {
+            "question": "Cite une fonction historique de l’astronomie de position pratiquée dans les observatoires.",
+            "answer": "Déterminer précisément les positions des astres afin d’établir des tables astronomiques et d’améliorer notamment la navigation et la cartographie."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Observatoire de Paris-PSL — Présentation et histoire",
+            "url": "https://observatoiredeparis.psl.eu/"
+          },
+          {
+            "title": "Ministère de la Culture — Notice de l’Observatoire de Paris",
+            "url": "https://pop.culture.gouv.fr/notice/merimee/PA00086642"
+          }
+        ]
+      }
+    },
+    {
+      "id": "royal-observatory-greenwich",
+      "title": "Royaume-Uni — Royal Observatory, Greenwich",
+      "field": "Angleterre · Fondation en 1675 · Astronomie de position et mesure du temps",
+      "summary": "Étudier la création de l’observatoire de Greenwich, ses travaux sur les positions stellaires et son rôle historique dans la définition du méridien de référence.",
+      "lesson": {
+        "sections": [
+          "Le Royal Observatory de Greenwich est fondé en 1675 par décision du roi Charles II. John Flamsteed en devient le premier Astronomer Royal. L’établissement est créé dans un objectif pratique autant que scientifique : améliorer la détermination de la longitude en mer grâce à des observations astronomiques et à des tables plus précises. À cette époque, connaître avec exactitude l’heure et la position des astres est essentiel pour la navigation océanique, la cartographie et la géographie.",
+          "Les astronomes de Greenwich réalisent des observations systématiques du Soleil, de la Lune, des planètes et des étoiles. Les catalogues stellaires et les mesures de passage au méridien permettent de comparer les positions célestes d’une nuit à l’autre et d’améliorer les modèles du mouvement des astres. L’observatoire contribue aussi à l’histoire de l’horlogerie de précision et à la diffusion d’une heure de référence. La relation entre astronomie et mesure du temps devient l’une des caractéristiques majeures du site.",
+          "Le méridien passant par Greenwich est adopté comme méridien d’origine international lors de la conférence internationale de 1884. Cette décision facilite l’unification des longitudes et des systèmes horaires utilisés dans les transports, la navigation et les communications. Il faut distinguer cette décision internationale de la fondation de l’observatoire : le site existe depuis 1675, tandis que le choix du méridien comme référence mondiale date de 1884. Le Royal Observatory est aujourd’hui un lieu patrimonial et scientifique associé à l’histoire de l’astronomie et du temps."
+        ],
+        "example": {
+          "statement": "Le Royal Observatory est fondé en 1675 et le méridien de Greenwich devient la référence internationale en 1884. Combien d’années séparent ces deux repères ?",
+          "calculation": "1884 - 1675 = 209 années.",
+          "answer": "209 années séparent la fondation de l’observatoire et l’adoption internationale du méridien de Greenwich."
+        },
+        "exercise": {
+          "question": "Pourquoi les observations astronomiques étaient-elles utiles à la navigation au XVIIe siècle ?",
+          "answer": "Elles permettaient d’améliorer les tables célestes et les méthodes de détermination de la longitude, indispensables pour se repérer en mer."
+        },
+        "exercises": [
+          {
+            "question": "En quelle année le Royal Observatory de Greenwich a-t-il été fondé ?",
+            "answer": "En 1675."
+          },
+          {
+            "question": "Qui fut son premier Astronomer Royal ?",
+            "answer": "John Flamsteed."
+          },
+          {
+            "question": "En quelle année le méridien de Greenwich a-t-il été adopté comme méridien d’origine international ?",
+            "answer": "En 1884."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Royal Museums Greenwich — History of the Royal Observatory",
+            "url": "https://www.rmg.co.uk/collections/research-guides/royal-observatory-history"
+          }
+        ]
+      }
+    },
+    {
+      "id": "madras-observatory",
+      "title": "Inde — Madras Observatory",
+      "field": "Inde · Premières observations en 1786 · Astronomie de position",
+      "summary": "Découvrir l’un des premiers établissements astronomiques modernes du sous-continent indien et son rôle dans les observations de précision.",
+      "lesson": {
+        "sections": [
+          "Les observations qui constituent le noyau du Madras Observatory commencent en 1786, à l’initiative de William Petrie, qui dispose alors de petits télescopes achromatiques, d’horloges astronomiques et d’un instrument de passage. L’établissement est ensuite organisé par la Compagnie britannique des Indes orientales ; le bâtiment de l’observatoire est achevé en 1792. Il faut donc distinguer le début des observations en 1786 de l’achèvement du bâtiment en 1792.",
+          "Le programme initial porte principalement sur les positions des étoiles, de la Lune et sur certains phénomènes astronomiques, notamment les éclipses des satellites de Jupiter. Ces observations contribuent à déterminer la longitude et à améliorer les connaissances géographiques. Dans le contexte de l’époque, l’astronomie est étroitement liée à la navigation, à la cartographie et à la production de données fiables pour les territoires administrés par la Compagnie.",
+          "Le Madras Observatory constitue un jalon important dans l’histoire institutionnelle de l’astronomie en Inde. Il précède la création de l’observatoire solaire de Kodaikanal, fondé en 1899, et s’inscrit dans la continuité historique qui mène à l’actuel Indian Institute of Astrophysics. Son intérêt historique réside autant dans la régularité des observations et la constitution d’archives que dans la taille des instruments utilisés."
+        ],
+        "example": {
+          "statement": "Les observations commencent en 1786 et le bâtiment est achevé en 1792. Quelle est la différence entre ces deux dates ?",
+          "calculation": "1792 - 1786 = 6 années.",
+          "answer": "Les observations ont commencé 6 ans avant l’achèvement du bâtiment."
+        },
+        "exercise": {
+          "question": "Pourquoi faut-il distinguer la date des premières observations de celle de l’achèvement du bâtiment ?",
+          "answer": "Parce qu’une institution peut commencer ses activités avant que ses locaux définitifs soient terminés."
+        },
+        "exercises": [
+          {
+            "question": "En quelle année les observations du Madras Observatory ont-elles commencé ?",
+            "answer": "En 1786."
+          },
+          {
+            "question": "En quelle année le bâtiment de l’observatoire a-t-il été achevé ?",
+            "answer": "En 1792."
+          },
+          {
+            "question": "Quel était l’un des objectifs scientifiques initiaux de l’établissement ?",
+            "answer": "Mesurer les positions des astres et contribuer à la détermination de la longitude."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Indian Institute of Astrophysics — History",
+            "url": "https://www.iiap.res.in/about-us/history/"
+          },
+          {
+            "title": "Indian Institute of Astrophysics — Kodaikanal Solar Observatory, historical background",
+            "url": "https://kso.iiap.res.in/new/history"
+          }
+        ]
+      }
+    },
+    {
+      "id": "subaru-telescope",
+      "title": "Japon — Subaru Telescope",
+      "field": "Hawaï, États-Unis · Télescope japonais de 8,2 m · Première lumière en janvier 1999",
+      "summary": "Étudier le grand télescope optique et infrarouge exploité par l’Observatoire astronomique national du Japon sur le Mauna Kea.",
+      "lesson": {
+        "sections": [
+          "Le télescope Subaru est un instrument de 8,2 m exploité par le National Astronomical Observatory of Japan. Bien qu’il soit situé au sommet du Mauna Kea, sur l’île d’Hawaï aux États-Unis, il s’agit d’un observatoire japonais. Son projet est officiellement lancé en 1991 et sa première lumière a lieu en janvier 1999. Le site est choisi pour son altitude élevée et la qualité de son atmosphère, des conditions favorables à l’observation astronomique dans le visible et l’infrarouge.",
+          "Subaru se distingue par son miroir primaire de grand diamètre et par une conception instrumentale permettant plusieurs configurations d’observation. Il peut réaliser des images à grand champ, de la spectroscopie et des observations dans l’infrarouge. Son instrument Hyper Suprime-Cam, mis en service en 2013, a notamment permis de réaliser de vastes relevés du ciel avec un champ de vue étendu. Ces relevés sont utiles pour étudier la distribution des galaxies, les amas, les objets transitoires et les grandes structures cosmiques.",
+          "Le cas de Subaru montre qu’il faut distinguer le pays qui exploite et finance un observatoire de son pays d’implantation géographique. Dans cette branche, il est classé sous le Japon pour son institution responsable, tandis que son emplacement est explicitement indiqué comme étant à Hawaï, aux États-Unis. Cette précision évite de confondre souveraineté territoriale et responsabilité scientifique."
+        ],
+        "example": {
+          "statement": "Le miroir primaire de Subaru mesure 8,2 m de diamètre. Quelle est sa catégorie approximative ?",
+          "calculation": "8,2 m est supérieur à 8 m : Subaru appartient à la classe des grands télescopes de 8 mètres.",
+          "answer": "Subaru est un télescope de la classe des 8 mètres."
+        },
+        "exercise": {
+          "question": "Pourquoi faut-il préciser à la fois le pays responsable de Subaru et son lieu géographique ?",
+          "answer": "Parce que Subaru est exploité par une institution japonaise mais se trouve physiquement à Hawaï, aux États-Unis."
+        },
+        "exercises": [
+          {
+            "question": "Quel est le diamètre du miroir primaire de Subaru ?",
+            "answer": "8,2 m."
+          },
+          {
+            "question": "En quel mois et quelle année a-t-il obtenu sa première lumière ?",
+            "answer": "En janvier 1999."
+          },
+          {
+            "question": "Où se trouve physiquement le télescope Subaru ?",
+            "answer": "Sur le Mauna Kea, à Hawaï, aux États-Unis."
+          }
+        ],
+        "sources": [
+          {
+            "title": "NAOJ — Subaru Telescope",
+            "url": "https://www.nao.ac.jp/en/telescopes/subaru/"
+          },
+          {
+            "title": "NAOJ — History",
+            "url": "https://www.nao.ac.jp/en/about/history.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "very-large-telescope-paranal",
+      "title": "Chili — Observatoire de Paranal et Very Large Telescope",
+      "field": "Désert d’Atacama · Première lumière du premier télescope unitaire le 25 mai 1998",
+      "summary": "Comprendre le fonctionnement du VLT, ensemble de grands télescopes optiques et infrarouges de l’Observatoire européen austral au Chili.",
+      "lesson": {
+        "sections": [
+          "L’Observatoire de Paranal est installé dans le désert d’Atacama, au nord du Chili, une région choisie pour son atmosphère généralement sèche, sa faible couverture nuageuse et la stabilité de ses conditions d’observation. Il est exploité par l’Observatoire européen austral, l’ESO, une organisation intergouvernementale. Le premier télescope unitaire du Very Large Telescope, UT1 Antu, reçoit sa première lumière le 25 mai 1998 ; l’observatoire est officiellement inauguré en mars 1999.",
+          "Le VLT comprend quatre télescopes unitaires de 8,2 m de diamètre, qui peuvent fonctionner séparément ou combiner leur lumière en mode interférométrique. Il dispose également de télescopes auxiliaires mobiles utilisés pour l’interférométrie. En combinant les faisceaux de plusieurs télescopes, l’interféromètre du VLT peut atteindre une résolution angulaire équivalente à celle d’un instrument dont la dimension caractéristique correspond à la séparation entre les télescopes, même si sa capacité de collecte de lumière reste liée aux surfaces collectrices réelles.",
+          "Les instruments du VLT couvrent l’imagerie, la spectroscopie et l’interférométrie dans le visible et l’infrarouge. Ils servent à étudier les exoplanètes, les étoiles, les trous noirs, les galaxies lointaines et les phénomènes transitoires. Paranal illustre la puissance d’un observatoire moderne : la qualité du site, les miroirs, l’optique adaptative, les détecteurs et les logiciels de traitement contribuent ensemble à la performance scientifique."
+        ],
+        "example": {
+          "statement": "Le premier télescope unitaire du VLT a reçu sa première lumière en 1998 et l’observatoire a été inauguré en 1999. Pourquoi ces deux dates sont-elles différentes ?",
+          "calculation": "La première lumière est un jalon technique d’observation ; l’inauguration officielle est un événement institutionnel qui intervient ensuite.",
+          "answer": "Les dates correspondent à deux événements distincts : mise en service optique initiale et inauguration officielle."
+        },
+        "exercise": {
+          "question": "Quel est l’intérêt de combiner plusieurs télescopes en interférométrie ?",
+          "answer": "La combinaison cohérente de leur lumière permet d’atteindre une résolution angulaire très élevée, liée à la séparation entre les instruments."
+        },
+        "exercises": [
+          {
+            "question": "À quelle date UT1 Antu a-t-il reçu sa première lumière ?",
+            "answer": "Le 25 mai 1998."
+          },
+          {
+            "question": "Combien de télescopes unitaires de 8,2 m composent le VLT ?",
+            "answer": "Quatre."
+          },
+          {
+            "question": "Quelle organisation exploite l’observatoire de Paranal ?",
+            "answer": "L’Observatoire européen austral, ESO."
+          }
+        ],
+        "sources": [
+          {
+            "title": "ESO — Timeline",
+            "url": "https://www.eso.org/public/about-eso/timeline/"
+          },
+          {
+            "title": "ESO — Highlights from ESO’s History",
+            "url": "https://www.hq.eso.org/public/archives/brochures/pdfsm/brochure_0038.pdf"
+          }
+        ]
+      }
+    },
+    {
+      "id": "alma-observatory",
+      "title": "Chili — Atacama Large Millimeter/submillimeter Array (ALMA)",
+      "field": "Plateau de Chajnantor · Début des observations scientifiques anticipées en 2011 · Coopération internationale",
+      "summary": "Étudier le réseau de radiotélescopes millimétriques et submillimétriques qui observe le gaz froid, la poussière et la formation des systèmes planétaires.",
+      "lesson": {
+        "sections": [
+          "ALMA est un réseau international de radiotélescopes installé sur le plateau de Chajnantor, dans le désert d’Atacama au Chili, à environ 5 000 m d’altitude. Le site est choisi notamment parce que l’atmosphère y est très sèche. La vapeur d’eau absorbe une partie du rayonnement millimétrique et submillimétrique ; un environnement aride est donc particulièrement important pour ces observations. Le projet est une collaboration entre l’Europe, l’Amérique du Nord et l’Asie de l’Est, avec le Chili comme pays hôte.",
+          "Le réseau comprend des antennes paraboliques de 12 m et de 7 m qui peuvent être déplacées selon différentes configurations. En combinant leurs signaux par interférométrie, les antennes produisent des images à haute résolution angulaire. ALMA observe des longueurs d’onde particulièrement adaptées à l’étude du gaz moléculaire froid et des grains de poussière, matières premières des étoiles et des planètes. Il permet ainsi d’observer des disques protoplanétaires, des nuages moléculaires et des galaxies lointaines.",
+          "Les premières observations scientifiques anticipées d’ALMA commencent en 2011 et les premières images sont publiées le 30 septembre 2011. L’inauguration officielle a lieu en mars 2013. Ces étapes sont distinctes : l’instrument peut produire des données scientifiques avant la cérémonie d’inauguration et avant que toutes les antennes et configurations prévues soient pleinement disponibles. ALMA montre comment une infrastructure internationale peut réunir des compétences, des financements et des technologies de plusieurs régions du monde."
+        ],
+        "example": {
+          "statement": "ALMA utilise des antennes de 12 m et de 7 m. Pourquoi les antennes doivent-elles être combinées ?",
+          "calculation": "L’interférométrie combine les signaux reçus par plusieurs antennes ; la résolution dépend notamment de la longueur de base, c’est-à-dire de leur séparation.",
+          "answer": "La combinaison des signaux permet de construire des images avec une résolution angulaire bien supérieure à celle d’une antenne isolée de même diamètre."
+        },
+        "exercise": {
+          "question": "Pourquoi le plateau de Chajnantor est-il favorable aux observations millimétriques et submillimétriques ?",
+          "answer": "Son altitude élevée et son atmosphère très sèche limitent l’absorption du rayonnement par la vapeur d’eau."
+        },
+        "exercises": [
+          {
+            "question": "En quelle année ALMA a-t-il commencé ses observations scientifiques anticipées ?",
+            "answer": "En 2011."
+          },
+          {
+            "question": "À quelle altitude approximative se trouve le réseau ?",
+            "answer": "Environ 5 000 m."
+          },
+          {
+            "question": "Quels types de matière ALMA observe-t-il particulièrement bien ?",
+            "answer": "Le gaz moléculaire froid et les grains de poussière, notamment dans les régions de formation stellaire et planétaire."
+          }
+        ],
+        "sources": [
+          {
+            "title": "ESO — Timeline, début des observations anticipées d’ALMA",
+            "url": "https://www.eso.org/public/about-eso/timeline/"
+          },
+          {
+            "title": "NAOJ — History, début des opérations initiales d’ALMA",
+            "url": "https://www.nao.ac.jp/en/about/history.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mount-wilson-observatory",
+      "title": "États-Unis — Mount Wilson Observatory",
+      "field": "Californie · Première lumière du télescope de 60 pouces en 1908 et du 100 pouces en 1917",
+      "summary": "Comprendre comment les grands télescopes de Mount Wilson ont transformé l’astronomie stellaire et l’étude de l’Univers extragalactique.",
+      "lesson": {
+        "sections": [
+          "George Ellery Hale obtient en 1904 le soutien de la Carnegie Institution pour établir un observatoire solaire sur le mont Wilson, dans les montagnes de San Gabriel en Californie. L’altitude et les conditions atmosphériques du site offrent un environnement favorable à l’observation. Le programme s’élargit rapidement au-delà du Soleil : des télescopes destinés à l’étude des étoiles sont construits, dont le réflecteur de 60 pouces qui reçoit sa première lumière le 13 décembre 1908.",
+          "Le télescope Hooker de 100 pouces, dont la première lumière a lieu le 2 novembre 1917, devient à son tour un instrument majeur. Son grand miroir collecte davantage de lumière que les instruments précédents et permet d’étudier des objets plus faibles et plus lointains. Les observations menées à Mount Wilson contribuent notamment aux travaux sur les étoiles variables, les amas globulaires, les distances extragalactiques et la dynamique des galaxies. Les mesures d’Edwin Hubble sur les Céphéides d’Andromède participent à établir que cette nébuleuse spirale est une galaxie extérieure à la Voie lactée.",
+          "L’importance de Mount Wilson ne se limite pas à la dimension de ses miroirs. Le site associe de grands instruments, des méthodes photographiques et spectroscopiques, ainsi qu’un programme scientifique suivi. Il joue un rôle central dans le passage d’une astronomie principalement descriptive à une astrophysique capable de mesurer les propriétés physiques des étoiles et d’étudier l’échelle de l’Univers. Les dates de 1908 et 1917 correspondent à la première lumière de deux télescopes distincts, et non à la fondation de l’observatoire."
+        ],
+        "example": {
+          "statement": "Le télescope de 60 pouces reçoit sa première lumière en 1908 et celui de 100 pouces en 1917. Quel intervalle les sépare ?",
+          "calculation": "1917 - 1908 = 9 années.",
+          "answer": "Les premières lumières des deux télescopes sont séparées de 9 années."
+        },
+        "exercise": {
+          "question": "Pourquoi un miroir de plus grand diamètre est-il utile en astronomie ?",
+          "answer": "Il collecte davantage de lumière et permet généralement d’étudier des objets plus faibles, sous réserve des performances de l’instrument et des conditions d’observation."
+        },
+        "exercises": [
+          {
+            "question": "En quelle année le télescope de 60 pouces de Mount Wilson a-t-il reçu sa première lumière ?",
+            "answer": "En 1908."
+          },
+          {
+            "question": "En quelle année le télescope Hooker de 100 pouces a-t-il reçu sa première lumière ?",
+            "answer": "En 1917."
+          },
+          {
+            "question": "Quel résultat majeur les observations de Hubble à Mount Wilson ont-elles contribué à établir ?",
+            "answer": "Qu’Andromède est une galaxie extérieure à la Voie lactée, grâce notamment à l’étude des étoiles Céphéides."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Carnegie Science — Observatories History",
+            "url": "https://carnegiescience.edu/about/history/observatories-history"
+          },
+          {
+            "title": "Mount Wilson Observatory — Timeline",
+            "url": "https://www.mtwilson.edu/timeline/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "palomar-observatory",
+      "title": "États-Unis — Palomar Observatory",
+      "field": "Californie · Première lumière du télescope Hale de 200 pouces en décembre 1947",
+      "summary": "Étudier le télescope Hale, longtemps emblématique des grands réflecteurs, et les recherches rendues possibles par son miroir de 5,08 mètres.",
+      "lesson": {
+        "sections": [
+          "L’observatoire de Palomar, en Californie, est développé par le California Institute of Technology pour disposer d’un site astronomique équipé de grands télescopes. Son instrument le plus célèbre est le télescope Hale, doté d’un miroir principal de 200 pouces, soit 5,08 mètres de diamètre. Sa première lumière date de décembre 1947 ; les premières images astronomiques diffusées et le début de son exploitation régulière sont des étapes ultérieures. Il est donc incorrect de confondre première lumière, inauguration officielle et début des observations régulières.",
+          "La grande ouverture du télescope Hale permet de collecter une quantité importante de lumière et d’obtenir des observations détaillées d’objets faibles. Les astronomes l’utilisent pour étudier les étoiles, les galaxies, les quasars et de nombreux phénomènes variables. L’instrument contribue à l’essor de l’astronomie extragalactique et à l’identification optique de sources détectées dans d’autres domaines du spectre électromagnétique. Il illustre la complémentarité entre la collecte de lumière, la qualité optique, les détecteurs et les méthodes d’analyse.",
+          "Palomar reste un observatoire scientifique actif, même si les technologies modernes ont profondément modifié la pratique de l’astronomie. Les grands relevés numériques, les détecteurs CCD et les instruments spécialisés complètent désormais les capacités du télescope historique. Le télescope Hale demeure un exemple important de l’ingénierie des grands miroirs et de l’évolution des observatoires professionnels au XXe siècle."
+        ],
+        "example": {
+          "statement": "Le miroir du télescope Hale mesure 200 pouces. Sachant qu’un pouce vaut exactement 2,54 cm, quelle est sa dimension en mètres ?",
+          "calculation": "200 × 2,54 = 508 cm ; 508 / 100 = 5,08 m.",
+          "answer": "Le diamètre nominal du miroir principal est de 5,08 m."
+        },
+        "exercise": {
+          "question": "Pourquoi la première lumière n’est-elle pas nécessairement la date d’inauguration officielle ?",
+          "answer": "La première lumière désigne le premier essai d’observation avec l’instrument ; les réglages, essais scientifiques et cérémonies officielles peuvent avoir lieu à d’autres dates."
+        },
+        "exercises": [
+          {
+            "question": "Quel est le diamètre du miroir principal du télescope Hale ?",
+            "answer": "200 pouces, soit 5,08 m."
+          },
+          {
+            "question": "En quelle période le télescope Hale a-t-il reçu sa première lumière ?",
+            "answer": "En décembre 1947."
+          },
+          {
+            "question": "Que signifie l’expression « première lumière » ?",
+            "answer": "La première observation de lumière céleste obtenue avec un télescope ou un instrument nouvellement mis en service."
+          }
+        ],
+        "sources": [
+          {
+            "title": "Caltech — Palomar Observatory chronology",
+            "url": "https://boom.caltech.edu/palomar/about/chronology.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hubble-space-telescope",
+      "title": "États-Unis — Hubble Space Telescope",
+      "field": "Mission NASA-ESA · Lancement le 24 avril 1990 · Télescope spatial ultraviolet, visible et proche infrarouge",
+      "summary": "Comprendre pourquoi Hubble a changé l’observation astronomique en opérant au-dessus de l’atmosphère terrestre.",
+      "lesson": {
+        "sections": [
+          "Le télescope spatial Hubble est lancé le 24 avril 1990 à bord de la navette Discovery. Il est le premier des grands observatoires spatiaux de la NASA conçus pour couvrir une partie importante de l’astronomie moderne. Son miroir primaire mesure 2,4 m de diamètre. Placé en orbite terrestre, Hubble observe dans l’ultraviolet, le visible et le proche infrarouge, des domaines dans lesquels l’atmosphère terrestre absorbe une partie du rayonnement ou dégrade la finesse des images par la turbulence.",
+          "Hubble a nécessité une correction optique après la découverte d’un défaut de forme de son miroir primaire. La mission de maintenance de décembre 1993 installe notamment des instruments correctifs et permet de retrouver les performances prévues. Cette intervention constitue un moment majeur de l’histoire spatiale : le télescope a été conçu pour être entretenu par des astronautes, ce qui a permis plusieurs missions de maintenance et de modernisation de ses instruments.",
+          "Les observations de Hubble ont contribué à mesurer plus précisément l’expansion de l’Univers, à étudier la formation et l’évolution des galaxies, à observer les régions de formation stellaire et à caractériser les atmosphères de certaines exoplanètes. Son apport vient autant de sa résolution angulaire et de sa stabilité que de la durée des programmes d’observation et de l’accès public aux archives scientifiques. Hubble n’a pas remplacé les observatoires au sol : il les complète en observant des longueurs d’onde et des conditions difficiles à atteindre depuis la surface terrestre."
+        ],
+        "example": {
+          "statement": "Hubble a été lancé le 24 avril 1990. Quelle différence d’année y a-t-il entre son lancement et celui de James Webb, le 25 décembre 2021 ?",
+          "calculation": "2021 - 1990 = 31 années.",
+          "answer": "Les lancements de Hubble et de Webb sont séparés de 31 années civiles."
+        },
+        "exercise": {
+          "question": "Quel est l’avantage principal d’un télescope spatial comme Hubble par rapport à un télescope au sol ?",
+          "answer": "Il observe au-dessus de l’atmosphère, ce qui évite l’absorption atmosphérique de certaines longueurs d’onde et réduit les effets de turbulence sur les images."
+        },
+        "exercises": [
+          {
+            "question": "En quelle date Hubble a-t-il été lancé ?",
+            "answer": "Le 24 avril 1990."
+          },
+          {
+            "question": "Quel est le diamètre de son miroir primaire ?",
+            "answer": "2,4 m."
+          },
+          {
+            "question": "Quelles grandes régions du spectre observe-t-il ?",
+            "answer": "L’ultraviolet, la lumière visible et le proche infrarouge."
+          }
+        ],
+        "sources": [
+          {
+            "title": "NASA — Hubble Space Telescope mission",
+            "url": "https://science.nasa.gov/mission/hubble/"
+          },
+          {
+            "title": "ESA/Hubble — Timeline",
+            "url": "https://esahubble.org/about/history/timeline/"
+          },
+          {
+            "title": "NASA — Great Observatories",
+            "url": "https://science.nasa.gov/universe/observatories/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chandra-x-ray-observatory",
+      "title": "États-Unis — Chandra X-ray Observatory",
+      "field": "Mission NASA · Lancement le 23 juillet 1999 · Astronomie des rayons X",
+      "summary": "Découvrir comment un observatoire spatial spécialisé dans les rayons X étudie les phénomènes les plus énergétiques de l’Univers.",
+      "lesson": {
+        "sections": [
+          "Chandra est lancé et déployé le 23 juillet 1999 par la navette spatiale Columbia. Il fait partie du programme des grands observatoires de la NASA et est consacré à l’astronomie des rayons X. Cette bande du spectre électromagnétique est fortement absorbée par l’atmosphère terrestre : un télescope situé au sol ne peut donc pas réaliser les mêmes observations qu’un observatoire placé en orbite.",
+          "Les rayons X cosmiques sont souvent émis par de la matière portée à des températures extrêmes ou soumise à des champs gravitationnels et magnétiques intenses. Chandra observe notamment les restes de supernovæ, les étoiles à neutrons, les trous noirs et le gaz très chaud présent dans les amas de galaxies. Ses miroirs utilisent une géométrie à incidence rasante : les rayons X sont réfléchis sous un angle très faible, car ils ne se comportent pas comme la lumière visible lorsqu’ils rencontrent une surface optique.",
+          "La résolution angulaire élevée de Chandra permet de distinguer des sources proches sur le ciel et d’étudier finement les régions centrales de galaxies ou les structures de rémanents stellaires. Les images sont souvent combinées à des données optiques, infrarouges ou radio afin de construire une description physique plus complète des objets. Chandra illustre ainsi l’astronomie multi-longueurs d’onde : chaque domaine spectral révèle des phénomènes différents et complémentaires."
+        ],
+        "example": {
+          "statement": "Chandra est lancé le 23 juillet 1999. Quel est le rôle de son orbite très elliptique ?",
+          "calculation": "L’orbite permet de longues périodes d’observation continue, sans devoir repasser fréquemment dans les zones où les communications ou l’environnement orbital limitent les observations.",
+          "answer": "Elle permet d’obtenir de longues séquences d’observation de sources de rayons X."
+        },
+        "exercise": {
+          "question": "Pourquoi Chandra doit-il observer depuis l’espace ?",
+          "answer": "Parce que l’atmosphère terrestre absorbe la majeure partie des rayons X cosmiques avant qu’ils atteignent le sol."
+        },
+        "exercises": [
+          {
+            "question": "À quelle date Chandra a-t-il été lancé ?",
+            "answer": "Le 23 juillet 1999."
+          },
+          {
+            "question": "Quel rayonnement observe-t-il principalement ?",
+            "answer": "Les rayons X."
+          },
+          {
+            "question": "Cite deux types d’objets étudiés par Chandra.",
+            "answer": "Par exemple les trous noirs, les restes de supernovæ, les étoiles à neutrons ou les amas de galaxies."
+          }
+        ],
+        "sources": [
+          {
+            "title": "NASA — Chandra X-ray Observatory mission milestones",
+            "url": "https://www.chandra.si.edu/about/mission_milestones.html"
+          },
+          {
+            "title": "NASA — Chandra mission overview",
+            "url": "https://heasarc.gsfc.nasa.gov/docs/chandra/chandra.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spitzer-space-telescope",
+      "title": "États-Unis — Spitzer Space Telescope",
+      "field": "Mission NASA · Lancement le 25 août 2003 · Astronomie infrarouge",
+      "summary": "Étudier le rôle de Spitzer dans l’observation des poussières cosmiques, des étoiles en formation, des galaxies lointaines et des exoplanètes.",
+      "lesson": {
+        "sections": [
+          "Le télescope spatial Spitzer est lancé le 25 août 2003 sous le nom initial de Space Infrared Telescope Facility. Il devient le quatrième des grands observatoires de la NASA et est spécialisé dans l’infrarouge. Contrairement à la lumière visible, le rayonnement infrarouge permet notamment d’étudier des régions froides ou obscurcies par la poussière, car certaines longueurs d’onde infrarouges traversent les nuages de poussière plus efficacement que la lumière visible.",
+          "Pour limiter les émissions thermiques parasites, le télescope doit être refroidi à très basse température. Il est placé sur une orbite solaire qui l’éloigne progressivement de la Terre, ce qui contribue à réduire l’influence de la chaleur terrestre. Spitzer utilise plusieurs instruments pour produire des images et des spectres dans différentes bandes infrarouges. Il a notamment étudié les disques autour des étoiles, les régions de formation stellaire, les galaxies lointaines et les atmosphères d’exoplanètes.",
+          "Après l’épuisement de son hélium liquide en 2009, Spitzer poursuit une mission dite « chaude » avec un nombre réduit de détecteurs encore utilisables. La mission prend fin le 30 janvier 2020. Son histoire montre que la durée scientifique d’un observatoire peut dépasser sa phase cryogénique initiale, à condition que certains instruments restent suffisamment performants. Spitzer complète Hubble et les observatoires au sol en révélant des phénomènes qui émettent principalement dans l’infrarouge."
+        ],
+        "example": {
+          "statement": "Spitzer est lancé en 2003 et sa mission se termine en 2020. Quelle durée sépare ces deux années ?",
+          "calculation": "2020 - 2003 = 17 années.",
+          "answer": "17 années séparent l’année de lancement de l’année de fin de mission."
+        },
+        "exercise": {
+          "question": "Pourquoi l’infrarouge est-il particulièrement utile pour observer les régions de formation des étoiles ?",
+          "answer": "Parce que ces régions contiennent souvent de la poussière qui absorbe la lumière visible, tandis que plusieurs longueurs d’onde infrarouges peuvent mieux traverser ces nuages."
+        },
+        "exercises": [
+          {
+            "question": "À quelle date Spitzer a-t-il été lancé ?",
+            "answer": "Le 25 août 2003."
+          },
+          {
+            "question": "Dans quelle partie du spectre travaillait-il ?",
+            "answer": "Dans l’infrarouge."
+          },
+          {
+            "question": "À quelle date la mission s’est-elle terminée ?",
+            "answer": "Le 30 janvier 2020."
+          }
+        ],
+        "sources": [
+          {
+            "title": "NASA/JPL — Spitzer Quick Facts",
+            "url": "https://www.jpl.nasa.gov/news/press_kits/spitzer/quick-facts/"
+          },
+          {
+            "title": "NASA/JPL — Spitzer mission facts",
+            "url": "https://www.jpl.nasa.gov/news/press_kits/spitzer/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kepler-space-telescope",
+      "title": "États-Unis — Kepler Space Telescope",
+      "field": "Mission NASA · Lancement le 7 mars 2009 UTC · Recherche d’exoplanètes par la méthode des transits",
+      "summary": "Comprendre comment Kepler a mesuré les variations de luminosité de centaines de milliers d’étoiles pour révéler la fréquence des planètes dans la Galaxie.",
+      "lesson": {
+        "sections": [
+          "Le télescope spatial Kepler est lancé le 6 mars 2009 en heure locale de Floride, ce qui correspond au 7 mars 2009 en temps universel UTC. Sa mission opérationnelle commence en mai 2009. Il est conçu pour mesurer avec une grande précision la luminosité d’un vaste échantillon d’étoiles dans un champ du ciel relativement fixe. L’objectif principal est de détecter des planètes passant devant leur étoile, événement appelé transit.",
+          "Lorsqu’une planète passe devant le disque de son étoile, elle bloque une petite fraction de la lumière reçue par le télescope. Cette baisse périodique de luminosité peut être détectée dans une courbe de lumière. La profondeur du transit dépend notamment du rapport entre la taille de la planète et celle de l’étoile ; la répétition des transits permet d’estimer la période orbitale. La méthode ne fournit pas automatiquement toutes les propriétés d’une planète : des observations complémentaires sont souvent nécessaires pour confirmer et caractériser les candidates.",
+          "Kepler a profondément modifié les statistiques des exoplanètes en montrant que les systèmes planétaires sont fréquents et très divers. Après la défaillance de plusieurs roues de réaction nécessaires à son pointage initial, la mission a été prolongée sous la forme K2 avec une stratégie d’observation adaptée. La NASA annonce la fin de la mission le 30 octobre 2018, lorsque le télescope n’a plus suffisamment de carburant pour poursuivre ses opérations."
+        ],
+        "example": {
+          "statement": "Une étoile présente une baisse de luminosité qui se répète tous les 12 jours. Quelle grandeur cette répétition permet-elle d’estimer en premier lieu ?",
+          "calculation": "Si les baisses sont bien causées par la même planète et que chaque baisse correspond à un transit, l’intervalle entre deux événements successifs donne la période orbitale : P = 12 jours.",
+          "answer": "La période orbitale estimée est de 12 jours, sous réserve que le signal soit bien dû à un transit planétaire confirmé."
+        },
+        "exercise": {
+          "question": "Quel est le principe de la méthode des transits utilisée par Kepler ?",
+          "answer": "Détecter la légère diminution périodique de luminosité d’une étoile lorsqu’une planète passe devant son disque."
+        },
+        "exercises": [
+          {
+            "question": "Quelle est la date de lancement de Kepler en temps universel UTC ?",
+            "answer": "Le 7 mars 2009."
+          },
+          {
+            "question": "Quel phénomène photométrique Kepler recherchait-il ?",
+            "answer": "Les baisses périodiques de luminosité provoquées par le passage d’une planète devant son étoile."
+          },
+          {
+            "question": "En quelle année la mission Kepler a-t-elle été arrêtée ?",
+            "answer": "En 2018."
+          }
+        ],
+        "sources": [
+          {
+            "title": "NASA — Kepler/K2 In Depth",
+            "url": "https://science.nasa.gov/mission/kepler/in-depth/"
+          },
+          {
+            "title": "NASA — Exoplanet missions",
+            "url": "https://science.nasa.gov/exoplanets/missions/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tess-space-telescope",
+      "title": "États-Unis — TESS",
+      "field": "Mission NASA · Lancement le 18 avril 2018 · Relevé photométrique de presque tout le ciel",
+      "summary": "Découvrir la stratégie de TESS, qui recherche des exoplanètes autour d’étoiles brillantes proches du Soleil.",
+      "lesson": {
+        "sections": [
+          "Le Transiting Exoplanet Survey Satellite, ou TESS, est lancé le 18 avril 2018. Il reprend la méthode des transits utilisée par Kepler, mais avec une stratégie de relevé différente : au lieu de surveiller principalement un champ fixe, TESS découpe le ciel en secteurs et observe successivement de grandes régions. Cette méthode lui permet de rechercher des planètes autour d’étoiles relativement brillantes et proches, qui sont souvent plus faciles à étudier ensuite avec d’autres instruments.",
+          "TESS mesure la luminosité des étoiles et recherche des diminutions répétées pouvant signaler le passage d’une planète. Les données produisent des candidates qui doivent être vérifiées : une étoile binaire éclipsante, une contamination par une étoile voisine ou d’autres phénomènes peuvent imiter un transit. La confirmation nécessite généralement des observations complémentaires, par exemple des mesures de vitesse radiale ou une photométrie de suivi depuis le sol.",
+          "TESS est également utile pour l’étude d’étoiles variables, d’explosions stellaires et d’autres objets dont la luminosité change. Sa mission étendue augmente le nombre de secteurs observés et enrichit les séries temporelles disponibles. Le rôle de TESS est donc double : détecter des mondes potentiels autour d’étoiles proches et fournir un relevé photométrique précieux pour de nombreux domaines de l’astrophysique."
+        ],
+        "example": {
+          "statement": "TESS est lancé le 18 avril 2018. Quelle différence d’année y a-t-il avec le lancement de Kepler en 2009 ?",
+          "calculation": "2018 - 2009 = 9 années.",
+          "answer": "TESS a été lancé 9 années après Kepler."
+        },
+        "exercise": {
+          "question": "Pourquoi les étoiles brillantes ciblées par TESS sont-elles intéressantes pour les observations de suivi ?",
+          "answer": "Leur luminosité facilite les mesures complémentaires, notamment la spectroscopie et les mesures de vitesse radiale nécessaires pour caractériser certaines planètes candidates."
+        },
+        "exercises": [
+          {
+            "question": "À quelle date TESS a-t-il été lancé ?",
+            "answer": "Le 18 avril 2018."
+          },
+          {
+            "question": "Quelle méthode TESS utilise-t-il pour détecter des exoplanètes ?",
+            "answer": "La méthode des transits photométriques."
+          },
+          {
+            "question": "Une baisse périodique de luminosité suffit-elle toujours à confirmer une exoplanète ?",
+            "answer": "Non. Il faut écarter les faux positifs et effectuer des observations de confirmation."
+          }
+        ],
+        "sources": [
+          {
+            "title": "NASA — TESS mission",
+            "url": "https://science.nasa.gov/mission/tess/"
+          },
+          {
+            "title": "NASA — TESS Science Support Center",
+            "url": "https://heasarc.gsfc.nasa.gov/docs/tess/what-is-tess.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "james-webb-space-telescope",
+      "title": "États-Unis — James Webb Space Telescope",
+      "field": "Mission NASA-ESA-ASC · Lancement le 25 décembre 2021 · Observatoire infrarouge",
+      "summary": "Étudier le grand observatoire infrarouge conçu pour observer les premières galaxies, les étoiles en formation et les atmosphères d’exoplanètes.",
+      "lesson": {
+        "sections": [
+          "Le télescope spatial James Webb, ou JWST, est lancé le 25 décembre 2021. Il s’agit d’une collaboration entre la NASA, l’Agence spatiale européenne et l’Agence spatiale canadienne. Son miroir primaire segmenté mesure 6,5 m de diamètre. Après son lancement, le télescope déploie progressivement son pare-soleil et son miroir, puis rejoint la région du point de Lagrange L2 du système Soleil-Terre, à environ 1,5 million de kilomètres de la Terre.",
+          "Webb est principalement conçu pour l’astronomie infrarouge. L’expansion de l’Univers étire la longueur d’onde de la lumière émise par les galaxies lointaines : une partie de leur rayonnement ultraviolet et visible arrive jusqu’à nous décalée vers l’infrarouge. Les instruments de Webb permettent donc d’étudier des galaxies très anciennes, les populations stellaires, les nuages de poussière, les disques protoplanétaires et les atmosphères de certaines exoplanètes. Son spectrographe peut décomposer la lumière pour rechercher des signatures moléculaires et atomiques.",
+          "Le fonctionnement de Webb repose sur un refroidissement passif très efficace grâce à son grand pare-soleil, ainsi que sur des systèmes cryogéniques adaptés à certains instruments. Contrairement à Hubble, Webb n’est pas conçu pour être entretenu par des astronautes : il évolue autour du Soleil près de L2. Il ne remplace pas Hubble, car les deux observatoires ont des domaines spectraux et des capacités complémentaires. Webb approfondit notamment l’étude de l’Univers infrarouge, tandis que Hubble reste très performant dans l’ultraviolet et le visible."
+        ],
+        "example": {
+          "statement": "Le miroir primaire de Webb mesure 6,5 m de diamètre et celui de Hubble 2,4 m. Quel est le rapport approximatif de leurs diamètres ?",
+          "calculation": "6,5 / 2,4 ≈ 2,71.",
+          "answer": "Le diamètre du miroir de Webb est environ 2,7 fois celui du miroir de Hubble. Cela ne signifie pas automatiquement que chaque observation est 2,7 fois meilleure : les performances dépendent aussi des instruments, des longueurs d’onde et des objectifs scientifiques."
+        },
+        "exercise": {
+          "question": "Pourquoi Webb est-il particulièrement adapté à l’étude des galaxies très lointaines ?",
+          "answer": "Parce que l’expansion de l’Univers décale une partie de leur lumière vers l’infrarouge, domaine dans lequel Webb est conçu pour observer."
+        },
+        "exercises": [
+          {
+            "question": "À quelle date Webb a-t-il été lancé ?",
+            "answer": "Le 25 décembre 2021."
+          },
+          {
+            "question": "Quel est le diamètre de son miroir primaire ?",
+            "answer": "6,5 m."
+          },
+          {
+            "question": "Autour de quelle région de l’espace Webb évolue-t-il ?",
+            "answer": "Autour du point de Lagrange Soleil-Terre L2, à environ 1,5 million de kilomètres de la Terre."
+          }
+        ],
+        "sources": [
+          {
+            "title": "NASA — James Webb Space Telescope",
+            "url": "https://science.nasa.gov/mission/webb/"
+          },
+          {
+            "title": "NASA — Webb FAQs",
+            "url": "https://science.nasa.gov/mission/webb/faqs-full/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xmm-newton",
+      "title": "Europe — XMM-Newton",
+      "field": "Mission de l’Agence spatiale européenne · Lancement le 10 décembre 1999 · Rayons X",
+      "summary": "Découvrir le grand observatoire européen consacré aux sources de rayons X et à l’étude des phénomènes astrophysiques extrêmes.",
+      "lesson": {
+        "sections": [
+          "XMM-Newton est un observatoire spatial de l’Agence spatiale européenne lancé le 10 décembre 1999 par une fusée Ariane 5 depuis le Centre spatial guyanais. Son nom vient de X-ray Multi-Mirror, en référence à sa conception optique. Il est conçu pour observer les rayons X émis par des objets très énergétiques, notamment les étoiles à neutrons, les trous noirs, les restes de supernovæ et les noyaux actifs de galaxies.",
+          "Le télescope utilise plusieurs modules optiques constitués de miroirs emboîtés à incidence rasante afin de collecter les rayons X. Il possède également des instruments permettant d’obtenir des données spectrales et des observations dans le visible et l’ultraviolet. La spectroscopie X est essentielle pour déterminer la température, la composition chimique, la vitesse et les conditions physiques du gaz chaud présent dans les environnements astrophysiques extrêmes.",
+          "XMM-Newton est une mission européenne avec des contributions et une participation scientifique internationales, notamment de la NASA. Il complète Chandra : les deux observatoires travaillent dans le domaine des rayons X, mais leurs caractéristiques instrumentales et leurs stratégies d’observation ne sont pas identiques. L’association de leurs données, avec celles d’observatoires optiques, infrarouges et radio, permet d’étudier les objets sous plusieurs angles physiques."
+        ],
+        "example": {
+          "statement": "XMM-Newton est lancé le 10 décembre 1999. Quelle information scientifique un spectre de rayons X peut-il apporter au-delà d’une simple image ?",
+          "calculation": "Un spectre répartit le signal selon l’énergie des photons ; l’analyse des raies et du continuum renseigne sur les propriétés physiques du plasma émetteur.",
+          "answer": "Il permet notamment d’étudier la température, la composition et les conditions physiques du gaz émetteur."
+        },
+        "exercise": {
+          "question": "Pourquoi XMM-Newton est-il placé dans l’espace ?",
+          "answer": "Parce que l’atmosphère terrestre absorbe les rayons X cosmiques, qui doivent être détectés au-dessus de l’atmosphère."
+        },
+        "exercises": [
+          {
+            "question": "À quelle date XMM-Newton a-t-il été lancé ?",
+            "answer": "Le 10 décembre 1999."
+          },
+          {
+            "question": "Quelle agence dirige la mission ?",
+            "answer": "L’Agence spatiale européenne, ESA."
+          },
+          {
+            "question": "Cite deux objets astrophysiques étudiés par XMM-Newton.",
+            "answer": "Par exemple les trous noirs, les étoiles à neutrons, les restes de supernovæ ou les amas de galaxies."
+          }
+        ],
+        "sources": [
+          {
+            "title": "ESA — XMM-Newton mission",
+            "url": "https://www.esa.int/Science_Exploration/Space_Science/XMM-Newton"
+          },
+          {
+            "title": "CNES — XMM-Newton",
+            "url": "https://cnes.fr/en/projects/xmm-newton"
+          }
+        ]
+      }
+    },
+    {
+      "id": "planck-observatory",
+      "title": "Europe — Planck",
+      "field": "Mission de l’Agence spatiale européenne · Lancement le 14 mai 2009 · Fond diffus cosmologique",
+      "summary": "Comprendre comment Planck a cartographié les minuscules variations du rayonnement fossile pour contraindre les paramètres cosmologiques.",
+      "lesson": {
+        "sections": [
+          "Le satellite Planck est lancé le 14 mai 2009 par une fusée Ariane 5, dans le cadre d’une mission de l’Agence spatiale européenne. Il est conçu pour mesurer avec une très grande précision le fond diffus cosmologique, parfois appelé rayonnement fossile. Ce rayonnement correspond à la lumière libérée lorsque l’Univers est devenu suffisamment transparent, environ 380 000 ans après le Big Bang. Son spectre est très proche de celui d’un corps noir à environ 2,7 K, mais sa température présente de minuscules variations selon la direction observée.",
+          "Planck observe le ciel dans plusieurs bandes de fréquences, de manière à séparer le signal cosmologique des émissions de notre Galaxie et des autres sources astrophysiques. La polarisation du rayonnement apporte également des informations complémentaires sur les processus physiques de l’Univers primordial. L’analyse des cartes permet de contraindre l’âge, la composition et l’histoire d’expansion de l’Univers dans le cadre des modèles cosmologiques étudiés.",
+          "La mission observe le ciel jusqu’en 2013 et ses opérations prennent fin le 23 octobre 2013. Les résultats de Planck ont affiné les paramètres du modèle cosmologique standard, sans pour autant résoudre toutes les questions fondamentales sur la matière noire, l’énergie noire ou les conditions initiales de l’Univers. Planck illustre la manière dont une mesure extrêmement précise d’un rayonnement très ancien peut éclairer l’histoire cosmique à grande échelle."
+        ],
+        "example": {
+          "statement": "Le fond diffus cosmologique a été émis environ 380 000 ans après le Big Bang. Que signifie cette durée ?",
+          "calculation": "Elle correspond à l’époque où l’Univers s’est suffisamment refroidi pour que les électrons et les noyaux forment des atomes neutres, permettant aux photons de se propager librement sur de grandes distances.",
+          "answer": "Le fond diffus cosmologique est la lumière issue de cette époque de l’Univers jeune, observée aujourd’hui dans le domaine des micro-ondes."
+        },
+        "exercise": {
+          "question": "Pourquoi Planck doit-il distinguer le fond diffus cosmologique des émissions de la Voie lactée ?",
+          "answer": "Parce que les émissions galactiques se superposent au signal cosmologique et peuvent masquer ses faibles variations ; plusieurs fréquences aident à séparer ces contributions."
+        },
+        "exercises": [
+          {
+            "question": "À quelle date Planck a-t-il été lancé ?",
+            "answer": "Le 14 mai 2009."
+          },
+          {
+            "question": "Quel rayonnement était au cœur de sa mission ?",
+            "answer": "Le fond diffus cosmologique."
+          },
+          {
+            "question": "En quelle année la mission s’est-elle achevée ?",
+            "answer": "En 2013, avec la fin des opérations le 23 octobre."
+          }
+        ],
+        "sources": [
+          {
+            "title": "CNES — Planck",
+            "url": "https://cnes.fr/en/projects/planck"
+          },
+          {
+            "title": "NASA — Observatories, Planck",
+            "url": "https://science.nasa.gov/universe/observatories/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "euclid-space-telescope",
+      "title": "Europe — Euclid",
+      "field": "Mission de l’Agence spatiale européenne · Lancement le 1er juillet 2023 · Cosmologie et Univers sombre",
+      "summary": "Découvrir le relevé cosmologique d’Euclid, destiné à cartographier la distribution des galaxies et à étudier la matière noire et l’énergie noire.",
+      "lesson": {
+        "sections": [
+          "Euclid est une mission de l’Agence spatiale européenne lancée le 1er juillet 2023 depuis Cap Canaveral, en Floride, à bord d’une fusée Falcon 9. Le satellite rejoint la région du point de Lagrange Soleil-Terre L2, située à environ 1,5 million de kilomètres de la Terre. Il transporte deux instruments scientifiques : une caméra en lumière visible et un instrument proche infrarouge qui combine imagerie et spectroscopie.",
+          "La mission est conçue pour cartographier la structure à grande échelle de l’Univers sur une vaste fraction du ciel et remonter l’évolution de cette structure au cours du temps cosmique. Euclid mesure notamment les formes apparentes de nombreuses galaxies afin d’étudier les effets de lentille gravitationnelle faible. La déformation statistique de leurs images renseigne sur la distribution de matière, y compris la matière noire qui n’émet pas de lumière mais exerce une influence gravitationnelle.",
+          "Euclid étudie également la distribution spatiale des galaxies et les oscillations acoustiques des baryons, qui servent de repère dans l’histoire de l’expansion cosmique. Ces deux approches permettent de contraindre les propriétés de l’énergie noire et de tester les modèles de gravitation à grande échelle. Il faut souligner qu’Euclid ne photographie pas directement la matière noire ou l’énergie noire : il mesure leurs effets sur la lumière et sur la distribution des galaxies, puis les interprète à l’aide de modèles physiques."
+        ],
+        "example": {
+          "statement": "Euclid utilise la lentille gravitationnelle faible pour étudier la matière noire. Que mesure-t-il réellement ?",
+          "calculation": "Il mesure les petites déformations statistiques des formes apparentes de galaxies lointaines, dues à la déviation gravitationnelle de leur lumière par la matière située sur la ligne de visée.",
+          "answer": "Euclid mesure les effets gravitationnels sur les images des galaxies ; il ne détecte pas directement la matière noire comme une source lumineuse."
+        },
+        "exercise": {
+          "question": "Pourquoi dit-on qu’Euclid étudie indirectement la matière noire ?",
+          "answer": "Parce que la matière noire n’est pas observée par sa lumière ; sa distribution est reconstruite à partir de ses effets gravitationnels, notamment sur les formes apparentes des galaxies."
+        },
+        "exercises": [
+          {
+            "question": "À quelle date Euclid a-t-il été lancé ?",
+            "answer": "Le 1er juillet 2023."
+          },
+          {
+            "question": "Quels sont les deux grands domaines d’étude cosmologique d’Euclid ?",
+            "answer": "La matière noire et l’énergie noire, étudiées à travers la distribution des galaxies, la lentille gravitationnelle faible et l’expansion cosmique."
+          },
+          {
+            "question": "Euclid observe-t-il directement la matière noire ?",
+            "answer": "Non. Il mesure ses effets gravitationnels sur la lumière et sur la structure de l’Univers."
+          }
+        ],
+        "sources": [
+          {
+            "title": "ESA — Euclid mission",
+            "url": "https://www.esa.int/Science_Exploration/Space_Science/Euclid"
+          },
+          {
+            "title": "CNES — Euclid",
+            "url": "https://cnes.fr/en/projects/euclid"
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
 ]
