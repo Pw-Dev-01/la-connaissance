@@ -2,7 +2,7 @@
   "title": "Littérature",
   "symbol": "L",
   "description": "Écrivains, poètes et œuvres majeures, courants littéraires et contexte historique",
-  "order": 11,
+  "order": 10,
   "entry": "index.html",
   "dataFile": "litterature-data.js",
   "class": "literature-entry"
