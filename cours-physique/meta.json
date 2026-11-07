@@ -1,0 +1,9 @@
+{
+  "title": "Physique",
+  "symbol": "φ",
+  "description": "Des lois fondamentales aux sciences de l’Univers",
+  "order": 2,
+  "entry": "index.html",
+  "dataFile": "physique-data.js",
+  "class": "physique-entry"
+}
