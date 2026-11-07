@@ -1149,12 +1149,12 @@ window.courseCatalog = [
 
 
   // =====================================================
-  // BRANCHE 2 : LES GRANDS PEINTRES
+  // BRANCHE 2 : LES PEINTRES
   // =====================================================
 
   {
     id: 'grands-peintres',
-    title: 'Les grands peintres, classés par styles',
+    title: 'Les peintres, classés par styles',
     note: 'Présentation chronologique des grands peintres, classés selon leur date de naissance. Les dates précédées de « vers » sont approximatives. Les rattachements stylistiques constituent des repères historiques et ne résument pas nécessairement toute la carrière de chaque artiste.',
     chapters: [
 
@@ -1461,7 +1461,7 @@ window.courseCatalog = [
             answer: 'L’œuvre associe harmonie de composition, perspective et représentation de la pensée antique.'
           },
           exercise: {
-            question: 'Quelle œuvre de Raphaël représente les grands penseurs de l’Antiquité ?',
+            question: 'Quelle œuvre de Raphaël représente Les penseurs de l’Antiquité ?',
             answer: 'L’École d’Athènes.'
           },
           exercises: [
@@ -2462,7 +2462,7 @@ window.courseCatalog = [
 {
   id: 'grands-musees',
   sortYear: 1683,
-  title: 'Les grands musées à travers le monde',
+  title: 'Les musées à travers le monde',
   note: 'Douze chapitres consacrés à de grandes institutions muséales de différents pays, classées selon leur première origine institutionnelle documentée. Les dates d’ouverture au public et d’inauguration des bâtiments actuels sont précisées séparément lorsqu’elles diffèrent. Les collections peuvent être plus anciennes que les institutions qui les conservent. Les histoires de constitution des collections, les transferts, les acquisitions coloniales, les restitutions et les transformations des missions muséales sont abordés avec prudence.',
   chapters: [
     {
