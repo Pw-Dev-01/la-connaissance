@@ -2,7 +2,7 @@
   "title": "Biologie",
   "symbol": "B",
   "description": "Les bases du vivant : les cellules, l’ADN, les premiers organismes vivants",
-  "order": 12,
+  "order": 2,
   "entry": "index.html",
   "dataFile": "biologie-data.js",
   "class": "biology-entry"
