@@ -2,7 +2,7 @@
   "title": "Géographie",
   "symbol": "G",
   "description": "La géographie, les grands fleuves,la distribution des reliefs et des territoires",
-  "order": 13,
+  "order": 7,
   "entry": "index.html",
   "dataFile": "geographie-data.js",
   "class": "geographie-entry"
