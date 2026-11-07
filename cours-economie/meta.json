@@ -2,7 +2,7 @@
   "title": "Économie",
   "symbol": "€",
     "description": "Microéconomie, macroéconomie et grands économistes",
-  "order": 4,
+  "order": 6,
   "entry": "index.html",
   "dataFile": "economie-data.js",
   "class": "économics-entry"
