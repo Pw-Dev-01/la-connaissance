@@ -1,4 +1,3 @@
-Cours en ligne : dépôt principal
 
 Site statique publié avec GitHub Pages. Le dépôt contient un portail d'accueil et plusieurs disciplines (mathématiques, physique, histoire, philosophie, etc.).
 
