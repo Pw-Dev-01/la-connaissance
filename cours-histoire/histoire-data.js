@@ -9063,7 +9063,303 @@ sortYear: -3200,
   ]
 },
 
+{
+  id: 'histoire-vikings',
+  sortYear: 793,
+  title: 'Les Vikings : Histoire et conquêtes',
+  note: 'Six chapitres consacrés aux sociétés scandinaves, aux navires et aux échanges, aux raids et implantations en Europe occidentale, aux routes orientales et atlantiques, aux croyances et à la christianisation, puis à la formation des royaumes et aux transformations de la fin de l’âge viking. La date 793 sert de repère conventionnel de classement, avec le raid attesté de Lindisfarne ; les limites de l’âge viking varient selon les historiens et les régions.',
+  chapters: [
+    {
+      id: 'origines-societes-scandinaves',
+      title: 'Les origines scandinaves et les sociétés du Nord',
+      field: 'Scandinavie · VIIIe siècle et contexte antérieur à 793',
+      summary: 'Situer les Vikings dans les sociétés de Scandinavie, comprendre leurs structures sociales et distinguer les activités de la majorité de la population des expéditions menées outre-mer.',
+      lesson: {
+        sections: [
+          'Le terme « Viking » ne désigne pas un peuple homogène ni l’ensemble des habitants de Scandinavie. Il renvoie, selon les contextes, à des personnes engagées dans des expéditions maritimes, notamment de commerce, de déplacement ou de prédation. Les populations concernées viennent principalement des régions correspondant aujourd’hui au Danemark, à la Norvège et à la Suède. Leurs langues appartiennent au groupe nordique ancien, mais leurs pouvoirs politiques, leurs coutumes et leurs intérêts ne sont pas unifiés. Il faut donc éviter de parler des Vikings comme d’un État ou d’une nation unique.',
 
+          'La société scandinave est principalement rurale. Une grande partie des habitants vit dans des exploitations agricoles où l’élevage, les cultures, la pêche, la chasse et l’artisanat répondent aux besoins des foyers. Les fermes sont souvent organisées autour d’une grande habitation, parfois appelée maison longue, avec des bâtiments annexes pour les réserves, les animaux et les activités artisanales. Les centres urbains et commerciaux existent, mais ils ne représentent qu’une partie de la population. Les ports et les lieux d’échange relient les communautés locales à des réseaux régionaux et lointains.',
+
+          'Les hiérarchies sociales reposent notamment sur la richesse foncière, les liens familiaux, la réputation et la capacité à mobiliser des dépendants. On distingue des élites ou grands propriétaires, des personnes libres — parmi lesquelles de nombreux agriculteurs et artisans — et des personnes réduites en esclavage. Cette organisation varie selon les lieux et les périodes. Les assemblées locales, les coutumes et les relations de parenté participent à la régulation de la vie collective, tandis que les chefs et les souverains cherchent progressivement à renforcer leur autorité. Les sources écrites étant limitées, l’archéologie est essentielle pour restituer les conditions de vie.',
+
+          'À la fin du VIIIe siècle, la Scandinavie connaît des échanges déjà établis avec les régions voisines. Les déplacements maritimes ne surgissent donc pas soudainement en 793 : ils s’inscrivent dans des pratiques de navigation, de commerce et de contacts antérieures. Les causes de l’expansion viking sont multiples et ne se réduisent pas à une seule explication démographique ou politique. Les possibilités de richesse, les rivalités entre élites, les réseaux commerciaux et les capacités nautiques ont pu jouer des rôles différents selon les groupes et les expéditions.'
+        ],
+        example: {
+          statement: 'Une présentation affirme que tous les habitants de Scandinavie étaient des Vikings parce qu’ils vivaient dans la même région. Cette affirmation est-elle exacte ?',
+          calculation: 'Il faut distinguer l’origine géographique d’une population et la participation à une activité particulière. Habiter la Scandinavie ne signifie pas nécessairement prendre part à une expédition viking.',
+          answer: 'Non. Les Vikings sont associés à des activités et expéditions particulières. La majorité des habitants de Scandinavie mène une vie locale, souvent agricole, et ne participe pas nécessairement aux voyages outre-mer.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il historiquement incorrect de considérer les Vikings comme un peuple parfaitement unifié ?',
+          answer: 'Parce que les Scandinaves appartiennent à des communautés et à des pouvoirs distincts. Leurs activités, leurs intérêts et leurs organisations politiques varient selon les régions et les périodes.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les trois grandes régions d’origine généralement associées aux Vikings ?',
+            answer: 'Les régions correspondant aujourd’hui au Danemark, à la Norvège et à la Suède.'
+          },
+          {
+            question: 'Quelle activité occupe une grande partie de la population scandinave durant l’âge viking ?',
+            answer: 'L’agriculture, associée notamment à l’élevage, à la pêche et à l’artisanat domestique.'
+          },
+          {
+            question: 'Pourquoi l’archéologie est-elle particulièrement importante pour étudier les sociétés vikings ?',
+            answer: 'Parce que les écrits contemporains produits par les Scandinaves sont peu nombreux. Les habitats, sépultures, objets et traces d’activités complètent les récits écrits par leurs voisins.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Vikings', url: 'https://www.worldhistory.org/Vikings/' },
+          { title: 'National Museum of Denmark — The Viking Age', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/' },
+          { title: 'National Museum of Denmark — The people of the Viking Age', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-people/' },
+          { title: 'National Museum of Denmark — Social order in the Viking Age', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/power-and-aristocracy/social-order-in-the-viking-age/' },
+          { title: 'National Museum of Denmark — Viking homes', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-people/viking-homes/' }
+        ]
+      }
+    },
+
+    {
+      id: 'navires-navigation-echanges-premieres-expeditions',
+      title: 'Les navires, la navigation, le commerce et les premières expéditions',
+      field: 'Scandinavie et mers européennes · VIIIe-IXe siècles',
+      summary: 'Étudier les techniques navales, les limites de nos connaissances sur la navigation et les réseaux d’échanges qui rendent possibles les voyages vikings.',
+      lesson: {
+        sections: [
+          'Les navires sont au cœur des déplacements scandinaves. Les bateaux à faible tirant d’eau peuvent longer les côtes, franchir certains estuaires et remonter des cours d’eau, ce qui facilite les liaisons entre mer et arrière-pays. Les navires de guerre longs et relativement étroits privilégient la mobilité et le transport de groupes, tandis que les bâtiments de commerce sont généralement plus larges et adaptés au transport de marchandises. Il n’existe donc pas un unique « bateau viking » : les formes et dimensions répondent à des usages variés.',
+
+          'La construction navale scandinave utilise notamment des bordages qui se recouvrent, une technique souvent appelée construction à clin. La coque, la quille, les rames et, sur certains navires, la voile permettent de combiner différentes formes de propulsion. Les découvertes archéologiques — épaves, sépultures de navires et éléments de construction — renseignent sur les matériaux et les techniques. Les bateaux conservés ou reconstitués ne représentent toutefois pas nécessairement tous les modèles utilisés durant plusieurs siècles et dans toutes les régions.',
+
+          'Les connaissances précises des navigateurs sont difficiles à reconstituer. Les sources et les vestiges suggèrent l’utilisation de repères côtiers, de l’observation du soleil et des étoiles, ainsi que d’une connaissance fine des vents, des courants et des signes naturels. En revanche, les preuves d’un usage régulier d’instruments de navigation sophistiqués restent insuffisantes. Il faut donc distinguer les capacités maritimes attestées des hypothèses modernes sur les méthodes exactes employées en haute mer.',
+
+          'Les échanges commerciaux constituent une dimension majeure de l’époque. Des centres comme Ribe et Hedeby accueillent marchands et artisans et mettent en relation les productions locales avec des biens venus de régions éloignées. Les objets échangés comprennent notamment des matières premières, des produits artisanaux, des textiles, des bijoux et des monnaies. L’argent est fréquemment utilisé au poids : les fragments de métal peuvent être pesés et ajustés lors des transactions. Les mêmes réseaux qui favorisent le commerce peuvent aussi être empruntés par des groupes armés ou des expéditions de conquête.'
+        ],
+        example: {
+          statement: 'Pourquoi un navire marchand large et un navire de guerre long et étroit ne répondent-ils pas exactement aux mêmes besoins ?',
+          calculation: 'On compare leurs fonctions : le navire marchand doit transporter un volume important de biens, tandis que le navire de guerre privilégie généralement la mobilité et le déplacement d’un équipage.',
+          answer: 'Leurs formes correspondent à des priorités différentes. Un bâtiment marchand favorise la capacité de chargement ; un navire long et étroit est conçu pour se déplacer rapidement et transporter des personnes. Les types de navires sont diversifiés.'
+        },
+        exercise: {
+          question: 'Comment les caractéristiques des navires scandinaves ont-elles facilité les déplacements en Europe ?',
+          answer: 'Leur combinaison de voiles et de rames, ainsi que le faible tirant d’eau de certains modèles, permettait de naviguer en mer, le long des côtes et sur plusieurs voies fluviales.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie la construction à clin ?',
+            answer: 'Une technique dans laquelle les planches du bordage se chevauchent partiellement.'
+          },
+          {
+            question: 'Citez deux centres commerciaux importants de l’époque viking au Danemark actuel.',
+            answer: 'Ribe et Hedeby.'
+          },
+          {
+            question: 'Pourquoi faut-il rester prudent lorsqu’on décrit les instruments de navigation vikings ?',
+            answer: 'Parce que les preuves archéologiques et écrites d’un usage régulier d’instruments précis sont limitées. Les connaissances des repères naturels sont mieux étayées.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Vikings', url: 'https://www.worldhistory.org/Vikings/' },
+          { title: 'Viking Ship Museum — Findings of longships from the Viking Age', url: 'https://www.vikingeskibsmuseet.dk/en/professions/education/the-longships/findings-of-longships-from-the-viking-age' },
+          { title: 'Viking Ship Museum — Instrument navigation in the Viking Age?', url: 'https://www.vikingeskibsmuseet.dk/en/professions/education/knowledge-of-sailing/instrument-navigation-in-the-viking-age' },
+          { title: 'National Museum of Denmark — How did the Vikings travel around in the world?', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/expeditions-and-raids/how-did-the-vikings-travel-around-in-the-world/' },
+          { title: 'National Museum of Denmark — Trade in the Viking period', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/expeditions-and-raids/trade-in-the-viking-period/' },
+          { title: 'The Metropolitan Museum of Art — The Vikings (780–1100)', url: 'https://www.metmuseum.org/essays/the-vikings-780-1100' }
+        ]
+      }
+    },
+
+    {
+      id: 'raids-conquetes-implantations-occident',
+      title: 'Les raids, les conquêtes et les implantations en Europe occidentale',
+      field: 'Îles Britanniques et Francie · 793-Xe siècle',
+      summary: 'Suivre les premières attaques documentées, le passage des raids ponctuels à des campagnes plus importantes et l’installation durable de groupes scandinaves.',
+      lesson: {
+        sections: [
+          'En juin 793, le monastère de Lindisfarne, au nord-est de l’Angleterre actuelle, est attaqué. Cet événement, rapporté par des sources chrétiennes, est devenu un repère symbolique du début de l’âge viking. Il ne s’agit cependant pas de la preuve que les Scandinaves n’avaient jamais navigué ou mené d’expéditions auparavant. D’autres attaques sont signalées dans les années suivantes, notamment contre des établissements religieux des îles Britanniques et des côtes de l’Europe occidentale. Les monastères attirent les convoitises en raison de leurs richesses et de leur situation parfois exposée.',
+
+          'Au IXe siècle, les opérations évoluent dans leur ampleur et leur organisation. Des groupes qui menaient des attaques rapides peuvent établir des camps saisonniers, hiverner sur place ou participer à des campagnes militaires de plus grande envergure. Les fleuves facilitent les déplacements vers l’intérieur des territoires. Dans l’Empire carolingien, plusieurs villes et régions sont touchées par des incursions ; Paris est notamment assiégée en 845. Les sources franques décrivent ces événements depuis le point de vue des pouvoirs attaqués et doivent être confrontées aux données archéologiques et aux autres témoignages.',
+
+          'Dans les îles Britanniques, des groupes scandinaves ne se contentent pas toujours de piller avant de repartir. Des implantations se développent, en particulier dans le nord et l’est de l’Angleterre. La région appelée Danelaw correspond à des territoires où les pratiques juridiques et politiques scandinaves ont exercé une influence importante ; ce terme ne signifie pas que toute la région était administrée de façon uniforme par un seul pouvoir viking. Les échanges, les mariages, les conflits et les adaptations locales contribuent à transformer durablement les sociétés.',
+
+          'Les rapports entre Scandinaves et populations locales sont multiples : affrontements, rançons, alliances, mercenariat, commerce et installation. Le versement de tributs, souvent désigné par le terme anglais Danegeld dans le contexte anglais, constitue parfois une réponse politique aux menaces ou aux campagnes militaires. Au Xe siècle et au début du XIe siècle, des souverains d’origine scandinave règnent sur l’Angleterre. Ces évolutions montrent que l’expansion viking ne se résume pas à des raids : elle contribue aussi à des recompositions territoriales et politiques.'
+        ],
+        example: {
+          statement: 'Une chronologie indique le raid de Lindisfarne en 793, puis des installations scandinaves durables en Angleterre au cours des décennies suivantes. Quelle évolution peut-on en déduire ?',
+          calculation: 'On distingue deux formes d’action : une attaque ponctuelle suivie d’un départ, et une présence prolongée qui implique des camps, des établissements et des relations avec les populations locales.',
+          answer: 'Les activités scandinaves ont évolué et se sont diversifiées. Certaines expéditions sont passées du raid à l’installation et à la participation aux rapports de pouvoir locaux.'
+        },
+        exercise: {
+          question: 'Pourquoi le raid de Lindisfarne en 793 est-il important sans être considéré comme le commencement absolu de toute activité maritime scandinave ?',
+          answer: 'Il s’agit d’un événement précisément rapporté et devenu un repère symbolique. Les échanges et les navigations scandinaves existaient déjà avant cette date.'
+        },
+        exercises: [
+          {
+            question: 'Quel établissement religieux est attaqué en 793 ?',
+            answer: 'Le monastère de Lindisfarne, dans le nord-est de l’Angleterre actuelle.'
+          },
+          {
+            question: 'Que désigne le terme Danelaw ?',
+            answer: 'Des territoires d’Angleterre où l’influence des populations et des pratiques juridiques scandinaves fut importante, sans constituer une administration uniforme.'
+          },
+          {
+            question: 'Citez deux formes de relations entre les Scandinaves et les populations d’Europe occidentale autres que les raids.',
+            answer: 'Le commerce et les alliances ; on peut également citer les rançons, le mercenariat, les mariages et l’installation durable.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Vikings', url: 'https://www.worldhistory.org/Vikings/' },
+          { title: 'World History Encyclopedia — Viking Raids in Britain', url: 'https://www.worldhistory.org/article/1197/viking-raids-in-britain/' },
+          { title: 'World History Encyclopedia — Viking Warfare', url: 'https://www.worldhistory.org/Viking_Warfare/' },
+          { title: 'The Metropolitan Museum of Art — The Vikings (780–1100)', url: 'https://www.metmuseum.org/essays/the-vikings-780-1100' },
+          { title: 'The Historical Association — The Vikings in Britain: a brief history', url: 'https://www.history.org.uk/primary/resource/3867/the-vikings-in-britain-a-brief-history' }
+        ]
+      }
+    },
+
+    {
+      id: 'expansion-orient-islande-groenland-vinland',
+      title: 'L’expansion vers l’Est, l’Islande, le Groenland et l’Amérique du Nord',
+      field: 'Mer Baltique, routes fluviales orientales et Atlantique Nord · IXe-XIe siècles',
+      summary: 'Explorer les réseaux scandinaves orientaux et les voyages de l’Atlantique Nord, en séparant les faits archéologiques des récits médiévaux.',
+      lesson: {
+        sections: [
+          'Les déplacements scandinaves se dirigent aussi vers l’est. Des voyageurs, marchands et groupes armés empruntent les voies de la mer Baltique et les réseaux fluviaux qui relient la région à l’Europe orientale et à la mer Noire. Les sources byzantines et arabophones mentionnent des groupes nordiques, parfois désignés sous des noms différents selon les auteurs et les contextes. Certains Scandinaves servent comme commerçants ou combattants ; des hommes venus du Nord entrent notamment au service de l’Empire byzantin dans la garde varangienne. Ces parcours ne correspondent pas à une conquête scandinave uniforme de toutes les régions traversées.',
+
+          'Les échanges orientaux relient plusieurs espaces économiques. Les objets et monnaies retrouvés dans les trésors scandinaves témoignent de contacts à longue distance, notamment avec les mondes islamique et byzantin. L’argent circule sous forme de pièces ou de métal pesé, tandis que d’autres marchandises transitent par les réseaux marchands. Les itinéraires dépendent des saisons, des conditions de navigation, des accords politiques et des relais locaux. Les Scandinaves participent à ces réseaux en interaction avec de nombreuses autres populations ; ils ne les créent pas seuls.',
+
+          'Dans l’Atlantique Nord, des Scandinaves s’installent en Islande à partir de la fin du IXe siècle. L’île devient une société de fermes et de communautés locales, connectée à la Norvège et aux autres territoires nord-atlantiques. À la fin du Xe siècle, des colons venus notamment d’Islande s’établissent au Groenland sous l’impulsion d’Érik le Rouge, selon les traditions médiévales et les données historiques disponibles. Ces établissements reposent sur l’élevage, l’exploitation des ressources locales et des échanges maritimes avec l’extérieur. Leur environnement impose des contraintes fortes, notamment climatiques et logistiques.',
+
+          'Vers l’an 1000, des navigateurs nordiques atteignent Terre-Neuve, dans l’actuel Canada. Le site archéologique de L’Anse aux Meadows constitue la preuve matérielle la plus solide d’une présence nordique en Amérique du Nord. On y a identifié des bâtiments à charpente de bois et murs de tourbe, ainsi que des traces de travail du fer et du bois. Les récits médiévaux associés au Vinland apportent des informations, mais ils ont été rédigés plus tard et ne doivent pas être lus comme des comptes rendus contemporains exacts. L’établissement semble avoir été temporaire ; les preuves disponibles ne démontrent pas une colonisation européenne durable du continent à cette époque.'
+        ],
+        example: {
+          statement: 'Un manuel présente L’Anse aux Meadows comme une preuve archéologique d’une présence nordique en Amérique du Nord autour de l’an 1000. Quelle conclusion est justifiée ?',
+          calculation: 'Il faut distinguer la preuve d’une présence sur un site identifié et l’affirmation beaucoup plus large d’une colonisation permanente de tout un continent.',
+          answer: 'Le site prouve une présence nordique en Amérique du Nord autour de l’an 1000. Il ne prouve pas l’existence d’une colonisation européenne permanente et étendue du continent.'
+        },
+        exercise: {
+          question: 'Pourquoi L’Anse aux Meadows est-il une source historique plus solide qu’un récit isolé pour établir une présence nordique en Amérique du Nord ?',
+          answer: 'Parce qu’il s’agit d’un site archéologique identifié et fouillé, contenant des bâtiments et des objets matériels associés à une présence nordique. Les récits médiévaux peuvent compléter l’analyse, mais ils sont postérieurs aux voyages décrits.'
+        },
+        exercises: [
+          {
+            question: 'Quel empire employait notamment des combattants nordiques dans la garde varangienne ?',
+            answer: 'L’Empire byzantin.'
+          },
+          {
+            question: 'Quel explorateur est traditionnellement associé à l’établissement nordique du Groenland ?',
+            answer: 'Érik le Rouge, même si l’histoire de la colonisation doit être reconstituée en croisant les récits et les données archéologiques.'
+          },
+          {
+            question: 'Dans quelle région se trouve le site de L’Anse aux Meadows ?',
+            answer: 'À Terre-Neuve, dans la province canadienne de Terre-Neuve-et-Labrador.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Vikings', url: 'https://www.worldhistory.org/Vikings/' },
+          { title: 'National Museum of Denmark — The silver hoards of the Vikings', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-silver-hoards-of-the-vikings/' },
+          { title: 'Parks Canada — L’Anse aux Meadows National Historic Site', url: 'https://www.parks.canada.ca/culture/spm-whs/sites-canada/sec02a.aspx' },
+          { title: 'UNESCO — L’Anse aux Meadows National Historic Site', url: 'https://whc.unesco.org/en/list/4' },
+          { title: 'UNESCO — Lieu historique national de L’Anse aux Meadows', url: 'https://whc.unesco.org/fr/list/4' }
+        ]
+      }
+    },
+
+    {
+      id: 'vie-quotidienne-croyances-christianisation',
+      title: 'La vie quotidienne, les croyances et la christianisation',
+      field: 'Scandinavie et diasporas nordiques · IXe-XIe siècles',
+      summary: 'Comprendre les modes de vie, les hiérarchies, les pratiques religieuses et la transformation progressive des sociétés scandinaves au contact du christianisme.',
+      lesson: {
+        sections: [
+          'La vie quotidienne de la majorité des habitants est organisée autour de la ferme, des saisons agricoles et des ressources locales. Les familles cultivent des céréales adaptées aux régions, élèvent des animaux, fabriquent ou réparent une partie de leurs outils et produisent des textiles. La pêche, la chasse et la collecte complètent les ressources selon les milieux. Les maisons longues accueillent des activités domestiques et parfois plusieurs fonctions sous un même toit. Les conditions de vie ne sont pas identiques partout : elles dépendent du climat, des ressources, du statut social et de la proximité des centres d’échange.',
+
+          'La société est hiérarchisée. Les grands propriétaires et les chefs disposent de ressources et de réseaux qui leur permettent d’exercer une influence politique. Les agriculteurs libres forment une composante essentielle de la société, tandis que l’esclavage existe également et touche des personnes capturées, vendues ou nées dans la dépendance. Les femmes peuvent gérer des activités domestiques et économiques et, dans certaines circonstances, des biens ou des exploitations ; leurs droits et leurs possibilités restent toutefois encadrés par les normes sociales et juridiques de leur époque. Il faut éviter de projeter sur ces sociétés des catégories contemporaines sans précaution.',
+
+          'Les croyances préchrétiennes nordiques comprennent des divinités telles qu’Odin, Thor et Freyja, ainsi que des récits sur les mondes divins, les êtres surnaturels et le destin. Les pratiques religieuses ne sont pas uniformes et varient selon les communautés. Les sacrifices, les fêtes, les rites domestiques et les pratiques funéraires occupent une place dans la vie sociale. Une partie importante de ce que l’on connaît des mythes provient de textes mis par écrit après l’époque viking, notamment dans un contexte chrétien. Les archéologues étudient aussi les objets rituels, les sépultures et les lieux de culte pour confronter ces récits aux traces matérielles.',
+
+          'La christianisation est un processus progressif, inégal selon les régions et les générations. Des missionnaires circulent en Scandinavie dès les VIIIe et IXe siècles, tandis que les échanges avec les royaumes chrétiens exposent les Scandinaves à de nouvelles pratiques. Des souverains soutiennent le christianisme pour des raisons religieuses, diplomatiques et politiques. Les traditions anciennes ne disparaissent pas partout au même moment : des symboles et des usages coexistent, et certaines sépultures témoignent de transitions complexes. Il est donc plus exact de parler de conversions successives que d’un basculement unique et instantané.'
+        ],
+        example: {
+          statement: 'Deux sépultures de la période montrent, l’une, des pratiques funéraires anciennes et, l’autre, des signes chrétiens. Peut-on en conclure que toute la Scandinavie s’est convertie à la même date ?',
+          calculation: 'Une découverte archéologique renseigne d’abord sur un individu, une communauté et un contexte local. Pour établir une évolution régionale, il faut comparer de nombreux sites et des sources de différentes natures.',
+          answer: 'Non. La christianisation varie selon les régions et les périodes. Des pratiques anciennes et chrétiennes ont pu coexister pendant une phase de transition.'
+        },
+        exercise: {
+          question: 'Pourquoi les textes mythologiques nordiques doivent-ils être utilisés avec prudence pour reconstituer les croyances de l’époque viking ?',
+          answer: 'Parce que plusieurs textes essentiels ont été rédigés ou compilés après l’époque viking, dans un contexte chrétien. Ils transmettent des traditions plus anciennes, mais leur rédaction peut influencer la manière dont les croyances sont présentées.'
+        },
+        exercises: [
+          {
+            question: 'Quelle forme d’habitat rural est fréquemment associée aux fermes de l’époque viking ?',
+            answer: 'La maison longue, généralement accompagnée de bâtiments annexes.'
+          },
+          {
+            question: 'Citez trois divinités de la religion nordique préchrétienne.',
+            answer: 'Odin, Thor et Freyja.'
+          },
+          {
+            question: 'La christianisation de la Scandinavie s’est-elle produite partout simultanément ?',
+            answer: 'Non. Elle s’est déroulée progressivement, avec des rythmes différents selon les régions et les communautés.'
+          }
+        ],
+        sources: [
+          { title: 'National Museum of Denmark — The people of the Viking Age', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/the-people/' },
+          { title: 'National Museum of Denmark — Social order in the Viking Age', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/power-and-aristocracy/social-order-in-the-viking-age/' },
+          { title: 'National Museum of Denmark — Religion, magic, death and rituals', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/religion-magic-death-and-rituals/' },
+          { title: 'National Museum of Denmark — The old religion', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/religion-magic-death-and-rituals/the-old-religion/' },
+          { title: 'Swedish History Museum — When Scandinavia became Christian', url: 'https://historiska.se/en/explore-history/history-hub/when-scandinavia-became-christian/' },
+          { title: 'National Museum of Denmark — Christianity comes to Denmark', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/religion-magic-death-and-rituals/christianity-comes-to-denmark/' }
+        ]
+      }
+    },
+
+    {
+      id: 'royaumes-scandinaves-fin-age-viking',
+      title: 'La formation des royaumes scandinaves et la fin de l’âge viking',
+      field: 'Danemark, Norvège, Suède et Angleterre · Xe-XIe siècles',
+      summary: 'Étudier la consolidation des pouvoirs royaux, les grandes dynasties, l’intégration croissante au monde chrétien et les repères conventionnels de la fin de l’âge viking.',
+      lesson: {
+        sections: [
+          'À partir du Xe siècle, plusieurs pouvoirs scandinaves renforcent leur autorité et contribuent à la formation de royaumes plus structurés. Ce processus est progressif et conflictuel : les souverains doivent composer avec les chefs locaux, les élites régionales et les assemblées. Les fortifications, les centres commerciaux, les monnaies et les inscriptions runiques témoignent de transformations politiques et économiques. Au Danemark, la pierre runique de Jelling associée à Harald à la Dent bleue est un document majeur : elle exprime les ambitions royales et associe le pouvoir du souverain à la christianisation du royaume.',
+
+          'Les dynasties scandinaves interviennent de plus en plus dans les affaires des royaumes voisins. En Angleterre, les conquêtes de Sven à la Barbe fourchue aboutissent à sa reconnaissance comme roi en 1013. Son fils Knut, appelé Cnut ou Canut le Grand, gouverne ensuite l’Angleterre et le Danemark, et exerce aussi son autorité sur la Norvège pendant une partie de son règne. Cet ensemble de territoires autour de la mer du Nord est parfois désigné comme un empire de la mer du Nord. Il dépend cependant de rapports politiques et dynastiques qui ne restent pas durablement unifiés après la mort de Knut en 1035.',
+
+          'L’année 1066 est un repère important pour l’histoire de l’Angleterre et de la Norvège. Harald Hardrada, roi de Norvège, participe à une invasion de l’Angleterre et meurt lors de la bataille de Stamford Bridge, le 25 septembre 1066, face à l’armée du roi Harold Godwinson. Cet événement est souvent présenté comme la fin conventionnelle de l’âge viking en Angleterre. Il ne signifie pas que les échanges, les traditions ou les navigations scandinaves cessent immédiatement. Les transformations politiques et culturelles se poursuivent au-delà de cette date.',
+
+          'La fin de l’âge viking ne correspond pas à une disparition soudaine des Scandinaves ni de leur influence. La consolidation des monarchies, la christianisation, l’évolution des structures commerciales et l’intégration aux réseaux politiques européens modifient progressivement les sociétés nordiques. Les limites chronologiques proposées par les historiens varient : certaines synthèses retiennent environ 800-1050, tandis que d’autres prolongent la période jusqu’à 1066 ou au-delà selon les régions et les critères employés. Il est donc préférable de comprendre cette fin comme une transition de longue durée plutôt que comme un événement unique.'
+        ],
+        example: {
+          statement: 'Une frise historique présente 793 comme repère de début et 1066 comme repère conventionnel de fin de l’âge viking. Comment faut-il interpréter ces deux dates ?',
+          calculation: '793 correspond au raid documenté de Lindisfarne et 1066 à la mort de Harald Hardrada à Stamford Bridge. Ces événements servent de repères historiographiques, mais ne décrivent pas à eux seuls toutes les transformations des sociétés scandinaves.',
+          answer: 'Ce sont des jalons conventionnels utiles pour organiser une chronologie. L’expansion et les transformations scandinaves commencent avant 793 dans certains domaines et se poursuivent après 1066.'
+        },
+        exercise: {
+          question: 'Pourquoi la mort de Harald Hardrada en 1066 ne signifie-t-elle pas que toutes les influences vikings disparaissent cette année-là ?',
+          answer: 'Parce que 1066 marque surtout un événement militaire et politique majeur en Angleterre. Les sociétés scandinaves, leurs échanges, leurs traditions et leurs transformations politiques continuent au-delà.'
+        },
+        exercises: [
+          {
+            question: 'Quel souverain danois est associé à la pierre runique de Jelling et à la christianisation du royaume ?',
+            answer: 'Harald à la Dent bleue, également appelé Harald Bluetooth.'
+          },
+          {
+            question: 'Quels territoires principaux Knut le Grand a-t-il réunis sous son autorité à différentes périodes ?',
+            answer: 'L’Angleterre, le Danemark et la Norvège, avec une autorité exercée sur ces royaumes à des moments de son règne.'
+          },
+          {
+            question: 'Quel événement de 1066 est souvent retenu comme repère de fin de l’âge viking en Angleterre ?',
+            answer: 'La bataille de Stamford Bridge, le 25 septembre 1066, au cours de laquelle Harald Hardrada est tué.'
+          }
+        ],
+        sources: [
+          { title: 'World History Encyclopedia — Vikings', url: 'https://www.worldhistory.org/Vikings/' },
+          { title: 'World History Encyclopedia — Vikings Timeline', url: 'https://www.worldhistory.org/timeline/Vikings/' },
+          { title: 'National Museum of Denmark — The Viking Age', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/' },
+          { title: 'National Museum of Denmark — How big was Denmark in the Viking period?', url: 'https://en.natmus.dk/historical-knowledge/denmark/prehistoric-period-until-1050-ad/the-viking-age/power-and-aristocracy/how-big-was-denmark-in-the-viking-period/' },
+          { title: 'The Historical Association — The Vikings in Britain: a brief history', url: 'https://www.history.org.uk/primary/resource/3867/the-vikings-in-britain-a-brief-history' }
+        ]
+      }
+    }
+  ]
+},
 
 
 ]
