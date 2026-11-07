@@ -1,8 +1,8 @@
 window.courseCatalog = [
 {
-  id: 'grands-cineastes-francais',
+  id: 'cineastes-francais',
   sortYear: 1902,
-  title: 'Les grands cinéastes français',
+  title: 'Les cinéastes français',
   note: 'Parcours chronologique consacré aux cinéastes français majeurs. Chaque chapitre présente un parcours, des œuvres importantes, une analyse de leur langage cinématographique et des exercices.',
   chapters: [
     {
@@ -265,9 +265,9 @@ window.courseCatalog = [
 
 
 {
-  id: 'grands-cineastes-americains',
+  id: 'cineastes-americains',
   sortYear: 1902,
-  title: 'Les grands cinéastes américains',
+  title: 'Les cinéastes américains',
 note: 'Parcours chronologique consacré aux cinéastes américains majeurs. Chaque chapitre présente un parcours, des œuvres importantes, une analyse de leur langage cinématographique et des exercices.',
   chapters: [
     {
@@ -550,8 +550,8 @@ note: 'Parcours chronologique consacré aux cinéastes américains majeurs. Chaq
 },
 
 {
-  id: 'grands-cineastes-italiens',
-  title: 'Les grands cinéastes italiens',
+  id: 'cineastes-italiens',
+  title: 'Les cinéastes italiens',
   note: 'Parcours chronologique consacré aux cinéastes italiens majeurs. Chaque chapitre présente un parcours, des œuvres importantes, une analyse de leur langage cinématographique et des exercices.',
 
   chapters: [
@@ -809,8 +809,8 @@ note: 'Parcours chronologique consacré aux cinéastes américains majeurs. Chaq
 },
 
 {
-  id: 'grands-cineastes-anglais',
-  title: 'Les grands cinéastes anglais',
+  id: 'cineastes-anglais',
+  title: 'Les cinéastes anglais',
   note: 'Six chapitres retraçant des étapes majeures de la création cinématographique en Angleterre, des pionniers du cinéma muet aux réalisateurs contemporains. La sélection privilégie les cinéastes nés en Angleterre ; elle n’est pas exhaustive. Le cinéma britannique est plus vaste que le seul cinéma anglais, et plusieurs œuvres étudiées sont le résultat de collaborations internationales.',
   chapters: [
     {
@@ -1275,7 +1275,7 @@ note: 'Parcours chronologique consacré aux cinéastes américains majeurs. Chaq
             answer: 'Le Technicolor trichrome.'
           },
           {
-            question: 'Quelles activités les grands studios hollywoodiens pouvaient-ils contrôler simultanément ?',
+            question: 'Quelles activités Les studios hollywoodiens pouvaient-ils contrôler simultanément ?',
             answer: 'La production, la distribution et, pour certains, l’exploitation des salles de cinéma.'
           }
         ],
@@ -1544,5 +1544,584 @@ note: 'Parcours chronologique consacré aux cinéastes américains majeurs. Chaq
 },
 
 
+{
+  id: 'oeuvres-cinema',
+  title: 'Les chefs-d’œuvre du cinéma',
+  note: 'Sélection internationale de douze films majeurs, organisée par pays puis par année de sortie. Le choix est représentatif et non exhaustif : la notion de chef-d’œuvre reste discutée et dépend des traditions critiques, des contextes culturels et de l’histoire des restaurations. Les années indiquées sont celles de la première sortie généralement retenue pour chaque film.',
+  chapters: [
+    {
+      id: 'france-voyage-dans-la-lune-1902',
+      title: 'Le Voyage dans la Lune',
+      field: 'France · 1902 · Georges Méliès · Cinéma des premiers temps et science-fiction',
+      summary: 'Étudier comment Georges Méliès transforme le cinématographe en un spectacle de fiction fondé sur les trucages, les décors construits et l’imaginaire du voyage extraordinaire.',
+      lesson: {
+        sections: [
+          'Réalisé par Georges Méliès et produit par sa société Star-Film, Le Voyage dans la Lune est un film français de 1902 inspiré notamment de De la Terre à la Lune de Jules Verne et de The First Men in the Moon de H. G. Wells. Des astronomes construisent un projectile lancé vers la Lune, explorent un monde peuplé de Sélénites puis reviennent sur Terre. Le récit ne cherche pas le réalisme scientifique : il organise une succession de tableaux spectaculaires, comiques et merveilleux. Sa durée varie selon les copies et les versions conservées ; il faut donc éviter de présenter une durée unique comme absolument valable pour toutes les éditions.',
+          'Méliès mobilise des procédés issus de la scène et de la prestidigitation : décors peints, costumes, changements de tableaux, substitutions à l’arrêt de la caméra et surimpressions. Ces trucages ne sont pas de simples ornements : ils constituent le moteur narratif du film. Le montage assemble des scènes conçues comme des numéros visuels autonomes, tandis que la frontalité de nombreux plans rappelle la disposition d’un public face à une scène de théâtre. Le film témoigne ainsi d’une voie du cinéma des premiers temps distincte de l’enregistrement documentaire associé aux vues Lumière.',
+          'L’image de la capsule fichée dans l’œil de la Lune est devenue l’un des emblèmes les plus connus de l’histoire du cinéma. L’importance du film tient à la synthèse précoce entre récit fantastique, effets spéciaux et spectacle cinématographique. Il ne faut toutefois pas le qualifier de premier film de science-fiction sans nuance : des films antérieurs abordaient déjà des sujets scientifiques ou fantastiques, et la définition du genre dépend des critères retenus. Son influence se mesure surtout à la démonstration de ce que le cinéma pouvait inventer au-delà de la simple reproduction du réel.'
+        ],
+        example: {
+          statement: 'Pourquoi Le Voyage dans la Lune est-il souvent étudié comme une étape importante dans l’histoire des effets spéciaux ?',
+          calculation: 'On distingue les procédés de trucage visibles dans la mise en scène : substitution par arrêt de caméra, surimpression, décors peints et changements de tableaux. On examine ensuite leur fonction dans le récit.',
+          answer: 'Parce que les trucages produisent directement les événements imaginaires du film. Ils permettent de faire apparaître, disparaître et transformer les éléments à l’image, et deviennent un moyen central de raconter une aventure fantastique.'
+        },
+        exercise: {
+          question: 'En quoi la mise en scène de Méliès diffère-t-elle d’une simple prise de vues documentaire ?',
+          answer: 'Elle construit un univers fictif au moyen de décors, d’interprètes, de trucages et d’une succession de tableaux organisés pour produire un récit spectaculaire.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Le Voyage dans la Lune ?',
+            answer: 'Georges Méliès.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1902.'
+          },
+          {
+            question: 'Cite deux procédés visuels employés par Méliès.',
+            answer: 'Par exemple, l’arrêt de caméra permettant une substitution et la surimpression.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Cinémathèque française — Le Voyage dans la Lune',
+            url: 'https://www.cinematheque.fr/film/52565.html'
+          },
+          {
+            title: 'Cinémathèque française — Georges Méliès',
+            url: 'https://www.cinematheque.fr/exposition/georges-melies.html'
+          },
+          {
+            title: 'Cinémathèque française — Séance Georges Méliès : La Nuit inventée',
+            url: 'https://www.cinematheque.fr/intervention/2391.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'france-quatre-cents-coups-1959',
+      title: 'Les Quatre Cents Coups',
+      field: 'France · 1959 · François Truffaut · Nouvelle Vague',
+      summary: 'Comprendre le récit d’apprentissage d’Antoine Doinel, la dimension autobiographique du film et sa contribution au renouvellement du cinéma français.',
+      lesson: {
+        sections: [
+          'Premier long métrage de François Truffaut, Les Quatre Cents Coups suit Antoine Doinel, adolescent parisien en difficulté avec l’école et sa famille. Le film s’inspire de certains éléments de l’enfance du réalisateur, sans être une autobiographie documentaire : Antoine est un personnage de fiction construit à partir d’expériences, de souvenirs et d’observations. Le récit décrit les incompréhensions entre l’enfant et les adultes, les institutions éducatives et judiciaires, ainsi que le désir d’échapper à un environnement vécu comme contraignant.',
+          'Le film s’inscrit dans la Nouvelle Vague, mouvement qui remet en question certaines habitudes de production et de mise en scène du cinéma français d’après-guerre. Le tournage en décors réels, l’attention portée aux rues de Paris, la mobilité de la caméra et le jeu naturel des interprètes contribuent à une impression de proximité avec les personnages. Ces choix ne signifient pas que le film serait improvisé : son écriture, son découpage et sa direction d’acteurs organisent précisément les effets de spontanéité.',
+          'La dernière séquence, qui conduit Antoine vers la mer et se termine par un arrêt sur son visage, laisse son avenir ouvert. Le plan fixe final ne donne pas de résolution psychologique simple ; il place le spectateur devant une question plutôt que devant une conclusion explicative. Le film associe ainsi une observation sociale concrète à une forme de récit personnel. Sa réception et sa place dans la Nouvelle Vague ont contribué à faire connaître Truffaut comme cinéaste, mais aussi comme figure d’une génération issue de la critique cinématographique.'
+        ],
+        example: {
+          statement: 'Comment la dernière image des Quatre Cents Coups modifie-t-elle la manière de comprendre la fin du récit ?',
+          calculation: 'On observe la situation narrative d’Antoine, puis on distingue ce que l’image montre effectivement de ce qu’elle laisse sans réponse : son avenir, sa liberté et son rapport aux adultes.',
+          answer: 'Le plan final suspend la résolution. Le spectateur voit Antoine face à la mer, mais ne sait pas ce qu’il fera ensuite. Cette ouverture transforme la fin en interrogation sur l’avenir du personnage.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il éviter de qualifier le film d’autobiographie intégrale ?',
+          answer: 'Parce qu’il s’agit d’une œuvre de fiction qui transforme des éléments de l’expérience de Truffaut en personnages, situations et choix narratifs.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Les Quatre Cents Coups ?',
+            answer: 'François Truffaut.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1959.'
+          },
+          {
+            question: 'À quel mouvement cinématographique est-il étroitement associé ?',
+            answer: 'À la Nouvelle Vague française.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Criterion Collection — The 400 Blows',
+            url: 'https://www.criterion.com/films/151-the-400-blows'
+          },
+          {
+            title: 'The Criterion Collection — The 400 Blows: Close to Home, Annette Insdorf',
+            url: 'https://www.criterion.com/current/posts/528'
+          },
+          {
+            title: 'The Criterion Collection — The Face of the French Cinema Has Changed',
+            url: 'https://www.criterion.com/current/posts/1111'
+          }
+        ]
+      }
+    },
+    {
+      id: 'allemagne-cabinet-caligari-1920',
+      title: 'Le Cabinet du docteur Caligari',
+      field: 'Allemagne · 1920 · Robert Wiene · Expressionnisme allemand',
+      summary: 'Analyser l’esthétique expressionniste, les décors déformés et le récit à cadre qui font du film un jalon du cinéma muet allemand.',
+      lesson: {
+        sections: [
+          'Présenté à Berlin en février 1920, Le Cabinet du docteur Caligari est réalisé par Robert Wiene. Le récit est construit autour du témoignage de Francis, qui raconte sa rencontre avec le docteur Caligari et Cesare, un somnambule exhibé dans une fête foraine. Les événements prennent progressivement une dimension inquiétante, puis le dénouement oblige à réexaminer le statut du narrateur et la signification de ce qui a été montré. Cette structure narrative à cadre est essentielle : elle rend incertaine la frontière entre perception, mémoire et réalité.',
+          'Le film est célèbre pour ses décors peints et volontairement déformés, conçus notamment par Hermann Warm, Walter Reimann et Walter Röhrig. Les rues obliques, les perspectives impossibles, les ombres dessinées et les lignes brisées traduisent visuellement un monde instable. Plutôt que de chercher une reproduction naturaliste des lieux, la mise en scène donne une forme plastique aux tensions psychologiques du récit. Cette esthétique est devenue l’un des repères majeurs de l’expressionnisme allemand au cinéma.',
+          'Le film a souvent été interprété comme une allégorie de l’autorité et de la société allemande après la Première Guerre mondiale, notamment à la suite des analyses de Siegfried Kracauer. Cette lecture a marqué l’historiographie, mais elle ne doit pas être présentée comme l’unique sens certain de l’œuvre : les interprétations du cadre narratif et de ses implications restent discutées. Son influence se retrouve dans le cinéma fantastique, l’horreur et le film noir, en particulier dans l’usage expressif des décors, des ombres et des compositions visuelles.'
+        ],
+        example: {
+          statement: 'Quel effet produit le contraste entre les décors déformés et les décors réalistes ?',
+          calculation: 'On compare la géométrie des décors, l’orientation des lignes et la fonction dramatique de l’espace dans les scènes principales.',
+          answer: 'Les décors déformés rendent visible l’instabilité psychologique et narrative. L’espace ne sert pas seulement de lieu d’action : il participe à l’expression de l’angoisse et de l’incertitude.'
+        },
+        exercise: {
+          question: 'Pourquoi les décors du Cabinet du docteur Caligari sont-ils qualifiés d’expressionnistes ?',
+          answer: 'Parce qu’ils déforment volontairement les formes et les perspectives afin d’exprimer une atmosphère mentale et émotionnelle plutôt que de représenter fidèlement un espace réel.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise le film ?',
+            answer: 'Robert Wiene.'
+          },
+          {
+            question: 'En quelle année est-il présenté ?',
+            answer: 'En 1920.'
+          },
+          {
+            question: 'Cite deux caractéristiques visuelles de son esthétique.',
+            answer: 'Les perspectives obliques et les ombres peintes, par exemple.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — 100 years of The Cabinet of Dr. Caligari',
+            url: 'https://www.bfi.org.uk/features/100-years-cabinet-dr-caligari'
+          },
+          {
+            title: 'BFI — 10 great European horror films',
+            url: 'https://www.bfi.org.uk/lists/10-great-european-horror-films'
+          },
+          {
+            title: 'BFI — 10 great silent horror films',
+            url: 'https://www.bfi.org.uk/lists/10-great-silent-horror-films'
+          }
+        ]
+      }
+    },
+    {
+      id: 'allemagne-metropolis-1927',
+      title: 'Metropolis',
+      field: 'Allemagne · 1927 · Fritz Lang · Science-fiction et expressionnisme',
+      summary: 'Étudier la représentation de la ville industrielle, la division sociale et les innovations visuelles du grand cinéma muet allemand.',
+      lesson: {
+        sections: [
+          'Réalisé par Fritz Lang et écrit avec Thea von Harbou, Metropolis imagine une ville futuriste organisée selon une séparation radicale : les élites vivent dans les espaces élevés et lumineux tandis que les ouvriers travaillent dans les profondeurs. Freder, fils du maître de la cité, découvre les conditions de travail des ouvriers et rencontre Maria, qui appelle à la réconciliation. Le savant Rotwang construit un être artificiel à l’apparence de Maria, utilisé pour semer le désordre. Le film articule ainsi mélodrame, spectacle futuriste et réflexion sur l’organisation industrielle.',
+          'La puissance visuelle du film repose sur des décors monumentaux, des maquettes, des foules chorégraphiées et des effets optiques. Le procédé Schüfftan permet notamment de combiner des éléments miniatures et des acteurs dans une même image, donnant une impression d’architecture gigantesque. Les mouvements répétitifs des ouvriers évoquent la mécanisation des corps, tandis que les contrastes entre les niveaux de la ville matérialisent les inégalités sociales. Le film prolonge certains traits de l’expressionnisme allemand tout en développant une esthétique urbaine et futuriste.',
+          'Metropolis a durablement influencé la représentation cinématographique des mégapoles, des robots et des sociétés dystopiques. Son histoire de conservation est complexe : la version originale a été amputée après sa première exploitation, et des fragments importants ont été retrouvés en Argentine en 2008. Les versions aujourd’hui accessibles résultent de travaux de restauration successifs ; leur durée peut donc varier. Il faut également distinguer la force de ses images de ses ambiguïtés politiques : le dénouement propose une médiation entre direction et travail, solution souvent discutée par les historiens et les critiques.'
+        ],
+        example: {
+          statement: 'Comment l’organisation verticale de Metropolis traduit-elle les rapports sociaux ?',
+          calculation: 'On associe les espaces élevés aux lieux de pouvoir et de loisirs, puis les espaces souterrains aux lieux de production et de travail.',
+          answer: 'La verticalité rend visible la hiérarchie sociale : les groupes dominants occupent les hauteurs, tandis que les travailleurs sont relégués sous la ville et au service de son fonctionnement.'
+        },
+        exercise: {
+          question: 'Pourquoi Metropolis est-il considéré comme une œuvre majeure de la science-fiction cinématographique ?',
+          answer: 'Parce qu’il associe une vision futuriste de la ville, une réflexion sur la technique et les classes sociales, ainsi que des effets visuels et des décors qui ont durablement influencé le genre.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Metropolis ?',
+            answer: 'Fritz Lang.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1927.'
+          },
+          {
+            question: 'Quel procédé est associé à la création de certains décors gigantesques ?',
+            answer: 'Le procédé Schüfftan, qui combine miroirs, maquettes et prises de vues avec les acteurs.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — Metropolis (1927)',
+            url: 'https://www.bfi.org.uk/film/bda6ff8a-ed7e-5942-980d-c2910c0120ec/metropolis'
+          },
+          {
+            title: 'BFI Player — Metropolis',
+            url: 'https://player.bfi.org.uk/subscription/film/watch-metropolis-1927-online'
+          },
+          {
+            title: 'BFI — Metropolis at 90',
+            url: 'https://www.bfi.org.uk/features/metropolis-fritz-lang-silent-sci-fi'
+          }
+        ]
+      }
+    },
+    {
+      id: 'allemagne-m-1931',
+      title: 'M le maudit',
+      field: 'Allemagne · 1931 · Fritz Lang · Débuts du cinéma parlant',
+      summary: 'Comprendre l’usage dramaturgique du son, la représentation de la peur collective et les ambiguïtés de la justice dans le premier film parlant de Fritz Lang.',
+      lesson: {
+        sections: [
+          'M, connu en français sous le titre M le maudit, est réalisé par Fritz Lang et sort en 1931. À Berlin, une série de crimes visant des enfants provoque une inquiétude collective. La police intensifie ses recherches, ce qui perturbe les activités du milieu criminel ; celui-ci organise alors sa propre traque. Le film ne se limite pas à la poursuite d’un coupable : il observe plusieurs groupes sociaux, leurs intérêts et leurs réactions face à la peur. Peter Lorre interprète Hans Beckert, personnage dont le film montre à la fois la responsabilité criminelle et la détresse psychologique.',
+          'M est le premier film parlant de Fritz Lang. Le son y est traité comme un élément de mise en scène à part entière, et non comme un simple accompagnement des images. Le sifflement associé à Beckert permet de signaler sa présence avant même que le personnage soit visible. Les silences, les bruits hors champ et les dialogues construisent une géographie sonore de la ville. Lang organise ainsi l’information du spectateur par ce qui est entendu autant que par ce qui est montré, démontrant les possibilités expressives du cinéma sonore naissant.',
+          'La dernière partie met en scène un tribunal improvisé par les criminels, qui prétendent juger Beckert. Cette situation confronte la justice institutionnelle, la vengeance collective et la responsabilité individuelle. Le film ne transforme pas la foule en autorité légitime : il expose au contraire les dangers d’une justice sans garanties. Son montage parallèle, ses cadrages et son usage du hors-champ ont contribué à son statut de référence du thriller et du cinéma policier. Il est souvent étudié comme une œuvre majeure de la transition entre cinéma muet et cinéma parlant.'
+        ],
+        example: {
+          statement: 'Quel rôle joue le sifflement dans la construction du suspense ?',
+          calculation: 'On repère les moments où le son apparaît avant l’image du personnage, puis on examine les informations qu’il transmet au public.',
+          answer: 'Le sifflement devient un indice sonore qui annonce ou rappelle la présence de Beckert. Il permet au son de préparer l’image et d’organiser l’attente du spectateur.'
+        },
+        exercise: {
+          question: 'En quoi M exploite-t-il les possibilités du cinéma parlant ?',
+          answer: 'Le film utilise le sifflement, les bruits hors champ, les silences et les dialogues pour construire le suspense et transmettre des informations que l’image seule ne donne pas.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise M ?',
+            answer: 'Fritz Lang.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1931.'
+          },
+          {
+            question: 'Quel élément sonore est associé au personnage de Hans Beckert ?',
+            answer: 'Un sifflement de la mélodie Dans l’antre du roi de la montagne, d’Edvard Grieg.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — M (1931)',
+            url: 'https://www.bfi.org.uk/film/77dfae8a-b9af-517e-97ca-257f6cb87849/m'
+          },
+          {
+            title: 'BFI — 10 great early sound films',
+            url: 'https://www.bfi.org.uk/lists/10-great-early-sound-films'
+          },
+          {
+            title: 'BFI — Fritz Lang: 10 essential films',
+            url: 'https://www.bfi.org.uk/lists/fritz-lang-10-essential-films'
+          }
+        ]
+      }
+    },
+    {
+      id: 'inde-pather-panchali-1955',
+      title: 'La Complainte du sentier (Pather Panchali)',
+      field: 'Inde · 1955 · Satyajit Ray · Cinéma bengali et réalisme poétique',
+      summary: 'Découvrir le premier volet de la trilogie d’Apu, son observation de la vie rurale bengalie et ses liens avec le néoréalisme italien.',
+      lesson: {
+        sections: [
+          'Premier long métrage de Satyajit Ray, Pather Panchali sort en 1955 et décrit plusieurs années de la vie d’une famille pauvre du Bengale rural. Apu grandit auprès de sa sœur Durga, de sa mère Sarbajaya, de son père Harihar et d’une parente âgée, Indir. Le film accorde une place importante aux gestes quotidiens, aux relations familiales, aux contraintes économiques et à la découverte du monde par les enfants. Il adapte le roman bengali de Bibhutibhushan Bandyopadhyay, publié en 1929.',
+          'Le style du film repose sur une observation attentive des lieux et des comportements. La photographie de Subrata Mitra accompagne les personnages dans les paysages, les maisons et les chemins du village. Le récit privilégie les détails concrets et les variations du quotidien plutôt que les rebondissements spectaculaires. La musique de Ravi Shankar contribue à l’organisation émotionnelle du film, sans remplacer l’attention portée aux sons et aux rythmes du monde représenté. La production, soutenue par le gouvernement du Bengale-Occidental, fut longue et menée avec des moyens limités.',
+          'Pather Panchali a fait connaître Ray au-delà de l’Inde, notamment après sa présentation à Cannes en 1956, où il reçut le prix du meilleur document humain. Son réalisme a souvent été rapproché du néoréalisme italien, rapprochement pertinent pour l’attention portée aux milieux populaires et aux lieux réels, mais qui ne doit pas effacer les traditions littéraires, musicales et culturelles bengalies propres au film. Il constitue le premier volet de la trilogie d’Apu, poursuivie par Aparajito et Apur Sansar.'
+        ],
+        example: {
+          statement: 'Pourquoi la description des gestes ordinaires est-elle essentielle dans Pather Panchali ?',
+          calculation: 'On relève les scènes consacrées aux tâches domestiques, aux déplacements, aux jeux et aux relations entre les membres de la famille, puis on observe leur place dans la progression du récit.',
+          answer: 'Ces scènes construisent le milieu social et affectif des personnages. Elles donnent au spectateur une compréhension progressive de leur quotidien, de leurs contraintes et de leurs liens.'
+        },
+        exercise: {
+          question: 'En quoi le film associe-t-il une approche réaliste à une dimension poétique ?',
+          answer: 'Il observe concrètement la vie d’une famille rurale tout en donnant une grande importance aux paysages, aux perceptions de l’enfance, au rythme des images et à la musique.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Pather Panchali ?',
+            answer: 'Satyajit Ray.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1955.'
+          },
+          {
+            question: 'Quel roman est à l’origine du film ?',
+            answer: 'Le roman Pather Panchali de Bibhutibhushan Bandyopadhyay.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Criterion Collection — Pather Panchali',
+            url: 'https://www.criterion.com/films/28021-pather-panchali'
+          }
+        ]
+      }
+    },
+    {
+      id: 'italie-voleur-bicyclette-1948',
+      title: 'Le Voleur de bicyclette (Ladri di biciclette)',
+      field: 'Italie · 1948 · Vittorio De Sica · Néoréalisme italien',
+      summary: 'Étudier la représentation du chômage et de la précarité dans la Rome d’après-guerre, ainsi que les choix esthétiques du néoréalisme.',
+      lesson: {
+        sections: [
+          'Réalisé par Vittorio De Sica en 1948, Le Voleur de bicyclette raconte l’histoire d’Antonio Ricci, qui obtient un emploi nécessitant une bicyclette. Dès son premier jour de travail, celle-ci est volée. Accompagné de son jeune fils Bruno, Antonio parcourt Rome pour tenter de la retrouver. La simplicité de cette intrigue permet au film d’examiner les conséquences concrètes du chômage, de la pauvreté et de l’insécurité matérielle dans l’Italie de l’après-guerre. La bicyclette représente à la fois un objet ordinaire et la condition économique de la survie familiale.',
+          'Le film est l’une des œuvres emblématiques du néoréalisme italien. Le tournage dans les rues de Rome, l’attention portée aux milieux populaires et le recours à des interprètes non professionnels dans les rôles principaux renforcent l’impression d’ancrage social. Le scénario de Cesare Zavattini et la mise en scène de De Sica ne se contentent pas d’enregistrer la réalité : ils construisent une progression dramatique à partir d’événements quotidiens, de rencontres et de déceptions. Le réalisme du film est donc un choix artistique élaboré, et non l’absence de mise en scène.',
+          'La relation entre Antonio et Bruno donne au récit sa profondeur morale. L’enfant observe les décisions de son père et devient le témoin de sa fragilité. Le film évite une résolution héroïque ou consolatrice et s’attache aux contradictions d’un individu soumis à une situation économique qui le dépasse. Sa renommée internationale a contribué à faire du néoréalisme une référence majeure pour les cinéastes d’après-guerre. Il demeure un exemple particulièrement étudié de la manière dont une histoire individuelle peut rendre lisibles des réalités sociales plus vastes.'
+        ],
+        example: {
+          statement: 'Comment la bicyclette devient-elle plus qu’un simple objet dans le récit ?',
+          calculation: 'On relie son rôle matériel dans l’emploi d’Antonio à ses conséquences sur les revenus et la vie de sa famille.',
+          answer: 'La bicyclette est l’outil indispensable au travail d’Antonio. Sa disparition menace donc directement son emploi et la stabilité économique de sa famille.'
+        },
+        exercise: {
+          question: 'Pourquoi Le Voleur de bicyclette est-il associé au néoréalisme italien ?',
+          answer: 'Parce qu’il représente les milieux populaires et les difficultés de l’après-guerre à travers des lieux réels, des interprètes non professionnels et une dramaturgie fondée sur des situations quotidiennes.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Le Voleur de bicyclette ?',
+            answer: 'Vittorio De Sica.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1948.'
+          },
+          {
+            question: 'Quel est le métier qu’Antonio vient d’obtenir au début du film ?',
+            answer: 'Il doit coller des affiches, travail pour lequel sa bicyclette est indispensable.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Criterion Collection — Bicycle Thieves',
+            url: 'https://www.criterion.com/films/210-bicycle-thieves'
+          },
+          {
+            title: 'BFI — 41 films every budding film student should watch',
+            url: 'https://www.bfi.org.uk/lists/top-your-watchlist-film-students'
+          }
+        ]
+      }
+    },
+    {
+      id: 'japon-rashomon-1950',
+      title: 'Rashōmon',
+      field: 'Japon · 1950 · Akira Kurosawa · Récit à points de vue multiples',
+      summary: 'Analyser la narration fragmentée, les témoignages contradictoires et la réflexion du film sur la vérité et la justice.',
+      lesson: {
+        sections: [
+          'Réalisé par Akira Kurosawa et sorti au Japon en 1950, Rashōmon présente une affaire criminelle racontée à travers plusieurs témoignages incompatibles. Un bûcheron, un moine et un homme réfugiés sous la porte Rashōmon évoquent les déclarations recueillies lors d’une enquête : celles d’un bandit, d’une femme, d’un samouraï mort parlant par l’intermédiaire d’un médium et du bûcheron lui-même. Chaque version modifie la compréhension des événements. Le spectateur ne reçoit donc pas un récit stable, mais une série de reconstructions subjectives.',
+          'La structure repose sur des retours en arrière qui ne servent pas simplement à compléter l’information. Ils exposent les contradictions entre les récits et rendent visible la manière dont les témoins organisent leur propre image. La photographie de Kazuo Miyagawa, les déplacements de caméra dans la forêt, les contrastes de lumière et le montage donnent une forte matérialité aux différentes versions. La forme du film fait ainsi éprouver une difficulté épistémologique : comment établir les faits lorsque les témoignages sont intéressés, partiels ou incompatibles ?',
+          'Rashōmon a obtenu le Lion d’or à la Mostra de Venise en 1951, puis contribué à la reconnaissance internationale du cinéma japonais. L’expression « effet Rashōmon » est ensuite devenue courante pour désigner une situation dans laquelle plusieurs personnes décrivent différemment un même événement. Il faut toutefois éviter de réduire le film à l’idée que toute vérité serait impossible : son récit interroge aussi la responsabilité morale, l’égoïsme et la possibilité d’un geste de compassion. Son influence est à la fois narrative, esthétique et critique.'
+        ],
+        example: {
+          statement: 'Pourquoi les récits successifs ne permettent-ils pas simplement de reconstituer une version définitive des faits ?',
+          calculation: 'On compare les détails, les motivations et la représentation de chaque protagoniste dans les témoignages successifs.',
+          answer: 'Les versions ne diffèrent pas seulement par des détails : elles reconstruisent les rôles et les motivations des personnages. Le spectateur doit donc interroger la fiabilité et les intérêts de chaque témoin.'
+        },
+        exercise: {
+          question: 'Que désigne l’expression « effet Rashōmon » ?',
+          answer: 'Une situation dans laquelle plusieurs personnes rapportent des versions différentes, parfois contradictoires, d’un même événement.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Rashōmon ?',
+            answer: 'Akira Kurosawa.'
+          },
+          {
+            question: 'En quelle année le film sort-il au Japon ?',
+            answer: 'En 1950.'
+          },
+          {
+            question: 'Quel prix international majeur reçoit-il à Venise en 1951 ?',
+            answer: 'Le Lion d’or de la Mostra de Venise.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Criterion Collection — Rashomon',
+            url: 'https://www.criterion.com/films/307-rashomon'
+          },
+          {
+            title: 'The Criterion Collection — Akira Kurosawa Restorations',
+            url: 'https://www.criterion.com/current/posts/8864-akira-kurosawa-restorations'
+          }
+        ]
+      }
+    },
+    {
+      id: 'japon-voyage-tokyo-1953',
+      title: 'Voyage à Tokyo (Tokyo monogatari)',
+      field: 'Japon · 1953 · Yasujirō Ozu · Drame familial',
+      summary: 'Comprendre le style d’Ozu, la transformation de la famille japonaise d’après-guerre et la portée des gestes ordinaires.',
+      lesson: {
+        sections: [
+          'Réalisé par Yasujirō Ozu et sorti en 1953, Voyage à Tokyo suit un couple âgé, Shūkichi et Tomi Hirayama, qui quitte sa ville pour rendre visite à ses enfants installés à Tokyo. Le voyage révèle progressivement la distance entre les générations. Les enfants sont absorbés par leurs activités et disposent de peu de temps pour leurs parents, tandis que leur belle-fille Noriko manifeste une attention particulière. Le film observe les tensions familiales sans désigner un personnage comme entièrement coupable ou vertueux.',
+          'Ozu développe une mise en scène immédiatement reconnaissable : caméra souvent placée à faible hauteur, plans relativement fixes, compositions géométriques et transitions entre les scènes par des plans de lieux ou d’objets. Le montage ne recherche pas systématiquement la continuité classique du champ-contrechamp. Les conversations et les gestes modestes acquièrent une grande importance, tandis que les ellipses laissent au spectateur le soin de comprendre les changements intervenus entre deux séquences. Cette forme calme ne signifie pas absence de tension ; elle rend perceptibles les évolutions affectives avec une grande économie de moyens.',
+          'Le film est aujourd’hui considéré comme l’un des sommets de l’œuvre d’Ozu et du cinéma mondial. Sa réception internationale s’est développée progressivement, notamment après des présentations et une diffusion plus large hors du Japon à partir des années 1950 et 1970. Voyage à Tokyo traite de la famille dans un Japon transformé par l’urbanisation et l’après-guerre, mais sa portée dépasse ce contexte : le vieillissement, la séparation et les obligations familiales sont abordés sans emphase mélodramatique. Sa puissance vient précisément de l’attention portée aux changements presque imperceptibles.'
+        ],
+        example: {
+          statement: 'Comment les ellipses contribuent-elles à la tonalité du film ?',
+          calculation: 'On repère les événements qui ne sont pas montrés directement, puis on observe comment les plans suivants permettent d’en comprendre les conséquences.',
+          answer: 'Les ellipses évitent de dramatiser chaque événement. Elles invitent le spectateur à reconstruire les changements dans les relations et renforcent la sensation du temps qui passe.'
+        },
+        exercise: {
+          question: 'Pourquoi la mise en scène de Voyage à Tokyo peut-elle être qualifiée d’épurée ?',
+          answer: 'Elle privilégie les plans fixes, les compositions sobres, les ellipses et les gestes quotidiens plutôt que les mouvements de caméra ou les effets dramatiques démonstratifs.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Voyage à Tokyo ?',
+            answer: 'Yasujirō Ozu.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1953.'
+          },
+          {
+            question: 'Quel thème familial est au cœur du récit ?',
+            answer: 'La distance entre générations et la transformation des relations entre parents âgés et enfants adultes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Criterion Collection — Tokyo Story',
+            url: 'https://www.criterion.com/films/284-tokyo-story'
+          },
+          {
+            title: 'The Criterion Collection — Tokyo Story: Compassionate Detachment, David Bordwell',
+            url: 'https://www.criterion.com/current/posts/301-tokyo-story'
+          }
+        ]
+      }
+    },
+    {
+      id: 'japon-sept-samourais-1954',
+      title: 'Les Sept Samouraïs (Shichinin no samurai)',
+      field: 'Japon · 1954 · Akira Kurosawa · Film de samouraïs et récit collectif',
+      summary: 'Étudier la construction d’un récit choral, la représentation des rapports entre paysans et guerriers et l’influence du film sur le cinéma d’action.',
+      lesson: {
+        sections: [
+          'Réalisé par Akira Kurosawa et sorti en 1954, Les Sept Samouraïs se déroule dans le Japon du XVIe siècle. Un village de paysans, menacé par des bandits, décide de recruter des samouraïs pour le défendre. Le récit suit la recherche des combattants, la préparation du village et l’affrontement final. La situation permet au film de confronter des groupes sociaux dont les intérêts, les expériences et les valeurs ne coïncident pas toujours. Les personnages ne sont pas présentés comme des héros uniformes : leurs tempéraments et leurs motivations diffèrent.',
+          'Le film se distingue par la construction progressive de son groupe de protagonistes. Chaque samouraï possède une fonction dramatique et un caractère identifiable, tandis que les habitants du village deviennent eux aussi des personnages à part entière. Kurosawa organise les scènes d’action à l’aide du montage, de la profondeur de champ, des mouvements de caméra et d’une géographie précise des lieux. La pluie, la boue et la durée des affrontements donnent aux combats une matérialité inhabituelle pour le cinéma d’aventure de l’époque. La narration alterne préparation, observation des personnages et séquences de tension collective.',
+          'Par sa durée, son ampleur et son équilibre entre action et étude humaine, Les Sept Samouraïs est devenu une référence du film épique. Son influence est particulièrement visible dans les récits où un groupe de spécialistes ou de héros se rassemble pour protéger une communauté, schéma repris dans de nombreux films ultérieurs. Le film ne doit cependant pas être réduit à un simple modèle d’action : il examine aussi les hiérarchies, les différences de classe et le coût humain de la violence. Sa conclusion souligne la séparation entre les survivants paysans et les guerriers qui ont participé à leur défense.'
+        ],
+        example: {
+          statement: 'Pourquoi le film consacre-t-il autant de temps au recrutement et à la préparation avant les affrontements ?',
+          calculation: 'On distingue les séquences de présentation des personnages, d’organisation du village et de combat, puis on observe leur interdépendance.',
+          answer: 'La préparation construit les relations et les enjeux collectifs. Les combats prennent ainsi un sens dramatique parce que le spectateur connaît les habitants, les samouraïs et les risques auxquels ils sont exposés.'
+        },
+        exercise: {
+          question: 'En quoi Les Sept Samouraïs est-il un récit collectif plutôt que le parcours d’un héros unique ?',
+          answer: 'L’intrigue repose sur les relations entre plusieurs samouraïs et les villageois. Les décisions, les compétences et les destins des personnages contribuent ensemble à l’issue du récit.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Les Sept Samouraïs ?',
+            answer: 'Akira Kurosawa.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1954.'
+          },
+          {
+            question: 'Quelle communauté demande l’aide des samouraïs ?',
+            answer: 'Un village de paysans menacé par des bandits.'
+          }
+        ],
+        sources: [
+          {
+            title: 'The Criterion Collection — Seven Samurai',
+            url: 'https://www.criterion.com/films/165-seven-samurai'
+          },
+          {
+            title: 'The Criterion Collection — Akira Kurosawa Restorations',
+            url: 'https://www.criterion.com/current/posts/8864-akira-kurosawa-restorations'
+          }
+        ]
+      }
+    },
+    {
+      id: 'urss-cuirasse-potemkine-1925',
+      title: 'Le Cuirassé Potemkine (Bronenosets Potemkin)',
+      field: 'URSS · 1925 · Sergueï Eisenstein · Montage soviétique',
+      summary: 'Analyser le montage des attractions, la représentation collective de la révolte et la puissance expressive de la séquence des marches d’Odessa.',
+      lesson: {
+        sections: [
+          'Réalisé par Sergueï Eisenstein et sorti en 1925, Le Cuirassé Potemkine s’inspire de la mutinerie de 1905 à bord du cuirassé Potemkine, dans le contexte de la révolution russe de 1905. Le film est organisé en cinq parties qui conduisent de la contestation des marins à la solidarité d’une partie de la population, puis à la confrontation avec les forces militaires. Il ne s’agit pas d’une reconstitution documentaire neutre : l’événement historique est réorganisé dans une œuvre de fiction à visée politique et artistique.',
+          'Eisenstein fait du montage un principe central de construction du sens. La juxtaposition de plans courts, les variations de rythme, les contrastes d’échelle et les associations visuelles orientent la perception du spectateur. La séquence des marches d’Odessa est particulièrement célèbre : elle ne reproduit pas simplement un événement dans une continuité réaliste, mais construit une expérience de choc et de tension par l’alternance des regards, des mouvements de foule et des détails. Le montage donne ainsi une forme dramatique à une expérience collective.',
+          'Le film est devenu l’une des références majeures du montage soviétique et de l’histoire du cinéma muet. Son importance est autant formelle que politique : il montre comment le cinéma peut organiser des images pour susciter une réaction intellectuelle et émotionnelle. Cette puissance persuasive invite aussi à analyser la relation entre esthétique et propagande. Le film a été censuré dans plusieurs pays et abondamment cité, parodié ou réinterprété. Sa place dans l’histoire du cinéma tient à l’influence de ses procédés de montage et à la force de ses images devenues emblématiques.'
+        ],
+        example: {
+          statement: 'Comment le montage peut-il produire une émotion sans dépendre uniquement du dialogue ?',
+          calculation: 'On observe l’ordre des plans, leur durée, les contrastes entre les images et la manière dont leur succession crée une relation nouvelle.',
+          answer: 'Le montage organise le regard et le rythme. En rapprochant des images de différentes échelles et en accélérant ou ralentissant leur succession, il crée une tension et oriente l’interprétation du spectateur.'
+        },
+        exercise: {
+          question: 'Pourquoi la séquence des marches d’Odessa est-elle si souvent étudiée ?',
+          answer: 'Parce qu’elle montre de manière particulièrement claire comment le montage, le rythme et les contrastes visuels peuvent transformer un événement en une expérience dramatique et politique.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise Le Cuirassé Potemkine ?',
+            answer: 'Sergueï Eisenstein.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1925.'
+          },
+          {
+            question: 'Quel événement historique inspire le film ?',
+            answer: 'La mutinerie de 1905 à bord du cuirassé Potemkine.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — Battleship Potemkin (1925)',
+            url: 'https://www.bfi.org.uk/film/9c02c20b-1487-52c8-bbfc-0849e204fe59/battleship-potemkin'
+          },
+          {
+            title: 'BFI — 10 great films of 1925',
+            url: 'https://www.bfi.org.uk/lists/10-great-films-1925'
+          },
+          {
+            title: 'BFI — The 100 Greatest Films of All Time',
+            url: 'https://www.bfi.org.uk/sight-and-sound/polls/greatest-films-all-time-2012'
+          }
+        ]
+      }
+    },
+    {
+      id: 'etats-unis-temps-modernes-1936',
+      title: 'Les Temps modernes (Modern Times)',
+      field: 'États-Unis · 1936 · Charles Chaplin · Comédie sociale et cinéma sonore',
+      summary: 'Étudier la satire du travail mécanisé, la place du vagabond dans la société industrielle et la transition singulière de Chaplin vers le cinéma parlant.',
+      lesson: {
+        sections: [
+          'Écrit, réalisé et interprété par Charles Chaplin, Les Temps modernes sort en 1936. Le personnage du vagabond travaille dans une usine où la cadence de la chaîne de montage transforme les gestes en mouvements répétitifs. Après une série d’incidents, il traverse différentes situations de chômage, d’emprisonnement et de précarité. Le film associe le burlesque à une critique de l’organisation industrielle et des conditions de travail. Il ne propose pas une étude économique théorique : il rend les effets de la mécanisation perceptibles à travers le corps et les gestes du personnage.',
+          'Le film paraît neuf ans après l’arrivée du cinéma parlant, mais Chaplin conserve une structure largement fondée sur le jeu physique et les intertitres. Il utilise néanmoins des sons synchronisés, des bruits mécaniques et des voix provenant notamment d’appareils ou de haut-parleurs. Lorsque le vagabond chante, sa voix devient audible sous une forme volontairement dépourvue de paroles intelligibles. Ce choix permet à Chaplin de jouer avec le cinéma sonore sans abandonner entièrement le langage gestuel qui avait construit son personnage.',
+          'Les Temps modernes est souvent interprété comme une critique de la déshumanisation du travail et de la précarité pendant la Grande Dépression. La satire vise les systèmes qui imposent des cadences et réduisent les individus à des fonctions productives, mais le film conserve une tonalité comique et une forme d’espoir grâce à la solidarité entre le vagabond et la jeune femme interprétée par Paulette Goddard. L’œuvre constitue un jalon de la comédie sociale et un exemple singulier de la manière dont un artiste du muet a négocié l’arrivée du son.'
+        ],
+        example: {
+          statement: 'Comment la scène de la chaîne de montage transforme-t-elle un problème social en gag visuel ?',
+          calculation: 'On observe la répétition du geste, l’accélération de la cadence et les conséquences de cette répétition sur les mouvements du personnage.',
+          answer: 'Le gag naît du décalage entre le rythme imposé par la machine et les capacités du corps humain. Le comique rend visible la pression exercée par l’organisation industrielle.'
+        },
+        exercise: {
+          question: 'Pourquoi Les Temps modernes n’est-il pas un film entièrement muet ?',
+          answer: 'Il contient des effets sonores et des voix enregistrées, même si Chaplin conserve largement les intertitres et le jeu physique du cinéma muet.'
+        },
+        exercises: [
+          {
+            question: 'Qui réalise et interprète Les Temps modernes ?',
+            answer: 'Charles Chaplin.'
+          },
+          {
+            question: 'En quelle année le film sort-il ?',
+            answer: 'En 1936.'
+          },
+          {
+            question: 'Quel phénomène économique et social nourrit une partie de sa satire ?',
+            answer: 'La précarité et le chômage de la Grande Dépression, ainsi que la mécanisation du travail industriel.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BFI — Modern Times (1936)',
+            url: 'https://www.bfi.org.uk/film/4cdccc6d-f143-506d-a2b1-4c34605cb088/modern-times'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+
 ]
+
 
