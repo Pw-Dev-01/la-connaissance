@@ -2,7 +2,7 @@
   "title": "Photographie",
   "symbol": "P",
   "description": "Les grands photographes, leur évolution, l'histoire de la photographie",
-  "order": 16,
+  "order": 15,
   "entry": "index.html",
   "dataFile": "photographie-data.js",
   "class": "photographie-entry"
