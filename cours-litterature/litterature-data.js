@@ -4,7 +4,7 @@ window.courseCatalog = [
   {
     id: 'ecrivains-france',
     sortYear: 1532,
-    title: 'Les grands écrivains français',
+    title: 'Les écrivains français',
     note: 'Cinq chapitres sur la Renaissance, le classicisme du XVIIe siècle, les Lumières, le XIXe siècle et le XXe siècle. Les dates sont celles des premières publications ou représentations connues ; certaines dates de naissance et d’édition restent discutées par les spécialistes.',
     chapters: [
       {
@@ -235,7 +235,7 @@ window.courseCatalog = [
   {
     id: 'ecrivains-amerique',
     sortYear: 1819,
-    title: 'Les grands écrivains américains',
+    title: 'Les écrivains américains',
     note: 'Cinq chapitres sur les fondateurs, le transcendantisme et la poésie, le roman du XIXe siècle, le modernisme de l’entre-deux-guerres et la littérature d’après 1945. Les dates sont celles des premières publications connues.',
     chapters: [
       {
@@ -464,7 +464,7 @@ window.courseCatalog = [
   {
     id: 'ecrivains-russie',
     sortYear: 1820,
-    title: 'Les grands écrivains russes',
+    title: 'Les écrivains russes',
     note: 'Cinq chapitres sur Pouchkine et ses successeurs, Tourgueniev et Gontcharov, Dostoïevski, Tolstoï, puis Tchekhov et le XXe siècle. Avant 1918, la Russie utilise le calendrier julien, en retard de 12 jours au XIXe siècle et de 13 jours à partir de 1900 ; les dates sont données selon le calendrier grégorien sauf mention contraire.',
     chapters: [
       {
@@ -554,7 +554,7 @@ window.courseCatalog = [
         id: 'dostoievski',
         title: 'Dostoïevski : le roman des consciences',
         field: 'Littérature russe · Seconde moitié du XIXe siècle',
-        summary: 'Comprendre l’expérience du bagne, les grands romans philosophiques et la polyphonie dostoïevskienne.',
+        summary: 'Comprendre l’expérience du bagne, Les romans philosophiques et la polyphonie dostoïevskienne.',
         lesson: {
           sections: [
             'Fiodor Dostoïevski (1821-1881) devient célèbre avec Les Pauvres Gens (1846). Le 23 avril 1849, il est arrêté avec des membres du cercle Petrachevski, groupe de discussion jugé subversif par le pouvoir ; il est condamné à mort le 16 novembre 1849. Le 22 décembre 1849 (calendrier julien), les condamnés sont conduits devant le peloton pour une exécution simulée : la peine est commuée en travaux forcés. Dostoïevski passe quatre ans au bagne d’Omsk, en Sibérie, est libéré en 1854, sert ensuite comme soldat, et ne revient à Saint-Pétersbourg qu’en 1859.',
@@ -686,7 +686,7 @@ window.courseCatalog = [
 {
   id: 'ecrivains-angleterre',
   sortYear: 1343,
-  title: 'Les grands écrivains anglais',
+  title: 'Les écrivains anglais',
   note: 'Parcours en quatre chapitres consacré à la tradition littéraire anglaise, du Moyen Âge au XXe siècle. La branche porte sur la littérature anglaise et non sur tous les écrivains anglophones : plusieurs auteurs de langue anglaise viennent d’Écosse, d’Irlande, du pays de Galles ou d’autres régions.',
   chapters: [
     {
@@ -899,7 +899,7 @@ window.courseCatalog = [
 {
   id: 'ecrivains-allemagne',
   sortYear: 1749,
-  title: 'Les grands écrivains allemands',
+  title: 'Les écrivains allemands',
   note: 'Parcours en quatre chapitres consacré à des écrivains majeurs de langue allemande, du classicisme de Weimar à la littérature moderne. Les dates sont des repères historiques ; la littérature de langue allemande s’est développée dans plusieurs espaces culturels, notamment en Autriche et à Prague.',
   chapters: [
     {
@@ -1110,7 +1110,7 @@ window.courseCatalog = [
   {
     id: 'poetes-france',
     sortYear: 1456,
-    title: 'Les grands poètes français',
+    title: 'Les poètes français',
     note: 'Cinq chapitres et dix poètes : Villon, Ronsard, La Fontaine, Chénier, Lamartine, Hugo, Baudelaire, Rimbaud, Apollinaire et Éluard. Les dates sont celles des premières publications connues ; certaines dates de composition restent discutées et plusieurs œuvres ont paru après la mort de leur auteur.',
     chapters: [
       {
@@ -1330,7 +1330,7 @@ window.courseCatalog = [
   {
     id: 'poetes-allemagne',
     sortYear: 1190,
-    title: 'Les grands poètes allemands',
+    title: 'Les poètes allemands',
     note: 'Cinq chapitres et dix poètes de langue allemande : Walther von der Vogelweide, Gryphius, Goethe, Schiller, Hölderlin, Novalis, Heine, Droste-Hülshoff, Rilke et Celan. Les dates du Moyen Âge sont approximatives, et plusieurs œuvres ont paru après la mort de leur auteur.',
     chapters: [
       {
@@ -1550,7 +1550,7 @@ window.courseCatalog = [
   {
     id: 'poetes-angleterre',
     sortYear: 1370,
-    title: 'Les grands poètes anglais',
+    title: 'Les poètes anglais',
     note: 'Cinq chapitres et dix poètes de la tradition anglaise : Chaucer, Shakespeare, Donne, Milton, Pope, Blake, Wordsworth, Keats, Tennyson et Wilfred Owen. Les dates médiévales sont approximatives, et plusieurs œuvres ont paru après la mort de leur auteur.',
     chapters: [
       {
@@ -1770,7 +1770,7 @@ window.courseCatalog = [
   {
     id: 'poetes-amerique',
     sortYear: 1650,
-    title: 'Les grands poètes américains',
+    title: 'Les poètes américains',
     note: 'Cinq chapitres et dix poètes des États-Unis : Bradstreet, Wheatley, Poe, Longfellow, Whitman, Dickinson, Frost, Eliot, Hughes et Ginsberg. Les dates sont celles des premières publications connues ; certaines œuvres, notamment celles de Dickinson, ont paru après la mort de leur auteure.',
     chapters: [
       {
@@ -1990,7 +1990,7 @@ window.courseCatalog = [
 {
   id: 'poetes-perses',
   sortYear: 858,
-  title: 'Les grands poètes perses',
+  title: 'Les poètes perses',
   note: 'Six chapitres pour découvrir la poésie persane classique, de Rudaki au 9e siècle à Jami au 15e siècle. Les dates médiévales sont parfois approximatives. La poésie persane s’est développée dans un vaste espace culturel comprenant notamment l’Iran, l’Asie centrale, l’Afghanistan, le Caucase, l’Anatolie et l’Inde. Les œuvres et les traditions étudiées ne se limitent donc pas aux frontières actuelles de l’Iran.',
   chapters: [
     {
@@ -2312,7 +2312,7 @@ window.courseCatalog = [
 {
   id: 'grands-poetes-arabes',
   sortYear: 500,
-  title: 'Les grands poètes arabes',
+  title: 'Les poètes arabes',
   note: 'Six chapitres consacrés à l’histoire de la poésie de langue arabe, de la période préislamique à la poésie contemporaine. Le parcours présente les grandes formes poétiques, la poésie de cour, le lyrisme, la satire, la poésie mystique et les transformations modernes. Les dates anciennes sont parfois approximatives, et les poèmes transmis par la tradition orale doivent être étudiés en tenant compte des incertitudes de leur transmission. La langue arabe est un critère littéraire distinct de l’origine ethnique, de la nationalité actuelle et de la religion des auteurs.',
   chapters: [
     {
@@ -2424,7 +2424,7 @@ window.courseCatalog = [
         sections: [
           'Le califat abbasside, établi en 750, voit se développer d’importants centres intellectuels et littéraires, notamment Bagdad et Bassora. Les poètes évoluent dans des milieux où se rencontrent des traditions arabes anciennes, des pratiques de cour, des savoirs savants et des influences culturelles diverses. La poésie conserve les exigences de la métrique classique, mais les auteurs expérimentent de nouveaux thèmes, des images plus complexes et des manières différentes de représenter la vie urbaine.',
           'Abou Nouwas, dont les dates sont généralement situées vers 756–758 et 813–815, est une figure majeure de cette transformation. Il est connu pour des poèmes consacrés notamment au vin, à l’amour, à la chasse et à d’autres aspects de la vie urbaine. Ses œuvres jouent avec les conventions héritées de la qasida et peuvent détourner certains thèmes traditionnels. Son parcours illustre le fait que l’innovation ne signifie pas nécessairement l’abandon des règles métriques : elle peut aussi consister à modifier les sujets, le ton, les images et les attentes du public.',
-          'Abou Tammam et al-Buhturi comptent parmi les grands poètes de la période abbasside. Abou Tammam est également connu pour la Hamasa, une anthologie de poésie ancienne dont la sélection a contribué à la transmission d’un patrimoine littéraire. Al-Buhturi est souvent associé à une maîtrise raffinée de la langue et des conventions de l’éloge. Les deux auteurs montrent des orientations différentes dans la manière de travailler les images, les références traditionnelles et les effets rhétoriques. Il faut cependant éviter de réduire leurs œuvres à une opposition trop simple entre tradition et nouveauté.',
+          'Abou Tammam et al-Buhturi comptent parmi Les poètes de la période abbasside. Abou Tammam est également connu pour la Hamasa, une anthologie de poésie ancienne dont la sélection a contribué à la transmission d’un patrimoine littéraire. Al-Buhturi est souvent associé à une maîtrise raffinée de la langue et des conventions de l’éloge. Les deux auteurs montrent des orientations différentes dans la manière de travailler les images, les références traditionnelles et les effets rhétoriques. Il faut cependant éviter de réduire leurs œuvres à une opposition trop simple entre tradition et nouveauté.',
           'Les formes poétiques restent étroitement liées à leur contexte de performance et de patronage. Les poèmes de louange peuvent célébrer un protecteur ou un souverain, tandis que d’autres textes explorent des sujets personnels, descriptifs ou satiriques. Les recueils et anthologies jouent un rôle essentiel dans la conservation des œuvres et dans la construction d’un canon littéraire. Ils influencent aussi la façon dont les générations ultérieures définissent les modèles de l’excellence poétique.',
           'La poésie abbasside n’est pas homogène. Les auteurs partagent une langue littéraire et plusieurs conventions, mais diffèrent par leurs thèmes, leurs choix stylistiques et leurs relations aux institutions. Son étude permet de comprendre comment une tradition peut se renouveler de l’intérieur, par la réutilisation inventive de formes connues et par l’élargissement des sujets considérés comme dignes de poésie.'
         ],
@@ -2634,7 +2634,7 @@ window.courseCatalog = [
 {
   id: 'poetes-armeniens',
   sortYear: 400,
-  title: 'Les grands poètes arméniens',
+  title: 'Les poètes arméniens',
   note: 'Six chapitres pour parcourir la poésie arménienne, des premiers hymnes chrétiens aux poètes modernes du XXe siècle. Les repères chronologiques sont indicatifs lorsque les sources donnent des dates approximatives. La tradition arménienne comprend des œuvres religieuses, didactiques, lyriques, chantées et narratives ; ce parcours est une sélection et non une liste exhaustive.',
 
   chapters: [
@@ -2945,7 +2945,7 @@ window.courseCatalog = [
 {
   id: 'poetes-grecs',
   sortYear: -800,
-  title: "Les grands poètes de l'Antiquité grecque",
+  title: "Les poètes de l'Antiquité grecque",
   note: 'Six chapitres consacrés à l’épopée, à la poésie didactique, à la poésie lyrique, à la poésie chorale, au théâtre poétique et aux formes hellénistiques. Les dates des auteurs archaïques sont souvent approximatives ; l’attribution et la transmission de plusieurs œuvres anciennes restent discutées.',
 
   chapters: [
@@ -3082,7 +3082,7 @@ window.courseCatalog = [
       summary: 'Comprendre les odes de Pindare, notamment les chants célébrant les vainqueurs des concours panhelléniques, et leur mélange de louange, de mythe et de réflexion morale.',
       lesson: {
         sections: [
-          'Pindare, poète grec du Ve siècle av. J.-C., est particulièrement connu pour ses épinicies, des odes composées à l’occasion de victoires dans les grands concours athlétiques du monde grec. Les poèmes sont liés à une occasion précise, à un vainqueur, à sa famille ou à sa cité, mais leur portée dépasse souvent la simple annonce du résultat sportif.',
+          'Pindare, poète grec du Ve siècle av. J.-C., est particulièrement connu pour ses épinicies, des odes composées à l’occasion de victoires dans Les concours athlétiques du monde grec. Les poèmes sont liés à une occasion précise, à un vainqueur, à sa famille ou à sa cité, mais leur portée dépasse souvent la simple annonce du résultat sportif.',
           'Les odes de Pindare mêlent éloge, récits mythologiques, réflexions sur la condition humaine et allusions aux dieux. Le mythe peut éclairer ou complexifier l’éloge du vainqueur ; il n’est pas toujours un simple ornement. L’analyse doit tenir compte de l’occasion de composition et des conventions de la poésie chorale.',
           'La poésie chorale était conçue pour être chantée et accompagnée de musique et de mouvement, même si les modalités exactes de chaque performance ne sont pas toujours connues. Lire aujourd’hui le texte seul permet d’étudier sa langue et sa composition, mais ne restitue pas entièrement le contexte de performance antique.'
         ],
