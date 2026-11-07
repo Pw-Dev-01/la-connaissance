@@ -440,9 +440,9 @@ window.courseCatalog = [
 },
 
 {
-  id: 'grands-photographes-francais',
+  id: 'photographes-francais',
   sortYear: 1842,
-  title: 'Les grands photographes français',
+  title: 'Les photographes français',
   note: 'Dix chapitres suivent les photographes français et les artistes durablement liés à la photographie en France, des pionniers du XIXe siècle aux pratiques contemporaines. Le classement repose sur le premier repère historique étudié dans la branche ; les périodes se chevauchent, car les carrières et les courants ne commencent pas tous à une date unique. La nationalité et le lieu d’activité sont distingués : certains artistes internationaux ont travaillé en France sans être présentés ici comme français.',
   chapters: [
     {
@@ -687,7 +687,7 @@ window.courseCatalog = [
       id: 'reportage-francais-apres-guerre',
       title: 'Le grand reportage français : Riboud, Caron et Depardon',
       field: 'Photographie française · Années 1950-1970',
-      summary: 'Étudier l’essor du photojournalisme français, les grands reportages internationaux et la diversité des regards documentaires.',
+      summary: 'Étudier l’essor du photojournalisme français, Les reportages internationaux et la diversité des regards documentaires.',
       lesson: {
         sections: [
           'Après 1945, les magazines illustrés et les agences photographiques contribuent à l’essor du grand reportage. Les photographes circulent davantage, travaillent sur des sujets internationaux et construisent des récits visuels destinés à la presse. Le reportage ne consiste pas seulement à enregistrer un événement : il suppose une enquête, une présence sur le terrain, une sélection d’images et une mise en séquence qui orientent la compréhension du lecteur.',
@@ -828,9 +828,9 @@ window.courseCatalog = [
 },
 
 {
-  id: 'grands-photographes-americains',
+  id: 'photographes-americains',
   sortYear: 1839,
-  title: 'Les grands photographes américains',
+  title: 'Les photographes américains',
   note: 'Dix chapitres retracent l’histoire de la photographie aux États-Unis, des premiers daguerréotypes aux pratiques contemporaines. La sélection distingue les photographes américains de naissance des artistes nés ailleurs et devenus actifs dans le milieu photographique américain. Les dates indiquent des repères documentés, non des frontières strictes entre les courants.',
   chapters: [
     {
@@ -1386,9 +1386,9 @@ window.courseCatalog = [
 },
 
 {
-  id: 'grands-photographes-italiens',
+  id: 'photographes-italiens',
   sortYear: 1839,
-  title: 'Les grands photographes italiens',
+  title: 'Les photographes italiens',
   note: 'Dix chapitres retracent l’histoire de la photographie en Italie, des premiers procédés du XIXe siècle aux pratiques contemporaines. La sélection distingue les photographes italiens de naissance des artistes étrangers ayant travaillé en Italie. Les dates indiquent des repères documentés ; les courants se chevauchent et ne constituent pas des périodes fermées.',
   chapters: [
     {
@@ -1441,14 +1441,14 @@ window.courseCatalog = [
     },
     {
       id: 'ateliers-italiens-alinari-1852-1870',
-      title: 'Les grands ateliers du XIXe siècle : Alinari, Brogi et la photographie du patrimoine',
+      title: 'Les ateliers du XIXe siècle : Alinari, Brogi et la photographie du patrimoine',
       field: 'Photographie italienne · 1852-1870',
       summary: 'Étudier la naissance des entreprises photographiques, la reproduction des œuvres d’art et la constitution d’un patrimoine visuel de l’Italie.',
       lesson: {
         sections: [
           'À Florence, Leopoldo Alinari ouvre un laboratoire photographique en 1852. En 1854, il s’associe à ses frères Giuseppe et Romualdo pour former la société Fratelli Alinari. L’entreprise se spécialise rapidement dans les vues de villes, les monuments et la reproduction des œuvres d’art. Ses archives constituent aujourd’hui une source majeure pour l’étude de l’histoire visuelle italienne et de la photographie commerciale du XIXe siècle.',
           'La production des Alinari répond à une demande croissante de voyageurs, d’amateurs d’art, d’institutions et de collectionneurs. La photographie permet de diffuser des représentations relativement précises des sculptures, peintures, édifices et paysages. Elle participe ainsi à la circulation du patrimoine italien au-delà des frontières. Ces images sont à la fois des documents de référence et des objets commerciaux, produits selon des formats et des catalogues organisés.',
-          'Après la mort de Leopoldo en 1865, Giuseppe et Romualdo poursuivent le développement de l’entreprise. Les campagnes photographiques s’étendent à d’autres régions et la société construit progressivement un vaste répertoire d’images. Cette organisation distingue les grands établissements des ateliers individuels : la production repose sur une structure commerciale, des commandes, des collaborateurs, des archives et des procédés de reproduction maîtrisés.',
+          'Après la mort de Leopoldo en 1865, Giuseppe et Romualdo poursuivent le développement de l’entreprise. Les campagnes photographiques s’étendent à d’autres régions et la société construit progressivement un vaste répertoire d’images. Cette organisation distingue Les établissements des ateliers individuels : la production repose sur une structure commerciale, des commandes, des collaborateurs, des archives et des procédés de reproduction maîtrisés.',
           'Giacomo Brogi, actif à Florence, développe lui aussi une importante activité de portrait et de vues. Les grandes maisons photographiques contribuent à standardiser les représentations des monuments et des villes. Elles participent à la formation d’une image visuelle de l’Italie au moment où le processus d’unification nationale transforme les cadres politiques et culturels de la péninsule.',
           'La photographie de patrimoine n’est toutefois pas une reproduction parfaitement neutre. Le choix du point de vue, de la lumière, de la distance et du cadrage détermine la manière dont une œuvre ou un monument est perçu. Les catalogues commerciaux sélectionnent également les sujets jugés dignes d’être diffusés. L’étude de ces images doit donc associer histoire de l’art, histoire des techniques et histoire des usages.'
         ],
@@ -1812,7 +1812,7 @@ window.courseCatalog = [
         sections: [
           'À partir des années 1970, la photographie documentaire italienne aborde de manière directe les tensions politiques, les transformations urbaines et les réalités sociales. Les photographes travaillent pour les journaux, les agences, les institutions et leurs propres projets éditoriaux. Leurs images deviennent des archives de la vie publique, mais aussi des œuvres qui interrogent le rapport entre témoignage, esthétique et responsabilité.',
           'Letizia Battaglia (1935-2022), née à Palerme, commence à travailler comme journaliste pour le quotidien L’Ora en 1969 et se consacre alors à la photographie. À partir de 1974, elle revient travailler à Palerme pour le journal. Ses images documentent la violence mafieuse, les victimes, les procès et la vie quotidienne de la Sicile. Son travail constitue un témoignage essentiel sur une période de l’histoire italienne marquée par les assassinats et les affrontements liés à la mafia.',
-          'Ferdinando Scianna, né à Bagheria en 1943, commence à photographier dans les années 1960 et publie Feste religiose in Sicilia en 1965, avec un texte de Leonardo Sciascia. Il travaille ensuite pour L’Europeo et développe une œuvre de reportage attentive aux rites, aux identités et aux réalités sociales. En 1982, il devient le premier photographe italien à rejoindre l’agence Magnum Photos, étape importante pour la présence des photographes italiens dans les grands réseaux internationaux.',
+          'Ferdinando Scianna, né à Bagheria en 1943, commence à photographier dans les années 1960 et publie Feste religiose in Sicilia en 1965, avec un texte de Leonardo Sciascia. Il travaille ensuite pour L’Europeo et développe une œuvre de reportage attentive aux rites, aux identités et aux réalités sociales. En 1982, il devient le premier photographe italien à rejoindre l’agence Magnum Photos, étape importante pour la présence des photographes italiens dans Les réseaux internationaux.',
           'Gabriele Basilico (1944-2013), né à Milan et formé à l’architecture, consacre une grande partie de son œuvre à la ville et au paysage urbain. Son projet Milano. Ritratti di fabbriche, réalisé entre 1978 et 1980, étudie les zones industrielles et les transformations de la périphérie milanaise. Il participe ensuite à la Mission photographique de la DATAR en France en 1984, puis documente notamment Beyrouth en 1991, à la fin de la guerre civile.',
           'Ces trois trajectoires montrent la diversité de la photographie documentaire italienne. Battaglia travaille sur la violence politique et la vie civique, Scianna associe reportage et récit culturel, tandis que Basilico construit une observation méthodique des espaces urbains. Dans chaque cas, la photographie doit être lue avec ses légendes, ses dates, ses lieux et ses conditions de diffusion afin de distinguer le témoignage visuel de l’interprétation qu’on en tire.'
         ],
