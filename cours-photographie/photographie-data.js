@@ -1926,4 +1926,628 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'photographes-Magnum',
+  sortYear: 1947,
+  title: 'Les photographes célèbres de l’agence Magnum',
+  note: 'Une sélection chronologique de 14 photographes majeurs de Magnum Photos, depuis les fondateurs de 1947 jusqu’aux grandes figures documentaires de la fin du XXe siècle. Chaque chapitre présente le parcours du photographe, son intégration à Magnum, son langage visuel, ses principaux travaux et son héritage dans l’histoire de la photographie. Les dates d’entrée dans l’agence sont distinguées, lorsque nécessaire, des dates d’accession au statut de membre titulaire.',
+  chapters: [
+    {
+      id: 'robert-capa',
+      title: 'Robert Capa : le photographe de guerre et le fondateur de Magnum',
+      field: 'Photographie documentaire et photojournalisme · Entrée chez Magnum : 1947',
+      summary: 'Découvrir Robert Capa, son travail de photoreporter de guerre, son approche humaine des conflits et son rôle fondateur dans la création de Magnum Photos.',
+      lesson: {
+        sections: [
+          'Robert Capa, né Endre Ernő Friedmann en 1913 à Budapest, est l’une des grandes figures du photojournalisme du XXe siècle. Il quitte la Hongrie dans sa jeunesse et développe sa carrière photographique en Europe occidentale. Il couvre notamment la guerre civile espagnole, puis la Seconde Guerre mondiale. Son travail se distingue par sa proximité avec les événements et par sa volonté de photographier les personnes confrontées aux bouleversements historiques. Il ne cherche pas uniquement à produire des images spectaculaires : ses photographies témoignent aussi de la vie quotidienne des soldats et des populations civiles.',
+
+          'Sa couverture du débarquement allié en Normandie, le 6 juin 1944, constitue l’un des épisodes les plus connus de sa carrière. Capa accompagne les troupes américaines lors de leur arrivée sur les plages. Les images associées à cette opération sont devenues des documents importants de l’histoire de la photographie de guerre. Leur conservation et leur diffusion ont également contribué à construire sa légende. Son travail rappelle toutefois les difficultés matérielles et techniques auxquelles les photographes sont confrontés dans les zones de combat.',
+
+          'En 1947, Capa participe à la création de Magnum Photos avec Henri Cartier-Bresson, George Rodger et David Seymour. L’objectif de cette coopérative est de défendre l’indépendance des photographes et leur maîtrise de leurs images. Cette organisation donne aux auteurs une place centrale dans la production et la diffusion des reportages. Capa meurt en 1954 en Indochine, après avoir marché sur une mine. Son influence demeure considérable dans l’histoire du photojournalisme et dans la défense des droits des photographes.'
+        ],
+        example: {
+          statement: 'Pourquoi Robert Capa est-il considéré comme une figure fondatrice du photojournalisme moderne ?',
+          calculation: 'Il faut examiner trois aspects de son parcours : son immersion dans les événements historiques, son attention aux personnes photographiées et sa participation à la création d’une coopérative défendant les droits des photographes.',
+          answer: 'Robert Capa a contribué à renouveler le reportage de guerre par sa proximité avec les événements et son approche humaine. La création de Magnum en 1947 prolonge son engagement en faveur de l’indépendance des photographes.'
+        },
+        exercise: {
+          question: 'Quel est le rôle de Robert Capa dans la création de Magnum Photos ?',
+          answer: 'Il est l’un des quatre principaux photographes fondateurs de l’agence en 1947, avec Henri Cartier-Bresson, George Rodger et David Seymour.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le véritable nom de Robert Capa ?',
+            answer: 'Endre Ernő Friedmann.'
+          },
+          {
+            question: 'Quel événement militaire célèbre a-t-il photographié le 6 juin 1944 ?',
+            answer: 'Le débarquement allié en Normandie.'
+          },
+          {
+            question: 'En quelle année Robert Capa participe-t-il à la fondation de Magnum Photos ?',
+            answer: 'En 1947.'
+          }
+        ],
+        sources: [
+          { title: 'Magnum Photos — History of Magnum', url: 'https://pro.magnumphotos.com/CS.aspx?FRM=Frame%3AMAX_5%2CSubHeaderFrame%3AMAGO31_13&VF=MAX_2&VP3=CMS3' },
+          { title: 'International Center of Photography — Robert Capa', url: 'https://www.icp.org/' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    },
+
+    {
+      id: 'henri-cartier-bresson',
+      title: 'Henri Cartier-Bresson : le maître de l’instant décisif',
+      field: 'Photographie humaniste et documentaire · Entrée chez Magnum : 1947',
+      summary: 'Étudier le parcours d’Henri Cartier-Bresson, son concept de l’instant décisif, sa composition géométrique et son influence sur la photographie de rue.',
+      lesson: {
+        sections: [
+          'Henri Cartier-Bresson naît en 1908 à Chanteloup-en-Brie, en France. Avant de devenir photographe, il s’intéresse à la peinture et fréquente les milieux artistiques. Cette formation influence profondément sa manière de composer les images. Il accorde une importance particulière aux lignes, aux formes géométriques, aux mouvements et aux relations entre les personnes et leur environnement. Son approche consiste à observer longuement une situation afin de saisir un instant où tous les éléments visuels semblent s’organiser dans une composition cohérente.',
+
+          'La notion d’instant décisif est associée à son travail et à son livre Images à la sauvette, publié en français en 1952. Elle désigne la rencontre entre un événement, une composition et le moment précis du déclenchement. Une photographie réussie ne dépend donc pas uniquement du sujet représenté : elle repose également sur le placement du photographe, son anticipation et sa capacité à reconnaître une situation visuellement significative. Cartier-Bresson travaille principalement avec des appareils photographiques compacts, notamment le Leica, qui lui permettent de rester mobile et discret.',
+
+          'En 1947, il participe à la fondation de Magnum Photos. Il réalise ensuite de nombreux reportages en Europe, en Asie et dans d’autres régions du monde. Ses photographies documentent notamment les transformations politiques et sociales de l’après-guerre. Il s’intéresse également aux portraits, aux scènes de rue et aux gestes ordinaires. À partir des années 1970, il se consacre davantage au dessin. Son héritage demeure essentiel pour la photographie documentaire, la composition visuelle et la photographie de rue.'
+        ],
+        example: {
+          statement: 'Une photographie montre un cycliste passant sous une arche au moment exact où sa silhouette s’inscrit dans la composition architecturale. Pourquoi cette image illustre-t-elle l’instant décisif ?',
+          calculation: 'On observe la relation entre le mouvement, le cadrage, les formes géométriques et le moment du déclenchement.',
+          answer: 'L’image associe un événement fugitif à une composition équilibrée. Le moment choisi donne à la scène une cohérence visuelle qui illustre le principe de l’instant décisif.'
+        },
+        exercise: {
+          question: 'Que signifie la notion d’instant décisif dans la photographie d’Henri Cartier-Bresson ?',
+          answer: 'Elle désigne le moment précis où un événement et une composition visuelle se rencontrent pour produire une image particulièrement significative.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Henri Cartier-Bresson participe-t-il à la création de Magnum Photos ?',
+            answer: 'En 1947.'
+          },
+          {
+            question: 'Quel appareil photographique est particulièrement associé à son travail ?',
+            answer: 'Le Leica, notamment les appareils compacts de la marque.'
+          },
+          {
+            question: 'Quel ouvrage publié en 1952 est associé à la notion d’instant décisif ?',
+            answer: 'Images à la sauvette, publié en anglais sous le titre The Decisive Moment.'
+          }
+        ],
+        sources: [
+          { title: 'Fondation Henri Cartier-Bresson', url: 'https://www.henricartierbresson.org/' },
+          { title: 'Magnum Photos — History of Magnum', url: 'https://pro.magnumphotos.com/CS.aspx?FRM=Frame%3AMAX_5%2CSubHeaderFrame%3AMAGO31_13&VF=MAX_2&VP3=CMS3' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    },
+
+    {
+      id: 'george-rodger',
+      title: 'George Rodger : documenter les sociétés et les bouleversements du monde',
+      field: 'Photographie documentaire et reportage international · Entrée chez Magnum : 1947',
+      summary: 'Comprendre le travail de George Rodger, son expérience de la Seconde Guerre mondiale, ses reportages africains et son approche documentaire des sociétés.',
+      lesson: {
+        sections: [
+          'George Rodger naît en 1908 au Royaume-Uni. Avant de devenir l’un des grands photographes documentaires de son époque, il travaille dans la marine marchande britannique et voyage dans plusieurs régions du monde. Il commence à développer son activité photographique dans les années 1930 et travaille notamment pour le magazine Life. Son expérience des voyages et sa capacité à s’adapter à des environnements variés influencent sa pratique du reportage.',
+
+          'Pendant la Seconde Guerre mondiale, Rodger couvre plusieurs événements majeurs. Il photographie notamment la libération du camp de concentration de Bergen-Belsen en avril 1945. Cette expérience marque profondément sa carrière. Après avoir documenté les conséquences des violences de guerre, il éprouve le besoin de consacrer davantage de temps à des sujets qui ne soient pas exclusivement liés aux conflits. Il s’intéresse alors aux populations, aux traditions et aux modes de vie dans différentes régions du monde.',
+
+          'En 1947, il participe à la fondation de Magnum Photos. Il développe notamment des reportages en Afrique et au Moyen-Orient. Son travail associe observation documentaire, intérêt pour les cultures locales et attention portée aux relations entre les individus et leur environnement. Ses images contribuent à enrichir les représentations photographiques de régions souvent peu documentées dans les grands médias occidentaux de l’époque. Il meurt en 1995, laissant une œuvre importante dans l’histoire du reportage international.'
+        ],
+        example: {
+          statement: 'Pourquoi les photographies de George Rodger consacrées aux sociétés africaines sont-elles importantes pour comprendre son évolution professionnelle ?',
+          calculation: 'Il faut comparer ses reportages de guerre à ses travaux consacrés aux modes de vie, aux traditions et aux populations.',
+          answer: 'Ils montrent son élargissement vers une photographie documentaire de longue durée, attentive aux sociétés et aux cultures, au-delà de la seule couverture des conflits.'
+        },
+        exercise: {
+          question: 'Quel événement de la Seconde Guerre mondiale George Rodger a-t-il documenté en avril 1945 ?',
+          answer: 'La libération du camp de concentration de Bergen-Belsen.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année George Rodger participe-t-il à la fondation de Magnum ?',
+            answer: 'En 1947.'
+          },
+          {
+            question: 'Quel magazine a notamment publié son travail avant la création de Magnum ?',
+            answer: 'Life.'
+          },
+          {
+            question: 'Quels sujets développe-t-il après la Seconde Guerre mondiale ?',
+            answer: 'Des reportages sur les sociétés, les cultures, les populations et les modes de vie, notamment en Afrique.'
+          }
+        ],
+        sources: [
+          { title: 'Magnum Photos — History of Magnum', url: 'https://pro.magnumphotos.com/CS.aspx?FRM=Frame%3AMAX_5%2CSubHeaderFrame%3AMAGO31_13&VF=MAX_2&VP3=CMS3' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' },
+          { title: 'Harry Ransom Center — Magnum Photos Collection', url: 'https://norman.hrc.utexas.edu/fasearch/findingaid.cfm?eadid=00502&showrequest=0' }
+        ]
+      }
+    },
+
+    {
+      id: 'david-seymour',
+      title: 'David Seymour : Chim, photographe de l’enfance et des conflits',
+      field: 'Photojournalisme humaniste · Entrée chez Magnum : 1947',
+      summary: 'Découvrir David Seymour, surnommé Chim, son travail sur les enfants victimes de la guerre, son engagement documentaire et son rôle dans la fondation de Magnum.',
+      lesson: {
+        sections: [
+          'David Seymour, connu sous le pseudonyme de Chim, naît en 1911 à Varsovie. Il étudie notamment à Leipzig et développe sa carrière photographique dans l’Europe des années 1930. Il devient correspondant photographique et documente plusieurs événements politiques et sociaux. Sa pratique est marquée par une attention particulière aux personnes photographiées et par une approche humaniste du reportage. Il fait partie des photographes qui considèrent la photographie comme un moyen de témoigner des réalités humaines.',
+
+          'Pendant la guerre civile espagnole, Chim réalise des reportages sur les conséquences du conflit pour les populations civiles. Après la Seconde Guerre mondiale, il entreprend un travail important sur les enfants affectés par la guerre en Europe. Cette série documentaire met en évidence les conséquences sociales et psychologiques des conflits sur les jeunes générations. Ses images sont liées à des projets de documentation humanitaire et contribuent à rendre visibles des situations souvent absentes des récits militaires traditionnels.',
+
+          'En 1947, David Seymour participe à la création de Magnum Photos avec Robert Capa, Henri Cartier-Bresson et George Rodger. Il poursuit son activité de photoreporter et devient une figure importante de l’agence. En 1956, il meurt alors qu’il couvre la crise de Suez. Son parcours, bien que relativement court, a durablement marqué l’histoire de la photographie documentaire et du photojournalisme humaniste.'
+        ],
+        example: {
+          statement: 'Pourquoi les reportages de Chim sur les enfants après la Seconde Guerre mondiale représentent-ils une contribution importante à la photographie humaniste ?',
+          calculation: 'Il faut identifier le sujet photographié, le contexte historique et l’objectif documentaire du reportage.',
+          answer: 'Ces images montrent les conséquences de la guerre sur les enfants et les populations civiles. Elles déplacent l’attention du récit militaire vers les expériences humaines.'
+        },
+        exercise: {
+          question: 'Quel surnom professionnel était utilisé par David Seymour ?',
+          answer: 'Chim.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année David Seymour participe-t-il à la création de Magnum ?',
+            answer: 'En 1947.'
+          },
+          {
+            question: 'Quel sujet humanitaire important a-t-il photographié après la Seconde Guerre mondiale ?',
+            answer: 'La situation des enfants affectés par la guerre en Europe.'
+          },
+          {
+            question: 'Dans quel contexte David Seymour meurt-il en 1956 ?',
+            answer: 'Alors qu’il couvre la crise de Suez.'
+          }
+        ],
+        sources: [
+          { title: 'Magnum Photos — History of Magnum', url: 'https://pro.magnumphotos.com/CS.aspx?FRM=Frame%3AMAX_5%2CSubHeaderFrame%3AMAGO31_13&VF=MAX_2&VP3=CMS3' },
+          { title: 'Harry Ransom Center — Magnum Photos Collection', url: 'https://norman.hrc.utexas.edu/fasearch/findingaid.cfm?eadid=00502&showrequest=0' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    },
+
+    {
+      id: 'werner-bischof',
+      title: 'Werner Bischof : la photographie humaniste et les grandes transformations du monde',
+      field: 'Photographie documentaire internationale · Entrée chez Magnum : 1950',
+      summary: 'Étudier l’œuvre de Werner Bischof, son approche esthétique, ses reportages internationaux et son attention aux conditions de vie des populations.',
+      lesson: {
+        sections: [
+          'Werner Bischof naît en 1916 à Zurich, en Suisse. Il suit une formation artistique et photographique à l’École des arts appliqués de Zurich. Avant de se consacrer pleinement au reportage international, il travaille notamment dans le domaine de la photographie de studio et de la photographie artistique. Sa formation visuelle lui permet de développer une grande maîtrise de la lumière, de la composition et des relations entre les formes. Son travail se distingue par une recherche esthétique qui reste étroitement liée à la réalité documentaire.',
+
+          'Après la Seconde Guerre mondiale, Bischof réalise de nombreux reportages sur les populations confrontées à la pauvreté, aux déplacements et aux transformations politiques. Il voyage notamment en Europe et en Asie. Ses photographies documentent les conditions de vie et les conséquences des bouleversements historiques. Il cherche à dépasser la simple description événementielle pour construire des images qui rendent visibles les situations humaines dans leur complexité.',
+
+          'Bischof rejoint Magnum au début des années 1950. Il devient l’un des photographes importants de cette période de développement de l’agence. Ses déplacements en Asie et en Amérique du Sud enrichissent son travail documentaire. Il meurt en 1954 au Pérou dans un accident de la route alors qu’il travaille sur un reportage. Son œuvre est aujourd’hui considérée comme un exemple majeur de rencontre entre exigence esthétique et engagement documentaire.'
+        ],
+        example: {
+          statement: 'Comment Werner Bischof associe-t-il photographie artistique et photographie documentaire ?',
+          calculation: 'On examine simultanément la qualité de la composition, le traitement de la lumière et la réalité sociale du sujet représenté.',
+          answer: 'Il utilise une composition soigneusement construite et une maîtrise de la lumière pour documenter des situations réelles. La recherche esthétique renforce ainsi la portée documentaire de ses images.'
+        },
+        exercise: {
+          question: 'Quelle caractéristique distingue particulièrement l’approche photographique de Werner Bischof ?',
+          answer: 'L’association d’une grande exigence esthétique, notamment dans la composition et la lumière, avec une photographie documentaire attentive aux conditions humaines.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Werner Bischof rejoint-il Magnum selon les chronologies historiques de l’agence ?',
+            answer: 'En 1950.'
+          },
+          {
+            question: 'Dans quelle ville suisse est-il né ?',
+            answer: 'Zurich.'
+          },
+          {
+            question: 'Dans quel pays meurt-il en 1954 ?',
+            answer: 'Au Pérou.'
+          }
+        ],
+        sources: [
+          { title: 'The Decisive Network — Early Magnum Photographers', url: 'https://dokumen.pub/the-decisive-network-magnum-photos-and-the-postwar-image-market-1nbsped-0520300351-9780520300354.html' },
+          { title: 'International Center of Photography — Magnum Photos Collection', url: 'https://www.icp.org/sites/default/files/ICP_001-Cornell_Capa_Papers-2020.pdf' },
+          { title: 'Magnum Photos — History of Magnum', url: 'https://pro.magnumphotos.com/CS.aspx?FRM=Frame%3AMAX_5%2CSubHeaderFrame%3AMAGO31_13&VF=MAX_2&VP3=CMS3' }
+        ]
+      }
+    },
+
+    {
+      id: 'eve-arnold',
+      title: 'Eve Arnold : les portraits, les femmes et les personnalités',
+      field: 'Photographie documentaire et portrait · Entrée chez Magnum : 1951 ; membre titulaire : 1957',
+      summary: 'Découvrir Eve Arnold, son approche du portrait, son attention aux femmes et aux milieux sociaux ainsi que son importance dans l’histoire des femmes photographes.',
+      lesson: {
+        sections: [
+          'Eve Arnold naît en 1912 à Philadelphie, aux États-Unis. Elle commence sa carrière photographique après la Seconde Guerre mondiale et développe une pratique attentive aux personnes photographiées. Son approche repose sur l’observation, la proximité et la volonté de comprendre les environnements sociaux dans lesquels évoluent ses sujets. Elle photographie aussi bien des personnalités célèbres que des personnes dont les conditions de vie sont peu représentées dans les médias.',
+
+          'Parmi ses travaux connus figurent ses photographies consacrées à Marilyn Monroe, réalisées dans différents contextes professionnels et personnels. Arnold photographie également les communautés afro-américaines, les femmes, les travailleurs et les réalités sociales de plusieurs pays. Son approche du portrait ne repose pas seulement sur la célébrité du sujet : elle cherche à rendre visibles les attitudes, les émotions et les rapports sociaux qui structurent une situation. Elle travaille en noir et blanc comme en couleur.',
+
+          'Eve Arnold commence à travailler avec Magnum en 1951 et devient membre titulaire en 1957. Elle est la première femme à obtenir ce statut dans l’agence. Cette distinction est importante dans l’histoire de Magnum et dans celle du photojournalisme professionnel, longtemps dominé par les hommes. Elle poursuit une carrière internationale pendant plusieurs décennies. Son œuvre contribue à élargir les sujets et les points de vue représentés dans la photographie documentaire.'
+        ],
+        example: {
+          statement: 'Pourquoi faut-il distinguer l’entrée d’Eve Arnold chez Magnum en 1951 de son accession au statut de membre titulaire en 1957 ?',
+          calculation: 'La chronologie institutionnelle distingue le début de son intégration à l’agence et la reconnaissance officielle de son statut de membre titulaire.',
+          answer: 'Elle commence à travailler avec Magnum en 1951, mais devient membre titulaire en 1957. Ces deux dates correspondent à des étapes différentes de son parcours.'
+        },
+        exercise: {
+          question: 'Quelle place Eve Arnold occupe-t-elle dans l’histoire de Magnum Photos ?',
+          answer: 'Elle est la première femme à devenir membre titulaire de Magnum, en 1957.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Eve Arnold commence-t-elle à travailler avec Magnum ?',
+            answer: 'En 1951.'
+          },
+          {
+            question: 'En quelle année devient-elle membre titulaire ?',
+            answer: 'En 1957.'
+          },
+          {
+            question: 'Citez une personnalité célèbre qu’elle a photographiée.',
+            answer: 'Marilyn Monroe.'
+          }
+        ],
+        sources: [
+          { title: 'Artsy — A History of Magnum Photos in Ten Photographers', url: 'https://www.artsy.net/article/editorial-a-history-of-magnum-photos-in-ten' },
+          { title: 'International Center of Photography', url: 'https://www.icp.org/' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    },
+
+    {
+      id: 'elliott-erwitt',
+      title: 'Elliott Erwitt : l’humour, la vie quotidienne et la photographie de rue',
+      field: 'Photographie humaniste, documentaire et publicitaire · Entrée chez Magnum : 1951',
+      summary: 'Comprendre l’univers photographique d’Elliott Erwitt, son humour visuel, ses photographies de rue, ses portraits et son regard sur la société.',
+      lesson: {
+        sections: [
+          'Elliott Erwitt naît en 1928 à Paris dans une famille d’origine russe. Il grandit entre plusieurs pays avant de s’installer aux États-Unis. Il étudie la photographie et le cinéma et commence à travailler professionnellement dans les années 1940. Son parcours est marqué par une grande diversité de commandes et de projets personnels. Il réalise des reportages, des portraits, des photographies publicitaires et des travaux documentaires.',
+
+          'Son langage photographique repose souvent sur l’humour, les contrastes visuels et l’observation de situations ordinaires. Il photographie des scènes de rue, des animaux, des couples, des enfants et des personnalités publiques. Les chiens occupent une place particulièrement importante dans son œuvre. Il utilise les postures, les perspectives et les relations entre les personnages pour créer des images parfois humoristiques, mais également révélatrices des comportements humains.',
+
+          'Elliott Erwitt rejoint Magnum en 1951. Il devient ensuite une figure majeure de l’agence et exerce des responsabilités institutionnelles, notamment en tant que président de Magnum. Sa photographie montre qu’une image documentaire peut être à la fois accessible, amusante et construite avec une grande précision. Il meurt en 2023. Son œuvre reste une référence importante pour la photographie de rue et le regard humoristique sur la vie quotidienne.'
+        ],
+        example: {
+          statement: 'Une photographie montre un chien dont la posture rappelle celle de son propriétaire. Comment l’humour visuel intervient-il dans cette image ?',
+          calculation: 'Il faut observer les ressemblances de posture, les relations entre les sujets et le cadrage qui rapproche visuellement les deux personnages.',
+          answer: 'L’humour provient de la comparaison visuelle entre le chien et son propriétaire. Le photographe transforme une situation ordinaire en image inattendue grâce à l’observation et au cadrage.'
+        },
+        exercise: {
+          question: 'Quelle caractéristique est particulièrement associée au style d’Elliott Erwitt ?',
+          answer: 'Un regard humaniste et humoristique sur les situations quotidiennes, souvent construit autour de contrastes visuels inattendus.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Elliott Erwitt rejoint-il Magnum selon les chronologies historiques ?',
+            answer: 'En 1951.'
+          },
+          {
+            question: 'Quel animal apparaît fréquemment dans son œuvre ?',
+            answer: 'Le chien.'
+          },
+          {
+            question: 'Quels types de photographie pratique-t-il ?',
+            answer: 'La photographie documentaire, la photographie de rue, le portrait et la photographie publicitaire.'
+          }
+        ],
+        sources: [
+          { title: 'The Decisive Network — Early Magnum Photographers', url: 'https://dokumen.pub/the-decisive-network-magnum-photos-and-the-postwar-image-market-1nbsped-0520300351-9780520300354.html' },
+          { title: 'Artsy — A History of Magnum Photos in Ten Photographers', url: 'https://www.artsy.net/article/editorial-a-history-of-magnum-photos-in-ten' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    },
+
+    {
+      id: 'inge-morath',
+      title: 'Inge Morath : le portrait, le voyage et la photographie narrative',
+      field: 'Photographie documentaire et portrait · Entrée chez Magnum : 1954',
+      summary: 'Étudier Inge Morath, son parcours intellectuel, ses voyages, ses portraits et sa contribution à l’évolution de la photographie documentaire.',
+      lesson: {
+        sections: [
+          'Inge Morath naît en 1923 à Graz, en Autriche. Elle étudie les langues et développe une connaissance approfondie de plusieurs cultures européennes. Avant de devenir photographe, elle travaille dans le journalisme et l’édition. Elle rejoint l’environnement professionnel de Magnum au début des années 1950, où elle développe progressivement son activité photographique. Cette expérience de l’écriture influence son travail visuel : ses images s’inscrivent souvent dans une narration plus large et dans une réflexion sur les personnes et les lieux.',
+
+          'Ses reportages l’amènent à voyager en Europe, en Asie, en Afrique et en Amérique. Elle réalise des portraits de personnalités et des documents sur les sociétés qu’elle découvre. Son travail ne se limite pas à la représentation spectaculaire de lieux éloignés. Elle cherche à observer les détails de la vie quotidienne, les traditions et les relations humaines. Ses photographies présentent souvent une grande sensibilité aux expressions, aux gestes et aux ambiances.',
+
+          'Inge Morath devient membre de Magnum au cours des années 1950, avec une intégration généralement datée de 1954 dans les chronologies historiques de l’agence. Elle est l’une des premières femmes à occuper une place importante dans cette coopérative photographique. Son œuvre est également associée à sa collaboration artistique et personnelle avec le dramaturge Arthur Miller, qu’elle épouse en 1962. Elle meurt en 2002. Ses archives témoignent d’une carrière internationale construite sur l’observation et la narration photographique.'
+        ],
+        example: {
+          statement: 'Pourquoi peut-on rapprocher le travail d’Inge Morath de la photographie narrative ?',
+          calculation: 'On observe la relation entre ses images, les lieux, les personnages et les situations sociales qu’elle documente.',
+          answer: 'Ses photographies s’inscrivent souvent dans des ensembles cohérents qui permettent de comprendre un lieu, une personne ou une situation au-delà d’une image isolée.'
+        },
+        exercise: {
+          question: 'Quelle particularité de son parcours distingue Inge Morath de nombreux photographes de sa génération ?',
+          answer: 'Elle possède une formation linguistique et journalistique importante avant de développer sa carrière photographique, ce qui contribue à sa pratique narrative du reportage.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Inge Morath rejoint-elle l’environnement de Magnum selon les chronologies historiques ?',
+            answer: 'En 1954.'
+          },
+          {
+            question: 'Quel dramaturge épouse-t-elle en 1962 ?',
+            answer: 'Arthur Miller.'
+          },
+          {
+            question: 'Quels sujets retrouve-t-on régulièrement dans son œuvre ?',
+            answer: 'Les portraits, les voyages, les cultures et les scènes de vie quotidienne.'
+          }
+        ],
+        sources: [
+          { title: 'The Decisive Network — Early Magnum Photographers', url: 'https://dokumen.pub/the-decisive-network-magnum-photos-and-the-postwar-image-market-1nbsped-0520300351-9780520300354.html' },
+          { title: 'International Center of Photography', url: 'https://www.icp.org/' },
+          { title: 'Harry Ransom Center — Magnum Photos Collection', url: 'https://norman.hrc.utexas.edu/fasearch/findingaid.cfm?eadid=00502&showrequest=0' }
+        ]
+      }
+    },
+
+    {
+      id: 'marc-riboud',
+      title: 'Marc Riboud : la poésie du regard et la photographie humaniste',
+      field: 'Photographie de rue et reportage international · Entrée chez Magnum : 1954',
+      summary: 'Découvrir Marc Riboud, ses voyages, son regard humaniste et ses images emblématiques de la vie quotidienne et des événements internationaux.',
+      lesson: {
+        sections: [
+          'Marc Riboud naît en 1923 à Lyon. Il découvre la photographie pendant sa jeunesse et développe progressivement une pratique personnelle. Après des études d’ingénieur, il choisit de se consacrer à la photographie. Sa rencontre avec Henri Cartier-Bresson contribue à son orientation professionnelle. Il rejoint Magnum en 1954 et commence à réaliser des reportages internationaux qui l’amènent à observer des sociétés très différentes.',
+
+          'Il voyage notamment en Asie, en Europe, en Afrique et au Moyen-Orient. Ses images témoignent des changements politiques, économiques et sociaux de la seconde moitié du XXe siècle. Il photographie les manifestations, les transformations urbaines et les scènes de vie quotidienne. Son style est souvent caractérisé par une composition précise, une attention aux gestes et une recherche d’équilibre entre les personnes et leur environnement. L’une de ses images les plus connues montre une jeune manifestante tenant une fleur face à des soldats américains lors d’une manifestation contre la guerre du Vietnam à Washington en 1967.',
+
+          'Le travail de Riboud dépasse le simple reportage d’actualité. Il construit des séries qui permettent d’observer les sociétés sur la durée et de comprendre les transformations de leur environnement. Ses photographies de Chine sont particulièrement importantes dans son œuvre, car elles témoignent de plusieurs périodes de changements historiques. Il reçoit de nombreuses distinctions et poursuit son activité pendant plusieurs décennies. Il meurt en 2016. Son travail reste une référence de la photographie humaniste et du reportage international.'
+        ],
+        example: {
+          statement: 'Pourquoi la photographie de la manifestante tenant une fleur face aux soldats est-elle devenue une image symbolique du mouvement pacifiste ?',
+          calculation: 'Il faut analyser le contraste entre les éléments présents : la fleur, les soldats, les équipements militaires et la posture de la manifestante.',
+          answer: 'La composition oppose un geste pacifique à la présence militaire. Ce contraste rend l’image immédiatement lisible et lui donne une forte portée symbolique.'
+        },
+        exercise: {
+          question: 'Quel est l’un des sujets importants de l’œuvre de Marc Riboud ?',
+          answer: 'Les sociétés et leurs transformations, notamment à travers ses reportages en Asie, en Chine et dans différents contextes politiques internationaux.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Marc Riboud rejoint-il Magnum selon les chronologies historiques ?',
+            answer: 'En 1954.'
+          },
+          {
+            question: 'Quelle image célèbre réalise-t-il en 1967 à Washington ?',
+            answer: 'Une jeune manifestante tenant une fleur face à des soldats lors d’une manifestation contre la guerre du Vietnam.'
+          },
+          {
+            question: 'Quel type de photographie caractérise particulièrement son œuvre ?',
+            answer: 'Une photographie humaniste et documentaire fondée sur l’observation des personnes et des sociétés.'
+          }
+        ],
+        sources: [
+          { title: 'The Decisive Network — Early Magnum Photographers', url: 'https://dokumen.pub/the-decisive-network-magnum-photos-and-the-postwar-image-market-1nbsped-0520300351-9780520300354.html' },
+          { title: 'Fondation Marc Riboud', url: 'https://www.marcriboud.com/' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    },
+
+    {
+      id: 'bruce-davidson',
+      title: 'Bruce Davidson : les communautés, les marginaux et la société américaine',
+      field: 'Photographie documentaire et sociale · Entrée chez Magnum : 1958',
+      summary: 'Analyser les grands projets documentaires de Bruce Davidson, sa photographie au long cours et son observation des communautés urbaines américaines.',
+      lesson: {
+        sections: [
+          'Bruce Davidson naît en 1933 dans l’Illinois, aux États-Unis. Il développe très tôt un intérêt pour la photographie et poursuit des études dans ce domaine. Après son service militaire, il commence à travailler pour des publications et réalise des projets personnels. Il rejoint Magnum en 1958. Son approche se distingue par son engagement dans la durée auprès des communautés qu’il photographie. Il ne cherche pas seulement à observer une situation de l’extérieur : il établit progressivement une relation avec les personnes et les lieux.',
+
+          'Son projet Brooklyn Gang, réalisé à la fin des années 1950, documente un groupe de jeunes vivant à New York. Davidson s’intéresse à leur quotidien, à leurs relations et à leur environnement social. Dans East 100th Street, réalisé dans les années 1960, il photographie les habitants d’un quartier de Harlem. Ce travail permet d’observer les conditions de vie urbaines et les inégalités sociales. Ses photographies du mouvement des droits civiques aux États-Unis témoignent également des transformations politiques et sociales de cette période.',
+
+          'Dans les années 1980, il réalise Subway, un ensemble photographique consacré aux usagers du métro new-yorkais. Ce projet montre son intérêt pour les espaces publics et les interactions sociales. Il utilise notamment la couleur pour rendre compte de l’environnement urbain et de ses contrastes. L’ensemble de son œuvre se caractérise par des projets développés sur la durée, dans lesquels la relation entre le photographe et les personnes photographiées occupe une place essentielle.'
+        ],
+        example: {
+          statement: 'Pourquoi le projet East 100th Street est-il considéré comme un travail documentaire de longue durée ?',
+          calculation: 'Il faut examiner la répétition des visites, la diversité des situations photographiées et la relation construite avec les habitants du quartier.',
+          answer: 'Le projet repose sur une observation prolongée d’une communauté et de son environnement. Il dépasse le reportage ponctuel pour produire une documentation sociale approfondie.'
+        },
+        exercise: {
+          question: 'Quelle caractéristique distingue la méthode documentaire de Bruce Davidson ?',
+          answer: 'Il développe des projets de longue durée en établissant une relation suivie avec les personnes et les communautés photographiées.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Bruce Davidson rejoint-il Magnum ?',
+            answer: 'En 1958.'
+          },
+          {
+            question: 'Quel quartier de New York documente-t-il dans East 100th Street ?',
+            answer: 'Un quartier de Harlem.'
+          },
+          {
+            question: 'Quel espace urbain photographie-t-il dans son projet Subway ?',
+            answer: 'Le métro de New York.'
+          }
+        ],
+        sources: [
+          { title: 'Artsy — A History of Magnum Photos in Ten Photographers', url: 'https://www.artsy.net/article/editorial-a-history-of-magnum-photos-in-ten' },
+          { title: 'Duke University — Bruce Davidson', url: 'https://nasher.duke.edu/wp-content/uploads/2019/04/Nasher%20Museum%20Board%20of%20Advisors%20Book%20Fall%202019.pdf' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    },
+
+    {
+      id: 'josef-koudelka',
+      title: 'Josef Koudelka : l’exil, les frontières et les bouleversements politiques',
+      field: 'Photographie documentaire et politique · Entrée chez Magnum : 1971',
+      summary: 'Étudier Josef Koudelka, ses photographies de l’invasion de Prague, son travail sur les communautés roms et son approche de l’exil.',
+      lesson: {
+        sections: [
+          'Josef Koudelka naît en 1938 en Tchécoslovaquie. Il étudie l’ingénierie aéronautique et exerce cette profession avant de se consacrer pleinement à la photographie. Il commence à photographier les communautés roms de son pays dans les années 1960. Ce travail donne naissance à un ensemble documentaire important, publié notamment dans le livre Gypsies. Ses images témoignent de modes de vie, de traditions et de réalités sociales souvent peu représentés dans les médias de l’époque.',
+
+          'En août 1968, il photographie l’invasion de Prague par les forces du Pacte de Varsovie. Ses images documentent les réactions de la population et les événements qui suivent l’intervention militaire. Afin de protéger son identité et celle de ses proches, certaines photographies sont diffusées anonymement sous la mention Prague Photographer. Son travail reçoit ensuite la médaille d’or Robert Capa en 1969. Il quitte la Tchécoslovaquie en 1970 et devient un photographe en exil.',
+
+          'Koudelka rejoint Magnum en 1971. Son œuvre évolue ensuite vers des projets consacrés à l’exil, aux paysages et aux transformations des territoires. Dans Exiles, il explore notamment la condition des personnes déplacées et la distance avec leur pays d’origine. Ses projets panoramiques ultérieurs étudient les paysages industriels, les frontières et les transformations humaines de l’environnement. Il développe un langage visuel très personnel, souvent caractérisé par le noir et blanc, les contrastes et une grande précision de composition.'
+        ],
+        example: {
+          statement: 'Pourquoi les photographies de Prague réalisées par Josef Koudelka en 1968 ont-elles une valeur historique particulière ?',
+          calculation: 'Il faut relier le contexte politique de l’invasion, la présence du photographe sur le terrain et la fonction documentaire des images.',
+          answer: 'Elles constituent des témoignages visuels directs de l’invasion de Prague et des réactions de la population. Leur diffusion anonyme montre également les risques politiques auxquels le photographe était confronté.'
+        },
+        exercise: {
+          question: 'Quel événement historique Josef Koudelka photographie-t-il en 1968 ?',
+          answer: 'L’invasion de Prague par les forces du Pacte de Varsovie.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Josef Koudelka rejoint-il Magnum ?',
+            answer: 'En 1971.'
+          },
+          {
+            question: 'Quel sujet documente-t-il dans son projet Gypsies ?',
+            answer: 'Les communautés roms et leurs modes de vie.'
+          },
+          {
+            question: 'Quel thème est particulièrement présent dans son ouvrage Exiles ?',
+            answer: 'L’exil et l’expérience des personnes vivant loin de leur pays d’origine.'
+          }
+        ],
+        sources: [
+          { title: 'Magnum Photos — Josef Koudelka', url: 'https://pro.magnumphotos.com/C.aspx?ERID=24KL535C7T&VF=MAGO31_9_VForm&VP3=CMS3' },
+          { title: 'C/O Berlin — Josef Koudelka', url: 'https://www.co-berlin.org/en/program/exhibitions/josef-koudelka' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    },
+
+    {
+      id: 'susan-meiselas',
+      title: 'Susan Meiselas : les conflits, la mémoire et les droits humains',
+      field: 'Photographie documentaire et engagement social · Entrée chez Magnum : 1976',
+      summary: 'Découvrir Susan Meiselas, son travail en Amérique centrale, son approche des conflits et sa réflexion sur la mémoire des personnes photographiées.',
+      lesson: {
+        sections: [
+          'Susan Meiselas naît en 1948 à Baltimore, aux États-Unis. Elle étudie à Sarah Lawrence College puis à Harvard. Elle commence sa carrière en développant des projets documentaires consacrés à des personnes et à des communautés souvent peu visibles dans les médias. Son premier grand projet photographique porte sur les femmes travaillant dans les spectacles itinérants des foires américaines. Cette série, publiée sous le titre Carnival Strippers en 1976, attire l’attention sur les conditions de travail et les expériences personnelles de ces femmes.',
+
+          'Elle rejoint Magnum en 1976. Elle devient particulièrement connue pour ses reportages sur l’insurrection au Nicaragua entre 1978 et 1979. Ses photographies montrent les événements politiques, les combattants, les civils et les conséquences des affrontements. Elle poursuit ensuite ses recherches documentaires en Amérique centrale et dans d’autres régions du monde. Son approche dépasse la simple production d’images d’actualité : elle s’intéresse également à la mémoire des événements et à la manière dont les photographies sont utilisées après leur réalisation.',
+
+          'Meiselas développe des projets qui associent photographies, témoignages, archives et documents historiques. Dans son travail consacré au Nicaragua et à d’autres contextes politiques, elle cherche à replacer les images dans leur environnement social et historique. Cette méthode permet de donner davantage de place aux personnes photographiées et à leurs propres récits. Son œuvre interroge ainsi le rôle du photographe, les relations de pouvoir entre celui qui photographie et celui qui est photographié, ainsi que la responsabilité documentaire des images.'
+        ],
+        example: {
+          statement: 'Pourquoi Susan Meiselas associe-t-elle parfois photographies, archives et témoignages ?',
+          calculation: 'Il faut comparer les informations apportées par une photographie avec celles fournies par les récits des personnes concernées et les documents historiques.',
+          answer: 'Cette association permet de replacer les images dans leur contexte et de restituer la mémoire des événements à partir de plusieurs points de vue.'
+        },
+        exercise: {
+          question: 'Quel conflit Susan Meiselas documente-t-elle particulièrement en Amérique centrale ?',
+          answer: 'L’insurrection au Nicaragua à la fin des années 1970.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Susan Meiselas rejoint-elle Magnum ?',
+            answer: 'En 1976.'
+          },
+          {
+            question: 'Quel est le sujet de son projet Carnival Strippers ?',
+            answer: 'Les femmes travaillant dans les spectacles itinérants des foires américaines.'
+          },
+          {
+            question: 'Pourquoi associe-t-elle parfois des témoignages aux photographies ?',
+            answer: 'Pour replacer les images dans leur contexte historique et donner une place aux récits des personnes concernées.'
+          }
+        ],
+        sources: [
+          { title: 'International Center of Photography — Susan Meiselas', url: 'https://www.icp.org/browse/archive/constituents/susan-meiselas' },
+          { title: 'San Francisco Museum of Modern Art — Susan Meiselas', url: 'https://www.sfmoma.org/press/release/susan-meiselas-mediations/' },
+          { title: 'Magnum Consortium — Susan Meiselas', url: 'https://www.magnumconsortium.net/index.php/people/MES' }
+        ]
+      }
+    },
+
+    {
+      id: 'raymond-depardon',
+      title: 'Raymond Depardon : le documentaire, les territoires et le regard sur la France',
+      field: 'Photographie documentaire et cinéma · Entrée chez Magnum : 1978',
+      summary: 'Analyser le parcours de Raymond Depardon, son travail de grand reporter, ses projets sur les territoires ruraux et ses liens entre photographie et cinéma.',
+      lesson: {
+        sections: [
+          'Raymond Depardon naît en 1942 à Villefranche-sur-Saône, en France. Il découvre la photographie pendant son enfance dans l’environnement agricole familial. Il part ensuite à Paris et travaille comme reporter pour l’agence Dalmas à partir de 1960. En 1966, il participe à la fondation de l’agence Gamma avec plusieurs photographes. Il couvre de nombreux événements internationaux et développe parallèlement un intérêt croissant pour le cinéma documentaire.',
+
+          'En 1978, Depardon rejoint Magnum Photos. Son travail porte sur des sujets très divers : conflits, événements politiques, justice, vie quotidienne et transformations sociales. Il développe une approche caractérisée par l’observation prolongée et par une certaine retenue dans la mise en scène. Il cherche souvent à laisser les situations se dérouler devant l’objectif sans imposer une interprétation trop visible. Ses images et ses films interrogent ainsi les rapports entre le photographe, les personnes filmées et la réalité documentée.',
+
+          'Une partie importante de son œuvre est consacrée aux territoires français et au monde rural. Son travail sur les campagnes et les paysages met en évidence les transformations des modes de vie, les évolutions agricoles et les changements territoriaux. Il réalise également des projets documentaires sur les institutions, notamment la justice et les services publics. Son œuvre se situe à la rencontre de la photographie, du cinéma et de l’observation sociale. Elle contribue à renouveler les formes du documentaire contemporain.'
+        ],
+        example: {
+          statement: 'Pourquoi le travail de Raymond Depardon sur les campagnes françaises dépasse-t-il la simple photographie de paysage ?',
+          calculation: 'Il faut observer les éléments représentés : les bâtiments, les routes, les habitants, les activités agricoles et les transformations du territoire.',
+          answer: 'Ses photographies documentent les modes de vie et les transformations sociales du monde rural. Le paysage devient ainsi un moyen de comprendre une société et son évolution.'
+        },
+        exercise: {
+          question: 'En quelle année Raymond Depardon rejoint-il Magnum Photos ?',
+          answer: 'En 1978.'
+        },
+        exercises: [
+          {
+            question: 'Quelle agence Raymond Depardon participe-t-il à fonder en 1966 ?',
+            answer: 'L’agence Gamma.'
+          },
+          {
+            question: 'Quels sont les deux principaux domaines artistiques qu’il pratique ?',
+            answer: 'La photographie et le cinéma documentaire.'
+          },
+          {
+            question: 'Quel environnement français occupe une place importante dans ses projets documentaires ?',
+            answer: 'Le monde rural et les territoires français.'
+          }
+        ],
+        sources: [
+          { title: 'Magnum Photos Store — Raymond Depardon', url: 'https://store.magnumphotos.com/collections/raymond-depardon' },
+          { title: 'Magnum Consortium — Raymond Depardon', url: 'https://magnumconsortium.net/index.php/people/DER' },
+          { title: 'Bibliothèque nationale de France', url: 'https://www.bnf.fr/' }
+        ]
+      }
+    },
+
+    {
+      id: 'martin-parr',
+      title: 'Martin Parr : la couleur, la société de consommation et la photographie documentaire',
+      field: 'Photographie documentaire contemporaine · Entrée chez Magnum : 1994',
+      summary: 'Étudier Martin Parr, son usage de la couleur, son observation de la société de consommation et son approche critique de la vie quotidienne.',
+      lesson: {
+        sections: [
+          'Martin Parr naît en 1952 à Epsom, au Royaume-Uni. Il découvre très tôt la photographie et développe une approche personnelle du documentaire. Son travail se distingue par l’utilisation de couleurs très marquées, de cadrages rapprochés et d’une attention particulière aux objets et aux comportements ordinaires. Il observe notamment les loisirs, le tourisme, les habitudes alimentaires et les signes matériels de la société de consommation. Il transforme des situations quotidiennes en images qui interrogent les habitudes collectives.',
+
+          'Son projet The Last Resort, réalisé dans les années 1980, documente les vacanciers d’une station balnéaire populaire anglaise. Il utilise la couleur pour rendre visibles les détails de l’environnement, les objets et les attitudes des personnes photographiées. Ses images peuvent sembler humoristiques, mais elles possèdent également une dimension critique. Elles interrogent les relations entre les individus, les classes sociales, la consommation et les espaces de loisirs.',
+
+          'Martin Parr rejoint Magnum Photos en 1994. Son arrivée provoque des discussions au sein de l’agence, car son style coloré, frontal et parfois satirique diffère de certaines traditions du photojournalisme humaniste en noir et blanc. Son admission illustre l’évolution de Magnum et l’ouverture de l’agence à des formes documentaires nouvelles. Il devient ensuite une figure majeure de la photographie contemporaine et contribue à faire reconnaître la photographie documentaire en couleur comme une pratique artistique et critique.'
+        ],
+        example: {
+          statement: 'Comment l’utilisation de couleurs très marquées participe-t-elle au style photographique de Martin Parr ?',
+          calculation: 'On examine les contrastes chromatiques, les objets présents dans l’image et leur relation avec les comportements sociaux représentés.',
+          answer: 'Les couleurs renforcent l’impact visuel des scènes et attirent l’attention sur les détails matériels de la vie quotidienne. Elles contribuent à l’approche critique et parfois humoristique de son travail.'
+        },
+        exercise: {
+          question: 'Pourquoi l’arrivée de Martin Parr chez Magnum en 1994 constitue-t-elle une évolution importante pour l’agence ?',
+          answer: 'Parce que son style coloré, frontal et parfois satirique élargit les formes de photographie documentaire représentées au sein de Magnum.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Martin Parr rejoint-il Magnum Photos ?',
+            answer: 'En 1994.'
+          },
+          {
+            question: 'Quel projet célèbre documente les vacanciers d’une station balnéaire anglaise ?',
+            answer: 'The Last Resort.'
+          },
+          {
+            question: 'Quels sujets sociaux sont fréquemment présents dans son œuvre ?',
+            answer: 'La société de consommation, le tourisme, les loisirs et les comportements quotidiens.'
+          }
+        ],
+        sources: [
+          { title: 'Le Monde — Martin Parr, dates clés et carrière', url: 'https://www.lemonde.fr/en/obituaries/article/2025/12/07/martin-parr-extraordinary-photographer-of-the-ordinary-dies-at-73_6748247_15.html' },
+          { title: 'Magnum Photos — History of Magnum', url: 'https://pro.magnumphotos.com/CS.aspx?FRM=Frame%3AMAX_5%2CSubHeaderFrame%3AMAGO31_13&VF=MAX_2&VP3=CMS3' },
+          { title: 'National Galleries of Scotland — Magnum Photos', url: 'https://www.nationalgalleries.org/art-and-artists/glossary-terms/magnum-photos' }
+        ]
+      }
+    }
+  ]
+},
+
 ]
