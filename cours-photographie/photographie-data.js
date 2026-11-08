@@ -2550,4 +2550,678 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'photographes-monde',
+  title: 'Les photographes à travers le monde',
+  note: 'Dix chapitres consacrés à dix scènes photographiques nationales ou territoriales, avec cinq photographes par chapitre. Les artistes sont classés par année de naissance lorsque celle-ci est établie. Le pays du chapitre désigne principalement leur ancrage de travail ou leur contribution à cette scène : il ne signifie pas que tous les artistes y sont nés ni qu’ils possèdent tous la même nationalité. Les dates biographiques sont données selon les sources citées ; les frontières, identités nationales et parcours migratoires ont évolué selon les périodes.',
+  chapters: [
+    {
+      id: 'afrique-du-sud',
+      title: 'Afrique du Sud — Photographie, mémoire et société',
+      field: 'Photographie sud-africaine · XIXe–XXIe siècles',
+      summary: 'Cinq parcours montrent comment la photographie sud-africaine a documenté les populations, les paysages, les conflits et les transformations politiques, tout en questionnant le regard documentaire.',
+      lesson: {
+        sections: [
+          'Alfred Martin Duggan-Cronin (1874–1954) est connu pour ses vastes campagnes photographiques consacrées aux communautés d’Afrique australe. Ses images, réalisées dans un contexte colonial, possèdent aujourd’hui une valeur documentaire importante, mais elles doivent être étudiées avec une lecture critique : les catégories, légendes et conditions de prise de vue reflètent aussi les rapports de pouvoir de leur époque. L’historien ne doit donc pas traiter ces photographies comme des témoignages transparents ou neutres.',
+
+          'Constance Stuart Larrabee (1914–2000), née en Angleterre et élevée en Afrique du Sud, ouvre un studio à Pretoria en 1936 après ses études photographiques en Europe. Elle réalise des portraits et photographie les populations sud-africaines, puis devient correspondante de guerre pendant la Seconde Guerre mondiale. Son œuvre permet d’étudier à la fois la construction d’une carrière professionnelle féminine, le portrait de studio et les limites du regard documentaire dans une société structurée par la ségrégation.',
+
+          'David Goldblatt (1930–2018) a consacré une grande partie de son travail à l’observation de la société sud-africaine sous l’apartheid et après sa fin. Plutôt que de rechercher uniquement l’événement spectaculaire, il photographie des lieux, des architectures, des espaces de travail et des scènes ordinaires. Cette approche révèle comment les inégalités et les idéologies s’inscrivent dans l’organisation matérielle du territoire. Ses séries invitent à lire les détails du cadre comme des indices sociaux et politiques.',
+
+          'Ernest Cole (1940–1990) documente les effets de l’apartheid sur la vie quotidienne des personnes noires. Son livre House of Bondage, publié en 1967, rassemble des images qui rendent visibles les mécanismes de discrimination et de contrôle. Son travail est essentiel pour comprendre le rôle du photoreportage dans la dénonciation des injustices. Il faut cependant distinguer la force de ces images de leur contexte de production, de diffusion et de réception à l’étranger.',
+
+          'Santu Mofokeng (1956–2020) développe une pratique attentive à la mémoire, aux paysages et aux communautés. Ses photographies dépassent le simple enregistrement d’un événement : elles interrogent les traces du passé, les récits familiaux et les représentations de l’histoire. Son travail montre que la photographie peut être à la fois document, recherche artistique et réflexion critique sur la manière dont une société se souvient.'
+        ],
+        example: {
+          statement: 'On compare les dates de naissance de Duggan-Cronin (1874), Goldblatt (1930) et Cole (1940). Quel photographe est né le plus tôt ?',
+          calculation: 'Pour classer des années de naissance, on place d’abord l’année numériquement la plus ancienne.',
+          answer: 'Alfred Martin Duggan-Cronin, né en 1874, est le plus ancien des trois.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il analyser le contexte de production d’une photographie documentaire ?',
+          answer: 'Parce que le cadrage, les légendes, le commanditaire et les rapports de pouvoir influencent ce qui est montré et la manière dont le sujet est représenté.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Constance Stuart Larrabee ouvre-t-elle son studio à Pretoria ?',
+            answer: 'En 1936.'
+          },
+          {
+            question: 'Quel système politique est au cœur d’une partie importante du travail d’Ernest Cole ?',
+            answer: 'L’apartheid en Afrique du Sud.'
+          },
+          {
+            question: 'Une photographie documentaire est-elle nécessairement neutre ?',
+            answer: 'Non. Elle résulte toujours de choix de cadrage, de sélection, de légendage et de diffusion.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smithsonian — South Africa 1936–1949: Photographs by Constance Stuart Larrabee',
+            url: 'https://africa.si.edu/exhibitions/south-africa-1936-1949-photographs-constance-stuart-larrabee'
+          },
+          {
+            title: 'South African History Online — Constance Stuart Larrabee',
+            url: 'https://sahistory.org.za/people/constance-stuart-larrabee'
+          },
+          {
+            title: 'South African History Online — David Goldblatt',
+            url: 'https://sahistory.org.za/people/david-goldblatt'
+          },
+          {
+            title: 'South African History Online — Ernest Cole',
+            url: 'https://sahistory.org.za/people/ernest-cole'
+          },
+          {
+            title: 'South African History Online — Santu Mofokeng',
+            url: 'https://sahistory.org.za/people/santu-mofokeng'
+          },
+          {
+            title: 'Walther Collection — Alfred Martin Duggan-Cronin',
+            url: 'https://www.walthercollection.com/en/collection/artists/duggan-cronin-alfred-martin'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'allemagne',
+      title: 'Allemagne — Portrait, modernité et école de Düsseldorf',
+      field: 'Photographie allemande · Fin du XIXe–XXIe siècles',
+      summary: 'Des portraits sociaux d’August Sander aux recherches contemporaines sur l’architecture et les espaces, ce chapitre étudie plusieurs étapes majeures de la photographie allemande.',
+      lesson: {
+        sections: [
+          'August Sander (1876–1964) entreprend dans les années 1920 le vaste projet Menschen des 20. Jahrhunderts, généralement traduit par Hommes du XXe siècle. Il organise ses portraits selon des groupes sociaux et professionnels. L’ambition est de construire une sorte d’inventaire visuel de la société allemande, mais cette classification doit être interprétée comme un projet d’auteur et non comme une description exhaustive ou objective de la population. La frontalité, la pose et les vêtements participent à la signification des images.',
+
+          'Lotte Jacobi (1896–1990), photographe allemande issue d’une famille de photographes, est notamment reconnue pour ses portraits d’artistes, d’écrivains, de scientifiques et de personnalités politiques. Son travail s’inscrit dans les recherches de la Nouvelle Vision photographique, qui renouvelle les angles, les cadrages et la représentation du sujet au XXe siècle. Après avoir fui l’Allemagne nazie en 1935, elle poursuit son activité aux États-Unis : son parcours rappelle que l’histoire de la photographie est aussi traversée par l’exil et les ruptures politiques.',
+
+          'Helmut Newton (1920–2004), né à Berlin, devient célèbre pour ses photographies de mode et ses portraits. Son langage visuel repose souvent sur des mises en scène très construites, des contrastes marqués et une représentation théâtrale des rapports de pouvoir et de genre. Son œuvre a profondément influencé la photographie de mode, mais elle suscite également des débats sur la représentation des corps, le regard et la mise en scène. L’étudier demande donc de distinguer son importance historique de toute adhésion automatique à ses choix esthétiques.',
+
+          'Bernd Becher (1931–2007), avec Hilla Becher, photographie méthodiquement des bâtiments industriels : hauts-fourneaux, châteaux d’eau, silos et installations minières. Les sujets sont souvent isolés, cadrés de façon frontale et présentés en séries comparatives. Cette méthode transforme des constructions utilitaires en objets d’étude formelle et historique. Leur enseignement à Düsseldorf a contribué à former plusieurs photographes importants de la génération suivante.',
+
+          'Candida Höfer (née en 1944) développe notamment des séries consacrées aux espaces publics intérieurs : bibliothèques, musées, salles de concert, hôtels et palais. Ses photographies, souvent réalisées sans présence humaine, permettent d’observer comment l’architecture organise les usages, les circulations et les hiérarchies symboliques. Son travail prolonge certains principes de l’école de Düsseldorf tout en donnant une place centrale à l’expérience des lieux et à leur fonction culturelle.'
+        ],
+        example: {
+          statement: 'On classe August Sander (1876), Lotte Jacobi (1896) et Helmut Newton (1920) par année de naissance.',
+          calculation: '1876 précède 1896, qui précède 1920.',
+          answer: 'L’ordre chronologique est August Sander, Lotte Jacobi, puis Helmut Newton.'
+        },
+        exercise: {
+          question: 'En quoi les séries des Becher diffèrent-elles d’un reportage centré sur un événement ?',
+          answer: 'Elles reposent sur une méthode répétée et comparative qui documente des types de constructions plutôt qu’un événement ponctuel.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le grand projet de portraits d’August Sander ?',
+            answer: 'Menschen des 20. Jahrhunderts, ou Hommes du XXe siècle.'
+          },
+          {
+            question: 'Quel type de bâtiments Bernd et Hilla Becher photographient-ils principalement ?',
+            answer: 'Des architectures industrielles.'
+          },
+          {
+            question: 'Quels espaces Candida Höfer photographie-t-elle fréquemment ?',
+            answer: 'Des espaces publics intérieurs comme les bibliothèques, musées et salles de concert.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Die Photographische Sammlung/SK Stiftung Kultur — August Sander',
+            url: 'https://photographie-stiftungkultur.de/bestaende/august-sander/biographie'
+          },
+          {
+            title: 'Helmut Newton Foundation — Helmut Newton',
+            url: 'https://newton-foundation.org/en/helmut-newton/'
+          },
+          {
+            title: 'The Metropolitan Museum of Art — August Sander',
+            url: 'https://www.metmuseum.org/exhibitions/listings/2004/august-sander'
+          },
+          {
+            title: 'Berlinische Galerie — Lotte Jacobi',
+            url: 'https://berlinischegalerie.de/en/collection/specialised-fields/das-verborgene-museum/lotte-jacobi/'
+          },
+          {
+            title: 'Guggenheim — Candida Höfer',
+            url: 'https://www.guggenheim.org/artwork/artist/candida-hofer'
+          },
+          {
+            title: 'Städel Museum — Andreas Gursky / Düsseldorf School context',
+            url: 'https://sammlung.staedelmuseum.de/en/person/gursky-andreas'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'argentine',
+      title: 'Argentine — Avant-garde, portrait et photographie sociale',
+      field: 'Photographie en Argentine · XXe–XXIe siècles',
+      summary: 'Ce chapitre met en relation les expérimentations surréalistes, le portrait de studio, le photojournalisme et les démarches documentaires développées en Argentine.',
+      lesson: {
+        sections: [
+          'Grete Stern (1904–1999), née en Allemagne et installée en Argentine en 1935, apporte à Buenos Aires une formation liée au design et aux avant-gardes européennes. Avec son compagnon Horacio Coppola, elle participe à la diffusion d’une photographie moderniste. Sa série de photomontages Sueños, publiée dans la revue Idilio à partir de 1948, transforme des récits de rêves en compositions visuelles. Ces images permettent d’étudier les liens entre photographie, montage, psychanalyse populaire et représentations sociales des femmes.',
+
+          'Annemarie Heinrich (1912–2005), née en Allemagne puis installée en Argentine pendant son adolescence, devient une portraitiste majeure de Buenos Aires. Elle photographie des acteurs, chanteurs, danseurs et personnalités du monde culturel. Son travail de studio combine maîtrise de l’éclairage, composition et connaissance des codes de la scène et du cinéma. Il constitue une source précieuse pour l’histoire de la culture populaire argentine, tout en montrant comment le portrait construit une image publique de ses modèles.',
+
+          'Sara Facio (1932–2024) est une photographe et éditrice argentine dont le travail est étroitement lié au portrait et au photojournalisme culturel. Elle photographie de nombreuses personnalités de la littérature et des arts, et contribue à la reconnaissance de la photographie comme pratique culturelle en Argentine. Avec Alicia d’Amico, elle participe à des projets et à des initiatives de diffusion qui donnent une place importante à la photographie documentaire et à la représentation de la société.',
+
+          'Alicia d’Amico (1933–2001) développe une photographie attentive aux personnes et aux réalités sociales. Son travail, souvent rapproché de celui de Sara Facio, montre que le portrait peut être à la fois une rencontre, un document et une construction visuelle. Elle participe à des projets collectifs et à des démarches qui élargissent la place des femmes dans le milieu photographique argentin. Son parcours est également utile pour comprendre le rôle des réseaux professionnels et des associations dans la structuration d’une scène artistique.',
+
+          'Adriana Lestido (née en 1955) est connue pour ses séries documentaires en noir et blanc, dans lesquelles elle suit des personnes et des groupes sur la durée. Son travail privilégie la relation avec les sujets et la continuité d’un projet plutôt que l’image isolée. Les thèmes de la maternité, de l’enfermement, de la marginalité et des liens affectifs y sont abordés avec une grande attention à la dignité des personnes photographiées. Ses séries illustrent les possibilités d’une photographie documentaire construite dans le temps.'
+        ],
+        example: {
+          statement: 'On compare les naissances de Grete Stern (1904), Annemarie Heinrich (1912) et Sara Facio (1932).',
+          calculation: 'Les années sont rangées de la plus ancienne à la plus récente.',
+          answer: 'L’ordre est Grete Stern, Annemarie Heinrich, puis Sara Facio.'
+        },
+        exercise: {
+          question: 'Pourquoi les photomontages de Grete Stern sont-ils importants pour l’histoire de la photographie ?',
+          answer: 'Ils montrent que la photographie peut être transformée par le montage et servir à analyser les rêves, les normes sociales et les représentations culturelles.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle ville Annemarie Heinrich développe-t-elle une grande partie de sa carrière ?',
+            answer: 'À Buenos Aires.'
+          },
+          {
+            question: 'Quels domaines Sara Facio associe-t-elle à sa pratique ?',
+            answer: 'Le portrait, le photojournalisme culturel et l’édition photographique.'
+          },
+          {
+            question: 'Quel principe caractérise plusieurs séries d’Adriana Lestido ?',
+            answer: 'Le suivi documentaire de personnes ou de groupes sur une durée prolongée.'
+          }
+        ],
+        sources: [
+          {
+            title: 'AWARE — Photographes d’Amérique latine',
+            url: 'https://awarewomenartists.com/decouvrir/photographes-damerique-latine/'
+          },
+          {
+            title: 'Ibero-Amerikanisches Institut — Annemarie Heinrich',
+            url: 'https://www.iai.spk-berlin.de/en/collections/about-the-special-collections/papers-and-manuscripts/estate/heinrich-annemarie-1912-2005.html'
+          },
+          {
+            title: 'Hammer Museum — Sara Facio',
+            url: 'https://hammer.ucla.edu/radical-women/artists/sara-facio'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'australie',
+      title: 'Australie — Modernisme, paysage et photographie documentaire',
+      field: 'Photographie australienne · XXe–XXIe siècles',
+      summary: 'Des expéditions polaires aux recherches modernistes et aux pratiques contemporaines, les photographes étudiés construisent des images de l’environnement et de la société australienne.',
+      lesson: {
+        sections: [
+          'Frank Hurley (1885–1962) est photographe, explorateur et cinéaste. Il accompagne plusieurs expéditions en Antarctique, notamment celles de Douglas Mawson et d’Ernest Shackleton, puis devient photographe officiel de guerre pendant les deux conflits mondiaux. Son œuvre associe la documentation d’expéditions, le paysage et une recherche d’images spectaculaires. Certaines de ses compositions de guerre combinent plusieurs négatifs : cette pratique a suscité des controverses sur la frontière entre document, reconstitution et montage.',
+
+          'Max Dupain (1911–1992) est l’une des figures majeures du modernisme photographique australien. Il ouvre son propre studio à Sydney en 1934 et réalise des portraits, des images publicitaires, des photographies de danse et des vues d’architecture. Son image Sunbaker, réalisée vers 1937–1938, est devenue une photographie emblématique de l’identité visuelle australienne. Son travail privilégie souvent les formes nettes, les contrastes et la simplification géométrique.',
+
+          'Olive Cotton (1911–2003), contemporaine de Dupain, développe une œuvre moderniste autonome, particulièrement attentive à la lumière, aux formes et aux effets atmosphériques. Des images comme Teacup Ballet montrent comment un objet ordinaire peut devenir une composition abstraite grâce à l’éclairage et au cadrage. Elle travaille dans le studio de Dupain avant de poursuivre sa propre carrière. Son parcours permet aussi d’étudier la place des femmes dans un milieu professionnel longtemps dominé par les hommes.',
+
+          'David Moore (1927–2003) est reconnu pour sa photographie documentaire et son observation de la vie australienne. Son travail porte sur les personnes, les communautés et les transformations du pays, avec une attention particulière aux gestes et aux situations ordinaires. Il contribue à faire reconnaître la photographie comme un moyen d’interpréter la société, et pas seulement comme un outil d’illustration. Ses images sont également importantes pour l’histoire de la photographie documentaire australienne de l’après-guerre.',
+
+          'Tracey Moffatt (née en 1960) utilise la photographie mise en scène, le cinéma et la narration visuelle pour examiner les questions d’identité, de mémoire, de race et de représentation. Ses séries ne relèvent pas toujours du reportage : elles construisent des scènes, des personnages et des atmosphères qui interrogent les images collectives de l’Australie. Son œuvre montre comment la photographie contemporaine peut emprunter au cinéma et à la fiction pour produire une réflexion critique sur l’histoire et la culture.'
+        ],
+        example: {
+          statement: 'On compare Frank Hurley (1885), Max Dupain (1911) et David Moore (1927).',
+          calculation: 'Le classement chronologique suit les années de naissance croissantes.',
+          answer: 'Frank Hurley est né le premier, suivi de Max Dupain, puis de David Moore.'
+        },
+        exercise: {
+          question: 'Pourquoi les photomontages de guerre de Frank Hurley posent-ils une question historique ?',
+          answer: 'Parce qu’ils mêlent parfois plusieurs négatifs et obligent à distinguer l’enregistrement direct d’un événement de sa reconstruction visuelle.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le titre de l’image emblématique de Max Dupain réalisée vers 1937–1938 ?',
+            answer: 'Sunbaker.'
+          },
+          {
+            question: 'Quel aspect de la photographie Olive Cotton explore-t-elle particulièrement ?',
+            answer: 'La lumière et ses effets sur les formes et les objets.'
+          },
+          {
+            question: 'Quels médiums Tracey Moffatt associe-t-elle à sa pratique ?',
+            answer: 'La photographie, le cinéma et la narration visuelle.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Australian War Memorial — Frank Hurley',
+            url: 'https://www.awm.gov.au/about/our-work/publications/contact/photographers/frank-hurley'
+          },
+          {
+            title: 'Australian Dictionary of Biography — Frank Hurley',
+            url: 'https://adb.anu.edu.au/biography/hurley-james-francis-frank-6774'
+          },
+          {
+            title: 'National Gallery of Australia — Max and Olive',
+            url: 'https://nga.gov.au/learn/learning-resources/max-and-olive-the-photographic-life-of-olive-cotton-and-max-dupain/'
+          },
+          {
+            title: 'National Portrait Gallery Australia — Max Dupain',
+            url: 'https://www.portrait.gov.au/people/max-dupain-1911'
+          },
+          {
+            title: 'National Gallery of Australia — Olive Cotton',
+            url: 'https://nga.gov.au/learn/learning-resources/olive-cotton-drawing-with-light/'
+          },
+          {
+            title: 'National Gallery of Australia — David Moore',
+            url: 'https://nga.gov.au/exhibitions/the-spread-of-time/'
+          },
+          {
+            title: 'National Gallery of Australia — Tracey Moffatt',
+            url: 'https://nga.gov.au/knowmyname/artists/tracey-moffatt/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'bresil',
+      title: 'Brésil — Territoire, société et photographie engagée',
+      field: 'Photographie au Brésil · XIXe–XXIe siècles',
+      summary: 'Ce chapitre relie les premiers grands relevés photographiques du territoire brésilien aux pratiques documentaires et aux recherches contemporaines sur les communautés et l’environnement.',
+      lesson: {
+        sections: [
+          'Marc Ferrez (1843–1923) est l’un des grands photographes brésiliens du XIXe siècle. Son œuvre comprend des paysages, des vues urbaines, des infrastructures et des portraits. Ses photographies constituent aujourd’hui des sources essentielles pour étudier les transformations de Rio de Janeiro et la représentation du territoire brésilien à l’époque impériale. Comme tout document historique, elles doivent être replacées dans les conditions techniques, économiques et politiques de leur production.',
+
+          'Maureen Bisilliat (née en 1931), née en Angleterre et installée au Brésil à partir des années 1950, développe une œuvre profondément liée à la littérature, aux paysages et aux populations du pays. Elle réalise des essais photographiques en dialogue avec des textes d’écrivains brésiliens, notamment João Guimarães Rosa et Jorge Amado. Son travail ne se limite pas à illustrer les livres : il construit une interprétation visuelle qui associe observation, séquence et résonance poétique.',
+
+          'Claudia Andujar (née en 1931), née en Suisse et devenue une figure majeure de la photographie au Brésil, consacre une partie essentielle de son œuvre au peuple Yanomami et à la forêt amazonienne. Ses images sont liées à un engagement de longue durée pour la défense des droits des peuples autochtones. Elles obligent à réfléchir à la responsabilité du photographe, à la relation avec les personnes photographiées et aux usages politiques des images. La photographie devient ici un outil de visibilité et de mobilisation, sans remplacer la parole des communautés concernées.',
+
+          'Sebastião Salgado (1944–2025) construit de grands projets documentaires à l’échelle internationale. Ses séries portent notamment sur le travail, les migrations, les déplacements de population et les transformations environnementales. Son approche se caractérise par des projets de longue durée, une composition très travaillée et un usage important du noir et blanc. Ses images ont suscité une large reconnaissance, mais aussi des discussions sur l’esthétique du documentaire, la représentation de la souffrance et la distance entre le photographe et les sujets.',
+
+          'Miguel Rio Branco (né en 1946) associe photographie, peinture, cinéma et installation. Son travail explore souvent les marges sociales, les espaces urbains, les corps et les matières, avec une attention particulière à la couleur et à la densité visuelle. Il ne cherche pas toujours à produire un récit linéaire : les images peuvent fonctionner par rapprochements, contrastes et associations. Cette démarche montre que la photographie documentaire et la photographie d’art ne constituent pas nécessairement deux catégories étanches.'
+        ],
+        example: {
+          statement: 'Marc Ferrez naît en 1843 et Claudia Andujar en 1931. Quelle est la différence entre leurs années de naissance ?',
+          calculation: '1931 − 1843 = 88.',
+          answer: 'Marc Ferrez est né 88 ans avant Claudia Andujar.'
+        },
+        exercise: {
+          question: 'En quoi la pratique de Claudia Andujar dépasse-t-elle la simple production d’images ?',
+          answer: 'Elle s’inscrit dans un engagement durable auprès des Yanomami et dans la défense de leurs droits, ce qui implique une réflexion sur la responsabilité du photographe.'
+        },
+        exercises: [
+          {
+            question: 'Quel type de sujets Marc Ferrez photographie-t-il au XIXe siècle ?',
+            answer: 'Des paysages, des vues urbaines, des infrastructures et des portraits.'
+          },
+          {
+            question: 'Avec quel domaine Maureen Bisilliat met-elle fréquemment ses photographies en dialogue ?',
+            answer: 'La littérature.'
+          },
+          {
+            question: 'Quels grands thèmes Sebastião Salgado a-t-il documentés ?',
+            answer: 'Le travail, les migrations, les déplacements de population et l’environnement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'ABIMFI — Histoire de la photographie au Brésil',
+            url: 'https://abimfi.org.br/area-de-atuacao/fotografico-acoes-realizadas/'
+          },
+          {
+            title: 'Instituto Moreira Salles — Marc Ferrez',
+            url: 'https://ims.com.br/exposicao/marc-ferrez-territorio-e-imagem-ims-rio/'
+          },
+          {
+            title: 'Instituto Moreira Salles — Claudia Andujar',
+            url: 'https://ims.com.br/2021/06/10/claudia-andujar-90-anos/'
+          },
+          {
+            title: 'Instituto Moreira Salles — Maureen Bisilliat',
+            url: 'https://ims.com.br/2017/06/01/sobre-maureen-bisilliat/'
+          },
+          {
+            title: 'Revista Pesquisa FAPESP — Claudia Andujar et Maureen Bisilliat',
+            url: 'https://revistapesquisa.fapesp.br/exposicao-conecta-as-trajetorias-de-claudia-andujar-lux-vidal-e-maureen-bisilliat/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'chine',
+      title: 'Chine — Tradition picturale, modernité et photographie contemporaine',
+      field: 'Photographie chinoise · XXe–XXIe siècles',
+      summary: 'L’histoire de la photographie en Chine s’est développée dans le dialogue entre techniques importées, traditions visuelles locales, presse, transformations politiques et pratiques artistiques contemporaines.',
+      lesson: {
+        sections: [
+          'Lang Jingshan (1892–1995) est l’un des pionniers de la photographie artistique chinoise. Il cherche à rapprocher la photographie des principes de la peinture traditionnelle, notamment par la composition et la superposition de plusieurs négatifs. Sa « photographie composite » construit des paysages qui évoquent les codes de la peinture lettrée. Son travail montre que l’adoption d’une technique venue d’ailleurs ne signifie pas une simple imitation : elle peut être réinterprétée à partir d’une esthétique locale.',
+
+          'Sha Fei (1912–1950), photographe et photojournaliste chinois, documente les bouleversements politiques et militaires de son époque. Ses images sont associées à la guerre sino-japonaise et à la documentation des forces communistes. Elles témoignent du rôle central de la photographie dans la production d’informations et de récits politiques. Leur lecture historique nécessite de tenir compte des conditions de reportage, des institutions de publication et du contexte de guerre.',
+
+          'Hou Bo (1924–2017) est une photographe chinoise connue pour ses images de Mao Zedong et de la vie politique de la République populaire de Chine. Son travail permet d’étudier la fabrication de l’iconographie officielle et la place de la photographie dans la représentation du pouvoir. Il est important de ne pas confondre la circulation très large de certaines images avec une vision complète de la société : les photographies officielles répondent aussi à des choix institutionnels et à des objectifs de communication.',
+
+          'Liu Heung Shing (né en 1951), photographe et photojournaliste né à Hong Kong, a travaillé sur les transformations de la Chine contemporaine et sur les événements politiques de la fin du XXe siècle. Son parcours s’inscrit dans une histoire transnationale de la presse photographique, où les lieux de naissance, les langues de travail et les zones de reportage ne coïncident pas nécessairement. Ses images contribuent à documenter les changements sociaux et urbains à travers une pratique journalistique.',
+
+          'Chen Wei (né en 1980) appartient à une génération contemporaine qui utilise la photographie mise en scène pour construire des scènes parfois proches du théâtre ou du cinéma. Ses images interrogent la mémoire, l’expérience urbaine, l’isolement et les imaginaires collectifs. Elles ne doivent pas être lues comme des prises de vue spontanées d’événements réels : la construction de la scène fait partie intégrante du propos artistique. Ce travail illustre la diversité des pratiques photographiques contemporaines en Chine.'
+        ],
+        example: {
+          statement: 'Lang Jingshan est né en 1892 et Sha Fei en 1912. Quel est l’écart entre leurs années de naissance ?',
+          calculation: '1912 − 1892 = 20.',
+          answer: 'Vingt années séparent leurs années de naissance.'
+        },
+        exercise: {
+          question: 'Pourquoi la photographie composite de Lang Jingshan est-elle importante ?',
+          answer: 'Elle adapte des techniques photographiques à des principes de composition issus de la peinture traditionnelle chinoise.'
+        },
+        exercises: [
+          {
+            question: 'Quelle tradition visuelle influence les compositions de Lang Jingshan ?',
+            answer: 'La peinture traditionnelle chinoise.'
+          },
+          {
+            question: 'Quel contexte historique le travail de Sha Fei documente-t-il notamment ?',
+            answer: 'La guerre sino-japonaise et les bouleversements politiques de son époque.'
+          },
+          {
+            question: 'Les photographies mises en scène de Chen Wei doivent-elles être prises pour des reportages spontanés ?',
+            answer: 'Non. La construction de la scène est une composante essentielle de son travail artistique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Smarthistory — Lang Jingshan and early Chinese photography',
+            url: 'https://smarthistory.org/lang-jingshan-early-chinese-photography/'
+          },
+          {
+            title: 'National Museum of Taiwan History — Lang Jingshan',
+            url: 'https://artistsday.nmh.gov.tw/En/art9.html'
+          },
+          {
+            title: 'Smithsonian — Lang Jingshan archival record',
+            url: 'https://collections.si.edu/search/detail/ead_component%3Asova-fsa-a1999-33-ref905?print=yes'
+          },
+          {
+            title: 'Harvard Fairbank Center — Sha Fei (1912–1950)',
+            url: 'https://fairbank.fas.harvard.edu/research/exhibitions/sha-fei-%E6%B2%99%E9%A3%9E-1912-1950-the-photographer-who-shaped-modern-china/'
+          },
+          {
+            title: 'China Photographers Association — Hou Bo',
+            url: 'https://www.cpanet.org.cn/detail_mdetail_103841.html'
+          },
+          {
+            title: 'Museum of Art Pudong — Liu Heung Shing',
+            url: 'https://museumofartpd.org.cn/en/mediadetail?id=105'
+          },
+          {
+            title: 'White Rabbit Gallery — Chen Wei',
+            url: 'https://whiterabbitcollection.org/artist/chen-wei/'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'egypte',
+      title: 'Égypte — Portrait de studio, mémoire et identité',
+      field: 'Photographie en Égypte · XXe–XXIe siècles',
+      summary: 'Ce chapitre étudie la photographie de studio et les pratiques contemporaines en Égypte. Les artistes cités n’ont pas tous la même origine familiale ou nationale : leur point commun est leur contribution à la scène photographique égyptienne.',
+      lesson: {
+        sections: [
+          'Armenak Artsrouni, connu sous le nom de Studio Armand (1901–1963), est un photographe arméno-égyptien actif au Caire. Après avoir travaillé dans des studios photographiques, il ouvre son propre atelier dans les années 1930. Il se spécialise notamment dans le portrait et la photographie de mariage, tout en photographiant des personnalités du monde politique, artistique et mondain. Les archives de l’Arab Image Foundation permettent d’étudier son travail comme un témoignage de la culture visuelle du Caire au milieu du XXe siècle.',
+
+          'Van-Leo, né Levon Boyadjian (1921–2002), est un photographe de studio d’origine arménienne qui a vécu et travaillé au Caire. Il réalise des portraits de personnalités du monde artistique et culturel, mais aussi des photographies destinées à une clientèle ordinaire. Ses autoportraits témoignent d’une recherche plus expérimentale sur l’identité et la mise en scène de soi. Son archive constitue une source majeure pour l’histoire sociale et visuelle du Caire sur plusieurs décennies.',
+
+          'Sherif Sonbol (1956–2023) est un photographe égyptien dont le travail est associé notamment à la photographie culturelle et à la documentation du patrimoine. Il contribue à la circulation d’images sur les monuments, les arts et la vie culturelle. Son parcours rappelle que la photographie peut être un outil de médiation entre les institutions, les spécialistes et le grand public, tout en exigeant une attention aux conditions de prise de vue et à la contextualisation des lieux représentés.',
+
+          'Youssef Nabil (né en 1972 au Caire) construit des images inspirées par le cinéma égyptien et les anciens portraits de studio. Il photographie en noir et blanc puis colorie manuellement ses tirages, renouant avec une pratique artisanale historiquement utilisée pour les portraits et les affiches. Ses images mêlent mémoire personnelle, nostalgie et mise en scène. La couleur appliquée à la main n’est pas un simple effet décoratif : elle participe à la création d’un univers visuel volontairement construit.',
+
+          'Laura El-Tantawy (née en 1980 au Royaume-Uni de parents égyptiens) est une photographe documentaire britannico-égyptienne dont les projets explorent le sentiment d’appartenance, l’environnement et les transformations sociales. Son travail sur l’Égypte associe expérience personnelle et observation documentaire. Son parcours transnational montre pourquoi il est nécessaire de distinguer nationalité, lieu de naissance, héritage familial et territoire photographié lorsqu’on classe les artistes par pays.'
+        ],
+        example: {
+          statement: 'On compare Van-Leo (1921–2002) et Youssef Nabil (né en 1972).',
+          calculation: '1972 − 1921 = 51.',
+          answer: 'Youssef Nabil est né 51 ans après Van-Leo.'
+        },
+        exercise: {
+          question: 'Pourquoi le portrait de studio est-il une source importante pour l’histoire sociale du Caire ?',
+          answer: 'Il documente les pratiques familiales, les représentations de soi, les métiers et les transformations de la société urbaine.'
+        },
+        exercises: [
+          {
+            question: 'Quel était le nom de naissance de Van-Leo ?',
+            answer: 'Levon Boyadjian.'
+          },
+          {
+            question: 'Quelle technique Youssef Nabil utilise-t-il sur ses tirages en noir et blanc ?',
+            answer: 'Il les colorie à la main.'
+          },
+          {
+            question: 'Pourquoi Laura El-Tantawy est-elle présentée comme britannico-égyptienne ?',
+            answer: 'Elle est née au Royaume-Uni de parents égyptiens et son parcours relie les deux contextes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Armenian Photography Foundation — Studio Armand',
+            url: 'https://lusadaran.org/artists/artsruni-armenak-studio-armand/'
+          },
+          {
+            title: 'Arab Image Foundation — Armand Collection',
+            url: 'https://www.arabimagefoundation.org/collections/0043ar'
+          },
+          {
+            title: 'American University in Cairo — Van-Leo Photographer',
+            url: 'https://library.aucegypt.edu/libraries/rbscl/photographs/van-leo'
+          },
+          {
+            title: 'AUC Digital Collections — Van-Leo Photographic Collection',
+            url: 'https://digitalcollections.aucegypt.edu/digital/collection/p15795coll10'
+          },
+          {
+            title: 'AUC Press — Sherif Sonbol (1956–2023)',
+            url: 'https://aucpress.com/blog/2024/01/08/auc-press-mourns-the-loss-of-a-photographer-who-brought-passion-and-artistry-to-his-work/'
+          },
+          {
+            title: 'Youssef Nabil — Biography',
+            url: 'https://youssefnabil.com/info/biography/'
+          },
+          {
+            title: 'Pinault Collection — Youssef Nabil',
+            url: 'https://lesoeuvres.pinaultcollection.com/en/artist/youssef-nabil'
+          },
+          {
+            title: 'World Press Photo — Laura El-Tantawy',
+            url: 'https://www.worldpressphoto.org/laura-el-tantawy'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'inde',
+      title: 'Inde — Archives, indépendance et photographie contemporaine',
+      field: 'Photographie en Inde · XIXe–XXIe siècles',
+      summary: 'Cinq photographes permettent de suivre le passage des archives coloniales et des portraits princiers au photojournalisme de l’indépendance et aux pratiques contemporaines.',
+      lesson: {
+        sections: [
+          'Raja Deen Dayal (1844–1905) est l’un des photographes indiens les plus importants du XIXe siècle. Formé au dessin technique et à l’ingénierie, il développe une activité photographique soutenue par des mécènes princiers, notamment à Indore et Hyderabad. Il réalise des portraits de souverains, des vues architecturales et des images de sites historiques. Ses photographies sont précieuses pour l’étude du patrimoine et de la société de son époque, mais elles reflètent aussi les attentes de leurs commanditaires et le contexte du pouvoir princier et colonial.',
+
+          'Umrao Singh Sher-Gil (1870–1954) est connu comme photographe amateur et pour les portraits qu’il réalise de sa famille et de son entourage. Son archive est particulièrement importante pour l’histoire familiale et culturelle de l’Inde du début du XXe siècle, notamment parce qu’elle documente l’environnement de l’artiste Amrita Sher-Gil. Ses images montrent que la photographie privée peut devenir une source historique majeure lorsque les archives sont conservées, identifiées et étudiées.',
+
+          'Homai Vyarawalla (1913–2012), connue sous le pseudonyme Dalda 13, est considérée comme la première femme photojournaliste professionnelle de l’Inde. Elle photographie les dernières années du pouvoir britannique, l’indépendance et les premières décennies de la République. Ses images documentent les cérémonies officielles, les responsables politiques et les transformations de la vie publique. Son parcours met en évidence les obstacles rencontrés par les femmes dans les métiers de la presse et l’importance de leur présence dans la constitution des archives nationales.',
+
+          'Raghu Rai (né en 1942) est un photographe et photojournaliste indien dont les reportages couvrent la vie politique, sociale et culturelle du pays. Son travail est associé à une observation attentive des personnes et des événements, ainsi qu’à une pratique du livre et de la série photographique. Ses images permettent d’aborder le rôle du photojournalisme dans la construction de la mémoire collective et la manière dont une photographie peut condenser un événement tout en restant liée à un contexte précis.',
+
+          'Dayanita Singh (née en 1961) explore les relations entre photographie, livre, archive et exposition. Ses projets prennent souvent la forme de séquences et de structures modulables, dans lesquelles les images peuvent être réorganisées et présentées de plusieurs façons. Elle interroge ainsi la manière dont les archives se construisent et dont le spectateur établit des liens entre les photographies. Son œuvre montre que le livre photographique et l’installation sont des formes essentielles de création, au même titre que l’image isolée.'
+        ],
+        example: {
+          statement: 'Raja Deen Dayal naît en 1844 et Homai Vyarawalla en 1913. Quel est l’écart entre leurs années de naissance ?',
+          calculation: '1913 − 1844 = 69.',
+          answer: 'Homai Vyarawalla est née 69 ans après Raja Deen Dayal.'
+        },
+        exercise: {
+          question: 'Pourquoi les archives de Homai Vyarawalla sont-elles importantes pour l’histoire de l’Inde ?',
+          answer: 'Elles documentent la fin du pouvoir britannique, l’indépendance et la formation de la vie publique de la nouvelle nation.'
+        },
+        exercises: [
+          {
+            question: 'Quels types de sujets Raja Deen Dayal photographie-t-il ?',
+            answer: 'Des portraits princiers, des monuments, des sites historiques et des paysages.'
+          },
+          {
+            question: 'Quel domaine est central dans la pratique de Raghu Rai ?',
+            answer: 'Le photojournalisme et le reportage sur la société indienne.'
+          },
+          {
+            question: 'Quelles formes Dayanita Singh utilise-t-elle en plus de la photographie ?',
+            answer: 'Le livre, l’archive et l’installation.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IGNCA — Raja Deen Dayal Gallery',
+            url: 'https://ignca.gov.in/divisionss/kalanidhi/cultural-archive/raja-deen-dayal-gallery/'
+          },
+          {
+            title: 'IGNCA — The Legacy of Raja Deen Dayal',
+            url: 'https://ignca.gov.in/the-legacy-of-raja-deen-dayal-2/'
+          },
+          {
+            title: 'National Gallery of Modern Art, New Delhi — Homai Vyarawalla',
+            url: 'https://ngmaindia.gov.in/ce_homai-vyarawalla.asp'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'japon',
+      title: 'Japon — Du portrait historique à la photographie expérimentale',
+      field: 'Photographie japonaise · XIXe–XXIe siècles',
+      summary: 'Ce chapitre présente les ateliers de portrait du XIXe siècle, les bouleversements de l’après-guerre et plusieurs orientations majeures de la photographie japonaise contemporaine.',
+      lesson: {
+        sections: [
+          'Kusakabe Kimbei (1841–1934) travaille d’abord comme coloriste et assistant auprès de photographes étrangers, avant d’ouvrir son propre atelier à Yokohama en 1881. Il est associé aux albums de vues du Japon, souvent réalisés pour une clientèle étrangère. Ses tirages colorisés à la main témoignent d’une période où la photographie se développe en dialogue avec les pratiques de l’estampe et les attentes touristiques. Il faut distinguer la valeur documentaire de ces images de leur dimension commerciale et parfois mise en scène.',
+
+          'Shōmei Tōmatsu (1930–2012) devient une figure importante de la photographie japonaise d’après-guerre. Ses séries abordent les conséquences de la guerre, l’occupation américaine, la modernisation et les transformations de la société. Il participe au renouvellement du langage photographique au Japon, en accordant une place forte à la subjectivité, à la fragmentation et aux associations visuelles. Son travail ne se limite pas à illustrer l’histoire : il exprime aussi la manière dont celle-ci est ressentie et mémorisée.',
+
+          'Daidō Moriyama (né en 1938) développe une photographie de rue reconnaissable par ses cadrages instables, ses contrastes marqués et son esthétique parfois granuleuse. Il photographie les rues, les enseignes, les passants et les signes de la culture urbaine. Son travail remet en question l’idée d’une photographie parfaitement nette et objective : l’image devient une expérience visuelle fragmentaire, liée au mouvement et à la perception du photographe dans la ville.',
+
+          'Hiroshi Sugimoto (né en 1948) construit des séries conceptuelles dans lesquelles la photographie sert à explorer le temps, la mémoire et la perception. Ses travaux sur les salles de cinéma, les théâtres, les paysages marins ou les dioramas reposent sur des protocoles précis et des choix formels rigoureux. La photographie devient une expérience de durée et de représentation : elle ne se contente pas de montrer un sujet, elle interroge les conditions mêmes de la vision.',
+
+          'Rinko Kawauchi (née en 1972) développe une photographie attentive aux détails du quotidien, aux phénomènes naturels et aux instants fragiles. Ses images privilégient souvent la lumière douce, les couleurs délicates et les rapprochements entre des sujets apparemment éloignés. Leur sens se construit par séquences, notamment dans les livres photographiques. Son œuvre rappelle que la photographie peut faire émerger une réflexion sur le temps et la vie à partir d’éléments ordinaires.'
+        ],
+        example: {
+          statement: 'Kusakabe Kimbei est né en 1841 et Shōmei Tōmatsu en 1930. Quel est l’écart entre leurs années de naissance ?',
+          calculation: '1930 − 1841 = 89.',
+          answer: 'Shōmei Tōmatsu est né 89 ans après Kusakabe Kimbei.'
+        },
+        exercise: {
+          question: 'Pourquoi les images de Daidō Moriyama sont-elles souvent associées à une perception fragmentaire de la ville ?',
+          answer: 'Ses cadrages, ses contrastes et son esthétique du mouvement donnent à voir une expérience urbaine subjective plutôt qu’une description stable et exhaustive.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle ville Kusakabe Kimbei ouvre-t-il son atelier en 1881 ?',
+            answer: 'À Yokohama.'
+          },
+          {
+            question: 'Quels thèmes Shōmei Tōmatsu aborde-t-il dans son travail ?',
+            answer: 'La guerre, l’occupation, la modernisation et les transformations de la société japonaise.'
+          },
+          {
+            question: 'Quel rôle le temps joue-t-il dans les séries de Hiroshi Sugimoto ?',
+            answer: 'Il devient un sujet central, exploré au moyen de protocoles photographiques précis.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Museum of Fine Arts, Houston — Kusakabe Kimbei',
+            url: 'https://emuseum.mfah.org/people/18430/kusakabe-kimbei'
+          },
+          {
+            title: 'Smithsonian National Museum of Asian Art — Shomei Tomatsu',
+            url: 'https://asia.si.edu/explore-art-culture/interactives/japan-modern-photography-from-the-gloria-katz-and-willard-huyck-collection/japan-modern-people/tomatsu-shomei/'
+          },
+          {
+            title: 'Daido Moriyama Photo Foundation — Biography',
+            url: 'https://www.moriyamadaido.com/en/biography/'
+          },
+          {
+            title: 'Fondation Cartier — Rinko Kawauchi',
+            url: 'https://www.fondationcartier.com/en/collection/artists/rinko-kawauchi'
+          },
+          {
+            title: 'MoMA — Hiroshi Sugimoto',
+            url: 'https://www.moma.org/artists/5721-hiroshi-sugimoto'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'mexique',
+      title: 'Mexique — Modernité, identité et mémoire collective',
+      field: 'Photographie mexicaine · XXe–XXIe siècles',
+      summary: 'Les cinq photographes de ce chapitre explorent les relations entre modernité, vie quotidienne, héritages culturels et représentation des communautés au Mexique.',
+      lesson: {
+        sections: [
+          'Manuel Álvarez Bravo (1902–2002) est l’une des figures majeures de la photographie moderne au Mexique. Il développe une œuvre attentive à la vie quotidienne, aux paysages et aux contradictions de la modernisation. Ses images associent souvent observation documentaire, construction poétique et ambiguïté visuelle. Bien qu’il ait été rapproché du surréalisme, il ne s’est pas simplement identifié à ce mouvement : son travail s’enracine dans l’histoire culturelle mexicaine et dans l’observation de ses réalités sociales.',
+
+          'Lola Álvarez Bravo (1903–1993) joue un rôle essentiel dans le développement de la photographie mexicaine du XXe siècle. Portraitiste, photographe documentaire et éditrice d’images, elle photographie des artistes, des scènes de la vie quotidienne et des réalités sociales. Son travail permet de comprendre la place des femmes dans les réseaux artistiques et culturels du Mexique. Il est également important de ne pas la réduire à son lien personnel avec Manuel Álvarez Bravo : sa carrière et ses choix visuels possèdent leur propre cohérence.',
+
+          'Mariana Yampolsky (1925–2002), née à Chicago et devenue une figure importante de la photographie au Mexique, consacre une grande partie de son œuvre aux communautés rurales, aux traditions et à l’architecture vernaculaire. Ses photographies témoignent d’un intérêt durable pour les modes de vie et les cultures populaires. Son regard s’inscrit dans une relation de longue durée avec le pays et ses habitants ; il convient toutefois de lire ses images comme des constructions documentaires, et non comme des portraits exhaustifs de toutes les réalités rurales mexicaines.',
+
+          'Pedro Meyer (né en 1935) est une figure importante des débats sur la photographie documentaire et les technologies numériques. Son travail a contribué à interroger les frontières entre photographie, manipulation et vérité documentaire, notamment avec l’évolution des outils numériques. Il défend l’idée que toute photographie résulte déjà de choix et de transformations, et que le numérique rend ces opérations plus visibles. Son œuvre est donc utile pour comprendre les débats contemporains sur l’authenticité et la crédibilité des images.',
+
+          'Graciela Iturbide (née en 1942) développe une photographie en noir et blanc attentive aux communautés, aux rituels, aux paysages et aux identités culturelles. Son travail sur Juchitán, dans l’État d’Oaxaca, est particulièrement connu. Ses images ne doivent pas être réduites à une représentation folklorique : elles construisent une relation entre observation, symboles et expérience personnelle. Son œuvre permet d’aborder la manière dont un photographe travaille avec des communautés et comment les images participent à la construction des représentations culturelles.'
+        ],
+        example: {
+          statement: 'Manuel Álvarez Bravo est né en 1902 et Mariana Yampolsky en 1925. Quel est l’écart entre leurs années de naissance ?',
+          calculation: '1925 − 1902 = 23.',
+          answer: 'Mariana Yampolsky est née 23 ans après Manuel Álvarez Bravo.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il éviter de réduire les photographies de Graciela Iturbide à des images folkloriques ?',
+          answer: 'Parce qu’elles résultent d’un travail artistique et d’une relation avec les sujets, et qu’elles explorent des identités et des symboles complexes plutôt qu’une image simplifiée de la culture.'
+        },
+        exercises: [
+          {
+            question: 'Quel photographe mexicain est associé à la réflexion sur la photographie numérique et la manipulation ?',
+            answer: 'Pedro Meyer.'
+          },
+          {
+            question: 'Quel territoire est particulièrement associé au travail de Graciela Iturbide ?',
+            answer: 'Juchitán, dans l’État d’Oaxaca.'
+          },
+          {
+            question: 'Quels sujets Mariana Yampolsky photographie-t-elle fréquemment ?',
+            answer: 'Les communautés rurales, les traditions et l’architecture vernaculaire.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Getty — Instante/revelación: Moments in Mexican Photography',
+            url: 'https://www.getty.edu/exhibitions/mexican-photography/'
+          },
+          {
+            title: 'Getty — Mexican photographers exhibition overview',
+            url: 'https://www.getty.edu/news/photography-fotografia-instante-revelacion-moments-in-mexican-photography/'
+          },
+          {
+            title: 'MoMA — Manuel Álvarez Bravo',
+            url: 'https://www.moma.org/artists/135-manuel-alvarez-bravo'
+          },
+          {
+            title: 'Secretaría de Educación Pública — Manuel Álvarez Bravo',
+            url: 'https://www.gob.mx/sep/acciones-y-programas/manuel-alvarez-bravo'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
 ]
