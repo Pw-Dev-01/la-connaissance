@@ -10550,6 +10550,274 @@
   ]
 },
 
+{
+  id: 'particules-chargees',
+  title: 'Les particules chargées',
+  note: 'Parcours approfondi allant des propriétés de la charge électrique aux descriptions quantiques des particules. Les modèles classiques sont présentés comme des approximations adaptées à certaines échelles ; les modèles quantiques décrivent les états et les probabilités de mesure à l’échelle microscopique.',
+  chapters: [
+    {
+      id: 'charge-electrique-et-quantification',
+      title: 'La charge électrique : propriétés, conservation et quantification',
+      field: 'Électromagnétisme · Charge électrique et constituants de la matière',
+      summary: 'Définir la charge électrique, distinguer les signes positif et négatif, comprendre la neutralité, la conservation de la charge et le caractère quantifié de la charge des particules.',
+      lesson: {
+        sections: [
+          'La charge électrique est une propriété physique fondamentale qui détermine comment une particule ou un objet interagit avec les champs électromagnétiques. Dans les phénomènes électrostatiques, 2 corps portant des charges de même signe se repoussent, tandis que 2 corps portant des charges de signes opposés s’attirent. La charge est une grandeur algébrique : son signe fait partie de sa définition. Dans le Système international, elle se mesure en coulombs (C). Il faut distinguer la charge d’une particule de sa masse : une particule peut être chargée ou neutre, et 2 particules de masses différentes peuvent porter la même charge.',
+          'Dans la matière ordinaire, les électrons portent la charge −e et les protons la charge +e. Les neutrons ont une charge électrique totale nulle. La valeur de la charge élémentaire e est exactement 1,602 176 634 × 10⁻¹⁹ C dans le Système international. Cette valeur est exacte depuis la redéfinition du SI entrée en vigueur en 2019. Un objet macroscopique peut porter une charge nette parce qu’il a gagné ou perdu des électrons, ou parce que ses charges se sont redistribuées. Un objet neutre n’est pas dépourvu de charges : il possède simplement une charge totale nulle.',
+          'La charge électrique obéit à une loi de conservation. Dans un système isolé, la somme algébrique des charges reste constante au cours des transformations physiques. Lors d’un frottement entre 2 matériaux, par exemple, la charge n’est pas créée à partir de rien : des électrons sont transférés d’un matériau à l’autre. La charge perdue par l’un est gagnée par l’autre. Dans les réactions de création ou d’annihilation de particules, la charge totale est également conservée ; les particules produites doivent respecter ce bilan.',
+          'La charge observée des particules isolées est quantifiée en unités de e pour les particules usuelles comme l’électron, le proton et les ions. Un ion est un atome ou un groupe d’atomes qui possède une charge nette parce qu’il a perdu ou gagné un ou plusieurs électrons. Les quarks ont des charges fractionnaires, +2e/3 ou −e/3, mais ils ne sont pas observés isolément dans les conditions ordinaires : ils sont confinés dans des hadrons, dont les charges observées sont des multiples entiers de e. Il serait donc incorrect d’affirmer que toute particule fondamentale porte nécessairement une charge entière de e.',
+          'La neutralité électrique d’un atome découle de la compensation entre les charges positives de ses protons et les charges négatives de ses électrons. Pour un atome neutre dans son état usuel, le nombre d’électrons est égal au nombre de protons. Si l’atome perd un électron, il devient un ion positif ; s’il gagne un électron, il devient un ion négatif. Le noyau peut rester inchangé lors de ces ionisations ordinaires. Cette distinction entre transformation électronique et transformation nucléaire est essentielle pour ne pas confondre ionisation et changement d’élément chimique.'
+        ],
+        example: {
+          statement: 'Un atome neutre possède 11 protons et 11 électrons. Il perd 2 électrons. Déterminer sa charge électrique finale.',
+          calculation: 'La charge totale vaut Q = 11(+e) + 9(−e) = +2e. Avec e = 1,602 176 634 × 10⁻¹⁹ C, on obtient Q = +3,204 353 268 × 10⁻¹⁹ C.',
+          answer: 'L’atome devient un ion de charge +2e, soit +3,204 353 268 × 10⁻¹⁹ C. Il s’agit d’un cation : la perte de 2 électrons laisse un excès de charge positive.'
+        },
+        exercise: {
+          question: 'Pourquoi un objet électriquement neutre peut-il tout de même contenir un très grand nombre de charges électriques ?',
+          answer: 'La neutralité signifie que la somme algébrique des charges positives et négatives est nulle. Elle ne signifie pas que les charges sont absentes.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la valeur exacte de la charge élémentaire e en coulombs ?',
+            answer: 'e = 1,602 176 634 × 10⁻¹⁹ C exactement.'
+          },
+          {
+            question: 'Un ion négatif a-t-il gagné ou perdu des électrons par rapport à l’atome neutre correspondant ?',
+            answer: 'Il a gagné un ou plusieurs électrons.'
+          },
+          {
+            question: 'Lors d’un transfert d’électrons entre 2 objets isolés, la charge totale est-elle conservée ?',
+            answer: 'Oui. La charge totale du système isolé est conservée ; les électrons transférés quittent un objet et rejoignent l’autre.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 5.1 Electric Charge', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-1-electric-charge' },
+          { title: 'NIST — CODATA, valeur de la charge élémentaire', url: 'https://physics.nist.gov/cgi-bin/cuu/Value?e%7Csearch_for=charge' },
+          { title: 'CERN — The Standard Model', url: 'https://home.cern/science/physics/standard-model' }
+        ]
+      }
+    },
+    {
+      id: 'force-electrique-champ-et-potentiel',
+      title: 'Force électrique, champ et potentiel : décrire l’interaction',
+      field: 'Électrostatique · Loi de Coulomb, champ électrique et énergie potentielle',
+      summary: 'Relier la force de Coulomb au champ électrique, utiliser le principe de superposition et distinguer champ, potentiel et énergie potentielle électrique.',
+      lesson: {
+        sections: [
+          'La loi de Coulomb décrit la force électrostatique entre 2 charges ponctuelles immobiles dans le vide. Sa valeur est proportionnelle au produit des valeurs absolues des charges et inversement proportionnelle au carré de leur distance. On écrit F = k × |q₁q₂| / r², avec k = 1 / (4πε₀). La direction de la force est portée par la droite qui relie les 2 charges. Son sens dépend du signe de leur produit : attraction pour des signes opposés et répulsion pour des signes identiques. La loi sous forme vectorielle conserve explicitement le signe des charges et la direction de la force.',
+          'Le champ électrique permet de décrire l’influence électrique créée par des charges dans l’espace, indépendamment de la charge d’essai utilisée pour le mesurer. Il est défini par E = F / q pour une charge d’essai positive q placée au point étudié, dans la limite où cette charge ne perturbe pas sensiblement la distribution qui crée le champ. Son unité est le newton par coulomb (N/C), équivalente au volt par mètre (V/m). Une charge q placée dans un champ électrique subit la force F = qE. Ainsi, une charge positive est accélérée dans le sens du champ, tandis qu’une charge négative subit une force de sens opposé.',
+          'Lorsque plusieurs charges contribuent au champ, le principe de superposition s’applique : le champ total est la somme vectorielle des champs produits séparément par chacune des charges. Il ne faut donc pas additionner uniquement les valeurs numériques des champs sans tenir compte de leurs directions. Les lignes de champ sont une représentation graphique : leur tangente indique la direction du champ local et leur densité traduit qualitativement son intensité. Elles partent des charges positives et aboutissent aux charges négatives, ou se prolongent à l’infini si la configuration ne comporte pas de charge opposée.',
+          'Le potentiel électrique V est une grandeur scalaire définie comme l’énergie potentielle électrique par unité de charge positive : V = U / q. Sa différence entre 2 points vérifie ΔV = ΔU / q. L’unité du potentiel est le volt, avec 1 V = 1 J/C. Le potentiel et le champ ne sont donc pas la même grandeur : le potentiel est scalaire, alors que le champ est vectoriel. Dans un champ électrostatique, le champ est relié à la variation spatiale du potentiel par E = −grad(V). Dans une situation à 1 dimension, cela devient Eₓ = −dV/dx.',
+          'L’énergie potentielle d’une charge q dans un potentiel V vaut U = qV, à une constante de référence près. Pour une charge positive, une diminution de potentiel correspond à une diminution de son énergie potentielle ; pour une charge négative, le bilan de signe est inversé. Le travail de la force électrique est égal à l’opposé de la variation d’énergie potentielle : W = −ΔU. Dans un champ électrostatique, ce travail ne dépend que des positions initiale et finale, et non du chemin suivi. Cette propriété permet de résoudre des problèmes énergétiques sans calculer en détail toute la trajectoire.'
+        ],
+        example: {
+          statement: 'Une particule de charge q = +2,0 × 10⁻⁶ C traverse une différence de potentiel ΔV = 12 V. Calculer la variation de son énergie potentielle électrique.',
+          calculation: 'On utilise ΔU = qΔV. Donc ΔU = (2,0 × 10⁻⁶ C) × (12 V) = 2,4 × 10⁻⁵ J.',
+          answer: 'La variation d’énergie potentielle vaut +2,4 × 10⁻⁵ J pour cette convention de différence de potentiel. Le signe positif indique une augmentation de l’énergie potentielle de la particule.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale existe-t-il entre le champ électrique E et le potentiel électrique V ?',
+          answer: 'Le champ électrique est un vecteur qui décrit la force par unité de charge positive ; le potentiel est un scalaire qui décrit l’énergie potentielle par unité de charge.'
+        },
+        exercises: [
+          {
+            question: 'Que devient la valeur de la force de Coulomb si la distance entre 2 charges ponctuelles est multipliée par 2, toutes choses égales par ailleurs ?',
+            answer: 'Elle est divisée par 4, car elle est inversement proportionnelle au carré de la distance.'
+          },
+          {
+            question: 'Dans quel sens agit la force électrique sur une charge négative placée dans un champ E ?',
+            answer: 'Dans le sens opposé au vecteur champ électrique, puisque F = qE et que q est négatif.'
+          },
+          {
+            question: 'Pourquoi le potentiel électrique est-il plus simple à additionner que les champs produits par plusieurs charges ?',
+            answer: 'Parce que le potentiel est une grandeur scalaire : les potentiels se somment algébriquement, tandis que les champs doivent être additionnés vectoriellement.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 5.3 Coulomb’s Law', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law' },
+          { title: 'OpenStax — University Physics Volume 2, 5.4 Electric Field', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field' },
+          { title: 'OpenStax — University Physics Volume 2, 7.1 Electric Potential Energy', url: 'https://openstax.org/books/university-physics-volume-2/pages/7-1-electric-potential-energy' },
+          { title: 'OpenStax — University Physics Volume 2, 7.2 Electric Potential and Potential Difference', url: 'https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference' }
+        ]
+      }
+    },
+    {
+      id: 'dynamique-classique-des-particules-chargees',
+      title: 'Mouvement des particules chargées dans les champs électriques et magnétiques',
+      field: 'Électrodynamique classique · Force de Lorentz et trajectoires',
+      summary: 'Étudier la force de Lorentz, le rôle des champs électriques et magnétiques, les trajectoires et les limites de l’approximation classique.',
+      lesson: {
+        sections: [
+          'Une particule chargée peut être soumise simultanément à un champ électrique E et à un champ magnétique B. Dans le régime classique non relativiste, la force électromagnétique totale est la force de Lorentz : F = q(E + v × B), où q est la charge, v la vitesse et × le produit vectoriel. La composante électrique qE peut modifier la valeur de la vitesse et sa direction. La composante magnétique q(v × B) est perpendiculaire à la vitesse instantanée lorsque le champ magnétique est seul ; elle dévie donc la trajectoire sans fournir de travail à la particule dans ce modèle.',
+          'Dans un champ électrique uniforme, une particule initialement au repos subit une accélération constante si les effets relativistes et les variations du champ peuvent être négligés : a = qE/m. Le signe de q détermine le sens de l’accélération. Une différence de potentiel peut convertir de l’énergie potentielle électrique en énergie cinétique. Pour une particule partant du repos et traversant une différence de potentiel dont la valeur absolue est ΔV, le gain d’énergie cinétique en valeur absolue est |ΔK| = |qΔV|, si les autres forces et pertes sont négligeables.',
+          'Dans un champ magnétique uniforme avec v perpendiculaire à B, la force magnétique joue le rôle de force centripète. En mécanique classique, la trajectoire est circulaire, avec un rayon r = mv / (|q|B). Si la vitesse possède également une composante parallèle au champ, cette composante reste inchangée et la trajectoire devient hélicoïdale. Si la vitesse est parallèle au champ, le produit vectoriel est nul et la force magnétique est nulle. Le sens de rotation dépend du signe de la charge.',
+          'Les champs croisés peuvent servir à sélectionner des vitesses. Lorsque E et B sont perpendiculaires entre eux et à la vitesse de la particule, les forces électrique et magnétique peuvent se compenser. Pour une trajectoire non déviée, leurs valeurs vérifient |q|E = |q|vB, donc v = E/B. Un spectromètre de masse exploite ensuite la déviation des ions dans un champ magnétique pour distinguer des rapports charge/masse. Ces dispositifs illustrent comment la dynamique des particules chargées permet de mesurer des propriétés physiques.',
+          'La formule classique de Lorentz reste utile dans de nombreux dispositifs, mais elle ne suffit pas dans toutes les situations. Lorsque la vitesse devient comparable à celle de la lumière dans le vide, la quantité de mouvement doit être traitée relativistement : p = γmv, avec γ = 1 / √(1 − v²/c²). À l’échelle atomique, la trajectoire classique précise d’un électron lié ne constitue pas une description adéquate : il faut utiliser la mécanique quantique. Il faut donc toujours préciser le domaine de validité du modèle utilisé.'
+        ],
+        example: {
+          statement: 'Un ion de charge positive entre perpendiculairement dans un champ magnétique uniforme. Sa vitesse vaut 2,0 × 10⁶ m/s, sa masse 3,3 × 10⁻²⁷ kg, sa charge 1,60 × 10⁻¹⁹ C et le champ 0,50 T. Estimer le rayon classique de sa trajectoire.',
+          calculation: 'Pour v perpendiculaire à B, r = mv/(|q|B). En remplaçant : r = (3,3 × 10⁻²⁷ × 2,0 × 10⁶)/(1,60 × 10⁻¹⁹ × 0,50) ≈ 8,25 × 10⁻² m.',
+          answer: 'Le rayon classique est d’environ 8,3 × 10⁻² m, soit 8,3 cm. Cette estimation suppose un champ uniforme, une vitesse non relativiste et l’absence d’autres forces significatives.'
+        },
+        exercise: {
+          question: 'Pourquoi un champ magnétique uniforme ne modifie-t-il pas l’énergie cinétique d’une particule ponctuelle dans le modèle classique ?',
+          answer: 'La force magnétique est toujours perpendiculaire à la vitesse. Sa puissance F·v est donc nulle : elle change la direction de la vitesse, mais pas sa valeur.'
+        },
+        exercises: [
+          {
+            question: 'Quelle expression donne la force électromagnétique exercée sur une charge q en mouvement ?',
+            answer: 'F = q(E + v × B), appelée force de Lorentz.'
+          },
+          {
+            question: 'Que devient la force magnétique si la vitesse est parallèle au champ magnétique ?',
+            answer: 'Elle est nulle, car le produit vectoriel v × B est nul.'
+          },
+          {
+            question: 'Dans quelles conditions la relation v = E/B décrit-elle la vitesse non déviée dans un sélecteur de vitesse ?',
+            answer: 'Lorsque les champs électrique et magnétique sont croisés et que les forces électrique et magnétique sont opposées, avec la vitesse perpendiculaire aux 2 champs.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 11.3 Magnetic Force on a Moving Charge', url: 'https://openstax.org/books/university-physics-volume-2/pages/11-3-magnetic-force-on-a-moving-charge' },
+          { title: 'OpenStax — University Physics Volume 2, 11.7 Applications of Magnetic Forces and Fields', url: 'https://openstax.org/books/university-physics-volume-2/pages/11-7-applications-of-magnetic-forces-and-fields' },
+          { title: 'CERN — Charged particle dynamics in accelerators, CERN Yellow Reports 2024', url: 'https://cds.cern.ch/record/2928175/files/document.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'dualite-onde-particule-et-longueur-de-broglie',
+      title: 'Dualité onde-particule : la charge dans le monde quantique',
+      field: 'Physique quantique · Ondes de matière et expériences de diffraction',
+      summary: 'Comprendre pourquoi les électrons présentent des phénomènes ondulatoires, introduire la longueur d’onde de de Broglie et interpréter le principe d’incertitude.',
+      lesson: {
+        sections: [
+          'En physique classique, une particule et une onde sont décrites par des modèles différents. Une particule classique possède notamment une position et une vitesse définies à chaque instant ; une onde est décrite par une amplitude qui varie dans l’espace et dans le temps. Les expériences microscopiques montrent que cette séparation ne suffit pas pour décrire les objets quantiques. Un électron est détecté lors d’une mesure comme un événement localisé, mais la distribution statistique de nombreux événements peut présenter des figures de diffraction et d’interférence caractéristiques d’un comportement ondulatoire.',
+          'La relation de de Broglie associe une longueur d’onde à une particule de quantité de mouvement p : λ = h/p. Pour une particule non relativiste, p = mv, d’où λ = h/(mv). La constante h est la constante de Planck. À quantité de mouvement plus élevée, la longueur d’onde associée est plus courte. Cette relation ne signifie pas que l’électron est une petite bille qui se transforme matériellement en vague ; elle exprime une propriété de son état quantique et permet de prévoir des phénomènes ondulatoires tels que la diffraction.',
+          'La diffraction des électrons a été mise en évidence notamment par les expériences de Davisson et Germer sur un cristal de nickel. Les électrons diffusés produisent des maxima et minima dont les angles dépendent de leur longueur d’onde et de l’organisation périodique du cristal. Des expériences de double fente réalisées avec des électrons montrent également que des impacts individuels, accumulés au fil du temps, forment une figure d’interférence. L’interférence concerne les amplitudes quantiques associées aux alternatives expérimentales ; elle ne doit pas être interprétée comme la preuve que chaque électron suit une trajectoire ondulatoire classique déterminée.',
+          'La fonction d’onde permet de calculer des probabilités de résultats de mesure. Dans l’interprétation usuelle de la mécanique quantique non relativiste, le module carré |Ψ|² représente une densité de probabilité de position. La probabilité de détecter la particule dans une région donnée s’obtient en intégrant cette densité sur cette région. Pour une particule décrite par une fonction d’onde normalisée, la probabilité totale de la trouver quelque part vaut 1. La fonction d’onde n’est donc pas, en général, une densité matérielle classique ; elle encode les amplitudes nécessaires au calcul des probabilités.',
+          'Le principe d’incertitude de Heisenberg indique que les incertitudes-types de position et de quantité de mouvement selon un même axe vérifient ΔxΔpₓ ≥ ħ/2. Il ne s’agit pas simplement d’une imperfection des instruments : cette limite est une propriété des états quantiques. Un état très localisé en position nécessite une large dispersion de quantité de mouvement. Le principe ne dit pas que toute grandeur est imprécise de la même façon, ni que les mesures sont inutiles ; il fixe une limite fondamentale aux dispersions simultanées de certaines paires de grandeurs.'
+        ],
+        example: {
+          statement: 'Un électron non relativiste possède une quantité de mouvement p = 1,0 × 10⁻²⁴ kg·m/s. Estimer sa longueur d’onde de de Broglie.',
+          calculation: 'On applique λ = h/p avec h = 6,626 070 15 × 10⁻³⁴ J·s. Ainsi, λ = (6,626 070 15 × 10⁻³⁴)/(1,0 × 10⁻²⁴) ≈ 6,63 × 10⁻¹⁰ m.',
+          answer: 'La longueur d’onde vaut environ 6,6 × 10⁻¹⁰ m, soit 0,66 nm. Les chiffres significatifs sont limités par les données de quantité de mouvement fournies.'
+        },
+        exercise: {
+          question: 'Que démontre la formation progressive d’une figure d’interférence lorsque des électrons sont envoyés individuellement à travers un dispositif à 2 fentes ?',
+          answer: 'Elle montre que les probabilités de détection sont gouvernées par des amplitudes quantiques qui interfèrent, même lorsque les détections individuelles sont localisées.'
+        },
+        exercises: [
+          {
+            question: 'Quelle relation associe la longueur d’onde de de Broglie à la quantité de mouvement ?',
+            answer: 'λ = h/p.'
+          },
+          {
+            question: 'Que représente |Ψ|² dans la description quantique usuelle d’une particule ?',
+            answer: 'La densité de probabilité de position, sous réserve de la normalisation de la fonction d’onde.'
+          },
+          {
+            question: 'Le principe d’incertitude est-il uniquement dû à la faiblesse des instruments de mesure ?',
+            answer: 'Non. Il découle de la structure mathématique des états quantiques et limite les dispersions simultanées de position et de quantité de mouvement.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 3, 6.5 de Broglie’s Matter Waves', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-5-de-broglies-matter-waves' },
+          { title: 'OpenStax — University Physics Volume 3, 6.6 Wave-Particle Duality', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-6-wave-particle-duality' },
+          { title: 'OpenStax — University Physics Volume 3, Chapter 6 Summary', url: 'https://openstax.org/books/university-physics-volume-3/pages/6-summary' }
+        ]
+      }
+    },
+    {
+      id: 'fonction-onde-equation-schrodinger-et-particule-chargee',
+      title: 'Fonction d’onde et équation de Schrödinger pour une particule chargée',
+      field: 'Mécanique quantique · États quantiques et interaction avec le potentiel électrique',
+      summary: 'Présenter la fonction d’onde, la normalisation, l’équation de Schrödinger et le rôle du potentiel électrostatique dans l’évolution d’une particule chargée.',
+      lesson: {
+        sections: [
+          'En mécanique quantique non relativiste, l’état d’une particule sans structure interne peut être représenté par une fonction d’onde Ψ(r,t). Cette fonction est généralement complexe et dépend de la position et du temps. Elle permet de calculer les probabilités des résultats de mesure. La densité de probabilité de position est |Ψ(r,t)|² ; pour une particule dont la position peut se trouver dans tout l’espace, la normalisation s’écrit ∫|Ψ(r,t)|² d³r = 1. Une fonction d’onde normalisée ne donne pas une trajectoire classique : elle décrit un état à partir duquel les probabilités de mesure peuvent être obtenues.',
+          'L’évolution temporelle d’un état non relativiste est gouvernée par l’équation de Schrödinger dépendant du temps : iħ ∂Ψ/∂t = [−(ħ²/2m)∇² + U(r,t)]Ψ. Le terme cinétique contient le laplacien ∇² et le terme U représente l’énergie potentielle. Pour une particule de charge q dans un potentiel électrique V, l’énergie potentielle électrostatique est U = qV. La forme écrite ici correspond à une particule sans spin et à un potentiel scalaire ; elle ne constitue pas à elle seule la théorie complète d’une particule relativiste ou d’un champ électromagnétique général.',
+          'Lorsque le potentiel ne dépend pas explicitement du temps, on peut rechercher des états stationnaires dont la dépendance temporelle est séparée de la dépendance spatiale. La partie spatiale satisfait alors l’équation de Schrödinger indépendante du temps : [−(ħ²/2m)∇² + U(r)]ψ(r) = Eψ(r). Les solutions admissibles dépendent des conditions physiques et des conditions aux limites. Dans certains systèmes liés, seules certaines valeurs de l’énergie sont permises : le spectre énergétique est alors discret. Dans d’autres situations, comme une particule libre dans un espace infini, le spectre peut être continu.',
+          'Pour une particule chargée, le potentiel électrique peut créer un état lié ou modifier la propagation. Dans l’atome d’hydrogène, l’électron et le proton interagissent par attraction coulombienne. Le potentiel d’énergie de l’électron, en prenant l’énergie nulle à l’infini, est négatif et varie comme −1/r. La résolution quantique conduit à des états liés et à des niveaux d’énergie discrets. La description par fonction d’onde fournit des distributions de probabilité et des valeurs moyennes ; elle ne décrit pas l’électron comme une planète suivant une orbite classique autour du proton.',
+          'La présence d’un champ magnétique exige un raffinement du formalisme. Pour une particule de charge q, l’interaction électromagnétique est introduite dans l’hamiltonien par le couplage minimal, qui remplace l’impulsion canonique p par p − qA, où A est le potentiel vecteur magnétique, et ajoute le potentiel électrique qV. Cette écriture montre que la description quantique dépend des potentiels électromagnétiques, tout en donnant des prédictions physiques invariantes sous les transformations de jauge appropriées. Les effets du spin et les corrections relativistes nécessitent des modèles plus avancés, notamment l’équation de Pauli ou l’équation de Dirac selon le régime étudié.'
+        ],
+        example: {
+          statement: 'Un électron est placé dans une région où le potentiel électrique est constant et vaut V = 5,0 V par rapport à une référence choisie. Calculer son énergie potentielle électrique par rapport à cette référence.',
+          calculation: 'On utilise U = qV. Pour l’électron, q = −e = −1,602 176 634 × 10⁻¹⁹ C. Donc U = (−1,602 176 634 × 10⁻¹⁹) × 5,0 = −8,010 883 17 × 10⁻¹⁹ J.',
+          answer: 'L’énergie potentielle électrique relative à la référence choisie vaut −8,0 × 10⁻¹⁹ J, soit −5,0 eV. Le signe négatif vient de la charge négative de l’électron ; le zéro de potentiel reste une convention.'
+        },
+        exercise: {
+          question: 'Pourquoi une fonction d’onde ne doit-elle pas être interprétée comme la trajectoire exacte d’un électron ?',
+          answer: 'Parce qu’elle décrit un état quantique permettant de calculer des probabilités de mesure. Elle ne fournit pas une position et une trajectoire classiques déterminées à chaque instant.'
+        },
+        exercises: [
+          {
+            question: 'Quel rôle joue le potentiel U dans l’équation de Schrödinger ?',
+            answer: 'Il représente l’énergie potentielle et intervient dans l’hamiltonien qui gouverne l’évolution de l’état quantique.'
+          },
+          {
+            question: 'La quantification de l’énergie apparaît-elle nécessairement pour toute particule quantique ?',
+            answer: 'Non. Les états liés de certains systèmes ont des niveaux discrets, tandis que des états de diffusion ou des particules libres peuvent avoir un spectre continu.'
+          },
+          {
+            question: 'Quel terme décrit l’interaction électrostatique d’une particule de charge q avec un potentiel V ?',
+            answer: 'L’énergie potentielle électrostatique U = qV.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 3, 7.3 The Schrödinger Equation', url: 'https://openstax.org/books/university-physics-volume-3/pages/7-3-the-schrodinger-equation' },
+          { title: 'OpenStax — University Physics Volume 3, 7.4 The Heisenberg Uncertainty Principle', url: 'https://openstax.org/books/university-physics-volume-3/pages/7-4-the-heisenberg-uncertainty-principle' },
+          { title: 'OpenStax — University Physics Volume 3, 7.5 The Quantum Harmonic Oscillator', url: 'https://openstax.org/books/university-physics-volume-3/pages/7-5-the-quantum-harmonic-oscillator' }
+        ]
+      }
+    },
+    {
+      id: 'atome-hydrogene-niveaux-quantiques-et-spin',
+      title: 'Atome d’hydrogène : niveaux quantiques, orbitales et spin de l’électron',
+      field: 'Physique atomique · États liés, nombres quantiques et propriétés magnétiques',
+      summary: 'Décrire l’état quantique de l’électron dans l’hydrogène, interpréter les nombres quantiques, les orbitales, les transitions et le spin.',
+      lesson: {
+        sections: [
+          'L’atome d’hydrogène est constitué d’un proton et d’un électron. Leur interaction électrostatique attractive forme un système lié. Le modèle de Bohr introduit historiquement des orbites circulaires et des énergies discrètes, mais il ne constitue pas la description quantique complète de l’atome. Dans le modèle de Schrödinger, l’électron est décrit par une fonction d’onde et par des distributions de probabilité. Une orbitale atomique désigne un état quantique spatial ; elle ne doit pas être confondue avec une orbite, qui serait une trajectoire déterminée.',
+          'Pour l’hydrogène non perturbé, les états spatiaux sont caractérisés par les nombres quantiques n, l et m. Le nombre principal n prend les valeurs entières 1, 2, 3, etc. Le nombre orbital l prend les valeurs de 0 à n − 1. Le nombre magnétique m prend les valeurs entières de −l à +l. Dans le modèle coulombien non relativiste idéal, l’énergie dépend principalement de n ; plusieurs états de valeurs l et m différentes peuvent donc partager la même énergie. Les interactions fines, les champs externes et les corrections relativistes lèvent certaines dégénérescences.',
+          'Pour l’hydrogène, les niveaux d’énergie non relativistes s’écrivent Eₙ = −13,6 eV/n², avec l’énergie nulle choisie pour un électron et un proton séparés à l’infini. L’état fondamental correspond à n = 1 et possède une énergie de −13,6 eV. Lorsque n augmente, l’énergie se rapproche de 0 par valeurs négatives ; à la limite d’ionisation, l’électron n’est plus lié. La valeur de 13,6 eV représente l’énergie nécessaire pour ioniser l’hydrogène depuis son état fondamental dans ce modèle.',
+          'Les transitions entre niveaux s’accompagnent d’un échange d’énergie avec le rayonnement. Lorsqu’un atome passe d’un niveau d’énergie supérieur à un niveau inférieur, il peut émettre un photon dont l’énergie vaut ΔE = hν. Pour une absorption, le photon fournit l’énergie nécessaire à la transition. Les fréquences possibles sont donc liées aux différences entre niveaux et produisent des raies spectrales caractéristiques. Le spectre de l’hydrogène constitue ainsi un test majeur des modèles quantiques de l’atome.',
+          'L’électron possède également un moment cinétique intrinsèque appelé spin, associé à un moment magnétique. Le spin n’est pas une rotation mécanique classique d’une petite sphère chargée. Pour un électron, le nombre quantique de spin vaut s = 1/2 et la projection du spin peut prendre 2 valeurs, souvent notées +1/2 et −1/2. Le moment magnétique de spin interagit avec un champ magnétique externe. Cette interaction contribue notamment à la structure fine et à la séparation de certains niveaux en présence d’un champ, phénomène associé à l’effet Zeeman.',
+          'La description de l’hydrogène présentée ici repose sur un modèle non relativiste simplifié, avec un noyau assimilé à une source coulombienne et certaines corrections négligées. Des calculs plus précis tiennent compte de la masse réduite du système, du spin, de la structure fine, du décalage de Lamb et des interactions avec les champs extérieurs. Ces raffinements sont nécessaires pour comparer la théorie aux mesures spectroscopiques de haute précision.'
+        ],
+        example: {
+          statement: 'Dans le modèle non relativiste de l’hydrogène, calculer l’énergie du niveau n = 2 puis l’énergie du photon émis lors de la transition n = 2 vers n = 1.',
+          calculation: 'E₂ = −13,6/2² = −3,40 eV. E₁ = −13,6 eV. L’énergie émise est la différence positive E₂ − E₁ = (−3,40) − (−13,6) = 10,2 eV.',
+          answer: 'Le niveau n = 2 vaut −3,40 eV. La transition vers n = 1 peut émettre un photon de 10,2 eV, dans le cadre du modèle simplifié de l’hydrogène.'
+        },
+        exercise: {
+          question: 'Pourquoi parle-t-on d’orbitale électronique plutôt que d’orbite dans le modèle quantique moderne ?',
+          answer: 'Une orbitale décrit un état quantique et une distribution de probabilité de présence. Elle ne représente pas une trajectoire classique précise autour du noyau.'
+        },
+        exercises: [
+          {
+            question: 'Quelles valeurs peut prendre le nombre quantique orbital l pour un nombre principal n donné ?',
+            answer: 'Les valeurs entières l = 0, 1, 2, …, n − 1.'
+          },
+          {
+            question: 'Quelle est l’énergie de l’état fondamental de l’hydrogène dans le modèle non relativiste usuel ?',
+            answer: '−13,6 eV, avec le zéro d’énergie choisi pour l’électron et le proton séparés à l’infini.'
+          },
+          {
+            question: 'Le spin de l’électron doit-il être compris comme la rotation d’une petite bille ?',
+            answer: 'Non. Le spin est un moment cinétique intrinsèque quantique, sans équivalent exact dans une image de rotation classique.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 3, 8.1 The Hydrogen Atom', url: 'https://openstax.org/books/university-physics-volume-3/pages/8-1-the-hydrogen-atom' },
+          { title: 'OpenStax — University Physics Volume 3, 8.2 Orbital Magnetic Dipole Moment of the Electron', url: 'https://openstax.org/books/university-physics-volume-3/pages/8-2-orbital-magnetic-dipole-moment-of-the-electron' },
+          { title: 'OpenStax — University Physics Volume 3, 8.3 Electron Spin', url: 'https://openstax.org/books/university-physics-volume-3/pages/8-3-electron-spin' },
+          { title: 'OpenStax — University Physics Volume 3, Chapter 8 Summary', url: 'https://openstax.org/books/university-physics-volume-3/pages/8-summary' }
+        ]
+      }
+    }
+  ]
+}
 
 ]
 
