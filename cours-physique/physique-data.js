@@ -9671,7 +9671,944 @@
   ]
 },
 
+{
+  id: 'difference-potentiel',
+  title: 'Circulation des électrons : la différence de potentiel',
+  note: 'Six chapitres progressifs, de la charge élémentaire et de la description quantique des électrons jusqu’au courant électrique dans les conducteurs. Le parcours distingue le potentiel électrique, la différence de potentiel, le déplacement microscopique des porteurs et le sens conventionnel du courant.',
+  chapters: [
+    {
+      id: 'charge-electrique-electron',
+      title: 'La charge électrique et l’électron : origine microscopique',
+      field: 'Électricité · physique fondamentale et quantique',
+      summary: 'Définir la charge électrique, la charge élémentaire et les propriétés quantiques de l’électron.',
+      lesson: {
+        sections: [
+          'La charge électrique est une propriété physique des particules, et non une substance qui circulerait comme un liquide. Deux signes sont conventionnellement distingués : positif et négatif. Des charges de même signe se repoussent et des charges de signes opposés s’attirent. Dans la matière ordinaire, les protons portent une charge positive, les électrons une charge négative et les neutrons une charge électrique totale nulle. Un objet est électriquement neutre lorsque sa charge totale est nulle ; cela ne signifie pas qu’il ne contient aucune charge, mais que les contributions positives et négatives se compensent.',
+          'L’électron est une particule élémentaire du modèle standard : à ce jour, aucune structure interne n’a été mise en évidence expérimentalement. Sa charge vaut exactement −e dans le Système international, avec e = 1,602 176 634 × 10⁻¹⁹ C. Le signe négatif indique le signe de sa charge ; la valeur e est appelée charge élémentaire. Un proton porte +e. La charge totale d’un système isolé se conserve : elle peut être transférée d’un corps à un autre, mais elle ne se crée pas et ne disparaît pas dans les phénomènes électriques ordinaires.',
+          'La description quantique ne représente pas l’électron comme une minuscule bille suivant une orbite classique déterminée autour du noyau. Son état est décrit par une fonction d’onde ; le carré de son module donne une densité de probabilité de présence. Les états atomiques sont quantifiés et caractérisés par des nombres quantiques. L’électron possède également un spin intrinsèque égal à 1/2. Le principe d’exclusion de Pauli impose que deux électrons d’un même atome ne puissent pas avoir les quatre mêmes nombres quantiques. Ces règles déterminent en grande partie la structure électronique des atomes et, par conséquent, leurs propriétés chimiques et leur comportement dans les solides.',
+          'La charge électrique intervient dans l’interaction électromagnétique. Dans un conducteur métallique, les électrons qui contribuent au transport électrique sont principalement des électrons de conduction associés aux états électroniques étendus du solide. Il ne faut pas confondre ce phénomène avec l’arrachement systématique de tous les électrons aux atomes : les noyaux et les électrons liés restent présents, tandis que certains états électroniques permettent un transport collectif de charge.'
+        ],
+        formula: {
+          label: 'CHARGE ÉLECTRIQUE ÉLÉMENTAIRE ET QUANTIFICATION',
+          text: 'qₑ = −e  |  e = 1,602 176 634 × 10⁻¹⁹ C  |  Q = N₊e − N₋e'
+        },
+        example: {
+          statement: 'Un objet reçoit un excédent de 2,0 × 10¹² électrons. Quelle est sa charge électrique nette ?',
+          calculation: 'Q = −N e = −(2,0 × 10¹²) × (1,602 176 634 × 10⁻¹⁹ C).',
+          answer: 'Q ≈ −3,20 × 10⁻⁷ C. Le signe négatif indique un excédent d’électrons.'
+        },
+        exercise: {
+          question: 'Pourquoi un objet neutre contient-il malgré tout des particules chargées ?',
+          answer: 'Parce que sa neutralité signifie que la somme des charges positives et négatives est nulle, et non que les charges sont absentes.'
+        },
+        exercises: [
+          { question: 'Quel est le signe de la charge électrique de l’électron ?', answer: 'Elle est négative : qₑ = −e.' },
+          { question: 'La charge électrique peut-elle être transférée entre deux objets ?', answer: 'Oui. Elle peut être transférée, tandis que la charge totale d’un système isolé se conserve.' },
+          { question: 'La fonction d’onde décrit-elle une trajectoire classique exacte de l’électron ?', answer: 'Non. Elle permet de calculer des amplitudes et des probabilités de résultats de mesure, notamment la probabilité de présence.' }
+        ],
+        equationDetails: [
+          {
+            title: 'Charge de l’électron',
+            formula: 'qₑ = −e',
+            explanation: 'La charge de l’électron est négative et sa valeur absolue est égale à la charge élémentaire e. La valeur numérique de e est fixée exactement par la définition actuelle du SI.',
+            parameters: 'qₑ : charge de l’électron (C) ; e : charge élémentaire positive (C).',
+            example: 'Pour un électron, qₑ = −1,602 176 634 × 10⁻¹⁹ C.',
+            result: 'La charge d’un électron est −1,602 176 634 × 10⁻¹⁹ C.'
+          },
+          {
+            title: 'Charge nette d’un ensemble de particules',
+            formula: 'Q = N₊e − N₋e',
+            explanation: 'La charge nette est la somme algébrique des charges positives et négatives. Cette écriture suppose ici que les charges considérées sont des protons et des électrons.',
+            parameters: 'Q : charge totale (C) ; N₊ : nombre de protons ; N₋ : nombre d’électrons ; e : charge élémentaire (C).',
+            example: 'Si N₊ = N₋, alors Q = 0.',
+            result: 'Un nombre égal de protons et d’électrons donne un objet neutre.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 5.1 Electric Charge', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-1-electric-charge' },
+          { title: 'OpenStax — University Physics Volume 3, 8.4 The Exclusion Principle and the Periodic Table', url: 'https://openstax.org/books/university-physics-volume-3/pages/8-4-the-exclusion-principle-and-the-periodic-table' },
+          { title: 'CERN — The Standard Model: Matter particles', url: 'https://home.cern/science/physics/standard-model' },
+          { title: 'NIST — 2022 CODATA recommended values of the fundamental physical constants', url: 'https://physics.nist.gov/cuu/pdf/JPCRD2022CODATA.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'structure-atomique-solides',
+      title: 'Des atomes aux matériaux solides',
+      field: 'Physique de la matière · structure atomique et cristalline',
+      summary: 'Relier les électrons de valence, les liaisons chimiques et l’organisation des atomes dans un matériau.',
+      lesson: {
+        sections: [
+          'Un matériau solide est constitué d’atomes, d’ions ou de molécules organisés selon une structure qui dépend de sa composition et de ses liaisons. Dans un métal, les atomes forment généralement un réseau cristallin : les cœurs ioniques positifs occupent des positions ordonnées et les électrons de valence occupent des états électroniques qui peuvent s’étendre sur une grande partie du solide. L’expression « électrons libres » est un modèle pratique : dans un métal réel, les électrons restent soumis au potentiel périodique du réseau et aux interactions du solide.',
+          'Lorsqu’un très grand nombre d’atomes se rapprochent pour former un solide, leurs niveaux d’énergie atomiques interagissent et se répartissent en bandes d’énergie permises, séparées éventuellement par des bandes interdites. La bande de valence désigne généralement la bande occupée la plus élevée ; la bande de conduction est une bande d’énergie supérieure dans laquelle des électrons peuvent contribuer au transport. Cette description provient de la mécanique quantique appliquée à un ensemble périodique d’atomes.',
+          'Dans un métal conducteur, une bande peut être partiellement occupée ou des bandes peuvent se chevaucher : des états électroniques proches en énergie sont alors disponibles pour que les électrons répondent à un champ électrique. Dans un isolant, les bandes occupées et les bandes accessibles sont séparées par un intervalle énergétique important. Dans un semi-conducteur, cet intervalle est plus faible ; la température, la lumière ou l’ajout contrôlé d’impuretés peuvent modifier le nombre de porteurs disponibles. La classification dépend de la structure électronique du matériau, pas uniquement de l’étiquette chimique de ses atomes.',
+          'Les porteurs de charge ne sont pas identiques dans tous les matériaux. Dans un métal, le courant est principalement transporté par des électrons. Dans un semi-conducteur, les électrons et les trous électroniques peuvent contribuer au courant. Dans une solution ionique, les ions positifs et négatifs se déplacent. Il est donc incorrect de présenter tout courant électrique comme un déplacement exclusif d’électrons.'
+        ],
+        formula: {
+          label: 'CONDUCTIVITÉ ET RÉSISTIVITÉ',
+          text: 'σ = 1/ρ'
+        },
+        example: {
+          statement: 'Un matériau possède une résistivité ρ = 1,7 × 10⁻⁸ Ω·m. Quelle est sa conductivité ?',
+          calculation: 'σ = 1/ρ = 1/(1,7 × 10⁻⁸ Ω·m).',
+          answer: 'σ ≈ 5,9 × 10⁷ S·m⁻¹. Cette valeur correspond à une forte conductivité.'
+        },
+        exercise: {
+          question: 'Quelle différence de structure électronique distingue généralement un métal conducteur d’un isolant ?',
+          answer: 'Dans un métal, des états proches en énergie sont disponibles dans une bande partiellement remplie ou des bandes qui se chevauchent. Dans un isolant, les bandes occupées et les états accessibles sont séparés par un grand intervalle énergétique.'
+        },
+        exercises: [
+          { question: 'Que désigne un cœur ionique dans le modèle simple d’un métal ?', answer: 'Le noyau et les électrons internes liés, qui forment un ensemble positif après la mise en commun des électrons de valence.' },
+          { question: 'Pourquoi un métal conduit-il généralement le courant ?', answer: 'Parce que sa structure en bandes offre des états électroniques accessibles permettant aux électrons de répondre à un champ électrique.' },
+          { question: 'Quels porteurs peuvent transporter le courant dans une solution ionique ?', answer: 'Les ions positifs et les ions négatifs.' }
+        ],
+        equationDetails: [
+          {
+            title: 'Conductivité et résistivité',
+            formula: 'σ = 1/ρ',
+            explanation: 'Dans un matériau homogène et isotrope, la conductivité électrique est l’inverse de la résistivité.',
+            parameters: 'σ : conductivité (S·m⁻¹) ; ρ : résistivité (Ω·m).',
+            example: 'Pour ρ = 1,7 × 10⁻⁸ Ω·m, σ = 1/(1,7 × 10⁻⁸).',
+            result: 'σ ≈ 5,9 × 10⁷ S·m⁻¹.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 5.2 Conductors, Insulators, and Charging by Induction', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction' },
+          { title: 'OpenStax — University Physics Volume 2, 9.2 Model of Conduction in Metals', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-2-model-of-conduction-in-metals' },
+          { title: 'University Physics III (OpenStax), Band Theory of Solids — adaptation LibreTexts', url: 'https://phys.libretexts.org/Bookshelves/University_Physics/University_Physics_(OpenStax)/University_Physics_III_-_Optics_and_Modern_Physics_(OpenStax)/09%3A_Condensed_Matter_Physics/9.06%3A_Band_Theory_of_Solids' }
+        ]
+      }
+    },
+    {
+      id: 'champ-electrique-conducteur',
+      title: 'Le champ électrique dans un conducteur',
+      field: 'Électrostatique · champ électrique et matière conductrice',
+      summary: 'Comprendre comment un champ électrique agit sur les charges et distinguer équilibre électrostatique et conduction.',
+      lesson: {
+        sections: [
+          'Un champ électrique E décrit, en chaque point de l’espace, la force électrique exercée sur une charge test positive divisée par la valeur de cette charge. La relation fondamentale est F = qE. Le champ est une grandeur vectorielle : il possède une direction, un sens et une valeur. Une charge positive subit une force dans le sens du champ ; une charge négative subit une force dans le sens opposé.',
+          'Dans un conducteur métallique à l’équilibre électrostatique, les charges mobiles se redistribuent jusqu’à ce que le champ électrique à l’intérieur du matériau soit nul. Cette propriété concerne l’équilibre électrostatique. Elle ne signifie pas qu’un conducteur parcouru par un courant permanent ne possède aucun champ intérieur : dans un fil résistif, un champ électrique interne est nécessaire pour entretenir le courant.',
+          'Lorsqu’une différence de potentiel est appliquée aux extrémités d’un conducteur, un champ électrique s’établit dans le matériau. Les électrons, chargés négativement, subissent une force opposée au champ. Leur mouvement microscopique est perturbé par les interactions avec le réseau cristallin, les défauts et les vibrations du matériau. Le résultat macroscopique est une vitesse moyenne de dérive et un courant électrique.',
+          'Dans un champ uniforme, le potentiel électrique diminue dans le sens du champ. Pour un déplacement d’une distance d dans le sens du champ, la variation de potentiel vaut ΔV = −Ed. Cette relation simplifiée suppose un champ uniforme et un déplacement parallèle au champ. Dans le cas général, la différence de potentiel dépend du trajet intégré du champ entre les deux points.',
+          'Il faut distinguer le champ électrique de la force électrique : le champ caractérise l’action électrique en un point indépendamment de la charge test utilisée, tandis que la force dépend de la valeur et du signe de la charge placée dans ce champ.'
+        ],
+        formula: {
+          label: 'FORCE ÉLECTRIQUE ET CHAMP UNIFORME',
+          text: 'F = qE  |  E = F/q  |  ΔV = −Ed'
+        },
+        example: {
+          statement: 'Un électron est placé dans un champ électrique uniforme de valeur E = 2,0 × 10³ V·m⁻¹. Quelle est la valeur de la force électrique qu’il subit ?',
+          calculation: 'F = |qₑ|E = (1,602 × 10⁻¹⁹ C) × (2,0 × 10³ V·m⁻¹).',
+          answer: 'F ≈ 3,2 × 10⁻¹⁶ N. La force est dirigée dans le sens opposé au champ, car l’électron est négatif.'
+        },
+        exercise: {
+          question: 'Pourquoi le champ électrique est-il nul à l’intérieur d’un conducteur à l’équilibre électrostatique, mais pas nécessairement dans un fil parcouru par un courant ?',
+          answer: 'À l’équilibre électrostatique, les charges se redistribuent jusqu’à annuler le champ intérieur. Dans un fil résistif parcouru par un courant permanent, un champ intérieur est nécessaire pour maintenir la dérive moyenne des porteurs.'
+        },
+        exercises: [
+          { question: 'Dans quel sens la force électrique agit-elle sur un électron ?', answer: 'Dans le sens opposé au champ électrique.' },
+          { question: 'Le champ électrique est-il une grandeur vectorielle ?', answer: 'Oui. Il possède une direction, un sens et une valeur.' },
+          { question: 'Quelle condition permet d’utiliser ΔV = −Ed ?', answer: 'Le champ doit être uniforme et le déplacement considéré parallèle au champ, dans son sens pour cette écriture avec d positif.' }
+        ],
+        equationDetails: [
+          {
+            title: 'Force électrique',
+            formula: 'F = qE',
+            explanation: 'La force exercée sur une charge placée dans un champ électrique est égale au produit de la charge par le champ. Le signe de q détermine le sens de la force.',
+            parameters: 'F : force électrique (N) ; q : charge (C) ; E : champ électrique (N·C⁻¹ ou V·m⁻¹).',
+            example: 'Pour un électron, q est négatif : la force est opposée au champ.',
+            result: 'La force électrique sur un électron est opposée au champ électrique.'
+          },
+          {
+            title: 'Différence de potentiel dans un champ uniforme',
+            formula: 'ΔV = −Ed',
+            explanation: 'Le potentiel diminue dans le sens du champ électrique. Cette forme s’applique à un déplacement parallèle au champ uniforme.',
+            parameters: 'ΔV : différence de potentiel (V) ; E : valeur du champ (V·m⁻¹) ; d : distance parcourue dans le sens du champ (m).',
+            example: 'E = 2,0 × 10³ V·m⁻¹ et d = 0,010 m donnent ΔV = −20 V.',
+            result: 'La différence de potentiel est −20 V.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 5.4 Electric Field', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field' },
+          { title: 'OpenStax — University Physics Volume 2, 6.4 Conductors in Electrostatic Equilibrium', url: 'https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium' },
+          { title: 'OpenStax — University Physics Volume 2, 7.4 Determining Field from Potential', url: 'https://openstax.org/books/university-physics-volume-2/pages/7-4-determining-field-from-potential' }
+        ]
+      }
+    },
+    {
+      id: 'potentiel-electrique-tension',
+      title: 'Le potentiel électrique et la différence de potentiel',
+      field: 'Électrostatique · énergie potentielle électrique et tension',
+      summary: 'Définir le volt, distinguer tension et énergie et interpréter le rôle d’une source électrique.',
+      lesson: {
+        sections: [
+          'Le potentiel électrique V en un point est l’énergie potentielle électrique U rapportée à la charge q utilisée pour définir cette énergie : V = U/q. Le potentiel est exprimé en volts. Il s’agit d’une grandeur scalaire : il ne possède pas de direction. Sa valeur absolue dépend du niveau de référence choisi, mais une différence de potentiel entre deux points possède une signification physique mesurable.',
+          'La différence de potentiel entre B et A est ΔV = V_B − V_A. Elle est égale à la variation d’énergie potentielle électrique d’une charge q entre ces deux points, divisée par q : ΔV = ΔU/q. Le volt est défini par 1 V = 1 J/C. La tension n’est donc pas une quantité d’énergie totale et ne mesure pas directement le nombre d’électrons présents. Elle mesure une énergie potentielle électrique par unité de charge.',
+          'Pour une charge q déplacée de A vers B, la variation d’énergie potentielle est ΔU = qΔV. Pour un électron, q est négatif : si l’électron se déplace vers un potentiel plus élevé, son énergie potentielle électrique diminue. Il faut donc toujours conserver le signe de la charge dans les calculs, au lieu de raisonner uniquement avec des valeurs absolues.',
+          'Une pile ou une batterie maintient une différence de potentiel entre ses bornes grâce à des processus internes, notamment chimiques. Dans le circuit extérieur, cette différence de potentiel établit un champ électrique qui met les porteurs en mouvement. Une source idéale de tension ne « fabrique » pas les électrons du fil : elle fournit l’énergie nécessaire au déplacement des charges déjà présentes dans le circuit. Le courant durable nécessite un circuit fermé et une source qui maintient la séparation des charges.',
+          'Le champ électrique pointe dans le sens où le potentiel diminue. Dans un champ uniforme, la différence de potentiel est proportionnelle à la distance parcourue dans la direction du champ. Dans un champ non uniforme, il faut tenir compte de la variation spatiale du champ et utiliser la relation intégrale entre le champ et le potentiel.'
+        ],
+        formula: {
+          label: 'DÉFINITION DE LA DIFFÉRENCE DE POTENTIEL',
+          text: 'ΔV = V_B − V_A = ΔU/q  |  ΔU = qΔV  |  1 V = 1 J/C'
+        },
+        example: {
+          statement: 'Une charge positive q = 2,0 C traverse une différence de potentiel ΔV = 5,0 V. Quelle est la variation de son énergie potentielle électrique ?',
+          calculation: 'ΔU = qΔV = 2,0 C × 5,0 V.',
+          answer: 'ΔU = +10 J. L’énergie potentielle électrique de cette charge augmente de 10 J.'
+        },
+        exercise: {
+          question: 'Deux batteries affichent chacune une tension de 12 V. Cela signifie-t-il qu’elles stockent nécessairement la même énergie ?',
+          answer: 'Non. La tension est une énergie par unité de charge. L’énergie totale disponible dépend aussi de la quantité de charge que la batterie peut transférer.'
+        },
+        exercises: [
+          { question: 'Quelle est l’unité SI de la différence de potentiel ?', answer: 'Le volt (V), avec 1 V = 1 J/C.' },
+          { question: 'La tension est-elle une énergie totale ?', answer: 'Non. C’est une énergie potentielle électrique par unité de charge.' },
+          { question: 'Quelle est la variation d’énergie potentielle d’un électron pour ΔV = +3,0 V ?', answer: 'ΔU = qₑΔV = −e × 3,0 V ≈ −4,81 × 10⁻¹⁹ J.' }
+        ],
+        equationDetails: [
+          {
+            title: 'Potentiel électrique',
+            formula: 'V = U/q',
+            explanation: 'Le potentiel électrique est l’énergie potentielle électrique par unité de charge. Le choix de l’origine du potentiel est conventionnel ; les différences de potentiel sont les grandeurs directement mesurables.',
+            parameters: 'V : potentiel électrique (V) ; U : énergie potentielle électrique (J) ; q : charge test (C).',
+            example: 'Une énergie potentielle de 12 J associée à une charge de 2 C correspond à V = 12/2.',
+            result: 'V = 6 V relativement à la référence choisie.'
+          },
+          {
+            title: 'Variation d’énergie potentielle électrique',
+            formula: 'ΔU = qΔV',
+            explanation: 'La variation d’énergie potentielle dépend du signe de la charge. Une même différence de potentiel peut donc produire une variation d’énergie de signe opposé pour une charge positive et une charge négative.',
+            parameters: 'ΔU : variation d’énergie potentielle (J) ; q : charge (C) ; ΔV : différence de potentiel finale moins initiale (V).',
+            example: 'Pour un électron et ΔV = +3,0 V : ΔU = −1,602 × 10⁻¹⁹ × 3,0.',
+            result: 'ΔU ≈ −4,81 × 10⁻¹⁹ J.'
+          },
+          {
+            title: 'Différence de potentiel dans un champ uniforme',
+            formula: 'ΔV = −E d',
+            explanation: 'Pour un déplacement rectiligne parallèle à un champ uniforme, le potentiel décroît dans le sens du champ. Cette forme avec d positif suppose que le déplacement est effectué dans le sens du champ ; dans le cas général, il faut utiliser le produit scalaire.',
+            parameters: 'ΔV : différence de potentiel (V) ; E : module du champ uniforme (V·m⁻¹) ; d : distance parcourue dans le sens du champ (m).',
+            example: 'E = 250 V·m⁻¹ et d = 0,040 m dans le sens du champ donnent ΔV = −250 × 0,040.',
+            result: 'ΔV = −10 V.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 7.1 Electric Potential Energy', url: 'https://openstax.org/books/university-physics-volume-2/pages/7-1-electric-potential-energy' },
+          { title: 'OpenStax — University Physics Volume 2, 7.2 Electric Potential and Potential Difference', url: 'https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference' },
+          { title: 'OpenStax — University Physics Volume 2, 7.4 Determining Field from Potential', url: 'https://openstax.org/books/university-physics-volume-2/pages/7-4-determining-field-from-potential' }
+        ]
+      }
+    },
+    {
+      id: 'courant-electrique-derive-electrons',
+      title: 'Le courant électrique et la dérive des électrons',
+      field: 'Électricité · courant continu et transport de charge',
+      summary: 'Décrire le courant, le mouvement moyen des électrons et la distinction entre courant conventionnel et déplacement électronique.',
+      lesson: {
+        sections: [
+          'Le courant électrique mesure le débit de charge à travers une section : il correspond à la quantité de charge qui traverse cette section par unité de temps. Son unité est l’ampère, avec 1 A = 1 C/s. Le courant est une grandeur scalaire ; son sens est néanmoins défini par convention comme celui du déplacement de charges positives.',
+          'Dans un fil métallique, les porteurs mobiles sont principalement les électrons. Leur déplacement moyen, appelé vitesse de dérive, se fait dans le sens opposé au champ électrique et au sens conventionnel du courant. Cette différence de sens ne constitue pas une contradiction : le sens conventionnel a été fixé historiquement avant la découverte de l’électron et reste utilisé dans les schémas et les calculs de circuits.',
+          'Les électrons ne parcourent pas le fil en ligne droite à vitesse constante. Leur mouvement microscopique est désordonné et ils interagissent avec le réseau cristallin, les défauts et d’autres excitations du matériau. Le champ électrique produit une faible dérive moyenne superposée à ce mouvement désordonné. La vitesse de dérive peut être très faible, alors que la modification du champ électrique dans le circuit se propage rapidement : il ne faut donc pas imaginer qu’un électron situé près de la pile traverse instantanément tout le fil jusqu’à l’appareil.',
+          'Dans un conducteur métallique de section A, si les porteurs ont une densité n et une charge q, le module du courant est relié au module de leur vitesse de dérive par I = n|q|Av_d. Pour les électrons, le signe de la vitesse vectorielle indique le sens opposé au courant conventionnel ; la formule écrite avec les modules évite de mélanger convention de signe et intensité.',
+          'Le courant ne correspond pas toujours à des électrons. Dans un électrolyte, des ions positifs et négatifs se déplacent ; dans un semi-conducteur, des électrons et des trous peuvent participer au transport. La nature des porteurs dépend donc du matériau et de son état physique.'
+        ],
+        formula: {
+          label: 'INTENSITÉ ET VITESSE DE DÉRIVE',
+          text: 'I = ΔQ/Δt  |  I = dQ/dt  |  I = n|q|Av_d'
+        },
+        example: {
+          statement: 'Une charge de 6,0 C traverse une section de fil en 2,0 s. Quelle est l’intensité moyenne du courant ?',
+          calculation: 'I = ΔQ/Δt = 6,0 C / 2,0 s.',
+          answer: 'I = 3,0 A.'
+        },
+        exercise: {
+          question: 'Dans un fil métallique, les électrons se déplacent-ils dans le même sens que le courant conventionnel ?',
+          answer: 'Non. Les électrons dérivent dans le sens opposé au courant conventionnel.'
+        },
+        exercises: [
+          { question: 'Que représente 1 ampère ?', answer: 'Un débit de charge de 1 coulomb par seconde.' },
+          { question: 'Quel est le sens du courant conventionnel dans un circuit continu extérieur à une pile ?', answer: 'Du pôle positif vers le pôle négatif.' },
+          { question: 'La vitesse de dérive d’un électron est-elle la vitesse de propagation du signal électrique ?', answer: 'Non. La vitesse de dérive est la vitesse moyenne des porteurs ; le signal électromagnétique se propage beaucoup plus rapidement.' }
+        ],
+        equationDetails: [
+          {
+            title: 'Intensité moyenne du courant',
+            formula: 'I = ΔQ/Δt',
+            explanation: 'L’intensité moyenne est la quantité de charge nette qui traverse une section pendant un intervalle, divisée par la durée de cet intervalle.',
+            parameters: 'I : intensité moyenne (A) ; ΔQ : charge traversant la section (C) ; Δt : durée (s).',
+            example: 'ΔQ = 6,0 C pendant Δt = 2,0 s donne I = 6,0/2,0.',
+            result: 'I = 3,0 A.'
+          },
+          {
+            title: 'Courant et vitesse de dérive',
+            formula: 'I = n|q|Av_d',
+            explanation: 'Dans un conducteur uniforme, cette relation relie le courant au nombre de porteurs mobiles par unité de volume et à leur vitesse moyenne de dérive. Elle est écrite ici avec les valeurs absolues pour exprimer une intensité positive.',
+            parameters: 'I : intensité (A) ; n : densité de porteurs (m⁻³) ; q : charge d’un porteur (C) ; A : aire de section (m²) ; v_d : module de la vitesse de dérive (m·s⁻¹).',
+            example: 'Si n, |q| et A sont fixés, doubler v_d double I.',
+            result: 'À densité et section constantes, le courant est proportionnel à la vitesse de dérive.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 9.1 Electrical Current', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-1-electrical-current' },
+          { title: 'OpenStax — University Physics Volume 2, 9.2 Model of Conduction in Metals', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-2-model-of-conduction-in-metals' },
+          { title: 'OpenStax — University Physics Volume 2, 9.3 Resistivity and Resistance', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance' }
+        ]
+      }
+    },
+    {
+      id: 'resistance-loi-ohmique',
+      title: 'Résistance, résistivité et loi d’Ohm',
+      field: 'Électricité · propriétés des matériaux et circuits',
+      summary: 'Relier la tension, le courant, la géométrie du conducteur et les propriétés du matériau.',
+      lesson: {
+        sections: [
+          'La résistance R caractérise l’opposition d’un composant au passage du courant dans des conditions données. Elle se mesure en ohms (Ω). La résistivité ρ est une propriété du matériau, tandis que la résistance dépend aussi de la géométrie du conducteur. Pour un fil uniforme de longueur L et de section A, la résistance est proportionnelle à la longueur et inversement proportionnelle à la section.',
+          'La loi d’Ohm s’écrit U = RI pour un composant ohmique dans les conditions où sa caractéristique tension-courant est linéaire. Elle ne constitue pas une loi universelle applicable à tous les composants : une diode, par exemple, présente une relation non linéaire entre tension et courant. La température peut également modifier la résistance d’un matériau, notamment celle des métaux.',
+          'À l’échelle microscopique, le modèle usuel relie la densité de courant J au champ électrique E par J = σE pour un matériau ohmique isotrope dans le régime linéaire. La conductivité σ est l’inverse de la résistivité ρ. Les interactions des électrons avec le réseau et les défauts participent à la résistance ; dans un métal ordinaire, la résistivité augmente généralement avec la température sur une plage usuelle, car les vibrations du réseau deviennent plus importantes.',
+          'La différence de potentiel fournit l’énergie transférée aux charges dans le circuit. La puissance électrique reçue ou dissipée par un dipôle récepteur s’écrit P = UI avec la convention récepteur. Pour une résistance ohmique, on peut aussi écrire P = RI² ou P = U²/R. Cette énergie est souvent convertie en énergie thermique dans le matériau, ce qui explique l’échauffement d’un conducteur parcouru par un courant.',
+          'Une résistance ne « consomme » pas les électrons : dans un circuit fermé, les porteurs circulent et la charge se conserve. Le composant transforme de l’énergie électrique en d’autres formes d’énergie, principalement en chaleur pour une résistance ordinaire. La source électrique doit fournir continuellement de l’énergie pour compenser cette dissipation et maintenir le courant.'
+        ],
+        formula: {
+          label: 'LOI D’OHM ET RÉSISTANCE D’UN FIL',
+          text: 'U = RI  |  R = ρL/A  |  P = UI'
+        },
+        example: {
+          statement: 'Une résistance de 6,0 Ω est soumise à une tension de 12 V. Quelle intensité la traverse et quelle puissance dissipe-t-elle ?',
+          calculation: 'I = U/R = 12/6,0 = 2,0 A. Puis P = UI = 12 × 2,0.',
+          answer: 'I = 2,0 A et P = 24 W, pour un composant ohmique dans les conditions considérées.'
+        },
+        exercise: {
+          question: 'Pourquoi la résistance d’un fil dépend-elle à la fois du matériau et de ses dimensions ?',
+          answer: 'Le matériau intervient par sa résistivité ρ ; la longueur L et la section A déterminent la géométrie du trajet des porteurs selon R = ρL/A.'
+        },
+        exercises: [
+          { question: 'Quelle est l’unité de la résistance électrique ?', answer: 'L’ohm (Ω), avec 1 Ω = 1 V/A.' },
+          { question: 'La loi d’Ohm s’applique-t-elle à tous les composants ?', answer: 'Non. Elle décrit les composants ohmiques dans leur domaine de fonctionnement ; certains composants, comme les diodes, ont une caractéristique non linéaire.' },
+          { question: 'Une résistance retire-t-elle les électrons du circuit ?', answer: 'Non. Elle dissipe de l’énergie électrique, mais les porteurs ne sont pas consommés.' }
+        ],
+        equationDetails: [
+          {
+            title: 'Loi d’Ohm',
+            formula: 'U = RI',
+            explanation: 'Pour un dipôle ohmique dans des conditions fixées, la tension à ses bornes est proportionnelle au courant qui le traverse. La résistance est le coefficient de proportionnalité.',
+            parameters: 'U : tension aux bornes du dipôle (V) ; R : résistance (Ω) ; I : intensité du courant (A).',
+            example: 'U = 12 V et R = 6 Ω donnent I = 12/6.',
+            result: 'I = 2 A.'
+          },
+          {
+            title: 'Résistance d’un conducteur uniforme',
+            formula: 'R = ρL/A',
+            explanation: 'La résistance augmente avec la longueur du conducteur et diminue lorsque sa section augmente. La résistivité dépend du matériau et de son état physique, notamment de sa température.',
+            parameters: 'R : résistance (Ω) ; ρ : résistivité (Ω·m) ; L : longueur (m) ; A : aire de section (m²).',
+            example: 'À matériau et section identiques, doubler la longueur double la résistance.',
+            result: 'R est proportionnelle à L et inversement proportionnelle à A.'
+          },
+          {
+            title: 'Puissance électrique',
+            formula: 'P = UI',
+            explanation: 'La puissance électrique est le débit de transfert d’énergie. Pour une résistance ohmique, elle peut être réécrite à l’aide de la loi d’Ohm.',
+            parameters: 'P : puissance (W) ; U : tension (V) ; I : intensité (A).',
+            example: 'Pour U = 12 V et I = 2 A, P = 12 × 2.',
+            result: 'P = 24 W.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — University Physics Volume 2, 9.3 Resistivity and Resistance', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance' },
+          { title: 'OpenStax — University Physics Volume 2, 9.4 Ohm’s Law', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law' },
+          { title: 'OpenStax — University Physics Volume 2, 9.5 Electrical Energy and Power', url: 'https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power' }
+        ]
+      }
+    }
+  ]
+},
 
+{
+  id: 'etats-matieres',
+  title: 'Les différents états de la matière',
+  note: 'Neuf chapitres consacrés aux états et régimes physiques de la matière, à l’organisation cristalline, aux phénomènes quantiques et aux transitions de phase. Les trois états classiques sont présentés en premier, puis les régimes particuliers selon leurs repères historiques : domaine supercritique mis en évidence au XIXe siècle, plasma nommé en 1928, superfluidité observée en 1937 et condensat de Bose-Einstein prédit en 1924 puis réalisé en laboratoire en 1995. L’état cristallin est une structure de l’état solide, et non un état thermodynamique indépendant. Les diagrammes et températures de transition dépendent de la nature de chaque substance.',
+  chapters: [
+    {
+      id: 'etat-solide',
+      title: 'L’état solide : cohésion, structure et propriétés',
+      field: 'Physique de la matière condensée · État classique',
+      summary: 'Étudier les solides à partir de l’organisation de leurs constituants, de leurs interactions microscopiques et de leurs propriétés mécaniques, thermiques et électriques.',
+      lesson: {
+        sections: [
+          'Un solide possède généralement une forme propre et un volume propre à l’échelle macroscopique. Ses constituants — atomes, ions ou molécules — restent proches les uns des autres. Ils ne sont pas immobiles : ils vibrent autour de positions d’équilibre. La cohésion résulte des interactions entre particules, dont la nature varie selon le matériau : liaisons ioniques, métalliques ou covalentes, interactions moléculaires et forces électrostatiques.',
+
+          'La faible mobilité des constituants explique la résistance d’un solide à l’écoulement et sa faible compressibilité par comparaison avec un gaz. Ces propriétés ne sont toutefois pas absolues : un solide peut se déformer élastiquement, plastiquement, se fracturer ou se comprimer sous une contrainte suffisante. La rigidité dépend de la structure, des liaisons, de la température, des défauts et de la durée d’application de la contrainte.',
+
+          'Il faut distinguer solides cristallins et solides amorphes. Dans un cristal, l’ordre structural se répète à longue distance. Dans un solide amorphe, comme de nombreux verres, l’organisation ne présente pas cette périodicité à longue distance. Un matériau amorphe peut conserver un ordre local entre voisins. Cette distinction a des conséquences sur la diffraction, les propriétés mécaniques et le comportement lors du chauffage.',
+
+          'Quand la température augmente, l’agitation thermique des constituants augmente généralement. Dans un solide cristallin pur à pression fixée, la fusion se produit à une température déterminée à l’équilibre. Les solides amorphes ne présentent généralement pas une fusion nette comparable : ils peuvent se ramollir progressivement autour d’une plage de températures liée à leur transition vitreuse. Il ne faut donc pas attribuer à tous les solides un point de fusion unique.',
+
+          'À l’échelle quantique, les vibrations du réseau cristallin sont décrites en termes de modes collectifs quantifiés appelés phonons. Cette description permet notamment de comprendre une partie de la capacité thermique, la propagation de la chaleur et certaines propriétés des solides. Le modèle classique reste utile à température ordinaire, mais devient insuffisant dans certains régimes de basse température ou lorsque les effets quantiques dominent.'
+        ],
+        example: {
+          statement: 'Un échantillon conserve sa forme lorsqu’on le déplace et ses constituants vibrent autour de positions moyennes. Quel état physique décrit-on ?',
+          calculation: 'La conservation d’une forme propre et la cohésion des constituants sont les critères macroscopiques caractéristiques d’un solide. Les vibrations microscopiques ne signifient pas que les particules se déplacent librement comme dans un liquide ou un gaz.',
+          answer: 'Il s’agit de l’état solide. Les constituants restent liés ou fortement corrélés et vibrent autour de positions d’équilibre.'
+        },
+        exercise: {
+          question: 'Pourquoi un solide est-il généralement beaucoup moins compressible qu’un gaz ?',
+          answer: 'Parce que ses constituants sont déjà très rapprochés et que réduire davantage leurs distances nécessite de fortes contraintes, alors qu’un gaz contient beaucoup d’espace entre ses particules.'
+        },
+        exercises: [
+          {
+            question: 'Les constituants d’un solide sont-ils immobiles ?',
+            answer: 'Non. Ils vibrent autour de positions d’équilibre et leur mouvement dépend notamment de la température.'
+          },
+          {
+            question: 'Un solide est-il nécessairement cristallin ?',
+            answer: 'Non. Il peut être cristallin ou amorphe.'
+          },
+          {
+            question: 'Quel nom donne-t-on aux quanta des vibrations collectives d’un réseau cristallin ?',
+            answer: 'Des phonons.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, chapitre 10 : Liquids and Solids',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-introduction'
+          },
+          {
+            title: 'OpenStax — Chemistry : Chapter 10 Summary',
+            url: 'https://openstax.org/books/chemistry/pages/10-summary'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 10.1 Intermolecular Forces',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-1-intermolecular-forces'
+          }
+        ]
+      }
+    },
+    {
+      id: 'etat-cristallin',
+      title: 'L’état cristallin : réseau périodique et ordre atomique',
+      field: 'Cristallographie · Structure des solides',
+      summary: 'Comprendre le réseau cristallin, la maille élémentaire, les familles de cristaux, les défauts et les méthodes expérimentales qui révèlent leur organisation.',
+      lesson: {
+        sections: [
+          'Un cristal est un solide dont l’organisation microscopique présente une périodicité à longue distance. Cette organisation se décrit par un réseau cristallin et un motif associé à chaque nœud du réseau. Le réseau exprime la périodicité géométrique ; le motif précise les atomes, ions ou groupes d’atomes qui se répètent. La structure cristalline complète résulte de la répétition périodique de ce motif dans l’espace.',
+
+          'La maille élémentaire est un volume géométrique qui permet de reconstruire le réseau par translations. Elle est définie par trois longueurs et trois angles. La maille conventionnelle est choisie pour rendre la symétrie plus visible, tandis que la maille primitive contient le volume minimal associé à un seul point de réseau. Il existe sept systèmes cristallins et quatorze réseaux de Bravais en trois dimensions.',
+
+          'Les solides cristallins sont classés selon la nature de leurs constituants et des interactions qui les relient. OpenStax distingue notamment les cristaux ioniques, métalliques, covalents en réseau et moléculaires. Leurs propriétés diffèrent : un cristal ionique peut être dur et fragile, un métal peut conduire le courant grâce à ses électrons délocalisés, et un solide moléculaire peut présenter une cohésion plus faible. Ces tendances dépendent de la composition et de la structure précises.',
+
+          'Un cristal réel n’est jamais nécessairement parfait. Il peut contenir des lacunes, des atomes interstitiels, des substitutions d’impuretés, des dislocations ou des joints de grains. Ces défauts ne sont pas de simples imperfections sans intérêt : ils influencent la diffusion, la résistance mécanique, la conductivité électrique et les propriétés optiques. Le dopage contrôlé du silicium est par exemple fondamental pour régler les propriétés électriques des semi-conducteurs.',
+
+          'La diffraction des rayons X est une méthode majeure de détermination des structures cristallines. Les rayons X sont diffusés par les électrons du matériau ; les interférences produisent des maxima dans certaines directions. L’analyse des angles et intensités de diffraction permet de déduire les distances interplans et la structure. La loi de Bragg s’écrit nλ = 2d sin(θ), où n est un entier, λ la longueur d’onde, d l’espacement interréticulaire et θ l’angle de Bragg.',
+
+          'La description quantique du cristal complète le modèle géométrique. Les électrons occupent des états quantiques influencés par le potentiel périodique du réseau. Cette périodicité conduit à la formation de bandes d’énergie, qui aident à distinguer conducteurs, semi-conducteurs et isolants. Les vibrations collectives du réseau sont quantifiées sous forme de phonons. Ainsi, la structure cristalline relie directement l’organisation atomique aux propriétés observables.'
+        ],
+        example: {
+          statement: 'Une diffraction des rayons X utilise une longueur d’onde λ = 0,154 nm et révèle un maximum de premier ordre à θ = 20°. Déterminer l’espacement d correspondant.',
+          calculation: 'La loi de Bragg est nλ = 2d sin(θ). Pour le premier ordre, n = 1, donc d = λ / (2 sin(θ)) = 0,154 / (2 × sin(20°)) nm.',
+          answer: 'd est approximativement égal à 0,225 nm. La valeur est arrondie ; elle dépend des valeurs expérimentales et de la précision de l’angle.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale distingue un solide cristallin d’un solide amorphe ?',
+          answer: 'Le solide cristallin possède un ordre périodique à longue distance, contrairement au solide amorphe qui ne présente pas cette périodicité.'
+        },
+        exercises: [
+          {
+            question: 'À quoi sert une maille élémentaire ?',
+            answer: 'À décrire la répétition périodique qui permet de reconstruire la structure cristalline.'
+          },
+          {
+            question: 'Citer deux défauts cristallins.',
+            answer: 'Une lacune et un atome interstitiel, par exemple.'
+          },
+          {
+            question: 'Quelle technique permet de déterminer de nombreuses structures cristallines ?',
+            answer: 'La diffraction des rayons X.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 10.5 The Solid State of Matter',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 10.6 Lattice Structures in Crystalline Solids',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-6-lattice-structures-in-crystalline-solids'
+          },
+          {
+            title: 'IUCr — Online Dictionary of Crystallography',
+            url: 'https://dictionary.iucr.org/Main_Page'
+          }
+        ]
+      }
+    },
+    {
+      id: 'etat-liquide',
+      title: 'L’état liquide : mobilité, cohésion et propriétés de surface',
+      field: 'Physique et chimie des fluides · État classique',
+      summary: 'Analyser la structure microscopique des liquides, leur fluidité, leur viscosité, leur tension superficielle et leur équilibre avec la vapeur.',
+      lesson: {
+        sections: [
+          'Un liquide possède un volume qui varie relativement peu avec la pression dans les conditions usuelles, mais il ne conserve pas une forme propre : il prend celle de son récipient et présente une surface libre en équilibre avec son environnement. Ses particules restent proches les unes des autres, tout en pouvant se déplacer et se réorganiser. Le liquide combine donc une forte cohésion locale et une mobilité interne.',
+
+          'Les interactions entre particules déterminent une grande partie des propriétés du liquide. Les forces de dispersion, les interactions dipôle-dipôle et les liaisons hydrogène peuvent contribuer à la cohésion selon la substance. La viscosité mesure la résistance à l’écoulement. Elle dépend de la température, de la pression et de la structure moléculaire ; pour de nombreux liquides, elle diminue lorsque la température augmente, mais ce comportement ne doit pas être généralisé sans préciser le matériau.',
+
+          'La tension superficielle traduit le coût énergétique associé à la création d’une surface. Les molécules situées à l’interface ne sont pas entourées de voisines de la même manière que celles du volume. Cette asymétrie conduit à une énergie de surface et explique notamment la tendance de petites gouttes à adopter une forme proche de la sphère lorsque les autres forces sont négligeables. La capillarité résulte conjointement des forces de cohésion dans le liquide et d’adhésion entre le liquide et les parois.',
+
+          'Dans un récipient fermé, évaporation et condensation peuvent se produire simultanément. À l’équilibre, leurs vitesses sont égales : les quantités macroscopiques de liquide et de vapeur restent alors constantes, bien que les échanges moléculaires continuent. La pression exercée par la vapeur à cet équilibre est la pression de vapeur saturante. Elle augmente généralement avec la température.',
+
+          'La température d’ébullition dépend de la pression extérieure. Un liquide bout lorsque sa pression de vapeur atteint la pression exercée sur lui. À pression atmosphérique plus faible, l’ébullition se produit à une température plus basse ; à pression plus élevée, elle se produit généralement à une température plus haute, tant que l’on reste sous le point critique. Cette dépendance est essentielle pour interpréter les diagrammes de phase.'
+        ],
+        example: {
+          statement: 'Pourquoi la température d’ébullition de l’eau est-elle plus basse en altitude que dans une région où la pression atmosphérique est plus élevée ?',
+          calculation: 'L’ébullition commence lorsque la pression de vapeur saturante du liquide atteint la pression extérieure. En altitude, la pression atmosphérique est généralement plus faible ; cette égalité est donc atteinte à une température plus basse.',
+          answer: 'L’eau bout à une température plus basse en altitude parce que la pression extérieure y est généralement plus faible.'
+        },
+        exercise: {
+          question: 'Que signifie l’équilibre dynamique entre évaporation et condensation ?',
+          answer: 'Les deux processus continuent, mais leurs vitesses sont égales ; les quantités macroscopiques de liquide et de vapeur restent constantes.'
+        },
+        exercises: [
+          {
+            question: 'Un liquide possède-t-il une forme propre ?',
+            answer: 'Non. Il prend la forme de son récipient, tout en conservant généralement un volume propre.'
+          },
+          {
+            question: 'Que mesure la viscosité ?',
+            answer: 'La résistance d’un fluide à l’écoulement.'
+          },
+          {
+            question: 'À quelle condition un liquide bout-il ?',
+            answer: 'Lorsque sa pression de vapeur atteint la pression exercée sur le liquide.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 10.2 Properties of Liquids',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-2-properties-of-liquids'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 10.3 Phase Transitions',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-3-phase-transitions'
+          }
+        ]
+      }
+    },
+    {
+      id: 'etat-gazeux',
+      title: 'L’état gazeux : agitation thermique et théorie cinétique',
+      field: 'Thermodynamique et théorie cinétique · État classique',
+      summary: 'Expliquer la compressibilité des gaz, leur diffusion, la pression microscopique et les limites du modèle du gaz parfait.',
+      lesson: {
+        sections: [
+          'Un gaz ne possède ni forme propre ni volume propre : il occupe l’espace disponible dans son récipient. À l’échelle microscopique, ses particules sont en moyenne beaucoup plus éloignées les unes des autres que dans un liquide ou un solide. Elles se déplacent de façon désordonnée et interagissent principalement lors de collisions dans le modèle du gaz parfait.',
+
+          'La théorie cinétique relie les grandeurs macroscopiques aux mouvements microscopiques. La pression provient des transferts de quantité de mouvement lors des collisions des particules avec les parois. La température absolue est liée à l’énergie cinétique moyenne de translation dans le modèle classique du gaz parfait monoatomique : énergie cinétique moyenne = (3/2) kB T, où kB est la constante de Boltzmann et T la température en kelvins.',
+
+          'Pour une quantité donnée de gaz parfait, l’équation d’état est pV = nRT. p désigne la pression, V le volume, n la quantité de matière, R la constante des gaz parfaits et T la température absolue. Cette relation est une approximation : elle devient particulièrement utile lorsque le gaz est suffisamment dilué et éloigné de la condensation. À forte pression ou à basse température, le volume propre des particules et leurs interactions ne sont plus négligeables.',
+
+          'La diffusion est le mélange spontané de particules sous l’effet de leur agitation thermique. L’effusion désigne le passage d’un gaz par une petite ouverture. La vitesse de ces phénomènes dépend notamment de la masse des particules, de la température et des conditions géométriques. Dans un mélange gazeux, chaque constituant contribue à la pression totale : dans le modèle idéal, la pression totale est la somme des pressions partielles.',
+
+          'Un gaz peut être liquéfié par compression uniquement si la température est inférieure à sa température critique. Au-dessus de cette température, augmenter la pression ne permet pas de retrouver une phase liquide séparée. Cette limite conduit à la notion de point critique et à la description des fluides supercritiques.'
+        ],
+        example: {
+          statement: 'Un gaz parfait occupe V = 0,010 m3 à T = 300 K et contient n = 0,50 mol. Calculer sa pression avec R = 8,314 J·mol−1·K−1.',
+          calculation: 'À partir de pV = nRT, on obtient p = nRT / V = (0,50 × 8,314 × 300) / 0,010.',
+          answer: 'p = 124 710 Pa, soit environ 1,25 × 10^5 Pa. Le résultat suppose que le gaz peut être assimilé à un gaz parfait.'
+        },
+        exercise: {
+          question: 'Pourquoi un gaz est-il beaucoup plus compressible qu’un liquide dans les conditions ordinaires ?',
+          answer: 'Parce que ses particules sont séparées par de grandes distances à l’échelle microscopique ; une compression peut réduire cet espace disponible.'
+        },
+        exercises: [
+          {
+            question: 'Quelle grandeur microscopique est liée à la température d’un gaz parfait ?',
+            answer: 'L’énergie cinétique moyenne de translation de ses particules.'
+          },
+          {
+            question: 'Écrire l’équation d’état du gaz parfait.',
+            answer: 'pV = nRT.'
+          },
+          {
+            question: 'Peut-on liquéfier un gaz par simple compression au-dessus de sa température critique ?',
+            answer: 'Non. Au-dessus de la température critique, il n’existe plus de frontière liquide-gaz que la compression pourrait franchir.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 9.5 The Kinetic-Molecular Theory',
+            url: 'https://openstax.org/books/chemistry-2e/pages/9-5-the-kinetic-molecular-theory'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 9.6 Non-Ideal Gas Behavior',
+            url: 'https://openstax.org/books/chemistry-2e/pages/9-6-non-ideal-gas-behavior'
+          }
+        ]
+      }
+    },
+    {
+      id: 'fluide-supercritique',
+      title: 'Le fluide supercritique : au-delà de la distinction liquide-gaz',
+      field: 'Thermodynamique des fluides · Domaine supercritique mis en évidence au XIXe siècle',
+      summary: 'Étudier le point critique, la disparition de la frontière liquide-vapeur et les propriétés particulières des fluides supercritiques.',
+      lesson: {
+        sections: [
+          'Un fluide supercritique est une substance portée au-dessus de sa température critique et de sa pression critique. Selon la définition de l’IUPAC, ces deux conditions doivent être dépassées. Dans ce domaine, il n’existe plus de séparation nette entre une phase liquide et une phase gazeuse : le fluide forme une seule phase. Il ne faut donc pas le décrire simplement comme un mélange de liquide et de gaz.',
+
+          'Le point critique est l’extrémité de la courbe d’équilibre liquide-vapeur sur le diagramme pression-température. Au voisinage de ce point, les propriétés intensives des phases liquide et vapeur deviennent identiques et la distinction entre elles disparaît. La densité, la compressibilité et la capacité thermique peuvent varier fortement à proximité du point critique. La valeur de la température et de la pression critiques dépend de la substance.',
+
+          'Le domaine supercritique a été mis en évidence expérimentalement au début du XIXe siècle, notamment par les expériences de Cagniard de la Tour en 1822. La compréhension moderne s’appuie sur les diagrammes de phase et la thermodynamique. Il est important de distinguer le repère historique de la définition actuelle, qui est formulée précisément par l’IUPAC.',
+
+          'Un fluide supercritique peut présenter une densité relativement élevée, comparable dans certains domaines à celle d’un liquide, tout en diffusant plus facilement qu’un liquide ordinaire. Ses propriétés peuvent être ajustées en modifiant la température et la pression. Le dioxyde de carbone supercritique est utilisé dans certains procédés d’extraction et de séparation, mais ses propriétés exactes dépendent des conditions et du composé traité.',
+
+          'Pour l’eau, OpenStax indique un point critique proche de 374 °C et 218 atm. Au-delà de cette température, on ne peut plus obtenir une phase liquide distincte en augmentant simplement la pression. Les valeurs numériques doivent toujours être associées à la substance concernée : le point critique du dioxyde de carbone, de l’azote ou de l’eau n’est pas le même.'
+        ],
+        example: {
+          statement: 'Un échantillon d’eau est porté à 400 °C et 230 atm. Ces conditions dépassent-elles les valeurs critiques approximatives indiquées par OpenStax pour l’eau ?',
+          calculation: 'Pour l’eau, OpenStax donne une température critique proche de 374 °C et une pression critique proche de 218 atm. Ici, 400 °C est supérieur à 374 °C et 230 atm est supérieur à 218 atm.',
+          answer: 'Oui. Ces conditions se situent au-dessus des deux valeurs critiques approximatives ; l’eau est alors dans le domaine supercritique.'
+        },
+        exercise: {
+          question: 'Pourquoi ne peut-on plus distinguer une phase liquide et une phase gazeuse au-dessus du point critique ?',
+          answer: 'Parce que la frontière d’équilibre liquide-vapeur se termine au point critique : les propriétés intensives des deux phases deviennent identiques et une seule phase fluide subsiste.'
+        },
+        exercises: [
+          {
+            question: 'Quelles conditions définissent un fluide supercritique selon l’IUPAC ?',
+            answer: 'Une température supérieure à la température critique et une pression supérieure à la pression critique.'
+          },
+          {
+            question: 'Le point critique est-il identique pour toutes les substances ?',
+            answer: 'Non. Chaque substance possède ses propres valeurs critiques.'
+          },
+          {
+            question: 'Quel composé est fréquemment utilisé comme fluide supercritique dans des procédés d’extraction ?',
+            answer: 'Le dioxyde de carbone.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IUPAC Gold Book — Supercritical fluid',
+            url: 'https://goldbook.iupac.org/terms/view/S06138'
+          },
+          {
+            title: 'IUPAC Gold Book — Critical point',
+            url: 'https://goldbook.iupac.org/terms/view/C01396'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 10.4 Phase Diagrams',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-4-phase-diagrams'
+          },
+          {
+            title: 'Cairn — Quelles sont les ressources de la chimie verte ?, section sur les fluides supercritiques',
+            url: 'https://stm.cairn.info/quelles-sont-les-ressources-de-la-chimie-verte--9782759809097-page-107?lang=fr&tab=texte-integral'
+          }
+        ]
+      }
+    },
+    {
+      id: 'plasma',
+      title: 'Le plasma : gaz ionisé et milieu électriquement actif',
+      field: 'Physique des plasmas · Terme introduit par Irving Langmuir en 1928',
+      summary: 'Définir le plasma, comprendre l’ionisation, le comportement collectif des particules chargées et ses manifestations naturelles et technologiques.',
+      lesson: {
+        sections: [
+          'Un plasma est un milieu contenant des particules chargées libres, notamment des électrons et des ions, en proportions suffisantes pour que les effets collectifs électromagnétiques jouent un rôle essentiel. Il est souvent décrit comme un gaz ionisé, mais tout gaz contenant quelques ions n’est pas automatiquement un plasma : le comportement collectif et les échelles caractéristiques du milieu comptent également.',
+
+          'L’ionisation peut être produite par un apport d’énergie thermique, un champ électrique, un rayonnement ou des collisions énergétiques. Un atome neutre perd ou gagne des électrons et devient un ion. Le plasma peut rester globalement quasi-neutre à grande échelle, c’est-à-dire que les densités de charges positives et négatives se compensent presque, tout en présentant localement des champs électriques et magnétiques importants.',
+
+          'La présence de charges mobiles donne au plasma des propriétés distinctes d’un gaz neutre : il conduit le courant électrique et répond aux champs électromagnétiques. Les particules chargées interagissent collectivement ; le mouvement d’une région du plasma peut influencer le comportement d’autres régions. La description mobilise notamment la fréquence plasma, la longueur de Debye et les phénomènes d’ondes et d’instabilités.',
+
+          'Le terme plasma a été introduit par Irving Langmuir en 1928 pour décrire les gaz ionisés étudiés dans ses travaux sur les décharges électriques. Les plasmas sont aujourd’hui étudiés dans des contextes très variés : intérieur des étoiles, vent solaire, aurores, éclairs, lampes à décharge et dispositifs expérimentaux. En revanche, une flamme ordinaire n’est pas automatiquement un plasma ; la température seule ou l’émission lumineuse ne suffisent pas à établir cette classification.',
+
+          'Le plasma n’est pas simplement un gaz plus chaud dans tous les cas. Il existe des plasmas thermiques, où plusieurs populations de particules sont proches de l’équilibre thermique, et des plasmas non thermiques, où les électrons peuvent être beaucoup plus énergétiques que les ions et les neutres. Les conditions de formation et les propriétés varient donc considérablement d’un plasma à l’autre.'
+        ],
+        example: {
+          statement: 'Pourquoi une région de l’atmosphère solaire est-elle classée comme plasma plutôt que comme gaz neutre ordinaire ?',
+          calculation: 'Il faut examiner la présence de particules chargées libres et leur dynamique collective. Dans le Soleil, la matière est suffisamment ionisée pour que les électrons et les ions interagissent fortement avec les champs électromagnétiques.',
+          answer: 'Parce que le milieu contient des particules chargées libres dont le comportement collectif électromagnétique est déterminant.'
+        },
+        exercise: {
+          question: 'Pourquoi la présence de quelques ions ne suffit-elle pas à qualifier automatiquement un gaz de plasma ?',
+          answer: 'La définition physique du plasma repose aussi sur le comportement collectif des particules chargées et sur les propriétés électromagnétiques du milieu.'
+        },
+        exercises: [
+          {
+            question: 'Quelles particules sont typiquement présentes dans un plasma ?',
+            answer: 'Des électrons et des ions, ainsi que parfois des particules neutres.'
+          },
+          {
+            question: 'En quelle année Irving Langmuir a-t-il introduit le terme plasma ?',
+            answer: 'En 1928.'
+          },
+          {
+            question: 'Citer deux exemples naturels de plasma.',
+            answer: 'Le Soleil et les aurores polaires.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NASA — A Guide to Experiments with Plasmas, 2025',
+            url: 'https://assets.science.nasa.gov/content/dam/science/hpd/heat/sten-guides/sten-guides-pdfs/NASAPlasma-Introductory_FINAL.pdf'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 1.2 Phases and Classification of Matter',
+            url: 'https://openstax.org/books/chemistry-2e/pages/1-2-phases-and-classification-of-matter'
+          }
+        ]
+      }
+    },
+    {
+      id: 'superfluidite',
+      title: 'La superfluidité : un écoulement quantique',
+      field: 'Physique quantique des fluides · Superfluidité de l’hélium-4 observée en 1937',
+      summary: 'Découvrir la superfluidité, ses propriétés macroscopiques quantiques et son lien avec la cohérence quantique à grande échelle.',
+      lesson: {
+        sections: [
+          'La superfluidité est un régime quantique de certains fluides dans lequel apparaît notamment une composante d’écoulement sans viscosité dans les conditions expérimentales appropriées. Elle ne signifie pas que toute résistance ou toute interaction disparaît dans toutes les situations : les excitations, les parois, les tourbillons quantifiés et les vitesses imposées déterminent les conditions dans lesquelles l’écoulement reste superfluide.',
+
+          'La superfluidité de l’hélium-4 liquide a été mise en évidence en 1937, notamment dans les travaux de Piotr Kapitsa et, indépendamment, de John Allen et Don Misener. L’hélium-4 est constitué d’atomes bosoniques. À très basse température, ses propriétés ne peuvent pas être expliquées par une simple théorie classique des molécules en mouvement ; il faut tenir compte de la mécanique quantique et des corrélations collectives.',
+
+          'La description à deux fluides de l’hélium-4 superfluide distingue une composante superfluide et une composante normale. La composante normale porte l’entropie et la dissipation, tandis que la composante superfluide est associée à un écoulement sans viscosité dans le cadre du modèle. Les deux composantes coexistent sous la température de transition, avec des proportions qui dépendent de la température.',
+
+          'Une signature importante de la superfluidité est la quantification de la circulation dans un fluide superfluide cohérent. Les tourbillons ne peuvent pas prendre arbitrairement toutes les circulations possibles : leur circulation est quantifiée. Ce comportement provient de la phase de la fonction d’onde macroscopique et constitue un indice direct du caractère quantique collectif du fluide.',
+
+          'La superfluidité est liée à la condensation de Bose-Einstein dans certains systèmes, mais les deux notions ne sont pas synonymes. Un condensat idéal et un superfluide réel ne se définissent pas par exactement les mêmes critères. Les interactions, la dimension du système et les excitations jouent un rôle essentiel. L’hélium-4 liquide est un système fortement interactif, différent d’un gaz dilué d’atomes ultrafroids.'
+        ],
+        example: {
+          statement: 'Un fluide présente une circulation quantifiée et un écoulement sans viscosité dans un domaine de vitesses donné. Quel phénomène physique ces propriétés caractérisent-elles ?',
+          calculation: 'La circulation quantifiée traduit la cohérence de phase de l’état quantique macroscopique. L’écoulement sans viscosité est une propriété caractéristique de la composante superfluide.',
+          answer: 'Ces propriétés caractérisent la superfluidité.'
+        },
+        exercise: {
+          question: 'Pourquoi la superfluidité ne peut-elle pas être expliquée par la seule théorie classique des fluides ?',
+          answer: 'Parce qu’elle dépend de phénomènes quantiques collectifs, notamment de la cohérence de phase et de la quantification de la circulation.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année la superfluidité de l’hélium-4 a-t-elle été mise en évidence ?',
+            answer: 'En 1937.'
+          },
+          {
+            question: 'La superfluidité signifie-t-elle que le fluide ne contient plus aucune excitation ?',
+            answer: 'Non. Des excitations et des tourbillons quantifiés peuvent exister ; les conditions d’écoulement restent déterminantes.'
+          },
+          {
+            question: 'La superfluidité et le condensat de Bose-Einstein sont-ils strictement synonymes ?',
+            answer: 'Non. Ils sont liés dans certains systèmes, mais désignent des propriétés physiques distinctes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'American Physical Society — January 1938: Discovery of Superfluidity',
+            url: 'https://www.aps.org/apsnews/2006/01/discovery-superfluidit-1938'
+          },
+          {
+            title: 'Nature — Flow of Liquid Helium II, Allen and Misener (1938)',
+            url: 'https://www.nature.com/articles/141075a0'
+          },
+          {
+            title: 'Nature — Viscosity of Liquid Helium below the Lambda-Point, Kapitza (1938)',
+            url: 'https://www.nature.com/articles/141074a0'
+          }
+        ]
+      }
+    },
+    {
+      id: 'condensat-bose-einstein',
+      title: 'Le condensat de Bose-Einstein : la matière à l’échelle quantique collective',
+      field: 'Physique quantique · Prédit en 1924-1925 et réalisé en laboratoire en 1995',
+      summary: 'Expliquer les bosons, la longueur d’onde de de Broglie, l’occupation collective d’un même état quantique et la première réalisation expérimentale.',
+      lesson: {
+        sections: [
+          'Le condensat de Bose-Einstein est un état quantique de la matière qui peut apparaître dans un gaz de bosons suffisamment dilué et refroidi. Lorsque la température devient assez basse et que la densité est suffisante, les longueurs d’onde thermiques de de Broglie des particules deviennent comparables à leur distance moyenne. Les fonctions d’onde se recouvrent alors et une fraction macroscopique des bosons peut occuper le même état quantique.',
+
+          'Les bosons sont des particules de spin entier qui obéissent à la statistique de Bose-Einstein. Contrairement aux fermions, ils ne sont pas soumis au principe d’exclusion de Pauli sous la même forme : plusieurs bosons peuvent occuper un même état quantique. Cette possibilité permet l’apparition d’une occupation macroscopique de l’état fondamental dans les conditions appropriées.',
+
+          'La prédiction théorique s’est construite à partir des travaux de Satyendra Nath Bose et d’Albert Einstein en 1924 et 1925. La première réalisation expérimentale largement reconnue d’un condensat atomique a été obtenue le 5 juin 1995 à JILA, avec des atomes de rubidium refroidis à des températures extrêmement proches du zéro absolu. Eric Cornell et Carl Wieman ont dirigé cette expérience ; Wolfgang Ketterle a également réalisé des travaux déterminants sur ces condensats.',
+
+          'Le condensat ne signifie pas que les atomes fusionnent ou deviennent une seule particule au sens chimique. Les atomes restent des constituants distincts, mais leur état collectif est décrit par une fonction d’onde macroscopique commune dans le régime condensé. Cette cohérence quantique à grande échelle permet d’observer des phénomènes qui sont habituellement associés à la physique microscopique.',
+
+          'La température critique dépend de la densité, de la masse des particules et des interactions. Pour un gaz idéal homogène de bosons en trois dimensions, la température critique s’écrit T_c = (2π ħ² / (m kB)) × (n / ζ(3/2))^(2/3), où m est la masse des particules, n leur densité numérique, kB la constante de Boltzmann, ħ la constante de Planck réduite et ζ la fonction zêta de Riemann. Cette formule est celle du modèle idéal ; les interactions et le confinement modifient les conditions réelles.',
+
+          'Le condensat de Bose-Einstein constitue un laboratoire pour étudier les phénomènes quantiques collectifs, les vortex, les ondes de matière et certaines analogies avec d’autres systèmes quantiques. Il ne faut pas le présenter comme un état ordinaire que l’on obtiendrait en refroidissant simplement n’importe quelle substance : il exige des particules bosoniques appropriées et des conditions expérimentales très particulières.'
+        ],
+        example: {
+          statement: 'Pourquoi le refroidissement extrême d’un gaz de bosons peut-il conduire à un condensat de Bose-Einstein ?',
+          calculation: 'Quand la température diminue, la longueur d’onde thermique de de Broglie augmente. Lorsque les fonctions d’onde des particules se recouvrent suffisamment, la statistique de Bose-Einstein permet à une fraction macroscopique des bosons d’occuper le même état quantique.',
+          answer: 'Le refroidissement augmente le recouvrement quantique des fonctions d’onde et permet l’occupation macroscopique d’un même état quantique par les bosons.'
+        },
+        exercise: {
+          question: 'Quelle différence essentielle existe entre un gaz classique dilué et un condensat de Bose-Einstein ?',
+          answer: 'Dans un gaz classique, les particules occupent de nombreux états et leur comportement est bien décrit par une statistique classique dans le régime approprié. Dans un condensat, une fraction macroscopique des bosons occupe le même état quantique.'
+        },
+        exercises: [
+          {
+            question: 'Quels types de particules peuvent former un condensat de Bose-Einstein ?',
+            answer: 'Des bosons, c’est-à-dire des particules de spin entier, dans les conditions adéquates.'
+          },
+          {
+            question: 'En quelle année le premier condensat atomique a-t-il été réalisé à JILA ?',
+            answer: 'En 1995, le 5 juin.'
+          },
+          {
+            question: 'Les atomes d’un condensat fusionnent-ils chimiquement en un seul atome ?',
+            answer: 'Non. Ils restent des atomes distincts, mais leur état collectif peut être décrit par une fonction d’onde macroscopique commune.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NIST — Bose-Einstein Condensate: A New Form of Matter',
+            url: 'https://www.nist.gov/news-events/news/2001/10/bose-einstein-condensate-new-form-matter'
+          },
+          {
+            title: 'NIST — Physicists Create New State of Matter at Record Low Temperature',
+            url: 'https://www.nist.gov/news-events/news/1995/07/physicists-create-new-state-matter-record-low-temperature'
+          },
+          {
+            title: 'NASA — The Fifth State of Matter',
+            url: 'https://science.nasa.gov/biological-physical/stories/the-fifth-state-of-matter/'
+          },
+          {
+            title: 'American Physical Society — June 5, 1995: First Bose-Einstein Condensate',
+            url: 'https://www.aps.org/apsnews/2004/06/june-5-1995-first-bose-einstein-condensate'
+          }
+        ]
+      }
+    },
+    {
+      id: 'transitions-pression-temperature',
+      title: 'Les transitions de phase : influence de la température et de la pression',
+      field: 'Thermodynamique · Diagrammes de phase et équilibres',
+      summary: 'Relier les changements d’état aux variables thermodynamiques, lire un diagramme de phase et distinguer point triple, point critique et transitions directes.',
+      lesson: {
+        sections: [
+          'Une transition de phase est une transformation physique au cours de laquelle un système passe d’une phase à une autre. Pour une substance pure à l’équilibre, les phases stables dépendent notamment de la température et de la pression. La composition chimique reste la même lors d’un changement d’état ordinaire : la glace, l’eau liquide et la vapeur sont toutes constituées de molécules H2O. Une transition de phase ne doit donc pas être confondue avec une réaction chimique.',
+
+          'Les transitions classiques sont la fusion (solide vers liquide), la solidification (liquide vers solide), la vaporisation (liquide vers gaz), la condensation ou liquéfaction (gaz vers liquide), la sublimation (solide vers gaz) et la déposition ou condensation solide (gaz vers solide). Les transitions qui nécessitent un apport de chaleur dans les conditions usuelles sont la fusion, la vaporisation et la sublimation ; les transformations inverses libèrent de l’énergie thermique.',
+
+          'La pression modifie les températures de transition. Pour l’ébullition, la condition d’équilibre est l’égalité entre la pression de vapeur saturante et la pression extérieure. Augmenter la pression extérieure augmente généralement la température d’ébullition. Pour la fusion, l’effet de la pression dépend du changement de volume entre solide et liquide. Pour la plupart des substances, la température de fusion augmente avec la pression ; pour l’eau ordinaire, la glace Ih est moins dense que l’eau liquide, et une augmentation de pression favorise donc la phase liquide près de la courbe de fusion, ce qui abaisse sa température de fusion dans ce domaine.',
+
+          'Un diagramme de phase représente les domaines de stabilité des phases en fonction de la pression et de la température. Les courbes de coexistence séparent les domaines solide, liquide et gaz. Sur une courbe, deux phases sont en équilibre. Le point triple est l’unique couple de température et de pression auquel les trois phases solide, liquide et gaz coexistent à l’équilibre pour une substance pure donnée.',
+
+          'Le point critique termine la courbe d’équilibre liquide-vapeur. Au-delà de ce point, la distinction entre liquide et gaz disparaît et la substance est dans le domaine supercritique si température et pression dépassent leurs valeurs critiques. En dessous de la pression du point triple, la phase liquide ne peut pas être stable à l’équilibre pour le diagramme usuel d’une substance pure : le chauffage d’un solide peut alors conduire directement à la sublimation.',
+
+          'Pour l’eau, OpenStax donne un point triple proche de 0,01 °C et 0,6 kPa, et un point critique proche de 374 °C et 218 atm. Ces nombres sont des valeurs arrondies issues du diagramme pédagogique OpenStax ; des tables de référence peuvent présenter des valeurs plus précises selon les conventions et les unités. Il ne faut jamais transférer les points triples ou critiques de l’eau à une autre substance.',
+
+          'La pression ne détermine pas seule l’état : il faut connaître simultanément la température, la composition et les conditions d’équilibre. La vitesse de transformation peut aussi dépendre de la nucléation, des impuretés, de la géométrie et de l’histoire thermique. Un matériau peut ainsi rester temporairement dans un état métastable, par exemple un liquide surfondue, même si une autre phase est thermodynamiquement plus stable.'
+        ],
+        example: {
+          statement: 'À pression atmosphérique normale, l’eau bout vers 100 °C. Que se passe-t-il qualitativement si la pression extérieure diminue, toutes choses égales par ailleurs ?',
+          calculation: 'L’ébullition se produit lorsque la pression de vapeur saturante de l’eau atteint la pression extérieure. Si cette pression extérieure diminue, l’égalité est atteinte à une température plus basse.',
+          answer: 'La température d’ébullition diminue. La relation exacte dépend de la courbe de pression de vapeur de l’eau.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il connaître à la fois la température et la pression pour déterminer l’état d’équilibre d’une substance pure ?',
+          answer: 'Parce que les domaines de stabilité des phases dépendent des deux variables ; une même température peut correspondre à un solide, un liquide ou un gaz selon la pression.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les trois phases qui coexistent au point triple ?',
+            answer: 'Les phases solide, liquide et gazeuse.'
+          },
+          {
+            question: 'Que représente le point critique ?',
+            answer: 'L’extrémité de la courbe d’équilibre liquide-vapeur, au-delà de laquelle il n’existe plus de distinction entre liquide et gaz.'
+          },
+          {
+            question: 'Pourquoi la pression d’ébullition compte-t-elle ?',
+            answer: 'Parce que le liquide bout lorsque sa pression de vapeur atteint la pression extérieure.'
+          },
+          {
+            question: 'La pression fait-elle toujours augmenter la température de fusion ?',
+            answer: 'Non. Le sens de l’effet dépend du changement de volume à la fusion ; pour la glace Ih près de la pression ordinaire, une augmentation de pression abaisse la température de fusion.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 10.3 Phase Transitions',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-3-phase-transitions'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 10.4 Phase Diagrams',
+            url: 'https://openstax.org/books/chemistry-2e/pages/10-4-phase-diagrams'
+          },
+          {
+            title: 'IUPAC Gold Book — Critical point',
+            url: 'https://goldbook.iupac.org/terms/view/C01396'
+          },
+          {
+            title: 'NIST Chemistry WebBook — Thermophysical Properties of Fluid Systems',
+            url: 'https://webbook.nist.gov/chemistry/fluid/'
+          },
+          {
+            title: 'Purdue University — Phase Diagrams',
+            url: 'https://www.chem.purdue.edu/gchelp/liquids/phase.html'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  id: 'particules-chargees',
+  title: 'Les particules chargées',
+  note: 'Huit chapitres retraçant la compréhension des particules chargées, depuis la découverte de l’électron en 1897 jusqu’au Modèle standard et au boson de Higgs. Le parcours suit les grandes étapes historiques tout en distinguant les particules élémentaires des particules composites. Les charges sont exprimées en multiples de la charge élémentaire e ; les quarks portent des charges fractionnaires mais ne sont pas observés isolément.',
+  chapters: [
+    {
+      id: 'decouverte-electron-charge',
+      title: 'La découverte de l’électron et la nature de la charge',
+      field: 'Physique atomique · 1897–1913',
+      summary: 'De l’identification de l’électron par J. J. Thomson à la mesure de la charge électrique et aux propriétés fondamentales de la charge.',
+      lesson: {
+        sections: [
+          'En 1897, J. J. Thomson étudie les rayons cathodiques dans des tubes à décharge. En observant leur déviation dans des champs électrique et magnétique, il établit qu’ils sont constitués de corpuscules chargés négativement, dont le rapport charge sur masse est très grand par rapport à celui des ions connus. Ces corpuscules seront appelés électrons. Cette expérience montre que l’atome n’est pas indivisible : il contient des constituants plus petits. Elle ne mesure toutefois pas, à elle seule, la charge e et la masse mₑ séparément ; elle fournit d’abord leur rapport.',
+          'En 1911, les expériences de diffusion de particules alpha menées par Ernest Rutherford conduisent au modèle nucléaire de l’atome : presque toute la masse et la charge positive sont concentrées dans un noyau minuscule, autour duquel se trouve le cortège électronique. En 1912–1913, les expériences de Robert Millikan sur les gouttelettes d’huile permettent de mesurer la charge élémentaire. La charge de l’électron est négative, qₑ = −e, tandis que e désigne la valeur positive de la charge élémentaire.',
+          'La charge électrique est une propriété physique qui détermine la manière dont une particule couple au champ électromagnétique. Deux signes sont utilisés : positif et négatif. Des charges de même signe se repoussent ; des charges de signes opposés s’attirent. Dans le système international, la charge s’exprime en coulombs (C). La valeur exacte de la charge élémentaire dans le SI est e = 1,602176634 × 10⁻¹⁹ C. La charge est additive : la charge totale d’un système est la somme algébrique des charges de ses constituants.',
+          'La charge électrique totale se conserve dans tout processus physique connu : elle peut être transférée entre objets et des particules chargées peuvent être créées ou annihilées par paires, mais la somme des charges initiale et finale reste identique. Pour les objets ordinaires, la charge nette est généralement un nombre entier de charges élémentaires. Il faut toutefois éviter une généralisation erronée : les quarks ont des charges fractionnaires, +2e/3 ou −e/3, mais le confinement de l’interaction forte empêche leur observation comme particules libres isolées.'
+        ],
+        formula: {
+          label: 'QUANTIFICATION ET CONSERVATION DE LA CHARGE',
+          text: 'q = n e  (objet ordinaire isolé)  |  qₑ = −e  |  Σq(initiale) = Σq(finale)'
+        },
+        example: {
+          statement: 'Un objet porte une charge nette q = −4,8 × 10⁻¹⁹ C. Combien d’électrons en excès cela représente-t-il ?',
+          calculation: 'N = |q|/e = (4,8 × 10⁻¹⁹)/(1,602176634 × 10⁻¹⁹) ≈ 3.',
+          answer: 'L’objet possède un excès de 3 électrons. Le signe négatif indique que la charge nette est négative.'
+        },
+        exercise: {
+          question: 'Pourquoi la découverte de Thomson a-t-elle remis en cause l’idée d’un atome indivisible ?',
+          answer: 'Parce qu’elle a montré que les rayons cathodiques contiennent des particules négatives ayant une masse très inférieure à celle des atomes : l’atome possède donc une structure interne.'
+        },
+        equationDetails: [
+          {
+            title: 'Charge quantifiée',
+            formula: 'q = n e',
+            explanation: 'Pour un objet ordinaire dont la charge provient d’un excès ou d’un déficit d’électrons, la charge nette est un multiple entier de la charge élémentaire. Cette écriture ne signifie pas que toutes les particules élémentaires ont une charge entière en unités de e : les quarks ont des charges fractionnaires et sont confinés dans les hadrons.',
+            parameters: 'q : charge nette (C) ; n : entier relatif pour un objet ordinaire ; e : charge élémentaire positive, exactement 1,602176634 × 10⁻¹⁹ C. Pour l’électron, qₑ = −e.',
+            example: 'Pour un déficit de 2 électrons, q = +2e = +3,204353268 × 10⁻¹⁹ C.',
+            result: 'La charge nette est positive et vaut environ +3,20 × 10⁻¹⁹ C.'
+          },
+          {
+            title: 'Loi de Coulomb',
+            formula: 'F = (1/(4πε₀)) × |q₁q₂|/r²',
+            explanation: 'Dans le vide, deux charges ponctuelles au repos exercent l’une sur l’autre une force électrostatique dont l’intensité est proportionnelle au produit des valeurs absolues des charges et inversement proportionnelle au carré de leur distance. La direction est portée par la droite joignant les charges ; le signe des charges détermine attraction ou répulsion.',
+            parameters: 'F : intensité de la force (N) ; q₁, q₂ : charges (C) ; r : distance entre les charges (m) ; ε₀ : permittivité électrique du vide (F·m⁻¹).',
+            example: 'Pour deux charges de +1,0 μC et −1,0 μC séparées de 0,10 m, F = k × 10⁻¹² / 0,01, avec k ≈ 8,99 × 10⁹ N·m²·C⁻².',
+            result: 'F ≈ 0,899 N ; la force est attractive car les charges sont de signes opposés.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax University Physics, vol. 2 — Electric Charge', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-1-electric-charge' },
+          { title: 'OpenStax University Physics, vol. 2 — Coulomb’s Law', url: 'https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law' },
+          { title: 'Nobel Prize — The Nobel Prizes in Physics 1901–2000 (Thomson and Millikan)', url: 'https://www.nobelprize.org/prizes/themes/the-nobel-prize-in-physics-1901-2000/' },
+          { title: 'CEA — L’atome', url: 'https://www.cea.fr/comprendre/Pages/radioactivite/atome.aspx?Type=Chapitre&numero=1' }
+        ]
+      }
+    }
+  ]
+},
 
 
 ]
