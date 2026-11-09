@@ -1,9 +1,0 @@
-{
-  "title": "Philosophie",
-  "symbol": "Φ",
-  "description": "Conscience, liberté, vérité, justice et morale · Explorer les grandes questions de la pensée",
-  "order": 14,
-  "entry": "index.html",
-  "dataFile": philosophie-data.js",
-  "class": "philosophie-entry"
-}
