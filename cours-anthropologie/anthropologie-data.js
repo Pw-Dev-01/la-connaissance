@@ -1625,4 +1625,278 @@ window.courseCatalog = [
   ]
 },
 
+
+{
+  id: 'organisation-societes',
+  title: 'L’organisation des sociétés : parenté, économie, pouvoir et transformations sociales',
+  note: 'Six chapitres pour comprendre comment les sociétés humaines organisent les relations de parenté, la production et les échanges, l’autorité politique, les hiérarchies, les institutions symboliques et le changement social. Les catégories anthropologiques sont des outils comparatifs : elles ne constituent ni une échelle universelle de progrès ni des cases rigides. Les formes d’organisation varient dans le temps et peuvent coexister au sein d’une même société.',
+  chapters: [
+    {
+      id: 'structures-sociales-et-institutions',
+      title: 'Les structures sociales et les institutions',
+      field: 'Anthropologie sociale et culturelle · Organisation des relations et des pratiques collectives',
+      summary: 'Définir la société, la structure sociale et les institutions, puis comprendre comment les rôles, les normes et les pratiques quotidiennes rendent possible la coordination collective.',
+      lesson: {
+        sections: [
+          'Une société ne se réduit pas à un rassemblement d’individus vivant au même endroit. Elle désigne un ensemble de relations relativement durables, de pratiques partagées et d’institutions à travers lesquelles des personnes coordonnent leurs activités, négocient leurs intérêts et transmettent des significations. En anthropologie, l’analyse porte autant sur les règles explicites — lois, règlements, procédures — que sur les habitudes et les attentes souvent implicites qui orientent les conduites. Ces règles ne sont jamais simplement abstraites : elles sont apprises, interprétées et parfois contestées dans des situations concrètes.',
+          'La structure sociale correspond aux relations relativement régulières qui organisent la vie collective : relations de parenté, division du travail, hiérarchies, appartenances, autorités et obligations réciproques. Elle ne doit pas être comprise comme un mécanisme immuable qui déterminerait entièrement les individus. Les personnes contribuent à reproduire les structures par leurs pratiques, mais elles peuvent aussi les modifier. La notion d’institution désigne ici des ensembles durables de règles, de rôles et de pratiques organisant un domaine de la vie sociale, par exemple la famille, l’éducation, le droit, l’économie ou les institutions politiques.',
+          'Les rôles sociaux correspondent aux attentes associées à une position dans un contexte donné. Une même personne peut être simultanément élève, membre d’une famille, collègue, citoyenne ou membre d’une association. Ces rôles peuvent se compléter, mais aussi entrer en tension lorsque leurs obligations sont incompatibles. Les statuts ne sont pas tous acquis de la même manière : certains sont attribués par la naissance ou l’âge, tandis que d’autres sont obtenus au cours de la vie. La distinction est analytique et les sociétés combinent généralement plusieurs modes d’attribution.',
+          'Les normes sociales indiquent les comportements jugés appropriés dans une situation. Elles peuvent être formalisées dans des textes juridiques ou fonctionner comme des conventions ordinaires : saluer, prendre la parole à tour de rôle, respecter certains usages alimentaires ou participer à des cérémonies. Les sanctions qui accompagnent les normes ne sont pas nécessairement pénales. Elles peuvent prendre la forme d’approbation, de critique, de réputation, d’exclusion ou de rappel à l’ordre. L’anthropologue étudie comment ces normes sont apprises, appliquées de façon inégale et transformées par les interactions.',
+          'Pour étudier une organisation sociale, l’ethnographie associe généralement observation, entretiens, récits de vie, analyse de documents et attention aux pratiques matérielles. Une règle officielle ne décrit pas toujours ce qui se passe réellement : il faut comparer les discours, les décisions et les conduites observées. La comparaison entre sociétés exige également de replacer chaque pratique dans son histoire et son contexte. Les catégories comme « famille », « communauté » ou « autorité » doivent être examinées avec prudence, car leur sens local peut différer de celui qu’elles ont dans la langue de l’enquêteur.'
+        ],
+        example: {
+          statement: 'Dans une association, les membres élisent un bureau, répartissent des tâches, adoptent des règles de réunion et peuvent modifier ces règles lors d’une assemblée. Quels éléments relèvent de la structure sociale et des institutions ?',
+          calculation: 'On distingue les positions et les relations (membres, bureau, assemblée), les règles qui organisent les décisions (statuts, procédures), et les pratiques concrètes (réunions, votes, répartition des tâches). L’observation permet ensuite de vérifier comment ces règles sont effectivement appliquées.',
+          answer: 'Le bureau, l’assemblée et les relations entre membres forment des éléments de l’organisation sociale. Les statuts et les procédures constituent des règles institutionnelles. Les réunions et les votes sont des pratiques par lesquelles les membres reproduisent ou transforment cette organisation.'
+        },
+        exercise: {
+          question: 'Pourquoi un anthropologue ne peut-il pas décrire une institution uniquement à partir de son règlement officiel ?',
+          answer: 'Parce que le règlement ne suffit pas à décrire les pratiques réelles, les interprétations des acteurs, les rapports de pouvoir et les éventuels écarts entre règles formelles et usages quotidiens.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence peut-on établir entre une norme et une institution ?',
+            answer: 'Une norme est une règle ou une attente de conduite. Une institution est un ensemble plus large et relativement durable de règles, de rôles et de pratiques organisant un domaine de la vie sociale.'
+          },
+          {
+            question: 'Une structure sociale est-elle nécessairement immuable ?',
+            answer: 'Non. Elle est relativement durable, mais elle est reproduite et peut être transformée par les pratiques, les conflits, les décisions et les changements historiques.'
+          },
+          {
+            question: 'Pourquoi faut-il confronter les discours aux observations de terrain ?',
+            answer: 'Parce que les discours expriment des représentations ou des règles déclarées, tandis que l’observation permet d’étudier les pratiques effectives et leurs variations selon les situations.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introduction to Anthropology, 3.4 The Aggregates of Culture', url: 'https://openstax.org/books/introduction-anthropology/pages/3-4-the-aggregates-of-culture' },
+          { title: 'OpenStax — Introduction to Anthropology, 8.1 Colonialism and the Categorization of Political Systems', url: 'https://openstax.org/books/introduction-anthropology/pages/8-1-colonialism-and-the-categorization-of-political-systems' },
+          { title: 'OpenStax — Introduction to Anthropology, 11.1 What Is Kinship?', url: 'https://openstax.org/books/introduction-anthropology/pages/11-1-what-is-kinship' }
+        ]
+      }
+    },
+    {
+      id: 'parenté-famille-et-alliance',
+      title: 'La parenté, la famille et les alliances',
+      field: 'Anthropologie de la parenté · Filiation, mariage, résidence et transmission',
+      summary: 'Étudier la parenté comme un système culturel de relations, et comprendre les formes de famille, les règles de filiation, les alliances matrimoniales et la circulation des droits et des obligations.',
+      lesson: {
+        sections: [
+          'La parenté constitue un principe majeur d’organisation sociale dans de nombreuses sociétés. Elle relie des personnes à travers des relations reconnues de filiation, d’alliance, d’adoption ou d’autres formes de liens socialement institués. Elle ne se confond donc pas avec la seule proximité génétique. Les sociétés définissent culturellement qui est considéré comme parent, quelles obligations découlent de cette relation et quels termes sont employés pour désigner les proches. L’adoption, la parenté rituelle ou les liens de soin montrent que les relations familiales peuvent être établies et reconnues autrement que par la descendance biologique.',
+          'La famille et le ménage sont deux notions différentes. La famille renvoie à un ensemble de personnes reconnues comme liées par la parenté ou l’alliance, alors que le ménage désigne généralement les personnes qui partagent une résidence et organisent une partie de leurs ressources quotidiennes. Un ménage peut réunir plusieurs familles, des personnes sans lien de parenté ou une seule personne. Les formes familiales sont diverses : famille nucléaire, famille étendue, familles recomposées, réseaux de parenté dispersés ou groupes domestiques organisés autour de plusieurs générations. Aucune de ces formes ne doit être considérée comme le modèle naturel ou universel.',
+          'La filiation désigne les règles par lesquelles une société établit l’appartenance des personnes à des groupes de descendance. Dans un système patrilinéaire, l’appartenance est principalement transmise par la ligne paternelle ; dans un système matrilinéaire, elle l’est par la ligne maternelle. Dans un système bilatéral, les liens avec les deux côtés de la parenté sont reconnus. Ces termes décrivent des principes de classement et ne signifient pas automatiquement que les femmes ou les hommes détiennent le pouvoir. Il faut distinguer la filiation, la résidence, l’héritage et l’autorité, qui peuvent suivre des règles différentes.',
+          'Le mariage est une union socialement reconnue dont les formes et les fonctions varient selon les contextes. Il peut établir des liens entre personnes, familles ou groupes, organiser des responsabilités domestiques et définir des droits. La monogamie désigne une union avec un conjoint à la fois ; la polygamie désigne une union impliquant plusieurs conjoints, avec notamment la polygynie et la polyandrie comme formes distinctes. Les règles d’endogamie prescrivent ou favorisent le mariage au sein d’un groupe défini, tandis que l’exogamie impose ou favorise une union hors de ce groupe. Ces règles sont variables et ne doivent pas être généralisées à partir d’un seul exemple.',
+          'Les règles de résidence après le mariage influencent la composition des ménages et les relations entre générations. La résidence patrilocale situe le nouveau ménage auprès de la famille du mari, la résidence matrilocale auprès de celle de l’épouse, tandis que la résidence néolocale correspond à l’établissement d’un nouveau foyer indépendant. Les pratiques réelles peuvent être flexibles et évoluer au cours de la vie. L’anthropologue étudie également les transferts associés aux unions, à l’héritage et à l’entraide, sans réduire ces échanges à une simple transaction économique : ils peuvent exprimer des obligations, des alliances et des significations symboliques.'
+        ],
+        example: {
+          statement: 'Dans une communauté, une personne reconnaît comme membres de sa famille des parents biologiques, un enfant adopté et un parrain avec lequel elle entretient des obligations durables. Que montre cet exemple ?',
+          calculation: 'On classe les liens selon leur mode de reconnaissance : filiation biologique, adoption et parenté socialement instituée. On examine ensuite les droits, les responsabilités et les pratiques associés à chacun de ces liens.',
+          answer: 'L’exemple montre que la parenté est une construction socioculturelle qui ne se limite pas à la génétique. Les liens reconnus par la société peuvent produire des obligations et une appartenance familiale réelles.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer filiation, résidence et héritage dans l’étude d’une société ?',
+          answer: 'Parce que ces dimensions ne suivent pas nécessairement les mêmes règles : l’appartenance à une lignée, le lieu de résidence et la transmission des biens peuvent être organisés selon des principes différents.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence existe entre un ménage et une famille ?',
+            answer: 'Le ménage est généralement défini par le partage d’une résidence et d’activités domestiques ; la famille repose sur des liens de parenté ou d’alliance reconnus, même lorsque ses membres vivent séparément.'
+          },
+          {
+            question: 'Que signifie une filiation matrilinéaire ?',
+            answer: 'L’appartenance au groupe de descendance est principalement transmise par la ligne maternelle. Cela ne signifie pas automatiquement que les femmes exercent seules l’autorité politique.'
+          },
+          {
+            question: 'Quelle est la différence entre endogamie et exogamie ?',
+            answer: 'L’endogamie favorise ou prescrit le mariage à l’intérieur d’un groupe défini ; l’exogamie favorise ou impose le mariage à l’extérieur de ce groupe.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introduction to Anthropology, 11.1 What Is Kinship?', url: 'https://openstax.org/books/introduction-anthropology/pages/11-1-what-is-kinship' },
+          { title: 'OpenStax — Introduction to Anthropology, 11.2 Defining Family and Household', url: 'https://openstax.org/books/introduction-anthropology/pages/11-2-defining-family-and-household' },
+          { title: 'OpenStax — Introduction to Anthropology, 11.3 Reckoning Kinship across Cultures', url: 'https://openstax.org/books/introduction-anthropology/pages/11-3-reckoning-kinship-across-cultures' },
+          { title: 'OpenStax — Introduction to Anthropology, 11.4 Marriage and Families across Cultures', url: 'https://openstax.org/books/introduction-anthropology/pages/11-4-marriage-and-families-across-cultures' }
+        ]
+      }
+    },
+    {
+      id: 'organisation-economique-et-echanges',
+      title: 'L’organisation économique, le travail et les échanges',
+      field: 'Anthropologie économique · Production, distribution, consommation et réciprocité',
+      summary: 'Comprendre comment les sociétés organisent l’accès aux ressources, la production, la division du travail et les échanges, au-delà d’une conception limitée de l’économie au marché.',
+      lesson: {
+        sections: [
+          'L’anthropologie économique étudie les manières dont les sociétés produisent, distribuent, échangent et consomment les biens et les services. Elle considère l’économie comme une activité sociale et culturelle : la valeur d’un objet, les obligations liées à un échange et les formes de propriété dépendent de règles et de représentations partagées. L’économie ne se limite donc pas aux prix et à la monnaie. Le travail domestique, l’entraide, les dons, les transferts entre générations et les activités non rémunérées participent également à la reproduction matérielle et sociale des groupes.',
+          'Les modes de subsistance désignent les grandes stratégies par lesquelles les populations obtiennent leurs moyens d’existence : chasse et cueillette, horticulture, agriculture, pastoralisme, pêche et activités industrielles ou de services. Ces catégories décrivent des activités dominantes, non des étapes universelles. Une même population peut combiner plusieurs stratégies selon les saisons, les ressources disponibles, les marchés et les contraintes politiques. Les choix économiques dépendent des environnements, mais aussi des savoirs, des rapports fonciers, des technologies et des relations avec d’autres groupes.',
+          'La division du travail répartit les tâches entre personnes et groupes. Elle peut s’organiser selon l’âge, le genre, les compétences, le statut, la spécialisation professionnelle ou les obligations familiales. La spécialisation peut accroître la coordination et la production, mais elle peut aussi créer des dépendances et des inégalités lorsque certaines activités sont moins rémunérées ou moins reconnues. Il faut donc distinguer la répartition fonctionnelle des tâches et la hiérarchie sociale qui peut s’y ajouter. L’analyse anthropologique examine qui réalise le travail, qui contrôle les ressources et qui bénéficie des résultats.',
+          'Les échanges prennent plusieurs formes. La réciprocité correspond à la circulation de biens, de services ou d’aide entre personnes ou groupes liés par des relations sociales ; elle peut être immédiate, différée ou attendue à long terme. La redistribution implique qu’une autorité ou un centre collecte des ressources puis les répartisse selon des règles et des priorités collectives. L’échange marchand repose sur des transactions dans lesquelles les biens ou services sont échangés contre un prix, souvent exprimé en monnaie. Ces formes ne sont pas mutuellement exclusives : elles peuvent coexister dans une même société et dans une même activité.',
+          'La propriété désigne les droits reconnus sur des ressources, des objets ou des espaces. Elle peut être individuelle, collective, familiale ou organisée selon des droits d’usage différenciés. Posséder un terrain ne signifie pas nécessairement détenir tous les droits de l’utiliser, de le transmettre ou d’en exclure autrui. Les régimes fonciers sont donc des institutions sociales et politiques, souvent traversées par des conflits. L’étude des économies contemporaines doit également prendre en compte les chaînes de production mondialisées, le travail salarié, les migrations, les inégalités d’accès aux ressources et les effets des décisions économiques sur les communautés.'
+        ],
+        example: {
+          statement: 'Un village organise une fête. Des familles apportent des aliments, une association centralise les contributions puis les répartit, tandis que certains produits sont achetés sur un marché. Quelles formes d’échange sont présentes ?',
+          calculation: 'On identifie les mécanismes : contribution entre familles et entraide (réciprocité), collecte puis distribution par l’association (redistribution), achat contre paiement (échange marchand).',
+          answer: 'Les trois formes coexistent : réciprocité entre familles, redistribution par l’association et échange marchand pour les produits achetés. Cet exemple montre qu’une économie réelle combine souvent plusieurs principes.'
+        },
+        exercise: {
+          question: 'Pourquoi l’anthropologie économique ne réduit-elle pas l’économie aux marchés et à la monnaie ?',
+          answer: 'Parce que la production et la circulation des ressources comprennent aussi le travail non rémunéré, l’entraide, les dons, les obligations familiales, la redistribution et les droits d’usage.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que la réciprocité en anthropologie économique ?',
+            answer: 'C’est une forme d’échange fondée sur la circulation de biens, de services ou d’aide entre personnes ou groupes liés par des relations sociales, avec des retours parfois différés.'
+          },
+          {
+            question: 'Quelle différence existe entre redistribution et échange marchand ?',
+            answer: 'La redistribution suppose une collecte centralisée suivie d’une répartition ; l’échange marchand repose sur une transaction où un bien ou un service est échangé contre un prix.'
+          },
+          {
+            question: 'La division du travail produit-elle nécessairement une hiérarchie ?',
+            answer: 'Non. La répartition des tâches peut être fonctionnelle sans être hiérarchique. Une hiérarchie apparaît lorsque les rôles sont associés à des différences de pouvoir, de prestige ou d’accès aux ressources.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introduction to Anthropology, Chapter 7 Introduction: Work, Life, and Value', url: 'https://openstax.org/books/introduction-anthropology/pages/7-introduction' },
+          { title: 'OpenStax — Introduction to Anthropology, 7.2 Modes of Subsistence', url: 'https://openstax.org/books/introduction-anthropology/pages/7-2-modes-of-subsistence' },
+          { title: 'OpenStax — Introduction to Anthropology, 7.3 Gathering and Hunting', url: 'https://openstax.org/books/introduction-anthropology/pages/7-3-gathering-and-hunting' },
+          { title: 'OpenStax — Introduction to Anthropology, 7.6 Exchange, Value, and Consumption', url: 'https://openstax.org/books/introduction-anthropology/pages/7-6-exchange-value-and-consumption' }
+        ]
+      }
+    },
+    {
+      id: 'pouvoir-autorite-et-organisation-politique',
+      title: 'Le pouvoir, l’autorité et l’organisation politique',
+      field: 'Anthropologie politique · Décision collective, leadership, institutions et État',
+      summary: 'Comparer différentes manières de prendre des décisions, de légitimer l’autorité, de régler les conflits et de coordonner des groupes, sans réduire la politique au seul gouvernement étatique.',
+      lesson: {
+        sections: [
+          'L’anthropologie politique étudie la manière dont les sociétés prennent des décisions collectives, distribuent l’autorité, règlent les conflits et organisent les relations de pouvoir. La politique ne se limite pas aux institutions gouvernementales : elle existe aussi dans les familles, les associations, les communautés locales, les organisations religieuses et les mouvements sociaux. Le pouvoir peut s’exercer par la contrainte, mais aussi par la persuasion, le prestige, le contrôle des ressources, la maîtrise de connaissances ou la capacité à définir les règles légitimes.',
+          'Les formes d’organisation politique sont diverses et ne suivent pas une succession obligatoire. Dans certains groupes, les décisions reposent largement sur la discussion, la négociation et le consensus, avec des responsables dont l’influence dépend de leur expérience ou de leur capacité à convaincre. Dans d’autres contextes, des fonctions de leadership plus formalisées organisent la coordination de plusieurs communautés. Les chefferies et les États présentent des formes de centralisation différentes, mais ces catégories sont des outils de comparaison : elles ne résument pas toute la complexité des institutions observées sur le terrain.',
+          'L’État se caractérise notamment par des institutions administratives et juridiques, une autorité revendiquée sur un territoire et des mécanismes de gouvernement de la population. Les États contemporains disposent généralement d’administrations, de systèmes fiscaux, de tribunaux et d’organes chargés de mettre en œuvre les décisions publiques. Toutefois, l’existence d’institutions officielles ne signifie pas que l’État contrôle uniformément toutes les situations. Les autorités locales, les réseaux familiaux, les organisations professionnelles et les formes coutumières de régulation peuvent continuer à jouer un rôle important.',
+          'La légitimité désigne la reconnaissance du droit d’exercer une autorité. Elle peut s’appuyer sur des règles juridiques, des traditions, des élections, des compétences reconnues, des croyances ou des performances attendues des dirigeants. Elle doit être distinguée de la force : une autorité peut disposer de moyens de contrainte sans être considérée comme légitime par tous. Les institutions politiques cherchent souvent à justifier leurs décisions par des récits, des symboles, des cérémonies et des procédures. L’anthropologue examine comment ces justifications sont acceptées, négociées ou contestées.',
+          'Les conflits sont des dimensions ordinaires de la vie collective. Les sociétés développent des mécanismes variés pour les traiter : médiation, négociation, arbitrage, justice formelle, assemblées ou décisions coutumières. Ces mécanismes ne garantissent pas toujours une égalité entre les parties ; leur fonctionnement dépend de l’accès aux ressources, de la réputation et des rapports de pouvoir. Les mouvements sociaux constituent une autre forme d’action politique : des personnes s’organisent pour défendre des droits, contester une décision ou demander une transformation institutionnelle. Ils montrent que l’action politique dépasse les structures officielles.'
+        ],
+        example: {
+          statement: 'Dans une commune, un conseil élu débat d’un projet, consulte des associations et doit respecter des règles juridiques nationales. Une association locale organise parallèlement une pétition pour modifier le projet. Quels niveaux d’action politique observe-t-on ?',
+          calculation: 'On distingue l’autorité institutionnelle du conseil, le cadre juridique de l’État, la consultation des acteurs locaux et l’action collective menée par l’association.',
+          answer: 'L’exemple montre plusieurs niveaux politiques liés : décision locale, cadre étatique et mobilisation citoyenne. La politique comprend à la fois les institutions officielles et les actions collectives qui cherchent à influencer leurs décisions.'
+        },
+        exercise: {
+          question: 'Pourquoi l’anthropologie politique étudie-t-elle aussi les relations de pouvoir en dehors de l’État ?',
+          answer: 'Parce que l’autorité, la négociation, la prise de décision et la contestation existent dans de nombreux espaces sociaux qui ne relèvent pas directement du gouvernement.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence existe entre pouvoir et légitimité ?',
+            answer: 'Le pouvoir est la capacité d’influencer ou de contraindre les conduites et les décisions. La légitimité correspond à la reconnaissance du droit d’exercer cette autorité.'
+          },
+          {
+            question: 'Un État et une société sont-ils des notions identiques ?',
+            answer: 'Non. L’État désigne un ensemble d’institutions politiques et administratives ; la société comprend un ensemble beaucoup plus large de relations, de groupes et d’institutions.'
+          },
+          {
+            question: 'Quel est le rôle d’un mouvement social ?',
+            answer: 'Il organise une action collective visant à exprimer une contestation, obtenir une réforme ou transformer certaines relations et institutions sociales ou politiques.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introduction to Anthropology, 8.1 Colonialism and the Categorization of Political Systems', url: 'https://openstax.org/books/introduction-anthropology/pages/8-1-colonialism-and-the-categorization-of-political-systems' },
+          { title: 'OpenStax — Introduction to Anthropology, 8.2 Acephalous Societies: Bands and Tribes', url: 'https://openstax.org/books/introduction-anthropology/pages/8-2-acephalous-societies-bands-and-tribes' },
+          { title: 'OpenStax — Introduction to Anthropology, 8.3 Centralized Societies: Chiefdoms and States', url: 'https://openstax.org/books/introduction-anthropology/pages/8-3-centralized-societies-chiefdoms-and-states' },
+          { title: 'OpenStax — Introduction to Anthropology, 8.5 Resistance, Revolution, and Social Movements', url: 'https://openstax.org/books/introduction-anthropology/pages/8-5-resistance-revolution-and-social-movements' }
+        ]
+      }
+    },
+    {
+      id: 'hierarchies-inegalites-et-differenciations',
+      title: 'Les hiérarchies, les inégalités et les différenciations sociales',
+      field: 'Anthropologie des inégalités · Stratification, classes, statuts et rapports sociaux',
+      summary: 'Analyser la distribution inégale des ressources, du prestige et du pouvoir, ainsi que les mécanismes qui produisent, justifient ou contestent les hiérarchies.',
+      lesson: {
+        sections: [
+          'Une inégalité sociale apparaît lorsque des personnes ou des groupes disposent d’un accès différent aux ressources, aux droits, aux possibilités et aux positions valorisées. La stratification sociale désigne l’organisation hiérarchisée de groupes ou de catégories selon des critères tels que la richesse, le pouvoir, le prestige, l’origine sociale, la profession ou le genre. Il faut distinguer la diversité des rôles sociaux de la hiérarchie : des tâches différentes ne constituent pas automatiquement une inégalité. La hiérarchie apparaît lorsque certaines positions bénéficient d’avantages durables ou d’une capacité supérieure à imposer des décisions.',
+          'Les systèmes de classe reposent notamment sur des différences de ressources économiques, de conditions de travail et d’accès aux positions de pouvoir. Les systèmes de caste, dans leurs formes historiques spécifiques, associent l’appartenance sociale à la naissance et encadrent fortement les relations entre groupes. Ces notions ne sont pas interchangeables et doivent être utilisées avec précision. Les sociétés peuvent combiner plusieurs principes de classement, et les frontières entre groupes peuvent être plus ou moins perméables selon les contextes historiques et institutionnels.',
+          'Le prestige et la reconnaissance symbolique participent également à la hiérarchie. Une activité peut être indispensable au fonctionnement d’une société tout en étant faiblement rémunérée ou peu valorisée. L’analyse ne doit donc pas confondre richesse, réputation et autorité politique. Les travaux inspirés de Max Weber distinguent notamment les dimensions économiques, statutaires et politiques de la stratification. Pierre Bourdieu a, pour sa part, étudié la manière dont différentes formes de capital — économique, culturel et social — contribuent à la reproduction des positions sociales.',
+          'Les inégalités sont souvent produites à plusieurs niveaux. Elles peuvent apparaître dans les interactions entre individus, être inscrites dans les pratiques d’une institution ou résulter de processus historiques et structurels. L’intersectionnalité permet d’étudier la manière dont plusieurs rapports sociaux, notamment ceux liés au genre, à la classe, à la racialisation, à l’âge ou au handicap, se combinent dans des expériences concrètes. Il ne s’agit pas d’additionner mécaniquement des désavantages, mais de comprendre comment les rapports de pouvoir se construisent mutuellement dans des contextes précis.',
+          'Les hiérarchies ne sont pas seulement maintenues par des règles explicites. Elles peuvent être justifiées par des discours qui présentent les différences sociales comme naturelles, méritées ou inévitables. L’anthropologie examine ces mécanismes de légitimation, mais aussi les pratiques de résistance, les mobilisations et les changements institutionnels. Les personnes ne sont pas de simples produits des structures : elles interprètent les règles, développent des stratégies, contestent des catégories et participent à la transformation des rapports sociaux.'
+        ],
+        example: {
+          statement: 'Dans une organisation, deux métiers contribuent au même service, mais l’un est mieux rémunéré, dispose de davantage de possibilités de décision et bénéficie d’un prestige supérieur. Comment analyser cette situation ?',
+          calculation: 'On examine séparément trois dimensions : rémunération et ressources économiques, accès aux décisions et pouvoir, reconnaissance sociale et prestige. On recherche ensuite les règles et les pratiques qui produisent ces écarts.',
+          answer: 'La situation révèle une différenciation qui peut devenir une hiérarchie sociale. L’analyse doit identifier les mécanismes économiques, institutionnels et symboliques qui donnent des avantages durables à certaines positions.'
+        },
+        exercise: {
+          question: 'Pourquoi la stratification sociale ne peut-elle pas être mesurée uniquement par le revenu ?',
+          answer: 'Parce que la hiérarchie dépend aussi du pouvoir de décision, du prestige, des droits, des réseaux relationnels et de l’accès aux ressources culturelles ou institutionnelles.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence existe entre différenciation sociale et stratification ?',
+            answer: 'La différenciation désigne la diversité des positions ou des rôles. La stratification implique une organisation hiérarchique de ces positions et des inégalités durables de ressources, de pouvoir ou de prestige.'
+          },
+          {
+            question: 'Que désigne l’intersectionnalité ?',
+            answer: 'Elle désigne l’analyse de la manière dont plusieurs rapports sociaux et systèmes de pouvoir se croisent et façonnent des expériences concrètes.'
+          },
+          {
+            question: 'Pourquoi les inégalités peuvent-elles persister même sans règle discriminatoire explicite ?',
+            answer: 'Parce qu’elles peuvent être reproduites par des pratiques institutionnelles, des héritages historiques, des réseaux inégaux et des mécanismes structurels qui produisent des effets différenciés.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introduction to Anthropology, 9.1 Theories of Inequity and Inequality', url: 'https://openstax.org/books/introduction-anthropology/pages/9-1-theories-of-inequity-and-inequality' },
+          { title: 'OpenStax — Introduction to Anthropology, 9.2 Systems of Inequality', url: 'https://openstax.org/books/introduction-anthropology/pages/9-2-systems-of-inequality' },
+          { title: 'OpenStax — Introduction to Anthropology, 9.3 Intersections of Inequality', url: 'https://openstax.org/books/introduction-anthropology/pages/9-3-intersections-of-inequality' },
+          { title: 'OpenStax — Introduction to Anthropology, 9.4 Studying In: Addressing Inequities within Anthropology', url: 'https://openstax.org/books/introduction-anthropology/pages/9-4-studying-in-addressing-inequities-within-anthropology' }
+        ]
+      }
+    },
+    {
+      id: 'institutions-symboliques-et-changement-social',
+      title: 'Les institutions symboliques et les transformations sociales',
+      field: 'Anthropologie des institutions et du changement · Religion, rituels, transmission et mobilisations',
+      summary: 'Comprendre comment les croyances, les rites, les valeurs et les récits collectifs contribuent à organiser la vie sociale, puis analyser les continuités et les transformations historiques.',
+      lesson: {
+        sections: [
+          'Les sociétés s’organisent aussi à travers des systèmes symboliques : valeurs, croyances, récits, catégories et représentations partagées. Ces éléments donnent du sens aux relations et aux événements, définissent des appartenances et contribuent à légitimer certaines institutions. Ils ne sont pas séparés de la vie matérielle : les symboles sont présents dans les lieux, les objets, les vêtements, les gestes, les cérémonies et les pratiques quotidiennes. Leur interprétation dépend du contexte et peut varier entre les membres d’un même groupe.',
+          'Les religions constituent des ensembles divers de croyances, de pratiques, de récits et d’institutions liés au sacré ou à des conceptions du monde. L’anthropologie ne cherche pas à établir la vérité ou la fausseté d’une croyance ; elle étudie ses usages, ses significations et ses effets sociaux. Les pratiques religieuses peuvent organiser des calendriers, des espaces, des obligations, des solidarités et des formes d’autorité. Elles peuvent également être traversées par des débats internes, des réinterprétations et des transformations historiques.',
+          'Les rites sont des pratiques codifiées ou reconnaissables qui possèdent une signification collective. Certains rites marquent des transitions dans la vie : naissance, passage à l’âge adulte, mariage, entrée dans une fonction ou décès. Ils rendent visibles des changements de statut et permettent à un groupe de reconnaître publiquement une nouvelle position. D’autres rituels entretiennent la cohésion, commémorent un événement ou réaffirment des valeurs. Il serait toutefois erroné de supposer que tous les participants donnent exactement le même sens à un rite ou que celui-ci produit toujours l’unité du groupe.',
+          'Le changement social désigne les transformations des institutions, des pratiques, des relations et des représentations au cours du temps. Il peut résulter de facteurs multiples : innovations techniques, migrations, échanges, conflits, politiques publiques, transformations économiques, changements démographiques ou mobilisations collectives. Ces facteurs interagissent et leurs effets varient selon les contextes. Une innovation ne transforme pas mécaniquement une société : son adoption dépend des usages locaux, des rapports de pouvoir, des ressources disponibles et des significations qui lui sont attribuées.',
+          'La mondialisation intensifie certaines circulations de personnes, de biens, d’informations et de modèles institutionnels. Elle ne produit pas une uniformisation complète : les pratiques importées sont souvent adaptées, réinterprétées ou contestées localement. Les migrations et les médias peuvent transformer les appartenances et les échanges entre générations, tout en maintenant des liens à distance. Les mouvements sociaux, les associations et les mobilisations autochtones ou locales peuvent défendre des droits, des territoires, des langues et des formes de vie. L’étude anthropologique du changement doit ainsi prendre en compte simultanément les contraintes globales et la capacité d’action des groupes concernés.'
+        ],
+        example: {
+          statement: 'Une communauté organise chaque année une cérémonie collective. Au fil du temps, de nouveaux membres proposent d’y intégrer des pratiques récentes, tandis que d’autres souhaitent conserver les formes anciennes. Que révèle cette situation ?',
+          calculation: 'On distingue la fonction de transmission du rituel, les significations attribuées par différents participants, les rapports entre générations et les négociations qui conduisent à maintenir ou modifier certaines pratiques.',
+          answer: 'La cérémonie est à la fois un mécanisme de continuité culturelle et un espace de transformation. Une tradition n’est pas nécessairement immobile : elle peut être réinterprétée et négociée par les membres du groupe.'
+        },
+        exercise: {
+          question: 'Pourquoi un rituel peut-il contribuer à la fois à la continuité et au changement social ?',
+          answer: 'Parce qu’il transmet des symboles et des règles collectives, tout en pouvant être réinterprété, adapté ou contesté par les participants au fil des générations.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’objet de l’anthropologie des religions ?',
+            answer: 'Elle étudie les croyances, les pratiques, les institutions et les significations religieuses dans leurs contextes sociaux et historiques, sans avoir pour objectif de trancher leur vérité théologique.'
+          },
+          {
+            question: 'Qu’est-ce qu’un rite de passage ?',
+            answer: 'C’est un rituel qui accompagne ou rend publiquement reconnaissable une transition de statut ou une étape de la vie sociale.'
+          },
+          {
+            question: 'La mondialisation entraîne-t-elle nécessairement la disparition des cultures locales ?',
+            answer: 'Non. Les circulations mondiales peuvent transformer les pratiques, mais celles-ci sont aussi appropriées, adaptées et parfois contestées localement.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introduction to Anthropology, 13.1 What Is Religion?', url: 'https://openstax.org/books/introduction-anthropology/pages/13-1-what-is-religion' },
+          { title: 'OpenStax — Introduction to Anthropology, 13.2 Symbolic and Sacred Space', url: 'https://openstax.org/books/introduction-anthropology/pages/13-2-symbolic-and-sacred-space' },
+          { title: 'OpenStax — Introduction to Anthropology, 13.4 Rituals of Transition and Conformity', url: 'https://openstax.org/books/introduction-anthropology/pages/13-4-rituals-of-transition-and-conformity' },
+          { title: 'OpenStax — Introduction to Anthropology, 8.5 Resistance, Revolution, and Social Movements', url: 'https://openstax.org/books/introduction-anthropology/pages/8-5-resistance-revolution-and-social-movements' },
+          { title: 'OpenStax — Introduction to Anthropology, 9.3 Intersections of Inequality', url: 'https://openstax.org/books/introduction-anthropology/pages/9-3-intersections-of-inequality' }
+        ]
+      }
+    }
+  ]
+},
+
+
 ]
