@@ -1899,4 +1899,273 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'adaptation-humaine',
+  title: 'L’adaptation humaine aux différents environnements',
+  note: 'Six chapitres pour comprendre comment les populations humaines répondent à la chaleur, au froid, à l’altitude, au rayonnement ultraviolet et aux contraintes alimentaires. La branche distingue l’adaptation évolutive héréditaire, l’acclimatation physiologique individuelle, la plasticité du développement et les réponses culturelles et techniques. Les exemples décrivent des tendances documentées, jamais des règles absolues applicables à toutes les personnes d’une population.',
+  chapters: [
+    {
+      id: 'mecanismes-adaptation-humaine',
+      title: 'Les mécanismes de l’adaptation humaine',
+      field: 'Anthropologie biologique et évolution humaine · Sélection naturelle, plasticité et acclimatation',
+      summary: 'Distinguer les mécanismes évolutifs, physiologiques, développementaux et culturels qui permettent aux humains de vivre dans des environnements différents.',
+      lesson: {
+        sections: [
+          'L’adaptation humaine désigne un ensemble de réponses par lesquelles les populations et les individus font face aux contraintes de leur environnement. En anthropologie biologique, le terme adaptation évolutive désigne généralement une caractéristique héréditaire dont la fréquence a été favorisée par la sélection naturelle dans un contexte donné. Cette évolution se mesure à l’échelle des générations et des populations. Elle ne correspond ni à une décision consciente d’un individu ni à une transformation volontaire du corps. Une caractéristique avantageuse dans un environnement peut être neutre ou moins avantageuse dans un autre, et son effet dépend toujours du contexte écologique, social et historique.',
+          'Il faut distinguer l’adaptation évolutive de l’acclimatation. L’acclimatation est un ensemble de changements physiologiques réversibles qui se produisent chez un individu exposé à une nouvelle condition, par exemple une chaleur inhabituelle ou une altitude élevée. La réponse peut se développer sur plusieurs jours ou semaines et diminuer lorsque l’exposition cesse. Elle n’est pas, en elle-même, une modification génétique transmissible aux descendants. Le terme acclimatement est parfois utilisé pour des ajustements dans des conditions naturelles complexes, tandis que l’acclimatation peut désigner une exposition contrôlée ; les usages terminologiques varient selon les disciplines.',
+          'La plasticité développementale correspond à la capacité d’un organisme à suivre différentes trajectoires de développement selon les conditions rencontrées pendant sa croissance. La nutrition, les maladies, l’activité physique, le climat et les conditions socio-économiques peuvent influencer certains traits physiologiques et morphologiques. Ces effets ne sont pas tous permanents et ne doivent pas être confondus avec une évolution génétique. Pour les étudier, les chercheurs comparent les trajectoires individuelles et les conditions de vie, en tenant compte des facteurs multiples qui influencent le développement.',
+          'La culture constitue une dimension centrale de l’adaptation humaine. Les vêtements, les habitations, le feu, les techniques de conservation, l’irrigation, les outils, les pratiques alimentaires et les règles collectives permettent de modifier l’exposition aux contraintes environnementales. Ces réponses peuvent agir plus rapidement que l’évolution génétique et se transmettre par apprentissage. Elles interagissent avec la biologie : un abri modifie l’exposition au froid, une technique de stockage change la disponibilité saisonnière des aliments et une organisation collective peut faciliter l’accès à l’eau. L’être humain transforme donc aussi son environnement au lieu de seulement y subir une sélection.',
+          'L’étude anthropologique de l’adaptation doit éviter le déterminisme environnemental. Un même milieu n’entraîne pas une réponse identique dans toutes les sociétés, car les ressources, les techniques, l’histoire, les échanges et les inégalités influencent les possibilités d’action. De plus, les environnements changent : une adaptation ancienne peut devenir moins avantageuse lorsque le climat, les modes de subsistance ou les conditions sanitaires se transforment. Les chercheurs combinent observations physiologiques, génétique des populations, archéologie, ethnographie et données écologiques pour distinguer les mécanismes et reconstruire les histoires adaptatives.'
+        ],
+        example: {
+          statement: 'Une personne déménage d’une région tempérée vers une ville chaude. Après une période d’exposition, son organisme ajuste certaines réponses à la chaleur. Plusieurs générations plus tard, une population vivant durablement dans un autre environnement présente aussi des différences héréditaires étudiées par les chercheurs. Ces deux phénomènes sont-ils identiques ?',
+          calculation: 'On classe les phénomènes selon leur échelle et leur transmission : changement physiologique chez une personne au cours de sa vie, ou variation héréditaire de fréquence dans une population au fil des générations.',
+          answer: 'Non. Le premier phénomène relève de l’acclimatation individuelle. Le second peut relever de l’adaptation évolutive si les différences héréditaires ont été façonnées par la sélection naturelle. Une observation de différence entre populations ne suffit toutefois pas, à elle seule, à démontrer une adaptation.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer adaptation évolutive et acclimatation physiologique ?',
+          answer: 'L’adaptation évolutive concerne des variations héréditaires qui changent au sein des populations sur plusieurs générations. L’acclimatation correspond à des ajustements physiologiques individuels, généralement réversibles et non transmis génétiquement.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que la plasticité développementale ?',
+            answer: 'C’est la capacité d’un organisme à développer des caractéristiques différentes selon les conditions rencontrées pendant sa croissance.'
+          },
+          {
+            question: 'Une pratique culturelle peut-elle contribuer à l’adaptation humaine ?',
+            answer: 'Oui. Les vêtements, les abris, les techniques alimentaires et les organisations collectives réduisent certaines contraintes environnementales et se transmettent par apprentissage.'
+          },
+          {
+            question: 'Pourquoi une différence entre deux populations ne prouve-t-elle pas automatiquement une adaptation génétique ?',
+            answer: 'Elle peut aussi résulter de l’histoire démographique, des migrations, du développement, de l’alimentation ou d’autres facteurs. Il faut des preuves convergentes pour établir le rôle de la sélection naturelle.'
+          }
+        ],
+        sources: [
+          { title: 'Ocobock et al. — Human Bodies in Extreme Environments, Annual Review of Anthropology', url: 'https://www.annualreviews.org/content/journals/10.1146/annurev-anthro-052721-085858' },
+          { title: 'Ocobock et al. — To the Extreme! How biological anthropology can inform exercise physiology in extreme environments', url: 'https://pubmed.ncbi.nlm.nih.gov/37423419/' },
+          { title: 'Nielsen et al. — Human adaptation to extreme environmental conditions', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7193766/' }
+        ]
+      }
+    },
+    {
+      id: 'adaptation-climats-chauds',
+      title: 'L’adaptation humaine aux climats chauds',
+      field: 'Anthropologie biologique · Thermorégulation, chaleur et contraintes hydriques',
+      summary: 'Étudier les réponses physiologiques à la chaleur, les différences entre acclimatation et adaptation à long terme, ainsi que le rôle des pratiques culturelles dans les milieux chauds.',
+      lesson: {
+        sections: [
+          'La chaleur impose à l’organisme un problème de bilan thermique : le corps doit maintenir sa température interne dans une plage compatible avec le fonctionnement des organes. Les échanges de chaleur dépendent notamment de la température de l’air, de l’humidité, du rayonnement solaire, du vent, des vêtements et de l’activité physique. Lorsque l’environnement limite les pertes de chaleur, l’organisme sollicite ses mécanismes de thermorégulation. La transpiration permet un refroidissement par évaporation, mais son efficacité diminue lorsque l’air est très humide. La circulation sanguine cutanée participe également à l’évacuation de la chaleur.',
+          'L’exposition répétée à la chaleur peut provoquer une acclimatation. Parmi les réponses observées figurent une transpiration qui peut commencer plus tôt, une meilleure capacité à transpirer et des modifications de la réponse cardiovasculaire. L’importance de ces changements dépend de la durée et de l’intensité de l’exposition, de l’activité, de l’état de santé et des caractéristiques individuelles. L’acclimatation ne rend pas invulnérable à la chaleur : des épisodes extrêmes peuvent toujours dépasser les capacités de thermorégulation, en particulier lorsque l’humidité est élevée ou que l’accès à l’eau et au repos est limité.',
+          'Sur des périodes évolutives longues, les populations humaines ont connu des environnements thermiques variés. Les recherches examinent notamment les relations entre morphologie corporelle, échanges thermiques et climat. Certaines tendances morphologiques peuvent être compatibles avec des différences de dissipation ou de conservation de chaleur, mais elles ne permettent pas de prédire simplement la capacité d’un individu à supporter un climat. La variation humaine est continue et résulte de plusieurs facteurs : histoire évolutive, développement, nutrition, activité et conditions de vie. Les règles simplifiées qui associent mécaniquement une forme corporelle à un climat doivent donc être interprétées avec prudence.',
+          'Dans les régions chaudes et arides, l’accès à l’eau constitue une contrainte majeure. Les sociétés développent des réponses techniques et collectives diverses : stockage, gestion des points d’eau, irrigation, choix des horaires d’activité, abris ombragés et vêtements adaptés. Dans les environnements chauds et humides, la ventilation et la protection contre les insectes ou les pluies peuvent compter autant que l’ombrage. Ces solutions dépendent des matériaux disponibles, des connaissances locales, des infrastructures et des institutions qui organisent l’accès aux ressources.',
+          'La chaleur n’est pas seulement une question biologique : elle est aussi une question sociale. Les personnes qui travaillent dehors, vivent dans des logements mal isolés ou disposent de peu d’espaces frais peuvent être davantage exposées. Les infrastructures urbaines, la végétation, les transports et l’accès à l’eau modifient fortement les risques. L’Organisation mondiale de la santé souligne que les conséquences sanitaires des épisodes de chaleur dépendent de leur intensité et de leur durée, mais aussi de l’acclimatation de la population et de la capacité des institutions à protéger les habitants. L’adaptation au climat doit donc intégrer la santé publique et les inégalités.'
+        ],
+        example: {
+          statement: 'Deux quartiers connaissent la même vague de chaleur. Le premier dispose d’arbres, de logements ventilés, d’espaces frais et d’un accès régulier à l’eau. Le second possède peu d’ombre et des logements qui retiennent la chaleur. Pourquoi les effets peuvent-ils différer ?',
+          calculation: 'On compare les expositions et les ressources de protection : température ressentie, ombrage, ventilation, accès à l’eau, possibilité de réduire l’activité et accès aux services de santé.',
+          answer: 'Les effets peuvent différer parce que l’adaptation dépend autant des conditions sociales et matérielles que des capacités physiologiques individuelles. Les infrastructures et les inégalités modifient l’exposition à la chaleur.'
+        },
+        exercise: {
+          question: 'Pourquoi la transpiration ne refroidit-elle pas toujours efficacement le corps dans un climat chaud ?',
+          answer: 'Parce que le refroidissement dépend de l’évaporation. Lorsque l’humidité de l’air est élevée, la sueur s’évapore moins facilement et évacue moins efficacement la chaleur.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle principal de la transpiration dans la thermorégulation ?',
+            answer: 'L’évaporation de la sueur à la surface de la peau permet de transférer de la chaleur du corps vers l’environnement.'
+          },
+          {
+            question: 'L’acclimatation à la chaleur protège-t-elle totalement contre les épisodes extrêmes ?',
+            answer: 'Non. Elle améliore certaines réponses physiologiques, mais ne supprime pas les risques lorsque les conditions dépassent les capacités de thermorégulation.'
+          },
+          {
+            question: 'Cite deux facteurs sociaux qui influencent l’exposition à la chaleur.',
+            answer: 'La qualité du logement et l’accès à des espaces frais, à l’eau, à l’ombre ou aux services de santé sont des exemples de facteurs sociaux et matériels.'
+          }
+        ],
+        sources: [
+          { title: 'Organisation mondiale de la santé — Heat and health', url: 'https://www.who.int/en/news-room/fact-sheets/detail/climate-change-heat-and-health' },
+          { title: 'Ocobock et al. — Human Bodies in Extreme Environments, Annual Review of Anthropology', url: 'https://www.annualreviews.org/content/journals/10.1146/annurev-anthro-052721-085858' },
+          { title: 'Ocobock et al. — To the Extreme! How biological anthropology can inform exercise physiology in extreme environments', url: 'https://pubmed.ncbi.nlm.nih.gov/37423419/' }
+        ]
+      }
+    },
+    {
+      id: 'adaptation-environnements-froids',
+      title: 'L’adaptation humaine aux environnements froids',
+      field: 'Anthropologie biologique et écologique · Thermorégulation, froid et stratégies culturelles',
+      summary: 'Comprendre les réponses corporelles au froid, les limites de l’acclimatation et les innovations techniques et sociales permettant d’habiter les régions froides.',
+      lesson: {
+        sections: [
+          'Le froid augmente les pertes thermiques et oblige l’organisme à préserver sa température interne. La vasoconstriction périphérique réduit le débit sanguin vers certaines zones de la peau et des extrémités, ce qui contribue à limiter les pertes de chaleur. Les frissons produisent de la chaleur par l’activité musculaire involontaire. Ces réponses sont utiles à court terme, mais elles ont un coût énergétique et ne suffisent pas à protéger indéfiniment une personne exposée à des conditions sévères. Le vent, l’humidité, le contact avec des surfaces froides et la durée d’exposition modifient fortement les échanges thermiques.',
+          'Les réponses à des expositions répétées au froid sont diverses et dépendent du type d’exposition. Les recherches décrivent notamment des réponses métaboliques, des réponses d’isolation liées à la circulation périphérique et des phénomènes d’habituation. L’habituation correspond à une modification de certaines réactions lors d’expositions répétées ; elle ne signifie pas que le froid devient sans danger. Les résultats scientifiques ne permettent pas de résumer toutes les populations ou toutes les expositions par un mécanisme unique. Il faut distinguer les effets observés chez un individu au cours de sa vie des adaptations héréditaires possibles sur de nombreuses générations.',
+          'Les populations vivant depuis longtemps dans des régions froides ont développé des systèmes techniques et des organisations sociales adaptés à leurs milieux. Les vêtements isolants, les habitations, les foyers, les moyens de transport, les outils et les stratégies de conservation des aliments réduisent l’exposition et sécurisent les activités. Les matériaux et les formes de ces techniques varient selon les ressources disponibles, les pratiques de subsistance et les histoires locales. Il n’existe pas une seule « technologie du froid » : les solutions dépendent des conditions écologiques et des savoirs transmis au sein des communautés.',
+          'L’alimentation et l’organisation du travail jouent aussi un rôle. Dans certains environnements, les activités de chasse, de pêche, d’élevage ou de collecte suivent des calendriers saisonniers et exigent une connaissance fine des déplacements animaux, de la glace, des vents et des ressources. La coopération peut répartir les tâches, organiser le partage et réduire les risques liés à l’isolement. Ces pratiques ne sont pas uniquement des réponses individuelles au climat : elles reposent sur des institutions, des savoirs et des relations sociales qui rendent possible l’occupation durable d’un territoire.',
+          'L’adaptation au froid doit être étudiée en tenant compte des transformations contemporaines. Le changement climatique modifie les régimes de neige, de glace et de température, ce qui peut affecter les déplacements, les activités de subsistance et les infrastructures. Les effets sont inégaux selon les ressources économiques, les droits territoriaux et la possibilité de modifier les pratiques. L’anthropologie examine ainsi à la fois les réponses physiologiques, les savoirs environnementaux et les conséquences politiques et sociales des changements écologiques.'
+        ],
+        example: {
+          statement: 'Une communauté vivant dans une région froide utilise des vêtements isolants, des habitations adaptées, des réserves alimentaires et des connaissances saisonnières pour organiser ses déplacements. Peut-on expliquer cette adaptation uniquement par la physiologie ?',
+          calculation: 'On distingue les réponses biologiques au froid, les techniques qui limitent l’exposition et les règles collectives qui organisent les ressources, les déplacements et l’entraide.',
+          answer: 'Non. L’occupation durable d’un milieu froid résulte d’une interaction entre physiologie, technologies, connaissances écologiques et organisation sociale. La culture constitue une composante majeure de l’adaptation humaine.'
+        },
+        exercise: {
+          question: 'Pourquoi les vêtements et les habitations sont-ils des éléments importants de l’adaptation humaine au froid ?',
+          answer: 'Ils réduisent les pertes de chaleur et l’exposition directe au milieu, ce qui permet aux personnes de vivre et de mener des activités dans des conditions où les seules réponses physiologiques seraient insuffisantes.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle de la vasoconstriction périphérique ?',
+            answer: 'Elle réduit le débit sanguin vers certaines régions périphériques et contribue ainsi à limiter les pertes de chaleur.'
+          },
+          {
+            question: 'L’habituation au froid signifie-t-elle que l’organisme ne court plus aucun risque ?',
+            answer: 'Non. Elle modifie certaines réponses à l’exposition, mais ne supprime pas les dangers d’un froid intense ou prolongé.'
+          },
+          {
+            question: 'Donne deux exemples d’adaptation culturelle aux environnements froids.',
+            answer: 'Les vêtements isolants et les habitations adaptées sont deux exemples. On peut également citer les techniques de conservation alimentaire et les savoirs saisonniers.'
+          }
+        ],
+        sources: [
+          { title: 'Human cold habituation: Physiology, timeline, and modifiers', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9467574/' },
+          { title: 'Ocobock et al. — Human Bodies in Extreme Environments, Annual Review of Anthropology', url: 'https://www.annualreviews.org/content/journals/10.1146/annurev-anthro-052721-085858' },
+          { title: 'Nielsen et al. — Human adaptation to extreme environmental conditions', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7193766/' }
+        ]
+      }
+    },
+    {
+      id: 'adaptation-haute-altitude',
+      title: 'L’adaptation humaine à la haute altitude',
+      field: 'Anthropologie biologique · Hypoxie, physiologie respiratoire et adaptations des populations montagnardes',
+      summary: 'Étudier les effets de la diminution de la pression atmosphérique en altitude, les réponses immédiates du corps et les adaptations observées dans certaines populations vivant en montagne.',
+      lesson: {
+        sections: [
+          'En altitude, la pression atmosphérique diminue avec l’élévation. La proportion d’oxygène dans l’air reste proche de 21 %, mais sa pression partielle baisse : à chaque inspiration, la pression qui pousse l’oxygène à passer des poumons vers le sang est donc plus faible. Cette situation est appelée hypoxie hypobare. Elle peut provoquer des réponses physiologiques et des difficultés d’acclimatation chez les personnes qui arrivent depuis une altitude plus basse. L’altitude ne constitue pas une contrainte unique : le froid, le rayonnement ultraviolet, la faible humidité et les ressources alimentaires peuvent également intervenir.',
+          'Lorsqu’une personne séjourne en altitude, l’organisme déclenche plusieurs réponses. La ventilation augmente, ce qui contribue à améliorer l’apport d’oxygène. Des mécanismes hormonaux et rénaux participent à l’ajustement de la production de globules rouges. Ces changements sont des réponses physiologiques à l’hypoxie et leur ampleur varie selon les personnes, la durée d’exposition et l’altitude. Ils ne doivent pas être confondus avec les caractéristiques héréditaires qui ont pu évoluer dans des populations résidant en altitude depuis de nombreuses générations.',
+          'Les études comparatives ont notamment porté sur des populations des Andes, du plateau tibétain et des hauts plateaux d’Éthiopie. Elles montrent que les réponses associées à la vie en altitude ne sont pas identiques partout. Certaines populations présentent des profils différents concernant la concentration d’hémoglobine, la ventilation, la circulation sanguine ou la reproduction. Ces différences illustrent le fait que l’évolution peut emprunter plusieurs voies face à une contrainte comparable. Il serait incorrect de parler d’une adaptation montagnarde universelle ou d’attribuer un même mécanisme à toutes les populations d’altitude.',
+          'La génétique des populations a identifié plusieurs régions du génome associées à la réponse à l’altitude, notamment des mécanismes impliqués dans la détection et la régulation de l’oxygène. Chez les Tibétains, des variants de gènes tels que EPAS1 et EGLN1 ont été étudiés pour leur association avec des réponses physiologiques à l’hypoxie. L’interprétation de ces résultats exige de distinguer association génétique, mécanisme biologique et histoire de la sélection. Les adaptations sont généralement polygéniques ou dépendent de réseaux biologiques complexes ; un seul gène ne résume pas la capacité d’une population à vivre en altitude.',
+          'L’habitat montagnard dépend également des pratiques culturelles et des conditions sociales. Les systèmes agricoles, l’élevage, les chemins, les marchés, les techniques de construction et les réseaux d’entraide permettent de composer avec les pentes, les saisons et les ressources limitées. Les infrastructures et l’accès aux soins influencent les conséquences sanitaires de l’altitude. L’anthropologie étudie donc l’interaction entre biologie, environnement, histoire des peuplements et organisation des activités humaines, plutôt que de réduire la vie en montagne à une caractéristique physiologique.'
+        ],
+        example: {
+          statement: 'Deux personnes arrivent dans une région située à 3 500 mètres d’altitude. Après plusieurs jours, elles présentent des réponses physiologiques à la baisse de disponibilité de l’oxygène. Une population résidant depuis de nombreuses générations dans cette région peut présenter d’autres caractéristiques. Comment distinguer ces phénomènes ?',
+          calculation: 'Les changements observés après l’arrivée relèvent de l’acclimatation individuelle. Les différences héréditaires entre populations, si elles sont établies et reliées à la sélection, relèvent de l’adaptation évolutive.',
+          answer: 'Les réponses à court terme des deux personnes correspondent à l’acclimatation à l’hypoxie. Les caractéristiques héréditaires apparues ou devenues fréquentes au fil des générations peuvent correspondre à une adaptation évolutive. Les deux niveaux doivent être étudiés séparément.'
+        },
+        exercise: {
+          question: 'Pourquoi la pression partielle d’oxygène diminue-t-elle en altitude alors que la proportion d’oxygène dans l’air reste proche de 21 % ?',
+          answer: 'Parce que la pression atmosphérique totale diminue avec l’altitude. La proportion d’oxygène reste similaire, mais sa pression partielle devient plus faible.'
+        },
+        exercises: [
+          {
+            question: 'Qu’appelle-t-on hypoxie hypobare ?',
+            answer: 'C’est une situation dans laquelle la diminution de la pression atmosphérique réduit la pression partielle d’oxygène disponible pour la respiration.'
+          },
+          {
+            question: 'Les populations andines, tibétaines et éthiopiennes présentent-elles nécessairement les mêmes adaptations ?',
+            answer: 'Non. Les recherches montrent des profils physiologiques et génétiques distincts, ce qui indique que plusieurs trajectoires adaptatives sont possibles.'
+          },
+          {
+            question: 'Pourquoi un variant génétique associé à la vie en altitude ne suffit-il pas à expliquer toute l’adaptation ?',
+            answer: 'Parce que la réponse à l’altitude implique plusieurs mécanismes physiologiques, des interactions génétiques et des facteurs environnementaux et culturels.'
+          }
+        ],
+        sources: [
+          { title: 'Human adaptation to high altitude: a review of convergence between genomic and proteomic signatures', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9287971/' },
+          { title: 'Nielsen et al. — Human adaptation to extreme environmental conditions', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7193766/' },
+          { title: 'Ocobock et al. — To the Extreme! How biological anthropology can inform exercise physiology in extreme environments', url: 'https://pubmed.ncbi.nlm.nih.gov/37423419/' }
+        ]
+      }
+    },
+    {
+      id: 'pigmentation-rayonnement-ultraviolet',
+      title: 'La pigmentation cutanée et l’adaptation au rayonnement ultraviolet',
+      field: 'Anthropologie biologique et évolution humaine · Mélanine, rayonnement solaire et vitamine D',
+      summary: 'Expliquer la diversité de la pigmentation humaine à partir des interactions évolutives entre rayonnement ultraviolet, protection des folates et synthèse de la vitamine D.',
+      lesson: {
+        sections: [
+          'La pigmentation de la peau dépend notamment de la quantité, du type et de la répartition de la mélanine produite par les mélanocytes. La mélanine contribue à protéger les tissus contre une partie des effets du rayonnement ultraviolet. La couleur de la peau humaine présente une variation continue à l’échelle mondiale et ne se répartit pas en catégories biologiques discrètes correspondant à des groupes humains séparés. Les différences de pigmentation sont le résultat d’une histoire évolutive complexe, dans laquelle interviennent plusieurs gènes, les migrations et les conditions environnementales.',
+          'Le rayonnement ultraviolet varie selon la latitude, l’altitude, la saison, la couverture nuageuse et d’autres caractéristiques locales. Dans les régions où l’exposition aux ultraviolets est forte, une pigmentation riche en eumélanine offre une protection contre certains dommages liés aux UV. Les recherches évolutionnaires ont notamment étudié la protection des folates, nutriments importants pour la division cellulaire et le développement embryonnaire. Cette relation contribue à expliquer pourquoi une pigmentation plus foncée a été favorisée dans de nombreux environnements soumis à un rayonnement ultraviolet intense.',
+          'La synthèse cutanée de vitamine D dépend d’une exposition aux UVB. Dans des environnements où l’intensité des UVB est faible pendant une partie importante de l’année, une pigmentation moins importante peut faciliter la pénétration des UVB nécessaires à cette synthèse. Ce modèle évolutif décrit un compromis entre protection contre un rayonnement intense et maintien de la production de vitamine D dans des conditions de faible exposition. Il ne signifie pas que la latitude détermine seule la couleur de peau : les vêtements, l’alimentation, les modes de vie, les migrations et l’histoire génétique modifient également les pressions de sélection.',
+          'La pigmentation cutanée est un caractère polygénique. Plusieurs variants génétiques contribuent aux différences observées entre individus et populations, et certaines variantes ont été soumises à des histoires de sélection différentes selon les régions. Les migrations et les métissages ont continuellement modifié la distribution de ces variantes. Il est donc scientifiquement incorrect de déduire l’origine précise, l’identité ou les capacités d’une personne à partir de sa seule couleur de peau. La pigmentation ne définit pas des frontières biologiques nettes entre les populations humaines.',
+          'L’étude de la pigmentation exige de distinguer les explications évolutives des conseils de santé actuels. Les modèles de sélection naturelle décrivent des pressions exercées sur de longues périodes, mais ne déterminent pas à eux seuls les besoins individuels contemporains en vitamine D ni les risques liés au soleil. Ces derniers dépendent notamment de l’exposition réelle, de l’âge, de la santé, de la latitude et des comportements. L’anthropologie biologique analyse l’évolution du caractère, tandis que la santé publique évalue les risques et les mesures de prévention dans les conditions actuelles.'
+        ],
+        example: {
+          statement: 'Deux régions présentent des niveaux moyens de rayonnement ultraviolet différents. Les chercheurs observent aussi des fréquences différentes de variants associés à la pigmentation. Quelle hypothèse évolutive peut être étudiée ?',
+          calculation: 'On compare les niveaux d’UV, les données génétiques, les migrations et les facteurs culturels. On examine si les variations de pigmentation sont compatibles avec des pressions de sélection liées à la protection contre les UV et à la synthèse de vitamine D.',
+          answer: 'On peut étudier l’hypothèse d’une adaptation évolutive de la pigmentation aux niveaux locaux de rayonnement ultraviolet. Cette hypothèse doit être évaluée avec plusieurs sources de données et ne permet pas de classer les populations en catégories biologiques distinctes.'
+        },
+        exercise: {
+          question: 'Comment le rayonnement ultraviolet a-t-il contribué à l’évolution de la pigmentation cutanée humaine ?',
+          answer: 'Les niveaux d’UV ont exercé des pressions de sélection liées notamment à la protection des folates sous fort rayonnement et au maintien de la synthèse de vitamine D lorsque les UVB sont moins intenses.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle de la mélanine dans la peau ?',
+            answer: 'La mélanine est un pigment qui contribue à absorber et à disperser une partie du rayonnement ultraviolet, limitant certains dommages liés aux UV.'
+          },
+          {
+            question: 'Pourquoi la synthèse de vitamine D intervient-elle dans les hypothèses sur l’évolution de la pigmentation ?',
+            answer: 'Parce que la production cutanée de vitamine D dépend des UVB, dont la disponibilité varie selon les régions et les saisons.'
+          },
+          {
+            question: 'La couleur de peau permet-elle de définir des catégories biologiques humaines séparées ?',
+            answer: 'Non. La pigmentation varie de manière continue, dépend de nombreux gènes et a été façonnée par les migrations et les histoires évolutives des populations.'
+          }
+        ],
+        sources: [
+          { title: 'Smithsonian Institution — Human Skin Color Variation', url: 'https://humanorigins.si.edu/evidence/genetics/human-skin-color-variation' },
+          { title: 'National Academies — Human Skin Pigmentation as an Adaptation to UV Radiation', url: 'https://www.ncbi.nlm.nih.gov/books/NBK210014/pdf/Bookshelf_NBK210014.pdf' },
+          { title: 'Jablonski and Chaplin — Human skin pigmentation as an adaptation to UV radiation', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3024016/' }
+        ]
+      }
+    },
+    {
+      id: 'adaptations-alimentaires-et-culturelles',
+      title: 'L’alimentation, les ressources naturelles et la coévolution biologique et culturelle',
+      field: 'Anthropologie biologique et économique · Régimes alimentaires, subsistance et coévolution gènes-culture',
+      summary: 'Étudier comment les régimes alimentaires, les pratiques de subsistance et les innovations culturelles ont contribué à certaines adaptations biologiques, notamment la persistance de la lactase.',
+      lesson: {
+        sections: [
+          'Les régimes alimentaires humains sont façonnés par les ressources disponibles, les techniques, les traditions et les échanges. Les populations ont développé des stratégies variées : chasse, pêche, collecte, horticulture, agriculture, élevage et approvisionnement par les marchés. Ces activités ne constituent pas une succession universelle de stades. Elles peuvent être combinées et transformées selon les saisons, les contraintes écologiques, les relations politiques et les possibilités économiques. Les choix alimentaires sont donc à la fois biologiques, historiques et culturels.',
+          'La transformation des aliments par la cuisson, le broyage, la fermentation, le séchage ou la conservation modifie leur texture, leur digestibilité et leur disponibilité. Ces techniques permettent de tirer parti de ressources locales et de réduire certaines contraintes liées à la saisonnalité. Les pratiques culinaires se transmettent socialement et sont liées à des représentations du goût, du corps, de la santé et de l’identité. Elles peuvent aussi évoluer avec les migrations, les échanges commerciaux et les changements de modes de vie.',
+          'La persistance de la lactase à l’âge adulte constitue un exemple bien documenté de coévolution entre pratiques culturelles et évolution biologique. Chez de nombreux mammifères, la production de lactase, enzyme qui permet de digérer le lactose du lait, diminue après le sevrage. Dans certaines populations humaines, des variantes génétiques régulatrices permettent de maintenir une production de lactase à l’âge adulte. La diffusion de l’élevage laitier a créé des contextes dans lesquels la consommation de lait pouvait favoriser les individus capables de le digérer. La persistance de la lactase a toutefois évolué indépendamment dans plusieurs régions et repose sur des variantes génétiques qui ne sont pas toutes identiques.',
+          'La coévolution gènes-culture désigne un processus dans lequel les pratiques culturelles modifient les pressions de sélection auxquelles les populations sont exposées, tandis que les caractéristiques biologiques influencent à leur tour les pratiques possibles. L’élevage laitier est un exemple classique, mais il ne faut pas en déduire que tous les éleveurs adultes digèrent le lactose ou que toutes les personnes qui digèrent le lait descendent de populations pastorales. Les fréquences de la persistance de la lactase varient considérablement et l’histoire de ce caractère demeure complexe, notamment en raison des migrations, des transformations alimentaires et des multiples variantes génétiques impliquées.',
+          'L’adaptation alimentaire ne se limite pas à la génétique. Les techniques agricoles, les systèmes d’irrigation, les modes de stockage, les échanges et les connaissances écologiques permettent de répondre aux variations de ressources. Les transformations de l’environnement, les conflits, les politiques foncières et les changements économiques peuvent cependant fragiliser les systèmes alimentaires. Une approche anthropologique examine qui contrôle les terres et l’eau, comment les connaissances sont transmises et quelles populations supportent les conséquences des changements. Elle relie ainsi les adaptations biologiques à l’organisation sociale et aux conditions matérielles de la vie.'
+        ],
+        example: {
+          statement: 'Dans plusieurs régions, l’élevage laitier s’est développé et certaines populations présentent une fréquence élevée de variantes associées à la persistance de la lactase à l’âge adulte. Quel lien peut-on établir entre culture et évolution ?',
+          calculation: 'On identifie d’abord le changement culturel — l’élevage et la consommation de lait — puis le caractère biologique héréditaire — la persistance de la lactase. On recherche ensuite des indices montrant que la pratique alimentaire a modifié la pression de sélection sur les variantes génétiques concernées.',
+          answer: 'Cet exemple illustre la coévolution gènes-culture : une pratique culturelle peut créer une nouvelle pression de sélection, contribuant à modifier la fréquence de variantes héréditaires au fil des générations. Ce processus n’a pas été identique dans toutes les populations.'
+        },
+        exercise: {
+          question: 'Pourquoi la persistance de la lactase est-elle considérée comme un exemple de coévolution entre culture et biologie ?',
+          answer: 'Parce que le développement de l’élevage laitier et de la consommation de lait a créé, dans certaines populations, un contexte de sélection favorisant des variantes génétiques permettant de produire de la lactase à l’âge adulte.'
+        },
+        exercises: [
+          {
+            question: 'Que permet l’enzyme lactase ?',
+            answer: 'Elle permet de décomposer le lactose, le principal sucre du lait.'
+          },
+          {
+            question: 'La persistance de la lactase repose-t-elle sur une seule variante génétique identique dans toutes les populations ?',
+            answer: 'Non. Plusieurs variantes génétiques sont associées à ce caractère et certaines ont évolué indépendamment dans différentes régions.'
+          },
+          {
+            question: 'Qu’est-ce que la coévolution gènes-culture ?',
+            answer: 'C’est un processus dans lequel les pratiques culturelles modifient les pressions de sélection et où les caractéristiques biologiques influencent en retour les pratiques culturelles.'
+          }
+        ],
+        sources: [
+          { title: 'Ségurel and Bon — On the Evolution of Lactase Persistence in Humans, Annual Review of Genomics and Human Genetics', url: 'https://pubmed.ncbi.nlm.nih.gov/28426286/' },
+          { title: 'Human adaptations to diet: Biological and cultural coevolution', url: 'https://pubmed.ncbi.nlm.nih.gov/38908898/' },
+          { title: 'The molecular basis of lactase persistence: Linking genetics and epigenetics', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12336946/' },
+          { title: 'Evolutionary Adaptations to Dietary Changes', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4163920/' }
+        ]
+      }
+    }
+  ]
+},
+
+
+
 ]
