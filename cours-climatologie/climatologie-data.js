@@ -4859,6 +4859,281 @@ url: 'https://www.usgs.gov/programs/climate-research-and-development-program/sci
   ]
 },
 
+
+{
+  id: 'grands-glaciers',
+  title: 'Les plus grands glaciers du monde et leur évolution',
+  note: 'Six chapitres consacrés aux plus grands glaciers individuels identifiés par les inventaires glaciaires internationaux : Seller Glacier, Thurston Island Glacier No. 1, Alexander Island Glacier No. 1, Malaspina-Seward Glacier, Wykeham Glacier South et Bering Glacier. Les superficies sont des estimations issues de l’étude comparative de Windnagel et al. (2022), et non des mesures en temps réel. Les calottes glaciaires du Groenland et de l’Antarctique ainsi que les complexes glaciaires sont distingués des glaciers individuels. Les évolutions propres à chaque glacier ne sont pas chiffrées lorsqu’une série de mesures vérifiée n’est pas disponible.',
+  chapters: [
+    {
+      id: 'seller-glacier',
+      title: 'Seller Glacier : le plus vaste glacier individuel du classement',
+      field: 'Glaciologie · Péninsule Antarctique · Superficie estimée : 7 018 km² dans l’inventaire étudié en 2022',
+      summary: 'Étudier Seller Glacier, le premier glacier individuel du classement mondial de Windnagel et al. (2022), comprendre son contexte antarctique, les mécanismes qui contrôlent son écoulement et les limites des données disponibles sur son évolution.',
+      lesson: {
+        sections: [
+          'Seller Glacier est situé sur la péninsule Antarctique. L’étude comparative de Windnagel et de ses collaborateurs, publiée en 2022 dans le Journal of Glaciology, lui attribue une superficie de 7 018 km² et le place au premier rang des glaciers individuels retenus dans leur classement mondial. Ce résultat doit être interprété dans le cadre précis de cette étude : les auteurs excluent les deux grandes calottes glaciaires continentales, mais incluent les glaciers de leur périphérie et ceux de la péninsule Antarctique. Seller Glacier n’est donc pas une calotte glaciaire et son rang ne signifie pas qu’il est plus vaste que les grandes masses de glace continentales.',
+          'Un glacier est une masse de glace terrestre qui se déforme et se déplace sous l’effet de son propre poids. La neige qui s’accumule durablement se transforme progressivement en névé, puis en glace lorsque les grains se compactent et que l’air contenu entre eux diminue. Dans un grand glacier antarctique, la glace s’écoule depuis les zones où elle s’accumule vers des secteurs plus bas ou vers la côte. La vitesse et la direction de cet écoulement dépendent notamment de la pente, de l’épaisseur de glace, de la température de la glace et des conditions à sa base. Ces mécanismes généraux décrivent le fonctionnement glaciologique ; ils ne constituent pas, à eux seuls, une mesure de la vitesse actuelle de Seller Glacier.',
+          'La superficie de 7 018 km² est une valeur cartographiée dans le cadre d’un inventaire comparatif. Elle dépend de la délimitation retenue pour séparer un glacier individuel des masses de glace voisines. Les auteurs signalent que le tracé des contours et la qualité des inventaires introduisent des incertitudes, particulièrement lorsqu’il faut comparer des glaciers de régions différentes. Il faut donc éviter de présenter ce chiffre comme une superficie exacte et permanente : les limites d’un glacier peuvent changer, et une nouvelle cartographie peut produire une valeur différente.',
+          'L’évolution d’un glacier se mesure notamment par son bilan de masse, c’est-à-dire la différence entre les gains de neige et les pertes dues à la fonte, à la sublimation et, pour les glaciers qui aboutissent dans l’eau, au vêlage d’icebergs. Un bilan négatif répété signifie que le glacier perd de la masse. Les évaluations mondiales du GlaMBIE montrent que les glaciers de la planète ont perdu en moyenne 273 ± 16 gigatonnes par an entre 2000 et 2023, avec une perte annuelle plus importante durant 2012–2023 que durant 2000–2011. Cette tendance mondiale ne permet toutefois pas de déduire automatiquement le bilan annuel de Seller Glacier : une conclusion propre à ce glacier exige des observations qui lui sont spécifiquement consacrées.',
+          'L’intérêt scientifique de Seller Glacier tient ainsi à sa très grande superficie et à sa position dans une région où les glaciers sont liés à la dynamique de la péninsule Antarctique. Pour suivre son évolution, les chercheurs peuvent combiner des images satellitaires, des modèles numériques d’altitude, des mesures de terrain et des estimations de bilan de masse. Chaque méthode renseigne une variable différente : une variation du contour cartographié ne correspond pas nécessairement à une variation identique du volume, et une modification de la vitesse d’écoulement ne suffit pas, seule, à quantifier la perte totale de glace.'
+        ],
+        example: {
+          statement: 'Dans le classement de Windnagel et al. (2022), Seller Glacier possède une superficie estimée à 7 018 km². Un autre glacier individuel du même classement, Thurston Island Glacier No. 1, est estimé à 5 261 km². Quelle est la différence entre ces deux superficies ?',
+          calculation: '7 018 - 5 261 = 1 757 km².',
+          answer: 'La différence est de 1 757 km². Ce calcul compare les valeurs de superficie publiées dans le même travail scientifique ; il ne signifie pas que Seller Glacier possède actuellement une superficie mesurée au km² près.'
+        },
+        exercise: {
+          question: 'Pourquoi le rang de Seller Glacier doit-il être accompagné de la méthode de classement utilisée ?',
+          answer: 'Parce que le classement distingue les glaciers individuels des complexes glaciaires et exclut les deux calottes continentales. Les limites cartographiques et la définition des unités de glace peuvent modifier les superficies et donc l’ordre du classement.'
+        },
+        exercises: [
+          {
+            question: 'Quelle superficie l’étude de Windnagel et al. (2022) attribue-t-elle à Seller Glacier ?',
+            answer: '7 018 km².'
+          },
+          {
+            question: 'Dans quelle région se trouve Seller Glacier ?',
+            answer: 'Sur la péninsule Antarctique.'
+          },
+          {
+            question: 'Peut-on déduire le bilan de masse actuel de Seller Glacier à partir de la perte moyenne mondiale des glaciers ?',
+            answer: 'Non. La moyenne mondiale décrit un ensemble de glaciers. Le bilan propre à Seller Glacier doit être établi à partir de données et d’observations qui lui sont spécifiques.'
+          }
+        ],
+        sources: [
+          { title: 'World Glacier Monitoring Service — Which glaciers are the largest in the world?', url: 'https://wgms.ch/largest_glaciers/' },
+          { title: 'Windnagel et al. (2022) — Which glaciers are the largest in the world, Journal of Glaciology', url: 'https://www.cambridge.org/core/journals/journal-of-glaciology/article/which-glaciers-are-the-largest-in-the-world/202DD32784F5798505B1CCAB279225E4' },
+          { title: 'NSIDC — Glacier Quick Facts', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/glacier-quick-facts' },
+          { title: 'The GlaMBIE Team (2025) — Community estimate of global glacier mass changes from 2000 to 2023, Nature', url: 'https://www.nature.com/articles/s41586-024-08545-z' }
+        ]
+      }
+    },
+    {
+      id: 'thurston-island-glacier-no-1',
+      title: 'Thurston Island Glacier No. 1 : un géant des îles antarctiques',
+      field: 'Glaciologie · Île Thurston, Antarctique occidental · Superficie estimée : 5 261 km² dans l’inventaire étudié en 2022',
+      summary: 'Comprendre la place de Thurston Island Glacier No. 1 parmi les plus grands glaciers individuels, les particularités des glaciers insulaires antarctiques et les méthodes nécessaires pour suivre leur évolution.',
+      lesson: {
+        sections: [
+          'Thurston Island Glacier No. 1 est localisé sur l’île Thurston, en Antarctique occidental. Dans l’étude mondiale de Windnagel et al. publiée en 2022, sa superficie est estimée à 5 261 km². Il figure parmi les trois plus grands glaciers individuels du classement, derrière Seller Glacier. Le suffixe « No. 1 » fait partie du nom utilisé dans l’inventaire ; il permet de distinguer cette unité glaciaire d’autres masses de glace identifiées sur l’île. Il ne s’agit pas d’une indication de rang mondial.',
+          'Les glaciers insulaires antarctiques sont soumis à une combinaison de facteurs topographiques et climatiques. Le relief de l’île canalise l’écoulement de la glace, tandis que les conditions atmosphériques contrôlent l’accumulation de neige et les pertes de surface. La glace se déforme sous son propre poids et peut s’écouler vers les côtes. Lorsque le front d’un glacier atteint la mer, des blocs peuvent se détacher : ce processus est appelé vêlage. Il ne faut cependant pas supposer, sans observation précise, que chaque secteur du glacier présente le même type de terminaison ou le même comportement dynamique.',
+          'L’estimation de 5 261 km² correspond à la délimitation adoptée par les chercheurs pour leur inventaire. Définir les limites d’un glacier peut être délicat lorsque des masses de glace voisines se rejoignent ou lorsque les lignes de partage des glaces sont peu marquées. Les auteurs de l’étude de 2022 insistent sur le fait que les classements des glaciers individuels sont plus incertains que ceux de certains complexes glaciaires. La superficie publiée est donc un repère scientifique utile, mais elle doit être associée à sa date et à sa méthode de cartographie.',
+          'Pour analyser l’évolution d’un glacier insulaire, les scientifiques distinguent plusieurs indicateurs. Le bilan de masse annuel mesure le gain ou la perte de glace et de neige. Le déplacement du front renseigne sur l’avancée ou le recul de la terminaison, mais il ne mesure pas directement le volume perdu. La vitesse de l’écoulement et les changements d’altitude de la surface apportent d’autres informations complémentaires. Une interprétation fiable repose sur plusieurs années de données comparables, car les variations saisonnières et les conditions météorologiques d’une année peuvent masquer ou amplifier une tendance de long terme.',
+          'À l’échelle planétaire, les résultats du GlaMBIE indiquent une accélération des pertes de masse glaciaire entre les périodes 2000–2011 et 2012–2023. Cette évolution globale fournit le contexte climatique dans lequel s’inscrit l’étude des glaciers antarctiques, mais elle ne constitue pas une mesure directe de Thurston Island Glacier No. 1. En l’absence d’une série publiée et vérifiée propre à ce glacier dans les sources retenues ici, il serait incorrect de lui attribuer une vitesse de recul, une perte de volume ou une date de disparition précise.'
+        ],
+        example: {
+          statement: 'Thurston Island Glacier No. 1 est estimé à 5 261 km² et Alexander Island Glacier No. 1 à 4 766 km² dans l’étude de 2022. Quelle est la différence de superficie entre les deux ?',
+          calculation: '5 261 - 4 766 = 495 km².',
+          answer: 'La différence est de 495 km² selon les superficies retenues par cette étude. Ces valeurs servent à comparer les unités cartographiées dans le même inventaire.'
+        },
+        exercise: {
+          question: 'Pourquoi le déplacement du front d’un glacier ne suffit-il pas à mesurer toute sa perte de masse ?',
+          answer: 'Parce que le front ne décrit que la position de la terminaison. La masse dépend aussi de l’épaisseur, de l’altitude de la surface, de l’accumulation de neige, de la fonte et, selon le contexte, du vêlage.'
+        },
+        exercises: [
+          {
+            question: 'Sur quelle île se trouve Thurston Island Glacier No. 1 ?',
+            answer: 'Sur l’île Thurston, en Antarctique occidental.'
+          },
+          {
+            question: 'Quelle superficie lui attribue Windnagel et al. (2022) ?',
+            answer: '5 261 km².'
+          },
+          {
+            question: 'Quel indicateur mesure la différence entre les gains et les pertes de masse d’un glacier sur une période donnée ?',
+            answer: 'Le bilan de masse.'
+          }
+        ],
+        sources: [
+          { title: 'World Glacier Monitoring Service — Which glaciers are the largest in the world?', url: 'https://wgms.ch/largest_glaciers/' },
+          { title: 'Windnagel et al. (2022) — Journal of Glaciology', url: 'https://www.cambridge.org/core/journals/journal-of-glaciology/article/which-glaciers-are-the-largest-in-the-world/202DD32784F5798505B1CCAB279225E4' },
+          { title: 'NSIDC — Glacier Quick Facts', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/glacier-quick-facts' },
+          { title: 'WGMS — Latest glacier mass balance data', url: 'https://wgms.ch/latest-glacier-mass-balance-data/' }
+        ]
+      }
+    },
+    {
+      id: 'alexander-island-glacier-no-1',
+      title: 'Alexander Island Glacier No. 1 : les glaciers de l’île Alexander',
+      field: 'Glaciologie · Île Alexander, péninsule Antarctique · Superficie estimée : 4 766 km² dans l’inventaire étudié en 2022',
+      summary: 'Étudier Alexander Island Glacier No. 1, son contexte insulaire, la distinction entre glacier individuel et complexe glaciaire, ainsi que les outils permettant de suivre ses transformations.',
+      lesson: {
+        sections: [
+          'Alexander Island Glacier No. 1 se trouve sur l’île Alexander, au large de la péninsule Antarctique. L’étude de Windnagel et al. (2022) lui attribue une superficie de 4 766 km². Il occupe la troisième place parmi les glaciers individuels les plus étendus présentés dans le classement mondial relayé par le WGMS. Son nom est une désignation géographique d’inventaire. Il est important de ne pas le confondre avec l’ensemble des glaciers de l’île Alexander, qui forment un complexe glaciaire beaucoup plus vaste.',
+          'L’île Alexander comporte un ensemble de reliefs et de bassins glaciaires. La topographie influence la manière dont la glace s’organise et s’écoule : les crêtes peuvent séparer des bassins d’alimentation, tandis que les vallées et les dépressions guident les mouvements de glace vers les marges. Dans les régions polaires, les températures basses favorisent la conservation de la neige, mais l’équilibre du glacier dépend aussi des précipitations, du vent, de la sublimation, de la fonte de surface et des échanges avec l’océan lorsque le glacier atteint la côte.',
+          'Le classement de 2022 distingue explicitement les glaciers individuels des complexes glaciaires. Cette séparation est essentielle sur une île englacée : additionner les surfaces de plusieurs glaciers voisins donne une valeur de complexe, qui ne doit pas être attribuée à un seul glacier. Pour l’île Alexander, le WGMS signale un complexe glaciaire d’environ 47 000 km², distinct de la superficie de 4 766 km² attribuée à Alexander Island Glacier No. 1. Les deux nombres décrivent donc des objets géographiques différents et ne sont pas contradictoires.',
+          'L’évolution d’un glacier peut se manifester par une variation de son épaisseur, de son étendue, de sa vitesse ou de la position de son front. Ces indicateurs ne sont pas interchangeables. Un glacier peut par exemple conserver temporairement une position de front relativement stable tout en perdant de l’épaisseur. Pour établir un bilan complet, les observations de terrain sont souvent associées à des mesures satellitaires et à des modèles numériques du relief. Les changements doivent être comparés sur des périodes suffisamment longues et avec des méthodes cohérentes.',
+          'Les travaux mondiaux récents montrent une perte nette de masse des glaciers hors calottes du Groenland et de l’Antarctique. L’étude GlaMBIE estime une perte totale de 6 542 ± 387 gigatonnes entre 2000 et 2023. Cette valeur porte sur les glaciers du monde entier et ne doit pas être appliquée directement à Alexander Island Glacier No. 1. Pour décrire son évolution individuelle, il faudrait une publication ou une série d’observations identifiant explicitement ce glacier et quantifiant les changements de sa masse, de son épaisseur ou de son front.'
+        ],
+        example: {
+          statement: 'Le complexe glaciaire de l’île Alexander est estimé à environ 47 000 km², tandis qu’Alexander Island Glacier No. 1 est estimé à 4 766 km². Pourquoi ne faut-il pas utiliser ces deux chiffres comme s’ils mesuraient le même glacier ?',
+          calculation: '47 000 km² correspond à un complexe glaciaire ; 4 766 km² correspond à un glacier individuel identifié dans ce complexe. Les périmètres et les objets cartographiés sont différents.',
+          answer: 'Le complexe regroupe plusieurs masses de glace, alors que le chiffre de 4 766 km² concerne une seule unité glaciaire. Les comparer comme deux mesures du même objet serait une erreur de catégorie.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale existe entre Alexander Island Glacier No. 1 et le complexe glaciaire de l’île Alexander ?',
+          answer: 'Le premier est un glacier individuel cartographié séparément ; le second regroupe plusieurs masses de glace de l’île. Leurs superficies ne décrivent donc pas la même unité.'
+        },
+        exercises: [
+          {
+            question: 'Quelle superficie est attribuée à Alexander Island Glacier No. 1 dans l’étude de 2022 ?',
+            answer: '4 766 km².'
+          },
+          {
+            question: 'Quelle superficie approximative le WGMS donne-t-il au complexe glaciaire de l’île Alexander ?',
+            answer: 'Environ 47 000 km².'
+          },
+          {
+            question: 'Cite deux indicateurs complémentaires utilisés pour étudier l’évolution d’un glacier.',
+            answer: 'Par exemple, le bilan de masse et l’évolution de l’épaisseur ; on peut également suivre la position du front et la vitesse d’écoulement.'
+          }
+        ],
+        sources: [
+          { title: 'World Glacier Monitoring Service — Which glaciers are the largest in the world?', url: 'https://wgms.ch/largest_glaciers/' },
+          { title: 'Windnagel et al. (2022) — Which glaciers are the largest in the world, Journal of Glaciology', url: 'https://www.cambridge.org/core/journals/journal-of-glaciology/article/which-glaciers-are-the-largest-in-the-world/202DD32784F5798505B1CCAB279225E4' },
+          { title: 'The GlaMBIE Team (2025) — Nature', url: 'https://www.nature.com/articles/s41586-024-08545-z' },
+          { title: 'NSIDC — Glacier Quick Facts', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/glacier-quick-facts' }
+        ]
+      }
+    },
+    {
+      id: 'malaspina-seward-glacier',
+      title: 'Malaspina-Seward Glacier : le grand glacier d’Alaska',
+      field: 'Glaciologie · Sud-est de l’Alaska, États-Unis · Environ 3 000 km² pour le glacier individuel dans le classement de 2022',
+      summary: 'Découvrir Malaspina-Seward Glacier, distinguer le glacier individuel du complexe Malaspina-Seward beaucoup plus vaste et comprendre les facteurs qui contrôlent les changements des glaciers côtiers d’Alaska.',
+      lesson: {
+        sections: [
+          'Malaspina-Seward Glacier se situe dans le sud-est de l’Alaska, aux États-Unis. Windnagel et al. (2022) le citent parmi les plus grands glaciers individuels situés en dehors de l’Antarctique, avec une superficie de l’ordre de 3 000 km². Le même travail identifie séparément le Malaspina-Seward Glacier Complex, dont la superficie est d’environ 30 000 km². Il faut conserver cette distinction : le complexe englobe une aire glaciaire plus vaste et ne doit pas être confondu avec la superficie du glacier individuel.',
+          'Le secteur de Malaspina est caractérisé par un environnement côtier et montagneux. Dans ce type de région, l’alimentation en neige des parties élevées et les températures relativement douces des marges peuvent produire des contrastes importants entre les zones d’accumulation et d’ablation. La glace se déplace depuis les secteurs d’accumulation vers les zones plus basses. La géométrie du relief, l’épaisseur de glace et les conditions à la base influencent son mouvement. Les glaciers côtiers peuvent également interagir avec les eaux marines ou des plans d’eau proglaciaires, selon la configuration de leur front.',
+          'La taille remarquable du complexe Malaspina-Seward s’explique notamment par la réunion de plusieurs bassins glaciaires dans une région où les glaciers occupent de vastes espaces de piémont et de montagne. Les chercheurs doivent donc déterminer les limites de chaque glacier et les lignes de partage des glaces avant de comparer les superficies. Cette opération est plus délicate dans les zones où plusieurs langues glaciaires se rejoignent ou s’étalent sur des terrains peu inclinés. C’est l’une des raisons pour lesquelles le classement des glaciers individuels reste soumis à une incertitude plus forte que ne le suggère un simple tableau de superficies.',
+          'Pour suivre son évolution, les observations pertinentes incluent la position du front, les variations d’altitude de la surface, les changements de vitesse et le bilan de masse. Dans un glacier qui se termine près de l’eau, le vêlage peut participer aux pertes de glace, mais il ne faut pas supposer qu’il domine toujours le bilan : son importance doit être évaluée à partir d’observations. De même, un recul du front peut résulter de plusieurs facteurs et ne donne pas, à lui seul, la quantité totale de glace perdue.',
+          'Les glaciers d’Alaska s’inscrivent dans une région où les précipitations, les températures et les conditions océaniques peuvent varier fortement. Les évaluations mondiales montrent une perte de masse accélérée des glaciers depuis le début du XXIe siècle, mais une tendance régionale ou mondiale ne remplace pas une mesure propre à Malaspina-Seward Glacier. Les valeurs d’environ 3 000 km² et 30 000 km² décrivent des superficies cartographiées dans l’étude de 2022 ; elles ne constituent pas une série chronologique permettant de calculer directement un taux de recul.'
+        ],
+        example: {
+          statement: 'L’étude distingue un glacier individuel d’environ 3 000 km² et un complexe glaciaire d’environ 30 000 km² dans le secteur Malaspina-Seward. Combien de fois la superficie du complexe représente-t-elle approximativement celle du glacier individuel ?',
+          calculation: '30 000 / 3 000 = 10.',
+          answer: 'La superficie du complexe est environ 10 fois celle du glacier individuel. Il s’agit d’un rapport approximatif entre deux unités cartographiques différentes.'
+        },
+        exercise: {
+          question: 'Pourquoi les superficies de 3 000 km² et 30 000 km² ne sont-elles pas deux estimations concurrentes de Malaspina-Seward Glacier ?',
+          answer: 'La première correspond au glacier individuel ; la seconde correspond au complexe glaciaire qui regroupe une aire de glace plus étendue.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel État des États-Unis se trouve Malaspina-Seward Glacier ?',
+            answer: 'En Alaska.'
+          },
+          {
+            question: 'Quelle est l’ordre de grandeur de la superficie du glacier individuel dans l’étude de 2022 ?',
+            answer: 'Environ 3 000 km².'
+          },
+          {
+            question: 'Quelle superficie approximative est attribuée au complexe Malaspina-Seward ?',
+            answer: 'Environ 30 000 km².'
+          }
+        ],
+        sources: [
+          { title: 'World Glacier Monitoring Service — Which glaciers are the largest in the world?', url: 'https://wgms.ch/largest_glaciers/' },
+          { title: 'Windnagel et al. (2022) — Journal of Glaciology', url: 'https://www.cambridge.org/core/journals/journal-of-glaciology/article/which-glaciers-are-the-largest-in-the-world/202DD32784F5798505B1CCAB279225E4' },
+          { title: 'NSIDC — Glacier Quick Facts', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/glacier-quick-facts' },
+          { title: 'WGMS — Global glacier state', url: 'https://wgms.ch/global-glacier-state/' }
+        ]
+      }
+    },
+    {
+      id: 'wykeham-glacier-south',
+      title: 'Wykeham Glacier South : un grand glacier de l’Arctique canadien',
+      field: 'Glaciologie · Arctique canadien · Parmi les plus grands glaciers individuels hors Antarctique selon l’étude de 2022',
+      summary: 'Présenter Wykeham Glacier South dans le contexte des glaciers arctiques canadiens, expliquer les mécanismes de leur bilan de masse et distinguer les données établies des tendances qui nécessitent des mesures propres au glacier.',
+      lesson: {
+        sections: [
+          'Wykeham Glacier South se trouve dans l’Arctique canadien. Windnagel et al. (2022) le mentionnent parmi les plus grands glaciers individuels situés en dehors de l’Antarctique, aux côtés de Malaspina-Seward Glacier et de Bering Glacier. Le WGMS reprend ce résultat dans sa synthèse des plus grands glaciers. Les sources consultées le situent dans le groupe des glaciers dont la superficie est de l’ordre de 3 000 km², mais ne justifient pas ici l’attribution d’une valeur individuelle précise. Il est donc préférable de ne pas fabriquer un chiffre plus exact que les données effectivement vérifiées.',
+          'Dans l’Arctique canadien, les glaciers sont soumis à des conditions climatiques froides, avec une saison d’accumulation dominée par les chutes de neige et une saison d’ablation pendant laquelle la fonte de surface peut devenir importante. Le bilan de masse résulte de la différence entre les apports et les pertes sur une année glaciologique. Il dépend de la quantité de neige reçue, de sa redistribution par le vent, de la température, du rayonnement et des processus de fonte ou de sublimation. Un glacier peut connaître des variations d’une année à l’autre sans que celles-ci inversent nécessairement sa tendance de long terme.',
+          'Les glaciers de l’Arctique ne réagissent pas tous de la même manière au réchauffement. Leur réponse dépend de l’altitude, de l’exposition, de la forme du bassin, de la quantité de neige accumulée et de la présence éventuelle d’un front marin. Les glaciers dont la langue atteint l’océan peuvent perdre de la glace par vêlage, tandis que d’autres perdent surtout de la masse par fonte en surface. Il faut connaître la configuration réelle de chaque glacier avant de déterminer quels mécanismes dominent son évolution.',
+          'Le suivi scientifique d’un glacier arctique combine généralement des observations de terrain et des mesures à distance. Les relevés glaciologiques permettent de mesurer l’accumulation et l’ablation à différents endroits. Les images satellitaires et les modèles d’altitude servent à cartographier les changements de surface et d’épaisseur. Les mesures gravimétriques renseignent plutôt sur les variations de masse à de grandes échelles spatiales ; elles ne permettent pas toujours d’isoler un glacier individuel. Chaque méthode possède donc une résolution et un domaine d’application particuliers.',
+          'Les données mondiales confirment une perte de masse importante des glaciers au cours des dernières décennies. Entre 2000 et 2023, l’estimation GlaMBIE évalue la perte mondiale à 6 542 ± 387 gigatonnes. Cette valeur globale ne donne pas la perte de Wykeham Glacier South. Les sources utilisées pour cette branche ne fournissent pas de série individuelle vérifiée permettant de chiffrer son recul ou sa perte de masse. La présentation scientifique doit donc distinguer le contexte régional et mondial des observations spécifiques à ce glacier.'
+        ],
+        example: {
+          statement: 'Une étude donne une superficie de l’ordre de 3 000 km² pour plusieurs des plus grands glaciers individuels hors Antarctique, sans fournir dans la synthèse consultée une valeur exacte propre à Wykeham Glacier South. Quelle formulation est scientifiquement correcte ?',
+          calculation: 'On conserve l’ordre de grandeur documenté : environ 3 000 km² pour le groupe mentionné. On ne transforme pas cet ordre de grandeur en une mesure exacte propre à Wykeham Glacier South.',
+          answer: 'La formulation correcte est que Wykeham Glacier South figure parmi les plus grands glaciers individuels hors Antarctique et appartient au groupe décrit à l’ordre de grandeur de 3 000 km². Une superficie exacte ne doit pas être inventée.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il éviter d’attribuer à Wykeham Glacier South une superficie précise qui n’est pas explicitement confirmée par la source consultée ?',
+          answer: 'Parce qu’un ordre de grandeur collectif n’est pas une mesure individuelle. Une valeur précise doit être vérifiée dans la table ou les données cartographiques originales avant d’être attribuée à ce glacier.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle grande région du monde se trouve Wykeham Glacier South ?',
+            answer: 'Dans l’Arctique canadien.'
+          },
+          {
+            question: 'Quelle étude scientifique le cite parmi les plus grands glaciers individuels hors Antarctique ?',
+            answer: 'L’étude de Windnagel et al. publiée en 2022 dans le Journal of Glaciology.'
+          },
+          {
+            question: 'Quel indicateur permet de quantifier le gain ou la perte de masse d’un glacier sur une année glaciologique ?',
+            answer: 'Le bilan de masse annuel.'
+          }
+        ],
+        sources: [
+          { title: 'World Glacier Monitoring Service — Which glaciers are the largest in the world?', url: 'https://wgms.ch/largest_glaciers/' },
+          { title: 'Windnagel et al. (2022) — Which glaciers are the largest in the world, Journal of Glaciology', url: 'https://www.cambridge.org/core/journals/journal-of-glaciology/article/which-glaciers-are-the-largest-in-the-world/202DD32784F5798505B1CCAB279225E4' },
+          { title: 'WGMS — Latest glacier mass balance data', url: 'https://wgms.ch/latest-glacier-mass-balance-data/' },
+          { title: 'The GlaMBIE Team (2025) — Community estimate of global glacier mass changes from 2000 to 2023', url: 'https://www.nature.com/articles/s41586-024-08545-z' }
+        ]
+      }
+    },
+    {
+      id: 'bering-glacier',
+      title: 'Bering Glacier : l’un des plus grands glaciers d’Alaska',
+      field: 'Glaciologie · Alaska, États-Unis · Parmi les plus grands glaciers individuels hors Antarctique selon l’étude de 2022',
+      summary: 'Étudier Bering Glacier, son importance parmi les glaciers d’Alaska, les interactions possibles entre glace et eau, ainsi que les méthodes de suivi de son bilan de masse et de son évolution.',
+      lesson: {
+        sections: [
+          'Bering Glacier se trouve en Alaska, dans le sud-est de l’État. Windnagel et al. (2022) le citent parmi les plus grands glaciers individuels situés hors de l’Antarctique, après Malaspina-Seward Glacier et Wykeham Glacier South dans leur présentation synthétique. Le WGMS confirme cette place parmi les plus grands glaciers individuels. La synthèse consultée situe ces glaciers dans un ordre de grandeur proche de 3 000 km², mais il convient de ne pas attribuer à Bering Glacier une valeur exacte sans vérifier la ligne correspondante dans les données détaillées de l’inventaire.',
+          'Bering Glacier est un vaste système glaciaire alaskien. Son fonctionnement doit être compris à partir de l’équilibre entre l’accumulation de neige dans les secteurs élevés et les pertes de glace dans les secteurs plus bas. La glace s’écoule sous l’effet de la gravité et de sa déformation interne. Les conditions thermiques, la pente, l’épaisseur et les propriétés du substrat influencent le mouvement. Les grands glaciers peuvent aussi présenter des variations de vitesse et de géométrie qui ne se résument pas à une simple avancée ou à un recul uniforme de leur front.',
+          'Un phénomène observé chez certains glaciers est la crue glaciaire, parfois appelée surge glaciaire. Il s’agit d’une phase durant laquelle un glacier accélère fortement son écoulement pendant une période limitée, en transférant une partie de sa glace vers l’aval. Ce comportement est distinct d’une avancée provoquée par un bilan de masse positif durable. Cette notion aide à distinguer la dynamique de l’écoulement des variations du stock total de glace. Elle ne doit pas être attribuée à Bering Glacier à une date précise sans une publication ou une série d’observations qui documente explicitement cet épisode.',
+          'Pour comprendre l’évolution d’un glacier comme Bering, les chercheurs analysent ensemble les variations de vitesse, l’altitude de la surface, l’étendue cartographiée et le bilan de masse. Ces paramètres peuvent évoluer de manière différente. Une phase d’écoulement rapide peut déplacer de la glace vers l’aval sans que le bilan de masse total soit positif. À l’inverse, une perte de masse peut se poursuivre même si le front ne recule pas de façon spectaculaire pendant une courte période. Il est donc nécessaire de distinguer la dynamique de l’écoulement et l’évolution du stock total de glace.',
+          'Le contexte climatique mondial montre une perte de masse accélérée des glaciers depuis 2000. Le GlaMBIE estime que les pertes annuelles moyennes sont passées de 231 ± 23 gigatonnes par an durant 2000–2011 à 314 ± 23 gigatonnes par an durant 2012–2023. Ces valeurs sont des moyennes mondiales, non une mesure de Bering Glacier. Pour établir sa tendance actuelle, il faut s’appuyer sur des données propres au glacier et tenir compte de ses éventuelles variations dynamiques. Une seule photographie ou une seule mesure de vitesse ne suffit pas à établir son évolution à long terme.'
+        ],
+        example: {
+          statement: 'Le GlaMBIE estime les pertes moyennes mondiales à 231 ± 23 Gt/an durant 2000–2011 et à 314 ± 23 Gt/an durant 2012–2023. De combien la valeur centrale annuelle a-t-elle augmenté entre les deux périodes ?',
+          calculation: '314 - 231 = 83 Gt/an.',
+          answer: 'La valeur centrale de la perte annuelle moyenne mondiale a augmenté de 83 Gt/an. Ce résultat concerne l’ensemble des glaciers étudiés et ne représente pas la perte annuelle de Bering Glacier.'
+        },
+        exercise: {
+          question: 'Une accélération de l’écoulement de Bering Glacier signifie-t-elle nécessairement que sa masse totale augmente ?',
+          answer: 'Non. Une accélération décrit un changement de vitesse et de transfert de glace. Le bilan de masse dépend toujours de l’ensemble des gains et des pertes sur la période considérée.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel État américain se trouve Bering Glacier ?',
+            answer: 'En Alaska.'
+          },
+          {
+            question: 'Comment appelle-t-on une phase d’accélération marquée et temporaire de l’écoulement d’un glacier ?',
+            answer: 'Une crue glaciaire ou surge glaciaire.'
+          },
+          {
+            question: 'Une variation de vitesse suffit-elle à déterminer le bilan de masse du glacier ?',
+            answer: 'Non. Il faut aussi évaluer l’accumulation, l’ablation et les changements du stock de glace.'
+          }
+        ],
+        sources: [
+          { title: 'World Glacier Monitoring Service — Which glaciers are the largest in the world?', url: 'https://wgms.ch/largest_glaciers/' },
+          { title: 'Windnagel et al. (2022) — Journal of Glaciology', url: 'https://www.cambridge.org/core/journals/journal-of-glaciology/article/which-glaciers-are-the-largest-in-the-world/202DD32784F5798505B1CCAB279225E4' },
+          { title: 'The GlaMBIE Team (2025) — Community estimate of global glacier mass changes from 2000 to 2023, Nature', url: 'https://www.nature.com/articles/s41586-024-08545-z' },
+          { title: 'NSIDC — Glacier Quick Facts', url: 'https://nsidc.org/learn/parts-cryosphere/glaciers/glacier-quick-facts' }
+        ]
+      }
+    }
+  ]
+},
+
+
+
 ]
 
 
