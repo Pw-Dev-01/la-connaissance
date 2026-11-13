@@ -3476,6 +3476,379 @@ sources: [
   ]
 },
 
+{
+  id: 'formation-montagnes',
+  title: 'La formation des montagnes',
+  note: 'Six chapitres approfondis consacrés à la formation des chaînes de montagnes, à la tectonique des plaques, aux collisions continentales, à la subduction, aux déformations tectoniques, au métamorphisme et à l’évolution des reliefs. Les processus sont étudiés à différentes échelles de temps. Les exemples géologiques sont documentés et les âges indiqués restent des repères approximatifs lorsque les phénomènes se sont déroulés sur plusieurs millions d’années.',
+  chapters: [
+    {
+      id: 'dynamique-tectonique-et-orogenese',
+      title: 'La dynamique tectonique et les mécanismes de formation des montagnes',
+      field: 'Géologie structurale · Tectonique des plaques · Orogenèse',
+      summary: 'Comprendre les mouvements de la lithosphère, les contraintes tectoniques et les mécanismes fondamentaux responsables de la formation des reliefs montagneux.',
+      lesson: {
+        sections: [
+          'La formation des montagnes est principalement liée à la dynamique interne de la Terre et aux mouvements des plaques lithosphériques. La lithosphère comprend la croûte terrestre et la partie supérieure rigide du manteau. Elle est divisée en plusieurs plaques qui se déplacent lentement les unes par rapport aux autres. Ces déplacements sont associés à la dynamique du manteau, aux forces gravitationnelles et aux interactions entre les plaques. Lorsque deux plaques convergent, les roches subissent des contraintes mécaniques susceptibles de provoquer leur déformation, leur fracturation, leur épaississement et leur soulèvement. L’ensemble des processus tectoniques qui construisent et transforment les chaînes de montagnes est appelé orogenèse. Une chaîne de montagnes ne résulte donc généralement pas d’un événement isolé, mais d’une succession de phénomènes géologiques qui peuvent s’étendre sur plusieurs dizaines de millions d’années.',
+          'Les mouvements des plaques sont classés en trois grandes catégories. Aux frontières divergentes, les plaques s’écartent et la lithosphère peut être étirée, amincie et fracturée. Dans un continent soumis à une extension, des failles normales peuvent délimiter des blocs surélevés et des bassins affaissés. Aux frontières convergentes, les plaques se rapprochent : la convergence peut entraîner une subduction ou une collision continentale, deux contextes majeurs de construction des reliefs. Aux frontières transformantes, les plaques coulissent horizontalement l’une par rapport à l’autre. Ce dernier mouvement produit principalement des failles décrochantes et des séismes ; il n’est pas, à lui seul, un mécanisme général de construction des grandes chaînes montagneuses.',
+          'Les forces tectoniques produisent différentes contraintes dans les roches. Une contrainte compressive tend à raccourcir et épaissir la croûte. Une contrainte extensive tend à l’étirer et à l’amincir. Une contrainte de cisaillement provoque un déplacement relatif de parties d’un matériau. La réponse des roches dépend notamment de leur composition, de leur température, de la pression, de la présence de fluides et de la vitesse de déformation. À faible température et à faible profondeur, les roches ont généralement un comportement plus cassant et peuvent se fracturer. À plus grande profondeur, lorsque la température et la pression augmentent, elles peuvent se déformer de manière ductile, en se plissant ou en s’écoulant lentement à l’échelle géologique.',
+          'L’épaississement crustal est un mécanisme central de nombreuses orogenèses. Lorsqu’une région est comprimée, des couches rocheuses peuvent être plissées, découpées par des failles inverses et empilées par des chevauchements. Plusieurs portions de croûte se retrouvent ainsi superposées, ce qui augmente l’épaisseur de la croûte continentale. Cette croûte épaissie possède généralement une racine profonde qui s’enfonce dans le manteau. Le relief montagneux visible en surface n’est donc que la partie émergée d’une structure géologique beaucoup plus importante en profondeur.',
+          'L’orogenèse doit être distinguée du simple relief topographique. Une montagne peut être construite par compression tectonique, par activité volcanique ou par soulèvement de blocs le long de failles. Dans les chaînes de collision, la déformation tectonique est souvent accompagnée de métamorphisme, de magmatisme et d’érosion. L’étude d’une chaîne montagneuse nécessite donc de combiner la géologie structurale, la pétrologie, la géochronologie et la géomorphologie. Les Alpes et l’Himalaya illustrent des contextes de convergence et de collision continentale, tandis que les Andes illustrent un contexte de subduction océanique sous une marge continentale.'
+        ],
+        example: {
+          statement: 'Une région continentale subit une compression tectonique. Des couches sédimentaires initialement horizontales se plissent, puis certaines portions sont déplacées les unes sur les autres par des failles inverses. Quel mécanisme géologique explique principalement l’épaississement de la croûte ?',
+          calculation: 'La compression provoque un raccourcissement horizontal. Le plissement et l’empilement de terrains par chevauchement contribuent à augmenter l’épaisseur verticale de la croûte.',
+          answer: 'L’épaississement crustal résulte principalement du raccourcissement tectonique, du plissement et de l’empilement de terrains le long de failles inverses et de chevauchements.'
+        },
+        exercise: {
+          question: 'Pourquoi les frontières convergentes des plaques sont-elles particulièrement importantes dans la formation des chaînes de montagnes ?',
+          answer: 'Parce que le rapprochement des plaques produit des contraintes compressives susceptibles de provoquer la subduction, la collision continentale, le plissement, les chevauchements et l’épaississement de la croûte.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on l’ensemble des processus géologiques responsables de la formation d’une chaîne de montagnes ?',
+            answer: 'L’orogenèse.'
+          },
+          {
+            question: 'Quelle est la différence fondamentale entre une frontière divergente et une frontière convergente ?',
+            answer: 'À une frontière divergente, les plaques s’écartent. À une frontière convergente, elles se rapprochent.'
+          },
+          {
+            question: 'Quel type de contrainte provoque généralement le raccourcissement horizontal de la croûte ?',
+            answer: 'La contrainte compressive.'
+          },
+          {
+            question: 'Pourquoi une chaîne de montagnes peut-elle posséder une racine crustale profonde ?',
+            answer: 'Parce que l’épaississement de la croûte associé à la convergence et à l’empilement des terrains peut produire une racine qui s’enfonce dans le manteau.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — This Dynamic Earth: Understanding Plate Motions',
+            url: 'https://pubs.usgs.gov/gip/dynamic/understanding.html'
+          },
+          {
+            title: 'National Park Service — Tectonic Landforms and Mountain Building',
+            url: 'https://www.nps.gov/subjects/geology/tectonic-landforms.htm'
+          },
+          {
+            title: 'British Geological Survey — What Causes Earthquakes?',
+            url: 'https://www.bgs.ac.uk/discovering-geology/earth-hazards/earthquakes/what-causes-earthquakes/'
+          },
+          {
+            title: 'Open Textbook BC — Physical Geology: Mountain Building',
+            url: 'https://opentextbc.ca/physicalgeologyh5p/chapter/mountain-building/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'subduction-et-chaines-volcaniques',
+      title: 'La subduction et la formation des chaînes de montagnes volcaniques',
+      field: 'Géodynamique · Subduction · Magmatisme · Marges convergentes',
+      summary: 'Étudier l’enfoncement d’une plaque océanique sous une autre plaque, la production de magmas et la construction des chaînes volcaniques continentales et insulaires.',
+      lesson: {
+        sections: [
+          'La subduction est un processus tectonique qui se produit lorsqu’une plaque lithosphérique, généralement océanique, plonge sous une autre plaque au niveau d’une frontière convergente. La lithosphère océanique est constituée d’une croûte basaltique et d’une partie du manteau supérieur. En vieillissant, elle se refroidit et devient globalement plus dense. Lorsqu’elle converge avec une autre plaque, elle peut s’enfoncer dans le manteau. La zone où cette plaque plonge est appelée zone de subduction. Elle est souvent associée à une fosse océanique, à une forte activité sismique et à une déformation importante de la plaque supérieure.',
+          'Lorsqu’une plaque océanique plonge sous une plaque continentale, elle entraîne avec elle des sédiments, des roches océaniques et des minéraux contenant de l’eau. En profondeur, l’augmentation de la température et de la pression provoque des transformations minéralogiques et la libération progressive de fluides. L’eau libérée favorise la fusion partielle des roches du manteau situées au-dessus de la plaque plongeante, car elle abaisse leur température de fusion. Le magma ainsi produit peut remonter dans la lithosphère, s’accumuler dans des réservoirs magmatiques, cristalliser en profondeur ou atteindre la surface lors d’éruptions volcaniques.',
+          'Dans une marge continentale active, l’activité magmatique peut construire une chaîne de volcans appelée arc volcanique continental. Les Andes constituent un exemple majeur de chaîne associée à la subduction de la plaque Nazca sous la plaque sud-américaine. La subduction ne produit cependant pas uniquement du volcanisme. La compression de la marge continentale peut provoquer des plis, des failles inverses, des chevauchements et un épaississement de la croûte. Des reliefs importants peuvent donc résulter de l’association entre déformation tectonique, intrusions magmatiques et accumulation de matériaux volcaniques.',
+          'Lorsque la subduction concerne deux plaques océaniques, l’une peut plonger sous l’autre et produire un arc volcanique insulaire. Ces arcs sont constitués d’îles volcaniques ou de reliefs sous-marins alignés parallèlement à la fosse océanique. Le volcanisme est lié à la production de magmas dans le manteau situé au-dessus de la plaque plongeante. Les arcs insulaires montrent que la construction de reliefs volcaniques n’est pas limitée aux continents. Ils représentent également des environnements importants pour l’étude de la formation et de l’évolution de la croûte.',
+          'La subduction peut aussi entraîner la formation d’un prisme d’accrétion. Une partie des sédiments et des fragments de roches présents sur la plaque océanique est raclée, comprimée et accumulée contre la plaque supérieure au lieu d’être entièrement entraînée en profondeur. Ces matériaux peuvent être plissés et empilés par chevauchements. Dans certaines zones, des fragments de croûte océanique et de manteau supérieur peuvent être transportés sur un continent : cet ensemble de roches est appelé ophiolite lorsqu’il conserve des éléments caractéristiques de la lithosphère océanique. Les zones de subduction constituent ainsi des environnements complexes associant volcanisme, séismes, déformation et transfert de matériaux.'
+        ],
+        example: {
+          statement: 'Une plaque océanique plonge sous une plaque continentale. Une chaîne volcanique se développe sur le continent, parallèlement à la zone de convergence. Quel mécanisme explique principalement la production du magma ?',
+          calculation: 'La plaque plongeante libère des fluides lors de transformations minéralogiques en profondeur. Ces fluides abaissent la température de fusion des roches du manteau situées au-dessus de la plaque subduite et favorisent leur fusion partielle.',
+          answer: 'La production du magma est principalement favorisée par l’apport de fluides issus de la plaque subduite, qui facilitent la fusion partielle du manteau sus-jacent.'
+        },
+        exercise: {
+          question: 'Pourquoi une zone de subduction peut-elle former simultanément une chaîne volcanique et une chaîne de montagnes déformées ?',
+          answer: 'La subduction favorise la production de magma et le volcanisme, tandis que la convergence provoque une compression de la plaque supérieure, des plis, des failles inverses, des chevauchements et parfois un épaississement crustal.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on le processus par lequel une plaque lithosphérique plonge sous une autre ?',
+            answer: 'La subduction.'
+          },
+          {
+            question: 'Pourquoi la lithosphère océanique ancienne peut-elle s’enfoncer dans le manteau ?',
+            answer: 'Parce qu’en se refroidissant, elle devient globalement plus dense et peut acquérir une flottabilité négative par rapport au manteau environnant.'
+          },
+          {
+            question: 'Quel est le rôle de l’eau libérée par la plaque plongeante dans la formation des magmas ?',
+            answer: 'Elle abaisse la température de fusion des roches du manteau situées au-dessus de la plaque subduite et favorise leur fusion partielle.'
+          },
+          {
+            question: 'Quel type de chaîne montagneuse est associé à la subduction de la plaque Nazca sous la plaque sud-américaine ?',
+            answer: 'La cordillère des Andes, qui comprend une chaîne de montagnes et un arc volcanique continental.'
+          }
+        ],
+        sources: [
+          {
+            title: 'British Geological Survey — How Volcanoes Form',
+            url: 'https://www.bgs.ac.uk/discovering-geology/earth-hazards/volcanoes/how-volcanoes-form-2/'
+          },
+          {
+            title: 'USGS — This Dynamic Earth: Understanding Plate Motions',
+            url: 'https://pubs.usgs.gov/gip/dynamic/understanding.html'
+          },
+          {
+            title: 'Open Textbook BC — Physical Geology: Mountain Building',
+            url: 'https://opentextbc.ca/physicalgeologyh5p/chapter/mountain-building/'
+          },
+          {
+            title: 'USGS — Accretionary Orogens Through Earth History',
+            url: 'https://www.usgs.gov/publications/accretionary-orogens-through-earth-history'
+          }
+        ]
+      }
+    },
+    {
+      id: 'collision-continentale-et-grandes-chaines',
+      title: 'La collision continentale et la naissance des grandes chaînes de montagnes',
+      field: 'Tectonique convergente · Collision continentale · Himalaya · Alpes',
+      summary: 'Analyser la fermeture des océans, la rencontre des continents, les chevauchements et les mécanismes responsables des grandes chaînes de collision.',
+      lesson: {
+        sections: [
+          'Une collision continentale se produit lorsqu’un domaine océanique séparant deux continents se ferme progressivement par subduction, jusqu’à ce que les masses continentales entrent en contact. La lithosphère continentale est généralement moins dense et plus flottante que la lithosphère océanique. Elle résiste donc davantage à un enfoncement important dans le manteau. Lorsque les continents se rencontrent, la convergence se poursuit, mais elle entraîne surtout une déformation intense des terrains, un raccourcissement horizontal et un épaississement de la croûte. Ces processus peuvent donner naissance à de vastes chaînes montagneuses et à des plateaux d’altitude élevée.',
+          'Avant la collision, un océan peut séparer les deux continents. Sa lithosphère océanique est progressivement consommée par subduction. Les sédiments déposés dans cet océan, les fragments de croûte océanique et les roches situées sur les marges continentales sont déformés et incorporés à la future chaîne. Lorsque l’océan disparaît presque entièrement, les continents entrent en contact. La limite géologique qui marque cette jonction est appelée zone de suture. Elle peut contenir des roches océaniques préservées, des ophiolites, des sédiments déformés et des unités tectoniques empilées.',
+          'La collision entre l’Inde et l’Eurasie constitue un exemple majeur de collision continentale. Après la fermeture progressive de l’océan qui séparait ces masses continentales, leur convergence a provoqué la formation de l’Himalaya et contribué au soulèvement du plateau tibétain. La déformation se poursuit aujourd’hui, car la plaque indienne continue de converger vers l’Eurasie. Les structures géologiques observées dans cette région témoignent de l’épaississement crustal, des grands chevauchements et de la déformation de terrains d’origines diverses. La formation de l’Himalaya est donc un processus encore actif et non un événement totalement achevé.',
+          'Les Alpes européennes constituent un autre exemple de chaîne liée à une histoire de convergence et de collision entre domaines continentaux. Leur évolution implique la fermeture de domaines océaniques, la subduction, puis la convergence et l’empilement de terrains associés aux plaques africaine et européenne, avec une histoire tectonique complexe. Les roches alpines enregistrent plusieurs étapes de cette évolution : dépôts sédimentaires marins, déformation, enfouissement, métamorphisme et exhumation. Il serait donc réducteur de présenter les Alpes comme le résultat d’une collision simple et instantanée entre deux blocs continentaux.',
+          'Les chaînes de collision présentent souvent des nappes de charriage. Une nappe est une vaste unité rocheuse déplacée horizontalement sur une distance importante par rapport à son domaine d’origine, généralement le long d’un chevauchement. L’empilement de nappes contribue au raccourcissement et à l’épaississement de la croûte. Les terrains les plus profonds peuvent être portés vers la surface par des mouvements tectoniques et par l’érosion qui retire progressivement les roches sus-jacentes. L’étude des nappes, des zones de suture et des roches métamorphiques permet de reconstituer les différentes étapes de l’histoire d’une chaîne montagneuse.'
+        ],
+        example: {
+          statement: 'Deux continents sont séparés par un océan. La lithosphère océanique est progressivement consommée par subduction, puis les continents entrent en contact. Quel est le principal résultat tectonique de cette collision ?',
+          calculation: 'La fermeture de l’océan est suivie d’une convergence continentale. Les terrains se raccourcissent, se plissent et peuvent être empilés par chevauchements. La croûte s’épaissit et peut former un relief montagneux.',
+          answer: 'La collision continentale provoque principalement un raccourcissement et un épaississement de la croûte, associés à la formation d’une chaîne de montagnes. L’Himalaya est un exemple de cette dynamique.'
+        },
+        exercise: {
+          question: 'Pourquoi la collision entre deux continents entraîne-t-elle généralement un épaississement crustal plutôt qu’une subduction complète de l’un des continents ?',
+          answer: 'La croûte continentale possède une flottabilité relativement élevée par rapport au manteau. Elle résiste donc à un enfoncement profond, ce qui favorise le raccourcissement, le plissement, les chevauchements et l’empilement des terrains.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on la zone géologique marquant la jonction entre deux domaines continentaux entrés en collision ?',
+            answer: 'La zone de suture.'
+          },
+          {
+            question: 'Quel processus précède généralement une collision continentale lorsque les continents sont séparés par un océan ?',
+            answer: 'La fermeture progressive de l’océan par subduction de sa lithosphère océanique.'
+          },
+          {
+            question: 'Quel plateau est associé à la collision entre l’Inde et l’Eurasie ?',
+            answer: 'Le plateau tibétain.'
+          },
+          {
+            question: 'Qu’est-ce qu’une nappe de charriage ?',
+            answer: 'Une vaste unité rocheuse déplacée horizontalement sur une distance importante, généralement au-dessus d’autres terrains le long d’un chevauchement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'USGS — This Dynamic Earth: Understanding Plate Motions',
+            url: 'https://pubs.usgs.gov/gip/dynamic/understanding.html'
+          },
+          {
+            title: 'National Park Service — Collisional Mountain Ranges',
+            url: 'https://www.nps.gov/subjects/geology/plate-tectonics-collisional-mountain-ranges.htm'
+          },
+          {
+            title: 'Open Textbook BC — Physical Geology: Mountain Building',
+            url: 'https://opentextbc.ca/physicalgeologyh5p/chapter/mountain-building/'
+          },
+          {
+            title: 'American Museum of Natural History — Mountain Building',
+            url: 'https://www.amnh.org/exhibitions/permanent/planet-earth/why-are-there-ocean-basins-continents-and-mountains/mountain-building'
+          }
+        ]
+      }
+    },
+    {
+      id: 'plissements-failles-et-deformations',
+      title: 'Les plissements, les failles et les déformations des roches',
+      field: 'Géologie structurale · Mécanique des roches · Tectonique cassante et ductile',
+      summary: 'Étudier les structures produites par les contraintes tectoniques et comprendre comment les roches se plissent, se fracturent et se déplacent pendant la construction des montagnes.',
+      lesson: {
+        sections: [
+          'La construction des montagnes entraîne des déformations à différentes échelles, depuis les minéraux jusqu’aux ensembles de terrains qui constituent une chaîne entière. Les roches sont soumises à des contraintes qui modifient leur forme, leur orientation et parfois leur organisation interne. La déformation dépend de la nature des roches, de leur température, de leur pression, de la durée de la contrainte et de la présence éventuelle de fluides. Une même roche peut présenter un comportement cassant près de la surface et un comportement ductile en profondeur. Il est donc essentiel de tenir compte des conditions physiques pour interpréter les structures géologiques.',
+          'Les plis sont des déformations dans lesquelles les couches rocheuses se courbent sans nécessairement se rompre. Un anticlinal correspond généralement à un pli dont les couches les plus anciennes se trouvent au cœur, lorsque la succession stratigraphique n’a pas été renversée. Un synclinal présente généralement les couches les plus récentes au cœur. Ces structures peuvent être symétriques, asymétriques, déversées ou couchées. Dans les chaînes de montagnes, les plis peuvent atteindre de grandes dimensions et former des ensembles complexes. Leur orientation et leur géométrie permettent aux géologues de reconstituer les directions et les phases de déformation.',
+          'Les failles sont des fractures accompagnées d’un déplacement relatif des blocs rocheux. Une faille normale se développe généralement dans un contexte d’extension : le compartiment supérieur se déplace vers le bas par rapport au compartiment inférieur. Une faille inverse apparaît dans un contexte de compression : le compartiment supérieur se déplace vers le haut. Lorsque le déplacement est important et que la faille inverse possède une faible inclinaison, on parle généralement de chevauchement. Les failles décrochantes correspondent à un déplacement principalement horizontal. Les failles inverses et les chevauchements jouent un rôle majeur dans le raccourcissement et l’épaississement des chaînes de collision.',
+          'Les chevauchements peuvent transporter des terrains sur plusieurs kilomètres, voire davantage, et superposer des unités qui étaient initialement éloignées. Ce phénomène explique la présence de roches anciennes au-dessus de roches plus récentes dans certaines structures tectoniques. Les géologues identifient ces déplacements grâce à l’étude des contacts anormaux, des répétitions de séries stratigraphiques, des marqueurs géologiques et des structures associées. Les chevauchements peuvent également réactiver des failles préexistantes lorsque les conditions de contrainte changent. Ils participent ainsi à la construction progressive des chaînes montagneuses.',
+          'Les roches peuvent également subir une déformation ductile, particulièrement en profondeur lorsque les conditions de température et de pression favorisent leur comportement plastique à l’échelle géologique. Les minéraux peuvent se réorienter, recristalliser et développer des foliations ou des linéations. Une foliation est une organisation planaire de la roche, souvent liée à l’orientation préférentielle des minéraux. Une linéation correspond à une organisation suivant une direction. Ces structures permettent de comprendre les mouvements et les déformations subis par les roches. Dans les zones profondes des chaînes de montagnes, les déformations cassantes et ductiles peuvent se succéder ou coexister selon les conditions locales.'
+        ],
+        example: {
+          statement: 'Dans une chaîne montagneuse, un géologue observe une série de couches sédimentaires plissées et une faille le long de laquelle un compartiment rocheux est remonté par rapport à l’autre. Quel contexte tectonique peut expliquer ces structures ?',
+          calculation: 'Le plissement et le déplacement vers le haut du compartiment supérieur le long d’une faille inverse indiquent une déformation compatible avec une compression tectonique.',
+          answer: 'Ces structures sont compatibles avec un contexte compressif. Les plis et les failles inverses contribuent au raccourcissement horizontal et à l’épaississement de la croûte.'
+        },
+        exercise: {
+          question: 'Quelle est la différence entre une faille normale et une faille inverse ?',
+          answer: 'Dans une faille normale, le compartiment supérieur descend par rapport au compartiment inférieur, généralement sous l’effet d’une extension. Dans une faille inverse, il remonte par rapport au compartiment inférieur, généralement sous l’effet d’une compression.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on la partie centrale d’un anticlinal lorsque la série stratigraphique n’est pas renversée ?',
+            answer: 'Le cœur de l’anticlinal contient généralement les couches les plus anciennes.'
+          },
+          {
+            question: 'Quel type de faille est généralement associé à un contexte tectonique compressif ?',
+            answer: 'La faille inverse.'
+          },
+          {
+            question: 'Quelle est la particularité d’un chevauchement par rapport à une faille inverse classique ?',
+            answer: 'Il s’agit généralement d’une faille inverse à faible pendage, le long de laquelle un ensemble de terrains est déplacé au-dessus d’un autre.'
+          },
+          {
+            question: 'Pourquoi les roches peuvent-elles se plisser en profondeur plutôt que se fracturer ?',
+            answer: 'Parce que les températures et les pressions plus élevées peuvent favoriser leur déformation ductile, selon la composition des roches et la vitesse de déformation.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Park Service — Tectonic Landforms and Mountain Building',
+            url: 'https://www.nps.gov/subjects/geology/tectonic-landforms.htm'
+          },
+          {
+            title: 'British Geological Survey — What Causes Earthquakes?',
+            url: 'https://www.bgs.ac.uk/discovering-geology/earth-hazards/earthquakes/what-causes-earthquakes/'
+          },
+          {
+            title: 'Open Textbook BC — Physical Geology: Mountain Building',
+            url: 'https://opentextbc.ca/physicalgeologyh5p/chapter/mountain-building/'
+          },
+          {
+            title: 'American Museum of Natural History — Mountain Building',
+            url: 'https://www.amnh.org/exhibitions/permanent/planet-earth/why-are-there-ocean-basins-continents-and-mountains/mountain-building'
+          }
+        ]
+      }
+    },
+    {
+      id: 'metamorphisme-et-racines-crustales',
+      title: 'Le métamorphisme, l’épaississement crustal et les racines des montagnes',
+      field: 'Pétrologie métamorphique · Géodynamique profonde · Isostasie',
+      summary: 'Comprendre les transformations minéralogiques liées à l’enfouissement des roches, les conditions de pression et de température et l’organisation profonde des chaînes montagneuses.',
+      lesson: {
+        sections: [
+          'La formation d’une chaîne de montagnes ne se limite pas aux reliefs visibles à la surface. La compression tectonique peut enfouir des roches à plusieurs kilomètres de profondeur, où elles subissent une augmentation de pression et de température. Ces conditions peuvent provoquer des transformations minéralogiques et structurales sans nécessairement entraîner une fusion complète de la roche. Ce processus est appelé métamorphisme. Les roches métamorphiques conservent ainsi des informations sur les conditions physiques auxquelles elles ont été soumises pendant leur enfouissement et leur évolution tectonique.',
+          'Le métamorphisme dépend notamment de la température, de la pression, de la composition initiale de la roche et de la circulation des fluides. Une roche sédimentaire, magmatique ou déjà métamorphique peut être transformée lorsque les conditions changent. Les minéraux initialement présents peuvent devenir instables et être remplacés par de nouveaux assemblages minéralogiques plus adaptés aux nouvelles conditions. Le métamorphisme régional est particulièrement important dans les chaînes de montagnes, car il accompagne souvent l’enfouissement de vastes volumes de roches pendant l’épaississement crustal. Les géologues utilisent les associations minérales et les textures pour estimer les conditions de pression et de température atteintes.',
+          'Dans certaines chaînes, les roches métamorphiques présentent une foliation, c’est-à-dire une organisation planaire de leurs minéraux. Les schistes et les gneiss sont des exemples de roches métamorphiques fréquemment rencontrées dans les régions ayant subi une déformation et un métamorphisme importants. Leur formation dépend toutefois de la composition initiale et des conditions métamorphiques : toutes les roches enfouies ne deviennent pas automatiquement des gneiss. L’analyse pétrographique, qui consiste à étudier les minéraux et les textures des roches, permet de reconstruire une partie de leur histoire.',
+          'L’épaississement crustal associé à une collision continentale entraîne généralement la formation d’une racine crustale. La croûte continentale épaissie s’enfonce davantage dans le manteau, tandis que sa partie supérieure forme les reliefs montagneux. Ce comportement peut être expliqué par le principe de l’isostasie : la lithosphère tend vers un équilibre gravitationnel avec le manteau sous-jacent. La racine crustale participe à la compensation du relief en surface. Il ne s’agit toutefois pas d’un équilibre instantané : le manteau et la lithosphère se réajustent lentement à l’échelle des temps géologiques.',
+          'Les roches profondément enfouies peuvent ensuite être ramenées vers la surface par plusieurs mécanismes. Les chevauchements et les mouvements tectoniques peuvent contribuer à leur exhumation, tandis que l’érosion retire progressivement les terrains qui les recouvrent. Le déchargement provoqué par l’érosion peut également entraîner un réajustement isostatique et un soulèvement de la croûte. Il faut distinguer le soulèvement de la surface terrestre du déplacement des roches par rapport à cette surface : une roche peut être exhumée parce que les terrains qui la recouvrent sont érodés, même si le soulèvement topographique n’est pas équivalent. L’étude des roches métamorphiques permet ainsi de relier les phénomènes profonds à l’évolution des paysages.'
+        ],
+        example: {
+          statement: 'Une roche métamorphique présente des minéraux qui indiquent qu’elle a été soumise à des pressions et températures supérieures à celles de sa formation initiale. Elle affleure aujourd’hui dans une chaîne de montagnes. Quels processus peuvent expliquer son retour vers la surface ?',
+          calculation: 'L’enfouissement peut être suivi d’une déformation tectonique, d’un déplacement le long de chevauchements, d’une érosion des terrains sus-jacents et d’un réajustement isostatique.',
+          answer: 'L’exhumation de la roche peut résulter de la combinaison des mouvements tectoniques, de l’érosion et de l’ajustement isostatique. Ces mécanismes permettent d’exposer en surface des roches formées en profondeur.'
+        },
+        exercise: {
+          question: 'Pourquoi les roches métamorphiques sont-elles particulièrement intéressantes pour reconstituer l’histoire profonde des chaînes de montagnes ?',
+          answer: 'Parce que leurs minéraux et leurs textures enregistrent les conditions de pression, de température, de déformation et parfois de circulation des fluides auxquelles elles ont été soumises.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on la transformation minéralogique et structurale d’une roche à l’état solide sous l’effet de nouvelles conditions physiques et chimiques ?',
+            answer: 'Le métamorphisme.'
+          },
+          {
+            question: 'Quelles sont les deux principales variables physiques qui contrôlent le métamorphisme ?',
+            answer: 'La pression et la température, auxquelles s’ajoutent notamment la composition de la roche et la présence de fluides.'
+          },
+          {
+            question: 'Qu’est-ce qu’une racine crustale ?',
+            answer: 'C’est la partie profonde et épaissie de la croûte qui s’enfonce dans le manteau sous une région montagneuse.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre soulèvement et exhumation ?',
+            answer: 'Le soulèvement correspond à une remontée de la surface terrestre par rapport à un niveau de référence. L’exhumation correspond au rapprochement d’une roche de la surface, notamment par enlèvement des terrains qui la recouvrent.'
+          }
+        ],
+        sources: [
+          {
+            title: 'American Museum of Natural History — Mountain Building',
+            url: 'https://www.amnh.org/exhibitions/permanent/planet-earth/why-are-there-ocean-basins-continents-and-mountains/mountain-building'
+          },
+          {
+            title: 'National Park Service — Collisional Mountain Ranges',
+            url: 'https://www.nps.gov/subjects/geology/plate-tectonics-collisional-mountain-ranges.htm'
+          },
+          {
+            title: 'Open Textbook BC — Physical Geology: Isostasy',
+            url: 'https://opentextbc.ca/physicalgeologyh5p/chapter/isostasy/'
+          },
+          {
+            title: 'Open Textbook BC — Physical Geology: Mountain Building',
+            url: 'https://opentextbc.ca/physicalgeologyh5p/chapter/mountain-building/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'erosion-evolution-et-cycle-des-montagnes',
+      title: 'L’érosion, le soulèvement isostatique et l’évolution des chaînes montagneuses',
+      field: 'Géomorphologie · Érosion · Isostasie · Évolution des reliefs',
+      summary: 'Étudier les interactions entre la tectonique, l’érosion, les glaciers, les cours d’eau et les réajustements isostatiques qui modifient les montagnes au cours du temps.',
+      lesson: {
+        sections: [
+          'Une chaîne de montagnes évolue continuellement après sa mise en place tectonique. Les reliefs sont soumis à l’altération et à l’érosion provoquées par l’eau, le vent, les variations de température, la glace et la gravité. L’altération correspond à la transformation ou à la désagrégation des roches sur place, tandis que l’érosion implique l’enlèvement et le transport des matériaux. Les cours d’eau peuvent creuser des vallées, les glaciers peuvent approfondir et élargir les vallées, et les mouvements de terrain peuvent déplacer de grandes quantités de matériaux sur les versants. Ces processus modifient progressivement la forme des montagnes.',
+          'L’érosion fluviale joue un rôle important dans l’évolution des chaînes montagneuses. Les cours d’eau transportent des particules provenant de l’altération des roches et peuvent inciser les reliefs. Dans les régions montagneuses, les fortes pentes favorisent le transport des sédiments, tandis que les variations de débit influencent la capacité d’érosion des rivières. Les vallées fluviales peuvent ainsi s’approfondir et organiser le drainage d’une chaîne. Les matériaux transportés sont ensuite déposés dans des bassins sédimentaires, où ils peuvent former de nouvelles couches de sédiments.',
+          'Les glaciers modifient également profondément les paysages montagneux. En se déplaçant sous l’effet de la gravité, la glace peut arracher et abraser les roches. Les vallées glaciaires présentent souvent une section transversale en forme de U, contrairement aux vallées fluviales qui possèdent fréquemment une forme en V. Les cirques glaciaires, les arêtes et les pics pyramidaux peuvent également être produits par l’érosion glaciaire. Les traces laissées par les glaciers permettent de reconstituer les anciennes extensions glaciaires et les conditions climatiques passées.',
+          'L’érosion ne fait pas seulement diminuer le relief : elle peut aussi provoquer un réajustement isostatique. Lorsqu’une grande quantité de roches est retirée par l’érosion, le poids exercé sur la lithosphère diminue. La croûte peut alors remonter progressivement sous l’effet de l’ajustement gravitationnel. Ce phénomène est appelé rebond ou soulèvement isostatique. Il ne signifie pas que l’érosion crée directement de nouvelles montagnes. Il traduit une réponse de la lithosphère à la diminution de la charge qui s’exerçait sur elle. Les relations entre érosion, soulèvement et relief sont complexes et dépendent notamment de la structure de la croûte et de la vitesse des processus.',
+          'Le climat et la tectonique interagissent dans l’évolution des montagnes. Les précipitations, les températures et la présence de glaciers influencent les vitesses d’altération et d’érosion. En retour, le relief modifie les circulations atmosphériques, les précipitations et les conditions locales. Une chaîne en cours de surrection peut conserver des reliefs élevés si le soulèvement tectonique compense en partie l’érosion. À l’inverse, une chaîne ancienne qui n’est plus soumise à une forte activité tectonique peut être progressivement abaissée et transformée. Les Appalaches illustrent l’évolution d’une ancienne chaîne de collision fortement érodée, tandis que l’Himalaya et les Andes montrent des régions où la tectonique demeure active.',
+          'La durée de vie d’une chaîne montagneuse ne se résume pas à une succession simple de phases de croissance puis de disparition. Les mouvements tectoniques peuvent se poursuivre, reprendre ou changer de régime, tandis que l’érosion agit continuellement. Les bassins situés au pied des montagnes enregistrent une partie de cette histoire grâce à l’accumulation de sédiments. L’analyse des dépôts, des formes du relief, des roches exhumées et des marqueurs géochronologiques permet de reconstruire l’évolution d’une chaîne. Les montagnes sont donc des systèmes géologiques dynamiques dans lesquels les processus internes et externes interagissent pendant des millions d’années.'
+        ],
+        example: {
+          statement: 'Une chaîne montagneuse subit une érosion importante pendant plusieurs millions d’années. Une partie des matériaux est transportée vers les bassins voisins. Quel effet cette perte de masse peut-elle avoir sur la croûte sous-jacente ?',
+          calculation: 'L’érosion retire une partie de la charge exercée sur la lithosphère. Le système lithosphère-manteau peut alors se réajuster progressivement vers un nouvel équilibre isostatique.',
+          answer: 'La diminution de la charge peut provoquer un soulèvement isostatique de la croûte. Ce réajustement peut contribuer à l’exhumation de roches profondes, sans annuler nécessairement la diminution générale du relief.'
+        },
+        exercise: {
+          question: 'Pourquoi l’érosion et le soulèvement tectonique doivent-ils être étudiés ensemble pour comprendre l’altitude actuelle d’une chaîne montagneuse ?',
+          answer: 'Parce que l’altitude résulte de l’interaction entre les processus qui construisent ou soulèvent les reliefs et ceux qui les abaissent, notamment l’altération, l’érosion fluviale, l’érosion glaciaire et les mouvements de masse.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la différence entre altération et érosion ?',
+            answer: 'L’altération transforme ou désagrège les roches sur place. L’érosion implique leur enlèvement et leur transport.'
+          },
+          {
+            question: 'Quelle forme présente fréquemment une vallée creusée par un glacier ?',
+            answer: 'Une section transversale en forme de U.'
+          },
+          {
+            question: 'Comment appelle-t-on le réajustement vertical de la lithosphère provoqué par la diminution de la charge liée à l’érosion ?',
+            answer: 'Le soulèvement ou rebond isostatique.'
+          },
+          {
+            question: 'Pourquoi les bassins sédimentaires situés au pied des montagnes sont-ils importants pour les géologues ?',
+            answer: 'Ils enregistrent une partie des matériaux érodés et transportés depuis les montagnes et permettent de reconstituer certaines étapes de leur évolution.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Park Service — Geology and Physical Processes of Mountains',
+            url: 'https://www.nps.gov/subjects/mountains/geology.htm'
+          },
+          {
+            title: 'National Park Service — Collisional Mountain Ranges',
+            url: 'https://www.nps.gov/subjects/geology/plate-tectonics-collisional-mountain-ranges.htm'
+          },
+          {
+            title: 'Freie Universität Berlin — Uplift and Erosion',
+            url: 'https://www.geo.fu-berlin.de/en/v/geolearning/mountain_building/weathering/Erosion7/index.html'
+          },
+          {
+            title: 'Open Textbook BC — Physical Geology: Isostasy',
+            url: 'https://opentextbc.ca/physicalgeologyh5p/chapter/isostasy/'
+          },
+          {
+            title: 'British Geological Survey — Relief',
+            url: 'https://www.bgs.ac.uk/discovering-geology/geological-processes/relief/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 ]
 
 
