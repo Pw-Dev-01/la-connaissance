@@ -1323,5 +1323,813 @@ window.courseCatalog = [
   ]
 },
 
+
+{
+  id: 'relations-especes',
+  sortYear: 'false',
+  title: 'Relations entre les espèces : interactions, coexistence et évolution des communautés',
+  note: 'Six chapitres approfondis pour comprendre les relations entre espèces dans les communautés écologiques : effets positifs, négatifs ou neutres, compétition, prédation, parasitisme, mutualisme, commensalisme et réseaux d’interactions. Les effets décrits sont des tendances générales : leur intensité dépend du contexte écologique, des individus et des conditions du milieu.',
+  chapters: [
+    {
+      id: 'fondements-relations-interespecifiques',
+      title: 'Les fondements des relations entre les espèces',
+      field: 'Écologie · Écologie des communautés et interactions interspécifiques',
+      summary: 'Définir une communauté biologique, distinguer les interactions entre espèces et interpréter leurs effets sur la survie, la croissance et la reproduction.',
+      lesson: {
+        sections: [
+          'L’écologie étudie les relations des organismes entre eux et avec leur environnement. Une communauté biologique rassemble les populations de différentes espèces qui vivent dans une même zone et à une même période. Les espèces d’une communauté ne sont donc pas indépendantes : elles peuvent partager des ressources, se nourrir les unes des autres, se protéger ou modifier réciproquement leurs conditions de vie. L’étude de ces relations permet de comprendre pourquoi certaines espèces coexistent, pourquoi d’autres régressent et comment se structure la biodiversité locale.',
+          'Une interaction interspécifique est une relation écologique entre des organismes appartenant à des espèces différentes. On décrit souvent son effet sur chaque partenaire avec les signes +, − et 0. Le signe + indique un effet favorable mesurable sur la survie, la croissance ou la reproduction ; le signe − indique un effet défavorable ; le signe 0 signifie qu’aucun effet net significatif n’est mis en évidence dans le cadre étudié. Ces signes résument les effets moyens ou observés : ils ne signifient pas que chaque individu subit exactement la même conséquence.',
+          'Les principales catégories sont la compétition (−/−), la prédation (+/−), l’herbivorie (+/−), le parasitisme (+/−), le mutualisme (+/+), le commensalisme (+/0) et l’amensalisme (−/0). La prédation et l’herbivorie sont des interactions de consommation, tandis que le parasitisme implique généralement une association durable entre un parasite et son hôte. Le terme symbiose est employé au sens large pour désigner une association intime et durable entre espèces dans de nombreux manuels, mais certains domaines l’emploient dans un sens plus restreint : il faut donc préciser la définition utilisée.',
+          'Une interaction peut être directe, lorsque les organismes agissent l’un sur l’autre, ou indirecte, lorsqu’une troisième espèce ou une ressource intermédiaire transmet l’effet. Par exemple, deux consommateurs peuvent être en compétition parce qu’ils exploitent la même ressource limitée, même s’ils ne se rencontrent jamais. Les interactions peuvent aussi changer avec le contexte : une espèce peut être bénéfique dans une situation et devenir défavorable dans une autre, selon la disponibilité des ressources ou les conditions du milieu.',
+          'Pour étudier une relation, les écologues mesurent notamment l’abondance des populations, le taux de survie, le succès reproducteur, la croissance et l’utilisation des ressources. Une simple observation de proximité ne suffit pas à prouver une interaction bénéfique ou nuisible. Il faut comparer les organismes exposés à la relation avec des situations de référence, tout en tenant compte des autres facteurs possibles, comme la température, l’humidité, la nourriture et la présence de prédateurs.'
+        ],
+        example: {
+          statement: 'Dans une communauté, une espèce A profite de la présence d’une espèce B, tandis que les mesures ne révèlent pas d’effet net détectable sur B. Comment classer provisoirement cette interaction ?',
+          calculation: 'On traduit les effets observés par des signes : espèce A = + ; espèce B = 0. La combinaison est donc +/0.',
+          answer: 'Il s’agit d’un commensalisme au sens de la classification écologique classique. Cette conclusion reste liée aux mesures et aux conditions étudiées : l’absence d’effet détecté ne prouve pas toujours une absence absolue d’effet.'
+        },
+        exercise: {
+          question: 'Pourquoi les signes +, − et 0 ne suffisent-ils pas, à eux seuls, à expliquer complètement une relation écologique ?',
+          answer: 'Ils résument l’effet net sur chaque partenaire, mais ne décrivent ni le mécanisme, ni la durée, ni l’intensité de l’interaction, ni ses variations selon l’environnement.'
+        },
+        exercises: [
+          {
+            question: 'Que désigne une communauté biologique ?',
+            answer: 'L’ensemble des populations de différentes espèces vivant dans une même zone et à une même période.'
+          },
+          {
+            question: 'Que signifie une interaction notée −/− ?',
+            answer: 'Les deux partenaires subissent un effet défavorable ; c’est la notation classique de la compétition.'
+          },
+          {
+            question: 'Une proximité entre deux espèces prouve-t-elle un mutualisme ?',
+            answer: 'Non. Il faut montrer que chacune tire un bénéfice de l’interaction, et non simplement constater qu’elles coexistent.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, The Scope of Ecology', url: 'https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology' },
+          { title: 'OpenStax — Biology 2e, Community Ecology', url: 'https://openstax.org/books/biology-2e/pages/45-6-community-ecology' },
+          { title: 'Michigan State University — Species Interactions', url: 'https://openbooks.lib.msu.edu/isb202/chapter/species-interactions/' }
+        ]
+      }
+    },
+    {
+      id: 'competition-niches-ecologiques',
+      title: 'La compétition interspécifique et les niches écologiques',
+      field: 'Écologie · Compétition, ressources limitantes et coexistence',
+      summary: 'Comprendre comment le partage de ressources limitées influence la croissance des populations, la répartition des espèces et leur coexistence.',
+      lesson: {
+        sections: [
+          'La compétition interspécifique apparaît lorsque des individus d’espèces différentes utilisent une même ressource qui limite leur croissance, leur survie ou leur reproduction. Cette ressource peut être alimentaire, comme des graines ou du plancton, mais aussi un espace, un abri, un site de nidification, de la lumière ou de l’eau. La compétition ne suppose pas nécessairement un affrontement : elle peut être indirecte, lorsque l’exploitation d’une ressource par une espèce en laisse moins à disposition d’une autre.',
+          'On distingue classiquement la compétition par exploitation et la compétition par interférence. Dans la compétition par exploitation, chaque espèce prélève une ressource commune et réduit ainsi sa disponibilité pour l’autre. Dans la compétition par interférence, les organismes limitent directement l’accès de concurrents à une ressource, par exemple en défendant un territoire ou en occupant un site. Ces mécanismes peuvent se combiner dans un même milieu.',
+          'La niche écologique ne se réduit pas à l’endroit où vit une espèce. Elle correspond à l’ensemble des conditions, ressources et interactions nécessaires à son maintien, ainsi qu’à la manière dont elle les utilise. La niche fondamentale décrit les conditions dans lesquelles une espèce pourrait théoriquement se maintenir en l’absence de certaines contraintes biotiques. La niche réalisée correspond à la partie effectivement occupée dans la nature, compte tenu notamment des compétiteurs, prédateurs, parasites et partenaires. Ces notions sont des modèles écologiques qui aident à analyser la distribution des espèces.',
+          'Le principe d’exclusion compétitive, associé aux travaux expérimentaux de Georgy Gause, indique que deux espèces ayant des besoins trop similaires et exploitant durablement la même ressource limitante ne peuvent généralement pas coexister indéfiniment dans un environnement stable si aucune différenciation ne réduit la compétition. Ce principe n’affirme pas que toute compétition conduit automatiquement à la disparition d’une espèce. La coexistence est possible lorsque les espèces utilisent des ressources différentes, exploitent la même ressource à des moments ou dans des lieux différents, ou sont soumises à des conditions environnementales variables.',
+          'La différenciation des niches, parfois appelée partage des ressources, peut réduire le chevauchement écologique entre espèces. Deux oiseaux insectivores d’un même arbre peuvent, par exemple, rechercher leurs proies dans des zones différentes ou à des hauteurs différentes. La compétition peut ainsi contribuer à modifier les comportements, les habitats utilisés et, sur de nombreuses générations, les caractères soumis à la sélection naturelle. Pour établir qu’elle explique une répartition observée, il faut toutefois écarter d’autres facteurs, comme le climat, la disponibilité des habitats ou la prédation.'
+        ],
+        example: {
+          statement: 'Deux espèces d’oiseaux consomment les mêmes insectes dans une forêt. L’une recherche surtout ses proies dans les branches hautes et l’autre dans les branches basses. Quel mécanisme peut faciliter leur coexistence ?',
+          calculation: 'On compare les zones de recherche alimentaire : les deux espèces utilisent une ressource de même nature, mais dans des microhabitats différents. Le chevauchement de leurs niches alimentaires et spatiales peut donc diminuer.',
+          answer: 'Le partage des ressources, qui correspond à une différenciation de niche, peut réduire la compétition. Il ne garantit pas à lui seul la coexistence : d’autres facteurs écologiques interviennent également.'
+        },
+        exercise: {
+          question: 'Quelle différence existe-t-il entre compétition par exploitation et compétition par interférence ?',
+          answer: 'Dans la compétition par exploitation, une espèce réduit indirectement la ressource disponible en la consommant. Dans la compétition par interférence, elle limite directement l’accès du concurrent à cette ressource.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi une ressource doit-elle être limitante pour provoquer une compétition écologique ?',
+            answer: 'Parce que si elle est suffisamment disponible pour tous, son utilisation par une espèce ne réduit pas nécessairement les possibilités de l’autre.'
+          },
+          {
+            question: 'Que décrit la niche réalisée ?',
+            answer: 'Les conditions et ressources effectivement utilisées par une espèce dans la nature, en tenant compte des contraintes écologiques, notamment des interactions biotiques.'
+          },
+          {
+            question: 'Le principe d’exclusion compétitive signifie-t-il que deux espèces proches ne peuvent jamais coexister ?',
+            answer: 'Non. Elles peuvent coexister si leurs niches diffèrent suffisamment ou si les conditions écologiques empêchent l’exclusion durable.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Concepts of Biology, Community Ecology', url: 'https://openstax.org/books/concepts-biology/pages/19-4-community-ecology' },
+          { title: 'Oxford University Press — Interactions between Species: Mutualisms and Competition', url: 'https://academic.oup.com/book/44483/chapter-abstract/376657542' },
+          { title: 'OpenStax — Biology 2e, Community Ecology', url: 'https://openstax.org/books/biology-2e/pages/45-6-community-ecology' }
+        ]
+      }
+    },
+    {
+      id: 'predation-herbivorie-defenses',
+      title: 'La prédation, l’herbivorie et les stratégies de défense',
+      field: 'Écologie · Relations trophiques et interactions de consommation',
+      summary: 'Étudier les relations entre prédateurs et proies, la consommation des végétaux et les réponses défensives des organismes.',
+      lesson: {
+        sections: [
+          'La prédation est une interaction dans laquelle un organisme, le prédateur, capture et consomme un autre organisme, la proie. Elle transfère de la matière et de l’énergie entre niveaux trophiques et peut influencer l’abondance, la distribution et le comportement des populations. La prédation ne se limite pas aux grands animaux : elle concerne aussi des organismes microscopiques, comme certains protistes qui consomment des bactéries.',
+          'L’herbivorie est une forme de consommation dans laquelle un animal prélève des tissus ou des parties d’un végétal ou d’une algue. Contrairement à la prédation classique, l’organisme consommé n’est pas nécessairement tué : une plante peut survivre à la perte de feuilles ou de parties de ses tissus et produire de nouvelles pousses. L’intensité des dommages dépend de la quantité consommée, de la partie touchée, de l’état de la plante et de sa capacité de récupération.',
+          'Les relations entre prédateurs et proies peuvent influencer leurs effectifs réciproques. Lorsque les proies deviennent plus abondantes, les prédateurs peuvent disposer de davantage de nourriture et leur population peut augmenter avec un certain décalage. Une hausse de la prédation peut ensuite contribuer à faire diminuer les proies, puis la raréfaction de celles-ci peut entraîner une baisse des prédateurs. Ces cycles ne sont cependant ni automatiques ni toujours réguliers : le climat, les maladies, les refuges, les autres aliments et les activités humaines peuvent modifier leur dynamique.',
+          'Les proies possèdent différentes défenses. Certaines sont morphologiques, comme les épines ou les coquilles ; d’autres sont chimiques, comme des substances dissuasives. Le camouflage réduit parfois la probabilité d’être détecté, tandis que les colorations aposématiques signalent à certains prédateurs une toxicité ou une défense. Le mimétisme peut également réduire le risque d’attaque lorsqu’une espèce ressemble à une autre espèce défendue. L’efficacité de ces stratégies dépend du prédateur, du contexte et de l’expérience de celui-ci.',
+          'Les prédateurs présentent eux aussi des adaptations : organes sensoriels performants, vitesse, discrétion, coopération ou structures permettant de capturer les proies. Les interactions évoluent souvent comme un jeu de réponses réciproques : une amélioration des défenses chez les proies peut favoriser des capacités de détection ou de capture chez les prédateurs. Ces changements ne sont pas nécessairement synchrones et ne résultent pas d’une intention des organismes ; ils peuvent être favorisés par la sélection naturelle au fil des générations.'
+        ],
+        example: {
+          statement: 'Dans une population de proies, l’effectif augmente pendant plusieurs saisons. La nourriture devient alors plus accessible aux prédateurs, dont l’effectif augmente ensuite. Quelle relation explique ce lien ?',
+          calculation: 'La variation des proies modifie la quantité de nourriture disponible pour les prédateurs. L’effet sur la population de prédateurs peut apparaître avec un décalage temporel.',
+          answer: 'Il s’agit d’une dynamique prédateur-proie. L’augmentation des prédateurs peut ensuite contribuer à réduire les proies, mais les autres facteurs du milieu doivent aussi être pris en compte.'
+        },
+        exercise: {
+          question: 'Pourquoi une plante consommée par un herbivore n’est-elle pas nécessairement tuée ?',
+          answer: 'L’herbivore peut ne consommer qu’une partie de la plante, qui peut survivre et parfois renouveler ses tissus selon l’organe touché et ses capacités de récupération.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la différence principale entre prédation et herbivorie ?',
+            answer: 'La prédation implique généralement la capture et la consommation d’une proie animale ou d’un autre organisme, tandis que l’herbivorie correspond à la consommation de tissus végétaux ou d’algues sans tuer nécessairement l’organisme.'
+          },
+          {
+            question: 'À quoi sert une coloration aposématique ?',
+            answer: 'Elle constitue un signal visuel pouvant avertir certains prédateurs d’une défense, par exemple chimique ou liée à un mauvais goût.'
+          },
+          {
+            question: 'Les effectifs des prédateurs et des proies suivent-ils toujours des cycles réguliers ?',
+            answer: 'Non. Le climat, les maladies, les ressources alternatives, les refuges et les perturbations peuvent modifier ou masquer ces cycles.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Community Ecology', url: 'https://openstax.org/books/biology-2e/pages/45-6-community-ecology' },
+          { title: 'Khan Academy — Interactions in Communities', url: 'https://www.khanacademy.org/science/ap-biology/ecology-ap/community-ecology/a/interactions-in-communities' },
+          { title: 'OpenStax — Biology for AP Courses, Community Ecology', url: 'https://openstax.org/books/biology-ap-courses/pages/36-6-community-ecology' }
+        ]
+      }
+    },
+    {
+      id: 'parasitisme-parasitoidisme',
+      title: 'Le parasitisme et le parasitoïdisme',
+      field: 'Écologie · Parasitologie et relations hôte-parasite',
+      summary: 'Comprendre comment les parasites exploitent leurs hôtes, leurs cycles biologiques et les effets écologiques de ces relations.',
+      lesson: {
+        sections: [
+          'Le parasitisme est une interaction dans laquelle un organisme, le parasite, tire des ressources d’un autre organisme, l’hôte, en lui causant un effet défavorable. Le parasite peut vivre à la surface de son hôte : on parle alors d’ectoparasite ; ou à l’intérieur : il s’agit d’un endoparasite. Les parasites peuvent être microscopiques ou visibles, et leurs modes de vie sont très divers. Le parasitisme ne conduit pas systématiquement à la mort de l’hôte : de nombreux parasites dépendent de sa survie pendant une partie importante de leur cycle.',
+          'Un parasite utilise son hôte comme source de nourriture, milieu de développement ou lieu de reproduction. Cette relation peut réduire la croissance, la condition physique ou le succès reproducteur de l’hôte. Les conséquences varient selon l’espèce, la charge parasitaire, l’âge et l’état de l’hôte, ainsi que les conditions environnementales. Un hôte peut aussi développer des réponses immunitaires, comportementales ou physiologiques qui limitent l’installation et la multiplication du parasite.',
+          'Les cycles de vie parasitaires sont parfois simples, avec un seul hôte nécessaire à la réalisation du cycle, ou complexes, avec plusieurs hôtes successifs. Un hôte définitif héberge le stade adulte ou la reproduction sexuée du parasite, tandis qu’un hôte intermédiaire héberge généralement un stade larvaire ou une phase de développement. Les définitions précises dépendent du groupe parasitaire étudié. La transmission peut se faire par contact, ingestion, vecteur ou voie environnementale, selon le parasite.',
+          'Le parasitoïdisme est une stratégie particulière, fréquente chez certains insectes, dans laquelle le développement d’un jeune parasitoïde se fait aux dépens d’un hôte et conduit généralement à la mort de celui-ci. Cela le distingue du parasitisme classique, où l’hôte survit souvent pendant une partie ou la totalité de l’association. Il faut également distinguer les parasitoïdes des prédateurs : un parasitoïde individuel se développe généralement sur ou dans un hôte individuel, tandis qu’un prédateur consomme souvent plusieurs proies au cours de sa vie.',
+          'Les parasites jouent un rôle écologique important. Ils peuvent modifier les effectifs des populations hôtes, influencer les relations entre espèces et participer aux réseaux trophiques. Ils peuvent également affecter la compétition : une espèce fortement parasitée peut perdre un avantage face à une autre. Toutefois, l’effet d’un parasite sur une communauté dépend de sa spécificité, de sa transmission, de la sensibilité des hôtes et des autres interactions présentes. Il ne faut donc pas considérer tous les parasites comme des régulateurs identiques des populations.'
+        ],
+        example: {
+          statement: 'Un organisme vit dans l’intestin d’un hôte, prélève des nutriments et peut réduire l’état de santé de celui-ci sans le tuer immédiatement. Comment qualifier cette relation ?',
+          calculation: 'Le parasite obtient un bénéfice (+) et l’hôte subit un effet défavorable (−). La relation correspond à une interaction +/− durable.',
+          answer: 'C’est un parasitisme. Le maintien temporaire de l’hôte est fréquent dans ce type de relation, mais certains parasites peuvent aussi provoquer sa mort.'
+        },
+        exercise: {
+          question: 'Quelle différence essentielle sépare un parasite classique d’un parasitoïde ?',
+          answer: 'Un parasitoïde se développe aux dépens d’un hôte et entraîne généralement sa mort au terme du développement, alors qu’un parasite classique ne tue généralement pas son hôte de manière systématique ou immédiate.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la différence entre un ectoparasite et un endoparasite ?',
+            answer: 'Un ectoparasite vit à la surface de son hôte ; un endoparasite vit à l’intérieur de celui-ci.'
+          },
+          {
+            question: 'Qu’est-ce qu’un hôte intermédiaire ?',
+            answer: 'Un organisme qui héberge une phase de développement du parasite, souvent larvaire, sans être nécessairement le lieu de sa reproduction sexuée.'
+          },
+          {
+            question: 'Pourquoi les effets du parasitisme varient-ils selon les situations ?',
+            answer: 'Ils dépendent notamment du parasite, de la quantité de parasites, de l’état de l’hôte, de son âge et des conditions du milieu.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Community Ecology', url: 'https://openstax.org/books/biology-2e/pages/45-6-community-ecology' },
+          { title: 'Cambridge University Press — Parasites in Ecological Communities', url: 'https://assets.cambridge.org/97805218/89704/excerpt/9780521889704_excerpt.pdf' },
+          { title: 'Michigan State University — Species Interactions', url: 'https://openbooks.lib.msu.edu/isb202/chapter/species-interactions/' }
+        ]
+      }
+    },
+    {
+      id: 'mutualisme-cooperation-especes',
+      title: 'Le mutualisme et les associations bénéfiques',
+      field: 'Écologie · Mutualisme, symbiose et services écologiques',
+      summary: 'Explorer les relations dans lesquelles les deux partenaires bénéficient de l’interaction, leurs formes et leur importance écologique.',
+      lesson: {
+        sections: [
+          'Le mutualisme est une interaction interspécifique dans laquelle les deux partenaires tirent un bénéfice de leur association. Les bénéfices peuvent concerner l’alimentation, la protection, le transport, la reproduction ou l’accès à des ressources. Le mutualisme est noté +/+, mais cette notation ne signifie pas que les bénéfices sont égaux ou constants. Ils peuvent varier selon les individus, les saisons, la disponibilité des ressources et les conditions du milieu.',
+          'Certaines relations mutualistes sont étroites et durables, tandis que d’autres sont plus facultatives ou ponctuelles. Dans une relation obligatoire, au moins un partenaire dépend fortement de l’association pour accomplir une fonction essentielle de son cycle de vie. Dans un mutualisme facultatif, les partenaires peuvent généralement vivre sans cette association, même si elle leur procure un avantage. Ces catégories décrivent un continuum plutôt qu’une séparation absolue dans tous les systèmes écologiques.',
+          'La pollinisation constitue un exemple important de mutualisme : un animal visite une fleur pour obtenir une ressource, souvent du nectar ou du pollen, et transporte des grains de pollen qui peuvent permettre la fécondation d’autres fleurs compatibles. Les plantes bénéficient du transfert de pollen et les pollinisateurs obtiennent une ressource alimentaire. Toutes les visites florales ne sont toutefois pas mutualistes : certains visiteurs peuvent consommer une ressource sans assurer un transfert efficace de pollen.',
+          'Les mycorhizes sont des associations entre des champignons et les racines de nombreuses plantes. Le champignon reçoit des composés carbonés produits par la plante grâce à la photosynthèse ; en retour, il peut améliorer l’acquisition de certains éléments minéraux et de l’eau. L’importance de l’échange varie selon les espèces partenaires et les conditions du sol. Les associations entre termites et micro-organismes digestifs constituent un autre exemple : les micro-organismes contribuent à la dégradation de la cellulose et trouvent dans l’intestin un habitat et des ressources.',
+          'Les mutualismes peuvent influencer la biodiversité et le fonctionnement des écosystèmes. La disparition d’un partenaire peut réduire le succès d’un autre, modifier la reproduction des plantes ou perturber certains flux de matière. Ces relations peuvent aussi évoluer : les partenaires peuvent développer des traits qui améliorent l’échange, mais les intérêts des deux espèces ne sont pas nécessairement parfaitement identiques. Les conflits d’intérêts et les comportements opportunistes peuvent limiter les bénéfices réciproques.'
+        ],
+        example: {
+          statement: 'Une abeille récolte du nectar sur une fleur et transporte du pollen vers une autre fleur de la même espèce végétale. Quels bénéfices les deux partenaires peuvent-ils obtenir ?',
+          calculation: 'L’abeille obtient une ressource alimentaire (+). La plante peut bénéficier du transfert de pollen et augmenter ses possibilités de reproduction (+). La relation est donc susceptible d’être +/+. ',
+          answer: 'Il s’agit d’un mutualisme de pollinisation lorsque le transport de pollen contribue effectivement à la reproduction de la plante. Une simple visite sans pollinisation efficace ne suffit pas à établir ce bénéfice.'
+        },
+        exercise: {
+          question: 'Pourquoi ne peut-on pas affirmer que toute visite d’un insecte sur une fleur est nécessairement mutualiste ?',
+          answer: 'Parce que l’insecte peut prélever une ressource sans transporter de pollen utile. Il faut vérifier que l’insecte bénéficie de la visite et que la plante reçoit effectivement un service de pollinisation.'
+        },
+        exercises: [
+          {
+            question: 'Quelle notation représente le mutualisme ?',
+            answer: '+/+ : les deux partenaires bénéficient de l’interaction.'
+          },
+          {
+            question: 'Que reçoit généralement le champignon dans une association mycorhizienne ?',
+            answer: 'Des composés carbonés issus de la photosynthèse de la plante.'
+          },
+          {
+            question: 'Un mutualisme est-il toujours obligatoire pour les deux espèces ?',
+            answer: 'Non. Certaines associations sont facultatives ; d’autres sont très étroites et peuvent être indispensables à au moins un partenaire.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Community Ecology', url: 'https://openstax.org/books/biology-2e/pages/45-6-community-ecology' },
+          { title: 'OpenStax — The Scope of Ecology', url: 'https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology' },
+          { title: 'Oxford University Press — Interactions between Species: Mutualisms and Competition', url: 'https://academic.oup.com/book/44483/chapter-abstract/376657542' }
+        ]
+      }
+    },
+    {
+      id: 'commensalisme-amensalisme-reseaux-coevolution',
+      title: 'Le commensalisme, l’amensalisme et les réseaux de coévolution',
+      field: 'Écologie · Interactions neutres, effets indirects et réseaux écologiques',
+      summary: 'Distinguer les interactions +/0 et −/0, comprendre les effets indirects et découvrir comment les relations entre espèces peuvent influencer leur évolution.',
+      lesson: {
+        sections: [
+          'Le commensalisme est une interaction dans laquelle une espèce bénéficie de la relation tandis que l’autre ne subit pas d’effet net détectable. Il est noté +/0. Un exemple classique est celui d’oiseaux qui installent leur nid dans un arbre sans effet mesurable important sur celui-ci : l’oiseau bénéficie d’un abri, tandis que l’arbre n’est pas sensiblement affecté dans les conditions considérées. En pratique, démontrer une absence totale d’effet est difficile ; le terme décrit donc souvent l’absence d’effet détectable avec les méthodes utilisées.',
+          'L’amensalisme est une interaction notée −/0 : une espèce est défavorisée, tandis que l’autre ne présente pas de bénéfice ou de dommage net détectable. Certaines substances libérées dans l’environnement peuvent inhiber la croissance d’autres organismes. Ce type d’effet est parfois désigné par le terme allélopathie lorsqu’il concerne des substances produites par des plantes ou d’autres organismes qui influencent la germination ou la croissance de voisins. Il faut cependant démontrer l’effet dans les conditions naturelles, car une inhibition observée en laboratoire ne se traduit pas toujours de la même manière dans un écosystème.',
+          'Les interactions écologiques ne fonctionnent pas uniquement par paires isolées. Dans un réseau d’interactions, une espèce peut être liée à plusieurs partenaires par la prédation, la compétition, le parasitisme ou le mutualisme. Une modification de l’abondance d’une espèce peut alors avoir des conséquences indirectes sur d’autres espèces. Par exemple, la diminution d’un prédateur peut modifier l’abondance d’un herbivore, qui peut à son tour modifier la végétation. Ce type d’enchaînement montre qu’un effet écologique peut se transmettre à travers plusieurs relations.',
+          'La coévolution désigne des changements évolutifs réciproques entre espèces qui exercent l’une sur l’autre des pressions de sélection. Une relation entre plante et herbivore peut, par exemple, favoriser des défenses chez la plante et des adaptations alimentaires chez l’herbivore. Des interactions entre parasites et hôtes peuvent également conduire à des changements réciproques des mécanismes d’infection et de défense. Il ne suffit toutefois pas que deux espèces évoluent dans le même milieu pour parler de coévolution : il faut des éléments montrant que chacune exerce une pression de sélection sur l’autre.',
+          'L’étude des réseaux écologiques permet de mieux comprendre la stabilité et les transformations des communautés. La disparition d’une espèce peut entraîner la perte de certaines interactions, mais les conséquences dépendent de la structure du réseau et de l’existence éventuelle de partenaires alternatifs. Les espèces dites clés peuvent avoir un effet disproportionné sur la communauté par rapport à leur abondance, mais cette importance doit être établie dans chaque écosystème. Les réseaux rappellent ainsi que la biodiversité ne se résume pas au nombre d’espèces : elle comprend également les relations qui les relient.'
+        ],
+        example: {
+          statement: 'Une plante libère dans le sol une substance qui réduit la germination d’une autre espèce végétale. Aucune conséquence nette n’est mesurée sur la plante qui libère la substance. Quelle interaction cette situation peut-elle illustrer ?',
+          calculation: 'L’espèce qui reçoit la substance est défavorisée (−). L’espèce qui la libère n’a pas d’effet net détecté (0). La combinaison est −/0.',
+          answer: 'Cette situation peut illustrer un amensalisme, et plus précisément un effet allélopathique si la substance végétale est bien responsable de l’inhibition. Il faut vérifier que le phénomène se produit aussi dans les conditions naturelles.'
+        },
+        exercise: {
+          question: 'Quelle condition doit être vérifiée pour conclure à une coévolution entre deux espèces ?',
+          answer: 'Il faut montrer que les changements évolutifs d’une espèce résultent en partie de pressions de sélection exercées par l’autre, et réciproquement.'
+        },
+        exercises: [
+          {
+            question: 'Quelle notation correspond au commensalisme ?',
+            answer: '+/0 : une espèce bénéficie de l’interaction et aucun effet net n’est détecté chez l’autre.'
+          },
+          {
+            question: 'Pourquoi les effets indirects sont-ils importants en écologie ?',
+            answer: 'Parce qu’une espèce peut influencer une autre par l’intermédiaire d’une troisième espèce ou d’une ressource, ce qui modifie l’ensemble du réseau écologique.'
+          },
+          {
+            question: 'La coévolution signifie-t-elle simplement que deux espèces changent au cours du temps ?',
+            answer: 'Non. Elle implique des pressions de sélection réciproques entre les espèces concernées.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Concepts of Biology, Community Ecology', url: 'https://openstax.org/books/concepts-biology/pages/19-4-community-ecology' },
+          { title: 'Michigan State University — Species Interactions', url: 'https://openbooks.lib.msu.edu/isb202/chapter/species-interactions/' },
+          { title: 'Cambridge University Press — Parasites in Ecological Communities', url: 'https://assets.cambridge.org/97805218/89704/excerpt/9780521889704_excerpt.pdf' },
+          { title: 'Oxford University Press — Interactions between Species: Mutualisms and Competition', url: 'https://academic.oup.com/book/44483/chapter-abstract/376657542' }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  id: 'biologie-photosynthese',
+  sortYear: 'false',
+  title: 'La photosynthèse : conversion de l’énergie lumineuse en énergie chimique',
+  note: 'Six chapitres approfondis consacrés aux bases de la photosynthèse, aux pigments et aux réactions photochimiques, au cycle de Calvin-Benson, aux facteurs environnementaux, aux adaptations C3/C4/CAM et au rôle écologique et planétaire de ce processus. La description porte principalement sur la photosynthèse oxygénique des plantes, tout en signalant que des bactéries réalisent aussi des formes de photosynthèse différentes.',
+  chapters: [
+    {
+      id: 'fondements-structures-photosynthese',
+      title: 'Les fondements de la photosynthèse et les structures impliquées',
+      field: 'Biologie végétale · Physiologie végétale et organisation du chloroplaste',
+      summary: 'Définir la photosynthèse, identifier les organismes qui la réalisent et localiser les structures cellulaires impliquées dans la conversion de l’énergie lumineuse.',
+      lesson: {
+        sections: [
+          'La photosynthèse est un ensemble de réactions biochimiques par lesquelles des organismes photoautotrophes captent une partie de l’énergie lumineuse et l’utilisent pour fabriquer de la matière organique à partir de matière minérale. Chez les plantes, les algues et les cyanobactéries réalisant une photosynthèse oxygénique, l’eau fournit les électrons nécessaires aux réactions photochimiques et du dioxygène est libéré. Le carbone incorporé dans les molécules organiques provient principalement du dioxyde de carbone. L’énergie lumineuse n’est donc pas transformée directement en glucose en une seule réaction : elle est convertie en énergie chimique intermédiaire, puis utilisée dans des voies de fixation du carbone.',
+          'L’équation-bilan simplifiée souvent utilisée pour représenter la photosynthèse oxygénique est : 6 CO2 + 6 H2O + énergie lumineuse → C6H12O6 + 6 O2. Cette écriture résume un bilan global et ne décrit pas les étapes réelles ni tous les intermédiaires. Le premier produit carboné exportable du cycle de Calvin est le glycéraldéhyde-3-phosphate (G3P), qui peut servir à fabriquer différents glucides et d’autres molécules organiques. Le glucose indiqué dans l’équation est une représentation simplifiée du bilan de matière, et non le produit direct d’une réaction unique.',
+          'Chez les plantes, la photosynthèse se déroule principalement dans les cellules chlorophylliennes des feuilles, notamment dans le mésophylle. Ces cellules contiennent des chloroplastes, organites entourés d’une enveloppe constituée de deux membranes. À l’intérieur, le stroma est un compartiment aqueux contenant notamment les enzymes du cycle de Calvin-Benson. Il contient aussi un système membranaire formé de thylakoïdes, souvent empilés en grana et reliés par des lamelles. Les réactions photochimiques se déroulent dans les membranes des thylakoïdes, tandis que la fixation du carbone par le cycle de Calvin a lieu dans le stroma.',
+          'Les stomates sont des ouvertures microscopiques de l’épiderme des feuilles, bordées par deux cellules de garde. Leur ouverture permet l’entrée du CO2 nécessaire à la fixation du carbone et la sortie de l’O2 produit par les réactions photochimiques. Mais cette ouverture entraîne aussi une perte d’eau sous forme de vapeur, appelée transpiration. La plante doit donc réguler ses échanges gazeux en fonction de l’éclairement, de l’état hydrique, de la concentration en CO2 et des conditions atmosphériques. La photosynthèse est ainsi liée à la physiologie hydrique de la plante.',
+          'La photosynthèse oxygénique n’est pas propre aux plantes terrestres. Les algues et les cyanobactéries utilisent également l’eau comme donneur d’électrons et libèrent de l’oxygène. D’autres bactéries réalisent une photosynthèse anoxygénique : elles utilisent d’autres donneurs d’électrons et ne produisent pas nécessairement de dioxygène. Cette distinction est essentielle pour ne pas généraliser le fonctionnement des chloroplastes à tous les organismes photosynthétiques. Les chloroplastes des eucaryotes photosynthétiques ont une origine évolutive liée à l’endosymbiose d’une cyanobactérie ancestrale.'
+        ],
+        example: {
+          statement: 'Dans une cellule de feuille, on observe des chloroplastes contenant des thylakoïdes et un stroma. Où se déroulent les réactions photochimiques et où se déroule le cycle de Calvin-Benson ?',
+          calculation: 'On associe chaque étape à son compartiment : les photosystèmes et la chaîne de transport d’électrons sont insérés dans la membrane des thylakoïdes ; les enzymes de fixation du carbone, dont la Rubisco, se trouvent dans le stroma.',
+          answer: 'Les réactions photochimiques ont lieu dans la membrane des thylakoïdes. Le cycle de Calvin-Benson se déroule dans le stroma du chloroplaste.'
+        },
+        exercise: {
+          question: 'Pourquoi l’ouverture des stomates favorise-t-elle la photosynthèse tout en pouvant augmenter les pertes en eau ?',
+          answer: 'Les stomates permettent au CO2 atmosphérique de diffuser vers les cellules photosynthétiques, mais leur ouverture facilite aussi la diffusion de vapeur d’eau vers l’extérieur. La plante doit donc équilibrer l’approvisionnement en CO2 et la limitation de la transpiration.'
+        },
+        exercises: [
+          {
+            question: 'Quel compartiment du chloroplaste contient les enzymes du cycle de Calvin-Benson ?',
+            answer: 'Le stroma.'
+          },
+          {
+            question: 'Dans quelle structure membranaire se trouvent les photosystèmes des plantes ?',
+            answer: 'Dans la membrane des thylakoïdes.'
+          },
+          {
+            question: 'Quelle molécule fournit les électrons dans la photosynthèse oxygénique ?',
+            answer: 'L’eau, dont l’oxydation libère aussi des protons et du dioxygène.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 8.1 Overview of Photosynthesis', url: 'https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis' },
+          { title: 'OpenStax — Biology 2e, 8.2 The Light-Dependent Reactions of Photosynthesis', url: 'https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis' },
+          { title: 'OpenStax — Biology 2e, 8.3 Using Light Energy to Make Organic Molecules', url: 'https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules' }
+        ]
+      }
+    },
+    {
+      id: 'pigments-photosystem-reactions-lumineuses',
+      title: 'Les pigments, les photosystèmes et les réactions photochimiques',
+      field: 'Biochimie · Photobiologie et transport photosynthétique des électrons',
+      summary: 'Comprendre l’absorption de la lumière par les pigments, le fonctionnement des photosystèmes II et I, la photolyse de l’eau et la production d’ATP et de NADPH.',
+      lesson: {
+        sections: [
+          'La lumière est un rayonnement électromagnétique composé de photons. Les pigments photosynthétiques absorbent certaines longueurs d’onde et participent à la capture de l’énergie lumineuse. La chlorophylle a est le pigment central des centres réactionnels des photosystèmes. La chlorophylle b et les caroténoïdes élargissent les domaines de lumière absorbés par les complexes collecteurs. Les pigments n’absorbent pas toutes les longueurs d’onde avec la même efficacité : la lumière verte est moins absorbée par les chlorophylles et une partie est réfléchie ou transmise, ce qui contribue à l’aspect vert de nombreuses feuilles.',
+          'Dans les membranes thylakoïdiennes, les pigments sont organisés avec des protéines au sein de complexes antennes et de centres réactionnels. Les pigments antennes absorbent les photons et transfèrent l’énergie d’excitation vers le centre réactionnel. Cette énergie permet à une molécule de chlorophylle particulière de céder un électron à un accepteur primaire. Il s’agit d’un transfert d’énergie entre pigments, puis d’un transfert d’électron dans le centre réactionnel : ces deux phénomènes doivent être distingués.',
+          'Dans le schéma du transport non cyclique des électrons, le photosystème II intervient avant le photosystème I. Le photosystème II, dont le centre réactionnel est appelé P680, utilise l’énergie lumineuse pour arracher des électrons à l’eau grâce à un complexe d’oxydation de l’eau. Cette réaction libère des électrons, des protons et du dioxygène. Les électrons passent ensuite par une chaîne de transport, notamment le complexe cytochrome b6f, qui contribue à établir un gradient électrochimique de protons à travers la membrane thylakoïdienne.',
+          'Le gradient de protons constitue une réserve d’énergie potentielle. Lorsque les protons retournent vers le stroma en traversant l’ATP synthase, l’énergie de ce flux permet la synthèse d’ATP à partir d’ADP et de phosphate inorganique. Ce mécanisme est une photophosphorylation. Les électrons atteignent ensuite le photosystème I, dont le centre réactionnel est appelé P700. Une nouvelle absorption de lumière les porte à un niveau énergétique élevé ; ils sont transférés à la ferrédoxine, puis utilisés par la ferrédoxine-NADP+ réductase pour réduire le NADP+ en NADPH.',
+          'Le transport non cyclique fournit donc de l’ATP et du NADPH, utilisés ensuite dans le cycle de Calvin-Benson. Il existe également un transport cyclique autour du photosystème I : les électrons excités retournent vers la chaîne de transport au lieu de réduire le NADP+. Cette voie augmente la production relative d’ATP sans produire directement de NADPH ni de dioxygène. Elle aide la plante à ajuster l’approvisionnement en ATP et en pouvoir réducteur aux besoins métaboliques du chloroplaste.'
+        ],
+        example: {
+          statement: 'Une expérience montre que l’éclairement de thylakoïdes isolés permet la formation d’ATP et de NADPH en présence des composants nécessaires. Quel est le rôle du gradient de protons dans cette production ?',
+          calculation: 'Les transferts d’électrons et l’oxydation de l’eau contribuent à l’accumulation de protons dans le lumen thylakoïdien. Le retour des protons vers le stroma à travers l’ATP synthase fournit l’énergie nécessaire à la phosphorylation de l’ADP.',
+          answer: 'Le gradient électrochimique de protons alimente l’ATP synthase et permet la production d’ATP. Le NADPH est formé séparément par réduction du NADP+ grâce aux électrons issus du photosystème I.'
+        },
+        exercise: {
+          question: 'Pourquoi le transport cyclique des électrons autour du photosystème I ne libère-t-il pas directement de dioxygène ?',
+          answer: 'Parce qu’il recycle les électrons vers la chaîne de transport sans utiliser la photolyse de l’eau au photosystème II. Il contribue surtout à produire un supplément d’ATP.'
+        },
+        exercises: [
+          {
+            question: 'Quel pigment occupe une place centrale dans les centres réactionnels des photosystèmes des plantes ?',
+            answer: 'La chlorophylle a.'
+          },
+          {
+            question: 'Quel photosystème oxyde l’eau dans la photosynthèse oxygénique ?',
+            answer: 'Le photosystème II.'
+          },
+          {
+            question: 'Quel est le rôle principal de l’ATP synthase dans les thylakoïdes ?',
+            answer: 'Elle utilise l’énergie du retour des protons selon leur gradient électrochimique pour synthétiser de l’ATP à partir d’ADP et de phosphate inorganique.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 8.2 The Light-Dependent Reactions of Photosynthesis', url: 'https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis' },
+          { title: 'OpenStax — Biology for AP Courses, 8.2 The Light-Dependent Reaction of Photosynthesis', url: 'https://openstax.org/books/biology-ap-courses/pages/8-2-the-light-dependent-reaction-of-photosynthesis' },
+          { title: 'OpenStax — Biology 2e, Chapter 8 Summary', url: 'https://openstax.org/books/biology-2e/pages/8-chapter-summary' }
+        ]
+      }
+    },
+    {
+      id: 'cycle-calvin-benson-fixation-carbone',
+      title: 'Le cycle de Calvin-Benson et la fixation du carbone',
+      field: 'Biochimie végétale · Assimilation du CO2 et métabolisme carboné',
+      summary: 'Étudier les trois phases du cycle de Calvin-Benson, le rôle de la Rubisco, l’utilisation de l’ATP et du NADPH et la production de trioses phosphates.',
+      lesson: {
+        sections: [
+          'Le cycle de Calvin-Benson est une voie métabolique qui permet d’incorporer le carbone du CO2 dans des molécules organiques. Chez les plantes, il se déroule dans le stroma des chloroplastes. Il utilise l’ATP et le NADPH produits par les réactions photochimiques pour fournir l’énergie et le pouvoir réducteur nécessaires à la réduction du carbone. On parle parfois de réactions indépendantes de la lumière parce que les photons ne sont pas des réactifs directs de chaque étape du cycle. Cette expression ne signifie pas que le cycle fonctionne normalement sans les produits des réactions lumineuses : plusieurs de ses enzymes sont aussi régulées par l’éclairement.',
+          'La première phase est la fixation du carbone. L’enzyme ribulose-1,5-bisphosphate carboxylase/oxygénase, appelée Rubisco, catalyse l’ajout du CO2 sur le ribulose-1,5-bisphosphate (RuBP), un composé à cinq carbones. Le produit intermédiaire à six carbones est instable et se scinde en deux molécules de 3-phosphoglycérate (3-PGA), chacune contenant trois carbones. La Rubisco est une enzyme très abondante dans la biosphère, mais sa vitesse catalytique et sa capacité à distinguer CO2 et O2 présentent des limites qui influencent le rendement de la photosynthèse.',
+          'La deuxième phase est la réduction. Les molécules de 3-PGA sont phosphorylées grâce à l’ATP, puis réduites grâce au NADPH pour former du glycéraldéhyde-3-phosphate (G3P), un triose phosphate. Une partie du G3P peut quitter le cycle et servir de précurseur à la synthèse des glucides, des acides organiques et d’autres composés carbonés. Il est important de noter que le cycle ne produit pas directement une molécule de glucose à chaque tour : la formation d’un hexose nécessite l’assemblage de précurseurs carbonés issus de plusieurs tours.',
+          'La troisième phase est la régénération du RuBP. La majeure partie du G3P produit reste dans le cycle et est réorganisée par plusieurs réactions enzymatiques. Cette réorganisation consomme de l’ATP et permet de reformer le RuBP, accepteur du CO2, afin que le cycle puisse recommencer. Pour un bilan net de trois molécules de CO2 fixées, le cycle consomme neuf ATP et six NADPH et permet la sortie nette d’un G3P à trois carbones. Deux G3P nets sont nécessaires pour fournir le squelette carboné d’un hexose.',
+          'Le cycle de Calvin-Benson relie donc les réactions photochimiques à la synthèse de matière organique. L’ATP apporte de l’énergie chimique et le NADPH fournit des électrons pour les réactions de réduction. Les molécules produites ne sont pas toutes transformées en amidon ou en saccharose de la même manière : leur devenir dépend du type de cellule, de l’état physiologique de la plante et de ses besoins. Une partie du carbone est utilisée pour la croissance et la respiration, une autre peut être stockée temporairement ou transportée vers d’autres organes.'
+        ],
+        example: {
+          statement: 'Pour un bilan net de trois molécules de CO2 fixées par le cycle de Calvin-Benson, combien d’ATP et de NADPH sont consommés et quel produit carboné net est obtenu ?',
+          calculation: 'Bilan classique du cycle pour trois CO2 : 9 ATP et 6 NADPH consommés. Une molécule de G3P à trois carbones sort avec un bilan net, tandis que les autres intermédiaires servent à régénérer le RuBP.',
+          answer: 'Le cycle consomme 9 ATP et 6 NADPH et fournit un G3P net à trois carbones. Il faut deux G3P nets pour disposer du carbone nécessaire à la synthèse d’un hexose.'
+        },
+        exercise: {
+          question: 'Pourquoi le cycle de Calvin-Benson ne peut-il pas être décrit comme une fabrication directe de glucose à partir de CO2 en une seule étape ?',
+          answer: 'Il comporte plusieurs réactions enzymatiques organisées en trois phases : fixation du CO2, réduction du 3-PGA et régénération du RuBP. Le produit net exporté est un triose phosphate, le G3P, qui sert ensuite de précurseur à la synthèse des glucides.'
+        },
+        exercises: [
+          {
+            question: 'Quelle enzyme catalyse la fixation du CO2 sur le RuBP ?',
+            answer: 'La Rubisco.'
+          },
+          {
+            question: 'Quel est le premier produit stable formé après la carboxylation du RuBP chez les plantes C3 ?',
+            answer: 'Deux molécules de 3-phosphoglycérate (3-PGA), chacune à trois carbones.'
+          },
+          {
+            question: 'Quel est le bilan net classique pour trois CO2 fixés ?',
+            answer: 'La consommation de 9 ATP et de 6 NADPH, avec la production nette d’un G3P à trois carbones.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 8.3 Using Light Energy to Make Organic Molecules', url: 'https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules' },
+          { title: 'OpenStax — Concepts of Biology, 5.3 The Calvin Cycle', url: 'https://openstax.org/books/concepts-biology/pages/5-3-the-calvin-cycle' },
+          { title: 'OpenStax — Biology for AP Courses, 8.3 Using Light to Make Organic Molecules', url: 'https://openstax.org/books/biology-ap-courses/pages/8-3-using-light-to-make-organic-molecules' }
+        ]
+      }
+    },
+    {
+      id: 'facteurs-influencant-photosynthese',
+      title: 'Les facteurs qui influencent l’intensité de la photosynthèse',
+      field: 'Physiologie végétale · Écophysiologie et facteurs limitants',
+      summary: 'Analyser les effets de l’éclairement, du CO2, de la température, de l’eau et des éléments minéraux sur la vitesse de photosynthèse.',
+      lesson: {
+        sections: [
+          'L’intensité photosynthétique correspond à une vitesse de fonctionnement que l’on peut estimer, par exemple, par l’absorption nette de CO2 ou le dégagement net d’O2 dans des conditions expérimentales définies. Cette mesure dépend de nombreux paramètres et ne doit pas être confondue avec la quantité totale de matière organique accumulée sur toute la vie de la plante. Les résultats peuvent aussi varier selon que l’on mesure une feuille isolée, une plante entière ou un écosystème.',
+          'L’éclairement influence la vitesse des réactions photochimiques. Lorsque l’intensité lumineuse est faible, une augmentation de la lumière disponible peut augmenter la photosynthèse. Au-delà d’un certain niveau, la vitesse atteint une saturation : d’autres facteurs deviennent limitants et un supplément de lumière n’augmente plus nécessairement la fixation du carbone. Une lumière excessivement intense peut provoquer une photoinhibition, c’est-à-dire une diminution de l’efficacité photosynthétique liée à un excès d’énergie absorbée et à des dommages ou mécanismes de régulation des photosystèmes.',
+          'La concentration en CO2 influence la disponibilité du substrat utilisé par la Rubisco. Chez de nombreuses plantes C3, une augmentation du CO2 peut stimuler l’assimilation du carbone lorsque ce facteur est limitant et peut réduire la photorespiration relative. La réponse dépend cependant de la lumière, de la température, de l’eau, des nutriments et de l’acclimatation de la plante. Une hausse de CO2 ne garantit donc pas une augmentation illimitée de la croissance : d’autres ressources ou contraintes peuvent devenir limitantes.',
+          'La température agit sur les vitesses des réactions enzymatiques, la fluidité des membranes et les échanges gazeux. Chaque espèce et chaque type de plante présentent une plage thermique dans laquelle la photosynthèse fonctionne efficacement. À température trop élevée, la fermeture des stomates pour limiter les pertes d’eau peut réduire l’entrée du CO2. Chez les plantes C3, une température élevée peut aussi accroître la compétition de l’oxygène avec le CO2 au niveau de la Rubisco et favoriser la photorespiration. Les effets précis dépendent de l’espèce et de son acclimatation.',
+          'L’eau est indispensable au fonctionnement des cellules et constitue le donneur d’électrons de la photosynthèse oxygénique. Un déficit hydrique peut entraîner la fermeture des stomates, limiter l’entrée du CO2 et ralentir la fixation du carbone. Les éléments minéraux sont également nécessaires : l’azote intervient dans la constitution des protéines et de la chlorophylle, le magnésium entre dans la structure de la chlorophylle et le phosphore participe notamment au métabolisme de l’ATP. Une carence peut donc limiter la capacité photosynthétique, même si la lumière et le CO2 sont disponibles.'
+        ],
+        example: {
+          statement: 'Une feuille reçoit de plus en plus de lumière, mais sa vitesse d’assimilation du CO2 finit par ne plus augmenter. Comment interpréter ce résultat ?',
+          calculation: 'Au début, la lumière peut être le facteur limitant. Lorsque la courbe atteint un plateau, un autre facteur, comme la disponibilité en CO2, la capacité enzymatique ou la température, peut limiter davantage le processus.',
+          answer: 'La photosynthèse a atteint une zone de saturation lumineuse dans les conditions de l’expérience. Augmenter encore l’éclairement ne suffit plus à augmenter la vitesse mesurée.'
+        },
+        exercise: {
+          question: 'Pourquoi une augmentation de la concentration en CO2 ne provoque-t-elle pas nécessairement une hausse continue de la croissance végétale ?',
+          answer: 'Parce que la croissance dépend aussi de la lumière, de l’eau, de la température, des éléments minéraux et de la capacité de la plante à utiliser les produits de la photosynthèse. Un autre facteur peut devenir limitant.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie la saturation lumineuse ?',
+            answer: 'C’est une situation dans laquelle une augmentation supplémentaire de l’éclairement n’augmente plus significativement la vitesse photosynthétique dans les conditions étudiées.'
+          },
+          {
+            question: 'Comment un déficit hydrique peut-il diminuer l’assimilation du CO2 ?',
+            answer: 'Il peut provoquer la fermeture des stomates, ce qui réduit la diffusion du CO2 vers les tissus photosynthétiques.'
+          },
+          {
+            question: 'Pourquoi la température modifie-t-elle la photosynthèse ?',
+            answer: 'Elle influence les réactions enzymatiques, les membranes, les échanges gazeux et, selon les conditions, la photorespiration.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 8.2 The Light-Dependent Reactions of Photosynthesis', url: 'https://openstax.org/books/biology-2e/pages/8-2-the-light-dependent-reactions-of-photosynthesis' },
+          { title: 'OpenStax — Biology 2e, 8.3 Using Light Energy to Make Organic Molecules', url: 'https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules' },
+          { title: 'OpenStax — Biology 2e, 44.1 The Scope of Ecology', url: 'https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology' }
+        ]
+      }
+    },
+    {
+      id: 'adaptations-c3-c4-cam-photorespiration',
+      title: 'Les plantes C3, C4 et CAM : adaptations et photorespiration',
+      field: 'Physiologie végétale · Métabolisme photosynthétique et adaptation aux milieux',
+      summary: 'Comparer les voies C3, C4 et CAM, comprendre la photorespiration et expliquer les adaptations qui améliorent l’utilisation du CO2 dans différents environnements.',
+      lesson: {
+        sections: [
+          'La majorité des plantes utilisent le cycle de Calvin-Benson avec une première fixation du CO2 par la Rubisco : on les appelle plantes C3 parce que le premier produit stable de cette fixation est le 3-phosphoglycérate, qui possède trois carbones. Cette voie fonctionne efficacement dans de nombreuses conditions, mais la Rubisco peut aussi réagir avec l’O2. Cette activité oxygénase déclenche la photorespiration, une voie de récupération métabolique qui consomme de l’énergie et libère du CO2, réduisant ainsi le gain net de carbone dans certaines conditions.',
+          'La photorespiration devient particulièrement importante lorsque la température est élevée et que les stomates se ferment partiellement en réponse au manque d’eau. La concentration interne en CO2 diminue alors relativement à celle de l’O2, ce qui augmente la probabilité que la Rubisco fixe l’oxygène plutôt que le dioxyde de carbone. La photorespiration n’est pas simplement une respiration mitochondriale : elle implique une coopération métabolique entre chloroplastes, peroxysomes et mitochondries. Elle récupère une partie du carbone issu de la réaction oxygénase de la Rubisco, mais avec un coût énergétique et une perte nette de CO2.',
+          'Les plantes C4 possèdent un mécanisme de concentration du CO2 qui réduit la photorespiration. Dans les cellules du mésophylle, une enzyme appelée phosphoénolpyruvate carboxylase (PEP-carboxylase) fixe d’abord le bicarbonate sur le phosphoénolpyruvate, formant un composé à quatre carbones. Ces composés sont ensuite transportés vers les cellules de la gaine périvasculaire, où ils sont décarboxylés. Le CO2 libéré est alors concentré près de la Rubisco et entre dans le cycle de Calvin-Benson. Cette séparation spatiale entre fixation initiale et cycle de Calvin nécessite de l’énergie supplémentaire, mais peut être avantageuse dans les environnements chauds et fortement éclairés.',
+          'Les plantes CAM, ou plantes à métabolisme acide crassulacéen, séparent principalement les étapes de fixation du carbone dans le temps. Leurs stomates s’ouvrent généralement la nuit, lorsque la température et le déficit de pression de vapeur sont souvent plus faibles. Le CO2 est fixé par la PEP-carboxylase et stocké temporairement sous forme d’acides organiques, notamment de malate, dans les vacuoles. Pendant le jour, les stomates sont souvent fermés pour limiter les pertes d’eau ; le malate est décarboxylé et libère du CO2 qui alimente le cycle de Calvin. Cette stratégie est fréquente chez des plantes adaptées à des milieux secs, mais elle n’est pas limitée à un seul type d’habitat.',
+          'Les voies C3, C4 et CAM représentent différentes solutions physiologiques à des contraintes environnementales. Les plantes C4 sont souvent avantagées dans des conditions chaudes et lumineuses où la photorespiration des C3 est élevée. Les plantes CAM économisent particulièrement l’eau grâce à l’ouverture nocturne des stomates, mais leur croissance peut être lente selon les espèces et les conditions. Ces voies ne sont pas des degrés de perfection : chacune présente des coûts et des avantages. Leur répartition dépend de l’histoire évolutive, du climat, de l’eau disponible, de la lumière et des caractéristiques propres à chaque espèce.'
+        ],
+        example: {
+          statement: 'Une plante de milieu aride ouvre principalement ses stomates la nuit, stocke du carbone sous forme de malate, puis utilise ce carbone pendant la journée lorsque ses stomates sont fermés. De quelle voie photosynthétique s’agit-il ?',
+          calculation: 'La fixation initiale nocturne et l’utilisation diurne du CO2 stocké indiquent une séparation temporelle des étapes. C’est la caractéristique centrale du métabolisme CAM.',
+          answer: 'Il s’agit d’une plante CAM. Cette stratégie permet de limiter les pertes d’eau en décalant principalement l’entrée du CO2 vers la nuit.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale distingue la séparation du carbone chez les plantes C4 et chez les plantes CAM ?',
+          answer: 'Les plantes C4 séparent spatialement la fixation initiale du CO2 et le cycle de Calvin, principalement entre mésophylle et gaine périvasculaire. Les plantes CAM séparent principalement ces étapes dans le temps, avec une fixation nocturne et une utilisation diurne du CO2 stocké.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi les plantes C3 peuvent-elles subir une photorespiration importante par temps chaud ?',
+            answer: 'La fermeture partielle des stomates peut diminuer le CO2 interne et la température favorise, dans certaines conditions, l’activité oxygénase de la Rubisco par rapport à son activité carboxylase.'
+          },
+          {
+            question: 'Quelle enzyme réalise la fixation initiale du carbone chez les plantes C4 et CAM ?',
+            answer: 'La phosphoénolpyruvate carboxylase (PEP-carboxylase), avant l’intervention de la Rubisco dans le cycle de Calvin.'
+          },
+          {
+            question: 'Quelle stratégie caractérise les plantes CAM ?',
+            answer: 'Elles ouvrent généralement leurs stomates la nuit, fixent le carbone sous forme d’acides organiques et utilisent le CO2 libéré pendant la journée.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 8.3 Using Light Energy to Make Organic Molecules', url: 'https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules' },
+          { title: 'OpenStax — Biology 2e, Chapter 8 Summary', url: 'https://openstax.org/books/biology-2e/pages/8-chapter-summary' },
+          { title: 'OpenStax — Biology for AP Courses, 8.3 Using Light to Make Organic Molecules', url: 'https://openstax.org/books/biology-ap-courses/pages/8-3-using-light-to-make-organic-molecules' }
+        ]
+      }
+    },
+    {
+      id: 'photosynthese-ecosystemes-cycle-carbone',
+      title: 'La photosynthèse dans les écosystèmes et le cycle du carbone',
+      field: 'Écologie · Production primaire, cycles biogéochimiques et biosphère',
+      summary: 'Relier la photosynthèse à la production primaire, aux réseaux trophiques, au cycle du carbone, à l’oxygénation de l’atmosphère et aux méthodes de mesure.',
+      lesson: {
+        sections: [
+          'La photosynthèse constitue la base énergétique de la plupart des écosystèmes. Les organismes photosynthétiques convertissent une partie de l’énergie lumineuse en énergie chimique stockée dans la matière organique. Cette production est appelée production primaire. La production primaire brute correspond à la quantité totale de carbone fixé par photosynthèse sur une période donnée. Une partie de cette matière organique est utilisée par les organismes photosynthétiques eux-mêmes pour leur respiration ; la production primaire nette correspond à la production brute moins cette respiration autotrophe. Elle représente la matière organique qui peut contribuer à la croissance, au stockage et à l’alimentation des autres organismes.',
+          'Les végétaux, les algues et les cyanobactéries constituent des producteurs primaires dans de nombreux réseaux trophiques. Les herbivores consomment une partie de leur biomasse, puis les consommateurs secondaires et les décomposeurs utilisent la matière organique issue des autres niveaux trophiques. Toute la production végétale n’est pas consommée directement : une fraction devient de la litière ou de la matière organique morte, ensuite transformée par les décomposeurs. La photosynthèse contribue ainsi au transfert de matière et d’énergie dans les écosystèmes, mais l’énergie disponible diminue généralement d’un niveau trophique au suivant en raison des pertes métaboliques et thermiques.',
+          'À l’échelle planétaire, la photosynthèse participe au cycle du carbone en transférant du carbone inorganique, notamment le CO2, vers la matière organique. Ce carbone peut être consommé, respiré, décomposé, stocké dans les sols ou transporté vers les milieux aquatiques. Une partie peut être enfouie sur de longues périodes géologiques. La photosynthèse et la respiration sont donc deux processus complémentaires du cycle du carbone : la première fixe du carbone dans la matière organique, tandis que la respiration et la décomposition en restituent une partie sous forme de CO2.',
+          'Le dioxygène libéré par la photosynthèse oxygénique provient de l’oxydation de l’eau au photosystème II. L’accumulation d’oxygène dans l’atmosphère terrestre est liée à l’évolution ancienne de la photosynthèse oxygénique chez les microorganismes, notamment les cyanobactéries, puis à l’histoire des échanges entre biosphère, océans, roches et atmosphère. Il serait donc incorrect d’attribuer l’oxygène atmosphérique uniquement aux forêts actuelles ou de considérer que toute la production d’oxygène photosynthétique s’accumule : une grande partie est consommée par la respiration et les processus d’oxydation.',
+          'La photosynthèse peut être étudiée par différentes méthodes. À l’échelle d’une feuille, les échanges gazeux permettent de mesurer l’absorption de CO2 ou le dégagement net d’O2 sous des conditions contrôlées. La fluorescence de la chlorophylle renseigne sur certains aspects du fonctionnement des photosystèmes, sans mesurer à elle seule toute la production de matière organique. À l’échelle des écosystèmes, les mesures de flux de CO2, les observations satellitaires et les estimations de biomasse permettent d’étudier la production primaire. Chaque méthode possède ses limites et doit être interprétée selon l’échelle spatiale, temporelle et biologique étudiée.'
+        ],
+        example: {
+          statement: 'Une prairie fixe 1 000 unités de carbone par photosynthèse pendant une période. Les organismes photosynthétiques en utilisent 400 unités pour leur respiration. Quelle est la production primaire nette sur cette période ?',
+          calculation: 'Production primaire nette = production primaire brute − respiration autotrophe. Donc 1 000 − 400 = 600 unités de carbone.',
+          answer: 'La production primaire nette est de 600 unités de carbone pour la période considérée. Cette quantité peut contribuer à la croissance, au stockage et à l’alimentation des autres organismes.'
+        },
+        exercise: {
+          question: 'Pourquoi la production primaire nette est-elle inférieure à la production primaire brute ?',
+          answer: 'Parce qu’une partie du carbone fixé par photosynthèse est utilisée par les organismes producteurs pour leur propre respiration. La production nette correspond au bilan après cette dépense.'
+        },
+        exercises: [
+          {
+            question: 'Que représente la production primaire brute ?',
+            answer: 'La quantité totale de matière organique ou de carbone fixée par les producteurs primaires grâce à la photosynthèse pendant une période donnée.'
+          },
+          {
+            question: 'D’où provient le dioxygène libéré par la photosynthèse oxygénique ?',
+            answer: 'De l’oxydation de l’eau pendant les réactions photochimiques au photosystème II.'
+          },
+          {
+            question: 'Pourquoi toute la matière organique produite par les plantes n’est-elle pas directement consommée par les herbivores ?',
+            answer: 'Une partie reste dans les tissus, est stockée, tombe sous forme de litière ou rejoint la matière organique morte qui sera transformée par les décomposeurs.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, 44.1 The Scope of Ecology', url: 'https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology' },
+          { title: 'OpenStax — Biology 2e, 8.1 Overview of Photosynthesis', url: 'https://openstax.org/books/biology-2e/pages/8-1-overview-of-photosynthesis' },
+          { title: 'OpenStax — Biology 2e, 8.3 Using Light Energy to Make Organic Molecules', url: 'https://openstax.org/books/biology-2e/pages/8-3-using-light-energy-to-make-organic-molecules' }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  id: 'theorie-evolution',
+  sortYear: 'false',
+  title: 'Théorie de l’évolution : mécanismes, diversité et histoire du vivant',
+  note: 'Six chapitres approfondis pour comprendre la construction historique de la théorie de l’évolution, les sources de variation héréditaire, la sélection naturelle et sexuelle, les autres mécanismes évolutifs, la formation des espèces et les preuves de la parenté du vivant. L’évolution est étudiée à l’échelle des populations au fil des générations : elle n’implique ni progrès obligatoire, ni transformation orientée vers un objectif.',
+  chapters: [
+    {
+      id: 'fondements-histoire-theorie-evolution',
+      title: 'Les fondements historiques et scientifiques de la théorie de l’évolution',
+      field: 'Biologie évolutive · Histoire des sciences et concepts fondamentaux',
+      summary: 'Retracer la construction de la théorie de l’évolution, distinguer les idées historiques des connaissances actuelles et définir l’évolution comme un changement héréditaire des populations.',
+      lesson: {
+        sections: [
+          'L’évolution biologique désigne les changements des caractéristiques héréditaires des populations au cours des générations. En génétique des populations, elle peut être définie précisément comme une modification des fréquences alléliques au fil du temps. Elle ne signifie pas qu’un individu se transforme génétiquement au cours de sa vie, ni qu’une espèce cherche consciemment à s’améliorer. Les variations observées entre générations résultent de mécanismes comme la mutation, la sélection naturelle, la dérive génétique et le flux de gènes.',
+          'Avant le XIXe siècle, plusieurs naturalistes avaient proposé que les espèces puissent changer au cours du temps, mais les mécanismes de ces transformations restaient débattus. Jean-Baptiste de Lamarck défendit une théorie transformiste dans laquelle l’usage et le non-usage des organes ainsi que l’hérédité des caractères acquis jouaient un rôle central. Cette explication historique n’est pas celle retenue par la biologie évolutive moderne. Elle demeure importante pour comprendre l’histoire des idées, mais ne doit pas être confondue avec les mécanismes génétiques actuellement établis.',
+          'Au XIXe siècle, Charles Darwin et Alfred Russel Wallace développèrent indépendamment une explication de l’évolution par sélection naturelle. Leurs travaux furent présentés conjointement en 1858 à la Linnean Society de Londres. En 1859, Darwin publia On the Origin of Species, ouvrage qui argumentait notamment que les espèces descendent d’ancêtres communs et que la sélection naturelle peut conduire à l’adaptation. Darwin ne connaissait pas les mécanismes moléculaires de l’hérédité ; ceux-ci furent clarifiés plus tard grâce aux travaux de la génétique.',
+          'Au début du XXe siècle, la redécouverte des travaux de Gregor Mendel et le développement de la génétique des populations permirent de relier l’hérédité particulaire aux changements évolutifs. La synthèse moderne, construite principalement entre les années 1930 et 1940, associa la sélection naturelle darwinienne, la génétique mendélienne et l’étude mathématique des populations. Les développements ultérieurs de la biologie moléculaire, de la génomique, de la paléontologie et de l’écologie ont enrichi ce cadre sans abandonner son principe central : les populations changent au fil des générations.',
+          'Une théorie scientifique n’est pas une simple supposition : c’est un cadre explicatif construit à partir d’observations, d’expériences et de prédictions confrontées aux données. La théorie de l’évolution explique à la fois l’unité du vivant par la descendance avec modification et sa diversité par la divergence des lignées. Elle ne prétend pas que chaque détail de chaque histoire évolutive est déjà connu. Les relations précises entre certaines lignées peuvent rester discutées, car les données fossiles et génétiques sont incomplètes ou parfois difficiles à interpréter.'
+        ],
+        example: {
+          statement: 'Dans une population de coléoptères, la fréquence d’un allèle passe de 0,20 à 0,35 en plusieurs générations. Peut-on parler d’évolution au sens de la génétique des populations ?',
+          calculation: 'On compare la fréquence du même allèle à deux moments : 0,35 − 0,20 = 0,15. La fréquence a donc augmenté de 0,15, soit 15 points de pourcentage.',
+          answer: 'Oui. Une modification de la fréquence allélique dans une population au fil des générations constitue une évolution au sens de la génétique des populations. Cette observation seule ne permet toutefois pas d’identifier le mécanisme responsable.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il incorrect de dire qu’un individu évolue génétiquement parce qu’il en a besoin ?',
+          answer: 'L’évolution concerne les populations sur plusieurs générations. Les mécanismes évolutifs modifient la fréquence des variantes héréditaires ; les besoins d’un individu ne provoquent pas directement l’apparition ciblée d’une mutation utile.'
+        },
+        exercises: [
+          {
+            question: 'Quelle définition de l’évolution est utilisée en génétique des populations ?',
+            answer: 'Un changement des fréquences alléliques dans une population au fil des générations.'
+          },
+          {
+            question: 'Qui a présenté avec Darwin des travaux sur la sélection naturelle en 1858 ?',
+            answer: 'Alfred Russel Wallace.'
+          },
+          {
+            question: 'Quel apport majeur la génétique mendélienne a-t-elle fourni à la théorie de l’évolution ?',
+            answer: 'Elle a permis de comprendre comment les caractères héréditaires sont transmis sous forme de facteurs génétiques et comment la variation peut être maintenue entre générations.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Understanding Evolution', url: 'https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution' },
+          { title: 'OpenStax — Biology 2e, Population Evolution', url: 'https://openstax.org/books/biology-2e/pages/19-1-population-evolution' },
+          { title: 'Natural History Museum — What is natural selection?', url: 'https://www.nhm.ac.uk/discover/what-is-natural-selection.html' }
+        ]
+      }
+    },
+    {
+      id: 'variation-genetique-mutations-heredite',
+      title: 'La variation génétique, les mutations et l’hérédité',
+      field: 'Génétique · Génétique des populations et transmission héréditaire',
+      summary: 'Comprendre l’origine de la diversité génétique, les mutations, la recombinaison et la transmission des variantes héréditaires.',
+      lesson: {
+        sections: [
+          'La variation génétique désigne les différences de séquences d’ADN et de combinaisons d’allèles présentes entre les individus d’une population. Elle constitue une matière première de l’évolution, car les mécanismes évolutifs peuvent modifier la fréquence des variantes héréditaires. Une différence de phénotype n’est cependant pas toujours génétique : l’alimentation, la température, l’activité ou d’autres facteurs environnementaux peuvent modifier les caractères observables sans changer la séquence d’ADN transmise aux descendants.',
+          'Une mutation est une modification de la séquence de l’ADN. Elle peut résulter d’erreurs de réplication ou de dommages à l’ADN, parfois liés à des agents mutagènes. Les conséquences varient : certaines mutations n’ont pas d’effet détectable sur le phénotype ou la valeur sélective, d’autres sont défavorables dans un environnement donné, et certaines peuvent être avantageuses. Une mutation n’apparaît pas parce que l’organisme en a besoin ; son effet dépend du contexte génétique et environnemental dans lequel elle se trouve.',
+          'Pour être transmise à la génération suivante chez les organismes à reproduction sexuée, une mutation doit généralement toucher la lignée germinale, c’est-à-dire les cellules à l’origine des gamètes. Une mutation limitée à une cellule somatique peut se transmettre aux cellules filles de cette cellule dans l’organisme, mais elle n’est normalement pas héritée par la descendance. Chez les organismes unicellulaires qui se reproduisent par division, les mutations peuvent être transmises directement aux cellules descendantes.',
+          'La reproduction sexuée crée de nouvelles combinaisons d’allèles grâce à la méiose et à la fécondation. Le brassage interchromosomique répartit aléatoirement les chromosomes homologues dans les gamètes, tandis que le crossing-over échange des segments entre chromosomes homologues. Ces mécanismes recombinent des variantes existantes, mais ne créent pas à eux seuls de nouveaux allèles. La mutation reste la source ultime de nouveaux allèles dans les populations, alors que la recombinaison renouvelle les combinaisons génétiques.',
+          'La diversité génétique peut être décrite par le nombre d’allèles, leur fréquence, l’hétérozygotie ou la diversité des séquences. Elle est importante pour le potentiel évolutif d’une population, mais une diversité élevée ne garantit pas automatiquement sa survie. Les effets d’une variante dépendent du milieu et des autres gènes présents. La sélection, la dérive, les migrations et les systèmes de reproduction peuvent faire varier cette diversité au cours du temps.'
+        ],
+        example: {
+          statement: 'Dans une population diploïde, un gène possède deux allèles, A et a. Un individu a le génotype Aa. Quels allèles peut-il transmettre à ses gamètes pour ce gène ?',
+          calculation: 'Lors de la méiose, les deux copies homologues se séparent. Chaque gamète reçoit une seule copie du gène : A ou a. Dans le cas d’une ségrégation mendélienne sans distorsion, chaque type est produit avec une probabilité de 0,5.',
+          answer: 'L’individu peut produire des gamètes portant A ou des gamètes portant a, avec une probabilité théorique de 0,5 pour chacun dans les conditions indiquées.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre mutation et recombinaison génétique ?',
+          answer: 'Une mutation modifie la séquence d’ADN et peut créer un nouvel allèle. La recombinaison réorganise des allèles déjà présents en nouvelles combinaisons.'
+        },
+        exercises: [
+          {
+            question: 'Une mutation est-elle nécessairement défavorable ?',
+            answer: 'Non. Son effet peut être neutre, défavorable ou avantageux selon le contexte.'
+          },
+          {
+            question: 'Quelle partie du génome doit généralement être touchée pour qu’une mutation soit transmise à la descendance d’un animal ou d’une plante à reproduction sexuée ?',
+            answer: 'La lignée germinale, qui produit les gamètes.'
+          },
+          {
+            question: 'Le crossing-over crée-t-il généralement de nouveaux allèles ?',
+            answer: 'Non. Il échange des segments entre chromosomes homologues et crée de nouvelles combinaisons d’allèles existants.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Population Genetics', url: 'https://openstax.org/books/biology-2e/pages/19-2-population-genetics' },
+          { title: 'OpenStax — Biology 2e, The Process of Meiosis', url: 'https://openstax.org/books/biology-2e/pages/11-1-the-process-of-meiosis' },
+          { title: 'OpenStax — Biology 2e, Population Evolution', url: 'https://openstax.org/books/biology-2e/pages/19-1-population-evolution' }
+        ]
+      }
+    },
+    {
+      id: 'selection-naturelle-selection-sexuelle',
+      title: 'La sélection naturelle et la sélection sexuelle',
+      field: 'Biologie évolutive · Adaptation et succès reproducteur',
+      summary: 'Étudier comment les différences héréditaires de survie et de reproduction modifient les populations, et distinguer les principaux modes de sélection.',
+      lesson: {
+        sections: [
+          'La sélection naturelle se produit lorsque des différences héréditaires entre individus entraînent des différences de survie ou de reproduction dans un environnement donné. Les individus qui contribuent davantage à la génération suivante transmettent plus fréquemment certaines variantes héréditaires. La sélection agit sur les phénotypes des individus, mais ses conséquences évolutives se mesurent dans les populations, par la variation des fréquences alléliques et des caractères au fil des générations.',
+          'La valeur sélective, ou fitness au sens évolutif, désigne la contribution relative d’un individu ou d’un génotype à la génération suivante. Elle ne correspond pas simplement à la force, à la longévité ou à la santé apparente. Un caractère peut améliorer la survie mais réduire le succès reproducteur, ou l’inverse. La valeur sélective est relative à l’environnement et au contexte de comparaison : un trait avantageux dans un milieu peut devenir défavorable lorsque les conditions changent.',
+          'La sélection directionnelle favorise un phénotype situé vers une extrémité de la variation et peut déplacer la moyenne de la population. La sélection stabilisante favorise les phénotypes intermédiaires et réduit souvent la fréquence des extrêmes. La sélection diversifiante favorise plusieurs phénotypes distincts dans certaines conditions et peut augmenter la différenciation au sein d’une population. Ces modèles décrivent des effets statistiques sur la distribution des caractères ; ils ne sont pas des étapes obligatoires de l’évolution.',
+          'La sélection sexuelle est une forme de sélection liée aux différences de succès dans l’accès aux partenaires et à la reproduction. Elle peut résulter de la compétition entre individus pour l’accès aux partenaires ou de préférences de choix du partenaire. Des caractères comme les ornements, les chants ou les comportements de parade peuvent être favorisés même s’ils ont un coût pour la survie. Leur évolution dépend de l’équilibre entre avantages reproductifs, coûts et conditions écologiques.',
+          'La sélection naturelle ne produit pas nécessairement des organismes parfaits. Elle agit sur la variation disponible et peut être limitée par l’histoire évolutive, les contraintes du développement, les compromis entre fonctions et les changements de l’environnement. Elle ne crée pas directement les mutations adaptées aux besoins : les mutations apparaissent sans direction liée à leur utilité future, puis leurs effets peuvent être triés par la sélection et d’autres mécanismes.'
+        ],
+        example: {
+          statement: 'Dans une population de papillons, les individus plus sombres sont moins repérés par les prédateurs sur des troncs assombris. Si la couleur est héréditaire et que ces individus laissent en moyenne plus de descendants, quel mécanisme peut modifier la population ?',
+          calculation: 'Le phénotype sombre est associé à une contribution moyenne plus importante à la génération suivante. Si cette différence est liée à des variantes héréditaires, leur fréquence peut augmenter au fil des générations.',
+          answer: 'Il s’agit d’un cas de sélection naturelle directionnelle, si les données confirment que la sélection favorise durablement les phénotypes plus sombres dans cet environnement.'
+        },
+        exercise: {
+          question: 'Pourquoi la sélection naturelle ne doit-elle pas être confondue avec la survie du plus fort ?',
+          answer: 'La valeur sélective dépend du succès reproducteur relatif dans un environnement donné. Un individu peut survivre longtemps mais laisser peu de descendants ; un autre, moins robuste en apparence, peut contribuer davantage à la génération suivante.'
+        },
+        exercises: [
+          {
+            question: 'Sur quoi la sélection naturelle agit-elle directement ?',
+            answer: 'Sur les phénotypes des individus, en fonction de leurs effets sur la survie et la reproduction.'
+          },
+          {
+            question: 'Quel type de sélection favorise les phénotypes intermédiaires ?',
+            answer: 'La sélection stabilisante.'
+          },
+          {
+            question: 'Quel est le lien entre sélection sexuelle et sélection naturelle ?',
+            answer: 'La sélection sexuelle est une composante de la sélection liée aux différences de succès reproducteur, particulièrement celles qui concernent l’accès aux partenaires.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Adaptive Evolution', url: 'https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution' },
+          { title: 'Natural History Museum — What is natural selection?', url: 'https://www.nhm.ac.uk/discover/what-is-natural-selection.html' },
+          { title: 'OpenStax — Biology 2e, Understanding Evolution', url: 'https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution' }
+        ]
+      }
+    },
+    {
+      id: 'derive-genetique-flux-genes-equilibre',
+      title: 'La dérive génétique, le flux de gènes et les autres forces évolutives',
+      field: 'Génétique des populations · Forces évolutives et équilibre de Hardy-Weinberg',
+      summary: 'Comprendre les changements aléatoires de fréquences alléliques, les migrations, les effets fondateur et goulot d’étranglement, ainsi que le modèle de Hardy-Weinberg.',
+      lesson: {
+        sections: [
+          'La dérive génétique correspond aux fluctuations aléatoires des fréquences alléliques d’une génération à l’autre, dues au fait que les individus qui transmettent leurs allèles ne représentent pas exactement la population précédente. Elle peut entraîner la disparition ou la fixation d’allèles sans que ces variantes soient nécessairement avantageuses ou défavorables. Son effet est généralement plus marqué dans les petites populations, où le hasard de la reproduction représente une fraction plus importante du patrimoine génétique.',
+          'L’effet fondateur apparaît lorsqu’un petit nombre d’individus établit une nouvelle population. Les allèles présents chez ces fondateurs peuvent ne pas représenter fidèlement ceux de la population d’origine ; les fréquences alléliques de la nouvelle population peuvent donc être différentes dès le départ. Le goulot d’étranglement correspond à une réduction importante et souvent rapide de l’effectif d’une population. Les survivants ne représentent pas nécessairement toute la diversité initiale, ce qui peut réduire la diversité génétique et modifier les fréquences alléliques par hasard.',
+          'Le flux de gènes correspond au transfert d’allèles entre populations, par déplacement d’individus ou de gamètes suivis de reproduction. Il peut introduire des variantes dans une population et réduire les différences génétiques entre populations lorsque les échanges sont suffisants. À l’inverse, une réduction du flux de gènes peut favoriser la divergence. Les barrières géographiques, comportementales ou écologiques peuvent limiter ces échanges, sans les supprimer nécessairement complètement.',
+          'La mutation introduit de nouveaux allèles, tandis que la sélection naturelle, la dérive génétique et le flux de gènes modifient leur fréquence. Les systèmes d’accouplement non aléatoire peuvent aussi modifier les fréquences génotypiques et la structure génétique d’une population. Il est important de distinguer fréquence allélique et fréquence génotypique : un changement dans la proportion des génotypes ne signifie pas toujours qu’il y a eu changement des fréquences alléliques.',
+          'Le principe de Hardy-Weinberg fournit un modèle de référence pour une population idéale dans laquelle les fréquences alléliques et génotypiques restent constantes d’une génération à l’autre en l’absence de forces évolutives particulières. Pour un gène à deux allèles A et a, avec des fréquences p et q, p + q = 1 et les fréquences génotypiques attendues sont p² pour AA, 2pq pour Aa et q² pour aa. Le modèle suppose notamment une population très grande, des accouplements aléatoires, l’absence de mutation, de migration et de sélection. Dans les populations réelles, il sert surtout de comparaison pour détecter des écarts et formuler des hypothèses.'
+        ],
+        example: {
+          statement: 'Dans une population à deux allèles, la fréquence de A est p = 0,7 et celle de a est q = 0,3. Quelles fréquences génotypiques attend-on selon Hardy-Weinberg ?',
+          calculation: 'AA = p² = 0,7 × 0,7 = 0,49. Aa = 2pq = 2 × 0,7 × 0,3 = 0,42. aa = q² = 0,3 × 0,3 = 0,09. La somme vaut 0,49 + 0,42 + 0,09 = 1.',
+          answer: 'Les fréquences génotypiques attendues sont 0,49 pour AA, 0,42 pour Aa et 0,09 pour aa, soit respectivement 49 %, 42 % et 9 %, si les conditions du modèle sont respectées.'
+        },
+        exercise: {
+          question: 'Pourquoi la dérive génétique peut-elle être particulièrement importante dans une petite population ?',
+          answer: 'Parce que le hasard de la reproduction peut représenter une proportion importante des copies d’allèles transmises. Les fréquences peuvent donc fluctuer fortement d’une génération à l’autre.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que l’effet fondateur ?',
+            answer: 'Une modification des fréquences alléliques lorsqu’un petit groupe fonde une nouvelle population dont le patrimoine génétique ne représente pas exactement celui de la population d’origine.'
+          },
+          {
+            question: 'Quel processus permet le transfert d’allèles entre populations ?',
+            answer: 'Le flux de gènes, par migration d’individus ou de gamètes suivie de reproduction.'
+          },
+          {
+            question: 'Quelle est la relation de Hardy-Weinberg pour deux allèles ?',
+            answer: 'p + q = 1 et p² + 2pq + q² = 1, avec p², 2pq et q² comme fréquences génotypiques attendues.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Population Evolution', url: 'https://openstax.org/books/biology-2e/pages/19-1-population-evolution' },
+          { title: 'OpenStax — Biology 2e, Population Genetics', url: 'https://openstax.org/books/biology-2e/pages/19-2-population-genetics' },
+          { title: 'OpenStax — Biology 2e, Adaptive Evolution', url: 'https://openstax.org/books/biology-2e/pages/19-3-adaptive-evolution' }
+        ]
+      }
+    },
+    {
+      id: 'speciation-adaptation-diversification',
+      title: 'La spéciation, les adaptations et la diversification du vivant',
+      field: 'Biologie évolutive · Isolement reproducteur et origine des espèces',
+      summary: 'Expliquer comment des populations divergent, comment apparaissent les barrières reproductives et comment la diversification évolutive produit de nouvelles lignées.',
+      lesson: {
+        sections: [
+          'La spéciation est le processus évolutif par lequel des populations donnent naissance à des lignées devenant des espèces distinctes selon les critères biologiques utilisés. Chez les organismes à reproduction sexuée, le concept biologique de l’espèce met l’accent sur l’interfécondité et l’isolement reproducteur. Cette définition ne s’applique pas directement aux organismes asexués et ne suffit pas toujours pour les fossiles ou les populations dont les limites sont difficiles à établir. Les biologistes utilisent donc plusieurs concepts d’espèce selon les organismes et les données disponibles.',
+          'La spéciation allopatrique commence généralement par une séparation géographique qui réduit ou interrompt le flux de gènes entre des populations. Les populations isolées peuvent accumuler des différences sous l’effet des mutations, de la dérive génétique et de la sélection naturelle. Si des barrières reproductives apparaissent, elles peuvent rester distinctes même si un contact secondaire devient possible. Une rivière, une chaîne montagneuse, une fragmentation d’habitat ou la colonisation d’une île peuvent contribuer à l’isolement géographique.',
+          'La spéciation sympatrique se produit sans séparation géographique initiale complète. Elle peut être favorisée par une spécialisation écologique, des préférences d’accouplement ou des changements chromosomiques. Chez certaines plantes, la polyploïdie, c’est-à-dire la présence de jeux supplémentaires de chromosomes, peut créer rapidement un isolement reproducteur avec la population d’origine. Les mécanismes varient selon les groupes et la spéciation sympatrique ne doit pas être considérée comme la voie la plus fréquente dans tous les organismes.',
+          'Les barrières reproductives sont dites prézygotiques lorsqu’elles empêchent la rencontre des gamètes ou la fécondation : différences de période de reproduction, de comportement, de signaux, d’habitat ou incompatibilités mécaniques et gamétiques. Les barrières postzygotiques agissent après la fécondation, par exemple lorsque les hybrides ont une viabilité réduite ou sont stériles. L’isolement reproducteur peut être progressif et incomplet ; des zones hybrides existent chez certains groupes et leur étude renseigne sur le degré de divergence des populations.',
+          'La radiation adaptative désigne la diversification d’une lignée ancestrale en plusieurs lignées qui exploitent des niches écologiques différentes. Elle peut survenir lorsqu’un groupe colonise un nouvel environnement, lorsque des ressources deviennent disponibles ou après l’apparition de nouvelles possibilités écologiques. Les pinsons des Galápagos sont souvent utilisés comme exemple pédagogique de diversification des formes de bec associées à des ressources alimentaires différentes. L’adaptation ne signifie pas perfection : elle correspond à une adéquation relative entre certains caractères héréditaires et un environnement donné.'
+        ],
+        example: {
+          statement: 'Une population d’insectes est séparée en deux groupes par la formation d’un canyon. Après une longue période, les deux groupes ne se reproduisent plus entre eux même lorsqu’ils se retrouvent en contact. Quel processus peut expliquer cette situation ?',
+          calculation: 'La séparation géographique a réduit le flux de gènes. Les deux groupes ont ensuite accumulé des différences évolutives ; l’apparition de barrières reproductives indique une divergence pouvant aboutir à une spéciation allopatrique.',
+          answer: 'La situation est compatible avec une spéciation allopatrique : l’isolement géographique a favorisé la divergence, puis un isolement reproducteur s’est établi.'
+        },
+        exercise: {
+          question: 'Quelle différence existe-t-il entre une barrière prézygotique et une barrière postzygotique ?',
+          answer: 'Une barrière prézygotique empêche la fécondation ou la rencontre des gamètes. Une barrière postzygotique agit après la fécondation et réduit par exemple la viabilité ou la fertilité des hybrides.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que la spéciation allopatrique ?',
+            answer: 'Une formation de nouvelles espèces associée à une séparation géographique qui réduit le flux de gènes entre populations.'
+          },
+          {
+            question: 'Pourquoi la polyploïdie peut-elle contribuer à la spéciation chez les plantes ?',
+            answer: 'Un changement du nombre de jeux chromosomiques peut entraîner une incompatibilité de reproduction avec la population d’origine.'
+          },
+          {
+            question: 'Que désigne une radiation adaptative ?',
+            answer: 'La diversification d’une lignée ancestrale en plusieurs lignées adaptées à des niches écologiques différentes.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Formation of New Species', url: 'https://openstax.org/books/biology-2e/pages/18-2-formation-of-new-species' },
+          { title: 'OpenStax — Biology 2e, Reconnection and Speciation Rates', url: 'https://openstax.org/books/biology-2e/pages/18-3-reconnection-and-speciation-rates' },
+          { title: 'OpenStax — Biology 2e, Determining Evolutionary Relationships', url: 'https://openstax.org/books/biology-2e/pages/20-2-determining-evolutionary-relationships' }
+        ]
+      }
+    },
+    {
+      id: 'preuves-evolution-phylogenie-vivant',
+      title: 'Les preuves de l’évolution, la phylogénie et l’histoire du vivant',
+      field: 'Biologie évolutive · Paléontologie, anatomie comparée et phylogénétique moléculaire',
+      summary: 'Examiner les preuves indépendantes de l’évolution, lire les arbres phylogénétiques et comprendre les limites de la reconstruction des parentés.',
+      lesson: {
+        sections: [
+          'Les preuves de l’évolution proviennent de domaines indépendants qui convergent vers une même conclusion : les espèces actuelles descendent de populations ancestrales et les lignées se sont diversifiées au cours du temps. Le registre fossile documente des organismes anciens, des extinctions et des changements de formes. Il est incomplet, car la fossilisation est rare et dépend des conditions de conservation, mais il fournit une chronologie précieuse lorsqu’il est associé aux méthodes de datation et aux données géologiques.',
+          'L’anatomie comparée permet d’identifier des structures homologues, c’est-à-dire des caractères hérités d’un ancêtre commun même lorsqu’ils remplissent aujourd’hui des fonctions différentes. Le membre antérieur des humains, des chauves-souris, des oiseaux et des baleines présente un plan osseux comparable malgré des adaptations différentes. À l’inverse, des structures analogues peuvent se ressembler parce qu’elles répondent à des contraintes fonctionnelles similaires, sans provenir de la même structure chez un ancêtre commun récent. Cette distinction permet de différencier homologie et convergence évolutive.',
+          'Les données moléculaires apportent une source majeure d’information sur les parentés. Les séquences d’ADN et de protéines peuvent être comparées entre espèces ; les ressemblances héritées de séquences homologues soutiennent des hypothèses de parenté. Plus les données concordent sur plusieurs gènes et avec d’autres caractères, plus une relation phylogénétique peut être solidement étayée. Les résultats doivent néanmoins tenir compte des duplications de gènes, des transferts horizontaux chez certains organismes, des hybridations et des différences entre l’histoire d’un gène et celle des espèces.',
+          'La biogéographie étudie la distribution géographique des organismes et aide à reconstruire leur histoire. Les espèces insulaires présentent souvent des parentés avec des espèces de régions voisines, ce qui peut s’expliquer par la colonisation, l’isolement et la diversification. Les mouvements des continents et les changements climatiques ont également influencé la répartition des lignées. La distribution actuelle n’est donc pas seulement liée aux conditions écologiques présentes : elle conserve la trace de processus géologiques et évolutifs anciens.',
+          'Un arbre phylogénétique représente une hypothèse de relations de parenté entre des lignées. Les nœuds représentent des ancêtres communs hypothétiques ou des événements de divergence, et les branches représentent des lignées évolutives. Deux espèces sont dites groupes frères lorsqu’elles partagent entre elles un ancêtre commun plus récent qu’avec les autres groupes représentés. La proximité visuelle des noms à l’extrémité des branches ne suffit pas à mesurer la parenté ; il faut lire les nœuds et la structure de l’arbre. Les arbres sont révisables lorsque de nouvelles données apparaissent et ne constituent pas une échelle de progrès allant du simple au complexe.'
+        ],
+        example: {
+          statement: 'Sur un arbre phylogénétique, les espèces A et B partagent un ancêtre commun plus récent entre elles que chacune avec l’espèce C. Quelle relation peut-on déduire ?',
+          calculation: 'On compare les nœuds de divergence : le nœud commun à A et B est plus récent que leur ancêtre commun avec C. A et B sont donc des groupes frères dans cet arbre.',
+          answer: 'A et B sont les groupes les plus étroitement apparentés parmi les trois espèces représentées. Cela ne signifie pas que l’une descend de l’autre : elles partagent un ancêtre commun.'
+        },
+        exercise: {
+          question: 'Pourquoi les arbres phylogénétiques ne doivent-ils pas être interprétés comme une échelle allant des organismes inférieurs aux organismes supérieurs ?',
+          answer: 'Un arbre représente des relations de parenté et des divergences, pas une hiérarchie de valeur ou de progrès. Toutes les lignées actuelles ont évolué pendant la même durée depuis leurs ancêtres communs respectifs.'
+        },
+        exercises: [
+          {
+            question: 'Que sont des structures homologues ?',
+            answer: 'Des structures dont les similitudes s’expliquent par une origine évolutive commune, même si leurs fonctions actuelles peuvent différer.'
+          },
+          {
+            question: 'Que représente un nœud dans un arbre phylogénétique ?',
+            answer: 'Un ancêtre commun hypothétique ou un point de divergence entre lignées.'
+          },
+          {
+            question: 'Pourquoi les séquences d’ADN sont-elles utiles pour établir les parentés ?',
+            answer: 'Parce que les similitudes et différences entre séquences homologues fournissent des indices mesurables sur l’histoire commune et la divergence des lignées.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Biology 2e, Understanding Evolution', url: 'https://openstax.org/books/biology-2e/pages/18-1-understanding-evolution' },
+          { title: 'OpenStax — Biology 2e, Determining Evolutionary Relationships', url: 'https://openstax.org/books/biology-2e/pages/20-2-determining-evolutionary-relationships' },
+          { title: 'OpenStax — Concepts of Biology, Evidence of Evolution', url: 'https://openstax.org/books/concepts-biology/pages/11-3-evidence-of-evolution' }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+
 ]
 
