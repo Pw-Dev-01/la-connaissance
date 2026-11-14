@@ -2128,7 +2128,361 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'biolologie-ecosystemes',
+  sortYear: false,
+  title: 'Écosystèmes : fonctionnement, interactions, dynamiques et conservation',
+  note: 'Six chapitres approfondis consacrés à la structure des écosystèmes, à la biodiversité et aux interactions biologiques, aux flux d’énergie, aux cycles de matière, aux dynamiques écologiques et aux pressions humaines. Les exemples illustrent des principes généraux : les mécanismes et leurs intensités varient selon les milieux et les espèces.',
+  chapters: [
+    {
+      id: 'fondements-ecosysteme',
+      title: '1. Les fondements d’un écosystème : milieux, organismes et niveaux d’organisation',
+      field: 'Écologie · Organisation du vivant et fonctionnement des milieux',
+      summary: 'Définir un écosystème, distinguer ses composantes biotiques et abiotiques et comprendre les niveaux d’organisation étudiés par les écologues.',
+      lesson: {
+        sections: [
+          'L’écologie étudie les relations des organismes entre eux et avec leur environnement. Un écosystème correspond à une unité fonctionnelle constituée d’une communauté d’organismes vivants et du milieu non vivant avec lequel elle interagit. Il n’existe pas de taille unique imposée : une mare, une forêt, une prairie, un récif ou une portion de sol peuvent être étudiés comme des écosystèmes si l’on précise les limites de l’étude. Ces limites sont souvent choisies pour répondre à une question scientifique et ne signifient pas que le système est isolé du reste de la planète.',
 
+          'Les composantes biotiques regroupent les êtres vivants : végétaux, animaux, champignons, bactéries et autres micro-organismes. Les composantes abiotiques comprennent notamment la température, la lumière, l’eau, la salinité, le pH, la nature du sol, les nutriments minéraux et les caractéristiques physiques du milieu. Ces facteurs influencent la survie, la croissance, la reproduction et la répartition des espèces. En retour, les organismes transforment leur environnement : les végétaux modifient la lumière disponible et la structure du sol, tandis que les décomposeurs participent à la transformation de la matière organique.',
+
+          'Il faut distinguer plusieurs niveaux d’organisation. Un organisme est un individu ; une population rassemble des individus d’une même espèce présents dans une zone et à une période données ; une communauté regroupe les populations de différentes espèces qui coexistent ; l’écosystème inclut cette communauté et les facteurs abiotiques avec lesquels elle échange matière et énergie. La biosphère désigne l’ensemble des zones de la Terre où la vie est présente. Ces niveaux sont emboîtés et leurs frontières dépendent de l’échelle choisie.',
+
+          'Les écosystèmes sont ouverts : ils échangent de l’énergie, de l’eau, des gaz, des organismes et des éléments nutritifs avec leur environnement. Un bassin versant, par exemple, reçoit des précipitations, exporte de l’eau et des matières dissoutes vers l’aval et accueille des organismes qui se déplacent parfois entre plusieurs habitats. Étudier un écosystème exige donc de préciser son espace, sa période d’observation et les flux qui franchissent ses limites.',
+
+          'On distingue souvent les écosystèmes terrestres, d’eau douce et marins, mais ces catégories sont très diverses. Une forêt tropicale et une forêt boréale sont toutes deux terrestres, sans présenter les mêmes températures, saisons, sols ou communautés. De même, une rivière, un lac et une zone humide sont des milieux continentaux aquatiques dont l’écoulement, la profondeur, l’oxygénation et la disponibilité en nutriments diffèrent. Les zones de transition, comme les estuaires, combinent des influences de plusieurs milieux.'
+        ],
+        example: {
+          statement: 'Dans une mare, on observe des algues, des insectes aquatiques, des bactéries, de l’eau, de la lumière, une température variable et des sels minéraux. Quels éléments appartiennent à la communauté et lesquels relèvent du milieu abiotique ?',
+          calculation: 'La communauté regroupe uniquement les populations d’organismes vivants. Les facteurs physiques et chimiques sont classés parmi les composantes abiotiques.',
+          answer: 'Les algues, les insectes aquatiques et les bactéries appartiennent à la communauté vivante. L’eau, la lumière, la température et les sels minéraux sont des composantes abiotiques. La mare entière, avec les interactions entre ces éléments, constitue l’écosystème étudié.'
+        },
+        exercise: {
+          question: 'Pourquoi une communauté biologique et un écosystème ne désignent-ils pas exactement la même chose ?',
+          answer: 'Une communauté désigne les populations des différentes espèces présentes dans une zone. Un écosystème comprend cette communauté ainsi que les facteurs abiotiques et les interactions et échanges entre l’ensemble vivant et le milieu.'
+        },
+        exercises: [
+          {
+            question: 'Donner deux exemples de facteurs abiotiques pouvant influencer les organismes d’un lac.',
+            answer: 'La température de l’eau et sa concentration en oxygène dissous sont deux exemples. La lumière, le pH et les nutriments minéraux en sont d’autres.'
+          },
+          {
+            question: 'Une population de grenouilles appartient-elle à la communauté d’une mare ?',
+            answer: 'Oui. Une population est un ensemble d’individus d’une même espèce ; elle constitue l’une des populations qui composent la communauté.'
+          },
+          {
+            question: 'Un écosystème est-il nécessairement isolé des écosystèmes voisins ?',
+            answer: 'Non. Les écosystèmes échangent de la matière, de l’énergie et parfois des organismes. Les limites utilisées par les scientifiques servent surtout à définir le système étudié.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Biology 2e, 44.1 The Scope of Ecology',
+            url: 'https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology'
+          },
+          {
+            title: 'Convention sur la diversité biologique — Ecosystem Approach',
+            url: 'https://www.cbd.int/ecosystem'
+          },
+          {
+            title: 'OpenStax — Biology 2e, 46.1 Ecology of Ecosystems',
+            url: 'https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'biodiversite-interactions',
+      title: '2. Biodiversité et interactions entre les espèces',
+      field: 'Écologie des communautés · Diversité biologique et relations interspécifiques',
+      summary: 'Étudier la diversité du vivant, les relations entre espèces et les effets de ces interactions sur la structure des communautés.',
+      lesson: {
+        sections: [
+          'La biodiversité désigne la diversité du vivant à plusieurs niveaux : diversité génétique au sein des espèces, diversité des espèces et diversité des écosystèmes. Le nombre d’espèces présentes dans une communauté est appelé richesse spécifique. Cette mesure ne décrit toutefois pas à elle seule toute la biodiversité : l’abondance relative des espèces, leur identité, leurs fonctions écologiques et la diversité génétique comptent également. Deux milieux ayant le même nombre d’espèces peuvent donc présenter des compositions et des fonctionnements très différents.',
+
+          'Les organismes entretiennent des relations variées. La compétition apparaît lorsque plusieurs organismes utilisent une ressource limitante commune, comme la lumière, l’eau, un abri ou une proie. Elle peut se produire entre individus d’une même espèce ou entre espèces différentes. La prédation correspond à la consommation d’un organisme par un autre ; l’herbivorie est la consommation de végétaux ou d’algues par des animaux. Le parasitisme implique un organisme qui exploite un hôte et lui porte généralement préjudice sans le tuer immédiatement dans la plupart des interactions étudiées.',
+
+          'Dans le mutualisme, les deux partenaires retirent un bénéfice de leur interaction, sans que cette relation soit nécessairement obligatoire dans tous les cas. La pollinisation par les animaux en fournit un exemple : un animal peut obtenir une ressource alimentaire tandis que la plante bénéficie du transport du pollen. Le commensalisme désigne une interaction dans laquelle une espèce bénéficie de l’association sans effet notable démontré sur l’autre. Dans la nature, les effets peuvent dépendre des conditions écologiques ; une interaction ne se laisse pas toujours réduire à une catégorie fixe.',
+
+          'Certaines espèces ont un effet particulièrement important sur la structure d’une communauté. Une espèce clé de voûte exerce un effet écologique disproportionné par rapport à son abondance, souvent parce qu’elle régule des interactions ou maintient des habitats. Une espèce ingénieure modifie physiquement son environnement et crée des conditions utilisées par d’autres organismes. Ces notions ne sont pas synonymes : elles décrivent des mécanismes différents et doivent être appliquées à partir de données propres au système étudié.',
+
+          'La diversité des interactions contribue à la stabilité et au fonctionnement des communautés, mais il serait incorrect d’affirmer qu’une biodiversité élevée garantit automatiquement une stabilité identique dans tous les écosystèmes. Les effets dépendent notamment de la composition des espèces, de leurs fonctions, de la variabilité du milieu et de l’échelle temporelle considérée. Les réseaux d’interactions peuvent aussi être modifiés par l’arrivée ou la disparition d’une espèce, ce qui peut produire des effets en cascade.'
+        ],
+        example: {
+          statement: 'Une abeille visite une fleur et prélève du nectar. Pendant sa visite, du pollen est transporté vers une autre fleur compatible. Quelle interaction écologique est illustrée ?',
+          calculation: 'Il faut identifier les conséquences pour chacun des partenaires : l’abeille obtient une ressource alimentaire et la plante peut bénéficier du transfert de pollen nécessaire à sa reproduction.',
+          answer: 'Il s’agit d’un exemple de mutualisme : les deux partenaires peuvent en tirer un bénéfice. Cette relation contribue à la pollinisation, mais toutes les plantes ne dépendent pas des abeilles et toutes les visites ne garantissent pas une pollinisation efficace.'
+        },
+        exercise: {
+          question: 'Quelle différence existe entre richesse spécifique et abondance relative ?',
+          answer: 'La richesse spécifique correspond au nombre d’espèces présentes. L’abondance relative décrit la proportion représentée par chaque espèce dans l’ensemble des individus observés.'
+        },
+        exercises: [
+          {
+            question: 'Deux espèces utilisent la même ressource devenue rare. Quelle interaction peut apparaître ?',
+            answer: 'Une compétition peut apparaître, car les deux espèces utilisent une ressource limitante commune.'
+          },
+          {
+            question: 'Pourquoi une espèce clé de voûte ne se définit-elle pas uniquement par son abondance ?',
+            answer: 'Parce que son importance est liée à l’ampleur de ses effets sur la communauté, qui peuvent être disproportionnés par rapport à son abondance.'
+          },
+          {
+            question: 'Citer les trois niveaux classiques auxquels la biodiversité est étudiée.',
+            answer: 'La diversité génétique, la diversité des espèces et la diversité des écosystèmes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Biology 2e, 45.6 Community Ecology',
+            url: 'https://openstax.org/books/biology-2e/pages/45-6-community-ecology'
+          },
+          {
+            title: 'Convention sur la diversité biologique — Ecosystem Approach',
+            url: 'https://www.cbd.int/ecosystem'
+          },
+          {
+            title: 'IPBES — Global Assessment Report on Biodiversity and Ecosystem Services',
+            url: 'https://www.ipbes.net/global-assessment'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'reseaux-trophiques-energie',
+      title: '3. Réseaux trophiques, niveaux trophiques et transfert d’énergie',
+      field: 'Écologie fonctionnelle · Production biologique et flux énergétiques',
+      summary: 'Comprendre les producteurs, consommateurs et décomposeurs, les réseaux alimentaires, la productivité et les pertes d’énergie entre niveaux trophiques.',
+      lesson: {
+        sections: [
+          'Un réseau trophique représente les relations alimentaires entre organismes d’un écosystème. Une chaîne alimentaire décrit un trajet simplifié, tandis qu’un réseau trophique rassemble plusieurs chaînes reliées entre elles. Une flèche indique généralement le transfert de matière et d’énergie depuis l’organisme consommé vers le consommateur. Dans un milieu terrestre, les plantes constituent souvent la base de nombreux réseaux ; dans les milieux aquatiques, les algues et le phytoplancton jouent fréquemment ce rôle.',
+
+          'Les producteurs primaires fabriquent de la matière organique à partir de matière minérale. Les organismes photosynthétiques utilisent l’énergie lumineuse ; certains micro-organismes réalisent une production chimiosynthétique en utilisant l’énergie de réactions chimiques. Les consommateurs obtiennent leur matière organique en consommant d’autres organismes ou leurs produits. Les décomposeurs, notamment de nombreux champignons et bactéries, transforment la matière organique morte et les déchets en substances plus simples qui peuvent participer de nouveau aux cycles de matière.',
+
+          'Les niveaux trophiques décrivent la position d’un organisme dans les transferts alimentaires : producteurs primaires, consommateurs primaires, consommateurs secondaires et niveaux supérieurs. La position trophique réelle peut être complexe. Une espèce omnivore peut consommer des ressources appartenant à plusieurs niveaux ; sa position dépend donc de son régime alimentaire et du contexte. Les détritivores consomment des débris organiques, tandis que les décomposeurs réalisent une transformation chimique de la matière : ces rôles sont liés mais ne sont pas strictement identiques.',
+
+          'L’énergie circule dans l’écosystème et n’est pas recyclée comme les éléments chimiques. Une partie de l’énergie captée par les producteurs est utilisée pour leur respiration et leur fonctionnement ; une autre partie est stockée dans la biomasse. Lorsqu’un organisme est consommé, seule une fraction de l’énergie associée à sa matière est assimilée et incorporée à la biomasse du consommateur. Une part est non ingérée ou rejetée, et une autre est utilisée pour le métabolisme puis dissipée sous forme de chaleur. C’est pourquoi l’énergie disponible diminue généralement le long des transferts trophiques.',
+
+          'La productivité primaire brute correspond à l’énergie fixée par les producteurs grâce à la production primaire pendant une durée donnée. La productivité primaire nette correspond à la production restante après soustraction de la respiration des producteurs. Elle représente la production disponible pour la croissance des producteurs et, directement ou indirectement, pour les autres organismes. Les pyramides écologiques représentent le nombre d’individus, la biomasse ou l’énergie à chaque niveau. Une pyramide d’énergie est toujours orientée vers le bas au fil des transferts, tandis que certaines pyramides de biomasse ou de nombres peuvent être inversées selon le milieu et le rythme de renouvellement des organismes.'
+        ],
+        example: {
+          statement: 'Dans un modèle simplifié, des producteurs stockent 10 000 kJ d’énergie dans leur production nette. Si le transfert vers le niveau trophique suivant est de 10 % dans cet exemple, quelle quantité d’énergie est incorporée à la production de ce niveau ?',
+          calculation: 'Énergie transférée = 10 000 × 10 / 100 = 1 000 kJ. Le taux de 10 % est une hypothèse pédagogique de l’exercice, et non une constante universelle.',
+          answer: 'La production du niveau suivant représente 1 000 kJ dans ce modèle. L’efficacité réelle des transferts varie selon les organismes, les réseaux trophiques et les conditions écologiques.'
+        },
+        exercise: {
+          question: 'Pourquoi l’énergie diminue-t-elle généralement d’un niveau trophique au suivant ?',
+          answer: 'Parce qu’une partie de la matière n’est pas consommée ou assimilée et qu’une grande partie de l’énergie assimilée est utilisée pour le métabolisme puis dissipée sous forme de chaleur. Seule une fraction est incorporée à la nouvelle biomasse.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle principal des producteurs primaires ?',
+            answer: 'Ils fabriquent de la matière organique à partir de matière minérale en utilisant une source d’énergie, le plus souvent la lumière dans les écosystèmes étudiés.'
+          },
+          {
+            question: 'Quelle différence existe entre une chaîne alimentaire et un réseau trophique ?',
+            answer: 'Une chaîne représente une succession linéaire de relations alimentaires ; un réseau trophique rassemble plusieurs chaînes interconnectées.'
+          },
+          {
+            question: 'La pyramide d’énergie peut-elle être inversée ?',
+            answer: 'Non. La quantité d’énergie disponible diminue au fil des transferts trophiques ; une pyramide d’énergie est donc toujours orientée avec une base plus large que les niveaux supérieurs.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Biology 2e, 46.2 Energy Flow through Ecosystems',
+            url: 'https://openstax.org/books/biology-2e/pages/46-2-energy-flow-through-ecosystems'
+          },
+          {
+            title: 'OpenStax — Biology 2e, 46.1 Ecology of Ecosystems',
+            url: 'https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems'
+          },
+          {
+            title: 'OpenStax — Biology 2e, Chapter 46 Summary',
+            url: 'https://openstax.org/books/biology-2e/pages/46-chapter-summary'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'cycles-biogeochimiques',
+      title: '4. Cycles biogéochimiques : circulation de l’eau et des éléments',
+      field: 'Écologie des écosystèmes · Cycles de la matière et fonctionnement biogéochimique',
+      summary: 'Expliquer comment l’eau, le carbone, l’azote et le phosphore circulent entre organismes, atmosphère, hydrosphère, sols et roches.',
+      lesson: {
+        sections: [
+          'Contrairement à l’énergie, qui traverse les écosystèmes avant d’être dissipée sous forme de chaleur, la matière est continuellement transférée et recyclée entre les organismes et les compartiments physiques de la planète. Les cycles biogéochimiques désignent ces circulations d’éléments chimiques entre les êtres vivants, l’atmosphère, l’eau, les sols et les roches. Les réservoirs peuvent avoir des tailles et des temps de résidence très différents : certains échanges sont rapides, tandis que d’autres processus géologiques se déroulent sur de longues durées.',
+
+          'Le cycle de l’eau comprend notamment l’évaporation des surfaces, la transpiration des végétaux, la condensation, les précipitations, l’infiltration dans les sols et le ruissellement vers les cours d’eau et les océans. Les organismes prélèvent de l’eau et la restituent par différents processus. La végétation peut influencer l’infiltration, l’évapotranspiration et l’érosion, mais l’importance de ces effets dépend du climat, du sol, de la couverture végétale et de l’aménagement du territoire.',
+
+          'Le carbone circule entre l’atmosphère, les océans, les sols, les roches et les organismes. La photosynthèse incorpore du carbone inorganique dans la matière organique ; la respiration, la décomposition et la combustion en libèrent une partie sous forme de dioxyde de carbone. Les océans échangent du CO2 avec l’atmosphère et en stockent sous différentes formes dissoutes. Une partie du carbone est enfouie dans les sédiments sur de longues périodes. Les activités humaines, notamment la combustion des combustibles fossiles et les changements d’usage des terres, modifient les flux de carbone et augmentent la concentration atmosphérique de CO2.',
+
+          'Le cycle de l’azote comprend plusieurs transformations microbiennes. La fixation transforme le diazote atmosphérique en formes azotées utilisables par certains organismes ; la nitrification transforme l’ammonium en nitrites puis en nitrates dans des conditions appropriées ; l’assimilation incorpore l’azote minéral dans la matière organique ; l’ammonification libère de l’azote ammoniacal lors de la décomposition ; la dénitrification peut reconvertir des nitrates en formes gazeuses d’azote. Ces processus dépendent notamment de la présence de micro-organismes, de l’oxygène, de l’humidité et des caractéristiques du milieu.',
+
+          'Le phosphore circule principalement entre les roches, les sols, l’eau et les organismes. L’altération des roches libère des phosphates qui peuvent être absorbés par les végétaux et transférés dans les réseaux alimentaires. La décomposition restitue une partie du phosphore au milieu. À l’échelle globale, le cycle du phosphore ne possède pas de phase gazeuse atmosphérique importante comparable à celle de l’azote ou du carbone. Des apports excessifs de nutriments, notamment d’azote et de phosphore, peuvent favoriser l’eutrophisation de certains milieux aquatiques, avec une prolifération d’algues et, lors de la décomposition de cette biomasse, une diminution possible de l’oxygène dissous.'
+        ],
+        example: {
+          statement: 'Un cours d’eau reçoit un apport important de nutriments provenant d’un bassin agricole. On observe ensuite une forte croissance d’algues, puis une baisse de l’oxygène dissous. Quel mécanisme peut expliquer cette évolution ?',
+          calculation: 'L’apport de nutriments peut stimuler la production algale. Lorsque cette biomasse meurt, sa décomposition par les micro-organismes consomme de l’oxygène dissous. L’intensité du phénomène dépend des conditions du cours d’eau.',
+          answer: 'Cette séquence est compatible avec un phénomène d’eutrophisation. L’enrichissement en nutriments favorise la production biologique ; la décomposition de la matière organique peut ensuite réduire l’oxygène disponible et perturber les organismes aquatiques.'
+        },
+        exercise: {
+          question: 'Pourquoi dit-on que la matière est recyclée dans les écosystèmes alors que l’énergie circule ?',
+          answer: 'Les éléments chimiques sont transférés entre organismes et compartiments abiotiques puis réutilisés dans de nouveaux cycles. L’énergie, elle, est transférée entre niveaux trophiques et une partie est dissipée sous forme de chaleur à chaque transformation.'
+        },
+        exercises: [
+          {
+            question: 'Quel processus biologique incorpore le carbone minéral dans la matière organique chez les végétaux photosynthétiques ?',
+            answer: 'La photosynthèse.'
+          },
+          {
+            question: 'Quel rôle les micro-organismes jouent-ils dans le cycle de l’azote ?',
+            answer: 'Ils réalisent plusieurs transformations essentielles, notamment la fixation de l’azote, la nitrification, l’ammonification et la dénitrification.'
+          },
+          {
+            question: 'Pourquoi un excès de phosphore peut-il perturber un lac ?',
+            answer: 'Il peut contribuer à l’eutrophisation en favorisant une production excessive d’algues ou d’autres organismes photosynthétiques. Leur décomposition peut ensuite entraîner une baisse de l’oxygène dissous.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Biology 2e, 46.3 Biogeochemical Cycles',
+            url: 'https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles'
+          },
+          {
+            title: 'OpenStax — Biology 2e, Chapter 46 Summary',
+            url: 'https://openstax.org/books/biology-2e/pages/46-chapter-summary'
+          },
+          {
+            title: 'US Environmental Protection Agency — Nutrient Pollution',
+            url: 'https://www.epa.gov/nutrientpollution'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'dynamiques-succession-resilience',
+      title: '5. Dynamiques des écosystèmes : perturbations, succession et résilience',
+      field: 'Écologie des communautés · Changements temporels et réponses aux perturbations',
+      summary: 'Comprendre les changements des communautés, les successions écologiques, la résistance et la résilience des écosystèmes.',
+      lesson: {
+        sections: [
+          'Un écosystème n’est pas immuable. Sa composition et son fonctionnement varient avec les saisons, les fluctuations climatiques, les interactions biologiques et les perturbations. Une perturbation est un événement ou un processus qui modifie la structure ou le fonctionnement d’un système : tempête, sécheresse, incendie, crue, éruption volcanique ou intervention humaine, par exemple. Ses conséquences dépendent de son intensité, de sa durée, de sa fréquence, de la période où elle survient et de l’état initial de l’écosystème.',
+
+          'La succession écologique désigne les changements de composition des communautés au cours du temps. Lors d’une succession primaire, la colonisation commence sur un substrat nouvellement formé ou exposé où le sol développé est absent ou très peu présent, comme certaines surfaces de roche nue après une activité volcanique. Des organismes pionniers peuvent contribuer à l’altération du substrat et à l’accumulation de matière organique. Lors d’une succession secondaire, une perturbation affecte un milieu où subsistent généralement le sol, des graines, des racines, des organismes ou d’autres éléments biologiques facilitant la recolonisation.',
+
+          'La succession ne suit pas partout une trajectoire identique et ne conduit pas nécessairement à une communauté finale unique. Les espèces présentes, le climat, les sols, les perturbations répétées et les interactions biologiques influencent les trajectoires. Le modèle classique d’une communauté dite « climax » peut être utile dans certains contextes pédagogiques, mais il ne faut pas le présenter comme une destination universelle et obligatoire : de nombreux écosystèmes restent dynamiques et peuvent présenter plusieurs états relativement persistants.',
+
+          'La résistance écologique décrit la capacité d’un écosystème à limiter les changements provoqués par une perturbation. La résilience désigne sa capacité à absorber une perturbation et à retrouver, ou à réorganiser, des fonctions et structures après celle-ci. Ces notions ne sont pas interchangeables. Un système peut être peu modifié par une perturbation, donc résistant, ou être fortement modifié puis récupérer, donc résilient. La récupération peut être partielle et ne signifie pas nécessairement un retour exact à l’état antérieur.',
+
+          'Les écologues suivent les changements grâce à des observations répétées, des mesures de populations, des inventaires d’espèces, des relevés de végétation, des analyses de l’eau et des sols et des modèles. Les modèles conceptuels représentent les relations entre compartiments ; les modèles analytiques utilisent des équations simplifiées ; les modèles de simulation explorent des scénarios plus complexes. Tout modèle repose sur des hypothèses et des données : ses résultats sont des projections conditionnelles, pas des certitudes sur l’avenir.'
+        ],
+        example: {
+          statement: 'Après une tempête, une partie d’une forêt est renversée, mais le sol, des graines et certaines racines subsistent. Quel type de succession est le plus approprié pour décrire la recolonisation ?',
+          calculation: 'On examine l’état du substrat et les éléments biologiques qui subsistent. La présence d’un sol déjà formé et de vestiges biologiques indique que le milieu n’est pas un substrat neuf dépourvu de sol.',
+          answer: 'Il s’agit généralement d’une succession secondaire. La recolonisation peut être facilitée par le sol et les organismes ou propagules encore présents. La trajectoire exacte dépendra des conditions locales et des perturbations ultérieures.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre résistance et résilience écologiques ?',
+          answer: 'La résistance correspond à la capacité de limiter les changements pendant une perturbation. La résilience décrit la capacité à récupérer ou à se réorganiser après cette perturbation.'
+        },
+        exercises: [
+          {
+            question: 'Une surface de roche nue récemment exposée, sans sol développé, est colonisée progressivement. Quel processus peut être engagé ?',
+            answer: 'Une succession primaire peut commencer, avec l’installation progressive d’organismes pionniers et la formation graduelle de conditions favorables à d’autres organismes.'
+          },
+          {
+            question: 'Une succession écologique suit-elle nécessairement une série d’étapes identiques dans tous les milieux ?',
+            answer: 'Non. Les trajectoires dépendent du climat, du substrat, des espèces disponibles, des interactions et de l’histoire des perturbations.'
+          },
+          {
+            question: 'Pourquoi les résultats d’un modèle écologique doivent-ils être interprétés avec prudence ?',
+            answer: 'Parce qu’un modèle simplifie la réalité et dépend des hypothèses, des données et de l’échelle considérée. Il explore des scénarios et ne garantit pas une prédiction exacte.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Biology 2e, 45.6 Community Ecology',
+            url: 'https://openstax.org/books/biology-2e/pages/45-6-community-ecology'
+          },
+          {
+            title: 'OpenStax — Biology 2e, 46.1 Ecology of Ecosystems',
+            url: 'https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems'
+          },
+          {
+            title: 'OpenStax — Biology 2e, 45. Chapter Summary',
+            url: 'https://openstax.org/books/biology-2e/pages/45-chapter-summary'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'pressions-humaines-conservation',
+      title: '6. Pressions humaines, services écosystémiques et conservation',
+      field: 'Écologie de la conservation · Impacts anthropiques et gestion durable',
+      summary: 'Analyser les principales pressions humaines sur les écosystèmes, les contributions de la nature aux sociétés et les approches de conservation et de restauration.',
+      lesson: {
+        sections: [
+          'Les activités humaines modifient les écosystèmes par plusieurs mécanismes qui peuvent se cumuler. L’IPBES identifie cinq grands facteurs directs de changement de la biodiversité à l’échelle mondiale : les changements d’utilisation des terres et des mers, l’exploitation directe des organismes, le changement climatique, la pollution et les espèces exotiques envahissantes. Leur importance relative varie selon les régions et les milieux. Il faut donc éviter de transposer automatiquement un classement mondial à un écosystème local sans données spécifiques.',
+
+          'Le changement d’usage des terres peut détruire ou fragmenter les habitats, par exemple lors de la conversion d’une forêt en zone agricole ou urbaine. La fragmentation sépare les habitats en parcelles plus petites et parfois plus isolées, ce qui peut limiter les déplacements, les échanges génétiques et l’accès aux ressources. L’exploitation directe comprend notamment la pêche, la chasse, la récolte et l’exploitation forestière. Lorsqu’elle dépasse les capacités de renouvellement des populations, elle peut entraîner leur déclin et modifier les réseaux trophiques.',
+
+          'Le changement climatique modifie les températures, les régimes de précipitations, la fréquence de certains événements extrêmes et les conditions des milieux marins, notamment par le réchauffement et l’acidification liés à l’augmentation du CO2. Les espèces peuvent répondre par des changements de répartition, de calendrier biologique ou de fonctionnement, mais leur capacité d’adaptation dépend de leurs caractéristiques et de la vitesse des changements. La pollution peut être chimique, nutritive, plastique, lumineuse, sonore ou atmosphérique ; ses effets dépendent de la substance, de la dose, de la durée d’exposition et de la sensibilité des organismes.',
+
+          'Une espèce exotique est une espèce introduite en dehors de son aire de répartition naturelle par l’action humaine, volontairement ou accidentellement. Elle n’est pas automatiquement envahissante ni nuisible. On parle d’espèce exotique envahissante lorsqu’elle s’établit et se propage et qu’elle entraîne des impacts négatifs sur la biodiversité, les écosystèmes, l’économie ou la santé. Cette distinction évite de confondre origine géographique et impact écologique : l’évaluation doit reposer sur des éléments documentés.',
+
+          'Les écosystèmes contribuent au bien-être humain par des fonctions et des services variés : approvisionnement en nourriture, eau ou matériaux ; régulation de certains processus comme la qualité de l’eau, le climat local ou les risques d’inondation ; contributions culturelles, éducatives et récréatives ; et fonctions écologiques qui soutiennent ces contributions. Les expressions et classifications varient selon les cadres scientifiques. Ces bénéfices ne doivent pas réduire la nature à sa seule valeur économique : les dimensions écologiques, culturelles, sociales et intrinsèques sont également importantes.',
+
+          'La conservation cherche à maintenir la biodiversité et le fonctionnement des milieux, notamment par la protection des habitats, la réduction des pressions, la gestion durable des ressources et la restauration écologique. La restauration vise à aider un écosystème dégradé à retrouver des caractéristiques, des fonctions et une capacité d’autorégulation, sans garantir une reproduction exacte de son état historique. Une action efficace commence par un diagnostic, des objectifs mesurables, la prise en compte des usages humains et un suivi à long terme. La Convention sur la diversité biologique promeut une approche écosystémique intégrant les terres, les eaux, les ressources vivantes et les dimensions humaines dans une gestion cohérente.'
+        ],
+        example: {
+          statement: 'Une zone humide est drainée pour être aménagée. Le milieu perd une partie de ses habitats, la circulation de l’eau est modifiée et plusieurs espèces deviennent moins abondantes. Identifier deux pressions ou conséquences écologiques possibles.',
+          calculation: 'On relie l’action initiale aux mécanismes : le drainage transforme l’usage et le fonctionnement hydrologique du milieu ; la disparition ou la dégradation d’habitats peut réduire les ressources et les sites de reproduction disponibles.',
+          answer: 'Le drainage constitue un changement d’usage et une modification hydrologique. Il peut entraîner une perte ou une dégradation d’habitats et modifier les communautés biologiques. L’ampleur des conséquences doit être évaluée avec des données locales sur l’eau, les sols et les espèces.'
+        },
+        exercise: {
+          question: 'Pourquoi une espèce exotique n’est-elle pas nécessairement une espèce exotique envahissante ?',
+          answer: 'Parce que le terme exotique décrit une présence hors de l’aire naturelle liée à une introduction, tandis que le terme envahissante implique une propagation et des impacts négatifs documentés. Toutes les espèces introduites ne présentent pas ces caractéristiques.'
+        },
+        exercises: [
+          {
+            question: 'Citer les cinq grands facteurs directs mondiaux de changement de la biodiversité identifiés par l’IPBES.',
+            answer: 'Les changements d’utilisation des terres et des mers, l’exploitation directe des organismes, le changement climatique, la pollution et les espèces exotiques envahissantes.'
+          },
+          {
+            question: 'Donner un exemple de contribution de régulation fournie par un écosystème.',
+            answer: 'Une zone humide peut contribuer à la régulation de l’eau en ralentissant et en stockant temporairement une partie des écoulements. L’importance de cet effet dépend de sa configuration et des conditions hydrologiques.'
+          },
+          {
+            question: 'Pourquoi une opération de restauration écologique doit-elle être suivie dans le temps ?',
+            answer: 'Parce que la récupération peut être lente, partielle ou suivre une trajectoire différente de celle attendue. Le suivi permet de mesurer les résultats, de détecter les difficultés et d’adapter la gestion.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IPBES — Global Assessment Report on Biodiversity and Ecosystem Services',
+            url: 'https://www.ipbes.net/global-assessment'
+          },
+          {
+            title: 'IPBES — Models of drivers of biodiversity and ecosystem change',
+            url: 'https://www.ipbes.net/models-drivers-biodiversity-ecosystem-change'
+          },
+          {
+            title: 'Convention sur la diversité biologique — Ecosystem Approach',
+            url: 'https://www.cbd.int/ecosystem'
+          },
+          {
+            title: 'UNEP — Restoration Progress Report: Nature’s Comeback',
+            url: 'https://www.unep.org/en/publications/report/restoration-progress-report-natures-comeback-scaling-ecosystem-restoration'
+          }
+        ]
+      }
+    }
+  ]
+},
 
 
 ]
