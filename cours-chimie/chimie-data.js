@@ -338,7 +338,7 @@ window.courseCatalog = [
   }
   ,
   {
-    id: 'chimie-organique',
+    id: 'chimie-organique-mecanismes',
     title: 'Chimie organique et mécanismes',
     note: 'Familles fonctionnelles, isomérie et grands mécanismes de synthèse.',
     source: 'https://www.pccl.fr/terminale_programme_physique_chimie.pdf',
@@ -2266,3 +2266,4 @@ window.courseCatalog = [
 },
 
 ]
+
