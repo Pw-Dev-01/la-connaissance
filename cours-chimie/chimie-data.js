@@ -1089,5 +1089,1180 @@ window.courseCatalog = [
     ]
   },
 
+{
+  id: 'chimie-organique',
+  title: 'Chimie organique',
+  note: 'Six chapitres approfondis consacrés aux fondements structuraux de la chimie organique, à la nomenclature et à la stéréochimie, aux hydrocarbures, aux fonctions organiques, aux mécanismes réactionnels et à la détermination des structures. Les notions sont présentées dans un ordre pédagogique ; les exemples sont illustratifs et les propriétés dépendent des structures et des conditions considérées.',
+  chapters: [
+    {
+      id: 'fondements-structure-liaisons',
+      title: 'Fondements de la chimie organique : structure, liaisons et représentation des molécules',
+      field: 'Chimie organique · Structure moléculaire et liaison chimique',
+      summary: 'Étudier le rôle du carbone, les liaisons covalentes, la géométrie moléculaire, l’hybridation, la polarité et les différentes représentations utilisées pour décrire les molécules organiques.',
+      lesson: {
+        sections: [
+          'La chimie organique étudie principalement les composés du carbone. La capacité du carbone à former quatre liaisons covalentes et à établir des liaisons C–C stables permet de construire des chaînes, des ramifications et des cycles. Cette diversité structurale explique le très grand nombre de molécules organiques connues. La définition pratique ne signifie toutefois pas que tout composé contenant du carbone est classé comme organique : certains composés simples du carbone, comme les oxydes de carbone et les carbonates, sont habituellement étudiés en chimie minérale. Les molécules organiques peuvent être naturelles ou synthétiques.',
+          'Une liaison covalente correspond à la mise en commun d’une ou plusieurs paires d’électrons entre des atomes. Une liaison simple comporte une liaison sigma (σ), tandis qu’une double liaison comporte une liaison sigma et une liaison pi (π), et une triple liaison une liaison sigma et deux liaisons pi. Les liaisons pi limitent généralement la rotation libre autour de l’axe internucléaire, ce qui contribue à l’existence de certaines formes géométriques distinctes. Les électrons ne sont pas toujours partagés de manière égale : une différence d’électronégativité peut rendre une liaison polarisée et produire des charges partielles notées δ+ et δ−.',
+          'Les modèles d’hybridation sp3, sp2 et sp sont des descriptions utiles de la géométrie locale des atomes. Un carbone sp3 présente généralement une géométrie tétraédrique, avec des angles proches de 109,5° ; un carbone sp2 est généralement trigonal plan, avec des angles proches de 120° ; un carbone sp est généralement linéaire, avec un angle proche de 180°. Ces modèles permettent de relier la structure à la réactivité, mais ils ne doivent pas être considérés comme des objets physiques indépendants : ils constituent un modèle de description des orbitales et des liaisons.',
+          'Les molécules peuvent être représentées par des formules brutes, développées, semi-développées ou topologiques. La formule brute indique uniquement le nombre de chaque type d’atome et ne suffit pas toujours à identifier une structure. Dans une formule topologique, chaque sommet et chaque extrémité de segment représente généralement un atome de carbone ; les hydrogènes liés aux carbones sont implicites, tandis que les hétéroatomes et les hydrogènes qui leur sont liés sont écrits. Une lecture rigoureuse de ces représentations est indispensable pour reconnaître les liaisons, les cycles, les ramifications et les groupes fonctionnels.'
+        ],
+        example: {
+          statement: 'Comparer la géométrie locale du carbone dans le méthane CH4, l’éthène CH2=CH2 et l’éthyne HC≡CH.',
+          calculation: 'Dans CH4, le carbone forme quatre liaisons simples : modèle sp3 et géométrie tétraédrique. Dans CH2=CH2, chaque carbone participe à une double liaison : modèle sp2 et géométrie trigonale plane autour de chaque carbone. Dans HC≡CH, chaque carbone participe à une triple liaison : modèle sp et géométrie linéaire autour de chaque carbone.',
+          answer: 'Les géométries locales sont respectivement tétraédrique, trigonale plane et linéaire. Les angles idéalisés associés sont environ 109,5°, 120° et 180°.'
+        },
+        exercise: {
+          question: 'Pourquoi la formule brute C2H6O ne permet-elle pas, à elle seule, de distinguer l’éthanol du méthoxyméthane ?',
+          answer: 'Parce que ces deux molécules ont la même formule brute mais des enchaînements d’atomes différents : ce sont des isomères de constitution.'
+        },
+        exercises: [
+          {
+            question: 'Combien de liaisons covalentes forme habituellement un atome de carbone neutre dans les molécules organiques usuelles ?',
+            answer: 'Il forme habituellement quatre liaisons covalentes.'
+          },
+          {
+            question: 'Quelle est la composition d’une double liaison covalente entre deux carbones ?',
+            answer: 'Une liaison sigma et une liaison pi.'
+          },
+          {
+            question: 'Quelle géométrie est généralement associée à un carbone sp2 ?',
+            answer: 'Une géométrie trigonale plane, avec des angles proches de 120°.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 1 : Structure and Bonding',
+            url: 'https://openstax.org/books/organic-chemistry/pages/1-introduction'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, chapitre 20 : Introduction to Organic Chemistry',
+            url: 'https://openstax.org/books/chemistry-2e/pages/20-introduction'
+          },
+          {
+            title: 'IUPAC Gold Book — Functional group',
+            url: 'https://goldbook.iupac.org/terms/view/F02555'
+          }
+        ]
+      }
+    },
+    {
+      id: 'nomenclature-isomerie-stereochimie',
+      title: 'Nomenclature, isomérie et stéréochimie',
+      field: 'Chimie organique · Nomenclature systématique et organisation spatiale',
+      summary: 'Apprendre à nommer les molécules selon les principes IUPAC, à reconnaître les isomères de constitution et les stéréoisomères, et à décrire la configuration et la conformation.',
+      lesson: {
+        sections: [
+          'La nomenclature systématique permet d’associer à une structure chimique un nom non ambigu. La méthode substitutive de l’IUPAC repose notamment sur le choix d’une structure parentale, l’identification du groupe caractéristique principal, la numérotation qui respecte les règles de priorité et l’indication des substituants. Le nom doit renseigner sur la chaîne ou le cycle parent, les insaturations, les groupes caractéristiques et leurs positions. Les règles détaillées dépendent de la classe de composés ; il faut donc appliquer les recommandations de nomenclature plutôt que retenir une simple règle universelle de numérotation.',
+          'Des molécules qui possèdent la même formule brute peuvent présenter des structures différentes. Les isomères de constitution diffèrent par la connectivité des atomes : la chaîne carbonée peut être organisée différemment, la position d’un groupe peut changer ou la fonction chimique peut être différente. Les stéréoisomères ont la même connectivité mais diffèrent par l’organisation spatiale des atomes. Cette distinction est essentielle, car des isomères peuvent présenter des propriétés physiques, chimiques ou biologiques différentes.',
+          'La stéréochimie décrit l’organisation tridimensionnelle des molécules. Un centre stéréogène tétraédrique, souvent un carbone lié à quatre substituants différents, peut donner lieu à deux configurations. Les descripteurs R et S sont attribués selon les règles de priorité de Cahn–Ingold–Prelog ; ils décrivent une configuration et ne prédisent pas à eux seuls le sens de rotation du plan de la lumière polarisée. Deux énantiomères sont des images l’un de l’autre dans un miroir et non superposables. Les diastéréoisomères sont des stéréoisomères qui ne sont pas énantiomères.',
+          'La conformation correspond aux dispositions spatiales accessibles par rotation autour de liaisons simples, sans rupture de liaison. Dans l’éthane, les conformations décalée et éclipsée n’ont pas la même énergie ; la conformation décalée est plus stable dans le modèle usuel. Dans le cyclohexane, les conformations chaise sont particulièrement importantes et permettent de distinguer les positions axiales et équatoriales. Une inversion de chaise échange ces positions, sans changer la connectivité de la molécule. Il faut distinguer cette mobilité conformationnelle d’un changement de configuration, qui ne se produit pas par une simple rotation autour d’une liaison simple.'
+        ],
+        example: {
+          statement: 'L’éthanol et le méthoxyméthane ont tous deux la formule brute C2H6O. Déterminer leur relation structurale.',
+          calculation: 'L’éthanol possède l’enchaînement CH3–CH2–OH et une fonction alcool. Le méthoxyméthane possède l’enchaînement CH3–O–CH3 et une fonction éther. Les connexions entre les atomes ne sont donc pas identiques.',
+          answer: 'Ce sont des isomères de constitution, plus précisément des isomères de fonction.'
+        },
+        exercise: {
+          question: 'Deux molécules ont la même formule brute et la même connectivité, mais ne sont pas superposables et sont images l’une de l’autre dans un miroir. Comment les nomme-t-on ?',
+          answer: 'Ce sont des énantiomères.'
+        },
+        exercises: [
+          {
+            question: 'Que décrit la formule brute d’une molécule ?',
+            answer: 'Le nombre de chaque type d’atome, mais pas leur connectivité ni leur disposition spatiale.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre isomères de constitution et stéréoisomères ?',
+            answer: 'Les premiers diffèrent par la connectivité ; les seconds ont la même connectivité mais diffèrent par l’organisation spatiale.'
+          },
+          {
+            question: 'Les descripteurs R et S indiquent-ils directement le signe de la rotation optique ?',
+            answer: 'Non. R et S décrivent la configuration selon les règles CIP, pas le signe de la rotation optique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IUPAC — Brief Guide to the Nomenclature of Organic Chemistry',
+            url: 'https://iupac.qmul.ac.uk/BriefGuide/organic.html'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 3 : Alkanes and Their Stereochemistry',
+            url: 'https://openstax.org/books/organic-chemistry/pages/3-introduction'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 5 : Stereochemistry',
+            url: 'https://openstax.org/books/organic-chemistry/pages/5-introduction'
+          },
+          {
+            title: 'IUPAC Gold Book — Stereochemistry terminology',
+            url: 'https://goldbook.iupac.org/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'hydrocarbures',
+      title: 'Hydrocarbures : alcanes, alcènes, alcynes et composés aromatiques',
+      field: 'Chimie organique · Hydrocarbures aliphatiques et aromatiques',
+      summary: 'Étudier les familles d’hydrocarbures, leurs structures, leurs propriétés générales, leurs représentations et les grandes catégories de transformations qui leur sont associées.',
+      lesson: {
+        sections: [
+          'Les hydrocarbures sont des composés constitués uniquement de carbone et d’hydrogène. Les alcanes sont saturés : ils ne comportent que des liaisons simples C–C. Pour un alcane acyclique comportant une seule chaîne et sans insaturation, la formule moléculaire générale est CnH2n+2. Les chaînes peuvent être linéaires ou ramifiées. Les propriétés physiques, comme les températures de changement d’état, varient notamment avec la taille et la forme des molécules ; il ne faut pas attribuer une valeur unique à toute une famille.',
+          'Les alcènes possèdent au moins une double liaison carbone-carbone. Pour un alcène acyclique comportant une seule double liaison et aucune autre insaturation ni cycle, la formule générale est CnH2n. La double liaison comprend une liaison sigma et une liaison pi, ce qui limite la rotation autour de l’axe C=C. Lorsque les substituants le permettent, cette contrainte peut conduire à une isomérie géométrique décrite notamment par les descripteurs E et Z. Les réactions d’addition sur la double liaison sont une catégorie importante de la chimie des alcènes.',
+          'Les alcynes possèdent au moins une triple liaison carbone-carbone. Pour un alcyne acyclique comportant une seule triple liaison et aucune autre insaturation ni cycle, la formule générale est CnH2n−2. Les carbones de la triple liaison sont généralement décrits par un modèle sp et présentent une géométrie locale linéaire. Les alcynes peuvent participer à des réactions d’addition ; la nature du produit dépend de la transformation considérée et du degré de transformation de la triple liaison.',
+          'Les composés aromatiques possèdent un système électronique délocalisé qui leur confère une stabilité particulière. Le benzène est le modèle classique : ses six électrons π sont délocalisés sur le cycle. Il est donc trompeur de le représenter comme une simple alternance figée de trois doubles et de trois simples liaisons indépendantes. Les réactions caractéristiques du noyau benzénique conservent souvent l’aromaticité, notamment par substitution électrophile aromatique, plutôt que par addition qui détruirait le système aromatique. Le terme aromatique désigne ici une propriété électronique et structurale, non une odeur.'
+        ],
+        example: {
+          statement: 'Classer les molécules suivantes : propane C3H8, propène C3H6 et propyne C3H4.',
+          calculation: 'Le propane ne possède que des liaisons simples C–C : alcane. Le propène possède une double liaison C=C : alcène. Le propyne possède une triple liaison C≡C : alcyne.',
+          answer: 'Propane : alcane ; propène : alcène ; propyne : alcyne. Les formules correspondent aux relations générales des hydrocarbures acycliques ne comportant qu’une seule chaîne et, pour les deux dernières molécules, une seule insaturation.'
+        },
+        exercise: {
+          question: 'Pourquoi le benzène ne se comporte-t-il pas simplement comme un alcène ordinaire possédant trois doubles liaisons indépendantes ?',
+          answer: 'Parce que ses électrons π sont délocalisés sur l’ensemble du cycle, ce qui confère au système aromatique une stabilité particulière.'
+        },
+        exercises: [
+          {
+            question: 'Quelle famille d’hydrocarbures ne possède que des liaisons simples C–C ?',
+            answer: 'Les alcanes.'
+          },
+          {
+            question: 'Quel type de liaison caractérise les alcènes ?',
+            answer: 'Une double liaison carbone-carbone C=C.'
+          },
+          {
+            question: 'Que signifie le caractère aromatique du benzène ?',
+            answer: 'Il désigne un système cyclique conjugué à électrons π délocalisés présentant une stabilité particulière.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 20.1 : Hydrocarbons',
+            url: 'https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 7 : Alkenes',
+            url: 'https://openstax.org/books/organic-chemistry/pages/7-introduction'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 8 : Alkynes',
+            url: 'https://openstax.org/books/organic-chemistry/pages/8-introduction'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 16 : Chemistry of Benzene',
+            url: 'https://openstax.org/books/organic-chemistry/pages/16-introduction'
+          }
+        ]
+      }
+    },
+    {
+      id: 'groupes-fonctionnels-familles',
+      title: 'Groupes fonctionnels et grandes familles de composés organiques',
+      field: 'Chimie organique · Fonctions oxygénées, azotées et dérivés halogénés',
+      summary: 'Identifier les groupes fonctionnels et relier leur structure aux propriétés physiques, à l’acidité ou à la basicité et aux transformations typiques des familles organiques.',
+      lesson: {
+        sections: [
+          'Un groupe fonctionnel est un atome ou un ensemble d’atomes qui confère à une famille de composés des propriétés chimiques caractéristiques. Une molécule peut comporter plusieurs groupes fonctionnels ; ses propriétés résultent alors de leur présence, de leur position et de leurs interactions. L’identification des fonctions constitue une étape centrale de l’analyse d’une formule topologique et de la prévision qualitative de la réactivité. Le groupe fonctionnel est un outil de classification : il ne garantit pas que toutes les molécules d’une famille réagissent à la même vitesse ou dans les mêmes conditions.',
+          'Les alcools possèdent un groupe hydroxyle –OH lié à un carbone saturé ; les éthers comportent un atome d’oxygène lié à deux groupes carbonés. Les alcools peuvent former des liaisons hydrogène entre molécules, ce qui influence notamment leurs températures d’ébullition et leur miscibilité avec l’eau. Les phénols possèdent un groupe –OH directement lié à un cycle aromatique et ne doivent pas être confondus avec les alcools ordinaires. Les éthers présentent une structure différente et ne possèdent pas de liaison O–H.',
+          'Les composés carbonylés contiennent une liaison C=O. Les aldéhydes portent un groupe carbonyle en bout de chaîne, lié à au moins un hydrogène sur le carbone carbonylé ; les cétones possèdent un carbone carbonylé lié à deux groupes carbonés. Les acides carboxyliques portent le groupe –COOH, tandis que les esters possèdent le motif –COOR. Les aldéhydes et les cétones donnent notamment lieu à des réactions d’addition nucléophile sur le carbone du carbonyle. Les acides carboxyliques et leurs dérivés présentent une chimie distincte, notamment des réactions de substitution nucléophile acyle.',
+          'Les amines sont des dérivés de l’ammoniac dans lesquels un ou plusieurs hydrogènes sont remplacés par des groupes carbonés ; elles présentent généralement un caractère basique lié au doublet libre de l’azote, avec une basicité qui dépend de leur structure et du milieu. Les amides possèdent un azote lié à un carbone carbonylé ; leur doublet est délocalisé par résonance, ce qui modifie fortement leur basicité et la réactivité de la liaison C–N. Les nitriles comportent le groupe –C≡N. Les dérivés halogénés possèdent une liaison carbone-halogène polarisée, qui peut intervenir dans des réactions de substitution ou d’élimination selon la structure et les conditions.'
+        ],
+        example: {
+          statement: 'Identifier les fonctions présentes dans CH3CH2OH, CH3OCH3, CH3CHO et CH3COOH.',
+          calculation: 'CH3CH2OH contient –OH lié à un carbone saturé : alcool. CH3OCH3 contient un oxygène entre deux groupes carbonés : éther. CH3CHO contient un groupe terminal –CHO : aldéhyde. CH3COOH contient –COOH : acide carboxylique.',
+          answer: 'Les fonctions sont respectivement alcool, éther, aldéhyde et acide carboxylique.'
+        },
+        exercise: {
+          question: 'Quelle différence structurale distingue un aldéhyde d’une cétone ?',
+          answer: 'Dans un aldéhyde, le carbone du carbonyle est lié à au moins un hydrogène ; dans une cétone, il est lié à deux groupes carbonés.'
+        },
+        exercises: [
+          {
+            question: 'Quel groupe fonctionnel caractérise un alcool ?',
+            answer: 'Le groupe hydroxyle –OH lié à un carbone saturé.'
+          },
+          {
+            question: 'Quel motif caractérise un ester ?',
+            answer: 'Le motif –COOR.'
+          },
+          {
+            question: 'Pourquoi une amide est-elle généralement moins basique qu’une amine comparable ?',
+            answer: 'Parce que le doublet libre de l’azote de l’amide est délocalisé par résonance vers le groupe carbonyle.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IUPAC Gold Book — Functional group',
+            url: 'https://goldbook.iupac.org/terms/view/F02555'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 20.2 : Alcohols and Ethers',
+            url: 'https://openstax.org/books/chemistry-2e/pages/20-2-alcohols-and-ethers'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 20.3 : Aldehydes, Ketones, Carboxylic Acids, and Esters',
+            url: 'https://openstax.org/books/chemistry-2e/pages/20-3-aldehydes-ketones-carboxylic-acids-and-esters'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 20.4 : Amines and Amides',
+            url: 'https://openstax.org/books/chemistry-2e/pages/20-4-amines-and-amides'
+          },
+          {
+            title: 'IUPAC — Brief Guide to Organic Nomenclature',
+            url: 'https://iupac.qmul.ac.uk/BriefGuide/organic.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'mecanismes-reactionnels',
+      title: 'Réactivité et mécanismes des réactions organiques',
+      field: 'Chimie organique · Mécanismes, cinétique et transformations',
+      summary: 'Comprendre comment les liaisons se rompent et se forment, reconnaître les grandes catégories de réactions et interpréter les mécanismes polaires et radicalaires.',
+      lesson: {
+        sections: [
+          'Une équation-bilan indique les réactifs et les produits d’une transformation, mais ne décrit pas nécessairement les étapes microscopiques qui conduisent aux produits. Le mécanisme réactionnel précise quelles liaisons sont rompues et formées, dans quel ordre, et quels intermédiaires ou états de transition interviennent. Un mécanisme cohérent doit respecter la conservation des atomes et de la charge et rendre compte des produits observés. Les flèches courbes représentent le déplacement de doublets électroniques : une flèche à deux pointes correspond au déplacement d’une paire d’électrons, tandis qu’une flèche à une pointe représente le déplacement d’un électron dans un mécanisme radicalaire.',
+          'Les transformations organiques sont souvent classées en additions, éliminations, substitutions et réarrangements. Une addition combine des fragments sur une structure insaturée ou un centre réactif ; une élimination retire des groupes et conduit fréquemment à la formation d’une liaison multiple ; une substitution remplace un groupe par un autre ; un réarrangement réorganise les liaisons au sein d’une même structure moléculaire. Cette classification décrit le bilan de la transformation et ne suffit pas à déterminer son mécanisme détaillé.',
+          'Dans les mécanismes polaires, les doublets électroniques se déplacent entre des régions riches et pauvres en électrons. Un nucléophile est une espèce qui fournit un doublet pour former une liaison ; un électrophile accepte un doublet. La polarité des liaisons, les charges formelles, la stabilisation par résonance et l’encombrement stérique influencent la réactivité. Les réactions de substitution nucléophile peuvent suivre des mécanismes SN1 ou SN2. Dans un modèle SN2, la substitution se déroule en une étape concertée et conduit, dans le cas d’un centre stéréogène concerné, à une inversion de configuration. Dans un modèle SN1, le départ du groupe partant précède l’attaque du nucléophile et forme un intermédiaire carbocationique ; la stéréochimie observée dépend du contexte moléculaire et ne doit pas être résumée par une règle absolue de racémisation.',
+          'Les réactions d’élimination peuvent notamment suivre des mécanismes E1 ou E2. E1 comporte la formation préalable d’un carbocation, tandis que E2 se déroule en une étape concertée avec intervention simultanée de la base et du groupe partant. Les réactions radicalaires impliquent des espèces possédant un électron célibataire et sont décrites par des étapes d’initiation, de propagation et parfois de terminaison. Pour comparer des mécanismes, il faut examiner la structure du substrat, la nature des réactifs, le solvant, la température et les données cinétiques disponibles ; une seule caractéristique ne permet pas toujours de trancher.'
+        ],
+        example: {
+          statement: 'Classer les transformations suivantes selon leur bilan : CH2=CH2 + H2 → CH3CH3 ; CH3CH2Br → CH2=CH2 + HBr ; CH3Br + OH− → CH3OH + Br−.',
+          calculation: 'La première ajoute des atomes d’hydrogène sur une double liaison : addition. La deuxième élimine HBr et forme une double liaison : élimination. La troisième remplace Br par OH : substitution.',
+          answer: 'Les trois transformations sont respectivement une addition, une élimination et une substitution. Cette classification ne suffit pas, à elle seule, à préciser les mécanismes ni les conditions expérimentales.'
+        },
+        exercise: {
+          question: 'Quelle information supplémentaire un mécanisme apporte-t-il par rapport à une équation-bilan ?',
+          answer: 'Il décrit les étapes de rupture et de formation des liaisons, les déplacements électroniques, les intermédiaires éventuels et l’ordre des étapes.'
+        },
+        exercises: [
+          {
+            question: 'Que représente une flèche courbe à deux pointes dans un mécanisme polaire ?',
+            answer: 'Le déplacement d’un doublet d’électrons.'
+          },
+          {
+            question: 'Quelle différence fondamentale distingue SN1 de SN2 ?',
+            answer: 'SN1 comporte une étape préalable de départ du groupe partant ; SN2 est une substitution concertée en une étape.'
+          },
+          {
+            question: 'Quel est le rôle d’un nucléophile ?',
+            answer: 'Il fournit un doublet électronique pour former une nouvelle liaison.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Organic Chemistry, 6.1 : Kinds of Organic Reactions',
+            url: 'https://openstax.org/books/organic-chemistry/pages/6-1-kinds-of-organic-reactions'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, 6.2 : How Organic Reactions Occur: Mechanisms',
+            url: 'https://openstax.org/books/organic-chemistry/pages/6-2-how-organic-reactions-occur-mechanisms'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 11 : Nucleophilic Substitution and Elimination Reactions',
+            url: 'https://openstax.org/books/organic-chemistry/pages/11-introduction'
+          },
+          {
+            title: 'Royal Society of Chemistry — Investigate Organic Reaction Mechanisms',
+            url: 'https://edu.rsc.org/resources/investigate-organic-reaction-mechanisms/383.article'
+          }
+        ]
+      }
+    },
+    {
+      id: 'analyse-spectroscopique-structure',
+      title: 'Analyse des molécules : spectroscopies et détermination structurale',
+      field: 'Chimie organique · Spectrométrie de masse et spectroscopies IR, RMN et UV-visible',
+      summary: 'Découvrir comment les données spectrales permettent de déterminer une formule, d’identifier des groupes fonctionnels et de reconstruire progressivement une structure moléculaire.',
+      lesson: {
+        sections: [
+          'La détermination d’une structure organique repose sur la combinaison de plusieurs informations complémentaires. La formule brute et la masse moléculaire contraignent les structures possibles, tandis que les spectres renseignent sur les groupes fonctionnels, les environnements atomiques et les systèmes électroniques. Une méthode isolée fournit rarement une preuve complète : l’interprétation fiable consiste à confronter les résultats de plusieurs techniques avec une structure candidate et à vérifier que toutes les données sont compatibles.',
+          'La spectrométrie de masse mesure le rapport masse/charge des ions produits à partir d’un échantillon. Selon la méthode d’ionisation, on peut observer un ion moléculaire ou des ions associés à la molécule, ainsi que des fragments issus de sa dissociation. La masse exacte, lorsque l’instrumentation le permet, peut aider à distinguer des formules élémentaires possibles ; les motifs de fragmentation apportent des indices structuraux. Il faut cependant tenir compte de la méthode d’ionisation, de la charge des ions et des incertitudes de mesure : un pic isolé ne suffit pas à identifier sans ambiguïté une molécule.',
+          'La spectroscopie infrarouge (IR) étudie l’absorption d’un rayonnement associée à des transitions vibrationnelles. Les bandes observées renseignent sur certains types de liaisons et groupes fonctionnels. La région dite des groupes fonctionnels permet notamment de rechercher des signaux caractéristiques de liaisons O–H, N–H ou C=O ; la région d’empreinte digitale contient de nombreuses bandes qui peuvent aider à comparer un spectre à une référence. Les positions et intensités des bandes dépendent de l’environnement moléculaire et des conditions de mesure : les valeurs doivent être interprétées comme des indices et non comme des identifiants infaillibles.',
+          'La résonance magnétique nucléaire (RMN) renseigne sur les environnements chimiques de noyaux possédant un spin, notamment 1H et 13C. Le déplacement chimique dépend de l’environnement électronique du noyau. En RMN du proton, le nombre de signaux indique le nombre d’environnements de protons distinguables dans les conditions de l’expérience ; l’intégration donne des informations sur leurs proportions relatives et la multiplicité peut renseigner sur les couplages avec des noyaux voisins. En RMN du carbone 13, les signaux aident à distinguer les environnements carbonés. L’interprétation complète doit tenir compte de la symétrie, de l’équivalence des noyaux et des paramètres expérimentaux.',
+          'La spectroscopie UV-visible étudie l’absorption de rayonnements associée à des transitions électroniques. En chimie organique, elle est particulièrement utile pour examiner certains chromophores et systèmes conjugués. Une absorption peut être influencée par la structure électronique, le solvant et les substituants. En pratique, on confronte les données UV-visible aux informations de RMN, d’IR et de spectrométrie de masse. La cohérence globale de l’ensemble est plus probante qu’une attribution fondée sur une seule bande ou un seul signal.'
+        ],
+        example: {
+          statement: 'Un composé inconnu présente une bande IR intense compatible avec un groupe carbonyle. Expliquer ce que cette observation permet de conclure et ce qu’elle ne permet pas de conclure.',
+          calculation: 'Une absorption compatible avec une vibration C=O constitue un indice en faveur d’un composé contenant un carbonyle. Il faut ensuite examiner les autres bandes, la formule brute et les données de RMN ou de spectrométrie de masse pour distinguer, par exemple, un aldéhyde, une cétone, un ester, un acide carboxylique ou un amide.',
+          answer: 'Le signal suggère la présence d’un carbonyle, mais ne permet pas à lui seul d’identifier la molécule ni de déterminer précisément sa famille. Une attribution fiable nécessite plusieurs données concordantes.'
+        },
+        exercise: {
+          question: 'Quelle technique est particulièrement adaptée à l’identification des environnements des protons et des carbones dans une molécule ?',
+          answer: 'La résonance magnétique nucléaire (RMN), notamment la RMN du 1H et du 13C.'
+        },
+        exercises: [
+          {
+            question: 'Quelle information fournit principalement la spectrométrie de masse ?',
+            answer: 'Des informations sur le rapport masse/charge des ions, la masse moléculaire ou exacte selon la méthode, et des indices de fragmentation.'
+          },
+          {
+            question: 'À quoi sert principalement un spectre infrarouge en chimie organique ?',
+            answer: 'À repérer des vibrations caractéristiques et à obtenir des indices sur les liaisons et les groupes fonctionnels.'
+          },
+          {
+            question: 'Pourquoi faut-il combiner plusieurs techniques spectroscopiques ?',
+            answer: 'Parce que chaque technique apporte des informations partielles ; leur concordance permet de réduire les structures possibles et de renforcer l’identification.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 12 : Structure Determination',
+            url: 'https://openstax.org/books/organic-chemistry/pages/12-why-this-chapter'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, 12.6 : Infrared Spectroscopy',
+            url: 'https://openstax.org/books/organic-chemistry/pages/12-6-infrared-spectroscopy'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, chapitre 13 : Nuclear Magnetic Resonance Spectroscopy',
+            url: 'https://openstax.org/books/organic-chemistry/pages/13-why-this-chapter'
+          },
+          {
+            title: 'OpenStax — Organic Chemistry, 12 Summary : Mass Spectrometry and Infrared Spectroscopy',
+            url: 'https://openstax.org/books/organic-chemistry/pages/12-summary'
+          }
+        ]
+      }
+    }
+  ]
+},
 
-];
+{
+  id: 'equations-chimiques',
+  title: 'Équations chimiques',
+  note: 'Six chapitres approfondis consacrés à l’écriture et à l’interprétation des équations chimiques, à la conservation de la matière, à l’ajustement stœchiométrique, aux états physiques et conditions réactionnelles, à la classification des transformations, aux équations ioniques et aux réactions d’oxydoréduction. Les exemples utilisent des réactions représentatives et des équations équilibrées. Les coefficients stœchiométriques sont distingués des indices des formules chimiques ; les états physiques et les charges sont explicités lorsque cela est pertinent.',
+  chapters: [
+    {
+      id: 'fondements-equations-chimiques',
+      title: 'Fondements des équations chimiques : écriture, lecture et signification',
+      field: 'Chimie générale · Écriture symbolique des transformations chimiques',
+      summary: 'Comprendre la structure d’une équation chimique, reconnaître les réactifs et les produits, interpréter les coefficients stœchiométriques et distinguer une équation symbolique d’une transformation réellement observée.',
+      lesson: {
+        sections: [
+          'Une équation chimique est une représentation symbolique d’une transformation chimique. Les espèces consommées, appelées réactifs, sont généralement écrites à gauche de la flèche ; les espèces formées, appelées produits, sont écrites à droite. Les formules chimiques identifient les espèces et les coefficients placés devant ces formules indiquent les proportions stœchiométriques. Selon la signification recherchée, la flèche peut représenter une transformation nette dans un sens, tandis que le symbole d’équilibre indique une réaction réversible à l’équilibre. Une équation chimique ne décrit pas nécessairement le mécanisme microscopique complet : elle représente principalement le bilan global de la transformation.',
+          'Une formule chimique indique la composition d’une espèce. Dans H2O, l’indice 2 signifie qu’une entité d’eau contient deux atomes d’hydrogène pour un atome d’oxygène. Dans 2 H2O, le coefficient 2 indique deux entités d’eau. Il faut impérativement distinguer le coefficient de l’indice : modifier un indice change la nature de l’espèce chimique, tandis que modifier un coefficient change uniquement la quantité représentée. C’est pourquoi l’ajustement d’une équation s’effectue en modifiant les coefficients et non les formules des substances.',
+          'Les coefficients d’une équation équilibrée expriment des rapports entre nombres d’entités et, à l’échelle macroscopique, entre quantités de matière exprimées en moles. Dans l’équation 2 H2 + O2 → 2 H2O, deux entités de dihydrogène réagissent avec une entité de dioxygène pour former deux entités d’eau. À l’échelle molaire, 2 mol de H2 réagissent avec 1 mol de O2 pour former 2 mol de H2O, si la transformation suit cette stœchiométrie. Ces coefficients ne donnent pas directement les masses des substances : celles-ci doivent être calculées à partir des masses molaires.',
+          'Les symboles associés aux équations apportent des informations supplémentaires. La flèche → représente une transformation nette dans le sens indiqué ; le symbole ⇌ peut représenter une réaction en équilibre. Les indications (s), (l), (g) et (aq) désignent respectivement l’état solide, liquide, gazeux et une espèce en solution aqueuse. Une notation telle que Δ au-dessus de la flèche indique un apport de chaleur, tandis qu’un catalyseur peut être indiqué au-dessus ou au-dessous de la flèche. Ces indications décrivent des conditions ou des états et ne doivent pas être confondues avec les coefficients.',
+          'Une équation correctement écrite doit respecter la conservation des éléments chimiques et, lorsque des espèces chargées apparaissent, la conservation de la charge électrique. Elle doit également correspondre à une transformation chimiquement plausible dans les conditions indiquées. L’écriture d’une équation suppose donc de connaître les formules des réactifs et des produits, leurs états physiques lorsque ceux-ci sont connus, ainsi que le sens de la transformation. Une équation équilibrée n’est pas à elle seule une preuve expérimentale que la réaction se produit spontanément ou rapidement.'
+        ],
+        formula: {
+          label: 'STRUCTURE GÉNÉRALE D’UNE ÉQUATION CHIMIQUE',
+          text: 'a A + b B → c C + d D'
+        },
+        equationDetails: [
+          {
+            title: 'Écriture générale d’une équation chimique',
+            formula: 'a A + b B → c C + d D',
+            explanation: 'Les espèces A et B sont les réactifs ; C et D sont les produits. Les nombres a, b, c et d sont les coefficients stœchiométriques. Ils indiquent les proportions dans lesquelles les entités chimiques interviennent dans le bilan réactionnel.',
+            parameters: 'A, B, C, D : espèces chimiques ; a, b, c, d : coefficients stœchiométriques entiers dans l’écriture usuelle ; → : sens net de la transformation représentée.',
+            example: '2 H2(g) + O2(g) → 2 H2O(l).',
+            result: 'Le rapport stœchiométrique est 2 : 1 : 2 entre le dihydrogène, le dioxygène et l’eau.'
+          },
+          {
+            title: 'Distinction entre coefficient et indice',
+            formula: '2 H2O ≠ H2O2',
+            explanation: 'Le coefficient 2 placé devant H2O représente deux entités d’eau. L’indice 2 dans H2O2 appartient à la formule et décrit une autre espèce chimique, le peroxyde d’hydrogène.',
+            parameters: '2 : coefficient multiplicatif ; indice 2 : nombre d’atomes de l’élément concerné dans une entité de la formule.',
+            example: '2 H2O représente 4 atomes d’hydrogène et 2 atomes d’oxygène au total.',
+            result: 'Un coefficient multiplie toute la formule ; un indice définit la composition de l’espèce.'
+          }
+        ],
+        example: {
+          statement: 'Interpréter l’équation de formation de l’eau : 2 H2(g) + O2(g) → 2 H2O(l).',
+          calculation: 'À gauche : 2 molécules de H2 contiennent 4 atomes d’hydrogène et 1 molécule de O2 contient 2 atomes d’oxygène. À droite : 2 molécules de H2O contiennent 4 atomes d’hydrogène et 2 atomes d’oxygène.',
+          answer: 'L’équation représente la réaction de 2 molécules de dihydrogène avec 1 molécule de dioxygène pour former 2 molécules d’eau. Les nombres d’atomes de chaque élément sont identiques des deux côtés.'
+        },
+        exercise: {
+          question: 'Dans l’équation 3 CO2 + 2 H2O → C3H6O3 + 3 O2, que représente le coefficient 3 placé devant CO2 ?',
+          answer: 'Il représente trois entités de dioxyde de carbone ou, à l’échelle macroscopique, une proportion de 3 mol de CO2 pour les autres espèces selon les coefficients de l’équation.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on les substances présentes à gauche de la flèche ?',
+            answer: 'Les réactifs.'
+          },
+          {
+            question: 'Que signifie l’indication (aq) ?',
+            answer: 'L’espèce est présente en solution aqueuse.'
+          },
+          {
+            question: 'Pourquoi ne doit-on pas modifier les indices d’une formule lors de l’équilibrage ?',
+            answer: 'Parce que les indices définissent la composition et l’identité chimique de l’espèce.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IUPAC Gold Book — Chemical reaction equation',
+            url: 'https://goldbook.iupac.org/terms/view/C01034'
+          },
+          {
+            title: 'IUPAC Gold Book — Stoichiometry',
+            url: 'https://goldbook.iupac.org/terms/view/S06026'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 4.1 : Writing and Balancing Chemical Equations',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations'
+          }
+        ]
+      }
+    },
+    {
+      id: 'conservation-matiere-equilibrage',
+      title: 'Conservation de la matière et équilibrage des équations chimiques',
+      field: 'Chimie générale · Conservation des éléments et ajustement stœchiométrique',
+      summary: 'Maîtriser les principes de conservation des atomes et des charges, apprendre à ajuster les coefficients et vérifier mathématiquement une équation chimique.',
+      lesson: {
+        sections: [
+          'L’équilibrage d’une équation chimique repose sur la conservation des éléments chimiques. Dans une transformation chimique ordinaire, les atomes ne sont ni créés ni détruits : ils sont réorganisés pour former de nouvelles espèces. Pour chaque élément, le nombre total d’atomes présents dans les réactifs doit donc être égal au nombre total d’atomes présents dans les produits. Pour une équation ionique, il faut également conserver la charge électrique totale. Ces règles constituent des contraintes fondamentales de l’écriture stœchiométrique.',
+          'L’équilibrage consiste à déterminer des coefficients placés devant les formules chimiques. On commence généralement par écrire correctement les formules des réactifs et des produits, puis on compte les atomes de chaque élément. On ajuste les coefficients afin d’obtenir le même nombre d’atomes de chaque élément des deux côtés. Il est souvent pratique de commencer par les éléments présents dans le moins grand nombre d’espèces, puis de traiter l’hydrogène et l’oxygène lorsque cela simplifie le calcul. Cette stratégie est une méthode de travail et non une règle absolue.',
+          'Les coefficients obtenus doivent être ramenés aux plus petits entiers possibles. Une équation peut être équilibrée avec plusieurs ensembles proportionnels de coefficients ; la forme conventionnelle utilise les plus petits nombres entiers. Pour vérifier le résultat, on recompte chaque élément à gauche et à droite. Une vérification supplémentaire est nécessaire pour les équations ioniques : la somme algébrique des charges doit également être identique des deux côtés. L’équilibrage ne consiste donc pas à rendre les molécules identiques de part et d’autre, mais à respecter les bilans atomiques et électriques.',
+          'Certaines équations simples peuvent être équilibrées par inspection, mais les réactions plus complexes peuvent nécessiter une méthode algébrique. On attribue alors une variable à chaque coefficient, on écrit une équation de conservation pour chaque élément et on résout le système obtenu. Si les espèces sont chargées, une contrainte supplémentaire de conservation de la charge est ajoutée. Cette approche permet de traiter systématiquement les équations comportant plusieurs réactifs et produits.',
+          'Il faut distinguer la conservation des atomes de la conservation des molécules. Une transformation chimique modifie les associations entre atomes, mais conserve les noyaux atomiques dans les réactions chimiques ordinaires. Les réactions nucléaires relèvent d’un autre domaine et peuvent modifier la nature des noyaux. Enfin, une équation équilibrée exprime un bilan de matière cohérent ; elle ne précise pas nécessairement les étapes intermédiaires ni la vitesse de réaction.'
+        ],
+        formula: {
+          label: 'PRINCIPE DE CONSERVATION DES ATOMES',
+          text: 'N(élément, réactifs) = N(élément, produits)'
+        },
+        equationDetails: [
+          {
+            title: 'Conservation du nombre d’atomes',
+            formula: 'Σ nᵢ(élément, réactifs) = Σ nᵢ(élément, produits)',
+            explanation: 'Pour chaque élément chimique, le nombre total d’atomes compté en tenant compte des coefficients doit être identique dans les réactifs et dans les produits.',
+            parameters: 'nᵢ : nombre d’atomes de l’élément considéré dans une formule ; les coefficients stœchiométriques multiplient le nombre d’atomes de chaque formule.',
+            example: 'Dans 2 H2 + O2 → 2 H2O : hydrogène = 2 × 2 = 4 à gauche et 2 × 2 = 4 à droite ; oxygène = 2 à gauche et 2 × 1 = 2 à droite.',
+            result: 'Les bilans atomiques de l’hydrogène et de l’oxygène sont égaux.'
+          },
+          {
+            title: 'Conservation de la charge électrique',
+            formula: 'Σ q(réactifs) = Σ q(produits)',
+            explanation: 'Dans une équation ionique, la somme algébrique des charges électriques doit être identique de chaque côté. Les coefficients multiplient également les charges des ions concernés.',
+            parameters: 'q : charge électrique algébrique totale des espèces représentées, exprimée en charge élémentaire e ou en coulombs selon le contexte.',
+            example: 'Fe²⁺ → Fe³⁺ + e⁻ : charge à gauche = +2 ; charge à droite = +3 − 1 = +2.',
+            result: 'La demi-équation conserve la charge totale.'
+          }
+        ],
+        example: {
+          statement: 'Équilibrer l’équation de combustion du méthane : CH4 + O2 → CO2 + H2O.',
+          calculation: 'Le carbone est déjà équilibré : 1 atome de chaque côté. Le méthane contient 4 hydrogènes : il faut donc 2 H2O. Les produits contiennent alors 2 atomes d’oxygène dans CO2 et 2 dans 2 H2O, soit 4 atomes au total. Il faut donc 2 O2.',
+          answer: 'CH4 + 2 O2 → CO2 + 2 H2O. Le bilan comporte 1 carbone, 4 hydrogènes et 4 oxygènes de chaque côté.'
+        },
+        exercise: {
+          question: 'Pourquoi l’équation H2 + O2 → H2O n’est-elle pas équilibrée ?',
+          answer: 'Parce qu’elle présente 2 atomes d’oxygène à gauche et seulement 1 à droite. La forme équilibrée est 2 H2 + O2 → 2 H2O.'
+        },
+        exercises: [
+          {
+            question: 'Quelle grandeur doit être conservée pour chaque élément dans une équation chimique équilibrée ?',
+            answer: 'Le nombre total d’atomes de cet élément.'
+          },
+          {
+            question: 'Quelle autre conservation faut-il vérifier dans une équation ionique ?',
+            answer: 'La conservation de la charge électrique totale.'
+          },
+          {
+            question: 'Pourquoi utilise-t-on les plus petits coefficients entiers ?',
+            answer: 'Pour exprimer le rapport stœchiométrique dans sa forme entière la plus simple.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 4.1 : Writing and Balancing Chemical Equations',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 4.2 : Classifying Chemical Reactions',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions'
+          },
+          {
+            title: 'IUPAC Gold Book — Stoichiometry',
+            url: 'https://goldbook.iupac.org/terms/view/S06026'
+          }
+        ]
+      }
+    },
+    {
+      id: 'etats-physiques-conditions-reactionnelles',
+      title: 'États physiques, conditions expérimentales et représentation des réactions',
+      field: 'Chimie générale · États de la matière et conditions de transformation',
+      summary: 'Lire les symboles d’état, représenter les espèces dissoutes, comprendre les conditions inscrites sur les flèches et distinguer les transformations complètes des réactions à l’équilibre.',
+      lesson: {
+        sections: [
+          'Les états physiques indiqués dans une équation apportent des informations sur les conditions dans lesquelles les espèces sont représentées. Le symbole (s) correspond à un solide, (l) à un liquide, (g) à un gaz et (aq) à une espèce en solution aqueuse. Une espèce notée (aq) est présente dans l’eau sous une forme dissoute ; selon sa nature, elle peut être constituée d’ions ou de molécules. Ces symboles ne changent pas la composition de la formule chimique, mais précisent l’état de l’espèce dans le système étudié.',
+          'La présence d’un solide formé au cours d’une réaction en solution peut être représentée par une flèche accompagnée de la notation (s). La formation d’un précipité est une transformation dans laquelle une espèce peu soluble apparaît sous forme solide à partir d’espèces initialement dissoutes. À l’inverse, une espèce soluble peut rester en solution sous forme d’ions. Il est donc important de connaître les propriétés de solubilité et les conditions expérimentales avant de choisir les états physiques dans l’équation.',
+          'Les conditions réactionnelles peuvent être indiquées au-dessus ou au-dessous de la flèche. Le symbole Δ signale généralement un chauffage ; hν peut indiquer une irradiation lumineuse ; un catalyseur peut être mentionné à proximité de la flèche. Ces indications ne sont pas des réactifs consommés dans le bilan, sauf si la substance intervient effectivement dans l’équation. Un catalyseur modifie la vitesse d’une réaction en proposant un chemin réactionnel différent et est régénéré au cours du cycle catalytique global.',
+          'La flèche simple et la flèche d’équilibre ne sont pas interchangeables. Une flèche simple représente le sens net d’une transformation dans l’écriture choisie, tandis que le symbole ⇌ représente une réaction réversible ou un état d’équilibre selon le contexte. À l’équilibre chimique, les réactions directe et inverse continuent à se produire à des vitesses égales ; les concentrations des espèces restent alors constantes dans le temps si les conditions macroscopiques ne changent pas. Cela ne signifie pas que les quantités de réactifs et de produits sont nécessairement égales.',
+          'La représentation d’une réaction doit rester fidèle au système réel. Une équation moléculaire peut être suffisante pour décrire un bilan global, mais une équation ionique peut être plus informative lorsque des électrolytes sont dissous dans l’eau. Les états physiques, la température, le solvant et les conditions de pression peuvent influencer les espèces présentes et la position d’un équilibre. Une écriture rigoureuse doit donc préciser les informations utiles sans ajouter des conditions qui ne sont pas connues.'
+        ],
+        formula: {
+          label: 'NOTATION DES ÉTATS PHYSIQUES',
+          text: '(s) solide ; (l) liquide ; (g) gaz ; (aq) solution aqueuse'
+        },
+        equationDetails: [
+          {
+            title: 'Formation d’un précipité',
+            formula: 'Ag⁺(aq) + Cl⁻(aq) → AgCl(s)',
+            explanation: 'Les ions argent et chlorure dissous forment du chlorure d’argent solide. L’équation ionique nette représente directement les espèces qui participent à la formation du précipité.',
+            parameters: 'Ag⁺ : ion argent(I) en solution ; Cl⁻ : ion chlorure en solution ; AgCl(s) : chlorure d’argent solide.',
+            example: 'Le mélange de solutions contenant Ag⁺ et Cl⁻ peut conduire à la formation d’un solide AgCl lorsque les conditions de concentration permettent la précipitation.',
+            result: 'Un précipité de chlorure d’argent est représenté par AgCl(s).'
+          },
+          {
+            title: 'Représentation d’une réaction à l’équilibre',
+            formula: 'N2(g) + 3 H2(g) ⇌ 2 NH3(g)',
+            explanation: 'La double flèche indique que la réaction peut se produire dans les deux sens. À l’équilibre, les vitesses des réactions directe et inverse sont égales.',
+            parameters: 'N2 : diazote ; H2 : dihydrogène ; NH3 : ammoniac ; ⇌ : représentation d’un équilibre chimique.',
+            example: 'La synthèse de l’ammoniac est une réaction réversible dont la composition à l’équilibre dépend notamment de la température et de la pression.',
+            result: 'L’équilibre ne signifie pas que les concentrations de N2, H2 et NH3 sont égales.'
+          }
+        ],
+        example: {
+          statement: 'Interpréter l’équation AgNO3(aq) + NaCl(aq) → AgCl(s) + NaNO3(aq).',
+          calculation: 'Les réactifs AgNO3 et NaCl sont dissous dans l’eau. Le produit AgCl est indiqué comme solide, ce qui signale la formation d’un précipité. Le nitrate de sodium reste représenté en solution aqueuse.',
+          answer: 'La réaction conduit à la formation de chlorure d’argent solide à partir d’ions présents dans deux solutions aqueuses. L’équation moléculaire est équilibrée avec un rapport 1 : 1 : 1 : 1.'
+        },
+        exercise: {
+          question: 'Que signifie le symbole (g) dans une équation chimique ?',
+          answer: 'Il indique que l’espèce est à l’état gazeux.'
+        },
+        exercises: [
+          {
+            question: 'Que représente le symbole (s) ?',
+            answer: 'L’état solide.'
+          },
+          {
+            question: 'Que signifie la notation (aq) ?',
+            answer: 'L’espèce est dissoute dans l’eau et présente en solution aqueuse.'
+          },
+          {
+            question: 'À l’équilibre chimique, les concentrations des réactifs et des produits sont-elles nécessairement égales ?',
+            answer: 'Non. Elles restent constantes à l’équilibre, mais leurs valeurs ne sont pas nécessairement égales.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 4.1 : Writing and Balancing Chemical Equations',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 13.1 : Chemical Equilibria',
+            url: 'https://openstax.org/books/chemistry-2e/pages/13-1-chemical-equilibria'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 13.2 : Equilibrium Constants',
+            url: 'https://openstax.org/books/chemistry-2e/pages/13-2-equilibrium-constants'
+          }
+        ]
+      }
+    },
+    {
+      id: 'classification-transformations-chimiques',
+      title: 'Classification des réactions et écriture des équations correspondantes',
+      field: 'Chimie générale · Types de transformations chimiques',
+      summary: 'Reconnaître les réactions de synthèse, de décomposition, de déplacement, de combustion, de précipitation, de neutralisation et de formation de gaz.',
+      lesson: {
+        sections: [
+          'Les réactions chimiques peuvent être classées selon la transformation globale des espèces. Une réaction de synthèse conduit à la formation d’un composé à partir de plusieurs réactifs ; une réaction de décomposition transforme une espèce en plusieurs produits. Une réaction de déplacement simple implique le remplacement d’un élément dans un composé par un autre élément. Une réaction de double déplacement correspond à un échange de partenaires entre deux espèces ioniques. Ces catégories sont des outils pédagogiques de classement et ne décrivent pas nécessairement le mécanisme moléculaire.',
+          'La combustion est une réaction d’oxydation impliquant un combustible et un oxydant, souvent le dioxygène. Pour un hydrocarbure qui subit une combustion complète en présence d’un excès suffisant de dioxygène, les produits carbonés sont le dioxyde de carbone et l’eau. Une combustion incomplète peut produire notamment du monoxyde de carbone ou du carbone solide, selon les conditions. Il est donc incorrect de supposer que toute combustion d’un composé carboné produit exclusivement du dioxyde de carbone et de l’eau.',
+          'Les réactions acide-base peuvent être représentées par un transfert de proton selon la définition de Brønsted-Lowry. Dans le cas d’une neutralisation entre un acide fort et une base forte en solution aqueuse, l’équation ionique nette usuelle est H3O⁺ + OH⁻ → 2 H2O. L’équation moléculaire dépend des acides et des bases employés. Les espèces spectatrices peuvent être présentes dans l’équation moléculaire sans participer directement à la transformation ionique nette.',
+          'Les réactions de précipitation se produisent lorsque des ions en solution forment un composé solide suffisamment peu soluble pour apparaître dans les conditions considérées. Les réactions de dégagement gazeux peuvent conduire à la formation de gaz tels que CO2 ou H2. Pour prévoir les produits, il faut connaître la nature des réactifs, les règles de solubilité et les conditions de réaction. Une classification ne remplace donc pas l’analyse chimique des espèces.',
+          'Les réactions peuvent appartenir à plusieurs catégories simultanément. Une combustion est également une réaction d’oxydoréduction ; une réaction de déplacement simple est souvent une transformation redox ; certaines réactions de précipitation sont des échanges ioniques sans changement des nombres d’oxydation. Il est donc préférable de décrire la transformation à partir de ses caractéristiques pertinentes plutôt que d’imposer une seule étiquette exclusive.'
+        ],
+        formula: {
+          label: 'EXEMPLE DE RÉACTION DE SYNTHÈSE',
+          text: '2 H2(g) + O2(g) → 2 H2O(l)'
+        },
+        equationDetails: [
+          {
+            title: 'Réaction de synthèse',
+            formula: '2 H2(g) + O2(g) → 2 H2O(l)',
+            explanation: 'Deux réactifs se combinent pour former un composé. Cette équation représente la formation de l’eau à partir de dihydrogène et de dioxygène.',
+            parameters: 'H2 : dihydrogène ; O2 : dioxygène ; H2O : eau ; les coefficients indiquent le rapport stœchiométrique.',
+            example: '2 mol de H2 réagissent avec 1 mol de O2 pour former 2 mol de H2O dans le cadre de cette équation.',
+            result: 'La transformation est une réaction de synthèse et une réaction d’oxydoréduction.'
+          },
+          {
+            title: 'Combustion complète du méthane',
+            formula: 'CH4(g) + 2 O2(g) → CO2(g) + 2 H2O(g)',
+            explanation: 'Dans le modèle de combustion complète, le carbone du méthane est transformé en dioxyde de carbone et l’hydrogène en eau. L’état physique de l’eau dépend des conditions de température et de pression ; la notation vapeur est utilisée ici pour une représentation à haute température.',
+            parameters: 'CH4 : méthane ; O2 : dioxygène ; CO2 : dioxyde de carbone ; H2O : eau ; les coefficients assurent la conservation des atomes.',
+            example: 'Le bilan comporte 1 carbone, 4 hydrogènes et 4 oxygènes de chaque côté.',
+            result: 'L’équation est équilibrée pour une combustion complète du méthane.'
+          }
+        ],
+        example: {
+          statement: 'Classer la réaction suivante : Zn(s) + CuSO4(aq) → ZnSO4(aq) + Cu(s).',
+          calculation: 'Le zinc métallique devient Zn2+ en solution et les ions Cu2+ deviennent du cuivre métallique. Le zinc remplace le cuivre dans le composé ionique. Les nombres d’oxydation changent également.',
+          answer: 'Il s’agit d’une réaction de déplacement simple et d’une réaction d’oxydoréduction.'
+        },
+        exercise: {
+          question: 'Quelle différence existe-t-il entre une réaction de synthèse et une réaction de décomposition ?',
+          answer: 'Une synthèse forme un composé à partir de plusieurs réactifs ; une décomposition transforme une espèce en plusieurs produits.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le produit carboné principal d’une combustion complète d’un hydrocarbure en présence d’un excès suffisant de dioxygène ?',
+            answer: 'Le dioxyde de carbone CO2.'
+          },
+          {
+            question: 'Comment appelle-t-on une réaction qui forme un solide à partir d’ions dissous ?',
+            answer: 'Une réaction de précipitation.'
+          },
+          {
+            question: 'Une réaction de déplacement simple peut-elle être une réaction redox ?',
+            answer: 'Oui. Elle implique fréquemment un transfert d’électrons et un changement des nombres d’oxydation.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 4.2 : Classifying Chemical Reactions',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 4.3 : Reaction Stoichiometry',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 14.7 : Acid-Base Titrations',
+            url: 'https://openstax.org/books/chemistry-2e/pages/14-7-acid-base-titrations'
+          }
+        ]
+      }
+    },
+    {
+      id: 'equations-ioniques-precipitation',
+      title: 'Équations moléculaires, ioniques et réactions en solution aqueuse',
+      field: 'Chimie en solution · Dissociation, ions spectateurs et équations ioniques nettes',
+      summary: 'Passer de l’équation moléculaire à l’équation ionique complète, identifier les ions spectateurs et établir l’équation ionique nette des transformations en solution.',
+      lesson: {
+        sections: [
+          'En solution aqueuse, certains composés ioniques solubles se dissocient en ions. Une équation moléculaire représente les composés avec leurs formules globales, tandis qu’une équation ionique complète représente explicitement les ions présents en solution. Ces deux écritures décrivent le même bilan à des niveaux de détail différents. Les espèces solides, les liquides purs et les gaz ne sont généralement pas séparés en ions dans une équation ionique, sauf si leur comportement chimique le justifie.',
+          'Les ions spectateurs sont des ions qui apparaissent sous la même forme des deux côtés d’une équation ionique complète. Ils ne participent pas directement à la transformation nette représentée. Pour obtenir l’équation ionique nette, on retire les ions spectateurs présents en quantités identiques des deux côtés. L’équation obtenue met en évidence les espèces qui subissent effectivement la transformation. Cette simplification ne doit être effectuée qu’après avoir écrit et équilibré l’équation ionique complète.',
+          'Les réactions de précipitation constituent un exemple classique. Lorsque des solutions contenant des ions compatibles sont mélangées, un composé peu soluble peut se former sous forme solide. L’équation moléculaire indique les composés initiaux et les produits ; l’équation ionique complète détaille les ions dissous ; l’équation ionique nette ne conserve que les ions qui forment le solide. Les règles de solubilité permettent de prévoir de nombreuses situations, mais la précipitation dépend des concentrations et du produit ionique par rapport au produit de solubilité.',
+          'Les équations ioniques servent également à représenter certaines réactions acide-base et réactions redox en solution. Dans une neutralisation entre un acide fort et une base forte, les ions hydronium et hydroxyde sont les espèces réactives nettes, tandis que certains ions issus des électrolytes restent spectateurs. Dans les réactions redox, l’équation ionique permet de suivre explicitement les charges et les électrons. Le choix de l’écriture dépend donc de la question scientifique étudiée.',
+          'La vérification d’une équation ionique nette comporte deux contrôles indépendants : le nombre d’atomes de chaque élément doit être conservé et la charge totale doit être identique des deux côtés. Une équation qui conserve les atomes mais pas la charge est incorrecte. De même, une équation qui conserve la charge mais pas les atomes est incorrecte. Cette double vérification est particulièrement importante lorsque des ions polyatomiques, des protons, des ions hydroxyde ou des électrons sont présents.'
+        ],
+        formula: {
+          label: 'ÉQUATION IONIQUE NETTE DE PRÉCIPITATION',
+          text: 'Ag⁺(aq) + Cl⁻(aq) → AgCl(s)'
+        },
+        equationDetails: [
+          {
+            title: 'Équation moléculaire de précipitation',
+            formula: 'AgNO3(aq) + NaCl(aq) → AgCl(s) + NaNO3(aq)',
+            explanation: 'Le nitrate d’argent et le chlorure de sodium sont représentés sous forme de composés dissous ; le chlorure d’argent est formé sous forme solide. Le nitrate de sodium reste en solution.',
+            parameters: 'AgNO3 : nitrate d’argent ; NaCl : chlorure de sodium ; AgCl : chlorure d’argent ; NaNO3 : nitrate de sodium.',
+            example: 'Les ions Ag+ et Cl− réagissent pour former AgCl solide.',
+            result: 'L’équation moléculaire est équilibrée avec des coefficients égaux à 1.'
+          },
+          {
+            title: 'Équation ionique complète',
+            formula: 'Ag⁺(aq) + NO3⁻(aq) + Na⁺(aq) + Cl⁻(aq) → AgCl(s) + Na⁺(aq) + NO3⁻(aq)',
+            explanation: 'Les composés solubles sont représentés par les ions qui les constituent en solution. Les ions sodium et nitrate apparaissent inchangés des deux côtés.',
+            parameters: 'Ag+ et Cl− : ions réactifs ; Na+ et NO3− : ions spectateurs ; AgCl(s) : précipité.',
+            example: 'Les ions sodium et nitrate sont présents dans l’équation complète mais ne sont pas consommés dans la transformation nette.',
+            result: 'La charge totale vaut zéro de chaque côté et les atomes sont conservés.'
+          },
+          {
+            title: 'Élimination des ions spectateurs',
+            formula: 'Ag⁺(aq) + Cl⁻(aq) → AgCl(s)',
+            explanation: 'Les ions sodium et nitrate, présents sous la même forme des deux côtés, sont supprimés. L’équation restante décrit directement la formation du précipité.',
+            parameters: 'Ag+ : ion argent ; Cl− : ion chlorure ; AgCl : chlorure d’argent solide.',
+            example: 'Charge à gauche : +1 − 1 = 0. Charge à droite : 0.',
+            result: 'L’équation ionique nette conserve les atomes et la charge.'
+          }
+        ],
+        example: {
+          statement: 'Établir l’équation ionique nette de la réaction entre AgNO3(aq) et NaCl(aq).',
+          calculation: 'Équation moléculaire : AgNO3(aq) + NaCl(aq) → AgCl(s) + NaNO3(aq). Équation ionique complète : Ag+(aq) + NO3−(aq) + Na+(aq) + Cl−(aq) → AgCl(s) + Na+(aq) + NO3−(aq). Les ions Na+ et NO3− sont spectateurs et sont supprimés.',
+          answer: 'Ag+(aq) + Cl−(aq) → AgCl(s). Le bilan des atomes et des charges est respecté.'
+        },
+        exercise: {
+          question: 'Dans l’équation ionique complète d’une précipitation, comment reconnaît-on un ion spectateur ?',
+          answer: 'Il apparaît des deux côtés avec la même formule, le même état et la même charge, sans être transformé.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi écrit-on les composés ioniques solubles sous forme d’ions dans une équation ionique complète ?',
+            answer: 'Parce qu’ils sont dissociés en ions dans la solution aqueuse, selon leur comportement en solution.'
+          },
+          {
+            question: 'Quel est le produit solide de la réaction entre Ag+ et Cl− ?',
+            answer: 'Le chlorure d’argent AgCl(s).'
+          },
+          {
+            question: 'Quelles deux conservations faut-il vérifier dans une équation ionique nette ?',
+            answer: 'La conservation du nombre d’atomes de chaque élément et la conservation de la charge électrique totale.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 4.1 : Writing and Balancing Chemical Equations, Equations for Ionic Reactions',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-1-writing-and-balancing-chemical-equations'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 4.2 : Classifying Chemical Reactions',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-2-classifying-chemical-reactions'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 13.3 : Shifting Equilibria',
+            url: 'https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria'
+          }
+        ]
+      }
+    },
+    {
+      id: 'equilibrage-redox-stoechiometrie',
+      title: 'Équations d’oxydoréduction et applications stœchiométriques',
+      field: 'Chimie générale · Transfert électronique et relations quantitatives',
+      summary: 'Équilibrer les réactions redox par demi-équations, utiliser les nombres d’oxydation, interpréter les coefficients en moles et relier les équations aux calculs stœchiométriques.',
+      lesson: {
+        sections: [
+          'Une réaction d’oxydoréduction implique un transfert d’électrons entre espèces chimiques. L’oxydation correspond à une perte d’électrons et la réduction à un gain d’électrons. L’espèce qui cède les électrons est le réducteur ; l’espèce qui les accepte est l’oxydant. Les deux processus se produisent simultanément, car les électrons libérés par une espèce doivent être captés par une autre. Une équation redox équilibrée doit conserver les éléments et la charge totale.',
+          'Les nombres d’oxydation sont des nombres formels attribués aux atomes selon des règles conventionnelles. Ils permettent de suivre les changements électroniques dans une réaction. Une augmentation du nombre d’oxydation correspond à une oxydation ; une diminution correspond à une réduction. Les nombres d’oxydation ne sont pas nécessairement des charges réelles portées par les atomes : ils constituent un outil de comptabilité électronique. Leur variation permet d’identifier les éléments oxydés et réduits.',
+          'La méthode des demi-équations consiste à séparer formellement l’oxydation et la réduction. On équilibre d’abord les éléments autres que l’hydrogène et l’oxygène, puis on ajuste l’oxygène avec H2O et l’hydrogène avec H+ en milieu acide. On équilibre ensuite les charges avec des électrons. Les demi-équations sont multipliées de manière à faire apparaître le même nombre d’électrons échangés, puis elles sont additionnées et simplifiées. En milieu basique, les ions OH− servent à neutraliser les ions H+ et à obtenir une équation adaptée au milieu.',
+          'Une fois l’équation équilibrée, ses coefficients donnent les rapports molaires entre les réactifs et les produits. Pour exploiter ce rapport, on convertit les masses en quantités de matière à l’aide de la masse molaire, ou les volumes gazeux à l’aide d’une relation d’état lorsque les conditions sont précisées. Le réactif limitant est celui qui est entièrement consommé en premier selon la stœchiométrie ; les autres réactifs peuvent rester en excès. La quantité maximale de produit théorique se déduit du réactif limitant.',
+          'Le rendement d’une transformation compare la quantité de produit réellement obtenue à la quantité théorique maximale, pour une même grandeur de comparaison. Il s’exprime généralement en pourcentage. Un rendement inférieur à 100 % peut résulter de réactions secondaires, de transformations incomplètes, de pertes lors de l’isolement ou de limites expérimentales. Il ne faut pas confondre rendement chimique, conversion d’un réactif et sélectivité d’une réaction : ces grandeurs répondent à des questions différentes.'
+        ],
+        formula: {
+          label: 'PRINCIPE D’ÉQUILIBRAGE D’UNE RÉACTION REDOX',
+          text: 'Oxydation : perte d’électrons ; réduction : gain d’électrons'
+        },
+        equationDetails: [
+          {
+            title: 'Demi-équation d’oxydation du fer(II)',
+            formula: 'Fe²⁺(aq) → Fe³⁺(aq) + e⁻',
+            explanation: 'L’ion fer(II) perd un électron et devient un ion fer(III). Le nombre d’oxydation du fer passe de +2 à +3 : il augmente, ce qui caractérise une oxydation.',
+            parameters: 'Fe2+ : ion fer(II) ; Fe3+ : ion fer(III) ; e− : électron ; les charges sont exprimées en multiples de la charge élémentaire.',
+            example: 'Charge à gauche : +2. Charge à droite : +3 − 1 = +2.',
+            result: 'La demi-équation conserve la charge et l’atome de fer.'
+          },
+          {
+            title: 'Demi-équation de réduction du cuivre(II)',
+            formula: 'Cu²⁺(aq) + 2 e⁻ → Cu(s)',
+            explanation: 'L’ion cuivre(II) gagne deux électrons et devient du cuivre métallique. Le nombre d’oxydation du cuivre passe de +2 à 0 : il diminue, ce qui caractérise une réduction.',
+            parameters: 'Cu2+ : ion cuivre(II) ; e− : électron ; Cu(s) : cuivre métallique.',
+            example: 'Charge à gauche : +2 − 2 = 0. Charge à droite : 0.',
+            result: 'La demi-équation conserve les atomes et la charge.'
+          },
+          {
+            title: 'Bilan de la réaction entre le fer(II) et le cuivre(II)',
+            formula: '2 Fe²⁺(aq) + Cu(s) → 2 Fe³⁺(aq) + Cu²⁺(aq)',
+            explanation: 'Deux ions fer(II) cèdent chacun un électron ; le cuivre métallique fournit les deux électrons nécessaires à la formation de Cu2+. Les électrons n’apparaissent plus dans l’équation globale car ils sont échangés entre les deux demi-réactions.',
+            parameters: 'Fe2+ : réducteur ; Cu(s) : réducteur dans le couple Cu2+/Cu ; Fe3+ et Cu2+ : formes oxydées correspondantes. La réaction globale écrite est équilibrée en atomes et en charge.',
+            example: 'Charge à gauche : 2 × (+2) = +4. Charge à droite : 2 × (+3) + (+2) = +8. Cette écriture n’est donc pas équilibrée en charge et ne constitue pas le bilan correct.',
+            result: 'Le bilan correct de cette réaction doit être établi en tenant compte du sens réel des couples redox et des électrons échangés ; il ne faut pas déduire une réaction spontanée de la seule possibilité d’écrire des demi-équations.'
+          },
+          {
+            title: 'Relation entre quantité de matière et coefficient stœchiométrique',
+            formula: 'n(A) / a = n(B) / b',
+            explanation: 'Pour une équation a A + b B → produits, les quantités de matière consommées à l’avancement considéré respectent le rapport des coefficients. Cette relation permet de calculer les quantités de réactifs et de produits.',
+            parameters: 'n(A), n(B) : quantités de matière en moles ; a, b : coefficients stœchiométriques de l’équation équilibrée.',
+            example: 'Pour 2 H2 + O2 → 2 H2O, 2 mol de H2 correspondent à 1 mol de O2 et permettent théoriquement de former 2 mol de H2O.',
+            result: 'Le rapport molaire H2 : O2 : H2O est 2 : 1 : 2.'
+          },
+          {
+            title: 'Rendement d’une transformation',
+            formula: 'η = (quantité expérimentale obtenue / quantité théorique maximale) × 100 %',
+            explanation: 'Le rendement compare la quantité de produit effectivement obtenue à la quantité maximale calculée à partir de la stœchiométrie. Les deux quantités doivent être exprimées avec la même grandeur et dans les mêmes unités.',
+            parameters: 'η : rendement en pourcentage ; quantité expérimentale : quantité réellement isolée ou mesurée ; quantité théorique : quantité maximale prévue par l’équation et le réactif limitant.',
+            example: 'Si une transformation permet théoriquement d’obtenir 10,0 g de produit et que 8,0 g sont réellement obtenus, η = (8,0 / 10,0) × 100 %.',
+            result: 'Le rendement est de 80 %.'
+          }
+        ],
+        example: {
+          statement: 'Dans la réaction 2 H2(g) + O2(g) → 2 H2O(l), on dispose de 4 mol de H2 et de 1 mol de O2. Déterminer le réactif limitant et la quantité théorique d’eau formée.',
+          calculation: 'L’équation exige 2 mol de H2 pour 1 mol de O2. Pour consommer 1 mol de O2, il faut 2 mol de H2. On dispose de 4 mol de H2 : le dihydrogène est donc en excès et le dioxygène est limitant. Le rapport O2 : H2O vaut 1 : 2.',
+          answer: 'Le dioxygène est le réactif limitant. La quantité théorique d’eau formée est de 2 mol. Il reste théoriquement 2 mol de H2 si la réaction est complète et si aucun autre processus ne consomme les réactifs.'
+        },
+        exercise: {
+          question: 'Dans une réaction redox, que signifie une augmentation du nombre d’oxydation d’un élément ?',
+          answer: 'Elle correspond à une oxydation, c’est-à-dire à une perte formelle d’électrons.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle d’un oxydant dans une réaction redox ?',
+            answer: 'Il accepte des électrons et se réduit.'
+          },
+          {
+            question: 'Comment identifie-t-on le réactif limitant ?',
+            answer: 'On compare les quantités disponibles aux proportions exigées par les coefficients de l’équation équilibrée.'
+          },
+          {
+            question: 'Quelle quantité doit être utilisée au dénominateur dans le calcul du rendement ?',
+            answer: 'La quantité théorique maximale de produit prévue par la stœchiométrie.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 4.3 : Reaction Stoichiometry',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 4.4 : Reaction Yields',
+            url: 'https://openstax.org/books/chemistry-2e/pages/4-4-reaction-yields'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 17.1 : Review of Redox Chemistry',
+            url: 'https://openstax.org/books/chemistry-2e/pages/17-1-review-of-redox-chemistry'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 17.2 : Galvanic Cells',
+            url: 'https://openstax.org/books/chemistry-2e/pages/17-2-galvanic-cells'
+          },
+          {
+            title: 'IUPAC Gold Book — Stoichiometry',
+            url: 'https://goldbook.iupac.org/terms/view/S06026'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  id: 'cinetique-chimique',
+  title: 'Cinétique chimique',
+  note: 'Six chapitres pour comprendre la vitesse des transformations chimiques, les facteurs qui la modifient, les lois de vitesse, les modèles intégrés, l’énergie d’activation, les mécanismes réactionnels et la catalyse. Les lois cinétiques et leurs paramètres doivent être établis dans les conditions expérimentales considérées ; les exemples numériques sont des applications pédagogiques.',
+  chapters: [
+    {
+      id: 'vitesse-reaction-chimique',
+      title: 'La vitesse d’une réaction chimique : définition et mesure',
+      field: 'Chimie · Cinétique chimique · Mesure de l’évolution temporelle',
+      summary: 'Définir la vitesse de réaction, distinguer vitesse moyenne et vitesse instantanée, relier les variations de concentration aux coefficients stœchiométriques et comprendre les méthodes de suivi expérimental.',
+      lesson: {
+        sections: [
+          'La cinétique chimique étudie l’évolution des systèmes réactionnels au cours du temps. Elle cherche notamment à déterminer à quelle vitesse les réactifs sont consommés, à quelle vitesse les produits apparaissent et comment les conditions du milieu influencent ces évolutions. Elle complète la thermodynamique : une transformation peut être thermodynamiquement favorable sans être rapide à l’échelle de temps considérée. La thermodynamique renseigne sur la possibilité et l’état d’équilibre ; la cinétique renseigne sur la vitesse à laquelle le système évolue.',
+
+          'Pour une espèce chimique A, la concentration molaire est notée [A] et s’exprime couramment en mol·L⁻¹. Entre deux instants t1 et t2, la variation de concentration vaut [A]2 − [A]1. La vitesse moyenne de disparition d’un réactif A est définie positivement par −Δ[A]/Δt ; la vitesse moyenne d’apparition d’un produit P est Δ[P]/Δt. Le signe négatif pour un réactif compense la diminution habituelle de sa concentration. Une vitesse volumique de concentration s’exprime par exemple en mol·L⁻¹·s⁻¹.',
+
+          'La vitesse instantanée correspond à la limite de la vitesse moyenne lorsque l’intervalle de temps devient très petit. Mathématiquement, elle est décrite par une dérivée : pour un réactif A, la vitesse de disparition instantanée est −d[A]/dt ; pour un produit P, la vitesse d’apparition est d[P]/dt. Sur un graphique concentration-temps, elle correspond à la valeur opposée de la pente de la tangente pour un réactif, ou à la pente de la tangente pour un produit. La vitesse peut donc varier au cours d’une même transformation.',
+
+          'Pour une équation a A + b B → p P + q Q, la vitesse de réaction normalisée tient compte des coefficients stœchiométriques : v = −(1/a)d[A]/dt = −(1/b)d[B]/dt = (1/p)d[P]/dt = (1/q)d[Q]/dt, dans les conditions où cette définition est applicable. Cette normalisation permet d’attribuer une même vitesse de réaction à chaque espèce, malgré des variations de concentration différentes. Il ne faut donc pas confondre la vitesse de réaction normalisée et la vitesse de disparition d’une espèce particulière.',
+
+          'La vitesse peut être suivie sans mesurer directement toutes les concentrations. Selon le système, on peut mesurer une absorbance si une espèce absorbe la lumière, une pression ou un volume pour une réaction impliquant des gaz, une conductivité si les ions évoluent, un pH dans certains systèmes acido-basiques, ou prélever des échantillons à des instants déterminés puis les analyser. Chaque méthode nécessite une relation établie entre le signal mesuré et la quantité de l’espèce suivie. Les conditions expérimentales, notamment le volume, la température et le mode de prélèvement, doivent être contrôlées.',
+
+          'Une mesure expérimentale fournit des données qui comportent une incertitude. La détermination d’une pente sur un graphique dépend de la qualité des mesures et de l’intervalle choisi. Une pente calculée entre deux points donne une vitesse moyenne ; une tangente locale estime une vitesse instantanée. Il faut préciser l’espèce suivie, le signe retenu, l’unité et, lorsque cela est nécessaire, la normalisation stœchiométrique.'
+        ],
+        example: {
+          statement: 'Pour une réaction A → P, la concentration de A passe de 0,80 mol·L⁻¹ à 0,50 mol·L⁻¹ en 30 s. Calculer la vitesse moyenne de disparition de A.',
+          calculation: 'v_moy = −Δ[A]/Δt. La variation est Δ[A] = 0,50 − 0,80 = −0,30 mol·L⁻¹. Donc v_moy = −(−0,30)/30 = 0,010 mol·L⁻¹·s⁻¹.',
+          answer: 'La vitesse moyenne de disparition de A sur cet intervalle est 1,0 × 10⁻² mol·L⁻¹·s⁻¹. Il s’agit d’une moyenne sur 30 s, et non nécessairement de la vitesse instantanée à un instant précis.'
+        },
+        exercise: {
+          question: 'Pourquoi la vitesse de disparition d’un réactif est-elle généralement écrite avec un signe négatif ?',
+          answer: 'Parce que la concentration du réactif diminue au cours du temps. Sa dérivée est donc généralement négative ; le signe moins permet de définir une vitesse de disparition positive.'
+        },
+        exercises: [
+          {
+            question: 'Une concentration de produit passe de 0,10 à 0,34 mol·L⁻¹ en 12 s. Quelle est sa vitesse moyenne d’apparition ?',
+            answer: 'v_moy = (0,34 − 0,10)/12 = 0,020 mol·L⁻¹·s⁻¹.'
+          },
+          {
+            question: 'Pour 2 A → B, quelle relation relie la vitesse de réaction v à la vitesse de disparition de A ?',
+            answer: 'v = −(1/2)d[A]/dt. La vitesse de disparition de A vaut donc −d[A]/dt = 2v.'
+          },
+          {
+            question: 'Citer deux grandeurs physiques pouvant servir au suivi cinétique d’une réaction.',
+            answer: 'Par exemple, l’absorbance, la pression, le volume gazeux, la conductivité ou le pH, à condition que la grandeur mesurée soit reliée à l’avancement ou à la concentration d’une espèce.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 12.1 Chemical Reaction Rates',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-1-chemical-reaction-rates'
+          },
+          {
+            title: 'IUPAC Gold Book — Rate of reaction',
+            url: 'https://goldbook.iupac.org/terms/view/R05156'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'facteurs-cinetiques',
+      title: 'Les facteurs qui influencent la vitesse de réaction',
+      field: 'Chimie · Cinétique chimique · Conditions expérimentales',
+      summary: 'Analyser l’influence de la nature des réactifs, de la concentration, de la température, de la surface de contact, de la pression pour les gaz et de la présence d’un catalyseur.',
+      lesson: {
+        sections: [
+          'La vitesse d’une réaction dépend de la nature chimique des espèces qui réagissent. Des substances différentes ne présentent pas les mêmes liaisons, structures électroniques, états physiques ni possibilités de transformation. Même lorsque deux réactions ont des équations qui semblent comparables, leurs vitesses peuvent être très différentes. Il n’existe donc pas de règle unique permettant de déduire la rapidité d’une réaction à partir de sa seule équation-bilan.',
+
+          'La concentration d’un réactif peut influencer la fréquence des rencontres entre les espèces réactives. Dans de nombreuses réactions homogènes, une augmentation de concentration entraîne une augmentation de vitesse. Cependant, la relation quantitative n’est pas universelle : elle est décrite par la loi de vitesse propre à la réaction et doit être déterminée expérimentalement. Une espèce présente dans l’équation-bilan peut même ne pas apparaître dans la loi de vitesse observée, selon le mécanisme réactionnel.',
+
+          'Pour les réactions entre phases différentes, la surface de contact peut être déterminante. Un solide divisé en petites particules présente généralement une surface exposée plus grande qu’un même solide regroupé en un seul morceau. Si la réaction se déroule à l’interface entre le solide et un liquide ou un gaz, cette augmentation de surface accessible peut accélérer la transformation. Cet effet dépend du système et ne doit pas être confondu avec une modification de la nature chimique du solide.',
+
+          'Une augmentation de température accélère souvent les réactions. À température plus élevée, l’énergie cinétique moyenne des particules augmente et une fraction plus importante des collisions peut atteindre l’énergie nécessaire pour franchir la barrière d’activation. L’ampleur de l’effet dépend de l’énergie d’activation et du domaine de température. La règle approximative selon laquelle une hausse de 10 °C peut multiplier certaines vitesses par environ 2 n’est qu’un ordre de grandeur pédagogique : elle ne constitue pas une loi universelle.',
+
+          'Pour les réactions impliquant des gaz, une augmentation de pression obtenue en diminuant le volume peut augmenter les concentrations molaires des gaz et modifier la vitesse. Il faut toutefois distinguer pression totale et pression partielle de chaque réactif. L’effet cinétique dépend de la loi de vitesse et des conditions de l’expérience ; une pression exercée sans modification des concentrations pertinentes n’a pas nécessairement le même effet.',
+
+          'Un catalyseur modifie la vitesse en offrant un chemin réactionnel différent. Il intervient dans le mécanisme, puis est régénéré au cours du cycle catalytique idéal ; il n’est pas consommé globalement selon le bilan net. Un catalyseur peut accélérer l’établissement de l’équilibre en accélérant les transformations directe et inverse, mais il ne modifie pas la constante d’équilibre ni la composition de l’équilibre à température donnée.'
+        ],
+        example: {
+          statement: 'On compare deux échantillons de même masse d’un solide réactif : le premier est constitué d’un seul morceau et le second de petits grains. Pourquoi le second peut-il réagir plus rapidement avec une solution ?',
+          calculation: 'À masse identique, la division du solide en grains augmente généralement la surface totale accessible au liquide. La réaction hétérogène peut alors se produire sur une interface plus étendue.',
+          answer: 'Le solide divisé peut réagir plus rapidement parce que sa surface de contact avec la solution est plus grande. Cette explication suppose que la surface accessible constitue bien un facteur limitant dans le système étudié.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il éviter de présenter la règle « +10 °C double la vitesse » comme une loi exacte ?',
+          answer: 'Parce que l’effet de la température dépend notamment de l’énergie d’activation et du système considéré. Le facteur 2 est une approximation empirique utile dans certains cas, pas une relation universelle.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’effet habituel d’une hausse de concentration sur la vitesse ?',
+            answer: 'Elle augmente souvent la vitesse en augmentant la fréquence des rencontres réactives, mais l’effet précis dépend de la loi de vitesse expérimentale.'
+          },
+          {
+            question: 'Pourquoi une poudre peut-elle réagir plus vite qu’un bloc de même solide dans une réaction hétérogène ?',
+            answer: 'Parce que la poudre expose généralement une surface totale plus importante au réactif de l’autre phase.'
+          },
+          {
+            question: 'Un catalyseur change-t-il la constante d’équilibre à température constante ?',
+            answer: 'Non. Il modifie la vitesse d’accès à l’équilibre, pas la constante d’équilibre.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 12.2 Factors Affecting Reaction Rates',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-2-factors-affecting-reaction-rates'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 12.7 Catalysis',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-7-catalysis'
+          },
+          {
+            title: 'IUPAC Gold Book — Catalyst',
+            url: 'https://goldbook.iupac.org/terms/view/C00876'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'lois-vitesse-ordres-reaction',
+      title: 'Les lois de vitesse et les ordres de réaction',
+      field: 'Chimie · Cinétique chimique · Modélisation expérimentale',
+      summary: 'Établir une loi de vitesse, déterminer les ordres partiels et global, calculer une constante de vitesse et comprendre pourquoi les coefficients stœchiométriques ne donnent généralement pas les exposants cinétiques.',
+      lesson: {
+        sections: [
+          'Une loi de vitesse, également appelée loi cinétique différentielle, exprime la vitesse d’une réaction en fonction des concentrations des espèces et de paramètres constants dans les conditions étudiées. Pour une réaction faisant intervenir A et B, une forme courante est v = k[A]^m[B]^n. La constante k est appelée constante de vitesse ; m et n sont les ordres partiels par rapport à A et B. L’ordre global est la somme m + n lorsque cette loi est un produit de puissances de ce type.',
+
+          'Les ordres de réaction sont des paramètres expérimentaux. Ils peuvent être entiers, nuls, fractionnaires ou, dans certains modèles, négatifs. Ils ne doivent pas être assimilés automatiquement aux coefficients de l’équation-bilan. Pour une réaction globale, écrire a A + b B → produits ne permet généralement pas de conclure que v = k[A]^a[B]^b. Cette déduction directe est justifiée pour une étape élémentaire selon sa molecularité, mais pas pour une réaction globale dont le mécanisme comporte plusieurs étapes.',
+
+          'La méthode des vitesses initiales consiste à mesurer la vitesse au début de plusieurs expériences où les concentrations initiales sont modifiées de manière contrôlée. On compare deux expériences dans lesquelles une seule concentration varie, les autres conditions étant maintenues constantes. Si doubler [A] multiplie la vitesse par 4, alors l’ordre partiel en A vaut 2 dans le domaine étudié. Si doubler [B] ne change pas la vitesse, l’ordre partiel en B vaut 0. Des séries de mesures permettent ainsi de déterminer les exposants.',
+
+          'Une fois les ordres déterminés, la constante k se calcule en isolant k dans la loi de vitesse. Ses unités dépendent de l’ordre global et des unités utilisées pour la vitesse et les concentrations. Si la vitesse s’exprime en mol·L⁻¹·s⁻¹ et si l’ordre global est p, les unités de k sont (mol·L⁻¹)^(1−p)·s⁻¹. Ainsi, pour un ordre global 1, k s’exprime en s⁻¹ ; pour un ordre global 2, en L·mol⁻¹·s⁻¹.',
+
+          'La loi de vitesse est valable dans le domaine expérimental où elle a été établie. Une variation importante de température, de solvant, de pH, de force ionique ou de mécanisme peut changer la constante apparente ou la forme de la loi. Il faut donc toujours préciser les conditions expérimentales et ne pas traiter k comme une constante universelle indépendante du milieu.',
+
+          'Les données cinétiques peuvent être analysées par comparaison des vitesses initiales, par ajustement de modèles intégrés ou par régression de mesures adaptées. Une bonne démarche vérifie la cohérence des unités, la reproductibilité des mesures et la compatibilité du modèle avec l’ensemble des données, plutôt que de retenir une loi sur la base d’un seul couple de mesures.'
+        ],
+        example: {
+          statement: 'Une réaction suit la loi v = k[A]^m[B]^n. Lorsque [A] est doublée à [B] constante, la vitesse est multipliée par 4. Lorsque [B] est doublée à [A] constante, la vitesse est multipliée par 2. Déterminer m, n et l’ordre global.',
+          calculation: 'À [B] constante, 4 = 2^m, donc m = 2. À [A] constante, 2 = 2^n, donc n = 1. L’ordre global vaut m + n = 2 + 1 = 3.',
+          answer: 'La loi est v = k[A]^2[B]. L’ordre partiel en A est 2, celui en B est 1 et l’ordre global est 3. Cette conclusion repose sur les variations expérimentales décrites.'
+        },
+        exercise: {
+          question: 'Pourquoi ne peut-on généralement pas lire les ordres de réaction directement dans l’équation-bilan ?',
+          answer: 'Parce que l’équation-bilan décrit le bilan global et non nécessairement les étapes élémentaires du mécanisme. Les ordres de la loi de vitesse doivent donc être déterminés expérimentalement.'
+        },
+        exercises: [
+          {
+            question: 'Pour v = k[A]^2, quel est l’ordre global ?',
+            answer: 'L’ordre global est 2.'
+          },
+          {
+            question: 'Si doubler [A] multiplie la vitesse par 8, quel ordre partiel cela indique-t-il pour A ?',
+            answer: '8 = 2^m, donc m = 3.'
+          },
+          {
+            question: 'Quelle est l’unité de k pour une loi de vitesse d’ordre global 1 si la vitesse est en mol·L⁻¹·s⁻¹ ?',
+            answer: 'L’unité de k est s⁻¹.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 12.3 Rate Laws',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-3-rate-laws'
+          },
+          {
+            title: 'IUPAC Gold Book — Rate law',
+            url: 'https://goldbook.iupac.org/terms/view/R05141'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'lois-integrees-demi-vie',
+      title: 'Les lois intégrées et le temps de demi-réaction',
+      field: 'Chimie · Cinétique chimique · Évolution des concentrations avec le temps',
+      summary: 'Relier concentration et durée, reconnaître les cinétiques d’ordre 0, 1 et 2, utiliser les représentations linéaires et calculer un temps de demi-réaction.',
+      lesson: {
+        sections: [
+          'Une loi de vitesse différentielle relie la vitesse instantanée aux concentrations. Une loi intégrée relie directement la concentration d’un réactif au temps écoulé. Elle est obtenue en intégrant mathématiquement la loi différentielle, avec une condition initiale. Les expressions intégrées dépendent de l’ordre cinétique et du modèle considéré ; les formes simples présentées ici concernent des réactions dont la vitesse dépend d’un seul réactif A selon un ordre 0, 1 ou 2.',
+
+          'Pour une cinétique d’ordre 0, la loi différentielle est −d[A]/dt = k et la loi intégrée est [A]t = [A]0 − kt. La représentation de [A] en fonction du temps est une droite de pente −k. Cette situation peut apparaître dans des conditions particulières, par exemple lorsque certains sites actifs sont saturés ; elle ne doit pas être extrapolée au-delà du domaine où le modèle est valable.',
+
+          'Pour une cinétique d’ordre 1, la loi différentielle est −d[A]/dt = k[A]. La loi intégrée est ln([A]t) = ln([A]0) − kt, ou [A]t = [A]0 e^(−kt). La représentation de ln([A]) en fonction du temps est une droite de pente −k. La constante de vitesse a pour unité s⁻¹ si le temps est exprimé en secondes. Le temps de demi-réaction ne dépend alors pas de la concentration initiale.',
+
+          'Pour une cinétique d’ordre 2 portant sur un seul réactif A, la loi différentielle est −d[A]/dt = k[A]^2 et la loi intégrée est 1/[A]t = 1/[A]0 + kt. La représentation de 1/[A] en fonction du temps est une droite de pente k. Dans ce cas simple, l’unité de k est L·mol⁻¹·s⁻¹ si les concentrations sont en mol·L⁻¹ et le temps en secondes. D’autres lois d’ordre 2, notamment celles faisant intervenir deux réactifs distincts, peuvent avoir des formes intégrées différentes.',
+
+          'Le temps de demi-réaction t1/2 est la durée nécessaire pour que la concentration du réactif considéré atteigne la moitié de sa valeur initiale, dans le modèle étudié. Pour l’ordre 0, t1/2 = [A]0/(2k). Pour l’ordre 1, t1/2 = ln(2)/k. Pour l’ordre 2 simple, t1/2 = 1/(k[A]0). Ces relations montrent que la dépendance à la concentration initiale varie selon l’ordre : elle est directe pour l’ordre 0, absente pour l’ordre 1 et inverse pour l’ordre 2 simple.',
+
+          'Pour identifier un ordre à partir de données concentration-temps, on peut examiner quelle transformation des données donne la meilleure relation linéaire : [A] en fonction du temps pour l’ordre 0, ln([A]) pour l’ordre 1, ou 1/[A] pour l’ordre 2 simple. En pratique, il faut examiner la qualité de l’ajustement et les incertitudes, et ne pas décider uniquement à partir d’un graphique visuellement approximatif.'
+        ],
+        example: {
+          statement: 'Une réaction suit une cinétique d’ordre 1 avec k = 0,020 s⁻¹. Calculer son temps de demi-réaction.',
+          calculation: 'Pour un ordre 1, t1/2 = ln(2)/k. Donc t1/2 = 0,693/0,020 s⁻¹ = 34,65 s.',
+          answer: 'Le temps de demi-réaction vaut environ 34,7 s. Dans le modèle d’ordre 1, cette durée ne dépend pas de la concentration initiale.'
+        },
+        exercise: {
+          question: 'Quelle représentation graphique permet de tester une cinétique d’ordre 1 ?',
+          answer: 'La représentation de ln([A]) en fonction du temps. Le modèle prévoit une droite de pente −k.'
+        },
+        exercises: [
+          {
+            question: 'Pour une cinétique d’ordre 0, quelle est l’expression de [A] en fonction du temps ?',
+            answer: '[A]t = [A]0 − kt.'
+          },
+          {
+            question: 'Pour une cinétique d’ordre 1, quelle est l’expression du temps de demi-réaction ?',
+            answer: 't1/2 = ln(2)/k.'
+          },
+          {
+            question: 'Pour une cinétique d’ordre 2 simple, quelle grandeur doit être représentée en fonction du temps pour obtenir une droite ?',
+            answer: 'La grandeur 1/[A] doit être représentée en fonction du temps.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 12.4 Integrated Rate Laws',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-4-integrated-rate-laws'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 12 Key Terms',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-key-terms'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'collisions-energie-activation-arrhenius',
+      title: 'Théorie des collisions, énergie d’activation et loi d’Arrhenius',
+      field: 'Chimie · Cinétique chimique · Interprétation énergétique des réactions',
+      summary: 'Expliquer les collisions efficaces, l’orientation des réactifs, l’état de transition, l’énergie d’activation et la dépendance de la constante de vitesse à la température.',
+      lesson: {
+        sections: [
+          'La théorie des collisions propose un modèle microscopique pour comprendre la vitesse de nombreuses réactions. Les entités réactives doivent se rencontrer, mais toute collision ne conduit pas à une transformation chimique. Pour être efficace, une collision doit généralement présenter une orientation compatible avec la réorganisation des liaisons et une énergie suffisante pour franchir la barrière énergétique associée au processus.',
+
+          'L’énergie d’activation Ea est la barrière énergétique caractéristique du chemin réactionnel considéré. Dans un diagramme d’énergie en fonction de l’avancement de la réaction, elle correspond à la différence entre le niveau énergétique des réactifs et celui de l’état de transition pour le sens direct. L’état de transition est une configuration très fugace située au voisinage du sommet de la barrière ; il ne doit pas être confondu avec un intermédiaire réactionnel, qui correspond à une espèce située dans un minimum local d’énergie et pouvant intervenir dans les étapes suivantes.',
+
+          'À température plus élevée, la distribution des énergies moléculaires est modifiée et une fraction plus grande des particules possède une énergie suffisante pour franchir une barrière donnée. Cela explique pourquoi la constante de vitesse augmente généralement avec la température pour de nombreuses réactions. La fréquence et l’orientation des collisions interviennent également dans la probabilité qu’une rencontre soit efficace.',
+
+          'La loi d’Arrhenius s’écrit k = A exp(−Ea/(RT)). Dans cette expression, k est la constante de vitesse, A le facteur préexponentiel, Ea l’énergie d’activation en J·mol⁻¹, R la constante des gaz parfaits égale à 8,314 J·mol⁻¹·K⁻¹ et T la température absolue en kelvins. Le facteur A regroupe notamment des contributions liées à la fréquence des rencontres et à leur orientation dans le modèle considéré. Les unités de A sont les mêmes que celles de k.',
+
+          'La forme logarithmique est ln(k) = ln(A) − Ea/(RT). Si le comportement suit la loi d’Arrhenius sur l’intervalle de température étudié, le graphique de ln(k) en fonction de 1/T est approximativement une droite de pente −Ea/R et d’ordonnée à l’origine ln(A). La pente permet donc d’estimer Ea à partir de mesures de k à différentes températures. Une estimation à deux températures est possible avec ln(k2/k1) = (Ea/R)(1/T1 − 1/T2), en utilisant les températures en kelvins.',
+
+          'La loi d’Arrhenius est un modèle largement utilisé, mais son application suppose que le mécanisme et le régime cinétique restent suffisamment comparables sur le domaine étudié. Des changements de mécanisme, des équilibres préalables, des limitations de transport ou des phénomènes complexes peuvent conduire à des écarts à une droite d’Arrhenius. Une énergie d’activation apparente obtenue par ajustement ne doit donc pas toujours être interprétée comme une barrière élémentaire unique.'
+        ],
+        example: {
+          statement: 'Une réaction suit une loi d’Arrhenius avec A = 1,0 × 10¹⁰ s⁻¹, Ea = 50 000 J·mol⁻¹ et T = 300 K. Estimer k avec R = 8,314 J·mol⁻¹·K⁻¹.',
+          calculation: 'k = A exp(−Ea/(RT)) = 1,0 × 10¹⁰ × exp(−50 000/(8,314 × 300)). Le rapport Ea/(RT) vaut environ 20,05. Ainsi k ≈ 1,0 × 10¹⁰ × exp(−20,05) ≈ 1,96 × 10¹ s⁻¹.',
+          answer: 'La constante de vitesse estimée est k ≈ 19,6 s⁻¹. Le résultat dépend des valeurs supposées de A et Ea et de la validité du modèle d’Arrhenius à 300 K.'
+        },
+        exercise: {
+          question: 'Pourquoi toutes les collisions entre réactifs ne sont-elles pas efficaces ?',
+          answer: 'Parce qu’une collision doit généralement avoir une énergie suffisante pour franchir la barrière d’activation et une orientation compatible avec la transformation des liaisons.'
+        },
+        exercises: [
+          {
+            question: 'Quelle température faut-il utiliser dans la loi d’Arrhenius ?',
+            answer: 'La température absolue en kelvins.'
+          },
+          {
+            question: 'Quelle est la pente du graphique ln(k) en fonction de 1/T dans le modèle d’Arrhenius ?',
+            answer: 'La pente vaut −Ea/R.'
+          },
+          {
+            question: 'Que représente l’état de transition ?',
+            answer: 'Une configuration très fugace située au voisinage du sommet de la barrière énergétique du chemin réactionnel.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 12.5 Collision Theory',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-5-collision-theory'
+          },
+          {
+            title: 'IUPAC Gold Book — Activation',
+            url: 'https://goldbook.iupac.org/terms/view/A00093'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'mecanismes-reactionnels-catalyse',
+      title: 'Mécanismes réactionnels et catalyse',
+      field: 'Chimie · Cinétique chimique · Étapes élémentaires et chemins réactionnels',
+      summary: 'Décrire un mécanisme en étapes élémentaires, distinguer intermédiaire et catalyseur, utiliser la molecularité avec prudence et expliquer les catalyses homogène et hétérogène.',
+      lesson: {
+        sections: [
+          'Une équation-bilan indique les réactifs et les produits nets d’une transformation, mais elle ne décrit pas nécessairement le chemin suivi à l’échelle moléculaire. Un mécanisme réactionnel propose une succession d’étapes élémentaires dont la somme redonne l’équation globale. Chaque étape élémentaire représente un événement microscopique modélisé séparément. Un mécanisme proposé doit être compatible avec les observations expérimentales, notamment la loi de vitesse, mais aussi avec d’autres données disponibles.',
+
+          'La molecularité d’une étape élémentaire est le nombre d’entités réactives qui y participent. Une étape unimoléculaire met en jeu une entité réactive ; une étape bimoléculaire en met en jeu deux ; une étape trimoléculaire en met en jeu trois et est moins fréquente. Pour une étape élémentaire, la loi de vitesse peut être déduite de son écriture selon les règles de la cinétique élémentaire. Cette règle ne s’applique pas automatiquement à l’équation-bilan d’une réaction globale.',
+
+          'Un intermédiaire réactionnel est formé lors d’une étape puis consommé lors d’une étape ultérieure. Il apparaît donc dans le mécanisme détaillé, mais s’élimine lorsqu’on additionne les étapes pour retrouver le bilan global. Un catalyseur intervient également dans le mécanisme, mais il est régénéré au cours du cycle global idéal. Il ne figure donc pas dans l’équation-bilan nette, même s’il peut être consommé dans une étape puis reformé dans une autre. Il faut distinguer le catalyseur de l’intermédiaire à partir de son rôle dans le cycle complet.',
+
+          'Dans un mécanisme à plusieurs étapes, certaines étapes peuvent être beaucoup plus rapides que d’autres. Une étape lente peut limiter le débit global du processus ; on parle alors d’étape déterminante de la vitesse dans le cadre du modèle considéré. Toutefois, l’identification de l’étape lente ne suffit pas toujours à écrire directement la loi de vitesse globale : des prééquilibres, des intermédiaires ou des approximations d’état quasi stationnaire peuvent intervenir. La loi proposée doit être cohérente avec les mesures.',
+
+          'La catalyse homogène se produit lorsque le catalyseur et les réactifs appartiennent à la même phase. La catalyse hétérogène met en jeu un catalyseur dans une phase différente ; la réaction peut alors se dérouler à sa surface. Dans ce dernier cas, l’adsorption des réactifs, les transformations de surface et la désorption des produits peuvent participer au mécanisme. La surface accessible et l’état du catalyseur peuvent influencer l’activité observée.',
+
+          'Un catalyseur fournit un chemin réactionnel alternatif dont la barrière cinétique pertinente est généralement plus faible que celle du chemin non catalysé. Il augmente ainsi la vitesse d’établissement de l’équilibre, sans modifier la variation d’énergie libre globale de la réaction ni la constante d’équilibre à température fixée. Il accélère les processus direct et inverse ; il ne déplace donc pas, à lui seul, la position de l’équilibre. L’activité catalytique peut être affectée par la température, la composition du milieu, l’empoisonnement ou la désactivation du catalyseur.'
+        ],
+        example: {
+          statement: 'On propose le mécanisme suivant : étape 1, A + B → X ; étape 2, X + C → A + D. Identifier l’intermédiaire et écrire le bilan global.',
+          calculation: 'L’espèce X est produite à l’étape 1 puis consommée à l’étape 2 : c’est un intermédiaire. L’espèce A est consommée à la première étape puis régénérée à la seconde. En additionnant les deux étapes et en simplifiant X et A des deux côtés, il reste B + C → D.',
+          answer: 'X est l’intermédiaire réactionnel. A est régénérée dans le bilan global et joue ici le rôle d’une espèce intervenant dans le cycle, ce qui est compatible avec un rôle catalytique dans ce mécanisme schématique. Le bilan net est B + C → D.'
+        },
+        exercise: {
+          question: 'Quelle différence essentielle distingue un intermédiaire réactionnel d’un catalyseur dans un mécanisme ?',
+          answer: 'Un intermédiaire est formé puis consommé au cours des étapes. Un catalyseur participe au mécanisme mais est régénéré dans le bilan global du cycle catalytique.'
+        },
+        exercises: [
+          {
+            question: 'Une étape élémentaire A + B → produits est de quelle molecularité ?',
+            answer: 'Elle est bimoléculaire, car deux entités réactives participent à cette étape.'
+          },
+          {
+            question: 'Une espèce apparaît dans une étape puis disparaît dans la suivante. Comment la nomme-t-on ?',
+            answer: 'Un intermédiaire réactionnel.'
+          },
+          {
+            question: 'Un catalyseur modifie-t-il la position de l’équilibre chimique à température constante ?',
+            answer: 'Non. Il accélère l’établissement de l’équilibre sans modifier la constante d’équilibre ni la composition de l’état d’équilibre.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Chemistry 2e, 12.6 Reaction Mechanisms',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-6-reaction-mechanisms'
+          },
+          {
+            title: 'OpenStax — Chemistry 2e, 12.7 Catalysis',
+            url: 'https://openstax.org/books/chemistry-2e/pages/12-7-catalysis'
+          },
+          {
+            title: 'IUPAC Gold Book — Rate law',
+            url: 'https://goldbook.iupac.org/terms/view/R05141'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+]
