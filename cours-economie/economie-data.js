@@ -2914,6 +2914,367 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'mecanisme-dette',
+  title: 'Le mécanisme de la dette',
+  note: 'Six chapitres pour comprendre la formation de la dette publique, les emprunts obligataires, les intérêts, le refinancement, la dynamique du ratio dette/PIB, le rôle des marchés financiers et les critères de soutenabilité. Le périmètre statistique et les règles peuvent varier selon les pays et évoluer dans le temps. Les exemples chiffrés sont pédagogiques et ne décrivent pas une situation nationale réelle.',
+  chapters: [
+    {
+      id: 'origine-et-definition-dette-publique',
+      title: 'L’origine de la dette publique : recettes, dépenses et déficit',
+      field: 'Économie publique · Comptabilité nationale et finances publiques',
+      summary: 'Distinguer dette, déficit et besoin de financement, comprendre quelles administrations sont concernées et identifier pourquoi un État emprunte.',
+      lesson: {
+        sections: [
+          'La dette publique est un stock : elle correspond aux engagements financiers qui restent dus par les administrations publiques à une date donnée. Le déficit public est un flux mesuré sur une période, généralement une année : il apparaît lorsque les dépenses publiques dépassent les recettes publiques. Un déficit peut donc accroître la dette, mais les deux notions ne sont pas interchangeables. La dette résulte de l’accumulation des emprunts passés non encore remboursés, à laquelle peuvent s’ajouter certains ajustements comptables et financiers.',
+
+          'Dans les statistiques européennes, le secteur des administrations publiques comprend les administrations centrales, les administrations locales et les administrations de sécurité sociale. Il ne se limite donc pas au seul budget de l’État. La dette dite « de Maastricht » est une dette brute, consolidée et évaluée à sa valeur nominale ; elle couvre principalement les numéraires et dépôts, les titres de dette et les prêts. La consolidation évite notamment de compter comme dette publique une créance détenue par une administration publique sur une autre administration publique du même périmètre.',
+
+          'Lorsqu’une collectivité ou une administration dépense davantage qu’elle ne reçoit sur une période, elle doit couvrir cet écart par des ressources de financement : emprunt, mobilisation de trésorerie ou autres opérations financières. Pour l’État français, l’Agence France Trésor gère la dette et la trésorerie de l’État, mais elle ne gère pas à elle seule toute la dette des administrations publiques. Les organismes de sécurité sociale et les collectivités ont leurs propres circuits de financement.',
+
+          'L’emprunt n’est pas nécessairement lié à une dépense exceptionnelle : il peut financer un déficit courant, un investissement public ou le remboursement d’emprunts arrivant à échéance. Il permet de répartir dans le temps le financement de certaines dépenses, mais crée en contrepartie une obligation de payer des intérêts et de rembourser le capital selon les conditions prévues. L’analyse économique doit donc examiner à la fois l’utilité des dépenses financées, leur rendement collectif éventuel et le coût futur du financement.'
+        ],
+        example: {
+          statement: 'Une administration reçoit 100 milliards d’euros de recettes et engage 112 milliards d’euros de dépenses sur une année. En supposant qu’il n’existe aucun autre ajustement, quel est son déficit sur cette période ?',
+          calculation: 'Déficit = dépenses - recettes. Déficit = 112 - 100 = 12 milliards d’euros.',
+          answer: 'Le déficit est de 12 milliards d’euros. Il s’agit d’un flux annuel. Si ce déficit est financé par emprunt et qu’aucun autre facteur ne modifie l’encours, la dette augmente de 12 milliards d’euros.'
+        },
+        exercise: {
+          question: 'Quelle est la différence fondamentale entre le déficit public et la dette publique ?',
+          answer: 'Le déficit est un flux mesuré sur une période, tandis que la dette est un stock d’engagements financiers restant dus à une date donnée.'
+        },
+        exercises: [
+          {
+            question: 'La dette publique au sens de Maastricht concerne-t-elle uniquement l’État central ?',
+            answer: 'Non. Elle couvre l’ensemble des administrations publiques entrant dans le périmètre statistique : administrations centrales, locales et de sécurité sociale.'
+          },
+          {
+            question: 'Pourquoi parle-t-on d’une dette publique consolidée ?',
+            answer: 'Parce que les dettes et créances entre unités appartenant au secteur des administrations publiques sont neutralisées afin d’éviter les doubles comptes.'
+          },
+          {
+            question: 'Un déficit annuel et un encours de dette représentent-ils la même grandeur ?',
+            answer: 'Non. Le déficit mesure un besoin net de financement sur une période ; l’encours de dette mesure les engagements restant dus à une date donnée.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Banque de France — La dette publique',
+            url: 'https://acpr.banque-france.fr/fr/publications-et-statistiques/publications/la-dette-publique'
+          },
+          {
+            title: 'Agence France Trésor — Gestion de la dette de l’État',
+            url: 'https://www.aft.gouv.fr/fr/definition-perimetre'
+          },
+          {
+            title: 'Eurostat — Excessive deficit procedure : concepts et définitions',
+            url: 'https://ec.europa.eu/eurostat/web/government-finance-statistics/excessive-deficit-procedure'
+          },
+          {
+            title: 'Ministère de l’Économie — 5 minutes pour comprendre la dette publique',
+            url: 'https://www.economie.gouv.fr/decryptage-5-minutes-pour-comprendre-la-dette-publique'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'emprunts-obligations-et-emissions',
+      title: 'Comment un État emprunte : obligations et émissions de dette',
+      field: 'Marchés financiers · Titres souverains et financement de l’État',
+      summary: 'Comprendre le rôle des obligations, des bons du Trésor, des adjudications, des investisseurs et des caractéristiques contractuelles d’un emprunt.',
+      lesson: {
+        sections: [
+          'Un État peut emprunter en émettant des titres de dette. Une obligation représente une créance : l’investisseur qui l’achète prête des fonds à l’émetteur et reçoit en contrepartie des paiements définis par les caractéristiques du titre. Dans le cas d’une obligation à taux fixe classique, l’émetteur verse généralement des intérêts périodiques, appelés coupons, puis rembourse le principal à l’échéance. Les modalités exactes dépendent du titre : certains instruments ont un taux variable, une indexation ou une structure différente.',
+
+          'En France, les obligations assimilables du Trésor (OAT) constituent les principaux titres négociables de moyen et long terme émis par l’État. Les bons du Trésor à taux fixe et à intérêts précomptés (BTF) sont des instruments de court terme. La maturité désigne la durée restant jusqu’au remboursement final du principal. Une maturité longue permet de répartir les échéances dans le temps, mais le taux demandé par les investisseurs peut intégrer davantage d’incertitude sur l’inflation, les taux futurs et la situation budgétaire.',
+
+          'L’émission de titres souverains s’effectue notamment par adjudication : l’émetteur annonce une opération et les participants soumettent des offres selon les règles du marché. Le prix ou le rendement obtenu dépend de la demande, des conditions monétaires, de la maturité, de la liquidité du titre et de l’évaluation du risque par les investisseurs. L’État ne choisit donc pas librement un taux arbitraire : le coût de financement résulte des conditions auxquelles les investisseurs acceptent de prêter.',
+
+          'Les acheteurs peuvent être des banques, des fonds d’investissement, des assureurs, des fonds de pension, des banques centrales ou d’autres investisseurs, selon les marchés et les périodes. Une fois émis, les titres peuvent être échangés sur le marché secondaire. Ces transactions modifient leur détenteur, mais ne fournissent pas directement de nouveaux fonds à l’État émetteur : les fonds reçus par l’État proviennent de l’émission initiale ou d’une réémission, et non de chaque revente ultérieure.'
+        ],
+        example: {
+          statement: 'Un investisseur achète à l’émission une obligation d’une valeur nominale de 1 000 euros, assortie d’un coupon annuel fixe de 3 % et d’une échéance dans 5 ans. Quel coupon annuel est prévu, en supposant que le titre est détenu pendant toute l’année ?',
+          calculation: 'Coupon annuel = valeur nominale × taux du coupon. Coupon annuel = 1 000 × 0,03 = 30 euros.',
+          answer: 'Le coupon annuel prévu est de 30 euros. Le remboursement des 1 000 euros de principal intervient à l’échéance, selon les conditions de cette obligation. Le rendement réellement obtenu par l’investisseur peut différer du taux du coupon s’il a acheté le titre à un prix différent de sa valeur nominale.'
+        },
+        exercise: {
+          question: 'Quelle différence existe entre le marché primaire et le marché secondaire des obligations ?',
+          answer: 'Sur le marché primaire, l’émetteur place les titres et reçoit les fonds. Sur le marché secondaire, les investisseurs échangent des titres déjà émis entre eux.'
+        },
+        exercises: [
+          {
+            question: 'Que représente la valeur nominale d’une obligation ?',
+            answer: 'C’est le montant de principal auquel se réfèrent les conditions du titre et qui doit être remboursé selon les modalités prévues.'
+          },
+          {
+            question: 'Que signifie la maturité d’un titre de dette ?',
+            answer: 'Elle désigne la durée restant jusqu’à son échéance finale, date à laquelle le principal doit être remboursé selon le contrat.'
+          },
+          {
+            question: 'Une revente d’une OAT entre deux investisseurs apporte-t-elle automatiquement de l’argent frais à l’État ?',
+            answer: 'Non. La revente sur le marché secondaire transfère le titre entre investisseurs ; elle ne constitue pas une nouvelle émission par l’État.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Agence France Trésor — Gestion de la dette de l’État',
+            url: 'https://www.aft.gouv.fr/fr/definition-perimetre'
+          },
+          {
+            title: 'Agence France Trésor — Glossaire',
+            url: 'https://www.aft.gouv.fr/fr/glossaire-accord%C3%A9on'
+          },
+          {
+            title: 'Ministère de l’Économie — 5 minutes pour comprendre la dette publique',
+            url: 'https://www.economie.gouv.fr/decryptage-5-minutes-pour-comprendre-la-dette-publique'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'interets-charge-et-refinancement',
+      title: 'Les intérêts, le remboursement et le refinancement de la dette',
+      field: 'Finances publiques · Coût de financement et gestion de trésorerie',
+      summary: 'Étudier la charge d’intérêts, les échéances de remboursement, le refinancement et la différence entre coût moyen de la dette et taux des nouvelles émissions.',
+      lesson: {
+        sections: [
+          'L’intérêt est le prix contractuel payé pour disposer temporairement de fonds empruntés. Pour une obligation à taux fixe, le coupon est déterminé par les conditions du titre et calculé à partir de sa valeur nominale. La charge d’intérêts d’une administration sur une année dépend de l’ensemble des emprunts en circulation, de leurs taux, de leurs échéances et de leurs caractéristiques. Elle ne se confond pas avec le montant total de dette : deux États ayant le même encours peuvent supporter des charges d’intérêts différentes.',
+
+          'Il faut distinguer le taux des nouvelles émissions du taux moyen payé sur l’ensemble de la dette existante. Si les taux de marché augmentent, les nouveaux emprunts deviennent généralement plus coûteux, mais les obligations anciennes à taux fixe conservent leurs coupons contractuels jusqu’à leur échéance. La hausse du coût moyen se diffuse donc progressivement à mesure que les titres arrivent à échéance et sont remplacés ou que la dette à taux variable est révisée.',
+
+          'À l’échéance d’un titre, le principal doit être remboursé selon le contrat. Pour assurer la continuité du financement, un État peut émettre de nouveaux titres afin de couvrir une partie des remboursements arrivant à échéance : c’est le refinancement. Cette opération ne signifie pas nécessairement que le stock de dette augmente du montant remboursé. Si un nouvel emprunt de même montant remplace exactement l’ancien, le principal total reste inchangé ; en revanche, le coût, la maturité et la composition de la dette peuvent changer.',
+
+          'Le besoin de financement annuel peut comprendre le déficit à financer et les remboursements de principal arrivant à échéance, ainsi que d’autres opérations de trésorerie ou financières. Il est donc souvent supérieur au seul déficit public. Une gestion prudente cherche à répartir les échéances, à limiter les risques de refinancement et à conserver un accès régulier au marché. Le refinancement expose néanmoins l’émetteur aux conditions qui prévalent au moment où il doit renouveler ses emprunts.'
+        ],
+        example: {
+          statement: 'Un titre de 500 millions d’euros arrive à échéance. L’État émet un nouveau titre de 500 millions d’euros pour financer le remboursement du premier. Quel est l’effet mécanique sur le principal total de dette, en faisant abstraction des autres opérations ?',
+          calculation: 'Variation nette du principal = nouvel emprunt - principal remboursé. Variation nette = 500 - 500 = 0 million d’euros.',
+          answer: 'Le principal total reste inchangé dans cet exemple simplifié. L’opération renouvelle la dette ; elle ne l’augmente pas mécaniquement. Le nouveau titre peut toutefois avoir un taux d’intérêt ou une maturité différents.'
+        },
+        exercise: {
+          question: 'Pourquoi une hausse des taux de marché ne fait-elle pas immédiatement augmenter dans la même proportion la charge d’intérêts de toute la dette à taux fixe déjà émise ?',
+          answer: 'Parce que les coupons des obligations anciennes à taux fixe sont contractuellement déterminés. Le coût moyen augmente progressivement lorsque ces titres arrivent à échéance et sont refinancés à de nouvelles conditions.'
+        },
+        exercises: [
+          {
+            question: 'Le besoin de financement annuel est-il toujours égal au déficit public ?',
+            answer: 'Non. Il peut aussi inclure les remboursements de principal arrivant à échéance et d’autres opérations financières ou de trésorerie.'
+          },
+          {
+            question: 'Que signifie refinancer une dette ?',
+            answer: 'Cela consiste à obtenir de nouveaux financements, par exemple en émettant de nouveaux titres, afin notamment de rembourser des emprunts arrivant à échéance.'
+          },
+          {
+            question: 'Une obligation à taux fixe voit-elle automatiquement son coupon augmenter lorsque les taux de marché montent ?',
+            answer: 'Non. Son coupon contractuel reste normalement inchangé jusqu’à l’échéance. Le prix auquel elle s’échange sur le marché secondaire peut en revanche varier.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Agence France Trésor — Gestion de la dette de l’État',
+            url: 'https://www.aft.gouv.fr/fr/definition-perimetre'
+          },
+          {
+            title: 'Agence France Trésor — Glossaire',
+            url: 'https://www.aft.gouv.fr/fr/glossaire-accord%C3%A9on'
+          },
+          {
+            title: 'Ministère de l’Économie — 5 minutes pour comprendre la dette publique',
+            url: 'https://www.economie.gouv.fr/decryptage-5-minutes-pour-comprendre-la-dette-publique'
+          },
+          {
+            title: 'Banque des règlements internationaux — Annual Economic Report 2026, chapitre sur la dette publique',
+            url: 'https://www.bis.org/publications/aer-2026/high-public-debt-shifting-financial-markets'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'dynamique-dette-et-ratio-pib',
+      title: 'La dynamique de la dette : déficit primaire, croissance et taux d’intérêt',
+      field: 'Macroéconomie · Dynamique de la dette et ratio dette/PIB',
+      summary: 'Expliquer les facteurs qui font évoluer l’encours et le ratio de dette, notamment le solde primaire, le taux d’intérêt, la croissance nominale et les ajustements stock-flux.',
+      lesson: {
+        sections: [
+          'L’évolution de la dette publique dépend du solde budgétaire, des intérêts dus et d’autres opérations qui peuvent modifier l’encours. Le solde primaire correspond à la différence entre les recettes publiques et les dépenses publiques hors intérêts de la dette. Un excédent primaire signifie que les recettes dépassent les dépenses hors intérêts ; un déficit primaire signifie l’inverse. Un excédent primaire peut contribuer à stabiliser ou réduire la dette, mais son effet doit être comparé au coût des intérêts et à la croissance de l’économie.',
+
+          'Le ratio dette/PIB rapporte l’encours de dette au produit intérieur brut nominal. Il permet de mettre la dette en perspective avec la taille de l’économie, mais ne mesure pas à lui seul la capacité exacte de remboursement. Lorsque le PIB nominal augmente, le ratio peut diminuer même si le montant nominal de dette ne baisse pas. À l’inverse, une contraction du PIB nominal peut faire monter le ratio, y compris si l’encours de dette reste stable.',
+
+          'Dans une représentation simplifiée, la dynamique du ratio dépend de l’écart entre le taux d’intérêt nominal moyen de la dette et le taux de croissance nominal du PIB, ainsi que du solde primaire rapporté au PIB. Si le coût moyen de la dette est supérieur à la croissance nominale, la charge héritée de la dette tend à exercer une pression à la hausse sur le ratio, sauf compensation par le solde primaire ou d’autres facteurs. Si la croissance nominale dépasse le taux d’intérêt moyen, cet effet mécanique est plus favorable, mais cela ne garantit pas à lui seul la soutenabilité.',
+
+          'La relation complète doit aussi tenir compte des ajustements stock-flux : opérations financières, variations de valorisation, effets de change pour les dettes en devises, changements de périmètre ou écarts entre les données de caisse et les comptes nationaux. C’est pourquoi la variation annuelle de l’encours de dette ne correspond pas toujours exactement au déficit public de la même année. Les analyses sérieuses distinguent les mécanismes récurrents des opérations ponctuelles.'
+        ],
+        example: {
+          statement: 'Dans un exemple simplifié, le taux d’intérêt nominal moyen de la dette est de 2 % et la croissance nominale du PIB est de 4 %. Quel est l’écart entre ces deux taux ?',
+          calculation: 'Écart taux-croissance = taux d’intérêt - croissance nominale. Écart = 2 % - 4 % = -2 points de pourcentage.',
+          answer: 'L’écart est de -2 points de pourcentage. Dans ce scénario, l’effet boule de neige lié au différentiel taux-croissance est favorable au ratio de dette, toutes choses égales par ailleurs. Il ne suffit toutefois pas à conclure que la dette est soutenable : le solde primaire et les autres ajustements comptent également.'
+        },
+        exercise: {
+          question: 'Pourquoi le ratio dette/PIB peut-il diminuer sans que le montant nominal de dette baisse ?',
+          answer: 'Parce que le PIB nominal, qui constitue le dénominateur du ratio, peut augmenter plus rapidement que l’encours nominal de dette.'
+        },
+        exercises: [
+          {
+            question: 'Qu’appelle-t-on solde primaire ?',
+            answer: 'C’est le solde des recettes et des dépenses publiques hors charges d’intérêts de la dette.'
+          },
+          {
+            question: 'Que signifie un différentiel taux d’intérêt moins croissance nominale négatif ?',
+            answer: 'Cela signifie que le taux d’intérêt nominal moyen est inférieur à la croissance nominale du PIB ; cet écart tend, toutes choses égales par ailleurs, à alléger la dynamique du ratio dette/PIB.'
+          },
+          {
+            question: 'Pourquoi la variation de dette peut-elle différer du déficit public ?',
+            answer: 'Parce que des ajustements stock-flux, des opérations financières, des effets de change ou des changements de périmètre peuvent également modifier l’encours.'
+          }
+        ],
+        sources: [
+          {
+            title: 'FMI — A Guide and Tool for Projecting Public Debt and Fiscal Adjustment Paths (2021)',
+            url: 'https://www.imf.org/-/media/files/publications/tnm/2021/english/tnmea2021005.pdf'
+          },
+          {
+            title: 'Banque de France — La dette publique',
+            url: 'https://acpr.banque-france.fr/fr/publications-et-statistiques/publications/la-dette-publique'
+          },
+          {
+            title: 'Eurostat — Excessive deficit procedure : concepts et définitions',
+            url: 'https://ec.europa.eu/eurostat/web/government-finance-statistics/excessive-deficit-procedure'
+          },
+          {
+            title: 'Banque des règlements internationaux — Annual Economic Report 2023, politique monétaire et budgétaire',
+            url: 'https://www.bis.org/publications/aer-2023/monetary-fiscal-policy-safeguarding-stability-trust'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'marches-financiers-et-risque-souverain',
+      title: 'Les marchés financiers, les taux et la confiance des investisseurs',
+      field: 'Économie financière · Marché obligataire et risque souverain',
+      summary: 'Analyser comment se forme le coût de financement, pourquoi le prix des obligations varie et quels risques peuvent affecter un État emprunteur.',
+      lesson: {
+        sections: [
+          'Le rendement demandé sur une obligation souveraine dépend de plusieurs éléments : le niveau général des taux d’intérêt, les anticipations d’inflation, la durée du prêt, la liquidité du titre et l’évaluation du risque de crédit. Les investisseurs comparent les rendements disponibles sur des titres de maturité et de caractéristiques proches. Un État perçu comme plus risqué peut devoir offrir un rendement plus élevé pour attirer les acheteurs, mais cette relation dépend aussi des conditions monétaires et de la situation globale des marchés.',
+
+          'Le prix d’une obligation à taux fixe évolue généralement en sens inverse de son rendement de marché. Lorsque les taux exigés par le marché augmentent, les coupons fixes d’une obligation ancienne deviennent relativement moins attractifs ; son prix tend donc à baisser. Lorsque les rendements de marché diminuent, le prix de cette obligation tend à augmenter. Cette variation affecte la valeur de marché du titre pour son détenteur, sans modifier automatiquement le coupon contractuel que l’émetteur doit verser.',
+
+          'Le risque souverain ne se résume pas à un chiffre unique de dette/PIB. Les investisseurs et les analystes examinent notamment la capacité de l’État à percevoir des recettes, la croissance, la structure des échéances, la part de dette à taux variable ou en devises, la profondeur du marché domestique, la stabilité institutionnelle et la crédibilité de la politique économique. Une forte concentration de remboursements à court terme peut accroître le risque de refinancement, car une grande quantité de dette doit être renouvelée dans un délai réduit.',
+
+          'Les taux souverains peuvent également être influencés par les décisions de politique monétaire et les conditions financières internationales. Une hausse des taux directeurs ou des rendements de référence peut renchérir le financement de nombreux emprunteurs. Dans une union monétaire, les États partagent une monnaie mais restent responsables de leurs finances publiques ; leurs rendements peuvent donc diverger en fonction de leur situation budgétaire, de la liquidité de leurs titres et de l’évaluation des risques. Il serait incorrect d’attribuer toute variation des taux à une seule cause.'
+        ],
+        example: {
+          statement: 'Une obligation à taux fixe verse un coupon annuel de 20 euros. Après son émission, les nouvelles obligations comparables offrent un rendement plus élevé. Que peut-il se passer sur le marché secondaire ?',
+          calculation: 'Le coupon de 20 euros reste fixé par le contrat. Pour rendre l’ancienne obligation plus attractive face aux nouveaux titres, son prix de marché tend à baisser, ce qui augmente son rendement courant et son rendement à l’échéance, selon les modalités du titre.',
+          answer: 'Le prix de marché de l’ancienne obligation tend à diminuer. Son coupon contractuel ne change pas. Cette distinction sépare le coût contractuel de l’emprunt pour l’émetteur de la valeur de marché du titre pour l’investisseur.'
+        },
+        exercise: {
+          question: 'Pourquoi le prix d’une obligation à taux fixe baisse-t-il généralement lorsque les rendements de marché augmentent ?',
+          answer: 'Parce que ses paiements fixes deviennent moins attractifs par rapport aux rendements offerts par les nouvelles obligations ; son prix doit généralement baisser pour compenser cette différence.'
+        },
+        exercises: [
+          {
+            question: 'Que mesure le rendement d’une obligation ?',
+            answer: 'Il exprime le rapport entre les revenus et le prix payé, ou le rendement calculé jusqu’à l’échéance selon les hypothèses retenues. Il ne se confond pas nécessairement avec le taux du coupon.'
+          },
+          {
+            question: 'Qu’est-ce que le risque de refinancement ?',
+            answer: 'C’est le risque de ne pas pouvoir renouveler des emprunts arrivant à échéance à des conditions acceptables, voire de rencontrer des difficultés pour obtenir les fonds nécessaires.'
+          },
+          {
+            question: 'Une dette élevée suffit-elle à déterminer à elle seule le risque souverain ?',
+            answer: 'Non. Il faut aussi analyser les taux, la croissance, les échéances, la monnaie d’émission, la base d’investisseurs, les recettes publiques et les institutions.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Banque des règlements internationaux — Annual Economic Report 2026, dette publique et marchés financiers',
+            url: 'https://www.bis.org/publications/aer-2026/high-public-debt-shifting-financial-markets'
+          },
+          {
+            title: 'Banque des règlements internationaux — Annual Economic Report 2023, politique monétaire et budgétaire',
+            url: 'https://www.bis.org/publications/aer-2023/monetary-fiscal-policy-safeguarding-stability-trust'
+          },
+          {
+            title: 'Agence France Trésor — Glossaire',
+            url: 'https://www.aft.gouv.fr/fr/glossaire-accord%C3%A9on'
+          },
+          {
+            title: 'FMI — A Guide and Tool for Projecting Public Debt and Fiscal Adjustment Paths (2021)',
+            url: 'https://www.imf.org/-/media/files/publications/tnm/2021/english/tnmea2021005.pdf'
+          }
+        ]
+      }
+    },
+
+    {
+      id: 'soutenabilite-regles-et-choix-publics',
+      title: 'La soutenabilité de la dette : limites, règles européennes et choix économiques',
+      field: 'Économie publique · Soutenabilité budgétaire et gouvernance européenne',
+      summary: 'Évaluer la capacité à servir la dette dans la durée, comprendre les repères européens et examiner les arbitrages entre financement, stabilisation économique et maîtrise des risques.',
+      lesson: {
+        sections: [
+          'La soutenabilité de la dette désigne la capacité d’une administration à honorer ses engagements dans la durée sans devoir adopter des ajustements économiquement ou socialement intenables, ni dépendre d’un refinancement constamment incertain. Elle ne se déduit pas d’un seuil isolé. L’analyse combine la trajectoire de dette, les besoins bruts de financement, les charges d’intérêts, la croissance, les recettes mobilisables, la structure des échéances et la capacité institutionnelle à mettre en œuvre des décisions budgétaires.',
+
+          'Dans l’Union européenne, le cadre des déficits excessifs retient des valeurs de référence de 3 % du PIB pour le déficit public et de 60 % du PIB pour la dette publique. Ces valeurs sont des références inscrites dans le cadre européen, et non une preuve automatique qu’une dette située juste en dessous serait sans risque ou qu’une dette située au-dessus serait immédiatement impossible à financer. Le traité prévoit aussi, pour le critère de dette, la possibilité de satisfaire au critère lorsque le ratio diminue suffisamment et se rapproche de la valeur de référence à un rythme satisfaisant, selon les règles applicables.',
+
+          'Une dette peut financer des dépenses qui soutiennent l’activité, protègent les ménages en période de crise ou développent des infrastructures et des équipements collectifs. Mais l’emprunt reporte une partie du financement dans le temps et impose des paiements futurs. Si les intérêts augmentent fortement, une part croissante des recettes peut être consacrée au service de la dette, réduisant les marges de manœuvre pour d’autres politiques publiques. L’évaluation doit donc comparer les coûts, les bénéfices attendus, les risques et la répartition des effets entre générations.',
+
+          'Les trajectoires de dette sont incertaines. Une récession, une hausse durable des taux, une crise financière, une dépréciation de la monnaie pour une dette en devises ou la matérialisation de garanties publiques peuvent dégrader les comptes. À l’inverse, une croissance plus forte, une meilleure efficacité des dépenses ou des recettes plus élevées peuvent améliorer la trajectoire. Les institutions utilisent donc des projections et des scénarios de stress plutôt qu’une prévision unique présentée comme certaine. Une conclusion sérieuse expose les hypothèses, les risques et les marges d’incertitude.'
+        ],
+        example: {
+          statement: 'Un pays affiche une dette publique égale à 80 % de son PIB. Peut-on conclure, à partir de ce seul ratio, que sa dette est insoutenable ?',
+          calculation: 'Le ratio dette/PIB est un indicateur de taille relative. Pour évaluer la soutenabilité, il faut aussi étudier le coût moyen de la dette, la croissance nominale, le solde primaire, les échéances, les besoins de refinancement, la monnaie d’émission et la capacité de financement de l’État.',
+          answer: 'Non. Le ratio de 80 % ne suffit pas à conclure. Il dépasse la valeur de référence européenne de 60 %, mais l’analyse doit porter sur la trajectoire et l’ensemble des facteurs de soutenabilité. La valeur de référence ne constitue pas à elle seule un diagnostic de défaut ou de solvabilité.'
+        },
+        exercise: {
+          question: 'Pourquoi la soutenabilité d’une dette publique ne peut-elle pas être évaluée uniquement à partir du ratio dette/PIB ?',
+          answer: 'Parce qu’elle dépend également du coût de financement, de la croissance, du solde primaire, des échéances, de la structure de la dette, des recettes publiques et des risques économiques et institutionnels.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les deux valeurs de référence du cadre européen traditionnel de surveillance des déficits excessifs ?',
+            answer: '3 % du PIB pour le déficit public et 60 % du PIB pour la dette publique. Ce sont des valeurs de référence du cadre européen.'
+          },
+          {
+            question: 'Une dette supérieure à 60 % du PIB signifie-t-elle automatiquement qu’un État ne peut plus emprunter ?',
+            answer: 'Non. Ce dépassement ne signifie pas automatiquement une impossibilité d’emprunter. L’évaluation européenne et économique tient compte de la trajectoire de dette et d’autres facteurs prévus par les règles applicables.'
+          },
+          {
+            question: 'Pourquoi les économistes utilisent-ils des scénarios de stress pour étudier la dette ?',
+            answer: 'Pour examiner comment la trajectoire pourrait évoluer en cas de chocs défavorables, par exemple une croissance plus faible, des taux plus élevés ou des besoins de financement inattendus.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Eurostat — Excessive deficit procedure',
+            url: 'https://ec.europa.eu/eurostat/web/government-finance-statistics/excessive-deficit-procedure'
+          },
+          {
+            title: 'Conseil de l’Union européenne — Economic governance framework',
+            url: 'https://www.consilium.europa.eu/en/policies/economic-governance-framework/'
+          },
+          {
+            title: 'FMI — A Guide and Tool for Projecting Public Debt and Fiscal Adjustment Paths (2021)',
+            url: 'https://www.imf.org/-/media/files/publications/tnm/2021/english/tnmea2021005.pdf'
+          },
+          {
+            title: 'Banque de France — La dette publique',
+            url: 'https://acpr.banque-france.fr/fr/publications-et-statistiques/publications/la-dette-publique'
+          },
+          {
+            title: 'Banque des règlements internationaux — Annual Economic Report 2026, dette publique et marchés financiers',
+            url: 'https://www.bis.org/publications/aer-2026/high-public-debt-shifting-financial-markets'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 
 
 ]
