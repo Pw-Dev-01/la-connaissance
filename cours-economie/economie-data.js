@@ -3276,5 +3276,281 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'banques-centrales',
+  title: 'Banques Centrales : Rôles et fonctionnement',
+  note: 'Six chapitres approfondis consacrés aux institutions de banque centrale, à leurs mandats, à la politique monétaire, à ses instruments et à sa transmission, à la monnaie centrale et aux paiements, à la stabilité financière ainsi qu’à l’indépendance et à la responsabilité démocratique. Les mandats et les instruments varient selon les pays : les exemples de la BCE et de la Réserve fédérale ne doivent pas être généralisés à toutes les banques centrales.',
+  chapters: [
+    {
+      id: 'institution-et-missions',
+      title: 'La banque centrale : institution, statut et missions fondamentales',
+      field: 'Économie monétaire · Institutions financières et architecture monétaire',
+      summary: 'Définir une banque centrale, distinguer son rôle de celui des banques commerciales et comprendre les principales missions qui lui sont confiées par le droit de chaque pays.',
+      lesson: {
+        sections: [
+          'Une banque centrale est une institution située au cœur du système monétaire d’un pays ou d’une union monétaire. Elle émet la monnaie de banque centrale, conduit ou participe à la conduite de la politique monétaire et contribue au fonctionnement des systèmes de paiement. Dans la plupart des économies avancées, son objectif monétaire principal est la stabilité des prix. D’autres missions peuvent lui être attribuées par la loi, notamment la contribution à la stabilité financière, la gestion de réserves officielles ou certaines responsabilités de supervision bancaire. Il n’existe cependant pas un modèle institutionnel unique : le statut juridique, les compétences et les priorités diffèrent d’un pays à l’autre.',
+          'La banque centrale ne fonctionne pas comme une banque commerciale destinée au grand public. Les ménages et les entreprises détiennent généralement leurs dépôts auprès de banques commerciales ou d’autres prestataires autorisés. Les banques commerciales, elles, peuvent détenir des comptes de réserves auprès de la banque centrale. Ces réserves constituent de la monnaie de banque centrale et servent notamment au règlement des paiements entre établissements. La banque centrale est donc au centre de l’infrastructure monétaire, sans pour autant gérer les comptes courants ordinaires de l’ensemble de la population.',
+          'Il faut distinguer trois niveaux. La banque centrale définit ou met en œuvre les conditions monétaires conformément à son mandat. Les banques commerciales accordent des crédits, collectent des dépôts et fournissent des services bancaires. Les autorités publiques définissent le cadre légal et budgétaire dans lequel les institutions opèrent. Dans une union monétaire, la répartition des responsabilités peut être partagée : dans la zone euro, la BCE et les banques centrales nationales composent l’Eurosystème pour les missions liées à la monnaie unique. Les banques centrales nationales participent à l’exécution opérationnelle de nombreuses décisions communes.',
+          'La banque centrale exerce aussi une fonction institutionnelle de confiance. La monnaie est utile parce que les agents économiques peuvent l’accepter comme moyen de paiement, unité de compte et réserve de valeur. Cette confiance dépend de la stabilité du cadre monétaire, de la solidité des infrastructures de paiement, de la qualité des institutions et de la capacité à préserver la convertibilité des différentes formes de monnaie à leur valeur nominale. La banque centrale contribue à cette confiance, mais elle ne peut pas garantir à elle seule la prospérité, l’emploi ou l’absence de crises.'
+        ],
+        example: {
+          statement: 'Dans la zone euro, quelle institution prend les décisions de politique monétaire communes et quel rôle les banques centrales nationales peuvent-elles jouer ?',
+          calculation: 'Il faut distinguer la décision commune de sa mise en œuvre opérationnelle. Le Conseil des gouverneurs de la BCE prend les décisions de politique monétaire pour la zone euro. Les banques centrales nationales de l’Eurosystème participent notamment à leur mise en œuvre, par exemple au moyen d’opérations de refinancement.',
+          answer: 'Le Conseil des gouverneurs de la BCE décide de l’orientation de la politique monétaire de la zone euro. Les banques centrales nationales contribuent à l’exécution des opérations et aux autres missions de l’Eurosystème.'
+        },
+        exercise: {
+          question: 'Pourquoi une banque centrale ne doit-elle pas être confondue avec une banque commerciale ?',
+          answer: 'Parce que leurs fonctions principales sont différentes : la banque centrale émet la monnaie centrale et pilote la politique monétaire selon son mandat, tandis que la banque commerciale fournit des services aux clients, collecte des dépôts et accorde des crédits.'
+        },
+        exercises: [
+          {
+            question: 'Citez deux missions courantes d’une banque centrale.',
+            answer: 'La conduite de la politique monétaire et l’émission de monnaie de banque centrale. La supervision ou la surveillance des paiements constitue une autre mission fréquente.'
+          },
+          {
+            question: 'Les particuliers détiennent-ils généralement leurs comptes courants auprès de la banque centrale ?',
+            answer: 'Non. Ils détiennent généralement leurs dépôts auprès de banques commerciales ou de prestataires autorisés. Les banques commerciales détiennent, elles, des réserves auprès de la banque centrale.'
+          },
+          {
+            question: 'Toutes les banques centrales ont-elles exactement le même mandat ?',
+            answer: 'Non. Leurs objectifs et leurs compétences dépendent du cadre juridique et institutionnel de chaque pays ou union monétaire.'
+          }
+        ],
+        sources: [
+          { title: 'Banque de France — Qu’est-ce qu’une banque centrale ?', url: 'https://www.banque-france.fr/fr/actualites/quest-ce-quune-banque-centrale' },
+          { title: 'BCE — Introduction à la politique monétaire', url: 'https://www.ecb.europa.eu/mopo/intro/html/index.en.html' },
+          { title: 'BIS — Central banking: embracing change', url: 'https://www.bis.org/speeches/20240522-central-banking-embracing-change.htm' }
+        ]
+      }
+    },
+    {
+      id: 'mandat-et-stabilite-des-prix',
+      title: 'Le mandat monétaire et la stabilité des prix',
+      field: 'Économie monétaire · Inflation, objectifs et diagnostic macroéconomique',
+      summary: 'Comprendre la stabilité des prix, mesurer l’inflation, distinguer les objectifs selon les institutions et analyser les arbitrages auxquels une banque centrale est confrontée.',
+      lesson: {
+        sections: [
+          'La stabilité des prix est l’objectif principal de nombreuses banques centrales, mais sa définition opérationnelle dépend de leur mandat. Elle ne signifie pas que chaque prix reste immobile. Elle signifie plutôt que le niveau général des prix évolue à un rythme faible, stable et prévisible. Une hausse isolée du prix d’un produit ne suffit donc pas à caractériser l’inflation générale. Les banques centrales suivent des indices agrégés, notamment des indices des prix à la consommation, pour évaluer l’évolution moyenne des prix d’un panier de biens et de services.',
+          'L’inflation correspond à une augmentation durable du niveau général des prix. Son taux mesure la variation de cet indice sur une période donnée. Une inflation positive signifie que le niveau moyen des prix augmente ; une désinflation désigne un ralentissement du rythme de cette hausse ; une déflation correspond à une baisse durable du niveau général des prix. Ces notions ne sont pas interchangeables. Une baisse du taux d’inflation ne signifie donc pas nécessairement que les prix reviennent à leur niveau antérieur : elle indique seulement que leur progression ralentit.',
+          'Dans la zone euro, la BCE vise une inflation de 2 % à moyen terme, mesurée par l’indice des prix à la consommation harmonisé pour la zone euro. La cible est symétrique : les écarts à la hausse comme à la baisse sont considérés comme indésirables. L’horizon de moyen terme tient compte du fait que les décisions monétaires ne peuvent pas corriger instantanément les chocs économiques. La Réserve fédérale des États-Unis possède un mandat différent, qui inclut la recherche du plein emploi maximal et de prix stables. Cet exemple montre qu’il faut toujours lire le mandat juridique de l’institution étudiée avant de décrire ses objectifs.',
+          'Pour établir son diagnostic, une banque centrale observe de nombreux indicateurs : inflation globale et sous-jacente, salaires, coûts de production, demande intérieure, activité, emploi, crédit, conditions financières, taux de change et anticipations d’inflation. Aucun indicateur isolé ne donne une image complète. Une hausse des prix due à une augmentation temporaire du coût de l’énergie n’a pas nécessairement les mêmes causes ni les mêmes implications qu’une inflation généralisée alimentée par une demande durablement supérieure aux capacités de production.',
+          'La stabilité des prix favorise la lisibilité des contrats, la planification des investissements et la préservation du pouvoir d’achat nominal. Une inflation élevée et instable rend les décisions économiques plus difficiles et peut redistribuer les revenus et patrimoines de manière imprévisible. À l’inverse, une inflation trop faible ou une déflation persistante peuvent inciter certains agents à différer leurs dépenses, accroître le poids réel de dettes nominales et compliquer l’ajustement économique. La politique monétaire cherche donc à éviter les déséquilibres durables, sans prétendre supprimer toute variation des prix relatifs.'
+        ],
+        example: {
+          statement: 'Un indice des prix passe de 100 à 102 entre deux périodes comparables. Quel est le taux d’inflation sur la période ?',
+          calculation: 'Taux d’inflation = ((indice final - indice initial) / indice initial) × 100. Donc ((102 - 100) / 100) × 100 = 2 %.',
+          answer: 'Le taux d’inflation est de 2 % sur la période considérée. Cela signifie que le niveau de l’indice a augmenté de 2 %, et non que chaque prix individuel a nécessairement augmenté de 2 %.'
+        },
+        exercise: {
+          question: 'Quelle différence existe-t-il entre désinflation et déflation ?',
+          answer: 'La désinflation est un ralentissement de l’inflation : les prix continuent globalement d’augmenter, mais moins vite. La déflation est une baisse durable du niveau général des prix.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’objectif d’inflation à moyen terme de la BCE ?',
+            answer: 'La BCE vise une inflation de 2 % à moyen terme pour la zone euro.'
+          },
+          {
+            question: 'Une inflation de 4 % qui passe à 2 % signifie-t-elle que les prix ont baissé ?',
+            answer: 'Non. Si l’inflation reste positive, les prix augmentent encore, mais moins rapidement.'
+          },
+          {
+            question: 'Pourquoi une banque centrale observe-t-elle les anticipations d’inflation ?',
+            answer: 'Parce que les anticipations peuvent influencer les négociations salariales, la fixation des prix et les décisions de consommation et d’investissement. Leur ancrage contribue à la crédibilité de la politique monétaire.'
+          }
+        ],
+        sources: [
+          { title: 'BCE — Introduction : objectif de stabilité des prix et cible de 2 %', url: 'https://www.ecb.europa.eu/mopo/intro/html/index.en.html' },
+          { title: 'Banque de France — Qu’est-ce qu’une banque centrale ?', url: 'https://www.banque-france.fr/fr/actualites/quest-ce-quune-banque-centrale' },
+          { title: 'Réserve fédérale — Monetary Policy: What Are Its Goals? How Does It Work?', url: 'https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm' }
+        ]
+      }
+    },
+    {
+      id: 'instruments-et-transmission',
+      title: 'Les instruments de politique monétaire et leur transmission à l’économie',
+      field: 'Politique monétaire · Taux directeurs, refinancement et transmission',
+      summary: 'Étudier les principaux instruments conventionnels et non conventionnels, puis suivre les canaux par lesquels les décisions monétaires influencent le crédit, la demande et l’inflation.',
+      lesson: {
+        sections: [
+          'Les taux directeurs constituent un instrument central de la politique monétaire dans de nombreuses économies. Ils influencent les conditions auxquelles les banques peuvent obtenir des liquidités auprès de la banque centrale et contribuent à orienter les taux du marché monétaire. Leur modification se répercute, avec des délais et une intensité variables, sur les taux des crédits et des dépôts proposés aux ménages et aux entreprises. Il faut toutefois éviter de présenter un taux directeur comme le taux appliqué automatiquement à tous les emprunteurs : les banques ajoutent notamment des marges qui tiennent compte du risque, de leurs coûts et de la concurrence.',
+          'Les opérations d’open market et les opérations de refinancement permettent à la banque centrale de fournir ou d’absorber des liquidités selon les modalités de son cadre opérationnel. Lorsqu’une banque obtient un refinancement, elle reçoit des réserves en contrepartie d’un engagement et, généralement, de garanties éligibles. Les facilités permanentes encadrent les conditions auxquelles les établissements peuvent placer des liquidités auprès de la banque centrale ou en obtenir à très court terme. Les réserves obligatoires, lorsqu’elles existent, imposent aux établissements concernés de maintenir un certain niveau de réserves selon les règles applicables.',
+          'Les achats d’actifs constituent un instrument non conventionnel utilisé notamment lorsque les taux directeurs sont proches de leur borne effective ou lorsque le fonctionnement des marchés est perturbé. En achetant des titres, la banque centrale peut réduire certains rendements, soutenir la liquidité des marchés et assouplir les conditions financières. L’assouplissement quantitatif, ou quantitative easing, désigne généralement des programmes d’achats d’actifs à grande échelle. Leur effet dépend de la nature des titres achetés, de la durée du programme, des anticipations des marchés et de la situation économique. Ils ne consistent pas à distribuer directement une somme identique à chaque ménage.',
+          'La communication prospective, appelée forward guidance, consiste à expliquer les intentions ou les conditions susceptibles d’orienter les décisions futures. Elle agit sur les anticipations et peut influencer les taux à moyen et long terme avant même qu’un changement de taux directeur soit décidé. Cette communication n’est pas une promesse immuable : elle dépend du mandat de la banque centrale et des informations économiques disponibles. Les autorités monétaires doivent donc préciser les hypothèses et les risques qui encadrent leurs annonces.',
+          'Le mécanisme de transmission décrit le passage d’une décision monétaire aux variables économiques. Une hausse des taux peut augmenter le coût des emprunts, encourager l’épargne rémunérée, freiner certains achats financés à crédit et réduire l’investissement. Une demande moins dynamique peut ensuite atténuer les tensions sur les prix. Une baisse des taux peut produire des effets inverses, sous réserve que les banques prêtent, que les emprunteurs souhaitent s’endetter et que les perspectives économiques soutiennent les dépenses. Les canaux des taux, du crédit, des prix d’actifs, du taux de change et des anticipations interagissent entre eux.',
+          'La transmission est lente, variable et incertaine. Les contrats de crédit n’ont pas tous la même durée ni le même mode de révision ; les ménages et les entreprises réagissent différemment ; les banques peuvent durcir leurs critères de prêt en période de risque. Les chocs d’offre, les tensions géopolitiques ou les ruptures d’approvisionnement peuvent également modifier l’inflation indépendamment de la demande intérieure. La banque centrale ne contrôle donc pas mécaniquement chaque prix : elle agit sur les conditions monétaires et financières afin d’influencer l’évolution générale de l’économie.'
+        ],
+        example: {
+          statement: 'Une banque commerciale accorde un prêt à taux variable dont le taux suit un indice de marché. Si les conditions monétaires provoquent une hausse de cet indice, quel effet peut apparaître ?',
+          calculation: 'Si l’indice de référence augmente et que le contrat prévoit sa répercussion, le taux appliqué au prêt peut augmenter à la date de révision. Le montant exact dépend du contrat, de sa marge et de la fréquence de révision.',
+          answer: 'Le coût du crédit peut augmenter pour l’emprunteur. Cette hausse peut réduire sa capacité de dépense et contribuer au ralentissement de la demande. L’effet n’est ni immédiat pour tous les prêts ni identique pour tous les agents.'
+        },
+        exercise: {
+          question: 'Pourquoi une hausse des taux directeurs peut-elle contribuer à ralentir l’inflation ?',
+          answer: 'Elle peut renchérir le crédit, modérer la consommation et l’investissement financés par emprunt, ralentir la demande globale et réduire progressivement les pressions sur les prix. La transmission dépend toutefois du contexte économique et prend du temps.'
+        },
+        exercises: [
+          {
+            question: 'Que désigne le refinancement des banques par la banque centrale ?',
+            answer: 'Une opération par laquelle la banque centrale fournit des liquidités ou des réserves à des établissements éligibles, selon des conditions et contre des garanties définies par son cadre opérationnel.'
+          },
+          {
+            question: 'Que signifie quantitative easing ?',
+            answer: 'Il s’agit de programmes d’achats d’actifs à grande échelle destinés à assouplir les conditions financières et à soutenir la transmission de la politique monétaire.'
+          },
+          {
+            question: 'Pourquoi les effets d’une décision monétaire ne sont-ils pas instantanés ?',
+            answer: 'Parce que les taux des contrats, les décisions de financement, les dépenses, les salaires et les prix s’ajustent progressivement. Les délais varient selon les agents et les conditions économiques.'
+          }
+        ],
+        sources: [
+          { title: 'BCE — Transmission mechanism of monetary policy', url: 'https://www.ecb.europa.eu/mopo/intro/transmission/html/index.en.html' },
+          { title: 'BCE — Introduction à la politique monétaire', url: 'https://www.ecb.europa.eu/mopo/intro/html/index.en.html' },
+          { title: 'Réserve fédérale — The Fed Explained: Monetary Policy', url: 'https://www.federalreserve.gov/aboutthefed/fedexplained/monetary-policy.htm' },
+          { title: 'Banque de France — Les programmes d’achats de titres par les banques centrales', url: 'https://www.banque-france.fr/fr/publications-et-statistiques/publications/les-programmes-dachats-de-titres-par-les-banques-centrales-par-quels-mecanismes-la-monnaie-est-elle' }
+        ]
+      }
+    },
+    {
+      id: 'monnaie-centrale-et-paiements',
+      title: 'La monnaie de banque centrale, le bilan et les systèmes de paiement',
+      field: 'Monnaie et finance · Base monétaire, réserves bancaires et règlement interbancaire',
+      summary: 'Distinguer monnaie centrale et monnaie commerciale, lire les grandes catégories du bilan d’une banque centrale et comprendre le rôle des réserves dans les paiements.',
+      lesson: {
+        sections: [
+          'La monnaie de banque centrale existe principalement sous deux formes : les billets et les réserves détenues sur les comptes des établissements éligibles auprès de la banque centrale. Les billets sont accessibles au public et utilisés pour les paiements en espèces. Les réserves sont des avoirs en monnaie centrale détenus par les banques et certains autres établissements autorisés. Elles servent notamment au règlement des obligations entre banques et à la gestion de leurs besoins de liquidité. La composition exacte des comptes accessibles dépend du cadre institutionnel concerné.',
+          'La monnaie commerciale correspond principalement aux dépôts inscrits sur les comptes des clients auprès des banques commerciales. Lorsqu’une banque accorde un crédit, elle inscrit généralement simultanément une créance à son actif et un dépôt au passif : le crédit crée ainsi un dépôt. Cette création est encadrée par la réglementation, les exigences de fonds propres et de liquidité, le risque de crédit, la rentabilité et la demande de financement. Elle ne signifie pas que les banques peuvent prêter sans limite. Les paiements entre clients de banques différentes entraînent ensuite des règlements entre établissements, généralement en monnaie de banque centrale.',
+          'Le bilan d’une banque centrale présente à l’actif des éléments tels que les réserves de change, les prêts aux établissements financiers et les titres détenus. Au passif figurent notamment les billets en circulation et les réserves des banques. Les postes précis dépendent de l’institution et de ses opérations. Lorsqu’une banque centrale prête à une banque commerciale, elle inscrit une créance à son actif et crédite généralement le compte de réserves de cette banque au passif. Lorsqu’elle achète un titre, elle inscrit le titre à son actif et règle l’opération en monnaie centrale selon le circuit de paiement utilisé.',
+          'Les systèmes de paiement permettent de transférer de la valeur entre particuliers, entreprises, banques et administrations. Les infrastructures de règlement assurent le transfert final des fonds entre participants. Pour les paiements interbancaires importants, le règlement en monnaie de banque centrale réduit le risque que les participants dépendent uniquement de créances privées les uns envers les autres. Les banques centrales peuvent exploiter certaines infrastructures, les surveiller ou contribuer à leur évolution. Le secteur privé joue également un rôle essentiel dans la fourniture des instruments de paiement et l’innovation des services.',
+          'La convertibilité à parité signifie que les différentes formes de monnaie libellées dans une même unité monétaire sont normalement échangeables à leur valeur nominale : un dépôt bancaire de 1 euro est conçu pour être convertible en 1 euro de monnaie centrale, sous réserve du fonctionnement normal du système et des règles applicables. La monnaie centrale contribue à ancrer cette confiance. Elle ne supprime toutefois pas le risque de défaillance d’une banque commerciale : la protection des déposants, la réglementation prudentielle et les dispositifs de résolution complètent l’architecture monétaire.',
+          'La taille du bilan d’une banque centrale peut évoluer fortement selon les besoins de liquidité, les achats de titres, les prêts et les autres opérations. Une hausse du bilan n’est pas un objectif autonome : elle résulte d’opérations conduites pour atteindre des objectifs définis. Les achats d’actifs peuvent accroître les réserves bancaires ; leur remboursement ou la réduction des portefeuilles peut contribuer à les diminuer. Il faut donc distinguer la monnaie centrale créée lors d’une opération et la monnaie commerciale détenue par les ménages et les entreprises : les deux agrégats sont liés, mais ne sont pas identiques.'
+        ],
+        example: {
+          statement: 'Une banque A doit transférer 500 euros à une banque B pour régler un paiement entre leurs clients. Quel rôle peuvent jouer les réserves ?',
+          calculation: 'Dans un règlement interbancaire utilisant les comptes de réserves, le compte de réserves de la banque A est débité de 500 euros et celui de la banque B est crédité de 500 euros. Le transfert de réserves règle l’obligation entre les deux banques.',
+          answer: 'Les réserves servent au règlement interbancaire en monnaie de banque centrale. Le client voit le mouvement sur son compte commercial, tandis que les banques règlent entre elles au moyen de leurs comptes auprès de la banque centrale.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale existe entre les réserves bancaires et les dépôts des ménages ?',
+          answer: 'Les réserves sont de la monnaie de banque centrale détenue par les établissements autorisés sur leurs comptes auprès de la banque centrale. Les dépôts des ménages sont des engagements des banques commerciales envers leurs clients et constituent de la monnaie commerciale.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les deux grandes formes de monnaie de banque centrale ?',
+            answer: 'Les billets en circulation et les réserves détenues par les banques et autres institutions autorisées auprès de la banque centrale.'
+          },
+          {
+            question: 'Lorsqu’une banque accorde un crédit, quel dépôt est généralement créé ?',
+            answer: 'Un dépôt est inscrit sur le compte de l’emprunteur. La banque inscrit simultanément une créance de prêt à son actif et un dépôt à son passif.'
+          },
+          {
+            question: 'Pourquoi le règlement en monnaie centrale est-il important pour les paiements interbancaires ?',
+            answer: 'Il fournit un actif de règlement sûr et liquide qui permet aux établissements de régler leurs obligations dans la monnaie émise par la banque centrale.'
+          }
+        ],
+        sources: [
+          { title: 'Banque de France — La monnaie et ses contreparties : instruments et reflets de la politique monétaire', url: 'https://www.banque-france.fr/fr/publications-et-statistiques/publications/la-monnaie-et-ses-contreparties-instruments-et-reflets-de-la-politique-monetaire' },
+          { title: 'Banque de France — Les programmes d’achats de titres par les banques centrales', url: 'https://www.banque-france.fr/fr/publications-et-statistiques/publications/les-programmes-dachats-de-titres-par-les-banques-centrales-par-quels-mecanismes-la-monnaie-est-elle' },
+          { title: 'BIS — The roles of central banks and central bank money in the evolving payment system', url: 'https://www.bis.org/publications/roles-central-banks-and-central-bank-money-evolving-payment-system.htm' },
+          { title: 'Réserve fédérale — Monetary Policy: What Are Its Goals? How Does It Work?', url: 'https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm' }
+        ]
+      }
+    },
+    {
+      id: 'stabilite-financiere-et-crises',
+      title: 'La stabilité financière, la supervision et le rôle de prêteur en dernier ressort',
+      field: 'Stabilité financière · Risques systémiques, liquidité et gestion des crises',
+      summary: 'Identifier les risques qui menacent le système financier, distinguer illiquidité et insolvabilité et expliquer les interventions possibles d’une banque centrale en période de tension.',
+      lesson: {
+        sections: [
+          'La stabilité financière désigne une situation dans laquelle le système financier peut continuer à fournir ses services essentiels — paiements, financement, épargne et gestion des risques — même lorsqu’il subit des perturbations. Un système financier est composé d’établissements, de marchés, d’infrastructures et de liens entre acteurs. Une difficulté locale peut devenir systémique si elle se propage par les expositions communes, les retraits de financement, les ventes forcées d’actifs ou la perte de confiance. La stabilité financière ne signifie donc pas l’absence de faillites ou de fluctuations, mais la capacité du système à absorber les chocs sans interrompre durablement ses fonctions essentielles.',
+          'Il faut distinguer le risque de liquidité du risque d’insolvabilité. Un établissement illiquide peut manquer temporairement de moyens de paiement immédiatement disponibles alors que la valeur de ses actifs demeure supérieure à celle de ses engagements. Un établissement insolvable présente, au contraire, une insuffisance de valeur de ses actifs par rapport à ses dettes, selon les règles comptables et prudentielles applicables. Cette distinction est importante : un prêt de liquidité peut aider un établissement solvable confronté à une tension temporaire, mais il ne répare pas automatiquement des pertes structurelles qui rendent l’établissement insolvable.',
+          'La fonction de prêteur en dernier ressort permet, dans certains cadres, à une banque centrale de fournir des liquidités à des établissements confrontés à des tensions de financement. Les modalités varient selon le droit et les règles de chaque banque centrale. Les interventions peuvent être soumises à des conditions, à des garanties et à une évaluation de l’éligibilité de l’emprunteur. L’objectif est d’éviter qu’un manque temporaire de liquidité ne provoque des perturbations plus larges. Cette fonction ne constitue pas une garantie générale de sauvetage des actionnaires, des dirigeants ou de tout établissement en difficulté.',
+          'La supervision microprudentielle porte principalement sur la solidité de chaque établissement : qualité des fonds propres, liquidité, gouvernance, gestion des risques et respect des exigences réglementaires. La politique macroprudentielle examine les risques qui touchent l’ensemble du système, par exemple une croissance excessive du crédit, une concentration d’expositions ou des interconnexions susceptibles d’amplifier un choc. Selon les pays, ces fonctions sont réparties entre banque centrale, superviseur spécialisé, autorités de marché et autres organismes publics. Dans la zone euro, la BCE exerce des missions de supervision prudentielle dans le cadre du mécanisme de surveillance unique, avec les autorités nationales compétentes.',
+          'Les banques centrales participent aussi à la surveillance des infrastructures de marché et des systèmes de paiement, car une interruption de règlement peut transmettre rapidement des tensions au reste du système financier. Elles analysent les risques opérationnels, les risques de liquidité, les dépendances entre participants et la résilience des infrastructures. La coopération entre autorités est indispensable, car les grands groupes bancaires et les marchés financiers sont souvent transfrontaliers. La gestion d’une crise peut mobiliser plusieurs institutions : banque centrale, superviseur, autorité de résolution, ministère des finances et dispositifs de garantie des dépôts.',
+          'Une intervention de crise doit arbitrer entre la prévention de la contagion et le risque d’aléa moral. Si les acteurs pensent qu’ils seront systématiquement secourus, ils peuvent être incités à prendre davantage de risques. C’est pourquoi les cadres de résolution cherchent à organiser le traitement des établissements défaillants tout en préservant les fonctions critiques et en limitant le recours aux ressources publiques. La banque centrale apporte une expertise monétaire et de liquidité, mais elle n’est pas nécessairement l’autorité chargée de décider de la résolution ou de protéger les dépôts : ces compétences dépendent de l’organisation institutionnelle nationale.'
+        ],
+        example: {
+          statement: 'Une banque dispose d’actifs dont la valeur dépasse ses dettes, mais elle ne peut pas obtenir assez rapidement les liquidités nécessaires pour régler ses paiements du jour. Quel problème rencontre-t-elle ?',
+          calculation: 'La situation décrite correspond à une tension de liquidité : l’établissement manque de moyens de paiement immédiatement disponibles. Elle ne prouve pas, à elle seule, une insolvabilité. Il faut examiner séparément la valeur des actifs, les engagements et les échéances.',
+          answer: 'Il s’agit d’un problème potentiel d’illiquidité. Selon le cadre applicable et l’évaluation de l’établissement, un soutien temporaire de liquidité peut être envisagé. Il ne serait pas justifié de conclure automatiquement que la banque est solvable sans analyse complète de son bilan.'
+        },
+        exercise: {
+          question: 'Pourquoi un prêt de liquidité ne suffit-il pas toujours à sauver un établissement en difficulté ?',
+          answer: 'Parce qu’un prêt apporte des liquidités mais ne compense pas nécessairement des pertes qui rendent les actifs insuffisants pour couvrir les engagements. Une insolvabilité exige un traitement distinct, notamment au moyen des procédures de supervision ou de résolution prévues par le droit applicable.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que le risque systémique ?',
+            answer: 'C’est le risque qu’une perturbation se propage dans le système financier et compromette la fourniture de fonctions essentielles comme les paiements et le financement.'
+          },
+          {
+            question: 'Quelle est la différence entre supervision microprudentielle et politique macroprudentielle ?',
+            answer: 'La supervision microprudentielle examine la solidité d’un établissement individuel. La politique macroprudentielle vise les risques qui menacent le système financier dans son ensemble.'
+          },
+          {
+            question: 'Pourquoi le prêteur en dernier ressort peut-il être soumis à des garanties et à des conditions ?',
+            answer: 'Pour encadrer le risque pris par la banque centrale, limiter l’aléa moral et s’assurer que l’aide répond aux règles applicables, notamment en matière d’éligibilité et de garanties.'
+          }
+        ],
+        sources: [
+          { title: 'BIS — Central banking: embracing change', url: 'https://www.bis.org/speeches/20240522-central-banking-embracing-change.htm' },
+          { title: 'BCE — Banking supervision', url: 'https://www.bankingsupervision.europa.eu/home/html/index.en.html' },
+          { title: 'BCE — Transmission channels of monetary, macro- and microprudential policies', url: 'https://www.ecb.europa.eu/pub/pdf/scpops/ecb.op191.en.pdf' },
+          { title: 'BIS — Committee on the Global Financial System', url: 'https://www.bis.org/cgfs/index.htm' }
+        ]
+      }
+    },
+    {
+      id: 'independance-gouvernance-et-cooperation',
+      title: 'L’indépendance, la gouvernance, la responsabilité et la coopération internationale',
+      field: 'Institutions monétaires · Cadre juridique, transparence et coordination internationale',
+      summary: 'Étudier les fondements et les limites de l’indépendance des banques centrales, les mécanismes de responsabilité, la prise de décision et la coopération entre autorités monétaires.',
+      lesson: {
+        sections: [
+          'L’indépendance d’une banque centrale désigne la protection institutionnelle qui lui permet d’exercer les compétences confiées par la loi sans recevoir d’instructions politiques dans les domaines où cette indépendance est prévue. Elle vise notamment à éviter que les décisions monétaires soient dominées par des objectifs politiques de très court terme incompatibles avec la stabilité des prix à moyen terme. Cette indépendance n’est ni identique partout ni illimitée : son contenu dépend des textes juridiques, du mandat, des procédures de nomination et des règles applicables. Elle ne signifie pas que la banque centrale choisit librement ses objectifs en dehors du cadre démocratiquement établi.',
+          'Dans l’Union européenne, l’article 130 du Traité sur le fonctionnement de l’Union européenne protège l’indépendance de la BCE et des banques centrales nationales lorsqu’elles accomplissent les missions relevant du Système européen de banques centrales. Elles ne doivent ni solliciter ni recevoir d’instructions des institutions de l’Union, des gouvernements des États membres ou d’autres organismes dans l’exercice de ces missions. Le traité impose également aux institutions et gouvernements de respecter ce principe. Ce cadre juridique est spécifique à l’Union européenne et ne doit pas être présenté comme une règle universelle applicable à toutes les banques centrales.',
+          'L’indépendance doit avoir pour contrepartie la responsabilité institutionnelle, souvent désignée par le terme anglais accountability. Une banque centrale doit expliquer ses décisions, publier des analyses, rendre compte de ses résultats et permettre aux institutions compétentes ainsi qu’au public d’évaluer son action. Dans le cas de la BCE, le Parlement européen constitue un interlocuteur central de cette responsabilité : la BCE présente notamment un rapport annuel et participe à des auditions régulières. Rendre compte ne signifie pas que les élus fixent directement chaque taux directeur ; cela signifie que l’institution doit justifier la manière dont elle exerce le mandat qui lui a été confié.',
+          'La gouvernance organise la répartition des compétences entre organes de décision, organes exécutifs et services opérationnels. Dans l’Eurosystème, le Conseil des gouverneurs est l’organe principal de décision de politique monétaire pour la zone euro. Il réunit les membres du directoire de la BCE et les gouverneurs des banques centrales nationales des pays de la zone euro. Les décisions s’appuient sur l’analyse économique, monétaire et financière. Dans d’autres pays, les structures peuvent être différentes : certains systèmes reposent sur un comité de politique monétaire, d’autres sur un conseil ou un dispositif institutionnel propre.',
+          'La transparence renforce la compréhension et l’évaluation des décisions. Elle passe par la publication des objectifs, des analyses, des décisions, des comptes rendus ou des rapports, selon les règles de l’institution. Elle doit néanmoins être conciliée avec des besoins légitimes de confidentialité, par exemple lorsque la divulgation immédiate d’informations individuelles pourrait fragiliser un établissement ou un marché. Le Code de transparence des banques centrales du Fonds monétaire international propose un cadre de référence structuré autour de la gouvernance, des politiques, des opérations, de leurs résultats et des relations officielles avec les autorités.',
+          'Les banques centrales coopèrent à l’échelle internationale parce que les marchés financiers, les flux de capitaux, les systèmes de paiement et les chocs économiques traversent les frontières. La Banque des règlements internationaux (BRI/BIS) facilite les échanges entre banques centrales et accueille plusieurs comités spécialisés. Le Fonds monétaire international contribue à la surveillance macroéconomique et à l’assistance aux pays membres. Cette coopération ne crée pas une banque centrale mondiale : les décisions de politique monétaire restent prises par les institutions compétentes dans leur juridiction, conformément à leurs mandats respectifs.'
+        ],
+        example: {
+          statement: 'Pourquoi l’indépendance de la banque centrale et sa responsabilité démocratique ne sont-elles pas contradictoires ?',
+          calculation: 'L’indépendance concerne la liberté d’exercer les instruments et les compétences prévus par le mandat sans instruction politique dans les domaines protégés. La responsabilité concerne l’obligation d’expliquer et de justifier l’usage de ces compétences auprès des institutions prévues par le droit.',
+          answer: 'Les deux principes sont complémentaires. L’indépendance protège la conduite de la politique monétaire contre les pressions de court terme, tandis que la responsabilité impose transparence, explication et contrôle institutionnel du respect du mandat.'
+        },
+        exercise: {
+          question: 'Pourquoi l’indépendance d’une banque centrale ne signifie-t-elle pas qu’elle échappe à tout contrôle ?',
+          answer: 'Parce qu’elle reste soumise à son mandat légal, au droit applicable et à des obligations de transparence et de responsabilité. L’indépendance protège certaines décisions contre les instructions politiques ; elle ne supprime pas l’obligation de rendre compte.'
+        },
+        exercises: [
+          {
+            question: 'Quel article du traité européen protège l’indépendance de la BCE dans l’exercice de ses missions ?',
+            answer: 'L’article 130 du Traité sur le fonctionnement de l’Union européenne.'
+          },
+          {
+            question: 'Quelle institution représente les citoyens de l’Union européenne dans le cadre principal de responsabilité de la BCE ?',
+            answer: 'Le Parlement européen, auquel la BCE rend notamment compte de ses activités et de sa politique monétaire.'
+          },
+          {
+            question: 'La Banque des règlements internationaux est-elle une banque centrale mondiale qui fixe les taux de tous les pays ?',
+            answer: 'Non. La BRI facilite la coopération entre banques centrales et accueille des travaux internationaux, mais elle ne fixe pas les taux directeurs des pays.'
+          }
+        ],
+        sources: [
+          { title: 'BCE — Independence', url: 'https://www.ecb.europa.eu/ecb/our-values/independence/html/index.en.html' },
+          { title: 'BCE — Accountability', url: 'https://www.ecb.europa.eu/ecb/our-values/accountability/html/index.en.html' },
+          { title: 'FMI — Central Bank Transparency Code: Principles', url: 'https://www.imf.org/en/data/cbt/principles' },
+          { title: 'FMI — Central Bank Transparency Code', url: 'https://www.imf.org/en/data/cbt' },
+          { title: 'BRI — About the BIS', url: 'https://www.bis.org/about/index.htm' }
+        ]
+      }
+    }
+  ]
+},
+
+
+
 
 ]
