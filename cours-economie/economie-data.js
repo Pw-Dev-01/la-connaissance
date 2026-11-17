@@ -3551,6 +3551,685 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'energie-matieres-premieres',
+  title: 'Énergie et matières premières : ressources, marchés, sécurité et transitions',
+  note: 'Six chapitres approfondis pour comprendre les systèmes énergétiques, les combustibles fossiles, l’électricité bas-carbone, les minerais stratégiques, la formation des prix et les enjeux géopolitiques et climatiques. Les données chiffrées sont datées et les scénarios sont des trajectoires conditionnelles, non des prédictions certaines.',
+  chapters: [
+    {
+      id: 'fondamentaux-systemes-energetiques',
+      title: 'Les fondamentaux des systèmes énergétiques et des matières premières',
+      field: 'Économie de l’énergie · Ressources naturelles · Chaînes de valeur',
+      summary: 'Distinguer énergie primaire, énergie secondaire et énergie finale, comprendre les conversions physiques et identifier les contraintes économiques qui relient ressources, infrastructures et usages.',
+      lesson: {
+        sections: [
+          'L’énergie est une capacité à produire un changement ou un travail. Dans l’analyse économique, il faut distinguer l’énergie primaire, présente dans une ressource avant transformation, l’énergie secondaire, obtenue après conversion, et l’énergie finale livrée à l’utilisateur. Le pétrole brut est une énergie primaire ; l’essence issue du raffinage est un produit énergétique transformé ; l’électricité produite dans une centrale est une énergie secondaire. Cette distinction évite de comparer directement des grandeurs qui ne se situent pas au même stade de la chaîne énergétique. Les sources peuvent être renouvelables ou non renouvelables, mais cette classification ne dit pas à elle seule si une énergie est pilotable, stockable, transportable ou disponible en permanence.',
+          'Un système énergétique comprend l’extraction ou la captation des ressources, leur transformation, le transport, le stockage, la distribution et les équipements qui fournissent les services recherchés : chaleur, mobilité, éclairage ou force motrice. Chaque étape entraîne des coûts, des pertes et des besoins d’investissement. Une ressource abondante dans le sous-sol ne devient pas automatiquement une énergie disponible : il faut des capitaux, des compétences, des infrastructures, des autorisations, de l’eau et des débouchés. De même, une capacité de production électrique installée ne garantit pas que toute cette capacité produira à chaque instant. La disponibilité dépend notamment de la technologie, de la maintenance, de la météo, de l’approvisionnement en combustible et de l’état du réseau.',
+          'Les matières premières sont des intrants physiques de l’économie. Certaines sont énergétiques, comme le charbon, le pétrole et le gaz naturel ; d’autres sont minérales ou agricoles, comme le cuivre, le lithium, le nickel, le phosphate ou les céréales. Il faut distinguer ressources géologiques, ressources identifiées et réserves économiquement exploitables selon des hypothèses techniques, économiques et réglementaires. Les réserves ne représentent donc pas une quantité fixe et éternelle : elles peuvent évoluer avec les prix, les connaissances, les technologies et les règles environnementales. Les statistiques de production, de réserves et de commerce doivent toujours être lues avec leur définition, leur unité et leur année de référence.',
+          'L’intensité énergétique mesure la quantité d’énergie utilisée par unité d’activité économique, souvent par unité de PIB. Elle peut diminuer grâce à l’efficacité technique, à la transformation de la structure productive ou à des changements de comportement. Une baisse de l’intensité énergétique ne signifie pas nécessairement une baisse de la consommation totale : si la production et les usages augmentent plus vite que l’efficacité, la demande totale peut continuer à croître. L’analyse doit donc séparer efficacité énergétique, sobriété, électrification et croissance de l’activité. Ces notions sont complémentaires, mais elles ne sont pas interchangeables.'
+        ],
+        example: {
+          statement: 'Une chaîne énergétique commence avec 100 unités d’énergie primaire. Après transformation et transport, 70 unités sont livrées à l’utilisateur. Quelle est la quantité d’énergie finale et quelle est la perte totale en unités ?',
+          calculation: 'Énergie finale = 70 unités. Perte = énergie primaire - énergie finale = 100 - 70 = 30 unités. Rendement global simplifié = 70 / 100 = 0,70, soit 70 %.',
+          answer: 'L’utilisateur reçoit 70 unités d’énergie finale. La chaîne a perdu 30 unités sous forme de pertes de conversion, de transport ou de distribution. Cet exemple simplifie volontairement le bilan : dans les statistiques réelles, les conventions de comptabilisation varient selon les filières.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer énergie primaire, énergie secondaire et énergie finale lorsqu’on compare deux systèmes énergétiques ?',
+          answer: 'Parce que ces grandeurs décrivent des étapes différentes de la chaîne énergétique. Les comparer sans tenir compte des conversions, des pertes et des conventions statistiques peut conduire à des conclusions erronées.'
+        },
+        exercises: [
+          {
+            question: 'Le pétrole brut est-il une énergie primaire ou secondaire ?',
+            answer: 'C’est une énergie primaire, car il est extrait avant transformation.'
+          },
+          {
+            question: 'L’électricité produite dans une centrale est-elle une énergie primaire ?',
+            answer: 'Non. Elle est généralement considérée comme une énergie secondaire, produite par conversion d’une source primaire.'
+          },
+          {
+            question: 'Une hausse des réserves déclarées prouve-t-elle nécessairement qu’un nouveau gisement a été découvert ?',
+            answer: 'Non. Les réserves peuvent aussi augmenter à la suite d’une réévaluation économique, technique ou géologique de ressources déjà connues.'
+          }
+        ],
+        sources: [
+          {
+            title: 'U.S. Energy Information Administration — What is energy? Sources of energy',
+            url: 'https://www.eia.gov/energyexplained/what-is-energy/sources-of-energy.php'
+          },
+          {
+            title: 'U.S. Energy Information Administration — Energy Explained',
+            url: 'https://www.eia.gov/energyexplained/'
+          },
+          {
+            title: 'U.S. Geological Survey — Mineral Commodity Summaries 2026',
+            url: 'https://www.usgs.gov/centers/national-minerals-information-center/mineral-commodity-summaries'
+          },
+          {
+            title: 'International Energy Agency — World Energy Outlook 2025',
+            url: 'https://www.iea.org/reports/world-energy-outlook-2025'
+          }
+        ]
+      }
+    },
+    {
+      id: 'combustibles-fossiles-marches',
+      title: 'Pétrole, gaz naturel et charbon : ressources, industrie et marchés',
+      field: 'Hydrocarbures · Charbon · Extraction, transport et raffinage',
+      summary: 'Étudier la chaîne industrielle des combustibles fossiles, les usages du pétrole, du gaz et du charbon, ainsi que les déterminants économiques de leur offre et de leur demande.',
+      lesson: {
+        sections: [
+          'Le pétrole, le gaz naturel et le charbon sont des combustibles fossiles formés à partir de matière organique transformée sur de très longues périodes géologiques. Le pétrole est extrait sous forme brute puis généralement transporté vers des raffineries, où il est séparé et transformé en produits tels que carburants, combustibles et matières premières pétrochimiques. Le gaz naturel est composé principalement de méthane, mais sa composition varie selon les gisements. Il peut être transporté par gazoduc ou, après liquéfaction, sous forme de gaz naturel liquéfié (GNL), puis regazéifié à destination. Le charbon est extrait en mines souterraines ou à ciel ouvert et sert notamment à la production d’électricité, à la sidérurgie et à certains usages industriels.',
+          'La chaîne pétrolière comprend l’amont, qui regroupe l’exploration et la production, le transport et le stockage intermédiaires, puis l’aval, qui comprend le raffinage, la distribution et la commercialisation. Les coûts et les risques diffèrent selon les gisements : profondeur, géologie, qualité du brut, distance aux marchés, infrastructures et contraintes environnementales. Le prix de marché ne correspond donc pas au coût de production de chaque producteur. Un producteur à bas coût peut rester rentable à un prix auquel un projet plus coûteux ne couvre plus ses dépenses. Les décisions d’investissement sont également sensibles au délai entre la découverte, le développement du champ et le début de la production.',
+          'Les marchés du pétrole sont internationaux et les prix de référence, comme le Brent, servent de repères pour de nombreuses transactions, avec des ajustements liés à la qualité et au lieu de livraison. L’offre dépend de la production des pays et entreprises, des capacités disponibles, des investissements et des décisions de certains producteurs coordonnés. La demande dépend notamment de l’activité économique, des transports, de la pétrochimie, de l’efficacité énergétique et des substitutions possibles. Les stocks amortissent temporairement les déséquilibres entre offre et demande, mais leur niveau et leur disponibilité sont eux-mêmes des facteurs de marché. Un événement géopolitique peut provoquer une hausse des prix s’il menace effectivement des volumes, des routes maritimes ou des infrastructures ; l’effet dépend de la durée et de l’ampleur du risque.',
+          'Le marché du gaz est plus régionalisé que celui du pétrole, même si le GNL a renforcé les échanges intercontinentaux. Les prix peuvent diverger fortement entre régions en raison des capacités de liquéfaction, des gazoducs, des terminaux, des contrats et des contraintes de transport. Le charbon est également marqué par les coûts logistiques et la qualité du produit, notamment son pouvoir calorifique et sa teneur en soufre. Pour les trois combustibles, les prix observés ne résument pas les coûts sociaux et environnementaux : les émissions de gaz à effet de serre, la pollution atmosphérique, les impacts locaux et les coûts de remise en état peuvent ne pas être intégralement reflétés dans le prix payé par l’acheteur.'
+        ],
+        example: {
+          statement: 'Une raffinerie achète 1 000 barils de pétrole brut à 75 unités monétaires par baril. Le coût d’achat du brut est-il égal à 75 000 unités monétaires, hors autres coûts ?',
+          calculation: 'Coût du brut = quantité × prix unitaire = 1 000 × 75 = 75 000 unités monétaires.',
+          answer: 'Oui. Le coût d’achat du pétrole brut est de 75 000 unités monétaires. Ce montant ne représente pas le coût complet des produits raffinés : il faut encore intégrer l’énergie consommée, l’exploitation, la maintenance, le transport, les pertes, les coûts financiers et les autres charges.'
+        },
+        exercise: {
+          question: 'Pourquoi une hausse du prix international du pétrole ne se traduit-elle pas toujours par une hausse identique et immédiate du prix payé par tous les consommateurs ?',
+          answer: 'Les prix finaux dépendent aussi des taxes, des marges de raffinage et de distribution, des coûts logistiques, des taux de change, des contrats et du délai de transmission des variations de marché.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la fonction principale d’une raffinerie ?',
+            answer: 'Transformer le pétrole brut en produits pétroliers utilisables et en matières premières pour la pétrochimie.'
+          },
+          {
+            question: 'Quelle différence logistique distingue principalement le gaz transporté par gazoduc du GNL ?',
+            answer: 'Le GNL est refroidi pour être liquéfié, transporté par navire dans des méthaniers, puis regazéifié à destination ; le gaz par gazoduc circule sous forme gazeuse dans une conduite.'
+          },
+          {
+            question: 'Pourquoi le coût de production d’un gisement n’est-il pas égal au prix mondial du pétrole ?',
+            answer: 'Le prix de marché résulte de l’équilibre global de l’offre et de la demande, tandis que le coût de production varie d’un gisement à l’autre.'
+          }
+        ],
+        sources: [
+          {
+            title: 'U.S. Energy Information Administration — Oil and petroleum products explained',
+            url: 'https://www.eia.gov/energyexplained/oil-and-petroleum-products/index.php'
+          },
+          {
+            title: 'U.S. Energy Information Administration — Natural gas explained',
+            url: 'https://www.eia.gov/energyexplained/natural-gas/index.php'
+          },
+          {
+            title: 'U.S. Energy Information Administration — Coal explained',
+            url: 'https://www.eia.gov/energyexplained/coal/index.php'
+          },
+          {
+            title: 'International Energy Agency — World Energy Outlook 2025, Executive Summary',
+            url: 'https://www.iea.org/reports/world-energy-outlook-2025/executive-summary'
+          },
+          {
+            title: 'World Bank — Commodity Markets Outlook, October 2025',
+            url: 'https://thedocs.worldbank.org/en/doc/55ed8b04df8228fea1607a97b5561f73-0050012025/original/CMO-October-2025.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'electricite-renouvelables-nucleaire',
+      title: 'Électricité et production bas-carbone : renouvelables, nucléaire et réseaux',
+      field: 'Électricité · Solaire, éolien, hydraulique, nucléaire · Réseaux et stockage',
+      summary: 'Comprendre la production électrique, les coûts comparés, l’intégration des énergies variables, le rôle des réseaux et les conditions physiques et économiques de la décarbonation.',
+      lesson: {
+        sections: [
+          'L’électricité est un vecteur énergétique : elle doit être produite à partir d’une source, transportée par un réseau et utilisée par des équipements. À la différence de nombreux combustibles, elle est difficile à stocker directement à grande échelle ; son équilibre doit donc être assuré en permanence entre production, consommation, échanges et stockage. Les centrales thermiques et nucléaires peuvent, sous certaines conditions techniques, ajuster leur production, tandis que le solaire photovoltaïque dépend de l’ensoleillement et l’éolien de la disponibilité du vent. L’hydraulique avec réservoir peut apporter de la flexibilité, mais dépend de la géographie, des apports en eau et des contraintes d’usage. Il faut ainsi distinguer puissance installée, production réelle, facteur de charge et capacité disponible lors des périodes de pointe.',
+          'Le coût actualisé de l’électricité (LCOE) rapporte les coûts actualisés d’un moyen de production à l’électricité qu’il produit sur sa durée de vie, selon des hypothèses de financement, de fonctionnement et de production. C’est un indicateur utile pour comparer des projets, mais il ne représente pas à lui seul le coût complet d’un système électrique. Il ne mesure pas automatiquement la valeur de l’électricité selon l’heure, les coûts de réseau, les besoins de stockage, les moyens de secours ou les effets sur la stabilité du système. L’IRENA indique que, dans son analyse mondiale des projets mis en service en 2024, 91 % des nouvelles capacités renouvelables à grande échelle avaient un coût actualisé inférieur à celui de l’option fossile neuve la moins coûteuse dans leur marché. Ce résultat porte sur les projets et la méthode étudiés ; il ne signifie pas que toute installation renouvelable est moins chère dans chaque pays et à chaque heure.',
+          'L’intégration de parts croissantes de solaire et d’éolien nécessite des réseaux suffisamment développés, des interconnexions, des prévisions météorologiques, une gestion de la demande et différentes formes de flexibilité. Les batteries peuvent déplacer une partie de l’électricité dans le temps, surtout sur des durées courtes ; les stations de transfert d’énergie par pompage, les réservoirs hydrauliques, l’hydrogène et d’autres solutions peuvent répondre à d’autres besoins, avec des coûts et des rendements différents. Le réseau doit également gérer les congestions, les pertes, les contraintes de tension et de fréquence et la résilience face aux événements météorologiques ou techniques. Une production bon marché à la centrale ne garantit donc pas, à elle seule, un approvisionnement fiable et peu coûteux pour tous les consommateurs.',
+          'Le nucléaire produit de l’électricité à partir de la chaleur issue de réactions de fission contrôlées. Il fournit une production pilotable à faibles émissions directes de CO2 pendant l’exploitation, mais ses projets nécessitent des capitaux importants, des délais de construction, une réglementation exigeante, une gestion du combustible et des déchets ainsi qu’une planification du démantèlement. L’hydraulique, la géothermie et la bioénergie ont des profils spécifiques, liés aux ressources locales et aux impacts sur les écosystèmes ou les usages des sols. Une stratégie électrique robuste compare donc les technologies à l’échelle du système, en tenant compte des coûts complets, de la disponibilité, de la flexibilité, des délais, de l’acceptabilité et des contraintes territoriales.'
+        ],
+        example: {
+          statement: 'Une installation solaire de 100 MW fonctionne avec un facteur de charge annuel de 20 %. Quelle énergie produit-elle approximativement en un an de 8 760 heures ?',
+          calculation: 'Énergie annuelle = puissance × durée × facteur de charge = 100 MW × 8 760 h × 0,20 = 175 200 MWh, soit 175,2 GWh.',
+          answer: 'La production théorique annuelle est d’environ 175,2 GWh. Le facteur de charge est une moyenne sur la période ; il ne signifie pas que l’installation fonctionne à 20 % de sa puissance à chaque instant.'
+        },
+        exercise: {
+          question: 'Pourquoi le LCOE ne suffit-il pas pour décider seul de la composition d’un système électrique ?',
+          answer: 'Parce qu’il ne reflète pas entièrement la valeur temporelle de la production, les coûts de réseau, de flexibilité, de stockage, de réserve et les contraintes de fiabilité du système.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence existe entre puissance installée et production annuelle ?',
+            answer: 'La puissance installée mesure une capacité instantanée, généralement en MW ou GW ; la production annuelle mesure une quantité d’énergie sur une durée, en MWh ou GWh.'
+          },
+          {
+            question: 'Pourquoi les batteries sont-elles utiles dans un réseau comportant beaucoup de solaire et d’éolien ?',
+            answer: 'Elles peuvent stocker temporairement l’électricité disponible et la restituer lorsque la production variable baisse ou que la demande augmente.'
+          },
+          {
+            question: 'Le résultat mondial de l’IRENA sur les coûts renouvelables signifie-t-il que chaque projet renouvelable est toujours le moins cher ?',
+            answer: 'Non. Il s’agit d’un résultat agrégé sur les projets étudiés et une comparaison donnée ; les coûts dépendent des sites, du financement, des réseaux et des conditions locales.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IRENA — Renewable Power Generation Costs in 2024',
+            url: 'https://www.irena.org/Publications/2025/Jun/Renewable-Power-Generation-Costs-in-2024'
+          },
+          {
+            title: 'IEA — Electricity 2025, Executive Summary',
+            url: 'https://www.iea.org/reports/electricity-2025/executive-summary'
+          },
+          {
+            title: 'IPCC — AR6 Working Group III, Chapter 6: Energy Systems',
+            url: 'https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/'
+          },
+          {
+            title: 'U.S. Energy Information Administration — Electricity explained',
+            url: 'https://www.eia.gov/energyexplained/electricity/index.php'
+          }
+        ]
+      }
+    },
+    {
+      id: 'minerais-critiques-metaux-strategiques',
+      title: 'Métaux et minerais critiques : extraction, raffinage et chaînes d’approvisionnement',
+      field: 'Géologie économique · Cuivre, lithium, nickel, cobalt, graphite et terres rares',
+      summary: 'Analyser le rôle des minerais dans les infrastructures énergétiques et numériques, la concentration des chaînes de valeur, les risques d’approvisionnement et les possibilités de recyclage et de substitution.',
+      lesson: {
+        sections: [
+          'Les technologies énergétiques mobilisent des matières premières en quantités et sous des formes différentes. Le cuivre est essentiel aux réseaux électriques, aux moteurs et aux équipements de puissance ; le lithium, le nickel, le cobalt, le graphite et d’autres matériaux interviennent dans certaines chimies de batteries ; les terres rares sont utilisées dans plusieurs applications, notamment certains aimants permanents. Les besoins varient selon les technologies, les choix de conception et les évolutions industrielles. Le terme « minerai critique » n’a pas une définition universelle : les listes nationales combinent généralement l’importance économique ou stratégique d’une matière et le risque de rupture d’approvisionnement. Une matière peut donc être critique pour un pays et moins prioritaire pour un autre.',
+          'La chaîne de valeur minérale ne se limite pas à l’extraction. Elle comprend l’exploration, le développement de la mine, l’extraction, le traitement, la concentration, le raffinage, la transformation chimique ou métallurgique, la fabrication de composants et leur intégration dans les produits finis. Une région peut disposer de ressources géologiques sans posséder les capacités industrielles nécessaires pour produire des matériaux de qualité adaptée aux batteries, aux aimants ou aux composants électriques. Les étapes de traitement et de raffinage peuvent être concentrées dans un nombre limité de pays. Cette concentration crée une vulnérabilité lorsqu’un choc commercial, politique, logistique, énergétique ou environnemental affecte un acteur dominant ou une route d’approvisionnement.',
+          'L’Agence internationale de l’énergie souligne que les marchés de plusieurs minerais liés à l’énergie présentent des concentrations géographiques importantes et que les perturbations peuvent provenir d’événements météorologiques, de problèmes techniques ou de restrictions commerciales. Le risque ne dépend pas uniquement de la part du premier producteur : il faut également examiner la concentration du raffinage, la possibilité de remplacer un fournisseur, les stocks, les délais nécessaires pour ouvrir une nouvelle mine et le fait que certains métaux sont produits comme sous-produits d’autres activités minières. Une hausse des prix ne déclenche donc pas toujours une réponse rapide de l’offre. Les projets miniers ont souvent des délais longs et doivent franchir des étapes techniques, financières, réglementaires et sociales.',
+          'Le recyclage peut réduire le besoin de matières premières primaires, mais son potentiel dépend de la durée de vie des produits, de la collecte, de la qualité du tri, des procédés disponibles et de la quantité de matériaux arrivant effectivement en fin de vie. Dans une phase de croissance rapide du parc de batteries ou d’infrastructures, le recyclage des produits anciens peut ne pas suffire à couvrir la demande nouvelle. La substitution et l’éco-conception peuvent aussi réduire la dépendance à certains matériaux, mais elles impliquent parfois des compromis de coût, de performance, de durabilité ou de disponibilité. Une politique de sécurité d’approvisionnement combine donc diversification, transparence des données, stocks adaptés, innovation, recyclage, substitution et coopération internationale.'
+        ],
+        example: {
+          statement: 'Un pays importe 80 tonnes d’un métal donné et en consomme 100 tonnes sur une année. Quel est son taux de dépendance aux importations si la production nationale et les variations de stocks sont ignorées ?',
+          calculation: 'Taux de dépendance simplifié = importations / consommation × 100 = 80 / 100 × 100 = 80 %.',
+          answer: 'Le taux de dépendance simplifié est de 80 %. Cet indicateur ne renseigne pas à lui seul sur la diversité des fournisseurs, la concentration du raffinage, la qualité des stocks ou la possibilité de substituer le matériau.'
+        },
+        exercise: {
+          question: 'Pourquoi un pays qui possède des gisements de lithium ou de cuivre peut-il rester dépendant d’importations de matériaux transformés ?',
+          answer: 'Parce que l’extraction et la transformation sont des étapes distinctes. Le pays peut manquer de capacités de concentration, de raffinage, de conversion chimique ou de fabrication répondant aux spécifications industrielles.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence existe entre une ressource minérale et une réserve ?',
+            answer: 'Une ressource correspond à une concentration naturelle identifiée ou estimée ; une réserve est la partie considérée comme économiquement exploitable dans des conditions techniques, économiques et réglementaires données.'
+          },
+          {
+            question: 'Pourquoi le raffinage est-il stratégique dans l’analyse des minerais critiques ?',
+            answer: 'Parce qu’une forte concentration des capacités de raffinage peut créer une dépendance même lorsque l’extraction est répartie entre plusieurs pays.'
+          },
+          {
+            question: 'Le recyclage peut-il immédiatement remplacer toute extraction minière nouvelle ?',
+            answer: 'Non. Le volume recyclable dépend des produits arrivant en fin de vie et peut être insuffisant lorsque la demande augmente rapidement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IEA — Global Critical Minerals Outlook 2025',
+            url: 'https://www.iea.org/reports/global-critical-minerals-outlook-2025/'
+          },
+          {
+            title: 'IEA — Global Critical Minerals Outlook 2025, Executive Summary',
+            url: 'https://www.iea.org/reports/global-critical-minerals-outlook-2025/executive-summary'
+          },
+          {
+            title: 'U.S. Geological Survey — Mineral Commodity Summaries 2026',
+            url: 'https://www.usgs.gov/centers/national-minerals-information-center/mineral-commodity-summaries'
+          },
+          {
+            title: 'European Commission — Critical Raw Materials Act',
+            url: 'https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/critical-raw-materials-act_en'
+          }
+        ]
+      }
+    },
+    {
+      id: 'marches-prix-matieres-premieres',
+      title: 'Marchés, prix et économie des matières premières',
+      field: 'Économie industrielle · Marchés au comptant · Contrats à terme · Couverture des risques',
+      summary: 'Comprendre la formation des prix, les cycles de matières premières, les stocks, les contrats physiques et financiers, ainsi que les risques de volatilité pour les producteurs et les consommateurs.',
+      lesson: {
+        sections: [
+          'Une matière première est souvent négociée sur des marchés où les caractéristiques physiques du produit comptent autant que le prix : qualité, teneur, pureté, localisation, calendrier de livraison et conditions contractuelles. Le prix au comptant correspond à une transaction pour une livraison proche selon les conventions du marché. Les contrats à terme fixent aujourd’hui les conditions d’une livraison future standardisée ou permettent un règlement financier. Les marchés organisés et les contrats de gré à gré remplissent des fonctions différentes. Les contrats à terme peuvent servir à transférer ou gérer le risque de prix, mais ils ne suppriment pas le risque économique : ils peuvent introduire des besoins de marge, un risque de base et un risque de contrepartie selon le contrat.',
+          'Les prix dépendent de l’offre et de la demande, mais l’ajustement est souvent lent. Dans les secteurs miniers et énergétiques, les capacités de production ne peuvent pas toujours être augmentées rapidement. Les investissements sont lourds, les projets longs et les ressources ne sont pas toutes exploitables au même coût. À court terme, les stocks, les capacités inutilisées, les conditions météorologiques, les interruptions de transport et les décisions de production peuvent donc avoir un effet important. À long terme, les prix influencent les investissements, l’innovation, la substitution, l’efficacité et parfois la localisation des activités. Les cycles de matières premières peuvent ainsi alterner périodes de prix élevés, investissements supplémentaires, arrivée de nouvelles capacités et phases de surabondance.',
+          'Les stocks jouent un rôle d’amortisseur et de signal économique. Lorsque les stocks sont élevés, ils peuvent absorber une partie d’une hausse de la demande ou d’une interruption de l’offre ; lorsqu’ils sont faibles, un choc limité peut provoquer une variation de prix plus marquée. Sur certains marchés, la structure de la courbe des contrats à terme renseigne sur les conditions de stockage et de disponibilité. Le contango désigne généralement une situation où les prix à terme sont supérieurs au prix au comptant ; le backwardation désigne l’inverse. Ces configurations ne sont pas des prédictions certaines du prix futur : elles reflètent notamment le coût de portage, les taux, le stockage et la valeur de disponibilité immédiate du produit.',
+          'Les entreprises exposées aux matières premières peuvent utiliser des contrats d’approvisionnement à long terme, des clauses d’indexation, des stocks physiques, des contrats à terme ou des options pour réduire certaines incertitudes. Une couverture protège contre une variation défavorable définie, mais peut aussi limiter le bénéfice d’une variation favorable. Le risque de base apparaît lorsque le prix de l’instrument de couverture ne suit pas exactement le prix réellement payé ou reçu par l’entreprise. Il faut aussi surveiller les risques de change, de transport, de qualité, de liquidité et de crédit. Les rapports du FMI et de la Banque mondiale montrent l’intérêt de suivre les groupes de produits séparément : énergie, métaux, agriculture et engrais peuvent évoluer différemment selon les chocs et les conditions d’offre.'
+        ],
+        example: {
+          statement: 'Une entreprise doit acheter 500 tonnes d’un métal. Le prix passe de 8 000 à 8 600 unités monétaires par tonne. Quel est le surcoût d’achat si la quantité reste inchangée ?',
+          calculation: 'Surcoût unitaire = 8 600 - 8 000 = 600. Surcoût total = 500 × 600 = 300 000 unités monétaires.',
+          answer: 'Le surcoût est de 300 000 unités monétaires. Ce calcul suppose que la qualité, les frais de transport, le taux de change et les autres conditions commerciales restent identiques.'
+        },
+        exercise: {
+          question: 'Pourquoi une entreprise industrielle peut-elle chercher à couvrir le prix d’un métal même si elle pense que son cours va baisser ?',
+          answer: 'La couverture vise d’abord à réduire l’incertitude sur les coûts ou les marges, pas à spéculer sur la direction du marché. Elle peut sécuriser un budget et faciliter la planification, même si elle renonce à une partie du bénéfice potentiel d’une baisse.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’un marché au comptant ?',
+            answer: 'Un marché où l’achat ou la vente porte sur une livraison proche, selon les règles et délais propres au produit et au marché.'
+          },
+          {
+            question: 'Le prix d’un contrat à terme est-il une certitude sur le prix au comptant futur ?',
+            answer: 'Non. Il dépend des conditions de marché, du coût de portage, des stocks, des taux et d’autres facteurs ; il ne garantit pas le prix futur au comptant.'
+          },
+          {
+            question: 'Quel est le risque de base ?',
+            answer: 'C’est le risque que le prix de l’instrument de couverture évolue différemment du prix réel auquel l’entreprise achète ou vend son produit.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World Bank — Commodity Markets Outlook, October 2025',
+            url: 'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099756111072525099'
+          },
+          {
+            title: 'World Bank — Commodity Markets',
+            url: 'https://www.worldbank.org/en/research/commodity-markets'
+          },
+          {
+            title: 'U.S. Commodity Futures Trading Commission — Basics of Futures Trading',
+            url: 'https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/FuturesMarketBasics/index.htm'
+          },
+          {
+            title: 'International Monetary Fund — Primary Commodity Prices',
+            url: 'https://www.imf.org/en/Research/commodity-prices'
+          }
+        ]
+      }
+    },
+    {
+      id: 'geopolitique-transition-securite-energetique',
+      title: 'Géopolitique, sécurité énergétique et transition climatique',
+      field: 'Géopolitique de l’énergie · Sécurité d’approvisionnement · Climat et politiques publiques',
+      summary: 'Étudier les dépendances entre États, les risques géopolitiques, les infrastructures stratégiques, les émissions et les choix économiques associés à la transformation des systèmes énergétiques.',
+      lesson: {
+        sections: [
+          'La sécurité énergétique désigne la capacité à accéder de manière fiable et abordable aux ressources et services énergétiques. Elle ne se réduit pas à l’autonomie nationale : un pays peut importer une grande partie de son énergie tout en disposant d’approvisionnements diversifiés, de stocks, d’infrastructures robustes et de relations commerciales stables. À l’inverse, une forte dépendance envers un fournisseur unique, une route maritime, un gazoduc ou une installation de traitement peut accroître la vulnérabilité. L’analyse doit distinguer sécurité à court terme — continuité de l’approvisionnement en cas de crise — et résilience à long terme — capacité d’adaptation aux changements technologiques, climatiques, économiques et géopolitiques.',
+          'Les infrastructures énergétiques sont stratégiques : terminaux GNL, oléoducs, gazoducs, ports, raffineries, centrales, lignes à haute tension, transformateurs, câbles sous-marins et installations de stockage. Elles peuvent être exposées aux conflits, aux sanctions, aux accidents, aux cyberattaques, aux événements météorologiques extrêmes et aux défaillances techniques. La résilience repose sur la redondance, la maintenance, la diversité des routes et des fournisseurs, les stocks adaptés, les plans d’urgence et la capacité de réparer rapidement les équipements. Le rapport World Energy Outlook 2025 de l’AIE souligne que les enjeux de sécurité concernent désormais à la fois les combustibles traditionnels, les minerais critiques et les réseaux électriques, de plus en plus sollicités par l’électrification et les usages numériques.',
+          'La transition énergétique modifie les dépendances plutôt qu’elle ne les fait disparaître automatiquement. Une économie moins dépendante des importations de combustibles peut devenir davantage dépendante de certains matériaux transformés, composants, logiciels ou équipements. Les risques peuvent donc se déplacer de la chaîne d’approvisionnement des hydrocarbures vers les chaînes minières, industrielles et numériques. La diversification des fournisseurs, le développement de capacités de recyclage, la coopération commerciale et la transparence des chaînes de valeur sont des leviers possibles. Ils doivent être évalués au regard des coûts, des délais, des impacts locaux et de la compétitivité industrielle.',
+          'Les combustibles fossiles émettent du dioxyde de carbone lors de leur combustion ; les chaînes de production et de transport peuvent aussi entraîner des émissions de méthane et d’autres polluants. Les technologies bas-carbone ont généralement des profils d’émissions sur le cycle de vie différents, car leur fabrication, leur construction, leur combustible éventuel et leur fin de vie doivent être pris en compte. Le GIEC conclut que limiter le réchauffement nécessite des transformations profondes des systèmes énergétiques, notamment une réduction de l’usage des combustibles fossiles, une progression des sources à faibles émissions, l’électrification, l’efficacité et des infrastructures adaptées. Les trajectoires présentées dans les rapports sont des scénarios conditionnels dépendant d’hypothèses ; elles ne doivent pas être présentées comme des prévisions certaines.',
+          'Les politiques publiques influencent les choix d’investissement par les normes, la tarification du carbone, les aides, les marchés de capacité, les règles de réseau, les obligations d’efficacité, les politiques industrielles et les accords internationaux. Chaque instrument comporte des effets distributifs : les ménages, les entreprises et les territoires ne supportent pas les coûts de la même manière. Une politique énergétique doit donc arbitrer entre sécurité, prix, compétitivité, accès universel, santé publique et objectifs climatiques. Les évaluations économiques doivent expliciter les hypothèses, les horizons temporels, les coûts de financement et les incertitudes technologiques plutôt que réduire le débat à une opposition simple entre une technologie et une autre.'
+        ],
+        example: {
+          statement: 'Un pays importe 60 % de son gaz d’un seul fournisseur. Il diversifie ses achats et réduit cette part à 35 %. De combien de points de pourcentage sa dépendance envers ce fournisseur diminue-t-elle ?',
+          calculation: 'Diminution en points = 60 - 35 = 25 points de pourcentage.',
+          answer: 'La dépendance envers ce fournisseur diminue de 25 points de pourcentage. Cela améliore la diversification, mais ne suffit pas à mesurer toute la sécurité énergétique : les autres fournisseurs, les infrastructures, les stocks et la demande doivent aussi être étudiés.'
+        },
+        exercise: {
+          question: 'Pourquoi la transition énergétique peut-elle créer de nouvelles dépendances géopolitiques même si elle réduit la consommation de combustibles fossiles ?',
+          answer: 'Parce que les équipements bas-carbone nécessitent des minerais, des matériaux transformés, des composants et des technologies dont la production ou le raffinage peuvent être concentrés dans un nombre limité de pays.'
+        },
+        exercises: [
+          {
+            question: 'La sécurité énergétique signifie-t-elle nécessairement qu’un pays doit produire toute son énergie sur son territoire ?',
+            answer: 'Non. La diversification des fournisseurs, les stocks, les infrastructures et la fiabilité des échanges peuvent assurer une sécurité élevée malgré des importations.'
+          },
+          {
+            question: 'Pourquoi faut-il étudier les émissions sur l’ensemble du cycle de vie ?',
+            answer: 'Parce que l’extraction des matériaux, la fabrication, la construction, l’exploitation et la fin de vie peuvent toutes générer des émissions.'
+          },
+          {
+            question: 'Les scénarios énergétiques de l’AIE et du GIEC sont-ils des prédictions certaines ?',
+            answer: 'Non. Ce sont des trajectoires conditionnelles construites à partir d’hypothèses sur les politiques, les technologies, les coûts et les comportements.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IEA — World Energy Outlook 2025, Executive Summary',
+            url: 'https://www.iea.org/reports/world-energy-outlook-2025/executive-summary'
+          },
+          {
+            title: 'IPCC — AR6 Working Group III, Chapter 6: Energy Systems',
+            url: 'https://www.ipcc.ch/report/ar6/wg3/chapter/chapter-6/'
+          },
+          {
+            title: 'IPCC — AR6 Synthesis Report, Longer Report',
+            url: 'https://www.ipcc.ch/report/ar6/syr/longer-report/'
+          },
+          {
+            title: 'IEA — Global Critical Minerals Outlook 2025',
+            url: 'https://www.iea.org/reports/global-critical-minerals-outlook-2025/'
+          },
+          {
+            title: 'European Commission — Energy Security',
+            url: 'https://energy.ec.europa.eu/topics/energy-security_en'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  id: 'monnaies-internationales',
+  title: 'Monnaies internationales : devises, marchés des changes et système monétaire mondial',
+  note: 'Six chapitres approfondis sur les fonctions de la monnaie, les taux de change, les marchés des devises, le système monétaire international, les monnaies de réserve, les politiques de change et les infrastructures de paiement. Les statistiques sont datées et les conventions de cotation sont explicitées ; les scénarios ne sont pas présentés comme des certitudes.',
+  chapters: [
+    {
+      id: 'fonctions-monnaie-taux-change',
+      title: 'Les monnaies et les mécanismes fondamentaux des taux de change',
+      field: 'Économie monétaire internationale · Devises · Taux de change',
+      summary: 'Comprendre les fonctions de la monnaie, les cotations de change, les appréciations et dépréciations, ainsi que les facteurs économiques qui influencent la valeur relative des devises.',
+      lesson: {
+        sections: [
+          'Une monnaie remplit classiquement trois fonctions : unité de compte, moyen de paiement et réserve de valeur. À l’échelle internationale, une devise peut également servir à facturer le commerce, régler des transactions transfrontières, libeller des dettes, investir et constituer des réserves officielles. Ces usages ne coïncident pas nécessairement : une monnaie peut être largement utilisée dans les échanges commerciaux sans être détenue dans les mêmes proportions par les banques centrales. La confiance dans les institutions, la stabilité macroéconomique, la convertibilité, la profondeur des marchés financiers et la disponibilité d’actifs liquides contribuent à son utilisation internationale.',
+          'Le taux de change exprime le prix d’une monnaie dans une autre. Il faut toujours préciser la convention de cotation. Si EUR/USD = 1,10, cela signifie qu’un euro vaut 1,10 dollar. Si USD/EUR = 0,9091, un dollar vaut environ 0,9091 euro. Ces deux cotations décrivent la même relation sous forme réciproque, à l’arrondi près. Une appréciation de l’euro signifie qu’il faut davantage de dollars pour acheter un euro lorsque la cotation est EUR/USD ; une dépréciation signifie l’inverse. Les variations doivent être interprétées en fonction de la monnaie de référence et de la convention utilisée.',
+          'À court terme, les taux de change réagissent aux anticipations de taux d’intérêt, aux annonces des banques centrales, aux données économiques, aux flux de capitaux, au risque géopolitique et à la liquidité des marchés. À plus long terme, l’inflation relative, la productivité, la compétitivité, la situation extérieure et la crédibilité des institutions contribuent aussi à leur évolution. Il n’existe toutefois pas de formule simple permettant de prévoir précisément un taux de change à partir d’un seul indicateur. Les marchés incorporent des anticipations qui peuvent changer rapidement et les mouvements observés peuvent s’écarter durablement de certaines estimations de valeur fondamentale.',
+          'Le taux de change nominal bilatéral compare deux monnaies. Le taux de change effectif nominal agrège plusieurs taux bilatéraux en les pondérant selon l’importance des partenaires commerciaux. Le taux de change effectif réel ajuste cet indice des différences de prix ou de coûts entre le pays et ses partenaires. Il donne ainsi une indication de la compétitivité-prix relative. Une appréciation réelle peut rendre les produits nationaux relativement plus chers, toutes choses égales par ailleurs, mais son effet concret dépend aussi de la qualité, de la productivité, des marges, des contrats et de la composition des échanges. Les indices de la BRI utilisent des pondérations commerciales et des méthodes documentées.'
+        ],
+        example: {
+          statement: 'La cotation EUR/USD passe de 1,08 à 1,14. Quelle est la valeur en dollars de 500 euros avant et après la variation, et de combien augmente-t-elle ?',
+          calculation: 'Valeur initiale = 500 × 1,08 = 540 USD. Valeur finale = 500 × 1,14 = 570 USD. Variation = 570 - 540 = 30 USD.',
+          answer: 'Les 500 euros valent d’abord 540 USD puis 570 USD. Leur valeur en dollars augmente de 30 USD. Selon cette convention, l’euro s’est apprécié face au dollar.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il préciser la convention de cotation avant de dire qu’une monnaie s’apprécie ?',
+          answer: 'Parce qu’un taux peut exprimer le nombre d’unités de monnaie étrangère pour une unité de monnaie nationale, ou l’inverse. Le sens numérique de la variation dépend de cette convention.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les trois fonctions classiques de la monnaie ?',
+            answer: 'Unité de compte, moyen de paiement et réserve de valeur.'
+          },
+          {
+            question: 'Que signifie une cotation EUR/USD de 1,20 ?',
+            answer: 'Un euro s’échange contre 1,20 dollar, selon cette cotation.'
+          },
+          {
+            question: 'Quelle différence existe entre un taux de change nominal bilatéral et un taux de change effectif réel ?',
+            answer: 'Le premier compare deux monnaies. Le second agrège plusieurs partenaires commerciaux et ajuste le taux nominal effectif des différences de prix ou de coûts.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BIS — Effective exchange rates: overview and methodology',
+            url: 'https://data.bis.org/topics/EER'
+          },
+          {
+            title: 'ECB — Exchange rates: methodology',
+            url: 'https://data.ecb.europa.eu/methodology/exchange-rates'
+          },
+          {
+            title: 'IMF — Balance of Payments and International Investment Position Manual, BPM6',
+            url: 'https://www.imf.org/external/pubs/ft/bop/2007/pdf/bpm6.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'marche-des-changes-instruments',
+      title: 'Le marché des changes : acteurs, liquidité et instruments financiers',
+      field: 'Marchés financiers internationaux · Forex · Contrats de change',
+      summary: 'Étudier le fonctionnement décentralisé du marché des changes, les principaux intervenants, les opérations au comptant et à terme, les swaps, les options et la gestion du risque de change.',
+      lesson: {
+        sections: [
+          'Le marché des changes, souvent désigné par l’acronyme FX, permet de convertir une monnaie en une autre et de gérer les risques liés aux variations de devises. Il fonctionne principalement de gré à gré, à travers un réseau mondial de banques, d’établissements financiers, de plateformes et d’entreprises. Il n’existe pas une bourse mondiale unique qui centraliserait toutes les transactions. Les banques et teneurs de marché fournissent des prix d’achat et de vente ; les entreprises convertissent les recettes et dépenses liées au commerce ; les investisseurs rééquilibrent leurs portefeuilles ; les banques centrales peuvent intervenir dans le cadre de leur politique de change ou de réserves.',
+          'Une opération au comptant (spot) échange deux monnaies pour une livraison proche, selon les conventions de marché et les jours ouvrés concernés. Un contrat à terme ferme (forward) fixe aujourd’hui un taux pour un échange à une date future. Il permet à une entreprise de connaître à l’avance le montant en monnaie nationale qu’elle recevra ou devra payer, mais il l’engage contractuellement et peut l’empêcher de profiter d’une évolution favorable. Un swap de change combine généralement une opération au comptant et une opération inverse à terme ; il est fréquemment utilisé pour gérer des besoins temporaires de financement en devises. Un swap de devises peut, quant à lui, organiser des échanges de principal et d’intérêts sur une durée plus longue.',
+          'Les options de change donnent à leur acheteur un droit, et non une obligation, d’acheter ou de vendre une devise à un taux déterminé selon les conditions du contrat. Cette flexibilité a un coût : la prime. Les contrats à terme et les swaps n’ont pas la même structure de risque qu’une option. Le choix d’un instrument dépend de l’exposition réelle, de l’horizon, de la tolérance au risque, de la liquidité et du coût. Une couverture ne supprime pas tous les risques : elle peut laisser subsister un risque de base, un risque de contrepartie, un risque de liquidité ou un décalage entre la date du contrat et celle du paiement commercial.',
+          'L’enquête triennale de la BRI mesure l’activité des marchés de change et des dérivés de gré à gré. Pour avril 2025, elle estime le chiffre d’affaires quotidien moyen des opérations de change de gré à gré à 9 600 milliards de dollars. Le dollar américain se trouvait d’un côté de 89,2 % des transactions recensées, et l’euro de 28,9 %. Ces parts ne s’additionnent pas à 100 %, car chaque transaction implique deux monnaies et chaque devise est comptabilisée lorsqu’elle figure sur l’un des deux côtés de l’opération. Les chiffres décrivent un volume de transactions, pas la valeur nette des échanges commerciaux ni les réserves des banques centrales.'
+        ],
+        example: {
+          statement: 'Une entreprise française doit recevoir 200 000 USD dans 3 mois. Elle conclut un contrat à terme au taux de 1 EUR = 1,10 USD. Quel montant en euros verrouille-t-elle, hors frais et ajustements contractuels ?',
+          calculation: 'Montant en EUR = 200 000 / 1,10 = 181 818,18 EUR environ.',
+          answer: 'L’entreprise verrouille environ 181 818,18 euros. Le contrat réduit son incertitude de change, mais l’empêche aussi de bénéficier d’un taux plus favorable à l’échéance, selon les modalités du contrat.'
+        },
+        exercise: {
+          question: 'Pourquoi une entreprise exportatrice peut-elle utiliser un contrat de change à terme ?',
+          answer: 'Pour fixer à l’avance le taux auquel ses recettes en devise seront converties et réduire l’incertitude sur ses revenus en monnaie nationale.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle principal d’un marché des changes ?',
+            answer: 'Permettre l’échange de devises et la gestion des expositions liées aux variations des taux de change.'
+          },
+          {
+            question: 'Quelle différence essentielle existe entre un contrat à terme ferme et une option de change ?',
+            answer: 'Le contrat à terme engage les parties à effectuer l’échange prévu ; l’option donne à son acheteur un droit qu’il peut choisir de ne pas exercer.'
+          },
+          {
+            question: 'Pourquoi les parts de devises dans le chiffre d’affaires mondial du marché FX peuvent-elles dépasser 100 % au total ?',
+            answer: 'Parce que chaque transaction comporte deux monnaies et que chacune est comptabilisée lorsqu’elle apparaît sur l’un des côtés de l’échange.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BIS — OTC foreign exchange turnover in April 2025',
+            url: 'https://www.bis.org/statistics/rpfx25_fx.pdf'
+          },
+          {
+            title: 'BIS — Triennial Central Bank Survey 2025',
+            url: 'https://www.bis.org/publications/triennial-central-bank-survey-foreign-exchange-and-over-the-counter-otc-derivatives-markets-2025'
+          },
+          {
+            title: 'CFTC — Futures Market Basics',
+            url: 'https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/FuturesMarketBasics/index.htm'
+          }
+        ]
+      }
+    },
+    {
+      id: 'systeme-monetaire-international-histoire',
+      title: 'L’histoire du système monétaire international : de l’étalon-or à l’après-Bretton Woods',
+      field: 'Histoire monétaire · Institutions internationales · Régimes de change',
+      summary: 'Retracer les grandes architectures monétaires internationales, leurs règles, leurs crises et les institutions qui encadrent la coopération financière entre États.',
+      lesson: {
+        sections: [
+          'Un système monétaire international regroupe les règles, institutions et pratiques qui organisent les paiements entre pays, les taux de change, les réserves officielles et les ajustements des déséquilibres extérieurs. Au XIXe siècle et au début du XXe siècle, plusieurs pays ont adopté des formes d’étalon-or dans lesquelles la valeur de leur monnaie était définie par rapport à une quantité d’or. Ce système favorisait des parités relativement stables entre monnaies participantes, mais limitait la marge de manœuvre monétaire et pouvait transmettre les tensions financières et économiques entre pays. Son fonctionnement historique a varié selon les périodes et les pays ; il ne faut pas le réduire à un régime parfaitement uniforme.',
+          'Les accords de Bretton Woods de 1944 ont établi un système de parités fixes mais ajustables, centré sur le dollar convertible en or pour les autorités monétaires étrangères selon les règles de l’époque. Le Fonds monétaire international a été créé pour soutenir la coopération monétaire et aider les pays confrontés à des difficultés de balance des paiements. La Banque internationale pour la reconstruction et le développement, devenue le noyau du Groupe de la Banque mondiale, avait initialement pour mission de contribuer à la reconstruction et au développement. Le système a subi des tensions croissantes, notamment en raison des déséquilibres extérieurs américains et des contraintes liées à la convertibilité du dollar en or.',
+          'En août 1971, les États-Unis ont suspendu la convertibilité officielle du dollar en or. Les accords de la Jamaïque de 1976 ont ensuite reconnu la possibilité de régimes de change plus flexibles dans le cadre des règles du FMI. Depuis, les régimes de change sont divers : flottement indépendant, flottement administré, ancrage à une autre monnaie, caisse d’émission ou union monétaire. Il n’existe donc pas un régime unique pour tous les pays. Les choix dépendent notamment de la structure économique, de la crédibilité des institutions, de l’ouverture financière, des chocs subis et des objectifs de politique économique.',
+          'Les droits de tirage spéciaux (DTS) ont été créés par le FMI en 1969 comme actif de réserve international complémentaire. Ils ne constituent pas une monnaie utilisée directement par les ménages dans les paiements ordinaires. Leur valeur repose sur un panier de grandes monnaies et ils peuvent être échangés entre participants au département des DTS selon les mécanismes du FMI. Les allocations de DTS augmentent les avoirs de réserve des membres, mais leur utilisation et leurs effets dépendent des règles institutionnelles et des opérations réalisées. Les DTS illustrent la différence entre une monnaie nationale, un actif de réserve international et un instrument de coopération monétaire.'
+        ],
+        example: {
+          statement: 'Un pays annonce une parité fixe de 5 unités de sa monnaie pour 1 euro. Combien d’unités nationales correspondent à 200 euros à cette parité, en supposant qu’elle est maintenue ?',
+          calculation: 'Montant = 200 × 5 = 1 000 unités monétaires nationales.',
+          answer: 'À la parité annoncée, 200 euros correspondent à 1 000 unités de monnaie nationale. Ce calcul ne prouve pas que la parité soit soutenable : il faut aussi examiner les réserves, la politique économique et la confiance dans l’engagement de change.'
+        },
+        exercise: {
+          question: 'Pourquoi le système de Bretton Woods est-il qualifié de système de parités fixes mais ajustables ?',
+          answer: 'Parce que les monnaies participantes maintenaient des parités officielles, mais qu’une modification pouvait être décidée dans certaines circonstances, notamment en cas de déséquilibre fondamental, selon le cadre institutionnel de l’époque.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année les accords de Bretton Woods ont-ils été conclus ?',
+            answer: 'En 1944.'
+          },
+          {
+            question: 'Quel événement américain de 1971 a marqué la fin de la convertibilité officielle du dollar en or pour les autorités monétaires étrangères ?',
+            answer: 'La suspension de la convertibilité du dollar en or annoncée par les États-Unis en août 1971.'
+          },
+          {
+            question: 'Les droits de tirage spéciaux sont-ils une monnaie nationale ?',
+            answer: 'Non. Ce sont des actifs de réserve internationaux créés par le FMI et évalués à partir d’un panier de monnaies.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IMF — Articles of Agreement',
+            url: 'https://www.imf.org/external/pubs/ft/aa/'
+          },
+          {
+            title: 'IMF — Special Drawing Rights (SDR)',
+            url: 'https://www.imf.org/en/About/Factsheets/Sheets/2023/special-drawing-rights-sdr'
+          },
+          {
+            title: 'Federal Reserve History — Nixon Ends Convertibility of U.S. Dollars to Gold',
+            url: 'https://www.federalreservehistory.org/essays/gold-convertibility-ends'
+          },
+          {
+            title: 'World Bank — History',
+            url: 'https://www.worldbank.org/en/about/history'
+          }
+        ]
+      }
+    },
+    {
+      id: 'monnaies-reserve-internationalisation',
+      title: 'Les monnaies de réserve et la hiérarchie monétaire mondiale',
+      field: 'Monnaies internationales · Réserves de change · Dollar, euro et renminbi',
+      summary: 'Analyser pourquoi certaines devises sont détenues par les banques centrales et utilisées dans le commerce, la finance et les réserves, en comparant le dollar, l’euro, le renminbi et les autres monnaies majeures.',
+      lesson: {
+        sections: [
+          'Une monnaie de réserve est une devise détenue par les autorités monétaires dans leurs réserves officielles, généralement sous forme de dépôts, de titres ou d’autres créances liquides sur des non-résidents. Les réserves permettent notamment de répondre à des besoins de paiements extérieurs, de contribuer à la gestion du taux de change et de renforcer la confiance dans la capacité d’un pays à honorer ses engagements internationaux. La composition des réserves est publiée par le FMI dans la base COFER sous forme d’agrégats mondiaux. Les données COFER ne révèlent pas la composition détaillée des réserves de chaque pays, car les informations individuelles sont confidentielles.',
+          'Le dollar américain occupe une place centrale dans le système monétaire international. Cette position s’explique par plusieurs facteurs complémentaires : taille de l’économie américaine, profondeur et liquidité des marchés financiers, disponibilité de titres publics très échangés, rôle des banques et infrastructures de paiement, ainsi que l’usage historique du dollar dans la facturation et le financement du commerce. La domination d’une devise crée des effets de réseau : plus les entreprises et institutions l’utilisent, plus il devient pratique pour d’autres acteurs de l’utiliser à leur tour. Cette position dominante ne signifie pas que le dollar soit sans risque, ni que son rôle soit immuable.',
+          'L’euro est la deuxième grande monnaie internationale selon de nombreux indicateurs. Son rôle repose sur la taille de la zone euro, l’ouverture commerciale et financière, les institutions européennes et l’importance des marchés de capitaux libellés en euros. L’existence de plusieurs marchés nationaux de dette et l’absence d’un actif fédéral unique comparable au marché des titres du Trésor américain constituent toutefois des différences structurelles importantes. La BCE suit le rôle international de l’euro à travers un ensemble d’indicateurs portant notamment sur les réserves, les émissions de dette, les prêts, les dépôts et les transactions. Un indicateur composite ne doit pas être confondu avec une part unique valable pour tous les usages.',
+          'Le renminbi chinois a gagné en importance dans certains échanges commerciaux, financements et infrastructures de paiement. Son internationalisation reste néanmoins contrainte par les contrôles de capitaux, le cadre institutionnel, la convertibilité et la profondeur des marchés financiers accessibles aux investisseurs internationaux. D’autres monnaies, comme le yen, la livre sterling et le franc suisse, conservent des rôles significatifs dans certains segments. Les données du FMI COFER publiées pour le quatrième trimestre 2025 indiquaient des parts d’environ 56,77 % pour le dollar, 20,25 % pour l’euro et 1,95 % pour le renminbi dans les réserves de change mondiales déclarées et ventilées. Ces proportions concernent les réserves de change couvertes par COFER, pas l’ensemble des actifs mondiaux ni l’or monétaire.'
+        ],
+        example: {
+          statement: 'Un portefeuille de réserves de change ventilées représente 10 000 milliards USD. Si une devise en représente 56,77 %, quelle valeur lui correspond ?',
+          calculation: 'Valeur = 10 000 milliards × 0,5677 = 5 677 milliards USD.',
+          answer: 'La devise représente 5 677 milliards USD dans cet exemple. Le calcul applique une part statistique à un total fictif ; il ne constitue pas une estimation du montant réel des réserves mondiales.'
+        },
+        exercise: {
+          question: 'Pourquoi la part d’une monnaie dans les réserves officielles ne suffit-elle pas à mesurer entièrement son rôle international ?',
+          answer: 'Parce que le rôle international comprend aussi la facturation du commerce, les paiements, les transactions de change, les émissions de dette, les prêts et les dépôts transfrontières.'
+        },
+        exercises: [
+          {
+            question: 'Que mesure la base COFER du FMI ?',
+            answer: 'La composition en devises des réserves officielles de change à partir de données agrégées communiquées au FMI.'
+          },
+          {
+            question: 'Pourquoi la liquidité des marchés financiers favorise-t-elle l’internationalisation d’une monnaie ?',
+            answer: 'Elle facilite l’achat et la vente de grands volumes d’actifs, réduit généralement les coûts de transaction et permet aux investisseurs de gérer leurs positions plus facilement.'
+          },
+          {
+            question: 'Les chiffres COFER incluent-ils l’or monétaire dans les réserves de change ventilées par devise ?',
+            answer: 'Non. L’or monétaire fait partie des actifs de réserve au sens large, mais il n’est pas inclus dans les réserves de change ventilées par devise de COFER.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IMF — Currency Composition of Official Foreign Exchange Reserves (COFER)',
+            url: 'https://data.imf.org/en/datasets/IMF.STA:COFER'
+          },
+          {
+            title: 'IMF — COFER Frequently Asked Questions',
+            url: 'https://data.imf.org/en/Datasets/COFER/Frequently-Asked-Questions'
+          },
+          {
+            title: 'Federal Reserve — The International Role of the U.S. Dollar, 2025 Edition',
+            url: 'https://www.federalreserve.gov/econres/notes/feds-notes/the-international-role-of-the-u-s-dollar-2025-edition-20250718.html'
+          },
+          {
+            title: 'ECB — The international role of the euro, June 2026',
+            url: 'https://www.ecb.europa.eu/press/other-publications/ire/html/ecb.ire202606.en.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'politiques-change-balance-paiements',
+      title: 'Politiques de change, banques centrales et équilibre extérieur',
+      field: 'Politique monétaire · Balance des paiements · Régimes de change et crises',
+      summary: 'Étudier les régimes de change, les interventions des banques centrales, les liens entre taux d’intérêt et devises, la balance des paiements et les contraintes auxquelles font face les économies ouvertes.',
+      lesson: {
+        sections: [
+          'Un régime de change décrit la manière dont la valeur d’une monnaie est déterminée ou encadrée. Dans un régime flottant, le taux varie principalement selon l’offre et la demande sur le marché, même si les autorités peuvent intervenir dans certaines circonstances. Dans un ancrage fixe, les autorités s’engagent à maintenir une parité ou une bande de fluctuation par rapport à une autre monnaie ou à un panier. Entre ces deux extrêmes existent des régimes intermédiaires, des flottements administrés et des dispositifs institutionnels spécifiques. Le choix d’un régime implique des arbitrages entre stabilité du taux de change, autonomie monétaire et mobilité des capitaux.',
+          'La politique monétaire influence les conditions financières et peut agir sur le taux de change par les taux d’intérêt, les anticipations et la confiance. Une hausse des taux directeurs peut rendre certains placements dans la monnaie plus rémunérateurs, mais l’effet sur le change n’est pas mécanique : les marchés anticipent les décisions, évaluent l’inflation, le risque, la croissance et la trajectoire future des taux. Une banque centrale peut aussi acheter ou vendre des devises, modifier les conditions de liquidité ou utiliser d’autres instruments. L’efficacité d’une intervention dépend de son ampleur, de sa crédibilité, des réserves disponibles, du régime de change et des conditions de marché.',
+          'La balance des paiements enregistre les transactions entre résidents et non-résidents. Elle comprend notamment le compte courant, le compte de capital et le compte financier, selon les conventions statistiques internationales. Le compte courant retrace les échanges de biens et services, les revenus primaires et les transferts courants. Le compte financier enregistre les investissements directs, les investissements de portefeuille, les produits financiers dérivés, les autres investissements et les avoirs de réserve. Les soldes sont liés par les identités comptables de la balance des paiements, sous réserve des erreurs et omissions et des conventions de présentation. Un déficit courant n’implique pas automatiquement une crise : il doit être analysé avec son financement, la maturité des engagements, la devise de la dette et la capacité productive du pays.',
+          'Une crise de change peut apparaître lorsqu’un régime fixe perd sa crédibilité, lorsque les réserves deviennent insuffisantes pour défendre une parité, ou lorsque les investisseurs anticipent une dévaluation. Les crises peuvent être amplifiées par des dettes en devises, des échéances courtes, des sorties de capitaux et des fragilités bancaires. La dépréciation d’une monnaie peut soutenir certains secteurs exportateurs, mais elle renchérit les importations et peut augmenter le poids des dettes libellées en monnaie étrangère. L’effet dépend de la structure des échanges, de la réaction des prix, des contrats, de la capacité des entreprises à substituer les intrants et de la crédibilité de la politique économique.'
+        ],
+        example: {
+          statement: 'Une entreprise doit rembourser une dette de 1 000 000 USD. Le taux passe de 1 EUR = 1,20 USD à 1 EUR = 1,00 USD. Quel est le coût de cette dette en euros avant et après la variation ?',
+          calculation: 'Avant : 1 000 000 / 1,20 = 833 333,33 EUR. Après : 1 000 000 / 1,00 = 1 000 000 EUR. Hausse du coût en euros = 166 666,67 EUR environ.',
+          answer: 'Le remboursement passe d’environ 833 333,33 euros à 1 000 000 euros. L’euro s’étant déprécié face au dollar selon les cotations indiquées, la dette en dollars devient plus coûteuse en euros.'
+        },
+        exercise: {
+          question: 'Pourquoi une dette libellée en devise étrangère peut-elle devenir plus lourde après une dépréciation de la monnaie nationale ?',
+          answer: 'Parce qu’il faut davantage d’unités de monnaie nationale pour acheter la devise nécessaire au remboursement de la dette.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’un régime de change flottant ?',
+            answer: 'Un régime dans lequel le taux de change est principalement déterminé par l’offre et la demande sur le marché, sans parité fixe garantie par les autorités.'
+          },
+          {
+            question: 'Quels grands éléments figurent dans le compte courant de la balance des paiements ?',
+            answer: 'Les biens, les services, les revenus primaires et les transferts courants.'
+          },
+          {
+            question: 'Une hausse des taux directeurs entraîne-t-elle toujours une appréciation immédiate de la monnaie ?',
+            answer: 'Non. Le taux de change dépend aussi des anticipations, de l’inflation, du risque, de la croissance et des décisions déjà intégrées dans les prix de marché.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IMF — Annual Report on Exchange Arrangements and Exchange Restrictions',
+            url: 'https://www.imf.org/en/Publications/Annual-Report-on-Exchange-Arrangements-and-Exchange-Restrictions'
+          },
+          {
+            title: 'IMF — Balance of Payments and International Investment Position Manual, BPM6',
+            url: 'https://www.imf.org/external/pubs/ft/bop/2007/pdf/bpm6.pdf'
+          },
+          {
+            title: 'BIS — Effective exchange rates',
+            url: 'https://data.bis.org/topics/EER'
+          },
+          {
+            title: 'ECB — Exchange rates and foreign exchange operations',
+            url: 'https://www.ecb.europa.eu/mopo/eaec/fx/html/index.en.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'paiements-numeriques-monnaies-avenir',
+      title: 'Paiements internationaux, monnaies numériques et évolutions du système monétaire',
+      field: 'Infrastructures de paiement · Monnaies numériques de banque centrale · Stablecoins et innovation financière',
+      summary: 'Comprendre les infrastructures de paiements transfrontières, les monnaies numériques de banque centrale, les stablecoins, les enjeux de règlement et les limites des innovations monétaires.',
+      lesson: {
+        sections: [
+          'Un paiement transfrontière implique généralement plusieurs établissements, systèmes de paiement, devises et cadres réglementaires. Le transfert peut mobiliser des banques correspondantes, des comptes de règlement, des mécanismes de compensation et des infrastructures nationales ou internationales. Les délais, les frais, la transparence et l’accessibilité dépendent du parcours du paiement, des contrôles réglementaires, des horaires d’ouverture et des accords entre institutions. Les banques correspondantes permettent notamment à des établissements de détenir des comptes auprès d’autres banques afin d’effectuer des paiements dans des juridictions où ils ne disposent pas de présence directe. La modernisation des paiements vise à améliorer la rapidité, le coût, l’accès et la traçabilité, tout en respectant les exigences de sécurité et de conformité.',
+          'Une monnaie numérique de banque centrale (MNBC ou CBDC) est une forme numérique de monnaie émise par une banque centrale et libellée dans l’unité de compte nationale. Elle se distingue d’un dépôt bancaire commercial, qui constitue une créance sur une banque commerciale, et d’un actif privé tel qu’un stablecoin. Une MNBC de détail serait destinée au grand public ; une MNBC de gros serait réservée aux institutions financières pour certains règlements. Les projets diffèrent selon les pays et ne signifient pas qu’une monnaie numérique a été adoptée ou mise en circulation. Les autorités étudient notamment les effets sur la stabilité financière, la confidentialité, la résilience, l’inclusion et le rôle des intermédiaires bancaires.',
+          'Les stablecoins sont des crypto-actifs conçus pour chercher à maintenir une valeur stable par rapport à une référence, souvent une monnaie comme le dollar. Leur stabilité dépend de la qualité et de la liquidité des réserves, des droits des détenteurs, de la gouvernance, des mécanismes de remboursement et des risques opérationnels. Ils ne sont pas automatiquement équivalents à de la monnaie de banque centrale ni à un dépôt bancaire garanti. Leur utilisation peut faciliter certains transferts numériques, mais elle soulève des questions de protection des utilisateurs, de blanchiment, de stabilité financière, de concentration et de souveraineté monétaire. Le terme « stable » décrit un objectif de conception, pas une garantie absolue de valeur.',
+          'Les innovations de paiement peuvent modifier les infrastructures sans remplacer immédiatement les monnaies nationales ni les banques. Les systèmes de règlement instantané, les registres distribués, la tokenisation d’actifs et les dispositifs de paiement interopérables répondent à des problèmes différents. La tokenisation représente des droits ou actifs sous forme de jetons numériques ; elle ne supprime pas les règles juridiques qui déterminent la propriété, le règlement et les recours. À l’échelle internationale, les enjeux incluent l’interopérabilité, la cybersécurité, la gouvernance, les standards techniques, la protection des données et la coopération entre autorités. Les travaux de la BRI et du Conseil de stabilité financière soulignent la nécessité d’évaluer les risques systémiques et les dépendances opérationnelles avant un déploiement à grande échelle.'
+        ],
+        example: {
+          statement: 'Un paiement international coûte 20 euros de frais fixes et 1,5 % du montant transféré. Quel est le coût total pour un transfert de 2 000 euros, hors frais de change ?',
+          calculation: 'Frais variables = 2 000 × 0,015 = 30 euros. Coût total = 20 + 30 = 50 euros.',
+          answer: 'Le coût total est de 50 euros, hors éventuelle marge de change et autres frais facturés par les intermédiaires.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale existe entre une monnaie numérique de banque centrale et un stablecoin privé ?',
+          answer: 'La MNBC est une créance numérique sur la banque centrale. Le stablecoin est un passif ou un actif émis dans un cadre privé, dont la valeur dépend de ses réserves, de ses droits contractuels et de son mécanisme de stabilisation.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’une banque correspondante dans un paiement international ?',
+            answer: 'Une banque qui fournit des services à une autre banque, notamment au moyen de comptes permettant d’effectuer des paiements dans une devise ou une juridiction donnée.'
+          },
+          {
+            question: 'Une MNBC de détail et une MNBC de gros visent-elles les mêmes utilisateurs ?',
+            answer: 'Non. La MNBC de détail vise le grand public, tandis que la MNBC de gros vise les institutions financières et certains règlements entre professionnels.'
+          },
+          {
+            question: 'Un stablecoin garantit-il nécessairement le remboursement à parité à tout moment ?',
+            answer: 'Non. Cela dépend des réserves, des droits juridiques, des conditions de remboursement, de la liquidité et de la solidité de l’émetteur et de ses dispositifs.'
+          }
+        ],
+        sources: [
+          {
+            title: 'BIS — Annual Economic Report 2025, The next-generation monetary and financial system',
+            url: 'https://www.bis.org/publ/arpdf/ar2025e.htm'
+          },
+          {
+            title: 'BIS — Central bank digital currencies',
+            url: 'https://www.bis.org/about/bisih/topics/cbdc.htm'
+          },
+          {
+            title: 'Financial Stability Board — High-level recommendations for the regulation, supervision and oversight of global stablecoin arrangements',
+            url: 'https://www.fsb.org/2023/07/high-level-recommendations-for-the-regulation-supervision-and-oversight-of-global-stablecoin-arrangements-final-report/'
+          },
+          {
+            title: 'CPMI — Enhancing cross-border payments',
+            url: 'https://www.bis.org/cpmi/topics/cross_border.htm'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 
 
 ]
