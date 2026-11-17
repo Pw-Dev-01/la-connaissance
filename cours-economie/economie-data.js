@@ -4230,6 +4230,278 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'crises-petrolieres',
+  title: 'Les crises pétrolières',
+  note: 'Six chapitres consacrés aux grands chocs pétroliers de 1973-1974, 1978-1986, 1990-1991, 2007-2009, 2014-2016 et 2020-2022. La branche distingue les ruptures physiques d’approvisionnement, les chocs de demande, les anticipations géopolitiques et les déséquilibres de stocks. Les prix cités sont nominaux et les références de marché (Brent ou WTI, spot ou contrats à terme) sont précisées lorsque cela est nécessaire ; ils ne sont donc pas directement comparables sans ajustement.',
+  chapters: [
+    {
+      id: 'choc-petrolier-1973-1974',
+      title: 'Le premier choc pétrolier : embargo arabe et bouleversement du marché (1973-1974)',
+      field: 'Histoire économique · Moyen-Orient · Marché mondial du pétrole · 1973-1974',
+      summary: 'Étudier la rupture du système pétrolier du début des années 1970, les décisions de l’OAPEC pendant la guerre du Kippour, la hausse rapide des prix et les conséquences macroéconomiques pour les pays importateurs.',
+      lesson: {
+        sections: [
+          'Avant 1973, le marché international du pétrole est déjà en transformation : la consommation des économies industrialisées augmente rapidement et les pays producteurs cherchent à reprendre davantage de contrôle sur leurs ressources et sur la fixation des prix. La crise ne naît donc pas uniquement d’un embargo soudain. Elle survient dans un contexte de dépendance croissante des pays consommateurs aux importations, de tensions entre États producteurs et compagnies pétrolières, et de marges de capacité de production limitées dans certains pays importateurs. Ces fragilités rendent le système plus sensible à une décision politique ou à une interruption d’approvisionnement.',
+          'La guerre du Kippour commence le 6 octobre 1973. Le 17 octobre, les membres arabes de l’Organisation des pays arabes exportateurs de pétrole (OAPEC) annoncent des réductions de production. À partir du 19 octobre, plusieurs producteurs arabes mettent en place un embargo visant notamment les États-Unis, en réaction au soutien américain à Israël ; d’autres pays sont également visés ou soumis à des restrictions. Il faut distinguer l’OAPEC de l’OPEP : l’OAPEC est l’organisation des producteurs arabes, tandis que l’OPEP regroupe des pays producteurs qui ne sont pas tous arabes. L’embargo et les réductions de production sont deux mesures liées mais distinctes.',
+          'La hausse des prix est très rapide. Selon la Federal Reserve History, le prix de référence cité passe d’environ 2,90 dollars le baril avant l’embargo à 11,65 dollars en janvier 1974, soit près de quatre fois son niveau initial. L’impact ne dépend pas seulement du volume effectivement bloqué : les acheteurs anticipent d’autres restrictions, cherchent des cargaisons alternatives et acceptent des prix plus élevés. Les délais de transport, la répartition géographique des raffineries et les difficultés à remplacer immédiatement certains bruts contribuent à transmettre le choc aux marchés des produits pétroliers.',
+          'Pour les économies importatrices, le renchérissement du pétrole augmente les coûts de transport, de chauffage, d’électricité et de production industrielle. Il alimente l’inflation tout en réduisant le revenu réel disponible des ménages et les marges de nombreuses entreprises. Cette combinaison d’inflation et de ralentissement économique contribue à la stagflation. Les réponses publiques comprennent des mesures de sobriété, des politiques de diversification énergétique, la recherche de nouvelles sources d’approvisionnement et le renforcement progressif des dispositifs de sécurité énergétique. La fin officielle de l’embargo en mars 1974 ne ramène pas automatiquement les prix à leur niveau antérieur.',
+          'La leçon économique essentielle est qu’un marché peut connaître une crise majeure même si l’interruption ne touche pas uniformément tous les pays. Les flux commerciaux se réorganisent, les cargaisons sont redirigées et les anticipations peuvent amplifier le choc initial. Pour analyser un épisode de ce type, il faut donc examiner simultanément les volumes produits, les exportations réellement interrompues, les stocks disponibles, les capacités inutilisées chez les autres producteurs et la réaction de la demande.'
+        ],
+        example: {
+          statement: 'Le prix de référence passe de 2,90 dollars le baril avant l’embargo à 11,65 dollars en janvier 1974. Quel est le multiplicateur approximatif et le pourcentage de hausse ?',
+          calculation: 'Multiplicateur = 11,65 / 2,90 = 4,02. Hausse en pourcentage = ((11,65 - 2,90) / 2,90) × 100 = 301,7 %.',
+          answer: 'Le prix a été multiplié par environ 4,02, ce qui correspond à une hausse d’environ 302 %. Il s’agit des valeurs nominales rapportées par la Federal Reserve History, et non d’une comparaison corrigée de l’inflation.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il inexact de présenter la crise de 1973 comme un simple embargo sans tenir compte du contexte du marché pétrolier ?',
+          answer: 'Parce que l’embargo intervient dans un marché déjà tendu, marqué par une forte dépendance aux importations, des tensions sur la fixation des prix et une capacité de remplacement limitée. Les anticipations, les réductions de production et la réorganisation des flux ont également contribué à la hausse.'
+        },
+        exercises: [
+          {
+            question: 'Quelle organisation a annoncé les réductions de production d’octobre 1973 ?',
+            answer: 'L’OAPEC, l’Organisation des pays arabes exportateurs de pétrole. Elle ne doit pas être confondue avec l’OPEP.'
+          },
+          {
+            question: 'Quel conflit régional constitue le contexte immédiat de l’embargo ?',
+            answer: 'La guerre du Kippour, commencée le 6 octobre 1973.'
+          },
+          {
+            question: 'Pourquoi la fin de l’embargo en mars 1974 n’a-t-elle pas fait revenir immédiatement les prix à leur niveau antérieur ?',
+            answer: 'Parce que le marché avait été réorganisé autour de prix plus élevés et que les conditions structurelles, les coûts d’approvisionnement et les anticipations avaient changé.'
+          }
+        ],
+        sources: [
+          { title: 'Federal Reserve History — Oil Shock of 1973-74', url: 'https://www.federalreservehistory.org/essays/oil-shock-of-1973-74' },
+          { title: 'U.S. Department of State, Office of the Historian — Oil Embargo, 1973-1974', url: 'https://history.state.gov/milestones/1969-1976/oil-embargo' },
+          { title: 'U.S. Department of State — Foreign Relations of the United States, 1969-1976, volume XXXVI, document 223', url: 'https://history.state.gov/historicaldocuments/frus1969-76v36/d223' }
+        ]
+      }
+    },
+    {
+      id: 'revolution-iranienne-et-choc-1979',
+      title: 'La révolution iranienne, la guerre Iran-Irak et le contre-choc des années 1980 (1978-1986)',
+      field: 'Histoire économique · Iran · Golfe persique · OPEP · 1978-1986',
+      summary: 'Comprendre le second choc pétrolier, le rôle de la révolution iranienne et de la guerre Iran-Irak, puis le retournement du marché provoqué par le ralentissement de la demande, la progression de l’offre hors OPEP et le changement de stratégie saoudienne.',
+      lesson: {
+        sections: [
+          'La seconde grande crise pétrolière des années 1970 se développe dans un marché déjà marqué par le premier choc. La révolution iranienne, engagée en 1978 et aboutissant au renversement du Shah au début de 1979, désorganise fortement la production et les exportations iraniennes. La Federal Reserve History rapporte une baisse de la production iranienne de 4,8 millions de barils par jour en janvier 1979, équivalant alors à environ 7 % de la production mondiale. Cette interruption est majeure, mais elle ne suffit pas à expliquer seule la hausse des cours : la demande mondiale reste soutenue et la crainte de nouvelles ruptures pousse certains acteurs à constituer des stocks de précaution.',
+          'Les prix accélèrent au cours de 1979 et continuent de progresser jusqu’en 1980. La Federal Reserve History souligne que les prix ont plus que doublé entre avril 1979 et avril 1980. La demande de précaution joue un rôle important : lorsque les acheteurs redoutent une pénurie future, ils peuvent chercher à acheter plus tôt que prévu, ce qui renforce temporairement la tension sur le marché. Les pays producteurs voisins de l’Iran augmentent une partie de leur production, mais cette compensation ne neutralise pas instantanément l’incertitude ni les perturbations logistiques et politiques.',
+          'En septembre 1980, la guerre entre l’Iran et l’Irak ouvre une nouvelle période de perturbations dans le Golfe. Les deux pays sont des producteurs importants et le conflit affecte les installations, les exportations et la perception du risque régional. Dans le même temps, les prix élevés des années précédentes encouragent les économies importatrices à réduire leur consommation de pétrole, à améliorer l’efficacité énergétique et à développer d’autres sources d’énergie. La production de pays non membres de l’OPEP, notamment en mer du Nord et en Amérique du Nord, progresse également. Le marché se transforme donc progressivement : la demande croît moins vite tandis que l’offre concurrente augmente.',
+          'Au début des années 1980, l’OPEP tente de soutenir les prix en limitant sa production. L’Arabie saoudite joue le rôle de producteur d’ajustement, ou swing producer : elle réduit davantage sa propre production afin de compenser les dépassements de quotas d’autres membres et de défendre le niveau de prix visé. Cette stratégie devient de plus en plus coûteuse pour Riyad, dont la production recule fortement. En 1985, l’Arabie saoudite abandonne ce rôle et cherche à reconquérir des parts de marché. La hausse de sa production, associée à une offre mondiale abondante et à une demande affaiblie, contribue à l’effondrement des prix en 1986.',
+          'Le contre-choc de 1986 montre qu’une crise pétrolière peut aussi prendre la forme d’une chute brutale des prix. Les pays importateurs bénéficient alors d’une facture énergétique allégée, tandis que les États producteurs fortement dépendants des recettes pétrolières subissent une contraction de leurs revenus budgétaires et extérieurs. Pour l’analyse, il faut distinguer la cause initiale de la hausse de 1979 — perturbation de l’offre et anticipations — des causes du retournement de 1985-1986 — demande moins dynamique, progression de l’offre non-OPEP et changement de stratégie des producteurs.'
+        ],
+        example: {
+          statement: 'La production iranienne diminue de 4,8 millions de barils par jour en janvier 1979, ce qui représente environ 7 % de la production mondiale de l’époque. Quelle production mondiale approximative cela implique-t-il ?',
+          calculation: 'Production mondiale approximative = 4,8 / 0,07 = 68,57 millions de barils par jour.',
+          answer: 'L’ordre de grandeur implicite est d’environ 68,6 millions de barils par jour. Il s’agit d’une estimation obtenue à partir des deux chiffres arrondis rapportés par la Federal Reserve History, et non d’une mesure statistique indépendante.'
+        },
+        exercise: {
+          question: 'Comment expliquer que le marché soit passé d’une forte hausse des prix à un effondrement en 1986 ?',
+          answer: 'Les prix élevés ont favorisé les économies d’énergie, la substitution et l’augmentation de la production hors OPEP. La demande a perdu de son dynamisme, tandis que l’Arabie saoudite a abandonné son rôle de producteur d’ajustement et augmenté sa production pour regagner des parts de marché.'
+        },
+        exercises: [
+          {
+            question: 'Quel événement politique a provoqué la forte interruption initiale de la production iranienne ?',
+            answer: 'La révolution iranienne de 1978-1979.'
+          },
+          {
+            question: 'Que signifie l’expression « swing producer » dans le contexte de l’OPEP ?',
+            answer: 'Un producteur qui ajuste sa propre production pour compenser les variations de l’offre des autres producteurs et contribuer à stabiliser le marché ou les prix.'
+          },
+          {
+            question: 'Quel changement de stratégie saoudienne a contribué au contre-choc de 1986 ?',
+            answer: 'L’abandon du rôle de producteur d’ajustement et la priorité donnée à la reconquête des parts de marché par une augmentation de la production.'
+          }
+        ],
+        sources: [
+          { title: 'Federal Reserve History — Oil Shock of 1978-79', url: 'https://www.federalreservehistory.org/essays/oil-shock-of-1978-79' },
+          { title: 'U.S. Energy Information Administration — Oil (petroleum) timeline', url: 'https://www.eia.gov/kids/history-of-energy/timelines/oil-petroleum.php' },
+          { title: 'U.S. Energy Information Administration — Short-Term Energy Outlook, 2nd Quarter 1986', url: 'https://www.eia.gov/outlooks/steo/archives/2Q86.pdf' },
+          { title: 'International Monetary Fund — The Middle East and North Africa in a Changing Oil Market', url: 'https://www.elibrary.imf.org/display/book/9781589062344/ch01.xml' }
+        ]
+      }
+    },
+    {
+      id: 'guerre-golfe-1990-1991',
+      title: 'La crise du Golfe : invasion du Koweït et prime de risque géopolitique (1990-1991)',
+      field: 'Histoire économique · Irak · Koweït · Marché pétrolier mondial · 1990-1991',
+      summary: 'Analyser le choc de prix provoqué par l’invasion du Koweït, la mise hors marché des exportations irakiennes et koweïtiennes, la compensation par d’autres producteurs et la détente rapide des cours lorsque le scénario de pénurie généralisée s’éloigne.',
+      lesson: {
+        sections: [
+          'Le 2 août 1990, l’Irak envahit le Koweït. La réaction internationale conduit à un embargo sur les exportations pétrolières des deux pays. Selon le Government Accountability Office des États-Unis, environ 4,3 millions de barils par jour de production combinée irakienne et koweïtienne sont alors retirés du marché, soit environ 9 % de la production quotidienne destinée aux économies de marché selon la mesure retenue dans son rapport. Cette perte physique est importante, mais son effet sur les prix dépend aussi des stocks commerciaux, des capacités de production disponibles dans d’autres pays et de la vitesse à laquelle ces volumes peuvent être mobilisés.',
+          'Les prix du pétrole brut augmentent rapidement après l’invasion. Une analyse publiée par le Fonds monétaire international indique que le prix moyen passe d’environ 16 dollars le baril en juillet 1990 à plus de 38 dollars en octobre. Le marché intègre non seulement les exportations interrompues d’Irak et du Koweït, mais aussi le risque que le conflit s’étende à d’autres producteurs ou endommage des infrastructures supplémentaires. Cette prime de risque géopolitique peut faire monter les prix avant même qu’une pénurie physique plus large ne se matérialise.',
+          'La hausse ne se prolonge pas au même rythme. D’autres producteurs augmentent leur production et contribuent à remplacer une partie des volumes perdus. Les stocks permettent également d’amortir temporairement le choc. En décembre 1990, le prix moyen cité par le FMI est revenu autour de 25,70 dollars le baril. Le 17 janvier 1991, au début des opérations militaires de la coalition, les prix enregistrent une forte baisse, les marchés estimant alors que les installations pétrolières situées hors d’Irak et du Koweït ne subiraient pas de dommages majeurs. Le risque anticipé se réduit donc plus vite que ne disparaissent toutes les conséquences matérielles du conflit.',
+          'Cet épisode illustre la différence entre une interruption effective de l’offre et une anticipation de contagion régionale. Les cours peuvent intégrer une probabilité de rupture future, puis corriger rapidement lorsque les informations nouvelles réduisent cette probabilité. Il rappelle aussi que les stocks et les capacités inutilisées sont des amortisseurs essentiels : ils ne suppriment pas le choc, mais peuvent limiter sa durée et son ampleur. Pour un analyste, il est donc insuffisant de connaître le volume de production perdu ; il faut également mesurer la capacité de compensation du système pétrolier mondial.',
+          'Sur le plan macroéconomique, une hausse rapide des prix de l’énergie renchérit les coûts des entreprises et le budget des ménages, particulièrement dans les pays importateurs. Elle peut aussi peser sur la confiance et les anticipations d’inflation. Toutefois, l’épisode de 1990-1991 est plus bref que les chocs des années 1970, précisément parce que les marchés disposent de mécanismes de remplacement et parce que le scénario d’une destruction durable des capacités pétrolières régionales ne se réalise pas à l’échelle redoutée.'
+        ],
+        example: {
+          statement: 'Le prix moyen du pétrole passe d’environ 16 dollars le baril en juillet 1990 à plus de 38 dollars en octobre 1990. Quelle hausse minimale cela représente-t-il si l’on retient 38 dollars comme borne basse ?',
+          calculation: 'Hausse minimale = ((38 - 16) / 16) × 100 = 137,5 %. Multiplicateur minimal = 38 / 16 = 2,375.',
+          answer: 'La hausse est supérieure à 137,5 %, et le prix a été multiplié par plus de 2,375. Le calcul utilise 38 dollars comme borne basse, puisque la source indique un sommet supérieur à 38 dollars.'
+        },
+        exercise: {
+          question: 'Pourquoi les prix ont-ils pu baisser fortement au début de la guerre de janvier 1991 alors que le conflit n’était pas terminé ?',
+          answer: 'Parce que les marchés ont révisé à la baisse le risque d’une extension des destructions aux installations pétrolières situées hors d’Irak et du Koweït. Les anticipations de disponibilité future se sont améliorées, ce qui a réduit la prime de risque intégrée dans les prix.'
+        },
+        exercises: [
+          {
+            question: 'À quelle date l’Irak envahit-il le Koweït ?',
+            answer: 'Le 2 août 1990.'
+          },
+          {
+            question: 'Quel volume de production combinée irakienne et koweïtienne est donné comme interrompu dans le rapport du GAO ?',
+            answer: 'Environ 4,3 millions de barils par jour.'
+          },
+          {
+            question: 'Quel rôle jouent les stocks et les capacités de production disponibles chez les autres producteurs ?',
+            answer: 'Ils permettent de compenser une partie des volumes indisponibles et peuvent limiter la durée de la tension sur les prix.'
+          }
+        ],
+        sources: [
+          { title: 'U.S. Energy Information Administration — Effects of crude oil supply disruptions: how long can they last?', url: 'https://www.eia.gov/Todayinenergy/detail.php?id=730' },
+          { title: 'U.S. Government Accountability Office — Energy Security and Policy: Analysis of the Pricing of Crude Oil and Petroleum Products', url: 'https://www.gao.gov/assets/rced-93-17.pdf' },
+          { title: 'International Monetary Fund — The World Economy, 1990', url: 'https://www.elibrary.imf.org/display/book/9781451944822/ch001.xml' }
+        ]
+      }
+    },
+    {
+      id: 'choc-petrolier-2007-2009',
+      title: 'Le supercycle pétrolier et l’effondrement de 2008 (2007-2009)',
+      field: 'Économie internationale · Demande mondiale · Capacité de production · Crise financière · 2007-2009',
+      summary: 'Étudier la forte progression des cours jusqu’à l’été 2008, liée à une demande mondiale dynamique face à une offre peu élastique à court terme, puis leur chute lors de la récession mondiale et de la contraction de la demande.',
+      lesson: {
+        sections: [
+          'La hausse des prix qui précède le sommet de 2008 se distingue des chocs des années 1970. Elle ne résulte pas d’un embargo mondial comparable à celui de 1973, mais d’une confrontation entre une demande internationale vigoureuse et une offre qui peine à augmenter au même rythme. La croissance des économies émergentes, notamment en Asie, contribue à l’augmentation de la consommation. En parallèle, la capacité de production disponible à court terme est limitée et les nouvelles capacités demandent du temps et des investissements avant d’entrer en service. Dans un marché où l’offre et la demande réagissent lentement aux prix à court terme, de faibles déséquilibres peuvent entraîner de fortes variations.',
+          'Selon le rapport annuel 2008 de la Réserve fédérale américaine, le WTI termine l’année 2007 autour de 95 dollars le baril et dépasse 145 dollars à la mi-juillet 2008. La Réserve fédérale relie cette progression à la vigueur de la demande, particulièrement dans les économies émergentes, et à la retenue de l’offre à court terme. Les stocks relativement faibles et les tensions géopolitiques renforcent la sensibilité du marché aux nouvelles. Le sommet observé en juillet ne doit pas être confondu avec une moyenne annuelle : il s’agit d’un prix spot du WTI à un moment précis.',
+          'À partir de l’été 2008, la dynamique s’inverse. La crise financière internationale s’aggrave, le crédit se contracte et l’activité économique ralentit fortement. Les perspectives de consommation de carburants et de produits pétroliers sont révisées à la baisse. La demande diminue alors que l’offre ne peut pas s’ajuster instantanément. Le rapport de la Réserve fédérale indique que le prix spot du WTI perd environ 75 % entre son sommet de juillet et janvier 2009, pour revenir près de 40 dollars le baril. Les décisions de réduction de production de l’OPEP ne compensent pas immédiatement la chute de la demande.',
+          'La séquence 2007-2009 révèle que les crises pétrolières ne sont pas nécessairement déclenchées par une guerre ou une fermeture de terminal. Un choc de demande peut provoquer une envolée lorsque la croissance mondiale dépasse les capacités disponibles, puis une chute lorsque l’activité se contracte brutalement. Il faut aussi éviter une explication monocausale : les tensions sur l’offre, les anticipations, les stocks, la demande émergente et les conditions financières interagissent. Les analyses de James D. Hamilton publiées par la Federal Reserve Bank of Atlanta soulignent le caractère principalement lié à la demande forte confrontée à une production mondiale stagnante dans la montée des prix de 2007-2008.',
+          'Les conséquences économiques sont asymétriques dans le temps. Avant le retournement, les importateurs subissent une facture énergétique croissante, une pression sur le pouvoir d’achat et des coûts de production plus élevés. Après l’effondrement, les consommateurs et certaines industries bénéficient de prix plus faibles, mais les producteurs et les entreprises pétrolières voient leurs revenus, leurs investissements et parfois leur solvabilité fragilisés. La volatilité rend la planification des investissements difficile, car les projets pétroliers nécessitent souvent plusieurs années avant de produire.'
+        ],
+        example: {
+          statement: 'Le WTI passe d’environ 95 dollars le baril à la fin de 2007 à plus de 145 dollars à la mi-juillet 2008. En prenant 145 dollars comme seuil minimal, quelle est la hausse minimale ?',
+          calculation: 'Hausse minimale = ((145 - 95) / 95) × 100 = 52,63 %. Le multiplicateur minimal est 145 / 95 = 1,526.',
+          answer: 'La hausse est supérieure à environ 52,6 %. Le calcul est une borne minimale puisque le cours a dépassé 145 dollars. Il concerne le WTI spot, pas le Brent ni une moyenne annuelle.'
+        },
+        exercise: {
+          question: 'Pourquoi le prix du pétrole a-t-il pu monter fortement avant de s’effondrer en 2008 ?',
+          answer: 'La hausse a été soutenue par une demande mondiale robuste confrontée à une offre peu élastique à court terme. La crise financière et la récession ont ensuite réduit les perspectives de consommation, provoquant une baisse rapide de la demande et des cours.'
+        },
+        exercises: [
+          {
+            question: 'Quel indice de référence est utilisé pour les prix cités par le rapport annuel 2008 de la Réserve fédérale ?',
+            answer: 'Le West Texas Intermediate (WTI), un brut de référence américain.'
+          },
+          {
+            question: 'Pourquoi une offre pétrolière peu élastique à court terme amplifie-t-elle les variations de prix ?',
+            answer: 'Parce que les producteurs ne peuvent pas augmenter rapidement les volumes lorsque la demande accélère, ni réduire instantanément toute la production lorsque la demande chute.'
+          },
+          {
+            question: 'Quel événement macroéconomique a contribué à la chute des cours après juillet 2008 ?',
+            answer: 'L’aggravation de la crise financière mondiale et le ralentissement marqué de l’activité économique, qui ont réduit la demande de pétrole.'
+          }
+        ],
+        sources: [
+          { title: 'Board of Governors of the Federal Reserve System — 95th Annual Report, 2008, Monetary Policy Report of February 2009', url: 'https://www.federalreserve.gov/boarddocs/rptcongress/annual08/pdf/ar08.pdf' },
+          { title: 'Federal Reserve Bank of Atlanta — Causes and Consequences of the Oil Shock of 2007-08', url: 'https://www.frbatlanta.org/-/media/documents/cqer/publications/workingpapers/cqerwp0902.pdf' },
+          { title: 'National Bureau of Economic Research — Historical Oil Shocks, James D. Hamilton', url: 'https://www.nber.org/papers/w16790' }
+        ]
+      }
+    },
+    {
+      id: 'chute-prix-petrole-2014-2016',
+      title: 'La chute des prix de 2014-2016 : pétrole de schiste, surabondance et stratégie de l’OPEP',
+      field: 'Économie de l’énergie · Pétrole de schiste · Offre mondiale · OPEP · 2014-2016',
+      summary: 'Analyser la baisse prolongée des cours provoquée par la croissance de l’offre, notamment américaine, le ralentissement de la demande mondiale, la décision de l’OPEP de maintenir sa production et l’accumulation des stocks.',
+      lesson: {
+        sections: [
+          'Au début de 2014, le marché pétrolier paraît relativement stable malgré des perturbations géopolitiques dans plusieurs pays producteurs. La hausse de la production américaine, notamment de pétrole de formations compactes — souvent désigné par l’expression tight oil — modifie progressivement l’équilibre du marché. Les techniques de forage horizontal et de fracturation hydraulique rendent économiquement exploitables des ressources auparavant difficiles d’accès. Cette progression de l’offre américaine permet de compenser certaines interruptions dans d’autres régions et augmente la quantité de pétrole disponible sur le marché international.',
+          'À partir de l’été 2014, les cours baissent rapidement. L’EIA indique que le Brent atteint 115,06 dollars le baril le 19 juin 2014, puis clôture à 57,33 dollars le 31 décembre. La baisse d’environ 50 % au second semestre résulte de plusieurs facteurs combinés : croissance de la production américaine, retour d’une partie de la production libyenne, perturbations d’approvisionnement moins importantes que prévu, ralentissement des perspectives de croissance mondiale et maintien des niveaux de production de l’OPEP. Il serait donc inexact d’attribuer toute la baisse à une seule décision de l’OPEP ou au seul pétrole de schiste.',
+          'La décision de l’OPEP de ne pas réduire immédiatement sa production lors de sa réunion de novembre 2014 est importante pour les anticipations du marché. Elle indique que l’organisation ne cherche pas à compenser intégralement la croissance de l’offre concurrente par une baisse de ses propres volumes. L’arbitrage porte notamment sur la défense des parts de marché et sur le coût d’une réduction de production qui profiterait aussi aux producteurs concurrents. Les stocks mondiaux augmentent lorsque la production dépasse durablement la consommation, ce qui prolonge la pression baissière sur les cours.',
+          'En 2015, les prix restent faibles. L’EIA rapporte que le Brent spot moyen s’établit à environ 52 dollars le baril, soit 53 % de moins qu’en 2014, et que les cours terminent l’année sous 40 dollars. Les producteurs à coûts élevés sont particulièrement exposés : certains réduisent les investissements, reportent des projets ou ferment les installations les moins rentables. Les producteurs à coûts plus faibles peuvent mieux résister, mais les pays dont les budgets publics dépendent fortement des exportations pétrolières subissent une baisse des recettes fiscales et des entrées de devises.',
+          'La période 2014-2016 est un cas d’école de crise d’excès d’offre. Elle rappelle qu’un prix bas ne signifie pas nécessairement que la demande s’effondre : la hausse de la production peut être le facteur dominant, tandis qu’un ralentissement de la demande accentue le déséquilibre. Elle montre également le rôle des anticipations sur la politique des grands producteurs, du dollar américain et des stocks. Pour comparer correctement les prix, il faut préciser le benchmark utilisé, la date, la fréquence de mesure et la nature du prix — spot, contrat à terme ou moyenne annuelle.'
+        ],
+        example: {
+          statement: 'Le Brent front-month passe de 115,06 dollars le 19 juin 2014 à 57,33 dollars le 31 décembre 2014. Quel est le pourcentage de baisse ?',
+          calculation: 'Baisse en pourcentage = ((115,06 - 57,33) / 115,06) × 100 = 50,17 %.',
+          answer: 'Le Brent front-month a baissé d’environ 50,2 % entre ces deux dates, ce qui correspond à l’ordre de grandeur de 50 % indiqué par l’EIA pour le second semestre 2014.'
+        },
+        exercise: {
+          question: 'Pourquoi la hausse de la production américaine a-t-elle contribué à la baisse des prix en 2014 ?',
+          answer: 'Elle a ajouté des volumes importants à un marché déjà bien approvisionné, compensé certaines interruptions dans d’autres pays et contribué à faire dépasser l’offre mondiale par rapport à la demande. Le maintien de la production de l’OPEP a renforcé ce déséquilibre.'
+        },
+        exercises: [
+          {
+            question: 'Quel était le cours du Brent front-month le 19 juin 2014 selon l’EIA ?',
+            answer: '115,06 dollars le baril.'
+          },
+          {
+            question: 'Quel mécanisme de marché apparaît lorsque la production dépasse durablement la consommation ?',
+            answer: 'Les stocks s’accumulent, ce qui augmente la disponibilité immédiate du pétrole et exerce généralement une pression à la baisse sur les prix.'
+          },
+          {
+            question: 'Pourquoi les conséquences d’un prix bas diffèrent-elles selon les producteurs ?',
+            answer: 'Parce que leurs coûts d’extraction, leur endettement, leur fiscalité, leurs besoins d’investissement et leur dépendance budgétaire aux recettes pétrolières ne sont pas identiques.'
+          }
+        ],
+        sources: [
+          { title: 'U.S. Energy Information Administration — Year in Review: Crude Oil Prices 2014', url: 'https://www.eia.gov/finance/review/annual/' },
+          { title: 'U.S. Energy Information Administration — Lower demand, higher supply drive oil prices to lowest level since 2012', url: 'https://www.eia.gov/Todayinenergy/detail.php?id=18311' },
+          { title: 'U.S. Energy Information Administration — Crude oil prices started 2015 relatively low, ended the year lower', url: 'https://www.eia.gov/TODAYinENERGY/detail.php?id=24432' },
+          { title: 'European Central Bank — Economic Bulletin, Issue 2/2016, Box 2: Current oil price trends', url: 'https://www.ecb.europa.eu/press/economic-bulletin/html/eb201602.pt.html' },
+          { title: 'U.S. Bureau of Labor Statistics — The 2014 plunge in import petroleum prices: What happened?', url: 'https://www.bls.gov/opub/btn/volume-4/the-2014-plunge-in-import-petroleum-prices-what-happened.htm' }
+        ]
+      }
+    },
+    {
+      id: 'crise-petroliere-pandemie-ukraine-2020-2022',
+      title: 'De l’effondrement de la demande en 2020 au choc géopolitique de 2022',
+      field: 'Économie mondiale · Pandémie de COVID-19 · OPEP+ · Russie · Ukraine · 2020-2022',
+      summary: 'Comparer deux chocs de nature différente : l’effondrement exceptionnel de la demande pendant la pandémie, puis la forte prime de risque géopolitique apparue après l’invasion russe de l’Ukraine, dans un marché déjà tendu.',
+      lesson: {
+        sections: [
+          'En 2020, les restrictions de déplacement, la fermeture de nombreuses activités et le recul du transport aérien provoquent une chute exceptionnelle de la demande mondiale de pétrole. Les producteurs et les raffineries ne peuvent pas adapter instantanément leurs volumes à cette rupture. Les stocks augmentent rapidement, notamment dans les centres de stockage et de livraison. La crise est d’abord un choc de demande, même si les désaccords de production entre pays producteurs au début de mars 2020 compliquent temporairement l’ajustement de l’offre.',
+          'Le 20 avril 2020, le contrat à terme WTI de première échéance passe en territoire négatif. L’EIA précise que ce prix concerne le contrat futures arrivant à échéance et non l’ensemble du pétrole physique dans le monde. La baisse de la demande, l’accumulation des stocks à Cushing dans l’Oklahoma et la disponibilité limitée de capacités de stockage contribuent à cette situation exceptionnelle. Le contrat concerné portait sur une livraison proche, ce qui rendait particulièrement coûteuse la détention d’une obligation de réception physique pour certains opérateurs. Le Brent reste, lui, positif et tombe à 9,12 dollars le baril le 21 avril 2020. Il faut donc éviter de résumer l’événement en affirmant que « le pétrole mondial a été vendu à prix négatif » : c’est une formulation trop générale et trompeuse.',
+          'À partir du printemps 2020, les réductions de production décidées par les pays de l’OPEP et leurs partenaires, regroupés sous l’appellation OPEP+, contribuent à rééquilibrer le marché. La reprise progressive de la mobilité et de l’activité soutient ensuite la demande. La vitesse de redressement reste toutefois inégale selon les régions et les secteurs. Les stocks, les capacités de raffinage, les décisions de production et l’évolution de la pandémie influencent ensemble la trajectoire des prix. Cette phase démontre qu’un choc de demande peut créer une crise de stockage et de logistique, même lorsque les ressources pétrolières souterraines n’ont pas disparu.',
+          'Le 24 février 2022, la Russie lance son invasion à grande échelle de l’Ukraine. La Russie occupe une place majeure dans l’offre et les exportations mondiales de pétrole. L’Agence internationale de l’énergie indique que, dans les premières heures suivant l’invasion, l’approvisionnement physique mondial n’avait pas encore subi de perte attribuable à l’événement, mais que les prix ont bondi en raison des anticipations de sanctions et de perturbations possibles des flux commerciaux. Cette distinction est fondamentale : les marchés peuvent réagir au risque d’une interruption avant que celle-ci ne soit constatée dans les volumes livrés.',
+          'En 2022, le Brent spot affiche une moyenne annuelle d’environ 100 dollars le baril et le WTI d’environ 95 dollars selon l’EIA. Les cours augmentent nettement au premier semestre, dans un contexte de stocks mondiaux faibles, de reprise de la demande après les restrictions sanitaires et d’incertitude sur les exportations russes. Ils diminuent ensuite à partir de juin, lorsque les craintes de ralentissement économique pèsent sur la demande, que les mesures sanitaires en Chine limitent l’activité et que des volumes supplémentaires arrivent sur le marché, notamment grâce aux prélèvements dans les réserves stratégiques. La crise de 2022 combine donc risque géopolitique, tensions sur l’offre disponible, stocks réduits et inquiétudes sur la croissance.'
+        ],
+        example: {
+          statement: 'Le Brent spot atteint 9,12 dollars le baril le 21 avril 2020, tandis que le contrat à terme WTI de première échéance a affiché un prix négatif le 20 avril. Pourquoi ces deux observations ne sont-elles pas contradictoires ?',
+          calculation: 'Les deux chiffres concernent des références et des échéances différentes : Brent spot observé le 21 avril, d’une part, et contrat futures WTI de première échéance le 20 avril, d’autre part. Un prix négatif sur un contrat proche de son échéance ne signifie pas que tous les bruts physiques ont un prix négatif.',
+          answer: 'Il n’y a pas de contradiction : le WTI futures de première échéance était soumis à une contrainte immédiate de livraison et de stockage à Cushing, tandis que le Brent est un autre benchmark et que le chiffre cité est un prix spot observé le lendemain.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale distingue le choc pétrolier de 2020 de celui de 2022 ?',
+          answer: 'En 2020, la crise est principalement provoquée par l’effondrement de la demande lié à la pandémie et par la saturation des capacités de stockage. En 2022, la hausse des prix est largement alimentée par le risque géopolitique pesant sur les exportations russes, dans un marché déjà tendu et marqué par des stocks faibles.'
+        },
+        exercises: [
+          {
+            question: 'Quel événement explique principalement la chute de la demande pétrolière au premier semestre 2020 ?',
+            answer: 'Les mesures sanitaires et les restrictions de mobilité prises face à la pandémie de COVID-19.'
+          },
+          {
+            question: 'Pourquoi le prix négatif du WTI du 20 avril 2020 ne signifie-t-il pas que tout le pétrole mondial avait une valeur négative ?',
+            answer: 'Il concernait un contrat à terme WTI de première échéance, proche de sa date d’expiration et associé à une livraison physique dans un lieu où les capacités de stockage disponibles étaient fortement contraintes.'
+          },
+          {
+            question: 'Pourquoi les cours ont-ils augmenté après l’invasion russe de l’Ukraine en février 2022, même avant qu’une perte physique d’approvisionnement soit constatée ?',
+            answer: 'Les opérateurs ont intégré le risque de sanctions, de refus d’achat et de perturbations futures des exportations russes, ce qui a augmenté la prime de risque géopolitique.'
+          }
+        ],
+        sources: [
+          { title: 'U.S. Energy Information Administration — Crude oil prices briefly traded below $0 in spring 2020', url: 'https://www.eia.gov/todayinenergy/detail.php?id=46336' },
+          { title: 'OPEC — Monthly Oil Market Report, August 2020', url: 'https://www.opec.org/opec_web/static_files_project/media/downloads/publications/OPEC_MOMR_August-2020.pdf' },
+          { title: 'International Energy Agency — Russian supplies to global energy markets: Oil Market and Russian Supply', url: 'https://www.iea.org/reports/russian-supplies-to-global-energy-markets/oil-market-and-russian-supply-2' },
+          { title: 'U.S. Energy Information Administration — Crude oil prices rise above $100 per barrel after Russia’s further invasion into Ukraine', url: 'https://www.eia.gov/TodayinEnergy/detail.php?id=51498' },
+          { title: 'U.S. Energy Information Administration — Crude oil prices increased in first-half 2022 and declined in second-half 2022', url: 'https://www.eia.gov/todayinenergy/detail.php?id=55079' },
+          { title: 'International Energy Agency — Oil Market Report, March 2022', url: 'https://www.iea.org/reports/oil-market-report-march-2022' }
+        ]
+      }
+    }
+  ]
+},
+
 
 
 ]
