@@ -4502,6 +4502,534 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'croissance-pib',
+  title: 'Croissance du PIB : mesure, moteurs, cycles et limites',
+  note: 'Six chapitres approfondis pour comprendre ce que mesure le produit intérieur brut, comment sa croissance est calculée, quels facteurs la déterminent à court et à long terme, comment les cycles économiques et les politiques publiques l’influencent, et pourquoi le PIB ne résume pas le bien-être. Les définitions suivent principalement le Système de comptabilité nationale, le SEC 2010 et les méthodes des instituts statistiques. Les exemples chiffrés sont pédagogiques et ne décrivent pas une économie réelle.',
+  chapters: [
+    {
+      id: 'definition-et-perimetre-du-pib',
+      title: '1. Définition du PIB et périmètre de la production',
+      field: 'Macroéconomie · Comptabilité nationale · Agrégats économiques',
+      summary: 'Définir précisément le produit intérieur brut, distinguer production, revenu et richesse, comprendre les notions de territoire économique, de période et de production finale.',
+      lesson: {
+        sections: [
+          'Le produit intérieur brut (PIB) est un agrégat de comptabilité nationale qui mesure la valeur de la production finale réalisée par les unités productrices résidentes sur un territoire économique pendant une période donnée. Il est généralement calculé sur une année ou un trimestre. Le terme « intérieur » renvoie au territoire économique et non à la nationalité des propriétaires des entreprises : la production d’une filiale étrangère implantée dans le pays entre dans le PIB de ce pays, tandis que la production d’une entreprise nationale réalisée dans une autre économie relève du PIB de cette autre économie. Le PIB est dit « brut » parce que la consommation de capital fixe, c’est-à-dire l’usure économique des équipements et bâtiments, n’en est pas déduite.',
+          'Le PIB porte sur la production de biens et de services, et non sur la simple circulation de monnaie ou sur la totalité des transactions financières. Une vente d’un bien neuf produit pendant la période contribue à la production mesurée ; la revente d’un bien d’occasion ne constitue généralement pas une nouvelle production et n’est donc pas comptée une seconde fois. Les services associés à la transaction, comme une commission d’intermédiation, correspondent en revanche à une production de service. De même, l’achat d’une action existante est une transaction financière et non une production courante. Les transferts tels que les allocations sociales ne sont pas directement comptés comme production : ils redistribuent un revenu déjà créé. Les services non marchands des administrations publiques sont toutefois inclus, généralement évalués à partir de leurs coûts de production lorsque leur prix de marché n’existe pas.',
+          'La distinction entre production intermédiaire et production finale évite le double comptage. Une entreprise qui vend de la farine à un boulanger fournit un bien intermédiaire ; le pain vendu au consommateur final incorpore déjà la valeur de la farine. Additionner le prix de la farine et le prix complet du pain compterait deux fois une partie de la production. La comptabilité nationale résout ce problème en additionnant les valeurs ajoutées : pour chaque producteur, la valeur ajoutée brute est égale à la valeur de la production diminuée des consommations intermédiaires. Le PIB aux prix du marché correspond à la somme des valeurs ajoutées brutes, augmentée des impôts sur les produits et diminuée des subventions sur les produits.',
+          'Le PIB est un flux mesuré pendant une période, alors que le patrimoine est un stock évalué à une date. Une hausse du PIB signifie que le flux de production augmente en volume ou en valeur selon l’indicateur utilisé ; elle ne signifie pas automatiquement que le patrimoine net du pays progresse dans les mêmes proportions. Le PIB ne doit pas non plus être confondu avec le revenu national brut : ce dernier ajoute au PIB les revenus primaires nets reçus du reste du monde. Ces distinctions sont indispensables pour interpréter correctement les comparaisons économiques.'
+        ],
+        example: {
+          statement: 'Une économie produit pendant une année 500 milliards d’euros de biens et services. Les consommations intermédiaires utilisées pour cette production valent 210 milliards d’euros et les impôts sur les produits nets des subventions valent 20 milliards d’euros. Quelle est la valeur du PIB aux prix du marché dans cet exemple simplifié ?',
+          calculation: 'Valeur ajoutée totale = 500 - 210 = 290 milliards d’euros. PIB = valeur ajoutée totale + impôts sur les produits nets des subventions = 290 + 20.',
+          answer: 'Le PIB est égal à 310 milliards d’euros. Le calcul soustrait les consommations intermédiaires pour éviter le double comptage, puis ajoute les impôts nets sur les produits pour passer aux prix du marché.'
+        },
+        exercise: {
+          question: 'Pourquoi la valeur des consommations intermédiaires ne doit-elle pas être ajoutée une seconde fois à la valeur des biens finaux ?',
+          answer: 'Parce que la valeur des intrants est déjà incorporée dans le prix des biens finaux. Additionner les ventes intermédiaires et les ventes finales sans correction conduirait à compter plusieurs fois une même production.'
+        },
+        exercises: [
+          {
+            question: 'La production d’une usine appartenant à un groupe étranger, mais située dans le pays, entre-t-elle dans le PIB de ce pays ?',
+            answer: 'Oui. Le PIB repose sur le territoire économique où la production est réalisée, et non sur la nationalité de l’actionnaire.'
+          },
+          {
+            question: 'La revente d’une voiture d’occasion est-elle intégralement comptée comme une nouvelle production ?',
+            answer: 'Non. La voiture a été produite lors d’une période antérieure. Seuls les services nouveaux liés à la revente, comme une commission, constituent une production de la période.'
+          },
+          {
+            question: 'Quelle différence fondamentale existe entre le PIB et le patrimoine ?',
+            answer: 'Le PIB est un flux de production mesuré sur une période ; le patrimoine est un stock d’actifs et de passifs évalué à une date.'
+          }
+        ],
+        sources: [
+          { title: 'INSEE — Produit intérieur brut (PIB) et ses composantes', url: 'https://www.insee.fr/fr/statistiques/8605476' },
+          { title: 'OCDE — Annual National Accounts: Frequently Asked Questions', url: 'https://www.oecd.org/en/data/insights/data-explainers/2024/03/annual-national-accounts-frequently-asked-questions.html' },
+          { title: 'FMI — Gross Domestic Product: An Economy’s All', url: 'https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/gross-domestic-product-gdp' },
+          { title: 'Eurostat — Gross domestic product (GDP)', url: 'https://ec.europa.eu/eurostat/web/european-statistics-learning-hub/statistics-for-beginners/gross-domestic-product' }
+        ]
+      }
+    },
+    {
+      id: 'calcul-du-pib-trois-approches',
+      title: '2. Calcul du PIB : production, dépenses et revenus',
+      field: 'Macroéconomie · Comptabilité nationale · Identités comptables',
+      summary: 'Maîtriser les trois approches équivalentes du PIB et comprendre la consommation, l’investissement, les dépenses publiques, les échanges extérieurs et les valeurs ajoutées.',
+      lesson: {
+        sections: [
+          'La comptabilité nationale mesure le PIB selon trois approches conceptuellement équivalentes. L’approche par la production additionne les valeurs ajoutées brutes des unités productrices, puis ajoute les impôts sur les produits et retranche les subventions sur les produits. L’approche par les dépenses additionne les dépenses finales consacrées à la production intérieure. L’approche par les revenus additionne les revenus générés par la production : rémunérations des salariés, excédents d’exploitation, revenus mixtes et impôts nets liés à la production et aux importations. En pratique, les sources statistiques diffèrent et les estimations peuvent présenter des écarts provisoires ; les instituts statistiques procèdent alors à des rapprochements et à des ajustements.',
+          'Dans l’approche par les dépenses, l’identité usuelle s’écrit : PIB = C + I + G + X - M. C représente la consommation finale des ménages et des institutions sans but lucratif au service des ménages ; I représente la formation brute de capital et les variations de stocks ; G représente la consommation finale des administrations publiques ; X désigne les exportations de biens et services ; M désigne les importations. Selon les présentations détaillées des comptes, la formation brute de capital inclut notamment la formation brute de capital fixe, les variations de stocks et les acquisitions nettes d’objets de valeur. Cette identité est une relation comptable, pas une théorie selon laquelle chaque dépense provoquerait mécaniquement une hausse identique de la production.',
+          'Les importations sont soustraites parce que la consommation, l’investissement et les dépenses publiques peuvent porter sur des produits fabriqués à l’étranger. Leur valeur ne correspond pas à la production intérieure. Les exportations sont ajoutées car elles correspondent à une demande adressée à la production réalisée sur le territoire, même si l’acheteur est non-résident. Un déficit commercial ne signifie donc pas à lui seul que le PIB diminue : son effet dépend de l’évolution de toutes les composantes et de la production intérieure. De même, une hausse des importations peut accompagner une croissance vigoureuse lorsque les entreprises importent des machines ou lorsque les ménages consomment davantage.',
+          'L’investissement au sens de la comptabilité nationale n’est pas l’achat d’actions ou d’obligations. Il désigne principalement l’acquisition d’actifs fixes produits, tels que bâtiments, machines, logiciels et certains actifs de propriété intellectuelle, ainsi que les variations de stocks. Il augmente ou renouvelle la capacité productive, mais son efficacité dépend de la qualité des projets, de leur utilisation et de leur rendement économique. La dépense publique incluse dans G correspond à la consommation finale des administrations publiques ; les transferts monétaires aux ménages ne sont pas directement ajoutés au PIB comme une production publique, même s’ils peuvent influencer la consommation privée.'
+        ],
+        example: {
+          statement: 'Dans une économie simplifiée, la consommation finale vaut 600 milliards d’euros, l’investissement 180 milliards, la consommation publique 220 milliards, les exportations 150 milliards et les importations 170 milliards. Calculez le PIB par l’approche des dépenses.',
+          calculation: 'PIB = C + I + G + X - M = 600 + 180 + 220 + 150 - 170.',
+          answer: 'Le PIB est égal à 980 milliards d’euros. Les importations sont retranchées pour ne retenir que la production réalisée sur le territoire.'
+        },
+        exercise: {
+          question: 'Pourquoi les importations sont-elles soustraites dans l’identité du PIB par les dépenses ?',
+          answer: 'Parce que les importations peuvent déjà être incluses dans C, I ou G, alors qu’elles ne correspondent pas à une production intérieure. Leur soustraction permet de mesurer la production réalisée sur le territoire.'
+        },
+        exercises: [
+          {
+            question: 'L’achat d’une machine neuve produite dans le pays par une entreprise est-il compté dans l’investissement ?',
+            answer: 'Oui. Il s’agit d’une formation brute de capital fixe, qui fait partie de l’investissement au sens des comptes nationaux.'
+          },
+          {
+            question: 'L’achat d’une action déjà existante constitue-t-il une formation brute de capital fixe ?',
+            answer: 'Non. Il s’agit d’une transaction financière portant sur un actif existant, et non de la production d’un actif fixe nouveau.'
+          },
+          {
+            question: 'Les trois approches du PIB doivent-elles donner le même résultat en théorie ?',
+            answer: 'Oui. Elles observent la même activité économique sous l’angle de la production, des dépenses finales et des revenus générés.'
+          }
+        ],
+        sources: [
+          { title: 'Eurostat — GDP and main components: annual data, methodology', url: 'https://ec.europa.eu/eurostat/cache/metadata/en/nama_10_gdp_esms.htm' },
+          { title: 'OCDE — GDP and Non-financial Accounts', url: 'https://www.oecd.org/en/data/datasets/gdp-and-non-financial-accounts.html' },
+          { title: 'Nations unies — System of National Accounts, chapter on measuring GDP', url: 'https://unstats.un.org/unsd/nationalaccount/RAdocs/2025SNA_CH20_V7_GC.pdf' },
+          { title: 'INSEE — Contribution à la croissance du PIB', url: 'https://www.insee.fr/fr/metadonnees/definition/c1207' }
+        ]
+      }
+    },
+    {
+      id: 'croissance-reelle-nominale-et-prix',
+      title: '3. Croissance nominale, croissance réelle et effets des prix',
+      field: 'Macroéconomie · Inflation · Comptes nationaux en volume',
+      summary: 'Distinguer la hausse des prix de la hausse des quantités produites, calculer un taux de croissance et interpréter les déflateurs et les volumes chaînés.',
+      lesson: {
+        sections: [
+          'Le PIB en valeur, ou PIB nominal, évalue la production aux prix de la période considérée. Il peut augmenter parce que les quantités produites progressent, parce que les prix augmentent, ou pour ces deux raisons à la fois. Pour mesurer l’évolution de l’activité productive indépendamment de la variation générale des prix, les statisticiens utilisent le PIB en volume, souvent appelé PIB réel. La croissance économique est habituellement commentée à partir du taux de variation du PIB en volume, et non de la seule variation du PIB nominal. Il faut toujours vérifier la série utilisée, son unité, sa période et son éventuelle correction des variations saisonnières.',
+          'Le taux de croissance entre 2 périodes se calcule ainsi : taux de croissance = ((PIB de la période 2 / PIB de la période 1) - 1) × 100. Si le PIB en volume passe de 2 000 à 2 040 milliards d’euros, la croissance est de 2 %. Une hausse de 5 % du PIB nominal ne signifie donc pas nécessairement une croissance réelle de 5 %. Si les prix augmentent de 3 % et que les volumes progressent approximativement de 2 %, la hausse nominale avoisine 5,06 %, car les effets de prix et de volume se composent : 1,03 × 1,02 = 1,0506. L’addition des taux n’est qu’une approximation lorsque les taux sont faibles.',
+          'Le déflateur du PIB est un indice de prix implicite qui relie le PIB nominal au PIB en volume. Sous une forme simplifiée, déflateur du PIB = PIB nominal / PIB réel × 100 lorsque l’indice de volume est exprimé avec une base 100 cohérente. Il couvre les prix de la production intérieure finale, ce qui le distingue de l’indice des prix à la consommation, lequel suit le prix d’un panier de consommation des ménages et inclut des biens importés. Les 2 indices répondent donc à des questions différentes et peuvent évoluer à des rythmes différents.',
+          'Les comptes modernes utilisent souvent des volumes chaînés. Les pondérations de prix sont actualisées régulièrement afin de mieux refléter l’évolution de la structure de l’économie et des prix relatifs. Cette méthode évite certains biais des séries calculées durablement à prix fixes d’une année de base ancienne. En contrepartie, les composantes chaînées ne sont généralement pas additives : leur somme ne reconstitue pas nécessairement exactement le total, sauf dans des cas particuliers ou à l’année de référence. Les contributions à la croissance publiées par les instituts statistiques doivent donc être privilégiées plutôt que de recomposer naïvement le total à partir de niveaux chaînés.'
+        ],
+        example: {
+          statement: 'Le PIB en volume passe de 2 000 milliards d’euros à 2 060 milliards d’euros entre 2 années. Calculez la croissance réelle. Dans le même temps, le PIB nominal augmente de 5 %.',
+          calculation: 'Croissance réelle = ((2 060 / 2 000) - 1) × 100 = 3 %. L’écart entre la croissance nominale de 5 % et la croissance réelle de 3 % reflète principalement l’évolution des prix, avec une composition exacte qui dépend des indices utilisés.',
+          answer: 'La croissance réelle est de 3 %. La hausse nominale de 5 % ne doit pas être interprétée comme une hausse de 5 % de la production en volume.'
+        },
+        exercise: {
+          question: 'Une hausse du PIB nominal de 6 % prouve-t-elle que les quantités produites ont augmenté de 6 % ?',
+          answer: 'Non. Une partie de la hausse peut provenir de l’augmentation des prix. Il faut examiner le PIB en volume pour isoler l’évolution de la production réelle.'
+        },
+        exercises: [
+          {
+            question: 'Un PIB en volume passe de 500 à 510 milliards d’euros. Quel est son taux de croissance ?',
+            answer: '((510 / 500) - 1) × 100 = 2 %.'
+          },
+          {
+            question: 'Le déflateur du PIB et l’indice des prix à la consommation mesurent-ils exactement le même panier ?',
+            answer: 'Non. Le déflateur porte sur les prix de la production intérieure mesurée par le PIB, tandis que l’indice des prix à la consommation suit les prix d’un panier de consommation des ménages.'
+          },
+          {
+            question: 'Pourquoi les composantes en volumes chaînés ne sont-elles pas toujours directement additives ?',
+            answer: 'Parce que les pondérations de prix changent au fil du chaînage. La somme des composantes chaînées peut donc différer du total chaîné.'
+          }
+        ],
+        sources: [
+          { title: 'INSEE — Comptes nationaux : évolution en volume et en valeur', url: 'https://www.insee.fr/fr/metadonnees/source/serie/s1182' },
+          { title: 'Eurostat — GDP metadata: units of measure and chain-linked volumes', url: 'https://ec.europa.eu/eurostat/cache/metadata/en/namq_10_gdp_esms.htm' },
+          { title: 'FMI — Gross Domestic Product: real and nominal GDP', url: 'https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/gross-domestic-product-gdp' },
+          { title: 'INSEE — Produit intérieur brut et ses composantes', url: 'https://www.insee.fr/fr/statistiques/8605476' }
+        ]
+      }
+    },
+    {
+      id: 'moteurs-de-la-croissance-a-long-terme',
+      title: '4. Les moteurs de la croissance à long terme',
+      field: 'Macroéconomie · Croissance potentielle · Productivité et facteurs de production',
+      summary: 'Analyser le rôle du travail, du capital, de la productivité globale des facteurs, du progrès technique, du capital humain et des institutions.',
+      lesson: {
+        sections: [
+          'À long terme, la croissance du PIB dépend notamment de la quantité de travail mobilisée, du stock de capital productif et de l’efficacité avec laquelle ces facteurs sont combinés. Le travail peut augmenter avec la population active, le taux d’emploi, le nombre moyen d’heures travaillées ou les compétences. Le capital productif comprend les bâtiments, les machines, les infrastructures, les logiciels et d’autres actifs utilisés pour produire. L’investissement accroît ou renouvelle ce capital, mais son effet sur la production dépend des délais de mise en service, de l’entretien, de l’utilisation et de la qualité des projets. Une hausse du nombre d’heures travaillées peut accroître le PIB total sans augmenter nécessairement la production par heure.',
+          'La productivité du travail mesure le volume de production rapporté au travail mobilisé. Elle est fréquemment mesurée par le PIB ou la valeur ajoutée en volume par heure travaillée. Elle peut progresser grâce à un équipement plus performant, une meilleure organisation, la formation, la spécialisation, l’innovation ou une réallocation des ressources vers des entreprises et des secteurs plus productifs. Elle ne mesure pas uniquement l’effort individuel des salariés : elle dépend également du capital, des technologies, de l’organisation et des intrants disponibles. Pour analyser le niveau de vie matériel, la productivité par heure est donc informative, mais elle doit être mise en regard du taux d’emploi, des heures travaillées par personne et de la répartition des revenus.',
+          'La productivité globale des facteurs (PGF), appelée aussi productivité multifactorielle dans les publications de l’OCDE, mesure l’efficacité globale avec laquelle le travail et le capital sont combinés. Dans la comptabilité de la croissance, elle correspond à la part de la croissance de la production qui n’est pas expliquée par la variation mesurée des facteurs de production. Elle peut refléter le progrès technique, les améliorations de gestion, les changements organisationnels, les économies d’échelle, la diffusion des connaissances et la réallocation des ressources. Mais elle constitue aussi un résidu statistique : les erreurs de mesure, les facteurs omis et les hypothèses du modèle peuvent influencer son estimation. Il serait donc incorrect d’interpréter toute hausse de PGF comme une mesure pure et directe de l’innovation technologique.',
+          'Le capital humain, les infrastructures, la qualité des institutions, la concurrence, la stabilité juridique, l’accès au financement, l’ouverture commerciale et la capacité d’innovation influencent les conditions dans lesquelles le travail et le capital produisent. L’éducation et la formation peuvent améliorer les compétences ; les infrastructures réduisent certains coûts de transport et de coordination ; des institutions fiables facilitent les contrats et l’investissement. Ces facteurs agissent souvent sur plusieurs années et leurs effets dépendent du contexte. Enfin, la croissance du PIB total doit être distinguée de celle du PIB par habitant : si la population augmente plus vite que la production, le PIB total peut croître alors que le PIB par habitant stagne ou diminue.'
+        ],
+        example: {
+          statement: 'Une économie augmente ses heures travaillées de 1 %, son stock de services du capital de 2 % et sa productivité multifactorielle de 1 %. Dans un modèle pédagogique où les pondérations du travail et du capital sont respectivement de 60 % et 40 %, estimez la croissance expliquée par ces 3 contributions.',
+          calculation: 'Contribution du travail = 1 % × 0,60 = 0,6 point. Contribution du capital = 2 % × 0,40 = 0,8 point. En ajoutant une croissance de PGF de 1 point, la croissance estimée est 0,6 + 0,8 + 1 = 2,4 %.',
+          answer: 'La croissance estimée est de 2,4 %. Il s’agit d’une décomposition simplifiée de comptabilité de la croissance ; les pondérations et les mesures empiriques doivent être établies à partir des comptes et des données du pays étudié.'
+        },
+        exercise: {
+          question: 'Pourquoi une hausse de la productivité du travail ne signifie-t-elle pas nécessairement que les salariés travaillent plus intensément ?',
+          answer: 'Parce que la production par heure dépend aussi du capital disponible, des technologies, des compétences, de l’organisation, des intrants et de l’efficacité globale du processus de production.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence existe entre productivité du travail et productivité multifactorielle ?',
+            answer: 'La productivité du travail rapporte la production au travail mobilisé. La productivité multifactorielle rapporte la production à un ensemble de facteurs, principalement le travail et le capital, et mesure leur efficacité combinée.'
+          },
+          {
+            question: 'Le PIB total et le PIB par habitant peuvent-ils évoluer différemment ?',
+            answer: 'Oui. Le PIB total peut augmenter plus lentement que la population, auquel cas le PIB par habitant peut diminuer.'
+          },
+          {
+            question: 'La productivité multifactorielle est-elle une mesure directe et parfaite du progrès technique ?',
+            answer: 'Non. C’est un résidu de comptabilité de la croissance qui peut refléter le progrès technique et l’efficacité, mais aussi des erreurs de mesure, des facteurs omis et des hypothèses statistiques.'
+          }
+        ],
+        sources: [
+          { title: 'OCDE — Labour productivity and utilisation', url: 'https://www.oecd.org/en/data/indicators/labour-productivity-and-utilisation.html' },
+          { title: 'OCDE — Multifactor productivity', url: 'https://www.oecd.org/en/data/indicators/multifactor-productivity.html' },
+          { title: 'OCDE — Productivity and economic growth, Compendium 2025', url: 'https://www.oecd.org/en/publications/oecd-compendium-of-productivity-indicators-2025_b024d9e1-en/full-report/productivity-and-economic-growth_f9b839d7.html' },
+          { title: 'Banque mondiale — GDP per capita growth indicator', url: 'https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG' }
+        ]
+      }
+    },
+    {
+      id: 'cycles-economiques-et-croissance-conjoncturelle',
+      title: '5. Cycles économiques, croissance conjoncturelle et politiques publiques',
+      field: 'Macroéconomie · Fluctuations · Politique budgétaire et monétaire',
+      summary: 'Comprendre les variations de court terme du PIB, les phases du cycle, les écarts de production, les chocs et les mécanismes de transmission des politiques économiques.',
+      lesson: {
+        sections: [
+          'La croissance observée varie autour d’une trajectoire de long terme. Les fluctuations de l’activité sont souvent décrites par les phases d’expansion, de ralentissement, de contraction et de reprise. Une expansion correspond à une progression de l’activité ; un ralentissement signifie que le taux de croissance baisse, sans que le PIB diminue nécessairement ; une contraction correspond à une baisse de l’activité en volume. Les définitions opérationnelles d’une récession peuvent varier selon les organismes : la règle médiatique de 2 trimestres consécutifs de baisse du PIB réel est un repère courant, mais elle ne constitue pas une définition universelle et suffisante de toutes les récessions. L’analyse doit tenir compte d’un ensemble d’indicateurs, de leur ampleur et de leur diffusion dans l’économie.',
+          'La croissance effective dépend de la demande globale à court terme, mais aussi de l’offre disponible. Une baisse de la confiance peut conduire les ménages à différer certains achats et les entreprises à reporter leurs investissements. Une hausse des taux d’intérêt peut renchérir le crédit et réduire certaines dépenses sensibles au financement. À l’inverse, une demande extérieure plus forte peut soutenir les exportations. Des chocs d’offre, comme une rupture d’approvisionnement ou une hausse du coût de l’énergie, peuvent limiter la production et augmenter les prix. Les effets ne sont pas uniformes : ils dépendent de la situation financière des agents, de la structure productive, des anticipations et de la réaction des politiques économiques.',
+          'La croissance potentielle désigne le rythme auquel une économie peut accroître sa production de manière soutenable à moyen terme, compte tenu de ses facteurs de production et de leur productivité, sans tensions inflationnistes persistantes liées à une demande excessivement forte. Elle n’est pas directement observable : elle est estimée à l’aide de méthodes statistiques et économiques, qui comportent une incertitude importante et peuvent être révisées. L’écart de production, ou output gap, compare le PIB effectif à une estimation du PIB potentiel. Un écart positif indique une activité supérieure à son potentiel estimé ; un écart négatif indique une activité inférieure. Cet indicateur ne doit pas être traité comme une mesure certaine ou directement observable.',
+          'La politique monétaire agit notamment par les taux directeurs, les conditions de crédit, les anticipations et les prix d’actifs. Un resserrement monétaire vise généralement à réduire les pressions inflationnistes en modérant la demande, mais ses effets se transmettent avec des délais et varient selon les secteurs. La politique budgétaire agit par les dépenses publiques, les prélèvements et les transferts. Une hausse de dépenses ou une baisse d’impôts peut soutenir la demande, mais l’effet final dépend de la conjoncture, de la capacité productive, des importations, du financement et des réactions des agents. Les politiques structurelles, comme la formation, la concurrence, la recherche ou les infrastructures, cherchent plutôt à améliorer les capacités productives à moyen et long terme. Il faut distinguer ces mécanismes théoriques de l’évaluation empirique d’une mesure précise.'
+        ],
+        example: {
+          statement: 'Le PIB réel d’un pays vaut 1 000 milliards d’euros au premier trimestre et 995 milliards au deuxième trimestre. Calculez la variation trimestrielle et qualifiez le mouvement observé.',
+          calculation: 'Variation = ((995 / 1 000) - 1) × 100 = -0,5 %.',
+          answer: 'Le PIB réel recule de 0,5 % sur le trimestre : il s’agit d’une contraction trimestrielle. Cette seule observation ne suffit pas à caractériser à elle seule l’ensemble du cycle ni à établir une définition complète de la récession.'
+        },
+        exercise: {
+          question: 'Pourquoi une croissance plus faible ne signifie-t-elle pas nécessairement une baisse du PIB ?',
+          answer: 'Parce qu’un ralentissement est une baisse du taux de croissance. Si le taux reste positif, le niveau du PIB continue d’augmenter, mais moins rapidement.'
+        },
+        exercises: [
+          {
+            question: 'Le PIB potentiel est-il directement observable dans les statistiques comme le PIB mesuré ?',
+            answer: 'Non. Il s’agit d’une estimation construite à partir de méthodes économiques et statistiques, avec une incertitude et des révisions possibles.'
+          },
+          {
+            question: 'Quel est l’objectif général d’un resserrement de la politique monétaire en période de pressions inflationnistes ?',
+            answer: 'Modérer les conditions monétaires et la demande afin de réduire les pressions inflationnistes, en sachant que les effets se transmettent avec des délais.'
+          },
+          {
+            question: 'Une politique de formation agit-elle exactement par le même canal qu’une baisse immédiate des impôts ?',
+            answer: 'Non. Une baisse d’impôts peut soutenir la demande à court terme ; la formation vise principalement à améliorer les compétences et la capacité productive à plus long terme.'
+          }
+        ],
+        sources: [
+          { title: 'FMI — World Economic Outlook: concepts and analysis', url: 'https://www.imf.org/en/Publications/WEO' },
+          { title: 'Banque centrale européenne — Monetary policy', url: 'https://www.ecb.europa.eu/mopo/html/index.en.html' },
+          { title: 'OCDE — Economic Outlook', url: 'https://www.oecd.org/en/topics/economic-outlook.html' },
+          { title: 'INSEE — Comptes nationaux trimestriels', url: 'https://www.insee.fr/fr/statistiques?debut=0&theme=30' }
+        ]
+      }
+    },
+    {
+      id: 'comparaisons-limites-et-interpretation-du-pib',
+      title: '6. Comparaisons internationales, limites du PIB et interprétation du niveau de vie',
+      field: 'Économie du développement · Comparaisons internationales · Mesure du bien-être',
+      summary: 'Comparer les économies sans confondre taille et niveau de vie, utiliser les parités de pouvoir d’achat et identifier ce que le PIB ne mesure pas.',
+      lesson: {
+        sections: [
+          'Le PIB total renseigne sur la taille d’une économie, mais il ne suffit pas pour comparer le niveau de vie moyen. Le PIB par habitant rapporte le PIB à la population et constitue un indicateur moyen de production par personne. Il ne décrit toutefois ni la distribution des revenus, ni les inégalités de patrimoine, ni les différences de coût de la vie entre ménages. Une moyenne peut progresser alors que certains groupes voient leur situation stagner ou se dégrader. Pour étudier les conditions matérielles, il est utile de compléter le PIB par habitant avec le revenu disponible des ménages, la consommation réelle, les indicateurs de pauvreté, la distribution des revenus et l’accès aux services essentiels.',
+          'Les comparaisons internationales en dollars ou en euros au taux de change du marché peuvent être trompeuses pour mesurer les volumes de biens et services accessibles dans chaque pays. Les parités de pouvoir d’achat (PPA) sont conçues pour comparer les niveaux de prix et convertir les agrégats dans une unité commune de pouvoir d’achat. Elles permettent de comparer plus utilement les volumes économiques et le PIB par habitant en volume entre pays, mais elles reposent sur des enquêtes de prix, des choix méthodologiques et des paniers représentatifs qui peuvent être difficiles à établir. Le taux de change du marché reste pertinent pour d’autres questions, notamment la capacité à acheter des biens échangés internationalement ou à rembourser une dette en devises.',
+          'Le PIB présente des limites importantes comme indicateur de bien-être. Il ne mesure pas directement la santé, l’éducation, la sécurité, le temps libre, la qualité des relations sociales, la qualité démocratique ou la satisfaction de vie. Le travail domestique non rémunéré et une partie des activités bénévoles ne sont pas enregistrés comme production marchande, même si certaines productions non marchandes sont incluses selon les règles de la comptabilité nationale. Le PIB ne déduit pas automatiquement les dommages environnementaux ou l’épuisement de ressources naturelles associés à la production. Une catastrophe peut même être suivie de dépenses de reconstruction qui augmentent l’activité mesurée, sans que cela signifie que le bien-être s’est amélioré par rapport à la situation antérieure.',
+          'Il est donc préférable d’utiliser le PIB comme un indicateur central de l’activité productive, et non comme une mesure exhaustive du progrès social. Pour une analyse complète, il faut l’associer à des indicateurs complémentaires : PIB par habitant en PPA, revenu disponible médian, pauvreté, inégalités, emploi, santé, éducation, empreinte carbone, qualité de l’environnement et comptes de patrimoine. Le choix des indicateurs dépend de la question posée. Pour mesurer la production, le PIB en volume est essentiel ; pour étudier le niveau de vie matériel, le revenu et la consommation des ménages sont utiles ; pour évaluer le développement humain et la soutenabilité, un tableau de bord multidimensionnel est nécessaire.'
+        ],
+        example: {
+          statement: 'Le PIB d’un pays augmente de 4 % en volume alors que sa population augmente de 5 %. En utilisant une approximation simple, que devient le PIB réel par habitant ?',
+          calculation: 'Facteur de croissance du PIB par habitant = 1,04 / 1,05 = 0,990476. Variation = (0,990476 - 1) × 100, soit environ -0,95 %.',
+          answer: 'Le PIB réel par habitant diminue d’environ 0,95 %. Le PIB total progresse, mais moins vite que la population. Le calcul est une approximation fondée sur les taux fournis.'
+        },
+        exercise: {
+          question: 'Pourquoi le PIB par habitant ne suffit-il pas à mesurer le bien-être de toute la population ?',
+          answer: 'Parce qu’il s’agit d’une moyenne qui ne renseigne pas sur la répartition des revenus et qu’il ne mesure pas directement la santé, l’éducation, la sécurité, le temps libre ou la qualité de l’environnement.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’intérêt des parités de pouvoir d’achat pour comparer les PIB par habitant ?',
+            answer: 'Elles corrigent les différences de niveaux de prix entre pays et permettent de comparer plus utilement les volumes de biens et services accessibles.'
+          },
+          {
+            question: 'Une hausse du PIB après des dépenses de dépollution prouve-t-elle que l’environnement s’est amélioré ?',
+            answer: 'Non. Les dépenses de dépollution peuvent contribuer à la production mesurée, mais le PIB ne résume pas l’état de l’environnement ni les dommages qui ont précédé ces dépenses.'
+          },
+          {
+            question: 'Quel indicateur peut compléter le PIB pour examiner la répartition des ressources entre les ménages ?',
+            answer: 'Le revenu disponible médian, les indicateurs de pauvreté et les mesures d’inégalités complètent utilement le PIB moyen par habitant.'
+          }
+        ],
+        sources: [
+          { title: 'OCDE — Measuring well-being and progress', url: 'https://www.oecd.org/en/topics/measuring-well-being-and-progress.html' },
+          { title: 'OCDE — Economic Policy Making to Pursue Economic Welfare', url: 'https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/05/economic-policy-making-to-pursue-economic-welfare_7a77b55b/ccc5634c-en.pdf' },
+          { title: 'Banque mondiale — GDP per capita growth indicator', url: 'https://data.worldbank.org/indicator/NY.GDP.PCAP.KD.ZG' },
+          { title: 'Eurostat — Purchasing power parities methodology', url: 'https://ec.europa.eu/eurostat/en/web/purchasing-power-parities/methodology' }
+        ]
+      }
+    }
+  ]
+},
 
+{
+  id: 'semi-conducteurs',
+  title: 'Semi-conducteurs : physique, conception, fabrication et industrie mondiale',
+  note: 'Six chapitres approfondis consacrés aux matériaux semi-conducteurs, aux composants et architectures électroniques, à la conception des puces, aux procédés de fabrication, au packaging et aux tests, puis à l’économie et à la chaîne de valeur mondiale. Les exemples numériques sont pédagogiques. Les dimensions dites nanométriques correspondent à des générations technologiques et ne désignent pas nécessairement une dimension physique unique du transistor.',
+  chapters: [
+    {
+      id: 'physique-materiaux-semi-conducteurs',
+      title: '1. Physique des semi-conducteurs et matériaux',
+      field: 'Électronique · Physique du solide · Matériaux semi-conducteurs',
+      summary: 'Comprendre la conductivité contrôlable des semi-conducteurs, les bandes d’énergie, les porteurs de charge, le dopage et les principaux matériaux utilisés dans l’industrie.',
+      lesson: {
+        sections: [
+          'Un semi-conducteur est un matériau dont la conductivité électrique peut être contrôlée et modifiée par sa composition, sa température, son éclairage ou les champs électriques appliqués. Il se distingue d’un conducteur, qui laisse circuler les charges relativement facilement, et d’un isolant, dans lequel leur transport est fortement limité dans les conditions ordinaires. Le silicium cristallin est le matériau de base le plus répandu pour les circuits intégrés, notamment parce qu’il forme un oxyde de bonne qualité, possède des propriétés électriques maîtrisables et bénéficie d’une filière industrielle extrêmement développée. Les semi-conducteurs ne sont donc pas simplement des matériaux « entre » conducteurs et isolants : leur intérêt industriel vient surtout de la possibilité de contrôler finement leur comportement électrique.',
+          'Dans un solide, les électrons occupent des états d’énergie organisés en bandes. La bande de valence contient les états électroniques liés aux liaisons du matériau, tandis que la bande de conduction contient des états dans lesquels les électrons peuvent contribuer au transport électrique. L’intervalle énergétique entre ces bandes est appelé bande interdite, ou band gap. Dans un semi-conducteur, cet intervalle permet de contrôler la population de porteurs disponibles. Lorsqu’un électron acquiert suffisamment d’énergie pour rejoindre la bande de conduction, il laisse derrière lui un trou dans la bande de valence. Électrons et trous sont les deux types de porteurs de charge mobiles considérés dans le modèle usuel. La température, la lumière et le dopage influencent leur concentration et donc la conductivité.',
+          'Le dopage consiste à introduire volontairement une faible quantité d’atomes étrangers dans le cristal afin de modifier la concentration de porteurs. Dans le silicium, des dopants donneurs comme le phosphore apportent des électrons supplémentaires et produisent un matériau de type n. Des dopants accepteurs comme le bore favorisent la présence de trous et produisent un matériau de type p. Les régions de type p et n peuvent être mises en contact pour former une jonction p-n, élément fondamental de nombreuses diodes et structures de transistors. Le dopage doit être contrôlé avec précision : sa concentration, sa profondeur et sa distribution influencent la tension de seuil, les courants de fuite, la résistance et la tenue en tension des dispositifs.',
+          'Le silicium domine la microélectronique numérique, mais il n’est pas le seul matériau utilisé. L’arséniure de gallium et d’autres composés III-V sont employés dans certaines applications optoélectroniques et radiofréquences grâce à leurs propriétés électroniques et optiques. Le carbure de silicium (SiC) et le nitrure de gallium (GaN) sont des semi-conducteurs à large bande interdite particulièrement intéressants pour l’électronique de puissance, où ils peuvent permettre des composants adaptés à des tensions, fréquences ou températures élevées selon leur conception. Le choix d’un matériau dépend donc de l’application, du coût, du rendement de fabrication, de la fiabilité et de la maturité de la filière, et non d’un classement universel où un matériau serait toujours supérieur aux autres.'
+        ],
+        example: {
+          statement: 'Un matériau de silicium est dopé au phosphore. Quel type de semi-conducteur obtient-on et quel porteur devient majoritaire dans le modèle usuel ?',
+          calculation: 'Le phosphore possède un électron de valence de plus que le silicium. Dans le cristal, il agit comme dopant donneur. Le dopage augmente la concentration d’électrons disponibles pour la conduction.',
+          answer: 'On obtient un semi-conducteur de type n. Les électrons sont les porteurs majoritaires et les trous restent des porteurs minoritaires.'
+        },
+        exercise: {
+          question: 'Quelle est la fonction du dopage dans un semi-conducteur ?',
+          answer: 'Le dopage modifie de manière contrôlée la concentration de porteurs de charge afin d’ajuster les propriétés électriques du matériau et de réaliser des régions de type n ou p.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on l’intervalle énergétique séparant la bande de valence de la bande de conduction ?',
+            answer: 'La bande interdite, également appelée band gap.'
+          },
+          {
+            question: 'Quel type de dopage le bore produit-il généralement dans le silicium ?',
+            answer: 'Un dopage de type p, dans lequel les trous sont les porteurs majoritaires.'
+          },
+          {
+            question: 'Pourquoi le SiC et le GaN sont-ils utilisés dans certaines applications de puissance ?',
+            answer: 'Ce sont des matériaux à large bande interdite qui peuvent convenir à des composants de puissance fonctionnant à des tensions, fréquences ou températures élevées, selon leur architecture et leurs conditions d’utilisation.'
+          }
+        ],
+        sources: [
+          { title: 'Semiconductor Industry Association — What are Semiconductors?', url: 'https://www.semiconductors.org/semiconductors-101/what-are-semiconductors/' },
+          { title: 'U.S. Department of Energy — Power Electronics Research and Development', url: 'https://www.energy.gov/cmei/vehicles/power-electronics-research-and-development' },
+          { title: 'ARPA-E — Properties of silicon and wide-bandgap semiconductors', url: 'https://arpa-e-foa.energy.gov/FileContent.aspx?FileID=c31a63a3-a094-4992-ad9d-3bb77e0d7acf' }
+        ]
+      }
+    },
+    {
+      id: 'transistors-circuits-integres-architectures',
+      title: '2. Transistors, circuits intégrés et architectures électroniques',
+      field: 'Microélectronique · Composants · Architectures logiques et mémoire',
+      summary: 'Étudier le transistor comme élément de commutation ou d’amplification, les technologies MOSFET et CMOS, ainsi que les grandes familles de puces logiques, mémoire, analogiques et de puissance.',
+      lesson: {
+        sections: [
+          'Le transistor est un composant semi-conducteur qui permet de contrôler un courant électrique à l’aide d’un signal. Selon sa structure et son régime de fonctionnement, il peut servir d’interrupteur électronique ou d’élément d’amplification. Dans les circuits numériques, les transistors sont principalement utilisés pour représenter et manipuler des états logiques. L’intégration de très nombreux transistors sur une même puce permet de réaliser des processeurs, des mémoires, des contrôleurs et des circuits spécialisés. Un circuit intégré associe des composants actifs, des éléments passifs et des interconnexions fabriqués sur un substrat commun, généralement à partir d’un wafer de silicium.',
+          'Le transistor MOSFET (Metal-Oxide-Semiconductor Field-Effect Transistor) contrôle la conduction dans un canal au moyen d’un champ électrique appliqué par la grille. Dans un MOSFET à canal n, une tension de grille appropriée peut créer ou renforcer un canal conducteur entre la source et le drain. Les dispositifs à canal p utilisent une polarité et des porteurs différents. La technologie CMOS associe des transistors MOS à canal n et à canal p dans une même logique complémentaire. Dans de nombreuses portes logiques CMOS, cette complémentarité permet une faible consommation statique idéale, même si les circuits réels consomment de l’énergie lors des commutations, à cause notamment de la charge des capacités et des courants non idéaux.',
+          'Les puces logiques réalisent des opérations de calcul, de contrôle et de traitement de données. Les processeurs centraux (CPU) sont conçus pour exécuter une grande variété d’instructions ; les processeurs graphiques (GPU) comportent de nombreuses unités adaptées au traitement parallèle ; les accélérateurs spécialisés, dont certains ASIC, sont optimisés pour des tâches ciblées. Les FPGA offrent une logique configurable après fabrication. Les microcontrôleurs réunissent généralement un cœur de calcul, de la mémoire et des périphériques sur une même puce. Ces catégories ne sont pas interchangeables : leur intérêt dépend des charges de travail, des contraintes de puissance, de latence, de coût et de flexibilité.',
+          'Les mémoires se distinguent notamment par leur vitesse, leur densité, leur coût par bit et leur capacité à conserver les données sans alimentation. La DRAM stocke les bits dans des cellules qui nécessitent un rafraîchissement périodique ; elle est largement utilisée comme mémoire principale. La SRAM conserve son état tant qu’elle est alimentée et sert notamment aux caches, mais elle occupe généralement davantage de surface par bit. La mémoire NAND flash est non volatile et est utilisée dans les SSD et de nombreux appareils. Les circuits analogiques traitent des signaux continus, par exemple pour amplifier, filtrer ou convertir des signaux. Les composants de puissance commandent ou convertissent l’énergie électrique, tandis que les capteurs et composants optoélectroniques assurent l’interface avec le monde physique.'
+        ],
+        example: {
+          statement: 'Un appareil électronique doit exécuter un système d’exploitation, conserver temporairement les données utilisées et stocker des fichiers même lorsqu’il est éteint. Associez une famille de mémoire à chaque fonction.',
+          calculation: 'La mémoire principale de travail est généralement réalisée en DRAM. Les caches proches du processeur utilisent souvent de la SRAM. Le stockage persistant peut utiliser de la NAND flash.',
+          answer: 'La DRAM sert généralement de mémoire principale, la SRAM de mémoire cache rapide et la NAND flash de stockage non volatil. Les choix exacts dépendent de l’architecture de l’appareil.'
+        },
+        exercise: {
+          question: 'Pourquoi la technologie CMOS est-elle largement utilisée dans les circuits numériques ?',
+          answer: 'Parce que l’association complémentaire de transistors nMOS et pMOS permet de réaliser des fonctions logiques avec une faible consommation statique idéale et une bonne densité d’intégration.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la fonction générale d’un transistor dans un circuit électronique ?',
+            answer: 'Il contrôle un courant électrique et peut notamment servir d’interrupteur ou d’élément d’amplification.'
+          },
+          {
+            question: 'Quelle différence essentielle existe entre DRAM et NAND flash concernant la conservation des données ?',
+            answer: 'La DRAM est volatile et perd son contenu lorsque l’alimentation est coupée ; la NAND flash est non volatile et conserve les données sans alimentation.'
+          },
+          {
+            question: 'À quoi sert principalement un circuit analogique ?',
+            answer: 'À traiter des signaux continus, par exemple en les amplifiant, filtrant ou convertissant.'
+          }
+        ],
+        sources: [
+          { title: 'IEEE Technology Navigator — CMOS Technology', url: 'https://technav.ieee.org/topic/cmos-technology/' },
+          { title: 'Semiconductor Industry Association — What are Semiconductors?', url: 'https://www.semiconductors.org/semiconductors-101/what-are-semiconductors/' },
+          { title: 'Semiconductor Industry Association — Semiconductor product taxonomy', url: 'https://www.semiconductors.org/wp-content/uploads/2025/05/SIA-Comments-Section-232-Investigation.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'conception-puces-modeles-industriels',
+      title: '3. Conception des puces et modèles industriels',
+      field: 'Conception électronique · EDA · Propriété intellectuelle · Organisation industrielle',
+      summary: 'Décrire les étapes de conception d’un circuit, les outils EDA, la vérification, les blocs IP et les différences entre entreprises fabless, fondeurs et fabricants intégrés.',
+      lesson: {
+        sections: [
+          'La conception d’une puce commence par la définition d’un besoin : fonction attendue, performances, consommation électrique, coût, dimensions, conditions thermiques et exigences de fiabilité. Les architectes définissent ensuite les grands blocs fonctionnels et leurs interactions. Les concepteurs décrivent la logique, réalisent la conception des circuits, puis transforment cette description en une implantation physique comprenant les transistors, les cellules, les connexions et les contraintes de fabrication. Le travail doit intégrer très tôt le boîtier et les interfaces avec le système final : une puce performante isolément peut être limitée par sa mémoire, son alimentation, son refroidissement ou ses connexions.',
+          'Les outils EDA (Electronic Design Automation) assistent la conception, la simulation, la vérification et la préparation des données nécessaires à la fabrication. Ils couvrent notamment la saisie ou la description matérielle, la synthèse logique, le placement des cellules, le routage des interconnexions, l’analyse temporelle et la vérification des règles de conception. La vérification fonctionnelle cherche à déterminer si le circuit se comporte conformément à ses spécifications ; l’analyse temporelle vérifie que les signaux respectent les contraintes de synchronisation ; les contrôles physiques vérifient que le dessin est compatible avec les règles du procédé. Les erreurs découvertes après fabrication peuvent être extrêmement coûteuses, car une nouvelle version de masque et une nouvelle campagne de fabrication peuvent être nécessaires.',
+          'Les blocs de propriété intellectuelle, ou IP cores, sont des éléments de conception réutilisables : interfaces, contrôleurs, cœurs de processeur ou autres fonctions. Leur réutilisation peut réduire le temps de développement, mais elle impose de vérifier leur compatibilité, leurs licences, leur sécurité, leur consommation et leur comportement dans le système complet. Les masques photolithographiques traduisent ensuite les motifs du circuit en dessins qui seront transférés sur les wafers. Les conceptions les plus avancées exigent des équipes spécialisées, des outils logiciels complexes, des bibliothèques de cellules et une coordination étroite avec le fabricant qui maîtrise le procédé choisi.',
+          'L’industrie utilise plusieurs modèles d’entreprise. Une société fabless conçoit et commercialise ses puces sans exploiter elle-même les usines de fabrication principales ; elle sous-traite la fabrication à des fondeurs. Un foundry ou fondeur fabrique des circuits pour des clients externes. Une entreprise IDM (Integrated Device Manufacturer) conçoit et fabrique tout ou partie de ses produits dans ses propres installations, même si les modèles réels peuvent inclure des sous-traitances. Les entreprises OSAT (Outsourced Semiconductor Assembly and Test) se spécialisent dans l’assemblage, le packaging et les tests externalisés. Ces modèles répartissent les investissements, les compétences et les risques différemment, et structurent la chaîne de valeur mondiale.'
+        ],
+        example: {
+          statement: 'Une jeune entreprise conçoit un processeur spécialisé mais ne possède aucune usine de fabrication. Elle confie la production des wafers à un fabricant spécialisé, puis fait assembler et tester les puces par un prestataire. Quel modèle industriel décrit cette organisation ?',
+          calculation: 'L’entreprise conserve la conception et la commercialisation du produit. La fabrication des wafers est réalisée par un fondeur et les opérations de fin de chaîne sont confiées à un prestataire d’assemblage et de test.',
+          answer: 'Il s’agit d’un modèle fabless associé à un fondeur et à un prestataire OSAT. Cette organisation sépare conception, fabrication front-end et assemblage/test.'
+        },
+        exercise: {
+          question: 'Quelle différence principale existe entre une entreprise fabless et un fondeur ?',
+          answer: 'Une entreprise fabless conçoit et commercialise des puces sans exploiter nécessairement ses propres usines de fabrication ; un fondeur fabrique des puces pour le compte de clients.'
+        },
+        exercises: [
+          {
+            question: 'À quoi servent les outils EDA ?',
+            answer: 'Ils assistent la conception, la simulation, la vérification, le placement, le routage et la préparation des circuits intégrés pour la fabrication.'
+          },
+          {
+            question: 'Pourquoi la vérification intervient-elle avant la fabrication ?',
+            answer: 'Elle permet de détecter les erreurs fonctionnelles, temporelles et physiques avant une étape de production coûteuse et difficile à corriger.'
+          },
+          {
+            question: 'Que signifie OSAT dans la chaîne de valeur des semi-conducteurs ?',
+            answer: 'Outsourced Semiconductor Assembly and Test : prestataire spécialisé dans l’assemblage, le packaging et les tests externalisés.'
+          }
+        ],
+        sources: [
+          { title: 'Semiconductor Industry Association — Stage 2: Chip Design', url: 'https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/stage-2-chip-design/' },
+          { title: 'Semiconductor Industry Association — How are Semiconductors Made?', url: 'https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/' },
+          { title: 'OECD — Semiconductors', url: 'https://www.oecd.org/en/topics/semiconductors.html' }
+        ]
+      }
+    },
+    {
+      id: 'fabrication-wafers-lithographie-procedes',
+      title: '4. Fabrication : wafers, lithographie et procédés industriels',
+      field: 'Microfabrication · Lithographie · Dépôt · Gravure · Contrôle des procédés',
+      summary: 'Suivre la fabrication d’un circuit sur wafer, comprendre les opérations répétées de dépôt, lithographie, gravure et dopage, ainsi que le contrôle des défauts et du rendement.',
+      lesson: {
+        sections: [
+          'La fabrication front-end commence avec un wafer, disque mince de matériau semi-conducteur, le plus souvent du silicium monocristallin pour les circuits intégrés conventionnels. La surface doit être préparée avec une propreté et une planéité extrêmement élevées. Les wafers passent ensuite par une succession de traitements physiques et chimiques réalisés dans des salles blanches où les particules, la température, l’humidité et les vibrations sont contrôlées. La fabrication complète comporte de nombreuses étapes répétées pour former les régions actives, les isolants, les grilles, les contacts et les interconnexions métalliques. Le procédé exact varie selon le type de puce et la technologie du fabricant.',
+          'La lithographie transfère un motif sur une couche photosensible déposée sur le wafer. Un système optique projette l’image d’un masque ou réticule sur la résine, qui est ensuite développée afin de faire apparaître les zones à traiter. La gravure retire sélectivement une partie des matériaux exposés, tandis que les dépôts ajoutent des couches conductrices, isolantes ou semi-conductrices. Le dopage peut être réalisé notamment par implantation ionique et traitements thermiques qui permettent d’obtenir les propriétés électriques recherchées. La planarisation mécano-chimique (CMP) sert à rendre certaines surfaces suffisamment planes pour les étapes suivantes. Nettoyage, métrologie et inspection interviennent régulièrement pour maîtriser la contamination et les variations du procédé.',
+          'La lithographie DUV utilise des longueurs d’onde ultraviolettes profondes ; la lithographie EUV utilise un rayonnement ultraviolet extrême de longueur d’onde beaucoup plus courte, autour de 13,5 nm. L’EUV permet de former certains motifs très fins avec une stratégie de fabrication adaptée, mais elle exige des équipements complexes, des optiques réfléchissantes et un environnement sous vide sur le trajet optique. Elle ne remplace pas toutes les autres techniques : les différentes couches d’une puce peuvent utiliser des procédés lithographiques distincts en fonction de leurs dimensions et de leurs exigences. Les noms commerciaux des générations technologiques, exprimés en nanomètres, ne doivent pas être interprétés comme une mesure unique et directe de la longueur de grille ou de toutes les dimensions physiques d’un transistor.',
+          'Le contrôle du procédé est essentiel car une particule, une variation d’épaisseur, un défaut d’alignement ou une imperfection de gravure peut rendre une zone de la puce inutilisable. Le rendement de fabrication, ou yield, désigne la proportion de dies fonctionnels obtenus parmi ceux fabriqués ou testés, selon la définition retenue. Il dépend de la densité et de la nature des défauts, de la taille des dies, de la maturité du procédé et des critères de test. Un grand wafer ne garantit pas automatiquement un meilleur rendement par puce : la taille du die, la disposition des défauts et la complexité du produit comptent également. L’amélioration du rendement est un enjeu majeur de coût, de capacité industrielle et de compétitivité.'
+        ],
+        example: {
+          statement: 'Un wafer contient 600 dies théoriquement fabricables. Après découpe et test, 510 dies répondent aux critères fonctionnels retenus. Quel est le rendement fonctionnel observé dans cet exemple ?',
+          calculation: 'Rendement = (nombre de dies fonctionnels / nombre de dies théoriquement fabricables) × 100 = (510 / 600) × 100.',
+          answer: 'Le rendement observé est de 85 %. Ce calcul simplifié suppose que les 600 dies constituent bien le dénominateur pertinent et que les critères de test sont identiques pour tous.'
+        },
+        exercise: {
+          question: 'Quel est le rôle de la lithographie dans la fabrication d’un circuit intégré ?',
+          answer: 'Elle transfère des motifs définis par le dessin du circuit sur une couche photosensible du wafer, afin de délimiter les zones qui seront ensuite traitées.'
+        },
+        exercises: [
+          {
+            question: 'Quelle différence générale existe entre dépôt et gravure ?',
+            answer: 'Le dépôt ajoute une couche de matériau sur le wafer ; la gravure retire sélectivement de la matière pour former les motifs souhaités.'
+          },
+          {
+            question: 'Pourquoi les salles blanches sont-elles indispensables ?',
+            answer: 'Elles limitent les particules et contaminants susceptibles de provoquer des défauts dans des structures de dimensions très réduites.'
+          },
+          {
+            question: 'Le nombre inscrit dans le nom d’un nœud technologique correspond-il toujours à une dimension physique unique du transistor ?',
+            answer: 'Non. Il s’agit d’une appellation de génération technologique ; elle ne correspond pas nécessairement à une seule dimension physique mesurable du transistor.'
+          }
+        ],
+        sources: [
+          { title: 'ASML — How microchips are made', url: 'https://www.asml.com/en/technology/all-about-microchips/how-microchips-are-made' },
+          { title: 'ASML — Lithography principles', url: 'https://www.asml.com/en/technology/lithography-principles' },
+          { title: 'NIST — Final Programmatic Environmental Assessment for Semiconductor Fabs', url: 'https://www.nist.gov/system/files/documents/2024/06/28/Final%20PEA%20for%20Modernization%20and%20Expansion%20of%20Semiconductor%20Fabs%206-28-2024%20-%20OGC-508C.pdf' },
+          { title: 'Semiconductor Industry Association — How are Semiconductors Made?', url: 'https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/' }
+        ]
+      }
+    },
+    {
+      id: 'packaging-tests-memoire-fiabilite',
+      title: '5. Packaging avancé, mémoire, tests et fiabilité',
+      field: 'Assemblage électronique · Packaging avancé · Test · Fiabilité thermique et électrique',
+      summary: 'Comprendre les opérations après fabrication du wafer, le rôle du boîtier, les architectures multi-puces, les mémoires à large bande passante et les contrôles de fiabilité.',
+      lesson: {
+        sections: [
+          'Après la fabrication front-end, le wafer est soumis à des contrôles électriques, puis les dies sont séparés par découpe. Les puces sélectionnées sont assemblées dans un boîtier qui assure leur protection mécanique, leur connexion électrique au système et une partie de la gestion thermique. Le packaging n’est pas une simple enveloppe : il influence les performances, la consommation, la dissipation de chaleur, la taille et le coût du composant. Les connexions peuvent utiliser des fils métalliques, des bosses de connexion ou d’autres technologies d’interconnexion. Les choix dépendent du nombre de connexions, de la fréquence, de la puissance dissipée, de la fiabilité et du coût de production.',
+          'Le packaging avancé regroupe plusieurs approches permettant de rapprocher ou d’intégrer plusieurs dies. Les architectures 2.5D utilisent notamment un interposeur ou une structure d’interconnexion dense pour relier plusieurs composants dans un même ensemble. Les empilements 3D placent des dies les uns au-dessus des autres et utilisent des connexions verticales adaptées. Les chiplets consistent à répartir les fonctions d’un système sur plusieurs petites puces spécialisées réunies dans un même boîtier. Cette approche peut améliorer la modularité et permettre de combiner des dies fabriqués avec des procédés différents. Elle introduit toutefois des défis de communication entre dies, de dissipation thermique, de test, de rendement global et de standardisation des interfaces.',
+          'Les mémoires à large bande passante, ou HBM, empilent plusieurs dies mémoire et les connectent au moyen d’interconnexions verticales, généralement intégrées à une solution de packaging avancé avec un processeur ou un accélérateur. L’objectif est d’offrir une bande passante élevée dans un encombrement maîtrisé, ce qui est particulièrement utile pour les accélérateurs de calcul intensif. La performance d’un système ne dépend toutefois pas seulement de la mémoire : elle dépend aussi de la capacité, de la latence, de la consommation, du contrôleur mémoire, des interconnexions et du logiciel. Le packaging devient ainsi un élément de l’architecture du système, et non une étape secondaire.',
+          'Les tests sont réalisés à plusieurs étapes : sur wafer, après découpe, après assemblage et parfois lors de contrôles de qualification. Ils cherchent à détecter les défauts électriques, fonctionnels, thermiques ou mécaniques et à vérifier que le composant respecte ses spécifications. La qualification de fiabilité peut inclure des essais accélérés de température, d’humidité, de cycles thermiques, de vibrations ou de durée de fonctionnement, selon la catégorie de produit et les normes applicables. Les résultats servent à estimer les mécanismes de défaillance et à vérifier la robustesse, mais un essai accéléré ne garantit jamais à lui seul une durée de vie exacte dans toutes les conditions réelles. Le contrôle qualité doit donc être adapté à l’usage final, notamment dans l’automobile, l’industrie, le médical ou les infrastructures critiques.'
+        ],
+        example: {
+          statement: 'Un lot de 1 000 puces assemblées est soumis à un test final. 970 puces passent les critères fonctionnels. Calculez le taux de réussite au test final.',
+          calculation: 'Taux de réussite = (970 / 1 000) × 100.',
+          answer: 'Le taux de réussite au test final est de 97 %. Ce taux ne doit pas être confondu automatiquement avec le rendement global depuis le wafer, car des pertes peuvent avoir eu lieu aux étapes précédentes.'
+        },
+        exercise: {
+          question: 'Pourquoi le packaging influence-t-il directement les performances d’un semi-conducteur ?',
+          answer: 'Il conditionne les connexions électriques, la dissipation thermique, les distances entre composants, la protection mécanique et donc certaines limites de fréquence, de puissance et de fiabilité.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’un chiplet ?',
+            answer: 'Un die spécialisé qui est combiné avec d’autres dies dans un même boîtier pour former un système plus complet.'
+          },
+          {
+            question: 'Quel est l’intérêt général de la mémoire HBM ?',
+            answer: 'Elle vise à fournir une bande passante mémoire élevée grâce à l’empilement de dies et à des interconnexions adaptées.'
+          },
+          {
+            question: 'Un test accéléré permet-il de connaître avec certitude la durée de vie exacte d’une puce dans tous les usages ?',
+            answer: 'Non. Il aide à caractériser certains mécanismes de défaillance et à qualifier la robustesse, mais l’extrapolation dépend des conditions et des modèles utilisés.'
+          }
+        ],
+        sources: [
+          { title: 'Semiconductor Industry Association — How are Semiconductors Made?', url: 'https://www.semiconductors.org/semiconductors-101/how-are-semiconductors-made/' },
+          { title: 'Semiconductor Industry Association and Deloitte — Powering AI: The Semiconductor Ecosystem at the Foundation of Data Centers', url: 'https://www.semiconductors.org/powering-ai-the-semiconductor-ecosystem-at-the-foundation-of-data-centers/' },
+          { title: 'imec — Silicon interposer technology and chiplet integration', url: 'https://www.imec-int.com/en/press/imec-advances-europes-silicon-interposer-technology-capabilities-through-nanoic-pilot-line' }
+        ]
+      }
+    },
+    {
+      id: 'economie-chaine-valeur-semi-conducteurs',
+      title: '6. Économie mondiale, chaîne de valeur et enjeux stratégiques',
+      field: 'Économie industrielle · Commerce international · Géopolitique technologique · Marché des semi-conducteurs',
+      summary: 'Analyser les coûts, les cycles de marché, les concentrations géographiques, les dépendances industrielles, les applications et les indicateurs permettant de suivre le secteur.',
+      lesson: {
+        sections: [
+          'L’industrie des semi-conducteurs est une chaîne de valeur internationale fortement spécialisée. Elle comprend la recherche, la conception, les logiciels EDA, les blocs de propriété intellectuelle, les matériaux, les équipements de fabrication, les fondeurs, l’assemblage, les tests et la distribution. Une même puce peut mobiliser des compétences, des équipements et des fournisseurs situés dans plusieurs économies. Cette spécialisation permet des gains d’efficacité et une progression rapide des performances, mais elle crée aussi des dépendances. L’OCDE souligne la complexité de la chaîne et le nombre important d’étapes et d’intrants nécessaires à la production. Une perturbation d’un fournisseur, d’un équipement ou d’une matière critique peut donc avoir des conséquences au-delà de son lieu d’origine.',
+          'La fabrication avancée exige des investissements très élevés dans les bâtiments, les équipements, les procédés, la recherche et les compétences. Les coûts fixes sont importants et les usines doivent fonctionner avec des taux d’utilisation suffisants pour amortir les installations. La rentabilité dépend du rendement de fabrication, du mix de produits, du prix moyen de vente, de la durée de vie des générations technologiques et du niveau de demande. Les coûts ne sont pas identiques selon les familles de puces : une mémoire standard, un processeur avancé, un composant analogique et un semi-conducteur de puissance suivent des économies industrielles différentes. Il faut donc éviter de traiter tous les fabricants comme s’ils avaient le même modèle économique.',
+          'Le marché des semi-conducteurs est cyclique. Les commandes peuvent accélérer lorsque les fabricants d’électronique, les centres de données ou les constructeurs automobiles anticipent une hausse de la demande. Les producteurs investissent alors dans les capacités, mais les délais de construction et de qualification sont longs. Si l’offre devient supérieure à la demande, les stocks peuvent augmenter, les prix baisser et les taux d’utilisation des usines reculer. Les segments ne suivent pas toujours le même cycle : les mémoires sont particulièrement sensibles aux variations de prix et de capacité, tandis que certains composants industriels ou automobiles peuvent suivre des rythmes différents. Pour analyser le secteur, il faut distinguer ventes, commandes, stocks, capacités installées, utilisation des usines et dépenses d’investissement.',
+          'Les semi-conducteurs sont devenus des composants stratégiques pour les télécommunications, les véhicules, l’industrie, les équipements médicaux, les infrastructures numériques, les systèmes énergétiques et le calcul lié à l’intelligence artificielle. Les tensions commerciales, les restrictions à l’exportation, les subventions publiques et les politiques de souveraineté technologique influencent les décisions d’investissement et la localisation des capacités. La résilience ne signifie pas nécessairement produire chaque composant dans un seul pays : elle peut reposer sur la diversification des fournisseurs, des stocks adaptés, des capacités de remplacement, des coopérations internationales et une meilleure visibilité sur les dépendances. Les politiques publiques doivent arbitrer entre sécurité d’approvisionnement, coût, innovation, concurrence et efficacité économique.',
+          'Pour suivre la conjoncture du secteur, les ventes mondiales publiées par WSTS et relayées par la Semiconductor Industry Association constituent des indicateurs de référence. Il faut lire attentivement la période, la devise, le périmètre et la méthode : les ventes trimestrielles, les ventes mensuelles calculées en moyenne mobile sur trois mois et les prévisions annuelles ne sont pas directement interchangeables. Les données de marché mesurent les ventes de semi-conducteurs, pas nécessairement les bénéfices des fabricants ni la valeur totale des équipements électroniques qui les utilisent. Pour analyser une entreprise, il faut également examiner son exposition aux différents segments, sa capacité productive, ses dépenses de recherche, ses marges, ses investissements, sa dette, ses clients et sa position concurrentielle. Une forte croissance du marché ne garantit pas automatiquement la hausse du bénéfice ou du cours de chaque société.'
+        ],
+        example: {
+          statement: 'Les ventes mondiales de semi-conducteurs passent de 600 milliards de dollars une année à 660 milliards l’année suivante. Calculez le taux de croissance annuel des ventes.',
+          calculation: 'Taux de croissance = ((660 / 600) - 1) × 100 = 10 %.',
+          answer: 'Les ventes mondiales augmentent de 10 %. Ce calcul décrit la croissance du chiffre d’affaires sectoriel agrégé ; il ne permet pas, à lui seul, de déduire la croissance des bénéfices ou des valorisations boursières.'
+        },
+        exercise: {
+          question: 'Pourquoi une hausse des ventes mondiales de semi-conducteurs ne garantit-elle pas une hausse identique des bénéfices de toutes les entreprises du secteur ?',
+          answer: 'Parce que les entreprises ont des produits, des coûts, des marges, des clients, des capacités et des positions concurrentielles différents. Les ventes sectorielles ne se transforment pas uniformément en bénéfices.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi la chaîne de valeur mondiale des semi-conducteurs est-elle vulnérable aux ruptures ?',
+            answer: 'Parce qu’elle repose sur de nombreuses étapes spécialisées, des fournisseurs parfois concentrés et des équipements ou matériaux difficiles à remplacer rapidement.'
+          },
+          {
+            question: 'Quel phénomène peut apparaître après une phase d’investissement industriel trop rapide par rapport à la demande ?',
+            answer: 'Une surcapacité, qui peut entraîner une hausse des stocks, une baisse des prix et une diminution de l’utilisation des usines.'
+          },
+          {
+            question: 'Quelle source sectorielle publie des statistiques mondiales de ventes de semi-conducteurs ?',
+            answer: 'World Semiconductor Trade Statistics (WSTS), dont les données sont notamment relayées par la Semiconductor Industry Association (SIA).'
+          }
+        ],
+        sources: [
+          { title: 'OCDE — Semiconductors', url: 'https://www.oecd.org/en/topics/semiconductors.html' },
+          { title: 'Semiconductor Industry Association — Understanding dependencies in the U.S. semiconductor supply chain', url: 'https://www.semiconductors.org/understanding-dependencies-in-the-u-s-semiconductor-supply-chain/' },
+          { title: 'World Semiconductor Trade Statistics — Market statistics and forecasts', url: 'https://www.wsts.org/' },
+          { title: 'Semiconductor Industry Association — Market Data', url: 'https://www.semiconductors.org/data-resources/market-data/' },
+          { title: 'European Commission — European Chips Act', url: 'https://digital-strategy.ec.europa.eu/en/policies/european-chips-act' }
+        ]
+      }
+    }
+  ]
+},
 
 ]
