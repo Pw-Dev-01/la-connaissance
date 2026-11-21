@@ -2439,4 +2439,222 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'anthropologie-culturelle',
+  sortYear: 'false',
+  title: 'Anthropologie culturelle',
+  note: 'Six chapitres approfondis pour comprendre les concepts, les méthodes et les domaines majeurs de l’anthropologie culturelle. Cette discipline étudie les pratiques, significations, institutions et relations humaines dans leur contexte, en tenant compte de la diversité interne des sociétés, de leur histoire et de leurs transformations. Les exemples sont des illustrations pédagogiques et ne doivent pas être généralisés à toutes les communautés.',
+  chapters: [
+    {
+      id: 'fondements-anthropologie-culturelle',
+      title: '1. Fondements : culture, diversité et regard anthropologique',
+      field: 'Anthropologie culturelle · Concepts fondamentaux',
+      summary: 'Définir la culture et l’anthropologie culturelle, comprendre les perspectives holistique et comparative, et reconnaître les limites des catégories générales.',
+      lesson: {
+        sections: [
+          'L’anthropologie culturelle étudie les manières dont les humains apprennent, partagent, interprètent et transforment des pratiques, des idées, des valeurs et des formes d’organisation sociale. Elle s’intéresse aussi bien aux activités quotidiennes qu’aux institutions, aux croyances, aux objets, aux relations et aux significations. La culture ne se réduit ni aux arts ni aux traditions anciennes : elle comprend les habitudes, les règles explicites ou implicites, les connaissances, les techniques et les façons de donner sens au monde. Elle est apprise, socialement transmise et continuellement réinterprétée.',
+          'La culture n’est pas un ensemble homogène que tous les membres d’une société posséderaient de manière identique. Les différences de génération, de classe, de genre, de trajectoire, de langue, de région, de religion ou d’expérience migratoire peuvent produire des interprétations distinctes et parfois des désaccords. Une description anthropologique évite donc de parler d’une communauté comme si chaque personne pensait ou agissait de la même façon. Les normes sont des attentes, mais leur application peut varier et être discutée.',
+          'La perspective holistique cherche à relier les dimensions de la vie plutôt qu’à les isoler artificiellement. Un repas, par exemple, peut être analysé en lien avec la production agricole, le travail, les relations familiales, les règles d’hospitalité, les croyances, les échanges économiques, les identités et l’environnement. L’approche ne signifie pas que tout est relié de façon mécanique : elle invite à examiner les relations et à vérifier lesquelles sont réellement pertinentes à partir des données.',
+          'La comparaison anthropologique permet d’étudier les ressemblances, les différences et les transformations entre contextes, sans établir automatiquement une hiérarchie entre eux. Le relativisme culturel est une démarche de compréhension : chercher les significations d’une pratique dans son contexte avant de la juger à partir de ses propres habitudes. Il ne signifie pas qu’il faut approuver toute pratique ni renoncer à l’analyse des droits, des rapports de pouvoir ou des dommages. L’ethnocentrisme, au contraire, consiste à prendre ses propres normes comme mesure universelle et à évaluer les autres à partir de cette référence non examinée.',
+          'L’anthropologue pratique aussi la réflexivité : il examine comment sa position, ses attentes, sa langue, ses accès, ses intérêts et ses relations influencent la collecte et l’interprétation des données. La connaissance anthropologique est construite à partir d’enquêtes et de raisonnements explicites; elle n’est pas un point de vue omniscient ni une simple opinion personnelle. Les conclusions doivent être situées, argumentées et proportionnées aux observations disponibles.'
+        ],
+        example: {
+          statement: 'Un chercheur découvre que les personnes d’un quartier organisent régulièrement un repas collectif. Comment éviter de conclure trop vite que cette pratique a la même signification pour tout le monde ?',
+          calculation: 'Il décrit les situations observées, identifie les participants et leurs rôles, puis recueille différentes explications : convivialité, solidarité, obligation, mémoire, religion, organisation pratique ou autres motifs. Il compare ces récits aux comportements et au contexte, sans présumer d’une signification unique.',
+          answer: 'Il faut contextualiser la pratique, tenir compte des variations internes et confronter plusieurs perspectives avant d’en proposer une interprétation.'
+        },
+        exercise: {
+          question: 'Pourquoi l’anthropologie culturelle ne doit-elle pas considérer une culture comme parfaitement uniforme ou immuable ?',
+          answer: 'Parce que les individus et groupes interprètent les normes différemment, que les cultures contiennent des tensions et des changements, et que les pratiques se transforment selon les contextes et les générations.'
+        },
+        exercises: [
+          { question: 'Que désigne le concept de culture en anthropologie ?', answer: 'Un ensemble appris et socialement transmis de pratiques, connaissances, valeurs, symboles et significations qui orientent la vie sociale, sans être identique chez tous les membres d’un groupe.' },
+          { question: 'Qu’est-ce qu’une approche holistique ?', answer: 'Une démarche qui examine les liens entre différentes dimensions de la vie humaine et sociale, plutôt que de les traiter comme indépendantes par principe.' },
+          { question: 'Le relativisme culturel oblige-t-il à approuver toutes les pratiques étudiées ?', answer: 'Non. Il s’agit d’abord de les comprendre dans leur contexte; cette compréhension reste compatible avec l’examen critique des rapports de pouvoir et des questions éthiques.' }
+        ],
+        sources: [
+          { title: 'American Anthropological Association — Perspectives: An Open Introduction to Cultural Anthropology, 2e édition', url: 'https://americananthro.pressbooks.pub/perspectivesculanth2/chapter/introduction-to-anthropology/' },
+          { title: 'National Geographic Education — History and Branches of Anthropology', url: 'https://education.nationalgeographic.org/resource/history-branches-anthropology/' },
+          { title: 'National Park Service — What Is Cultural Anthropology?', url: 'https://www.nps.gov/orgs/1209/what-is-cultural-anthropology.htm' }
+        ]
+      }
+    },
+    {
+      id: 'ethnographie-enquete-terrain',
+      title: '2. L’ethnographie et l’enquête de terrain',
+      field: 'Anthropologie culturelle · Méthodes de recherche',
+      summary: 'Découvrir l’observation participante, les entretiens, les notes de terrain, les perspectives emic et etic, et la construction d’une description contextualisée.',
+      lesson: {
+        sections: [
+          'L’ethnographie désigne à la fois une démarche d’enquête et, souvent, le texte ou le récit analytique qui en résulte. Elle vise à comprendre des pratiques et des expériences dans leurs contextes ordinaires. Selon la question étudiée, le travail de terrain peut s’appuyer sur une présence prolongée, des observations répétées, des entretiens, des conversations, des documents, des objets, des archives ou des matériaux numériques. La durée et les techniques de l’enquête dépendent du terrain, des contraintes et des objectifs; il n’existe pas une durée universelle qui garantisse à elle seule une ethnographie de qualité.',
+          'L’observation participante consiste à observer tout en prenant part, dans la mesure appropriée et autorisée, à certaines activités du milieu étudié. Elle permet d’appréhender des gestes, des routines, des interactions et des savoirs qui peuvent être difficiles à expliquer uniquement lors d’un entretien. Le chercheur doit consigner ce qu’il a effectivement vu, ce qu’il a entendu, ce qu’il a fait et ce qu’il interprète, en distinguant ces niveaux autant que possible. Il réfléchit également à la façon dont sa présence peut modifier la situation observée.',
+          'Les entretiens peuvent être structurés, semi-structurés ou ouverts. Les questions ouvertes laissent aux interlocuteurs la possibilité de définir leurs propres catégories et de développer leur expérience; les questions plus ciblées permettent d’examiner un thème précis. Les récits d’une personne ne sont ni à rejeter ni à traiter automatiquement comme représentatifs de l’ensemble du groupe. Le chercheur les compare avec d’autres témoignages, observations et documents, tout en respectant la singularité de chaque parcours.',
+          'La perspective emic cherche à décrire les catégories et significations exprimées par les personnes concernées, depuis leur point de vue situé. La perspective etic correspond à une analyse formulée avec des concepts comparatifs ou analytiques du chercheur. Ces deux perspectives ne sont pas des catégories absolues ni des étapes obligatoires : elles peuvent dialoguer, se corriger et révéler des désaccords entre les mots des participants, les pratiques observées et les interprétations scientifiques.',
+          'La description dense, souvent associée à Clifford Geertz, ne se contente pas de rapporter un geste : elle explique les contextes, conventions, relations et significations qui rendent ce geste intelligible. Une ethnographie solide explicite ses méthodes, ses limites, ses choix d’interprétation et les conditions dans lesquelles les données ont été recueillies. Elle n’invente pas des motivations que les données ne permettent pas d’établir.'
+        ],
+        example: {
+          statement: 'Dans une étude des échanges au marché, une ethnographe observe plusieurs interactions et mène des entretiens avec vendeurs et clients. Comment peut-elle décrire une négociation sans lui attribuer une signification universelle ?',
+          calculation: 'Elle note le contexte, les participants, les paroles et gestes observables, puis demande aux personnes concernées comment elles interprètent l’échange. Elle compare plusieurs cas, repère les variations et sépare les observations de ses hypothèses.',
+          answer: 'Elle produit une description située et vérifiable, indiquant les interprétations recueillies, les divergences éventuelles et ce qui demeure incertain.'
+        },
+        exercise: {
+          question: 'En quoi l’observation participante peut-elle apporter des informations que des entretiens seuls ne fournissent pas ?',
+          answer: 'Elle donne accès aux pratiques en situation, aux routines, aux interactions et aux aspects tacites de l’activité, qui peuvent différer des souvenirs, déclarations ou explications formulés en entretien.'
+        },
+        exercises: [
+          { question: 'Qu’est-ce que l’observation participante ?', answer: 'Une méthode d’enquête dans laquelle le chercheur observe en prenant part à certaines activités du milieu étudié, selon les conditions d’accès et les règles éthiques.' },
+          { question: 'Quelle est la différence générale entre emic et etic ?', answer: 'Emic renvoie à la perspective et aux catégories des personnes étudiées; etic renvoie à un point de vue analytique ou comparatif du chercheur.' },
+          { question: 'Pourquoi tenir des notes de terrain ?', answer: 'Pour conserver des traces datées et contextualisées des observations, réflexions, décisions méthodologiques et pistes d’analyse, tout en distinguant faits observés et interprétations.' }
+        ],
+        sources: [
+          { title: 'American Anthropological Association — Doing Fieldwork: Methods in Cultural Anthropology', url: 'https://americananthro.pressbooks.pub/perspectivesculanth2/chapter/doing-fieldwork-methods-in-cultural-anthropology/' },
+          { title: 'Cambridge Encyclopedia of Anthropology — Ethnography, Signe Howell', url: 'https://www.anthroencyclopedia.com/entry/ethnography' },
+          { title: 'Social Sci LibreTexts — What is Anthropology? (Shared Voices)', url: 'https://socialsci.libretexts.org/Bookshelves/Anthropology/Cultural_Anthropology/Shared_Voices_-_An_Introduction_to_Cultural_Anthropology_%28Brellas_and_Martinez%29/01%3A_What_is_Anthropology' }
+        ]
+      }
+    },
+    {
+      id: 'symboles-langage-rituels',
+      title: '3. Symboles, langage, valeurs et rituels',
+      field: 'Anthropologie culturelle · Significations et systèmes symboliques',
+      summary: 'Étudier comment les symboles, les récits, les langues, les normes et les rituels produisent du sens, maintiennent des relations et peuvent être contestés.',
+      lesson: {
+        sections: [
+          'Les symboles sont des signes, objets, gestes, paroles, images ou pratiques auxquels des personnes attribuent des significations socialement apprises. Leur interprétation dépend du contexte et peut varier selon les groupes ou les situations. Un objet peut être utilitaire dans un contexte, avoir une valeur mémorielle dans un autre et être mobilisé comme signe d’appartenance dans un troisième. L’analyse anthropologique ne présume pas qu’une signification est évidente à partir de l’objet seul : elle cherche à comprendre comment les participants la construisent et l’expriment.',
+          'Les valeurs renvoient à des idées de ce qui est souhaitable, juste, respectable ou important. Les normes sont des attentes concernant les comportements et les relations; elles peuvent être explicites, comme des règles écrites, ou implicites, comme des conventions de politesse. Les normes ne sont pas toujours suivies : leur transgression, négociation ou application inégale constitue également un objet d’étude. Les institutions et sanctions, formelles ou informelles, peuvent contribuer à leur maintien.',
+          'Le langage est à la fois un moyen de communication et une ressource pour catégoriser le monde, construire des relations et exprimer des identités. L’anthropologie s’intéresse aux usages situés de la parole, aux registres, aux récits, aux métaphores, aux formes d’adresse, au plurilinguisme et aux liens entre langage, pouvoir et appartenance. Il faut toutefois éviter de conclure qu’une langue détermine entièrement la pensée de ses locuteurs; les liens entre langue, cognition et expérience font l’objet de débats et doivent être examinés avec nuance.',
+          'Les rituels sont des actions symboliques organisées, souvent répétées et socialement reconnues, mais leur forme et leur importance varient. Ils peuvent marquer des transitions de vie, renforcer des solidarités, exprimer des obligations, rappeler des histoires collectives ou rendre visibles des hiérarchies. Un rituel n’est pas nécessairement religieux : des cérémonies civiques, événements sportifs ou pratiques institutionnelles peuvent aussi comporter des dimensions rituelles. L’analyse doit établir ce que les participants en disent, ce qu’ils font et comment le rituel fonctionne dans son contexte.',
+          'Les récits, mythes, mémoires et traditions sont transmis mais aussi transformés. Ils peuvent offrir des explications sur les origines, la moralité, les relations au territoire et l’identité; ils peuvent aussi faire l’objet de controverses ou de réinterprétations. Les étudier exige de distinguer les récits recueillis, leurs contextes de performance, les versions multiples et les interprétations du chercheur. Les traditions ne sont pas figées : leur continuité peut précisément dépendre de leur adaptation.'
+        ],
+        example: {
+          statement: 'Un groupe utilise un objet lors d’une cérémonie annuelle. Un visiteur suppose que cet objet est uniquement décoratif. Comment l’analyse anthropologique peut-elle vérifier son interprétation ?',
+          calculation: 'Elle examine l’usage de l’objet, son histoire, les termes employés pour le nommer, les règles d’accès, les récits associés et les interprétations de différentes personnes, en tenant compte du contexte de la cérémonie.',
+          answer: 'Elle évite de lui attribuer une fonction universelle et construit une interprétation contextualisée à partir des usages et significations exprimés, en signalant les divergences et les limites.'
+        },
+        exercise: {
+          question: 'Pourquoi un symbole ne peut-il pas être interprété de façon fiable en dehors de son contexte social ?',
+          answer: 'Parce que ses significations sont acquises et mobilisées dans des relations, des histoires et des situations spécifiques; un même symbole peut avoir plusieurs sens ou être contesté.'
+        },
+        exercises: [
+          { question: 'Quelle différence entre valeur et norme ?', answer: 'Une valeur exprime ce qui est considéré comme important ou souhaitable; une norme précise ou suggère des attentes de comportement dans une situation donnée.' },
+          { question: 'Un rituel doit-il obligatoirement être religieux ?', answer: 'Non. Des pratiques cérémonielles ou institutionnelles non religieuses peuvent aussi avoir une organisation symbolique et sociale.' },
+          { question: 'Les traditions sont-elles nécessairement inchangées au fil du temps ?', answer: 'Non. Elles peuvent être réinterprétées, adaptées, discutées et transmises sous de nouvelles formes.' }
+        ],
+        sources: [
+          { title: 'American Anthropological Association — Perspectives: An Open Introduction to Cultural Anthropology, 2e édition', url: 'https://americananthro.pressbooks.pub/perspectivesculanth2/chapter/introduction-to-anthropology/' },
+          { title: 'UNESCO — Convention pour la sauvegarde du patrimoine culturel immatériel (définition et domaines)', url: 'https://ich.unesco.org/en/convention' },
+          { title: 'National Geographic Education — History and Branches of Anthropology', url: 'https://education.nationalgeographic.org/resource/history-branches-anthropology/' }
+        ]
+      }
+    },
+    {
+      id: 'parentes-famille-genre-identites',
+      title: '4. Parenté, famille, genre et identités sociales',
+      field: 'Anthropologie culturelle · Organisation sociale et relations',
+      summary: 'Analyser la parenté, les formes de famille, la socialisation, les identités et les relations de genre comme des configurations culturelles et historiques diverses.',
+      lesson: {
+        sections: [
+          'La parenté constitue un domaine majeur de l’anthropologie : elle concerne les relations reconnues comme familiales, les liens de filiation, les alliances, les obligations, les formes de résidence, l’héritage et les réseaux de soutien. Ces relations ne se limitent pas partout à la biologie; elles peuvent être définies par l’adoption, des liens rituels, la cohabitation, des pratiques de soin ou des formes socialement reconnues de solidarité. Les catégories de parenté varient entre sociétés et peuvent évoluer au sein d’une même société.',
+          'Les anthropologues étudient les familles et les ménages sans supposer une forme unique ou universelle. Ils examinent qui vit ensemble, qui prend soin de qui, comment les responsabilités sont réparties, comment les liens sont reconnus et comment les changements économiques, migratoires, politiques ou démographiques affectent les relations. Le ménage et la famille ne sont pas toujours équivalents : des personnes peuvent appartenir à un réseau familial sans vivre dans le même logement, et des personnes non apparentées peuvent partager des responsabilités domestiques.',
+          'La socialisation ou enculturation désigne les processus par lesquels les personnes apprennent les pratiques, valeurs, connaissances, attentes et façons d’interagir de leur milieu. Elle se déroule dans de nombreux contextes : famille, école, groupes de pairs, institutions, médias, activités religieuses, travail et espaces numériques. Elle n’est pas une simple copie passive des normes; les individus peuvent les interpréter, les négocier, les rejeter ou les transformer. Les expériences de socialisation varient selon les trajectoires et les positions sociales.',
+          'Le genre, les rôles de genre et les identités sont des objets d’étude anthropologique qui nécessitent une attention aux contextes historiques et culturels. Les chercheurs analysent comment les catégories, attentes, tâches, statuts, droits et expériences sont organisés, justifiés et contestés. Il est essentiel de ne pas confondre les catégories locales avec les catégories analytiques du chercheur, ni de généraliser les observations d’une communauté à toutes les sociétés. Les travaux contemporains examinent également les intersections entre genre, classe, âge, racialisation, citoyenneté, handicap et autres rapports sociaux, selon les données et le terrain.',
+          'Les identités sont relationnelles, situées et parfois multiples. Une personne peut mobiliser différentes appartenances selon la situation, et les identités collectives peuvent être discutées au sein même des groupes. L’anthropologie examine les récits d’appartenance, les frontières sociales, les processus d’inclusion et d’exclusion, ainsi que les effets des institutions. Elle ne traite pas une identité comme une essence fixe, mais étudie les conditions dans lesquelles elle est exprimée, reconnue, imposée ou transformée.'
+        ],
+        example: {
+          statement: 'Une enquête dans une ville constate que certaines personnes âgées sont aidées par des voisins sans lien de parenté. Comment analyser ces relations ?',
+          calculation: 'Le chercheur décrit les formes concrètes de soutien, les termes employés par les participants, les attentes de réciprocité, la durée des liens, les ressources et les différences entre situations. Il compare ces relations avec les structures familiales sans les présumer identiques.',
+          answer: 'Il peut montrer comment des liens de solidarité et de soin se construisent au-delà de la parenté biologique, en définissant précisément les relations observées et leur signification pour les participants.'
+        },
+        exercise: {
+          question: 'Pourquoi les anthropologues évitent-ils de considérer la famille comme une structure identique dans toutes les sociétés ?',
+          answer: 'Parce que les règles de parenté, les arrangements domestiques, les responsabilités, les liens de soin et les formes reconnues de famille varient culturellement et historiquement.'
+        },
+        exercises: [
+          { question: 'Qu’est-ce que la parenté en anthropologie ?', answer: 'Un ensemble de liens socialement reconnus, pouvant inclure filiation, alliance, adoption, relations rituelles et obligations de soin ou de solidarité.' },
+          { question: 'La socialisation est-elle limitée à l’enfance ?', answer: 'Non. Les apprentissages et ajustements culturels se poursuivent au cours de la vie et dans de multiples institutions et relations.' },
+          { question: 'Pourquoi faut-il contextualiser l’étude du genre ?', answer: 'Parce que les catégories, attentes, rôles et expériences liés au genre ne sont pas identiques partout et changent avec les contextes historiques, sociaux et politiques.' }
+        ],
+        sources: [
+          { title: 'European Commission — Research Ethics in Ethnography and Anthropology (terms, concepts and definitions)', url: 'https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/research-ethics-in-ethnography-anthropology_he_en.pdf' },
+          { title: 'American Anthropological Association — Perspectives: An Open Introduction to Cultural Anthropology, 2e édition', url: 'https://americananthro.pressbooks.pub/perspectivesculanth2/chapter/introduction-to-anthropology/' },
+          { title: 'National Park Service — What Is Cultural Anthropology?', url: 'https://www.nps.gov/orgs/1209/what-is-cultural-anthropology.htm' }
+        ]
+      }
+    },
+    {
+      id: 'economie-politique-echanges-pouvoir',
+      title: '5. Économie, échanges, institutions et pouvoir',
+      field: 'Anthropologie culturelle · Économie et organisation politique',
+      summary: 'Étudier les moyens de subsistance, la circulation des biens, la réciprocité, les institutions, les formes de pouvoir, les inégalités et les conflits.',
+      lesson: {
+        sections: [
+          'L’anthropologie économique étudie la manière dont les sociétés organisent la production, la distribution, l’échange et la consommation, ainsi que les significations sociales qui accompagnent ces activités. Elle ne considère pas les décisions économiques comme exclusivement motivées par le calcul individuel : les obligations, les relations, les valeurs, les contraintes, les institutions et les conceptions du bien-être peuvent jouer un rôle. Les pratiques économiques sont étudiées dans leur contexte et ne sont pas présumées identiques à celles des économies de marché.',
+          'Les échanges peuvent prendre plusieurs formes, notamment achat et vente, dons, réciprocité, redistribution, entraide et partage. Ces catégories sont des outils analytiques; elles peuvent se chevaucher dans une même situation. Un don peut créer ou entretenir une relation, mais il peut aussi être volontaire, contraint, stratégique ou contesté. Pour comprendre un échange, il faut étudier les biens concernés, les acteurs, les règles, le moment, les attentes, les rapports de pouvoir et les interprétations des participants plutôt que lui assigner une signification universelle.',
+          'L’organisation politique ne se réduit pas aux gouvernements ou aux élections. Les anthropologues examinent les formes d’autorité, de décision, de leadership, de résolution de conflits, de légitimité et de coordination dans les institutions et les communautés. Le pouvoir peut être exercé par des moyens formels ou informels, par la maîtrise des ressources, par les normes, par la persuasion, par la réputation, par les savoirs ou par l’accès aux réseaux. Les structures officielles et les pratiques quotidiennes peuvent diverger, ce qui doit être étudié au lieu d’être présumé.',
+          'Les inégalités et les hiérarchies sont analysées à travers les ressources, les droits, les statuts, les opportunités, la division du travail et les mécanismes de différenciation. L’anthropologie s’intéresse à la manière dont ces structures sont vécues, justifiées, reproduites, négociées ou contestées. Les catégories de classe, de caste, d’ethnicité, de citoyenneté, de genre et autres positions ne fonctionnent pas partout de la même façon; leur usage doit être défini et contextualisé. Les conflits peuvent révéler des normes concurrentes, des intérêts divergents et des changements institutionnels.',
+          'Les marchés, les politiques publiques, les migrations, les technologies et les chaînes de production connectent des acteurs situés dans des espaces différents. Une analyse anthropologique peut suivre ces connexions pour comprendre comment les décisions prises à plusieurs échelles affectent les pratiques quotidiennes, et comment les personnes s’adaptent ou résistent. Les conclusions doivent s’appuyer sur des données concrètes et éviter d’attribuer une causalité à un phénomène complexe sans preuves suffisantes.'
+        ],
+        example: {
+          statement: 'Une association locale répartit des ressources entre plusieurs familles, et les habitants évoquent à la fois des règles officielles et des relations de confiance. Comment analyser cette distribution ?',
+          calculation: 'Le chercheur examine les critères écrits, les procédures réelles, les acteurs qui prennent les décisions, les ressources disponibles, les demandes, les perceptions d’équité et les cas où les règles sont contestées. Il compare les discours avec les observations et documents accessibles.',
+          answer: 'Il peut analyser la redistribution comme une pratique économique et politique, en décrivant les règles formelles et informelles, les relations et les enjeux de pouvoir sans supposer d’avance qu’elle est équitable ou arbitraire.'
+        },
+        exercise: {
+          question: 'Pourquoi l’échange économique doit-il être étudié dans son contexte social ?',
+          answer: 'Parce que les échanges peuvent porter des obligations, des significations, des rapports de confiance, de statut ou de pouvoir qui ne sont pas entièrement décrits par la valeur monétaire du bien.'
+        },
+        exercises: [
+          { question: 'Qu’est-ce que la réciprocité ?', answer: 'Une relation d’échange ou de soutien impliquant des attentes de retour ou d’équilibre, dont la forme, le délai et les obligations varient selon le contexte.' },
+          { question: 'Le pouvoir est-il uniquement institutionnel ?', answer: 'Non. Il peut aussi se manifester dans les relations informelles, l’accès aux ressources, les savoirs, les normes, la réputation et la capacité de définir les décisions ou les catégories.' },
+          { question: 'Que permet l’étude anthropologique des inégalités ?', answer: 'D’examiner comment les différences de ressources, de statut, de droits et d’opportunités se construisent, se maintiennent, sont vécues et peuvent être contestées.' }
+        ],
+        sources: [
+          { title: 'American Anthropological Association — Perspectives: An Open Introduction to Cultural Anthropology, 2e édition', url: 'https://americananthro.pressbooks.pub/perspectivesculanth2/chapter/introduction-to-anthropology/' },
+          { title: 'National Geographic Education — History and Branches of Anthropology', url: 'https://education.nationalgeographic.org/resource/history-branches-anthropology/' },
+          { title: 'European Commission — Research Ethics in Ethnography and Anthropology', url: 'https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/research-ethics-in-ethnography-anthropology_he_en.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'mondialisation-transformations-ethique',
+      title: '6. Mondialisation, changements culturels et éthique de la recherche',
+      field: 'Anthropologie culturelle · Mobilités, transformations et responsabilité scientifique',
+      summary: 'Comprendre les changements, les mobilités, les médias et les contacts interculturels, puis apprendre à conduire et présenter une recherche de manière responsable.',
+      lesson: {
+        sections: [
+          'Les cultures se transforment au fil des échanges, des migrations, des politiques, des changements économiques, des technologies, des générations et des relations à l’environnement. La mondialisation ne signifie pas une uniformisation complète : elle peut produire des formes d’hybridation, de circulation, de différenciation, de réappropriation ou de résistance. Les anthropologues étudient ces processus à partir des expériences situées et des connexions entre lieux, plutôt que de traiter « tradition » et « modernité » comme deux blocs opposés.',
+          'Les migrations et les diasporas modifient les relations aux lieux, aux langues, aux réseaux familiaux, aux institutions et aux identités. Les personnes peuvent maintenir des liens transnationaux, transmettre des pratiques, en adopter de nouvelles ou négocier leur appartenance dans plusieurs contextes. Les trajectoires sont diverses : les raisons du déplacement, les conditions de séjour, les ressources, les politiques et les expériences individuelles influencent les résultats. Les récits migratoires ne doivent pas être réduits à une seule expérience type.',
+          'Les médias et les espaces numériques constituent des terrains culturels où se développent des relations, des normes, des communautés, des pratiques de présentation de soi, des conflits et des circulations d’information. L’enquête en ligne exige de réfléchir aux frontières entre public et privé, au consentement, à l’identification des personnes, aux risques liés aux citations ou captures d’écran, et aux différences entre plateformes et communautés. Le fait qu’un contenu soit accessible en ligne ne suffit pas à conclure qu’il est éthiquement libre d’utilisation.',
+          'La recherche anthropologique doit prendre au sérieux les obligations envers les personnes, les communautés et les autres parties concernées. Les principes de l’American Anthropological Association incluent notamment éviter de nuire, être transparent, obtenir le consentement éclairé et les autorisations nécessaires, considérer les obligations concurrentes, rendre les résultats accessibles, protéger les données et maintenir des relations respectueuses. Le consentement n’est pas simplement une signature : il implique une information claire, une participation volontaire et un dialogue adapté au contexte. Les risques peuvent concerner la confidentialité, la réputation, les ressources, les relations ou la sécurité des participants.',
+          'Le chercheur doit décrire les limites de ses données, protéger les informations sensibles, éviter les stéréotypes, présenter les personnes de manière non réductrice et réfléchir aux effets possibles de la publication. Pour le patrimoine culturel immatériel, l’UNESCO souligne le rôle central des communautés dans la sauvegarde, le respect de leurs droits, la participation, le consentement libre, préalable, continu et éclairé, et la reconnaissance du caractère vivant et évolutif du patrimoine. Ces principes sont particulièrement importants lorsque la recherche documente des savoirs, pratiques ou expressions dont les communautés souhaitent contrôler l’accès ou l’usage.',
+          'Une recherche rigoureuse peut être utile aux personnes concernées, mais cette utilité ne doit pas être présumée par le chercheur seul. Il faut clarifier les attentes, les intérêts, les résultats possibles, les contraintes et les modalités de restitution. L’éthique est une réflexion continue avant, pendant et après l’enquête : une situation peut évoluer, un consentement peut devoir être renouvelé, et une décision de ne pas publier certains éléments peut être justifiée lorsque les risques dépassent les bénéfices attendus.'
+        ],
+        example: {
+          statement: 'Une étudiante souhaite citer un message public publié dans un groupe en ligne fermé ou semi-privé dans son mémoire. Comment décider si cette citation peut être utilisée ?',
+          calculation: 'Elle clarifie le contexte et les attentes de confidentialité, évalue si la citation peut rendre son auteur identifiable par recherche textuelle, considère les risques et les règles de l’établissement, demande les autorisations appropriées et envisage de paraphraser ou d’omettre le contenu si nécessaire.',
+          answer: 'Elle ne suppose pas que l’accessibilité technique équivaut à un consentement. Elle doit appliquer une évaluation éthique contextualisée, minimiser les risques et suivre les exigences de son encadrement et de son institution.'
+        },
+        exercise: {
+          question: 'Pourquoi le consentement éclairé et la réflexion éthique doivent-ils se poursuivre pendant toute l’enquête ?',
+          answer: 'Parce que les conditions, les risques, les attentes et les relations peuvent évoluer. Les participants doivent comprendre la recherche et pouvoir exprimer leurs choix, tandis que le chercheur doit réévaluer les effets de ses méthodes et de ses publications.'
+        },
+        exercises: [
+          { question: 'La mondialisation entraîne-t-elle nécessairement la disparition des différences culturelles ?', answer: 'Non. Elle peut favoriser certaines convergences, mais aussi des réappropriations, des hybridations, des différenciations et des résistances selon les contextes.' },
+          { question: 'Cite trois principes éthiques importants en anthropologie.', answer: 'Par exemple : éviter de nuire, obtenir un consentement éclairé, être transparent sur les objectifs et méthodes, protéger les données et respecter les personnes et communautés concernées.' },
+          { question: 'Pourquoi le patrimoine culturel immatériel est-il considéré comme vivant ?', answer: 'Parce qu’il est transmis et recréé par les communautés en fonction de leur histoire, de leur environnement et de leurs interactions; il peut donc évoluer plutôt que rester identique.' }
+        ],
+        sources: [
+          { title: 'American Anthropological Association — Anthropological Ethics', url: 'https://americananthro.org/about/anthropological-ethics/' },
+          { title: 'American Anthropological Association — Code of Ethics (2012 PDF)', url: 'https://americananthro.org/wp-content/uploads/aaa-code-of-ethics-2012.pdf' },
+          { title: 'UNESCO — Convention for the Safeguarding of the Intangible Cultural Heritage', url: 'https://ich.unesco.org/en/convention' },
+          { title: 'UNESCO — Ethical Principles for Safeguarding Intangible Cultural Heritage', url: 'https://ich.unesco.org/en/ethics-and-ich-00866' },
+          { title: 'European Commission — Research Ethics in Ethnography and Anthropology', url: 'https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/guidance/research-ethics-in-ethnography-anthropology_he_en.pdf' }
+        ]
+      }
+    }
+  ]
+},
+
+
+
 ]
