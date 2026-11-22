@@ -4076,7 +4076,463 @@ window.courseCatalog = [
       }
     }
   ]
-}
+},
+
+{
+  id: 'math-fonctions-exponentielles',
+  title: 'Fonctions exponentielles',
+  note: 'Six chapitres approfondis sur la définition, les propriétés, les graphes, la croissance et la décroissance, la résolution d’équations, la modélisation, les intérêts composés et la constante e. Les modèles exponentiels sont des approximations adaptées à des hypothèses et à des intervalles précis.',
+  chapters: [
+    {
+      id: 'definition-fonction-exponentielle',
+      title: 'Définition, notation et calcul d’une fonction exponentielle',
+      field: 'Mathématiques · Fonctions · Bases et propriétés',
+      summary: 'Reconnaître une fonction exponentielle, comprendre sa base et son exposant variable, puis calculer des images et utiliser les règles des puissances.',
+      lesson: {
+        sections: [
+          'Une fonction exponentielle est une fonction dans laquelle la variable apparaît dans l’exposant. La forme de base est f(x) = b^x, avec b > 0 et b ≠ 1. La base b est fixe ; c’est l’exposant x qui varie. Cette condition sur la base permet de définir b^x comme un nombre réel positif pour tout réel x.',
+          'La forme f(x) = a·b^x est souvent utilisée pour les modèles : a est une valeur initiale non nulle et b est le facteur multiplicatif par unité d’entrée. Lorsque x = 0, f(0) = a, puisque b^0 = 1. Le facteur b ne doit pas être confondu avec un taux exprimé en pourcentage : pour une hausse de r par période, le facteur est 1 + r, avec r écrit en valeur décimale.',
+          'Les règles des puissances permettent de calculer avec des exposants entiers : b^m·b^n = b^(m+n), b^m/b^n = b^(m−n) lorsque les expressions sont définies, et (b^m)^n = b^(mn). Un exposant négatif correspond à l’inverse : b^(−n) = 1/b^n. Ces règles aident à simplifier et à comparer des expressions exponentielles.'
+        ],
+        formula: {
+          label: 'FORME EXPONENTIELLE ET RÈGLES DES PUISSANCES',
+          text: 'f(x) = a·b^x, avec a ≠ 0, b > 0 et b ≠ 1  |  b^m·b^n = b^(m+n)  |  b^(−n) = 1/b^n'
+        },
+        example: {
+          statement: 'Soit f(x) = 3·2^x. Calculer f(−2) et f(3).',
+          calculation: 'f(−2) = 3·2^(−2) = 3·(1/4) = 0,75 ; f(3) = 3·2^3 = 3·8.',
+          answer: 'f(−2) = 0,75 et f(3) = 24.'
+        },
+        exercise: {
+          question: 'Pour g(x) = 5·4^x, calculer g(0) et g(2).',
+          answer: 'g(0) = 5·4^0 = 5 ; g(2) = 5·16 = 80.'
+        },
+        exercises: [
+          {
+            question: 'Dans 7·1,5^x, quelle quantité est la base ?',
+            answer: 'La base est 1,5.'
+          },
+          {
+            question: 'Calculer 2^(−3).',
+            answer: '2^(−3) = 1/2^3 = 1/8.'
+          },
+          {
+            question: 'Pourquoi 1^x n’est-il pas une fonction exponentielle au sens usuel ?',
+            answer: 'Parce que la base 1 est exclue : 1^x vaut toujours 1, donc la fonction est constante.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Forme générale',
+            formula: 'f(x) = a·b^x',
+            explanation: 'Cette écriture décrit une fonction exponentielle transformée par un facteur a. Pour une fonction parent b^x, a = 1 ; le facteur a règle l’échelle verticale et f(0) = a.',
+            parameters: 'f(x) : valeur de la fonction ; x : variable réelle ; a : valeur initiale non nulle ; b : base positive, différente de 1.',
+            example: 'Pour f(x) = 4·1,5^x, f(0) = 4·1,5^0 = 4.',
+            result: 'La valeur initiale est 4.'
+          },
+          {
+            title: 'Exposant négatif',
+            formula: 'b^(−x) = 1/b^x',
+            explanation: 'L’exposant négatif indique l’inverse de la puissance correspondante, et non une valeur négative.',
+            parameters: 'b : base non nulle ; x : exposant pour lequel les puissances sont définies.',
+            example: '5^(−2) = 1/25.',
+            result: '5^(−2) = 0,04.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Precalculus 2e, 4.1 Exponential Functions',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-1-exponential-functions'
+          },
+          {
+            title: 'OpenStax — College Algebra 2e, 6.1 Exponential Functions',
+            url: 'https://openstax.org/books/college-algebra-2e/pages/6-1-exponential-functions'
+          },
+          {
+            title: 'Khan Academy — Introduction to exponential functions',
+            url: 'https://www.khanacademy.org/v/exponential-growth'
+          }
+        ]
+      }
+    },
+    {
+      id: 'croissance-decroissance-graphes',
+      title: 'Croissance, décroissance et propriétés graphiques',
+      field: 'Mathématiques · Fonctions · Étude graphique',
+      summary: 'Déterminer le sens de variation, le domaine, l’image, l’intersection avec l’axe vertical et l’asymptote horizontale des exponentielles.',
+      lesson: {
+        sections: [
+          'Pour la fonction parent f(x) = b^x, la base détermine le sens de variation. Si b > 1, la fonction est strictement croissante ; si 0 < b < 1, elle est strictement décroissante. Dans les deux cas, les valeurs restent positives, f(0) = 1, et la courbe ne coupe pas l’axe des abscisses.',
+          'Le domaine de b^x est l’ensemble des réels et son image est l’ensemble des réels strictement positifs. La droite y = 0 est une asymptote horizontale : la fonction s’en approche quand x tend vers −∞ pour b > 1, ou quand x tend vers +∞ pour 0 < b < 1, sans l’atteindre.',
+          'Dans f(x) = a·b^x, si a > 0, la courbe reste au-dessus de l’axe horizontal ; si a < 0, elle est sous cet axe. Une forme transformée f(x) = a·b^(x−h) + k déplace la courbe horizontalement et verticalement : l’asymptote devient y = k et le point de référence est f(h) = a + k. Les transformations doivent être lues dans l’expression, en tenant compte du signe dans x−h.'
+        ],
+        formula: {
+          label: 'PROPRIÉTÉS DE LA FONCTION PARENT',
+          text: 'f(x) = b^x  |  Domaine : ℝ  |  Image : ]0 ; +∞[  |  f(0) = 1  |  Asymptote : y = 0'
+        },
+        example: {
+          statement: 'Étudier le sens de variation et l’asymptote de f(x) = (1/3)^x.',
+          calculation: 'La base vérifie 0 < 1/3 < 1. De plus, f(0) = 1 et (1/3)^x > 0 pour tout x réel.',
+          answer: 'La fonction est strictement décroissante, son domaine est ℝ, son image est ]0 ; +∞[ et son asymptote horizontale est y = 0.'
+        },
+        exercise: {
+          question: 'Pour h(x) = 2^x + 4, donner l’asymptote horizontale et h(0).',
+          answer: 'L’asymptote est y = 4 et h(0) = 1 + 4 = 5.'
+        },
+        exercises: [
+          {
+            question: 'La fonction 0,8^x est-elle croissante ou décroissante ?',
+            answer: 'Strictement décroissante, car sa base est comprise entre 0 et 1.'
+          },
+          {
+            question: 'Quel est le domaine de 6^x ?',
+            answer: 'Tous les réels.'
+          },
+          {
+            question: 'Quelle est l’image de 4·2^x si a = 4 ?',
+            answer: 'L’image est ]0 ; +∞[ car le facteur initial est positif et 2^x est toujours positif.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Sens de variation',
+            formula: 'b > 1 : b^x croît ; 0 < b < 1 : b^x décroît',
+            explanation: 'Le facteur multiplicatif constant entre deux valeurs espacées d’une unité est b. Un facteur supérieur à 1 augmente les valeurs ; un facteur entre 0 et 1 les réduit.',
+            parameters: 'b : base réelle positive et différente de 1.',
+            example: '3^x augmente quand x augmente ; (1/2)^x diminue quand x augmente.',
+            result: 'Le sens de variation se déduit de la base.'
+          },
+          {
+            title: 'Translation verticale',
+            formula: 'f(x) = a·b^x + k ; asymptote y = k',
+            explanation: 'Ajouter k à chaque valeur déplace le graphe verticalement de k unités et déplace son asymptote horizontale.',
+            parameters: 'a : amplitude verticale non nulle ; b : base ; k : translation verticale.',
+            example: 'f(x) = 2^x + 3 possède l’asymptote y = 3.',
+            result: 'L’asymptote est y = 3.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Precalculus 2e, 4.2 Graphs of Exponential Functions',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-2-graphs-of-exponential-functions'
+          },
+          {
+            title: 'OpenStax — Precalculus 2e, 4.1 Exponential Functions',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-1-exponential-functions'
+          },
+          {
+            title: 'Khan Academy — Graphs of exponential growth and decay',
+            url: 'https://www.khanacademy.org/math/algebra-home/alg-exp-and-log'
+          }
+        ]
+      }
+    },
+    {
+      id: 'taux-modeles-exponentiels',
+      title: 'Taux de variation et construction de modèles exponentiels',
+      field: 'Mathématiques · Modélisation · Données',
+      summary: 'Relier un pourcentage par période au facteur multiplicatif et construire un modèle à partir d’une valeur initiale ou de deux données.',
+      lesson: {
+        sections: [
+          'Un modèle exponentiel décrit une évolution dans laquelle la quantité est multipliée par le même facteur à chaque intervalle de durée égale. Il se distingue d’un modèle linéaire, où l’on ajoute la même quantité à chaque intervalle. Les pourcentages successifs s’appliquent à la valeur déjà obtenue, ce qui produit une variation multiplicative.',
+          'Si une quantité augmente de r par période, son facteur de croissance est b = 1 + r. Si elle diminue de p par période, son facteur de décroissance est b = 1 − p. Les taux doivent être écrits sous forme décimale : 6 % correspond à 0,06. Pour un modèle A(t) = A₀·b^t, A₀ représente la quantité au temps initial et t le nombre de périodes.',
+          'Quand on connaît deux points (t₁, A₁) et (t₂, A₂) d’un modèle exponentiel, le rapport des quantités permet de déterminer le facteur par période : b = (A₂/A₁)^(1/(t₂−t₁)), si les quantités sont positives et si le modèle est cohérent avec les données. Le modèle reste une représentation : les extrapolations très éloignées des données doivent être interprétées avec prudence.'
+        ],
+        formula: {
+          label: 'MODÈLE À FACTEUR CONSTANT',
+          text: 'A(t) = A₀·b^t  |  croissance : b = 1 + r  |  décroissance : b = 1 − p'
+        },
+        example: {
+          statement: 'Une quantité de 250 augmente de 8 % par période. Écrire le modèle et calculer la valeur après 3 périodes.',
+          calculation: 'b = 1 + 0,08 = 1,08 ; A(3) = 250·1,08^3 = 250·1,259712.',
+          answer: 'A(3) = 314,928, soit environ 314,93 unités.'
+        },
+        exercise: {
+          question: 'Une valeur initiale de 900 diminue de 12 % par période. Quel facteur de décroissance utiliser ?',
+          answer: 'b = 1 − 0,12 = 0,88.'
+        },
+        exercises: [
+          {
+            question: 'Un montant augmente de 3 % par période. Quel est son facteur multiplicatif ?',
+            answer: '1,03.'
+          },
+          {
+            question: 'Un montant diminue de 25 % par période. Quel facteur multiplicatif représente cette baisse ?',
+            answer: '0,75.'
+          },
+          {
+            question: 'Une quantité passe de 40 à 60 en 2 périodes selon un modèle exponentiel. Quel facteur par période correspond à ces deux valeurs ?',
+            answer: 'b = (60/40)^(1/2) = √1,5 ≈ 1,225.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Croissance en pourcentage',
+            formula: 'A(t) = A₀·(1 + r)^t',
+            explanation: 'À chaque période, la quantité est multipliée par 1 + r. Le taux r est exprimé sous forme décimale et supposé constant.',
+            parameters: 'A₀ : valeur initiale ; r : taux par période ; t : nombre de périodes.',
+            example: 'A₀ = 250, r = 0,08, t = 3 : A(3) = 250·1,08^3.',
+            result: 'A(3) ≈ 314,93.'
+          },
+          {
+            title: 'Décroissance en pourcentage',
+            formula: 'A(t) = A₀·(1 − p)^t',
+            explanation: 'Une baisse de p par période laisse la fraction 1 − p de la quantité précédente. La fraction restante est appliquée à nouveau à chaque période.',
+            parameters: 'A₀ : valeur initiale ; p : taux de diminution décimal, avec 0 < p < 1 ; t : périodes.',
+            example: 'A₀ = 900 et p = 0,12 : après une période, A = 900·0,88.',
+            result: 'Après une période, A = 792.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Precalculus 2e, 4.1 Exponential Functions',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-1-exponential-functions'
+          },
+          {
+            title: 'Khan Academy — Exponential models FAQ',
+            url: 'https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:exp-model/x2ec2f6f830c9fb89:interpret-exp/a/exponential-models-faq'
+          },
+          {
+            title: 'Khan Academy — Exponential growth and decay FAQ',
+            url: 'https://www.khanacademy.org/test-prep/get-ready-for-sat-prep-math/x9eb58585c728c6ea:get-ready-problem-solving-and-data-analysis/x9eb58585c728c6ea:linear-and-exponential-growth/a/exponential-growth-decay-faq'
+          }
+        ]
+      }
+    },
+    {
+      id: 'equations-exponentielles',
+      title: 'Équations exponentielles et introduction aux logarithmes',
+      field: 'Mathématiques · Équations · Méthodes de résolution',
+      summary: 'Résoudre les équations exponentielles par égalité des bases ou par logarithme, et comprendre le logarithme comme opération inverse.',
+      lesson: {
+        sections: [
+          'Une équation exponentielle est une équation où l’inconnue apparaît dans un exposant. Lorsque les deux membres peuvent être exprimés avec la même base positive différente de 1, l’injectivité de la fonction x ↦ b^x permet d’égaliser les exposants. Cette méthode évite d’utiliser des logarithmes lorsque les bases communes sont évidentes.',
+          'Si les bases ne peuvent pas être rendues identiques facilement, les logarithmes permettent d’isoler l’exposant. Le logarithme en base b de N, noté log_b(N), est l’exposant auquel il faut élever b pour obtenir N. Il est défini pour N > 0, b > 0 et b ≠ 1. Les logarithmes naturels ln et décimaux log sont des cas particuliers de cette définition.',
+          'Les logarithmes sont l’inverse des fonctions exponentielles correspondantes : log_b(b^x) = x et b^(log_b N) = N pour N positif. En prenant le logarithme des deux membres d’une équation, on peut ensuite utiliser les propriétés des logarithmes pour résoudre. Une solution calculée doit être vérifiée dans l’équation initiale et respecter le domaine des expressions.'
+        ],
+        formula: {
+          label: 'ÉQUIVALENCE EXPONENTIELLE–LOGARITHMIQUE',
+          text: 'b^x = N ⇔ x = log_b(N), avec b > 0, b ≠ 1 et N > 0'
+        },
+        example: {
+          statement: 'Résoudre 2^x = 16.',
+          calculation: '16 = 2^4 ; les bases étant égales et différentes de 1, on obtient x = 4.',
+          answer: 'La solution est x = 4.'
+        },
+        exercise: {
+          question: 'Résoudre 5^x = 125.',
+          answer: '125 = 5^3, donc x = 3.'
+        },
+        exercises: [
+          {
+            question: 'Résoudre 3^(x+1) = 27.',
+            answer: '27 = 3^3, donc x + 1 = 3 et x = 2.'
+          },
+          {
+            question: 'Que signifie log₂(8) ?',
+            answer: 'C’est l’exposant auquel il faut élever 2 pour obtenir 8 ; log₂(8) = 3.'
+          },
+          {
+            question: 'Pourquoi l’argument d’un logarithme doit-il être positif dans les réels ?',
+            answer: 'Parce que la valeur d’une exponentielle de base positive est strictement positive : elle ne peut produire ni zéro ni un nombre négatif.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Résolution par égalité des bases',
+            formula: 'b^S = b^T ⇔ S = T, pour b > 0 et b ≠ 1',
+            explanation: 'La fonction exponentielle de base b est injective. Deux puissances de même base prennent la même valeur seulement lorsque leurs exposants sont égaux.',
+            parameters: 'b : base commune ; S et T : expressions des exposants.',
+            example: '4^(x−1) = 4^3 donne x − 1 = 3.',
+            result: 'x = 4.'
+          },
+          {
+            title: 'Résolution avec logarithme',
+            formula: 'b^x = N ⇔ x = log_b(N)',
+            explanation: 'Le logarithme fournit l’exposant inconnu. Pour une résolution numérique, on peut utiliser ln : x = ln(N)/ln(b), avec N positif et b positif différent de 1.',
+            parameters: 'N : nombre positif ; b : base positive différente de 1 ; x : exposant recherché.',
+            example: '3^x = 20 : x = ln(20)/ln(3).',
+            result: 'x ≈ 2,727.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Precalculus 2e, 4.3 Logarithmic Functions',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-3-logarithmic-functions'
+          },
+          {
+            title: 'OpenStax — Precalculus 2e, 4.5 Logarithmic Properties',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-5-logarithmic-properties'
+          },
+          {
+            title: 'Khan Academy — Exponential and logarithmic functions',
+            url: 'https://www.khanacademy.org/math/algebra-home/alg-exp-and-log'
+          }
+        ]
+      }
+    },
+    {
+      id: 'interets-composes-constante-e',
+      title: 'Intérêts composés et croissance continue',
+      field: 'Mathématiques · Finance · Modèles continus',
+      summary: 'Comparer une capitalisation périodique à une capitalisation continue et interpréter la constante e.',
+      lesson: {
+        sections: [
+          'Les intérêts composés sont calculés en ajoutant les intérêts accumulés au capital, puis en calculant les intérêts suivants sur le nouveau montant. Pour une capitalisation n fois par année, le facteur de croissance à chaque période est 1 + r/n, où r est le taux annuel nominal écrit en décimal. Après t années, le nombre de périodes est nt.',
+          'Lorsque la fréquence de capitalisation augmente, la formule de capitalisation périodique se rapproche d’un modèle de capitalisation continue. La constante e, environ 2,718281828, apparaît dans cette limite et dans de nombreux modèles exponentiels continus. La formule continue A(t) = P·e^(rt) suppose un taux continu r constant.',
+          'Le taux, la durée et la fréquence doivent utiliser des unités cohérentes. Pour un taux annuel et une durée exprimée en années, t est en années ; n indique les périodes de capitalisation annuelles. Le résultat mathématique d’un modèle financier n’inclut pas automatiquement les frais, taxes, conditions contractuelles ou changements réels de taux.'
+        ],
+        formula: {
+          label: 'CAPITALISATION PÉRIODIQUE ET CONTINUE',
+          text: 'A(t) = P·(1 + r/n)^(nt)  |  Capitalisation continue : A(t) = P·e^(rt)'
+        },
+        example: {
+          statement: 'Un capital de 1 000 € est placé à 4 % par an, capitalisé annuellement, pendant 3 ans. Calculer le montant final.',
+          calculation: 'A = 1 000·(1 + 0,04)^3 = 1 000·1,124864.',
+          answer: 'A ≈ 1 124,86 €.'
+        },
+        exercise: {
+          question: 'Avec P = 2 000 €, r = 0,03, n = 12 et t = 2 ans, écrire la formule de capitalisation mensuelle.',
+          answer: 'A(2) = 2 000·(1 + 0,03/12)^(12·2).'
+        },
+        exercises: [
+          {
+            question: 'Que représente n dans la formule des intérêts composés ?',
+            answer: 'Le nombre de périodes de capitalisation par année.'
+          },
+          {
+            question: 'Quelle est l’approximation de la constante e à 6 décimales ?',
+            answer: 'e ≈ 2,718282.'
+          },
+          {
+            question: 'Écrire le modèle continu avec un capital initial P et un taux continu r.',
+            answer: 'A(t) = P·e^(rt).'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Intérêts composés périodiques',
+            formula: 'A(t) = P·(1 + r/n)^(nt)',
+            explanation: 'Chaque période ajoute au capital les intérêts de la période précédente. La formule suppose un taux nominal annuel r constant, une fréquence n fixe et une durée t en années.',
+            parameters: 'A(t) : montant après t années ; P : capital initial ; r : taux annuel en décimal ; n : périodes par année ; t : années.',
+            example: 'P = 1 000 €, r = 0,04, n = 1, t = 3 : A = 1 000·1,04^3.',
+            result: 'A ≈ 1 124,86 €.'
+          },
+          {
+            title: 'Capitalisation continue',
+            formula: 'A(t) = P·e^(rt)',
+            explanation: 'Le modèle continu est la limite de la capitalisation périodique quand la fréquence augmente sans borne, pour le taux et la durée fixés.',
+            parameters: 'P : capital initial ; e : constante mathématique ; r : taux continu ; t : durée en années si r est annuel.',
+            example: 'P = 1 000 €, r = 0,04 et t = 3 : A = 1 000·e^(0,12).',
+            result: 'A ≈ 1 127,50 €.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Precalculus 2e, 4.1 Exponential Functions (compound interest)',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-1-exponential-functions'
+          },
+          {
+            title: 'OpenStax — Precalculus 2e, 4 Key Equations',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-key-equations'
+          },
+          {
+            title: 'OpenStax — Calculus Volume 1, 1.5 Exponential and Logarithmic Functions',
+            url: 'https://openstax.org/books/calculus-volume-1/pages/1-5-exponential-and-logarithmic-functions'
+          },
+          {
+            title: 'Khan Academy — Compound interest and e',
+            url: 'https://www.khanacademy.org/math/algebra-home/alg-exp-and-log'
+          }
+        ]
+      }
+    },
+    {
+      id: 'applications-modeles-exponentiels',
+      title: 'Applications : évolution, décroissance, temps caractéristiques et limites',
+      field: 'Mathématiques · Sciences · Applications',
+      summary: 'Interpréter les modèles exponentiels dans des contextes de population, décroissance, demi-vie et refroidissement, sans confondre modèle et observation.',
+      lesson: {
+        sections: [
+          'Les fonctions exponentielles servent à représenter des phénomènes où le taux de variation instantané est proportionnel à la quantité présente. Selon le signe du paramètre, le modèle décrit une croissance ou une décroissance. Des exemples courants incluent certains modèles de population, les intérêts composés, la décroissance radioactive et des modèles de refroidissement dans des conditions spécifiées.',
+          'Dans un modèle continu A(t) = A₀·e^(kt), k positif correspond à une croissance et k négatif à une décroissance. Une demi-vie est la durée nécessaire pour que la quantité modélisée atteigne la moitié de sa valeur initiale dans un modèle de décroissance exponentielle. Le temps de doublement est la durée nécessaire pour atteindre le double de la valeur initiale dans un modèle de croissance exponentielle. Ces durées sont constantes dans les modèles continus à coefficient k constant.',
+          'La loi de refroidissement de Newton, sous une forme simple, décrit l’écart entre la température d’un objet et celle de l’environnement par une décroissance exponentielle, lorsque les conditions et le coefficient de transfert sont considérés constants. Les hypothèses du modèle peuvent être insuffisantes si l’environnement, la géométrie, les échanges ou les propriétés du matériau changent. Une fonction exponentielle ne doit donc pas être appliquée à un phénomène sans vérifier que ses hypothèses conviennent.'
+        ],
+        formula: {
+          label: 'MODÈLE CONTINU ET DURÉES CARACTÉRISTIQUES',
+          text: 'A(t) = A₀·e^(kt)  |  k < 0 : décroissance  |  k > 0 : croissance  |  demi-vie : t½ = ln(2)/|k|'
+        },
+        example: {
+          statement: 'Une quantité suit A(t) = 80·e^(−0,2t). Calculer la quantité après 5 unités de temps et la demi-vie du modèle.',
+          calculation: 'A(5) = 80·e^(−1) ≈ 80/2,71828 ; t½ = ln(2)/0,2 ≈ 3,4657.',
+          answer: 'A(5) ≈ 29,43 unités ; la demi-vie ≈ 3,47 unités de temps.'
+        },
+        exercise: {
+          question: 'Un modèle de croissance continu a k = 0,15. Écrire la formule du temps de doublement.',
+          answer: 't₂ = ln(2)/k = ln(2)/0,15 ≈ 4,62 unités de temps.'
+        },
+        exercises: [
+          {
+            question: 'Pour A(t) = A₀·e^(−0,05t), le modèle est-il en croissance ou en décroissance ?',
+            answer: 'En décroissance, car k < 0.'
+          },
+          {
+            question: 'Que signifie une demi-vie dans un modèle exponentiel ?',
+            answer: 'La durée pour laquelle la quantité atteint la moitié de sa valeur initiale.'
+          },
+          {
+            question: 'Pourquoi les projections à long terme d’un modèle exponentiel doivent-elles être prudentes ?',
+            answer: 'Parce que les conditions réelles peuvent changer et les hypothèses de taux constant ne pas rester valides.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Modèle de croissance ou décroissance continue',
+            formula: 'A(t) = A₀·e^(kt)',
+            explanation: 'Le modèle suppose que le taux de variation instantané est proportionnel à la quantité présente et que le coefficient k reste constant au cours de la période étudiée.',
+            parameters: 'A(t) : quantité à l’instant t ; A₀ : quantité initiale ; k : taux continu par unité de temps ; t : temps.',
+            example: 'A₀ = 80, k = −0,2, t = 5 : A(5) = 80·e^(−1).',
+            result: 'A(5) ≈ 29,43.'
+          },
+          {
+            title: 'Demi-vie',
+            formula: 't½ = ln(2)/|k|, pour k < 0',
+            explanation: 'On pose A(t½) = A₀/2 dans le modèle continu de décroissance et on isole t½. Le résultat ne dépend pas de A₀ lorsque k est constant.',
+            parameters: 't½ : demi-vie ; k : taux exponentiel négatif.',
+            example: 'k = −0,2 : t½ = ln(2)/0,2.',
+            result: 't½ ≈ 3,47 unités de temps.'
+          },
+          {
+            title: 'Temps de doublement',
+            formula: 't₂ = ln(2)/k, pour k > 0',
+            explanation: 'On pose A(t₂) = 2A₀ dans le modèle continu de croissance et on isole le temps.',
+            parameters: 't₂ : temps de doublement ; k : taux exponentiel positif.',
+            example: 'k = 0,15 : t₂ = ln(2)/0,15.',
+            result: 't₂ ≈ 4,62 unités de temps.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Precalculus 2e, 4.7 Exponential and Logarithmic Models',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-7-exponential-and-logarithmic-models'
+          },
+          {
+            title: 'OpenStax — Precalculus 2e, 4 Key Equations (half-life, doubling time, cooling)',
+            url: 'https://openstax.org/books/precalculus-2e/pages/4-key-equations'
+          },
+          {
+            title: 'OpenStax — Calculus Volume 1, 1.5 Exponential and Logarithmic Functions',
+            url: 'https://openstax.org/books/calculus-volume-1/pages/1-5-exponential-and-logarithmic-functions'
+          },
+          {
+            title: 'Khan Academy — Exponential models and growth/decay',
+            url: 'https://www.khanacademy.org/math/algebra-home/alg-exp-and-log'
+          }
+        ]
+      }
+    }
+  ]
+},
 
 ]
 
