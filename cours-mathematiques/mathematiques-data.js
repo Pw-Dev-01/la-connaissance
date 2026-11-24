@@ -5333,6 +5333,358 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'math-algebre-lineaire',
+  title: 'Algèbre linéaire',
+  note: 'Six chapitres pour étudier les systèmes linéaires, les matrices, les espaces vectoriels, les applications linéaires, les déterminants et les valeurs propres. Le parcours privilégie les liens entre calcul, géométrie et structure algébrique. Les exemples sont calculés dans les corps des réels, sauf indication contraire.',
+  chapters: [
+    {
+      id: 'systemes-lineaires-elimination',
+      title: 'Systèmes linéaires et méthode de Gauss',
+      field: 'Algèbre linéaire · Équations linéaires et réduction par lignes',
+      summary: 'Modéliser un système par une matrice augmentée, appliquer les opérations élémentaires sur les lignes et déterminer si le système possède une solution unique, aucune solution ou une infinité de solutions.',
+      lesson: {
+        sections: [
+          'Un système linéaire est un ensemble d’équations dans lesquelles les inconnues apparaissent au premier degré. Pour m équations et n inconnues, on peut regrouper les coefficients dans une matrice A, les inconnues dans un vecteur x et les seconds membres dans un vecteur b. Le système s’écrit alors A x = b. Cette écriture sépare les coefficients, les inconnues et les données, et permet d’étudier des systèmes de grande taille sans réécrire toutes les équations.',
+
+          'La matrice augmentée [A | b] rassemble la matrice des coefficients et la colonne des seconds membres. Les opérations élémentaires autorisées sont l’échange de deux lignes, la multiplication d’une ligne par un scalaire non nul et l’ajout à une ligne d’un multiple d’une autre ligne. Chacune conserve exactement l’ensemble des solutions du système. Elles servent à obtenir une forme échelonnée, puis éventuellement une forme échelonnée réduite.',
+
+          'L’élimination de Gauss consiste à choisir des pivots successifs et à annuler les coefficients situés sous chaque pivot. Une fois la forme échelonnée obtenue, la remontée permet de déterminer les inconnues. Dans la forme échelonnée réduite, chaque pivot vaut 1 et constitue l’unique entrée non nulle de sa colonne. Une colonne sans pivot correspond à une variable libre, qui peut être choisie comme paramètre.',
+
+          'La dernière colonne permet de détecter l’incompatibilité : une ligne de la forme [0 ... 0 | c], avec c non nul, représente l’équation impossible 0 = c. Si aucune ligne de ce type n’apparaît, le système est compatible. Il possède une solution unique si chaque inconnue est une variable pivot, et une infinité de solutions s’il reste au moins une variable libre. Cette classification vaut aussi pour les systèmes rectangulaires.',
+
+          'La factorisation A = L U formalise l’élimination lorsque les pivots nécessaires existent sans permutation, ou après prise en compte d’une matrice de permutation. L est triangulaire inférieure et U triangulaire supérieure. Cette décomposition est utile lorsqu’on doit résoudre plusieurs systèmes ayant la même matrice A mais des seconds membres différents : la factorisation peut être réutilisée au lieu de recommencer toute l’élimination.'
+        ],
+        example: {
+          statement: 'Résoudre le système x + y = 5 et 2x - y = 1 par élimination.',
+          calculation: 'La matrice augmentée est [[1, 1 | 5], [2, -1 | 1]]. On effectue L2 <- L2 - 2L1, ce qui donne [[1, 1 | 5], [0, -3 | -9]]. La deuxième ligne donne y = 3. En remplaçant dans x + y = 5, on obtient x = 2.',
+          answer: 'La solution unique est (x, y) = (2, 3). La vérification donne 2 + 3 = 5 et 2 × 2 - 3 = 1.'
+        },
+        exercise: {
+          question: 'Pourquoi une opération élémentaire sur les lignes de la matrice augmentée ne change-t-elle pas l’ensemble des solutions ?',
+          answer: 'Parce que chacune de ces opérations remplace les équations par des équations équivalentes : échange, multiplication par un scalaire non nul ou combinaison avec une autre équation. Le système obtenu possède donc exactement les mêmes solutions.'
+        },
+        exercises: [
+          {
+            question: 'Que signifie une ligne [0, 0, 0 | 4] dans une matrice augmentée ?',
+            answer: 'Elle représente 0 = 4. Le système est incompatible et ne possède aucune solution.'
+          },
+          {
+            question: 'Dans un système compatible à 4 inconnues, que permet de conclure la présence de 3 colonnes pivots ?',
+            answer: 'Il reste 1 variable libre. Le système possède donc une infinité de solutions.'
+          },
+          {
+            question: 'Quelle est la différence entre une forme échelonnée et une forme échelonnée réduite ?',
+            answer: 'Dans une forme échelonnée, les pivots se décalent vers la droite en descendant et les entrées sous les pivots sont nulles. Dans la forme réduite, chaque pivot vaut 1 et est seul élément non nul de sa colonne.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Solving Systems with Gaussian Elimination',
+            url: 'https://openstax.org/books/algebra-and-trigonometry-2e/pages/11-6-solving-systems-with-gaussian-elimination'
+          },
+          {
+            title: 'OpenStax — Solve Systems of Equations Using Matrices',
+            url: 'https://openstax.org/books/intermediate-algebra-2e/pages/4-5-solve-systems-of-equations-using-matrices'
+          },
+          {
+            title: 'MIT OpenCourseWare — Linear Algebra, 18.06',
+            url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/'
+          },
+          {
+            title: 'MIT — 18.06 Linear Algebra, notes and archived exercises',
+            url: 'https://www.mit.edu/~18.06/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'matrices-operations-inverse',
+      title: 'Matrices, opérations et inversibilité',
+      field: 'Algèbre linéaire · Calcul matriciel et matrices carrées',
+      summary: 'Comprendre les dimensions, les opérations matricielles, le produit, la transposition, l’identité et l’inverse, puis relier l’inversibilité à la résolution des systèmes.',
+      lesson: {
+        sections: [
+          'Une matrice de taille m × n est un tableau de m lignes et n colonnes. Son coefficient situé à la ligne i et à la colonne j se note généralement a(i,j). Une matrice représente notamment une famille de coefficients d’un système linéaire ou les coordonnées d’une transformation linéaire dans des bases fixées. Il faut toujours vérifier les dimensions avant d’effectuer une opération.',
+
+          'L’addition et la soustraction sont définies pour deux matrices de même taille et se font coefficient par coefficient. La multiplication par un scalaire multiplie chaque coefficient par ce scalaire. Le produit A B est défini lorsque le nombre de colonnes de A est égal au nombre de lignes de B. Si A est de taille m × n et B de taille n × p, alors A B est de taille m × p. Le coefficient (i,j) du produit est la somme des produits des coefficients de la ligne i de A par ceux de la colonne j de B.',
+
+          'Le produit matriciel n’est généralement pas commutatif : A B peut être différent de B A, et l’un des deux produits peut même ne pas être défini. En revanche, il est associatif et distributif par rapport à l’addition. La matrice identité I joue le rôle du 1 : lorsque les dimensions conviennent, A I = A et I A = A. La transposée Aᵀ s’obtient en échangeant lignes et colonnes ; elle vérifie (A B)ᵀ = Bᵀ Aᵀ.',
+
+          'Pour une matrice carrée A, une inverse A⁻¹ est une matrice qui vérifie A A⁻¹ = A⁻¹ A = I. Une matrice carrée est inversible si et seulement si son déterminant est non nul, si ses colonnes sont linéairement indépendantes, si son rang est maximal ou si le système A x = b possède une solution unique pour tout vecteur b. Ces propriétés sont des formulations équivalentes de l’inversibilité.',
+
+          'L’inverse, lorsqu’elle existe, est unique. Pour une matrice 2 × 2 [[a,b],[c,d]], la formule est A⁻¹ = 1/(ad - bc) × [[d,-b],[-c,a]], à condition que ad - bc soit non nul. En dimension supérieure, on peut calculer l’inverse par réduction de la matrice augmentée [A | I] jusqu’à obtenir [I | A⁻¹]. En calcul numérique, les méthodes de factorisation sont souvent préférées au calcul explicite de l’inverse.'
+        ],
+        example: {
+          statement: 'Calculer l’inverse de A = [[2, 1], [1, 1]].',
+          calculation: 'Le déterminant vaut 2 × 1 - 1 × 1 = 1. Il est non nul, donc A est inversible. La formule en dimension 2 donne A⁻¹ = [[1, -1], [-1, 2]]. Le produit A A⁻¹ vaut [[1, 0], [0, 1]], ce qui vérifie le résultat.',
+          answer: 'A⁻¹ = [[1, -1], [-1, 2]].'
+        },
+        exercise: {
+          question: 'Le produit d’une matrice A de taille 2 × 3 par une matrice B de taille 3 × 4 est-il défini, et quelle est sa taille ?',
+          answer: 'Oui. Les dimensions intérieures sont égales à 3 ; le produit A B est donc défini et possède 2 lignes et 4 colonnes, soit une taille 2 × 4.'
+        },
+        exercises: [
+          {
+            question: 'Une matrice carrée dont le déterminant est nul peut-elle être inversible ?',
+            answer: 'Non. Pour une matrice carrée, le déterminant nul équivaut à la non-inversibilité.'
+          },
+          {
+            question: 'Pourquoi A B et B A ne sont-ils pas nécessairement égaux ?',
+            answer: 'Le produit matriciel dépend de l’ordre des facteurs ; il représente la composition de transformations, qui n’est généralement pas commutative.'
+          },
+          {
+            question: 'Quelle est la transposée d’une matrice de taille 2 × 3 ?',
+            answer: 'Une matrice de taille 3 × 2, obtenue en échangeant les lignes et les colonnes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Matrices and Matrix Operations',
+            url: 'https://openstax.org/books/algebra-and-trigonometry-2e/pages/11-5-matrices-and-matrix-operations'
+          },
+          {
+            title: 'MIT OpenCourseWare — Multiplication and Inverse Matrices',
+            url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/'
+          },
+          {
+            title: 'MIT — 18.06 Linear Algebra',
+            url: 'https://www.mit.edu/~18.06/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'espaces-vectoriels-bases-dimension',
+      title: 'Espaces vectoriels, sous-espaces, bases et dimension',
+      field: 'Algèbre linéaire · Structure des espaces vectoriels sur un corps',
+      summary: 'Étudier les espaces vectoriels et leurs sous-espaces, les combinaisons linéaires, la dépendance, les familles génératrices, les bases et la dimension.',
+      lesson: {
+        sections: [
+          'Un espace vectoriel sur un corps, par exemple R, est un ensemble muni d’une addition de vecteurs et d’une multiplication par des scalaires qui satisfont les règles usuelles : associativité, commutativité de l’addition, existence d’un vecteur nul et d’opposés, distributivité et compatibilité avec le produit des scalaires. Les exemples fondamentaux sont Rⁿ, les espaces de polynômes et les espaces de matrices de taille fixée.',
+
+          'Un sous-ensemble W d’un espace vectoriel V est un sous-espace vectoriel s’il contient le vecteur nul et reste stable par combinaisons linéaires : pour u et v dans W et pour des scalaires α et β, αu + βv appartient encore à W. Cette caractérisation rassemble la stabilité par addition et par multiplication scalaire. Une droite passant par l’origine dans R² est un sous-espace ; une droite qui ne passe pas par l’origine ne l’est pas.',
+
+          'Une combinaison linéaire de vecteurs v1,...,vk est une expression α1v1 + ... + αkvk. L’ensemble de toutes ces combinaisons est leur espace engendré, noté span(v1,...,vk). Une famille est génératrice d’un espace si elle permet d’obtenir tous ses vecteurs. Elle est linéairement indépendante si la seule combinaison linéaire égale au vecteur nul est celle dont tous les coefficients sont nuls. Dans le cas contraire, elle est dépendante.',
+
+          'Une base est une famille à la fois libre et génératrice. Elle fournit une représentation unique de chaque vecteur par ses coordonnées dans cette base. Dans un espace vectoriel de dimension finie, toutes les bases ont le même nombre d’éléments ; ce nombre est la dimension. Dans Rⁿ, la base canonique contient les n vecteurs dont un seul coefficient vaut 1 et dont les autres valent 0.',
+
+          'Pour extraire une base d’une famille de vecteurs, on peut placer ces vecteurs en colonnes d’une matrice et effectuer une réduction de Gauss. Les colonnes pivots de la matrice initiale constituent une base de l’espace engendré par les colonnes. Le nombre de pivots est le rang. Il ne faut pas confondre les colonnes pivots de la matrice initiale avec les colonnes correspondantes de sa forme réduite : les premières donnent une base de l’espace colonne initial.'
+        ],
+        example: {
+          statement: 'Dans R³, étudier la famille u = (1, 0, 1), v = (0, 1, 1) et w = (1, 1, 2).',
+          calculation: 'On remarque que w = u + v. La famille {u, v, w} est donc dépendante. Les vecteurs u et v ne sont pas multiples l’un de l’autre et sont indépendants. Leur espace engendré est l’ensemble des vecteurs (a, b, a + b), c’est-à-dire le plan d’équation z = x + y.',
+          answer: 'Une base de ce plan est {u, v}. Sa dimension est 2. La famille {u, v, w} n’est pas une base puisqu’elle est dépendante.'
+        },
+        exercise: {
+          question: 'Pourquoi une famille qui est à la fois libre et génératrice est-elle une base ?',
+          answer: 'La propriété génératrice garantit que chaque vecteur de l’espace peut être représenté. La liberté garantit que cette représentation est unique. Ces deux propriétés définissent une base.'
+        },
+        exercises: [
+          {
+            question: 'L’ensemble des vecteurs (x, y) de R² vérifiant x + y = 0 est-il un sous-espace ?',
+            answer: 'Oui. Il contient (0,0) et est stable par toute combinaison linéaire. C’est la droite y = -x.'
+          },
+          {
+            question: 'Une famille de 4 vecteurs de R³ peut-elle être libre ?',
+            answer: 'Non. Dans R³, toute famille de plus de 3 vecteurs est dépendante.'
+          },
+          {
+            question: 'Combien de vecteurs contient une base de l’espace des polynômes de degré inférieur ou égal à 2 ?',
+            answer: '3. Une base canonique est {1, X, X²} ; la dimension est donc 3.'
+          }
+        ],
+        sources: [
+          {
+            title: 'MIT OpenCourseWare — Independence, Basis and Dimension',
+            url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/'
+          },
+          {
+            title: 'MIT — 18.06 Linear Algebra, lecture summaries',
+            url: 'https://www.mit.edu/~18.06/'
+          },
+          {
+            title: 'University of Waterloo — Linear Algebra 2 notes',
+            url: 'https://math.uwaterloo.ca/~f2alfais/notes/math235-notes.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'applications-lineaires-noyau-image-rang',
+      title: 'Applications linéaires, noyau, image et rang',
+      field: 'Algèbre linéaire · Transformations linéaires et théorème du rang',
+      summary: 'Définir les applications linéaires, les représenter par des matrices, déterminer leur noyau et leur image, et appliquer le théorème du rang-noyau.',
+      lesson: {
+        sections: [
+          'Une application T de V vers W est linéaire si elle respecte les combinaisons linéaires : T(αu + βv) = αT(u) + βT(v). En particulier, elle vérifie T(0) = 0 et T(u + v) = T(u) + T(v). Une translation non nulle, par exemple, n’est pas une application linéaire car elle n’envoie pas nécessairement le vecteur nul sur le vecteur nul.',
+
+          'Lorsque V et W sont de dimension finie et que des bases sont choisies, une application linéaire est représentée par une matrice. Les colonnes de cette matrice sont les coordonnées des images des vecteurs de la base du domaine. Si [x] désigne le vecteur des coordonnées de x, alors les coordonnées de T(x) s’obtiennent en multipliant la matrice de T par [x]. La matrice dépend des bases choisies, tandis que l’application elle-même n’en dépend pas.',
+
+          'Le noyau de T, noté Ker(T), est l’ensemble des vecteurs envoyés sur le vecteur nul. C’est un sous-espace du domaine. L’image de T, notée Im(T), est l’ensemble des vecteurs atteints dans le codomaine ; c’est un sous-espace du codomaine. Le noyau mesure les directions perdues par la transformation, tandis que l’image décrit les sorties effectivement possibles.',
+
+          'Le rang d’une application linéaire est la dimension de son image. Sa nullité est la dimension de son noyau. Pour une application linéaire définie sur un espace de dimension finie, le théorème du rang-noyau affirme que dimension du domaine = rang + nullité. Pour une matrice A à n colonnes, cela devient n = rang(A) + dimension(Ker(A)). Ce résultat relie le nombre de variables pivots et le nombre de variables libres dans le système homogène A x = 0.',
+
+          'Une application linéaire est injective si et seulement si son noyau est réduit au vecteur nul. Elle est surjective si son image est tout le codomaine. Lorsque le domaine et le codomaine ont la même dimension finie, injectivité, surjectivité et bijectivité sont équivalentes. Pour une matrice carrée, ces propriétés sont également équivalentes à l’inversibilité de la matrice.'
+        ],
+        example: {
+          statement: 'Soit T de R³ vers R² définie par T(x, y, z) = (x + y, y + z). Déterminer son noyau, son rang et sa nullité.',
+          calculation: 'Le noyau est défini par x + y = 0 et y + z = 0. Donc x = -y et z = -y, d’où (x,y,z) = y(-1,1,-1). Le noyau est engendré par un vecteur non nul et sa dimension vaut 1. La matrice de T est [[1,1,0],[0,1,1]] ; ses deux lignes sont indépendantes, donc son rang vaut 2.',
+          answer: 'Ker(T) = span{(-1, 1, -1)}, rang(T) = 2 et nullité(T) = 1. Le théorème du rang-noyau est vérifié : 3 = 2 + 1.'
+        },
+        exercise: {
+          question: 'Que signifie géométriquement qu’une application linéaire de R³ vers R² ait un noyau de dimension 1 ?',
+          answer: 'Une direction vectorielle du domaine est envoyée sur le vecteur nul. Le noyau est une droite vectorielle de R³.'
+        },
+        exercises: [
+          {
+            question: 'Toute application linéaire envoie-t-elle le vecteur nul sur le vecteur nul ?',
+            answer: 'Oui. En prenant α = 0 dans la propriété de linéarité, on obtient T(0) = 0.'
+          },
+          {
+            question: 'Une application linéaire de R⁴ vers R² peut-elle être injective ?',
+            answer: 'Non. Son rang est au plus 2 ; le théorème du rang-noyau impose une nullité au moins égale à 2. Son noyau ne peut donc pas être réduit au vecteur nul.'
+          },
+          {
+            question: 'Si une application de R³ vers R³ a un noyau réduit à {0}, quelle est sa dimension d’image ?',
+            answer: '3, d’après le théorème du rang-noyau. Elle est donc injective et surjective.'
+          }
+        ],
+        sources: [
+          {
+            title: 'MIT OpenCourseWare — Column Space and Nullspace',
+            url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/'
+          },
+          {
+            title: 'MIT OpenCourseWare — The Four Fundamental Subspaces',
+            url: 'https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/'
+          },
+          {
+            title: 'University of Waterloo — Linear Algebra 2 notes',
+            url: 'https://math.uwaterloo.ca/~f2alfais/notes/math235-notes.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'determinants-geometrie-inversibilite',
+      title: 'Déterminants, géométrie et inversibilité',
+      field: 'Algèbre linéaire · Déterminants des matrices carrées',
+      summary: 'Calculer des déterminants, comprendre leurs propriétés, interpréter leur valeur géométriquement et les relier à l’inversibilité et aux systèmes linéaires.',
+      lesson: {
+        sections: [
+          'Le déterminant est un nombre associé à une matrice carrée. Pour une matrice 2 × 2 [[a,b],[c,d]], il vaut ad - bc. Il n’est défini que pour les matrices carrées. En dimension supérieure, on peut le calculer par développement selon une ligne ou une colonne, ou par réduction en tenant compte des effets des opérations élémentaires sur les lignes.',
+
+          'Le déterminant est multiplié par -1 lorsqu’on échange deux lignes, multiplié par le facteur utilisé lorsqu’on multiplie une ligne par un scalaire, et inchangé lorsqu’on ajoute à une ligne un multiple d’une autre ligne. Pour une matrice triangulaire, le déterminant est le produit des coefficients diagonaux. Enfin, det(A B) = det(A) det(B), det(Aᵀ) = det(A), et det(I) = 1.',
+
+          'Le déterminant est nul exactement lorsque les colonnes de la matrice sont linéairement dépendantes, ou de manière équivalente lorsque la matrice carrée n’est pas inversible. Si le déterminant est non nul, le système A x = b admet une solution unique pour chaque b. Si le déterminant est nul, la matrice ne peut pas être inversible ; selon b, le système peut être incompatible ou avoir plusieurs solutions.',
+
+          'Dans R², la valeur absolue du déterminant d’une matrice 2 × 2 donne le facteur d’aire de la transformation linéaire correspondante. Le signe indique si l’orientation est conservée ou inversée. En dimension 3, la valeur absolue donne le facteur de volume. Plus généralement, le déterminant mesure le facteur signé de changement de volume dans l’espace de dimension considérée.',
+
+          'La règle de Cramer exprime les coordonnées de l’unique solution d’un système carré au moyen de déterminants, lorsque det(A) est non nul. Elle est utile pour établir des résultats théoriques et pour les petits systèmes, mais elle n’est généralement pas la méthode la plus efficace numériquement pour les grandes matrices. L’élimination de Gauss et les factorisations sont préférées en calcul scientifique.'
+        ],
+        example: {
+          statement: 'Calculer le déterminant de A = [[2, 1], [3, 2]] et interpréter le résultat.',
+          calculation: 'Pour une matrice 2 × 2, det(A) = ad - bc. Ici, det(A) = 2 × 2 - 1 × 3 = 4 - 3 = 1. Le déterminant est non nul, donc A est inversible.',
+          answer: 'det(A) = 1. La transformation associée conserve l’orientation et les aires, car son facteur d’aire vaut |1| = 1.'
+        },
+        exercise: {
+          question: 'Que peut-on conclure si le déterminant d’une matrice carrée est nul ?',
+          answer: 'La matrice n’est pas inversible, ses colonnes sont linéairement dépendantes et son rang est strictement inférieur à sa taille.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le déterminant de [[4, 2], [2, 1]] ?',
+            answer: '4 × 1 - 2 × 2 = 0. La matrice est singulière et n’est pas inversible.'
+          },
+          {
+            question: 'Quel est le déterminant d’une matrice triangulaire dont la diagonale vaut 2, 3 et -1 ?',
+            answer: 'Le produit des coefficients diagonaux : 2 × 3 × (-1) = -6.'
+          },
+          {
+            question: 'Si det(A) = 5 et det(B) = -2, que vaut det(A B) ?',
+            answer: 'det(A B) = det(A) det(B) = 5 × (-2) = -10.'
+          }
+        ],
+        sources: [
+          {
+            title: 'MIT OpenCourseWare — Properties of Determinants',
+            url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/'
+          },
+          {
+            title: 'MIT OpenCourseWare — Cramer’s Rule, Inverse Matrix and Volume',
+            url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/'
+          },
+          {
+            title: 'OpenStax — Systems of Linear Equations and Cramer’s Rule',
+            url: 'https://openstax.org/books/contemporary-mathematics/pages/5-9-systems-of-linear-equations-in-two-variables'
+          }
+        ]
+      }
+    },
+    {
+      id: 'valeurs-propres-vecteurs-propres-diagonalisation',
+      title: 'Valeurs propres, vecteurs propres et diagonalisation',
+      field: 'Algèbre linéaire · Spectre des matrices et décomposition diagonale',
+      summary: 'Déterminer les valeurs propres et les vecteurs propres, construire une diagonalisation lorsque c’est possible et comprendre ses usages pour les puissances de matrices.',
+      lesson: {
+        sections: [
+          'Pour une matrice carrée A, un vecteur non nul v est un vecteur propre associé à la valeur propre λ si A v = λ v. La transformation conserve alors la direction portée par v et multiplie ce vecteur par λ. Le vecteur nul est exclu de la définition, car il vérifierait cette égalité pour toute valeur de λ et ne permettrait pas de caractériser une direction propre.',
+
+          'La relation A v = λ v équivaut à (A - λI)v = 0. Pour qu’il existe une solution non nulle, la matrice A - λI doit être singulière ; on obtient donc l’équation caractéristique det(A - λI) = 0. Les racines de ce polynôme sont les valeurs propres. Sur les réels, elles peuvent être réelles ou complexes ; une matrice réelle n’a pas nécessairement toutes ses valeurs propres réelles.',
+
+          'Pour chaque valeur propre λ, les vecteurs propres associés, auxquels on ajoute le vecteur nul, forment le sous-espace propre Ker(A - λI). La multiplicité algébrique d’une valeur propre est son nombre d’apparitions comme racine du polynôme caractéristique. Sa multiplicité géométrique est la dimension de son sous-espace propre. La multiplicité géométrique est toujours comprise entre 1 et la multiplicité algébrique, pour une valeur propre considérée.',
+
+          'Une matrice n × n est diagonalisable si elle possède une base de vecteurs propres. En plaçant ces vecteurs propres en colonnes d’une matrice inversible P et les valeurs propres correspondantes sur la diagonale de D, on obtient A = P D P⁻¹. Une condition suffisante est l’existence de n valeurs propres distinctes. Plus généralement, il faut disposer de n vecteurs propres linéairement indépendants ; des valeurs propres répétées n’empêchent donc pas automatiquement la diagonalisation.',
+
+          'La diagonalisation simplifie le calcul des puissances : si A = P D P⁻¹, alors Aⁿ = P Dⁿ P⁻¹, et Dⁿ se calcule en élevant chaque coefficient diagonal à la puissance n. Les matrices symétriques réelles possèdent une propriété particulièrement importante : elles sont diagonalisables dans une base orthonormée. On parle alors de diagonalisation orthogonale, avec A = Q D Qᵀ et QᵀQ = I.'
+        ],
+        example: {
+          statement: 'Diagonaliser A = [[2, 1], [0, 3]] en déterminant ses valeurs propres et des vecteurs propres associés.',
+          calculation: 'La matrice est triangulaire supérieure : ses valeurs propres sont ses coefficients diagonaux, soit 2 et 3. Pour λ = 2, résoudre (A - 2I)v = 0 donne y = 0 ; on peut choisir v1 = (1,0). Pour λ = 3, l’équation donne y = x ; on peut choisir v2 = (1,1). Ces deux vecteurs sont indépendants. En prenant P = [[1,1],[0,1]] et D = [[2,0],[0,3]], on vérifie A = P D P⁻¹.',
+          answer: 'La matrice est diagonalisable sur R. Une diagonalisation est A = P D P⁻¹ avec P = [[1,1],[0,1]] et D = [[2,0],[0,3]].'
+        },
+        exercise: {
+          question: 'Une matrice carrée ayant n valeurs propres distinctes est-elle diagonalisable sur le corps où ces valeurs propres existent ?',
+          answer: 'Oui. Des vecteurs propres associés à des valeurs propres distinctes sont linéairement indépendants ; on obtient donc une base de vecteurs propres.'
+        },
+        exercises: [
+          {
+            question: 'Le vecteur nul peut-il être un vecteur propre ?',
+            answer: 'Non. Un vecteur propre doit être non nul par définition.'
+          },
+          {
+            question: 'Quelles sont les valeurs propres d’une matrice triangulaire dont la diagonale est (1, 4, 4) ?',
+            answer: 'Les valeurs propres sont 1 et 4. La valeur propre 4 apparaît avec multiplicité algébrique 2.'
+          },
+          {
+            question: 'Pourquoi la diagonalisation facilite-t-elle le calcul de Aⁿ ?',
+            answer: 'Parce que Aⁿ = P Dⁿ P⁻¹ et que la puissance d’une matrice diagonale se calcule en élevant séparément ses coefficients diagonaux à la puissance n.'
+          }
+        ],
+        sources: [
+          {
+            title: 'MIT OpenCourseWare — Eigenvalues and Eigenvectors',
+            url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/'
+          },
+          {
+            title: 'MIT OpenCourseWare — Diagonalization and Powers of A',
+            url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/'
+          },
+          {
+            title: 'Mathematics LibreTexts — The Eigenvalue-Eigenvector Equation',
+            url: 'https://math.libretexts.org/Bookshelves/Linear_Algebra/Map%3A_Linear_Algebra_%28Waldron_Cherney_and_Denton%29/12%3A_Eigenvalues_and_Eigenvectors/12.02%3A_The_Eigenvalue-Eigenvector_Equation'
+          },
+          {
+            title: 'Mathematics LibreTexts — Eigenvalues and Eigenvectors',
+            url: 'https://math.libretexts.org/Bookshelves/Linear_Algebra/Linear_Algebra_with_Applications_%28Nicholson%29/03%3A_Determinants_and_Diagonalization/3.03%3A_Eigenvalues_and_Eigenvectors'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
 
