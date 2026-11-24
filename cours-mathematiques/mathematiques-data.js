@@ -4817,6 +4817,522 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'math-probabilites',
+  title: 'Probabilités',
+  note: 'Six chapitres sur les probabilités : espace probabilisé et axiomes, probabilités conditionnelles et théorème de Bayes, dénombrement, variables aléatoires discrètes, lois binomiale et de Poisson, puis variables continues, loi normale et théorème central limite. Les exemples numériques sont des modèles idéalisés.',
+  chapters: [
+    {
+      id: 'espace-probabilise',
+      title: 'Espace probabilisé, événements et axiomes',
+      field: 'Mathématiques · Probabilités · Fondements',
+      summary: 'Définir une expérience aléatoire, des événements et une mesure de probabilité, puis démontrer les règles de calcul de base.',
+      lesson: {
+        sections: [
+          'Une expérience aléatoire est une expérience dont le résultat ne peut pas être prévu avec certitude, mais dont l’ensemble des résultats possibles est connu. Cet ensemble s’appelle l’univers et se note Ω. Un événement est une partie de Ω : par exemple, pour un lancer de dé, Ω = {1, 2, 3, 4, 5, 6} et « obtenir un nombre pair » est l’événement {2, 4, 6}. L’événement certain est Ω et l’événement impossible est l’ensemble vide ∅.',
+          'On combine les événements avec les opérations sur les ensembles : A ∪ B (A ou B), A ∩ B (A et B) et Aᶜ (le contraire de A). Deux événements sont incompatibles (ou disjoints) si A ∩ B = ∅. Il ne faut pas confondre incompatibilité et indépendance, notion étudiée au chapitre suivant.',
+          'Les premières réflexions systématiques sur le calcul des chances sont associées à la correspondance entre Blaise Pascal et Pierre de Fermat en 1654, à propos de problèmes de jeux de hasard. Pierre-Simon de Laplace a ensuite développé la théorie dans sa Théorie analytique des probabilités (1812). La formalisation moderne repose sur la théorie de la mesure : Andreï Kolmogorov a publié en 1933 les axiomes qui fondent aujourd’hui la théorie.',
+          'Les axiomes de Kolmogorov définissent une probabilité P sur Ω : (1) pour tout événement A, P(A) ≥ 0 ; (2) P(Ω) = 1 ; (3) pour toute suite d’événements deux à deux incompatibles A₁, A₂, …, P(A₁ ∪ A₂ ∪ …) = P(A₁) + P(A₂) + …. Dans le cas d’un nombre fini d’événements, la troisième condition se réduit à P(A ∪ B) = P(A) + P(B) lorsque A ∩ B = ∅.',
+          'Conséquences des axiomes : P(∅) = 0 ; P(Aᶜ) = 1 − P(A) ; 0 ≤ P(A) ≤ 1 ; si A ⊂ B alors P(A) ≤ P(B) ; et, pour deux événements quelconques, P(A ∪ B) = P(A) + P(B) − P(A ∩ B). Cette dernière formule corrige le double comptage de A ∩ B. Passer par l’événement contraire est souvent la méthode la plus rapide pour calculer une probabilité du type « au moins un ».',
+          'Cas de l’équiprobabilité. Si Ω est fini et si tous les résultats élémentaires ont la même probabilité, alors P(A) = |A| / |Ω|, c’est-à-dire le nombre de cas favorables divisé par le nombre de cas possibles. Cette formule n’est valable que si l’hypothèse d’équiprobabilité est justifiée : par exemple, pour la somme de deux dés, les onze valeurs de 2 à 12 ne sont pas équiprobables, alors que les 36 couples ordonnés (premier dé, second dé) le sont pour des dés équilibrés.',
+          'Interprétations de la probabilité. Dans l’interprétation fréquentiste, P(A) est la limite de la fréquence relative de A quand le nombre de répétitions tend vers l’infini, ce que justifie la loi des grands nombres vue au dernier chapitre. Dans l’interprétation bayésienne, la probabilité mesure un degré de croyance. Les règles de calcul sont les mêmes dans les deux cas.'
+        ],
+        formula: {
+          label: 'AXIOMES ET RÈGLES DE BASE',
+          text: 'P(A) ≥ 0  |  P(Ω) = 1  |  P(Aᶜ) = 1 − P(A)  |  P(A ∪ B) = P(A) + P(B) − P(A ∩ B)'
+        },
+        example: {
+          statement: 'On lance deux dés équilibrés à six faces. Quelle est la probabilité que la somme des deux faces soit égale à 7 ?',
+          calculation: 'L’univers contient 6 × 6 = 36 couples ordonnés équiprobables. Les couples de somme 7 sont (1, 6), (2, 5), (3, 4), (4, 3), (5, 2) et (6, 1), soit 6 cas favorables. Donc P = 6/36.',
+          answer: 'La probabilité d’obtenir une somme égale à 7 est 6/36 = 1/6, soit environ 0,167.'
+        },
+        exercise: {
+          question: 'On lance deux dés équilibrés. Quelle est la probabilité d’obtenir au moins un 6 ?',
+          answer: 'L’événement contraire est « aucun 6 » : 5 × 5 = 25 couples sur 36. Donc P = 1 − 25/36 = 11/36, soit environ 0,306.'
+        },
+        exercises: [
+          {
+            question: 'Si P(A) = 0,5, P(B) = 0,4 et P(A ∩ B) = 0,2, que vaut P(A ∪ B) ?',
+            answer: 'P(A ∪ B) = 0,5 + 0,4 − 0,2 = 0,7.'
+          },
+          {
+            question: 'Une personne affirme que la probabilité d’un événement est −0,2. Pourquoi est-ce impossible ?',
+            answer: 'Le premier axiome impose P(A) ≥ 0. Une probabilité est toujours comprise entre 0 et 1.'
+          },
+          {
+            question: 'Pour la somme de deux dés, peut-on dire que P(somme = 7) = 1/11 parce qu’il y a 11 sommes possibles ?',
+            answer: 'Non. Les sommes de 2 à 12 ne sont pas équiprobables. Il faut compter dans l’univers des 36 couples équiprobables : P(somme = 7) = 6/36 = 1/6.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Axiomes de Kolmogorov (cas fini)',
+            formula: 'P(A) ≥ 0  ;  P(Ω) = 1  ;  P(A ∪ B) = P(A) + P(B) si A ∩ B = ∅',
+            explanation: 'Une probabilité est une fonction positive, de valeur totale 1, qui s’additionne sur des événements incompatibles. Toutes les autres règles s’en déduisent.',
+            parameters: 'P : probabilité (sans unité, entre 0 et 1) ; Ω : univers ; A, B : événements, c’est-à-dire des parties de Ω ; ∅ : ensemble vide.',
+            example: 'Pour un dé équilibré, A = {1, 2} et B = {5} sont incompatibles : P(A ∪ B) = 2/6 + 1/6.',
+            result: 'P(A ∪ B) = 1/2.'
+          },
+          {
+            title: 'Équiprobabilité',
+            formula: 'P(A) = |A| / |Ω|',
+            explanation: 'Quand tous les résultats élémentaires ont la même probabilité, la probabilité d’un événement est le rapport du nombre de cas favorables au nombre de cas possibles.',
+            parameters: '|A| : nombre d’éléments de A (cas favorables) ; |Ω| : nombre d’éléments de l’univers fini (cas possibles) ; P(A) : probabilité (sans unité).',
+            example: 'Pour un dé équilibré, A = « nombre pair » = {2, 4, 6} : P(A) = 3/6.',
+            result: 'P(A) = 1/2.'
+          },
+          {
+            title: 'Événement contraire',
+            formula: 'P(Aᶜ) = 1 − P(A)',
+            explanation: 'A et Aᶜ sont incompatibles et leur union est Ω, donc P(A) + P(Aᶜ) = 1. On l’utilise pour les événements du type « au moins un ».',
+            parameters: 'Aᶜ : événement contraire de A (A ne se réalise pas) ; P(A) : probabilité de A.',
+            example: 'Probabilité d’obtenir au moins un pile en 3 lancers d’une pièce équilibrée : l’événement contraire est « trois faces », de probabilité (1/2)³ = 1/8.',
+            result: 'P(au moins un pile) = 1 − 1/8 = 7/8.'
+          },
+          {
+            title: 'Probabilité d’une union',
+            formula: 'P(A ∪ B) = P(A) + P(B) − P(A ∩ B)',
+            explanation: 'Quand A et B ne sont pas incompatibles, la somme P(A) + P(B) compte deux fois A ∩ B ; on retire donc cette probabilité une fois.',
+            parameters: 'A, B : événements quelconques ; A ∩ B : A et B se réalisent ensemble ; A ∪ B : l’un au moins se réalise.',
+            example: 'Si P(A) = 0,5, P(B) = 0,4 et P(A ∩ B) = 0,2 : P(A ∪ B) = 0,5 + 0,4 − 0,2.',
+            result: 'P(A ∪ B) = 0,7.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introductory Statistics 2e, 3.1 Terminology', url: 'https://openstax.org/books/introductory-statistics-2e/pages/3-1-terminology' },
+          { title: 'OpenStax — Introductory Statistics 2e, 3.3 Two Basic Rules of Probability', url: 'https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability' },
+          { title: 'OpenStax — Precalculus 2e, 11.7 Probability', url: 'https://openstax.org/books/precalculus-2e/pages/11-7-probability' },
+          { title: 'Wikipedia — Probability axioms', url: 'https://en.wikipedia.org/wiki/Probability_axioms' }
+        ]
+      }
+    },
+    {
+      id: 'probabilites-conditionnelles',
+      title: 'Probabilités conditionnelles, indépendance et théorème de Bayes',
+      field: 'Mathématiques · Probabilités · Information partielle',
+      summary: 'Mettre à jour une probabilité lorsqu’une information est connue, caractériser l’indépendance et inverser un conditionnement avec la formule de Bayes.',
+      lesson: {
+        sections: [
+          'La probabilité conditionnelle de A sachant B, notée P(A | B), mesure la probabilité de A lorsqu’on sait que B s’est réalisé. Pour P(B) > 0, elle est définie par P(A | B) = P(A ∩ B) / P(B). Intuitivement, on restreint l’univers à B et on renormalise. Pour une probabilité équiprobable, P(A | B) = |A ∩ B| / |B|.',
+          'En réécrivant la définition, on obtient la formule des probabilités composées : P(A ∩ B) = P(A | B)·P(B) = P(B | A)·P(A). Elle se généralise : P(A₁ ∩ A₂ ∩ A₃) = P(A₁)·P(A₂ | A₁)·P(A₃ | A₁ ∩ A₂). C’est le principe du calcul sur un arbre de probabilités : on multiplie les probabilités le long d’une branche.',
+          'Deux événements A et B sont indépendants si P(A ∩ B) = P(A)·P(B). Si P(B) > 0, cela équivaut à P(A | B) = P(A) : savoir que B s’est réalisé ne modifie pas la probabilité de A. Attention : deux événements incompatibles de probabilités non nulles ne sont jamais indépendants, puisque P(A ∩ B) = 0 alors que P(A)·P(B) > 0.',
+          'Formule des probabilités totales. Si B₁, …, Bₖ forment une partition de Ω (des événements incompatibles deux à deux, de probabilités non nulles, dont l’union est Ω), alors pour tout événement A : P(A) = P(A | B₁)·P(B₁) + … + P(A | Bₖ)·P(Bₖ). On décompose le calcul selon les cas possibles.',
+          'Théorème de Bayes. Avec les mêmes hypothèses et P(A) > 0, P(Bⱼ | A) = P(A | Bⱼ)·P(Bⱼ) / [P(A | B₁)·P(B₁) + … + P(A | Bₖ)·P(Bₖ)]. Il permet d’inverser un conditionnement : passer de « probabilité du résultat sachant la cause » à « probabilité de la cause sachant le résultat ». Thomas Bayes est l’auteur d’un mémoire publié à titre posthume en 1763 ; Laplace a ensuite généralisé et diffusé ce raisonnement.',
+          'Erreur fréquente : confondre P(A | B) et P(B | A). Dans le cas d’un test de dépistage pour une maladie rare, même un test précis peut avoir une valeur prédictive positive faible, car les faux positifs issus de la grande population saine sont plus nombreux que les vrais positifs. Cet effet est appelé négligence du taux de base. Le calcul explicite avec la formule de Bayes évite ce piège.',
+          'Probabilités avec ou sans remise. Dans un tirage sans remise, les tirages successifs ne sont pas indépendants : la composition de l’urne change. Dans un tirage avec remise, ils le sont. Le calcul par probabilités conditionnelles successives traite les deux cas.'
+        ],
+        formula: {
+          label: 'PROBABILITÉ CONDITIONNELLE ET BAYES',
+          text: 'P(A | B) = P(A ∩ B) / P(B)  |  P(A ∩ B) = P(A)P(B) si A, B indépendants  |  P(Bⱼ | A) = P(A | Bⱼ)P(Bⱼ) / Σᵢ P(A | Bᵢ)P(Bᵢ)'
+        },
+        example: {
+          statement: 'Une maladie touche 1 % d’une population. Un test la détecte dans 95 % des cas chez les malades (sensibilité) et donne un résultat positif à tort chez 5 % des personnes saines. Une personne a un test positif. Quelle est la probabilité qu’elle soit malade ?',
+          calculation: 'Soit M « malade » et T « test positif ». P(M) = 0,01, P(T | M) = 0,95 et P(T | Mᶜ) = 0,05. Probabilités totales : P(T) = 0,95 × 0,01 + 0,05 × 0,99 = 0,0095 + 0,0495 = 0,059. Bayes : P(M | T) = 0,0095 / 0,059 ≈ 0,161.',
+          answer: 'La probabilité d’être malade sachant que le test est positif est d’environ 16,1 %, bien inférieure à la sensibilité de 95 %, car la maladie est rare.'
+        },
+        exercise: {
+          question: 'Une urne contient 3 boules rouges et 2 boules bleues. On tire deux boules sans remise. Quelle est la probabilité d’obtenir deux boules rouges ?',
+          answer: 'P(R₁) = 3/5 et P(R₂ | R₁) = 2/4. Donc P(R₁ ∩ R₂) = 3/5 × 2/4 = 6/20 = 3/10 = 0,3.'
+        },
+        exercises: [
+          {
+            question: 'Si A et B sont indépendants avec P(A) = 0,3 et P(B) = 0,5, que vaut P(A ∩ B) ?',
+            answer: 'P(A ∩ B) = 0,3 × 0,5 = 0,15.'
+          },
+          {
+            question: 'Deux événements incompatibles, tous deux de probabilité non nulle, peuvent-ils être indépendants ?',
+            answer: 'Non. Pour des événements incompatibles, P(A ∩ B) = 0, alors que P(A)·P(B) est strictement positif.'
+          },
+          {
+            question: 'On lance deux dés équilibrés. Quelle est la probabilité que le second dé indique 6 sachant que la somme vaut 7 ?',
+            answer: 'Six couples donnent une somme de 7 et un seul a un 6 sur le second dé, le couple (1, 6). Donc P = 1/6.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Probabilité conditionnelle',
+            formula: 'P(A | B) = P(A ∩ B) / P(B)  (P(B) > 0)',
+            explanation: 'On restreint l’univers à l’événement B connu, puis on rapporte la probabilité de A ∩ B à celle de B.',
+            parameters: 'P(A | B) : probabilité de A sachant B ; P(A ∩ B) : probabilité que A et B se réalisent ; P(B) : probabilité de B, strictement positive.',
+            example: 'Deux dés équilibrés. A : « somme = 7 », B : « premier dé = 3 ». P(A ∩ B) = 1/36 et P(B) = 1/6.',
+            result: 'P(A | B) = (1/36)/(1/6) = 1/6.'
+          },
+          {
+            title: 'Indépendance',
+            formula: 'P(A ∩ B) = P(A)·P(B)',
+            explanation: 'Deux événements sont indépendants lorsque la réalisation de l’un ne change pas la probabilité de l’autre.',
+            parameters: 'A, B : événements ; P(A), P(B) : leurs probabilités ; P(A ∩ B) : probabilité qu’ils se réalisent ensemble.',
+            example: 'Deux lancers indépendants d’une pièce équilibrée, A = « pile au premier », B = « pile au second » : P(A ∩ B) = 1/2 × 1/2.',
+            result: 'P(A ∩ B) = 1/4.'
+          },
+          {
+            title: 'Formule des probabilités totales',
+            formula: 'P(A) = Σᵢ P(A | Bᵢ)·P(Bᵢ)',
+            explanation: 'Quand les Bᵢ forment une partition de Ω, on décompose P(A) selon la situation Bᵢ dans laquelle on se trouve.',
+            parameters: 'Bᵢ : partition de Ω (incompatibles, de probabilités non nulles, d’union Ω) ; P(Bᵢ) : probabilité de chaque cas ; P(A | Bᵢ) : probabilité de A dans chaque cas.',
+            example: 'La machine A produit 60 % des pièces avec 2 % de défauts ; la machine B produit 40 % avec 5 % de défauts : P(D) = 0,02 × 0,6 + 0,05 × 0,4 = 0,012 + 0,020.',
+            result: 'P(D) = 0,032, soit 3,2 % de pièces défectueuses.'
+          },
+          {
+            title: 'Formule de Bayes',
+            formula: 'P(Bⱼ | A) = P(A | Bⱼ)·P(Bⱼ) / Σᵢ P(A | Bᵢ)·P(Bᵢ)',
+            explanation: 'La formule de Bayes calcule la probabilité d’une cause Bⱼ sachant qu’un résultat A est observé, à partir des probabilités du résultat sachant chaque cause.',
+            parameters: 'Bⱼ : cause étudiée ; A : résultat observé, avec P(A) > 0 ; le dénominateur est P(A) donné par les probabilités totales.',
+            example: 'Pour la production précédente, quelle est la probabilité que la pièce défectueuse vienne de A ? P(A | D) = 0,012 / 0,032.',
+            result: 'P(A | D) = 0,375, soit 37,5 %.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introductory Statistics 2e, 3.2 Independent and Mutually Exclusive Events', url: 'https://openstax.org/books/introductory-statistics-2e/pages/3-2-independent-and-mutually-exclusive-events' },
+          { title: 'OpenStax — Introductory Statistics 2e, 3.3 Two Basic Rules of Probability', url: 'https://openstax.org/books/introductory-statistics-2e/pages/3-3-two-basic-rules-of-probability' },
+          { title: 'Wikipedia — Conditional probability', url: 'https://en.wikipedia.org/wiki/Conditional_probability' },
+          { title: 'Wikipedia — Bayes’ theorem', url: 'https://en.wikipedia.org/wiki/Bayes%27_theorem' }
+        ]
+      }
+    },
+    {
+      id: 'denombrement',
+      title: 'Dénombrement : permutations, arrangements et combinaisons',
+      field: 'Mathématiques · Probabilités · Analyse combinatoire',
+      summary: 'Compter les cas possibles et favorables avec les principes multiplicatif et additif, les factorielles et les coefficients binomiaux.',
+      lesson: {
+        sections: [
+          'Dans un modèle équiprobable, calculer une probabilité revient à compter. Le principe multiplicatif dit que si une procédure se fait en k étapes successives, avec n₁ choix à la première, n₂ à la deuxième, …, nₖ à la dernière (indépendamment des choix précédents), le nombre total de résultats est n₁ × n₂ × … × nₖ. Le principe additif dit que, pour deux choix s’excluant mutuellement, on additionne les nombres de possibilités.',
+          'Permutations. Le nombre de façons d’ordonner n objets distincts est n! = n × (n − 1) × … × 2 × 1, avec la convention 0! = 1. Par exemple, il y a 5! = 120 façons de ranger 5 livres sur une étagère. Si certains objets sont identiques, on divise par les factorielles des effectifs de chaque type : le mot « MAMAN » a 5!/(2! × 2!) = 30 anagrammes, car M et A apparaissent chacun deux fois.',
+          'Arrangements. Le nombre de façons de choisir k éléments parmi n en tenant compte de l’ordre, sans répétition, est A(n, k) = n!/(n − k)! = n × (n − 1) × … × (n − k + 1). Exemple : un podium de 3 coureurs parmi 10 correspond à A(10, 3) = 10 × 9 × 8 = 720 résultats possibles.',
+          'Combinaisons. Le nombre de façons de choisir k éléments parmi n sans tenir compte de l’ordre est C(n, k) = n! / (k!·(n − k)!), noté aussi « k parmi n ». On a C(n, k) = C(n, n − k) et la relation de Pascal : C(n, k) = C(n − 1, k − 1) + C(n − 1, k). La relation entre arrangements et combinaisons est A(n, k) = C(n, k) × k!, car chaque groupe de k éléments peut être ordonné de k! façons.',
+          'Théorème du binôme : (a + b)ⁿ = Σ C(n, k)·aⁿ⁻ᵏ·bᵏ, la somme portant sur k de 0 à n. Pour a = b = 1, on obtient Σ C(n, k) = 2ⁿ, le nombre de parties d’un ensemble à n éléments. Cette identité est à l’origine de la loi binomiale du chapitre 5.',
+          'Tirages dans une urne. Pour un tirage simultané de n objets parmi N, tous les groupes de n objets sont équiprobables et il y en a C(N, n). Si l’urne contient K objets d’un type donné, la probabilité d’en obtenir exactement k est la loi hypergéométrique : P(X = k) = C(K, k)·C(N − K, n − k) / C(N, n). Elle modélise un tirage sans remise.',
+          'Le problème des anniversaires illustre la puissance du dénombrement avec l’événement contraire : pour n personnes (année de 365 jours, naissances uniformes et indépendantes, 29 février ignoré), la probabilité qu’aucune ne partage la même date est 365 × 364 × … × (365 − n + 1) / 365ⁿ. Pour n = 23, la probabilité qu’au moins deux personnes aient le même anniversaire dépasse 1/2 : elle vaut environ 0,507.'
+        ],
+        formula: {
+          label: 'DÉNOMBREMENT',
+          text: 'n! = n(n − 1)…1  |  A(n, k) = n! / (n − k)!  |  C(n, k) = n! / (k!(n − k)!)'
+        },
+        example: {
+          statement: 'Au loto, on choisit 6 numéros parmi 49 sans tenir compte de l’ordre. Combien y a-t-il de grilles possibles et quelle est la probabilité que la grille choisie soit exactement la grille gagnante ?',
+          calculation: 'Le nombre de grilles est C(49, 6) = 49! / (6!·43!) = (49 × 48 × 47 × 46 × 45 × 44) / 720 = 13 983 816. Chaque grille est équiprobable, donc la probabilité d’en gagner une donnée est 1/13 983 816.',
+          answer: 'Il y a 13 983 816 grilles possibles ; la probabilité de tirer exactement la grille choisie est 1/13 983 816, soit environ 7,15 × 10⁻⁸.'
+        },
+        exercise: {
+          question: 'Combien d’anagrammes (avec ou sans sens) peut-on former avec les lettres distinctes du mot MATH ?',
+          answer: 'Les 4 lettres sont distinctes, donc le nombre d’anagrammes est 4! = 4 × 3 × 2 × 1 = 24.'
+        },
+        exercises: [
+          {
+            question: 'Calculer C(5, 2) et vérifier que C(5, 2) = C(5, 3).',
+            answer: 'C(5, 2) = 5!/(2!·3!) = 120/12 = 10 et C(5, 3) = 5!/(3!·2!) = 10. La symétrie C(n, k) = C(n, n − k) est vérifiée.'
+          },
+          {
+            question: 'Une urne contient 4 boules rouges et 6 boules bleues. On tire simultanément 3 boules. Quelle est la probabilité d’obtenir exactement 2 boules rouges ?',
+            answer: 'P = C(4, 2)·C(6, 1) / C(10, 3) = 6 × 6 / 120 = 36/120 = 0,3.'
+          },
+          {
+            question: 'Dans un groupe de 23 personnes, quelle est la probabilité approximative qu’au moins deux aient la même date d’anniversaire (année de 365 jours, naissances uniformes) ?',
+            answer: 'Environ 0,507, soit un peu plus d’une chance sur deux.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Permutations',
+            formula: 'n! = n × (n − 1) × … × 2 × 1  et  0! = 1',
+            explanation: 'Le nombre d’ordres possibles de n objets distincts est n!, car il y a n choix pour la première place, n − 1 pour la deuxième, etc.',
+            parameters: 'n : nombre d’objets distincts (entier ≥ 0) ; n! : factorielle de n.',
+            example: 'Ranger 5 livres distincts sur une étagère : 5! = 5 × 4 × 3 × 2 × 1.',
+            result: '120 rangements possibles.'
+          },
+          {
+            title: 'Arrangements',
+            formula: 'A(n, k) = n! / (n − k)!',
+            explanation: 'On choisit k éléments parmi n en tenant compte de l’ordre et sans répétition : n choix pour le premier, n − 1 pour le deuxième, etc., jusqu’au k-ième.',
+            parameters: 'n : nombre d’éléments disponibles ; k : nombre d’éléments choisis (0 ≤ k ≤ n) ; A(n, k) : nombre de suites ordonnées sans répétition.',
+            example: 'Podium de 3 coureurs parmi 10 : A(10, 3) = 10 × 9 × 8.',
+            result: '720 podiums possibles.'
+          },
+          {
+            title: 'Combinaisons',
+            formula: 'C(n, k) = n! / (k!·(n − k)!)',
+            explanation: 'On compte les groupes non ordonnés de k éléments parmi n. On divise A(n, k) par k! car les k! ordres d’un même groupe donnent le même groupe.',
+            parameters: 'n : nombre d’éléments disponibles ; k : taille du groupe (0 ≤ k ≤ n) ; C(n, k) : coefficient binomial, aussi noté « k parmi n ».',
+            example: 'Choisir 6 numéros parmi 49 : C(49, 6) = (49 × 48 × 47 × 46 × 45 × 44) / 720.',
+            result: '13 983 816 combinaisons.'
+          },
+          {
+            title: 'Loi hypergéométrique',
+            formula: 'P(X = k) = C(K, k)·C(N − K, n − k) / C(N, n)',
+            explanation: 'On tire n objets sans remise dans une population de N objets dont K sont d’un type donné ; X est le nombre d’objets de ce type obtenus.',
+            parameters: 'N : effectif de la population ; K : effectif du type étudié ; n : taille du tirage ; k : nombre d’objets du type étudié obtenus (0 ≤ k ≤ min(n, K)).',
+            example: 'Urne de N = 10 boules dont K = 4 rouges, tirage de n = 3 boules, k = 2 : P = C(4, 2)·C(6, 1) / C(10, 3) = 6 × 6 / 120.',
+            result: 'P(X = 2) = 0,3.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Precalculus 2e, 11.5 Counting Principles', url: 'https://openstax.org/books/precalculus-2e/pages/11-5-counting-principles' },
+          { title: 'OpenStax — Precalculus 2e, 11.6 Binomial Theorem', url: 'https://openstax.org/books/precalculus-2e/pages/11-6-binomial-theorem' },
+          { title: 'OpenStax — Introductory Statistics 2e, 4.5 Hypergeometric Distribution', url: 'https://openstax.org/books/introductory-statistics-2e/pages/4-5-hypergeometric-distribution' },
+          { title: 'Wikipedia — Combination', url: 'https://en.wikipedia.org/wiki/Combination' },
+          { title: 'Wikipedia — Birthday problem', url: 'https://en.wikipedia.org/wiki/Birthday_problem' }
+        ]
+      }
+    },
+    {
+      id: 'variables-discretes',
+      title: 'Variables aléatoires discrètes : espérance et variance',
+      field: 'Mathématiques · Probabilités · Variables aléatoires',
+      summary: 'Décrire une variable aléatoire discrète par sa loi, calculer son espérance, sa variance et son écart type, et utiliser les propriétés de linéarité.',
+      lesson: {
+        sections: [
+          'Une variable aléatoire est une fonction X qui associe un nombre réel à chaque résultat d’une expérience aléatoire. Elle est discrète si elle prend un nombre fini de valeurs, ou une infinité dénombrable de valeurs (0, 1, 2, …). Par exemple, le nombre de piles en 10 lancers est une variable aléatoire discrète. La notation P(X = x) désigne la probabilité que X prenne la valeur x.',
+          'La loi de X est la liste des valeurs x₁, x₂, … et des probabilités pᵢ = P(X = xᵢ). Elle vérifie pᵢ ≥ 0 et Σ pᵢ = 1. La fonction de répartition est F(x) = P(X ≤ x) : elle est croissante, comprise entre 0 et 1, constante par morceaux dans le cas discret, et vérifie P(a < X ≤ b) = F(b) − F(a).',
+          'L’espérance (ou moyenne) de X est E(X) = Σ xᵢ·pᵢ. C’est la moyenne pondérée des valeurs par leurs probabilités, interprétée comme la valeur moyenne obtenue sur un grand nombre de répétitions. Elle n’est pas nécessairement une valeur que X peut prendre : pour un dé, E(X) = 3,5. Pour une fonction g, E(g(X)) = Σ g(xᵢ)·pᵢ.',
+          'La variance mesure la dispersion autour de l’espérance : Var(X) = E[(X − μ)²] avec μ = E(X). La formule de Kœnig–Huygens donne un calcul plus pratique : Var(X) = E(X²) − [E(X)]². L’écart type est σ = √Var(X), exprimé dans la même unité que X. Une variance est toujours positive ou nulle, et elle est nulle seulement si X est presque sûrement constante.',
+          'Linéarité. Pour des constantes a et b : E(aX + b) = a·E(X) + b et Var(aX + b) = a²·Var(X). Pour deux variables X et Y quelconques, E(X + Y) = E(X) + E(Y). Si X et Y sont indépendantes, Var(X + Y) = Var(X) + Var(Y). Sans indépendance, il faut ajouter un terme de covariance : Var(X + Y) = Var(X) + Var(Y) + 2·Cov(X, Y).',
+          'Interprétation décisionnelle. L’espérance d’un gain permet de juger un jeu : un jeu est équitable si l’espérance du gain algébrique est nulle. Cependant, l’espérance ne dit rien du risque : deux jeux de même espérance peuvent avoir des variances très différentes. Le choix entre eux dépend alors de l’aversion au risque de la personne.'
+        ],
+        formula: {
+          label: 'ESPÉRANCE ET VARIANCE',
+          text: 'E(X) = Σ xᵢpᵢ  |  Var(X) = E(X²) − [E(X)]²  |  E(aX + b) = aE(X) + b  |  Var(aX + b) = a²Var(X)'
+        },
+        example: {
+          statement: 'Soit X le résultat d’un lancer d’un dé équilibré à six faces. Calculer E(X), Var(X) et l’écart type de X.',
+          calculation: 'Chaque valeur de 1 à 6 a pour probabilité 1/6. E(X) = (1 + 2 + 3 + 4 + 5 + 6)/6 = 21/6 = 3,5. E(X²) = (1 + 4 + 9 + 16 + 25 + 36)/6 = 91/6. Var(X) = 91/6 − 3,5² = 91/6 − 49/4 = (182 − 147)/12 = 35/12 ≈ 2,917. Écart type σ = √(35/12) ≈ 1,708.',
+          answer: 'E(X) = 3,5, Var(X) = 35/12 ≈ 2,917 et σ ≈ 1,71.'
+        },
+        exercise: {
+          question: 'On lance une pièce équilibrée. On gagne 3 € si on obtient pile et on perd 1 € si on obtient face. Quelle est l’espérance du gain ? Le jeu est-il équitable ?',
+          answer: 'E(G) = 3 × 1/2 + (−1) × 1/2 = 1 €. L’espérance est non nulle (1 € par partie), donc le jeu n’est pas équitable : il est favorable au joueur.'
+        },
+        exercises: [
+          {
+            question: 'Si E(X) = 3,5 et Var(X) = 35/12, que valent E(2X + 1) et Var(2X + 1) ?',
+            answer: 'E(2X + 1) = 2 × 3,5 + 1 = 8 et Var(2X + 1) = 2² × 35/12 = 35/3 ≈ 11,67.'
+          },
+          {
+            question: 'Pour un dé équilibré, que vaut la fonction de répartition en x = 3 ?',
+            answer: 'F(3) = P(X ≤ 3) = 3/6 = 1/2.'
+          },
+          {
+            question: 'Une variance peut-elle être négative ?',
+            answer: 'Non. Var(X) = E[(X − μ)²] est l’espérance d’un carré, donc elle est toujours positive ou nulle.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Espérance d’une variable discrète',
+            formula: 'E(X) = Σᵢ xᵢ·pᵢ',
+            explanation: 'L’espérance est la moyenne des valeurs possibles, pondérée par leurs probabilités.',
+            parameters: 'xᵢ : valeurs possibles de X ; pᵢ = P(X = xᵢ) : probabilités (Σ pᵢ = 1) ; E(X) : espérance, dans l’unité de X.',
+            example: 'Pour un dé équilibré : E(X) = (1 + 2 + 3 + 4 + 5 + 6) × 1/6.',
+            result: 'E(X) = 3,5.'
+          },
+          {
+            title: 'Variance et formule de Kœnig–Huygens',
+            formula: 'Var(X) = E[(X − μ)²] = E(X²) − [E(X)]²',
+            explanation: 'La variance est l’écart quadratique moyen à l’espérance. La seconde écriture est généralement plus rapide pour les calculs.',
+            parameters: 'μ = E(X) : espérance ; E(X²) = Σ xᵢ²·pᵢ ; Var(X) : variance, dans le carré de l’unité de X ; σ = √Var(X) : écart type.',
+            example: 'Pour un dé équilibré : E(X²) = 91/6 et μ² = 12,25, donc Var(X) = 91/6 − 49/4.',
+            result: 'Var(X) = 35/12 ≈ 2,917.'
+          },
+          {
+            title: 'Transformation affine',
+            formula: 'E(aX + b) = a·E(X) + b  et  Var(aX + b) = a²·Var(X)',
+            explanation: 'Une translation de b ne change pas la dispersion ; une multiplication par a multiplie la variance par a².',
+            parameters: 'a, b : constantes réelles ; X : variable aléatoire d’espérance E(X) et de variance Var(X).',
+            example: 'Avec E(X) = 3,5, Var(X) = 35/12 et la variable 2X + 1 : E = 2 × 3,5 + 1 et Var = 4 × 35/12.',
+            result: 'E(2X + 1) = 8 et Var(2X + 1) = 35/3.'
+          },
+          {
+            title: 'Fonction de répartition',
+            formula: 'F(x) = P(X ≤ x)  et  P(a < X ≤ b) = F(b) − F(a)',
+            explanation: 'La fonction de répartition cumule les probabilités jusqu’à x. Elle est définie pour toute variable aléatoire, discrète ou continue.',
+            parameters: 'F(x) : fonction de répartition, croissante, de limite 0 en −∞ et 1 en +∞ ; a < b : bornes de l’intervalle.',
+            example: 'Pour un dé équilibré : P(2 < X ≤ 5) = F(5) − F(2) = 5/6 − 2/6.',
+            result: 'P(2 < X ≤ 5) = 1/2.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introductory Statistics 2e, 4.1 Probability Distribution Function (PDF) for a Discrete Random Variable', url: 'https://openstax.org/books/introductory-statistics-2e/pages/4-1-probability-distribution-function-pdf-for-a-discrete-random-variable' },
+          { title: 'OpenStax — Introductory Statistics 2e, 4.2 Mean or Expected Value and Standard Deviation', url: 'https://openstax.org/books/introductory-statistics-2e/pages/4-2-mean-or-expected-value-and-standard-deviation' },
+          { title: 'Wikipedia — Expected value', url: 'https://en.wikipedia.org/wiki/Expected_value' },
+          { title: 'Wikipedia — Variance', url: 'https://en.wikipedia.org/wiki/Variance' }
+        ]
+      }
+    },
+    {
+      id: 'lois-binomiale-poisson',
+      title: 'Lois discrètes usuelles : binomiale, géométrique et de Poisson',
+      field: 'Mathématiques · Probabilités · Lois de probabilité',
+      summary: 'Reconnaître et utiliser les lois de Bernoulli, binomiale, géométrique et de Poisson, avec leur espérance et leur variance.',
+      lesson: {
+        sections: [
+          'Une épreuve de Bernoulli est une expérience à deux issues, succès (probabilité p) et échec (probabilité 1 − p). La variable X valant 1 en cas de succès et 0 sinon suit la loi de Bernoulli de paramètre p : E(X) = p et Var(X) = p(1 − p). Le nom rend hommage à Jacob Bernoulli, dont l’ouvrage Ars Conjectandi a été publié à titre posthume en 1713.',
+          'Loi binomiale. On répète n épreuves de Bernoulli identiques et indépendantes, avec la même probabilité de succès p. Le nombre X de succès suit la loi binomiale B(n, p) : P(X = k) = C(n, k)·pᵏ·(1 − p)ⁿ⁻ᵏ pour k = 0, 1, …, n. On a E(X) = np et Var(X) = np(1 − p). Le facteur C(n, k) compte les positions possibles des k succès parmi les n épreuves.',
+          'Conditions d’emploi. La loi binomiale suppose un nombre fixe d’épreuves, deux issues, une probabilité constante et l’indépendance. Un tirage sans remise dans une petite population ne respecte pas l’indépendance et relève plutôt de la loi hypergéométrique ; si la population est très grande devant l’échantillon, la loi binomiale est une bonne approximation.',
+          'Loi géométrique. On répète des épreuves de Bernoulli indépendantes de probabilité de succès p jusqu’au premier succès. Le rang X du premier succès vérifie P(X = k) = (1 − p)ᵏ⁻¹·p pour k = 1, 2, 3, …, avec E(X) = 1/p et Var(X) = (1 − p)/p². Par exemple, pour un dé équilibré, p = 1/6 et l’on attend en moyenne 6 lancers pour obtenir un 6.',
+          'Loi de Poisson. Elle modélise le nombre d’événements rares survenant dans un intervalle de temps ou d’espace fixé, lorsqu’ils se produisent indépendamment à un taux moyen constant. Pour un paramètre λ > 0, P(X = k) = e^(−λ)·λᵏ / k! pour k = 0, 1, 2, …, avec E(X) = Var(X) = λ. Elle porte le nom de Siméon Denis Poisson, qui l’a étudiée en 1837.',
+          'Approximation de la binomiale par Poisson. Quand n est grand et p petit, avec λ = np modéré, B(n, p) est bien approchée par la loi de Poisson de paramètre λ. Par exemple, pour n = 1000 et p = 0,002 (λ = 2), P(X = 0) vaut environ 0,1351 avec la loi binomiale et 0,1353 avec la loi de Poisson.',
+          'Pour choisir une loi, on se pose quatre questions : l’expérience est-elle répétée un nombre fixé de fois (binomiale) ou jusqu’au premier succès (géométrique) ? Les épreuves sont-elles indépendantes et de probabilité constante ? Compte-t-on des événements dans un intervalle plutôt que des succès dans des épreuves (Poisson) ? Le tirage est-il sans remise dans une petite population (hypergéométrique) ?'
+        ],
+        formula: {
+          label: 'LOIS BINOMIALE ET DE POISSON',
+          text: 'P(X = k) = C(n, k)pᵏ(1 − p)ⁿ⁻ᵏ  |  E(X) = np  |  Var(X) = np(1 − p)  |  P(X = k) = e^(−λ)λᵏ / k!'
+        },
+        example: {
+          statement: 'On lance 10 fois une pièce équilibrée. Quelle est la probabilité d’obtenir exactement 6 piles ? Quelles sont l’espérance et la variance du nombre de piles ?',
+          calculation: 'Le nombre de piles suit B(10 ; 0,5). P(X = 6) = C(10, 6) × 0,5⁶ × 0,5⁴ = 210 × 0,5¹⁰ = 210/1024 ≈ 0,2051. E(X) = 10 × 0,5 = 5 et Var(X) = 10 × 0,5 × 0,5 = 2,5.',
+          answer: 'P(X = 6) = 210/1024 ≈ 0,205 ; E(X) = 5 ; Var(X) = 2,5.'
+        },
+        exercise: {
+          question: 'On lance 4 fois un dé équilibré. Quelle est la probabilité d’obtenir au moins un 6 ?',
+          answer: 'L’événement contraire est « aucun 6 en 4 lancers », de probabilité (5/6)⁴ = 625/1296. Donc P = 1 − 625/1296 = 671/1296 ≈ 0,518.'
+        },
+        exercises: [
+          {
+            question: 'Pour X de loi B(20 ; 0,3), calculer E(X) et Var(X).',
+            answer: 'E(X) = 20 × 0,3 = 6 et Var(X) = 20 × 0,3 × 0,7 = 4,2.'
+          },
+          {
+            question: 'Un standard reçoit en moyenne 3 appels par heure, modélisés par une loi de Poisson. Quelle est la probabilité de n’avoir aucun appel dans une heure ?',
+            answer: 'P(X = 0) = e^(−3) × 3⁰/0! = e^(−3) ≈ 0,0498.'
+          },
+          {
+            question: 'Avec un dé équilibré, quelle est la probabilité d’obtenir le premier 6 exactement au troisième lancer ?',
+            answer: 'Loi géométrique avec p = 1/6 : P(X = 3) = (5/6)² × 1/6 = 25/216 ≈ 0,116.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Loi binomiale',
+            formula: 'P(X = k) = C(n, k)·pᵏ·(1 − p)ⁿ⁻ᵏ',
+            explanation: 'Probabilité d’obtenir exactement k succès en n épreuves de Bernoulli indépendantes, de probabilité de succès constante p.',
+            parameters: 'n : nombre d’épreuves ; p : probabilité de succès (0 ≤ p ≤ 1) ; k : nombre de succès (0 ≤ k ≤ n) ; C(n, k) : coefficient binomial.',
+            example: 'Pour n = 10, p = 0,5 et k = 6 : P(X = 6) = 210 × 0,5¹⁰.',
+            result: 'P(X = 6) = 210/1024 ≈ 0,205.'
+          },
+          {
+            title: 'Espérance et variance de la loi binomiale',
+            formula: 'E(X) = np  et  Var(X) = np(1 − p)',
+            explanation: 'X est la somme de n variables de Bernoulli indépendantes, chacune d’espérance p et de variance p(1 − p). On additionne les espérances et les variances.',
+            parameters: 'n : nombre d’épreuves ; p : probabilité de succès ; E(X) : nombre moyen de succès ; Var(X) : variance du nombre de succès.',
+            example: 'Pour B(20 ; 0,3) : E(X) = 20 × 0,3 et Var(X) = 20 × 0,3 × 0,7.',
+            result: 'E(X) = 6 et Var(X) = 4,2.'
+          },
+          {
+            title: 'Loi géométrique',
+            formula: 'P(X = k) = (1 − p)ᵏ⁻¹·p  et  E(X) = 1/p',
+            explanation: 'Probabilité que le premier succès survienne à l’épreuve numéro k, après k − 1 échecs consécutifs.',
+            parameters: 'p : probabilité de succès à chaque épreuve (0 < p ≤ 1) ; k : rang du premier succès (k ≥ 1) ; E(X) : nombre moyen d’épreuves nécessaires.',
+            example: 'Premier 6 au troisième lancer d’un dé équilibré : P(X = 3) = (5/6)² × 1/6.',
+            result: 'P(X = 3) = 25/216 ≈ 0,116.'
+          },
+          {
+            title: 'Loi de Poisson',
+            formula: 'P(X = k) = e^(−λ)·λᵏ / k!  avec E(X) = Var(X) = λ',
+            explanation: 'Probabilité d’observer k événements rares et indépendants dans un intervalle fixé, lorsque le nombre moyen d’événements dans cet intervalle est λ.',
+            parameters: 'λ : nombre moyen d’événements dans l’intervalle (λ > 0) ; k : nombre d’événements observés (k = 0, 1, 2, …) ; e ≈ 2,71828.',
+            example: 'Avec λ = 3 appels par heure : P(X = 2) = e^(−3) × 3²/2! = 4,5 × e^(−3).',
+            result: 'P(X = 2) ≈ 0,224.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introductory Statistics 2e, 4.3 Binomial Distribution', url: 'https://openstax.org/books/introductory-statistics-2e/pages/4-3-binomial-distribution' },
+          { title: 'OpenStax — Introductory Statistics 2e, 4.4 Geometric Distribution', url: 'https://openstax.org/books/introductory-statistics-2e/pages/4-4-geometric-distribution' },
+          { title: 'OpenStax — Introductory Statistics 2e, 4.6 Poisson Distribution', url: 'https://openstax.org/books/introductory-statistics-2e/pages/4-6-poisson-distribution' },
+          { title: 'Wikipedia — Binomial distribution', url: 'https://en.wikipedia.org/wiki/Binomial_distribution' },
+          { title: 'Wikipedia — Poisson distribution', url: 'https://en.wikipedia.org/wiki/Poisson_distribution' }
+        ]
+      }
+    },
+    {
+      id: 'continues-normale-tcl',
+      title: 'Variables continues, loi normale et théorème central limite',
+      field: 'Mathématiques · Probabilités · Variables à densité',
+      summary: 'Manipuler les densités de probabilité, la loi uniforme, la loi exponentielle et la loi normale, puis comprendre la loi des grands nombres et le théorème central limite.',
+      lesson: {
+        sections: [
+          'Une variable aléatoire continue (à densité) prend ses valeurs dans un intervalle de réels. Elle est décrite par une densité f : f(x) ≥ 0 pour tout x et l’intégrale de f sur ℝ vaut 1. La probabilité d’un intervalle est l’aire sous la courbe : P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx. Pour une variable à densité, P(X = x) = 0 pour tout réel x, donc inclure ou exclure les bornes ne change pas la probabilité.',
+          'La fonction de répartition est F(x) = P(X ≤ x) = ∫ f(t) dt de −∞ à x, et f = F′ aux points où F est dérivable. L’espérance est E(X) = ∫ x·f(x) dx et la variance Var(X) = E(X²) − [E(X)]². Les propriétés de linéarité vues au chapitre précédent restent valables.',
+          'Loi uniforme sur [a, b] : f(x) = 1/(b − a) sur [a, b] et 0 ailleurs. Alors P(c ≤ X ≤ d) = (d − c)/(b − a) pour a ≤ c ≤ d ≤ b, E(X) = (a + b)/2 et Var(X) = (b − a)²/12. Loi exponentielle de paramètre λ > 0 : f(x) = λ·e^(−λx) pour x ≥ 0, avec E(X) = 1/λ ; elle modélise des temps d’attente et possède la propriété d’absence de mémoire.',
+          'Loi normale N(μ, σ²) : sa densité est f(x) = [1/(σ√(2π))]·e^(−(x − μ)²/(2σ²)). Elle est symétrique autour de μ (l’espérance) et son écart type est σ. Elle a été introduite par Abraham de Moivre dès 1733 comme approximation de la loi binomiale, puis étudiée par Laplace et Gauss. Les probabilités se calculent par la variable centrée réduite Z = (X − μ)/σ, qui suit N(0, 1), à l’aide de tables ou d’un logiciel, car la densité n’a pas de primitive élémentaire.',
+          'Règle empirique 68–95–99,7. Pour une variable normale, P(μ − σ ≤ X ≤ μ + σ) ≈ 0,6827, P(μ − 2σ ≤ X ≤ μ + 2σ) ≈ 0,9545 et P(μ − 3σ ≤ X ≤ μ + 3σ) ≈ 0,9973. Ces pourcentages ne dépendent ni de μ ni de σ. Ils fournissent des ordres de grandeur utiles pour interpréter des écarts à la moyenne.',
+          'Loi des grands nombres. Soit X₁, X₂, … des variables indépendantes de même loi, d’espérance μ finie, et X̄ₙ leur moyenne sur n observations. Alors X̄ₙ se rapproche de μ quand n augmente : c’est la loi faible (convergence en probabilité) ; la loi forte affirme la convergence presque sûre. Le cas des épreuves de Bernoulli remonte à Jacob Bernoulli (1713) et justifie l’interprétation fréquentiste de la probabilité.',
+          'Théorème central limite. Si X₁, …, Xₙ sont indépendantes, de même loi, d’espérance μ et de variance σ² finie et non nulle, alors la variable (X̄ₙ − μ)/(σ/√n) converge en loi vers N(0, 1) quand n tend vers l’infini. Ainsi la moyenne d’un grand nombre d’observations est approximativement normale, d’espérance μ et d’écart type σ/√n, quelle que soit la loi d’origine. Une règle pratique courante est n ≥ 30, mais la qualité de l’approximation dépend de la forme de la loi d’origine.'
+        ],
+        formula: {
+          label: 'LOI NORMALE ET THÉORÈME CENTRAL LIMITE',
+          text: 'P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx  |  Z = (X − μ)/σ  |  (X̄ₙ − μ)/(σ/√n) → N(0, 1)'
+        },
+        example: {
+          statement: 'Un score suit une loi normale de moyenne μ = 100 et d’écart type σ = 15. Quelle est la probabilité qu’un score soit compris entre 85 et 115 ?',
+          calculation: 'On standardise : Z = (X − 100)/15. Pour X = 85, Z = −1 ; pour X = 115, Z = 1. Donc P(85 ≤ X ≤ 115) = P(−1 ≤ Z ≤ 1) = Φ(1) − Φ(−1) ≈ 0,8413 − 0,1587.',
+          answer: 'La probabilité est d’environ 0,6827, soit 68,3 % : c’est la probabilité d’être à moins d’un écart type de la moyenne.'
+        },
+        exercise: {
+          question: 'Soit X de loi uniforme sur [0, 10]. Calculer P(2 ≤ X ≤ 5), E(X) et Var(X).',
+          answer: 'La densité vaut 1/10 sur [0, 10]. P(2 ≤ X ≤ 5) = (5 − 2)/10 = 0,3. E(X) = (0 + 10)/2 = 5 et Var(X) = 10²/12 = 25/3 ≈ 8,33.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi P(X = 3) = 0 pour une variable continue, alors que 3 est une valeur possible ?',
+            answer: 'La probabilité est l’aire sous la densité ; elle est nulle pour un seul point, qui a une largeur nulle. Seuls les intervalles ont une probabilité non nulle.'
+          },
+          {
+            question: 'Si X suit N(50 ; 4²), quelle est la probabilité que X soit compris entre 42 et 58 ?',
+            answer: 'Z va de (42 − 50)/4 = −2 à (58 − 50)/4 = 2. Donc P ≈ 0,9545.'
+          },
+          {
+            question: 'On observe n = 100 variables indépendantes de même loi, d’écart type σ = 2. Quel est l’écart type de leur moyenne ?',
+            answer: 'σ/√n = 2/√100 = 2/10 = 0,2.'
+          }
+        ],
+        equationDetails: [
+          {
+            title: 'Densité de probabilité',
+            formula: 'P(a ≤ X ≤ b) = ∫ₐᵇ f(x) dx  avec  f(x) ≥ 0  et  ∫ f(x) dx = 1 sur ℝ',
+            explanation: 'Pour une variable continue, la probabilité d’un intervalle est l’aire située sous la densité entre les bornes. L’aire totale sous la densité vaut 1.',
+            parameters: 'f : densité de probabilité (positive) ; a ≤ b : bornes de l’intervalle ; X : variable aléatoire continue.',
+            example: 'Loi uniforme sur [0, 10] : f(x) = 1/10, donc P(2 ≤ X ≤ 5) = ∫₂⁵ (1/10) dx = 3/10.',
+            result: 'P(2 ≤ X ≤ 5) = 0,3.'
+          },
+          {
+            title: 'Loi uniforme',
+            formula: 'f(x) = 1/(b − a) sur [a, b]  ;  E(X) = (a + b)/2  ;  Var(X) = (b − a)²/12',
+            explanation: 'Tous les sous-intervalles de même longueur ont la même probabilité.',
+            parameters: 'a < b : bornes du support ; E(X) : milieu de l’intervalle ; Var(X) : variance, dans le carré de l’unité de X.',
+            example: 'Pour a = 0 et b = 10 : E(X) = 10/2 et Var(X) = 100/12.',
+            result: 'E(X) = 5 et Var(X) = 25/3 ≈ 8,33.'
+          },
+          {
+            title: 'Loi normale et standardisation',
+            formula: 'Z = (X − μ)/σ  avec  X ~ N(μ, σ²)  et  Z ~ N(0, 1)',
+            explanation: 'Toute variable normale se ramène à la loi normale centrée réduite par translation et changement d’échelle, ce qui permet d’utiliser une seule table.',
+            parameters: 'μ : espérance de X ; σ : écart type de X (σ > 0) ; Z : variable centrée réduite ; Φ(z) = P(Z ≤ z) : fonction de répartition de N(0, 1).',
+            example: 'Pour μ = 100 et σ = 15 : P(85 ≤ X ≤ 115) = P(−1 ≤ Z ≤ 1) = Φ(1) − Φ(−1).',
+            result: 'P ≈ 0,6827.'
+          },
+          {
+            title: 'Théorème central limite',
+            formula: '(X̄ₙ − μ)/(σ/√n) → N(0, 1) quand n → ∞',
+            explanation: 'La moyenne de n variables indépendantes de même loi, d’espérance μ et d’écart type σ finis, est approximativement normale pour n grand, d’écart type σ/√n.',
+            parameters: 'X̄ₙ : moyenne de n observations ; μ : espérance commune ; σ : écart type commun (non nul) ; n : nombre d’observations ; σ/√n : écart type de la moyenne.',
+            example: 'Pour n = 100 et σ = 2 : écart type de la moyenne = 2/√100.',
+            result: 'σ/√n = 0,2.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Introductory Statistics 2e, 5.1 Properties of Continuous Probability Density Functions', url: 'https://openstax.org/books/introductory-statistics-2e/pages/5-1-properties-of-continuous-probability-density-functions' },
+          { title: 'OpenStax — Introductory Statistics 2e, 6.1 The Standard Normal Distribution', url: 'https://openstax.org/books/introductory-statistics-2e/pages/6-1-the-standard-normal-distribution' },
+          { title: 'OpenStax — Introductory Statistics 2e, 7.1 The Central Limit Theorem for Sample Means (Averages)', url: 'https://openstax.org/books/introductory-statistics-2e/pages/7-1-the-central-limit-theorem-for-sample-means-averages' },
+          { title: 'Wikipedia — Normal distribution', url: 'https://en.wikipedia.org/wiki/Normal_distribution' },
+          { title: 'Wikipedia — Central limit theorem', url: 'https://en.wikipedia.org/wiki/Central_limit_theorem' },
+          { title: 'Wikipedia — Law of large numbers', url: 'https://en.wikipedia.org/wiki/Law_of_large_numbers' }
+        ]
+      }
+    }
+  ]
+},
+
+
 
 ]
 
