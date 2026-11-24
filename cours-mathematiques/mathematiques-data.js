@@ -4533,6 +4533,290 @@ window.courseCatalog = [
     }
   ]
 },
+{
+  id: 'math-Integrales',
+  title: 'Intégrales',
+  note: 'Six chapitres sur le calcul intégral à une variable : sommes de Riemann, intégrale définie, théorème fondamental, primitives, techniques d’intégration et applications géométriques. Le cadre est celui de l’intégrale de Riemann des fonctions continues.',
+  chapters: [
+    {
+      id: 'aires-sommes-riemann',
+      title: 'Aires et sommes de Riemann',
+      field: 'Mathématiques · Analyse · Approximation d’une aire par des rectangles',
+      summary: 'Comprendre comment l’aire sous une courbe est approchée par des sommes de rectangles, puis définie comme une limite.',
+      lesson: {
+        sections: [
+          'Le problème de l’aire sous une courbe est à l’origine du calcul intégral. Pour une fonction f continue et positive sur [a, b], on cherche l’aire de la région comprise entre la courbe y = f(x), l’axe des x et les droites x = a et x = b. Quand la courbe n’est pas une droite, aucune formule élémentaire de géométrie ne donne directement cette aire : on approche donc la région par des rectangles, dont l’aire est facile à calculer. L’idée d’approcher une aire par des figures simples remonte à l’Antiquité, notamment à la méthode d’exhaustion utilisée par Archimède.',
+          'On découpe [a, b] en n sous-intervalles de même largeur Δx = (b − a)/n. Les points de la partition sont xᵢ = a + i·Δx pour i = 0, 1, …, n, avec x₀ = a et xₙ = b. Sur chaque sous-intervalle [xᵢ₋₁, xᵢ], on construit un rectangle de largeur Δx et de hauteur f(x*ᵢ), où x*ᵢ est un point choisi dans ce sous-intervalle. La somme des aires de ces rectangles est une somme de Riemann : Σ f(x*ᵢ)·Δx, avec i de 1 à n.',
+          'Trois choix du point x*ᵢ sont classiques. La somme de gauche utilise l’extrémité gauche : Lₙ = Σ f(xᵢ₋₁)·Δx. La somme de droite utilise l’extrémité droite : Rₙ = Σ f(xᵢ)·Δx. La somme du milieu utilise le milieu de chaque sous-intervalle : Mₙ = Σ f((xᵢ₋₁ + xᵢ)/2)·Δx. Ces trois sommes approchent la même aire, mais avec des erreurs différentes.',
+          'Si f est croissante sur [a, b], la somme de gauche sous-estime l’aire et la somme de droite la surestime : Lₙ ≤ A ≤ Rₙ. Si f est décroissante, c’est l’inverse : Rₙ ≤ A ≤ Lₙ. Cet encadrement donne une estimation de l’erreur commise, puisque l’aire exacte est comprise entre les deux sommes.',
+          'Pour passer des sommes à une limite, on utilise la notation sigma et trois formules usuelles : Σ i = n(n + 1)/2, Σ i² = n(n + 1)(2n + 1)/6 et Σ i³ = [n(n + 1)/2]², avec i de 1 à n. On utilise aussi la linéarité : Σ (c·aᵢ) = c·Σ aᵢ, Σ (aᵢ + bᵢ) = Σ aᵢ + Σ bᵢ et Σ c = n·c pour une constante c.',
+          'Quand n tend vers l’infini, Δx tend vers 0 et les rectangles épousent de mieux en mieux la courbe. Pour une fonction continue sur [a, b], les sommes de Riemann associées à des partitions régulières convergent vers une même limite, quel que soit le choix des points x*ᵢ. Cette limite est l’aire A = lim Σ f(x*ᵢ)·Δx lorsque f est positive. Elle sera appelée intégrale définie dans le chapitre suivant. Cette définition est due, dans sa forme moderne, à Bernhard Riemann, au XIXᵉ siècle.'
+        ],
+        example: {
+          statement: 'Soit f(x) = x² sur [0, 1]. Calculer la somme de droite R₄ avec n = 4, puis la limite de Rₙ quand n tend vers l’infini.',
+          calculation: 'Δx = 1/4. Les points de droite sont 1/4, 1/2, 3/4 et 1, et les valeurs de f sont 1/16, 4/16, 9/16 et 16/16. Donc R₄ = (1/4)·(30/16) = 30/64 = 15/32 = 0,46875. Pour n quelconque : Rₙ = Σ (i/n)²·(1/n) = (1/n³)·Σ i² = (1/n³)·n(n + 1)(2n + 1)/6 = (n + 1)(2n + 1)/(6n²). Quand n → ∞, Rₙ → 2/6 = 1/3.',
+          answer: 'R₄ = 15/32 = 0,46875, et la limite de Rₙ est 1/3. L’aire sous y = x² entre 0 et 1 vaut donc 1/3. La somme de droite surestime l’aire car f est croissante.'
+        },
+        exercise: {
+          question: 'Calculer la somme de gauche L₄ pour f(x) = x sur [0, 2], puis la comparer à l’aire exacte.',
+          answer: 'Δx = 1/2 et les points de gauche sont 0, 1/2, 1 et 3/2. Donc L₄ = (1/2)·(0 + 1/2 + 1 + 3/2) = (1/2)·3 = 3/2. L’aire exacte du triangle est (1/2)·2·2 = 2. Comme f est croissante, la somme de gauche sous-estime l’aire.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la largeur Δx lorsqu’on découpe [1, 5] en n = 8 sous-intervalles de même largeur ?',
+            answer: 'Δx = (5 − 1)/8 = 1/2.'
+          },
+          {
+            question: 'Calculer Σ i² pour i de 1 à 10 avec la formule n(n + 1)(2n + 1)/6.',
+            answer: '10 × 11 × 21 / 6 = 385.'
+          },
+          {
+            question: 'Calculer R₂ pour f(x) = x² sur [0, 1] et vérifier la formule Rₙ = (n + 1)(2n + 1)/(6n²).',
+            answer: 'Δx = 1/2, les points de droite sont 1/2 et 1, donc R₂ = (1/2)·(1/4 + 1) = 5/8. La formule donne 3 × 5 / (6 × 4) = 15/24 = 5/8.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Calculus Volume 1, 5.1 Approximating Areas', url: 'https://openstax.org/books/calculus-volume-1/pages/5-1-approximating-areas' },
+          { title: 'OpenStax — Calculus Volume 2, 1.1 Approximating Areas', url: 'https://openstax.org/books/calculus-volume-2/pages/1-1-approximating-areas' },
+          { title: 'Wikipedia — Riemann sum', url: 'https://en.wikipedia.org/wiki/Riemann_sum' },
+          { title: 'Wikipedia — Method of exhaustion', url: 'https://en.wikipedia.org/wiki/Method_of_exhaustion' }
+        ]
+      }
+    },
+    {
+      id: 'integrale-definie',
+      title: 'L’intégrale définie et ses propriétés',
+      field: 'Mathématiques · Analyse · Intégrale de Riemann',
+      summary: 'Définir l’intégrale comme limite de sommes de Riemann, interpréter l’aire algébrique et maîtriser les propriétés de base.',
+      lesson: {
+        sections: [
+          'Soit f une fonction définie sur [a, b]. L’intégrale définie de f de a à b est ∫ₐᵇ f(x) dx = lim Σ f(x*ᵢ)·Δx quand n → ∞, lorsque cette limite existe. On dit alors que f est intégrable sur [a, b]. Dans la notation, le symbole ∫ est un S allongé, introduit par Leibniz et rappelant le mot somme ; a et b sont les bornes, f(x) est l’intégrande et dx indique la variable d’intégration.',
+          'Toute fonction continue sur [a, b] est intégrable. Une fonction bornée qui n’a qu’un nombre fini de points de discontinuité l’est aussi. En revanche, une fonction non bornée sur [a, b] n’est pas intégrable au sens de Riemann. La variable d’intégration est muette : ∫ₐᵇ f(x) dx = ∫ₐᵇ f(t) dt.',
+          'Si f(x) ≥ 0 sur [a, b], l’intégrale est l’aire de la région sous la courbe. Si f prend des valeurs négatives, l’intégrale est une aire algébrique : l’aire des parties situées au-dessus de l’axe des x moins l’aire des parties situées en dessous. L’intégrale n’est donc pas toujours égale à l’aire géométrique totale entre la courbe et l’axe.',
+          'Conventions et propriétés algébriques : ∫ₐᵃ f(x) dx = 0 ; ∫ₐᵇ f(x) dx = −∫_b^a f(x) dx ; ∫ₐᵇ c dx = c(b − a) pour une constante c ; linéarité : ∫ₐᵇ [f(x) + g(x)] dx = ∫ₐᵇ f(x) dx + ∫ₐᵇ g(x) dx et ∫ₐᵇ c·f(x) dx = c·∫ₐᵇ f(x) dx ; relation de Chasles : ∫ₐᶜ f(x) dx = ∫ₐᵇ f(x) dx + ∫_b^c f(x) dx, quelle que soit la position de b par rapport à a et c, à condition que f soit intégrable sur l’intervalle le plus large.',
+          'Propriétés de comparaison : si f(x) ≤ g(x) sur [a, b] avec a ≤ b, alors ∫ₐᵇ f(x) dx ≤ ∫ₐᵇ g(x) dx. Si m ≤ f(x) ≤ M sur [a, b], alors m(b − a) ≤ ∫ₐᵇ f(x) dx ≤ M(b − a). Enfin |∫ₐᵇ f(x) dx| ≤ ∫ₐᵇ |f(x)| dx. Ces inégalités permettent d’encadrer une intégrale sans la calculer.',
+          'La valeur moyenne de f sur [a, b] est f_moy = (1/(b − a))·∫ₐᵇ f(x) dx. Théorème de la moyenne pour les intégrales : si f est continue sur [a, b], il existe c dans [a, b] tel que f(c) = f_moy. Géométriquement, le rectangle de base [a, b] et de hauteur f(c) a la même aire que la région sous la courbe.',
+          'Certaines intégrales se calculent par la géométrie, sans primitive. Par exemple, ∫₋ᵣʳ √(r² − x²) dx est l’aire d’un demi-disque de rayon r, soit πr²/2. Autre cas utile : si f est impaire et intégrable sur [−a, a], alors ∫₋ₐᵃ f(x) dx = 0 ; si f est paire, ∫₋ₐᵃ f(x) dx = 2·∫₀ᵃ f(x) dx.'
+        ],
+        example: {
+          statement: 'Calculer la valeur moyenne de f(x) = x sur [0, 4], puis trouver le point c donné par le théorème de la moyenne.',
+          calculation: 'L’intégrale ∫₀⁴ x dx est l’aire d’un triangle de base 4 et de hauteur 4 : (1/2)·4·4 = 8. La valeur moyenne est donc 8/4 = 2. On cherche c tel que f(c) = 2, c’est-à-dire c = 2, qui appartient bien à [0, 4].',
+          answer: 'La valeur moyenne de f sur [0, 4] est 2, atteinte en c = 2.'
+        },
+        exercise: {
+          question: 'Calculer ∫₋₃³ √(9 − x²) dx en utilisant la géométrie.',
+          answer: 'La courbe y = √(9 − x²) est le demi-cercle supérieur de rayon 3. L’intégrale vaut donc la moitié de l’aire du disque : (1/2)·π·3² = 9π/2.'
+        },
+        exercises: [
+          {
+            question: 'Calculer ∫₀⁴ 3 dx.',
+            answer: '3 × (4 − 0) = 12, soit l’aire d’un rectangle de base 4 et de hauteur 3.'
+          },
+          {
+            question: 'On sait que ∫₀² f(x) dx = 5 et ∫₂⁵ f(x) dx = 3. Que vaut ∫₀⁵ f(x) dx ?',
+            answer: 'Par la relation de Chasles, ∫₀⁵ f(x) dx = 5 + 3 = 8.'
+          },
+          {
+            question: 'Pourquoi ∫₋₂² x dx = 0 alors que la région entre la droite y = x et l’axe des x a une aire non nulle ?',
+            answer: 'L’intégrale est une aire algébrique. Le triangle situé sous l’axe sur [−2, 0] compte −2 et le triangle situé au-dessus sur [0, 2] compte +2, donc la somme est nulle. C’est aussi la propriété des fonctions impaires.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Calculus Volume 1, 5.2 The Definite Integral', url: 'https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral' },
+          { title: 'Wikipedia — Riemann integral', url: 'https://en.wikipedia.org/wiki/Riemann_integral' },
+          { title: 'Wikipedia — Integral', url: 'https://en.wikipedia.org/wiki/Integral' },
+          { title: 'Wikipedia — Mean value theorem', url: 'https://en.wikipedia.org/wiki/Mean_value_theorem' }
+        ]
+      }
+    },
+    {
+      id: 'theoreme-fondamental',
+      title: 'Le théorème fondamental du calcul',
+      field: 'Mathématiques · Analyse · Lien entre dérivation et intégration',
+      summary: 'Comprendre pourquoi dériver et intégrer sont des opérations réciproques, et calculer une intégrale à l’aide d’une primitive.',
+      lesson: {
+        sections: [
+          'Le théorème fondamental du calcul relie deux idées apparemment distinctes : la dérivée, qui mesure un taux de variation, et l’intégrale, qui accumule des quantités. Il a été mis en forme au XVIIᵉ siècle par Isaac Newton et Gottfried Wilhelm Leibniz, qui ont chacun développé le calcul infinitésimal de façon indépendante. Il permet de calculer une intégrale sans passer par la limite de sommes de Riemann.',
+          'Première partie. Soit f continue sur [a, b] et F définie par F(x) = ∫ₐˣ f(t) dt. Alors F est continue sur [a, b], dérivable sur ]a, b[ et F′(x) = f(x). Autrement dit, la fonction « aire accumulée depuis a » est une primitive de f. Dans cette écriture, t est la variable muette et x est la borne supérieure variable.',
+          'Idée de la démonstration : F(x + h) − F(x) = ∫ₓˣ⁺ʰ f(t) dt. D’après le théorème de la moyenne, cette quantité est égale à f(c_h)·h pour un point c_h compris entre x et x + h. En divisant par h, on obtient f(c_h). Quand h tend vers 0, c_h tend vers x et, par continuité de f, f(c_h) tend vers f(x). La continuité de f est donc essentielle à ce raisonnement.',
+          'Deuxième partie. Si f est continue sur [a, b] et si F est une primitive quelconque de f, alors ∫ₐᵇ f(x) dx = F(b) − F(a). On note souvent F(b) − F(a) = [F(x)]ₐᵇ. Le résultat ne dépend pas de la primitive choisie : si on remplace F par F + C, la constante C disparaît dans la différence F(b) − F(a).',
+          'Version avec composition : si f est continue et g dérivable, alors d/dx ∫ₐ^{g(x)} f(t) dt = f(g(x))·g′(x). Cette formule vient de la première partie combinée à la dérivée d’une fonction composée. Si la borne inférieure est aussi variable, on sépare l’intégrale en deux avec la relation de Chasles.',
+          'Le théorème garantit l’existence d’une primitive pour toute fonction continue, mais pas qu’elle s’exprime avec des fonctions élémentaires. Par exemple, la fonction x ↦ ∫₀ˣ e^(−t²) dt est bien définie et dérivable, de dérivée e^(−x²), mais elle ne s’écrit pas avec les fonctions usuelles ; elle est liée à la fonction d’erreur erf(x) = (2/√π)·∫₀ˣ e^(−t²) dt. Même chose pour x ↦ ∫ (sin t)/t dt.',
+          'Exemple de définition d’une fonction par une intégrale : pour x > 0, posons F(x) = ∫₁ˣ (1/t) dt. Alors F′(x) = 1/x et F(1) = 0. Comme ln x vérifie les mêmes deux conditions, on obtient F(x) = ln x. De nombreux cours définissent d’ailleurs le logarithme népérien de cette façon.'
+        ],
+        example: {
+          statement: 'Calculer ∫₁³ x² dx, puis la dérivée de G(x) = ∫₁^(x³) sin t dt.',
+          calculation: 'Une primitive de x² est x³/3. Donc ∫₁³ x² dx = [x³/3]₁³ = 27/3 − 1/3 = 26/3. Pour G, on applique la version avec composition avec f(t) = sin t et g(x) = x³ : G′(x) = sin(x³)·3x².',
+          answer: '∫₁³ x² dx = 26/3 et G′(x) = 3x²·sin(x³).'
+        },
+        exercise: {
+          question: 'Calculer ∫₀^π sin x dx.',
+          answer: 'Une primitive de sin x est −cos x. Donc ∫₀^π sin x dx = [−cos x]₀^π = −cos π + cos 0 = 1 + 1 = 2.'
+        },
+        exercises: [
+          {
+            question: 'Que vaut la dérivée de F(x) = ∫₀ˣ e^(t²) dt ?',
+            answer: 'D’après la première partie du théorème, F′(x) = e^(x²).'
+          },
+          {
+            question: 'Calculer ∫₀¹ (3x² + 1) dx.',
+            answer: 'Une primitive est x³ + x. Donc l’intégrale vaut [x³ + x]₀¹ = (1 + 1) − 0 = 2.'
+          },
+          {
+            question: 'Pourquoi la constante C n’apparaît-elle pas dans le calcul de ∫ₐᵇ f(x) dx = F(b) − F(a) ?',
+            answer: 'Si l’on remplace F par F + C, on obtient (F(b) + C) − (F(a) + C) = F(b) − F(a) : la constante s’annule.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Calculus Volume 1, 5.3 The Fundamental Theorem of Calculus', url: 'https://openstax.org/books/calculus-volume-1/pages/5-3-the-fundamental-theorem-of-calculus' },
+          { title: 'OpenStax — Calculus Volume 2, 1.3 The Fundamental Theorem of Calculus', url: 'https://openstax.org/books/calculus-volume-2/pages/1-3-the-fundamental-theorem-of-calculus' },
+          { title: 'Wikipedia — Fundamental theorem of calculus', url: 'https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus' },
+          { title: 'Wikipedia — Error function', url: 'https://en.wikipedia.org/wiki/Error_function' }
+        ]
+      }
+    },
+    {
+      id: 'primitives-variation-nette',
+      title: 'Primitives, intégrales indéfinies et variation nette',
+      field: 'Mathématiques · Analyse · Calcul de primitives usuelles',
+      summary: 'Connaître les primitives usuelles, utiliser le théorème de la variation nette et distinguer déplacement et distance parcourue.',
+      lesson: {
+        sections: [
+          'Une primitive de f sur un intervalle I est une fonction F dérivable sur I telle que F′(x) = f(x) pour tout x de I. Si F est une primitive de f, toutes les autres primitives sur cet intervalle sont de la forme F + C, où C est une constante. L’ensemble des primitives s’appelle l’intégrale indéfinie et se note ∫ f(x) dx = F(x) + C.',
+          'Il ne faut pas confondre les deux notions : l’intégrale définie ∫ₐᵇ f(x) dx est un nombre, alors que l’intégrale indéfinie ∫ f(x) dx est une famille de fonctions. Le lien est donné par le théorème fondamental : ∫ₐᵇ f(x) dx = [F(x)]ₐᵇ.',
+          'Primitives usuelles, obtenues en lisant à l’envers le tableau des dérivées : ∫ xⁿ dx = xⁿ⁺¹/(n + 1) + C pour n ≠ −1 ; ∫ (1/x) dx = ln|x| + C sur un intervalle ne contenant pas 0 ; ∫ eˣ dx = eˣ + C ; ∫ aˣ dx = aˣ/ln a + C pour a > 0 et a ≠ 1 ; ∫ sin x dx = −cos x + C ; ∫ cos x dx = sin x + C ; ∫ sec² x dx = tan x + C.',
+          'Primitives liées aux fonctions trigonométriques réciproques : ∫ 1/(1 + x²) dx = arctan x + C et ∫ 1/√(1 − x²) dx = arcsin x + C pour −1 < x < 1. Par linéarité, ∫ [c·f(x) + g(x)] dx = c·∫ f(x) dx + ∫ g(x) dx. On vérifie toujours une primitive en la dérivant.',
+          'Théorème de la variation nette : si F est dérivable et si F′ est continue sur [a, b], alors ∫ₐᵇ F′(x) dx = F(b) − F(a). L’intégrale d’un taux de variation donne la variation totale de la quantité. Exemples : l’intégrale d’un débit donne un volume, l’intégrale d’une vitesse donne une variation de position.',
+          'Déplacement et distance. Si v(t) est la vitesse algébrique d’un mobile sur une droite, le déplacement entre t = a et t = b est ∫ₐᵇ v(t) dt, qui peut être négatif ou nul. La distance totale parcourue est ∫ₐᵇ |v(t)| dt. Pour la calculer, on cherche les instants où v change de signe et on sépare l’intégrale en morceaux.',
+          'Fonctions paires et impaires. Pour f impaire, ∫₋ₐᵃ f(x) dx = 0. Pour f paire, ∫₋ₐᵃ f(x) dx = 2·∫₀ᵃ f(x) dx. Ces propriétés évitent parfois de longs calculs. Attention : on ne peut appliquer ces règles que sur un intervalle symétrique par rapport à 0.'
+        ],
+        example: {
+          statement: 'Un mobile a pour vitesse v(t) = 2t − 4 (en m/s) sur l’intervalle [0, 5] (en s). Calculer son déplacement et la distance totale parcourue.',
+          calculation: 'Une primitive de v est t² − 4t. Déplacement : ∫₀⁵ (2t − 4) dt = [t² − 4t]₀⁵ = (25 − 20) − 0 = 5. La vitesse s’annule en t = 2, est négative sur [0, 2] et positive sur [2, 5]. Distance : ∫₀² |v| dt = −[t² − 4t]₀² = −(4 − 8) = 4, puis ∫₂⁵ v dt = [t² − 4t]₂⁵ = 5 − (−4) = 9. Total : 4 + 9 = 13.',
+          answer: 'Le déplacement est de 5 m et la distance totale parcourue est de 13 m.'
+        },
+        exercise: {
+          question: 'Déterminer ∫ (4x³ − 2x + 1) dx et vérifier le résultat par dérivation.',
+          answer: 'Par linéarité, ∫ (4x³ − 2x + 1) dx = x⁴ − x² + x + C. Vérification : la dérivée de x⁴ − x² + x + C est 4x³ − 2x + 1.'
+        },
+        exercises: [
+          {
+            question: 'Calculer ∫₁⁴ √x dx.',
+            answer: 'On écrit √x = x^(1/2), de primitive (2/3)x^(3/2). Donc ∫₁⁴ √x dx = (2/3)(4^(3/2) − 1) = (2/3)(8 − 1) = 14/3.'
+          },
+          {
+            question: 'Calculer ∫₀¹ eˣ dx.',
+            answer: '[eˣ]₀¹ = e − 1.'
+          },
+          {
+            question: 'Pourquoi écrit-on ln|x| et non ln x pour une primitive de 1/x ?',
+            answer: 'La fonction 1/x est définie pour tout x ≠ 0, alors que ln x n’est défini que pour x > 0. La dérivée de ln|x| est 1/x aussi bien pour x > 0 que pour x < 0.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Calculus Volume 1, 5.4 Integration Formulas and the Net Change Theorem', url: 'https://openstax.org/books/calculus-volume-1/pages/5-4-integration-formulas-and-the-net-change-theorem' },
+          { title: 'OpenStax — Calculus Volume 1, 4.10 Antiderivatives', url: 'https://openstax.org/books/calculus-volume-1/pages/4-10-antiderivatives' },
+          { title: 'Wikipedia — Antiderivative', url: 'https://en.wikipedia.org/wiki/Antiderivative' },
+          { title: 'Wikipedia — List of integrals', url: 'https://en.wikipedia.org/wiki/Lists_of_integrals' }
+        ]
+      }
+    },
+    {
+      id: 'substitution-parties',
+      title: 'Changement de variable et intégration par parties',
+      field: 'Mathématiques · Analyse · Techniques d’intégration',
+      summary: 'Maîtriser les deux techniques de base qui transforment une intégrale difficile en intégrale plus simple.',
+      lesson: {
+        sections: [
+          'Le changement de variable (ou substitution) est la lecture inverse de la dérivée d’une fonction composée. Comme (F(g(x)))′ = F′(g(x))·g′(x), on a ∫ f(g(x))·g′(x) dx = ∫ f(u) du avec u = g(x) et du = g′(x) dx, où f = F′. On l’utilise lorsque l’intégrande contient une fonction composée multipliée par la dérivée de la fonction intérieure, à un facteur constant près.',
+          'Méthode : (1) choisir u = g(x), souvent la fonction intérieure ou ce qui se trouve sous une racine, un exposant ou un dénominateur ; (2) calculer du = g′(x) dx ; (3) réécrire entièrement l’intégrale en fonction de u ; (4) calculer la primitive ; (5) revenir à x pour une intégrale indéfinie.',
+          'Pour une intégrale définie, on change aussi les bornes : ∫ₐᵇ f(g(x))·g′(x) dx = ∫_{g(a)}^{g(b)} f(u) du. Il n’est alors pas nécessaire de revenir à la variable x. La fonction g doit être dérivable avec g′ continue, et f continue sur l’image de g.',
+          'L’intégration par parties est la lecture inverse de la dérivée d’un produit. De (u·v)′ = u′·v + u·v′, on déduit ∫ u dv = u·v − ∫ v du, c’est-à-dire ∫ u(x)·v′(x) dx = u(x)·v(x) − ∫ u′(x)·v(x) dx. Pour une intégrale définie : ∫ₐᵇ u·v′ dx = [u·v]ₐᵇ − ∫ₐᵇ u′·v dx.',
+          'Choix de u et de dv. On choisit u de sorte que u′ soit plus simple que u, et dv de sorte que v soit calculable. Une règle pratique, présentée dans OpenStax, est le mnémonique LIATE : on choisit u dans l’ordre Logarithmes, fonctions trigonométriques Inverses, fonctions Algébriques (polynômes), fonctions Trigonométriques, fonctions Exponentielles. C’est une aide heuristique et non une règle absolue.',
+          'Cas particuliers utiles : pour ∫ ln x dx, on prend u = ln x et dv = dx, ce qui donne x·ln x − x + C. Il arrive qu’il faille intégrer par parties plusieurs fois, par exemple pour ∫ x² eˣ dx. Dans certains cas, comme ∫ eˣ sin x dx, deux intégrations par parties font réapparaître l’intégrale de départ, et l’on résout alors une équation pour la déterminer.'
+        ],
+        example: {
+          statement: 'Calculer ∫₀² 2x(x² + 1)³ dx par changement de variable, puis ∫₀¹ x·eˣ dx par parties.',
+          calculation: 'Première intégrale : on pose u = x² + 1, donc du = 2x dx. Bornes : x = 0 donne u = 1 et x = 2 donne u = 5. L’intégrale devient ∫₁⁵ u³ du = [u⁴/4]₁⁵ = (625 − 1)/4 = 156. Seconde intégrale : on pose u = x et dv = eˣ dx, donc du = dx et v = eˣ. Alors ∫₀¹ x·eˣ dx = [x·eˣ]₀¹ − ∫₀¹ eˣ dx = e − (e − 1) = 1.',
+          answer: '∫₀² 2x(x² + 1)³ dx = 156 et ∫₀¹ x·eˣ dx = 1.'
+        },
+        exercise: {
+          question: 'Déterminer ∫ x·cos x dx par parties et vérifier par dérivation.',
+          answer: 'On pose u = x et dv = cos x dx, donc du = dx et v = sin x. Alors ∫ x·cos x dx = x·sin x − ∫ sin x dx = x·sin x + cos x + C. Vérification : (x·sin x + cos x)′ = sin x + x·cos x − sin x = x·cos x.'
+        },
+        exercises: [
+          {
+            question: 'Déterminer ∫ cos(3x) dx.',
+            answer: 'On pose u = 3x, donc du = 3 dx. Alors ∫ cos(3x) dx = (1/3)·∫ cos u du = (1/3)·sin(3x) + C.'
+          },
+          {
+            question: 'Calculer ∫₀¹ 2x·e^(x²) dx.',
+            answer: 'On pose u = x², du = 2x dx, les bornes deviennent 0 et 1. Alors ∫₀¹ eᵘ du = e − 1.'
+          },
+          {
+            question: 'Montrer que ∫ ln x dx = x·ln x − x + C.',
+            answer: 'On pose u = ln x et dv = dx, donc du = (1/x) dx et v = x. Alors ∫ ln x dx = x·ln x − ∫ x·(1/x) dx = x·ln x − x + C.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Calculus Volume 1, 5.5 Substitution', url: 'https://openstax.org/books/calculus-volume-1/pages/5-5-substitution' },
+          { title: 'OpenStax — Calculus Volume 2, 3.1 Integration by Parts', url: 'https://openstax.org/books/calculus-volume-2/pages/3-1-integration-by-parts' },
+          { title: 'Wikipedia — Integration by substitution', url: 'https://en.wikipedia.org/wiki/Integration_by_substitution' },
+          { title: 'Wikipedia — Integration by parts', url: 'https://en.wikipedia.org/wiki/Integration_by_parts' }
+        ]
+      }
+    },
+    {
+      id: 'applications-aires-volumes',
+      title: 'Applications : aires entre courbes et volumes',
+      field: 'Mathématiques · Analyse · Applications géométriques de l’intégrale',
+      summary: 'Utiliser l’intégrale pour calculer des aires entre deux courbes, des volumes de solides et des longueurs de courbes.',
+      lesson: {
+        sections: [
+          'Le principe commun des applications géométriques est de découper la grandeur cherchée en petits éléments, d’en écrire une valeur approchée sous forme de somme de Riemann, puis de passer à la limite pour obtenir une intégrale. On retrouve ainsi les aires, les volumes et les longueurs.',
+          'Aire entre deux courbes. Si f(x) ≥ g(x) sur [a, b], l’aire de la région comprise entre les courbes y = f(x) et y = g(x) est A = ∫ₐᵇ [f(x) − g(x)] dx. Si les courbes se croisent sur [a, b], on calcule d’abord les abscisses d’intersection, on découpe l’intervalle, et on intègre sur chaque morceau la différence « courbe du dessus moins courbe du dessous » ; ce qui revient à intégrer |f(x) − g(x)|.',
+          'Volume par tranches. Si un solide s’étend de x = a à x = b et si l’aire de sa section perpendiculaire à l’axe des x au point x est A(x), son volume est V = ∫ₐᵇ A(x) dx, pourvu que A soit continue. C’est le principe général dont découlent les méthodes suivantes.',
+          'Méthode des disques. Si f est continue et positive sur [a, b], le solide obtenu en faisant tourner la région sous y = f(x) autour de l’axe des x a pour sections des disques de rayon f(x). Son volume est V = π·∫ₐᵇ [f(x)]² dx. Méthode des rondelles : si on fait tourner la région comprise entre y = f(x) et y = g(x) avec f(x) ≥ g(x) ≥ 0, alors V = π·∫ₐᵇ ([f(x)]² − [g(x)]²) dx.',
+          'Méthode des coques cylindriques. Pour une rotation autour de l’axe des y d’une région sous y = f(x) avec 0 ≤ a < b, le volume est V = 2π·∫ₐᵇ x·f(x) dx. Chaque coque de rayon x, de hauteur f(x) et de petite épaisseur dx a pour volume approché 2π·x·f(x)·dx. Cette méthode évite parfois d’exprimer x en fonction de y.',
+          'Longueur d’une courbe. Si f est dérivable avec f′ continue sur [a, b], la longueur de la courbe y = f(x) entre x = a et x = b est L = ∫ₐᵇ √(1 + [f′(x)]²) dx. Cette formule vient du théorème de Pythagore appliqué à de petits segments de la courbe. Elle conduit souvent à des intégrales difficiles, que l’on évalue parfois numériquement.',
+          'Pour vérifier un résultat, on contrôle son ordre de grandeur et on recoupe avec une formule connue. Par exemple, la méthode des disques redonne le volume de la sphère et du cône, ce qui confirme la cohérence de la méthode.'
+        ],
+        example: {
+          statement: 'Calculer l’aire comprise entre y = x et y = x² sur [0, 1], puis le volume obtenu en faisant tourner la région sous y = √x, pour 0 ≤ x ≤ 4, autour de l’axe des x.',
+          calculation: 'Intersection : x = x² donne x = 0 ou x = 1. Sur ]0, 1[, x ≥ x². Aire = ∫₀¹ (x − x²) dx = [x²/2 − x³/3]₀¹ = 1/2 − 1/3 = 1/6. Volume par disques : V = π·∫₀⁴ (√x)² dx = π·∫₀⁴ x dx = π·[x²/2]₀⁴ = π·8 = 8π.',
+          answer: 'L’aire vaut 1/6 et le volume vaut 8π.'
+        },
+        exercise: {
+          question: 'Calculer l’aire de la région comprise entre la parabole y = x² et la droite y = 4.',
+          answer: 'Intersection : x² = 4 donne x = −2 ou x = 2. Sur [−2, 2], la droite est au-dessus. Aire = ∫₋₂² (4 − x²) dx = [4x − x³/3]₋₂² = (8 − 8/3) − (−8 + 8/3) = 16 − 16/3 = 32/3.'
+        },
+        exercises: [
+          {
+            question: 'Retrouver le volume d’une sphère de rayon r en faisant tourner le demi-disque y = √(r² − x²) autour de l’axe des x.',
+            answer: 'V = π·∫₋ᵣʳ (r² − x²) dx = π·[r²x − x³/3]₋ᵣʳ = π·(2r³ − 2r³/3) = 4πr³/3.'
+          },
+          {
+            question: 'Retrouver le volume d’un cône de rayon de base r et de hauteur h, en faisant tourner y = (r/h)x sur [0, h] autour de l’axe des x.',
+            answer: 'V = π·∫₀ʰ (r·x/h)² dx = π·(r²/h²)·[x³/3]₀ʰ = π·r²·h/3.'
+          },
+          {
+            question: 'Que faut-il faire pour calculer l’aire entre deux courbes qui se croisent à l’intérieur de [a, b] ?',
+            answer: 'Il faut déterminer les points d’intersection, découper [a, b] en intervalles sur lesquels une courbe reste au-dessus de l’autre, puis additionner les intégrales de « dessus moins dessous » ; ce qui revient à intégrer |f(x) − g(x)|.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax — Calculus Volume 2, 2.1 Areas between Curves', url: 'https://openstax.org/books/calculus-volume-2/pages/2-1-areas-between-curves' },
+          { title: 'OpenStax — Calculus Volume 2, 2.2 Determining Volumes by Slicing', url: 'https://openstax.org/books/calculus-volume-2/pages/2-2-determining-volumes-by-slicing' },
+          { title: 'OpenStax — Calculus Volume 2, 2.3 Volumes of Revolution: Cylindrical Shells', url: 'https://openstax.org/books/calculus-volume-2/pages/2-3-volumes-of-revolution-cylindrical-shells' },
+          { title: 'OpenStax — Calculus Volume 2, 2.4 Arc Length of a Curve and Surface Area', url: 'https://openstax.org/books/calculus-volume-2/pages/2-4-arc-length-of-a-curve-and-surface-area' },
+          { title: 'Wikipedia — Disc integration', url: 'https://en.wikipedia.org/wiki/Disc_integration' },
+          { title: 'Wikipedia — Shell integration', url: 'https://en.wikipedia.org/wiki/Shell_integration' }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
 
