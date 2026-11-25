@@ -4344,6 +4344,559 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'japon',
+  title: 'Japon',
+  note: 'Six chapitres approfondis consacrés à la géographie physique et humaine du Japon : situation de l’archipel, relief et géologie, climats et eaux, risques naturels, milieux et ressources, population et organisation territoriale. Les chiffres de superficie et de population sont datés et peuvent varier selon les méthodes de mesure et les années de référence.',
+  chapters: [
+    {
+      id: 'situation-geographique-et-archipel',
+      title: 'Situation géographique et organisation de l’archipel',
+      field: 'Géographie · Asie orientale · Territoire insulaire',
+      summary: 'Localiser le Japon en Asie orientale, décrire l’archipel, ses principales îles, ses façades maritimes et ses limites géographiques.',
+      lesson: {
+        sections: [
+          'Le Japon est un État insulaire d’Asie orientale situé à l’est du continent eurasiatique, dans le nord-ouest de l’océan Pacifique. Son territoire forme un arc allongé orienté globalement du nord-est vers le sud-ouest. Cette position le place à proximité de la péninsule coréenne, de la Chine et de l’Extrême-Orient russe, mais une séparation maritime le distingue du continent. Sa géographie ne peut donc pas être comprise comme celle d’un territoire continental : la mer structure les échanges, les mobilités, les ressources et une partie des risques auxquels le pays est exposé.',
+          'L’archipel comprend 4 grandes îles principales : Hokkaidō au nord, Honshū au centre, Shikoku au sud de Honshū et Kyūshū au sud-ouest. Honshū est la plus vaste et concentre plusieurs des principaux bassins urbains et économiques. À cet ensemble s’ajoutent de nombreuses îles plus petites, notamment l’archipel des Ryūkyū, qui s’étire vers le sud-ouest jusqu’à Okinawa. Le nombre total d’îles dépend de la méthode de comptage et de la définition retenue pour une île ; il faut donc éviter de présenter un chiffre comme intemporel.',
+          'Le Japon est bordé par plusieurs espaces maritimes. L’océan Pacifique longe principalement sa façade orientale et méridionale ; la mer du Japon se trouve entre l’archipel et le continent asiatique ; la mer d’Okhotsk borde le nord d’Hokkaidō ; la mer de Chine orientale s’étend au sud-ouest. Ces mers ne sont pas de simples limites : elles constituent des espaces de pêche, de navigation, de commerce et de contact avec les pays voisins. Les détroits qui séparent les îles principales jouent également un rôle dans les circulations intérieures.',
+          'L’extension de l’archipel en latitude explique une partie de ses contrastes naturels. Hokkaidō appartient au nord de l’ensemble japonais, tandis que les Ryūkyū se prolongent vers des latitudes subtropicales. Cette disposition entraîne des différences de températures, de végétation, de précipitations et de saisons agricoles. Les distances maritimes entre les îles rendent aussi les liaisons aériennes et navales importantes, même si les ponts, tunnels et réseaux ferroviaires relient plusieurs grands espaces proches.',
+          'La superficie du territoire est généralement donnée autour de 378 000 km², mais les valeurs exactes varient selon l’année, les relevés des côtes et les conventions statistiques. Le Statistical Handbook of Japan 2024 indiquait 377 975 km², tandis que des pages institutionnelles plus anciennes ou calculées selon d’autres dates donnent des valeurs légèrement différentes. Pour un travail rigoureux, il faut donc associer toute superficie à sa source et à son année plutôt que mélanger des chiffres provenant de séries statistiques différentes.',
+          'La forme insulaire du pays entraîne une forte relation entre les territoires et les littoraux. Les ports assurent une grande partie des échanges internationaux, les détroits organisent les routes maritimes et les villes portuaires concentrent des activités industrielles et commerciales. En revanche, l’insularité rend certaines régions dépendantes des liaisons maritimes ou aériennes, notamment les îles éloignées. L’organisation géographique du Japon résulte ainsi de l’articulation entre l’archipel, les mers qui l’entourent et les réseaux qui relient ses différentes parties.'
+        ],
+        example: {
+          statement: 'À partir des 4 îles principales, identifier l’île située au nord et celle qui occupe la position centrale la plus importante.',
+          calculation: 'Hokkaidō = île principale septentrionale ; Honshū = île principale la plus vaste.',
+          answer: 'Hokkaidō se trouve au nord de l’archipel principal. Honshū est la plus grande île du Japon.'
+        },
+        exercise: {
+          question: 'Quelles sont les 4 grandes îles principales du Japon ?',
+          answer: 'Hokkaidō, Honshū, Shikoku et Kyūshū.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle partie de l’Asie se situe le Japon ?',
+            answer: 'En Asie orientale, à l’est du continent eurasiatique.'
+          },
+          {
+            question: 'Quel océan borde principalement la façade orientale du Japon ?',
+            answer: 'L’océan Pacifique.'
+          },
+          {
+            question: 'Pourquoi faut-il préciser l’année lorsqu’on donne la superficie du Japon ?',
+            answer: 'Parce que les mesures peuvent varier selon les relevés géographiques, les méthodes et la date de référence.'
+          }
+        ],
+        sources: [
+          { title: 'Ministry of Foreign Affairs of Japan — Information about the Japanese Territory', url: 'https://www.mofa.go.jp/territory/page1we_000006.html' },
+          { title: 'Statistics Bureau of Japan — Statistical Handbook of Japan 2024', url: 'https://www.stat.go.jp/english/data/handbook/pdf/2024all.pdf' },
+          { title: 'Statistics Bureau of Japan — Japan Statistical Yearbook, Land and Climate', url: 'https://www.stat.go.jp/english/data/nenkan/75nenkan/1431-01.html' }
+        ]
+      }
+    },
+    {
+      id: 'relief-geologie-et-tectonique',
+      title: 'Relief, géologie et dynamique tectonique',
+      field: 'Géographie physique · Géomorphologie · Géologie',
+      summary: 'Expliquer le caractère montagneux du Japon, la formation de son relief, les arcs insulaires, les volcans et les plaines.',
+      lesson: {
+        sections: [
+          'Le relief japonais est dominé par les montagnes et les collines. Les synthèses institutionnelles indiquent qu’environ les deux tiers à près des trois quarts du territoire sont montagneux ou accidentés, selon la définition et la méthode retenues. Les espaces plats sont donc relativement limités et se concentrent surtout dans les plaines côtières et les bassins intérieurs. Cette contrainte topographique explique en partie la concentration des villes, des infrastructures et des terres agricoles dans un nombre restreint de secteurs accessibles.',
+          'Le centre de Honshū est marqué par des ensembles montagneux élevés souvent désignés sous le nom d’Alpes japonaises. Les chaînes montagneuses structurent les circulations et créent des contrastes entre les façades exposées aux vents humides et celles qui se trouvent sous leur abri. Le mont Fuji, volcan situé sur Honshū, atteint 3 776 mètres et constitue le point culminant du pays. Il ne représente toutefois pas à lui seul la diversité des reliefs japonais, qui comprend aussi des massifs anciens, des plateaux, des vallées encaissées et des bassins.',
+          'La géologie du Japon est étroitement liée à la tectonique des plaques. L’archipel se situe dans une zone complexe où interagissent plusieurs plaques lithosphériques, notamment les plaques Pacifique et de la mer des Philippines, ainsi que les ensembles continentaux voisins. La convergence et la subduction de plaques océaniques participent à la formation des arcs insulaires, à la déformation des roches, au soulèvement de reliefs et au magmatisme. Les limites et les modèles tectoniques locaux sont complexes ; il est donc plus exact de parler d’une zone de convergence à plusieurs plaques que de réduire tout le pays à une frontière simple entre 2 plaques.',
+          'La subduction correspond à l’enfoncement d’une plaque lithosphérique sous une autre. Elle peut provoquer des séismes, favoriser la production de magma et contribuer à l’édification de chaînes volcaniques. Les roches du Japon témoignent d’une histoire géologique longue : complexes d’accrétion, roches métamorphiques, roches plutoniques, roches volcaniques et dépôts sédimentaires y sont présents. La carte géologique du Geological Survey of Japan montre que les formations se répartissent selon de grandes structures orientées en partie parallèlement à l’allongement de l’archipel.',
+          'Les plaines japonaises sont généralement de taille modeste à l’échelle du pays, mais elles jouent un rôle majeur. La plaine du Kantō, où se trouve Tokyo, constitue un vaste espace de concentration urbaine. D’autres plaines et bassins se trouvent notamment autour de Niigata, Nagoya et Osaka. Une partie de ces terrains s’est formée par l’accumulation de sédiments transportés depuis les montagnes par les cours d’eau. Les plaines sont ainsi des milieux favorables à l’agriculture, à l’urbanisation et aux réseaux de transport, mais certains secteurs bas sont exposés aux inondations.',
+          'Les cours d’eau sont souvent relativement courts et présentent des pentes importantes, en raison de la proximité entre les reliefs et les côtes. Ils peuvent transporter rapidement des sédiments vers les plaines et réagir fortement aux épisodes de précipitations intenses. Les vallées constituent des axes de circulation et d’implantation, mais elles peuvent aussi être soumises aux crues et aux glissements de terrain. Le relief japonais doit donc être étudié comme un système associant montagnes, volcans, bassins, plaines, littoraux et réseaux hydrographiques.'
+        ],
+        example: {
+          statement: 'Le mont Fuji atteint 3 776 m. Calculer l’écart d’altitude entre son sommet et un point situé à 1 250 m.',
+          calculation: '3 776 - 1 250 = 2 526 m.',
+          answer: 'L’écart d’altitude est de 2 526 m.'
+        },
+        exercise: {
+          question: 'Quel mécanisme tectonique contribue fortement à la formation du relief et du volcanisme japonais ?',
+          answer: 'La convergence des plaques et la subduction de plaques océaniques sous des plaques voisines.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est l’altitude du mont Fuji ?',
+            answer: '3 776 mètres.'
+          },
+          {
+            question: 'Pourquoi les plaines sont-elles importantes malgré leur superficie limitée ?',
+            answer: 'Elles concentrent une part importante des villes, des infrastructures et des terres agricoles.'
+          },
+          {
+            question: 'Cite 2 types de roches présents dans la géologie japonaise.',
+            answer: 'Par exemple, les roches volcaniques et les roches métamorphiques.'
+          }
+        ],
+        sources: [
+          { title: 'Geological Survey of Japan, AIST — Geology of Japan', url: 'https://www.gsj.jp/en/education/geomap-e/geology-e.html' },
+          { title: 'Ministry of Land, Infrastructure, Transport and Tourism — Land and Climate of Japan', url: 'https://www.mlit.go.jp/river/basic_info/english/land.html' },
+          { title: 'Geospatial Information Authority of Japan — Maps and Geospatial Information', url: 'https://www.gsi.go.jp/ENGLISH/' }
+        ]
+      }
+    },
+    {
+      id: 'climats-eaux-et-saisonnalite',
+      title: 'Climats, précipitations et ressources en eau',
+      field: 'Climatologie · Hydrologie · Géographie physique',
+      summary: 'Étudier les contrastes climatiques du nord au sud, les influences maritimes, les moussons, les pluies et les cours d’eau.',
+      lesson: {
+        sections: [
+          'L’allongement de l’archipel du nord au sud entraîne une grande diversité climatique. Hokkaidō connaît des conditions froides en hiver et un climat globalement plus frais que celui du centre et du sud. Honshū présente des climats variés selon la latitude, l’altitude et l’exposition aux vents. Les îles Ryūkyū, dont Okinawa, relèvent d’un domaine subtropical. Il est donc inexact de décrire le Japon par un climat unique : les températures, les précipitations et la durée des saisons diffèrent fortement entre les régions.',
+          'Le climat japonais est influencé par les circulations atmosphériques saisonnières et par les masses d’air venues du continent asiatique et de l’océan Pacifique. En hiver, les vents dominants venant du nord-ouest traversent la mer du Japon et peuvent se charger en humidité ; en rencontrant les reliefs, ils provoquent d’importantes chutes de neige sur certaines régions de la façade occidentale. À l’inverse, la façade pacifique de nombreuses régions de Honshū connaît souvent un hiver plus sec et plus ensoleillé. Le relief renforce ainsi les contrastes climatiques à courte distance.',
+          'Le début de l’été est marqué dans une grande partie du pays par la saison des pluies appelée tsuyu. Elle correspond à une période de précipitations fréquentes liée à la présence d’un front quasi-stationnaire, dont la position et la durée varient selon les années et les régions. Cette saison contribue aux ressources en eau, mais des pluies persistantes ou intenses peuvent provoquer des crues et des glissements de terrain. Hokkaidō est généralement moins concernée par le régime de tsuyu que la plupart des autres régions japonaises.',
+          'Les typhons sont des cyclones tropicaux qui se développent dans le Pacifique nord-ouest. Certains atteignent le Japon, surtout pendant la saison chaude et au début de l’automne, mais leur trajectoire et leurs effets varient d’un épisode à l’autre. Ils peuvent apporter des vents violents, des précipitations abondantes, une forte houle et des submersions côtières. Les risques dépendent notamment de l’intensité du phénomène, de sa trajectoire, de la topographie locale et de l’état des sols et des cours d’eau.',
+          'Les précipitations alimentent un réseau hydrographique dense, mais les fleuves sont souvent courts et rapides en raison du relief montagneux et de la faible largeur de nombreuses îles. Les bassins versants peuvent réagir rapidement aux pluies intenses. Les eaux sont utilisées pour l’approvisionnement des villes, l’irrigation, l’industrie et la production hydroélectrique. La gestion de l’eau nécessite donc de concilier stockage, prévention des crues, maintien des écosystèmes aquatiques et besoins des populations.',
+          'Les données climatiques doivent être interprétées à partir de séries et de normales météorologiques clairement identifiées. Une moyenne annuelle ne suffit pas à décrire un climat régional : il faut considérer les températures mensuelles, les précipitations, la neige, l’humidité et les phénomènes extrêmes. L’Agence météorologique du Japon publie des observations et des statistiques permettant de comparer les stations. Pour une analyse précise, il faut toujours indiquer la station étudiée et la période de référence, car les moyennes changent lorsque la période statistique est actualisée.'
+        ],
+        example: {
+          statement: 'Une station météorologique relève 1 500 mm de précipitations annuelles, dont 300 mm pendant un mois donné. Calculer la part de ce mois dans le total annuel.',
+          calculation: '(300 / 1 500) × 100 = 20 %.',
+          answer: 'Ce mois représente 20 % des précipitations annuelles de cette station. Il s’agit d’un exemple de calcul, pas d’une mesure attribuée à une ville japonaise.'
+        },
+        exercise: {
+          question: 'Pourquoi la façade de la mer du Japon peut-elle recevoir d’importantes chutes de neige en hiver ?',
+          answer: 'Parce que les vents froids venant du continent se chargent en humidité au-dessus de la mer du Japon, puis rencontrent les reliefs et provoquent des précipitations neigeuses.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on la saison des pluies du début de l’été au Japon ?',
+            answer: 'Le tsuyu.'
+          },
+          {
+            question: 'Quel phénomène météorologique tropical peut toucher le Japon à la fin de l’été et en automne ?',
+            answer: 'Les typhons.'
+          },
+          {
+            question: 'Pourquoi faut-il préciser la station et la période lorsqu’on compare des données climatiques ?',
+            answer: 'Parce que le climat varie selon les régions et que les moyennes dépendent de la période d’observation.'
+          }
+        ],
+        sources: [
+          { title: 'Japan Meteorological Agency — Climate of Japan', url: 'https://www.data.jma.go.jp/cpd/longfcst/en/tourist.html' },
+          { title: 'Japan Meteorological Agency — Climate Statistics', url: 'https://www.jma.go.jp/jma/en/Activities/climate.html' },
+          { title: 'Ministry of Land, Infrastructure, Transport and Tourism — Land and Climate of Japan', url: 'https://www.mlit.go.jp/river/basic_info/english/land.html' },
+          { title: 'Japan National Tourism Organization — Weather and Geography', url: 'https://www.japan.travel/en/plan/weather/' }
+        ]
+      }
+    },
+    {
+      id: 'risques-naturels-et-prevention',
+      title: 'Risques naturels et prévention des catastrophes',
+      field: 'Géographie des risques · Tectonique · Aménagement',
+      summary: 'Comprendre les aléas sismiques, volcaniques, météorologiques et hydrologiques, ainsi que la vulnérabilité et la prévention.',
+      lesson: {
+        sections: [
+          'Le Japon est situé dans une région du monde où l’activité tectonique est importante. La convergence de plusieurs plaques lithosphériques provoque des déformations de la croûte et des séismes, aussi bien au large que sur les terres. Un séisme est un aléa naturel ; il ne devient une catastrophe que lorsque ses effets rencontrent des populations, des bâtiments et des réseaux vulnérables. La densité urbaine, la qualité des constructions, la profondeur du séisme et la nature des sols influencent donc les conséquences humaines et matérielles.',
+          'Les séismes sous-marins peuvent, dans certaines conditions, déplacer brutalement le fond marin et générer un tsunami. Celui-ci correspond à une série de vagues qui se propagent dans l’océan et peuvent atteindre les côtes avec des effets importants. Tous les séismes sous-marins ne produisent pas un tsunami dangereux : la magnitude, la profondeur, le mécanisme de rupture et le déplacement vertical du fond marin comptent. Les littoraux bas et densément occupés sont particulièrement concernés par les enjeux d’alerte, d’évacuation et d’aménagement.',
+          'Le volcanisme est une autre manifestation de la dynamique tectonique japonaise. L’archipel comporte de nombreux édifices volcaniques, dont une partie est considérée comme active selon les critères scientifiques utilisés. Les éruptions peuvent produire des cendres, des gaz, des coulées ou des écoulements dangereux selon le type de volcan et les conditions de l’épisode. Les autorités surveillent les volcans et diffusent des informations sur les niveaux d’alerte. Il faut distinguer la présence d’un volcan actif de l’existence d’un danger immédiat : le risque varie selon l’activité observée et les zones habitées.',
+          'Les aléas météorologiques et hydrologiques sont également importants. Les typhons et les pluies intenses peuvent provoquer des crues, des inondations, des glissements de terrain et des dégâts sur les infrastructures. Les vallées encaissées, les pentes instables et les secteurs urbanisés en bord de rivière peuvent être particulièrement vulnérables. Les effets dépendent de la combinaison entre intensité des précipitations, saturation des sols, occupation des espaces et capacité des ouvrages de protection.',
+          'La prévention repose sur plusieurs dispositifs complémentaires : observation scientifique, réseaux de mesure, systèmes d’alerte, cartes d’aléas, normes de construction, exercices de préparation et information de la population. Les aménagements peuvent inclure des digues, des bassins de rétention, des ouvrages de protection et des itinéraires d’évacuation. Aucun dispositif ne supprime entièrement le risque ; l’objectif est de réduire l’exposition et la vulnérabilité et d’améliorer la capacité de réaction des territoires.',
+          'L’analyse géographique des catastrophes distingue l’aléa, l’exposition et la vulnérabilité. L’aléa désigne la possibilité qu’un phénomène dangereux se produise ; l’exposition correspond aux personnes et aux biens situés dans la zone concernée ; la vulnérabilité désigne leur fragilité face au phénomène. Cette distinction permet de comprendre pourquoi un même événement physique peut produire des conséquences différentes selon les lieux. Elle montre aussi que l’aménagement du territoire et la préparation des populations sont essentiels, au même titre que la surveillance scientifique.'
+        ],
+        example: {
+          statement: 'Dans une commune, 2 quartiers sont exposés à un même aléa d’inondation. Le premier comporte des bâtiments adaptés et des itinéraires d’évacuation ; le second est plus densément construit et moins préparé. Quel facteur explique une différence possible de conséquences ?',
+          calculation: 'Risque = combinaison de l’aléa, de l’exposition et de la vulnérabilité ; la préparation et la résistance des constructions réduisent la vulnérabilité.',
+          answer: 'Le second quartier peut subir des conséquences plus importantes en raison de sa vulnérabilité plus élevée, même si l’aléa est comparable.'
+        },
+        exercise: {
+          question: 'Quelle différence existe-t-il entre un aléa naturel et une catastrophe ?',
+          answer: 'L’aléa est un phénomène potentiellement dangereux ; une catastrophe survient lorsque ses conséquences affectent gravement les populations, les biens et le fonctionnement d’un territoire.'
+        },
+        exercises: [
+          {
+            question: 'Tous les séismes sous-marins provoquent-ils un tsunami dangereux ?',
+            answer: 'Non. Cela dépend notamment du mécanisme de rupture et du déplacement du fond marin.'
+          },
+          {
+            question: 'Cite 2 mesures de prévention des risques au Japon.',
+            answer: 'Par exemple, les systèmes d’alerte et les normes de construction adaptées.'
+          },
+          {
+            question: 'Quels sont les 3 éléments souvent distingués dans l’analyse géographique du risque ?',
+            answer: 'L’aléa, l’exposition et la vulnérabilité.'
+          }
+        ],
+        sources: [
+          { title: 'Cabinet Office of Japan — Disaster Management', url: 'https://www.bousai.go.jp/foreign/English/index.html' },
+          { title: 'Japan Meteorological Agency — Earthquake Information', url: 'https://www.jma.go.jp/jma/en/Activities/earthquake.html' },
+          { title: 'Geological Survey of Japan — Geological Hazards', url: 'https://www.gsj.jp/en/' },
+          { title: 'Ministry of the Environment of Japan — Ecosystem-based Disaster Risk Reduction in Japan', url: 'https://www.env.go.jp/content/000042345.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'milieux-naturels-ressources-et-occupation-du-sol',
+      title: 'Milieux naturels, ressources et occupation du sol',
+      field: 'Géographie environnementale · Biogéographie · Ressources',
+      summary: 'Décrire la diversité des écosystèmes, les forêts, les milieux littoraux, l’agriculture et les contraintes de ressources.',
+      lesson: {
+        sections: [
+          'La diversité des milieux japonais est liée à l’étendue latitudinale de l’archipel, à son relief et à ses contrastes climatiques. On y trouve des milieux subtropicaux dans le sud, des forêts tempérées dans une grande partie du pays et des milieux montagnards ou froids en altitude et dans le nord. Les espèces et les formations végétales changent avec la latitude, l’altitude, l’exposition et les conditions d’humidité. Cette variété explique la richesse écologique de certains espaces, mais elle ne signifie pas que tous les écosystèmes sont préservés de la pression humaine.',
+          'Les forêts occupent une part importante du territoire japonais. Elles comprennent des forêts naturelles et des forêts exploitées ou plantées, dont la composition et l’état écologique diffèrent. Elles jouent plusieurs rôles : habitats pour la biodiversité, protection des sols, régulation partielle de l’écoulement de l’eau, stockage de carbone et ressource en bois. La présence d’une couverture forestière étendue ne suffit toutefois pas à mesurer la qualité écologique des milieux ; l’âge des peuplements, leur diversité, leur fragmentation et leur gestion doivent aussi être pris en compte.',
+          'Les littoraux japonais présentent une grande variété de formes : baies, caps, péninsules, plages, falaises et petites îles. Ces milieux accueillent des ports, des villes, des zones industrielles, des activités de pêche et des espaces touristiques. Les écosystèmes côtiers et marins sont importants pour la biodiversité et les ressources halieutiques, mais ils peuvent être affectés par l’urbanisation, les aménagements portuaires, la pollution et la surexploitation de certaines ressources. La gestion des littoraux doit donc associer activités économiques, protection écologique et prévention des risques.',
+          'L’agriculture japonaise est contrainte par le relief et la faible disponibilité relative de grandes plaines continues. Les cultures se concentrent dans les plaines, les vallées et les bassins aménagés. Le riz occupe une place historique et importante dans les paysages agricoles, notamment dans les rizières irriguées. D’autres productions varient selon les régions et les climats : maraîchage, fruits, thé et élevage. Les terres agricoles sont en concurrence avec l’urbanisation et les infrastructures dans les secteurs les plus accessibles.',
+          'Le Japon possède des ressources forestières, halieutiques et hydrauliques, mais il est relativement pauvre en plusieurs ressources minérales et énergétiques nécessaires à son économie. Il dépend donc d’importations pour une partie importante des combustibles fossiles et de nombreuses matières premières. Cette dépendance relie la géographie japonaise aux routes maritimes mondiales et aux marchés internationaux. Les choix énergétiques évoluent dans le temps ; toute affirmation sur la part d’une énergie doit être datée et appuyée sur des statistiques récentes.',
+          'La protection des milieux naturels repose sur des politiques de conservation, des parcs, des réserves et des dispositifs de gestion des ressources. Plusieurs sites japonais sont reconnus pour leur valeur écologique, notamment des forêts anciennes, des îles océaniques et des espaces littoraux. Les enjeux contemporains comprennent la fragmentation des habitats, l’évolution des pratiques agricoles et forestières, les espèces introduites, la pression touristique et les effets du changement climatique. Une approche géographique doit donc examiner les interactions entre les sociétés, les ressources et les écosystèmes plutôt que séparer la nature des activités humaines.'
+        ],
+        example: {
+          statement: 'Une région possède 800 km² de forêts sur une superficie totale de 1 000 km². Calculer la part forestière.',
+          calculation: '(800 / 1 000) × 100 = 80 %.',
+          answer: 'La forêt couvre 80 % de la région fictive étudiée. Ce calcul illustre une méthode et ne correspond pas à une statistique nationale japonaise.'
+        },
+        exercise: {
+          question: 'Pourquoi la couverture forestière ne suffit-elle pas, à elle seule, à mesurer la qualité écologique d’un territoire ?',
+          answer: 'Parce qu’il faut aussi étudier la diversité des espèces, l’état des peuplements, leur fragmentation, leur gestion et les pressions humaines.'
+        },
+        exercises: [
+          {
+            question: 'Cite 3 fonctions importantes des forêts japonaises.',
+            answer: 'Elles fournissent des habitats, protègent les sols et participent à la régulation de l’eau ; elles peuvent aussi stocker du carbone et fournir du bois.'
+          },
+          {
+            question: 'Pourquoi l’agriculture se concentre-t-elle souvent dans les plaines et les vallées ?',
+            answer: 'Parce que ces espaces offrent généralement des terrains plus faciles à cultiver et à aménager que les pentes montagneuses.'
+          },
+          {
+            question: 'Pourquoi le Japon dépend-il des échanges internationaux pour certaines ressources ?',
+            answer: 'Parce que ses ressources minérales et énergétiques nationales sont insuffisantes pour couvrir tous ses besoins.'
+          }
+        ],
+        sources: [
+          { title: 'OECD — Environment at a Glance: Japan', url: 'https://www.oecd.org/en/publications/environment-at-a-glance-country-notes_59ce6fe6-en/japan_cd8c2c40-en.html' },
+          { title: 'Ministry of the Environment of Japan — Nature Conservation', url: 'https://www.env.go.jp/en/nature/' },
+          { title: 'Ministry of Agriculture, Forestry and Fisheries of Japan', url: 'https://www.maff.go.jp/e/' },
+          { title: 'Ministry of Foreign Affairs of Japan — Information about the Japanese Territory', url: 'https://www.mofa.go.jp/territory/page1we_000006.html' }
+        ]
+      }
+    },
+    {
+      id: 'population-villes-et-organisation-territoriale',
+      title: 'Population, villes et organisation territoriale',
+      field: 'Géographie humaine · Géographie urbaine · Aménagement',
+      summary: 'Analyser la répartition de la population, les grandes régions métropolitaines, les réseaux de transport et les contrastes territoriaux.',
+      lesson: {
+        sections: [
+          'La population japonaise est très inégalement répartie dans l’espace. Les plaines et les bassins littoraux accueillent les densités les plus fortes, tandis que de nombreuses régions montagneuses et certaines zones rurales sont moins peuplées. Cette répartition s’explique par la topographie, l’histoire du peuplement, la localisation des emplois et l’accessibilité. Les statistiques de population doivent être datées : le recensement et les estimations annuelles ne décrivent pas exactement la même situation et peuvent être révisés.',
+          'La région du Kantō, autour de Tokyo, constitue le principal ensemble métropolitain du pays. Tokyo concentre des fonctions politiques, économiques, financières, culturelles et de transport. Son aire urbaine dépasse largement les limites administratives de la préfecture de Tokyo et s’étend dans les préfectures voisines. Il faut donc distinguer la population de la préfecture, celle de la ville au sens administratif et celle de l’agglomération ou de la région métropolitaine, car ces périmètres ne sont pas interchangeables.',
+          'L’axe urbain et industriel de la façade pacifique de Honshū rassemble plusieurs grandes métropoles, dont Tokyo, Nagoya et Osaka-Kobe-Kyoto. Il est souvent étudié comme un ensemble de fortes concentrations urbaines et d’activités reliées par des infrastructures majeures. Cette organisation est liée à la présence de plaines littorales, de ports, de marchés de consommation et de réseaux de transport. Elle ne signifie pas que tout le Japon est urbanisé de manière continue : les espaces montagneux et certaines régions périphériques conservent des densités beaucoup plus faibles.',
+          'Le Japon est organisé en 47 préfectures, qui constituent les principales unités administratives territoriales. Elles comprennent des statuts administratifs particuliers pour Tokyo, Hokkaidō, Osaka et Kyoto, mais toutes appartiennent à l’organisation territoriale nationale. Les préfectures sont subdivisées en municipalités. Les régions géographiques utilisées dans les études et les statistiques ne correspondent pas toujours à des collectivités administratives : leurs limites peuvent varier selon le sujet étudié.',
+          'Les réseaux de transport contribuent à relier les espaces fortement peuplés. Le Shinkansen relie plusieurs grandes villes de Honshū et de Kyūshū, tandis que les réseaux ferroviaires régionaux et urbains assurent une part importante des déplacements quotidiens. Les autoroutes, les ports et les aéroports complètent ces infrastructures. Les liaisons maritimes et aériennes restent essentielles pour les îles éloignées. La qualité de l’accessibilité influence la localisation des entreprises, des services et des habitants.',
+          'Le Japon connaît un vieillissement démographique et une diminution de sa population totale depuis plusieurs années. Ces évolutions ne touchent pas tous les territoires de la même manière : certaines grandes métropoles conservent une forte attractivité, tandis que de nombreuses petites villes et communes rurales perdent des habitants. Les conséquences concernent l’accès aux soins, les écoles, les transports, l’entretien des infrastructures et la gestion des logements vacants. Les politiques territoriales cherchent notamment à maintenir les services et à adapter les équipements aux évolutions démographiques.'
+        ],
+        example: {
+          statement: 'Un territoire compte 2 400 000 habitants pour une superficie de 8 000 km². Calculer sa densité moyenne.',
+          calculation: '2 400 000 / 8 000 = 300 habitants par km².',
+          answer: 'La densité moyenne est de 300 habitants par km². Une moyenne ne montre toutefois pas les écarts entre les zones urbaines, rurales et montagneuses.'
+        },
+        exercise: {
+          question: 'Pourquoi la population japonaise se concentre-t-elle davantage dans les plaines et les bassins littoraux ?',
+          answer: 'Ces espaces sont généralement plus faciles à aménager et accueillent de nombreuses villes, infrastructures, activités économiques et terres agricoles.'
+        },
+        exercises: [
+          {
+            question: 'Combien le Japon compte-t-il de préfectures ?',
+            answer: '47 préfectures.'
+          },
+          {
+            question: 'Quelle région métropolitaine domine le système urbain japonais ?',
+            answer: 'La région métropolitaine de Tokyo, dans le Kantō.'
+          },
+          {
+            question: 'Cite 2 conséquences territoriales du vieillissement et de la baisse démographique.',
+            answer: 'Par exemple, la diminution des effectifs scolaires et les difficultés à maintenir certains services dans les territoires ruraux.'
+          }
+        ],
+        sources: [
+          { title: 'Statistics Bureau of Japan — Population Census and Statistics', url: 'https://www.stat.go.jp/english/' },
+          { title: 'Statistics Bureau of Japan — Japan Statistical Yearbook', url: 'https://www.stat.go.jp/english/data/nenkan/' },
+          { title: 'Ministry of Land, Infrastructure, Transport and Tourism — White Papers and Statistics', url: 'https://www.mlit.go.jp/en/statistics/' },
+          { title: 'Japan National Tourism Organization — Regions of Japan', url: 'https://www.japan.travel/en/destinations/' }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  id: 'vietnam',
+  title: 'Vietnam',
+  note: 'Six chapitres approfondis sur la géographie du Vietnam : situation en Asie du Sud-Est, relief et géologie, climats et moussons, fleuves et deltas, risques naturels et environnement, population et organisation du territoire. Les chiffres statistiques sont associés à leur année ou à leur source ; les superficies et les limites géographiques peuvent varier selon les conventions de mesure.',
+  chapters: [
+    {
+      id: 'situation-geographique-et-grandes-regions',
+      title: 'Situation géographique et grandes régions du Vietnam',
+      field: 'Géographie · Asie du Sud-Est · Géographie régionale',
+      summary: 'Localiser le Vietnam dans la péninsule indochinoise, étudier sa forme allongée, ses frontières, ses façades maritimes et ses grands ensembles régionaux.',
+      lesson: {
+        sections: [
+          'Le Vietnam se situe en Asie du Sud-Est, sur la façade orientale de la péninsule indochinoise. Il partage une frontière terrestre avec la Chine au nord, le Laos à l’ouest et le Cambodge au sud-ouest. À l’est et au sud, son territoire est bordé par la mer de Chine méridionale, appelée mer Orientale dans la terminologie officielle vietnamienne. Cette situation place le pays à la rencontre de l’Asie continentale et des grandes routes maritimes de l’Asie du Sud-Est. La géographie du Vietnam est donc marquée à la fois par ses relations terrestres avec les pays voisins et par son ouverture maritime.',
+          'Le territoire continental présente une forme souvent décrite comme un S allongé. Il s’étend sur environ 1 650 km du nord au sud et sa largeur varie fortement : elle atteint plusieurs centaines de kilomètres dans certaines parties du nord et du sud, mais se resserre à environ 50 km dans le centre. Cette configuration explique la diversité des paysages et les difficultés de circulation transversale dans certaines régions. Les montagnes occupent une place importante à l’ouest, tandis que les plaines et les littoraux se développent surtout à l’est et dans les grands deltas.',
+          'La longueur du littoral est généralement donnée autour de 3 260 km par les autorités vietnamiennes. Ce chiffre concerne le territoire continental selon les conventions nationales de mesure et ne doit pas être confondu avec la longueur totale des côtes de toutes les îles. Le littoral comprend des baies, des plages, des lagunes, des estuaires et des secteurs de falaises. Il accueille des ports, des villes, des zones de pêche, des activités touristiques et des infrastructures industrielles. Cette ouverture maritime représente un atout économique, mais expose également les territoires côtiers aux typhons, à l’érosion, aux submersions et à l’élévation du niveau marin.',
+          'On distingue généralement 3 grands ensembles géographiques : le nord, le centre et le sud. Le nord comprend notamment le delta du fleuve Rouge, les plaines du golfe du Tonkin et les reliefs montagneux proches des frontières chinoise et laotienne. Le centre est une région étirée entre la cordillère annamitique et la mer, avec des plaines littorales parfois étroites. Le sud est dominé par les basses terres du bassin du Mékong, les plaines du delta et les espaces autour de Hô Chi Minh-Ville. Ces ensembles sont des repères géographiques ; leurs limites ne correspondent pas nécessairement à des frontières administratives.',
+          'Les Hauts Plateaux du Centre, souvent appelés Tây Nguyên, forment un ensemble de plateaux situés à l’ouest du centre et du sud du pays. Ils sont séparés des plaines littorales par des reliefs appartenant à la cordillère annamitique. Leur altitude, leurs sols et leurs conditions climatiques ont favorisé des productions agricoles spécifiques, notamment le café dans certaines provinces. Les plateaux constituent aussi des espaces de forêts, de bassins versants et de biodiversité. Leur rôle géographique dépasse donc l’agriculture : ils influencent les écoulements vers les basses terres et les littoraux.',
+          'La position du Vietnam explique l’importance de ses relations avec les espaces voisins. Les frontières terrestres relient le pays aux réseaux économiques de la Chine et de la péninsule indochinoise, tandis que les ports donnent accès aux routes maritimes régionales et mondiales. Le pays possède aussi des îles et des archipels en mer. Les questions de souveraineté maritime et insulaire sont sensibles et font l’objet de différends régionaux ; une description géographique rigoureuse doit distinguer les lieux physiques, les revendications des États et les statuts reconnus par les différentes parties.'
+        ],
+        example: {
+          statement: 'Le territoire vietnamien s’étend sur environ 1 650 km du nord au sud. Une carte est réalisée à l’échelle 1:5 000 000. Quelle longueur cette distance représente-t-elle sur la carte ?',
+          calculation: '1 cm sur la carte représente 5 000 000 cm sur le terrain, soit 50 km. 1 650 / 50 = 33 cm.',
+          answer: 'La distance représente environ 33 cm sur la carte. Le résultat est théorique et dépend de la projection et de la mesure retenue.'
+        },
+        exercise: {
+          question: 'Quels sont les 3 pays qui partagent une frontière terrestre avec le Vietnam ?',
+          answer: 'La Chine au nord, le Laos à l’ouest et le Cambodge au sud-ouest.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle péninsule le Vietnam se situe-t-il ?',
+            answer: 'Dans la péninsule indochinoise, en Asie du Sud-Est.'
+          },
+          {
+            question: 'Pourquoi le territoire vietnamien est-il souvent décrit comme allongé et étroit ?',
+            answer: 'Parce qu’il s’étend sur environ 1 650 km du nord au sud et que sa largeur varie fortement, avec un resserrement marqué dans le centre.'
+          },
+          {
+            question: 'Quels sont les 3 grands ensembles géographiques souvent distingués au Vietnam ?',
+            answer: 'Le nord, le centre et le sud.'
+          }
+        ],
+        sources: [
+          { title: 'Ministry of Foreign Affairs of Viet Nam — Key Facts', url: 'https://mofa.gov.vn/web/embassy/bkey-facts' },
+          { title: 'Government of Viet Nam — Geography', url: 'https://vietnam.gov.vn/default.aspx?catname=geography-68963' },
+          { title: 'Embassy of Viet Nam in the United States — Geography', url: 'https://www.admin.vietnamembassy-usa.org/vietnam/geography' }
+        ]
+      }
+    },
+    {
+      id: 'relief-geologie-et-occupation-des-sols',
+      title: 'Relief, géologie et occupation des sols',
+      field: 'Géographie physique · Géomorphologie · Géologie',
+      summary: 'Comprendre la prédominance des montagnes et des collines, les grands ensembles de relief, les plateaux, les plaines et leurs effets sur l’occupation humaine.',
+      lesson: {
+        sections: [
+          'Le relief vietnamien est largement dominé par les montagnes et les collines. Les documents officiels vietnamiens estiment qu’environ les trois quarts du territoire sont constitués de reliefs montagneux ou vallonnés. Les terrains de faible altitude sont particulièrement importants dans les deltas et les plaines littorales. Cette répartition explique une opposition géographique majeure : les reliefs occupent une grande partie de l’espace, mais les basses terres concentrent une part importante de l’agriculture, des infrastructures et de la population. Il faut toutefois éviter de confondre la proportion de terrains montagneux avec la proportion de terres situées à une altitude donnée.',
+          'Les reliefs les plus élevés se trouvent principalement dans le nord et le nord-ouest. La région de la chaîne Hoàng Liên Sơn comprend le mont Fansipan, qui atteint 3 143 m et constitue le point culminant du Vietnam. Les montagnes du nord forment des ensembles complexes, avec des vallées encaissées, des plateaux et des reliefs karstiques. Ces paysages influencent les déplacements, l’implantation des villages et les pratiques agricoles. Les fortes pentes rendent certains secteurs sensibles à l’érosion et aux glissements de terrain, en particulier lorsque les sols sont saturés par les pluies.',
+          'La cordillère annamitique, appelée Trường Sơn au Vietnam, s’étire le long de la frontière occidentale et du centre du pays. Elle sépare en partie les bassins versants tournés vers le Mékong de ceux qui descendent rapidement vers la mer de Chine méridionale. Son orientation et son altitude influencent la circulation des masses d’air et la répartition des précipitations. Les versants exposés aux vents humides peuvent recevoir des pluies importantes, tandis que certains secteurs sous le vent connaissent des conditions différentes. La chaîne constitue ainsi une structure essentielle pour comprendre à la fois le relief, le climat et l’hydrographie.',
+          'Les Hauts Plateaux du Centre forment un ensemble de plateaux étagés, dont certains dépassent 1 000 m d’altitude. Plusieurs secteurs possèdent des sols volcaniques basaltiques, souvent favorables à certaines cultures commerciales comme le café, le poivre ou le caoutchouc. Cette aptitude agricole dépend toutefois de la disponibilité en eau, de la qualité des sols, des techniques de culture et des conditions du marché. Les plateaux sont également des espaces de forêts et de sources de cours d’eau. La conversion des forêts en terres agricoles peut modifier les écoulements, accentuer l’érosion et réduire la continuité des habitats naturels.',
+          'Les plaines sont surtout présentes dans le delta du fleuve Rouge au nord, dans le delta du Mékong au sud et dans une succession de petites plaines côtières au centre. Elles se sont formées en grande partie par l’accumulation de sédiments transportés par les cours d’eau et redistribués par les processus côtiers. Leur faible pente facilite l’irrigation, la riziculture et l’implantation des villes, mais elle peut aussi favoriser la stagnation des eaux et les inondations. Les plaines littorales centrales sont souvent étroites, car les montagnes s’approchent de la côte.',
+          'La géologie et le relief influencent directement l’utilisation des sols. Les terrains de montagne sont utilisés pour les forêts, certaines cultures en terrasse, les plantations et l’élevage, selon les régions. Les plaines alluviales accueillent des cultures intensives, des villages, des réseaux d’irrigation et des villes denses. Les zones côtières combinent agriculture, aquaculture, ports, tourisme et habitats naturels. Ces usages peuvent entrer en concurrence, notamment lorsque l’urbanisation progresse sur les terres agricoles ou lorsque l’exploitation des ressources dégrade les bassins versants. L’aménagement doit donc tenir compte des pentes, des sols, de l’eau et des risques.'
+        ],
+        example: {
+          statement: 'Le Fansipan atteint 3 143 m. Une station située à 850 m d’altitude se trouve à quelle différence verticale du sommet ?',
+          calculation: '3 143 - 850 = 2 293 m.',
+          answer: 'La différence d’altitude est de 2 293 m.'
+        },
+        exercise: {
+          question: 'Quel est le point culminant du Vietnam et quelle est son altitude ?',
+          answer: 'Le mont Fansipan, dans la chaîne Hoàng Liên Sơn, atteint 3 143 m.'
+        },
+        exercises: [
+          {
+            question: 'Quel grand ensemble montagneux longe une partie de la frontière occidentale du Vietnam ?',
+            answer: 'La cordillère annamitique, ou chaîne Trường Sơn.'
+          },
+          {
+            question: 'Pourquoi les plaines sont-elles importantes pour l’agriculture vietnamienne ?',
+            answer: 'Elles offrent des terrains relativement plats, des sols souvent alluviaux et des possibilités d’irrigation.'
+          },
+          {
+            question: 'Quel risque peut affecter les versants montagneux lors de fortes pluies ?',
+            answer: 'L’érosion des sols et les glissements de terrain.'
+          }
+        ],
+        sources: [
+          { title: 'Ministry of Foreign Affairs of Viet Nam — Key Facts', url: 'https://mofa.gov.vn/web/embassy/bkey-facts' },
+          { title: 'Embassy of Viet Nam in the United States — Geography', url: 'https://www.admin.vietnamembassy-usa.org/vietnam/geography' },
+          { title: 'World Bank — Vietnam Climate Risk Country Profile', url: 'https://climateknowledgeportal.worldbank.org/country/vietnam' }
+        ]
+      }
+    },
+    {
+      id: 'climats-moussons-et-variations-regionales',
+      title: 'Climats, moussons et variations régionales',
+      field: 'Climatologie · Géographie physique · Moussons tropicales',
+      summary: 'Étudier le climat tropical de mousson, les contrastes entre le nord, le centre et le sud, les saisons des pluies et les typhons.',
+      lesson: {
+        sections: [
+          'Le Vietnam appartient principalement à la zone tropicale et connaît un climat marqué par les moussons. Cependant, sa grande longueur du nord au sud, son relief et son ouverture maritime produisent des contrastes régionaux importants. Les températures, les précipitations et la durée des saisons ne sont pas identiques à Hanoï, dans les montagnes du nord, sur la côte centrale ou dans le delta du Mékong. Il est donc plus juste de parler de plusieurs régimes climatiques régionaux que d’un climat uniforme.',
+          'Le nord du Vietnam connaît des contrastes saisonniers plus marqués que le sud. L’hiver peut être relativement frais, notamment sous l’influence des masses d’air continentales et de la mousson de nord-est. L’été est généralement chaud, humide et pluvieux. Dans les régions montagneuses du nord, l’altitude peut abaisser sensiblement les températures par rapport aux plaines. Les conditions peuvent donc varier fortement entre les basses terres du delta du fleuve Rouge et les secteurs élevés proches de la frontière chinoise.',
+          'Le centre du Vietnam présente un régime pluviométrique particulier. Une partie de la côte centrale reçoit des précipitations importantes pendant les mois où les typhons et les circulations atmosphériques de saison humide peuvent affecter la région. Dans certains secteurs, les pluies les plus abondantes surviennent plus tard dans l’année que dans le nord ou le sud. Les montagnes proches du littoral modifient aussi la répartition des précipitations. Cette saisonnalité contribue à l’exposition des villes et des plaines côtières aux crues rapides et aux inondations.',
+          'Le sud du Vietnam connaît généralement une alternance plus nette entre une saison humide et une saison sèche. La saison humide est associée aux circulations de mousson et à des précipitations fréquentes ; la saison sèche présente des pluies moins abondantes. Les températures restent globalement élevées au cours de l’année, avec des variations saisonnières moins marquées que dans le nord. Le delta du Mékong dépend fortement de cette alternance, car les pluies, les débits fluviaux et les niveaux d’eau influencent les calendriers agricoles, la pêche et les déplacements.',
+          'Les typhons sont des cyclones tropicaux susceptibles d’atteindre la mer de Chine méridionale et les côtes vietnamiennes. Ils peuvent provoquer des vents violents, des pluies intenses, une forte houle et des submersions côtières. Leur trajectoire, leur intensité et leurs effets varient selon les années. Les épisodes de pluie associés aux typhons peuvent également provoquer des crues et des glissements de terrain dans les régions montagneuses. La surveillance météorologique et les systèmes d’alerte sont donc essentiels pour limiter l’exposition des populations.',
+          'Le changement climatique modifie les conditions dans lesquelles les sociétés vietnamiennes organisent leurs activités. Les observations et les projections doivent être distinguées : une tendance mesurée dans le passé n’est pas une prévision, et une projection dépend d’un scénario d’émissions et d’un modèle climatique. Le Plan national d’adaptation actualisé en 2025 étudie les tendances observées, les scénarios futurs et les effets régionaux sur les secteurs économiques et les populations. Pour éviter les généralisations, toute donnée de température ou de précipitation doit être accompagnée de sa période, de sa zone et de sa méthode de calcul.'
+        ],
+        example: {
+          statement: 'Une station reçoit 1 800 mm de pluie sur une année. Une saison apporte 1 260 mm. Calculer la part des précipitations annuelles tombée pendant cette saison.',
+          calculation: '(1 260 / 1 800) × 100 = 70 %.',
+          answer: 'Cette saison représente 70 % des précipitations annuelles de la station fictive. Ce calcul ne correspond pas à une mesure réelle attribuée à une ville vietnamienne.'
+        },
+        exercise: {
+          question: 'Pourquoi le climat du Vietnam varie-t-il entre le nord, le centre et le sud ?',
+          answer: 'En raison de l’étendue du pays en latitude, du relief, de l’influence des masses d’air continentales et maritimes et du fonctionnement régional des moussons.'
+        },
+        exercises: [
+          {
+            question: 'Quel phénomène saisonnier influence fortement le climat vietnamien ?',
+            answer: 'La mousson, qui modifie les vents et les précipitations selon les saisons.'
+          },
+          {
+            question: 'Quelle alternance saisonnière caractérise généralement le sud du Vietnam ?',
+            answer: 'Une saison humide et une saison sèche.'
+          },
+          {
+            question: 'Pourquoi faut-il distinguer une observation climatique d’une projection ?',
+            answer: 'Une observation décrit des données mesurées sur une période passée, tandis qu’une projection estime une évolution future selon des hypothèses et des modèles.'
+          }
+        ],
+        sources: [
+          { title: 'Ministry of Foreign Affairs of Viet Nam — Key Facts: Climate', url: 'https://mofa.gov.vn/web/embassy/bkey-facts' },
+          { title: 'World Bank — Climate Change Knowledge Portal: Vietnam', url: 'https://climateknowledgeportal.worldbank.org/country/vietnam' },
+          { title: 'UNFCCC — Viet Nam National Adaptation Plan, Updated February 2025', url: 'https://unfccc.int/sites/default/files/resource/NAP_Vietnam_2025_EN.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'fleuves-deltas-et-ressources-en-eau',
+      title: 'Fleuves, deltas et ressources en eau',
+      field: 'Hydrologie · Géographie des milieux · Géographie agricole',
+      summary: 'Comprendre le rôle du fleuve Rouge et du Mékong, la formation des deltas, les réseaux hydrographiques et les enjeux de gestion de l’eau.',
+      lesson: {
+        sections: [
+          'Le Vietnam possède un réseau hydrographique dense, constitué de fleuves, de rivières et de nombreux cours d’eau secondaires. Les écoulements sont liés au relief, aux précipitations de mousson et aux bassins versants situés parfois en dehors des frontières nationales. Une partie importante des eaux qui traversent le pays prend donc sa source dans des territoires voisins. Cette situation rend la gestion de l’eau dépendante à la fois des conditions locales et des aménagements réalisés en amont dans les pays riverains.',
+          'Le fleuve Rouge, appelé Sông Hồng, structure une grande partie du nord du pays. Son bassin versant s’étend au-delà du Vietnam et son cours transporte de l’eau et des sédiments vers le golfe du Tonkin. À son embouchure, les dépôts alluviaux ont contribué à former le delta du fleuve Rouge. Ce delta est un espace densément occupé, marqué par la riziculture, les villages, les villes et un réseau de digues et de canaux. La gestion des crues et des sédiments y constitue un enjeu majeur pour l’agriculture et la sécurité des habitants.',
+          'Le Mékong est l’un des grands fleuves d’Asie du Sud-Est. Il prend sa source sur le plateau tibétain, traverse ou longe plusieurs pays d’Asie continentale, puis entre au Vietnam où il se divise en plusieurs bras dans le delta. Le nom Cửu Long, souvent traduit par « neuf dragons », est une appellation traditionnelle associée aux bras du fleuve dans le delta ; il ne faut pas en déduire que le réseau actuel comporte toujours exactement 9 branches principales. Les chenaux, les bras et les embouchures évoluent avec les dépôts sédimentaires, les aménagements et les dynamiques fluviales.',
+          'Le delta du Mékong est une vaste plaine alluviale située dans le sud du Vietnam. Il accueille des cultures de riz, des vergers, des zones d’aquaculture, des villes et des réseaux de canaux. Les sols et l’eau y ont favorisé une agriculture productive, mais le fonctionnement du delta dépend d’équilibres fragiles entre apports d’eau douce, sédiments, marées et salinité. Pendant la saison sèche, l’intrusion d’eau salée peut progresser dans les bras du fleuve et affecter les cultures et les ressources en eau potable. Les conséquences varient selon les années, les débits et les aménagements.',
+          'Entre les 2 grands deltas se trouvent des plaines littorales plus petites et souvent étroites. Les fleuves qui descendent des reliefs du centre ont généralement des bassins versants plus courts et des pentes plus fortes. Lors de pluies intenses, les niveaux d’eau peuvent monter rapidement et provoquer des crues soudaines. Les lagunes, estuaires et zones humides côtières jouent aussi un rôle écologique et économique. Ils servent d’habitats à de nombreuses espèces et soutiennent certaines activités de pêche et d’aquaculture.',
+          'La gestion de l’eau doit concilier plusieurs usages : irrigation, eau potable, industrie, navigation, production énergétique et maintien des écosystèmes. Les barrages et les prélèvements en amont peuvent modifier les débits et les transferts de sédiments, tandis que l’extraction de matériaux dans les lits fluviaux et l’affaissement des sols peuvent accentuer certains problèmes locaux. Dans le delta du Mékong, la salinisation, l’érosion des berges et la baisse des apports sédimentaires font partie des enjeux étudiés. Les solutions reposent sur la coopération entre territoires, la surveillance hydrologique et l’adaptation des pratiques agricoles.'
+        ],
+        example: {
+          statement: 'Un canal d’irrigation apporte 2 400 m³ d’eau par jour pendant 15 jours. Calculer le volume total distribué.',
+          calculation: '2 400 × 15 = 36 000 m³.',
+          answer: 'Le volume total distribué est de 36 000 m³. Il s’agit d’un exemple de calcul et non d’une mesure réelle d’un canal vietnamien.'
+        },
+        exercise: {
+          question: 'Quels sont les 2 grands deltas du Vietnam et quels fleuves les alimentent ?',
+          answer: 'Le delta du fleuve Rouge au nord et le delta du Mékong au sud.'
+        },
+        exercises: [
+          {
+            question: 'Pourquoi le débit du Mékong dépend-il aussi des territoires situés hors du Vietnam ?',
+            answer: 'Parce que son bassin versant traverse plusieurs pays avant que le fleuve n’entre dans le delta vietnamien.'
+          },
+          {
+            question: 'Qu’est-ce que l’intrusion saline dans un delta ?',
+            answer: 'La progression de l’eau salée depuis la mer vers les cours d’eau et les terres basses, notamment lorsque les débits d’eau douce sont faibles.'
+          },
+          {
+            question: 'Cite 2 usages de l’eau dans les deltas vietnamiens.',
+            answer: 'L’irrigation agricole et l’approvisionnement en eau des populations ; elle sert aussi à l’aquaculture, à l’industrie et à la navigation.'
+          }
+        ],
+        sources: [
+          { title: 'Ministry of Foreign Affairs of Viet Nam — Key Facts: Rivers', url: 'https://mofa.gov.vn/web/embassy/bkey-facts' },
+          { title: 'World Bank — Mekong Delta Integrated Climate Resilience and Sustainable Livelihoods Project', url: 'https://www.worldbank.org/en/country/vietnam' },
+          { title: 'Mekong River Commission — Basin and River Monitoring', url: 'https://www.mrcmekong.org/' },
+          { title: 'UNESCO — Biosphere Reserves in Viet Nam', url: 'https://www.unesco.org/en/mab' }
+        ]
+      }
+    },
+    {
+      id: 'risques-naturels-changement-climatique-et-environnement',
+      title: 'Risques naturels, changement climatique et environnement',
+      field: 'Géographie des risques · Environnement · Adaptation climatique',
+      summary: 'Étudier les typhons, les inondations, les glissements de terrain, l’érosion côtière, la salinisation et les enjeux de l’adaptation.',
+      lesson: {
+        sections: [
+          'La géographie du Vietnam l’expose à plusieurs types d’aléas naturels. Sa longue façade maritime est concernée par les typhons, les fortes houles et les submersions côtières. Les plaines fluviales sont exposées aux crues et aux inondations, tandis que les régions montagneuses peuvent connaître des glissements de terrain et des crues rapides. Ces phénomènes ne produisent pas automatiquement une catastrophe : leurs conséquences dépendent de l’exposition des populations, de la vulnérabilité des constructions et de la préparation des territoires.',
+          'Les typhons peuvent toucher différentes parties du littoral vietnamien. Ils provoquent parfois des vents violents, des pluies abondantes et une élévation temporaire du niveau marin près des côtes. Les effets peuvent se prolonger après le passage du cyclone, car les précipitations entretiennent les crues et saturent les sols. Les régions côtières doivent donc prendre en compte plusieurs phénomènes simultanés : vent, pluie, vagues, érosion et inondation. Les systèmes de prévision, les alertes et les plans d’évacuation contribuent à réduire les risques.',
+          'Les inondations concernent particulièrement les basses terres, les plaines alluviales et certains espaces urbains. Dans les deltas, les crues peuvent être liées aux précipitations locales, aux apports des bassins situés en amont, aux marées et aux conditions de drainage. Dans les villes, l’imperméabilisation des sols et l’insuffisance de certains réseaux d’évacuation peuvent aggraver les accumulations d’eau. Les inondations peuvent affecter les logements, les routes, les cultures et les activités économiques. Leur gestion nécessite des aménagements hydrauliques, une planification urbaine et une information adaptée.',
+          'Les régions montagneuses sont exposées à l’érosion des sols, aux glissements de terrain et aux crues soudaines. Les fortes pentes, les sols fragilisés et les épisodes de pluie intense peuvent favoriser le déplacement de matériaux vers les vallées. La déforestation, certaines pratiques agricoles et les travaux d’infrastructure peuvent augmenter localement la sensibilité des versants, même si les causes varient selon les sites. La prévention repose sur la surveillance des pentes, la gestion des bassins versants, la limitation de certaines implantations dans les zones les plus exposées et la diffusion d’alertes.',
+          'Le changement climatique représente un enjeu important pour les deltas et les littoraux. L’élévation du niveau marin peut accroître les risques de submersion et d’intrusion saline, tandis que les modifications des précipitations et des températures peuvent affecter l’agriculture, les ressources en eau et les écosystèmes. La vulnérabilité dépend aussi de facteurs non climatiques, comme l’affaissement local des sols, les prélèvements d’eau souterraine, les aménagements fluviaux et l’évolution des sédiments. Le rapport de la Banque mondiale de 2022 souligne l’exposition particulière des zones côtières basses et du delta du Mékong, mais ses estimations économiques sont des projections conditionnelles, non des certitudes.',
+          'Le Plan national d’adaptation du Vietnam, actualisé en février 2025, présente les tendances climatiques observées, les scénarios futurs, les effets régionaux et les mesures d’adaptation envisagées. Il traite notamment de la résilience des systèmes naturels, économiques et sociaux, de la réduction des risques de catastrophe et de la protection des moyens de subsistance. La réponse environnementale ne consiste pas seulement à construire des ouvrages de protection : elle comprend aussi la restauration des écosystèmes, l’amélioration de l’information, l’adaptation des cultures et la coordination entre les territoires. Une politique efficace doit tenir compte des incertitudes climatiques et des besoins des populations locales.'
+        ],
+        example: {
+          statement: 'Une commune compte 20 000 habitants. Une carte de risque identifie 5 000 habitants dans une zone exposée aux inondations. Calculer la part de la population située dans cette zone.',
+          calculation: '(5 000 / 20 000) × 100 = 25 %.',
+          answer: '25 % de la population de cette commune fictive se trouve dans la zone exposée. Ce calcul illustre la notion d’exposition et ne correspond pas à une statistique réelle du Vietnam.'
+        },
+        exercise: {
+          question: 'Pourquoi les deltas vietnamiens sont-ils particulièrement concernés par le changement climatique ?',
+          answer: 'Parce qu’ils sont bas, densément occupés et exposés à plusieurs phénomènes : élévation du niveau marin, inondations, intrusion saline et modification des ressources en eau.'
+        },
+        exercises: [
+          {
+            question: 'Cite 3 aléas naturels qui touchent le Vietnam.',
+            answer: 'Les typhons, les inondations et les glissements de terrain.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre exposition et vulnérabilité ?',
+            answer: 'L’exposition désigne la présence de personnes ou de biens dans une zone concernée par un aléa ; la vulnérabilité désigne leur fragilité face à ses effets.'
+          },
+          {
+            question: 'Quel document national actualisé en 2025 présente les orientations d’adaptation climatique du Vietnam ?',
+            answer: 'Le Plan national d’adaptation du Vietnam pour 2021-2030, avec une vision à 2050, actualisé en février 2025.'
+          }
+        ],
+        sources: [
+          { title: 'UNFCCC — Viet Nam National Adaptation Plan, Updated February 2025', url: 'https://unfccc.int/sites/default/files/resource/NAP_Vietnam_2025_EN.pdf' },
+          { title: 'World Bank — Key Highlights: Country Climate and Development Report for Vietnam, 2022', url: 'https://www.worldbank.org/en/brief/2022/07/01/key-highlights-country-climate-and-development-report-for-vietnam' },
+          { title: 'World Bank — Vietnam Climate Risk Country Profile', url: 'https://climateknowledgeportal.worldbank.org/country/vietnam' },
+          { title: 'Government of Viet Nam — Disaster Risk Management', url: 'https://phongchongthientai.mard.gov.vn/' }
+        ]
+      }
+    },
+    {
+      id: 'population-villes-activites-et-organisation-territoriale',
+      title: 'Population, villes, activités et organisation territoriale',
+      field: 'Géographie humaine · Géographie urbaine · Géographie économique',
+      summary: 'Analyser la répartition de la population, les grandes métropoles, les activités économiques, les contrastes régionaux et les transformations territoriales.',
+      lesson: {
+        sections: [
+          'Le Vietnam comptait environ 100,3 millions d’habitants en 2023, selon le Plan national d’adaptation actualisé en 2025. Cette donnée est une valeur de référence pour l’année 2023 et ne doit pas être présentée comme un décompte actuel. La population est répartie de manière inégale : les deltas, les plaines littorales et les grandes régions urbaines accueillent de fortes concentrations humaines, tandis que les régions montagneuses sont généralement moins densément peuplées. Les conditions naturelles, l’histoire du peuplement, les emplois et l’accessibilité expliquent ces contrastes.',
+          'Hanoï, située dans le nord, est la capitale politique et administrative du pays. Elle appartient à l’ensemble du delta du fleuve Rouge, région marquée par une forte densité de population, des activités agricoles et un réseau urbain développé. Hô Chi Minh-Ville, dans le sud, est un grand centre économique et métropolitain. Son influence s’étend au-delà de ses limites administratives et s’articule avec les provinces industrielles et urbaines voisines. Ces 2 grands pôles jouent des rôles complémentaires dans l’organisation nationale, mais ils connaissent aussi des enjeux de congestion, de pollution, de logement et de gestion de l’eau.',
+          'D’autres villes jouent un rôle régional important, notamment Hải Phòng dans le nord, Đà Nẵng sur la côte centrale, Cần Thơ dans le delta du Mékong et Huế dans le centre. Les ports, les aéroports, les routes et les réseaux ferroviaires contribuent à leur intégration aux échanges nationaux et internationaux. Les villes littorales associent souvent des fonctions portuaires, industrielles, touristiques et administratives. Leur développement dépend de leur position géographique, de leur accessibilité et de leur capacité à gérer les risques côtiers et les contraintes environnementales.',
+          'Les deltas du fleuve Rouge et du Mékong concentrent une part importante de la population et des terres agricoles. La riziculture y occupe une place historique, mais les systèmes agricoles sont diversifiés et comprennent également des cultures maraîchères, des vergers et de l’aquaculture. Le delta du Mékong est particulièrement important pour la production agricole et les activités liées à l’eau. Dans le nord, le delta du fleuve Rouge combine agriculture intensive, villes denses, industries et infrastructures. La pression foncière y est importante en raison de la concurrence entre les usages urbains, industriels et agricoles.',
+          'L’économie vietnamienne s’est transformée avec le développement de l’industrie, des services, des exportations et des investissements. Les activités industrielles se concentrent notamment dans plusieurs corridors proches des grandes villes, des ports et des axes de transport. L’agriculture et la pêche restent importantes pour les territoires ruraux et les moyens de subsistance, même si leur poids relatif dans l’économie évolue. La géographie économique du pays est donc marquée par une intégration croissante aux chaînes de production régionales et mondiales, mais aussi par des différences entre les régions les mieux connectées et les territoires plus éloignés.',
+          'Le Vietnam est organisé en unités administratives territoriales dont les limites et le nombre peuvent évoluer à la suite de réformes. Il est donc nécessaire de dater toute information sur le nombre de provinces et de municipalités. Les régions géographiques utilisées dans les analyses économiques ou physiques ne correspondent pas toujours aux divisions administratives officielles. Pour étudier la population, les villes ou les infrastructures, il faut préciser le périmètre retenu : commune, province, municipalité, agglomération ou région métropolitaine. Cette précaution évite de comparer des chiffres construits sur des limites différentes.',
+          'Les transformations territoriales créent plusieurs défis. La croissance urbaine augmente les besoins en logements, en transports, en eau potable et en traitement des déchets. Les régions rurales doivent faire face à l’évolution des emplois agricoles, aux migrations et à l’accès aux services. Dans les deltas, l’adaptation au changement climatique doit être conciliée avec la sécurité alimentaire et les revenus des habitants. Les politiques d’aménagement cherchent ainsi à améliorer les infrastructures, à réduire les inégalités territoriales et à renforcer la résilience des villes et des campagnes.'
+        ],
+        example: {
+          statement: 'Le Plan national d’adaptation indique une population de 100,3 millions d’habitants en 2023, dont 38,2 millions de personnes vivant en zone urbaine. Calculer la part urbaine à partir de ces valeurs arrondies.',
+          calculation: '(38,2 / 100,3) × 100 ≈ 38,1 %.',
+          answer: 'La part urbaine est d’environ 38,1 % en 2023, selon les chiffres arrondis du Plan national d’adaptation.'
+        },
+        exercise: {
+          question: 'Quelles sont les 2 principales grandes métropoles du Vietnam ?',
+          answer: 'Hanoï, la capitale située au nord, et Hô Chi Minh-Ville, grand centre métropolitain et économique du sud.'
+        },
+        exercises: [
+          {
+            question: 'Combien d’habitants le Vietnam comptait-il environ en 2023 selon le Plan national d’adaptation actualisé en 2025 ?',
+            answer: 'Environ 100,3 millions d’habitants.'
+          },
+          {
+            question: 'Pourquoi faut-il préciser le périmètre administratif lorsqu’on compare la population de 2 villes ?',
+            answer: 'Parce qu’une ville administrative, une agglomération et une région métropolitaine ne couvrent pas le même espace.'
+          },
+          {
+            question: 'Cite 2 défis liés à l’urbanisation au Vietnam.',
+            answer: 'La congestion des transports et la gestion de l’eau, du logement, de la pollution ou des déchets.'
+          }
+        ],
+        sources: [
+          { title: 'UNFCCC — Viet Nam National Adaptation Plan, Updated February 2025', url: 'https://unfccc.int/sites/default/files/resource/NAP_Vietnam_2025_EN.pdf' },
+          { title: 'General Statistics Office of Viet Nam — Statistical Data', url: 'https://www.gso.gov.vn/en/homepage/' },
+          { title: 'World Bank — Vietnam Country Overview', url: 'https://www.worldbank.org/en/country/vietnam/overview' },
+          { title: 'Ministry of Planning and Investment — Viet Nam Investment Promotion', url: 'https://investvietnam.gov.vn/en/' }
+        ]
+      }
+    }
+  ]
+},
+
+
 
 ]
 
