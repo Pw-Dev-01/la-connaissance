@@ -4064,5 +4064,286 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'nord-canadien',
+  title: 'Grand nord canadien',
+  note: 'Six chapitres pour comprendre les milieux physiques du Nord canadien, les peuples qui l’habitent depuis des millénaires, les explorations et les rapports coloniaux, les transformations économiques et politiques, ainsi que les changements environnementaux contemporains. Le « Nord canadien » n’est pas une région homogène : les réalités diffèrent entre le Yukon, les Territoires du Nord-Ouest, le Nunavut, le nord du Québec et le Labrador. Les dates et les limites régionales sont précisées lorsqu’elles varient selon les sources.',
+  chapters: [
+    {
+      id: 'territoires-et-milieux-nordiques',
+      title: 'Les territoires, les paysages et les milieux naturels du Nord canadien',
+      field: 'Géographie physique · Arctique, subarctique et régions nordiques du Canada',
+      summary: 'Situer le Nord canadien, distinguer ses grands ensembles géographiques et comprendre les liens entre climat, relief, eau, glace et végétation.',
+      lesson: {
+        sections: [
+          'Le Nord canadien ne correspond pas à une seule limite administrative ou climatique. Il comprend notamment le Yukon, les Territoires du Nord-Ouest et le Nunavut, mais aussi les régions septentrionales du Québec et du Labrador. On distingue souvent l’Arctique, caractérisé par des conditions polaires et la présence de la toundra, du domaine subarctique, où la forêt boréale occupe une place importante. La limite entre ces ensembles dépend du critère retenu : température, végétation, latitude ou définition politique. Il faut donc éviter de traiter tout le Nord comme un espace uniforme.',
+          'Le relief est très contrasté. L’archipel arctique canadien rassemble de nombreuses îles séparées par des détroits et des chenaux, tandis que le continent comprend des plaines, des plateaux, des vallées fluviales et des chaînes montagneuses, notamment dans l’ouest. Le bouclier canadien s’étend sur de vastes secteurs de l’est et du centre du pays. Les grands cours d’eau, comme le Mackenzie, structurent les milieux et les déplacements. Les littoraux, les deltas, les lacs et les zones humides constituent également des éléments majeurs du paysage nordique.',
+          'Le climat varie avec la latitude, l’altitude, la proximité de l’océan et la circulation atmosphérique. Les hivers sont généralement longs et froids, tandis que les étés sont courts. Les précipitations sont souvent faibles dans l’Extrême-Arctique, ce qui peut donner à certains secteurs un caractère désertique malgré la présence de neige et de glace. La durée du jour change fortement au fil des saisons : au-delà du cercle polaire arctique, certaines périodes connaissent le soleil de minuit ou, en hiver, la nuit polaire. Ces phénomènes influencent les cycles biologiques, les activités humaines et les déplacements.',
+          'Le pergélisol désigne un sol ou une roche dont la température reste égale ou inférieure à 0 °C pendant au moins 2 années consécutives. Il peut être continu ou discontinu et contenir des quantités variables de glace dans le sol. Le pergélisol influence le drainage, la stabilité des terrains, la construction et les écosystèmes. Lorsqu’il dégèle, le sol peut s’affaisser ou se déformer, en particulier dans les secteurs riches en glace. Il ne faut pas confondre pergélisol et couche active : cette dernière dégèle généralement en été puis regèle en hiver.',
+          'La végétation dépend fortement de la température et de la durée de la saison de croissance. Dans la toundra, les arbres sont absents ou très rares ; mousses, lichens, herbes et arbustes bas dominent. Plus au sud, la taïga et la forêt boréale sont composées principalement de conifères et de milieux humides. Les espèces animales se sont adaptées à des conditions saisonnières marquées : caribous, bœufs musqués, renards arctiques, ours polaires, oiseaux migrateurs, poissons et mammifères marins occupent des habitats différents. Leur répartition dépend de la nourriture, de la glace, des eaux libres et des migrations.',
+          'La mer, la banquise et les eaux douces sont indissociables de la géographie humaine du Nord. La glace de mer peut être saisonnière ou pluriannuelle ; la glace côtière attachée au rivage, appelée glace fixe, joue un rôle particulier dans les déplacements et les habitats. Les conditions de glace varient selon les régions et les années. Les cartes et les moyennes climatiques ne suffisent donc pas à décrire les conditions locales : les observations des habitants, les connaissances autochtones et les mesures scientifiques apportent des informations complémentaires.'
+        ],
+        example: {
+          statement: 'Un sol reste gelé à une température inférieure ou égale à 0 °C pendant 3 hivers consécutifs. Peut-on le qualifier de pergélisol ?',
+          calculation: 'La définition du pergélisol exige une température égale ou inférieure à 0 °C pendant au moins 2 années consécutives. Ici, la durée observée est de 3 années.',
+          answer: 'Oui. La durée de 3 années satisfait le critère minimal de 2 années consécutives. Cette définition porte sur la température du sol, et non simplement sur la présence de neige en surface.'
+        },
+        exercise: {
+          question: 'Pourquoi le Nord canadien ne doit-il pas être considéré comme un espace géographique uniforme ?',
+          answer: 'Parce qu’il rassemble des régions arctiques et subarctiques aux reliefs, climats, végétations, milieux marins et réalités humaines différents. Ses limites varient aussi selon que l’on utilise des critères physiques, écologiques ou administratifs.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la durée minimale de gel exigée dans la définition du pergélisol ?',
+            answer: 'Au moins 2 années consécutives à une température égale ou inférieure à 0 °C.'
+          },
+          {
+            question: 'Quelle formation végétale caractérise principalement les régions arctiques les plus froides ?',
+            answer: 'La toundra, dominée par des plantes basses comme les mousses, les lichens, les herbes et les arbustes.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre la couche active et le pergélisol ?',
+            answer: 'La couche active dégèle habituellement pendant la saison chaude et regèle ensuite ; le pergélisol reste à 0 °C ou moins pendant au moins 2 années consécutives.'
+          }
+        ],
+        sources: [
+          { title: 'Environnement et Changement climatique Canada — Canada’s Changing Climate Report 2026, chapitre 6 : Changes in the cryosphere', url: 'https://www.canada.ca/en/environment-climate-change/services/science-technology/changing-climate-report-2026/cccr-chapter-6-en.html' },
+          { title: 'Environnement et Changement climatique Canada — Sea ice in Canada', url: 'https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/sea-ice.html' },
+          { title: 'Ressources naturelles Canada — Atlas du Canada', url: 'https://atlas.gc.ca/' }
+        ]
+      }
+    },
+    {
+      id: 'peuples-et-histoire-ancienne',
+      title: 'Les premiers peuplements, les cultures paléoinuites et les Inuit',
+      field: 'Archéologie et histoire autochtone · Plusieurs millénaires avant le présent à aujourd’hui',
+      summary: 'Étudier les migrations anciennes dans l’Arctique, les traditions pré-dorsétienne et dorsétienne, l’arrivée des Thuléens et la continuité des sociétés inuit.',
+      lesson: {
+        sections: [
+          'L’histoire humaine de l’Arctique canadien s’inscrit dans des déplacements anciens à travers la région du détroit de Béring et l’Amérique du Nord. Les archéologues reconstituent ces occupations à partir de sites, d’outils, d’habitations, de restes alimentaires et d’autres traces matérielles. Les chronologies sont établies par des méthodes de datation et sont régulièrement précisées par de nouvelles découvertes. Elles ne doivent pas être transformées en dates uniques valables pour toutes les régions, car les occupations ont été progressives et les traditions culturelles ont pu se chevaucher.',
+          'Les traditions dites paléoinuites comprennent notamment les phases pré-dorsétienne et dorsétienne. Elles sont reconnues par des assemblages archéologiques et des techniques adaptées aux environnements arctiques. Les groupes pré-dorsétiens sont attestés dans l’Arctique oriental à partir d’environ 2500 av. J.-C., avec des variations régionales dans les datations. La tradition dorsétienne se développe ensuite dans plusieurs secteurs de l’Arctique oriental. Les objets retrouvés témoignent d’une connaissance fine des ressources terrestres et marines, mais ne permettent pas à eux seuls de reconstituer tous les aspects de la vie sociale ou des langues de ces populations.',
+          'Les Thuléens, dont les ancêtres se trouvent dans l’Alaska arctique, se déplacent vers l’est et atteignent l’Arctique canadien vers la fin du 1er millénaire de notre ère et le début du 2e. Leur culture matérielle comprend notamment des techniques de chasse aux grands mammifères marins, des embarcations, des traîneaux et des outils spécialisés. Les Thuléens sont les ancêtres des Inuit contemporains. La transition entre les sociétés dorsétiennes et thuléennes n’est pas entièrement comprise : les chercheurs discutent des formes de coexistence, de contact, de déplacement et d’éventuels mélanges de populations. Il serait donc excessif de présenter partout un remplacement simple et instantané.',
+          'Les sociétés inuit ont développé des organisations et des savoir-faire adaptés à des environnements très variés. Les activités traditionnelles ont pu combiner chasse, pêche, déplacements saisonniers, transformation et conservation des aliments, fabrication de vêtements et construction d’abris. Les ressources exploitées dépendaient des régions et des saisons : phoques, caribous, poissons, oiseaux, morses et baleines n’étaient pas disponibles partout de la même manière. Les connaissances transmises entre générations portaient sur les animaux, la météo, la glace, les itinéraires, les matériaux et les règles de coopération.',
+          'Les Inuit ne constituent pas une population du passé : leurs communautés, langues, institutions et pratiques sont vivantes et diverses. Inuit Nunangat, le territoire inuit au Canada, comprend 4 régions : la région désignée des Inuvialuit, le Nunavut, le Nunavik dans le nord du Québec et le Nunatsiavut au Labrador. La notion d’Inuit Nunangat inclut la terre, l’eau et la glace. Elle rappelle que les espaces marins et glacés font partie du territoire vécu et des relations culturelles, économiques et politiques, et ne sont pas de simples surfaces séparant les terres.',
+          'Le Nord est également la patrie de peuples des Premières Nations, notamment des communautés dénées, gwich’in et d’autres nations dont les territoires s’étendent dans les régions nordiques et subarctiques. Les histoires, langues, systèmes politiques et relations au territoire de ces peuples ne sont pas interchangeables avec ceux des Inuit. Une histoire rigoureuse du Nord canadien doit donc reconnaître plusieurs peuples autochtones, leurs expériences propres et leurs relations anciennes avec les terres et les eaux.'
+        ],
+        example: {
+          statement: 'Une chronologie archéologique situe l’arrivée de groupes thuléens dans l’Arctique oriental vers la fin du 11e siècle. Que permet d’affirmer ce repère ?',
+          calculation: 'Il s’agit d’un repère approximatif associé à une diffusion régionale. Il ne signifie pas que toutes les communautés de l’Arctique oriental ont changé de culture au même moment.',
+          answer: 'Il indique une période générale d’expansion thuléenne vers l’est. Les rythmes locaux, les contacts avec les populations dorsétiennes et les transitions culturelles ont pu varier selon les lieux.'
+        },
+        exercise: {
+          question: 'Pourquoi les archéologues évitent-ils de présenter la transition entre les cultures dorsétienne et thuléenne comme un remplacement identique et immédiat partout ?',
+          answer: 'Parce que les données archéologiques montrent des chronologies régionales et que les modalités de contact, de coexistence, de déplacement ou de mélange restent discutées. Les preuves ne justifient pas un scénario unique pour tout l’Arctique.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les 4 régions qui composent Inuit Nunangat ?',
+            answer: 'La région désignée des Inuvialuit, le Nunavut, le Nunavik et le Nunatsiavut.'
+          },
+          {
+            question: 'Quelle relation historique relie les Thuléens aux Inuit contemporains ?',
+            answer: 'Les Thuléens sont considérés comme les ancêtres des Inuit contemporains.'
+          },
+          {
+            question: 'Pourquoi faut-il distinguer les peuples inuit des Premières Nations du Nord ?',
+            answer: 'Parce qu’ils ont des histoires, des langues, des territoires, des institutions et des traditions distincts, même si leurs territoires et leurs expériences peuvent se croiser.'
+          }
+        ],
+        sources: [
+          { title: 'Parcs Canada — Culture and history, Auyuittuq National Park', url: 'https://www.parks.canada.ca/pn-np/nu/auyuittuq/culture' },
+          { title: 'Inuit Tapiriit Kanatami — About Canadian Inuit', url: 'https://itk.ca/about-canadian-inuit/?lang=ius' },
+          { title: 'Inuit Tapiriit Kanatami — Inuit Nunangat Policy', url: 'https://itk.ca/wp-content/uploads/2022/04/Inuit-Nunangat-Policy-EN.pdf' },
+          { title: 'Cambridge Archaeological Journal — The Archaeology of Forgetting, the Dorset, and Arctic Antiquity', url: 'https://www.cambridge.org/core/journals/cambridge-archaeological-journal/article/archaeology-of-forgetting-the-dorset-and-arctic-antiquity/61E459647D0AAA3EA7D4AB6900769F11' }
+        ]
+      }
+    },
+    {
+      id: 'contacts-explorations-et-passage-nord-ouest',
+      title: 'Les contacts extérieurs, les explorations européennes et le passage du Nord-Ouest',
+      field: 'Histoire des contacts et des explorations · Du 16e siècle au 20e siècle',
+      summary: 'Comprendre les objectifs des explorateurs européens, le rôle des savoirs autochtones et les conséquences des expéditions dans l’Arctique.',
+      lesson: {
+        sections: [
+          'À partir du 16e siècle, plusieurs puissances européennes cherchent une route maritime reliant l’Atlantique au Pacifique par le nord de l’Amérique. Cette recherche répond à des objectifs commerciaux, stratégiques et scientifiques. Les voyages de Martin Frobisher en 1576, 1577 et 1578, puis ceux de John Davis en 1586 et 1587, comptent parmi les premières explorations européennes de secteurs de l’Arctique canadien. Ces expéditions ne découvrent pas un territoire inhabité : elles entrent dans des espaces déjà parcourus, nommés et utilisés par des peuples autochtones.',
+          'Les explorations maritimes se poursuivent au cours des siècles suivants. Les navigateurs européens cherchent à cartographier les côtes, les îles, les détroits et les conditions de navigation. Les cartes produites par ces voyages enrichissent les connaissances géographiques européennes, mais elles doivent être replacées dans leur contexte : les informations locales provenaient souvent de guides, d’intermédiaires et de savoirs autochtones. La cartographie coloniale a parfois rendu invisibles les noms, les usages et les systèmes territoriaux préexistants.',
+          'Le passage du Nord-Ouest désigne un ensemble de routes maritimes à travers l’archipel arctique canadien, entre l’Atlantique et le Pacifique. Il ne s’agit pas d’un chenal unique aux conditions constantes. La présence de glace, les vents, les courants, la profondeur des chenaux et la variabilité saisonnière rendent la navigation difficile. La recherche de ce passage a donc été longue et a mobilisé des expéditions venues de plusieurs pays. L’existence d’un itinéraire cartographié ne signifie pas qu’il soit libre de glace, sûr ou navigable chaque année.',
+          'L’expédition de John Franklin quitte l’Angleterre en 1845 avec les navires HMS Erebus et HMS Terror. Après le départ d’une partie du personnel, 129 hommes poursuivent le voyage dans l’archipel. Les navires sont pris dans les glaces près de l’île du Roi-Guillaume en 1846 et abandonnés en 1848. Aucun membre de l’expédition ne survit. Les recherches menées ensuite contribuent à cartographier de vastes secteurs de l’Arctique, mais elles reposent aussi sur des informations et des indications fournies par des Inuit qui avaient observé les navires ou rencontré des membres de l’expédition.',
+          'Les épaves du HMS Erebus et du HMS Terror sont localisées respectivement en 2014 et en 2016. Ces découvertes sont le résultat de recherches mobilisant des moyens scientifiques modernes et des connaissances inuit. Elles illustrent l’importance de la collaboration entre archéologie, institutions publiques et détenteurs de savoirs locaux. Les sites sont des lieux patrimoniaux sensibles : leur étude et leur protection nécessitent des règles de conservation, des partenariats et la prise en compte des droits et des intérêts des Inuit.',
+          'Les explorations ont contribué à la production de connaissances géographiques et scientifiques, mais elles s’inscrivent aussi dans des rapports de pouvoir. Les cartes, les revendications territoriales et les activités économiques européennes ont progressivement accru la présence des États dans l’Arctique. Une approche historique équilibrée distingue donc les récits héroïques de l’exploration des réalités vécues par les populations autochtones, dont les territoires et les connaissances existaient bien avant l’arrivée des expéditions étrangères.'
+        ],
+        example: {
+          statement: 'Les épaves de l’expédition Franklin ont été retrouvées en 2014 et en 2016. Quelle épave a été localisée en premier ?',
+          calculation: 'Il suffit de comparer les deux années : 2014 est antérieure à 2016.',
+          answer: 'Le HMS Erebus a été localisé en 2014, puis le HMS Terror en 2016.'
+        },
+        exercise: {
+          question: 'Pourquoi les connaissances inuit ont-elles été essentielles dans les recherches liées à l’expédition Franklin ?',
+          answer: 'Parce que des Inuit avaient observé les navires, rencontré des membres de l’expédition ou transmis des informations sur les lieux et les événements. Ces connaissances ont orienté les recherches et ont contribué aux découvertes des épaves.'
+        },
+        exercises: [
+          {
+            question: 'Quel était l’objectif principal des expéditions européennes recherchant le passage du Nord-Ouest ?',
+            answer: 'Trouver une route maritime reliant l’océan Atlantique à l’océan Pacifique en passant par le nord de l’Amérique.'
+          },
+          {
+            question: 'En quelle année les navires de Franklin ont-ils été abandonnés ?',
+            answer: 'En 1848, après avoir été immobilisés par les glaces depuis 1846.'
+          },
+          {
+            question: 'Pourquoi le passage du Nord-Ouest n’est-il pas une route maritime aux conditions constantes ?',
+            answer: 'Parce que la glace, les vents, les courants, les profondeurs et les conditions météorologiques varient selon les secteurs et les saisons.'
+          }
+        ],
+        sources: [
+          { title: 'Ressources naturelles Canada — The Search for a Northwest Passage, 1576 to 1587', url: 'https://open.canada.ca/data/en/dataset/ca3c3bb0-8893-11e0-919e-6cf049291510' },
+          { title: 'Parcs Canada — History of the Franklin Expedition', url: 'https://parks.canada.ca/lhn-nhs/nu/epaveswrecks/culture/histoire-history' },
+          { title: 'Parcs Canada — Franklin’s 1845 expedition', url: 'https://parks.canada.ca/lhn-nhs/nu/epaveswrecks/culture/histoire-history/expedition' },
+          { title: 'Parcs Canada — 10th anniversary of the locating of the wreck of HMS Erebus', url: 'https://www.canada.ca/en/parks-canada/news/2024/08/10th-anniversary-of-the-locating-of-the-wreck-of-hms-erebus.html' },
+          { title: 'Affaires mondiales Canada — Canada’s Arctic Foreign Policy', url: 'https://international.canada.ca/en/global-affairs/corporate/reports/arctic-policy-2024' }
+        ]
+      }
+    },
+    {
+      id: 'colonisation-economie-et-transformations-sociales',
+      title: 'La présence de l’État, les économies nordiques et les transformations sociales',
+      field: 'Histoire politique, économique et sociale · 19e siècle à aujourd’hui',
+      summary: 'Analyser l’intensification de la présence étatique, les économies de subsistance et de marché, les infrastructures et les effets des politiques coloniales.',
+      lesson: {
+        sections: [
+          'Au 19e siècle et au début du 20e siècle, les États accroissent leur intérêt stratégique pour l’Arctique. Les expéditions scientifiques et maritimes, les activités de chasse commerciale, les postes de traite et les missions religieuses multiplient les contacts avec les communautés nordiques. Ces relations ne sont pas identiques d’une région à l’autre. Elles peuvent entraîner des échanges de biens et de connaissances, mais aussi des dépendances économiques, des pressions culturelles et des changements dans les rapports politiques. Les populations autochtones ne sont pas de simples spectatrices : elles négocient, s’adaptent, maintiennent des pratiques et défendent leurs intérêts.',
+          'L’économie du Nord repose sur une combinaison variable d’activités locales, de services publics, de transferts, de commerce et d’exploitation de ressources. La chasse, la pêche, la cueillette et le partage alimentaire demeurent importants dans de nombreuses communautés, même lorsque les ménages participent aussi à l’économie salariale. Les revenus monétaires peuvent provenir des administrations, de l’éducation, de la santé, du transport, du tourisme ou des industries extractives. Les coûts de transport, l’éloignement, les conditions climatiques et la taille réduite de nombreux marchés influencent fortement les prix et la disponibilité des biens.',
+          'Les ressources naturelles du Nord comprennent notamment des minerais, des hydrocarbures, des ressources halieutiques et des possibilités hydroélectriques dans certains territoires. Leur exploitation dépend des conditions géologiques, des infrastructures, des marchés, des règles environnementales et des accords conclus avec les peuples autochtones. Une ressource présente dans le sous-sol n’est pas automatiquement exploitable ou rentable. Les projets peuvent produire des emplois et des recettes, mais aussi modifier les habitats, les déplacements des animaux, les usages du territoire et les conditions de vie. Les bénéfices et les coûts ne sont pas nécessairement répartis de manière égale.',
+          'La construction d’infrastructures pose des défis particuliers. Les routes, les pistes d’atterrissage, les ports, les réseaux énergétiques et les bâtiments doivent être adaptés à l’isolement, aux conditions météorologiques et, dans plusieurs secteurs, au pergélisol. Le dégel du sol peut fragiliser les fondations et augmenter les besoins d’entretien. Dans certaines communautés, l’accès aux services dépend fortement du transport aérien ou maritime. Les infrastructures ne sont donc pas seulement des équipements techniques : elles influencent les possibilités d’emploi, l’accès aux soins, l’éducation, l’approvisionnement et les liens entre communautés.',
+          'Les politiques fédérales et territoriales ont profondément transformé la vie de nombreuses communautés autochtones. Les déplacements imposés, la sédentarisation administrative, les politiques d’assimilation et les pensionnats autochtones ont eu des conséquences durables sur les familles, les langues et les cultures. Les expériences diffèrent selon les peuples et les régions, mais leurs effets sont au cœur des démarches contemporaines de vérité, de justice et de réconciliation. Il est essentiel de ne pas réduire l’histoire du Nord à une succession de progrès techniques : elle comprend aussi des rapports de domination et des résistances.',
+          'Depuis la seconde moitié du 20e siècle, les organisations inuit et les Premières Nations ont renforcé leurs revendications territoriales et politiques. Les accords modernes sur les revendications territoriales définissent des droits, des responsabilités et des mécanismes de gestion des terres et des ressources. L’Accord définitif des Inuvialuit est conclu en 1984 ; l’Accord du Nunavut est signé en 1993 ; d’autres accords concernent notamment les Gwich’in, les Dénés, les Métis et les Inuit du Labrador et du Nunavik. Ces ententes ne sont pas identiques et ne confèrent pas partout les mêmes compétences.'
+        ],
+        example: {
+          statement: 'L’Accord sur les revendications territoriales du Nunavut est signé en 1993 et le territoire du Nunavut est créé en 1999. Combien d’années séparent ces deux événements ?',
+          calculation: '1999 - 1993 = 6 années.',
+          answer: '6 années séparent la signature de l’Accord du Nunavut et la création officielle du territoire. Il s’agit de 2 événements juridiques et politiques distincts.'
+        },
+        exercise: {
+          question: 'Pourquoi un projet minier dans le Nord doit-il être étudié au-delà de sa seule rentabilité économique ?',
+          answer: 'Parce qu’il peut avoir des effets sur les écosystèmes, les activités de récolte, les infrastructures, les droits autochtones, les communautés locales et la répartition des bénéfices. Son évaluation doit tenir compte des accords applicables et des procédures environnementales.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année l’Accord définitif des Inuvialuit a-t-il été conclu ?',
+            answer: 'En 1984.'
+          },
+          {
+            question: 'En quelle année l’Accord sur les revendications territoriales du Nunavut a-t-il été signé ?',
+            answer: 'En 1993.'
+          },
+          {
+            question: 'Pourquoi les activités traditionnelles et l’économie salariée ne doivent-elles pas être présentées comme 2 systèmes forcément opposés ?',
+            answer: 'Parce que de nombreux ménages combinent activités de récolte, partage des aliments, emplois rémunérés et autres sources de revenus. Leur importance varie selon les communautés et les situations.'
+          }
+        ],
+        sources: [
+          { title: 'Relations Couronne-Autochtones et Affaires du Nord Canada — Arctic and Northern Policy Framework', url: 'https://www.cirnac.gc.ca/eng/1560523306861/1560523330587?wbdisable=false' },
+          { title: 'Inuit Tapiriit Kanatami — Inuit Nunangat Policy', url: 'https://itk.ca/wp-content/uploads/2022/04/Inuit-Nunangat-Policy-EN.pdf' },
+          { title: 'Relations Couronne-Autochtones et Affaires du Nord Canada — Nunavut Land Claims Agreement', url: 'https://www.rcaanc-cirnac.gc.ca/eng/1792527504631/1792527534689' },
+          { title: 'Inuit Tapiriit Kanatami — About Canadian Inuit', url: 'https://itk.ca/about-canadian-inuit/?lang=ius' }
+        ]
+      }
+    },
+    {
+      id: 'gouvernance-droits-et-souverainete',
+      title: 'Les droits autochtones, la gouvernance territoriale et la souveraineté arctique',
+      field: 'Droit, institutions et relations internationales · 1970 à aujourd’hui',
+      summary: 'Distinguer les accords territoriaux, l’autonomie gouvernementale, les institutions territoriales et les débats de souveraineté maritime.',
+      lesson: {
+        sections: [
+          'La gouvernance du Nord canadien repose sur plusieurs niveaux de pouvoir : gouvernement fédéral, gouvernements territoriaux, provinces concernées, administrations locales, organisations autochtones et organismes créés par les accords territoriaux. Les responsabilités varient selon les domaines et les régions. Le Nord ne possède donc pas un modèle institutionnel unique. Les droits issus des traités, les compétences législatives, les responsabilités de gestion et les mécanismes de consultation doivent être étudiés à partir des textes juridiques propres à chaque territoire.',
+          'Les accords modernes sur les revendications territoriales sont des ententes juridiques conclues entre la Couronne et des peuples autochtones. Ils peuvent préciser les droits fonciers, les droits de récolte, les compensations, la participation à la gestion des ressources, la protection de l’environnement et les institutions de cogestion. La cogestion désigne des mécanismes où des représentants autochtones et publics participent à des décisions ou à des recommandations concernant un territoire ou une ressource. Les modalités diffèrent selon les accords ; il ne faut pas supposer que tous les organismes ont les mêmes pouvoirs.',
+          'Le Nunavut constitue un cas institutionnel important. L’Accord sur les revendications territoriales du Nunavut est signé en 1993 et le territoire est officiellement créé le 1er avril 1999. Le gouvernement du Nunavut est un gouvernement public territorial, et non un gouvernement exclusivement inuit. L’accord reconnaît néanmoins des droits et des avantages aux Inuit du Nunavut et établit des mécanismes concernant les terres, les ressources et la gestion. Cette distinction est essentielle pour comprendre la relation entre un territoire administratif canadien et les droits collectifs des Inuit.',
+          'La notion d’Inuit Nunangat exprime une conception territoriale qui relie la terre, les eaux et la glace. Les 4 régions inuit du Canada possèdent des cadres institutionnels différents. Les organisations représentatives inuit jouent un rôle dans les négociations, les politiques publiques et les relations avec le gouvernement fédéral. La participation des peuples autochtones à la gouvernance ne se limite pas à une consultation ponctuelle : elle découle aussi de traités, de droits reconnus et de structures permanentes de décision ou de cogestion.',
+          'La souveraineté arctique canadienne concerne les terres, les îles, les eaux et les espaces maritimes. Le passage du Nord-Ouest est au centre d’un désaccord juridique avec les États-Unis et d’autres débats internationaux : le Canada considère les eaux des chenaux de l’archipel comme des eaux intérieures en vertu de son titre historique, tandis que les États-Unis soutiennent que le passage relève d’un détroit international. Cette présentation résume les positions principales, mais ne signifie pas que tous les aspects du droit maritime arctique sont réglés de façon incontestée.',
+          'Les enjeux de souveraineté sont liés à la sécurité, à la navigation, à la protection de l’environnement, à la recherche scientifique et aux droits des habitants. La présence effective dans le Nord ne se réduit pas aux installations militaires ou aux patrouilles : elle dépend aussi des communautés, des infrastructures, des services publics et de la capacité à appliquer les lois. Les peuples autochtones occupent et utilisent ces terres, ces eaux et ces glaces depuis des millénaires. Toute analyse de la souveraineté doit donc tenir compte de leurs droits et de leur rôle dans la gestion du territoire.'
+        ],
+        example: {
+          statement: 'Un cours présente la signature de l’Accord du Nunavut en 1993 et la création du territoire en 1999. Faut-il considérer ces événements comme identiques ?',
+          calculation: '1993 correspond à la signature de l’accord ; 1999 correspond à l’entrée en existence du territoire comme entité territoriale canadienne.',
+          answer: 'Non. Ce sont 2 étapes distinctes : l’accord de revendications territoriales est signé en 1993 et le territoire du Nunavut est créé en 1999.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer le gouvernement public du Nunavut des organisations inuit ?',
+          answer: 'Le gouvernement du Nunavut est un gouvernement territorial public qui administre le territoire pour sa population, tandis que les organisations inuit représentent les intérêts et les droits collectifs des Inuit selon leurs mandats. Leurs rôles peuvent se compléter sans être identiques.'
+        },
+        exercises: [
+          {
+            question: 'À quelle date le territoire du Nunavut a-t-il été officiellement créé ?',
+            answer: 'Le 1er avril 1999.'
+          },
+          {
+            question: 'Que peut organiser un accord moderne sur les revendications territoriales ?',
+            answer: 'Il peut définir des droits fonciers et de récolte, des compensations, des mécanismes de cogestion et des modalités de participation à la gestion des terres et des ressources.'
+          },
+          {
+            question: 'Quelle est la position officielle du Canada sur les eaux des chenaux du passage du Nord-Ouest ?',
+            answer: 'Le Canada les considère comme des eaux intérieures en vertu de son titre historique. Cette position est contestée par les États-Unis, qui défendent la qualification de détroit international.'
+          }
+        ],
+        sources: [
+          { title: 'Affaires mondiales Canada — Canada’s Arctic Foreign Policy', url: 'https://international.canada.ca/en/global-affairs/corporate/reports/arctic-policy-2024' },
+          { title: 'Relations Couronne-Autochtones et Affaires du Nord Canada — Arctic and Northern Policy Framework', url: 'https://www.cirnac.gc.ca/eng/1560523306861/1560523330587?wbdisable=false' },
+          { title: 'Relations Couronne-Autochtones et Affaires du Nord Canada — Nunavut Land Claims Agreement', url: 'https://www.rcaanc-cirnac.gc.ca/eng/1792527504631/1792527534689' },
+          { title: 'Inuit Tapiriit Kanatami — Inuit Nunangat Policy', url: 'https://itk.ca/wp-content/uploads/2022/04/Inuit-Nunangat-Policy-EN.pdf' }
+        ]
+      }
+    },
+    {
+      id: 'changements-climatiques-et-avenir',
+      title: 'Le changement climatique, les écosystèmes et l’avenir du Grand Nord canadien',
+      field: 'Sciences du climat et enjeux contemporains · 20e et 21e siècles',
+      summary: 'Comprendre l’amplification du réchauffement arctique, le recul de la glace, le dégel du pergélisol et les conséquences pour les écosystèmes et les communautés.',
+      lesson: {
+        sections: [
+          'Le réchauffement de l’Arctique est plus rapide que la moyenne mondiale : ce phénomène est appelé amplification arctique. Il résulte de plusieurs mécanismes physiques, dont la diminution de la surface de glace et de neige, les changements dans les échanges d’énergie entre l’océan, l’atmosphère et les surfaces terrestres, ainsi que les variations de la circulation atmosphérique et océanique. La perte de glace réduit la réflexion du rayonnement solaire : les surfaces océaniques plus sombres absorbent davantage d’énergie que la glace claire. Ce mécanisme contribue au réchauffement régional, sans être l’unique cause de l’amplification arctique.',
+          'La couverture de glace de mer a diminué dans les eaux canadiennes au cours des dernières décennies. La glace pluriannuelle, qui a survécu à au moins une saison de fonte, est remplacée dans plusieurs secteurs par une glace saisonnière plus mince. Cette évolution modifie les habitats marins et les conditions de déplacement. Elle ne signifie pas que l’océan Arctique est dépourvu de glace toute l’année ni que le passage du Nord-Ouest devient automatiquement libre et sûr : la circulation de blocs de glace pluriannuelle peut encore compliquer la navigation.',
+          'Le dégel du pergélisol transforme les paysages. Dans les terrains riches en glace, la fonte de la glace contenue dans le sol peut provoquer des affaissements, des glissements et des changements dans les réseaux de drainage. Ces transformations affectent les routes, les pistes, les bâtiments et les réseaux d’approvisionnement. Le dégel peut aussi modifier les zones humides et les habitats, et libérer une partie du carbone stocké dans les sols. L’ampleur des effets varie fortement selon la géologie, la teneur en glace, la végétation et les conditions locales.',
+          'Les écosystèmes terrestres et marins réagissent aux changements de température, de neige, de glace et de disponibilité alimentaire. Les migrations et les périodes de reproduction de certaines espèces peuvent se modifier, tandis que les relations entre prédateurs et proies évoluent. Les changements ne sont pas identiques pour toutes les espèces : certaines peuvent étendre leur aire de répartition vers le nord, alors que d’autres perdent des habitats ou deviennent plus vulnérables. Les observations locales et les connaissances autochtones sont importantes pour suivre ces changements, en complément des données satellitaires et des relevés scientifiques.',
+          'Les conséquences humaines sont directes. Une glace moins prévisible peut compliquer les déplacements sur la banquise et l’accès aux zones de chasse ou de pêche. L’érosion côtière, les tempêtes et les modifications du pergélisol peuvent fragiliser les infrastructures. Les changements affectent également la sécurité alimentaire, les coûts de transport, les activités culturelles et la transmission des connaissances liées au territoire. Les communautés ne sont pas toutes exposées de la même façon : la géographie locale, les infrastructures, les ressources disponibles et les moyens d’adaptation influencent les risques.',
+          'L’adaptation repose sur des réponses locales et collectives : suivi des glaces et du pergélisol, conception d’infrastructures adaptées, protection des habitats, systèmes d’alerte, planification communautaire et participation des peuples autochtones aux décisions. Ces mesures réduisent certains risques mais ne remplacent pas la réduction des émissions mondiales de gaz à effet de serre, nécessaire pour limiter le réchauffement futur. Les politiques climatiques efficaces doivent associer les connaissances scientifiques, les savoirs autochtones, les priorités des communautés et les engagements des gouvernements.'
+        ],
+        example: {
+          statement: 'Un indicateur climatique compare une surface de glace de mer de 1,00 million de km² à une surface ultérieure de 0,80 million de km². Quelle est la diminution relative ?',
+          calculation: 'Diminution = 1,00 - 0,80 = 0,20 million de km². Diminution relative = (0,20 / 1,00) × 100 = 20 %.',
+          answer: 'La surface a diminué de 20 %. Ce calcul illustre une comparaison hypothétique ; il ne représente pas une mesure nationale précise.'
+        },
+        exercise: {
+          question: 'Pourquoi la diminution de la glace de mer peut-elle avoir des conséquences à la fois écologiques et humaines ?',
+          answer: 'La glace constitue un habitat pour plusieurs espèces et une surface de déplacement et d’activités pour les habitants. Sa diminution et son instabilité modifient donc les écosystèmes, les déplacements, la chasse, la pêche et certaines pratiques culturelles.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on le phénomène par lequel l’Arctique se réchauffe plus rapidement que la moyenne mondiale ?',
+            answer: 'L’amplification arctique.'
+          },
+          {
+            question: 'Quelle est la durée minimale qui définit le pergélisol ?',
+            answer: 'Une température égale ou inférieure à 0 °C pendant au moins 2 années consécutives.'
+          },
+          {
+            question: 'Pourquoi une diminution de la glace de mer ne garantit-elle pas une navigation sans risque dans le passage du Nord-Ouest ?',
+            answer: 'Parce que la glace restante, notamment la glace pluriannuelle transportée par les courants, ainsi que les conditions météorologiques et les caractéristiques des chenaux, peuvent encore rendre la navigation difficile.'
+          }
+        ],
+        sources: [
+          { title: 'Environnement et Changement climatique Canada — Canada’s Changing Climate Report 2026, chapitre 4 : Large-scale atmosphere-ocean processes affecting climate', url: 'https://www.canada.ca/en/environment-climate-change/services/science-technology/changing-climate-report-2026/cccr-chapter-4-en.html' },
+          { title: 'Environnement et Changement climatique Canada — Canada’s Changing Climate Report 2026, chapitre 6 : Changes in the cryosphere', url: 'https://www.canada.ca/en/environment-climate-change/services/science-technology/changing-climate-report-2026/cccr-chapter-6-en.html' },
+          { title: 'Environnement et Changement climatique Canada — Sea ice in Canada', url: 'https://www.canada.ca/en/environment-climate-change/services/environmental-indicators/sea-ice.html' },
+          { title: 'Environnement et Changement climatique Canada — Canada’s Changing Climate Report 2026: Headline statements', url: 'https://www.canada.ca/en/environment-climate-change/services/science-technology/changing-climate-report-2026/headline-statements.html' },
+          { title: 'Inuit Tapiriit Kanatami — Inuit Nunangat Policy', url: 'https://itk.ca/wp-content/uploads/2022/04/Inuit-Nunangat-Policy-EN.pdf' }
+        ]
+      }
+    }
+  ]
+},
+
+
+
 ]
 
