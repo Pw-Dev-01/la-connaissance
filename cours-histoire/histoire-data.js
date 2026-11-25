@@ -9362,6 +9362,288 @@ sortYear: -3200,
 },
 
 
+{
+  id: 'paris',
+  sortYear: -52,
+  title: 'Paris',
+  note: 'Six chapitres approfondis retraçant l’histoire de Paris depuis la Lutèce gauloise et gallo-romaine jusqu’à la métropole contemporaine. La chronologie distingue les faits établis, les hypothèses archéologiques et les interprétations historiques. Les dates anciennes sont parfois approximatives et les transformations de la ville sont étudiées dans leurs dimensions politiques, sociales, économiques, religieuses et urbaines.',
+  chapters: [
+    {
+      id: 'origines-parisii-et-lutece-antique',
+      title: 'Les origines de Paris : les Parisii et la Lutèce antique',
+      field: 'Histoire ancienne · Peuple gaulois des Parisii, conquête romaine et développement de Lutèce, de l’Antiquité préromaine au 3e siècle',
+      summary: 'Étudier les premières occupations du site parisien, le peuple des Parisii, la conquête romaine et la formation de Lutèce. Comprendre pourquoi la localisation exacte de l’oppidum gaulois reste discutée et comment la ville gallo-romaine s’est développée autour de la Seine.',
+      lesson: {
+        sections: [
+          'Le territoire correspondant à l’actuelle ville de Paris est occupé bien avant la période romaine. Les découvertes archéologiques de Bercy attestent notamment de la présence de communautés humaines au Néolithique, entre environ 6500 et 4500 avant notre ère. Des vestiges de bâtiments, de pirogues et d’aménagements en bord de Seine témoignent d’activités humaines organisées. Ces découvertes ne permettent toutefois pas de parler d’une ville de Paris à cette époque : il s’agit d’occupations anciennes du territoire, antérieures à la formation d’un centre urbain.',
+          'Les Parisii sont un peuple gaulois établi dans le bassin de la Seine. Le Musée Carnavalet situe leur installation dans la région vers le 3e siècle avant notre ère. Leur nom est à l’origine du nom de Paris. Ils pratiquent notamment l’agriculture, l’artisanat et les échanges. La qualité de certaines monnaies attribuées aux Parisii témoigne de leur maîtrise technique et de leur participation aux réseaux économiques de la Gaule. Il faut distinguer le peuple des Parisii, son territoire et la ville antique de Lutèce : ces réalités sont liées, mais ne sont pas strictement identiques.',
+          'Lutèce est mentionnée par Jules César dans la Guerre des Gaules. En 53 avant notre ère, César évoque une assemblée réunie chez les Parisii. En 52 avant notre ère, son lieutenant Titus Labienus mène une campagne militaire contre les forces gauloises commandées par Camulogène. Le récit de César décrit un oppidum situé sur une île de la Seine. Les Romains remportent la bataille. Selon le texte antique, les Gaulois incendient leurs installations avant l’affrontement afin de ne pas les laisser à l’ennemi. Cet épisode constitue un repère important, mais il ne prouve pas que l’histoire urbaine de Paris commence en 52 avant notre ère.',
+          'La localisation exacte de l’oppidum gaulois reste une question archéologique. L’identification traditionnelle avec l’île de la Cité repose notamment sur le récit de César et sur la configuration du fleuve. Cependant, les preuves matérielles d’une occupation gauloise structurée de cette île ont longtemps été limitées. Les chercheurs étudient donc plusieurs hypothèses. Il est essentiel de ne pas présenter l’emplacement de l’oppidum comme une certitude absolue. Les découvertes archéologiques récentes peuvent enrichir le dossier, mais leur datation et leur interprétation doivent être confirmées par les spécialistes.',
+          'Après la conquête romaine, une agglomération gallo-romaine se développe progressivement. La ville connue sous le nom de Lutèce s’étend principalement sur la rive gauche de la Seine, notamment autour de la montagne Sainte-Geneviève. Elle possède des espaces publics et des équipements caractéristiques des villes romaines : forum, théâtre, thermes, arènes et aqueduc. Les vestiges des thermes de Cluny et des arènes de Lutèce permettent encore d’étudier cette organisation urbaine. La romanisation transforme les pratiques et les constructions, mais elle n’efface pas immédiatement les traditions gauloises.',
+          'La Seine joue un rôle central dans le développement de Lutèce. Elle facilite les déplacements, le transport des marchandises et les échanges avec les territoires voisins. Les activités portuaires contribuent à la vie économique de l’agglomération. Au début du 1er siècle de notre ère, des îlots sont réunis pour former l’actuelle île de la Cité. Lutèce est donc une ville organisée autour d’un réseau de voies terrestres et fluviales. Son développement dépend à la fois de sa situation géographique, des échanges commerciaux et de son intégration dans l’Empire romain.'
+        ],
+        example: {
+          statement: 'La bataille de Lutèce se déroule en 52 avant notre ère. Combien d’années séparent cet événement de l’année 2026, en utilisant une approximation qui ne tient pas compte de l’absence d’année zéro dans le calendrier historique ?',
+          calculation: '2026 + 52 = 2078 années environ. Le résultat est une approximation de durée historique.',
+          answer: 'La bataille de Lutèce remonte à environ 2078 ans. L’année -52 est utilisée ici comme repère chronologique conventionnel pour classer la branche, et non comme date de fondation certaine de Paris.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les Parisii, l’oppidum gaulois et la ville gallo-romaine de Lutèce ?',
+          answer: 'Les Parisii désignent un peuple gaulois, l’oppidum désigne un établissement fortifié mentionné par César et Lutèce désigne l’agglomération antique qui se développe après la conquête romaine. Ces notions sont liées, mais elles ne désignent pas la même réalité historique.'
+        },
+        exercises: [
+          {
+            question: 'À quel siècle le Musée Carnavalet situe-t-il l’installation des Parisii dans la région ?',
+            answer: 'Vers le 3e siècle avant notre ère.'
+          },
+          {
+            question: 'Quel chef romain conduit la campagne contre les forces gauloises à Lutèce en 52 avant notre ère ?',
+            answer: 'Titus Labienus, lieutenant de Jules César.'
+          },
+          {
+            question: 'Quels vestiges permettent d’étudier la ville gallo-romaine ?',
+            answer: 'Les thermes, les arènes, les vestiges du forum, les éléments de l’aqueduc et les traces des aménagements portuaires.'
+          }
+        ],
+        sources: [
+          { title: 'Ministère de la Culture — La bataille de Lutèce', url: 'https://archeologie.culture.gouv.fr/paris/fr/la-bataille-de-lutece' },
+          { title: 'Ministère de la Culture — La Lutèce gauloise', url: 'https://archeologie.culture.gouv.fr/paris/fr/la-lutece-gauloise' },
+          { title: 'Musée Carnavalet — Le parcours permanent, Antiquité', url: 'https://carnavalet.paris.fr/le-nouveau-parcours?page=1' },
+          { title: 'Crypte archéologique de l’île de la Cité — Plus de 2000 ans d’histoire', url: 'https://www.crypte.paris.fr/la-crypte/plus-de-2000-ans-dhistoire' }
+        ]
+      }
+    },
+    {
+      id: 'paris-antique-et-haut-moyen-age',
+      title: 'De Lutèce à Paris : Antiquité tardive et premiers royaumes francs',
+      field: 'Histoire ancienne et haut Moyen Âge · 3e siècle au 10e siècle',
+      summary: 'Comprendre le déplacement du centre urbain vers l’île de la Cité, les transformations de la ville à la fin de l’Empire romain, la christianisation, le rôle de Clovis et les évolutions politiques de Paris sous les Mérovingiens et les Carolingiens.',
+      lesson: {
+        sections: [
+          'À partir du 3e siècle, l’Empire romain connaît des crises politiques, militaires et économiques. Les régions du nord de la Gaule sont exposées à des incursions et à une instabilité croissante. Lutèce prend une importance stratégique dans la défense de l’Empire. Les activités urbaines ne disparaissent pas brutalement, mais l’organisation de la ville se transforme. Les espaces construits sur la rive gauche connaissent un recul relatif tandis que l’île de la Cité devient un centre défensif et politique plus important.',
+          'Au début du 4e siècle, l’île de la Cité est fortifiée. Le rempart construit autour de l’île utilise notamment des matériaux récupérés sur des monuments plus anciens de la rive gauche. Cette pratique, appelée remploi, est fréquente dans l’Antiquité tardive : des blocs déjà taillés sont réutilisés pour construire de nouveaux édifices. Les vestiges de cette enceinte sont encore visibles dans la Crypte archéologique de l’île de la Cité. La fortification traduit une nouvelle organisation de l’espace urbain, davantage centrée sur la protection et le contrôle du cœur de la ville.',
+          'Le nom de Paris remplace progressivement celui de Lutèce au cours de l’Antiquité tardive. Il dérive du nom des Parisii. Le changement ne correspond pas à un événement unique et précisément daté : il s’effectue progressivement dans les usages et les textes. Au 4e siècle, Paris est aussi un lieu de présence impériale. En 360, Julien est acclamé empereur par ses troupes dans la ville. Cet épisode montre que Paris conserve une importance politique et militaire à la fin de l’Empire romain.',
+          'La christianisation transforme progressivement la société et le paysage religieux de Paris. Des communautés chrétiennes s’organisent et des lieux de culte se développent. La figure de sainte Geneviève est associée à la mémoire religieuse de la ville. Les traditions relatives à son rôle lors des menaces contre Paris au 5e siècle ont une grande importance dans la mémoire parisienne. L’historien doit cependant distinguer les éléments attestés par les sources anciennes des récits hagiographiques, qui ont été rédigés pour transmettre la mémoire et le culte des saints.',
+          'Après la disparition de l’autorité impériale romaine en Gaule, Paris passe sous l’autorité des royaumes francs. Clovis, roi des Francs, établit sa résidence principale à Paris après 508 selon les repères historiques généralement retenus. Il ne faut toutefois pas assimiler cette situation à une capitale administrative moderne : le royaume franc ne dispose pas d’un appareil administratif centralisé comparable à celui des États contemporains. Paris devient néanmoins un lieu important du pouvoir royal et de la mémoire chrétienne.',
+          'Sous les Mérovingiens puis les Carolingiens, Paris connaît des évolutions politiques et urbaines variables. La ville conserve une importance religieuse et stratégique, mais elle n’est pas constamment le centre principal du pouvoir royal. Les établissements religieux, les espaces de commerce et les lieux de résidence structurent progressivement le tissu urbain. À la fin du 9e siècle, les attaques vikings, notamment le siège de 885-886, rappellent la vulnérabilité de la ville et l’importance de ses fortifications. Paris reste toutefois un centre majeur de la vallée de la Seine.'
+        ],
+        example: {
+          statement: 'Clovis établit sa résidence principale à Paris après 508. Combien d’années environ séparent l’année 508 de l’année 2026 ?',
+          calculation: '2026 - 508 = 1518 années. Ce calcul donne un écart approximatif entre les deux années.',
+          answer: 'Environ 1518 ans séparent 508 et 2026. Il s’agit d’un calcul chronologique simplifié, pas d’une durée exacte au jour près.'
+        },
+        exercise: {
+          question: 'Pourquoi l’île de la Cité devient-elle particulièrement importante à la fin de l’Empire romain ?',
+          answer: 'Elle est fortifiée au début du 4e siècle et devient un centre défensif et politique. Le déplacement relatif des fonctions urbaines vers l’île correspond à une adaptation de la ville aux menaces militaires et aux transformations de l’Empire.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que le remploi dans la construction antique ?',
+            answer: 'C’est la réutilisation de matériaux provenant de bâtiments plus anciens pour construire de nouveaux édifices.'
+          },
+          {
+            question: 'En quelle année Julien est-il acclamé empereur à Paris ?',
+            answer: 'En 360.'
+          },
+          {
+            question: 'Pourquoi ne faut-il pas présenter Paris comme une capitale administrative moderne sous Clovis ?',
+            answer: 'Parce que le royaume franc ne possède pas une administration centralisée comparable à celle d’un État moderne. Paris est une résidence royale importante, mais son statut politique est différent.'
+          }
+        ],
+        sources: [
+          { title: 'Crypte archéologique de l’île de la Cité — Plus de 2000 ans d’histoire', url: 'https://www.crypte.paris.fr/la-crypte/plus-de-2000-ans-dhistoire' },
+          { title: 'Musée Carnavalet — Paris du Moyen Âge à la Renaissance', url: 'https://www.carnavalet.paris.fr/sites/default/files/2023-03/paris_du_moyen_age_a_la_renaissance.pdf' },
+          { title: 'Musée Carnavalet — Dossier sur l’Antiquité', url: 'https://www.carnavalet.paris.fr/sites/default/files/2022-07/paris_antiquite_mp_pdf.pdf' },
+          { title: 'Ville de Paris — De porte en porte, Paris se raconte', url: 'https://www.paris.fr/pages/de-porte-en-porte-paris-se-raconte-16658' }
+        ]
+      }
+    },
+    {
+      id: 'paris-medieval-capetien',
+      title: 'Paris au Moyen Âge : ville royale, religieuse, marchande et universitaire',
+      field: 'Histoire médiévale · 10e siècle au 15e siècle',
+      summary: 'Étudier l’essor de Paris sous les Capétiens, le développement des quartiers marchands et universitaires, la construction de grands monuments religieux, les fortifications et les crises qui marquent la fin du Moyen Âge.',
+      lesson: {
+        sections: [
+          'À partir de la fin du 10e siècle, l’affirmation de la dynastie capétienne renforce progressivement le rôle politique de Paris. Hugues Capet devient roi des Francs en 987. Les premiers Capétiens ne gouvernent pas encore un royaume entièrement centralisé, mais leur pouvoir se consolide au fil des générations. Paris bénéficie de sa position sur la Seine, de ses ressources économiques et de la présence d’institutions religieuses importantes. La ville devient progressivement un centre essentiel du royaume.',
+          'La ville médiévale s’organise autour de plusieurs pôles. L’île de la Cité concentre des fonctions religieuses et politiques, avec le palais royal et les établissements épiscopaux. La rive gauche accueille notamment des communautés religieuses et des lieux d’enseignement. La rive droite se développe comme un espace de commerce et d’activités artisanales. Les ponts, les marchés et les voies de circulation relient ces différents quartiers. Paris ne forme donc pas un espace homogène : chaque rive possède des fonctions et des dynamiques particulières.',
+          'Le développement de l’enseignement contribue au rayonnement de Paris. Des écoles se regroupent autour de maîtres et d’étudiants, notamment dans le quartier de la montagne Sainte-Geneviève. L’Université de Paris se structure progressivement au cours du 12e et du 13e siècle. En 1200, Philippe Auguste accorde un privilège à l’Université, qui bénéficie ainsi d’une reconnaissance juridique importante. La Sorbonne, fondée au 13e siècle par Robert de Sorbon, devient un établissement majeur de la vie intellectuelle parisienne. Il faut distinguer l’histoire de l’Université de Paris de celle de la Sorbonne, qui n’en représente qu’une institution particulière.',
+          'Les grands chantiers religieux transforment durablement le paysage urbain. La construction de la cathédrale Notre-Dame commence en 1163, sous l’épiscopat de Maurice de Sully, et se poursuit sur plusieurs générations. La Sainte-Chapelle est édifiée au 13e siècle sous le règne de Louis IX. Ces édifices témoignent du rôle de la religion dans la société médiévale et de la puissance des autorités royales et ecclésiastiques. Leur construction mobilise des artisans, des matériaux et des ressources considérables.',
+          'Sous Philippe Auguste, Paris connaît un important développement de ses infrastructures et de ses fortifications. Entre 1190 et 1210 environ, le roi fait construire une enceinte destinée à protéger la ville et à encadrer son extension. Le Louvre est également transformé en forteresse à la fin du 12e siècle. Les fortifications ne servent pas uniquement à défendre les habitants : elles contrôlent aussi les entrées, les marchandises et les déplacements. La ville médiévale s’étend progressivement au-delà de ses limites anciennes, ce qui entraîne de nouveaux aménagements.',
+          'Le 14e et le 15e siècle sont marqués par des crises majeures. La peste noire atteint l’Europe à partir de 1347-1348 et provoque une forte mortalité. La guerre de Cent Ans, les tensions politiques et les conflits sociaux fragilisent le royaume et affectent Paris. La révolte d’Étienne Marcel en 1358 révèle les tensions entre le pouvoir royal et les représentants de la bourgeoisie urbaine. Les occupations et les changements de pouvoir pendant la guerre montrent que Paris n’est pas seulement un centre de prospérité : c’est aussi un enjeu politique et militaire majeur.'
+        ],
+        example: {
+          statement: 'La construction de Notre-Dame commence en 1163. Quel est l’écart approximatif entre cette date et l’année 2026 ?',
+          calculation: '2026 - 1163 = 863 années.',
+          answer: 'Environ 863 ans séparent le début du chantier de Notre-Dame de l’année 2026. La construction s’est étendue sur plusieurs générations et ne correspond pas à une réalisation en une seule campagne.'
+        },
+        exercise: {
+          question: 'Comment les fonctions religieuses, politiques, commerciales et universitaires contribuent-elles à faire de Paris une grande ville médiévale ?',
+          answer: 'Les institutions royales et religieuses renforcent son rôle politique et spirituel, les marchés et les activités artisanales soutiennent son économie, tandis que les écoles et l’Université attirent des étudiants et des maîtres. Ces fonctions complémentaires participent à son rayonnement.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Hugues Capet devient-il roi des Francs ?',
+            answer: 'En 987.'
+          },
+          {
+            question: 'Quel roi fait construire l’enceinte de Paris entre 1190 et 1210 environ ?',
+            answer: 'Philippe Auguste.'
+          },
+          {
+            question: 'Quel événement démographique majeur frappe l’Europe à partir de 1347-1348 ?',
+            answer: 'La peste noire, qui provoque une forte mortalité dans de nombreuses régions européennes.'
+          }
+        ],
+        sources: [
+          { title: 'Musée Carnavalet — Paris du Moyen Âge à la Renaissance', url: 'https://www.carnavalet.paris.fr/sites/default/files/2023-03/paris_du_moyen_age_a_la_renaissance.pdf' },
+          { title: 'Ville de Paris — L’enceinte médiévale de Philippe Auguste', url: 'https://www.paris.fr/pages/sur-la-piste-de-l-enceinte-medievale-philippe-auguste-rive-droite-episode-1-2-20729' },
+          { title: 'BnF — Privilège accordé à l’Université de Paris en 1200', url: 'https://ccfr.bnf.fr/portailccfr/ark:/16871/004a1962665' },
+          { title: 'Crypte archéologique de l’île de la Cité — Plus de 2000 ans d’histoire', url: 'https://www.crypte.paris.fr/la-crypte/plus-de-2000-ans-dhistoire' }
+        ]
+      }
+    },
+    {
+      id: 'paris-renaissance-ancien-regime',
+      title: 'Paris de la Renaissance aux Lumières : monarchie, transformations urbaines et vie intellectuelle',
+      field: 'Histoire moderne · 16e siècle à 1789',
+      summary: 'Comprendre les transformations de Paris sous les derniers Valois et les Bourbons, les guerres de Religion, l’affirmation monarchique, les grands aménagements urbains, le développement des activités économiques et le rôle de la capitale dans les Lumières.',
+      lesson: {
+        sections: [
+          'À la Renaissance, Paris demeure une ville majeure du royaume, mais son organisation reste marquée par l’héritage médiéval. Les rues sont souvent étroites, les quartiers densément construits et les activités artisanales très présentes. L’imprimerie favorise la circulation des textes et des idées. Les humanistes, les artistes et les savants participent à la vie intellectuelle de la capitale. Les influences italiennes se diffusent dans l’architecture et les arts, tandis que la monarchie cherche à affirmer sa puissance par des constructions et des cérémonies.',
+          'Au 16e siècle, les guerres de Religion opposent catholiques et protestants dans le royaume de France. Paris est un centre important du catholicisme et un lieu de fortes tensions politiques et religieuses. Le massacre de la Saint-Barthélemy commence dans la nuit du 23 au 24 août 1572 et s’étend ensuite à d’autres villes du royaume. Cet événement illustre la violence des conflits confessionnels. Il faut replacer les événements parisiens dans le contexte national : la crise religieuse ne se limite pas à la capitale.',
+          'L’arrivée d’Henri IV au pouvoir ouvre une nouvelle phase de reconstruction et d’aménagement. Après son entrée dans Paris en 1594, le roi cherche à rétablir l’autorité monarchique et à pacifier le royaume. L’édit de Nantes de 1598 accorde des garanties aux protestants, même si son application connaît des limites et des tensions. À Paris, des projets urbains accompagnent le renforcement du pouvoir royal. La place Royale, devenue place des Vosges, est aménagée au début du 17e siècle et constitue un exemple important de composition urbaine planifiée.',
+          'Au 17e siècle, Paris se transforme sous les règnes de Louis XIII et de Louis XIV. La monarchie développe des institutions administratives, religieuses et culturelles. Le Louvre est agrandi et de nouveaux quartiers se structurent. Les hôtels particuliers, les places royales et les établissements religieux modifient le paysage de la ville. Lorsque Louis XIV installe durablement la cour à Versailles à partir de 1682, Paris perd une partie de sa fonction de résidence principale du souverain, mais conserve un rôle politique, économique, intellectuel et culturel considérable.',
+          'Au 18e siècle, Paris est l’un des grands centres intellectuels européens. Les salons, les cafés, les académies, les librairies et les lieux de sociabilité contribuent à la diffusion des idées des Lumières. Les débats sur la monarchie, la justice, la religion et la société circulent dans la capitale. L’essor de l’imprimé et des échanges intellectuels renforce la place de Paris dans la vie culturelle européenne. Toutefois, cette effervescence ne signifie pas que l’ensemble de la population bénéficie des mêmes conditions de vie : les inégalités sociales restent fortes.',
+          'La croissance démographique et économique accentue les difficultés urbaines. Les quartiers populaires sont souvent caractérisés par une forte densité, des logements exigus et des problèmes d’hygiène. Les marchés, les ateliers, les commerces et les activités de service font vivre une population très diverse. Les autorités cherchent à améliorer l’approvisionnement, la circulation et la sécurité, mais les transformations restent progressives. À la fin du 18e siècle, les tensions économiques, les difficultés financières de la monarchie et les revendications politiques contribuent à faire de Paris un centre décisif de la crise révolutionnaire.'
+        ],
+        example: {
+          statement: 'L’édit de Nantes est signé en 1598. Quel est l’écart approximatif entre cette date et l’année 1789, début de la Révolution française ?',
+          calculation: '1789 - 1598 = 191 années.',
+          answer: 'Environ 191 ans séparent l’édit de Nantes du début de la Révolution française. Cette durée permet de situer les deux événements dans la période moderne.'
+        },
+        exercise: {
+          question: 'Pourquoi Paris joue-t-elle un rôle central dans la diffusion des idées des Lumières ?',
+          answer: 'La capitale rassemble des salons, des cafés, des académies, des librairies, des imprimeurs et des institutions culturelles. Ces lieux favorisent les échanges intellectuels et la circulation des textes et des débats politiques.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année Henri IV entre-t-il dans Paris ?',
+            answer: 'En 1594.'
+          },
+          {
+            question: 'Quel nom portait la place des Vosges lors de son aménagement au début du 17e siècle ?',
+            answer: 'La place Royale.'
+          },
+          {
+            question: 'À partir de quelle année Louis XIV installe-t-il durablement la cour à Versailles ?',
+            answer: 'À partir de 1682.'
+          }
+        ],
+        sources: [
+          { title: 'Musée Carnavalet — Paris du Moyen Âge à la Renaissance', url: 'https://www.carnavalet.paris.fr/sites/default/files/2023-03/paris_du_moyen_age_a_la_renaissance.pdf' },
+          { title: 'BnF — Archives de la Bastille', url: 'https://www.bnf.fr/fr/archives-de-la-bastille' },
+          { title: 'Archives nationales — Paris, les lieux de la Révolution, 1789-1799', url: 'https://catalogue.bnf.fr/ark:/12148/cb38202969r' },
+          { title: 'Ville de Paris — De porte en porte, Paris se raconte', url: 'https://www.paris.fr/pages/de-porte-en-porte-paris-se-raconte-16658' }
+        ]
+      }
+    },
+    {
+      id: 'paris-revolution-xixe-siecle',
+      title: 'Paris de la Révolution au Second Empire : révolutions, industrialisation et transformations urbaines',
+      field: 'Histoire contemporaine · 1789 à 1871',
+      summary: 'Analyser le rôle de Paris dans la Révolution française, les changements institutionnels du 19e siècle, les révolutions de 1830 et 1848, les transformations haussmanniennes, l’annexion de 1860 et la Commune de Paris en 1871.',
+      lesson: {
+        sections: [
+          'En 1789, Paris devient l’un des principaux centres de la Révolution française. La prise de la Bastille, le 14 juillet 1789, constitue un événement majeur dans la contestation de l’autorité royale. La mobilisation populaire, les débats politiques et les actions des institutions parisiennes influencent directement le déroulement de la Révolution. La capitale accueille des assemblées, des clubs politiques et des manifestations qui participent à la transformation du régime. Paris devient ainsi un espace central de la souveraineté populaire et des conflits politiques.',
+          'La Révolution transforme profondément l’organisation administrative de la capitale. La commune de Paris naît en 1789. En 1795, le Directoire supprime la commune centrale et organise la ville autour de 12 arrondissements. En 1800, le pouvoir municipal est réorganisé sous le Consulat : Paris est administrée par le préfet de la Seine et le préfet de police, sans maire central élu. Cette organisation renforce le contrôle de l’État sur la capitale. Les changements institutionnels montrent que Paris possède une place politique particulière dans l’histoire française.',
+          'Au cours du 19e siècle, Paris connaît une croissance démographique et économique importante. L’industrialisation, le commerce, les transports et les activités artisanales transforment la ville. Les gares facilitent les déplacements et renforcent les échanges avec les autres régions. Cependant, la croissance accentue les problèmes de logement, de circulation et d’hygiène. Les épidémies, notamment celle de choléra en 1832, révèlent les limites des infrastructures urbaines. Les autorités cherchent progressivement à moderniser les réseaux d’eau, les égouts, les voies de circulation et les équipements collectifs.',
+          'Les révolutions de 1830 et de 1848 confirment le rôle politique de Paris. Les journées révolutionnaires de juillet 1830 entraînent la chute de Charles X. En février 1848, une nouvelle révolution met fin à la monarchie de Juillet et conduit à la proclamation de la Deuxième République. Paris est un lieu de mobilisation populaire, de débats et d’affrontements politiques. Ces événements révèlent les tensions entre les aspirations démocratiques, les revendications sociales et les formes d’autorité politique.',
+          'Sous le Second Empire, Napoléon III engage une vaste transformation de Paris. Le préfet Georges-Eugène Haussmann coordonne une partie essentielle des travaux entrepris à partir de 1853. De grandes voies sont percées ou élargies, des places sont réaménagées, des parcs sont créés et les réseaux d’eau et d’égouts sont développés. Les transformations répondent à des objectifs multiples : améliorer la circulation, l’hygiène et l’approvisionnement, mais aussi faciliter le contrôle de l’espace urbain. Ces travaux bouleversent les quartiers anciens et entraînent des déplacements de population. Leur bilan doit donc être étudié en tenant compte des améliorations matérielles et des conséquences sociales.',
+          'En 1860, Paris annexe des communes limitrophes et passe de 12 à 20 arrondissements. La superficie de la ville augmente fortement et ses limites se rapprochent de celles que nous connaissons aujourd’hui. En 1870, la défaite française face à la Prusse entraîne la chute du Second Empire. Après le siège de Paris et la proclamation de la République, la Commune de Paris s’installe en mars 1871. Cette expérience politique dure environ 2 mois et se termine lors de la répression de la Semaine sanglante en mai 1871. La Commune constitue un épisode majeur de l’histoire politique et sociale de la capitale.'
+        ],
+        example: {
+          statement: 'Paris passe de 12 à 20 arrondissements en 1860. Combien d’arrondissements supplémentaires sont créés ?',
+          calculation: '20 - 12 = 8 arrondissements supplémentaires.',
+          answer: 'Le nombre d’arrondissements augmente de 8, passant de 12 à 20 en 1860.'
+        },
+        exercise: {
+          question: 'Pourquoi les travaux haussmanniens ne doivent-ils pas être étudiés uniquement comme une amélioration architecturale ?',
+          answer: 'Ils transforment aussi la circulation, l’hygiène, les réseaux techniques, les activités économiques et les conditions de logement. Ils entraînent des démolitions, des déplacements de population et une modification de la structure sociale de nombreux quartiers.'
+        },
+        exercises: [
+          {
+            question: 'Quel événement parisien majeur se déroule le 14 juillet 1789 ?',
+            answer: 'La prise de la Bastille.'
+          },
+          {
+            question: 'Quel préfet conduit une grande partie des transformations urbaines sous le Second Empire ?',
+            answer: 'Georges-Eugène Haussmann.'
+          },
+          {
+            question: 'Combien de temps environ dure la Commune de Paris en 1871 ?',
+            answer: 'Environ 2 mois, de mars à mai 1871.'
+          }
+        ],
+        sources: [
+          { title: 'BnF — Archives de la Bastille', url: 'https://www.bnf.fr/fr/archives-de-la-bastille' },
+          { title: 'Archives de Paris — Présentation et repères institutionnels', url: 'https://archives.paris.fr/presentation-de-linstitution' },
+          { title: 'Ville de Paris — Haussmann, l’homme qui a transformé Paris', url: 'https://www.paris.fr/pages/haussmann-l-homme-qui-a-transforme-paris-23091' },
+          { title: 'Archives de Paris — La Commune de Paris', url: 'https://archives.paris.fr/offre-pedagogique/ressources-pedagogiques/la-commune-de-paris' },
+          { title: 'Archives de Paris — Plans parcellaires et communes annexées', url: 'https://archives.paris.fr/archives-numerisees/documents-iconographiques/plans-parcellaires' }
+        ]
+      }
+    },
+    {
+      id: 'paris-de-1871-a-nos-jours',
+      title: 'Paris depuis 1871 : capitale républicaine, guerres mondiales et métropole contemporaine',
+      field: 'Histoire contemporaine · 1871 à nos jours',
+      summary: 'Étudier la reconstruction politique et urbaine après 1871, l’affirmation de Paris comme capitale républicaine et culturelle, les deux guerres mondiales, l’Occupation, la Libération, les transformations de l’après-guerre et les enjeux contemporains.',
+      lesson: {
+        sections: [
+          'Après la Commune de 1871, Paris se reconstruit dans le cadre de la Troisième République. Les institutions républicaines se stabilisent progressivement et la capitale devient un lieu majeur de la vie politique nationale. Les bâtiments publics, les écoles, les équipements culturels et les infrastructures urbaines contribuent à affirmer les valeurs de la République. La mémoire de la Commune reste cependant conflictuelle et continue de nourrir les débats politiques et sociaux.',
+          'À la fin du 19e siècle, Paris renforce son rayonnement international. L’Exposition universelle de 1889 marque les esprits avec la construction de la tour Eiffel, conçue comme une structure temporaire mais conservée après l’exposition. L’Exposition universelle de 1900 accompagne l’ouverture de nouvelles infrastructures, notamment le métro parisien, dont la première ligne est inaugurée en juillet 1900. Ces événements illustrent le rôle de Paris comme centre de l’innovation technique, de l’architecture, des arts et des échanges internationaux.',
+          'La Première Guerre mondiale commence en 1914 et place Paris à proximité du front pendant une partie du conflit. La capitale est menacée par les offensives allemandes et subit des bombardements. La guerre transforme la vie quotidienne : mobilisation des hommes, travail des femmes dans de nombreux secteurs, difficultés d’approvisionnement et accueil des blessés. Après 1918, les commémorations et les monuments aux morts inscrivent durablement la mémoire du conflit dans l’espace urbain. Paris reste aussi un centre culturel important durant l’entre-deux-guerres.',
+          'Pendant la Seconde Guerre mondiale, Paris est occupée par l’armée allemande à partir de juin 1940. La population subit les restrictions, la censure, les réquisitions et la répression. Les persécutions antisémites conduisent notamment à l’arrestation et à la déportation de nombreux Juifs. La rafle du Vélodrome d’Hiver, les 16 et 17 juillet 1942, constitue un événement majeur de cette politique de persécution menée par les autorités françaises de Vichy avec l’occupant allemand. L’histoire de Paris pendant l’Occupation doit donc être étudiée en tenant compte de la collaboration, de la répression, des persécutions et des différentes formes de résistance.',
+          'En août 1944, l’insurrection parisienne et l’avancée des forces alliées contribuent à la libération de la capitale. Les combats commencent au cours de la seconde moitié du mois. La 2e division blindée du général Leclerc entre dans Paris et la capitulation allemande est signée le 25 août 1944. La Libération possède une importance militaire, politique et symbolique majeure. Elle permet le rétablissement progressif des institutions républicaines et marque une étape essentielle dans la reconstruction de la vie démocratique.',
+          'Depuis 1945, Paris connaît de profondes transformations économiques, sociales et urbaines. La désindustrialisation modifie la structure de l’emploi, tandis que les activités tertiaires, administratives, culturelles et touristiques prennent une place croissante. Les transports en commun, les grands ensembles périphériques, les opérations de rénovation urbaine et les nouveaux équipements modifient l’organisation de l’agglomération. Les débats contemporains portent notamment sur le logement, les mobilités, la pollution, la préservation du patrimoine, les inégalités territoriales et la place de Paris dans la métropole du Grand Paris. La capitale actuelle est donc le résultat d’une longue superposition de transformations historiques.'
+        ],
+        example: {
+          statement: 'La Libération de Paris est datée du 25 août 1944. Quel est l’écart entre cette date et l’année 2026 ?',
+          calculation: '2026 - 1944 = 82 années.',
+          answer: 'Environ 82 ans séparent la Libération de Paris de l’année 2026.'
+        },
+        exercise: {
+          question: 'Pourquoi la Libération de Paris en août 1944 est-elle à la fois un événement militaire et politique ?',
+          answer: 'Elle met fin à l’occupation allemande de la capitale, mais elle représente aussi le rétablissement de l’autorité républicaine et un enjeu de légitimité politique pour les forces françaises engagées dans la Libération.'
+        },
+        exercises: [
+          {
+            question: 'En quelle année la tour Eiffel est-elle construite pour l’Exposition universelle ?',
+            answer: 'En 1889.'
+          },
+          {
+            question: 'En quelle année le métro parisien est-il inauguré ?',
+            answer: 'En 1900.'
+          },
+          {
+            question: 'À quelle date la capitulation allemande à Paris est-elle signée lors de la Libération ?',
+            answer: 'Le 25 août 1944.'
+          }
+        ],
+        sources: [
+          { title: 'Ministère des Armées — La libération de Paris', url: 'https://www.defense.gouv.fr/mission-liberation/vivre-liberation/liberation-via-ses-historiens/regards-dhistoriens-liberation/liberation-paris' },
+          { title: 'Ministère des Armées — Août 1944, la libération de Paris', url: 'https://www.defense.gouv.fr/chemins-memoire/histoire-memoires/ressources-historiques/seconde-guerre-mondiale/operations-militaires/1944-23' },
+          { title: 'Archives de Paris — La Commune de Paris', url: 'https://archives.paris.fr/offre-pedagogique/ressources-pedagogiques/la-commune-de-paris' },
+          { title: 'Archives de Paris — Plans parcellaires', url: 'https://archives.paris.fr/archives-numerisees/documents-iconographiques/plans-parcellaires' },
+          { title: 'Musée Carnavalet — Le parcours permanent', url: 'https://carnavalet.paris.fr/le-nouveau-parcours?page=1' }
+        ]
+      }
+    }
+  ]
+},
+
+
 ]
 
 
