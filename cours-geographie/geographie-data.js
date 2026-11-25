@@ -3782,5 +3782,287 @@ window.courseCatalog = [
   ]
 },
 
+
+{
+  id: 'cercle-polaire',
+  sortYear: false,
+  title: 'Cercle polaire : géographie, milieux naturels, sociétés et transformations de l’Arctique',
+  note: 'Six chapitres approfondis consacrés au cercle polaire arctique et à la région arctique : repères géographiques et astronomiques, climat et cryosphère, biodiversité, peuples et modes de vie, explorations et recherche scientifique, puis changements climatiques et gouvernance. Le cercle polaire est une ligne de latitude proche de 66°34′ N ; la région arctique possède toutefois plusieurs définitions scientifiques et institutionnelles. Les phénomènes et tendances décrits sont contextualisés et les chiffres susceptibles d’évoluer sont associés à leur source et à leur période.',
+  chapters: [
+    {
+      id: 'geographie-et-reperes-astronomiques',
+      title: 'Géographie du cercle polaire et phénomènes astronomiques',
+      field: 'Géographie physique · Hautes latitudes de l’hémisphère Nord',
+      summary: 'Situer le cercle polaire arctique, distinguer cette ligne de latitude de la région arctique et comprendre le soleil de minuit, la nuit polaire et les saisons lumineuses.',
+      lesson: {
+        sections: [
+          'Le cercle polaire arctique est un parallèle situé à environ 66°34′ de latitude nord. Il marque, dans la définition astronomique usuelle, la limite méridionale à partir de laquelle le Soleil peut rester au-dessus de l’horizon pendant 24 heures au solstice d’été et rester sous l’horizon pendant 24 heures au solstice d’hiver. Sa position exacte n’est pas absolument fixe à l’échelle des siècles : elle dépend notamment de l’inclinaison de l’axe terrestre, qui varie lentement. Il faut donc retenir une valeur approchée plutôt qu’une coordonnée immuable. Le cercle polaire arctique ne doit pas être confondu avec le pôle Nord géographique, situé à 90° N, ni avec le cercle polaire antarctique, son équivalent dans l’hémisphère Sud.',
+          'La région arctique est généralement définie comme l’espace situé au nord du cercle polaire, mais cette convention n’est pas la seule utilisée. Des études écologiques peuvent retenir la limite des arbres, tandis que des travaux océanographiques peuvent s’appuyer sur l’étendue de la glace de mer ou sur des caractéristiques du bassin arctique. Ces limites ne coïncident pas nécessairement. La région comprend notamment l’océan Arctique et des territoires appartenant à l’Alaska, au Canada, au Groenland, à l’Islande, à la Norvège, à la Suède, à la Finlande et à la Russie. L’océan Arctique est largement entouré de terres, contrairement à l’océan Austral qui entoure l’Antarctique.',
+          'Le soleil de minuit désigne la période durant laquelle le Soleil ne passe pas sous l’horizon pendant au moins 24 heures. À la latitude du cercle polaire, ce phénomène se produit autour du solstice d’été ; plus on se dirige vers le nord, plus sa durée augmente. La nuit polaire correspond à la situation inverse autour du solstice d’hiver : le Soleil ne franchit pas l’horizon pendant au moins 24 heures. Cela ne signifie pas nécessairement une obscurité totale à chaque instant, car la lumière crépusculaire peut subsister lorsque le Soleil se trouve juste sous l’horizon. Au pôle Nord, la succession annuelle est extrême : une longue période de jour continu et une longue période de nuit continue, séparées par les transitions des équinoxes.',
+          'Ces phénomènes s’expliquent par l’inclinaison de l’axe de rotation de la Terre par rapport au plan de son orbite autour du Soleil, et non par une variation importante de la distance entre la Terre et le Soleil. Pendant l’été boréal, l’hémisphère Nord est incliné vers le Soleil ; pendant l’hiver boréal, il est incliné à l’opposé. La durée du jour varie donc fortement avec la latitude. Les saisons arctiques ne se résument pas à quatre périodes identiques à celles des régions tempérées : la durée de l’ensoleillement, la hauteur du Soleil, la couverture neigeuse, la glace de mer et les échanges entre l’océan et l’atmosphère structurent fortement le rythme annuel.'
+        ],
+        example: {
+          statement: 'Un observateur se trouve à 70° N. Cette latitude est-elle au nord ou au sud du cercle polaire arctique, et peut-il connaître un jour de 24 heures autour du solstice d’été ?',
+          calculation: 'La latitude de l’observateur est 70° N. La latitude approximative du cercle polaire est 66°34′ N. Comme 70° est supérieur à 66°34′, le point est situé au nord du cercle polaire.',
+          answer: 'L’observateur se trouve au nord du cercle polaire arctique. Il peut donc connaître au moins une journée de 24 heures sans coucher du Soleil autour du solstice d’été. La durée exacte dépend de la latitude et des conditions locales de visibilité de l’horizon.'
+        },
+        exercise: {
+          question: 'Pourquoi le cercle polaire arctique ne doit-il pas être considéré comme la frontière unique et universelle de toutes les études sur l’Arctique ?',
+          answer: 'Parce que les limites de l’Arctique varient selon les objectifs des études. Les sciences du climat, de l’océan, de la végétation ou les institutions peuvent employer des critères différents, comme la limite des arbres ou l’étendue de la glace de mer.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la latitude approximative du cercle polaire arctique ?',
+            answer: 'Environ 66°34′ de latitude nord.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre le soleil de minuit et la nuit polaire ?',
+            answer: 'Le soleil de minuit correspond à une période d’au moins 24 heures sans coucher du Soleil ; la nuit polaire correspond à une période d’au moins 24 heures pendant laquelle le Soleil ne se lève pas.'
+          },
+          {
+            question: 'Quelle est la cause astronomique principale des saisons et des longues durées de jour ou de nuit aux hautes latitudes ?',
+            answer: 'L’inclinaison de l’axe de rotation terrestre par rapport au plan de son orbite autour du Soleil.'
+          }
+        ],
+        sources: [
+          { title: 'NOAA — Arctic FAQ: Where is the Arctic?', url: 'https://www.pmel.noaa.gov/arctic-zone/faq.html' },
+          { title: 'NSIDC — Arctic Weather and Climate', url: 'https://nsidc.org/learn/parts-cryosphere/arctic-weather-and-climate' },
+          { title: 'NSIDC — Arctic Circle Glossary', url: 'https://nsidc.org/learn/cryosphere-glossary/arctic-circle' }
+        ]
+      }
+    },
+    {
+      id: 'climat-et-cryosphere',
+      title: 'Climat arctique, glace de mer, glaciers et pergélisol',
+      field: 'Climatologie · Cryosphère et système océan-atmosphère',
+      summary: 'Étudier les caractéristiques du climat arctique, le cycle saisonnier de la banquise, les glaciers, la neige et le pergélisol, ainsi que leurs interactions.',
+      lesson: {
+        sections: [
+          'Le climat arctique est marqué par une faible hauteur du Soleil, une saison froide longue dans de nombreuses régions et une forte variation saisonnière de l’énergie solaire reçue. Il n’est cependant pas uniforme. Les secteurs proches de l’Atlantique Nord sont influencés par les échanges océaniques et peuvent être relativement plus doux que les régions continentales de Sibérie ou du nord du Canada. Les températures, les précipitations, les vents et la durée de la couverture neigeuse varient selon la latitude, l’altitude, la distance à la mer et les courants océaniques. Il est donc incorrect de décrire l’ensemble de l’Arctique comme un désert de glace homogène.',
+          'La cryosphère regroupe les composantes de la Terre où l’eau est présente sous forme solide : neige, glace de mer, glaciers, calottes glaciaires et sols gelés. La banquise est de l’eau de mer gelée qui flotte à la surface de l’océan. Elle se forme principalement pendant l’automne et l’hiver, puis fond en partie au printemps et en été. Son étendue atteint généralement un maximum vers mars et un minimum vers septembre dans l’Arctique. L’étendue désigne la surface océanique couverte par une concentration de glace définie par les méthodes de mesure ; elle ne doit pas être confondue avec le volume ou l’épaisseur totale de la glace.',
+          'La banquise joue un rôle climatique important parce que la neige et la glace réfléchissent une part importante du rayonnement solaire. Cette propriété est appelée albédo. Lorsque la surface blanche diminue et laisse apparaître davantage d’eau sombre, l’océan absorbe plus d’énergie solaire, ce qui peut accentuer le réchauffement et la fonte : c’est une rétroaction positive de l’albédo. La banquise constitue également un habitat essentiel pour des espèces adaptées à la glace et influence les échanges de chaleur, d’humidité et de mouvement entre l’océan et l’atmosphère. Elle ne doit pas être confondue avec les glaciers terrestres ou la calotte du Groenland.',
+          'Le pergélisol, ou permafrost, désigne un sol, un sédiment ou une roche dont la température reste égale ou inférieure à 0 °C pendant au moins 2 années consécutives. La couche superficielle peut dégeler chaque été : elle est appelée couche active. Le dégel du pergélisol peut déstabiliser les terrains, modifier les écoulements d’eau et endommager des infrastructures construites sur des sols gelés. Il peut aussi permettre la décomposition de matières organiques auparavant gelées, libérant du dioxyde de carbone et, dans certains milieux pauvres en oxygène, du méthane. Le pergélisol n’est donc pas simplement une couche de glace pure : il s’agit d’un matériau géologique dont la température est durablement basse.',
+          'Les glaciers et la calotte du Groenland sont des masses de glace formées par l’accumulation et la transformation de neige sur les terres. Leur perte de masse contribue à l’élévation du niveau moyen des mers, contrairement à la fonte de la banquise flottante qui ne provoque pas directement une hausse comparable du niveau marin. Cette distinction physique est fondamentale pour comprendre les conséquences du réchauffement polaire. Les mesures par satellites, les stations météorologiques, les campagnes de terrain et les observations océanographiques permettent de suivre ces composantes avec des indicateurs différents.'
+        ],
+        example: {
+          statement: 'Une fiche scientifique indique que le sol d’un site reste à une température inférieure ou égale à 0 °C pendant 3 années consécutives. Peut-on le qualifier de pergélisol ?',
+          calculation: 'La définition du pergélisol exige une température égale ou inférieure à 0 °C pendant au moins 2 années consécutives. La durée observée est de 3 années, donc elle dépasse le seuil de définition.',
+          answer: 'Oui. Selon la définition du NSIDC, ce sol répond au critère temporel du pergélisol. Cette définition repose sur la température du terrain et non sur la présence obligatoire d’une grande quantité de glace visible.'
+        },
+        exercise: {
+          question: 'Pourquoi la fonte de la banquise et celle d’un glacier terrestre n’ont-elles pas le même effet direct sur le niveau de la mer ?',
+          answer: 'La banquise flotte déjà dans l’océan et sa fonte ne fait pas directement monter le niveau marin de manière comparable. Un glacier terrestre repose sur les continents ; lorsque sa glace rejoint l’océan, elle ajoute de l’eau et contribue à l’élévation du niveau de la mer.'
+        },
+        exercises: [
+          {
+            question: 'À quelles périodes de l’année l’étendue de la banquise arctique atteint-elle généralement son maximum et son minimum ?',
+            answer: 'Le maximum est généralement atteint vers mars et le minimum vers septembre.'
+          },
+          {
+            question: 'Qu’appelle-t-on l’albédo ?',
+            answer: 'L’albédo est la part du rayonnement reçu qu’une surface réfléchit. La neige et la glace ont généralement un albédo élevé par rapport à l’océan sombre.'
+          },
+          {
+            question: 'Quelle est la différence entre le pergélisol et la couche active ?',
+            answer: 'Le pergélisol reste à 0 °C ou moins pendant au moins 2 années consécutives. La couche active est la couche superficielle située au-dessus du pergélisol qui dégèle en saison chaude et regèle généralement en saison froide.'
+          }
+        ],
+        sources: [
+          { title: 'NSIDC — Arctic Weather and Climate', url: 'https://nsidc.org/learn/parts-cryosphere/arctic-weather-and-climate' },
+          { title: 'NASA — World of Change: Arctic Sea Ice', url: 'https://science.nasa.gov/earth/earth-observatory/world-of-change/arctic-sea-ice/' },
+          { title: 'NSIDC — Frozen Ground and Permafrost', url: 'https://nsidc.org/learn/parts-cryosphere/frozen-ground-permafrost' },
+          { title: 'NSIDC — Does permafrost thaw contribute to global warming?', url: 'https://nsidc.org/learn/ask-scientist/does-permafrost-thaw-contribute-global-warming' },
+          { title: 'NASA — Sea Ice', url: 'https://science.nasa.gov/earth/earth-observatory/sea-ice/' }
+        ]
+      }
+    },
+    {
+      id: 'ecosystemes-et-biodiversite-arctiques',
+      title: 'Écosystèmes arctiques et biodiversité',
+      field: 'Écologie · Toundra, milieux marins et adaptations biologiques',
+      summary: 'Découvrir les milieux terrestres et marins du Grand Nord, les adaptations des espèces, les réseaux alimentaires et les fragilités écologiques.',
+      lesson: {
+        sections: [
+          'L’Arctique abrite plusieurs grands types de milieux : toundras, zones humides, montagnes, littoraux, plateaux continentaux marins et espaces couverts par la banquise. La toundra se caractérise généralement par l’absence d’arbres de grande taille, une saison de croissance courte et une végétation composée notamment de mousses, de lichens, de graminées, de plantes herbacées et de petits arbustes. Plus au sud, la toundra peut laisser place à la forêt boréale. La limite des arbres dépend du climat local et ne suit pas partout exactement le cercle polaire.',
+          'Les espèces arctiques présentent des adaptations variées aux températures basses, à la saisonnalité et à la disponibilité variable de nourriture. Certains mammifères possèdent une isolation thermique importante grâce à leur fourrure, leur plumage ou leur couche de graisse. Des oiseaux migrent pour profiter de la période estivale où les ressources alimentaires deviennent plus abondantes. Des plantes basses se développent près du sol, où elles peuvent bénéficier de conditions thermiques moins extrêmes et d’une protection contre le vent. Ces adaptations ne signifient pas que toutes les espèces vivent dans la glace permanente : de nombreux organismes dépendent de la toundra, des eaux libres saisonnières ou des zones humides.',
+          'La biodiversité arctique comprend des mammifères comme le renard arctique, le caribou ou renne, le bœuf musqué et l’ours polaire, ainsi que des oiseaux, poissons, invertébrés, plantes, champignons et microorganismes. Dans les milieux marins, le morse, plusieurs espèces de phoques, le narval et le béluga occupent des niches écologiques différentes. La présence et la répartition de ces espèces varient selon les régions et les saisons. L’ours polaire, par exemple, dépend fortement de la banquise pour accéder à une partie importante de ses ressources alimentaires, tandis que les rennes exploitent les pâturages terrestres de la toundra et des régions subarctiques.',
+          'Les réseaux alimentaires relient le plancton, les organismes vivant dans la colonne d’eau, les poissons, les oiseaux et les mammifères marins. La production biologique marine est étroitement liée à la lumière saisonnière, à la disponibilité des nutriments et aux conditions de la glace. La fonte printanière et l’ouverture de zones d’eau libre modifient les conditions de croissance du phytoplancton et influencent les chaînes alimentaires. Sur terre, les plantes de la toundra nourrissent notamment les herbivores, qui constituent à leur tour des ressources pour les prédateurs et les charognards. Une perturbation d’un habitat peut donc avoir des effets en cascade sur plusieurs espèces.',
+          'Les milieux arctiques subissent des pressions liées au réchauffement, aux changements de la couverture de glace et de neige, aux activités industrielles et aux polluants transportés à longue distance. Les espèces ne réagissent pas toutes de la même manière : certaines peuvent étendre leur aire de répartition vers le nord, tandis que d’autres perdent des habitats ou voient leurs relations écologiques modifiées. La conservation repose sur le suivi à long terme des espèces et des habitats, l’analyse des interactions écologiques et la prise en compte des connaissances scientifiques ainsi que des savoirs locaux et autochtones.'
+        ],
+        example: {
+          statement: 'Une région côtière connaît une diminution de la durée de présence de la banquise. Pourquoi cette évolution peut-elle affecter un animal qui utilise la glace de mer comme plateforme de chasse ?',
+          calculation: 'La banquise constitue un habitat et une plateforme fonctionnelle pour certaines espèces. Une saison de glace plus courte réduit la période pendant laquelle cet habitat est disponible et peut modifier l’accès aux proies.',
+          answer: 'La diminution de la durée de présence de la banquise peut réduire les possibilités de chasse et modifier les conditions de déplacement et de repos de l’animal. L’effet exact dépend de l’espèce, de la région et de sa capacité d’adaptation.'
+        },
+        exercise: {
+          question: 'Pourquoi la biodiversité arctique ne se limite-t-elle pas aux grands mammifères emblématiques ?',
+          answer: 'Parce que les écosystèmes arctiques comprennent aussi des oiseaux, poissons, invertébrés, plantes, champignons et microorganismes. Ces organismes assurent des fonctions essentielles dans les réseaux alimentaires et le fonctionnement des milieux.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce que la toundra ?',
+            answer: 'Un milieu froid généralement dépourvu d’arbres de grande taille, où dominent notamment mousses, lichens, plantes herbacées et petits arbustes.'
+          },
+          {
+            question: 'Pourquoi la banquise est-elle importante pour l’ours polaire ?',
+            answer: 'Elle lui sert notamment de plateforme pour accéder à une partie importante de ses proies marines, en particulier les phoques.'
+          },
+          {
+            question: 'Cite deux facteurs qui influencent la production biologique dans l’océan Arctique.',
+            answer: 'La disponibilité de la lumière saisonnière et celle des nutriments. Les conditions de glace et la circulation de l’eau jouent également un rôle.'
+          }
+        ],
+        sources: [
+          { title: 'Arctic Council — Biodiversity', url: 'https://arctic-council.org/explore/topics/biodiversity/' },
+          { title: 'Arctic Council — Conservation of Arctic Flora and Fauna (CAFF)', url: 'https://www.arcticcouncil.org/about/working-groups/caff/' },
+          { title: 'Smithsonian National Museum of Natural History — Arctic Lands and Peoples', url: 'https://naturalhistory.si.edu/education/teaching-resources/anthropology-and-social-studies/arctic-lands-and-peoples' },
+          { title: 'NSIDC — Arctic Weather and Climate', url: 'https://nsidc.org/learn/parts-cryosphere/arctic-weather-and-climate' }
+        ]
+      }
+    },
+    {
+      id: 'peuples-et-societes-du-grand-nord',
+      title: 'Peuples, sociétés et modes de vie dans l’Arctique',
+      field: 'Anthropologie · Histoire des peuples autochtones et sociétés circumpolaires',
+      summary: 'Présenter la diversité des peuples arctiques, leurs langues, leurs territoires, leurs activités et les transformations contemporaines sans réduire leurs cultures à des stéréotypes.',
+      lesson: {
+        sections: [
+          'L’Arctique est habité depuis des millénaires. Il ne s’agit pas d’un espace vide ou exclusivement consacré à la recherche scientifique. La population actuelle comprend des peuples autochtones, des habitants installés plus récemment, des communautés rurales et des populations urbaines. Les estimations de population varient selon le périmètre retenu pour définir l’Arctique. Le Conseil de l’Arctique indique que la région accueille près de 4 millions de personnes et que les peuples autochtones représentent environ 10 % de ses habitants selon le périmètre statistique utilisé par cette institution. Ces chiffres sont des ordres de grandeur, non une mesure universelle indépendante de la définition géographique.',
+          'Les peuples autochtones de l’Arctique sont nombreux et culturellement divers. On trouve notamment des Inuit au Groenland, au Canada et en Alaska sous différentes dénominations régionales, des Sámi dans le nord de la Norvège, de la Suède, de la Finlande et de la péninsule de Kola, ainsi que des peuples tels que les Nenets, les Tchouktches, les Evenks et d’autres communautés dans le nord de la Russie. En Alaska vivent notamment des peuples Iñupiat, Yup’ik et Unangax̂. Ces noms désignent des peuples et des identités spécifiques ; ils ne sont pas interchangeables. Il est donc inexact d’employer le mot « Inuit » pour désigner toutes les populations autochtones de l’Arctique.',
+          'Les activités traditionnelles et contemporaines sont diverses : pêche, chasse, élevage de rennes, artisanat, commerce, services, administration, recherche et activités liées aux ressources naturelles. Dans certaines communautés, les activités de subsistance restent importantes pour l’alimentation, la transmission des savoirs, les relations sociales et l’identité culturelle. Elles coexistent avec l’école, les transports modernes, les technologies numériques et les économies monétaires. Les pratiques varient selon les territoires, les saisons, les choix des habitants et les possibilités économiques ; il n’existe pas un mode de vie arctique unique.',
+          'Les langues autochtones constituent une composante majeure du patrimoine culturel de la région. Elles transmettent des connaissances précises sur les lieux, les espèces, les conditions météorologiques et les pratiques de déplacement. Plusieurs langues sont confrontées à des difficultés de transmission liées notamment à l’histoire de la colonisation, aux politiques d’assimilation, aux changements démographiques et à la domination de langues nationales ou internationales. Des initiatives éducatives et culturelles cherchent à renforcer leur usage et leur transmission. La revitalisation linguistique est ainsi liée à la continuité des communautés et à leur capacité à définir elles-mêmes leurs priorités.',
+          'Les changements environnementaux ont des conséquences concrètes pour les habitants : modification de la glace de mer, évolution des déplacements, instabilité de certains sols, changements dans la disponibilité des espèces et difficultés pour maintenir des infrastructures. Les communautés ne sont pas seulement des populations affectées ; elles détiennent aussi des connaissances locales et autochtones utiles à l’observation des transformations. Ces savoirs se construisent par l’expérience et la transmission entre générations. Leur prise en compte dans la recherche et la décision publique doit se faire dans le respect des droits, des institutions et du consentement des communautés concernées.'
+        ],
+        example: {
+          statement: 'Un document présente les Sámi, les Inuit et les Nenets comme trois peuples autochtones de l’Arctique. Pourquoi ne faut-il pas les considérer comme un seul peuple ?',
+          calculation: 'Ces groupes vivent dans des régions différentes, possèdent des langues, des histoires, des institutions et des pratiques culturelles qui leur sont propres. Leur appartenance à l’espace circumpolaire ne supprime pas leurs différences.',
+          answer: 'Ils constituent des peuples distincts. Le terme « peuples autochtones de l’Arctique » désigne une diversité de communautés et ne signifie pas qu’elles partagent une identité, une langue ou un mode de vie unique.'
+        },
+        exercise: {
+          question: 'Pourquoi les connaissances locales et autochtones sont-elles utiles à l’étude des changements dans l’Arctique ?',
+          answer: 'Elles apportent des observations accumulées sur les territoires, les saisons, les espèces, la glace et les pratiques de déplacement. Elles complètent les mesures scientifiques et doivent être prises en compte dans le respect des communautés qui les détiennent.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelles grandes régions vivent les Sámi ?',
+            answer: 'Dans les territoires septentrionaux de la Norvège, de la Suède, de la Finlande et de la péninsule de Kola en Russie.'
+          },
+          {
+            question: 'Pourquoi le terme « Inuit » ne peut-il pas désigner tous les peuples autochtones de l’Arctique ?',
+            answer: 'Parce que l’Arctique comprend de nombreux peuples distincts, notamment les Sámi, les Nenets, les Tchouktches, les Yup’ik et les Unangax̂, qui ont leurs propres identités.'
+          },
+          {
+            question: 'Quel est le statut des organisations autochtones participantes au Conseil de l’Arctique ?',
+            answer: 'Six organisations disposent du statut de Participants permanents, qui leur donne des droits de consultation dans les travaux et les décisions du Conseil.'
+          }
+        ],
+        sources: [
+          { title: 'Arctic Council — Arctic Peoples', url: 'https://arctic-council.org/explore/topics/arctic-peoples/' },
+          { title: 'Arctic Council — Organization and Permanent Participants', url: 'https://www.arcticcouncil.org/about/' },
+          { title: 'Arctic Centre, University of Lapland — Arctic Indigenous Peoples', url: 'https://arcticcentre.org/en/arctic-region/indigenous-peoples/' },
+          { title: 'Smithsonian National Museum of Natural History — Arctic Lands and Peoples', url: 'https://naturalhistory.si.edu/education/teaching-resources/anthropology-and-social-studies/arctic-lands-and-peoples' }
+        ]
+      }
+    },
+    {
+      id: 'explorations-et-recherche-scientifique',
+      title: 'Explorations polaires et développement des connaissances scientifiques',
+      field: 'Histoire des sciences · Navigation, cartographie et recherche polaire',
+      summary: 'Comprendre les objectifs des explorations, les difficultés de navigation, les grandes étapes de la connaissance géographique et les méthodes scientifiques modernes.',
+      lesson: {
+        sections: [
+          'Les régions arctiques étaient connues, parcourues et habitées par leurs populations bien avant les expéditions européennes. Les récits historiques d’exploration doivent donc être replacés dans cette réalité : les navigateurs européens ont cherché à cartographier et à emprunter des routes maritimes, mais ils n’ont pas « découvert » un espace inconnu de ses habitants. À partir de l’époque moderne, plusieurs puissances européennes ont recherché un passage maritime reliant l’Atlantique au Pacifique par le nord de l’Amérique, appelé passage du Nord-Ouest. Les glaces, les côtes complexes, les conditions météorologiques et l’insuffisance des cartes ont longtemps rendu ces navigations difficiles.',
+          'Le passage du Nord-Ouest traverse l’archipel arctique canadien. De nombreuses expéditions européennes ont tenté de le franchir. L’expédition de John Franklin, partie en 1845 avec les navires Erebus et Terror, a disparu dans l’Arctique canadien ; les recherches ultérieures ont contribué à améliorer la connaissance de la région. Roald Amundsen a ensuite réalisé la première traversée complète du passage par un navire, au cours d’une expédition qui s’est achevée en 1906. Il faut distinguer la traversée effective d’une route maritime, sa cartographie et son utilisation commerciale régulière : ce sont des étapes différentes.',
+          'Les explorations polaires ont contribué au développement de la cartographie, de l’océanographie, de la météorologie et de la géophysique. Les chercheurs ont étudié les courants marins, la dérive de la banquise, les températures, les vents, la profondeur des fonds océaniques et les propriétés de la neige et de la glace. Les expéditions anciennes ont souvent produit des observations ponctuelles, tandis que les programmes contemporains cherchent à établir des séries de mesures comparables sur plusieurs décennies. Cette continuité est essentielle pour distinguer la variabilité naturelle d’une tendance climatique de long terme.',
+          'Aujourd’hui, l’Arctique est étudié grâce à des stations au sol, des navires de recherche, des bouées dérivantes, des avions, des satellites et des instruments autonomes. Les satellites permettent notamment de suivre l’étendue de la banquise sur de vastes surfaces et de comparer les observations d’une année à l’autre. Les mesures de terrain restent indispensables pour vérifier et interpréter les données à distance. Les chercheurs combinent également des observations de l’atmosphère, de l’océan, des sols gelés et des écosystèmes afin de comprendre les interactions entre ces composantes.',
+          'La recherche arctique est internationale, car les phénomènes physiques et écologiques dépassent les frontières nationales. Les données recueillies dans une région peuvent aider à comprendre des processus qui influencent d’autres parties du globe. La coopération scientifique doit cependant prendre en compte les règles d’accès aux territoires, les droits des populations locales, les contraintes de sécurité et les effets des activités de recherche sur les milieux. Une connaissance fiable de l’Arctique repose donc à la fois sur des instruments précis, des séries longues, la transparence des méthodes et la collaboration avec les habitants.'
+        ],
+        example: {
+          statement: 'Une chronologie indique que l’expédition d’Amundsen a achevé la traversée du passage du Nord-Ouest en 1906. Que permet d’affirmer cette date, et que ne permet-elle pas d’affirmer ?',
+          calculation: 'La date situe l’achèvement de cette traversée historique. Elle ne signifie pas que le passage est devenu immédiatement une route commerciale régulière, sûre ou praticable toute l’année.',
+          answer: 'Elle permet de situer en 1906 l’achèvement de la première traversée complète du passage du Nord-Ouest par un navire sous le commandement de Roald Amundsen. Elle ne prouve pas l’existence d’une navigation commerciale régulière à cette époque.'
+        },
+        exercise: {
+          question: 'Pourquoi les satellites ne remplacent-ils pas entièrement les observations réalisées sur le terrain dans l’Arctique ?',
+          answer: 'Les satellites couvrent de vastes surfaces et permettent un suivi régulier, mais les mesures de terrain sont nécessaires pour vérifier, calibrer et interpréter les observations à distance, notamment pour les propriétés de la neige, de la glace, des sols et des écosystèmes.'
+        },
+        exercises: [
+          {
+            question: 'Quel est l’objectif historique du passage du Nord-Ouest ?',
+            answer: 'Relier l’océan Atlantique et l’océan Pacifique par une route maritime passant au nord de l’Amérique.'
+          },
+          {
+            question: 'En quelle année l’expédition de Roald Amundsen a-t-elle achevé la traversée du passage du Nord-Ouest ?',
+            answer: 'En 1906.'
+          },
+          {
+            question: 'Donne deux outils contemporains utilisés pour étudier la banquise arctique.',
+            answer: 'Les satellites et les bouées dérivantes. Les navires de recherche et les observations de terrain sont également utilisés.'
+          }
+        ],
+        sources: [
+          { title: 'Natural History Museum — The Arctic: Exploration to Exploitation', url: 'https://www.nhm.ac.uk/discover/the-arctic-exploration-to-exploitation.html' },
+          { title: 'HISTORY — Northwest Passage', url: 'https://www.history.com/articles/northwest-passage' },
+          { title: 'NOAA — Arctic FAQ', url: 'https://www.pmel.noaa.gov/arctic-zone/faq.html' },
+          { title: 'NSIDC — Arctic Weather and Climate', url: 'https://nsidc.org/learn/parts-cryosphere/arctic-weather-and-climate' },
+          { title: 'NASA — World of Change: Arctic Sea Ice', url: 'https://science.nasa.gov/earth/earth-observatory/world-of-change/arctic-sea-ice/' }
+        ]
+      }
+    },
+    {
+      id: 'changements-climatiques-et-enjeux-geopolitiques',
+      title: 'Réchauffement arctique, enjeux géopolitiques et protection de la région',
+      field: 'Sciences du climat · Relations internationales et droit de la mer',
+      summary: 'Analyser l’amplification du réchauffement arctique, ses conséquences, les intérêts économiques et stratégiques, ainsi que les mécanismes de coopération et de protection.',
+      lesson: {
+        sections: [
+          'L’Arctique se réchauffe plus rapidement que la moyenne mondiale : ce phénomène est appelé amplification arctique. Le GIEC a conclu qu’il est très probable que l’Arctique se soit réchauffé à un rythme supérieur à deux fois celui de la moyenne mondiale au cours des 50 dernières années considérées dans son Atlas de 2021. Cette amplification s’explique par plusieurs mécanismes qui se renforcent ou se combinent, notamment la diminution de la neige et de la glace de mer, les changements dans les échanges d’énergie entre l’océan et l’atmosphère et les transports de chaleur et d’humidité. Il faut toujours préciser la période et la définition géographique lorsqu’on compare des taux de réchauffement.',
+          'La diminution de la glace de mer modifie les habitats, les conditions de navigation et les échanges thermiques entre l’océan et l’atmosphère. Le dégel du pergélisol peut déstabiliser des infrastructures et favoriser l’émission de gaz à effet de serre issus de la décomposition de matière organique. La fonte des glaciers et de la calotte du Groenland contribue à l’élévation du niveau marin. Ces effets sont liés, mais ils ne sont pas identiques et ne doivent pas être confondus. Les changements peuvent également affecter les communautés humaines, les activités de subsistance, les transports et la sécurité alimentaire.',
+          'La réduction saisonnière de la banquise peut rendre certaines routes maritimes plus accessibles pendant certaines périodes, notamment le passage du Nord-Ouest et la route maritime du Nord, qui longe les côtes septentrionales de la Russie. Toutefois, une accessibilité accrue ne signifie pas une navigation simple ou sans danger. La glace dérivante, le brouillard, les conditions météorologiques, l’éloignement des secours, les infrastructures limitées et les coûts d’assurance rendent la navigation polaire complexe. Les conditions varient selon les années et les secteurs ; il serait donc incorrect de présenter ces routes comme libres de glace toute l’année ou comme des voies commerciales garanties.',
+          'L’Arctique possède des ressources naturelles et des intérêts économiques importants, notamment dans les domaines de la pêche, des minerais, des hydrocarbures et du transport maritime. Leur exploitation est cependant encadrée par les juridictions nationales et le droit international applicable, notamment le droit de la mer. Les espaces maritimes ne constituent pas un territoire sans règles : les États côtiers disposent de droits et d’obligations définis par le droit international, tandis que les questions de délimitation et de souveraineté peuvent être complexes. L’intérêt économique doit aussi être évalué au regard des coûts logistiques, des risques environnementaux et des conséquences pour les populations locales.',
+          'Le Conseil de l’Arctique, créé en 1996, est un forum intergouvernemental de coopération entre les huit États arctiques et les représentants des peuples autochtones ayant le statut de Participants permanents. Il travaille notamment sur la protection de l’environnement, le développement durable et les questions touchant les habitants de la région. Ce Conseil n’est pas un gouvernement de l’Arctique et ne remplace pas les États ni les règles du droit international ; son mandat ne porte pas sur les questions de sécurité militaire. Ses décisions et déclarations sont adoptées par consensus des huit États membres. Cette distinction est essentielle pour comprendre les possibilités et les limites de la gouvernance régionale.',
+          'La protection de l’Arctique nécessite des actions coordonnées : réduction des émissions mondiales de gaz à effet de serre, suivi scientifique, prévention des pollutions, conservation des habitats, préparation aux accidents maritimes et participation effective des communautés concernées. Les décisions doivent s’appuyer sur des données vérifiables et reconnaître que les populations de la région ne sont pas de simples observatrices des changements. Elles sont directement concernées par les choix d’aménagement, d’exploitation des ressources et de conservation. L’avenir de l’Arctique dépend donc de facteurs locaux, nationaux et mondiaux, en particulier de l’évolution des émissions qui déterminent le réchauffement futur.'
+        ],
+        example: {
+          statement: 'Le GIEC indique dans son Atlas de 2021 que l’Arctique s’est réchauffé à plus de deux fois le rythme mondial au cours des 50 années étudiées. Comment interpréter correctement cette comparaison ?',
+          calculation: 'Il s’agit d’un rapport entre deux rythmes moyens de réchauffement calculés sur une période et selon un périmètre définis. Cette comparaison ne signifie pas que chaque lieu arctique se réchauffe exactement au même rythme ni que chaque année suit la même évolution.',
+          answer: 'Cette conclusion décrit une tendance régionale moyenne sur la période étudiée. Elle illustre l’amplification arctique, mais ne doit pas être transformée en une règle uniforme valable pour chaque lieu et chaque année.'
+        },
+        exercise: {
+          question: 'Pourquoi le Conseil de l’Arctique ne peut-il pas être présenté comme un gouvernement qui dirige l’ensemble de la région ?',
+          answer: 'Parce qu’il s’agit d’un forum de coopération intergouvernemental. Les États conservent leurs compétences territoriales et les règles du droit international continuent de s’appliquer. Le Conseil ne remplace pas les gouvernements nationaux et son mandat n’inclut pas les questions de sécurité militaire.'
+        },
+        exercises: [
+          {
+            question: 'Comment appelle-t-on le phénomène par lequel l’Arctique se réchauffe plus rapidement que la moyenne mondiale ?',
+            answer: 'L’amplification arctique.'
+          },
+          {
+            question: 'En quelle année le Conseil de l’Arctique a-t-il été officiellement créé ?',
+            answer: 'En 1996.'
+          },
+          {
+            question: 'Pourquoi une route maritime rendue plus accessible par la diminution de la banquise reste-t-elle potentiellement dangereuse ?',
+            answer: 'Parce que la glace dérivante, le brouillard, les conditions météorologiques, l’éloignement des secours, les infrastructures limitées et les coûts spécifiques de la navigation polaire demeurent des contraintes importantes.'
+          },
+          {
+            question: 'Quelle différence faut-il faire entre le Conseil de l’Arctique et les États arctiques ?',
+            answer: 'Le Conseil est un forum de coopération. Les États arctiques conservent leurs juridictions et leurs responsabilités territoriales, dans le cadre du droit international.'
+          }
+        ],
+        sources: [
+          { title: 'GIEC — Sixth Assessment Report, Working Group I, Atlas: Regional information', url: 'https://www.ipcc.ch/report/ar6/wg1/chapter/atlas/' },
+          { title: 'Ministère de l’Europe et des Affaires étrangères — Arctic', url: 'https://www.diplomatie.gouv.fr/en/information-by-country/arctic/presentation' },
+          { title: 'Arctic Council — Organization', url: 'https://www.arcticcouncil.org/about/' },
+          { title: 'Arctic Council — Arctic Peoples', url: 'https://arctic-council.org/explore/topics/arctic-peoples/' },
+          { title: 'NSIDC — Does permafrost thaw contribute to global warming?', url: 'https://nsidc.org/learn/ask-scientist/does-permafrost-thaw-contribute-global-warming' },
+          { title: 'NASA — World of Change: Arctic Sea Ice', url: 'https://science.nasa.gov/earth/earth-observatory/world-of-change/arctic-sea-ice/' }
+        ]
+      }
+    }
+  ]
+},
+
+
 ]
 
