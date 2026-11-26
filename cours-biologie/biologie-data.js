@@ -2484,6 +2484,558 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'lichen',
+  sortYear: -415000000,
+  title: 'Lichens : symbiose, structure, physiologie et rôle écologique',
+  note: 'Six chapitres approfondis sur la nature des lichens, leurs partenaires symbiotiques, leur anatomie, leur fonctionnement physiologique, leur reproduction et leur rôle dans les écosystèmes ainsi que dans la bioindication. Le repère chronologique de -415 000 000 correspond aux plus anciens fossiles stratifiés de lichens connus décrits dans la littérature scientifique, et non à une date certaine d’apparition de la lichénisation.',
+  chapters: [
+    {
+      id: 'nature-et-origine-des-lichens',
+      title: 'La nature des lichens et les traces de leur histoire évolutive',
+      field: 'Biologie · Mycologie, symbiose et paléobotanique',
+      summary: 'Définir le lichen comme une association organisée autour d’un champignon et d’un partenaire photosynthétique, distinguer le concept biologique du classement taxonomique et interpréter avec prudence les fossiles anciens.',
+      lesson: {
+        sections: [
+          'Un lichen n’est pas une plante ni, dans la plupart des cas, un organisme constitué d’une seule espèce. Il correspond à une association symbiotique durable dont le partenaire structurant est un champignon, appelé mycobionte, associé à au moins un partenaire photosynthétique, appelé photobionte. Celui-ci est généralement une algue verte ou une cyanobactérie. Le champignon forme l’essentiel de la structure visible, le thalle, tandis que le photobionte réalise la photosynthèse et fournit des composés carbonés utilisables par le champignon. Cette association produit une organisation biologique nouvelle que les partenaires ne construisent pas seuls sous cette forme. Des bactéries et d’autres microorganismes peuvent également être présents dans le thalle, sans être nécessairement des partenaires constitutifs de la symbiose principale.',
+          'La relation entre les partenaires est souvent décrite comme mutualiste, car chacun peut en retirer un avantage : le champignon reçoit des molécules carbonées issues de la photosynthèse et le photobionte bénéficie d’un environnement physique organisé par les hyphes fongiques, qui peut limiter certains stress et retenir des ressources. Il faut toutefois éviter de présenter chaque association comme un échange parfaitement égal ou immuable. L’intensité des bénéfices et des coûts dépend des espèces impliquées et des conditions environnementales. Les lichens sont donc des symbioses complexes, et non la simple juxtaposition d’une algue et d’un champignon.',
+          'Les champignons lichénisés appartiennent à plusieurs lignées fongiques, même si la grande majorité des espèces connues sont des Ascomycètes. La lichénisation est une stratégie nutritionnelle et écologique apparue, perdue ou modifiée au cours de l’évolution dans différentes lignées. Il n’existe donc pas un unique groupe taxonomique réunissant tous les lichens comme le ferait un embranchement monophylétique. Les estimations de diversité et les proportions de partenaires varient avec les méthodes et les bases taxonomiques utilisées ; il est préférable de retenir le principe général plutôt que de transformer des pourcentages issus d’une étude en constantes universelles.',
+          'Les fossiles permettent de fixer des repères, mais ils ne donnent pas directement la date d’apparition du phénomène. Des fossiles du Dévonien inférieur, datés d’environ 415 millions d’années, présentent des thalles stratifiés et des indices de partenaires photosynthétiques. L’étude de Honegger, Edwards et Axe publiée en 2013 décrit notamment Cyanolichenomycites devonicus, associé à une cyanobactérie, et Chlorolichenomycites salopensis, associé à un photobionte interprété comme une algue verte unicellulaire. Un fossile plus ancien, Winfrenatia reticulata, provenant du chert de Rhynie et daté d’environ 400 à 410 millions d’années selon les publications, est également interprété comme un lichen, mais sa structure est particulière. Les fossiles plus anciens parfois proposés comme lichens restent discutés lorsque les preuves d’une véritable interaction symbiotique ne sont pas conservées.'
+        ],
+        example: {
+          statement: 'Deux fossiles sont datés respectivement d’environ 415 millions et 400 millions d’années. Lequel constitue le repère le plus ancien ?',
+          calculation: 'Pour des âges exprimés en années avant le présent, la valeur numérique la plus élevée correspond à l’événement le plus ancien : 415 000 000 est supérieur à 400 000 000.',
+          answer: 'Le fossile daté d’environ 415 millions d’années est le plus ancien des deux. Cette comparaison date les fossiles étudiés ; elle ne prouve pas que les lichens sont apparus exactement à cette époque.'
+        },
+        exercise: {
+          question: 'Pourquoi ne faut-il pas considérer les lichens comme un groupe taxonomique unique et homogène ?',
+          answer: 'Parce que la capacité à former des lichens existe dans plusieurs lignées de champignons. Le terme lichen décrit avant tout une organisation symbiotique et un mode de vie, et non un seul groupe évolutif exclusif.'
+        },
+        exercises: [
+          { question: 'Comment appelle-t-on le partenaire fongique d’un lichen ?', answer: 'Le mycobionte.' },
+          { question: 'Quel est le rôle général du photobionte ?', answer: 'Il réalise la photosynthèse et fournit des composés carbonés à la symbiose.' },
+          { question: 'Que représentent les fossiles d’environ 415 millions d’années ?', answer: 'Les plus anciens fossiles stratifiés de lichens connus décrits dans les sources scientifiques citées, et non une date certaine d’origine des lichens.' }
+        ],
+        sources: [
+          { title: 'Honegger, Edwards & Axe (2013) — The earliest records of internally stratified cyanobacterial and algal lichens from the Lower Devonian', url: 'https://doi.org/10.1111/nph.12009' },
+          { title: 'Taylor, Hass & Kerp (1997) — A cyanolichen from the Lower Devonian Rhynie Chert', url: 'https://doi.org/10.2307/2446290' },
+          { title: 'British Lichen Society — What is a lichen?', url: 'https://britishlichensociety.org.uk/learning/what-is-a-lichen' },
+          { title: 'Evolutionary biology of lichen symbioses (2022)', url: 'https://doi.org/10.1111/nph.18048' }
+        ]
+      }
+    },
+    {
+      id: 'partenaires-et-formation-de-la-symbiose',
+      title: 'Les partenaires du lichen et la mise en place de la symbiose',
+      field: 'Biologie · Mycologie, phycologie et interactions interspécifiques',
+      summary: 'Étudier le mycobionte, les photobiontes, les échanges métaboliques et les étapes de formation d’un thalle lichénique.',
+      lesson: {
+        sections: [
+          'Le mycobionte est le champignon qui construit la majeure partie du thalle. Ses filaments microscopiques, les hyphes, s’entrecroisent et peuvent former des couches différenciées. Il assure notamment l’organisation mécanique du thalle, l’ancrage au substrat et une partie de la protection du partenaire photosynthétique. La plupart des champignons lichénisés décrits sont des Ascomycètes ; un nombre plus restreint appartient aux Basidiomycètes. L’identification du champignon est généralement déterminante dans la nomenclature scientifique du lichen, même si l’association fonctionnelle comprend plusieurs partenaires.',
+          'Le photobionte est le partenaire autotrophe. Il s’agit fréquemment d’une algue verte unicellulaire, par exemple dans des lignées telles que Trebouxia, ou d’une cyanobactérie, notamment dans des associations avec Nostoc. Les algues vertes produisent principalement des glucides photosynthétiques, tandis que certaines cyanobactéries peuvent aussi fixer l’azote atmosphérique grâce à leur métabolisme spécialisé. Toutes les cyanobactéries ne fixent pas nécessairement l’azote dans toutes les conditions, et tous les lichens ne possèdent pas de cyanobactéries. Certaines espèces abritent plusieurs photobiontes ou des partenaires supplémentaires, ce qui rend la composition réelle de la symbiose plus variable qu’un modèle à deux organismes.',
+          'La photosynthèse du photobionte transforme l’énergie lumineuse en énergie chimique et permet la fixation du carbone inorganique. Une partie du carbone organique produit est transférée au champignon. Selon le type de photobionte, les composés exportés peuvent être des sucres ou des polyols spécifiques. Le champignon utilise ces ressources pour sa respiration, sa croissance et la construction du thalle. En retour, l’organisation fongique peut protéger le photobionte contre certaines agressions, modifier son exposition à la lumière et contribuer à la disponibilité de l’eau et des éléments minéraux. Les échanges ne sont pas identiques dans toutes les associations et peuvent varier selon l’état hydrique, la lumière et les ressources disponibles.',
+          'La lichénisation correspond au passage de partenaires capables de vivre séparément à une association organisée. Les travaux de synthèse décrivent plusieurs étapes possibles : rencontre et reconnaissance des partenaires compatibles, contact, enrobage des cellules photosynthétiques par les hyphes, incorporation dans un pré-thalle, puis différenciation d’un thalle. Les signaux moléculaires et les mécanismes exacts restent encore incomplètement compris. Le champignon ne se contente donc pas de pousser sur une algue : il modifie son développement et construit avec elle une structure fonctionnelle. Les cultures expérimentales de partenaires isolés et les études moléculaires permettent d’étudier ces mécanismes, mais la reconstitution complète de nombreux lichens en laboratoire reste difficile.'
+        ],
+        example: {
+          statement: 'Dans une association entre un champignon et une algue verte, quel partenaire fixe le carbone par photosynthèse et quel partenaire construit la majeure partie du thalle ?',
+          calculation: 'On distingue les fonctions à partir de l’identité des partenaires : le photobionte est photosynthétique ; le mycobionte est le champignon organisateur du thalle.',
+          answer: 'L’algue verte, photobionte, fixe le carbone par photosynthèse. Le champignon, mycobionte, construit l’essentiel de la structure du thalle.'
+        },
+        exercise: {
+          question: 'Pourquoi la présence d’une cyanobactérie peut-elle modifier le fonctionnement nutritionnel d’un lichen ?',
+          answer: 'Certaines cyanobactéries peuvent fixer l’azote atmosphérique en plus de réaliser la photosynthèse. Elles peuvent ainsi contribuer aux apports azotés de l’association, selon l’espèce et les conditions physiologiques.'
+        },
+        exercises: [
+          { question: 'Quel terme désigne le partenaire photosynthétique ?', answer: 'Le photobionte.' },
+          { question: 'Quel type de partenaire fongique forme la structure principale du thalle ?', answer: 'Le mycobionte.' },
+          { question: 'La présence d’une cyanobactérie garantit-elle une fixation de l’azote dans toutes les conditions ?', answer: 'Non. La fixation dépend de la cyanobactérie, de son état physiologique et des conditions environnementales.' }
+        ],
+        sources: [
+          { title: 'British Lichen Society — Lichen Biology', url: 'https://britishlichensociety.org.uk/learning/lichen-biology' },
+          { title: 'Honegger, Edwards & Axe (2013) — The earliest records of internally stratified lichens', url: 'https://doi.org/10.1111/nph.12009' },
+          { title: 'How to build a lichen: from metabolite release to symbiotic interplay (2023)', url: 'https://doi.org/10.1111/nph.18780' },
+          { title: 'Evolutionary biology of lichen symbioses (2022)', url: 'https://doi.org/10.1111/nph.18048' }
+        ]
+      }
+    },
+    {
+      id: 'anatomie-et-formes-du-thalle',
+      title: 'L’anatomie du thalle et la diversité des formes lichéniques',
+      field: 'Biologie · Anatomie végétative, histologie et morphologie',
+      summary: 'Identifier les couches du thalle, les structures d’attache et les grandes formes morphologiques utiles à la description des lichens.',
+      lesson: {
+        sections: [
+          'Le thalle est l’appareil végétatif du lichen. Contrairement à une plante vasculaire, il ne possède pas de véritables racines, tiges et feuilles, ni de système conducteur comparable au xylème et au phloème. Sa morphologie dépend principalement du champignon, même si le photobionte et l’environnement influencent aussi son développement. Chez de nombreux lichens à structure stratifiée, on distingue un cortex externe constitué d’hyphes compactées, une couche photobiontique où se concentrent les cellules photosynthétiques et une médulle formée d’hyphes plus lâches. Cette organisation varie selon les groupes et ne doit pas être considérée comme identique chez toutes les espèces.',
+          'Chez de nombreux lichens foliacés, un cortex supérieur protège la face exposée, puis se trouvent la couche photobiontique et la médulle. Un cortex inférieur peut être présent sur la face tournée vers le substrat. Des rhizines, faisceaux d’hyphes issus de la face inférieure, contribuent à l’ancrage. Elles ne sont pas des racines : elles n’assurent pas l’absorption de l’eau et des sels minéraux selon le fonctionnement des racines des plantes. Chez les lichens crustacés, le thalle est étroitement appliqué au support et souvent difficile à détacher sans l’endommager. Les lichens fruticuleux présentent une organisation ramifiée dont les couches peuvent être disposées autour d’un axe ou d’une médulle centrale.',
+          'La morphologie externe fournit des critères descriptifs importants. Les lichens crustacés forment une croûte adhérente au support ; les foliacés sont aplatis et présentent des lobes ressemblant à des feuilles ; les fruticuleux sont dressés, buissonnants ou pendants ; les squamuleux sont constitués de petites écailles ; les lépreux ont un aspect poudreux et peu différencié. Des formes intermédiaires existent, par exemple les thalles placodioïdes, crustacés au centre mais lobés en périphérie. Le genre Cladonia présente souvent un thalle primaire réduit et des structures secondaires dressées appelées podétions. Ces catégories sont des formes de croissance, pas des niveaux de classification taxonomique.',
+          'La couleur, l’épaisseur, la présence de cils, de pruine, de rhizines, de soralies ou d’apothécies complètent la description. Les couleurs peuvent provenir de pigments du thalle ou de substances produites par le lichen ; elles peuvent aussi varier avec l’humidité et l’exposition. Pour identifier correctement une espèce, la seule silhouette ne suffit généralement pas. Les spécialistes combinent les caractères macroscopiques, l’examen microscopique, les réactions chimiques de certains métabolites et, lorsque nécessaire, les données moléculaires. Le substrat — écorce, roche, sol ou bois — ainsi que le pH, l’humidité et l’exposition constituent également des informations utiles.'
+        ],
+        example: {
+          statement: 'Un lichen présente un thalle aplati, lobé, avec une face supérieure et une face inférieure distinctes. Quelle forme de croissance décrit le mieux cette morphologie ?',
+          calculation: 'La description correspond à la définition morphologique d’un thalle foliacé : aplati, lobé et différencié entre une face supérieure et une face inférieure.',
+          answer: 'Il s’agit d’un lichen foliacé. Cette forme ne permet pas, à elle seule, de déterminer son espèce.'
+        },
+        exercise: {
+          question: 'Pourquoi les rhizines ne doivent-elles pas être assimilées à de véritables racines ?',
+          answer: 'Les rhizines sont des faisceaux d’hyphes qui contribuent surtout à fixer le thalle au substrat. Elles ne constituent pas un organe racinaire doté des fonctions spécialisées d’absorption et de conduction des plantes vasculaires.'
+        },
+        exercises: [
+          { question: 'Comment se nomme l’appareil végétatif d’un lichen ?', answer: 'Le thalle.' },
+          { question: 'Quelle forme de croissance est typiquement buissonnante ou pendante ?', answer: 'La forme fruticuleuse.' },
+          { question: 'Quel est le rôle principal des rhizines ?', answer: 'Contribuer à l’ancrage du thalle au substrat.' }
+        ],
+        sources: [
+          { title: 'British Lichen Society — Lichen Morphology', url: 'https://britishlichensociety.org.uk/learning/lichen-morphology' },
+          { title: 'Australian National Botanic Gardens — Form and structure', url: 'https://www.anbg.gov.au/lichen/form-structure.html' },
+          { title: 'Australian National Botanic Gardens — What is a lichen?', url: 'https://www.anbg.gov.au/lichen/what-is-lichen.html' },
+          { title: 'British Lichen Society — Glossary of Terms', url: 'https://britishlichensociety.org.uk/learning/glossary-terms' }
+        ]
+      }
+    },
+    {
+      id: 'physiologie-et-adaptations',
+      title: 'La physiologie des lichens et leurs adaptations aux contraintes du milieu',
+      field: 'Biologie · Physiologie, photosynthèse et écophysiologie',
+      summary: 'Comprendre les échanges hydriques, la photosynthèse, la tolérance à la dessiccation et les facteurs qui contrôlent l’activité du thalle.',
+      lesson: {
+        sections: [
+          'Les lichens sont généralement poïkilohydres : leur teneur en eau varie avec l’eau disponible dans l’environnement, car ils ne disposent pas d’un système interne de régulation hydrique comparable à celui de nombreuses plantes vasculaires. Ils peuvent s’hydrater grâce à la pluie, à la rosée, au brouillard et, chez certaines espèces et dans certaines conditions, à la vapeur d’eau atmosphérique. L’eau est retenue à la surface et dans les espaces du thalle. L’absence de racines et de tissus conducteurs spécialisés implique que l’accès à l’eau dépend fortement du microclimat, de la forme du thalle et de la nature du substrat.',
+          'Lorsque le thalle est suffisamment hydraté et éclairé, le photobionte peut reprendre la photosynthèse et fixer le dioxyde de carbone. Une partie des molécules organiques produites est transférée au champignon. La photosynthèse ne croît toutefois pas indéfiniment avec l’humidité : un excès d’eau peut limiter les échanges gazeux dans certains thalles, tandis qu’un manque d’eau réduit ou arrête l’activité photosynthétique. La réponse dépend de l’espèce, de la température, de l’intensité lumineuse, de la durée d’hydratation et de l’organisation du thalle. La croissance des lichens est souvent lente, mais elle varie considérablement selon les espèces et les milieux.',
+          'De nombreux lichens tolèrent des épisodes de dessiccation. Lorsque l’eau devient extrêmement rare, leur activité métabolique peut fortement diminuer, voire devenir presque indétectable. Après réhydratation, certains lichens réactivent rapidement leur métabolisme. Cette capacité est appelée tolérance à la dessiccation et ne signifie pas que le lichen reste physiologiquement actif sans eau. Elle ne doit pas non plus être confondue avec une résistance universelle à toutes les sécheresses : la durée, la fréquence et la vitesse des cycles de dessiccation et de réhydratation, ainsi que l’espèce et son habitat, influencent la survie et la récupération.',
+          'La lumière, la température, l’humidité, le vent, la disponibilité des éléments minéraux et les propriétés du substrat contrôlent la performance du thalle. Les pigments et certains métabolites secondaires peuvent participer à la protection contre le rayonnement intense, les herbivores ou d’autres stress, mais leurs fonctions sont diverses et ne sont pas identiques chez toutes les espèces. Les lichens des milieux froids, secs ou exposés possèdent des combinaisons d’adaptations qui leur permettent d’occuper des habitats où la concurrence des plantes vasculaires est limitée. La physiologie lichénique doit donc être comprise comme une interaction entre le champignon, le photobionte et les conditions locales.'
+        ],
+        example: {
+          statement: 'Un thalle sec est réhumidifié par la pluie. Dans des conditions de lumière et de température convenables, que peut-il se produire ?',
+          calculation: 'La disponibilité de l’eau permet au thalle de se réhydrater. Si les partenaires sont encore viables, les processus métaboliques et la photosynthèse peuvent reprendre.',
+          answer: 'Le lichen peut réactiver son activité physiologique. La vitesse et l’ampleur de cette reprise dépendent de l’espèce et des conditions du milieu.'
+        },
+        exercise: {
+          question: 'Que signifie le caractère poïkilohydre d’un lichen ?',
+          answer: 'Sa teneur en eau suit largement les variations de l’eau disponible dans son environnement, au lieu d’être maintenue à un niveau interne stable par une régulation active comparable à celle des plantes vasculaires.'
+        },
+        exercises: [
+          { question: 'Quel processus permet au photobionte de produire des composés carbonés ?', answer: 'La photosynthèse.' },
+          { question: 'La tolérance à la dessiccation signifie-t-elle que le lichen continue normalement sa photosynthèse lorsqu’il est totalement sec ?', answer: 'Non. L’activité métabolique est fortement réduite ou arrêtée pendant la dessiccation, puis peut reprendre après réhydratation.' },
+          { question: 'Cite deux facteurs environnementaux qui influencent l’activité physiologique d’un lichen.', answer: 'Par exemple, l’humidité et la lumière ; la température, le vent et les propriétés du substrat interviennent également.' }
+        ],
+        sources: [
+          { title: 'Lichen ecophysiology in a changing climate (2023)', url: 'https://doi.org/10.1002/ajb2.16131' },
+          { title: 'Advances in Understanding of Desiccation Tolerance of Lichens and Lichen-Forming Algae (2021)', url: 'https://doi.org/10.3390/plants10040807' },
+          { title: 'Evidence for decoupled water potential between myco- and photobionts during desiccation (2025)', url: 'https://doi.org/10.1093/pcp/pcae143' },
+          { title: 'Evolutionary biology of lichen symbioses (2022)', url: 'https://doi.org/10.1111/nph.18048' }
+        ]
+      }
+    },
+    {
+      id: 'reproduction-et-dispersion',
+      title: 'La reproduction, les propagules et la dispersion des lichens',
+      field: 'Biologie · Reproduction fongique, multiplication végétative et dispersion',
+      summary: 'Distinguer la reproduction sexuée du champignon et la multiplication végétative qui disperse ensemble les partenaires de la symbiose.',
+      lesson: {
+        sections: [
+          'Les lichens présentent deux grandes stratégies de reproduction et de dispersion. Dans la reproduction sexuée, c’est le partenaire fongique qui produit les spores, généralement dans des structures reproductrices spécialisées. Chez de nombreux Ascomycètes lichénisés, les spores sont formées dans des asques, souvent regroupés dans des apothécies ou des périthèces. La spore dispersée ne contient normalement pas le photobionte associé au thalle parental. Après germination, le champignon doit donc rencontrer un photobionte compatible pour établir une nouvelle association lichénique. Cette étape constitue une contrainte écologique importante de la reproduction sexuée.',
+          'La multiplication végétative permet de disperser simultanément le champignon et le photobionte. Elle peut se produire par fragmentation du thalle ou par la production de propagules spécialisées. Les sorédies sont de petits amas constitués de cellules photobiontiques entourées d’hyphes fongiques ; elles sont souvent libérées par des zones appelées soralies. Les isidies sont des excroissances du thalle contenant elles aussi les deux partenaires. Lorsqu’elles se détachent et atteignent un support favorable, elles peuvent donner naissance à un nouveau thalle. Ces propagules ne sont pas présentes chez toutes les espèces et leur forme, leur emplacement et leur abondance varient.',
+          'La fragmentation, les sorédies et les isidies assurent une dispersion clonale : les partenaires sont transportés ensemble et la nouvelle association conserve généralement la même combinaison génétique de départ, sous réserve des variations pouvant survenir. Le vent, la pluie, les animaux et les mouvements du substrat peuvent transporter les fragments ou propagules. Leur arrivée sur un support ne garantit pas leur installation : il faut des conditions compatibles d’humidité, de lumière, de température et de stabilité du substrat. Une propagule peut être dispersée sur une longue distance sans parvenir à établir une population.',
+          'Les deux modes de reproduction ont des avantages différents. La reproduction sexuée contribue au brassage génétique du partenaire fongique, mais impose ensuite la rencontre avec un photobionte compatible. La dispersion végétative transporte déjà les partenaires ensemble et facilite le maintien d’une association fonctionnelle, mais elle ne produit pas le même brassage génétique que la reproduction sexuée. Certaines espèces utilisent les deux stratégies ; d’autres sont surtout observées avec l’une d’elles. Il est donc inexact d’affirmer que tous les lichens se reproduisent uniquement par spores ou uniquement par fragmentation.'
+        ],
+        example: {
+          statement: 'Une spore produite par le champignon d’un lichen germe sur une écorce. Que doit-elle rencontrer pour former un nouveau lichen ?',
+          calculation: 'La spore est issue du partenaire fongique seul. La formation d’une nouvelle symbiose exige donc la rencontre d’un photobionte compatible et l’établissement d’une association stable.',
+          answer: 'Elle doit rencontrer un photobionte compatible, par exemple une algue verte ou une cyanobactérie selon le lichen concerné.'
+        },
+        exercise: {
+          question: 'Quelle différence essentielle distingue une sorédie d’une spore fongique ?',
+          answer: 'Une sorédie transporte ensemble des cellules du photobionte et des hyphes du champignon. Une spore sexuée est produite par le champignon et doit ensuite rencontrer un photobionte compatible.'
+        },
+        exercises: [
+          { question: 'Quels sont les deux partenaires généralement présents dans une isidie ?', answer: 'Le mycobionte et le photobionte.' },
+          { question: 'Quel partenaire produit les spores lors de la reproduction sexuée ?', answer: 'Le mycobionte, c’est-à-dire le champignon.' },
+          { question: 'Pourquoi la dispersion végétative facilite-t-elle l’établissement d’un nouveau thalle ?', answer: 'Parce que la propagule transporte déjà ensemble le champignon et le partenaire photosynthétique.' }
+        ],
+        sources: [
+          { title: 'British Lichen Society — Lichen Biology', url: 'https://britishlichensociety.org.uk/learning/lichen-biology' },
+          { title: 'British Lichen Society — Lichen Life Cycle', url: 'https://britishlichensociety.org.uk/learning/lichen-life-cycle' },
+          { title: 'Australian National Botanic Gardens — Reproduction and dispersal', url: 'https://www.cpbr.gov.au/lichen/reproduction-dispersal.html' },
+          { title: 'Australian National Botanic Gardens — Reproductive structures', url: 'https://www.cpbr.gov.au/lichen/form-structure-reproduction.html' }
+        ]
+      }
+    },
+    {
+      id: 'ecologie-bioindication-et-conservation',
+      title: 'Les lichens dans les écosystèmes, la bioindication et la conservation',
+      field: 'Biologie · Écologie, biogéographie, pollution atmosphérique et conservation',
+      summary: 'Analyser les fonctions écologiques des lichens, leur sensibilité aux conditions du milieu et les méthodes ainsi que les limites de leur utilisation comme bioindicateurs.',
+      lesson: {
+        sections: [
+          'Les lichens colonisent une grande diversité de supports : écorces, bois mort, roches, sols, mousses et parfois des surfaces artificielles. Ils peuvent intervenir dans les successions écologiques en colonisant des surfaces peu occupées, en retenant des particules et en contribuant progressivement à l’altération de certains substrats. Leur thalle peut aussi offrir des ressources alimentaires ou des microhabitats à des invertébrés et à d’autres organismes. Certaines espèces associées à des cyanobactéries contribuent aux apports d’azote dans les écosystèmes par fixation biologique de l’azote atmosphérique. L’importance de ces fonctions varie selon les espèces, les habitats et l’abondance des lichens ; elle ne doit pas être généralisée à tous les thalles.',
+          'Les lichens peuvent être utilisés pour étudier la qualité de l’air parce qu’ils échangent une partie importante de l’eau et des éléments avec leur environnement et que certaines espèces sont sensibles à des polluants atmosphériques. Les communautés lichéniques sur les troncs d’arbres ont notamment été utilisées pour suivre les effets de composés soufrés et azotés. Les chercheurs peuvent étudier la présence et l’abondance d’espèces indicatrices, la diversité des communautés ou la concentration de certains éléments accumulés dans les thalles. Ces méthodes fournissent des informations complémentaires aux mesures instrumentales de l’air, notamment sur l’exposition intégrée dans le temps.',
+          'Un bioindicateur n’est cependant pas un appareil de mesure universel. La composition des communautés dépend aussi du type d’arbre, du pH de l’écorce, de l’humidité, de l’ombre, de la température, de l’altitude et de la gestion du site. Les espèces n’ont pas toutes la même sensibilité aux mêmes substances, et la présence d’un lichen ne permet pas à elle seule d’identifier précisément un polluant ni d’en calculer la concentration atmosphérique. Les études fiables standardisent le choix des supports, la surface observée, la méthode d’inventaire et l’identification taxonomique ; elles interprètent les résultats avec les données climatiques et environnementales disponibles.',
+          'La conservation des lichens dépend de la préservation de leurs microhabitats et de la continuité écologique. La disparition de vieux arbres, la modification des forêts, les changements de pratiques sylvicoles, l’eutrophisation azotée, certaines pollutions et les changements climatiques peuvent modifier la composition des communautés. Les espèces spécialisées sur des substrats rares ou des forêts anciennes peuvent être particulièrement vulnérables. La protection ne consiste donc pas seulement à préserver les thalles visibles : elle implique aussi de conserver les arbres-hôtes, le bois mort, les rochers, les conditions d’humidité et la qualité de l’air. Les suivis à long terme et les inventaires conduits avec une identification rigoureuse sont essentiels pour détecter les évolutions.'
+        ],
+        example: {
+          statement: 'Un inventaire trouve davantage d’espèces de lichens sur les troncs d’un site que sur ceux d’un autre. Peut-on conclure immédiatement que l’air du premier site est moins pollué ?',
+          calculation: 'La richesse lichénique peut être liée à la pollution, mais elle dépend également du pH de l’écorce, de l’essence des arbres, de l’humidité, de l’exposition et de la méthode d’échantillonnage.',
+          answer: 'Non. Cette observation peut constituer un indice, mais il faut contrôler les facteurs liés aux arbres et au microclimat et appliquer un protocole standardisé avant d’interpréter la différence comme un effet de la pollution.'
+        },
+        exercise: {
+          question: 'Pourquoi les lichens sont-ils considérés comme des bioindicateurs utiles, mais imparfaits, de la qualité de l’air ?',
+          answer: 'Ils réagissent à plusieurs polluants et peuvent accumuler certains éléments, ce qui renseigne sur l’exposition environnementale. Toutefois, leur distribution dépend aussi du substrat, du climat et de leur écologie propre ; ils ne permettent donc pas, seuls, de mesurer précisément un polluant.'
+        },
+        exercises: [
+          { question: 'Quel partenaire de certains lichens peut contribuer à la fixation biologique de l’azote ?', answer: 'Une cyanobactérie capable de fixer l’azote atmosphérique.' },
+          { question: 'Cite deux facteurs autres que la pollution pouvant influencer les lichens présents sur une écorce.', answer: 'Par exemple, le pH de l’écorce et l’humidité ; l’essence de l’arbre, l’ombre et la température interviennent également.' },
+          { question: 'Pourquoi un inventaire lichénique doit-il suivre un protocole standardisé ?', answer: 'Pour rendre les observations comparables et limiter les biais liés au choix des arbres, aux surfaces observées, au microclimat et à l’identification des espèces.' }
+        ],
+        sources: [
+          { title: 'British Lichen Society — Lichen Biology', url: 'https://britishlichensociety.org.uk/learning/lichen-biology' },
+          { title: 'Lichen ecophysiology in a changing climate (2023)', url: 'https://doi.org/10.1002/ajb2.16131' },
+          { title: 'Lichens as effective bioindicators for monitoring environmental changes: A comprehensive review (2024)', url: 'https://doi.org/10.1016/j.teadva.2023.200085' },
+          { title: 'UK Air Pollution Information System — Impacts of air pollution on lichens and bryophytes', url: 'https://www.edinburgh.ceh.ac.uk/impacts-air-pollution-lichens-and-bryophytes-mosses-and-liverworts' }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  id: 'ecosystemes-marins',
+  sortYear: -538800000,
+  title: 'Écosystèmes marins : biodiversité, fonctionnement et conservation des océans',
+  note: 'Six chapitres approfondis sur la définition et la zonation des écosystèmes marins, les habitats côtiers, les milieux pélagiques et profonds, la biodiversité et les réseaux trophiques, les cycles biogéochimiques ainsi que les pressions humaines et la conservation. Le sortYear de -538 800 000 correspond à un repère approximatif de la limite Édiacarien-Cambrien dans l’échelle chronostratigraphique internationale ; il sert uniquement au classement chronologique de cette branche et ne date pas l’apparition des écosystèmes marins, qui sont beaucoup plus anciens.',
+  chapters: [
+    {
+      id: 'definition-et-organisation-des-ecosystemes-marins',
+      title: 'Définition, organisation et zonation des écosystèmes marins',
+      field: 'Biologie · Écologie marine, océanographie physique et biogéographie',
+      summary: 'Définir un écosystème marin, distinguer ses composantes biotiques et abiotiques et comprendre les grandes divisions spatiales de l’océan.',
+      lesson: {
+        sections: [
+          'Un écosystème marin est un système écologique constitué d’organismes vivants, de leur environnement physique et chimique, et des interactions qui les relient. Il comprend des producteurs primaires, des consommateurs, des décomposeurs et des microorganismes, ainsi que des facteurs abiotiques comme la température, la salinité, la lumière, la pression, l’oxygène dissous, les nutriments, les courants et la nature du fond. Ces composantes ne fonctionnent pas indépendamment : une variation de température peut modifier la solubilité de l’oxygène, la stratification de l’eau, la distribution des espèces et la disponibilité des nutriments. Les limites d’un écosystème sont donc des limites fonctionnelles ou écologiques, et non toujours des frontières géographiques nettes.',
+          'Une première distinction oppose le domaine pélagique, qui correspond à la colonne d’eau, au domaine benthique, qui correspond aux fonds marins et aux organismes qui y vivent. Dans le domaine pélagique, les organismes peuvent être classés selon leur mode de déplacement : le plancton dérive principalement avec les mouvements de l’eau, tandis que le necton regroupe les organismes capables de nager activement contre les courants, comme de nombreux poissons, calmars et mammifères marins. Le benthos comprend les organismes vivant sur le fond, fixés à celui-ci ou dans les sédiments. Ces catégories décrivent des modes de vie et peuvent se chevaucher au cours du cycle de vie d’une espèce, notamment lorsque des larves planctoniques deviennent des adultes benthiques.',
+          'La lumière permet de distinguer une zone photique, où la lumière disponible peut permettre la photosynthèse, et une zone aphotique, où elle est insuffisante pour soutenir une photosynthèse nette. La profondeur de la zone photique n’est pas constante : elle dépend de la transparence de l’eau, des particules en suspension, du phytoplancton et de la géographie locale. La zone épipélagique est généralement associée aux eaux de surface éclairées ; plus en profondeur se trouvent notamment les zones mésopélagique, bathypélagique, abyssopélagique et hadopélagique, selon les conventions de zonation utilisées. Les seuils bathymétriques précis peuvent varier légèrement selon les classifications, il faut donc préciser le référentiel employé plutôt que présenter chaque limite comme une frontière biologique absolue.',
+          'Les paramètres physiques varient également horizontalement. Les eaux côtières et néritiques se situent au-dessus du plateau continental et sont souvent influencées par les apports des fleuves, les marées, les vents et les remontées d’eaux profondes. Les eaux océaniques du large sont généralement plus éloignées des côtes et présentent d’autres régimes de circulation et d’apports nutritifs. La salinité dépend notamment de l’évaporation, des précipitations, de la fonte ou de la formation de glace et des apports d’eau douce. La température et la densité contribuent à la stratification de la colonne d’eau, qui peut limiter ou favoriser les échanges verticaux. La zonation marine est ainsi un outil descriptif permettant de relier les conditions du milieu à la répartition des organismes.'
+        ],
+        example: {
+          statement: 'Un organisme dérive principalement avec les courants dans la colonne d’eau, tandis qu’un autre vit fixé sur les rochers du fond. À quelles catégories écologiques appartiennent-ils ?',
+          calculation: 'Le premier est classé selon son mode de vie dans le plancton s’il dérive avec l’eau ; le second appartient au benthos puisqu’il vit sur le fond marin.',
+          answer: 'Le premier est planctonique et le second benthique. Cette classification décrit leur mode de vie, pas leur degré de parenté biologique.'
+        },
+        exercise: {
+          question: 'Quelle différence fondamentale distingue le domaine pélagique du domaine benthique ?',
+          answer: 'Le domaine pélagique correspond à la colonne d’eau, tandis que le domaine benthique correspond aux fonds marins et aux organismes qui leur sont associés.'
+        },
+        exercises: [
+          {
+            question: 'Que désigne le plancton ?',
+            answer: 'Les organismes qui dérivent principalement avec les mouvements de l’eau, même si certains peuvent effectuer des déplacements verticaux.'
+          },
+          {
+            question: 'Pourquoi la profondeur de la zone photique varie-t-elle selon les sites ?',
+            answer: 'Parce qu’elle dépend notamment de la transparence de l’eau, des particules en suspension et de la quantité de lumière qui pénètre dans la mer.'
+          },
+          {
+            question: 'Cite trois facteurs abiotiques qui influencent les organismes marins.',
+            answer: 'Par exemple, la température, la salinité et la disponibilité en oxygène dissous ; la lumière, la pression et les nutriments interviennent également.'
+          }
+        ],
+        sources: [
+          {
+            title: 'OpenStax — Biology 2e, Aquatic Biomes',
+            url: 'https://openstax.org/books/biology/pages/44-4-aquatic-biomes'
+          },
+          {
+            title: 'NOAA — Investigating the Marine Environment: Classification of Marine Environments',
+            url: 'https://repository.library.noaa.gov/view/noaa/44869/noaa_44869_DS3.pdf'
+          },
+          {
+            title: 'NOAA — Marine Life',
+            url: 'https://www.noaa.gov/education/resource-collections/marine-life'
+          },
+          {
+            title: 'International Commission on Stratigraphy — International Chronostratigraphic Chart',
+            url: 'https://stratigraphy.org/chart/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ecosystemes-cotiers-et-habitats-structurants',
+      title: 'Les écosystèmes côtiers : récifs, mangroves, herbiers et estuaires',
+      field: 'Biologie · Écologie côtière, habitats marins et écologie des communautés',
+      summary: 'Étudier les habitats côtiers structurants, leurs espèces caractéristiques, leurs fonctions écologiques et leurs relations avec les milieux voisins.',
+      lesson: {
+        sections: [
+          'Les récifs coralliens sont des structures biologiques construites principalement par des coraux scléractiniaires coloniaux qui sécrètent un squelette de carbonate de calcium. Dans de nombreux récifs tropicaux peu profonds, les coraux hébergent des microalgues symbiotiques, souvent appelées Symbiodiniaceae, qui réalisent la photosynthèse et transfèrent une partie des produits carbonés au corail. En retour, le corail fournit un habitat et des composés nécessaires à ces algues. Cette association contribue à la productivité et à la construction récifale dans des eaux généralement chaudes, claires et peu profondes. Tous les coraux ne vivent cependant pas dans ces conditions : des coraux d’eaux froides et profondes existent et ne dépendent pas de la même symbiose photosynthétique. Les récifs offrent des abris, des zones d’alimentation et des sites de reproduction à une grande diversité d’organismes.',
+          'Les mangroves sont des formations végétales côtières dominées par des arbres et arbustes adaptés aux milieux salés ou saumâtres, principalement dans les régions tropicales et subtropicales. Leurs racines aériennes ou échasses, selon les espèces, participent à la stabilisation des sédiments et créent des habitats complexes pour les poissons, crustacés, mollusques et autres organismes. Les mangroves peuvent atténuer localement l’énergie des vagues, limiter l’érosion et contribuer au stockage du carbone dans leur biomasse et leurs sédiments. Leur fonctionnement dépend de l’hydrologie, de la salinité, de la fréquence d’inondation, de la disponibilité en sédiments et de la connexion avec les cours d’eau et la mer. Elles ne sont pas de simples forêts terrestres inondées : leurs espèces présentent des adaptations particulières aux contraintes du milieu côtier.',
+          'Les herbiers marins sont constitués de plantes à fleurs adaptées à une vie entièrement immergée dans l’eau salée. Ils ne doivent pas être confondus avec les algues : les phanérogames marines possèdent de véritables racines, rhizomes, feuilles et fleurs. Les herbiers stabilisent les sédiments, ralentissent localement les mouvements de l’eau et constituent des habitats ou des zones d’alimentation pour de nombreux poissons, invertébrés, tortues et mammifères marins. Ils peuvent également stocker du carbone dans les tissus végétaux et les sédiments associés. Leur développement nécessite généralement une lumière suffisante ; la turbidité, l’enrichissement excessif en nutriments, les aménagements côtiers et les dommages mécaniques peuvent réduire leur étendue.',
+          'Les estuaires sont des zones de transition où les eaux douces continentales rencontrent les eaux salées marines. Le mélange produit des gradients de salinité, de température, de turbidité et de nutriments qui varient avec les marées, les débits fluviaux et les saisons. Les marais salés, vasières, mangroves, herbiers et récifs d’huîtres peuvent constituer des habitats estuariens selon la région. De nombreuses espèces utilisent ces milieux comme zones de nourricerie, car ils offrent des ressources alimentaires et des habitats de croissance. Les estuaires retiennent et transforment aussi une partie des matières et nutriments transportés depuis les bassins versants. Leur rôle écologique dépend toutefois de la qualité de l’eau et de la continuité des échanges entre rivière, estuaire et mer.'
+        ],
+        example: {
+          statement: 'Un habitat côtier est constitué de plantes à fleurs immergées, avec des feuilles, des rhizomes et des racines. De quel écosystème s’agit-il ?',
+          calculation: 'Les plantes marines à fleurs sont des phanérogames marines ; lorsqu’elles forment des peuplements sous-marins, elles constituent des herbiers marins.',
+          answer: 'Il s’agit d’un herbier marin. Ce n’est pas une forêt d’algues, même si les deux habitats peuvent présenter une structure végétale sous-marine.'
+        },
+        exercise: {
+          question: 'Pourquoi les mangroves, les herbiers marins et les marais salés sont-ils regroupés parmi les écosystèmes côtiers de carbone bleu ?',
+          answer: 'Parce qu’ils peuvent capter et stocker du carbone dans leur biomasse et, surtout, dans les sédiments associés. Leur capacité de stockage dépend des conditions locales et de la conservation de ces habitats.'
+        },
+        exercises: [
+          {
+            question: 'Quel organisme construit principalement les récifs coralliens tropicaux peu profonds ?',
+            answer: 'Des coraux, notamment des coraux scléractiniaires qui sécrètent un squelette calcaire.'
+          },
+          {
+            question: 'Quelle différence botanique distingue un herbier marin d’un peuplement d’algues ?',
+            answer: 'Un herbier est formé de plantes à fleurs possédant notamment des racines, des rhizomes et des feuilles ; les algues n’ont pas cette organisation de plante vasculaire.'
+          },
+          {
+            question: 'Pourquoi les estuaires sont-ils souvent des zones de nourricerie ?',
+            answer: 'Ils offrent des habitats diversifiés et des ressources alimentaires, et certaines zones abritées favorisent la croissance des jeunes organismes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NOAA — Coral Reef Ecosystems',
+            url: 'https://www.noaa.gov/education/resource-collections/marine-life/coral-reef-ecosystems'
+          },
+          {
+            title: 'NOAA — Ecosystems: Coral Reefs, Kelp Forests and Seagrass Meadows',
+            url: 'https://sanctuaries.noaa.gov/visit/ecosystems/'
+          },
+          {
+            title: 'UNEP — Mangrove Forests',
+            url: 'https://www.unep.org/en/what-we-do/ocean-seas-and-coasts/blue-ecosystems/mangrove-forests'
+          },
+          {
+            title: 'NOAA Fisheries — Estuary Habitat',
+            url: 'https://www.fisheries.noaa.gov/national/habitat-conservation/estuary-habitat'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ocean-ouvert-et-ecosystemes-profonds',
+      title: 'L’océan ouvert et les écosystèmes des grandes profondeurs',
+      field: 'Biologie · Écologie pélagique, écologie abyssale et biologie des organismes profonds',
+      summary: 'Comprendre les milieux du large, les gradients de profondeur, les adaptations des organismes et les écosystèmes qui fonctionnent sans lumière solaire.',
+      lesson: {
+        sections: [
+          'L’océan ouvert, ou domaine océanique pélagique, comprend les eaux situées au large des plateaux continentaux. Sa partie superficielle éclairée accueille une grande part de la photosynthèse marine, réalisée notamment par le phytoplancton. Plus bas, la lumière diminue progressivement et ne permet plus une production photosynthétique nette. Les organismes de pleine eau comprennent des bactéries, des protistes, du zooplancton, des poissons, des céphalopodes et de grands vertébrés marins. La distribution de ces organismes dépend de la température, de la pression, de la disponibilité en nourriture, de l’oxygène, des courants et des stratégies de migration. L’océan ouvert n’est donc pas un milieu homogène : ses conditions varient avec la profondeur, la latitude, la saison et la circulation des masses d’eau.',
+          'La zone mésopélagique, souvent située approximativement entre 200 et 1 000 mètres selon les conventions courantes, reçoit une lumière trop faible pour soutenir la photosynthèse nette. De nombreuses espèces y effectuent des migrations verticales quotidiennes : elles remontent vers les eaux superficielles la nuit pour s’alimenter et redescendent le jour, ce qui peut réduire leur exposition aux prédateurs visuels. Ces migrations transportent de la matière organique et participent aux échanges entre les couches de l’océan. Les organismes mésopélagiques présentent des adaptations variables, notamment des yeux sensibles à la faible lumière, des organes lumineux chez certaines espèces et des métabolismes adaptés à des ressources alimentaires dispersées. Ces caractéristiques ne sont toutefois pas universelles à tous les habitants de cette zone.',
+          'Dans les profondeurs bathypélagiques et abyssopélagiques, l’obscurité est permanente et la pression hydrostatique est élevée. La température est généralement basse, mais elle varie selon les masses d’eau et les régions. Une grande partie de l’énergie alimentaire provient de matière organique produite en surface puis exportée vers le fond, sous forme de particules, de pelotes fécales, de carcasses ou d’agrégats. Cette pluie de matière organique est souvent appelée neige marine. Elle alimente les organismes suspensivores, détritivores et prédateurs des fonds profonds. L’apport est inégal dans l’espace et le temps ; les communautés des plaines abyssales peuvent ainsi être limitées par la faible disponibilité de nourriture, malgré leur étendue considérable.',
+          'Les sources hydrothermales sont des zones où des fluides chauds, chargés en composés chimiques, sont émis au niveau du plancher océanique, souvent près des dorsales et des régions volcaniques. Des microorganismes chimioautotrophes utilisent l’énergie tirée de réactions chimiques, par exemple l’oxydation de composés réduits, pour fixer le carbone inorganique. Ils constituent la base de réseaux trophiques spécialisés qui peuvent inclure des vers tubicoles, des mollusques et des crustacés. Ces communautés montrent que la production primaire ne dépend pas toujours directement de la lumière solaire. Les sources hydrothermales sont néanmoins des habitats localisés et géologiquement variables ; elles ne représentent pas le mode de fonctionnement de l’ensemble des grands fonds marins.'
+        ],
+        example: {
+          statement: 'Dans une communauté profonde vivant près d’une source hydrothermale, les microorganismes utilisent l’énergie de réactions chimiques pour produire de la matière organique. Quel type de production primaire est en jeu ?',
+          calculation: 'La source d’énergie est chimique et non lumineuse. La fixation du carbone alimentée par des réactions chimiques correspond à la chimiosynthèse, souvent désignée plus précisément comme chimioautotrophie.',
+          answer: 'Il s’agit d’une production primaire chimioautotrophe. Elle permet à ces communautés de fonctionner sans dépendre directement de la photosynthèse locale.'
+        },
+        exercise: {
+          question: 'Comment les réseaux trophiques des grands fonds peuvent-ils recevoir de l’énergie provenant de la surface ?',
+          answer: 'Une partie de la matière organique produite dans les couches éclairées descend sous forme de particules, de pelotes fécales ou de carcasses. Cette matière nourrit ensuite des organismes des profondeurs.'
+        },
+        exercises: [
+          {
+            question: 'Qu’appelle-t-on neige marine ?',
+            answer: 'Un ensemble de particules et d’agrégats de matière organique qui coulent depuis les couches supérieures vers les profondeurs.'
+          },
+          {
+            question: 'Pourquoi la photosynthèse ne constitue-t-elle pas la base énergétique locale des écosystèmes abyssaux ?',
+            answer: 'Parce que la lumière solaire n’y pénètre pas en quantité suffisante pour permettre la photosynthèse.'
+          },
+          {
+            question: 'Quelle source d’énergie alimente les producteurs primaires de certaines sources hydrothermales ?',
+            answer: 'L’énergie de réactions chimiques, utilisée par des microorganismes chimioautotrophes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IPCC — AR6 WGII, Chapter 3: Oceans and Coastal Ecosystems and their Services',
+            url: 'https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-3/'
+          },
+          {
+            title: 'NOAA Ocean Exploration — What conditions exist for life in the deep ocean?',
+            url: 'https://oceanexplorer.noaa.gov/ocean-fact/deep-habitat/'
+          },
+          {
+            title: 'NOAA Ocean Service — What is a hydrothermal vent?',
+            url: 'https://oceanservice.noaa.gov/facts/vents.html'
+          },
+          {
+            title: 'Woods Hole Oceanographic Institution — Hydrothermal Vents',
+            url: 'https://www.whoi.edu/ocean-learning-hub/ocean-topics/how-the-ocean-works/seafloor-below/hydrothermal-vents/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'biodiversite-et-reseaux-trophiques-marins',
+      title: 'La biodiversité marine, la productivité et les réseaux trophiques',
+      field: 'Biologie · Écologie des populations, écologie trophique et biodiversité',
+      summary: 'Décrire les principaux groupes biologiques marins, comprendre la production primaire et analyser les transferts de matière et d’énergie dans les réseaux alimentaires.',
+      lesson: {
+        sections: [
+          'La biodiversité marine comprend la diversité génétique au sein des populations, la diversité des espèces et la diversité des écosystèmes. Elle englobe des organismes microscopiques — bactéries, archées, virus et protistes — ainsi que des algues, des plantes marines, des invertébrés, des poissons, des reptiles, des oiseaux et des mammifères. Les organismes occupent des fonctions écologiques variées : producteurs primaires, consommateurs, détritivores, décomposeurs, ingénieurs d’écosystème ou symbiotes. La richesse en espèces n’est qu’une mesure parmi d’autres ; l’abondance, la biomasse, la diversité fonctionnelle et la structure des interactions sont également importantes pour comprendre le fonctionnement d’un milieu marin.',
+          'La production primaire est la formation de matière organique à partir de carbone inorganique par des organismes autotrophes. Dans la zone éclairée, elle est réalisée notamment par le phytoplancton, les macroalgues et les plantes marines. Le phytoplancton comprend des groupes divers, dont les diatomées, les dinoflagellés et des cyanobactéries photosynthétiques. Sa production dépend de la lumière, de la température, des nutriments et du brassage de la colonne d’eau. Les nitrates, les phosphates, le fer et d’autres éléments peuvent limiter la croissance selon les régions. La production primaire n’est donc pas uniforme : certaines eaux côtières et zones d’upwelling sont très productives, tandis que de vastes régions océaniques tropicales peuvent présenter de faibles concentrations de nutriments en surface.',
+          'Les réseaux trophiques représentent les relations alimentaires entre organismes. Les producteurs primaires constituent une source de matière organique pour les consommateurs primaires, par exemple le zooplancton herbivore ; ceux-ci peuvent être consommés par des poissons, des méduses ou d’autres prédateurs. Les niveaux trophiques ne sont pas toujours séparés de manière stricte : de nombreux organismes sont omnivores et peuvent changer de régime au cours de leur développement. Les détritivores et les décomposeurs utilisent la matière organique morte et contribuent à la reminéralisation des nutriments. Un réseau trophique est plus réaliste qu’une chaîne alimentaire linéaire, car une espèce peut consommer plusieurs proies et être elle-même consommée par plusieurs prédateurs.',
+          'L’énergie disponible diminue généralement à mesure qu’elle est transférée d’un niveau trophique au suivant, car une partie est utilisée pour le métabolisme, dissipée sous forme de chaleur ou n’est pas assimilée. La matière, en revanche, circule et peut être recyclée par les organismes et les processus biogéochimiques. Les prédateurs supérieurs peuvent exercer des effets directs sur leurs proies et des effets indirects sur d’autres niveaux trophiques, ce qui peut provoquer des cascades trophiques. La disparition ou la forte diminution d’une espèce peut donc modifier la structure du réseau, mais l’ampleur de ces effets dépend de la complexité des interactions, des espèces présentes et du contexte environnemental.'
+        ],
+        example: {
+          statement: 'Dans un réseau simplifié, le phytoplancton est consommé par le zooplancton, qui est ensuite mangé par un petit poisson. Identifie les niveaux trophiques de ces trois organismes.',
+          calculation: 'Le phytoplancton fabrique de la matière organique : producteur primaire. Le zooplancton qui le consomme est consommateur primaire. Le poisson qui mange ce zooplancton est consommateur secondaire dans ce réseau simplifié.',
+          answer: 'Phytoplancton : producteur primaire ; zooplancton herbivore : consommateur primaire ; petit poisson : consommateur secondaire. Dans un réseau réel, le régime alimentaire peut être plus complexe.'
+        },
+        exercise: {
+          question: 'Pourquoi un réseau trophique décrit-il généralement mieux les relations alimentaires qu’une simple chaîne alimentaire ?',
+          answer: 'Parce que la plupart des organismes disposent de plusieurs ressources alimentaires et peuvent être consommés par plusieurs prédateurs. Le réseau représente ces interactions multiples.'
+        },
+        exercises: [
+          {
+            question: 'Quel groupe constitue la base photosynthétique de nombreux réseaux trophiques océaniques ?',
+            answer: 'Le phytoplancton, constitué d’organismes photosynthétiques microscopiques.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre énergie et matière dans un écosystème ?',
+            answer: 'L’énergie traverse les niveaux trophiques et se dissipe progressivement, tandis que la matière est transformée et recyclée dans les cycles biogéochimiques.'
+          },
+          {
+            question: 'Pourquoi la productivité primaire varie-t-elle entre les régions océaniques ?',
+            answer: 'Elle dépend notamment de la lumière, des nutriments, de la température et du brassage des eaux, qui varient géographiquement et saisonnièrement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NOAA — Aquatic Food Webs',
+            url: 'https://www.noaa.gov/education/resource-collections/marine-life/aquatic-food-webs'
+          },
+          {
+            title: 'NOAA Ocean Service — What are phytoplankton?',
+            url: 'https://oceanservice.noaa.gov/facts/phyto.html'
+          },
+          {
+            title: 'Woods Hole Oceanographic Institution — Phytoplankton',
+            url: 'https://www.whoi.edu/ocean-learning-hub/ocean-topics/ocean-life/ocean-plants/phytoplankton/'
+          },
+          {
+            title: 'NOAA — Marine Life',
+            url: 'https://www.noaa.gov/education/resource-collections/marine-life'
+          }
+        ]
+      }
+    },
+    {
+      id: 'cycles-biogeochimiques-et-circulation-oceanique',
+      title: 'Les cycles biogéochimiques, la circulation océanique et le carbone bleu',
+      field: 'Biologie · Biogéochimie marine, océanographie et écologie des cycles de matière',
+      summary: 'Expliquer les cycles du carbone et des nutriments, le rôle des courants et des remontées d’eau, ainsi que le stockage du carbone dans certains habitats côtiers.',
+      lesson: {
+        sections: [
+          'Les écosystèmes marins participent aux cycles biogéochimiques en transformant et en transportant des éléments comme le carbone, l’azote, le phosphore, le silicium et le fer. Les organismes prélèvent des nutriments dissous pour construire leur biomasse ; après leur mort ou leur excrétion, une partie de la matière organique est décomposée et reminéralisée, libérant des éléments réutilisables. Une autre partie peut être exportée vers les profondeurs ou enfouie dans les sédiments. L’intensité de ces processus dépend de la température, de l’oxygène, de la circulation de l’eau, de la composition des communautés et de la disponibilité des éléments nutritifs. Les cycles ne sont pas isolés : les transformations du carbone sont liées à celles de l’azote, du phosphore et de l’oxygène.',
+          'Le carbone inorganique dissous dans l’eau de mer comprend principalement des ions bicarbonate et carbonate ainsi que du dioxyde de carbone dissous. Les organismes photosynthétiques utilisent le carbone inorganique pour produire de la matière organique. Une partie de cette matière est consommée, respirée et reconvertie en carbone inorganique ; une autre descend sous forme de particules vers les eaux profondes. Ce transfert vertical contribue à la pompe biologique du carbone. Les échanges de CO2 entre l’océan et l’atmosphère dépendent notamment de la température, de la circulation, des gradients de pression partielle et de la chimie du carbonate. L’océan absorbe une part importante du CO2 anthropique, mais cette absorption modifie la chimie de l’eau et contribue à l’acidification océanique.',
+          'Les courants océaniques sont générés par plusieurs mécanismes, notamment les vents, les différences de densité liées à la température et à la salinité, la rotation terrestre, les marées et la configuration des bassins. Ils transportent chaleur, oxygène, nutriments, organismes et propagules. Les remontées d’eau, ou upwellings, se produisent lorsque des eaux profondes remontent vers la surface, souvent en réponse à des vents qui déplacent les eaux superficielles. Ces eaux profondes sont fréquemment plus froides et riches en nutriments, ce qui peut stimuler la production phytoplanctonique et soutenir des pêcheries importantes. L’effet dépend toutefois de la disponibilité de la lumière, de l’oxygène, des nutriments et de la structure de l’écosystème ; les remontées d’eau ne sont pas automatiquement bénéfiques dans toutes les situations.',
+          'Le terme carbone bleu désigne le carbone stocké dans certains écosystèmes côtiers végétalisés, en particulier les mangroves, les herbiers marins et les marais salés. Le carbone est présent dans la biomasse végétale et peut s’accumuler dans les sédiments où les conditions ralentissent sa décomposition. La quantité stockée et sa permanence varient selon l’habitat, le climat, l’hydrologie, la géomorphologie et les perturbations. La destruction ou le drainage de ces milieux peut remobiliser une partie du carbone stocké. Les macroalgues et d’autres compartiments marins sont également étudiés dans le contexte du carbone océanique, mais leur comptabilisation et la permanence de leur stockage présentent des incertitudes plus importantes que pour les habitats côtiers de carbone bleu classiquement reconnus.'
+        ],
+        example: {
+          statement: 'Des vents déplacent les eaux de surface au large d’une côte. De l’eau profonde, froide et riche en nutriments remonte pour les remplacer. Quel phénomène est décrit ?',
+          calculation: 'Le déplacement des eaux superficielles suivi de la remontée d’eaux profondes correspond à un upwelling. Les nutriments apportés peuvent soutenir la croissance du phytoplancton si les autres conditions sont favorables.',
+          answer: 'Il s’agit d’une remontée d’eau, ou upwelling. Elle peut accroître la productivité biologique de certaines régions côtières.'
+        },
+        exercise: {
+          question: 'Pourquoi les herbiers marins et les mangroves peuvent-ils stocker du carbone pendant de longues périodes ?',
+          answer: 'Ils incorporent du carbone dans leur biomasse et favorisent son accumulation dans les sédiments. La durée de stockage dépend notamment de la stabilité du milieu et des conditions qui limitent la décomposition ou la remise en suspension.'
+        },
+        exercises: [
+          {
+            question: 'Que devient une partie de la matière organique produite en surface puis exportée vers les profondeurs ?',
+            answer: 'Elle est consommée ou décomposée dans la colonne d’eau et les sédiments ; une fraction peut être enfouie et contribuer au stockage du carbone.'
+          },
+          {
+            question: 'Quel est le rôle écologique d’un upwelling ?',
+            answer: 'Il apporte vers la surface des eaux souvent froides et riches en nutriments, pouvant stimuler la production primaire.'
+          },
+          {
+            question: 'Quels sont les trois habitats côtiers classiquement reconnus comme écosystèmes de carbone bleu ?',
+            answer: 'Les mangroves, les herbiers marins et les marais salés.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NOAA Ocean Service — What is upwelling?',
+            url: 'https://oceanservice.noaa.gov/facts/upwelling.html'
+          },
+          {
+            title: 'NOAA — Ocean Currents',
+            url: 'https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents'
+          },
+          {
+            title: 'UNESCO Intergovernmental Oceanographic Commission — Blue Carbon',
+            url: 'https://www.ioc.unesco.org/en/blue-carbon'
+          },
+          {
+            title: 'IPCC — Special Report on the Ocean and Cryosphere, Chapter 5',
+            url: 'https://www.ipcc.ch/srocc/chapter/chapter-5/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'pressions-anthropiques-et-conservation-marine',
+      title: 'Les pressions humaines, la résilience et la conservation des écosystèmes marins',
+      field: 'Biologie · Écologie de la conservation, changement climatique et gestion des ressources marines',
+      summary: 'Analyser les principales pressions humaines sur les océans, leurs effets écologiques et les outils de conservation et de gestion durable.',
+      lesson: {
+        sections: [
+          'Les écosystèmes marins subissent des pressions multiples et souvent cumulatives. La pêche excessive peut réduire l’abondance des populations ciblées, modifier les structures d’âge et de taille et provoquer des changements dans les réseaux trophiques. Les prises accessoires affectent des espèces non ciblées, tandis que certaines pratiques de pêche peuvent dégrader les habitats benthiques. La pollution comprend notamment les apports de nutriments, les contaminants chimiques, les hydrocarbures, les déchets plastiques et les eaux usées. L’eutrophisation, causée par un enrichissement excessif en nutriments, peut favoriser des proliférations algales et, lors de la décomposition de la biomasse, contribuer à l’appauvrissement en oxygène de l’eau. Les effets varient selon les substances, les espèces, les habitats et les conditions hydrodynamiques.',
+          'Le changement climatique modifie les conditions physiques et chimiques de l’océan. Le réchauffement de l’eau peut déplacer les aires de répartition, modifier les périodes de reproduction et intensifier les épisodes de chaleur marine. L’absorption de CO2 atmosphérique entraîne une diminution du pH moyen de l’eau de mer et une modification de la disponibilité des ions carbonate : ce phénomène est appelé acidification océanique. Il peut compliquer la calcification de certains organismes, mais ses effets physiologiques et écologiques varient selon les espèces et les conditions locales. La désoxygénation, c’est-à-dire la diminution de l’oxygène dissous dans certaines régions, peut réduire les habitats disponibles pour les organismes sensibles. Ces facteurs interagissent avec la pollution, la destruction des habitats et l’exploitation des ressources.',
+          'La résilience écologique désigne la capacité d’un système à absorber des perturbations tout en conservant certaines fonctions, structures ou trajectoires essentielles. Elle ne signifie pas qu’un écosystème peut subir n’importe quelle pression sans dommage. La diversité biologique et fonctionnelle, la connectivité entre habitats, la qualité de l’eau, la disponibilité des refuges et la limitation des pressions locales peuvent contribuer à la résilience. Les seuils de basculement et les délais de récupération diffèrent selon les écosystèmes. Un récif corallien, un herbier, une mangrove et un écosystème abyssal ne réagissent pas de la même manière à une perturbation ; les mesures de restauration doivent donc être adaptées au fonctionnement écologique et au contexte local.',
+          'La conservation marine mobilise plusieurs outils complémentaires : aires marines protégées, réglementation des prélèvements, réduction des pollutions, restauration des habitats, suivi scientifique et gestion intégrée des zones côtières. Une aire marine protégée est un espace géographique défini et géré dans un objectif de conservation à long terme, mais le niveau de protection et les activités autorisées varient selon les dispositifs. La simple désignation d’une zone ne garantit donc pas un résultat écologique : l’efficacité dépend de règles adaptées, de moyens de surveillance, de la participation des communautés concernées, de la représentativité des habitats et de l’évaluation des résultats. La gestion écosystémique cherche à prendre en compte les interactions entre espèces, habitats, activités humaines et processus physiques à une échelle pertinente.'
+        ],
+        example: {
+          statement: 'Une aire marine protégée est créée, mais aucune règle de gestion ni surveillance effective n’est mise en place. Peut-on conclure que la biodiversité locale est automatiquement protégée ?',
+          calculation: 'La désignation juridique est un outil de conservation, mais son efficacité dépend aussi des objectifs, des règles, de leur application, des moyens de suivi et des pressions extérieures.',
+          answer: 'Non. La création d’une aire protégée ne garantit pas à elle seule la conservation effective. Il faut des mesures adaptées, une gestion réelle et une évaluation régulière.'
+        },
+        exercise: {
+          question: 'Pourquoi les effets du réchauffement, de l’acidification et de la désoxygénation doivent-ils être étudiés conjointement avec les pressions locales ?',
+          answer: 'Parce que ces facteurs peuvent interagir avec la pollution, la pêche et la dégradation des habitats. Leurs effets combinés peuvent être différents de ceux de chaque pression considérée séparément.'
+        },
+        exercises: [
+          {
+            question: 'Que désigne l’acidification océanique ?',
+            answer: 'La diminution du pH de l’eau de mer liée notamment à l’absorption de dioxyde de carbone atmosphérique et aux réactions chimiques qui en résultent.'
+          },
+          {
+            question: 'Une aire marine protégée interdit-elle nécessairement toute activité humaine ?',
+            answer: 'Non. Les règles varient selon les sites ; certaines aires autorisent plusieurs usages tandis que d’autres appliquent des restrictions beaucoup plus fortes.'
+          },
+          {
+            question: 'Cite deux mesures pouvant contribuer à la conservation des écosystèmes marins.',
+            answer: 'Par exemple, réduire les pollutions et protéger ou restaurer les habitats ; la gestion durable des pêches et le suivi scientifique sont également importants.'
+          }
+        ],
+        sources: [
+          {
+            title: 'IPCC — AR6 WGI, Marine Ecosystems and Fisheries Fact Sheet',
+            url: 'https://www.ipcc.ch/report/ar6/wg1/downloads/factsheets/IPCC_AR6_WGI_Sectoral_Fact_Sheet_Marine_Ecosystems_Fisheries.pdf'
+          },
+          {
+            title: 'IPCC — Special Report on the Ocean and Cryosphere, Summary for Policymakers',
+            url: 'https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/'
+          },
+          {
+            title: 'NOAA Ocean Service — Marine Protected Areas',
+            url: 'https://oceanservice.noaa.gov/ecosystems/mpa/'
+          },
+          {
+            title: 'UNEP — Climate Change and Oceans',
+            url: 'https://www.unep.org/en/what-we-do/ocean-seas-and-coasts/regional-seas-programme/climate-change'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 
 ]
 
