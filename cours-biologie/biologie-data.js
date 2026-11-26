@@ -3036,6 +3036,272 @@ window.courseCatalog = [
   ]
 },
 
-
+{
+  id: 'organismes-monocellulaires',
+  sortYear: -3500000000,
+  title: 'Organismes monocellulaires : diversité, fonctionnement et rôle du vivant microscopique',
+  note: 'Six chapitres approfondis consacrés à la définition du vivant unicellulaire, aux cellules procaryotes, au métabolisme microbien, à la multiplication et aux échanges génétiques, aux eucaryotes unicellulaires et à leur rôle écologique et humain. Le repère de -3 500 000 000 ans est une approximation associée à certaines des plus anciennes traces de vie connues ; il ne constitue pas une date certaine de naissance de tous les organismes unicellulaires.',
+  chapters: [
+    {
+      id: 'definition-et-diversite-du-monde-unicellulaire',
+      title: 'Définition, origine et diversité du monde unicellulaire',
+      field: 'Biologie cellulaire · Classification du vivant · Évolution microbienne',
+      summary: 'Définir un organisme unicellulaire, distinguer procaryotes et eucaryotes et comprendre pourquoi la classification moderne repose notamment sur les relations évolutives et les données moléculaires.',
+      lesson: {
+        sections: [
+          'Un organisme unicellulaire est un être vivant dont l’organisme est constitué d’une seule cellule. Cette cellule assure les fonctions indispensables à la vie : échanges avec le milieu, transformation de matière et d’énergie, maintien d’un équilibre interne, réponse aux conditions environnementales et transmission de l’information génétique. Une cellule isolée n’est donc pas nécessairement un organisme autonome : certaines cellules d’organismes pluricellulaires ne peuvent pas vivre indépendamment. Le terme unicellulaire décrit une organisation biologique complète reposant sur une seule cellule fonctionnelle.',
+          'La distinction fondamentale entre les cellules concerne leur organisation interne. Les procaryotes, regroupés dans les domaines Bacteria et Archaea, ne possèdent pas de noyau entouré d’une membrane ni d’organites membranaires comparables aux mitochondries. Leur ADN se trouve dans une région appelée nucléoïde. Les eucaryotes possèdent un noyau et des compartiments membranaires internes. De nombreux eucaryotes sont pluricellulaires, mais plusieurs lignées comprennent des espèces unicellulaires, notamment les levures et une grande diversité de protistes.',
+          'La classification en trois domaines — Bacteria, Archaea et Eukarya — s’appuie notamment sur la comparaison des séquences d’ARN ribosomique et d’autres caractères moléculaires. Bactéries et archées sont toutes deux procaryotes, mais elles représentent des lignées distinctes. Les archées ne sont pas simplement des bactéries vivant dans des milieux extrêmes : elles occupent aussi des environnements ordinaires et possèdent des caractéristiques moléculaires propres. Le mot « protiste » est employé comme terme pratique pour désigner divers eucaryotes qui ne sont pas classés parmi les animaux, les plantes ou les champignons ; il ne correspond pas à un groupe évolutif unique et homogène.',
+          'Les plus anciennes traces de vie généralement discutées par les chercheurs remontent à environ 3,5 milliards d’années, mais leur interprétation et leur datation font l’objet de recherches. Les premiers organismes étaient nécessairement cellulaires selon les connaissances actuelles, mais leur apparence, leur métabolisme et leur position précise dans les lignées actuelles ne peuvent pas être reconstitués avec certitude. Il faut donc distinguer les traces anciennes de vie, les hypothèses sur les premiers métabolismes et les organismes modernes observés aujourd’hui.'
+        ],
+        example: {
+          statement: 'Une cellule observée possède un noyau délimité par une enveloppe nucléaire et des mitochondries. À quelle grande catégorie cellulaire appartient-elle ?',
+          calculation: 'La présence d’un noyau et d’organites membranaires est le critère structural caractéristique des cellules eucaryotes.',
+          answer: 'Il s’agit d’une cellule eucaryote. Si l’organisme entier ne comporte qu’une seule cellule, il s’agit d’un eucaryote unicellulaire.'
+        },
+        exercise: {
+          question: 'Pourquoi le terme « protistes » ne désigne-t-il pas un groupe évolutif parfaitement homogène ?',
+          answer: 'Parce qu’il rassemble par commodité des lignées eucaryotes diverses qui ne forment pas nécessairement un groupe comprenant un ancêtre commun exclusif et tous ses descendants.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les 3 domaines du vivant dans la classification en trois domaines ?',
+            answer: 'Bacteria, Archaea et Eukarya.'
+          },
+          {
+            question: 'Une bactérie possède-t-elle un noyau membranaire ?',
+            answer: 'Non. Son ADN est localisé dans une région du cytoplasme appelée nucléoïde.'
+          },
+          {
+            question: 'Une levure est-elle procaryote ou eucaryote ?',
+            answer: 'Eucaryote : une levure possède notamment un noyau et des organites cellulaires.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Biology 2e — 1.2 Themes and Concepts of Biology', url: 'https://openstax.org/books/biology-2e/pages/1-2-themes-and-concepts-of-biology' },
+          { title: 'OpenStax Biology 2e — 22.1 Prokaryotic Diversity', url: 'https://openstax.org/books/biology-2e/pages/22-1-prokaryotic-diversity' },
+          { title: 'OpenStax Biology 2e — 23.1 Eukaryotic Origins', url: 'https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins' },
+          { title: 'OpenStax Biology 2e — 23.2 Characteristics of Protists', url: 'https://openstax.org/books/biology-2e/pages/23-2-characteristics-of-protists' }
+        ]
+      }
+    },
+    {
+      id: 'structure-des-cellules-procaryotes',
+      title: 'Structure et organisation des cellules procaryotes',
+      field: 'Microbiologie · Cytologie bactérienne et archéenne',
+      summary: 'Étudier les constituants communs des cellules procaryotes, leurs enveloppes, leur matériel génétique, leurs appendices et les différences fondamentales entre bactéries et archées.',
+      lesson: {
+        sections: [
+          'Les cellules procaryotes possèdent une membrane plasmique qui délimite le cytoplasme. Elles contiennent de l’eau, des ions, des métabolites, des ribosomes et leur matériel génétique. Les ribosomes assurent la synthèse des protéines à partir de l’information portée par les ARN messagers. Le chromosome est généralement constitué d’une molécule d’ADN circulaire, mais cette organisation connaît des exceptions. L’ADN est regroupé dans le nucléoïde, qui n’est pas entouré d’une membrane. De nombreuses espèces possèdent aussi des plasmides, petites molécules d’ADN extrachromosomique pouvant porter des gènes supplémentaires.',
+          'La paroi cellulaire contribue à la forme et à la résistance mécanique de nombreuses cellules procaryotes. Chez les bactéries, elle contient généralement du peptidoglycane, un réseau moléculaire constitué de sucres et de courts peptides. La coloration de Gram distingue notamment des bactéries à épaisse couche de peptidoglycane, dites Gram positives, et des bactéries à enveloppe plus complexe avec une membrane externe, dites Gram négatives. Cette distinction est utile en microbiologie, mais elle ne permet pas à elle seule d’identifier une espèce ni de prédire toutes ses propriétés.',
+          'Les archées possèdent une membrane dont les lipides présentent des liaisons chimiques et des chaînes hydrocarbonées différentes de celles des bactéries et des eucaryotes. Leur paroi ne contient pas le peptidoglycane bactérien classique. Certaines archées possèdent une couche de protéines ou d’autres polymères. Ces différences moléculaires sont importantes pour la classification et pour comprendre l’adaptation des cellules à leurs milieux, mais toutes les archées ne vivent pas dans des conditions extrêmes.',
+          'Certaines cellules procaryotes portent une capsule ou une couche externe favorisant notamment l’adhérence et la protection contre la dessiccation. Des flagelles assurent le déplacement chez certaines espèces ; les pili et autres structures filamenteuses peuvent participer à l’adhérence ou aux échanges génétiques. Ces éléments ne sont pas présents chez tous les procaryotes. Leur taille est généralement de l’ordre du micromètre, mais les dimensions varient fortement selon les groupes et les conditions de croissance. Une petite taille facilite souvent les échanges avec le milieu grâce à un rapport surface-volume élevé.'
+        ],
+        example: {
+          statement: 'Une cellule possède une membrane plasmique, une paroi contenant du peptidoglycane, des ribosomes et un ADN situé dans un nucléoïde sans enveloppe nucléaire. Quel type cellulaire cela indique-t-il ?',
+          calculation: 'L’absence de noyau membranaire indique une organisation procaryote. La présence de peptidoglycane dans la paroi est caractéristique des bactéries.',
+          answer: 'Les observations correspondent à une cellule bactérienne. La présence de peptidoglycane permet de la distinguer d’une cellule d’archée.'
+        },
+        exercise: {
+          question: 'Pourquoi ne faut-il pas affirmer que toutes les cellules procaryotes possèdent une capsule, des flagelles et des plasmides ?',
+          answer: 'Ces structures sont variables : elles existent chez certaines espèces ou souches, mais ne constituent pas des caractères universels des procaryotes.'
+        },
+        exercises: [
+          {
+            question: 'Où se trouve généralement le chromosome d’une bactérie ?',
+            answer: 'Dans le nucléoïde, une région du cytoplasme qui n’est pas délimitée par une membrane.'
+          },
+          {
+            question: 'Quel polymère caractérise généralement la paroi bactérienne ?',
+            answer: 'Le peptidoglycane.'
+          },
+          {
+            question: 'Quelle différence moléculaire importante distingue les membranes des archées de celles des bactéries ?',
+            answer: 'Les lipides des archées possèdent notamment des chaînes isoprénoïdes liées au glycérol par des liaisons éther, alors que les bactéries possèdent généralement des acides gras liés par des liaisons ester.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Biology 2e — 4.2 Prokaryotic Cells', url: 'https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells' },
+          { title: 'OpenStax Biology 2e — 22.2 Structure of Prokaryotes: Bacteria and Archaea', url: 'https://openstax.org/books/biology-2e/pages/22-2-structure-of-prokaryotes-bacteria-and-archaea' },
+          { title: 'OpenStax Microbiology — 3.3 Unique Characteristics of Prokaryotic Cells', url: 'https://openstax.org/books/microbiology/pages/3-3-unique-characteristics-of-prokaryotic-cells' }
+        ]
+      }
+    },
+    {
+      id: 'metabolisme-et-nutrition-microbienne',
+      title: 'Métabolisme, nutrition et production d’énergie',
+      field: 'Biochimie · Physiologie microbienne · Écologie métabolique',
+      summary: 'Comprendre comment les microorganismes obtiennent leur énergie, leurs électrons et leur carbone, et comment leurs métabolismes interviennent dans les grands cycles biogéochimiques.',
+      lesson: {
+        sections: [
+          'Le métabolisme regroupe l’ensemble des réactions chimiques qui permettent à une cellule de se maintenir, de croître et de se reproduire. Le catabolisme dégrade des molécules ou transforme des composés afin de libérer de l’énergie et des éléments utilisables. L’anabolisme consomme de l’énergie pour fabriquer les constituants cellulaires. L’ATP joue un rôle central de transfert d’énergie, tandis que des coenzymes comme NADH et NADPH participent aux réactions d’oxydoréduction. Les voies métaboliques et les enzymes impliquées dépendent du patrimoine génétique et des conditions du milieu.',
+          'Les microorganismes présentent une grande diversité de stratégies énergétiques. Les phototrophes utilisent la lumière comme source d’énergie. Les chimiotrophes tirent leur énergie de réactions chimiques. Les lithotrophes utilisent des composés minéraux comme donneurs d’électrons, tandis que les organotrophes utilisent des composés organiques. Les autotrophes construisent leur matière organique à partir du dioxyde de carbone ou d’autres formes de carbone minéral ; les hétérotrophes utilisent du carbone organique. Ces termes décrivent des dimensions différentes du métabolisme et peuvent être combinés pour caractériser une stratégie nutritionnelle.',
+          'La respiration cellulaire repose sur une chaîne de transport d’électrons et sur la conservation d’énergie sous forme d’un gradient électrochimique, utilisé notamment pour produire de l’ATP. Dans la respiration aérobie, l’oxygène est l’accepteur final d’électrons. Dans certaines respirations anaérobies, d’autres accepteurs sont utilisés, par exemple le nitrate ou le sulfate. La fermentation, au contraire, ne repose pas sur une chaîne respiratoire avec accepteur final externe : elle permet notamment de réoxyder les coenzymes réduits et produit généralement moins d’ATP par molécule de substrat que la respiration aérobie.',
+          'Les microorganismes jouent un rôle majeur dans les cycles du carbone, de l’azote et du soufre. Des bactéries et des archées décomposent la matière organique, transforment des composés azotés, oxydent ou réduisent des composés soufrés et participent à la fixation du carbone. Les cyanobactéries réalisent une photosynthèse oxygénique et ont contribué à l’augmentation de l’oxygène dans l’environnement terrestre au cours de l’histoire géologique. Ces fonctions sont réparties entre de nombreuses lignées : il serait incorrect d’attribuer un même métabolisme à tous les organismes d’un domaine.'
+        ],
+        example: {
+          statement: 'Un microorganisme utilise la lumière comme source d’énergie et le dioxyde de carbone comme source principale de carbone. Comment qualifie-t-on sa stratégie nutritionnelle ?',
+          calculation: 'La lumière correspond à une source d’énergie phototrophe. Le CO2 comme source de carbone correspond à une nutrition autotrophe.',
+          answer: 'Il s’agit d’un organisme photoautotrophe. Cette description ne précise pas à elle seule son donneur d’électrons ni l’ensemble de ses voies métaboliques.'
+        },
+        exercise: {
+          question: 'Pourquoi respiration anaérobie et fermentation ne sont-elles pas des expressions synonymes ?',
+          answer: 'La respiration anaérobie utilise une chaîne de transport d’électrons avec un accepteur final autre que l’oxygène, tandis que la fermentation ne repose pas sur une telle chaîne respiratoire.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la source d’énergie d’un phototrophe ?',
+            answer: 'La lumière.'
+          },
+          {
+            question: 'Quelle différence distingue un autotrophe d’un hétérotrophe concernant le carbone ?',
+            answer: 'Un autotrophe utilise une source de carbone minéral, généralement le CO2, tandis qu’un hétérotrophe utilise du carbone organique.'
+          },
+          {
+            question: 'Quel est le rôle écologique des microorganismes dans les cycles biogéochimiques ?',
+            answer: 'Ils transforment et recyclent des éléments comme le carbone, l’azote et le soufre, rendant possibles de nombreuses étapes des cycles de la matière.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Biology 2e — 22.3 Prokaryotic Metabolism', url: 'https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism' },
+          { title: 'OpenStax Microbiology — 8.1 Energy, Matter, and Enzymes', url: 'https://openstax.org/books/microbiology/pages/8-1-energy-matter-and-enzymes' },
+          { title: 'OpenStax Microbiology — 8.2 Catabolism of Carbohydrates', url: 'https://openstax.org/books/microbiology/pages/8-2-catabolism-of-carbohydrates' },
+          { title: 'OpenStax Biology 2e — 22.1 Prokaryotic Diversity', url: 'https://openstax.org/books/biology-2e/pages/22-1-prokaryotic-diversity' }
+        ]
+      }
+    },
+    {
+      id: 'croissance-reproduction-et-echanges-genetiques',
+      title: 'Croissance, reproduction et échanges génétiques',
+      field: 'Microbiologie · Génétique moléculaire · Dynamique des populations',
+      summary: 'Étudier la division cellulaire, la croissance des populations microbiennes, les phases de croissance en culture et les mécanismes de variation génétique chez les procaryotes.',
+      lesson: {
+        sections: [
+          'Chez de nombreuses bactéries, la multiplication s’effectue par fission binaire. La cellule réplique son ADN, sépare les copies du chromosome, augmente sa masse et forme une cloison de division qui aboutit à deux cellules filles. Ce processus n’est pas une mitose : les procaryotes ne possèdent pas de noyau et ne réalisent pas la séquence de division nucléaire caractéristique des eucaryotes. Dans des conditions favorables, certaines populations peuvent augmenter rapidement, mais la vitesse dépend de l’espèce, de la température, du pH, des nutriments et d’autres paramètres.',
+          'Dans une culture fermée en laboratoire, la croissance d’une population est souvent décrite par plusieurs phases. La phase de latence correspond à une période d’adaptation au milieu. La phase exponentielle se caractérise par une multiplication à vitesse spécifique relativement constante. La phase stationnaire apparaît lorsque les divisions et les pertes de viabilité s’équilibrent approximativement, souvent en raison de la limitation des ressources ou de l’accumulation de produits. Une phase de déclin peut suivre. Ce modèle est utile pour interpréter une culture, mais les populations naturelles sont soumises à des conditions beaucoup plus hétérogènes.',
+          'La fission binaire produit généralement des cellules filles très proches génétiquement de la cellule parentale, mais les mutations peuvent créer de nouvelles variantes. Les procaryotes peuvent aussi acquérir des gènes par transfert horizontal. La transformation correspond à l’entrée d’ADN libre présent dans l’environnement ; la transduction implique le transfert d’ADN par un virus infectant les bactéries ; la conjugaison correspond à un transfert d’ADN associé à un contact entre cellules. Ces mécanismes ne sont pas identiques à la reproduction et ne signifient pas que chaque cellule les réalise systématiquement.',
+          'Les mutations et les transferts génétiques contribuent à la diversité des populations microbiennes. La sélection naturelle modifie la fréquence des variantes selon leurs effets dans un environnement donné. Un gène conférant un avantage dans certaines conditions peut être favorisé, mais son effet dépend du contexte et peut avoir un coût dans d’autres situations. L’évolution de la résistance aux antimicrobiens constitue un exemple important de sélection et de circulation de déterminants génétiques. La résistance ne se développe pas parce qu’une cellule décide de s’adapter : les variations apparaissent et se propagent selon des mécanismes biologiques.'
+        ],
+        example: {
+          statement: 'Une population bactérienne double à chaque génération dans des conditions idéales. Elle contient initialement 100 cellules. Combien de cellules théoriques obtient-on après 3 générations ?',
+          calculation: 'Après chaque génération, l’effectif est multiplié par 2 : 100 × 2 × 2 × 2 = 800.',
+          answer: 'L’effectif théorique est de 800 cellules après 3 générations, si toutes les cellules se divisent et si aucune cellule ne meurt.'
+        },
+        exercise: {
+          question: 'Quelle différence existe-t-il entre la fission binaire et le transfert horizontal de gènes ?',
+          answer: 'La fission binaire produit deux cellules filles à partir d’une cellule parentale. Le transfert horizontal fait passer de l’ADN entre cellules sans constituer en lui-même une division cellulaire.'
+        },
+        exercises: [
+          {
+            question: 'Comment s’appelle le mode de division fréquent chez les bactéries ?',
+            answer: 'La fission binaire, aussi appelée division binaire.'
+          },
+          {
+            question: 'Quel mécanisme correspond à l’absorption d’ADN libre dans le milieu ?',
+            answer: 'La transformation.'
+          },
+          {
+            question: 'Quel mécanisme de transfert génétique fait intervenir un bactériophage ?',
+            answer: 'La transduction.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Biology 2e — 10.5 Prokaryotic Cell Division', url: 'https://openstax.org/books/biology-2e/pages/10-5-prokaryotic-cell-division' },
+          { title: 'OpenStax Biology 2e — 22.2 Structure of Prokaryotes: Bacteria and Archaea', url: 'https://openstax.org/books/biology-2e/pages/22-2-structure-of-prokaryotes-bacteria-and-archaea' },
+          { title: 'OpenStax Microbiology — 9.1 How Microbes Grow', url: 'https://openstax.org/books/microbiology/pages/9-1-how-microbes-grow' },
+          { title: 'OpenStax Microbiology — 11.6 How Asexual Prokaryotes Achieve Genetic Diversity', url: 'https://openstax.org/books/microbiology/pages/11-6-how-asexual-prokaryotes-achieve-genetic-diversity' }
+        ]
+      }
+    },
+    {
+      id: 'eucaryotes-unicellulaires-protistes-et-levures',
+      title: 'Eucaryotes unicellulaires : protistes, algues microscopiques et levures',
+      field: 'Biologie eucaryote · Protistologie · Mycologie',
+      summary: 'Découvrir la diversité des eucaryotes unicellulaires, leurs organites, leurs modes de nutrition, leurs déplacements et leurs stratégies de reproduction.',
+      lesson: {
+        sections: [
+          'Les eucaryotes unicellulaires possèdent un noyau qui contient la majeure partie de leur ADN, ainsi que des organites spécialisés. Les mitochondries participent à la production d’ATP par respiration chez de nombreux eucaryotes. Certains groupes photosynthétiques possèdent des chloroplastes, où se déroule la photosynthèse. Le réticulum endoplasmique, l’appareil de Golgi, les vacuoles et le cytosquelette contribuent à la synthèse, au transport, au stockage et à l’organisation des constituants cellulaires. L’organisation et l’abondance de ces structures varient selon les lignées.',
+          'Les protistes forment un ensemble très diversifié d’eucaryotes, souvent unicellulaires, qui vivent dans les eaux douces, les océans, les sols humides ou au sein d’autres organismes. Les amibes se déplacent et capturent des particules grâce à des pseudopodes. Les ciliés, comme les paramécies, possèdent des cils impliqués dans le déplacement et l’alimentation. D’autres protistes utilisent des flagelles. Ces exemples illustrent des stratégies fonctionnelles ; ils ne constituent pas une classification exhaustive et les caractères ne sont pas partagés par tous les protistes.',
+          'Les algues microscopiques photosynthétiques comprennent plusieurs lignées eucaryotes distinctes. Elles convertissent l’énergie lumineuse en énergie chimique et fixent du carbone minéral, contribuant à la production primaire des milieux aquatiques. Certaines espèces sont unicellulaires et libres, d’autres vivent en colonies ou font partie d’organisations pluricellulaires. Le terme « algue » est donc descriptif et écologique plutôt qu’un nom désignant un seul groupe évolutif naturel. Les cyanobactéries, malgré leur photosynthèse, sont des bactéries procaryotes et non des algues eucaryotes.',
+          'Les levures sont des champignons unicellulaires. Elles possèdent un noyau, des mitochondries et une paroi contenant notamment de la chitine et des glucanes. Saccharomyces cerevisiae est utilisée dans plusieurs fermentations alimentaires. De nombreuses levures se multiplient par bourgeonnement : une cellule fille apparaît sous forme de bourgeon, reçoit une copie du matériel génétique après division nucléaire, puis peut se séparer. Certaines levures se multiplient aussi par fission. Le terme levure décrit une forme de croissance unicellulaire et non un groupe taxonomique unique.'
+        ],
+        example: {
+          statement: 'Un microorganisme possède un noyau, des mitochondries et se déplace à l’aide de nombreux cils courts. À quel type d’organisme cet ensemble de caractères fait-il penser ?',
+          calculation: 'Le noyau et les mitochondries indiquent une cellule eucaryote. Les cils sont des structures de déplacement présentes chez certains protistes, notamment les ciliés.',
+          answer: 'Il peut s’agir d’un protiste cilié. L’identification précise d’une espèce nécessiterait d’autres observations morphologiques ou moléculaires.'
+        },
+        exercise: {
+          question: 'Pourquoi les cyanobactéries ne doivent-elles pas être classées parmi les algues eucaryotes ?',
+          answer: 'Les cyanobactéries sont des bactéries procaryotes : elles ne possèdent ni noyau ni chloroplastes. Leur photosynthèse oxygénique ne les transforme pas en eucaryotes.'
+        },
+        exercises: [
+          {
+            question: 'Quel organite contient la majeure partie de l’ADN nucléaire d’un eucaryote ?',
+            answer: 'Le noyau.'
+          },
+          {
+            question: 'Quel type de structure permet à une paramécie de se déplacer ?',
+            answer: 'Les cils.'
+          },
+          {
+            question: 'Comment se nomme le mode de multiplication asexuée fréquent chez Saccharomyces cerevisiae ?',
+            answer: 'Le bourgeonnement.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Biology 2e — 23.2 Characteristics of Protists', url: 'https://openstax.org/books/biology-2e/pages/23-2-characteristics-of-protists' },
+          { title: 'OpenStax Biology 2e — 24.1 Characteristics of Fungi', url: 'https://openstax.org/books/biology-2e/pages/24-1-characteristics-of-fungi' },
+          { title: 'OpenStax Microbiology — 5.3 Fungi', url: 'https://openstax.org/books/microbiology/pages/5-3-fungi' },
+          { title: 'OpenStax Biology 2e — 23.1 Eukaryotic Origins', url: 'https://openstax.org/books/biology-2e/pages/23-1-eukaryotic-origins' }
+        ]
+      }
+    },
+    {
+      id: 'roles-ecologiques-et-applications-des-microorganismes',
+      title: 'Rôles écologiques, interactions et applications des organismes unicellulaires',
+      field: 'Écologie microbienne · Santé · Biotechnologies',
+      summary: 'Analyser les fonctions écologiques des microorganismes, leurs relations avec les autres êtres vivants et leurs applications dans l’alimentation, l’environnement et la recherche.',
+      lesson: {
+        sections: [
+          'Les organismes unicellulaires occupent presque tous les milieux où de l’eau et des conditions compatibles avec leur métabolisme sont disponibles : océans, lacs, sols, sédiments, atmosphère sous forme de particules transportées, sources hydrothermales et organismes vivants. Les communautés microbiennes participent à la décomposition de la matière organique et au recyclage des éléments. Certaines espèces sont productrices primaires, d’autres consomment des composés organiques, et d’autres encore réalisent des transformations chimiques spécialisées. Leur activité influence le fonctionnement des écosystèmes à toutes les échelles.',
+          'Les microorganismes peuvent entretenir des relations variées avec les autres organismes. Une relation mutualiste procure un bénéfice aux partenaires ; une relation commensale bénéficie à l’un sans effet notable démontré sur l’autre ; une relation parasitaire bénéficie au parasite aux dépens de son hôte. Ces catégories décrivent des interactions dans un contexte donné et peuvent évoluer selon les conditions. Le microbiote d’un organisme comprend des communautés de microorganismes associées à celui-ci ; leur composition varie selon l’hôte, l’âge, l’alimentation, l’environnement et d’autres facteurs.',
+          'De nombreuses bactéries et communautés microbiennes s’organisent en biofilms, c’est-à-dire des communautés attachées à une surface ou à une interface et incluses dans une matrice extracellulaire qu’elles produisent. Cette organisation modifie les échanges, la disponibilité des nutriments et les interactions entre cellules. Les biofilms se rencontrent dans les milieux naturels, les réseaux d’eau, les sols et sur des surfaces biologiques ou industrielles. Ils peuvent être utiles dans certains procédés de traitement de l’eau, mais aussi contribuer à des problèmes d’hygiène ou à des infections associées à des dispositifs médicaux.',
+          'Les applications des microorganismes sont nombreuses. Les levures interviennent dans la fabrication du pain et de certains produits fermentés ; des bactéries sont utilisées dans la production de yaourts et de fromages. Des microorganismes sont employés dans le traitement biologique des eaux usées et dans certaines opérations de dépollution, lorsque les contaminants peuvent être transformés par des voies métaboliques adaptées. En biotechnologie, des cellules microbiennes servent à produire des enzymes, des molécules d’intérêt et des protéines recombinantes. Une application doit toujours être associée à une espèce ou une souche caractérisée : les propriétés d’un microorganisme ne peuvent pas être généralisées à tous les membres de son groupe.',
+          'Les microorganismes comprennent aussi des agents pathogènes, mais la majorité des espèces microbiennes connues ne provoquent pas de maladie humaine. Une infection dépend de facteurs liés au microorganisme, à l’hôte et à l’environnement. Les bactéries, les archées, les protistes et les champignons microscopiques n’ont pas les mêmes caractéristiques biologiques ni les mêmes sensibilités aux traitements. Les antibiotiques ciblent des structures ou fonctions bactériennes et ne sont pas efficaces contre les virus ; ils ne doivent être utilisés que dans un cadre médical approprié. Les virus sont des agents infectieux acellulaires qui dépendent d’une cellule hôte pour se multiplier et ne sont donc pas des organismes unicellulaires.'
+        ],
+        example: {
+          statement: 'Une communauté de bactéries se fixe sur une surface immergée et produit une matrice extracellulaire qui maintient les cellules ensemble. Comment nomme-t-on cette organisation ?',
+          calculation: 'Une communauté microbienne attachée à une surface et associée à une matrice extracellulaire correspond à la définition d’un biofilm.',
+          answer: 'Cette organisation est un biofilm. Sa composition et ses propriétés dépendent des espèces présentes et des conditions environnementales.'
+        },
+        exercise: {
+          question: 'Pourquoi est-il incorrect d’affirmer que tous les microorganismes sont dangereux pour la santé humaine ?',
+          answer: 'Les microorganismes présentent des rôles et des interactions très variés. Beaucoup sont non pathogènes ou remplissent des fonctions écologiques et physiologiques importantes ; seules certaines espèces ou souches peuvent provoquer des maladies dans des circonstances données.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le rôle général des microorganismes décomposeurs ?',
+            answer: 'Ils dégradent la matière organique et contribuent au recyclage des éléments nutritifs dans les écosystèmes.'
+          },
+          {
+            question: 'Qu’est-ce qu’un biofilm ?',
+            answer: 'Une communauté de microorganismes attachée à une surface ou à une interface et incluse dans une matrice extracellulaire.'
+          },
+          {
+            question: 'Les antibiotiques sont-ils des traitements contre les virus ?',
+            answer: 'Non. Les antibiotiques ciblent des fonctions ou structures bactériennes et ne traitent pas les infections virales.'
+          }
+        ],
+        sources: [
+          { title: 'OpenStax Biology 2e — 22.5 Beneficial Prokaryotes', url: 'https://openstax.org/books/biology-2e/pages/22-5-beneficial-prokaryotes' },
+          { title: 'OpenStax Biology 2e — 22.3 Prokaryotic Metabolism', url: 'https://openstax.org/books/biology-2e/pages/22-3-prokaryotic-metabolism' },
+          { title: 'OpenStax Biology 2e — 24.3 Ecology of Fungi', url: 'https://openstax.org/books/biology-2e/pages/24-3-ecology-of-fungi' },
+          { title: 'OpenStax Microbiology — 9.1 How Microbes Grow', url: 'https://openstax.org/books/microbiology/pages/9-1-how-microbes-grow' },
+          { title: 'OpenStax Microbiology — 5.3 Fungi', url: 'https://openstax.org/books/microbiology/pages/5-3-fungi' }
+        ]
+      }
+    }
+  ]
+},
 ]
 
