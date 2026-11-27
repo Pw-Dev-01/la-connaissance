@@ -6801,7 +6801,326 @@ window.courseCatalog = [
   ]
 },
 
-
+{
+  id: 'alpes',
+  title: 'Les Alpes',
+  note: 'Six chapitres approfondis sur la localisation et les reliefs alpins, la formation géologique de la chaîne, les climats et la biodiversité, les glaciers et les ressources en eau, les populations et les activités agricoles, puis l’économie, le tourisme et les risques environnementaux. Les données chiffrées sont des ordres de grandeur ou des observations datées, car les Alpes constituent un espace transnational dont les caractéristiques varient selon les régions.',
+  chapters: [
+    {
+      id: 'localisation-reliefs-alpins',
+      title: 'Localisation géographique et grands ensembles du relief alpin',
+      field: 'Géographie physique · Europe centrale et méridionale · Géomorphologie',
+      summary: 'Situer les Alpes en Europe, identifier les pays concernés et comprendre l’organisation des grands ensembles montagneux.',
+      lesson: {
+        sections: [
+          'Les Alpes constituent le principal ensemble montagneux d’Europe centrale et méridionale. Elles forment un arc qui s’étend approximativement de la région de Nice et de Monaco, à l’ouest, jusqu’aux environs du bassin de Vienne, à l’est. Leur longueur est généralement estimée à environ 1 200 km, pour une largeur très variable pouvant atteindre plusieurs centaines de kilomètres. Selon le périmètre géographique retenu, leur superficie est de l’ordre de 200 000 km². La chaîne traverse 8 États : la France, l’Italie, la Suisse, l’Allemagne, l’Autriche, la Slovénie, le Liechtenstein et Monaco. La Convention alpine constitue un cadre international de coopération entre ces territoires pour protéger leur environnement et favoriser leur développement durable.',
+          'Le relief alpin est caractérisé par une succession de massifs, de vallées profondes, de cols, de plateaux et de sommets élevés. Les Alpes occidentales comprennent notamment les massifs du Mont-Blanc, des Écrins, de la Vanoise et du Grand-Paradis. Les Alpes centrales regroupent notamment les massifs suisses et les reliefs du Valais, tandis que les Alpes orientales s’étendent vers l’Autriche et la Slovénie. Ces subdivisions peuvent varier selon les classifications géographiques. Le Mont-Blanc, situé dans le massif du même nom, constitue le point culminant des Alpes avec une altitude voisine de 4 800 m. Son sommet étant recouvert de neige et de glace, son altitude mesurée peut varier d’une campagne topographique à l’autre.',
+          'La chaîne alpine joue un rôle majeur dans l’organisation géographique de l’Europe. Elle sépare plusieurs grands ensembles de plaines et de bassins, notamment la plaine du Pô au sud et les régions de l’Europe centrale au nord. Les vallées longitudinales et transversales facilitent les communications entre les régions alpines et les territoires voisins. Des passages comme le col du Brenner, le col du Simplon et le col du Saint-Gothard ont historiquement favorisé les échanges commerciaux et les déplacements. La topographie impose cependant des contraintes importantes : les pentes fortes, les dénivelés, les risques naturels et les conditions météorologiques compliquent la construction des infrastructures et l’aménagement des espaces habités.'
+        ],
+        example: {
+          statement: 'L’arc alpin mesure approximativement 1 200 km de longueur. Si l’on divise cette longueur par les 8 États alpins, quelle longueur moyenne théorique obtient-on par État ?',
+          calculation: '1 200 km / 8 = 150 km.',
+          answer: 'La moyenne arithmétique est de 150 km par État. Il s’agit uniquement d’une division théorique : les longueurs réellement traversées par les Alpes sont très différentes selon les pays.'
+        },
+        exercise: {
+          question: 'Pourquoi les vallées alpines jouent-elles un rôle essentiel dans l’organisation du territoire européen ?',
+          answer: 'Elles constituent des axes naturels de circulation entre les régions montagneuses et les grandes plaines européennes. Elles concentrent également des populations, des activités économiques et des infrastructures de transport.'
+        },
+        exercises: [
+          {
+            question: 'Combien d’États sont concernés par l’espace alpin défini par la Convention alpine ?',
+            answer: '8 États : France, Italie, Suisse, Allemagne, Autriche, Slovénie, Liechtenstein et Monaco.'
+          },
+          {
+            question: 'Quel est le point culminant des Alpes ?',
+            answer: 'Le Mont-Blanc, dont l’altitude est voisine de 4 800 m et varie selon les mesures du sommet neigeux.'
+          },
+          {
+            question: 'Quelle grande plaine se trouve au sud des Alpes ?',
+            answer: 'La plaine du Pô, principalement située dans le nord de l’Italie.'
+          }
+        ],
+        sources: [
+          {
+            title: 'ANCT — Présentation du territoire du massif alpin',
+            url: 'https://anct.gouv.fr/sites/default/files/2022-12/plaquette_presentation_massif_des_alpes_vsept2022.pdf'
+          },
+          {
+            title: 'Convention alpine — Population et culture',
+            url: 'https://www.alpconv.org/fr/page-daccueil/themes/population-et-culture/'
+          },
+          {
+            title: 'Confédération suisse — The Alps',
+            url: 'https://www.aboutswitzerland.eda.admin.ch/en/the-alps'
+          }
+        ]
+      }
+    },
+    {
+      id: 'formation-geologique-alpes',
+      title: 'Formation géologique et évolution tectonique des Alpes',
+      field: 'Géologie · Tectonique des plaques · Orogenèse alpine',
+      summary: 'Comprendre la formation des Alpes à partir de la fermeture de l’océan Téthys, de la subduction, de la collision continentale et des processus d’érosion.',
+      lesson: {
+        sections: [
+          'La formation des Alpes résulte d’une histoire tectonique complexe qui s’étend sur plusieurs dizaines de millions d’années. Au Mésozoïque, un domaine océanique appartenant à la Téthys alpine séparait différentes marges continentales européennes et adriatiques. Les mouvements des plaques ont progressivement entraîné la fermeture de cet ancien domaine océanique. La lithosphère océanique s’est enfoncée sous une autre plaque par un mécanisme appelé subduction. Cette étape a provoqué une déformation importante des roches et a précédé la collision entre les domaines continentaux européen et adriatique. Les recherches géologiques situent les principales étapes de cette évolution entre le Crétacé et le Cénozoïque, sans qu’il soit possible de réduire toute la formation de la chaîne à une seule date.',
+          'La collision continentale a entraîné un raccourcissement horizontal et un épaississement de la croûte terrestre. Les couches rocheuses ont été plissées, fracturées et déplacées sur de grandes distances. Des ensembles de roches ont été empilés les uns sur les autres le long de grandes failles de chevauchement. Ces structures sont appelées nappes de charriage. Elles expliquent la superposition de terrains géologiques qui peuvent provenir de domaines géographiques très différents. Certaines roches ont également subi un métamorphisme sous l’effet de pressions et de températures élevées lors de leur enfouissement. La diversité des roches alpines permet ainsi de reconstituer les anciennes zones océaniques, les marges continentales et les étapes successives de la collision.',
+          'Les Alpes continuent d’évoluer sous l’action combinée des mouvements tectoniques, de l’érosion et des processus de surface. Les rivières, les glaciers, le gel et le dégel fragmentent progressivement les roches et transportent les matériaux vers les bassins périphériques. Les sédiments issus de l’érosion se sont notamment accumulés dans le bassin de la Molasse, au nord, et dans les bassins situés au sud de la chaîne. Les mesures géodésiques montrent que certains secteurs alpins connaissent encore un soulèvement vertical, mais celui-ci ne doit pas être interprété comme une élévation uniforme de toute la chaîne. Les mouvements tectoniques, le rebond isostatique et l’érosion interagissent pour modifier continuellement le relief.'
+        ],
+        example: {
+          statement: 'La formation des Alpes comprend une phase de fermeture océanique suivie d’une collision continentale. Pourquoi ces deux étapes sont-elles importantes dans la construction d’une chaîne de montagnes ?',
+          calculation: 'Fermeture océanique par subduction → rapprochement des domaines continentaux → collision → raccourcissement et épaississement de la croûte → surrection et déformation des reliefs.',
+          answer: 'La fermeture océanique prépare le rapprochement des continents. Leur collision provoque ensuite une forte déformation et un épaississement de la croûte, contribuant à la formation de la chaîne alpine.'
+        },
+        exercise: {
+          question: 'Quel rôle la subduction de l’ancienne lithosphère océanique a-t-elle joué dans la formation des Alpes ?',
+          answer: 'Elle a permis la fermeture progressive de l’ancien domaine océanique de la Téthys alpine et a précédé la collision des marges continentales européenne et adriatique.'
+        },
+        exercises: [
+          {
+            question: 'Quel ancien domaine océanique est associé à la formation des Alpes ?',
+            answer: 'La Téthys alpine.'
+          },
+          {
+            question: 'Comment appelle-t-on les grands ensembles rocheux déplacés et empilés lors de la formation des chaînes de montagnes ?',
+            answer: 'Les nappes de charriage.'
+          },
+          {
+            question: 'Quels sont les 2 grands processus qui modifient encore les reliefs alpins ?',
+            answer: 'Les processus tectoniques et les processus d’érosion, auxquels s’ajoutent les phénomènes glaciaires, fluviaux et périglaciaires.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Dal Piaz, Bistacchi et Massironi — Geological Outline of the Alps, Episodes',
+            url: 'https://doi.org/10.18814/epiiugs/2003/v26i3/004'
+          },
+          {
+            title: 'Swiss Seismological Service — Causes of Earthquakes in Switzerland',
+            url: 'https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/'
+          },
+          {
+            title: 'Geochemistry, Geophysics, Geosystems — The Deep Structure of the Alps Based on the CIFALPS Seismic Experiment',
+            url: 'https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020GC009466'
+          }
+        ]
+      }
+    },
+    {
+      id: 'climats-biodiversite-alpine',
+      title: 'Climats, étagement altitudinal et biodiversité alpine',
+      field: 'Climatologie · Biogéographie · Écologie des montagnes',
+      summary: 'Étudier les contrastes climatiques des Alpes, les étages de végétation et les adaptations des espèces aux conditions montagnardes.',
+      lesson: {
+        sections: [
+          'Le climat alpin présente une grande diversité liée à la latitude, à l’altitude, à l’exposition des versants et à la circulation atmosphérique. Les Alpes occidentales sont influencées par les circulations méditerranéennes et atlantiques, tandis que les secteurs orientaux présentent des caractéristiques climatiques différentes. Les versants exposés aux masses d’air humides reçoivent généralement davantage de précipitations que les versants situés sous le vent des reliefs. Les températures diminuent globalement avec l’altitude, mais cette diminution varie selon les conditions atmosphériques. Les vallées peuvent également présenter des inversions thermiques : pendant certaines situations anticycloniques hivernales, l’air froid reste piégé dans les fonds de vallée tandis que les versants sont plus doux.',
+          'La végétation alpine est organisée selon un étagement altitudinal qui dépend également de la latitude et de l’exposition. Dans les secteurs les plus bas, les forêts de feuillus et les formations agricoles occupent une place importante. Plus haut, les forêts de conifères, notamment celles dominées par l’épicéa, le sapin ou le mélèze selon les régions, deviennent caractéristiques. Au-dessus de la limite forestière, les prairies subalpines et alpines accueillent des espèces adaptées au froid, au vent et à une saison de croissance courte. Les milieux les plus élevés comprennent des éboulis, des rochers et des habitats de haute montagne. Cette succession ne correspond pas à des altitudes fixes : elle varie en fonction du climat régional, des sols et des activités humaines.',
+          'La biodiversité alpine comprend une grande variété de plantes, d’insectes, d’oiseaux et de mammifères. Des espèces comme le bouquetin des Alpes, le chamois, la marmotte alpine et l’aigle royal sont associées à différents habitats montagnards. Les milieux alpins fournissent également des services écologiques essentiels : stockage de l’eau, régulation de certains risques naturels, protection des sols et maintien de la diversité génétique. Toutefois, la fragmentation des habitats par les infrastructures, l’urbanisation, les équipements touristiques et le changement climatique fragilise certaines populations. Le réchauffement modifie la répartition des espèces et peut pousser certaines plantes et certains animaux à se déplacer vers des altitudes plus élevées, où les surfaces disponibles sont souvent plus réduites.'
+        ],
+        example: {
+          statement: 'Une espèce végétale adaptée au froid est observée à 1 800 m dans un massif et à 2 200 m dans un autre. Pourquoi cette différence de répartition est-elle possible ?',
+          calculation: 'L’altitude de présence dépend notamment de la température, de l’exposition, des précipitations, du vent et des caractéristiques du sol. Une même espèce peut donc occuper des altitudes différentes selon les conditions locales.',
+          answer: 'Les étages écologiques ne sont pas des bandes rigides. Leur position varie avec les conditions climatiques et topographiques propres à chaque massif.'
+        },
+        exercise: {
+          question: 'Pourquoi le réchauffement climatique peut-il menacer les espèces vivant dans les étages alpins les plus élevés ?',
+          answer: 'Parce que leur habitat peut se réduire lorsque les conditions climatiques favorables se déplacent vers des altitudes supérieures. Les espèces déjà proches des sommets disposent de moins d’espaces pour se déplacer.'
+        },
+        exercises: [
+          {
+            question: 'Quel phénomène explique la diminution générale de la température avec l’altitude ?',
+            answer: 'Le gradient thermique vertical de l’atmosphère.'
+          },
+          {
+            question: 'Comment appelle-t-on les prairies situées au-dessus de la limite supérieure des forêts ?',
+            answer: 'Les prairies alpines.'
+          },
+          {
+            question: 'Cite 2 mammifères caractéristiques des milieux alpins.',
+            answer: 'Le bouquetin des Alpes et le chamois. La marmotte alpine est également caractéristique de nombreux secteurs.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Convention alpine — Biodiversity and Nature Conservation',
+            url: 'https://www.alpconv.org/en/home/topics/biodiversity-nature-conservation/'
+          },
+          {
+            title: 'Convention alpine — Climate Change',
+            url: 'https://www.alpconv.org/en/home/topics/climate-change'
+          },
+          {
+            title: 'GIEC — Climate Change 2022: Cross-Chapter Paper 5, Mountains',
+            url: 'https://www.ipcc.ch/report/ar6/wg2/chapter/ccp5/'
+          },
+          {
+            title: 'Convention alpine — Cross-cutting Biodiversity Issues Report 2024',
+            url: 'https://www.alpconv.org/fileadmin/user_upload/Organisation/TWB/ABB/Cross-cutting_biodiversity_issues_Report_2024.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'eaux-glaciers-alpins',
+      title: 'Glaciers, ressources en eau et grands bassins hydrographiques',
+      field: 'Hydrologie · Glaciologie · Ressources naturelles · Changement climatique',
+      summary: 'Comprendre le rôle des glaciers et des précipitations dans l’alimentation des grands fleuves européens et les conséquences de la fonte glaciaire.',
+      lesson: {
+        sections: [
+          'Les Alpes constituent un immense château d’eau pour une grande partie de l’Europe. Les précipitations sous forme de pluie et de neige alimentent des glaciers, des lacs, des nappes souterraines et de nombreux cours d’eau. Les principaux bassins hydrographiques qui prennent leur source dans les Alpes comprennent notamment ceux du Rhin, du Rhône, du Pô et du Danube. Ces fleuves transportent ensuite l’eau vers des régions densément peuplées et des territoires agricoles et industriels. Les montagnes jouent donc un rôle essentiel dans la disponibilité des ressources hydriques au-delà de leur propre espace géographique. La quantité d’eau disponible varie toutefois selon les saisons, les précipitations et les conditions climatiques.',
+          'Les glaciers alpins stockent une partie des précipitations sous forme de glace pendant de longues périodes. Leur fonte estivale contribue aux débits de certains cours d’eau, particulièrement pendant les périodes chaudes et sèches. Les glaciers ne représentent cependant qu’une composante du système hydrologique alpin : la neige saisonnière, les précipitations liquides, les sols et les nappes souterraines jouent également un rôle important. Le glacier d’Aletsch, en Suisse, constitue l’un des plus grands glaciers des Alpes. Les programmes de surveillance comme GLAMOS mesurent les changements de longueur, de surface, de volume et de bilan de masse des glaciers afin de mieux comprendre leur évolution et leurs conséquences sur les ressources en eau.',
+          'Le réchauffement climatique entraîne une diminution importante de la masse glaciaire alpine. Les mesures scientifiques montrent que cette perte se poursuit dans les différents secteurs de la chaîne, même si son intensité varie selon les années et les massifs. Le bulletin suisse GLAMOS pour l’année hydrologique 2024 indique une perte d’environ 2,3 % du volume de glace restant en Suisse, soit approximativement 1,1 km³. À long terme, la réduction des réserves glaciaires peut diminuer la contribution de la fonte à certains cours d’eau pendant les saisons sèches. Elle modifie également les paysages et peut accroître certains risques liés aux lacs glaciaires, aux pentes déstabilisées et au pergélisol. La gestion de l’eau doit donc tenir compte des évolutions climatiques à l’échelle de l’ensemble des bassins versants.'
+        ],
+        example: {
+          statement: 'Le bulletin GLAMOS 2024 indique une perte d’environ 1,1 km³ de glace dans les glaciers suisses, correspondant à 2,3 % du volume restant. Quelle conséquence générale peut-on en tirer pour le stockage naturel de l’eau ?',
+          calculation: 'La perte de volume correspond à une diminution de la quantité d’eau stockée durablement sous forme de glace. Cette perte ne doit pas être assimilée directement à une baisse identique des débits de tous les cours d’eau.',
+          answer: 'Le stock glaciaire suisse a diminué en 2024. Cette évolution réduit progressivement la réserve de glace disponible pour alimenter certains cours d’eau lors des périodes de fonte.'
+        },
+        exercise: {
+          question: 'Pourquoi les Alpes sont-elles considérées comme un château d’eau européen ?',
+          answer: 'Parce qu’elles stockent et redistribuent de grandes quantités d’eau sous forme de neige, de glace, de lacs et d’eaux souterraines, alimentant plusieurs grands bassins fluviaux européens.'
+        },
+        exercises: [
+          {
+            question: 'Cite 4 grands fleuves dont les bassins prennent leur source dans les Alpes.',
+            answer: 'Le Rhin, le Rhône, le Pô et le Danube.'
+          },
+          {
+            question: 'Quel organisme suisse surveille notamment l’évolution des glaciers alpins ?',
+            answer: 'GLAMOS, le programme de surveillance des glaciers en Suisse.'
+          },
+          {
+            question: 'Pourquoi la disparition progressive des glaciers peut-elle modifier les débits estivaux ?',
+            answer: 'Parce que les glaciers constituent une réserve d’eau qui libère une partie de son volume pendant la fonte estivale. La réduction de cette réserve peut modifier l’alimentation de certains cours d’eau.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Convention alpine — Report on the State of the Alps',
+            url: 'https://www.alpconv.org/en/home/soia/report-on-the-state-of-the-alps/'
+          },
+          {
+            title: 'GLAMOS — Swiss Glacier Bulletin 2024',
+            url: 'https://doi.glamos.ch/pubs/glbulletin/glbulletin_2024.pdf'
+          },
+          {
+            title: 'UNESCO — World Water Development Report 2025, Europe and Central Asia',
+            url: 'https://www.unesco.de/assets/dokumente/UNESCO/01_Publikationen/WWDR_2025_report_EN_WEB.pdf'
+          },
+          {
+            title: 'Swiss Academies of Arts and Sciences — Swiss Glaciers, 2025',
+            url: 'https://scnat.ch/en/uuid/i/2a5c2522-b48b-5b36-baa5-ac5ff4117af1-Swiss_Glaciers'
+          }
+        ]
+      }
+    },
+    {
+      id: 'peuplement-agriculture-alpine',
+      title: 'Peuplement, sociétés alpines et agriculture de montagne',
+      field: 'Géographie humaine · Population · Agriculture · Organisation territoriale',
+      summary: 'Étudier la répartition des populations, les modes d’habitat et les adaptations agricoles aux contraintes des milieux montagnards.',
+      lesson: {
+        sections: [
+          'Les Alpes constituent un espace habité depuis plusieurs millénaires. Les populations se sont progressivement installées dans les vallées, les bassins et certains versants offrant des conditions favorables à l’agriculture et aux échanges. Aujourd’hui, la Convention alpine estime que plus de 14 millions de personnes vivent dans l’espace alpin. Les villes et les villages présentent une répartition inégale : les vallées accessibles et les secteurs proches des grands axes de transport concentrent généralement davantage d’habitants et d’activités. À l’inverse, certaines communes de haute montagne connaissent des difficultés démographiques, notamment liées au vieillissement de la population, à la diminution des emplois traditionnels et aux migrations vers les centres urbains.',
+          'Les sociétés alpines présentent une grande diversité culturelle et linguistique. Les territoires alpins comprennent notamment des populations francophones, germanophones, italophones et slovénophones, mais aussi des communautés parlant des langues régionales comme l’occitan, le francoprovençal, le romanche, le ladin et le frioulan. Cette diversité résulte d’une histoire longue marquée par les échanges commerciaux, les migrations, les frontières politiques et les particularités des vallées. Les activités économiques et les traditions locales se sont adaptées aux contraintes de la montagne. Les villages, les paysages agricoles, les pratiques pastorales et les formes d’architecture témoignent de cette relation ancienne entre les sociétés et leur environnement.',
+          'L’agriculture de montagne joue un rôle important dans le maintien des paysages alpins et des activités rurales. Les surfaces cultivables sont limitées par les pentes, l’altitude, les températures et la disponibilité des sols. L’élevage bovin, la production laitière, la fabrication de fromages et l’exploitation des prairies constituent des activités importantes dans de nombreuses régions. Les pâturages d’altitude sont utilisés de manière saisonnière pendant les périodes où les conditions climatiques permettent la croissance de l’herbe. Cette transhumance contribue à organiser les paysages et les pratiques agricoles. La Convention alpine souligne cependant les difficultés rencontrées par les exploitations, notamment le manque de terres arables, les coûts de production, l’accessibilité des infrastructures et la concurrence économique.'
+        ],
+        example: {
+          statement: 'La Convention alpine indique que plus de 14 millions de personnes vivent dans l’espace alpin. Pourquoi cette population ne se répartit-elle pas uniformément sur l’ensemble de la chaîne ?',
+          calculation: 'Les vallées accessibles concentrent les infrastructures, les emplois et les services, tandis que les secteurs de haute altitude présentent davantage de contraintes topographiques et climatiques.',
+          answer: 'La population se concentre davantage dans les vallées et les zones accessibles. Les pentes, l’altitude et l’éloignement des services limitent l’installation permanente dans certains secteurs.'
+        },
+        exercise: {
+          question: 'Comment l’agriculture de montagne contribue-t-elle à la préservation des paysages alpins ?',
+          answer: 'L’entretien des prairies, des pâturages et des espaces agricoles contribue à maintenir des paysages ouverts, à préserver certaines pratiques traditionnelles et à limiter l’abandon de terres dans plusieurs régions.'
+        },
+        exercises: [
+          {
+            question: 'Combien d’habitants environ vivent dans l’espace alpin selon la Convention alpine ?',
+            answer: 'Plus de 14 millions de personnes.'
+          },
+          {
+            question: 'Pourquoi les vallées concentrent-elles une grande partie des populations alpines ?',
+            answer: 'Parce qu’elles offrent généralement de meilleures conditions d’accès, des espaces plus faciles à aménager et une concentration des emplois, des services et des infrastructures.'
+          },
+          {
+            question: 'Qu’est-ce que la transhumance ?',
+            answer: 'Un déplacement saisonnier des troupeaux entre différents espaces de pâturage, notamment entre les vallées et les pâturages d’altitude.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Convention alpine — Population et culture',
+            url: 'https://www.alpconv.org/fr/page-daccueil/themes/population-et-culture/'
+          },
+          {
+            title: 'Convention alpine — Agriculture de montagne',
+            url: 'https://www.alpconv.org/fr/page-daccueil/themes/agriculture-de-montagne/'
+          },
+          {
+            title: 'Convention alpine — 9th Report on the State of the Alps: Alpine Towns',
+            url: 'https://scnat.ch/en/uuid/i/48083628-5158-5e28-aec0-7179c3e8a9b7-9th_State_of_the_Alps_Report'
+          }
+        ]
+      }
+    },
+    {
+      id: 'economie-tourisme-risques-alpins',
+      title: 'Économie, tourisme, transports et risques environnementaux',
+      field: 'Géographie économique · Tourisme · Transports · Risques naturels · Développement durable',
+      summary: 'Analyser les activités économiques alpines, les infrastructures de transport, le tourisme et les défis liés aux changements environnementaux.',
+      lesson: {
+        sections: [
+          'L’économie alpine repose sur des activités diversifiées qui varient selon les pays, les vallées et les caractéristiques locales. Le tourisme, l’agriculture, l’industrie, les services, la sylviculture et la production hydroélectrique participent au fonctionnement économique de la région. Le tourisme représente une source importante de revenus pour de nombreuses communes, notamment grâce aux stations de sports d’hiver, aux activités estivales, aux paysages et au patrimoine culturel. La Convention alpine indique qu’environ 40 % des communes alpines présentent une activité touristique significative. Cette donnée ne signifie pas que 40 % de la population travaille dans le tourisme, mais qu’une part importante des communes possède une activité touristique notable.',
+          'Les Alpes constituent également un carrefour majeur des transports européens. Plusieurs grands axes routiers et ferroviaires traversent les massifs pour relier les régions du nord et du sud de l’Europe. Les tunnels du Mont-Blanc, du Fréjus et du Saint-Gothard ainsi que les passages du Brenner et du Simplon illustrent l’importance des infrastructures transalpines. Ces aménagements facilitent les échanges de marchandises et les déplacements des voyageurs, mais ils entraînent aussi des pressions environnementales. Le trafic routier peut provoquer des émissions de polluants atmosphériques, du bruit, une fragmentation des habitats et une augmentation de la pression sur les vallées. La Convention alpine encourage donc le développement du transport ferroviaire et des solutions de mobilité moins polluantes.',
+          'Les territoires alpins sont exposés à différents risques naturels : avalanches, glissements de terrain, chutes de blocs, crues torrentielles, séismes et phénomènes liés aux glaciers. Ces aléas résultent de la combinaison des fortes pentes, des précipitations, des variations thermiques, de la géologie et de l’évolution du climat. Le changement climatique modifie notamment les conditions d’enneigement, la stabilité du pergélisol et le fonctionnement des glaciers. Les infrastructures, les habitations et les activités touristiques peuvent être particulièrement vulnérables lorsqu’elles sont implantées dans des zones exposées. La prévention repose sur la cartographie des risques, la surveillance scientifique, les systèmes d’alerte, l’aménagement raisonné du territoire et la sensibilisation des populations.',
+          'L’avenir économique des Alpes dépend de leur capacité à concilier développement et protection des milieux naturels. Le tourisme hivernal est confronté à une diminution de l’enneigement naturel dans certains secteurs de moyenne altitude, ce qui oblige plusieurs territoires à diversifier leurs activités. Le tourisme estival, la randonnée, les activités culturelles et les transports collectifs peuvent contribuer à réduire la dépendance à une seule saison. Les politiques de développement durable doivent également intégrer la gestion de l’eau, la conservation de la biodiversité, la protection des forêts et la réduction des émissions liées aux transports. La Convention alpine constitue un cadre de coopération internationale pour répondre à ces défis qui dépassent les frontières nationales.'
+        ],
+        example: {
+          statement: 'La Convention alpine indique qu’environ 40 % des communes alpines présentent une activité touristique significative. Sur un ensemble théorique de 500 communes, combien cela représenterait-il ?',
+          calculation: '500 × 40 / 100 = 200 communes.',
+          answer: 'Cela représenterait environ 200 communes. Il s’agit d’un exemple mathématique illustratif, et non d’un décompte réel des communes alpines.'
+        },
+        exercise: {
+          question: 'Pourquoi le développement du transport ferroviaire est-il encouragé dans les Alpes ?',
+          answer: 'Parce qu’il peut réduire une partie des nuisances liées au transport routier, notamment les émissions atmosphériques, le bruit et la pression sur les vallées et les milieux naturels.'
+        },
+        exercises: [
+          {
+            question: 'Quel pourcentage approximatif des communes alpines présente une activité touristique significative selon la Convention alpine ?',
+            answer: 'Environ 40 % des communes alpines.'
+          },
+          {
+            question: 'Cite 3 risques naturels présents dans les Alpes.',
+            answer: 'Les avalanches, les glissements de terrain et les crues torrentielles. Les chutes de blocs et certains risques glaciaires sont également présents.'
+          },
+          {
+            question: 'Pourquoi la diversification touristique devient-elle importante dans les Alpes ?',
+            answer: 'Parce que certaines activités hivernales sont fragilisées par la diminution de l’enneigement naturel et le réchauffement climatique. La diversification permet de développer des activités sur plusieurs saisons.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Convention alpine — Tourism',
+            url: 'https://www.alpconv.org/en/home/topics/tourism/'
+          },
+          {
+            title: 'Convention alpine — Transport',
+            url: 'https://www.alpconv.org/en/home/topics/transport/'
+          },
+          {
+            title: 'Convention alpine — Report on the State of the Alps',
+            url: 'https://www.alpconv.org/en/home/soia/report-on-the-state-of-the-alps/'
+          },
+          {
+            title: 'GIEC — Climate Change 2022: Mountains',
+            url: 'https://www.ipcc.ch/report/ar6/wg2/chapter/ccp5/'
+          }
+        ]
+      }
+    }
+  ]
+},
 
 ]
 
