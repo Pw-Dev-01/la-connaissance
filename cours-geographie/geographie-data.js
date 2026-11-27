@@ -4896,6 +4896,633 @@ window.courseCatalog = [
   ]
 },
 
+ 
+{
+  id: 'chine',
+  sortYear: 0,
+  title: 'Chine : territoire, milieux naturels, population et puissance géographique',
+  note: 'Six chapitres approfondis consacrés à la géographie de la Chine : situation et organisation du territoire, relief, climat, fleuves et ressources en eau, population et urbanisation, économie et enjeux environnementaux. Les données démographiques et économiques sont datées afin de distinguer les statistiques observées des tendances générales. Les chiffres peuvent varier selon les méthodes de calcul et les périmètres territoriaux retenus.',
+  chapters: [
+    {
+      id: 'territoire-situation-chine',
+      title: 'La Chine : situation géographique, dimensions et organisation du territoire',
+      field: 'Géographie · Asie orientale · Situation et territoire',
+      summary: 'Étudier la position de la Chine en Asie orientale, ses dimensions continentales, ses frontières terrestres et maritimes ainsi que les grandes différences géographiques entre ses régions.',
+      lesson: {
+        sections: [
+          'La Chine, officiellement appelée République populaire de Chine, se situe en Asie orientale, sur la façade occidentale de l’océan Pacifique. Son territoire continental couvre environ 9,6 millions de km². Cette superficie en fait l’un des trois plus grands États du monde, avec la Russie et le Canada. Son étendue entraîne une grande diversité de paysages, de conditions climatiques, de ressources naturelles et de modes d’occupation humaine. Il faut distinguer la superficie de l’État, les frontières administratives et les espaces maritimes : ces trois éléments ne désignent pas la même réalité géographique.',
+          'La Chine possède une longue frontière terrestre avec 14 États voisins : la Corée du Nord, la Russie, la Mongolie, le Kazakhstan, le Kirghizistan, le Tadjikistan, l’Afghanistan, le Pakistan, l’Inde, le Népal, le Bhoutan, le Myanmar, le Laos et le Vietnam. Cette situation place le pays au contact de plusieurs grands ensembles géographiques : la Sibérie et l’Asie centrale au nord et à l’ouest, l’Asie du Sud dans les régions himalayennes, et l’Asie du Sud-Est au sud. Les frontières traversent des milieux très différents, allant des montagnes élevées aux steppes et aux déserts.',
+          'À l’est et au sud-est, la Chine est ouverte sur plusieurs mers bordant le Pacifique : la mer de Bohai, la mer Jaune, la mer de Chine orientale et la mer de Chine méridionale. Cette façade maritime joue un rôle majeur dans les échanges internationaux, les activités portuaires, la pêche et le développement des grandes régions urbaines littorales. Les ports de Shanghai, Ningbo-Zhoushan, Shenzhen et Guangzhou s’inscrivent dans des espaces économiques densément peuplés. La présence d’une façade maritime ne signifie cependant pas que toutes les régions chinoises bénéficient des mêmes conditions d’accès aux échanges.',
+          'L’immensité du territoire entraîne d’importantes différences entre les régions orientales et occidentales. Les régions littorales orientales concentrent de grandes métropoles, des infrastructures de transport, des activités industrielles et des espaces agricoles intensifs. À l’ouest, les hauts plateaux, les chaînes montagneuses, les bassins intérieurs et les déserts occupent des superficies considérables. Les contraintes du relief, de l’altitude et de l’aridité limitent localement les densités de population et les possibilités agricoles. Il ne faut toutefois pas considérer l’ouest comme un espace entièrement vide : il comprend des villes, des activités minières, des espaces pastoraux et des axes de circulation.',
+          'La Chine présente donc une organisation territoriale fortement différenciée. Les contrastes entre littoral et intérieur, entre plaines et montagnes, et entre régions humides et régions arides structurent les activités économiques et les implantations humaines. Pour comprendre la géographie chinoise, il faut étudier les relations entre les caractéristiques physiques du territoire et les choix d’aménagement. Les différences régionales ne résultent pas uniquement de la nature : elles dépendent également de l’histoire des échanges, des infrastructures, des politiques publiques et de la localisation des investissements.'
+        ],
+        example: {
+          statement: 'La Chine possède une superficie d’environ 9 600 000 km². Pourquoi cette dimension constitue-t-elle un facteur important de diversité géographique ?',
+          calculation: 'La superficie représente l’étendue horizontale du territoire. Une grande extension géographique permet la présence de latitudes, d’altitudes, de distances à la mer et de conditions climatiques très différentes.',
+          answer: 'La superficie chinoise permet de réunir des montagnes très élevées, des plateaux, des bassins, des déserts, des plaines et des littoraux. Elle explique une partie importante de la diversité des paysages et des conditions d’occupation humaine.'
+        },
+        exercise: {
+          question: 'Pourquoi la façade maritime orientale occupe-t-elle une place importante dans l’organisation géographique de la Chine ?',
+          answer: 'Parce qu’elle facilite les échanges maritimes internationaux et concentre de grands ports, des métropoles, des infrastructures et de nombreuses activités économiques.'
+        },
+        exercises: [
+          {
+            question: 'Sur quel continent se situe la Chine ?',
+            answer: 'La Chine se situe en Asie, plus précisément en Asie orientale.'
+          },
+          {
+            question: 'Combien d’États possèdent une frontière terrestre avec la Chine ?',
+            answer: 'La Chine possède des frontières terrestres avec 14 États.'
+          },
+          {
+            question: 'Pourquoi les régions occidentales présentent-elles généralement des contraintes d’occupation humaine plus importantes que les plaines littorales orientales ?',
+            answer: 'Elles comprennent de vastes espaces montagneux, des plateaux élevés et des régions arides, où l’altitude, le relief et la disponibilité en eau peuvent limiter les implantations et certaines activités.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — China : Land',
+            url: 'https://www.britannica.com/place/China/Land'
+          },
+          {
+            title: 'Encyclopaedia Britannica — China',
+            url: 'https://www.britannica.com/place/China'
+          },
+          {
+            title: 'Ambassade de Chine en Inde — Geography',
+            url: 'https://in.china-embassy.gov.cn/eng/zggk/201010/t20101023_2234758.htm'
+          },
+          {
+            title: 'CIA World Factbook — China',
+            url: 'https://www.cia.gov/the-world-factbook/countries/china/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'relief-geologie-chine',
+      title: 'Le relief chinois : montagnes, plateaux, bassins et grandes plaines',
+      field: 'Géographie physique · Géomorphologie · Relief et tectonique',
+      summary: 'Comprendre l’organisation générale du relief chinois, le rôle de la collision des plaques tectoniques, les hauts plateaux occidentaux et les plaines orientales.',
+      lesson: {
+        sections: [
+          'Le relief de la Chine est caractérisé par de forts contrastes d’altitude. Une représentation classique décrit le territoire comme un ensemble de niveaux successifs qui s’abaissent globalement de l’ouest vers l’est. Cette organisation est souvent présentée sous la forme de trois grands degrés topographiques, auxquels on peut ajouter le plateau continental sous-marin à l’est. Il s’agit d’un modèle de lecture simplifié : les limites entre les ensembles ne sont pas des escaliers réguliers et le relief réel présente de nombreuses transitions.',
+          'Le premier grand ensemble est constitué par le plateau tibétain, situé dans le sud-ouest du pays. Son altitude moyenne dépasse généralement 4 000 m. Il est bordé ou traversé par de grandes chaînes montagneuses, notamment l’Himalaya, les monts Kunlun et les monts Hengduan. Le sommet de l’Everest, appelé Qomolangma en chinois, culmine à 8 848,86 m selon la hauteur officielle annoncée conjointement par la Chine et le Népal en 2020. La formation et le soulèvement du plateau sont étroitement liés à la convergence entre la plaque indienne et la plaque eurasienne. Ce processus tectonique continue de transformer les reliefs et contribue à une forte activité sismique dans certaines régions.',
+          'Le deuxième ensemble comprend plusieurs plateaux et bassins intérieurs. Le plateau de Mongolie-Intérieure, le plateau de Lœss et le plateau du Yunnan-Guizhou présentent des altitudes et des formes de relief différentes. Les bassins du Tarim, du Junggar et du Sichuan sont également importants. Le bassin du Tarim, dans le Xinjiang, accueille le désert du Taklamakan, tandis que le bassin du Sichuan est davantage caractérisé par des paysages agricoles et des concentrations urbaines. Ces différences montrent qu’une même grande catégorie topographique peut regrouper des milieux très contrastés.',
+          'Le troisième ensemble correspond principalement aux plaines et aux collines de l’est. La plaine de Chine du Nord, la plaine de Mandchourie et les plaines du moyen et du bas Yangzi constituent des espaces majeurs pour l’agriculture, les transports et les établissements humains. Leurs altitudes relativement faibles et leurs terrains souvent plus accessibles ont favorisé la construction d’infrastructures et la concentration des activités. Les plaines ne sont cependant pas toutes identiques : les conditions pédologiques, hydrologiques et climatiques varient selon les régions.',
+          'La géologie et la géomorphologie influencent directement les possibilités d’aménagement. Les montagnes peuvent constituer des obstacles aux transports, mais elles fournissent aussi des ressources en eau, des ressources minérales et un potentiel hydroélectrique. Les bassins facilitent certaines activités agricoles et urbaines, tandis que les plaines favorisent les grandes infrastructures et les cultures mécanisées. Les risques naturels sont également liés au relief : séismes dans les régions tectoniquement actives, glissements de terrain sur les versants instables, érosion dans les régions de sols fragiles et crues dans les vallées fluviales.'
+        ],
+        example: {
+          statement: 'On compare deux régions : le plateau tibétain, dont l’altitude moyenne dépasse 4 000 m, et une plaine littorale de faible altitude. Comment expliquer leurs différences d’occupation humaine ?',
+          calculation: 'L’altitude, la pente, les températures, l’accessibilité et la disponibilité en eau sont des facteurs à comparer. Une altitude élevée peut réduire la durée de la saison agricole et compliquer les transports.',
+          answer: 'Les plaines littorales offrent généralement des conditions plus favorables à la concentration des populations, aux infrastructures et à l’agriculture intensive. Le plateau tibétain présente des contraintes plus fortes liées à l’altitude et au climat, même si des villes et des activités humaines y existent.'
+        },
+        exercise: {
+          question: 'Quel phénomène tectonique explique en grande partie le soulèvement du plateau tibétain ?',
+          answer: 'La convergence et la collision de la plaque indienne avec la plaque eurasienne.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est l’altitude moyenne approximative du plateau tibétain ?',
+            answer: 'Elle dépasse généralement 4 000 m.'
+          },
+          {
+            question: 'Cite deux grands bassins intérieurs chinois.',
+            answer: 'Le bassin du Tarim et le bassin du Sichuan. Le bassin du Junggar constitue également un exemple.'
+          },
+          {
+            question: 'Pourquoi les plaines orientales favorisent-elles la concentration des activités humaines ?',
+            answer: 'Leurs faibles altitudes et leurs pentes généralement moins importantes facilitent l’agriculture, les constructions, les transports et l’implantation des villes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — China : Relief',
+            url: 'https://www.britannica.com/place/China/Relief'
+          },
+          {
+            title: 'Encyclopaedia Britannica — Tibetan Plateau',
+            url: 'https://www.britannica.com/place/Tibetan-Plateau'
+          },
+          {
+            title: 'Ambassade de Chine en Inde — Geography',
+            url: 'https://in.china-embassy.gov.cn/eng/zggk/201010/t20101023_2234758.htm'
+          },
+          {
+            title: 'National Geographic — Mount Everest',
+            url: 'https://education.nationalgeographic.org/resource/mount-everest/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'climats-chine',
+      title: 'Les climats de la Chine : moussons, températures et contrastes régionaux',
+      field: 'Climatologie · Asie orientale · Circulation atmosphérique et moussons',
+      summary: 'Étudier la diversité climatique chinoise, le fonctionnement saisonnier des moussons, les contrastes entre le nord et le sud et les différences entre les régions littorales et intérieures.',
+      lesson: {
+        sections: [
+          'La Chine possède une grande diversité climatique en raison de son étendue en latitude, de son relief et de sa position par rapport à l’océan Pacifique et à l’intérieur du continent asiatique. Les régions méridionales connaissent généralement des conditions plus chaudes que les régions septentrionales. Les zones littorales orientales sont davantage influencées par les masses d’air maritimes, tandis que le nord-ouest intérieur présente des conditions plus continentales et souvent plus sèches. L’altitude modifie également fortement les températures, notamment sur le plateau tibétain.',
+          'La mousson d’Asie orientale joue un rôle essentiel dans la répartition saisonnière des précipitations. Pendant la saison chaude, les circulations atmosphériques apportent de l’air humide depuis les espaces maritimes vers une partie importante de la Chine orientale et méridionale. Les précipitations peuvent alors être abondantes, avec des variations selon les régions et les périodes. En hiver, les circulations continentales froides et sèches venues du nord et du nord-ouest influencent fortement les conditions météorologiques. Le régime de mousson ne produit donc pas partout les mêmes quantités de pluie et ne se manifeste pas de façon identique sur l’ensemble du territoire.',
+          'Le sud-est de la Chine est généralement plus humide que le nord-ouest. Les régions du sud connaissent des conditions subtropicales ou tropicales selon la latitude et l’altitude, alors que le nord-est connaît des hivers froids et des contrastes saisonniers importants. Dans les régions intérieures du Xinjiang et de la Mongolie-Intérieure, l’éloignement des influences océaniques et la présence de barrières montagneuses contribuent à des conditions arides ou semi-arides. Le désert du Taklamakan et le désert de Gobi illustrent ces milieux secs, même si leurs caractéristiques géographiques ne sont pas identiques.',
+          'La répartition des pluies influence les activités agricoles. Dans plusieurs régions du sud, les précipitations et les températures permettent notamment la culture du riz dans des systèmes agricoles adaptés aux milieux humides. Dans le nord, les cultures de blé, de maïs et d’autres productions sont importantes, mais les besoins d’irrigation peuvent être élevés dans certaines zones. Les calendriers agricoles, les types de cultures et les rendements dépendent aussi des sols, des techniques, de l’accès à l’eau et des conditions économiques. Il serait donc incorrect d’expliquer l’agriculture chinoise uniquement par la température ou par la quantité de pluie.',
+          'Les risques climatiques sont variés. Les pluies de mousson peuvent provoquer des inondations, tandis que certaines régions connaissent des sécheresses prolongées. Les littoraux du sud et de l’est peuvent être affectés par des cyclones tropicaux, appelés typhons dans le Pacifique occidental. Les vagues de chaleur, les épisodes de froid et les fortes précipitations constituent également des risques pour les populations et les infrastructures. L’analyse climatique doit ainsi distinguer le climat moyen, les variations saisonnières et les événements météorologiques extrêmes.'
+        ],
+        example: {
+          statement: 'Une région du sud-est chinois reçoit généralement davantage de précipitations qu’une région intérieure du nord-ouest. Quel facteur géographique permet principalement d’expliquer ce contraste ?',
+          calculation: 'Il faut comparer la distance à la mer, les circulations de mousson, les barrières montagneuses et la continentalité. Les masses d’air maritimes apportent généralement davantage d’humidité que les masses d’air ayant traversé de vastes régions intérieures.',
+          answer: 'Le sud-est bénéficie davantage des apports d’humidité liés aux circulations maritimes et à la mousson. Le nord-ouest, plus éloigné des océans et parfois protégé par des chaînes montagneuses, présente des conditions généralement plus sèches.'
+        },
+        exercise: {
+          question: 'Pourquoi les précipitations chinoises sont-elles généralement plus abondantes dans une grande partie du sud et de l’est que dans le nord-ouest intérieur ?',
+          answer: 'Parce que le sud et l’est sont davantage influencés par les apports d’humidité océaniques et les circulations de mousson, alors que le nord-ouest est plus continental et souvent séparé des influences humides par le relief.'
+        },
+        exercises: [
+          {
+            question: 'Quel phénomène climatique saisonnier joue un rôle majeur dans les précipitations de la Chine orientale et méridionale ?',
+            answer: 'La mousson d’Asie orientale.'
+          },
+          {
+            question: 'Pourquoi le nord-ouest chinois est-il généralement plus aride que le sud-est ?',
+            answer: 'En raison de son éloignement des océans, de la continentalité et de l’effet de certaines barrières montagneuses sur les circulations humides.'
+          },
+          {
+            question: 'Cite deux risques météorologiques importants en Chine.',
+            answer: 'Les inondations et les sécheresses. Les typhons, les vagues de chaleur et les épisodes de froid constituent également des risques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — China : Climate',
+            url: 'https://www.britannica.com/place/China/Climate'
+          },
+          {
+            title: 'Encyclopaedia Britannica — East Asian monsoon',
+            url: 'https://www.britannica.com/science/monsoon-meteorology'
+          },
+          {
+            title: 'World Meteorological Organization — Regional Climate Information',
+            url: 'https://wmo.int/'
+          },
+          {
+            title: 'NASA Earth Observatory — Earth Observatory',
+            url: 'https://earthobservatory.nasa.gov/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'fleuves-eau-chine',
+      title: 'Les fleuves et les ressources en eau : un territoire organisé par les grands bassins hydrographiques',
+      field: 'Hydrographie · Géographie des ressources · Bassins fluviaux',
+      summary: 'Comprendre le rôle du Yangzi, du Huang He et des autres grands cours d’eau, les bassins versants, les usages de l’eau et les déséquilibres hydriques entre le nord et le sud.',
+      lesson: {
+        sections: [
+          'Le réseau hydrographique chinois est particulièrement développé. Plusieurs grands fleuves prennent leur source dans les hautes terres de l’ouest et du sud-ouest, notamment dans les régions du plateau tibétain. Le Yangzi Jiang, également appelé Chang Jiang ou fleuve Bleu, est le plus long fleuve de Chine. Il traverse de vastes régions avant de rejoindre la mer de Chine orientale. Son bassin versant constitue un espace majeur pour les populations, les activités agricoles, les transports, l’industrie et la production hydroélectrique.',
+          'Le Huang He, ou fleuve Jaune, est un autre grand cours d’eau chinois. Il traverse notamment le plateau de Lœss, dont les matériaux meubles sont fortement soumis à l’érosion. Les sédiments transportés donnent à l’eau sa couleur caractéristique et contribuent à l’élévation du lit dans certaines sections. Le fleuve Jaune a connu de nombreuses crues et modifications de son cours au fil de l’histoire. Son bassin est également essentiel pour l’agriculture et les activités humaines du nord de la Chine. La gestion de son débit et de ses sédiments représente un enjeu important.',
+          'Le Zhu Jiang, ou système de la rivière des Perles, occupe une place majeure dans le sud. Son réseau fluvial est associé au delta de la rivière des Perles, où se trouvent de grandes concentrations urbaines et économiques, notamment autour de Guangzhou et de Shenzhen. D’autres cours d’eau traversent le territoire chinois ou prennent leur source dans les hautes terres : le Mékong, le Salouen et le Brahmapoutre, appelé Yarlung Tsangpo dans sa partie tibétaine, illustrent l’importance régionale des cours d’eau issus des montagnes. Certains fleuves se dirigent vers les océans, tandis que d’autres appartiennent à des bassins intérieurs sans débouché maritime.',
+          'Les ressources en eau sont très inégalement réparties dans le pays. Une grande partie des ressources hydriques se trouve dans le sud, alors que certaines régions du nord disposent de ressources plus limitées au regard de leurs besoins agricoles, industriels et urbains. Cette différence est aggravée par la saisonnalité des précipitations : une part importante des pluies annuelles se concentre pendant la saison humide. Les sécheresses et les variations interannuelles peuvent ainsi provoquer des difficultés d’approvisionnement. Les données historiques de la Banque mondiale soulignent cette forte opposition entre les ressources en eau du sud et celles du nord ; leurs proportions doivent être considérées comme des estimations issues de périodes et de méthodes précises, et non comme des constantes universelles.',
+          'L’eau est utilisée pour l’irrigation, l’alimentation des villes, les industries, la production énergétique et les écosystèmes. Les barrages et les ouvrages hydrauliques permettent de réguler certains débits, de produire de l’électricité et de limiter certains risques de crue, mais ils modifient aussi les milieux fluviaux et les circulations de sédiments. Le projet de transfert d’eau du sud vers le nord cherche à répondre à certains déséquilibres régionaux. Il implique cependant des coûts, des enjeux écologiques et des arbitrages entre les territoires de départ et les territoires bénéficiaires. La gestion durable de l’eau nécessite donc une approche par bassin versant, intégrant les besoins humains et les fonctions écologiques des cours d’eau.'
+        ],
+        example: {
+          statement: 'Une région du nord de la Chine connaît une demande importante en eau alors que les ressources disponibles y sont relativement limitées. Pourquoi cette situation peut-elle créer une tension hydrique ?',
+          calculation: 'La tension hydrique apparaît lorsque les besoins en eau sont élevés par rapport aux ressources renouvelables disponibles. Il faut donc comparer les prélèvements agricoles, industriels et urbains avec les ressources accessibles, en tenant compte des saisons.',
+          answer: 'Lorsque les besoins dépassent régulièrement les ressources disponibles, les prélèvements peuvent exercer une pression sur les fleuves et les nappes souterraines. Cela peut entraîner des restrictions, une baisse des réserves et des conflits d’usage entre agriculture, villes, industrie et milieux naturels.'
+        },
+        exercise: {
+          question: 'Pourquoi la répartition de l’eau constitue-t-elle un enjeu majeur dans l’aménagement du territoire chinois ?',
+          answer: 'Parce que les ressources en eau sont inégalement réparties entre le sud et le nord, alors que les besoins agricoles, industriels et urbains sont importants dans plusieurs régions septentrionales.'
+        },
+        exercises: [
+          {
+            question: 'Quel est le plus long fleuve de Chine ?',
+            answer: 'Le Yangzi Jiang, également appelé Chang Jiang ou fleuve Bleu.'
+          },
+          {
+            question: 'Pourquoi le fleuve Jaune transporte-t-il une quantité importante de sédiments ?',
+            answer: 'Parce qu’il traverse notamment le plateau de Lœss, dont les sols limoneux et les matériaux meubles sont sensibles à l’érosion.'
+          },
+          {
+            question: 'Quel est l’objectif général du projet de transfert d’eau du sud vers le nord ?',
+            answer: 'Transférer une partie des ressources hydriques des régions méridionales vers des régions septentrionales confrontées à des tensions d’approvisionnement.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Encyclopaedia Britannica — China : Drainage',
+            url: 'https://www.britannica.com/place/China/Drainage'
+          },
+          {
+            title: 'World Bank — China Country Water Resources Partnership Strategy',
+            url: 'https://documents1.worldbank.org/curated/en/388891468216271286/pdf/883200ESW00P110untry0Water0Strategy.pdf'
+          },
+          {
+            title: 'World Bank — Addressing China’s Water Scarcity',
+            url: 'https://documents.worldbank.org/en/publication/documents-reports/documentdetail/996681468214808203'
+          },
+          {
+            title: 'Columbia University — East Asia in Geographic Perspective: Physical Systems',
+            url: 'https://afe.easia.columbia.edu/geography/physical-systems.html'
+          }
+        ]
+      }
+    },
+    {
+      id: 'population-urbanisation-chine',
+      title: 'La population chinoise : répartition, dynamiques démographiques et urbanisation',
+      field: 'Géographie humaine · Démographie · Géographie urbaine',
+      summary: 'Analyser la répartition de la population, les contrastes entre l’est et l’ouest, les transformations démographiques, les migrations internes et la croissance des espaces urbains.',
+      lesson: {
+        sections: [
+          'La Chine possède une population très importante, mais celle-ci est répartie de manière très inégale sur le territoire. Les plaines orientales, les vallées fluviales et les grandes régions littorales concentrent une part considérable des habitants. À l’inverse, les régions de haute montagne, les déserts et les plateaux arides présentent généralement des densités plus faibles. Cette organisation s’explique par plusieurs facteurs : les conditions naturelles, l’histoire du peuplement, la disponibilité des terres agricoles, les possibilités d’emploi et l’accessibilité des infrastructures.',
+          'La ligne Heihe-Tengchong, également appelée ligne Hu Huanyong, constitue un repère classique pour étudier cette répartition. Elle relie approximativement la ville de Heihe, au nord-est, à Tengchong, au sud-ouest. Elle met en évidence une forte opposition entre une partie orientale densément peuplée et une partie occidentale beaucoup moins densément peuplée. Cette ligne est un outil d’analyse géographique et non une frontière administrative. Elle simplifie une réalité plus complexe, car les densités varient aussi à l’intérieur de chacune des deux grandes parties du pays.',
+          'La population chinoise connaît une transformation démographique importante. Selon le Bureau national des statistiques de Chine, la population nationale s’élevait à environ 1,408 milliard d’habitants à la fin de 2024, dans le périmètre statistique national utilisé par cette publication. Elle avait diminué de 1,39 million par rapport à la fin de 2023. En 2024, le nombre de naissances était inférieur au nombre de décès. Le vieillissement démographique constitue également une évolution majeure : les personnes âgées de 60 ans et plus représentaient 22,0 % de la population à la fin de 2024. Ces données montrent qu’une population très nombreuse peut simultanément connaître une baisse récente de son effectif et un vieillissement.',
+          'L’urbanisation est une autre transformation essentielle. Les villes chinoises se sont développées rapidement sous l’effet de l’industrialisation, de l’extension des services, des migrations internes et de la transformation administrative de certains espaces. Selon le Bureau national des statistiques chinois, 943,50 millions de personnes résidaient dans les zones urbaines à la fin de 2024, soit 67,0 % de la population selon la définition nationale. Cette proportion ne doit pas être confondue avec les résultats d’autres organismes internationaux, qui peuvent employer des définitions et des méthodes statistiques différentes. Les métropoles de Shanghai, Pékin, Guangzhou, Shenzhen et Chengdu illustrent la diversité des systèmes urbains chinois.',
+          'Les migrations internes ont profondément transformé la géographie du peuplement. Des millions de personnes se déplacent entre les campagnes et les villes ou entre les différentes provinces pour accéder à l’emploi, à l’éducation et aux services. Les régions littorales et les grandes agglomérations ont longtemps attiré une part importante de ces mobilités. Toutefois, les flux ne sont pas exclusivement orientés vers les métropoles côtières : plusieurs villes de l’intérieur jouent également un rôle croissant. Les politiques d’aménagement, les infrastructures ferroviaires et routières ainsi que les différences régionales de développement influencent les trajectoires migratoires.',
+          'La croissance urbaine crée des besoins considérables en logements, transports, eau, énergie et équipements collectifs. Elle peut aussi produire des problèmes de congestion, de pollution, d’artificialisation des sols et d’inégalités d’accès aux services. Les espaces périurbains se développent autour des grandes agglomérations, transformant progressivement des terres agricoles en zones résidentielles, industrielles ou commerciales. L’étude de l’urbanisation doit donc prendre en compte non seulement le nombre d’habitants, mais aussi les formes spatiales des villes, leurs relations avec les campagnes et les conséquences de leur expansion sur l’environnement.'
+        ],
+        example: {
+          statement: 'À la fin de 2024, la Chine comptait environ 1 408,28 millions d’habitants, dont 943,50 millions de résidents urbains. Comment calculer la proportion urbaine ?',
+          calculation: 'Proportion urbaine = (population urbaine / population totale) × 100. Soit (943,50 / 1 408,28) × 100 ≈ 67,0 %.',
+          answer: 'La proportion urbaine est d’environ 67,0 % à la fin de 2024 selon les statistiques nationales chinoises. Cette valeur correspond à la définition statistique nationale de la population urbaine.'
+        },
+        exercise: {
+          question: 'Quels sont les principaux facteurs qui expliquent la concentration de la population chinoise dans les régions orientales ?',
+          answer: 'Les plaines plus accessibles, les vallées fluviales, les conditions agricoles, l’ouverture maritime, les infrastructures et la concentration des emplois et des activités économiques contribuent à cette concentration.'
+        },
+        exercises: [
+          {
+            question: 'Quelle population totale le Bureau national des statistiques chinois indique-t-il à la fin de 2024 ?',
+            answer: 'Environ 1 408,28 millions d’habitants, selon le périmètre statistique national de la publication.'
+          },
+          {
+            question: 'Quelle proportion de la population chinoise résidait en zone urbaine à la fin de 2024 selon les statistiques nationales ?',
+            answer: '67,0 %, soit 943,50 millions de personnes.'
+          },
+          {
+            question: 'Pourquoi faut-il préciser la source et la définition utilisées lorsqu’on compare les taux d’urbanisation ?',
+            answer: 'Parce que les organismes statistiques peuvent utiliser des définitions différentes des zones urbaines et des méthodes de calcul distinctes, ce qui peut produire des résultats différents.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Bureau of Statistics of China — Statistical Communiqué 2024',
+            url: 'https://www.stats.gov.cn/english/PressRelease/202502/t20250228_1958822.html'
+          },
+          {
+            title: 'United Nations — World Urbanization Prospects 2025',
+            url: 'https://population.un.org/wup/assets/Publications/undesa_pd_2025_wup2025_summary_of_results_final.pdf'
+          },
+          {
+            title: 'Encyclopaedia Britannica — China : Population',
+            url: 'https://www.britannica.com/place/China/Population'
+          },
+          {
+            title: 'World Bank — Urban Population, China',
+            url: 'https://data.worldbank.org/indicator/SP.URB.TOTL?locations=CN'
+          }
+        ]
+      }
+    },
+    {
+      id: 'economie-environnement-chine',
+      title: 'L’économie chinoise et les enjeux environnementaux : industrialisation, littoral et développement durable',
+      field: 'Géographie économique · Géographie de l’environnement · Aménagement du territoire',
+      summary: 'Étudier la répartition spatiale des activités économiques, le poids de l’industrie et des services, l’ouverture commerciale, les inégalités régionales et les principaux défis environnementaux.',
+      lesson: {
+        sections: [
+          'La Chine occupe une place majeure dans l’économie mondiale. Son développement économique repose sur une combinaison d’activités agricoles, industrielles et tertiaires. Les régions littorales orientales ont joué un rôle central dans l’industrialisation et l’intégration aux échanges internationaux. Elles bénéficient d’infrastructures portuaires, de réseaux de transport, de grandes agglomérations et d’une forte concentration d’entreprises. Les régions intérieures possèdent également des activités industrielles, minières, agricoles et de services, mais leurs spécialisations et leurs niveaux d’intégration aux marchés diffèrent.',
+          'L’industrie chinoise comprend des secteurs variés : métallurgie, automobile, électronique, chimie, textile, équipements mécaniques et production de biens de consommation. Certaines activités sont fortement concentrées dans des régions urbaines et littorales, notamment dans le delta du Yangzi et le delta de la rivière des Perles. Les chaînes de production associent souvent plusieurs territoires et dépendent de réseaux de fournisseurs, de transport et de logistique. La puissance industrielle chinoise ne signifie donc pas que toutes les régions possèdent la même structure productive ou les mêmes niveaux de développement.',
+          'Les services occupent une place croissante dans l’économie. Ils comprennent notamment le commerce, les transports, la finance, les télécommunications, les activités numériques, la santé, l’éducation et les services aux entreprises. Selon le Bureau national des statistiques chinois, en 2024, le secteur primaire représentait 6,8 % du produit intérieur brut, le secteur secondaire 36,5 % et le secteur tertiaire 56,7 %. Ces parts décrivent la structure de la valeur ajoutée nationale pour cette année. Elles ne doivent pas être interprétées comme une répartition de la population active ni comme une description identique de chaque province.',
+          'Les contrastes régionaux constituent une caractéristique importante de la géographie économique chinoise. Les grandes régions littorales disposent généralement d’un accès plus direct aux ports et aux réseaux mondiaux. Elles accueillent de nombreuses activités manufacturières, commerciales et financières. Plusieurs régions intérieures jouent cependant un rôle stratégique dans les ressources énergétiques, l’agriculture, les industries lourdes, les transports et les échanges terrestres avec l’Asie centrale. Les politiques d’aménagement cherchent notamment à améliorer les connexions entre les régions intérieures et les grands centres économiques. Les infrastructures ferroviaires à grande vitesse, les autoroutes, les lignes de fret et les plateformes logistiques participent à cette transformation.',
+          'Le développement économique exerce une pression importante sur les milieux naturels. Les émissions atmosphériques, les pollutions industrielles, les prélèvements d’eau, l’artificialisation des sols et la fragmentation des habitats constituent des enjeux majeurs. Les régions du nord peuvent connaître des tensions hydriques accentuées par les besoins agricoles, industriels et urbains. Les plaines et les vallées densément peuplées sont particulièrement exposées aux conséquences de l’urbanisation et des activités productives. Les politiques environnementales, les investissements dans les énergies renouvelables et les mesures de réduction des pollutions cherchent à limiter ces pressions, mais leur efficacité dépend des territoires et des secteurs concernés.',
+          'Le changement climatique représente un défi supplémentaire. Il peut modifier les régimes de précipitations, augmenter la fréquence ou l’intensité de certains épisodes de chaleur et affecter les ressources en eau, les glaciers de montagne et les zones côtières. Les conséquences ne sont pas uniformes : elles varient selon les bassins versants, les altitudes, les densités de population et les structures économiques. L’adaptation nécessite donc des politiques territorialisées : gestion des ressources hydriques, protection contre les inondations, adaptation des infrastructures, prévention des risques et protection des écosystèmes. La géographie permet ici de comprendre que les enjeux environnementaux sont à la fois physiques, économiques et sociaux.'
+        ],
+        example: {
+          statement: 'En 2024, la structure du PIB chinois était composée de 6,8 % pour le secteur primaire, de 36,5 % pour le secteur secondaire et de 56,7 % pour le secteur tertiaire. Quel secteur représente la part la plus importante ?',
+          calculation: 'On compare les trois proportions : 6,8 ; 36,5 ; 56,7. La valeur la plus élevée est 56,7.',
+          answer: 'Le secteur tertiaire représente la part la plus importante, avec 56,7 % du PIB en 2024 selon le Bureau national des statistiques chinois. Cela traduit le poids des services dans la valeur ajoutée nationale.'
+        },
+        exercise: {
+          question: 'Pourquoi les régions littorales orientales ont-elles joué un rôle central dans le développement économique chinois ?',
+          answer: 'Elles disposent d’un accès privilégié aux routes maritimes, de grands ports, d’infrastructures de transport, de grandes agglomérations et d’une concentration importante d’activités industrielles et de services.'
+        },
+        exercises: [
+          {
+            question: 'Quelle était la part du secteur tertiaire dans le PIB chinois en 2024 selon le Bureau national des statistiques ?',
+            answer: '56,7 %.'
+          },
+          {
+            question: 'Cite deux grandes régions économiques littorales chinoises.',
+            answer: 'Le delta du Yangzi et le delta de la rivière des Perles.'
+          },
+          {
+            question: 'Pourquoi la gestion de l’eau est-elle un enjeu économique et environnemental important en Chine ?',
+            answer: 'Parce que les ressources sont inégalement réparties, que les besoins agricoles, industriels et urbains sont élevés et que les prélèvements doivent être conciliés avec la protection des écosystèmes.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Bureau of Statistics of China — Statistical Communiqué 2024',
+            url: 'https://www.stats.gov.cn/english/PressRelease/202502/t20250228_1958822.html'
+          },
+          {
+            title: 'Encyclopaedia Britannica — China : Economy',
+            url: 'https://www.britannica.com/place/China/Economy'
+          },
+          {
+            title: 'World Bank — China Overview',
+            url: 'https://www.worldbank.org/en/country/china/overview'
+          },
+          {
+            title: 'World Bank — China Country Water Resources Partnership Strategy',
+            url: 'https://documents1.worldbank.org/curated/en/388891468216271286/pdf/883200ESW00P110untry0Water0Strategy.pdf'
+          },
+          {
+            title: 'United Nations Environment Programme — China',
+            url: 'https://www.unep.org/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  id: 'mongolie',
+  title: 'Mongolie : territoires, milieux naturels, sociétés et développement',
+  note: 'Six chapitres consacrés à la géographie de la Mongolie : situation et relief, climat, eaux et écosystèmes, population et villes, pastoralisme et agriculture, ressources minières et enjeux environnementaux. Les données statistiques sont accompagnées de leur année et de leur source. Les chiffres peuvent différer selon que les organismes utilisent la population de fin d’année, la population résidente ou une estimation à mi-année.',
+  chapters: [
+    {
+      id: 'situation-relief-mongolie',
+      title: 'La Mongolie : situation géographique, frontières et grands ensembles de relief',
+      field: 'Géographie physique · Asie centrale et orientale · Situation et relief',
+      summary: 'Situer la Mongolie dans l’espace eurasiatique, comprendre son enclavement, ses frontières et l’organisation de ses montagnes, plateaux, steppes et régions désertiques.',
+      lesson: {
+        sections: [
+          'La Mongolie est un État d’Asie intérieure, enclavé entre la Russie au nord et la Chine au sud, à l’est et à l’ouest. Elle ne possède donc aucun accès direct à un océan. Son territoire couvre environ 1,56 million de km². Cet enclavement constitue un facteur géographique important : les échanges internationaux dépendent des infrastructures terrestres, des passages frontaliers et des relations avec les deux pays voisins. Il faut distinguer la Mongolie, État souverain dont la capitale est Oulan-Bator, de la Mongolie-Intérieure, région autonome appartenant à la République populaire de Chine.',
+          'Le territoire mongol s’étend sur une vaste zone de hauts plateaux et de montagnes. L’Atlas numérique national de Mongolie indique une altitude moyenne d’environ 1 580 m et précise que plus de 80 % du territoire se trouve au-dessus de 1 000 m. L’altitude diminue globalement de l’ouest vers l’est, même si cette tendance générale ne décrit pas chaque vallée ni chaque bassin. Cette élévation moyenne contribue à la rigueur du climat continental et influence les conditions de circulation, d’agriculture et d’installation humaine.',
+          'À l’ouest, les monts de l’Altaï mongol et du Gobi-Altaï forment des ensembles montagneux élevés. Le Khuiten, dans l’Altaï mongol, constitue le point culminant du pays avec 4 374 m selon l’Atlas numérique national. Au centre, les monts du Khangai structurent les paysages de hautes terres et alimentent plusieurs réseaux hydrographiques. Au nord et au nord-est, les massifs du Khövsgöl et du Khentii sont associés à des milieux plus frais, forestiers ou de steppe boisée. Ces reliefs forment des barrières et des réservoirs écologiques, mais aussi des espaces de pâturage et de ressources en eau.',
+          'Les régions centrales et orientales comprennent de vastes steppes, des plaines ondulées et des collines. Plus au sud, le Gobi forme un ensemble de milieux arides et semi-arides. Il ne s’agit pas d’une surface uniformément couverte de dunes : le Gobi comprend aussi des plateaux pierreux, des plaines caillouteuses, des reliefs bas et des secteurs de végétation clairsemée. Les paysages mongols s’organisent ainsi en transition entre les forêts et steppes froides du nord, les prairies des régions centrales et les milieux secs du sud.',
+          'La position de la Mongolie entre la taïga sibérienne et les régions désertiques d’Asie centrale explique une partie de sa diversité paysagère. Le relief agit sur les températures, les précipitations, les écoulements et la répartition des végétations. Il conditionne également les itinéraires de transport et les formes de mobilité pastorale. Les distances considérables, les faibles densités de peuplement et les conditions hivernales rendent coûteuse la construction et l’entretien des infrastructures dans de nombreux secteurs.'
+        ],
+        example: {
+          statement: 'L’Atlas numérique national indique une altitude moyenne d’environ 1 580 m et un point culminant à 4 374 m. Quelle différence d’altitude sépare ces deux repères ?',
+          calculation: 'Différence d’altitude = altitude du point culminant − altitude moyenne. 4 374 − 1 580 = 2 794 m.',
+          answer: 'La différence est d’environ 2 794 m. Ce calcul compare deux repères généraux ; il ne signifie pas que toutes les régions mongoles se situent à une altitude proche de la moyenne.'
+        },
+        exercise: {
+          question: 'Pourquoi l’enclavement de la Mongolie constitue-t-il un facteur important pour son organisation territoriale et économique ?',
+          answer: 'Parce que le pays ne dispose d’aucun accès maritime direct. Ses échanges extérieurs reposent donc largement sur les corridors terrestres, les infrastructures ferroviaires et routières ainsi que sur les relations frontalières avec la Russie et la Chine.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les deux pays qui partagent une frontière avec la Mongolie ?',
+            answer: 'La Russie au nord et la Chine au sud, à l’est et à l’ouest.'
+          },
+          {
+            question: 'Quel est le point culminant de la Mongolie et quelle est son altitude ?',
+            answer: 'Le pic Khuiten, dans l’Altaï mongol, atteint 4 374 m selon l’Atlas numérique national de Mongolie.'
+          },
+          {
+            question: 'Le Gobi est-il uniquement constitué de dunes de sable ?',
+            answer: 'Non. Le Gobi comprend des plaines caillouteuses, des plateaux rocheux, des reliefs bas, des bassins et certains secteurs sableux.'
+          }
+        ],
+        sources: [
+          { title: 'National Digital Atlas of Mongolia — Geographical Location and Physical Geography', url: 'https://www.mongolianatlas.ac.mn/en/atlas/general' },
+          { title: 'FAO — Mongolia Country Overview', url: 'https://www.fao.org/in-action/scala/countries/mongolia/en' },
+          { title: 'Encyclopaedia Britannica — Mongolia', url: 'https://www.britannica.com/place/Mongolia' },
+          { title: 'International Fund for Agricultural Development — Mongolia Country Strategy Note 2025–2026', url: 'https://www.ifad.org/documents/48415603/50532711/Mongolia%2BCountry%2BStrategy%2BNote%2B2025_2026_0010-1277934786-962.pdf/614acca6-ad29-638b-1f16-89461f6cf889?t=1737106879067' }
+        ]
+      }
+    },
+    {
+      id: 'climat-mongolie',
+      title: 'Le climat mongol : continentalité, saisons extrêmes et phénomène du dzud',
+      field: 'Climatologie · Climat continental · Risques météorologiques',
+      summary: 'Expliquer les fortes amplitudes thermiques, les différences régionales de précipitations, les saisons et les conséquences des sécheresses et des hivers rigoureux.',
+      lesson: {
+        sections: [
+          'La Mongolie possède un climat fortement continental. Son éloignement des océans, son altitude moyenne élevée et sa situation au cœur de l’Asie favorisent des contrastes saisonniers marqués. Les hivers sont généralement longs et froids, tandis que les étés sont courts et peuvent être chauds, notamment dans les bassins et les régions méridionales. L’amplitude thermique annuelle est importante : les températures moyennes et les conditions météorologiques varient fortement entre l’hiver et l’été. Les conditions locales dépendent toutefois de l’altitude, de l’exposition, du relief et de la latitude.',
+          'Les précipitations sont faibles et inégalement réparties. Les secteurs montagneux du nord et du nord-ouest reçoivent généralement davantage de précipitations que les régions méridionales du Gobi. La FAO présente des gradients annuels allant approximativement de 50 mm dans le désert de Gobi à 400 mm dans certaines zones montagneuses du nord. Ces valeurs sont des ordres de grandeur régionaux issus d’une publication de référence et ne doivent pas être appliquées à chaque station météorologique ni à chaque année. Une partie importante des précipitations tombe pendant la saison chaude, ce qui rend les pâturages sensibles aux variations des pluies estivales.',
+          'La combinaison d’étés parfois secs et d’hivers très froids crée des conditions difficiles pour l’élevage extensif. Les sécheresses réduisent la croissance de l’herbe et les réserves fourragères. Lorsque l’hiver apporte ensuite un froid intense, une couverture neigeuse importante ou une croûte de glace empêchant les animaux d’atteindre les pâturages, les troupeaux deviennent particulièrement vulnérables. Le terme mongol dzud désigne ces situations hivernales extrêmes, dont les formes et les causes peuvent varier. Le risque dépend souvent de l’enchaînement des conditions de l’été précédent et de l’hiver.',
+          'Le dzud n’est pas simplement synonyme de neige abondante. Il peut associer températures très basses, neige profonde, vents, épisodes de dégel suivis de regel et formation d’une couche de glace sur les pâturages. Ces conditions empêchent parfois les animaux d’accéder à la végétation disponible. Les conséquences sont à la fois économiques, sociales et territoriales : pertes de bétail, diminution des revenus des familles d’éleveurs, difficultés d’approvisionnement et déplacements vers les centres urbains. La gravité d’un événement dépend aussi de la préparation des ménages, de la disponibilité de fourrage, de l’accès aux soins vétérinaires et des systèmes d’alerte.',
+          'Le changement climatique modifie les paramètres du risque. La FAO souligne l’augmentation des températures observées et les changements de précipitations, qui contribuent à accroître la vulnérabilité des pâturages et des moyens de subsistance ruraux. Le réchauffement ne signifie pas que chaque hiver devient automatiquement plus doux ou que chaque région connaît la même évolution. Il peut au contraire coexister avec des épisodes de froid sévère et des événements extrêmes. L’analyse climatique doit donc distinguer les tendances de long terme, la variabilité annuelle et les événements ponctuels.'
+        ],
+        example: {
+          statement: 'Une zone du Gobi reçoit environ 50 mm de précipitations annuelles, tandis qu’une zone montagneuse du nord peut en recevoir environ 400 mm. Combien de fois la seconde valeur est-elle supérieure à la première ?',
+          calculation: 'Rapport = 400 / 50 = 8.',
+          answer: 'La valeur de 400 mm est 8 fois supérieure à celle de 50 mm. Il s’agit d’une comparaison illustrative entre ordres de grandeur régionaux, et non de deux mesures annuelles fixes.'
+        },
+        exercise: {
+          question: 'Pourquoi un été sec peut-il aggraver les conséquences d’un dzud pendant l’hiver suivant ?',
+          answer: 'Un été sec réduit la croissance des pâturages et les réserves de fourrage. Les animaux disposent donc de moins de ressources lorsque surviennent le froid, la neige ou le verglas hivernaux.'
+        },
+        exercises: [
+          {
+            question: 'Quel facteur explique principalement les fortes amplitudes thermiques saisonnières de la Mongolie ?',
+            answer: 'La continentalité, renforcée par l’éloignement des océans et l’altitude élevée du territoire.'
+          },
+          {
+            question: 'Dans quelle grande région les précipitations sont-elles généralement les plus faibles ?',
+            answer: 'Dans les régions méridionales arides du Gobi.'
+          },
+          {
+            question: 'Que désigne le terme dzud ?',
+            answer: 'Une situation hivernale extrême, pouvant combiner froid intense, neige, glace et difficultés d’accès des troupeaux aux pâturages.'
+          }
+        ],
+        sources: [
+          { title: 'FAO — Climate-smart agriculture and Mongolia', url: 'https://openknowledge.fao.org/3/cb5359en/cb5359en.pdf' },
+          { title: 'FAO — Acting early to save livelihoods in Mongolia', url: 'https://www.fao.org/newsroom/story/Acting-early-to-save-livelihoods-in-Mongolia/en' },
+          { title: 'FAO — Mongolia Country Overview', url: 'https://www.fao.org/in-action/scala/countries/mongolia/en' },
+          { title: 'World Bank — Mongolia’s Economy Recovering, Risks Remain', url: 'https://www.worldbank.org/en/news/press-release/2024/05/10/mongolia-s-economy-recovering-risks-remain-world-bank-report' }
+        ]
+      }
+    },
+    {
+      id: 'eaux-ecosystemes-mongolie',
+      title: 'Les eaux et les écosystèmes : lacs, bassins endoréiques, steppes et forêts',
+      field: 'Hydrographie · Biogéographie · Ressources naturelles',
+      summary: 'Étudier les grands lacs et cours d’eau, la diversité des bassins hydrographiques, les milieux de steppe et de taïga ainsi que la vulnérabilité des ressources en eau.',
+      lesson: {
+        sections: [
+          'La Mongolie ne possède pas de façade maritime et ses eaux se répartissent entre plusieurs grands systèmes hydrographiques. Certains cours d’eau s’écoulent vers le nord et rejoignent le système de la Selenga, qui se déverse dans le lac Baïkal en Russie. D’autres appartiennent à des bassins intérieurs, où l’eau peut rejoindre des lacs sans débouché vers l’océan ou s’évaporer dans des dépressions arides. Cette diversité distingue les bassins à écoulement externe des bassins endoréiques. La disponibilité en eau dépend donc fortement de la localisation, des précipitations, de la fonte nivale et des caractéristiques géologiques locales.',
+          'Le lac Khövsgöl, au nord du pays, est l’un des principaux réservoirs d’eau douce de Mongolie. L’UNESCO indique que 96 rivières et cours d’eau s’y déversent et qu’un seul cours d’eau, l’Eg, en sort. Le lac est intégré à une réserve de biosphère reconnue par l’UNESCO en 2022. Son environnement associe montagnes, taïga, zones humides et prairies de vallée. Cette région joue un rôle écologique important et abrite notamment des espèces animales adaptées aux milieux forestiers et montagnards. La présence d’un grand lac ne signifie pas que l’ensemble du territoire dispose de ressources hydriques abondantes : les ressources sont spatialement contrastées.',
+          'Les écosystèmes mongols forment une transition entre la taïga sibérienne, la steppe et les milieux désertiques. Au nord, les forêts de conifères et les paysages de montagne sont associés à des conditions plus fraîches et relativement humides. Les steppes centrales et orientales sont dominées par des formations herbacées adaptées à des précipitations limitées et à de fortes variations saisonnières. Dans le sud, les végétations deviennent plus clairsemées et adaptées à l’aridité. Ces milieux accueillent une faune spécifique et fournissent des ressources essentielles aux activités pastorales.',
+          'Les ressources en eau sont fragiles en raison de la faible pluviométrie de nombreuses régions, de la forte évaporation estivale et de la variabilité des précipitations. Les cours d’eau et les zones humides peuvent être affectés par les sécheresses, les prélèvements, les activités minières et les changements climatiques. La fonte des neiges et les précipitations estivales jouent un rôle important dans le renouvellement des ressources superficielles. Dans les bassins intérieurs, les équilibres hydrologiques sont particulièrement sensibles, car l’eau ne bénéficie pas nécessairement d’un exutoire vers un grand réseau fluvial océanique.',
+          'La conservation des écosystèmes nécessite de concilier protection de la biodiversité, activités pastorales, tourisme et exploitation des ressources. Les réserves de biosphère de l’UNESCO associent des objectifs de conservation, de recherche et de développement local durable. Le lac Khövsgöl illustre cette approche : les communautés locales dépendent de l’élevage et de certaines activités touristiques, tandis que la qualité de l’eau et la biodiversité nécessitent une gestion attentive. La protection des milieux ne consiste donc pas uniquement à interdire les usages, mais à organiser des pratiques compatibles avec le maintien des fonctions écologiques.'
+        ],
+        example: {
+          statement: 'Selon l’UNESCO, 96 cours d’eau se déversent dans le lac Khövsgöl et un seul, l’Eg, en sort. Quelle différence numérique existe entre les entrées recensées et la sortie ?',
+          calculation: 'Différence = nombre d’entrées − nombre de sorties. 96 − 1 = 95.',
+          answer: 'La différence numérique est de 95. Ce calcul décrit le nombre de cours d’eau mentionnés par l’UNESCO ; il ne mesure pas les volumes d’eau entrants et sortants.'
+        },
+        exercise: {
+          question: 'Pourquoi la présence du lac Khövsgöl ne permet-elle pas de conclure que toute la Mongolie dispose d’une abondante ressource en eau ?',
+          answer: 'Parce que les ressources hydriques sont inégalement réparties. Le nord montagneux et lacustre ne présente pas les mêmes conditions que les régions arides du centre et du sud, et certains bassins sont endoréiques.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel pays se trouve le lac Khövsgöl ?',
+            answer: 'En Mongolie, dans la partie septentrionale du pays.'
+          },
+          {
+            question: 'Qu’est-ce qu’un bassin endoréique ?',
+            answer: 'Un bassin hydrographique dont les eaux ne rejoignent pas directement l’océan ; elles s’accumulent dans des lacs intérieurs ou des dépressions, ou sont perdues par évaporation et infiltration.'
+          },
+          {
+            question: 'Quels sont les trois grands types de milieux qui se succèdent dans les paysages mongols ?',
+            answer: 'Les milieux de taïga et de forêt-steppe au nord, les steppes dans de vastes régions centrales et orientales, puis les milieux arides et désertiques vers le sud.'
+          }
+        ],
+        sources: [
+          { title: 'UNESCO — Khuvsgul Lake Biosphere Reserve', url: 'https://www.unesco.org/en/mab/khuvsgul-lake' },
+          { title: 'National Digital Atlas of Mongolia — Physical Geography', url: 'https://www.mongolianatlas.ac.mn/en/atlas/general' },
+          { title: 'FAO — Mongolia Country Overview', url: 'https://www.fao.org/in-action/scala/countries/mongolia/en' },
+          { title: 'UNCCD — Mongolia Country Overview', url: 'https://data.unccd.int/country-overview?country=MNG' }
+        ]
+      }
+    },
+    {
+      id: 'population-urbanisation-mongolie',
+      title: 'La population mongole : faibles densités, migrations et primauté d’Oulan-Bator',
+      field: 'Géographie humaine · Démographie · Géographie urbaine',
+      summary: 'Analyser la faible densité de population, les contrastes entre espaces ruraux et urbains, la concentration dans la capitale et les transformations des modes de vie.',
+      lesson: {
+        sections: [
+          'La Mongolie est l’un des pays les moins densément peuplés du monde. Son vaste territoire accueille une population nationale de quelques millions d’habitants seulement. Le recensement et les estimations statistiques doivent être interprétés en précisant leur date et leur méthode. Le Bureau national des statistiques indique une population totale de 3 544 800 habitants en 2024 dans son annuaire statistique. D’autres publications peuvent afficher des chiffres légèrement différents, car elles retiennent une population résidente, une estimation de fin d’année ou une estimation à mi-année.',
+          'La population est très inégalement répartie. Oulan-Bator concentre une part considérable des habitants, des emplois, des établissements d’enseignement supérieur, des services spécialisés et des fonctions administratives. Les autres centres urbains, notamment Erdenet et Darkhan, jouent des rôles régionaux importants, mais leur poids démographique reste inférieur à celui de la capitale. Les espaces ruraux sont caractérisés par de faibles densités et des établissements souvent dispersés, ce qui rend plus difficile l’accès régulier aux soins, à l’éducation, aux transports et aux réseaux techniques.',
+          'Selon l’annuaire statistique mongol de 2024, 2 522 200 personnes étaient comptabilisées dans la population urbaine et 1 022 600 dans la population rurale, sur une population totale de 3 544 800 habitants. La capitale Oulan-Bator comptait 1 768 200 habitants dans ce tableau. Ces chiffres montrent une forte concentration urbaine et la place dominante de la capitale. Ils doivent être associés à la définition statistique nationale de la population urbaine et ne sont pas automatiquement interchangeables avec les séries internationales.',
+          'Les migrations internes contribuent à cette concentration. Des ménages quittent les campagnes pour se rapprocher des emplois, des établissements scolaires, des services de santé et des équipements urbains. Les difficultés économiques, les pertes de bétail lors de certains dzud et la fragilité des revenus pastoraux peuvent également favoriser des mobilités vers les villes. Ces déplacements ne sont cependant pas uniquement liés aux catastrophes climatiques : ils résultent aussi de transformations économiques, de choix familiaux et de l’évolution des opportunités régionales.',
+          'La croissance urbaine d’Oulan-Bator pose des défis d’aménagement. L’extension de quartiers périphériques, notamment de secteurs d’habitat traditionnel en ger, augmente les besoins en voirie, en eau, en assainissement, en chauffage et en transports. La concentration des activités et des habitants peut favoriser l’accès aux services, mais elle entraîne aussi congestion, pression foncière et pollution atmosphérique, particulièrement en période froide lorsque les besoins de chauffage sont élevés. La politique urbaine doit donc articuler logement, infrastructures, qualité de l’air et réduction des inégalités territoriales.'
+        ],
+        example: {
+          statement: 'En 2024, l’annuaire statistique mongol indique 1 768 200 habitants à Oulan-Bator pour une population nationale de 3 544 800 habitants. Quelle part de la population cela représente-t-il ?',
+          calculation: 'Part de la capitale = (1 768 200 / 3 544 800) × 100 ≈ 49,9 %.',
+          answer: 'Oulan-Bator rassemble environ 49,9 % de la population indiquée dans l’annuaire statistique de 2024. Le résultat est une proportion calculée à partir des chiffres de cette même source.'
+        },
+        exercise: {
+          question: 'Quels facteurs expliquent la concentration d’une part importante de la population mongole à Oulan-Bator ?',
+          answer: 'La capitale concentre les fonctions administratives, les emplois, les établissements d’enseignement, les services spécialisés et une grande partie des infrastructures. Les migrations internes renforcent cette concentration.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la capitale de la Mongolie ?',
+            answer: 'Oulan-Bator, également transcrit Ulaanbaatar.'
+          },
+          {
+            question: 'Quelle population l’annuaire statistique mongol de 2024 indique-t-il pour Oulan-Bator ?',
+            answer: '1 768 200 habitants dans le tableau de population par ville et par région.'
+          },
+          {
+            question: 'Pourquoi faut-il préciser la source lorsqu’on cite la population de la Mongolie ?',
+            answer: 'Parce que les publications peuvent utiliser des dates de référence et des définitions différentes : population de fin d’année, population résidente ou estimation à mi-année.'
+          }
+        ],
+        sources: [
+          { title: 'National Statistics Office of Mongolia — Statistical Yearbook 2024', url: 'https://www.nso.mn/uploads/1762244920195-Statistical%20Yearbook%202024.pdf' },
+          { title: 'National Statistics Office of Mongolia — Population release, January–December 2024', url: 'https://downloads.1212.mn/-L-R41SQP78-IB_Vi-JEmA-mFxaF1oc6G-kzPwah.pdf' },
+          { title: 'United Nations Statistics Division — UNdata: Mongolia population by urban and rural residence', url: 'https://data.un.org/Data.aspx?d=POP&f=tableCode%3A1%3BcountryCode%3A496' },
+          { title: 'World Bank — Mongolia Data', url: 'https://data.worldbank.org/country/mongolia' }
+        ]
+      }
+    },
+    {
+      id: 'pastoralisme-agriculture-mongolie',
+      title: 'Le pastoralisme et l’agriculture : une économie rurale adaptée aux steppes',
+      field: 'Géographie rurale · Agriculture · Pastoralisme et systèmes alimentaires',
+      summary: 'Comprendre le rôle de l’élevage extensif, la mobilité pastorale, les productions animales et les contraintes climatiques qui affectent les campagnes mongoles.',
+      lesson: {
+        sections: [
+          'L’élevage pastoral occupe une place centrale dans l’histoire et l’organisation des espaces ruraux mongols. Les troupeaux sont composés notamment de moutons, de chèvres, de bovins, de chevaux et de chameaux, avec une composition qui varie selon les milieux. Les éleveurs utilisent les pâturages naturels et adaptent les déplacements des troupeaux à la disponibilité saisonnière de l’herbe et de l’eau. Les pratiques de mobilité permettent de répartir la pression sur les ressources et de tirer parti de pâturages différents selon les saisons. Elles sont toutefois contraintes par les infrastructures, les limites foncières, les conditions météorologiques et l’accès aux marchés.',
+          'Le pastoralisme mongol n’est pas une activité uniforme. Dans les régions montagneuses et forestières du nord, les conditions écologiques diffèrent de celles des steppes centrales ou des milieux arides du Gobi. Les espèces élevées et les pratiques de déplacement s’adaptent à ces différences. Les chameaux sont particulièrement adaptés à certains milieux désertiques, tandis que les chevaux, les moutons, les chèvres et les bovins occupent des fonctions diverses dans les systèmes pastoraux. Les produits issus de l’élevage comprennent la viande, le lait, la laine, le cachemire et les peaux.',
+          'La production de cachemire, issue du duvet des chèvres, relie les territoires pastoraux aux marchés nationaux et internationaux. Elle procure des revenus à de nombreux ménages, mais l’augmentation de la taille des troupeaux caprins peut accentuer la pression sur les pâturages dans certains secteurs. Le problème ne tient pas à une espèce animale prise isolément : il dépend du nombre total d’animaux, de la composition des troupeaux, de la capacité de renouvellement de la végétation, de la gestion des parcours et des conditions climatiques. Une gestion durable suppose donc d’adapter la pression pastorale aux capacités écologiques des milieux.',
+          'L’agriculture végétale est plus localisée et soumise à une saison de croissance courte, aux températures extrêmes et à la disponibilité limitée en eau. Les cultures comprennent notamment des céréales comme le blé, ainsi que des pommes de terre et des légumes. Les zones de culture se trouvent surtout dans les secteurs où les conditions de sol, de température et d’accès à l’eau sont plus favorables. L’agriculture irriguée ou mécanisée peut soutenir certaines productions, mais elle nécessite des investissements et une gestion attentive des ressources hydriques.',
+          'Les risques climatiques peuvent provoquer de fortes variations de production. Une sécheresse estivale réduit les ressources fourragères, tandis qu’un dzud peut empêcher les animaux d’accéder aux pâturages en hiver. La Banque mondiale a indiqué qu’en 2024 la production agricole mongole avait fortement reculé à la suite d’un dzud sévère, tandis que les activités minières et les services soutenaient davantage la croissance globale. La résilience des ménages ruraux dépend de la préparation aux risques, des réserves de fourrage, de la diversification des revenus, des services vétérinaires et de la gestion collective des pâturages.'
+        ],
+        example: {
+          statement: 'Un éleveur possède 300 animaux et répartit son troupeau sur 3 pâturages utilisés successivement. Si la répartition est égale, combien d’animaux utilisent chaque pâturage ?',
+          calculation: 'Nombre d’animaux par pâturage = 300 / 3 = 100.',
+          answer: 'Chaque pâturage accueille 100 animaux dans cet exemple simplifié. Dans la réalité, la répartition dépend de la surface, de la qualité de l’herbe, de l’eau disponible et de la capacité écologique de chaque parcours.'
+        },
+        exercise: {
+          question: 'Pourquoi la mobilité pastorale est-elle importante dans les steppes mongoles ?',
+          answer: 'Elle permet d’utiliser des pâturages différents selon les saisons, de suivre la disponibilité de l’herbe et de l’eau et, lorsqu’elle est bien organisée, de limiter une pression excessive sur un même espace.'
+        },
+        exercises: [
+          {
+            question: 'Cite quatre animaux élevés dans les systèmes pastoraux mongols.',
+            answer: 'Les moutons, les chèvres, les bovins et les chevaux. Les chameaux sont également élevés, notamment dans les régions arides.'
+          },
+          {
+            question: 'De quel animal provient le cachemire ?',
+            answer: 'De la chèvre cachemire, dont on utilise le duvet fin.'
+          },
+          {
+            question: 'Quel effet un dzud peut-il avoir sur les ménages d’éleveurs ?',
+            answer: 'Il peut entraîner des pertes de bétail, réduire les revenus, fragiliser les moyens de subsistance et accélérer les migrations vers les centres urbains.'
+          }
+        ],
+        sources: [
+          { title: 'FAO — Mongolia Country Overview', url: 'https://www.fao.org/in-action/scala/countries/mongolia/en' },
+          { title: 'FAO — Our Office in Mongolia', url: 'https://www.fao.org/mongolia/our-office/en' },
+          { title: 'FAO — Acting early to save livelihoods in Mongolia', url: 'https://www.fao.org/newsroom/story/Acting-early-to-save-livelihoods-in-Mongolia/en' },
+          { title: 'World Bank — Mongolia Economic Update, Building Resilience Amid Risks', url: 'https://openknowledge.worldbank.org/bitstreams/9251497f-4cb0-4c28-918e-5748518f8d29/download' }
+        ]
+      }
+    },
+    {
+      id: 'economie-mines-environnement-mongolie',
+      title: 'Les ressources minières, les transports et les défis du développement durable',
+      field: 'Géographie économique · Ressources naturelles · Environnement et aménagement',
+      summary: 'Étudier le poids des ressources minérales, la dépendance commerciale, les infrastructures de transport et les tensions entre développement économique et protection des milieux.',
+      lesson: {
+        sections: [
+          'La Mongolie possède d’importantes ressources minérales, notamment du charbon, du cuivre, de l’or et d’autres minerais. Le secteur minier est devenu un moteur majeur des exportations, des investissements et des recettes publiques. Des sites comme Oyu Tolgoi, important complexe de cuivre et d’or situé dans le sud du pays, illustrent le poids de l’extraction dans l’économie contemporaine. L’exploitation minière contribue à la croissance, mais elle expose aussi le pays aux fluctuations des prix internationaux et de la demande extérieure.',
+          'La proximité de la Chine joue un rôle déterminant dans la géographie économique mongole. La Chine constitue un débouché majeur pour les exportations de matières premières, en particulier les produits miniers. Cette relation favorise les échanges et le développement de corridors de transport vers les postes-frontières, mais elle crée également une dépendance commerciale importante. La Russie intervient notamment dans les approvisionnements énergétiques et les connexions septentrionales. L’enclavement rend ainsi les infrastructures ferroviaires, routières et frontalières essentielles à la compétitivité du pays.',
+          'Les réseaux de transport sont confrontés à de grandes distances, à des densités de population faibles et à des conditions climatiques difficiles. Le rail joue un rôle important dans l’acheminement des minerais et du charbon, tandis que les routes relient les villes, les centres miniers et les régions pastorales. Les corridors vers la Chine et la Russie structurent les échanges extérieurs. Le développement des infrastructures peut réduire les coûts logistiques et améliorer l’accès aux services, mais il doit aussi prendre en compte les effets sur les habitats naturels, les parcours pastoraux et les ressources en eau.',
+          'La concentration de l’économie sur les matières premières présente plusieurs vulnérabilités. Une baisse des cours ou de la demande peut réduire les recettes d’exportation et les ressources publiques. Les activités extractives peuvent aussi générer des pressions sur l’eau, les sols et les paysages, selon les techniques employées et la qualité du contrôle environnemental. Les retombées économiques ne se diffusent pas automatiquement à l’ensemble des territoires : les emplois, les infrastructures et les revenus peuvent rester concentrés dans certains secteurs et certaines régions. La diversification productive, la formation et le développement des entreprises locales constituent donc des enjeux importants.',
+          'La dégradation des terres et la désertification représentent des défis majeurs. La Convention des Nations unies sur la lutte contre la désertification et les documents nationaux soulignent la vulnérabilité des terres arides et des pâturages. Les facteurs sont multiples : variabilité climatique, sécheresses, pression pastorale localement excessive, érosion des sols et activités humaines. Les pourcentages de terres dégradées publiés par différents organismes ne sont pas nécessairement identiques, car les années de référence, les définitions et les méthodes de mesure diffèrent. Il faut donc toujours citer la source et la méthode plutôt que présenter un chiffre unique comme une mesure incontestable.',
+          'Le développement durable en Mongolie suppose de concilier les revenus tirés des ressources naturelles, la sécurité des moyens de subsistance ruraux et la préservation des écosystèmes. Les réponses possibles comprennent la restauration des pâturages, la gestion adaptée de la taille et de la composition des troupeaux, l’amélioration de l’efficacité hydrique, la surveillance des impacts miniers et la diversification de l’économie. L’adaptation au changement climatique exige également des systèmes d’alerte, des infrastructures résilientes et une meilleure coordination entre les politiques agricoles, énergétiques, urbaines et environnementales.'
+        ],
+        example: {
+          statement: 'Une entreprise exporte 80 000 tonnes de minerai par voie ferroviaire et 20 000 tonnes par voie routière. Quelle est la part du transport ferroviaire dans le volume total exporté ?',
+          calculation: 'Volume total = 80 000 + 20 000 = 100 000 tonnes. Part ferroviaire = (80 000 / 100 000) × 100 = 80 %.',
+          answer: 'Le transport ferroviaire représente 80 % du volume exporté dans cet exemple fictif. Ce calcul illustre une méthode de répartition modale et ne constitue pas une statistique réelle des exportations mongoles.'
+        },
+        exercise: {
+          question: 'Pourquoi la dépendance de la Mongolie aux exportations minières peut-elle rendre son économie vulnérable ?',
+          answer: 'Parce que les recettes et la croissance dépendent fortement des cours internationaux des matières premières et de la demande des pays acheteurs. Une baisse des prix ou des volumes exportés peut affecter les revenus, les investissements et les finances publiques.'
+        },
+        exercises: [
+          {
+            question: 'Cite deux ressources minérales importantes exploitées en Mongolie.',
+            answer: 'Le charbon et le cuivre. L’or constitue également une ressource importante.'
+          },
+          {
+            question: 'Pourquoi les relations commerciales avec la Chine sont-elles essentielles pour la Mongolie ?',
+            answer: 'La Chine est un débouché majeur pour les exportations mongoles, notamment les matières premières, et sa proximité facilite les échanges terrestres.'
+          },
+          {
+            question: 'Pourquoi les chiffres relatifs à la désertification doivent-ils toujours être accompagnés de leur source et de leur année ?',
+            answer: 'Parce que les organismes peuvent utiliser des définitions, des périodes de référence et des méthodes de mesure différentes. Les résultats ne sont donc pas directement comparables sans précaution.'
+          }
+        ],
+        sources: [
+          { title: 'World Bank — Mongolia Overview', url: 'https://www.worldbank.org/ext/en/country/mongolia' },
+          { title: 'World Bank — Mining and Agricultural Recovery Drive Mongolia’s Economic Growth', url: 'https://www.worldbank.org/en/news/press-release/2025/05/23/world-bank-mining-and-agricultural-recovery-drive-mongolia-s-economic-growth' },
+          { title: 'International Fund for Agricultural Development — Mongolia Country Strategy Note 2025–2026', url: 'https://www.ifad.org/documents/48415603/50532711/Mongolia%2BCountry%2BStrategy%2BNote%2B2025_2026_0010-1277934786-962.pdf/614acca6-ad29-638b-1f16-89461f6cf889?t=1737106879067' },
+          { title: 'UNCCD — Mongolia Country Overview and Land Degradation Data', url: 'https://data.unccd.int/country-overview?country=MNG' },
+          { title: 'FAO — Mongolia Country Overview and Climate Adaptation', url: 'https://www.fao.org/in-action/scala/countries/mongolia/en' }
+        ]
+      }
+    }
+  ]
+},
+
 
 
 ]
