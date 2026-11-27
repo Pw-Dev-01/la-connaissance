@@ -5524,6 +5524,682 @@ window.courseCatalog = [
 },
 
 
+{
+  id: 'scandinavie',
+  title: 'Scandinavie : territoires, milieux naturels et sociétés',
+  note: 'Six chapitres approfondis sur la géographie de la Scandinavie au sens strict, composée du Danemark, de la Norvège et de la Suède. La péninsule Scandinave comprend principalement la Norvège et la Suède ; le Danemark appartient à la région culturelle et géographique scandinave sans se trouver sur cette péninsule. La Finlande et l’Islande relèvent de l’ensemble nordique, mais ne sont pas incluses ici dans la définition stricte de la Scandinavie. Les données statistiques sont datées lorsqu’elles sont utilisées et les caractéristiques régionales ne doivent pas être généralisées à tout le territoire.',
+  chapters: [
+    {
+      id: 'scandinavie-espace-et-territoires',
+      title: 'Situer la Scandinavie : pays, péninsule et façades maritimes',
+      field: 'Géographie régionale · Europe du Nord',
+      summary: 'Délimiter la Scandinavie, distinguer la péninsule Scandinave de la région scandinave et comprendre l’organisation de ses trois États autour des mers nordiques et de la Baltique.',
+      lesson: {
+        sections: [
+          'Dans son sens géographique et culturel le plus courant, la Scandinavie regroupe trois États : le Danemark, la Norvège et la Suède. Cette définition doit être distinguée de celle des pays nordiques, qui comprend également la Finlande et l’Islande, ainsi que les territoires autonomes associés à certains États nordiques. La Finlande et l’Islande ne sont donc pas intégrées à cette branche consacrée à la Scandinavie au sens strict. Cette précision évite de confondre une région historique et culturelle avec un ensemble de coopération plus vaste.',
+          'La péninsule Scandinave est constituée principalement de la Norvège et de la Suède. Elle s’étire sur environ 1 850 km du nord au sud. La mer de Norvège et l’Atlantique Nord bordent sa façade occidentale, tandis que le golfe de Botnie et la mer Baltique se trouvent à l’est. Au nord, elle s’approche de la mer de Barents. Le Danemark occupe une position différente : il est situé au sud de la péninsule, entre la mer du Nord et la Baltique, et comprend la péninsule du Jutland ainsi qu’un ensemble d’îles. Il constitue un espace de passage entre l’Europe continentale et la Scandinavie péninsulaire.',
+          'Les trois pays présentent des formes territoriales contrastées. La Norvège est longue, étroite et fortement découpée par les fjords ; la Suède occupe une grande partie orientale de la péninsule et possède de vastes plaines, des plateaux, des forêts et de nombreux lacs ; le Danemark est un territoire de faible altitude, composé du Jutland et d’îles. Les détroits danois, notamment l’Øresund, le Grand Belt et le Petit Belt, relient les espaces maritimes de la mer du Nord et de la Baltique. Cette position donne au Danemark un rôle important dans les circulations maritimes régionales.',
+          'Les frontières politiques ne correspondent pas toujours aux continuités naturelles. La chaîne des Alpes scandinaves suit une grande partie de la limite entre la Norvège et la Suède, mais les échanges, les réseaux de transport et les bassins de peuplement traversent cette séparation. La région se comprend donc à plusieurs échelles : les États, la péninsule, les façades maritimes, les bassins urbains et l’ensemble nordique. En géographie, préciser l’échelle et la définition retenue est indispensable pour comparer correctement les territoires.',
+          'Les capitales et les principales métropoles structurent les réseaux régionaux. Copenhague est située à proximité du détroit de l’Øresund ; Malmö lui fait face sur la rive suédoise et est reliée à elle par le pont de l’Øresund. Stockholm se développe sur un archipel de la côte orientale suédoise, au contact de la mer Baltique et du lac Mälar. Oslo se situe au fond de l’Oslofjord, dans le sud-est de la Norvège. Ces implantations montrent l’importance des littoraux et des voies maritimes dans l’organisation des villes scandinaves.'
+        ],
+        example: {
+          statement: 'Un document présente la Norvège, la Suède, le Danemark, la Finlande et l’Islande comme les cinq pays de la Scandinavie. Quelle correction géographique faut-il apporter ?',
+          calculation: 'Il faut distinguer la Scandinavie au sens strict, qui regroupe 3 pays, de l’ensemble nordique, qui en regroupe 5 : Danemark, Finlande, Islande, Norvège et Suède.',
+          answer: 'La Scandinavie au sens strict comprend le Danemark, la Norvège et la Suède. La Finlande et l’Islande appartiennent à l’ensemble nordique, plus vaste. La péninsule Scandinave, quant à elle, comprend principalement la Norvège et la Suède.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer la Scandinavie, la péninsule Scandinave et les pays nordiques ?',
+          answer: 'Ces termes ne désignent pas exactement les mêmes espaces : la Scandinavie au sens strict regroupe le Danemark, la Norvège et la Suède ; la péninsule Scandinave correspond principalement aux territoires norvégien et suédois ; l’ensemble nordique comprend aussi la Finlande et l’Islande, ainsi que des territoires autonomes associés.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les 3 pays de la Scandinavie au sens strict ?',
+            answer: 'Le Danemark, la Norvège et la Suède.'
+          },
+          {
+            question: 'Quels sont les 2 principaux États occupant la péninsule Scandinave ?',
+            answer: 'La Norvège à l’ouest et la Suède à l’est.'
+          },
+          {
+            question: 'Quel détroit sépare notamment Copenhague de Malmö ?',
+            answer: 'L’Øresund.'
+          },
+          {
+            question: 'Pourquoi le Danemark est-il un carrefour maritime ?',
+            answer: 'Parce que ses péninsules, ses îles et ses détroits se trouvent entre la mer du Nord et la mer Baltique.'
+          }
+        ],
+        sources: [
+          { title: 'Cambridge Dictionary — Scandinavia', url: 'https://dictionary.cambridge.org/dictionary/english/scandinavia' },
+          { title: 'VisitNordic — Where is Scandinavia?', url: 'https://www.visitnordic.com/en/article/where-is-scandinavia' },
+          { title: 'European Space Agency — Scandinavian Peninsula', url: 'https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Earth_from_Space_Scandinavian_Peninsula' },
+          { title: 'Nordic Co-operation — Facts about Denmark', url: 'https://www.norden.org/en/information/facts-about-denmark' }
+        ]
+      }
+    },
+    {
+      id: 'reliefs-geologie-et-glaciations',
+      title: 'Reliefs, structures géologiques et héritage des glaciations',
+      field: 'Géographie physique · Géomorphologie et géologie',
+      summary: 'Étudier les contrastes entre montagnes norvégiennes, plateaux et plaines suédoises, reliefs bas danois et formes héritées des glaciers quaternaires.',
+      lesson: {
+        sections: [
+          'Le relief scandinave est marqué par un contraste entre la façade occidentale montagneuse et découpée de la Norvège, les régions intérieures et orientales plus étendues de la Suède, et les faibles altitudes du Danemark. Les Alpes scandinaves forment une longue zone montagneuse qui longe en partie la frontière norvégo-suédoise. Elles ne constituent pas une chaîne uniforme : elles comprennent des massifs, des hauts plateaux, des vallées et des sommets dont l’altitude varie fortement. Le Galdhøpiggen, en Norvège, atteint 2 469 m et constitue le point culminant du pays.',
+          'L’histoire géologique de la région est ancienne et complexe. Les roches du socle scandinave comprennent notamment des terrains très anciens du Bouclier baltique, remaniés au cours de plusieurs épisodes tectoniques. La formation de la chaîne calédonienne, liée à la convergence et à la collision d’anciens continents durant le Paléozoïque, a contribué à édifier les reliefs de l’ouest de la péninsule. Depuis, l’érosion a profondément transformé ces montagnes. Les reliefs actuels ne sont donc pas simplement des montagnes jeunes et intactes : ils résultent d’une longue histoire de soulèvements, de déformations et d’érosion.',
+          'Les glaciations du Quaternaire ont joué un rôle majeur dans la mise en forme des paysages. Des calottes glaciaires ont recouvert de vastes parties de la Scandinavie pendant les périodes froides. Les glaciers ont érodé les vallées, arraché et transporté des matériaux, puis déposé des sédiments lors de leur retrait. Les vallées en U, les moraines, les lacs d’origine glaciaire et les surfaces rocheuses polies témoignent de cette histoire. Les fjords norvégiens sont des vallées glaciaires profondes envahies par la mer après le retrait des glaces ; leur formation dépend aussi de la structure du substrat rocheux et de l’érosion antérieure.',
+          'La côte norvégienne présente des fjords, des îles et des archipels. Le Sognefjord, dans le sud-ouest du pays, est un exemple de fjord très profond et très long. À l’inverse, une grande partie de la Suède possède des reliefs moins abrupts, des plaines ondulées et de nombreux lacs, même si les régions septentrionales et occidentales sont montagneuses. Au Danemark, les paysages sont surtout constitués de plaines, de collines modestes, de dépôts glaciaires et de littoraux bas. Les falaises, dunes, plages et marais littoraux y sont des formes importantes, mais les reliefs restent peu élevés.',
+          'Le retrait des grandes calottes glaciaires a également entraîné un ajustement isostatique : la croûte terrestre, auparavant enfoncée sous le poids de la glace, remonte progressivement après la disparition de cette charge. Ce phénomène est particulièrement visible dans le golfe de Botnie et sur les côtes du nord de la Suède et de la Finlande. Il modifie localement les rivages, les baies et les ports au fil du temps. L’observation des paysages scandinaves permet ainsi de relier les formes visibles aujourd’hui aux processus géologiques et climatiques qui les ont produites.'
+        ],
+        example: {
+          statement: 'Pourquoi trouve-t-on de longues vallées profondes et des fjords sur la côte occidentale de la Norvège ?',
+          calculation: 'La succession des processus peut être résumée ainsi : vallées anciennes et structures rocheuses, approfondissement par l’érosion glaciaire, retrait des glaciers, puis invasion des vallées basses par la mer.',
+          answer: 'Les fjords sont principalement d’anciennes vallées glaciaires approfondies par l’érosion des glaciers puis envahies par la mer après la déglaciation. La structure du substrat rocheux et l’érosion fluviale ont également contribué à leur évolution.'
+        },
+        exercise: {
+          question: 'Cite 3 formes de relief ou de paysage qui témoignent de l’action des glaciers en Scandinavie.',
+          answer: 'Les fjords, les vallées en U et les moraines. On peut également citer les lacs glaciaires et les roches polies ou striées.'
+        },
+        exercises: [
+          {
+            question: 'Dans quel pays se trouve le Galdhøpiggen, point culminant de la Scandinavie ?',
+            answer: 'En Norvège ; il atteint 2 469 m.'
+          },
+          {
+            question: 'Quelle est l’origine principale des fjords norvégiens ?',
+            answer: 'Ce sont d’anciennes vallées fortement creusées par les glaciers, puis envahies par la mer.'
+          },
+          {
+            question: 'Qu’est-ce qu’une moraine ?',
+            answer: 'Un dépôt de matériaux rocheux transportés puis abandonnés par un glacier.'
+          },
+          {
+            question: 'Qu’appelle-t-on ajustement isostatique postglaciaire ?',
+            answer: 'La remontée progressive de la croûte terrestre après la disparition du poids des anciennes calottes glaciaires.'
+          }
+        ],
+        sources: [
+          { title: 'European Space Agency — Scandinavian Peninsula', url: 'https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Earth_from_Space_Scandinavian_Peninsula' },
+          { title: 'International Union of Geological Sciences — Fjords of Norway', url: 'https://iugs-geoheritage.org/geoheritage_sites/fjords-of-norway/' },
+          { title: 'Geological Survey of Norway — Glacial landforms and Quaternary landscape development in Norway', url: 'https://static.ngu.no/upload/publikasjoner/Special%20publication/SP13_s5-26.pdf' },
+          { title: 'Nordic Co-operation — Facts about Norway', url: 'https://www.norden.org/en/information/facts-about-norway' }
+        ]
+      }
+    },
+    {
+      id: 'climats-et-dynamiques-atmospheriques',
+      title: 'Les climats scandinaves et leurs facteurs explicatifs',
+      field: 'Climatologie · Latitudes, circulation atmosphérique et influence océanique',
+      summary: 'Expliquer les contrastes climatiques entre les façades océaniques, les régions intérieures, le sud danois et les territoires septentrionaux.',
+      lesson: {
+        sections: [
+          'La Scandinavie s’étend sur une grande amplitude latitudinale, ce qui explique une partie importante de ses contrastes climatiques. Le sud du Danemark et de la Suède connaît des conditions tempérées, tandis que le nord de la Suède et de la Norvège présente des conditions plus froides, pouvant devenir subarctiques dans les régions septentrionales et en altitude. La latitude ne suffit toutefois pas à expliquer les températures : l’altitude, la distance à la mer, l’exposition des versants et la circulation atmosphérique modifient fortement les conditions locales.',
+          'L’Atlantique Nord exerce une influence modératrice sur les façades occidentales. Les masses d’air océaniques et les courants de l’Atlantique Nord contribuent à rendre certaines côtes norvégiennes moins froides en hiver que d’autres régions situées à des latitudes comparables. Les vents dominants d’ouest apportent fréquemment de l’humidité. Lorsqu’ils rencontrent les reliefs norvégiens, les masses d’air sont forcées de s’élever, se refroidissent et peuvent provoquer d’importantes précipitations sur les versants exposés. Ce mécanisme explique les forts contrastes entre la côte occidentale humide et certains secteurs situés à l’abri des montagnes.',
+          'La chaîne montagneuse crée en effet un effet d’abri pluviométrique. L’air qui a perdu une partie de son humidité sur le versant occidental redescend vers l’est et se réchauffe, ce qui tend à limiter les précipitations sur certains espaces intérieurs. La Suède présente ainsi des secteurs plus continentaux à l’est des montagnes, avec des écarts saisonniers de température plus marqués que sur certaines côtes. Dans le nord, les hivers sont longs et froids, tandis que la durée du jour varie fortement au fil des saisons en raison de la latitude.',
+          'Le Danemark possède un climat tempéré à dominante maritime. L’influence des mers, les vents d’ouest et le passage fréquent des perturbations contribuent à des conditions changeantes, avec des hivers généralement moins rigoureux que dans les régions continentales situées à la même latitude et des étés souvent modérés. La proximité de la mer limite les écarts thermiques entre les saisons, sans supprimer les épisodes de froid, de vent ou de chaleur. Les conditions varient également entre la façade occidentale du Jutland et les îles orientales.',
+          'La Scandinavie connaît de fortes variations saisonnières de l’ensoleillement. Au-delà du cercle polaire arctique, le soleil peut rester au-dessus de l’horizon pendant une partie de l’été : c’est le soleil de minuit. En hiver, la nuit polaire concerne les secteurs situés suffisamment au nord. Ces phénomènes dépendent de la latitude et de l’inclinaison de l’axe terrestre, et non d’une particularité locale du climat. Ils influencent les rythmes de vie, les activités touristiques et certaines pratiques économiques. Enfin, le réchauffement climatique modifie les températures, l’enneigement, les glaciers et les écosystèmes ; ses effets ne sont pas identiques dans toutes les parties de la région.'
+        ],
+        example: {
+          statement: 'Deux localités situées à des latitudes proches, l’une sur la côte ouest de la Norvège et l’autre à l’intérieur de la Suède, peuvent-elles connaître des précipitations et des températures différentes ?',
+          calculation: 'Il faut comparer au moins 4 facteurs : proximité de l’Atlantique, exposition aux vents dominants, altitude et position par rapport à la chaîne montagneuse.',
+          answer: 'Oui. La côte occidentale norvégienne reçoit fréquemment des masses d’air océaniques humides et connaît des précipitations importantes sur les versants exposés. Certains secteurs intérieurs suédois sont davantage abrités et présentent des caractéristiques plus continentales, avec des écarts saisonniers de température plus marqués.'
+        },
+        exercise: {
+          question: 'Explique le rôle des Alpes scandinaves dans la répartition des précipitations.',
+          answer: 'Les reliefs obligent les masses d’air humides venant de l’ouest à s’élever. Leur refroidissement favorise les précipitations sur les versants exposés. Une partie de l’air redescend ensuite plus sèche du côté intérieur, créant un effet d’abri pluviométrique.'
+        },
+        exercises: [
+          {
+            question: 'Quel océan influence fortement le climat de la façade occidentale de la Norvège ?',
+            answer: 'L’océan Atlantique Nord.'
+          },
+          {
+            question: 'Pourquoi certaines régions de l’est de la chaîne scandinave sont-elles moins arrosées que la côte occidentale ?',
+            answer: 'Parce qu’elles se trouvent en partie sous le vent des reliefs, qui ont déjà provoqué une perte d’humidité des masses d’air sur leurs versants occidentaux.'
+          },
+          {
+            question: 'Quel phénomène astronomique explique le soleil de minuit ?',
+            answer: 'L’inclinaison de l’axe terrestre combinée à la latitude élevée, qui maintient le soleil au-dessus de l’horizon pendant une partie de l’été au nord du cercle polaire.'
+          },
+          {
+            question: 'Le Danemark possède-t-il le même climat que le nord de la Norvège ?',
+            answer: 'Non. Le Danemark connaît un climat tempéré à dominante maritime, tandis que le nord de la Norvège présente des conditions beaucoup plus froides, pouvant être subarctiques.'
+          }
+        ],
+        sources: [
+          { title: 'Norwegian Government — Norway’s First Biennial Transparency Report, Climate Profile', url: 'https://www.regjeringen.no/en/documents/norways-first-biennial-transparency-report-under-the-paris-agreement/id3086147/?ch=4' },
+          { title: 'SMHI — Sveriges klimat', url: 'https://www.smhi.se/kunskapsbanken/klimat/sveriges-klimat/' },
+          { title: 'Danish Meteorological Institute — Typisk vejr i Danmark', url: 'https://www.dmi.dk/kontakt/spoergsmaal-og-svar/typisk-vejr-i-danmark' },
+          { title: 'Swedish University of Agricultural Sciences — Climate', url: 'https://www.slu.se/en/about-slu/organisation/departments/soil-environment/environmental-monitoring/markinfo-eng/site/climate/' }
+        ]
+      }
+    },
+    {
+      id: 'milieux-naturels-et-ressources',
+      title: 'Milieux naturels, biodiversité et ressources environnementales',
+      field: 'Biogéographie · Écosystèmes, forêts, eaux et littoraux',
+      summary: 'Identifier les grands milieux naturels scandinaves et comprendre comment le climat, le relief et les usages humains déterminent leur répartition.',
+      lesson: {
+        sections: [
+          'Les milieux naturels scandinaves varient du sud tempéré aux régions subarctiques du nord. Dans les parties méridionales du Danemark et de la Suède dominent des paysages agricoles, des forêts tempérées et des prairies, même si les milieux naturels ont été fortement transformés par les activités humaines. Plus au nord, les forêts boréales, composées notamment de conifères et de bouleaux, occupent de vastes espaces. À proximité des hautes latitudes et au-dessus de la limite des arbres, la toundra et les landes montagnardes prennent davantage d’importance.',
+          'La forêt constitue une ressource majeure, mais sa répartition est très inégale. Les données forestières nordiques publiées en 2026 à partir de références de 2025 indiquent une couverture forestière d’environ 68,6 % de la superficie terrestre de la Suède, 33,2 % de celle de la Norvège et 16,1 % de celle du Danemark. Ces proportions ne signifient pas que toutes les forêts sont identiques ni qu’elles sont toutes exploitées de la même manière. La topographie, le climat, les sols, les règles de protection et les pratiques sylvicoles déterminent les usages possibles.',
+          'Les eaux douces occupent une place importante dans les paysages suédois et norvégiens. Les lacs, les cours d’eau, les zones humides et les glaciers participent au fonctionnement des bassins versants. En Norvège, les fortes pentes et les précipitations de certaines régions favorisent un réseau hydrographique énergique, utilisé notamment pour la production hydroélectrique. En Suède, les nombreux lacs et cours d’eau structurent les paysages et constituent des ressources pour les populations, les activités économiques et les écosystèmes. Les zones humides jouent également un rôle dans le stockage de l’eau et le maintien de la biodiversité.',
+          'Les littoraux sont très diversifiés. La côte norvégienne associe fjords, falaises, îles et archipels ; les côtes suédoises alternent secteurs rocheux, archipels et rivages plus bas ; le Danemark présente de longues côtes sableuses, des dunes, des lagunes et des secteurs de marais. Les eaux de la mer Baltique sont relativement peu salées par rapport à celles de l’Atlantique, car elles reçoivent des apports d’eau douce et connaissent des échanges limités avec l’océan. Cette faible salinité influence les espèces capables de vivre dans cet environnement particulier.',
+          'La biodiversité est soumise à plusieurs pressions : fragmentation des habitats par les infrastructures, exploitation forestière, pollution, eutrophisation de certaines eaux, espèces exotiques envahissantes et changement climatique. Les écosystèmes arctiques et montagnards sont particulièrement sensibles au réchauffement, car les espèces adaptées au froid peuvent voir leurs habitats se réduire. Les politiques de conservation reposent notamment sur les parcs nationaux, les réserves, la gestion des forêts et la protection des milieux marins. La protection de la nature doit toutefois être conciliée avec les activités des habitants, les usages traditionnels et les besoins économiques.'
+        ],
+        example: {
+          statement: 'Comparer la place de la forêt dans les 3 pays scandinaves à partir des parts forestières publiées dans Nordic Forest Statistics 2026.',
+          calculation: 'Suède : 68,6 % ; Norvège : 33,2 % ; Danemark : 16,1 %. L’écart entre la Suède et le Danemark est de 68,6 - 16,1 = 52,5 points de pourcentage.',
+          answer: 'La forêt occupe une part beaucoup plus importante du territoire suédois que des territoires norvégien et danois. Ces différences reflètent notamment les conditions naturelles et les usages des sols. Les chiffres cités sont ceux de la publication Nordic Forest Statistics 2026, fondée sur les références forestières de 2025.'
+        },
+        exercise: {
+          question: 'Pourquoi les milieux naturels changent-ils entre le sud du Danemark et le nord de la Scandinavie ?',
+          answer: 'Parce que la latitude, les températures, la durée de la saison de végétation, les précipitations, l’altitude et les sols varient. Les forêts tempérées et les paysages agricoles du sud laissent progressivement place aux forêts boréales, aux landes et à la toundra dans les régions plus froides.'
+        },
+        exercises: [
+          {
+            question: 'Quel grand type de forêt domine dans une grande partie des régions froides de Suède et de Norvège ?',
+            answer: 'La forêt boréale, ou taïga, dominée par les conifères et comprenant aussi des bouleaux.'
+          },
+          {
+            question: 'Quel pays scandinave présente la plus forte proportion de territoire forestier dans les données citées ?',
+            answer: 'La Suède, avec environ 68,6 % de couverture forestière dans Nordic Forest Statistics 2026, sur la base des références de 2025.'
+          },
+          {
+            question: 'Pourquoi la mer Baltique est-elle moins salée que l’Atlantique ?',
+            answer: 'Parce qu’elle reçoit d’importants apports d’eau douce des fleuves et que les échanges avec l’océan sont limités.'
+          },
+          {
+            question: 'Cite 2 pressions qui peuvent fragiliser les écosystèmes scandinaves.',
+            answer: 'La fragmentation des habitats par les infrastructures et le changement climatique. On peut aussi citer la pollution, l’exploitation forestière ou l’eutrophisation.'
+          }
+        ],
+        sources: [
+          { title: 'Nordic Council of Ministers — Nordic Forest Statistics 2026', url: 'https://pub.norden.org/temanord2026-531/introduction.html' },
+          { title: 'Nordic Council of Ministers — Nordic Forest Statistics 2026, Summary', url: 'https://pub.norden.org/temanord2026-531/summary.html' },
+          { title: 'European Environment Agency — Europe’s environment 2025: Norway', url: 'https://www.eea.europa.eu/en/europe-environment-2025/countries/norway/' },
+          { title: 'Statistics Norway — Land use and land cover', url: 'https://www.ssb.no/en/natur-og-miljo/areal/statistikk/arealbruk-og-arealressurser' }
+        ]
+      }
+    },
+    {
+      id: 'populations-villes-et-organisation-territoriale',
+      title: 'Populations, villes et organisation des territoires',
+      field: 'Géographie humaine · Démographie, peuplement et urbanisation',
+      summary: 'Analyser la répartition des habitants, le rôle des métropoles, les contrastes entre littoraux et intérieurs et les évolutions démographiques.',
+      lesson: {
+        sections: [
+          'La population scandinave est inégalement répartie. Les régions méridionales et les littoraux concentrent une part importante des habitants, des activités et des infrastructures. Les espaces montagneux, forestiers et septentrionaux sont généralement moins densément peuplés. Cette répartition s’explique par plusieurs facteurs : conditions climatiques, relief, possibilités agricoles, accessibilité, histoire du peuplement et localisation des emplois. Il serait toutefois inexact de considérer les régions du nord comme vides : elles accueillent des villes, des communautés locales, des activités économiques et des populations autochtones.',
+          'Les principales villes organisent les réseaux de transport, les services, les universités et les activités économiques. Stockholm est la capitale et le principal centre urbain de la Suède ; Oslo joue un rôle majeur dans le sud-est norvégien ; Copenhague est le centre politique et économique du Danemark. D’autres villes, comme Göteborg, Malmö, Bergen, Trondheim et Aarhus, structurent leurs régions respectives. Leur développement est lié à des fonctions différentes : ports, industrie, administration, recherche, commerce et services.',
+          'Les relations entre villes sont renforcées par les infrastructures terrestres et maritimes. Le pont de l’Øresund, ouvert en 2000, relie la région de Copenhague à celle de Malmö et facilite les déplacements transfrontaliers. Les liaisons ferroviaires, routières et maritimes relient également les grands pôles de la péninsule et les ports. Les distances, les reliefs et les conditions hivernales rendent cependant les transports plus difficiles dans certains espaces septentrionaux ou montagneux. L’accessibilité varie donc fortement selon les régions.',
+          'Les données démographiques doivent toujours être accompagnées d’une date et d’un périmètre. À titre de repère, les statistiques nordiques indiquent que l’ensemble des pays et territoires nordiques comptait environ 28,3 millions d’habitants au 1er janvier 2025. Ce chiffre concerne l’ensemble nordique et non la seule Scandinavie stricte : il ne doit donc pas être présenté comme la population des seuls Danemark, Norvège et Suède. Les statistiques distinguent également la croissance naturelle, qui correspond à la différence entre naissances et décès, et le solde migratoire, qui correspond à la différence entre entrées et sorties du territoire.',
+          'Les territoires scandinaves connaissent des enjeux démographiques différenciés : vieillissement de la population, attractivité des grandes villes, maintien des services dans les petites communes et accès à l’emploi dans les régions éloignées. Les mobilités internes et internationales modifient la composition des populations et les besoins en logements, en transports et en équipements. Dans le nord de la péninsule, les questions d’aménagement doivent également prendre en compte les activités et les droits des populations sámies, peuple autochtone présent dans plusieurs États nordiques, ainsi que les usages pastoraux, miniers et forestiers des territoires.'
+        ],
+        example: {
+          statement: 'Une carte de la région nordique affiche 28,3 millions d’habitants au 1er janvier 2025. Peut-on utiliser directement ce nombre comme population de la Scandinavie ?',
+          calculation: 'Il faut vérifier le périmètre statistique avant toute utilisation. La région nordique inclut le Danemark, la Finlande, l’Islande, la Norvège, la Suède et les territoires autonomes associés.',
+          answer: 'Non. Les 28,3 millions correspondent à l’ensemble nordique au 1er janvier 2025, et non aux seuls Danemark, Norvège et Suède. Pour calculer la population de la Scandinavie stricte, il faut additionner les données nationales de ces 3 pays pour une même date de référence.'
+        },
+        exercise: {
+          question: 'Pourquoi les populations se concentrent-elles davantage dans le sud et sur certains littoraux scandinaves ?',
+          answer: 'Ces espaces offrent généralement des conditions climatiques moins contraignantes, des terrains plus favorables aux activités et aux infrastructures, ainsi qu’un accès plus direct aux ports, aux emplois et aux grands réseaux urbains.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les capitales des 3 pays scandinaves ?',
+            answer: 'Copenhague pour le Danemark, Oslo pour la Norvège et Stockholm pour la Suède.'
+          },
+          {
+            question: 'Quelle infrastructure relie les régions de Copenhague et de Malmö ?',
+            answer: 'Le pont de l’Øresund, qui comprend une liaison routière et ferroviaire.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre croissance naturelle et solde migratoire ?',
+            answer: 'La croissance naturelle correspond à la différence entre les naissances et les décès ; le solde migratoire correspond à la différence entre les immigrations et les émigrations.'
+          },
+          {
+            question: 'Pourquoi le chiffre de 28,3 millions d’habitants en 2025 ne correspond-il pas à la seule Scandinavie ?',
+            answer: 'Parce qu’il concerne l’ensemble nordique, qui comprend aussi la Finlande, l’Islande et des territoires autonomes associés.'
+          }
+        ],
+        sources: [
+          { title: 'Nordic Statistics — The Nordic population 2025', url: 'https://www.nordicstatistics.org/news/the-nordic-population-2025/' },
+          { title: 'Nordic Statistics — Demography', url: 'https://www.nordicstatistics.org/areas/demography/' },
+          { title: 'Nordregio — State of the Nordic Region 2026: Population change', url: 'https://pub.nordregio.org/r-2026-2-state-of-the-nordic-region-2026/population-change-in-the-nordic-region.html' },
+          { title: 'Norwegian Government — Norway’s Eighth National Communication, Population and Geographic Profile', url: 'https://www.regjeringen.no/en/documents/norways-eighth-national-communication/id2971116/?ch=2' },
+          { title: 'OECD — Environment at a Glance: Sweden', url: 'https://www.oecd.org/en/publications/environment-at-a-glance-country-notes_59ce6fe6-en/sweden_64133672-en.html' }
+        ]
+      }
+    },
+    {
+      id: 'activites-economiques-energies-et-echanges',
+      title: 'Activités économiques, ressources énergétiques et échanges',
+      field: 'Géographie économique · Industries, agriculture, énergie et transports',
+      summary: 'Comprendre comment les ressources naturelles, les façades maritimes, les réseaux et les spécialisations productives structurent les économies scandinaves.',
+      lesson: {
+        sections: [
+          'Les économies scandinaves sont développées et fortement intégrées aux échanges internationaux, mais leurs spécialisations diffèrent. La Norvège tire une part importante de ses recettes d’exportation de l’exploitation offshore du pétrole et du gaz, ainsi que des produits de la pêche et de l’aquaculture. Les activités maritimes, les services et les industries liées à l’énergie jouent également un rôle important. Cette spécialisation s’explique en partie par la géographie : une longue façade maritime, des ressources énergétiques en mer et des conditions favorables à certaines activités halieutiques.',
+          'La Suède possède une base industrielle diversifiée. Les ressources forestières, le minerai de fer et l’hydroélectricité ont contribué au développement d’activités comme la métallurgie, la sidérurgie, la pâte à papier, le bois, la mécanique et la construction de véhicules. Les services, la recherche et les industries technologiques occupent également une place importante. La présence de ressources naturelles ne suffit cependant pas à expliquer la puissance industrielle : les infrastructures, la formation, les investissements, l’innovation et l’accès aux marchés sont aussi déterminants.',
+          'Le Danemark se distingue par l’importance de ses terres agricoles, de ses activités agroalimentaires, de ses services et de son économie maritime. Son relief peu élevé et ses sols favorables à l’agriculture permettent une mise en valeur agricole relativement intensive. Sa position entre la mer du Nord et la Baltique favorise les activités portuaires, le transport maritime et les échanges. Le pays a également développé une filière importante dans l’énergie éolienne, notamment en mer. Cette activité s’inscrit dans une stratégie de diversification énergétique et de réduction des émissions, même si la transition énergétique nécessite des réseaux et des capacités de stockage adaptés.',
+          'Les ressources énergétiques ne sont pas réparties de manière uniforme. En Norvège, les reliefs, les précipitations et les cours d’eau favorisent l’hydroélectricité ; le pétrole et le gaz proviennent principalement de gisements offshore. En Suède, le système électrique repose notamment sur l’hydroélectricité et le nucléaire, avec une contribution de la bioénergie et de l’éolien. Au Danemark, l’éolien occupe une place majeure dans la production électrique. Il faut distinguer la production d’électricité, la consommation totale d’énergie et les exportations d’énergie : ces indicateurs ne mesurent pas la même chose.',
+          'Les échanges reposent sur des réseaux portuaires, routiers, ferroviaires et aériens. Les ports de Göteborg, Oslo, Copenhague et Aarhus participent aux échanges régionaux et internationaux, tandis que les corridors ferroviaires et routiers relient les métropoles scandinaves au reste de l’Europe. Le corridor européen Scandinavie-Méditerranée illustre cette intégration : il associe des liaisons terrestres et maritimes entre le nord de l’Europe et le sud du continent. Les contraintes naturelles, notamment les fjords, les montagnes, les distances et les conditions hivernales, influencent le coût et l’organisation des transports.',
+          'Le développement économique soulève enfin des questions d’aménagement durable. L’exploitation des hydrocarbures contribue aux revenus et aux exportations norvégiennes, mais elle pose la question de la dépendance aux énergies fossiles et des émissions liées à leur utilisation. La gestion forestière doit concilier production de bois, stockage du carbone et biodiversité. L’agriculture danoise doit limiter ses impacts sur les sols et les eaux. Les projets énergétiques et miniers peuvent aussi entrer en tension avec la protection des paysages et les activités des communautés locales, notamment dans les régions nordiques. La géographie économique étudie donc à la fois la production de richesse, les réseaux et les conséquences territoriales des choix de développement.'
+        ],
+        example: {
+          statement: 'Associer chaque pays scandinave à 2 spécialisations économiques ou ressources particulièrement importantes.',
+          calculation: 'Norvège : hydrocarbures offshore et pêche/aquaculture ; Suède : industrie manufacturière et ressources forestières/minérales ; Danemark : agriculture agroalimentaire et activités maritimes/éoliennes.',
+          answer: 'La Norvège se distingue notamment par le pétrole, le gaz, la pêche et l’aquaculture ; la Suède par ses industries, ses forêts et ses ressources minérales ; le Danemark par l’agriculture, l’agroalimentaire, le transport maritime et l’énergie éolienne. Ces exemples indiquent des spécialisations importantes, mais ne résument pas l’ensemble de leurs économies.'
+        },
+        exercise: {
+          question: 'Explique pourquoi les ressources naturelles ne déterminent pas à elles seules la richesse et la spécialisation économique d’un pays scandinave.',
+          answer: 'Les ressources constituent un avantage potentiel, mais leur valorisation dépend aussi des infrastructures, des technologies, de la formation, des investissements, des politiques publiques, de l’accès aux marchés et des choix environnementaux.'
+        },
+        exercises: [
+          {
+            question: 'Quelles ressources énergétiques offshore jouent un rôle majeur dans les exportations norvégiennes ?',
+            answer: 'Le pétrole et le gaz naturel.'
+          },
+          {
+            question: 'Quelles ressources ont contribué au développement industriel de la Suède ?',
+            answer: 'Notamment le bois, le minerai de fer et l’hydroélectricité.'
+          },
+          {
+            question: 'Quelle énergie renouvelable occupe une place importante dans le système électrique danois ?',
+            answer: 'L’énergie éolienne, avec une place importante de l’éolien en mer.'
+          },
+          {
+            question: 'Pourquoi les ports sont-ils stratégiques pour les pays scandinaves ?',
+            answer: 'Ils facilitent les importations et les exportations, le transport de marchandises, les liaisons maritimes et l’intégration des économies aux échanges internationaux.'
+          },
+          {
+            question: 'Quelle différence faut-il faire entre production électrique et consommation totale d’énergie ?',
+            answer: 'La production électrique concerne uniquement l’électricité produite, tandis que la consommation totale d’énergie inclut aussi les carburants, les combustibles et les autres formes d’énergie utilisées par les transports, les bâtiments et les activités économiques.'
+          }
+        ],
+        sources: [
+          { title: 'Nordic Co-operation — Facts about Norway', url: 'https://www.norden.org/en/information/facts-about-norway' },
+          { title: 'Norwegian Government — The Norwegian economy and business sector', url: 'https://www.norway.no/en/central-content/en/values-priorities/the-norwegian-economy-and-business-sector/' },
+          { title: 'OECD — Environment at a Glance: Sweden', url: 'https://www.oecd.org/en/publications/environment-at-a-glance-country-notes_59ce6fe6-en/sweden_64133672-en.html' },
+          { title: 'European Commission — Denmark, EU Blue Economy Observatory', url: 'https://blue-economy-observatory.ec.europa.eu/country-profiles/denmark_en' },
+          { title: 'IEA Wind TCP — Denmark Annual Report 2025', url: 'https://iea-wind.org/annual-report-2025-country-denmark/' },
+          { title: 'European Commission — Scandinavian-Mediterranean Corridor', url: 'https://transport.ec.europa.eu/transport-themes/infrastructure-and-investment/trans-european-transport-network-ten-t/scandinavian-mediterranean-corridor_en' }
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  id: 'ecosse',
+  title: 'Écosse : reliefs, milieux naturels, populations et activités',
+  note: 'Six chapitres approfondis sur la géographie de l’Écosse, pays constitutif du Royaume-Uni occupant la partie nord de la Grande-Bretagne et comprenant de nombreux archipels. La branche distingue le territoire écossais de la Grande-Bretagne et du Royaume-Uni. Les données chiffrées sont associées à leur date de référence ; les moyennes climatiques sont distinguées des observations annuelles et les indicateurs énergétiques de la consommation totale d’énergie.',
+  chapters: [
+    {
+      id: 'ecosse-localisation-territoires',
+      title: 'Localiser l’Écosse : situation, frontières et territoires insulaires',
+      field: 'Géographie régionale · Europe du Nord-Ouest et îles Britanniques',
+      summary: 'Situer l’Écosse dans les îles Britanniques, distinguer le pays du Royaume-Uni et comprendre l’organisation de son territoire continental, de ses côtes et de ses archipels.',
+      lesson: {
+        sections: [
+          'L’Écosse occupe la partie septentrionale de la Grande-Bretagne, grande île de l’archipel britannique située au nord-ouest de l’Europe. Elle partage une frontière terrestre avec l’Angleterre au sud. Elle est bordée par l’océan Atlantique à l’ouest et au nord-ouest, par la mer du Nord à l’est et par les espaces maritimes de la mer d’Irlande et du canal du Nord au sud-ouest. Cette situation place le pays à l’interface de l’Atlantique Nord, de la mer du Nord et des routes maritimes reliant l’Europe du Nord aux autres façades européennes.',
+          'Il faut distinguer plusieurs notions géographiques et politiques. La Grande-Bretagne est l’île qui réunit l’Angleterre, l’Écosse et le pays de Galles. Le Royaume-Uni est un État souverain composé de 4 pays constitutifs : l’Angleterre, l’Écosse, le pays de Galles et l’Irlande du Nord. L’Écosse possède ses propres institutions dévolues, notamment un Parlement et un gouvernement, mais elle n’est pas un État indépendant. Les compétences sont réparties entre les institutions écossaises et celles du Royaume-Uni selon le cadre constitutionnel britannique.',
+          'Le territoire écossais ne se limite pas à la partie continentale de la Grande-Bretagne. Il comprend un grand nombre d’îles, regroupées notamment dans les Hébrides, les Orcades et les Shetland. Les Hébrides se répartissent en Hébrides intérieures et extérieures, tandis que les Orcades et les Shetland forment des archipels distincts au nord du continent. Ces îles présentent des paysages, des conditions d’accessibilité et des dynamiques démographiques variés. Les traversées maritimes et les liaisons aériennes sont essentielles pour relier les communautés insulaires au continent.',
+          'Les côtes écossaises sont très découpées. Les nombreux bras de mer, estuaires et lochs marins pénètrent profondément à l’intérieur des terres. À l’est, les grands estuaires du Forth et de la Tay structurent les paysages et les réseaux urbains. À l’ouest, les lochs marins et les péninsules multiplient les interfaces entre terre et mer. Cette configuration a favorisé historiquement la pêche, les échanges maritimes, l’implantation de ports et le développement de communautés tournées vers la mer.',
+          'La position géographique explique aussi certains contrastes régionaux. Le sud et le centre concentrent une part importante des habitants et des infrastructures, tandis que les Highlands et les îles comprennent de vastes espaces faiblement peuplés. La distance aux grands centres urbains, les reliefs, les conditions météorologiques et la dépendance à des liaisons maritimes ou aériennes influencent l’accès aux services. Il faut donc étudier l’Écosse à plusieurs échelles : le pays dans l’archipel britannique, ses grandes régions physiques, ses bassins urbains et ses territoires insulaires.'
+        ],
+        example: {
+          statement: 'Un élève affirme que l’Écosse, la Grande-Bretagne et le Royaume-Uni désignent exactement le même territoire. Quelle correction faut-il apporter ?',
+          calculation: 'On distingue 3 niveaux : l’Écosse est un pays constitutif du Royaume-Uni ; la Grande-Bretagne est une île qui comprend l’Écosse, l’Angleterre et le pays de Galles ; le Royaume-Uni est l’État qui réunit ces 3 pays et l’Irlande du Nord.',
+          answer: 'Ces 3 termes ne sont pas synonymes. L’Écosse est un pays constitutif du Royaume-Uni et occupe le nord de la Grande-Bretagne. Le Royaume-Uni comprend aussi l’Irlande du Nord, qui ne se trouve pas sur l’île de Grande-Bretagne.'
+        },
+        exercise: {
+          question: 'Pourquoi la géographie de l’Écosse doit-elle prendre en compte les îles et les espaces maritimes ?',
+          answer: 'Parce que les îles, les archipels, les estuaires et les lochs marins font partie intégrante du territoire et influencent les transports, les activités économiques, les modes de vie et l’accès aux services.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la capitale de l’Écosse ?',
+            answer: 'Édimbourg.'
+          },
+          {
+            question: 'Quels sont les 3 grands ensembles insulaires écossais ?',
+            answer: 'Les Hébrides, les Orcades et les Shetland.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre la Grande-Bretagne et le Royaume-Uni ?',
+            answer: 'La Grande-Bretagne est une île comprenant l’Écosse, l’Angleterre et le pays de Galles ; le Royaume-Uni est un État qui comprend également l’Irlande du Nord.'
+          },
+          {
+            question: 'Quels espaces maritimes bordent l’Écosse ?',
+            answer: 'L’océan Atlantique au nord et à l’ouest, la mer du Nord à l’est et la mer d’Irlande ainsi que le canal du Nord au sud-ouest.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Scottish Government — Scottish Islands Data Overview 2025',
+            url: 'https://www.gov.scot/publications/scottish-islands-data-overview-2025/'
+          },
+          {
+            title: 'Scottish Government — Scottish Island Regions 2023',
+            url: 'https://www.gov.scot/publications/scottish-island-regions-2023-overview/'
+          },
+          {
+            title: 'National Records of Scotland — Islands Scotland dataset',
+            url: 'https://www.data.gov.uk/dataset/1ca92142-4102-49b8-8409-ba3db1f28b1f/island-scotland'
+          },
+          {
+            title: 'Scotland.org — Where is Scotland?',
+            url: 'https://www.scotland.org/about-scotland/where-is-scotland'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ecosse-reliefs-geologie-glaciations',
+      title: 'Reliefs, géologie et héritage des glaciations',
+      field: 'Géographie physique · Géomorphologie et géologie',
+      summary: 'Étudier les Highlands, les Lowlands et les Southern Uplands, comprendre les grandes structures géologiques et identifier les formes héritées de l’érosion glaciaire.',
+      lesson: {
+        sections: [
+          'Le relief écossais est souvent présenté à travers 3 grands ensembles : les Highlands au nord et à l’ouest, les Central Lowlands au centre et les Southern Uplands au sud. Cette division simplifie une réalité plus complexe, car chaque ensemble contient des reliefs variés. Les Highlands sont dominés par des montagnes, des plateaux, des vallées et des lochs. Les Central Lowlands forment une zone de reliefs généralement plus bas, qui concentre une grande partie des villes et des infrastructures. Les Southern Uplands sont constitués de collines et de massifs anciens, séparés des régions centrales par des structures géologiques majeures.',
+          'Les Highlands comprennent les plus hauts reliefs du pays. Le Ben Nevis, situé près de Fort William, culmine à 1 345 m et constitue le point le plus élevé du Royaume-Uni. Les montagnes ne forment pas une chaîne parfaitement continue : elles sont entaillées par des vallées profondes et des dépressions. Le Great Glen, grand couloir orienté globalement du sud-ouest au nord-est, relie plusieurs lochs, dont le Loch Ness. Cette vallée suit une grande structure tectonique, la Great Glen Fault, qui a joué un rôle dans l’organisation géologique du nord de l’Écosse.',
+          'La géologie écossaise témoigne d’une histoire très longue. On y trouve des roches anciennes du socle, des terrains sédimentaires, des roches métamorphiques et des formations volcaniques. Les épisodes tectoniques, notamment l’orogenèse calédonienne, ont contribué à la formation et à la déformation de grandes unités rocheuses. Les roches ont ensuite été transformées par l’érosion, les cours d’eau, les variations du niveau marin et les glaciers. Le site de Siccar Point, sur la côte sud-est, est particulièrement important dans l’histoire des sciences de la Terre : ses strates illustrent une discordance géologique étudiée par James Hutton.',
+          'Les glaciations du Quaternaire ont profondément remodelé les paysages. Les glaciers ont creusé ou élargi des vallées, façonné des cirques montagneux et transporté des matériaux rocheux. Après leur retrait, ils ont laissé des dépôts morainiques et des formes caractéristiques. De nombreux lochs occupent des dépressions glaciaires ou structurales. Les vallées en auge, les roches polies, les moraines et les reliefs en crag-and-tail témoignent de cette histoire. Les paysages actuels résultent donc de l’interaction entre la structure géologique ancienne et des processus d’érosion beaucoup plus récents.',
+          'Les littoraux présentent eux aussi une grande diversité de formes. Les falaises rocheuses, les plages, les dunes, les vasières et les marais salés sont distribués selon la nature des roches, l’exposition à la houle, les courants et les variations du niveau marin. Les changements du niveau de la mer liés aux périodes glaciaires et postglaciaires ont contribué à façonner les côtes. L’étude du relief écossais permet ainsi de comprendre comment la tectonique, la lithologie, les glaciers, les rivières et la mer produisent des paysages différents à l’échelle d’un même territoire.'
+        ],
+        example: {
+          statement: 'Pourquoi les paysages des Highlands comportent-ils de nombreuses vallées profondes et des lochs ?',
+          calculation: 'Il faut distinguer les facteurs : structures géologiques anciennes, érosion fluviale, action des glaciers pendant les périodes froides et évolution postglaciaire des eaux.',
+          answer: 'Les vallées et les lochs ont des origines diverses. Les glaciers ont approfondi et élargi certaines vallées et dépressions, tandis que les structures tectoniques et l’érosion fluviale ont également guidé la formation des paysages. Il serait donc inexact d’attribuer tous les lochs à une seule origine.'
+        },
+        exercise: {
+          question: 'Comment les glaciations ont-elles contribué à façonner les reliefs écossais ?',
+          answer: 'Les glaciers ont érodé les roches, approfondi des vallées, creusé des cirques, transporté des matériaux et déposé des moraines. Après leur retrait, ces processus ont laissé de nombreuses formes glaciaires visibles dans les montagnes et les vallées.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les 3 grands ensembles physiques traditionnellement distingués en Écosse ?',
+            answer: 'Les Highlands, les Central Lowlands et les Southern Uplands.'
+          },
+          {
+            question: 'Quelle est l’altitude du Ben Nevis ?',
+            answer: '1 345 m.'
+          },
+          {
+            question: 'Qu’est-ce qu’une moraine ?',
+            answer: 'Un dépôt de matériaux rocheux transportés puis abandonnés par un glacier.'
+          },
+          {
+            question: 'Pourquoi Siccar Point est-il un site géologique important ?',
+            answer: 'Il présente une discordance entre des couches rocheuses d’âges et d’orientations différents, étudiée par James Hutton et importante dans l’histoire de la géologie.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Scotland’s Environment — Rocks and landforms',
+            url: 'https://www.environment.gov.scot/our-environment/land/rocks-and-landforms/'
+          },
+          {
+            title: 'NatureScot — Landforms and geology',
+            url: 'https://www.nature.scot/landscapes-and-habitats/landforms-and-geology'
+          },
+          {
+            title: 'British Geological Survey — Geology of Britain',
+            url: 'https://www.bgs.ac.uk/discovering-geology/maps-and-resources/'
+          },
+          {
+            title: 'NatureScot — Landscape Character Assessment, Central Region',
+            url: 'https://www.nature.scot/sites/default/files/2021-08/NatureScot%20LCA%20Review%20-%20CENTRAL%20REGION%20-%20LANDSCAPE%20EVOLUTION%20AND%20INFLUENCES%20-%20pdf%20-%20July%202021%20%28A3509779%29.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ecosse-climats-precipitations',
+      title: 'Climats écossais : influence océanique et contrastes régionaux',
+      field: 'Climatologie · Circulation atmosphérique, relief et précipitations',
+      summary: 'Expliquer le climat tempéré océanique de l’Écosse et les contrastes entre l’ouest humide, l’est plus abrité, les régions méridionales et les Highlands.',
+      lesson: {
+        sections: [
+          'L’Écosse possède un climat tempéré à forte influence maritime. Les températures sont généralement modérées par la proximité de l’Atlantique et de la mer du Nord : les étés sont souvent frais ou modérément chauds et les hivers sont relativement doux dans les secteurs côtiers de basse altitude. Les précipitations peuvent se produire toute l’année. Le climat n’est cependant pas uniforme : la latitude, l’altitude, l’exposition aux vents dominants et la distance à la mer créent des différences sensibles entre les régions.',
+          'La façade occidentale est généralement plus humide que la façade orientale. Les vents dominants apportent fréquemment des masses d’air océaniques chargées en humidité depuis l’Atlantique. Lorsque ces masses d’air rencontrent les reliefs des Highlands, elles sont forcées de s’élever, se refroidissent et produisent des précipitations orographiques. Les secteurs occidentaux exposés reçoivent ainsi des cumuls élevés, tandis que certaines régions orientales situées sous le vent des montagnes sont relativement abritées. Cette différence ne signifie pas que l’est est toujours sec ni que l’ouest connaît partout les mêmes précipitations.',
+          'L’altitude joue un rôle important dans les températures. Les sommets et les plateaux des Highlands sont généralement plus froids que les plaines et les littoraux. Les précipitations hivernales peuvent tomber sous forme de neige en altitude, mais la durée et l’étendue de l’enneigement varient selon les années et les conditions météorologiques. Les régions du nord connaissent aussi des journées hivernales plus courtes que le sud en raison de leur latitude. La durée du jour augmente fortement en été et diminue en hiver, ce qui influence les rythmes saisonniers.',
+          'Les moyennes climatiques doivent être interprétées avec méthode. Une normale climatique est calculée sur une période de référence suffisamment longue, généralement 30 ans, afin de décrire les conditions moyennes. Elle ne permet pas de prévoir le temps d’une journée ni de caractériser à elle seule une année particulière. Les données du Met Office pour la période 1991-2020 permettent de comparer des stations ou des régions selon la température, les précipitations, le vent et l’ensoleillement. Il faut toujours préciser la période, le lieu et la variable utilisés dans une comparaison.',
+          'Le climat écossais évolue sous l’effet du réchauffement global. Les séries climatiques montrent une hausse des températures à long terme et des modifications des précipitations, avec des changements saisonniers et une variabilité importante d’une année à l’autre. Les épisodes de fortes pluies, les risques d’inondation, l’érosion côtière, les pressions sur les écosystèmes et les évolutions de l’enneigement constituent des enjeux d’adaptation. L’analyse climatique doit distinguer les tendances observées, les projections futures et les événements météorologiques ponctuels.'
+        ],
+        example: {
+          statement: 'Deux stations situées à des altitudes comparables, l’une sur la côte occidentale et l’autre à l’est des Highlands, enregistrent des précipitations différentes. Comment expliquer cet écart ?',
+          calculation: 'On examine la direction des vents dominants, l’origine océanique des masses d’air, l’exposition au relief et la position de chaque station par rapport aux montagnes.',
+          answer: 'La station occidentale peut recevoir davantage de précipitations car les masses d’air humides venant de l’Atlantique s’élèvent au contact des reliefs. La station orientale peut se trouver en partie sous le vent des montagnes et bénéficier d’un effet d’abri pluviométrique.'
+        },
+        exercise: {
+          question: 'Pourquoi l’ouest de l’Écosse est-il généralement plus humide que l’est ?',
+          answer: 'Les vents dominants apportent de l’air humide depuis l’Atlantique. Les reliefs de l’ouest favorisent son ascendance et les précipitations orographiques ; certaines régions de l’est sont davantage abritées par les montagnes.'
+        },
+        exercises: [
+          {
+            question: 'Quel type de climat caractérise globalement l’Écosse ?',
+            answer: 'Un climat tempéré à forte influence maritime.'
+          },
+          {
+            question: 'Qu’est-ce qu’une précipitation orographique ?',
+            answer: 'Une précipitation favorisée par l’ascendance et le refroidissement d’une masse d’air lorsqu’elle rencontre un relief.'
+          },
+          {
+            question: 'Pourquoi les Highlands sont-ils généralement plus froids que les basses terres ?',
+            answer: 'Principalement en raison de l’altitude, qui entraîne une diminution de la température avec l’élévation.'
+          },
+          {
+            question: 'Quelle est la durée habituelle d’une période de référence pour une normale climatique ?',
+            answer: '30 ans.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Met Office — UK Climate',
+            url: 'https://www.metlink.org/resource/uk-climate/'
+          },
+          {
+            title: 'Met Office — Location-specific long-term averages, Scotland',
+            url: 'https://www.metoffice.gov.uk/research/climate/maps-and-data/location-specific-long-term-averages'
+          },
+          {
+            title: 'Scotland’s Environment — Climate',
+            url: 'https://www.environment.gov.scot/our-environment/climate/'
+          },
+          {
+            title: 'ClimateXChange — Precipitation: Technical Report',
+            url: 'https://www.climatexchange.org.uk/wp-content/uploads/2023/09/precipitationreport_cxc.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ecosse-milieux-naturels-biodiversite',
+      title: 'Milieux naturels, biodiversité et ressources environnementales',
+      field: 'Biogéographie · Écosystèmes terrestres, tourbières et milieux marins',
+      summary: 'Identifier les landes, tourbières, forêts, montagnes, eaux douces et milieux côtiers, puis comprendre les pressions qui pèsent sur leur biodiversité.',
+      lesson: {
+        sections: [
+          'Les milieux naturels écossais sont étroitement liés au climat océanique, au relief et aux sols. Les Highlands et les régions montagneuses accueillent des landes, des pelouses d’altitude, des rochers et des milieux humides. Les basses terres comportent des paysages agricoles, des boisements, des prairies et des zones humides. Les îles et les littoraux présentent des habitats spécifiques, notamment des falaises, des dunes, des plages, des marais salés et des milieux marins. La répartition de ces habitats dépend aussi des pratiques humaines anciennes et actuelles.',
+          'Les landes à bruyères et les tourbières occupent une place majeure dans les paysages écossais. NatureScot indique que les montagnes et les landes couvrent environ 60 % des terres du pays. Les tourbières de couverture constituent un habitat particulièrement important : la source estime leur superficie à environ 1,8 million d’hectares, soit près de 23 % du territoire terrestre. Les tourbières accumulent de la matière organique dans des conditions souvent saturées en eau et peuvent stocker de grandes quantités de carbone sur de longues périodes. Leur drainage, leur érosion et les incendies peuvent dégrader ces fonctions écologiques.',
+          'Les forêts écossaises comprennent des boisements feuillus, des forêts de conifères et des fragments de forêts tempérées anciennes. Les essences et les structures forestières varient selon l’altitude, les sols, l’humidité et l’histoire de l’exploitation. Certaines forêts sont issues de plantations, tandis que d’autres conservent des caractéristiques écologiques anciennes. La gestion forestière doit concilier production de bois, renouvellement des peuplements, continuités écologiques et protection des sols. La restauration des boisements naturels et des forêts riveraines constitue également un enjeu de biodiversité.',
+          'Les cours d’eau, les lochs et les zones humides assurent des fonctions essentielles. Ils fournissent des habitats à de nombreuses espèces, contribuent au stockage et à la circulation de l’eau et influencent les paysages. Les milieux d’eau douce peuvent être affectés par les apports de nutriments, les modifications des débits, les obstacles à la continuité écologique et certaines espèces introduites. Les écosystèmes marins et côtiers sont eux aussi importants, notamment pour les oiseaux marins, les poissons, les mammifères marins et les habitats des fonds côtiers. La pêche, l’aquaculture, le transport maritime et les loisirs exercent des pressions qu’il faut gérer.',
+          'La conservation de la biodiversité repose sur plusieurs outils : parcs nationaux, réserves naturelles, sites protégés, réglementation des activités et programmes de restauration écologique. Ces dispositifs ne suppriment pas les conflits d’usage. L’élevage extensif, la gestion cynégétique, les plantations forestières, les infrastructures énergétiques et le tourisme peuvent avoir des effets différents selon leur localisation et leurs pratiques. Les politiques de conservation cherchent donc à maintenir les fonctions écologiques tout en tenant compte des activités rurales et des besoins des habitants. Le changement climatique ajoute une pression supplémentaire en modifiant les températures, les régimes de précipitations et les conditions de vie des espèces.'
+        ],
+        example: {
+          statement: 'NatureScot estime que les tourbières de couverture occupent environ 1,8 million d’hectares, soit 23 % des terres écossaises. Pourquoi cette donnée est-elle importante pour la géographie de l’environnement ?',
+          calculation: 'Une tourbière couvre une surface de 1,8 million d’hectares. La proportion annoncée est de 23 % de la superficie terrestre. Cette valeur est une estimation institutionnelle et dépend de la définition et de la cartographie de l’habitat.',
+          answer: 'Cette donnée montre que les tourbières sont un élément majeur du territoire écossais. Elles constituent des habitats importants et des réservoirs de carbone. Leur dégradation peut entraîner une perte de biodiversité et des émissions de gaz à effet de serre.'
+        },
+        exercise: {
+          question: 'Pourquoi les tourbières sont-elles considérées comme des milieux naturels importants ?',
+          answer: 'Elles abritent des espèces adaptées aux sols humides, stockent de la matière organique et du carbone, régulent une partie des flux d’eau et contribuent à la diversité des paysages.'
+        },
+        exercises: [
+          {
+            question: 'Quelle proportion approximative du territoire écossais est couverte par les montagnes et les landes selon NatureScot ?',
+            answer: 'Environ 60 %.'
+          },
+          {
+            question: 'Quelle superficie approximative NatureScot attribue-t-elle aux tourbières de couverture ?',
+            answer: 'Environ 1,8 million d’hectares, soit près de 23 % des terres écossaises.'
+          },
+          {
+            question: 'Cite 3 types de milieux naturels présents en Écosse.',
+            answer: 'Les landes, les tourbières et les forêts. On peut également citer les lochs, les cours d’eau, les dunes et les marais salés.'
+          },
+          {
+            question: 'Cite 2 menaces pesant sur les milieux naturels écossais.',
+            answer: 'Le drainage ou la dégradation des tourbières et le changement climatique. La fragmentation des habitats et certaines pollutions constituent également des pressions.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NatureScot — Mountains, heaths and bogs',
+            url: 'https://www.nature.scot/landscapes-and-habitats/habitat-types/mountains-heaths-and-bogs'
+          },
+          {
+            title: 'NatureScot — Scotland’s Biodiversity',
+            url: 'https://www.nature.scot/scotlands-biodiversity'
+          },
+          {
+            title: 'Scotland’s Environment — Habitats and species',
+            url: 'https://www.environment.gov.scot/our-environment/habitats-and-species/'
+          },
+          {
+            title: 'NatureScot — Peatland ACTION',
+            url: 'https://www.nature.scot/climate-change/nature-based-solutions/peatland-action'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ecosse-populations-villes-amenagement',
+      title: 'Populations, villes et organisation territoriale',
+      field: 'Géographie humaine · Démographie, urbanisation et aménagement',
+      summary: 'Étudier la répartition de la population, les grandes villes, les dynamiques démographiques, les espaces ruraux et les défis propres aux territoires insulaires.',
+      lesson: {
+        sections: [
+          'La population écossaise est inégalement répartie. Les grandes concentrations urbaines se trouvent surtout dans la Central Belt, notamment autour de Glasgow et d’Édimbourg, ainsi que dans les régions de Dundee et d’Aberdeen. Les Highlands et de nombreuses îles présentent des densités plus faibles, en raison de l’éloignement, du relief, des contraintes climatiques et de la répartition des emplois. Cette opposition entre espaces urbains et ruraux ne doit pas masquer la diversité des territoires : certaines petites villes jouent un rôle de centre de services pour de vastes régions peu peuplées.',
+          'Glasgow est la ville la plus peuplée d’Écosse selon les estimations locales récentes, tandis qu’Édimbourg est la capitale politique et administrative. La région urbaine de Glasgow s’est développée avec l’industrialisation, notamment autour de la construction navale, de la métallurgie et des activités portuaires sur la Clyde. Édimbourg possède des fonctions administratives, universitaires, financières et touristiques importantes. Aberdeen est associée notamment aux activités portuaires, à la pêche et aux services liés à l’énergie offshore. Dundee a connu des transformations industrielles et accueille aujourd’hui des activités de services, d’enseignement et de recherche.',
+          'Selon les estimations officielles de National Records of Scotland, la population de l’Écosse était de 5 545 500 habitants au 30 juin 2025. La croissance de cette année-là a été faible, avec une hausse estimée à 2 200 personnes. Les migrations nettes ont constitué le principal moteur de l’évolution démographique sur cette période, tandis que les décès ont été plus nombreux que les naissances à l’échelle nationale. Ces données illustrent l’importance de distinguer le solde naturel et le solde migratoire lorsqu’on analyse la croissance d’une population.',
+          'La structure par âge évolue également. Au milieu de l’année 2025, environ 21 % de la population écossaise avait 65 ans ou plus, contre 16,3 % en 2005 selon les estimations nationales. Le vieillissement pose des questions d’accès aux soins, de mobilité, de logement et de maintien des services dans les territoires ruraux. Les migrations peuvent contribuer à soutenir la population active de certaines régions, mais leurs effets varient selon les compétences, les secteurs d’emploi et les lieux d’installation.',
+          'Les politiques d’aménagement doivent répondre à des besoins différents selon les territoires. Dans les grandes villes, les enjeux concernent notamment le logement, les transports collectifs, la rénovation urbaine et la réduction des inégalités socio-spatiales. Dans les espaces ruraux et insulaires, l’accès aux soins, à l’éducation, au haut débit, aux emplois et aux transports représente un défi majeur. Les liaisons par ferry et par avion sont indispensables pour certaines îles, mais elles rendent les déplacements sensibles aux conditions météorologiques et aux coûts de fonctionnement. L’aménagement cherche donc à améliorer l’accessibilité sans fragiliser les paysages et les écosystèmes.'
+        ],
+        example: {
+          statement: 'La population de l’Écosse est estimée à 5 545 500 habitants au 30 juin 2025. Entre cette date et l’année précédente, elle augmente de 2 200 habitants. Comment interpréter cette évolution ?',
+          calculation: 'Le taux d’évolution approximatif est : (2 200 / 5 543 300) × 100, soit environ 0,04 %. Les valeurs de départ et d’arrivée sont des estimations officielles révisables.',
+          answer: 'La population a très légèrement augmenté, d’environ 0,04 % sur la période. Cette progression est faible et les estimations de National Records of Scotland indiquent que les migrations nettes ont été le principal moteur de la croissance en 2024-2025.'
+        },
+        exercise: {
+          question: 'Pourquoi la répartition de la population est-elle plus dense dans la Central Belt que dans une grande partie des Highlands ?',
+          answer: 'La Central Belt concentre de grandes villes, des emplois, des infrastructures, des universités et des réseaux de transport. Les Highlands présentent des contraintes de relief, des distances plus importantes et une économie plus dispersée, ce qui contribue à des densités généralement plus faibles.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la capitale de l’Écosse ?',
+            answer: 'Édimbourg.'
+          },
+          {
+            question: 'Quelle ville est la plus peuplée d’Écosse selon les estimations locales de 2025 ?',
+            answer: 'Glasgow City, avec 654 330 habitants dans la zone administrative correspondante au 30 juin 2025.'
+          },
+          {
+            question: 'Quelle était la population estimée de l’Écosse au 30 juin 2025 ?',
+            answer: '5 545 500 habitants.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre solde naturel et solde migratoire ?',
+            answer: 'Le solde naturel correspond à la différence entre les naissances et les décès ; le solde migratoire correspond à la différence entre les arrivées et les départs de population.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Records of Scotland — Mid-2025 population estimates',
+            url: 'https://www.nrscotland.gov.uk/publications/mid-2025-population-estimates/'
+          },
+          {
+            title: 'National Records of Scotland — Small area population estimates, mid-2024',
+            url: 'https://nrscotland.gov.uk/publications/small-area-population-estimates-mid-2024-2022-data-zones/'
+          },
+          {
+            title: 'Scottish Government — Scottish Islands Data Overview 2025',
+            url: 'https://www.gov.scot/publications/scottish-islands-data-overview-2025/'
+          },
+          {
+            title: 'National Records of Scotland — Households and Dwellings in Scotland 2025',
+            url: 'https://nrscotland.gov.uk/publications/households-and-dwellings-in-scotland-2025/'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ecosse-economie-energies-transports',
+      title: 'Activités économiques, énergie et réseaux de transport',
+      field: 'Géographie économique · Industries, agriculture, ressources marines et transition énergétique',
+      summary: 'Comprendre les spécialisations économiques écossaises, le rôle des hydrocarbures et des énergies renouvelables, les activités rurales et l’organisation des échanges.',
+      lesson: {
+        sections: [
+          'L’économie écossaise est diversifiée et repose sur les services, l’industrie, les activités maritimes, l’énergie, l’agriculture et le tourisme. Les grandes villes concentrent une part importante des services financiers, administratifs, universitaires et culturels. Les régions portuaires et littorales accueillent des activités liées au transport maritime, à la pêche, à l’aquaculture et à l’énergie offshore. Les territoires ruraux associent notamment élevage, agriculture, foresterie, tourisme et production alimentaire. Ces activités dépendent fortement des conditions naturelles et de l’accessibilité des marchés.',
+          'L’exploitation des hydrocarbures en mer du Nord a joué un rôle majeur dans l’économie écossaise et britannique depuis la seconde moitié du XXe siècle. Les activités pétrolières et gazières ont favorisé le développement de services spécialisés, d’infrastructures portuaires et de compétences techniques, particulièrement dans la région d’Aberdeen. Elles sont cependant exposées aux fluctuations des prix, à l’évolution des volumes extraits et aux objectifs de réduction des émissions. Les statistiques économiques doivent préciser si elles incluent ou non l’extraction offshore, car les périmètres comptables modifient les résultats du produit intérieur brut.',
+          'L’Écosse dispose d’un potentiel important pour les énergies renouvelables, notamment grâce aux vents de l’Atlantique et de la mer du Nord, aux reliefs et aux ressources hydrauliques. L’éolien terrestre et l’éolien en mer occupent une place majeure dans la production électrique renouvelable. L’hydroélectricité est également importante, notamment dans les régions montagneuses où les précipitations et les dénivelés permettent d’alimenter des installations hydroélectriques. Ces ressources sont toutefois variables et leur valorisation nécessite des réseaux électriques, des capacités de stockage, des infrastructures portuaires et une planification territoriale adaptée.',
+          'En 2024, l’Écosse a produit 38,4 TWh d’électricité renouvelable selon les statistiques publiées par le gouvernement écossais en mars 2025. La majeure partie provenait de l’éolien, avec 30,1 TWh, puis de l’hydroélectricité, avec 5,2 TWh. Dans une autre série statistique publiée en décembre 2025, la production électrique totale de 2024 est évaluée à 51,8 TWh, dont 73,1 % issus des renouvelables. Les valeurs diffèrent légèrement selon les publications et les révisions statistiques : il faut donc citer la série utilisée et ne pas mélanger les indicateurs.',
+          'L’agriculture varie selon les régions. Les basses terres et certaines plaines orientales sont plus favorables aux cultures, tandis que les espaces de relief et les régions de sols pauvres sont davantage associés à l’élevage, notamment ovin et bovin. La pêche et l’aquaculture sont importantes dans plusieurs zones côtières et insulaires, mais elles doivent concilier les revenus locaux avec la qualité des eaux et la préservation des écosystèmes. Le tourisme s’appuie sur les paysages des Highlands, les îles, les villes historiques, les sites patrimoniaux et les activités de plein air. Il contribue à l’emploi, mais peut accentuer les tensions sur le logement, les transports et les milieux naturels dans les secteurs très fréquentés.',
+          'Les réseaux de transport reflètent la géographie du pays. Les axes routiers et ferroviaires relient les grandes villes du sud et du centre, tandis que les liaisons vers les Highlands et les îles sont plus longues et parfois dépendantes des ferries ou des vols régionaux. Les ports de la Clyde, d’Aberdeen, de Grangemouth et d’autres sites côtiers assurent des fonctions commerciales, industrielles ou énergétiques. Les défis d’avenir concernent la décarbonation des transports, la modernisation des infrastructures, la sécurisation de l’approvisionnement énergétique et l’équilibre entre développement économique, paysages et biodiversité.'
+        ],
+        example: {
+          statement: 'En 2024, la production renouvelable d’électricité en Écosse atteint 38,4 TWh, dont 30,1 TWh d’origine éolienne. Quelle part approximative de cette production renouvelable provient de l’éolien ?',
+          calculation: '(30,1 / 38,4) × 100 = environ 78,4 %.',
+          answer: 'Environ 78,4 % de la production renouvelable d’électricité citée provient de l’éolien. Ce calcul concerne la part de l’éolien dans la production renouvelable, et non dans la consommation totale d’énergie de l’Écosse.'
+        },
+        exercise: {
+          question: 'Pourquoi l’Écosse présente-t-elle des conditions favorables au développement de l’énergie éolienne et hydroélectrique ?',
+          answer: 'Les façades maritimes sont exposées aux vents de l’Atlantique et de la mer du Nord, ce qui favorise l’éolien. Les reliefs, les précipitations et les dénivelés des régions montagneuses permettent aussi de développer l’hydroélectricité.'
+        },
+        exercises: [
+          {
+            question: 'Quelles sont les 2 principales sources de production renouvelable d’électricité en Écosse en 2024 selon la publication Q4 2024 ?',
+            answer: 'L’éolien, avec 30,1 TWh, puis l’hydroélectricité, avec 5,2 TWh.'
+          },
+          {
+            question: 'Quelle quantité d’électricité renouvelable l’Écosse a-t-elle produite en 2024 selon cette même publication ?',
+            answer: '38,4 TWh.'
+          },
+          {
+            question: 'Pourquoi faut-il préciser si le PIB écossais inclut l’extraction offshore de pétrole et de gaz ?',
+            answer: 'Parce que l’inclusion de cette activité modifie le périmètre et le montant du PIB publié.'
+          },
+          {
+            question: 'Cite 2 enjeux liés au développement touristique des Highlands et des îles.',
+            answer: 'La pression sur le logement et les infrastructures de transport, ainsi que les effets possibles sur les paysages et les milieux naturels.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Scottish Government — Energy Statistics for Scotland Q4 2024',
+            url: 'https://www.gov.scot/publications/energy-statistics-for-scotland-q4-2024/'
+          },
+          {
+            title: 'Scottish Government — Renewable electricity generation Q4 2024',
+            url: 'https://www.gov.scot/publications/energy-statistics-for-scotland-q4-2024/pages/renewable-electricity-generation/'
+          },
+          {
+            title: 'Scottish Government — GDP Quarterly National Accounts 2025 Q2',
+            url: 'https://www.gov.scot/publications/gdp-quarterly-national-accounts-2025-q2/'
+          },
+          {
+            title: 'Scottish Government — Scottish Economic Insights March 2026',
+            url: 'https://www.gov.scot/publications/scottish-economic-insights-march-2026/'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+
 
 ]
 
