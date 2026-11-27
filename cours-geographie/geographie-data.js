@@ -6199,6 +6199,608 @@ window.courseCatalog = [
   ]
 },
 
+{
+  id: 'cordillere-andes',
+  sortYear: false,
+  title: 'Cordillère des Andes',
+  note: 'Six chapitres approfondis sur la localisation et les grands ensembles du relief andin, sa formation tectonique, les climats et les milieux naturels, les ressources en eau et les glaciers, les sociétés et les systèmes agricoles, puis les ressources économiques et les risques environnementaux. Les chiffres d’altitude, de longueur et les limites régionales sont des ordres de grandeur qui peuvent varier selon les méthodes de mesure.',
+  chapters: [
+    {
+      id: 'localisation-reliefs-andins',
+      title: 'Localisation, étendue et grands ensembles du relief',
+      field: 'Géographie physique · Amérique du Sud · Échelle continentale',
+      summary: 'Situer la cordillère des Andes, identifier ses grands secteurs et comprendre la diversité de ses formes de relief.',
+      lesson: {
+        sections: [
+          'La cordillère des Andes constitue le principal système montagneux de l’ouest de l’Amérique du Sud. Elle s’étire globalement du nord du continent, dans la région du Venezuela et de la Colombie, jusqu’à la Terre de Feu, en longeant notamment l’Équateur, le Pérou, la Bolivie, le Chili et l’Argentine. Les limites exactes de la chaîne dépendent des critères géographiques employés : certains découpages incluent des ensembles périphériques, d’autres retiennent uniquement l’axe montagneux principal. Il est donc préférable de présenter sa longueur comme un ordre de grandeur plutôt que comme une mesure universelle unique. National Geographic donne environ 8 850 km pour le système andin.',
+          'Les Andes ne forment pas un mur montagneux uniforme. Dans les Andes septentrionales, les reliefs sont fortement compartimentés et comprennent des cordillères parallèles séparées par des vallées et des bassins. Dans les Andes centrales, le relief s’élargit localement et comprend de hauts plateaux, dont l’Altiplano, partagé principalement entre le Pérou et la Bolivie et prolongé vers le nord du Chili et de l’Argentine. Plus au sud, les Andes méridionales présentent des secteurs volcaniques, des vallées profondes, des lacs et des paysages glaciaires, particulièrement en Patagonie.',
+          'Le point culminant de la chaîne est l’Aconcagua, situé en Argentine, près de la frontière chilienne. Son altitude est généralement donnée autour de 6 961 à 6 962 m selon les références et les conventions de mesure. Les Andes comprennent également de nombreux sommets volcaniques, des hauts plateaux, des bassins fermés, des vallées longitudinales et des versants abrupts. Cette diversité explique la juxtaposition, sur de courtes distances, de milieux très différents : désert côtier, vallées tempérées, hauts pâturages, forêts de montagne et glaciers.'
+        ],
+        example: {
+          statement: 'Une carte présente l’Aconcagua à environ 6 962 m et l’Altiplano à environ 3 700 m d’altitude. Quelle différence d’altitude sépare ces deux repères ?',
+          calculation: 'Différence d’altitude = 6 962 m - 3 700 m = 3 262 m.',
+          answer: 'La différence est d’environ 3 262 m. Il s’agit d’une comparaison entre un sommet et un haut plateau, et non entre deux sommets.'
+        },
+        exercise: {
+          question: 'Pourquoi ne faut-il pas décrire les Andes comme une chaîne de montagnes homogène ?',
+          answer: 'Parce que leur altitude, leur largeur, leurs formes de relief et leurs paysages varient fortement du nord au sud et d’un versant à l’autre.'
+        },
+        exercises: [
+          {
+            question: 'Sur quel bord du continent sud-américain se situe l’essentiel de la cordillère des Andes ?',
+            answer: 'Sur la bordure occidentale de l’Amérique du Sud, le long de la façade pacifique.'
+          },
+          {
+            question: 'Quel est le point culminant des Andes ?',
+            answer: 'L’Aconcagua, en Argentine, avec une altitude publiée d’environ 6 961 à 6 962 m.'
+          },
+          {
+            question: 'Qu’est-ce que l’Altiplano ?',
+            answer: 'Un vaste ensemble de hauts plateaux des Andes centrales, principalement situé au Pérou et en Bolivie.'
+          }
+        ],
+        sources: [
+          {
+            title: 'National Geographic — South America: Physical Geography',
+            url: 'https://education.nationalgeographic.org/resource/south-america-physical-geography/'
+          },
+          {
+            title: 'U.S. Geological Survey — Seismicity of the Earth: Nazca Plate and South America',
+            url: 'https://pubs.usgs.gov/publication/ofr20101083E'
+          }
+        ]
+      }
+    },
+    {
+      id: 'formation-tectonique-andes',
+      title: 'Formation géologique et dynamique tectonique',
+      field: 'Géographie physique · Géologie · Tectonique des plaques',
+      summary: 'Expliquer la formation des Andes par la convergence des plaques, la subduction, le volcanisme et la déformation de la croûte.',
+      lesson: {
+        sections: [
+          'La formation des Andes est liée à la convergence entre la plaque océanique de Nazca, à l’ouest, et la plaque continentale sud-américaine, à l’est. La lithosphère océanique, plus dense, s’enfonce sous la marge continentale : ce mécanisme est appelé subduction. La convergence n’a pas une vitesse identique partout le long de la marge ; l’USGS indique, dans son étude de la limite Nazca–Amérique du Sud, des vitesses relatives de l’ordre de 70 à 80 mm par an selon les secteurs considérés. Ces valeurs décrivent un mouvement tectonique régional et ne doivent pas être interprétées comme une vitesse uniforme en tout point.',
+          'La subduction entraîne une compression et une déformation de la bordure du continent. Des couches rocheuses se plissent, se fracturent et se déplacent le long de failles ; des terrains peuvent être soulevés et épaissir la croûte continentale. La formation d’une chaîne de montagnes par ces processus est appelée orogenèse. L’histoire andine est complexe et s’est déroulée en plusieurs épisodes, avec des rythmes et des effets différents selon les régions. Il serait donc inexact de donner une date unique de naissance des Andes ou de considérer que toute la chaîne s’est élevée simultanément.',
+          'La subduction est également associée à une importante activité magmatique. L’eau et d’autres éléments libérés par la plaque plongeante favorisent la fusion partielle du manteau situé au-dessus d’elle ; des magmas peuvent alors remonter et alimenter des volcans. L’arc volcanique andin comprend des édifices actifs ou potentiellement actifs, mais le volcanisme n’est pas continu sur toute la longueur de la chaîne. Les frottements et les ruptures le long de la zone de contact des plaques expliquent aussi la forte sismicité de la région. La tectonique actuelle continue donc de modifier les reliefs et d’exposer certaines populations à des aléas sismiques et volcaniques.'
+        ],
+        example: {
+          statement: 'L’USGS indique une vitesse de convergence de l’ordre de 70 à 80 mm par an selon les secteurs de la limite Nazca–Amérique du Sud. Quelle distance cela représente-t-il en 10 ans si l’on utilise ces valeurs comme simple ordre de grandeur ?',
+          calculation: 'Borne basse : 70 mm/an × 10 ans = 700 mm, soit 0,7 m. Borne haute : 80 mm/an × 10 ans = 800 mm, soit 0,8 m.',
+          answer: 'Cela correspond à environ 0,7 à 0,8 m en 10 ans dans cette estimation simplifiée. Le mouvement réel dépend du secteur et du référentiel tectonique.'
+        },
+        exercise: {
+          question: 'Quel lien existe-t-il entre la subduction de la plaque de Nazca et la formation des Andes ?',
+          answer: 'La subduction provoque une convergence et une déformation de la marge sud-américaine, contribuant à l’épaississement et au soulèvement de la croûte, tandis que les processus associés alimentent une partie du volcanisme andin.'
+        },
+        exercises: [
+          {
+            question: 'Quelle plaque océanique plonge sous la plaque sud-américaine le long d’une grande partie de la marge andine ?',
+            answer: 'La plaque de Nazca.'
+          },
+          {
+            question: 'Comment appelle-t-on l’enfoncement d’une plaque lithosphérique sous une autre ?',
+            answer: 'La subduction.'
+          },
+          {
+            question: 'Pourquoi les Andes connaissent-elles des séismes ?',
+            answer: 'Parce que la convergence des plaques accumule des contraintes qui peuvent être libérées brutalement lors de ruptures tectoniques.'
+          }
+        ],
+        sources: [
+          {
+            title: 'U.S. Geological Survey — Seismicity of the Earth: Nazca Plate and South America',
+            url: 'https://pubs.usgs.gov/publication/ofr20101083E'
+          },
+          {
+            title: 'Fundación Empresas Polar — Así se formó la cordillera de los Andes',
+            url: 'https://bibliofep.fundacionempresaspolar.org/media/16891/geo_u4_l106_andes_cordillera_suramerica.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'climats-etages-ecologiques',
+      title: 'Climats, étagement altitudinal et milieux naturels',
+      field: 'Géographie physique · Climatologie · Biogéographie',
+      summary: 'Comprendre les contrastes climatiques des Andes et la répartition des milieux selon l’altitude, la latitude et l’exposition.',
+      lesson: {
+        sections: [
+          'Le climat andin varie selon plusieurs facteurs qui se combinent : latitude, altitude, exposition des versants, circulation atmosphérique et distance à l’océan. La température diminue généralement avec l’altitude, mais le rythme de cette diminution dépend des conditions atmosphériques locales. La présence de hauts reliefs crée aussi des contrastes entre versants. Les masses d’air humides peuvent être forcées de s’élever sur un versant, se refroidir et produire des précipitations ; l’autre versant peut recevoir moins d’humidité. Ce phénomène, appelé effet d’abri pluviométrique, contribue à expliquer les oppositions entre les régions humides tournées vers l’Amazonie et certains secteurs arides de la façade pacifique.',
+          'Dans les Andes tropicales du nord, les versants peuvent recevoir des précipitations abondantes et porter des forêts de montagne. À haute altitude, les páramos des Andes septentrionales sont des milieux ouverts de haute montagne, caractérisés par des herbes, des plantes en rosette et des sols qui jouent un rôle important dans la régulation de l’eau. Plus au sud, la puna des Andes centrales comprend des formations de steppes et de pâturages d’altitude, adaptées au froid, au vent et à une disponibilité en eau très variable. Ces termes désignent des ensembles écologiques régionaux et ne correspondent pas à des bandes d’altitude strictement identiques dans tous les pays.',
+          'Le désert d’Atacama, dans le nord du Chili et le sud du Pérou, illustre l’aridité extrême de certains secteurs occidentaux. Son climat résulte de plusieurs facteurs : la subsidence de l’air dans la circulation atmosphérique subtropicale, l’influence du courant froid de Humboldt, l’éloignement des principales sources d’humidité et l’effet d’abri lié aux reliefs. La NASA décrit notamment le rôle de l’ombre pluviométrique des Andes dans la faiblesse des précipitations de l’Atacama. À l’inverse, les versants orientaux peuvent recevoir des masses d’air humides venues du bassin amazonien. Les écosystèmes andins sont donc organisés par des gradients complexes plutôt que par une succession simple et uniforme d’étages.'
+        ],
+        example: {
+          statement: 'Deux versants d’une même région montagneuse reçoivent des quantités de précipitations différentes parce que l’un est exposé aux vents humides et l’autre se trouve sous le vent. Quel processus explique ce contraste ?',
+          calculation: 'Air humide + ascendance sur le versant exposé = refroidissement et précipitations ; air descendant et plus sec sous le vent = précipitations généralement plus faibles.',
+          answer: 'Il s’agit de l’effet d’abri pluviométrique, aussi appelé ombre pluviométrique. Son intensité varie selon les saisons, les vents et la configuration du relief.'
+        },
+        exercise: {
+          question: 'Pourquoi deux lieux situés à la même altitude dans les Andes peuvent-ils avoir des climats différents ?',
+          answer: 'Parce que la latitude, l’exposition, les vents dominants, l’humidité disponible et la proximité de l’océan ou de l’Amazonie influencent aussi le climat.'
+        },
+        exercises: [
+          {
+            question: 'Quel grand facteur explique la baisse générale des températures lorsqu’on monte en altitude ?',
+            answer: 'La diminution de la température de l’air avec l’altitude, liée notamment à la baisse de pression atmosphérique.'
+          },
+          {
+            question: 'Dans quelle partie des Andes trouve-t-on notamment les páramos ?',
+            answer: 'Dans les Andes tropicales septentrionales, notamment en Colombie et en Équateur.'
+          },
+          {
+            question: 'Cite 2 facteurs qui contribuent à l’aridité de l’Atacama.',
+            answer: 'L’influence du courant froid de Humboldt et l’effet d’abri pluviométrique des reliefs andins ; la circulation subtropicale et l’éloignement des sources d’humidité jouent également un rôle.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NASA Earth Observatory — Looking Down on the Andes',
+            url: 'https://science.nasa.gov/earth/earth-observatory/looking-down-on-the-andes-151670/'
+          },
+          {
+            title: 'Houston et Hartley — The central Andean west-slope rainshadow and its potential contribution to the origin of hyper-aridity in the Atacama Desert',
+            url: 'https://doi.org/10.1002/joc.938'
+          },
+          {
+            title: 'Annual Review of Environment and Resources — High-Andean Vegetation Under Environmental Change: A Continental Synthesis',
+            url: 'https://doi.org/10.1146/annurev-environ-111523-101920'
+          }
+        ]
+      }
+    },
+    {
+      id: 'eaux-glaciers-bassins',
+      title: 'Ressources en eau, glaciers et grands bassins hydrographiques',
+      field: 'Géographie physique · Hydrologie · Cryosphère',
+      summary: 'Étudier le rôle des Andes comme château d’eau régional, la répartition des écoulements et les conséquences du recul glaciaire.',
+      lesson: {
+        sections: [
+          'Les Andes jouent un rôle majeur dans l’organisation du réseau hydrographique sud-américain. Les précipitations, la neige et la glace alimentent de nombreux cours d’eau qui descendent des reliefs vers les basses terres. Dans les Andes tropicales, plusieurs bassins versants contribuent à l’alimentation de grands systèmes fluviaux, notamment celui de l’Amazone et celui du bassin du Río de la Plata. La ligne de partage des eaux dépend du relief : elle sépare les eaux qui s’écoulent vers le Pacifique de celles qui rejoignent les bassins intérieurs ou l’Atlantique. Dans certains hauts plateaux, des bassins endoréiques retiennent les eaux dans des lacs, des lagunes ou des salars sans écoulement permanent vers l’océan.',
+          'Les glaciers andins constituent des réserves d’eau gelée. Leur fonte saisonnière peut soutenir les débits des rivières, en particulier pendant les périodes sèches, et contribuer à l’approvisionnement des villes, de l’agriculture et de certains écosystèmes. Leur importance varie toutefois fortement selon les régions et les bassins : toutes les populations andines ne dépendent pas de la même manière de l’eau glaciaire. L’Atlas des glaciers et de l’eau des Andes publié avec l’appui de l’UNESCO souligne le rôle de ces glaciers pour les ressources hydriques de millions de personnes, notamment durant la saison sèche.',
+          'Le réchauffement climatique provoque un recul généralisé des glaciers andins, avec des différences régionales importantes. Le GIEC indique que la perte de surface glaciaire dans les Andes depuis les années 1980 atteint, selon les zones, environ 30 % à plus de 50 %. À court terme, une fonte accrue peut temporairement augmenter certains débits ; à plus long terme, la diminution du volume de glace réduit la réserve susceptible de soutenir les cours d’eau pendant les saisons sèches. Le changement des précipitations, la fonte du pergélisol et l’évolution des lacs glaciaires peuvent aussi modifier les risques d’inondation, de glissements de terrain et de pénuries d’eau. Les projections hydrologiques restent variables selon les bassins et les scénarios climatiques.'
+        ],
+        example: {
+          statement: 'Un bassin versant reçoit de l’eau de pluie et de fonte nivale, puis l’évacue par une rivière vers l’aval. Comment nomme-t-on l’espace géographique qui recueille ces eaux ?',
+          calculation: 'On délimite le bassin en suivant les lignes de partage des eaux, généralement associées aux points hauts du relief.',
+          answer: 'Cet espace est un bassin versant. Ses limites topographiques déterminent vers quel cours d’eau s’écoulent les précipitations.'
+        },
+        exercise: {
+          question: 'Pourquoi le recul des glaciers andins peut-il fragiliser l’approvisionnement en eau pendant la saison sèche ?',
+          answer: 'Parce que les glaciers stockent temporairement de l’eau sous forme de glace et en libèrent une partie lors de la fonte. La diminution de leur volume réduit progressivement cette réserve saisonnière dans les bassins qui en dépendent.'
+        },
+        exercises: [
+          {
+            question: 'Qu’est-ce qu’un bassin endoréique ?',
+            answer: 'Un bassin dont les eaux ne rejoignent pas directement l’océan et s’accumulent ou s’évaporent à l’intérieur des terres.'
+          },
+          {
+            question: 'Quel organisme international a contribué à publier un atlas consacré aux glaciers et à l’eau des Andes ?',
+            answer: 'L’UNESCO, en collaboration avec GRID-Arendal et d’autres partenaires.'
+          },
+          {
+            question: 'Le recul glaciaire produit-il les mêmes effets hydrologiques dans tous les bassins andins ?',
+            answer: 'Non. Les effets dépendent de la taille des glaciers, du climat, des précipitations, de la saisonnalité et des usages de l’eau propres à chaque bassin.'
+          }
+        ],
+        sources: [
+          {
+            title: 'UNESCO — The Andean Glacier and Water Atlas',
+            url: 'https://www.unesco.org/fr/articles/andean-glacier-and-water-atlas?hub=348'
+          },
+          {
+            title: 'GIEC — Climate Change 2022: Impacts, Adaptation and Vulnerability, Chapter 12',
+            url: 'https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-12/'
+          },
+          {
+            title: 'FAO — Climate-Smart Agriculture Sourcebook, rôle hydrologique des Andes tropicales',
+            url: 'https://www.fao.org/4/i3325e/i3325e.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'peuplements-agriculture-cultures',
+      title: 'Peuplements, sociétés andines et systèmes agricoles',
+      field: 'Géographie humaine · Population · Agriculture · Patrimoines culturels',
+      summary: 'Analyser l’adaptation des sociétés aux contraintes de la montagne, la diversité des activités et les savoirs agricoles andins.',
+      lesson: {
+        sections: [
+          'Les Andes sont habitées depuis des millénaires et accueillent des sociétés aux langues, aux histoires et aux organisations diverses. Les populations andines ne forment pas un groupe culturel unique : les identités locales et nationales sont multiples. Les langues quechua et aymara occupent une place importante dans plusieurs régions, aux côtés de l’espagnol et d’autres langues autochtones. Les établissements humains se répartissent dans les vallées, les hauts plateaux, les bassins et les piémonts. L’altitude, la pente, l’accès à l’eau, les voies de circulation et les conditions climatiques influencent les formes d’habitat et les activités, sans déterminer à eux seuls les choix des populations.',
+          'L’agriculture andine repose sur une connaissance fine des différences écologiques liées à l’altitude et à l’exposition. Les communautés ont développé des terrasses agricoles, des canaux d’irrigation, des champs surélevés et des systèmes de gestion de l’eau. La FAO documente au Pérou des pratiques agricoles adaptées depuis plus de 5 000 ans, ainsi que la culture de pommes de terre, de quinoa et d’autres plantes selon les conditions locales. Les terrasses permettent d’aménager des surfaces cultivables sur les pentes, de mieux gérer l’eau et de limiter certains phénomènes d’érosion lorsqu’elles sont entretenues. Elles représentent à la fois des infrastructures productives et un patrimoine de connaissances transmis entre générations.',
+          'Les systèmes de production varient selon les milieux. Les cultures de pommes de terre et d’autres tubercules sont importantes dans plusieurs zones d’altitude ; le maïs est davantage associé à des étages plus bas et à des vallées plus tempérées ; l’élevage de camélidés sud-américains, notamment les lamas et les alpagas, est présent dans certains hauts plateaux et pâturages. Ces répartitions sont des tendances régionales, non des règles absolues. Les sociétés andines combinent aujourd’hui agriculture, élevage, commerce, artisanat, tourisme, emplois urbains et activités minières. Les migrations, les marchés, les politiques publiques et les changements environnementaux transforment les territoires, tandis que les savoirs locaux continuent de jouer un rôle dans l’adaptation aux contraintes de la montagne.'
+        ],
+        example: {
+          statement: 'Une communauté cultive du maïs dans des vallées plus basses, des pommes de terre à des altitudes intermédiaires et pratique l’élevage dans des pâturages d’altitude. Quel principe géographique organise cette répartition ?',
+          calculation: 'La communauté met en relation les conditions écologiques de chaque étage altitudinal avec les cultures et les activités qui y sont adaptées.',
+          answer: 'Il s’agit d’une organisation verticale des activités, fondée sur la diversité des milieux avec l’altitude. Les limites de chaque étage varient selon la latitude et les conditions locales.'
+        },
+        exercise: {
+          question: 'En quoi les terrasses agricoles illustrent-elles une adaptation des sociétés andines à leur environnement ?',
+          answer: 'Elles aménagent les pentes en surfaces cultivables, facilitent la gestion de l’eau et peuvent réduire l’érosion. Elles témoignent de savoir-faire techniques adaptés à des reliefs difficiles.'
+        },
+        exercises: [
+          {
+            question: 'Cite 2 langues autochtones importantes dans plusieurs régions andines.',
+            answer: 'Le quechua et l’aymara.'
+          },
+          {
+            question: 'Quels sont 2 exemples de cultures importantes dans l’agriculture andine ?',
+            answer: 'La pomme de terre et le quinoa ; le maïs est également cultivé dans de nombreuses vallées.'
+          },
+          {
+            question: 'Pourquoi les activités agricoles ne sont-elles pas identiques à toutes les altitudes ?',
+            answer: 'Parce que la température, la durée de la saison de croissance, les précipitations, les sols et les possibilités d’irrigation changent avec l’altitude et selon les régions.'
+          }
+        ],
+        sources: [
+          {
+            title: 'FAO — Andean Agriculture, Globally Important Agricultural Heritage Systems',
+            url: 'https://www.fao.org/giahs/giahs-around-the-world/peru-andean-agriculture/20th-anniversary-celebrations-of-the-globally-important-agricultural-heritage-systems-%28giahs%29-programme/en'
+          },
+          {
+            title: 'FAO — Ancestral Practices for the Management of Natural Resources',
+            url: 'https://www.fao.org/climatechange/25203-0c852ad52e60863cc2213d5efc22ae826.pdf'
+          },
+          {
+            title: 'Smithsonian National Museum of the American Indian — Extending the Agricultural Area',
+            url: 'https://americanindian.si.edu/nk360/inka-water/agricultural/agricultural'
+          }
+        ]
+      }
+    },
+    {
+      id: 'ressources-risques-transformations',
+      title: 'Ressources, activités économiques et risques environnementaux',
+      field: 'Géographie humaine et physique · Ressources · Risques · Développement durable',
+      summary: 'Étudier les ressources minières et touristiques, les contraintes naturelles et les défis de gestion durable des territoires andins.',
+      lesson: {
+        sections: [
+          'Les Andes possèdent des ressources naturelles variées : eau, potentiel hydroélectrique, sols agricoles localisés, paysages touristiques et ressources minérales. L’exploitation minière occupe une place économique importante dans plusieurs pays andins, notamment pour le cuivre et d’autres minerais. Dans les hauts plateaux salés, certaines saumures contiennent du lithium, du potassium et du magnésium ; la NASA décrit notamment les concentrations minérales des salars de l’Atacama et d’Uyuni. La présence d’une ressource ne signifie cependant pas que son exploitation soit automatiquement durable ou bénéfique à toutes les populations. Les effets dépendent des techniques, de la gouvernance, du partage des revenus, de la disponibilité de l’eau et du respect des milieux.',
+          'Les territoires andins sont exposés à plusieurs aléas naturels liés à leur contexte géologique et climatique. La convergence des plaques entraîne des séismes et alimente des volcans dans certains secteurs. Les fortes pentes, les pluies intenses, la fonte des neiges et les modifications des sols peuvent favoriser des glissements de terrain et des crues rapides. Les zones de haute montagne peuvent aussi connaître des avalanches, des ruptures de lacs glaciaires et des épisodes de froid ou de sécheresse. Un aléa ne devient un risque majeur que lorsqu’il affecte des populations, des infrastructures ou des activités vulnérables ; l’exposition et la préparation des territoires sont donc essentielles pour comprendre les conséquences des phénomènes naturels.',
+          'Le changement climatique accentue plusieurs pressions déjà présentes. Le GIEC rapporte le recul important des glaciers andins, des modifications de la disponibilité de l’eau et des effets sur les écosystèmes et les moyens de subsistance. Les transformations de l’usage des sols, la déforestation dans certains secteurs, l’érosion et les pressions liées aux activités extractives peuvent se combiner aux changements climatiques. Les réponses possibles comprennent la surveillance des volcans et des séismes, les systèmes d’alerte, la protection des bassins versants, l’entretien des infrastructures hydrauliques, la restauration des écosystèmes et la concertation avec les communautés locales. Une gestion durable suppose d’évaluer ensemble les besoins économiques, les droits des populations, les ressources en eau et la conservation des milieux.'
+        ],
+        example: {
+          statement: 'Une région andine possède un gisement minéral, mais son exploitation peut accroître la demande en eau dans un bassin déjà soumis à une forte variabilité hydrologique. Quel arbitrage territorial faut-il étudier ?',
+          calculation: 'Il faut comparer les besoins en eau des activités minières, agricoles, domestiques et écologiques, puis évaluer les effets cumulés à l’échelle du bassin versant.',
+          answer: 'La décision doit reposer sur une gestion intégrée de l’eau et une évaluation des impacts environnementaux et sociaux. La seule valeur économique du minerai ne suffit pas à établir la durabilité du projet.'
+        },
+        exercise: {
+          question: 'Quelle différence faut-il faire entre un aléa naturel et un risque ?',
+          answer: 'Un aléa est un phénomène potentiellement dommageable, comme un séisme ou une crue. Le risque dépend aussi de l’exposition et de la vulnérabilité des populations, des biens et des activités.'
+        },
+        exercises: [
+          {
+            question: 'Cite 2 aléas liés au contexte tectonique des Andes.',
+            answer: 'Les séismes et les éruptions volcaniques.'
+          },
+          {
+            question: 'Pourquoi l’exploitation minière peut-elle créer des tensions autour de l’eau ?',
+            answer: 'Parce qu’elle peut entrer en concurrence avec les usages domestiques, agricoles et écologiques, dans des bassins où l’eau est parfois rare ou saisonnière.'
+          },
+          {
+            question: 'Donne 2 mesures qui peuvent réduire la vulnérabilité des territoires andins.',
+            answer: 'La surveillance et l’alerte face aux aléas, ainsi que la planification de l’occupation des sols et la protection des bassins versants.'
+          }
+        ],
+        sources: [
+          {
+            title: 'NASA Earth Observatory — Looking Down on the Andes',
+            url: 'https://science.nasa.gov/earth/earth-observatory/looking-down-on-the-andes-151670/'
+          },
+          {
+            title: 'GIEC — Climate Change 2022: Impacts, Adaptation and Vulnerability, Chapter 12',
+            url: 'https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-12/'
+          },
+          {
+            title: 'ECLAC — Managing environmental mining legacies in the Andean region',
+            url: 'https://www.cepal.org/en/publications/89962-managing-environmental-mining-legacies-andean-region-analysis-challenges-and'
+          }
+        ]
+      }
+    }
+  ]
+},
+
+{
+  id: 'armenie',
+  sortYear: false,
+  title: 'Arménie',
+  note: 'Six chapitres sur la situation et les reliefs de l’Arménie, sa géologie et ses risques tectoniques, ses climats et ses milieux naturels, les eaux et le lac Sevan, les sociétés et l’agriculture, puis les ressources économiques et les enjeux environnementaux. Les statistiques sont datées lorsqu’elles proviennent d’un millésime précis ; les caractéristiques physiques sont présentées comme des ordres de grandeur.',
+  chapters: [
+    {
+      id: 'situation-reliefs-armenie',
+      title: 'Situation géographique, frontières et grands reliefs',
+      field: 'Géographie physique · Caucase du Sud · Territoire national',
+      summary: 'Localiser l’Arménie dans le Caucase du Sud et comprendre l’organisation de son territoire montagneux.',
+      lesson: {
+        sections: [
+          'La République d’Arménie est un État enclavé du Caucase du Sud, situé dans la partie nord-est du haut plateau arménien. Elle ne possède aucun accès direct à la mer. Son territoire est bordé par la Géorgie au nord, l’Azerbaïdjan à l’est, l’Iran au sud et la Turquie à l’ouest. La frontière avec l’Azerbaïdjan comprend des secteurs dont la situation politique et les conditions de circulation ont été affectées par les conflits régionaux ; une carte géographique ne doit donc pas être confondue avec une description de la situation diplomatique ou sécuritaire actuelle. La superficie officielle publiée par le Comité statistique arménien est de 29 743 km².',
+          'Le relief est largement montagneux et élevé. Le pays appartient principalement au Petit Caucase et comprend des chaînes, des plateaux volcaniques, des bassins et des vallées encaissées. Le mont Aragats, volcan éteint ou inactif selon les classifications géologiques, atteint environ 4 090 m et constitue le point culminant du territoire national. Le point le plus bas se situe dans la vallée du Debed, autour de 375 m selon les données statistiques nationales. Cette amplitude altitudinale importante explique la diversité des conditions climatiques et des possibilités d’occupation du sol.',
+          'Le lac Sevan occupe une vaste dépression d’altitude dans l’est du pays, au sein de la province de Gegharkunik. D’autres ensembles régionaux structurent l’espace : la plaine de l’Ararat au sud-ouest, les reliefs du Lori et du Tavush au nord, les plateaux du Shirak au nord-ouest et les montagnes du Syunik au sud. La capitale, Erevan, se trouve dans l’ouest du pays, à proximité de la plaine de l’Ararat. Les distances, les dénivelés et les conditions de circulation sont fortement influencés par les vallées et les cols, ce qui donne aux axes de transport une importance stratégique.'
+        ],
+        example: {
+          statement: 'Le mont Aragats culmine à environ 4 090 m et le point le plus bas du pays est situé vers 375 m. Quelle est l’amplitude altitudinale entre ces deux repères ?',
+          calculation: 'Amplitude = 4 090 m - 375 m = 3 715 m.',
+          answer: 'L’amplitude altitudinale est d’environ 3 715 m. Elle illustre le caractère très contrasté du relief arménien.'
+        },
+        exercise: {
+          question: 'Pourquoi le relief joue-t-il un rôle majeur dans l’organisation du territoire arménien ?',
+          answer: 'Parce que les montagnes, les plateaux et les vallées influencent les climats locaux, les ressources en eau, l’agriculture, l’habitat et les voies de communication.'
+        },
+        exercises: [
+          {
+            question: 'Dans quelle grande région se situe l’Arménie ?',
+            answer: 'Dans le Caucase du Sud, à la jonction de l’Europe orientale et de l’Asie occidentale selon les découpages géographiques.'
+          },
+          {
+            question: 'Quel est le point culminant de l’Arménie ?',
+            answer: 'Le mont Aragats, à environ 4 090 m.'
+          },
+          {
+            question: 'L’Arménie possède-t-elle un littoral maritime ?',
+            answer: 'Non. C’est un État enclavé, sans accès direct à la mer.'
+          }
+        ],
+        sources: [
+          {
+            title: 'Statistical Committee of the Republic of Armenia — Geographic Characteristic of the Republic of Armenia',
+            url: 'https://www.armstat.am/file/doc/99542213.pdf'
+          },
+          {
+            title: 'FAO — Republic of Armenia: Nutrition Profile',
+            url: 'https://www.fao.org/4/ap827e/ap827e.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'geologie-tectonique-risques',
+      title: 'Géologie, tectonique et risques naturels',
+      field: 'Géographie physique · Géologie · Tectonique régionale',
+      summary: 'Expliquer la formation géologique du Petit Caucase et les principaux aléas associés à une région tectoniquement active.',
+      lesson: {
+        sections: [
+          'L’Arménie se trouve dans une région de convergence entre la plaque arabique, au sud, et la plaque eurasienne, au nord. Cette convergence a contribué à la fermeture progressive d’anciens domaines océaniques, à la collision continentale et à la surrection des reliefs du Caucase. La déformation ne se limite pas à une frontière unique et simple : elle se répartit sur un ensemble de structures tectoniques, de failles et de zones plissées. Les roches du territoire témoignent d’une histoire complexe, comprenant des terrains sédimentaires, métamorphiques, intrusifs et volcaniques.',
+          'Le volcanisme a joué un rôle important dans la construction de plusieurs plateaux et reliefs arméniens. Des édifices volcaniques et des coulées de lave témoignent d’épisodes éruptifs anciens, y compris au cours du Quaternaire. Le mont Aragats est un grand massif volcanique ; le lac Sevan et les plateaux environnants s’inscrivent dans un contexte géologique marqué par les déformations et les formations volcaniques régionales. Il faut distinguer l’existence d’un volcanisme passé de l’affirmation qu’un volcan donné est actuellement en éruption ou présente une activité imminente : cette dernière information exige des observations et des bulletins spécialisés récents.',
+          'La convergence tectonique explique une sismicité notable. Le séisme de Spitak du 7 décembre 1988, de magnitude généralement estimée à 6,8, a provoqué de très lourdes destructions et de nombreuses victimes. Les conséquences d’un séisme dépendent de sa magnitude, de sa profondeur, de la distance aux zones habitées, de la nature des sols, de la qualité des bâtiments et de la préparation des populations. Les pentes montagneuses peuvent également être affectées par des glissements de terrain, des chutes de blocs et des coulées de débris, notamment lorsque les pluies intenses, la neige fondante ou les secousses sismiques déstabilisent les versants.'
+        ],
+        example: {
+          statement: 'Un territoire présente des failles actives, des reliefs montagneux et des sols localement meubles. Pourquoi la magnitude d’un séisme ne suffit-elle pas à déterminer les dégâts ?',
+          calculation: 'Le niveau de dommages dépend de plusieurs facteurs : magnitude, profondeur, distance à l’épicentre, conditions géologiques locales, densité du bâti et vulnérabilité des constructions.',
+          answer: 'La magnitude mesure la taille de l’événement sismique, mais les dégâts dépendent aussi de l’exposition et de la vulnérabilité du territoire.'
+        },
+        exercise: {
+          question: 'Quel lien existe-t-il entre la convergence des plaques arabique et eurasienne et la sismicité de l’Arménie ?',
+          answer: 'La convergence provoque une déformation et une accumulation de contraintes dans la croûte. Leur libération le long de failles peut produire des séismes.'
+        },
+        exercises: [
+          {
+            question: 'Quelles grandes plaques contribuent à la dynamique tectonique du Caucase ?',
+            answer: 'La plaque arabique au sud et la plaque eurasienne au nord, avec une déformation répartie dans la région.'
+          },
+          {
+            question: 'Quel grand séisme a frappé la région de Spitak en 1988 ?',
+            answer: 'Le séisme du 7 décembre 1988, de magnitude généralement estimée à 6,8.'
+          },
+          {
+            question: 'Cite 2 aléas géologiques possibles dans les reliefs arméniens.',
+            answer: 'Les séismes et les glissements de terrain. Des chutes de blocs et des coulées de débris peuvent également se produire.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World Bank — Armenia: Strategic Mineral Sector Sustainability Assessment, regional geology',
+            url: 'https://documents1.worldbank.org/curated/en/289051468186845846/pdf/106237-WP-P155900-PUBLIC.pdf'
+          },
+          {
+            title: 'USGS — Earthquake Hazards Program',
+            url: 'https://www.usgs.gov/programs/earthquake-hazards'
+          }
+        ]
+      }
+    },
+    {
+      id: 'climats-milieux-biodiversite',
+      title: 'Climats, étagement altitudinal et biodiversité',
+      field: 'Géographie physique · Climatologie · Biogéographie',
+      summary: 'Comprendre les contrastes climatiques liés à l’altitude et la diversité des milieux naturels arméniens.',
+      lesson: {
+        sections: [
+          'Le climat de l’Arménie est généralement continental, avec des contrastes marqués selon l’altitude, l’exposition et la position géographique. Les étés peuvent être chauds et secs dans les bassins et les plaines, tandis que les secteurs élevés connaissent des températures plus fraîches et un enneigement hivernal plus fréquent. Les précipitations sont inégalement réparties : les versants exposés aux flux humides reçoivent davantage d’eau que certains bassins abrités. Les valeurs nationales moyennes masquent donc des différences locales considérables. Le Centre commun de recherche de la Commission européenne décrit un gradient de précipitations et d’altitude important dans le pays.',
+          'L’altitude entraîne un étagement des milieux. Les fonds de vallée et les plaines accueillent des paysages de steppe, des terres cultivées et, dans certains secteurs, des formations semi-arides. Les pentes intermédiaires peuvent porter des forêts, notamment dans les régions plus humides du nord-est. Plus haut, les prairies et pâturages de montagne prennent davantage d’importance, avant les milieux rocheux et les formations de haute altitude. Cette succession n’est pas identique partout : l’exposition, la nature des sols, les usages agricoles, les incendies et l’histoire du couvert végétal modifient la répartition des habitats.',
+          'L’Arménie appartient à la région biogéographique du Caucase, reconnue pour sa diversité écologique et ses espèces endémiques. Les habitats vont des milieux semi-désertiques aux forêts tempérées et aux prairies alpines. Les aires protégées, dont les parcs nationaux de Dilijan, du lac Sevan et d’Arpi, contribuent à préserver des écosystèmes et des espèces. La biodiversité subit toutefois des pressions liées à la fragmentation des habitats, aux changements d’usage des terres, au pâturage, aux incendies, à la pollution et au changement climatique. La conservation doit donc associer protection des espaces, suivi scientifique et pratiques locales compatibles avec le maintien des habitats.'
+        ],
+        example: {
+          statement: 'Une station de montagne reçoit davantage de précipitations qu’un bassin situé sous le vent d’un relief. Quel mécanisme peut expliquer cette différence ?',
+          calculation: 'L’air humide forcé de s’élever se refroidit et peut produire des précipitations sur le versant exposé ; l’air qui redescend sous le vent est souvent plus sec.',
+          answer: 'Il s’agit d’un effet orographique et d’un effet d’abri pluviométrique. Leur intensité dépend de la circulation atmosphérique et de l’orientation du relief.'
+        },
+        exercise: {
+          question: 'Pourquoi la biodiversité arménienne varie-t-elle fortement avec l’altitude ?',
+          answer: 'Parce que l’altitude modifie les températures, l’humidité, la durée de la saison de croissance et les conditions des sols, ce qui favorise des habitats différents.'
+        },
+        exercises: [
+          {
+            question: 'Quel type de climat caractérise globalement l’Arménie ?',
+            answer: 'Un climat principalement continental, avec de forts contrastes locaux liés au relief.'
+          },
+          {
+            question: 'Dans quelles régions trouve-t-on notamment des forêts arméniennes ?',
+            answer: 'Elles sont particulièrement présentes dans certains secteurs plus humides du nord et du nord-est, notamment autour du Lori et du Tavush.'
+          },
+          {
+            question: 'Cite une pression qui menace les milieux naturels arméniens.',
+            answer: 'La fragmentation des habitats, les incendies, le surpâturage, la pollution ou le changement climatique.'
+          }
+        ],
+        sources: [
+          {
+            title: 'European Commission Joint Research Centre — Armenia: climate and environmental profile',
+            url: 'https://publications.jrc.ec.europa.eu/repository/bitstream/JRC108843/kjna29073enn.pdf'
+          },
+          {
+            title: 'Convention on Biological Diversity — Armenia country profile',
+            url: 'https://www.cbd.int/countries/profile/?country=am'
+          },
+          {
+            title: 'IUCN — Caucasus biodiversity and protected areas',
+            url: 'https://www.iucn.org/our-work/region/europe/caucasus'
+          }
+        ]
+      }
+    },
+    {
+      id: 'eaux-lac-sevan-bassins',
+      title: 'Ressources en eau, fleuves et lac Sevan',
+      field: 'Géographie physique · Hydrologie · Gestion des ressources',
+      summary: 'Étudier les principaux bassins hydrographiques, le rôle du lac Sevan et les enjeux de gestion de l’eau.',
+      lesson: {
+        sections: [
+          'L’Arménie appartient à deux grands ensembles hydrographiques régionaux : le bassin de la Koura au nord et celui de l’Araxe au sud. Ces cours d’eau et leurs affluents s’inscrivent dans des bassins transfrontaliers qui concernent plusieurs États. L’Araxe, appelé Aras dans plusieurs langues de la région, longe ou forme une partie de frontières internationales. Les écoulements sont fortement saisonniers : la fonte nivale au printemps contribue à une part importante des débits annuels, tandis que les étiages peuvent devenir contraignants pendant les périodes chaudes et sèches. Les précipitations, les retenues, les prélèvements et les caractéristiques géologiques des bassins influencent également les ressources disponibles.',
+          'Le lac Sevan est le plus grand lac d’Arménie et l’un des grands lacs d’altitude du Caucase. Il se situe à environ 1 900 m au-dessus du niveau de la mer et occupe une dépression du plateau arménien. Son bassin versant reçoit des eaux de rivières et de précipitations ; son principal exutoire naturel est la rivière Hrazdan, qui s’écoule vers le sud et rejoint le système de l’Araxe. Le lac joue un rôle écologique, économique et paysager majeur : il constitue un habitat pour des espèces aquatiques, une ressource pour la pêche, le tourisme et la gestion de l’eau. Son niveau et sa qualité dépendent des apports, des prélèvements et des transformations de son bassin.',
+          'Le lac Sevan a connu une baisse importante de son niveau au cours du XXe siècle, liée notamment aux prélèvements d’eau pour l’irrigation et la production hydroélectrique. Des transferts d’eau et des mesures de gestion ont ensuite été mis en œuvre pour contribuer à sa restauration, sans faire disparaître les enjeux écologiques. L’eutrophisation, les apports de nutriments, les eaux usées et les pressions liées aux activités humaines peuvent dégrader la qualité de l’eau. À l’échelle nationale, l’agriculture représente le principal secteur de prélèvement d’eau selon les données FAO AQUASTAT pour 2023. La gestion intégrée des bassins doit donc concilier irrigation, eau potable, énergie, écosystèmes et coopération transfrontalière.'
+        ],
+        example: {
+          statement: 'Selon la fiche FAO AQUASTAT pour 2023, les prélèvements totaux d’eau en Arménie sont de 3,07 km³, dont 2,38 km³ pour l’agriculture. Quelle part approximative cela représente-t-il ?',
+          calculation: 'Part agricole = (2,38 / 3,07) × 100 = 77,52 % environ.',
+          answer: 'Les prélèvements agricoles représentent environ 77,5 % du total indiqué pour 2023. Cette proportion concerne les données de prélèvement de cette année et non une moyenne permanente.'
+        },
+        exercise: {
+          question: 'Pourquoi la gestion du lac Sevan ne peut-elle pas être séparée de celle des activités humaines de son bassin versant ?',
+          answer: 'Parce que les prélèvements, les rejets, l’agriculture, l’urbanisation et les activités touristiques influencent directement le niveau et la qualité de l’eau ainsi que les habitats aquatiques.'
+        },
+        exercises: [
+          {
+            question: 'Quels sont les 2 grands bassins hydrographiques régionaux auxquels appartient l’Arménie ?',
+            answer: 'Le bassin de la Koura et celui de l’Araxe.'
+          },
+          {
+            question: 'Quel est le principal exutoire du lac Sevan ?',
+            answer: 'La rivière Hrazdan.'
+          },
+          {
+            question: 'Quel secteur représente la plus grande part des prélèvements d’eau en Arménie dans la fiche FAO AQUASTAT 2023 ?',
+            answer: 'L’agriculture, avec 2,38 km³ sur 3,07 km³ de prélèvements totaux.'
+          }
+        ],
+        sources: [
+          {
+            title: 'FAO AQUASTAT — Armenia Country Fact Sheet, 2023 statistics',
+            url: 'https://storage.googleapis.com/fao-aquastat.appspot.com/countries_regions/factsheets/summary_statistics/en/ARM-CF.pdf'
+          },
+          {
+            title: 'European Commission Joint Research Centre — Armenia: water resources and hydrology',
+            url: 'https://publications.jrc.ec.europa.eu/repository/bitstream/JRC108843/kjna29073enn.pdf'
+          },
+          {
+            title: 'FAO — Republic of Armenia: Nutrition Profile',
+            url: 'https://www.fao.org/4/ap827e/ap827e.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'population-villes-agriculture',
+      title: 'Population, villes et systèmes agricoles',
+      field: 'Géographie humaine · Peuplement · Agriculture · Organisation territoriale',
+      summary: 'Analyser la répartition de la population, le rôle d’Erevan et les adaptations agricoles aux milieux de montagne.',
+      lesson: {
+        sections: [
+          'Le peuplement arménien est marqué par une forte concentration autour de la capitale, Erevan, et dans les principales vallées et plaines. Erevan constitue le premier centre politique, administratif, universitaire et économique du pays. D’autres villes, comme Gyumri, Vanadzor, Hrazdan, Kapan et Goris, structurent les réseaux régionaux. Les contraintes du relief rendent les communications plus difficiles dans certains secteurs montagneux et contribuent à la concentration des activités dans les bassins accessibles. Les dynamiques démographiques doivent être étudiées à partir de statistiques datées, car les migrations, les évolutions économiques et les déplacements de population peuvent modifier rapidement les répartitions locales.',
+          'L’agriculture utilise principalement les plaines, les vallées et les versants aménagés. La plaine de l’Ararat et la région d’Armavir comptent parmi les espaces agricoles importants, notamment grâce à l’irrigation. On y cultive des céréales, des fruits, des légumes, de la vigne et d’autres productions adaptées aux conditions locales. Dans les zones plus élevées, les pâturages et l’élevage occupent une place importante. Les cultures et les rendements dépendent de l’altitude, de la disponibilité en eau, de la qualité des sols, de l’accès aux marchés et des infrastructures. L’agriculture arménienne est donc très différenciée selon les régions.',
+          'L’irrigation est essentielle dans plusieurs secteurs où les étés sont secs et les précipitations insuffisantes pour certaines cultures. Les données de la FAO indiquent qu’en 2023, 155 800 hectares étaient équipés pour l’irrigation, tandis que la superficie effectivement irriguée était de 82 800 hectares. Ces chiffres ne signifient pas que toute cette surface est irriguée en permanence : ils distinguent l’équipement disponible de l’usage effectif. Les infrastructures vieillissantes, les pertes dans les réseaux, la concurrence entre usages et la variabilité des ressources constituent des défis. L’amélioration de l’efficacité de l’irrigation et la protection des sols sont des enjeux importants pour la sécurité alimentaire et l’adaptation climatique.'
+        ],
+        example: {
+          statement: 'La FAO AQUASTAT indique pour 2023 une superficie équipée pour l’irrigation de 155 800 ha et une superficie effectivement irriguée de 82 800 ha. Quel pourcentage de la superficie équipée a été effectivement irrigué ?',
+          calculation: 'Taux d’utilisation = (82 800 / 155 800) × 100 = 53,14 % environ.',
+          answer: 'Environ 53,1 % de la superficie équipée a été effectivement irriguée en 2023, selon la fiche statistique FAO AQUASTAT.'
+        },
+        exercise: {
+          question: 'Pourquoi les plaines et les vallées jouent-elles un rôle important dans l’agriculture arménienne ?',
+          answer: 'Elles offrent généralement des pentes plus faibles, des sols cultivables et un accès plus facile aux infrastructures et à l’irrigation que de nombreux secteurs de haute montagne.'
+        },
+        exercises: [
+          {
+            question: 'Quelle est la capitale de l’Arménie ?',
+            answer: 'Erevan.'
+          },
+          {
+            question: 'Quelle région de plaine est particulièrement importante pour les cultures irriguées ?',
+            answer: 'La plaine de l’Ararat, notamment dans les secteurs d’Ararat et d’Armavir.'
+          },
+          {
+            question: 'Quelle différence existe-t-il entre une superficie équipée pour l’irrigation et une superficie effectivement irriguée ?',
+            answer: 'La première dispose d’équipements permettant l’irrigation ; la seconde correspond à la surface réellement irriguée pendant la période statistique considérée.'
+          }
+        ],
+        sources: [
+          {
+            title: 'FAO AQUASTAT — Armenia Country Fact Sheet, 2023 statistics',
+            url: 'https://storage.googleapis.com/fao-aquastat.appspot.com/countries_regions/factsheets/summary_statistics/en/ARM-CF.pdf'
+          },
+          {
+            title: 'Statistical Committee of the Republic of Armenia — Statistical publications',
+            url: 'https://www.armstat.am/en/'
+          },
+          {
+            title: 'FAO — Republic of Armenia: Nutrition Profile',
+            url: 'https://www.fao.org/4/ap827e/ap827e.pdf'
+          }
+        ]
+      }
+    },
+    {
+      id: 'economie-ressources-environnement',
+      title: 'Ressources économiques, industrie et enjeux environnementaux',
+      field: 'Géographie économique · Ressources naturelles · Développement durable',
+      summary: 'Étudier les ressources minières, les activités industrielles et les arbitrages environnementaux du développement arménien.',
+      lesson: {
+        sections: [
+          'L’économie arménienne repose sur un ensemble d’activités comprenant les services, l’industrie, l’agriculture, le commerce, les technologies et l’exploitation de ressources naturelles. La situation enclavée du pays et la configuration de ses frontières influencent les échanges et les coûts de transport. Les axes routiers et ferroviaires vers les pays voisins, les infrastructures énergétiques et les relations commerciales régionales jouent donc un rôle important. Les conditions géopolitiques peuvent modifier l’accessibilité des marchés et la circulation des marchandises ; elles doivent être décrites avec des sources récentes lorsqu’il est question de la situation actuelle.',
+          'Le sous-sol arménien présente une diversité géologique associée à son histoire tectonique et volcanique. Le pays possède notamment des ressources en cuivre, molybdène, or et autres minerais. L’exploitation minière contribue à l’activité industrielle et aux exportations, mais elle peut aussi générer des pressions sur les sols, les eaux et les paysages : résidus miniers, poussières, consommation d’eau et risques de pollution. Le rapport de la Banque mondiale consacré à la durabilité du secteur minéral arménien souligne l’importance de la géologie régionale et des enjeux de gouvernance environnementale. Les effets d’une mine dépendent de son minerai, de ses procédés, de son site, de son contrôle et de la gestion de ses déchets.',
+          'Les principaux défis environnementaux comprennent la gestion de l’eau, la qualité de l’air dans les zones urbaines, la préservation des forêts et des habitats, la restauration des sites miniers et l’adaptation au changement climatique. Le lac Sevan illustre la nécessité de concilier usages économiques et protection des écosystèmes. Les politiques de développement durable doivent intégrer des évaluations environnementales, la surveillance des rejets, la transparence des données, la remise en état des sites exploités et la participation des populations concernées. L’objectif n’est pas de considérer toute activité économique comme incompatible avec l’environnement, mais d’évaluer précisément ses coûts, ses bénéfices et ses effets à long terme.'
+        ],
+        example: {
+          statement: 'Une exploitation minière prélève de l’eau dans un bassin également utilisé par les habitants et les agriculteurs. Quelle méthode permet d’évaluer correctement les conséquences du projet ?',
+          calculation: 'Il faut établir un bilan des prélèvements et des rejets, étudier la qualité de l’eau en amont et en aval, identifier les périodes de tension et comparer les besoins des différents usagers.',
+          answer: 'Une étude d’impact environnemental et une gestion intégrée du bassin versant permettent d’examiner les effets cumulés sur l’eau, les milieux et les populations.'
+        },
+        exercise: {
+          question: 'Pourquoi l’exploitation minière constitue-t-elle à la fois une ressource économique et un enjeu environnemental en Arménie ?',
+          answer: 'Elle fournit des matières premières, des emplois et des recettes, mais peut aussi entraîner des consommations d’eau, des déchets miniers et des risques de pollution qui nécessitent un contrôle et une gestion rigoureux.'
+        },
+        exercises: [
+          {
+            question: 'Cite 2 minerais exploités ou présents dans le sous-sol arménien.',
+            answer: 'Le cuivre et le molybdène. L’or fait également partie des ressources minières du pays.'
+          },
+          {
+            question: 'Pourquoi la situation enclavée de l’Arménie influence-t-elle son économie ?',
+            answer: 'Elle rend les échanges dépendants des infrastructures terrestres, des passages frontaliers et des relations avec les pays voisins.'
+          },
+          {
+            question: 'Donne 2 mesures permettant de limiter les impacts environnementaux d’une mine.',
+            answer: 'Le contrôle des rejets et des eaux, ainsi que la gestion sécurisée des résidus et la réhabilitation des sites après exploitation.'
+          }
+        ],
+        sources: [
+          {
+            title: 'World Bank — Armenia: Strategic Mineral Sector Sustainability Assessment',
+            url: 'https://documents1.worldbank.org/curated/en/289051468186845846/pdf/106237-WP-P155900-PUBLIC.pdf'
+          },
+          {
+            title: 'FAO AQUASTAT — Armenia Country Fact Sheet',
+            url: 'https://storage.googleapis.com/fao-aquastat.appspot.com/countries_regions/factsheets/summary_statistics/en/ARM-CF.pdf'
+          },
+          {
+            title: 'European Commission Joint Research Centre — Armenia: environmental and climate profile',
+            url: 'https://publications.jrc.ec.europa.eu/repository/bitstream/JRC108843/kjna29073enn.pdf'
+          }
+        ]
+      }
+    }
+  ]
+},
+
 
 
 ]
