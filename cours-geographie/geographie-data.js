@@ -7122,5 +7122,1815 @@ window.courseCatalog = [
   ]
 },
 
+
+{
+  id: 'geographie-mers',
+  sortYear: false,
+  title: 'Les différentes mers du monde',
+  note: 'Étude géographique des mers nommées dans la nomenclature hydrographique internationale, complétée par certaines mers reconnues en océanographie. Chaque mer constitue un chapitre indépendant. Les limites hydrographiques sont conventionnelles et ne possèdent aucune signification politique. La référence principale est la publication OHI S-23, 3e édition de 1953, toujours référencée par l’OHI. Les appellations et délimitations peuvent différer selon les cartes et les organismes.',
+  chapters: [
+    {
+      id: 'mer-baltique',
+      title: 'La mer Baltique',
+      field: 'Géographie physique · Europe du Nord',
+      summary: 'Étudier une mer presque fermée, caractérisée par une faible salinité, des échanges océaniques limités et une forte influence des fleuves et du climat.',
+      lesson: {
+        sections: [
+          'La mer Baltique se trouve en Europe du Nord. Elle borde notamment la Suède, la Finlande, la Russie, l’Estonie, la Lettonie, la Lituanie, la Pologne, l’Allemagne et le Danemark. Elle communique avec la mer du Nord par les détroits danois et le Kattegat. Sa configuration semi-fermée limite le renouvellement de ses eaux.',
+          'La Baltique reçoit les eaux de nombreux fleuves et rivières. Ces apports d’eau douce expliquent en partie sa faible salinité par rapport aux mers ouvertes. La salinité augmente généralement vers l’ouest, à proximité des passages qui la relient à la mer du Nord. Les hivers peuvent provoquer une formation importante de glace, surtout dans les parties septentrionales.',
+          'La mer Baltique est un milieu fragile. Son renouvellement lent favorise l’accumulation de certains polluants et contribue à la persistance de zones pauvres en oxygène dans les profondeurs. L’eutrophisation, liée à un excès de nutriments, constitue un enjeu environnemental majeur. La pêche, le transport maritime et les activités industrielles exercent également une pression sur ses écosystèmes.'
+        ],
+        example: {
+          statement: 'Pourquoi la salinité de la mer Baltique est-elle généralement plus faible que celle de l’Atlantique ?',
+          calculation: 'Il faut comparer les apports d’eau douce, l’évaporation et les échanges avec l’océan. La Baltique reçoit beaucoup d’eau douce et communique avec la mer du Nord par des passages relativement étroits.',
+          answer: 'Sa salinité est relativement faible parce que les apports fluviaux sont importants et que les échanges avec les eaux océaniques salées sont limités.'
+        },
+        exercise: {
+          question: 'Pourquoi la mer Baltique est-elle particulièrement sensible aux pollutions ?',
+          answer: 'Parce que son renouvellement d’eau est relativement lent et que les substances polluantes peuvent persister longtemps dans son environnement.'
+        },
+        exercises: [
+          {
+            question: 'Sur quel continent se situe la mer Baltique ?',
+            answer: 'En Europe.'
+          },
+          {
+            question: 'Par quels passages communique-t-elle avec la mer du Nord ?',
+            answer: 'Par les détroits danois et le Kattegat.'
+          },
+          {
+            question: 'Qu’est-ce que l’eutrophisation ?',
+            answer: 'Un enrichissement excessif de l’eau en nutriments, susceptible de provoquer une prolifération d’algues et une diminution de l’oxygène disponible.'
+          }
+        ],
+        sources: [
+          { title: 'OHI — Limits of Oceans and Seas, S-23, 3e édition, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'HELCOM — Baltic Sea Environment', url: 'https://helcom.fi/baltic-sea-trends/' },
+          { title: 'NOAA — Difference between an ocean and a sea', url: 'https://oceanservice.noaa.gov/facts/oceanorsea.html' }
+        ]
+      }
+    },
+    {
+      id: 'mer-nord',
+      title: 'La mer du Nord',
+      field: 'Géographie physique · Europe occidentale et septentrionale',
+      summary: 'Comprendre une mer de plateau continental, ses marées, ses activités économiques et son importance dans les échanges maritimes européens.',
+      lesson: {
+        sections: [
+          'La mer du Nord se situe entre les îles Britanniques et les côtes de la Norvège, du Danemark, de l’Allemagne, des Pays-Bas, de la Belgique et de la France. Elle communique avec l’Atlantique Nord au nord et avec la Manche au sud. Elle est reliée à la mer Baltique par le système des détroits danois et du Skagerrak.',
+          'Une grande partie de la mer du Nord repose sur un plateau continental relativement peu profond. Les marées y sont importantes et les courants transportent les masses d’eau et les sédiments. Les vents, les dépressions atmosphériques et les variations saisonnières influencent fortement les conditions de navigation.',
+          'La mer du Nord est un espace économique majeur. Elle accueille de grands ports, des routes commerciales, des activités de pêche et des installations énergétiques offshore. Les écosystèmes marins sont toutefois soumis aux pressions de la pêche, aux pollutions, aux aménagements côtiers et aux changements climatiques.'
+        ],
+        example: {
+          statement: 'Pourquoi les marées jouent-elles un rôle important dans la mer du Nord ?',
+          calculation: 'Les marées résultent principalement de l’attraction gravitationnelle de la Lune et du Soleil. La forme des côtes, la profondeur et la configuration des bassins modifient ensuite leur amplitude.',
+          answer: 'La faible profondeur de nombreux secteurs et la configuration des côtes favorisent des variations importantes du niveau de la mer.'
+        },
+        exercise: {
+          question: 'Pourquoi la mer du Nord est-elle importante pour l’économie européenne ?',
+          answer: 'Elle concentre des ports majeurs, des routes maritimes commerciales, des activités de pêche et des installations énergétiques.'
+        },
+        exercises: [
+          { question: 'Quels territoires bordent la mer du Nord ?', answer: 'Notamment les îles Britanniques, la Norvège, le Danemark, l’Allemagne, les Pays-Bas, la Belgique et la France.' },
+          { question: 'Qu’est-ce qu’un plateau continental ?', answer: 'Le prolongement sous-marin relativement peu profond d’un continent.' },
+          { question: 'Cite deux activités économiques présentes dans cette mer.', answer: 'Le transport maritime et la pêche. On peut également citer les activités énergétiques offshore.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'OSPAR Commission — North-East Atlantic marine environment', url: 'https://www.ospar.org/' },
+          { title: 'NOAA — Ocean and sea geography', url: 'https://oceanservice.noaa.gov/facts/oceanorsea.html' }
+        ]
+      }
+    },
+    {
+      id: 'mer-norvege',
+      title: 'La mer de Norvège',
+      field: 'Géographie physique · Atlantique Nord-Est et Europe septentrionale',
+      summary: 'Étudier une mer de transition entre l’Atlantique Nord et les régions arctiques, influencée par les courants océaniques.',
+      lesson: {
+        sections: [
+          'La mer de Norvège se situe au nord-ouest de la Norvège, entre la mer du Nord, l’Islande, le Groenland et les régions arctiques. Elle constitue une zone de transition entre les eaux de l’Atlantique Nord et les eaux plus froides des hautes latitudes. Ses limites hydrographiques sont décrites dans la publication S-23 de l’OHI.',
+          'La circulation océanique y est influencée par les masses d’eau atlantiques transportées vers le nord. Ces eaux contribuent au transfert de chaleur vers les hautes latitudes. La température de la mer, les vents et les échanges avec les bassins voisins déterminent les caractéristiques physiques de cette région.',
+          'Cette mer possède des écosystèmes adaptés aux conditions nordiques. Elle accueille des poissons, des mammifères marins et des oiseaux marins. Elle est également importante pour la pêche, la navigation et les recherches sur les changements climatiques et la circulation océanique.'
+        ],
+        example: {
+          statement: 'Pourquoi les eaux atlantiques influencent-elles le climat des régions côtières norvégiennes ?',
+          calculation: 'Les courants transportent de l’eau relativement chaude depuis les basses latitudes vers le nord. Ce déplacement transfère de la chaleur à l’atmosphère.',
+          answer: 'Les courants atlantiques contribuent à adoucir les conditions climatiques de certaines régions côtières situées à des latitudes élevées.'
+        },
+        exercise: {
+          question: 'Quel est le rôle des courants atlantiques dans la mer de Norvège ?',
+          answer: 'Ils transportent de la chaleur vers le nord et participent aux échanges entre l’Atlantique et les régions arctiques.'
+        },
+        exercises: [
+          { question: 'Dans quelle partie du monde se situe cette mer ?', answer: 'Dans l’Atlantique Nord-Est, au nord-ouest de la Norvège.' },
+          { question: 'Pourquoi est-elle une région de transition ?', answer: 'Parce qu’elle reçoit des influences atlantiques et arctiques.' },
+          { question: 'Quel phénomène océanographique influence sa température ?', answer: 'La circulation des courants océaniques.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Norwegian Institute of Marine Research', url: 'https://www.hi.no/en' },
+          { title: 'NOAA — Ocean circulation', url: 'https://oceanservice.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-groenland',
+      title: 'La mer du Groenland',
+      field: 'Géographie physique · Atlantique Nord et océan Arctique',
+      summary: 'Comprendre les échanges entre l’Atlantique Nord et l’Arctique, la formation des eaux profondes et le rôle de la glace de mer.',
+      lesson: {
+        sections: [
+          'La mer du Groenland se trouve entre le Groenland, l’Islande, le Svalbard et l’océan Arctique. Elle constitue un espace de transition entre les eaux atlantiques et les eaux polaires. Sa situation géographique en fait une région importante pour comprendre les échanges d’eau et de chaleur entre les hautes et les moyennes latitudes.',
+          'Les conditions physiques sont marquées par les basses températures, les vents et la présence saisonnière de glace de mer. La circulation des eaux associe des masses d’eau de caractéristiques différentes. Dans certaines zones, le refroidissement et les processus de mélange contribuent à la formation d’eaux denses qui participent à la circulation profonde de l’Atlantique.',
+          'La région abrite des organismes adaptés aux milieux froids, notamment du plancton, des poissons, des oiseaux et des mammifères marins. La glace de mer constitue un habitat essentiel pour certaines espèces. Le suivi de son évolution permet aux scientifiques d’étudier les conséquences du réchauffement climatique dans l’Arctique.'
+        ],
+        example: {
+          statement: 'Pourquoi la formation d’eaux denses dans les régions polaires est-elle importante ?',
+          calculation: 'Le refroidissement de l’eau et, dans certaines conditions, l’augmentation de sa salinité accroissent sa densité. Une eau suffisamment dense peut s’enfoncer et contribuer à la circulation océanique profonde.',
+          answer: 'Elle participe au renouvellement des eaux profondes et à la circulation générale des océans.'
+        },
+        exercise: {
+          question: 'Quel rôle la mer du Groenland joue-t-elle dans la circulation océanique ?',
+          answer: 'Elle participe aux échanges entre les eaux atlantiques et arctiques et à certains processus de formation des eaux profondes.'
+        },
+        exercises: [
+          { question: 'Quels territoires entourent la mer du Groenland ?', answer: 'Le Groenland, l’Islande et le Svalbard, à proximité de l’océan Arctique.' },
+          { question: 'Qu’est-ce que la glace de mer ?', answer: 'De l’eau de mer gelée qui flotte à la surface de l’océan.' },
+          { question: 'Pourquoi les scientifiques surveillent-ils cette région ?', answer: 'Pour étudier la glace, les échanges océaniques et les conséquences du changement climatique.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' },
+          { title: 'NOAA — Ocean circulation', url: 'https://oceanservice.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-barents',
+      title: 'La mer de Barents',
+      field: 'Géographie physique · Océan Arctique',
+      summary: 'Étudier une mer arctique influencée par les eaux atlantiques, la glace saisonnière et les écosystèmes polaires.',
+      lesson: {
+        sections: [
+          'La mer de Barents se situe au nord de la Norvège et de la Russie. Elle est bordée notamment par le Svalbard, la Nouvelle-Zemble et les côtes septentrionales de l’Europe. Elle appartient à l’océan Arctique et constitue une zone de contact entre les eaux atlantiques et les eaux polaires.',
+          'Une partie de ses eaux reçoit des masses d’eau atlantiques relativement chaudes. Cette influence explique que certaines zones restent moins longtemps couvertes de glace que d’autres régions arctiques situées à des latitudes comparables. La profondeur, les courants, les vents et les saisons déterminent l’étendue de la banquise.',
+          'La mer de Barents possède des ressources biologiques importantes. Les poissons, le zooplancton, les oiseaux marins et les mammifères marins composent des réseaux alimentaires adaptés au milieu polaire. Les activités de pêche, les changements climatiques et les évolutions de la glace constituent des enjeux majeurs.'
+        ],
+        example: {
+          statement: 'Pourquoi certaines parties de la mer de Barents restent-elles libres de glace pendant une partie de l’hiver ?',
+          calculation: 'Il faut prendre en compte le transport d’eaux atlantiques relativement chaudes et les échanges thermiques entre l’océan et l’atmosphère.',
+          answer: 'L’influence des eaux atlantiques contribue à limiter la formation et la persistance de la glace dans certains secteurs.'
+        },
+        exercise: {
+          question: 'Pourquoi la mer de Barents est-elle importante pour l’étude du changement climatique ?',
+          answer: 'Parce que l’évolution de sa température et de sa couverture de glace permet d’observer les transformations rapides de l’environnement arctique.'
+        },
+        exercises: [
+          { question: 'Quels pays bordent principalement la mer de Barents ?', answer: 'La Norvège et la Russie.' },
+          { question: 'À quel océan appartient-elle ?', answer: 'À l’océan Arctique.' },
+          { question: 'Quel phénomène saisonnier influence fortement cette mer ?', answer: 'La formation et la fonte de la glace de mer.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Norwegian Polar Institute', url: 'https://www.npolar.no/en/' },
+          { title: 'NSIDC — Arctic Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-blanche',
+      title: 'La mer Blanche',
+      field: 'Géographie physique · Nord-ouest de la Russie',
+      summary: 'Découvrir une mer intérieure arctique, ses apports fluviaux, ses variations saisonnières et ses conditions de gel.',
+      lesson: {
+        sections: [
+          'La mer Blanche se trouve dans le nord-ouest de la Russie. Elle est presque entièrement entourée par les terres russes et communique avec la mer de Barents. Elle comprend plusieurs golfes et bassins côtiers qui structurent ses échanges avec les eaux voisines.',
+          'Les cours d’eau qui se jettent dans la mer Blanche apportent de l’eau douce et des sédiments. Les conditions climatiques entraînent une forte saisonnalité : la température de l’eau varie au cours de l’année et certaines zones connaissent une couverture de glace hivernale. Les marées et les courants participent au renouvellement des eaux.',
+          'La mer Blanche possède une biodiversité adaptée aux eaux froides. Elle est utilisée pour la pêche, la navigation régionale et certaines activités scientifiques. Son étude permet de comprendre les relations entre les apports fluviaux, les conditions polaires et les écosystèmes côtiers.'
+        ],
+        example: {
+          statement: 'Comment les fleuves influencent-ils les caractéristiques de la mer Blanche ?',
+          calculation: 'Les fleuves apportent de l’eau douce et des matières transportées depuis les bassins versants. Ces apports modifient localement la salinité et les caractéristiques des eaux côtières.',
+          answer: 'Les apports fluviaux influencent la salinité, les sédiments et la circulation des eaux de la mer Blanche.'
+        },
+        exercise: {
+          question: 'Pourquoi la mer Blanche connaît-elle une forte saisonnalité ?',
+          answer: 'Parce qu’elle se situe dans une région nordique où les températures, la glace de mer et les conditions atmosphériques varient fortement selon les saisons.'
+        },
+        exercises: [
+          { question: 'Dans quel pays se trouve la mer Blanche ?', answer: 'En Russie.' },
+          { question: 'À quelle mer est-elle reliée ?', answer: 'À la mer de Barents.' },
+          { question: 'Quel effet les fleuves ont-ils sur ses eaux ?', answer: 'Ils apportent de l’eau douce et des sédiments.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Russian Academy of Sciences — Oceanology', url: 'https://www.ocean.ru/' },
+          { title: 'NOAA — Ocean and sea geography', url: 'https://oceanservice.noaa.gov/facts/oceanorsea.html' }
+        ]
+      }
+    },
+    {
+      id: 'mer-kara',
+      title: 'La mer de Kara',
+      field: 'Géographie physique · Océan Arctique et Sibérie occidentale',
+      summary: 'Étudier une mer arctique influencée par les fleuves sibériens, la glace et les conditions climatiques polaires.',
+      lesson: {
+        sections: [
+          'La mer de Kara se situe au nord de la Sibérie occidentale, dans l’océan Arctique. Elle est délimitée à l’ouest par la Nouvelle-Zemble et à l’est par les terres et archipels arctiques russes. Elle communique avec les mers voisines par des passages maritimes situés entre les îles.',
+          'Elle reçoit les eaux de grands fleuves sibériens, notamment l’Ob et l’Ienisseï. Ces apports d’eau douce influencent la salinité et les caractéristiques des eaux côtières. La mer est largement soumise à la glace pendant une grande partie de l’année, même si son étendue varie selon les saisons et les conditions climatiques.',
+          'La mer de Kara présente des écosystèmes adaptés au froid. Les variations de la banquise, les apports fluviaux et les conditions de circulation influencent la répartition des organismes marins. Les recherches portent notamment sur le climat arctique, les sédiments, les pollutions et les transformations des milieux polaires.'
+        ],
+        example: {
+          statement: 'Pourquoi les eaux côtières de la mer de Kara peuvent-elles présenter une salinité plus faible ?',
+          calculation: 'Les fleuves apportent de grandes quantités d’eau douce. Leur influence est particulièrement visible près des embouchures et dans les zones côtières.',
+          answer: 'Les apports fluviaux diluent l’eau de mer et diminuent localement sa salinité.'
+        },
+        exercise: {
+          question: 'Quels sont les deux grands fleuves qui influencent la mer de Kara ?',
+          answer: 'L’Ob et l’Ienisseï.'
+        },
+        exercises: [
+          { question: 'À quel océan appartient la mer de Kara ?', answer: 'À l’océan Arctique.' },
+          { question: 'Dans quelle région se trouve-t-elle ?', answer: 'Au nord de la Sibérie occidentale, en Russie.' },
+          { question: 'Quel phénomène domine une grande partie de l’année ?', answer: 'La présence de glace de mer.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Arctic Monitoring and Assessment Programme', url: 'https://www.amap.no/' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-laptev',
+      title: 'La mer des Laptev',
+      field: 'Géographie physique · Océan Arctique et Sibérie orientale',
+      summary: 'Comprendre le rôle des fleuves sibériens et de la formation de glace dans une mer arctique peu profonde.',
+      lesson: {
+        sections: [
+          'La mer des Laptev se situe au nord de la Sibérie, dans l’océan Arctique. Elle s’étend entre la péninsule de Taïmyr et les îles de Nouvelle-Sibérie. Sa situation et ses faibles profondeurs relatives la rendent particulièrement sensible aux conditions atmosphériques et aux apports des fleuves.',
+          'Le fleuve Léna constitue l’un des principaux apports d’eau douce. Les cours d’eau transportent également des sédiments et des matières organiques. La formation de glace de mer y est importante et contribue à la dynamique des eaux arctiques. La période de fonte transforme chaque année les conditions de surface.',
+          'La mer des Laptev est étudiée pour son rôle dans le système climatique arctique. Les scientifiques observent l’évolution de la banquise, les apports fluviaux, l’érosion des côtes gelées et les échanges de chaleur entre l’océan et l’atmosphère. Ces phénomènes permettent de comprendre les transformations des régions polaires.'
+        ],
+        example: {
+          statement: 'Quel est l’effet des apports du fleuve Léna sur la mer des Laptev ?',
+          calculation: 'Les eaux fluviales apportent de l’eau douce et des matières issues du continent. Elles modifient les propriétés des eaux de surface près du delta.',
+          answer: 'Le fleuve Léna influence la salinité, les sédiments et les caractéristiques écologiques des eaux côtières.'
+        },
+        exercise: {
+          question: 'Pourquoi la mer des Laptev est-elle importante dans l’étude de la glace arctique ?',
+          answer: 'Parce qu’elle connaît une forte saisonnalité de la glace et joue un rôle dans les processus de formation et de circulation des eaux arctiques.'
+        },
+        exercises: [
+          { question: 'Quel grand fleuve se jette dans la mer des Laptev ?', answer: 'La Léna.' },
+          { question: 'Dans quel océan se trouve-t-elle ?', answer: 'Dans l’océan Arctique.' },
+          { question: 'Quel archipel se trouve à l’est de cette mer ?', answer: 'Les îles de Nouvelle-Sibérie.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Arctic Monitoring and Assessment Programme', url: 'https://www.amap.no/' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-siberie-orientale',
+      title: 'La mer de Sibérie orientale',
+      field: 'Géographie physique · Océan Arctique et Sibérie orientale',
+      summary: 'Étudier une mer polaire peu profonde, la banquise et les apports fluviaux dans le nord-est de la Sibérie.',
+      lesson: {
+        sections: [
+          'La mer de Sibérie orientale se trouve au nord-est de la Sibérie, entre les îles de Nouvelle-Sibérie et l’île Wrangel. Elle appartient à l’océan Arctique et se caractérise par de vastes secteurs peu profonds. Sa situation géographique la place au cœur des échanges entre les eaux arctiques et les côtes sibériennes.',
+          'La glace de mer occupe une place essentielle dans son fonctionnement. Elle se forme pendant la saison froide et fond partiellement pendant la saison chaude. Les vents, les températures et les courants influencent sa répartition. Les apports fluviaux et les sédiments continentaux modifient également les eaux côtières.',
+          'Cette mer est particulièrement intéressante pour l’étude du réchauffement arctique. L’évolution de la glace, l’érosion des côtes constituées de pergélisol et les transformations des habitats marins sont suivies par les scientifiques. Ces changements peuvent affecter les communautés animales et les conditions de navigation.'
+        ],
+        example: {
+          statement: 'Pourquoi la diminution de la glace de mer modifie-t-elle l’environnement de la mer de Sibérie orientale ?',
+          calculation: 'Une diminution de la glace expose une plus grande surface d’eau à l’atmosphère et au rayonnement solaire. Cela modifie les échanges de chaleur et les habitats dépendant de la banquise.',
+          answer: 'La diminution de la glace transforme les échanges thermiques et les habitats polaires, ce qui peut modifier les écosystèmes.'
+        },
+        exercise: {
+          question: 'Quel phénomène climatique est particulièrement étudié dans cette mer ?',
+          answer: 'La diminution et les transformations saisonnières de la banquise arctique.'
+        },
+        exercises: [
+          { question: 'Où se trouve la mer de Sibérie orientale ?', answer: 'Au nord-est de la Sibérie, dans l’océan Arctique.' },
+          { question: 'Quelle île se trouve à l’est de cette mer ?', answer: 'L’île Wrangel.' },
+          { question: 'Qu’est-ce que le pergélisol ?', answer: 'Un sol ou sous-sol dont la température reste égale ou inférieure à 0 °C pendant au moins deux années consécutives.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'AMAP — Arctic Climate Change', url: 'https://www.amap.no/' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-tchouktches',
+      title: 'La mer des Tchouktches',
+      field: 'Géographie physique · Océan Arctique, Alaska et Extrême-Orient russe',
+      summary: 'Étudier le passage entre le Pacifique et l’Arctique, les apports d’eaux pacifiques et les transformations de la banquise.',
+      lesson: {
+        sections: [
+          'La mer des Tchouktches se situe entre le nord-ouest de l’Alaska et le nord-est de la Russie. Elle appartient à l’océan Arctique et communique avec la mer de Béring par le détroit de Béring. Elle constitue donc un passage entre le Pacifique Nord et les régions arctiques.',
+          'Les eaux qui remontent depuis le Pacifique apportent chaleur et nutriments. Ces échanges influencent la productivité biologique et les caractéristiques des eaux de surface. La glace de mer connaît une forte variation saisonnière et son évolution dépend des températures, des vents et de la circulation océanique.',
+          'La mer des Tchouktches abrite des mammifères marins, des poissons et des oiseaux adaptés au milieu arctique. Le recul de la banquise modifie les habitats et les conditions de navigation. Les scientifiques suivent notamment les échanges entre le Pacifique et l’Arctique ainsi que les conséquences du réchauffement climatique.'
+        ],
+        example: {
+          statement: 'Pourquoi le détroit de Béring est-il important pour la mer des Tchouktches ?',
+          calculation: 'Le détroit constitue une ouverture entre la mer de Béring et l’océan Arctique. Il permet le passage de masses d’eau, d’organismes et de chaleur.',
+          answer: 'Il assure une communication entre le Pacifique Nord et l’océan Arctique.'
+        },
+        exercise: {
+          question: 'Quel rôle joue la mer des Tchouktches dans les échanges entre océans ?',
+          answer: 'Elle participe aux échanges entre les eaux du Pacifique Nord et celles de l’océan Arctique.'
+        },
+        exercises: [
+          { question: 'Quels pays bordent cette mer ?', answer: 'La Russie et les États-Unis, par l’Alaska.' },
+          { question: 'Quel détroit la relie à la mer de Béring ?', answer: 'Le détroit de Béring.' },
+          { question: 'Pourquoi les eaux pacifiques sont-elles importantes ?', answer: 'Elles transportent de la chaleur et des nutriments vers l’Arctique.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Arctic Research', url: 'https://arctic.noaa.gov/' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-beaufort',
+      title: 'La mer de Beaufort',
+      field: 'Géographie physique · Océan Arctique, Alaska et Canada',
+      summary: 'Comprendre la glace de mer, les courants arctiques et les transformations environnementales du nord de l’Amérique.',
+      lesson: {
+        sections: [
+          'La mer de Beaufort se situe au nord de l’Alaska et du Canada. Elle appartient à l’océan Arctique et borde notamment le Yukon et les Territoires du Nord-Ouest. Elle est caractérisée par un vaste plateau continental côtier et des eaux profondes vers le large.',
+          'La glace de mer y joue un rôle majeur. Une partie de la région connaît une couverture de glace saisonnière et pluriannuelle. Les vents et les courants déplacent la banquise, tandis que les températures influencent sa formation et sa fonte. Les eaux douces provenant des fleuves modifient les caractéristiques des zones côtières.',
+          'La mer de Beaufort abrite des espèces adaptées aux conditions polaires. Elle est étudiée pour les relations entre la banquise, les écosystèmes et le climat. La diminution de la glace et les transformations des côtes arctiques constituent des enjeux importants pour les communautés et les milieux naturels.'
+        ],
+        example: {
+          statement: 'Quelle différence existe-t-il entre une glace saisonnière et une glace pluriannuelle ?',
+          calculation: 'La glace saisonnière se forme et fond au cours d’un cycle annuel. La glace pluriannuelle survit à au moins une saison estivale de fonte.',
+          answer: 'La glace pluriannuelle persiste plusieurs années, alors que la glace saisonnière se renouvelle généralement au cours de l’année.'
+        },
+        exercise: {
+          question: 'Pourquoi la mer de Beaufort est-elle suivie par les climatologues ?',
+          answer: 'Parce que l’évolution de sa banquise et de ses eaux fournit des informations importantes sur le réchauffement de l’Arctique.'
+        },
+        exercises: [
+          { question: 'Quels pays bordent la mer de Beaufort ?', answer: 'Les États-Unis, par l’Alaska, et le Canada.' },
+          { question: 'À quel océan appartient-elle ?', answer: 'À l’océan Arctique.' },
+          { question: 'Qu’est-ce que la banquise pluriannuelle ?', answer: 'Une glace de mer qui a survécu à au moins une saison de fonte estivale.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Arctic Research', url: 'https://arctic.noaa.gov/' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-lincoln',
+      title: 'La mer de Lincoln',
+      field: 'Géographie physique · Haut-Arctique canadien et groenlandais',
+      summary: 'Découvrir une mer située dans les latitudes arctiques les plus élevées et caractérisée par des conditions de glace persistantes.',
+      lesson: {
+        sections: [
+          'La mer de Lincoln se situe dans le Haut-Arctique, entre le nord du Groenland et l’archipel arctique canadien. Elle est située au nord de la mer de Wandel et communique avec les espaces maritimes arctiques voisins. Sa position en latitude élevée explique ses conditions climatiques extrêmes.',
+          'La glace de mer y est généralement présente pendant une grande partie de l’année. Les vents, les courants et les échanges avec les bassins voisins influencent son déplacement et son épaisseur. Les observations satellitaires et les campagnes scientifiques permettent de suivre l’évolution de cette glace.',
+          'La région présente un intérêt majeur pour les recherches polaires. Elle permet d’étudier la glace ancienne, les échanges d’eau et les changements climatiques dans le Haut-Arctique. Les conditions de navigation y sont particulièrement difficiles en raison de la présence persistante de glace.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Lincoln est-elle particulièrement difficile à naviguer ?',
+          calculation: 'Sa position très septentrionale entraîne des températures basses et une présence importante de glace de mer.',
+          answer: 'Les conditions polaires et la persistance de la glace rendent la navigation particulièrement difficile.'
+        },
+        exercise: {
+          question: 'Quel élément physique caractérise particulièrement la mer de Lincoln ?',
+          answer: 'La présence persistante de glace de mer dans un environnement de très hautes latitudes.'
+        },
+        exercises: [
+          { question: 'Dans quelle région se trouve la mer de Lincoln ?', answer: 'Dans le Haut-Arctique, entre le Groenland et l’archipel arctique canadien.' },
+          { question: 'Pourquoi la glace y est-elle persistante ?', answer: 'En raison des températures très basses et de sa situation géographique.' },
+          { question: 'Quel outil permet de suivre l’évolution de la banquise ?', answer: 'Les observations satellitaires, complétées par les mesures scientifiques sur le terrain.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' },
+          { title: 'NOAA — Arctic Research', url: 'https://arctic.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-baltique-groenland',
+      title: 'La mer du Groenland et les mers arctiques : comparaison régionale',
+      field: 'Géographie physique · Océan Arctique et Atlantique Nord',
+      summary: 'Comparer les caractéristiques des mers arctiques et comprendre la diversité des environnements polaires.',
+      lesson: {
+        sections: [
+          'Les mers arctiques ne forment pas un milieu uniforme. La mer du Groenland, la mer de Barents, la mer de Kara, la mer des Laptev, la mer de Sibérie orientale, la mer des Tchouktches et la mer de Beaufort présentent des situations géographiques et océanographiques différentes. Certaines reçoivent davantage d’eaux atlantiques ou pacifiques, tandis que d’autres sont fortement influencées par les fleuves continentaux.',
+          'Les températures, la salinité, les courants et la couverture de glace varient selon les régions. Les apports d’eau douce modifient la salinité des eaux côtières. Les courants transportent de la chaleur et des nutriments. La glace de mer influence les échanges thermiques et constitue un habitat essentiel pour de nombreuses espèces.',
+          'La comparaison des mers arctiques permet de comprendre que le changement climatique ne produit pas partout les mêmes effets. La diminution de la glace, l’érosion des côtes gelées et les transformations des écosystèmes dépendent des caractéristiques locales. Une étude sérieuse doit donc distinguer les observations régionales des tendances générales.'
+        ],
+        example: {
+          statement: 'Pourquoi les mers arctiques ne réagissent-elles pas toutes de la même façon au réchauffement ?',
+          calculation: 'Il faut comparer leur latitude, leur profondeur, leurs courants, leurs apports fluviaux et leur couverture de glace.',
+          answer: 'Leurs caractéristiques géographiques et physiques diffèrent, ce qui entraîne des réponses environnementales variables.'
+        },
+        exercise: {
+          question: 'Cite deux facteurs qui différencient les mers arctiques.',
+          answer: 'Les courants océaniques et les apports d’eau douce des fleuves. On peut également citer la profondeur et la couverture de glace.'
+        },
+        exercises: [
+          { question: 'Quel océan regroupe la majorité des mers arctiques ?', answer: 'L’océan Arctique.' },
+          { question: 'Quel phénomène est commun à de nombreuses mers arctiques ?', answer: 'La formation saisonnière de glace de mer.' },
+          { question: 'Pourquoi faut-il comparer les régions plutôt que généraliser ?', answer: 'Parce que les caractéristiques géographiques et les réponses climatiques varient d’une mer à l’autre.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'AMAP — Arctic Monitoring and Assessment Programme', url: 'https://www.amap.no/' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-mediterranee',
+      title: 'La mer Méditerranée',
+      field: 'Géographie physique · Europe méridionale, Afrique du Nord et Asie occidentale',
+      summary: 'Étudier une mer intercontinentale semi-fermée, ses bassins, ses échanges avec l’Atlantique et ses enjeux environnementaux.',
+      lesson: {
+        sections: [
+          'La mer Méditerranée se trouve entre l’Europe, l’Afrique et l’Asie. Elle communique avec l’océan Atlantique par le détroit de Gibraltar. À l’est, elle est reliée à la mer Rouge par le canal de Suez. L’OHI distingue deux grands bassins, occidental et oriental, ainsi que plusieurs subdivisions régionales.',
+          'La Méditerranée connaît une évaporation importante et reçoit des apports fluviaux relativement limités par rapport à son étendue. Les échanges avec l’Atlantique sont donc essentiels à son équilibre hydrologique. Les eaux de surface entrent principalement depuis l’Atlantique, tandis que des eaux méditerranéennes plus salées ressortent en profondeur par le détroit de Gibraltar.',
+          'La Méditerranée possède une biodiversité importante et accueille de nombreuses activités humaines. Les littoraux sont fortement urbanisés et touristiques. La pollution, la pression sur les ressources halieutiques, les espèces introduites et le réchauffement de l’eau constituent des enjeux majeurs pour la conservation de ses écosystèmes.'
+        ],
+        example: {
+          statement: 'Pourquoi les échanges avec l’Atlantique sont-ils essentiels à la Méditerranée ?',
+          calculation: 'La Méditerranée perd une quantité importante d’eau par évaporation. Les échanges par Gibraltar contribuent à compenser ce déficit et à maintenir son équilibre.',
+          answer: 'Les échanges avec l’Atlantique compensent en partie les pertes par évaporation et contribuent au renouvellement des eaux méditerranéennes.'
+        },
+        exercise: {
+          question: 'Pourquoi la Méditerranée est-elle considérée comme une mer semi-fermée ?',
+          answer: 'Parce qu’elle est entourée de terres sur la majeure partie de son périmètre et ne communique avec l’océan Atlantique que par le détroit de Gibraltar, en plus de sa connexion artificielle avec la mer Rouge par le canal de Suez.'
+        },
+        exercises: [
+          { question: 'Quels continents bordent la Méditerranée ?', answer: 'L’Europe, l’Afrique et l’Asie.' },
+          { question: 'Quel détroit la relie à l’Atlantique ?', answer: 'Le détroit de Gibraltar.' },
+          { question: 'Quels sont les deux grands bassins méditerranéens ?', answer: 'Le bassin occidental et le bassin oriental.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, limites et subdivisions de la Méditerranée', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'UNEP — Mediterranean Action Plan', url: 'https://www.unep.org/unepmap/' },
+          { title: 'NOAA — Ocean and sea geography', url: 'https://oceanservice.noaa.gov/facts/oceanorsea.html' }
+        ]
+      }
+    },
+    {
+      id: 'mer-alboran',
+      title: 'La mer d’Alboran',
+      field: 'Géographie physique · Méditerranée occidentale',
+      summary: 'Comprendre une zone de transition entre les eaux atlantiques et méditerranéennes.',
+      lesson: {
+        sections: [
+          'La mer d’Alboran se situe à l’ouest de la Méditerranée, entre le sud de l’Espagne et le nord du Maroc. Elle commence à l’est du détroit de Gibraltar et constitue le premier grand espace méditerranéen rencontré par les eaux atlantiques entrant dans la mer intérieure.',
+          'La circulation de ses eaux est influencée par les échanges avec l’Atlantique. Les masses d’eau entrantes, les courants et les reliefs sous-marins produisent une dynamique océanographique complexe. Les différences de température et de salinité contribuent à structurer les mouvements d’eau.',
+          'Cette région présente une biodiversité marine importante et constitue un espace de passage pour plusieurs espèces migratrices. Elle est également concernée par les activités de pêche, le transport maritime et les pressions exercées sur les milieux côtiers.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer d’Alboran est-elle une zone de transition océanographique ?',
+          calculation: 'Elle reçoit directement les eaux atlantiques qui traversent le détroit de Gibraltar et les met en contact avec les eaux méditerranéennes.',
+          answer: 'Parce qu’elle constitue la première zone de mélange entre les eaux de l’Atlantique et celles de la Méditerranée.'
+        },
+        exercise: {
+          question: 'Quel détroit se trouve à l’ouest de la mer d’Alboran ?',
+          answer: 'Le détroit de Gibraltar.'
+        },
+        exercises: [
+          { question: 'Quels pays bordent la mer d’Alboran ?', answer: 'L’Espagne et le Maroc.' },
+          { question: 'À quel bassin appartient-elle ?', answer: 'À la Méditerranée occidentale.' },
+          { question: 'Quel phénomène influence fortement ses eaux ?', answer: 'Les échanges entre l’Atlantique et la Méditerranée.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, subdivision méditerranéenne', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'UNEP — Mediterranean Action Plan', url: 'https://www.unep.org/unepmap/' },
+          { title: 'NOAA — Ocean circulation', url: 'https://oceanservice.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-baleares',
+      title: 'La mer des Baléares ou mer Ibérique',
+      field: 'Géographie physique · Méditerranée occidentale',
+      summary: 'Étudier les eaux situées entre les îles Baléares et le littoral oriental de la péninsule Ibérique.',
+      lesson: {
+        sections: [
+          'La mer des Baléares, également désignée dans la publication OHI par l’appellation Balearic ou Iberian Sea, se situe entre l’archipel des Baléares et la côte orientale de l’Espagne. Elle appartient à la Méditerranée occidentale et constitue une subdivision hydrographique de cet ensemble.',
+          'La région comprend des zones côtières, des plateaux sous-marins et des bassins plus profonds. La circulation de l’eau est liée à la dynamique générale de la Méditerranée occidentale. Les vents, les échanges thermiques et les courants influencent les conditions biologiques et physiques.',
+          'Les activités humaines comprennent la pêche, le transport maritime et le tourisme côtier. Les écosystèmes méditerranéens sont sensibles à la pollution, aux modifications des habitats et au réchauffement de l’eau. La protection des herbiers et des habitats côtiers constitue un enjeu important.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer des Baléares est-elle rattachée à la Méditerranée occidentale ?',
+          calculation: 'Il faut observer sa position entre les îles Baléares et le littoral espagnol, puis la replacer dans le bassin occidental de la Méditerranée.',
+          answer: 'Elle se situe dans le bassin occidental et constitue une subdivision régionale de la Méditerranée.'
+        },
+        exercise: {
+          question: 'Quelle grande île ou quel archipel donne son nom à cette mer ?',
+          answer: 'L’archipel des Baléares.'
+        },
+        exercises: [
+          { question: 'Quel pays borde sa côte occidentale ?', answer: 'L’Espagne.' },
+          { question: 'À quel ensemble maritime appartient-elle ?', answer: 'À la Méditerranée occidentale.' },
+          { question: 'Quelle activité économique est importante dans cette région ?', answer: 'Le tourisme côtier, la pêche et le transport maritime.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, subdivision Balearic Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'UNEP — Mediterranean Action Plan', url: 'https://www.unep.org/unepmap/' },
+          { title: 'NOAA — Ocean and sea geography', url: 'https://oceanservice.noaa.gov/facts/oceanorsea.html' }
+        ]
+      }
+    },
+    {
+      id: 'mer-ligurie',
+      title: 'La mer de Ligurie',
+      field: 'Géographie physique · Méditerranée occidentale',
+      summary: 'Étudier une mer bordée par les côtes ligures, la Corse et les littoraux voisins.',
+      lesson: {
+        sections: [
+          'La mer de Ligurie se trouve au nord-ouest de la Méditerranée. Elle borde notamment la côte ligure italienne, la Corse et le littoral français voisin. Elle appartient au bassin méditerranéen occidental et est identifiée comme une subdivision dans la nomenclature de l’OHI.',
+          'Le bassin présente des profondeurs importantes à proximité des côtes et des reliefs sous-marins complexes. La circulation est liée aux courants de la Méditerranée occidentale. Les vents et les différences de température influencent les échanges entre les eaux de surface et les couches plus profondes.',
+          'La mer de Ligurie possède des habitats marins variés. Les activités portuaires, le tourisme, la pêche et le transport maritime y sont importants. La conservation des espèces et la limitation des pollutions constituent des enjeux environnementaux.'
+        ],
+        example: {
+          statement: 'Pourquoi le relief sous-marin est-il important pour comprendre la mer de Ligurie ?',
+          calculation: 'La profondeur et la forme des fonds influencent la circulation des courants, les échanges d’eau et la distribution des habitats marins.',
+          answer: 'Le relief sous-marin contribue à organiser les circulations et les conditions écologiques de la mer.'
+        },
+        exercise: {
+          question: 'Dans quelle partie de la Méditerranée se trouve la mer de Ligurie ?',
+          answer: 'Dans le nord-ouest de la Méditerranée.'
+        },
+        exercises: [
+          { question: 'Quel pays borde principalement sa partie nord ?', answer: 'L’Italie.' },
+          { question: 'Quelle île se trouve au sud de cette mer ?', answer: 'La Corse.' },
+          { question: 'Quelles activités humaines y sont présentes ?', answer: 'La pêche, le tourisme, le transport maritime et les activités portuaires.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, subdivision Ligurian Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'UNEP — Mediterranean Action Plan', url: 'https://www.unep.org/unepmap/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-tyrrhenienne',
+      title: 'La mer Tyrrhénienne',
+      field: 'Géographie physique · Méditerranée centrale',
+      summary: 'Découvrir un bassin méditerranéen profond, marqué par une géologie volcanique et une circulation régionale.',
+      lesson: {
+        sections: [
+          'La mer Tyrrhénienne se situe à l’ouest de la péninsule italienne, entre l’Italie, la Corse, la Sardaigne et la Sicile. Elle appartient à la Méditerranée centrale et communique avec les autres bassins méditerranéens par plusieurs passages maritimes.',
+          'Son bassin présente des profondeurs importantes et des structures géologiques complexes. La région est marquée par une activité tectonique et volcanique liée à l’histoire géologique de la Méditerranée. Les îles Éoliennes et les secteurs volcaniques voisins illustrent cette dynamique.',
+          'La mer Tyrrhénienne accueille des routes maritimes, des activités de pêche et un tourisme important. Les écosystèmes sont influencés par les variations de température, les courants et les pressions humaines. L’étude de ses fonds marins contribue à la compréhension de la géologie méditerranéenne.'
+        ],
+        example: {
+          statement: 'Pourquoi trouve-t-on des structures volcaniques dans la région tyrrhénienne ?',
+          calculation: 'La mer se trouve dans une région de convergence et de mouvements complexes des plaques tectoniques. Ces processus ont contribué à la formation de structures volcaniques.',
+          answer: 'L’activité tectonique régionale a favorisé la formation de structures volcaniques et de reliefs sous-marins.'
+        },
+        exercise: {
+          question: 'Quel phénomène géologique caractérise plusieurs secteurs de la mer Tyrrhénienne ?',
+          answer: 'L’activité tectonique et volcanique.'
+        },
+        exercises: [
+          { question: 'Quelle péninsule borde la mer Tyrrhénienne à l’est ?', answer: 'La péninsule italienne.' },
+          { question: 'Quelles grandes îles la bordent ?', answer: 'La Corse, la Sardaigne et la Sicile.' },
+          { question: 'À quel ensemble maritime appartient-elle ?', answer: 'À la Méditerranée.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, subdivision Tyrrhenian Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'INGV — Istituto Nazionale di Geofisica e Vulcanologia', url: 'https://www.ingv.it/' },
+          { title: 'UNEP — Mediterranean Action Plan', url: 'https://www.unep.org/unepmap/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-ionienne',
+      title: 'La mer Ionienne',
+      field: 'Géographie physique · Méditerranée centrale et orientale',
+      summary: 'Étudier un bassin profond situé entre l’Italie, la Grèce et les Balkans.',
+      lesson: {
+        sections: [
+          'La mer Ionienne se situe entre le sud de l’Italie, la Grèce et les côtes occidentales des Balkans. Elle appartient à la Méditerranée centrale et communique avec la mer Adriatique par le détroit d’Otrante. Elle constitue un passage entre plusieurs bassins méditerranéens.',
+          'La mer Ionienne comprend des zones très profondes et des reliefs sous-marins complexes. Les courants transportent des masses d’eau entre les bassins méditerranéens. La région présente également une activité tectonique importante, liée à la convergence entre les plaques africaine et eurasienne.',
+          'Les activités de pêche et de transport maritime sont importantes. Les côtes grecques et italiennes accueillent également des activités touristiques. La biodiversité marine, les habitats profonds et la surveillance des risques sismiques constituent des domaines d’étude essentiels.'
+        ],
+        example: {
+          statement: 'Quel est le rôle du détroit d’Otrante dans la géographie de la mer Ionienne ?',
+          calculation: 'Le détroit d’Otrante constitue le passage entre la mer Adriatique et la mer Ionienne.',
+          answer: 'Il relie les deux mers et permet les échanges d’eau entre leurs bassins.'
+        },
+        exercise: {
+          question: 'Quelle mer se trouve au nord de la mer Ionienne ?',
+          answer: 'La mer Adriatique.'
+        },
+        exercises: [
+          { question: 'Quels pays bordent la mer Ionienne ?', answer: 'Notamment l’Italie, la Grèce et l’Albanie.' },
+          { question: 'Quel détroit la relie à l’Adriatique ?', answer: 'Le détroit d’Otrante.' },
+          { question: 'Quel phénomène géologique est présent dans la région ?', answer: 'Une activité tectonique liée aux mouvements des plaques.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, subdivision Ionian Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'EMODnet — European Marine Observation and Data Network', url: 'https://emodnet.ec.europa.eu/' },
+          { title: 'UNEP — Mediterranean Action Plan', url: 'https://www.unep.org/unepmap/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-adriatique',
+      title: 'La mer Adriatique',
+      field: 'Géographie physique · Méditerranée centrale',
+      summary: 'Comprendre une mer allongée entre l’Italie et les Balkans, influencée par les fleuves et les variations de profondeur.',
+      lesson: {
+        sections: [
+          'La mer Adriatique se situe entre la péninsule italienne à l’ouest et les côtes des Balkans à l’est. Elle est bordée notamment par l’Italie, la Slovénie, la Croatie, la Bosnie-Herzégovine, le Monténégro et l’Albanie. Elle communique au sud avec la mer Ionienne par le détroit d’Otrante.',
+          'La partie septentrionale de l’Adriatique est peu profonde et reçoit les apports de plusieurs fleuves, dont le Pô. La partie méridionale est plus profonde. Cette différence de profondeur influence les courants, les températures, la circulation des sédiments et la répartition des habitats.',
+          'La mer Adriatique possède des lagunes, des zones côtières et des milieux marins diversifiés. Les activités touristiques, portuaires et halieutiques sont importantes. La pollution, l’urbanisation côtière et les modifications des habitats représentent des enjeux environnementaux.'
+        ],
+        example: {
+          statement: 'Pourquoi la partie nord de la mer Adriatique est-elle moins profonde que sa partie sud ?',
+          calculation: 'Le nord repose largement sur un plateau continental étendu, tandis que le sud présente un bassin plus profond.',
+          answer: 'La différence résulte de la configuration géologique et bathymétrique du bassin adriatique.'
+        },
+        exercise: {
+          question: 'Quel fleuve important se jette dans la partie nord de la mer Adriatique ?',
+          answer: 'Le Pô.'
+        },
+        exercises: [
+          { question: 'Quels territoires bordent l’Adriatique ?', answer: 'L’Italie et plusieurs pays des Balkans.' },
+          { question: 'Quelle mer se trouve au sud ?', answer: 'La mer Ionienne.' },
+          { question: 'Quel détroit relie les deux mers ?', answer: 'Le détroit d’Otrante.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, subdivision Adriatic Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'EMODnet — European Marine Observation and Data Network', url: 'https://emodnet.ec.europa.eu/' },
+          { title: 'UNEP — Mediterranean Action Plan', url: 'https://www.unep.org/unepmap/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-egee',
+      title: 'La mer Égée',
+      field: 'Géographie physique · Méditerranée orientale',
+      summary: 'Étudier une mer insulaire située entre la Grèce et la Turquie, caractérisée par un grand nombre d’îles et de passages maritimes.',
+      lesson: {
+        sections: [
+          'La mer Égée se situe entre la Grèce et la Turquie. Elle appartient à la Méditerranée orientale et comprend de nombreuses îles et archipels. Elle communique au sud avec le reste de la Méditerranée par les passages situés autour de la Crète et des îles grecques.',
+          'La configuration insulaire de la mer Égée produit une grande diversité de passages, de bassins et de zones côtières. Les vents, les courants et les échanges avec la Méditerranée influencent la circulation de ses eaux. La région présente également une activité tectonique et sismique importante.',
+          'La mer Égée joue un rôle majeur dans les échanges maritimes et le tourisme. Ses îles accueillent des populations et des activités économiques diverses. Les écosystèmes côtiers, les ressources halieutiques et la gestion des espaces marins constituent des enjeux importants.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer Égée possède-t-elle une géographie maritime complexe ?',
+          calculation: 'Il faut tenir compte de la présence de nombreuses îles, des détroits et des passages qui divisent l’espace en plusieurs bassins.',
+          answer: 'Son grand nombre d’îles et de passages crée une configuration maritime particulièrement fragmentée.'
+        },
+        exercise: {
+          question: 'Quels sont les deux principaux pays bordant la mer Égée ?',
+          answer: 'La Grèce et la Turquie.'
+        },
+        exercises: [
+          { question: 'À quelle partie de la Méditerranée appartient-elle ?', answer: 'À la Méditerranée orientale.' },
+          { question: 'Quel élément géographique la caractérise ?', answer: 'La présence de nombreuses îles et de nombreux archipels.' },
+          { question: 'Quelle activité économique est particulièrement développée ?', answer: 'Le tourisme, ainsi que le transport maritime et la pêche.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, subdivision Aegean Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'EMODnet — European Marine Observation and Data Network', url: 'https://emodnet.ec.europa.eu/' },
+          { title: 'UNEP — Mediterranean Action Plan', url: 'https://www.unep.org/unepmap/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-marmara',
+      title: 'La mer de Marmara',
+      field: 'Géographie physique · Turquie et Méditerranée orientale',
+      summary: 'Comprendre une mer intérieure située entre la mer Noire et la mer Égée, au cœur d’un système de détroits.',
+      lesson: {
+        sections: [
+          'La mer de Marmara se situe entièrement en Turquie, entre la partie européenne et la partie asiatique du pays. Elle communique au nord avec la mer Noire par le Bosphore et au sud avec la mer Égée par les Dardanelles. Elle constitue un passage maritime stratégique entre les bassins de la mer Noire et de la Méditerranée.',
+          'La circulation de ses eaux présente une structure particulière. Des eaux de surface relativement peu salées provenant de la mer Noire se déplacent vers la mer Égée, tandis que des eaux plus salées de la Méditerranée circulent en profondeur vers la mer Noire. Cette organisation en couches influence la salinité et l’oxygénation.',
+          'La mer de Marmara est située dans une région tectoniquement active, proche de la faille nord-anatolienne. Elle est également soumise à une forte pression urbaine et industrielle. La pollution, la navigation et les risques sismiques sont des enjeux majeurs pour la région.'
+        ],
+        example: {
+          statement: 'Pourquoi les eaux de surface et les eaux profondes de la mer de Marmara circulent-elles dans des directions différentes ?',
+          calculation: 'Les eaux de la mer Noire sont moins salées et généralement moins denses que les eaux méditerranéennes. Cette différence de densité favorise une circulation en deux couches.',
+          answer: 'La différence de salinité et de densité entre les deux masses d’eau permet une circulation opposée en surface et en profondeur.'
+        },
+        exercise: {
+          question: 'Quels sont les deux détroits qui encadrent la mer de Marmara ?',
+          answer: 'Le Bosphore et les Dardanelles.'
+        },
+        exercises: [
+          { question: 'Dans quel pays se trouve la mer de Marmara ?', answer: 'En Turquie.' },
+          { question: 'Quelle mer se trouve au nord ?', answer: 'La mer Noire.' },
+          { question: 'Quelle mer se trouve au sud ?', answer: 'La mer Égée.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Turkish Marine Research Foundation', url: 'https://www.tudav.org/' },
+          { title: 'NOAA — Ocean circulation', url: 'https://oceanservice.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-noire',
+      title: 'La mer Noire',
+      field: 'Géographie physique · Europe orientale et Asie occidentale',
+      summary: 'Étudier une mer presque fermée, ses apports fluviaux, sa stratification et ses eaux profondes naturellement pauvres en oxygène.',
+      lesson: {
+        sections: [
+          'La mer Noire se situe entre l’Europe orientale et l’Asie occidentale. Elle borde notamment la Turquie, la Bulgarie, la Roumanie, l’Ukraine, la Russie et la Géorgie. Elle communique avec la Méditerranée par le Bosphore, la mer de Marmara et les Dardanelles. Au nord-est, le détroit de Kertch la relie à la mer d’Azov.',
+          'La mer Noire reçoit les eaux de grands fleuves, notamment le Danube, le Dniepr et le Dniestr. Ces apports influencent la salinité et la circulation des eaux de surface. Les échanges avec la Méditerranée sont limités et s’effectuent selon une circulation en couches, avec des mouvements de surface et de profondeur.',
+          'Une caractéristique majeure de la mer Noire est l’absence d’oxygène dans une grande partie de ses eaux profondes. Ces couches contiennent naturellement du sulfure d’hydrogène. Cette stratification limite la présence d’organismes dans les grandes profondeurs. Les pressions humaines, les apports nutritifs et la pollution influencent également les écosystèmes côtiers.'
+        ],
+        example: {
+          statement: 'Pourquoi une grande partie des eaux profondes de la mer Noire est-elle dépourvue d’oxygène ?',
+          calculation: 'La stratification limite le mélange entre les eaux de surface oxygénées et les eaux profondes. La décomposition de la matière organique consomme l’oxygène disponible.',
+          answer: 'Le renouvellement limité des eaux profondes et la consommation d’oxygène par la décomposition organique expliquent leur caractère anoxique.'
+        },
+        exercise: {
+          question: 'Quelle caractéristique rend la mer Noire particulière du point de vue océanographique ?',
+          answer: 'La présence de grandes masses d’eaux profondes naturellement dépourvues d’oxygène et contenant du sulfure d’hydrogène.'
+        },
+        exercises: [
+          { question: 'Quels sont deux fleuves qui se jettent dans la mer Noire ?', answer: 'Le Danube et le Dniepr.' },
+          { question: 'Quel détroit la relie à la mer de Marmara ?', answer: 'Le Bosphore.' },
+          { question: 'Pourquoi les eaux profondes sont-elles particulières ?', answer: 'Elles sont naturellement anoxiques et contiennent du sulfure d’hydrogène.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Commission on the Protection of the Black Sea Against Pollution', url: 'https://www.blacksea-commission.org/' },
+          { title: 'NOAA — Ocean and sea geography', url: 'https://oceanservice.noaa.gov/facts/oceanorsea.html' }
+        ]
+      }
+    },
+    {
+      id: 'mer-azov',
+      title: 'La mer d’Azov',
+      field: 'Géographie physique · Europe orientale',
+      summary: 'Découvrir une mer peu profonde, influencée par les fleuves et reliée à la mer Noire par le détroit de Kertch.',
+      lesson: {
+        sections: [
+          'La mer d’Azov se situe au nord-est de la mer Noire, entre le sud de l’Ukraine et le sud-ouest de la Russie. Elle communique avec la mer Noire par le détroit de Kertch. Elle constitue une mer peu profonde et fortement influencée par les apports d’eau douce.',
+          'Le Don et le Kouban figurent parmi les principaux cours d’eau qui alimentent la mer d’Azov. Les apports fluviaux influencent la salinité, les sédiments et les écosystèmes. La faible profondeur favorise des variations rapides de température et peut permettre une couverture de glace saisonnière.',
+          'La mer d’Azov est utilisée pour la pêche et le transport maritime régional. Ses écosystèmes sont sensibles aux modifications des apports fluviaux, à la pollution et aux changements de salinité. Son lien avec la mer Noire lui donne également une importance géographique et stratégique.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer d’Azov présente-t-elle une faible profondeur moyenne ?',
+          calculation: 'Elle repose sur un plateau continental peu profond et possède un bassin relativement peu profond par rapport aux mers voisines.',
+          answer: 'Sa configuration géologique et son relief sous-marin expliquent sa faible profondeur.'
+        },
+        exercise: {
+          question: 'Quel détroit relie la mer d’Azov à la mer Noire ?',
+          answer: 'Le détroit de Kertch.'
+        },
+        exercises: [
+          { question: 'Où se trouve la mer d’Azov ?', answer: 'Au nord-est de la mer Noire.' },
+          { question: 'Quels fleuves l’alimentent ?', answer: 'Notamment le Don et le Kouban.' },
+          { question: 'Quelle caractéristique physique la distingue ?', answer: 'Sa faible profondeur.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Commission on the Protection of the Black Sea Against Pollution', url: 'https://www.blacksea-commission.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-caraibes',
+      title: 'La mer des Caraïbes',
+      field: 'Géographie physique · Amérique centrale et Antilles',
+      summary: 'Comprendre une mer tropicale bordée par les Antilles et l’Amérique centrale, caractérisée par ses récifs et ses bassins profonds.',
+      lesson: {
+        sections: [
+          'La mer des Caraïbes se situe entre l’Amérique centrale, les Antilles et le nord de l’Amérique du Sud. Elle appartient à l’océan Atlantique tropical et communique avec le golfe du Mexique par le canal du Yucatán. Elle comprend plusieurs bassins et fosses profondes.',
+          'Les eaux tropicales sont généralement chaudes et favorisent le développement des récifs coralliens. Les courants transportent les masses d’eau à travers les passages entre les îles. La région est également soumise aux cyclones tropicaux, qui peuvent modifier temporairement les conditions météorologiques et marines.',
+          'La biodiversité des Caraïbes est particulièrement importante. Les récifs, les mangroves et les herbiers constituent des habitats essentiels. Le tourisme, la pêche et le transport maritime représentent des activités économiques majeures, mais les écosystèmes sont menacés par le réchauffement, la pollution, la surpêche et les dégradations côtières.'
+        ],
+        example: {
+          statement: 'Pourquoi les récifs coralliens sont-ils particulièrement présents dans les Caraïbes ?',
+          calculation: 'Les coraux constructeurs de récifs se développent généralement dans des eaux chaudes, salées, peu profondes et suffisamment éclairées.',
+          answer: 'Les conditions tropicales favorisent la croissance des récifs coralliens.'
+        },
+        exercise: {
+          question: 'Quels sont les principaux écosystèmes côtiers de la mer des Caraïbes ?',
+          answer: 'Les récifs coralliens, les mangroves et les herbiers marins.'
+        },
+        exercises: [
+          { question: 'Quels continents bordent la mer des Caraïbes ?', answer: 'L’Amérique du Nord et l’Amérique du Sud, avec l’Amérique centrale comme région de liaison.' },
+          { question: 'Quel type de climat caractérise une grande partie de cette mer ?', answer: 'Un climat tropical.' },
+          { question: 'Cite deux menaces pour les récifs coralliens.', answer: 'Le réchauffement de l’eau et la pollution.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Coral Reef Conservation Program', url: 'https://coralreef.noaa.gov/' },
+          { title: 'UNEP — Caribbean Environment Programme', url: 'https://www.unep.org/cep/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-sargasses',
+      title: 'La mer des Sargasses',
+      field: 'Géographie physique · Atlantique Nord subtropical',
+      summary: 'Étudier une mer exceptionnelle délimitée par des courants océaniques plutôt que par des côtes.',
+      lesson: {
+        sections: [
+          'La mer des Sargasses se situe dans l’Atlantique Nord subtropical. Contrairement à la majorité des mers, elle ne possède pas de frontières terrestres. Son domaine est défini par les courants du gyre subtropical de l’Atlantique Nord, notamment le Gulf Stream à l’ouest, le courant nord-atlantique au nord, le courant des Canaries à l’est et le courant nord-équatorial au sud.',
+          'Elle est connue pour la présence d’algues flottantes du genre Sargassum. Ces algues peuvent former des accumulations à la surface de l’océan et fournir un habitat à de nombreuses espèces. Les jeunes tortues marines, les poissons, les crustacés et plusieurs autres organismes utilisent ces formations comme zones de refuge et d’alimentation.',
+          'La mer des Sargasses joue un rôle écologique important dans l’Atlantique. Elle constitue notamment une zone de développement et de migration pour certaines espèces marines. Les changements de circulation, la pollution plastique et les variations des accumulations d’algues sont étudiés par les scientifiques.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer des Sargasses est-elle différente des autres mers ?',
+          calculation: 'Il faut comparer ses limites à celles des mers généralement bordées par des continents ou des îles. Ses limites correspondent principalement à des courants océaniques.',
+          answer: 'Elle est délimitée par des courants océaniques et non par des frontières terrestres.'
+        },
+        exercise: {
+          question: 'Quel organisme donne son nom à la mer des Sargasses ?',
+          answer: 'Les algues flottantes du genre Sargassum.'
+        },
+        exercises: [
+          { question: 'Dans quel océan se situe-t-elle ?', answer: 'Dans l’océan Atlantique.' },
+          { question: 'Quel courant forme sa limite occidentale ?', answer: 'Le Gulf Stream.' },
+          { question: 'Pourquoi les algues Sargassum sont-elles importantes ?', answer: 'Elles fournissent un habitat et une zone de refuge à de nombreuses espèces marines.' }
+        ],
+        sources: [
+          { title: 'NOAA — What is the Sargasso Sea?', url: 'https://oceanservice.noaa.gov/facts/sargassosea.html' },
+          { title: 'Sargasso Sea Commission', url: 'https://www.sargassoseacommission.org/' },
+          { title: 'NOAA — Marine ecosystems', url: 'https://oceanservice.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-rouge',
+      title: 'La mer Rouge',
+      field: 'Géographie physique · Afrique du Nord-Est et péninsule Arabique',
+      summary: 'Étudier une mer chaude et salée, bordée de récifs coralliens et située sur une zone de divergence tectonique.',
+      lesson: {
+        sections: [
+          'La mer Rouge se situe entre le nord-est de l’Afrique et la péninsule Arabique. Elle s’étend du canal de Suez au nord jusqu’au détroit de Bab el-Mandeb au sud, qui la relie au golfe d’Aden et à l’océan Indien. Elle constitue une voie maritime majeure entre l’Europe et l’Asie.',
+          'La mer Rouge présente une salinité élevée, liée notamment à une forte évaporation et à des apports fluviaux relativement limités. Elle se trouve dans une région où les plaques tectoniques africaine et arabique s’écartent progressivement. Cette dynamique est à l’origine de la formation du bassin de la mer Rouge.',
+          'Les récifs coralliens de la mer Rouge accueillent une biodiversité importante. Les activités touristiques, portuaires et de transport maritime sont nombreuses. La protection des récifs, la gestion des pollutions et la surveillance des écosystèmes constituent des enjeux environnementaux essentiels.'
+        ],
+        example: {
+          statement: 'Pourquoi la salinité de la mer Rouge est-elle relativement élevée ?',
+          calculation: 'Il faut considérer le bilan entre l’évaporation, les apports d’eau douce et les échanges avec les mers voisines.',
+          answer: 'La forte évaporation et les apports d’eau douce relativement limités contribuent à sa salinité élevée.'
+        },
+        exercise: {
+          question: 'Quel détroit relie la mer Rouge au golfe d’Aden ?',
+          answer: 'Le détroit de Bab el-Mandeb.'
+        },
+        exercises: [
+          { question: 'Quels continents sépare-t-elle ?', answer: 'L’Afrique et l’Asie.' },
+          { question: 'Quel canal la relie à la Méditerranée ?', answer: 'Le canal de Suez.' },
+          { question: 'Quel écosystème remarquable borde ses côtes ?', answer: 'Les récifs coralliens.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'UNEP — Regional Organization for the Conservation of the Environment of the Red Sea and Gulf of Aden', url: 'https://www.persga.org/' },
+          { title: 'NOAA — Coral Reef Conservation', url: 'https://coralreef.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-arabie',
+      title: 'La mer d’Arabie',
+      field: 'Géographie physique · Nord-ouest de l’océan Indien',
+      summary: 'Comprendre le rôle de la mousson, des remontées d’eaux profondes et des échanges maritimes dans le nord de l’océan Indien.',
+      lesson: {
+        sections: [
+          'La mer d’Arabie se situe au nord-ouest de l’océan Indien, entre la péninsule Arabique et le sous-continent indien. Elle borde notamment l’Inde, le Pakistan, l’Iran, Oman, le Yémen et la Somalie. Elle communique au nord-ouest avec le golfe d’Aden et au nord avec le golfe d’Oman.',
+          'Son fonctionnement est fortement influencé par la mousson. Les vents changent de direction selon les saisons et modifient la circulation des eaux de surface. Dans certaines régions, ces vents favorisent des remontées d’eaux profondes riches en nutriments, ce qui augmente la productivité biologique.',
+          'La mer d’Arabie constitue un espace important pour la pêche, le commerce maritime et les échanges entre l’Afrique, le Moyen-Orient et l’Asie du Sud. Ses écosystèmes sont influencés par les variations saisonnières, les apports de nutriments et les pressions humaines.'
+        ],
+        example: {
+          statement: 'Quel effet la mousson peut-elle avoir sur la productivité biologique de la mer d’Arabie ?',
+          calculation: 'Les vents de mousson peuvent favoriser des remontées d’eaux profondes. Ces eaux transportent des nutriments vers la surface, ce qui favorise le développement du phytoplancton.',
+          answer: 'Les remontées d’eaux profondes apportent des nutriments et peuvent augmenter la production biologique.'
+        },
+        exercise: {
+          question: 'Pourquoi les vents de mousson sont-ils importants pour la mer d’Arabie ?',
+          answer: 'Ils modifient les courants et favorisent, dans certaines régions, des remontées d’eaux profondes riches en nutriments.'
+        },
+        exercises: [
+          { question: 'À quel océan appartient-elle ?', answer: 'À l’océan Indien.' },
+          { question: 'Quel phénomène climatique influence fortement ses courants ?', answer: 'La mousson.' },
+          { question: 'Qu’est-ce qu’une remontée d’eau profonde ?', answer: 'Un mouvement d’eau profonde vers la surface, souvent riche en nutriments.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Ocean upwelling', url: 'https://oceanservice.noaa.gov/' },
+          { title: 'Indian National Centre for Ocean Information Services', url: 'https://incois.gov.in/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-laccadive',
+      title: 'La mer des Laquedives',
+      field: 'Géographie physique · Nord-est de l’océan Indien',
+      summary: 'Découvrir une mer tropicale bordée par l’Inde, le Sri Lanka et les archipels des Laquedives et des Maldives.',
+      lesson: {
+        sections: [
+          'La mer des Laquedives se situe dans le nord-est de l’océan Indien. Elle borde la côte sud-ouest de l’Inde, le Sri Lanka et les archipels des Laquedives et des Maldives. La nomenclature OHI décrit ses limites comme une subdivision régionale de l’océan Indien.',
+          'Les eaux tropicales sont influencées par les vents saisonniers et les courants de l’océan Indien. Les récifs coralliens et les formations insulaires jouent un rôle important dans la géographie côtière. La température et la salinité varient selon les saisons et les échanges avec les bassins voisins.',
+          'La pêche, le tourisme et les activités maritimes constituent des ressources importantes pour les populations littorales. Les récifs sont toutefois sensibles au réchauffement, à l’acidification, à la pollution et aux modifications des habitats.'
+        ],
+        example: {
+          statement: 'Pourquoi les récifs coralliens jouent-ils un rôle important dans la mer des Laquedives ?',
+          calculation: 'Les récifs forment des structures sous-marines qui offrent des habitats à de nombreuses espèces et peuvent réduire l’énergie des vagues sur certaines côtes.',
+          answer: 'Ils abritent une biodiversité importante et participent à la protection naturelle de certains littoraux.'
+        },
+        exercise: {
+          question: 'Quel océan contient la mer des Laquedives ?',
+          answer: 'L’océan Indien.'
+        },
+        exercises: [
+          { question: 'Quels archipels lui donnent son nom ?', answer: 'Les Laquedives et les Maldives.' },
+          { question: 'Quel pays borde sa partie orientale ?', answer: 'L’Inde et le Sri Lanka.' },
+          { question: 'Quel écosystème est particulièrement important ?', answer: 'Les récifs coralliens.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Coral Reef Conservation', url: 'https://coralreef.noaa.gov/' },
+          { title: 'UNEP — Regional Seas Programme', url: 'https://www.unep.org/explore-topics/oceans-seas/what-we-do/regional-seas-programme' }
+        ]
+      }
+    },
+    {
+      id: 'mer-andaman',
+      title: 'La mer d’Andaman',
+      field: 'Géographie physique · Nord-est de l’océan Indien',
+      summary: 'Étudier une mer tropicale située à l’est du golfe du Bengale, caractérisée par ses îles, ses récifs et son activité tectonique.',
+      lesson: {
+        sections: [
+          'La mer d’Andaman se situe à l’est du golfe du Bengale, entre la péninsule malaise, les îles Andaman-et-Nicobar et les côtes de la Birmanie et de la Thaïlande. Elle appartient au nord-est de l’océan Indien et communique avec les mers de l’archipel indonésien au sud.',
+          'La région possède des reliefs sous-marins variés et des fosses profondes. Elle se trouve dans une zone tectonique active, à proximité de la zone de subduction de la plaque indo-australienne. Les séismes sous-marins peuvent provoquer des tsunamis, comme celui associé au séisme de Sumatra du 26 décembre 2004.',
+          'La mer d’Andaman abrite des récifs coralliens, des mangroves et des écosystèmes tropicaux riches. La pêche et le tourisme sont importants, mais les habitats sont soumis aux pressions humaines et aux changements climatiques.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer d’Andaman est-elle située dans une région exposée aux séismes ?',
+          calculation: 'La région se trouve à proximité d’une limite de plaques tectoniques où une plaque plonge sous une autre.',
+          answer: 'La convergence des plaques tectoniques provoque une activité sismique importante.'
+        },
+        exercise: {
+          question: 'Quel événement majeur de 2004 a affecté cette région ?',
+          answer: 'Le séisme de Sumatra du 26 décembre 2004 et le tsunami qui a suivi.'
+        },
+        exercises: [
+          { question: 'À quel océan appartient-elle ?', answer: 'À l’océan Indien.' },
+          { question: 'Quel golfe se trouve à l’ouest ?', answer: 'Le golfe du Bengale.' },
+          { question: 'Quels milieux naturels y sont présents ?', answer: 'Les récifs coralliens, les mangroves et les habitats marins tropicaux.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Andaman or Burma Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — National Centers for Environmental Information, tsunami data', url: 'https://www.ncei.noaa.gov/' },
+          { title: 'UNEP — Regional Seas Programme', url: 'https://www.unep.org/explore-topics/oceans-seas/what-we-do/regional-seas-programme' }
+        ]
+      }
+    },
+    {
+      id: 'mer-sulu',
+      title: 'La mer de Sulu',
+      field: 'Géographie physique · Asie du Sud-Est et archipel philippin',
+      summary: 'Comprendre une mer tropicale insulaire située entre les Philippines et Bornéo.',
+      lesson: {
+        sections: [
+          'La mer de Sulu se trouve dans le sud-ouest des Philippines, entre l’archipel philippin et le nord-est de Bornéo. Elle est bordée par plusieurs îles et communique avec les mers voisines par des passages insulaires. L’OHI la classe parmi les mers de l’archipel des Indes orientales.',
+          'Son bassin est tropical et présente des reliefs sous-marins variés. Les courants sont influencés par les échanges entre les mers de l’archipel indonésien et les eaux du Pacifique occidental. La température élevée favorise la présence de récifs coralliens et d’écosystèmes tropicaux.',
+          'La mer de Sulu appartient à une région de biodiversité marine exceptionnelle. Les récifs, les herbiers et les mangroves abritent de nombreuses espèces. La pêche, les transports maritimes et les activités côtières exercent toutefois des pressions sur les milieux naturels.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Sulu est-elle reconnue pour sa biodiversité ?',
+          calculation: 'Elle se trouve dans une région tropicale où les récifs coralliens, les mangroves et les herbiers fournissent de nombreux habitats.',
+          answer: 'La diversité des habitats et les conditions tropicales favorisent une grande richesse biologique.'
+        },
+        exercise: {
+          question: 'À quelle région de biodiversité appartient la mer de Sulu ?',
+          answer: 'Au Triangle de corail.'
+        },
+        exercises: [
+          { question: 'Dans quelle partie du monde se situe-t-elle ?', answer: 'Dans l’Asie du Sud-Est.' },
+          { question: 'Quel grand archipel borde cette mer ?', answer: 'L’archipel des Philippines.' },
+          { question: 'Cite deux habitats marins présents dans la région.', answer: 'Les récifs coralliens et les mangroves.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Sulu Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' },
+          { title: 'NOAA — Coral Reef Conservation', url: 'https://coralreef.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-celebes',
+      title: 'La mer des Célèbes',
+      field: 'Géographie physique · Indonésie, Philippines et Bornéo',
+      summary: 'Étudier un bassin tropical profond appartenant au Triangle de corail.',
+      lesson: {
+        sections: [
+          'La mer des Célèbes se situe entre l’île de Sulawesi, Bornéo et les Philippines. Elle appartient au Pacifique occidental et communique avec plusieurs mers de l’archipel indonésien. Sa situation géographique la place au cœur d’un réseau de passages maritimes tropicaux.',
+          'Elle possède un bassin profond entouré de plateaux et de reliefs sous-marins. La circulation de l’eau dépend des échanges entre les mers de l’archipel et les eaux du Pacifique. La région est également marquée par une activité tectonique importante.',
+          'La mer des Célèbes abrite une biodiversité exceptionnelle. Les récifs coralliens, les poissons tropicaux et les écosystèmes côtiers sont particulièrement riches. La pêche, le transport maritime et les changements environnementaux constituent des enjeux importants.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer des Célèbes est-elle importante pour l’étude de la biodiversité marine ?',
+          calculation: 'Elle se situe dans le Triangle de corail, une région reconnue pour la richesse de ses récifs et de ses espèces marines.',
+          answer: 'Sa situation tropicale et ses habitats variés favorisent une biodiversité marine très élevée.'
+        },
+        exercise: {
+          question: 'Quel archipel se trouve au sud de la mer des Célèbes ?',
+          answer: 'L’archipel indonésien, notamment l’île de Sulawesi.'
+        },
+        exercises: [
+          { question: 'Quels territoires bordent la mer des Célèbes ?', answer: 'Sulawesi, Bornéo et les Philippines.' },
+          { question: 'À quelle région écologique appartient-elle ?', answer: 'Au Triangle de corail.' },
+          { question: 'Quel type de relief sous-marin caractérise son bassin ?', answer: 'Un bassin profond entouré de reliefs sous-marins complexes.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Celebes Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' },
+          { title: 'NOAA — Coral Reef Conservation', url: 'https://coralreef.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-moluques',
+      title: 'La mer des Moluques',
+      field: 'Géographie physique · Indonésie orientale',
+      summary: 'Comprendre un bassin maritime situé dans une région tectonique complexe de l’archipel indonésien.',
+      lesson: {
+        sections: [
+          'La mer des Moluques se trouve dans l’est de l’Indonésie, entre Sulawesi, Halmahera et les îles voisines. Elle appartient au système maritime de l’archipel indonésien et communique avec plusieurs bassins par des détroits et passages insulaires.',
+          'La région est marquée par une géologie complexe, liée à la rencontre de plusieurs plaques tectoniques et microplaques. Les fonds marins présentent des fosses, des bassins profonds et des reliefs volcaniques. L’activité sismique et volcanique est importante.',
+          'Les eaux tropicales accueillent des récifs coralliens et une biodiversité remarquable. Les populations locales dépendent notamment de la pêche et des ressources côtières. Les études scientifiques portent sur la tectonique, les courants et la conservation des habitats marins.'
+        ],
+        example: {
+          statement: 'Pourquoi la région de la mer des Moluques est-elle tectoniquement active ?',
+          calculation: 'Elle se trouve à proximité de plusieurs limites de plaques et microplaques qui convergent et interagissent.',
+          answer: 'La rencontre de plusieurs plaques tectoniques explique la forte activité sismique et volcanique régionale.'
+        },
+        exercise: {
+          question: 'Quel phénomène géologique caractérise la mer des Moluques ?',
+          answer: 'Une activité tectonique et volcanique importante.'
+        },
+        exercises: [
+          { question: 'Dans quel pays se trouve-t-elle ?', answer: 'En Indonésie.' },
+          { question: 'Quels types de reliefs sous-marins y trouve-t-on ?', answer: 'Des bassins profonds, des fosses et des reliefs volcaniques.' },
+          { question: 'Quelle activité économique dépend de ses ressources ?', answer: 'La pêche.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Molukka Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Indonesian Agency for Meteorology, Climatology and Geophysics', url: 'https://www.bmkg.go.id/' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-halmahéra',
+      title: 'La mer d’Halmahera',
+      field: 'Géographie physique · Indonésie orientale',
+      summary: 'Étudier un espace maritime tropical situé entre Halmahera et les archipels de l’est indonésien.',
+      lesson: {
+        sections: [
+          'La mer d’Halmahera se situe dans l’est de l’Indonésie, autour de l’île d’Halmahera et des îles voisines. Elle est identifiée comme une subdivision maritime dans la publication hydrographique S-23. Elle communique avec les mers voisines par des passages entre les îles.',
+          'Les fonds marins sont caractérisés par des bassins et des reliefs liés à la géologie complexe de l’Indonésie orientale. Les échanges d’eau entre les bassins voisins participent à la circulation régionale. Les conditions tropicales influencent la température et les habitats marins.',
+          'La région abrite des récifs coralliens et des espèces tropicales. Les activités de pêche et les ressources côtières jouent un rôle important dans les économies locales. La préservation des habitats et la surveillance des risques naturels constituent des enjeux majeurs.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer d’Halmahera est-elle étudiée dans le cadre de l’océanographie indonésienne ?',
+          calculation: 'Sa position entre plusieurs bassins permet d’observer les échanges d’eau et les relations entre les courants régionaux.',
+          answer: 'Elle participe au système complexe de circulation des eaux de l’archipel indonésien.'
+        },
+        exercise: {
+          question: 'Dans quel pays se trouve la mer d’Halmahera ?',
+          answer: 'En Indonésie.'
+        },
+        exercises: [
+          { question: 'Quelle île lui donne son nom ?', answer: 'Halmahera.' },
+          { question: 'Quel type de climat influence ses eaux ?', answer: 'Un climat tropical.' },
+          { question: 'Quels habitats marins sont présents ?', answer: 'Des récifs coralliens et des habitats tropicaux.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Halmahera Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' },
+          { title: 'Indonesian Agency for Meteorology, Climatology and Geophysics', url: 'https://www.bmkg.go.id/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-seram',
+      title: 'La mer de Seram',
+      field: 'Géographie physique · Indonésie orientale et archipel des Moluques',
+      summary: 'Comprendre une mer tropicale de l’archipel indonésien, ses échanges maritimes et son contexte tectonique.',
+      lesson: {
+        sections: [
+          'La mer de Seram se trouve dans l’est de l’Indonésie, au nord de l’île de Seram et à proximité de la Nouvelle-Guinée. Elle est intégrée au réseau des mers de l’archipel indonésien dans la publication S-23. Elle communique avec les mers voisines par plusieurs passages entre les îles.',
+          'La région présente des fonds marins complexes et une activité tectonique liée à la rencontre de plusieurs plaques et microplaques. Les courants et les échanges entre les bassins voisins influencent la circulation des eaux. Les conditions tropicales favorisent des habitats marins variés.',
+          'La mer de Seram accueille des récifs et des écosystèmes tropicaux. La pêche et les activités côtières sont importantes pour les populations locales. La biodiversité, la géologie et les risques naturels font partie des domaines d’étude de cette région.'
+        ],
+        example: {
+          statement: 'Pourquoi les fonds de la mer de Seram présentent-ils des reliefs complexes ?',
+          calculation: 'La région se trouve dans une zone de convergence de plaques tectoniques et de microplaques.',
+          answer: 'Les mouvements tectoniques ont contribué à la formation de bassins, de reliefs et de structures sous-marines complexes.'
+        },
+        exercise: {
+          question: 'Quel phénomène géologique influence la mer de Seram ?',
+          answer: 'La tectonique active de l’Indonésie orientale.'
+        },
+        exercises: [
+          { question: 'Dans quel pays se trouve-t-elle ?', answer: 'En Indonésie.' },
+          { question: 'Quelle grande région insulaire est proche de cette mer ?', answer: 'L’archipel des Moluques.' },
+          { question: 'Quel milieu naturel tropical peut-on y observer ?', answer: 'Les récifs coralliens.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Ceram Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Indonesian Agency for Meteorology, Climatology and Geophysics', url: 'https://www.bmkg.go.id/' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-banda',
+      title: 'La mer de Banda',
+      field: 'Géographie physique · Indonésie orientale',
+      summary: 'Étudier un bassin profond entouré d’îles, dans une région de forte activité tectonique.',
+      lesson: {
+        sections: [
+          'La mer de Banda se trouve dans l’est de l’Indonésie, au sein de l’archipel des Moluques et des petites îles de la Sonde. Elle est entourée de nombreuses îles et communique avec plusieurs mers voisines par des passages insulaires.',
+          'Son bassin comprend des profondeurs importantes et des fosses sous-marines. La région appartient à une zone tectonique complexe, marquée par des mouvements de plaques et une activité sismique. Les échanges entre les bassins indonésiens participent à la circulation des eaux de l’archipel.',
+          'La mer de Banda présente une biodiversité tropicale importante. Les récifs coralliens, les poissons et les autres organismes marins constituent des ressources essentielles pour les populations côtières. La pêche, la protection des habitats et l’étude des risques naturels sont des enjeux importants.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Banda possède-t-elle des fosses et des bassins profonds ?',
+          calculation: 'Les mouvements de convergence et de subduction des plaques tectoniques modifient le relief du plancher océanique.',
+          answer: 'Les processus tectoniques ont créé des structures sous-marines profondes et complexes.'
+        },
+        exercise: {
+          question: 'Quel phénomène géologique est particulièrement important dans la mer de Banda ?',
+          answer: 'La tectonique des plaques et la subduction.'
+        },
+        exercises: [
+          { question: 'Dans quel pays se situe la mer de Banda ?', answer: 'En Indonésie.' },
+          { question: 'Quel type de relief sous-marin y trouve-t-on ?', answer: 'Des bassins profonds et des fosses.' },
+          { question: 'Quel écosystème tropical y est présent ?', answer: 'Les récifs coralliens.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Banda Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Indonesian Agency for Meteorology, Climatology and Geophysics', url: 'https://www.bmkg.go.id/' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-arafura',
+      title: 'La mer d’Arafura',
+      field: 'Géographie physique · Nord de l’Australie et sud de la Nouvelle-Guinée',
+      summary: 'Comprendre une mer tropicale peu profonde située entre l’Australie et la Nouvelle-Guinée.',
+      lesson: {
+        sections: [
+          'La mer d’Arafura se situe entre le nord de l’Australie et le sud de la Nouvelle-Guinée. Elle appartient au système maritime de l’océan Indien oriental et communique avec les mers de Timor, de Banda et de Seram. Elle repose largement sur une zone de plateau continental peu profond.',
+          'Sa faible profondeur et les échanges avec les mers voisines influencent les courants et les températures. Les eaux tropicales connaissent des variations saisonnières liées aux vents et à la mousson. Les fonds marins sont largement sédimentaires.',
+          'La mer d’Arafura possède des ressources halieutiques importantes et des habitats côtiers tels que les mangroves et les herbiers. Les activités de pêche, la gestion des ressources et la conservation des milieux marins sont des enjeux importants pour l’Australie et l’Indonésie.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer d’Arafura est-elle relativement peu profonde ?',
+          calculation: 'Elle se situe sur une vaste zone de plateau continental entre l’Australie et la Nouvelle-Guinée.',
+          answer: 'Son faible relief sous-marin est lié à sa position sur le plateau continental.'
+        },
+        exercise: {
+          question: 'Quels territoires bordent la mer d’Arafura ?',
+          answer: 'Le nord de l’Australie et le sud de la Nouvelle-Guinée.'
+        },
+        exercises: [
+          { question: 'À quelle région océanique appartient-elle ?', answer: 'À la région orientale de l’océan Indien.' },
+          { question: 'Quel type de relief caractérise ses fonds ?', answer: 'Un plateau continental relativement peu profond.' },
+          { question: 'Quels habitats côtiers y trouve-t-on ?', answer: 'Des mangroves et des herbiers marins.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Arafura Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Australian Institute of Marine Science', url: 'https://www.aims.gov.au/' },
+          { title: 'UNEP — Regional Seas Programme', url: 'https://www.unep.org/explore-topics/oceans-seas/what-we-do/regional-seas-programme' }
+        ]
+      }
+    },
+    {
+      id: 'mer-timor',
+      title: 'La mer de Timor',
+      field: 'Géographie physique · Nord de l’Australie et île de Timor',
+      summary: 'Étudier une mer tropicale située entre l’Australie et l’archipel indonésien.',
+      lesson: {
+        sections: [
+          'La mer de Timor se situe entre le nord-ouest de l’Australie et l’île de Timor. Elle appartient à la partie orientale de l’océan Indien et communique avec les mers de Banda et d’Arafura. Elle constitue une zone de transition entre les eaux tropicales indonésiennes et les eaux bordant le continent australien.',
+          'La mer présente des zones de plateau continental et des bassins plus profonds. Les courants régionaux participent aux échanges entre l’océan Indien et les mers indonésiennes. Les conditions de surface sont influencées par les vents saisonniers et la circulation océanique.',
+          'La mer de Timor possède des ressources halieutiques et des habitats tropicaux. Elle est également connue pour ses ressources énergétiques sous-marines. Les questions de conservation des écosystèmes, de gestion des ressources et de délimitation maritime constituent des enjeux régionaux.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Timor est-elle importante pour les échanges océaniques régionaux ?',
+          calculation: 'Elle se situe entre les eaux indonésiennes et le nord de l’Australie et communique avec plusieurs bassins maritimes.',
+          answer: 'Sa position permet les échanges d’eau entre les mers de l’archipel indonésien et l’océan Indien.'
+        },
+        exercise: {
+          question: 'Quels territoires se trouvent de part et d’autre de la mer de Timor ?',
+          answer: 'L’île de Timor au nord et l’Australie au sud.'
+        },
+        exercises: [
+          { question: 'À quel océan appartient-elle ?', answer: 'À l’océan Indien.' },
+          { question: 'Quelle grande île se trouve au nord ?', answer: 'Timor.' },
+          { question: 'Quel type de ressource est exploité dans cette région ?', answer: 'Des ressources halieutiques et énergétiques.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Timor Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Australian Institute of Marine Science', url: 'https://www.aims.gov.au/' },
+          { title: 'UNEP — Regional Seas Programme', url: 'https://www.unep.org/explore-topics/oceans-seas/what-we-do/regional-seas-programme' }
+        ]
+      }
+    },
+    {
+      id: 'mer-flores',
+      title: 'La mer de Flores',
+      field: 'Géographie physique · Indonésie centrale',
+      summary: 'Étudier une mer tropicale située au nord de l’île de Flores et au sud de Sulawesi.',
+      lesson: {
+        sections: [
+          'La mer de Flores se situe dans l’archipel indonésien, au nord de l’île de Flores et au sud de Sulawesi. Elle est entourée de nombreuses îles et communique avec plusieurs bassins maritimes voisins. Elle appartient à la région océanographique complexe de l’Indonésie.',
+          'Les fonds marins présentent des reliefs variés. Les courants sont influencés par les échanges entre les mers indonésiennes et les eaux du Pacifique et de l’océan Indien. Les variations saisonnières des vents influencent la température et les mouvements de surface.',
+          'La mer de Flores abrite des récifs coralliens, des poissons tropicaux et des habitats côtiers. La pêche et le tourisme sont importants pour les populations locales. La protection de la biodiversité et la gestion durable des ressources marines sont des enjeux majeurs.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Flores possède-t-elle une circulation complexe ?',
+          calculation: 'Elle se trouve dans un archipel où les îles, les détroits et les passages étroits organisent les échanges entre les bassins maritimes.',
+          answer: 'Les nombreux passages insulaires et les échanges entre les mers indonésiennes rendent sa circulation complexe.'
+        },
+        exercise: {
+          question: 'Quelle île donne son nom à cette mer ?',
+          answer: 'L’île de Flores.'
+        },
+        exercises: [
+          { question: 'Dans quel pays se trouve-t-elle ?', answer: 'En Indonésie.' },
+          { question: 'Quelle grande île se trouve au nord ?', answer: 'Sulawesi.' },
+          { question: 'Quels écosystèmes tropicaux y sont présents ?', answer: 'Les récifs coralliens et les habitats côtiers tropicaux.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Flores Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' },
+          { title: 'Indonesian Agency for Meteorology, Climatology and Geophysics', url: 'https://www.bmkg.go.id/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-bali',
+      title: 'La mer de Bali',
+      field: 'Géographie physique · Indonésie centrale',
+      summary: 'Découvrir une mer tropicale située au nord de l’île de Bali et intégrée au réseau maritime indonésien.',
+      lesson: {
+        sections: [
+          'La mer de Bali se situe au nord de l’île de Bali, dans l’archipel indonésien. Elle est bordée par Java, Bali, Lombok et les îles voisines. La nomenclature OHI l’identifie comme une subdivision maritime de l’archipel des Indes orientales.',
+          'La mer est caractérisée par des eaux tropicales et des fonds dont la profondeur varie selon les secteurs. Les courants sont influencés par la mousson et les échanges entre les mers indonésiennes. Les passages entre les îles organisent la circulation régionale.',
+          'Les activités de pêche et de tourisme sont importantes. Les récifs coralliens et les habitats côtiers sont sensibles aux pollutions, à la pression touristique et au réchauffement des eaux. La protection des écosystèmes constitue un enjeu important pour les populations locales.'
+        ],
+        example: {
+          statement: 'Quel facteur influence fortement les courants de la mer de Bali ?',
+          calculation: 'Les vents de mousson changent selon les saisons et influencent les mouvements des eaux de surface.',
+          answer: 'La mousson contribue aux variations saisonnières de la circulation des eaux.'
+        },
+        exercise: {
+          question: 'Quelle île donne son nom à cette mer ?',
+          answer: 'L’île de Bali.'
+        },
+        exercises: [
+          { question: 'Dans quel pays se trouve la mer de Bali ?', answer: 'En Indonésie.' },
+          { question: 'Quelles îles se trouvent à proximité ?', answer: 'Bali, Java et Lombok.' },
+          { question: 'Quelle activité économique est importante ?', answer: 'Le tourisme, ainsi que la pêche.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Bali Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' },
+          { title: 'Indonesian Agency for Meteorology, Climatology and Geophysics', url: 'https://www.bmkg.go.id/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-java',
+      title: 'La mer de Java',
+      field: 'Géographie physique · Indonésie',
+      summary: 'Comprendre une mer tropicale peu profonde située entre Java, Sumatra, Bornéo et les petites îles de la Sonde.',
+      lesson: {
+        sections: [
+          'La mer de Java se situe dans l’archipel indonésien, entre les îles de Java, Sumatra, Bornéo et les petites îles de la Sonde. Elle repose largement sur le plateau continental de la Sonde et communique avec les mers voisines par des passages maritimes.',
+          'Sa faible profondeur moyenne influence les températures, les courants et les échanges avec les mers voisines. La mousson modifie les vents et la circulation des eaux selon les saisons. Les apports fluviaux et les activités côtières influencent également la qualité de l’eau.',
+          'La mer de Java est un espace maritime important pour l’Indonésie. Elle accueille de nombreuses activités de pêche, de transport maritime et de commerce. La pollution, l’urbanisation côtière et la pression sur les ressources marines constituent des enjeux environnementaux majeurs.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Java est-elle considérée comme une mer de plateau continental ?',
+          calculation: 'Elle repose sur une vaste plateforme sous-marine peu profonde qui prolonge les terres de l’Asie du Sud-Est.',
+          answer: 'Son bassin est largement situé sur le plateau continental de la Sonde.'
+        },
+        exercise: {
+          question: 'Quelles îles entourent la mer de Java ?',
+          answer: 'Java, Sumatra, Bornéo et les petites îles de la Sonde.'
+        },
+        exercises: [
+          { question: 'Dans quel pays se situe-t-elle ?', answer: 'En Indonésie.' },
+          { question: 'Quel phénomène saisonnier influence ses courants ?', answer: 'La mousson.' },
+          { question: 'Quelle caractéristique physique distingue son bassin ?', answer: 'Sa faible profondeur relative.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Java Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Indonesian Agency for Meteorology, Climatology and Geophysics', url: 'https://www.bmkg.go.id/' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-savu',
+      title: 'La mer de Savu',
+      field: 'Géographie physique · Indonésie orientale et petites îles de la Sonde',
+      summary: 'Étudier une mer tropicale située entre les îles de Flores, Sumba, Timor et les îles voisines.',
+      lesson: {
+        sections: [
+          'La mer de Savu se trouve dans le sud-est de l’Indonésie, au sein des petites îles de la Sonde. Elle est bordée notamment par Flores, Sumba, Timor et les îles voisines. Elle communique avec plusieurs mers indonésiennes par des passages insulaires.',
+          'La région présente des profondeurs et des reliefs sous-marins variés. Les échanges d’eau sont influencés par les courants de l’archipel indonésien et par les variations saisonnières de la mousson. La géologie régionale est liée aux mouvements des plaques tectoniques.',
+          'La mer de Savu accueille des habitats tropicaux et des espèces marines diverses. Les ressources halieutiques jouent un rôle important pour les populations côtières. La conservation des habitats et la gestion des activités de pêche sont des enjeux majeurs.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Savu est-elle influencée par la mousson ?',
+          calculation: 'Les vents saisonniers modifient les mouvements de surface et les échanges d’eau entre les îles.',
+          answer: 'Les variations saisonnières des vents influencent les courants et les conditions physiques de la mer.'
+        },
+        exercise: {
+          question: 'Dans quel pays se situe la mer de Savu ?',
+          answer: 'En Indonésie.'
+        },
+        exercises: [
+          { question: 'Quelles îles bordent cette mer ?', answer: 'Notamment Flores, Sumba et Timor.' },
+          { question: 'Quel phénomène climatique influence sa circulation ?', answer: 'La mousson.' },
+          { question: 'Quelle activité dépend de ses ressources marines ?', answer: 'La pêche.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Savu Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Indonesian Agency for Meteorology, Climatology and Geophysics', url: 'https://www.bmkg.go.id/' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-chine-meridionale',
+      title: 'La mer de Chine méridionale',
+      field: 'Géographie physique · Pacifique occidental et Asie du Sud-Est',
+      summary: 'Étudier une vaste mer tropicale, ses archipels, ses récifs, ses routes commerciales et ses enjeux de délimitation maritime.',
+      lesson: {
+        sections: [
+          'La mer de Chine méridionale se situe entre l’Asie du Sud-Est continentale et les archipels des Philippines, de Bornéo et de Sumatra. Elle appartient au Pacifique occidental et communique avec plusieurs mers de l’archipel indonésien. Elle constitue une voie maritime majeure entre l’océan Indien et le Pacifique.',
+          'La mer comprend des bassins profonds, des plateaux continentaux, des hauts-fonds et des récifs. Les vents de mousson influencent les courants et les conditions de navigation. Les eaux tropicales abritent des écosystèmes variés, notamment des récifs coralliens et des habitats côtiers.',
+          'Cette mer possède une importance économique et géopolitique majeure. Une part importante du commerce maritime mondial traverse ses eaux. Plusieurs différends territoriaux concernent les îles, les récifs et les zones maritimes. Ces revendications politiques doivent être distinguées de la description géographique et physique du bassin.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Chine méridionale est-elle importante pour le commerce mondial ?',
+          calculation: 'Elle se situe sur des routes maritimes reliant l’océan Indien, l’Asie orientale et le Pacifique.',
+          answer: 'Sa position en fait un passage majeur pour les échanges commerciaux internationaux.'
+        },
+        exercise: {
+          question: 'Pourquoi faut-il distinguer les limites géographiques des revendications politiques dans cette mer ?',
+          answer: 'Parce que les caractéristiques physiques d’un espace maritime ne sont pas identiques aux revendications de souveraineté ou de juridiction formulées par les États.'
+        },
+        exercises: [
+          { question: 'À quel océan appartient-elle ?', answer: 'Au Pacifique occidental.' },
+          { question: 'Quel phénomène saisonnier influence ses courants ?', answer: 'La mousson.' },
+          { question: 'Pourquoi est-elle stratégique ?', answer: 'Parce qu’elle concentre des routes commerciales maritimes majeures.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, South China Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Ocean and sea geography', url: 'https://oceanservice.noaa.gov/facts/oceanorsea.html' },
+          { title: 'UNEP — Coordinating Body on the Seas of East Asia', url: 'https://www.cobsea.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-chine-orientale',
+      title: 'La mer de Chine orientale',
+      field: 'Géographie physique · Pacifique occidental et Asie orientale',
+      summary: 'Comprendre une mer de plateau continental située entre la Chine, Taïwan, les îles Ryūkyū et le Japon.',
+      lesson: {
+        sections: [
+          'La mer de Chine orientale se situe entre la Chine orientale, Taïwan, les îles Ryūkyū et le sud-ouest du Japon. Elle appartient au Pacifique occidental et communique au sud avec la mer de Chine méridionale. Elle comprend un vaste plateau continental et des zones plus profondes vers le large.',
+          'Le fleuve Yangzi Jiang apporte des eaux douces et des sédiments dans la partie occidentale de la mer. Les courants, notamment le courant de Kuroshio à proximité de sa limite orientale, influencent la circulation et les conditions biologiques. Les vents saisonniers et les typhons modifient les conditions de surface.',
+          'La mer de Chine orientale est importante pour la pêche, les transports maritimes et les activités énergétiques. Elle connaît également des différends de délimitation maritime et de souveraineté. Les écosystèmes côtiers sont soumis à la pollution, à la pression de la pêche et aux changements climatiques.'
+        ],
+        example: {
+          statement: 'Quel est l’effet des apports du Yangzi Jiang sur la mer de Chine orientale ?',
+          calculation: 'Le fleuve transporte de l’eau douce, des sédiments et des nutriments vers la mer.',
+          answer: 'Il influence la salinité, la turbidité et la productivité biologique des eaux côtières.'
+        },
+        exercise: {
+          question: 'Quel grand fleuve se jette dans la mer de Chine orientale ?',
+          answer: 'Le Yangzi Jiang, également appelé Yangtsé.'
+        },
+        exercises: [
+          { question: 'Quels territoires bordent cette mer ?', answer: 'La Chine, Taïwan, les îles Ryūkyū et le Japon.' },
+          { question: 'À quel océan appartient-elle ?', answer: 'Au Pacifique.' },
+          { question: 'Quel courant océanique influence sa région orientale ?', answer: 'Le courant de Kuroshio.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Eastern China Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Ocean circulation', url: 'https://oceanservice.noaa.gov/' },
+          { title: 'UNEP — Coordinating Body on the Seas of East Asia', url: 'https://www.cobsea.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-jaune',
+      title: 'La mer Jaune',
+      field: 'Géographie physique · Asie orientale',
+      summary: 'Étudier une mer peu profonde située entre la Chine et la péninsule coréenne, influencée par les apports fluviaux et les marées.',
+      lesson: {
+        sections: [
+          'La mer Jaune se situe entre la côte orientale de la Chine et la péninsule coréenne. Elle communique au sud avec la mer de Chine orientale. Elle repose largement sur un plateau continental peu profond et présente des marées importantes.',
+          'Son nom est lié à la couleur parfois jaunâtre de ses eaux, due notamment aux sédiments transportés par les fleuves et remis en suspension. Les apports du fleuve Jaune et d’autres cours d’eau influencent les eaux côtières. Les courants et les marées participent au transport des sédiments.',
+          'La mer Jaune est une région importante pour la pêche et les activités portuaires. Les zones humides côtières constituent des habitats essentiels pour les oiseaux migrateurs. La pollution, les aménagements littoraux et la perte d’habitats représentent des enjeux environnementaux majeurs.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer Jaune peut-elle présenter une coloration jaunâtre ?',
+          calculation: 'Les fleuves transportent des particules fines qui restent parfois en suspension dans l’eau.',
+          answer: 'Les sédiments en suspension peuvent donner une teinte jaunâtre à certaines zones de la mer.'
+        },
+        exercise: {
+          question: 'Pourquoi les marées sont-elles importantes dans la mer Jaune ?',
+          answer: 'Elles influencent les courants, le transport des sédiments et les conditions des zones côtières.'
+        },
+        exercises: [
+          { question: 'Quels territoires bordent la mer Jaune ?', answer: 'La Chine et la Corée.' },
+          { question: 'Quelle caractéristique physique distingue son bassin ?', answer: 'Sa faible profondeur relative.' },
+          { question: 'Quels habitats côtiers sont importants ?', answer: 'Les zones humides et les vasières utilisées par les oiseaux migrateurs.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Yellow Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'UNEP — Coordinating Body on the Seas of East Asia', url: 'https://www.cobsea.org/' },
+          { title: 'Ramsar Convention — Wetlands', url: 'https://www.ramsar.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-japon',
+      title: 'La mer du Japon',
+      field: 'Géographie physique · Pacifique Nord-Ouest',
+      summary: 'Étudier un bassin presque fermé du Pacifique, influencé par les courants, les échanges avec les mers voisines et les saisons.',
+      lesson: {
+        sections: [
+          'La mer du Japon se situe entre l’archipel japonais, la péninsule coréenne et l’Extrême-Orient russe. Elle communique avec les mers voisines par plusieurs détroits, notamment les détroits de Tsushima, de Tsugaru et de La Pérouse. Elle constitue un bassin presque fermé du Pacifique Nord-Ouest.',
+          'La circulation est influencée par le courant chaud de Tsushima, branche du système de Kuroshio, ainsi que par des eaux plus froides venant du nord. Cette combinaison crée des contrastes thermiques et biologiques. Les profondeurs importantes et la circulation interne contribuent à ses caractéristiques océanographiques.',
+          'La mer du Japon est importante pour la pêche et les échanges maritimes. Les écosystèmes sont influencés par les variations de température et les changements de circulation. Les appellations de cette mer font l’objet de divergences toponymiques entre certains États, mais ces désaccords ne modifient pas les caractéristiques physiques de son bassin.'
+        ],
+        example: {
+          statement: 'Pourquoi les courants chauds et froids sont-ils importants dans la mer du Japon ?',
+          calculation: 'Les masses d’eau de températures différentes influencent la stratification, la circulation et les conditions écologiques.',
+          answer: 'Ils créent des contrastes thermiques qui influencent les écosystèmes et les caractéristiques physiques de la mer.'
+        },
+        exercise: {
+          question: 'Quel courant chaud influence la mer du Japon ?',
+          answer: 'Le courant de Tsushima.'
+        },
+        exercises: [
+          { question: 'Quels territoires bordent la mer du Japon ?', answer: 'Le Japon, la Corée et la Russie.' },
+          { question: 'Quel océan contient cette mer ?', answer: 'Le Pacifique.' },
+          { question: 'Pourquoi son bassin est-il considéré comme presque fermé ?', answer: 'Parce qu’il communique avec les bassins voisins par des détroits relativement étroits.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Japan Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Japan Agency for Marine-Earth Science and Technology', url: 'https://www.jamstec.go.jp/e/' },
+          { title: 'NOAA — Ocean circulation', url: 'https://oceanservice.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-okhotsk',
+      title: 'La mer d’Okhotsk',
+      field: 'Géographie physique · Pacifique Nord-Ouest',
+      summary: 'Comprendre une mer froide du Pacifique, marquée par la glace saisonnière et les échanges avec les courants océaniques.',
+      lesson: {
+        sections: [
+          'La mer d’Okhotsk se situe au nord-ouest du Pacifique, entre la Sibérie orientale, la péninsule du Kamtchatka, les îles Kouriles et l’île japonaise d’Hokkaidō. Elle communique avec le Pacifique par plusieurs passages entre les îles Kouriles et avec la mer du Japon par le détroit de La Pérouse.',
+          'Elle est connue pour sa vaste couverture de glace saisonnière. Les températures hivernales favorisent la formation de glace, tandis que les courants et les vents déplacent la banquise. Les eaux froides et salées formées dans certaines zones participent aux échanges avec les bassins voisins.',
+          'La mer d’Okhotsk est importante pour les pêcheries du Pacifique Nord. Elle accueille des espèces adaptées aux eaux froides et des mammifères marins. La gestion durable des ressources, la surveillance de la glace et l’évolution des écosystèmes constituent des enjeux majeurs.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer d’Okhotsk connaît-elle une couverture de glace importante en hiver ?',
+          calculation: 'Sa situation géographique, les températures hivernales et les conditions atmosphériques favorisent la formation de glace de mer.',
+          answer: 'Les températures froides et la circulation régionale favorisent une importante formation de glace saisonnière.'
+        },
+        exercise: {
+          question: 'Quel archipel se trouve au sud-est de la mer d’Okhotsk ?',
+          answer: 'Les îles Kouriles.'
+        },
+        exercises: [
+          { question: 'Quel océan borde la mer d’Okhotsk ?', answer: 'Le Pacifique.' },
+          { question: 'Quelle péninsule se trouve à l’est ?', answer: 'La péninsule du Kamtchatka.' },
+          { question: 'Quel phénomène saisonnier la caractérise ?', answer: 'Une couverture importante de glace en hiver.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Sea of Okhotsk', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Japan Agency for Marine-Earth Science and Technology', url: 'https://www.jamstec.go.jp/e/' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-bering',
+      title: 'La mer de Béring',
+      field: 'Géographie physique · Pacifique Nord et Alaska',
+      summary: 'Étudier une mer située entre l’Alaska et la Russie, caractérisée par un plateau continental productif et une glace saisonnière.',
+      lesson: {
+        sections: [
+          'La mer de Béring se situe entre l’Alaska et l’Extrême-Orient russe. Elle appartient au Pacifique Nord et communique avec l’océan Arctique par le détroit de Béring. Elle comprend un vaste plateau continental peu profond et des bassins plus profonds.',
+          'La région connaît une forte saisonnalité de la glace. Les eaux du plateau continental sont particulièrement productives sur le plan biologique, notamment grâce à la disponibilité de nutriments. Les courants et les échanges entre le Pacifique et l’Arctique influencent la circulation régionale.',
+          'La mer de Béring possède des ressources halieutiques majeures. Elle abrite des mammifères marins, des oiseaux et des poissons adaptés aux eaux froides. Le changement climatique, l’évolution de la banquise et la gestion de la pêche constituent des enjeux scientifiques et économiques importants.'
+        ],
+        example: {
+          statement: 'Pourquoi le plateau continental de la mer de Béring est-il particulièrement productif ?',
+          calculation: 'La faible profondeur favorise les échanges entre les eaux et les fonds marins. Les nutriments disponibles permettent le développement du phytoplancton.',
+          answer: 'La disponibilité des nutriments et les caractéristiques du plateau continental favorisent une forte production biologique.'
+        },
+        exercise: {
+          question: 'Quel détroit relie la mer de Béring à l’océan Arctique ?',
+          answer: 'Le détroit de Béring.'
+        },
+        exercises: [
+          { question: 'Quels pays bordent la mer de Béring ?', answer: 'La Russie et les États-Unis, par l’Alaska.' },
+          { question: 'À quel océan appartient-elle ?', answer: 'Au Pacifique.' },
+          { question: 'Pourquoi est-elle importante pour la pêche ?', answer: 'Parce que ses eaux et son plateau continental sont très productifs.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Bering Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Alaska Fisheries Science Center', url: 'https://www.fisheries.noaa.gov/about/alaska-fisheries-science-center' },
+          { title: 'NSIDC — Sea Ice', url: 'https://nsidc.org/sea-ice-today' }
+        ]
+      }
+    },
+    {
+      id: 'mer-philippines',
+      title: 'La mer des Philippines',
+      field: 'Géographie physique · Pacifique occidental',
+      summary: 'Étudier un vaste bassin océanique profond situé à l’est de l’archipel philippin.',
+      lesson: {
+        sections: [
+          'La mer des Philippines se situe à l’est de l’archipel philippin, dans le Pacifique occidental. Elle est bordée par les Philippines, Taïwan, les îles Ryūkyū, les îles Mariannes et d’autres archipels. Elle comprend de grandes profondeurs et plusieurs fosses océaniques.',
+          'La région se trouve dans une zone tectonique active. La fosse des Philippines et d’autres structures sous-marines témoignent de la convergence des plaques tectoniques. Les courants du Pacifique occidental influencent les échanges d’eau et les conditions de surface.',
+          'La mer des Philippines est exposée aux typhons et à une activité sismique importante. Elle possède des écosystèmes tropicaux et des habitats profonds. Les recherches portent sur la tectonique, la biodiversité des grands fonds et les conséquences des phénomènes climatiques.'
+        ],
+        example: {
+          statement: 'Pourquoi trouve-t-on de grandes fosses océaniques dans la mer des Philippines ?',
+          calculation: 'Les fosses se forment principalement dans les zones de subduction où une plaque tectonique plonge sous une autre.',
+          answer: 'Les mouvements de convergence et de subduction expliquent la présence de fosses océaniques profondes.'
+        },
+        exercise: {
+          question: 'Quel type de phénomène géologique est responsable des fosses océaniques ?',
+          answer: 'La subduction des plaques tectoniques.'
+        },
+        exercises: [
+          { question: 'Dans quel océan se trouve-t-elle ?', answer: 'Dans le Pacifique.' },
+          { question: 'Quel archipel se trouve à l’ouest ?', answer: 'L’archipel des Philippines.' },
+          { question: 'Quel phénomène météorologique peut toucher cette mer ?', answer: 'Les typhons.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Philippine Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — National Ocean Service', url: 'https://oceanservice.noaa.gov/' },
+          { title: 'Japan Agency for Marine-Earth Science and Technology', url: 'https://www.jamstec.go.jp/e/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-tasman',
+      title: 'La mer de Tasman',
+      field: 'Géographie physique · Pacifique Sud-Ouest',
+      summary: 'Comprendre une mer océanique située entre l’Australie et la Nouvelle-Zélande.',
+      lesson: {
+        sections: [
+          'La mer de Tasman se situe entre la côte sud-est de l’Australie et la Nouvelle-Zélande. Elle appartient au Pacifique Sud-Ouest et constitue un vaste espace de communication maritime entre les deux territoires. Elle est nommée d’après l’explorateur Abel Tasman.',
+          'La mer est influencée par les courants du Pacifique Sud et par les échanges entre les eaux subtropicales et tempérées. Les vents d’ouest peuvent provoquer une mer agitée et des conditions météorologiques changeantes. Les reliefs sous-marins et les variations de profondeur influencent la circulation régionale.',
+          'La mer de Tasman accueille une biodiversité marine variée et des espèces migratrices. Elle est utilisée pour le transport maritime, la pêche et certaines activités scientifiques. Les changements climatiques et l’évolution des écosystèmes constituent des sujets importants de recherche.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Tasman constitue-t-elle une voie maritime importante ?',
+          calculation: 'Elle se trouve entre deux territoires majeurs du Pacifique Sud-Ouest, l’Australie et la Nouvelle-Zélande.',
+          answer: 'Sa position géographique en fait un passage maritime essentiel entre l’Australie et la Nouvelle-Zélande.'
+        },
+        exercise: {
+          question: 'Quels territoires sont séparés par la mer de Tasman ?',
+          answer: 'L’Australie et la Nouvelle-Zélande.'
+        },
+        exercises: [
+          { question: 'À quel océan appartient-elle ?', answer: 'Au Pacifique.' },
+          { question: 'Quel explorateur lui a donné son nom ?', answer: 'Abel Tasman.' },
+          { question: 'Quel phénomène météorologique peut rendre la mer agitée ?', answer: 'Les vents d’ouest et les dépressions météorologiques.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Tasman Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Australian Institute of Marine Science', url: 'https://www.aims.gov.au/' },
+          { title: 'NIWA — National Institute of Water and Atmospheric Research', url: 'https://niwa.co.nz/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-corail',
+      title: 'La mer de Corail',
+      field: 'Géographie physique · Pacifique Sud-Ouest et nord-est de l’Australie',
+      summary: 'Étudier une mer tropicale connue pour la Grande Barrière de corail et ses écosystèmes récifaux.',
+      lesson: {
+        sections: [
+          'La mer de Corail se situe au nord-est de l’Australie, entre la Grande Barrière de corail, la Papouasie-Nouvelle-Guinée, les îles Salomon et la Nouvelle-Calédonie. Elle appartient au Pacifique Sud-Ouest et comprend des récifs, des îles et des bassins océaniques.',
+          'La région est caractérisée par des eaux tropicales et une grande diversité de reliefs sous-marins. La circulation est influencée par les courants du Pacifique Sud. Les températures élevées permettent le développement de récifs coralliens, notamment la Grande Barrière de corail, située au large de l’Australie.',
+          'Les récifs abritent une biodiversité exceptionnelle et contribuent à la protection de certains littoraux. Le réchauffement de l’eau peut provoquer le blanchissement des coraux. L’acidification, les pollutions et les pressions humaines constituent également des menaces pour les écosystèmes.'
+        ],
+        example: {
+          statement: 'Qu’est-ce que le blanchissement des coraux ?',
+          calculation: 'Lorsque les coraux subissent un stress thermique, ils peuvent perdre les algues symbiotiques qui leur fournissent une grande partie de leur énergie.',
+          answer: 'Le blanchissement correspond à la perte ou à la diminution des algues symbiotiques, qui donne aux coraux une apparence pâle.'
+        },
+        exercise: {
+          question: 'Quel grand ensemble récifal se trouve dans la mer de Corail ?',
+          answer: 'La Grande Barrière de corail.'
+        },
+        exercises: [
+          { question: 'Quel pays borde principalement la mer de Corail à l’ouest ?', answer: 'L’Australie.' },
+          { question: 'À quel océan appartient-elle ?', answer: 'Au Pacifique.' },
+          { question: 'Quel phénomène climatique menace les récifs coralliens ?', answer: 'Le réchauffement de l’eau, qui peut provoquer le blanchissement des coraux.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Coral Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'Great Barrier Reef Marine Park Authority', url: 'https://www2.gbrmpa.gov.au/' },
+          { title: 'NOAA — Coral Reef Conservation', url: 'https://coralreef.noaa.gov/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-salomon',
+      title: 'La mer des Salomon',
+      field: 'Géographie physique · Pacifique Sud-Ouest',
+      summary: 'Découvrir un bassin tropical situé entre la Papouasie-Nouvelle-Guinée et les îles Salomon.',
+      lesson: {
+        sections: [
+          'La mer des Salomon se situe entre la Papouasie-Nouvelle-Guinée et l’archipel des îles Salomon. Elle appartient au Pacifique Sud-Ouest et communique avec la mer de Corail au sud. Elle comprend des bassins profonds et des reliefs sous-marins complexes.',
+          'La région se trouve dans une zone de forte activité tectonique, où les plaques et les microplaques interagissent. Les mouvements de convergence et de subduction contribuent à la formation de fosses et d’arcs insulaires. Les courants tropicaux influencent les échanges entre les bassins voisins.',
+          'La mer des Salomon possède des récifs coralliens et des écosystèmes tropicaux diversifiés. Les ressources halieutiques sont importantes pour les populations locales. La protection des habitats, les risques sismiques et les changements climatiques constituent des enjeux majeurs.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer des Salomon présente-t-elle une activité sismique importante ?',
+          calculation: 'Elle se trouve dans une région où plusieurs plaques tectoniques interagissent.',
+          answer: 'Les mouvements tectoniques et les zones de subduction expliquent l’activité sismique régionale.'
+        },
+        exercise: {
+          question: 'Quels territoires bordent la mer des Salomon ?',
+          answer: 'La Papouasie-Nouvelle-Guinée et les îles Salomon.'
+        },
+        exercises: [
+          { question: 'À quel océan appartient-elle ?', answer: 'Au Pacifique.' },
+          { question: 'Quelle mer se trouve au sud ?', answer: 'La mer de Corail.' },
+          { question: 'Quel phénomène géologique est fréquent ?', answer: 'Les séismes liés à la tectonique des plaques.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Solomon Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Ocean Exploration', url: 'https://oceanexplorer.noaa.gov/' },
+          { title: 'UNEP — Regional Seas Programme', url: 'https://www.unep.org/explore-topics/oceans-seas/what-we-do/regional-seas-programme' }
+        ]
+      }
+    },
+    {
+      id: 'mer-bismarck',
+      title: 'La mer de Bismarck',
+      field: 'Géographie physique · Pacifique Sud-Ouest et Papouasie-Nouvelle-Guinée',
+      summary: 'Étudier une mer tropicale du Pacifique occidental, caractérisée par une géologie active et des habitats marins diversifiés.',
+      lesson: {
+        sections: [
+          'La mer de Bismarck se situe au nord-est de la Nouvelle-Guinée, dans le Pacifique occidental. Elle est bordée par la Papouasie-Nouvelle-Guinée et les îles de l’archipel Bismarck, notamment la Nouvelle-Bretagne et la Nouvelle-Irlande. Elle communique avec la mer des Salomon par des passages situés au sud-est.',
+          'La région possède des fonds marins profonds et des reliefs liés à une activité tectonique importante. Les mouvements des plaques ont contribué à la formation de bassins et d’arcs insulaires. Les eaux tropicales sont influencées par les courants du Pacifique occidental.',
+          'La mer de Bismarck abrite des récifs coralliens et une biodiversité marine importante. La pêche, les activités côtières et la protection des écosystèmes sont des enjeux régionaux. Les risques sismiques et volcaniques doivent également être pris en compte dans l’étude géographique.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Bismarck est-elle située dans une région géologiquement active ?',
+          calculation: 'La région se trouve à proximité de limites de plaques tectoniques et de zones de subduction.',
+          answer: 'Les interactions tectoniques expliquent la présence de reliefs sous-marins complexes et d’une activité sismique importante.'
+        },
+        exercise: {
+          question: 'Quel pays borde principalement la mer de Bismarck ?',
+          answer: 'La Papouasie-Nouvelle-Guinée.'
+        },
+        exercises: [
+          { question: 'À quel océan appartient-elle ?', answer: 'Au Pacifique.' },
+          { question: 'Quelle grande île se trouve au sud-ouest ?', answer: 'La Nouvelle-Guinée.' },
+          { question: 'Quels écosystèmes tropicaux y trouve-t-on ?', answer: 'Les récifs coralliens et les habitats marins tropicaux.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, Bismarck Sea', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'NOAA — Ocean Exploration', url: 'https://oceanexplorer.noaa.gov/' },
+          { title: 'Coral Triangle Initiative', url: 'https://www.coraltriangleinitiative.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-weddell',
+      title: 'La mer de Weddell',
+      field: 'Géographie physique · Océan Austral et Antarctique',
+      summary: 'Étudier une mer polaire antarctique, son rôle dans la formation des eaux profondes et l’évolution de la glace.',
+      lesson: {
+        sections: [
+          'La mer de Weddell se situe dans l’océan Austral, à l’est de la péninsule Antarctique. Elle est bordée par les côtes de l’Antarctique et s’ouvre vers les eaux de l’océan Austral. Elle est caractérisée par de vastes zones de glace de mer et par la présence de plateformes glaciaires.',
+          'La mer de Weddell joue un rôle important dans la formation des eaux profondes antarctiques. Le refroidissement de l’eau et les processus liés à la formation de glace contribuent à produire des masses d’eau denses. Ces eaux participent à la circulation océanique profonde à l’échelle mondiale.',
+          'Les écosystèmes de la mer de Weddell sont adaptés aux conditions polaires. Le krill antarctique occupe une place importante dans les réseaux alimentaires. Les manchots, les phoques et les baleines dépendent directement ou indirectement de cette production biologique. Les changements de la glace et des plateformes glaciaires sont suivis par les scientifiques.'
+        ],
+        example: {
+          statement: 'Pourquoi la formation d’eaux denses dans la mer de Weddell est-elle importante ?',
+          calculation: 'Le refroidissement et les processus de formation de glace augmentent la densité de certaines masses d’eau. Elles peuvent ensuite s’enfoncer et participer à la circulation profonde.',
+          answer: 'Elle contribue à la formation d’eaux profondes qui participent à la circulation océanique mondiale.'
+        },
+        exercise: {
+          question: 'Quel organisme joue un rôle central dans le réseau alimentaire antarctique ?',
+          answer: 'Le krill antarctique.'
+        },
+        exercises: [
+          { question: 'Dans quel océan se trouve la mer de Weddell ?', answer: 'Dans l’océan Austral.' },
+          { question: 'Quel continent borde cette mer ?', answer: 'L’Antarctique.' },
+          { question: 'Quel processus océanographique est important dans cette mer ?', answer: 'La formation d’eaux profondes antarctiques.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, référence historique des limites océaniques', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'British Antarctic Survey', url: 'https://www.bas.ac.uk/' },
+          { title: 'SCAR — Scientific Committee on Antarctic Research', url: 'https://www.scar.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-ross',
+      title: 'La mer de Ross',
+      field: 'Géographie physique · Océan Austral et Antarctique',
+      summary: 'Comprendre une mer antarctique importante pour la formation des eaux profondes et la biodiversité polaire.',
+      lesson: {
+        sections: [
+          'La mer de Ross se situe dans l’océan Austral, au sud de la Nouvelle-Zélande et au large de l’Antarctique. Elle est bordée par le continent antarctique et comprend la vaste plateforme de glace de Ross. Sa position en fait une région majeure pour l’étude des processus polaires.',
+          'La mer de Ross participe à la formation d’eaux profondes antarctiques. Le refroidissement des eaux et la formation de glace de mer favorisent la production d’eaux denses. La circulation de ces masses d’eau influence les échanges entre l’océan Austral et les autres bassins océaniques.',
+          'La région abrite des écosystèmes polaires riches, notamment des populations de krill, de poissons, de manchots et de mammifères marins. Elle fait l’objet d’une protection environnementale particulière. Les recherches portent sur les glaces, la biodiversité et l’évolution du climat antarctique.'
+        ],
+        example: {
+          statement: 'Pourquoi la mer de Ross est-elle importante dans la circulation océanique mondiale ?',
+          calculation: 'Les processus de refroidissement et de formation de glace favorisent la création d’eaux denses qui peuvent s’enfoncer.',
+          answer: 'Elle participe à la production d’eaux profondes antarctiques, qui contribuent à la circulation océanique mondiale.'
+        },
+        exercise: {
+          question: 'Quel continent borde la mer de Ross ?',
+          answer: 'L’Antarctique.'
+        },
+        exercises: [
+          { question: 'Dans quel océan se situe-t-elle ?', answer: 'Dans l’océan Austral.' },
+          { question: 'Quelle grande plateforme glaciaire porte son nom ?', answer: 'La plateforme de glace de Ross.' },
+          { question: 'Pourquoi la biodiversité y est-elle importante ?', answer: 'Parce que les réseaux alimentaires polaires soutiennent de nombreuses espèces marines.' }
+        ],
+        sources: [
+          { title: 'British Antarctic Survey', url: 'https://www.bas.ac.uk/' },
+          { title: 'SCAR — Scientific Committee on Antarctic Research', url: 'https://www.scar.org/' },
+          { title: 'Commission for the Conservation of Antarctic Marine Living Resources', url: 'https://www.ccamlr.org/' }
+        ]
+      }
+    },
+    {
+      id: 'mer-scotia',
+      title: 'La mer de Scotia',
+      field: 'Géographie physique · Atlantique Sud et océan Austral',
+      summary: 'Étudier une région maritime de transition entre l’Atlantique Sud et les eaux antarctiques.',
+      lesson: {
+        sections: [
+          'La mer de Scotia se situe entre la pointe sud de l’Amérique du Sud, les îles Orcades du Sud, les Shetland du Sud et la Géorgie du Sud. Elle constitue une région de transition entre l’Atlantique Sud et l’océan Austral. Sa géographie est marquée par des archipels et des reliefs sous-marins complexes.',
+          'La circulation est fortement influencée par le courant circumpolaire antarctique, qui se déplace d’ouest en est autour du continent antarctique. Les eaux froides et les échanges entre les bassins influencent la température et la productivité biologique de la région.',
+          'La mer de Scotia possède des réseaux alimentaires riches, notamment grâce au krill antarctique. Les oiseaux marins, les phoques et les baleines utilisent cette région pour se nourrir ou migrer. La conservation des ressources marines et la protection des écosystèmes polaires constituent des enjeux importants.'
+        ],
+        example: {
+          statement: 'Quel rôle joue le courant circumpolaire antarctique dans la mer de Scotia ?',
+          calculation: 'Il transporte de grandes masses d’eau autour de l’Antarctique et favorise les échanges entre les secteurs océaniques méridionaux.',
+          answer: 'Il participe à la circulation des eaux froides et aux échanges entre l’Atlantique Sud et l’océan Austral.'
+        },
+        exercise: {
+          question: 'Quel courant océanique influence fortement la mer de Scotia ?',
+          answer: 'Le courant circumpolaire antarctique.'
+        },
+        exercises: [
+          { question: 'Quels territoires se trouvent à proximité de cette mer ?', answer: 'La pointe sud de l’Amérique du Sud, la Géorgie du Sud et les archipels antarctiques voisins.' },
+          { question: 'Quel organisme est essentiel dans son réseau alimentaire ?', answer: 'Le krill antarctique.' },
+          { question: 'Pourquoi cette mer est-elle une zone de transition ?', answer: 'Parce qu’elle se situe entre l’Atlantique Sud et les eaux de l’océan Austral.' }
+        ],
+        sources: [
+          { title: 'OHI — S-23, 1953, référence historique des limites océaniques', url: 'https://iho.int/uploads/user/pubs/standards/s-23/S-23_Ed3_1953_EN.pdf' },
+          { title: 'British Antarctic Survey', url: 'https://www.bas.ac.uk/' },
+          { title: 'Commission for the Conservation of Antarctic Marine Living Resources', url: 'https://www.ccamlr.org/' }
+        ]
+      }
+    }
+  ]
+},
+
+
 ]
 
